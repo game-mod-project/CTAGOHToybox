@@ -89,23 +89,25 @@ public sealed class SdlResolver
         return vp.Length > 0 && vp.IndexOf(':') < 0 && !vp.StartsWith("/") && !vp.StartsWith("\\");
     }
 
-    // 문자열이나 낱말 안의 %이름을 치환한다. 묶인 이름 중 가장 긴 것을 쓴다("%0_left"에서 0).
+    // 문자열이나 낱말 안의 %이름을 치환한다.
+    // 이름 있는 매개변수는 낱말 전체가 같아야 한다(%door가 묶여 있어도 %door2는 다른 매개변수다).
+    // 숫자로 시작하면 위치 인자이므로 앞의 숫자만 이름으로 본다("%0_left"에서 0).
     // 묶인 이름이 없으면 그대로 두고 미해결로 기록한다
     string Substitute(string text, Dictionary<string, List<object>> bind)
     {
         return ParamInString.Replace(text, m =>
         {
             string w = m.Groups[1].Value;
-            for (int len = w.Length; len > 0; len--)
-            {
-                List<object> b;
-                if (bind.TryGetValue(w.Substring(0, len), out b)) return SdlCore.NodesText(b).Trim('"') + w.Substring(len);
-            }
+            List<object> b;
+            if (bind.TryGetValue(w, out b)) return SdlCore.NodesText(b).Trim('"');
+            int digits = 0;
+            while (digits < w.Length && w[digits] >= '0' && w[digits] <= '9') digits++;
+            if (digits > 0 && digits < w.Length && bind.TryGetValue(w.Substring(0, digits), out b))
+                return SdlCore.NodesText(b).Trim('"') + w.Substring(digits);
             unresolved.Add("param:%" + w);
             return m.Value;
         });
     }
-
     static string DirOf(string virtualPath)
     {
         int i = virtualPath.LastIndexOf('/');

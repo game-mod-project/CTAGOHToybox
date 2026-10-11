@@ -39,7 +39,10 @@
   },
   "DistinctNewBlockNames": 6,
   "RoundTripFailed": [],
-  "UnresolvedFiles": 0,
-  "UnresolvedTop": {},
-  "Collisions": 0
+  "UnresolvedFiles": 1,
+  "UnresolvedTop": {
+    "param:%door2": 1
+  },
+  "Collisions": 0,
+  "OutOfScopeDefinitions": {}
 }

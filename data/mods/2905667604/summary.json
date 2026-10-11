@@ -5,8 +5,8 @@
     "empty": 10,
     "excluded-binary": 77122,
     "excluded-scope": 23625,
-    "reference-only": 318,
-    "text": 12548
+    "reference-only": 336,
+    "text": 12530
   },
   "FilesByRelation": {
     "new": 113376,
@@ -49,7 +49,7 @@
     "pattern changed": 1,
     "pattern new": 10,
     "stuff changed": 23,
-    "stuff new": 970,
+    "stuff new": 971,
     "vehicle changed": 13,
     "vehicle new": 1307
   },
@@ -78,13 +78,13 @@
     "mp/fra": 13,
     "mp/eng": 11
   },
-  "KeysNotInVanilla": 2340,
+  "KeysNotInVanilla": 2339,
   "KeysNotInVanillaByForm": {
     "block": 1717,
     "macro": 413,
     "define": 189,
     "mod": 16,
-    "bare": 4,
+    "bare": 3,
     "include": 1
   },
   "NamesNotInVanilla": 470,
@@ -97,10 +97,20 @@
   "RoundTripFailed": [
     "set/stuff/gun/152mm_type96"
   ],
-  "UnresolvedFiles": 3,
+  "UnresolvedFiles": 27,
   "UnresolvedTop": {
+    "param:%visor": 14,
+    "param:%door2": 9,
     "macro:he_light": 2,
-    "macro:light_mortar_range_jap": 1
+    "macro:light_mortar_range_jap": 1,
+    "param:%door": 1
   },
-  "Collisions": 0
+  "Collisions": 0,
+  "OutOfScopeDefinitions": {
+    "entity/service": 34,
+    "entity/construction": 28,
+    "entity/fx": 16,
+    "entity/recovery_volume": 4,
+    "entity/landscape": 1
+  }
 }

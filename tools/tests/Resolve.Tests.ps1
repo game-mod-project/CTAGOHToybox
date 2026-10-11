@@ -66,6 +66,13 @@ $r = Resolve-SdlFile $ctx 'set/p.set'
 Assert-Equal '{ tex "skin_red" } { name "foo_left" } { v prefoo } { u "%nope_x" } { pct "100%" }' (Get-SdlNodesText $r.Nodes) 'params inside strings and words use the longest bound name'
 Assert-Equal @('param:%nope_x') @($r.Unresolved) 'unbound param inside a string is reported'
 
+# 이름 있는 매개변수는 낱말 전체가 같아야 한다: %door가 묶여 있어도 %door2는 다른 매개변수다.
+# 숫자로 시작하는 위치 인자만 뒤에 글자가 붙을 수 있다("%0_left")
+Put $w 'set/q.set' '(define "m" {d %door2} {s "%door2"} {ok "%door"}) ("m" door("left"))'
+$r = Resolve-SdlFile $ctx 'set/q.set'
+Assert-Equal '{ d %door2 } { s "%door2" } { ok "left" }' (Get-SdlNodesText $r.Nodes) 'a named param is not matched by its prefix'
+Assert-Equal @('param:%door2') @($r.Unresolved) 'prefix-only match is reported as unbound'
+
 # 리뷰 I2: 작업 폴더 밖을 가리키는 include는 읽지 않는다
 Put $w 'set/abs.set' '(include "/c:/windows/win.ini") {k 1}'
 $r = Resolve-SdlFile $ctx 'set/abs.set'
