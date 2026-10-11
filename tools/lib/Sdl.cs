@@ -46,7 +46,7 @@ public sealed class SdlRow
 public static partial class SdlCore
 {
     static readonly Regex TokenRegex = new Regex(
-        @"(?<comment>;[^\r\n]*)|(?<str>""[^""]*"")|(?<badstr>""[^""]*\z)|(?<open>[{(])|(?<close>[})])|(?<atom>[^\s{}()"";]+)",
+        @"(?<comment>;[^\r\n]*)|(?<str>""[^""]*"")|(?<badstr>""[^""]*\z)|(?<open>[{(])|(?<close>[})])|(?<atom>[^ \t\r\n\f\v{}()"";]+)",
         RegexOptions.Compiled);
     static readonly Regex NumberRegex = new Regex(@"^[+-]?(\d+\.?\d*|\.\d+)$", RegexOptions.Compiled);
 
@@ -145,6 +145,9 @@ public static partial class SdlCore
 
     // 토크나이저(정규식)와 독립된 검사용. 주석과 문자열 밖의 공백을 뺀 글자 수를 직접 센다.
     // 이 값이 토큰 길이의 합과 다르면 토크나이저가 글자를 버렸다는 뜻이다.
+    // 이 문법의 공백은 ASCII 공백뿐이다. 파일을 Latin-1로 읽으므로 0x85나 0xA0은 다른 인코딩 글자의 일부일 수 있다
+    static bool IsSpace(char c) { return c == ' ' || c == '\t' || c == '\r' || c == '\n' || c == '\f' || c == '\v'; }
+
     public static long CountSignificantChars(string text)
     {
         long n = 0;
@@ -155,7 +158,7 @@ public static partial class SdlCore
             if (inString) { n++; if (c == '"') inString = false; continue; }
             if (c == ';') { while (i < text.Length && text[i] != '\r' && text[i] != '\n') i++; continue; }
             if (c == '"') { inString = true; n++; continue; }
-            if (!char.IsWhiteSpace(c)) n++;
+            if (!IsSpace(c)) n++;
         }
         return n;
     }

@@ -5,6 +5,9 @@ param(
 )
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
+$DataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($DataDir)
+$AnnotationDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($AnnotationDir)
+$OutDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($OutDir)
 [IO.Directory]::CreateDirectory($OutDir) | Out-Null
 $utf8 = [Text.UTF8Encoding]::new($false)
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'

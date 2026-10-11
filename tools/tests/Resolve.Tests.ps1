@@ -91,4 +91,24 @@ Put $w 'set/rec.set' '(define "a" ("a") ("a") {z 1}) ("a")'
 $r = Resolve-SdlFile $ctx 'set/rec.set'
 Assert-Equal @('macro-cycle:a') @($r.Unresolved) 'self-recursive macro is reported and terminates'
 
+# M4: 안쪽 매크로가 바깥 매크로의 인자를 물려받아 쓴 경우를 기록한다
+Put $w 'set/inh.set' '(define "inner" {val %x %0}) (define "outer" ("inner")) ("outer" x(7) args 9)'
+$r = Resolve-SdlFile $ctx 'set/inh.set'
+Assert-Equal '{ val 7 9 }' (Get-SdlNodesText $r.Nodes) 'inner macro still sees outer arguments'
+Assert-Equal @('%0', '%x') @($r.Inherited) 'use of an inherited argument is recorded'
+$r = Resolve-SdlFile $ctx 'set/q.set'
+Assert-Equal 0 @($r.Inherited).Count 'directly passed arguments are not inherited'
+
+# M5: 산술 결과가 0으로 뭉개지지 않는다
+Put $w 'set/num.set' '{a (/ 1 3000000)} {b (* -1 0)} {c (/ 60 240)}'
+$r = Resolve-SdlFile $ctx 'set/num.set'
+Assert-Equal '{ a 0.000000333333333 } { b 0 } { c 0.25 }' (Get-SdlNodesText $r.Nodes) 'small results keep precision and negative zero is plain zero'
+
+# M6: include한 파일에 파싱 오류가 있으면 포함하는 쪽에 표시된다
+Put $w 'set/brk.inc' '{a 1}}'
+Put $w 'set/usesbrk.set' '(include "brk.inc")'
+$r = Resolve-SdlFile $ctx 'set/usesbrk.set'
+Assert-Equal @('include-parse-error:set/brk.inc') @($r.Unresolved) 'parse error in an included file is reported'
+Assert-Equal '{ a 1 }' (Get-SdlNodesText $r.Nodes) 'readable part of the broken include is still used'
+
 Complete-Tests

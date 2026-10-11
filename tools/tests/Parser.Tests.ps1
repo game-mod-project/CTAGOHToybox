@@ -52,4 +52,7 @@ Assert-Equal 3 ([SdlCore]::CountSignificantChars("a;c`n`"x")) 'comment ends at l
 $r = Test-SdlRoundTrip -Text $sample
 Assert-Equal $true $r.CharsOk 'sample passes the independent char check'
 
+# M7: 글자 수 검사도 같은 공백 정의를 쓴다
+Assert-Equal 3 ([SdlCore]::CountSignificantChars("a" + [char]0x85 + "b")) 'byte 0x85 counts as a character'
+
 Complete-Tests

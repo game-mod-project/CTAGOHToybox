@@ -4,6 +4,9 @@ param(
 )
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
+. "$PSScriptRoot/lib/SdlTokenizer.ps1"   # C# 본체(SdlCore)를 불러온다
+$VanillaDataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($VanillaDataDir)
+$ModDataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($ModDataDir)
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'
 $utf8 = [Text.UTF8Encoding]::new($false)
 
@@ -88,3 +91,28 @@ $unitRows = foreach ($id in ($modUnits.Keys | Sort-Object)) {
 $fileRows | Group-Object Relation | ForEach-Object { Write-Host ("files {0,-20} {1}" -f $_.Name, $_.Count) }
 Write-Host "new-keys=$(@($newKeys).Count)"
 @($unitRows) | Group-Object Kind, Relation | ForEach-Object { Write-Host ("units {0,-28} {1}" -f $_.Name, $_.Count) }
+
+# --- 따옴표 이름
+# 이름이 따옴표 문자열인 블록은 경로가 "*"로 묶여 있어 위의 키 비교로는 새 이름이 드러나지 않는다.
+# 카탈로그에서 (경로, 이름)을 뽑아 바닐라에 없는 것을 따로 적는다
+function Read-CatalogLines([string]$dir, [scriptblock]$onLine) {
+    foreach ($g in $groups) {
+        $p = Join-Path $dir "units-$g.jsonl.gz"
+        if (-not (Test-Path -LiteralPath $p)) { continue }
+        $sr = [IO.StreamReader]::new([IO.Compression.GZipStream]::new([IO.File]::OpenRead($p), [IO.Compression.CompressionMode]::Decompress), $utf8)
+        try { while ($null -ne ($line = $sr.ReadLine())) { & $onLine $line } } finally { $sr.Dispose() }
+    }
+}
+$vanQuoted = [System.Collections.Generic.HashSet[string]]::new([StringComparer]::OrdinalIgnoreCase)
+Read-CatalogLines $VanillaDataDir { param($line) foreach ($x in [SdlCore]::QuotedNamesInLine($line)) { [void]$vanQuoted.Add($x.Substring($x.IndexOf("`t") + 1)) } }
+$newQuoted = @{}
+Read-CatalogLines $ModDataDir { param($line)
+    foreach ($x in [SdlCore]::QuotedNamesInLine($line)) {
+        $tab = $x.IndexOf("`t"); $key = $x.Substring($tab + 1)
+        if ($vanQuoted.Contains($key)) { continue }
+        if ($newQuoted.ContainsKey($key)) { $newQuoted[$key].Count++ }
+        else { $parts = $key.Split("`t", 2); $newQuoted[$key] = [pscustomobject]@{ Path = $parts[0]; Name = $parts[1]; Count = 1; ExampleFile = $x.Substring(0, $tab) } }
+    }
+}
+@($newQuoted.Values | Sort-Object Path, Name) | Export-Csv -LiteralPath (Join-Path $ModDataDir 'diff-quoted-names.csv') -NoTypeInformation -Encoding utf8
+Write-Host "new-quoted-names=$($newQuoted.Count)"

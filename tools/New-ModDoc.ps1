@@ -10,6 +10,8 @@ param(
 #   readme-intro.md, readme-outro.md
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
+$ModsDataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($ModsDataDir)
+$OutDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($OutDir)
 [IO.Directory]::CreateDirectory($OutDir) | Out-Null
 $utf8 = [Text.UTF8Encoding]::new($false)
 $listLimit = 300
@@ -30,7 +32,8 @@ function Props($obj) { if ($null -eq $obj) { @() } else { @($obj.PSObject.Proper
 
 $mods = @(Read-Psv (Join-Path $ModsDataDir 'mods.psv') 7)
 $ann = @{}
-foreach ($a in (Read-Psv (Join-Path $ModsDataDir 'annotations.psv') 3)) { $ann[$a[0]] = $a }
+# @()로 감싼다: 줄이 하나뿐이면 PowerShell이 그 줄의 배열을 풀어 버린다
+foreach ($a in @(Read-Psv (Join-Path $ModsDataDir 'annotations.psv') 3)) { $ann[$a[0]] = $a }
 $conflicts = @(Import-Csv -LiteralPath (Join-Path $ModsDataDir 'cross-mod-conflicts.csv'))
 $nameOf = @{}; foreach ($m in $mods) { $nameOf[$m[0]] = $m[1] }
 
@@ -204,6 +207,26 @@ foreach ($m in $mods) {
         L '| 그룹 | 파일 종류 | 경로 | 형태 | 값 형태 | 파일 수 | 파일(예) |'
         L '|---|---|---|---|---|---|---|'
         foreach ($k in ($keys | Sort-Object Group, FileKind, Path, Form)) { L "| $($k.Group) | $(Cell $k.FileKind) | $(Code $k.Path) | $($k.Form) | $(Cell (Short $k.ArgShapes 40)) | $($k.FileCount) | $(Code $k.ExampleFile) |" }
+    }
+    L
+    L '### 3. 바닐라에 없는 따옴표 이름'
+    L
+    $qnPath = Join-Path $d 'diff-quoted-names.csv'
+    # 대입문으로 나눈다: if 식의 결과로 받으면 빈 배열이 $null로 풀린다
+    $qn = @()
+    if (Test-Path -LiteralPath $qnPath) { $qn = @(Import-Csv -LiteralPath $qnPath) }
+    L '이름이 따옴표 문자열인 블록(`{"이름" ...}`)은 경로에서 `"*"`로 묶여 있어 위의 키 목록에는 새 이름이 드러나지 않는다. 편제표의 유닛 이름, 기술 이름, 텍스처 경로처럼 이름 자체가 데이터인 자리다. 그런 자리에 이 모드가 넣은, 바닐라에 없는 이름을 경로별로 센 것이다.'
+    L
+    if ($qn.Count -eq 0) { L '없다.' }
+    else {
+        L "모두 $($qn.Count)개. 전체는 ``data/mods/$id/diff-quoted-names.csv``에 있다."
+        L
+        L '| 경로 | 새 이름 수 | 이름(예) | 파일(예) |'
+        L '|---|---|---|---|'
+        foreach ($g in ($qn | Group-Object Path | Sort-Object Count -Descending | Select-Object -First 60)) {
+            $examples = (@($g.Group | Select-Object -First 6 | ForEach-Object { Code (Short $_.Name 40) }) -join ', ')
+            L "| $(Code $g.Name) | $($g.Count) | $examples | $(Code $g.Group[0].ExampleFile) |"
+        }
     }
     L
     L '## 파싱과 펼치기에서 걸린 것'

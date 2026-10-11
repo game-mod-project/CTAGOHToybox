@@ -94,5 +94,6 @@
   "OutOfScopeDefinitions": {
     "entity/+inventory": 66,
     "entity/fx": 1
-  }
+  },
+  "QuotedNamesNotInVanilla": 3296
 }

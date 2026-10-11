@@ -7,6 +7,8 @@ param(
 . "$PSScriptRoot/lib/SdlParser.ps1"
 . "$PSScriptRoot/lib/SdlKeys.ps1"
 
+$WorkDir = Resolve-FullPath $WorkDir
+$DataDir = Resolve-FullPath $DataDir
 $index = @(Import-Csv -LiteralPath (Join-Path $DataDir 'file-index.csv') | Where-Object Status -eq 'text')
 $agg = New-SdlKeyAggregate
 $comments = @{}
@@ -38,7 +40,7 @@ $rows = foreach ($a in (Export-SdlKeyAggregate -Agg $agg)) {
     } else { '' }
     [pscustomobject]@{
         Group = $group; FileKind = $kind; Path = $a.Path; Form = $a.Form; Count = $a.Count; FileCount = $a.FileCount
-        ArgShapes = $a.ArgShapes; NumMin = $a.NumMin; NumMax = $a.NumMax; Values = $a.Values
+        ArgShapes = $a.ArgShapes; NumMin = (ConvertTo-InvariantText $a.NumMin); NumMax = (ConvertTo-InvariantText $a.NumMax); Values = $a.Values
         ExampleFile = $a.ExampleFile; ExampleArgs = $a.ExampleArgs; Comments = $cm
     }
 }

@@ -7,6 +7,20 @@ $script:BinaryExt = @('.ply', '.vol', '.anm', '.dds', '.tga', '.ebm', '.png', '.
     '.pdn', '.psd', '.xcf', '.max', '.blend', '.fbx', '.zip', '.7z', '.rar')   # 모드에 섞여 들어오는 작업 파일: 앞부분에 NUL이 없을 수 있다
 $script:ReferenceExt = @('.lua', '.md', '.txt', '.log', '.ini')
 
+# 상대 경로를 PowerShell의 현재 위치 기준 절대 경로로 바꾼다.
+# .NET API는 프로세스 시작 폴더를 기준으로 삼으므로, Set-Location 뒤에는 둘이 다르다
+function Resolve-FullPath {
+    param([Parameter(Mandatory)][string]$Path)
+    $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($Path)
+}
+
+# 숫자를 로캘과 무관하게 점으로 쓴다 (Export-Csv는 현재 로캘을 따른다)
+function ConvertTo-InvariantText {
+    param($Value)
+    if ($null -eq $Value) { return '' }
+    ([double]$Value).ToString('R', [cultureinfo]::InvariantCulture)
+}
+
 function Read-SdlText {
     param([Parameter(Mandatory)][string]$Path)
     $b = [IO.File]::ReadAllBytes($Path)
@@ -48,7 +62,8 @@ function Get-SdlUnitKind {
     if ($VirtualPath.StartsWith('entity/inventory/') -and $kind -eq '.def') { return 'item-entity' }
     if ($VirtualPath.StartsWith('set/stuff/')) {
         if ($kind -eq '.pattern') { return 'pattern' }
-        if ($kind -notin '.presets', '.inc') { return 'stuff' }
+        # .fsm, .hand와 _settings 폴더는 아이템이 아니라 동작 설정이다
+        if ($kind -notin '.presets', '.inc', '.fsm', '.hand' -and -not $VirtualPath.StartsWith('set/stuff/_settings/')) { return 'stuff' }
     }
     'support'
 }
