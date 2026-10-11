@@ -5,6 +5,8 @@
 //   - (+ a b) 등 두 수의 산술식은 계산한다.
 //   - 조상 폴더의 .presets는 파일보다 먼저 읽어 define만 등록한다.
 //   - (mod ...)와 {from "pattern ..."}은 펼치지 않는다.
+// 미해결 기록: include:<경로>(대상 없음), include-cycle:, include-depth:, include-unsafe:(작업 폴더 밖),
+//              macro:<이름>(정의 없음), macro-cycle:, macro-depth:, param:%<이름>(채워지지 않은 매개변수)
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -33,6 +35,9 @@ public sealed class SdlResolver
     readonly Dictionary<string, SdlNode> cache = new Dictionary<string, SdlNode>(StringComparer.OrdinalIgnoreCase);
     Dictionary<string, Def> defines;
     List<string> unresolved, includes, macros;
+    // 지금 펼치는 중인 include와 매크로. 다시 들어오면 순환이다
+    readonly HashSet<string> activeIncludes = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+    readonly HashSet<string> activeMacros = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
     public SdlResolver(string[] workDirs) { this.workDirs = workDirs; }
 
@@ -76,6 +81,29 @@ public sealed class SdlResolver
             else if (s.Length > 0 && s != ".") parts.Add(s);
         }
         return string.Join("/", parts).ToLowerInvariant();
+    }
+
+    // 작업 폴더 안을 가리키는 경로인지. 드라이브 문자나 UNC가 들어가면 Path.Combine이 폴더 밖으로 나간다
+    static bool IsSafeVirtualPath(string vp)
+    {
+        return vp.Length > 0 && vp.IndexOf(':') < 0 && !vp.StartsWith("/") && !vp.StartsWith("\\");
+    }
+
+    // 문자열이나 낱말 안의 %이름을 치환한다. 묶인 이름 중 가장 긴 것을 쓴다("%0_left"에서 0).
+    // 묶인 이름이 없으면 그대로 두고 미해결로 기록한다
+    string Substitute(string text, Dictionary<string, List<object>> bind)
+    {
+        return ParamInString.Replace(text, m =>
+        {
+            string w = m.Groups[1].Value;
+            for (int len = w.Length; len > 0; len--)
+            {
+                List<object> b;
+                if (bind.TryGetValue(w.Substring(0, len), out b)) return SdlCore.NodesText(b).Trim('"') + w.Substring(len);
+            }
+            unresolved.Add("param:%" + w);
+            return m.Value;
+        });
     }
 
     static string DirOf(string virtualPath)
@@ -132,10 +160,14 @@ public sealed class SdlResolver
             List<object> bound;
             if (n.Kind == "atom")
             {
-                if (n.Text.Length > 1 && n.Text[0] == '%')
+                if (n.Text.Length > 1 && n.Text.IndexOf('%') >= 0)
                 {
-                    if (bind.TryGetValue(n.Text.Substring(1), out bound)) o.AddRange(bound);
-                    else { unresolved.Add("param:" + n.Text); o.Add(n); }
+                    if (n.Text[0] == '%' && bind.TryGetValue(n.Text.Substring(1), out bound)) o.AddRange(bound);
+                    else
+                    {
+                        string s = Substitute(n.Text, bind);
+                        o.Add(s == n.Text ? n : new SdlNode("atom", s, n.Index, false));
+                    }
                 }
                 else o.Add(n);
                 continue;
@@ -144,12 +176,8 @@ public sealed class SdlResolver
             {
                 if (n.Text.IndexOf('%') >= 0)
                 {
-                    string text = ParamInString.Replace(n.Text, m =>
-                    {
-                        List<object> b;
-                        return bind.TryGetValue(m.Groups[1].Value, out b) ? SdlCore.NodesText(b).Trim('"') : m.Value;
-                    });
-                    o.Add(new SdlNode("str", text, n.Index, false));
+                    string text = Substitute(n.Text, bind);
+                    o.Add(text == n.Text ? n : new SdlNode("str", text, n.Index, false));
                 }
                 else o.Add(n);
                 continue;
@@ -170,6 +198,8 @@ public sealed class SdlResolver
             if (word == "include" && kids.Count >= 2 && SdlCore.Unwrap(kids[1]).Kind == "str")
             {
                 string vp = IncludePath(SdlCore.Unwrap(kids[1]).Text, dir);
+                if (!IsSafeVirtualPath(vp)) { unresolved.Add("include-unsafe:" + vp); o.Add(n); continue; }
+                if (activeIncludes.Contains(vp)) { unresolved.Add("include-cycle:" + vp); o.Add(n); continue; }
                 if (depth >= MaxDepth) { unresolved.Add("include-depth:" + vp); o.Add(n); continue; }
                 SdlNode root = GetParsed(vp, true);
                 if (root == null) { unresolved.Add("include:" + vp); o.Add(n); continue; }
@@ -180,7 +210,9 @@ public sealed class SdlResolver
                     var k = SdlCore.Unwrap(kids[i]);
                     if (k.Kind == "call") b[k.Text] = Expand(k.Children, dir, bind, depth);
                 }
-                o.AddRange(Expand(root.Children, DirOf(vp), b, depth + 1));
+                activeIncludes.Add(vp);
+                try { o.AddRange(Expand(root.Children, DirOf(vp), b, depth + 1)); }
+                finally { activeIncludes.Remove(vp); }
                 continue;
             }
             if (word == "define" && kids.Count >= 2)
@@ -192,7 +224,9 @@ public sealed class SdlResolver
             {
                 string name = head.Text.Trim('"');
                 Def def;
-                if (depth >= MaxDepth || !defines.TryGetValue(name, out def)) { unresolved.Add("macro:" + name); o.Add(n); continue; }
+                if (activeMacros.Contains(name)) { unresolved.Add("macro-cycle:" + name); o.Add(n); continue; }
+                if (depth >= MaxDepth) { unresolved.Add("macro-depth:" + name); o.Add(n); continue; }
+                if (!defines.TryGetValue(name, out def)) { unresolved.Add("macro:" + name); o.Add(n); continue; }
                 macros.Add(name);
                 var b = NewBind(bind);
                 int pos = -1;
@@ -203,7 +237,9 @@ public sealed class SdlResolver
                     else if (pos < 0 && k.Kind == "atom" && string.Equals(k.Text, "args", StringComparison.OrdinalIgnoreCase)) pos = 0;
                     else if (pos >= 0) { b[pos.ToString(CultureInfo.InvariantCulture)] = Expand(new List<object> { k }, dir, bind, depth); pos++; }
                 }
-                o.AddRange(Expand(def.Body, def.Dir, b, depth + 1));
+                activeMacros.Add(name);
+                try { o.AddRange(Expand(def.Body, def.Dir, b, depth + 1)); }
+                finally { activeMacros.Remove(name); }
                 continue;
             }
 
@@ -231,6 +267,7 @@ public sealed class SdlResolver
         defines = new Dictionary<string, Def>(StringComparer.OrdinalIgnoreCase);
         unresolved = new List<string>(); includes = new List<string>(); macros = new List<string>();
         var presets = new List<string>();
+        activeIncludes.Clear(); activeMacros.Clear();
 
         string dir = DirOf(virtualPath);
         string acc = "";
@@ -246,6 +283,7 @@ public sealed class SdlResolver
         // .presets를 읽으며 쌓인 include/매크로 기록은 파일 자체의 것이 아니다
         includes.Clear(); macros.Clear();
 
+        activeIncludes.Add(virtualPath);   // 자기 자신을 다시 include하면 순환이다
         SdlNode root = GetParsed(virtualPath, false);
         var nodes = root == null ? new List<object>() : Expand(root.Children, dir, NewBind(null), 0);
         return new SdlResolveResult

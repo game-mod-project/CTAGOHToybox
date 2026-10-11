@@ -143,6 +143,30 @@ public static partial class SdlCore
         throw new ArgumentException("not an SdlNode: " + (x == null ? "null" : x.GetType().FullName));
     }
 
+    // 토크나이저(정규식)와 독립된 검사용. 주석과 문자열 밖의 공백을 뺀 글자 수를 직접 센다.
+    // 이 값이 토큰 길이의 합과 다르면 토크나이저가 글자를 버렸다는 뜻이다.
+    public static long CountSignificantChars(string text)
+    {
+        long n = 0;
+        bool inString = false;
+        for (int i = 0; i < text.Length; i++)
+        {
+            char c = text[i];
+            if (inString) { n++; if (c == '"') inString = false; continue; }
+            if (c == ';') { while (i < text.Length && text[i] != '\r' && text[i] != '\n') i++; continue; }
+            if (c == '"') { inString = true; n++; continue; }
+            if (!char.IsWhiteSpace(c)) n++;
+        }
+        return n;
+    }
+
+    public static long TokenChars(List<SdlToken> tokens)
+    {
+        long n = 0;
+        foreach (var t in tokens) n += t.Text.Length;
+        return n;
+    }
+
     public static bool RoundTrip(SdlParseResult p)
     {
         if (p.Errors.Count != 0) return false;

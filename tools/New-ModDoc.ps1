@@ -89,7 +89,7 @@ foreach ($m in $mods) {
     L
     L '| 관계 | 파일 수 | 뜻 |'
     L '|---|---|---|'
-    $relMeaning = @{ 'new' = '바닐라에 없는 경로'; 'override-changed' = '바닐라와 같은 경로, 내용이 다름'; 'override-identical' = '바닐라와 같은 경로, 내용이 같음'; 'override-unhashed' = '바닐라와 같은 경로. 바이너리나 범위 밖이라 내용을 비교하지 않음' }
+    $relMeaning = @{ 'new' = '바닐라에 없는 경로'; 'override-changed' = '바닐라와 같은 경로, 내용이 다름'; 'override-identical' = '바닐라와 같은 경로, 내용이 같음'; 'override-unhashed' = '바닐라와 같은 경로. 바이너리나 범위 밖이라 내용을 비교하지 않음'; 'in-mod-collision' = '이 모드 안에서 같은 경로가 두 번 나온 것의 둘째(내용 다름). 파일 수에 넣지 않음'; 'in-mod-duplicate' = '이 모드 안에서 같은 경로가 두 번 나온 것의 둘째(내용 같음)' }
     foreach ($p in (Props $s.FilesByRelation)) { L "| $($p.Name) | $($p.Value) | $($relMeaning[$p.Name]) |" }
     L
     L '텍스트 파일을 관계와 폴더로 나눈 것(많은 순):'
@@ -212,6 +212,20 @@ foreach ($m in $mods) {
     L "- 펼친 유닛 파일 중 풀리지 않은 구문이 있는 파일: $($s.UnresolvedFiles)개"
     foreach ($p in (Props $s.UnresolvedTop)) { L "  - $(Code $p.Name): $($p.Value)개 파일" }
     L "- 모드 안에서 같은 가상 경로에 내용이 다른 파일이 둘 있는 경우: $($s.Collisions)건"
+    L
+    L '## 분석 범위 밖에 놓인 정의 파일'
+    L
+    $oos = @(Props $s.OutOfScopeDefinitions)
+    if ($oos.Count -eq 0) { L '없다.' }
+    else {
+        L '이 문서의 유닛 수와 키 목록은 `set`, `script`, `properties`, `entity/-vehicle`, `entity/humanskin`, `entity/inventory` 아래만 센다. 이 모드는 그 밖의 폴더에도 정의 파일(`.def`, `.set`, `.ext`, `.inc` 등)을 두고 있다. 아래 파일들은 분석되지 않았고 위의 어떤 수치에도 들어 있지 않다.'
+        L
+        L '| 폴더 | 정의 파일 수 |'
+        L '|---|---|'
+        foreach ($p in $oos) { L "| $(Code $p.Name) | $($p.Value) |" }
+        L
+        L "전체 목록은 ``data/mods/$id/file-index.csv``에서 ``Status``가 ``excluded-scope``인 행이다."
+    }
     L
     L '## 창작마당 페이지의 설명'
     L

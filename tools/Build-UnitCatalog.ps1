@@ -25,9 +25,11 @@ function New-GzWriter([string]$path) {
 function J([string]$s) { [SdlCore]::JsonString($s) }
 function JArray($items) { '[' + (@(foreach ($i in $items) { [SdlCore]::JsonString($i) }) -join ',') + ']' }
 
-$ok = @{}
-Import-Csv -LiteralPath (Join-Path $DataDir 'parse-results.csv') | Where-Object Ok -eq 'True' | ForEach-Object { $ok[$_.VirtualPath] = 1 }
-$index = @(Import-Csv -LiteralPath (Join-Path $DataDir 'file-index.csv') | Where-Object { $_.Status -eq 'text' -and $ok.ContainsKey($_.VirtualPath) })
+# 왕복 검사에 실패한 파일도 싣는다. 파서는 읽을 수 있는 데까지 트리를 만들므로 빼면 그 유닛이 통째로 사라진다.
+# 대신 그 줄에 ParseErrors를 붙인다
+$parseErrors = @{}
+Import-Csv -LiteralPath (Join-Path $DataDir 'parse-results.csv') | Where-Object Ok -ne 'True' | ForEach-Object { $parseErrors[$_.VirtualPath] = @($_.Errors -split ' \| ') }
+$index = @(Import-Csv -LiteralPath (Join-Path $DataDir 'file-index.csv') | Where-Object Status -eq 'text')
 
 # 이름 색인: 파일명이 곧 아이템·엔티티·breed의 이름이다
 $refs = New-SdlReferenceIndex
@@ -63,14 +65,15 @@ try {
         $name = Get-SdlLeafName $vp
         $root = Get-SdlParsedFile $ctx $vp $false
         $raw = Get-SdlKeyRows -Root $root
-        $rawWriters[$f.Group].WriteLine('{"Id":' + (J $vp) + ',"Name":' + (J $name) + ',"Kind":' + (J $kind) + ',"Raw":' + (ConvertTo-SdlRowsJson -Rows $raw) + '}')
+        $errJson = if ($parseErrors.ContainsKey($vp)) { ',"ParseErrors":' + (JArray $parseErrors[$vp]) } else { '' }
+        $rawWriters[$f.Group].WriteLine('{"Id":' + (J $vp) + ',"Name":' + (J $name) + ',"Kind":' + (J $kind) + ',"Raw":' + (ConvertTo-SdlRowsJson -Rows $raw) + $errJson + '}')
 
         $refRows = $raw
         if ($kind -in $resolvedKinds) {
             $res = Resolve-SdlFile $ctx $vp
             $rows = Get-SdlKeyRows -Root ([pscustomobject]@{ Children = $res.Nodes })
             $resWriters[$f.Group].WriteLine('{"Id":' + (J $vp) + ',"Kind":' + (J $kind) + ',"Resolved":' + (ConvertTo-SdlRowsJson -Rows $rows) +
-                ',"Unresolved":' + (JArray $res.Unresolved) + ',"Includes":' + (JArray $res.Includes) + ',"Macros":' + (JArray $res.Macros) + ',"Presets":' + (JArray $res.Presets) + '}')
+                ',"Unresolved":' + (JArray $res.Unresolved) + ',"Includes":' + (JArray $res.Includes) + ',"Macros":' + (JArray $res.Macros) + ',"Presets":' + (JArray $res.Presets) + $errJson + '}')
             Add-SdlKeyAggregateRows -Agg $agg -Scope "$($f.Group)|$kind" -Rows $rows -File $vp
             $summary.Add([pscustomobject]@{
                 VirtualPath = $vp; Kind = $kind; RawRows = $raw.Count; ResolvedRows = $rows.Count
