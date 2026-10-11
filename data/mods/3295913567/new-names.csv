@@ -1,0 +1,6 @@
+"Where","Path","Form","FileCount","ArgShapes","ExampleFile","ExampleArgs","Comments"
+"원본 vehicle .def","/actor/extender[inventory]/box/item/cell","block","5","[num num]x253","entity/-vehicle/generic/special/inf_crate_eng/inf_crate_eng_weapon.def","20 0",""
+"펼침 vehicle vehicle","/actor/extender[inventory]/box/item/cell","block","5","[num num]x253","entity/-vehicle/generic/special/inf_crate_eng/inf_crate_eng_weapon.def","20 0",""
+"원본 shared .set","/panel_control/change_paint_scheme_toggle","block","1","[]x2","set/panel_control/right_special.set","",""
+"원본 shared .inc","/""*""/(define ""tex_mod"")","define","1","[]x2","set/interaction_entity/debug.inc","",""
+"원본 shared .inc","/""*""/on/if/(""tex_mod"")","macro","1","[atom atom]x78","set/interaction_entity/debug.inc","args b",""

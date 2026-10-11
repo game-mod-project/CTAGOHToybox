@@ -40,6 +40,7 @@ New-Pak (Join-Path $src 'a_gamelogic.pak') @{
     'script/x.lua'   = (B 'print(1)')
     'map/m.mi'       = (B '{mission}')
     'set/cyr.set'    = $nonAscii
+    'set/img.pdn'    = (B 'PDN3<pdnImage width="4"><layers>')   # 이미지 편집기 파일: 앞부분은 글자지만 텍스트 정의가 아니다
 }
 New-Pak (Join-Path $src 'b_dup.pak') @{
     'set/a.set'    = (B '{a 2}')
@@ -61,6 +62,7 @@ Assert-Equal 'duplicate' (St 'set/same.set' 'b_dup.pak') 'identical content is d
 Assert-Equal 'excluded-binary' (St 'set/b.ply' '*') 'binary extension'
 Assert-Equal 'excluded-binary' (St 'set/nul.set' '*') 'NUL sniff'
 Assert-Equal 'empty' (St 'set/empty.set' '*') 'empty file'
+Assert-Equal 'excluded-binary' (St 'set/img.pdn' '*') 'image editor file with a text-like header is binary'
 Assert-Equal 'reference-only' (St 'script/x.lua' '*') 'lua is reference only'
 Assert-Equal 'excluded-scope' (St 'map/m.mi' '*') 'map is out of scope'
 Assert-Equal 'text' (St 'entity/-vehicle/t/t.def' '*') 'pak folder becomes virtual prefix'

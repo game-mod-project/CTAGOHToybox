@@ -1,0 +1,106 @@
+{
+  "Id": "2905667604",
+  "Files": 113623,
+  "FilesByStatus": {
+    "empty": 10,
+    "excluded-binary": 77122,
+    "excluded-scope": 23625,
+    "reference-only": 318,
+    "text": 12548
+  },
+  "FilesByRelation": {
+    "new": 113376,
+    "override-changed": 136,
+    "override-identical": 11,
+    "override-unhashed": 100
+  },
+  "TextByRelationAndTop": {
+    "new entity/-vehicle": 7499,
+    "new entity/inventory": 1957,
+    "new entity/humanskin": 1113,
+    "new set/breed": 1104,
+    "new set/stuff": 981,
+    "override-changed set/stuff": 30,
+    "new set/multiplayer": 25,
+    "override-changed set/multiplayer": 20,
+    "override-changed set/breed": 15,
+    "new set/interaction_entity": 15,
+    "override-changed entity/-vehicle": 14,
+    "override-changed script/multiplayer": 13,
+    "override-changed set/dynamic_campaign": 12,
+    "new script/multiplayer": 11,
+    "override-changed set/interaction_terrain": 10,
+    "override-identical set/breed": 9,
+    "override-changed set/panel_control": 3,
+    "new set/vision": 3,
+    "new set/third_person": 3,
+    "override-changed set/vision": 3,
+    "override-changed set/registry": 2,
+    "new set/dynamic_campaign": 2,
+    "override-changed set/small_firearms_accuracy.inc": 1,
+    "override-changed set/entitymanager.set": 1,
+    "override-identical entity/-vehicle": 1
+  },
+  "UnitsByKindRelation": {
+    "breed changed": 14,
+    "breed new": 1100,
+    "humanskin new": 174,
+    "item-entity new": 550,
+    "pattern changed": 1,
+    "pattern new": 10,
+    "stuff changed": 23,
+    "stuff new": 970,
+    "vehicle changed": 13,
+    "vehicle new": 1307
+  },
+  "NewVehicleDefsByNation": {
+    "+japan": 465,
+    "+usa": 215,
+    "+germany": 169,
+    "+ussr": 113,
+    "test": 108,
+    "germany": 52,
+    "usa": 44,
+    "ussr": 39,
+    "fra": 33,
+    "+finland": 22,
+    "eng": 19,
+    "+swe": 18,
+    "finland": 9,
+    "small_arms_test": 1
+  },
+  "NewBreedsByFolder": {
+    "mp/jap": 768,
+    "mp/usa": 114,
+    "mp/fin": 90,
+    "mp/ger": 79,
+    "mp/rus": 25,
+    "mp/fra": 13,
+    "mp/eng": 11
+  },
+  "KeysNotInVanilla": 2340,
+  "KeysNotInVanillaByForm": {
+    "block": 1717,
+    "macro": 413,
+    "define": 189,
+    "mod": 16,
+    "bare": 4,
+    "include": 1
+  },
+  "NamesNotInVanilla": 470,
+  "NamesNotInVanillaByForm": {
+    "macro": 240,
+    "define": 179,
+    "block": 51
+  },
+  "DistinctNewBlockNames": 30,
+  "RoundTripFailed": [
+    "set/stuff/gun/152mm_type96"
+  ],
+  "UnresolvedFiles": 3,
+  "UnresolvedTop": {
+    "macro:he_light": 2,
+    "macro:light_mortar_range_jap": 1
+  },
+  "Collisions": 0
+}

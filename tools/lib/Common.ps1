@@ -3,7 +3,8 @@ $ErrorActionPreference = 'Stop'
 
 $script:Latin1 = [Text.Encoding]::GetEncoding(28591)
 $script:DefaultScopeInclude = @('set/', 'script/', 'properties/', 'entity/-vehicle/', 'entity/humanskin/', 'entity/inventory/')
-$script:BinaryExt = @('.ply', '.vol', '.anm', '.dds', '.tga', '.ebm', '.png', '.jpg', '.bmp', '.wav', '.ogg', '.mp3', '.avi', '.bik', '.ttf', '.pso', '.vso')
+$script:BinaryExt = @('.ply', '.vol', '.anm', '.dds', '.tga', '.ebm', '.png', '.jpg', '.bmp', '.wav', '.ogg', '.mp3', '.avi', '.bik', '.ttf', '.pso', '.vso',
+    '.pdn', '.psd', '.xcf', '.max', '.blend', '.fbx', '.zip', '.7z', '.rar')   # 모드에 섞여 들어오는 작업 파일: 앞부분에 NUL이 없을 수 있다
 $script:ReferenceExt = @('.lua', '.md', '.txt')
 
 function Read-SdlText {
