@@ -15,39 +15,34 @@ function Get-SdlKeyRows {
     , [SdlCore]::KeyRows([object[]]@($Root.Children), $script:SdlQualifiedBlocks)
 }
 
+function ConvertTo-SdlRowsJson {
+    param([Parameter(Mandatory)][AllowEmptyCollection()]$Rows)
+    [SdlCore]::RowsJson($Rows)
+}
+
+function ConvertTo-SdlJsonString {
+    param([Parameter(Mandatory)][AllowEmptyString()][string]$Text)
+    [SdlCore]::JsonString($Text)
+}
+
+# 집계 본체는 SdlResolve.cs의 SdlKeyAggregator(C#)다
+function New-SdlKeyAggregate {
+    [SdlKeyAggregator]::new()
+}
+
 function Add-SdlKeyAggregate {
-    param([Parameter(Mandatory)][hashtable]$Agg, [Parameter(Mandatory)][string]$Scope, [Parameter(Mandatory)]$Row, [Parameter(Mandatory)][string]$File)
-    $k = "$Scope`t$($Row.Path)`t$($Row.Form)"
-    $a = $Agg[$k]
-    if ($null -eq $a) {
-        $a = [pscustomobject]@{
-            Scope = $Scope; Path = $Row.Path; Form = $Row.Form; Count = 0; FileCount = 0; LastFile = ''
-            Shapes = @{}; Values = @{}; NumMin = $null; NumMax = $null; ExampleFile = $File; ExampleArgs = $Row.Args
-        }
-        $Agg[$k] = $a
-    }
-    $a.Count++
-    if ($a.LastFile -ne $File) { $a.FileCount++; $a.LastFile = $File }
-    $a.Shapes[$Row.Shape] = 1 + [int]$a.Shapes[$Row.Shape]
-    if ($a.Values.Count -le 12) { $a.Values[$Row.Args] = 1 + [int]$a.Values[$Row.Args] }
-    if ($Row.Shape -eq 'num') {
-        $d = [double]::Parse($Row.Args, [Globalization.NumberStyles]::Float, [cultureinfo]::InvariantCulture)
-        if ($null -eq $a.NumMin -or $d -lt $a.NumMin) { $a.NumMin = $d }
-        if ($null -eq $a.NumMax -or $d -gt $a.NumMax) { $a.NumMax = $d }
-    }
+    param([Parameter(Mandatory)]$Agg, [Parameter(Mandatory)][string]$Scope, [Parameter(Mandatory)]$Row, [Parameter(Mandatory)][string]$File)
+    $Agg.Add($Scope, $Row, $File)
+}
+
+function Add-SdlKeyAggregateRows {
+    param([Parameter(Mandatory)]$Agg, [Parameter(Mandatory)][string]$Scope, [Parameter(Mandatory)][AllowEmptyCollection()]$Rows, [Parameter(Mandatory)][string]$File)
+    $Agg.AddRows($Scope, $Rows, $File)
 }
 
 function Export-SdlKeyAggregate {
-    param([Parameter(Mandatory)][hashtable]$Agg)
-    foreach ($a in $Agg.Values) {
-        $shapes = ($a.Shapes.GetEnumerator() | Sort-Object Value -Descending | Select-Object -First 5 | ForEach-Object { "[$($_.Key)]x$($_.Value)" }) -join ' '
-        $values = if ($a.Values.Count -gt 12) { '(13종 이상)' } else { ($a.Values.GetEnumerator() | Sort-Object Value -Descending | ForEach-Object { $_.Key }) -join ' ¦ ' }
-        [pscustomobject]@{
-            Scope = $a.Scope; Path = $a.Path; Form = $a.Form; Count = $a.Count; FileCount = $a.FileCount
-            ArgShapes = $shapes; NumMin = $a.NumMin; NumMax = $a.NumMax; Values = $values
-            ExampleFile = $a.ExampleFile; ExampleArgs = $a.ExampleArgs
-        }
-    }
+    param([Parameter(Mandatory)]$Agg)
+    $Agg.Export()
 }
 
 function Get-SdlKeyComments {

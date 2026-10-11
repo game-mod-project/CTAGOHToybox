@@ -133,4 +133,37 @@ public static partial class SdlCore
         AddRows(nodes, "", rows, q);
         return rows;
     }
+
+    // JSON 문자열 리터럴. 제어 문자는 \u00XX로 쓴다
+    public static string JsonString(string s)
+    {
+        var sb = new System.Text.StringBuilder(s.Length + 2);
+        sb.Append('"');
+        foreach (char ch in s)
+        {
+            if (ch == '"') sb.Append("\\\"");
+            else if (ch == '\\') sb.Append("\\\\");
+            else if (ch == '\t') sb.Append("\\t");
+            else if (ch == '\n') sb.Append("\\n");
+            else if (ch == '\r') sb.Append("\\r");
+            else if (ch < ' ') sb.Append("\\u").Append(((int)ch).ToString("x4"));
+            else sb.Append(ch);
+        }
+        sb.Append('"');
+        return sb.ToString();
+    }
+
+    // 행 목록을 [[Path,Form,Args],...] JSON으로 쓴다
+    public static string RowsJson(List<SdlRow> rows)
+    {
+        var sb = new System.Text.StringBuilder();
+        sb.Append('[');
+        for (int i = 0; i < rows.Count; i++)
+        {
+            if (i > 0) sb.Append(',');
+            sb.Append('[').Append(JsonString(rows[i].Path)).Append(',').Append(JsonString(rows[i].Form)).Append(',').Append(JsonString(rows[i].Args)).Append(']');
+        }
+        sb.Append(']');
+        return sb.ToString();
+    }
 }
