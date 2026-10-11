@@ -453,16 +453,16 @@
 | 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |
 |---|---|---|---|---|---|---|---|---|---|
 | `/breed` | block | []x5083 | 5083 | 5083 | 예: | 추정 | 보병 유닛 하나를 정의하는 최상위 블록 (추정: set/breed의 모든 .set이 이 블록 하나로 이루어짐) | 파일 구조와 값에서 추론 |  |
-| `/breed/armors` | block | []x5025 | 5025 | 5025 | 예: | 추정 | 착용 장구 묶음 (추정: 하위에 head가 있고 값이 헬멧 아이템 이름) | 파일 구조와 값에서 추론 |  |
+| `/breed/armors` | block | []x5025 | 5025 | 5025 | 예: | 추정 | 착용 장구 묶음 (추정: 하위에 head가 있고 값이 헬멧 아이템 이름) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
 | `/breed/armors/head` | block | [atom]x5007 | 5007 | 5007 | 예: civilian_dockyard_cap | 추정 | 머리 장구 아이템 이름. set/stuff/head의 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 |  |
 | `/breed/behaviour` | block | [atom]x5083 | 5083 | 5083 | soldier | 추정 | 행동 유형. 값은 soldier 등 (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/breed/field_icon` | block | [str]x21 | 21 | 21 | "rus_miner_ap" ¦ "rus_miner_at" ¦ "usa_engineer_ap" ¦ "usa_engineer_at" ¦ "rus_pilot" ¦ "border_jag_ap" ¦ "border_jag_at" ¦ "ger_miner_ap" ¦ "ger_miner_at" ¦ "rus_artilleryman" | 미확인(자동) |  |  |  |
 | `/breed/hero` | block | []x84 | 84 | 84 | 예: | 미확인(자동) |  |  |  |
-| `/breed/icon` | block | [str]x4970 [atom]x74 | 5044 | 5044 | 예: "bazooka" | 추정 | 유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값) | 파일 구조와 값에서 추론 |  |
+| `/breed/icon` | block | [str]x4970 [atom]x74 | 5044 | 5044 | 예: "bazooka" | 추정 | 유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
 | `/breed/icon_priority` | block | [num]x5044 | 5044 | 5044 | 0 ~ 52 | 추정 | 아이콘 표시 우선순위 숫자 (추정: 이름. 정렬 방향은 미확인) | 파일 구조와 값에서 추론 |  |
 | `/breed/inventory` | block | []x4970 | 4970 | 4970 | 예: | 추정 | 소지품 목록 (추정: 하위가 item 행) | 파일 구조와 값에서 추론 |  |
 | `/breed/inventory/in_hands` | block | [num]x4835 | 4835 | 4835 | 0 ~ 4 | 추정 | 스폰 때 손에 드는 아이템의 순번 (추정: 이름과 값 0~. 기준이 0부터인지는 미확인) | 파일 구조와 값에서 추론 |  |
-| `/breed/inventory/item` | block | [str num num]x17805 [str num]x7022 [str]x5376 [str atom]x2916 [str atom str num]x2871 | 4970 | 36135 | 예: "piat" filling "piat_bomb ammo heata" 1 | 추정 | 소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
+| `/breed/inventory/item` | block | [str num num]x17805 [str num]x7022 [str]x5376 [str atom]x2916 [str atom str num]x2871 | 4970 | 36135 | 예: "piat" filling "piat_bomb ammo heata" 1 | 추정 | 소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) | 128+8 ¦ 80+48+8 |
 | `/breed/nationality` | block | [atom]x5083 | 5083 | 5083 | 예: fra_civilian | 추정 | 소속 국가 코드. usa, ger, rus, eng, fin 등 (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/breed/perks` | block | []x5054 | 5054 | 5054 | 예: | 추정 | 능력치·특기 묶음. 안에서 ability.inc를 include하고 매크로로 기술 수준을 넣는다 (추정: 파일 구조) | 파일 구조와 값에서 추론 |  |
 | `/breed/perks/"*"` | block | [str atom]x430 [str str]x215 [str]x113 [str num]x86 | 62 | 844 | 예: "rocketlauncher" lvl_1 | 추정 | 기술 이름과 수준. 예: "rifle" lvl_5. 이름은 인자로 남아 있다 (추정: set/breed/presets/perks/skills.inc의 매크로가 이 형태를 만든다) | 파일 구조와 값에서 추론 |  |
@@ -524,10 +524,10 @@
 | `/breed/perks/("tier4_standard")` | macro | []x841 | 841 | 841 | 예: | 미확인(자동) |  |  |  |
 | `/breed/perks/("tier5_standard")` | macro | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/breed/perks/(include)` | include | [str]x5011 | 5011 | 5011 | "ability.inc" | 미확인(자동) |  |  |  |
-| `/breed/portrait` | block | [str]x5003 [atom]x80 | 5083 | 5083 | 예: "civilian2" | 추정 | 인터페이스에 표시할 초상화 이름 (추정: 이름과 값이 "usa_1st_special" 같은 식별자) | 파일 구조와 값에서 추론 |  |
-| `/breed/skin` | block | [str]x5083 | 5083 | 5083 | 예: "civ_01_var1" | 추정 | 외형 엔티티 이름. entity/humanskin의 .def 파일명과 일치한다 (추정: 참조 색인에서 entity로 연결됨) | 파일 구조와 값에서 추론 | m41 uniform, haversack, rifle pouch ¦ m41 uniform, haversack, rifle pouch, general purpose bag |
+| `/breed/portrait` | block | [str]x5003 [atom]x80 | 5083 | 5083 | 예: "civilian2" | 추정 | 인터페이스에 표시할 초상화 이름 (추정: 이름과 값이 "usa_1st_special" 같은 식별자) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
+| `/breed/skin` | block | [str]x5083 | 5083 | 5083 | 예: "civ_01_var1" | 추정 | 외형 엔티티 이름. entity/humanskin의 .def 파일명과 일치한다 (추정: 참조 색인에서 entity로 연결됨) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) | m41 uniform, haversack, rifle pouch ¦ m41 uniform, haversack, rifle pouch, general purpose bag |
 | `/breed/tags` | block | [str]x4380 | 4380 | 4380 | "soldier" ¦ "crew" ¦ "soldier_bazooka" ¦ "soldier_pzfaust" ¦ "soldier_atr" ¦ "soldier_atr_grenade" ¦ "soldier_pzscheck" ¦ "" | 추정 | 유닛 분류 태그 문자열 (추정: 값 "soldier", "soldier_bazooka") | 파일 구조와 값에서 추론 |  |
-| `/breed/veterancy` | block | []x5022 | 5022 | 5022 | 예: | 추정 | 숙련도 단계별 값 묶음. veterancy.inc의 매크로가 채운다 (추정: 파일 구조) | 파일 구조와 값에서 추론 |  |
+| `/breed/veterancy` | block | []x5022 | 5022 | 5022 | 예: | 추정 | 숙련도 단계별 값 묶음. veterancy.inc의 매크로가 채운다 (추정: 파일 구조) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
 | `/breed/veterancy/"*"` | block | [str num]x176 | 22 | 176 | 예: "lvl_1" 4 | 추정 | 숙련도 단계 이름과 그 단계에 필요한 값. 예: "lvl_1" 4 (추정: veterancy.inc의 주석에 단계별 숫자가 적혀 있으나 단위는 미확인) | 파일 구조와 값에서 추론 |  |
 | `/breed/veterancy/("veterancy_lvl_0")` | macro | []x4037 | 4037 | 4037 | 예: | 미확인(자동) |  |  |  |
 | `/breed/veterancy/("veterancy_lvl_3")` | macro | []x323 | 323 | 323 | 예: | 미확인(자동) |  |  |  |
@@ -545,16 +545,16 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |
 |---|---|---|---|---|---|---|---|---|---|
 | `/breed` | block | []x5083 | 5083 | 5083 | 예: | 추정 | 보병 유닛 하나를 정의하는 최상위 블록 (추정: set/breed의 모든 .set이 이 블록 하나로 이루어짐) | 파일 구조와 값에서 추론 |  |
-| `/breed/armors` | block | []x5025 | 5025 | 5025 | 예: | 추정 | 착용 장구 묶음 (추정: 하위에 head가 있고 값이 헬멧 아이템 이름) | 파일 구조와 값에서 추론 |  |
+| `/breed/armors` | block | []x5025 | 5025 | 5025 | 예: | 추정 | 착용 장구 묶음 (추정: 하위에 head가 있고 값이 헬멧 아이템 이름) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
 | `/breed/armors/head` | block | [atom]x5007 | 5007 | 5007 | 예: civilian_dockyard_cap | 추정 | 머리 장구 아이템 이름. set/stuff/head의 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 |  |
 | `/breed/behaviour` | block | [atom]x5083 | 5083 | 5083 | soldier | 추정 | 행동 유형. 값은 soldier 등 (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/breed/field_icon` | block | [str]x21 | 21 | 21 | "rus_miner_ap" ¦ "rus_miner_at" ¦ "usa_engineer_ap" ¦ "usa_engineer_at" ¦ "rus_pilot" ¦ "border_jag_ap" ¦ "border_jag_at" ¦ "ger_miner_ap" ¦ "ger_miner_at" ¦ "rus_artilleryman" | 미확인(자동) |  |  |  |
 | `/breed/hero` | block | []x84 | 84 | 84 | 예: | 미확인(자동) |  |  |  |
-| `/breed/icon` | block | [str]x4970 [atom]x74 | 5044 | 5044 | 예: "bazooka" | 추정 | 유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값) | 파일 구조와 값에서 추론 |  |
+| `/breed/icon` | block | [str]x4970 [atom]x74 | 5044 | 5044 | 예: "bazooka" | 추정 | 유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
 | `/breed/icon_priority` | block | [num]x5044 | 5044 | 5044 | 0 ~ 52 | 추정 | 아이콘 표시 우선순위 숫자 (추정: 이름. 정렬 방향은 미확인) | 파일 구조와 값에서 추론 |  |
 | `/breed/inventory` | block | []x4970 | 4970 | 4970 | 예: | 추정 | 소지품 목록 (추정: 하위가 item 행) | 파일 구조와 값에서 추론 |  |
 | `/breed/inventory/in_hands` | block | [num]x4835 | 4835 | 4835 | 0 ~ 4 | 추정 | 스폰 때 손에 드는 아이템의 순번 (추정: 이름과 값 0~. 기준이 0부터인지는 미확인) | 파일 구조와 값에서 추론 |  |
-| `/breed/inventory/item` | block | [str num num]x17805 [str num]x7022 [str]x5376 [str atom]x2916 [str atom str num]x2871 | 4970 | 36135 | 예: "piat" filling "piat_bomb ammo heata" 1 | 추정 | 소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
+| `/breed/inventory/item` | block | [str num num]x17805 [str num]x7022 [str]x5376 [str atom]x2916 [str atom str num]x2871 | 4970 | 36135 | 예: "piat" filling "piat_bomb ammo heata" 1 | 추정 | 소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) | 128+8 ¦ 80+48+8 |
 | `/breed/nationality` | block | [atom]x5083 | 5083 | 5083 | 예: fra_civilian | 추정 | 소속 국가 코드. usa, ger, rus, eng, fin 등 (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/breed/perks` | block | []x5054 | 5054 | 5054 | 예: | 추정 | 능력치·특기 묶음. 안에서 ability.inc를 include하고 매크로로 기술 수준을 넣는다 (추정: 파일 구조) | 파일 구조와 값에서 추론 |  |
 | `/breed/perks/"*"` | block | [str atom]x57183 [str str]x25758 [str num]x10385 [str]x782 | 5054 | 94108 | 예: "rocketlauncher" lvl_1 | 추정 | 기술 이름과 수준. 예: "rifle" lvl_5. 이름은 인자로 남아 있다 (추정: set/breed/presets/perks/skills.inc의 매크로가 이 형태를 만든다) | 파일 구조와 값에서 추론 |  |
@@ -564,10 +564,10 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/breed/perks/barricade/"*"` | block | [str str]x11213 | 5011 | 11213 | 예: "fortifications" "foxhole" | 추정 | 구조물 분류와 구조물 이름 한 쌍 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/breed/perks/fortification` | block | []x93 | 93 | 93 | 예: | 미확인(자동) |  |  |  |
 | `/breed/perks/mechanic` | block | [atom num]x5496 | 5011 | 5496 | factor 0.5 ¦ factor 1.0 | 추정 | 수리 능력. factor 뒤의 수가 배율 (추정: 이름과 값 factor 0.5) | 파일 구조와 값에서 추론 |  |
-| `/breed/portrait` | block | [str]x5003 [atom]x80 | 5083 | 5083 | 예: "civilian2" | 추정 | 인터페이스에 표시할 초상화 이름 (추정: 이름과 값이 "usa_1st_special" 같은 식별자) | 파일 구조와 값에서 추론 |  |
-| `/breed/skin` | block | [str]x5083 | 5083 | 5083 | 예: "civ_01_var1" | 추정 | 외형 엔티티 이름. entity/humanskin의 .def 파일명과 일치한다 (추정: 참조 색인에서 entity로 연결됨) | 파일 구조와 값에서 추론 | m41 uniform, haversack, rifle pouch ¦ m41 uniform, haversack, rifle pouch, general purpose bag |
+| `/breed/portrait` | block | [str]x5003 [atom]x80 | 5083 | 5083 | 예: "civilian2" | 추정 | 인터페이스에 표시할 초상화 이름 (추정: 이름과 값이 "usa_1st_special" 같은 식별자) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
+| `/breed/skin` | block | [str]x5083 | 5083 | 5083 | 예: "civ_01_var1" | 추정 | 외형 엔티티 이름. entity/humanskin의 .def 파일명과 일치한다 (추정: 참조 색인에서 entity로 연결됨) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) | m41 uniform, haversack, rifle pouch ¦ m41 uniform, haversack, rifle pouch, general purpose bag |
 | `/breed/tags` | block | [str]x4380 | 4380 | 4380 | "soldier" ¦ "crew" ¦ "soldier_bazooka" ¦ "soldier_pzfaust" ¦ "soldier_atr" ¦ "soldier_atr_grenade" ¦ "soldier_pzscheck" ¦ "" | 추정 | 유닛 분류 태그 문자열 (추정: 값 "soldier", "soldier_bazooka") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/breed/veterancy` | block | []x5022 | 5022 | 5022 | 예: | 추정 | 숙련도 단계별 값 묶음. veterancy.inc의 매크로가 채운다 (추정: 파일 구조) | 파일 구조와 값에서 추론 |  |
+| `/breed/veterancy` | block | []x5022 | 5022 | 5022 | 예: | 추정 | 숙련도 단계별 값 묶음. veterancy.inc의 매크로가 채운다 (추정: 파일 구조) | 파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인) |  |
 | `/breed/veterancy/"*"` | block | [str num]x80176 | 5022 | 80176 | 예: "lvl_1" 4 | 추정 | 숙련도 단계 이름과 그 단계에 필요한 값. 예: "lvl_1" 4 (추정: veterancy.inc의 주석에 단계별 숫자가 적혀 있으나 단위는 미확인) | 파일 구조와 값에서 추론 |  |
 | `/breed/veterancy/(mod)` | mod | [str]x5000 | 5000 | 5000 | "mp" | 추정 | 게임 모드 조건. (mod "mp" ...)는 멀티플레이에서만 적용 (추정: set/entitymanager.set에서 mod "mp"와 mod not "mp"가 짝으로 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/breed/voice` | block | [atom]x423 | 420 | 423 | eng ¦ eng_pol ¦ usa_officer ¦ eng_officer ¦ usa_sniper ¦ usa_medic ¦ ger_officer ¦ eng_medic ¦ ger_sniper ¦ ger_medic ¦ usa_speirs ¦ usa_winters | 추정 | 음성 세트 국가 코드 (추정: 값 eng 등) | 파일 구조와 값에서 추론 |  |

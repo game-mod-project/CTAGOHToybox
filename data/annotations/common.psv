@@ -6,24 +6,24 @@
 
 # ---------- 보병 (breed)
 */breed|block|추정|보병 유닛 하나를 정의하는 최상위 블록 (추정: set/breed의 모든 .set이 이 블록 하나로 이루어짐)|S
-*/skin|block|추정|외형 엔티티 이름. entity/humanskin의 .def 파일명과 일치한다 (추정: 참조 색인에서 entity로 연결됨)|S
-*/portrait|block|추정|인터페이스에 표시할 초상화 이름 (추정: 이름과 값이 "usa_1st_special" 같은 식별자)|S
+*/skin|block|추정|외형 엔티티 이름. entity/humanskin의 .def 파일명과 일치한다 (추정: 참조 색인에서 entity로 연결됨)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
+*/portrait|block|추정|인터페이스에 표시할 초상화 이름 (추정: 이름과 값이 "usa_1st_special" 같은 식별자)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
 */behaviour|block|추정|행동 유형. 값은 soldier 등 (추정: 이름과 값)|S
 */nationality|block|추정|소속 국가 코드. usa, ger, rus, eng, fin 등 (추정: 이름과 값)|S
-*/icon|block|추정|유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값)|S
+*/icon|block|추정|유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
 */icon_priority|block|추정|아이콘 표시 우선순위 숫자 (추정: 이름. 정렬 방향은 미확인)|S
 */perks|block|추정|능력치·특기 묶음. 안에서 ability.inc를 include하고 매크로로 기술 수준을 넣는다 (추정: 파일 구조)|S
 /breed/perks/"*"|block|추정|기술 이름과 수준. 예: "rifle" lvl_5. 이름은 인자로 남아 있다 (추정: set/breed/presets/perks/skills.inc의 매크로가 이 형태를 만든다)|S
 */barricade|block|추정|이 보병이 지을 수 있는 구조물 묶음 (추정: 하위 값이 "fortifications" "foxhole")|S
 /breed/perks/barricade/"*"|block|추정|구조물 분류와 구조물 이름 한 쌍 (추정: 값)|S
 */mechanic|block|추정|수리 능력. factor 뒤의 수가 배율 (추정: 이름과 값 factor 0.5)|S
-*/armors|block|추정|착용 장구 묶음 (추정: 하위에 head가 있고 값이 헬멧 아이템 이름)|S
+*/armors|block|추정|착용 장구 묶음 (추정: 하위에 head가 있고 값이 헬멧 아이템 이름)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
 */head|block|추정|머리 장구 아이템 이름. set/stuff/head의 파일명과 일치한다 (추정: 참조 색인)|S
-*/veterancy|block|추정|숙련도 단계별 값 묶음. veterancy.inc의 매크로가 채운다 (추정: 파일 구조)|S
+*/veterancy|block|추정|숙련도 단계별 값 묶음. veterancy.inc의 매크로가 채운다 (추정: 파일 구조)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
 /breed/veterancy/"*"|block|추정|숙련도 단계 이름과 그 단계에 필요한 값. 예: "lvl_1" 4 (추정: veterancy.inc의 주석에 단계별 숫자가 적혀 있으나 단위는 미확인)|S
 /breed/veterancy/(mod)|mod|추정|게임 모드 조건. (mod "mp" ...)는 멀티플레이에서만 적용 (추정: set/entitymanager.set에서 mod "mp"와 mod not "mp"가 짝으로 쓰임)|S
 /breed/inventory|block|추정|소지품 목록 (추정: 하위가 item 행)|S
-/breed/inventory/item|block|추정|소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인)|S
+/breed/inventory/item|block|추정|소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
 */in_hands|block|추정|스폰 때 손에 드는 아이템의 순번 (추정: 이름과 값 0~. 기준이 0부터인지는 미확인)|S
 /breed/tags|block|추정|유닛 분류 태그 문자열 (추정: 값 "soldier", "soldier_bazooka")|S
 */voice|block|추정|음성 세트 국가 코드 (추정: 값 eng 등)|S
