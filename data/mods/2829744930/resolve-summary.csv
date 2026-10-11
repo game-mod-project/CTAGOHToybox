@@ -2,7 +2,7 @@
 "entity/-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.def","vehicle","35","2004","0",""
 "entity/-vehicle/germany/special/150mm_sw34/150mm_sw34_ger.def","vehicle","92","1676","0",""
 "entity/-vehicle/germany/special/150mm_sw34/150mm_sw34.def","vehicle","92","1676","0",""
-"entity/-vehicle/germany/tank_medium/wirbelwind/wirbelwind.def","vehicle","104","2612","0",""
+"entity/-vehicle/germany/tank_medium/wirbelwind/wirbelwind.def","vehicle","104","2612","1","param:%door2"
 "entity/-vehicle/usa/btr/m13_mgmc/m13_mgmc.def","vehicle","75","2129","0",""
 "entity/-vehicle/usa/btr/m16_mgmc/m16_mgmc.def","vehicle","76","2133","0",""
 "entity/-vehicle/usa/btr/m3a1_commander/m3a1_commander.def","vehicle","111","1713","0",""

@@ -45,4 +45,11 @@ Assert-Equal 0 $r.TokenCount 'empty has no tokens'
 $r = Test-SdlRoundTrip -Text "; only a comment`n"
 Assert-Equal $true $r.Ok 'comment only is ok'
 
+# 리뷰 I5: 토크나이저와 독립된 문자 수 검사. 주석과 공백을 뺀 글자 수가 토큰 길이의 합과 같아야 한다
+Assert-Equal 8 ([SdlCore]::CountSignificantChars('{a "b c"} ; x')) 'significant chars skip comments and outer whitespace, keep spaces inside strings'
+Assert-Equal 8 ([SdlCore]::TokenChars((Get-SdlTokens -Text '{a "b c"} ; x'))) 'token chars'
+Assert-Equal 3 ([SdlCore]::CountSignificantChars("a;c`n`"x")) 'comment ends at line end, unterminated string counted'
+$r = Test-SdlRoundTrip -Text $sample
+Assert-Equal $true $r.CharsOk 'sample passes the independent char check'
+
 Complete-Tests

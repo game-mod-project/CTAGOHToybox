@@ -17,7 +17,7 @@ foreach ($f in $index) {
     if ($n % 2000 -eq 0) { Write-Host "parsed $n / $($index.Count)" }
     $text = Read-SdlText (Join-Path $WorkDir ($f.VirtualPath -replace '/', '\'))
     $rt = Test-SdlRoundTrip -Text $text
-    $results.Add([pscustomobject]@{ VirtualPath = $f.VirtualPath; Ok = $rt.Ok; TokenCount = $rt.TokenCount; Errors = ($rt.Errors -join ' | ') })
+    $results.Add([pscustomobject]@{ VirtualPath = $f.VirtualPath; Ok = $rt.Ok; CharsOk = $rt.CharsOk; TokenCount = $rt.TokenCount; Errors = ($rt.Errors -join ' | ') })
     $scope = "$($f.Group)|$(Get-SdlFileKind $f.VirtualPath)"
     Add-SdlKeyAggregateRows -Agg $agg -Scope $scope -Rows (Get-SdlKeyRows -Root $rt.Parsed.Root) -File $f.VirtualPath
     foreach ($c in (Get-SdlKeyComments -Text $text)) {

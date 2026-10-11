@@ -39,5 +39,6 @@
   "RoundTripFailed": [],
   "UnresolvedFiles": 0,
   "UnresolvedTop": {},
-  "Collisions": 0
+  "Collisions": 0,
+  "OutOfScopeDefinitions": {}
 }

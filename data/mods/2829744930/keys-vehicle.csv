@@ -70,7 +70,7 @@
 "vehicle",".def","/game_entity/extender[enumerator]/digit_folder","block","5","5","[str]x5",,,"""np"" ¦ ""ger"" ¦ ""us2"" ¦ ""np_w"" ¦ ""ru1""","entity/-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.def","""np""",""
 "vehicle",".def","/game_entity/extender[inventory]","block","12","12","[str]x12",,,"""inventory""","entity/-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.def","""inventory""",""
 "vehicle",".def","/game_entity/extender[inventory]/box","block","12","12","[]x12",,,"","entity/-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.def","",""
-"vehicle",".def","/game_entity/extender[inventory]/box/item","block","20","10","[str num]x19 [str atom str num]x1",,,"(13종 이상)","entity/-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.def","""bulletger_88_l56 apcbche2"" 14","5000 rounds ¦ 40 rounds"
+"vehicle",".def","/game_entity/extender[inventory]/box/item","block","20","10","[str num]x19 [str atom str num]x1",,,"(13종 이상)","entity/-vehicle/germany/btr/sdkfz8_flak18/sdkfz8_flak18.def","""bulletger_88_l56 apcbche2"" 14","5000 rounds ¦ 48 rounds"
 "vehicle",".def","/game_entity/extender[inventory]/box/item/user","block","1","1","[str]x1",,,"""mgun2""","entity/-vehicle/usa/btr/m3a1_commander/m3a1_commander.def","""mgun2""",""
 "vehicle",".def","/game_entity/extender[inventory]/box/size","block","2","2","[num num]x2",,,"4 2","entity/-vehicle/germany/special/150mm_sw34/150mm_sw34_ger.def","4 2",""
 "vehicle",".def","/game_entity/extender[inventory]/weapon","block","1","1","[str]x1",,,"""mgun2""","entity/-vehicle/usa/btr/m3a1_commander/m3a1_commander.def","""mgun2""",""

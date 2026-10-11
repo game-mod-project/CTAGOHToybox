@@ -28,5 +28,7 @@ function Get-SdlNodesText {
 function Test-SdlRoundTrip {
     param([Parameter(Mandatory)][AllowEmptyString()][string]$Text)
     $p = [SdlCore]::Parse($Text)
-    [pscustomobject]@{ Ok = [SdlCore]::RoundTrip($p); Errors = $p.Errors; TokenCount = $p.Tokens.Count; Parsed = $p }
+    # CharsOk: 토크나이저와 독립적으로 센 글자 수가 토큰 길이의 합과 같은지
+    $charsOk = ([SdlCore]::CountSignificantChars($Text) -eq [SdlCore]::TokenChars($p.Tokens))
+    [pscustomobject]@{ Ok = [SdlCore]::RoundTrip($p); CharsOk = $charsOk; Errors = $p.Errors; TokenCount = $p.Tokens.Count; Parsed = $p }
 }

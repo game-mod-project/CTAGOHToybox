@@ -15,7 +15,10 @@ foreach ($f in (Import-Csv -LiteralPath (Join-Path $VanillaDataDir 'file-index.c
 }
 $fileRows = foreach ($f in (Import-Csv -LiteralPath (Join-Path $ModDataDir 'file-index.csv'))) {
     $v = $van[$f.VirtualPath]
-    $rel = if ($null -eq $v) { 'new' }
+    # 모드 안에서 같은 가상 경로가 두 번 나온 경우(pak과 낱개 파일)의 둘째 행은 파일 수에 넣지 않는다
+    $rel = if ($f.Status -eq 'collision') { 'in-mod-collision' }
+        elseif ($f.Status -eq 'duplicate') { 'in-mod-duplicate' }
+        elseif ($null -eq $v) { 'new' }
         elseif ($f.Sha1 -and $v.Sha1) { if ($f.Sha1 -eq $v.Sha1) { 'override-identical' } else { 'override-changed' } }
         else { 'override-unhashed' }   # 바이너리나 범위 밖 파일: 내용 해시가 없어 같은지 다른지 판정하지 않는다
     [pscustomobject]@{ VirtualPath = $f.VirtualPath; Status = $f.Status; Relation = $rel; Length = $f.Length; VanillaLength = $(if ($null -ne $v) { $v.Length } else { '' }) }

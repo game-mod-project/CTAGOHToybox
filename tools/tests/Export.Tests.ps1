@@ -47,6 +47,14 @@ New-Pak (Join-Path $src 'b_dup.pak') @{
     'set/same.set' = (B '{s 1}')
 }
 New-Pak (Join-Path $src 'entity\-vehicle.pak') @{ '-vehicle/T/T.def' = (B '{game_entity}') }
+# 리뷰 I2: 상위 폴더로 빠져나가는 항목 이름을 가진 pak
+$zs = [IO.File]::Create((Join-Path $src 'c_evil.pak'))
+$za = [IO.Compression.ZipArchive]::new($zs, [IO.Compression.ZipArchiveMode]::Create)
+$escapeName = 'escaped-' + [guid]::NewGuid().ToString('N') + '.set'   # 실행마다 다른 이름: 이전 실행의 흔적과 섞이지 않게
+foreach ($pair in @(@("set/../../$escapeName", '{x 1}'), @('set/run.log', 'Error: at f (node:net:1:2)'))) {
+    $st = $za.CreateEntry($pair[0]).Open(); $bb = [Text.Encoding]::ASCII.GetBytes($pair[1]); $st.Write($bb, 0, $bb.Length); $st.Dispose()
+}
+$za.Dispose(); $zs.Dispose()
 [IO.Directory]::CreateDirectory((Join-Path $src 'set\loose')) | Out-Null
 [IO.File]::WriteAllBytes((Join-Path $src 'set\loose\c.set'), (B '{c 3}'))
 
@@ -73,7 +81,10 @@ Assert-Equal '-vehicle/T/T.def' (@($idx | Where-Object VirtualPath -eq 'entity/-
 Assert-Equal '{a 1}' ([IO.File]::ReadAllText((Join-Path $out 'set\a.set'))) 'first copy wins on disk'
 Assert-Equal $nonAscii ([IO.File]::ReadAllBytes((Join-Path $out 'set\cyr.set'))) 'non-ascii bytes preserved'
 Assert-Equal $false (Test-Path -LiteralPath (Join-Path $out 'map\m.mi')) 'out-of-scope not extracted'
-Assert-Equal 3 @(Import-Csv (Join-Path $data 'pak-summary.csv')).Count 'pak summary rows'
+Assert-Equal 4 @(Import-Csv (Join-Path $data 'pak-summary.csv')).Count 'pak summary rows'
+Assert-Equal 'excluded-unsafe' (@($idx | Where-Object OriginalPath -like "*$escapeName")[0].Status) 'entry escaping the output folder is refused'
+Assert-Equal $false (Test-Path -LiteralPath (Join-Path (Split-Path -Parent $out) $escapeName)) 'nothing is written outside the output folder'
+Assert-Equal 'reference-only' (St 'set/run.log' '*') 'log files are not parsed as definitions'
 # 범위 안의 0바이트 파일은 include 대상일 수 있으므로 빈 파일로 추출한다 (상태는 empty 그대로)
 Assert-Equal $true (Test-Path -LiteralPath (Join-Path $out 'set\empty.set')) 'in-scope empty file is extracted'
 Assert-Equal 0 ([IO.FileInfo]::new((Join-Path $out 'set\empty.set'))).Length 'extracted empty file has zero length'

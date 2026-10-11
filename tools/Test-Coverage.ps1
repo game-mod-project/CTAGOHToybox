@@ -5,7 +5,7 @@ param(
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'
-$allowed = 'text', 'reference-only', 'excluded-scope', 'excluded-binary', 'empty', 'duplicate'
+$allowed = 'text', 'reference-only', 'excluded-scope', 'excluded-binary', 'excluded-unsafe', 'empty', 'duplicate'
 
 # 검사 1: 파일
 $index = @(Import-Csv -LiteralPath (Join-Path $DataDir 'file-index.csv'))
@@ -15,6 +15,11 @@ $badFiles = @($index | Where-Object { $_.Status -notin $allowed })
 # 검사 2: 왕복
 $parse = @(Import-Csv -LiteralPath (Join-Path $DataDir 'parse-results.csv'))
 $failedParse = @($parse | Where-Object Ok -ne 'True')
+# 토크나이저와 독립된 글자 수 검사에 실패한 파일: 토크나이저가 글자를 버렸다는 뜻이다
+$failedChars = @($parse | Where-Object { $_.PSObject.Properties['CharsOk'] -and $_.CharsOk -ne 'True' })
+# pak의 실제 항목 수와 색인의 행 수 대조
+$rowsBySource = @{}; foreach ($g in ($index | Group-Object Source)) { $rowsBySource[$g.Name] = $g.Count }
+$pakMismatch = @(Import-Csv -LiteralPath (Join-Path $DataDir 'pak-summary.csv') | Where-Object { [int]$_.Files -ne [int]$rowsBySource[$_.Pak] })
 
 # 검사 3: 키
 $expected = [System.Collections.Generic.HashSet[string]]::new()
@@ -61,8 +66,12 @@ L
 L '| 검사 | 미해결 | 기준 |'
 L '|---|---|---|'
 L "| 1. 파일 | $($badFiles.Count) | 모든 파일이 파싱됨 또는 제외됨(사유 있음) |"
-L "| 2. 왕복 | $($failedParse.Count) | 파싱한 트리를 다시 쓰면 원본 토큰과 같음 |"
-L "| 3. 키 | $($missing.Count) | 데이터의 모든 키가 스키마 문서에 행으로 있음 |"
+L "| 1b. pak 항목 수 | $($pakMismatch.Count) | pak마다 색인의 행 수가 pak의 실제 파일 수와 같음 |"
+L "| 2. 왕복 | $($failedParse.Count) | 파싱한 트리를 다시 쓰면 원본 토큰과 같음. 괄호와 따옴표의 짝이 맞는지를 잡는다 |"
+L "| 2b. 글자 수 | $($failedChars.Count) | 주석과 공백을 뺀 원본의 글자 수가 토큰 길이의 합과 같음. 토크나이저가 버린 글자가 있는지를 잡는다 |"
+L "| 3. 키 | $($missing.Count) | 데이터의 모든 키가 스키마 문서에 행으로 있음. 문서가 데이터보다 낡았거나 손으로 고쳐졌는지를 잡는다 |"
+L
+L '검사 1과 3은 같은 도구가 만든 산출물끼리의 대조다. 도구 자체가 무언가를 빠뜨렸는지는 1b와 2b가 따로 확인한다.'
 L
 L '## 1. 파일 검사'
 L
@@ -115,5 +124,7 @@ $body = $sb.ToString()
 $manualPath = Join-Path $DocsDir 'coverage-notes.md'
 if (Test-Path -LiteralPath $manualPath) { $body += "`n" + (Get-Content -Raw -LiteralPath $manualPath) }
 [IO.File]::WriteAllText($out, $body, [Text.UTF8Encoding]::new($false))
-Write-Host "files-unresolved=$($badFiles.Count) roundtrip-failed=$($failedParse.Count) keys-missing=$($missing.Count) keys-extra=$($extra.Count)"
-if ($badFiles.Count -gt 0 -or $missing.Count -gt 0) { exit 1 }
+foreach ($f in $failedChars) { Write-Host "char-check failed: $($f.VirtualPath)" }
+foreach ($p in $pakMismatch) { Write-Host "pak count mismatch: $($p.Pak) pak=$($p.Files) index=$($rowsBySource[$p.Pak])" }
+Write-Host "files-unresolved=$($badFiles.Count) pak-mismatch=$($pakMismatch.Count) roundtrip-failed=$($failedParse.Count) chars-failed=$($failedChars.Count) keys-missing=$($missing.Count) keys-extra=$($extra.Count)"
+if ($badFiles.Count -gt 0 -or $missing.Count -gt 0 -or $failedChars.Count -gt 0 -or $pakMismatch.Count -gt 0) { exit 1 }

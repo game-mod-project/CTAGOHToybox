@@ -54,8 +54,15 @@ foreach ($id in $ModIds) {
         UnresolvedFiles = $unresolved.Count
         UnresolvedTop = [ordered]@{}
         Collisions = @($index | Where-Object Status -eq 'collision').Count
+        OutOfScopeDefinitions = [ordered]@{}
     }
     foreach ($x in ($index | Group-Object Status | Sort-Object Name)) { $s.FilesByStatus[$x.Name] = $x.Count }
+    # 분석 범위(set, script, properties, entity/-vehicle, entity/humanskin, entity/inventory) 밖에 놓인 정의 파일.
+    # 모드는 entity/+inventory 같은 자기 폴더에 유닛을 두기도 한다. 이 파일들은 분석되지 않았으므로 숨기지 않고 센다
+    $defExt = '.def', '.set', '.ext', '.inc', '.ammo', '.weapon', '.grenade', '.mine', '.pattern', '.presets'
+    $otherDomains = '^(map|interface|sound|texture|music|video|shader)/'
+    foreach ($x in ($index | Where-Object { $_.Status -eq 'excluded-scope' -and $defExt -contains $_.Ext -and $_.VirtualPath -notmatch $otherDomains } |
+            Group-Object { (($_.VirtualPath -split '/') | Select-Object -First 2) -join '/' } | Sort-Object Count -Descending)) { $s.OutOfScopeDefinitions[$x.Name] = $x.Count }
     foreach ($x in ($files | Group-Object Relation | Sort-Object Name)) { $s.FilesByRelation[$x.Name] = $x.Count }
     foreach ($x in ($files | Where-Object Status -in 'text', 'reference-only' | Group-Object { "$($_.Relation) $((($_.VirtualPath -split '/') | Select-Object -First 2) -join '/')" } | Sort-Object Count -Descending | Select-Object -First 25)) { $s.TextByRelationAndTop[$x.Name] = $x.Count }
     foreach ($x in ($units | Where-Object Kind -ne 'support' | Group-Object { "$($_.Kind) $($_.Relation)" } | Sort-Object Name)) { $s.UnitsByKindRelation[$x.Name] = $x.Count }

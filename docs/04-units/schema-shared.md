@@ -34,21 +34,21 @@
 | `/difficulty/ally` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/difficulty/ally/accuracy` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
 | `/difficulty/ally/grenade_timeout` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | modifier on FiringTimeout ¦ time out between grenades (modifier on FiringTimeout) |
-| `/difficulty/ally/health` | block | [num]x4 | 4 | 4 | 1 ~ 1.5 | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/difficulty/ally/health` | block | [num]x4 | 4 | 4 | 1 ~ 1.5 | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/difficulty/any` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  | temp to give enemy stats |
 | `/difficulty/any/accuracy` | block | [num]x4 | 4 | 4 | 0.33 ~ 1 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
 | `/difficulty/any/death_delay_max` | block | [num]x1 | 1 | 1 | 120 | 미확인(자동) |  |  | max bleeding out time in seconds |
 | `/difficulty/any/death_delay_min` | block | [num]x1 | 1 | 1 | 90 | 미확인(자동) |  |  | min bleeding out time in seconds |
 | `/difficulty/any/grenade_timeout` | block | [num]x1 | 1 | 1 | 1.5 | 미확인(자동) |  |  | modifier on FiringTimeout ¦ time out between grenades (modifier on FiringTimeout) |
-| `/difficulty/any/health` | block | [num]x5 | 5 | 5 | 0.33 ~ 1 | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/difficulty/any/health` | block | [num]x5 | 5 | 5 | 0.33 ~ 1 | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/difficulty/enemy` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  | not working in coop |
 | `/difficulty/enemy/accuracy` | block | [num]x4 | 4 | 4 | 0.33 ~ 1 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
 | `/difficulty/enemy/grenade_timeout` | block | [num]x1 | 1 | 1 | 1.5 | 미확인(자동) |  |  | modifier on FiringTimeout ¦ time out between grenades (modifier on FiringTimeout) |
-| `/difficulty/enemy/health` | block | [num]x4 | 4 | 4 | 0.33 ~ 0.7 | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/difficulty/enemy/health` | block | [num]x4 | 4 | 4 | 0.33 ~ 0.7 | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/difficulty/player` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/difficulty/player/accuracy` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
 | `/difficulty/player/grenade_timeout` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | modifier on FiringTimeout ¦ time out between grenades (modifier on FiringTimeout) |
-| `/difficulty/player/health` | block | [num]x4 | 4 | 4 | 1 ~ 2 | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/difficulty/player/health` | block | [num]x4 | 4 | 4 | 1 ~ 2 | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 
 ### 파일 종류: .ext
 
@@ -126,7 +126,7 @@
 | `/(define "aux_turret")/component/repairtime` | block | [param]x4 | 1 | 4 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "ballast")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ballast")/volume` | block | [str]x1 | 1 | 1 | "ballast%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "ballast")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "ballast")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "ballast")/volume/able/float` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ballast")/volume/tags` | block | [str]x1 | 1 | 1 | "float" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "basic_armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -138,12 +138,12 @@
 | `/(define "bike_durability")/perks/component` | block | [str]x1 [atom str]x1 | 1 | 2 | "body" ¦ tag "wheel" | 미확인(자동) |  |  |  |
 | `/(define "bike_durability")/perks/component/("global_damage_mod")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_durability")/perks/component/armor_damage_modifier` | block | [num]x2 | 1 | 2 | 2 ~ 5 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
-| `/(define "bike_durability")/perks/component/health` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "bike_durability")/perks/component/health` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "bike_durability")/perks/component/health/hp` | block | [param]x1 [num]x1 | 1 | 2 | 125 | 미확인(자동) |  |  |  |
 | `/(define "bike_durability")/perks/component/health/hp_broken` | block | [expr]x1 | 1 | 1 | ( + 1500 ( * %body 5 ) ) | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "bike_parts")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_parts")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "bike_parts")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "bike_parts")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "bike_parts")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "bike_parts")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "bike_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -170,8 +170,8 @@
 | `/(define "bodyback")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "brain_vehicle")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "brain_vehicle")/brain` | block | [str]x1 | 1 | 1 | "vehicle" | 미확인(자동) |  |  |  |
-| `/(define "brain_vehicle")/brain/const` | block | [str num]x2 | 1 | 2 | "crush/min_danger_zone_time" 1 ¦ "crush/min_danger_zone_length" 1 | 미확인(자동) |  |  | detect explosives inside 7 meter radius ¦ hide if danger is more than "x" meters away, otherwise run away |
-| `/(define "brain_vehicle")/brain/state` | block | [str]x1 | 1 | 1 | "vehicle" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/(define "brain_vehicle")/brain/const` | block | [str num]x2 | 1 | 2 | "crush/min_danger_zone_time" 1 ¦ "crush/min_danger_zone_length" 1 | 미확인(자동) |  |  | detect explosives inside 7 meter radius ¦ disable ai weapon switch for 5 seconds |
+| `/(define "brain_vehicle")/brain/state` | block | [str]x1 | 1 | 1 | "vehicle" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/(define "cabin")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cabin")/("make_component")` | macro | [atom str str]x11 | 1 | 11 | args "cabin" "cabin" ¦ args "cabin1" "cabin" ¦ args "cabin2" "cabin" ¦ args "cabin3" "cabin" ¦ args "cabin4" "cabin" ¦ args "cabin5" "cabin" ¦ args "cabin6" "cabin" ¦ args "cabin7" "cabin" ¦ args "cabin8" "cabin" ¦ args "cabin9" "cabin" ¦ args "cabin10" "cabin" | 미확인(자동) |  |  |  |
 | `/(define "cabin")/component` | block | [str]x1 | 1 | 1 | "cabin" | 미확인(자동) |  |  |  |
@@ -181,12 +181,12 @@
 | `/(define "cannon_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cannon_durability")/perks/component` | block | [str]x2 [atom str]x2 | 1 | 4 | "body" ¦ "gun" ¦ tag "wheel" ¦ tag "shield" | 미확인(자동) |  |  |  |
 | `/(define "cannon_durability")/perks/component/("global_damage_mod")` | macro | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
-| `/(define "cannon_durability")/perks/component/health` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "cannon_durability")/perks/component/health` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "cannon_durability")/perks/component/health/hp` | block | [param]x4 | 1 | 4 | %body ¦ %gun ¦ %wheel ¦ %shield | 미확인(자동) |  |  |  |
 | `/(define "cannon_durability")/perks/component/health/hp_broken` | block | [expr]x1 | 1 | 1 | ( * %body 0.5 ) | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "cannon_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cannon_thickness")/volume` | block | [str]x28 | 1 | 28 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "cannon_thickness")/volume/able` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "cannon_thickness")/volume/able` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "cannon_thickness")/volume/able/nolook` | block | [num]x7 | 1 | 7 | 1 | 미확인(자동) |  |  |  |
 | `/(define "cannon_thickness")/volume/able/visible` | block | [num]x7 | 1 | 7 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "cannon_thickness")/volume/thickness` | block | [param]x28 | 1 | 28 | %0 | 미확인(자동) |  |  |  |
@@ -196,8 +196,8 @@
 | `/(define "car_trace")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "car_trace")/track` | block | [param]x2 | 1 | 2 | %wheell ¦ %wheelr | 미확인(자동) |  |  |  |
 | `/(define "car_trace")/track/tracer` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "car_trace")/track/tracer/bone` | block | [param]x2 | 1 | 2 | %bonel ¦ %boner | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "car_trace")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 미확인(자동) |  |  | in meters ¦ 0.7 meters |
+| `/(define "car_trace")/track/tracer/bone` | block | [param]x2 | 1 | 2 | %bonel ¦ %boner | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "car_trace")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 미확인(자동) |  |  | in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] ¦ 0.7 meters |
 | `/(define "car_trace")/track/tracer/view` | block | [param]x2 | 1 | 2 | %fx | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/(define "charger_visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "charger_visible")/("crew_open")` | macro | [call:place call:bone call:visorbone call:door call:door2 call:anm_left call:anm_right call:group]x1 | 1 | 1 | place ( charger ) bone ( gunner2 ) visorbone ( mgun_rot ) door ( emit1 ) door2 ( emit2 ) anm_left ( left ) anm_right ( right ) group ( crew ) | 미확인(자동) |  |  |  |
@@ -212,8 +212,8 @@
 | `/(define "chassis_defaults")/fuelbag/remain` | block | [num]x1 | 1 | 1 | 200 | 미확인(자동) |  |  | Amount of fuel in vehicle when spawned. ¦ how much fuel is in fuel tank at spawn |
 | `/(define "chassis_defaults")/fuelbag/volume` | block | [num]x1 | 1 | 1 | 200 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "chassis_defaults")/speed` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | sway speed coef ¦ kmph |
-| `/(define "chassis_defaults")/speed/fast` | block | [num]x1 | 1 | 1 | 30 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "chassis_defaults")/speed/normal` | block | [num]x1 | 1 | 1 | 17 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "chassis_defaults")/speed/fast` | block | [num]x1 | 1 | 1 | 30 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "chassis_defaults")/speed/normal` | block | [num]x1 | 1 | 1 | 17 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "chassis_defaults")/speed/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "commander_visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "commander_visible")/("crew_open")` | macro | [call:place call:bone call:visorbone call:door call:door2 call:anm_left call:anm_right call:group]x1 | 1 | 1 | place ( commander ) bone ( gunner2 ) visorbone ( vision_rot ) door ( emit1 ) door2 ( emit2 ) anm_left ( left ) anm_right ( right ) group ( crew ) | 미확인(자동) |  |  |  |
@@ -506,7 +506,7 @@
 | `/(define "crew_open")/placer/place/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/sensor/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
-| `/(define "crew_open")/sensor/visor/bone` | block | [str]x1 | 1 | 1 | "%visorbone" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/(define "crew_open")/sensor/visor/bone` | block | [str]x1 | 1 | 1 | "%visorbone" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "crew_open")/sensor/visor/vision` | block | [str]x1 | 1 | 1 | "human" | 미확인(자동) |  |  |  |
 | `/(define "crew_wheeled_cannon_2")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_wheeled_cannon_2")/("crew_carried_cannon")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -577,10 +577,10 @@
 | `/(define "crew")/placer/place/visor` | block | [str]x1 | 1 | 1 | "%visor" | 미확인(자동) |  |  |  |
 | `/(define "declare_health")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_health")/extender[vitality]` | block | [str]x1 | 1 | 1 | "vitality" | 미확인(자동) |  |  |  |
-| `/(define "declare_health")/extender[vitality]/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
-| `/(define "declare_health")/extender[vitality]/health/current` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | current stamina ¦ current health |
+| `/(define "declare_health")/extender[vitality]/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
+| `/(define "declare_health")/extender[vitality]/health/current` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | current stamina ¦ current resources |
 | `/(define "declare_health")/extender[vitality]/health/inc` | block | [num]x1 | 1 | 1 | 0.005 | 미확인(자동) |  |  | stamina regeneration/usage per second (depending on movement mode and load) ¦ health regeneration per second |
-| `/(define "declare_health")/extender[vitality]/health/max` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/(define "declare_health")/extender[vitality]/health/max` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | max resources ¦ max health |
 | `/(define "double_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "double_engine")/("engine")` | macro | [call:volume call:number]x1 | 1 | 1 | volume ( engine ) number ( 2 ) | 미확인(자동) |  |  |  |
 | `/(define "double_engine")/("prop_blade")` | macro | [call:volume call:number]x4 | 1 | 4 | volume ( blade1 ) number ( 2 ) ¦ volume ( blade2 ) number ( 2 ) ¦ volume ( blade3 ) number ( 2 ) ¦ volume ( blade4 ) number ( 2 ) | 미확인(자동) |  |  |  |
@@ -592,7 +592,7 @@
 | `/(define "engine_part")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "engine_part")/component/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine_part")/volume` | block | [str]x1 | 1 | 1 | "%volume%number%part" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "engine_part")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "engine_part")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "engine_part")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "engine_part")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
 | `/(define "engine_part")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -604,7 +604,7 @@
 | `/(define "engine")/component/repairtime` | block | [num]x1 [param]x1 | 2 | 2 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "engine")/component/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "engine")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "engine")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "engine")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "engine")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
 | `/(define "engine")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -620,7 +620,7 @@
 | `/(define "general_durability")/perks/component` | block | [str]x12 [atom str]x9 | 1 | 21 | 예: "body" | 미확인(자동) |  |  |  |
 | `/(define "general_durability")/perks/component/("global_damage_mod")` | macro | []x18 | 1 | 18 | 예: | 미확인(자동) |  |  |  |
 | `/(define "general_durability")/perks/component/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
-| `/(define "general_durability")/perks/component/health` | block | []x21 | 1 | 21 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "general_durability")/perks/component/health` | block | []x21 | 1 | 21 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "general_durability")/perks/component/health/hp` | block | [param]x13 [num]x8 | 1 | 21 | 50 ~ 400 | 미확인(자동) |  |  |  |
 | `/(define "general_durability")/perks/component/health/hp_broken` | block | [num]x7 [expr]x2 [param]x1 | 1 | 10 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "glass")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -628,7 +628,7 @@
 | `/(define "glass")/component/repairorder` | block | [num]x1 | 1 | 1 | 13 | 미확인(자동) |  |  |  |
 | `/(define "glass")/component/tags` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "glass")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "glass")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "glass")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "glass")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "glass")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "glass")/volume/able/window` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -691,7 +691,7 @@
 | `/(define "gunner_open")/placer/place/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/sensor/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
-| `/(define "gunner_open")/sensor/visor/bone` | block | [str]x1 | 1 | 1 | "%visorbone" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/(define "gunner_open")/sensor/visor/bone` | block | [str]x1 | 1 | 1 | "%visorbone" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "gunner_open")/sensor/visor/vision` | block | [str]x1 | 1 | 1 | "human" | 미확인(자동) |  |  |  |
 | `/(define "gunner_visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gunner_visible")/("crew_open")` | macro | [call:place call:bone call:visorbone call:door call:door2 call:anm_left call:anm_right call:group]x1 | 1 | 1 | place ( commander ) bone ( gunner2 ) visorbone ( mgun_rot ) door ( emit1 ) door2 ( emit2 ) anm_left ( left ) anm_right ( right ) group ( crew ) | 미확인(자동) |  |  |  |
@@ -699,7 +699,7 @@
 | `/(define "gunner_visible2")/("crew_open")` | macro | [call:place call:bone call:visorbone call:door call:door2 call:anm_left call:anm_right call:group]x1 | 1 | 1 | place ( commander ) bone ( gunner2 ) visorbone ( mgun_rot ) door ( emit2 ) door2 ( emit3 ) anm_left ( left ) anm_right ( right ) group ( crew ) | 미확인(자동) |  |  |  |
 | `/(define "holes")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "holes")/volume` | block | [str]x2 | 2 | 2 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "holes")/volume/able` | block | [atom]x2 | 2 | 2 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "holes")/volume/able` | block | [atom]x2 | 2 | 2 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "holes")/volume/able/hole` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "holes")/volume/density` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "internals")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -708,7 +708,7 @@
 | `/(define "internals")/component/repairtime` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "internals")/component/tags` | block | [str]x1 | 1 | 1 | "%1" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "internals")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "internals")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "internals")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "internals")/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "internals")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "internals")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -719,7 +719,7 @@
 | `/(define "lamp")/component/repairorder` | block | [num]x1 | 1 | 1 | 13 | 미확인(자동) |  |  |  |
 | `/(define "lamp")/component/tags` | block | [str]x1 | 1 | 1 | "lamp" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "lamp")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "lamp")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "lamp")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "lamp")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "lamp")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "lamp")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -728,10 +728,10 @@
 | `/(define "lamp")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
 | `/(define "locomotion")` | define | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/(define "locomotion")/braketime` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "locomotion")/fast` | block | [num]x1 | 1 | 1 | 30 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "locomotion")/gears` | block | [num num num]x1 | 1 | 1 | 0.5 0.7 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "locomotion")/fast` | block | [num]x1 | 1 | 1 | 30 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "locomotion")/gears` | block | [num num num]x1 | 1 | 1 | 0.5 0.7 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "locomotion")/maxspeed` | block | [num]x2 | 2 | 2 | 25 ~ 30 | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "locomotion")/normal` | block | [num]x1 | 1 | 1 | 17 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "locomotion")/normal` | block | [num]x1 | 1 | 1 | 17 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "locomotion")/reargears` | block | [num num]x1 | 1 | 1 | 0.15 0.3 | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "locomotion")/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "locomotion")/splineradius` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
@@ -742,7 +742,7 @@
 | `/(define "locomotion")/turnradius` | block | [num]x1 | 1 | 1 | 8 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
 | `/(define "main_weapon")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "main_weapon")/volume` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "main_weapon")/volume/able` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "main_weapon")/volume/able` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "main_weapon")/volume/able/contact` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/(define "main_weapon")/volume/able/nolook` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
 | `/(define "main_weapon")/volume/able/obstacle` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
@@ -763,7 +763,7 @@
 | `/(define "marine_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "marine_durability")/perks/component` | block | [atom str]x6 [str]x3 | 1 | 9 | "body" ¦ tag "hull" ¦ "cabin" ¦ "engine" ¦ tag "gun" ¦ tag "shield" ¦ tag "cut_part" ¦ tag "fuel" ¦ tag "ammo" | 미확인(자동) |  |  |  |
 | `/(define "marine_durability")/perks/component/("global_damage_mod")` | macro | []x9 | 1 | 9 | 예: | 미확인(자동) |  |  |  |
-| `/(define "marine_durability")/perks/component/health` | block | []x9 | 1 | 9 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "marine_durability")/perks/component/health` | block | []x9 | 1 | 9 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "marine_durability")/perks/component/health/hp` | block | [param]x4 [num]x4 [expr]x1 | 1 | 9 | 100 ~ 120 | 미확인(자동) |  |  |  |
 | `/(define "marine_durability")/perks/component/health/hp_broken` | block | [expr]x4 [num]x4 | 1 | 8 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "moto_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -771,7 +771,7 @@
 | `/(define "moto_durability")/perks/component` | block | [atom str]x6 [str]x2 | 1 | 8 | "body" ¦ "engine" ¦ tag "wheel" ¦ tag "glass" ¦ tag "shield" ¦ tag "cut_part" ¦ tag "fuel" ¦ tag "ammo" | 미확인(자동) |  |  |  |
 | `/(define "moto_durability")/perks/component/("global_damage_mod")` | macro | []x6 | 1 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/(define "moto_durability")/perks/component/armor_damage_modifier` | block | [num]x5 | 1 | 5 | 2 ~ 5 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
-| `/(define "moto_durability")/perks/component/health` | block | []x8 | 1 | 8 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "moto_durability")/perks/component/health` | block | []x8 | 1 | 8 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "moto_durability")/perks/component/health/hp` | block | [num]x6 [param]x2 | 1 | 8 | 60 ~ 125 | 미확인(자동) |  |  |  |
 | `/(define "moto_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x1 [expr]x1 | 1 | 7 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "moto_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -780,12 +780,12 @@
 | `/(define "moto_thickness")/volume/thickness` | block | [param]x13 [num]x1 | 1 | 14 | 1 | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
-| `/(define "mp_gun_limits")/bone` | block | [str]x2 | 1 | 2 | "gun_rot1" ¦ "gun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/(define "mp_gun_limits")/bone` | block | [str]x2 | 1 | 2 | "gun_rot1" ¦ "gun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "mp_gun_limits")/bone/limits` | block | [num num]x2 | 1 | 2 | -1 1 ¦ -25 15 | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
-| `/(define "mp_mgun_limits")/bone` | block | [str]x2 | 1 | 2 | "mgun_rot1" ¦ "mgun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/(define "mp_mgun_limits")/bone` | block | [str]x2 | 1 | 2 | "mgun_rot1" ¦ "mgun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "mp_mgun_limits")/bone/limits` | block | [num num]x2 | 1 | 2 | -1 1 ¦ -25 15 | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 미확인(자동) |  |  |  |
 | `/(define "passenger_10_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -833,7 +833,7 @@
 | `/(define "plane_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "plane_durability")/perks/component` | block | [atom str]x4 [str]x3 | 1 | 7 | "body" ¦ "engine1" ¦ "engine2" ¦ tag "propeller" ¦ tag "wing" ¦ tag "wheel" ¦ tag "part" | 미확인(자동) |  |  |  |
 | `/(define "plane_durability")/perks/component/("global_damage_mod")` | macro | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  |  |
-| `/(define "plane_durability")/perks/component/health` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "plane_durability")/perks/component/health` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "plane_durability")/perks/component/health/hp` | block | [param]x7 | 1 | 7 | %engine ¦ %body ¦ %propeller ¦ %wing ¦ %wheel ¦ %part | 미확인(자동) |  |  |  |
 | `/(define "plane_durability")/perks/component/health/hp_broken` | block | [expr]x5 [num]x1 | 1 | 6 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "prop_blade")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -842,7 +842,7 @@
 | `/(define "prop_blade")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "prop_blade")/component/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_blade")/volume` | block | [str]x1 | 1 | 1 | "%number%volume" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "prop_blade")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "prop_blade")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "prop_blade")/volume/able/blast` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
 | `/(define "prop_blade")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_blade")/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -857,7 +857,7 @@
 | `/(define "prop_spin")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "prop_spin")/component/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_spin")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "prop_spin")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "prop_spin")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "prop_spin")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")/volume/component` | block | [str]x1 | 1 | 1 | "propeller%number" | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -879,7 +879,7 @@
 | `/(define "rocket")/component/repairtime` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "rocket")/component/tags` | block | [str]x1 | 1 | 1 | "rocket" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "rocket")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "rocket")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "rocket")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "rocket")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "rocket")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "rocket")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -887,7 +887,7 @@
 | `/(define "rocket")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "sandbags")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "sandbags")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "sandbags")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "sandbags")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "sandbags")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "sandbags")/volume/material` | block | [str]x1 | 1 | 1 | "sand" | 미확인(자동) |  |  |  |
 | `/(define "sandbags")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
@@ -946,7 +946,7 @@
 | `/(define "shield_cover")/component/repairorder` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  |  |
 | `/(define "shield_cover")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "shield_cover")/volume` | block | [str]x3 | 1 | 3 | "shield_cover" ¦ "shield_cover1" ¦ "shield_cover2" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "shield_cover")/volume/able` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "shield_cover")/volume/able` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "shield_cover")/volume/able/nowounddecal` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_cover")/volume/component` | block | [str]x3 | 1 | 3 | "shield_cover" | 미확인(자동) |  |  |  |
 | `/(define "shield_cover")/volume/material` | block | [str]x3 | 1 | 3 | "fabric" | 미확인(자동) |  |  |  |
@@ -1004,7 +1004,7 @@
 | `/(define "solid_wheel")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "solid_wheel")/component/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "solid_wheel")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "solid_wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "solid_wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "solid_wheel")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "solid_wheel")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "solid_wheel")/volume/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -1033,11 +1033,11 @@
 | `/(define "tank_trace_ex")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_trace_ex")/track` | block | [str]x2 | 1 | 2 | "left" ¦ "right" | 미확인(자동) |  |  |  |
 | `/(define "tank_trace_ex")/track/texturescroller` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "tank_trace_ex")/track/texturescroller/bone` | block | [str]x2 | 1 | 2 | "TrackL" ¦ "TrackR" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "tank_trace_ex")/track/texturescroller/length` | block | [param]x2 | 1 | 2 | %len | 미확인(자동) |  |  | 0.6 meters per animation ¦ meters per animation |
+| `/(define "tank_trace_ex")/track/texturescroller/bone` | block | [str]x2 | 1 | 2 | "TrackL" ¦ "TrackR" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "tank_trace_ex")/track/texturescroller/length` | block | [param]x2 | 1 | 2 | %len | 미확인(자동) |  |  | meters per animation ¦ 0.6 meters per animation |
 | `/(define "tank_trace_ex")/track/tracer` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "tank_trace_ex")/track/tracer/bone` | block | [param]x2 | 1 | 2 | %boneleft ¦ %boneright | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "tank_trace_ex")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 미확인(자동) |  |  | in meters ¦ 0.7 meters |
+| `/(define "tank_trace_ex")/track/tracer/bone` | block | [param]x2 | 1 | 2 | %boneleft ¦ %boneright | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "tank_trace_ex")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 미확인(자동) |  |  | in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] ¦ 0.7 meters |
 | `/(define "tank_trace_ex")/track/tracer/view` | block | [param]x2 | 1 | 2 | %fx | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/(define "tank_trace")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_trace")/("tank_trace_ex")` | macro | [call:fx call:step call:len call:boneleft call:boneright]x1 | 1 | 1 | fx ( %fx ) step ( %step ) len ( %len ) boneleft ( "FXtraceL1" ) boneright ( "FXtraceR1" ) | 미확인(자동) |  |  |  |
@@ -1050,14 +1050,14 @@
 | `/(define "tearable")/component/repairtime` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "tearable")/component/tags` | block | [str str]x1 | 1 | 1 | "%volume%number" "part" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tearable")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "tearable")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "tearable")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "tearable")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "tearable")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
 | `/(define "tearable")/volume/tags` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tearable")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume` | block | [str]x2 | 2 | 2 | "track%0%1" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "track_wheels")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "track_wheels")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "track_wheels")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume/component` | block | [str]x1 | 1 | 1 | "track%0" | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume/tags` | block | [str str]x1 | 1 | 1 | "mover" "track" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -1069,7 +1069,7 @@
 | `/(define "tracks")/component/repairtime` | block | [param]x2 | 1 | 2 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "tracks")/component/tags` | block | [str str]x2 | 1 | 2 | "mover" "track" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tracks")/volume` | block | [str]x4 | 2 | 4 | "trackleft" ¦ "trackright" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "tracks")/volume/able` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "tracks")/volume/able` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "tracks")/volume/able/contact_ground` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/(define "tracks")/volume/able/holed` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tracks")/volume/able/nowounddecal` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
@@ -1079,7 +1079,7 @@
 | `/(define "train_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "train_durability")/perks/component` | block | [str]x8 [atom str]x6 | 1 | 14 | 예: "body" | 미확인(자동) |  |  |  |
 | `/(define "train_durability")/perks/component/("global_damage_mod")` | macro | []x12 | 1 | 12 | 예: | 미확인(자동) |  |  |  |
-| `/(define "train_durability")/perks/component/health` | block | []x14 | 1 | 14 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/(define "train_durability")/perks/component/health` | block | []x14 | 1 | 14 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/(define "train_durability")/perks/component/health/hp` | block | [param]x9 [num]x5 | 1 | 14 | 60 ~ 200 | 미확인(자동) |  |  |  |
 | `/(define "train_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x2 [expr]x1 | 1 | 8 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/(define "transmission")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1096,7 +1096,7 @@
 | `/(define "turret")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "visible")/volume` | block | [str param]x1 | 1 | 1 | "%volume%number" %extra | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "visible")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "visible")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "visible")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "visible")/volume/tags` | block | [param]x1 | 1 | 1 | %tags | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "visible")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
@@ -1106,7 +1106,7 @@
 | `/(define "wheel")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "wheel")/component/tags` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wheel")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "wheel")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wheel")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "wheel")/volume/tags` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -1117,7 +1117,7 @@
 | `/(define "wing")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
 | `/(define "wing")/component/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wing")/volume` | block | [str]x1 | 1 | 1 | "wing%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "wing")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "wing")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "wing")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "wing")/volume/component` | block | [str]x1 | 1 | 1 | "wing%component" | 미확인(자동) |  |  |  |
 | `/(define "wing")/volume/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -1143,7 +1143,7 @@
 | `/##weaponry/place/rotate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/##weaponry/place/type` | block | [str]x1 | 1 | 1 | "main" | 미확인(자동) |  |  | "unit tag" or "unit type" + "current main weapon tag" |
 | `/<bare>` | bare | [atom]x22 | 22 | 22 | actor ¦ game_entity | 미확인(자동) |  |  |  |
-| `/able` | block | [str]x9 [str str]x3 [str str str str]x2 [str str str]x1 | 14 | 15 | "talk" ¦ "emit_crew_on_injure" ¦ "talk" "-emit_passangers_on_enemy" ¦ "-select" "neutral" ¦ "emit_on_attack" ¦ "crew" "fight" "minimap" "personage" ¦ "-emit_passangers_on_enemy" ¦ "emit_crew_on_injure" "talk" "-emit_passangers_on_enemy" ¦ "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/able` | block | [str]x9 [str str]x3 [str str str str]x2 [str str str]x1 | 14 | 15 | "talk" ¦ "emit_crew_on_injure" ¦ "talk" "-emit_passangers_on_enemy" ¦ "-select" "neutral" ¦ "emit_on_attack" ¦ "crew" "fight" "minimap" "personage" ¦ "-emit_passangers_on_enemy" ¦ "emit_crew_on_injure" "talk" "-emit_passangers_on_enemy" ¦ "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/animation` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/animation/(include)` | include | [str]x2 | 1 | 2 | "_reg_human_movement.inc" ¦ "_reg_vehicle_crew.inc" | 미확인(자동) |  |  |  |
 | `/animation/smooth` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
@@ -1167,23 +1167,23 @@
 | `/body` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/body/permit` | block | [atom]x2 | 2 | 2 | body | 미확인(자동) |  |  |  |
 | `/body/proper` | block | [atom atom]x2 | 2 | 2 | body sensible | 미확인(자동) |  |  |  |
-| `/bone` | block | [str]x1 | 1 | 1 | "foresight2" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/bone` | block | [str]x1 | 1 | 1 | "foresight2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
 | `/brain` | block | [str]x3 | 3 | 3 | "vehicle" ¦ "actor" ¦ "human" | 미확인(자동) |  |  |  |
-| `/brain/const` | block | [str num]x5 | 1 | 5 | "bomb/detect_explosives" 7 ¦ "bomb/detect_grenades" 5 ¦ "bomb/danger_zone" 7 ¦ "fight/distance" 2 ¦ "weapon/change_time" 5 | 미확인(자동) |  |  | detect explosives inside 7 meter radius ¦ hide if danger is more than "x" meters away, otherwise run away |
+| `/brain/const` | block | [str num]x5 | 1 | 5 | "bomb/detect_explosives" 7 ¦ "bomb/detect_grenades" 5 ¦ "bomb/danger_zone" 7 ¦ "fight/distance" 2 ¦ "weapon/change_time" 5 | 미확인(자동) |  |  | detect explosives inside 7 meter radius ¦ disable ai weapon switch for 5 seconds |
 | `/brain/properties` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/brain/properties/advance_ratio` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
 | `/brain/properties/retreat_ratio` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  |  |
-| `/brain/state` | block | [str]x2 | 2 | 2 | "airborne" ¦ "animal" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/brain/state` | block | [str]x2 | 2 | 2 | "airborne" ¦ "animal" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/chassis` | block | [str]x13 | 12 | 13 | "wheel" ¦ "human_carrier" ¦ "foot" ¦ "airborne" ¦ "water" ¦ "railway" ¦ "track" | 미확인(자동) |  |  |  |
 | `/chassis/("air_movement")` | macro | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/chassis/("chassis_defaults")` | macro | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/chassis/("mobility_cannon")` | macro | [call:speed call:weight]x3 | 3 | 3 | speed ( 14 ) weight ( 32 ) ¦ speed ( 12 ) weight ( 32 ) | 미확인(자동) |  |  |  |
 | `/chassis/("mobility_car")` | macro | [call:speed call:speedatmaxturn call:reverse call:weight call:power call:fuel call:type call:range]x1 | 1 | 1 | speed ( 40 ) speedatmaxturn ( 20 ) reverse ( 5 ) weight ( 0.075 ) power ( 1.3 ) fuel ( 0.1 ) type ( fuel ) range ( 1000 ) | 미확인(자동) |  |  |  |
 | `/chassis/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
-| `/chassis/crawl` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/chassis/crawl/fast` | block | [num num num]x1 | 1 | 1 | 6 9 180 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/crawl/normal` | block | [num num num]x1 | 1 | 1 | 4.5 7 180 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/crawl` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. ¦ "crawl" stance - in cover |
+| `/chassis/crawl/fast` | block | [num num num]x1 | 1 | 1 | 6 9 180 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/chassis/crawl/normal` | block | [num num num]x1 | 1 | 1 | 4.5 7 180 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/chassis/crawl/slow` | block | [num num num]x1 | 1 | 1 | 3.5 6 180 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/chassis/elevationacceleration` | block | [num]x1 | 1 | 1 | 8 | 미확인(자동) |  |  | how quickly aircraft can change from level flight to full climb or dive. (m/s^2) |
 | `/chassis/fuelbag` | block | []x5 | 4 | 5 | 예: | 미확인(자동) |  |  |  |
@@ -1208,16 +1208,16 @@
 | `/chassis/maxsideslope` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | limit in degrees that aircraft can roll while in a turn |
 | `/chassis/run` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/chassis/run/bow` | block | [num num num]x1 | 1 | 1 | 16 5.0 600 | 미확인(자동) |  |  | mission script movement mode |
-| `/chassis/run/fast` | block | [num num num]x2 | 2 | 2 | 25 25 500 ¦ 18 5.8 600 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/run/normal` | block | [num num num]x2 | 2 | 2 | 7 7 200 ¦ 13 6.2 600 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/run/fast` | block | [num num num]x2 | 2 | 2 | 25 25 500 ¦ 18 5.8 600 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/chassis/run/normal` | block | [num num num]x2 | 2 | 2 | 7 7 200 ¦ 13 6.2 600 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/chassis/run/slow` | block | [num num num]x2 | 2 | 2 | 3 3 100 ¦ 8 3.2 360 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/chassis/run/sneak` | block | [num num num]x1 | 1 | 1 | 5 2 360 | 미확인(자동) |  |  | mission script movement mode |
 | `/chassis/run/spot` | block | [num num num]x1 | 1 | 1 | 6 2 420 | 미확인(자동) |  |  | Manual TPC Zoom |
 | `/chassis/run/walk` | block | [num num num]x1 | 1 | 1 | 4 1.8 600 | 미확인(자동) |  |  | single flick, walk mode |
 | `/chassis/sideslopespeed` | block | [num]x1 | 1 | 1 | 45 | 미확인(자동) |  |  | how quickly in degrees per second that aircraft rolls |
 | `/chassis/speed` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | sway speed coef ¦ kmph |
-| `/chassis/speed/fast` | block | [num]x2 | 1 | 2 | 20 ~ 100 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/speed/normal` | block | [num]x2 | 1 | 2 | 15 ~ 80 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/speed/fast` | block | [num]x2 | 1 | 2 | 20 ~ 100 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/chassis/speed/normal` | block | [num]x2 | 1 | 2 | 15 ~ 80 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/chassis/speed/slow` | block | [num]x2 | 1 | 2 | 10 ~ 60 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/chassis/strafe` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/chassis/strafe/back` | block | [num num num num num str str]x1 | 1 | 1 | 8 0 0 10.5 1.22 "run_back_spot_gun_up" "run_back_spot_gun_down" | 미확인(자동) |  |  |  |
@@ -1225,11 +1225,11 @@
 | `/chassis/strafe/left` | block | [num num num num num str str]x1 | 1 | 1 | 4 0 0 10.5 1.22 "run_spot_back-strafe_gun_up" "run_spot_back-strafe_gun_down" | 미확인(자동) |  |  |  |
 | `/chassis/strafe/right` | block | [num num num num num str str]x1 | 1 | 1 | 8 0 0 13.0 1.1 "run_spot_left-strafe_gun_up" "run_spot_left-strafe_gun_down" | 미확인(자동) |  |  |  |
 | `/chassis/swim` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/chassis/swim/fast` | block | [num num num]x1 | 1 | 1 | 5 5 180 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/swim/normal` | block | [num num num]x1 | 1 | 1 | 3 5 180 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/swim/fast` | block | [num num num]x1 | 1 | 1 | 5 5 180 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/chassis/swim/normal` | block | [num num num]x1 | 1 | 1 | 3 5 180 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/chassis/swim/slow` | block | [num num num]x1 | 1 | 1 | 2 5 180 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/chassismanager` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/chassismanager/current` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | current stamina ¦ current health |
+| `/chassismanager/current` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | current stamina ¦ current resources |
 | `/collider` | block | [str]x28 | 28 | 28 | 예: "airborne" | 미확인(자동) |  |  |  |
 | `/compoundobstacles` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/constrain` | block | [atom]x11 | 11 | 11 | ground ¦ none | 미확인(자동) |  |  |  |
@@ -1248,7 +1248,7 @@
 | `/extender[cannon]/move/workers` | block | [str str atom num]x3 | 3 | 3 | "driver1" "driver2" minWorkers 2 | 미확인(자동) |  |  |  |
 | `/extender[inventory]` | block | [str]x15 | 15 | 15 | "inventory" | 미확인(자동) |  |  |  |
 | `/extender[inventory]/armor` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "accessories" | 미확인(자동) |  |  |  |
-| `/extender[inventory]/armor/bone` | block | [str]x3 | 1 | 3 | "head" ¦ "IK_UpDown" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/extender[inventory]/armor/bone` | block | [str]x3 | 1 | 3 | "head" ¦ "IK_UpDown" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/extender[inventory]/armor/heatdamping` | block | [num]x1 | 1 | 1 | 0.6 | 미확인(자동) |  |  |  |
 | `/extender[inventory]/armor/mask` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "head2" | 미확인(자동) |  |  |  |
 | `/extender[inventory]/armor/pierceabsorb` | block | [num]x3 | 1 | 3 | 20 ~ 25 | 미확인(자동) |  |  |  |
@@ -1265,9 +1265,9 @@
 | `/extender[mine]` | block | [str]x2 | 2 | 2 | "mine" | 미확인(자동) |  |  |  |
 | `/extender[resources]` | block | [str]x1 | 1 | 1 | "resources" | 미확인(자동) |  |  |  |
 | `/extender[resources]/resources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[resources]/resources/current` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | current stamina ¦ current health |
+| `/extender[resources]/resources/current` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | current stamina ¦ current resources |
 | `/extender[resources]/resources/income` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | resources regeneration per second |
-| `/extender[resources]/resources/max` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/extender[resources]/resources/max` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | max resources ¦ max health |
 | `/extender[stuff]` | block | [str]x5 | 5 | 5 | "stuff" | 미확인(자동) |  |  |  |
 | `/extender[stuff]/item` | block | [str]x2 | 2 | 2 | "barrel" ¦ "human" | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
 | `/extender[talk]` | block | [str]x10 | 10 | 10 | "talk" | 미확인(자동) |  |  |  |
@@ -1279,23 +1279,23 @@
 | `/extender[vitality]/damageblast` | block | [num]x2 | 1 | 2 | 1 ~ 1.2 | 미확인(자동) |  |  |  |
 | `/extender[vitality]/damagetpc` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | Third person and direct control |
 | `/extender[vitality]/damagetpc/"*"` | block | [str num]x22 | 1 | 22 | 예: "head" 1.75 | 미확인(자동) |  |  |  |
-| `/extender[vitality]/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
-| `/extender[vitality]/health/current` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | current stamina ¦ current health |
+| `/extender[vitality]/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
+| `/extender[vitality]/health/current` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | current stamina ¦ current resources |
 | `/extender[vitality]/health/inc` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | stamina regeneration/usage per second (depending on movement mode and load) ¦ health regeneration per second |
-| `/extender[vitality]/health/max` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/extender[vitality]/health/max` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max resources ¦ max health |
 | `/extender[vitality]/stamina` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[vitality]/stamina/current` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | current stamina ¦ current health |
+| `/extender[vitality]/stamina/current` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | current stamina ¦ current resources |
 | `/extender[vitality]/stamina/inc` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | stamina regeneration/usage per second (depending on movement mode and load) ¦ health regeneration per second |
-| `/extender[vitality]/stamina/inc/fast` | block | [num num num num]x1 | 1 | 1 | -3 -3 -3 -3 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/extender[vitality]/stamina/inc/normal` | block | [num num num num]x1 | 1 | 1 | +2 +2 +1.5 +1 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/extender[vitality]/stamina/inc/fast` | block | [num num num num]x1 | 1 | 1 | -3 -3 -3 -3 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/extender[vitality]/stamina/inc/normal` | block | [num num num num]x1 | 1 | 1 | +2 +2 +1.5 +1 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/extender[vitality]/stamina/inc/slow` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/extender[vitality]/stamina/inc/stay` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 미확인(자동) |  |  |  |
 | `/extender[vitality]/stamina/inc/walk` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 미확인(자동) |  |  | single flick, walk mode |
 | `/extender[vitality]/stamina/load` | block | [num num num num]x1 | 1 | 1 | 0 25 50 75 | 미확인(자동) |  |  | equipment weight (in kg) |
-| `/extender[vitality]/stamina/max` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/extender[vitality]/stamina/max` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max resources ¦ max health |
 | `/extender[vitality]/stamina/movement_limits` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[vitality]/stamina/movement_limits/fast` | block | [num num]x1 | 1 | 1 | 1 10 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/extender[vitality]/stamina/movement_limits/normal` | block | [num num]x1 | 1 | 1 | 0 0 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/extender[vitality]/stamina/movement_limits/fast` | block | [num num]x1 | 1 | 1 | 1 10 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/extender[vitality]/stamina/movement_limits/normal` | block | [num num]x1 | 1 | 1 | 0 0 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/extender[vitality]/stamina/movement_limits/slow` | block | [num num]x1 | 1 | 1 | -1 -1 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/extension` | block | [str]x1 | 1 | 1 | "human_fsm.ext" | 미확인(자동) |  |  |  |
 | `/fsm` | block | [str]x2 | 2 | 2 | "animal" ¦ "human" | 미확인(자동) |  |  |  |
@@ -1306,7 +1306,7 @@
 | `/fsm/request/interrupt` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/fsm/request/priority` | block | [num]x7 | 1 | 7 | 0 ~ 50 | 미확인(자동) |  |  |  |
 | `/fsm/start` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  | games played : starting CP of each match |
-| `/fsm/state` | block | [str]x6 | 1 | 6 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" ¦ "dying" ¦ "dead" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/fsm/state` | block | [str]x6 | 1 | 6 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" ¦ "dying" ¦ "dead" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/fsm/state/from` | block | [str]x4 | 1 | 4 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" | 미확인(자동) |  |  |  |
 | `/fsm/state/tag` | block | [str]x12 | 1 | 12 | "rotate" ¦ "dying" ¦ "stop-move" ¦ "stand" ¦ "swim" ¦ "move" ¦ "switch-move" ¦ "idle" ¦ "dead" ¦ "stored" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
 | `/fsm/state/to` | block | [str]x6 | 1 | 6 | "walk" ¦ "stand" ¦ "idle" ¦ "switch_move" | 미확인(자동) |  |  |  |
@@ -1323,7 +1323,7 @@
 | `/perks/blastwave_modifier` | block | [num]x13 | 13 | 13 | 5 ~ 20 | 미확인(자동) |  |  |  |
 | `/perks/component` | block | [str]x2 | 2 | 2 | "body" | 미확인(자동) |  |  |  |
 | `/perks/component/("global_damage_mod")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/perks/component/health` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/perks/component/health` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/perks/component/health/hp` | block | [num]x2 | 2 | 2 | 60 ~ 120 | 미확인(자동) |  |  |  |
 | `/perks/component/health/hp_broken` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
 | `/placer` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -1340,21 +1340,21 @@
 | `/sensor/recognizetime` | block | [num]x2 | 2 | 2 | 0.01 | 미확인(자동) |  |  |  |
 | `/sensor/visor` | block | [str]x31 | 12 | 31 | "main" ¦ "none" ¦ "around" ¦ "hearing" ¦ "eyes" ¦ "driver" ¦ "human" ¦ "peripheral" ¦ "telescope" | 미확인(자동) |  |  |  |
 | `/sensor/visor/(mod)` | mod | [str]x2 [atom str]x2 | 1 | 4 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
-| `/sensor/visor/bone` | block | [str]x24 | 11 | 24 | "visor" ¦ "visor2" ¦ "visor1" ¦ "hearing_bone" ¦ "foresight1" ¦ "visor3" ¦ "basis" ¦ "foresight3" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/sensor/visor/bone` | block | [str]x24 | 11 | 24 | "visor" ¦ "visor2" ¦ "visor1" ¦ "hearing_bone" ¦ "foresight1" ¦ "visor3" ¦ "basis" ¦ "foresight3" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/sensor/visor/vision` | block | [str]x32 | 12 | 32 | 예: "airborne_main_mp" | 미확인(자동) |  |  |  |
 | `/simulation` | block | []x14 | 14 | 14 | 예: | 미확인(자동) |  |  |  |
-| `/simulation/able` | block | [num]x14 | 14 | 14 | 0 ~ 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/simulation/able` | block | [num]x14 | 14 | 14 | 0 ~ 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/simulation/disablelinked` | block | [num]x6 | 6 | 6 | 1 | 미확인(자동) |  |  |  |
-| `/simulation/state` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/simulation/state` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/simulatorid` | block | [str]x6 | 6 | 6 | "grenade" ¦ "airborne" ¦ "human" ¦ "water" | 미확인(자동) |  |  |  |
 | `/skeleton` | block | []x7 | 7 | 7 | 예: | 미확인(자동) |  |  |  |
-| `/skeleton/bone` | block | [str]x7 | 7 | 7 | "hearing_bone" ¦ "mined_view" ¦ "basis" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/skeleton/bone` | block | [str]x7 | 7 | 7 | "hearing_bone" ¦ "mined_view" ¦ "basis" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x3 | 3 | 3 | 0 0 1 0 -1 0 1 0 0 0 0 0 ¦ 1 0 0 0 -1 0 0 0 1 0 0 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/position` | block | [num num num]x4 | 4 | 4 | 0 0 40 ¦ 0 0 50 ¦ 0 0 70 | 미확인(자동) |  |  |  |
 | `/targetclass` | block | [str]x9 [str str]x5 | 14 | 14 | "cannon_bullet" ¦ "car" ¦ "tank_medium" "ap fg bullet" ¦ "airborne" ¦ "armoredcar" "bullet" ¦ "cannon_small" "ap fg" ¦ "human" ¦ "howitzer" | 미확인(자동) |  |  |  |
 | `/targetselector` | block | [str]x14 | 14 | 14 | "cannon_bullet" ¦ "car_bullet" ¦ "tank_medium" ¦ "airborne_bullet" ¦ "tank_zenite" ¦ "cannon_small" ¦ "human" ¦ "cannon_zenite" ¦ "cannon_aa" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x48 | 20 | 48 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/volume/able` | block | []x27 [atom]x13 | 16 | 40 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/volume/able` | block | []x27 [atom]x13 | 16 | 40 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
 | `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/volume/able/contact` | block | []x3 [num]x1 | 4 | 4 | 0 | 미확인(자동) |  |  |  |
@@ -1547,7 +1547,7 @@
 | `/"*"/(define "at_grenade_blast")/if/if/if/components` | block | [str atom]x2 | 1 | 2 | "turret" break | 미확인(자동) |  |  |  |
 | `/"*"/(define "at_grenade_blast")/if/if/if/if` | block | [atom param]x4 | 2 | 4 | rand %pierce_body_brake ¦ rand %pierce_engine_brake | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "at_grenade_blast")/if/if/if/if/if` | block | [atom str atom]x4 | 2 | 4 | work "body" else ¦ work "engine" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "at_grenade_blast")/if/if/if/if/if/call_synced` | block | [str]x8 | 2 | 8 | "body_break" ¦ "engine_break" ¦ "engine_destroy" ¦ "body_destroyed" ¦ "car_destroyed" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/(define "at_grenade_blast")/if/if/if/if/if/call_synced` | block | [str]x8 | 2 | 8 | "body_break" ¦ "engine_break" ¦ "engine_destroy" ¦ "body_destroyed" ¦ "car_destroyed" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/(define "at_grenade_blast")/if/if/set` | block | [str num]x2 | 2 | 2 | "already_blasted" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/(define "at_grenade_pierce")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "at_grenade_pierce")/if` | block | [atom str]x2 | 2 | 2 | stuff "cumulative_charge" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -1555,7 +1555,7 @@
 | `/"*"/(define "at_grenade_pierce")/if/if/component` | block | [atom]x2 | 2 | 2 | break | 미확인(자동) |  |  |  |
 | `/"*"/(define "at_grenade_pierce")/if/if/if` | block | [atom param atom atom param]x2 [atom param]x2 | 2 | 4 | rand %pierce_body_brake else rand %pierce_body_destroy ¦ rand %pierce_engine_brake | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "at_grenade_pierce")/if/if/if/if` | block | [atom str atom atom param]x2 [atom atom str]x2 [atom str atom atom num]x2 | 2 | 6 | work "body" else rand %pierce_body_destroy ¦ not work "body" ¦ work "engine" else rand 0.5 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "at_grenade_pierce")/if/if/if/if/call_synced` | block | [str]x10 | 2 | 10 | "body_break" ¦ "body_destroyed" ¦ "engine_break" ¦ "engine_destroy" ¦ "car_destroyed" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/(define "at_grenade_pierce")/if/if/if/if/call_synced` | block | [str]x10 | 2 | 10 | "body_break" ¦ "body_destroyed" ¦ "engine_break" ¦ "engine_destroy" ¦ "car_destroyed" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/(define "at_mine_blast")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "at_mine_blast")/if` | block | [atom str]x1 | 1 | 1 | name "blast" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "at_mine_blast")/if/if` | block | [atom str]x1 | 1 | 1 | stuff "at_mine" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -1565,10 +1565,10 @@
 | `/"*"/(define "at_mine_blast")/if/if/if/component` | block | [atom]x2 | 1 | 2 | break | 미확인(자동) |  |  |  |
 | `/"*"/(define "at_mine_blast")/if/if/if/if` | block | [atom param]x2 | 1 | 2 | rand %pierce_body_brake ¦ rand %pierce_engine_brake | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "at_mine_blast")/if/if/if/if/if` | block | [atom str atom]x2 | 1 | 2 | work "body" else ¦ work "engine" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "at_mine_blast")/if/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "body_break" ¦ "hull_destroyed" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/(define "at_mine_blast")/if/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "body_break" ¦ "hull_destroyed" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/(define "at_mine_blast")/if/if/set` | block | [str num]x1 | 1 | 1 | "already_blasted" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/(define "body_break_fx")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/(define "body_break_fx")/add_view` | block | [str str str]x31 | 1 | 31 | 예: "smoke_dead_norm" "fire_%0" "fire_%01" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "body_break_fx")/add_view` | block | [str str str]x31 | 1 | 31 | 예: "smoke_dead_norm" "fire_%0" "fire_%01" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "body_break_fx")/set` | block | [str num]x1 | 1 | 1 | "body_%0_broken" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/(define "body_break_fx")/spawn` | block | [str str]x1 | 1 | 1 | "vehicle_die" "fire_%02" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/(define "body_break_fx")/view` | block | [atom str]x2 | 1 | 2 | start "fire_%0" ¦ start "smoke_%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -1577,7 +1577,7 @@
 | `/"*"/(define "bound")/on/if` | block | [atom]x1 | 1 | 1 | mined | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "bound")/on/if/delay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "bound")/on/if/delay/stuff_detonate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/(define "bound")/on/if/impulse` | block | [atom num num atom]x1 | 1 | 1 | up 5.5 0.1 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "bound")/on/if/impulse` | block | [atom num num atom]x1 | 1 | 1 | up 5.5 0.1 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "bound")/on/if/link_sound` | block | [str str]x1 | 1 | 1 | "jump" "detonation/small/smine" | 미확인(자동) |  |  |  |
 | `/"*"/(define "bound")/on/if/physics_work` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/(define "bound")/on/if/play_sound` | block | [str]x1 | 1 | 1 | "jump" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
@@ -1585,7 +1585,7 @@
 | `/"*"/(define "break_window")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "break_window")/if` | block | [atom str atom]x1 | 1 | 1 | bone "window%0" visible | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "break_window")/if/delay` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/(define "break_window")/if/delay/bone` | block | [atom str]x2 | 1 | 2 | hide "window%0" ¦ show "window%0_x" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "break_window")/if/delay/bone` | block | [atom str]x2 | 1 | 2 | hide "window%0" ¦ show "window%0_x" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "break_window")/if/if` | block | [atom str]x2 [atom atom str]x1 | 1 | 3 | bone "fx_glass%0" ¦ bone "fx_glass0%0" ¦ not bone "fx_glass%0" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "break_window")/if/if/if` | block | [atom num atom]x2 [atom atom str]x1 | 1 | 3 | rand 0.5 else ¦ not bone "fx_glass0%0" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "break_window")/if/if/if/if` | block | [atom num atom]x1 | 1 | 1 | rand 0.5 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -1606,13 +1606,13 @@
 | `/"*"/(define "burn_from_volume")/if/if/("burn_volume")` | macro | [atom param param]x9 | 1 | 9 | args %1 %2 ¦ args %3 %4 ¦ args %5 %6 ¦ args %7 %8 ¦ args %9 %10 ¦ args %11 %12 ¦ args %13 %14 ¦ args %15 %16 ¦ args %17 %18 | 미확인(자동) |  |  |  |
 | `/"*"/(define "burn_from_volume")/if/if/burn` | block | [atom num]x1 | 1 | 1 | time 45 | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/(define "burn_from_volume")/if/if/delay` | block | [num num]x1 | 1 | 1 | 35 3 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/(define "burn_from_volume")/if/if/delay/call_synced` | block | [str]x2 | 1 | 2 | "next_stage" ¦ "burn_end" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/(define "burn_from_volume")/if/if/delay/call_synced` | block | [str]x2 | 1 | 2 | "next_stage" ¦ "burn_end" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/(define "burn_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "burn_part")/on` | block | [str]x2 | 1 | 2 | "burn_%0_start" ¦ "burn_%0_stop" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/"*"/(define "burn_part")/on/add_view` | block | [str str str]x6 | 1 | 6 | "smoke_aero_big" "fire%0" "fx_fire%0_1" ¦ "smoke_aero_big" "fire%0" "fx_fire%0_2" ¦ "smoke_aero_big" "fire%0" "fx_fire%0_3" ¦ "smoke_aero_small" "fire%0" "fx_smoke%0_1" ¦ "smoke_aero_small" "fire%0" "fx_smoke%0_2" ¦ "smoke_aero_small" "fire%0" "fx_smoke%0_3" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "burn_part")/on/add_view` | block | [str str str]x6 | 1 | 6 | "smoke_aero_big" "fire%0" "fx_fire%0_1" ¦ "smoke_aero_big" "fire%0" "fx_fire%0_2" ¦ "smoke_aero_big" "fire%0" "fx_fire%0_3" ¦ "smoke_aero_small" "fire%0" "fx_smoke%0_1" ¦ "smoke_aero_small" "fire%0" "fx_smoke%0_2" ¦ "smoke_aero_small" "fire%0" "fx_smoke%0_3" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "burn_part")/on/view` | block | [atom str]x2 | 1 | 2 | start "fire%0" ¦ stop "fire%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "burn_start")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/(define "burn_start")/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_camp_norm" "fire" "fx_light" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "burn_start")/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_camp_norm" "fire" "fx_light" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "burn_start")/burn` | block | [atom param]x1 | 1 | 1 | time %0 | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/(define "burn_start")/delay` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "burn_start")/delay/tags` | block | [atom str]x2 | 1 | 2 | remove "burning" ¦ remove "burned" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -1664,12 +1664,12 @@
 | `/"*"/(define "cut_part")/if` | block | [atom param]x1 | 1 | 1 | rand %1 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "cut_part")/if/delay_ex` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/(define "cut_part")/if/delay_ex/tear` | block | [str atom param]x1 | 1 | 1 | "piece_big_airborne_wing" bone %0 | 미확인(자동) |  |  |  |
-| `/"*"/(define "cut_part")/if/delay_ex/tear/impulse` | block | [atom num num atom num num]x1 | 1 | 1 | up 2 1 dir 2 1 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "cut_part")/if/delay_ex/tear/impulse` | block | [atom num num atom num num]x1 | 1 | 1 | up 2 1 dir 2 1 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "cut_shield_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "cut_shield_part")/if` | block | [atom param]x1 | 1 | 1 | component %0 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "cut_shield_part")/if/delay_ex` | block | [num]x1 | 1 | 1 | 0.11 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/(define "cut_shield_part")/if/delay_ex/tear` | block | [str atom param]x1 | 1 | 1 | "piece_medium_steel" bone %0 | 미확인(자동) |  |  |  |
-| `/"*"/(define "cut_shield_part")/if/delay_ex/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | up 3 1 dir 3 2 cx 5 2 cy 5 2 rnd_dir 5 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "cut_shield_part")/if/delay_ex/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | up 3 1 dir 3 2 cx 5 2 cy 5 2 rnd_dir 5 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "delayed_change_model")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "delayed_change_model")/if` | block | [atom str]x1 | 1 | 1 | not "delayed_change_model" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "delayed_change_model")/if/delay` | block | [param str]x1 | 1 | 1 | %0 "cracking" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -1678,7 +1678,7 @@
 | `/"*"/(define "delayed_change_model")/if/start_sound` | block | [str]x1 | 1 | 1 | "crush/medium/ice/crack" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/"*"/(define "door")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "door")/on` | block | [str]x5 | 1 | 5 | "open%0" ¦ "close%0" ¦ "open_fast%0" ¦ "close_fast%0" ¦ "update_area%0" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/"*"/(define "door")/on/ani_play` | block | [str]x2 | 1 | 2 | "open%0" ¦ "close%0" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "door")/on/ani_play` | block | [str]x2 | 1 | 2 | "open%0" ¦ "close%0" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "door")/on/ani_wind` | block | [str atom]x2 | 1 | 2 | "open%0" end ¦ "close%0" end | 미확인(자동) |  |  | retracts wheels |
 | `/"*"/(define "door")/on/call` | block | [str]x4 | 1 | 4 | "update_area%0" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/(define "door")/on/if` | block | [atom str atom]x1 | 1 | 1 | not "moved" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -1708,7 +1708,7 @@
 | `/"*"/(define "flame_weapon_1x_shot")/on/if/tags` | block | [atom str]x1 | 1 | 1 | add "looping" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "flame_weapon_1x_shot")/on/spawn` | block | [str str atom]x1 | 1 | 1 | "fx_piece_flame_%1" "foresight%2" x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/(define "flame_weapon_1x_shot")/on/spawn/gravity` | block | [num]x1 | 1 | 1 | 0.65 | 미확인(자동) |  |  |  |
-| `/"*"/(define "flame_weapon_1x_shot")/on/spawn/impulse` | block | [atom param atom num atom]x1 | 1 | 1 | forward %3 rnd_dir 0.01 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "flame_weapon_1x_shot")/on/spawn/impulse` | block | [atom param atom num atom]x1 | 1 | 1 | forward %3 rnd_dir 0.01 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "flame_weapon_1x_shot")/on/spawn/linear_damping` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/"*"/(define "flame_weapon_1x_shot")/on/tags` | block | [atom str]x1 | 1 | 1 | add "firing" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "flame_weapon_1x_shot")/on/view` | block | [atom str]x1 | 1 | 1 | start "%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -1720,7 +1720,7 @@
 | `/"*"/(define "flame_weapon")/on/delay/play_sound` | block | [str]x1 | 1 | 1 | "end" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/(define "flame_weapon")/on/delay/spawn` | block | [str str atom]x1 | 1 | 1 | "fx_piece_flame_%1" "foresight%2" x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/(define "flame_weapon")/on/delay/spawn/gravity` | block | [num]x1 | 1 | 1 | 0.65 | 미확인(자동) |  |  |  |
-| `/"*"/(define "flame_weapon")/on/delay/spawn/impulse` | block | [atom param atom num atom]x1 | 1 | 1 | forward %3 rnd_dir 0.01 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "flame_weapon")/on/delay/spawn/impulse` | block | [atom param atom num atom]x1 | 1 | 1 | forward %3 rnd_dir 0.01 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "flame_weapon")/on/delay/spawn/linear_damping` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/"*"/(define "flame_weapon")/on/delay/tags` | block | [atom str]x2 | 1 | 2 | remove "firing" ¦ remove "looping" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "flame_weapon")/on/delay/view` | block | [atom str]x1 | 1 | 1 | pause "%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -1732,14 +1732,14 @@
 | `/"*"/(define "flame_weapon")/on/if/tags` | block | [atom str]x1 | 1 | 1 | add "looping" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "flame_weapon")/on/spawn` | block | [str str atom]x1 | 1 | 1 | "fx_piece_flame_%1" "foresight%2" x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/(define "flame_weapon")/on/spawn/gravity` | block | [num]x1 | 1 | 1 | 0.65 | 미확인(자동) |  |  |  |
-| `/"*"/(define "flame_weapon")/on/spawn/impulse` | block | [atom param atom num atom]x1 | 1 | 1 | forward %3 rnd_dir 0.01 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "flame_weapon")/on/spawn/impulse` | block | [atom param atom num atom]x1 | 1 | 1 | forward %3 rnd_dir 0.01 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "flame_weapon")/on/spawn/linear_damping` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/"*"/(define "flame_weapon")/on/tags` | block | [atom str]x1 | 1 | 1 | add "firing" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "flame_weapon")/on/view` | block | [atom str]x1 | 1 | 1 | start "%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "float_volume")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "float_volume")/volumes` | block | [param atom atom]x1 | 1 | 1 | %0 enable float | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/(define "foliage")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/(define "foliage")/add_view` | block | [str str str]x1 | 1 | 1 | "foliage" "foliage" "foliage%0" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "foliage")/add_view` | block | [str str str]x1 | 1 | 1 | "foliage" "foliage" "foliage%0" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "friendly_destroy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "friendly_destroy")/(mod)` | mod | [str]x1 | 1 | 1 | "gametype:%0" | 미확인(자동) |  |  |  |
 | `/"*"/(define "friendly_destroy")/components` | block | [str atom]x1 | 1 | 1 | "body" destroy | 미확인(자동) |  |  |  |
@@ -1782,19 +1782,19 @@
 | `/"*"/(define "heavy_contact")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "heavy_contact")/if` | block | [atom num atom atom num atom atom num]x1 | 1 | 1 | min_speed 60 else min_speed 20 else min_speed 5 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "heavy_contact")/if/component` | block | [atom]x1 | 1 | 1 | break | 미확인(자동) |  |  |  |
-| `/"*"/(define "heavy_contact")/if/impulse` | block | [atom num num atom num num]x3 | 1 | 3 | up 0.3 0.05 forward 0.3 0.05 ¦ up 0.2 0.05 forward 0.2 0.05 ¦ up 0.1 0.05 forward 0.1 0.05 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "heavy_contact")/if/impulse` | block | [atom num num atom num num]x3 | 1 | 3 | up 0.3 0.05 forward 0.3 0.05 ¦ up 0.2 0.05 forward 0.2 0.05 ¦ up 0.1 0.05 forward 0.1 0.05 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "hide_wheel_spawn")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "hide_wheel_spawn")/if` | block | [atom str]x1 | 1 | 1 | tagged "%component_torn" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "hide_wheel_spawn")/if/bone` | block | [atom str]x2 | 1 | 2 | hide "%bone" ¦ hide "%component" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "hide_wheel_spawn")/if/bone` | block | [atom str]x2 | 1 | 2 | hide "%bone" ¦ hide "%component" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "hide_wheel_spawn")/if/volumes` | block | [str atom atom atom atom atom atom]x1 | 1 | 1 | "%component" disable visible bullet blast contact contact_ground | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/(define "hide_wheel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "hide_wheel")/if` | block | [atom str]x1 | 1 | 1 | component "%component" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "hide_wheel")/if/delay` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/(define "hide_wheel")/if/delay/bone` | block | [atom str]x2 | 1 | 2 | hide "%bone" ¦ hide "%component" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "hide_wheel")/if/delay/bone` | block | [atom str]x2 | 1 | 2 | hide "%bone" ¦ hide "%component" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "hide_wheel")/if/delay/tags` | block | [atom str]x1 | 1 | 1 | add "%component_torn" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "hide_wheel")/if/delay/volumes` | block | [str atom atom atom atom atom atom]x1 | 1 | 1 | "%component" disable visible bullet blast contact contact_ground | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/(define "hull_death_fx")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/(define "hull_death_fx")/add_view` | block | [str str str]x3 | 1 | 3 | "fire_dead_%3" "deathfx" "basis" ¦ "smoke_dead_%3" "deathfx_smoke" "basis" ¦ "smoke_dead_turret" "deathfx2" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "hull_death_fx")/add_view` | block | [str str str]x3 | 1 | 3 | "fire_dead_%3" "deathfx" "basis" ¦ "smoke_dead_%3" "deathfx_smoke" "basis" ¦ "smoke_dead_turret" "deathfx2" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "hull_death_fx")/if` | block | [atom str atom]x1 | 1 | 1 | tagged "ammo_broken" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "hull_death_fx")/if/delay` | block | [param param]x2 | 1 | 2 | %0 %1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "hull_death_fx")/if/delay/delay` | block | [param param]x1 | 1 | 1 | %0 %2 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -1808,7 +1808,7 @@
 | `/"*"/(define "human_health")/health_damage_count/effects` | block | [str str str str str]x1 | 1 | 1 | "" "hit" "damage" "die" "die" | 미확인(자동) |  |  |  |
 | `/"*"/(define "ik_rotate")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "ik_rotate")/on` | block | [atom atom str]x4 | 1 | 4 | ik begin "%turret" ¦ ik end "%turret" ¦ ik begin "%gun_rot" ¦ ik end "%gun_rot" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/"*"/(define "ik_rotate")/on/ani_play` | block | [str atom atom]x2 | 1 | 2 | "aim_h%number" loop resume ¦ "aim_v%number" loop resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "ik_rotate")/on/ani_play` | block | [str atom atom]x2 | 1 | 2 | "aim_h%number" loop resume ¦ "aim_v%number" loop resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "ik_rotate")/on/ani_stop` | block | [str]x2 | 1 | 2 | "aim_h%number" ¦ "aim_v%number" | 미확인(자동) |  |  |  |
 | `/"*"/(define "ik_rotate")/on/play_sound` | block | [str num]x2 | 1 | 2 | "rotate_turret%number" 1 ¦ "rotate_gun%number" 1 | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/(define "ik_rotate")/on/stop_sound` | block | [str]x2 | 1 | 2 | "rotate_turret%number" ¦ "rotate_gun%number" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
@@ -1823,7 +1823,7 @@
 | `/"*"/(define "kill_crew")/on/if` | block | [atom str]x1 | 1 | 1 | crew_in_place "%0" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "kill_crew")/on/if/delay` | block | [num]x1 | 1 | 1 | 0.2 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "kill_crew")/on/if/delay/damage_report` | block | [str str]x1 | 1 | 1 | "%0" "component/%0_die" | 미확인(자동) |  |  |  |
-| `/"*"/(define "kill_crew")/on/if/delay/talk` | block | [str]x1 | 1 | 1 | "crew_die" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/(define "kill_crew")/on/if/delay/talk` | block | [str]x1 | 1 | 1 | "crew_die" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/(define "kill_crew")/on/if/kill_crew` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  |  |
 | `/"*"/(define "kill_crewman")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "kill_crewman")/on` | block | [str]x1 | 1 | 1 | "kill_%0" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
@@ -1833,7 +1833,7 @@
 | `/"*"/(define "kill_crewman")/on/if/delay/damage_report` | block | [str str]x1 | 1 | 1 | "%0" "component/%0_die" | 미확인(자동) |  |  |  |
 | `/"*"/(define "kill_crewman")/on/if/delay/if` | block | [atom atom str]x1 | 1 | 1 | not broken "body" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "kill_crewman")/on/if/delay/if/crew_enable` | block | [atom str num]x1 | 1 | 1 | place "%0" 1 | 미확인(자동) |  |  | re enables seat after crew death, after delay ¦ disables seat in vehicle from being recrewed instantly after crew death |
-| `/"*"/(define "kill_crewman")/on/if/delay/talk` | block | [str]x1 | 1 | 1 | "crew_die" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/(define "kill_crewman")/on/if/delay/talk` | block | [str]x1 | 1 | 1 | "crew_die" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/(define "kill_crewman")/on/if/kill_crew` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  |  |
 | `/"*"/(define "knock_out")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "knock_out")/if` | block | [atom atom num]x1 | 1 | 1 | not water_level -0.1 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -1842,16 +1842,16 @@
 | `/"*"/(define "link_flash")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "link_flash")/if` | block | [atom str]x1 | 1 | 1 | name "mgun_linked%0" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "link_flash")/if/if` | block | [atom str]x1 | 1 | 1 | stuff "mgun" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "link_flash")/if/if/add_view` | block | [str str str]x1 | 1 | 1 | "flash_gun_big_vehicle" "flashbarrel%1" "Foresight%1" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "link_flash")/if/if/add_view` | block | [str str str]x1 | 1 | 1 | "flash_gun_big_vehicle" "flashbarrel%1" "Foresight%1" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "magazine")` | define | []x3 | 2 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "magazine")/on` | block | [str param]x3 | 2 | 3 | "magazine_delay" %override | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/"*"/(define "magazine")/on/ani_play` | block | [str num]x2 | 1 | 2 | "magazine" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "magazine")/on/ani_play` | block | [str num]x2 | 1 | 2 | "magazine" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "magazine")/on/delay` | block | [param]x3 | 2 | 3 | %cut | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "magazine")/on/delay/delay` | block | [num]x3 | 2 | 3 | 0 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "magazine")/on/delay/delay/delay` | block | [param]x3 | 2 | 3 | %show | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/(define "magazine")/on/delay/delay/delay/ani_play` | block | [str num]x2 | 1 | 2 | "magazine" -1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "magazine")/on/delay/delay/delay/ani_play` | block | [str num]x2 | 1 | 2 | "magazine" -1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "magazine")/on/delay/delay/delay/delay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/(define "magazine")/on/delay/delay/delay/delay/ani_play` | block | [str num]x1 | 1 | 1 | "bolt" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "magazine")/on/delay/delay/delay/delay/ani_play` | block | [str num]x1 | 1 | 1 | "bolt" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "magazine")/on/delay/delay/delay/view` | block | [atom str]x4 | 2 | 4 | show "magazine" ¦ show "bullet" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "magazine")/on/delay/delay/view` | block | [atom str]x3 | 2 | 3 | hide "magazine" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "magazine")/on/delay/tear` | block | [str atom str atom param]x3 | 2 | 3 | "piece_small_steel" bone "magazine" copy %impulse ¦ "piece_tiny_steel" bone "magazine" copy %impulse | 미확인(자동) |  |  |  |
@@ -1891,13 +1891,13 @@
 | `/"*"/(define "on_fire_auto")/on/view` | block | [atom str]x2 | 1 | 2 | start "flashbarrelzenite%1" ¦ start "zenite_smoke%1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "on_fire_gun")` | define | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "on_fire_gun")/on` | block | [atom str]x2 | 1 | 2 | fire "%0" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/"*"/(define "on_fire_gun")/on/ani_play` | block | [str]x2 | 1 | 2 | "recoil%1" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "on_fire_gun")/on/ani_play` | block | [str]x2 | 1 | 2 | "recoil%1" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "on_fire_gun")/on/call` | block | [str]x2 | 1 | 2 | "spawn_shell%1" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/(define "on_fire_gun")/on/play_sound` | block | [str]x3 | 1 | 3 | "action_recoil_Cannon%1" ¦ "Cannon_Mid%1" ¦ "Cannon_Far%1" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/(define "on_fire_gun")/on/view` | block | [atom str]x1 | 1 | 1 | start "flashbarrelmaximum%1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "on_fire_hmg")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "on_fire_hmg")/on` | block | [atom str]x1 | 1 | 1 | fire "%0" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/"*"/(define "on_fire_hmg")/on/ani_play` | block | [str]x1 | 1 | 1 | "recoil_mgun%1" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "on_fire_hmg")/on/ani_play` | block | [str]x1 | 1 | 1 | "recoil_mgun%1" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "on_fire_hmg")/on/delay` | block | [num]x1 | 1 | 1 | 0.12 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "on_fire_hmg")/on/delay/view` | block | [atom str]x2 | 1 | 2 | pause "shell%1" ¦ pause "ejectsmoke%1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "on_fire_hmg")/on/play_sound` | block | [str]x3 | 1 | 3 | "HMG_Mid" ¦ "action_recoil_HMG" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
@@ -1949,23 +1949,23 @@
 | `/"*"/(define "prop_still")/volumes` | block | [str atom atom atom atom atom]x1 [str atom atom]x1 | 1 | 2 | "still%number" enable contact bullet blast touch ¦ "spin%number" disable all | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/(define "rand_anim")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "rand_anim")/if` | block | [atom num]x1 | 1 | 1 | rand 0.5 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "rand_anim")/if/ani_play` | block | [str num atom]x1 | 1 | 1 | "fly%0" 0.7 loop | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "rand_anim")/if/ani_play` | block | [str num atom]x1 | 1 | 1 | "fly%0" 0.7 loop | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "rand_anim")/if/tags` | block | [atom str]x1 | 1 | 1 | add "flying" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "rand_cut_else_3")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "rand_cut_else_3")/if` | block | [atom num atom atom num atom]x1 | 1 | 1 | rand 0.33 else rand 0.33 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "rand_cut_else_3")/if/bone` | block | [atom param]x3 | 1 | 3 | cut %0 ¦ cut %1 ¦ cut %2 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "rand_cut_else_3")/if/bone` | block | [atom param]x3 | 1 | 3 | cut %0 ¦ cut %1 ¦ cut %2 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "rand_cut_else")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "rand_cut_else")/if` | block | [atom num atom]x1 | 1 | 1 | rand 0.5 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "rand_cut_else")/if/bone` | block | [atom param]x2 | 1 | 2 | cut %0 ¦ cut %1 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "rand_cut_else")/if/bone` | block | [atom param]x2 | 1 | 2 | cut %0 ¦ cut %1 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "rand_cut")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "rand_cut")/if` | block | [atom num]x1 | 1 | 1 | rand 0.5 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "rand_cut")/if/bone` | block | [atom param]x1 | 1 | 1 | cut %0 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "rand_cut")/if/bone` | block | [atom param]x1 | 1 | 1 | cut %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "random_animation_end")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "random_animation_end")/on` | block | [atom str]x1 | 1 | 1 | animation_end "animation%0" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/"*"/(define "random_animation_end")/on/call` | block | [str]x1 | 1 | 1 | "random_animation" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/(define "random_animation")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "random_animation")/<bare>` | bare | [atom]x1 [num]x1 | 1 | 2 | 0.1 | 미확인(자동) |  |  |  |
-| `/"*"/(define "random_animation")/ani_play` | block | [str atom]x1 | 1 | 1 | "animation%0" callback | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "random_animation")/ani_play` | block | [str atom]x1 | 1 | 1 | "animation%0" callback | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "rocket_weapon")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "rocket_weapon")/on` | block | [atom atom]x2 | 1 | 2 | engine on ¦ engine off | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/"*"/(define "rocket_weapon")/on/if` | block | [atom atom str]x1 | 1 | 1 | not tagged "%0_brake" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -1978,12 +1978,12 @@
 | `/"*"/(define "shed_shield_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "shed_shield_part")/if` | block | [atom param]x1 | 1 | 1 | component %0 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "shed_shield_part")/if/delay_ex` | block | [num]x1 | 1 | 1 | 0.11 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/(define "shed_shield_part")/if/delay_ex/bone` | block | [atom param]x1 | 1 | 1 | hide %0 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "shed_shield_part")/if/delay_ex/bone` | block | [atom param]x1 | 1 | 1 | hide %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "shed_shield_part")/if/delay_ex/spawn` | block | [str param atom]x1 | 1 | 1 | "wood_crush_big" %0 x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/(define "shed_shield_part")/if/delay_ex/volumes` | block | [param atom atom]x1 | 1 | 1 | %0 disable all | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/(define "show_wheel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "show_wheel")/if` | block | [atom str]x1 | 1 | 1 | component "%component" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "show_wheel")/if/bone` | block | [atom str]x2 | 1 | 2 | show "%bone" ¦ show "%component" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "show_wheel")/if/bone` | block | [atom str]x2 | 1 | 2 | show "%bone" ¦ show "%component" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "show_wheel")/if/call` | block | [str]x1 | 1 | 1 | "check_wheel_torn" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/(define "show_wheel")/if/tags` | block | [atom str]x3 | 1 | 3 | remove "%component_torn" ¦ remove "wheel_destroyed" ¦ remove "wheel_teared" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "show_wheel")/if/volumes` | block | [str atom atom atom atom atom atom]x1 | 1 | 1 | "%component" enable visible bullet blast contact contact_ground | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
@@ -1998,20 +1998,20 @@
 | `/"*"/(define "sink_sequence")/if/if` | block | [atom param]x1 | 1 | 1 | broken %1 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "sink_sequence")/if/if/("sink_volume")` | macro | [atom param param]x6 | 1 | 6 | args %2 %3 ¦ args %4 %5 ¦ args %6 %7 ¦ args %8 %9 ¦ args %10 %11 ¦ args %12 %13 | 미확인(자동) |  |  |  |
 | `/"*"/(define "sink_sequence")/if/if/tags` | block | [atom str]x1 | 1 | 1 | add "true" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/(define "sink_sequence")/impulse` | block | [atom num]x1 | 1 | 1 | up 0.2 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "sink_sequence")/impulse` | block | [atom num]x1 | 1 | 1 | up 0.2 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "sink_volume")` | define | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "sink_volume")/delay` | block | [param]x1 [param num]x1 | 1 | 2 | %1 ¦ %1 1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "sink_volume")/delay/if` | block | [atom str]x1 | 1 | 1 | tagged "sunk" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "sink_volume")/delay/if/impulse` | block | [atom num]x1 | 1 | 1 | up -0.001 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
-| `/"*"/(define "sink_volume")/delay/impulse` | block | [atom num]x1 | 1 | 1 | up 0.2 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "sink_volume")/delay/if/impulse` | block | [atom num]x1 | 1 | 1 | up -0.001 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
+| `/"*"/(define "sink_volume")/delay/impulse` | block | [atom num]x1 | 1 | 1 | up 0.2 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "sink_volume")/delay/tags` | block | [atom param]x1 | 1 | 1 | add %0 | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/(define "sink_volume")/delay/volumes` | block | [param atom atom]x1 [param atom atom atom atom]x1 | 1 | 2 | %0 disable float ¦ %0 disable float bullet blast | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/(define "smoke_shot")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "smoke_shot")/delay` | block | [param]x2 | 1 | 2 | %4 ¦ %5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/(define "smoke_shot")/delay/bone` | block | [atom str]x2 | 1 | 2 | hide "%1_cap" ¦ show "%1_cap" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/(define "smoke_shot")/delay/bone` | block | [atom str]x2 | 1 | 2 | hide "%1_cap" ¦ show "%1_cap" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/(define "smoke_shot")/delay/spawn` | block | [param str atom]x1 [str str atom]x1 | 1 | 2 | %0 "%1" x ¦ "flash_grenade_launcher" "fx%1" x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/(define "smoke_shot")/delay/spawn/call` | block | [str]x1 | 1 | 1 | "activate" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/(define "smoke_shot")/delay/spawn/impulse` | block | [atom param param atom param param]x1 | 1 | 1 | forward %2 %3 rnd_dir %3 %3 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "smoke_shot")/delay/spawn/impulse` | block | [atom param param atom param param]x1 | 1 | 1 | forward %2 %3 rnd_dir %3 %3 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "smoke_time")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "smoke_time")/on` | block | [str atom]x1 | 1 | 1 | "activate" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/"*"/(define "smoke_time")/on/delay` | block | [num str]x2 [param str]x1 | 1 | 3 | 1.5 "smoke" ¦ 6 "smoke" ¦ %0 "smoke" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -2029,15 +2029,15 @@
 | `/"*"/(define "spawn_shell")` | define | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "spawn_shell")/on` | block | [str]x2 | 1 | 2 | "spawn_shell%0" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/"*"/(define "spawn_shell")/on/delay_ex` | block | [num]x2 | 1 | 2 | 0.17 ~ 2 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/(define "spawn_shell")/on/delay_ex/ani_play` | block | [str num]x2 | 1 | 2 | "shell_eject%0" 1.5 ¦ "shell_eject%0" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "spawn_shell")/on/delay_ex/ani_play` | block | [str num]x2 | 1 | 2 | "shell_eject%0" 1.5 ¦ "shell_eject%0" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex` | block | [num]x2 | 1 | 2 | 0.2 ~ 0.3 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_breach" "smoke_shell" "fx_invers" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_breach" "smoke_shell" "fx_invers" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/delay` | block | [num num]x2 | 1 | 2 | 2.5 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/delay/view` | block | [atom str]x2 | 1 | 2 | stop "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn` | block | [str str atom atom num]x2 | 1 | 2 | "shell_cannon" "fx_invers%0" x scale 0.014 | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_empty_shell" "smoke_shell" "fx_shellsmoke" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_empty_shell" "smoke_shell" "fx_shellsmoke" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn/delay_effect` | block | [num num str]x2 | 1 | 2 | 3 1 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn/impulse` | block | [atom num num atom num num atom num num atom]x2 | 1 | 2 | forward 4 0.5 rnd_dir 0.1 0.1 cz 0.2 0.1 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn/impulse` | block | [atom num num atom num num atom num num atom]x2 | 1 | 2 | forward 4 0.5 rnd_dir 0.1 0.1 cz 0.2 0.1 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/spawn/view` | block | [atom str]x2 | 1 | 2 | start "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "spawn_shell")/on/delay_ex/delay_ex/view` | block | [atom str]x2 | 1 | 2 | start "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "spawn_shell")/on/delay_ex/play_sound` | block | [str]x2 | 1 | 2 | "breech_open" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
@@ -2053,7 +2053,7 @@
 | `/"*"/(define "stir")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/(define "stir")/if` | block | [atom atom str]x1 | 1 | 1 | not tagged "bare" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/(define "stir")/if/if` | block | [atom str]x1 [atom atom]x1 | 1 | 2 | not "started" ¦ not burned | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/(define "stir")/if/if/ani_play` | block | [str num param]x1 | 1 | 1 | "stir" 0.6 %params | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/(define "stir")/if/if/ani_play` | block | [str num param]x1 | 1 | 1 | "stir" 0.6 %params | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/(define "stir")/if/if/mtl_enable_skin` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/(define "stir")/if/if/set` | block | [str num]x1 | 1 | 1 | "started" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/(define "stir")/if/if/start_sound` | block | [str]x1 | 1 | 1 | "push/tree_crown" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
@@ -2109,12 +2109,12 @@
 | `/"*"/(define "turret_torn")/on/if/components` | block | [str atom]x1 | 1 | 1 | "turret" break | 미확인(자동) |  |  |  |
 | `/"*"/(define "turret_torn")/on/if/delay_ex` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/(define "turret_torn")/on/if/delay_ex/tear` | block | [str atom str atom str]x1 | 1 | 1 | "piece_large_steel" bone "turret" id "turret" | 미확인(자동) |  |  |  |
-| `/"*"/(define "turret_torn")/on/if/delay_ex/tear/add_view` | block | [str str str]x2 | 1 | 2 | "fire_dead_%5" "fire" "basis" ¦ "smoke_dead_turret" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/(define "turret_torn")/on/if/delay_ex/tear/add_view` | block | [str str str]x2 | 1 | 2 | "fire_dead_%5" "fire" "basis" ¦ "smoke_dead_turret" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/(define "turret_torn")/on/if/delay_ex/tear/delay` | block | [param param]x1 [num]x1 | 1 | 2 | 0.1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/(define "turret_torn")/on/if/delay_ex/tear/delay_effect` | block | [param param str]x1 | 1 | 1 | %3 %4 "pause" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/(define "turret_torn")/on/if/delay_ex/tear/delay/view` | block | [atom str]x2 | 1 | 2 | stop "fire" ¦ start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "turret_torn")/on/if/delay_ex/tear/delay/volumes` | block | [str atom atom]x1 | 1 | 1 | "gun" disable obstacle | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
-| `/"*"/(define "turret_torn")/on/if/delay_ex/tear/impulse` | block | [atom param num atom param num atom param num atom num num atom num num atom num num atom]x1 | 1 | 1 | up %0 2 dir %0 2 rnd_dir %0 4 cx 2 2 cy 2 2 cz 2 2 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/(define "turret_torn")/on/if/delay_ex/tear/impulse` | block | [atom param num atom param num atom param num atom num num atom num num atom num num atom]x1 | 1 | 1 | up %0 2 dir %0 2 rnd_dir %0 4 cx 2 2 cy 2 2 cz 2 2 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/(define "turret_torn")/on/if/delay_ex/tear/view` | block | [atom str]x1 | 1 | 1 | start "fire" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/(define "turret_torn")/on/if/set` | block | [str num]x1 | 1 | 1 | "turret_teared" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/(define "update_area")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -2146,8 +2146,8 @@
 | `/"*"/(define "weapon_shoot_event")/on/call` | block | [atom str]x1 | 1 | 1 | fire "%0" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/(include)` | include | [str]x22 | 13 | 22 | "\set\interaction_terrain\effects\effects-defines.inc" ¦ "human_idle.inc" ¦ "tank-damage.inc" ¦ "damage-armoredcar.inc" ¦ "damage-light.inc" ¦ "damage-medium.inc" ¦ "damage-heavy.inc" | 미확인(자동) |  |  |  |
 | `/"*"/##on` | block | [str atom]x6 [atom]x4 [atom str atom]x2 [str]x2 [atom str]x1 | 6 | 16 | break_armor ¦ "commander_hatch_open" overload ¦ "commander_hatch_close" overload ¦ terrain_pp "swamp" enter ¦ terrain_pp "swamp" leave ¦ "wheels_fx" ¦ animation_event "close" ¦ grounded on ¦ "explosion" | 미확인(자동) |  |  | not called? ¦ entity completely stopped moving on the ground and physics is disabled |
-| `/"*"/##on/add_view` | block | [str str str]x2 | 1 | 2 | "spheredust_big" "ground_dust" "support1" ¦ "spheredust_big" "ground_dust" "support2" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/##on/ani_play` | block | [str num atom]x5 | 1 | 5 | "open" -1.0 resume ¦ "open" 1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/##on/add_view` | block | [str str str]x2 | 1 | 2 | "spheredust_big" "ground_dust" "support1" ¦ "spheredust_big" "ground_dust" "support2" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/##on/ani_play` | block | [str num atom]x5 | 1 | 5 | "open" -1.0 resume ¦ "open" 1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/##on/ani_wind` | block | [str atom]x1 | 1 | 1 | "open" end | 미확인(자동) |  |  | retracts wheels |
 | `/"*"/##on/call` | block | [str]x2 | 2 | 2 | "ground_end" ¦ "break" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/##on/component` | block | [atom]x1 | 1 | 1 | break | 미확인(자동) |  |  |  |
@@ -2227,7 +2227,7 @@
 | `/"*"/level/vignette_gloss` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/"*"/level/vision_modes_active` | block | []x244 | 12 | 244 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/level/with_owner` | block | []x55 | 10 | 55 | 예: | 미확인(자동) |  |  | removes shield to prevent clipping |
-| `/"*"/level/with_owner/viewoff` | block | [str]x54 | 10 | 54 | 예: "magazine" | 미확인(자동) |  |  | removes shield to prevent clipping ¦ removes headlight to prevent clipping |
+| `/"*"/level/with_owner/viewoff` | block | [str]x54 | 10 | 54 | 예: "magazine" | 미확인(자동) |  |  | removes shield to prevent clipping ¦ removes to prevent clipping |
 | `/"*"/level/zoom` | block | []x261 | 13 | 261 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/models` | block | []x104 | 3 | 104 | 예: | 미확인(자동) |  |  | list of models (equal probability) |
 | `/"*"/models/"*"` | block | [str str]x109 [str]x107 [str str num]x95 [str num]x24 | 3 | 335 | 예: "dummygrass" | 미확인(자동) |  |  |  |
@@ -2372,13 +2372,13 @@
 | `/"*"/on/(define "burn_damage")/delay/if/if/tex_mod` | block | [str]x1 | 1 | 1 | "burned" | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_big_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_big_part")/tear` | block | [str atom param]x1 | 1 | 1 | "piece_big_steel" bone %0 | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "cut_big_part")/tear/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "cut_big_part")/tear/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "cut_big_part")/tear/delay_effect` | block | [num num str]x1 | 1 | 1 | 20 5 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/on/(define "cut_big_part")/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_big_part")/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_big_part")/tear/view` | block | [atom str]x1 | 1 | 1 | start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "cut_big_piece")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_big_piece")/tear` | block | [str atom str]x1 | 1 | 1 | "piece_large_concrete" bone "piece_big%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "cut_big_piece")/tear/impulse` | block | [atom num num atom num num atom]x1 | 1 | 1 | up 1 0.7 dir 1 0.3 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_big_piece")/tear/impulse` | block | [atom num num atom num num atom]x1 | 1 | 1 | up 1 0.7 dir 1 0.3 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_part_delete")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_part_delete")/delay_ex` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/on/(define "cut_part_delete")/delay_ex/tear` | block | [str atom param]x2 | 2 | 2 | "piece_medium_wood" bone %0 | 미확인(자동) |  |  |  |
@@ -2389,39 +2389,39 @@
 | `/"*"/on/(define "cut_part")/if/if/tear` | block | [str atom param]x8 | 4 | 8 | "piece_medium_steel" bone %0 | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_part")/if/if/tear/call` | block | [str]x4 | 2 | 4 | "check_delete_part" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/(define "cut_part")/if/if/tear/delay_effect` | block | [num num str]x4 | 2 | 4 | 20 5 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/on/(define "cut_part")/if/if/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x8 | 4 | 8 | up 2 1 dir 2 1 cx 2 1 cy 2 1 rnd_dir 1 no_position ¦ up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position ¦ up 4 1 dir 2.5 1 cx 2.5 1 cy 2.5 1 rnd_dir 5 no_position ¦ up 4 1 dir 4 2 cx 2 1 cy 2 1 rnd_dir 4 no_position ¦ up 3 1 dir 3 1 cx 2 1 cy 2 1 rnd_dir 4 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_part")/if/if/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x8 | 4 | 8 | up 2 1 dir 2 1 cx 2 1 cy 2 1 rnd_dir 1 no_position ¦ up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position ¦ up 4 1 dir 2.5 1 cx 2.5 1 cy 2.5 1 rnd_dir 5 no_position ¦ up 4 1 dir 4 2 cx 2 1 cy 2 1 rnd_dir 4 no_position ¦ up 3 1 dir 3 1 cx 2 1 cy 2 1 rnd_dir 4 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_part")/if/tear` | block | [str atom param]x3 | 2 | 3 | "piece_medium_steel" bone %0 | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_part")/if/tear/delay_effect` | block | [num num str]x3 | 2 | 3 | 20 5 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/on/(define "cut_part")/if/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x3 | 2 | 3 | up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position ¦ up 4 1 dir 2.5 1 cx 2.5 1 cy 2.5 1 rnd_dir 5 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_part")/if/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x3 | 2 | 3 | up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position ¦ up 4 1 dir 2.5 1 cx 2.5 1 cy 2.5 1 rnd_dir 5 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_part")/tear` | block | [str atom param]x6 | 4 | 6 | "piece_medium_steel" bone %0 ¦ "piece_large_steel" bone %0 | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_part")/tear/burn` | block | [atom atom str atom num num]x1 | 1 | 1 | first_volume fx "smoke_dead_wheel" time 20 5 | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/(define "cut_part")/tear/delay` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/(define "cut_part")/tear/delay_effect` | block | [num num str]x6 | 4 | 6 | 20 5 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/(define "cut_part")/tear/delay/if` | block | [atom]x1 | 1 | 1 | under_water | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/(define "cut_part")/tear/delay/if/delete` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "cut_part")/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x6 | 4 | 6 | up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position ¦ up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_part")/tear/impulse` | block | [atom num num atom num num atom num num atom num num atom num atom]x6 | 4 | 6 | up 8 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 10 no_position ¦ up 4 1 dir 5 2 cx 5 2 cy 5 2 rnd_dir 6 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_part")/tear/tags` | block | [atom str]x1 | 1 | 1 | add "marine_part" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/on/(define "cut_piece")` | define | []x12 | 4 | 12 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_piece")/tear` | block | [str atom str]x12 | 4 | 12 | "piece_medium_sand" bone "piece%0" ¦ "piece_small_wood" bone "piece%0" ¦ "piece_medium_ice" bone "piece%0" ¦ "building_part_concrete" bone "piece%0" ¦ "building_part_wood" bone "piece%0" ¦ "piece_medium_steel" bone "piece%0" ¦ "piece_medium_concrete" bone "piece%0" | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_piece")/tear/if` | block | [atom num]x6 [atom num atom]x1 | 3 | 7 | rand 1 ¦ rand 0.3 else ¦ rand 0.3 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/on/(define "cut_piece")/tear/if/add_view` | block | [str str str]x6 | 2 | 6 | "dust_small" "dust" "root" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "cut_piece")/tear/if/add_view` | block | [str str str]x6 | 2 | 6 | "dust_small" "dust" "root" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "cut_piece")/tear/if/delay_effect` | block | [num num str]x6 | 2 | 6 | 2 1 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/(define "cut_piece")/tear/if/delete` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_piece")/tear/if/if` | block | [atom num atom atom num atom atom num]x1 | 1 | 1 | rand 0.3 else rand 0.6 else rand 0.9 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/(define "cut_piece")/tear/if/if/spawn` | block | [str]x3 | 1 | 3 | "spherewater_big" ¦ "spherewater_medium" ¦ "spherewater_small" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/(define "cut_piece")/tear/if/view` | block | [atom str]x6 | 2 | 6 | start "dust" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
-| `/"*"/on/(define "cut_piece")/tear/impulse` | block | [atom num num atom num num atom]x6 [atom num num atom num num atom num atom]x5 [atom num num atom num num atom num]x1 | 4 | 12 | up 0.25 0.25 dir 0.25 0.25 rnd_dir 2 no_position ¦ up 1 1.4 dir 3.5 2.5 rnd_dir 5 no_position ¦ up 1 0.7 dir 2.5 0.3 no_position ¦ up 1 0.7 dir -5 1.3 no_position ¦ up 3 1.4 dir 3.5 2.5 rnd_dir 5 ¦ up 0.3 0.1 dir 1.5 0.3 no_position ¦ up 5 2 dir 3.5 2.5 rnd_dir 5 no_position ¦ up 2.5 1.7 dir 3.5 1.3 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_piece")/tear/impulse` | block | [atom num num atom num num atom]x6 [atom num num atom num num atom num atom]x5 [atom num num atom num num atom num]x1 | 4 | 12 | up 0.25 0.25 dir 0.25 0.25 rnd_dir 2 no_position ¦ up 1 1.4 dir 3.5 2.5 rnd_dir 5 no_position ¦ up 1 0.7 dir 2.5 0.3 no_position ¦ up 1 0.7 dir -5 1.3 no_position ¦ up 3 1.4 dir 3.5 2.5 rnd_dir 5 ¦ up 0.3 0.1 dir 1.5 0.3 no_position ¦ up 5 2 dir 3.5 2.5 rnd_dir 5 no_position ¦ up 2.5 1.7 dir 3.5 1.3 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_piece")/tear/spawn` | block | [str str]x3 | 2 | 3 | "spheredust_norm" "piece%0" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/(define "cut_piece")/tear/volumes` | block | [atom atom]x10 | 4 | 10 | enable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/(define "cut_subpiece")` | define | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "cut_subpiece")/tear` | block | [str atom str atom str]x3 [str atom str]x1 | 2 | 4 | "piece_big_wood" bone "sub_piece%0" id "building_part_wood_subpiece" ¦ "piece_large_concrete" bone "sub_piece%0" id "building_part_concrete_subpiece" ¦ "piece_large_concrete" bone "sub_piece%0" id "cornered_parts_construction_piece" ¦ "piece_medium_sand" bone "piece%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "cut_subpiece")/tear/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_black" "smoke" "root" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "cut_subpiece")/tear/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_black" "smoke" "root" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "cut_subpiece")/tear/delay_effect` | block | [num num str]x2 | 1 | 2 | 5 3 "stop" ¦ 1 0.5 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/(define "cut_subpiece")/tear/if` | block | [atom num]x1 | 1 | 1 | rand 0.3 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/on/(define "cut_subpiece")/tear/if/add_view` | block | [str str str]x1 | 1 | 1 | "dust_small" "dust" "root" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "cut_subpiece")/tear/if/add_view` | block | [str str str]x1 | 1 | 1 | "dust_small" "dust" "root" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "cut_subpiece")/tear/if/delay_effect` | block | [num num str]x1 | 1 | 1 | 2 1 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/(define "cut_subpiece")/tear/if/view` | block | [atom str]x1 | 1 | 1 | start "dust" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
-| `/"*"/on/(define "cut_subpiece")/tear/impulse` | block | [atom num num atom num num atom]x3 [atom num atom num num atom]x1 | 2 | 4 | up 1 0.7 dir 2.5 0.3 no_position ¦ up -0.1 dir 1 2 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "cut_subpiece")/tear/impulse` | block | [atom num num atom num num atom]x3 [atom num atom num num atom]x1 | 2 | 4 | up 1 0.7 dir 2.5 0.3 no_position ¦ up -0.1 dir 1 2 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "cut_subpiece")/tear/spawn` | block | [str str]x3 | 1 | 3 | "spheredust_norm" "sub_piece%0" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/(define "cut_subpiece")/tear/view` | block | [atom str]x2 | 1 | 2 | start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "cut_subpiece")/tear/volumes` | block | [atom atom]x4 | 2 | 4 | enable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
@@ -2432,7 +2432,7 @@
 | `/"*"/on/(define "double_shot")/delay/delay/delay/view` | block | [atom str]x1 | 1 | 1 | show "shell%1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "double_shot")/delay/delay/view` | block | [atom str]x1 | 1 | 1 | hide "shell%1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "double_shot")/delay/tear` | block | [str atom str atom]x1 | 1 | 1 | "piece_tiny_steel" bone "shell%1" copy | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "double_shot")/delay/tear/impulse` | block | [atom num]x1 | 1 | 1 | up -0.01 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "double_shot")/delay/tear/impulse` | block | [atom num]x1 | 1 | 1 | up -0.01 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "drop_human")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "drop_human")/with_linked_entity` | block | [str]x2 | 2 | 2 | "%0" | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "drop_human")/with_linked_entity/call` | block | [str]x2 | 2 | 2 | "throw_off_from_ladder" ¦ "throw_off_from_ship" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
@@ -2446,7 +2446,7 @@
 | `/"*"/on/(define "fire_barrel_mg")/view` | block | [atom str]x1 | 1 | 1 | start "flashbarrel_mg%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "fire_barrel")` | define | []x10 | 3 | 10 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "fire_barrel")/<bare>` | bare | [atom]x10 [str]x10 | 3 | 20 | name ¦ "%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "fire_barrel")/ani_play` | block | [str]x1 | 1 | 1 | "fire%0" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/(define "fire_barrel")/ani_play` | block | [str]x1 | 1 | 1 | "fire%0" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/(define "fire_barrel")/call` | block | [str]x5 | 3 | 5 | "fire_barrel%0" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/(define "fire_barrel")/delay` | block | [num str]x10 [num]x6 | 3 | 16 | 0.12 ~ 0.42 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/(define "fire_barrel")/delay/delay` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -2459,7 +2459,7 @@
 | `/"*"/on/(define "fire_barrel")/tags` | block | [atom str]x4 | 3 | 4 | add "firing" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/on/(define "fire_barrel")/view` | block | [atom str]x14 | 3 | 14 | start "flashbarrel%0" ¦ start "shell%1" ¦ start "ejectsmoke%1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "fire_start")` | define | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "fire_start")/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_dead_wheel" "fire%0" "fx_fire%0" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "fire_start")/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_dead_wheel" "fire%0" "fx_fire%0" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "fire_start")/delay` | block | [num num]x2 | 1 | 2 | 30 5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/(define "fire_start")/delay/view` | block | [atom str]x2 | 1 | 2 | stop "fire%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "fire_start")/view` | block | [atom str]x2 | 1 | 2 | start "fire%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -2475,57 +2475,57 @@
 | `/"*"/on/(define "nebelwerfer_fire")/if/view` | block | [atom str]x3 | 1 | 3 | start "snow" ¦ start "dust" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "no_shell_eject_delay")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "no_shell_eject_delay")/delay_ex` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/on/(define "no_shell_eject_delay")/delay_ex/ani_play` | block | [str num]x1 | 1 | 1 | "shell_eject" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/(define "no_shell_eject_delay")/delay_ex/ani_play` | block | [str num]x1 | 1 | 1 | "shell_eject" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/(define "no_shell_eject_delay")/delay_ex/delay_ex` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/on/(define "no_shell_eject_delay")/delay_ex/delay_ex/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_breach" "smoke_shell" "fx_invers" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "no_shell_eject_delay")/delay_ex/delay_ex/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_breach" "smoke_shell" "fx_invers" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "no_shell_eject_delay")/delay_ex/delay_ex/delay` | block | [num num]x1 | 1 | 1 | 2.5 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/(define "no_shell_eject_delay")/delay_ex/delay_ex/delay/view` | block | [atom str]x1 | 1 | 1 | stop "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "no_shell_eject_delay")/delay_ex/delay_ex/view` | block | [atom str]x1 | 1 | 1 | start "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "no_shell_eject_delay")/delay_ex/play_sound` | block | [str]x1 | 1 | 1 | "breech_open" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/(define "rand_shields")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "rand_shields")/delay` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/(define "rand_shields")/delay/bone` | block | [atom str]x1 | 1 | 1 | hide "%shield" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/(define "rand_shields")/delay/bone` | block | [atom str]x1 | 1 | 1 | hide "%shield" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/(define "rand_shields")/delay/volumes` | block | [str atom atom]x1 | 1 | 1 | "%shield" disable all | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/(define "randomized_shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "randomized_shield")/if` | block | [atom param]x1 | 1 | 1 | rand %1 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/on/(define "randomized_shield")/if/bone` | block | [atom param]x1 | 1 | 1 | cut %0 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/(define "randomized_shield")/if/bone` | block | [atom param]x1 | 1 | 1 | cut %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/(define "reload_gun")` | define | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "reload_gun")/if` | block | [atom str]x2 | 1 | 2 | name "%0" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/(define "reload_gun")/if/if` | block | [atom str atom]x2 | 1 | 2 | tagged "gun_fired%1" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/(define "reload_gun")/if/if/delay` | block | [num]x6 | 1 | 6 | 0.15 ~ 9.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/(define "reload_gun")/if/if/delay/ani_play` | block | [str num]x6 | 1 | 6 | "shell_eject%1" -1.0 ¦ "shell_eject%1" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/(define "reload_gun")/if/if/delay/ani_play` | block | [str num]x6 | 1 | 6 | "shell_eject%1" -1.0 ¦ "shell_eject%1" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/(define "reload_gun")/if/if/delay/delay` | block | [num]x4 | 1 | 4 | 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/(define "reload_gun")/if/if/delay/delay/talk` | block | [str]x4 | 1 | 4 | "reloaded" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/(define "reload_gun")/if/if/delay/delay/talk` | block | [str]x4 | 1 | 4 | "reloaded" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/(define "reload_gun")/if/if/delay/play_sound` | block | [str]x6 | 1 | 6 | "breech_close" ¦ "breech_open" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/(define "reload_gun")/if/if/delay/tags` | block | [atom str]x2 | 1 | 2 | remove "gun_fired%1" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/(define "reload_gun")/if/if/delay/talk` | block | [str]x2 | 1 | 2 | "reload" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/(define "reload_gun")/if/if/delay/talk` | block | [str]x2 | 1 | 2 | "reload" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/(define "reload_time")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "reload_time")/if` | block | [atom str atom]x1 | 1 | 1 | tagged "gun_fired" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/(define "reload_time")/if/delay` | block | [expr str]x1 [num]x1 [expr]x1 | 1 | 3 | 0.75 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/(define "reload_time")/if/delay/ani_play` | block | [str num]x1 | 1 | 1 | "shell_eject" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/(define "reload_time")/if/delay/ani_play` | block | [str num]x1 | 1 | 1 | "shell_eject" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/(define "reload_time")/if/delay/call` | block | [str]x2 | 1 | 2 | "cannon_reloaded" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/(define "reload_time")/if/delay/play_sound` | block | [str]x1 | 1 | 1 | "breech_open" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/(define "reload_time")/if/delay/tags` | block | [atom str]x1 | 1 | 1 | remove "gun_fired" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/(define "reload_time")/if/delay/talk` | block | [str]x1 | 1 | 1 | "reload" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/(define "reload_time")/if/delay/talk` | block | [str]x1 | 1 | 1 | "reload" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/(define "shell_eject_delay_auto")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "shell_eject_delay_auto")/delay_ex` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/on/(define "shell_eject_delay_auto")/delay_ex/spawn` | block | [str str atom atom num]x1 | 1 | 1 | "shell_cannon_auto" "fx_invers" x scale 0.014 | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/"*"/on/(define "shell_eject_delay_auto")/delay_ex/spawn/impulse` | block | [atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | forward 2.5 0.25 up 0.4 0.2 fx 0.7 0.2 cx -1 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "shell_eject_delay_auto")/delay_ex/spawn/impulse` | block | [atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | forward 2.5 0.25 up 0.4 0.2 fx 0.7 0.2 cx -1 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "shell_eject_delay")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/on/(define "shell_eject_delay")/delay_ex/ani_play` | block | [str num]x3 | 2 | 3 | "shell_eject" 1.0 ¦ "shell_eject" 1 ¦ "shell_hatch" 1 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/(define "shell_eject_delay")/delay_ex/ani_play` | block | [str num]x3 | 2 | 3 | "shell_eject" 1.0 ¦ "shell_eject" 1 ¦ "shell_hatch" 1 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex` | block | [param]x2 | 2 | 2 | %1 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/add_view` | block | [str str str]x2 | 2 | 2 | "smoke_breach" "smoke_shell" "fx_invers" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/add_view` | block | [str str str]x2 | 2 | 2 | "smoke_breach" "smoke_shell" "fx_invers" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/delay` | block | [num num]x2 | 2 | 2 | 2.5 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/delay/view` | block | [atom str]x2 | 2 | 2 | stop "smoke_shell" ¦ pause "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn` | block | [str str atom atom num]x2 | 2 | 2 | "shell_cannon" "fx_invers" x scale 0.014 | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn/add_view` | block | [str str str]x2 | 2 | 2 | "smoke_empty_shell" "smoke_shell" "fx_shellsmoke" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn/add_view` | block | [str str str]x2 | 2 | 2 | "smoke_empty_shell" "smoke_shell" "fx_shellsmoke" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn/delay_effect` | block | [num num str]x2 | 2 | 2 | 3 1 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn/impulse` | block | [atom num num atom num num atom num num atom]x2 | 2 | 2 | forward 4 0.5 rnd_dir 0.1 0.1 cz 0.2 0.1 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn/impulse` | block | [atom num num atom num num atom num num atom]x2 | 2 | 2 | forward 4 0.5 rnd_dir 0.1 0.1 cz 0.2 0.1 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/spawn/view` | block | [atom str]x2 | 2 | 2 | start "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/delay_ex/view` | block | [atom str]x2 | 2 | 2 | start "smoke_shell" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
-| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay/ani_play` | block | [str num]x1 | 1 | 1 | "shell_hatch" -1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/(define "shell_eject_delay")/delay_ex/delay/ani_play` | block | [str num]x1 | 1 | 1 | "shell_hatch" -1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/(define "shell_eject_delay")/delay_ex/play_sound` | block | [str]x2 | 2 | 2 | "breech_open" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/(define "spawn_volume")` | define | []x9 | 2 | 9 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "spawn_volume")/spawn` | block | [str atom param param num]x9 | 2 | 9 | "smoke_volume_%0" offset %1 %2 0 | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
@@ -2535,9 +2535,9 @@
 | `/"*"/on/(define "tear_wheel")/if` | block | [atom num]x1 | 1 | 1 | rand 0.2 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/(define "tear_wheel")/if/components` | block | [str atom]x1 | 1 | 1 | "%0" destroy | 미확인(자동) |  |  |  |
 | `/"*"/on/(define "tear_wheel")/if/tear` | block | [str atom str atom str]x1 | 1 | 1 | "piece_medium_steel" bone "%0" id "wheel" | 미확인(자동) |  |  |  |
-| `/"*"/on/(define "tear_wheel")/if/tear/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/(define "tear_wheel")/if/tear/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/(define "tear_wheel")/if/tear/delay_effect` | block | [num num str]x1 | 1 | 1 | 10 5 "pause" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/on/(define "tear_wheel")/if/tear/impulse` | block | [atom num num atom num num]x1 | 1 | 1 | up 6 4 dir 7 3 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/(define "tear_wheel")/if/tear/impulse` | block | [atom num num atom num num]x1 | 1 | 1 | up 6 4 dir 7 3 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/(define "tear_wheel")/if/tear/view` | block | [atom str]x1 | 1 | 1 | start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/(define "tear_wheel")/if/tear/volumes` | block | [atom atom atom atom]x1 | 1 | 1 | disable bullet contact blast | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/(define "terrain_fx2")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -2548,27 +2548,27 @@
 | `/"*"/on/(mod)` | mod | [str]x8 [atom str]x8 | 4 | 16 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
 | `/"*"/on/##delay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | save for when human has animation too |
 | `/"*"/on/##delay/if` | block | [atom]x1 | 1 | 1 | operatable | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/on/##delay/if/ani_play` | block | [str num atom]x1 | 1 | 1 | "stop" -1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
-| `/"*"/on/##if` | block | [atom str]x1 [atom str atom atom str]x1 [atom num atom]x1 [atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str]x1 | 4 | 4 | volume "body" ¦ effector "cannon" else effector "vehicle" ¦ water_level 0.3 else ¦ name "00" else name "01" else name "02" else name "03" else name "04" else name "05" else name "06" else name "07" else name "08" else name "09" else name "10" else name "11" else name "12" else name "13" else name "14" else name "15" else name "16" else name "17" else name "18" else name "19" else name "20" else name "21" else name "22" else name "23" else name "24" else name "25" else name "26" else name "27" else name "28" else name "29" else name "30" else name "31" else name "32" else name "33" else name "34" else name "35" else name "36" else name "37" else name "38" else name "39" else name "40" else name "41" else name "42" else name "43" else name "44" else name "45" else name "46" else name "47" | 미확인(자동) |  |  | disabled. caused parts of buildings that were broken to not fall ¦ can't remember why specifics were added |
+| `/"*"/on/##delay/if/ani_play` | block | [str num atom]x1 | 1 | 1 | "stop" -1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
+| `/"*"/on/##if` | block | [atom str]x1 [atom str atom atom str]x1 [atom num atom]x1 [atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str]x1 | 4 | 4 | volume "body" ¦ effector "cannon" else effector "vehicle" ¦ water_level 0.3 else ¦ name "00" else name "01" else name "02" else name "03" else name "04" else name "05" else name "06" else name "07" else name "08" else name "09" else name "10" else name "11" else name "12" else name "13" else name "14" else name "15" else name "16" else name "17" else name "18" else name "19" else name "20" else name "21" else name "22" else name "23" else name "24" else name "25" else name "26" else name "27" else name "28" else name "29" else name "30" else name "31" else name "32" else name "33" else name "34" else name "35" else name "36" else name "37" else name "38" else name "39" else name "40" else name "41" else name "42" else name "43" else name "44" else name "45" else name "46" else name "47" | 미확인(자동) |  |  | can't remember why specifics were added ¦ disabled. caused parts of buildings that were broken to not fall |
 | `/"*"/on/##if/("bm13_fire")` | macro | []x48 | 1 | 48 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/##if/able` | block | [str num]x2 | 1 | 2 | "sinking" 1 ¦ "sinking" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/"*"/on/##if/able` | block | [str num]x2 | 1 | 2 | "sinking" 1 ¦ "sinking" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/"*"/on/##if/call` | block | [str]x3 | 2 | 3 | "stage2" ¦ "sunk" ¦ "water_stop_check" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/##if/delete` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/able` | block | [atom num]x23 [str num]x5 | 4 | 28 | 예: "exploded" 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/"*"/on/add_view` | block | [str str str]x822 [str str str atom]x37 [str str str atom atom]x8 | 21 | 867 | 예: "exhaust_dark_big" "engine1_exhaust" "FXsmoke1" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/on/ani_play` | block | [str num atom]x178 [str]x53 [str atom]x41 [str num]x18 [str atom atom]x2 | 22 | 293 | 예: "wheels" -0.2 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/able` | block | [atom num]x23 [str num]x5 | 4 | 28 | 예: "exploded" 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/"*"/on/add_view` | block | [str str str]x822 [str str str atom]x37 [str str str atom atom]x8 | 21 | 867 | 예: "exhaust_dark_big" "engine1_exhaust" "FXsmoke1" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/on/ani_play` | block | [str num atom]x178 [str]x53 [str atom]x41 [str num]x18 [str atom atom]x2 | 22 | 293 | 예: "wheels" -0.2 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/ani_stop` | block | [str]x43 | 10 | 43 | 예: "engine_start" | 미확인(자동) |  |  |  |
 | `/"*"/on/ani_wind` | block | [str atom]x61 | 10 | 61 | 예: "wheels" end | 미확인(자동) |  |  | retracts wheels |
 | `/"*"/on/animate_place` | block | [str str]x1 | 1 | 1 | "attach" "paratruper_flight" | 미확인(자동) |  |  |  |
 | `/"*"/on/area` | block | [atom]x14 | 9 | 14 | disable ¦ enable | 미확인(자동) |  |  |  |
 | `/"*"/on/auto_operatable` | block | [num]x2 | 1 | 2 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/blastwave` | block | [atom num atom num atom num]x32 [atom num atom num atom num atom num num num]x14 [atom num atom num atom num atom str]x4 | 8 | 50 | 예: c4 3 r0 5 r1 15 | 미확인(자동) |  |  | needs blast because ammo is pierce |
-| `/"*"/on/bone` | block | [atom str]x35 | 4 | 35 | 예: hide "propeller1_work" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/bone` | block | [atom str]x35 | 4 | 35 | 예: hide "propeller1_work" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/break_window_in_hole` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/bullet_detonate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/burn` | block | [atom str atom str atom num atom atom]x10 [atom]x5 [atom str atom str atom num atom]x2 [atom str atom str atom num]x1 | 8 | 18 | stop ¦ volume "body" fx "tree_obliterate_bole" time 0.1 fake even_law ¦ volume "bole" fx "tree_obliterate_bole" time 0.1 fake even_law ¦ volume "fire0" fx "smoke_dead_hay" time 15 even_law ¦ volume "fire1" fx "smoke_dead_hay" time 10 even_law ¦ volume "fx1" fx "drops_water_mill" time 1000000 fake even_law ¦ volume "fx2" fx "drops_water_mill" time 1000000 fake even_law ¦ volume "fx3" fx "drops_water_mill" time 1000000 fake even_law ¦ volume "fx4" fx "drops_water_mill" time 1000000 fake even_law ¦ volume "body" fx "fire_dead" time 20 | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/call` | block | [str]x388 | 31 | 388 | 예: "init_gun" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/call_synced` | block | [str]x3 | 3 | 3 | "set_skeleton_local" ¦ "light_tear_turret" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/call_synced` | block | [str]x3 | 3 | 3 | "set_skeleton_local" ¦ "light_tear_turret" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/chassis_work` | block | [num]x7 | 4 | 7 | 0 ~ 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/clear_inventory` | block | []x6 | 3 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/component` | block | [atom]x9 | 5 | 9 | break ¦ destroy | 미확인(자동) |  |  |  |
@@ -2579,10 +2579,10 @@
 | `/"*"/on/delay` | block | [num]x384 [num str]x156 [num num]x32 [num num str]x3 | 33 | 575 | 0 ~ 300 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/delay_effect` | block | [num num str]x2 [num str]x1 | 1 | 3 | 4 1.5 "safe-idle" ¦ 1 "safe-idle" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/delay_ex` | block | [num]x8 [num atom]x1 | 6 | 9 | 0 ~ 1 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/on/delay_ex/ani_play` | block | [str]x2 | 2 | 2 | "death" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
-| `/"*"/on/delay_ex/bone` | block | [atom]x1 | 1 | 1 | cut | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/delay_ex/ani_play` | block | [str]x2 | 2 | 2 | "death" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
+| `/"*"/on/delay_ex/bone` | block | [atom]x1 | 1 | 1 | cut | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/delay_ex/call` | block | [str]x4 | 2 | 4 | "cut_parts" ¦ "check_water_level" ¦ "impulse" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/delay_ex/call_synced` | block | [str]x4 | 4 | 4 | "change_model_synced" ¦ "set_skeleton_local" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/delay_ex/call_synced` | block | [str]x4 | 4 | 4 | "change_model_synced" ¦ "set_skeleton_local" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/delay_ex/mark_for_persistence` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Conquest map persistence |
 | `/"*"/on/delay_ex/set` | block | [str num]x1 | 1 | 1 | "no_burn_volumes" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/delay_ex/set_skeleton` | block | [str atom]x2 | 2 | 2 | "_x" sync ¦ "_xx" sync | 미확인(자동) |  |  |  |
@@ -2598,24 +2598,24 @@
 | `/"*"/on/delay/("stop_trace_engine")` | macro | [call:number]x2 | 1 | 2 | number ( 1 ) ¦ number ( 2 ) | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/(define "cut_piece")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/(define "cut_piece")/tear` | block | [str atom str]x1 | 1 | 1 | "piece_large_steel" bone "piece%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/delay/(define "cut_piece")/tear/impulse` | block | [atom num atom]x1 | 1 | 1 | up -5 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/delay/(define "cut_piece")/tear/impulse` | block | [atom num atom]x1 | 1 | 1 | up -5 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/delay/(define "cut_piece")/tear/volumes` | block | [atom atom]x1 | 1 | 1 | enable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/delay/(define "cut_wall")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/(define "cut_wall")/tear` | block | [str atom str]x1 | 1 | 1 | "temple_wall_concrete" bone "wall%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/delay/able` | block | [str num]x1 | 1 | 1 | "sinking" 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/"*"/on/delay/add_view` | block | [str str str]x3 [str str str atom atom]x1 | 3 | 4 | "bait" "bait" "bait" ¦ "fire_flame_thrower_fly4" "fire2" "root" ¦ "fire_flame_thrower_fly4_1" "fire3" "root" ¦ "mined_view_own" "mined_own" "mined_view" not_manual not_scenario | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/on/delay/ani_play` | block | [str]x14 [str num]x3 [str num atom]x2 [str atom]x1 [str num atom atom]x1 | 10 | 21 | 예: "bomb_open" -1 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/delay/able` | block | [str num]x1 | 1 | 1 | "sinking" 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/"*"/on/delay/add_view` | block | [str str str]x3 [str str str atom atom]x1 | 3 | 4 | "bait" "bait" "bait" ¦ "fire_flame_thrower_fly4" "fire2" "root" ¦ "fire_flame_thrower_fly4_1" "fire3" "root" ¦ "mined_view_own" "mined_own" "mined_view" not_manual not_scenario | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/on/delay/ani_play` | block | [str]x14 [str num]x3 [str num atom]x2 [str atom]x1 [str num atom atom]x1 | 10 | 21 | 예: "bomb_open" -1 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/delay/ani_stop` | block | [str]x13 | 4 | 13 | "engine_work" ¦ "engine_start" ¦ "engine_stop" ¦ "engine2_start" ¦ "engine2_work" ¦ "engine2_stop" ¦ "flight" ¦ "aim_v" ¦ "aim_h" | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/area` | block | [atom str]x4 [atom]x1 | 2 | 5 | rebuild ¦ disable "left" ¦ disable "right" ¦ enable "left" ¦ enable "right" | 미확인(자동) |  |  |  |
-| `/"*"/on/delay/bone` | block | [atom str]x4 | 3 | 4 | hide "body" ¦ cut "sweep" ¦ hide "propeller_work" ¦ hide "engine_work" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/delay/bone` | block | [atom str]x4 | 3 | 4 | hide "body" ¦ cut "sweep" ¦ hide "propeller_work" ¦ hide "engine_work" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/delay/burn` | block | [atom str atom str atom num atom atom]x2 | 1 | 2 | volume "bodyback1" fx "fire_fueltank" time 120 fake even_law ¦ volume "bodyback2" fx "fire_fueltank" time 120 fake even_law | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/delay/call` | block | [str]x48 | 19 | 48 | 예: "emit_crew" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/delay/call_synced` | block | [str]x4 | 2 | 4 | "ammo_break" ¦ "ammo_explosion_small" ¦ "random_animation" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/delay/call_synced` | block | [str]x4 | 2 | 4 | "ammo_break" ¦ "ammo_explosion_small" ¦ "random_animation" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/delay/chassis_work` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/delay/components` | block | [str atom]x3 | 1 | 3 | "body_center" break ¦ "body_front" break ¦ "body_rear" break | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/crew_emit` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/delay` | block | [num]x16 [num num]x3 | 8 | 19 | 0 ~ 120 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/delay/delay/ani_play` | block | [str atom atom]x1 | 1 | 1 | "flight" resume callback | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/delay/delay/ani_play` | block | [str atom atom]x1 | 1 | 1 | "flight" resume callback | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/delay/delay/call` | block | [str]x2 | 1 | 2 | "case_eject" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/delay/delay/components` | block | [str atom]x1 | 1 | 1 | "engine" destroy | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/delay/delay` | block | [num]x1 | 1 | 1 | 1.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -2630,7 +2630,7 @@
 | `/"*"/on/delay/explosive` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/fire` | block | [atom num atom num atom num atom]x2 | 1 | 2 | radius 0.5 time 0.5 heating 2 follow ¦ radius 0.3 time 12 heating 0.1 follow | 미확인(자동) |  |  | adds heating to unit (potential to set other items on fire due to proximity) |
 | `/"*"/on/delay/for_each_link` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/delay/for_each_link/able` | block | [str num]x1 | 1 | 1 | "sinking" 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/"*"/on/delay/for_each_link/able` | block | [str num]x1 | 1 | 1 | "sinking" 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/"*"/on/delay/gravity` | block | [num]x2 | 1 | 2 | 0.02 ~ 0.1 | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/hide` | block | [num]x18 | 5 | 18 | 1 ~ 10 | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/if` | block | [atom str]x18 [atom atom str]x11 [atom str atom atom str atom]x10 [atom]x6 [str]x4 | 14 | 62 | 예: not destroyed "engine1" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -2644,18 +2644,18 @@
 | `/"*"/on/delay/if/(define "rand_start")/if/delay/delay/view` | block | [atom param]x3 | 1 | 3 | pause %0 | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/delay/if/(define "rand_start")/if/delay/view` | block | [atom param]x4 | 1 | 4 | start %0 ¦ pause %0 | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/delay/if/(define "rand_start")/if/view` | block | [atom param]x1 | 1 | 1 | start %0 | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
-| `/"*"/on/delay/if/able` | block | [str num]x1 | 1 | 1 | "personage" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/"*"/on/delay/if/add_view` | block | [str str str]x8 | 1 | 8 | "exhaust_dark_big" "exhaust" "FXsmoke1" ¦ "exhaust_dark_big" "exhaust" "FXsmoke2" ¦ "exhaust_dark_big" "exhaust" "FXsmoke3" ¦ "exhaust_dark_big" "exhaust" "FXsmoke4" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke1" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke2" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke3" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke4" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/on/delay/if/ani_play` | block | [str]x2 [str atom]x1 [str num atom]x1 | 3 | 4 | "engine_stop" ¦ "engine2_stop" ¦ "crush" callback ¦ "fly" 0.7 loop | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/delay/if/able` | block | [str num]x1 | 1 | 1 | "personage" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/"*"/on/delay/if/add_view` | block | [str str str]x8 | 1 | 8 | "exhaust_dark_big" "exhaust" "FXsmoke1" ¦ "exhaust_dark_big" "exhaust" "FXsmoke2" ¦ "exhaust_dark_big" "exhaust" "FXsmoke3" ¦ "exhaust_dark_big" "exhaust" "FXsmoke4" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke1" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke2" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke3" ¦ "exhaust_dark_small2" "exhaust2" "FXsmoke4" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/on/delay/if/ani_play` | block | [str]x2 [str atom]x1 [str num atom]x1 | 3 | 4 | "engine_stop" ¦ "engine2_stop" ¦ "crush" callback ¦ "fly" 0.7 loop | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/delay/if/burn` | block | [atom str atom str atom num atom]x3 | 1 | 3 | volume "fuel1" fx "smoke_fire_fuel" time 120 fake ¦ volume "fuel2" fx "smoke_fire_fuel" time 120 fake ¦ volume "fuel" fx "smoke_fire_fuel" time 120 fake | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/delay/if/call` | block | [str]x2 | 2 | 2 | "warming" ¦ "flail_stop" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/delay/if/call_synced` | block | [str]x6 | 2 | 6 | "ammo_break" ¦ "ammo_explosion_small" ¦ "ain_play_eat" ¦ "ain_play_passive" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/delay/if/call_synced` | block | [str]x6 | 2 | 6 | "ammo_break" ¦ "ammo_explosion_small" ¦ "ain_play_eat" ¦ "ain_play_passive" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/delay/if/chassis_work` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/delay/if/components` | block | [str atom]x3 | 2 | 3 | "ammo1" break ¦ "ammo2" break ¦ "engine" break | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/if/crew_emit` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/if/delay` | block | [num]x2 [num num str]x1 | 3 | 3 | 1 ~ 4 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/delay/if/delay/bone` | block | [atom str]x1 | 1 | 1 | hide "body" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/"*"/on/delay/if/delay/call_synced` | block | [str]x1 | 1 | 1 | "idle_try" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/delay/if/delay/bone` | block | [atom str]x1 | 1 | 1 | hide "body" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/"*"/on/delay/if/delay/call_synced` | block | [str]x1 | 1 | 1 | "idle_try" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/delay/if/delay/delete` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/if/delay/play_sound` | block | [str]x1 | 1 | 1 | "incoming" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/delay/if/delete` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -2687,7 +2687,7 @@
 | `/"*"/on/delay/if/tex_mod` | block | [str]x12 | 1 | 12 | "win" | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/if/throw_off` | block | [atom num num atom num num atom atom]x1 [atom num num atom num num]x1 | 1 | 2 | up 0.5 0.2 forward 1 0.5 die force ¦ up 0.5 0.2 forward 1 0.5 | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/if/volumes` | block | [atom atom]x1 | 1 | 1 | disable blast | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
-| `/"*"/on/delay/impulse` | block | [atom num]x105 | 1 | 105 | forward -0.025 ¦ forward 0.025 ¦ forward 0.05 ¦ forward -0.1 ¦ forward 0.012 ¦ forward -0.05 ¦ forward -0.012 ¦ up 0.01 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/delay/impulse` | block | [atom num]x105 | 1 | 105 | forward -0.025 ¦ forward 0.025 ¦ forward 0.05 ¦ forward -0.1 ¦ forward 0.012 ¦ forward -0.05 ¦ forward -0.012 ¦ up 0.01 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/delay/inactive` | block | [num]x9 | 1 | 9 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/kill_delay` | block | [str]x4 | 3 | 4 | "engine_startup" ¦ "kick_process" ¦ "bolt_action" | 미확인(자동) |  |  | stops engine startup sequence ¦ resets shock time |
 | `/"*"/on/delay/land` | block | [atom]x2 | 1 | 2 | on | 미확인(자동) |  |  |  |
@@ -2702,9 +2702,9 @@
 | `/"*"/on/delay/stop_sound` | block | [str]x22 | 8 | 22 | 예: "engine_accelerate" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/"*"/on/delay/stuff_detonate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/tags` | block | [atom str]x12 | 10 | 12 | remove "fired" ¦ remove "update_move" ¦ add "medic_rally" ¦ add "gong" ¦ add "dummygun" ¦ remove "base" ¦ remove "playing_bagpipes" ¦ remove "blood_delay_active" ¦ remove "firing" ¦ remove "flail_stopped_by_speed" ¦ remove "_abandoned" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/delay/talk` | block | [str]x5 | 2 | 5 | "reloaded" ¦ "reload" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/delay/talk` | block | [str]x5 | 2 | 5 | "reloaded" ¦ "reload" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/delay/tear` | block | [str atom str atom]x1 | 1 | 1 | "piece_tiny_steel" bone "flare" copy | 미확인(자동) |  |  |  |
-| `/"*"/on/delay/tear/impulse` | block | [atom num]x1 | 1 | 1 | up -0.01 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/delay/tear/impulse` | block | [atom num]x1 | 1 | 1 | up -0.01 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/delay/update_visibility_patch` | block | []x10 | 4 | 10 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/delay/view` | block | [atom str]x156 | 19 | 156 | 예: pause "flashbarrel_rear" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/delay/volumes` | block | [str atom atom]x7 [atom atom atom atom atom]x7 [atom atom]x5 [str atom atom atom]x4 [atom atom atom atom]x3 | 9 | 29 | 예: "body" enable obstacle | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
@@ -2766,26 +2766,26 @@
 | `/"*"/on/if/("try_get_off")` | macro | [atom num]x5 | 1 | 5 | args 0.5 ¦ args 2.0 ¦ args 3.0 ¦ args 4.0 ¦ args 5.0 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/(define "cut_piece")` | define | []x20 | 1 | 20 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/(define "cut_piece")/tear` | block | [str atom str]x20 | 1 | 20 | "piece_medium_wood" bone "piece%0" ¦ "piece_large_steel" bone "piece%0" ¦ "piece_medium_steel_construction" bone "piece%0" ¦ "piece_small_steel_construction" bone "piece%0" ¦ "building_part_wood" bone "piece%0" ¦ "piece_small_wood" bone "piece%0" ¦ "piece_big_concrete" bone "piece%0" ¦ "piece_medium_concrete" bone "piece%0" ¦ "piece_small_concrete" bone "piece%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/(define "cut_piece")/tear/impulse` | block | [atom num num atom num num atom]x13 [atom num num atom num num atom num atom]x7 | 1 | 20 | up 0.5 0.25 dir 2.5 0.3 no_position ¦ up 1 0.7 dir 2.5 0.3 no_position ¦ up 4 2 dir 3 1.3 no_position ¦ up 0.5 0.25 dir -4.5 0.3 no_position ¦ up 5 2 dir 6 2.5 rnd_dir 5 no_position ¦ up 3 1 dir 6 2 rnd_dir 2 no_position ¦ up 5 1 dir 2 1 rnd_dir 5 no_position ¦ up 2.5 1.7 dir 4 1.3 no_position ¦ up 2.5 1.7 dir 3.5 1.3 no_position ¦ up 5 2 dir 5 2.5 rnd_dir 5 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/(define "cut_piece")/tear/impulse` | block | [atom num num atom num num atom]x13 [atom num num atom num num atom num atom]x7 | 1 | 20 | up 0.5 0.25 dir 2.5 0.3 no_position ¦ up 1 0.7 dir 2.5 0.3 no_position ¦ up 4 2 dir 3 1.3 no_position ¦ up 0.5 0.25 dir -4.5 0.3 no_position ¦ up 5 2 dir 6 2.5 rnd_dir 5 no_position ¦ up 3 1 dir 6 2 rnd_dir 2 no_position ¦ up 5 1 dir 2 1 rnd_dir 5 no_position ¦ up 2.5 1.7 dir 4 1.3 no_position ¦ up 2.5 1.7 dir 3.5 1.3 no_position ¦ up 5 2 dir 5 2.5 rnd_dir 5 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/(define "cut_piece")/tear/spawn` | block | [str str]x4 | 1 | 4 | "spheredust_norm" "piece%0" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/if/(define "cut_piece")/tear/volumes` | block | [atom atom]x12 [atom atom atom]x6 [atom atom atom atom atom]x2 | 1 | 20 | enable contact ¦ enable contact float ¦ enable contact float bullet blast | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/if/(define "cut_stone")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/(define "cut_stone")/tear` | block | [str atom str]x1 | 1 | 1 | "piece_big_stone" bone "part%0" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/(define "cut_stone")/tear/impulse` | block | [atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | up 0.2 0.1 cx 3 6 cy 3 6 fx 10 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/(define "cut_stone")/tear/impulse` | block | [atom num num atom num num atom num num atom num atom]x1 | 1 | 1 | up 0.2 0.1 cx 3 6 cy 3 6 fx 10 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/(define "cut_stone")/tear/volumes` | block | [atom atom]x1 | 1 | 1 | enable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/if/(define "cut_subpiece")` | define | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/(define "cut_subpiece")/tear` | block | [str atom str]x2 [str atom str atom str]x2 | 1 | 4 | "piece_medium_steel" bone "sub_piece%0" ¦ "piece_large_concrete" bone "sub_piece%0" id "cornered_parts_construction_piece" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/(define "cut_subpiece")/tear/impulse` | block | [atom num num atom num num atom]x4 | 1 | 4 | up 2.5 1.7 dir 3.5 1.3 no_position ¦ up 1 0.7 dir 2.5 0.3 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/(define "cut_subpiece")/tear/impulse` | block | [atom num num atom num num atom]x4 | 1 | 4 | up 2.5 1.7 dir 3.5 1.3 no_position ¦ up 1 0.7 dir 2.5 0.3 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/(define "cut_subpiece")/tear/spawn` | block | [str str]x4 | 1 | 4 | "spheredust_norm" "sub_piece%0" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/if/(define "cut_subpiece")/tear/volumes` | block | [atom atom]x4 | 1 | 4 | enable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/if/(define "reload_time")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/(define "reload_time")/if` | block | [atom str atom]x1 | 1 | 1 | tagged "gun_fired" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/(define "reload_time")/if/delay` | block | [expr]x2 [num]x1 | 1 | 3 | 0.75 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/"*"/on/if/(define "reload_time")/if/delay/ani_play` | block | [str num]x1 | 1 | 1 | "shell_eject" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/if/(define "reload_time")/if/delay/ani_play` | block | [str num]x1 | 1 | 1 | "shell_eject" 1.0 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/if/(define "reload_time")/if/delay/call` | block | [str]x2 | 1 | 2 | "tank_reloaded" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/(define "reload_time")/if/delay/play_sound` | block | [str]x1 | 1 | 1 | "breech_open" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/if/(define "reload_time")/if/delay/tags` | block | [atom str]x1 | 1 | 1 | remove "gun_fired" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/(define "reload_time")/if/delay/talk` | block | [str]x1 | 1 | 1 | "reload" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/if/(define "reload_time")/if/delay/talk` | block | [str]x1 | 1 | 1 | "reload" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/if/(define "try_get_off")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/(define "try_get_off")/delay` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/(define "try_get_off")/delay/if` | block | [atom atom str]x1 | 1 | 1 | not tagged "can_die" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -2794,22 +2794,22 @@
 | `/"*"/on/if/(define "turret_break_effects")/call` | block | [str]x2 | 1 | 2 | "update_%turret" ¦ "turret_break_effects" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/(define "turret_break_effects")/spawn` | block | [str str]x2 | 1 | 2 | "tank_die_particle" "%turret" ¦ "circledust_norm" "%turret" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/if/(mod)` | mod | [str]x4 [atom str]x4 | 1 | 8 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/##if` | block | [atom str]x1 | 1 | 1 | stuff "fg" | 미확인(자동) |  |  | disabled. caused parts of buildings that were broken to not fall ¦ can't remember why specifics were added |
+| `/"*"/on/if/##if` | block | [atom str]x1 | 1 | 1 | stuff "fg" | 미확인(자동) |  |  | can't remember why specifics were added ¦ disabled. caused parts of buildings that were broken to not fall |
 | `/"*"/on/if/##if/if` | block | [atom str]x1 | 1 | 1 | stuff "big" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/##if/if/call` | block | [str]x1 | 1 | 1 | "stage2" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/able` | block | [str num]x23 [atom num]x17 | 10 | 40 | "sinking" 1 ¦ "sinking" 0 ¦ "select" 1 ¦ select 0 ¦ repaired 0 ¦ minimap 0 ¦ "burning" 1 ¦ select 1 ¦ "burning" 0 ¦ "exploded" 1 ¦ "select" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/"*"/on/if/add_view` | block | [str str str]x38 [str str str atom atom]x1 | 4 | 39 | 예: "dustrun_min" "on_grass" "FXtraceR1" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/on/if/ani_play` | block | [str atom]x19 [str num]x17 [str]x11 [str num atom]x6 [str atom atom]x5 | 17 | 58 | 예: "engine_work" loop | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/if/able` | block | [str num]x23 [atom num]x17 | 10 | 40 | "sinking" 1 ¦ "sinking" 0 ¦ "select" 1 ¦ select 0 ¦ repaired 0 ¦ minimap 0 ¦ "burning" 1 ¦ select 1 ¦ "burning" 0 ¦ "exploded" 1 ¦ "select" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/"*"/on/if/add_view` | block | [str str str]x38 [str str str atom atom]x1 | 4 | 39 | 예: "dustrun_min" "on_grass" "FXtraceR1" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/on/if/ani_play` | block | [str atom]x19 [str num]x17 [str]x11 [str num atom]x6 [str atom atom]x5 | 17 | 58 | 예: "engine_work" loop | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/if/ani_stop` | block | [str]x15 | 6 | 15 | "move" ¦ "flail_work" ¦ "flail_start" ¦ "engine_start" ¦ "engine_work" ¦ "engine2_start" ¦ "engine2_work" ¦ "passive" ¦ "eat" ¦ "drift" ¦ "hook_swing" ¦ "wipers" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/ani_wind` | block | [str atom]x13 | 5 | 13 | 예: "shell_eject" end | 미확인(자동) |  |  | retracts wheels |
 | `/"*"/on/if/area` | block | [atom str]x8 [atom]x3 | 3 | 11 | enable ¦ disable "close" ¦ enable "left" ¦ enable "right" ¦ enable "close" ¦ disable "left" ¦ disable "right" ¦ enable "sewer" ¦ disable "sewer" ¦ disable | 미확인(자동) |  |  |  |
 | `/"*"/on/if/auto_operatable` | block | [num]x2 | 1 | 2 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/blastwave` | block | [atom num atom num atom num atom num num num]x6 [atom num atom num atom num]x4 | 3 | 10 | c4 5 r0 2.5 r1 10 offset 0 0 75 ¦ c4 3 r0 4 r1 6 ¦ c4 2 r0 4 r1 6 ¦ c4 3 r0 2.5 r1 10 ¦ c4 4 r0 2.5 r1 10 offset 0 0 60 ¦ c4 2 r0 6 r1 12 offset 0 0 60 ¦ c4 2 r0 10 r1 15 offset 0 0 75 ¦ c4 2 r0 10 r1 20 offset 0 0 75 ¦ c4 20 r0 10 r1 25 | 미확인(자동) |  |  | needs blast because ammo is pierce |
-| `/"*"/on/if/bone` | block | [atom str]x40 | 5 | 40 | 예: hide "rocket00" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/if/bone` | block | [atom str]x40 | 5 | 40 | 예: hide "rocket00" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/if/bullet_detonate` | block | []x15 | 7 | 15 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/burn` | block | [atom str atom str atom num atom]x12 [atom str atom str atom num num]x10 [atom str atom str atom num atom atom]x5 [atom num]x3 [atom str atom num atom]x3 | 9 | 35 | 예: fx "smoke_aero_small" fake | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/if/call` | block | [str]x325 | 30 | 325 | 예: "engine_off" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/call_synced` | block | [str]x22 | 8 | 22 | 예: "crush_destroy_sync" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/call_synced` | block | [str]x22 | 8 | 22 | 예: "crush_destroy_sync" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/chassis_work` | block | [num]x13 | 5 | 13 | 0 ~ 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/clear_inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/component` | block | [atom]x8 | 4 | 8 | destroy ¦ break | 미확인(자동) |  |  |  |
@@ -2821,10 +2821,10 @@
 | `/"*"/on/if/delay_effect` | block | [num str]x2 | 2 | 2 | 0.5 "update_blinking" ¦ 0.5 "burn_scream" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/if/delay_ex` | block | [num]x10 | 7 | 10 | 0 ~ 0.4 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/on/if/delay_ex/("cut_part_delete")` | macro | [atom str]x2 | 1 | 2 | args "wireL_ail" ¦ args "wireR_ail" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/delay_ex/ani_play` | block | [str num]x1 [str]x1 | 2 | 2 | "crush2" 1 ¦ "crush" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
-| `/"*"/on/if/delay_ex/bone` | block | [atom str]x2 | 1 | 2 | hide "x1" ¦ show "x2" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/if/delay_ex/ani_play` | block | [str num]x1 [str]x1 | 2 | 2 | "crush2" 1 ¦ "crush" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
+| `/"*"/on/if/delay_ex/bone` | block | [atom str]x2 | 1 | 2 | hide "x1" ¦ show "x2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/if/delay_ex/call` | block | [str]x5 | 2 | 5 | "update_fx" ¦ "effects" ¦ "disable_volumes" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/delay_ex/call_synced` | block | [str]x3 | 3 | 3 | "change_model_synced" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/delay_ex/call_synced` | block | [str]x3 | 3 | 3 | "change_model_synced" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/delay_ex/delay` | block | [num]x2 | 2 | 2 | 0.1 ~ 0.3 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/delay_ex/delay_ex` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/on/if/delay_ex/delay_ex/call` | block | [str]x1 | 1 | 1 | "cut_pieces" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
@@ -2834,29 +2834,29 @@
 | `/"*"/on/if/delay_ex/set` | block | [str num]x4 | 2 | 4 | "first_stage" 1 ¦ "last_stage" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/if/delay_ex/set_skeleton` | block | [str]x1 | 1 | 1 | "_x" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay_ex/tear` | block | [str atom str]x4 [str atom str atom str]x1 | 2 | 5 | "piece_big_airborne_wing" bone "wingl2" ¦ "piece_big_airborne_wing" bone "wingl1" ¦ "piece_big_airborne_wing" bone "wingr2" ¦ "piece_big_airborne_wing" bone "wingr1" ¦ "piece_large_steel" bone "turret" id "turret" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/delay_ex/tear/add_view` | block | [str str str]x2 | 1 | 2 | "fire_dead_turret_light" "fire" "basis" ¦ "smoke_dead_turret" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/if/delay_ex/tear/add_view` | block | [str str str]x2 | 1 | 2 | "fire_dead_turret_light" "fire" "basis" ¦ "smoke_dead_turret" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/if/delay_ex/tear/delay` | block | [num num]x1 [num]x1 | 1 | 2 | 0.1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/delay_ex/tear/delay_effect` | block | [num num str]x1 | 1 | 1 | 90 15 "pause" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/if/delay_ex/tear/delay/view` | block | [atom str]x2 | 1 | 2 | stop "fire" ¦ start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/delay_ex/tear/delay/volumes` | block | [str atom atom]x1 | 1 | 1 | "gun" disable obstacle | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
-| `/"*"/on/if/delay_ex/tear/impulse` | block | [atom num num atom num atom num num]x4 [atom num num atom num num atom num num atom num num atom num num atom]x1 | 2 | 5 | up 2 1 forward 5 dir 2 1 ¦ up 7 2 cx 2 1 cy 2 1 cz 2 1 rnd_dir 3 1 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/delay_ex/tear/impulse` | block | [atom num num atom num atom num num]x4 [atom num num atom num num atom num num atom num num atom num num atom]x1 | 2 | 5 | up 2 1 forward 5 dir 2 1 ¦ up 7 2 cx 2 1 cy 2 1 cz 2 1 rnd_dir 3 1 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/delay_ex/tear/view` | block | [atom str]x1 | 1 | 1 | start "fire" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/delay_ex/volumes` | block | [str atom atom atom atom atom atom]x1 | 1 | 1 | "body" disable bullet contact blast visible touch | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/if/delay/("friendly_destroy")` | macro | [atom atom]x4 | 1 | 4 | args ammunition ¦ args battle_zones ¦ args evacuation ¦ args frontlines | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/("prop_still")` | macro | [call:number]x2 | 1 | 2 | number ( 1 ) ¦ number ( 2 ) | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/(mod)` | mod | [str]x2 | 1 | 2 | "gametype:cooperative" ¦ "gametype:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/##/*` | block | [atom atom num atom]x1 | 1 | 1 | if rand 0.5 */ | 미확인(자동) |  |  |  |
-| `/"*"/on/if/delay/##/*/call_synced` | block | [str]x1 | 1 | 1 | "cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/delay/##/*/call_synced` | block | [str]x1 | 1 | 1 | "cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/delay/##/*/stop_sound` | block | [str]x1 | 1 | 1 | "flame_1" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/"*"/on/if/delay/##/*/view` | block | [atom str]x1 | 1 | 1 | stop "smoke3" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
-| `/"*"/on/if/delay/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_aero_dead_big" "fire" "body" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/on/if/delay/ani_play` | block | [str]x3 [str num]x2 | 5 | 5 | "shell_eject" 1.0 ¦ "crush1" ¦ "firepose_open" ¦ "reload" 1.0 ¦ "engine_stop" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/if/delay/add_view` | block | [str str str]x1 | 1 | 1 | "smoke_aero_dead_big" "fire" "body" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/on/if/delay/ani_play` | block | [str]x3 [str num]x2 | 5 | 5 | "shell_eject" 1.0 ¦ "crush1" ¦ "firepose_open" ¦ "reload" 1.0 ¦ "engine_stop" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/if/delay/ani_stop` | block | [str]x5 | 3 | 5 | "engine_stop" ¦ "engine2_stop" ¦ "effector" ¦ "engine_start" ¦ "engine_work" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/blastwave` | block | [atom num atom num atom num atom str]x1 | 1 | 1 | c4 8 r0 5 r1 6 bone "fx_exp2" | 미확인(자동) |  |  | needs blast because ammo is pierce |
-| `/"*"/on/if/delay/bone` | block | [atom str]x3 | 2 | 3 | show "x1" ¦ hide "x2" ¦ show "flag" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/"*"/on/if/delay/bone` | block | [atom str]x3 | 2 | 3 | show "x1" ¦ hide "x2" ¦ show "flag" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/"*"/on/if/delay/burn` | block | [atom str atom str atom num atom]x3 [atom str atom str atom num atom atom]x2 [atom]x1 | 3 | 6 | volume "body" fx "smoke_aero_big" time 30 fake ¦ volume "engine1" fx "smoke_aero_big" time 30 fake ¦ volume "engine2" fx "smoke_aero_big" time 30 fake ¦ stop_retry ¦ volume "bodyback1" fx "fire_fueltank" time 30 fake even_law ¦ volume "bodyback2" fx "fire_fueltank" time 30 fake even_law | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/if/delay/call` | block | [str]x19 | 10 | 19 | 예: "next_stage" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/delay/call_synced` | block | [str]x6 | 4 | 6 | "engine2_start_sequence" ¦ "stop_burn_damage" ¦ "idle_animation" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/delay/call_synced` | block | [str]x6 | 4 | 6 | "engine2_start_sequence" ¦ "stop_burn_damage" ¦ "idle_animation" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/delay/chassis_work` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/delay/clear_inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/components` | block | [str atom]x1 | 1 | 1 | "body_rear" destroy | 미확인(자동) |  |  |  |
@@ -2865,7 +2865,7 @@
 | `/"*"/on/if/delay/delay/blastwave` | block | [atom num atom num atom num atom str]x1 | 1 | 1 | c4 8 r0 5 r1 6 bone "fx_exp3" | 미확인(자동) |  |  | needs blast because ammo is pierce |
 | `/"*"/on/if/delay/delay/burn` | block | [atom str atom str atom num num atom]x1 | 1 | 1 | volume "body" fx "smoke_black" time 40 25 fake | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/if/delay/delay/call` | block | [str]x2 | 1 | 2 | "cut_parts" ¦ "explosion" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/delay/delay/components` | block | [str atom]x1 | 1 | 1 | "body" destroy | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/delay/delay` | block | [num num]x1 | 1 | 1 | 0.3 0.1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/delay/delay/delay/blastwave` | block | [atom num atom num atom num atom str]x1 | 1 | 1 | c4 8 r0 5 r1 6 bone "fx_exp4" | 미확인(자동) |  |  | needs blast because ammo is pierce |
@@ -2879,7 +2879,7 @@
 | `/"*"/on/if/delay/gravity` | block | [num]x1 | 1 | 1 | 0.02 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/hide` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/if` | block | [atom str]x4 [atom]x3 [str atom]x1 [atom num]x1 [str]x1 | 6 | 11 | work "engine" ¦ operatable ¦ "stage2" else ¦ altitude 4 ¦ dead ¦ work "gun" ¦ "engine_on" ¦ not work "bodyback" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/on/if/delay/if/ani_play` | block | [str num]x2 | 1 | 2 | "close_back" 1 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/if/delay/if/ani_play` | block | [str num]x2 | 1 | 2 | "close_back" 1 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/if/delay/if/call` | block | [str]x5 | 3 | 5 | "close" ¦ "cut_pieces" ¦ "cut_subpieces" ¦ "fueltank_fire" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/delay/if/if` | block | [atom str]x3 | 2 | 3 | work "body" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/delay/if/if/if` | block | [str]x3 | 2 | 3 | "engine_on" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -2905,7 +2905,7 @@
 | `/"*"/on/if/delay/spawn` | block | [str atom num]x4 [str]x2 [str str]x1 | 3 | 7 | "artillery_barrage_203_2x1" ¦ "artillery_warning_medium" random_position 900 ¦ "vehicle_die" "fx_exp2" ¦ "artillery_warning_heavy" random_position 1100 ¦ "artillery_warning_light" random_position 700 | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/if/delay/stop_sound` | block | [str]x4 | 4 | 4 | "flame" ¦ "smoke_loop" ¦ "flame_1" ¦ "engine_accelerate" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/"*"/on/if/delay/tags` | block | [atom str]x23 | 11 | 23 | 예: add "shotdown" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/delay/talk` | block | [str]x3 | 2 | 3 | "reloaded" ¦ "reload" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/if/delay/talk` | block | [str]x3 | 2 | 3 | "reloaded" ¦ "reload" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/if/delay/tex_mod` | block | [str]x4 [atom]x1 | 1 | 5 | "burned" ¦ reset | 미확인(자동) |  |  |  |
 | `/"*"/on/if/delay/view` | block | [atom str]x33 | 8 | 33 | pause "flashbarrel00" ¦ pause "flashbarrel01" ¦ pause "snow" ¦ stop "fire" ¦ pause "dust" ¦ stop "smoke" ¦ pause "on_row" ¦ start "fire" ¦ start "move_steam_fast" ¦ start "move_steam_slow" ¦ start "warm_smoke" ¦ pause "warm_smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/delay/volumes` | block | [str atom atom atom]x4 [atom atom atom]x3 [atom atom]x3 [str atom atom]x2 | 5 | 12 | disable contact visible ¦ "rocket" enable bullet blast ¦ enable contact visible ¦ enable contact ¦ "bole" enable contact blast ¦ "crown" disable contact ¦ "crown" enable contact ¦ disable contact ¦ enable bullet ¦ "shell" enable bullet blast | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
@@ -2945,19 +2945,19 @@
 | `/"*"/on/if/if/(mod)` | mod | [str]x2 [atom str]x1 | 2 | 3 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/##delay` | block | [num]x1 | 1 | 1 | 0.01 | 미확인(자동) |  |  | save for when human has animation too |
 | `/"*"/on/if/if/##delay/call` | block | [str]x1 | 1 | 1 | "spawn_shellhole" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/##if` | block | [atom str]x1 | 1 | 1 | not "blast_disable" | 미확인(자동) |  |  | disabled. caused parts of buildings that were broken to not fall ¦ can't remember why specifics were added |
+| `/"*"/on/if/if/##if` | block | [atom str]x1 | 1 | 1 | not "blast_disable" | 미확인(자동) |  |  | can't remember why specifics were added ¦ disabled. caused parts of buildings that were broken to not fall |
 | `/"*"/on/if/if/##if/call` | block | [str]x1 | 1 | 1 | "change_model" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/if/##if/if` | block | [atom num atom]x1 | 1 | 1 | min_energy 350 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/if/##if/if/set` | block | [str num]x2 | 1 | 2 | "blast_one" 0 ¦ "blast_one" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
-| `/"*"/on/if/if/able` | block | [atom num]x10 [str num]x9 | 7 | 19 | select 0 ¦ "personage" 0 ¦ repaired 0 ¦ "sinking" 1 ¦ "sinking" 0 ¦ minimap 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/"*"/on/if/if/add_view` | block | [str str str]x7 | 2 | 7 | "smoke_dead_norm" "burn_fire" "basis" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke1" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke2" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke3" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke4" ¦ "smoke_fire_engine" "burn_fire" "FXfire1" ¦ "smoke_engine" "burn_fire_smoke" "FXfire1" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
-| `/"*"/on/if/if/ani_play` | block | [str atom]x26 [str]x8 [str num atom]x6 [str atom atom]x2 [str num]x1 | 11 | 44 | 예: "wheels" 0.2 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/if/if/able` | block | [atom num]x10 [str num]x9 | 7 | 19 | select 0 ¦ "personage" 0 ¦ repaired 0 ¦ "sinking" 1 ¦ "sinking" 0 ¦ minimap 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/"*"/on/if/if/add_view` | block | [str str str]x7 | 2 | 7 | "smoke_dead_norm" "burn_fire" "basis" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke1" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke2" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke3" ¦ "exhaust_dark_big_startup" "exhaust_start" "FXsmoke4" ¦ "smoke_fire_engine" "burn_fire" "FXfire1" ¦ "smoke_engine" "burn_fire_smoke" "FXfire1" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
+| `/"*"/on/if/if/ani_play` | block | [str atom]x26 [str]x8 [str num atom]x6 [str atom atom]x2 [str num]x1 | 11 | 44 | 예: "wheels" 0.2 | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/if/if/ani_stop` | block | [str]x4 | 3 | 4 | "stir" ¦ "flail_stop" ¦ "wipers" ¦ "move" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/ani_wind` | block | [str atom]x2 | 1 | 2 | "open" end ¦ "open1" end | 미확인(자동) |  |  | retracts wheels |
 | `/"*"/on/if/if/bullet_detonate` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/burn` | block | [atom str atom]x10 [atom atom str atom num num atom]x5 [atom num]x2 | 8 | 17 | fx "smoke_aero_small" fake ¦ volume fx "smoke_dead_tree1" time 15 2 even_law ¦ fx "drops_water_small_long" fake ¦ volume fx "smoke_dead_tree1" time 20 2 even_law ¦ time 7 ¦ time 12 | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/if/if/call` | block | [str]x221 | 23 | 221 | 예: "stop_trace" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/call_synced` | block | [str]x3 | 3 | 3 | "start_burn_damage" ¦ "stuff_detonated" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/call_synced` | block | [str]x3 | 3 | 3 | "start_burn_damage" ¦ "stuff_detonated" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/chassis_work` | block | [num]x26 | 4 | 26 | 0 ~ 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/if/component` | block | [atom]x2 | 1 | 2 | destroy | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/components` | block | [str atom]x11 | 5 | 11 | "body" break ¦ "propeller1" destroy ¦ "propeller2" destroy ¦ "shieldw2" destroy ¦ "shieldw1" destroy ¦ "detail2" destroy | 미확인(자동) |  |  |  |
@@ -2966,31 +2966,31 @@
 | `/"*"/on/if/if/damage_report` | block | [str str]x5 | 2 | 5 | "turret" "component/turret_broken" ¦ "engine" "component/engine_burn" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay` | block | [num]x44 [num str]x13 [num num]x6 [num num str]x1 | 19 | 64 | 0 ~ 180 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/if/delay_ex` | block | [num]x6 | 3 | 6 | 0 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
-| `/"*"/on/if/if/delay_ex/ani_play` | block | [str]x1 | 1 | 1 | "crush" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/"*"/on/if/if/delay_ex/ani_play` | block | [str]x1 | 1 | 1 | "crush" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/"*"/on/if/if/delay_ex/call` | block | [str]x3 | 1 | 3 | "update_fx" ¦ "effects" ¦ "cut_pieces" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/if/delay_ex/delay` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/if/delay_ex/delay/update_visibility_patch` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay_ex/set` | block | [str num]x2 | 1 | 2 | "first_stage" 1 ¦ "last_stage" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/if/if/delay_ex/set_skeleton` | block | [str]x1 | 1 | 1 | "_x" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay_ex/tear` | block | [str atom str]x3 [str atom atom]x2 | 2 | 5 | "piece_big_airborne_wing" bone from_volume ¦ "piece_big_airborne_wing" bone "wingl2" ¦ "piece_big_airborne_wing" bone "wingr2" ¦ "piece_small_steel" bone "lock" | 미확인(자동) |  |  |  |
-| `/"*"/on/if/if/delay_ex/tear/impulse` | block | [atom num num atom num atom num num]x4 [atom num num atom num num atom]x1 | 2 | 5 | up 2 1 forward 5 dir 2 1 ¦ up -1 0.7 dir 2.5 0.3 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
-| `/"*"/on/if/if/delay/able` | block | [str num]x2 | 2 | 2 | "burning" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/"*"/on/if/if/delay_ex/tear/impulse` | block | [atom num num atom num atom num num]x4 [atom num num atom num num atom]x1 | 2 | 5 | up 2 1 forward 5 dir 2 1 ¦ up -1 0.7 dir 2.5 0.3 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
+| `/"*"/on/if/if/delay/able` | block | [str num]x2 | 2 | 2 | "burning" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/"*"/on/if/if/delay/call` | block | [str]x23 | 9 | 23 | 예: "gear_disable" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/delay/call_synced` | block | [str]x4 | 3 | 4 | "check_burn_emit" ¦ "stop_burn" ¦ "explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/delay/call_synced` | block | [str]x4 | 3 | 4 | "check_burn_emit" ¦ "stop_burn" ¦ "explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/delay/chassis_work` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/if/delay/crew_emit` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/delay` | block | [num]x5 [num str]x4 [num num]x1 | 4 | 10 | 0.5 ~ 900 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/if/delay/delay/("prop_blast")` | macro | [call:number]x2 | 1 | 2 | number ( 1 ) ¦ number ( 2 ) | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/delay/call` | block | [str]x1 | 1 | 1 | "engine_idle" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/delay/delay/call_synced` | block | [str]x3 | 1 | 3 | "hull_destroyed" ¦ "car_destroyed" ¦ "railway_destroyed" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/delay/delay/call_synced` | block | [str]x3 | 1 | 3 | "hull_destroyed" ¦ "car_destroyed" ¦ "railway_destroyed" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/delay/delay/play_sound` | block | [str]x1 | 1 | 1 | "exhaust" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/if/if/delay/delay/view` | block | [atom str]x5 | 3 | 5 | stop "burn_fire_smoke" ¦ pause "exhaust_working" ¦ pause "exhaust_start" ¦ stop "burn_fire" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/if/delay/delete` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/explosive` | block | [num]x2 | 2 | 2 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/if` | block | [atom atom str]x5 [atom str atom]x2 [str]x1 [atom num]x1 [atom atom]x1 | 5 | 10 | not tagged "_abandoned" ¦ tagged "crushed" else ¦ "engine_on" ¦ rand 0.3 ¦ not tagged "engine_brake" ¦ not operatable | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/"*"/on/if/if/delay/if/able` | block | [atom num]x2 | 1 | 2 | select 0 ¦ repaired 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/"*"/on/if/if/delay/if/able` | block | [atom num]x2 | 1 | 2 | select 0 ¦ repaired 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/"*"/on/if/if/delay/if/call` | block | [str]x4 | 2 | 4 | "cut_pieces_noblast" ¦ "cut_pieces" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/delay/if/call_synced` | block | [str]x1 | 1 | 1 | "rand_break_ammo" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/delay/if/call_synced` | block | [str]x1 | 1 | 1 | "rand_break_ammo" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/delay/if/components` | block | [str atom]x1 | 1 | 1 | "engine" break | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/if/crew_emit` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/if/damage_report` | block | [str str]x7 | 1 | 7 | "gun" "component/empty" ¦ "mantlet" "component/empty" ¦ "turret" "component/empty" ¦ "body" "component/empty" ¦ "trackright" "component/empty" ¦ "trackleft" "component/empty" ¦ "engine" "component/empty" | 미확인(자동) |  |  |  |
@@ -3005,7 +3005,7 @@
 | `/"*"/on/if/if/delay/if/set` | block | [str num]x1 | 1 | 1 | "broken" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/if/if/delay/if/stat_notify` | block | [atom]x1 | 1 | 1 | leave | 미확인(자동) |  |  | stat_notify - used for correct stats gathering |
 | `/"*"/on/if/if/delay/if/tags` | block | [atom str]x1 | 1 | 1 | add "_abandoned" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/if/delay/impulse` | block | [atom num atom num]x1 | 1 | 1 | up 0.01 forward 0.001 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/if/delay/impulse` | block | [atom num atom num]x1 | 1 | 1 | up 0.01 forward 0.001 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/if/delay/kick_entity_manager` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/kill_crew` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/delay/kill_delay` | block | [str]x2 | 1 | 2 | "ground_explosion" | 미확인(자동) |  |  | stops engine startup sequence ¦ resets shock time |
@@ -3045,14 +3045,14 @@
 | `/"*"/on/if/if/if/(define "contact_part")/if/if/("human_health")` | macro | [call:c]x1 | 1 | 1 | c ( %d ) | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/(define "contact_part")/if/if/if` | block | [atom atom]x1 | 1 | 1 | user_control else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/if/if/(define "contact_part")/if/if/if/("human_health")` | macro | [call:c]x2 | 1 | 2 | c ( %ud ) ¦ c ( %d ) | 미확인(자동) |  |  |  |
-| `/"*"/on/if/if/if/able` | block | [str num]x3 | 2 | 3 | "burning" 0 ¦ "personage" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/"*"/on/if/if/if/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_dead_norm" "burn_fire" "basis" ¦ "smoke_engine" "burn_fire_smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/if/if/if/able` | block | [str num]x3 | 2 | 3 | "burning" 0 ¦ "personage" 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/"*"/on/if/if/if/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_dead_norm" "burn_fire" "basis" ¦ "smoke_engine" "burn_fire_smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/if/if/if/area` | block | [atom]x1 | 1 | 1 | enable | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/blastwave` | block | [atom num atom num atom num atom]x18 | 1 | 18 | c4 2.5 r0 2 r1 3.5 position ¦ c4 0.36 r0 0.75 r1 3.06 position ¦ c4 0.504 r0 0.2 r1 0.5 position | 미확인(자동) |  |  | needs blast because ammo is pierce |
 | `/"*"/on/if/if/if/bullet_detonate` | block | []x198 | 2 | 198 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/burn` | block | [atom str atom num atom]x4 [atom atom str atom num atom atom]x1 [atom atom str atom num num atom atom]x1 [atom num num]x1 [atom str atom]x1 | 4 | 8 | fx "fire_fueltank_pierce_medium" time 15 fake ¦ volume fx "smoke_dead_tree1" time 20 fake even_law ¦ volume fx "smoke_dead_tree1" time 30 2 fake even_law ¦ time 30 2 ¦ fx "drops_water_small_short" fake ¦ fx "fire_fueltank_pierce" time 15 fake ¦ fx "fire_fueltank_pierce_big" time 15 fake | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/if/if/if/call` | block | [str]x84 | 12 | 84 | 예: "engine_full" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/if/call_synced` | block | [str]x47 | 7 | 47 | 예: "stage2" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/if/call_synced` | block | [str]x47 | 7 | 47 | 예: "stage2" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/if/chassis_work` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/if/if/clear_inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/component` | block | [atom]x6 | 4 | 6 | break ¦ destroy | 미확인(자동) |  |  |  |
@@ -3064,11 +3064,11 @@
 | `/"*"/on/if/if/if/delay_ex` | block | [num]x2 | 1 | 2 | 0.15 | 미확인(자동) |  |  | delay required to stop vehicles from drowning in Conquest sometimes if map coordinate 000 is underwater |
 | `/"*"/on/if/if/if/delay_ex/blastwave` | block | [atom num atom num atom num atom]x2 | 1 | 2 | c4 0.79 r0 1 r1 2 position ¦ c4 1.5 r0 1 r1 2 position | 미확인(자동) |  |  | needs blast because ammo is pierce |
 | `/"*"/on/if/if/if/delay/call` | block | [str]x10 | 5 | 10 | "stage1" ¦ "stage2" ¦ "next_stage" ¦ "burn_end" ¦ "activate" ¦ "burn_emit" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/if/delay/call_synced` | block | [str]x10 | 2 | 10 | "crew_revive" ¦ "driver_revive" ¦ "fueltank_fire" ¦ "stage2" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/if/delay/call_synced` | block | [str]x10 | 2 | 10 | "crew_revive" ¦ "driver_revive" ¦ "fueltank_fire" ¦ "stage2" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/if/delay/components` | block | [str atom]x1 | 1 | 1 | "body" break | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/delay/if` | block | [atom str atom]x1 [atom atom str]x1 | 2 | 2 | tagged "no_sink" else ¦ not tagged "exploded" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/if/if/delay/if/call` | block | [str]x2 | 1 | 2 | "no_sink_event" ¦ "explosion_sequence" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/if/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "tags_add_ammo_cooked" ¦ "tags_add_ammo_cooked2" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/if/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "tags_add_ammo_cooked" ¦ "tags_add_ammo_cooked2" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/if/delay/if/stop_sound` | block | [str]x1 | 1 | 1 | "flame_1" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/"*"/on/if/if/if/delay/if/tags` | block | [atom str]x1 | 1 | 1 | add "explosion_sequence" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/on/if/if/if/delay/if/view` | block | [atom str]x2 | 1 | 2 | pause "fire_vehicle_death" ¦ start "smoke_vehicle_death" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -3085,12 +3085,12 @@
 | `/"*"/on/if/if/if/if/("heavy_contact")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/if/("human_health")` | macro | [call:c]x2 | 1 | 2 | c ( 15 ) ¦ c ( 500 ) | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/if/("knock_out")` | macro | [call:t call:r]x4 | 1 | 4 | t ( 10 ) r ( 2 ) ¦ t ( 5 ) r ( 2 ) | 미확인(자동) |  |  |  |
-| `/"*"/on/if/if/if/if/##if` | block | [atom str atom atom str atom atom str atom atom str]x1 | 1 | 1 | effector "vehicle" else effector "construction" else effector "tree" else effector "fence" | 미확인(자동) |  |  | disabled. caused parts of buildings that were broken to not fall ¦ can't remember why specifics were added |
+| `/"*"/on/if/if/if/if/##if` | block | [atom str atom atom str atom atom str atom atom str]x1 | 1 | 1 | effector "vehicle" else effector "construction" else effector "tree" else effector "fence" | 미확인(자동) |  |  | can't remember why specifics were added ¦ disabled. caused parts of buildings that were broken to not fall |
 | `/"*"/on/if/if/if/if/##if/call` | block | [str]x4 | 1 | 4 | "tear_part" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/if/if/if/blastwave` | block | [atom num atom num atom num atom]x4 | 1 | 4 | c4 2.5 r0 2 r1 3.5 position | 미확인(자동) |  |  | needs blast because ammo is pierce |
 | `/"*"/on/if/if/if/if/burn` | block | [atom str atom num atom]x1 | 1 | 1 | fx "drops_fuel_small_short" time 10 fake | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
 | `/"*"/on/if/if/if/if/call` | block | [str]x23 | 8 | 23 | 예: "engine_switch" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/if/if/call_synced` | block | [str]x6 | 2 | 6 | "stage1" ¦ "stage2" ¦ "contact_fx_sync" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/if/if/call_synced` | block | [str]x6 | 2 | 6 | "stage1" ¦ "stage2" ¦ "contact_fx_sync" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/if/if/chassis_work` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/if/if/if/components` | block | [str atom]x6 | 2 | 6 | "body" break ¦ "body" destroy ¦ "engine1" break ¦ "engine2" break | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/if/delay` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -3101,7 +3101,7 @@
 | `/"*"/on/if/if/if/if/if` | block | [atom atom str]x6 [atom str]x5 [str atom]x2 [atom str atom]x2 [str atom str]x1 | 9 | 17 | 예: "engine_on" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/if/if/if/if/(mod)` | mod | [atom str]x1 | 1 | 1 | not "mp" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/if/if/call` | block | [str]x13 | 7 | 13 | "fall" ¦ "engine_off" ¦ "engine_on" ¦ "destroy_part" ¦ "engine_switch" ¦ "stage2" ¦ "stage1" ¦ "flail_start" ¦ "explosion" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/if/if/if/if/if/call_synced` | block | [str]x1 | 1 | 1 | "moto_crush_sync" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/"*"/on/if/if/if/if/if/call_synced` | block | [str]x1 | 1 | 1 | "moto_crush_sync" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/"*"/on/if/if/if/if/if/chassis_work` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/"*"/on/if/if/if/if/if/delay` | block | [num str]x2 | 1 | 2 | 2 "fx_delay" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/if/if/if/if/delay/set` | block | [str num]x2 | 1 | 2 | "fx_delay" 0 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
@@ -3113,7 +3113,7 @@
 | `/"*"/on/if/if/if/if/if/if/delay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/if/if/if/if/if/delay/tags` | block | [atom str]x1 | 1 | 1 | remove "talking_" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/on/if/if/if/if/if/if/tags` | block | [atom str]x1 | 1 | 1 | add "talking_" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/if/if/if/if/if/talk` | block | [str]x1 | 1 | 1 | "grenade" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/if/if/if/if/if/if/talk` | block | [str]x1 | 1 | 1 | "grenade" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/if/if/if/if/if/play_sound` | block | [str]x1 | 1 | 1 | "false_start" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/"*"/on/if/if/if/if/if/set` | block | [str num]x2 | 1 | 2 | "fx_delay" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/if/if/if/if/if/spawn` | block | [str str]x2 | 1 | 2 | "metal_crush" "root" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
@@ -3123,7 +3123,7 @@
 | `/"*"/on/if/if/if/if/set` | block | [str num]x2 | 1 | 2 | "broken" 1 ¦ "roof_broken" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/if/if/if/if/spawn` | block | [str]x59 [str str atom]x6 [str atom str]x1 [str atom]x1 | 2 | 67 | 예: "ex_ap_size2" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/"*"/on/if/if/if/if/tags` | block | [atom str]x2 | 1 | 2 | add "_stabbed" ¦ add "death_cry_talk" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/if/if/if/talk` | block | [str]x1 | 1 | 1 | "death_cry" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/if/if/if/if/talk` | block | [str]x1 | 1 | 1 | "death_cry" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/if/if/if/if/throw_off` | block | [atom num atom num atom num atom atom atom]x2 [atom num num atom num num atom num atom num num atom atom]x1 [atom num num atom num num atom num atom num num atom]x1 [atom num num atom num num atom num num atom]x1 | 1 | 5 | up 1.3 0.5 dir 5.5 2 forward 4 turn 0 360 die force ¦ up 1.3 0.5 dir 5.5 2 forward 4 turn 0 360 force ¦ up 3 0.8 dir 3.5 0.5 forward 0 0 die ¦ up 1 forward 1 turn -90 die force rotate_to_dir ¦ up 1 forward 1 turn +90 die force rotate_to_dir | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/if/if/view` | block | [atom str]x1 | 1 | 1 | start "heavy_body_smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/if/if/ik_enable` | block | [str num]x2 | 2 | 2 | "basis" 1 ¦ "turret" 1 | 미확인(자동) |  |  | stops motorized cannons from rotating when engine or track is broken ¦ allows motorized cannons to rotate when engine or track is broken |
@@ -3140,7 +3140,7 @@
 | `/"*"/on/if/if/if/view` | block | [atom str]x6 | 4 | 6 | start "heavy_engine1_smoke" ¦ start "heavy_engine2_smoke" ¦ start "burn_fire" ¦ start "move_smoke_fast" ¦ start "move_smoke_slow" ¦ start "fire_vehicle_death" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/if/if/volume` | block | [atom atom]x1 | 1 | 1 | disable contact | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/"*"/on/if/if/ik_enable` | block | [str num]x6 | 2 | 6 | "turret" 0 ¦ "turret" 1 ¦ "gun_rot" 1 ¦ "gun_rot" 0 | 미확인(자동) |  |  | stops motorized cannons from rotating when engine or track is broken ¦ allows motorized cannons to rotate when engine or track is broken |
-| `/"*"/on/if/if/impulse` | block | [atom num atom num]x2 [atom num num atom num num]x1 | 2 | 3 | up 0.01 forward 0.001 ¦ up 0.01 forward 0.01 ¦ up 0.5 0.5 dir 0.5 0.5 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/if/impulse` | block | [atom num atom num]x2 [atom num num atom num num]x1 | 2 | 3 | up 0.01 forward 0.001 ¦ up 0.01 forward 0.01 ¦ up 0.5 0.5 dir 0.5 0.5 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/if/kill_crew` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/kill_delay` | block | [str]x6 | 4 | 6 | "warming" ¦ "engine_decel" ¦ "ground_explosion" ¦ "smoke" ¦ "flail_stop" | 미확인(자동) |  |  | stops engine startup sequence ¦ resets shock time |
 | `/"*"/on/if/if/kill_flags` | block | [atom]x1 | 1 | 1 | reset | 미확인(자동) |  |  |  |
@@ -3151,19 +3151,19 @@
 | `/"*"/on/if/if/reset_manual_control` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/set` | block | [str num]x40 | 16 | 40 | 예: "engine_on" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/"*"/on/if/if/spawn` | block | [str]x470 [str atom]x120 [str atom num atom]x70 [str atom str]x64 [str atom num atom str]x35 | 23 | 788 | 예: "aero_die_particle" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/"*"/on/if/if/spawn/impulse` | block | [atom num num atom num num]x18 | 1 | 18 | up 2 2 dir 3 2 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/if/spawn/impulse` | block | [atom num num atom num num]x18 | 1 | 18 | up 2 2 dir 3 2 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/if/start_sound` | block | [str]x8 | 4 | 8 | "crush/medium/metal" ¦ "detonation/50kg_bomb/bkg/" ¦ "detonation/explosion_fiery/" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/"*"/on/if/if/stop_sound` | block | [str]x7 | 2 | 7 | "bounds" ¦ "engine1_idle" ¦ "engine2_idle" ¦ "engine_decelerate" ¦ "fall" ¦ "rotate_turret" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/"*"/on/if/if/stuff_detonate` | block | []x3 | 2 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/tags` | block | [atom str]x175 | 14 | 175 | 예: remove "splash" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/if/talk` | block | [str]x12 | 4 | 12 | "broken_gun" ¦ "burning" ¦ "broken_track" ¦ "broken_turret" ¦ "grenade" ¦ "broken_engine" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/if/if/talk` | block | [str]x12 | 4 | 12 | "broken_gun" ¦ "burning" ¦ "broken_track" ¦ "broken_turret" ¦ "grenade" ¦ "broken_engine" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/if/if/tear` | block | [str atom atom]x3 | 1 | 3 | "piece_medium_steel" bone from_volume | 미확인(자동) |  |  |  |
-| `/"*"/on/if/if/tear/add_view` | block | [str str str]x3 | 1 | 3 | "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/if/if/tear/add_view` | block | [str str str]x3 | 1 | 3 | "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/if/if/tear/delay` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/if/if/tear/delay_effect` | block | [num num str]x3 | 1 | 3 | 20 5 "stop" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
 | `/"*"/on/if/if/tear/delay/if` | block | [atom]x1 | 1 | 1 | under_water | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/"*"/on/if/if/tear/delay/if/delete` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/if/if/tear/impulse` | block | [atom num num atom num num atom num atom]x3 | 1 | 3 | up 1 0.5 dir 5 2 rnd_dir 3 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/if/tear/impulse` | block | [atom num num atom num num atom num atom]x3 | 1 | 3 | up 1 0.5 dir 5 2 rnd_dir 3 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/if/tear/view` | block | [atom str]x3 | 1 | 3 | start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/if/if/tex_morph` | block | [str num]x1 | 1 | 1 | "burned" 10 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/if/unlink_trailer` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
@@ -3172,7 +3172,7 @@
 | `/"*"/on/if/if/volumes` | block | [atom atom]x4 [str atom atom]x2 [atom atom atom atom atom]x1 [atom atom atom atom]x1 | 6 | 8 | disable contact ¦ disable bullet contact blast visible ¦ disable bullet contact blast ¦ "roller1" enable contact ¦ "roller5" enable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/if/if/weapon_work` | block | [str num]x14 | 2 | 14 | "mgun" 0 ¦ "gun" 1 ¦ "mgun" 1 ¦ "gun" 0 ¦ "mgun2" 0 ¦ "mgun1" 0 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/ik_enable` | block | [str num]x6 | 4 | 6 | "basis" 0 ¦ "gun_rot" 0 ¦ "turret" 0 ¦ "turret" 1 | 미확인(자동) |  |  | stops motorized cannons from rotating when engine or track is broken ¦ allows motorized cannons to rotate when engine or track is broken |
-| `/"*"/on/if/impulse` | block | [atom num num atom num num]x27 [atom num]x4 [atom num atom num]x1 [atom num atom num num]x1 [atom num atom num atom]x1 | 8 | 35 | 예: up 0.01 forward 0.01 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/impulse` | block | [atom num num atom num num]x27 [atom num]x4 [atom num atom num]x1 [atom num atom num num]x1 [atom num atom num atom]x1 | 8 | 35 | 예: up 0.01 forward 0.01 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/inherited` | block | []x3 | 2 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/kill_crew` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/kill_delay` | block | [str]x17 | 7 | 17 | "engine_accel" ¦ "engine_decel" ¦ "update_blinking" ¦ "idle_try" ¦ "idle_noanm" ¦ "parachute" ¦ "warming" ¦ "engine_startup" ¦ "engine_idle" ¦ "engine_stopped" ¦ "engine_steam_stopped" ¦ "boarding" | 미확인(자동) |  |  | stops engine startup sequence ¦ resets shock time |
@@ -3190,15 +3190,15 @@
 | `/"*"/on/if/set_skeleton` | block | [str]x8 [str atom]x4 | 4 | 12 | "_x" ¦ "_x" local ¦ "_xx" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/signal` | block | [atom num]x1 | 1 | 1 | mandie 5 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/spawn` | block | [str]x1809 [str atom]x172 [str str]x153 [str atom str]x117 [str atom num atom]x74 | 32 | 2445 | 예: "aero_die_particle" | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/"*"/on/if/spawn/impulse` | block | [atom num num atom num num]x24 | 1 | 24 | up 2 1 dir 2 1 ¦ up 1 2 dir 1 3 ¦ up 2 2 dir 3 2 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/spawn/impulse` | block | [atom num num atom num num]x24 | 1 | 24 | up 2 1 dir 2 1 ¦ up 1 2 dir 1 3 ¦ up 2 2 dir 3 2 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/start_sound` | block | [str atom]x43 [str]x25 | 20 | 68 | 예: "crush/medium/tree" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/"*"/on/if/stat_notify` | block | [atom]x1 | 1 | 1 | die | 미확인(자동) |  |  | stat_notify - used for correct stats gathering |
 | `/"*"/on/if/stop_sound` | block | [str]x39 [str num]x1 | 6 | 40 | 예: "bkg_plane" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/"*"/on/if/stuff_detonate` | block | []x8 | 2 | 8 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/if/tags` | block | [atom str]x181 | 22 | 181 | 예: add "no_scavenge" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
-| `/"*"/on/if/talk` | block | [str]x4 | 2 | 4 | "burning" ¦ "death_cry" ¦ "injuring" | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/"*"/on/if/talk` | block | [str]x4 | 2 | 4 | "burning" ¦ "death_cry" ¦ "injuring" | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/"*"/on/if/tear` | block | [str atom atom]x2 | 1 | 2 | "piece_big_wood" bone from_volume ¦ "piece_large_concrete" bone from_volume | 미확인(자동) |  |  |  |
-| `/"*"/on/if/tear/impulse` | block | [atom num num atom num num atom]x2 | 1 | 2 | up 1 0.7 dir 1 0.3 no_position | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/if/tear/impulse` | block | [atom num num atom num num atom]x2 | 1 | 2 | up 1 0.7 dir 1 0.3 no_position | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/if/tex_mod` | block | [str]x17 | 1 | 17 | "win" ¦ "ground" ¦ "sand" ¦ "winter" ¦ "camo" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/throw_off` | block | [atom num atom num atom atom]x2 [atom num atom num atom]x1 [atom num atom num]x1 | 1 | 4 | up 1 forward 2 die force ¦ up 1 forward 0.01 die force ¦ up 1 forward 0.01 force ¦ up 1 forward 0.01 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/unlink` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | kicks human out of parachute when reaching ground |
@@ -3208,12 +3208,12 @@
 | `/"*"/on/if/volumes` | block | [atom atom]x12 [str atom atom]x10 [atom atom atom]x5 [str atom atom atom atom]x2 [atom atom atom atom atom atom]x2 | 12 | 34 | 예: "anim_no_contact" disable contact | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/if/weapon_work` | block | [str num]x51 | 6 | 51 | 예: "gun" 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/if/with_effector` | block | []x15 | 6 | 15 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/on/if/with_effector/add_view` | block | [str str str]x7 | 4 | 7 | "smoke_black" "smoke" "root" ¦ "smoke_black" "smoke" "basis" ¦ "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/if/with_effector/add_view` | block | [str str str]x7 | 4 | 7 | "smoke_black" "smoke" "root" ¦ "smoke_black" "smoke" "basis" ¦ "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/if/with_effector/call` | block | [str]x8 | 3 | 8 | "weapon_reload" ¦ "link_human" ¦ "unlink_human" ¦ "fire" ¦ "link_open" ¦ "contact_detonate" ¦ "link" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/if/with_linked_entity` | block | [str]x5 | 1 | 5 | "attach1" ¦ "attach2" ¦ "attach3" ¦ "attach4" ¦ "attach5" | 미확인(자동) |  |  |  |
 | `/"*"/on/if/with_linked_entity/call` | block | [str]x5 | 1 | 5 | "blast_change" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/"*"/on/ik_enable` | block | [str num]x3 | 2 | 3 | "turret" 0 ¦ "gun_rot" 0 | 미확인(자동) |  |  | stops motorized cannons from rotating when engine or track is broken ¦ allows motorized cannons to rotate when engine or track is broken |
-| `/"*"/on/impulse` | block | [atom num num atom num num]x18 [atom num atom]x4 [atom num]x4 [atom num num atom num num atom num num]x2 [atom num atom num num atom num num]x1 | 13 | 31 | 예: up 0.1 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/impulse` | block | [atom num num atom num num]x18 [atom num atom]x4 [atom num]x4 [atom num num atom num num atom num num]x2 [atom num atom num num atom num num]x1 | 13 | 31 | 예: up 0.1 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/inactive` | block | [num]x10 | 1 | 10 | 0 | 미확인(자동) |  |  |  |
 | `/"*"/on/inherited` | block | []x108 | 6 | 108 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/kick_entity_manager` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3236,12 +3236,12 @@
 | `/"*"/on/signal` | block | [atom num]x2 | 2 | 2 | hit 5 | 미확인(자동) |  |  |  |
 | `/"*"/on/smoke` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/spawn` | block | [str str]x109 [str]x64 [str str atom]x17 [str atom atom]x10 [str atom]x4 | 24 | 215 | 예: "shellhole_dead_tank2" "basis" random_orientation | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/"*"/on/spawn/add_view` | block | [str str str]x8 | 1 | 8 | "smoke_cover-up_big" "smoke1" "root" ¦ "smoke_wp_size1" "smoke1" "root" ¦ "smoke_wp_size2" "smoke1" "root" ¦ "smoke_size2" "smoke1" "root" ¦ "smoke_wp_size3" "smoke1" "root" ¦ "smoke_size3" "smoke1" "root" ¦ "smoke_wp_size4" "smoke1" "root" ¦ "smoke_size4" "smoke1" "root" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/spawn/add_view` | block | [str str str]x8 | 1 | 8 | "smoke_cover-up_big" "smoke1" "root" ¦ "smoke_wp_size1" "smoke1" "root" ¦ "smoke_wp_size2" "smoke1" "root" ¦ "smoke_size2" "smoke1" "root" ¦ "smoke_wp_size3" "smoke1" "root" ¦ "smoke_size3" "smoke1" "root" ¦ "smoke_wp_size4" "smoke1" "root" ¦ "smoke_size4" "smoke1" "root" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/spawn/delay` | block | [num]x17 | 2 | 17 | 56 ~ 90 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/"*"/on/spawn/delay/hide` | block | [num]x9 | 2 | 9 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/on/spawn/delay/view` | block | [atom str]x8 | 1 | 8 | stop "smoke1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/spawn/gravity` | block | [num]x1 | 1 | 1 | 0.3 | 미확인(자동) |  |  |  |
-| `/"*"/on/spawn/impulse` | block | [atom num atom num atom]x1 | 1 | 1 | forward 15 rnd_dir 0.01 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/spawn/impulse` | block | [atom num atom num atom]x1 | 1 | 1 | forward 15 rnd_dir 0.01 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/spawn/linear_damping` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/"*"/on/spawn/view` | block | [atom str]x8 | 1 | 8 | start "smoke1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/start_sound` | block | [str]x25 | 10 | 25 | 예: "weapon/shot/tracer/" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
@@ -3249,9 +3249,9 @@
 | `/"*"/on/stuff_detonate` | block | []x7 | 2 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/on/tags` | block | [atom str]x177 | 24 | 177 | 예: add "engine_count_1" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/on/tear` | block | [str atom atom]x2 [str atom str]x2 [str atom atom atom str atom]x1 [str atom atom atom str]x1 | 3 | 6 | "piece_big_airborne_wing" bone from_volume ¦ "piece_tiny_steel" bone "casing1" ¦ "piece_tiny_steel" bone "casing2" ¦ "piece_medium_steel" bone from_volume ¦ "piece_medium_steel" bone from_volume id "wheel" copy ¦ "piece_medium_steel" bone from_volume id "wheel" | 미확인(자동) |  |  |  |
-| `/"*"/on/tear/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_black" "smoke" "basis" ¦ "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/"*"/on/tear/add_view` | block | [str str str]x2 | 1 | 2 | "smoke_black" "smoke" "basis" ¦ "smoke_dead_wheel" "smoke" "basis" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/"*"/on/tear/delay_effect` | block | [num num str]x2 | 1 | 2 | 10 5 "pause" | 미확인(자동) |  |  | calls {on "stop"} in dummy.inc ¦ calls {on "pause"} in dummy.inc |
-| `/"*"/on/tear/impulse` | block | [atom num num atom num num atom num]x2 [atom num num atom num num]x2 [atom num num]x1 [atom num num atom num num atom num num atom num num atom num num atom num]x1 | 3 | 6 | up 0.1 0.05 ¦ forward 1.01 0.25 dir 1 1 rnd_dir 1 ¦ forward -1.01 0.25 dir -1 1 rnd_dir -1 ¦ up 2 1 dir 2 1 ¦ up 6 1 forward -2 2 dir 2 1 cx 2 1 cy 2 1 rnd_dir 1 ¦ up 6 4 dir 7 3 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/tear/impulse` | block | [atom num num atom num num atom num]x2 [atom num num atom num num]x2 [atom num num]x1 [atom num num atom num num atom num num atom num num atom num num atom num]x1 | 3 | 6 | up 0.1 0.05 ¦ forward 1.01 0.25 dir 1 1 rnd_dir 1 ¦ forward -1.01 0.25 dir -1 1 rnd_dir -1 ¦ up 2 1 dir 2 1 ¦ up 6 1 forward -2 2 dir 2 1 cx 2 1 cy 2 1 rnd_dir 1 ¦ up 6 4 dir 7 3 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/tear/view` | block | [atom str]x2 | 1 | 2 | start "smoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/"*"/on/tear/volumes` | block | [atom atom atom]x1 [atom atom atom atom]x1 | 1 | 2 | disable bullet blast ¦ disable bullet contact blast | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/"*"/on/tex_mod` | block | [str]x3 | 3 | 3 | "x" ¦ "burned" ¦ "win0" | 미확인(자동) |  |  |  |
@@ -3281,7 +3281,7 @@
 | `/"*"/on/with_linked_entity` | block | [str]x23 | 3 | 23 | 예: "sandbag" | 미확인(자동) |  |  |  |
 | `/"*"/on/with_linked_entity/ani_wind` | block | [str atom]x1 | 1 | 1 | "close" begin | 미확인(자동) |  |  | retracts wheels |
 | `/"*"/on/with_linked_entity/call` | block | [str]x21 | 3 | 21 | "break" ¦ "stage2" ¦ "para_idle_animation" ¦ "throw_off_parachute" ¦ "stop_vehicle_ani" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/"*"/on/with_linked_entity/impulse` | block | [atom num]x1 | 1 | 1 | up 0.01 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/"*"/on/with_linked_entity/impulse` | block | [atom num]x1 | 1 | 1 | up 0.01 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/"*"/on/with_linked_entity/tags` | block | [atom str]x1 | 1 | 1 | remove "can_die" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/"*"/on/with_linked_entity/unlink` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  | kicks human out of parachute when reaching ground |
 | `/"*"/positionoffset` | block | [num]x86 | 3 | 86 | 0.8 | 미확인(자동) |  |  | density of units per square meter |
@@ -3425,8 +3425,8 @@
 | `/(define "accuracy_smg")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "accuracy_smg")/("smg_range")` | macro | [call:r1 call:r2 call:globalaccuracy]x1 | 1 | 1 | r1 ( 0.9 ) r2 ( 2.2 ) globalaccuracy ( 1.00 ) | 미확인(자동) |  |  |  |
 | `/(define "add_climb_bones")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "add_climb_bones")/bone` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "add_climb_bones")/bone/bone` | block | [str]x2 | 1 | 2 | "left_%0" ¦ "right_%0" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/(define "add_climb_bones")/bone` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "add_climb_bones")/bone/bone` | block | [str]x2 | 1 | 2 | "left_%0" ¦ "right_%0" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "add_climb_bones")/bone/bone/matrix34` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "add_climb_bones")/bone/bone/matrix34/pos` | block | [num num num]x2 | 1 | 2 | 8 8 0 ¦ 8 -8 0 | 미확인(자동) |  |  |  |
 | `/(define "add_climb_bones")/bone/bone/matrix34/xform` | block | [num num num]x2 | 1 | 2 | 0 -0.79 0 ¦ 0 0.79 0 | 미확인(자동) |  |  |  |
@@ -3581,7 +3581,7 @@
 | `/(define "at_grenade_blast")/if/if/if/components` | block | [str atom]x2 | 1 | 2 | "turret" break | 미확인(자동) |  |  |  |
 | `/(define "at_grenade_blast")/if/if/if/if` | block | [atom param]x2 | 1 | 2 | rand %pierce_body_brake ¦ rand %pierce_engine_brake | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "at_grenade_blast")/if/if/if/if/if` | block | [atom str atom]x2 | 1 | 2 | work "body" else ¦ work "engine" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "at_grenade_blast")/if/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "body_break" ¦ "hull_destroyed" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "at_grenade_blast")/if/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "body_break" ¦ "hull_destroyed" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "at_grenade_blast")/if/if/set` | block | [str num]x1 | 1 | 1 | "already_blasted" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/(define "at_grenade_pierce")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "at_grenade_pierce")/if` | block | [atom str]x1 | 1 | 1 | stuff "cumulative_charge" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -3589,7 +3589,7 @@
 | `/(define "at_grenade_pierce")/if/if/component` | block | [atom]x1 | 1 | 1 | break | 미확인(자동) |  |  |  |
 | `/(define "at_grenade_pierce")/if/if/if` | block | [atom param atom atom param]x1 [atom param]x1 | 1 | 2 | rand %pierce_body_brake else rand %pierce_body_destroy ¦ rand %pierce_engine_brake | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "at_grenade_pierce")/if/if/if/if` | block | [atom str atom atom param]x1 [atom atom str]x1 [atom str atom atom num]x1 | 1 | 3 | work "body" else rand %pierce_body_destroy ¦ not work "body" ¦ work "engine" else rand 0.5 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "at_grenade_pierce")/if/if/if/if/call_synced` | block | [str]x5 | 1 | 5 | "hull_destroyed" ¦ "body_break" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "at_grenade_pierce")/if/if/if/if/call_synced` | block | [str]x5 | 1 | 5 | "hull_destroyed" ¦ "body_break" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "at_mine_blast")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "at_mine_blast")/if` | block | [atom str]x1 | 1 | 1 | name "blast" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "at_mine_blast")/if/if` | block | [atom str]x1 | 1 | 1 | stuff "at_mine" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -3599,14 +3599,14 @@
 | `/(define "at_mine_blast")/if/if/if/component` | block | [atom]x2 | 1 | 2 | break | 미확인(자동) |  |  |  |
 | `/(define "at_mine_blast")/if/if/if/if` | block | [atom param]x2 | 1 | 2 | rand %pierce_body_brake ¦ rand %pierce_engine_brake | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "at_mine_blast")/if/if/if/if/if` | block | [atom str atom]x2 | 1 | 2 | work "body" else ¦ work "engine" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "at_mine_blast")/if/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "body_break" ¦ "hull_destroyed" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "at_mine_blast")/if/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "body_break" ¦ "hull_destroyed" ¦ "engine_break" ¦ "engine_destroy" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "at_mine_blast")/if/if/set` | block | [str num]x1 | 1 | 1 | "already_blasted" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/(define "at_rifle_slope_multiplier")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "at_rifle_slope_multiplier")/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "at_rifle_slope_multiplier")/overmatchcalibre/#row` | block | [num num num]x12 | 1 | 12 | 0 0.1 0.0637 ¦ 10 1.00066 0.0969 ¦ 15 1.0361 0.13561 ¦ 20 1.1116 0.16164 ¦ 25 1.2195 0.19702 ¦ 30 1.3771 0.22546 ¦ 40 1.6263 0.26313 ¦ 65 2.0033 0.34717 ¦ 70 2.6447 0.57353 ¦ 80 8.6492 1.00539 ¦ 85 21.8713 1.17973 ¦ 90 99.0000 0.00000 | 미확인(자동) |  |  |  |
 | `/(define "at_weapon_icon")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "at_weapon_icon")/on` | block | [atom]x1 [str]x1 [str atom]x1 | 1 | 3 | spawn ¦ "link" ¦ "show" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/(define "at_weapon_icon")/on/add_view` | block | [str str str atom atom]x1 | 1 | 1 | "%icon" "wp_view" "root" not_manual not_scenario | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/(define "at_weapon_icon")/on/add_view` | block | [str str str atom atom]x1 | 1 | 1 | "%icon" "wp_view" "root" not_manual not_scenario | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "at_weapon_icon")/on/if` | block | [atom str atom atom str]x1 | 1 | 1 | difficulty "easy" else difficulty "normal" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "at_weapon_icon")/on/if/call` | block | [str]x2 | 1 | 2 | "show" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/(define "at_weapon_icon")/on/if/delay` | block | [num]x2 | 1 | 2 | 1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -3651,7 +3651,7 @@
 | `/(define "barrage_delay")/play_sound` | block | [str]x1 | 1 | 1 | "click" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/(define "base_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "base_vol")/volume` | block | [str]x1 | 1 | 1 | "base%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "base_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "base_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "base_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "base_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "base_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -3673,26 +3673,26 @@
 | `/(define "blast_protection")/armor/setting/threshold/blast/value` | block | [param]x2 | 1 | 2 | %dmg | 미확인(자동) |  |  |  |
 | `/(define "body_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "body_vol")/volume` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "body_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "body_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "body_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "body_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "bole_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bole_vol")/volume` | block | [str]x1 | 1 | 1 | "bole%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "bole_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "bole_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "bole_vol")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "bole_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "bole_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "bole_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "bole_vol")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "bonealign")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "bonealign")/bone` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "bonealign")/bone/parameters` | block | [str]x1 | 1 | 1 | "Align;" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/(define "bonealign")/bone` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "bonealign")/bone/parameters` | block | [str]x1 | 1 | 1 | "Align;" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/(define "boneland")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "boneland")/bone` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "boneland")/bone/parameters` | block | [str]x2 | 2 | 2 | "Ground;Land;" ¦ "Ground;Land;Align;" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/(define "boneland")/bone` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "boneland")/bone/parameters` | block | [str]x2 | 2 | 2 | "Ground;Land;" ¦ "Ground;Land;Align;" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/(define "boneland2")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "boneland2")/bone` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
-| `/(define "boneland2")/bone/parameters` | block | [str]x1 | 1 | 1 | "Ground;Land;" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/(define "boneland2")/bone` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
+| `/(define "boneland2")/bone/parameters` | block | [str]x1 | 1 | 1 | "Ground;Land;" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/(define "bren")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bren")/link_sound` | block | [str str]x5 | 1 | 5 | "Tail_Close" "weapon/shot/smallarms/s3/d1/ENG/BREN_Gun/tail/" ¦ "Head_Mid" "weapon/shot/smallarms/s3/d2/ENG/BREN_Gun/head/" ¦ "Tail_Mid" "weapon/shot/smallarms/s3/d2/ENG/BREN_Gun/tail/" ¦ "Head_Far" "weapon/shot/smallarms/s3/d3/ENG/BREN_Gun/head/" ¦ "Tail_Far" "weapon/shot/smallarms/s3/d3/ENG/BREN_Gun/tail/" | 미확인(자동) |  |  |  |
 | `/(define "browning_303_x8")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3754,7 +3754,7 @@
 | `/(define "churchill_sound")/on/link_sound` | block | [str str]x7 | 1 | 7 | "engine_start" "vehicle/engine/A22_Churchill/start" ¦ "engine_stop" "vehicle/engine/A22_Churchill/stop" ¦ "engine_idle" "vehicle/engine/A22_Churchill/idle" ¦ "engine_full" "vehicle/engine/A22_Churchill/full" ¦ "exhaust" "vehicle/engine/A22_Churchill/exhaust" ¦ "move" "vehicle/tracks/A27M_Cromwell/" ¦ "rotate_turret" "vehicle/turret/electric/electric_heavy" | 미확인(자동) |  |  |  |
 | `/(define "cliff_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cliff_vol")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "cliff_vol")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "cliff_vol")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "cliff_vol")/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cliff_vol")/volume/able/contact_ground` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cliff_vol")/volume/able/obstacle` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3766,7 +3766,7 @@
 | `/(define "con_mortar_barrage")/on/if/tags` | block | [atom str]x1 | 1 | 1 | add "fired" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "cookoff_rand_explosion")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cookoff_rand_explosion")/delay` | block | [param param]x1 | 1 | 1 | %0 %1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/(define "cookoff_rand_explosion")/delay/call_synced` | block | [str]x2 | 1 | 2 | "kill_cookoff" ¦ "explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "cookoff_rand_explosion")/delay/call_synced` | block | [str]x2 | 1 | 2 | "kill_cookoff" ¦ "explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "crate_ammo_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
@@ -3847,7 +3847,7 @@
 | `/(define "custom_all")/teams/a/commandpoints` | block | [str]x6 | 6 | 6 | "*=%cp_a" | 미확인(자동) |  |  |  |
 | `/(define "custom_all")/teams/a/unitset` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/(define "custom_all")/teams/a/unitset/value` | block | [str]x6 | 6 | 6 | "early^conquestonly\|doctrineonly" ¦ "late^conquestonly\|doctrineonly" ¦ "mid^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
-| `/(define "custom_all")/teams/b` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  | DEFENDER TEAM ¦ AI ATTACKER TEAM |
+| `/(define "custom_all")/teams/b` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  | AI ATTACKER TEAM ¦ DEFENDER TEAM |
 | `/(define "custom_all")/teams/b/(include)` | include | [str]x6 [str call:s call:f call:d]x6 | 6 | 12 | "global_parameters/frontlines/unitlimits_defender.inc" ¦ "global_parameters/frontlines/budget_defender_custom.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine_b ) ¦ "global_parameters/unitlimits.inc" ¦ "global_parameters/last_stand/budget_attacker_custom.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine ) ¦ "global_parameters/last_stand/budget_defender_custom.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine ) | 미확인(자동) |  |  |  |
 | `/(define "custom_all")/teams/b/chargefactors` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/(define "custom_all")/teams/b/chargefactors/("timers_defender")` | macro | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -3870,21 +3870,21 @@
 | `/(define "damage_process_blast")/if/if/if/delay` | block | [num]x2 | 1 | 2 | 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "damage_process_blast")/if/if/if/delay/tags` | block | [atom str]x2 | 1 | 2 | remove "death_blast_delay" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "damage_process_blast")/if/if/if/if` | block | [atom expr]x22 [atom str]x5 | 1 | 27 | rand ( * %kill_crew 0.5 ) ¦ rand ( * %kill_crew 1 ) ¦ not "already_blasted" ¦ rand ( * %kill_crew 0.1 ) ¦ rand ( * %kill_crew 0.4 ) ¦ not "turret" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "damage_process_blast")/if/if/if/if/call_synced` | block | [str]x22 | 1 | 22 | "kill_driver" ¦ "kill_gunner" ¦ "kill_gunner2" ¦ "kill_gunner3" ¦ "kill_gunner4" ¦ "kill_gunner5" ¦ "kill_charger" ¦ "kill_charger2" ¦ "kill_charger3" ¦ "kill_charger4" ¦ "kill_commander" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_blast")/if/if/if/if/call_synced` | block | [str]x22 | 1 | 22 | "kill_driver" ¦ "kill_gunner" ¦ "kill_gunner2" ¦ "kill_gunner3" ¦ "kill_gunner4" ¦ "kill_gunner5" ¦ "kill_charger" ¦ "kill_charger2" ¦ "kill_charger3" ¦ "kill_charger4" ¦ "kill_commander" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_blast")/if/if/if/if/delay` | block | [num]x4 | 1 | 4 | 0.25 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "damage_process_blast")/if/if/if/if/delay/set` | block | [str num]x4 | 1 | 4 | "already_blasted" 0 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/(define "damage_process_blast")/if/if/if/if/if` | block | [atom expr]x11 [atom param]x4 | 1 | 15 | rand %crew_shock_chance ¦ rand ( * %kill_crew 0.5 ) ¦ rand ( * %kill_crew 0.25 ) ¦ rand ( * %kill_crew 0.1 ) | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "damage_process_blast")/if/if/if/if/if/call_synced` | block | [str]x15 | 1 | 15 | "crew_shot_chance" ¦ "kill_driver" ¦ "kill_gunner" ¦ "kill_gunner2" ¦ "kill_gunner3" ¦ "kill_gunner4" ¦ "kill_gunner5" ¦ "kill_charger" ¦ "kill_charger2" ¦ "kill_charger3" ¦ "kill_charger4" ¦ "kill_commander" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_blast")/if/if/if/if/if/call_synced` | block | [str]x15 | 1 | 15 | "crew_shot_chance" ¦ "kill_driver" ¦ "kill_gunner" ¦ "kill_gunner2" ¦ "kill_gunner3" ¦ "kill_gunner4" ¦ "kill_gunner5" ¦ "kill_charger" ¦ "kill_charger2" ¦ "kill_charger3" ¦ "kill_charger4" ¦ "kill_commander" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_blast")/if/if/if/if/if/delay` | block | [param num str]x4 [expr num str]x4 | 1 | 8 | %crew_shock_time 1 "crew_shock_time" ¦ ( * %crew_shock_time 0.5 ) 0.5 "crew_shock_time" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/(define "damage_process_blast")/if/if/if/if/if/delay/call_synced` | block | [str]x8 | 1 | 8 | "crew_revive" ¦ "driver_revive" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_blast")/if/if/if/if/if/delay/call_synced` | block | [str]x8 | 1 | 8 | "crew_revive" ¦ "driver_revive" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_blast")/if/if/if/if/set` | block | [str num]x4 | 1 | 4 | "already_blasted" 1 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/(define "damage_process_blast")/if/if/if/tags` | block | [atom str]x2 | 1 | 2 | add "death_blast_delay" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "damage_process_pierce")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "damage_process_pierce")/if` | block | [atom str]x1 | 1 | 1 | stuff "%staff" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "damage_process_pierce")/if/if` | block | [atom str]x1 | 1 | 1 | not "pierced_processed" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "damage_process_pierce")/if/if/if` | block | [atom str]x4 [atom atom str]x1 [atom param]x1 | 1 | 6 | rand %tag_test ¦ not component "shield" ¦ component "body" ¦ component "turret" ¦ component "mantlet" ¦ volume "gun_shield" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "damage_process_pierce")/if/if/if/##if` | block | [atom param]x1 | 1 | 1 | rand %pierce_mantlet__mantlet_jam | 미확인(자동) |  |  | disabled. caused parts of buildings that were broken to not fall ¦ can't remember why specifics were added |
-| `/(define "damage_process_pierce")/if/if/if/##if/call_synced` | block | [str]x1 | 1 | 1 | "mantlet_jam" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_pierce")/if/if/if/##if` | block | [atom param]x1 | 1 | 1 | rand %pierce_mantlet__mantlet_jam | 미확인(자동) |  |  | can't remember why specifics were added ¦ disabled. caused parts of buildings that were broken to not fall |
+| `/(define "damage_process_pierce")/if/if/if/##if/call_synced` | block | [str]x1 | 1 | 1 | "mantlet_jam" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_pierce")/if/if/if/call` | block | [str]x2 | 1 | 2 | "death_counter_check" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/(define "damage_process_pierce")/if/if/if/if` | block | [atom str]x8 [atom]x2 [atom atom str]x1 | 1 | 11 | tagged "slow_cookoff" ¦ tagged "death_counter_start" ¦ operatable ¦ not material "wood" ¦ tagged "internal_fire" ¦ material "wood" ¦ not "turret" ¦ not "shield_pen" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "damage_process_pierce")/if/if/if/if/burn` | block | [atom str]x1 | 1 | 1 | fx "smoke_dead_tank1" | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
@@ -3892,12 +3892,12 @@
 | `/(define "damage_process_pierce")/if/if/if/if/delay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "damage_process_pierce")/if/if/if/if/delay/set` | block | [str num]x1 | 1 | 1 | "shield_pen" 0 | 미확인(자동) |  |  | clears check that is set if one of the above ammo types penetrates ¦ stops accidental double click of UI button |
 | `/(define "damage_process_pierce")/if/if/if/if/if` | block | [atom expr]x47 [atom param]x4 [atom atom str]x3 | 1 | 54 | rand ( * %kill_crew 0.4 ) ¦ rand ( * %kill_crew 0.5 ) ¦ rand ( * %kill_crew 0.8 ) ¦ rand ( * %kill_crew 0.25 ) ¦ rand ( * %kill_crew 0.0 ) ¦ rand %crew_shock_chance ¦ not tagged "ammo_cooked2" ¦ rand ( * %kill_crew 0.2 ) ¦ rand ( * %kill_crew 0.1 ) ¦ not volume "armor" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "damage_process_pierce")/if/if/if/if/if/call_synced` | block | [str]x51 | 1 | 51 | 예: "kill_driver" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_pierce")/if/if/if/if/if/call_synced` | block | [str]x51 | 1 | 51 | 예: "kill_driver" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_pierce")/if/if/if/if/if/delay` | block | [expr num str]x3 [param num str]x2 [param expr str]x1 [expr expr str]x1 [param str]x1 | 1 | 8 | ( * %crew_shock_time 0.5 ) 0.5 "crew_shock_time" ¦ %crew_shock_time 1 "crew_shock_time" ¦ %crew_shock_time ( * %crew_shock_time 0.15 ) "crew_shock_time" ¦ ( * %crew_shock_time 0.5 ) ( * %crew_shock_time 0.07 ) "crew_shock_time" ¦ %crew_shock_time "crew_shock_time" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/(define "damage_process_pierce")/if/if/if/if/if/delay/call_synced` | block | [str]x8 | 1 | 8 | "crew_revive" ¦ "driver_revive" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_pierce")/if/if/if/if/if/delay/call_synced` | block | [str]x8 | 1 | 8 | "crew_revive" ¦ "driver_revive" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_pierce")/if/if/if/if/if/if` | block | [atom num atom atom num atom atom num]x2 [atom atom str]x1 | 1 | 3 | rand 0.2 else rand 0.2 else rand 0.1 ¦ not tagged "pen_fx" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/(define "damage_process_pierce")/if/if/if/if/if/if/burn` | block | [atom str atom num atom]x1 | 1 | 1 | fx "metal_hit_penetration_%pen_fx" time 1 fake | 미확인(자동) |  |  | Required! Without it, humans die instantly when on fire |
-| `/(define "damage_process_pierce")/if/if/if/if/if/if/call_synced` | block | [str]x6 | 1 | 6 | "pre_smoke_cookoff" ¦ "normal_cookoff" ¦ "cookoff_rand_explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/(define "damage_process_pierce")/if/if/if/if/if/if/call_synced` | block | [str]x6 | 1 | 6 | "pre_smoke_cookoff" ¦ "normal_cookoff" ¦ "cookoff_rand_explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/(define "damage_process_pierce")/if/if/if/if/if/if/delay` | block | [num]x1 | 1 | 1 | 0.05 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "damage_process_pierce")/if/if/if/if/if/if/delay/tags` | block | [atom str]x1 | 1 | 1 | remove "pen_fx" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "damage_process_pierce")/if/if/if/if/if/if/if` | block | [atom str atom atom str]x2 | 1 | 2 | stuff "shell" else stuff "rocketlauncher" ¦ component "body" else component "turret" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -3914,18 +3914,18 @@
 | `/(define "damage_process_pierce")/if/if/vehicle_health_damage_pierce` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volume")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volume")/volume` | block | [str]x4 | 2 | 4 | "fire%0" ¦ "smoke%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "declare_fire_volume")/volume/able` | block | [atom]x4 | 2 | 4 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "declare_fire_volume")/volume/able` | block | [atom]x4 | 2 | 4 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "declare_fire_volume")/volume/tags` | block | [str]x4 | 2 | 4 | "fire" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "declare_fire_volumes")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volumes")/("declare_fire_volume")` | macro | [atom num]x20 | 2 | 20 | args 0 ¦ args 1 ¦ args 2 ¦ args 3 ¦ args 4 ¦ args 5 ¦ args 6 ¦ args 7 ¦ args 8 ¦ args 9 | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volumes")/props` | block | [str]x2 | 2 | 2 | "burning_old" | 미확인(자동) |  |  |  |
 | `/(define "do_healing_lie")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "do_healing_lie")/state` | block | [str]x3 | 1 | 3 | "lie_healing_%0_begin" ¦ "lie_healing_%0" ¦ "lie_healing_%0_end" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/(define "do_healing_lie")/state` | block | [str]x3 | 1 | 3 | "lie_healing_%0_begin" ¦ "lie_healing_%0" ¦ "lie_healing_%0_end" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/(define "do_healing_lie")/state/from` | block | [str]x1 | 1 | 1 | "lie" | 미확인(자동) |  |  |  |
 | `/(define "do_healing_lie")/state/tag` | block | [str]x7 | 1 | 7 | "down" ¦ "healing" ¦ "heal-%0" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
 | `/(define "do_healing_lie")/state/to` | block | [str]x3 | 1 | 3 | "lie_healing_%0" ¦ "lie_healing_%0_end" ¦ "lie" | 미확인(자동) |  |  |  |
 | `/(define "do_healing")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "do_healing")/state` | block | [str]x3 | 1 | 3 | "healing_%0_begin" ¦ "healing_%0" ¦ "healing_%0_end" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/(define "do_healing")/state` | block | [str]x3 | 1 | 3 | "healing_%0_begin" ¦ "healing_%0" ¦ "healing_%0_end" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/(define "do_healing")/state/from` | block | [str]x1 | 1 | 1 | "squat" | 미확인(자동) |  |  |  |
 | `/(define "do_healing")/state/tag` | block | [str]x7 | 1 | 7 | "squat" ¦ "healing" ¦ "heal-%0" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
 | `/(define "do_healing")/state/to` | block | [str]x3 | 1 | 3 | "healing_%0" ¦ "healing_%0_end" ¦ "squat" | 미확인(자동) |  |  |  |
@@ -3940,7 +3940,7 @@
 | `/(define "ejectsmoke_fx")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ejectsmoke_fx")/"*"` | block | [str]x1 | 1 | 1 | "stuff weapon %tag" | 미확인(자동) |  |  |  |
 | `/(define "ejectsmoke_fx")/"*"/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/(define "ejectsmoke_fx")/"*"/on/add_view` | block | [str str str]x1 | 1 | 1 | "%ejectsmoke" "ejectsmoke" "fxshell" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/(define "ejectsmoke_fx")/"*"/on/add_view` | block | [str str str]x1 | 1 | 1 | "%ejectsmoke" "ejectsmoke" "fxshell" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "explosion_ap_shell")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "explosion_ap_shell")/start_sound` | block | [str atom]x3 | 1 | 3 | "detonation/s1/d1/AP_Shell/" use_position ¦ "detonation/s1/d2/AP_Shell/" use_position ¦ "detonation/s1/d3/AP_Shell/" use_position | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/(define "explosion_grenade")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4052,12 +4052,12 @@
 | `/(define "flame_fx")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flame_fx")/"*"` | block | [str]x1 | 1 | 1 | "stuff weapon flame_thrower %tag" | 미확인(자동) |  |  |  |
 | `/(define "flame_fx")/"*"/on` | block | [str]x4 [atom]x1 [str atom]x1 | 1 | 6 | spawn ¦ "start_burst" ¦ "end_burst" ¦ "link_human" ¦ "unlink_human" ¦ "fire" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/(define "flame_fx")/"*"/on/add_view` | block | [str str str]x1 | 1 | 1 | "flamer_fire" "flame" "foresight3" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/(define "flame_fx")/"*"/on/add_view` | block | [str str str]x1 | 1 | 1 | "flamer_fire" "flame" "foresight3" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "flame_fx")/"*"/on/delay` | block | [num str]x2 [num]x1 | 1 | 3 | 0.05 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "flame_fx")/"*"/on/delay/play_sound` | block | [str num]x1 | 1 | 1 | "loop" 1 | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/(define "flame_fx")/"*"/on/delay/spawn` | block | [str str atom]x1 | 1 | 1 | "%flame" "foresight3" x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/(define "flame_fx")/"*"/on/delay/spawn/gravity` | block | [num]x1 | 1 | 1 | 0.65 | 미확인(자동) |  |  |  |
-| `/(define "flame_fx")/"*"/on/delay/spawn/impulse` | block | [atom num atom num atom]x1 | 1 | 1 | forward 30 rnd_dir 0.01 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/(define "flame_fx")/"*"/on/delay/spawn/impulse` | block | [atom num atom num atom]x1 | 1 | 1 | forward 30 rnd_dir 0.01 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/(define "flame_fx")/"*"/on/delay/spawn/linear_damping` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "flame_fx")/"*"/on/delay/view` | block | [atom str]x1 | 1 | 1 | pause "flame" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/(define "flame_fx")/"*"/on/kill_delay` | block | [str]x2 | 1 | 2 | "loop" ¦ "fire" | 미확인(자동) |  |  | stops engine startup sequence ¦ resets shock time |
@@ -4065,7 +4065,7 @@
 | `/(define "flame_fx")/"*"/on/play_sound` | block | [str]x2 | 1 | 2 | "start" ¦ "end" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/(define "flame_fx")/"*"/on/spawn` | block | [str str atom]x1 | 1 | 1 | "%flame" "foresight3" x | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
 | `/(define "flame_fx")/"*"/on/spawn/gravity` | block | [num]x1 | 1 | 1 | 0.65 | 미확인(자동) |  |  |  |
-| `/(define "flame_fx")/"*"/on/spawn/impulse` | block | [atom num atom num atom]x1 | 1 | 1 | forward 30 rnd_dir 0.01 com | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/(define "flame_fx")/"*"/on/spawn/impulse` | block | [atom num atom num atom]x1 | 1 | 1 | forward 30 rnd_dir 0.01 com | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/(define "flame_fx")/"*"/on/spawn/linear_damping` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "flame_fx")/"*"/on/stop_sound` | block | [str]x1 | 1 | 1 | "loop" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/(define "flame_fx")/"*"/on/view` | block | [atom str]x1 | 1 | 1 | start "flame" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -4073,7 +4073,7 @@
 | `/(define "flash_fx")/"*"` | block | [str]x1 | 1 | 1 | "stuff weapon %tag" | 미확인(자동) |  |  |  |
 | `/(define "flash_fx")/"*"/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "flash_fx")/"*"/on/if` | block | [atom atom str atom]x1 | 1 | 1 | not prop "silenced" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "flash_fx")/"*"/on/if/add_view` | block | [str str str]x2 | 1 | 2 | "%flash" "flashbarrel" "foresight%foresight" ¦ "flash_gun_silencer" "flashbarrel" "foresight%foresight" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/(define "flash_fx")/"*"/on/if/add_view` | block | [str str str]x2 | 1 | 2 | "%flash" "flashbarrel" "foresight%foresight" ¦ "flash_gun_silencer" "flashbarrel" "foresight%foresight" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "flight_model")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flight_model")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/(define "flight_model")/elevationacceleration` | block | [expr]x1 | 1 | 1 | ( + ( / %climb_speed 4 ) 2 ) | 미확인(자동) |  |  | how quickly aircraft can change from level flight to full climb or dive. (m/s^2) |
@@ -4084,9 +4084,9 @@
 | `/(define "flight_model")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "flight_model")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flight_model")/locomotion/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
-| `/(define "flight_model")/locomotion/fast` | block | [expr]x2 | 1 | 2 | ( * 1.0 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) ¦ ( * 1.1 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/(define "flight_model")/locomotion/fast` | block | [expr]x2 | 1 | 2 | ( * 1.0 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) ¦ ( * 1.1 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
 | `/(define "flight_model")/locomotion/maxspeed` | block | [expr]x2 | 1 | 2 | ( * 1.0 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) ¦ ( * 1.1 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "flight_model")/locomotion/normal` | block | [expr]x2 | 1 | 2 | ( * 1.0 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) ¦ ( * 1.1 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "flight_model")/locomotion/normal` | block | [expr]x2 | 1 | 2 | ( * 1.0 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) ¦ ( * 1.1 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "flight_model")/locomotion/slow` | block | [expr]x2 | 1 | 2 | ( * 0.7 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "flight_model")/locomotion/turnradius` | block | [expr]x2 | 1 | 2 | ( * 0.3 %turn ) ¦ ( * 0.3 %turnMP ) | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
 | `/(define "flight_model")/maxelevationspeed` | block | [expr]x1 | 1 | 1 | ( + ( / %climb_speed 6 ) 2 ) | 미확인(자동) |  |  | climb rate, how many meters per second aircraft changes altitude when in full climb or dive |
@@ -4094,7 +4094,7 @@
 | `/(define "flight_model")/sideslopespeed` | block | [param]x1 [expr]x1 | 1 | 2 | %roll_rate ¦ ( * 2 %roll_rate ) | 미확인(자동) |  |  | how quickly in degrees per second that aircraft rolls |
 | `/(define "foxhole")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "foxhole")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "foxhole")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "foxhole")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "foxhole")/volume/able/blast` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
 | `/(define "foxhole")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "foxhole")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -4118,7 +4118,7 @@
 | `/(define "handle_ik")/on` | block | [atom atom str]x6 | 1 | 6 | ik begin "basis" ¦ ik end "basis" ¦ ik begin "turret" ¦ ik end "turret" ¦ ik begin "gun_rot" ¦ ik end "gun_rot" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "handle_ik")/on/ani_stop` | block | [str]x2 | 1 | 2 | "aim_h" ¦ "aim_v" | 미확인(자동) |  |  |  |
 | `/(define "handle_ik")/on/if` | block | [atom str]x2 | 1 | 2 | cannon_state "fire" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/(define "handle_ik")/on/if/ani_play` | block | [str atom atom]x2 | 1 | 2 | "aim_h" loop resume ¦ "aim_v" loop resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/(define "handle_ik")/on/if/ani_play` | block | [str atom atom]x2 | 1 | 2 | "aim_h" loop resume ¦ "aim_v" loop resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/(define "handle_ik")/on/if/play_sound` | block | [str num]x2 | 1 | 2 | "rotate_turret" 1 ¦ "rotate_gun" 1 | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/(define "handle_ik")/on/play_sound` | block | [str num]x1 | 1 | 1 | "basis_turret" 1 | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
 | `/(define "handle_ik")/on/stop_sound` | block | [str]x3 | 1 | 3 | "basis_turret" ¦ "rotate_turret" ¦ "rotate_gun" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
@@ -4208,27 +4208,27 @@
 | `/(define "hear_firing")/thrower` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "hear_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "hear_human")/cover` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | default value incase condition isn't defined below. Important that {cover} block comes before non-cover {stand}, {squat}, and {crawl} blocks, else cover values will be overwritten. |
-| `/(define "hear_human")/cover/crawl` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "hear_human")/cover/crawl/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "hear_human")/cover/squat` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - in cover ¦ "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "hear_human")/cover/squat/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "hear_human")/cover/crawl` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. ¦ "crawl" stance - in cover |
+| `/(define "hear_human")/cover/crawl/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
+| `/(define "hear_human")/cover/squat` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) ¦ "squat" stance - in cover |
+| `/(define "hear_human")/cover/squat/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "hear_human")/cover/stand` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "stand" stance - in cover ¦ "stand" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "hear_human")/cover/stand/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "hear_human")/crawl` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "hear_human")/crawl/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "hear_human")/cover/stand/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
+| `/(define "hear_human")/crawl` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. ¦ "crawl" stance - in cover |
+| `/(define "hear_human")/crawl/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "hear_human")/crawl/still` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
-| `/(define "hear_human")/crawl/still/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "hear_human")/squat` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - in cover ¦ "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "hear_human")/squat/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "hear_human")/crawl/still/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
+| `/(define "hear_human")/squat` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) ¦ "squat" stance - in cover |
+| `/(define "hear_human")/squat/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "hear_human")/squat/still` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
-| `/(define "hear_human")/squat/still/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "hear_human")/squat/still/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "hear_human")/stand` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "stand" stance - in cover ¦ "stand" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "hear_human")/stand/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "hear_human")/stand/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "hear_human")/stand/still` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
-| `/(define "hear_human")/stand/still/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "hear_human")/stand/still/stealth` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "hear_human")/visible` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "hear_ship")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "hear_ship")/marine_01` | block | [expr]x1 | 1 | 1 | ( + 100 ( / 50 %r ) ) | 미확인(자동) |  |  | distance at which it will be spotted when moving, 0m past visor range. ¦ U-Boat / Submarine |
+| `/(define "hear_ship")/marine_01` | block | [expr]x1 | 1 | 1 | ( + 100 ( / 50 %r ) ) | 미확인(자동) |  |  | U-Boat / Submarine ¦ distance at which it will be spotted when moving, 0m past visor range. |
 | `/(define "hear_ship")/marine_01/firing` | block | [expr]x1 | 1 | 1 | ( / 80 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "hear_ship")/marine_01/still` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
 | `/(define "hear_ship")/marine_01/visible` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
@@ -4257,7 +4257,7 @@
 | `/(define "hear_vehicle")/plane_02/firing` | block | [expr]x1 | 1 | 1 | ( / 600 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "hear_vehicle")/plane_02/still` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
 | `/(define "hear_vehicle")/plane_02/visible` | block | [num]x1 | 1 | 1 | 500 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "hear_vehicle")/vehicle_00` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | distance at which it will be spotted when moving ¦ distance at which it will be spotted when moving, 50m past visor range. |
+| `/(define "hear_vehicle")/vehicle_00` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | goliath ¦ distance at which it will be spotted when moving, 50m past visor range. |
 | `/(define "hear_vehicle")/vehicle_00/firing` | block | [expr]x1 | 1 | 1 | ( / 140 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "hear_vehicle")/vehicle_00/still` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
 | `/(define "hear_vehicle")/vehicle_00/visible` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
@@ -4293,7 +4293,7 @@
 | `/(define "hearing")/rules/("hear_cannon")` | macro | [call:r]x1 | 1 | 1 | r ( %0 ) | 미확인(자동) |  |  |  |
 | `/(define "hearing")/rules/("hear_ship")` | macro | [call:r]x1 | 1 | 1 | r ( %0 ) | 미확인(자동) |  |  |  |
 | `/(define "hearing")/rules/("hear_vehicle")` | macro | [call:r]x1 | 1 | 1 | r ( %0 ) | 미확인(자동) |  |  |  |
-| `/(define "hearing")/rules/human` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/(define "hearing")/rules/human` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/(define "hearing")/rules/human/("hear_human")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "hearing")/rules/human/firing` | block | [expr]x1 | 1 | 1 | ( / 100 %0 ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "hearing")/rules/human/firing/("hear_firing")` | macro | [call:r]x1 | 1 | 1 | r ( %0 ) | 미확인(자동) |  |  |  |
@@ -4318,7 +4318,7 @@
 | `/(define "il2_sound")/on/link_sound` | block | [str str]x8 | 1 | 8 | "engine1_start" "vehicle/airborne/il2/il2_engine_start" ¦ "engine1_idle" "vehicle/airborne/il2/il2_engine_idle" ¦ "engine1_full" "vehicle/airborne/il2/il2_engine_full" ¦ "engine_accelerate" "vehicle/airborne/il2/il2_accelerate" ¦ "engine_decelerate" "vehicle/airborne/il2/il2_decelerate" ¦ "engine_stop" "vehicle/airborne/il2/il2_engine_stop" ¦ "gear_work" "vehicle/airborne/bf109/109_landing_gear" ¦ "bkg_plane" "vehicle/airborne/bkg/bkg_plane_01" | 미확인(자동) |  |  |  |
 | `/(define "imp")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "imp")/spawn` | block | [param param]x1 | 1 | 1 | %0 %1 | 미확인(자동) |  |  | actual smoke and vision volumes ¦ initial explosion fx |
-| `/(define "imp")/spawn/impulse` | block | [atom num num atom num num atom num num atom num num atom num num atom num num atom num num]x1 | 1 | 1 | up 1 0.5 dir 8 4 cx 0 12 cy 0 12 fx 0 60 fy 0 60 fz 80 40 | 미확인(자동) |  |  | causes entity to fall down when pierced. ¦ Forward 1 |
+| `/(define "imp")/spawn/impulse` | block | [atom num num atom num num atom num num atom num num atom num num atom num num atom num num]x1 | 1 | 1 | up 1 0.5 dir 8 4 cx 0 12 cy 0 12 fx 0 60 fy 0 60 fz 80 40 | 미확인(자동) |  |  | Forward 1 ¦ causes entity to fall down when pierced. |
 | `/(define "is_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "is_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "is_sound")/on/link_sound` | block | [str str]x7 | 1 | 7 | "engine_start" "vehicle/engine/is/start" ¦ "engine_stop" "vehicle/engine/is/stop" ¦ "engine_idle" "vehicle/engine/is/idle" ¦ "engine_full" "vehicle/engine/is/full" ¦ "exhaust" "vehicle/engine/is/exhaust" ¦ "move" "vehicle/tracks/is/" ¦ "rotate_turret" "vehicle/turret/electric/electric_heavy" | 미확인(자동) |  |  |  |
@@ -4409,7 +4409,7 @@
 | `/(define "light_mk_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "light_mk_sound")/on/link_sound` | block | [str str]x7 | 1 | 7 | "engine_start" "vehicle/engine/A17_Tetrarch/start" ¦ "engine_stop" "vehicle/engine/A17_Tetrarch/stop" ¦ "engine_idle" "vehicle/engine/A17_Tetrarch/idle" ¦ "engine_full" "vehicle/engine/A17_Tetrarch/full" ¦ "exhaust" "vehicle/engine/A17_Tetrarch/exhaust" ¦ "move" "vehicle/tracks/valentine/" ¦ "rotate_turret" "vehicle/turret/handcrank/handcrank_light" | 미확인(자동) |  |  |  |
 | `/(define "look_chain")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "look_chain")/state` | block | [str]x7 | 1 | 7 | "look_%0_in" ¦ "look_%0" ¦ "look_%0_throw_begin" ¦ "look_%0_throw_end" ¦ "look_%0_fire" ¦ "look_%0_recoil" ¦ "look_%0_out" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/(define "look_chain")/state` | block | [str]x7 | 1 | 7 | "look_%0_in" ¦ "look_%0" ¦ "look_%0_throw_begin" ¦ "look_%0_throw_end" ¦ "look_%0_fire" ¦ "look_%0_recoil" ¦ "look_%0_out" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/(define "look_chain")/state/condition` | block | [str]x1 | 1 | 1 | "look-%0-in" | 미확인(자동) |  |  |  |
 | `/(define "look_chain")/state/from` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  |  |
 | `/(define "look_chain")/state/tag` | block | [str]x31 | 1 | 31 | 예: "up" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
@@ -4513,13 +4513,13 @@
 | `/(define "mobility_btr")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_btr")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_btr")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_btr")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_btr")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_btr")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_btr")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_btr")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_btr")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_btr")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_btr")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_btr")/locomotion/normal` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_btr")/locomotion/normal` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_btr")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_btr")/locomotion/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_btr")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
@@ -4532,11 +4532,11 @@
 | `/(define "mobility_cannon")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_cannon")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.25 ( / %weight 10000 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_cannon")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 70 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_cannon")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_cannon")/locomotion/gears` | block | [num num num num]x1 | 1 | 1 | 0.35 0.5 0.7 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_cannon")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_cannon")/locomotion/gears` | block | [num num num num]x1 | 1 | 1 | 0.35 0.5 0.7 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_cannon")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_cannon")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_cannon")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_cannon")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_cannon")/locomotion/reargears` | block | [num num]x1 | 1 | 1 | 0.33 0.75 | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_cannon")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.33 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_cannon")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( + 1.25 ( / %weight 4000 ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ acceleration time from 0 to max. speed, seconds |
@@ -4554,13 +4554,13 @@
 | `/(define "mobility_car")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_car")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_car")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_car")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_car")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_car")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_car")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_car")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_car")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_car")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_car")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_car")/locomotion/normal` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_car")/locomotion/normal` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_car")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_car")/locomotion/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_car")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
@@ -4578,13 +4578,13 @@
 | `/(define "mobility_goliath")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_goliath")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.30 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_goliath")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_goliath")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_goliath")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_goliath")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_goliath")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_goliath")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_goliath")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_goliath")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_goliath")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_goliath")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_goliath")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_goliath")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_goliath")/locomotion/slow` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_goliath")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 4 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ acceleration time from 0 to max. speed, seconds |
@@ -4601,12 +4601,12 @@
 | `/(define "mobility_medium_boat")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_medium_boat")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_medium_boat")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1.5 ( * %weight ( * %speed 0.002 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_medium_boat")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.8 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_medium_boat")/locomotion/gears` | block | [num num num]x1 | 1 | 1 | 0.5 0.7 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_medium_boat")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.8 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_medium_boat")/locomotion/gears` | block | [num num num]x1 | 1 | 1 | 0.5 0.7 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_medium_boat")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_medium_boat")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_medium_boat")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_medium_boat")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_medium_boat")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_medium_boat")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_medium_boat")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.3 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_medium_boat")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
@@ -4623,12 +4623,12 @@
 | `/(define "mobility_small_boat")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_small_boat")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_small_boat")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1.5 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_small_boat")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_small_boat")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_small_boat")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_small_boat")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_small_boat")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_small_boat")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_small_boat")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_small_boat")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_small_boat")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_small_boat")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_small_boat")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.3 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_small_boat")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
@@ -4646,13 +4646,13 @@
 | `/(define "mobility_tank_slow")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank_slow")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.80 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_tank_slow")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_tank_slow")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_tank_slow")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_tank_slow")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_tank_slow")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_tank_slow")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_tank_slow")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_tank_slow")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_tank_slow")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_tank_slow")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_tank_slow")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_tank_slow")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_tank_slow")/locomotion/slow` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_tank_slow")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 5 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ acceleration time from 0 to max. speed, seconds |
@@ -4670,13 +4670,13 @@
 | `/(define "mobility_tank_special")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank_special")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.80 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_tank_special")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_tank_special")/locomotion/fast` | block | [param]x1 | 1 | 1 | %fast | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_tank_special")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_tank_special")/locomotion/fast` | block | [param]x1 | 1 | 1 | %fast | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_tank_special")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_tank_special")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_tank_special")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_tank_special")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_tank_special")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_tank_special")/locomotion/normal` | block | [param]x1 | 1 | 1 | %normal | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_tank_special")/locomotion/normal` | block | [param]x1 | 1 | 1 | %normal | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_tank_special")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_tank_special")/locomotion/slow` | block | [param]x1 | 1 | 1 | %slow | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_tank_special")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 5 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ acceleration time from 0 to max. speed, seconds |
@@ -4694,13 +4694,13 @@
 | `/(define "mobility_tank")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.80 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_tank")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
-| `/(define "mobility_tank")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_tank")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_tank")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
+| `/(define "mobility_tank")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Forward gear ratios ¦ Gearing affects acceleration curve. |
 | `/(define "mobility_tank")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_tank")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
 | `/(define "mobility_tank")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_tank")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/(define "mobility_tank")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_tank")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_tank")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_tank")/locomotion/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_tank")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 5 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ acceleration time from 0 to max. speed, seconds |
@@ -4717,10 +4717,10 @@
 | `/(define "mobility_train")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_train")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_train")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 2 ( * %weight ( * %speed 0.01 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_train")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/(define "mobility_train")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ ignored |
 | `/(define "mobility_train")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
 | `/(define "mobility_train")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_train")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.66 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "mobility_train")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.66 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/(define "mobility_train")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
 | `/(define "mobility_train")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.33 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_train")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * ( / %speed ( / %power %weight ) ) 9 ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ acceleration time from 0 to max. speed, seconds |
@@ -4751,12 +4751,12 @@
 | `/(define "multi_barrel_loop")/on` | block | [str]x1 [atom str atom]x1 | 1 | 2 | "init_gun" ¦ fire "%weapon" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "multi_barrel_loop")/on/(define "fire_barrel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "multi_barrel_loop")/on/(define "fire_barrel")/<bare>` | bare | [atom]x1 [str]x1 | 1 | 2 | name ¦ "%0" | 미확인(자동) |  |  |  |
-| `/(define "multi_barrel_loop")/on/(define "fire_barrel")/ani_play` | block | [str]x1 | 1 | 1 | "fire%0" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/(define "multi_barrel_loop")/on/(define "fire_barrel")/ani_play` | block | [str]x1 | 1 | 1 | "fire%0" | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/(define "multi_barrel_loop")/on/(define "fire_barrel")/call` | block | [str]x1 | 1 | 1 | "fire_barrel%0" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/(define "multi_barrel_loop")/on/(define "fire_barrel")/delay` | block | [num str]x2 | 1 | 2 | 0.12 "shell_off" ¦ 0.2 "fire" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "multi_barrel_loop")/on/(define "fire_barrel")/delay/view` | block | [atom str]x4 | 1 | 4 | pause "shell%0" ¦ pause "smoke%0" ¦ hide "flashbarrel%0" ¦ pause "flashbarrel%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/(define "multi_barrel_loop")/on/(define "fire_barrel")/view` | block | [atom str]x4 | 1 | 4 | show "flashbarrel%0" ¦ start "flashbarrel%0" ¦ start "shell%0" ¦ start "smoke%0" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
-| `/(define "multi_barrel_loop")/on/add_view` | block | [str str str]x24 | 1 | 24 | 예: "%flash" "flashbarrel00" "shooter00" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/(define "multi_barrel_loop")/on/add_view` | block | [str str str]x24 | 1 | 24 | 예: "%flash" "flashbarrel00" "shooter00" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "multi_barrel_loop")/on/call` | block | [str]x1 | 1 | 1 | "update_gun" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/(define "multi_barrel_loop")/on/delay` | block | [num]x1 | 1 | 1 | 0.001 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "multi_barrel_loop")/on/delay/play_sound` | block | [str]x3 | 1 | 3 | "MultiBarrel_tail_close" ¦ "MultiBarrel_tail_mid" ¦ "MultiBarrel_tail_far" | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
@@ -4782,7 +4782,7 @@
 | `/(define "panhard_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "panhard_sound")/on/link_sound` | block | [str str]x18 | 1 | 18 | 예: "move" "vehicle/wheels/armored_car" | 미확인(자동) |  |  |  |
 | `/(define "peep_chain")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "peep_chain")/state` | block | [str]x3 | 1 | 3 | "peep_%0_in" ¦ "peep_%0" ¦ "peep_%0_out" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/(define "peep_chain")/state` | block | [str]x3 | 1 | 3 | "peep_%0_in" ¦ "peep_%0" ¦ "peep_%0_out" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/(define "peep_chain")/state/condition` | block | [str]x1 | 1 | 1 | "peep-%0-in" | 미확인(자동) |  |  |  |
 | `/(define "peep_chain")/state/from` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  |  |
 | `/(define "peep_chain")/state/tag` | block | [str]x7 | 1 | 7 | "up" ¦ "looking" ¦ "peep-%0-in" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
@@ -4977,7 +4977,7 @@
 | `/(define "rocket_level_7")/damage/ground_interaction_radius` | block | [num]x3 | 1 | 3 | 0 ~ 0.8 | 미확인(자동) |  |  | value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
 | `/(define "roof_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "roof_vol")/volume` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "roof_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "roof_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "roof_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "roof_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "roof" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "s60_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5003,7 +5003,7 @@
 | `/(define "shell_fx")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shell_fx")/"*"` | block | [str]x1 | 1 | 1 | "stuff weapon %tag" | 미확인(자동) |  |  |  |
 | `/(define "shell_fx")/"*"/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
-| `/(define "shell_fx")/"*"/on/add_view` | block | [str str str]x1 | 1 | 1 | "%shell" "shell" "fxshell" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/(define "shell_fx")/"*"/on/add_view` | block | [str str str]x1 | 1 | 1 | "%shell" "shell" "fxshell" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "shellhole_show_with_delay")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shellhole_show_with_delay")/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "shellhole_show_with_delay")/on/delay` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
@@ -5070,27 +5070,27 @@
 | `/(define "spot_cannon")/cannon_05/visible` | block | [expr]x1 | 1 | 1 | ( + 100 ( / %can_vis %r ) ) | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "spot_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "spot_human")/cover` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | default value incase condition isn't defined below. Important that {cover} block comes before non-cover {stand}, {squat}, and {crawl} blocks, else cover values will be overwritten. |
-| `/(define "spot_human")/cover/crawl` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "spot_human")/cover/crawl/stealth` | block | [expr]x1 | 1 | 1 | ( * 25 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "spot_human")/cover/squat` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | "squat" stance - in cover ¦ "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "spot_human")/cover/squat/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "spot_human")/cover/crawl` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. ¦ "crawl" stance - in cover |
+| `/(define "spot_human")/cover/crawl/stealth` | block | [expr]x1 | 1 | 1 | ( * 25 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
+| `/(define "spot_human")/cover/squat` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) ¦ "squat" stance - in cover |
+| `/(define "spot_human")/cover/squat/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "spot_human")/cover/stand` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | "stand" stance - in cover ¦ "stand" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "spot_human")/cover/stand/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "spot_human")/crawl` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "spot_human")/crawl/stealth` | block | [expr]x1 | 1 | 1 | ( * 30 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "spot_human")/cover/stand/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
+| `/(define "spot_human")/crawl` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. ¦ "crawl" stance - in cover |
+| `/(define "spot_human")/crawl/stealth` | block | [expr]x1 | 1 | 1 | ( * 30 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "spot_human")/crawl/still` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
-| `/(define "spot_human")/crawl/still/stealth` | block | [expr]x1 | 1 | 1 | ( * 25 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "spot_human")/squat` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | "squat" stance - in cover ¦ "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) |
-| `/(define "spot_human")/squat/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "spot_human")/crawl/still/stealth` | block | [expr]x1 | 1 | 1 | ( * 25 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
+| `/(define "spot_human")/squat` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) ¦ "squat" stance - in cover |
+| `/(define "spot_human")/squat/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "spot_human")/squat/still` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
-| `/(define "spot_human")/squat/still/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "spot_human")/squat/still/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "spot_human")/stand` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | "stand" stance - in cover ¦ "stand" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/(define "spot_human")/stand/stealth` | block | [expr]x1 | 1 | 1 | ( * 75 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "spot_human")/stand/stealth` | block | [expr]x1 | 1 | 1 | ( * 75 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "spot_human")/stand/still` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
-| `/(define "spot_human")/stand/still/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "squat" stance - still / not moving and human has stealth skill ¦ "squat" stance - moving and human has stealth skill (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/(define "spot_human")/stand/still/stealth` | block | [expr]x1 | 1 | 1 | ( * 50 %r ) | 미확인(자동) |  |  | "crawl" stance - moving and human has stealth skill ¦ "stand" stance - still / not moving and human has stealth skill |
 | `/(define "spot_human")/visible` | block | [expr]x1 | 1 | 1 | ( * 100 %r ) | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "spot_ship")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "spot_ship")/marine_01` | block | [expr]x1 | 1 | 1 | ( + 100 ( / 0 %r ) ) | 미확인(자동) |  |  | distance at which it will be spotted when moving, 0m past visor range. ¦ U-Boat / Submarine |
+| `/(define "spot_ship")/marine_01` | block | [expr]x1 | 1 | 1 | ( + 100 ( / 0 %r ) ) | 미확인(자동) |  |  | U-Boat / Submarine ¦ distance at which it will be spotted when moving, 0m past visor range. |
 | `/(define "spot_ship")/marine_01/firing` | block | [expr]x1 | 1 | 1 | ( / 200 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "spot_ship")/marine_01/still` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
 | `/(define "spot_ship")/marine_01/visible` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
@@ -5119,7 +5119,7 @@
 | `/(define "spot_vehicle")/plane_02/firing` | block | [expr]x1 | 1 | 1 | ( / 700 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "spot_vehicle")/plane_02/still` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
 | `/(define "spot_vehicle")/plane_02/visible` | block | [num]x1 | 1 | 1 | 700 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "spot_vehicle")/vehicle_00` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | distance at which it will be spotted when moving ¦ distance at which it will be spotted when moving, 50m past visor range. |
+| `/(define "spot_vehicle")/vehicle_00` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | goliath ¦ distance at which it will be spotted when moving, 50m past visor range. |
 | `/(define "spot_vehicle")/vehicle_00/firing` | block | [expr]x1 | 1 | 1 | ( + 100 ( / %veh_fire %r ) ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "spot_vehicle")/vehicle_00/still` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | unit still / not moving ¦ unit still / not moving. 1st Blue line in v_visor |
 | `/(define "spot_vehicle")/vehicle_00/visible` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
@@ -5156,7 +5156,7 @@
 | `/(define "spotting")/rules/("spot_cannon")` | macro | [call:r call:can_vis call:can_fire]x1 | 1 | 1 | r ( %r ) can_vis ( 50 ) can_fire ( 70 ) | 미확인(자동) |  |  |  |
 | `/(define "spotting")/rules/("spot_ship")` | macro | [call:r]x1 | 1 | 1 | r ( %r ) | 미확인(자동) |  |  |  |
 | `/(define "spotting")/rules/("spot_vehicle")` | macro | [call:r call:veh_vis call:veh_fire]x1 | 1 | 1 | r ( %r ) veh_vis ( 50 ) veh_fire ( 70 ) | 미확인(자동) |  |  |  |
-| `/(define "spotting")/rules/human` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/(define "spotting")/rules/human` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/(define "spotting")/rules/human/("spot_human")` | macro | [call:r]x1 | 1 | 1 | r ( 1 ) | 미확인(자동) |  |  |  |
 | `/(define "spotting")/rules/human/firing` | block | [expr]x1 | 1 | 1 | ( / 150 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "spotting")/rules/human/firing/("firing")` | macro | [call:r]x1 | 1 | 1 | r ( %r ) | 미확인(자동) |  |  |  |
@@ -5169,7 +5169,7 @@
 | `/(define "spotting2")/rules/("spot_cannon")` | macro | [call:r call:can_vis call:can_fire]x1 | 1 | 1 | r ( %r ) can_vis ( %can_vis ) can_fire ( %can_fire ) | 미확인(자동) |  |  |  |
 | `/(define "spotting2")/rules/("spot_ship")` | macro | [call:r]x1 | 1 | 1 | r ( %r ) | 미확인(자동) |  |  |  |
 | `/(define "spotting2")/rules/("spot_vehicle")` | macro | [call:r call:veh_vis call:veh_fire]x1 | 1 | 1 | r ( %r ) veh_vis ( %veh_vis ) veh_fire ( %can_fire ) | 미확인(자동) |  |  |  |
-| `/(define "spotting2")/rules/human` | block | [expr]x1 | 1 | 1 | ( / 100 %r ) | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/(define "spotting2")/rules/human` | block | [expr]x1 | 1 | 1 | ( / 100 %r ) | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/(define "spotting2")/rules/human/("spot_human")` | macro | [call:r]x1 | 1 | 1 | r ( %r_human ) | 미확인(자동) |  |  |  |
 | `/(define "spotting2")/rules/human/firing` | block | [expr]x1 | 1 | 1 | ( / 150 %r ) | 미확인(자동) |  |  | When this unit fires its weapon, it will be spotted up to this distance. Then, it will become fogged again after remaining visible for the period of time defined in set/detect.set ¦ To achieve a constant distance of firing through noise, it divides by the radius multiplier. 1st Green line in v_visor |
 | `/(define "spotting2")/rules/human/firing/("firing")` | macro | [call:r]x1 | 1 | 1 | r ( %r_human ) | 미확인(자동) |  |  |  |
@@ -5189,7 +5189,7 @@
 | `/(define "standard_all")/teams` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/(define "standard_all")/teams/a` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  | PLAYER DEFENDER TEAM ¦ ATTACKER TEAM |
 | `/(define "standard_all")/teams/a/(include)` | include | [str]x6 [str call:s call:f call:d call:r]x3 [str call:s call:f call:d]x3 | 6 | 12 | "global_parameters/frontlines/unitlimits_attacker.inc" ¦ "global_parameters/frontlines/budget_attacker.inc" s ( %start_a ) f ( %finish_a ) d ( %doctrine_a ) r ( %reinforcement_a ) ¦ "global_parameters/unitlimits.inc" ¦ "global_parameters/last_stand/budget_defender.inc" s ( %start_a ) f ( %finish_a ) d ( %doctrine ) | 미확인(자동) |  |  |  |
-| `/(define "standard_all")/teams/a/balancingfactorbonus` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/(define "standard_all")/teams/a/balancingfactorbonus` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/(define "standard_all")/teams/a/balancingfactorbonus/charge` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/(define "standard_all")/teams/a/balancingfactorbonus/chargedelay` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/(define "standard_all")/teams/a/chargefactors` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
@@ -5198,7 +5198,7 @@
 | `/(define "standard_all")/teams/a/commandpoints` | block | [str]x6 | 6 | 6 | "*=%cp_a" | 미확인(자동) |  |  |  |
 | `/(define "standard_all")/teams/a/unitset` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/(define "standard_all")/teams/a/unitset/value` | block | [str]x6 | 6 | 6 | "early^conquestonly\|doctrineonly" ¦ "late^conquestonly\|doctrineonly" ¦ "mid^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
-| `/(define "standard_all")/teams/b` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  | DEFENDER TEAM ¦ AI ATTACKER TEAM |
+| `/(define "standard_all")/teams/b` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  | AI ATTACKER TEAM ¦ DEFENDER TEAM |
 | `/(define "standard_all")/teams/b/(include)` | include | [str]x6 [str call:s call:f call:d]x6 | 6 | 12 | "global_parameters/frontlines/unitlimits_defender.inc" ¦ "global_parameters/frontlines/budget_defender.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine_b ) ¦ "global_parameters/unitlimits.inc" ¦ "global_parameters/last_stand/budget_attacker.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine ) | 미확인(자동) |  |  |  |
 | `/(define "standard_all")/teams/b/chargefactors` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/(define "standard_all")/teams/b/chargefactors/("timers_defender")` | macro | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -5392,12 +5392,12 @@
 | `/(define "test_early")/bots/(include)` | include | [str call:period call:start_a call:finish_a call:reinforcement_a call:start_b call:finish_b call:doctrine_a call:doctrine_b call:cp_a call:cp_b]x1 [str call:period call:start_a call:finish_a call:start_b call:finish_b call:doctrine call:cp_a call:cp_b]x1 [str call:period]x1 | 3 | 3 | "global_parameters/frontlines/bots_standard.inc" period ( "early" ) start_a ( %start_a ) finish_a ( %finish_a ) reinforcement_a ( %reinforcement_a ) start_b ( %start_b ) finish_b ( %finish_b ) doctrine_a ( %doctrine_a ) doctrine_b ( %doctrine_b ) cp_a ( %cp_a ) cp_b ( %cp_b ) ¦ "global_parameters/last_stand/bots_standard.inc" period ( "early" ) start_a ( %start_a ) finish_a ( %finish_a ) start_b ( %start_b ) finish_b ( %finish_b ) doctrine ( %doctrine ) cp_a ( %cp_a ) cp_b ( %cp_b ) ¦ "global_parameters/bots_generic.inc" period ( "early" ) | 미확인(자동) |  |  |  |
 | `/(define "test_early")/common` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/common/(include)` | include | [str call:s call:f call:d]x1 | 1 | 1 | "global_parameters/budget.inc" s ( %start ) f ( %finish ) d ( %doctrine ) | 미확인(자동) |  |  |  |
-| `/(define "test_early")/common/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/(define "test_early")/common/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/(define "test_early")/common/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/(define "test_early")/common/chargefactors` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/common/chargefactors/value` | block | [str]x1 | 1 | 1 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_early")/common/commandpoints` | block | [str]x1 | 1 | 1 | "*=%cp" | 미확인(자동) |  |  |  |
-| `/(define "test_early")/common/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_early")/common/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_early")/common/unitset` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/common/unitset/value` | block | [str]x1 | 1 | 1 | "early^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -5406,15 +5406,15 @@
 | `/(define "test_early")/teams/a/chargefactors` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/a/chargefactors/value` | block | [str]x2 | 2 | 2 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/a/commandpoints` | block | [str]x2 | 2 | 2 | "*=%cp_a" | 미확인(자동) |  |  |  |
-| `/(define "test_early")/teams/a/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_early")/teams/a/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_early")/teams/a/unitset` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/a/unitset/value` | block | [str]x2 | 2 | 2 | "early^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
-| `/(define "test_early")/teams/b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | DEFENDER TEAM ¦ AI ATTACKER TEAM |
+| `/(define "test_early")/teams/b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | AI ATTACKER TEAM ¦ DEFENDER TEAM |
 | `/(define "test_early")/teams/b/(include)` | include | [str call:s call:f call:d]x2 | 2 | 2 | "global_parameters/frontlines/budget_defender.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine_b ) ¦ "global_parameters/last_stand/budget_attacker.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine ) | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/b/chargefactors` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/b/chargefactors/value` | block | [str]x2 | 2 | 2 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/b/commandpoints` | block | [str]x2 | 2 | 2 | "*=%cp_b" | 미확인(자동) |  |  |  |
-| `/(define "test_early")/teams/b/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_early")/teams/b/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_early")/teams/b/unitset` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_early")/teams/b/unitset/value` | block | [str]x2 | 2 | 2 | "early\|frontlines^conquestonly\|doctrineonly" ¦ "early^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
 | `/(define "test_late")` | define | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -5422,12 +5422,12 @@
 | `/(define "test_late")/bots/(include)` | include | [str call:period call:start_a call:finish_a call:reinforcement_a call:start_b call:finish_b call:doctrine_a call:doctrine_b call:cp_a call:cp_b]x1 [str call:period call:start_a call:finish_a call:start_b call:finish_b call:doctrine call:cp_a call:cp_b]x1 [str call:period]x1 | 3 | 3 | "global_parameters/frontlines/bots_standard.inc" period ( "late" ) start_a ( %start_a ) finish_a ( %finish_a ) reinforcement_a ( %reinforcement_a ) start_b ( %start_b ) finish_b ( %finish_b ) doctrine_a ( %doctrine_a ) doctrine_b ( %doctrine_b ) cp_a ( %cp_a ) cp_b ( %cp_b ) ¦ "global_parameters/last_stand/bots_standard.inc" period ( "late" ) start_a ( %start_a ) finish_a ( %finish_a ) start_b ( %start_b ) finish_b ( %finish_b ) doctrine ( %doctrine ) cp_a ( %cp_a ) cp_b ( %cp_b ) ¦ "global_parameters/bots_generic.inc" period ( "late" ) | 미확인(자동) |  |  |  |
 | `/(define "test_late")/common` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/common/(include)` | include | [str call:s call:f call:d]x1 | 1 | 1 | "global_parameters/budget.inc" s ( %start ) f ( %finish ) d ( %doctrine ) | 미확인(자동) |  |  |  |
-| `/(define "test_late")/common/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/(define "test_late")/common/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/(define "test_late")/common/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/(define "test_late")/common/chargefactors` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/common/chargefactors/value` | block | [str]x1 | 1 | 1 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_late")/common/commandpoints` | block | [str]x1 | 1 | 1 | "*=%cp" | 미확인(자동) |  |  |  |
-| `/(define "test_late")/common/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_late")/common/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_late")/common/unitset` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/common/unitset/value` | block | [str]x1 | 1 | 1 | "late^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -5436,15 +5436,15 @@
 | `/(define "test_late")/teams/a/chargefactors` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/a/chargefactors/value` | block | [str]x2 | 2 | 2 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/a/commandpoints` | block | [str]x2 | 2 | 2 | "*=%cp_a" | 미확인(자동) |  |  |  |
-| `/(define "test_late")/teams/a/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_late")/teams/a/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_late")/teams/a/unitset` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/a/unitset/value` | block | [str]x2 | 2 | 2 | "late^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
-| `/(define "test_late")/teams/b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | DEFENDER TEAM ¦ AI ATTACKER TEAM |
+| `/(define "test_late")/teams/b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | AI ATTACKER TEAM ¦ DEFENDER TEAM |
 | `/(define "test_late")/teams/b/(include)` | include | [str call:s call:f call:d]x2 | 2 | 2 | "global_parameters/frontlines/budget_defender.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine_b ) ¦ "global_parameters/last_stand/budget_attacker.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine ) | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/b/chargefactors` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/b/chargefactors/value` | block | [str]x2 | 2 | 2 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/b/commandpoints` | block | [str]x2 | 2 | 2 | "*=%cp_b" | 미확인(자동) |  |  |  |
-| `/(define "test_late")/teams/b/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_late")/teams/b/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_late")/teams/b/unitset` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_late")/teams/b/unitset/value` | block | [str]x2 | 2 | 2 | "late\|frontlines^conquestonly\|doctrineonly" ¦ "late^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
 | `/(define "test_mid")` | define | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -5452,12 +5452,12 @@
 | `/(define "test_mid")/bots/(include)` | include | [str call:period call:start_a call:finish_a call:reinforcement_a call:start_b call:finish_b call:doctrine_a call:doctrine_b call:cp_a call:cp_b]x1 [str call:period call:start_a call:finish_a call:start_b call:finish_b call:doctrine call:cp_a call:cp_b]x1 [str call:period]x1 | 3 | 3 | "global_parameters/frontlines/bots_standard.inc" period ( "mid" ) start_a ( %start_a ) finish_a ( %finish_a ) reinforcement_a ( %reinforcement_a ) start_b ( %start_b ) finish_b ( %finish_b ) doctrine_a ( %doctrine_a ) doctrine_b ( %doctrine_b ) cp_a ( %cp_a ) cp_b ( %cp_b ) ¦ "global_parameters/last_stand/bots_standard.inc" period ( "mid" ) start_a ( %start_a ) finish_a ( %finish_a ) start_b ( %start_b ) finish_b ( %finish_b ) doctrine ( %doctrine ) cp_a ( %cp_a ) cp_b ( %cp_b ) ¦ "global_parameters/bots_generic.inc" period ( "mid" ) | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/common` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/common/(include)` | include | [str call:s call:f call:d]x1 | 1 | 1 | "global_parameters/budget.inc" s ( %start ) f ( %finish ) d ( %doctrine ) | 미확인(자동) |  |  |  |
-| `/(define "test_mid")/common/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/(define "test_mid")/common/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/(define "test_mid")/common/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/(define "test_mid")/common/chargefactors` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/common/chargefactors/value` | block | [str]x1 | 1 | 1 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/common/commandpoints` | block | [str]x1 | 1 | 1 | "*=%cp" | 미확인(자동) |  |  |  |
-| `/(define "test_mid")/common/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_mid")/common/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_mid")/common/unitset` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/common/unitset/value` | block | [str]x1 | 1 | 1 | "mid^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -5466,15 +5466,15 @@
 | `/(define "test_mid")/teams/a/chargefactors` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/a/chargefactors/value` | block | [str]x2 | 2 | 2 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/a/commandpoints` | block | [str]x2 | 2 | 2 | "*=%cp_a" | 미확인(자동) |  |  |  |
-| `/(define "test_mid")/teams/a/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_mid")/teams/a/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_mid")/teams/a/unitset` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/a/unitset/value` | block | [str]x2 | 2 | 2 | "mid^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
-| `/(define "test_mid")/teams/b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | DEFENDER TEAM ¦ AI ATTACKER TEAM |
+| `/(define "test_mid")/teams/b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | AI ATTACKER TEAM ¦ DEFENDER TEAM |
 | `/(define "test_mid")/teams/b/(include)` | include | [str call:s call:f call:d]x2 | 2 | 2 | "global_parameters/frontlines/budget_defender.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine_b ) ¦ "global_parameters/last_stand/budget_attacker.inc" s ( %start_b ) f ( %finish_b ) d ( %doctrine ) | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/b/chargefactors` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/b/chargefactors/value` | block | [str]x2 | 2 | 2 | "*=0" | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/b/commandpoints` | block | [str]x2 | 2 | 2 | "*=%cp_b" | 미확인(자동) |  |  |  |
-| `/(define "test_mid")/teams/b/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "test_mid")/teams/b/unitlimits` | block | [str]x2 | 2 | 2 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "test_mid")/teams/b/unitset` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "test_mid")/teams/b/unitset/value` | block | [str]x2 | 2 | 2 | "mid\|frontlines^conquestonly\|doctrineonly" ¦ "mid^conquestonly\|doctrineonly" | 미확인(자동) |  |  |  |
 | `/(define "tetrarch_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5598,7 +5598,7 @@
 | `/(define "vickers")/link_sound` | block | [str str]x5 | 1 | 5 | "Tail_Close" "weapon/shot/smallarms/s3/d1/ENG/Vickers/tail/" ¦ "Head_Mid" "weapon/shot/smallarms/s3/d2/ENG/Vickers/head/" ¦ "Tail_Mid" "weapon/shot/smallarms/s3/d2/ENG/Vickers/tail/" ¦ "Head_Far" "weapon/shot/smallarms/s3/d3/ENG/Vickers/head/" ¦ "Tail_Far" "weapon/shot/smallarms/s3/d3/ENG/Vickers/tail/" | 미확인(자동) |  |  |  |
 | `/(define "volume")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "volume")/volume` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "volume")/volume/able` | block | [atom]x1 []x1 | 2 | 2 | clear ¦ | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/(define "volume")/volume/able` | block | [atom]x1 []x1 | 2 | 2 | clear ¦ | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "volume")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "volume")/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "volume")/volume/able/obstacle` | block | []x1 [num]x1 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
@@ -5659,7 +5659,7 @@
 | `/##/on` | block | [str]x4 [atom str]x2 | 1 | 6 | "capture" ¦ "cancel" ¦ "enable" ¦ "disable" ¦ animation_end "down" ¦ animation_end "up" | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/##/on/ani_stop` | block | [str]x2 | 1 | 2 | "up" ¦ "down" | 미확인(자동) |  |  |  |
 | `/##/on/if` | block | [atom str]x2 [atom str atom]x1 | 1 | 3 | not "stop" ¦ tex_mod "1" else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/##/on/if/ani_play` | block | [str atom atom]x2 | 1 | 2 | "up" resume callback ¦ "down" resume callback | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/##/on/if/ani_play` | block | [str atom atom]x2 | 1 | 2 | "up" resume callback ¦ "down" resume callback | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/##/on/if/call` | block | [str]x1 | 1 | 1 | "capture" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/##/on/if/tags` | block | [atom str]x1 | 1 | 1 | add "captured" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/##/on/if/tex_mod` | block | [str]x1 | 1 | 1 | "1" | 미확인(자동) |  |  |  |
@@ -5669,9 +5669,9 @@
 | `/##on/delay` | block | [num num]x1 | 1 | 1 | 8 5 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/##on/delay/delay` | block | [num num]x1 | 1 | 1 | 15 10 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/##on/delay/if` | block | [atom num]x1 | 1 | 1 | rand 0.4 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/##on/delay/if/call_synced` | block | [str]x1 | 1 | 1 | "ammunition_loads" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/##on/delay/if/call_synced` | block | [str]x1 | 1 | 1 | "ammunition_loads" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/##on/if` | block | [atom str]x3 [atom num atom]x3 [atom atom str]x2 [atom str atom]x1 | 1 | 9 | rand 0.6 else ¦ not "ammo_cooked" ¦ not "fuel_fire" ¦ not tagged "burned" ¦ tagged "instant_explosion" else ¦ not tagged "ammo_cooked" ¦ rand 0.3 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/##on/if/able` | block | [atom num]x2 | 1 | 2 | select 0 ¦ repaired 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/##on/if/able` | block | [atom num]x2 | 1 | 2 | select 0 ¦ repaired 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/##on/if/call` | block | [str]x6 | 1 | 6 | "burn_emit" ¦ "explosion" ¦ "kill_crew_chance" ¦ "stat_break" ¦ "_explosion" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/##on/if/clear_inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/##on/if/damage_report` | block | [str str]x1 | 1 | 1 | "ammo" "ammo_fire" | 미확인(자동) |  |  |  |
@@ -5695,7 +5695,7 @@
 | `/##on/if/if/call` | block | [str]x11 | 1 | 11 | "stat_break" ¦ "explosion" ¦ "engine stop view" ¦ "cookoff" ¦ "pre_explosion" ¦ "hull_destroyed" ¦ "cookoff_hatch" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/##on/if/if/damage_report` | block | [str str]x1 | 1 | 1 | "ammo" "ammo_fire" | 미확인(자동) |  |  |  |
 | `/##on/if/if/delay` | block | [num num]x11 [num]x3 | 1 | 14 | 2 ~ 250 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/##on/if/if/delay/add_view` | block | [str str str]x3 | 1 | 3 | "smoke_dead_norm" "burn_fire" "FXfire1" ¦ "smoke_black" "burn_fire" "FXfire1" | 미확인(자동) |  |  | idle exhaust ¦ engine exhaust |
+| `/##on/if/if/delay/add_view` | block | [str str str]x3 | 1 | 3 | "smoke_dead_norm" "burn_fire" "FXfire1" ¦ "smoke_black" "burn_fire" "FXfire1" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/##on/if/if/delay/call` | block | [str]x2 | 1 | 2 | "engine stop view" ¦ "emit_crew" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/##on/if/if/delay/components` | block | [str atom]x2 | 1 | 2 | "engine" break | 미확인(자동) |  |  |  |
 | `/##on/if/if/delay/damage_report` | block | [str str]x1 | 1 | 1 | "engine" "component/engine_burn" | 미확인(자동) |  |  |  |
@@ -5719,7 +5719,7 @@
 | `/##on/if/if/delay/delay/view` | block | [atom str]x9 | 1 | 9 | stop "smoke_fuel_1" ¦ start "smoke_fuel" ¦ stop "smoke3_8" ¦ stop "smoke3_9" ¦ stop "smoke3_10" ¦ start "smoke3_4" ¦ stop "smoke3_7" ¦ start "smoke3_6" ¦ start "smoke3" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/##on/if/if/delay/if` | block | [atom num atom]x1 [atom num atom atom num atom]x1 [str]x1 | 1 | 3 | rand 0.75 else ¦ rand 0.33 else rand 0.33 else ¦ "turret_flame" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/##on/if/if/delay/if/call` | block | [str]x1 | 1 | 1 | "hull_destroyed" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/##on/if/if/delay/if/call_synced` | block | [str]x1 | 1 | 1 | "cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/##on/if/if/delay/if/call_synced` | block | [str]x1 | 1 | 1 | "cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/##on/if/if/delay/if/start_sound` | block | [str]x1 | 1 | 1 | "crush/medium/metal" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/##on/if/if/delay/if/view` | block | [atom str]x6 | 1 | 6 | start "smoke3_1" ¦ start "smoke3_8" ¦ start "smoke3_9" ¦ start "smoke3_10" ¦ stop "smoke4_1" ¦ start "smoke4" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/##on/if/if/delay/play_sound` | block | [str num]x1 | 1 | 1 | "fire" 1 | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
@@ -5778,7 +5778,7 @@
 | `/any/death_delay_min` | block | [num]x1 | 1 | 1 | 300 | 미확인(자동) |  |  | min bleeding out time in seconds |
 | `/any/firing_timeout` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | time out between bursts (modifier on FiringTimeout) |
 | `/any/grenade_timeout` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | modifier on FiringTimeout ¦ time out between grenades (modifier on FiringTimeout) |
-| `/any/health` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/any/health` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/any/recoil` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | weapon recoil, the higher the weaker ¦ recoil multiplier for all machine guns |
 | `/any/recoil_zoom` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | recoil multiplier in zoom mode |
 | `/any/translate_damage` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | damage multiplier for blast-wave damage to humans |
@@ -5796,7 +5796,7 @@
 | `/armor/setting/volumes` | block | [str]x5 | 5 | 5 | "body*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/blend` | block | [str]x206 | 2 | 206 | 예: "pose_lie_empty" | 미확인(자동) |  |  |  |
 | `/blend/pose` | block | [str atom]x206 | 2 | 206 | 예: "weapon\anim_item_lie_take_end_01" end | 미확인(자동) |  |  |  |
-| `/bone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/bone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/bone/(include)` | include | [str]x4 | 1 | 4 | "human_selected.inc" ¦ "human_selectable.inc" ¦ "human_active.inc" ¦ "human_demining.inc" | 미확인(자동) |  |  |  |
 | `/budgets` | block | []x10 | 10 | 10 | 예: | 미확인(자동) |  |  |  |
 | `/budgets/hero` | block | []x10 | 10 | 10 | 예: | 미확인(자동) |  |  |  |
@@ -5828,86 +5828,86 @@
 | `/button_black/text_style/disabled` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/button_black/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/button_black/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/button_black/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_black/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_black/text_style/pressed` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/button_dark` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/button_dark/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_dark/text_style/disabled` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/button_dark/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/button_dark/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/button_dark/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(70 70 70)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_dark/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(70 70 70)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_dark/text_style/pressed` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/button_light` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/button_light/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_light/text_style/disabled` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(128 128 128)" | 미확인(자동) |  |  | 64 |
 | `/button_light/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/button_light/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(255 255 255)" | 미확인(자동) |  |  |  |
-| `/button_light/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(153 153 153)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_light/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(153 153 153)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_light/text_style/pressed` | block | [str]x2 | 2 | 2 | "p(0)f(open_sans)s(27)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/button_light2` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | main menu |
 | `/button_light2/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_light2/text_style/disabled` | block | [str]x2 | 2 | 2 | "f(open_sans)e(shadow)s(30)b+c(120 120 120)" ¦ "f(open_sans)s(30)c(0x808080)" | 미확인(자동) |  |  | 64 |
 | `/button_light2/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "f(open_sans)e(shadow)s(30)b+c(0xD8A468)" ¦ "f(open_sans)s(30)c(0xFFFFFF)" | 미확인(자동) |  |  |  |
 | `/button_light2/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "f(open_sans)e(shadow)s(30)b+c(0xD8A468)" ¦ "f(open_sans)s(30)c(0xFFFFFF)" | 미확인(자동) |  |  |  |
-| `/button_light2/text_style/normal` | block | [str]x2 | 2 | 2 | "f(open_sans)e(shadow)s(30)b+c(0xD8D8D8)" ¦ "f(open_sans)s(30)c(0xc6c6c6)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_light2/text_style/normal` | block | [str]x2 | 2 | 2 | "f(open_sans)e(shadow)s(30)b+c(0xD8D8D8)" ¦ "f(open_sans)s(30)c(0xc6c6c6)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_light2/text_style/pressed` | block | [str]x2 | 2 | 2 | "y(+2)f(open_sans)e(shadow)s(30)b+c(0xFFFFFF)" ¦ "y(+3)f(open_sans)s(30)c(0xFFFFFF)" | 미확인(자동) |  |  |  |
 | `/button_light3` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | main menu - passed missions |
 | `/button_light3/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_light3/text_style/disabled` | block | [str]x2 | 2 | 2 | "f(pobeda)s(30)b+c(0x808080)" ¦ "f(open_sans)s(30)c(0x808080)" | 미확인(자동) |  |  | 64 |
 | `/button_light3/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "f(pobeda)s(30)b+c(0xFFFFFF)" ¦ "f(open_sans)s(30)c(0xFFFFFF)" | 미확인(자동) |  |  |  |
 | `/button_light3/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "f(pobeda)s(30)b+c(0xFFFFFF)" ¦ "f(open_sans)s(30)c(0xFFFFFF)" | 미확인(자동) |  |  |  |
-| `/button_light3/text_style/normal` | block | [str]x2 | 2 | 2 | "f(pobeda)s(30)b+c(0x787878)" ¦ "f(open_sans)s(30)c(0x787878)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_light3/text_style/normal` | block | [str]x2 | 2 | 2 | "f(pobeda)s(30)b+c(0x787878)" ¦ "f(open_sans)s(30)c(0x787878)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_light3/text_style/pressed` | block | [str]x2 | 2 | 2 | "y(+3)f(pobeda)s(30)b+c(0xFFFFFF)" ¦ "y(+3)f(open_sans)s(30)c(0xFFFFFF)" | 미확인(자동) |  |  |  |
 | `/button_main` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/button_main/face_color` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/button_main/face_color` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/button_main/face_color/disabled` | block | [str]x1 | 1 | 1 | "150 150 150" | 미확인(자동) |  |  | 64 |
 | `/button_main/face_color/focused_keyboard` | block | [str]x1 | 1 | 1 | "150 93 93" | 미확인(자동) |  |  |  |
 | `/button_main/face_color/focused_mouse` | block | [str]x1 | 1 | 1 | "150 93 93" | 미확인(자동) |  |  |  |
-| `/button_main/face_color/normal` | block | [str]x1 | 1 | 1 | "0 0 0 150" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_main/face_color/normal` | block | [str]x1 | 1 | 1 | "0 0 0 150" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_main/face_color/pressed` | block | [str]x1 | 1 | 1 | "150 93 93" | 미확인(자동) |  |  |  |
 | `/button_main/text_style` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_main/text_style/disabled` | block | [str]x1 | 1 | 1 | "y(-5)p(0)f(pobeda)s(21)b+c(128 128 128)" | 미확인(자동) |  |  | 64 |
 | `/button_main/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "y(-5)p(0)f(pobeda)s(21)b+c(22 22 22)" | 미확인(자동) |  |  |  |
 | `/button_main/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "y(-5)p(0)f(pobeda)s(21)b+c(22 22 22)" | 미확인(자동) |  |  |  |
-| `/button_main/text_style/normal` | block | [str]x1 | 1 | 1 | "y(-5)p(0)f(pobeda)s(21)b+c(178 135 84)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_main/text_style/normal` | block | [str]x1 | 1 | 1 | "y(-5)p(0)f(pobeda)s(21)b+c(178 135 84)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_main/text_style/pressed` | block | [str]x1 | 1 | 1 | "y(-5)p(0)f(pobeda)s(21)b+c(178 135 84)" | 미확인(자동) |  |  |  |
 | `/button_main/text2_style` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/button_main/text2_style/disabled` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(17)e(shadow)c(128 128 128)" | 미확인(자동) |  |  | 64 |
 | `/button_main/text2_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(17)c(22 22 22)" | 미확인(자동) |  |  |  |
 | `/button_main/text2_style/focused_mouse` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(17)c(22 22 22)" | 미확인(자동) |  |  |  |
-| `/button_main/text2_style/normal` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(17)e(shadow)c(219 212 203)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_main/text2_style/normal` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(17)e(shadow)c(219 212 203)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_main/text2_style/pressed` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(17)e(shadow)c(219 212 203)" | 미확인(자동) |  |  |  |
 | `/button_start` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | start button |
-| `/button_start/face_color` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/button_start/face_color` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/button_start/face_color/disabled` | block | [str]x1 | 1 | 1 | "150 150 150" | 미확인(자동) |  |  | 64 |
 | `/button_start/face_color/focused_keyboard` | block | [str]x1 | 1 | 1 | "150 93 93" | 미확인(자동) |  |  |  |
 | `/button_start/face_color/focused_mouse` | block | [str]x1 | 1 | 1 | "150 93 93" | 미확인(자동) |  |  |  |
-| `/button_start/face_color/normal` | block | [str]x1 | 1 | 1 | "0 0 0 150" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_start/face_color/normal` | block | [str]x1 | 1 | 1 | "0 0 0 150" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_start/face_color/pressed` | block | [str]x1 | 1 | 1 | "150 93 93" | 미확인(자동) |  |  |  |
 | `/button_start/text_style` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_start/text_style/disabled` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(%fs)c(128 128 128)" | 미확인(자동) |  |  | 64 |
 | `/button_start/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(%fs)c(128 198 128)" | 미확인(자동) |  |  |  |
 | `/button_start/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(%fs)c(128 198 128)" | 미확인(자동) |  |  |  |
-| `/button_start/text_style/normal` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(%fs)c(198 198 198)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_start/text_style/normal` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(%fs)c(198 198 198)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_start/text_style/pressed` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(%fs)c(128 255 128)" | 미확인(자동) |  |  |  |
 | `/button_tab` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | main menu tabs |
-| `/button_tab/face_color` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/button_tab/face_color` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/button_tab/face_color/disabled` | block | [str]x1 | 1 | 1 | "150 150 150" | 미확인(자동) |  |  | 64 |
 | `/button_tab/face_color/focused_keyboard` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  |  |
 | `/button_tab/face_color/focused_mouse` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  |  |
-| `/button_tab/face_color/normal` | block | [str]x1 | 1 | 1 | "0 0 0 150" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_tab/face_color/normal` | block | [str]x1 | 1 | 1 | "0 0 0 150" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_tab/face_color/pressed` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  |  |
 | `/button_tab/text_style` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button_tab/text_style/disabled` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(15)c(128 128 128)" | 미확인(자동) |  |  | 64 |
 | `/button_tab/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(15)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/button_tab/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(15)c(255 255 255)" | 미확인(자동) |  |  |  |
-| `/button_tab/text_style/normal` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(15)c(198 198 198)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button_tab/text_style/normal` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(15)c(198 198 198)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button_tab/text_style/pressed` | block | [str]x1 | 1 | 1 | "p(0)f(anka)s(15)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/button/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/button/text_style/disabled` | block | [str]x2 | 2 | 2 | "p(0)f(pobeda)e(shadow)s(27)b+c(120 120 120)" ¦ "p(0)f(open_sans)s(27)b+c(80 80 80)" | 미확인(자동) |  |  | 64 |
 | `/button/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "p(0)f(pobeda)e(shadow)s(27)b+c(178 135 84)" ¦ "p(0)f(open_sans)s(27)b+c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/button/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "p(0)f(pobeda)e(shadow)s(27)b+c(178 135 84)" ¦ "p(0)f(open_sans)s(27)b+c(255 255 255)" | 미확인(자동) |  |  |  |
-| `/button/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(pobeda)e(shadow)s(27)b+c(0xD8D8D8)" ¦ "p(0)f(open_sans)s(27)b+c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/button/text_style/normal` | block | [str]x2 | 2 | 2 | "p(0)f(pobeda)e(shadow)s(27)b+c(0xD8D8D8)" ¦ "p(0)f(open_sans)s(27)b+c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/button/text_style/pressed` | block | [str]x2 | 2 | 2 | "p(0)f(pobeda)e(shadow)s(27)b+c(216 164 104)" ¦ "p(0)f(open_sans)s(27)b+c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/collider` | block | [str]x17 | 17 | 17 | "construction" ¦ "particle.small" ¦ "tree" ¦ "bush" | 미확인(자동) |  |  |  |
 | `/combobox` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -5916,7 +5916,7 @@
 | `/constrain` | block | [atom]x4 | 4 | 4 | none ¦ zero | 미확인(자동) |  |  |  |
 | `/dda_editor` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/dda_editor/item` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
-| `/dda_editor/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/dda_editor/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/dda_editor/item/face_color/selected` | block | [str]x2 | 2 | 2 | "22 22 22" ¦ "150 150 150" | 미확인(자동) |  |  |  |
 | `/dda_editor/item/ro_text_color` | block | [str]x2 | 2 | 2 | "120 120 120" ¦ "167 167 167" | 미확인(자동) |  |  |  |
 | `/dda_editor/item/selection_shrink` | block | [num]x2 | 2 | 2 | 2 | 미확인(자동) |  |  |  |
@@ -5936,7 +5936,7 @@
 | `/decalview/usedirection` | block | []x26 | 26 | 26 | 예: | 미확인(자동) |  |  |  |
 | `/decalview/visible` | block | [num]x27 | 27 | 27 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/dialog` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/dialog/face_color` | block | [str]x2 | 2 | 2 | "23 23 23 200" ¦ "40 40 40 50" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/dialog/face_color` | block | [str]x2 | 2 | 2 | "23 23 23 200" ¦ "40 40 40 50" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/dialog/frame_color` | block | [str]x1 | 1 | 1 | "20 20 20  " | 미확인(자동) |  |  |  |
 | `/dialog/frame_size` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
 | `/dialog/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)y(-2)c(FFFFFF)" ¦ "f(anka)s(%fs)p(0)y(-2)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
@@ -5946,7 +5946,7 @@
 | `/easy` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/easy_a` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/easy_a/("team_a")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/easy_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/easy_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/easy_a/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/easy_a/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/easy_a/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 0.8 ~ 1 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -5956,14 +5956,14 @@
 | `/easy_a/balancingfactorbonus/periodicfactor` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/easy_b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/easy_b/("team_b")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/easy_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/easy_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/easy_b/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/easy_b/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/easy_b/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 0.7 ~ 1.1 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/easy_b/balancingfactorbonus/mpfinish` | block | [num]x2 | 2 | 2 | 0.8 ~ 1.2 | 미확인(자동) |  |  |  |
 | `/easy_b/balancingfactorbonus/mpstart` | block | [num]x2 | 2 | 2 | 1 ~ 1.2 | 미확인(자동) |  |  |  |
 | `/easy_b/balancingfactorbonus/payback` | block | [num]x1 | 1 | 1 | 0.8 | 미확인(자동) |  |  |  |
-| `/easy/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/easy/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/easy/balancingfactorbonus/charge` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/easy/balancingfactorbonus/chargedelay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/easy/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 0.8 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -5994,7 +5994,7 @@
 | `/frame` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/frame/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(28)c(255 255 255)" ¦ "f(open_sans)s(28)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/gc_hint` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/gc_hint/face_color` | block | [str]x2 | 2 | 2 | "23 23 23 205" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/gc_hint/face_color` | block | [str]x2 | 2 | 2 | "23 23 23 205" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/gc_hint/frame_color` | block | [str]x2 | 2 | 2 | "20 20 20 205" | 미확인(자동) |  |  |  |
 | `/gc_hint/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(15)c(209 209 209)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/gc_hint/text_style_action` | block | [str]x2 | 2 | 2 | "f(anka)s(15)c(200 200 200)" ¦ "f(anka)s(15)sc(200 200 200)" | 미확인(자동) |  |  |  |
@@ -6009,7 +6009,7 @@
 | `/hard` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/hard_a` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/hard_a/("team_a")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/hard_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/hard_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/hard_a/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 0.8 | 미확인(자동) |  |  | adjusts the interval only |
 | `/hard_a/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/hard_a/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 1.1 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -6019,14 +6019,14 @@
 | `/hard_a/balancingfactorbonus/periodicfactor` | block | [num]x1 | 1 | 1 | 1.5 | 미확인(자동) |  |  |  |
 | `/hard_b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/hard_b/("team_b")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/hard_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/hard_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/hard_b/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 0.1 ~ 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/hard_b/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/hard_b/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 1.1 ~ 1.3 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/hard_b/balancingfactorbonus/mpfinish` | block | [num]x2 | 2 | 2 | 1 ~ 1.4 | 미확인(자동) |  |  |  |
 | `/hard_b/balancingfactorbonus/mpstart` | block | [num]x2 | 2 | 2 | 1 ~ 1.4 | 미확인(자동) |  |  |  |
 | `/hard_b/balancingfactorbonus/payback` | block | [num]x1 | 1 | 1 | 1.1 | 미확인(자동) |  |  |  |
-| `/hard/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/hard/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/hard/balancingfactorbonus/charge` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/hard/balancingfactorbonus/chargedelay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/hard/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -6039,7 +6039,7 @@
 | `/heroic` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/heroic_a` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/heroic_a/("team_a")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/heroic_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/heroic_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/heroic_a/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 0.5 ~ 0.6 | 미확인(자동) |  |  | adjusts the interval only |
 | `/heroic_a/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/heroic_a/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 1.2 ~ 1.25 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -6049,14 +6049,14 @@
 | `/heroic_a/balancingfactorbonus/periodicfactor` | block | [num]x1 | 1 | 1 | 1.75 | 미확인(자동) |  |  |  |
 | `/heroic_b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/heroic_b/("team_b")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/heroic_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/heroic_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/heroic_b/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 0 ~ 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/heroic_b/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/heroic_b/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 1.2 ~ 1.4 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/heroic_b/balancingfactorbonus/mpfinish` | block | [num]x2 | 2 | 2 | 1 ~ 1.5 | 미확인(자동) |  |  |  |
 | `/heroic_b/balancingfactorbonus/mpstart` | block | [num]x2 | 2 | 2 | 1 ~ 1.5 | 미확인(자동) |  |  |  |
 | `/heroic_b/balancingfactorbonus/payback` | block | [num]x1 | 1 | 1 | 1.25 | 미확인(자동) |  |  |  |
-| `/heroic/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/heroic/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/heroic/balancingfactorbonus/charge` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/heroic/balancingfactorbonus/chargedelay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/heroic/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 1.1 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -6073,13 +6073,13 @@
 | `/inputline_clan_tag/blink_period` | block | [str]x1 | 1 | 1 | "0.7" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/cursor_char` | block | [str]x1 | 1 | 1 | "_" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/disabled_text_color` | block | [str]x1 | 1 | 1 | "179 179 179" | 미확인(자동) |  |  |  |
-| `/inputline_clan_tag/face_color` | block | [str]x1 | 1 | 1 | "20 20 20 200" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/inputline_clan_tag/face_color` | block | [str]x1 | 1 | 1 | "20 20 20 200" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/inputline_clan_tag/frame_color` | block | [str]x1 | 1 | 1 | "50 50 50" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/frame_size` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/modal_frame_color` | block | [str]x1 | 1 | 1 | "255 255 255" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/ro_text_color` | block | [str]x1 | 1 | 1 | "255 255 255" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/selection` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/inputline_clan_tag/selection/face_color` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/inputline_clan_tag/selection/face_color` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/inputline_clan_tag/selection/ro_face_color` | block | [str]x1 | 1 | 1 | "93 93 93 192" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/selection/ro_text_color` | block | [str]x1 | 1 | 1 | "67 67 67" | 미확인(자동) |  |  |  |
 | `/inputline_clan_tag/selection/text_color` | block | [str]x1 | 1 | 1 | "0 0 0" | 미확인(자동) |  |  |  |
@@ -6088,13 +6088,13 @@
 | `/inputline_menu/blink_period` | block | [str]x1 | 1 | 1 | "0.7" | 미확인(자동) |  |  |  |
 | `/inputline_menu/cursor_char` | block | [str]x1 | 1 | 1 | "_" | 미확인(자동) |  |  |  |
 | `/inputline_menu/disabled_text_color` | block | [str]x1 | 1 | 1 | "179 179 179" | 미확인(자동) |  |  |  |
-| `/inputline_menu/face_color` | block | [str]x1 | 1 | 1 | "55 8 4 200" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/inputline_menu/face_color` | block | [str]x1 | 1 | 1 | "55 8 4 200" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/inputline_menu/frame_color` | block | [str]x1 | 1 | 1 | "200 200 200" | 미확인(자동) |  |  |  |
 | `/inputline_menu/frame_size` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/inputline_menu/modal_frame_color` | block | [str]x1 | 1 | 1 | "255 255 255" | 미확인(자동) |  |  |  |
 | `/inputline_menu/ro_text_color` | block | [str]x1 | 1 | 1 | "255 255 255" | 미확인(자동) |  |  |  |
 | `/inputline_menu/selection` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/inputline_menu/selection/face_color` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/inputline_menu/selection/face_color` | block | [str]x1 | 1 | 1 | "93 93 93" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/inputline_menu/selection/ro_face_color` | block | [str]x1 | 1 | 1 | "93 93 93 192" | 미확인(자동) |  |  |  |
 | `/inputline_menu/selection/ro_text_color` | block | [str]x1 | 1 | 1 | "67 67 67" | 미확인(자동) |  |  |  |
 | `/inputline_menu/selection/text_color` | block | [str]x1 | 1 | 1 | "0 0 0" | 미확인(자동) |  |  |  |
@@ -6105,26 +6105,26 @@
 | `/inputline/modal_frame_color` | block | [str]x2 | 2 | 2 | "200 200 200" ¦ "255 255 255" | 미확인(자동) |  |  |  |
 | `/inputline/ro_text_color` | block | [str]x2 | 2 | 2 | "210 210 210" ¦ "255 255 255	" | 미확인(자동) |  |  |  |
 | `/inputline/selection` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/inputline/selection/face_color` | block | [str]x2 | 2 | 2 | "176 151 121 55" ¦ "93 93 93" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/inputline/selection/face_color` | block | [str]x2 | 2 | 2 | "176 151 121 55" ¦ "93 93 93" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/inputline/selection/ro_face_color` | block | [str]x2 | 2 | 2 | "93 93 93 55" ¦ "93 93 93 192" | 미확인(자동) |  |  |  |
 | `/inputline/selection/ro_text_color` | block | [str]x2 | 2 | 2 | "210 210 210" ¦ "255 255 255" | 미확인(자동) |  |  |  |
 | `/inputline/selection/text_color` | block | [str]x2 | 2 | 2 | "0 0 0" | 미확인(자동) |  |  |  |
 | `/inputline/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(f0ede9)y." ¦ "f(open_sans)s(%fs)p(0)c(0 0 0)y." | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/listbox` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/listbox/face_color` | block | [str]x2 | 2 | 2 | "22 22 22" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/listbox/face_color` | block | [str]x2 | 2 | 2 | "22 22 22" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/listbox/folder` | block | [str]x2 | 2 | 2 | "/interface/skin/game/listbox/" | 미확인(자동) |  |  |  |
 | `/listbox/item` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
-| `/listbox/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/listbox/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/listbox/item/face_color/disabled` | block | [str]x2 | 2 | 2 | "150 150 150" | 미확인(자동) |  |  | 64 |
 | `/listbox/item/face_color/focused` | block | [str]x2 | 2 | 2 | "44 37 30" | 미확인(자동) |  |  |  |
-| `/listbox/item/face_color/normal` | block | [str]x2 | 2 | 2 | "22 22 22 55" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/listbox/item/face_color/normal` | block | [str]x2 | 2 | 2 | "22 22 22 55" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/listbox/item/face_color/selected` | block | [str]x2 | 2 | 2 | "22 22 22" | 미확인(자동) |  |  |  |
 | `/listbox/item/selection_shrink` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/listbox/item/text_offset` | block | [num]x2 | 2 | 2 | 2 | 미확인(자동) |  |  |  |
 | `/listbox/item/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/listbox/item/text_style/disabled` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(255 0 0)y." | 미확인(자동) |  |  | 64 |
 | `/listbox/item/text_style/focused` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(235 178 108)y." | 미확인(자동) |  |  |  |
-| `/listbox/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(176 151 121)y." | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/listbox/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(176 151 121)y." | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/listbox/item/text_style/selected` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(235 178 108)y." | 미확인(자동) |  |  |  |
 | `/lodclass` | block | [str]x18 | 18 | 18 | "huge" ¦ "decor_medium" ¦ "decor_big" ¦ "decor_shellhole" ¦ "part_small" ¦ "part_big" ¦ "decor_landmark" ¦ "decor_building" ¦ "decor_bush" ¦ "decor_tree" ¦ "decor_trench" | 미확인(자동) |  |  |  |
 | `/mass` | block | [num]x10 | 10 | 10 | 1 ~ 50000 | 미확인(자동) |  |  | 65kg human + 5kg bike |
@@ -6133,10 +6133,10 @@
 | `/minzoom` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/nocastshadows` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/nogroupmesh` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
-| `/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/normal_a` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/normal_a/("team_a")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/normal_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/normal_a/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/normal_a/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/normal_a/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/normal_a/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 0.9 ~ 1 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -6146,14 +6146,14 @@
 | `/normal_a/balancingfactorbonus/periodicfactor` | block | [num]x1 | 1 | 1 | 1.2 | 미확인(자동) |  |  |  |
 | `/normal_b` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/normal_b/("team_b")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/normal_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/normal_b/balancingfactorbonus` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/normal_b/balancingfactorbonus/charge` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/normal_b/balancingfactorbonus/chargedelay` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/normal_b/balancingfactorbonus/cp` | block | [num]x2 | 2 | 2 | 0.9 ~ 1.2 | 미확인(자동) |  |  | source code only supports 6 values |
 | `/normal_b/balancingfactorbonus/mpfinish` | block | [num]x2 | 2 | 2 | 1 ~ 1.3 | 미확인(자동) |  |  |  |
 | `/normal_b/balancingfactorbonus/mpstart` | block | [num]x2 | 2 | 2 | 1 ~ 1.3 | 미확인(자동) |  |  |  |
 | `/normal_b/balancingfactorbonus/payback` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/normal/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/normal/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/normal/balancingfactorbonus/charge` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the interval only |
 | `/normal/balancingfactorbonus/chargedelay` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | adjusts the initial delay only |
 | `/normal/balancingfactorbonus/cp` | block | [num]x1 | 1 | 1 | 0.9 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -6192,27 +6192,27 @@
 | `/on/components` | block | [str atom]x3 | 1 | 3 | "body" break ¦ "engine" break ¦ "engine" destroy | 미확인(자동) |  |  |  |
 | `/on/delay` | block | [num num str]x4 [num str]x3 [num]x1 | 1 | 8 | 3 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/delay/call` | block | [str]x5 | 1 | 5 | "burn_emit" ¦ "normal_cookoff" ¦ "emit_crew" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/on/delay/call_synced` | block | [str]x2 | 1 | 2 | "slow_cookoff_4" ¦ "slow_cookoff_6_events" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/delay/call_synced` | block | [str]x2 | 1 | 2 | "slow_cookoff_4" ¦ "slow_cookoff_6_events" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/delay/delay` | block | [num]x1 [num str]x1 | 1 | 2 | 1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/on/delay/delay/ani_play` | block | [str num atom]x1 | 1 | 1 | "open" +1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/on/delay/delay/ani_play` | block | [str num atom]x1 | 1 | 1 | "open" +1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/on/delay/delay/call` | block | [str]x1 | 1 | 1 | "pre_smoke_cookoff" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/on/delay/delay/view` | block | [atom str]x1 | 1 | 1 | start "cooking_presmoke_1" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/delay/if` | block | [atom num atom]x1 | 1 | 1 | rand 0.8 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/on/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "slow_cookoff_5" ¦ "slow_cookoff_6" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "slow_cookoff_5" ¦ "slow_cookoff_6" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/delay/stop_sound` | block | [str]x1 | 1 | 1 | "hatch_fire" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/on/delay/view` | block | [atom str]x1 | 1 | 1 | pause "cooking_hatch_fire" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/if` | block | [atom num]x19 [atom atom str]x11 [atom str]x3 [atom num atom]x2 [atom atom atom atom atom atom atom atom atom]x1 | 3 | 37 | 예: in_cover else standing else squatting else lying else swimming | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/on/if/("select_idle_empty_or_gun")` | macro | [call:probability call:no_gun call:with_gun]x3 | 1 | 3 | probability ( 0.5 ) no_gun ( "idle_crouch_empty" ) with_gun ( "idle_crouch_gun" ) ¦ probability ( 0.5 ) no_gun ( "idle_lie_empty" ) with_gun ( "idle_lie_gun" ) ¦ probability ( 1 ) no_gun ( "swim_on_the_spot_empty" ) with_gun ( "swim_gun" ) | 미확인(자동) |  |  |  |
-| `/on/if/able` | block | [atom num]x10 | 2 | 10 | select 0 ¦ minimap 0 ¦ repaired 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/on/if/able` | block | [atom num]x10 | 2 | 10 | select 0 ¦ minimap 0 ¦ repaired 0 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/on/if/ani_wind` | block | [str atom]x2 | 2 | 2 | "open" end | 미확인(자동) |  |  | retracts wheels |
 | `/on/if/call` | block | [str]x8 | 2 | 8 | "stat_break" ¦ "engine_off" ¦ "explosion" ¦ "kill_crew_chance" ¦ "burn_emit" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/on/if/call_synced` | block | [str]x23 | 2 | 23 | 예: "ammo_explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/call_synced` | block | [str]x23 | 2 | 23 | 예: "ammo_explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/chassis_work` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/on/if/clear_inventory` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/on/if/delay` | block | [num num str]x5 [num]x2 [num num]x1 | 2 | 8 | 3 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/delay/call` | block | [str]x2 | 2 | 2 | "burn_emit" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/on/if/delay/delay` | block | [num num str]x2 | 2 | 2 | 10 2 "cookoff_open2" ¦ 4 2 "cookoff8" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/on/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "tags_add_ammo_cooked2" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "tags_add_ammo_cooked2" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/delay/delay/delay` | block | [num num str]x1 | 1 | 1 | 60 10 "cookoff9" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/delay/delay/delay/stop_sound` | block | [str]x1 | 1 | 1 | "hatch_fire" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/on/if/delay/delay/delay/view` | block | [atom str]x2 | 1 | 2 | start "cooking_hatch_smoke" ¦ stop "cooking_hatch_fire" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -6228,21 +6228,21 @@
 | `/on/if/delay/delay/stop_sound` | block | [str]x2 | 2 | 2 | "cook_off" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/on/if/delay/delay/view` | block | [atom str]x4 | 2 | 4 | hide "cooking_high_open_2" ¦ stop "cooking_high_open_2" ¦ start "cooking_hatch_fire" ¦ stop "cooking_high_2" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/if/delay/if` | block | [atom atom str]x3 [atom num atom]x1 | 2 | 4 | not able "exploded" ¦ rand 0.5 else ¦ not tagged "exploded" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/on/if/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "slow_cookoff_3" ¦ "slow_cookoff_4" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "slow_cookoff_3" ¦ "slow_cookoff_4" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/delay/if/delay` | block | [num num str]x2 [num num]x1 | 2 | 3 | 1.5 0.5 "cookoff5" ¦ 60 60 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/delay/if/delay/delay` | block | [num num]x4 [num num str]x2 | 2 | 6 | 0.4 0.2 ¦ 0.8 0.2 ¦ 1.5 0.5 "cookoff6" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/delay/if/delay/delay/call` | block | [str]x1 | 1 | 1 | "normal_cookoff" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/on/if/delay/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "normal_cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/delay/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "normal_cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/delay/if/delay/delay/start_sound` | block | [str]x4 | 2 | 4 | "detonation/cook_off/internal_explosions" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/on/if/delay/if/delay/delay/view` | block | [atom str]x2 | 2 | 2 | stop "cooking_presmoke_3" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/if/delay/if/delay/if` | block | [atom str]x2 [atom atom str]x1 | 2 | 3 | tagged "barrel_fire" ¦ not tagged "exploded" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/on/if/delay/if/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "ammo_explosion_small_2" ¦ "normal_open_top_cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/delay/if/delay/if/call_synced` | block | [str]x2 | 1 | 2 | "ammo_explosion_small_2" ¦ "normal_open_top_cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/delay/if/delay/if/stop_sound` | block | [str]x1 | 1 | 1 | "fire" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/on/if/delay/if/delay/if/view` | block | [atom str]x5 | 2 | 5 | pause "cooking_barrel_aftersmoke" ¦ start "cooking_barrel_smoke" ¦ pause "fire_vehicle_death" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/if/delay/if/delay/start_sound` | block | [str]x2 | 2 | 2 | "detonation/cook_off/internal_explosions" | 미확인(자동) |  |  | explosion sound ¦ insert custom ice crush sounds folder here |
 | `/on/if/delay/if/delay/view` | block | [atom str]x4 | 2 | 4 | stop "cooking_presmoke_2" ¦ start "cooking_presmoke_3" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/if/delay/if/if` | block | [atom num]x2 | 2 | 2 | rand 0.3 | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/on/if/delay/if/if/call_synced` | block | [str]x1 | 1 | 1 | "rand_barrel_fire" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/delay/if/if/call_synced` | block | [str]x1 | 1 | 1 | "rand_barrel_fire" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/delay/if/if/tags` | block | [atom str]x1 | 1 | 1 | add "barrel_fire" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/on/if/delay/if/if/view` | block | [atom str]x1 | 1 | 1 | start "cooking_barrel_aftersmoke" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/on/if/delay/if/play_sound` | block | [str num]x1 | 1 | 1 | "fire" 1 | 미확인(자동) |  |  | start cooking FX, hatch ¦ detonation/explosion_vehicle/cook_off/burnup_ammo |
@@ -6257,11 +6257,11 @@
 | `/on/if/if/("select_idle_stand_2hands")` | macro | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/on/if/if/ani_wind` | block | [str atom]x3 | 2 | 3 | "open" end ¦ "open1" end | 미확인(자동) |  |  | retracts wheels |
 | `/on/if/if/call` | block | [str]x2 | 1 | 2 | "kill_crew_chance" ¦ "pre_smoke_cookoff" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/on/if/if/call_synced` | block | [str]x3 | 1 | 3 | "slow_cookoff_1" ¦ "slow_cookoff_2" ¦ "normal_open_top_cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/if/call_synced` | block | [str]x3 | 1 | 3 | "slow_cookoff_1" ¦ "slow_cookoff_2" ¦ "normal_open_top_cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/if/clear_inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/on/if/if/delay` | block | [num num str]x1 | 1 | 1 | 10 2 "cookoff7" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/if/delay/delay` | block | [num num str]x1 | 1 | 1 | 4 2 "cookoff8" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/on/if/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "tags_add_ammo_cooked2" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/if/delay/delay/call_synced` | block | [str]x1 | 1 | 1 | "tags_add_ammo_cooked2" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/if/delay/delay/delay` | block | [num num str]x1 | 1 | 1 | 60 10 "cookoff9" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/if/delay/delay/delay/stop_sound` | block | [str]x1 | 1 | 1 | "hatch_fire" | 미확인(자동) |  |  | stop cook off sound ¦ detonation/explosion_vehicle/cook_off/cook_off |
 | `/on/if/if/delay/delay/delay/view` | block | [atom str]x3 | 1 | 3 | start "cooking_hatch_smoke" ¦ hide "cooking_hatch_fire" ¦ stop "cooking_hatch_fire" | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
@@ -6279,17 +6279,17 @@
 | `/on/if/if/if/("cookoff_rand_explosion")` | macro | [atom num num]x3 | 1 | 3 | args 11 11 ¦ args 12 12 ¦ args 7 7 | 미확인(자동) |  |  |  |
 | `/on/if/if/if/ani_wind` | block | [str atom]x2 | 1 | 2 | "open" end | 미확인(자동) |  |  | retracts wheels |
 | `/on/if/if/if/call` | block | [str]x4 | 1 | 4 | "pre_smoke_cookoff" ¦ "kill_crew_chance" ¦ "burn_emit" ¦ "normal_cookoff" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/on/if/if/if/call_synced` | block | [str]x8 | 1 | 8 | "rand_hatch_normal_explosion" ¦ "normal_cookoff" ¦ "rand_hatch_pre_smoke_explosion" ¦ "slow_cookoff" ¦ "rand_hatch_explosion" ¦ "turret_ring_fire" ¦ "slow_open_top_cookoff" ¦ "normal_open_top_cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/if/if/call_synced` | block | [str]x8 | 1 | 8 | "rand_hatch_normal_explosion" ¦ "normal_cookoff" ¦ "rand_hatch_pre_smoke_explosion" ¦ "slow_cookoff" ¦ "rand_hatch_explosion" ¦ "turret_ring_fire" ¦ "slow_open_top_cookoff" ¦ "normal_open_top_cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/if/if/delay` | block | [num num]x2 [num str]x1 [num num str]x1 | 2 | 4 | 7 7 ¦ 1 "cookoff1" ¦ 0.8 0.4 "cookoff3" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/on/if/if/if/delay/call` | block | [str]x2 | 1 | 2 | "burn_emit" ¦ "normal_cookoff" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
-| `/on/if/if/if/delay/call_synced` | block | [str]x2 | 1 | 2 | "cookoff_rand_explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/if/if/delay/call_synced` | block | [str]x2 | 1 | 2 | "cookoff_rand_explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/if/if/delay/delay` | block | [num str]x1 | 1 | 1 | 2 "cookoff2" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/on/if/if/if/delay/delay/ani_play` | block | [str num atom]x1 | 1 | 1 | "open" +1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ causes issues with start animation transisiton, but needed for spawns w/ Engine on |
+| `/on/if/if/if/delay/delay/ani_play` | block | [str num atom]x1 | 1 | 1 | "open" +1.0 resume | 미확인(자동) |  |  | the 'norestart' flag in this case effectively removes the need to check if the animation is already running to avoid jerking ¦ door/hatch animation for tank to open and shell is thrown out |
 | `/on/if/if/if/delay/delay/call` | block | [str]x1 | 1 | 1 | "pre_smoke_cookoff" | 미확인(자동) |  |  | generic crew emit from vehicle.inc ¦ plays dust fx for aero vehicles |
 | `/on/if/if/if/if` | block | [atom num]x6 [atom str atom]x5 [atom num atom]x2 [atom atom]x1 [str]x1 | 2 | 15 | rand 0.25 ¦ cover_type "hide_stand" else ¦ hold_strap else ¦ "engine_on" ¦ rand 0.3 else ¦ rand 0.7 else | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
-| `/on/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "rand_pre_smoke_delay" ¦ "rand_pre_smoke" ¦ "rand_hatch_normal_explosion" ¦ "normal_cookoff" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/if/if/if/call_synced` | block | [str]x4 | 1 | 4 | "rand_pre_smoke_delay" ¦ "rand_pre_smoke" ¦ "rand_hatch_normal_explosion" ¦ "normal_cookoff" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/if/if/if/delay` | block | [num num]x6 | 1 | 6 | 11 11 ¦ 12 12 ¦ 7 7 ¦ 250 100 ¦ 30 30 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
-| `/on/if/if/if/if/delay/call_synced` | block | [str]x6 | 1 | 6 | "cookoff_rand_explosion" | 미확인(자동) |  |  | hatch fire ¦ stops human burn damage and fire fx |
+| `/on/if/if/if/if/delay/call_synced` | block | [str]x6 | 1 | 6 | "cookoff_rand_explosion" | 미확인(자동) |  |  | hatch fire ¦ slow burn no cookoff |
 | `/on/if/if/if/if/if` | block | [atom atom str]x1 | 1 | 1 | not tagged "wheel_destroyed" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
 | `/on/if/if/if/if/if/chassis_work` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | fixes wheel break's "up impluse" from disabling movement on ground |
 | `/on/if/if/if/if/set_idle_animation` | block | [str]x10 [str str str str]x2 | 1 | 12 | "idle_cover_stand_hide" ¦ "idle_cover_stand_empty" ¦ "stand_look_around_gun" ¦ "idle_cover_stand" ¦ "stand_idle_strap_1" "stand_idle_strap_2" "stand_idle_strap_3" "stand_idle_strap_4" ¦ "stand_idle_empty_1" "stand_idle_empty_2" "stand_idle_empty_3" "stand_idle_empty_4" | 미확인(자동) |  |  | this will pick a random animation from the list |
@@ -6378,11 +6378,11 @@
 | `/sequence/smooth` | block | [num]x304 | 2 | 304 | 0 ~ 0.7 | 미확인(자동) |  |  |  |
 | `/sequence/speed` | block | [num]x647 | 2 | 647 | 0.15 ~ 4 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
 | `/simulation` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
-| `/simulation/able` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
-| `/simulation/state` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/simulation/able` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/simulation/state` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/simulatorid` | block | [str]x3 | 3 | 3 | "pillar" | 미확인(자동) |  |  |  |
 | `/skeleton` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
-| `/skeleton/bone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  | Land;"}} ¦ Land;Align;"}} |
+| `/skeleton/bone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x1 | 1 | 1 | 0 0 1 0 -1 0 1 0 0 0 0 -0.5 | 미확인(자동) |  |  |  |
 | `/skeleton/texmods` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/texmods/"*"` | block | [str str]x95 | 2 | 95 | 예: "Autumn" "aut" | 미확인(자동) |  |  |  |
@@ -6401,7 +6401,7 @@
 | `/spriteview/sprite/prescaley` | block | [expr]x1 | 1 | 1 | ( * 0.4 %scale ) | 미확인(자동) |  |  |  |
 | `/spriteview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/start` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  | games played : starting CP of each match |
-| `/state` | block | [str]x168 | 11 | 168 | 예: "stand_bazooka_pick" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/state` | block | [str]x168 | 11 | 168 | 예: "stand_bazooka_pick" | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
 | `/state/condition` | block | [str]x25 | 6 | 25 | 예: "board" | 미확인(자동) |  |  |  |
 | `/state/from` | block | [str]x57 | 10 | 57 | "stand" ¦ "lie" ¦ "snipe" ¦ "squat" ¦ "walk" ¦ "board" ¦ "lie_aim" ¦ "squat_aim" ¦ "stand_noaim" ¦ "throwoff_end" | 미확인(자동) |  |  |  |
 | `/state/fromtagged` | block | [str]x23 | 2 | 23 | "up" ¦ "snipe" ¦ "squat" ¦ "onboard" ¦ "down" ¦ "swim" ¦ "healing" ¦ "cover" | 미확인(자동) |  |  |  |
@@ -6417,7 +6417,7 @@
 | `/switch` | block | [str]x1 | 1 | 1 | "walk" | 미확인(자동) |  |  |  |
 | `/switch/link` | block | [str str]x4 | 1 | 4 | "stand" "walk" ¦ "stand" "walk_switch_move" ¦ "stand_recoil" "walk_recoil" ¦ "stand_bolt" "walk_bolt" | 미확인(자동) |  |  | { link <from> <to> } |
 | `/switch/split` | block | [num str str]x2 | 1 | 2 | 0 "stand" "walk" ¦ 0 "stand_aim" "walk" | 미확인(자동) |  |  | { split <index> <from> <to> } |
-| `/talk` | block | [str]x80 []x2 | 5 | 82 | 예: | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/talk` | block | [str]x80 []x2 | 5 | 82 | 예: | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/talk/("cannon_phrases")` | macro | [atom atom]x21 | 1 | 21 | 예: args alert | 미확인(자동) |  |  |  |
 | `/talk/("human_phrases")` | macro | [atom atom]x32 | 1 | 32 | 예: args ally_die | 미확인(자동) |  |  |  |
 | `/talk/("tank_phrases")` | macro | [atom atom]x27 | 1 | 27 | 예: args enemy_is_destroyed | 미확인(자동) |  |  |  |
@@ -6430,12 +6430,12 @@
 | `/tpc_zclip` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
 | `/treeview` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/treeview/folder` | block | [str]x2 | 2 | 2 | "/interface/skin/game/treeview/" | 미확인(자동) |  |  |  |
-| `/unitlimits` | block | [str]x3 | 3 | 3 | "officer=2;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1" ¦ "officer=2;flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;" ¦ "officer=2;flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/unitlimits` | block | [str]x3 | 3 | 3 | "officer=2;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1" ¦ "officer=2;flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;" ¦ "officer=2;flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/video_dialog` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/video_dialog/face_color` | block | [str]x2 | 2 | 2 | "0 0 0" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/video_dialog/face_color` | block | [str]x2 | 2 | 2 | "0 0 0" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/video_dialog/subtitle_text_style` | block | [str]x2 | 2 | 2 | "e(shadow)f(anka)s(15)c(255 255 255)" ¦ "e(shadow)f(open_sans)s(30)c(185 199 199)" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x32 [atom str]x3 | 11 | 35 | 예: "rock" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/volume/able` | block | []x13 [atom]x4 | 7 | 17 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrollable actions |
+| `/volume/able` | block | []x13 [atom]x4 | 7 | 17 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/volume/able/blast` | block | [num]x2 []x2 | 3 | 4 | 1 | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
 | `/volume/able/bullet` | block | []x1 [num]x1 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -6483,7 +6483,7 @@
 | `/(define "vehicles")/("vehicle.small.all")` | macro | [call:cost]x1 | 1 | 1 | cost ( %cost ) | 미확인(자동) |  |  |  |
 | `/attackrate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/attackrate/"*"` | block | [str]x15 | 1 | 15 | 예: "weapon pistol" | 미확인(자동) |  |  |  |
-| `/attackrate/"*"/human` | block | [num]x15 | 1 | 15 | 0.2 ~ 5 | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/attackrate/"*"/human` | block | [num]x15 | 1 | 15 | 0.2 ~ 5 | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/attackrate/"*"/tank` | block | [num]x15 | 1 | 15 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/camera` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | in reality it did not have zoom3 ¦ magnification x4 |
 | `/camera_clip` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -6520,7 +6520,7 @@
 | `/camera/perspective/fov` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  | cut off |
 | `/camera/perspective/viewangle` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  |  |
 | `/camera/sprint_fov_change` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/camera/sprint_fov_change/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/camera/sprint_fov_change/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/camera/sprint_fov_change/human/deg` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
 | `/camera/sprint_fov_change/human/sec` | block | [num]x1 | 1 | 1 | 0.3 | 미확인(자동) |  |  |  |
 | `/camera/sprint_fov_change/vehicle` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | main vision range displayed. |
@@ -6542,59 +6542,59 @@
 | `/commandset/squad/"*"` | block | [str]x5 | 1 | 5 | "$squad" ¦ "$squad_spread" ¦ "$squad_state" ¦ "$squad_create" ¦ "$squad_dismiss" | 미확인(자동) |  |  |  |
 | `/default_skin` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/button` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/button/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/button/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/button/face_color/disabled` | block | [str]x2 | 2 | 2 | "77 77 77" | 미확인(자동) |  |  | 64 |
 | `/default_skin/button/face_color/focused_keyboard` | block | [str]x2 | 2 | 2 | "69 69 69" ¦ "102 102 102" | 미확인(자동) |  |  |  |
 | `/default_skin/button/face_color/focused_mouse` | block | [str]x2 | 2 | 2 | "72 72 72" ¦ "122 122 122" | 미확인(자동) |  |  |  |
-| `/default_skin/button/face_color/normal` | block | [str]x2 | 2 | 2 | "66 66 66" ¦ "77 77 77" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/button/face_color/normal` | block | [str]x2 | 2 | 2 | "66 66 66" ¦ "77 77 77" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/button/face_color/pressed` | block | [str]x2 | 2 | 2 | "45 45 45" ¦ "178 178 178" | 미확인(자동) |  |  |  |
 | `/default_skin/button/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/button/text_style/disabled` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(disabled)c(55 55 55)" | 미확인(자동) |  |  | 64 |
 | `/default_skin/button/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(218 178 120)" ¦ "f(arial_hq)s(8)e(shadow)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/default_skin/button/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(218 178 120)" ¦ "f(arial_hq)s(8)e(shadow)c(255 255 255)" | 미확인(자동) |  |  |  |
-| `/default_skin/button/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(200 200 200)" ¦ "f(arial_hq)s(8)c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/button/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(200 200 200)" ¦ "f(arial_hq)s(8)c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/button/text_style/pressed` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(218 178 120)" ¦ "f(arial_hq)s(8)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/default_skin/checkbox` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/checkbox/check` | block | [str]x2 | 2 | 2 | "/interface/skin/editor/checkbox" | 미확인(자동) |  |  |  |
-| `/default_skin/checkbox/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/checkbox/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/checkbox/face_color/disabled` | block | [str]x2 | 2 | 2 | "40 40 40" | 미확인(자동) |  |  | 64 |
 | `/default_skin/checkbox/face_color/focused_keyboard` | block | [str]x2 | 2 | 2 | "84 84 84" | 미확인(자동) |  |  |  |
 | `/default_skin/checkbox/face_color/focused_mouse` | block | [str]x2 | 2 | 2 | "84 84 84" | 미확인(자동) |  |  |  |
-| `/default_skin/checkbox/face_color/normal` | block | [str]x2 | 2 | 2 | "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/checkbox/face_color/normal` | block | [str]x2 | 2 | 2 | "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/checkbox/face_color/pressed` | block | [str]x2 | 2 | 2 | "50 50 50" | 미확인(자동) |  |  |  |
 | `/default_skin/checkbox/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/checkbox/text_style/disabled` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)c(0 0 0)" | 미확인(자동) |  |  | 64 |
 | `/default_skin/checkbox/text_style/focused_keyboard` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/default_skin/checkbox/text_style/focused_mouse` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(255 255 255)" | 미확인(자동) |  |  |  |
-| `/default_skin/checkbox/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)c(220 220 220)" ¦ "f(arial_hq)s(8)c(225 225 225)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/checkbox/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)c(220 220 220)" ¦ "f(arial_hq)s(8)c(225 225 225)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/checkbox/text_style/pressed` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)e(shadow)c(200 200 200)" | 미확인(자동) |  |  |  |
 | `/default_skin/combobox` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/combobox/button` | block | [str]x2 | 2 | 2 | "/interface/skin/editor/down" | 미확인(자동) |  |  |  |
 | `/default_skin/combobox/drop_offset` | block | [str]x2 | 2 | 2 | "2" | 미확인(자동) |  |  |  |
 | `/default_skin/console` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/console/face_color` | block | [str]x2 | 2 | 2 | "22 22 22 220" ¦ "48 48 48 192" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/console/face_color` | block | [str]x2 | 2 | 2 | "22 22 22 220" ¦ "48 48 48 192" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/console/sel_text_color` | block | [str]x2 | 2 | 2 | "220 220 220" ¦ "255 255 255" | 미확인(자동) |  |  |  |
 | `/default_skin/console/text_style` | block | [str]x2 | 2 | 2 | "e(shadow)c(255 255 75)s(10)" ¦ "e(shadow)c(255 255 80)s(10)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/debug_console` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/debug_console/text_style` | block | [str]x2 | 2 | 2 | "e(shadow)f(arial_hq)s(10)" ¦ "e(shadow)f(arial_hq)s(9)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/dialog` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/dialog/face_color` | block | [str]x2 | 2 | 2 | "66 66 66" ¦ "77 77 77" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/dialog/face_color` | block | [str]x2 | 2 | 2 | "66 66 66" ¦ "77 77 77" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/dialog/frame_color` | block | [str]x2 | 2 | 2 | "45 45 45" ¦ "153 153 153" | 미확인(자동) |  |  |  |
 | `/default_skin/dialog/frame_size` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
 | `/default_skin/dialog/text_style` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(8)c(f4f3ee)" ¦ "f(arial_hq)s(8)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/dialogbox` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/dialogbox/title` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/dialogbox/title/active` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/dialogbox/title/active/face_color` | block | [str]x2 | 2 | 2 | "42 42 42" ¦ "102 0 0" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/dialogbox/title/active/face_color` | block | [str]x2 | 2 | 2 | "42 42 42" ¦ "102 0 0" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/dialogbox/title/active/text_style` | block | [str]x2 | 2 | 2 | "s(10)e(none)b+c(220 220 220)" ¦ "e(shadow)f(arial_hq)s(10)b+c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/dialogbox/title/close_button` | block | [str]x2 | 2 | 2 | "/interface/skin/editor/close" | 미확인(자동) |  |  |  |
-| `/default_skin/dialogbox/title/face_color` | block | [str]x2 | 2 | 2 | "45 44 43" ¦ "178 178 178" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/dialogbox/title/face_color` | block | [str]x2 | 2 | 2 | "45 44 43" ¦ "178 178 178" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/dialogbox/title/offset` | block | [num]x2 | 2 | 2 | 3 ~ 6 | 미확인(자동) |  |  |  |
 | `/default_skin/dialogbox/title/text_style` | block | [str]x2 | 2 | 2 | "e(none)s(10)b+c(150 150 150)" ¦ "e(none)f(arial_hq)s(10)b+c(0 0 0)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/group` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
 | `/default_skin/group/text_style` | block | [str]x2 | 2 | 2 | "e(shadow)b+c(224 224 224)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/hint` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/hint/face_color` | block | [str]x2 | 2 | 2 | "42 42 42 120" ¦ "0 0 0" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/hint/face_color` | block | [str]x2 | 2 | 2 | "42 42 42 120" ¦ "0 0 0" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/hint/frame_color` | block | [str]x2 | 2 | 2 | "40 40 40 100" ¦ "160 160 160" | 미확인(자동) |  |  |  |
 | `/default_skin/hint/offset` | block | [num]x2 | 2 | 2 | 5 ~ 12 | 미확인(자동) |  |  |  |
 | `/default_skin/hint/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(15)c(250 250 250)" ¦ "f(arial_hq)s(8)c(250 250 250)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
@@ -6605,24 +6605,24 @@
 | `/default_skin/inputline/modal_frame_color` | block | [str]x2 | 2 | 2 | "200 200 200" ¦ "255 255 255" | 미확인(자동) |  |  |  |
 | `/default_skin/inputline/ro_text_color` | block | [str]x2 | 2 | 2 | "200 200 200" ¦ "228 228 228" | 미확인(자동) |  |  |  |
 | `/default_skin/inputline/selection` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/inputline/selection/face_color` | block | [str]x2 | 2 | 2 | "218 178 120" ¦ "220 170 31" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/inputline/selection/face_color` | block | [str]x2 | 2 | 2 | "218 178 120" ¦ "220 170 31" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/inputline/selection/ro_face_color` | block | [str]x2 | 2 | 2 | "230 230 230" ¦ "155 104 0" | 미확인(자동) |  |  |  |
 | `/default_skin/inputline/selection/ro_text_color` | block | [str]x2 | 2 | 2 | "0 0 0" | 미확인(자동) |  |  |  |
 | `/default_skin/inputline/selection/text_color` | block | [str]x2 | 2 | 2 | "0 0 0" | 미확인(자동) |  |  |  |
 | `/default_skin/inputline/text_style` | block | [str]x2 | 2 | 2 | "c(218 178 120)f(arial_hq)s(8)" ¦ "c(255 255 255)f(arial_hq)s(8)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/listbox` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/default_skin/listbox/face_color` | block | [str]x2 | 2 | 2 | "62 62 62" ¦ "64 64 64" | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/listbox/face_color` | block | [str]x2 | 2 | 2 | "62 62 62" ¦ "64 64 64" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/listbox/folder` | block | [str]x2 | 2 | 2 | "/interface/skin/editor/listbox/" | 미확인(자동) |  |  |  |
 | `/default_skin/listbox/item` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
-| `/default_skin/listbox/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/listbox/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/listbox/item/face_color/focused` | block | [str]x2 | 2 | 2 | "218 178 120" ¦ "220 170 31" | 미확인(자동) |  |  |  |
-| `/default_skin/listbox/item/face_color/normal` | block | [str]x2 | 2 | 2 | "58 58 58" ¦ "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/listbox/item/face_color/normal` | block | [str]x2 | 2 | 2 | "58 58 58" ¦ "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/listbox/item/face_color/selected` | block | [str]x2 | 2 | 2 | "200 200 200" ¦ "140 140 255" | 미확인(자동) |  |  |  |
 | `/default_skin/listbox/item/selection_shrink` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/default_skin/listbox/item/text_offset` | block | [num]x2 | 2 | 2 | 2 | 미확인(자동) |  |  |  |
 | `/default_skin/listbox/item/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/listbox/item/text_style/focused` | block | [str]x2 | 2 | 2 | "f(arial_hq)c(22 22 22)" ¦ "f(arial_hq)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/default_skin/listbox/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)c(200 200 200)" ¦ "f(arial_hq)c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/listbox/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)c(200 200 200)" ¦ "f(arial_hq)c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/listbox/item/text_style/selected` | block | [str]x2 | 2 | 2 | "f(arial_hq)c(22 22 22)" ¦ "f(arial_hq)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/default_skin/resizer` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/resizer/color_working` | block | [str]x2 | 2 | 2 | "255 255 255 140" | 미확인(자동) |  |  |  |
@@ -6639,22 +6639,22 @@
 | `/default_skin/statusbar/text_style` | block | [str]x2 | 2 | 2 | "f(roboto_mono)s(8)c(200 200 200)" ¦ "f(arial_hq)s(8)c(200 200 200)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/treeview` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/default_skin/treeview/folder` | block | [str]x2 | 2 | 2 | "/interface/skin/editor/treeview/" | 미확인(자동) |  |  |  |
-| `/default_skin/treeview/folder/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/treeview/folder/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/treeview/folder/face_color/focused` | block | [str]x2 | 2 | 2 | "218 178 120" ¦ "220 170 31" | 미확인(자동) |  |  |  |
-| `/default_skin/treeview/folder/face_color/normal` | block | [str]x2 | 2 | 2 | "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/treeview/folder/face_color/normal` | block | [str]x2 | 2 | 2 | "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/treeview/folder/face_color/selected` | block | [str]x2 | 2 | 2 | "120 120 120" ¦ "140 140 255" | 미확인(자동) |  |  |  |
 | `/default_skin/treeview/folder/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/treeview/folder/text_style/focused` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(9)b+c(30 30 30)" ¦ "f(arial_hq)s(9)b+c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/default_skin/treeview/folder/text_style/normal` | block | [str]x2 | 2 | 2 | "e(shadow)f(arial_hq)s(9)b+c(245 245 245)" ¦ "e(shadow)f(arial_hq)s(9)b+c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/treeview/folder/text_style/normal` | block | [str]x2 | 2 | 2 | "e(shadow)f(arial_hq)s(9)b+c(245 245 245)" ¦ "e(shadow)f(arial_hq)s(9)b+c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/treeview/folder/text_style/selected` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(9)b+c(30 30 30)" ¦ "f(arial_hq)s(9)b+c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/default_skin/treeview/item` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
-| `/default_skin/treeview/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 178 55 55 55 ¦ 50 50 50 |
+| `/default_skin/treeview/item/face_color` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/default_skin/treeview/item/face_color/focused` | block | [str]x2 | 2 | 2 | "40 40 40" ¦ "220 170 31" | 미확인(자동) |  |  |  |
-| `/default_skin/treeview/item/face_color/normal` | block | [str]x2 | 2 | 2 | "64 64 124" ¦ "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/treeview/item/face_color/normal` | block | [str]x2 | 2 | 2 | "64 64 124" ¦ "64 64 64" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/treeview/item/face_color/selected` | block | [str]x2 | 2 | 2 | "120 120 120" ¦ "140 140 255" | 미확인(자동) |  |  |  |
 | `/default_skin/treeview/item/text_style` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ 210 54 99 |
 | `/default_skin/treeview/item/text_style/focused` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(9)c(218 178 120)" ¦ "f(arial_hq)s(9)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/default_skin/treeview/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(9)c(200 200 200)" ¦ "f(arial_hq)s(9)c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/default_skin/treeview/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(9)c(200 200 200)" ¦ "f(arial_hq)s(9)c(255 255 255)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/default_skin/treeview/item/text_style/selected` | block | [str]x2 | 2 | 2 | "f(arial_hq)s(9)c(30 30 30)" ¦ "f(arial_hq)s(9)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/dlc` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/dlc/"*"` | block | [str num]x5461 [str str]x4698 | 1 | 10159 | 예: "fin_arty_1" 1911520 | 미확인(자동) |  |  |  |
@@ -6786,7 +6786,7 @@
 | `/editor/view/zone` | block | [str]x1 | 1 | 1 | "flag" | 미확인(자동) |  |  |  |
 | `/hitpoints` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/hitpoints/"*"` | block | [str]x7 | 1 | 7 | "human" ¦ "armored_car" ¦ "canon" ¦ "cannon" ¦ "moto" ¦ "tank" ¦ "vehicle" | 미확인(자동) |  |  |  |
-| `/hitpoints/"*"/human` | block | [num]x7 | 1 | 7 | 0 ~ 3 | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/hitpoints/"*"/human` | block | [num]x7 | 1 | 7 | 0 ~ 3 | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/hitpoints/"*"/tank` | block | [num]x7 | 1 | 7 | 0 ~ 2 | 미확인(자동) |  |  |  |
 | `/lens_effects` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/lens_effects/damage_indicator` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -6979,7 +6979,7 @@
 | `/main_menu_black_skin/checkbox/text_style/disabled` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/main_menu_black_skin/checkbox/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/main_menu_black_skin/checkbox/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/main_menu_black_skin/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/main_menu_black_skin/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/main_menu_black_skin/checkbox/text_style/pressed` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/main_menu_dark_skin` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/main_menu_dark_skin_small` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -6990,7 +6990,7 @@
 | `/main_menu_dark_skin_small/checkbox/text_style/disabled` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/main_menu_dark_skin_small/checkbox/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(198 198 198)" | 미확인(자동) |  |  |  |
 | `/main_menu_dark_skin_small/checkbox/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(198 198 198)" | 미확인(자동) |  |  |  |
-| `/main_menu_dark_skin_small/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(219 212 203)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/main_menu_dark_skin_small/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(219 212 203)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/main_menu_dark_skin_small/checkbox/text_style/pressed` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(198 198 198)" | 미확인(자동) |  |  |  |
 | `/main_menu_dark_skin/(include)` | include | [str call:fs]x1 | 1 | 1 | "main_menu_dark_skin.inc" fs ( 15 ) | 미확인(자동) |  |  |  |
 | `/main_menu_dark_skin/checkbox` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -6999,7 +6999,7 @@
 | `/main_menu_dark_skin/checkbox/text_style/disabled` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/main_menu_dark_skin/checkbox/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(198 198 198)" | 미확인(자동) |  |  |  |
 | `/main_menu_dark_skin/checkbox/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(198 198 198)" | 미확인(자동) |  |  |  |
-| `/main_menu_dark_skin/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(219 212 203)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/main_menu_dark_skin/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(219 212 203)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/main_menu_dark_skin/checkbox/text_style/pressed` | block | [str]x1 | 1 | 1 | "f(anka)s(17)p(0)c(198 198 198)" | 미확인(자동) |  |  |  |
 | `/main_menu_skin` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/main_menu_skin_radio` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -7010,7 +7010,7 @@
 | `/main_menu_skin_radio/checkbox/text_style/disabled` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/main_menu_skin_radio/checkbox/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/main_menu_skin_radio/checkbox/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/main_menu_skin_radio/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/main_menu_skin_radio/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/main_menu_skin_radio/checkbox/text_style/pressed` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/main_menu_skin_small` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/main_menu_skin_small/(include)` | include | [str call:fs]x1 | 1 | 1 | "main_menu_skin.inc" fs ( 15 ) | 미확인(자동) |  |  |  |
@@ -7020,7 +7020,7 @@
 | `/main_menu_skin_small/checkbox/text_style/disabled` | block | [str]x1 | 1 | 1 | "f(open_sans)s(21)c(128 128 128)" | 미확인(자동) |  |  | 64 |
 | `/main_menu_skin_small/checkbox/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "f(open_sans)s(21)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/main_menu_skin_small/checkbox/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "f(open_sans)s(21)c(255 255 255)" | 미확인(자동) |  |  |  |
-| `/main_menu_skin_small/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(21)c(171 171 171)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/main_menu_skin_small/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(21)c(171 171 171)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/main_menu_skin_small/checkbox/text_style/pressed` | block | [str]x1 | 1 | 1 | "f(open_sans)s(21)c(255 255 255)" | 미확인(자동) |  |  |  |
 | `/main_menu_skin/(include)` | include | [str call:fs]x1 | 1 | 1 | "main_menu_skin.inc" fs ( 18 ) | 미확인(자동) |  |  |  |
 | `/main_menu_skin/checkbox` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -7029,7 +7029,7 @@
 | `/main_menu_skin/checkbox/text_style/disabled` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(100 100 100)" | 미확인(자동) |  |  | 64 |
 | `/main_menu_skin/checkbox/text_style/focused_keyboard` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/main_menu_skin/checkbox/text_style/focused_mouse` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
-| `/main_menu_skin/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/main_menu_skin/checkbox/text_style/normal` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/main_menu_skin/checkbox/text_style/pressed` | block | [str]x1 | 1 | 1 | "f(open_sans)s(18)p(0)c(0 0 0)" | 미확인(자동) |  |  |  |
 | `/map_entity_browser` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/map_entity_browser/preset` | block | [str]x8 | 1 | 8 | "all" ¦ "construction" ¦ "house" ¦ "fence" ¦ "landscape" ¦ "flora" ¦ "fauna" ¦ "fx" | 미확인(자동) |  |  |  |
@@ -7107,7 +7107,7 @@
 | `/obstacles/fire/("marines")` | macro | [call:cost]x1 | 1 | 1 | cost ( 200 ) | 미확인(자동) |  |  |  |
 | `/obstacles/fire/("vehicles")` | macro | [call:cost]x1 | 1 | 1 | cost ( 200 ) | 미확인(자동) |  |  |  |
 | `/obstacles/fire/flag_damage` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/obstacles/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/obstacles/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/obstacles/human_impassable` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/obstacles/human_impassable/"*"` | block | [str num]x5 | 1 | 5 | "human" -1 ¦ "human_prone" -1 ¦ "human_tpc" -1 ¦ "human_flying" 0 ¦ "animal" -1 | 미확인(자동) |  |  |  |
 | `/obstacles/human_impassable/("airborne")` | macro | [call:cost]x1 | 1 | 1 | cost ( 0 ) | 미확인(자동) |  |  |  |
@@ -7323,12 +7323,12 @@
 | `/"*"/level/cover/recoil` | block | [num]x48 | 6 | 48 | 1.5 ~ 7.5 | 미확인(자동) |  |  | weapon recoil, the higher the weaker ¦ recoil multiplier for all machine guns |
 | `/"*"/level/cover/sway` | block | [num]x48 | 6 | 48 | 0.1 | 미확인(자동) |  |  | weapon sway in zoom, the higher the stronger |
 | `/"*"/level/cover/zoom_recoil` | block | [num]x48 | 6 | 48 | 1.75 ~ 10 | 미확인(자동) |  |  | weapon recoil in zoom, the higher the weaker |
-| `/"*"/level/crawl` | block | []x48 | 6 | 48 | 예: | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
+| `/"*"/level/crawl` | block | []x48 | 6 | 48 | 예: | 미확인(자동) |  |  | "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. ¦ "crawl" stance - in cover |
 | `/"*"/level/crawl/accuracy` | block | [num]x48 | 6 | 48 | 0.75 ~ 2.51 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
 | `/"*"/level/crawl/recoil` | block | [num]x48 | 6 | 48 | 1.5 ~ 10 | 미확인(자동) |  |  | weapon recoil, the higher the weaker ¦ recoil multiplier for all machine guns |
 | `/"*"/level/crawl/sway` | block | [num]x48 | 6 | 48 | 0.1 | 미확인(자동) |  |  | weapon sway in zoom, the higher the stronger |
 | `/"*"/level/crawl/zoom_recoil` | block | [num]x48 | 6 | 48 | 1.75 ~ 15 | 미확인(자동) |  |  | weapon recoil in zoom, the higher the weaker |
-| `/"*"/level/squat` | block | []x48 | 6 | 48 | 예: | 미확인(자동) |  |  | "squat" stance - in cover ¦ "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) |
+| `/"*"/level/squat` | block | []x48 | 6 | 48 | 예: | 미확인(자동) |  |  | "squat" stance - moving. Also serves as default if other conditions are not defined in this block. (doesn't apply, squat motion doesn't exist in Gem2) ¦ "squat" stance - in cover |
 | `/"*"/level/squat/accuracy` | block | [num]x48 | 6 | 48 | 0.6 ~ 2.11 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
 | `/"*"/level/squat/recoil` | block | [num]x48 | 6 | 48 | 1 ~ 1.6 | 미확인(자동) |  |  | weapon recoil, the higher the weaker ¦ recoil multiplier for all machine guns |
 | `/"*"/level/squat/sway` | block | [num]x48 | 6 | 48 | 0.4 ~ 0.75 | 미확인(자동) |  |  | weapon sway in zoom, the higher the stronger |
@@ -7422,7 +7422,7 @@
 | `/("squad_with9types_doc_i")` | macro | [call:side call:name call:d call:period call:scf call:cd call:ci call:g call:c1 call:c2 call:c3 call:c4 call:c5 call:c6 call:c7 call:c8 call:c9 call:b call:i call:t]x32 | 6 | 32 | 예: side ( ger ) name ( squad_pz_pio_early_off_3 ) d ( early_ger_offensive ) period ( early ) scf ( 1 ) cd ( 0 ) ci ( 90 ) g ( squad_2 ) c1 ( pz_pio_sl:1 ) c2 ( pz_pio_sl_asst:1 ) c3 ( pz_pio_at_rifle:1 ) c4 ( pz_pio_rifle_gren:3 ) c5 ( pz_pio_rifle_mine:2 ) c6 ( pz_pio_flame:1 ) c7 ( pz_pio_mg:1 ) c8 ( pz_pio_mg_asst:1 ) c9 ( pz_pio_mg_ammo_carrier:1 ) b ( inf1 ) i ( 102 ) t ( ) | 미확인(자동) |  |  |  |
 | `/("squad_with9types_doc")` | macro | [call:side call:name call:d call:period call:scf call:cd call:ci call:g call:c1 call:c2 call:c3 call:c4 call:c5 call:c6 call:c7 call:c8 call:c9 call:b call:t]x3 | 1 | 3 | side ( ger ) name ( squad_fallschirm_mid_irr ) d ( mid_ger_irregular ) period ( mid ) scf ( 1 ) cd ( 330 ) ci ( 330 ) g ( squad_4 ) c1 ( fallsch_sl:1 ) c2 ( fallsch_sl_asst:1 ) c3 ( fallsch_rifle_marksman:1 ) c4 ( fallsch_smg:1 ) c5 ( fallsch_sa:1 ) c6 ( fallsch_rifle_grenadier:1 ) c7 ( fallsch_rifle:2 ) c8 ( fallsch_mg:2 ) c9 ( fallsch_mg_asst:2 ) b ( inf1 ) t ( ) ¦ side ( ger ) name ( squad_pz_pio_mid_off ) d ( mid_ger_offensive ) period ( mid ) scf ( 1 ) cd ( 0 ) ci ( 90 ) g ( squad_2 ) c1 ( pz_pio_sl:1 ) c2 ( pz_pio_sl_asst:1 ) c3 ( pz_pio_rifle:3 ) c4 ( pz_pio_rifle_gren:2 ) c5 ( pz_pio_rifle_mine:1 ) c6 ( pz_pio_flame:1 ) c7 ( pz_pio_mg:1 ) c8 ( pz_pio_mg_asst:1 ) c9 ( pz_pio_mg_ammo_carrier:1 ) b ( inf1 ) t ( ) ¦ side ( ger ) name ( squad_fallschirm_mid_off ) d ( mid_ger_offensive ) period ( mid ) scf ( 1 ) cd ( 330 ) ci ( 330 ) g ( squad_4 ) c1 ( fallsch_sl:1 ) c2 ( fallsch_sl_asst:1 ) c3 ( fallsch_rifle_marksman:1 ) c4 ( fallsch_smg:1 ) c5 ( fallsch_sa:1 ) c6 ( fallsch_rifle_grenadier:1 ) c7 ( fallsch_rifle:2 ) c8 ( fallsch_mg:2 ) c9 ( fallsch_mg_asst:2 ) b ( inf1 ) t ( ) | 미확인(자동) |  |  |  |
 | `/(define "bot_state")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "bot_state")/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ only affects players on team A users (not bots) |
+| `/(define "bot_state")/balancingfactorbonus` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | only affects players on team A (not bots) ¦ overridden in dynamic campaign difficulty files |
 | `/(define "bot_state")/balancingfactorbonus/cp` | block | [param]x1 | 1 | 1 | %cp | 미확인(자동) |  |  | source code only supports 6 values |
 | `/(define "bot_state")/balancingfactorbonus/mpfinish` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "bot_state")/balancingfactorbonus/mpstart` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
@@ -7442,7 +7442,7 @@
 | `/(define "bot_state")/chargefactors` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bot_state")/chargefactors/customize` | block | [str]x1 | 1 | 1 | "0;0.5;1.0;1.5;2.0;2.5;5.0;10.0" | 미확인(자동) |  |  | 0.25;0.5;1;2"} ¦ 0.5;1.0;1.5;2.0;2.5;5.0;10.0"} |
 | `/(define "bot_state")/chargefactors/value` | block | [str]x1 | 1 | 1 | "*=0" | 미확인(자동) |  |  |  |
-| `/(define "bot_state")/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;artillery=2;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1"} |
+| `/(define "bot_state")/unitlimits` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit3b=3;limit4=4;limit5=5;limit10=10"} ¦ flamer=3;sniper=5;squad_1=5;squad_4=5;signaller=1;signaller_heavy=1;limit1=1;limit1a=1;limit1b=1;limit2=2;limit2a=2;limit3=3;limit3a=3;limit4=4;limit5=5;limit10=10;heavyaa=1;limitf1=1;limitf1a=1;limitf1b=1;miner=4;engtruck=1;builder=2;"} |
 | `/(define "bot_state")/unitset` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bot_state")/unitset/available` | block | [str]x1 | 1 | 1 | "all infantry sniper armor light medium heavy artillery airborne mechanized" | 미확인(자동) |  |  |  |
 | `/(define "bot_state")/unitset/value` | block | [str]x1 | 1 | 1 | "conquest" | 미확인(자동) |  |  |  |
@@ -9084,9 +9084,9 @@
 | `/(define "squad_with9types")/"*"/squad_cost_factor` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | Cost is NOT the addition of the elements making up the unit, because it is overriden by the doctrine cost. |
 | `/(define "squad_with9types")/"*"/tags` | block | [str]x1 | 1 | 1 | "all infantry %side %t %period" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "supply_ap")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_ap")/cost_ap` | block | [expr]x1 | 1 | 1 | ( * %supply 0.15 ) | 미확인(자동) |  |  | multiplier = {ResupplyCost} rate in resource settings. supply = quantity of supply vehicle comes with ¦ multiplier = {ResupplyCost} rate in resource settings. liters = quantity of fuel vehicle comes with |
+| `/(define "supply_ap")/cost_ap` | block | [expr]x1 | 1 | 1 | ( * %supply 0.15 ) | 미확인(자동) |  |  | multiplier = {ResupplyCost} rate in resource settings. liters = quantity of fuel vehicle comes with ¦ multiplier = {ResupplyCost} rate in resource settings. supply = quantity of supply vehicle comes with |
 | `/(define "supply_fp")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_fp")/cost_ap` | block | [expr]x1 | 1 | 1 | ( * %liters 0.25 ) | 미확인(자동) |  |  | multiplier = {ResupplyCost} rate in resource settings. supply = quantity of supply vehicle comes with ¦ multiplier = {ResupplyCost} rate in resource settings. liters = quantity of fuel vehicle comes with |
+| `/(define "supply_fp")/cost_ap` | block | [expr]x1 | 1 | 1 | ( * %liters 0.25 ) | 미확인(자동) |  |  | multiplier = {ResupplyCost} rate in resource settings. liters = quantity of fuel vehicle comes with ¦ multiplier = {ResupplyCost} rate in resource settings. supply = quantity of supply vehicle comes with |
 | `/(define "towed_2gun_doctrine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "towed_2gun_doctrine")/("generic_d")` | macro | [call:t]x1 | 1 | 1 | t ( %side %period ) | 미확인(자동) |  |  |  |
 | `/(define "towed_2gun_doctrine")/content` | block | [str]x1 | 1 | 1 | "%vehicle ( mp/%side/%period/%crew_v ) %cannon ( mp/%side/%period/%crew_c ) %vehicle ( mp/%side/%period/%crew_v ) %cannon ( mp/%side/%period/%crew_c )" | 미확인(자동) |  |  |  |
@@ -9141,7 +9141,7 @@
 | `/avoidance/level/fire` | block | [num]x8 | 1 | 8 | 0.1 ~ 0.3 | 미확인(자동) |  |  | adds heating to unit (potential to set other items on fire due to proximity) |
 | `/avoidance/level/knockdown_melee` | block | [num]x8 | 1 | 8 | 0 ~ 0.65 | 미확인(자동) |  |  |  |
 | `/ballistics` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/ballistics/curve` | block | [str]x11 | 1 | 11 | "bullet" ¦ "bullet_sniper" ¦ "autorifle" ¦ "assaultrifle" ¦ "bullet_mg" ¦ "bullet_hmg" ¦ "bullet_smg" ¦ "bullet_pistol" ¦ "shotgun" ¦ "gun_autocannon" ¦ "gun_std" | 미확인(자동) |  |  | assault rifles (stg), damage 65 ¦ pistols |
+| `/ballistics/curve` | block | [str]x11 | 1 | 11 | "bullet" ¦ "bullet_sniper" ¦ "autorifle" ¦ "assaultrifle" ¦ "bullet_mg" ¦ "bullet_hmg" ¦ "bullet_smg" ¦ "bullet_pistol" ¦ "shotgun" ¦ "gun_autocannon" ¦ "gun_std" | 미확인(자동) |  |  | pistols ¦ sub-machine guns, damage 55 |
 | `/ballistics/curve/#row` | block | [num num]x56 | 1 | 56 | 예: 0.05 3.60 | 미확인(자동) |  |  |  |
 | `/blow` | block | []x13 | 13 | 13 | 예: | 미확인(자동) |  |  | punch ¦ rifle bayonet stab |
 | `/blow/distance` | block | [atom]x13 | 13 | 13 | near ¦ medium ¦ far | 미확인(자동) |  |  | activation distance |
@@ -9230,7 +9230,7 @@
 | `/duration/long/landscape/point_6_1` | block | [str num num]x1 | 1 | 1 | "winter" 0.82 0.3 | 미확인(자동) |  |  |  |
 | `/duration/long/landscape/point_6_2` | block | [str num num]x1 | 1 | 1 | "wood" 0.82 0.5 | 미확인(자동) |  |  |  |
 | `/duration/long/landscape/point_6_3` | block | [str num num]x1 | 1 | 1 | "desert" 0.82 0.7 | 미확인(자동) |  |  |  |
-| `/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/duration/normal/enablecount` | block | [num num num num num]x1 | 1 | 1 | 1 2 3 2 1 | 미확인(자동) |  |  | not including headquarters ¦ not including headquarters (columns and maps (rows) for campaign map |
 | `/duration/normal/initiallyconqueredcolumns` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | initially player owned columns |
 | `/duration/normal/landscape` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -9342,7 +9342,7 @@
 | `/easy/duration/long/progressstart` | block | [num]x1 | 1 | 1 | 0.2 | 미확인(자동) |  |  |  |
 | `/easy/duration/long/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/easy/duration/long/stageunlock` | block | [str]x1 | 1 | 1 | "1:2 3:3 5:4 10:5" | 미확인(자동) |  |  |  |
-| `/easy/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/easy/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/easy/duration/normal/bots` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/easy/duration/normal/bots/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/easy/duration/normal/flagcount` | block | [str]x1 | 1 | 1 | "1:1 2:3 2:3 2:3 3:5 3:5 3:5 3:5 3:5 4:5 4:5 4:5 4:5 4:5 4:7 4:7 4:7 4:7 4:7 5:9 5:9 5:9 5:9 5:9" | 미확인(자동) |  |  | each entry is 1 game played. # of flags enabled : # of flags total on map |
@@ -9525,7 +9525,7 @@
 | `/environment/light/specularpower` | block | [num]x392 | 392 | 392 | 0 ~ 30 | 미확인(자동) |  |  |  |
 | `/environment/light/sun_moon_radius` | block | [num]x607 [atom]x2 | 609 | 609 | 0 ~ 5 | 미확인(자동) |  |  |  |
 | `/environment/light/tone_mapping` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
-| `/environment/light/tone_mapping/curve` | block | [str]x609 | 609 | 609 | "/set/curves/tonemapping/exp6.bzc" ¦ "/set/curves/tonemapping/default.bzc" ¦ "/set/curves/tonemapping/balanced4.bzc" ¦ "/set/curves/tonemapping/smooth1.bzc" ¦ "/set/curves/tonemapping/exp1.bzc" ¦ "/set/curves/tonemapping/smooth2.bzc" ¦ "/set/curves/tonemapping/dark.bzc" ¦ "/set/curves/tonemapping/exp1lo.bzc" ¦ "/set/curves/tonemapping/dark2.bzc" ¦ "set/curves/tonemapping/default.bzc" ¦ "/set/curves/tonemapping/exp5.bzc" ¦ "/set/curves/tonemapping/exp3.bzc" | 미확인(자동) |  |  | assault rifles (stg), damage 65 ¦ pistols |
+| `/environment/light/tone_mapping/curve` | block | [str]x609 | 609 | 609 | "/set/curves/tonemapping/exp6.bzc" ¦ "/set/curves/tonemapping/default.bzc" ¦ "/set/curves/tonemapping/balanced4.bzc" ¦ "/set/curves/tonemapping/smooth1.bzc" ¦ "/set/curves/tonemapping/exp1.bzc" ¦ "/set/curves/tonemapping/smooth2.bzc" ¦ "/set/curves/tonemapping/dark.bzc" ¦ "/set/curves/tonemapping/exp1lo.bzc" ¦ "/set/curves/tonemapping/dark2.bzc" ¦ "set/curves/tonemapping/default.bzc" ¦ "/set/curves/tonemapping/exp5.bzc" ¦ "/set/curves/tonemapping/exp3.bzc" | 미확인(자동) |  |  | pistols ¦ sub-machine guns, damage 55 |
 | `/environment/light/tone_mapping/max_white_percentile` | block | [num]x609 | 609 | 609 | 0 ~ 3 | 미확인(자동) |  |  |  |
 | `/environment/light/tone_mapping/min_mapping_range` | block | [num]x609 | 609 | 609 | 0 ~ 3 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
@@ -9550,7 +9550,7 @@
 | `/environment/ocean_wave_works/lake_settings/shore/displacement_intensity` | block | [num]x609 | 609 | 609 | 0.02 ~ 0.56 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/shore/foam_intensity` | block | [num]x609 | 609 | 609 | 0.17 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/shore/height_factor` | block | [num]x609 | 609 | 609 | 0.56 ~ 2 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/lake_settings/shore/length` | block | [num]x609 | 609 | 609 | 2 ~ 11.8 | 미확인(자동) |  |  | 0.6 meters per animation ¦ meters per animation |
+| `/environment/ocean_wave_works/lake_settings/shore/length` | block | [num]x609 | 609 | 609 | 2 ~ 11.8 | 미확인(자동) |  |  | meters per animation ¦ 0.6 meters per animation |
 | `/environment/ocean_wave_works/lake_settings/shore/shore_parallelness` | block | [num]x609 | 609 | 609 | 0.17 ~ 0.91 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/shore/speed` | block | [num]x609 | 609 | 609 | 0.5 ~ 3.4 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
 | `/environment/ocean_wave_works/lake_settings/waves` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
@@ -9583,7 +9583,7 @@
 | `/environment/ocean_wave_works/river_settings/shore/displacement_intensity` | block | [num]x609 | 609 | 609 | 0 ~ 0.56 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/shore/foam_intensity` | block | [num]x609 | 609 | 609 | 0.17 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/shore/height_factor` | block | [num]x609 | 609 | 609 | 0.416 ~ 2 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/river_settings/shore/length` | block | [num]x609 | 609 | 609 | 2 ~ 37.28 | 미확인(자동) |  |  | 0.6 meters per animation ¦ meters per animation |
+| `/environment/ocean_wave_works/river_settings/shore/length` | block | [num]x609 | 609 | 609 | 2 ~ 37.28 | 미확인(자동) |  |  | meters per animation ¦ 0.6 meters per animation |
 | `/environment/ocean_wave_works/river_settings/shore/shore_parallelness` | block | [num]x609 | 609 | 609 | 0.17 ~ 0.91 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/shore/speed` | block | [num]x609 | 609 | 609 | 0.5 ~ 7.315 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
 | `/environment/ocean_wave_works/river_settings/waves` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
@@ -9616,7 +9616,7 @@
 | `/environment/ocean_wave_works/sea_settings/shore/displacement_intensity` | block | [num]x609 | 609 | 609 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/shore/foam_intensity` | block | [num]x609 | 609 | 609 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/shore/height_factor` | block | [num]x609 | 609 | 609 | 0.4 ~ 2 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/sea_settings/shore/length` | block | [num]x609 | 609 | 609 | 2 ~ 100 | 미확인(자동) |  |  | 0.6 meters per animation ¦ meters per animation |
+| `/environment/ocean_wave_works/sea_settings/shore/length` | block | [num]x609 | 609 | 609 | 2 ~ 100 | 미확인(자동) |  |  | meters per animation ¦ 0.6 meters per animation |
 | `/environment/ocean_wave_works/sea_settings/shore/shore_parallelness` | block | [num]x609 | 609 | 609 | 0 ~ 0.93 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/shore/speed` | block | [num]x609 | 609 | 609 | 0.5 ~ 12.1 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
 | `/environment/ocean_wave_works/sea_settings/waves` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
@@ -9674,7 +9674,7 @@
 | `/game/maxplayers` | block | [num]x1 | 1 | 1 | 8 | 미확인(자동) |  |  |  |
 | `/game/minplayers` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/game/order` | block | [num]x5 | 5 | 5 | -1 ~ 100 | 미확인(자동) |  |  |  |
-| `/game/parameters` | block | [str]x5 | 5 | 5 | "flag_count=10:1:1,15:1:5,20:1:7;base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0" ¦ "flag_count=3:3,5:5,7:7,9:9,11:11,13:13,15:15,17:16;points_table=0/0.000,0.05/0.75,0.50/1.00,0.68/1.25,0.81/1.50,1.00/3;flag_capture_time=60;flag_release_time=10;flag_capture_factor=0.9;invertedUnitScores=true;scoreStart=250;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0" ¦ "points_table_player=0/0.000,0.333/0.277,0.5/0.333,0.667/0.416,1.00/0.555;points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0" ¦ "base_capture_time=120;base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;" ¦ "flag_time=30;flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/game/parameters` | block | [str]x5 | 5 | 5 | "flag_count=10:1:1,15:1:5,20:1:7;base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0" ¦ "flag_count=3:3,5:5,7:7,9:9,11:11,13:13,15:15,17:16;points_table=0/0.000,0.05/0.75,0.50/1.00,0.68/1.25,0.81/1.50,1.00/3;flag_capture_time=60;flag_release_time=10;flag_capture_factor=0.9;invertedUnitScores=true;scoreStart=250;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0" ¦ "points_table_player=0/0.000,0.333/0.277,0.5/0.333,0.667/0.416,1.00/0.555;points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0" ¦ "base_capture_time=120;base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;" ¦ "flag_time=30;flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/game/presets` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/game/presets/"*"` | block | [str]x1 | 1 | 1 | "d:campaign" | 미확인(자동) |  |  |  |
 | `/game/presets/"*"/bots` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -9684,7 +9684,7 @@
 | `/game/presets/"*"/bots/hard/("bot_state")` | macro | [call:cp call:mpstart call:mpfinish call:payback]x1 | 1 | 1 | cp ( 1.00 ) mpStart ( 1 ) mpFinish ( 1 ) payback ( 0.0 ) | 미확인(자동) |  |  |  |
 | `/game/presets/"*"/bots/heroic` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/game/presets/"*"/bots/heroic/("bot_state")` | macro | [call:cp call:mpstart call:mpfinish call:payback]x1 | 1 | 1 | cp ( 1.00 ) mpStart ( 1 ) mpFinish ( 1 ) payback ( 0.0 ) | 미확인(자동) |  |  |  |
-| `/game/presets/"*"/bots/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/game/presets/"*"/bots/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/game/presets/"*"/bots/normal/("bot_state")` | macro | [call:cp call:mpstart call:mpfinish call:payback]x1 | 1 | 1 | cp ( 1.00 ) mpStart ( 1 ) mpFinish ( 1 ) payback ( 0.0 ) | 미확인(자동) |  |  |  |
 | `/game/presets/"*"/common` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/game/presets/"*"/common/unitset` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -9712,7 +9712,7 @@
 | `/game/settings/optionsadvanced` | block | [atom atom atom atom atom]x3 [atom atom atom atom atom atom atom]x1 | 4 | 4 | friendlyFire fogOfWar randomSpawnPoints showPiercing showDamageReports ¦ friendlyFire loseOnZeroPoints randomSpawnPoints scoreFinal fogOfWar showPiercing showDamageReports ¦ friendlyFire randomSpawnPoints fogOfWar showPiercing showDamageReports ¦ gameDuration friendlyFire fogOfWar showPiercing showDamageReports | 미확인(자동) |  |  |  |
 | `/game/settings/optionsranked` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/game/settings/pauseduringpreparation` | block | [atom]x1 | 1 | 1 | false | 미확인(자동) |  |  | controls if simulation is paused during preparation time |
-| `/game/settings/preparationtime` | block | [num]x5 | 5 | 5 | 15 ~ 1200 | 미확인(자동) |  |  | seconds. is sets how long before bot begins an attack when player is the defender. ¦ default time in seconds game is in "paused state" before game starts |
+| `/game/settings/preparationtime` | block | [num]x5 | 5 | 5 | 15 ~ 1200 | 미확인(자동) |  |  | default value ¦ seconds. is sets how long before bot begins an attack when player is the defender. |
 | `/game/settings/preparationtimemax` | block | [num]x4 | 4 | 4 | 60 ~ 300 | 미확인(자동) |  |  | maximum custom value (too long and defender gets too much of an advantage) |
 | `/game/settings/preparationtimemin` | block | [num]x4 | 4 | 4 | 0 ~ 180 | 미확인(자동) |  |  | minimum custom value (too short and attacker gets too much of an advantage) |
 | `/game/settings/randomspawnpoints` | block | []x2 [num]x1 | 3 | 3 | 1 | 미확인(자동) |  |  |  |
@@ -9759,7 +9759,7 @@
 | `/hard/duration/long/progressstart` | block | [num]x1 | 1 | 1 | 0.2 | 미확인(자동) |  |  |  |
 | `/hard/duration/long/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/hard/duration/long/stageunlock` | block | [str]x1 | 1 | 1 | "1:2 3:3 5:4 10:5" | 미확인(자동) |  |  |  |
-| `/hard/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/hard/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/hard/duration/normal/bots` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/hard/duration/normal/bots/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/hard/duration/normal/flagcount` | block | [str]x1 | 1 | 1 | "1:1 2:3 2:3 2:3 3:5 3:5 3:5 3:5 3:5 4:5 4:5 4:5 4:5 4:5 4:7 4:7 4:7 4:7 4:7 5:9 5:9 5:9 5:9 5:9" | 미확인(자동) |  |  | each entry is 1 game played. # of flags enabled : # of flags total on map |
@@ -9853,7 +9853,7 @@
 | `/hard/sellfactor` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/hard/specialcp` | block | [num]x1 | 1 | 1 | 50 | 미확인(자동) |  |  | airstrikes special tab |
 | `/hard/stagecp` | block | [num num num num num]x1 | 1 | 1 | 50 75 100 125 150 | 미확인(자동) |  |  |  |
-| `/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. ¦ health multiplier from soldier settings |
+| `/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
 | `/health_regeneration` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/health_regeneration/("level_standard")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/health_regeneration/(include)` | include | [str]x1 | 1 | 1 | "level_generic.inc" | 미확인(자동) |  |  |  |
@@ -9875,7 +9875,7 @@
 | `/heroic/duration/long/progressstart` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
 | `/heroic/duration/long/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/heroic/duration/long/stageunlock` | block | [str]x1 | 1 | 1 | "1:2 3:3 5:4 10:5" | 미확인(자동) |  |  |  |
-| `/heroic/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/heroic/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/heroic/duration/normal/bots` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/heroic/duration/normal/bots/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/heroic/duration/normal/flagcount` | block | [str]x1 | 1 | 1 | "1:1 2:3 2:3 2:3 3:5 3:5 3:5 3:5 3:5 4:5 4:5 4:5 4:5 4:5 4:7 4:7 4:7 4:7 4:7 5:9 5:9 5:9 5:9 5:9" | 미확인(자동) |  |  | each entry is 1 game played. # of flags enabled : # of flags total on map |
@@ -10032,7 +10032,7 @@
 | `/high/resources/sp/startval` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  |  |
 | `/high/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/high/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/high/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/high/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/high/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
 | `/high/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/high/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
@@ -10071,7 +10071,7 @@
 | `/interface/aim_spot` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/interface/aim_spot/busy` | block | [str]x1 | 1 | 1 | "/interface/cursor/wpn_busy" | 미확인(자동) |  |  |  |
 | `/interface/aim_spot/ground` | block | [str]x1 | 1 | 1 | "/interface/cursor/sight_gnd" | 미확인(자동) |  |  |  |
-| `/interface/aim_spot/normal` | block | [str]x1 | 1 | 1 | "/interface/cursor/sight" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/interface/aim_spot/normal` | block | [str]x1 | 1 | 1 | "/interface/cursor/sight" | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/interface/aim_spot/target` | block | [str]x1 | 1 | 1 | "/interface/cursor/target" | 미확인(자동) |  |  |  |
 | `/interface/compass` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/interface/compass/fadeoutstart` | block | [num]x1 | 1 | 1 | 0.8 | 미확인(자동) |  |  | where elements start fading out |
@@ -10079,7 +10079,7 @@
 | `/interface/compass/fov` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  | cut off |
 | `/interface/compass/offset` | block | [num num]x1 | 1 | 1 | 0 -5 | 미확인(자동) |  |  |  |
 | `/interface/compass/spacing` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  |  |
-| `/interface/compass/step` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | in meters ¦ 0.7 meters |
+| `/interface/compass/step` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] ¦ 0.7 meters |
 | `/interface/crew_view` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/interface/crew_view/offset` | block | [num num]x1 | 1 | 1 | -250 -50 | 미확인(자동) |  |  |  |
 | `/interface/crew_view/show` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -10153,7 +10153,7 @@
 | `/interface/selection/colors/selected` | block | [str]x1 | 1 | 1 | "D5A2611A" | 미확인(자동) |  |  |  |
 | `/interface/selection/colors/senseless` | block | [str]x1 | 1 | 1 | "F0382E1A" | 미확인(자동) |  |  |  |
 | `/interface/selection/scale` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/interface/selection/scale/normal` | block | [num]x1 | 1 | 1 | 0.9 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/interface/selection/scale/normal` | block | [num]x1 | 1 | 1 | 0.9 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/interface/selection/scale/squad_member` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/interface/squad_view` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/interface/squad_view/offset` | block | [num num]x1 | 1 | 1 | -250 -50 | 미확인(자동) |  |  |  |
@@ -10286,7 +10286,7 @@
 | `/low/resources/sp/startval` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/low/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/low/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/low/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/low/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/low/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
 | `/low/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/low/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
@@ -10371,7 +10371,7 @@
 | `/melee/level/chance/knockdown_blow` | block | [num]x7 | 1 | 7 | 0.1 ~ 0.7 | 미확인(자동) |  |  |  |
 | `/melee/level/strength` | block | [num]x8 | 1 | 8 | 1 ~ 1.9 | 미확인(자동) |  |  |  |
 | `/melee/level/strokes` | block | [str]x8 | 1 | 8 | "basic" | 미확인(자동) |  |  |  |
-| `/normal` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/normal` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/normal/bots` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/normal/bots/lossbonus` | block | [num num num num num]x1 | 1 | 1 | -0.05 -0.075 -0.1 0.125 0.15 | 미확인(자동) |  |  |  |
 | `/normal/bots/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:1 2:2 3:2 4:3 5:3 6:4 7:4 8:5 9:5 10:6 11:6 12:7 13:7 14:8 15:8 16:9 17:9 18:10 19:10 20:11 21:11 22:12 23:12 23:13 24:13 25:14 26:14 27:15" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
@@ -10388,7 +10388,7 @@
 | `/normal/duration/long/progressstart` | block | [num]x1 | 1 | 1 | 0.2 | 미확인(자동) |  |  |  |
 | `/normal/duration/long/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/normal/duration/long/stageunlock` | block | [str]x1 | 1 | 1 | "1:2 3:3 5:4 10:5" | 미확인(자동) |  |  |  |
-| `/normal/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/normal/duration/normal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ speed for normal movement state (single mouse click move order) |
 | `/normal/duration/normal/bots` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/normal/duration/normal/bots/researchstages` | block | [str]x1 | 1 | 1 | "0:1 1:2 2:3 4:4 7:5 10:6" | 미확인(자동) |  |  | number of games played : research tree level bots can have |
 | `/normal/duration/normal/flagcount` | block | [str]x1 | 1 | 1 | "1:1 2:3 2:3 2:3 3:5 3:5 3:5 3:5 3:5 4:5 4:5 4:5 4:5 4:5 4:7 4:7 4:7 4:7 4:7 5:9 5:9 5:9 5:9 5:9" | 미확인(자동) |  |  | each entry is 1 game played. # of flags enabled : # of flags total on map |
@@ -10735,7 +10735,7 @@
 | `/pathers/(define "horse")/profile/terrain` | block | [str num str num str num str num str num str num str num str num str num]x1 | 1 | 1 | "ground" 1 "no_pass" 0 "no_pass_human" 0 "forest" 0.5 "slope" 0.5 "swamp" 0 "shallow_water" 0 "water" 0 "deep_water" 0 | 미확인(자동) |  |  |  |
 | `/pathers/(define "humanprofile")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/pathers/(define "humanprofile")/height` | block | [num num num num num num num num num num num num num num num]x1 | 1 | 1 | 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 | 미확인(자동) |  |  |  |
-| `/pathers/(define "humanprofile")/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/pathers/(define "humanprofile")/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/pathers/(define "humanprofile")/network` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/pathers/(define "humanprofile")/priority` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/pathers/(define "humanprofile")/radius` | block | [num]x1 | 1 | 1 | 0.3 | 미확인(자동) |  |  | resupply radius in meter |
@@ -10779,7 +10779,7 @@
 | `/pathers/profile` | block | [str]x7 | 1 | 7 | "nothing" ¦ "human" ¦ "human_tpc" ¦ "human_prone" ¦ "human_flying" ¦ "animal" ¦ "railway" | 미확인(자동) |  |  |  |
 | `/pathers/profile/("humanprofile")` | macro | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/pathers/profile/height` | block | [num num num num num num num num num num num num num num num]x2 | 1 | 2 | 0 0 0 0 2 2 2 -1 -1 -1 -1 -1 -1 -1 -1 ¦ 0 0 0 1 1 2 3 -1 -1 -1 -1 -1 -1 -1 -1 | 미확인(자동) |  |  |  |
-| `/pathers/profile/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/pathers/profile/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/pathers/profile/linearpath` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/pathers/profile/priority` | block | [num]x4 | 1 | 4 | 0 ~ 7 | 미확인(자동) |  |  |  |
 | `/pathers/profile/radius` | block | [num]x5 | 1 | 5 | 0 ~ 1.5 | 미확인(자동) |  |  | resupply radius in meter |
@@ -10793,16 +10793,16 @@
 | `/profiles` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/profiles/default` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/profiles/default/config` | block | [str str]x1 | 1 | 1 | "graph" "location_map" | 미확인(자동) |  |  |  |
-| `/profiles/default/parameters` | block | [str str str]x1 | 1 | 1 | "fps" "qps" "render_time" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/profiles/default/parameters` | block | [str str str]x1 | 1 | 1 | "fps" "qps" "render_time" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/profiles/full` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/profiles/full/config` | block | [str str]x1 | 1 | 1 | "graph" "location_map" | 미확인(자동) |  |  |  |
-| `/profiles/full/parameters` | block | [str str str str str]x1 | 1 | 1 | "video_memory_load" "memory_load" "fps" "qps" "render_time" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/profiles/full/parameters` | block | [str str str str str]x1 | 1 | 1 | "video_memory_load" "memory_load" "fps" "qps" "render_time" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/profiles/min` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/profiles/min/parameters` | block | [str]x1 | 1 | 1 | "fps" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/profiles/min/parameters` | block | [str]x1 | 1 | 1 | "fps" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/profiles/test` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/ranges` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/ranges/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
-| `/ranges/human/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/ranges/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
+| `/ranges/human/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/ranges/vehicle` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | main vision range displayed. |
 | `/ranges/vehicle/cannon_00` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | distance at which it will be spotted when moving ¦ heavy mgun |
 | `/regions` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -10833,7 +10833,7 @@
 | `/resources/("level_standard")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/resources/(include)` | include | [str]x1 | 1 | 1 | "level_generic.inc" | 미확인(자동) |  |  |  |
 | `/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/resupplycost/human/fixed` | block | [num]x1 | 1 | 1 | 2.5 | 미확인(자동) |  |  |  |
 | `/resupplycost/human/itemcharge` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/resupplycost/human/newitem` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
@@ -10892,7 +10892,7 @@
 | `/select_ammo/howitzer/"*"/enable_for_user` | block | [num]x5 | 1 | 5 | 0 | 미확인(자동) |  |  |  |
 | `/select_ammo/howitzer/"*"/ready_for_shot` | block | []x5 | 1 | 5 | 예: | 미확인(자동) |  |  |  |
 | `/select_ammo/howitzer/"*"/volume` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/select_ammo/human` | block | [atom]x2 []x1 | 1 | 3 | in_bush ¦ in_cover ¦ | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/select_ammo/human` | block | [atom]x2 []x1 | 1 | 3 | in_bush ¦ in_cover ¦ | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/select_ammo/human/"*"` | block | [str]x69 | 1 | 69 | 예: "flame" | 미확인(자동) |  |  |  |
 | `/select_ammo/human/"*"/enable_for_user` | block | [num]x12 | 1 | 12 | 0 | 미확인(자동) |  |  |  |
 | `/select_ammo/human/"*"/ready_for_shot` | block | []x9 | 1 | 9 | 예: | 미확인(자동) |  |  |  |
@@ -10924,7 +10924,7 @@
 | `/settings/friendlyfire` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/settings/gameduration` | block | [str]x1 | 1 | 1 | "20 min" | 미확인(자동) |  |  | min ¦ default value |
 | `/settings/impregnabletimeout` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | sec ¦ seconds. Spawn protection time |
-| `/settings/preparationtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | seconds. is sets how long before bot begins an attack when player is the defender. ¦ default time in seconds game is in "paused state" before game starts |
+| `/settings/preparationtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | default value ¦ seconds. is sets how long before bot begins an attack when player is the defender. |
 | `/settings/randomspawnpoints` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/settings/scorefinal` | block | [num]x1 | 1 | 1 | 50 | 미확인(자동) |  |  |  |
 | `/settings/showdamagereports` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -11016,7 +11016,7 @@
 | `/standard/resources/sp/startval` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  |  |
 | `/standard/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/standard/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/standard/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/standard/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/standard/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
 | `/standard/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/standard/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
@@ -11050,7 +11050,7 @@
 | `/standard/sellfactor` | block | [num num num num]x1 | 1 | 1 | 0.6 0 0 0 | 미확인(자동) |  |  |  |
 | `/standard/specialcp` | block | [num]x1 | 1 | 1 | 50 | 미확인(자동) |  |  | airstrikes special tab |
 | `/standard/stagecp` | block | [num num num num num]x1 | 1 | 1 | 60 80 100 120 140 | 미확인(자동) |  |  |  |
-| `/talk` | block | []x20 | 20 | 20 | 예: | 미확인(자동) |  |  | ammo was distributed to squad member ¦ on trying to receive item that does not fit the inventory |
+| `/talk` | block | []x20 | 20 | 20 | 예: | 미확인(자동) |  |  | general reaction if unit cannot follow order: on trying to perform inventory operations while swimming, on trying to board vehicle with enemy or neutral units in one of its places (probably not used anymore) ¦ (condition) - called when not in combat and does not detect any enemies |
 | `/talk/condition` | block | []x20 | 20 | 20 | 예: | 미확인(자동) |  |  |  |
 | `/talk/condition/enemy_ratio` | block | [num]x3 | 3 | 3 | 2.5 | 미확인(자동) |  |  |  |
 | `/talk/condition/health_level` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
@@ -11104,8 +11104,8 @@
 | `/terms/firing_silencer_n` | block | [atom str]x1 | 1 | 1 | firing "nagant_silencer" | 미확인(자동) |  |  |  |
 | `/terms/firing_sten_mk2s` | block | [atom str]x1 | 1 | 1 | firing "sten_mk2s" | 미확인(자동) |  |  |  |
 | `/terms/firing_welrod` | block | [atom str]x1 | 1 | 1 | firing "welrod" | 미확인(자동) |  |  |  |
-| `/terms/human` | block | [atom str]x1 | 1 | 1 | actor "human" | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
-| `/terms/marine_01` | block | [atom str]x1 | 1 | 1 | actor "vision_lev01_boat" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 0m past visor range. ¦ U-Boat / Submarine |
+| `/terms/human` | block | [atom str]x1 | 1 | 1 | actor "human" | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
+| `/terms/marine_01` | block | [atom str]x1 | 1 | 1 | actor "vision_lev01_boat" | 미확인(자동) |  |  | U-Boat / Submarine ¦ distance at which it will be spotted when moving, 0m past visor range. |
 | `/terms/marine_02` | block | [atom str]x1 | 1 | 1 | actor "vision_lev02_boat" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 50m past visor range. ¦ Marine Small |
 | `/terms/marine_03` | block | [atom str]x1 | 1 | 1 | actor "vision_lev03_boat" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 200m past visor range. ¦ Marine Medium |
 | `/terms/marine_04` | block | [atom str]x1 | 1 | 1 | actor "vision_lev04_boat" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 200m past visor range. ¦ Marine Large |
@@ -11113,7 +11113,7 @@
 | `/terms/plane_01` | block | [atom str]x1 | 1 | 1 | actor "vision_lev01_air" | 미확인(자동) |  |  | distance at which it will be spotted when moving ¦ Recon Airborne |
 | `/terms/plane_02` | block | [atom str]x1 | 1 | 1 | actor "vision_lev02_air" | 미확인(자동) |  |  | distance at which it will be spotted when moving ¦ Fighter Airborne |
 | `/terms/thrower` | block | [atom str]x1 | 1 | 1 | firing "thrower" | 미확인(자동) |  |  |  |
-| `/terms/vehicle_00` | block | [atom str]x1 | 1 | 1 | actor "vision_lev00" | 미확인(자동) |  |  | distance at which it will be spotted when moving ¦ distance at which it will be spotted when moving, 50m past visor range. |
+| `/terms/vehicle_00` | block | [atom str]x1 | 1 | 1 | actor "vision_lev00" | 미확인(자동) |  |  | goliath ¦ distance at which it will be spotted when moving, 50m past visor range. |
 | `/terms/vehicle_01` | block | [atom str]x1 | 1 | 1 | actor "vision_lev01" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 50m past visor range. ¦ moto, jeep |
 | `/terms/vehicle_02` | block | [atom str]x1 | 1 | 1 | actor "vision_lev02" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 50m past visor range. ¦ armoredcars, trucks |
 | `/terms/vehicle_03` | block | [atom str]x1 | 1 | 1 | actor "vision_lev03" | 미확인(자동) |  |  | distance at which it will be spotted when moving, 50m past visor range. ¦ light tanks |
@@ -11128,7 +11128,7 @@
 | `/textures` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/textures/"*"` | block | [str str str]x252 | 1 | 252 | 예: "dirt/*" "ground" "ground" | 미확인(자동) |  |  |  |
 | `/third_person_control` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/third_person_control/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/third_person_control/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/third_person_control/human/(include)` | include | [str]x1 | 1 | 1 | "third_person/human.inc" | 미확인(자동) |  |  |  |
 | `/third_person_control/vehicle` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | main vision range displayed. |
 | `/third_person_control/vehicle/"*"` | block | [str atom str]x687 | 1 | 687 | 예: "universal" inherit "vehicle generic.unarmed" | 미확인(자동) |  |  |  |
@@ -11239,7 +11239,7 @@
 | `/veryhigh/resources/sp/startval` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
 | `/veryhigh/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/veryhigh/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/veryhigh/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | fallback value if no other subordinated case is applicable ¦ -TARGET CLASS- |
+| `/veryhigh/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
 | `/veryhigh/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
 | `/veryhigh/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/veryhigh/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
@@ -11293,7 +11293,7 @@
 | `/game/(include)` | include | [str]x1 | 1 | 1 | "presets/presets_basic.inc" | 미확인(자동) |  |  |  |
 | `/game/class` | block | [atom]x1 | 1 | 1 | gamemodeBaseType | 미확인(자동) |  |  |  |
 | `/game/order` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  |  |
-| `/game/parameters` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | base_release_time=20;ammo_table=400;flag_capture_time=60;flag_release_time=20;flag_capture_factor=1.0;supply_waves=1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35,39;"} ¦ points_table_ai=0/0.000,0.333/0.139,0.50/0.167,0.667/0.208,1.00/0.277;flag_capture_time=75;flag_release_time=25;flag_capture_factor=0.9;kill_score_multiplier=0"} |
+| `/game/parameters` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  | flag_time_small=15;score_flag=500;score_phase=0;score_slaveFlag=150;score_defBonus=0.25;teamsize_cp_factor=1:1.0,2:1.0,3:0.9,4:0.8"} ¦ base_capture_time=180;base_release_time=10;base_capture_factor=1.0;flag_capture_time=150;flag_release_time=10;flag_capture_factor=1.0;maximum_ammo_payback=150;enable_time=300;flag_team_table=1/0.05;teamsize_cp_factor=1:1.3,2:1.2,3:1.1,4:1.0"} |
 | `/game/ranked` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/game/ranked/enabled` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/game/ranked/maxplayers` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
@@ -11308,7 +11308,7 @@
 | `/game/settings/options` | block | [atom atom atom]x1 | 1 | 1 | scoreFinal randomSpawnPoints enableSpectators | 미확인(자동) |  |  |  |
 | `/game/settings/optionsadvanced` | block | [atom atom atom atom atom]x1 | 1 | 1 | preparationTime friendlyFire fogOfWar showPiercing showDamageReports | 미확인(자동) |  |  |  |
 | `/game/settings/optionsranked` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/game/settings/preparationtime` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | seconds. is sets how long before bot begins an attack when player is the defender. ¦ default time in seconds game is in "paused state" before game starts |
+| `/game/settings/preparationtime` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | default value ¦ seconds. is sets how long before bot begins an attack when player is the defender. |
 | `/game/settings/preparationtimemax` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  | maximum custom value (too long and defender gets too much of an advantage) |
 | `/game/settings/preparationtimemin` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | minimum custom value (too short and attacker gets too much of an advantage) |
 | `/game/settings/scorefinal` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  |  |

@@ -41343,7 +41343,7 @@
 "entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/engine_b.anm","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/engine_b.anm","loose","577108",".anm","vehicle","excluded-binary","바이너리 확장자 .anm",""
 "entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/engine.ply","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/engine.ply","loose","26372",".ply","vehicle","excluded-binary","바이너리 확장자 .ply",""
 "entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/engine.vol","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/engine.vol","loose","208",".vol","vehicle","excluded-binary","바이너리 확장자 .vol",""
-"entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/error.log","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/error.log","loose","524",".log","vehicle","text","","B2C960798DC8A72B1163ACF50FCFDDBE424263EB"
+"entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/error.log","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/error.log","loose","524",".log","vehicle","reference-only","SDL 아님(.log), 참조 목록","B2C960798DC8A72B1163ACF50FCFDDBE424263EB"
 "entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/gun_b.anm","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/gun_b.anm","loose","164",".anm","vehicle","excluded-binary","바이너리 확장자 .anm",""
 "entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/gun_rot.ply","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/gun_rot.ply","loose","33104",".ply","vehicle","excluded-binary","바이너리 확장자 .ply",""
 "entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/gun.ply","entity/-vehicle/+ussr/tank_heavy/x/0bj_268_xx/gun.ply","loose","34232",".ply","vehicle","excluded-binary","바이너리 확장자 .ply",""

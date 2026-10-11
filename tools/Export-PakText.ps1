@@ -33,6 +33,8 @@ function Add-IndexRow([string]$vp, [string]$orig, [string]$source, [long]$length
 
 # 바이트를 읽지 않고 결정되는 경우 @(status, reason), 아니면 $null
 function Get-PathDisposition([string]$vp, [long]$length) {
+    # pak의 항목 이름은 신뢰할 수 없다. 출력 폴더 밖으로 나가는 이름은 추출하지 않는다
+    if (($vp -split '/') -contains '..' -or $vp.Contains(':')) { return @('excluded-unsafe', '출력 폴더 밖을 가리키는 경로') }
     if (-not (Test-InScope $vp)) { return @('excluded-scope', '유닛 정의 범위 밖 경로') }
     if ($length -eq 0) {
         # 0바이트 파일도 include 대상일 수 있다(예: properties/shadow/*.inc). 빈 파일로 추출해 둔다

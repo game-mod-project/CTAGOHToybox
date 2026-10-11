@@ -6,11 +6,12 @@
     "empty": 11,
     "excluded-binary": 39475,
     "excluded-scope": 10021,
-    "reference-only": 382,
-    "text": 18417
+    "reference-only": 383,
+    "text": 18416
   },
   "FilesByRelation": {
-    "new": 64113,
+    "in-mod-collision": 2481,
+    "new": 61632,
     "override-changed": 6564,
     "override-identical": 53,
     "override-unhashed": 57
@@ -58,30 +59,40 @@
     "+japan": 26
   },
   "NewBreedsByFolder": {},
-  "KeysNotInVanilla": 1634,
+  "KeysNotInVanilla": 1626,
   "KeysNotInVanillaByForm": {
     "block": 1276,
     "macro": 230,
     "define": 102,
     "mod": 13,
-    "paren-other": 7,
-    "bare": 3,
-    "include": 3
+    "include": 3,
+    "bare": 2
   },
-  "NamesNotInVanilla": 308,
+  "NamesNotInVanilla": 301,
   "NamesNotInVanillaByForm": {
     "macro": 157,
     "define": 84,
-    "block": 60,
-    "paren-other": 7
+    "block": 60
   },
   "DistinctNewBlockNames": 38,
   "RoundTripFailed": [],
-  "UnresolvedFiles": 5,
+  "UnresolvedFiles": 41,
   "UnresolvedTop": {
+    "param:%door2": 14,
+    "param:%door": 13,
+    "param:%group": 10,
     "param:%0": 2,
-    "param:%door": 2,
-    "include:properties/projectile_impulse.ext": 1
+    "param:%door3": 2,
+    "param:%visor": 2,
+    "include:properties/projectile_impulse.ext": 1,
+    "param:%anm_left": 1,
+    "param:%anm_right": 1,
+    "param:%bone": 1,
+    "param:%door1": 1
   },
-  "Collisions": 2481
+  "Collisions": 2481,
+  "OutOfScopeDefinitions": {
+    "entity/+inventory": 66,
+    "entity/fx": 1
+  }
 }
