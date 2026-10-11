@@ -1,0 +1,70 @@
+# 이름|등급|의미   (바닐라의 어떤 키에도 없는 블록 이름. 등급 기준은 docs/04-units/README.md와 같다)
+extender[vision_mode]|추정|바닐라에 없는 종류의 extender. 이름으로는 시야 모드 기능이다 (추정: 하위에 timer_object/active_time/recharge_rate가 있어 일정 시간 켜지고 재충전되는 기능으로 보임. 실제 동작은 미확인)
+timer_object|추정|vision_mode의 타이머 설정 묶음 (추정: 하위 키)
+active_time|추정|기능이 켜져 있는 시간 (추정: 이름. 단위 미확인. 값은 60과 1000)
+recharge_rate|추정|재충전 속도 (추정: 이름. 값은 1과 1000)
+durability|미확인|armor/setting 아래의 인자 없는 블록. 하위 내용을 살펴보지 않았다
+whole_wound|미확인|armor/setting 아래의 인자 없는 블록
+bitmap|미확인|아이템 엔티티 폴더의 재질 파일에 나오는 최상위 블록
+filtering|미확인|bitmap의 하위. 값 1
+deploy_gas|추정|조작 패널에 추가된 버튼 정의 (추정: set/panel_control의 파일에 있고 이름이 동작을 가리킴)
+detonate_wanze_charge|추정|조작 패널에 추가된 버튼 정의 (추정: 위와 같음)
+recovery|추정|조작 패널에 추가된 버튼 정의 (추정: 위와 같음)
+smine_decoy|추정|조작 패널에 추가된 버튼 정의 (추정: 위와 같음)
+toggle_back_mg|추정|조작 패널에 추가된 버튼 정의 (추정: 위와 같음)
+jap_type21_buildable|추정|조작 패널의 건설 메뉴에 추가된 항목 (추정: right_emplacement.set에 있음)
+littledavid|추정|조작 패널의 건설 메뉴에 추가된 항목 (추정: 위와 같음)
+swe_gun_buildable|추정|조작 패널의 건설 메뉴에 추가된 항목 (추정: 위와 같음)
+change_paint_scheme_toggle|추정|조작 패널에 추가된 버튼 정의. 위장 전환 (추정: 모드 설명의 위장 전환 기능과 이름이 맞음)
+ai_auto_move|추정|조작 패널에 추가된 버튼 정의. AI 제어 (추정: 모드 설명의 AI 제어 버튼과 이름이 맞음)
+medic_switch|추정|조작 패널에 추가된 버튼 정의. 자동 위생병 켜고 끄기 (추정: 모드 설명과 이름이 맞음)
+weather_switch|추정|조작 패널에 추가된 버튼 정의. 날씨 전환 (추정: 모드 설명과 이름이 맞음)
+enable_for_human_user|추정|탄 자동 선택 규칙을 사람이 조종하는 유닛에도 적용할지 여부 (추정: set/target/ammo.set의 select_ammo 아래에 있고 값이 0)
+firing_gev_m40_scope|추정|발사할 때의 발각 거리 항목 (추정: set/vision/spotting 계열 파일의 "firing" 정의 안에 있고 값이 100)
+firing_type97_scope|추정|발사할 때의 발각 거리 항목 (추정: 위와 같음)
+firing_type97_scope_flash_hider|추정|발사할 때의 발각 거리 항목 (추정: 위와 같음)
+firing_type97_scope_silencer|추정|발사할 때의 발각 거리 항목 (추정: 위와 같음)
+firing_type99_early_scope|추정|발사할 때의 발각 거리 항목 (추정: 위와 같음)
+firing_type99_long_scope|추정|발사할 때의 발각 거리 항목 (추정: 위와 같음)
+firing_type99_mid_scope|추정|발사할 때의 발각 거리 항목 (추정: 위와 같음)
+firing_binocular|추정|쌍안경 사용 시의 발각·소음 항목 (추정: spotting.inc와 hearing.inc의 정의 안에 있고 settings.set의 terms에 firing "binocular"로 등록됨)
+firing_searchlight|추정|탐조등 사용 시의 발각 항목. 값 300 (추정: 위와 같은 자리. 모드 설명의 "탐조등 빛을 적이 알아챈다"와 맞음)
+plane_03|추정|차량 발각 거리 표의 항목. 값 3700 (추정: spotting.inc의 "spot_vehicle" 정의 안)
+fra_mid|추정|라이브러리의 병사 분류 등록. 프랑스 중기 (추정: set/registry/library.reg의 soldiers 아래)
+jap_late|추정|라이브러리의 병사 분류 등록. 일본 후기 (추정: 위와 같음)
+hide_hitmarker|추정|3인칭 조종에서 명중 표시를 숨김 (추정: set/third_person의 파일에 있고 값 1)
+ostfront_talvisota_west|추정|동적 캠페인의 지역 이름 (추정: values.set과 map_points.set의 regions 아래)
+projectiledamage|미확인|값 1300. 바닐라의 projectiledamagetable과 이름이 비슷하다
+speed2=28.8|미확인|모델 파일에 `speed2=28.8`이 한 낱말로 적혀 있다. 바닐라는 `{speed2 28.8}` 형태라 오타로 보인다
+applyprojectile|미확인|bullet 아래의 인자 없는 블록. V-1 로켓 탄약에 쓰임
+detail2|미확인|extender "detail"의 하위. 값 1
+detail3|미확인|extender "detail"의 하위. 값 1
+detail4|미확인|extender "detail"의 하위. 값 1
+detail5|미확인|extender "detail"의 하위. 값 1
+detail6|미확인|extender "detail"의 하위. 값 1
+nolight|미확인|재질 파일의 인자 없는 플래그
+cell|추정|인벤토리 안에서 아이템이 놓이는 칸의 위치 (추정: box/item의 하위이고 값이 두 수)
+look_around|미확인|brain/properties 아래의 인자 없는 플래그point_1_6|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_2_6|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_4_6|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_4_7|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_5_5|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_5_6|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_5_7|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_6_4|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_6_5|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_6_6|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_6_7|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_7_1|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_7_2|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_7_3|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_7_4|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_7_5|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_8_1|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_8_2|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_8_3|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_8_4|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_9_1|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_9_2|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_9_3|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)
+point_1_6|추정|동적 캠페인 지도의 지점. 지형 종류와 좌표 두 값 (추정: map_points.set의 landscape 아래. 바닐라에도 같은 형식의 point_ 항목이 있고 이 번호만 없음)

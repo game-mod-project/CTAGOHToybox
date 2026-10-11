@@ -1,0 +1,87 @@
+{
+  "Id": "3732639687",
+  "Files": 70787,
+  "FilesByStatus": {
+    "collision": 2481,
+    "empty": 11,
+    "excluded-binary": 39475,
+    "excluded-scope": 10021,
+    "reference-only": 382,
+    "text": 18417
+  },
+  "FilesByRelation": {
+    "new": 64113,
+    "override-changed": 6564,
+    "override-identical": 53,
+    "override-unhashed": 57
+  },
+  "TextByRelationAndTop": {
+    "new entity/-vehicle": 9682,
+    "override-changed entity/-vehicle": 5358,
+    "new entity/inventory": 1263,
+    "override-changed entity/humanskin": 1126,
+    "new entity/humanskin": 763,
+    "new set/stuff": 451,
+    "override-identical set/stuff": 49,
+    "override-changed set/stuff": 43,
+    "override-changed set/dynamic_campaign": 15,
+    "new script/units": 10,
+    "new set/multiplayer": 6,
+    "override-changed set/multiplayer": 5,
+    "override-changed set/interaction_entity": 5,
+    "override-identical entity/inventory": 4,
+    "new set/interaction_entity": 4,
+    "override-changed set/third_person": 2,
+    "override-changed script/multiplayer": 2,
+    "override-changed properties/tank_crew.ext": 1,
+    "override-changed properties/resupply.inc": 1,
+    "override-changed entity/inventory": 1,
+    "override-changed set/material.set": 1,
+    "new properties/super_heavy_crew.inc": 1,
+    "override-changed set/registry": 1,
+    "new set/third_person": 1,
+    "new set/dynamic_campaign": 1
+  },
+  "UnitsByKindRelation": {
+    "item-entity changed": 1,
+    "item-entity new": 341,
+    "pattern new": 14,
+    "stuff changed": 43,
+    "stuff new": 437,
+    "vehicle new": 528
+  },
+  "NewVehicleDefsByNation": {
+    "eng": 161,
+    "+germany": 158,
+    "+ussr": 126,
+    "+usa": 57,
+    "+japan": 26
+  },
+  "NewBreedsByFolder": {},
+  "KeysNotInVanilla": 1634,
+  "KeysNotInVanillaByForm": {
+    "block": 1276,
+    "macro": 230,
+    "define": 102,
+    "mod": 13,
+    "paren-other": 7,
+    "bare": 3,
+    "include": 3
+  },
+  "NamesNotInVanilla": 308,
+  "NamesNotInVanillaByForm": {
+    "macro": 157,
+    "define": 84,
+    "block": 60,
+    "paren-other": 7
+  },
+  "DistinctNewBlockNames": 38,
+  "RoundTripFailed": [],
+  "UnresolvedFiles": 5,
+  "UnresolvedTop": {
+    "param:%0": 2,
+    "param:%door": 2,
+    "include:properties/projectile_impulse.ext": 1
+  },
+  "Collisions": 2481
+}
