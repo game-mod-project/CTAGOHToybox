@@ -72,5 +72,8 @@ Assert-Equal '{a 1}' ([IO.File]::ReadAllText((Join-Path $out 'set\a.set'))) 'fir
 Assert-Equal $nonAscii ([IO.File]::ReadAllBytes((Join-Path $out 'set\cyr.set'))) 'non-ascii bytes preserved'
 Assert-Equal $false (Test-Path -LiteralPath (Join-Path $out 'map\m.mi')) 'out-of-scope not extracted'
 Assert-Equal 3 @(Import-Csv (Join-Path $data 'pak-summary.csv')).Count 'pak summary rows'
+# 범위 안의 0바이트 파일은 include 대상일 수 있으므로 빈 파일로 추출한다 (상태는 empty 그대로)
+Assert-Equal $true (Test-Path -LiteralPath (Join-Path $out 'set\empty.set')) 'in-scope empty file is extracted'
+Assert-Equal 0 ([IO.FileInfo]::new((Join-Path $out 'set\empty.set'))).Length 'extracted empty file has zero length'
 
 Complete-Tests

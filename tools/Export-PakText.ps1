@@ -33,8 +33,14 @@ function Add-IndexRow([string]$vp, [string]$orig, [string]$source, [long]$length
 
 # 바이트를 읽지 않고 결정되는 경우 @(status, reason), 아니면 $null
 function Get-PathDisposition([string]$vp, [long]$length) {
-    if ($length -eq 0) { return @('empty', '0바이트') }
     if (-not (Test-InScope $vp)) { return @('excluded-scope', '유닛 정의 범위 밖 경로') }
+    if ($length -eq 0) {
+        # 0바이트 파일도 include 대상일 수 있다(예: properties/shadow/*.inc). 빈 파일로 추출해 둔다
+        $dest = Join-Path $OutDir ($vp -replace '/', '\')
+        [IO.Directory]::CreateDirectory((Split-Path -Parent $dest)) | Out-Null
+        if (-not [IO.File]::Exists($dest)) { [IO.File]::WriteAllBytes($dest, [byte[]]@()) }
+        return @('empty', '0바이트')
+    }
     $ext = Get-SdlFileKind $vp
     if ($script:BinaryExt -contains $ext) { return @('excluded-binary', "바이너리 확장자 $ext") }
     $null

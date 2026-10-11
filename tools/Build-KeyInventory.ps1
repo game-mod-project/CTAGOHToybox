@@ -8,7 +8,7 @@ param(
 . "$PSScriptRoot/lib/SdlKeys.ps1"
 
 $index = @(Import-Csv -LiteralPath (Join-Path $DataDir 'file-index.csv') | Where-Object Status -eq 'text')
-$agg = @{}
+$agg = New-SdlKeyAggregate
 $comments = @{}
 $results = [System.Collections.Generic.List[object]]::new()
 $n = 0
@@ -19,7 +19,7 @@ foreach ($f in $index) {
     $rt = Test-SdlRoundTrip -Text $text
     $results.Add([pscustomobject]@{ VirtualPath = $f.VirtualPath; Ok = $rt.Ok; TokenCount = $rt.TokenCount; Errors = ($rt.Errors -join ' | ') })
     $scope = "$($f.Group)|$(Get-SdlFileKind $f.VirtualPath)"
-    foreach ($r in (Get-SdlKeyRows -Root $rt.Parsed.Root)) { Add-SdlKeyAggregate -Agg $agg -Scope $scope -Row $r -File $f.VirtualPath }
+    Add-SdlKeyAggregateRows -Agg $agg -Scope $scope -Rows (Get-SdlKeyRows -Root $rt.Parsed.Root) -File $f.VirtualPath
     foreach ($c in (Get-SdlKeyComments -Text $text)) {
         $ck = "$($f.Group)`t$($c.Name)"
         if (-not $comments.ContainsKey($ck)) { $comments[$ck] = @{} }

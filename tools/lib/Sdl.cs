@@ -134,7 +134,7 @@ public static partial class SdlCore
     }
 
     // PowerShell이 넘긴 PSObject 래퍼를 벗긴다
-    static SdlNode Unwrap(object x)
+    public static SdlNode Unwrap(object x)
     {
         var n = x as SdlNode;
         if (n != null) return n;

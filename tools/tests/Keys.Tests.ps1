@@ -71,7 +71,7 @@ $rows = Rows '{perks {"pistol" lvl_5} {"smg" lvl_4} {rifle 1}}'
 Assert-Equal @('/perks', '/perks/"*"', '/perks/"*"', '/perks/rifle') @($rows.Path) 'sibling quoted names share one path'
 
 # Review Focus 3: 대소문자만 다른 키는 하나로 집계
-$agg = @{}
+$agg = New-SdlKeyAggregate
 foreach ($r in (Rows '{Extension "a.mdl"} {extension "b.mdl"} {EXTENSION "a.mdl"}')) { Add-SdlKeyAggregate -Agg $agg -Scope 'vehicle|.def' -Row $r -File 'f1' }
 foreach ($r in (Rows '{mass 3.85} {mass 16}')) { Add-SdlKeyAggregate -Agg $agg -Scope 'vehicle|.def' -Row $r -File 'f2' }
 $out = @(Export-SdlKeyAggregate -Agg $agg | Sort-Object Path)
@@ -81,10 +81,21 @@ Assert-Equal 1 $out[0].FileCount 'extension file count'
 Assert-Equal 3.85 $out[1].NumMin 'numeric min'
 Assert-Equal ([double]16) $out[1].NumMax 'numeric max'
 Assert-Equal 'vehicle|.def' $out[1].Scope 'scope kept'
+Add-SdlKeyAggregateRows -Agg $agg -Scope 'vehicle|.def' -Rows (Rows '{mass 20} {mass 1}') -File 'f3'
+$out = @(Export-SdlKeyAggregate -Agg $agg | Sort-Object Path)
+Assert-Equal @(4, 2, [double]1, [double]20) @($out[1].Count, $out[1].FileCount, $out[1].NumMin, $out[1].NumMax) 'bulk add updates count, files, min, max'
 
 $c = @(Get-SdlKeyComments -Text "`t{MaxSpeed`t40`t}`t;// max speed in kph`n{x 1}`n; {y 2} ; not a key line")
 Assert-Equal 1 $c.Count 'one comment'
 Assert-Equal 'maxspeed' $c[0].Name 'comment key name'
 Assert-Equal 'max speed in kph' $c[0].Comment 'comment text'
+
+# 카탈로그 한 줄에 쓰는 JSON: 행 배열 [[Path,Form,Args],...]
+$json = ConvertTo-SdlRowsJson -Rows (Rows "{a `"x\y`t1`" 2} {b}")
+Assert-Equal '[["/a","block","\"x\\y\t1\" 2"],["/b","block",""]]' $json 'rows json escapes quotes, backslash and control chars'
+$back = ConvertFrom-Json $json
+Assert-Equal "`"x\y`t1`" 2" $back[0][2] 'rows json round-trips through ConvertFrom-Json'
+Assert-Equal '[]' (ConvertTo-SdlRowsJson -Rows (Rows '')) 'empty rows json'
+Assert-Equal '"set/a\"b"' (ConvertTo-SdlJsonString 'set/a"b') 'json string'
 
 Complete-Tests
