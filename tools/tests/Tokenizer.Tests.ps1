@@ -28,4 +28,9 @@ Assert-Equal @('open', 'atom', 'badstr') @($t.Kind) 'unterminated string'
 $t = Get-SdlTokens -Text ''
 Assert-Equal 0 $t.Count 'empty text'
 
+# M7: 공백은 ASCII 공백만이다. Latin-1로 읽은 0x85, 0xA0 바이트는 글자다(UTF-8 키릴 문자의 일부일 수 있다)
+$t = Get-SdlTokens -Text ("{a" + [char]0x85 + "b c" + [char]0xA0 + "d}")
+Assert-Equal 4 $t.Count 'non-ASCII bytes do not split tokens'
+Assert-Equal ("a" + [char]0x85 + "b") $t[1].Text 'byte 0x85 stays inside the atom'
+
 Complete-Tests

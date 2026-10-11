@@ -5,6 +5,8 @@ param(
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
+$LocPak = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($LocPak)
+$DataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($DataDir)
 
 function Unquote([string]$s) {
     $m = [regex]::Match($s, '"(.*)"\s*$')

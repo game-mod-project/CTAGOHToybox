@@ -4,6 +4,8 @@ param(
 )
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
+$DataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($DataDir)
+$DocsDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($DocsDir)
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'
 $allowed = 'text', 'reference-only', 'excluded-scope', 'excluded-binary', 'excluded-unsafe', 'empty', 'duplicate'
 
@@ -111,6 +113,9 @@ L
 L '| 미해결 항목 | 파일 수 |'
 L '|---|---|'
 foreach ($u in ($unresolvedTop | Select-Object -First 100)) { L "| ``$($u.Name)`` | $($u.Count) |" }
+L
+$inheritedFiles = @($summary | Where-Object { $_.PSObject.Properties['InheritedCount'] -and [int]$_.InheritedCount -gt 0 }).Count
+L "안쪽 매크로나 include가 바깥 호출의 인자를 물려받아 쓴 유닛 파일: $($inheritedFiles)개. 엔진이 인자를 물려주는지는 확인하지 못했다. 물려주지 않는다면 이 파일들에는 채워지지 않은 매개변수가 더 있다. 파일별 내용은 ``units-*.resolved.jsonl.gz``의 ``Inherited``에 있다."
 L
 L '## 의미 등급 분포'
 L

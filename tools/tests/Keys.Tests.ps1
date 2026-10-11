@@ -98,4 +98,24 @@ Assert-Equal "`"x\y`t1`" 2" $back[0][2] 'rows json round-trips through ConvertFr
 Assert-Equal '[]' (ConvertTo-SdlRowsJson -Rows (Rows '')) 'empty rows json'
 Assert-Equal '"set/a\"b"' (ConvertTo-SdlJsonString 'set/a"b') 'json string'
 
+# M2: 매크로 호출의 인자 안에 든 블록도 키로 나온다
+$rows = Rows '("crew" seat(1) off({sensor {x 1}}) {direct 2})'
+Assert-Equal @('/("crew")', '/("crew")/off()/sensor', '/("crew")/off()/sensor/x', '/("crew")/direct') @($rows.Path) 'blocks inside macro call arguments become keys'
+Assert-Equal 'seat ( 1 ) off ( { sensor { x 1 } } ) { direct 2 }' $rows[0].Args 'macro row still carries its full argument text'
+$rows = Rows '{speed seconds({unit s}) 5}'
+Assert-Equal @('/speed', '/speed/seconds()/unit') @($rows.Path) 'blocks inside call arguments of a block become keys'
+
+# M3: 머리가 낱말도 문자열도 아닌 괄호 구문은 첫 자식을 잃지 않고, 안의 블록까지 내려간다
+$rows = Rows '(({a 1}) b)'
+Assert-Equal @('/()', '/()/()', '/()/()/a') @($rows.Path) 'paren with a non-word head keeps its first child'
+Assert-Equal 'b' $rows[0].Args 'paren-other keeps plain arguments'
+$rows = Rows '(foo {a 1} x)'
+Assert-Equal @('/(foo)', '/(foo)/a') @($rows.Path) 'blocks inside an unknown paren form become keys'
+Assert-Equal 'x' $rows[0].Args 'unknown paren form arguments'
+
+# 따옴표 이름 수집 (모드 비교용): 카탈로그 한 줄에서 "*" 경로의 이름을 뽑는다
+$line = '{"Id":"set/a.set","Name":"a","Kind":"breed","Raw":' + (ConvertTo-SdlRowsJson -Rows (Rows '{perks {"rifle" 1} {"smg" 2} {plain 3}}')) + '}'
+$found = [SdlCore]::QuotedNamesInLine($line)
+Assert-Equal @("set/a.set`t/perks/`"*`"`trifle", "set/a.set`t/perks/`"*`"`tsmg") @($found) 'quoted block names are collected with file and path'
+
 Complete-Tests

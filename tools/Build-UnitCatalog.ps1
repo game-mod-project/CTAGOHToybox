@@ -13,6 +13,10 @@ param(
 . "$PSScriptRoot/lib/SdlResolve.ps1"
 . "$PSScriptRoot/lib/SdlRefs.ps1"
 
+$WorkDir = Resolve-FullPath $WorkDir
+$DataDir = Resolve-FullPath $DataDir
+$FallbackWorkDir = @($FallbackWorkDir | ForEach-Object { Resolve-FullPath $_ })
+$NameDataDir = @($NameDataDir | ForEach-Object { Resolve-FullPath $_ })
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'
 $resolvedKinds = 'breed', 'humanskin', 'vehicle', 'item-entity', 'stuff', 'pattern'
 $nsOf = @{ breed = 'breed'; vehicle = 'entity'; humanskin = 'entity'; 'item-entity' = 'entity'; stuff = 'stuff'; pattern = 'pattern' }
@@ -73,11 +77,11 @@ try {
             $res = Resolve-SdlFile $ctx $vp
             $rows = Get-SdlKeyRows -Root ([pscustomobject]@{ Children = $res.Nodes })
             $resWriters[$f.Group].WriteLine('{"Id":' + (J $vp) + ',"Kind":' + (J $kind) + ',"Resolved":' + (ConvertTo-SdlRowsJson -Rows $rows) +
-                ',"Unresolved":' + (JArray $res.Unresolved) + ',"Includes":' + (JArray $res.Includes) + ',"Macros":' + (JArray $res.Macros) + ',"Presets":' + (JArray $res.Presets) + $errJson + '}')
+                ',"Unresolved":' + (JArray $res.Unresolved) + ',"Includes":' + (JArray $res.Includes) + ',"Macros":' + (JArray $res.Macros) + ',"Presets":' + (JArray $res.Presets) + ',"Inherited":' + (JArray $res.Inherited) + $errJson + '}')
             Add-SdlKeyAggregateRows -Agg $agg -Scope "$($f.Group)|$kind" -Rows $rows -File $vp
             $summary.Add([pscustomobject]@{
                 VirtualPath = $vp; Kind = $kind; RawRows = $raw.Count; ResolvedRows = $rows.Count
-                UnresolvedCount = $res.Unresolved.Count; Unresolved = ($res.Unresolved -join ' ; ')
+                UnresolvedCount = $res.Unresolved.Count; Unresolved = ($res.Unresolved -join ' ; '); InheritedCount = $res.Inherited.Count
             })
             $refRows = $rows
         }
@@ -94,7 +98,7 @@ $resolvedKeys = foreach ($a in (Export-SdlKeyAggregate -Agg $agg)) {
     $group, $kind = $a.Scope.Split('|', 2)
     [pscustomobject]@{
         Group = $group; Kind = $kind; Path = $a.Path; Form = $a.Form; Count = $a.Count; FileCount = $a.FileCount
-        ArgShapes = $a.ArgShapes; NumMin = $a.NumMin; NumMax = $a.NumMax; Values = $a.Values
+        ArgShapes = $a.ArgShapes; NumMin = (ConvertTo-InvariantText $a.NumMin); NumMax = (ConvertTo-InvariantText $a.NumMax); Values = $a.Values
         ExampleFile = $a.ExampleFile; ExampleArgs = $a.ExampleArgs
     }
 }
