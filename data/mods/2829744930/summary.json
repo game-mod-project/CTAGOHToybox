@@ -1,0 +1,48 @@
+{
+  "Id": "2829744930",
+  "Files": 307,
+  "FilesByStatus": {
+    "excluded-binary": 2,
+    "excluded-scope": 196,
+    "text": 109
+  },
+  "FilesByRelation": {
+    "new": 168,
+    "override-changed": 51,
+    "override-unhashed": 88
+  },
+  "TextByRelationAndTop": {
+    "new set/environment": 55,
+    "override-changed set/target": 16,
+    "override-changed set/stuff": 14,
+    "override-changed entity/-vehicle": 13,
+    "new set/interaction_entity": 3,
+    "override-changed set/vision": 3,
+    "override-changed set/breed": 2,
+    "override-changed set/panel_control": 2,
+    "override-changed set/interaction_entity": 1
+  },
+  "UnitsByKindRelation": {
+    "breed changed": 2,
+    "stuff changed": 14,
+    "vehicle changed": 12
+  },
+  "NewVehicleDefsByNation": {},
+  "NewBreedsByFolder": {},
+  "KeysNotInVanilla": 25,
+  "KeysNotInVanillaByForm": {
+    "block": 25
+  },
+  "NamesNotInVanilla": 10,
+  "NamesNotInVanillaByForm": {
+    "block": 10
+  },
+  "DistinctNewBlockNames": 6,
+  "RoundTripFailed": [],
+  "UnresolvedFiles": 1,
+  "UnresolvedTop": {
+    "param:%door2": 1
+  },
+  "Collisions": 0,
+  "OutOfScopeDefinitions": {}
+}

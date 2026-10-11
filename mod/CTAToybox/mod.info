@@ -1,0 +1,7 @@
+{mod
+	{name "CTAToybox"}
+	{tags "Mod"}
+	{desc "CTAToybox development mod. Empty skeleton: changes nothing in the game."}
+	{minGameVersion "any"}
+	{maxGameVersion "any"}
+}
