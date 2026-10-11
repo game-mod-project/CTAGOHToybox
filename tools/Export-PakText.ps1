@@ -9,11 +9,23 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 if (-not $PSBoundParameters.ContainsKey('ScopeInclude')) { $ScopeInclude = $script:DefaultScopeInclude }
 $SourceRoot = (Resolve-Path -LiteralPath $SourceRoot).Path.TrimEnd('\')
+$OutDir = Resolve-FullPath $OutDir
+$DataDir = Resolve-FullPath $DataDir
+# 지난 실행의 파일이 남으면 사라진 파일이 계속 include 대상으로 잡힌다. 매번 비우고 시작한다.
+# 이 스크립트가 만든 폴더(표식 파일이 있는 폴더)만 비운다
+$marker = Join-Path $OutDir '.ctatoybox-work'
+if ([IO.Directory]::Exists($OutDir) -and @([IO.Directory]::EnumerateFileSystemEntries($OutDir)).Count -gt 0) {
+    if (-not [IO.File]::Exists($marker)) { throw "OutDir가 비어 있지 않고 이 스크립트가 만든 폴더가 아닙니다(표식 파일 .ctatoybox-work 없음): $OutDir" }
+    foreach ($d in [IO.Directory]::GetDirectories($OutDir)) { [IO.Directory]::Delete($d, $true) }
+    foreach ($f in [IO.Directory]::GetFiles($OutDir)) { if ($f -ne $marker) { [IO.File]::Delete($f) } }
+}
 [IO.Directory]::CreateDirectory($OutDir) | Out-Null
+[IO.File]::WriteAllText($marker, 'Export-PakText.ps1 work folder. Cleared on every run.')
 [IO.Directory]::CreateDirectory($DataDir) | Out-Null
 $OutDir = (Resolve-Path -LiteralPath $OutDir).Path
 
 $seen = @{}
+$emptyRows = @{}   # 0바이트로 추출한 경로 -> 색인 행. 뒤에 같은 경로의 내용 있는 파일이 오면 충돌로 바꾼다
 $index = [System.Collections.Generic.List[object]]::new()
 $pakSummary = [System.Collections.Generic.List[object]]::new()
 $sha = [Security.Cryptography.SHA1]::Create()
@@ -25,10 +37,12 @@ function Test-InScope([string]$vp) {
 }
 
 function Add-IndexRow([string]$vp, [string]$orig, [string]$source, [long]$length, [string]$status, [string]$reason, [string]$hash) {
-    $index.Add([pscustomobject]@{
+    $row = [pscustomobject]@{
         VirtualPath = $vp; OriginalPath = $orig; Source = $source; Length = $length
         Ext = (Get-SdlFileKind $vp); Group = (Get-SdlFileGroup $vp); Status = $status; Reason = $reason; Sha1 = $hash
-    })
+    }
+    $index.Add($row)
+    if ($status -eq 'empty' -and (Test-InScope $vp)) { $emptyRows[$vp] = $row }
 }
 
 # 바이트를 읽지 않고 결정되는 경우 @(status, reason), 아니면 $null
@@ -40,6 +54,8 @@ function Get-PathDisposition([string]$vp, [long]$length) {
         # 0바이트 파일도 include 대상일 수 있다(예: properties/shadow/*.inc). 빈 파일로 추출해 둔다
         $dest = Join-Path $OutDir ($vp -replace '/', '\')
         [IO.Directory]::CreateDirectory((Split-Path -Parent $dest)) | Out-Null
+        # 같은 경로에 이미 내용 있는 파일이 있으면 그 내용을 지우지 않고 충돌로 적는다
+        if ($seen.ContainsKey($vp)) { return @('collision', "내용 있는 파일과 같은 경로의 0바이트 파일: $($seen[$vp].Source)") }
         if (-not [IO.File]::Exists($dest)) { [IO.File]::WriteAllBytes($dest, [byte[]]@()) }
         return @('empty', '0바이트')
     }
@@ -62,6 +78,12 @@ function Register-Content([string]$vp, [string]$orig, [string]$source, [byte[]]$
         return
     }
     $seen[$vp] = [pscustomobject]@{ Source = $source; Sha1 = $hash }
+    # 앞서 같은 경로에 0바이트 파일이 있었다면 내용 있는 쪽을 쓰고, 0바이트 쪽을 충돌로 적는다
+    if ($emptyRows.ContainsKey($vp)) {
+        $emptyRows[$vp].Status = 'collision'
+        $emptyRows[$vp].Reason = "같은 경로에 내용 있는 파일: $source"
+        $emptyRows.Remove($vp)
+    }
     $dest = Join-Path $OutDir ($vp -replace '/', '\')
     [IO.Directory]::CreateDirectory((Split-Path -Parent $dest)) | Out-Null
     [IO.File]::WriteAllBytes($dest, $bytes)

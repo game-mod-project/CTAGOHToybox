@@ -9,6 +9,8 @@ param(
 #   <ModsDataDir>\cross-mod-conflicts.csv   둘 이상의 모드가 가진 같은 가상 경로의 텍스트 파일
 Set-StrictMode -Version 3.0
 $ErrorActionPreference = 'Stop'
+$VanillaDataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($VanillaDataDir)
+$ModsDataDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($ModsDataDir)
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'
 
 function Last([string]$path) { $path.Substring($path.LastIndexOf('/') + 1) }
@@ -55,7 +57,10 @@ foreach ($id in $ModIds) {
         UnresolvedTop = [ordered]@{}
         Collisions = @($index | Where-Object Status -eq 'collision').Count
         OutOfScopeDefinitions = [ordered]@{}
+        QuotedNamesNotInVanilla = 0
     }
+    $qnPath = Join-Path $d 'diff-quoted-names.csv'
+    if (Test-Path -LiteralPath $qnPath) { $s.QuotedNamesNotInVanilla = @(Import-Csv -LiteralPath $qnPath).Count }
     foreach ($x in ($index | Group-Object Status | Sort-Object Name)) { $s.FilesByStatus[$x.Name] = $x.Count }
     # 분석 범위(set, script, properties, entity/-vehicle, entity/humanskin, entity/inventory) 밖에 놓인 정의 파일.
     # 모드는 entity/+inventory 같은 자기 폴더에 유닛을 두기도 한다. 이 파일들은 분석되지 않았으므로 숨기지 않고 센다

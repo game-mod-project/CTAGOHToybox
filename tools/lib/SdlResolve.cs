@@ -6,7 +6,10 @@
 //   - 조상 폴더의 .presets는 파일보다 먼저 읽어 define만 등록한다.
 //   - (mod ...)와 {from "pattern ..."}은 펼치지 않는다.
 // 미해결 기록: include:<경로>(대상 없음), include-cycle:, include-depth:, include-unsafe:(작업 폴더 밖),
+//              include-parse-error:<경로>(대상에 괄호·따옴표 오류. 읽을 수 있는 데까지는 쓴다),
 //              macro:<이름>(정의 없음), macro-cycle:, macro-depth:, param:%<이름>(채워지지 않은 매개변수)
+// 물려받은 인자: 안쪽 매크로나 include가 자기에게 직접 주어지지 않은, 바깥 호출의 인자를 쓴 경우 Inherited에 적는다.
+//              엔진이 인자를 물려주는지 확인하지 못했으므로, 그 가정에 기대는 곳을 볼 수 있게 한다.
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -17,10 +20,11 @@ using System.Text.RegularExpressions;
 public sealed class SdlResolveResult
 {
     public List<object> Nodes { get; set; }
-    public List<string> Unresolved { get; set; }   // include:<경로> | include-depth:<경로> | macro:<이름> | param:%<이름>
+    public List<string> Unresolved { get; set; }
     public List<string> Includes { get; set; }
     public List<string> Macros { get; set; }
     public List<string> Presets { get; set; }
+    public List<string> Inherited { get; set; }
 }
 
 public sealed class SdlResolver
@@ -28,13 +32,15 @@ public sealed class SdlResolver
     const int MaxDepth = 32;
     static readonly Regex ParamInString = new Regex(@"%(\w+)", RegexOptions.Compiled);
     static readonly Encoding Latin1 = Encoding.GetEncoding(28591);
+    static readonly HashSet<string> NoOwn = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
     sealed class Def { public List<object> Body; public string Dir; }
+    sealed class Parsed { public SdlNode Root; public bool HasErrors; }
 
     readonly string[] workDirs;   // 앞에 있는 폴더가 우선한다
-    readonly Dictionary<string, SdlNode> cache = new Dictionary<string, SdlNode>(StringComparer.OrdinalIgnoreCase);
+    readonly Dictionary<string, Parsed> cache = new Dictionary<string, Parsed>(StringComparer.OrdinalIgnoreCase);
     Dictionary<string, Def> defines;
-    List<string> unresolved, includes, macros;
+    List<string> unresolved, includes, macros, inherited;
     // 지금 펼치는 중인 include와 매크로. 다시 들어오면 순환이다
     readonly HashSet<string> activeIncludes = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
     readonly HashSet<string> activeMacros = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
@@ -60,14 +66,25 @@ public sealed class SdlResolver
         return null;
     }
 
+    Parsed Load(string virtualPath, bool useCache)
+    {
+        Parsed p;
+        if (cache.TryGetValue(virtualPath, out p)) return p;
+        string full = Find(virtualPath);
+        if (full == null) p = null;
+        else
+        {
+            var r = SdlCore.Parse(ReadText(full));
+            p = new Parsed { Root = r.Root, HasErrors = r.Errors.Count > 0 };
+        }
+        if (useCache) cache[virtualPath] = p;
+        return p;
+    }
+
     public SdlNode GetParsed(string virtualPath, bool useCache)
     {
-        SdlNode root;
-        if (cache.TryGetValue(virtualPath, out root)) return root;
-        string full = Find(virtualPath);
-        root = full == null ? null : SdlCore.Parse(ReadText(full)).Root;
-        if (useCache) cache[virtualPath] = root;
-        return root;
+        var p = Load(virtualPath, useCache);
+        return p == null ? null : p.Root;
     }
 
     public static string IncludePath(string raw, string fromDir)
@@ -89,29 +106,45 @@ public sealed class SdlResolver
         return vp.Length > 0 && vp.IndexOf(':') < 0 && !vp.StartsWith("/") && !vp.StartsWith("\\");
     }
 
+    static string DirOf(string virtualPath)
+    {
+        int i = virtualPath.LastIndexOf('/');
+        return i < 0 ? "" : virtualPath.Substring(0, i);
+    }
+
+    // 묶인 값을 찾는다. 이 호출에 직접 주어진 인자가 아니면(바깥에서 물려받았으면) 기록한다
+    bool TryBind(string key, Dictionary<string, List<object>> bind, HashSet<string> own, out List<object> value)
+    {
+        if (!bind.TryGetValue(key, out value)) return false;
+        if (!own.Contains(key)) inherited.Add("%" + key);
+        return true;
+    }
+
     // 문자열이나 낱말 안의 %이름을 치환한다.
     // 이름 있는 매개변수는 낱말 전체가 같아야 한다(%door가 묶여 있어도 %door2는 다른 매개변수다).
     // 숫자로 시작하면 위치 인자이므로 앞의 숫자만 이름으로 본다("%0_left"에서 0).
     // 묶인 이름이 없으면 그대로 두고 미해결로 기록한다
-    string Substitute(string text, Dictionary<string, List<object>> bind)
+    string Substitute(string text, Dictionary<string, List<object>> bind, HashSet<string> own)
     {
         return ParamInString.Replace(text, m =>
         {
             string w = m.Groups[1].Value;
             List<object> b;
-            if (bind.TryGetValue(w, out b)) return SdlCore.NodesText(b).Trim('"');
+            if (TryBind(w, bind, own, out b)) return SdlCore.NodesText(b).Trim('"');
             int digits = 0;
             while (digits < w.Length && w[digits] >= '0' && w[digits] <= '9') digits++;
-            if (digits > 0 && digits < w.Length && bind.TryGetValue(w.Substring(0, digits), out b))
+            if (digits > 0 && digits < w.Length && TryBind(w.Substring(0, digits), bind, own, out b))
                 return SdlCore.NodesText(b).Trim('"') + w.Substring(digits);
             unresolved.Add("param:%" + w);
             return m.Value;
         });
     }
-    static string DirOf(string virtualPath)
+
+    // 계산 결과를 적는다. 소수 15자리까지, 지수 표기 없이. -0은 0으로
+    static string FormatNumber(double v)
     {
-        int i = virtualPath.LastIndexOf('/');
-        return i < 0 ? "" : virtualPath.Substring(0, i);
+        string s = v.ToString("0.###############", CultureInfo.InvariantCulture);
+        return s == "-0" ? "0" : s;
     }
 
     // 두 피연산자의 전위 산술식. 계산할 수 없으면 null
@@ -153,7 +186,8 @@ public sealed class SdlResolver
             : new Dictionary<string, List<object>>(from, StringComparer.OrdinalIgnoreCase);
     }
 
-    List<object> Expand(List<object> nodes, string dir, Dictionary<string, List<object>> bind, int depth)
+    // own: 지금 펼치는 본문(매크로나 include)에 직접 주어진 인자 이름
+    List<object> Expand(List<object> nodes, string dir, Dictionary<string, List<object>> bind, HashSet<string> own, int depth)
     {
         var o = new List<object>();
         foreach (object x in nodes)
@@ -164,10 +198,10 @@ public sealed class SdlResolver
             {
                 if (n.Text.Length > 1 && n.Text.IndexOf('%') >= 0)
                 {
-                    if (n.Text[0] == '%' && bind.TryGetValue(n.Text.Substring(1), out bound)) o.AddRange(bound);
+                    if (n.Text[0] == '%' && TryBind(n.Text.Substring(1), bind, own, out bound)) o.AddRange(bound);
                     else
                     {
-                        string s = Substitute(n.Text, bind);
+                        string s = Substitute(n.Text, bind, own);
                         o.Add(s == n.Text ? n : new SdlNode("atom", s, n.Index, false));
                     }
                 }
@@ -178,7 +212,7 @@ public sealed class SdlResolver
             {
                 if (n.Text.IndexOf('%') >= 0)
                 {
-                    string text = Substitute(n.Text, bind);
+                    string text = Substitute(n.Text, bind, own);
                     o.Add(text == n.Text ? n : new SdlNode("str", text, n.Index, false));
                 }
                 else o.Add(n);
@@ -187,7 +221,7 @@ public sealed class SdlResolver
             if (n.Kind == "brace" || n.Kind == "call")
             {
                 var c = new SdlNode(n.Kind, n.Text, n.Index, true);
-                c.Children.AddRange(Expand(n.Children, dir, bind, depth));
+                c.Children.AddRange(Expand(n.Children, dir, bind, own, depth));
                 o.Add(c);
                 continue;
             }
@@ -203,17 +237,19 @@ public sealed class SdlResolver
                 if (!IsSafeVirtualPath(vp)) { unresolved.Add("include-unsafe:" + vp); o.Add(n); continue; }
                 if (activeIncludes.Contains(vp)) { unresolved.Add("include-cycle:" + vp); o.Add(n); continue; }
                 if (depth >= MaxDepth) { unresolved.Add("include-depth:" + vp); o.Add(n); continue; }
-                SdlNode root = GetParsed(vp, true);
-                if (root == null) { unresolved.Add("include:" + vp); o.Add(n); continue; }
+                Parsed target = Load(vp, true);
+                if (target == null) { unresolved.Add("include:" + vp); o.Add(n); continue; }
+                if (target.HasErrors) unresolved.Add("include-parse-error:" + vp);
                 includes.Add(vp);
                 var b = NewBind(bind);
+                var ownHere = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
                 for (int i = 2; i < kids.Count; i++)
                 {
                     var k = SdlCore.Unwrap(kids[i]);
-                    if (k.Kind == "call") b[k.Text] = Expand(k.Children, dir, bind, depth);
+                    if (k.Kind == "call") { b[k.Text] = Expand(k.Children, dir, bind, own, depth); ownHere.Add(k.Text); }
                 }
                 activeIncludes.Add(vp);
-                try { o.AddRange(Expand(root.Children, DirOf(vp), b, depth + 1)); }
+                try { o.AddRange(Expand(target.Root.Children, DirOf(vp), b, ownHere, depth + 1)); }
                 finally { activeIncludes.Remove(vp); }
                 continue;
             }
@@ -231,26 +267,33 @@ public sealed class SdlResolver
                 if (!defines.TryGetValue(name, out def)) { unresolved.Add("macro:" + name); o.Add(n); continue; }
                 macros.Add(name);
                 var b = NewBind(bind);
+                var ownHere = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
                 int pos = -1;
                 for (int i = 1; i < kids.Count; i++)
                 {
                     var k = SdlCore.Unwrap(kids[i]);
-                    if (k.Kind == "call") b[k.Text] = Expand(k.Children, dir, bind, depth);
+                    if (k.Kind == "call") { b[k.Text] = Expand(k.Children, dir, bind, own, depth); ownHere.Add(k.Text); }
                     else if (pos < 0 && k.Kind == "atom" && string.Equals(k.Text, "args", StringComparison.OrdinalIgnoreCase)) pos = 0;
-                    else if (pos >= 0) { b[pos.ToString(CultureInfo.InvariantCulture)] = Expand(new List<object> { k }, dir, bind, depth); pos++; }
+                    else if (pos >= 0)
+                    {
+                        string key = pos.ToString(CultureInfo.InvariantCulture);
+                        b[key] = Expand(new List<object> { k }, dir, bind, own, depth);
+                        ownHere.Add(key);
+                        pos++;
+                    }
                 }
                 activeMacros.Add(name);
-                try { o.AddRange(Expand(def.Body, def.Dir, b, depth + 1)); }
+                try { o.AddRange(Expand(def.Body, def.Dir, b, ownHere, depth + 1)); }
                 finally { activeMacros.Remove(name); }
                 continue;
             }
 
             var p = new SdlNode("paren", "", n.Index, true);
-            p.Children.AddRange(Expand(kids, dir, bind, depth));
+            p.Children.AddRange(Expand(kids, dir, bind, own, depth));
             if (SdlCore.IsExpr(p))
             {
                 double? v = Eval(p);
-                if (v.HasValue) { o.Add(new SdlNode("atom", v.Value.ToString("0.######", CultureInfo.InvariantCulture), n.Index, false)); continue; }
+                if (v.HasValue) { o.Add(new SdlNode("atom", FormatNumber(v.Value), n.Index, false)); continue; }
             }
             o.Add(p);
         }
@@ -267,7 +310,7 @@ public sealed class SdlResolver
     public SdlResolveResult Resolve(string virtualPath)
     {
         defines = new Dictionary<string, Def>(StringComparer.OrdinalIgnoreCase);
-        unresolved = new List<string>(); includes = new List<string>(); macros = new List<string>();
+        unresolved = new List<string>(); includes = new List<string>(); macros = new List<string>(); inherited = new List<string>();
         var presets = new List<string>();
         activeIncludes.Clear(); activeMacros.Clear();
 
@@ -280,18 +323,18 @@ public sealed class SdlResolver
             string pv = acc + "/.presets";
             if (string.Equals(pv, virtualPath, StringComparison.OrdinalIgnoreCase)) continue;
             SdlNode proot = GetParsed(pv, true);
-            if (proot != null) { presets.Add(pv); Expand(proot.Children, acc, NewBind(null), 1); }
+            if (proot != null) { presets.Add(pv); Expand(proot.Children, acc, NewBind(null), NoOwn, 1); }
         }
-        // .presets를 읽으며 쌓인 include/매크로 기록은 파일 자체의 것이 아니다
-        includes.Clear(); macros.Clear();
+        // .presets를 읽으며 쌓인 기록은 파일 자체의 것이 아니다
+        includes.Clear(); macros.Clear(); inherited.Clear();
 
         activeIncludes.Add(virtualPath);   // 자기 자신을 다시 include하면 순환이다
         SdlNode root = GetParsed(virtualPath, false);
-        var nodes = root == null ? new List<object>() : Expand(root.Children, dir, NewBind(null), 0);
+        var nodes = root == null ? new List<object>() : Expand(root.Children, dir, NewBind(null), NoOwn, 0);
         return new SdlResolveResult
         {
             Nodes = nodes, Unresolved = SortedDistinct(unresolved), Includes = SortedDistinct(includes),
-            Macros = SortedDistinct(macros), Presets = presets
+            Macros = SortedDistinct(macros), Presets = presets, Inherited = SortedDistinct(inherited)
         };
     }
 }

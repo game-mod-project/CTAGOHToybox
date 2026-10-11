@@ -56,6 +56,23 @@ public static partial class SdlCore
         return r;
     }
 
+    // 인자로 넘긴 호출 name(...) 안에 블록이 들어 있으면 그 블록도 키로 낸다.
+    // 예: ("crew" off({sensor})) -> .../("crew")/off()/sensor
+    static void AddArgBlocks(List<SdlNode> args, string path, List<SdlRow> rows, HashSet<string> qualified)
+    {
+        foreach (var a in args)
+        {
+            if (a.Kind != "call") continue;
+            string p = path + "/" + a.Text.ToLowerInvariant() + "()";
+            var inner = Range(a.Children, 0);
+            var statements = new List<SdlNode>();
+            var calls = new List<SdlNode>();
+            foreach (var c in inner) { if (IsStatement(c)) statements.Add(c); else if (c.Kind == "call") calls.Add(c); }
+            AddRows(statements, p, rows, qualified);
+            AddArgBlocks(calls, p, rows, qualified);
+        }
+    }
+
     static void AddRows(List<SdlNode> nodes, string parent, List<SdlRow> rows, HashSet<string> qualified)
     {
         foreach (var n in nodes)
@@ -93,6 +110,7 @@ public static partial class SdlCore
         var args = new List<SdlNode>(); var nested = new List<SdlNode>();
         Split(kids, start, args, nested);
         rows.Add(Row(path, "block", args));
+        AddArgBlocks(args, path, rows, qualified);
         AddRows(nested, path, rows, qualified);
     }
 
@@ -103,14 +121,26 @@ public static partial class SdlCore
         var head = Unwrap(kids[0]);
         if (head.Kind == "str")
         {
-            rows.Add(Row(parent + "/(" + head.Text.ToLowerInvariant() + ")", "macro", Range(kids, 1)));
+            // 매크로 호출. 행의 값에는 인자 전체를 그대로 두고, 인자 안의 블록은 따로 키로도 낸다
+            string path = parent + "/(" + head.Text.ToLowerInvariant() + ")";
+            var rest = Range(kids, 1);
+            rows.Add(Row(path, "macro", rest));
+            var args = new List<SdlNode>(); var nested = new List<SdlNode>();
+            Split(kids, 1, args, nested);
+            AddArgBlocks(args, path, rows, qualified);
+            AddRows(nested, path, rows, qualified);
             return;
         }
         string word = head.Kind == "atom" ? head.Text.ToLowerInvariant() : "";
-        if (word == "include") rows.Add(Row(parent + "/(include)", "include", Range(kids, 1)));
+        if (word == "include")
+        {
+            var rest = Range(kids, 1);
+            rows.Add(Row(parent + "/(include)", "include", rest));
+            AddArgBlocks(rest, parent + "/(include)", rows, qualified);
+        }
         else if (word == "define" && kids.Count >= 2)
         {
-            string path = parent + "/(define " + (Unwrap(kids[1])).Text.ToLowerInvariant() + ")";
+            string path = parent + "/(define " + Unwrap(kids[1]).Text.ToLowerInvariant() + ")";
             rows.Add(Row(path, "define", new List<SdlNode>()));
             AddRows(Range(kids, 2), path, rows, qualified);
         }
@@ -121,7 +151,16 @@ public static partial class SdlCore
             rows.Add(Row(parent + "/(mod)", "mod", args));
             AddRows(nested, parent, rows, qualified);
         }
-        else rows.Add(Row(parent + "/" + (word != "" ? "(" + word + ")" : "()"), "paren-other", Range(kids, 1)));
+        else
+        {
+            // 알 수 없는 괄호 구문. 머리가 낱말이면 이름으로 쓰고, 아니면 첫 자식부터 내용으로 본다
+            string path = parent + "/" + (word != "" ? "(" + word + ")" : "()");
+            var args = new List<SdlNode>(); var nested = new List<SdlNode>();
+            Split(kids, word != "" ? 1 : 0, args, nested);
+            rows.Add(Row(path, "paren-other", args));
+            AddArgBlocks(args, path, rows, qualified);
+            AddRows(nested, path, rows, qualified);
+        }
     }
 
     public static List<SdlRow> KeyRows(IEnumerable topLevel, string[] qualifiedBlocks)
@@ -165,5 +204,25 @@ public static partial class SdlCore
         }
         sb.Append(']');
         return sb.ToString();
+    }
+
+    // 카탈로그 한 줄(JSON)에서 따옴표 이름 블록("*" 경로)의 이름을 뽑는다. 결과는 "파일\t경로\t이름".
+    // 모드 비교용: 경로가 "*"로 묶여 있어 키 비교로는 새 이름이 드러나지 않는다.
+    // JSON을 다 파싱하지 않고 줄의 글자를 그대로 훑는다(모델 파일의 줄은 매우 길다)
+    static readonly Regex LineId = new Regex("^\\{\"Id\":\"([^\"]*)\"", RegexOptions.Compiled);
+    static readonly Regex QuotedRow = new Regex("\\[\"((?:[^\"\\\\]|\\\\.)*/\\\\\"\\*\\\\\")\",\"block\",\"\\\\\"((?:[^\"\\\\]|\\\\[^\"])*)\\\\\"", RegexOptions.Compiled);
+
+    public static List<string> QuotedNamesInLine(string line)
+    {
+        var result = new List<string>();
+        var idMatch = LineId.Match(line);
+        if (!idMatch.Success) return result;
+        string id = idMatch.Groups[1].Value;
+        for (Match m = QuotedRow.Match(line); m.Success; m = m.NextMatch())
+        {
+            string path = m.Groups[1].Value.Replace("\\\"", "\"").Replace("\\\\", "\\");
+            result.Add(id + "\t" + path + "\t" + m.Groups[2].Value);
+        }
+        return result;
     }
 }

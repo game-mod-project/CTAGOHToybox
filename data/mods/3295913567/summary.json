@@ -40,5 +40,6 @@
   "UnresolvedFiles": 0,
   "UnresolvedTop": {},
   "Collisions": 0,
-  "OutOfScopeDefinitions": {}
+  "OutOfScopeDefinitions": {},
+  "QuotedNamesNotInVanilla": 0
 }

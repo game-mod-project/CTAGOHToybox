@@ -44,5 +44,6 @@
     "param:%door2": 1
   },
   "Collisions": 0,
-  "OutOfScopeDefinitions": {}
+  "OutOfScopeDefinitions": {},
+  "QuotedNamesNotInVanilla": 101
 }

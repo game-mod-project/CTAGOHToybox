@@ -78,9 +78,9 @@
     "mp/fra": 13,
     "mp/eng": 11
   },
-  "KeysNotInVanilla": 2339,
+  "KeysNotInVanilla": 2343,
   "KeysNotInVanillaByForm": {
-    "block": 1717,
+    "block": 1721,
     "macro": 413,
     "define": 189,
     "mod": 16,
@@ -112,5 +112,6 @@
     "entity/fx": 16,
     "entity/recovery_volume": 4,
     "entity/landscape": 1
-  }
+  },
+  "QuotedNamesNotInVanilla": 3768
 }

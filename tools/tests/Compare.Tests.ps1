@@ -10,13 +10,13 @@ function Put([string]$root, [string]$rel, [string]$text) {
 $van = New-TestDir; $mod = New-TestDir
 $vanWork = New-TestDir; $vanData = New-TestDir; $modWork = New-TestDir; $modsRoot = New-TestDir; $modData = Join-Path $modsRoot 'm1'
 
-Put $van 'set/breed/mp/ger/a.set' '{breed {skin "s1"} {nationality ger}}'
+Put $van 'set/breed/mp/ger/a.set' '{breed {skin "s1"} {nationality ger} {perks {"rifle" lvl_1}} {weight 3.5}}'
 Put $van 'set/breed/mp/ger/b.set' '{breed {skin "s2"}}'
 Put $van 'properties/base.ext' '{props "p"}'
 Put $van 'entity/-vehicle/ger/t/t.def' '{game_entity (include "/properties/base.ext") {mass 10}}'
 [IO.File]::WriteAllBytes((Join-Path $van 'entity\-vehicle\ger\t\t.ply'), [byte[]](1, 2, 3))
 
-Put $mod 'set/breed/mp/ger/a.set' '{breed {skin "s1"} {nationality ger} {newkey 5}}'      # 바뀜: 행 1개 추가
+Put $mod 'set/breed/mp/ger/a.set' '{breed {skin "s1"} {nationality ger} {perks {"rifle" lvl_1} {"pistol" lvl_2}} {weight 3.5} {newkey 5}}'      # 바뀜: 행 1개 추가
 Put $mod 'set/breed/mp/ger/b.set' '{breed {skin "s2"}}'                                    # 같음
 Put $mod 'set/breed/mp/ger/c.set' '{breed {skin "s3"}}'                                    # 새 유닛
 Put $mod 'entity/-vehicle/ger/n/n.def' '{game_entity (include "/properties/base.ext") {mass 20}}'   # 바닐라 파일을 include
@@ -50,7 +50,7 @@ Assert-Equal @('/breed/newkey', '/from', '/from/x') @($keys.Path | Sort-Object) 
 $units = @(Import-Csv (Join-Path $modData 'diff-units.csv') | Sort-Object Id)
 Assert-Equal @('entity/-vehicle/ger/n/n.def', 'set/breed/mp/ger/a.set', 'set/breed/mp/ger/c.set', 'set/stuff/gun/bad') @($units.Id) 'new and changed units, identical one left out, broken file included'
 Assert-Equal @('new', 'changed', 'new', 'new') @($units.Relation) 'unit relations'
-Assert-Equal @('1', '0') @($units[1].RowsAdded, $units[1].RowsRemoved) 'changed unit row delta'
+Assert-Equal @('2', '0') @($units[1].RowsAdded, $units[1].RowsRemoved) 'changed unit row delta'
 
 # 모드의 유닛이 바닐라 파일을 include해서 펼쳐졌는지
 $summary = @(Import-Csv (Join-Path $modData 'resolve-summary.csv') | Where-Object VirtualPath -eq 'entity/-vehicle/ger/n/n.def')
@@ -65,5 +65,37 @@ Assert-Equal $true ($badLine.Contains('"ParseErrors":["')) 'catalog line of a br
 $sum = Get-Content -Raw (Join-Path $modData 'summary.json') | ConvertFrom-Json
 Assert-Equal 1 $sum.OutOfScopeDefinitions.'entity/+inventory' 'definition files outside the analyzed folders are reported'
 Assert-Equal 4 $sum.FilesByRelation.new 'summary counts new files once per path'
+
+# 모드가 새로 넣은 따옴표 이름: 경로는 "*"로 묶여 새 키로 잡히지 않으므로 따로 보고한다
+$qn = @(Import-Csv (Join-Path $modData 'diff-quoted-names.csv'))
+Assert-Equal @('pistol') @($qn | Where-Object Path -eq '/breed/perks/"*"' | ForEach-Object Name) 'quoted names absent from vanilla are listed'
+Assert-Equal $false ([bool]($qn | Where-Object Name -eq 'rifle')) 'quoted names present in vanilla are not listed'
+
+# M9: 숫자는 로캘과 무관하게 점으로 쓴다
+$deWork = New-TestDir; $deData = New-TestDir; $pipeline = (Resolve-Path "$PSScriptRoot/../Invoke-Pipeline.ps1").Path
+pwsh -NoProfile -Command "[cultureinfo]::CurrentCulture = 'de-DE'; & '$pipeline' -SourceRoot '$van' -WorkDir '$deWork' -DataDir '$deData'" *> $null
+$wRow = @(Import-Csv (Join-Path $deData 'keys-human.csv') | Where-Object Path -eq '/breed/weight')[0]
+Assert-Equal '3.5' $wRow.NumMin 'numbers are written with a dot under a comma-decimal culture'
+
+# 모드 문서 생성기
+[IO.File]::WriteAllText((Join-Path $modsRoot 'mods.psv'), "m1|Test Mod|someone|2026-01-01|1|info|page text`n")
+[IO.File]::WriteAllText((Join-Path $modsRoot 'annotations.psv'), "newkey|추정|a test meaning`n")
+[IO.File]::WriteAllText((Join-Path $modsRoot 'readme-intro.md'), "intro text`n")
+[IO.File]::WriteAllText((Join-Path $modsRoot 'readme-outro.md'), "outro text`n")
+$docOut = New-TestDir
+& "$PSScriptRoot/../New-ModDoc.ps1" -ModsDataDir $modsRoot -OutDir $docOut *> $null
+$doc = [IO.File]::ReadAllText((Join-Path $docOut 'm1.md'))
+Assert-Equal $true ($doc.Contains('| `newkey` |') -and $doc.Contains('a test meaning')) 'mod doc lists the new block name with its annotation'
+Assert-Equal $true ($doc.Contains('`/breed/newkey`')) 'mod doc lists every key absent from vanilla'
+Assert-Equal $true ($doc.Contains('`entity/+inventory`')) 'mod doc reports definition files outside the analyzed folders'
+Assert-Equal $true ($doc.Contains('`pistol`')) 'mod doc lists new quoted names'
+Assert-Equal $true ([IO.File]::ReadAllText((Join-Path $docOut 'README.md')).Contains('[Test Mod](m1.md)')) 'readme has an overview row per mod'
+
+# 새 따옴표 이름이 하나도 없는 모드도 문서가 만들어진다
+[IO.File]::WriteAllText((Join-Path $modData 'diff-quoted-names.csv'), '')
+& "$PSScriptRoot/../New-ModDoc.ps1" -ModsDataDir $modsRoot -OutDir $docOut *> $null
+$doc = [IO.File]::ReadAllText((Join-Path $docOut 'm1.md'))
+Assert-Equal $false ($doc.Contains('`pistol`')) 'mod doc without new quoted names is generated and lists none'
+Assert-Equal $true ([IO.File]::GetLastWriteTime((Join-Path $docOut 'README.md')) -gt (Get-Date).AddMinutes(-1)) 'readme is regenerated too'
 
 Complete-Tests
