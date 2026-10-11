@@ -64,7 +64,7 @@
 | 보병 외형 (humanskin) | 3,667 | `entity/humanskin/**/*.def` | `{game_entity` |
 | 차량류 (vehicle) | 2,443 | `entity/-vehicle/**/*.def` | `{game_entity` 2,384, `{actor` 58, `{entity` 1 |
 | 아이템 엔티티 (item-entity) | 2,253 | `entity/inventory/**/*.def` | `{actor` 1,694, `{game_entity` 546, `{entity` 13 |
-| 아이템 (stuff) | 2,727 | `set/stuff/**` | `{from` 2,522, `{bullet` 121, `{item` 64, 그 밖 20 |
+| 아이템 (stuff) | 2,720 | `set/stuff/**` (`.pattern`, `.presets`, `.inc`, 동작 설정 파일 제외) | `{from` 2,522, `{bullet` 121, `{item` 64, 그 밖 13 |
 | 원형 (pattern) | 64 | `set/stuff/**/*.pattern` | `{from` 43, `{bullet` 8, `{item` 7, `{weapon_bullet` 6 |
 
 `set/breed`의 텍스트 파일은 5,126개다. `.set` 5,083개가 보병이고 나머지 43개는 `ability.inc` 같은 `.inc` 파일이다.
@@ -200,7 +200,7 @@ flowchart LR
 
 ### 암묵 규칙
 
-- `set/stuff/<폴더>/.presets`는 그 폴더(와 하위 폴더)의 파일에서 include 없이 쓸 수 있다. 이 규칙으로 펼쳤을 때 아이템 2,727개와 원형 64개에서 풀리지 않은 매크로가 0개였다.
+- `set/stuff/<폴더>/.presets`는 그 폴더(와 하위 폴더)의 파일에서 include 없이 쓸 수 있다. 이 규칙으로 펼쳤을 때 아이템 2,720개와 원형 64개에서 풀리지 않은 매크로가 0개였다.
 - 0바이트 파일도 include 대상이다. `properties/shadow/*.inc` 20개가 비어 있고 27개 엔티티가 이를 include한다.
 
 ### 경로 표기
@@ -214,6 +214,7 @@ flowchart LR
 | `(include)`, `(mod)` | 괄호 구문 |
 | `("fire rate")` | 매크로 호출 |
 | `(define "locomotion")/maxspeed` | 매크로 정의 안의 키 |
+| `("crew_human")/off()/sensor` | 매크로 호출의 인자 `off(...)` 안에 든 블록 |
 | `<bare>` | 블록 없이 놓인 낱말 |
 | `{}` | 이름 없는 블록 |
 
@@ -232,7 +233,7 @@ flowchart LR
 | `units-<그룹>.jsonl.gz` | 파일별 원본 키·값 전체. 한 줄에 파일 하나 |
 | `units-<그룹>.resolved.jsonl.gz` | 유닛 파일별 펼친 키·값 전체 |
 | `display-names.csv` | 현지화 키와 영문 표시 이름 22,033개 |
-| `references.csv.gz` | 파일 사이의 이름 참조 228,228개 |
+| `references.csv.gz` | 파일 사이의 이름 참조 212,557개 |
 | `annotations/common.psv` | 사람이 쓴 키 의미. 유일하게 손으로 고치는 파일 |
 
 유닛 하나의 모든 값은 `units-*.resolved.jsonl.gz`에 있다. 한 줄의 구조:
@@ -240,7 +241,7 @@ flowchart LR
 ```json
 {"Id":"entity/-vehicle/ussr/tank_heavy/kv85/kv85.def","Kind":"vehicle",
  "Resolved":[["/game_entity/mass","block","46000"], ["/game_entity/chassis/locomotion/maxspeed","block","40"], ...],
- "Unresolved":[],"Includes":["properties/tank.ext", ...],"Macros":["abm_dymamic", ...],"Presets":[]}
+ "Unresolved":[],"Includes":["properties/tank.ext", ...],"Macros":["abm_dymamic", ...],"Presets":[],"Inherited":[]}
 ```
 
 `Resolved`의 각 항목은 `[경로, 형태, 값]`이다. PowerShell로 한 유닛을 꺼내는 예:
@@ -282,10 +283,11 @@ $sr.Dispose()
 
 ## 한계
 
-- **펼치기 규칙은 추론이다.** include, 매크로, `.presets`의 처리 방식을 파일에서 추론해 구현했다. 유닛 파일 16,237개 중 풀리지 않은 구문이 남은 것은 16개이고 모두 채워지지 않은 매개변수(`%door2` 등)다. include와 매크로 이름은 전부 풀렸다. 이는 규칙이 맞다는 근거지만 엔진과 같은 결과라는 증명은 아니다.
+- **펼치기 규칙은 추론이다.** include, 매크로, `.presets`의 처리 방식을 파일에서 추론해 구현했다. 유닛 파일 16,230개 중 풀리지 않은 구문이 남은 것은 16개이고 모두 채워지지 않은 매개변수(`%door2` 등)다. include와 매크로 이름은 전부 풀렸다. 이는 규칙이 맞다는 근거지만 엔진과 같은 결과라는 증명은 아니다.
 - **원형 상속은 합치지 않았다.** `{from "pattern rifle" ...}`의 유닛에는 그 파일에 적힌 값만 있다. 원형의 값은 `.pattern` 파일(종류 `pattern`)에 따로 있다. 둘이 어떤 규칙으로 합쳐지는지 확인하지 못했다.
 - **`(mod ...)` 조건은 풀지 않았다.** 조건 안의 블록은 부모 경로에 그대로 실려 있다. 같은 키가 조건별로 두 번 나올 수 있다.
 - **매크로 정의의 순서.** 정의가 쓰인 뒤에 나오는 경우는 풀지 못한다. 실제로는 발생하지 않았다.
+- **매크로 안에서 부른 매크로는 바깥 매크로의 인자를 물려받는다고 보았다.** 엔진이 그렇게 하는지는 확인하지 못했다. 다만 바닐라의 유닛 16,230개 가운데 이 가정에 기대어 값이 채워진 곳은 하나도 없으므로, 가정이 틀려도 바닐라의 결과는 달라지지 않는다. 유닛별 기록은 카탈로그의 `Inherited`에 있다.
 - **이름 기반 참조에는 잘못 이어진 것이 있다.** `references.csv.gz`는 인자 문자열이 다른 파일의 이름과 같으면 참조로 기록한다. `"stuff"`, `"rifle"`, `"body"`처럼 흔한 낱말은 실제 참조가 아닐 수 있다. `MatchType`이 `whole`인 것과 위의 참조 사슬에 나온 키를 우선 믿는다.
 - **모델·재질 파일.** `.mdl`, `.mtl`은 키 목록과 카탈로그에는 있지만 참조 색인에서는 뺐다.
 - **값을 바꿔 가며 검증하지 않았다.** 이 문서의 어떤 내용도 게임에서 실험한 결과가 아니다.

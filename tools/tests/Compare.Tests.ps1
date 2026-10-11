@@ -91,4 +91,11 @@ Assert-Equal $true ($doc.Contains('`entity/+inventory`')) 'mod doc reports defin
 Assert-Equal $true ($doc.Contains('`pistol`')) 'mod doc lists new quoted names'
 Assert-Equal $true ([IO.File]::ReadAllText((Join-Path $docOut 'README.md')).Contains('[Test Mod](m1.md)')) 'readme has an overview row per mod'
 
+# 새 따옴표 이름이 하나도 없는 모드도 문서가 만들어진다
+[IO.File]::WriteAllText((Join-Path $modData 'diff-quoted-names.csv'), '')
+& "$PSScriptRoot/../New-ModDoc.ps1" -ModsDataDir $modsRoot -OutDir $docOut *> $null
+$doc = [IO.File]::ReadAllText((Join-Path $docOut 'm1.md'))
+Assert-Equal $false ($doc.Contains('`pistol`')) 'mod doc without new quoted names is generated and lists none'
+Assert-Equal $true ([IO.File]::GetLastWriteTime((Join-Path $docOut 'README.md')) -gt (Get-Date).AddMinutes(-1)) 'readme is regenerated too'
+
 Complete-Tests

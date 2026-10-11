@@ -212,7 +212,9 @@ foreach ($m in $mods) {
     L '### 3. 바닐라에 없는 따옴표 이름'
     L
     $qnPath = Join-Path $d 'diff-quoted-names.csv'
-    $qn = if (Test-Path -LiteralPath $qnPath) { @(Import-Csv -LiteralPath $qnPath) } else { @() }
+    # 대입문으로 나눈다: if 식의 결과로 받으면 빈 배열이 $null로 풀린다
+    $qn = @()
+    if (Test-Path -LiteralPath $qnPath) { $qn = @(Import-Csv -LiteralPath $qnPath) }
     L '이름이 따옴표 문자열인 블록(`{"이름" ...}`)은 경로에서 `"*"`로 묶여 있어 위의 키 목록에는 새 이름이 드러나지 않는다. 편제표의 유닛 이름, 기술 이름, 텍스처 경로처럼 이름 자체가 데이터인 자리다. 그런 자리에 이 모드가 넣은, 바닐라에 없는 이름을 경로별로 센 것이다.'
     L
     if ($qn.Count -eq 0) { L '없다.' }

@@ -1,5 +1,18 @@
 # CTAToybox 레퍼런스 구축 Implementation Plan
 
+> **이 문서는 실행 전에 쓴 계획이며 기록으로 남겨 둔 것이다.** 아래의 코드와 명령은 실제 구현과 다르다. 현재의 구조와 명령은 `CLAUDE.md`와 `tools/`를 본다.
+>
+> 구현하면서 달라진 점:
+>
+> - **파서, 키 추출, 리졸버, 집계, 참조 색인의 본체는 C#이다** (`tools/lib/*.cs`). 계획의 PowerShell 구현은 모델 파일(`.mdl`) 때문에 너무 느렸다. PowerShell 함수 이름은 계획과 같다.
+> - **`Build-References.ps1`은 없다.** 참조 색인은 `Build-UnitCatalog.ps1`이 함께 만든다.
+> - **카탈로그는 모두 gzip이다** (`units-<그룹>.jsonl.gz`, `units-<그룹>.resolved.jsonl.gz`).
+> - **따옴표로 된 블록 이름은 경로에서 `"*"`로 묶는다.** 이름은 값에 남는다.
+> - **주석은 `data/annotations/common.psv` 하나에 쓴다.** 그룹별 CSV가 아니다. 자동으로 모은 파일 주석은 등급을 만들지 않고 참고 열에 싣는다.
+> - **검사가 다섯 가지다.** 계획의 세 가지에 pak 항목 수 대조와 독립적인 글자 수 검사를 더했다.
+> - **모드 문서는 생성물이다** (`Get-ModSummary.ps1`, `New-ModDoc.ps1`). 계획에는 없던 스크립트다.
+> - 코드 리뷰에서 나온 지적 20건을 반영했다: 폴더 밖으로 나가는 경로 거부, include·매크로 순환 감지, 채워지지 않은 매개변수 보고, 작업 폴더 비우기 등.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Gates of Hell의 게임 구조, 모드 개발 방법, 모든 유닛 구성 정보, 창작마당 모드 4종의 추가분을 누락 검증이 가능한 형태로 문서화하고, 빈 모드 폴더를 게임에 연결한다.

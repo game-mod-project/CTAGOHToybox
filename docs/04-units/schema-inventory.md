@@ -255,9 +255,9 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/body` | block | []x36 | 36 | 36 | 예: | 미확인(자동) |  |  |  |
 | `/actor/body/permit` | block | [atom]x36 | 36 | 36 | body | 미확인(자동) |  |  |  |
 | `/actor/body/proper` | block | [atom atom]x36 | 36 | 36 | body sensible | 미확인(자동) |  |  |  |
-| `/actor/bone` | block | [str]x1 | 1 | 1 | "foresight3" | 미확인(자동) |  |  | Boys turret ¦ Boys rot |
+| `/actor/bone` | block | [str]x1 | 1 | 1 | "foresight3" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/actor/bone/limits` | block | [num num]x1 | 1 | 1 | -0 15 | 추정 | 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | 게임 파일 주석 | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
-| `/actor/bone/speed2` | block | [num]x1 | 1 | 1 | 10 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ manual using gunner's shoulder |
+| `/actor/bone/speed2` | block | [num]x1 | 1 | 1 | 10 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/actor/collider` | block | [str]x1747 | 1694 | 1747 | "stuff" ¦ "grenade" ¦ "nothing" ¦ "mine.at" ¦ "mine.ap" ¦ "mine.ap.grenade" ¦ "construction" | 추정 | 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/actor/constrain` | block | [atom]x1693 | 1693 | 1693 | ground | 미확인 | 값은 ground, none 등. 배치 제약으로 보이나 확인하지 못함 |  |  |
 | `/actor/extender[mine]` | block | [str]x36 | 18 | 36 | "mine" | 미확인(자동) |  |  |  |
@@ -280,8 +280,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/simulation/disablelinked` | block | [num]x1677 | 1677 | 1677 | 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/actor/simulatorid` | block | [str]x38 | 38 | 38 | "grenade" | 미확인(자동) |  |  |  |
 | `/actor/skeleton` | block | []x19 | 19 | 19 | 예: | 추정 | 엔티티에 추가하는 뼈대 정의 (추정: 하위 bone/position) | 파일 구조와 값에서 추론 |  |
-| `/actor/skeleton/bone` | block | [str]x18 | 18 | 18 | "mined_view" | 미확인(자동) |  |  | Boys turret ¦ Boys rot |
-| `/actor/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x18 | 18 | 18 | 0 0 1 0 -1 0 1 0 0 0 0 0 | 미확인(자동) |  |  | 0 90 0 ¦ standing |
+| `/actor/skeleton/bone` | block | [str]x18 | 18 | 18 | "mined_view" | 미확인(자동) |  |  | Boys rot ¦ turret |
+| `/actor/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x18 | 18 | 18 | 0 0 1 0 -1 0 1 0 0 0 0 0 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
 | `/actor/skeleton/texmods` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/actor/skeleton/texmods/"*"` | block | [str str]x48 | 1 | 48 | 예: "_x" "_x" | 미확인(자동) |  |  |  |
 | `/actor/texmod` | block | [str]x3 | 3 | 3 | "black" ¦ "green" ¦ "camo" | 미확인(자동) |  |  |  |
@@ -324,12 +324,12 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/spriteview/sprite` | block | [str]x3 | 3 | 3 | "flag1.ebm" ¦ "flag2.ebm" | 추정 | 표시에 쓰는 이미지 파일 (추정: 값이 .ebm) | 파일 구조와 값에서 추론 |  |
 | `/entity/spriteview/sprite/light` | block | []x1 | 1 | 1 | 예: | 미확인 | 값 1 |  |  |
 | `/entity/spriteview/sprite/light/linear` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/entity/spriteview/sprite/light/linear/max` | block | [num]x1 | 1 | 1 | 0.2 | 미확인(자동) |  |  | max resources ¦ max health |
+| `/entity/spriteview/sprite/light/linear/max` | block | [num]x1 | 1 | 1 | 0.2 | 미확인(자동) |  |  | max health ¦ max resources |
 | `/entity/spriteview/sprite/light/linear/min` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/entity/spriteview/sprite/preturn` | block | [num]x3 | 3 | 3 | 90 | 미확인(자동) |  |  |  |
 | `/entity/spriteview/sprite/scale` | block | [num]x2 []x1 | 3 | 3 | 0.3 | 미확인(자동) |  |  |  |
 | `/entity/spriteview/sprite/scale/linear` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/entity/spriteview/sprite/scale/linear/max` | block | [num]x1 | 1 | 1 | 0.35 | 미확인(자동) |  |  | max resources ¦ max health |
+| `/entity/spriteview/sprite/scale/linear/max` | block | [num]x1 | 1 | 1 | 0.35 | 미확인(자동) |  |  | max health ¦ max resources |
 | `/entity/spriteview/sprite/scale/linear/min` | block | [num]x1 | 1 | 1 | 0.6 | 미확인(자동) |  |  |  |
 | `/entity/spriteview/sprite/timer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/entity/spriteview/sprite/timer/duration` | block | [num]x1 | 1 | 1 | 1.2 | 미확인(자동) |  |  |  |
@@ -345,7 +345,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/volume/able/visible` | block | [num]x30 []x10 | 10 | 40 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/entity/volume/density` | block | [num]x11 | 10 | 11 | 0 | 미확인 | 값 0~2. 볼륨 밀도로 보이나 단위와 용도를 확인하지 못함 |  |  |
 | `/entity/volume/thickness` | block | [num]x31 | 10 | 31 | 1 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
-| `/game_entity` | block | [atom]x512 []x34 | 546 | 546 | game_entity ¦ | 추정 | 엔티티 정의의 최상위 블록. 차량·화포·보병 외형·일부 아이템이 쓴다 (추정: 파일 구조) | 파일 구조와 값에서 추론 | june '41 ¦ Feb 1943 |
+| `/game_entity` | block | [atom]x512 []x34 | 546 | 546 | game_entity ¦ | 추정 | 엔티티 정의의 최상위 블록. 차량·화포·보병 외형·일부 아이템이 쓴다 (추정: 파일 구조) | 파일 구조와 값에서 추론 | june '41 ¦ jan 45 |
 | `/game_entity/armor` | block | []x4 | 2 | 4 | 예: | 추정 | 장갑 판정 설정 묶음 (추정: 하위가 setting/threshold) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/armor/setting` | block | [str]x8 | 2 | 8 | "body" ¦ "roof" | 추정 | 장갑 설정 한 벌. 문자열은 설정 이름 (추정: 값 "body") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/armor/setting/ray_cast_thickness` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
@@ -381,7 +381,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/simulation` | block | []x511 | 511 | 511 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
 | `/game_entity/simulation/able` | block | [num]x511 | 511 | 511 | 1 | 미확인 | 값 0 또는 1 |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/game_entity/simulation/disablelinked` | block | [num]x493 | 493 | 493 | 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
-| `/game_entity/simulation/state` | block | [num]x17 | 17 | 17 | 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ inventory stuffing tags support |
+| `/game_entity/simulation/state` | block | [num]x17 | 17 | 17 | 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
 | `/game_entity/simulatorid` | block | [str]x14 | 14 | 14 | "grenade" | 미확인(자동) |  |  |  |
 | `/game_entity/skeleton` | block | []x2 | 2 | 2 | 예: | 추정 | 엔티티에 추가하는 뼈대 정의 (추정: 하위 bone/position) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/skeleton/texmods` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -394,11 +394,11 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/spriteview/sprite/highlight` | block | [atom]x60 | 20 | 60 | 0xFF5000 | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/light` | block | []x60 | 20 | 60 | 예: | 미확인 | 값 1 |  |  |
 | `/game_entity/spriteview/sprite/light/peak` | block | []x60 | 20 | 60 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/spriteview/sprite/light/peak/max` | block | [num]x60 | 20 | 60 | 0.4 ~ 0.5 | 미확인(자동) |  |  | max resources ¦ max health |
+| `/game_entity/spriteview/sprite/light/peak/max` | block | [num]x60 | 20 | 60 | 0.4 ~ 0.5 | 미확인(자동) |  |  | max health ¦ max resources |
 | `/game_entity/spriteview/sprite/light/peak/min` | block | [num]x60 | 20 | 60 | 0 | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/scale` | block | [num]x60 | 20 | 60 | 0.1 ~ 0.8 | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/scale/linear` | block | []x40 | 20 | 40 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/spriteview/sprite/scale/linear/max` | block | [num]x40 | 20 | 40 | 0.03 ~ 0.1 | 미확인(자동) |  |  | max resources ¦ max health |
+| `/game_entity/spriteview/sprite/scale/linear/max` | block | [num]x40 | 20 | 40 | 0.03 ~ 0.1 | 미확인(자동) |  |  | max health ¦ max resources |
 | `/game_entity/spriteview/sprite/scale/linear/min` | block | [num]x40 | 20 | 40 | 0.15 ~ 0.3 | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/timer` | block | []x60 | 20 | 60 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/timer/duration` | block | [num]x60 | 20 | 60 | 1 ~ 2 | 미확인(자동) |  |  |  |
