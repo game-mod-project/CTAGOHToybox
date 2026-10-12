@@ -27,6 +27,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - 바닐라 전체 재생성(약 6분): `pwsh -NoProfile -File tools/Invoke-Pipeline.ps1 -SourceRoot "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\resource" -WorkDir _work\vanilla -DataDir data`
 - 표시 이름: `pwsh -NoProfile -File tools/Build-DisplayNames.ps1 -LocPak "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\localizations\default.pak" -DataDir data`
 - 유닛 문서 재생성과 검증: `pwsh -NoProfile -File tools/New-SchemaDoc.ps1 -DataDir data -AnnotationDir data\annotations -OutDir docs\04-units` 다음 `pwsh -NoProfile -File tools/Test-Coverage.ps1 -DataDir data -DocsDir docs\04-units`. `keys-missing=0`이 나와야 한다.
+- 수정 가능한 속성 문서 재생성: `pwsh -NoProfile -File tools/New-EditableDoc.ps1 -DataDir data -AnnotationDir data\annotations -OutDir docs\06-editable-attributes`. `common.psv`를 고치면 유닛 문서와 함께 다시 만든다.
 - 모드 분석(pwsh 세션 안에서, 배열 인자 때문에 `&`로 호출): `& tools/Invoke-Pipeline.ps1 -SourceRoot "<모드 폴더>\resource" -WorkDir _work\mods\<id> -DataDir data\mods\<id> -FallbackWorkDir @('_work\vanilla') -NameDataDir @('data')` 다음 `& tools/Compare-ModToVanilla.ps1 -VanillaDataDir data -ModDataDir data\mods\<id>`
 - 모드 문서 재생성: `& tools/Get-ModSummary.ps1 -VanillaDataDir data -ModsDataDir data\mods -ModIds <id들>` 다음 `& tools/New-ModDoc.ps1 -ModsDataDir data\mods -OutDir docs\05-workshop-mods`
 
@@ -37,7 +38,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - `data/mods/mods.psv`, `data/mods/annotations.psv`, `data/mods/<id>/notes.md`, `data/mods/readme-*.md`: 모드 문서의 입력
 - `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`
 
-`docs/04-units/schema-*.md`, `coverage.md`, `docs/05-workshop-mods/*.md`는 생성물이다.
+`docs/04-units/schema-*.md`, `coverage.md`, `docs/05-workshop-mods/*.md`, `docs/06-editable-attributes/*.md`는 생성물이다.
 
 ## 구현 메모
 

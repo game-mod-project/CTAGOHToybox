@@ -63,7 +63,7 @@
 | `/entity/(include)` | include | [str]x10 | 10 | 10 | "/properties/stuff_small.ext" ¦ "/properties/stuff_grenade.ext" ¦ "/properties/stuff_weapon.ext" | 미확인(자동) |  |  |  |
 | `/entity/collider` | block | [str]x1 | 1 | 1 | "grenade" | 추정 | 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/entity/extender[stuff]` | block | [str]x10 | 10 | 10 | "stuff" | 미확인(자동) |  |  |  |
-| `/entity/extender[stuff]/item` | block | [str]x10 | 10 | 10 | "bandage_eng" ¦ "bandage_fin" ¦ "bandage_ger" ¦ "bandage_rus" ¦ "bandage_usa" ¦ "canned_meat" ¦ "human" ¦ "wirecutters" ¦ "grenade no73" ¦ "boys_mk1" | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 |  |
+| `/entity/extender[stuff]/item` | block | [str]x10 | 10 | 10 | "bandage_eng" ¦ "bandage_fin" ¦ "bandage_ger" ¦ "bandage_rus" ¦ "bandage_usa" ¦ "canned_meat" ¦ "human" ¦ "wirecutters" ¦ "grenade no73" ¦ "boys_mk1" | 미확인(자동) |  |  |  |
 | `/entity/extension` | block | [str]x10 | 10 | 10 | "bandage_ger.mdl" ¦ "bandage_eng.mdl" ¦ "bandage_rus.mdl" ¦ "bandage_usa.mdl" ¦ "canned_meat.mdl" ¦ "corpse.mdl" ¦ "wirecutters.mdl" ¦ "no73_at_grenade.mdl" ¦ "boys_mk1.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 |  |
 | `/entity/nogroupmesh` | block | [num]x4 | 4 | 4 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/entity/props` | block | [str]x3 | 3 | 3 | "physics_damping" ¦ "contact" ¦ "bipod" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
@@ -307,7 +307,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/collider` | block | [str]x12 | 10 | 12 | "stuff" ¦ "grenade" | 추정 | 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/entity/constrain` | block | [atom]x10 | 10 | 10 | ground | 미확인 | 값은 ground, none 등. 배치 제약으로 보이나 확인하지 못함 |  |  |
 | `/entity/extender[stuff]` | block | [str]x20 | 10 | 20 | "stuff" | 미확인(자동) |  |  |  |
-| `/entity/extender[stuff]/item` | block | [str]x10 | 10 | 10 | "bandage_eng" ¦ "bandage_fin" ¦ "bandage_ger" ¦ "bandage_rus" ¦ "bandage_usa" ¦ "canned_meat" ¦ "human" ¦ "wirecutters" ¦ "grenade no73" ¦ "boys_mk1" | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
+| `/entity/extender[stuff]/item` | block | [str]x10 | 10 | 10 | "bandage_eng" ¦ "bandage_fin" ¦ "bandage_ger" ¦ "bandage_rus" ¦ "bandage_usa" ¦ "canned_meat" ¦ "human" ¦ "wirecutters" ¦ "grenade no73" ¦ "boys_mk1" | 미확인(자동) |  |  | 128+8 ¦ 80+48+8 |
 | `/entity/extension` | block | [str]x10 | 10 | 10 | "bandage_ger.mdl" ¦ "bandage_eng.mdl" ¦ "bandage_rus.mdl" ¦ "bandage_usa.mdl" ¦ "canned_meat.mdl" ¦ "corpse.mdl" ¦ "wirecutters.mdl" ¦ "no73_at_grenade.mdl" ¦ "boys_mk1.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/entity/lodclass` | block | [str]x22 | 10 | 22 | "stuff_small" ¦ "stuff_grenade" ¦ "stuff_weapon" | 추정 | 디테일 단계(LOD) 분류 이름 (추정: 이름과 값 "vehicle", "stuff_small". set/level_of_detail.set 참조로 보임) | 파일 구조와 값에서 추론 |  |
 | `/entity/nogroupmesh` | block | [num]x14 | 10 | 14 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |

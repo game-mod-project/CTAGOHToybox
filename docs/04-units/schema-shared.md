@@ -1264,7 +1264,7 @@
 | `/extender[inventory]/armor/volumes` | block | [str]x3 | 1 | 3 | "head" ¦ "body" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/extender[inventory]/box` | block | []x15 | 15 | 15 | 예: | 미확인(자동) |  |  |  |
 | `/extender[inventory]/box/clear` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[inventory]/box/item` | block | [str num]x11 | 7 | 11 | "can" 1 ¦ "repair_kit" 5 ¦ "repair_kit" 3 ¦ "repair_kit" 1 | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
+| `/extender[inventory]/box/item` | block | [str num]x11 | 7 | 11 | "can" 1 ¦ "repair_kit" 5 ¦ "repair_kit" 3 ¦ "repair_kit" 1 | 추정 | 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | 파일 구조와 값에서 추론 | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
 | `/extender[inventory]/box/size` | block | [num num]x15 | 15 | 15 | 9 10 ¦ 8 8 ¦ 9 15 ¦ 4 4 ¦ 6 10 ¦ 6 2 ¦ 9 6 ¦ 8 12 ¦ 9 8 ¦ 9 12 | 미확인(자동) |  |  | size of the window |
 | `/extender[inventory]/box/weight` | block | [num]x14 | 14 | 14 | 100 ~ 20000 | 미확인(자동) |  |  |  |
 | `/extender[inventory]/hand_left` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |

@@ -645,7 +645,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/extender[resources]/resources/income` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | resources regeneration per second |
 | `/human/extender[resources]/resources/max` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | max health ¦ max resources |
 | `/human/extender[stuff]` | block | [str]x1 | 1 | 1 | "stuff" | 미확인(자동) |  |  |  |
-| `/human/extender[stuff]/item` | block | [str]x1 | 1 | 1 | "human" | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
+| `/human/extender[stuff]/item` | block | [str]x1 | 1 | 1 | "human" | 미확인(자동) |  |  | 128+8 ¦ 80+48+8 |
 | `/human/extender[talk]` | block | [str]x1 | 1 | 1 | "talk" | 미확인(자동) |  |  |  |
 | `/human/extender[talk]/talker` | block | [str]x1 | 1 | 1 | "human" | 추정 | 음성 세트 종류 (추정: 값 "tank") | 파일 구조와 값에서 추론 |  |
 | `/human/extender[vitality]` | block | [str]x1 | 1 | 1 | "vitality" | 미확인(자동) |  |  |  |

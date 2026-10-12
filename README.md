@@ -16,6 +16,7 @@ Call to Arms - Gates of Hell: Ostfront의 모드를 만들기 위한 레퍼런�
 | [docs/04-units/README.md](docs/04-units/README.md) | 유닛 구성 레퍼런스의 입구. 유닛을 이루는 파일의 참조 관계, 문법, 데이터 파일 안내 |
 | [docs/04-units/coverage.md](docs/04-units/coverage.md) | 누락 검증 결과와, 그 검증이 보장하는 것·보장하지 않는 것 |
 | [docs/05-workshop-mods/README.md](docs/05-workshop-mods/README.md) | 창작마당 모드 4종이 바닐라에 무엇을 더했는지 |
+| [docs/06-editable-attributes/README.md](docs/06-editable-attributes/README.md) | 유닛의 값을 바꾸려면 어느 파일의 어떤 속성을 고쳐야 하는지. 파일별 속성명·속성값·설명 |
 
 ### 유닛 스키마
 
