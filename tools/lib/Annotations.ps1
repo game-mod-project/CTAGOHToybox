@@ -1,13 +1,20 @@
 # 키 의미 주석(data/annotations)의 읽기와 조회. 스키마 문서와 속성 문서가 같은 규칙을 쓴다.
 
-$script:AnnotationSourceNames = @{ C = '게임 파일 주석'; S = '파일 구조와 값에서 추론' }
+$script:AnnotationSourceNames = @{ C = '게임 파일 주석'; S = '파일 구조와 값에서 추론'
+    D = 'GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인)'
+    W = 'Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인)'
+    M = 'mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인)'
+    G = 'Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인)' }
 
-# common.psv(경로|형태|등급|의미|출처)와, 있으면 그룹 전용 <그룹>.csv를 읽는다
+# common.psv(경로|형태|등급|의미|출처)와, 있으면 그룹 전용 <그룹>.psv, <그룹>.csv를 읽는다
 function Read-Annotations {
     param([Parameter(Mandatory)][string]$AnnotationDir, [string]$Group)
     $ann = @{}
-    $commonPath = Join-Path $AnnotationDir 'common.psv'
-    if (Test-Path -LiteralPath $commonPath) {
+    # <그룹>.psv는 common.psv와 같은 형식이고 그 그룹에만 적용된다. 같은 키면 그룹 쪽이 이긴다
+    $psvPaths = @(Join-Path $AnnotationDir 'common.psv')
+    if ($Group) { $psvPaths += Join-Path $AnnotationDir "$Group.psv" }
+    foreach ($commonPath in $psvPaths) {
+        if (-not (Test-Path -LiteralPath $commonPath)) { continue }
         foreach ($line in [IO.File]::ReadLines($commonPath)) {
             if (-not $line.Trim() -or $line.StartsWith('#')) { continue }
             $p = $line.Split('|', 5)
@@ -25,13 +32,33 @@ function Read-Annotations {
     $ann
 }
 
-# 주석 조회. 정확한 경로가 우선하고, $AllowWildcard일 때만 */이름 주석을 쓴다.
-# 와일드카드는 유닛 파일과 펼친 키에만 허용한다: 공용 설정이나 모델 파일에는 같은 이름이 다른 뜻으로 쓰인다.
+# 경로에서 값의 자리를 가리키지 않는 조각을 뺀다: 매크로 정의 (define "이름"), 매크로 호출 ("이름"),
+# 호출 인자 이름(), 꺼 둔 블록 표시 ##. 남는 것은 블록 이름의 나열이다.
+function ConvertTo-PlainKeyPath([string]$Path) {
+    $parts = foreach ($s in $Path.Split('/')) {
+        if ($s.StartsWith('(') -or $s.EndsWith('()')) { continue }
+        $s = $s.TrimStart('#')
+        if ($s) { $s }
+    }
+    @($parts)
+}
+
+# 주석 조회. 우선순위: 정확한 경로 > **/꼬리 (긴 것부터) > */이름.
+#   **/a/b  : 경로의 끝이 a/b인 모든 키. include되는 파일과 매크로 정의 안의 키에도 적용된다.
+#   */이름  : 마지막 조각이 그 이름인 키. $AllowWildcard일 때만 쓴다.
+# */이름은 유닛 파일과 펼친 키에만 허용한다: 공용 설정이나 모델 파일에는 같은 이름이 다른 뜻으로 쓰인다.
 function Get-Annotation([hashtable]$Ann, [string]$Kind, [string]$Path, [string]$Form, [bool]$AllowWildcard) {
     $last = $Path.Substring($Path.LastIndexOf('/') + 1)
     $keys = @("$Kind`t$Path`t$Form", "*`t$Path`t$Form")
-    if ($AllowWildcard) { $keys += @("$Kind`t*/$last`t$Form", "*`t*/$last`t$Form") }
     foreach ($k in $keys) { if ($Ann.ContainsKey($k)) { return $Ann[$k] } }
+    $plain = @(ConvertTo-PlainKeyPath $Path)
+    for ($i = 0; $i -lt $plain.Count; $i++) {
+        $k = "*`t**/$($plain[$i..($plain.Count - 1)] -join '/')`t$Form"
+        if ($Ann.ContainsKey($k)) { return $Ann[$k] }
+    }
+    if ($AllowWildcard) {
+        foreach ($k in @("$Kind`t*/$last`t$Form", "*`t*/$last`t$Form")) { if ($Ann.ContainsKey($k)) { return $Ann[$k] } }
+    }
     [pscustomobject]@{ Grade = '미확인(자동)'; Meaning = ''; Source = '' }
 }
 
