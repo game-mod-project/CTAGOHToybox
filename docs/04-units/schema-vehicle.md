@@ -26,7 +26,7 @@
 | `/{}/(include)` | include | [str]x52 | 52 | 52 | 예: "../40mm_qf2/40mm_qf2.inc" | 미확인(자동) |  |  |  |
 | `/{}/extender[inventory]` | block | [str]x49 | 49 | 49 | "inventory" | 미확인(자동) |  |  |  |
 | `/{}/extender[inventory]/box` | block | []x49 | 49 | 49 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
-| `/{}/extender[inventory]/box/item` | block | [str num]x150 [str atom str num]x3 | 49 | 153 | 예: "bulleteng_40 ap2" 60 | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
+| `/{}/extender[inventory]/box/item` | block | [str num]x150 [str atom str num]x3 | 49 | 153 | 예: "bulleteng_40 ap2" 60 | 추정 | 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
 | `/{}/extender[inventory]/box/item/user` | block | [str]x3 | 3 | 3 | "mgun" | 미확인(자동) |  |  |  |
 | `/{}/props` | block | [str]x2 [str str str]x1 | 3 | 3 | "cannon_sandbag_standard" ¦ "mg34_lafette" "cannon_sandbag_standard_ai" "no_scavenge" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/{}/weaponry` | block | []x27 | 27 | 27 | 예: | 추정 | 차량 무장 정의 묶음 (추정: 하위 place) | 파일 구조와 값에서 추론 |  |
@@ -815,7 +815,7 @@
 | `/extender[enumerator]/digit_folder` | block | [str]x12 | 12 | 12 | "us2" ¦ "ru1" | 미확인(자동) |  |  |  |
 | `/extender[inventory]` | block | [str]x16 | 16 | 16 | "inventory" | 미확인(자동) |  |  |  |
 | `/extender[inventory]/box` | block | []x16 | 16 | 16 | 예: | 미확인(자동) |  |  |  |
-| `/extender[inventory]/box/item` | block | [str num]x27 [str atom str num]x3 | 14 | 30 | 예: "sandbag_vehicle" 1 | 미확인(자동) |  |  | 600 rounds ¦ 50 rounds |
+| `/extender[inventory]/box/item` | block | [str num]x27 [str atom str num]x3 | 14 | 30 | 예: "sandbag_vehicle" 1 | 추정 | 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
 | `/extender[inventory]/box/item/user` | block | [str]x3 | 2 | 3 | "mgun2" ¦ "mgun3" ¦ "mgun" | 미확인(자동) |  |  |  |
 | `/extender[inventory]/weapon` | block | [str]x4 | 3 | 4 | "mgun" ¦ "mgun2" ¦ "mgun3" | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/extender[inventory]/weapon/mask` | block | [str]x4 | 3 | 4 | "mountable" | 미확인(자동) |  |  |  |
@@ -1245,7 +1245,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/extender[enumerator]/digit_folder` | block | [str]x10 | 10 | 10 | "ru1" | 추정 | 숫자 텍스처 폴더 이름 (추정: 이름과 값 "us2") | 파일 구조와 값에서 추론 |  |
 | `/actor/extender[inventory]` | block | [str]x187 | 58 | 187 | "inventory" | 미확인(자동) |  |  |  |
 | `/actor/extender[inventory]/box` | block | []x187 | 58 | 187 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
-| `/actor/extender[inventory]/box/item` | block | [str num]x242 [str atom str num]x3 | 52 | 245 | 예: "repair_kit" 3 | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
+| `/actor/extender[inventory]/box/item` | block | [str num]x242 [str atom str num]x3 | 52 | 245 | 예: "repair_kit" 3 | 추정 | 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
 | `/actor/extender[inventory]/box/item/user` | block | [str]x3 | 3 | 3 | "mgun" | 미확인(자동) |  |  |  |
 | `/actor/extender[inventory]/box/size` | block | [num num]x116 | 58 | 116 | 9 15 ¦ 9 6 ¦ 9 12 ¦ 6 10 ¦ 8 8 ¦ 9 10 ¦ 4 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/actor/extender[inventory]/box/weight` | block | [num]x58 | 58 | 58 | 1000 ~ 15000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
@@ -1260,7 +1260,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/extender[supply_zone]/regenerationperiod` | block | [num]x10 | 5 | 10 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/actor/extender[supply_zone]/resupply` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  |  |
 | `/actor/extender[supply_zone]/resupply/(mod)` | mod | [atom str]x10 [str]x5 | 5 | 15 | not "mp" ¦ "mp" | 미확인(자동) |  |  |  |
-| `/actor/extender[supply_zone]/resupply/item` | block | [str str str num]x1440 [str str num]x485 [str str str str num]x425 [str num]x55 | 5 | 2405 | 예: "flame_thrower" "ammo" 50 | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
+| `/actor/extender[supply_zone]/resupply/item` | block | [str str str num]x1440 [str str num]x485 [str str str str num]x425 [str num]x55 | 5 | 2405 | 예: "flame_thrower" "ammo" 50 | 미확인(자동) |  |  | 600 rounds ¦ 50 rounds |
 | `/actor/extender[supply_zone]/resupply/item/value` | block | [num]x2405 | 5 | 2405 | 1 ~ 350 | 미확인(자동) |  |  |  |
 | `/actor/extender[supply_zone]/resupplyperiod` | block | [num]x5 | 5 | 5 | 2 | 미확인(자동) |  |  | resupply period in seconds |
 | `/actor/extender[talk]` | block | [str]x58 | 58 | 58 | "talk" | 미확인(자동) |  |  |  |
@@ -1437,7 +1437,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/decalview/visible` | block | [num]x3 | 1 | 3 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/entity/extender[inventory]` | block | [str]x2 | 1 | 2 | "inventory" | 미확인(자동) |  |  |  |
 | `/entity/extender[inventory]/box` | block | []x2 | 1 | 2 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
-| `/entity/extender[inventory]/box/item` | block | [str num]x2 | 1 | 2 | "can" 1 ¦ "repair_kit" 5 | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
+| `/entity/extender[inventory]/box/item` | block | [str num]x2 | 1 | 2 | "can" 1 ¦ "repair_kit" 5 | 추정 | 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
 | `/entity/extender[inventory]/box/size` | block | [num num]x2 | 1 | 2 | 9 15 ¦ 9 10 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/entity/extender[inventory]/box/weight` | block | [num]x1 | 1 | 1 | 2000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/entity/extender[inventory]/weapon` | block | [str]x1 | 1 | 1 | "mgun" | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
@@ -1692,7 +1692,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extender[supply_zone]/regenerationperiod` | block | [num]x47 | 31 | 47 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/game_entity/extender[supply_zone]/resupply` | block | []x31 | 31 | 31 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/resupply/(mod)` | mod | [atom str]x32 [str]x16 | 16 | 48 | not "mp" ¦ "mp" | 미확인(자동) |  |  |  |
-| `/game_entity/extender[supply_zone]/resupply/item` | block | [str str str num]x4608 [str str num]x1729 [str str str str num]x1360 [str num]x318 | 31 | 8015 | 예: "flame_thrower" "ammo" 50 | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
+| `/game_entity/extender[supply_zone]/resupply/item` | block | [str str str num]x4608 [str str num]x1729 [str str str str num]x1360 [str num]x318 | 31 | 8015 | 예: "flame_thrower" "ammo" 50 | 미확인(자동) |  |  | 600 rounds ¦ 50 rounds |
 | `/game_entity/extender[supply_zone]/resupply/item/value` | block | [num]x8015 | 31 | 8015 | 1 ~ 350 | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/resupplyperiod` | block | [num]x31 | 31 | 31 | 1 ~ 2 | 미확인(자동) |  |  | resupply period in seconds |
 | `/game_entity/extender[talk]` | block | [str]x727 | 718 | 727 | "talk" | 추정 | 음성 기능 (추정: 하위 talker) | 파일 구조와 값에서 추론 |  |

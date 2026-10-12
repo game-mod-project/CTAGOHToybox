@@ -29,6 +29,15 @@ Assert-Equal $true ($schema -match '\| `/breed/mass` \| block \|[^\n]*\| 미확�
 $cov = [IO.File]::ReadAllText((Join-Path $docs 'coverage.md'))
 Assert-Equal $true ($cov.Contains('`set/breed/mp/ger/b.set`')) 'round-trip failure is listed by file'
 
+# 수정 가능한 속성 문서: 값이 있는 키만, 뜻을 아는 것과 모르는 것으로 나뉜다
+$edit = New-TestDir
+& "$PSScriptRoot/../New-EditableDoc.ps1" -DataDir $data -AnnotationDir $ann -OutDir $edit *> $null
+$inf = [IO.File]::ReadAllText((Join-Path $edit 'infantry.md'))
+Assert-Equal $true ($inf -match '### 뜻을 아는 속성 \(1개\)\s+\|[^\n]*\n\|[-|]*\s+\| `/breed/skin` \|[^\n]*"s1"[^\n]*\| \*\*추정\*\* 외형 이름 \|') 'annotated key with a value is listed as known'
+Assert-Equal $true ($inf -match '### 뜻을 모르는 속성 \(1개\)\s+\|[^\n]*\n\|[-|]*\s+\| `/breed/mass` \| 3\.5 \| 미확인 \| weight in kg \|') 'unannotated key shows its value and the in-file comment'
+Assert-Equal $false ($inf.Contains('| `/breed` |')) 'a block without a value is not an editable attribute'
+Assert-Equal $true ([IO.File]::ReadAllText((Join-Path $edit 'README.md')) -match '\| 합계 \| \| \| \| 2 \| 1 \|') 'readme totals'
+
 # 문서에서 한 행을 지우면 잡힌다
 $p = Join-Path $docs 'schema-human.md'
 [IO.File]::WriteAllLines($p, @([IO.File]::ReadAllLines($p) | Where-Object { -not $_.StartsWith('| `/breed/skin`') }))

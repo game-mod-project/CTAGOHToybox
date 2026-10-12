@@ -208,6 +208,10 @@
 /game_entity/extender[inventory]|block|추정|차량 화물칸 기능 (추정: 하위 box)|S
 */box|block|추정|화물칸 하나 (추정: 하위 size, weight, item)|S
 /game_entity/extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: 값 "ammo mgun_usa belt" 1000)|S
+/{}/extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음)|S
+/actor/extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음)|S
+/entity/extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음)|S
+/extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음)|S
 */size|block|확인|인벤토리 창의 크기. 가로 세로 칸 수|C
 */weight|block|추정|적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인)|C
 /game_entity/extender[inventory]/weapon|block|추정|인벤토리에 장착할 수 있는 무기 종류 (추정: 값 "mgun")|S
@@ -258,7 +262,7 @@
 
 # ---------- 무기·탄약·아이템 (set/stuff)
 */from|block|추정|원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인)|S
-*/item|block|추정|아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작)|S
+/item|block|추정|아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작)|S
 */weapon_bullet|block|추정|탄을 쏘는 무기 정의의 최상위 블록 (추정: 패턴 파일의 구조)|S
 /bullet|block|추정|탄 정의의 최상위 블록 (추정: bullet.pattern)|S
 */tag|block|추정|분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code")|C
