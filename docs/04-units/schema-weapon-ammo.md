@@ -41,7 +41,7 @@
 | `/bullet/damage/heating` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/bullet/damage/radius` | block | [num]x1 | 1 | 1 | 1.05 | 추정 | 피해가 미치는 반경, 미터 (추정: 이름. 값 1.05) | 파일 구조와 값에서 추론 |  |
 | `/bullet/damage/time` | block | [num]x1 | 1 | 1 | 0.5 | 추정 | 피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds") | 파일 구조와 값에서 추론 |  |
-| `/bullet/detonationthickness` | block | [num]x6 | 6 | 6 | 0.5 | 미확인 | 값 0.5 |  |  |
+| `/bullet/detonationthickness` | block | [num]x6 | 6 | 6 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/entity` | block | [str]x120 | 120 | 120 | 예: "sturmtiger_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/bullet/inventory` | block | []x120 | 120 | 120 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인(자동) |  |  |  |
@@ -98,7 +98,7 @@
 | `/from/damage/heating` | block | [num]x7 | 7 | 7 | 0.5 ~ 20 | 미확인(자동) |  |  |  |
 | `/from/damage/radius` | block | [num]x7 | 7 | 7 | 0.5 ~ 3.5 | 추정 | 피해가 미치는 반경, 미터 (추정: 이름. 값 1.05) | 파일 구조와 값에서 추론 |  |
 | `/from/damage/time` | block | [num]x7 | 7 | 7 | 0.5 ~ 1 | 추정 | 피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds") | 파일 구조와 값에서 추론 |  |
-| `/from/detonationthickness` | block | [num]x1 | 1 | 1 | 1 | 미확인 | 값 0.5 |  |  |
+| `/from/detonationthickness` | block | [num]x1 | 1 | 1 | 1 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/entity` | block | [str]x397 | 397 | 397 | 예: "bazooka_heat_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/from/inventory` | block | []x374 | 374 | 374 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/block` | block | [num]x42 | 42 | 42 | 5 ~ 10 | 미확인(자동) |  |  |  |
@@ -205,7 +205,7 @@
 | `/bullet/damage/area` | block | [num num]x3 | 3 | 3 | 2 3.5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
 | `/bullet/damage/energy` | block | [num]x3 | 3 | 3 | 2.5 ~ 3 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
 | `/bullet/damage/ground_interaction_radius` | block | [num]x3 | 3 | 3 | 0.1 | 확인 | area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | 게임 파일 주석 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
-| `/bullet/detonationthickness` | block | [num]x2 | 2 | 2 | 0.5 | 미확인 | 값 0.5 |  |  |
+| `/bullet/detonationthickness` | block | [num]x2 | 2 | 2 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/inventory` | block | []x7 | 7 | 7 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/fsm` | block | [str]x7 | 7 | 7 | "belt" ¦ "stuff" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x6 | 6 | 6 | 3 1 ¦ 5 1 ¦ 4 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
@@ -257,7 +257,7 @@
 | `/from/damage/area` | block | [num num]x4 | 3 | 4 | 3 8 ¦ 8 12 ¦ 3 6 ¦ 3 5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
 | `/from/damage/energy` | block | [num]x4 | 3 | 4 | 1.1 ~ 15 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
 | `/from/damage/ground_interaction_radius` | block | [num]x4 | 3 | 4 | 0 ~ 0.15 | 확인 | area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | 게임 파일 주석 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
-| `/from/detonationthickness` | block | [num]x4 | 4 | 4 | 0.5 | 미확인 | 값 0.5 |  |  |
+| `/from/detonationthickness` | block | [num]x4 | 4 | 4 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/disablericochet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/firingtimeout` | block | [num num]x8 | 8 | 8 | 3.5 0.5 ¦ 2.0 0.5 ¦ 1.5 0.5 ¦ 1.75 0.5 ¦ 1.0 0.5 ¦ 2.5 0.5 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
 | `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
@@ -311,7 +311,7 @@
 | `/from/throw/startangle` | block | [num]x6 | 6 | 6 | 10 ~ 80 | 추정 | 던지는 각도 (추정: 이름과 값 10~80) | 파일 구조와 값에서 추론 |  |
 | `/from/tracefreq` | block | [num]x3 | 3 | 3 | 3 ~ 5 | 추정 | 예광탄 빈도 (추정: 이름과 값 3~5) | 파일 구조와 값에서 추론 |  |
 | `/from/unlimitedrangetpc` | block | [num]x1 | 1 | 1 | 0 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
-| `/from/zeroingaccuracy` | block | [num num num]x2 [num num num num num]x1 | 3 | 3 | 0.8 0.7 0.6 ¦ 0.9 0.8 0.75 ¦ 0.9 0.8 0.7 0.6 0.5 | 미확인 | 수 3~5개 |  |  |
+| `/from/zeroingaccuracy` | block | [num num num]x2 [num num num num num]x1 | 3 | 3 | 0.8 0.7 0.6 ¦ 0.9 0.8 0.75 ¦ 0.9 0.8 0.7 0.6 0.5 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/item` | block | []x7 | 7 | 7 | 예: | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | Jerry Can (20L) ¦ 55 gallon (~210L) drum |
 | `/item/damage` | block | [atom atom]x2 [atom]x1 | 1 | 3 | add blastwave ¦ blastwave | 추정 | 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/item/damage/area` | block | [num num]x3 | 1 | 3 | 0.5 0.75 ¦ 2 3 ¦ 6 8 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
@@ -368,7 +368,7 @@
 | `/weapon_bullet/inventory/weight` | block | [num]x3 | 3 | 3 | 100 ~ 1000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/weapon_bullet/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
 | `/weapon_bullet/mass` | block | [num]x1 | 1 | 1 | 1000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
-| `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/weapon_bullet/minimumdamagemodifier` | block | [num]x2 | 1 | 2 | 3 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/weapon_bullet/minrange` | block | [num]x1 | 1 | 1 | 3 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
@@ -410,7 +410,7 @@
 | `/weapon_bullet/tag` | block | [str]x5 | 5 | 5 | "rocketlauncher to_hand ap cannot_lie" ¦ "weapon special_weapon_view flame_thrower fx_thrower bullet to_hand shoot_walking shoot_walking_ai shoot_walking_manual" ¦ "weapon build_in gun bullet tank_gun" ¦ "mrl gun build_in" ¦ "mrl" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/weapon_bullet/toplayervignette` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  |  |
 | `/weapon_bullet/unlimitedrangetpc` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
-| `/weapon_bullet/zeroingaccuracy` | block | [num num num num]x1 [num num num num num]x1 | 2 | 2 | 0.7 0.6 0.5 0.4 ¦ 0.85 0.75 0.7 0.65 0.6 | 미확인 | 수 3~5개 |  |  |
+| `/weapon_bullet/zeroingaccuracy` | block | [num num num num]x1 [num num num num num]x1 | 2 | 2 | 0.7 0.6 0.5 0.4 ¦ 0.85 0.75 0.7 0.65 0.6 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 
 ### 파일 종류: .presets
 
@@ -956,7 +956,7 @@
 | `/(define "direct_settings")/spreading` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | improved accuracy due to sight ¦ Skews the distribution of shells more biased toward the centre (>1) or away (<1) |
 | `/(define "direct_settings")/spreading/spreadxyratio` | block | [num]x1 | 1 | 1 | 0.4 | 미확인(자동) |  |  | Shots land more longitudinally than transversely. |
 | `/(define "direct_settings")/spreadtolerance` | block | [num]x1 | 1 | 1 | 0.6 | 미확인(자동) |  |  | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% |
-| `/(define "direct_settings")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.8 0.65 0.55 0.5 0.45 | 미확인(자동) |  |  |  |
+| `/(define "direct_settings")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.8 0.65 0.55 0.5 0.45 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "enfield_no1_rate")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "enfield_no1_rate")/("fire rate")` | macro | [call:rpm]x1 | 1 | 1 | rpm ( 50 ) | 미확인(자동) |  |  |  |
 | `/(define "enfield_no1_rate")/("reload time")` | macro | [call:seconds]x1 | 1 | 1 | seconds ( 10 ) | 미확인(자동) |  |  |  |
@@ -1015,13 +1015,13 @@
 | `/(define "he_auto_blast")/damage/ground_interaction_radius` | block | [num]x2 | 1 | 2 | 0 ~ 0.2 | 미확인(자동) |  |  | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
 | `/(define "he_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "he_heavy")/("minimum_range_heavy")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "he_heavy")/detonationthickness` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
+| `/(define "he_heavy")/detonationthickness` | block | [num]x1 | 1 | 1 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "he_light")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "he_light")/("minimum_range_short")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "he_light")/detonationthickness` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
+| `/(define "he_light")/detonationthickness` | block | [num]x1 | 1 | 1 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "he_medium")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "he_medium")/("minimum_range_medium")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "he_medium")/detonationthickness` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
+| `/(define "he_medium")/detonationthickness` | block | [num]x1 | 1 | 1 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "heat_blast")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "heat_blast")/damage` | block | [atom]x1 [atom atom]x1 | 1 | 2 | blastwave ¦ add blastwave | 추정 | 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/(define "heat_blast")/damage/area` | block | [num num]x2 | 1 | 2 | 2 3 ¦ 1 6 | 미확인(자동) |  |  |  |
@@ -1055,11 +1055,11 @@
 | `/(define "heavy_artillery")/spreadtolerance` | block | [num]x1 | 1 | 1 | 0.85 | 미확인(자동) |  |  | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% |
 | `/(define "heavy_artillery")/tracefreq` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "heavy_artillery")/unlimitedrangetpc` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | restrict range in TPC/FPC |
-| `/(define "heavy_artillery")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.80 0.65 0.55 0.45 0.40 | 미확인(자동) |  |  |  |
+| `/(define "heavy_artillery")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.80 0.65 0.55 0.45 0.40 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "heavy_mortar_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "heavy_mortar_range")/("reload time")` | macro | [call:seconds]x1 | 1 | 1 | seconds ( 10 ) | 미확인(자동) |  |  |  |
 | `/(define "heavy_mortar_range")/aimrange` | block | [num]x1 | 1 | 1 | 230 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
-| `/(define "heavy_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 230 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/(define "heavy_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 230 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/(define "heavy_mortar_range")/minrange` | block | [num]x1 | 1 | 1 | 50 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/(define "heavy_mortar_range")/parameters` | block | [str]x4 | 1 | 4 | "he" ¦ "he2" ¦ "sm" ¦ "wp" | 미확인(자동) |  |  | SPgGr. ¦ Sprgr. |
 | `/(define "heavy_mortar_range")/parameters/("reload time")` | macro | [call:seconds]x2 | 1 | 2 | seconds ( 3.5 ) | 미확인(자동) |  |  |  |
@@ -1088,7 +1088,7 @@
 | `/(define "indirect_settings")/spreading` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | improved accuracy due to sight ¦ Skews the distribution of shells more biased toward the centre (>1) or away (<1) |
 | `/(define "indirect_settings")/spreading/spreadxyratio` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | Shots land more longitudinally than transversely. |
 | `/(define "indirect_settings")/spreadtolerance` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% |
-| `/(define "indirect_settings")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.8 0.65 0.55 0.5 0.45 | 미확인(자동) |  |  |  |
+| `/(define "indirect_settings")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.8 0.65 0.55 0.5 0.45 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "k98_rate")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "k98_rate")/("fire rate")` | macro | [call:rpm]x1 | 1 | 1 | rpm ( 50 ) | 미확인(자동) |  |  |  |
 | `/(define "k98_rate")/firingtimeout` | block | [num num]x1 | 1 | 1 | 3.5 0.5 | 미확인(자동) |  |  | 3.5 0.5 ¦ delay between bursts |
@@ -1103,7 +1103,7 @@
 | `/(define "light_mortar_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "light_mortar_range")/("reload time")` | macro | [call:seconds]x1 | 1 | 1 | seconds ( 2.7 ) | 미확인(자동) |  |  |  |
 | `/(define "light_mortar_range")/aimrange` | block | [num]x1 | 1 | 1 | 140 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
-| `/(define "light_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 140 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/(define "light_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 140 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/(define "light_mortar_range")/minrange` | block | [num]x1 | 1 | 1 | 30 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/(define "light_mortar_range")/parameters` | block | [str]x2 | 1 | 2 | "he" ¦ "he2" | 미확인(자동) |  |  | SPgGr. ¦ Sprgr. |
 | `/(define "light_mortar_range")/parameters/projectiledamagetable` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | adjusted to reduce far shoot ¦ M8 API + 350mph airspeed and reduced curve |
@@ -1112,7 +1112,7 @@
 | `/(define "light_mortar_range")/spreading/radiustable` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Anti-farshoot, accuracy goes haywire past max range ¦ previous default apds accuracy |
 | `/(define "light_mortar_range")/spreading/radiustable/#row` | block | [num num]x4 | 1 | 4 | 0 5 ¦ 120 18 ¦ 139.99 25 ¦ 140 100 | 미확인(자동) |  |  |  |
 | `/(define "marksman")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "marksman")/zeroingaccuracy` | block | [num num num num num num num]x1 | 1 | 1 | 0.9 0.85 0.8 0.75 0.7 0.65 0.6 | 미확인(자동) |  |  |  |
+| `/(define "marksman")/zeroingaccuracy` | block | [num num num num num num num]x1 | 1 | 1 | 0.9 0.85 0.8 0.75 0.7 0.65 0.6 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "medium_aa")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "medium_aa")/aimingtolerance` | block | [num]x1 | 1 | 1 | 12 | 확인 | AI가 사격을 허용받는 조준 오차, 도 | 게임 파일 주석 | Measure in degrees of IK error when AI is allowed to shoot ¦ degrees |
 | `/(define "medium_aa")/spreadtolerance` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% |
@@ -1128,11 +1128,11 @@
 | `/(define "medium_artillery")/spreadtolerance` | block | [num]x1 | 1 | 1 | 0.85 | 미확인(자동) |  |  | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% |
 | `/(define "medium_artillery")/tracefreq` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "medium_artillery")/unlimitedrangetpc` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | restrict range in TPC/FPC |
-| `/(define "medium_artillery")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.80 0.65 0.55 0.45 0.40 | 미확인(자동) |  |  |  |
+| `/(define "medium_artillery")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.80 0.65 0.55 0.45 0.40 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "medium_heavy_mortar_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "medium_heavy_mortar_range")/("reload time")` | macro | [call:seconds]x1 | 1 | 1 | seconds ( 7 ) | 미확인(자동) |  |  |  |
 | `/(define "medium_heavy_mortar_range")/aimrange` | block | [num]x1 | 1 | 1 | 180 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
-| `/(define "medium_heavy_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 180 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/(define "medium_heavy_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 180 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/(define "medium_heavy_mortar_range")/minrange` | block | [num]x1 | 1 | 1 | 45 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/(define "medium_heavy_mortar_range")/parameters` | block | [str]x4 | 1 | 4 | "he" ¦ "he2" ¦ "sm" ¦ "wp" | 미확인(자동) |  |  | SPgGr. ¦ Sprgr. |
 | `/(define "medium_heavy_mortar_range")/parameters/("reload time")` | macro | [call:seconds]x2 | 1 | 2 | seconds ( 3.4 ) | 미확인(자동) |  |  |  |
@@ -1144,7 +1144,7 @@
 | `/(define "medium_mortar_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "medium_mortar_range")/("reload time")` | macro | [call:seconds]x1 | 1 | 1 | seconds ( 5 ) | 미확인(자동) |  |  |  |
 | `/(define "medium_mortar_range")/aimrange` | block | [num]x1 | 1 | 1 | 160 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
-| `/(define "medium_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 160 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/(define "medium_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 160 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/(define "medium_mortar_range")/minrange` | block | [num]x1 | 1 | 1 | 40 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/(define "medium_mortar_range")/parameters` | block | [str]x4 | 1 | 4 | "he" ¦ "he2" ¦ "sm" ¦ "wp" | 미확인(자동) |  |  | SPgGr. ¦ Sprgr. |
 | `/(define "medium_mortar_range")/parameters/("reload time")` | macro | [call:seconds]x2 | 1 | 2 | seconds ( 3.3 ) | 미확인(자동) |  |  |  |
@@ -1450,11 +1450,11 @@
 | `/(define "super_heavy_artillery")/spreadtolerance` | block | [num]x1 | 1 | 1 | 0.85 | 미확인(자동) |  |  | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% |
 | `/(define "super_heavy_artillery")/tracefreq` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "super_heavy_artillery")/unlimitedrangetpc` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | restrict range in TPC/FPC |
-| `/(define "super_heavy_artillery")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.80 0.65 0.55 0.45 0.40 | 미확인(자동) |  |  |  |
+| `/(define "super_heavy_artillery")/zeroingaccuracy` | block | [num num num num num]x1 | 1 | 1 | 0.80 0.65 0.55 0.45 0.40 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "super_heavy_mortar_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "super_heavy_mortar_range")/("reload time")` | macro | [call:seconds]x1 | 1 | 1 | seconds ( 10 ) | 미확인(자동) |  |  |  |
 | `/(define "super_heavy_mortar_range")/aimrange` | block | [num]x1 | 1 | 1 | 150 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
-| `/(define "super_heavy_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 150 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/(define "super_heavy_mortar_range")/maxrange` | block | [num]x1 | 1 | 1 | 150 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/(define "super_heavy_mortar_range")/minrange` | block | [num]x1 | 1 | 1 | 25 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/(define "super_heavy_mortar_range")/parameters` | block | [str]x4 | 1 | 4 | "he" ¦ "he2" ¦ "sm" ¦ "wp" | 미확인(자동) |  |  | SPgGr. ¦ Sprgr. |
 | `/(define "super_heavy_mortar_range")/parameters/("reload time")` | macro | [call:seconds]x2 | 1 | 2 | seconds ( 3.5 ) | 미확인(자동) |  |  |  |
@@ -1471,7 +1471,7 @@
 | `/(define "velocity")/("global velocity")` | macro | [call:gv]x1 | 1 | 1 | gv ( %mps ) | 미확인(자동) |  |  |  |
 | `/(define "velocity")/speed` | block | [expr]x2 | 2 | 2 | ( * 0.75 %mps ) ¦ ( * 0.35 %mps ) | 미확인(자동) |  |  | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
 | `/(define "zeroing_boost")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "zeroing_boost")/zeroingaccuracy` | block | [num num num num num num num num num]x1 [num num num num num num num num]x1 | 2 | 2 | 0.95 0.9 0.85 0.825 0.8 0.775 0.75 0.725 0.7 ¦ 0.975 0.95 0.925 0.9 0.875 0.85 0.825 0.8 | 미확인(자동) |  |  |  |
+| `/(define "zeroing_boost")/zeroingaccuracy` | block | [num num num num num num num num num]x1 [num num num num num num num num]x1 | 2 | 2 | 0.95 0.9 0.85 0.825 0.8 0.775 0.75 0.725 0.7 ¦ 0.975 0.95 0.925 0.9 0.875 0.85 0.825 0.8 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(include)` | include | [str]x13 | 12 | 13 | "\set\small_firearms_accuracy.inc" ¦ "\set\blast.inc" | 미확인(자동) |  |  |  |
 | `/curve` | block | [str]x1 | 1 | 1 | "gun_std" | 미확인(자동) |  |  | Refers to ballistic.set ¦ profile for weapon damage over distance. Defined in ballistics.set |
 
@@ -1518,7 +1518,7 @@
 | `/from/inventory/noview` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/from/inventory/size` | block | [num num]x5 | 5 | 5 | 7 1 ¦ 7 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/from/mass` | block | [num]x12 | 12 | 12 | 6 ~ 20.1 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
-| `/from/maxrange` | block | [num]x16 | 16 | 16 | 140 ~ 325 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/from/maxrange` | block | [num]x16 | 16 | 16 | 140 ~ 325 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minrange` | block | [num]x16 | 16 | 16 | 30 ~ 50 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/parameters` | block | [str]x17 | 10 | 17 | "he" ¦ "heat" ¦ "sm" ¦ "heata" ¦ "wp" ¦ "heatb" ¦ "he2 heavy" ¦ "aphe" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
 | `/from/parameters/("armor health")` | macro | [call:damage]x7 | 3 | 7 | damage ( 300 ) ¦ damage ( 250 ) | 미확인(자동) |  |  |  |
@@ -1528,7 +1528,7 @@
 | `/from/parameters/("standard_slope")` | macro | []x3 | 2 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/from/parameters/aimrange` | block | [num]x1 | 1 | 1 | 140 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
 | `/from/parameters/cursorreloading` | block | [str]x11 | 5 | 11 | "gun_heat" ¦ "gun_wp" ¦ "gun_he" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
-| `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x1 | 1 | 1 | 750 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/parameters/projectiledamagetable` | block | []x5 | 5 | 5 | 예: | 추정 | 거리별 관통력 표 (추정: #row가 두 수의 쌍이고 주석이 탄종 이름) | 파일 구조와 값에서 추론 | adjusted to reduce far shoot ¦ M8 API + 350mph airspeed and reduced curve |
 | `/from/parameters/projectiledamagetable/#row` | block | [num num]x7 | 5 | 7 | 0 30 ¦ 95 80 ¦ 100 0 ¦ 0 50 ¦ 0 76 ¦ 300 76 | 추정 | 거리와 관통력 한 쌍 (추정: 값) | 파일 구조와 값에서 추론 |  |
@@ -1547,7 +1547,7 @@
 | `/from/spreading/spreadyadjust` | block | [num]x2 | 2 | 2 | 0.1 | 미확인(자동) |  |  |  |
 | `/from/tag` | block | [str]x21 [str str]x1 | 22 | 22 | "gun" ¦ "nokeep rocketlauncher_fx" ¦ "rocketlauncher_fx" ¦ "-gun" ¦ "build_in" "gun" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/from/unlimitedrangetpc` | block | [num]x1 | 1 | 1 | 0 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
-| `/from/zeroingaccuracy` | block | [num num num]x2 [num]x1 | 3 | 3 | 1 | 미확인 | 수 3~5개 |  |  |
+| `/from/zeroingaccuracy` | block | [num num num]x2 [num]x1 | 3 | 3 | 1 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/weapon_bullet` | block | []x1 | 1 | 1 | 예: | 추정 | 탄을 쏘는 무기 정의의 최상위 블록 (추정: 패턴 파일의 구조) | 파일 구조와 값에서 추론 | Example / Default Settings ¦ required for AT-Grenades with cumaltive damage |
 | `/weapon_bullet/aimingtolerance` | block | [num]x1 | 1 | 1 | 10 | 확인 | AI가 사격을 허용받는 조준 오차, 도 | 게임 파일 주석 | Measure in degrees of IK error when AI is allowed to shoot ¦ degrees |
 | `/weapon_bullet/clicksound` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  |  |
@@ -1707,7 +1707,7 @@
 | `/from/inventory/size` | block | [num num]x49 | 49 | 49 | 7 2 ¦ 4 6 ¦ 3 1 ¦ 6 2 ¦ 3 3 ¦ 4 2 ¦ 5 2 ¦ 7 3 ¦ 2 2 ¦ 4 5 ¦ 6 3 ¦ 2 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/from/inventory/weight` | block | [num]x7 | 7 | 7 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/from/mass` | block | [num]x187 | 187 | 187 | 0.765 ~ 224 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
-| `/from/maxrange` | block | [num]x1 | 1 | 1 | 40 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/from/maxrange` | block | [num]x1 | 1 | 1 | 40 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minrange` | block | [num]x2 | 2 | 2 | 5 ~ 150 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/parameters` | block | [str]x151 | 97 | 151 | 예: "aphebc" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
 | `/from/parameters/("ap_155_slope_multiplier")` | macro | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -1772,7 +1772,7 @@
 | `/from/tag` | block | [str]x1211 [str str]x7 [str str str str]x1 | 1219 | 1219 | 예: "gun" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/from/tracefreq` | block | [num]x10 | 10 | 10 | 0 ~ 5 | 추정 | 예광탄 빈도 (추정: 이름과 값 3~5) | 파일 구조와 값에서 추론 |  |
 | `/from/unlimitedrangetpc` | block | [num]x9 | 9 | 9 | 0 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
-| `/from/zeroingaccuracy` | block | [num num num num]x1 | 1 | 1 | 0.9 0.8 0.7 0.65 | 미확인 | 수 3~5개 |  |  |
+| `/from/zeroingaccuracy` | block | [num num num num]x1 | 1 | 1 | 0.9 0.8 0.7 0.65 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/item` | block | []x64 | 64 | 64 | 예: | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | Jerry Can (20L) ¦ 55 gallon (~210L) drum |
 | `/item/damage` | block | [atom]x1 [atom atom]x1 | 1 | 2 | blastwave ¦ add blastwave | 추정 | 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/item/damage/area` | block | [num num]x2 | 1 | 2 | 3 8 ¦ 8 12 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
@@ -1865,7 +1865,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/damage/area` | block | [num num]x3 | 3 | 3 | 2 3.5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
 | `/bullet/damage/energy` | block | [num]x3 | 3 | 3 | 2.5 ~ 3 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
 | `/bullet/damage/ground_interaction_radius` | block | [num]x3 | 3 | 3 | 0.1 | 확인 | area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | 게임 파일 주석 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
-| `/bullet/detonationthickness` | block | [num]x2 | 2 | 2 | 0.5 | 미확인 | 값 0.5 |  |  |
+| `/bullet/detonationthickness` | block | [num]x2 | 2 | 2 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/inventory` | block | []x7 | 7 | 7 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/fsm` | block | [str]x7 | 7 | 7 | "belt" ¦ "stuff" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x6 | 6 | 6 | 3 1 ¦ 5 1 ¦ 4 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
@@ -1890,7 +1890,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/damage/area` | block | [num num]x4 | 3 | 4 | 3 8 ¦ 8 12 ¦ 3 6 ¦ 3 5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
 | `/from/damage/energy` | block | [num]x4 | 3 | 4 | 1.1 ~ 15 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
 | `/from/damage/ground_interaction_radius` | block | [num]x4 | 3 | 4 | 0 ~ 0.15 | 확인 | area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | 게임 파일 주석 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
-| `/from/detonationthickness` | block | [num]x4 | 4 | 4 | 0.5 | 미확인 | 값 0.5 |  |  |
+| `/from/detonationthickness` | block | [num]x4 | 4 | 4 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/disablericochet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/firingtimeout` | block | [num num]x8 | 8 | 8 | 3.5 0.5 ¦ 2.0 0.5 ¦ 1.5 0.5 ¦ 1.75 0.5 ¦ 1.0 0.5 ¦ 2.5 0.5 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
 | `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
@@ -1963,7 +1963,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/throw/startangle` | block | [num]x6 | 6 | 6 | 10 ~ 80 | 추정 | 던지는 각도 (추정: 이름과 값 10~80) | 파일 구조와 값에서 추론 |  |
 | `/from/tracefreq` | block | [num]x3 | 3 | 3 | 3 ~ 5 | 추정 | 예광탄 빈도 (추정: 이름과 값 3~5) | 파일 구조와 값에서 추론 |  |
 | `/from/unlimitedrangetpc` | block | [num]x1 | 1 | 1 | 0 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
-| `/from/zeroingaccuracy` | block | [num num num]x2 [num num num num num]x1 | 3 | 3 | 0.8 0.7 0.6 ¦ 0.9 0.8 0.75 ¦ 0.9 0.8 0.7 0.6 0.5 | 미확인 | 수 3~5개 |  |  |
+| `/from/zeroingaccuracy` | block | [num num num]x2 [num num num num num]x1 | 3 | 3 | 0.8 0.7 0.6 ¦ 0.9 0.8 0.75 ¦ 0.9 0.8 0.7 0.6 0.5 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/item` | block | []x7 | 7 | 7 | 예: | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | Jerry Can (20L) ¦ 55 gallon (~210L) drum |
 | `/item/damage` | block | [atom atom]x2 [atom]x1 | 1 | 3 | add blastwave ¦ blastwave | 추정 | 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/item/damage/area` | block | [num num]x3 | 1 | 3 | 0.5 0.75 ¦ 2 3 ¦ 6 8 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
@@ -2015,7 +2015,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/inventory/weight` | block | [num]x3 | 3 | 3 | 100 ~ 1000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/weapon_bullet/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
 | `/weapon_bullet/mass` | block | [num]x1 | 1 | 1 | 1000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
-| `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/weapon_bullet/minimumdamagemodifier` | block | [num]x2 | 1 | 2 | 3 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/weapon_bullet/minrange` | block | [num]x1 | 1 | 1 | 3 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
@@ -2064,7 +2064,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/tag` | block | [str]x5 | 5 | 5 | "rocketlauncher to_hand ap cannot_lie" ¦ "weapon special_weapon_view flame_thrower fx_thrower bullet to_hand shoot_walking shoot_walking_ai shoot_walking_manual" ¦ "weapon build_in gun bullet tank_gun" ¦ "mrl gun build_in" ¦ "mrl" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/weapon_bullet/toplayervignette` | block | [str]x1 | 1 | 1 | "" | 미확인(자동) |  |  |  |
 | `/weapon_bullet/unlimitedrangetpc` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
-| `/weapon_bullet/zeroingaccuracy` | block | [num num num num]x1 [num num num num num]x1 | 2 | 2 | 0.7 0.6 0.5 0.4 ¦ 0.85 0.75 0.7 0.65 0.6 | 미확인 | 수 3~5개 |  |  |
+| `/weapon_bullet/zeroingaccuracy` | block | [num num num num]x1 [num num num num num]x1 | 2 | 2 | 0.7 0.6 0.5 0.4 ¦ 0.85 0.75 0.7 0.65 0.6 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 
 ### 유닛 종류: stuff
 
@@ -2084,7 +2084,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/damage/heating` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/bullet/damage/radius` | block | [num]x1 | 1 | 1 | 1.05 | 추정 | 피해가 미치는 반경, 미터 (추정: 이름. 값 1.05) | 파일 구조와 값에서 추론 | resupply radius in meter |
 | `/bullet/damage/time` | block | [num]x1 | 1 | 1 | 0.5 | 추정 | 피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds") | 파일 구조와 값에서 추론 | actual mining time equals the lenght of time for the human animation + this value if value is less than animation lenght. Otherwise this value is an absolute and animation will loop. ¦ actual mining time equals the length of time for the human animation + this value if value is less than animation length. Otherwise this value is an absolute and animation will loop. |
-| `/bullet/detonationthickness` | block | [num]x7 | 7 | 7 | 0.5 | 미확인 | 값 0.5 |  |  |
+| `/bullet/detonationthickness` | block | [num]x7 | 7 | 7 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/entity` | block | [str]x120 | 120 | 120 | 예: "sturmtiger_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/bullet/inventory` | block | []x120 | 120 | 120 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인(자동) |  |  |  |
@@ -2134,7 +2134,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/damage/heating` | block | [num]x27 | 27 | 27 | 0.5 ~ 20 | 미확인(자동) |  |  |  |
 | `/from/damage/radius` | block | [num]x27 | 27 | 27 | 0.5 ~ 6.25 | 추정 | 피해가 미치는 반경, 미터 (추정: 이름. 값 1.05) | 파일 구조와 값에서 추론 | resupply radius in meter |
 | `/from/damage/time` | block | [num]x27 | 27 | 27 | 0.5 ~ 1 | 추정 | 피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds") | 파일 구조와 값에서 추론 | actual mining time equals the lenght of time for the human animation + this value if value is less than animation lenght. Otherwise this value is an absolute and animation will loop. ¦ actual mining time equals the length of time for the human animation + this value if value is less than animation length. Otherwise this value is an absolute and animation will loop. |
-| `/from/detonationthickness` | block | [num]x23 | 23 | 23 | 0.5 ~ 1 | 미확인 | 값 0.5 |  |  |
+| `/from/detonationthickness` | block | [num]x23 | 23 | 23 | 0.5 ~ 1 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/disablericochet` | block | []x56 | 56 | 56 | 예: | 미확인(자동) |  |  |  |
 | `/from/entity` | block | [str]x2224 | 2224 | 2224 | 예: "bazooka_heat_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/from/falloffmeter` | block | [num]x3 | 3 | 3 | 100 ~ 180 | 미확인 | 값 1~220 |  |  |
@@ -2158,7 +2158,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/inventory/weight` | block | [num]x76 | 76 | 76 | 10 ~ 200 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/from/lockfiredistancetime` | block | [num]x12 | 12 | 12 | 0.5 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
 | `/from/mass` | block | [num]x597 | 597 | 597 | 0.17 ~ 2170 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
-| `/from/maxrange` | block | [num]x34 | 34 | 34 | 40 ~ 325 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/from/maxrange` | block | [num]x34 | 34 | 34 | 40 ~ 325 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minimumdamagemodifier` | block | [num]x162 | 162 | 162 | 2 ~ 450 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/minrange` | block | [num]x35 | 35 | 35 | 5 ~ 150 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/overmatchcalibre` | block | []x28 | 28 | 28 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
@@ -2174,7 +2174,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/parameters/falloffstrength` | block | [num]x1357 | 176 | 1357 | 0 ~ 0.15 | 미확인 | 값 0~0.15 |  |  |
 | `/from/parameters/gravity` | block | [num]x986 | 54 | 986 | 0.08 ~ 3.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/healthdamage` | block | [num]x48 | 18 | 48 | 100 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
-| `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 추정 | 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 파일 구조와 값에서 추론 | 4,55km ¦ 4,3km |
+| `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2605 | 179 | 2605 | 5 ~ 774.518828571428 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/parameters/overmatchcalibre` | block | []x795 | 130 | 795 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
 | `/from/parameters/overmatchcalibre/#row` | block | [num num num]x11140 | 130 | 11140 | 예: 0 1.0 0.00 | 미확인(자동) |  |  |  |
@@ -2287,7 +2287,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/unlimitedrangetpc` | block | [num]x58 | 58 | 58 | 0 | 확인 | 3인칭·1인칭 조종에서 사거리 제한 여부 | 게임 파일 주석 | restrict range in TPC/FPC |
 | `/from/view` | block | [str]x343 | 343 | 343 | 예: "bazooka_heat_ammo" | 추정 | 보이는 모델 엔티티 이름 (추정: 값이 entity와 같은 이름인 경우가 많음) | 파일 구조와 값에서 추론 | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/from/view/tail` | block | [str str]x331 | 331 | 331 | 예: "bazooka_tail" "tail" | 추정 | 탄의 꼬리 이펙트. 이펙트 이름과 붙이는 뼈대 (추정: 값 "shell_tail" "tail") | 파일 구조와 값에서 추론 |  |
-| `/from/zeroingaccuracy` | block | [num num num num num]x137 [num num num num num num num num num]x15 [num num num]x2 [num num num num num num num]x2 [num num num num]x1 | 159 | 159 | 1 | 미확인 | 수 3~5개 |  |  |
+| `/from/zeroingaccuracy` | block | [num num num num num]x137 [num num num num num num num num num]x15 [num num num]x2 [num num num num num num num]x2 [num num num num]x1 | 159 | 159 | 1 | 추정 | 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/item` | block | []x64 | 64 | 64 | 예: | 추정 | 아이템 정의의 최상위 블록 (추정: headgear.pattern 등이 이 블록으로 시작) | 파일 구조와 값에서 추론 | Jerry Can (20L) ¦ 55 gallon (~210L) drum |
 | `/item/damage` | block | [atom]x1 [atom atom]x1 | 1 | 2 | blastwave ¦ add blastwave | 추정 | 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/item/damage/area` | block | [num num]x2 | 1 | 2 | 3 8 ¦ 8 12 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |

@@ -1,7 +1,10 @@
 # 키 의미 주석(data/annotations)의 읽기와 조회. 스키마 문서와 속성 문서가 같은 규칙을 쓴다.
 
 $script:AnnotationSourceNames = @{ C = '게임 파일 주석'; S = '파일 구조와 값에서 추론'
-    D = 'GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인)' }
+    D = 'GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인)'
+    W = 'Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인)'
+    M = 'mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인)'
+    G = 'Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인)' }
 
 # common.psv(경로|형태|등급|의미|출처)와, 있으면 그룹 전용 <그룹>.psv, <그룹>.csv를 읽는다
 function Read-Annotations {

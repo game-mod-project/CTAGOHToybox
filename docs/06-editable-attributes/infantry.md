@@ -8,7 +8,7 @@
 |---|---|---|---|---|---|---|---|---|
 | 본체 | 보병 정의 | `set/breed/**/*.set` | 16 | 0 | 0 | 15 | 0 | 1 |
 | 연관 | 능력치 매크로 | `set/breed/**/*.inc` | 91 | 0 | 0 | 73 | 18 | 0 |
-| 연관 | 외형 엔티티 | `entity/humanskin/**/*.def` | 18 | 0 | 0 | 12 | 0 | 6 |
+| 연관 | 외형 엔티티 | `entity/humanskin/**/*.def` | 18 | 0 | 6 | 7 | 0 | 5 |
 
 ## 본체: 보병 정의
 
@@ -147,7 +147,7 @@
 - 위치: `entity/humanskin/**/*.def`
 - 연결: 본체의 `skin`이 이 파일의 이름을 가리킨다
 
-### 뜻을 아는 속성 (12개)
+### 뜻을 아는 속성 (13개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -156,15 +156,16 @@
 | `/human/extension` | "human.mdl" | **추정** 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) |  | 1 | `entity/humanskin/human/human.def` |
 | `/human/obstacleid` | "human_impassable" "impassable" | **추정** 장애물 분류 이름 (추정: 값 "tank", "stuff") |  | 1 | `entity/humanskin/human/human.def` |
 | `/human/volume` | "spacer" ¦ "Foot1R" ¦ "Foot2R" ¦ "Foot1L" ¦ "Foot2L" ¦ "ram" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) |  | 1 | `entity/humanskin/human/human.def` |
-| `/human/volume/able/bullet` | 0 | **추정** 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 1 | `entity/humanskin/human/human.def` |
+| `/human/volume/able/bullet` | 0 | **문서** 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 |  | 1 | `entity/humanskin/human/human.def` |
 | `/human/volume/able/contact` | 0 | **추정** 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) |  | 1 | `entity/humanskin/human/human.def` |
 | `/human/volume/able/contact_ground` | 0 | **추정** 지면 접촉 판정 대상 (추정: able의 하위 플래그) |  | 1 | `entity/humanskin/human/human.def` |
-| `/human/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 1 | `entity/humanskin/human/human.def` |
-| `/human/volume/able/touch` | 0 | **추정** 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 1 | `entity/humanskin/human/human.def` |
-| `/human/volume/density` | 0.007 | **추정** 볼륨의 밀도 (추정: 이름) |  | 1 | `entity/humanskin/human/human.def` |
-| `/human/volume/tags` | "no_target" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") |  | 1 | `entity/humanskin/human/human.def` |
+| `/human/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 1 | `entity/humanskin/human/human.def` |
+| `/human/volume/able/overlap` | 1 | **문서** 다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림) |  | 1 | `entity/humanskin/human/human.def` |
+| `/human/volume/able/touch` | 0 | **문서** 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) |  | 1 | `entity/humanskin/human/human.def` |
+| `/human/volume/density` | 0.007 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 1 | `entity/humanskin/human/human.def` |
+| `/human/volume/tags` | "no_target" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 |  | 1 | `entity/humanskin/human/human.def` |
 
-### 뜻을 모르는 속성 (6개)
+### 뜻을 모르는 속성 (5개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -173,5 +174,4 @@
 | `/human/obstacle/circle2/radius` | 5 ~ 6 | 미확인 |  | 1 | `entity/humanskin/human/human.def` |
 | `/human/skeleton/viewvolume/center` | 0 0 18 | 미확인 |  | 1 | `entity/humanskin/human/human.def` |
 | `/human/skeleton/viewvolume/extent` | 30 30 18 | 미확인 |  | 1 | `entity/humanskin/human/human.def` |
-| `/human/volume/able/overlap` | 1 | 미확인 |  | 1 | `entity/humanskin/human/human.def` |
 

@@ -110,10 +110,10 @@
 | `/(define "armor_medium_cannon")/("cannon_thickness")` | macro | [atom num]x1 | 1 | 1 | args 6 | 미확인(자동) |  |  |  |
 | `/(define "armor_tag")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_tag")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "armor_tag")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "armor_tag")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "armor")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "armor")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "armor")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "armoredcar_tier1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armoredcar_tier1")/("basic_armor")` | macro | [atom num]x1 | 1 | 1 | args 15 | 미확인(자동) |  |  |  |
@@ -130,7 +130,7 @@
 | `/(define "ballast")/volume` | block | [str]x1 | 1 | 1 | "ballast%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "ballast")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "ballast")/volume/able/float` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "ballast")/volume/tags` | block | [str]x1 | 1 | 1 | "float" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "ballast")/volume/tags` | block | [str]x1 | 1 | 1 | "float" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "basic_armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "basic_armor")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "basic_armor")/armor/("set_ammo")` | macro | [atom param]x1 | 1 | 1 | args %0 | 미확인(자동) |  |  |  |
@@ -146,7 +146,7 @@
 | `/(define "bike_parts")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_parts")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "bike_parts")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "bike_parts")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "bike_parts")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "bike_parts")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "bike_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_thickness")/("bike_parts")` | macro | [atom str param]x10 [atom str num]x2 | 1 | 12 | args "body1" %thickness ¦ args "body2" %thickness ¦ args "body3" %thickness ¦ args "body4" %thickness ¦ args "body5" %thickness ¦ args "body6" %thickness ¦ args "body7" %thickness ¦ args "body8" %thickness ¦ args "body9" %thickness ¦ args "body10" %thickness ¦ args "wheelleft1" 0.5 ¦ args "wheelleft2" 0.5 | 미확인(자동) |  |  |  |
@@ -190,7 +190,7 @@
 | `/(define "cannon_thickness")/volume` | block | [str]x28 | 1 | 28 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "cannon_thickness")/volume/able` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "cannon_thickness")/volume/able/nolook` | block | [num]x7 | 1 | 7 | 1 | 미확인(자동) |  |  |  |
-| `/(define "cannon_thickness")/volume/able/visible` | block | [num]x7 | 1 | 7 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "cannon_thickness")/volume/able/visible` | block | [num]x7 | 1 | 7 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "cannon_thickness")/volume/thickness` | block | [param]x28 | 1 | 28 | %0 | 미확인(자동) |  |  |  |
 | `/(define "car_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "car_thickness")/volume` | block | [str]x42 | 1 | 42 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
@@ -226,7 +226,7 @@
 | `/(define "component")/component/tags` | block | [param str]x1 | 1 | 1 | %component "hull" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "component")/volume` | block | [param]x1 | 1 | 1 | %volume | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "component")/volume/component` | block | [param]x1 | 1 | 1 | %component | 미확인(자동) |  |  |  |
-| `/(define "component")/volume/tags` | block | [param str]x1 | 1 | 1 | %component "hull" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "component")/volume/tags` | block | [param str]x1 | 1 | 1 | %component "hull" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "crew_1_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_1_human")/("crew_human")` | macro | [call:place call:door call:door2 call:visor]x1 | 1 | 1 | place ( driver ) door ( emit1 ) door2 ( emit2 ) visor ( driver ) | 미확인(자동) |  |  |  |
 | `/(define "crew_1_human")/("crew_inside")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -602,9 +602,9 @@
 | `/(define "engine_part")/component/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine_part")/volume` | block | [str]x1 | 1 | 1 | "%volume%number%part" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "engine_part")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "engine_part")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "engine_part")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "engine_part")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "engine_part")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "engine_part")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine_part")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "engine")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "engine")/("make_component")` | macro | [atom str str]x6 | 1 | 6 | args "engine" "engine" ¦ args "engine1" "engine" ¦ args "engine2" "engine" ¦ args "engine3" "engine" ¦ args "engine4" "engine" ¦ args "engine5" "engine" | 미확인(자동) |  |  |  |
@@ -614,9 +614,9 @@
 | `/(define "engine")/component/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "engine")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "engine")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "engine")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "engine")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "engine")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "engine")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "fighter_tier1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "fighter_tier1")/("plane_durability")` | macro | [call:body call:engine call:propeller call:wing call:wheel call:part]x1 | 1 | 1 | body ( 100 ) engine ( 50 ) propeller ( 50 ) wing ( 80 ) wheel ( 100 ) part ( 100 ) | 미확인(자동) |  |  |  |
@@ -638,18 +638,18 @@
 | `/(define "glass")/component/tags` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "glass")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "glass")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "glass")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "glass")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "glass")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "glass")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "glass")/volume/able/window` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "glass")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "glass")/volume/material` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  |  |
-| `/(define "glass")/volume/tags` | block | [str]x1 | 1 | 1 | "glass" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "glass")/volume/tags` | block | [str]x1 | 1 | 1 | "glass" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "glass")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
 | `/(define "global_damage_mod")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "global_damage_mod")/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 0.1 | 확인 | 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | 게임 파일 주석 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
 | `/(define "gun_shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun_shield")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "gun_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "gun_shield" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "gun_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "gun_shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "gun_shield")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "gun")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun")/("main_weapon")` | macro | [atom str param atom]x22 [atom str num atom]x2 | 1 | 24 | 예: args "gun" %thickness gun | 미확인(자동) |  |  |  |
@@ -710,7 +710,7 @@
 | `/(define "holes")/volume` | block | [str]x2 | 2 | 2 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "holes")/volume/able` | block | [atom]x2 | 2 | 2 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "holes")/volume/able/hole` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "holes")/volume/density` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/(define "holes")/volume/density` | block | [num]x1 | 1 | 1 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "internals")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "internals")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "internals")/component/repairorder` | block | [num]x1 | 1 | 1 | 5 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
@@ -721,7 +721,7 @@
 | `/(define "internals")/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "internals")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "internals")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "internals")/volume/tags` | block | [str str]x1 | 1 | 1 | "%1" "no_target" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "internals")/volume/tags` | block | [str str]x1 | 1 | 1 | "%1" "no_target" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "internals")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "lamp")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "lamp")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -729,11 +729,11 @@
 | `/(define "lamp")/component/tags` | block | [str]x1 | 1 | 1 | "lamp" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "lamp")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "lamp")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "lamp")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "lamp")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "lamp")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "lamp")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "lamp")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "lamp")/volume/material` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  |  |
-| `/(define "lamp")/volume/tags` | block | [str]x1 | 1 | 1 | "lamp" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "lamp")/volume/tags` | block | [str]x1 | 1 | 1 | "lamp" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "lamp")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
 | `/(define "locomotion")` | define | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/(define "locomotion")/braketime` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
@@ -754,15 +754,15 @@
 | `/(define "main_weapon")/volume/able` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "main_weapon")/volume/able/contact` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/(define "main_weapon")/volume/able/nolook` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
-| `/(define "main_weapon")/volume/able/obstacle` | block | [num]x2 | 2 | 2 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "main_weapon")/volume/able/visible` | block | [num]x2 | 2 | 2 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "main_weapon")/volume/able/obstacle` | block | [num]x2 | 2 | 2 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "main_weapon")/volume/able/visible` | block | [num]x2 | 2 | 2 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "main_weapon")/volume/component` | block | [str]x1 | 1 | 1 | "%2" | 미확인(자동) |  |  |  |
-| `/(define "main_weapon")/volume/tags` | block | [str str]x2 | 2 | 2 | "no_target" "%2" ¦ "no_target" "gun" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "main_weapon")/volume/tags` | block | [str str]x2 | 2 | 2 | "no_target" "%2" ¦ "no_target" "gun" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "main_weapon")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "make_component")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "make_component")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "make_component")/volume/component` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
-| `/(define "make_component")/volume/tags` | block | [param]x1 | 1 | 1 | %1 | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "make_component")/volume/tags` | block | [param]x1 | 1 | 1 | %1 | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "mantlet")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mantlet")/("make_component")` | macro | [atom str str]x6 | 1 | 6 | args "mantlet" "mantlet" ¦ args "mantlet1" "mantlet" ¦ args "mantlet2" "mantlet" ¦ args "mantlet3" "mantlet" ¦ args "mantlet4" "mantlet" ¦ args "mantlet5" "mantlet" | 미확인(자동) |  |  |  |
 | `/(define "mantlet")/component` | block | [str]x1 | 1 | 1 | "mantlet" | 미확인(자동) |  |  |  |
@@ -785,18 +785,18 @@
 | `/(define "moto_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x1 [expr]x1 | 1 | 7 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "moto_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "moto_thickness")/volume` | block | [str]x14 | 1 | 14 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "moto_thickness")/volume/tags` | block | [str]x1 | 1 | 1 | "explosive" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "moto_thickness")/volume/tags` | block | [str]x1 | 1 | 1 | "explosive" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "moto_thickness")/volume/thickness` | block | [param]x13 [num]x1 | 1 | 14 | 1 | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")/bone` | block | [str]x2 | 1 | 2 | "gun_rot1" ¦ "gun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "mp_gun_limits")/bone/limits` | block | [num num]x2 | 1 | 2 | -1 1 ¦ -25 15 | 미확인(자동) |  |  |  |
-| `/(define "mp_gun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 미확인(자동) |  |  |  |
+| `/(define "mp_gun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "mp_mgun_limits")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")/bone` | block | [str]x2 | 1 | 2 | "mgun_rot1" ¦ "mgun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "mp_mgun_limits")/bone/limits` | block | [num num]x2 | 1 | 2 | -1 1 ¦ -25 15 | 미확인(자동) |  |  |  |
-| `/(define "mp_mgun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 미확인(자동) |  |  |  |
+| `/(define "mp_mgun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "passenger_10_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "passenger_10_human")/("passenger_human")` | macro | [call:place call:bone call:door call:animation call:group]x10 | 1 | 10 | place ( seat1 ) bone ( seat01 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat2 ) bone ( seat02 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat3 ) bone ( seat03 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat4 ) bone ( seat04 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat5 ) bone ( seat05 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat6 ) bone ( seat06 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat7 ) bone ( seat07 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat8 ) bone ( seat08 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat9 ) bone ( seat09 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat10 ) bone ( seat10 ) door ( emit4 ) animation ( passenger ) group ( passenger ) | 미확인(자동) |  |  |  |
 | `/(define "passenger_12_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -852,13 +852,13 @@
 | `/(define "prop_blade")/component/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_blade")/volume` | block | [str]x1 | 1 | 1 | "%number%volume" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "prop_blade")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "prop_blade")/volume/able/blast` | block | []x1 | 1 | 1 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "prop_blade")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/(define "prop_blade")/volume/able/blast` | block | []x1 | 1 | 1 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/(define "prop_blade")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "prop_blade")/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_blade")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "prop_blade")/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/(define "prop_blade")/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "prop_blade")/volume/component` | block | [str]x1 | 1 | 1 | "propeller%number" | 미확인(자동) |  |  |  |
-| `/(define "prop_blade")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "prop_blade")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_blade")/volume/thickness` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
@@ -869,7 +869,7 @@
 | `/(define "prop_spin")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "prop_spin")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")/volume/component` | block | [str]x1 | 1 | 1 | "propeller%number" | 미확인(자동) |  |  |  |
-| `/(define "prop_spin")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "prop_spin")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_spin")/volume/thickness` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
 | `/(define "quad_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "quad_engine")/("engine")` | macro | [call:volume call:number]x1 | 1 | 1 | volume ( engine ) number ( 4 ) | 미확인(자동) |  |  |  |
@@ -889,10 +889,10 @@
 | `/(define "rocket")/component/tags` | block | [str]x1 | 1 | 1 | "rocket" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "rocket")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "rocket")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "rocket")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "rocket")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "rocket")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "rocket")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "rocket")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "rocket")/volume/tags` | block | [str]x1 | 1 | 1 | "rocket" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "rocket")/volume/tags` | block | [str]x1 | 1 | 1 | "rocket" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "rocket")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "sandbags")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "sandbags")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
@@ -967,12 +967,12 @@
 | `/(define "shield_group")/component/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_group")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_group")/volume/component` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  |  |
-| `/(define "shield_group")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_group")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_group")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_part")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_part")/volume/component` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  |  |
-| `/(define "shield_part")/volume/tags` | block | [param]x1 | 1 | 1 | %2 | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_part")/volume/tags` | block | [param]x1 | 1 | 1 | %2 | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_part")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield_tear")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_tear")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -981,7 +981,7 @@
 | `/(define "shield_tear")/component/tags` | block | [str str]x1 | 1 | 1 | "cut_part" "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_tear")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_tear")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield_tear")/volume/tags` | block | [str str]x1 | 1 | 1 | "cut_part" "shield" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_tear")/volume/tags` | block | [str str]x1 | 1 | 1 | "cut_part" "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_tear")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield_track")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_track")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -991,7 +991,7 @@
 | `/(define "shield_track")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_track")/volume/caststeel` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
 | `/(define "shield_track")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield_track")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_track")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_track")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -1000,7 +1000,7 @@
 | `/(define "shield")/component/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "single_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "single_engine")/("engine_part")` | macro | [call:volume call:number call:part]x6 | 1 | 6 | volume ( engine ) number ( 1 ) part ( 1 ) ¦ volume ( engine ) number ( 1 ) part ( 2 ) ¦ volume ( engine ) number ( 1 ) part ( 3 ) ¦ volume ( engine ) number ( 1 ) part ( 4 ) ¦ volume ( engine ) number ( 1 ) part ( 5 ) ¦ volume ( engine ) number ( 1 ) part ( 6 ) | 미확인(자동) |  |  |  |
@@ -1016,7 +1016,7 @@
 | `/(define "solid_wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "solid_wheel")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "solid_wheel")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "solid_wheel")/volume/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "solid_wheel")/volume/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "solid_wheel")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "tank_heavy_tier1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_heavy_tier1")/("basic_armor")` | macro | [atom num]x1 | 1 | 1 | args 30 | 미확인(자동) |  |  |  |
@@ -1060,16 +1060,16 @@
 | `/(define "tearable")/component/tags` | block | [str str]x1 | 1 | 1 | "%volume%number" "part" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tearable")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "tearable")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "tearable")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "tearable")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "tearable")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "tearable")/volume/tags` | block | [str]x1 | 1 | 1 | "%volume%number" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "tearable")/volume/tags` | block | [str]x1 | 1 | 1 | "%volume%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tearable")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume` | block | [str]x2 | 2 | 2 | "track%0%1" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "track_wheels")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "track_wheels")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume/component` | block | [str]x1 | 1 | 1 | "track%0" | 미확인(자동) |  |  |  |
-| `/(define "track_wheels")/volume/tags` | block | [str str]x1 | 1 | 1 | "mover" "track" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "track_wheels")/volume/tags` | block | [str str]x1 | 1 | 1 | "mover" "track" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "track_wheels")/volume/thickness` | block | [param]x2 | 2 | 2 | %2 | 미확인(자동) |  |  |  |
 | `/(define "tracks")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tracks")/("track_wheels")` | macro | [atom atom num param]x72 | 2 | 72 | 예: args left 1 %thickness | 미확인(자동) |  |  |  |
@@ -1082,7 +1082,7 @@
 | `/(define "tracks")/volume/able/contact_ground` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/(define "tracks")/volume/able/holed` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tracks")/volume/able/nowounddecal` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
-| `/(define "tracks")/volume/tags` | block | [str str]x2 | 1 | 2 | "mover" "track" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "tracks")/volume/tags` | block | [str str]x2 | 1 | 2 | "mover" "track" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tracks")/volume/thickness` | block | [param]x4 | 2 | 4 | %thickness | 미확인(자동) |  |  |  |
 | `/(define "train_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "train_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1106,8 +1106,8 @@
 | `/(define "visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "visible")/volume` | block | [str param]x1 | 1 | 1 | "%volume%number" %extra | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "visible")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "visible")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "visible")/volume/tags` | block | [param]x1 | 1 | 1 | %tags | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "visible")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "visible")/volume/tags` | block | [param]x1 | 1 | 1 | %tags | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "visible")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "wheel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wheel")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
@@ -1118,7 +1118,7 @@
 | `/(define "wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "wheel")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wheel")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "wheel")/volume/tags` | block | [str]x1 | 1 | 1 | "wheel" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wheel")/volume/tags` | block | [str]x1 | 1 | 1 | "wheel" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wheel")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
 | `/(define "wing")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wing")/component` | block | [str]x1 | 1 | 1 | "wing%component" | 미확인(자동) |  |  |  |
@@ -1127,18 +1127,18 @@
 | `/(define "wing")/component/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wing")/volume` | block | [str]x1 | 1 | 1 | "wing%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wing")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "wing")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "wing")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "wing")/volume/component` | block | [str]x1 | 1 | 1 | "wing%component" | 미확인(자동) |  |  |  |
-| `/(define "wing")/volume/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wing")/volume/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wing")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "wood_shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wood_shield")/volume` | block | [str]x1 | 1 | 1 | "shieldw%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wood_shield")/volume/material` | block | [str]x1 | 1 | 1 | "wood" | 미확인(자동) |  |  |  |
-| `/(define "wood_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wood_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wood")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wood")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wood")/volume/material` | block | [str]x1 | 1 | 1 | "wood" | 미확인(자동) |  |  |  |
-| `/(define "wood")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wood")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(include)` | include | [str]x78 [str call:scale]x4 | 26 | 82 | 예: "vehicle.ext" | 미확인(자동) |  |  |  |
 | `/##` | block | [atom str]x1 | 1 | 1 | extender "detail" | 미확인(자동) |  |  | No longer used? |
 | `/##/random` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1150,7 +1150,7 @@
 | `/##weaponry/place/linkanimation` | block | [str]x1 | 1 | 1 | "off" | 미확인(자동) |  |  |  |
 | `/##weaponry/place/linkbone` | block | [str]x1 | 1 | 1 | "mgun" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/##weaponry/place/rotate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/##weaponry/place/type` | block | [str]x1 | 1 | 1 | "main" | 미확인(자동) |  |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/##weaponry/place/type` | block | [str]x1 | 1 | 1 | "main" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/<bare>` | bare | [atom]x22 | 22 | 22 | actor ¦ game_entity | 미확인(자동) |  |  |  |
 | `/able` | block | [str]x9 [str str]x3 [str str str str]x2 [str str str]x1 | 14 | 15 | "talk" ¦ "emit_crew_on_injure" ¦ "talk" "-emit_passangers_on_enemy" ¦ "-select" "neutral" ¦ "emit_on_attack" ¦ "crew" "fight" "minimap" "personage" ¦ "-emit_passangers_on_enemy" ¦ "emit_crew_on_injure" "talk" "-emit_passangers_on_enemy" ¦ "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/animation` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1177,7 +1177,7 @@
 | `/body/permit` | block | [atom]x2 | 2 | 2 | body | 미확인(자동) |  |  |  |
 | `/body/proper` | block | [atom atom]x2 | 2 | 2 | body sensible | 미확인(자동) |  |  |  |
 | `/bone` | block | [str]x1 | 1 | 1 | "foresight2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
+| `/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | sway speed coef ¦ kmph |
 | `/brain` | block | [str]x3 | 3 | 3 | "vehicle" ¦ "actor" ¦ "human" | 미확인(자동) |  |  |  |
 | `/brain/const` | block | [str num]x5 | 1 | 5 | "bomb/detect_explosives" 7 ¦ "bomb/detect_grenades" 5 ¦ "bomb/danger_zone" 7 ¦ "fight/distance" 2 ¦ "weapon/change_time" 5 | 미확인(자동) |  |  | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds |
 | `/brain/properties` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1364,19 +1364,19 @@
 | `/targetselector` | block | [str]x14 | 14 | 14 | "cannon_bullet" ¦ "car_bullet" ¦ "tank_medium" ¦ "airborne_bullet" ¦ "tank_zenite" ¦ "cannon_small" ¦ "human" ¦ "cannon_zenite" ¦ "cannon_aa" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x48 | 20 | 48 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/volume/able` | block | []x27 [atom]x13 | 16 | 40 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/contact` | block | []x3 [num]x1 | 4 | 4 | 0 | 미확인(자동) |  |  |  |
 | `/volume/able/contact_ground` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/volume/able/nolook` | block | [num]x9 | 1 | 9 | 1 | 미확인(자동) |  |  |  |
 | `/volume/able/nowounddecal` | block | []x3 | 2 | 3 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/obstacle` | block | [num]x12 []x1 | 5 | 13 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/obstacle` | block | [num]x12 []x1 | 5 | 13 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/select` | block | []x6 | 5 | 6 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/touch` | block | []x10 | 9 | 10 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/volume/able/visible` | block | [num]x4 []x2 | 4 | 6 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/volume/density` | block | [num]x10 | 8 | 10 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/touch` | block | []x10 | 9 | 10 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/visible` | block | [num]x4 []x2 | 4 | 6 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/volume/density` | block | [num]x10 | 8 | 10 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/volume/material` | block | [str]x1 | 1 | 1 | "fabric" | 미확인(자동) |  |  |  |
-| `/volume/tags` | block | [str str]x8 [str]x5 | 2 | 13 | "no_target" "fire" ¦ "fire" ¦ "body" "fire" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/volume/tags` | block | [str str]x8 [str]x5 | 2 | 13 | "no_target" "fire" ¦ "fire" ¦ "body" "fire" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/volume/thickness` | block | [num]x23 | 11 | 23 | 0 ~ 5 | 미확인(자동) |  |  |  |
 | `/weaponry` | block | []x7 | 7 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/weaponry/manualaccuracy` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
@@ -3663,9 +3663,9 @@
 | `/(define "base_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "base_vol")/volume` | block | [str]x1 | 1 | 1 | "base%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "base_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "base_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "base_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "base_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "base_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "base_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "base_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "base_vol")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "bedford_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bedford_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
@@ -3685,15 +3685,15 @@
 | `/(define "body_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "body_vol")/volume` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "body_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "body_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "body_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "body_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "body_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "bole_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bole_vol")/volume` | block | [str]x1 | 1 | 1 | "bole%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "bole_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "bole_vol")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "bole_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "bole_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "bole_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "bole_vol")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "bole_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "bole_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "bole_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "bole_vol")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "bonealign")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bonealign")/bone` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
@@ -3768,7 +3768,7 @@
 | `/(define "cliff_vol")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "cliff_vol")/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cliff_vol")/volume/able/contact_ground` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "cliff_vol")/volume/able/obstacle` | block | []x1 | 1 | 1 | 예: | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/(define "cliff_vol")/volume/able/obstacle` | block | []x1 | 1 | 1 | 예: | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "con_mortar_barrage")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "con_mortar_barrage")/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "con_mortar_barrage")/on/if` | block | [atom atom str]x1 | 1 | 1 | not tagged "fired" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -3926,7 +3926,7 @@
 | `/(define "declare_fire_volume")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volume")/volume` | block | [str]x4 | 2 | 4 | "fire%0" ¦ "smoke%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "declare_fire_volume")/volume/able` | block | [atom]x4 | 2 | 4 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "declare_fire_volume")/volume/tags` | block | [str]x4 | 2 | 4 | "fire" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "declare_fire_volume")/volume/tags` | block | [str]x4 | 2 | 4 | "fire" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "declare_fire_volumes")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volumes")/("declare_fire_volume")` | macro | [atom num]x20 | 2 | 20 | args 0 ¦ args 1 ¦ args 2 ¦ args 3 ¦ args 4 ¦ args 5 ¦ args 6 ¦ args 7 ¦ args 8 ¦ args 9 | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volumes")/props` | block | [str]x2 | 2 | 2 | "burning_old" | 미확인(자동) |  |  |  |
@@ -4106,9 +4106,9 @@
 | `/(define "foxhole")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "foxhole")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "foxhole")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "foxhole")/volume/able/blast` | block | [num]x1 | 1 | 1 | 1 | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "foxhole")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 1 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "foxhole")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "foxhole")/volume/able/blast` | block | [num]x1 | 1 | 1 | 1 | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/(define "foxhole")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 1 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "foxhole")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "foxhole")/volume/thickness` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  |  |
 | `/(define "frag_grenade_protection")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "frag_grenade_protection")/("blast_protection")` | macro | [call:dmg]x1 | 1 | 1 | dmg ( 6 ) | 미확인(자동) |  |  |  |
@@ -4989,8 +4989,8 @@
 | `/(define "roof_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "roof_vol")/volume` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "roof_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "roof_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "roof_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "roof" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "roof_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "roof_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "roof" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "s60_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "s60_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "s60_sound")/on/link_sound` | block | [str str]x6 | 1 | 6 | "engine_start" "vehicle/engine/s60/start" ¦ "engine_stop" "vehicle/engine/s60/stop" ¦ "engine_idle" "vehicle/engine/s60/idle" ¦ "engine_full" "vehicle/engine/s60/full" ¦ "exhaust" "vehicle/engine/s60/exhaust" ¦ "move" "vehicle/tracks/s60/" | 미확인(자동) |  |  |  |
@@ -5580,11 +5580,11 @@
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "turret_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "turret_heavy")/speed2` | block | [expr]x1 | 1 | 1 | ( + 4 ( / %power_traverse 3 ) ) | 미확인(자동) |  |  |  |
+| `/(define "turret_heavy")/speed2` | block | [expr]x1 | 1 | 1 | ( + 4 ( / %power_traverse 3 ) ) | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "turret_light")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "turret_light")/speed2` | block | [expr]x1 | 1 | 1 | ( + 10 ( / %power_traverse 2.5 ) ) | 미확인(자동) |  |  |  |
+| `/(define "turret_light")/speed2` | block | [expr]x1 | 1 | 1 | ( + 10 ( / %power_traverse 2.5 ) ) | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "turret_medium")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "turret_medium")/speed2` | block | [expr]x1 | 1 | 1 | ( + 6 ( / %power_traverse 2.5 ) ) | 미확인(자동) |  |  |  |
+| `/(define "turret_medium")/speed2` | block | [expr]x1 | 1 | 1 | ( + 6 ( / %power_traverse 2.5 ) ) | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "ultra_vision")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ultra_vision")/h_fov` | block | [num]x1 | 1 | 1 | 360 | 미확인(자동) |  |  |  |
 | `/(define "ultra_vision")/radius` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | resupply radius in meter |
@@ -5610,10 +5610,10 @@
 | `/(define "volume")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "volume")/volume` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "volume")/volume/able` | block | [atom]x1 []x1 | 2 | 2 | clear ¦ | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "volume")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/(define "volume")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "volume")/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "volume")/volume/able/obstacle` | block | []x1 [num]x1 | 2 | 2 | 1 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "volume")/volume/tags` | block | [str]x2 | 2 | 2 | "body" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "volume")/volume/able/obstacle` | block | []x1 [num]x1 | 2 | 2 | 1 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "volume")/volume/tags` | block | [str]x2 | 2 | 2 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "volume")/volume/thickness` | block | [num]x2 | 2 | 2 | 1 ~ 60 | 미확인(자동) |  |  |  |
 | `/(define "water_bullets")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "water_bullets")/if` | block | [atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str]x1 | 1 | 1 | stuff "bullet_fx size1" else stuff "bullet_fx size2 intermediate" else stuff "bullet_fx size2" else stuff "bullet_fx size3 api" else stuff "bullet_fx size3" else stuff "auto size1" else stuff "auto size2" else stuff "shell size1" else stuff "shell size2" else stuff "shell size3" else stuff "shell size4" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -5986,15 +5986,15 @@
 | `/easy/unitset/value` | block | [param]x1 | 1 | 1 | %period | 미확인(자동) |  |  |  |
 | `/event_history` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/event_history/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(9)p(0)" ¦ "<f(open_sans)s(8)>p(0)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ This appears in the XP bar and in the title of MP settings. It's also the font for many pop up windows excepting 'loading...' and 'loading multiplayer resources...' ; dbd4cb |
-| `/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 미확인(자동) |  |  |  |
-| `/extender[land_patch]` | block | [str]x6 | 6 | 6 | "land_patch" | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/alignenabled` | block | [num]x5 | 5 | 5 | 1 | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/alignstacked` | block | [num]x5 | 5 | 5 | 0 ~ 1 | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/alignvolumes` | block | [num]x2 | 2 | 2 | 0 ~ 1 | 미확인(자동) |  |  |  |
+| `/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 문서 | 지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
+| `/extender[land_patch]` | block | [str]x6 | 6 | 6 | "land_patch" | 문서 | 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/extender[land_patch]/alignenabled` | block | [num]x5 | 5 | 5 | 1 | 문서 | 메시를 지면에 맞춰 정렬할지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/extender[land_patch]/alignstacked` | block | [num]x5 | 5 | 5 | 0 ~ 1 | 문서 | 정렬에 쓸 지면 층. 0은 원래 지면(참호용), 1은 이미 파인 지면(구덩이용). 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/extender[land_patch]/alignvolumes` | block | [num]x2 | 2 | 2 | 0 ~ 1 | 문서 | 볼륨 중심에서 지면까지의 거리가 변하지 않도록 볼륨을 옮길지 여부. 기본 0 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/extender[land_patch]/bigkernel` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/randomrotate` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
+| `/extender[land_patch]/randomrotate` | block | [num]x2 | 2 | 2 | 1 | 문서 | 편집기에서 지면에 놓을 때 무작위로 회전시킬지 여부. 기본 0 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/extender[land_patch]/removeentities` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/terraintype` | block | [str str]x4 | 4 | 4 | "ground" "ground" ¦ "ground" "rock" ¦ "ground" "snow" | 추정 | 이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel") | 파일 구조와 값에서 추론 |  |
+| `/extender[land_patch]/terraintype` | block | [str str]x4 | 4 | 4 | "ground" "ground" ¦ "ground" "rock" ¦ "ground" "snow" | 문서 | 이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/extender[land_patch]/updateentities` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/extender[light]` | block | [str]x1 | 1 | 1 | "light" | 미확인(자동) |  |  |  |
 | `/extender[light]/preset` | block | [str]x4 | 1 | 4 | "default" ¦ "lamp_spot" ¦ "lamp_point" ¦ "lamp_search" | 추정 | 조명 프리셋 하나. 문자열이 이름 (추정: 값 "lamp_spot", "lamp_point") | 파일 구조와 값에서 추론 |  |
@@ -6447,16 +6447,16 @@
 | `/video_dialog/subtitle_text_style` | block | [str]x2 | 2 | 2 | "e(shadow)f(anka)s(15)c(255 255 255)" ¦ "e(shadow)f(open_sans)s(30)c(185 199 199)" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x32 [atom str]x3 | 11 | 35 | 예: "rock" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/volume/able` | block | []x13 [atom]x4 | 7 | 17 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/volume/able/blast` | block | [num]x2 []x2 | 3 | 4 | 1 | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/volume/able/bullet` | block | []x1 [num]x1 | 2 | 2 | 0 | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/blast` | block | [num]x2 []x2 | 3 | 4 | 1 | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/volume/able/bullet` | block | []x1 [num]x1 | 2 | 2 | 0 | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/obstacle` | block | [num]x10 | 5 | 10 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/volume/able/overlap` | block | [num]x2 []x1 | 2 | 3 | 1 | 미확인(자동) |  |  |  |
-| `/volume/able/touch` | block | [num]x2 | 1 | 2 | 0 | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/volume/able/visible` | block | [num]x13 | 4 | 13 | 0 ~ 1 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/volume/density` | block | [num]x2 | 2 | 2 | 0 ~ 0.007 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/obstacle` | block | [num]x10 | 5 | 10 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/overlap` | block | [num]x2 []x1 | 2 | 3 | 1 | 문서 | 다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/touch` | block | [num]x2 | 1 | 2 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/visible` | block | [num]x13 | 4 | 13 | 0 ~ 1 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/volume/density` | block | [num]x2 | 2 | 2 | 0 ~ 0.007 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/volume/material` | block | [str]x1 | 1 | 1 | "ground" | 미확인(자동) |  |  |  |
-| `/volume/tags` | block | [str]x17 [str str]x6 | 7 | 23 | "body" ¦ "body" "fire" ¦ "bole" ¦ "lamp" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/volume/tags` | block | [str]x17 [str str]x6 | 7 | 23 | "body" ¦ "body" "fire" ¦ "bole" ¦ "lamp" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/volume/thickness` | block | [num]x19 | 8 | 19 | 0.2 ~ 1000 | 미확인(자동) |  |  |  |
 | `/zclipvisibility` | block | [num]x4 | 4 | 4 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/zoomfactor` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |

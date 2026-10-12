@@ -43,14 +43,14 @@
 | `/human/skeleton/viewvolume/extent` | block | [num num num]x1 | 1 | 1 | 30 30 18 | 미확인(자동) |  |  |  |
 | `/human/volume` | block | [str]x6 | 1 | 6 | "spacer" ¦ "Foot1R" ¦ "Foot2R" ¦ "Foot1L" ¦ "Foot2L" ¦ "ram" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 |  |
 | `/human/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/human/volume/able/bullet` | block | [num]x1 | 1 | 1 | 0 | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/human/volume/able/bullet` | block | [num]x1 | 1 | 1 | 0 | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/human/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/human/volume/able/contact_ground` | block | [num]x1 | 1 | 1 | 0 | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/able/overlap` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/human/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/density` | block | [num]x1 | 1 | 1 | 0.007 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/tags` | block | [str]x5 | 1 | 5 | "no_target" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 |  |
+| `/human/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/human/volume/able/overlap` | block | [num]x1 | 1 | 1 | 1 | 문서 | 다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/human/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/human/volume/density` | block | [num]x1 | 1 | 1 | 0.007 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/human/volume/tags` | block | [str]x5 | 1 | 5 | "no_target" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 
 ### 파일 종류: .inc
 
@@ -397,35 +397,35 @@
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/limits` | block | [num num]x1 | 1 | 1 | -40 40 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/matrix34` | block | [num num num num num num num num num num num num]x7343 | 3672 | 7343 | 0.9663 0.2573 0 -0.2573 0.9663 0 0 0 1 6.2681 0 0 ¦ 0.9367 0.3501 0 -0.3501 0.9367 0 0 0 1 6.2681 0 0 ¦ 0.999952 0.00413703 -0.00886165 -0.00885884 -0.000694277 -0.99996 -0.00414242 0.999991 -0.000657678 0 7.21457 0 ¦ 0.00647848 0.996053 0.0885296 -0.106389 0.0887155 -0.990359 -0.994303 -0.00300312 0.106544 -4.16774 -4.2536 2.42593 ¦ 1 0 0 0 0 1 0 -1 0 0 0 0 ¦ 0.941579 0.336792 0 -0.336792 0.941579 0 0 0 1 6.26813 0 0 ¦ 0.864419 0.502773 0 -0.502773 0.864419 0 0 0 1 6.26813 0 0 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/position` | block | [num num num]x2 | 1 | 2 | -0.139178 6.12487 1.17253 ¦ -0.139178 6.12487 -1.18112 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/bone/bone/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/bone/bone/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/limits` | block | [num num]x2 | 2 | 2 | -40 20 ¦ -40 40 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/matrix34` | block | [num num num num num num num num num num num num]x14681 | 3672 | 14681 | 1 0 0 0 1 0 0 0 1 2.6001 0 0 ¦ 1 0 0 0 1 0 0 0 1 2.8146 0 2.3329 ¦ 0.4351 -0.7063 0.5584 0.8932 0.2604 -0.3665 0.1135 0.6583 0.7442 0.0503 -0.226 2.9534 ¦ 0.2385 -0.8203 -0.5198 0.9296 0.038 0.3665 -0.281 -0.5706 0.7717 0.0503 -0.226 -2.9527 ¦ 1 0 0 0 0 1 0 -1 0 0 0 1.66801 ¦ 0 0 1 0 1 0 -1 0 0 0 0 0 ¦ 1 0 0 0 1 0 0 0 1 2.31916 0 2.33291 ¦ -0.139908 -0.964538 0.223815 0.8542 -0.23189 -0.465371 0.500768 0.126073 0.856351 0.0503405 -0.225974 2.95337 ¦ -0.17574 -0.948524 -0.263473 0.850453 -0.281083 0.444659 -0.495827 -0.145928 0.856073 0.0503408 -0.225974 -2.95273 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
 | `/skeleton/bone/bone/bone/bone/bone/bone/position` | block | [num num num]x3673 | 3671 | 3673 | 2.6001 0 0 ¦ 2.60015 0 0 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/bone/bone/speed` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/bone/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/bone/bone/speed` | block | [num]x1 | 1 | 1 | 0.1 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/bone/bone/bone/bone/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/bone/bone/matrix34` | block | [num num num num num num num num num num num num]x36705 | 3672 | 36705 | 예: 0.2214 0.974 0.0488 -0.9723 0.2166 0.0881 0.0752 -0.067 0.9949 8.7402 0.1133 0.0057 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
 | `/skeleton/bone/bone/bone/bone/bone/position` | block | [num num num]x2 | 1 | 2 | -0.13918 6.12487 1.17253 ¦ -0.13918 6.12487 -1.18112 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/limits` | block | [num num]x3671 [num]x1 | 3671 | 3672 | 65 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/matrix34` | block | [num num num num num num num num num num num num]x18349 [num num num num num atom num num num num num num]x6 | 3672 | 18355 | 0.9974 -0.0721 -0.0005 0.0721 0.9974 -0.0002 0.0006 0.0002 1 9.3784 -0.0472 0 ¦ 0.9982 -0.0601 -0.0006 0.0601 0.9982 -0.0002 0.0006 0.0002 1 9.3783 -0.0472 0 ¦ 1 0 0 0 0 1 0 -1 0 0 0 1.668 ¦ -0.9959 -0.0821 0.0371 0.0595 -0.2902 0.9551 -0.0677 0.9534 0.2939 0.1199 -0.1649 0.1487 ¦ 0.9363 0.1938 0.2929 0.3211 -0.1348 -0.9374 -0.1422 0.9717 -0.1885 0.0856 -0.3388 -0.0895 ¦ 0 1 0 1 0 0 0 0 1 0 0 0 ¦ 0.952385 -0.304899 -0.000108002 0.304899 0.952385 -4.08264e-005 0.000115287 0 1 9.37838 -0.0471724 0 ¦ 0.951792 -0.306743 -0.000104386 0.306743 0.951792 -3.94955e-005 0.000111691 0 1 9.37831 -0.0472316 0 ¦ 0.952382 -0.304908 -0.000107976 0.304908 0.952382 -4.07626e-05 0.000115262 0 1 9.37838 -0.0471723 0 ¦ 0.951795 -0.306736 -0.000104569 0.306736 0.951795 -3.94722e-05 0.000111624 0 1 9.37831 -0.0472317 0 ¦ 1 0 0 0 0 1 0 -1 0 0 0 0 ¦ 1 0 0 0 0 1 0 -1 0 0 0 1.66801 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
-| `/skeleton/bone/bone/bone/bone/speed` | block | [num]x3670 | 3670 | 3670 | 0.1 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/speed2` | block | [num]x2 | 1 | 2 | 720 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/speed` | block | [num]x3670 | 3670 | 3670 | 0.1 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/bone/bone/bone/speed2` | block | [num]x2 | 1 | 2 | 720 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/limits` | block | [num num]x3674 | 3672 | 3674 | -20 20 ¦ -50 40 ¦ -45 45 ¦ -10 80 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/matrix34` | block | [num num num num num num num num num num num num]x22028 | 3672 | 22028 | 예: -0.9996 0.017 -0.0247 -0.0247 -0.0005 0.9997 -0.017 -0.9999 -0.0009 -0.1435 -2.131 -0.489 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
-| `/skeleton/bone/bone/bone/speed` | block | [num]x3671 | 3671 | 3671 | 0.1 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/speed2` | block | [num]x3 | 1 | 3 | 300 ~ 720 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/speed` | block | [num]x3671 | 3671 | 3671 | 0.1 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/bone/bone/speed2` | block | [num]x3 | 1 | 3 | 300 ~ 720 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/limits` | block | [num num]x3672 | 3672 | 3672 | -20 20 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/lodview` | block | []x32698 | 3669 | 32698 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/lodview/volumeview` | block | [str]x124512 | 3669 | 124512 | 예: "heads/civ_head_1.ply" | 미확인(자동) |  |  | (Retained for LOD1 for fidelity.) |
 | `/skeleton/bone/bone/matrix34` | block | [num num num num num num num num num num num num]x18353 | 3672 | 18353 | 0 0 1 0 -1 0 1 0 0 0.6118 0.0345 19.9368 ¦ 1 0 0 0 -1 0 0 0 1 -0.8883 1.8586 1.7109 ¦ 1 0 0 0 -1 0 0 0 1 3.0299 2.478 0.0515 ¦ 0.3452 -0.5526 -0.7586 0.9324 0.1096 0.3444 -0.1072 -0.8262 0.5531 0.1477 -7.3837 23.9651 ¦ 0.3909 0.513 -0.7642 0.9202 -0.2361 0.3122 -0.0203 -0.8253 -0.5644 0.0473 7.5158 24.2278 ¦ 0 0 1 0 -1 0 1 0 0 0 0.0344553 19.9224 ¦ 1 0 0 0 -1 0 0 0 1 -1.09561 2.53715 1.86587 ¦ 1 0 0 0 -1 0 0 0 1 3.29347 3.4301 0.0514984 ¦ 1 0 0 0 0.999873 0.0159503 0 -0.0159503 0.999873 4.66535 12.6378 28.3042 ¦ 1 0 0 0 -1 0 0 0 1 -0.580139 -0.0706339 23.3558 ¦ 0.90617 -0.0158173 -0.422618 -0.0174523 -0.999848 0 0.422554 -0.00737534 0.906308 -0.0932226 -0.0173895 27.0013 | 미확인(자동) |  |  | 0 90 0 ¦ 15 85 0 |
 | `/skeleton/bone/bone/position` | block | [num num num]x18350 | 3672 | 18350 | 1.9399 -10.2529 20.0263 ¦ 3.2935 -2.6165 0.0515 ¦ -0.9987 -1.8803 1.7145 ¦ 2.0768 10.1794 20.2598 ¦ 13.7429 0.0247 27.5947 ¦ 13.7429 0.0246876 27.5947 ¦ 3.29347 -3.36689 0.0514994 ¦ -1.09561 -2.34785 1.86587 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/speed` | block | [num]x3671 | 3671 | 3671 | 0.1 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/speed` | block | [num]x3671 | 3671 | 3671 | 0.1 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/visibility` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/volumeview` | block | [str]x3 | 3 | 3 | "skin.ply" ¦ "1stp.ply" | 미확인(자동) |  |  | (Retained for LOD1 for fidelity.) |
 | `/skeleton/bone/limits` | block | [num num]x3672 | 3672 | 3672 | -30 30 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/orientation` | block | [num num num num num num num num num]x3672 | 3672 | 3672 | 1 0 0 0 -1 0 0 0 1 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/speed` | block | [num]x3671 | 3671 | 3671 | 0.1 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/speed` | block | [num]x3671 | 3671 | 3671 | 0.1 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/speed2` | block | [num]x1 | 1 | 1 | 720 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/extension` | block | [str]x2 | 2 | 2 | "/properties/animation/human/human_anm.ext" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x12 | 1 | 12 | "body" ¦ "head" ¦ "face" ¦ "hand1l" ¦ "hand2l" ¦ "hand1r" ¦ "hand2r" ¦ "foot1r" ¦ "foot2r" ¦ "foot1l" ¦ "foot2l" ¦ "ram" | 미확인(자동) |  |  |  |
 | `/volume/bone` | block | [str]x12 | 1 | 12 | "head" ¦ "ik_updown" ¦ "hand1l" ¦ "hand2l" ¦ "hand1r" ¦ "hand2r" ¦ "foot1r" ¦ "foot2r" ¦ "foot1l" ¦ "foot2l" ¦ "ram" | 미확인(자동) |  |  |  |
@@ -597,7 +597,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/bone/decalview/sprite/preturn` | block | [num]x2 | 1 | 2 | 90 | 추정 | 미리 돌려 놓는 각도, 도 (추정: 값 90) | 파일 구조와 값에서 추론 |  |
 | `/human/bone/decalview/usedirection` | block | []x3 | 1 | 3 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/human/bone/decalview/visible` | block | [num]x4 | 1 | 4 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/human/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
+| `/human/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
 | `/human/brain` | block | [str]x1 | 1 | 1 | "human" | 추정 | AI 종류. 값 "vehicle" (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/human/brain/const` | block | [str num]x5 | 1 | 5 | "bomb/detect_explosives" 7 ¦ "bomb/detect_grenades" 5 ¦ "bomb/danger_zone" 7 ¦ "fight/distance" 2 ¦ "weapon/change_time" 5 | 미확인(자동) |  |  | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds |
 | `/human/brain/properties` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -705,15 +705,15 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/targetselector` | block | [str]x1 | 1 | 1 | "human" | 추정 | 표적 선택 규칙 이름 (추정: 값 "airborne_bullet". set/target 참조로 보임) | 파일 구조와 값에서 추론 |  |
 | `/human/volume` | block | [str]x17 | 1 | 17 | 예: "body" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/human/volume/able` | block | []x10 | 1 | 10 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/human/volume/able/bullet` | block | [num]x1 | 1 | 1 | 0 | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | required for AT-Grenades with cumaltive damage |
+| `/human/volume/able/bullet` | block | [num]x1 | 1 | 1 | 0 | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | required for AT-Grenades with cumaltive damage |
 | `/human/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/human/volume/able/contact_ground` | block | [num]x1 | 1 | 1 | 0 | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/human/volume/able/nolook` | block | [num]x9 | 1 | 9 | 1 | 미확인 | able의 하위. 값 1 |  |  |
-| `/human/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/able/overlap` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/human/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/density` | block | [num]x1 | 1 | 1 | 0.007 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
-| `/human/volume/tags` | block | [str]x9 [str str]x7 | 1 | 16 | "no_target" "fire" ¦ "no_target" ¦ "fire" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/human/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/human/volume/able/overlap` | block | [num]x1 | 1 | 1 | 1 | 문서 | 다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/human/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/human/volume/density` | block | [num]x1 | 1 | 1 | 0.007 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/human/volume/tags` | block | [str]x9 [str str]x7 | 1 | 16 | "no_target" "fire" ¦ "no_target" ¦ "fire" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/human/volume/thickness` | block | [num]x11 | 1 | 11 | 2 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/human/weaponry` | block | []x1 | 1 | 1 | 예: | 추정 | 차량 무장 정의 묶음 (추정: 하위 place) | 파일 구조와 값에서 추론 |  |
 | `/human/weaponry/manualaccuracy` | block | [num]x1 | 1 | 1 | 1 | 추정 | 직접 조종 시 정확도 배율 (추정: 이름. 값 1) | 파일 구조와 값에서 추론 |  |

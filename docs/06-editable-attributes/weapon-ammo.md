@@ -6,14 +6,14 @@
 
 | 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |
 |---|---|---|---|---|---|---|---|---|
-| 본체 | 무기와 장구 정의 (확장자 없음) | `set/stuff/<폴더>/<이름>` | 157 | 41 | 6 | 59 | 25 | 26 |
-| 본체 | 무기 정의 (.weapon) | `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon` | 58 | 16 | 2 | 21 | 9 | 10 |
-| 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 10 | 1 | 30 | 23 | 15 |
+| 본체 | 무기와 장구 정의 (확장자 없음) | `set/stuff/<폴더>/<이름>` | 157 | 41 | 7 | 59 | 25 | 25 |
+| 본체 | 무기 정의 (.weapon) | `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon` | 58 | 16 | 4 | 20 | 9 | 9 |
+| 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 10 | 3 | 30 | 23 | 13 |
 | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 3 | 0 | 13 | 0 | 4 |
 | 본체 | 지뢰와 폭발물 (.mine) | `set/stuff/explosive/*.mine` | 8 | 2 | 0 | 6 | 0 | 0 |
 | 본체 | 투척 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
-| 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 53 | 6 | 60 | 8 | 28 |
-| 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 13 | 333 | 48 | 109 |
+| 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 53 | 9 | 61 | 8 | 24 |
+| 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 21 | 335 | 48 | 99 |
 | 연관 | 무기 상태 설정 (.fsm) | `set/stuff/_settings/*.fsm` | 5 | 0 | 0 | 5 | 0 | 0 |
 | 연관 | 폭발 계산 매크로 | `set/blast.inc` | 71 | 0 | 0 | 53 | 0 | 18 |
 
@@ -22,7 +22,7 @@
 - 위치: `set/stuff/<폴더>/<이름>`
 - 연결: 유닛의 `inventory/item`, `armors/*`, `weaponry/place/weapon`이 이 파일의 이름을 가리킨다. `gun`, `mgun`, `rifle`, `smg`, `pistol`, `head` 등의 폴더
 
-### 뜻을 아는 속성 (131개)
+### 뜻을 아는 속성 (132개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -68,7 +68,7 @@
 | `/from/inventory/size` | 7 2 ¦ 4 6 ¦ 3 1 ¦ 6 2 ¦ 3 3 ¦ 4 2 ¦ 5 2 ¦ 7 3 ¦ 2 2 ¦ 4 5 ¦ 6 3 ¦ 2 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 49 | `set/stuff/explosive/compositionb_x4` |
 | `/from/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/melee/shovel_eng` |
 | `/from/mass` | 0.765 ~ 224 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | with water ¦ empty weight | 187 | `set/stuff/explosive/compositionb_x4` |
-| `/from/maxrange` | 40 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/thrower_v` |
+| `/from/maxrange` | 40 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/thrower_v` |
 | `/from/minrange` | 5 ~ 150 | **추정** 최소 사거리 (추정: 이름) |  | 2 | `set/stuff/gun/600mm_karl` |
 | `/from/parameters` | 예: "aphebc" (13종 이상) | **추정** 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | SPgGr. ¦ Sprgr. | 97 | `set/stuff/gun/100mm_d10c` |
 | `/from/parameters/("armor health")` | damage ( 150 ) ¦ damage ( 5 ) ¦ damage ( 15 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `damage` → `minimumdamagemodifier` = `( * 1.0 %damage )`, `parameters/minimumdamagemodifier` = `( * 1.00 %damage )`, `parameters/minimumdamagemodifier` = `( * 1.25 %damage )` |  | 10 | `set/stuff/mgun/dshk` |
@@ -112,6 +112,7 @@
 | `/from/tag` | 예: "gun" (13종 이상) | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 1219 | `set/stuff/flame/14mm_flammenwerfer_251_16_l` |
 | `/from/tracefreq` | 0 ~ 5 | **추정** 예광탄 빈도 (추정: 이름과 값 3~5) |  | 10 | `set/stuff/gun/13mm_mg131` |
 | `/from/unlimitedrangetpc` | 0 | **확인** 3인칭·1인칭 조종에서 사거리 제한 여부 | restrict range in TPC/FPC | 9 | `set/stuff/gun/125mm_ampulomet` |
+| `/from/zeroingaccuracy` | 0.9 0.8 0.7 0.65 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/gun/20mm_lahti_l39` |
 | `/item/damage` | blastwave ¦ add blastwave | **추정** 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration | 1 | `set/stuff/explosive/compositionb_x4_mission` |
 | `/item/damage/area` | 3 8 ¦ 8 12 | **추정** 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) |  | 1 | `set/stuff/explosive/compositionb_x4_mission` |
 | `/item/damage/energy` | 1.7 ~ 15 | **추정** 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | = 25mm of penetration ¦ = 140mm of penetration | 1 | `set/stuff/explosive/compositionb_x4_mission` |
@@ -158,7 +159,7 @@
 | `/weapon_bullet/states/can_aim` | "can-aim" | **추정** 조준 가능 판정 상태 이름 |  | 1 | `set/stuff/special/binocular` |
 | `/weapon_bullet/tag` | "weapon smallitemin1hand field_glass visor distributable" ¦ "visor" | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 2 | `set/stuff/special/binocular` |
 
-### 뜻을 모르는 속성 (26개)
+### 뜻을 모르는 속성 (25개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -176,7 +177,6 @@
 | `/from/special/damage` | 5 | 미확인. 값 5. 특수 사격(special) 설정의 하위 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration | 1 | `set/stuff/rifle/sniper/mosin_m27_ironsights` |
 | `/from/special/mode` | aim | 미확인. 값 detonate |  | 1 | `set/stuff/rifle/sniper/mosin_m27_ironsights` |
 | `/from/special/preparecursorscene` | "aimed_shot_scene" | 미확인 |  | 1 | `set/stuff/rifle/sniper/mosin_m27_ironsights` |
-| `/from/zeroingaccuracy` | 0.9 0.8 0.7 0.65 | 미확인. 수 3~5개 |  | 1 | `set/stuff/gun/20mm_lahti_l39` |
 | `/item/desc` | "desc/stuff/diesel" ¦ "desc/stuff/petrol" ¦ "Stuff not found" | 미확인 |  | 3 | `set/stuff/content/diesel` |
 | `/item/inventory/block` | 5 | 미확인 |  | 3 | `set/stuff/special/gold_bar` |
 | `/weapon_bombing/burst/min` | 2 | 미확인 |  | 1 | `set/stuff/bombing/bomb_dropper_eng_100x2` |
@@ -194,7 +194,7 @@
 - 위치: `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon`
 - 연결: 위와 같다. 로켓, 박격포, 대전차 화기, 폭발물
 
-### 뜻을 아는 속성 (48개)
+### 뜻을 아는 속성 (49개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -217,7 +217,7 @@
 | `/from/gravity` | 2 ~ 6 | **추정** 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | same as other direct-fire "cannon" type weapons | 15 | `set/stuff/bazooka/recoilless_m18.weapon` |
 | `/from/inventory/size` | 7 1 ¦ 7 2 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 5 | `set/stuff/bazooka/faustpatrone_30.weapon` |
 | `/from/mass` | 6 ~ 20.1 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | with water ¦ empty weight | 12 | `set/stuff/bazooka/bazooka_m1.weapon` |
-| `/from/maxrange` | 140 ~ 325 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 16 | `set/stuff/mortar/300mm_krh42.weapon` |
+| `/from/maxrange` | 140 ~ 325 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 16 | `set/stuff/mortar/300mm_krh42.weapon` |
 | `/from/minrange` | 30 ~ 50 | **추정** 최소 사거리 (추정: 이름) |  | 16 | `set/stuff/mortar/300mm_krh42.weapon` |
 | `/from/parameters` | "he" ¦ "heat" ¦ "sm" ¦ "heata" ¦ "wp" ¦ "heatb" ¦ "he2 heavy" ¦ "aphe" | **추정** 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | SPgGr. ¦ Sprgr. | 10 | `set/stuff/bazooka/bazooka_m1.weapon` |
 | `/from/parameters/("armor health")` | damage ( 300 ) ¦ damage ( 250 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `damage` → `minimumdamagemodifier` = `( * 1.0 %damage )`, `parameters/minimumdamagemodifier` = `( * 1.00 %damage )`, `parameters/minimumdamagemodifier` = `( * 1.25 %damage )` |  | 3 | `set/stuff/bazooka/bazooka_m1.weapon` |
@@ -225,7 +225,7 @@
 | `/from/parameters/("reload time")` | seconds ( 8.0 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/200mm_ldgw40.weapon` |
 | `/from/parameters/aimrange` | 140 | **확인** AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. | 1 | `set/stuff/mortar/81mm_m1.weapon` |
 | `/from/parameters/cursorreloading` | "gun_heat" ¦ "gun_wp" ¦ "gun_he" | **확인** 직접 조종에서 장전 중일 때의 마우스 커서 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control | 5 | `set/stuff/bazooka/bazooka_m1.weapon` |
-| `/from/parameters/maxrange` | 140 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/81mm_m1.weapon` |
+| `/from/parameters/maxrange` | 140 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/81mm_m1.weapon` |
 | `/from/parameters/minimumdamagemodifier` | 750 | **문서** 최소 피해. 계산식은 출처에 설명되어 있지 않다 | In case only generic value is called ¦ Filler defined in grams of TNT | 1 | `set/stuff/reactive/127mm_hvar_4.weapon` |
 | `/from/parameters/projectiledamagetable/#row` | 0 30 ¦ 95 80 ¦ 100 0 ¦ 0 50 ¦ 0 76 ¦ 300 76 | **추정** 거리와 관통력 한 쌍 (추정: 값) |  | 5 | `set/stuff/bazooka/recoilless_m18.weapon` |
 | `/from/projectiledamagetable/#row` | 36 0 ¦ 31 140 ¦ 51 200 ¦ 56 0 ¦ 31 200 ¦ 41 200 ¦ 46 0 | **추정** 거리와 관통력 한 쌍 (추정: 값) |  | 4 | `set/stuff/bazooka/faustpatrone_30.weapon` |
@@ -238,6 +238,7 @@
 | `/from/spreading/spreadxyratio` | 1.8 ~ 5 | **확인** 산포의 가로세로 비. 탄이 좌우보다 앞뒤로 더 퍼지게 한다 | Shots land more longitudinally than transversely. | 5 | `set/stuff/reactive/127mm_hvar_4.weapon` |
 | `/from/tag` | "gun" ¦ "nokeep rocketlauncher_fx" ¦ "rocketlauncher_fx" ¦ "-gun" ¦ "build_in" "gun" | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 22 | `set/stuff/bazooka/bazooka_m1.weapon` |
 | `/from/unlimitedrangetpc` | 0 | **확인** 3인칭·1인칭 조종에서 사거리 제한 여부 | restrict range in TPC/FPC | 1 | `set/stuff/reactive/76mm_rp3_x2.weapon` |
+| `/from/zeroingaccuracy` | 1 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 3 | `set/stuff/reactive/380mm_rw61.weapon` |
 | `/weapon_bullet/aimingtolerance` | 10 | **확인** AI가 사격을 허용받는 조준 오차, 도 | Measure in degrees of IK error when AI is allowed to shoot ¦ degrees | 1 | `set/stuff/explosive/goliath.weapon` |
 | `/weapon_bullet/cursor` | "ironsights/tank" | **확인** 직접 조종에서 조준할 때의 마우스 커서 | rts cursor ¦ mouse cursor for weapon when aiming in direct control | 1 | `set/stuff/explosive/goliath.weapon` |
 | `/weapon_bullet/filling` | "ammo goliath" 1 | **추정** 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 2x 200 rounds ¦ Uses stick magazine on the model. | 1 | `set/stuff/explosive/goliath.weapon` |
@@ -247,7 +248,7 @@
 | `/weapon_bullet/speed` | 500 | **추정** 탄속 (추정: 위와 같은 키) | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. | 1 | `set/stuff/explosive/goliath.weapon` |
 | `/weapon_bullet/tag` | "gun" | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 1 | `set/stuff/explosive/goliath.weapon` |
 
-### 뜻을 모르는 속성 (10개)
+### 뜻을 모르는 속성 (9개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -259,7 +260,6 @@
 | `/from/relaxationtime` | 2.5 | 미확인. 값 0.25~2 |  | 1 | `set/stuff/reactive/380mm_rw61.weapon` |
 | `/from/spreading/radiusfunction` | 1 0.1 300 1 400 2 ¦ 0 0.02 0.2 0.1 0.5 0.4 0.75 0.7 0.9995 1 1.00 50 | 미확인 |  | 3 | `set/stuff/reactive/127mm_hvar_4.weapon` |
 | `/from/spreading/spreadyadjust` | 0.1 | 미확인 |  | 2 | `set/stuff/reactive/127mm_hvar_4.weapon` |
-| `/from/zeroingaccuracy` | 1 | 미확인. 수 3~5개 |  | 3 | `set/stuff/reactive/380mm_rw61.weapon` |
 | `/weapon_bullet/clicksound` | "" | 미확인 |  | 1 | `set/stuff/explosive/goliath.weapon` |
 
 ## 본체: 탄약 (.ammo)
@@ -267,7 +267,7 @@
 - 위치: `set/stuff/**/*.ammo`
 - 연결: 무기의 `filling`과 차량의 `extender "inventory"/box/item`이 탄약 태그로 가리킨다
 
-### 뜻을 아는 속성 (64개)
+### 뜻을 아는 속성 (66개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -281,6 +281,7 @@
 | `/bullet/damage/ground_interaction_radius` | 0 ~ 0.2 | **확인** area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx | 13 | `set/stuff/rifle/grenade/dyakonov.ammo` |
 | `/bullet/damage/radius` | 1.05 | **추정** 피해가 미치는 반경, 미터 (추정: 이름. 값 1.05) |  | 1 | `set/stuff/rifle/grenade/usa_grenade.wp.ammo` |
 | `/bullet/damage/time` | 0.5 | **추정** 피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds") |  | 1 | `set/stuff/rifle/grenade/usa_grenade.wp.ammo` |
+| `/bullet/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 6 | `set/stuff/rifle/grenade/dyakonov.ammo` |
 | `/bullet/entity` | 예: "sturmtiger_ammo" (13종 이상) | **추정** 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | place holder | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
 | `/bullet/inventory/fsm` | "belt" | **문서** 상태 기계 정의. 문자열은 이름 |  | 99 | `set/stuff/flame/flame_thrower.ammo` |
 | `/bullet/inventory/size` | 1 1 ¦ 1 2 ¦ 2 1 ¦ 3 2 ¦ 2 2 ¦ 3 1 ¦ 3 3 ¦ 6 2 ¦ 8 4 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
@@ -325,6 +326,7 @@
 | `/from/damage/ground_interaction_radius` | 0 ~ 0.25 | **확인** area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx | 13 | `set/stuff/bazooka/bazooka.wp.ammo` |
 | `/from/damage/radius` | 0.5 ~ 3.5 | **추정** 피해가 미치는 반경, 미터 (추정: 이름. 값 1.05) |  | 7 | `set/stuff/bazooka/bazooka.wp.ammo` |
 | `/from/damage/time` | 0.5 ~ 1 | **추정** 피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds") |  | 7 | `set/stuff/bazooka/bazooka.wp.ammo` |
+| `/from/detonationthickness` | 1 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 1 | `set/stuff/shell/bulletrus_125.ic.ammo` |
 | `/from/entity` | 예: "bazooka_heat_ammo" (13종 이상) | **추정** 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | place holder | 397 | `set/stuff/bazooka/bazooka.heat.ammo` |
 | `/from/inventory/size` | 예: 4 1 (13종 이상) | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 334 | `set/stuff/mortar/mortareng_107.he.ammo` |
 | `/from/inventory/weight` | 10 ~ 200 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 69 | `set/stuff/reactive/114mm_m8.ammo` |
@@ -336,21 +338,19 @@
 | `/from/view` | 예: "bazooka_heat_ammo" (13종 이상) | **추정** 보이는 모델 엔티티 이름 (추정: 값이 entity와 같은 이름인 경우가 많음) |  | 343 | `set/stuff/bazooka/bazooka.heat.ammo` |
 | `/from/view/tail` | 예: "bazooka_tail" "tail" (13종 이상) | **추정** 탄의 꼬리 이펙트. 이펙트 이름과 붙이는 뼈대 (추정: 값 "shell_tail" "tail") |  | 331 | `set/stuff/bazooka/bazooka.heat.ammo` |
 
-### 뜻을 모르는 속성 (15개)
+### 뜻을 모르는 속성 (13개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
 | `/bullet/##trace/view/light` | 3 | 미확인. 값 1 |  | 1 | `set/stuff/rifle/shotgun.ammo` |
 | `/bullet/##trace/view/scaley` | 0.2 | 미확인 |  | 1 | `set/stuff/rifle/shotgun.ammo` |
 | `/bullet/damage/heating` | 10 | 미확인 |  | 1 | `set/stuff/rifle/grenade/usa_grenade.wp.ammo` |
-| `/bullet/detonationthickness` | 0.5 | 미확인. 값 0.5 |  | 6 | `set/stuff/rifle/grenade/dyakonov.ammo` |
 | `/bullet/inventory/block` | 5 ~ 300 | 미확인 |  | 103 | `set/stuff/flame/flame_thrower.ammo` |
 | `/bullet/trace/view/light` | 1 | 미확인. 값 1 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/bullet/trace/view/scalex` | 1.5 ~ 2 | 미확인 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/bullet/trace/view/scaley` | 0.1 ~ 0.2 | 미확인 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/from/("heat_blast")` | args 1.5 ¦ args 0.27 ¦ args 0.4 | 미확인 |  | 3 | `set/stuff/shell/bulletger_150_l30.heat.ammo` |
 | `/from/damage/heating` | 0.5 ~ 20 | 미확인 |  | 7 | `set/stuff/bazooka/bazooka.wp.ammo` |
-| `/from/detonationthickness` | 1 | 미확인. 값 0.5 |  | 1 | `set/stuff/shell/bulletrus_125.ic.ammo` |
 | `/from/inventory/block` | 5 ~ 10 | 미확인 |  | 42 | `set/stuff/shell/bullet_20_auto.aphe.ammo` |
 | `/from/trace/view/light` | 1 | 미확인. 값 1 |  | 3 | `set/stuff/shell/bulleteng_15_auto.ap.ammo` |
 | `/from/trace/view/scalex` | 1.75 | 미확인 |  | 3 | `set/stuff/shell/bulleteng_15_auto.ap.ammo` |
@@ -444,7 +444,7 @@
 - 위치: `set/stuff/**/*.pattern`
 - 연결: 무기와 탄약의 `{from "pattern 이름"}`. 같은 원형을 쓰는 모든 아이템이 값을 물려받는다
 
-### 뜻을 아는 속성 (127개)
+### 뜻을 아는 속성 (131개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -453,6 +453,7 @@
 | `/bullet/damage/area` | 2 3.5 | **추정** 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) |  | 3 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/damage/energy` | 2.5 ~ 3 | **추정** 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | = 25mm of penetration ¦ = 140mm of penetration | 3 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/damage/ground_interaction_radius` | 0.1 | **확인** area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx | 3 | `set/stuff/bazooka/rpg_ammo.pattern` |
+| `/bullet/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 2 | `set/stuff/bazooka/rpg_he_ammo.pattern` |
 | `/bullet/inventory/fsm` | "belt" ¦ "stuff" | **문서** 상태 기계 정의. 문자열은 이름 |  | 7 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/inventory/size` | 3 1 ¦ 5 1 ¦ 4 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 6 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/inventory/weight` | 100 ~ 1000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/bazooka/rpg_ammo.pattern` |
@@ -475,6 +476,7 @@
 | `/from/damage/area` | 3 8 ¦ 8 12 ¦ 3 6 ¦ 3 5 | **추정** 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) |  | 3 | `set/stuff/explosive/explosive.pattern` |
 | `/from/damage/energy` | 1.1 ~ 15 | **추정** 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | = 25mm of penetration ¦ = 140mm of penetration | 3 | `set/stuff/explosive/explosive.pattern` |
 | `/from/damage/ground_interaction_radius` | 0 ~ 0.15 | **확인** area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx | 3 | `set/stuff/explosive/explosive.pattern` |
+| `/from/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 4 | `set/stuff/shell/he.pattern` |
 | `/from/firingtimeout` | 3.5 0.5 ¦ 2.0 0.5 ¦ 1.5 0.5 ¦ 1.75 0.5 ¦ 1.0 0.5 ¦ 2.5 0.5 | **확인** 연사 사이의 지연 | 3.5 0.5 ¦ delay between bursts | 8 | `set/stuff/mgun/hmgun.pattern` |
 | `/from/foresight` | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | **확인** 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet | 7 | `set/stuff/mgun/hmgun.pattern` |
 | `/from/gravity` | 2 | **추정** 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | same as other direct-fire "cannon" type weapons | 1 | `set/stuff/rifle/grenade/rifle_grenade.pattern` |
@@ -508,6 +510,7 @@
 | `/from/throw/startangle` | 10 ~ 80 | **추정** 던지는 각도 (추정: 이름과 값 10~80) |  | 6 | `set/stuff/explosive/explosive.pattern` |
 | `/from/tracefreq` | 3 ~ 5 | **추정** 예광탄 빈도 (추정: 이름과 값 3~5) |  | 3 | `set/stuff/mgun/hmgun.pattern` |
 | `/from/unlimitedrangetpc` | 0 | **확인** 3인칭·1인칭 조종에서 사거리 제한 여부 | restrict range in TPC/FPC | 1 | `set/stuff/rifle/grenade/rifle_grenade.pattern` |
+| `/from/zeroingaccuracy` | 0.8 0.7 0.6 ¦ 0.9 0.8 0.75 ¦ 0.9 0.8 0.7 0.6 0.5 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 3 | `set/stuff/rifle/grenade/rifle_grenade.pattern` |
 | `/item/damage` | add blastwave ¦ blastwave | **추정** 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration | 1 | `set/stuff/explosive/antitank.pattern` |
 | `/item/damage/area` | 0.5 0.75 ¦ 2 3 ¦ 6 8 | **추정** 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) |  | 1 | `set/stuff/explosive/antitank.pattern` |
 | `/item/damage/energy` | 1 ~ 9 | **추정** 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | = 25mm of penetration ¦ = 140mm of penetration | 1 | `set/stuff/explosive/antitank.pattern` |
@@ -548,7 +551,7 @@
 | `/weapon_bullet/inventory/weight` | 100 ~ 1000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 3 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/lockfiredistancetime` | 0 | **확인** 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | Time that AIM is allowed to be out of range for before firing is disabled | 1 | `set/stuff/gun/gun.pattern` |
 | `/weapon_bullet/mass` | 1000 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | with water ¦ empty weight | 1 | `set/stuff/gun/gun.pattern` |
-| `/weapon_bullet/maxrange` | 25 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/gun/gun.pattern` |
+| `/weapon_bullet/maxrange` | 25 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/gun/gun.pattern` |
 | `/weapon_bullet/minimumdamagemodifier` | 3 | **문서** 최소 피해. 계산식은 출처에 설명되어 있지 않다 | In case only generic value is called ¦ Filler defined in grams of TNT | 1 | `set/stuff/bullet.pattern` |
 | `/weapon_bullet/minrange` | 3 | **추정** 최소 사거리 (추정: 이름) |  | 1 | `set/stuff/flame/flame_thrower.pattern` |
 | `/weapon_bullet/parameters` | 예: "ap" (13종 이상) | **추정** 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | SPgGr. ¦ Sprgr. | 2 | `set/stuff/gun/gun.pattern` |
@@ -575,13 +578,12 @@
 | `/weapon_bullet/syncedprojectiles` | 1 | **확인** 멀티플레이에서 탄흔·탄공 생성을 시각적으로 동기화한다. 자동화기에는 쓰지 않는다 | not for automatic weapons ¦ visually syncs decal/crater spawn in multiplayer | 4 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/tag` | "rocketlauncher to_hand ap cannot_lie" ¦ "weapon special_weapon_view flame_thrower fx_thrower bullet to_hand shoot_walking shoot_walking_ai shoot_walking_manual" ¦ "weapon build_in gun bullet tank_gun" ¦ "mrl gun build_in" ¦ "mrl" | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 5 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/unlimitedrangetpc` | 0 ~ 1 | **확인** 3인칭·1인칭 조종에서 사거리 제한 여부 | restrict range in TPC/FPC | 3 | `set/stuff/bullet.pattern` |
+| `/weapon_bullet/zeroingaccuracy` | 0.7 0.6 0.5 0.4 ¦ 0.85 0.75 0.7 0.65 0.6 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 2 | `set/stuff/bazooka/rpg_weapon.pattern` |
 
-### 뜻을 모르는 속성 (28개)
+### 뜻을 모르는 속성 (24개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
-| `/bullet/detonationthickness` | 0.5 | 미확인. 값 0.5 |  | 2 | `set/stuff/bazooka/rpg_he_ammo.pattern` |
-| `/from/detonationthickness` | 0.5 | 미확인. 값 0.5 |  | 4 | `set/stuff/shell/he.pattern` |
 | `/from/firingtimeoutdistancefactor/#row` | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인. 두 수 |  | 6 | `set/stuff/mgun/hmgun.pattern` |
 | `/from/overmatchslope/#row` | 0 1 ¦ 90 1 | 미확인 |  | 1 | `set/stuff/rifle/grenade/rifle_grenade.pattern` |
 | `/from/relaxationtime` | 0.25 ~ 2 | 미확인. 값 0.25~2 |  | 5 | `set/stuff/rifle/grenade/rifle_grenade.pattern` |
@@ -593,7 +595,6 @@
 | `/from/thirdpersonparams` | inherit "human default" | 미확인. 값 inherit "human default" |  | 9 | `set/stuff/melee/knife.pattern` |
 | `/from/throw/constantspeed` | 13.5 | 미확인 |  | 1 | `set/stuff/grenade/anti-tank.pattern` |
 | `/from/throw/spreading/radiusfunction` | 0.0 0 0.7 0 1.0 0 1.5 2.0 2.0 5.0 | 미확인 |  | 1 | `set/stuff/melee/knife.pattern` |
-| `/from/zeroingaccuracy` | 0.8 0.7 0.6 ¦ 0.9 0.8 0.75 ¦ 0.9 0.8 0.7 0.6 0.5 | 미확인. 수 3~5개 |  | 3 | `set/stuff/rifle/grenade/rifle_grenade.pattern` |
 | `/weapon_bullet/("velocity m/s")` | ap ( 100 ) apcr ( 100 ) he ( 100 ) heat ( 100 ) | 미확인 |  | 1 | `set/stuff/gun/gun.pattern` |
 | `/weapon_bullet/aimtype` | curved | 미확인 |  | 1 | `set/stuff/mortar/mortar.pattern` |
 | `/weapon_bullet/autoreload` | 1 | 미확인 |  | 1 | `set/stuff/bullet.pattern` |
@@ -607,14 +608,13 @@
 | `/weapon_bullet/spreading/radiusfunction` | 0.0 0 0.85 0.9 1.0 1.3 1.2 6 2 30 | 미확인 |  | 1 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/spreading/spreadyadjust` | 0 | 미확인 |  | 1 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/toplayervignette` | "" | 미확인 |  | 1 | `set/stuff/gun/gun.pattern` |
-| `/weapon_bullet/zeroingaccuracy` | 0.7 0.6 0.5 0.4 ¦ 0.85 0.75 0.7 0.65 0.6 | 미확인. 수 3~5개 |  | 2 | `set/stuff/bazooka/rpg_weapon.pattern` |
 
 ## 연관: 폴더의 매크로 모음 (.presets)
 
 - 위치: `set/stuff/<폴더>/.presets`
 - 연결: 그 폴더와 하위 폴더의 파일이 include 없이 쓰는 매크로 정의. `("fire rate" rpm(240))` 같은 호출의 본문이 여기에 있다
 
-### 뜻을 아는 속성 (424개)
+### 뜻을 아는 속성 (434개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -772,6 +772,7 @@
 | `/(define "direct_settings")/parameters/spreading/spreadxyratio` | 1 ~ 1.5 | **추정** 산포의 가로세로 비. 탄이 좌우보다 앞뒤로 더 퍼지게 한다 (같은 자리의 본체 설명을 가져옴) | Shots land more longitudinally than transversely. | 1 | `set/stuff/gun/.presets` |
 | `/(define "direct_settings")/spreading/spreadxyratio` | 0.4 | **추정** 산포의 가로세로 비. 탄이 좌우보다 앞뒤로 더 퍼지게 한다 (같은 자리의 본체 설명을 가져옴) | Shots land more longitudinally than transversely. | 1 | `set/stuff/gun/.presets` |
 | `/(define "direct_settings")/spreadtolerance` | 0.6 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
+| `/(define "direct_settings")/zeroingaccuracy` | 0.8 0.65 0.55 0.5 0.45 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "enfield_no1_rate")/("fire rate")` | rpm ( 50 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `rpm` → `recoverytime` = `( / 60 %rpm )`, `recoverytime` = `( / 60 ( * %rpm 1.07 ) )` |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "enfield_no1_rate")/("reload time")` | seconds ( 10 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "enfield_no1_rate")/firingtimeout` | 3.1 0.5 | **추정** 연사 사이의 지연 (같은 자리의 본체 설명을 가져옴) | 3.5 0.5 ¦ delay between bursts | 1 | `set/stuff/rifle/.presets` |
@@ -809,6 +810,9 @@
 | `/(define "he_auto_blast")/damage/area` | 0.3 0.6 ¦ ( * 0.3 ( * %0 5 ) ) ( * 1.5 ( * %0 5 ) ) | **추정** 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/shell/.presets` |
 | `/(define "he_auto_blast")/damage/energy` | ( * %0 0.9 ) ¦ ( * %0 0.65 ) | **추정** 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (같은 자리의 본체 설명을 가져옴) | = 25mm of penetration ¦ = 140mm of penetration | 1 | `set/stuff/shell/.presets` |
 | `/(define "he_auto_blast")/damage/ground_interaction_radius` | 0 ~ 0.2 | **추정** area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 (같은 자리의 본체 설명을 가져옴) | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx | 1 | `set/stuff/shell/.presets` |
+| `/(define "he_heavy")/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 1 | `set/stuff/mortar/.presets` |
+| `/(define "he_light")/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 1 | `set/stuff/mortar/.presets` |
+| `/(define "he_medium")/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "heat_blast")/damage` | blastwave ¦ add blastwave | **추정** 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration | 1 | `set/stuff/shell/.presets` |
 | `/(define "heat_blast")/damage/area` | 2 3 ¦ 1 6 | **추정** 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/shell/.presets` |
 | `/(define "heat_blast")/damage/energy` | 1 ~ 3 | **추정** 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (같은 자리의 본체 설명을 가져옴) | = 25mm of penetration ¦ = 140mm of penetration | 1 | `set/stuff/shell/.presets` |
@@ -831,9 +835,10 @@
 | `/(define "heavy_artillery")/spreadtolerance` | 0.85 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
 | `/(define "heavy_artillery")/tracefreq` | 0 | **추정** 예광탄 빈도 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "heavy_artillery")/unlimitedrangetpc` | 0 | **추정** 3인칭·1인칭 조종에서 사거리 제한 여부 (같은 자리의 본체 설명을 가져옴) | restrict range in TPC/FPC | 1 | `set/stuff/gun/.presets` |
+| `/(define "heavy_artillery")/zeroingaccuracy` | 0.80 0.65 0.55 0.45 0.40 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "heavy_mortar_range")/("reload time")` | seconds ( 10 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "heavy_mortar_range")/aimrange` | 230 | **확인** AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. | 1 | `set/stuff/mortar/.presets` |
-| `/(define "heavy_mortar_range")/maxrange` | 230 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
+| `/(define "heavy_mortar_range")/maxrange` | 230 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
 | `/(define "heavy_mortar_range")/minrange` | 50 | **추정** 최소 사거리 (추정: 이름) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "heavy_mortar_range")/parameters` | "he" ¦ "he2" ¦ "sm" ¦ "wp" | **추정** 탄종별 설정. 문자열이 탄종 이름 (같은 자리의 본체 설명을 가져옴) | SPgGr. ¦ Sprgr. | 1 | `set/stuff/mortar/.presets` |
 | `/(define "heavy_mortar_range")/parameters/("reload time")` | seconds ( 3.5 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
@@ -847,17 +852,19 @@
 | `/(define "indirect_settings")/parameters/spreading/spreadxyratio` | 3 | **추정** 산포의 가로세로 비. 탄이 좌우보다 앞뒤로 더 퍼지게 한다 (같은 자리의 본체 설명을 가져옴) | Shots land more longitudinally than transversely. | 1 | `set/stuff/gun/.presets` |
 | `/(define "indirect_settings")/spreading/spreadxyratio` | 1 | **추정** 산포의 가로세로 비. 탄이 좌우보다 앞뒤로 더 퍼지게 한다 (같은 자리의 본체 설명을 가져옴) | Shots land more longitudinally than transversely. | 1 | `set/stuff/gun/.presets` |
 | `/(define "indirect_settings")/spreadtolerance` | 0.75 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
+| `/(define "indirect_settings")/zeroingaccuracy` | 0.8 0.65 0.55 0.5 0.45 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "k98_rate")/("fire rate")` | rpm ( 50 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `rpm` → `recoverytime` = `( / 60 %rpm )`, `recoverytime` = `( / 60 ( * %rpm 1.07 ) )` |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "k98_rate")/firingtimeout` | 3.5 0.5 | **추정** 연사 사이의 지연 (같은 자리의 본체 설명을 가져옴) | 3.5 0.5 ¦ delay between bursts | 1 | `set/stuff/rifle/.presets` |
 | `/(define "light_aa")/aimingtolerance` | 12 | **확인** AI가 사격을 허용받는 조준 오차, 도 | Measure in degrees of IK error when AI is allowed to shoot ¦ degrees | 1 | `set/stuff/gun/.presets` |
 | `/(define "light_aa")/spreadtolerance` | 0.1 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
 | `/(define "light_mortar_range")/("reload time")` | seconds ( 2.7 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "light_mortar_range")/aimrange` | 140 | **확인** AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. | 1 | `set/stuff/mortar/.presets` |
-| `/(define "light_mortar_range")/maxrange` | 140 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
+| `/(define "light_mortar_range")/maxrange` | 140 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
 | `/(define "light_mortar_range")/minrange` | 30 | **추정** 최소 사거리 (추정: 이름) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "light_mortar_range")/parameters` | "he" ¦ "he2" | **추정** 탄종별 설정. 문자열이 탄종 이름 (같은 자리의 본체 설명을 가져옴) | SPgGr. ¦ Sprgr. | 1 | `set/stuff/mortar/.presets` |
 | `/(define "light_mortar_range")/parameters/projectiledamagetable/#row` | 0 10 | **추정** 거리와 관통력 한 쌍 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "light_mortar_range")/spreading/radiustable/#row` | 0 5 ¦ 120 18 ¦ 139.99 25 ¦ 140 100 | **추정** 거리와 산포 반경 한 쌍 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/mortar/.presets` |
+| `/(define "marksman")/zeroingaccuracy` | 0.9 0.85 0.8 0.75 0.7 0.65 0.6 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "medium_aa")/aimingtolerance` | 12 | **확인** AI가 사격을 허용받는 조준 오차, 도 | Measure in degrees of IK error when AI is allowed to shoot ¦ degrees | 1 | `set/stuff/gun/.presets` |
 | `/(define "medium_aa")/spreadtolerance` | 0.1 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
 | `/(define "medium_artillery")/parameters` | "he" ¦ "he2" | **추정** 탄종별 설정. 문자열이 탄종 이름 (같은 자리의 본체 설명을 가져옴) | SPgGr. ¦ Sprgr. | 1 | `set/stuff/gun/.presets` |
@@ -868,9 +875,10 @@
 | `/(define "medium_artillery")/spreadtolerance` | 0.85 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
 | `/(define "medium_artillery")/tracefreq` | 0 | **추정** 예광탄 빈도 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "medium_artillery")/unlimitedrangetpc` | 0 | **추정** 3인칭·1인칭 조종에서 사거리 제한 여부 (같은 자리의 본체 설명을 가져옴) | restrict range in TPC/FPC | 1 | `set/stuff/gun/.presets` |
+| `/(define "medium_artillery")/zeroingaccuracy` | 0.80 0.65 0.55 0.45 0.40 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "medium_heavy_mortar_range")/("reload time")` | seconds ( 7 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_heavy_mortar_range")/aimrange` | 180 | **확인** AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. | 1 | `set/stuff/mortar/.presets` |
-| `/(define "medium_heavy_mortar_range")/maxrange` | 180 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
+| `/(define "medium_heavy_mortar_range")/maxrange` | 180 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_heavy_mortar_range")/minrange` | 45 | **추정** 최소 사거리 (추정: 이름) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_heavy_mortar_range")/parameters` | "he" ¦ "he2" ¦ "sm" ¦ "wp" | **추정** 탄종별 설정. 문자열이 탄종 이름 (같은 자리의 본체 설명을 가져옴) | SPgGr. ¦ Sprgr. | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_heavy_mortar_range")/parameters/("reload time")` | seconds ( 3.4 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
@@ -878,7 +886,7 @@
 | `/(define "medium_heavy_mortar_range")/spreading/radiustable/#row` | 0 5 ¦ 120 25 ¦ 179.99 45 ¦ 180 100 | **추정** 거리와 산포 반경 한 쌍 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_mortar_range")/("reload time")` | seconds ( 5 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_mortar_range")/aimrange` | 160 | **확인** AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. | 1 | `set/stuff/mortar/.presets` |
-| `/(define "medium_mortar_range")/maxrange` | 160 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
+| `/(define "medium_mortar_range")/maxrange` | 160 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_mortar_range")/minrange` | 40 | **추정** 최소 사거리 (추정: 이름) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_mortar_range")/parameters` | "he" ¦ "he2" ¦ "sm" ¦ "wp" | **추정** 탄종별 설정. 문자열이 탄종 이름 (같은 자리의 본체 설명을 가져옴) | SPgGr. ¦ Sprgr. | 1 | `set/stuff/mortar/.presets` |
 | `/(define "medium_mortar_range")/parameters/("reload time")` | seconds ( 3.3 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
@@ -1029,9 +1037,10 @@
 | `/(define "super_heavy_artillery")/spreadtolerance` | 0.85 | **추정** 사격 전에 필요한 조준 수렴 정도 (같은 자리의 본체 설명을 가져옴) | Zeroing up to 85% needed before fire ¦ AI needs to aim 20% | 1 | `set/stuff/gun/.presets` |
 | `/(define "super_heavy_artillery")/tracefreq` | 0 | **추정** 예광탄 빈도 (같은 자리의 본체 설명을 가져옴) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "super_heavy_artillery")/unlimitedrangetpc` | 0 | **추정** 3인칭·1인칭 조종에서 사거리 제한 여부 (같은 자리의 본체 설명을 가져옴) | restrict range in TPC/FPC | 1 | `set/stuff/gun/.presets` |
+| `/(define "super_heavy_artillery")/zeroingaccuracy` | 0.80 0.65 0.55 0.45 0.40 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "super_heavy_mortar_range")/("reload time")` | seconds ( 10 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "super_heavy_mortar_range")/aimrange` | 150 | **확인** AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. | 1 | `set/stuff/mortar/.presets` |
-| `/(define "super_heavy_mortar_range")/maxrange` | 150 | **추정** 최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임) | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
+| `/(define "super_heavy_mortar_range")/maxrange` | 150 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/mortar/.presets` |
 | `/(define "super_heavy_mortar_range")/minrange` | 25 | **추정** 최소 사거리 (추정: 이름) |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "super_heavy_mortar_range")/parameters` | "he" ¦ "he2" ¦ "sm" ¦ "wp" | **추정** 탄종별 설정. 문자열이 탄종 이름 (같은 자리의 본체 설명을 가져옴) | SPgGr. ¦ Sprgr. | 1 | `set/stuff/mortar/.presets` |
 | `/(define "super_heavy_mortar_range")/parameters/("reload time")` | seconds ( 3.5 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `seconds` → `rechargetime` |  | 1 | `set/stuff/mortar/.presets` |
@@ -1041,9 +1050,10 @@
 | `/(define "velocity m/s")/parameters/("global velocity")` | gv ( %ap ) ¦ gv ( %he ) ¦ gv ( %heat ) ¦ gv ( %apcr ) | **정의** 매크로 호출. 인자가 들어가는 자리: `gv` → `speed` = `( * 0.75 %gv )` |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "velocity")/("global velocity")` | gv ( %mps ) | **정의** 매크로 호출. 인자가 들어가는 자리: `gv` → `speed` = `( * 0.75 %gv )` |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "velocity")/speed` | ( * 0.75 %mps ) ¦ ( * 0.35 %mps ) | **추정** 탄속. "velocity" 매크로가 0.35 x m/s로 계산해 넣는다 (같은 자리의 본체 설명을 가져옴) | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. | 2 | `set/stuff/bazooka/.presets` |
+| `/(define "zeroing_boost")/zeroingaccuracy` | 0.95 0.9 0.85 0.825 0.8 0.775 0.75 0.725 0.7 ¦ 0.975 0.95 0.925 0.9 0.875 0.85 0.825 0.8 | **추정** 같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열) |  | 2 | `set/stuff/rifle/.presets` |
 | `/curve` | "gun_std" | **추정** 거리별 피해 곡선 이름. set/ballistics.set을 가리킨다 (같은 자리의 본체 설명을 가져옴) | Refers to ballistic.set ¦ profile for weapon damage over distance. Defined in ballistics.set | 1 | `set/stuff/gun/.presets` |
 
-### 뜻을 모르는 속성 (109개)
+### 뜻을 모르는 속성 (99개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -1113,25 +1123,17 @@
 | `/(define "curve_indirect")/parameters/spreading/radiustable/%range_ap` | ( * ( + ( * ( / ( - %range_ap 140 ) ( - 200 140 ) ) ( - %ap200 %ap140 ) ) %ap140 ) ( * %r1 %r01 ) ) | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "curve_indirect")/parameters/spreading/radiustable/%range_he` | ( * %rmax %r0 ) | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "curve_indirect")/parameters/spreading/radiustable/%range_heat` | ( * ( + ( * ( / ( - %range_heat 140 ) ( - 200 140 ) ) ( - %heat200 %heat140 ) ) %heat140 ) ( * %r1 %r01 ) ) | 미확인 |  | 1 | `set/stuff/gun/.presets` |
-| `/(define "direct_settings")/zeroingaccuracy` | 0.8 0.65 0.55 0.5 0.45 | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "enfield_no1_rate")/firingtimeoutdistancefactor/#row` | 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 ¦ 0.8 1.0 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "enfield_no4_rate")/firingtimeoutdistancefactor/#row` | 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 ¦ 0.8 1.0 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "finnish_rate")/firingtimeoutdistancefactor/#row` | 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 ¦ 0.8 1.0 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "flare_pistol")/reloadanimbonus` | 117 | 미확인 |  | 1 | `set/stuff/pistol/.presets` |
 | `/(define "flare_pistol")/spreading/radiusfunction` | 0.0 0 1.0 1.0 1.2 2.5 2.5 5.0 | 미확인 |  | 1 | `set/stuff/pistol/.presets` |
-| `/(define "he_heavy")/detonationthickness` | 0.5 | 미확인 |  | 1 | `set/stuff/mortar/.presets` |
-| `/(define "he_light")/detonationthickness` | 0.5 | 미확인 |  | 1 | `set/stuff/mortar/.presets` |
-| `/(define "he_medium")/detonationthickness` | 0.5 | 미확인 |  | 1 | `set/stuff/mortar/.presets` |
 | `/(define "heat_slope_multiplier")/overmatchslope/#row` | 0 1 ¦ 90 1 | 미확인 |  | 1 | `set/stuff/gun/.presets` |
-| `/(define "heavy_artillery")/zeroingaccuracy` | 0.80 0.65 0.55 0.45 0.40 | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "hvap_76_slope_multiplier")/overmatchcalibre/#row` | 예: 0 1.0 0.00 (13종 이상) | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "hvap_90_slope_multiplier")/overmatchcalibre/#row` | 예: 0 1.0 0.00 (13종 이상) | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "ic")/##damage/heating` | 0.5 | 미확인 |  | 1 | `set/stuff/shell/.presets` |
-| `/(define "indirect_settings")/zeroingaccuracy` | 0.8 0.65 0.55 0.5 0.45 | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "k98_rate")/firingtimeoutdistancefactor/#row` | 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 ¦ 0.8 1.0 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "large_apcr_slope_multiplier")/overmatchfixed/#row` | 예: 0 1.00 (13종 이상) | 미확인 |  | 1 | `set/stuff/gun/.presets` |
-| `/(define "marksman")/zeroingaccuracy` | 0.9 0.85 0.8 0.75 0.7 0.65 0.6 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
-| `/(define "medium_artillery")/zeroingaccuracy` | 0.80 0.65 0.55 0.45 0.40 | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "mosin_rate")/firingtimeoutdistancefactor/#row` | 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 ¦ 0.8 1.0 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "plane_bomb_weapon")/fillingvisible` | "bomb" | 미확인 |  | 1 | `set/stuff/bombing/.presets` |
 | `/(define "pointed_slope")/overmatchslope/#row` | 0 1 ¦ 50 1 ¦ 60 2 ¦ 90 99 | 미확인 |  | 1 | `set/stuff/bazooka/.presets` |
@@ -1153,9 +1155,7 @@
 | `/(define "scopeview")/thirdpersonparams/level/with_weapon/viewon` | "foresight3" | 미확인 |  | 2 | `set/stuff/rifle/.presets` |
 | `/(define "semi_rifle")/firingtimeoutdistancefactor/#row` | 0.2 0.55 ¦ 0.4 0.75 ¦ 0.8 1.0 | 미확인 |  | 1 | `set/stuff/rifle/.presets` |
 | `/(define "standard_slope")/overmatchslope/#row` | 0 1 ¦ 90 1 | 미확인 |  | 1 | `set/stuff/bazooka/.presets` |
-| `/(define "super_heavy_artillery")/zeroingaccuracy` | 0.80 0.65 0.55 0.45 0.40 | 미확인 |  | 1 | `set/stuff/gun/.presets` |
 | `/(define "velocity m/s")/parameters` | 예: "ap" (13종 이상) | 미확인 | SPgGr. ¦ Sprgr. | 1 | `set/stuff/gun/.presets` |
-| `/(define "zeroing_boost")/zeroingaccuracy` | 0.95 0.9 0.85 0.825 0.8 0.775 0.75 0.725 0.7 ¦ 0.975 0.95 0.925 0.9 0.875 0.85 0.825 0.8 | 미확인 |  | 2 | `set/stuff/rifle/.presets` |
 
 ## 연관: 무기 상태 설정 (.fsm)
 

@@ -33,7 +33,9 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 
 ## 손으로 고치는 파일
 
-- `data/annotations/common.psv`: 키의 의미와 등급
+- `data/annotations/common.psv`: 키의 의미와 등급. `**/꼬리`는 include되는 파일과 매크로 정의 안의 키에도 적용된다
+- `data/annotations/<그룹>.psv`: 한 그룹에만 적용하는 주석. 형식은 `common.psv`와 같다
+- `data/annotations/research/findings-*.psv`: 웹 조사로 모은 키 설명과 출처. 주석을 쓸 때의 근거 자료다
 - `data/annotations/<그룹>.intro.md`: 스키마 문서의 소개문
 - `data/mods/mods.psv`, `data/mods/annotations.psv`, `data/mods/<id>/notes.md`, `data/mods/readme-*.md`: 모드 문서의 입력
 - `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`

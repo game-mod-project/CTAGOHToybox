@@ -6,7 +6,7 @@
 
 | 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |
 |---|---|---|---|---|---|---|---|---|
-| 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 0 | 48 | 0 | 28 |
+| 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 4 | 44 | 0 | 28 |
 
 ## 본체: 아이템 엔티티
 
@@ -20,7 +20,7 @@
 | `/{}/extension` | "barrel1.mdl" | **추정** 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) |  | 1 | `entity/inventory/-stuff/barrel1/barrel1.def` |
 | `/{}/props` | "collectable" | **추정** 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) |  | 1 | `entity/inventory/-stuff/barrel1/barrel1.def` |
 | `/actor/bone/limits` | -0 15 | **추정** 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") |  | 1 | `entity/inventory/-weapon/-small_arms/lee_enfield_no1_mk3_grenade/2in_mortar_test.def` |
-| `/actor/bone/speed2` | 10 | **추정** 회전 속도 (추정: 주석 "manual handcrank, extremely slow") |  | 1 | `entity/inventory/-weapon/-small_arms/lee_enfield_no1_mk3_grenade/2in_mortar_test.def` |
+| `/actor/bone/speed2` | 10 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 |  | 1 | `entity/inventory/-weapon/-small_arms/lee_enfield_no1_mk3_grenade/2in_mortar_test.def` |
 | `/actor/collider` | "mine.at" ¦ "mine.ap" ¦ "stuff" | **추정** 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") |  | 17 | `entity/inventory/-weapon/-mines/mine_ap_shrapnel_mk1/mine_ap_shrapnel_mk1.def` |
 | `/actor/extender[mine]` | "mine" | **추정** 지뢰 기능 (추정: 이름) |  | 18 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
 | `/actor/extender[mine]/time` | 3 | **확인** 매설에 더해지는 시간. 실제 매설 시간은 보병의 매설 애니메이션 길이에 이 값을 더한 것 | actual mining time equals the lenght of time for the human animation + this value if value is less than animation lenght. Otherwise this value is an absolute and animation will loop. ¦ actual mining time equals the length of time for the human animation + this value if value is less than animation length. Otherwise this value is an absolute and animation will loop. | 18 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
@@ -33,9 +33,9 @@
 | `/actor/texmod` | "black" ¦ "green" ¦ "camo" | **추정** 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "black", "camo") |  | 3 | `entity/inventory/-gear_wearable/head/civilian_fedora_black/civilian_fedora_black.def` |
 | `/actor/volume` | "body" ¦ "body1" ¦ "select" ¦ "body2" ¦ "casing1" ¦ "casing2" ¦ "shield" ¦ "shell1" ¦ "shell2" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) |  | 63 | `entity/inventory/-gear_wearable/head/[soviet_union]/soviet_tankist_cap/soviet_tankist_cap.def` |
 | `/actor/volume/able` | clear ¦ | **추정** 볼륨이 반응하는 상호작용 묶음 (추정: 하위 플래그) |  | 20 | `entity/inventory/-tools/mine_detector/mine_detector.def` |
-| `/actor/volume/density` | 0 | **추정** 볼륨의 밀도 (추정: 이름) |  | 19 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
+| `/actor/volume/density` | 0 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 19 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
 | `/actor/volume/material` | "wood" ¦ "glass" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") |  | 10 | `entity/inventory/-tools/pickaxe/pickaxe.def` |
-| `/actor/volume/tags` | "body" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") |  | 16 | `entity/inventory/-weapon/-grenades/anti_personnel/m24/m24.def` |
+| `/actor/volume/tags` | "body" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 |  | 16 | `entity/inventory/-weapon/-grenades/anti_personnel/m24/m24.def` |
 | `/actor/volume/thickness` | 1 ~ 10 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) |  | 36 | `entity/inventory/-medical/medkit/medkit.def` |
 | `/entity/collider` | "grenade" | **추정** 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") |  | 1 | `entity/inventory/-tools/wirecutters/wirecutters.def` |
 | `/entity/extender[stuff]/item` | "bandage_eng" ¦ "bandage_fin" ¦ "bandage_ger" ¦ "bandage_rus" ¦ "bandage_usa" ¦ "canned_meat" ¦ "human" ¦ "wirecutters" ¦ "grenade no73" ¦ "boys_mk1" | **추정** 연결된 아이템 이름. set/stuff의 파일명과 일치한다 (같은 자리의 본체 설명을 가져옴) |  | 10 | `entity/inventory/-medical/bandage_eng/bandage_eng.def` |
@@ -64,7 +64,7 @@
 | `/game_entity/texmod` | "ger" | **추정** 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") |  | 1 | `entity/inventory/-stuff/ammo_box_inf/ammo_box_inf_ger.def` |
 | `/game_entity/volume` | "body" ¦ "fuel" ¦ "body1" ¦ "body2" ¦ "select" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) |  | 410 | `entity/inventory/-ammo/-mortar/170mm_fin_mortar_he/170mm_fin_mortar_he.def` |
 | `/game_entity/volume/able` | ¦ clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (추정: 하위가 bullet, blast, touch 등 인자 없는 플래그) |  | 294 | `entity/inventory/-ammo/-mortar/170mm_fin_mortar_he/170mm_fin_mortar_he.def` |
-| `/game_entity/volume/density` | 2 | **추정** 볼륨의 밀도 (추정: 이름) |  | 2 | `entity/inventory/-ammo/-shells/generic/shell_cannon/shell_cannon.def` |
+| `/game_entity/volume/density` | 2 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 2 | `entity/inventory/-ammo/-shells/generic/shell_cannon/shell_cannon.def` |
 | `/game_entity/volume/tags` | "body" ¦ "pour_over" | **추정** 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") |  | 9 | `entity/inventory/-ammo/-shells/generic/shell_cannon/shell_cannon.def` |
 | `/game_entity/volume/thickness` | 1 ~ 50 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) |  | 392 | `entity/inventory/-ammo/-mortar/170mm_fin_mortar_he/170mm_fin_mortar_he.def` |
 

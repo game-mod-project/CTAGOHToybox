@@ -231,7 +231,7 @@
 | `/game_entity/(include)` | include | [str]x2013 [str call:scale]x650 | 1572 | 2663 | 예: "/properties/airborne.ext" | 미확인(자동) |  |  |  |
 | `/game_entity/(mod)` | mod | [str]x46 [atom str]x20 | 66 | 66 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
 | `/game_entity/##bone` | block | [str]x43 | 43 | 43 | "commander_rot" | 미확인(자동) |  |  |  |
-| `/game_entity/##bone/speed2` | block | [num]x43 | 43 | 43 | 180 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/game_entity/##bone/speed2` | block | [num]x43 | 43 | 43 | 180 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/game_entity/##extender` | block | [str]x1 | 1 | 1 | "smokescreen" | 미확인(자동) |  |  | sources say that these were not installed in the vehicles delivered to the Finns. |
 | `/game_entity/##extender/cooldown` | block | [num]x1 | 1 | 1 | 5 | 추정 | 재사용 대기 시간 (추정: 이름과 값 5~20) | 파일 구조와 값에서 추론 | smoke launcher easily accessible from turret ¦ smoke launcher outside vehicle |
 | `/game_entity/##extender/itemtags` | block | [str]x1 | 1 | 1 | "grenade nbks" | 추정 | 사용하는 탄의 태그 (추정: 값 "mortareng_50 sm") | 파일 구조와 값에서 추론 |  |
@@ -262,7 +262,7 @@
 | `/game_entity/bone/("turret_light")` | macro | [call:power_traverse]x94 | 94 | 94 | power_traverse ( 0 ) ¦ power_traverse ( 24 ) ¦ power_traverse ( 14 ) ¦ power_traverse ( 18 ) ¦ power_traverse ( 55 ) | 미확인(자동) |  |  |  |
 | `/game_entity/bone/("turret_medium")` | macro | [call:power_traverse]x132 | 132 | 132 | power_traverse ( 24 ) ¦ power_traverse ( 19 ) ¦ power_traverse ( 0 ) ¦ power_traverse ( 25 ) ¦ power_traverse ( 16 ) ¦ power_traverse ( 6 ) ¦ power_traverse ( 20 ) ¦ power_traverse ( 36 ) ¦ power_traverse ( 14 ) | 미확인(자동) |  |  |  |
 | `/game_entity/bone/limits` | block | [num num]x973 | 563 | 973 | 예: -15 15 | 추정 | 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | 게임 파일 주석 | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
-| `/game_entity/bone/speed2` | block | [num]x1400 | 592 | 1400 | 1.5 ~ 360 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/game_entity/bone/speed2` | block | [num]x1400 | 592 | 1400 | 1.5 ~ 360 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/game_entity/brain` | block | []x50 | 50 | 50 | 예: | 추정 | AI 종류. 값 "vehicle" (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/brain/properties` | block | []x50 | 50 | 50 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/brain/properties/fire_mode` | block | [atom]x50 | 50 | 50 | hold | 추정 | 기본 사격 태세 (추정: 값 hold) | 파일 구조와 값에서 추론 |  |
@@ -334,7 +334,7 @@
 | `/game_entity/extender[detail]` | block | [str]x3 | 3 | 3 | "detail" | 미확인(자동) |  |  |  |
 | `/game_entity/extender[detail]/detail1` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/game_entity/extender[detail]/random` | block | [num]x2 | 2 | 2 | 0 | 미확인 | ## 블록의 하위. 용도 불명 |  |  |
-| `/game_entity/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 미확인(자동) |  |  |  |
+| `/game_entity/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 문서 | 지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/game_entity/extender[enumerator]` | block | [str]x328 | 328 | 328 | "enumerator" | 추정 | 차량 번호 표시 기능 (추정: 하위 digit_folder) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[enumerator]/digit_folder` | block | [str]x328 | 328 | 328 | "us2" ¦ "ru1" ¦ "ger" ¦ "np" ¦ "ger2" ¦ "moe" ¦ "np_w" ¦ "us3" ¦ "us1" ¦ "ru3" ¦ "c47" ¦ "ru2" | 추정 | 숫자 텍스처 폴더 이름 (추정: 이름과 값 "us2") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[inventory]` | block | [str]x747 | 747 | 747 | "inventory" | 추정 | 차량 화물칸 기능 (추정: 하위 box) | 파일 구조와 값에서 추론 |  |
@@ -346,8 +346,8 @@
 | `/game_entity/extender[inventory]/box/weight` | block | [num]x16 | 16 | 16 | 2100 ~ 100000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 |  |
 | `/game_entity/extender[inventory]/weapon` | block | [str]x115 | 102 | 115 | "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | 추정 | 인벤토리에 장착할 수 있는 무기 종류 (추정: 값 "mgun") | 파일 구조와 값에서 추론 | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/game_entity/extender[inventory]/weapon/mask` | block | [str]x115 | 102 | 115 | "mountable" | 문서 | 엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
-| `/game_entity/extender[land_patch]` | block | [str]x1 | 1 | 1 | "land_patch" | 미확인(자동) |  |  |  |
-| `/game_entity/extender[land_patch]/terraintype` | block | [str str]x1 | 1 | 1 | "road" "bridge_steel" | 추정 | 이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel") | 파일 구조와 값에서 추론 |  |
+| `/game_entity/extender[land_patch]` | block | [str]x1 | 1 | 1 | "land_patch" | 문서 | 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/game_entity/extender[land_patch]/terraintype` | block | [str str]x1 | 1 | 1 | "road" "bridge_steel" | 문서 | 이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/game_entity/extender[shield]` | block | [str]x208 | 206 | 208 | "shield" | 추정 | 방패 기능 (추정: 이름. 화포에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[shield]/off` | block | []x13 | 13 | 13 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/extender[shield]/on` | block | []x195 | 194 | 195 | 예: | 추정 | 이벤트 처리 블록 (추정: set/interaction_entity의 {on ...}과 같은 형태) | 파일 구조와 값에서 추론 |  |
@@ -397,10 +397,10 @@
 | `/game_entity/volume/able/visible` | block | [num]x87 | 46 | 87 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/game_entity/volume/caststeel` | block | [num]x913 | 144 | 913 | 0.8063 | 확인 | 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | 게임 파일 주석 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/game_entity/volume/component` | block | [str]x64 | 44 | 64 | "body" ¦ "turret" ¦ "gun" ¦ "engine" ¦ "bodyback" ¦ "gun1" ¦ "gun2" | 추정 | 이 볼륨이 속한 부품 이름 (추정: vehicle.ext의 wheel 매크로가 {volume %0 {component %0}}) | 파일 구조와 값에서 추론 | Bucket |
-| `/game_entity/volume/density` | block | [num]x9 | 7 | 9 | 0 ~ 0.1 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/density` | block | [num]x9 | 7 | 9 | 0 ~ 0.1 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/game_entity/volume/highhardness` | block | []x209 | 37 | 209 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/volume/material` | block | [str]x405 | 95 | 405 | "wood" ¦ "steel" ¦ "fabric" ¦ "glass" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/quality` | block | [str]x38 | 8 | 38 | "large_flaw" | 추정 | 장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/quality` | block | [str]x38 | 8 | 38 | "large_flaw" | 추정 | 장갑 결함 등급. "large_flaw"는 큰 결함 (추정: 값. 개발자가 결함 장갑을 소·중·대 세 등급으로 구현했다고 밝힘) | Gates of Hell 개발자 답변 steamcommunity.com/app/400750/discussions/0/2945872608893417524 (2026-10-12 확인) |  |
 | `/game_entity/volume/tags` | block | [str]x511 [str str]x6 | 159 | 517 | 예: "invisible" | 추정 | 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/thickness` | block | [num]x14220 []x148 | 891 | 14368 | 0.5 ~ 406 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/game_entity/volume/thickness/bottom` | block | [num]x1710 | 330 | 1710 | 1 ~ 200 | 추정 | 하면 두께 (추정: thickness의 하위. 이름) | 파일 구조와 값에서 추론 | Overhang (above tracks) ¦ 4mm + .25" |
@@ -422,7 +422,7 @@
 | `/game_entity/weaponry/##place/linkanimation` | block | [str]x4 | 4 | 4 | "off" | 미확인 | 값 "off" |  |  |
 | `/game_entity/weaponry/##place/linkbone` | block | [str]x4 | 4 | 4 | "mgun2" ¦ "mgun_rot" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/game_entity/weaponry/##place/shooter` | block | [str]x2 | 2 | 2 | "shooter_bb" | 미확인(자동) |  |  |  |
-| `/game_entity/weaponry/##place/type` | block | [str]x48 | 48 | 48 | "commander" ¦ "rear" ¦ "aa" | 미확인 | 값 "rear" 등 |  |  |
+| `/game_entity/weaponry/##place/type` | block | [str]x48 | 48 | 48 | "commander" ¦ "rear" ¦ "aa" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) |  |
 | `/game_entity/weaponry/##place/weapon` | block | [str]x44 [str atom]x2 [str atom str num]x1 | 47 | 47 | "commander_vision" ¦ "bomb_dropper_eng_250x2" filled ¦ "bomb_dropper_usa_250x3" filled ¦ "thrower_v" filling "f1 grenade" 1 | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/game_entity/weaponry/place` | block | [str]x1313 | 654 | 1313 | 예: "mgun1" | 추정 | 무장 장착 위치 하나. 문자열이 위치 이름 (추정: 값 "mgun1", "gun") | 파일 구조와 값에서 추론 | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/game_entity/weaponry/place/("abm_dymamic_aa")` | macro | [call:zeroing call:dispersion]x10 | 10 | 10 | zeroing ( 2.25 ) dispersion ( 0.50 ) ¦ zeroing ( 1.95 ) dispersion ( 0.24 ) ¦ zeroing ( 2.25 ) dispersion ( 0.3 ) ¦ zeroing ( 2.5 ) dispersion ( 0.50 ) | 미확인(자동) |  |  |  |
@@ -452,7 +452,7 @@
 | `/game_entity/weaponry/place/rotate` | block | []x91 | 84 | 91 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/weaponry/place/shooter` | block | [str]x36 | 21 | 36 | "shooter" ¦ "shooter_mg" ¦ "shooter_bb" ¦ "shooter_b" ¦ "shooter_r" | 미확인(자동) |  |  |  |
 | `/game_entity/weaponry/place/stationaryfiring` | block | []x16 | 16 | 16 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/weaponry/place/type` | block | [str]x726 | 414 | 726 | 예: "rear" | 미확인 | 값 "rear" 등 |  |  |
+| `/game_entity/weaponry/place/type` | block | [str]x726 | 414 | 726 | 예: "rear" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) |  |
 | `/game_entity/weaponry/place/weapon` | block | [str atom str num]x787 [str atom]x401 [str]x11 [str atom str]x3 | 616 | 1202 | 예: "browning_303_mk2" filling "ammo mgun_usa belt" 500 | 추정 | 장착 무기. 첫 문자열이 무기 이름, filling 뒤가 장전된 탄과 수량 (추정: 값. set/stuff의 파일명과 일치) | 파일 구조와 값에서 추론 | Placeholder weapon ¦ !!! PLACEHOLDER |
 
 ### 파일 종류: .ext
@@ -627,8 +627,8 @@
 | `/(define "define_place_jump")/placer/place/turnoff/shadow` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "define_place_jump")/volume` | block | [str]x1 | 1 | 1 | "place%i" | 미확인(자동) |  |  | Hull ¦ Superstructure |
 | `/(define "define_place_jump")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  |  |
-| `/(define "define_place_jump")/volume/able/touch` | block | [num]x1 | 1 | 1 | 1 | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/(define "define_place_jump")/volume/tags` | block | [str str]x1 | 1 | 1 | "attach" "attach_%i" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 |  |
+| `/(define "define_place_jump")/volume/able/touch` | block | [num]x1 | 1 | 1 | 1 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "define_place_jump")/volume/tags` | block | [str str]x1 | 1 | 1 | "attach" "attach_%i" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/(define "define_place")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "define_place")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | sits out of view from top of turret |
 | `/(define "define_place")/placer/place` | block | [str]x1 | 1 | 1 | "attach%place" | 미확인(자동) |  |  | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
@@ -696,21 +696,21 @@
 | `/sensor/visor/vision` | block | [str]x53 | 33 | 53 | 예: "recon_main" | 미확인(자동) |  |  | better vision than a in-closed turret |
 | `/volume` | block | [str]x5982 | 398 | 5982 | 예: "transmission" | 미확인(자동) |  |  | Hull ¦ Superstructure |
 | `/volume/able` | block | []x678 [atom]x11 | 251 | 689 | ¦ clear | 미확인(자동) |  |  |  |
-| `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/contact` | block | [num]x16 []x6 | 15 | 22 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/volume/able/contact_ground` | block | [num]x64 | 32 | 64 | 0 | 미확인(자동) |  |  |  |
 | `/volume/able/holed` | block | []x566 | 236 | 566 | 예: | 미확인(자동) |  |  |  |
 | `/volume/able/nowounddecal` | block | []x89 [num]x26 | 65 | 115 | 0 | 미확인(자동) |  |  |  |
-| `/volume/able/obstacle` | block | [num]x82 []x1 | 21 | 83 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/volume/able/touch` | block | []x2 | 2 | 2 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/volume/able/visible` | block | [num]x19 | 6 | 19 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/obstacle` | block | [num]x82 []x1 | 21 | 83 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/touch` | block | []x2 | 2 | 2 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/visible` | block | [num]x19 | 6 | 19 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/caststeel` | block | [num]x1163 | 174 | 1163 | 0.3 ~ 0.88 | 미확인(자동) |  |  | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/volume/component` | block | [str]x166 | 131 | 166 | "turret" ¦ "body" ¦ "gun" | 미확인(자동) |  |  | Bucket |
 | `/volume/highhardness` | block | []x280 | 34 | 280 | 예: | 미확인(자동) |  |  |  |
 | `/volume/material` | block | [str]x101 | 17 | 101 | "wood" ¦ "fabric" ¦ "sand" ¦ "concrete" | 미확인(자동) |  |  |  |
-| `/volume/quality` | block | [str]x33 | 5 | 33 | "large_flaw" | 추정 | 장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값) | 파일 구조와 값에서 추론 |  |
-| `/volume/tags` | block | [str]x432 [str str]x74 | 204 | 506 | 예: "mover" "track" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 |  |
+| `/volume/quality` | block | [str]x33 | 5 | 33 | "large_flaw" | 추정 | 장갑 결함 등급. "large_flaw"는 큰 결함 (추정: 값. 개발자가 결함 장갑을 소·중·대 세 등급으로 구현했다고 밝힘) | Gates of Hell 개발자 답변 steamcommunity.com/app/400750/discussions/0/2945872608893417524 (2026-10-12 확인) |  |
+| `/volume/tags` | block | [str]x432 [str str]x74 | 204 | 506 | 예: "mover" "track" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/volume/thickness` | block | [num]x5554 []x108 | 398 | 5662 | 0.5 ~ 250 | 미확인(자동) |  |  | 15 + 4 ¦ 89 + 89 |
 | `/volume/thickness/bottom` | block | [num]x1679 | 332 | 1679 | 1 ~ 200 | 미확인(자동) |  |  | Overhang (above tracks) ¦ 4mm + .25" |
 | `/volume/thickness/front` | block | [num]x1969 | 339 | 1969 | 3 ~ 250 | 미확인(자동) |  |  | Glacis ¦ Lower front |
@@ -766,7 +766,7 @@
 | `/(include)` | include | [str]x72 [str call:scale]x46 | 50 | 118 | 예: "/properties/armoredcar.ext" | 미확인(자동) |  |  |  |
 | `/(mod)` | mod | [str]x4 [atom str]x1 | 5 | 5 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
 | `/##bone` | block | [str]x3 | 3 | 3 | "commander_rot" | 미확인(자동) |  |  |  |
-| `/##bone/speed2` | block | [num]x3 | 3 | 3 | 180 | 미확인(자동) |  |  | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/##bone/speed2` | block | [num]x3 | 3 | 3 | 180 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/able` | block | [str]x11 | 11 | 11 | "emit_on_attack" ¦ "emit_passangers_on_enemy" ¦ "emit_passengers_on_enemy" | 미확인(자동) |  |  |  |
 | `/boarder` | block | []x45 | 45 | 45 | 예: | 미확인(자동) |  |  |  |
 | `/boarder/anm` | block | [str]x400 | 45 | 400 | 예: "driver" | 미확인(자동) |  |  | gunner ¦ commander |
@@ -782,7 +782,7 @@
 | `/bone/("turret_light")` | macro | [call:power_traverse]x4 | 4 | 4 | power_traverse ( 0 ) | 미확인(자동) |  |  |  |
 | `/bone/("turret_medium")` | macro | [call:power_traverse]x1 | 1 | 1 | power_traverse ( 19 ) | 미확인(자동) |  |  |  |
 | `/bone/limits` | block | [num num]x67 | 36 | 67 | 예: -5 45 | 미확인(자동) |  |  | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
-| `/bone/speed2` | block | [num]x103 | 40 | 103 | 1.75 ~ 60 | 미확인(자동) |  |  | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/bone/speed2` | block | [num]x103 | 40 | 103 | 1.75 ~ 60 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/brain` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/brain/properties` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/brain/properties/fire_mode` | block | [atom]x4 | 4 | 4 | hold | 추정 | 기본 사격 태세 (추정: 값 hold) | 파일 구조와 값에서 추론 |  |
@@ -845,9 +845,9 @@
 | `/volume/able/contact` | block | [num]x5 | 1 | 5 | 1 | 미확인(자동) |  |  |  |
 | `/volume/able/holed` | block | []x47 | 21 | 47 | 예: | 미확인(자동) |  |  |  |
 | `/volume/able/nowounddecal` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  |  |
-| `/volume/able/visible` | block | [num]x4 | 2 | 4 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/volume/able/visible` | block | [num]x4 | 2 | 4 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/material` | block | [str]x15 | 5 | 15 | "wood" | 미확인(자동) |  |  |  |
-| `/volume/tags` | block | [str]x24 | 7 | 24 | "wood" ¦ "invisible" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 |  |
+| `/volume/tags` | block | [str]x24 | 7 | 24 | "wood" ¦ "invisible" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/volume/thickness` | block | [num]x14 | 6 | 14 | 0.05 ~ 30 | 미확인(자동) |  |  | 15 + 4 ¦ 89 + 89 |
 | `/weaponry` | block | []x40 | 40 | 40 | 예: | 미확인(자동) |  |  |  |
 | `/weaponry/("restore_ik_time")` | macro | []x31 | 31 | 31 | 예: | 미확인(자동) |  |  |  |
@@ -856,7 +856,7 @@
 | `/weaponry/##place/basic` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/weaponry/##place/foresight` | block | [str]x3 | 3 | 3 | "vision_rot" | 미확인(자동) |  |  |  |
 | `/weaponry/##place/gunner` | block | [str]x3 | 3 | 3 | "commander" | 미확인(자동) |  |  |  |
-| `/weaponry/##place/type` | block | [str]x3 | 3 | 3 | "commander" | 미확인(자동) |  |  |  |
+| `/weaponry/##place/type` | block | [str]x3 | 3 | 3 | "commander" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) |  |
 | `/weaponry/##place/weapon` | block | [str]x3 | 3 | 3 | "commander_vision" | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/weaponry/place` | block | [str]x64 | 40 | 64 | "gun" ¦ "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | 미확인(자동) |  |  | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/weaponry/place/("abm_dymamic_aa")` | macro | [call:zeroing call:dispersion]x2 | 2 | 2 | zeroing ( 2.25 ) dispersion ( 0.50 ) | 미확인(자동) |  |  |  |
@@ -877,7 +877,7 @@
 | `/weaponry/place/linkbone` | block | [str]x12 | 10 | 12 | "mgun" ¦ "mgun2" ¦ "mgun3" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/weaponry/place/restoreikafteraim` | block | []x32 | 32 | 32 | 예: | 미확인(자동) |  |  |  |
 | `/weaponry/place/rotate` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
-| `/weaponry/place/type` | block | [str]x32 | 19 | 32 | "main" ¦ "coaxial" ¦ "hull" ¦ "rear" ¦ "aa" ¦ "mgun_turret_left" ¦ "mgun_turret_right" ¦ "left" ¦ "right" | 미확인(자동) |  |  |  |
+| `/weaponry/place/type` | block | [str]x32 | 19 | 32 | "main" ¦ "coaxial" ¦ "hull" ¦ "rear" ¦ "aa" ¦ "mgun_turret_left" ¦ "mgun_turret_right" ¦ "left" ¦ "right" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) |  |
 | `/weaponry/place/weapon` | block | [str atom str num]x32 [str atom]x8 | 22 | 40 | 예: "browning_m2" filled | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 
 ### 파일 종류: .mdl
@@ -1016,7 +1016,7 @@
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/orientation` | block | [num num num num num num num num num]x2 | 2 | 2 | 1 0.0063 0.0011 -0.0062 0.9997 -0.0218 -0.0013 0.0218 0.9998 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/parameters` | block | [str]x731 | 372 | 731 | 예: "id=turret;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/position` | block | [num num num]x577 | 347 | 577 | 예: 0 0.1378 5.0862 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/bone/bone/bone/speed` | block | [num]x1 | 1 | 1 | 0.01 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/bone/bone/bone/speed` | block | [num]x1 | 1 | 1 | 0.01 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/visibility` | block | [num]x4 | 1 | 4 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/bone/volumeview` | block | [str]x751 | 381 | 751 | 예: "at2_4.ply" | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/limits` | block | [num num]x101 | 92 | 101 | 예: -7 7 | 미확인(자동) |  |  | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
@@ -1026,7 +1026,7 @@
 | `/skeleton/bone/bone/bone/bone/bone/bone/orientation` | block | [num num num num num num num num num]x43 | 27 | 43 | 1 0 0 0 0 -1 0 1 0 ¦ 0 -1 0 0 0 -1 1 0 0 ¦ -1 0 0 0 0 -1 0 -1 0 ¦ 0.9962 0 -0.0872 0 1 0 0.0872 0 0.9962 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/parameters` | block | [str]x2796 | 1036 | 2796 | 예: "id=body;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
 | `/skeleton/bone/bone/bone/bone/bone/bone/position` | block | [num num num]x1840 | 848 | 1840 | 예: 1.9845 -0.0038 0.0125 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/bone/bone/speed` | block | [num]x70 | 67 | 70 | 0.003 ~ 0.1 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/bone/bone/speed` | block | [num]x70 | 67 | 70 | 0.003 ~ 0.1 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/visibility` | block | [num]x17 | 11 | 17 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/bone/volumeview` | block | [str]x2708 | 1041 | 2708 | 예: "geararmr2.ply" | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/limits` | block | [num num]x867 [num]x2 | 505 | 869 | 20 | 미확인(자동) |  |  | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
@@ -1036,7 +1036,7 @@
 | `/skeleton/bone/bone/bone/bone/bone/orientation` | block | [num num num num num num num num num]x1996 | 506 | 1996 | 예: 1 0 0 0 0 -1 0 1 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/parameters` | block | [str]x15021 | 1842 | 15021 | 예: "id=body;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
 | `/skeleton/bone/bone/bone/bone/bone/position` | block | [num num num]x3176 | 1090 | 3176 | 예: 39.321 -0.1032 0.4816 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/bone/speed` | block | [num]x600 | 305 | 600 | 0.003 ~ 0.14 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/bone/speed` | block | [num]x600 | 305 | 600 | 0.003 ~ 0.14 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/bone/bone/terminator` | block | []x8 | 8 | 8 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/visibility` | block | [num]x77 | 48 | 77 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/bone/volumeview` | block | [str]x13587 | 1755 | 13587 | 예: "vickers_k.ply" | 미확인(자동) |  |  |  |
@@ -1047,7 +1047,7 @@
 | `/skeleton/bone/bone/bone/bone/orientation` | block | [num num num num num num num num num]x2118 | 598 | 2118 | 예: 1 0 0 0 -1 0 0 0 -1 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/parameters` | block | [str]x24970 | 2000 | 24970 | 예: "id=body;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
 | `/skeleton/bone/bone/bone/bone/position` | block | [num num num]x20095 | 1744 | 20095 | 예: 16.7243 -33.9688 -2.7634 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/bone/speed` | block | [num]x8720 | 1311 | 8720 | 0.001 ~ 1.6 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/bone/bone/bone/speed` | block | [num]x8720 | 1311 | 8720 | 0.001 ~ 1.6 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/skeleton/bone/bone/bone/bone/terminator` | block | []x125 | 119 | 125 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/visibility` | block | [num]x177 | 75 | 177 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/bone/volumeview` | block | [str]x21365 | 1939 | 21365 | 예: "mgun_rot.ply" | 미확인(자동) |  |  |  |
@@ -1059,8 +1059,8 @@
 | `/skeleton/bone/bone/bone/orientation` | block | [num num num num num num num num num]x32 | 24 | 32 | 1 0 0 0 0 -1 0 1 0 ¦ 1 0 0 0 0 1 0 -1 0 ¦ -1 0 0 0 -1 0 0 0 1 ¦ 0.682 0 0.7314 0 1 0 -0.7314 0 0.682 ¦ 1 0 0 0 0.9962 0.0872 0 -0.0872 0.9962 ¦ -0.9336 0 -0.3584 0 -1 0 -0.3584 0 0.9336 ¦ 0.9336 0 -0.3584 0 1 0 0.3584 0 0.9336 ¦ -0.9336 -0.0125 -0.3581 0 -0.9994 0.0349 -0.3584 0.0326 0.933 ¦ 0.9337 0.0038 -0.3581 -0.0174 0.9992 -0.0349 0.3577 0.0388 0.933 ¦ 1 0 0 0 -1 0 0 0 1 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/parameters` | block | [str]x30426 | 2075 | 30426 | 예: "id=body;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
 | `/skeleton/bone/bone/bone/position` | block | [num num num]x25913 | 1996 | 25913 | 예: -46.8368 0.0922 15.2546 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/speed` | block | [num]x6895 | 1314 | 6895 | 0.001 ~ 2 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/bone/speed2` | block | [num]x38 | 8 | 38 | 2 ~ 40 | 미확인(자동) |  |  | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/skeleton/bone/bone/bone/speed` | block | [num]x6895 | 1314 | 6895 | 0.001 ~ 2 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/bone/bone/speed2` | block | [num]x38 | 8 | 38 | 2 ~ 40 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/skeleton/bone/bone/bone/terminator` | block | []x41 | 41 | 41 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/visibility` | block | [num]x177 | 57 | 177 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/bone/volumeview` | block | [str]x26271 | 2028 | 26271 | 예: "turret.ply" | 미확인(자동) |  |  |  |
@@ -1073,15 +1073,15 @@
 | `/skeleton/bone/bone/orientation` | block | [num num num num num num num num num]x6 | 6 | 6 | 1 0 0 0 0 1 0 -1 0 ¦ -1 0 0 0 0 1 0 1 0 ¦ 1 0 0 0 1 0 0 0 1 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/parameters` | block | [str]x5045 | 2128 | 5045 | 예: "id=body;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
 | `/skeleton/bone/bone/position` | block | [num num num]x6274 | 2030 | 6274 | 예: 8.7001 -0.0084 28.9026 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/speed` | block | [num]x3 | 3 | 3 | 0.003 ~ 0.01 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/bone/speed2` | block | [num]x6 | 6 | 6 | 40 | 미확인(자동) |  |  | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/skeleton/bone/bone/speed` | block | [num]x3 | 3 | 3 | 0.003 ~ 0.01 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/bone/speed2` | block | [num]x6 | 6 | 6 | 40 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/skeleton/bone/bone/visibility` | block | [num]x531 | 107 | 531 | 0 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/bone/volumeview` | block | [str]x2450 | 1934 | 2450 | 예: "body.ply" | 미확인(자동) |  |  |  |
 | `/skeleton/bone/limits` | block | [num num]x135 | 135 | 135 | 0 0 ¦ -0 0 | 미확인(자동) |  |  | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
 | `/skeleton/bone/orientation` | block | [num num num num num num num num num]x2141 | 2141 | 2141 | 1 0 0 0 -1 0 0 0 1 | 미확인(자동) |  |  |  |
 | `/skeleton/bone/parameters` | block | [str]x1616 | 1616 | 1616 | 예: "steermax=15;" | 미확인(자동) |  |  | "} ¦ radius=0.17;"} |
-| `/skeleton/bone/speed` | block | [num]x97 | 97 | 97 | 0.0005 ~ 0.01 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/speed2` | block | [num]x6 | 6 | 6 | 5 | 미확인(자동) |  |  | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/skeleton/bone/speed` | block | [num]x97 | 97 | 97 | 0.0005 ~ 0.01 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
+| `/skeleton/bone/speed2` | block | [num]x6 | 6 | 6 | 5 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/volume` | block | [str]x44932 | 1738 | 44932 | 예: "1blade1" | 미확인(자동) |  |  | Hull ¦ Superstructure |
 | `/volume/bone` | block | [str]x44932 | 1738 | 44932 | 예: "propeller1" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/volume/box` | block | [num num num]x10147 | 1327 | 10147 | 예: 6.35309 33.7371 3.28608 | 미확인(자동) |  |  |  |
@@ -1122,7 +1122,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/##` | block | [atom str]x58 | 58 | 58 | extender "detail" | 미확인(자동) |  |  | No longer used? |
 | `/actor/##/random` | block | []x58 | 58 | 58 | 예: | 미확인 | ## 블록의 하위. 용도 불명 |  |  |
 | `/actor/##bone` | block | [str]x6 | 6 | 6 | "commander_rot" | 미확인(자동) |  |  |  |
-| `/actor/##bone/speed2` | block | [num]x6 | 6 | 6 | 180 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/actor/##bone/speed2` | block | [num]x6 | 6 | 6 | 180 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/actor/##volume` | block | [str]x2 | 2 | 2 | "engine3" | 미확인(자동) |  |  | Engine Cover |
 | `/actor/##volume/thickness` | block | [num]x2 | 2 | 2 | 10 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/actor/##weaponry` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  |  |
@@ -1139,7 +1139,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/##weaponry/place/linkanimation` | block | [str]x5 | 5 | 5 | "off" | 미확인 | 값 "off" |  |  |
 | `/actor/##weaponry/place/linkbone` | block | [str]x5 | 5 | 5 | "mgun" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/actor/##weaponry/place/rotate` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  |  |
-| `/actor/##weaponry/place/type` | block | [str]x5 | 5 | 5 | "main" | 미확인 | 값 "rear" 등 |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/actor/##weaponry/place/type` | block | [str]x5 | 5 | 5 | "main" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/actor/able` | block | [str str str str]x58 [str str]x36 [str]x24 | 58 | 118 | "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" ¦ "talk" "-emit_passangers_on_enemy" ¦ "talk" ¦ "emit_crew_on_injure" ¦ "emit_on_attack" | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/actor/armor` | block | []x74 | 58 | 74 | 예: | 추정 | 장갑 판정 설정 묶음 (추정: 하위가 setting/threshold) | 파일 구조와 값에서 추론 |  |
 | `/actor/armor/setting` | block | [str]x3626 | 58 | 3626 | 예: "body" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
@@ -1165,7 +1165,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/boarder/link/reverse` | block | [atom]x659 | 56 | 659 | puton | 미확인(자동) |  |  |  |
 | `/actor/bone` | block | [str]x134 | 52 | 134 | "turret" ¦ "gun_rot" ¦ "basis" ¦ "aux_turret1" ¦ "aux_turret2" ¦ "foresight" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/actor/bone/limits` | block | [num num]x78 | 52 | 78 | 예: -13 15 | 추정 | 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | 게임 파일 주석 | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
-| `/actor/bone/speed2` | block | [num]x134 | 52 | 134 | 1.75 ~ 60 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/actor/bone/speed2` | block | [num]x134 | 52 | 134 | 1.75 ~ 60 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/actor/brain` | block | [str]x58 []x2 | 58 | 60 | "vehicle" ¦ | 추정 | AI 종류. 값 "vehicle" (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/actor/brain/const` | block | [str num]x116 | 58 | 116 | "crush/min_danger_zone_time" 1 ¦ "crush/min_danger_zone_length" 1 | 미확인(자동) |  |  | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds |
 | `/actor/brain/properties` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -1312,14 +1312,14 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/volume/able/nowounddecal` | block | []x694 | 58 | 694 | 예: | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/obstacle` | block | [num]x2112 | 47 | 2112 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/actor/volume/able/select` | block | []x58 | 58 | 58 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/able/touch` | block | []x58 | 58 | 58 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/able/touch` | block | []x58 | 58 | 58 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/actor/volume/able/visible` | block | [num]x2668 | 58 | 2668 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/actor/volume/caststeel` | block | [num]x78 | 8 | 78 | 0.6 ~ 0.8063 | 확인 | 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | 게임 파일 주석 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/actor/volume/component` | block | [str]x5724 | 58 | 5724 | 예: "body" | 미확인(자동) |  |  | Bucket |
-| `/actor/volume/density` | block | [num]x1624 | 58 | 1624 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/density` | block | [num]x1624 | 58 | 1624 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/actor/volume/highhardness` | block | []x22 | 2 | 22 | 예: | 미확인(자동) |  |  |  |
 | `/actor/volume/material` | block | [str]x771 | 58 | 771 | "wood" ¦ "sand" ¦ "flesh" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/tags` | block | [str]x5656 [str str]x3308 | 58 | 8964 | 예: "wood" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/actor/volume/tags` | block | [str]x5656 [str str]x3308 | 58 | 8964 | 예: "wood" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/actor/volume/thickness` | block | [num]x6252 | 58 | 6252 | 0.5 ~ 105 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/actor/volume/thickness/bottom` | block | [num]x72 | 16 | 72 | 4 ~ 40 | 추정 | 하면 두께 (추정: thickness의 하위. 이름) | 파일 구조와 값에서 추론 | Overhang (above tracks) ¦ 4mm + .25" |
 | `/actor/volume/thickness/front` | block | [num]x72 | 14 | 72 | 5 ~ 105 | 추정 | 전면 두께 (추정: thickness의 하위이고 주석이 Glacis, Lower front) | 게임 파일 주석 | Glacis ¦ Lower front |
@@ -1333,7 +1333,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/weaponry/##place/basic` | block | []x6 | 6 | 6 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/actor/weaponry/##place/foresight` | block | [str]x6 | 6 | 6 | "vision_rot" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
 | `/actor/weaponry/##place/gunner` | block | [str]x6 | 6 | 6 | "commander" | 추정 | 이 무장을 쏘는 자리 이름 (추정: 값이 placer의 자리 이름) | 파일 구조와 값에서 추론 |  |
-| `/actor/weaponry/##place/type` | block | [str]x6 | 6 | 6 | "commander" | 미확인 | 값 "rear" 등 |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/actor/weaponry/##place/type` | block | [str]x6 | 6 | 6 | "commander" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/actor/weaponry/##place/weapon` | block | [str]x6 | 6 | 6 | "commander_vision" | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/actor/weaponry/manualaccuracy` | block | [num]x58 | 58 | 58 | 1 | 추정 | 직접 조종 시 정확도 배율 (추정: 이름. 값 1) | 파일 구조와 값에서 추론 |  |
 | `/actor/weaponry/manualaccuracyzoom` | block | [num]x58 | 58 | 58 | 1.25 | 추정 | 직접 조종에서 확대했을 때 정확도 배율 (추정: 이름. 값 1.25) | 파일 구조와 값에서 추론 |  |
@@ -1354,7 +1354,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/weaponry/place/linkbone` | block | [str]x9 | 9 | 9 | "mgun" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/actor/weaponry/place/restoreikafteraim` | block | []x49 | 49 | 49 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/actor/weaponry/place/rotate` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
-| `/actor/weaponry/place/type` | block | [str]x39 | 19 | 39 | "coaxial" ¦ "hull" ¦ "rear" ¦ "main" ¦ "mgun_turret_left" ¦ "mgun_turret_right" | 미확인 | 값 "rear" 등 |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/actor/weaponry/place/type` | block | [str]x39 | 19 | 39 | "coaxial" ¦ "hull" ¦ "rear" ¦ "main" ¦ "mgun_turret_left" ¦ "mgun_turret_right" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/actor/weaponry/place/weapon` | block | [str atom str num]x83 [str atom]x2 | 49 | 85 | 예: "40mm_qf2" filling "bulleteng_40 ap2" 1 | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/actor/weaponry/restoreiktime` | block | [num]x47 | 47 | 47 | 4 ~ 10 | 미확인 | 값 4~10 |  |  |
 | `/entity` | block | [atom]x1 | 1 | 1 | actor | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
@@ -1485,11 +1485,11 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/volume/able/hole` | block | []x26 | 1 | 26 | 예: | 미확인 | able의 하위 플래그. 관통 흔적과 관련된 것으로 보이나 확인하지 못함 |  |  |
 | `/entity/volume/able/nowounddecal` | block | []x14 | 1 | 14 | 예: | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/entity/volume/able/select` | block | []x1 | 1 | 1 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/entity/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/entity/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/entity/volume/component` | block | [str]x40 | 1 | 40 | "body" ¦ "engine" ¦ "wheelright1" ¦ "wheelleft1" ¦ "wheelright2" ¦ "wheelleft2" ¦ "fuel" ¦ "transmission" | 미확인(자동) |  |  | Bucket |
-| `/entity/volume/density` | block | [num]x28 | 1 | 28 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/entity/volume/density` | block | [num]x28 | 1 | 28 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/entity/volume/material` | block | [str]x13 | 1 | 13 | "wood" ¦ "sand" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
-| `/entity/volume/tags` | block | [str]x88 [str str]x6 | 1 | 94 | "armor" ¦ "body" ¦ "wood" ¦ "engine" ¦ "wheel" "no_target" ¦ "fuel" "no_target" ¦ "transmission" "no_target" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/entity/volume/tags` | block | [str]x88 [str str]x6 | 1 | 94 | "armor" ¦ "body" ¦ "wood" ¦ "engine" ¦ "wheel" "no_target" ¦ "fuel" "no_target" ¦ "transmission" "no_target" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/entity/volume/thickness` | block | [num]x96 | 1 | 96 | 1.5 ~ 10 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/entity/weaponry` | block | []x1 | 1 | 1 | 예: | 추정 | 차량 무장 정의 묶음 (추정: 하위 place) | 파일 구조와 값에서 추론 |  |
 | `/entity/weaponry/manualaccuracy` | block | [num]x1 | 1 | 1 | 1 | 추정 | 직접 조종 시 정확도 배율 (추정: 이름. 값 1) | 파일 구조와 값에서 추론 |  |
@@ -1499,7 +1499,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/##` | block | [atom str]x763 | 763 | 763 | extender "detail" | 미확인 | 이름 앞에 ##가 붙은 블록. 값은 extender "detail". 꺼 둔 블록으로 보이나 엔진이 어떻게 처리하는지 확인하지 못함 |  | No longer used? |
 | `/game_entity/##/random` | block | []x763 | 763 | 763 | 예: | 미확인 | ## 블록의 하위. 용도 불명 |  |  |
 | `/game_entity/##bone` | block | [str]x43 | 43 | 43 | "commander_rot" | 미확인(자동) |  |  |  |
-| `/game_entity/##bone/speed2` | block | [num]x43 | 43 | 43 | 180 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/game_entity/##bone/speed2` | block | [num]x43 | 43 | 43 | 180 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/game_entity/##extender` | block | [str]x1 | 1 | 1 | "smokescreen" | 미확인(자동) |  |  | sources say that these were not installed in the vehicles delivered to the Finns. |
 | `/game_entity/##extender/cooldown` | block | [num]x1 | 1 | 1 | 5 | 추정 | 재사용 대기 시간 (추정: 이름과 값 5~20) | 파일 구조와 값에서 추론 | smoke launcher easily accessible from turret ¦ smoke launcher outside vehicle |
 | `/game_entity/##extender/itemtags` | block | [str]x1 | 1 | 1 | "grenade nbks" | 추정 | 사용하는 탄의 태그 (추정: 값 "mortareng_50 sm") | 파일 구조와 값에서 추론 |  |
@@ -1523,7 +1523,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/##weaponry/place/linkanimation` | block | [str]x47 | 47 | 47 | "off" | 미확인 | 값 "off" |  |  |
 | `/game_entity/##weaponry/place/linkbone` | block | [str]x47 | 47 | 47 | "mgun" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/game_entity/##weaponry/place/rotate` | block | []x47 | 47 | 47 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/##weaponry/place/type` | block | [str]x47 | 47 | 47 | "main" | 미확인 | 값 "rear" 등 |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/game_entity/##weaponry/place/type` | block | [str]x47 | 47 | 47 | "main" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/game_entity/able` | block | [str str str str]x763 [str]x679 [str str]x206 | 763 | 1648 | "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" ¦ "talk" ¦ "talk" "-emit_passangers_on_enemy" ¦ "emit_on_attack" ¦ "emit_passangers_on_enemy" ¦ "-emit_passangers_on_enemy" ¦ "emit_passengers_on_enemy" ¦ "emit_on_attack" "emit_crew_on_injure" | 추정 | 엔티티가 할 수 있는 동작 태그 목록. 예: "emit_passangers_on_enemy", "repair" (추정: 값) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/game_entity/armor` | block | []x2007 | 1571 | 2007 | 예: | 추정 | 장갑 판정 설정 묶음 (추정: 하위가 setting/threshold) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/armor/setting` | block | [str]x98343 | 1571 | 98343 | 예: "body" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
@@ -1550,7 +1550,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/boarder/link/reverse` | block | [atom]x7794 | 682 | 7794 | puton | 미확인 | 값 puton |  |  |
 | `/game_entity/bone` | block | [str]x1823 | 653 | 1823 | 예: "mgun_rot1" | 추정 | 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (추정: 값 "mgun_rot1", 주석 turret) | 게임 파일 주석 | Boys rot ¦ turret |
 | `/game_entity/bone/limits` | block | [num num]x1086 | 609 | 1086 | 예: -1 1 | 추정 | 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | 게임 파일 주석 | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
-| `/game_entity/bone/speed2` | block | [num]x1816 | 650 | 1816 | 1.5 ~ 360 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/game_entity/bone/speed2` | block | [num]x1816 | 650 | 1816 | 1.5 ~ 360 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/game_entity/brain` | block | [str]x763 []x56 | 763 | 819 | "vehicle" ¦ | 추정 | AI 종류. 값 "vehicle" (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/brain/const` | block | [str num]x1486 | 743 | 1486 | "crush/min_danger_zone_time" 1 ¦ "crush/min_danger_zone_length" 1 | 추정 | AI 상수. 이름과 값 한 쌍. 예: "crush/min_danger_zone_time" 1 (추정: 값) | 파일 구조와 값에서 추론 | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds |
 | `/game_entity/brain/properties` | block | []x56 | 56 | 56 | 예: | 미확인(자동) |  |  |  |
@@ -1659,7 +1659,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extender[detail]` | block | [str]x3 | 3 | 3 | "detail" | 미확인(자동) |  |  |  |
 | `/game_entity/extender[detail]/detail1` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/game_entity/extender[detail]/random` | block | [num]x2 | 2 | 2 | 0 | 미확인 | ## 블록의 하위. 용도 불명 |  |  |
-| `/game_entity/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 미확인(자동) |  |  |  |
+| `/game_entity/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 문서 | 지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/game_entity/extender[enumerator]` | block | [str]x347 | 347 | 347 | "enumerator" | 추정 | 차량 번호 표시 기능 (추정: 하위 digit_folder) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[enumerator]/digit_folder` | block | [str]x347 | 347 | 347 | "us2" ¦ "ru1" ¦ "ger" ¦ "np" ¦ "ger2" ¦ "moe" ¦ "np_w" ¦ "us3" ¦ "us1" ¦ "ru3" ¦ "c47" ¦ "ru2" | 추정 | 숫자 텍스처 폴더 이름 (추정: 이름과 값 "us2") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[inventory]` | block | [str]x2282 | 763 | 2282 | "inventory" | 추정 | 차량 화물칸 기능 (추정: 하위 box) | 파일 구조와 값에서 추론 |  |
@@ -1671,8 +1671,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extender[inventory]/box/weight` | block | [num]x767 | 754 | 767 | 100 ~ 100000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/game_entity/extender[inventory]/weapon` | block | [str]x885 | 763 | 885 | "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | 추정 | 인벤토리에 장착할 수 있는 무기 종류 (추정: 값 "mgun") | 파일 구조와 값에서 추론 | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/game_entity/extender[inventory]/weapon/mask` | block | [str]x885 | 763 | 885 | "mountable" | 문서 | 엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
-| `/game_entity/extender[land_patch]` | block | [str]x1 | 1 | 1 | "land_patch" | 미확인(자동) |  |  |  |
-| `/game_entity/extender[land_patch]/terraintype` | block | [str str]x1 | 1 | 1 | "road" "bridge_steel" | 추정 | 이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel") | 파일 구조와 값에서 추론 |  |
+| `/game_entity/extender[land_patch]` | block | [str]x1 | 1 | 1 | "land_patch" | 문서 | 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/game_entity/extender[land_patch]/terraintype` | block | [str str]x1 | 1 | 1 | "road" "bridge_steel" | 문서 | 이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/game_entity/extender[shield]` | block | [str]x230 | 228 | 230 | "shield" | 추정 | 방패 기능 (추정: 이름. 화포에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[shield]/off` | block | []x13 | 13 | 13 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/extender[shield]/on` | block | []x217 | 216 | 217 | 예: | 추정 | 이벤트 처리 블록 (추정: set/interaction_entity의 {on ...}과 같은 형태) | 파일 구조와 값에서 추론 | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
@@ -1748,8 +1748,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/texmod` | block | [str]x17 | 17 | 17 | "late" ¦ "rus" ¦ "camo" ¦ "camo2" ¦ "grey" ¦ "2" ¦ "early" ¦ "red_ball" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume` | block | [str]x244828 | 1945 | 244828 | 예: "select" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/game_entity/volume/able` | block | []x68087 [atom]x42682 | 1939 | 110769 | ¦ clear | 추정 | 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (추정: 하위가 bullet, blast, touch 등 인자 없는 플래그) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/game_entity/volume/able/blast` | block | []x106 | 22 | 106 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/game_entity/volume/able/bullet` | block | []x106 | 22 | 106 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | required for AT-Grenades with cumaltive damage |
+| `/game_entity/volume/able/blast` | block | []x106 | 22 | 106 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/game_entity/volume/able/bullet` | block | []x106 | 22 | 106 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | required for AT-Grenades with cumaltive damage |
 | `/game_entity/volume/able/contact` | block | [num]x37613 []x114 | 1513 | 37727 | 0 ~ 1 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/contact_ground` | block | [num]x1556 | 394 | 1556 | 0 | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/float` | block | []x127 | 12 | 127 | 예: | 미확인(자동) |  |  |  |
@@ -1759,15 +1759,15 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/volume/able/nowounddecal` | block | []x25412 [num]x92 | 1123 | 25504 | 0 | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/obstacle` | block | [num]x36858 []x1 | 1813 | 36859 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/game_entity/volume/able/select` | block | []x763 | 763 | 763 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/able/touch` | block | []x869 | 763 | 869 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/able/touch` | block | []x869 | 763 | 869 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/game_entity/volume/able/visible` | block | [num]x39358 | 1518 | 39358 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/game_entity/volume/able/window` | block | []x485 | 112 | 485 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/volume/caststeel` | block | [num]x2543 | 379 | 2543 | 0.3 ~ 0.88 | 확인 | 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | 게임 파일 주석 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/game_entity/volume/component` | block | [str]x89210 | 798 | 89210 | 예: "wingright" | 추정 | 이 볼륨이 속한 부품 이름 (추정: vehicle.ext의 wheel 매크로가 {volume %0 {component %0}}) | 파일 구조와 값에서 추론 | Bucket |
-| `/game_entity/volume/density` | block | [num]x21373 | 765 | 21373 | 0 ~ 0.1 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/density` | block | [num]x21373 | 765 | 21373 | 0 ~ 0.1 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/game_entity/volume/highhardness` | block | []x543 | 77 | 543 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/volume/material` | block | [str]x11376 | 823 | 11376 | "wood" ¦ "sand" ¦ "glass" ¦ "fabric" ¦ "steel" ¦ "concrete" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/quality` | block | [str]x75 | 15 | 75 | "large_flaw" | 추정 | 장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/quality` | block | [str]x75 | 15 | 75 | "large_flaw" | 추정 | 장갑 결함 등급. "large_flaw"는 큰 결함 (추정: 값. 개발자가 결함 장갑을 소·중·대 세 등급으로 구현했다고 밝힘) | Gates of Hell 개발자 답변 steamcommunity.com/app/400750/discussions/0/2945872608893417524 (2026-10-12 확인) |  |
 | `/game_entity/volume/tags` | block | [str]x77996 [str str]x66189 []x300 [str str str]x130 | 1572 | 144615 | 예: "wood" | 추정 | 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/game_entity/volume/thickness` | block | [num]x113865 []x292 | 1569 | 114157 | 0.05 ~ 406 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/game_entity/volume/thickness/bottom` | block | [num]x3522 | 680 | 3522 | 1 ~ 200 | 추정 | 하면 두께 (추정: thickness의 하위. 이름) | 파일 구조와 값에서 추론 | Overhang (above tracks) ¦ 4mm + .25" |
@@ -1794,7 +1794,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/weaponry/##place/linkanimation` | block | [str]x4 | 4 | 4 | "off" | 미확인 | 값 "off" |  |  |
 | `/game_entity/weaponry/##place/linkbone` | block | [str]x4 | 4 | 4 | "mgun2" ¦ "mgun_rot" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/game_entity/weaponry/##place/shooter` | block | [str]x2 | 2 | 2 | "shooter_bb" | 미확인(자동) |  |  |  |
-| `/game_entity/weaponry/##place/type` | block | [str]x48 | 48 | 48 | "commander" ¦ "rear" ¦ "aa" | 미확인 | 값 "rear" 등 |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/game_entity/weaponry/##place/type` | block | [str]x48 | 48 | 48 | "commander" ¦ "rear" ¦ "aa" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/game_entity/weaponry/##place/weapon` | block | [str]x44 [str atom]x2 [str atom str num]x1 | 47 | 47 | "commander_vision" ¦ "bomb_dropper_eng_250x2" filled ¦ "bomb_dropper_usa_250x3" filled ¦ "thrower_v" filling "f1 grenade" 1 | 미확인(자동) |  |  | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/game_entity/weaponry/manualaccuracy` | block | [num]x763 | 763 | 763 | 1 | 추정 | 직접 조종 시 정확도 배율 (추정: 이름. 값 1) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/weaponry/manualaccuracyzoom` | block | [num]x763 | 763 | 763 | 1.25 | 추정 | 직접 조종에서 확대했을 때 정확도 배율 (추정: 이름. 값 1.25) | 파일 구조와 값에서 추론 |  |
@@ -1818,7 +1818,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/weaponry/place/rotate` | block | []x142 | 116 | 142 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/weaponry/place/shooter` | block | [str]x36 | 21 | 36 | "shooter" ¦ "shooter_mg" ¦ "shooter_bb" ¦ "shooter_b" ¦ "shooter_r" | 미확인(자동) |  |  |  |
 | `/game_entity/weaponry/place/stationaryfiring` | block | []x16 | 16 | 16 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/weaponry/place/type` | block | [str]x756 | 437 | 756 | 예: "rear" | 미확인 | 값 "rear" 등 |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/game_entity/weaponry/place/type` | block | [str]x756 | 437 | 756 | 예: "rear" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/game_entity/weaponry/place/weapon` | block | [str atom str num]x799 [str atom]x419 [str]x11 [str atom str]x3 | 635 | 1232 | 예: "browning_303_mk2" filling "ammo mgun_usa belt" 500 | 추정 | 장착 무기. 첫 문자열이 무기 이름, filling 뒤가 장전된 탄과 수량 (추정: 값. set/stuff의 파일명과 일치) | 파일 구조와 값에서 추론 | Placeholder weapon ¦ !!! PLACEHOLDER |
 | `/game_entity/weaponry/restoreiktime` | block | [num]x522 | 522 | 522 | 4 ~ 10 | 미확인 | 값 4~10 |  |  |
 

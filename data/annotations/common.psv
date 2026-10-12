@@ -476,16 +476,16 @@
 **/threshold/blast/koef|block|문서|폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다|D
 /(define "set_ammo")/setting|block|문서|장갑 설정 묶음 하나. 문자열은 설정 이름|D
 /(define "set_ammo")/setting/volumes|block|문서|이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다|D
-**/volume/quality|block|추정|장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값)|S
-**/volume/density|block|추정|볼륨의 밀도 (추정: 이름)|S
-**/volume/tags|block|추정|볼륨에 붙이는 태그 (추정: 값 "no_target")|S
+**/volume/quality|block|추정|장갑 결함 등급. "large_flaw"는 큰 결함 (추정: 값. 개발자가 결함 장갑을 소·중·대 세 등급으로 구현했다고 밝힘)|Gates of Hell 개발자 답변 steamcommunity.com/app/400750/discussions/0/2945872608893417524 (2026-10-12 확인)
+**/volume/density|block|문서|장갑의 밀도(품질) 계수. 기본 1|M
+**/volume/tags|block|문서|볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다|G
 
 # 볼륨의 able 플래그. 0이면 끈다
-**/able/visible|block|추정|볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그)|S
-**/able/obstacle|block|추정|이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그)|S
-**/able/touch|block|추정|접촉 판정 대상인지 여부 (추정: able의 하위 플래그)|S
-**/able/blast|block|추정|폭발 판정 대상인지 여부 (추정: able의 하위 플래그)|S
-**/able/bullet|block|추정|탄환 판정 대상인지 여부 (추정: able의 하위 플래그)|S
+**/able/visible|block|문서|시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다|W
+**/able/obstacle|block|문서|이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1|W
+**/able/touch|block|문서|이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문)|W
+**/able/blast|block|문서|폭발 충격파에 반응하는지 여부. 기본 1|W
+**/able/bullet|block|문서|탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다|W
 
 # 표시용 스프라이트와 데칼
 **/decalview|block|추정|지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer)|S
@@ -529,7 +529,7 @@
 **/lodclass|block|추정|상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human")|S
 **/simulatorid|block|추정|물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade")|S
 **/extender[talk]/talker|block|추정|음성 대사를 고르는 화자 종류 (추정: 값 "cannon", "tank", "human")|S
-**/extender[land_patch]/terraintype|block|추정|이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel")|S
+**/extender[land_patch]/terraintype|block|문서|이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다|W
 **/brain/properties/fire_mode|block|추정|기본 사격 태세 (추정: 값 hold)|S
 **/weaponry/place/barrels|block|추정|포신 수 (추정: 이름과 값 2 ~ 3)|S
 **/texturescroller/length|block|확인|궤도 텍스처가 애니메이션 한 번에 움직이는 거리, 미터|C
@@ -546,7 +546,7 @@
 **/lockfiredistancetime|block|확인|조준점이 사거리 밖에 있어도 사격이 허용되는 시간|C
 **/aimrange|block|확인|AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다|C
 **/minrange|block|추정|최소 사거리 (추정: 이름)|S
-**/maxrange|block|추정|최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임)|S
+**/maxrange|block|문서|쏠 수 있는 최대 거리|M
 **/weapon_bullet/range|block|문서|사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리|Steam 토론 steamcommunity.com/app/302670/discussions/0/135511259335716556, steamcommunity.com/app/244450/discussions/0/1743353164076238918 와 ModDB의 Men of War 모딩 FAQ가 같은 설명 (2026-10-12 확인)
 **/parameters/range|block|문서|사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리|Steam 토론 steamcommunity.com/app/302670/discussions/0/135511259335716556, steamcommunity.com/app/244450/discussions/0/1743353164076238918 와 ModDB의 Men of War 모딩 FAQ가 같은 설명 (2026-10-12 확인)
 **/minimumdamagemodifier|block|문서|최소 피해. 계산식은 출처에 설명되어 있지 않다|Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인)
@@ -614,3 +614,18 @@
 **/mechanic|block|추정|수리 능력. factor 뒤의 수가 수리 속도 배수 (추정: 값 factor 0.5, factor 1.0과 매크로 이름 basic_repair, engineer)|S
 **/perks/"*"/fortifications|block|추정|지을 수 있는 구조물 이름 목록 (추정: 값 "foxhole" "medic_rally")|S
 **/breed/field_icon|block|추정|전장에서 유닛 위에 띄우는 아이콘 이름 (추정: 이름과 값 "rus_miner_ap")|S
+
+# 조사로 찾은 설명 (2026-10-12). 원본은 data/annotations/research/findings-*.psv
+**/able/overlap|block|문서|다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림)|W
+**/extender[land_patch]|block|문서|모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다|W
+**/extender[land_patch]/alignenabled|block|문서|메시를 지면에 맞춰 정렬할지 여부. 기본 1|W
+**/extender[land_patch]/alignstacked|block|문서|정렬에 쓸 지면 층. 0은 원래 지면(참호용), 1은 이미 파인 지면(구덩이용). 기본 1|W
+**/extender[land_patch]/alignvolumes|block|문서|볼륨 중심에서 지면까지의 거리가 변하지 않도록 볼륨을 옮길지 여부. 기본 0|W
+**/extender[land_patch]/randomrotate|block|문서|편집기에서 지면에 놓을 때 무작위로 회전시킬지 여부. 기본 0|W
+**/extender[edifice]|block|문서|지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능|G
+**/firingtimeoutdistancefactor/#row|block|문서|거리에 따라 점사 사이 대기 시간을 바꾸는 표의 한 줄. 보병에게만 적용된다. 두 값 각각의 뜻은 출처에 없다|G
+**/detonationthickness|block|문서|맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다|G
+**/zeroingaccuracy|block|추정|같은 표적에 연속으로 쏠 때의 발수별 명중 보정값으로 보인다 (추정: 개발자 변경 기록이 zeroing을 "연속으로 쏠수록 명중률이 오르는 보정"이라고 설명. 값이 차례로 줄어드는 수열)|G
+**/speed2|block|문서|뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다|M
+**/bone/speed|block|문서|뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다|M
+**/weaponry/place/type|block|문서|무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총|xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인)

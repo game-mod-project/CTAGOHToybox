@@ -30,7 +30,7 @@
 | `/actor/(include)` | include | [str]x1696 | 1694 | 1696 | "/properties/stuff_small.ext" ¦ "/properties/stuff_weapon.ext" ¦ "/properties/stuff_grenade.ext" ¦ "/properties/stuff_mine.ext" ¦ "/properties/stuff_grenade_mine.ext" ¦ "/properties/shadow/round.inc" ¦ "/properties/construction.inc" | 미확인(자동) |  |  |  |
 | `/actor/bone` | block | [str]x1 | 1 | 1 | "foresight3" | 미확인(자동) |  |  |  |
 | `/actor/bone/limits` | block | [num num]x1 | 1 | 1 | -0 15 | 추정 | 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | 게임 파일 주석 |  |
-| `/actor/bone/speed2` | block | [num]x1 | 1 | 1 | 10 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 |  |
+| `/actor/bone/speed2` | block | [num]x1 | 1 | 1 | 10 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/actor/collider` | block | [str]x17 | 17 | 17 | "mine.at" ¦ "mine.ap" ¦ "stuff" | 추정 | 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/actor/extender[mine]` | block | [str]x18 | 18 | 18 | "mine" | 추정 | 지뢰 기능 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/actor/extender[mine]/time` | block | [num]x18 | 18 | 18 | 3 | 확인 | 매설에 더해지는 시간. 실제 매설 시간은 보병의 매설 애니메이션 길이에 이 값을 더한 것 | 게임 파일 주석 | actual mining time equals the lenght of time for the human animation + this value if value is less than animation lenght. Otherwise this value is an absolute and animation will loop. ¦ actual mining time equals the length of time for the human animation + this value if value is less than animation length. Otherwise this value is an absolute and animation will loop. |
@@ -47,17 +47,17 @@
 | `/actor/texmod` | block | [str]x3 | 3 | 3 | "black" ¦ "green" ¦ "camo" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "black", "camo") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume` | block | [str]x82 | 63 | 82 | "body" ¦ "body1" ¦ "select" ¦ "body2" ¦ "casing1" ¦ "casing2" ¦ "shield" ¦ "shell1" ¦ "shell2" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able` | block | [atom]x23 []x2 | 20 | 25 | clear ¦ | 추정 | 볼륨이 반응하는 상호작용 묶음 (추정: 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/able/blast` | block | []x18 | 17 | 18 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/able/bullet` | block | []x20 | 18 | 20 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/able/blast` | block | []x18 | 17 | 18 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/actor/volume/able/bullet` | block | []x20 | 18 | 20 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/actor/volume/able/contact` | block | []x22 | 18 | 22 | 예: | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/contact_ground` | block | []x22 | 18 | 22 | 예: | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/actor/volume/able/select` | block | []x23 | 19 | 23 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/able/touch` | block | []x24 | 20 | 24 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/able/touch` | block | []x24 | 20 | 24 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/actor/volume/able/visible` | block | []x3 [num]x2 | 5 | 5 | 0 | 미확인 | able의 하위. 값 0 |  |  |
-| `/actor/volume/density` | block | [num]x19 | 19 | 19 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/density` | block | [num]x19 | 19 | 19 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/actor/volume/material` | block | [str]x10 | 10 | 10 | "wood" ¦ "glass" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/tags` | block | [str]x19 | 16 | 19 | "body" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/tags` | block | [str]x19 | 16 | 19 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/actor/volume/thickness` | block | [num]x40 | 36 | 40 | 1 ~ 10 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 |  |
 | `/entity` | block | []x13 | 13 | 13 | 예: | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 |  |
 | `/entity/(include)` | include | [str]x10 | 10 | 10 | "/properties/stuff_small.ext" ¦ "/properties/stuff_grenade.ext" ¦ "/properties/stuff_weapon.ext" | 미확인(자동) |  |  |  |
@@ -127,14 +127,14 @@
 | `/game_entity/texmod` | block | [str]x1 | 1 | 1 | "ger" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume` | block | [str]x412 | 410 | 412 | "body" ¦ "fuel" ¦ "body1" ¦ "body2" ¦ "select" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able` | block | []x285 [atom]x9 | 294 | 294 | ¦ clear | 추정 | 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (추정: 하위가 bullet, blast, touch 등 인자 없는 플래그) | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/able/blast` | block | []x288 | 288 | 288 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/able/bullet` | block | []x284 | 284 | 284 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/able/blast` | block | []x288 | 288 | 288 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/game_entity/volume/able/bullet` | block | []x284 | 284 | 284 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/game_entity/volume/able/contact` | block | []x13 | 13 | 13 | 예: | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/contact_ground` | block | []x12 | 12 | 12 | 예: | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/game_entity/volume/able/select` | block | []x12 | 12 | 12 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/able/touch` | block | []x293 | 293 | 293 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/density` | block | [num]x2 | 2 | 2 | 2 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/able/touch` | block | []x293 | 293 | 293 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/game_entity/volume/density` | block | [num]x2 | 2 | 2 | 2 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/game_entity/volume/tags` | block | [str]x9 | 9 | 9 | "body" ¦ "pour_over" | 추정 | 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/thickness` | block | [num]x393 | 392 | 393 | 1 ~ 50 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 |  |
 
@@ -257,7 +257,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/body/proper` | block | [atom atom]x36 | 36 | 36 | body sensible | 미확인(자동) |  |  |  |
 | `/actor/bone` | block | [str]x1 | 1 | 1 | "foresight3" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/actor/bone/limits` | block | [num num]x1 | 1 | 1 | -0 15 | 추정 | 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | 게임 파일 주석 | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° |
-| `/actor/bone/speed2` | block | [num]x1 | 1 | 1 | 10 | 추정 | 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | 게임 파일 주석 | manual handcrack, extremely slow ¦ remote controlled from inside |
+| `/actor/bone/speed2` | block | [num]x1 | 1 | 1 | 10 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |
 | `/actor/collider` | block | [str]x1747 | 1694 | 1747 | "stuff" ¦ "grenade" ¦ "nothing" ¦ "mine.at" ¦ "mine.ap" ¦ "mine.ap.grenade" ¦ "construction" | 추정 | 충돌 분류 이름. set/colliders.set의 항목을 가리키는 것으로 보인다 (추정: 값 "vehicle", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/actor/constrain` | block | [atom]x1693 | 1693 | 1693 | ground | 미확인 | 값은 ground, none 등. 배치 제약으로 보이나 확인하지 못함 |  |  |
 | `/actor/extender[mine]` | block | [str]x36 | 18 | 36 | "mine" | 추정 | 지뢰 기능 (추정: 이름) | 파일 구조와 값에서 추론 |  |
@@ -287,17 +287,17 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/texmod` | block | [str]x3 | 3 | 3 | "black" ¦ "green" ¦ "camo" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "black", "camo") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume` | block | [str]x9486 | 1694 | 9486 | "body" ¦ "select" ¦ "body1" ¦ "body2" ¦ "shield" ¦ "fuel" ¦ "magazine" ¦ "casing1" ¦ "casing2" ¦ "shell1" ¦ "shell2" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/actor/volume/able` | block | []x6000 [atom]x3566 | 1694 | 9566 | ¦ clear | 추정 | 볼륨이 반응하는 상호작용 묶음 (추정: 하위 플래그) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/actor/volume/able/blast` | block | []x1693 | 1675 | 1693 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/actor/volume/able/bullet` | block | []x1695 | 1675 | 1695 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | required for AT-Grenades with cumaltive damage |
+| `/actor/volume/able/blast` | block | []x1693 | 1675 | 1693 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/actor/volume/able/bullet` | block | []x1695 | 1675 | 1695 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | required for AT-Grenades with cumaltive damage |
 | `/actor/volume/able/contact` | block | []x1697 | 1675 | 1697 | 예: | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/contact_ground` | block | []x1836 | 1675 | 1836 | 예: | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/obstacle` | block | [num]x974 | 140 | 974 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/actor/volume/able/select` | block | []x3373 | 1676 | 3373 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/able/touch` | block | []x3567 | 1694 | 3567 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/able/touch` | block | []x3567 | 1694 | 3567 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/actor/volume/able/visible` | block | [num]x5027 []x1678 | 1676 | 6705 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/actor/volume/density` | block | [num]x1750 | 1694 | 1750 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/density` | block | [num]x1750 | 1694 | 1750 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/actor/volume/material` | block | [str]x10 | 10 | 10 | "wood" ¦ "glass" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/tags` | block | [str]x19 | 16 | 19 | "body" | 추정 | 볼륨에 붙이는 태그 (추정: 값 "no_target") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/actor/volume/tags` | block | [str]x19 | 16 | 19 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/actor/volume/thickness` | block | [num]x5204 | 1676 | 5204 | 1 ~ 10 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/actor/zclipvisibility` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/entity` | block | [atom]x10 []x3 | 13 | 13 | game_entity ¦ | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
@@ -335,15 +335,15 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/spriteview/sprite/timer/duration` | block | [num]x1 | 1 | 1 | 1.2 | 미확인(자동) |  |  |  |
 | `/entity/volume` | block | [str]x60 | 10 | 60 | "body" ¦ "select" ¦ "body1" ¦ "body2" ¦ "fuel" ¦ "shield" ¦ "magazine" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/entity/volume/able` | block | []x38 [atom]x22 | 10 | 60 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/entity/volume/able/blast` | block | []x10 | 10 | 10 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/entity/volume/able/bullet` | block | []x10 | 10 | 10 | 예: | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | required for AT-Grenades with cumaltive damage |
+| `/entity/volume/able/blast` | block | []x10 | 10 | 10 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/entity/volume/able/bullet` | block | []x10 | 10 | 10 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | required for AT-Grenades with cumaltive damage |
 | `/entity/volume/able/contact` | block | []x11 | 10 | 11 | 예: | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/entity/volume/able/contact_ground` | block | []x11 | 10 | 11 | 예: | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/entity/volume/able/obstacle` | block | [num]x7 | 1 | 7 | 0 | 추정 | 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/entity/volume/able/obstacle` | block | [num]x7 | 1 | 7 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/entity/volume/able/select` | block | []x20 | 10 | 20 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/entity/volume/able/touch` | block | []x22 | 10 | 22 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/entity/volume/able/visible` | block | [num]x30 []x10 | 10 | 40 | 0 | 추정 | 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/entity/volume/density` | block | [num]x11 | 10 | 11 | 0 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/entity/volume/able/touch` | block | []x22 | 10 | 22 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/entity/volume/able/visible` | block | [num]x30 []x10 | 10 | 40 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/entity/volume/density` | block | [num]x11 | 10 | 11 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/entity/volume/thickness` | block | [num]x31 | 10 | 31 | 1 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |
 | `/game_entity` | block | [atom]x512 []x34 | 546 | 546 | game_entity ¦ | 추정 | 엔티티 정의의 최상위 블록. 차량·화포·보병 외형·일부 아이템이 쓴다 (추정: 파일 구조) | 파일 구조와 값에서 추론 | june '41 ¦ jan 45 |
 | `/game_entity/armor` | block | []x4 | 2 | 4 | 예: | 추정 | 장갑 판정 설정 묶음 (추정: 하위가 setting/threshold) | 파일 구조와 값에서 추론 |  |
@@ -407,16 +407,16 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/texmod` | block | [str]x1 | 1 | 1 | "ger" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume` | block | [str]x3060 | 525 | 3060 | "body" ¦ "select" ¦ "body1" ¦ "body2" ¦ "fuel" ¦ "shield" ¦ "magazine" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/game_entity/volume/able` | block | []x1937 [atom]x1041 | 513 | 2978 | ¦ clear | 추정 | 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (추정: 하위가 bullet, blast, touch 등 인자 없는 플래그) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/game_entity/volume/able/blast` | block | []x775 | 487 | 775 | 예: | 추정 | 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/game_entity/volume/able/bullet` | block | []x771 [num]x6 | 493 | 777 | 0 | 추정 | 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 | required for AT-Grenades with cumaltive damage |
+| `/game_entity/volume/able/blast` | block | []x775 | 487 | 775 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/game_entity/volume/able/bullet` | block | []x771 [num]x6 | 493 | 777 | 0 | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | required for AT-Grenades with cumaltive damage |
 | `/game_entity/volume/able/contact` | block | []x505 [num]x11 | 498 | 516 | 0 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/contact_ground` | block | []x536 | 487 | 536 | 예: | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/nowounddecal` | block | []x6 | 6 | 6 | 예: | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/obstacle` | block | [num]x283 | 61 | 283 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/game_entity/volume/able/select` | block | []x993 | 494 | 993 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/volume/able/touch` | block | []x1324 | 495 | 1324 | 예: | 추정 | 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/able/touch` | block | []x1324 | 495 | 1324 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/game_entity/volume/able/visible` | block | [num]x1371 []x487 | 493 | 1858 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/game_entity/volume/density` | block | [num]x510 | 494 | 510 | 0 ~ 2 | 추정 | 볼륨의 밀도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/density` | block | [num]x510 | 494 | 510 | 0 ~ 2 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/game_entity/volume/material` | block | [str]x6 | 6 | 6 | "fabric" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/tags` | block | [str]x9 | 9 | 9 | "body" ¦ "pour_over" | 추정 | 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/game_entity/volume/thickness` | block | [num]x1819 | 485 | 1819 | 0.01 ~ 50 | 추정 | 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 게임 파일 주석 | 15 + 4 ¦ 89 + 89 |

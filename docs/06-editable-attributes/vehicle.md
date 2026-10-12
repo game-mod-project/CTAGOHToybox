@@ -6,18 +6,18 @@
 
 | 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |
 |---|---|---|---|---|---|---|---|---|
-| 본체 | 차량 엔티티 | `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def` | 282 | 18 | 6 | 126 | 81 | 51 |
-| 연관 | 차량 전용 속성 (.ext) | `entity/-vehicle/**/*.ext` | 180 | 1 | 10 | 97 | 40 | 32 |
-| 연관 | 차량 전용 속성 (.inc) | `entity/-vehicle/**/*.inc` | 113 | 0 | 3 | 59 | 39 | 12 |
-| 연관 | 공통 속성 (.ext) | `properties/**/*.ext` | 888 | 42 | 56 | 533 | 170 | 87 |
-| 연관 | 공통 속성 (.inc) | `properties/**/*.inc` | 605 | 136 | 67 | 271 | 30 | 101 |
+| 본체 | 차량 엔티티 | `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def` | 282 | 18 | 14 | 122 | 81 | 47 |
+| 연관 | 차량 전용 속성 (.ext) | `entity/-vehicle/**/*.ext` | 180 | 1 | 15 | 92 | 40 | 32 |
+| 연관 | 차량 전용 속성 (.inc) | `entity/-vehicle/**/*.inc` | 113 | 0 | 9 | 55 | 39 | 10 |
+| 연관 | 공통 속성 (.ext) | `properties/**/*.ext` | 888 | 42 | 110 | 481 | 170 | 85 |
+| 연관 | 공통 속성 (.inc) | `properties/**/*.inc` | 605 | 136 | 102 | 246 | 30 | 91 |
 
 ## 본체: 차량 엔티티
 
 - 위치: `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def`
 - 연결: 유닛 그 자체. 파괴 모델용 `.def`도 같은 형식이다
 
-### 뜻을 아는 속성 (231개)
+### 뜻을 아는 속성 (235개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -114,7 +114,7 @@
 | `/game_entity/(define "crew")/placer/place/group` | "%group" | **추정** 자리의 분류. 값 "crew" 등 (추정: 값) |  | 1 | `entity/-vehicle/usa/btr/m20/m20.def` |
 | `/game_entity/(define "crew")/placer/place/linkbone` | "%bone" | **문서** 무기가 붙는 뼈대 |  | 1 | `entity/-vehicle/usa/btr/m20/m20.def` |
 | `/game_entity/##bone` | "commander_rot" | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) |  | 43 | `entity/-vehicle/eng/tank_medium/sherman3_late/sherman3_late.def` |
-| `/game_entity/##bone/speed2` | 180 | **추정** 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | manual handcrack, extremely slow ¦ remote controlled from inside | 43 | `entity/-vehicle/eng/tank_medium/sherman3_late/sherman3_late.def` |
+| `/game_entity/##bone/speed2` | 180 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | manual handcrack, extremely slow ¦ remote controlled from inside | 43 | `entity/-vehicle/eng/tank_medium/sherman3_late/sherman3_late.def` |
 | `/game_entity/##extender/cooldown` | 5 | **추정** 재사용 대기 시간 (추정: 이름과 값 5~20) | smoke launcher easily accessible from turret ¦ smoke launcher outside vehicle | 1 | `entity/-vehicle/finland/tank_medium/panzer4j_fin/panzer4j_fin.def` |
 | `/game_entity/##extender/itemtags` | "grenade nbks" | **추정** 사용하는 탄의 태그 (추정: 값 "mortareng_50 sm") |  | 1 | `entity/-vehicle/finland/tank_medium/panzer4j_fin/panzer4j_fin.def` |
 | `/game_entity/##sensor/visor` | "main" ¦ "around" | **추정** 감지기 하나. 문자열이 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `entity/-vehicle/usa/btr/m20/m20.def` |
@@ -135,7 +135,7 @@
 | `/game_entity/bone/("turret_light")` | power_traverse ( 0 ) ¦ power_traverse ( 24 ) ¦ power_traverse ( 14 ) ¦ power_traverse ( 18 ) ¦ power_traverse ( 55 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `power_traverse` → `speed2` = `( + 10 ( / %power_traverse 2.5 ) )` |  | 94 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
 | `/game_entity/bone/("turret_medium")` | power_traverse ( 24 ) ¦ power_traverse ( 19 ) ¦ power_traverse ( 0 ) ¦ power_traverse ( 25 ) ¦ power_traverse ( 16 ) ¦ power_traverse ( 6 ) ¦ power_traverse ( 20 ) ¦ power_traverse ( 36 ) ¦ power_traverse ( 14 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `power_traverse` → `speed2` = `( + 6 ( / %power_traverse 2.5 ) )` |  | 132 | `entity/-vehicle/eng/btr/aec_mk2/aec_mk2.def` |
 | `/game_entity/bone/limits` | 예: -15 15 (13종 이상) | **추정** 회전 한계 각도 두 개 (추정: 주석 "elevation range = 0 +70") | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° | 563 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
-| `/game_entity/bone/speed2` | 1.5 ~ 360 | **추정** 회전 속도 (추정: 주석 "manual handcrank, extremely slow") | manual handcrack, extremely slow ¦ remote controlled from inside | 592 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
+| `/game_entity/bone/speed2` | 1.5 ~ 360 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | manual handcrack, extremely slow ¦ remote controlled from inside | 592 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
 | `/game_entity/brain/properties/fire_mode` | hold | **추정** 기본 사격 태세 (추정: 값 hold) |  | 50 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng_recon/blenheim_mk1_eng_recon.def` |
 | `/game_entity/chassis` | ¦ "track" ¦ "wheel" ¦ "airborne" ¦ "water" ¦ "human_carrier" ¦ "railway" | **추정** 구동계 정의. 문자열은 종류: "wheel", "track" 등 (추정: properties/airborne.ext의 {Chassis "wheel" ...}) | cannot move. this Maxim version is for fixed position use only. ¦ cannot move. | 684 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/chassis/("car_trace")` | 예: fx ( "tracewheel05" ) step ( 0.07 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) (13종 이상) | **정의** 매크로 호출. 인자가 들어가는 자리: `wheell` → `track`; `fx` → `track/tracer/view`; `bonel` → `track/tracer/bone` [자국을 남기는 기준 뼈대 이름]; `step` → `track/tracer/step` [궤적(바퀴·궤도 자국)을 찍는 간격, 미터]; `wheelr` → `track`; `boner` → `track/tracer/bone` [자국을 남기는 기준 뼈대 이름] |  | 305 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
@@ -177,6 +177,7 @@
 | `/game_entity/extender[cannon]/attack/workers` | "gunner" "charger" "charger2" "commander" ¦ "gunner" "gunner2" "charger" "charger2" "commander" ¦ "gunner" "charger" "commander" ¦ "gunner" "gunner2" "charger" "charger2" "charger3" "commander" ¦ "gunner" "commander" ¦ "gunner" ¦ "" "" "" "" "" ¦ "" "" "" ¦ clear | **추정** 그 상태에서 일하는 자리 이름 목록. minWorkers 뒤는 최소 인원 (추정: 값) |  | 134 | `entity/-vehicle/eng/cannon/114mm_bl_4_5/114mm_bl_4_5.def` |
 | `/game_entity/extender[cannon]/move/workers` | "driver1" "driver2" "driver3" "driver4" minWorkers 2 ¦ "driver1" "driver2" "driver3" "driver4" "driver5" minWorkers 2 ¦ "driver1" "driver2" minWorkers 1 ¦ clear ¦ "driver1" "driver2" "driver3" minWorkers 2 ¦ "driver1" "driver2" "driver3" "driver4" "driver5" "driver6" minWorkers 2 ¦ "driver1" "driver2" minWorkers 2 ¦ "driver" minWorkers 1 ¦ "driver1" "driver2" "driver3" "driver4" minWorkers 3 ¦ "driver1" "driver2" "driver3" "driver4" "driver5" minWorkers 1 | **추정** 그 상태에서 일하는 자리 이름 목록. minWorkers 뒤는 최소 인원 (추정: 값) |  | 149 | `entity/-vehicle/eng/cannon/114mm_bl_4_5/114mm_bl_4_5.def` |
 | `/game_entity/extender[cannon]/trailing/workers` | "seat1" "seat2" "seat3" "seat4" ¦ "seat1" "seat2" "seat3" "seat4" "seat5" ¦ "seat1" "seat2" "seat3" ¦ "seat1" "seat2" "seat3" "seat4" "seat5" "seat6" ¦ clear ¦ "seat1" "seat2" | **추정** 그 상태에서 일하는 자리 이름 목록. minWorkers 뒤는 최소 인원 (추정: 값) |  | 126 | `entity/-vehicle/eng/cannon/114mm_bl_4_5/114mm_bl_4_5.def` |
+| `/game_entity/extender[edifice]` | "edifice" | **문서** 지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능 |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
 | `/game_entity/extender[enumerator]` | "enumerator" | **추정** 차량 번호 표시 기능 (추정: 하위 digit_folder) |  | 328 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
 | `/game_entity/extender[enumerator]/digit_folder` | "us2" ¦ "ru1" ¦ "ger" ¦ "np" ¦ "ger2" ¦ "moe" ¦ "np_w" ¦ "us3" ¦ "us1" ¦ "ru3" ¦ "c47" ¦ "ru2" | **추정** 숫자 텍스처 폴더 이름 (추정: 이름과 값 "us2") |  | 328 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
 | `/game_entity/extender[inventory]` | "inventory" | **추정** 차량 화물칸 기능 (추정: 하위 box) |  | 747 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
@@ -185,7 +186,8 @@
 | `/game_entity/extender[inventory]/box/weight` | 2100 ~ 100000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) |  | 16 | `entity/-vehicle/eng/marine/drifter_eng/drifter_eng.def` |
 | `/game_entity/extender[inventory]/weapon` | "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | **추정** 인벤토리에 장착할 수 있는 무기 종류 (추정: 값 "mgun") | Placeholder weapon ¦ !!! PLACEHOLDER | 102 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
 | `/game_entity/extender[inventory]/weapon/mask` | "mountable" | **문서** 엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다 |  | 102 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
-| `/game_entity/extender[land_patch]/terraintype` | "road" "bridge_steel" | **추정** 이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel") |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
+| `/game_entity/extender[land_patch]` | "land_patch" | **문서** 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
+| `/game_entity/extender[land_patch]/terraintype` | "road" "bridge_steel" | **문서** 이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다 |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
 | `/game_entity/extender[shield]` | "shield" | **추정** 방패 기능 (추정: 이름. 화포에 쓰임) |  | 206 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
 | `/game_entity/extender[smokescreen]` | "smokescreen" | **추정** 연막 발사 기능 (추정: 하위 키) |  | 136 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
 | `/game_entity/extender[smokescreen]/cooldown` | 5 ~ 20 | **추정** 재사용 대기 시간 (추정: 이름과 값 5~20) | smoke launcher easily accessible from turret ¦ smoke launcher outside vehicle | 136 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.def` |
@@ -211,13 +213,13 @@
 | `/game_entity/volume/able/contact` | 0 ~ 1 | **추정** 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) |  | 57 | `entity/-vehicle/eng/btr/x/daimler_mk1_xx/daimler_mk1_lj_xx.def` |
 | `/game_entity/volume/able/contact_ground` | 0 | **추정** 지면 접촉 판정 대상 (추정: able의 하위 플래그) |  | 3 | `entity/-vehicle/germany/btr/sdkfz10_4/sdkfz10_4.def` |
 | `/game_entity/volume/able/nowounddecal` | 0 | **추정** 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) |  | 53 | `entity/-vehicle/eng/btr/x/wasp_mk2c_xx/wasp_mk2c_xx.def` |
-| `/game_entity/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (같은 자리의 본체 설명을 가져옴) |  | 493 | `entity/-vehicle/eng/airborne/x/blenheim_mk1_eng_x/blenheim_mk1_eng_recon_x.def` |
-| `/game_entity/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (같은 자리의 본체 설명을 가져옴) |  | 46 | `entity/-vehicle/eng/airborne/horsa_mk1/horsa_mk1.def` |
+| `/game_entity/volume/able/obstacle` | 0 | **추정** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 (같은 자리의 본체 설명을 가져옴) |  | 493 | `entity/-vehicle/eng/airborne/x/blenheim_mk1_eng_x/blenheim_mk1_eng_recon_x.def` |
+| `/game_entity/volume/able/visible` | 0 | **추정** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 (같은 자리의 본체 설명을 가져옴) |  | 46 | `entity/-vehicle/eng/airborne/horsa_mk1/horsa_mk1.def` |
 | `/game_entity/volume/caststeel` | 0.8063 | **확인** 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective | 144 | `entity/-vehicle/eng/btr/x/aec_mk1_xx/aec_mk1_xx.def` |
 | `/game_entity/volume/component` | "body" ¦ "turret" ¦ "gun" ¦ "engine" ¦ "bodyback" ¦ "gun1" ¦ "gun2" | **추정** 이 볼륨이 속한 부품 이름 (추정: vehicle.ext의 wheel 매크로가 {volume %0 {component %0}}) | Bucket | 44 | `entity/-vehicle/eng/tank_heavy/x/churchill_mk1_xx/churchill_mk1_xx.def` |
-| `/game_entity/volume/density` | 0 ~ 0.1 | **추정** 볼륨의 밀도 (추정: 이름) |  | 7 | `entity/-vehicle/eng/marine/goatley_boat/goatley_boat.def` |
+| `/game_entity/volume/density` | 0 ~ 0.1 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 7 | `entity/-vehicle/eng/marine/goatley_boat/goatley_boat.def` |
 | `/game_entity/volume/material` | "wood" ¦ "steel" ¦ "fabric" ¦ "glass" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") |  | 95 | `entity/-vehicle/eng/airborne/horsa_mk1/horsa_mk1.def` |
-| `/game_entity/volume/quality` | "large_flaw" | **추정** 장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값) |  | 8 | `entity/-vehicle/eng/tank_medium/x/achilles_mk2_xx/achilles_mk2_xx.def` |
+| `/game_entity/volume/quality` | "large_flaw" | **추정** 장갑 결함 등급. "large_flaw"는 큰 결함 (추정: 값. 개발자가 결함 장갑을 소·중·대 세 등급으로 구현했다고 밝힘) |  | 8 | `entity/-vehicle/eng/tank_medium/x/achilles_mk2_xx/achilles_mk2_xx.def` |
 | `/game_entity/volume/tags` | 예: "invisible" (13종 이상) | **추정** 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") |  | 159 | `entity/-vehicle/eng/cannon/152mm_bl_6/152mm_bl_6.def` |
 | `/game_entity/volume/thickness` | 0.5 ~ 406 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) | 15 + 4 ¦ 89 + 89 | 891 | `entity/-vehicle/eng/airborne/x/blenheim_mk1_eng_xx/blenheim_mk1_eng_recon_xx.def` |
 | `/game_entity/volume/thickness/bottom` | 1 ~ 200 | **추정** 하면 두께 (추정: thickness의 하위. 이름) | Overhang (above tracks) ¦ 4mm + .25" | 330 | `entity/-vehicle/eng/btr/x/aec_mk1_xx/aec_mk1_xx.def` |
@@ -232,6 +234,7 @@
 | `/game_entity/weaponry/##place/foresight` | "vision_rot" ¦ "foresight2" | **확인** 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 |  | 45 | `entity/-vehicle/eng/tank_medium/sherman3_late/sherman3_late.def` |
 | `/game_entity/weaponry/##place/gunner` | "commander" ¦ "driver" ¦ "gunner4" ¦ "gunner2" ¦ "gunner" | **추정** 이 무장을 쏘는 자리 이름 (추정: 값이 placer의 자리 이름) |  | 51 | `entity/-vehicle/eng/airborne/typhoon_mk1b_recon/typhoon_mk1b_recon.def` |
 | `/game_entity/weaponry/##place/linkbone` | "mgun2" ¦ "mgun_rot" | **문서** 무기가 붙는 뼈대 |  | 4 | `entity/-vehicle/finland/tank_medium/panzer4j_fin/panzer4j_fin.def` |
+| `/game_entity/weaponry/##place/type` | "commander" ¦ "rear" ¦ "aa" | **문서** 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 |  | 48 | `entity/-vehicle/eng/tank_medium/sherman3_late/sherman3_late.def` |
 | `/game_entity/weaponry/##place/weapon` | "commander_vision" ¦ "bomb_dropper_eng_250x2" filled ¦ "bomb_dropper_usa_250x3" filled ¦ "thrower_v" filling "f1 grenade" 1 | **추정** 장착 무기. 첫 문자열이 무기 이름, filling 뒤가 장전된 탄과 수량 (같은 자리의 본체 설명을 가져옴) | Placeholder weapon ¦ !!! PLACEHOLDER | 47 | `entity/-vehicle/eng/airborne/typhoon_mk1b_recon/typhoon_mk1b_recon.def` |
 | `/game_entity/weaponry/place` | 예: "mgun1" (13종 이상) | **추정** 무장 장착 위치 하나. 문자열이 위치 이름 (추정: 값 "mgun1", "gun") | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas | 654 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/weaponry/place/("abm_dymamic_aa")` | zeroing ( 2.25 ) dispersion ( 0.50 ) ¦ zeroing ( 1.95 ) dispersion ( 0.24 ) ¦ zeroing ( 2.25 ) dispersion ( 0.3 ) ¦ zeroing ( 2.5 ) dispersion ( 0.50 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `dispersion` → `("accuracy_by_motion")` = `max_linear ( 10 ) accuracy_by_linear ( 0.4 ) max_angular ( 12 ) accuracy_by_angular ( 0.4 ) disorder_time ( %dispersion ) order_time ( %zeroing )`; `zeroing` → `("accuracy_by_motion")` = `max_linear ( 10 ) accuracy_by_linear ( 0.4 ) max_angular ( 12 ) accuracy_by_angular ( 0.4 ) disorder_time ( %dispersion ) order_time ( %zeroing )` |  | 10 | `entity/-vehicle/finland/cannon/75mm_itk37/75mm_itk37.def` |
@@ -251,9 +254,10 @@
 | `/game_entity/weaponry/place/foresight` | 예: "foresight3" (13종 이상) | **확인** 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 |  | 326 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/weaponry/place/gunner` | 예: "driver" (13종 이상) | **추정** 이 무장을 쏘는 자리 이름 (추정: 값이 placer의 자리 이름) |  | 511 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/weaponry/place/linkbone` | "mgun" ¦ "mgun2" ¦ "mgun_rot" ¦ "mgun1" ¦ "mgun3" ¦ "mgun_bone" ¦ "mgun4" ¦ "dshk_mgunF" ¦ "dshk_mgunB" | **추정** 무장을 붙이는 뼈대 이름 (추정: 값 "mgun") |  | 160 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
+| `/game_entity/weaponry/place/type` | 예: "rear" (13종 이상) | **문서** 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 |  | 414 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/weaponry/place/weapon` | 예: "browning_303_mk2" filling "ammo mgun_usa belt" 500 (13종 이상) | **추정** 장착 무기. 첫 문자열이 무기 이름, filling 뒤가 장전된 탄과 수량 (추정: 값. set/stuff의 파일명과 일치) | Placeholder weapon ¦ !!! PLACEHOLDER | 616 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 
-### 뜻을 모르는 속성 (51개)
+### 뜻을 모르는 속성 (47개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -291,9 +295,7 @@
 | `/game_entity/extender[detail]` | "detail" | 미확인 |  | 3 | `entity/-vehicle/eng/tank_medium/valentine_mk2/valentine_mk2.def` |
 | `/game_entity/extender[detail]/detail1` | 0 ~ 1 | 미확인 |  | 3 | `entity/-vehicle/eng/tank_medium/valentine_mk2/valentine_mk2.def` |
 | `/game_entity/extender[detail]/random` | 0 | 미확인. ## 블록의 하위. 용도 불명 |  | 2 | `entity/-vehicle/germany/car/kubelwagen/kubelwagen.def` |
-| `/game_entity/extender[edifice]` | "edifice" | 미확인 |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
 | `/game_entity/extender[inventory]/box/item/user` | "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | 미확인 |  | 99 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
-| `/game_entity/extender[land_patch]` | "land_patch" | 미확인 |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
 | `/game_entity/placer/crew` | 0 | 미확인. 값 0 또는 인자 없음 |  | 3 | `entity/-vehicle/germany/special/sdkfz302/sdkfz302.def` |
 | `/game_entity/placer/place/handlebone` | "body" ¦ "basis" | 미확인 |  | 13 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
 | `/game_entity/placer/place/turnoff/sensor` | 0 | 미확인. 값 0 또는 인자 없음 |  | 4 | `entity/-vehicle/generic/train/drg_class75/drg_class75.def` |
@@ -304,10 +306,8 @@
 | `/game_entity/volume/able/nolook` | 1 | 미확인. able의 하위. 값 1 |  | 3 | `entity/-vehicle/finland/cannon/x/150mm_h40_xx/150mm_h40_xx.def` |
 | `/game_entity/weaponry/##place/linkanimation` | "off" | 미확인. 값 "off" |  | 4 | `entity/-vehicle/finland/tank_medium/panzer4j_fin/panzer4j_fin.def` |
 | `/game_entity/weaponry/##place/shooter` | "shooter_bb" | 미확인 |  | 2 | `entity/-vehicle/eng/airborne/typhoon_mk1b_recon/typhoon_mk1b_recon.def` |
-| `/game_entity/weaponry/##place/type` | "commander" ¦ "rear" ¦ "aa" | 미확인. 값 "rear" 등 |  | 48 | `entity/-vehicle/eng/tank_medium/sherman3_late/sherman3_late.def` |
 | `/game_entity/weaponry/place/linkanimation` | "off" | 미확인. 값 "off" |  | 155 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
 | `/game_entity/weaponry/place/shooter` | "shooter" ¦ "shooter_mg" ¦ "shooter_bb" ¦ "shooter_b" ¦ "shooter_r" | 미확인 |  | 21 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
-| `/game_entity/weaponry/place/type` | 예: "rear" (13종 이상) | 미확인. 값 "rear" 등 |  | 414 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 
 ## 연관: 차량 전용 속성 (.ext)
 
@@ -413,8 +413,8 @@
 | `/(define "define_place_jump")/placer/place/linkbone` | "attach%i" | **문서** 무기가 붙는 뼈대 |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
 | `/(define "define_place_jump")/volume` | "place%i" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Hull ¦ Superstructure | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
 | `/(define "define_place_jump")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
-| `/(define "define_place_jump")/volume/able/touch` | 1 | **추정** 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
-| `/(define "define_place_jump")/volume/tags` | "attach" "attach_%i" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
+| `/(define "define_place_jump")/volume/able/touch` | 1 | **문서** 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
+| `/(define "define_place_jump")/volume/tags` | "attach" "attach_%i" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
 | `/(define "define_place")/placer/place` | "attach%place" | **추정** 승무원 자리 하나. 문자열이 자리 이름 (같은 자리의 본체 설명을 가져옴) | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
 | `/(define "define_place")/placer/place/linkbone` | "%place" | **문서** 무기가 붙는 뼈대 |  | 1 | `entity/-vehicle/eng/marine/lca/crew.ext` |
 | `/(define "passenger")/boarder/door` | 예: "emit1" (13종 이상) | **추정** 출입 지점 이름 (같은 자리의 본체 설명을 가져옴) |  | 5 | `entity/-vehicle/eng/marine/drifter_eng/crew.ext` |
@@ -452,13 +452,13 @@
 | `/volume/able/contact` | 0 ~ 1 | **추정** 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 15 | `entity/-vehicle/eng/btr/wasp_mk2c/wasp_mk2c.ext` |
 | `/volume/able/contact_ground` | 0 | **추정** 지면 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 32 | `entity/-vehicle/eng/btr/m5_halftrack/m5_halftrack.ext` |
 | `/volume/able/nowounddecal` | 0 | **추정** 피격 자국을 그리지 않음 (같은 자리의 본체 설명을 가져옴) |  | 65 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.ext` |
-| `/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 21 | `entity/-vehicle/eng/tank_heavy/churchill_mk1/churchill_mk1.ext` |
-| `/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) |  | 6 | `entity/-vehicle/finland/tank_light/ft17_fin/ft17_fin.ext` |
+| `/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 21 | `entity/-vehicle/eng/tank_heavy/churchill_mk1/churchill_mk1.ext` |
+| `/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 |  | 6 | `entity/-vehicle/finland/tank_light/ft17_fin/ft17_fin.ext` |
 | `/volume/caststeel` | 0.3 ~ 0.88 | **추정** 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 (같은 자리의 본체 설명을 가져옴) | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective | 174 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.ext` |
 | `/volume/component` | "turret" ¦ "body" ¦ "gun" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) | Bucket | 131 | `entity/-vehicle/eng/btr/staghound_mk1/staghound_mk1.ext` |
 | `/volume/material` | "wood" ¦ "fabric" ¦ "sand" ¦ "concrete" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 17 | `entity/-vehicle/eng/marine/drifter_eng/drifter_eng.ext` |
-| `/volume/quality` | "large_flaw" | **추정** 장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값) |  | 5 | `entity/-vehicle/germany/tank_heavy/jagdtiger/jagdtiger.ext` |
-| `/volume/tags` | 예: "mover" "track" (13종 이상) | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") |  | 204 | `entity/-vehicle/eng/btr/m5_halftrack/m5_halftrack.ext` |
+| `/volume/quality` | "large_flaw" | **추정** 장갑 결함 등급. "large_flaw"는 큰 결함 (추정: 값. 개발자가 결함 장갑을 소·중·대 세 등급으로 구현했다고 밝힘) |  | 5 | `entity/-vehicle/germany/tank_heavy/jagdtiger/jagdtiger.ext` |
+| `/volume/tags` | 예: "mover" "track" (13종 이상) | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 |  | 204 | `entity/-vehicle/eng/btr/m5_halftrack/m5_halftrack.ext` |
 | `/volume/thickness` | 0.5 ~ 250 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) | 15 + 4 ¦ 89 + 89 | 398 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.ext` |
 | `/volume/thickness/bottom` | 1 ~ 200 | **추정** 하면 두께 (같은 자리의 본체 설명을 가져옴) | Overhang (above tracks) ¦ 4mm + .25" | 332 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.ext` |
 | `/volume/thickness/front` | 3 ~ 250 | **추정** 전면 두께 (같은 자리의 본체 설명을 가져옴) | Glacis ¦ Lower front | 339 | `entity/-vehicle/eng/btr/aec_mk1/aec_mk1.ext` |
@@ -509,7 +509,7 @@
 - 위치: `entity/-vehicle/**/*.inc`
 - 연결: 본체나 다른 차량의 `(include "../이름/이름.inc")`. 파생형이 기본형의 값을 물려받을 때 쓴다
 
-### 뜻을 아는 속성 (101개)
+### 뜻을 아는 속성 (103개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -536,7 +536,7 @@
 | `/("wheel")` | args "wheelright" ¦ args "wheelleft" ¦ args "wheelright1" ¦ args "wheelright2" ¦ args "wheelleft1" ¦ args "wheelleft2" ¦ args "wheelright3" ¦ args "wheelleft3" | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume`, `volume/component` [이 볼륨이 속한 부품 이름], `component` |  | 20 | `entity/-vehicle/eng/cannon/140mm_bl_5_5/140mm_bl_5_5.inc` |
 | `/("wood")` | args "bodyback1" ¦ args "bodyback2" ¦ args "bodyback3" ¦ args "bodyback4" ¦ args "bodyback5" ¦ args "bodyback6" ¦ args "bodyback7" | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume` |  | 1 | `entity/-vehicle/eng/car/bedford_oyd/bedford_oyd.inc` |
 | `/##bone` | "commander_rot" | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) |  | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
-| `/##bone/speed2` | 180 | **추정** 회전 속도 (같은 자리의 본체 설명을 가져옴) | manual handcrack, extremely slow ¦ remote controlled from inside | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
+| `/##bone/speed2` | 180 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | manual handcrack, extremely slow ¦ remote controlled from inside | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
 | `/able` | "emit_on_attack" ¦ "emit_passangers_on_enemy" ¦ "emit_passengers_on_enemy" | **추정** 엔티티가 할 수 있는 동작 태그 목록. 예: "emit_passangers_on_enemy", "repair" (같은 자리의 본체 설명을 가져옴) |  | 11 | `entity/-vehicle/eng/btr/m5_halftrack/m5_halftrack.inc` |
 | `/boarder/anm` | 예: "driver" (13종 이상) | **추정** 좌석별 탑승 애니메이션. 문자열이 좌석 이름 (같은 자리의 본체 설명을 가져옴) | gunner ¦ commander | 45 | `entity/-vehicle/eng/btr/m5_halftrack/m5_halftrack.inc` |
 | `/boarder/anm/forward/begin` | 예: "board_big-midcar_driver" (13종 이상) | **추정** 동작을 시작할 때의 애니메이션 이름 (같은 자리의 본체 설명을 가져옴) |  | 22 | `entity/-vehicle/eng/btr/m5_halftrack/m5_halftrack.inc` |
@@ -547,7 +547,7 @@
 | `/bone/("turret_light")` | power_traverse ( 0 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `power_traverse` → `speed2` = `( + 10 ( / %power_traverse 2.5 ) )` |  | 4 | `entity/-vehicle/finland/btr/ba10_fin/ba10_fin.inc` |
 | `/bone/("turret_medium")` | power_traverse ( 19 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `power_traverse` → `speed2` = `( + 6 ( / %power_traverse 2.5 ) )` |  | 1 | `entity/-vehicle/finland/tank_medium/t3476_41_fin/t3476_41_fin.inc` |
 | `/bone/limits` | 예: -5 45 (13종 이상) | **추정** 회전 한계 각도 두 개 (같은 자리의 본체 설명을 가져옴) | AA mode limits ¦ starting point is +20Â° elevation range = 0Â° +70Â° | 36 | `entity/-vehicle/eng/cannon/140mm_bl_5_5/140mm_bl_5_5.inc` |
-| `/bone/speed2` | 1.75 ~ 60 | **추정** 회전 속도 (같은 자리의 본체 설명을 가져옴) | manual handcrack, extremely slow ¦ remote controlled from inside | 40 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
+| `/bone/speed2` | 1.75 ~ 60 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | manual handcrack, extremely slow ¦ remote controlled from inside | 40 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
 | `/brain/properties/fire_mode` | hold | **추정** 기본 사격 태세 (추정: 값 hold) |  | 4 | `entity/-vehicle/eng/cannon/140mm_bl_5_5/140mm_bl_5_5.inc` |
 | `/chassis` | "track" ¦  ¦ "wheel" | **추정** 구동계 정의. 문자열은 종류: "wheel", "track" 등 (같은 자리의 본체 설명을 가져옴) | cannot move. this Maxim version is for fixed position use only. ¦ cannot move. | 49 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
 | `/chassis/("car_trace")` | fx ( "tracewheel05a" ) step ( 0.14 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel03" ) step ( 0.08 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel03a" ) step ( 0.09 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel03d" ) step ( 0.08 ) wheell ( "wlr" ) wheelr ( "wrr" ) bonel ( "FXtraceL2" ) boner ( "FXtraceR2" ) ¦ fx ( "tracewheel06" ) step ( 0.08 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel03" ) step ( 0.08 ) wheell ( "wlr" ) wheelr ( "wrr" ) bonel ( "FXtraceL2" ) boner ( "FXtraceR2" ) ¦ fx ( "tracewheel06" ) step ( 0.07 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel02" ) step ( 0.1 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel02" ) step ( 0.1 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL2" ) boner ( "FXtraceR2" ) ¦ fx ( "tracewheel02a" ) step ( 0.08 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL1" ) boner ( "FXtraceR1" ) ¦ fx ( "tracewheel02a" ) step ( 0.15 ) wheell ( "wlr" ) wheelr ( "wrr" ) bonel ( "FXtraceL2" ) boner ( "FXtraceR2" ) ¦ fx ( "tracewheel02" ) step ( 0.1 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL3" ) boner ( "FXtraceR3" ) | **정의** 매크로 호출. 인자가 들어가는 자리: `wheell` → `track`; `fx` → `track/tracer/view`; `bonel` → `track/tracer/bone` [자국을 남기는 기준 뼈대 이름]; `step` → `track/tracer/step` [궤적(바퀴·궤도 자국)을 찍는 간격, 미터]; `wheelr` → `track`; `boner` → `track/tracer/bone` [자국을 남기는 기준 뼈대 이름] |  | 31 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
@@ -593,13 +593,14 @@
 | `/volume/able` | ¦ clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 22 | `entity/-vehicle/eng/cannon/140mm_bl_5_5/140mm_bl_5_5.inc` |
 | `/volume/able/contact` | 1 | **추정** 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 1 | `entity/-vehicle/eng/cannon/40mm_qf40/40mm_qf40.inc` |
 | `/volume/able/nowounddecal` | 0 | **추정** 피격 자국을 그리지 않음 (같은 자리의 본체 설명을 가져옴) |  | 1 | `entity/-vehicle/usa/car/cckw/cckw.inc` |
-| `/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) |  | 2 | `entity/-vehicle/eng/cannon/40mm_qf2/40mm_qf2.inc` |
+| `/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 |  | 2 | `entity/-vehicle/eng/cannon/40mm_qf2/40mm_qf2.inc` |
 | `/volume/material` | "wood" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 5 | `entity/-vehicle/eng/car/bedford_oyd/bedford_oyd.inc` |
-| `/volume/tags` | "wood" ¦ "invisible" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") |  | 7 | `entity/-vehicle/eng/cannon/40mm_qf2/40mm_qf2.inc` |
+| `/volume/tags` | "wood" ¦ "invisible" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 |  | 7 | `entity/-vehicle/eng/cannon/40mm_qf2/40mm_qf2.inc` |
 | `/volume/thickness` | 0.05 ~ 30 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) | 15 + 4 ¦ 89 + 89 | 6 | `entity/-vehicle/eng/cannon/94mm_qf_3_7_aa/94mm_qf_3_7_aa.inc` |
 | `/weaponry/##place` | "mgun" | **추정** 무장 장착 위치 하나. 문자열이 위치 이름 (같은 자리의 본체 설명을 가져옴) | maybe future feature | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
 | `/weaponry/##place/foresight` | "vision_rot" | **추정** 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 (같은 자리의 본체 설명을 가져옴) |  | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
 | `/weaponry/##place/gunner` | "commander" | **추정** 이 무장을 쏘는 자리 이름 (같은 자리의 본체 설명을 가져옴) |  | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
+| `/weaponry/##place/type` | "commander" | **문서** 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 |  | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
 | `/weaponry/##place/weapon` | "commander_vision" | **추정** 장착 무기. 첫 문자열이 무기 이름, filling 뒤가 장전된 탄과 수량 (같은 자리의 본체 설명을 가져옴) | Placeholder weapon ¦ !!! PLACEHOLDER | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
 | `/weaponry/place` | "gun" ¦ "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | **추정** 무장 장착 위치 하나. 문자열이 위치 이름 (같은 자리의 본체 설명을 가져옴) | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas | 40 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
 | `/weaponry/place/("abm_dymamic_aa")` | zeroing ( 2.25 ) dispersion ( 0.50 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `dispersion` → `("accuracy_by_motion")` = `max_linear ( 10 ) accuracy_by_linear ( 0.4 ) max_angular ( 12 ) accuracy_by_angular ( 0.4 ) disorder_time ( %dispersion ) order_time ( %zeroing )`; `zeroing` → `("accuracy_by_motion")` = `max_linear ( 10 ) accuracy_by_linear ( 0.4 ) max_angular ( 12 ) accuracy_by_angular ( 0.4 ) disorder_time ( %dispersion ) order_time ( %zeroing )` |  | 2 | `entity/-vehicle/eng/cannon/94mm_qf_3_7_aa/94mm_qf_3_7_aa.inc` |
@@ -613,9 +614,10 @@
 | `/weaponry/place/foresight` | "foresight5" ¦ "foresight4" ¦ "foresight6" ¦ "foresight3" | **추정** 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 (같은 자리의 본체 설명을 가져옴) |  | 9 | `entity/-vehicle/finland/btr/ba10_fin/ba10_fin.inc` |
 | `/weaponry/place/gunner` | "gunner" ¦ "gunner3" ¦ "gunner gunner2" minWorkers 1 ¦ "commander" ¦ "charger" ¦ "charger2" ¦ "gunner2" | **추정** 이 무장을 쏘는 자리 이름 (같은 자리의 본체 설명을 가져옴) |  | 25 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
 | `/weaponry/place/linkbone` | "mgun" ¦ "mgun2" ¦ "mgun3" | **문서** 무기가 붙는 뼈대 |  | 10 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
+| `/weaponry/place/type` | "main" ¦ "coaxial" ¦ "hull" ¦ "rear" ¦ "aa" ¦ "mgun_turret_left" ¦ "mgun_turret_right" ¦ "left" ¦ "right" | **문서** 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 |  | 19 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
 | `/weaponry/place/weapon` | 예: "browning_m2" filled (13종 이상) | **추정** 장착 무기. 첫 문자열이 무기 이름, filling 뒤가 장전된 탄과 수량 (같은 자리의 본체 설명을 가져옴) | Placeholder weapon ¦ !!! PLACEHOLDER | 22 | `entity/-vehicle/eng/btr/m5a1_halftrack/m5a1_halftrack.inc` |
 
-### 뜻을 모르는 속성 (12개)
+### 뜻을 모르는 속성 (10개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -627,17 +629,15 @@
 | `/extender[cannon]/rotate_ik_limit` | 0 | 미확인 |  | 3 | `entity/-vehicle/eng/cannon/40mm_qf40/40mm_qf40.inc` |
 | `/extender[inventory]/box/item/user` | "mgun2" ¦ "mgun3" ¦ "mgun" | 미확인 |  | 2 | `entity/-vehicle/usa/btr/m2_halftrack/m2_halftrack.inc` |
 | `/placer/place/handlebone` | "body" | 미확인 |  | 1 | `entity/-vehicle/eng/btr/universal_carrier_mk1/universal_carrier_mk1.inc` |
-| `/weaponry/##place/type` | "commander" | 미확인 |  | 3 | `entity/-vehicle/finland/tank_heavy/kv1_40e_fin/kv1_40e_fin.inc` |
 | `/weaponry/place/item` | "browning_mbrowning_m19a417a1" filling "ammo mgun_usa belt" 250 | 미확인 | 600 rounds ¦ 50 rounds | 1 | `entity/-vehicle/usa/cannon/m2_30cal_tripod/m2_30cal.inc` |
 | `/weaponry/place/linkanimation` | "off" | 미확인 |  | 10 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
-| `/weaponry/place/type` | "main" ¦ "coaxial" ¦ "hull" ¦ "rear" ¦ "aa" ¦ "mgun_turret_left" ¦ "mgun_turret_right" ¦ "left" ¦ "right" | 미확인 |  | 19 | `entity/-vehicle/eng/btr/daimler_dingo/daimler_dingo.inc` |
 
 ## 연관: 공통 속성 (.ext)
 
 - 위치: `properties/**/*.ext`
 - 연결: 본체의 `(include "/properties/...")`. 같은 차종의 모든 유닛이 공유한다
 
-### 뜻을 아는 속성 (801개)
+### 뜻을 아는 속성 (803개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -680,9 +680,9 @@
 | `/(define "armor_medium_cannon")/("cannon_durability")` | body ( 175 ) gun ( 150 ) wheel ( 100 ) shield ( 250 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `body` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %body 0.5 )`; `gun` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `wheel` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `shield` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다] |  | 1 | `properties/armor.ext` |
 | `/(define "armor_medium_cannon")/("cannon_thickness")` | args 6 | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume/thickness` [볼륨의 장갑 두께. 단위는 mm로 보인다] |  | 1 | `properties/armor.ext` |
 | `/(define "armor_tag")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
-| `/(define "armor_tag")/volume/tags` | "armor" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "armor_tag")/volume/tags` | "armor" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "armor")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
-| `/(define "armor")/volume/tags` | "armor" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "armor")/volume/tags` | "armor" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "armor")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "armoredcar_tier1")/("basic_armor")` | args 15 | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `armor/("set_ammo")` = `args %0` |  | 1 | `properties/armor.ext` |
 | `/(define "armoredcar_tier1")/("general_durability")` | body ( 175 ) engine ( 150 ) turret ( 150 ) mantlet ( 100 ) gun ( 150 ) track ( 150 ) ammo ( 120 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `body` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( + 1500 ( * %body 5 ) )`, `perks/component/health/hp_broken` [부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다]; `engine` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %engine 1.5 )`; `mantlet` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `turret` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `gun` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `track` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `ammo` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다] |  | 1 | `properties/armor.ext` |
@@ -694,7 +694,7 @@
 | `/(define "aux_turret")/component/repairtime` | %repair | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/vehicle.ext` |
 | `/(define "ballast")/volume` | "ballast%0" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/marine.ext` |
 | `/(define "ballast")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 1 | `properties/marine.ext` |
-| `/(define "ballast")/volume/tags` | "float" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/marine.ext` |
+| `/(define "ballast")/volume/tags` | "float" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/marine.ext` |
 | `/(define "basic_armor")/armor/("set_ammo")` | args %0 | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `setting/threshold/blast/koef` [폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다], `setting/threshold/blast/koef` = `( * %0 0.25 )` |  | 1 | `properties/armor.ext` |
 | `/(define "basic_armor")/armor/("set_armor")` | 예: args body (13종 이상) | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `setting`, `setting/volumes` = `"%0*"` |  | 1 | `properties/armor.ext` |
 | `/(define "bike_durability")/perks/component` | "body" ¦ tag "wheel" | **추정** 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") |  | 1 | `properties/armor.ext` |
@@ -702,7 +702,7 @@
 | `/(define "bike_durability")/perks/component/health/hp` | %body ¦ 125 | **추정** 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) |  | 1 | `properties/armor.ext` |
 | `/(define "bike_durability")/perks/component/health/hp_broken` | ( + 1500 ( * %body 5 ) ) | **확인** 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | destroys component and cannot be repaired | 1 | `properties/armor.ext` |
 | `/(define "bike_parts")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/bicycle.ext` |
-| `/(define "bike_parts")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/bicycle.ext` |
+| `/(define "bike_parts")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/bicycle.ext` |
 | `/(define "bike_parts")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/bicycle.ext` |
 | `/(define "bike_thickness")/("bike_parts")` | args "body1" %thickness ¦ args "body2" %thickness ¦ args "body3" %thickness ¦ args "body4" %thickness ¦ args "body5" %thickness ¦ args "body6" %thickness ¦ args "body7" %thickness ¦ args "body8" %thickness ¦ args "body9" %thickness ¦ args "body10" %thickness ¦ args "wheelleft1" 0.5 ¦ args "wheelleft2" 0.5 | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume`; args의 2번째 → `volume/thickness` [볼륨의 장갑 두께. 단위는 mm로 보인다] |  | 1 | `properties/bicycle.ext` |
 | `/(define "board_animation")/boarder/anm` | "%place" | **추정** 좌석별 탑승 애니메이션. 문자열이 좌석 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/car_crew.ext` |
@@ -727,7 +727,7 @@
 | `/(define "cannon_durability")/perks/component/health/hp` | %body ¦ %gun ¦ %wheel ¦ %shield | **추정** 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) |  | 1 | `properties/armor.ext` |
 | `/(define "cannon_durability")/perks/component/health/hp_broken` | ( * %body 0.5 ) | **확인** 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | destroys component and cannot be repaired | 1 | `properties/armor.ext` |
 | `/(define "cannon_thickness")/volume` | 예: "body" (13종 이상) | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/cannon_armor.ext` |
-| `/(define "cannon_thickness")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/cannon_armor.ext` |
+| `/(define "cannon_thickness")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/cannon_armor.ext` |
 | `/(define "cannon_thickness")/volume/thickness` | %0 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/cannon_armor.ext` |
 | `/(define "car_thickness")/volume` | 예: "body" (13종 이상) | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/car.ext` |
 | `/(define "car_thickness")/volume/thickness` | %body ¦ %engine | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/car.ext` |
@@ -750,7 +750,7 @@
 | `/(define "component")/component/tags` | %component "hull" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/marine.ext` |
 | `/(define "component")/volume` | %volume | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/marine.ext` |
 | `/(define "component")/volume/component` | %component | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/marine.ext` |
-| `/(define "component")/volume/tags` | %component "hull" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/marine.ext` |
+| `/(define "component")/volume/tags` | %component "hull" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/marine.ext` |
 | `/(define "crew_1_human")/("crew_human")` | place ( driver ) door ( emit1 ) door2 ( emit2 ) visor ( driver ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"emit1" "%place"`, `boarder/link` = `"emit2" "%place"`, `boarder/link` = `"%door" "%place"` 외 3곳; `visor` → `placer/place/visor` [이 자리가 쓰는 시야 이름]; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `off` → `placer/place/turnoff`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름], `boarder/link/anm` = `"left%animation"`, `boarder/link/anm` = `"right%animation"`; `door2` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door2" "%place"`; `anm_left` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름]; `anm_right` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/tank_crew.ext` |
 | `/(define "crew_10_human")/("crew_human")` | place ( driver ) door ( emit1 ) door2 ( emit2 ) visor ( driver ) ¦ place ( gunner ) door ( emit1 ) door2 ( emit2 ) visor ( main ) ¦ place ( charger ) door ( emit1 ) door2 ( emit2 ) visor ( none ) ¦ place ( commander ) door ( emit1 ) door2 ( emit2 ) visor ( around ) ¦ place ( gunner3 ) door ( emit1 ) door2 ( emit2 ) visor ( main1 ) ¦ place ( charger3 ) door ( emit1 ) door2 ( emit2 ) visor ( none ) ¦ place ( gunner4 ) door ( emit1 ) door2 ( emit2 ) visor ( main2 ) ¦ place ( charger4 ) door ( emit1 ) door2 ( emit2 ) visor ( none ) ¦ place ( gunner5 ) door ( emit1 ) door2 ( emit2 ) visor ( mg1 ) ¦ place ( gunner6 ) door ( emit1 ) door2 ( emit2 ) visor ( mg2 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"emit1" "%place"`, `boarder/link` = `"emit2" "%place"`, `boarder/link` = `"%door" "%place"` 외 3곳; `visor` → `placer/place/visor` [이 자리가 쓰는 시야 이름]; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `off` → `placer/place/turnoff`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름], `boarder/link/anm` = `"left%animation"`, `boarder/link/anm` = `"right%animation"`; `door2` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door2" "%place"`; `anm_left` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름]; `anm_right` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/tank_crew.ext` |
 | `/(define "crew_2_human_2")/("crew_human_v")` | place ( commander ) bone ( commander ) door ( emit2 ) animation ( commander ) group ( crew ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"%door" "%place"`; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/car_crew.ext` |
@@ -934,9 +934,9 @@
 | `/(define "engine_part")/component/repairtime` | 20 | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/airborne.ext` |
 | `/(define "engine_part")/component/tags` | "engine%number" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "engine_part")/volume` | "%volume%number%part" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
-| `/(define "engine_part")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
+| `/(define "engine_part")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
 | `/(define "engine_part")/volume/component` | "%volume%number" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "engine_part")/volume/tags` | "engine%number" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "engine_part")/volume/tags` | "engine%number" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "engine_part")/volume/thickness` | 2 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "engine")/("make_component")` | args "engine" "engine" ¦ args "engine1" "engine" ¦ args "engine2" "engine" ¦ args "engine3" "engine" ¦ args "engine4" "engine" ¦ args "engine5" "engine" | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume`; args의 2번째 → `volume/component` [이 볼륨이 속한 부품 이름], `volume/tags` |  | 1 | `properties/vehicle.ext` |
 | `/(define "engine")/component` | "%volume%number" ¦ "engine" | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/airborne.ext` |
@@ -944,9 +944,9 @@
 | `/(define "engine")/component/repairtime` | 20 ¦ %repair | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 2 | `properties/airborne.ext` |
 | `/(define "engine")/component/tags` | "engine%number" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "engine")/volume` | "%volume%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
-| `/(define "engine")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
+| `/(define "engine")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
 | `/(define "engine")/volume/component` | "%volume%number" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "engine")/volume/tags` | "engine%number" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "engine")/volume/tags` | "engine%number" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "engine")/volume/thickness` | 2 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "fighter_tier1")/("plane_durability")` | body ( 100 ) engine ( 50 ) propeller ( 50 ) wing ( 80 ) wheel ( 100 ) part ( 100 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `body` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %body 0.5 )`; `engine` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %engine 1.33 )`; `propeller` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %propeller 1.0 )`; `wing` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %wing 0.66 )`; `wheel` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `part` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다] |  | 1 | `properties/armor.ext` |
 | `/(define "fighter_tier2")/("plane_durability")` | body ( 175 ) engine ( 75 ) propeller ( 50 ) wing ( 125 ) wheel ( 100 ) part ( 100 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `body` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %body 0.5 )`; `engine` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %engine 1.33 )`; `propeller` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %propeller 1.0 )`; `wing` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %wing 0.66 )`; `wheel` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `part` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다] |  | 1 | `properties/armor.ext` |
@@ -959,15 +959,15 @@
 | `/(define "glass")/component/repairorder` | 13 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
 | `/(define "glass")/component/tags` | "glass" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "glass")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
-| `/(define "glass")/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/vehicle.ext` |
-| `/(define "glass")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/vehicle.ext` |
+| `/(define "glass")/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 1 | `properties/vehicle.ext` |
+| `/(define "glass")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/vehicle.ext` |
 | `/(define "glass")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "glass")/volume/material` | "glass" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "glass")/volume/tags` | "glass" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "glass")/volume/tags` | "glass" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "glass")/volume/thickness` | 0.1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "global_damage_mod")/armor_damage_modifier` | 0.1 | **확인** 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. | 1 | `properties/armor.ext` |
 | `/(define "gun_shield")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
-| `/(define "gun_shield")/volume/tags` | "gun_shield" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "gun_shield")/volume/tags` | "gun_shield" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "gun_shield")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "gun")/("main_weapon")` | 예: args "gun" %thickness gun (13종 이상) | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume`; args의 3번째 → `volume/component` [이 볼륨이 속한 부품 이름], `volume/tags` = `"no_target" "%2"`; args의 2번째 → `volume/thickness` [볼륨의 장갑 두께. 단위는 mm로 보인다] |  | 1 | `properties/vehicle.ext` |
 | `/(define "gun")/component` | "gun" | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
@@ -1011,7 +1011,7 @@
 | `/(define "gunner_visible2")/("crew_open")` | place ( commander ) bone ( gunner2 ) visorbone ( mgun_rot ) door ( emit2 ) door2 ( emit3 ) anm_left ( left ) anm_right ( right ) group ( crew ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"emit1" "%place"`, `boarder/link` = `"emit2" "%place"`, `placer/place` = `"%place" %extra` 외 2곳; `visor` → `placer/place/visor` [이 자리가 쓰는 시야 이름]; `extra` → `placer/place` = `"%place" %extra`; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름]; `visorbone` → `sensor/visor/bone` [감지기의 기준 뼈대]; `door2` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door2" "%place"`; `anm_left` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름]; `anm_right` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/tank_crew.ext` |
 | `/(define "holes")/volume` | "%volume%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 2 | `properties/vehicle.ext` |
 | `/(define "holes")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 2 | `properties/vehicle.ext` |
-| `/(define "holes")/volume/density` | 0 | **추정** 볼륨의 밀도 (추정: 이름) |  | 1 | `properties/vehicle.ext` |
+| `/(define "holes")/volume/density` | 0 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 1 | `properties/vehicle.ext` |
 | `/(define "internals")/component` | %0 | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "internals")/component/repairorder` | 5 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
 | `/(define "internals")/component/repairtime` | %2 | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/vehicle.ext` |
@@ -1019,17 +1019,17 @@
 | `/(define "internals")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "internals")/volume/able/contact` | 0 | **추정** 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "internals")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "internals")/volume/tags` | "%1" "no_target" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "internals")/volume/tags` | "%1" "no_target" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "internals")/volume/thickness` | 2 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/component` | %0 | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/component/repairorder` | 13 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/component/tags` | "lamp" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
-| `/(define "lamp")/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/vehicle.ext` |
-| `/(define "lamp")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/vehicle.ext` |
+| `/(define "lamp")/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 1 | `properties/vehicle.ext` |
+| `/(define "lamp")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/volume/material` | "glass" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "lamp")/volume/tags` | "lamp" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "lamp")/volume/tags` | "lamp" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "lamp")/volume/thickness` | 0.1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "locomotion")/braketime` | 2 ~ 5 | **추정** 브레이크를 써서 최고 속도에서 정지하는 시간, 초 (같은 자리의 본체 설명을 가져옴) | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) | 2 | `properties/marine.ext` |
 | `/(define "locomotion")/fast` | 30 | **추정** 빠른 이동 속도. 이동 명령을 더블클릭했을 때 (같은 자리의 본체 설명을 가져옴) | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) | 1 | `properties/railway.ext` |
@@ -1046,14 +1046,14 @@
 | `/(define "locomotion")/turnradius` | 8 | **추정** AI의 회전 반경, 미터. 작을수록 멈추지 않고 돈다 (같은 자리의 본체 설명을 가져옴) | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks | 1 | `properties/marine.ext` |
 | `/(define "main_weapon")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 2 | `properties/vehicle.ext` |
 | `/(define "main_weapon")/volume/able/contact` | 0 | **추정** 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/vehicle.ext` |
-| `/(define "main_weapon")/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 2 | `properties/vehicle.ext` |
-| `/(define "main_weapon")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 2 | `properties/vehicle.ext` |
+| `/(define "main_weapon")/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 2 | `properties/vehicle.ext` |
+| `/(define "main_weapon")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 2 | `properties/vehicle.ext` |
 | `/(define "main_weapon")/volume/component` | "%2" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "main_weapon")/volume/tags` | "no_target" "%2" ¦ "no_target" "gun" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/vehicle.ext` |
+| `/(define "main_weapon")/volume/tags` | "no_target" "%2" ¦ "no_target" "gun" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/vehicle.ext` |
 | `/(define "main_weapon")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "make_component")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "make_component")/volume/component` | %1 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "make_component")/volume/tags` | %1 | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "make_component")/volume/tags` | %1 | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "mantlet")/("make_component")` | args "mantlet" "mantlet" ¦ args "mantlet1" "mantlet" ¦ args "mantlet2" "mantlet" ¦ args "mantlet3" "mantlet" ¦ args "mantlet4" "mantlet" ¦ args "mantlet5" "mantlet" | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume`; args의 2번째 → `volume/component` [이 볼륨이 속한 부품 이름], `volume/tags` |  | 1 | `properties/vehicle.ext` |
 | `/(define "mantlet")/component` | "mantlet" | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "mantlet")/component/repairorder` | 3 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
@@ -1066,14 +1066,14 @@
 | `/(define "moto_durability")/perks/component/health/hp` | %body ¦ %engine ¦ 125 ¦ 60 ¦ 100 | **추정** 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) |  | 1 | `properties/armor.ext` |
 | `/(define "moto_durability")/perks/component/health/hp_broken` | ( * %body 3 ) ¦ %engine ¦ 1 | **확인** 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | destroys component and cannot be repaired | 1 | `properties/armor.ext` |
 | `/(define "moto_thickness")/volume` | 예: "body" (13종 이상) | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/moto.ext` |
-| `/(define "moto_thickness")/volume/tags` | "explosive" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/moto.ext` |
+| `/(define "moto_thickness")/volume/tags` | "explosive" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/moto.ext` |
 | `/(define "moto_thickness")/volume/thickness` | %body ¦ %engine ¦ 1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/moto.ext` |
 | `/(define "mp_gun_limits")/bone` | "gun_rot1" ¦ "gun_rot2" | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) | Land;"}} ¦ "}} | 1 | `properties/airborne.ext` |
 | `/(define "mp_gun_limits")/bone/limits` | -1 1 ¦ -25 15 | **추정** 회전 한계 각도 두 개 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "mp_gun_limits")/bone/speed2` | 60 ~ 360 | **추정** 회전 속도 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
+| `/(define "mp_gun_limits")/bone/speed2` | 60 ~ 360 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 |  | 1 | `properties/airborne.ext` |
 | `/(define "mp_mgun_limits")/bone` | "mgun_rot1" ¦ "mgun_rot2" | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) | Land;"}} ¦ "}} | 1 | `properties/airborne.ext` |
 | `/(define "mp_mgun_limits")/bone/limits` | -1 1 ¦ -25 15 | **추정** 회전 한계 각도 두 개 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "mp_mgun_limits")/bone/speed2` | 60 ~ 360 | **추정** 회전 속도 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
+| `/(define "mp_mgun_limits")/bone/speed2` | 60 ~ 360 | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 |  | 1 | `properties/airborne.ext` |
 | `/(define "passenger_10_human")/("passenger_human")` | place ( seat1 ) bone ( seat01 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat2 ) bone ( seat02 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat3 ) bone ( seat03 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat4 ) bone ( seat04 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat5 ) bone ( seat05 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat6 ) bone ( seat06 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat7 ) bone ( seat07 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat8 ) bone ( seat08 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat9 ) bone ( seat09 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat10 ) bone ( seat10 ) door ( emit4 ) animation ( passenger ) group ( passenger ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"%door" "%place"`; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/car_crew.ext` |
 | `/(define "passenger_12_human")/("passenger_human")` | place ( seat1 ) bone ( seat01 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat2 ) bone ( seat02 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat3 ) bone ( seat03 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat4 ) bone ( seat04 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat5 ) bone ( seat05 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat6 ) bone ( seat06 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat7 ) bone ( seat07 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat8 ) bone ( seat08 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat9 ) bone ( seat09 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat10 ) bone ( seat10 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat11 ) bone ( seat11 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat12 ) bone ( seat12 ) door ( emit4 ) animation ( passenger ) group ( passenger ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"%door" "%place"`; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/car_crew.ext` |
 | `/(define "passenger_4_human")/("passenger_human")` | place ( seat1 ) bone ( seat01 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat2 ) bone ( seat02 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat3 ) bone ( seat03 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat4 ) bone ( seat04 ) door ( emit4 ) animation ( passenger ) group ( passenger ) | **정의** 매크로 호출. 인자가 들어가는 자리: `place` → `placer/place` [승무원 자리 하나. 문자열이 자리 이름], `boarder/link` = `"%door" "%place"`; `group` → `placer/place/group` [자리의 분류. 값 "crew" 등]; `bone` → `placer/place/linkbone`; `door` → `boarder/door` [출입 지점 이름], `boarder/link` = `"%door" "%place"`; `animation` → `boarder/link/anm` [이 연결에 쓰는 좌석 애니메이션 이름] |  | 1 | `properties/car_crew.ext` |
@@ -1103,7 +1103,7 @@
 | `/(define "prop_blade")/volume` | "%number%volume" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
 | `/(define "prop_blade")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 1 | `properties/airborne.ext` |
 | `/(define "prop_blade")/volume/component` | "propeller%number" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "prop_blade")/volume/tags` | "propeller" "still" "still%number" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "prop_blade")/volume/tags` | "propeller" "still" "still%number" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "prop_blade")/volume/thickness` | 5 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "prop_spin")/component` | "%volume%number" | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "prop_spin")/component/repairorder` | 10 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/airborne.ext` |
@@ -1112,7 +1112,7 @@
 | `/(define "prop_spin")/volume` | "%volume%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
 | `/(define "prop_spin")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 1 | `properties/airborne.ext` |
 | `/(define "prop_spin")/volume/component` | "propeller%number" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "prop_spin")/volume/tags` | "propeller" "spin" "spin%number" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "prop_spin")/volume/tags` | "propeller" "spin" "spin%number" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "prop_spin")/volume/thickness` | 5 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "quad_engine")/("engine")` | volume ( engine ) number ( 4 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `volume` → `volume` = `"%volume%number"`, `volume/component` = `"%volume%number"`, `component` = `"%volume%number"`; `number` → `volume` = `"%volume%number"`, `volume/tags` = `"engine%number"`, `volume/component` = `"%volume%number"`, `component` = `"%volume%number"` 외 1곳; `repair` → `component/repairtime` [부품을 수리하는 데 걸리는 시간] |  | 1 | `properties/airborne.ext` |
 | `/(define "quad_engine")/("prop_blade")` | volume ( blade1 ) number ( 4 ) ¦ volume ( blade2 ) number ( 4 ) ¦ volume ( blade3 ) number ( 4 ) ¦ volume ( blade4 ) number ( 4 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `number` → `volume` = `"%number%volume"`, `volume/tags` = `"propeller" "still" "still%number"`, `volume/component` = `"propeller%number"`, `component` = `"propeller%number"` 외 1곳; `volume` → `volume` = `"%number%volume"` |  | 1 | `properties/airborne.ext` |
@@ -1124,10 +1124,10 @@
 | `/(define "rocket")/component/repairtime` | 1 | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/vehicle.ext` |
 | `/(define "rocket")/component/tags` | "rocket" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "rocket")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
-| `/(define "rocket")/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/vehicle.ext` |
-| `/(define "rocket")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/vehicle.ext` |
+| `/(define "rocket")/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 1 | `properties/vehicle.ext` |
+| `/(define "rocket")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/vehicle.ext` |
 | `/(define "rocket")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "rocket")/volume/tags` | "rocket" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "rocket")/volume/tags` | "rocket" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "rocket")/volume/thickness` | 2 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "sandbags")/volume` | "%volume%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "sandbags")/volume/material` | "sand" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
@@ -1167,11 +1167,11 @@
 | `/(define "shield_group")/component/tags` | "shield" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield_group")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "shield_group")/volume/component` | %2 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "shield_group")/volume/tags` | "shield" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "shield_group")/volume/tags` | "shield" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield_group")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield_part")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "shield_part")/volume/component` | %2 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "shield_part")/volume/tags` | %2 | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "shield_part")/volume/tags` | %2 | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield_part")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield_tear")/component` | %0 | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield_tear")/component/repairorder` | 11 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
@@ -1179,7 +1179,7 @@
 | `/(define "shield_tear")/component/tags` | "cut_part" "shield" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield_tear")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "shield_tear")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "shield_tear")/volume/tags` | "cut_part" "shield" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "shield_tear")/volume/tags` | "cut_part" "shield" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield_tear")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield_track")/component` | %0 | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield_track")/component/repairorder` | 11 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
@@ -1188,7 +1188,7 @@
 | `/(define "shield_track")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "shield_track")/volume/caststeel` | 0.5 | **추정** 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield_track")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "shield_track")/volume/tags` | "shield" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "shield_track")/volume/tags` | "shield" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield_track")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield")/component` | %0 | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "shield")/component/repairorder` | 11 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
@@ -1196,7 +1196,7 @@
 | `/(define "shield")/component/tags` | "shield" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "shield")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "shield")/volume/tags` | "shield" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "shield")/volume/tags` | "shield" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "shield")/volume/thickness` | %1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "single_engine")/("engine_part")` | volume ( engine ) number ( 1 ) part ( 1 ) ¦ volume ( engine ) number ( 1 ) part ( 2 ) ¦ volume ( engine ) number ( 1 ) part ( 3 ) ¦ volume ( engine ) number ( 1 ) part ( 4 ) ¦ volume ( engine ) number ( 1 ) part ( 5 ) ¦ volume ( engine ) number ( 1 ) part ( 6 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `volume` → `volume` = `"%volume%number%part"`, `volume/component` = `"%volume%number"`, `component` = `"%volume%number"`; `number` → `volume` = `"%volume%number%part"`, `volume/tags` = `"engine%number"`, `volume/component` = `"%volume%number"`, `component` = `"%volume%number"` 외 1곳; `part` → `volume` = `"%volume%number%part"` |  | 1 | `properties/airborne.ext` |
 | `/(define "single_engine")/("engine")` | volume ( engine ) number ( 1 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `volume` → `volume` = `"%volume%number"`, `volume/component` = `"%volume%number"`, `component` = `"%volume%number"`; `number` → `volume` = `"%volume%number"`, `volume/tags` = `"engine%number"`, `volume/component` = `"%volume%number"`, `component` = `"%volume%number"` 외 1곳; `repair` → `component/repairtime` [부품을 수리하는 데 걸리는 시간] |  | 1 | `properties/airborne.ext` |
@@ -1208,7 +1208,7 @@
 | `/(define "solid_wheel")/component/tags` | "wheel" "no_target" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "solid_wheel")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "solid_wheel")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "solid_wheel")/volume/tags` | "wheel" "no_target" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "solid_wheel")/volume/tags` | "wheel" "no_target" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "solid_wheel")/volume/thickness` | 10 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "tank_heavy_tier1")/("basic_armor")` | args 30 | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `armor/("set_ammo")` = `args %0` |  | 1 | `properties/armor.ext` |
 | `/(define "tank_heavy_tier1")/("general_durability")` | body ( 450 ) engine ( 250 ) turret ( 275 ) mantlet ( 225 ) gun ( 225 ) track ( 300 ) ammo ( 225 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `body` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( + 1500 ( * %body 5 ) )`, `perks/component/health/hp_broken` [부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다]; `engine` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다], `perks/component/health/hp_broken` = `( * %engine 1.5 )`; `mantlet` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `turret` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `gun` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `track` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다]; `ammo` → `perks/component/health/hp` [부품의 체력. *_durability 매크로의 인자가 그대로 들어간다] |  | 1 | `properties/armor.ext` |
@@ -1236,13 +1236,13 @@
 | `/(define "tearable")/component/repairtime` | 2 | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/airborne.ext` |
 | `/(define "tearable")/component/tags` | "%volume%number" "part" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "tearable")/volume` | "%volume%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
-| `/(define "tearable")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
+| `/(define "tearable")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
 | `/(define "tearable")/volume/component` | "%volume%number" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "tearable")/volume/tags` | "%volume%number" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "tearable")/volume/tags` | "%volume%number" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "tearable")/volume/thickness` | 1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "track_wheels")/volume` | "track%0%1" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 2 | `properties/vehicle.ext` |
 | `/(define "track_wheels")/volume/component` | "track%0" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "track_wheels")/volume/tags` | "mover" "track" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "track_wheels")/volume/tags` | "mover" "track" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "track_wheels")/volume/thickness` | %2 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/vehicle.ext` |
 | `/(define "tracks")/("track_wheels")` | 예: args left 1 %thickness (13종 이상) | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume` = `"track%0%1"`, `volume/component` = `"track%0"`; args의 2번째 → `volume` = `"track%0%1"`; args의 3번째 → `volume/thickness` [볼륨의 장갑 두께. 단위는 mm로 보인다] |  | 2 | `properties/vehicle.ext` |
 | `/(define "tracks")/component` | "trackleft" ¦ "trackright" | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
@@ -1251,7 +1251,7 @@
 | `/(define "tracks")/component/tags` | "mover" "track" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "tracks")/volume` | "trackleft" ¦ "trackright" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 2 | `properties/vehicle.ext` |
 | `/(define "tracks")/volume/able/contact_ground` | 0 | **추정** 지면 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "tracks")/volume/tags` | "mover" "track" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "tracks")/volume/tags` | "mover" "track" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "tracks")/volume/thickness` | %thickness | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/vehicle.ext` |
 | `/(define "train_durability")/perks/component` | 예: "body" (13종 이상) | **추정** 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") |  | 1 | `properties/armor.ext` |
 | `/(define "train_durability")/perks/component/health/hp` | %body ¦ %engine ¦ %mantlet ¦ %turret ¦ %gun ¦ 200 ¦ 60 ¦ 100 ¦ 170 | **추정** 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) |  | 1 | `properties/armor.ext` |
@@ -1265,8 +1265,8 @@
 | `/(define "turret")/component/repairorder` | 2 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
 | `/(define "turret")/component/repairtime` | %repair | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/vehicle.ext` |
 | `/(define "visible")/volume` | "%volume%number" %extra | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
-| `/(define "visible")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
-| `/(define "visible")/volume/tags` | %tags | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "visible")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
+| `/(define "visible")/volume/tags` | %tags | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "visible")/volume/thickness` | 1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "wheel")/component` | %0 | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "wheel")/component/repairorder` | 10 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/vehicle.ext` |
@@ -1274,27 +1274,28 @@
 | `/(define "wheel")/component/tags` | "wheel" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "wheel")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "wheel")/volume/component` | %0 | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "wheel")/volume/tags` | "wheel" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "wheel")/volume/tags` | "wheel" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "wheel")/volume/thickness` | 0.5 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/(define "wing")/component` | "wing%component" | **추정** 부품 하나의 설정. 문자열이 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "wing")/component/repairorder` | 1 | **추정** 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) |  | 1 | `properties/airborne.ext` |
 | `/(define "wing")/component/repairtime` | 20 | **추정** 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 45 ¦ 30 | 1 | `properties/airborne.ext` |
 | `/(define "wing")/component/tags` | "wing%component" "%tag" | **추정** 부품 태그 (같은 자리의 본체 설명을 가져옴) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "wing")/volume` | "wing%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/airborne.ext` |
-| `/(define "wing")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
+| `/(define "wing")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/airborne.ext` |
 | `/(define "wing")/volume/component` | "wing%component" | **추정** 이 볼륨이 속한 부품 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
-| `/(define "wing")/volume/tags` | "wing%component" "%tag" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
+| `/(define "wing")/volume/tags` | "wing%component" "%tag" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/airborne.ext` |
 | `/(define "wing")/volume/thickness` | 1 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/airborne.ext` |
 | `/(define "wood_shield")/volume` | "shieldw%number" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/vehicle.ext` |
 | `/(define "wood_shield")/volume/material` | "wood" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
-| `/(define "wood_shield")/volume/tags` | "wood" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
+| `/(define "wood_shield")/volume/tags` | "wood" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/vehicle.ext` |
 | `/(define "wood")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/car.ext` |
 | `/(define "wood")/volume/material` | "wood" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/car.ext` |
-| `/(define "wood")/volume/tags` | "wood" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/car.ext` |
+| `/(define "wood")/volume/tags` | "wood" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/car.ext` |
 | `/##weaponry/place` | "mgun" | **추정** 무장 장착 위치 하나. 문자열이 위치 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/cannon_mgun.ext` |
 | `/##weaponry/place/charger` | "gunner" | **추정** 이 무장을 장전하는 자리 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/cannon_mgun.ext` |
 | `/##weaponry/place/gunner` | "gunner" | **추정** 이 무장을 쏘는 자리 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/cannon_mgun.ext` |
 | `/##weaponry/place/linkbone` | "mgun" | **문서** 무기가 붙는 뼈대 |  | 1 | `properties/cannon_mgun.ext` |
+| `/##weaponry/place/type` | "main" | **문서** 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | "unit tag" or "unit type" + "current main weapon tag" | 1 | `properties/cannon_mgun.ext` |
 | `/able` | "emit_crew_on_injure" ¦ "-select" "neutral" ¦ "talk" ¦ "emit_on_attack" ¦ "talk" "-emit_passangers_on_enemy" ¦ "crew" "fight" "minimap" "personage" ¦ "-emit_passangers_on_enemy" ¦ "emit_crew_on_injure" "talk" "-emit_passangers_on_enemy" ¦ "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" | **추정** 엔티티가 할 수 있는 동작 태그 목록. 예: "emit_passangers_on_enemy", "repair" (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 14 | `properties/ammo_box.ext` |
 | `/armor/setting` | "body" | **문서** 장갑 설정 묶음 하나. 문자열은 설정 이름 |  | 3 | `properties/straw.ext` |
 | `/armor/setting/thickness` | 20 | **문서** 장갑 두께. 값이 1개면 모든 면, 2개면 전면과 나머지, 4개면 전면·측면·후면·상하 |  | 2 | `properties/stuff_grenade_mine.ext` |
@@ -1306,6 +1307,7 @@
 | `/boarder/anm/reverse/end` | "board_moto_driver" -1 | **추정** 동작이 끝난 뒤의 자세 애니메이션 이름 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/bicycle.ext` |
 | `/boarder/link` | "driver1" "gunner" ¦ "driver2" "commander" | **추정** 출입 지점과 좌석의 연결. { link <from> <to> } (같은 자리의 본체 설명을 가져옴) | { link <from> <to> } | 3 | `properties/ammo_box.ext` |
 | `/bone` | "foresight2" | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) | Land;"}} ¦ "}} | 1 | `properties/human.ext` |
+| `/bone/speed` | 5 | **문서** 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | sway speed coef ¦ kmph | 1 | `properties/human.ext` |
 | `/brain/const` | "bomb/detect_explosives" 7 ¦ "bomb/detect_grenades" 5 ¦ "bomb/danger_zone" 7 ¦ "fight/distance" 2 ¦ "weapon/change_time" 5 | **추정** AI 상수. 이름과 값 한 쌍. 예: "crush/min_danger_zone_time" 1 (같은 자리의 본체 설명을 가져옴) | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds | 1 | `properties/human.ext` |
 | `/brain/state` | "airborne" ¦ "animal" | **추정** AI 초기 상태 이름 (같은 자리의 본체 설명을 가져옴) | 2hand & 1hand items ¦ to enable item ops in snipe cover | 2 | `properties/airborne.ext` |
 | `/chassis` | "wheel" ¦ "airborne" ¦ "human_carrier" ¦ "foot" ¦ "water" ¦ "railway" ¦ "track" | **추정** 구동계 정의. 문자열은 종류: "wheel", "track" 등 (같은 자리의 본체 설명을 가져옴) |  | 12 | `properties/airborne.ext` |
@@ -1432,18 +1434,18 @@
 | `/volume` | 예: "body" (13종 이상) | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 20 | `properties/ammo_box.ext` |
 | `/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 16 | `properties/barrel.ext` |
 | `/volume/able/contact` | 0 | **추정** 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 4 | `properties/decor.ext` |
-| `/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 5 | `properties/decor.ext` |
-| `/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 4 | `properties/decor.ext` |
-| `/volume/density` | 0 | **추정** 볼륨의 밀도 (추정: 이름) |  | 8 | `properties/barrel.ext` |
+| `/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 5 | `properties/decor.ext` |
+| `/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 4 | `properties/decor.ext` |
+| `/volume/density` | 0 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 8 | `properties/barrel.ext` |
 | `/volume/material` | "fabric" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/stuff_small_bag.ext` |
-| `/volume/tags` | "fire" ¦ "no_target" "fire" ¦ "body" "fire" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/human.ext` |
+| `/volume/tags` | "fire" ¦ "no_target" "fire" ¦ "body" "fire" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/human.ext` |
 | `/volume/thickness` | 0 ~ 5 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 11 | `properties/ammo_box.ext` |
 | `/weaponry/place` | "mgun" ¦ "gun" ¦ "hand_right" | **추정** 무장 장착 위치 하나. 문자열이 위치 이름 (같은 자리의 본체 설명을 가져옴) |  | 6 | `properties/ammo_box.ext` |
 | `/weaponry/place/charger` | "gunner" | **추정** 이 무장을 장전하는 자리 이름 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/ammo_box.ext` |
 | `/weaponry/place/gunner` | "gunner" | **추정** 이 무장을 쏘는 자리 이름 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/cannon.ext` |
 | `/weaponry/place/linkbone` | "mgun" ¦ "right_hand" | **문서** 무기가 붙는 뼈대 |  | 3 | `properties/ammo_box.ext` |
 
-### 뜻을 모르는 속성 (87개)
+### 뜻을 모르는 속성 (85개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -1502,13 +1504,11 @@
 | `/(define "tank_trace_ex")/track/tracer/view` | %fx | 미확인 | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring | 1 | `properties/vehicle.ext` |
 | `/##` | extender "detail" | 미확인 | No longer used? | 1 | `properties/vehicle.ext` |
 | `/##weaponry/place/linkanimation` | "off" | 미확인 |  | 1 | `properties/cannon_mgun.ext` |
-| `/##weaponry/place/type` | "main" | 미확인 | "unit tag" or "unit type" + "current main weapon tag" | 1 | `properties/cannon_mgun.ext` |
 | `/animation/smooth` | 0.5 | 미확인 |  | 1 | `properties/animation/human/human_anm.ext` |
 | `/autooperatable` | 0 | 미확인 |  | 1 | `properties/railway.ext` |
 | `/boarder/anm/forward/base` | "up" | 미확인 | seconds : CP | 1 | `properties/bicycle.ext` |
 | `/body/permit` | body | 미확인 |  | 2 | `properties/stuff_dynamite.ext` |
 | `/body/proper` | body sensible | 미확인 |  | 2 | `properties/stuff_bomb.ext` |
-| `/bone/speed` | 5 | 미확인 | sway speed coef ¦ kmph | 1 | `properties/human.ext` |
 | `/brain` | "vehicle" ¦ "actor" ¦ "human" | 미확인 |  | 3 | `properties/airborne.ext` |
 | `/brain/properties/advance_ratio` | 0.5 | 미확인 |  | 1 | `properties/human.ext` |
 | `/brain/properties/retreat_ratio` | 4 | 미확인 |  | 1 | `properties/human.ext` |
@@ -1540,7 +1540,7 @@
 - 위치: `properties/**/*.inc`
 - 연결: 본체와 공통 속성 `.ext`의 `(include "/properties/...")`. 같은 차종의 모든 유닛이 공유한다
 
-### 뜻을 아는 속성 (504개)
+### 뜻을 아는 속성 (514개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -1609,20 +1609,20 @@
 | `/(define "armor_use_volume_thickness")/armor/setting` | "body" ¦ "roof" | **문서** 장갑 설정 묶음 하나. 문자열은 설정 이름 |  | 1 | `properties/construction_generic.inc` |
 | `/(define "armor_use_volume_thickness")/armor/setting/ray_cast_thickness` | 0 | **문서** 장갑 두께를 재는 방법. 1이면 탄이 볼륨을 지나간 거리로, 0이면 thickness 값으로 잰다 |  | 1 | `properties/construction_generic.inc` |
 | `/(define "base_vol")/volume` | "base%0" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/tree.inc` |
-| `/(define "base_vol")/volume/able/touch` | 0 | **추정** 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/tree.inc` |
-| `/(define "base_vol")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/tree.inc` |
-| `/(define "base_vol")/volume/tags` | "bole" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/tree.inc` |
+| `/(define "base_vol")/volume/able/touch` | 0 | **문서** 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) |  | 1 | `properties/tree.inc` |
+| `/(define "base_vol")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/tree.inc` |
+| `/(define "base_vol")/volume/tags` | "bole" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/tree.inc` |
 | `/(define "base_vol")/volume/thickness` | 10 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/tree.inc` |
 | `/(define "blast_protection")/armor/setting` | "body" ¦ "roof" | **문서** 장갑 설정 묶음 하나. 문자열은 설정 이름 |  | 1 | `properties/construction_generic.inc` |
 | `/(define "blast_protection")/armor/setting/threshold/blast/value` | %dmg | **문서** 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 |  | 1 | `properties/construction_generic.inc` |
 | `/(define "body_vol")/volume` | "%0" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/construction_generic.inc` |
-| `/(define "body_vol")/volume/able/visible` | %1 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/construction_generic.inc` |
-| `/(define "body_vol")/volume/tags` | "body" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/construction_generic.inc` |
+| `/(define "body_vol")/volume/able/visible` | %1 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/construction_generic.inc` |
+| `/(define "body_vol")/volume/tags` | "body" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/construction_generic.inc` |
 | `/(define "bole_vol")/volume` | "bole%0" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/tree.inc` |
-| `/(define "bole_vol")/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/tree.inc` |
-| `/(define "bole_vol")/volume/able/touch` | 0 | **추정** 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/tree.inc` |
-| `/(define "bole_vol")/volume/able/visible` | 0 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/tree.inc` |
-| `/(define "bole_vol")/volume/tags` | "bole" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/tree.inc` |
+| `/(define "bole_vol")/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 1 | `properties/tree.inc` |
+| `/(define "bole_vol")/volume/able/touch` | 0 | **문서** 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) |  | 1 | `properties/tree.inc` |
+| `/(define "bole_vol")/volume/able/visible` | 0 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/tree.inc` |
+| `/(define "bole_vol")/volume/tags` | "bole" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/tree.inc` |
 | `/(define "bole_vol")/volume/thickness` | 10 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/tree.inc` |
 | `/(define "bonealign")/bone` | %0 | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) | Land;"}} ¦ "}} | 1 | `properties/trench.inc` |
 | `/(define "boneland")/bone` | %0 | **추정** 모델 뼈대 하나의 동작 설정. 포탑·총가 회전에 쓴다 (같은 자리의 본체 설명을 가져옴) | Land;"}} ¦ "}} | 2 | `properties/lump.inc` |
@@ -1640,7 +1640,7 @@
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupplyperiod` | 10 | **확인** 보급 주기, 초 | resupply period in seconds | 1 | `properties/resupply.inc` |
 | `/(define "declare_fire_volume")/volume` | "fire%0" ¦ "smoke%0" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 2 | `properties/burning.inc` |
 | `/(define "declare_fire_volume")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 2 | `properties/burning.inc` |
-| `/(define "declare_fire_volume")/volume/tags` | "fire" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/burning.inc` |
+| `/(define "declare_fire_volume")/volume/tags` | "fire" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/burning.inc` |
 | `/(define "declare_fire_volumes")/("declare_fire_volume")` | args 0 ¦ args 1 ¦ args 2 ¦ args 3 ¦ args 4 ¦ args 5 ¦ args 6 ¦ args 7 ¦ args 8 ¦ args 9 | **정의** 매크로 호출. 인자가 들어가는 자리: args의 1번째 → `volume` = `"fire%0"`, `volume` = `"smoke%0"` |  | 2 | `properties/burning.inc` |
 | `/(define "declare_fire_volumes")/props` | "burning_old" | **추정** 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/burning.inc` |
 | `/(define "do_healing_lie")/state/from` | "lie" | **문서** 이 상태로 들어올 수 있는 출발 상태 |  | 1 | `properties/human_fsm/special.inc` |
@@ -1682,9 +1682,9 @@
 | `/(define "flight_model")/sideslopespeed` | %roll_rate ¦ ( * 2 %roll_rate ) | **확인** 기체가 기우는 속도, 도/초 | how quickly in degrees per second that aircraft rolls | 1 | `properties/mobility.inc` |
 | `/(define "foxhole")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/trench.inc` |
 | `/(define "foxhole")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 1 | `properties/trench.inc` |
-| `/(define "foxhole")/volume/able/blast` | 1 | **추정** 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break | 1 | `properties/trench.inc` |
-| `/(define "foxhole")/volume/able/obstacle` | 1 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/trench.inc` |
-| `/(define "foxhole")/volume/tags` | "body" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/trench.inc` |
+| `/(define "foxhole")/volume/able/blast` | 1 | **문서** 폭발 충격파에 반응하는지 여부. 기본 1 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break | 1 | `properties/trench.inc` |
+| `/(define "foxhole")/volume/able/obstacle` | 1 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 1 | `properties/trench.inc` |
+| `/(define "foxhole")/volume/tags` | "body" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/trench.inc` |
 | `/(define "foxhole")/volume/thickness` | 60 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/trench.inc` |
 | `/(define "frag_grenade_protection")/("blast_protection")` | dmg ( 6 ) | **정의** 매크로 호출. 인자가 들어가는 자리: `dmg` → `armor/setting/threshold/blast/value` [폭발 피해의 문턱값. 이보다 작은 피해는 무시한다] |  | 1 | `properties/construction_generic.inc` |
 | `/(define "look_chain")/state/condition` | "look-%0-in" | **문서** 이 상태에 들어가기 위한 조건. 요청 이름과 같아야 한다 |  | 1 | `properties/human_fsm/look.inc` |
@@ -1891,8 +1891,8 @@
 | `/(define "place")/place/entity` | "%1" | **추정** 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (같은 자리의 본체 설명을 가져옴) | parts ¦ airborne parts | 1 | `properties/hedgerow.inc` |
 | `/(define "place")/place/linkbone` | "%0" | **문서** 무기가 붙는 뼈대 |  | 1 | `properties/hedgerow.inc` |
 | `/(define "roof_vol")/volume` | "%0" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 1 | `properties/construction_generic.inc` |
-| `/(define "roof_vol")/volume/able/visible` | %1 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/construction_generic.inc` |
-| `/(define "roof_vol")/volume/tags` | "roof" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/construction_generic.inc` |
+| `/(define "roof_vol")/volume/able/visible` | %1 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 1 | `properties/construction_generic.inc` |
+| `/(define "roof_vol")/volume/tags` | "roof" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 1 | `properties/construction_generic.inc` |
 | `/(define "supply_ammo_fixed")/decalview` | supply_zone | **추정** 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) |  | 1 | `properties/resupply.inc` |
 | `/(define "supply_ammo_fixed")/decalview/layer` | grounddynamic | **추정** 데칼을 그리는 층 (추정: 값 grounddynamic) |  | 1 | `properties/resupply.inc` |
 | `/(define "supply_ammo_fixed")/decalview/sprite` | "supply_zone.ebm" | **추정** 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") |  | 1 | `properties/resupply.inc` |
@@ -1975,11 +1975,14 @@
 | `/(define "truck_ammo")/extender[supply_zone]/radius` | 12 | **확인** 보급 반경, 미터 | resupply radius in meter | 1 | `properties/resupply.inc` |
 | `/(define "truck_ammo")/extender[supply_zone]/regenerationperiod` | 0 ~ 10 | **확인** 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) | 1 | `properties/resupply.inc` |
 | `/(define "truck_ammo")/extender[supply_zone]/resupplyperiod` | 2 | **확인** 보급 주기, 초 | resupply period in seconds | 1 | `properties/resupply.inc` |
+| `/(define "turret_heavy")/speed2` | ( + 4 ( / %power_traverse 3 ) ) | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 |  | 1 | `properties/mobility.inc` |
+| `/(define "turret_light")/speed2` | ( + 10 ( / %power_traverse 2.5 ) ) | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 |  | 1 | `properties/mobility.inc` |
+| `/(define "turret_medium")/speed2` | ( + 6 ( / %power_traverse 2.5 ) ) | **문서** 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 |  | 1 | `properties/mobility.inc` |
 | `/(define "volume")/volume` | %0 | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 2 | `properties/lump.inc` |
 | `/(define "volume")/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 2 | `properties/lump.inc` |
 | `/(define "volume")/volume/able/contact` | 0 | **추정** 접촉 판정 대상 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/trench.inc` |
-| `/(define "volume")/volume/able/obstacle` | 1 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 2 | `properties/lump.inc` |
-| `/(define "volume")/volume/tags` | "body" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/lump.inc` |
+| `/(define "volume")/volume/able/obstacle` | 1 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 2 | `properties/lump.inc` |
+| `/(define "volume")/volume/tags` | "body" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 2 | `properties/lump.inc` |
 | `/(define "volume")/volume/thickness` | 1 ~ 60 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 2 | `properties/lump.inc` |
 | `/armor/setting` | "body" | **문서** 장갑 설정 묶음 하나. 문자열은 설정 이름 |  | 5 | `properties/big_stone.inc` |
 | `/armor/setting/threshold/blast/koef` | 1 | **문서** 폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 |  | 3 | `properties/big_stone.inc` |
@@ -1996,7 +1999,13 @@
 | `/decalview/sprite/prescaley` | ( * 0.30 %scale ) ¦ 0.12 ¦ 0.07 ¦ 0.4 ¦ 0.093 ¦ 0.085 ¦ ( * 0.50 %scale ) ¦ ( * 0.25 %scale ) ¦ ( * 0.35 %scale ) | **추정** 그림의 세로 배율 (추정: 이름) |  | 27 | `properties/selection/cannon_active.inc` |
 | `/decalview/sprite/preturn` | 90 | **추정** 미리 돌려 놓는 각도, 도 (추정: 값 90) |  | 4 | `properties/selection/human_active.inc` |
 | `/decalview/visible` | 0 | **추정** 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 27 | `properties/selection/cannon_active.inc` |
-| `/extender[land_patch]/terraintype` | "ground" "rock" ¦ "ground" "ground" ¦ "ground" "snow" | **추정** 이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel") |  | 4 | `properties/cliff.inc` |
+| `/extender[edifice]` | "edifice" | **문서** 지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능 |  | 1 | `properties/building_roof.inc` |
+| `/extender[land_patch]` | "land_patch" | **문서** 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 |  | 6 | `properties/cliff.inc` |
+| `/extender[land_patch]/alignenabled` | 1 | **문서** 메시를 지면에 맞춰 정렬할지 여부. 기본 1 |  | 5 | `properties/crater.inc` |
+| `/extender[land_patch]/alignstacked` | 0 ~ 1 | **문서** 정렬에 쓸 지면 층. 0은 원래 지면(참호용), 1은 이미 파인 지면(구덩이용). 기본 1 |  | 5 | `properties/crater.inc` |
+| `/extender[land_patch]/alignvolumes` | 0 ~ 1 | **문서** 볼륨 중심에서 지면까지의 거리가 변하지 않도록 볼륨을 옮길지 여부. 기본 0 |  | 2 | `properties/lump.inc` |
+| `/extender[land_patch]/randomrotate` | 1 | **문서** 편집기에서 지면에 놓을 때 무작위로 회전시킬지 여부. 기본 0 |  | 2 | `properties/crater.inc` |
+| `/extender[land_patch]/terraintype` | "ground" "rock" ¦ "ground" "ground" ¦ "ground" "snow" | **문서** 이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다 |  | 4 | `properties/cliff.inc` |
 | `/extender[light]/preset` | "default" ¦ "lamp_spot" ¦ "lamp_point" ¦ "lamp_search" | **추정** 조명 프리셋 하나. 문자열이 이름 (추정: 값 "lamp_spot", "lamp_point") |  | 1 | `properties/light.inc` |
 | `/extender[light]/preset/break_bone` | "lamp_glass1" | **추정** 깨지는 부분(유리)의 뼈대 (추정: 이름과 값 "lamp_glass1") |  | 1 | `properties/light.inc` |
 | `/extender[light]/preset/break_fx` | "lamp_hit" | **추정** 조명이 깨질 때의 효과 이름 (추정: 이름과 값 "lamp_hit") |  | 1 | `properties/light.inc` |
@@ -2039,17 +2048,18 @@
 | `/switch/split` | 0 "stand" "walk" ¦ 0 "stand_aim" "walk" | **확인** 나뉜 부분의 전환 하나. 값은 부분 번호, 출발 상태, 도착 상태 | { split <index> <from> <to> } | 1 | `properties/human_fsm/switch.inc` |
 | `/volume` | 예: "rock" (13종 이상) | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (같은 자리의 본체 설명을 가져옴) | Main Body ¦ Truck Bed | 11 | `properties/big_stone.inc` |
 | `/volume/able` | clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (같은 자리의 본체 설명을 가져옴) | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) | 7 | `properties/bush.inc` |
-| `/volume/able/blast` | 1 | **추정** 폭발 판정 대상인지 여부 (추정: able의 하위 플래그) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break | 3 | `properties/bush.inc` |
-| `/volume/able/bullet` | 0 | **추정** 탄환 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 2 | `properties/hedgerow.inc` |
-| `/volume/able/obstacle` | 0 | **추정** 이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그) |  | 5 | `properties/post.inc` |
-| `/volume/able/touch` | 0 | **추정** 접촉 판정 대상인지 여부 (추정: able의 하위 플래그) |  | 1 | `properties/tree.inc` |
-| `/volume/able/visible` | 0 ~ 1 | **추정** 볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 4 | `properties/bush.inc` |
-| `/volume/density` | 0.00 ~ 0.007 | **추정** 볼륨의 밀도 (추정: 이름) |  | 2 | `properties/tree.inc` |
+| `/volume/able/blast` | 1 | **문서** 폭발 충격파에 반응하는지 여부. 기본 1 | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break | 3 | `properties/bush.inc` |
+| `/volume/able/bullet` | 0 | **문서** 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 |  | 2 | `properties/hedgerow.inc` |
+| `/volume/able/obstacle` | 0 | **문서** 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 |  | 5 | `properties/post.inc` |
+| `/volume/able/overlap` | 1 | **문서** 다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림) |  | 2 | `properties/bush.inc` |
+| `/volume/able/touch` | 0 | **문서** 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) |  | 1 | `properties/tree.inc` |
+| `/volume/able/visible` | 0 ~ 1 | **문서** 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. | 4 | `properties/bush.inc` |
+| `/volume/density` | 0.00 ~ 0.007 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 2 | `properties/tree.inc` |
 | `/volume/material` | "ground" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/hedgerow.inc` |
-| `/volume/tags` | "body" ¦ "lamp" ¦ "bole" ¦ "body" "fire" | **추정** 볼륨에 붙이는 태그 (추정: 값 "no_target") | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 7 | `properties/big_stone.inc` |
+| `/volume/tags` | "body" ¦ "lamp" ¦ "bole" ¦ "body" "fire" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set | 7 | `properties/big_stone.inc` |
 | `/volume/thickness` | 0.2 ~ 1000 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (같은 자리의 본체 설명을 가져옴) |  | 8 | `properties/big_stone.inc` |
 
-### 뜻을 모르는 속성 (101개)
+### 뜻을 모르는 속성 (91개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -2121,19 +2131,10 @@
 | `/(define "truck_ammo")/decalview/sprite/visibility` | 0.25 | 미확인 |  | 1 | `properties/resupply.inc` |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources/amount` | 10 | 미확인 |  | 1 | `properties/resupply.inc` |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources/value` | 10 | 미확인 |  | 1 | `properties/resupply.inc` |
-| `/(define "turret_heavy")/speed2` | ( + 4 ( / %power_traverse 3 ) ) | 미확인 |  | 1 | `properties/mobility.inc` |
-| `/(define "turret_light")/speed2` | ( + 10 ( / %power_traverse 2.5 ) ) | 미확인 |  | 1 | `properties/mobility.inc` |
-| `/(define "turret_medium")/speed2` | ( + 6 ( / %power_traverse 2.5 ) ) | 미확인 |  | 1 | `properties/mobility.inc` |
 | `/blend` | 예: "pose_lie_empty" (13종 이상) | 미확인 |  | 2 | `properties/animation/human/_reg_human_movement.inc` |
 | `/blend/pose` | 예: "weapon\anim_item_lie_take_end_01" end (13종 이상) | 미확인 |  | 2 | `properties/animation/human/_reg_human_movement.inc` |
 | `/constrain` | none ¦ zero | 미확인 |  | 4 | `properties/big_part.inc` |
 | `/decalview/sprite/light` | 0.2 ~ 1 | 미확인 |  | 27 | `properties/selection/cannon_active.inc` |
-| `/extender[edifice]` | "edifice" | 미확인 |  | 1 | `properties/building_roof.inc` |
-| `/extender[land_patch]` | "land_patch" | 미확인 |  | 6 | `properties/cliff.inc` |
-| `/extender[land_patch]/alignenabled` | 1 | 미확인 |  | 5 | `properties/crater.inc` |
-| `/extender[land_patch]/alignstacked` | 0 ~ 1 | 미확인 |  | 5 | `properties/crater.inc` |
-| `/extender[land_patch]/alignvolumes` | 0 ~ 1 | 미확인 |  | 2 | `properties/lump.inc` |
-| `/extender[land_patch]/randomrotate` | 1 | 미확인 |  | 2 | `properties/crater.inc` |
 | `/extender[land_patch]/removeentities` | 1 | 미확인 |  | 1 | `properties/trench.inc` |
 | `/extender[land_patch]/updateentities` | 0 | 미확인 |  | 1 | `properties/hedgerow.inc` |
 | `/extender[light]` | "light" | 미확인 |  | 1 | `properties/light.inc` |
@@ -2152,6 +2153,5 @@
 | `/state` | 예: "stand_bazooka_pick" (13종 이상) | 미확인 | 2hand & 1hand items ¦ to enable item ops in snipe cover | 11 | `properties/human_fsm/bazooka_stand.inc` |
 | `/switch` | "walk" | 미확인 |  | 1 | `properties/human_fsm/switch.inc` |
 | `/tpc_zclip` | 1 | 미확인 |  | 2 | `properties/bush.inc` |
-| `/volume/able/overlap` | 1 | 미확인 |  | 2 | `properties/bush.inc` |
 | `/zclipvisibility` | 0 ~ 1 | 미확인 |  | 4 | `properties/bush.inc` |
 
