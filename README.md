@@ -64,3 +64,4 @@ Call to Arms - Gates of Hell: Ostfront의 모드를 만들기 위한 레퍼런�
 |---|---|
 | [docs/superpowers/specs/2026-10-11-ctatoybox-reference-design.md](docs/superpowers/specs/2026-10-11-ctatoybox-reference-design.md) | 처음에 합의한 설계 |
 | [docs/superpowers/plans/2026-10-11-ctatoybox-reference.md](docs/superpowers/plans/2026-10-11-ctatoybox-reference.md) | 구현 계획. 실제 구현은 여러 곳에서 달라졌으며 차이는 그 문서 머리에 적혀 있다 |
+| [docs/superpowers/specs/2026-10-12-stat-editor-design.md](docs/superpowers/specs/2026-10-12-stat-editor-design.md) | 스탯 편집기의 설계. 아직 구현하지 않았다 |
