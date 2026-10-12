@@ -15,28 +15,28 @@
 
 ## 파일별 속성 수
 
-| 문서 | 구분 | 파일 | 위치 | 속성 수 | 뜻을 아는 속성 |
-|---|---|---|---|---|---|
-| [infantry.md](infantry.md) | 본체 | 보병 정의 | `set/breed/**/*.set` | 16 | 13 |
-| [infantry.md](infantry.md) | 연관 | 능력치 매크로 | `set/breed/**/*.inc` | 91 | 0 |
-| [infantry.md](infantry.md) | 연관 | 외형 엔티티 | `entity/humanskin/**/*.def` | 18 | 8 |
-| [vehicle.md](vehicle.md) | 본체 | 차량 엔티티 | `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def` | 282 | 113 |
-| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.ext) | `entity/-vehicle/**/*.ext` | 180 | 0 |
-| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.inc) | `entity/-vehicle/**/*.inc` | 113 | 1 |
-| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.ext) | `properties/**/*.ext` | 888 | 1 |
-| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.inc) | `properties/**/*.inc` | 605 | 0 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기와 장구 정의 (확장자 없음) | `set/stuff/<폴더>/<이름>` | 157 | 84 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기 정의 (.weapon) | `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon` | 58 | 31 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 36 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 16 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 지뢰와 폭발물 (.mine) | `set/stuff/explosive/*.mine` | 8 | 8 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 투척 (.hand) | `set/stuff/thrower.hand` | 15 | 0 |
-| [weapon-ammo.md](weapon-ammo.md) | 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 102 |
-| [weapon-ammo.md](weapon-ammo.md) | 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 0 |
-| [weapon-ammo.md](weapon-ammo.md) | 연관 | 무기 상태 설정 (.fsm) | `set/stuff/_settings/*.fsm` | 5 | 0 |
-| [weapon-ammo.md](weapon-ammo.md) | 연관 | 폭발 계산 매크로 | `set/blast.inc` | 71 | 0 |
-| [item-entity.md](item-entity.md) | 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 38 |
-| 합계 | | | | 3372 | 451 |
+| 문서 | 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |
+|---|---|---|---|---|---|---|---|---|---|
+| [infantry.md](infantry.md) | 본체 | 보병 정의 | `set/breed/**/*.set` | 16 | 0 | 0 | 15 | 0 | 1 |
+| [infantry.md](infantry.md) | 연관 | 능력치 매크로 | `set/breed/**/*.inc` | 91 | 0 | 0 | 73 | 18 | 0 |
+| [infantry.md](infantry.md) | 연관 | 외형 엔티티 | `entity/humanskin/**/*.def` | 18 | 0 | 0 | 12 | 0 | 6 |
+| [vehicle.md](vehicle.md) | 본체 | 차량 엔티티 | `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def` | 282 | 18 | 6 | 126 | 81 | 51 |
+| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.ext) | `entity/-vehicle/**/*.ext` | 180 | 1 | 10 | 97 | 40 | 32 |
+| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.inc) | `entity/-vehicle/**/*.inc` | 113 | 0 | 3 | 59 | 39 | 12 |
+| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.ext) | `properties/**/*.ext` | 888 | 42 | 56 | 533 | 170 | 87 |
+| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.inc) | `properties/**/*.inc` | 605 | 136 | 67 | 271 | 30 | 101 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기와 장구 정의 (확장자 없음) | `set/stuff/<폴더>/<이름>` | 157 | 41 | 6 | 59 | 25 | 26 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기 정의 (.weapon) | `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon` | 58 | 16 | 2 | 21 | 9 | 10 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 10 | 1 | 30 | 23 | 15 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 3 | 0 | 13 | 0 | 4 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 지뢰와 폭발물 (.mine) | `set/stuff/explosive/*.mine` | 8 | 2 | 0 | 6 | 0 | 0 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 투척 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 53 | 6 | 60 | 8 | 28 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 13 | 333 | 48 | 109 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 무기 상태 설정 (.fsm) | `set/stuff/_settings/*.fsm` | 5 | 0 | 0 | 5 | 0 | 0 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 폭발 계산 매크로 | `set/blast.inc` | 71 | 0 | 0 | 53 | 0 | 18 |
+| [item-entity.md](item-entity.md) | 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 0 | 48 | 0 | 28 |
+| 합계 | | | | 3372 | 357 | 170 | 1822 | 491 | 532 |
 
 ## 표 읽는 법
 

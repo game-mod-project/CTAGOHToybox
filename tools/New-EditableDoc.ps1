@@ -82,11 +82,53 @@ foreach ($k in (Import-Csv -LiteralPath (Join-Path $DataDir 'keys-shared.csv')))
 $script:ann = @{}
 foreach ($g in 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared') { $script:ann[$g] = Read-Annotations -AnnotationDir $AnnotationDir -Group $g }
 
-function CsvSection([string]$Role, [string]$Name, [string]$Where, [string]$Link, [string]$Group, [string]$FileKind) {
-    @{ Role = $Role; Name = $Name; Where = $Where; Link = $Link; Group = $Group; Rows = @(Get-CsvRows $Group $FileKind) }
+# 매크로 정의를 읽어 "인자 → 그 인자가 들어가는 키와 식"을 모은다.
+# (define "mobility_tank" {locomotion {maxspeed %speed} {normal (* %speed 0.6)}}) 이면
+#   mobility_tank / speed → locomotion/maxspeed = %speed, locomotion/normal = ( * %speed 0.6 )
+$defineRegex = [regex]'\(define "([^"]+)"\)(?!.*\(define ")/?(.*)$'
+$paramRegex = [regex]'%(\w+)'
+function Read-MacroIndex {
+    $index = @{}
+    foreach ($g in 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared') {
+        $path = Join-Path $DataDir "units-$g.jsonl.gz"
+        if (-not (Test-Path -LiteralPath $path) -or (Get-Item -LiteralPath $path).Length -eq 0) { continue }
+        $sr = [IO.StreamReader]::new([IO.Compression.GZipStream]::new([IO.File]::OpenRead($path), [IO.Compression.CompressionMode]::Decompress))
+        try {
+            while ($null -ne ($line = $sr.ReadLine())) {
+                if (-not $line.Contains('(define \"')) { continue }
+                foreach ($raw in (ConvertFrom-Json $line).Raw) {
+                    $value = [string]$raw[2]
+                    if ($value.IndexOf('%') -lt 0) { continue }
+                    $m = $defineRegex.Match($raw[0])
+                    if (-not $m.Success -or -not $m.Groups[2].Value) { continue }
+                    $name = $m.Groups[1].Value.ToLowerInvariant(); $tail = $m.Groups[2].Value
+                    if (-not $index.ContainsKey($name)) { $index[$name] = [ordered]@{} }
+                    foreach ($pm in $paramRegex.Matches($value)) {
+                        $arg = $pm.Groups[1].Value
+                        # 숫자로 시작하면 위치 인자다: %0_left 에서 0
+                        if ($arg -match '^(\d+)\D') { $arg = $Matches[1] }
+                        if (-not $index[$name].Contains($arg)) { $index[$name][$arg] = [ordered]@{} }
+                        $index[$name][$arg]["$tail`t$value"] = 1
+                    }
+                }
+            }
+        }
+        finally { $sr.Dispose() }
+    }
+    $index
 }
-function SharedSection([string]$Role, [string]$Name, [string]$Where, [string]$Link, [scriptblock]$Match) {
-    @{ Role = $Role; Name = $Name; Where = $Where; Link = $Link; Group = 'shared'; Rows = @(Get-SharedRows $Match) }
+$script:macros = Read-MacroIndex
+
+# $Parent: 이 파일의 내용이 펼쳐지는 블록 이름을 돌려주는 스크립트 블록. 없으면 $null
+function CsvSection([string]$Role, [string]$Name, [string]$Where, [string]$Link, [string]$Group, [string]$FileKind, [scriptblock]$Parent) {
+    $s = @{ Role = $Role; Name = $Name; Where = $Where; Link = $Link; Group = $Group; Rows = @(Get-CsvRows $Group $FileKind) }
+    if ($Parent) { $s.Parent = $Parent }
+    $s
+}
+function SharedSection([string]$Role, [string]$Name, [string]$Where, [string]$Link, [scriptblock]$Match, [scriptblock]$Parent) {
+    $s = @{ Role = $Role; Name = $Name; Where = $Where; Link = $Link; Group = 'shared'; Rows = @(Get-SharedRows $Match) }
+    if ($Parent) { $s.Parent = $Parent }
+    $s
 }
 
 $pages = @(
@@ -95,7 +137,7 @@ $pages = @(
         Intro = '보병 하나는 `set/breed` 아래의 `.set` 파일 하나다. 능력치는 본체에 직접 적히지 않고 `perks`와 `veterancy` 안에서 매크로로 불러오므로, 능력치를 바꾸려면 연관 파일의 매크로 본문을 고치거나 본체의 매크로 호출 인자를 고친다. 들고 있는 무기와 장구의 속성은 [weapon-ammo.md](weapon-ammo.md)에 있다.'
         Sections = @(
             (CsvSection '본체' '보병 정의' 'set/breed/**/*.set' '유닛 그 자체. 파일 하나가 보병 하나' 'human' '.set'),
-            (CsvSection '연관' '능력치 매크로' 'set/breed/**/*.inc' '본체의 `perks`, `veterancy` 안에서 `(include)`와 매크로 호출로 불러온다. 폴더의 `ability.inc`가 `set/breed/presets/perks/`의 공용 정의를 include한다' 'human' '.inc'),
+            (CsvSection '연관' '능력치 매크로' 'set/breed/**/*.inc' '본체의 `perks`, `veterancy` 안에서 `(include)`와 매크로 호출로 불러온다. 폴더의 `ability.inc`가 `set/breed/presets/perks/`의 공용 정의를 include한다' 'human' '.inc' { param($r) if ($r.Example -like '*veterancy*') { 'veterancy' } else { 'perks' } }),
             (CsvSection '연관' '외형 엔티티' 'entity/humanskin/**/*.def' '본체의 `skin`이 이 파일의 이름을 가리킨다' 'human' '.def')
         )
     },
@@ -104,10 +146,10 @@ $pages = @(
         Intro = '차량류 하나는 `entity/-vehicle` 아래의 `.def` 파일 하나다. 많은 값이 본체가 아니라 include하는 파일에 있다. 장갑·기동 같은 차종 공통 값은 `properties/`의 공통 속성에, 그 차량만의 값은 같은 폴더의 `.ext`와 `.inc`에 있다. 탑재 무기와 포탄의 속성은 [weapon-ammo.md](weapon-ammo.md)에 있다.'
         Sections = @(
             (CsvSection '본체' '차량 엔티티' 'entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def' '유닛 그 자체. 파괴 모델용 `.def`도 같은 형식이다' 'vehicle' '.def'),
-            (CsvSection '연관' '차량 전용 속성 (.ext)' 'entity/-vehicle/**/*.ext' '본체의 `(include "이름.ext")`' 'vehicle' '.ext'),
-            (CsvSection '연관' '차량 전용 속성 (.inc)' 'entity/-vehicle/**/*.inc' '본체나 다른 차량의 `(include "../이름/이름.inc")`. 파생형이 기본형의 값을 물려받을 때 쓴다' 'vehicle' '.inc'),
-            (SharedSection '연관' '공통 속성 (.ext)' 'properties/**/*.ext' '본체의 `(include "/properties/...")`. 같은 차종의 모든 유닛이 공유한다' { param($id) $id.StartsWith('properties/') -and $id.EndsWith('.ext') }),
-            (SharedSection '연관' '공통 속성 (.inc)' 'properties/**/*.inc' '본체와 공통 속성 `.ext`의 `(include "/properties/...")`. 같은 차종의 모든 유닛이 공유한다' { param($id) $id.StartsWith('properties/') -and $id.EndsWith('.inc') })
+            (CsvSection '연관' '차량 전용 속성 (.ext)' 'entity/-vehicle/**/*.ext' '본체의 `(include "이름.ext")`' 'vehicle' '.ext' { 'game_entity' }),
+            (CsvSection '연관' '차량 전용 속성 (.inc)' 'entity/-vehicle/**/*.inc' '본체나 다른 차량의 `(include "../이름/이름.inc")`. 파생형이 기본형의 값을 물려받을 때 쓴다' 'vehicle' '.inc' { 'game_entity' }),
+            (SharedSection '연관' '공통 속성 (.ext)' 'properties/**/*.ext' '본체의 `(include "/properties/...")`. 같은 차종의 모든 유닛이 공유한다' { param($id) $id.StartsWith('properties/') -and $id.EndsWith('.ext') } { 'game_entity' }),
+            (SharedSection '연관' '공통 속성 (.inc)' 'properties/**/*.inc' '본체와 공통 속성 `.ext`의 `(include "/properties/...")`. 같은 차종의 모든 유닛이 공유한다' { param($id) $id.StartsWith('properties/') -and $id.EndsWith('.inc') } { 'game_entity' })
         )
     },
     @{
@@ -121,7 +163,7 @@ $pages = @(
             (CsvSection '본체' '지뢰와 폭발물 (.mine)' 'set/stuff/explosive/*.mine' '보병의 `inventory/item`' 'weapon-ammo' '.mine'),
             (CsvSection '본체' '투척 (.hand)' 'set/stuff/thrower.hand' '파일이 하나뿐이다. 어디서 가리키는지는 확인하지 않았다' 'weapon-ammo' '.hand'),
             (CsvSection '연관' '원형 (.pattern)' 'set/stuff/**/*.pattern' '무기와 탄약의 `{from "pattern 이름"}`. 같은 원형을 쓰는 모든 아이템이 값을 물려받는다' 'weapon-ammo' '.pattern'),
-            (CsvSection '연관' '폴더의 매크로 모음 (.presets)' 'set/stuff/<폴더>/.presets' '그 폴더와 하위 폴더의 파일이 include 없이 쓰는 매크로 정의. `("fire rate" rpm(240))` 같은 호출의 본문이 여기에 있다' 'weapon-ammo' '.presets'),
+            (CsvSection '연관' '폴더의 매크로 모음 (.presets)' 'set/stuff/<폴더>/.presets' '그 폴더와 하위 폴더의 파일이 include 없이 쓰는 매크로 정의. `("fire rate" rpm(240))` 같은 호출의 본문이 여기에 있다' 'weapon-ammo' '.presets' { 'from' }),
             (CsvSection '연관' '무기 상태 설정 (.fsm)' 'set/stuff/_settings/*.fsm' '어디서 가리키는지는 확인하지 않았다' 'weapon-ammo' '.fsm'),
             (SharedSection '연관' '폭발 계산 매크로' 'set/blast.inc' '탄약의 `("he_level_3")` 같은 매크로 호출과 `.presets`의 `(include "\set\blast.inc")`' { param($id) $id -eq 'set/blast.inc' })
         )
@@ -137,9 +179,103 @@ $pages = @(
 
 $header = '| 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |'
 $sep = '|---|---|---|---|---|---|'
+$gradeOrder = '확인', '문서', '추정', '정의'
 $summary = [Collections.Generic.List[object]]::new()
 
+# 설명 끝의 근거 괄호를 뗀다: "최고 속도, km/h (추정: 이름)" → "최고 속도, km/h"
+function Get-ShortMeaning([string]$m) { ($m -replace '\s*\((추정|같은 자리)[^)]*\)\s*$', '').Trim() }
+
+# 매크로 호출의 설명: 인자마다 그 인자가 들어가는 키와 식
+function Get-MacroMeaning([string]$Path, [hashtable]$Tails) {
+    $name = $Path.Substring($Path.LastIndexOf('/') + 1)
+    if ($name -notmatch '^\("(.+)"\)$') { return $null }
+    $def = $script:macros[$Matches[1].ToLowerInvariant()]
+    if (-not $def) { return $null }
+    $parts = foreach ($arg in $def.Keys) {
+        $targets = @($def[$arg].Keys)
+        $shown = foreach ($t in ($targets | Select-Object -First 4)) {
+            $tail, $expr = $t.Split("`t", 2)
+            if ($expr -eq "%$arg" -or $expr -eq "`"%$arg`"") {
+                $plain = @(ConvertTo-PlainKeyPath "/$tail")
+                $known = if ($plain.Count -ge 2) { $Tails["block`t$($plain[-2..-1] -join '/')"] }
+                if ($known -and $known.Count -eq 1) { "``$tail`` [$(Get-ShortMeaning @($known.Keys)[0])]" } else { "``$tail``" }
+            }
+            else { "``$tail`` = ``$expr``" }
+        }
+        $more = if ($targets.Count -gt 4) { " 외 $($targets.Count - 4)곳" } else { '' }
+        $label = if ($arg -match '^\d+$') { "args의 $([int]$arg + 1)번째" } else { "``$arg``" }
+        "$label → $($shown -join ', ')$more"
+    }
+    "매크로 호출. 인자가 들어가는 자리: $($parts -join '; ')"
+}
+
 foreach ($page in $pages) {
+    # 1차: 주석 파일에서 직접 찾는다
+    $tails = @{}; $roots = @{}
+    # 주석 파일에 정확한 경로로 적힌 설명도 같은 자리의 근거가 된다 (펼친 뒤에만 나타나는 경로 포함)
+    foreach ($k in $script:ann[$page.Sections[0].Group].Keys) {
+        $kind, $apath, $aform = $k.Split("`t")
+        $a = $script:ann[$page.Sections[0].Group][$k]
+        if ($kind -ne '*' -or -not $apath.StartsWith('/') -or $a.Grade -notin '확인', '문서', '추정') { continue }
+        $plain = @(ConvertTo-PlainKeyPath $apath)
+        for ($i = 0; $i -le $plain.Count - 2; $i++) {
+            $tk = "$aform`t$($plain[$i..($plain.Count - 1)] -join '/')"
+            if (-not $tails.ContainsKey($tk)) { $tails[$tk] = @{} }
+            $tails[$tk][$a.Meaning] = 1
+        }
+    }
+    foreach ($s in $page.Sections) {
+        foreach ($r in $s.Rows) {
+            $a = Get-Annotation $script:ann[$s.Group] $r.FileKind $r.Path $r.Form ($s.Group -ne 'shared' -and $UnitFileKinds -contains $r.FileKind)
+            $r | Add-Member -NotePropertyName Grade -NotePropertyValue $a.Grade -Force
+            $r | Add-Member -NotePropertyName Meaning -NotePropertyValue $a.Meaning -Force
+            if ($a.Grade -notin '확인', '문서', '추정') { continue }
+            # 같은 자리의 다른 파일이 물려받을 수 있게 경로 꼬리로 등록한다
+            $plain = @(ConvertTo-PlainKeyPath $r.Path)
+            for ($i = 0; $i -le $plain.Count - 2; $i++) {
+                $k = "$($r.Form)`t$($plain[$i..($plain.Count - 1)] -join '/')"
+                if (-not $tails.ContainsKey($k)) { $tails[$k] = @{} }
+                $tails[$k][$a.Meaning] = 1
+            }
+            if ($s.Role -eq '본체' -and $plain.Count -eq 2) {
+                $k = "$($r.Form)`t$($plain[1])"
+                if (-not $roots.ContainsKey($k)) { $roots[$k] = @{} }
+                $roots[$k][$a.Meaning] = 1
+            }
+        }
+    }
+    # 2차: 매크로 호출은 정의에서, 나머지는 본체의 같은 자리에서 가져온다
+    foreach ($s in $page.Sections) {
+        foreach ($r in $s.Rows) {
+            if ($r.Grade -in '확인', '문서', '추정') { continue }
+            if ($r.Form -eq 'macro') {
+                $m = Get-MacroMeaning $r.Path $tails
+                if ($m) { $r.Grade = '정의'; $r.Meaning = $m }
+                continue
+            }
+            $plain = @(ConvertTo-PlainKeyPath $r.Path)
+            # 같은 자리를 가리키는 경로 후보: 그대로, 이 파일이 펼쳐지는 블록을 앞에 붙인 것,
+            # 매크로 이름을 부모로 본 것((define "locomotion") {maxspeed ..} → locomotion/maxspeed)
+            $candidates = [Collections.Generic.List[object]]::new()
+            $candidates.Add($plain)
+            if ($s.ContainsKey('Parent')) { $candidates.Add(@(& $s.Parent $r) + $plain) }
+            $dm = $defineRegex.Match($r.Path)
+            if ($dm.Success) { $candidates.Add(@($dm.Groups[1].Value.ToLowerInvariant()) + @(ConvertTo-PlainKeyPath "/$($dm.Groups[2].Value)")) }
+            $found = $null
+            foreach ($cand in $candidates) {
+                for ($i = 0; $i -le $cand.Count - 2 -and -not $found; $i++) {
+                    $hit = $tails["$($r.Form)`t$($cand[$i..($cand.Count - 1)] -join '/')"]
+                    if ($hit -and $hit.Count -eq 1) { $found = @($hit.Keys)[0] }
+                }
+            }
+            if (-not $found -and $plain.Count -eq 1) {
+                $hit = $roots["$($r.Form)`t$($plain[0])"]
+                if ($hit -and $hit.Count -eq 1) { $found = @($hit.Keys)[0] }
+            }
+            if ($found) { $r.Grade = '추정'; $r.Meaning = "$(Get-ShortMeaning $found) (같은 자리의 본체 설명을 가져옴)" }
+        }
+    }
+
     $sb = [Text.StringBuilder]::new()
     [void]$sb.AppendLine("# 수정 가능한 속성: $($page.Title)")
     [void]$sb.AppendLine()
@@ -147,21 +283,22 @@ foreach ($page in $pages) {
     [void]$sb.AppendLine()
     [void]$sb.AppendLine($page.Intro)
     [void]$sb.AppendLine()
-    [void]$sb.AppendLine('| 구분 | 파일 | 위치 | 속성 수 | 뜻을 아는 속성 |')
-    [void]$sb.AppendLine('|---|---|---|---|---|')
+    [void]$sb.AppendLine('| 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |')
+    [void]$sb.AppendLine('|---|---|---|---|---|---|---|---|---|')
     $body = [Text.StringBuilder]::new()
     foreach ($s in $page.Sections) {
         $known = [Collections.Generic.List[string]]::new(); $unknown = [Collections.Generic.List[string]]::new()
+        $count = @{}; foreach ($g in $gradeOrder) { $count[$g] = 0 }
         foreach ($r in ($s.Rows | Sort-Object Path, Form)) {
-            $a = Get-Annotation $script:ann[$s.Group] $r.FileKind $r.Path $r.Form ($s.Group -ne 'shared' -and $UnitFileKinds -contains $r.FileKind)
-            $isKnown = $a.Grade -in '확인', '추정'
-            $desc = if ($isKnown) { "**$($a.Grade)** $($a.Meaning)" } elseif ($a.Meaning) { "미확인. $($a.Meaning)" } else { '미확인' }
+            $isKnown = $r.Grade -in $gradeOrder
+            $desc = if ($isKnown) { "**$($r.Grade)** $($r.Meaning)" } elseif ($r.Meaning) { "미확인. $($r.Meaning)" } else { '미확인' }
             $row = "| $(Code $r.Path) | $(Cell $r.Value) | $(Cell $desc) | $(Cell $r.Comments) | $($r.FileCount) | $(Code $r.Example) |"
-            if ($isKnown) { $known.Add($row) } else { $unknown.Add($row) }
+            if ($isKnown) { $known.Add($row); $count[$r.Grade]++ } else { $unknown.Add($row) }
         }
         $total = $known.Count + $unknown.Count
-        [void]$sb.AppendLine("| $($s.Role) | $($s.Name) | $(Code $s.Where) | $total | $($known.Count) |")
-        $summary.Add([pscustomobject]@{ Page = $page.File; Title = $page.Title; Role = $s.Role; Name = $s.Name; Where = $s.Where; Total = $total; Known = $known.Count })
+        [void]$sb.AppendLine("| $($s.Role) | $($s.Name) | $(Code $s.Where) | $total | $($count['확인']) | $($count['문서']) | $($count['추정']) | $($count['정의']) | $($unknown.Count) |")
+        $summary.Add([pscustomobject]@{ Page = $page.File; Role = $s.Role; Name = $s.Name; Where = $s.Where; Total = $total
+                Confirmed = $count['확인']; Documented = $count['문서']; Inferred = $count['추정']; Defined = $count['정의']; Unknown = $unknown.Count })
 
         [void]$body.AppendLine("## $($s.Role): $($s.Name)")
         [void]$body.AppendLine()
@@ -187,9 +324,9 @@ foreach ($page in $pages) {
     [void]$sb.AppendLine()
     [void]$sb.Append($body.ToString())
     [IO.File]::WriteAllText((Join-Path $OutDir $page.File), $sb.ToString(), $utf8)
-    Write-Host "$($page.File) attributes=$(($summary | Where-Object Page -eq $page.File | Measure-Object Total -Sum).Sum)"
+    $mine = @($summary | Where-Object Page -eq $page.File)
+    Write-Host "$($page.File) attributes=$(($mine | Measure-Object Total -Sum).Sum) unknown=$(($mine | Measure-Object Unknown -Sum).Sum)"
 }
-
 $sb = [Text.StringBuilder]::new()
 [void]$sb.AppendLine(@'
 # 유닛의 수정 가능한 속성
@@ -210,10 +347,11 @@ $sb = [Text.StringBuilder]::new()
 ## 파일별 속성 수
 
 '@)
-[void]$sb.AppendLine('| 문서 | 구분 | 파일 | 위치 | 속성 수 | 뜻을 아는 속성 |')
-[void]$sb.AppendLine('|---|---|---|---|---|---|')
-foreach ($s in $summary) { [void]$sb.AppendLine("| [$($s.Page)]($($s.Page)) | $($s.Role) | $($s.Name) | $(Code $s.Where) | $($s.Total) | $($s.Known) |") }
-[void]$sb.AppendLine("| 합계 | | | | $(($summary | Measure-Object Total -Sum).Sum) | $(($summary | Measure-Object Known -Sum).Sum) |")
+[void]$sb.AppendLine('| 문서 | 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |')
+[void]$sb.AppendLine('|---|---|---|---|---|---|---|---|---|---|')
+foreach ($s in $summary) { [void]$sb.AppendLine("| [$($s.Page)]($($s.Page)) | $($s.Role) | $($s.Name) | $(Code $s.Where) | $($s.Total) | $($s.Confirmed) | $($s.Documented) | $($s.Inferred) | $($s.Defined) | $($s.Unknown) |") }
+$sum = { param($n) ($summary | Measure-Object $n -Sum).Sum }
+[void]$sb.AppendLine("| 합계 | | | | $(& $sum Total) | $(& $sum Confirmed) | $(& $sum Documented) | $(& $sum Inferred) | $(& $sum Defined) | $(& $sum Unknown) |")
 [void]$sb.AppendLine(@'
 
 ## 표 읽는 법

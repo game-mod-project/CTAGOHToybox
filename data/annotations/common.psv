@@ -367,3 +367,250 @@
 # ---------- 뼈대 참조
 /game_entity/chassis/track/tracer/bone|block|추정|자국을 남기는 기준 뼈대 이름 (추정: 값 "FXtraceL1")|S
 /game_entity/chassis/track/texturescroller/bone|block|추정|텍스처를 움직일 궤도 뼈대 이름 (추정: 값 "TrackL")|S
+
+# ---------- 꼬리 주석 (**/꼬리). include되는 파일과 매크로 정의 안의 키에도 적용된다.
+# 등급 "문서" = 엔진 공식 문서나 외부 가이드에 설명이 있음. 출처 D = docs.bestway.com.ua (Men of War II 기준)
+
+# 차량 부품 내구도 (properties/*.ext의 *_durability 매크로 본문)
+**/perks/component|block|추정|내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel")|S
+**/component/health/hp|block|추정|부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의)|S
+**/component/health/hp_broken|block|확인|부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다|C
+**/armor_damage_modifier|block|확인|관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수|C
+**/component/repairtime|block|추정|부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임)|S
+**/component/repairorder|block|추정|부품을 수리하는 순서 (추정: 이름과 값이 작은 정수)|S
+**/perks/blastwave_modifier|block|추정|폭풍 피해에 곱하는 배수 (추정: 이름)|S
+
+# 구동계 (properties의 mobility_* 매크로 본문). 원문 주석이 키마다 달려 있다
+**/locomotion/stoptime|block|확인|브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행)|C
+**/locomotion/reargears|block|확인|후진 기어비. 후진 최고 속도를 정한다|C
+**/locomotion/gears|block|확인|전진 기어비. 가속 곡선에 영향을 준다|C
+**/locomotion/gearswitchdelay|block|확인|전진과 후진을 바꾸는 데 걸리는 시간|C
+**/locomotion/maxspeedatmaxturn|block|확인|급선회할 때 제한되는 최고 속도|C
+**/locomotion/maxslope|block|확인|오르막으로 주행할 수 있는 최대 경사|C
+**/locomotion/fallslope|block|확인|이 경사를 넘으면 물리 처리가 시작되는 최대 경사|C
+**/locomotion/steeron|block|확인|조향 바퀴가 꺾이는 속도, 도/초|C
+**/locomotion/steeroff|block|확인|조향을 놓았을 때 바퀴가 중립으로 돌아오는 속도, 도/초|C
+**/locomotion/turnstart|block|확인|직접 조종 시 회전 속도가 0에서 최대까지 오르는 데 걸리는 시간|C
+**/locomotion/turnstop|block|확인|직접 조종 시 회전 속도가 최대에서 0까지 내려가는 데 걸리는 시간|C
+**/locomotion/splineradius|block|확인|경로(스플라인) 위에서의 회전 반경 제한, 미터. 경로 계획용 매개변수|C
+**/speed/slow|block|확인|느린 이동 속도. 주로 미션 스크립트에서 쓴다|C
+**/speed/normal|block|확인|보통 이동 속도. 이동 명령을 한 번 클릭했을 때|C
+**/speed/fast|block|확인|빠른 이동 속도. 이동 명령을 더블클릭했을 때|C
+**/chassis/waterline|block|추정|물에 떴을 때 잠기는 높이 (추정: 이름. 값 0 ~ 1.6)|S
+**/chassismanager/current|block|추정|여러 구동계 가운데 지금 쓰는 것의 이름 (추정: 값 "wheel")|S
+
+# 항공기 (flight_model 매크로 본문과 properties의 항공기 속성)
+**/maxelevationspeed|block|확인|상승률. 최대 상승·강하 때 초당 고도 변화량, m/s|C
+**/elevationacceleration|block|확인|수평 비행에서 최대 상승·강하로 바뀌는 빠르기, m/s²|C
+**/maxsideslope|block|확인|선회 중에 기체가 기울 수 있는 한계 각도|C
+**/sideslopespeed|block|확인|기체가 기우는 속도, 도/초|C
+**/chassis/maxairbornealtitude|block|추정|최대 비행 고도 (추정: 이름)|S
+
+# 보병의 이동 (properties/human.ext의 chassis). 공식 문서에 표의 열 뜻이 있다
+**/chassis/injured|block|확인|체력이 최대의 30% 아래일 때의 속도 배수|C
+**/crawl/slow|block|문서|포복, 느림(지쳤거나 다쳤을 때). 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/crawl/normal|block|문서|포복, 보통. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/crawl/fast|block|문서|포복, 빠름(플레이어 명령). 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/swim/slow|block|문서|수영, 느림. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/swim/normal|block|문서|수영, 보통. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/swim/fast|block|문서|수영, 빠름. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/sneak|block|문서|걷기 모드의 하나. AI가 숨은 적을 수색할 때 쓴다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/spot|block|문서|걷기 모드의 하나. AI가 숨은 적을 수색할 때 쓴다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/walk|block|문서|느긋하게 걷거나 짐을 든 채 걷기. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/slow|block|문서|느린 달리기. 지쳤거나 험한 지형에서 자동으로 켜진다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/normal|block|문서|보통 달리기. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/fast|block|문서|전력 질주. 전투 중의 기본 이동. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/run/bow|block|문서|후퇴(withdraw) 명령 때의 질주. 달리는 동안 사격하지 않는다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초|D
+**/strafe/forth|block|문서|조준한 채 앞으로 이동. AI가 전투 중 짧은 거리를 움직일 때 쓴다. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다|D
+**/strafe/back|block|문서|조준한 채 뒤로 이동. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다|D
+**/strafe/left|block|문서|조준한 채 왼쪽으로 이동. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다|D
+**/strafe/right|block|문서|조준한 채 오른쪽으로 이동. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다|D
+
+# 보병의 체력·스태미나·자원 (properties/human.ext)
+**/extender[vitality]|block|추정|체력과 스태미나 기능 (추정: 하위 health, stamina)|S
+**/extender[vitality]/health/max|block|확인|최대 체력|C
+**/extender[vitality]/health/current|block|추정|시작할 때의 체력 (추정: 이름. max와 같은 인자를 받는다)|S
+**/extender[vitality]/health/inc|block|확인|초당 체력 회복량|C
+**/extender[vitality]/stamina/max|block|추정|최대 스태미나 (추정: 이름)|S
+**/extender[vitality]/stamina/current|block|확인|시작할 때의 스태미나|C
+**/extender[vitality]/stamina/load|block|확인|장비 무게 구간, kg. 뒤따르는 inc 표의 열이 이 구간에 대응한다|C
+**/stamina/inc/stay|block|추정|서 있을 때의 초당 스태미나 증감. 값 넷은 load의 무게 구간별 (추정: 원문 주석 "stamina regeneration/usage per second")|S
+**/stamina/inc/walk|block|추정|걸을 때의 초당 스태미나 증감. 값 넷은 load의 무게 구간별|S
+**/stamina/inc/slow|block|추정|느리게 달릴 때의 초당 스태미나 증감. 값 넷은 load의 무게 구간별|S
+**/stamina/inc/normal|block|추정|보통 달리기의 초당 스태미나 증감. 값 넷은 load의 무게 구간별|S
+**/stamina/inc/fast|block|추정|질주할 때의 초당 스태미나 증감(음수면 소모). 값 넷은 load의 무게 구간별|S
+**/extender[vitality]/damage/"*"|block|추정|맞은 부위별 피해 배수. 예: "head" 1.3 (추정: 값)|S
+**/extender[vitality]/damagetpc/"*"|block|추정|3인칭 직접 조종 중일 때의 부위별 피해 배수 (추정: 이름의 tpc와 값 "head" 1.75)|S
+**/extender[vitality]/damageblast|block|추정|폭발 피해 배수 (추정: 이름)|S
+**/extender[resources]|block|추정|자원(공병의 건설 자원 등) 기능 (추정: 하위 resources)|S
+**/extender[resources]/resources/max|block|확인|자원 최대치|C
+**/extender[resources]/resources/current|block|확인|시작할 때의 자원|C
+**/extender[resources]/resources/income|block|확인|초당 자원 회복량|C
+**/hearingbias|block|확인|소리 신호를 듣는 능력을 줄인다. 값은 미터|C
+**/sensor/informrange|block|확인|아군끼리 발견 정보를 전달하는 거리. 첫 값은 AI, 둘째 값은 사용자|C
+**/sensor/recognizetime|block|추정|대상을 식별하는 데 걸리는 시간 (추정: 이름)|S
+**/sensor/minrecognizetime|block|추정|대상을 식별하는 데 걸리는 최소 시간 (추정: 이름)|S
+**/extender[inventory]/armor|block|추정|방어구 슬롯 하나. 문자열이 슬롯 이름 (추정: 값 "head", "body")|S
+**/extender[inventory]/armor/pierceabsorb|block|추정|방어구가 흡수하는 관통량 (추정: 이름)|S
+**/extender[inventory]/armor/volumes|block|추정|이 방어구가 덮는 볼륨 이름 (추정: 값 "head", "body")|S
+
+# 보급 구역
+**/extender[supply_zone]|block|추정|주변 유닛에게 보급하는 기능 (추정: 하위 키)|S
+**/extender[supply_zone]/limit|block|확인|보급할 수 있는 총량. 0이면 무제한|C
+**/extender[supply_zone]/radius|block|확인|보급 반경, 미터|C
+**/extender[supply_zone]/resupplyperiod|block|확인|보급 주기, 초|C
+**/extender[supply_zone]/regenerationperiod|block|확인|보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다|C
+**/extender[supply_zone]/resupply/item|block|추정|보급해 주는 품목 한 줄. 대상 무기나 아이템, 종류, 수량 (추정: 값 "flame_thrower" "ammo" 50)|S
+**/extender[mine]|block|추정|지뢰 기능 (추정: 이름)|S
+**/extender[mine]/time|block|확인|매설에 더해지는 시간. 실제 매설 시간은 보병의 매설 애니메이션 길이에 이 값을 더한 것|C
+
+# 장갑 블록. 공식 문서(Men of War II)의 설명이며 원문 주석 "Threshold = koef value x volume effective thickness"와 일치한다
+**/armor/setting|block|문서|장갑 설정 묶음 하나. 문자열은 설정 이름|D
+**/armor/setting/volumes|block|문서|이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다|D
+**/armor/setting/thickness|block|문서|장갑 두께. 값이 1개면 모든 면, 2개면 전면과 나머지, 4개면 전면·측면·후면·상하|D
+**/armor/setting/ray_cast_thickness|block|문서|장갑 두께를 재는 방법. 1이면 탄이 볼륨을 지나간 거리로, 0이면 thickness 값으로 잰다|D
+**/threshold/pierce/value|block|문서|관통 피해의 문턱값. 이보다 작은 피해는 무시한다|D
+**/threshold/pierce/koef|block|문서|관통 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다|D
+**/threshold/pierce/calibre|block|문서|관통 피해의 문턱을 구경으로 정한다. 단위 mm|D
+**/threshold/blast/value|block|문서|폭발 피해의 문턱값. 이보다 작은 피해는 무시한다|D
+**/threshold/blast/koef|block|문서|폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다|D
+/(define "set_ammo")/setting|block|문서|장갑 설정 묶음 하나. 문자열은 설정 이름|D
+/(define "set_ammo")/setting/volumes|block|문서|이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다|D
+**/volume/quality|block|추정|장갑 품질. "large_flaw"는 결함이 큰 장갑 (추정: 값)|S
+**/volume/density|block|추정|볼륨의 밀도 (추정: 이름)|S
+**/volume/tags|block|추정|볼륨에 붙이는 태그 (추정: 값 "no_target")|S
+
+# 볼륨의 able 플래그. 0이면 끈다
+**/able/visible|block|추정|볼륨을 화면에 보일지 여부 (추정: able의 하위 플래그)|S
+**/able/obstacle|block|추정|이동 장애물로 작동하는지 여부 (추정: able의 하위 플래그)|S
+**/able/touch|block|추정|접촉 판정 대상인지 여부 (추정: able의 하위 플래그)|S
+**/able/blast|block|추정|폭발 판정 대상인지 여부 (추정: able의 하위 플래그)|S
+**/able/bullet|block|추정|탄환 판정 대상인지 여부 (추정: able의 하위 플래그)|S
+
+# 표시용 스프라이트와 데칼
+**/decalview|block|추정|지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer)|S
+**/decalview/sprite|block|추정|데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm")|S
+**/decalview/layer|block|추정|데칼을 그리는 층 (추정: 값 grounddynamic)|S
+**/decalview/visible|block|추정|처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값)|S
+**/decalview/offset|block|추정|위치 오프셋 x y z (추정: 값 0 0 10)|S
+**/sprite/prescalex|block|추정|그림의 가로 배율 (추정: 이름)|S
+**/sprite/prescaley|block|추정|그림의 세로 배율 (추정: 이름)|S
+**/spriteview|block|추정|엔티티에 붙여 그리는 스프라이트 하나 (추정: 하위 sprite, layer)|S
+**/spriteview/sprite|block|추정|스프라이트로 쓰는 그림 파일(.ebm) (추정: 값 "arrow.ebm")|S
+**/spriteview/layer|block|추정|스프라이트를 그리는 층 (추정: 값 grounddynamic)|S
+**/spriteview/visible|block|추정|처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값)|S
+**/spriteview/offset|block|추정|위치 오프셋 x y z (추정: 값)|S
+**/sprite/scale|block|추정|스프라이트 배율 (추정: 이름)|S
+**/sprite/preturn|block|추정|미리 돌려 놓는 각도, 도 (추정: 값 90)|S
+
+# 상태 기계(FSM). 사람과 동물의 상태 전환 규칙. 공식 문서의 설명이다
+**/fsm|block|문서|상태 기계 정의. 문자열은 이름|D
+/fsm/start|block|문서|유닛이 처음 놓이는 상태의 이름|D
+/start|block|문서|유닛이 처음 놓이는 상태의 이름|D
+/fsm/request|block|문서|상태 기계가 받는 요청 하나. 이름이 같은 태그를 가진 상태로 전환한다|D
+/request|block|문서|상태 기계가 받는 요청 하나. 이름이 같은 태그를 가진 상태로 전환한다|D
+**/request/priority|block|문서|요청의 우선순위. 여러 요청이 겹치면 값이 큰 것을 고른다|D
+**/request/duration|block|문서|코드가 요청을 다시 부르기까지 허용되는 최대 틱 수. 넘으면 요청이 취소된다|D
+**/request/exit|block|문서|요청이 시간 초과로 취소될 때 자동으로 넘어갈 상태|D
+/fsm/state|block|문서|상태 하나. 문자열이 상태 이름|D
+**/state/from|block|문서|이 상태로 들어올 수 있는 출발 상태|D
+**/state/fromtagged|block|문서|이 태그를 가진 모든 상태에서 이 상태로 들어올 수 있다|D
+**/state/to|block|문서|이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다|D
+**/state/transit|block|문서|조건이 되면 요청 없이 자동으로 넘어가는 다음 상태|D
+**/state/tag|block|문서|상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다|D
+**/state/condition|block|문서|이 상태에 들어가기 위한 조건. 요청 이름과 같아야 한다|D
+**/state/split|block|문서|유닛을 반독립적인 부분(예: 상체와 하체)으로 나눠 따로 애니메이션한다|D
+/fsm/subset|block|문서|상태 부분집합. 유닛의 현재 상태와 맞지 않는 상태를 선택에서 뺀다|D
+/subset|block|문서|상태 부분집합. 유닛의 현재 상태와 맞지 않는 상태를 선택에서 뺀다. from 뒤는 물려받을 부모 부분집합|D
+**/subset/disable|block|문서|이 부분집합에서 이 태그를 가진 상태를 못 쓰게 한다|D
+**/subset/enable|block|문서|이 부분집합에서 이 태그를 가진 상태를 쓸 수 있게 한다|D
+
+# 그 밖의 엔티티 속성
+**/lodclass|block|추정|상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human")|S
+**/simulatorid|block|추정|물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade")|S
+**/extender[talk]/talker|block|추정|음성 대사를 고르는 화자 종류 (추정: 값 "cannon", "tank", "human")|S
+**/extender[land_patch]/terraintype|block|추정|이 엔티티가 지면에 덮어씌우는 지형 종류 (추정: 값 "road" "bridge_steel")|S
+**/brain/properties/fire_mode|block|추정|기본 사격 태세 (추정: 값 hold)|S
+**/weaponry/place/barrels|block|추정|포신 수 (추정: 이름과 값 2 ~ 3)|S
+**/texturescroller/length|block|확인|궤도 텍스처가 애니메이션 한 번에 움직이는 거리, 미터|C
+**/tracer/step|block|확인|궤적(바퀴·궤도 자국)을 찍는 간격, 미터|C
+
+# 무기. 원문 주석과 같은 엔진의 이전 게임(Call to Arms, Men of War) 자료
+**/spreading/burstrecoverytime|block|확인|사격 뒤 명중률이 평소로 돌아오는 데 걸리는 시간, 초|C
+**/spreading/spreadradius|block|확인|무기의 산포 반경, 미터|C
+**/weapon_bullet/crosshair|block|확인|3인칭 조준 때의 조준선 이름|C
+**/weapon_bullet/crosshairreloading|block|확인|3인칭 조준에서 재장전 중일 때의 조준선 이름|C
+**/projectiledamagethreshold|block|확인|장갑 × 이 값보다 작은 피해는 무시한다|C
+**/inventory/handle_bone|block|확인|무기를 손에 들지 않고 메고 있을 때 몸에 연결되는 무기 쪽 뼈대|C
+**/aimingtolerance|block|확인|AI가 사격을 허용받는 조준 오차, 도|C
+**/lockfiredistancetime|block|확인|조준점이 사거리 밖에 있어도 사격이 허용되는 시간|C
+**/aimrange|block|확인|AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다|C
+**/minrange|block|추정|최소 사거리 (추정: 이름)|S
+**/maxrange|block|추정|최대 사거리 (추정: 이름. {range}로 적을 때의 둘째 값에 해당하는 것으로 보임)|S
+**/weapon_bullet/range|block|문서|사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리|Steam 토론 steamcommunity.com/app/302670/discussions/0/135511259335716556, steamcommunity.com/app/244450/discussions/0/1743353164076238918 와 ModDB의 Men of War 모딩 FAQ가 같은 설명 (2026-10-12 확인)
+**/parameters/range|block|문서|사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리|Steam 토론 steamcommunity.com/app/302670/discussions/0/135511259335716556, steamcommunity.com/app/244450/discussions/0/1743353164076238918 와 ModDB의 Men of War 모딩 FAQ가 같은 설명 (2026-10-12 확인)
+**/minimumdamagemodifier|block|문서|최소 피해. 계산식은 출처에 설명되어 있지 않다|Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인)
+**/healthdamage|block|문서|사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다|Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인)
+**/projectiledamagetable/{}|block|문서|거리와 그 거리에서의 관통력 한 쌍. 점 사이는 선형으로 잇는다|Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인)
+**/projectiledamagetable/%range|block|문서|거리와 그 거리에서의 관통력 한 쌍. 점 사이는 선형으로 잇는다|Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인)
+**/weapon_throwing/gravity|block|추정|탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1)|S
+**/weapon_throwing/foresight|block|확인|총구 화염과 탄이 나가는 원점이 되는 뼈대 이름|C
+**/weapon_throwing/filling|block|추정|장전하는 탄의 태그 (추정: 값 "throwable")|S
+**/accuracybymotionk|block|추정|움직이는 동안의 명중률에 곱하는 계수 (추정: 이름. 값 0.1 ~ 0.9)|S
+**/accuracybymotion/maxlinearspeed|block|추정|명중률 보정을 계산할 때 기준이 되는 최대 이동 속도, km/h (추정: 이름과 원문 주석의 단위)|S
+**/accuracybymotion/maxangularspeed|block|추정|명중률 보정을 계산할 때 기준이 되는 최대 회전 속도, 도/초 (추정: 이름과 원문 주석의 단위)|S
+**/accuracybymotion/bylinearspeed|block|추정|이동 속도에 따른 명중률 보정의 세기 (추정: 이름)|S
+**/accuracybymotion/byangularspeed|block|추정|회전 속도에 따른 명중률 보정의 세기 (추정: 이름)|S
+**/accuracybymotion/disordertime|block|추정|움직이기 시작한 뒤 명중률이 흐트러지는 데 걸리는 시간, 초 (추정: 이름과 원문 주석의 단위)|S
+**/accuracybymotion/ordertime|block|추정|멈춘 뒤 명중률이 회복되는 데 걸리는 시간, 초 (추정: 이름과 원문 주석의 단위)|S
+
+# 3인칭 조준 화면 (thirdpersonparams)
+**/thirdpersonparams/level|block|추정|3인칭 조준의 확대 단계 하나. 값은 단계 번호 (추정: 값 1, 2와 하위 camera)|S
+**/level/camera|block|확인|이 단계에서 쓰는 카메라 프리셋. 배율을 정한다. human_zoom4는 4배|C
+**/level/vignette_fade_speed|block|확인|조준경 테두리(비네트)가 나타나고 사라지는 속도 계수|C
+**/level/vignette_recoil|block|확인|반동 때 조준경 테두리가 흔들리는 속도와 크기|C
+**/level/scope_vignette|block|추정|조준경 테두리로 쓰는 텍스처 (추정: 값이 lens_effects 폴더의 텍스처 경로)|S
+**/level/lens_dirt_mask|block|추정|렌즈 얼룩 효과에 쓰는 텍스처 (추정: 값이 텍스처 경로)|S
+**/level/blur_mask|block|추정|가장자리 흐림 효과의 마스크 텍스처 (추정: 값이 텍스처 경로)|S
+**/level/refraction_mask|block|추정|굴절 효과의 마스크 텍스처 (추정: 값이 텍스처 경로)|S
+**/level/bump_spec_mask|block|추정|조준경 화면에 쓰는 텍스처 (추정: 값이 텍스처 경로)|S
+**/level/blur_strength|block|추정|가장자리 흐림의 세기 (추정: 이름)|S
+**/level/hide_weapon|block|추정|조준 중에 무기 모델을 숨길지 여부 (추정: 이름과 값 1)|S
+**/level/mouse_speed_factor|block|추정|조준 중 마우스 감도 배수 (추정: 이름과 값 0.6 ~ 0.8)|S
+**/level/linkbone|block|추정|조준 카메라가 붙는 뼈대 (추정: 값 "head")|S
+**/level/aimer_type|block|추정|조준 방식 이름 (추정: 값 "sniper")|S
+
+# 무기 상태 설정 (.fsm). 값은 사람의 상태 기계에 보내는 요청 이름이다
+**/state/forpick|block|추정|이 종류의 아이템을 집을 때 보내는 요청 이름 (추정: 값 "pickup-hand", "pickup-stand"가 공식 문서의 요청 목록에 있음)|S
+**/state/formount|block|추정|이 종류의 아이템을 꺼내 들 때 보내는 요청 이름 (추정: 이름과 값 "pistol-pick")|S
+**/state/forunmount|block|추정|이 종류의 아이템을 집어넣거나 내려놓을 때 보내는 요청 이름 (추정: 이름과 값 "item-drop")|S
+**/state/forhold|block|추정|이 종류의 아이템을 들고 있을 때의 요청 이름 (추정: 이름과 값 "hold-item")|S
+**/state/forthrow|block|추정|이 종류의 아이템을 던질 때 보내는 요청 이름 (추정: 이름과 값 "throw")|S
+
+# 차량의 무장·승무원·조명
+**/extender[inventory]/weapon/mask|block|문서|엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다|Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인)
+**/extender[cannon]/move|block|문서|대포를 밀 때의 승무원 애니메이션. 첫 값이 왼쪽 자리, 둘째 값이 오른쪽 자리이고 비워 두면 재생하지 않는다|Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인)
+**/place/linkbone|block|문서|무기가 붙는 뼈대|Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인)
+**/skeleton/bone/matrix34|block|추정|뼈대의 방향과 위치를 담은 3x4 행렬 (추정: Call to Arms 위키도 추정이라고 밝힘)|calltoarms.fandom.com/wiki/Modding/Files (2026-10-12 확인)
+**/skeleton/bone/position|block|추정|뼈대의 위치 x y z (추정: Call to Arms 위키도 추정이라고 밝힘)|calltoarms.fandom.com/wiki/Modding/Files (2026-10-12 확인)
+**/extender[light]/preset|block|추정|조명 프리셋 하나. 문자열이 이름 (추정: 값 "lamp_spot", "lamp_point")|S
+**/preset/light_bone|block|추정|빛이 나오는 자리의 뼈대 (추정: 이름과 값)|S
+**/preset/light_fx|block|추정|빛 효과 이름 (추정: 이름과 값 "light_post")|S
+**/preset/break_bone|block|추정|깨지는 부분(유리)의 뼈대 (추정: 이름과 값 "lamp_glass1")|S
+**/preset/break_fx|block|추정|조명이 깨질 때의 효과 이름 (추정: 이름과 값 "lamp_hit")|S
+**/texmods/"*"|block|추정|텍스처 변형(위장·계절) 이름과 텍스처 접미사 한 쌍 (추정: 값 "Autumn" "aut")|S
+**/game_entity/texmod|block|추정|기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger")|S
+**/actor/texmod|block|추정|기본으로 쓰는 텍스처 변형 이름 (추정: 값 "black", "camo")|S
+
+# 애니메이션 시퀀스와 상태 전환 (properties의 사람 애니메이션 파일)
+/sequence|block|추정|애니메이션 시퀀스 하나. 문자열이 이름 (추정: 하위 file, speed)|S
+**/sequence/file|block|추정|재생할 애니메이션 파일(.anm) (추정: 값)|S
+**/sequence/speed|block|추정|재생 속도 배수 (추정: 이름과 값 0.15 ~ 4)|S
+**/sequence/events/#row|block|추정|프레임 번호와 그 프레임에서 일으킬 이벤트 이름 (추정: 값 11 "leg_right")|S
+**/switch/link|block|확인|상태 전환의 연결 하나. 값은 출발 상태와 도착 상태|C
+**/switch/split|block|확인|나뉜 부분의 전환 하나. 값은 부분 번호, 출발 상태, 도착 상태|C
+
+# 보병
+**/mechanic|block|추정|수리 능력. factor 뒤의 수가 수리 속도 배수 (추정: 값 factor 0.5, factor 1.0과 매크로 이름 basic_repair, engineer)|S
+**/perks/"*"/fortifications|block|추정|지을 수 있는 구조물 이름 목록 (추정: 값 "foxhole" "medic_rally")|S
+**/breed/field_icon|block|추정|전장에서 유닛 위에 띄우는 아이콘 이름 (추정: 이름과 값 "rus_miner_ap")|S

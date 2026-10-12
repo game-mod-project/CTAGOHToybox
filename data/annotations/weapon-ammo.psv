@@ -1,0 +1,7 @@
+# 무기·탄약 그룹에만 적용하는 주석. 형식은 common.psv와 같다.
+# 한 조각짜리 꼬리(**/damage)는 다른 그룹에서 다른 뜻으로 쓰이므로 여기에 둔다.
+**/damage|block|추정|피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...})|S
+**/damage/radius|block|추정|피해가 미치는 반경, 미터 (추정: 이름. 값 1.05)|S
+**/damage/time|block|추정|피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds")|S
+**/special/damage|block|미확인|값 5. 특수 사격(special) 설정의 하위|
+**/damage/damage|block|미확인|수류탄의 damage 하위. 값 31 ~ 150|
