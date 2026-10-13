@@ -70,6 +70,7 @@ static class Program
             ("GameProfile", GameProfileTests.Run),
             ("KeyLocator", KeyLocatorTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
+            ("ModBuilder", ModBuilderTests.Run),
         };
         foreach (var s in suites)
         {
