@@ -78,6 +78,7 @@ static class Program
             ("KeyLocator", KeyLocatorTests.Run),
             ("ResolverOrigin", ResolverOriginTests.Run),
             ("UnitIndex", UnitIndexTests.Run),
+            ("IncludeChain", IncludeChainTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("Cli", CliTests.Run),
