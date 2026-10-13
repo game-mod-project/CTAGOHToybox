@@ -66,8 +66,18 @@ static class TokenPatcherTests
         T.Eq(EditStatus.Invalid, r[0].Status, "Apply refuses an invalid new value");
 
         var unitScope = E("/game_entity/mass", 0, 0, "46000", "1"); unitScope.Scope = "unit";
-        T.Eq(text, Apply(text, out r, unitScope), "unit scope is not applied in this version");
-        T.Eq(EditStatus.Invalid, r[0].Status, "unit scope is reported as Invalid");
+        T.True(Apply(text, out r, unitScope) != text && r[0].Status == EditStatus.Applied, "scope is the builder's business; the patcher applies the edit it is given");
+
+        var rawResults = new List<EditResult>();
+        string rawText = "{a (include \"x.inc\") {k 1}}";
+        var rawPatch = new RawPatch { Index = rawText.IndexOf("\"x.inc\""), Old = "\"x.inc\"", New = "\"x__copy.inc\"" };
+        T.Eq("{a (include \"x__copy.inc\") {k 2}}",
+            TokenPatcher.Apply(rawText, new[] { new Edit { File = "f", Path = "/a/k", Old = "1", New = "2" } }, rawResults, new[] { rawPatch }),
+            "a raw patch and an edit apply together, even though the raw patch shifts the edit's position");
+        T.Eq("{a (include \"x__copy.inc\") {k 1}}", TokenPatcher.Apply(rawText, new Edit[0], rawResults, new[] { rawPatch }), "a raw patch applies with no edits");
+        T.Throws<InvalidOperationException>(() => TokenPatcher.Apply(rawText, new Edit[0], rawResults, new[] { new RawPatch { Index = 3, Old = "\"x.inc\"", New = "\"y.inc\"" } }), "a raw patch whose Old is not at Index throws");
+        T.Throws<InvalidOperationException>(() => TokenPatcher.Apply(rawText, new Edit[0], rawResults, new[] { new RawPatch { Index = rawPatch.Index, Old = rawPatch.Old, New = "\"a\" {b}" } }), "a raw patch whose New is not one string token throws");
+        T.Throws<InvalidOperationException>(() => TokenPatcher.Apply("{a (include \"x.inc\")", new Edit[0], rawResults, new[] { new RawPatch { Index = 12, Old = "\"x.inc\"", New = "\"y.inc\"" } }), "a raw patch on a file that does not parse throws");
 
         var off = E("/game_entity/mass", 0, 0, "46000", "1"); off.Enabled = false;
         T.Eq(text, Apply(text, out r, off), "a disabled edit is skipped");

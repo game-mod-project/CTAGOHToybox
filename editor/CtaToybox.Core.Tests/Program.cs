@@ -82,6 +82,7 @@ static class Program
             ("UnitTracer", UnitTracerTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
+            ("UnitScopeBuild", UnitScopeBuildTests.Run),
             ("Cli", CliTests.Run),
         };
         foreach (var s in suites)

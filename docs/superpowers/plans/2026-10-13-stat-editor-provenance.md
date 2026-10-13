@@ -1695,9 +1695,15 @@ Expected: 컴파일 오류. `RawPatch`가 없고 `TokenPatcher.Apply`에 4인자
             // '이 유닛만' 수정을 앞에 둔다: 같은 자리를 '전부' 수정도 고치면 앞의 것이 이긴다
             var all = usable.Concat(item.Silent.Where(s => s.New != null && TextCodec.CanEncode(s.New, kind))).ToList();
             var applied = new List<EditResult>();
-            string patched = TokenPatcher.Apply(text, all, applied, item.Raw);
-            var reported = applied.Where(r => item.Edits.Contains(r.Edit)).ToList();
-            results.AddRange(reported);
+            // 적용이 검증에서 던져도 그때까지의 결과는 보고한다(호출한 쪽이 적용을 적용 불가로 바꾼다)
+            var reported = new List<EditResult>();
+            string patched;
+            try { patched = TokenPatcher.Apply(text, all, applied, item.Raw); }
+            finally
+            {
+                reported.AddRange(applied.Where(r => item.Edits.Contains(r.Edit)));
+                results.AddRange(reported);
+            }
             int count = reported.Count(r => r.Status == EditStatus.Applied);
             if (count == 0 && item.Raw.Count == 0 && !item.Always) return null;
 
