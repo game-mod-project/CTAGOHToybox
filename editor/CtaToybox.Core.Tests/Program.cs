@@ -69,6 +69,7 @@ static class Program
             ("SourceStack", SourceStackTests.Run),
             ("GameProfile", GameProfileTests.Run),
             ("KeyLocator", KeyLocatorTests.Run),
+            ("TokenPatcher", TokenPatcherTests.Run),
         };
         foreach (var s in suites)
         {

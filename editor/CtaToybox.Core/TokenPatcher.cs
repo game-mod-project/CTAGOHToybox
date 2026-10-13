@@ -1,0 +1,89 @@
+// 텍스트 하나에 수정 여러 건을 적용한다. 파일을 다시 조립하지 않고 값 토큰의 글자만 바꾼다.
+// 위치가 뒤인 것부터 바꾸므로 길이가 달라져도 앞의 위치가 밀리지 않는다.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace CtaToybox.Core
+{
+    public enum EditStatus { Applied, SourceChanged, TargetMissing, Invalid }
+
+    public sealed class EditResult
+    {
+        public Edit Edit { get; set; }
+        public EditStatus Status { get; set; }
+        public string Message { get; set; }
+    }
+
+    public static class TokenPatcher
+    {
+        // 새 값이 토큰 하나인지, 원래 값과 같은 종류(따옴표 문자열 또는 낱말)인지 본다.
+        // 반환값이 null이 아니면 적용할 수 없는 이유다. warning은 막지 않는 경고다.
+        public static string CheckNewValue(string oldToken, string newToken, out string warning)
+        {
+            warning = null;
+            if (string.IsNullOrEmpty(newToken)) return "새 값이 비어 있다";
+            var tokens = SdlCore.Tokenize(newToken);
+            if (tokens.Count != 1 || tokens[0].Text != newToken || (tokens[0].Kind != "atom" && tokens[0].Kind != "str"))
+                return "새 값은 낱말 하나이거나 따옴표로 닫힌 문자열 하나여야 한다 (공백, 괄호, 세미콜론 불가): " + newToken;
+            bool oldQuoted = oldToken.StartsWith("\""), newQuoted = tokens[0].Kind == "str";
+            if (oldQuoted != newQuoted) return oldQuoted ? "원래 값이 따옴표 문자열이다. 새 값도 따옴표로 감싼다" : "원래 값이 따옴표 없는 낱말이다. 새 값에 따옴표를 쓸 수 없다";
+            if (SdlCore.IsNumber(oldToken) && !SdlCore.IsNumber(newToken)) warning = "원래 값은 숫자인데 새 값은 숫자가 아니다: " + newToken;
+            return null;
+        }
+
+        sealed class Patch { public Edit Edit; public int Index; public int Length; }
+
+        public static string Apply(string text, IReadOnlyList<Edit> edits, List<EditResult> results)
+        {
+            var active = edits.Where(e => e.Enabled).ToList();
+            if (active.Count == 0) return text;
+            var parsed = SdlCore.Parse(text);
+            if (parsed.Errors.Count > 0)
+            {
+                foreach (var e in active) results.Add(Result(e, EditStatus.Invalid, "원본 파일이 파싱되지 않는다: " + parsed.Errors[0]));
+                return text;
+            }
+
+            var patches = new List<Patch>();
+            var taken = new HashSet<int>();
+            foreach (var e in active)
+            {
+                if (e.Scope != "shared") { results.Add(Result(e, EditStatus.Invalid, "이 버전은 scope가 shared인 수정만 적용한다")); continue; }
+                var node = KeyLocator.Find(parsed.Root, e.Path, e.Occurrence, e.Arg);
+                if (node == null) { results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 자리가 없다: " + e.Path + " [" + e.Occurrence + "] 값 " + e.Arg)); continue; }
+                if (node.Text != e.Old) { results.Add(Result(e, EditStatus.SourceChanged, "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text)); continue; }
+                string warning;
+                string error = CheckNewValue(e.Old, e.New, out warning);
+                if (error != null) { results.Add(Result(e, EditStatus.Invalid, error)); continue; }
+                if (!taken.Add(node.Index)) { results.Add(Result(e, EditStatus.Invalid, "같은 값을 고치는 수정이 앞에 이미 있다")); continue; }
+                patches.Add(new Patch { Edit = e, Index = node.Index, Length = node.Text.Length });
+                results.Add(Result(e, EditStatus.Applied, warning));
+            }
+            if (patches.Count == 0) return text;
+
+            var sb = new System.Text.StringBuilder(text);
+            foreach (var p in patches.OrderByDescending(x => x.Index))
+            {
+                sb.Remove(p.Index, p.Length);
+                sb.Insert(p.Index, p.Edit.New);
+            }
+            string patched = sb.ToString();
+
+            // 고친 결과를 다시 읽어 구조가 그대로인지, 그 자리에 새 값이 들어갔는지 확인한다
+            var check = SdlCore.Parse(patched);
+            if (check.Errors.Count > 0 || !SdlCore.RoundTrip(check)) throw new InvalidOperationException("고친 파일이 다시 파싱되지 않는다");
+            foreach (var p in patches)
+            {
+                var node = KeyLocator.Find(check.Root, p.Edit.Path, p.Edit.Occurrence, p.Edit.Arg);
+                if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다: " + p.Edit.Path);
+            }
+            return patched;
+        }
+
+        static EditResult Result(Edit e, EditStatus status, string message)
+        {
+            return new EditResult { Edit = e, Status = status, Message = message };
+        }
+    }
+}
