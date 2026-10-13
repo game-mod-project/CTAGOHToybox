@@ -76,8 +76,13 @@ static class Program
             ("SourceStack", SourceStackTests.Run),
             ("GameProfile", GameProfileTests.Run),
             ("KeyLocator", KeyLocatorTests.Run),
+            ("ResolverOrigin", ResolverOriginTests.Run),
+            ("UnitIndex", UnitIndexTests.Run),
+            ("IncludeChain", IncludeChainTests.Run),
+            ("UnitTracer", UnitTracerTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
+            ("UnitScopeBuild", UnitScopeBuildTests.Run),
             ("Cli", CliTests.Run),
         };
         foreach (var s in suites)

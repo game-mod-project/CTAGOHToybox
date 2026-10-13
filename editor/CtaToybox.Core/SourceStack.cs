@@ -105,6 +105,15 @@ namespace CtaToybox.Core
             }
         }
 
+        // 지금 게임이 읽을 그 파일의 텍스트. 없으면 null
+        public string ReadText(string virtualPath)
+        {
+            var file = Find(virtualPath);
+            if (file == null) return null;
+            TextKind kind;
+            return TextCodec.Decode(Read(file), out kind);
+        }
+
         public void Dispose()
         {
             foreach (var z in open.Values) z.Dispose();

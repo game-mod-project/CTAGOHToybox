@@ -26,7 +26,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 
 - 테스트: `pwsh -NoProfile -File tools/tests/Run-Tests.ps1`
 - 편집기 테스트: `dotnet run --project editor/CtaToybox.Core.Tests -c Release`. 전체 테스트(`Run-Tests.ps1`)에 포함돼 있다. 실제 게임 파일 검증은 끝에 `-- real`을 붙인다.
-- 편집기 명령줄: `dotnet run --project editor/CtaToybox.Cli -c Release -- <명령>`. 사용법은 `docs/07-stat-editor/README.md`.
+- 편집기 명령줄: `dotnet run --project editor/CtaToybox.Cli -c Release -- <명령>`. 명령은 `sources`, `units`, `trace`, `show`, `add`, `build`. 사용법은 `docs/07-stat-editor/README.md`. 유닛 색인 캐시는 `editor/cache/`(git 제외)에 생긴다.
 - 바닐라 전체 재생성(약 6분): `pwsh -NoProfile -File tools/Invoke-Pipeline.ps1 -SourceRoot "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\resource" -WorkDir _work\vanilla -DataDir data`
 - 표시 이름: `pwsh -NoProfile -File tools/Build-DisplayNames.ps1 -LocPak "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\localizations\default.pak" -DataDir data`
 - 유닛 문서 재생성과 검증: `pwsh -NoProfile -File tools/New-SchemaDoc.ps1 -DataDir data -AnnotationDir data\annotations -OutDir docs\04-units` 다음 `pwsh -NoProfile -File tools/Test-Coverage.ps1 -DataDir data -DocsDir docs\04-units`. `keys-missing=0`이 나와야 한다.

@@ -25,7 +25,7 @@
 |---|---|
 | 같은 경로의 파일은 `options.set`의 `{mods}`에서 뒤에 있는 모드의 것이 쓰인다. 모드의 낱개 파일이 바닐라 pak의 파일을 이긴다 | 게임 안 확인. `docs/07-stat-editor/ingame-check.md` |
 | 유닛은 16,230개다(바닐라). 종류는 `tools/lib/Common.ps1`의 `Get-SdlUnitKind` 규칙으로 정한다 | `_work/vanilla`를 그 규칙으로 센 결과 |
-| 바닐라 유닛 전체를 펼치는 데 73초가 걸린다(낱개 파일 기준) | 기존 `SdlResolver`로 측정. 그래서 색인은 캐시한다 |
+| 바닐라 유닛 전체를 펼치는 데 73초가 걸린다(낱개 파일 기준) | 기존 `SdlResolver`를 PowerShell 루프로 돌려 측정. 그래서 색인을 캐시하기로 했다. 구현 뒤 C#에서 잰 값은 유닛 21,612개에 8.2초다(Task 6의 실제 파일 검증) |
 | 차량과 보병 파일의 include 대상은 `.inc`(10,942건)와 `.ext`(1,996건)뿐이다. `.def`를 include하는 `.def`는 없다 | `data/units-vehicle.jsonl.gz`, `data/units-human.jsonl.gz` |
 | include 대상 파일 이름에는 숫자와 밑줄이 쓰인다(`aec_mk1.ext` 등 411개가 `[a-z_]` 밖의 글자를 가진다) | `_work/vanilla/entity/-vehicle`의 `.ext`·`.inc` 이름 |
 | include 경로는 세 형태다: `"kv85.ext"`(같은 폴더), `"/properties/tank.ext"`(루트 기준), 인자가 붙은 `"/properties/selection/vehicle.inc" scale(1.2)` | `entity/-vehicle/ussr/tank_heavy/kv85/kv85.def` |
@@ -1695,9 +1695,15 @@ Expected: 컴파일 오류. `RawPatch`가 없고 `TokenPatcher.Apply`에 4인자
             // '이 유닛만' 수정을 앞에 둔다: 같은 자리를 '전부' 수정도 고치면 앞의 것이 이긴다
             var all = usable.Concat(item.Silent.Where(s => s.New != null && TextCodec.CanEncode(s.New, kind))).ToList();
             var applied = new List<EditResult>();
-            string patched = TokenPatcher.Apply(text, all, applied, item.Raw);
-            var reported = applied.Where(r => item.Edits.Contains(r.Edit)).ToList();
-            results.AddRange(reported);
+            // 적용이 검증에서 던져도 그때까지의 결과는 보고한다(호출한 쪽이 적용을 적용 불가로 바꾼다)
+            var reported = new List<EditResult>();
+            string patched;
+            try { patched = TokenPatcher.Apply(text, all, applied, item.Raw); }
+            finally
+            {
+                reported.AddRange(applied.Where(r => item.Edits.Contains(r.Edit)));
+                results.AddRange(reported);
+            }
             int count = reported.Count(r => r.Status == EditStatus.Applied);
             if (count == 0 && item.Raw.Count == 0 && !item.Always) return null;
 

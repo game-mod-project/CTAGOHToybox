@@ -15,6 +15,14 @@ namespace CtaToybox.Core
         public string Message { get; set; }
     }
 
+    // 수정 목록에 없는 치환: include 경로를 사본으로 고쳐 쓰는 데 쓴다. Old와 New는 따옴표를 포함한 토큰 원문이다
+    public sealed class RawPatch
+    {
+        public int Index;
+        public string Old;
+        public string New;
+    }
+
     public static class TokenPatcher
     {
         // 새 값이 토큰 하나인지, 원래 값과 같은 종류(따옴표 문자열 또는 낱말)인지 본다.
@@ -32,24 +40,44 @@ namespace CtaToybox.Core
             return null;
         }
 
-        sealed class Patch { public Edit Edit; public int Index; public int Length; }
+        sealed class Patch { public Edit Edit; public int Index; public int Length; public string New; }
 
         public static string Apply(string text, IReadOnlyList<Edit> edits, List<EditResult> results)
         {
+            return Apply(text, edits, results, null);
+        }
+
+        // raw의 자리가 원본과 다르거나 원본이 파싱되지 않으면 던진다: include 경로를 반만 고친 파일을 쓰면 안 된다
+        public static string Apply(string text, IReadOnlyList<Edit> edits, List<EditResult> results, IReadOnlyList<RawPatch> raw)
+        {
             var active = edits.Where(e => e.Enabled).ToList();
-            if (active.Count == 0) return text;
+            bool hasRaw = raw != null && raw.Count > 0;
+            if (active.Count == 0 && !hasRaw) return text;
             var parsed = SdlCore.Parse(text);
             if (parsed.Errors.Count > 0)
             {
                 foreach (var e in active) results.Add(Result(e, EditStatus.Invalid, "원본 파일이 파싱되지 않는다: " + parsed.Errors[0]));
+                if (hasRaw) throw new InvalidOperationException("원본 파일이 파싱되지 않아 include 경로를 고쳐 쓸 수 없다: " + parsed.Errors[0]);
                 return text;
             }
 
             var patches = new List<Patch>();
             var taken = new HashSet<int>();
+            if (hasRaw)
+            {
+                foreach (var r in raw)
+                {
+                    if (r.Index < 0 || r.Index + r.Old.Length > text.Length || string.CompareOrdinal(text, r.Index, r.Old, 0, r.Old.Length) != 0)
+                        throw new InvalidOperationException("include 경로의 자리가 원본과 다르다: " + r.Old);
+                    var tokens = SdlCore.Tokenize(r.New);
+                    if (tokens.Count != 1 || tokens[0].Kind != "str" || tokens[0].Text != r.New)
+                        throw new InvalidOperationException("include 경로는 따옴표로 닫힌 문자열 하나여야 한다: " + r.New);
+                    if (!taken.Add(r.Index)) throw new InvalidOperationException("같은 include 경로를 두 번 고쳐 쓰려 했다: " + r.Old);
+                    patches.Add(new Patch { Index = r.Index, Length = r.Old.Length, New = r.New });
+                }
+            }
             foreach (var e in active)
             {
-                if (e.Scope != "shared") { results.Add(Result(e, EditStatus.Invalid, "이 버전은 scope가 shared인 수정만 적용한다")); continue; }
                 var node = KeyLocator.Find(parsed.Root, e.Path, e.Occurrence, e.Arg);
                 if (node == null) { results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 자리가 없다: " + e.Path + " [" + e.Occurrence + "] 값 " + e.Arg)); continue; }
                 if (node.Text != e.Old) { results.Add(Result(e, EditStatus.SourceChanged, "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text)); continue; }
@@ -57,7 +85,7 @@ namespace CtaToybox.Core
                 string error = CheckNewValue(e.Old, e.New, out warning);
                 if (error != null) { results.Add(Result(e, EditStatus.Invalid, error)); continue; }
                 if (!taken.Add(node.Index)) { results.Add(Result(e, EditStatus.Invalid, "같은 값을 고치는 수정이 앞에 이미 있다")); continue; }
-                patches.Add(new Patch { Edit = e, Index = node.Index, Length = node.Text.Length });
+                patches.Add(new Patch { Edit = e, Index = node.Index, Length = node.Text.Length, New = e.New });
                 results.Add(Result(e, EditStatus.Applied, warning));
             }
             if (patches.Count == 0) return text;
@@ -66,7 +94,7 @@ namespace CtaToybox.Core
             foreach (var p in patches.OrderByDescending(x => x.Index))
             {
                 sb.Remove(p.Index, p.Length);
-                sb.Insert(p.Index, p.Edit.New);
+                sb.Insert(p.Index, p.New);
             }
             string patched = sb.ToString();
 
@@ -75,6 +103,7 @@ namespace CtaToybox.Core
             if (check.Errors.Count > 0 || !SdlCore.RoundTrip(check)) throw new InvalidOperationException("고친 파일이 다시 파싱되지 않는다");
             foreach (var p in patches)
             {
+                if (p.Edit == null) continue;
                 var node = KeyLocator.Find(check.Root, p.Edit.Path, p.Edit.Occurrence, p.Edit.Arg);
                 if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다: " + p.Edit.Path);
             }

@@ -10,12 +10,23 @@
 //              macro:<이름>(정의 없음), macro-cycle:, macro-depth:, param:%<이름>(채워지지 않은 매개변수)
 // 물려받은 인자: 안쪽 매크로나 include가 자기에게 직접 주어지지 않은, 바깥 호출의 인자를 쓴 경우 Inherited에 적는다.
 //              엔진이 인자를 물려주는지 확인하지 못했으므로, 그 가정에 기대는 곳을 볼 수 있게 한다.
+// 출처: 읽은 노드마다 파일의 가상 경로(SdlNode.File)를 적는다. 치환·계산으로 만든 노드는 Synthetic이다.
+//       include 지시문의 자리는 IncludeEdges에 적는다. .presets를 읽으며 지나간 include는 적지 않는다.
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
+
+// include 지시문 하나. Index와 Raw는 FromFile 안에 있는 경로 문자열 토큰의 자리와 원문(따옴표 포함)이다
+public sealed class SdlIncludeEdge
+{
+    public string FromFile { get; set; }
+    public int Index { get; set; }
+    public string Raw { get; set; }
+    public string ToFile { get; set; }
+}
 
 public sealed class SdlResolveResult
 {
@@ -25,6 +36,7 @@ public sealed class SdlResolveResult
     public List<string> Macros { get; set; }
     public List<string> Presets { get; set; }
     public List<string> Inherited { get; set; }
+    public List<SdlIncludeEdge> IncludeEdges { get; set; }
 }
 
 public sealed class SdlResolver
@@ -38,14 +50,31 @@ public sealed class SdlResolver
     sealed class Parsed { public SdlNode Root; public bool HasErrors; }
 
     readonly string[] workDirs;   // 앞에 있는 폴더가 우선한다
+    readonly Func<string, string> reader;
     readonly Dictionary<string, Parsed> cache = new Dictionary<string, Parsed>(StringComparer.OrdinalIgnoreCase);
     Dictionary<string, Def> defines;
     List<string> unresolved, includes, macros, inherited;
+    List<SdlIncludeEdge> edges;
     // 지금 펼치는 중인 include와 매크로. 다시 들어오면 순환이다
     readonly HashSet<string> activeIncludes = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
     readonly HashSet<string> activeMacros = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-    public SdlResolver(string[] workDirs) { this.workDirs = workDirs; }
+    public SdlResolver(string[] workDirs) { this.workDirs = workDirs; reader = ReadFromDirs; }
+
+    // 가상 경로를 주면 텍스트를, 없으면 null을 돌려주는 함수로 읽는다 (편집기의 원본 계층)
+    public SdlResolver(Func<string, string> readText) { workDirs = new string[0]; reader = readText; }
+
+    string ReadFromDirs(string virtualPath)
+    {
+        string full = Find(virtualPath);
+        return full == null ? null : ReadText(full);
+    }
+
+    static void Stamp(SdlNode n, string file)
+    {
+        n.File = file;
+        if (n.Children != null) foreach (object c in n.Children) Stamp(SdlCore.Unwrap(c), file);
+    }
 
     public static string ReadText(string path)
     {
@@ -70,11 +99,12 @@ public sealed class SdlResolver
     {
         Parsed p;
         if (cache.TryGetValue(virtualPath, out p)) return p;
-        string full = Find(virtualPath);
-        if (full == null) p = null;
+        string text = reader(virtualPath);
+        if (text == null) p = null;
         else
         {
-            var r = SdlCore.Parse(ReadText(full));
+            var r = SdlCore.Parse(text);
+            Stamp(r.Root, virtualPath);
             p = new Parsed { Root = r.Root, HasErrors = r.Errors.Count > 0 };
         }
         if (useCache) cache[virtualPath] = p;
@@ -202,7 +232,7 @@ public sealed class SdlResolver
                     else
                     {
                         string s = Substitute(n.Text, bind, own);
-                        o.Add(s == n.Text ? n : new SdlNode("atom", s, n.Index, false));
+                        o.Add(s == n.Text ? n : new SdlNode("atom", s, n.Index, false) { File = n.File, Synthetic = true });
                     }
                 }
                 else o.Add(n);
@@ -213,14 +243,14 @@ public sealed class SdlResolver
                 if (n.Text.IndexOf('%') >= 0)
                 {
                     string text = Substitute(n.Text, bind, own);
-                    o.Add(text == n.Text ? n : new SdlNode("str", text, n.Index, false));
+                    o.Add(text == n.Text ? n : new SdlNode("str", text, n.Index, false) { File = n.File, Synthetic = true });
                 }
                 else o.Add(n);
                 continue;
             }
             if (n.Kind == "brace" || n.Kind == "call")
             {
-                var c = new SdlNode(n.Kind, n.Text, n.Index, true);
+                var c = new SdlNode(n.Kind, n.Text, n.Index, true) { File = n.File };
                 c.Children.AddRange(Expand(n.Children, dir, bind, own, depth));
                 o.Add(c);
                 continue;
@@ -241,6 +271,8 @@ public sealed class SdlResolver
                 if (target == null) { unresolved.Add("include:" + vp); o.Add(n); continue; }
                 if (target.HasErrors) unresolved.Add("include-parse-error:" + vp);
                 includes.Add(vp);
+                var pathNode = SdlCore.Unwrap(kids[1]);
+                edges.Add(new SdlIncludeEdge { FromFile = n.File, Index = pathNode.Index, Raw = pathNode.Text, ToFile = vp });
                 var b = NewBind(bind);
                 var ownHere = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
                 for (int i = 2; i < kids.Count; i++)
@@ -288,12 +320,12 @@ public sealed class SdlResolver
                 continue;
             }
 
-            var p = new SdlNode("paren", "", n.Index, true);
+            var p = new SdlNode("paren", "", n.Index, true) { File = n.File };
             p.Children.AddRange(Expand(kids, dir, bind, own, depth));
             if (SdlCore.IsExpr(p))
             {
                 double? v = Eval(p);
-                if (v.HasValue) { o.Add(new SdlNode("atom", FormatNumber(v.Value), n.Index, false)); continue; }
+                if (v.HasValue) { o.Add(new SdlNode("atom", FormatNumber(v.Value), n.Index, false) { File = n.File, Synthetic = true }); continue; }
             }
             o.Add(p);
         }
@@ -311,6 +343,7 @@ public sealed class SdlResolver
     {
         defines = new Dictionary<string, Def>(StringComparer.OrdinalIgnoreCase);
         unresolved = new List<string>(); includes = new List<string>(); macros = new List<string>(); inherited = new List<string>();
+        edges = new List<SdlIncludeEdge>();
         var presets = new List<string>();
         activeIncludes.Clear(); activeMacros.Clear();
 
@@ -326,7 +359,7 @@ public sealed class SdlResolver
             if (proot != null) { presets.Add(pv); Expand(proot.Children, acc, NewBind(null), NoOwn, 1); }
         }
         // .presets를 읽으며 쌓인 기록은 파일 자체의 것이 아니다
-        includes.Clear(); macros.Clear(); inherited.Clear();
+        includes.Clear(); macros.Clear(); inherited.Clear(); edges.Clear();
 
         activeIncludes.Add(virtualPath);   // 자기 자신을 다시 include하면 순환이다
         SdlNode root = GetParsed(virtualPath, false);
@@ -334,7 +367,7 @@ public sealed class SdlResolver
         return new SdlResolveResult
         {
             Nodes = nodes, Unresolved = SortedDistinct(unresolved), Includes = SortedDistinct(includes),
-            Macros = SortedDistinct(macros), Presets = presets, Inherited = SortedDistinct(inherited)
+            Macros = SortedDistinct(macros), Presets = presets, Inherited = SortedDistinct(inherited), IncludeEdges = edges
         };
     }
 }

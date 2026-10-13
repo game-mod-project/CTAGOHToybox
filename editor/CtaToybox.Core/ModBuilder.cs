@@ -2,6 +2,9 @@
 // 지우는 것은 이전 빌드의 목록 파일에 적혀 있고 resource 아래에 있는 파일뿐이다. 손으로 넣은 파일은 덮어쓰지도 않는다.
 // 새 파일은 임시 폴더에 다 만든 뒤 옮긴다. 옮기기 전에 목록 파일에 이전 생성물과 이번 생성물을 모두 적어 두므로,
 // 옮기다 실패해도 다음 빌드가 남은 파일을 지울 수 있다.
+// scope가 unit인 수정: 값이 유닛 자신의 파일에 있으면 그 파일을 고친다. include한 파일에 있으면 공유 파일은 두고,
+// 유닛에서 그 파일까지의 include 사슬을 유닛 전용 사본으로 만든 뒤 include 경로를 사본으로 고쳐 쓴다(IncludeChain).
+// 사본을 하나라도 만들지 못하면 그 유닛의 include는 고쳐 쓰지 않는다: 없는 파일을 include하는 유닛을 내보내지 않는다.
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,6 +41,29 @@ namespace CtaToybox.Core
 
         readonly SourceStack stack;
         readonly string modDir, resourceDir;
+        // 출력 상대 경로 → 그 파일에 담긴 수정. 파일을 쓰지 못했을 때 어느 수정이 적용되지 않았는지 찾는 데 쓴다
+        readonly Dictionary<string, List<Edit>> owners = new Dictionary<string, List<Edit>>(StringComparer.OrdinalIgnoreCase);
+
+        // 출력 파일 하나를 만드는 데 필요한 것
+        sealed class WorkItem
+        {
+            public string Output;                                      // 출력 가상 경로
+            public SourceFile Source;
+            public List<Edit> Edits = new List<Edit>();                // 결과를 보고하는 수정
+            public List<Edit> Silent = new List<Edit>();               // 사본에 함께 넣는 '전부' 수정. 결과는 원래 파일 쪽에서 보고한다
+            public List<RawPatch> Raw = new List<RawPatch>();          // include 경로 고쳐 쓰기
+            public bool Always;                                        // 적용된 수정이 없어도 쓴다(사슬 중간의 사본)
+        }
+
+        // 한 유닛의 '이 유닛만' 수정이 만드는 사본들과 유닛 파일의 include 고쳐 쓰기
+        sealed class UnitPlan
+        {
+            public string Unit;
+            public List<WorkItem> Copies = new List<WorkItem>();
+            public List<RawPatch> UnitRaw = new List<RawPatch>();
+            public List<BuildManifestFile> Produced = new List<BuildManifestFile>();
+            public List<EditResult> Results = new List<EditResult>();
+        }
 
         public ModBuilder(SourceStack stack, string outputModDir)
         {
@@ -49,35 +75,76 @@ namespace CtaToybox.Core
         public BuildReport Build(EditProject project)
         {
             var report = new BuildReport();
+            owners.Clear();
             string stage = Path.Combine(Path.GetTempPath(), "ctatoybox-build-" + Guid.NewGuid().ToString("N"));
             var manifest = new BuildManifest { Project = project.Name, BuiltAt = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ") };
             var previous = ReadPrevious(report);
             try
             {
                 // 1. 임시 폴더에 고친 파일을 만든다
-                foreach (var group in project.Edits.Where(e => e.Enabled).GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
+                var enabled = project.Edits.Where(e => e.Enabled).ToList();
+                var shared = enabled.Where(e => e.Scope != "unit").ToList();
+                var items = new Dictionary<string, WorkItem>(StringComparer.Ordinal);
+                foreach (var group in shared.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
                 {
-                    var edits = group.ToList();
                     var source = stack.Find(group.Key);
                     if (source == null)
                     {
-                        foreach (var e in edits) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없다: " + group.Key });
+                        foreach (var e in group) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없다: " + group.Key });
                         continue;
                     }
+                    ItemFor(items, group.Key, source).Edits.AddRange(group);
+                }
+
+                // 1-1. '이 유닛만' 수정: 사본을 먼저 만든다. 성공한 유닛만 유닛 파일의 include를 고쳐 쓴다
+                var plans = new List<UnitPlan>();
+                foreach (var group in enabled.Where(e => e.Scope == "unit").GroupBy(e => SourceStack.ToVirtual(e.Unit ?? "")))
+                {
+                    var plan = PlanUnit(group.Key, group.ToList(), shared, items, report);
+                    if (plan == null) continue;
+                    string failure = null;
+                    foreach (var copy in plan.Copies)
+                    {
+                        string error;
+                        try { error = StageItem(copy, stage, previous, plan.Results, plan.Produced); }
+                        catch (Exception ex) { error = ex.Message; }
+                        if (error != null) { failure = copy.Output + ": " + error; break; }
+                    }
+                    if (failure != null)
+                    {
+                        report.FileErrors.Add(failure);
+                        FailPlan(plan, "이 유닛의 사본을 만들지 못했다: " + failure);
+                    }
+                    else
+                    {
+                        ItemFor(items, plan.Unit, stack.Find(plan.Unit)).Raw.AddRange(plan.UnitRaw);
+                        plans.Add(plan);
+                    }
+                    report.Results.AddRange(plan.Results);
+                }
+
+                // 1-2. 나머지 파일(원본과 같은 경로에 쓰는 것)
+                foreach (var item in items.Values)
+                {
                     var results = new List<EditResult>();
+                    var produced = new List<BuildManifestFile>();
                     string error;
-                    try { error = StageFile(source, edits, stage, previous, results, manifest); }
+                    try { error = StageItem(item, stage, previous, results, produced); }
                     catch (Exception ex) { error = ex.Message; }
                     if (error != null)
                     {
                         // 파일을 만들지 못했으면 적용으로 세지 않는다. 다른 상태의 결과는 그대로 둔다
-                        report.FileErrors.Add(group.Key + ": " + error);
+                        report.FileErrors.Add(item.Output + ": " + error);
                         foreach (var r in results.Where(x => x.Status == EditStatus.Applied)) { r.Status = EditStatus.Invalid; r.Message = "파일을 만들지 못했다: " + error; }
-                        foreach (var e in edits.Where(x => !results.Any(r => r.Edit == x)))
+                        foreach (var e in item.Edits.Where(x => !results.Any(r => r.Edit == x)))
                             results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "파일을 만들지 못했다: " + error });
+                        // 유닛 파일을 못 썼으면 그 유닛의 사본은 쓰이지 않는다. 남기지 않는다
+                        foreach (var plan in plans.Where(p => p.Unit == item.Output)) FailPlan(plan, "유닛 파일을 만들지 못했다: " + error);
                     }
+                    else manifest.Files.AddRange(produced);
                     report.Results.AddRange(results);
                 }
+                foreach (var plan in plans) manifest.Files.AddRange(plan.Produced);
 
                 // 2. 이전 생성물과 이번 생성물을 모두 적은 목록 파일을 먼저 쓴다
                 var fresh = new HashSet<string>(manifest.Files.Select(x => x.Path), StringComparer.OrdinalIgnoreCase);
@@ -98,8 +165,10 @@ namespace CtaToybox.Core
                     {
                         string virtualPath = f.Path.Substring("resource/".Length);
                         report.FileErrors.Add(virtualPath + ": " + ex.Message);
-                        foreach (var r in report.Results.Where(x => x.Status == EditStatus.Applied && SourceStack.ToVirtual(x.Edit.File) == virtualPath))
-                        { r.Status = EditStatus.Invalid; r.Message = "파일을 쓰지 못했다: " + ex.Message; }
+                        List<Edit> owned;
+                        if (owners.TryGetValue(f.Path, out owned))
+                            foreach (var r in report.Results.Where(x => x.Status == EditStatus.Applied && owned.Contains(x.Edit)))
+                            { r.Status = EditStatus.Invalid; r.Message = "파일을 쓰지 못했다: " + ex.Message; }
                     }
                 }
 
@@ -123,33 +192,135 @@ namespace CtaToybox.Core
             return report;
         }
 
-        // 원본 하나에 수정을 적용해 임시 폴더에 쓴다. 파일을 만들 수 없으면 이유를 돌려준다
-        string StageFile(SourceFile source, List<Edit> edits, string stage, Dictionary<string, BuildManifestFile> previous, List<EditResult> results, BuildManifest manifest)
+        static WorkItem ItemFor(Dictionary<string, WorkItem> items, string virtualPath, SourceFile source)
         {
-            byte[] original = stack.Read(source);
+            WorkItem item;
+            if (!items.TryGetValue(virtualPath, out item)) { item = new WorkItem { Output = virtualPath, Source = source }; items[virtualPath] = item; }
+            return item;
+        }
+
+        static bool SameSlot(Edit a, Edit b)
+        {
+            return a.Occurrence == b.Occurrence && a.Arg == b.Arg && string.Equals(a.Path, b.Path, StringComparison.OrdinalIgnoreCase);
+        }
+
+        // from 파일 안에서 사본으로 바뀐 파일을 가리키는 include 경로들. 같은 지시문이 펼치기에서 여러 번 지나가도 한 번만 낸다
+        static List<RawPatch> Rewrites(List<SdlIncludeEdge> edges, string from, HashSet<string> copySet, string unit)
+        {
+            var result = new List<RawPatch>();
+            var seen = new HashSet<int>();
+            foreach (var e in edges)
+                if (e.FromFile == from && copySet.Contains(e.ToFile) && seen.Add(e.Index))
+                    result.Add(new RawPatch { Index = e.Index, Old = e.Raw, New = IncludeChain.RewriteRaw(e.Raw, IncludeChain.CopyName(e.ToFile, unit)) });
+            return result;
+        }
+
+        void FailPlan(UnitPlan plan, string message)
+        {
+            foreach (var r in plan.Results.Where(x => x.Status == EditStatus.Applied)) { r.Status = EditStatus.Invalid; r.Message = message; }
+            foreach (var e in plan.Copies.SelectMany(c => c.Edits).Where(x => !plan.Results.Any(r => r.Edit == x)))
+                plan.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = message });
+            foreach (var f in plan.Produced) owners.Remove(f.Path);
+            plan.Produced.Clear();
+        }
+
+        // 한 유닛의 '이 유닛만' 수정을 계획한다. 사본이 필요 없으면 null.
+        // 유닛 자신의 파일에 있는 값은 items에 바로 넣는다. 적용할 수 없는 수정은 여기서 보고한다
+        UnitPlan PlanUnit(string unit, List<Edit> edits, List<Edit> shared, Dictionary<string, WorkItem> items, BuildReport report)
+        {
+            var unitSource = stack.Find(unit);
+            if (unitSource == null)
+            {
+                foreach (var e in edits) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 유닛 파일이 없다: " + unit });
+                return null;
+            }
+            var edges = new SdlResolver(stack.ReadText).Resolve(unit).IncludeEdges;
+            var live = new Dictionary<string, List<Edit>>(StringComparer.Ordinal);
+            var copySet = new HashSet<string>(StringComparer.Ordinal);
+            foreach (var group in edits.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
+            {
+                string file = group.Key;
+                if (file == unit) { ItemFor(items, unit, unitSource).Edits.AddRange(group); continue; }
+                var source = stack.Find(file);
+                if (source == null)
+                {
+                    foreach (var e in group) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없다: " + file });
+                    continue;
+                }
+                var allowed = new List<Edit>();
+                foreach (var e in group)
+                {
+                    string blocker = IncludeChain.UnitScopeBlocker(edges, unit, file, e.Path);
+                    if (blocker != null) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = blocker });
+                    else allowed.Add(e);
+                }
+                if (allowed.Count == 0) continue;
+                // 미리 적용해 본다. 하나도 적용되지 않으면 사본을 만들지 않는다
+                var probe = new List<EditResult>();
+                TextKind kind;
+                TokenPatcher.Apply(TextCodec.Decode(stack.Read(source), out kind), allowed, probe);
+                if (!probe.Any(r => r.Status == EditStatus.Applied)) { report.Results.AddRange(probe); continue; }
+                live[file] = allowed;
+                copySet.UnionWith(IncludeChain.CopySet(edges, unit, file));
+            }
+            if (copySet.Count == 0) return null;
+
+            var plan = new UnitPlan { Unit = unit };
+            foreach (string file in copySet.OrderBy(x => x, StringComparer.Ordinal))
+            {
+                var item = new WorkItem { Output = IncludeChain.CopyName(file, unit), Source = stack.Find(file), Always = true };
+                List<Edit> own;
+                if (live.TryGetValue(file, out own)) item.Edits.AddRange(own);
+                item.Silent.AddRange(shared.Where(s => SourceStack.ToVirtual(s.File ?? "") == file && !item.Edits.Any(u => SameSlot(u, s))));
+                item.Raw.AddRange(Rewrites(edges, file, copySet, unit));
+                plan.Copies.Add(item);
+            }
+            plan.UnitRaw.AddRange(Rewrites(edges, unit, copySet, unit));
+            return plan;
+        }
+
+        // 원본 하나에 수정과 include 고쳐 쓰기를 적용해 임시 폴더에 쓴다. 파일을 만들 수 없으면 이유를 돌려준다
+        string StageItem(WorkItem item, string stage, Dictionary<string, BuildManifestFile> previous, List<EditResult> results, List<BuildManifestFile> produced)
+        {
+            byte[] original = stack.Read(item.Source);
             TextKind kind;
             string text = TextCodec.Decode(original, out kind);
             if (!original.AsSpan().SequenceEqual(TextCodec.Encode(text, kind)))
                 return "원본을 읽고 다시 쓰면 바이트가 달라진다(인코딩이 깨진 파일). 고치지 않는다";
 
             var usable = new List<Edit>();
-            foreach (var e in edits)
+            foreach (var e in item.Edits)
             {
                 if (e.New != null && !TextCodec.CanEncode(e.New, kind))
                     results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "새 값에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + e.New });
                 else usable.Add(e);
             }
-            string patched = TokenPatcher.Apply(text, usable, results);
-            int applied = results.Count(r => r.Status == EditStatus.Applied);
-            if (applied == 0) return null;
+            foreach (var p in item.Raw)
+                if (!TextCodec.CanEncode(p.New, kind)) return "include 경로를 이 파일의 인코딩(" + kind + ")으로 쓸 수 없다: " + p.New;
 
-            string relative = "resource/" + source.VirtualPath;
+            // '이 유닛만' 수정을 앞에 둔다: 같은 자리를 '전부' 수정도 고치면 앞의 것이 이긴다
+            var all = usable.Concat(item.Silent.Where(s => s.New != null && TextCodec.CanEncode(s.New, kind))).ToList();
+            var applied = new List<EditResult>();
+            // 적용이 검증에서 던져도 그때까지의 결과는 보고한다(호출한 쪽이 적용을 적용 불가로 바꾼다)
+            var reported = new List<EditResult>();
+            string patched;
+            try { patched = TokenPatcher.Apply(text, all, applied, item.Raw); }
+            finally
+            {
+                reported.AddRange(applied.Where(r => item.Edits.Contains(r.Edit)));
+                results.AddRange(reported);
+            }
+            int count = reported.Count(r => r.Status == EditStatus.Applied);
+            if (count == 0 && item.Raw.Count == 0 && !item.Always) return null;
+
+            string relative = "resource/" + item.Output;
             if (FullPath(relative) == null) return "출력 폴더의 resource 밖을 가리키는 경로다";
             if (File.Exists(FullPath(relative)) && !previous.ContainsKey(relative)) return "출력 폴더에 이 도구가 만들지 않은 같은 경로의 파일이 있다. 덮어쓰지 않는다: " + relative;
             string target = Path.Combine(stage, relative.Replace('/', Path.DirectorySeparatorChar));
             Directory.CreateDirectory(Path.GetDirectoryName(target));
             File.WriteAllBytes(target, TextCodec.Encode(patched, kind));
-            manifest.Files.Add(new BuildManifestFile { Path = relative, Layer = source.Layer, Edits = applied });
+            produced.Add(new BuildManifestFile { Path = relative, Layer = item.Source.Layer, Edits = count });
+            owners[relative] = item.Edits;
             return null;
         }
 

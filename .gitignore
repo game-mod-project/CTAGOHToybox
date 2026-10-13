@@ -4,3 +4,4 @@ _work/
 bin/
 obj/
 editor/settings.json
+editor/cache/
