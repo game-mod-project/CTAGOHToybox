@@ -87,7 +87,7 @@ New-Item -ItemType Junction -Path $link -Target 'E:\CTAToybox\mod\CTAToybox'
 | 정션을 통해 `mod.info`가 읽힘 | 확인함 |
 | 게임의 모드 목록에 `CTAToybox`가 표시됨 | 확인함 (2026-10-11, 게임 1.0.6.7). 이름은 `CTATOYBOX`, 설명은 `mod.info`의 `desc` 그대로 나온다 |
 | 모드 목록에서 활성화됨 | 확인함 (2026-10-11). 버튼이 `DEACTIVATE`로 표시된다 |
-| 모드를 켠 상태에서 게임이 정상 동작함 | 모드 목록 화면까지만 확인함. 전투 진입은 확인하지 않음 |
+| 모드를 켠 상태에서 게임이 정상 동작함 | 확인함 (2026-10-13, v1.067.0). 스커미시 전투에 진입했고 모드의 수정이 반영됐다. [07-stat-editor/ingame-check.md](07-stat-editor/ingame-check.md) |
 
 ## 문제가 생기면
 
