@@ -1,6 +1,6 @@
 // 게임이 읽을 파일을 가상 경로로 찾는다. 계층은 로드 순서대로이고 뒤의 계층이 이긴다.
 // 한 계층 안에서는 pak을 경로 이름순으로 읽은 뒤 낱개 파일을 읽으므로 낱개 파일이 이긴다.
-// (같은 모드 안에서 pak과 낱개 파일이 겹칠 때 게임이 어느 쪽을 쓰는지는 확인되지 않았다. 스펙의 가정이다.)
+// (계층 순서와 낱개 파일 우선은 게임에서 확인했다: docs/07-stat-editor/ingame-check.md의 "일괄 확인", 2026-10-13)
 using System;
 using System.Collections.Generic;
 using System.IO;
