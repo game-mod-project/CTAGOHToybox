@@ -74,7 +74,7 @@ dotnet run --project editor/CtaToybox.Cli -c Release -- init --game "E:\SteamLib
 
 ## 알려진 한계
 
-- **같은 경로의 파일은 나중에 로드된 모드가 이긴다는 것은 추정이다.** 그래서 `CTAToybox`가 `options.set`의 `{mods}` 목록에서 맨 뒤에 있어야 한다. `sources`와 `build`가 순서를 확인해 경고한다. 순서는 직접 고친다.
+- **같은 경로의 파일은 `{mods}` 목록에서 뒤에 있는 모드가 이긴다.** 앞에 둔 `CTAToybox`의 파일이 뒤의 모드에 덮인 것을 게임에서 확인했다(2026-10-13, [ingame-check.md](ingame-check.md)). 그래서 `CTAToybox`가 `options.set`의 `{mods}` 목록에서 맨 뒤에 있어야 한다. `sources`와 `build`가 순서를 확인해 경고한다. 순서는 직접 고친다.
 - **한 모드 안에서 pak과 낱개 파일이 겹치면 낱개 파일을 쓴다고 가정했다.** 게임의 실제 동작은 확인하지 않았다.
 - **도구는 문법이 깨지지 않는 것까지만 보장한다.** 값이 게임에서 뜻한 대로 동작하는지는 게임에서 본다.
 - 게임 안 확인 결과는 [ingame-check.md](ingame-check.md)에 있다.
