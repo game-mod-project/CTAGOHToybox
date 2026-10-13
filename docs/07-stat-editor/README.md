@@ -74,7 +74,7 @@ dotnet run --project editor/CtaToybox.Cli -c Release -- init --game "E:\SteamLib
 
 ## 알려진 한계
 
-- **같은 경로의 파일이 겹칠 때 어느 모드가 이기는지는 절반만 확인됐다.** 본 것: `CTAToybox`가 `{mods}` 맨 앞일 때 `mod_2905667604`와 겹친 파일은 반영되지 않았다(2026-10-13, [ingame-check.md](ingame-check.md)). 보지 못한 것: 맨 뒤로 옮기면 반영되는지. 규칙을 직접 적은 출처는 찾지 못했고, 하위 모드를 본체 뒤에 두라는 창작마당 안내들만 있다([../02-modding-research.md](../02-modding-research.md)의 "리소스 덮어쓰기"). 그래서 `CTAToybox`가 `options.set`의 `{mods}` 목록에서 맨 뒤에 있어야 한다. `sources`와 `build`가 순서를 확인해 경고한다. 순서는 직접 고친다.
+- **같은 경로의 파일은 `{mods}` 목록에서 뒤에 있는 모드의 것이 쓰인다.** 게임에서 확인했다(2026-10-13, [ingame-check.md](ingame-check.md)): 같은 빌드로 `CTAToybox`가 맨 앞일 때는 `mod_2905667604`의 값이, 맨 뒤일 때는 `CTAToybox`의 값이 나왔다. 그래서 `CTAToybox`가 `options.set`의 `{mods}` 목록에서 맨 뒤에 있어야 한다. `sources`와 `build`가 순서를 확인해 경고한다. 순서는 직접 고친다.
 - **한 모드 안에서 pak과 낱개 파일이 겹치면 낱개 파일을 쓴다고 가정했다.** 게임의 실제 동작은 확인하지 않았다.
 - **도구는 문법이 깨지지 않는 것까지만 보장한다.** 값이 게임에서 뜻한 대로 동작하는지는 게임에서 본다.
 - 게임 안 확인 결과는 [ingame-check.md](ingame-check.md)에 있다.
