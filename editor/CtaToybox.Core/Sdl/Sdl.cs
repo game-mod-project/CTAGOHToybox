@@ -50,6 +50,8 @@ public static partial class SdlCore
         RegexOptions.Compiled);
     static readonly Regex NumberRegex = new Regex(@"^[+-]?(\d+\.?\d*|\.\d+)$", RegexOptions.Compiled);
 
+    public static bool IsNumber(string s) { return NumberRegex.IsMatch(s); }
+
     public static List<SdlToken> Tokenize(string text)
     {
         var tokens = new List<SdlToken>();
@@ -133,13 +135,17 @@ public static partial class SdlCore
         return string.Join(" ", o);
     }
 
-    // PowerShell이 넘긴 PSObject 래퍼를 벗긴다
+    // PowerShell이 넘긴 PSObject 래퍼를 벗긴다. 코어가 PowerShell 어셈블리를 참조하지 않도록 형식 이름으로 알아본다
     public static SdlNode Unwrap(object x)
     {
         var n = x as SdlNode;
         if (n != null) return n;
-        var ps = x as System.Management.Automation.PSObject;
-        if (ps != null) return (SdlNode)ps.BaseObject;
+        if (x != null && x.GetType().FullName == "System.Management.Automation.PSObject")
+        {
+            object inner = x.GetType().GetProperty("BaseObject").GetValue(x);
+            n = inner as SdlNode;
+            if (n != null) return n;
+        }
         throw new ArgumentException("not an SdlNode: " + (x == null ? "null" : x.GetType().FullName));
     }
 

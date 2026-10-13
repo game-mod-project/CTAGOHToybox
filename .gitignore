@@ -1,3 +1,6 @@
 _work/
 .omc/
 .superpowers/
+bin/
+obj/
+editor/settings.json
