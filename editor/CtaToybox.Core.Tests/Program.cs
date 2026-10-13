@@ -79,6 +79,7 @@ static class Program
             ("ResolverOrigin", ResolverOriginTests.Run),
             ("UnitIndex", UnitIndexTests.Run),
             ("IncludeChain", IncludeChainTests.Run),
+            ("UnitTracer", UnitTracerTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("Cli", CliTests.Run),
