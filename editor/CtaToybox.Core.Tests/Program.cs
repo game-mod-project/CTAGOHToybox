@@ -63,6 +63,13 @@ static class Program
 {
     static int Main(string[] args)
     {
+        if (args.Length > 0 && args[0] == "real")
+        {
+            try { RealFilesCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real files threw: " + ex); }
+            Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
+            return T.Fail > 0 ? 1 : 0;
+        }
         var suites = new List<(string Name, Action Run)>
         {
             ("TextCodec", TextCodecTests.Run),
