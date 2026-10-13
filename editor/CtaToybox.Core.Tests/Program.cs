@@ -68,6 +68,7 @@ static class Program
             ("TextCodec", TextCodecTests.Run),
             ("SourceStack", SourceStackTests.Run),
             ("GameProfile", GameProfileTests.Run),
+            ("KeyLocator", KeyLocatorTests.Run),
         };
         foreach (var s in suites)
         {

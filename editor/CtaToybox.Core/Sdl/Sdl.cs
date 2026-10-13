@@ -41,6 +41,7 @@ public sealed class SdlRow
     public string Form { get; set; }   // block | include | define | mod | macro | paren-other | bare
     public string Shape { get; set; }
     public string Args { get; set; }
+    public List<SdlNode> ArgNodes { get; set; }   // 이 행의 인자 노드. 편집기가 원본 토큰의 자리를 찾는 데 쓴다
 }
 
 public static partial class SdlCore
