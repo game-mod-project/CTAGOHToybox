@@ -76,6 +76,7 @@ static class Program
             ("SourceStack", SourceStackTests.Run),
             ("GameProfile", GameProfileTests.Run),
             ("KeyLocator", KeyLocatorTests.Run),
+            ("ResolverOrigin", ResolverOriginTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("Cli", CliTests.Run),

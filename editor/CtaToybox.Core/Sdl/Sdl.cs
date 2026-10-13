@@ -20,6 +20,8 @@ public sealed class SdlNode
     public string Text { get; set; }
     public int Index { get; set; }
     public List<object> Children { get; set; }   // 잎은 null
+    public string File { get; set; }       // 이 토큰이 있는 파일의 가상 경로. 리졸버가 읽은 트리에만 채워진다
+    public bool Synthetic { get; set; }    // 원본 토큰 그대로가 아니다: %치환이나 산술 계산으로 만든 값
 
     public SdlNode(string kind, string text, int index, bool container)
     {
