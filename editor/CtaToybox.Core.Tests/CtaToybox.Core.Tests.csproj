@@ -8,5 +8,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\CtaToybox.Core\CtaToybox.Core.csproj" />
+    <ProjectReference Include="..\CtaToybox.Cli\CtaToybox.Cli.csproj" />
   </ItemGroup>
 </Project>

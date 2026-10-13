@@ -71,6 +71,7 @@ static class Program
             ("KeyLocator", KeyLocatorTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
+            ("Cli", CliTests.Run),
         };
         foreach (var s in suites)
         {
