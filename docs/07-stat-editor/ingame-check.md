@@ -77,8 +77,26 @@
 |---|---|
 | 확인한 날짜와 게임 버전 | 2026-10-13, v1.067.0 |
 | M3A1 하프트랙의 `mine m1a1` 수량 (기대 5) | 5 (2026-10-13, v1.067.0). 게임이 사본 파일 `m3a1_halftrack__ctb_m3a1_halftrack_8da609d3.inc`와 고쳐 쓴 include를 받아들인다 |
-| 같은 `.inc`를 쓰는 다른 차량의 수량 (기대 24) | 확인하지 않음 |
+| 같은 `.inc`를 쓰는 다른 차량의 수량 (기대 24) | 24 (2026-10-13, `m3a1_halftrack_inf`와 `m3a1_halftrack_inf_late`. 아래 "일괄 확인") |
 | `game.log`에 사본 파일이나 include와 관련된 오류 | 없음 (2026-10-13). `__ctb_`나 `m3a1_halftrack`이 든 줄이 없다 |
-| 수정을 끄고 다시 빌드한 뒤 24로 돌아옴 | 확인하지 않음 |
+| 수정을 끄고 다시 빌드한 뒤 24로 돌아옴 | 게임에서 보지 않음. 같은 방식의 원복은 2단계에서 KV-85로 확인했다 |
 
 M3A1이 24 그대로면 게임이 고쳐 쓴 유닛 파일이나 사본을 쓰지 않은 것이다. 그때는 추측으로 원인을 정하지 않는다. `game.log`와 생성물을 먼저 보고, 사본 이름을 원본과 같은 글자 종류만 쓰는 짧은 이름으로 바꾼 빌드, 사본 없이 유닛 파일에 값을 직접 넣은 빌드를 각각 만들어 어느 쪽에서 갈리는지 본다.
+
+## 일괄 확인 (2026-10-13, v1.067.0)
+
+남은 미확인 항목을 한 빌드(`editor/projects/ingame-check-batch.json`과 손으로 만든 `resource/ctb_check.pak`)에 모아 게임 한 번으로 봤다. `CTAToybox`는 `{mods}` 맨 뒤였고 다른 모드 4개가 켜져 있었다. 로그에 `Mount package .../mods/ctatoybox/resource/ctb_check.pak with 2 entries`가 찍혔고, 이 빌드의 파일을 가리키는 오류 줄은 없다.
+
+| # | 넣은 것 | 게임에서 본 값 | 확인된 것 |
+|---|---|---|---|
+| 1 | `m3a1_halftrack.def`만 `m3a1_halftrack.inc`의 지뢰 24 → 5 | 기본형 5, `m3a1_halftrack_inf` 24 | "이 유닛만" 수정은 같은 파일을 쓰는 다른 유닛에 새지 않는다 |
+| 2 | `m3a1_halftrack_inf_late.def`만 `properties/armoredcar.ext`의 수리 키트 5 → 9 | 후기 보병 탑승형 9, 기본형 5 | 두 단계 사슬(`.def` → `.inc` → `/properties/*.ext`)과 루트 기준 경로도 사본으로 바뀐다 |
+| 3 | `properties/armoredcar.ext`의 연료통 1 → 3 (전부) | 기본형 3, 후기 보병 탑승형 3 | 공유 파일의 "전부" 수정이 반영되고, 사본에도 함께 들어간다 |
+| 4 | `set/stuff/smg/m3_grease`의 `filling` 30 → 17 | 승무원의 그리스건 탄창 17발 | 유닛의 `{item "m3_grease" filled}`는 `set/stuff` 아래 같은 이름의 파일로 이어진다(이 무기 하나로 본 것이다) |
+| 5 | 같은 파일의 `("fire rate" rpm(450))` → 60 | 느림 | 매크로 인자를 고치면 반영된다 |
+| 6 | `set/stuff/smg/.presets`의 `(define "stick_reload")` 안 `seconds(3.25)` → 12 | 재장전 12초 | `.presets`의 매크로 본문을 고치면 그 매크로를 부르는 파일에 반영된다 |
+| 7 | `thompson_m1928a1_50`의 `rpm(830)` → 60 | 보지 않음 | `{from "thompson_m1928a1_50"}`로 물려받는 30발 파일이 바뀌는지는 **미확인** |
+| 8 | 한 모드 안에 KV-85 철갑탄을 pak에는 11, 낱개 파일에는 7 | 7 | 한 모드 안에서 pak과 낱개 파일이 겹치면 낱개 파일이 쓰인다 |
+| 9 | 채피 철갑탄을 pak에만 9 (MACE의 pak은 18) | 9 | pak끼리 겹쳐도 `{mods}` 뒤쪽 모드의 것이 쓰인다 |
+
+확인 뒤 수정을 모두 끄고 다시 빌드해 생성물을 지우고 `ctb_check.pak`도 지운다. 되돌린 뒤의 값을 게임에서 다시 보지는 않았다.

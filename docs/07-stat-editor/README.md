@@ -136,7 +136,8 @@ dotnet run --project editor/CtaToybox.Cli -c Release -- init --game "E:\SteamLib
 ## 알려진 한계
 
 - **같은 경로의 파일은 `{mods}` 목록에서 뒤에 있는 모드의 것이 쓰인다.** 게임에서 확인했다(2026-10-13, [ingame-check.md](ingame-check.md)): 같은 빌드로 `CTAToybox`가 맨 앞일 때는 `mod_2905667604`의 값이, 맨 뒤일 때는 `CTAToybox`의 값이 나왔다. 그래서 `CTAToybox`가 `options.set`의 `{mods}` 목록에서 맨 뒤에 있어야 한다. `sources`와 `build`가 순서를 확인해 경고한다. 순서는 직접 고친다.
-- **한 모드 안에서 pak과 낱개 파일이 겹치면 낱개 파일을 쓴다고 가정했다.** 게임의 실제 동작은 확인하지 않았다.
+- **한 모드 안에서 pak과 낱개 파일이 겹치면 낱개 파일이 쓰인다.** 게임에서 확인했다(2026-10-13, [ingame-check.md](ingame-check.md)의 "일괄 확인").
+- **`{from "..."}`로 다른 파일의 값을 물려받는 것은 편집기가 펼치지 않고, 게임에서도 확인하지 않았다.** 물려준 쪽 파일을 고쳤을 때 물려받는 쪽이 바뀌는지는 미확인이다.
 - **도구는 문법이 깨지지 않는 것까지만 보장한다.** 값이 게임에서 뜻한 대로 동작하는지는 게임에서 본다.
-- **게임이 사본 파일과 고쳐 쓴 include를 받아들이는지는 [ingame-check.md](ingame-check.md)의 3단계 확인으로 본다.** 확인 전에는 "이 유닛만"의 결과를 믿지 않는다.
+- **게임은 사본 파일과 고쳐 쓴 include를 받아들인다.** 한 단계와 두 단계 사슬, 같은 폴더와 `/properties/...` 형태의 경로를 게임에서 확인했다(2026-10-13, [ingame-check.md](ingame-check.md)).
 - 게임 안 확인 결과는 [ingame-check.md](ingame-check.md)에 있다.
