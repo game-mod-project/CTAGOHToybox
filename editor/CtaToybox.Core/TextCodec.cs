@@ -38,6 +38,14 @@ namespace CtaToybox.Core
             }
         }
 
+        // 그 인코딩으로 썼다가 읽으면 같은 글자가 돌아오는가. Latin-1 파일에는 U+00FF까지만 쓸 수 있다
+        public static bool CanEncode(string text, TextKind kind)
+        {
+            byte[] bytes = Encode(text, kind);
+            TextKind ignored;
+            return kind == TextKind.Latin1 ? Latin1.GetString(bytes) == text : Decode(bytes, out ignored) == text;
+        }
+
         static byte[] Join(byte[] a, byte[] b)
         {
             var r = new byte[a.Length + b.Length];

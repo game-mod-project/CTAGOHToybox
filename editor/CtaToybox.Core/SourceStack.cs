@@ -57,6 +57,8 @@ namespace CtaToybox.Core
                     foreach (var e in Archive(pak).Entries)
                     {
                         if (e.FullName.EndsWith("/") || e.FullName.EndsWith("\\")) continue;
+                        // 폴더 밖을 가리키는 이름(.. 조각, 드라이브 문자)은 파일로 치지 않는다
+                        if (e.FullName.Contains(':') || e.FullName.Split('/', '\\').Contains("..")) continue;
                         Add(new SourceFile { VirtualPath = prefix + ToVirtual(e.FullName), Layer = layer.Name, Container = pak, Entry = e.FullName });
                     }
                 }

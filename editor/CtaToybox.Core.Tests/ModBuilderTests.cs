@@ -80,5 +80,118 @@ static class ModBuilderTests
         report = builder.Build(project);
         T.True(report.Warnings.Any(w => w.Contains("목록 파일")), "an unreadable manifest is warned about, not fatal");
         T.Eq("{a {x 10} {y 20}}\r\n", Read(outDir, "resource/set/a.set"), "the build still completes");
+
+        Sub(HandPlacedCollision);
+        Sub(UndecodableAndUnencodable);
+        Sub(ReportAfterFileFailure);
+        Sub(CopyFailureKeepsManifest);
+        Sub(PathEscape);
+    }
+
+    // 한 경우가 예외로 끝나도 나머지 경우를 돌린다
+    static void Sub(System.Action run)
+    {
+        try { run(); }
+        catch (System.Exception ex) { T.Fail++; System.Console.WriteLine("FAIL " + run.Method.Name + " threw: " + ex.GetType().Name + ": " + ex.Message); }
+    }
+
+    // 손으로 넣은 파일과 경로가 같으면 덮어쓰지 않는다
+    static void HandPlacedCollision()
+    {
+        string vanilla = T.TempDir(), outDir = T.TempDir();
+        T.Zip(Path.Combine(vanilla, "gamelogic.pak"), ("set/a.set", "{a {x 1}}"));
+        T.Put(outDir, "resource/set/a.set", "mine");
+        using var stack = new SourceStack(new[] { new SourceLayer("vanilla", vanilla) });
+        stack.Scan();
+        var project = new EditProject { Name = "t" };
+        project.Edits.Add(E("set/a.set", "/a/x", "1", "2"));
+        var report = new ModBuilder(stack, outDir).Build(project);
+        T.Eq("mine", Read(outDir, "resource/set/a.set"), "a hand-placed file at the same path is not overwritten");
+        T.Eq(1, report.FileErrors.Count, "the collision is a file error");
+        T.Eq(0, report.Count(EditStatus.Applied), "the edit is not counted as applied");
+        T.Eq(1, report.Count(EditStatus.Invalid), "the edit is reported as Invalid");
+        project.Edits[0].Enabled = false;
+        new ModBuilder(stack, outDir).Build(project);
+        T.Eq("mine", Read(outDir, "resource/set/a.set"), "the hand-placed file survives the next build too");
+    }
+
+    // 되쓸 수 없는 원본, 그 파일의 인코딩으로 쓸 수 없는 새 값
+    static void UndecodableAndUnencodable()
+    {
+        string vanilla = T.TempDir(), outDir = T.TempDir();
+        // UTF-8 BOM 뒤에 UTF-8이 아닌 바이트(0xE9)가 있다. T.Zip은 Latin-1로 쓴다
+        T.Zip(Path.Combine(vanilla, "gamelogic.pak"), ("set/d.set", "ï»¿{d {x 1}} ; café"), ("set/s.set", "{s {name \"n\"} {x 1}}"));
+        using var stack = new SourceStack(new[] { new SourceLayer("vanilla", vanilla) });
+        stack.Scan();
+        var project = new EditProject { Name = "t" };
+        project.Edits.Add(E("set/d.set", "/d/x", "1", "2"));
+        project.Edits.Add(E("set/s.set", "/s/name", "\"n\"", "\"탱크\""));
+        project.Edits.Add(E("set/s.set", "/s/x", "1", "2"));
+        var report = new ModBuilder(stack, outDir).Build(project);
+        T.True(!Exists(outDir, "resource/set/d.set"), "a file that does not re-encode to its own bytes is not written");
+        T.True(report.FileErrors.Any(x => x.Contains("set/d.set")), "and is reported as a file error");
+        T.Eq("{s {name \"n\"} {x 2}}", Read(outDir, "resource/set/s.set"), "a value the file's encoding cannot hold is not written; other edits are");
+        T.Eq(2, report.Count(EditStatus.Invalid), "both refused edits are Invalid");
+        T.Eq(1, report.Count(EditStatus.Applied), "one applied");
+    }
+
+    // 파일 하나가 실패해도 그 파일의 수정마다 결과가 하나씩이고 적용으로 세지 않는다
+    static void ReportAfterFileFailure()
+    {
+        string vanilla = T.TempDir(), outDir = T.TempDir();
+        T.Zip(Path.Combine(vanilla, "gamelogic.pak"), ("set/e.set", "{e {Extender \"inventory\" {x 1}} {y 1}}"));
+        using var stack = new SourceStack(new[] { new SourceLayer("vanilla", vanilla) });
+        stack.Scan();
+        var project = new EditProject { Name = "t" };
+        project.Edits.Add(new Edit { Unit = "set/e.set", File = "set/e.set", Path = "/e/extender[inventory]", Old = "\"inventory\"", New = "\"other\"" });   // 고치면 경로가 달라져 검증에 걸린다
+        project.Edits.Add(E("set/e.set", "/e/y", "9", "2"));
+        project.Edits.Add(E("set/e.set", "/e/y", "1", "2"));
+        var report = new ModBuilder(stack, outDir).Build(project);
+        T.Eq(3, report.Results.Count, "one result per edit");
+        T.Eq(0, report.Count(EditStatus.Applied), "nothing is counted as applied when the file was not written");
+        T.Eq(1, report.Count(EditStatus.SourceChanged), "the other statuses of that file are kept");
+        T.Eq(2, report.Count(EditStatus.Invalid), "edits that would have applied become Invalid");
+        T.Eq(1, report.FileErrors.Count, "one file error");
+        T.True(!Exists(outDir, "resource/set/e.set"), "the file is not written");
+    }
+
+    // 옮기는 도중에 실패해도 예외가 새지 않고, 쓴 파일은 목록에 남아 다음 빌드가 지울 수 있다
+    static void CopyFailureKeepsManifest()
+    {
+        string vanilla = T.TempDir(), outDir = T.TempDir();
+        T.Zip(Path.Combine(vanilla, "gamelogic.pak"), ("set/a.set", "{a {x 1}}"), ("set/z.set", "{z {x 1}}"));
+        using var stack = new SourceStack(new[] { new SourceLayer("vanilla", vanilla) });
+        stack.Scan();
+        var builder = new ModBuilder(stack, outDir);
+        var project = new EditProject { Name = "t" };
+        project.Edits.Add(E("set/a.set", "/a/x", "1", "2"));
+        builder.Build(project);
+        project.Edits[0].New = "3";
+        project.Edits.Add(E("set/z.set", "/z/x", "1", "2"));
+        BuildReport report;
+        using (new FileStream(Path.Combine(outDir, "resource", "set", "a.set"), FileMode.Open, FileAccess.Read, FileShare.None))
+            report = builder.Build(project);
+        T.True(report.FileErrors.Any(x => x.Contains("set/a.set")), "a locked target is a file error, not an exception");
+        T.Eq("{z {x 2}}", Read(outDir, "resource/set/z.set"), "the other file is still written");
+        string manifest = File.ReadAllText(Path.Combine(outDir, ModBuilder.ManifestName));
+        T.True(manifest.Contains("resource/set/a.set") && manifest.Contains("resource/set/z.set"), "the manifest lists every generated file, including the one that failed");
+        foreach (var e in project.Edits) e.Enabled = false;
+        builder.Build(project);
+        T.True(!Exists(outDir, "resource/set/a.set") && !Exists(outDir, "resource/set/z.set"), "the next build can clean up everything");
+    }
+
+    // pak 항목 이름에 ..이 있어도 출력 폴더 밖에 쓰지 않는다
+    static void PathEscape()
+    {
+        string vanilla = T.TempDir(), parent = T.TempDir(), outDir = Path.Combine(parent, "mod");
+        Directory.CreateDirectory(outDir);
+        T.Zip(Path.Combine(vanilla, "gamelogic.pak"), ("set/../../../evil.set", "{a {x 1}}"));
+        using var stack = new SourceStack(new[] { new SourceLayer("vanilla", vanilla) });
+        stack.Scan();
+        var project = new EditProject { Name = "t" };
+        project.Edits.Add(E("set/../../../evil.set", "/a/x", "1", "2"));
+        var report = new ModBuilder(stack, outDir).Build(project);
+        T.True(!File.Exists(Path.Combine(parent, "evil.set")), "nothing is written outside the mod folder");
+        T.Eq(0, report.Count(EditStatus.Applied), "the escaping edit is not applied");
     }
 }
