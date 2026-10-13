@@ -34,7 +34,7 @@ public static partial class SdlCore
         var shapes = new List<string>(args.Count);
         var flat = new List<string>();
         foreach (var a in args) { shapes.Add(ArgShape(a)); Flat(a, flat); }
-        return new SdlRow { Path = path, Form = form, Shape = string.Join(" ", shapes), Args = string.Join(" ", flat) };
+        return new SdlRow { Path = path, Form = form, Shape = string.Join(" ", shapes), Args = string.Join(" ", flat), ArgNodes = args };
     }
 
     static bool IsStatement(SdlNode k) { return k.Kind == "brace" || (k.Kind == "paren" && !IsExpr(k)); }
