@@ -66,6 +66,7 @@ static class Program
         var suites = new List<(string Name, Action Run)>
         {
             ("TextCodec", TextCodecTests.Run),
+            ("SourceStack", SourceStackTests.Run),
         };
         foreach (var s in suites)
         {
