@@ -44,7 +44,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - `data/mods/mods.psv`, `data/mods/annotations.psv`, `data/mods/<id>/notes.md`, `data/mods/readme-*.md`: 모드 문서의 입력
 - `editor/projects/*.json`: 편집기의 수정 목록. `mod/CTAToybox/resource`의 생성물과 `.ctatoybox-build.json`은 빌드가 만든다
 - `editor/summary/<종류>.psv`: 편집기 요약 탭에 올리는 키와 화면 이름(경로|이름). 경로 규칙은 `data/annotations`와 같다
-- `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`, `docs/08-unit-files-check.md`
+- `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`, `docs/08-unit-files-check.md`, `docs/09-modding-sources.md`
 
 `docs/04-units/schema-*.md`, `coverage.md`, `docs/05-workshop-mods/*.md`, `docs/06-editable-attributes/*.md`는 생성물이다.
 
@@ -56,3 +56,4 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 
 - 게임 폴더의 파일을 수정하지 않는다.
 - 키의 의미를 모르면 `미확인`으로 둔다.
+- 게임·모드 동작을 다루는 작업은 시작 전에 `docs/09-modding-sources.md`(참고·출처 사이트 정리)와 `docs/08-unit-files-check.md`(문서 주장 검증)를 읽고, 관련 사이트를 다시 열어 바뀐 것이 있는지 본다. 사이트 내용은 바닐라 파일로 확인한 뒤에만 사실로 쓴다. Call to Arms·Men of War 자료는 키가 다르다. fandom·ModDB는 WebFetch가 막히니 내장 브라우저로 연다
