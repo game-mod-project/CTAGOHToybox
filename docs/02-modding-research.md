@@ -84,8 +84,8 @@
 | 규칙 | 이름 수 |
 |---|---|
 | 파일 이름과 같다 (`m3_grease` → `set/stuff/smg/m3_grease`) | 1,047 |
-| 이름의 낱말과 파일 이름을 점으로 나눈 낱말이 같다 (`bulletrus_85 aphebc`, `aphebc bulletrus_85` → `bulletrus_85.aphebc`) | 683 |
-| 위와 같되 파일의 마지막 확장자를 뺀다 (`m3_grease_mag ammo`, `ammo m3_grease_mag` → `m3_grease_mag.ammo`의 낱말에서 확장자를 뺀 것과 다른 경우 포함) | 611 |
+| 이름의 낱말과 파일 이름을 점으로 나눈 낱말이 같다. 순서는 상관없다 (`m3_grease_mag ammo`, `ammo m3_grease_mag` → `m3_grease_mag.ammo`) | 683 |
+| 파일 이름의 마지막 조각(확장자)을 빼면 낱말이 같다 (`bulletrus_85 aphebc` → `bulletrus_85.aphebc.ammo`) | 611 |
 | 위 규칙으로 파일이 둘 이상 | 14 |
 | 위 규칙으로 맞는 파일이 없음 | 56 |
 | 합계 (서로 다른 이름) | 2,411 |
