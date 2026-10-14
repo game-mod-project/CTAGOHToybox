@@ -9,6 +9,8 @@
 
 근거의 "주석"은 게임 파일 안의 개발사 주석이다. 이 문서는 손으로 고친다.
 
+문서의 출처 사이트는 [09-modding-sources.md](09-modding-sources.md)에 정리했다. "틀림"으로 판정한 장갑·초속·파일 이름(`armor_heavy`, `speed2`, `damage_cumulative`, `perks_generic.inc`, `crew.ext`, `desc.lng`)은 Call to Arms 위키의 Modding/Files·Modding/Examples에서 온 것으로 확인했다(2026-10-14).
+
 ## 요약
 
 - 문서의 큰 틀(엔티티 `.def` + `properties/*.ext` include, breed `.set`, `set/stuff`, `set/multiplayer/units`)은 맞다.
