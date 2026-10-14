@@ -76,7 +76,7 @@ static class CliTests
         T.True(o.Contains(unitB) && !o.Contains(unitA), "find filters by path, ignoring case");
         T.Eq(0, Run(out o, "units", "--settings", settings, "--kind", "breed"), "units --kind succeeds");
         T.True(!o.Contains(unitA) && o.Contains("0개"), "no breeds in the fixture");
-        T.Eq(2, Run(out o, "units", "--settings", settings, "--kind", "tank"), "an unknown kind is a usage error");
+        T.Eq(2, Run(out o, "units", "--settings", settings, "--kind", "plane"), "an unknown kind is a usage error");
         T.Eq(0, Run(out o, "units", "--settings", settings, "--limit", "1"), "units --limit succeeds");
         T.True(o.Contains(unitA) && !o.Contains(unitB) && o.Contains("2개 가운데 1개"), "limit cuts the list and says so");
 

@@ -62,7 +62,7 @@ namespace CtaToybox.App
             StatusText.Text = "유닛 " + session.Index.Units.Count.ToString("N0") + "개를 읽었다.";
             KindBox.ItemsSource = new[] { new Choice { Label = "전체", Value = null } }
                 .Concat(UnitKind.Editor.Select(k => new Choice { Label = UnitKind.Label(k), Value = k })).ToList();
-            KindBox.SelectedIndex = 1;   // 차량
+            KindBox.SelectedIndex = 1;   // 탱크
             LayerBox.ItemsSource = new[] { new Choice { Label = "전체", Value = null } }
                 .Concat(session.Plan.Layers.Select(l => new Choice { Label = session.LayerLabel(l.Name), Value = l.Name })).ToList();
             LayerBox.SelectedIndex = 0;
@@ -113,7 +113,7 @@ namespace CtaToybox.App
                 {
                     Entry = u,
                     Title = name ?? file,
-                    Sub = (name == null ? "" : file + " · ") + UnitKind.Label(u.Kind) + " · " + session.LayerLabel(u.Layer),
+                    Sub = (name == null ? "" : file + " · ") + UnitKind.Label(u.EditorKind) + " · " + session.LayerLabel(u.Layer),
                 };
             }).ToList();
             ResultCountText.Text = found.Count > MaxResults ? found.Count.ToString("N0") + "개 가운데 앞의 " + MaxResults + "개 (이름순). 검색어를 더 쓴다." : found.Count.ToString("N0") + "개 (이름순)";

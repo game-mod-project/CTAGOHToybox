@@ -30,7 +30,7 @@ namespace CtaToybox.App
                 return;
             }
             UnitTitle.Text = unit.DisplayName ?? unit.Unit.Substring(unit.Unit.LastIndexOf('/') + 1);
-            UnitInfo.Text = UnitKind.Label(unit.Kind) + " · 출처 " + session.LayerLabel(unit.Layer) + " · " + unit.Unit +
+            UnitInfo.Text = UnitKind.Label(unit.EditorKind ?? unit.Kind) + " · 출처 " + session.LayerLabel(unit.Layer) + " · " + unit.Unit +
                 (unit.Unresolved.Count == 0 ? "" : "\n풀리지 않은 구문 " + unit.Unresolved.Count + "개: " + string.Join(", ", unit.Unresolved.Take(5)));
             ItemList.ItemsSource = unit.Items.Select(ItemLinkItemOf).ToList();
             ItemsTab.Header = "무기·탄약 (" + unit.Items.Count + ")";

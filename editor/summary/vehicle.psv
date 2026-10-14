@@ -1,6 +1,11 @@
 # 차량 요약 탭에 올리는 키. 형식: 경로|화면 이름. 경로 규칙은 data/annotations와 같다(정확한 경로, **/꼬리, */이름).
 # 이름은 data/annotations/common.psv의 의미에서 뽑았다. 키의 등급(확인·문서·추정)은 화면의 설명 칸에 따로 보인다.
-**/locomotion/maxspeed|최고 속도 (km/h)
+*/("mobility_tank")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_tank_slow")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_car")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_btr")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_cannon")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+**/locomotion/maxspeed|최고 속도 (km/h, 위의 기동 줄에서 나온다)
 **/locomotion/slow|저속 이동 속도 (km/h)
 **/locomotion/maxslope|오를 수 있는 최대 경사
 **/locomotion/gears|전진 기어비
