@@ -68,7 +68,8 @@ namespace CtaToybox.App
             {
                 Row = row, Group = group, GroupOrder = order,
                 // 요약에서는 묶음 머리가 항목 이름이므로 줄에는 어느 부위의 것인지만 보인다
-                Label = summary ? (row.Context ?? "이 유닛") : KeyLabel.Readable(row.RawPath ?? row.Path),
+                Name = Text.RowName(row),
+                Label = summary ? (row.Context ?? Text.RowName(row)) : Text.RowName(row),
                 Key = "키 " + (row.RawPath ?? row.Path),
                 Context = Text.ContextLine(summary ? null : row.Context, row.Repeats),
                 Values = Text.ValuesLine(row),
@@ -146,7 +147,7 @@ namespace CtaToybox.App
                 MessageBox.Show(this, "이 줄은 고칠 수 없다: " + (item.Tip ?? "치환이나 계산으로 만든 값이다") + "\n\n계산에 쓰인 원래 값은 전체 탭의 '매크로 호출' 묶음이나 그 값이 있는 파일에서 고친다.", "값 고치기");
                 return;
             }
-            var dialog = new EditDialog(session, unit, item.Row, item.Label, item.Context) { Owner = this };
+            var dialog = new EditDialog(session, unit, item.Row, item.Name, item.Row.Context) { Owner = this };
             dialog.ShowDialog();
             RefreshUnitViews();   // 저장이 실패해 창을 닫아도 지금 상태를 다시 그린다
             RefreshEdits();

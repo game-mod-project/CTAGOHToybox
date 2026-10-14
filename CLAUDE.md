@@ -27,7 +27,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - 테스트: `pwsh -NoProfile -File tools/tests/Run-Tests.ps1`
 - 편집기 테스트: `dotnet run --project editor/CtaToybox.Core.Tests -c Release`. 전체 테스트(`Run-Tests.ps1`)에 포함돼 있다. 실제 게임 파일 검증은 끝에 `-- real`을 붙인다.
 - 편집기 명령줄: `dotnet run --project editor/CtaToybox.Cli -c Release -- <명령>`. 명령은 `sources`, `units`, `trace`, `show`, `add`, `build`. 사용법은 `docs/07-stat-editor/README.md`. 유닛 색인 캐시는 `editor/cache/`(git 제외)에 생긴다.
-- 편집기 화면: `dotnet run --project editor/CtaToybox.App -c Release`. 화면 확인은 `--unit <가상 경로> --tab summary|full --filter <글자> --screenshot <png>`로 PNG를 찍어 본다.
+- 편집기 화면: `dotnet run --project editor/CtaToybox.App -c Release`. 화면 확인은 `--unit <가상 경로> --tab summary|full --filter <글자> --screenshot <png>`로 PNG를 찍어 본다. 조작까지 확인할 때는 `--project <임시 파일> --scenario <시나리오 파일>`(명령은 `editor/CtaToybox.App/MainWindow.Scenario.cs` 머리 주석)로 값 넣기·범위·넣기·수정 켜고 끄기·삭제를 사람 대신 하고 그 사이 화면을 찍는다. 사용자의 프로젝트를 쓰지 않는다.
 - 바닐라 전체 재생성(약 6분): `pwsh -NoProfile -File tools/Invoke-Pipeline.ps1 -SourceRoot "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\resource" -WorkDir _work\vanilla -DataDir data`
 - 표시 이름: `pwsh -NoProfile -File tools/Build-DisplayNames.ps1 -LocPak "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\localizations\default.pak" -DataDir data`
 - 유닛 문서 재생성과 검증: `pwsh -NoProfile -File tools/New-SchemaDoc.ps1 -DataDir data -AnnotationDir data\annotations -OutDir docs\04-units` 다음 `pwsh -NoProfile -File tools/Test-Coverage.ps1 -DataDir data -DocsDir docs\04-units`. `keys-missing=0`이 나와야 한다.
@@ -39,6 +39,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 
 - `data/annotations/common.psv`: 키의 의미와 등급. `**/꼬리`는 include되는 파일과 매크로 정의 안의 키에도 적용된다
 - `data/annotations/<그룹>.psv`: 한 그룹에만 적용하는 주석. 형식은 `common.psv`와 같다
+- `data/annotations/values.psv`: 한 줄에 값이 여럿일 때 값마다 붙이는 이름(편집기의 값 고치기 창, 표, 수정 목록). 형식은 파일 머리 주석
 - `data/annotations/research/findings-*.psv`: 웹 조사로 모은 키 설명과 출처. 주석을 쓸 때의 근거 자료다
 - `data/annotations/<그룹>.intro.md`: 스키마 문서의 소개문
 - `data/mods/mods.psv`, `data/mods/annotations.psv`, `data/mods/<id>/notes.md`, `data/mods/readme-*.md`: 모드 문서의 입력

@@ -39,8 +39,7 @@ namespace CtaToybox.App
                 {
                     Edit = e, Enabled = e.Enabled,
                     Group = Text.UnitName(session, unitPath) + "   (" + unitPath.Substring(unitPath.LastIndexOf('/') + 1) + ")",
-                    Title = KeyLabel.Readable(e.Path) + (c != null && c.RowText != null && c.RowText != e.Old ? "  [" + c.RowText.Replace("\"", "") + "]" : "") +
-                            (e.Arg > 0 ? " 값 " + (e.Arg + 1) : "") + ":  " + Text.Value(e.Old) + " → " + Text.Value(e.New),
+                    Title = Text.EditTitle(session.Describe(e), e),
                     Detail = (e.Scope == "unit" ? "이 유닛만" : "전부 (유닛 " + session.Index.UsersOf(e.File).Count + "개가 바뀐다)") + " · " + e.File.Substring(e.File.LastIndexOf('/') + 1) + (e.Enabled ? "" : " · 꺼짐"),
                     Status = status,
                 };

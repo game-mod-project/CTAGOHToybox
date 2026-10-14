@@ -26,7 +26,7 @@ namespace CtaToybox.App
             var editable = row.Values.Where(v => v.Editable).ToList();
             var widest = editable.OrderByDescending(v => v.SharedBy).First();
             KeyText.Text = label;
-            ContextText.Text = (context == null ? "" : context + "   ") + "키: " + KeyLabel.Readable(row.Path);
+            ContextText.Text = (context == null ? "" : "부위: " + context + "\n") + "키: " + (row.RawPath ?? row.Path);
             NoteText.Text = Text.RowNote(row) + (row.Note == null ? "" : "\n출처: " + row.Note.Source);
             var files = editable.Select(v => v.Trace.File).Distinct().ToList();
             OriginText.Text = files.Count == 1 ? "값이 있는 파일: " + files[0] : "값마다 있는 파일이 다르다. 아래 값 옆에 적었다";
@@ -35,9 +35,11 @@ namespace CtaToybox.App
             {
                 var v = row.Values[i];
                 var line = new DockPanel { Margin = new Thickness(0, 3, 0, 3) };
-                var caption = new StackPanel { Width = 280 };
-                caption.Children.Add(new TextBlock { TextWrapping = TextWrapping.Wrap,
-                    Text = (row.Values.Count > 1 ? "값 " + (i + 1) + (v.Name == null ? "" : " (" + v.Name + ")") + "  " : "") + "원래 " + Text.Value(v.Trace.Text) +
+                var caption = new StackPanel { Width = 300 };
+                // 첫 줄: 값의 뜻. 둘째 줄: 원문의 이름과 자리, 원래 값
+                caption.Children.Add(new TextBlock { TextWrapping = TextWrapping.Wrap, FontWeight = FontWeights.SemiBold, Text = Text.ValueName(row, i) });
+                caption.Children.Add(new TextBlock { TextWrapping = TextWrapping.Wrap, Foreground = Brushes.DimGray, FontSize = 12,
+                    Text = (row.Values.Count > 1 ? (i + 1) + "번째 값" : "값") + (v.Name == null ? "" : " · 원문 " + v.Name + "()") + " · 원래 " + Text.Value(v.Trace.Text) +
                            (v.Edit == null ? "" : "  (수정됨: " + Text.Value(v.Edit.New) + ", " + (v.Edit.Scope == "unit" ? "이 유닛만" : "전부") + ")") });
                 if (v.Editable && files.Count > 1)
                     caption.Children.Add(new TextBlock { Foreground = Brushes.Gray, FontSize = 12, TextWrapping = TextWrapping.Wrap,
@@ -127,6 +129,17 @@ namespace CtaToybox.App
         void Ok_Click(object sender, RoutedEventArgs e)
         {
             if (Run(() => session.ApplyRow(unit, row, Tokens(), Scope))) DialogResult = true;
+        }
+
+        // 화면 확인 시나리오(--scenario)가 사람 대신 누른다. 사람이 하는 것과 같은 칸과 단추를 쓴다
+        public void TypeValue(int index, string text) { boxes[index].Text = text; }
+        public void ChooseScope(bool unitOnly) { (unitOnly ? UnitRadio : SharedRadio).IsChecked = true; }
+        public bool PressOk()
+        {
+            if (!OkButton.IsEnabled) return false;
+            bool ok = Run(() => session.ApplyRow(unit, row, Tokens(), Scope));
+            if (ok) Close();
+            return ok;
         }
 
         // 이 줄에 보이는 수정(이 유닛에 적용되는 것)을 원래 값으로 되돌린다. 범위마다 ApplyRow로 한 번에 처리한다
