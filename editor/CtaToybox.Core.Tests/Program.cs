@@ -80,6 +80,7 @@ static class Program
             ("UnitIndex", UnitIndexTests.Run),
             ("IncludeChain", IncludeChainTests.Run),
             ("UnitTracer", UnitTracerTests.Run),
+            ("KeyAnnotations", KeyAnnotationsTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),
