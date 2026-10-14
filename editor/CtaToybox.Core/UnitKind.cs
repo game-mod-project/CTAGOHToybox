@@ -1,11 +1,18 @@
 // 가상 경로로 유닛의 종류를 정한다. tools/lib/Common.ps1의 Get-SdlUnitKind와 같은 규칙이어야 한다.
 using System;
+using System.Linq;
 
 namespace CtaToybox.Core
 {
     public static class UnitKind
     {
         public static readonly string[] All = { "vehicle", "breed", "humanskin", "item-entity", "stuff", "pattern" };
+
+        // 편집기가 보이는 종류. 보병 외형(humanskin), 아이템 모델(item-entity), 아이템 틀(pattern)은 스탯을 고칠 대상이 아니라 뺀다.
+        // 색인에는 그대로 둔다: 같이 쓰는 유닛 수는 이 종류들까지 세야 '전부' 수정이 어디에 닿는지 맞다
+        public static readonly string[] Editor = { "vehicle", "breed", "stuff" };
+
+        public static bool InEditor(string kind) { return kind != null && Editor.Contains(kind); }
 
         // 화면에 보이는 이름
         public static string Label(string kind)
@@ -14,10 +21,7 @@ namespace CtaToybox.Core
             {
                 case "vehicle": return "차량";
                 case "breed": return "보병";
-                case "humanskin": return "보병 외형";
-                case "item-entity": return "아이템 모델";
                 case "stuff": return "무기·탄약·장비";
-                case "pattern": return "아이템 틀";
                 default: return "파일";
             }
         }

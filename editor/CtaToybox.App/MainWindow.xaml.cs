@@ -61,7 +61,7 @@ namespace CtaToybox.App
             WarningText.Text = string.Join("\n", session.Plan.Warnings);
             StatusText.Text = "유닛 " + session.Index.Units.Count.ToString("N0") + "개를 읽었다.";
             KindBox.ItemsSource = new[] { new Choice { Label = "전체", Value = null } }
-                .Concat(UnitKind.All.Select(k => new Choice { Label = UnitKind.Label(k), Value = k })).ToList();
+                .Concat(UnitKind.Editor.Select(k => new Choice { Label = UnitKind.Label(k), Value = k })).ToList();
             KindBox.SelectedIndex = 1;   // 차량
             LayerBox.ItemsSource = new[] { new Choice { Label = "전체", Value = null } }
                 .Concat(session.Plan.Layers.Select(l => new Choice { Label = session.LayerLabel(l.Name), Value = l.Name })).ToList();

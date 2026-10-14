@@ -27,6 +27,7 @@ namespace CtaToybox.App
         public string Group { get; set; }
         public int GroupOrder { get; set; }
         public string Label { get; set; }      // 항목 이름
+        public string Key { get; set; }        // 원본에 쓰인 그대로의 키 경로
         public string Context { get; set; }    // 어느 볼륨·부품·무장의 것인지
         public string Values { get; set; }     // 지금 값
         public string NewValues { get; set; }  // 걸린 수정
@@ -77,6 +78,14 @@ namespace CtaToybox.App
         {
             if (row.Note == null && row.IsMacroCall) return "[매크로 호출] 이 인자를 쓰는 값들이 함께 바뀐다. 인자로 계산한 값은 전체 탭의 '고칠 수 없는 값'에 보인다";
             return Note(row.Note);
+        }
+
+        // 줄의 부위와, 같은 줄을 모았으면 그 수. 둘 다 없으면 null
+        public static string ContextLine(string context, int repeats)
+        {
+            string rep = repeats > 1 ? "같은 줄 " + repeats + "곳을 하나로 보인다. 고치면 모두 바뀐다" : null;
+            if (context == null) return rep;
+            return "↳ " + context + (rep == null ? "" : "  ·  " + rep);
         }
 
         public static string Note(KeyNote note)

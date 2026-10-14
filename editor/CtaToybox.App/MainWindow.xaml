@@ -44,6 +44,7 @@
           <DataTemplate>
             <StackPanel ToolTip="{Binding Tip}" Margin="0,2">
               <TextBlock Text="{Binding Label}" FontWeight="SemiBold" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding Key}" FontFamily="Consolas, Malgun Gothic" Foreground="#2F5D8A" FontSize="12" TextWrapping="Wrap"/>
               <TextBlock Text="{Binding Context}" Foreground="#666666" FontSize="12" TextWrapping="Wrap"/>
               <TextBlock Text="{Binding Note}" Foreground="#777777" FontSize="12" TextWrapping="Wrap"/>
             </StackPanel>

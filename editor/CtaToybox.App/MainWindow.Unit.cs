@@ -25,6 +25,8 @@ namespace CtaToybox.App
                 UnitTitle.Text = "원본에 이 파일이 없다: " + path;
                 UnitInfo.Text = "";
                 SummaryList.ItemsSource = FullList.ItemsSource = ItemList.ItemsSource = null;
+                fullItems = new List<RowItem>();
+                SummaryTab.Header = "요약"; FullTab.Header = "전체"; ItemsTab.Header = "무기·탄약";
                 return;
             }
             UnitTitle.Text = unit.DisplayName ?? unit.Unit.Substring(unit.Unit.LastIndexOf('/') + 1);
@@ -65,8 +67,9 @@ namespace CtaToybox.App
             {
                 Row = row, Group = group, GroupOrder = order,
                 // 요약에서는 묶음 머리가 항목 이름이므로 줄에는 어느 부위의 것인지만 보인다
-                Label = summary ? (row.Context ?? "이 유닛") : KeyLabel.Readable(row.Path),
-                Context = summary || row.Context == null ? null : "↳ " + row.Context,
+                Label = summary ? (row.Context ?? "이 유닛") : KeyLabel.Readable(row.RawPath ?? row.Path),
+                Key = "키 " + (row.RawPath ?? row.Path),
+                Context = Text.ContextLine(summary ? null : row.Context, row.Repeats),
                 Values = string.Join("  ", row.Values.Select(v => Text.Value(v.Trace.Text))),
                 NewValues = newValues,
                 Note = Text.RowNote(row),
@@ -102,7 +105,7 @@ namespace CtaToybox.App
         {
             string f = FullFilter.Text.Trim();
             var shown = f.Length == 0 ? fullItems : fullItems.Where(x =>
-                Has(x.Label, f) || Has(x.Values, f) || Has(x.Group, f) || Has(x.Note, f) || Has(x.Context, f) || Has(x.Row.Path, f)).ToList();
+                Has(x.Label, f) || Has(x.Values, f) || Has(x.Group, f) || Has(x.Note, f) || Has(x.Context, f) || Has(x.Key, f)).ToList();
             var view = new ListCollectionView(shown);
             view.GroupDescriptions.Add(new PropertyGroupDescription("Group"));
             FullList.ItemsSource = view;

@@ -20,6 +20,7 @@ namespace CtaToybox.Core
     public sealed class TraceRow
     {
         public string Path { get; set; }        // 펼친 뒤의 키 경로
+        public string RawPath { get; set; }     // 원문의 대소문자 그대로 쓴 경로(화면 표시용)
         public int Occurrence { get; set; }     // 펼친 뒤의 순번
         public string Form { get; set; }        // block | macro (KeyLocator의 행 형태). 주석을 찾을 때 쓴다
         public string Context { get; set; }     // 같은 키가 여러 번 나올 때 어느 부위의 것인지(예: volume body1). 없으면 null
@@ -75,9 +76,9 @@ namespace CtaToybox.Core
         }
 
         // 부위를 나타내는 블록. 첫 문자열이 그 부위의 이름이다(예: {volume "body1" ...}, {place "gun" ...}).
-        // chassis "wheel"처럼 종류를 적는 블록과 extender "inventory" 같은 기능 블록은 넣지 않는다
+        // parameters는 무기의 탄종별 값 묶음이다(예: {parameters "ap2" ...}). chassis "wheel"처럼 종류를 적는 블록과 extender "inventory" 같은 기능 블록은 넣지 않는다
         static readonly HashSet<string> PartBlocks = new HashSet<string>(StringComparer.Ordinal)
-            { "volume", "component", "place", "bone", "visor", "track", "anm", "link", "setting" };
+            { "volume", "component", "place", "bone", "visor", "track", "anm", "link", "setting", "parameters" };
 
         // 행마다 가장 가까운 이름 있는 부위 블록. rows와 같은 순서다. 인자 없는 블록도 거쳐 가므로 앞 형제의 이름을 물려받지 않는다
         public static List<string> ContextsOf(List<KeyRow> rows)
@@ -118,7 +119,7 @@ namespace CtaToybox.Core
             {
                 var row = rows[i];
                 if (row.Leaves.Count == 0) continue;
-                var traced = new TraceRow { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i] };
+                var traced = new TraceRow { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i] };
                 foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                 result.Rows.Add(traced);
             }
