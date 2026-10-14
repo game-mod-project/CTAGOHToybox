@@ -25,6 +25,7 @@ namespace CtaToybox.Core
         public string Form { get; set; }        // block | macro (KeyLocator의 행 형태). 주석을 찾을 때 쓴다
         public string Context { get; set; }     // 같은 키가 여러 번 나올 때 어느 부위의 것인지(예: volume body1). 없으면 null
         public List<TraceValue> Values { get; } = new List<TraceValue>();
+        public List<string> LeafNames { get; set; }   // 값마다 감싼 호출의 이름(KeyRow.LeafNames). 호출 밖이면 null
     }
 
     public sealed class UnitTraceResult
@@ -119,7 +120,7 @@ namespace CtaToybox.Core
             {
                 var row = rows[i];
                 if (row.Leaves.Count == 0) continue;
-                var traced = new TraceRow { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i] };
+                var traced = new TraceRow { Path = row.Path, RawPath = row.RawPath, LeafNames = row.LeafNames, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i] };
                 foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                 result.Rows.Add(traced);
             }

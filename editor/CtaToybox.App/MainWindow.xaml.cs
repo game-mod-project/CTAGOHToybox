@@ -80,6 +80,11 @@ namespace CtaToybox.App
                 await Shoot(options.EditRow, options.Screenshot);
                 Close();
             }
+            else if (options.Scenario != null)
+            {
+                await RunScenario(options.Scenario, options.Out ?? Path.GetDirectoryName(options.Scenario));
+                Close();
+            }
             else if (options.Shots != null)
             {
                 // 화면 확인용: 한 번 실행으로 여러 화면을 찍는다. 목록 파일 한 줄: 파일 이름|유닛|탭|거르기|값 고치기 창을 띄울 항목
@@ -141,9 +146,9 @@ namespace CtaToybox.App
         {
             await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);
             if (editRow == null || unit == null) { SaveScreenshot(this, path); return; }
-            var item = fullItems.Where(x => x.Editable).FirstOrDefault(x => x.Label.Contains(editRow) || x.Row.Path.Contains(editRow));
+            var item = fullItems.Where(x => x.Editable).FirstOrDefault(x => x.Label.Contains(editRow) || x.Row.Path.Contains(editRow) || (x.Values ?? "").Contains(editRow));
             if (item == null) { SaveScreenshot(this, path); return; }
-            var dialog = new EditDialog(session, unit, item.Row, item.Row.SummaryLabel ?? item.Label, item.Context) { Owner = this };
+            var dialog = new EditDialog(session, unit, item.Row, item.Name, item.Row.Context) { Owner = this };
             dialog.Show();
             await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);
             dialog.UpdateLayout();

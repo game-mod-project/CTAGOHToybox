@@ -7,7 +7,7 @@ namespace CtaToybox.App
 {
     public sealed class AppOptions
     {
-        public string Repo, Settings, Project, Unit, Tab, Filter, EditRow, Screenshot, Shots, Out;
+        public string Repo, Settings, Project, Unit, Tab, Filter, EditRow, Screenshot, Shots, Out, Scenario;
 
         public static AppOptions Parse(string[] args)
         {
@@ -19,7 +19,7 @@ namespace CtaToybox.App
                 opt[args[i].Substring(2)] = args[++i];
             }
             foreach (string k in opt.Keys)
-                if (Array.IndexOf(new[] { "repo", "settings", "project", "unit", "tab", "filter", "edit-row", "screenshot", "shots", "out" }, k.ToLowerInvariant()) < 0) throw new ArgumentException("모르는 옵션: --" + k);
+                if (Array.IndexOf(new[] { "repo", "settings", "project", "unit", "tab", "filter", "edit-row", "screenshot", "shots", "out", "scenario" }, k.ToLowerInvariant()) < 0) throw new ArgumentException("모르는 옵션: --" + k);
             var o = new AppOptions();
             o.Repo = Path.GetFullPath(opt.ContainsKey("repo") ? opt["repo"] : FindRepo(Environment.CurrentDirectory) ?? FindRepo(AppContext.BaseDirectory) ?? Environment.CurrentDirectory);
             o.Settings = opt.ContainsKey("settings") ? opt["settings"] : Path.Combine(o.Repo, "editor", "settings.json");
@@ -31,6 +31,7 @@ namespace CtaToybox.App
             o.Screenshot = opt.ContainsKey("screenshot") ? Path.GetFullPath(opt["screenshot"]) : null;
             o.Shots = opt.ContainsKey("shots") ? Path.GetFullPath(opt["shots"]) : null;
             o.Out = opt.ContainsKey("out") ? Path.GetFullPath(opt["out"]) : null;
+            o.Scenario = opt.ContainsKey("scenario") ? Path.GetFullPath(opt["scenario"]) : null;
             return o;
         }
 

@@ -14,6 +14,7 @@ namespace CtaToybox.Core
         public string UnitScopeBlocker { get; set; }  // "이 유닛만"이 안 되는 이유. 되면 null
         public Edit Edit { get; set; }                // 이 자리에 걸린 수정
         public string Name { get; set; }              // 값을 감싼 호출의 이름(cp(40)이면 cp). 화면에 값 이름으로 보인다. 없으면 null
+        public string Label { get; set; }             // 값의 뜻(data/annotations/values.psv). 모르면 null
         public bool Editable { get { return Trace.Arg >= 0; } }
     }
 
@@ -59,6 +60,7 @@ namespace CtaToybox.Core
         public string ProjectPath { get; private set; }
 
         string annotationDir, summaryDir;
+        ValueLabels valueLabels = new ValueLabels();
         readonly Dictionary<string, string> layerLabels = new Dictionary<string, string>(StringComparer.Ordinal);
         UnitTracer tracer;
         readonly Dictionary<string, KeyAnnotations> notes = new Dictionary<string, KeyAnnotations>(StringComparer.Ordinal);
@@ -87,6 +89,7 @@ namespace CtaToybox.Core
             say("가격·로스터 파일을 읽는 중");
             s.Roster = RosterLinks.Build(s.Stack.Paths, s.Stack.ReadText);
             s.annotationDir = Path.Combine(repoRoot, "data", "annotations");
+            s.valueLabels = ValueLabels.Load(Path.Combine(s.annotationDir, "values.psv"));
             s.summaryDir = Path.Combine(repoRoot, "editor", "summary");
             s.tracer = new UnitTracer(s.Stack);
             say("준비됐다");
@@ -160,7 +163,7 @@ namespace CtaToybox.Core
                 var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
                 foreach (var v in row.Values)
                 {
-                    var vv = new ValueView { Trace = v };
+                    var vv = new ValueView { Trace = v, Name = row.LeafNames == null ? null : row.LeafNames[r.Values.Count] };
                     if (v.Arg >= 0)
                     {
                         vv.SharedBy = Index.UsersOf(v.File).Count;
@@ -173,6 +176,11 @@ namespace CtaToybox.Core
             AddMacroCalls(view, traced, n, summary);
             CollapseRepeats(view.Rows);
             AddRoster(view);
+            foreach (var row in view.Rows.Concat(view.Roster))
+            {
+                var labels = valueLabels.Of(row.Path, row.Values.Select(v => v.Trace.Text).ToList(), row.Values.Select(v => v.Name).ToList());
+                for (int i = 0; i < row.Values.Count; i++) row.Values[i].Label = labels[i];
+            }
             RefreshEdits(view);
             return view;
         }
@@ -186,7 +194,7 @@ namespace CtaToybox.Core
         static readonly KeyNote RosterCostNote = new KeyNote
         {
             Grade = "확인",
-            Meaning = "인력(MP) 비용. 분대는 MP 비용이 0이고 든 병사 cost의 합으로 값이 정해진다(units_*.set 주석)",
+            Meaning = "인력 비용 (MP). 분대는 MP 비용이 0이고 든 병사 cost의 합으로 값이 정해진다(units_*.set 주석)",
             Source = "게임 파일 주석",
         };
         static readonly KeyNote RosterNameNote = new KeyNote
@@ -222,6 +230,37 @@ namespace CtaToybox.Core
                     view.Roster.Add(rv);
                 }
             }
+        }
+
+        public sealed class EditDescription
+        {
+            public KeyNote Note { get; set; }      // 줄의 키 주석. 없으면 null
+            public bool IsMacroCall { get; set; }
+            public string ValueLabel { get; set; } // 고친 값의 뜻(values.psv). 모르면 null
+            public string ValueName { get; set; }  // 고친 값을 감싼 호출의 이름. 없으면 null
+            public string RowText { get; set; }    // 원본 줄의 값 전체
+            public int ValueCount { get; set; }
+        }
+
+        // 수정 목록이 보일 설명: 원본 파일에서 그 줄을 다시 찾아 이름을 붙인다. 줄을 찾지 못하면 null
+        public EditDescription Describe(Edit e)
+        {
+            string file = SourceStack.ToVirtual(e.File ?? "");
+            string text = Stack.ReadText(file);
+            if (text == null) return null;
+            var parsed = SdlCore.Parse(text);
+            if (parsed.Errors.Count > 0) return null;
+            var row = KeyLocator.Rows(parsed.Root).FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            if (row == null || e.Arg < 0 || e.Arg >= row.Leaves.Count) return null;
+            var texts = row.Leaves.Select(l => l.Text).ToList();
+            var labels = valueLabels.Of(row.Path, texts, row.LeafNames);
+            var n = NotesFor(SourceStack.ToVirtual(e.Unit ?? file));
+            return new EditDescription
+            {
+                Note = n.Find(row.Path, row.Form, true) ?? NotesFor(file).Find(row.Path, row.Form, true),
+                IsMacroCall = row.Form == "macro", ValueLabel = labels[e.Arg], ValueName = row.LeafNames[e.Arg],
+                RowText = string.Join(" ", texts), ValueCount = texts.Count,
+            };
         }
 
         // 같은 줄을 하나로 모은다. 매크로 인자 하나가 여러 곳에 펼쳐지면(예: 탄종마다 같은 사거리 표) 같은 원본 자리를 가리키는 줄이 여러 번 나온다.
@@ -290,7 +329,7 @@ namespace CtaToybox.Core
                         var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
                         // %이름은 바깥에서 받는 매개변수다. 고치면 매크로가 깨진다
                         if (t.Text.StartsWith("%")) { t.Arg = -1; t.Note = "매개변수(" + t.Text + ")라 고칠 수 없다. 이 값을 넘기는 쪽에서 고친다"; }
-                        r.Values.Add(new ValueView { Trace = t, SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
+                        r.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
                     }
                     view.Rows.Add(r);
                 }

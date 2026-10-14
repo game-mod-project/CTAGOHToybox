@@ -26,6 +26,7 @@ namespace CtaToybox.App
         public RowView Row { get; set; }
         public string Group { get; set; }
         public int GroupOrder { get; set; }
+        public string Name { get; set; }       // 한글 이름(키 주석에서)
         public string Label { get; set; }      // 항목 이름
         public string Key { get; set; }        // 원본에 쓰인 그대로의 키 경로
         public string Context { get; set; }    // 어느 볼륨·부품·무장의 것인지
@@ -80,9 +81,43 @@ namespace CtaToybox.App
             return Note(row.Note);
         }
 
+        // 줄의 한글 이름: 키 주석의 뜻을 짧게 줄인 것. 뜻을 모르면 "(이름 미확인)"과 원문 키의 마지막 이름
+        public static string RowName(RowView row)
+        {
+            if (row.Note != null && row.Note.Grade != "미확인" && !string.IsNullOrWhiteSpace(row.Note.Meaning))
+                return SummaryKeys.ShortLabel(row.Note.Meaning);
+            var parts = KeyLabel.Split(row.RawPath ?? row.Path);
+            string last = parts.Count == 0 ? row.Path : parts[parts.Count - 1];
+            if (row.IsMacroCall) return "매크로 " + last.Trim('(', ')', '"') + " (뜻 미확인)";
+            return "(이름 미확인) " + last.Trim('"');
+        }
+
+        // 수정 목록의 제목: 줄 이름 [원본 줄] · 값 이름: 원래 → 새 값
+        public static string EditTitle(EditorSession.EditDescription d, Edit e)
+        {
+            string change = Value(e.Old) + " → " + Value(e.New);
+            if (d == null) return KeyLabel.Readable(e.Path) + " · " + (e.Arg + 1) + "번째 값: " + change;
+            var row = new RowView { Path = e.Path, Note = d.Note, IsMacroCall = d.IsMacroCall };
+            string rowName = RowName(row);
+            string valueName = d.ValueLabel ?? (d.ValueCount == 1 && d.ValueName == null ? null : (d.ValueName ?? (e.Arg + 1) + "번째 값") + " (뜻 미확인)");
+            return rowName + (d.ValueCount > 1 ? "  [" + d.RowText.Replace("\"", "") + "]" : "") + (valueName == null ? "" : " · " + valueName) + ":  " + change;
+        }
+
+        // 값 하나의 이름: 뜻이 있으면 뜻, 없으면 원문 이름이나 자리 번호에 "뜻 미확인"
+        public static string ValueName(RowView row, int index)
+        {
+            var v = row.Values[index];
+            if (v.Label != null) return v.Label;
+            if (row.Values.Count == 1 && v.Name == null) return RowName(row);   // 값이 하나면 줄의 이름이 곧 값의 이름이다
+            return (v.Name ?? "값 " + (index + 1)) + " (뜻 미확인)";
+        }
+
         // 줄의 지금 값. 호출 안의 값은 원문처럼 이름(값 값)으로 묶는다: side(ger) lvl(lvl1 lvl2) cost(10.0)
         public static string ValuesLine(RowView row)
         {
+            // 값이 여럿이고 뜻을 아는 값이 있으면 한 줄에 하나씩 "뜻: 값"으로 보인다
+            if (row.Values.Count > 1 && row.Values.Any(v => v.Label != null))
+                return string.Join("\n", row.Values.Select((v, i) => v.Label != null && v.Label.StartsWith("열쇠말") ? null : ValueName(row, i) + ": " + Value(v.Trace.Text)).Where(s => s != null));
             var parts = new System.Collections.Generic.List<string>();
             for (int i = 0; i < row.Values.Count; i++)
             {
