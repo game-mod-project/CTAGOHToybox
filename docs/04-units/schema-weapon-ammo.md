@@ -44,7 +44,7 @@
 | `/bullet/detonationthickness` | block | [num]x6 | 6 | 6 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/entity` | block | [str]x120 | 120 | 120 | 예: "sturmtiger_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/bullet/inventory` | block | []x120 | 120 | 120 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
-| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인(자동) |  |  |  |
+| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인 | 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 무엇을 정하는지는 미확인 | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/fsm` | block | [str]x99 | 99 | 99 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x120 | 120 | 120 | 1 1 ¦ 1 2 ¦ 2 1 ¦ 3 2 ¦ 2 2 ¦ 3 1 ¦ 3 3 ¦ 6 2 ¦ 8 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/bullet/inventory/weight` | block | [num]x120 | 120 | 120 | 0.333 ~ 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
@@ -2087,7 +2087,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/detonationthickness` | block | [num]x7 | 7 | 7 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/entity` | block | [str]x120 | 120 | 120 | 예: "sturmtiger_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/bullet/inventory` | block | []x120 | 120 | 120 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
-| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인(자동) |  |  |  |
+| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인 | 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 무엇을 정하는지는 미확인 | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/fsm` | block | [str]x99 | 99 | 99 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x120 | 120 | 120 | 1 1 ¦ 1 2 ¦ 2 1 ¦ 3 2 ¦ 2 2 ¦ 3 1 ¦ 3 3 ¦ 6 2 ¦ 8 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/bullet/inventory/weight` | block | [num]x120 | 120 | 120 | 0.333 ~ 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |

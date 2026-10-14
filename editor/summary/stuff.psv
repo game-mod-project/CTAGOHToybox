@@ -13,6 +13,6 @@
 **/burst/long|긴 점사 (발 수, 무작위 폭)
 **/burst/rangekoef|긴 점사를 쓰는 거리 배수
 **/spreading/burstaccuracy|연사 중 발마다 정확도
-**/inventory/block|한 묶음 수 (미확인)
+**/inventory/block|block 값 (뜻 미확인. 인벤토리 칸을 나누는 묶음 크기는 아니다: 2026-10-14 게임 확인)
 **/inventory/weight|적재 무게값 (미확인)
 **/inventory/size|인벤토리 칸 크기
