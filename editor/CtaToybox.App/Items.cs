@@ -1,40 +1,107 @@
-// 화면 목록이 묶는 항목. 표시 문자열만 만들고 판단은 하지 않는다(판단은 EditorSession이 한다).
+// 화면 목록이 묶는 항목과 표시 문자열. 판단(고칠 수 있는지, 범위 등)은 EditorSession이 하고, 여기서는 글자만 만든다.
+using System;
+using System.Globalization;
+using System.Linq;
+using System.Windows.Data;
 using CtaToybox.Core;
 
 namespace CtaToybox.App
 {
+    public sealed class Choice
+    {
+        public string Label { get; set; }
+        public string Value { get; set; }   // null이면 거르지 않는다
+    }
+
     public sealed class UnitItem
     {
         public UnitEntry Entry { get; set; }
-        public string Label { get; set; }
+        public string Title { get; set; }   // 게임 속 이름, 없으면 파일 이름
+        public string Sub { get; set; }     // 파일 이름 · 종류 · 출처
     }
 
-    public sealed class ValueItem
+    // 전체·요약 탭의 한 줄: 키 한 줄(값이 여럿이면 한 줄에 모아 보인다)
+    public sealed class RowItem
     {
         public RowView Row { get; set; }
-        public ValueView Value { get; set; }
-        public string Group { get; set; }      // 전체 탭의 묶음: 값이 있는 파일
-        public string Key { get; set; }        // 펼친 키 경로 [순번] 또는 요약 이름
-        public string Text { get; set; }      // 원본 값
-        public string NewText { get; set; }    // 걸린 수정의 새 값과 범위. 없으면 빈칸
-        public string Origin { get; set; }     // 파일 안의 자리
-        public string Shared { get; set; }     // 공유 수
+        public string Group { get; set; }
+        public int GroupOrder { get; set; }
+        public string Label { get; set; }      // 항목 이름
+        public string Context { get; set; }    // 어느 볼륨·부품·무장의 것인지
+        public string Values { get; set; }     // 지금 값
+        public string NewValues { get; set; }  // 걸린 수정
+        public string Note { get; set; }       // 설명과 등급
+        public string Shared { get; set; }     // 같이 쓰는 유닛 수
         public string Scope { get; set; }      // "이 유닛만" 가능 여부
-        public string Note { get; set; }       // 키 설명과 등급
+        public string Tip { get; set; }        // 원본 파일과 자리
+        public bool Editable { get; set; }
     }
 
     public sealed class ItemLinkItem
     {
         public ItemLink Link { get; set; }
-        public string Label { get; set; }
+        public string Title { get; set; }
+        public string Sub { get; set; }
     }
 
     public sealed class EditItem
     {
         public Edit Edit { get; set; }
         public bool Enabled { get; set; }
+        public string Group { get; set; }
         public string Title { get; set; }
         public string Detail { get; set; }
         public string Status { get; set; }
+    }
+
+    public static class Text
+    {
+        public const string NotEditableGroup = "고칠 수 없는 값 (치환·계산으로 만든 값, include 인자)";
+
+        // 값 하나를 화면에 보이는 글자로: 따옴표 문자열은 따옴표를 뗀다
+        public static string Value(string token) { return token != null && token.StartsWith("\"") ? token.Trim('"') : token; }
+
+        public static string Status(EditStatus s)
+        {
+            switch (s)
+            {
+                case EditStatus.Applied: return "적용";
+                case EditStatus.SourceChanged: return "원본이 바뀜";
+                case EditStatus.TargetMissing: return "대상 없음";
+                default: return "적용 불가";
+            }
+        }
+
+        // 줄의 설명: 주석이 없는 매크로 호출 줄은 매크로 인자라는 것을 알린다
+        public static string RowNote(RowView row)
+        {
+            if (row.Note == null && row.IsMacroCall) return "[매크로 호출] 이 인자를 쓰는 값들이 함께 바뀐다. 인자로 계산한 값은 전체 탭의 '고칠 수 없는 값'에 보인다";
+            return Note(row.Note);
+        }
+
+        public static string Note(KeyNote note)
+        {
+            return note == null ? "(설명 없음)" : "[" + (note.Grade.Length == 0 ? "등급 없음" : note.Grade) + "] " + note.Meaning;
+        }
+
+        public static string UnitName(EditorSession session, string unit)
+        {
+            return session.Names.OfUnit(unit) ?? unit.Substring(unit.LastIndexOf('/') + 1);
+        }
+    }
+
+    // 묶음을 처음에 펼칠지: 작은 묶음만 펼친다. 고칠 수 없는 값은 접는다
+    public sealed class ExpandSmallGroups : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            var group = value as CollectionViewGroup;
+            if (group == null) return true;
+            if (string.Equals(group.Name as string, Text.NotEditableGroup, StringComparison.Ordinal)) return false;
+            int limit = parameter == null ? int.MaxValue : int.Parse((string)parameter, CultureInfo.InvariantCulture);
+            return group.ItemCount <= limit;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture) { return Binding.DoNothing; }
     }
 }

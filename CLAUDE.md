@@ -43,6 +43,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - `data/annotations/<그룹>.intro.md`: 스키마 문서의 소개문
 - `data/mods/mods.psv`, `data/mods/annotations.psv`, `data/mods/<id>/notes.md`, `data/mods/readme-*.md`: 모드 문서의 입력
 - `editor/projects/*.json`: 편집기의 수정 목록. `mod/CTAToybox/resource`의 생성물과 `.ctatoybox-build.json`은 빌드가 만든다
+- `editor/summary/<종류>.psv`: 편집기 요약 탭에 올리는 키와 화면 이름(경로|이름). 경로 규칙은 `data/annotations`와 같다
 - `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`
 
 `docs/04-units/schema-*.md`, `coverage.md`, `docs/05-workshop-mods/*.md`, `docs/06-editable-attributes/*.md`는 생성물이다.

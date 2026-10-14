@@ -15,6 +15,13 @@ namespace CtaToybox.Core
 
         public string SourceFile { get; private set; }
         public int Count { get { return labels.Count; } }
+        public List<string> Labels { get; } = new List<string>();   // 화면 이름, 파일에 적힌 순서. 요약 탭의 묶음 순서다
+
+        void Add(string path, string label)
+        {
+            labels[path] = label;
+            if (!Labels.Contains(label)) Labels.Add(label);
+        }
 
         public static string ShortLabel(string meaning)
         {
@@ -40,7 +47,7 @@ namespace CtaToybox.Core
                     if (line.Trim().Length == 0 || line.StartsWith("#")) continue;
                     string[] p = line.Split('|', 2);
                     if (p.Length < 2) throw new FormatException("요약 키 줄 형식 오류: " + line);
-                    keys.labels[p[0]] = p[1];
+                    keys.Add(p[0], p[1]);
                 }
                 return keys;
             }
@@ -48,7 +55,7 @@ namespace CtaToybox.Core
             {
                 if (e.Value.Grade != "확인") continue;
                 string path = e.Key.Substring(0, e.Key.IndexOf('\t'));
-                if (!keys.labels.ContainsKey(path)) keys.labels[path] = ShortLabel(e.Value.Meaning);
+                if (!keys.labels.ContainsKey(path)) keys.Add(path, ShortLabel(e.Value.Meaning));
             }
             return keys;
         }

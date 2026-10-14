@@ -1,3 +1,4 @@
+using System.Linq;
 using System.IO;
 using CtaToybox.Core;
 
@@ -28,6 +29,7 @@ static class SummaryKeysTests
         var fromFile = SummaryKeys.Load(summary, "vehicle", notes);
         T.Eq(Path.Combine(summary, "vehicle.psv"), fromFile.SourceFile, "a summary file wins");
         T.Eq(2, fromFile.Count, "its entries");
+        T.Eq(new[] { "적재품", "무게(kg)" }, fromFile.Labels.ToArray(), "labels keep the file order for grouping");
         T.Eq("무게(kg)", fromFile.LabelOf("/game_entity/mass"), "an exact path");
         T.Eq("적재품", fromFile.LabelOf("/game_entity/extender[inventory]/box/item"), "a tail");
         T.True(fromFile.LabelOf("/game_entity/chassis/maxspeed") == null, "annotation keys are not added when the file exists");
