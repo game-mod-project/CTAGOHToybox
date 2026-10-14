@@ -55,6 +55,10 @@ static class CliTests
         T.Eq(1, Run(out o, "add", "--settings", settings, "--project", project, "--file", "set/a.set", "--path", "/a/x", "--new", "1 2"), "add refuses an invalid value");
         T.Eq(1, Run(out o, "add", "--settings", settings, "--project", project, "--file", "set/a.set", "--path", "/a/nope", "--new", "1"), "add refuses an unknown key");
         T.Eq(1, EditProject.Load(project).Edits.Count, "refused edits are not saved");
+        T.Eq(0, Run(out o, "add", "--settings", settings, "--project", project, "--file", "set/a.set", "--path", "/a/x", "--new", "7"), "add again to the same slot succeeds");
+        T.Eq(1, EditProject.Load(project).Edits.Count, "adding to the same slot changes the edit instead of adding a second one");
+        T.Eq("7", EditProject.Load(project).Edits[0].New, "with the new value");
+        T.Eq(0, Run(out o, "add", "--settings", settings, "--project", project, "--file", "set/a.set", "--path", "/a/x", "--new", "9"), "put it back");
 
         T.Eq(0, Run(out o, "build", "--settings", settings, "--project", project), "build succeeds");
         T.True(o.Contains("적용 1건"), "build prints the summary");
