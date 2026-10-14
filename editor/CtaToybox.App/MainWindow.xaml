@@ -123,7 +123,27 @@
           <Button Content="지금 값에 맞추기" Padding="8,2" Margin="0,0,6,4" Click="RebaseEdit_Click"/>
           <Button Content="유닛 열기" Padding="8,2" Margin="0,0,6,4" Click="OpenEditUnit_Click"/>
         </WrapPanel>
-        <ListView x:Name="EditList"/>
+        <ListView x:Name="EditList" HorizontalContentAlignment="Stretch">
+          <ListView.GroupStyle>
+            <GroupStyle>
+              <GroupStyle.HeaderTemplate>
+                <DataTemplate><TextBlock FontWeight="Bold" Margin="0,6,0,2" Text="{Binding Name}" TextWrapping="Wrap"/></DataTemplate>
+              </GroupStyle.HeaderTemplate>
+            </GroupStyle>
+          </ListView.GroupStyle>
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <DockPanel Margin="0,2">
+                <CheckBox DockPanel.Dock="Left" IsChecked="{Binding Enabled, Mode=OneWay}" Click="EditEnabled_Click" Tag="{Binding}" VerticalAlignment="Top" Margin="0,2,6,0"/>
+                <StackPanel>
+                  <TextBlock Text="{Binding Title}" TextWrapping="Wrap"/>
+                  <TextBlock Text="{Binding Detail}" Foreground="#555555" TextWrapping="Wrap"/>
+                  <TextBlock Text="{Binding Status}" Foreground="#B00020" TextWrapping="Wrap"/>
+                </StackPanel>
+              </DockPanel>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
       </DockPanel>
     </Grid>
   </DockPanel>
