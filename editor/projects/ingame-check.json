@@ -1,0 +1,27 @@
+{
+  "name": "ingame-check",
+  "edits": [
+    {
+      "unit": "entity/-vehicle/ussr/tank_heavy/kv85/kv85.def",
+      "file": "entity/-vehicle/ussr/tank_heavy/kv85/kv85.def",
+      "path": "/game_entity/extender[inventory]/box/item",
+      "occurrence": 0,
+      "arg": 1,
+      "old": "19",
+      "new": "7",
+      "scope": "shared",
+      "enabled": false
+    },
+    {
+      "unit": "entity/-vehicle/usa/tank_light/m24_chaffee/m24_chaffee.def",
+      "file": "entity/-vehicle/usa/tank_light/m24_chaffee/m24_chaffee.def",
+      "path": "/game_entity/extender[inventory]/box/item",
+      "occurrence": 0,
+      "arg": 1,
+      "old": "18",
+      "new": "5",
+      "scope": "shared",
+      "enabled": false
+    }
+  ]
+}

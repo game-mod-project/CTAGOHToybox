@@ -240,7 +240,8 @@ namespace CtaToybox.Core
             foreach (var group in edits.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
             {
                 string file = group.Key;
-                if (file == unit) { ItemFor(items, unit, unitSource).Edits.AddRange(group); continue; }
+                // 유닛 자신의 파일: 같은 자리를 '전부' 수정도 고치면 '이 유닛만'이 이긴다(앞에 둔 수정이 이긴다). 화면의 EditorSession.EditFor와 같다
+                if (file == unit) { ItemFor(items, unit, unitSource).Edits.InsertRange(0, group); continue; }
                 var source = stack.Find(file);
                 if (source == null)
                 {

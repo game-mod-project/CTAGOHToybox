@@ -16,7 +16,8 @@ namespace CtaToybox.App
         {
             try { session.OpenProject(path); }
             catch (InvalidDataException ex) { MessageBox.Show(ex.Message, "프로젝트"); }
-            ProjectText.Text = session.Project == null ? "(없음)" : session.Project.Name + "  (" + session.ProjectPath + ")";
+            BuildButton.IsEnabled = session.Project != null;
+            ProjectText.Text = session.Project == null ? "(없음. 위의 열기...로 연다)" : session.Project.Name + "  (" + session.ProjectPath + ")";
             RefreshEdits();
             RefreshUnitViews();
         }
@@ -66,7 +67,7 @@ namespace CtaToybox.App
         void EditEnabled_Click(object sender, RoutedEventArgs e)
         {
             var item = (EditItem)((CheckBox)sender).Tag;
-            session.SetEnabled(item.Edit, ((CheckBox)sender).IsChecked == true);
+            Try("수정 켜고 끄기", () => session.SetEnabled(item.Edit, ((CheckBox)sender).IsChecked == true));
             RefreshEdits();
             RefreshUnitViews();
         }
@@ -75,7 +76,7 @@ namespace CtaToybox.App
         {
             var item = SelectedEdit;
             if (item == null) return;
-            session.RemoveEdit(item.Edit);
+            Try("수정 삭제", () => session.RemoveEdit(item.Edit));
             RefreshEdits();
             RefreshUnitViews();
         }
@@ -84,7 +85,7 @@ namespace CtaToybox.App
         {
             var item = SelectedEdit;
             if (item == null) return;
-            session.Rebase(item.Edit);
+            Try("지금 값에 맞추기", () => session.Rebase(item.Edit));
             RefreshEdits();
         }
 
@@ -96,7 +97,9 @@ namespace CtaToybox.App
 
         void OpenProject_Click(object sender, RoutedEventArgs e)
         {
-            var dialog = new OpenFileDialog { Filter = "프로젝트 (*.json)|*.json", CheckFileExists = false, InitialDirectory = Path.GetDirectoryName(Path.GetFullPath(session.ProjectPath)) };
+            if (session == null) return;
+            string dir = session.ProjectPath != null ? Path.GetDirectoryName(Path.GetFullPath(session.ProjectPath)) : Path.Combine(options.Repo, "editor", "projects");
+            var dialog = new OpenFileDialog { Filter = "프로젝트 (*.json)|*.json", CheckFileExists = false, InitialDirectory = Directory.Exists(dir) ? dir : options.Repo };
             if (dialog.ShowDialog(this) == true) OpenProjectFile(dialog.FileName);
         }
 
@@ -104,7 +107,9 @@ namespace CtaToybox.App
         {
             if (EditorSession.GameRunning() &&
                 MessageBox.Show("게임이나 에디터가 실행 중이다. 빌드해도 다시 시작해야 반영된다. 계속할까?", "빌드", MessageBoxButton.YesNo) != MessageBoxResult.Yes) return;
-            var report = session.Build();
+            if (session == null || session.Project == null) return;
+            BuildReport report = null;
+            if (!Try("빌드", () => report = session.Build())) return;
             var lines = new System.Collections.Generic.List<string>
             {
                 "적용 " + report.Count(EditStatus.Applied) + "건, 원본이 바뀜 " + report.Count(EditStatus.SourceChanged) + "건, 대상 없음 " +

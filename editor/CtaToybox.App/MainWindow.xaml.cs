@@ -30,6 +30,17 @@ namespace CtaToybox.App
             Closed += (s, e) => { if (session != null) session.Dispose(); };
         }
 
+        // 사용자가 고칠 수 있는 원인(파일 잠김, 깨진 주석·프로젝트 파일 등)으로 동작이 실패하면 창을 닫지 않고 이유를 보인다
+        bool Try(string what, Action action)
+        {
+            try { action(); return true; }
+            catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException || ex is FormatException || ex is InvalidOperationException || ex is InvalidDataException || ex is ArgumentException)
+            {
+                MessageBox.Show(this, what + "에 실패했다: " + ex.Message, "CTAToybox");
+                return false;
+            }
+        }
+
         void Say(string message) { Dispatcher.Invoke(() => StatusText.Text = message); }
 
         async Task LoadSession()
@@ -38,7 +49,7 @@ namespace CtaToybox.App
             {
                 session = await Task.Run(() => EditorSession.Open(options.Settings, options.Repo, Say));
             }
-            catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException || ex is System.Text.Json.JsonException || ex is InvalidDataException)
+            catch (Exception ex)
             {
                 WarningText.Text = "원본을 열지 못했다: " + ex.Message;
                 if (options.Screenshot != null) { SaveScreenshot(options.Screenshot); Close(); }
@@ -50,7 +61,7 @@ namespace CtaToybox.App
             KindBox.SelectedIndex = 0;
             LayerBox.ItemsSource = new[] { AllChoice }.Concat(session.Plan.Layers.Select(l => l.Name)).ToList();
             LayerBox.SelectedIndex = 0;
-            SearchBox.IsEnabled = KindBox.IsEnabled = LayerBox.IsEnabled = BuildButton.IsEnabled = true;
+            SearchBox.IsEnabled = KindBox.IsEnabled = LayerBox.IsEnabled = OpenProjectButton.IsEnabled = true;
             OpenProjectFile(options.Project);
             RunSearch();
             if (options.Unit != null) ShowUnit(options.Unit);

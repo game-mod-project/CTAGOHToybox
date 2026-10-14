@@ -27,6 +27,7 @@ namespace CtaToybox.Core
 
         public Edit AddEdit(UnitView unit, ValueView value, string newText, string scope)
         {
+            NeedProject();
             string warning;
             string error = ValidateNew(unit, value, newText, scope, out warning);
             if (error != null) throw new ArgumentException(error);
@@ -34,32 +35,50 @@ namespace CtaToybox.Core
             var existing = Project.Edits.FirstOrDefault(e => e.Scope == scope && SameSlot(e, t) && (scope != "unit" || SourceStack.ToVirtual(e.Unit ?? "") == unit.Unit));
             if (existing != null)
             {
+                string oldNew = existing.New;
+                bool oldEnabled = existing.Enabled;
                 existing.New = newText;
                 existing.Enabled = true;
-                Save();
+                SaveOr(() => { existing.New = oldNew; existing.Enabled = oldEnabled; });
                 return existing;
             }
             var edit = new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = newText, Scope = scope };
             Project.Edits.Add(edit);
-            Save();
+            SaveOr(() => Project.Edits.Remove(edit));
             return edit;
         }
 
-        public void RemoveEdit(Edit edit) { Project.Edits.Remove(edit); Save(); }
+        public void RemoveEdit(Edit edit)
+        {
+            NeedProject();
+            int at = Project.Edits.IndexOf(edit);
+            if (at < 0) return;
+            Project.Edits.RemoveAt(at);
+            SaveOr(() => Project.Edits.Insert(at, edit));
+        }
 
-        public void SetEnabled(Edit edit, bool enabled) { edit.Enabled = enabled; Save(); }
+        public void SetEnabled(Edit edit, bool enabled)
+        {
+            NeedProject();
+            bool before = edit.Enabled;
+            edit.Enabled = enabled;
+            SaveOr(() => edit.Enabled = before);
+        }
 
         // old를 원본의 지금 값으로 바꾼다. 자리가 없어졌으면 그대로 둔다
         public void Rebase(Edit edit)
         {
+            NeedProject();
             var check = Check(edit, new Dictionary<string, SdlNode>(StringComparer.Ordinal));
             if (check.Current == null) return;
+            string before = edit.Old;
             edit.Old = check.Current;
-            Save();
+            SaveOr(() => edit.Old = before);
         }
 
         public List<EditCheck> CheckEdits()
         {
+            if (Project == null) return new List<EditCheck>();
             var parsed = new Dictionary<string, SdlNode>(StringComparer.Ordinal);
             return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed)).ToList();
         }
@@ -91,6 +110,7 @@ namespace CtaToybox.Core
 
         public BuildReport Build()
         {
+            NeedProject();
             return new ModBuilder(Stack, Settings.OutputModDir).Build(Project);
         }
 
@@ -99,6 +119,14 @@ namespace CtaToybox.Core
             return Process.GetProcessesByName("call_to_arms").Length > 0 || Process.GetProcessesByName("call_to_arms_ed").Length > 0;
         }
 
-        void Save() { Project.Save(ProjectPath); }
+        // 처음 연 프로젝트 파일이 깨졌으면 프로젝트가 없다
+        void NeedProject() { if (Project == null) throw new InvalidOperationException("열린 프로젝트가 없다. 프로젝트를 연다."); }
+
+        // 저장하지 못하면 메모리의 변경을 되돌리고 예외를 그대로 낸다: 화면과 파일이 어긋나지 않게 한다
+        void SaveOr(Action rollback)
+        {
+            try { Project.Save(ProjectPath); }
+            catch { rollback(); throw; }
+        }
     }
 }

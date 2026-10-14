@@ -18,7 +18,10 @@ namespace CtaToybox.App
 
         public void ShowUnit(string path)
         {
-            unit = session.OpenUnit(path);
+            if (session == null) return;
+            UnitView opened = null;
+            if (!Try("유닛 열기", () => opened = session.OpenUnit(path))) return;
+            unit = opened;
             if (unit == null)
             {
                 UnitTitle.Text = "원본에 이 파일이 없다: " + path;

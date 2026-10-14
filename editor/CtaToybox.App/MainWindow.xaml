@@ -14,7 +14,7 @@
           <StackPanel Orientation="Horizontal">
             <TextBlock Text="프로젝트: "/>
             <TextBlock x:Name="ProjectText" FontWeight="Bold"/>
-            <Button Content="열기..." Margin="8,0,0,0" Padding="6,0" Click="OpenProject_Click"/>
+            <Button x:Name="OpenProjectButton" Content="열기..." Margin="8,0,0,0" Padding="6,0" IsEnabled="False" Click="OpenProject_Click"/>
             <TextBlock Text="    원본: "/>
             <TextBlock x:Name="SourcesText"/>
           </StackPanel>

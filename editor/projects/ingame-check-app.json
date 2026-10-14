@@ -1,0 +1,27 @@
+{
+  "name": "ingame-check-app",
+  "edits": [
+    {
+      "unit": "set/stuff/smg/thompson_m1928a1_50",
+      "file": "set/stuff/smg/thompson_m1928a1_50",
+      "path": "/from/(\"fire rate\")",
+      "occurrence": 0,
+      "arg": 0,
+      "old": "830",
+      "new": "60",
+      "scope": "shared",
+      "enabled": true
+    },
+    {
+      "unit": "set/stuff/mgun/mgun_usa.belt.ammo",
+      "file": "set/stuff/mgun/mgun_usa.belt.ammo",
+      "path": "/bullet/inventory/block",
+      "occurrence": 0,
+      "arg": 0,
+      "old": "250",
+      "new": "100",
+      "scope": "shared",
+      "enabled": true
+    }
+  ]
+}

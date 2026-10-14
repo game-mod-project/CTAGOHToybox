@@ -10,6 +10,12 @@ namespace CtaToybox.App
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            // 마지막 안전망: 처리하지 못한 예외로 창이 닫히지 않게 이유를 보인다. 원인은 그 자리에서 고친다
+            DispatcherUnhandledException += (s, ex) =>
+            {
+                MessageBox.Show("예상하지 못한 오류: " + ex.Exception.GetType().Name + ": " + ex.Exception.Message, "CTAToybox");
+                ex.Handled = true;
+            };
             AppOptions options;
             try { options = AppOptions.Parse(e.Args); }
             catch (ArgumentException ex) { MessageBox.Show(ex.Message, "CTAToybox"); Shutdown(2); return; }

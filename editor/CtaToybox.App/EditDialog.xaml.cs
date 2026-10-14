@@ -58,13 +58,16 @@ namespace CtaToybox.App
         void Ok_Click(object sender, RoutedEventArgs e)
         {
             try { session.AddEdit(unit, value, NewBox.Text.Trim(), Scope); }
-            catch (ArgumentException ex) { MessageText.Text = ex.Message; return; }
+            catch (Exception ex) when (ex is ArgumentException || ex is InvalidOperationException || ex is System.IO.IOException || ex is UnauthorizedAccessException)
+            { MessageText.Text = ex.Message; MessageText.Foreground = System.Windows.Media.Brushes.Firebrick; return; }
             DialogResult = true;
         }
 
         void Remove_Click(object sender, RoutedEventArgs e)
         {
-            session.RemoveEdit(value.Edit);
+            try { session.RemoveEdit(value.Edit); }
+            catch (Exception ex) when (ex is InvalidOperationException || ex is System.IO.IOException || ex is UnauthorizedAccessException)
+            { MessageText.Text = ex.Message; MessageText.Foreground = System.Windows.Media.Brushes.Firebrick; return; }
             DialogResult = true;
         }
     }
