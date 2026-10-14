@@ -27,6 +27,7 @@ namespace CtaToybox.App
             this.options = options;
             SummaryList.View = (GridView)FindResource("RowColumns");
             FullList.View = (GridView)FindResource("RowColumns");
+            RosterList.View = (GridView)FindResource("RowColumns");
             Loaded += async (s, e) => await LoadSession();
             Closed += (s, e) => { if (session != null) session.Dispose(); };
         }
@@ -87,7 +88,7 @@ namespace CtaToybox.App
                     if (line.Trim().Length == 0 || line.StartsWith("#")) continue;
                     string[] p = (line + "||||").Split('|');
                     if (p[1].Length > 0) ShowUnit(p[1]);
-                    Tabs.SelectedItem = p[2] == "full" ? FullTab : p[2] == "items" ? ItemsTab : SummaryTab;
+                    Tabs.SelectedItem = p[2] == "full" ? FullTab : p[2] == "items" ? ItemsTab : p[2] == "roster" ? RosterTab : SummaryTab;
                     FullFilter.Text = p[3];
                     await Shoot(p[4].Length == 0 ? null : p[4], Path.Combine(options.Out ?? Path.GetDirectoryName(options.Shots), p[0] + ".png"));
                 }

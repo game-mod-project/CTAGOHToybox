@@ -13,6 +13,7 @@ namespace CtaToybox.Core
         public int SharedBy { get; set; }             // 그 파일을 읽는 유닛 수
         public string UnitScopeBlocker { get; set; }  // "이 유닛만"이 안 되는 이유. 되면 null
         public Edit Edit { get; set; }                // 이 자리에 걸린 수정
+        public string Name { get; set; }              // 값을 감싼 호출의 이름(cp(40)이면 cp). 화면에 값 이름으로 보인다. 없으면 null
         public bool Editable { get { return Trace.Arg >= 0; } }
     }
 
@@ -26,6 +27,7 @@ namespace CtaToybox.Core
         public string SummaryLabel { get; set; }      // 요약 탭의 이름. 요약에 없으면 null
         public string Context { get; set; }           // 같은 키가 여러 번 나올 때 어느 것인지: 가장 가까운 이름 있는 상위 블록(볼륨, 부품, 무장 자리 등)의 이름
         public bool IsMacroCall { get; set; }         // 파일 안의 매크로 호출 줄. 계산에 쓰여 펼친 값으로는 못 고치는 인자를 여기서 고친다
+        public string RosterEntry { get; set; }       // 가격·로스터 줄이면 '파일 · 항목 이름'. 유닛의 줄이면 null
         public int Repeats { get; set; } = 1;         // 같은 줄이 펼친 트리에 나온 횟수(CollapseRepeats가 하나로 모은 수)
         public List<ValueView> Values { get; } = new List<ValueView>();
     }
@@ -41,6 +43,7 @@ namespace CtaToybox.Core
         public List<string> Unresolved { get; set; }
         public List<ItemLink> Items { get; set; }
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
+        public List<RowView> Roster { get; } = new List<RowView>();   // 가격·로스터 파일에서 이 유닛의 항목 줄
     }
 
     public sealed partial class EditorSession : IDisposable
@@ -51,6 +54,7 @@ namespace CtaToybox.Core
         public UnitIndex Index { get; private set; }
         public DisplayNames Names { get; private set; }
         public ItemLinks Items { get; private set; }
+        public RosterLinks Roster { get; private set; }
         public EditProject Project { get; private set; }
         public string ProjectPath { get; private set; }
 
@@ -80,6 +84,8 @@ namespace CtaToybox.Core
             s.Names = DisplayNames.FromGame(s.Settings, s.Plan);
             foreach (var layer in s.Plan.Layers) s.layerLabels[layer.Name] = layer.Name == "vanilla" ? "바닐라" : ModName(layer) ?? layer.Name;
             s.Items = ItemLinks.Build(s.Stack.Paths);
+            say("가격·로스터 파일을 읽는 중");
+            s.Roster = RosterLinks.Build(s.Stack.Paths, s.Stack.ReadText);
             s.annotationDir = Path.Combine(repoRoot, "data", "annotations");
             s.summaryDir = Path.Combine(repoRoot, "editor", "summary");
             s.tracer = new UnitTracer(s.Stack);
@@ -166,8 +172,56 @@ namespace CtaToybox.Core
             }
             AddMacroCalls(view, traced, n, summary);
             CollapseRepeats(view.Rows);
+            AddRoster(view);
             RefreshEdits(view);
             return view;
+        }
+
+        static readonly KeyNote RosterMacroNote = new KeyNote
+        {
+            Grade = "확인",
+            Meaning = "등록 줄의 매크로 인자. set/multiplayer/units/settings.set이 cost는 {cost}(인력 MP 비용), cp는 {cp}, cw는 {cw}, cd는 {charge {delay}}(처음 지연), ci는 {charge {interval}}(간격)으로 넣는다. crewN(이름:수)는 탑승 breed와 인원이다. 보병의 cost·CP는 분대에 든 사람만큼 더해 분대 값이 된다(inf_*.set 주석). cp·cw의 뜻을 적은 주석은 없다(미확인)",
+            Source = "게임 파일 주석",
+        };
+        static readonly KeyNote RosterCostNote = new KeyNote
+        {
+            Grade = "확인",
+            Meaning = "인력(MP) 비용. 분대는 MP 비용이 0이고 든 병사 cost의 합으로 값이 정해진다(units_*.set 주석)",
+            Source = "게임 파일 주석",
+        };
+        static readonly KeyNote RosterNameNote = new KeyNote
+        {
+            Grade = "확인",
+            Meaning = "로스터 항목. 첫 값이 이 유닛의 이름이다. 연구 트리(unit_research_*)에서는 requires 뒤가 먼저 연구할 항목, costs 뒤가 연구 비용, position 뒤가 트리의 자리다",
+            Source = "게임 파일 구조",
+        };
+
+        // 가격·로스터 파일에서 이 유닛의 항목 줄. 원본 파일 그대로의 줄이라 '전부'로만 고친다(그 파일은 유닛이 읽는 파일이 아니다)
+        void AddRoster(UnitView view)
+        {
+            var n = NotesFor("set/multiplayer/units/x.set");
+            foreach (var entry in Roster.EntriesOf(view.Unit))
+            {
+                string group = entry.File + " · " + entry.Name;
+                for (int r = 0; r < entry.Rows.Count; r++)
+                {
+                    var row = entry.Rows[r];
+                    if (row.Leaves.Count == 0) continue;
+                    var note = n.Find(row.Path, row.Form, true) ?? (row.Form == "macro" ? RosterMacroNote : r == 0 ? RosterNameNote : row.Path.EndsWith("/cost", StringComparison.Ordinal) ? RosterCostNote : null);
+                    var rv = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Note = note, RosterEntry = group, IsMacroCall = row.Form == "macro" };
+                    for (int i = 0; i < row.Leaves.Count; i++)
+                    {
+                        var leaf = row.Leaves[i];
+                        var t = new TraceValue { Text = leaf.Text, File = entry.File, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
+                        // 항목 이름을 바꾸면 유닛과 이어지지 않는다. 호출 밖의 따옴표 없는 낱말(requires, costs 같은 열쇠말)도 고치지 않는다
+                        if (r == 0 && i == 0) { t.Arg = -1; t.Note = "항목 이름이다. 바꾸면 유닛과 이어지지 않는다"; }
+                        else if (row.LeafNames[i] == null && leaf.Kind == "atom" && !SdlCore.IsNumber(leaf.Text)) { t.Arg = -1; t.Note = "열쇠말이다(" + leaf.Text + ")"; }
+                        rv.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = 1,
+                            UnitScopeBlocker = "가격·로스터 파일은 유닛이 읽는 파일이 아니다. 이 항목만 바뀐다" });
+                    }
+                    view.Roster.Add(rv);
+                }
+            }
         }
 
         // 같은 줄을 하나로 모은다. 매크로 인자 하나가 여러 곳에 펼쳐지면(예: 탄종마다 같은 사거리 표) 같은 원본 자리를 가리키는 줄이 여러 번 나온다.
@@ -246,7 +300,7 @@ namespace CtaToybox.Core
         // 화면의 유닛에 걸린 수정을 다시 잇는다(수정을 더하거나 지운 뒤)
         public void RefreshEdits(UnitView view)
         {
-            foreach (var row in view.Rows)
+            foreach (var row in view.Rows.Concat(view.Roster))
                 foreach (var v in row.Values) v.Edit = v.Editable ? EditFor(view, v) : null;
         }
 

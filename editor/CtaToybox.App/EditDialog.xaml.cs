@@ -37,7 +37,7 @@ namespace CtaToybox.App
                 var line = new DockPanel { Margin = new Thickness(0, 3, 0, 3) };
                 var caption = new StackPanel { Width = 280 };
                 caption.Children.Add(new TextBlock { TextWrapping = TextWrapping.Wrap,
-                    Text = (row.Values.Count > 1 ? "값 " + (i + 1) + "  " : "") + "원래 " + Text.Value(v.Trace.Text) +
+                    Text = (row.Values.Count > 1 ? "값 " + (i + 1) + (v.Name == null ? "" : " (" + v.Name + ")") + "  " : "") + "원래 " + Text.Value(v.Trace.Text) +
                            (v.Edit == null ? "" : "  (수정됨: " + Text.Value(v.Edit.New) + ", " + (v.Edit.Scope == "unit" ? "이 유닛만" : "전부") + ")") });
                 if (v.Editable && files.Count > 1)
                     caption.Children.Add(new TextBlock { Foreground = Brushes.Gray, FontSize = 12, TextWrapping = TextWrapping.Wrap,

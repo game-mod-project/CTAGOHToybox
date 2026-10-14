@@ -80,6 +80,22 @@ namespace CtaToybox.App
             return Note(row.Note);
         }
 
+        // 줄의 지금 값. 호출 안의 값은 원문처럼 이름(값 값)으로 묶는다: side(ger) lvl(lvl1 lvl2) cost(10.0)
+        public static string ValuesLine(RowView row)
+        {
+            var parts = new System.Collections.Generic.List<string>();
+            for (int i = 0; i < row.Values.Count; i++)
+            {
+                string name = row.Values[i].Name;
+                if (name == null) { parts.Add(Value(row.Values[i].Trace.Text)); continue; }
+                var group = new System.Collections.Generic.List<string>();
+                for (; i < row.Values.Count && row.Values[i].Name == name; i++) group.Add(Value(row.Values[i].Trace.Text));
+                i--;
+                parts.Add(name + "(" + string.Join(" ", group) + ")");
+            }
+            return string.Join("  ", parts);
+        }
+
         // 줄의 부위와, 같은 줄을 모았으면 그 수. 둘 다 없으면 null
         public static string ContextLine(string context, int repeats)
         {

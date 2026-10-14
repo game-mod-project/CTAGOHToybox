@@ -158,6 +158,15 @@
               </ListView>
             </DockPanel>
           </TabItem>
+          <TabItem x:Name="RosterTab" Header="가격·로스터">
+            <DockPanel>
+              <TextBlock x:Name="RosterHelp" DockPanel.Dock="Top" TextWrapping="Wrap" Foreground="#666666" Margin="0,4,0,6"
+                         Text="콘퀘스트·배틀존 등록 파일(set/multiplayer/units)과 연구 트리(set/dynamic_campaign/unit_research_*)에서 이름이 이 유닛과 같은 항목. 고치면 그 항목만 바뀐다. 묶음 머리가 파일과 항목 이름이다."/>
+              <ListView x:Name="RosterList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource FullGroup}"/></ListView.GroupStyle>
+              </ListView>
+            </DockPanel>
+          </TabItem>
           <TabItem x:Name="ItemsTab" Header="무기·탄약">
             <DockPanel>
               <TextBlock DockPanel.Dock="Top" TextWrapping="Wrap" Foreground="#666666" Margin="0,4,0,6"
