@@ -81,6 +81,7 @@ static class Program
             ("IncludeChain", IncludeChainTests.Run),
             ("UnitTracer", UnitTracerTests.Run),
             ("KeyAnnotations", KeyAnnotationsTests.Run),
+            ("ItemLinks", ItemLinksTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),
