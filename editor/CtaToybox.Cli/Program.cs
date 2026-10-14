@@ -267,6 +267,19 @@ namespace CtaToybox.Cli
                 }
 
                 var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
+                // 같은 자리·같은 범위의 수정이 있으면 값만 바꾼다(앱의 EditorSession.AddEdit과 같다). '이 유닛만'은 유닛까지 같아야 같은 수정이다
+                var existing = project.Edits.FirstOrDefault(e => e.Scope == scope
+                    && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)
+                    && string.Equals(e.Path, keyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == occ && e.Arg == arg
+                    && (scope != "unit" || SourceStack.ToVirtual(e.Unit ?? "") == unit));
+                if (existing != null)
+                {
+                    string before = existing.New;
+                    existing.New = newValue; existing.Enabled = true;
+                    project.Save(projectPath);
+                    output.WriteLine("수정을 바꿨다: " + file.VirtualPath + " " + keyPath + " " + node.Text + " → " + newValue + " (전에는 → " + before + ")");
+                    return 0;
+                }
                 project.Edits.Add(new Edit
                 {
                     Unit = unit, File = file.VirtualPath, Path = keyPath.ToLowerInvariant(), Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Scope = scope
