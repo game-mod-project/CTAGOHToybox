@@ -15,51 +15,42 @@ namespace CtaToybox.App
         void OpenProjectFile(string path)
         {
             try { session.OpenProject(path); }
-            catch (InvalidDataException ex) { MessageBox.Show(ex.Message, "프로젝트"); }
+            catch (InvalidDataException ex) { MessageBox.Show(this, ex.Message, "프로젝트"); }
             BuildButton.IsEnabled = session.Project != null;
-            ProjectText.Text = session.Project == null ? "(없음. 위의 열기...로 연다)" : session.Project.Name + "  (" + session.ProjectPath + ")";
+            ProjectText.Text = session.Project == null ? "(없음. 오른쪽 단추로 연다)" : session.Project.Name;
+            ProjectText.ToolTip = session.ProjectPath;
             RefreshEdits();
             RefreshUnitViews();
         }
 
         public void RefreshEdits()
         {
-            if (session == null || session.Project == null) return;
+            if (session == null || session.Project == null) { EditList.ItemsSource = null; EditCountText.Text = ""; return; }
             var checks = session.CheckEdits().ToDictionary(c => c.Edit);
             var items = session.Project.Edits.Select(e =>
             {
                 EditCheck c;
                 checks.TryGetValue(e, out c);
-                string status = !e.Enabled ? "" : c == null ? "" : c.Status == EditStatus.Applied ? "" :
-                    (c.Status == EditStatus.SourceChanged ? "원본이 바뀜: 지금 " + c.Current : c.Status == EditStatus.TargetMissing ? "대상 없음: " + c.Message : "적용 불가: " + c.Message);
+                string status = !e.Enabled || c == null || c.Status == EditStatus.Applied ? "" :
+                    c.Status == EditStatus.SourceChanged ? "원본이 바뀜: 지금 원본 값은 " + Text.Value(c.Current) + ". '원본의 지금 값에 맞추기'나 '삭제'를 고른다" :
+                    Text.Status(c.Status) + ": " + c.Message;
+                string unitPath = SourceStack.ToVirtual(e.Unit ?? e.File ?? "");
                 return new EditItem
                 {
                     Edit = e, Enabled = e.Enabled,
-                    Title = e.Path + " [" + e.Occurrence + "] 값 " + e.Arg + ":  " + e.Old + " → " + e.New,
-                    Detail = (e.Scope == "unit" ? "이 유닛만" : "전부(유닛 " + session.Index.UsersOf(e.File).Count + "개)") + "  ·  " + e.File,
+                    Group = Text.UnitName(session, unitPath) + "   (" + unitPath.Substring(unitPath.LastIndexOf('/') + 1) + ")",
+                    Title = KeyLabel.Readable(e.Path) + (c != null && c.RowText != null && c.RowText != e.Old ? "  [" + c.RowText.Replace("\"", "") + "]" : "") +
+                            (e.Arg > 0 ? " 값 " + (e.Arg + 1) : "") + ":  " + Text.Value(e.Old) + " → " + Text.Value(e.New),
+                    Detail = (e.Scope == "unit" ? "이 유닛만" : "전부 (유닛 " + session.Index.UsersOf(e.File).Count + "개가 바뀐다)") + " · " + e.File.Substring(e.File.LastIndexOf('/') + 1) + (e.Enabled ? "" : " · 꺼짐"),
                     Status = status,
                 };
             }).ToList();
             var view = new ListCollectionView(items);
-            view.GroupDescriptions.Add(new PropertyGroupDescription(null, new UnitGroupConverter(session)));
+            view.GroupDescriptions.Add(new PropertyGroupDescription("Group"));
             EditList.ItemsSource = view;
             int problems = items.Count(i => i.Status.Length > 0);
-            EditCountText.Text = "수정 " + items.Count + "건" + (problems > 0 ? ", 문제 " + problems + "건" : "");
-        }
-
-        // 수정 목록을 유닛별로 묶는다
-        sealed class UnitGroupConverter : IValueConverter
-        {
-            readonly EditorSession session;
-            public UnitGroupConverter(EditorSession session) { this.session = session; }
-            public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
-            {
-                var e = ((EditItem)value).Edit;
-                string unit = SourceStack.ToVirtual(e.Unit ?? "");
-                string name = session.Names.OfUnit(unit);
-                return (name == null ? "" : name + "  ") + unit;
-            }
-            public object ConvertBack(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture) { throw new NotSupportedException(); }
+            EditCountText.Text = "수정 " + items.Count + "건" + (problems > 0 ? " · 문제 " + problems + "건" : "");
+            EditHelp.Visibility = Visibility.Visible;
         }
 
         EditItem SelectedEdit { get { return EditList.SelectedItem as EditItem; } }
@@ -75,7 +66,7 @@ namespace CtaToybox.App
         void RemoveEdit_Click(object sender, RoutedEventArgs e)
         {
             var item = SelectedEdit;
-            if (item == null) return;
+            if (item == null) { MessageBox.Show(this, "수정 목록에서 지울 수정을 먼저 고른다.", "삭제"); return; }
             Try("수정 삭제", () => session.RemoveEdit(item.Edit));
             RefreshEdits();
             RefreshUnitViews();
@@ -84,8 +75,8 @@ namespace CtaToybox.App
         void RebaseEdit_Click(object sender, RoutedEventArgs e)
         {
             var item = SelectedEdit;
-            if (item == null) return;
-            Try("지금 값에 맞추기", () => session.Rebase(item.Edit));
+            if (item == null) { MessageBox.Show(this, "수정 목록에서 '원본이 바뀜'인 수정을 먼저 고른다.", "원본의 지금 값에 맞추기"); return; }
+            Try("원본의 지금 값에 맞추기", () => session.Rebase(item.Edit));
             RefreshEdits();
         }
 
@@ -99,28 +90,31 @@ namespace CtaToybox.App
         {
             if (session == null) return;
             string dir = session.ProjectPath != null ? Path.GetDirectoryName(Path.GetFullPath(session.ProjectPath)) : Path.Combine(options.Repo, "editor", "projects");
-            var dialog = new OpenFileDialog { Filter = "프로젝트 (*.json)|*.json", CheckFileExists = false, InitialDirectory = Directory.Exists(dir) ? dir : options.Repo };
+            var dialog = new OpenFileDialog { Filter = "프로젝트 (*.json)|*.json", CheckFileExists = false, InitialDirectory = Directory.Exists(dir) ? dir : options.Repo, Title = "프로젝트 열기 (없는 이름을 쓰면 새로 만든다)" };
             if (dialog.ShowDialog(this) == true) OpenProjectFile(dialog.FileName);
         }
 
         void Build_Click(object sender, RoutedEventArgs e)
         {
-            if (EditorSession.GameRunning() &&
-                MessageBox.Show("게임이나 에디터가 실행 중이다. 빌드해도 다시 시작해야 반영된다. 계속할까?", "빌드", MessageBoxButton.YesNo) != MessageBoxResult.Yes) return;
             if (session == null || session.Project == null) return;
+            if (EditorSession.GameRunning() &&
+                MessageBox.Show(this, "게임이나 에디터가 실행 중이다. 빌드해도 게임을 다시 시작해야 반영된다. 계속할까?", "빌드", MessageBoxButton.YesNo) != MessageBoxResult.Yes) return;
             BuildReport report = null;
             if (!Try("빌드", () => report = session.Build())) return;
             var lines = new System.Collections.Generic.List<string>
             {
                 "적용 " + report.Count(EditStatus.Applied) + "건, 원본이 바뀜 " + report.Count(EditStatus.SourceChanged) + "건, 대상 없음 " +
                 report.Count(EditStatus.TargetMissing) + "건, 적용 불가 " + report.Count(EditStatus.Invalid) + "건, 파일 오류 " + report.FileErrors.Count + "건",
+                "모드 폴더에 쓴 파일 " + report.WrittenFiles.Count + "개, 지운 파일 " + report.RemovedFiles.Count + "개",
             };
             lines.AddRange(session.Plan.Warnings.Select(w => "경고: " + w));
             lines.AddRange(report.Warnings.Select(w => "경고: " + w));
             lines.AddRange(report.FileErrors.Select(x => "오류: " + x));
-            lines.AddRange(report.Results.Where(r => r.Status != EditStatus.Applied).Take(20).Select(r => r.Status + ": " + r.Edit.File + " " + r.Edit.Path + (r.Message == null ? "" : " : " + r.Message)));
-            lines.Add("씀 " + report.WrittenFiles.Count + "개, 지움 " + report.RemovedFiles.Count + "개");
-            MessageBox.Show(string.Join("\n", lines), "빌드 결과");
+            lines.AddRange(report.Results.Where(r => r.Status != EditStatus.Applied).Take(20).Select(r =>
+                Text.Status(r.Status) + ": " + KeyLabel.Readable(r.Edit.Path) + " (" + r.Edit.File + ")" + (r.Message == null ? "" : " — " + r.Message)));
+            lines.Add("");
+            lines.Add("게임을 다시 시작하면 반영된다.");
+            MessageBox.Show(this, string.Join("\n", lines), "빌드 결과");
             RefreshEdits();
         }
     }

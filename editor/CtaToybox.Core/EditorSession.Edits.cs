@@ -12,6 +12,7 @@ namespace CtaToybox.Core
         public EditStatus Status { get; set; }   // Applied는 "지금 원본에 적용할 수 있다"는 뜻이다
         public string Current { get; set; }      // 원본의 지금 값. 자리가 없으면 null
         public string Message { get; set; }
+        public string RowText { get; set; }      // 그 줄의 원본 값 전체(예: "mine m1a1" 24). 화면이 어느 줄인지 보이는 데 쓴다
     }
 
     public sealed partial class EditorSession
@@ -46,6 +47,55 @@ namespace CtaToybox.Core
             Project.Edits.Add(edit);
             SaveOr(() => Project.Edits.Remove(edit));
             return edit;
+        }
+
+        // 화면의 한 줄(값 여러 개)을 한 번에 고친다. newTexts는 줄의 값 순서대로 새 토큰이다(고칠 수 없는 값의 자리와 null은 건너뛴다).
+        // 고른 범위의 수정만 만들고 바꾸고 지운다: '이 유닛만'을 고르면 다른 유닛 화면에서 만든 '전부' 수정은 건드리지 않는다.
+        // '전부'를 고르면 이 유닛의 '이 유닛만' 수정은 지운다(남아 있으면 이 유닛에서는 '전부' 값이 보이지 않는다).
+        // 값을 원래 값으로 돌리면 그 범위의 수정을 지운다. 모두 검사한 뒤 바꾸고 한 번 저장한다. 저장이 실패하면 모두 되돌린다
+        public void ApplyRow(UnitView unit, RowView row, IList<string> newTexts, string scope)
+        {
+            NeedProject();
+            if (newTexts.Count != row.Values.Count) throw new ArgumentException("값의 수가 줄과 다르다");
+            var plan = new List<KeyValuePair<ValueView, string>>();
+            for (int i = 0; i < row.Values.Count; i++)
+            {
+                var v = row.Values[i];
+                if (!v.Editable || newTexts[i] == null) continue;
+                if (newTexts[i] != v.Trace.Text)
+                {
+                    string warning;
+                    string error = ValidateNew(unit, v, newTexts[i], scope, out warning);
+                    if (error != null) throw new ArgumentException(error);
+                }
+                plan.Add(new KeyValuePair<ValueView, string>(v, newTexts[i]));
+            }
+
+            var objects = Project.Edits.ToList();
+            var states = objects.Select(e => new { e, e.New, e.Enabled, e.Old }).ToList();
+            try
+            {
+                foreach (var p in plan)
+                {
+                    var t = p.Key.Trace;
+                    string token = p.Value;
+                    var mine = Project.Edits.FirstOrDefault(e => e.Scope == "unit" && SourceStack.ToVirtual(e.Unit ?? "") == unit.Unit && SameSlot(e, t));
+                    var shared = Project.Edits.FirstOrDefault(e => e.Scope != "unit" && SameSlot(e, t));
+                    var target = scope == "unit" ? mine : shared;
+                    if (scope != "unit" && mine != null) Project.Edits.Remove(mine);
+                    if (token == t.Text) { if (target != null) Project.Edits.Remove(target); continue; }
+                    if (target != null) { target.New = token; target.Enabled = true; continue; }
+                    Project.Edits.Add(new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = token, Scope = scope == "unit" ? "unit" : "shared" });
+                }
+                Project.Save(ProjectPath);
+            }
+            catch
+            {
+                Project.Edits.Clear();
+                Project.Edits.AddRange(objects);
+                foreach (var s in states) { s.e.New = s.New; s.e.Enabled = s.Enabled; s.e.Old = s.Old; }
+                throw;
+            }
         }
 
         public void RemoveEdit(Edit edit)
@@ -95,17 +145,19 @@ namespace CtaToybox.Core
                 parsed[file] = root;
             }
             if (root == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 파싱되지 않는다: " + file };
-            var node = KeyLocator.Find(root, e.Path, e.Occurrence, e.Arg);
+            var row = KeyLocator.Rows(root).FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            var node = row != null && e.Arg >= 0 && e.Arg < row.Leaves.Count ? row.Leaves[e.Arg] : null;
             if (node == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 자리가 없다" };
-            if (node.Text != e.Old) return new EditCheck { Edit = e, Status = EditStatus.SourceChanged, Current = node.Text, Message = "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text };
+            string rowText = string.Join(" ", row.Leaves.Select(l => l.Text));
+            if (node.Text != e.Old) return new EditCheck { Edit = e, Status = EditStatus.SourceChanged, Current = node.Text, RowText = rowText, Message = "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text };
             if (e.Scope == "unit")
             {
                 string unit = SourceStack.ToVirtual(e.Unit ?? "");
-                if (Stack.Find(unit) == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Current = node.Text, Message = "원본에 이 유닛이 없다: " + unit };
+                if (Stack.Find(unit) == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Current = node.Text, RowText = rowText, Message = "원본에 이 유닛이 없다: " + unit };
                 string blocker = IncludeChain.UnitScopeBlocker(new SdlResolver(Stack.ReadText).Resolve(unit).IncludeEdges, unit, file, e.Path);
-                if (blocker != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, Message = blocker };
+                if (blocker != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = blocker };
             }
-            return new EditCheck { Edit = e, Status = EditStatus.Applied, Current = node.Text };
+            return new EditCheck { Edit = e, Status = EditStatus.Applied, Current = node.Text, RowText = rowText };
         }
 
         public BuildReport Build()

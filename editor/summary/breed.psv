@@ -1,0 +1,11 @@
+# 보병 요약 탭에 올리는 키. 형식과 규칙은 vehicle.psv와 같다.
+**/inventory/item|소지품 (이름, 수량)
+**/inventory/in_hands|손에 드는 소지품 순번
+/breed/skin|외형
+**/armors/head|머리 장구
+/breed/perks/"*"|기술과 수준
+**/perks/mechanic|수리 능력
+/breed/veterancy/"*"|숙련도 단계
+/breed/nationality|국적
+/breed/behaviour|행동 유형
+/breed/tags|분류 태그

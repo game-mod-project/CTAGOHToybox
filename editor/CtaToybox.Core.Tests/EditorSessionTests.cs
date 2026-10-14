@@ -18,6 +18,8 @@ static class EditorSessionTests
         T.Zip(Path.Combine(game, "resource", "gamelogic.pak"),
             ("set/stuff/smg/gun_a", "{filling \"ammo gun_a_mag\" 30}"),
             ("set/stuff/smg/gun_a_mag.ammo", "{bullet {mass 0.02}}"));
+        // 표시 이름은 게임의 현지화에서 읽는다
+        T.Zip(Path.Combine(game, "localizations", "default.pak"), ("default/interface/text/desc/v.pot", "msgctxt \"desc/entity/a\"\nmsgid \"Tank A\"\nmsgstr \"\"\n"));
         Directory.CreateDirectory(Path.Combine(repo, "data", "annotations"));
         File.WriteAllText(Path.Combine(repo, "data", "annotations", "common.psv"),
             "*/mass|block|확인|무게. 킬로그램|C\n**/box/item|block|추정|적재품 한 칸|S\n");

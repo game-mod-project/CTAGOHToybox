@@ -86,6 +86,8 @@ static class Program
             ("EditorSession", EditorSessionTests.Run),
             ("EditorSessionEdit", EditorSessionEditTests.Run),
             ("ReviewFix", ReviewFixTests.Run),
+            ("Usability", UsabilityTests.Run),
+            ("UsabilityReview", UsabilityReviewTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),

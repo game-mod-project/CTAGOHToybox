@@ -23,6 +23,8 @@ namespace CtaToybox.Core
         public string Form { get; set; }
         public KeyNote Note { get; set; }             // 키 설명. 없으면 null
         public string SummaryLabel { get; set; }      // 요약 탭의 이름. 요약에 없으면 null
+        public string Context { get; set; }           // 같은 키가 여러 번 나올 때 어느 것인지: 가장 가까운 이름 있는 상위 블록(볼륨, 부품, 무장 자리 등)의 이름
+        public bool IsMacroCall { get; set; }         // 파일 안의 매크로 호출 줄. 계산에 쓰여 펼친 값으로는 못 고치는 인자를 여기서 고친다
         public List<ValueView> Values { get; } = new List<ValueView>();
     }
 
@@ -50,6 +52,7 @@ namespace CtaToybox.Core
         public string ProjectPath { get; private set; }
 
         string annotationDir, summaryDir;
+        readonly Dictionary<string, string> layerLabels = new Dictionary<string, string>(StringComparer.Ordinal);
         UnitTracer tracer;
         readonly Dictionary<string, KeyAnnotations> notes = new Dictionary<string, KeyAnnotations>(StringComparer.Ordinal);
         readonly Dictionary<string, SummaryKeys> summaries = new Dictionary<string, SummaryKeys>(StringComparer.Ordinal);
@@ -70,7 +73,9 @@ namespace CtaToybox.Core
             bool rebuilt;
             s.Index = UnitIndex.LoadOrBuild(s.Stack, cache, (done, total) => say("유닛 색인을 만드는 중: " + done + "/" + total), out rebuilt);
             if (rebuilt) say("유닛 색인을 새로 만들었다: " + s.Index.Units.Count + "개");
-            s.Names = DisplayNames.Load(Path.Combine(repoRoot, "data", "display-names.csv"));
+            say("게임 현지화에서 이름을 읽는 중");
+            s.Names = DisplayNames.FromGame(s.Settings, s.Plan);
+            foreach (var layer in s.Plan.Layers) s.layerLabels[layer.Name] = layer.Name == "vanilla" ? "바닐라" : ModName(layer) ?? layer.Name;
             s.Items = ItemLinks.Build(s.Stack.Paths);
             s.annotationDir = Path.Combine(repoRoot, "data", "annotations");
             s.summaryDir = Path.Combine(repoRoot, "editor", "summary");
@@ -81,7 +86,27 @@ namespace CtaToybox.Core
 
         public IEnumerable<UnitEntry> Search(string text, string kind, string layer)
         {
-            return Index.Search(text, kind, layer, Names);
+            // 이름 있는 유닛을 먼저, 이름순으로. 이름이 없으면 경로순
+            return Index.Search(text, kind, layer, Names)
+                .Select(u => new { u, name = Names.OfUnit(u.Path) })
+                .OrderBy(x => x.name == null ? 1 : 0).ThenBy(x => x.name, StringComparer.OrdinalIgnoreCase).ThenBy(x => x.u.Path, StringComparer.Ordinal)
+                .Select(x => x.u);
+        }
+
+        // 계층의 화면 이름: 바닐라, 또는 모드 폴더의 mod.info에 적힌 이름
+        public string LayerLabel(string layer)
+        {
+            string label;
+            return layerLabels.TryGetValue(layer, out label) ? label : layer;
+        }
+
+        static string ModName(SourceLayer layer)
+        {
+            string info = Path.Combine(Path.GetDirectoryName(Path.GetFullPath(layer.ResourceDir)), "mod.info");
+            if (!File.Exists(info)) return null;
+            var rows = SdlCore.KeyRows(SdlCore.Parse(File.ReadAllText(info)).Root.Children, new string[0]);
+            var name = rows.FirstOrDefault(r => r.Path == "/mod/name" && r.ArgNodes.Count > 0);
+            return name == null ? null : name.ArgNodes[0].Text.Trim('"');
         }
 
         KeyAnnotations NotesFor(string unit)
@@ -91,6 +116,9 @@ namespace CtaToybox.Core
             if (!notes.TryGetValue(group, out n)) { n = KeyAnnotations.Load(annotationDir, group); notes[group] = n; }
             return n;
         }
+
+        // 화면이 요약 묶음의 순서를 정할 때 쓴다
+        public SummaryKeys SummaryOf(UnitView unit) { return SummaryFor(unit.Kind, NotesFor(unit.Unit)); }
 
         SummaryKeys SummaryFor(string kind, KeyAnnotations n)
         {
@@ -116,7 +144,7 @@ namespace CtaToybox.Core
             };
             foreach (var row in traced.Rows)
             {
-                var r = new RowView { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
+                var r = new RowView { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
                 foreach (var v in row.Values)
                 {
                     var vv = new ValueView { Trace = v };
@@ -129,8 +157,37 @@ namespace CtaToybox.Core
                 }
                 view.Rows.Add(r);
             }
+            AddMacroCalls(view, traced, n, summary);
             RefreshEdits(view);
             return view;
+        }
+
+        // 유닛 파일과 include한 파일의 매크로 호출 줄. 펼친 트리에서는 호출이 본문으로 바뀌어 사라지므로 따로 보인다
+        void AddMacroCalls(UnitView view, UnitTraceResult traced, KeyAnnotations n, SummaryKeys summary)
+        {
+            var files = new List<string> { traced.Unit };
+            foreach (var e in traced.IncludeEdges) if (!files.Contains(e.ToFile)) files.Add(e.ToFile);
+            foreach (string file in files)
+            {
+                string text = Stack.ReadText(file);
+                if (text == null) continue;
+                var parsed = SdlCore.Parse(text);
+                if (parsed.Errors.Count > 0) continue;
+                foreach (var row in KeyLocator.Rows(parsed.Root))
+                {
+                    // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
+                    if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
+                    var r = new RowView { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
+                    for (int i = 0; i < row.Leaves.Count; i++)
+                    {
+                        var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
+                        // %이름은 바깥에서 받는 매개변수다. 고치면 매크로가 깨진다
+                        if (t.Text.StartsWith("%")) { t.Arg = -1; t.Note = "매개변수(" + t.Text + ")라 고칠 수 없다. 이 값을 넘기는 쪽에서 고친다"; }
+                        r.Values.Add(new ValueView { Trace = t, SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
+                    }
+                    view.Rows.Add(r);
+                }
+            }
         }
 
         // 화면의 유닛에 걸린 수정을 다시 잇는다(수정을 더하거나 지운 뒤)

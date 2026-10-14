@@ -7,6 +7,21 @@ namespace CtaToybox.Core
     {
         public static readonly string[] All = { "vehicle", "breed", "humanskin", "item-entity", "stuff", "pattern" };
 
+        // 화면에 보이는 이름
+        public static string Label(string kind)
+        {
+            switch (kind)
+            {
+                case "vehicle": return "차량";
+                case "breed": return "보병";
+                case "humanskin": return "보병 외형";
+                case "item-entity": return "아이템 모델";
+                case "stuff": return "무기·탄약·장비";
+                case "pattern": return "아이템 틀";
+                default: return "파일";
+            }
+        }
+
         // 점으로 시작하는 파일은 이름 전체, 확장자가 없으면 "(no-ext)", 그 밖에는 마지막 확장자
         static string FileKind(string virtualPath)
         {

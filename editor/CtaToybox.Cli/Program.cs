@@ -169,7 +169,8 @@ namespace CtaToybox.Cli
             {
                 if (stack == null) return 1;
                 var index = OpenIndex(stack, settingsPath, output);
-                var names = DisplayNames.Load(opt.ContainsKey("names") ? opt["names"] : Path.Combine("data", "display-names.csv"));
+                // 이름은 게임과 켜 둔 모드의 현지화에서 읽는다(앱과 같다). --names를 주면 그 CSV를 쓴다
+                var names = opt.ContainsKey("names") ? DisplayNames.Load(opt["names"]) : DisplayNames.FromGame(settings, plan);
                 var found = index.Search(opt.ContainsKey("find") ? opt["find"] : null, kind, opt.ContainsKey("layer") ? opt["layer"] : null, names).ToList();
                 foreach (var u in found.Take(limit))
                 {
