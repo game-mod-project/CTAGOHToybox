@@ -1592,9 +1592,9 @@
 | `/from/("94_eng_slope_multipliers")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/("accuracy_direct_arrowhead")` | macro | [call:r1 call:range_ap call:range_he call:range_heat]x29 | 29 | 29 | 예: r1 ( 1.05 ) range_ap ( 160 ) range_he ( 160 ) range_heat ( 160 ) | 미확인(자동) |  |  |  |
 | `/from/("accuracy_direct_auto")` | macro | [call:r1 call:range_ap call:range_he call:range_heat]x17 | 17 | 17 | r1 ( 0.8 ) range_ap ( 150 ) range_he ( 150 ) range_heat ( 150 ) ¦ r1 ( 0.55 ) range_ap ( 160 ) range_he ( 160 ) range_heat ( 160 ) ¦ r1 ( 0.7 ) range_ap ( 150 ) range_he ( 150 ) range_heat ( 150 ) ¦ r1 ( 0.80 ) range_ap ( 150 ) range_he ( 150 ) range_heat ( 150 ) ¦ r1 ( 0.58 ) range_ap ( 160 ) range_he ( 160 ) range_heat ( 160 ) ¦ r1 ( 0.50 ) range_ap ( 160 ) range_he ( 160 ) range_heat ( 160 ) | 미확인(자동) |  |  |  |
-| `/from/("accuracy_direct")` | macro | [call:r1 call:range_ap call:range_he call:range_heat]x60 | 60 | 60 | 예: r1 ( 0.55 ) range_ap ( 220 ) range_he ( 220 ) range_heat ( 220 ) | 미확인(자동) |  |  |  |
+| `/from/("accuracy_direct")` | macro | [call:r1 call:range_ap call:range_he call:range_heat]x60 | 60 | 60 | 예: r1 ( 0.55 ) range_ap ( 220 ) range_he ( 220 ) range_heat ( 220 ) | 추정 | 직사 무기의 정확도. r1 정확도 반경, range_ap·range_he·range_heat 탄종별 거리 (추정: accuracy_indirect의 같은 이름 인자 주석) | 파일 구조와 값에서 추론 |  |
 | `/from/("accuracy_hmg_tank")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/from/("accuracy_indirect")` | macro | [call:r1 call:r2 call:rmax call:range_ap call:range_heat call:range_he]x49 | 49 | 49 | 예: r1 ( 1.05 ) r2 ( 5.01 ) rmax ( 20.08 ) range_ap ( 190 ) range_heat ( 190 ) range_he ( 370 ) | 미확인(자동) |  |  |  |
+| `/from/("accuracy_indirect")` | macro | [call:r1 call:r2 call:rmax call:range_ap call:range_heat call:range_he]x49 | 49 | 49 | 예: r1 ( 1.05 ) r2 ( 5.01 ) rmax ( 20.08 ) range_ap ( 190 ) range_heat ( 190 ) range_he ( 370 ) | 확인 | 200m 넘게 쏘는 곡사 무기의 정확도. r1 직사 탄 정확도 반경, r2 곡사 정확도 반경, rmax 최대 사거리의 곡사 반경, range_ap·range_heat·range_he 이 거리 뒤로 정확도가 떨어진다(먼 거리 사격을 막는다) | 게임 파일 주석 |  |
 | `/from/("accuracy_rifle_auto")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/from/("accuracy_rifle")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/("accuracy_shotgun")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
