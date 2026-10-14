@@ -1,0 +1,21 @@
+<Window x:Class="CtaToybox.App.SettingsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CTAToybox 설정" Width="760" SizeToContent="Height" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+  <StackPanel Margin="12">
+    <TextBlock TextWrapping="Wrap" Margin="0,0,0,8">경로를 정한다. 게임 폴더, 창작마당 폴더, options.set은 읽기만 한다. 이 설정은 editor/settings.json에 저장되고 git에 넣지 않는다.</TextBlock>
+    <TextBlock Text="게임 폴더 (resource와 mods가 있는 곳)"/>
+    <TextBox x:Name="GameBox" Margin="0,2,0,8"/>
+    <TextBlock Text="창작마당 폴더 (...\steamapps\workshop\content\400750)"/>
+    <TextBox x:Name="WorkshopBox" Margin="0,2,0,8"/>
+    <TextBlock Text="프로필의 options.set"/>
+    <TextBox x:Name="OptionsBox" Margin="0,2,0,8"/>
+    <TextBlock Text="출력 모드 폴더 (mod.info가 있는 곳)"/>
+    <TextBox x:Name="OutBox" Margin="0,2,0,8"/>
+    <TextBlock x:Name="ErrorText" Foreground="#B00020" TextWrapping="Wrap"/>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,8,0,0">
+      <Button Content="저장" Width="80" IsDefault="True" Click="Save_Click"/>
+      <Button Content="취소" Width="80" Margin="8,0,0,0" IsCancel="True"/>
+    </StackPanel>
+  </StackPanel>
+</Window>
