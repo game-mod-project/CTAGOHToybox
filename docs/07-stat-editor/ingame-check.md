@@ -144,3 +144,15 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 | A | `thompson_m1928a1_50`의 `("fire rate" rpm(830))` → 60 (그대로) | 스커미시 후기 미군, 보병 단독(inf2) 버튼의 "Tank Crew"(`single_tankman`)를 산다. 그 안의 "Tank Commander [USAGF]"(`mp/usa/late/tank_commander`)가 `thompson_m1928a1_30`을 든다. 그 병사로 연사한다 | 1초에 한 발쯤으로 느린가 |
 | A' (선택) | 같음 | 스커미시 중기 소련, "SMG inf. [KA]"(`mp/rus/mid/smg_m1928`)가 든 `thompson_m1928a1_50` 자체 | 느린가. A가 그대로이고 A'가 느리면 `from`이 고친 파일을 물려받지 않는 것이다 |
 | B | `mgun_usa.belt.ammo` `block` 250 → 37, `hmgun_usa.ammo` `block` 100 → 13 | M26 Pershing 인벤토리 | ".30 cal" 탄 칸들과 ".50 cal AP M2 Rounds" 칸들의 숫자. 각각 37, 13씩 나뉘어 있는지, 아니면 4500, 450처럼 한 칸인지 |
+
+**기록** (2026-10-14, v1.067.0, 사용자 확인과 스크린샷)
+
+| 항목 | 결과 |
+|---|---|
+| A. `thompson_m1928a1_30` 연사 | 느려졌다. **`{from "다른 파일"}`로 물려받는 파일은 물려준 파일의 모드 수정을 그대로 받는다.** 물려준 파일 하나를 고치면 물려받는 파일들도 바뀐다 |
+| A'. `thompson_m1928a1_50` 연사 | 빠름(바뀌지 않음)으로 보고됨. 그러나 게임 속 이름 "SMG inf. [KA]"는 `mp/rus/mid/smg_drum`(PPSh-41 드럼)과 `mp/rus/late/smg_stick`도 쓴다. A가 느려졌으므로 고친 부모 파일은 로드됐다. A'에서 본 병사는 PPSh 병사였을 가능성이 높다(판단 못 함. 다시 볼 필요 없음) |
+| B. 탄 묶음 | .30 cal 4500, .50 cal 450이 한 칸씩 그대로 보였다. **`inventory/block`은 인벤토리 칸을 나누는 묶음 크기가 아니다.** 뜻은 미확인. 툴팁 ".30 cal AP M2 Rounds (4500) (135.0 kg)"의 이름은 `desc/ammo/mgun_usa belt`의 표시 이름이고 무게는 4500 × `mass 0.03`과 같다. 그래서 후보 이름 `ammo mgun_usa`는 `mgun_usa.belt.ammo`로 이어진다 |
+
+배운 것: 게임 안 대상을 안내할 때는 그 게임 속 이름이 한 병종·한 무기에만 쓰이는지 `data/display-names.csv`에서 먼저 센다.
+
+확인이 끝나 `ingame-check-app.json`의 수정을 모두 끄고 다시 빌드해 생성물을 지웠다.

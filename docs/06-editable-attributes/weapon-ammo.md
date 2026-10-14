@@ -345,7 +345,7 @@
 | `/bullet/##trace/view/light` | 3 | 미확인. 값 1 |  | 1 | `set/stuff/rifle/shotgun.ammo` |
 | `/bullet/##trace/view/scaley` | 0.2 | 미확인 |  | 1 | `set/stuff/rifle/shotgun.ammo` |
 | `/bullet/damage/heating` | 10 | 미확인 |  | 1 | `set/stuff/rifle/grenade/usa_grenade.wp.ammo` |
-| `/bullet/inventory/block` | 5 ~ 300 | 미확인 |  | 103 | `set/stuff/flame/flame_thrower.ammo` |
+| `/bullet/inventory/block` | 5 ~ 300 | 미확인. 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 무엇을 정하는지는 미확인 |  | 103 | `set/stuff/flame/flame_thrower.ammo` |
 | `/bullet/trace/view/light` | 1 | 미확인. 값 1 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/bullet/trace/view/scalex` | 1.5 ~ 2 | 미확인 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/bullet/trace/view/scaley` | 0.1 ~ 0.2 | 미확인 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |

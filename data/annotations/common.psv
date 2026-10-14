@@ -639,3 +639,6 @@
 */("accuracy_indirect")|macro|확인|200m 넘게 쏘는 곡사 무기의 정확도. r1 직사 탄 정확도 반경, r2 곡사 정확도 반경, rmax 최대 사거리의 곡사 반경, range_ap·range_heat·range_he 이 거리 뒤로 정확도가 떨어진다(먼 거리 사격을 막는다)|C
 */("accuracy_direct")|macro|추정|직사 무기의 정확도. r1 정확도 반경, range_ap·range_he·range_heat 탄종별 거리 (추정: accuracy_indirect의 같은 이름 인자 주석)|S
 */("velocity m/s")|macro|확인|탄종별 포구 초속 m/s. 탄종마다 초속이 다를 때 쓴다. ap 인자는 ap·apc·apche 등 철갑탄 계열에 함께 들어간다|C
+
+# ---------- 게임 안 확인으로 정한 것 (docs/07-stat-editor/ingame-check.md, 2026-10-14)
+**/bullet/inventory/block|block|미확인|탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 무엇을 정하는지는 미확인|S
