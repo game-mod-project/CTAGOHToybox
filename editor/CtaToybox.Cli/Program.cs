@@ -20,7 +20,7 @@ namespace CtaToybox.Cli
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox build --project <파일>\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
-            "종류: vehicle, breed, humanskin, item-entity, stuff, pattern";
+            "종류: vehicle, breed, stuff (units는 앱 목록과 같이 수가 있는 파일만 보인다)";
 
         // 명령마다 받는 옵션. 여기에 없는 옵션은 사용법 오류다(오타를 조용히 버리지 않는다)
         static readonly Dictionary<string, string[]> KnownOptions = new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
@@ -162,7 +162,7 @@ namespace CtaToybox.Cli
         static int Units(Dictionary<string, string> opt, string settingsPath, TextWriter output)
         {
             string kind = opt.ContainsKey("kind") ? opt["kind"].ToLowerInvariant() : null;
-            if (kind != null && !UnitKind.All.Contains(kind)) throw new UsageException("--kind는 다음 가운데 하나다: " + string.Join(", ", UnitKind.All));
+            if (kind != null && !UnitKind.InEditor(kind)) throw new UsageException("--kind는 다음 가운데 하나다: " + string.Join(", ", UnitKind.Editor));
             int limit = opt.ContainsKey("limit") ? Number(opt, "limit") : 50;
             EditorSettings settings; LayerPlan plan;
             using (var stack = Open(settingsPath, output, out settings, out plan))
@@ -171,7 +171,7 @@ namespace CtaToybox.Cli
                 var index = OpenIndex(stack, settingsPath, output);
                 // 이름은 게임과 켜 둔 모드의 현지화에서 읽는다(앱과 같다). --names를 주면 그 CSV를 쓴다
                 var names = opt.ContainsKey("names") ? DisplayNames.Load(opt["names"]) : DisplayNames.FromGame(settings, plan);
-                var found = index.Search(opt.ContainsKey("find") ? opt["find"] : null, kind, opt.ContainsKey("layer") ? opt["layer"] : null, names).ToList();
+                var found = index.Search(opt.ContainsKey("find") ? opt["find"] : null, kind, opt.ContainsKey("layer") ? opt["layer"] : null, names).Where(u => UnitKind.InEditor(u.Kind) && u.Numbers > 0).ToList();
                 foreach (var u in found.Take(limit))
                 {
                     string name = names.OfUnit(u.Path);

@@ -19,12 +19,14 @@ namespace CtaToybox.Core
     public sealed class RowView
     {
         public string Path { get; set; }
+        public string RawPath { get; set; }          // 원문의 대소문자 그대로 쓴 경로. 화면에 "정확한 키"로 보인다
         public int Occurrence { get; set; }
         public string Form { get; set; }
         public KeyNote Note { get; set; }             // 키 설명. 없으면 null
         public string SummaryLabel { get; set; }      // 요약 탭의 이름. 요약에 없으면 null
         public string Context { get; set; }           // 같은 키가 여러 번 나올 때 어느 것인지: 가장 가까운 이름 있는 상위 블록(볼륨, 부품, 무장 자리 등)의 이름
         public bool IsMacroCall { get; set; }         // 파일 안의 매크로 호출 줄. 계산에 쓰여 펼친 값으로는 못 고치는 인자를 여기서 고친다
+        public int Repeats { get; set; } = 1;         // 같은 줄이 펼친 트리에 나온 횟수(CollapseRepeats가 하나로 모은 수)
         public List<ValueView> Values { get; } = new List<ValueView>();
     }
 
@@ -84,10 +86,12 @@ namespace CtaToybox.Core
             return s;
         }
 
+        // 편집기 목록: 편집기 종류(UnitKind.Editor)이고 값에 수가 하나라도 있는 유닛만. from·tag·entity 같은 이름만 있는 파일은 고칠 스탯이 없다
         public IEnumerable<UnitEntry> Search(string text, string kind, string layer)
         {
             // 이름 있는 유닛을 먼저, 이름순으로. 이름이 없으면 경로순
             return Index.Search(text, kind, layer, Names)
+                .Where(u => UnitKind.InEditor(u.Kind) && u.Numbers > 0)
                 .Select(u => new { u, name = Names.OfUnit(u.Path) })
                 .OrderBy(x => x.name == null ? 1 : 0).ThenBy(x => x.name, StringComparer.OrdinalIgnoreCase).ThenBy(x => x.u.Path, StringComparer.Ordinal)
                 .Select(x => x.u);
@@ -144,7 +148,7 @@ namespace CtaToybox.Core
             };
             foreach (var row in traced.Rows)
             {
-                var r = new RowView { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
+                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
                 foreach (var v in row.Values)
                 {
                     var vv = new ValueView { Trace = v };
@@ -158,8 +162,54 @@ namespace CtaToybox.Core
                 view.Rows.Add(r);
             }
             AddMacroCalls(view, traced, n, summary);
+            CollapseRepeats(view.Rows);
             RefreshEdits(view);
             return view;
+        }
+
+        // 같은 줄을 하나로 모은다. 매크로 인자 하나가 여러 곳에 펼쳐지면(예: 탄종마다 같은 사거리 표) 같은 원본 자리를 가리키는 줄이 여러 번 나온다.
+        // 같은 키 경로에, 고칠 수 있는 값은 같은 원본 자리, 고칠 수 없는 값은 같은 글자면 같은 줄이다. 어느 줄을 고쳐도 같은 자리가 바뀌므로 하나만 보인다
+        public static void CollapseRepeats(List<RowView> rows)
+        {
+            const int MaxContexts = 3;
+            var first = new Dictionary<string, RowView>(StringComparer.Ordinal);
+            var contexts = new Dictionary<RowView, List<string>>();
+            var kept = new List<RowView>(rows.Count);
+            foreach (var row in rows)
+            {
+                string key = RepeatKey(row);
+                RowView same;
+                if (!first.TryGetValue(key, out same))
+                {
+                    first[key] = row; kept.Add(row);
+                    contexts[row] = row.Context == null ? new List<string>() : new List<string> { row.Context };
+                    continue;
+                }
+                same.Repeats++;
+                if (row.Context != null && !contexts[same].Contains(row.Context)) contexts[same].Add(row.Context);
+            }
+            // 모은 줄의 부위는 앞의 몇 개만 적는다
+            foreach (var row in kept)
+            {
+                var list = contexts[row];
+                if (list.Count > 1)
+                    row.Context = string.Join(", ", list.Take(MaxContexts)) + (list.Count > MaxContexts ? " 외 " + (list.Count - MaxContexts) + "곳" : "");
+            }
+            rows.Clear();
+            rows.AddRange(kept);
+        }
+
+        static string RepeatKey(RowView row)
+        {
+            var sb = new System.Text.StringBuilder();
+            sb.Append(row.Path).Append('\t').Append(row.Form).Append('\t').Append(row.IsMacroCall);
+            foreach (var v in row.Values)
+            {
+                var t = v.Trace;
+                if (v.Editable) sb.Append("\t@").Append(t.File).Append('|').Append(t.KeyPath).Append('|').Append(t.Occurrence).Append('|').Append(t.Arg);
+                else sb.Append("\t=").Append(t.Text);
+            }
+            return sb.ToString();
         }
 
         // 유닛 파일과 include한 파일의 매크로 호출 줄. 펼친 트리에서는 호출이 본문으로 바뀌어 사라지므로 따로 보인다
@@ -177,7 +227,7 @@ namespace CtaToybox.Core
                 {
                     // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
                     if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
-                    var r = new RowView { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
+                    var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
                         var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };

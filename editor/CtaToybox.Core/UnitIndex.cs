@@ -18,6 +18,7 @@ namespace CtaToybox.Core
         public List<string> Includes { get; set; } = new List<string>();
         public List<string> Presets { get; set; } = new List<string>();
         public int Unresolved { get; set; }
+        public int Numbers { get; set; }    // 펼친 값 가운데 수의 개수. 0이면 고칠 스탯이 없는 파일이라 편집기 목록에서 뺀다
     }
 
     public sealed class UnitIndex
@@ -39,12 +40,26 @@ namespace CtaToybox.Core
                 index.Units.Add(new UnitEntry
                 {
                     Path = paths[i], Kind = UnitKind.Of(paths[i]), Layer = stack.Find(paths[i]).Layer,
-                    Includes = r.Includes, Presets = r.Presets, Unresolved = r.Unresolved.Count
+                    Includes = r.Includes, Presets = r.Presets, Unresolved = r.Unresolved.Count, Numbers = CountNumbers(r.Nodes)
                 });
                 if (progress != null && (i + 1) % 1000 == 0) progress(i + 1, paths.Count);
             }
             return index;
         }
+
+        // 펼친 트리에서 키 행의 값 가운데 수인 것. 편집기 가운데 창이 보이는 값과 같은 범위다(KeyLocator 행의 잎)
+        public static int CountNumbers(List<object> nodes)
+        {
+            var root = new SdlNode("root", "", 0, true);
+            root.Children.AddRange(nodes);
+            int count = 0;
+            foreach (var row in KeyLocator.Rows(root))
+                foreach (var leaf in row.Leaves) if (leaf.Kind == "atom" && SdlCore.IsNumber(leaf.Text)) count++;
+            return count;
+        }
+
+        // 색인 형식이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다
+        const string FormatVersion = "2";
 
         // 계층의 구성과 원본 파일(pak, 낱개 파일)의 크기·수정 시각으로 만든 지문
         public static string SignatureOf(SourceStack stack)
@@ -52,7 +67,7 @@ namespace CtaToybox.Core
             var containers = new SortedSet<string>(StringComparer.OrdinalIgnoreCase);
             foreach (string p in stack.Paths)
                 foreach (var v in stack.Versions(p)) containers.Add(v.Container);
-            var sb = new StringBuilder();
+            var sb = new StringBuilder("format " + FormatVersion + "\n");
             foreach (var l in stack.Layers) sb.Append(l.Name).Append('|').Append(l.ResourceDir).Append('\n');
             foreach (string c in containers)
             {

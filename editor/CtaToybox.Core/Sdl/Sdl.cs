@@ -40,6 +40,7 @@ public sealed class SdlParseResult
 public sealed class SdlRow
 {
     public string Path { get; set; }
+    public string RawPath { get; set; }   // Path와 같은 자리를 원문의 대소문자 그대로. 화면 표시용이고 비교에는 Path를 쓴다
     public string Form { get; set; }   // block | include | define | mod | macro | paren-other | bare
     public string Shape { get; set; }
     public string Args { get; set; }

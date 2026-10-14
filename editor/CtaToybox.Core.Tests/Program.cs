@@ -91,6 +91,7 @@ static class Program
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),
+            ("UnitFilter", UnitFilterTests.Run),
             ("Cli", CliTests.Run),
         };
         foreach (var s in suites)

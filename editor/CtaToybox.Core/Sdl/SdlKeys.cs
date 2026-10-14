@@ -7,7 +7,6 @@ using System.Text.RegularExpressions;
 public static partial class SdlCore
 {
     static bool IsOperator(string s) { return s == "+" || s == "-" || s == "*" || s == "/"; }
-
     public static bool IsExpr(SdlNode n)
     {
         if (n.Kind != "paren" || n.Children.Count == 0) return false;
@@ -29,12 +28,12 @@ public static partial class SdlCore
         }
     }
 
-    static SdlRow Row(string path, string form, List<SdlNode> args)
+    static SdlRow Row(string path, string raw, string form, List<SdlNode> args)
     {
         var shapes = new List<string>(args.Count);
         var flat = new List<string>();
         foreach (var a in args) { shapes.Add(ArgShape(a)); Flat(a, flat); }
-        return new SdlRow { Path = path, Form = form, Shape = string.Join(" ", shapes), Args = string.Join(" ", flat), ArgNodes = args };
+        return new SdlRow { Path = path, RawPath = raw, Form = form, Shape = string.Join(" ", shapes), Args = string.Join(" ", flat), ArgNodes = args };
     }
 
     static bool IsStatement(SdlNode k) { return k.Kind == "brace" || (k.Kind == "paren" && !IsExpr(k)); }
@@ -58,35 +57,36 @@ public static partial class SdlCore
 
     // 인자로 넘긴 호출 name(...) 안에 블록이 들어 있으면 그 블록도 키로 낸다.
     // 예: ("crew" off({sensor})) -> .../("crew")/off()/sensor
-    static void AddArgBlocks(List<SdlNode> args, string path, List<SdlRow> rows, HashSet<string> qualified)
+    // raw는 path와 같은 자리를 원문의 대소문자 그대로 적은 경로다(화면 표시용). 따옴표 이름 블록은 "*" 대신 그 이름을 쓴다
+    static void AddArgBlocks(List<SdlNode> args, string path, string raw, List<SdlRow> rows, HashSet<string> qualified)
     {
         foreach (var a in args)
         {
             if (a.Kind != "call") continue;
-            string p = path + "/" + a.Text.ToLowerInvariant() + "()";
+            string p = path + "/" + a.Text.ToLowerInvariant() + "()", rp = raw + "/" + a.Text + "()";
             var inner = Range(a.Children, 0);
             var statements = new List<SdlNode>();
             var calls = new List<SdlNode>();
             foreach (var c in inner) { if (IsStatement(c)) statements.Add(c); else if (c.Kind == "call") calls.Add(c); }
-            AddRows(statements, p, rows, qualified);
-            AddArgBlocks(calls, p, rows, qualified);
+            AddRows(statements, p, rp, rows, qualified);
+            AddArgBlocks(calls, p, rp, rows, qualified);
         }
     }
 
-    static void AddRows(List<SdlNode> nodes, string parent, List<SdlRow> rows, HashSet<string> qualified)
+    static void AddRows(List<SdlNode> nodes, string parent, string raw, List<SdlRow> rows, HashSet<string> qualified)
     {
         foreach (var n in nodes)
         {
-            if (n.Kind == "brace") AddBrace(n, parent, rows, qualified);
-            else if (n.Kind == "paren" && !IsExpr(n)) AddParen(n, parent, rows, qualified);
-            else rows.Add(Row(parent + "/<bare>", "bare", new List<SdlNode> { n }));
+            if (n.Kind == "brace") AddBrace(n, parent, raw, rows, qualified);
+            else if (n.Kind == "paren" && !IsExpr(n)) AddParen(n, parent, raw, rows, qualified);
+            else rows.Add(Row(parent + "/<bare>", raw + "/<bare>", "bare", new List<SdlNode> { n }));
         }
     }
 
-    static void AddBrace(SdlNode node, string parent, List<SdlRow> rows, HashSet<string> qualified)
+    static void AddBrace(SdlNode node, string parent, string raw, List<SdlRow> rows, HashSet<string> qualified)
     {
         var kids = node.Children;
-        string seg = "{}";
+        string seg = "{}", rawSeg = "{}";
         int start = 0;
         if (kids.Count > 0)
         {
@@ -96,70 +96,71 @@ public static partial class SdlCore
                 string name = first.Text.ToLowerInvariant();
                 SdlNode second = kids.Count > 1 ? Unwrap(kids[1]) : null;
                 // 따옴표로 된 이름은 데이터로 본다: 경로를 "*"로 묶고 이름은 인자로 남긴다
-                if (first.Kind == "str") seg = "\"*\"";
-                else if (NumberRegex.IsMatch(name)) seg = "#row";
+                if (first.Kind == "str") { seg = "\"*\""; rawSeg = first.Text; }
+                else if (NumberRegex.IsMatch(name)) seg = rawSeg = "#row";
                 else if (qualified.Contains(name) && second != null && (second.Kind == "atom" || second.Kind == "str"))
                 {
                     seg = name + "[" + second.Text.Trim('"').ToLowerInvariant() + "]";
+                    rawSeg = first.Text + "[" + second.Text.Trim('"') + "]";
                     start = 1;
                 }
-                else { seg = name; start = 1; }
+                else { seg = name; rawSeg = first.Text; start = 1; }
             }
         }
-        string path = parent + "/" + seg;
+        string path = parent + "/" + seg, rawPath = raw + "/" + rawSeg;
         var args = new List<SdlNode>(); var nested = new List<SdlNode>();
         Split(kids, start, args, nested);
-        rows.Add(Row(path, "block", args));
-        AddArgBlocks(args, path, rows, qualified);
-        AddRows(nested, path, rows, qualified);
+        rows.Add(Row(path, rawPath, "block", args));
+        AddArgBlocks(args, path, rawPath, rows, qualified);
+        AddRows(nested, path, rawPath, rows, qualified);
     }
 
-    static void AddParen(SdlNode node, string parent, List<SdlRow> rows, HashSet<string> qualified)
+    static void AddParen(SdlNode node, string parent, string raw, List<SdlRow> rows, HashSet<string> qualified)
     {
         var kids = node.Children;
-        if (kids.Count == 0) { rows.Add(Row(parent + "/()", "paren-other", new List<SdlNode>())); return; }
+        if (kids.Count == 0) { rows.Add(Row(parent + "/()", raw + "/()", "paren-other", new List<SdlNode>())); return; }
         var head = Unwrap(kids[0]);
         if (head.Kind == "str")
         {
             // 매크로 호출. 행의 값에는 인자 전체를 그대로 두고, 인자 안의 블록은 따로 키로도 낸다
-            string path = parent + "/(" + head.Text.ToLowerInvariant() + ")";
+            string path = parent + "/(" + head.Text.ToLowerInvariant() + ")", rawPath = raw + "/(" + head.Text + ")";
             var rest = Range(kids, 1);
-            rows.Add(Row(path, "macro", rest));
+            rows.Add(Row(path, rawPath, "macro", rest));
             var args = new List<SdlNode>(); var nested = new List<SdlNode>();
             Split(kids, 1, args, nested);
-            AddArgBlocks(args, path, rows, qualified);
-            AddRows(nested, path, rows, qualified);
+            AddArgBlocks(args, path, rawPath, rows, qualified);
+            AddRows(nested, path, rawPath, rows, qualified);
             return;
         }
         string word = head.Kind == "atom" ? head.Text.ToLowerInvariant() : "";
         if (word == "include")
         {
             var rest = Range(kids, 1);
-            rows.Add(Row(parent + "/(include)", "include", rest));
-            AddArgBlocks(rest, parent + "/(include)", rows, qualified);
+            rows.Add(Row(parent + "/(include)", raw + "/(include)", "include", rest));
+            AddArgBlocks(rest, parent + "/(include)", raw + "/(include)", rows, qualified);
         }
         else if (word == "define" && kids.Count >= 2)
         {
-            string path = parent + "/(define " + Unwrap(kids[1]).Text.ToLowerInvariant() + ")";
-            rows.Add(Row(path, "define", new List<SdlNode>()));
-            AddRows(Range(kids, 2), path, rows, qualified);
+            string path = parent + "/(define " + Unwrap(kids[1]).Text.ToLowerInvariant() + ")", rawPath = raw + "/(define " + Unwrap(kids[1]).Text + ")";
+            rows.Add(Row(path, rawPath, "define", new List<SdlNode>()));
+            AddRows(Range(kids, 2), path, rawPath, rows, qualified);
         }
         else if (word == "mod")
         {
             var args = new List<SdlNode>(); var nested = new List<SdlNode>();
             Split(kids, 1, args, nested);
-            rows.Add(Row(parent + "/(mod)", "mod", args));
-            AddRows(nested, parent, rows, qualified);
+            rows.Add(Row(parent + "/(mod)", raw + "/(mod)", "mod", args));
+            AddRows(nested, parent, raw, rows, qualified);
         }
         else
         {
             // 알 수 없는 괄호 구문. 머리가 낱말이면 이름으로 쓰고, 아니면 첫 자식부터 내용으로 본다
-            string path = parent + "/" + (word != "" ? "(" + word + ")" : "()");
+            string path = parent + "/" + (word != "" ? "(" + word + ")" : "()"), rawPath = raw + "/" + (word != "" ? "(" + head.Text + ")" : "()");
             var args = new List<SdlNode>(); var nested = new List<SdlNode>();
             Split(kids, word != "" ? 1 : 0, args, nested);
-            rows.Add(Row(path, "paren-other", args));
-            AddArgBlocks(args, path, rows, qualified);
-            AddRows(nested, path, rows, qualified);
+            rows.Add(Row(path, rawPath, "paren-other", args));
+            AddArgBlocks(args, path, rawPath, rows, qualified);
+            AddRows(nested, path, rawPath, rows, qualified);
         }
     }
 
@@ -169,7 +170,7 @@ public static partial class SdlCore
         var q = new HashSet<string>(qualifiedBlocks ?? new string[0], StringComparer.OrdinalIgnoreCase);
         var nodes = new List<SdlNode>();
         if (topLevel != null) foreach (object x in topLevel) nodes.Add(Unwrap(x));
-        AddRows(nodes, "", rows, q);
+        AddRows(nodes, "", "", rows, q);
         return rows;
     }
 

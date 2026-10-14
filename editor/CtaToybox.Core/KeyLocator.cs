@@ -9,6 +9,7 @@ namespace CtaToybox.Core
     public sealed class KeyRow
     {
         public string Path { get; set; }
+        public string RawPath { get; set; }     // 원문의 대소문자 그대로 쓴 경로(화면 표시용)
         public string Form { get; set; }
         public int Occurrence { get; set; }      // 같은 경로를 가진 행 가운데 파일에 나온 순서
         public List<SdlNode> Leaves { get; set; }
@@ -31,7 +32,7 @@ namespace CtaToybox.Core
                 seen[row.Path] = n + 1;
                 var leaves = new List<SdlNode>();
                 foreach (var a in row.ArgNodes) AddLeaves(a, leaves);
-                result.Add(new KeyRow { Path = row.Path, Form = row.Form, Occurrence = n, Leaves = leaves });
+                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves });
             }
             return result;
         }
