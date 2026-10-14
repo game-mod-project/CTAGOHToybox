@@ -92,6 +92,7 @@ static class Program
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),
             ("UnitFilter", UnitFilterTests.Run),
+            ("Roster", RosterTests.Run),
             ("Cli", CliTests.Run),
         };
         foreach (var s in suites)

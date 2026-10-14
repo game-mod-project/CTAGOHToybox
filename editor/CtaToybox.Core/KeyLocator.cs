@@ -13,6 +13,7 @@ namespace CtaToybox.Core
         public string Form { get; set; }
         public int Occurrence { get; set; }      // 같은 경로를 가진 행 가운데 파일에 나온 순서
         public List<SdlNode> Leaves { get; set; }
+        public List<string> LeafNames { get; set; }   // 잎마다 그것을 감싼 호출의 이름(cp(40)이면 "cp"). 호출 밖이면 null
     }
 
     public static class KeyLocator
@@ -31,19 +32,21 @@ namespace CtaToybox.Core
                 seen.TryGetValue(row.Path, out n);
                 seen[row.Path] = n + 1;
                 var leaves = new List<SdlNode>();
-                foreach (var a in row.ArgNodes) AddLeaves(a, leaves);
-                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves });
+                var names = new List<string>();
+                foreach (var a in row.ArgNodes) AddLeaves(a, leaves, names, null);
+                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves, LeafNames = names });
             }
             return result;
         }
 
-        static void AddLeaves(SdlNode node, List<SdlNode> leaves)
+        static void AddLeaves(SdlNode node, List<SdlNode> leaves, List<string> names, string name)
         {
-            if (node.Kind == "atom" || node.Kind == "str") { leaves.Add(node); return; }
+            if (node.Kind == "atom" || node.Kind == "str") { leaves.Add(node); names.Add(name); return; }
             if (node.Kind == "brace") return;                       // 블록은 별도의 행이다
             bool expr = node.Kind == "paren" && SdlCore.IsExpr(node);
             if (node.Kind == "paren" && !expr) return;              // 산술식이 아닌 괄호 구문도 별도의 행이다
-            for (int i = expr ? 1 : 0; i < node.Children.Count; i++) AddLeaves(SdlCore.Unwrap(node.Children[i]), leaves);
+            if (node.Kind == "call") name = node.Text;
+            for (int i = expr ? 1 : 0; i < node.Children.Count; i++) AddLeaves(SdlCore.Unwrap(node.Children[i]), leaves, names, name);
         }
 
         public static SdlNode Find(SdlNode root, string path, int occurrence, int arg)

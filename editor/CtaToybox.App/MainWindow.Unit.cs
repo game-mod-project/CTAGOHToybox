@@ -24,9 +24,9 @@ namespace CtaToybox.App
             {
                 UnitTitle.Text = "원본에 이 파일이 없다: " + path;
                 UnitInfo.Text = "";
-                SummaryList.ItemsSource = FullList.ItemsSource = ItemList.ItemsSource = null;
+                SummaryList.ItemsSource = FullList.ItemsSource = ItemList.ItemsSource = RosterList.ItemsSource = null;
                 fullItems = new List<RowItem>();
-                SummaryTab.Header = "요약"; FullTab.Header = "전체"; ItemsTab.Header = "무기·탄약";
+                SummaryTab.Header = "요약"; FullTab.Header = "전체"; ItemsTab.Header = "무기·탄약"; RosterTab.Header = "가격·로스터";
                 return;
             }
             UnitTitle.Text = unit.DisplayName ?? unit.Unit.Substring(unit.Unit.LastIndexOf('/') + 1);
@@ -52,7 +52,8 @@ namespace CtaToybox.App
             var editable = row.Values.Where(v => v.Editable).ToList();
             var first = editable.FirstOrDefault();
             string group;
-            if (first == null) group = Text.NotEditableGroup;
+            if (row.RosterEntry != null) group = row.RosterEntry;
+            else if (first == null) group = Text.NotEditableGroup;
             else if (summary) group = row.SummaryLabel;
             else if (row.IsMacroCall) group = "매크로 호출 · " + first.Trace.File;
             else group = (first.Trace.File == unit.Unit ? "이 유닛의 파일 · " : "") + first.Trace.File + (first.SharedBy > 1 ? "  (유닛 " + first.SharedBy + "개가 같이 씀)" : "");
@@ -70,7 +71,7 @@ namespace CtaToybox.App
                 Label = summary ? (row.Context ?? "이 유닛") : KeyLabel.Readable(row.RawPath ?? row.Path),
                 Key = "키 " + (row.RawPath ?? row.Path),
                 Context = Text.ContextLine(summary ? null : row.Context, row.Repeats),
-                Values = string.Join("  ", row.Values.Select(v => Text.Value(v.Trace.Text))),
+                Values = Text.ValuesLine(row),
                 NewValues = newValues,
                 Note = Text.RowNote(row),
                 Shared = first == null ? "" : editable.Max(v => v.SharedBy) + "개",
@@ -97,6 +98,13 @@ namespace CtaToybox.App
             // 전체: 유닛 파일, 나머지 파일(처음 나온 순서), 매크로 호출, 고칠 수 없는 값
             var order = new Dictionary<string, int>();
             var all = unit.Rows.Select(r => Item(r, false, order)).ToList();
+            var rosterOrder = new Dictionary<string, int>();
+            var rosterItems = unit.Roster.Select(r => Item(r, false, rosterOrder)).ToList();
+            var rview = new ListCollectionView(rosterItems);
+            rview.GroupDescriptions.Add(new PropertyGroupDescription("Group"));
+            RosterList.ItemsSource = rview;
+            RosterTab.Header = "가격·로스터 (" + rosterOrder.Count + ")";
+
             fullItems = all.OrderBy(x => x.Group == Text.NotEditableGroup ? 3 : x.Row.IsMacroCall ? 2 : x.Group.StartsWith("이 유닛의 파일") ? 0 : 1).ThenBy(x => x.GroupOrder).ToList();
             ApplyFullFilter();
         }
