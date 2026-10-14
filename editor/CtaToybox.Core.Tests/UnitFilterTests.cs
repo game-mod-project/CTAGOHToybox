@@ -10,7 +10,15 @@ static class UnitFilterTests
 
     public static void Run()
     {
-        T.Eq(new[] { "vehicle", "breed", "stuff" }, UnitKind.Editor, "editor kinds");
+        T.Eq(new[] { "tank", "cannon", "car", "vehicle-other", "breed", "stuff" }, UnitKind.Editor, "editor kinds");
+        T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/armor.ext", "properties/tank.ext", "properties/vehicle.ext" }), "a tank reads tank.ext");
+        T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/tank_assaultgun.ext" }), "an assault gun is a tank");
+        T.Eq("cannon", UnitKind.EditorKindOf("vehicle", new[] { "properties/cannon_crew.ext", "properties/cannon.ext", "properties/tank_crew.ext" }), "cannon rules come before tank rules");
+        T.Eq("car", UnitKind.EditorKindOf("vehicle", new[] { "properties/halftrack.ext" }), "a halftrack is a car");
+        T.Eq("vehicle-other", UnitKind.EditorKindOf("vehicle", new[] { "properties/airborne.ext" }), "an aircraft is another vehicle");
+        T.Eq("vehicle-other", UnitKind.EditorKindOf("vehicle", new[] { "entity/-vehicle/x/tank.ext" }), "only top-level properties files count");
+        T.Eq("breed", UnitKind.EditorKindOf("breed", null), "a breed stays a breed");
+        T.True(UnitKind.EditorKindOf("pattern", null) == null, "a pattern has no editor kind");
         T.True(!UnitKind.InEditor("humanskin") && !UnitKind.InEditor("item-entity") && !UnitKind.InEditor("pattern") && !UnitKind.InEditor(null), "dropped kinds");
         T.Eq("파일", UnitKind.Label("pattern"), "a dropped kind has no editor label");
 

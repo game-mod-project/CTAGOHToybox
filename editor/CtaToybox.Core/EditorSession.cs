@@ -34,6 +34,7 @@ namespace CtaToybox.Core
     {
         public string Unit { get; set; }
         public string Kind { get; set; }
+        public string EditorKind { get; set; }        // 편집기 종류(탱크, 포 등). 화면 이름은 UnitKind.Label
         public string Layer { get; set; }
         public string DisplayName { get; set; }
         public List<RowView> Rows { get; } = new List<RowView>();
@@ -86,12 +87,14 @@ namespace CtaToybox.Core
             return s;
         }
 
-        // 편집기 목록: 편집기 종류(UnitKind.Editor)이고 값에 수가 하나라도 있는 유닛만. from·tag·entity 같은 이름만 있는 파일은 고칠 스탯이 없다
+        // 편집기 목록: 편집기 종류(UnitKind.Editor)이고 값에 수가 하나라도 있는 유닛만. from·tag·entity 같은 이름만 있는 파일은 고칠 스탯이 없다.
+        // kind는 편집기 종류(tank 등)나 원래 종류(vehicle이면 차량 전부)다
         public IEnumerable<UnitEntry> Search(string text, string kind, string layer)
         {
             // 이름 있는 유닛을 먼저, 이름순으로. 이름이 없으면 경로순
-            return Index.Search(text, kind, layer, Names)
-                .Where(u => UnitKind.InEditor(u.Kind) && u.Numbers > 0)
+            return Index.Search(text, null, layer, Names)
+                .Where(u => UnitKind.InEditor(u.EditorKind) && u.Numbers > 0)
+                .Where(u => kind == null || string.Equals(u.EditorKind, kind, StringComparison.OrdinalIgnoreCase) || string.Equals(u.Kind, kind, StringComparison.OrdinalIgnoreCase))
                 .Select(u => new { u, name = Names.OfUnit(u.Path) })
                 .OrderBy(x => x.name == null ? 1 : 0).ThenBy(x => x.name, StringComparer.OrdinalIgnoreCase).ThenBy(x => x.u.Path, StringComparer.Ordinal)
                 .Select(x => x.u);
@@ -142,7 +145,7 @@ namespace CtaToybox.Core
             var summary = SummaryFor(kind, n);
             var view = new UnitView
             {
-                Unit = traced.Unit, Kind = kind, Layer = Stack.Find(traced.Unit).Layer, DisplayName = Names.OfUnit(traced.Unit),
+                Unit = traced.Unit, Kind = kind, EditorKind = UnitKind.EditorKindOf(kind, traced.IncludeEdges.Select(e => e.ToFile)), Layer = Stack.Find(traced.Unit).Layer, DisplayName = Names.OfUnit(traced.Unit),
                 Unresolved = traced.Unresolved, IncludeEdges = traced.IncludeEdges,
                 Items = ItemLinks.ReferencedNames(traced.Nodes).Select(Items.Find).ToList()
             };
