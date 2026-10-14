@@ -53,7 +53,18 @@
         </StackPanel>
         <TabControl x:Name="Tabs" Margin="0,6,0,0">
           <TabItem x:Name="SummaryTab" Header="요약">
-            <ListView x:Name="SummaryList" MouseDoubleClick="Value_DoubleClick"/>
+            <ListView x:Name="SummaryList" MouseDoubleClick="Value_DoubleClick">
+              <ListView.View>
+                <GridView>
+                  <GridViewColumn Header="이름" Width="220" DisplayMemberBinding="{Binding Key}"/>
+                  <GridViewColumn Header="값" Width="90" DisplayMemberBinding="{Binding Text}"/>
+                  <GridViewColumn Header="수정" Width="120" DisplayMemberBinding="{Binding NewText}"/>
+                  <GridViewColumn Header="공유" Width="60" DisplayMemberBinding="{Binding Shared}"/>
+                  <GridViewColumn Header="이 유닛만" Width="80" DisplayMemberBinding="{Binding Scope}"/>
+                  <GridViewColumn Header="원본" Width="420" DisplayMemberBinding="{Binding Origin}"/>
+                </GridView>
+              </ListView.View>
+            </ListView>
           </TabItem>
           <TabItem x:Name="FullTab" Header="전체">
             <DockPanel>
@@ -64,7 +75,40 @@
               <Expander DockPanel.Dock="Bottom" Header="참조하는 아이템 (무기·탄약 등)" IsExpanded="True" Margin="0,4,0,0">
                 <ListBox x:Name="ItemList" DisplayMemberPath="Label" Height="140" MouseDoubleClick="ItemList_DoubleClick"/>
               </Expander>
-              <ListView x:Name="FullList" MouseDoubleClick="Value_DoubleClick"/>
+              <ListView x:Name="FullList" MouseDoubleClick="Value_DoubleClick"
+                        VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.VirtualizationMode="Recycling">
+                <ListView.GroupStyle>
+                  <GroupStyle>
+                    <GroupStyle.ContainerStyle>
+                      <Style TargetType="GroupItem">
+                        <Setter Property="Template">
+                          <Setter.Value>
+                            <ControlTemplate TargetType="GroupItem">
+                              <Expander IsExpanded="True">
+                                <Expander.Header>
+                                  <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  "/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="개"/></TextBlock>
+                                </Expander.Header>
+                                <ItemsPresenter/>
+                              </Expander>
+                            </ControlTemplate>
+                          </Setter.Value>
+                        </Setter>
+                      </Style>
+                    </GroupStyle.ContainerStyle>
+                  </GroupStyle>
+                </ListView.GroupStyle>
+                <ListView.View>
+                  <GridView>
+                    <GridViewColumn Header="키 (펼친 뒤)" Width="300" DisplayMemberBinding="{Binding Key}"/>
+                    <GridViewColumn Header="값" Width="90" DisplayMemberBinding="{Binding Text}"/>
+                    <GridViewColumn Header="수정" Width="120" DisplayMemberBinding="{Binding NewText}"/>
+                    <GridViewColumn Header="공유" Width="60" DisplayMemberBinding="{Binding Shared}"/>
+                    <GridViewColumn Header="이 유닛만" Width="80" DisplayMemberBinding="{Binding Scope}"/>
+                    <GridViewColumn Header="파일 안의 자리" Width="260" DisplayMemberBinding="{Binding Origin}"/>
+                    <GridViewColumn Header="설명" Width="360" DisplayMemberBinding="{Binding Note}"/>
+                  </GridView>
+                </ListView.View>
+              </ListView>
             </DockPanel>
           </TabItem>
         </TabControl>

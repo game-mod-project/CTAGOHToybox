@@ -55,6 +55,7 @@ namespace CtaToybox.App
             RunSearch();
             if (options.Unit != null) ShowUnit(options.Unit);
             if (options.Tab == "full") Tabs.SelectedItem = FullTab;
+            if (options.Filter != null) FullFilter.Text = options.Filter;
             if (options.Screenshot != null)
             {
                 await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);

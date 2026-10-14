@@ -7,7 +7,7 @@ namespace CtaToybox.App
 {
     public sealed class AppOptions
     {
-        public string Repo, Settings, Project, Unit, Tab, Screenshot;
+        public string Repo, Settings, Project, Unit, Tab, Filter, Screenshot;
 
         public static AppOptions Parse(string[] args)
         {
@@ -19,13 +19,14 @@ namespace CtaToybox.App
                 opt[args[i].Substring(2)] = args[++i];
             }
             foreach (string k in opt.Keys)
-                if (Array.IndexOf(new[] { "repo", "settings", "project", "unit", "tab", "screenshot" }, k.ToLowerInvariant()) < 0) throw new ArgumentException("모르는 옵션: --" + k);
+                if (Array.IndexOf(new[] { "repo", "settings", "project", "unit", "tab", "filter", "screenshot" }, k.ToLowerInvariant()) < 0) throw new ArgumentException("모르는 옵션: --" + k);
             var o = new AppOptions();
             o.Repo = Path.GetFullPath(opt.ContainsKey("repo") ? opt["repo"] : FindRepo(Environment.CurrentDirectory) ?? FindRepo(AppContext.BaseDirectory) ?? Environment.CurrentDirectory);
             o.Settings = opt.ContainsKey("settings") ? opt["settings"] : Path.Combine(o.Repo, "editor", "settings.json");
             o.Project = opt.ContainsKey("project") ? opt["project"] : Path.Combine(o.Repo, "editor", "projects", "my-tweaks.json");
             o.Unit = opt.ContainsKey("unit") ? opt["unit"] : null;
             o.Tab = opt.ContainsKey("tab") ? opt["tab"] : null;
+            o.Filter = opt.ContainsKey("filter") ? opt["filter"] : null;
             o.Screenshot = opt.ContainsKey("screenshot") ? Path.GetFullPath(opt["screenshot"]) : null;
             return o;
         }
