@@ -1,0 +1,93 @@
+{
+  "name": "ingame-check-batch",
+  "edits": [
+    {
+      "unit": "entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack.def",
+      "file": "entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack.inc",
+      "path": "/extender[inventory]/box/item",
+      "occurrence": 1,
+      "arg": 1,
+      "old": "24",
+      "new": "5",
+      "scope": "unit",
+      "enabled": false
+    },
+    {
+      "unit": "entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack_inf_late.def",
+      "file": "properties/armoredcar.ext",
+      "path": "/extender[inventory]/box/item",
+      "occurrence": 1,
+      "arg": 1,
+      "old": "5",
+      "new": "9",
+      "scope": "unit",
+      "enabled": false
+    },
+    {
+      "unit": "properties/armoredcar.ext",
+      "file": "properties/armoredcar.ext",
+      "path": "/extender[inventory]/box/item",
+      "occurrence": 0,
+      "arg": 1,
+      "old": "1",
+      "new": "3",
+      "scope": "shared",
+      "enabled": false
+    },
+    {
+      "unit": "entity/-vehicle/ussr/tank_heavy/kv85/kv85.def",
+      "file": "entity/-vehicle/ussr/tank_heavy/kv85/kv85.def",
+      "path": "/game_entity/extender[inventory]/box/item",
+      "occurrence": 0,
+      "arg": 1,
+      "old": "19",
+      "new": "7",
+      "scope": "shared",
+      "enabled": false
+    },
+    {
+      "unit": "set/stuff/smg/m3_grease",
+      "file": "set/stuff/smg/m3_grease",
+      "path": "/from/filling",
+      "occurrence": 0,
+      "arg": 1,
+      "old": "30",
+      "new": "17",
+      "scope": "shared",
+      "enabled": false
+    },
+    {
+      "unit": "set/stuff/smg/m3_grease",
+      "file": "set/stuff/smg/m3_grease",
+      "path": "/from/(\"fire rate\")",
+      "occurrence": 0,
+      "arg": 0,
+      "old": "450",
+      "new": "60",
+      "scope": "shared",
+      "enabled": false
+    },
+    {
+      "unit": "set/stuff/smg/.presets",
+      "file": "set/stuff/smg/.presets",
+      "path": "/(define \"stick_reload\")/(\"reload time\")",
+      "occurrence": 0,
+      "arg": 0,
+      "old": "3.25",
+      "new": "12",
+      "scope": "shared",
+      "enabled": false
+    },
+    {
+      "unit": "set/stuff/smg/thompson_m1928a1_50",
+      "file": "set/stuff/smg/thompson_m1928a1_50",
+      "path": "/from/(\"fire rate\")",
+      "occurrence": 0,
+      "arg": 0,
+      "old": "830",
+      "new": "60",
+      "scope": "shared",
+      "enabled": false
+    }
+  ]
+}

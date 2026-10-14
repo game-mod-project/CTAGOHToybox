@@ -92,5 +92,19 @@ static class RealFilesCheck
         Console.WriteLine("m3a1-mine=" + (mine == null ? "not found" : mine.File + " " + mine.KeyPath + " [" + mine.Occurrence + "] 값 " + mine.Arg) + " users=" + index.UsersOf(m3a1Inc).Count);
         T.True(mine != null, "the in-game check candidate (M3A1 halftrack, mine m1a1 24) is where the plan says");
         T.True(index.UsersOf(m3a1Inc).Count >= 2, "and its include file is shared by more than one unit");
+
+        // 아이템 이름 규칙: 데이터 조사(docs/02-modding-research.md)와 같은 범위에서 몇 개가 파일 하나로 이어지는지
+        var items = ItemLinks.Build(stack.Paths);
+        var itemNames = new HashSet<string>(StringComparer.Ordinal);
+        foreach (var u in index.Units.Where(x => x.Kind == "vehicle" || x.Kind == "breed"))
+        {
+            var parsedUnit = SdlCore.Parse(stack.ReadText(u.Path));
+            if (parsedUnit.Errors.Count == 0) foreach (string n in ItemLinks.ReferencedNames(parsedUnit.Root.Children)) itemNames.Add(n);
+        }
+        var byRule = itemNames.Select(items.Find).GroupBy(l => l.Rule).ToDictionary(g => g.Key, g => g.Count());
+        Console.WriteLine("item-names=" + itemNames.Count + " " + string.Join(" ", byRule.OrderBy(k => k.Key).Select(k => k.Key + "=" + k.Value)));
+        int linked = new[] { ItemLinks.RuleName, ItemLinks.RuleWords, ItemLinks.RuleWordsNoExt }.Sum(r => byRule.TryGetValue(r, out int c) ? c : 0);
+        T.True(linked * 100 >= itemNames.Count * 95, "at least 95% of item names link to exactly one file, as the survey found");
+        T.Eq("set/stuff/smg/m3_grease", items.Find("m3_grease").Files.Single(), "the in-game-confirmed link");
     }
 }

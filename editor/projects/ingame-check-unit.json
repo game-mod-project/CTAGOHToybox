@@ -1,0 +1,16 @@
+{
+  "name": "ingame-check-unit",
+  "edits": [
+    {
+      "unit": "entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack.def",
+      "file": "entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack.inc",
+      "path": "/extender[inventory]/box/item",
+      "occurrence": 1,
+      "arg": 1,
+      "old": "24",
+      "new": "5",
+      "scope": "unit",
+      "enabled": false
+    }
+  ]
+}
