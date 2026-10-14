@@ -83,6 +83,7 @@ static class Program
             ("KeyAnnotations", KeyAnnotationsTests.Run),
             ("ItemLinks", ItemLinksTests.Run),
             ("SummaryKeys", SummaryKeysTests.Run),
+            ("EditorSession", EditorSessionTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),

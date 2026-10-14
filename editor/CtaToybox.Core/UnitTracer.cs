@@ -20,6 +20,7 @@ namespace CtaToybox.Core
     {
         public string Path { get; set; }        // 펼친 뒤의 키 경로
         public int Occurrence { get; set; }     // 펼친 뒤의 순번
+        public string Form { get; set; }        // block | macro (KeyLocator의 행 형태). 주석을 찾을 때 쓴다
         public List<TraceValue> Values { get; } = new List<TraceValue>();
     }
 
@@ -29,6 +30,7 @@ namespace CtaToybox.Core
         public List<TraceRow> Rows { get; } = new List<TraceRow>();
         public List<string> Unresolved { get; set; }
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
+        public List<object> Nodes { get; set; }   // 펼친 노드. 아이템 이름을 모을 때 쓴다
     }
 
     public sealed class UnitTracer
@@ -78,11 +80,11 @@ namespace CtaToybox.Core
             var resolved = new SdlResolver(stack.ReadText).Resolve(unit);
             var root = new SdlNode("root", "", 0, true);
             root.Children.AddRange(resolved.Nodes);
-            var result = new UnitTraceResult { Unit = unit, Unresolved = resolved.Unresolved, IncludeEdges = resolved.IncludeEdges };
+            var result = new UnitTraceResult { Unit = unit, Unresolved = resolved.Unresolved, IncludeEdges = resolved.IncludeEdges, Nodes = resolved.Nodes };
             foreach (var row in KeyLocator.Rows(root))
             {
                 if (row.Leaves.Count == 0) continue;
-                var traced = new TraceRow { Path = row.Path, Occurrence = row.Occurrence };
+                var traced = new TraceRow { Path = row.Path, Occurrence = row.Occurrence, Form = row.Form };
                 foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                 result.Rows.Add(traced);
             }
