@@ -44,11 +44,11 @@
 |---|---|---|
 | `{skin}` `{portrait}` `{icon}` `{icon_priority}` `{nationality}` | 맞음 | `medic.set`. 그 밖에 `{behaviour}` `{tags}` `{voice}` `{armors {head ...}}`가 있다 |
 | `{item "luger" filled}`, `{item "이름" 수}` | 맞음 | `{item "luger" filled}`, `{item "pistol ammo" 24 8}` |
-| 수가 둘이면 기본값 + 무작위 계수 | 미확인 | 파일에 설명이 없다. `common.psv`도 둘째 수를 미확인으로 둔다 |
+| 수가 둘이면 기본값 + 무작위 계수 | 미확인 | 파일에 설명이 없다. 2026-10-15 바닐라 `set/breed`에서 수가 둘인 줄 17,954개 가운데 16,664개는 첫 수가 소수다(`medic.set` `{item "bandage_ger" 22.5 2.5}`). 그래서 첫 수는 정확한 개수가 아니라 기대값이고 둘째 수는 ± 폭으로 보인다(추정). 게임 안 확인은 `docs/10-backlog.md` G9 |
 | perk 레벨을 breed가 고른다 | 고침 | `{perks (include "ability.inc") ("rifle_skill_rank_2")("tier2_standard") ("medic")}`처럼 매크로 이름으로 고른다 |
 | 체력·스태미나·속도 값 | 고침 | `presets/perks/health.inc`의 `(define "tier1_standard" {"health" "150%"} {"health_regeneration" "10%"} {"stamina" "75%"} {"stamina_regeneration" "75%"} {"speed" 1.00} ...)` |
 | 시작 숙련 | 맞음 | `{veterancy (include "ability.inc") ("veterancy_lvl_0")}` |
-| 중상 플래그: 1이면 회복 가능, 0이면 즉사 | 고침 | 키는 `{"personage" 0}`(`health.inc`). 주석: "This means soldiers are revivable at veterancy 0". 1의 뜻은 파일에 없다(미확인). `interaction_entity/human.inc`에 `"dead_personage"`, `"personage_check"` 처리가 있다 |
+| 중상 플래그: 1이면 회복 가능, 0이면 즉사 | 고침 | 키는 `{"personage" 0}`(`health.inc`). 주석: "This means soldiers are revivable at veterancy 0". 1의 뜻은 파일에 없다. 값은 소생 가능 상태(Personage 퍽)가 켜지는 숙련도로 보인다(추정: 게임 문자열 `perks/personage` "Personage", `perks/required_veterancy` " (Vet. %i)", `human.inc` 600행 `{able "personage" 0} ;// stops human from being revive-able`). `interaction_entity/human.inc`에 `"dead_personage"`, `"personage_check"` 처리가 있다. 게임 안 확인은 G10 |
 | `human.ext`의 `{Sensor}`, 시야 | 맞음 | `{vision "human"}`, `{vision "human_peripheral"}`, `{vision "noise_detection"}`, `{InformRange 80 100}`(주석: 첫 값 AI, 둘째 값 사용자) |
 
 ## 탱크와 차량
@@ -63,7 +63,7 @@
 | 승무원 | 맞음 | `("crew_5_human_extended")`, `("seat_human" place(seat1) ...)` |
 | `tank.ext`의 수리 속도 | 맞음 | `("turret" repair(45))`, `("gun" repair(30) thickness(20))` |
 | `{extender "inventory"}`, `{weapon "mgun" ...}` | 맞음 | |
-| `{item "barrel" 20 filling "fuel" 420 {cell 6 7}}`의 `{cell x y}` = 격자 자리 | 미확인 | 파일 주석이 없다 |
+| `{item "barrel" 20 filling "fuel" 420 {cell 6 7}}`의 `{cell x y}` = 격자 자리 | 추정 | 파일 주석은 없다. 바닐라 유닛 파일에는 없고 맵·미션 저장(`map/single.pak`의 `.mi`, `map`)에 있다. 값은 x 0~8, y 0~11로 사람 `{Size 8 12}`(`human.ext` 97행), 차량 `{Size 9 15}`(`vehicle.ext` 31행) 인벤토리 격자와 맞는다. 인벤토리 칸 크기는 `interface.set`의 `{cell_size 36 36}`. 2026-10-15 W-F 조사 |
 | 시야 | 고침 | `.def`의 `{props ... "vision_lev04" ...}`가 `set/vision/settings.set`의 `{vehicle_04 actor "vision_lev04"}`(주석: medium tanks, rocket artillery)로 이어진다 |
 
 ## 포와 무기·탄약
@@ -73,7 +73,7 @@
 | `{parameters "<탄종>" ...}` | 맞음 | `set/stuff/gun`에 `"he"` 51곳, `"apcr"`·`"apcbc"` 33곳 등 |
 | `("speed2" s())`, `(speed s())`로 초속 | 틀림 | `set/stuff`에 한 곳도 없다. 초속은 `("velocity m/s" ap(1) apcr(1) he(213) heat(1))` 매크로다 |
 | `("damage_cumulative" a())`로 HEAT 관통력 | 틀림 | `set/stuff`에 없다 |
-| `{gravity 0}` | 고침 | 키는 있다(35개 파일). 0이면 중력을 무시한다는 설명은 미확인 |
+| `{gravity 0}` | 고침 | 키는 있다(35개 파일). `gun/.presets`의 `standard_firing_arc` 3.5, `curved_firing_arc` 5.5, `artillery_firing_arc` 6.0으로 보아 클수록 탄도가 많이 휜다. `{gravity 0}`은 쏘지 않는 `special/binocular`, `commander_vision` 두 곳뿐이다. 0이면 떨어지지 않는다는 것은 추정. 게임 안 확인은 G11 |
 | armor_damage 값 | 틀림 | 그 이름이 없다. 포 파일에 `("armor health" damage(310))`가 있다 |
 | 직사·곡사 정의 분리 | 맞음 | `("accuracy_direct" ...)` 61개 파일, `("accuracy_indirect" ...)` 50개 파일. 인자 주석: `r1` 직사 탄 정확도 반경, `r2` 곡사 정확도 반경, `rmax` 최대 사거리의 곡사 반경, `range_ap`·`range_heat`·`range_he` 정확도가 떨어지기 시작하는 거리 |
 | 포탄 `set/stuff/shell/bullet<구경>.<탄종>.ammo`, `{entity}`, 패턴 | 맞음 | 예 `bullet_105x380.fin.he.ammo`: `{from "pattern he"}`, `{entity "105mm_fin_he"}`, `("he_level_3" weight(14.9) filler(1.4))`. 패턴은 `set/stuff/shell/*.pattern` |
@@ -85,9 +85,9 @@
 | 문서의 주장 | 판정 | 근거 |
 |---|---|---|
 | `{"panzer5g" ("vehicle2" side() period() min_stage() max_stage() cw() cp() crew1(tankman:4) ...) {cost}}` | 맞음 | 형식은 같다. 값은 문서 예시와 다르다: 지금 `cw(6) cp(40)`, `{cost 1220}`, `min_stage(13)` |
-| `cp` 지휘 포인트, `cw` 무게, `{cost}` 인력 | 미확인 | `settings.set`의 `"single_unit"`이 `{cost %cost} {score (* %cost 0.05)} {cw %cw} {cp %cp}`로 넣는다. 뜻을 적은 주석은 없다 |
+| `cp` 지휘 포인트, `cw` 무게, `{cost}` 인력 | 고침 | `settings.set`의 `"single_unit"`이 `{cost %cost} {score (* %cost 0.05)} {cw %cw} {cp %cp}`로 넣는다. 같은 파일 머리 주석: `cw`는 "capture weight for flags"(깃발 점령 가중치, 무게가 아니다), `cp`는 "the value that units have that fill up how many troops can be fielded"(병력 한도를 채우는 CP), `{cost}`는 "MP cost of the unit" |
 | `cd` 쿨다운, `ci` 호출 관련 | 고침 | `{charge {delay %cd} {interval %ci}}`. 주석: delay는 처음 지연만, interval은 간격만 조정한다 |
-| 보병 `("inf_tier2" ... lvl() r() rm() cost())` | 맞음 | `conquest/inf_ger.set`. `inf_tier2`는 `{cp 3} {cw 1.0}`을 고정으로 넣는다. `r`, `rm`의 뜻은 미확인 |
+| 보병 `("inf_tier2" ... lvl() r() rm() cost())` | 맞음 | `conquest/inf_ger.set`. `r`·`rm`은 `conquest/settings_inf.set`의 `{research_stage %r}` `{research_stage_max %rm}`이고, `conquest/settings.set` 주석으로 봇이 이 유닛을 쓸 수 있는 연구 단계의 최소·최대다. `inf_tier2`는 `units/settings_inf.set`에서 `{cp 3} {cw 1.0}`, 컨퀘스트의 `units/conquest/settings_inf.set`에서 `{cp 2} {cw 1.0}`이다 |
 | 분대 가격 = breed별 cost 합, K98 8, MP40 10 | 맞음 | `inf_ger.set` 줄 주석(`cost(10.0)} ; mp40`, `cost(8.0)} ; k98`)과 `units/prices.txt`(tier2 보병 기준 표) |
 | `resources_<난이도>.set`의 `{StageCP}`, `{RP {StartVal}}` | 맞음 | `{StageCP 60 80 100 120 140}`, `{GlobalMaxCP 550}`, `{Resources {MP {StartVal 900}} ... {RP ...}}` |
 | `unit_research_<국가>.set`의 연구 비용, `requires` | 맞음 | `{tech "defense_level_2" requires "..." costs 5 position 4 0}` |
@@ -105,4 +105,4 @@
 | `vehicle_main` 25/50/100/1, `vehicle_top_mgun` 25/90/170/1, `vehicle_top_turret` 25/30/30/0.85, `vehicle_around` 15/360/170/0.6 | 맞음 | |
 | Informrange로 정보 공유 범위 | 맞음 | `human.ext`, `vehicle.ext`의 `{InformRange 80 100}` |
 | 유닛이 필드를 거는 문법은 공개 자료에 없다 | 고침 | 보병은 `human.ext`의 `{vision "human"}`, 차량은 `.def`의 `props`의 `"vision_levNN"`이 `set/vision/settings.set`의 actor로 이어진다 |
-| 야간 시야 25% 감소, 전차·대전차포 특례, 야간 장비 extender | 미확인 | 개발사 공지 근거. 파일로는 확인하지 않았다 |
+| 야간 시야 25% 감소, 전차·대전차포 특례, 야간 장비 extender | 고침 | 야간: 환경 파일(`set/environment/**/varnight*.set` 등)의 `{light}` 안에 `{night}`와 `{night_vision 0.75}`가 있다(2026-10-15 바닐라 0.75 150개, 주간 값 1 392개). 시야 배수인지는 주석이 없어 추정이고 게임 안 확인은 G13. 특례: `vision_fields.inc`의 `cannon_range_200`~`250`, `tank_range_200`~`250`이 `("spotting2" r(1.5) veh_vis(X))`이고 `spotting.inc`가 `{visible (+ 100 (/ %veh_vis %r))}`(주석 "once spotted, the distance the unit will remain spotted")와 "vision = radius * rules"이므로 한 번 발견한 차량은 1.5×(100+X/1.5) = 포 사거리(200~250m)까지 보인다(확인). 야간 장비 extender(`vision_mode`, `timer_object`)는 v1.067 바닐라에 없다 |

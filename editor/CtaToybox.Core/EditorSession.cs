@@ -238,7 +238,7 @@ namespace CtaToybox.Core
         static readonly KeyNote RosterMacroNote = new KeyNote
         {
             Grade = "확인",
-            Meaning = "등록 줄의 매크로 인자. set/multiplayer/units/settings.set이 cost는 {cost}(인력 MP 비용), cp는 {cp}, cw는 {cw}, cd는 {charge {delay}}(처음 지연), ci는 {charge {interval}}(간격)으로 넣는다. crewN(이름:수)는 탑승 breed와 인원이다. 보병의 cost·CP는 분대에 든 사람만큼 더해 분대 값이 된다(inf_*.set 주석). cp·cw의 뜻을 적은 주석은 없다(미확인)",
+            Meaning = "등록 줄의 매크로 인자. set/multiplayer/units/settings.set이 cost는 {cost}(인력 MP 비용), cp는 {cp}, cw는 {cw}, cd는 {charge {delay}}(처음 지연), ci는 {charge {interval}}(간격)으로 넣는다. crewN(이름:수)는 탑승 breed와 인원이다. 보병의 cost·CP는 분대에 든 사람만큼 더해 분대 값이 된다(inf_*.set 주석). cw는 깃발 점령 가중치, cp는 배치할 수 있는 병력 한도를 채우는 CP다(같은 파일 주석 \"cw() corresponds to capture weight for flags\", \"cp() corresponds to CP, that is, the value that units have that fill up how many troops can be fielded\"). 컨퀘스트 보병의 r·rm은 봇이 이 유닛을 쓸 수 있는 연구 단계의 최소·최대다(conquest/settings.set 주석, settings_inf.set의 {research_stage %r} {research_stage_max %rm})",
             Source = "게임 파일 주석",
         };
         static readonly KeyNote RosterCostNote = new KeyNote

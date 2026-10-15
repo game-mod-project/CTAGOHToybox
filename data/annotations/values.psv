@@ -104,7 +104,7 @@
 **/box/size|#2|세로 칸 수|A
 /breed/inventory/item|#1|아이템 이름|A
 /breed/inventory/item|#2|개수|A
-/breed/inventory/item|#3|둘째 수 (미확인. 모더 글은 무작위 계수라고 한다)|M
+/breed/inventory/item|#3|둘째 수 (미확인. 첫 수가 소수인 줄이 많아 첫 수는 기대값, 둘째 수는 ± 폭으로 보인다. 모더 글은 무작위 계수라고 한다)|S
 /breed/inventory/item|=filled|장전된 채로 지급 (열쇠말 filled)|M
 /breed/inventory/item|=filling|열쇠말 filling (뒤가 장전된 탄과 수량)|A
 /breed/inventory/item|filling#1|장전된 탄|A
@@ -127,7 +127,7 @@
 /breed/perks/"speed"|#1|항목 이름 (speed = 이동 속도)|A
 /breed/perks/"speed"|#2|이동 속도 배수 (보통 1.00)|A
 /breed/perks/"personage"|#1|항목 이름 (personage = 소생 설정)|A
-/breed/perks/"personage"|#2|소생 설정 (0 = 숙련도 0에서 소생 가능, 1은 미확인)|C
+/breed/perks/"personage"|#2|소생이 켜지는 숙련도 (0 = 숙련도 0부터 소생 가능. 숙련도라는 해석은 추정)|C
 /breed/perks/"vision"|#1|항목 이름 (vision = 시야)|A
 /breed/perks/"vision"|#2|시야 필드 이름 (set/vision/vision_fields.inc)|A
 /breed/perks/"rifle"|#1|무기 종류 (rifle = 소총)|A
@@ -171,8 +171,8 @@
 **/"*"|period|시기 (early·mid·late)|C
 **/"*"|min_stage|등장하는 첫 단계|S
 **/"*"|max_stage|등장하는 마지막 단계|S
-**/"*"|cp|cp (CP 비용으로 보인다. 주석 없음)|M
-**/"*"|cw|cw (뜻 미확인)|S
+**/"*"|cp|CP (배치할 수 있는 병력 한도를 채우는 값)|C
+**/"*"|cw|깃발 점령 가중치|C
 **/"*"|cost|인력(MP) 비용|C
 **/"*"|cd|처음 호출 지연|C
 **/"*"|ci|호출 간격|C
@@ -185,8 +185,8 @@
 **/"*"|crew6|탑승 병종 6 (이름:인원)|S
 **/"*"|crew7|탑승 병종 7 (이름:인원)|S
 **/"*"|lvl|등장 레벨|M
-**/"*"|r|r (뜻 미확인)|S
-**/"*"|rm|rm (뜻 미확인)|S
+**/"*"|r|봇이 쓸 수 있는 최소 연구 단계 (research_stage)|C
+**/"*"|rm|봇이 쓸 수 있는 최대 연구 단계 (research_stage_max)|C
 **/"*"|cool|cool (뜻 미확인)|S
 **/"*"|d|교리 이름|S
 **/"*"|#1|항목 이름|S

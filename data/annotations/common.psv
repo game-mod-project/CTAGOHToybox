@@ -19,7 +19,7 @@
 /breed/perks/"stamina"|block|추정|스태미나 배율. 빠르게 움직일 때 줄어든다. 값 "125%"는 level_generic.inc의 단계 이름(1.25배) (추정: set/ability/stamina.set. Call to Arms 위키의 stamina 설명)|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
 /breed/perks/"stamina_regeneration"|block|추정|스태미나 회복 배율. 값 "150%"는 level_generic.inc의 단계 이름(1.5배) (추정: set/ability/stamina_regeneration.set. Call to Arms 위키의 staminaRegeneration 설명)|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
 /breed/perks/"speed"|block|추정|이동 속도 배수로 보인다. tier 매크로에서 보통 1.00, 정찰 1.10, 방어 0.90, 의무병 1.10, 민간인 0.90 (추정: set/breed/presets/perks/health.inc·specialties.inc의 값. 주석 없음)|S
-/breed/perks/"personage"|block|확인|소생 설정. 0이면 숙련도 0에서 쓰러진 병사를 살릴 수 있다. 1의 뜻은 미확인 (확인: set/breed/presets/perks/health.inc 주석 "This means soldiers are revivable at veterancy 0")|C
+/breed/perks/"personage"|block|확인|소생 설정. 0이면 숙련도 0에서 쓰러진 병사를 살릴 수 있다 (확인: set/breed/presets/perks/health.inc 주석 "This means soldiers are revivable at veterancy 0"). 값은 소생 가능 상태(Personage 퍽)가 켜지는 숙련도로 보인다. 그러면 1은 숙련도 1부터다 (추정: 게임 문자열 perks/personage "Personage"와 perks/required_veterancy " (Vet. %i)", interaction_entity/human.inc 600행 "stops human from being revive-able")|C
 /breed/perks/"vision"|block|추정|시야 필드 이름. human, human_elite, human_recon이 있고 set/vision/vision_fields.inc의 같은 이름 필드로 이어진다 (추정: 이름 일치. set/breed/presets/perks/vision.inc의 매크로가 넣는다)|S
 /breed/perks/"rifle"|block|확인|소총 기술 수준. lvl_N은 set/ability/skill_rifle.set의 단계이고, 단계마다 자세(서기·앉기·엎드리기·엄폐)별 명중(accuracy, 높을수록 좋다)·반동·흔들림이 있다. lvl_1 명중 0.65, lvl_8 1.72 (확인: skill_rifle.set 주석)|C
 /breed/perks/"smg"|block|확인|기관단총 기술 수준. lvl_N은 set/ability/skill_smg.set의 단계(자세별 명중·반동·흔들림) (확인: skill 파일 구조와 skill_rifle.set 주석)|C
@@ -296,7 +296,7 @@
 */firesound|block|추정|발사음 경로 (추정: 이름과 값)|S
 */firesoundclose|block|추정|가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p)|S
 */reloadsound|block|확인|장전음|C
-*/gravity|block|추정|탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1)|S
+*/gravity|block|추정|탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다)|S
 /from/range|block|추정|사거리 두 값 (추정: 원문 주석이 "200m", "285m max". 두 값의 구분은 미확인)|C
 /from/throw/range|block|추정|던지는 거리 (추정: throw의 하위)|S
 */rechargetime|block|확인|탄창 또는 포탄을 장전하는 시간, 초. "reload time" 매크로가 seconds 인자로 넣는다|C
@@ -569,7 +569,7 @@
 **/healthdamage|block|문서|사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다|Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인)
 **/projectiledamagetable/{}|block|문서|거리와 그 거리에서의 관통력 한 쌍. 점 사이는 선형으로 잇는다|Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인)
 **/projectiledamagetable/%range|block|문서|거리와 그 거리에서의 관통력 한 쌍. 점 사이는 선형으로 잇는다|Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인)
-**/weapon_throwing/gravity|block|추정|탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1)|S
+**/weapon_throwing/gravity|block|추정|탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다)|S
 **/weapon_throwing/foresight|block|확인|총구 화염과 탄이 나가는 원점이 되는 뼈대 이름|C
 **/weapon_throwing/filling|block|추정|장전하는 탄의 태그 (추정: 값 "throwable")|S
 **/accuracybymotionk|block|추정|움직이는 동안의 명중률에 곱하는 계수 (추정: 이름. 값 0.1 ~ 0.9)|S
