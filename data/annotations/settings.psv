@@ -109,3 +109,36 @@
 /difficulty/ally/accuracy|block|추정|아군 AI의 명중 배수 (추정: 블록 이름 ally)|S
 /difficulty/player/health|block|추정|플레이어 유닛의 체력 배수 (추정: 블록 이름 player)|S
 /difficulty/player/accuracy|block|추정|플레이어 유닛의 명중 배수 (추정: 블록 이름 player)|S
+# ---------- 컨퀘스트 AI (script/multiplayer/modes/conquest/runtime_config.lua의 -- 주석)
+/conquestconfig.startspawntime/defensemin|block|확인|봇이 수비일 때 전투 시작부터 첫 구매까지의 최소 시간. ms로 보인다(1000 = 1초, 추정) (확인: 68~71줄 주석 "Time from match start before the AI attempts its first purchase", "Bot is defender")|C
+/conquestconfig.startspawntime/defensemax|block|확인|봇이 수비일 때 첫 구매까지의 최대 시간. ms로 보인다(추정) (확인: 68~71줄 주석)|C
+/conquestconfig.startspawntime/attackmin|block|확인|봇이 공격일 때 전투 시작부터 첫 구매까지의 최소 시간. ms로 보인다(추정) (확인: 68줄, 74~76줄 주석 "Bot is attacker")|C
+/conquestconfig.startspawntime/attackmax|block|확인|봇이 공격일 때 첫 구매까지의 최대 시간. ms로 보인다(추정) (확인: 68줄, 74~76줄 주석)|C
+/conquestconfig.spawncooldowntime/dcgwaveoffmin|block|확인|공격 파도가 끝난 뒤 다음 파도까지의 최소 시간. ms로 보인다(60000 = 1분, 추정) (확인: 81~83줄 주석 "Time between completed attacker waves")|C
+/conquestconfig.spawncooldowntime/dcgwaveoffmax|block|확인|공격 파도 사이의 최대 시간. ms로 보인다(추정) (확인: 81~83줄 주석)|C
+/conquestconfig.spawncooldowntime/dcgmin|block|확인|파도·첫 배치 안에서 구매 사이의 최소 시간. ms로 보인다(추정) (확인: 85~86줄 주석 "Time between purchases inside an active wave/opening")|C
+/conquestconfig.spawncooldowntime/dcgmax|block|확인|파도·첫 배치 안에서 구매 사이의 최대 시간. ms로 보인다(추정) (확인: 85~87줄 주석)|C
+/conquestconfig.attackerwaves/maxwavesmin|block|확인|공격 파도 수의 최소(기준값. 이후 압력 보정이 바꿀 수 있다) (확인: 90~91줄 주석 "Baseline attacker wave count and size")|C
+/conquestconfig.attackerwaves/maxwavesmax|block|확인|공격 파도 수의 최대(기준값) (확인: 90~91줄 주석)|C
+/conquestconfig.attackerwaves/minunits|block|확인|파도 하나의 유닛 수 최소(기준값) (확인: 90~91줄 주석)|C
+/conquestconfig.attackerwaves/maxunits|block|확인|파도 하나의 유닛 수 최대(기준값) (확인: 90~91줄 주석)|C
+/conquestconfig.attackerwaves/pattern|block|확인|파도 모양. AttackerWavePatterns의 flat, escalating, frontloaded, last_push 가운데 하나 (확인: 103줄 주석 "Wave-shape multipliers used by AttackerWaves.Pattern")|C
+/conquestconfig.attackerwaves/minwaveunits|block|추정|보정 뒤 파도 하나의 유닛 수 하한 (추정: 이름과 waves.lua의 math.max(scaledTarget, plan.MinWaveUnits))|S
+/conquestconfig.attackerdynamicwaveoff/firstcheckseconds|block|확인|파도가 끝난 뒤 다음 파도를 낼지 처음 살피기까지의 시간(초) (확인: 133줄 주석)|C
+/conquestconfig.attackerdynamicwaveoff/repeatpollintervalseconds|block|확인|다음 파도를 낼지 다시 살피는 간격(초) (확인: 134줄 주석)|C
+/conquestconfig.attackerdynamicwaveoff/forcereleaseseconds|block|확인|전장 상황과 상관없이 다음 파도를 내기까지의 최대 대기(초) (확인: 135줄 주석)|C
+/conquestconfig.attackerdynamicwaveoff/randomvarianceseconds|block|확인|다음 파도 시점에 더하는 무작위 ± 시간(초) (확인: 137줄 주석)|C
+/conquestconfig.attackerdynamicwaveoff/waveoffsecondsbyattackerstate/degraded|block|확인|앞 공격 파도가 크게 줄었을 때 다음 파도까지 목표 시간(초). 작을수록 빨리 온다 (확인: 143~146줄 주석)|C
+/conquestconfig.attackerdynamicwaveoff/waveoffsecondsbyattackerstate/reduced|block|확인|앞 파도가 일부 줄었을 때 다음 파도까지 목표 시간(초) (확인: 147줄 주석)|C
+/conquestconfig.attackerdynamicwaveoff/waveoffsecondsbyattackerstate/retained|block|확인|앞 파도가 거의 남아 있을 때 다음 파도까지 목표 시간(초) (확인: 148줄 주석)|C
+/conquestconfig.defenderopening/minunitsperflag|block|확인|AI 수비 첫 배치: 깃발 하나당 구매 유닛 수 최소. 깃발 수를 곱한다 (확인: 167~168줄 주석)|C
+/conquestconfig.defenderopening/maxunitsperflag|block|확인|AI 수비 첫 배치: 깃발 하나당 구매 유닛 수 최대 (확인: 167~168줄 주석)|C
+/conquestconfig.defenderopening/minunitsperflagfloor|block|확인|깃발 하나당 유닛 수의 하한. 쉬운 난이도·낮은 위험도에서 수비가 사라지지 않게 한다 (확인: 172줄 주석)|C
+/conquestconfig.defenderopening/unitsholdmovement|block|확인|첫 배치 유닛이 스폰·임무 위치를 지킬지(true면 Lua 이동 교대에 들어가지 않는다) (확인: 175줄 주석)|C
+/conquestconfig.defenderopening/maxduration|block|확인|첫 배치 구매의 제한 시간. 지나면 남은 구매는 버린다. ms로 보인다(추정) (확인: 178줄 주석)|C
+/conquestconfig.defendercounterattack/minunits|block|추정|AI 반격 한 번의 유닛 수 최소 (추정: 이름)|S
+/conquestconfig.defendercounterattack/maxunits|block|추정|AI 반격 한 번의 유닛 수 최대 (추정: 이름)|S
+/conquestconfig.defendercounterattack/confirmdelay|block|확인|깃발 주인이 바뀐 채로 이만큼 지나야 수비가 반응한다. ms로 보인다(추정) (확인: 186줄 주석)|C
+/conquestconfig.defendercounterattack/responsechance|block|확인|깃발을 잃었을 때 반격할 확률. 1.0 = 항상 (확인: 197줄 주석)|C
+/conquestconfig.unitspawnwaittime|block|확인|AI가 자원이나 유닛 타이머를 기다리다 다시 고르기까지의 최대 시간(ms. 90000 = 1분 30초) (확인: 629~630줄 주석 "1:30 min (ms)")|C
+/conquestconfig.orderrotationperiod|block|확인|분대가 새 명령을 받기까지의 간격(ms. 150000 = 2분 30초) (확인: 632~633줄 주석 "2:30 min (ms)")|C
