@@ -64,6 +64,8 @@ mod\CTAToybox\
 
 2026-10-11에 게임 1.0.6.7의 모드 목록 화면에서 확인했다. `CTAToybox`가 목록에 나오고 활성화돼 있으며(버튼이 `DEACTIVATE`), 호환되지 않는다는 표시는 보이지 않는다. 다만 호환되지 않는 모드가 이 화면에 어떻게 표시되는지는 본 적이 없으므로, "표시가 없다"는 것은 화면에서 다른 모드와 다르게 보이는 점이 없다는 뜻이다. 나중에 이 모드가 "호환되지 않음"으로 표시되면 두 필드를 readme 형식의 숫자로 바꿔야 한다.
 
+2026-10-16에 호환되지 않을 때의 표시를 확인했다(v1.067.0). 두 필드를 `"1.000"`·`"1.010"`으로 바꾸자 모드 목록에서 `CTATOYBOX [1.0-1.10]`이 회색으로 바뀌고, 빨간 글씨 "This mod is not up to date. Please wait for the mod author to update it."(`options/mods/unsupported_warning`)가 붙으며, ACTIVATE·DEACTIVATE 단추가 사라지고 DELETE만 남았다. `options.set`의 `"ctatoybox:0"` 줄은 지워지지 않았다. 그러므로 `"any"`일 때 이 표시가 없던 것은 호환으로 판정된 것이다.
+
 ## 정션 다시 만들기
 
 ```powershell

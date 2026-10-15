@@ -38,7 +38,7 @@
 | `/actor/extender[inventory]` | block | [str]x6 | 6 | 6 | "inventory" | 미확인(자동) |  |  |  |
 | `/actor/extender[inventory]/box` | block | []x6 | 6 | 6 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
 | `/actor/extension` | block | [str]x6 | 6 | 6 | "inf_crate.mdl" ¦ "usa_stretcher.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
-| `/actor/mass` | block | [num]x6 | 6 | 6 | 100 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/actor/mass` | block | [num]x6 | 6 | 6 | 100 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/actor/patherid` | block | [str]x1 | 1 | 1 | "cannon.strecher" | 추정 | 길찾기 분류 이름 (추정: 값 "vehicle.large". set/PATHER.SET 참조로 보임) | 파일 구조와 값에서 추론 |  |
 | `/actor/props` | block | [str str str str]x5 [str str]x1 | 6 | 6 | "vision_lev00_can" "ammo_crate" "no_recrew_logic" "sq_ammo_supply" ¦ "vision_lev00_can" "no_recrew_logic" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume` | block | [str]x1 | 1 | 1 | "body1" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
@@ -57,7 +57,7 @@
 | `/entity/chassis/("car_trace")` | macro | [call:fx call:step call:wheell call:wheelr call:bonel call:boner]x1 | 1 | 1 | fx ( "tracks_sm" ) step ( 0.3 ) wheell ( "wlf" ) wheelr ( "wrf" ) bonel ( "FXtraceL2" ) boner ( "FXtraceR2" ) | 미확인(자동) |  |  |  |
 | `/entity/chassis/("mobility_car")` | macro | [call:speed call:speedatmaxturn call:reverse call:weight call:power call:fuel call:type call:range]x1 | 1 | 1 | speed ( 10 ) speedatmaxturn ( 8 ) reverse ( 8 ) weight ( 2.1 ) power ( 22 ) fuel ( 50 ) type ( fuel ) range ( 100 ) | 확인 | 바퀴 차량 기동 값. speed 최고 속도, speedatmaxturn 급선회 때 최고 속도, reverse 후진 최고 속도, weight 무게 t, power 마력, fuel 연료 용량 L, type 연료 종류, range 항속 km | 게임 파일 주석 |  |
 | `/entity/extension` | block | [str]x1 | 1 | 1 | "universal.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
-| `/entity/mass` | block | [num]x1 | 1 | 1 | 2100 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/entity/mass` | block | [num]x1 | 1 | 1 | 2100 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/entity/props` | block | [str str str]x1 | 1 | 1 | "truck" "tractor" "tractor_heavy" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/entity/volume` | block | [str]x2 | 1 | 2 | "fuel" ¦ "transmission" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/entity/volume/able` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -355,7 +355,7 @@
 | `/game_entity/extender[smokescreen]/cooldown` | block | [num]x136 | 136 | 136 | 5 ~ 20 | 추정 | 재사용 대기 시간 (추정: 이름과 값 5~20) | 파일 구조와 값에서 추론 | smoke launcher easily accessible from turret ¦ smoke launcher outside vehicle |
 | `/game_entity/extender[smokescreen]/itemtags` | block | [str]x136 | 136 | 136 | "mortareng_50 sm" ¦ "mortareng_50 wp" ¦ "grenade no8_smoke" ¦ "grenade nbks" | 추정 | 사용하는 탄의 태그 (추정: 값 "mortareng_50 sm") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extension` | block | [str]x2393 | 2324 | 2393 | 예: "blenheim_mk1.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
-| `/game_entity/mass` | block | [num]x698 | 698 | 698 | 5.5 ~ 1380000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/game_entity/mass` | block | [num]x698 | 698 | 698 | 5.5 ~ 1380000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/game_entity/obstacleid` | block | [str]x2 | 2 | 2 | "unbreakable" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/patherid` | block | [str]x563 | 563 | 563 | 예: "blenheim" | 추정 | 길찾기 분류 이름 (추정: 값 "vehicle.large". set/PATHER.SET 참조로 보임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer` | block | []x80 | 77 | 80 | 예: | 추정 | 승무원 자리 정의 묶음 (추정: 하위 place) | 파일 구조와 값에서 추론 | sits out of view from top of turret |
@@ -1268,7 +1268,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/extension` | block | [str]x60 | 58 | 60 | 예: "40mm_qf2.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/actor/hearingbias` | block | [num]x16 | 16 | 16 | 0 ~ 2 | 확인 | 소리 신호를 듣는 능력을 줄인다. 값은 미터 | 게임 파일 주석 | reduces units ability to hear sound signals. value = meters ¦ in meters |
 | `/actor/lodclass` | block | [str]x100 | 58 | 100 | "vehicle" ¦ "cannon" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/actor/mass` | block | [num]x64 | 58 | 64 | 32 ~ 47500 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/actor/mass` | block | [num]x64 | 58 | 64 | 32 ~ 47500 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/actor/nogroupmesh` | block | [num]x58 | 58 | 58 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/actor/obstacleid` | block | [str]x64 | 58 | 64 | "tank" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/actor/patherid` | block | [str]x140 | 58 | 140 | 예: "vehicle.large" | 추정 | 길찾기 분류 이름 (추정: 값 "vehicle.large". set/PATHER.SET 참조로 보임) | 파일 구조와 값에서 추론 |  |
@@ -1447,7 +1447,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/extension` | block | [str]x1 | 1 | 1 | "universal.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/entity/hearingbias` | block | [num]x1 | 1 | 1 | 4.5 | 확인 | 소리 신호를 듣는 능력을 줄인다. 값은 미터 | 게임 파일 주석 | reduces units ability to hear sound signals. value = meters ¦ in meters |
 | `/entity/lodclass` | block | [str]x1 | 1 | 1 | "vehicle" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/entity/mass` | block | [num]x1 | 1 | 1 | 2100 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/entity/mass` | block | [num]x1 | 1 | 1 | 2100 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/entity/nogroupmesh` | block | [num]x1 | 1 | 1 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/entity/obstacleid` | block | [str]x1 | 1 | 1 | "tank" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/entity/patherid` | block | [str]x1 | 1 | 1 | "vehicle.large" | 추정 | 길찾기 분류 이름 (추정: 값 "vehicle.large". set/PATHER.SET 참조로 보임) | 파일 구조와 값에서 추론 |  |
@@ -1700,7 +1700,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extension` | block | [str]x2456 | 2384 | 2456 | 예: "blenheim_mk1.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/game_entity/hearingbias` | block | [num]x533 | 533 | 533 | 0 ~ 250 | 확인 | 소리 신호를 듣는 능력을 줄인다. 값은 미터 | 게임 파일 주석 | reduces units ability to hear sound signals. value = meters ¦ in meters |
 | `/game_entity/lodclass` | block | [str]x988 | 763 | 988 | "vehicle" ¦ "cannon" ¦ "vehicle_plane" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/mass` | block | [num]x763 | 763 | 763 | 5.5 ~ 1380000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/game_entity/mass` | block | [num]x763 | 763 | 763 | 5.5 ~ 1380000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/game_entity/nogroupmesh` | block | [num]x763 | 763 | 763 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/game_entity/obstacleid` | block | [str]x1584 | 1572 | 1584 | "tank" ¦ "marine" ¦ "unbreakable" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/patherid` | block | [str]x2038 | 763 | 2038 | 예: "vehicle.large" | 추정 | 길찾기 분류 이름 (추정: 값 "vehicle.large". set/PATHER.SET 참조로 보임) | 파일 구조와 값에서 추론 |  |

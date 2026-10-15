@@ -68,7 +68,7 @@
 | R17 | [That207Guy's Realism](https://steamcommunity.com/workshop/filedetails/?id=3142379562) | 읽음 | 시야 설계 수치(사람 180~200m, 경전차·APC 800m, 중형 900m, 중전차 1000m). 경로 없음 |
 | R18 | [Long Range Combat](https://steamcommunity.com/workshop/filedetails/?id=2514972920) | 읽음 | 사거리 약 1.75배. 댓글: 멀티에서 쓰려면 `mod.info`의 게임 버전을 `any`로 |
 
-차량 파생 모델 `_x`·`_xx`(R19, 2026-10-15):
+차량 파생 모델 `_x`·`_xx`(R19, 2026-10-15). 2026-10-16 게임 안 확인: `panzer4g_x.mdl` 사본에서 엔진 뼈의 모델을 포탑 모델로 바꿔 두고 Panzer IV G의 엔진을 쏴 부수자("Engine Broken") 엔진 덱 자리에 포탑 모양 두 개가 나타났다. 포탑 등 부서지지 않은 부품은 그대로였다. 부품이 부서지면 그 부품을 `_x.mdl`의 같은 뼈 모델로 바꾼다는 개발사 설명과 맞다:
 
 | # | 사이트 | 읽기 | 쓸 만한 내용 | 바닐라 대조 |
 |---|---|---|---|---|

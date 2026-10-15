@@ -100,7 +100,7 @@
 | `/game_entity/extension` | block | [str]x545 | 545 | 545 | 예: "250lb_gp_mk4.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/fogable` | block | [atom]x30 | 30 | 30 | never ¦ always | 미확인(자동) |  |  |  |
 | `/game_entity/lodclass` | block | [str]x20 | 20 | 20 | "tracer" ¦ "casing" ¦ "decor_small" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/mass` | block | [num]x3 | 3 | 3 | 30 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 |  |
+| `/game_entity/mass` | block | [num]x3 | 3 | 3 | 30 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 |  |
 | `/game_entity/nogetshadows` | block | []x20 | 20 | 20 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/nogroupmesh` | block | [num]x79 | 79 | 79 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/game_entity/obstacleid` | block | [str]x2 | 2 | 2 | "stuff" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
@@ -266,7 +266,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/extender[stuff]/item` | block | [str]x1689 [str atom]x5 | 1694 | 1694 | 예: "sov_cap" | 추정 | 연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
 | `/actor/extension` | block | [str]x1694 | 1694 | 1694 | 예: "sov_cap.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/actor/lodclass` | block | [str]x3545 | 1694 | 3545 | "stuff_small" ¦ "stuff_weapon" ¦ "stuff_grenade" ¦ "stuff_mine" ¦ "decor_big" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/actor/mass` | block | [num]x1 | 1 | 1 | 300 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/actor/mass` | block | [num]x1 | 1 | 1 | 300 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/actor/nogroupmesh` | block | [num]x1865 | 1678 | 1865 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/actor/novisibilitypatch` | block | []x1675 | 1675 | 1675 | 예: | 미확인 | 인자 없는 플래그. 용도 불명 |  |  |
 | `/actor/obstacle` | block | [str]x18 | 18 | 18 | "body" | 미확인(자동) |  |  |  |
@@ -370,7 +370,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extension` | block | [str]x546 | 546 | 546 | 예: "250lb_gp_mk4.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/game_entity/fogable` | block | [atom]x30 | 30 | 30 | never ¦ always | 미확인(자동) |  |  |  |
 | `/game_entity/lodclass` | block | [str]x1039 | 526 | 1039 | "stuff_small" ¦ "stuff_weapon" ¦ "tracer" ¦ "decor_landmark" ¦ "part_small" ¦ "casing" ¦ "stuff_grenade" ¦ "decor_big" ¦ "decor_medium" ¦ "decor_small" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/mass` | block | [num]x23 | 21 | 23 | 1 ~ 500 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/game_entity/mass` | block | [num]x23 | 21 | 23 | 1 ~ 500 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/game_entity/nogetshadows` | block | []x20 | 20 | 20 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/nogroupmesh` | block | [num]x566 | 487 | 566 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/game_entity/novisibilitypatch` | block | []x487 | 487 | 487 | 예: | 미확인 | 인자 없는 플래그. 용도 불명 |  |  |

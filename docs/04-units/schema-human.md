@@ -675,7 +675,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/extender[vitality]/stamina/movement_limits/slow` | block | [num num]x1 | 1 | 1 | -1 -1 | 확인 | 느린 이동 속도. 주로 미션 스크립트에서 쓴다. km/h | 게임 파일 주석 | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/human/extension` | block | [str]x2 | 1 | 2 | "human.mdl" ¦ "human_fsm.ext" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |
 | `/human/lodclass` | block | [str]x1 | 1 | 1 | "human" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
-| `/human/mass` | block | [num]x1 | 1 | 1 | 70 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
+| `/human/mass` | block | [num]x1 | 1 | 1 | 70 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | 18.1kg gun and water + 23kg tripod ¦ empty weight , gross 6532 |
 | `/human/nogroupmesh` | block | [num]x2 | 1 | 2 | 1 | 미확인 | 값은 1뿐. 용도 불명 |  |  |
 | `/human/novisibilitypatch` | block | []x1 | 1 | 1 | 예: | 미확인 | 인자 없는 플래그. 용도 불명 |  |  |
 | `/human/obstacle` | block | []x1 [str]x1 | 1 | 2 | ¦ "impassable" | 미확인(자동) |  |  |  |

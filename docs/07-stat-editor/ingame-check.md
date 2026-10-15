@@ -205,3 +205,25 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 - **단계표 "판:값"은 계단이다.** 그 판부터 다음 칸 전까지 같은 값이고, 첫 칸보다 앞의 판은 0이다.
 - **진행 중인 캠페인도 지금 파일의 설정을 쓴다.** 캠페인을 만들 때 값을 저장해 두지 않는다(적어도 LoseGain).
 - 컨퀘스트에서 지는 가장 빠른 길은 전투 메뉴의 RETREAT다. 확인이 끝나면 게임을 끈 상태에서 수정을 모두 끄고 다시 빌드해 생성물을 지운다.
+
+## W-G 둘째 묶음 (2026-10-16, v1.067.0)
+
+남은 게임 안 확인(G3–G8, G11, G13)을 AI가 게임을 직접 조작해 확인했다. 프로젝트 `editor/projects/ingame-check-wg2.json`(커밋하지 않음, 수정 16건)과 손으로 넣은 `panzer4g_x.mdl` 사본 하나를 썼다. 스커미시는 "Test Mode"(자원 무제한)로 열고 적 칸을 닫았으며, 유닛은 구매 카드와 Spawn Menu 모드(`mod_3617250510`)로 불렀다. 확인이 끝나 수정을 모두 끄고 다시 빌드해 생성물과 사본을 지웠고 `options.set`·`mod.info`를 되돌렸다.
+
+| 백로그 | 고친 것 | 본 것 | 결과 |
+|---|---|---|---|
+| G3 | `difficulty/multiplayer.dl` `{any {health 1.0}}` → 3.0 | 스커미시(로그 `difficulty=multiplayer`)의 Ersatz-Grenadier 분대장(tier1, 체력 150%)과 핀란드 Reserve 분대장의 체력 | **확인**: 450/450(= 100 × 150% × 3.0). 난이도 파일의 `health`가 병사 최대 체력에 곱해진다 |
+| G4 | `smg/mp40.ammo` `{block 32}` → 7 | 분대장의 MP40 탄창(breed `"mp40 ammo" 192`, 무기 `filling "ammo mp40" 32`) | 탄창은 32발씩 6개 그대로. **`block`은 탄창 크기도 아니다**(뜻은 미확인) |
+| G5 | `mgun_ger.*.ammo` 9개의 `mass`를 0.011~0.019로 서로 다르게 | Panzer IV G(`"ammo mgun_ger belt" 2850`)와 핀란드 Maxim MG 08(`"ammo mgun_ger" 1000`) 인벤토리 툴팁 무게 | **확인**: 31.4kg·11.0kg = 수량 × 0.011, 둘 다 `mgun_ger.belt.ammo`. 계열 이름은 후보 9개 가운데 이 파일로 간다. 탄 `mass`는 한 발 무게(kg)다 |
+| G6 | `panzer4g_x.mdl` 사본에서 엔진·엔진 덮개·궤도·포 등의 뼈 모델을 `turret.ply`로, 포탑을 `body.ply`로 | Panzer IV G의 엔진을 37mm 철갑탄으로 쏴 "Engine Broken" | **확인**: 엔진 덱 자리에 포탑 모양 두 개가 나타났고 부서지지 않은 부품은 그대로였다. 부품이 부서지면 그 부품을 `_x.mdl`의 같은 뼈 모델로 바꾼다 |
+| G7 | 없음 | 에디터(`call_to_arms_ed.exe`)를 띄워 `game.log` | **일부 확인**: "Scanning mods in …/mods/ — Found 2 available mods", "Mod: activate mod ctatoybox". 에디터는 게임 `mods` 폴더의 로컬 모드만 찾아 켜고 창작마당 모드(MACE 등)는 켜지 않는다. 게임은 같은 `options.set` 순서로 창작마당 모드까지 켠다(위 47행). 에디터 안의 조작(F2·F3)은 보지 않았다 |
+| G8 | `mod.info` 버전 `"any"` → `"1.000"`·`"1.010"` | EXTRAS의 모드 목록 | **확인**: 회색 `CTATOYBOX [1.0-1.10]`, 빨간 "This mod is not up to date. Please wait for the mod author to update it.", 켜기·끄기 단추 없음(DELETE만). `options.set`의 줄은 남는다 |
+| G11 | `37mm_pak35` `{parameters "heat" {gravity 2}}` → 60, 후기형 PaK 36의 HEAT 3 → 30발 | 직접 조종(E)으로 HEAT를 조준하고 쏨 | **확인**: 조준점이 커서를 따라가지 않고 포 앞 2~4m에 묶였고, 쏜 탄이 그 자리(2.7m)에 떨어졌다. 철갑탄으로 바꾸면 조준점이 커서를 따라간다. `gravity`가 크면 탄이 빨리 떨어져 닿는 거리가 준다 |
+| G13 | Kalinin `varnight1~3.set`의 `night_vision` 0.75 → 0.4, 다음 실행에서 0.05 | 밤 판에서 적 분대가 보이는 거리 | **판단 못 함**: 0.4에서는 35.0m의 적 분대가 보였다. 0.05에서는 Spawn Menu로 놓은 적 분대가 8~30m 어디서도 보이지 않았지만, 결과 화면의 처치 수가 0이라 적이 정말 놓였는지 증명하지 못했다. 바닐라 0.75 대조도 없다 |
+
+알게 된 것(조작):
+
+- 게임은 마우스를 Raw Input으로 읽어 맨 앞 창일 때만 입력을 받는다. 창에 보낸 메시지는 무시한다.
+- 스커미시 로비에서 "Game settings → Test Mode"는 자원 무제한, AI 칸 오른쪽 클릭 → "Close slot"으로 적을 비우고 "Start with empty enemy team?"에 YES.
+- Spawn Menu의 국기 단추는 누를 때마다 소속을 돈다(독·소·영·미·핀·일·TEST). 배정 단추는 Auto Assign → Player 0 → … → Player 9로 돈다. 이번 판에서 나는 Player 1이었다. 항목을 누르면 놓을 자리에 초록 원이 커서를 따라오고, 한 번 더 누르면 놓는다.
+- 인벤토리 I, 직접 조종 E, 다음 탄 Space, 카메라를 고른 유닛에 Shift+F, 카메라 이동 W.
