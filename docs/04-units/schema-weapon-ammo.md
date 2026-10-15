@@ -165,7 +165,7 @@
 | `/weapon_throwing/aimrange` | block | [num]x1 | 1 | 1 | 30 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
 | `/weapon_throwing/filling` | block | [str]x1 | 1 | 1 | "throwable" | 추정 | 장전하는 탄의 태그 (추정: 값 "throwable") | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/weapon_throwing/foresight` | block | [str]x1 | 1 | 1 | "Foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_throwing/gravity` | block | [num]x1 | 1 | 1 | 1 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_throwing/gravity` | block | [num]x1 | 1 | 1 | 1 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_throwing/inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_throwing/inventory/noview` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_throwing/states` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -263,7 +263,7 @@
 | `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x7 | 7 | 7 | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x11 | 11 | 11 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/fsm` | block | [str]x1 | 1 | 1 | "pistol" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/from/inventory/link_bone` | block | [str]x5 | 5 | 5 | "gun_back" | 추정 | 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") | 파일 구조와 값에서 추론 |  |
@@ -359,7 +359,7 @@
 | `/weapon_bullet/firesoundclose` | block | [str]x1 | 1 | 1 | "flame/blank_flame" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
 | `/weapon_bullet/firingtimeout` | block | [num num]x4 | 4 | 4 | 11 3 ¦ 0.4 0.2 ¦ 0.8 0.2 ¦ 0.35 0.15 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
 | `/weapon_bullet/foresight` | block | [str]x6 | 6 | 6 | "foresight3" ¦ "foresight" ¦ "Foresight1" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x4 | 4 | 4 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x4 | 4 | 4 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/inventory` | block | []x4 | 4 | 4 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x3 | 3 | 3 | "smg" ¦ "bazooka" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/weapon_bullet/inventory/handle_bone` | block | [str]x1 | 1 | 1 | "tank_back" | 확인 | 무기를 손에 들지 않고 메고 있을 때 몸에 연결되는 무기 쪽 뼈대 | 게임 파일 주석 | when weapon is shouldered (not equipped) this bone on the weapon is linked to the {link_bone} defined above |
@@ -1513,7 +1513,7 @@
 | `/from/fillingvisible` | block | [str]x10 | 10 | 10 | "rocket" ¦ "faustrocket" ¦ "rocket00" | 미확인(자동) |  |  |  |
 | `/from/firesound` | block | [str]x45 | 45 | 45 | 예: "reactive/d1/Shared/Rocket_Launcher/" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
 | `/from/firesoundclose` | block | [str]x23 | 23 | 23 | "cannon/s3/d1/Shared/Mortar/" ¦ "cannon/s2/d1/Shared/Mortar/" ¦ "reactive/3p/GER/Panzerfaust/" ¦ "cannon/s1/d1/Shared/Mortar/" ¦ "cannon/s4/3p/Shared/Cannon_105to130mm_LV/" ¦ "gun/gun_interior/size4" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
-| `/from/gravity` | block | [num]x15 | 15 | 15 | 2 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x15 | 15 | 15 | 2 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x8 | 8 | 8 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/noview` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/from/inventory/size` | block | [num num]x5 | 5 | 5 | 7 1 ¦ 7 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
@@ -1700,7 +1700,7 @@
 | `/from/firingtimeoutdistancefactor` | block | []x2 | 2 | 2 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x4 | 2 | 4 | 0.25 0.5 ¦ 1.0 1.0 ¦ 0.3 0.6 ¦ 0.8 1.0 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x14 | 14 | 14 | "foresight1" ¦ "foresight4" ¦ "foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x3 | 3 | 3 | 0.75 ~ 1.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x3 | 3 | 3 | 0.75 ~ 1.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x49 | 49 | 49 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/fsm` | block | [str]x5 | 5 | 5 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/from/inventory/link_bone` | block | [str]x2 | 2 | 2 | "gun_back" | 추정 | 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") | 파일 구조와 값에서 추론 |  |
@@ -1726,7 +1726,7 @@
 | `/from/parameters/cursor` | block | [str]x7 | 5 | 7 | "ironsights/grenade" | 확인 | 직접 조종에서 조준할 때의 마우스 커서 | 게임 파일 주석 | rts cursor ¦ mouse cursor for weapon when aiming in direct control |
 | `/from/parameters/cursorreloading` | block | [str]x19 | 7 | 19 | "gun_heat" ¦ "gun_he" ¦ "gun_wp" ¦ "gun_saphe" ¦ "gun_apcnr" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
 | `/from/parameters/falloffstrength` | block | [num]x18 | 18 | 18 | 0 | 미확인 | 값 0~0.15 |  |  |
-| `/from/parameters/gravity` | block | [num]x6 | 6 | 6 | 0.08 ~ 3 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/parameters/gravity` | block | [num]x6 | 6 | 6 | 0.08 ~ 3 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2 | 2 | 2 | 450 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/parameters/projectiledamagetable` | block | []x3 | 2 | 3 | 예: | 추정 | 거리별 관통력 표 (추정: #row가 두 수의 쌍이고 주석이 탄종 이름) | 파일 구조와 값에서 추론 | adjusted to reduce far shoot ¦ M8 API + 350mph airspeed and reduced curve |
 | `/from/parameters/projectiledamagetable/#row` | block | [num num]x15 | 2 | 15 | 예: 20 24 | 추정 | 거리와 관통력 한 쌍 (추정: 값) | 파일 구조와 값에서 추론 |  |
@@ -1837,7 +1837,7 @@
 | `/weapon_bullet/entity` | block | [str]x1 | 1 | 1 | "binocular" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/weapon_bullet/filling` | block | [str num]x2 [str]x1 | 3 | 3 | "light" 0 ¦ "dummy ap" | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/weapon_bullet/foresight` | block | [str]x3 | 3 | 3 | "foresight1" ¦ "Foresight3" ¦ "vision_rot" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/inventory` | block | []x2 | 2 | 2 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x1 | 1 | 1 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/weapon_bullet/inventory/noview` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1896,7 +1896,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x7 | 7 | 7 | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/healthdamage` | block | [num]x8 | 8 | 8 | 55 ~ 350 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/inventory` | block | []x11 | 11 | 11 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/fsm` | block | [str]x1 | 1 | 1 | "pistol" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
@@ -2005,7 +2005,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/firesoundclose` | block | [str]x1 | 1 | 1 | "flame/blank_flame" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
 | `/weapon_bullet/firingtimeout` | block | [num num]x4 | 4 | 4 | 11 3 ¦ 0.4 0.2 ¦ 0.8 0.2 ¦ 0.35 0.15 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
 | `/weapon_bullet/foresight` | block | [str]x6 | 6 | 6 | "foresight3" ¦ "foresight" ¦ "Foresight1" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x5 | 5 | 5 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x5 | 5 | 5 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/healthdamage` | block | [num]x1 | 1 | 1 | 2500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/weapon_bullet/inventory` | block | []x4 | 4 | 4 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x3 | 3 | 3 | "smg" ¦ "bazooka" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
@@ -2147,7 +2147,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/firingtimeoutdistancefactor` | block | []x62 | 62 | 62 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x201 | 62 | 201 | 예: 0.2 0.65 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x14 | 14 | 14 | "foresight1" ¦ "foresight4" ¦ "foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x199 | 186 | 199 | 0.3 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x199 | 186 | 199 | 0.3 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/healthdamage` | block | [num]x49 | 48 | 49 | 55 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/inventory` | block | []x483 | 483 | 483 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/block` | block | [num]x42 | 42 | 42 | 5 ~ 10 | 미확인(자동) |  |  |  |
@@ -2172,7 +2172,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/parameters/cursorreloading` | block | [str]x64 | 29 | 64 | "gun_ap" ¦ "gun_heat" ¦ "gun_he" ¦ "gun_api" ¦ "gun_wp" ¦ "gun_saphe" ¦ "gun_apcnr" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
 | `/from/parameters/falloffmeter` | block | [num]x1339 | 175 | 1339 | 1 ~ 220 | 미확인 | 값 1~220 |  |  |
 | `/from/parameters/falloffstrength` | block | [num]x1357 | 176 | 1357 | 0 ~ 0.15 | 미확인 | 값 0~0.15 |  |  |
-| `/from/parameters/gravity` | block | [num]x986 | 54 | 986 | 0.08 ~ 3.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/parameters/gravity` | block | [num]x986 | 54 | 986 | 0.08 ~ 3.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/healthdamage` | block | [num]x48 | 18 | 48 | 100 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2605 | 179 | 2605 | 5 ~ 774.518828571428 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
@@ -2331,7 +2331,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/filling` | block | [str num]x3 [str]x1 | 4 | 4 | "light" 0 ¦ "dummy ap" ¦ "ammo goliath" 1 | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/weapon_bullet/firesound` | block | [str]x1 | 1 | 1 | "" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
 | `/weapon_bullet/foresight` | block | [str]x4 | 4 | 4 | "foresight1" ¦ "Foresight3" ¦ "vision_rot" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 곡사 (추정: .presets의 "default gravity" 2, "aerial gravity" 1) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/inventory` | block | []x2 | 2 | 2 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x1 | 1 | 1 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/weapon_bullet/inventory/noview` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
