@@ -11,6 +11,10 @@ namespace CtaToybox.Core
     public sealed class DisplayNames
     {
         readonly Dictionary<string, string> byContext = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+        // 현지화에 없는 이름(게임 설정 파일 등). 현지화보다 먼저 찾는다
+        readonly Dictionary<string, string> byPath = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        public void AddPathName(string virtualPath, string name) { byPath[virtualPath] = name; }
 
         public static DisplayNames Load(string csvPath)
         {
@@ -89,6 +93,7 @@ namespace CtaToybox.Core
         {
             string leaf = unitPath.Substring(unitPath.LastIndexOf('/') + 1);
             string name;
+            if (byPath.TryGetValue(unitPath, out name)) return name;
             if (unitPath.StartsWith("entity/", StringComparison.Ordinal))
             {
                 int dot = leaf.LastIndexOf('.');
