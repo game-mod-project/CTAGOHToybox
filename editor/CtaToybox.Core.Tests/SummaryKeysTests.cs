@@ -44,5 +44,8 @@ static class SummaryKeysTests
         T.Eq("그 밖의 기술", named.LabelOf("/breed/perks/\"*\"", "/breed/perks/\"rifle\""), "other names fall back to the \"*\" line");
         T.Eq("그 밖의 기술", named.LabelOf("/breed/perks/\"*\""), "without a raw path the \"*\" line is used");
         T.Eq("그 밖의 기술", named.LabelOf("/breed/perks/\"*\"", "/breed/perks/\"a/b\""), "a name with a slash does not line up and falls back");
+        T.Eq(new[] { "/breed/perks/\"health\"", "**/perks/\"speed\"", "/breed/perks/\"*\"" }, named.Keys.ToArray(), "Keys in file order");
+        T.Eq("/breed/perks/\"health\"", named.KeyOf("/breed/perks/\"*\"", "/breed/perks/\"health\""), "KeyOf names the matching key");
+        T.True(named.KeyOf("/x/y") == null, "KeyOf is null outside the summary");
     }
 }

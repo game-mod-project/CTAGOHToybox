@@ -16,7 +16,8 @@ namespace CtaToybox.Core
 
     public static class SettingStrings
     {
-        static readonly Regex PieceName = new Regex(@"^[A-Za-z_][A-Za-z0-9_]*$", RegexOptions.Compiled);
+        // 조각 이름: 낱말, 또는 *(나머지 모두. timers_frontlines.inc의 "…;*=1.00")
+        static readonly Regex PieceName = new Regex(@"^([A-Za-z_][A-Za-z0-9_]*|\*)$", RegexOptions.Compiled);
         static readonly Regex StepEntry = new Regex(@"^\d+(\.\d+)?(:\d+(\.\d+)?)+$", RegexOptions.Compiled);
 
         static string Body(string token)

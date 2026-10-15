@@ -106,5 +106,76 @@ static class RealFilesCheck
         int linked = new[] { ItemLinks.RuleName, ItemLinks.RuleWords, ItemLinks.RuleWordsNoExt }.Sum(r => byRule.TryGetValue(r, out int c) ? c : 0);
         T.True(linked * 100 >= itemNames.Count * 95, "at least 95% of item names link to exactly one file, as the survey found");
         T.Eq("set/stuff/smg/m3_grease", items.Find("m3_grease").Files.Single(), "the in-game-confirmed link");
+
+        // 게임 설정(하위 프로젝트 B): 맨 위 파일이 모두 읽히고, 같은 값으로 고쳐도 바이트가 같고, 문자열 속 설정은 나눴다 이으면 같다
+        int settingFiles = 0, settingUnread = 0, luaRows = 0, luaMismatch = 0, pieceStrings = 0, pieceMismatch = 0, settingWrongSlot = 0;
+        var settingExamples = new List<string>();
+        foreach (string vp in stack.Paths.Where(SettingFiles.IsTop).OrderBy(p => p, StringComparer.Ordinal))
+        {
+            settingFiles++;
+            string text = stack.ReadText(vp);
+            string error;
+            var rows = SourceRows.Of(vp, text, out error);
+            if (rows == null) { settingUnread++; settingExamples.Add("unread: " + vp + " " + error); continue; }
+            if (!LuaTable.IsLua(vp)) continue;
+            var edits = rows.Where(r => r.Leaves[0].Text != "nil")
+                .Select(r => new Edit { Unit = vp, File = vp, Path = r.Path, Occurrence = r.Occurrence, Arg = 0, Old = r.Leaves[0].Text, New = r.Leaves[0].Text }).ToList();
+            luaRows += edits.Count;
+            var results = new List<EditResult>();
+            string patched;
+            try { patched = LuaPatcher.Apply(text, edits, results); }
+            catch (Exception ex) { luaMismatch++; settingExamples.Add("lua throw: " + vp + " " + ex.Message); continue; }
+            if (patched != text || results.Any(r => r.Status != EditStatus.Applied)) { luaMismatch++; settingExamples.Add("lua patch: " + vp); }
+        }
+        foreach (string vp in stack.Paths.Where(p => SettingFiles.InArea(p) && !LuaTable.IsLua(p) && (p.EndsWith(".set") || p.EndsWith(".inc") || p.EndsWith(".dl"))))
+        {
+            string error;
+            var rows = SourceRows.Of(vp, stack.ReadText(vp), out error);
+            if (rows == null) continue;
+            foreach (var leaf in rows.SelectMany(r => r.Leaves))
+            {
+                var pieces = SettingStrings.Split(leaf.Text);
+                if (pieces == null) continue;
+                pieceStrings++;
+                if (SettingStrings.Join(leaf.Text, pieces.Select(x => x.Value).ToList()) != leaf.Text) { pieceMismatch++; settingExamples.Add("pieces: " + vp + " " + leaf.Text); }
+            }
+        }
+
+        // 요약 키가 실제 줄에 맞는지, 고칠 수 있다고 한 자리가 그 파일 그 자리의 글자인지(화면과 같은 세션으로 연다)
+        var summaryKeys = SummaryKeys.Load(Path.Combine("editor", "summary"), SettingFiles.Kind, new KeyAnnotations());
+        var matched = new HashSet<string>(StringComparer.Ordinal);
+        using (var session = EditorSession.Open(settingsPath, Directory.GetCurrentDirectory(), null))
+        {
+            foreach (var u in session.Index.Units.Where(x => x.EditorKind == SettingFiles.Kind))
+            {
+                var view = session.OpenUnit(u.Path);
+                foreach (var r in view.Rows)
+                {
+                    string k = summaryKeys.KeyOf(r.Path, r.RawPath);
+                    if (k != null) matched.Add(k);
+                    foreach (var v in r.Values.Where(x => x.Editable))
+                    {
+                        string error;
+                        var fileRows = SourceRows.Of(v.Trace.File, stack.ReadText(v.Trace.File), out error);
+                        var row = fileRows == null ? null : fileRows.FirstOrDefault(x => x.Occurrence == v.Trace.Occurrence && x.Path == v.Trace.KeyPath);
+                        if (row == null || v.Trace.Arg >= row.Leaves.Count || row.Leaves[v.Trace.Arg].Text != v.Trace.Text)
+                        { settingWrongSlot++; if (settingExamples.Count < 30) settingExamples.Add("slot: " + u.Path + " " + r.Path + " ← " + v.Trace.File + " " + v.Trace.KeyPath); }
+                    }
+                }
+            }
+        }
+        var missingKeys = summaryKeys.Keys.Where(k => !matched.Contains(k)).ToList();
+        Console.WriteLine("setting-files=" + settingFiles + " unread=" + settingUnread + " lua-rows=" + luaRows + " lua-mismatch=" + luaMismatch +
+                          " piece-strings=" + pieceStrings + " piece-mismatch=" + pieceMismatch + " setting-wrong-slot=" + settingWrongSlot + " summary-keys-missing=" + missingKeys.Count);
+        foreach (string e in settingExamples.Take(30)) Console.WriteLine("  " + e);
+        foreach (string k in missingKeys) Console.WriteLine("  summary key with no row: " + k);
+        T.True(settingFiles >= 22, "the game settings files were found");
+        T.Eq(0, settingUnread, "every game settings file reads");
+        T.True(luaRows > 300, "the conquest AI config was read");
+        T.Eq(0, luaMismatch, "an identity Lua edit leaves the file byte-identical");
+        T.True(pieceStrings >= 10, "the embedded setting strings were found");
+        T.Eq(0, pieceMismatch, "every embedded setting string splits and joins back to its bytes");
+        T.Eq(0, settingWrongSlot, "every editable settings value names the slot that holds that token");
+        T.Eq(0, missingKeys.Count, "every settings summary key matches a real row");
     }
 }
