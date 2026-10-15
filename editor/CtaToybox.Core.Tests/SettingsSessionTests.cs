@@ -94,6 +94,10 @@ static class SettingsSessionTests
             var res2 = session.OpenUnit(SettingFilesTests.Res);
             T.Eq("MP", res2.Rows.First(r => r.Path == "/standard/resources/mp/startval").Context, "StartVal of MP");
             T.True(res2.Rows.First(r => r.Path == "/standard/globalmaxcp").Context == null, "a key with no namesake gets no context");
+            // 요약 탭 줄 이름: 이름이 같은 줄에 붙인 상위 블록은 이름 뒤에 붙인다(이름을 대신하면 Low·Low·Low처럼 뜻이 사라진다)
+            T.Eq("시작할 때의 양 · MP", res2.Rows.First(r => r.Path == "/standard/resources/mp/startval").SummaryName("시작할 때의 양"), "namesake context follows the name");
+            T.Eq("volume body1", new RowView { Context = "volume body1" }.SummaryName("전면 장갑"), "a part context still stands for the name (A's summary)");
+            T.Eq("전면 장갑", new RowView().SummaryName("전면 장갑"), "no context: the name");
         }
 
         string o;

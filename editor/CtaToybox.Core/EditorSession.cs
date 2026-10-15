@@ -37,7 +37,16 @@ namespace CtaToybox.Core
         public int Repeats { get; set; } = 1;         // 같은 줄이 펼친 트리에 나온 횟수(CollapseRepeats가 하나로 모은 수)
         public string SourceComment { get; set; }     // Lua 설정의 개발사 주석(영어 원문). 없으면 null
         public string TableComment { get; set; }      // Lua 설정의 표 앞 주석. 없으면 null
+        public bool ContextIsNamesake { get; set; }   // Context가 이름이 같은 줄을 가르는 상위 블록 이름이다(게임 설정, NameNamesakes)
         public List<ValueView> Values { get; } = new List<ValueView>();
+
+        // 요약 탭의 줄 이름. 부위(volume body1 등)는 묶음 이름을 대신하는 줄 이름이 되고,
+        // 이름이 같은 줄의 상위 블록은 이름 뒤에 붙인다(대신하면 Low·Low·Low처럼 뜻이 사라진다)
+        public string SummaryName(string rowName)
+        {
+            if (Context == null) return rowName;
+            return ContextIsNamesake ? rowName + " · " + Context : Context;
+        }
     }
 
     public sealed class UnitView
@@ -330,7 +339,7 @@ namespace CtaToybox.Core
             {
                 var parents = group.Select(r => Parent(r.RawPath ?? r.Path)).ToList();
                 if (parents.Distinct(StringComparer.OrdinalIgnoreCase).Count() < 2) continue;
-                foreach (var r in group) r.Context = Parent(r.RawPath ?? r.Path);
+                foreach (var r in group) { r.Context = Parent(r.RawPath ?? r.Path); r.ContextIsNamesake = true; }
             }
         }
 

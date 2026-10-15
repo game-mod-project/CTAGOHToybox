@@ -42,6 +42,16 @@ namespace CtaToybox.Core
             return result.Count >= 2 ? result : null;
         }
 
+        // 값 고치기 창이 시작할 조각: 기존 수정의 새 값(editNew)이 지금 원본의 조각과 이름·순서·개수가 같으면 그것, 아니면 원본.
+        // 수정을 만든 뒤 모드나 패치로 원본의 조각이 바뀌면 옛 값을 새 칸에 넣지 않는다(수정 목록에는 "원본이 바뀜"으로 보인다)
+        public static List<SettingPiece> StartPieces(List<SettingPiece> source, string editNew)
+        {
+            var edited = editNew == null ? null : Split(editNew);
+            if (edited == null || edited.Count != source.Count) return source;
+            for (int i = 0; i < source.Count; i++) if (edited[i].Name != source[i].Name) return source;
+            return edited;
+        }
+
         // 원래 문자열의 조각 이름·순서·끝의 ;를 두고 값만 바꿔 잇는다. values는 조각 순서대로다
         public static string Join(string originalToken, IList<string> values)
         {

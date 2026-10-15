@@ -45,8 +45,9 @@ namespace CtaToybox.Core
         public static string KindOf(string valueText)
         {
             if (string.IsNullOrWhiteSpace(valueText)) return null;
+            // 값이 입력 전체여야 한다: "5 -- x"나 "5;"는 줄 하나로 읽히지만 표 안에 넣으면 파일이 깨진다
             var r = Read("x = " + valueText.Trim());
-            return r.Errors.Count == 0 && r.Rows.Count == 1 && r.Rows[0].Path == "/x" ? r.Rows[0].Kind : null;
+            return r.Errors.Count == 0 && r.Rows.Count == 1 && r.Rows[0].Path == "/x" && r.Rows[0].Value == valueText.Trim() ? r.Rows[0].Kind : null;
         }
 
         // 수식 계산: 수, + - * /, 괄호, 단항 -. 계산이 안 되거나 무한·NaN이면 false

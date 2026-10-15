@@ -73,7 +73,7 @@ namespace CtaToybox.App
                 Row = row, Group = group, GroupOrder = order,
                 // 요약에서는 묶음 머리가 항목 이름이므로 줄에는 어느 부위의 것인지만 보인다
                 Name = Text.RowName(row),
-                Label = summary ? (row.Context ?? Text.RowName(row)) : Text.RowName(row),
+                Label = summary ? row.SummaryName(Text.RowName(row)) : Text.RowName(row),
                 Key = "키 " + (row.RawPath ?? row.Path),
                 Context = Text.ContextLine(summary ? null : row.Context, row.Repeats),
                 Values = Text.ValuesLine(row),

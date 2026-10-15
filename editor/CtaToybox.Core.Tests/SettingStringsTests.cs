@@ -20,6 +20,13 @@ static class SettingStringsTests
         T.Eq(new[] { "infantry", "engineer", "*" }, SettingStrings.Split(timers).Select(x => x.Name).ToArray(), "a * piece name is allowed");
         T.Eq(timers, SettingStrings.Join(timers, new[] { "0.66", "1", "1.00" }), "and joins back");
         T.True(SettingStrings.Split("\"a b=1;c=2\"") == null && SettingStrings.Split("\"a=1;x*=2\"") == null, "other non-word names are not piece strings");
+
+        // 값 고치기 창의 시작 조각: 기존 수정의 새 값이 지금 원본과 같은 조각(이름·순서·개수)일 때만 그 값에서 시작한다
+        var now = SettingStrings.Split("\"a=1;b=2\"");
+        T.Eq(new[] { "1", "9" }, SettingStrings.StartPieces(now, "\"a=1;b=9\"").Select(x => x.Value).ToArray(), "start from the edit when the pieces match");
+        T.Eq(new[] { "1", "2" }, SettingStrings.StartPieces(now, "\"a=5\"").Select(x => x.Value).ToArray(), "fewer pieces in the edit: start from the source");
+        T.Eq(new[] { "1", "2" }, SettingStrings.StartPieces(now, "\"b=5;a=6\"").Select(x => x.Value).ToArray(), "other names or order: start from the source");
+        T.Eq(new[] { "1", "2" }, SettingStrings.StartPieces(now, null).Select(x => x.Value).ToArray(), "no edit: the source");
         T.True(SettingStrings.Split("\"0:500\"") == null && SettingStrings.Split("250") == null, "other values are not piece strings");
 
         T.True(SettingStrings.CheckPieces(p, "\"flag_capture_time=60;scoreStart=777\"") == null, "a changed value is fine");
