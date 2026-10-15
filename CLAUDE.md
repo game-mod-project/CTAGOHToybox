@@ -47,7 +47,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - `editor/summary/<종류>.psv`: 편집기 요약 탭에 올리는 키와 화면 이름(경로|이름). 경로 규칙은 `data/annotations`와 같다
 - `editor/settings/files.psv`: 게임 설정 항목의 화면 이름(경로|묶음|화면 이름)
 - `data/annotations/settings.psv`: 게임 설정 파일 전용 키 주석. 형식은 `common.psv`와 같다
-- `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`, `docs/08-unit-files-check.md`, `docs/09-modding-sources.md`
+- `docs/01-game-structure.md`, `docs/02-modding-research.md`, `docs/03-mod-folder-setup.md`, `docs/04-units/README.md`, `docs/04-units/coverage-notes.md`, `docs/08-unit-files-check.md`, `docs/09-modding-sources.md`, `docs/10-backlog.md`(미룬 작업 정리. 일을 끝내면 그 줄을 지운다)
 
 `docs/04-units/schema-*.md`, `coverage.md`, `docs/05-workshop-mods/*.md`, `docs/06-editable-attributes/*.md`는 생성물이다.
 
