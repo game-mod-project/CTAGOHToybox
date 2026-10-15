@@ -34,5 +34,15 @@ static class SummaryKeysTests
         T.Eq("적재품", fromFile.LabelOf("/game_entity/extender[inventory]/box/item"), "a tail");
         T.True(fromFile.LabelOf("/game_entity/chassis/maxspeed") == null, "annotation keys are not added when the file exists");
         T.Eq(2, SummaryKeys.Load(summary, "breed", notes).Count, "another kind without a file falls back to annotations");
+
+        // 따옴표 이름 줄: 펼친 경로는 "*"로 묶이지만 요약 파일은 이름을 넣은 경로로 줄을 나눌 수 있다
+        File.WriteAllText(Path.Combine(summary, "breed.psv"), "/breed/perks/\"health\"|체력\n**/perks/\"speed\"|이동 속도\n/breed/perks/\"*\"|그 밖의 기술\n");
+        var named = SummaryKeys.Load(summary, "breed", notes);
+        T.Eq("체력", named.LabelOf("/breed/perks/\"*\"", "/breed/perks/\"health\""), "a named exact path splits the quoted-name rows");
+        T.Eq("체력", named.LabelOf("/breed/perks/\"*\"", "/Breed/Perks/\"Health\""), "names match without case");
+        T.Eq("이동 속도", named.LabelOf("/breed/perks/\"*\"", "/breed/perks/\"speed\""), "a named tail");
+        T.Eq("그 밖의 기술", named.LabelOf("/breed/perks/\"*\"", "/breed/perks/\"rifle\""), "other names fall back to the \"*\" line");
+        T.Eq("그 밖의 기술", named.LabelOf("/breed/perks/\"*\""), "without a raw path the \"*\" line is used");
+        T.Eq("그 밖의 기술", named.LabelOf("/breed/perks/\"*\"", "/breed/perks/\"a/b\""), "a name with a slash does not line up and falls back");
     }
 }

@@ -11,6 +11,10 @@ static class KeyAnnotationsTests
         T.Eq(new[] { "a", "sensor" }, KeyPattern.PlainKeyPath("/a/off()/#sensor").ToArray(), "call-argument segments and the # marker are dropped");
         T.Eq(new[] { "/a/b/c", "**/a/b/c", "**/b/c", "**/c", "*/c" }, KeyPattern.Candidates("/a/b/c", true).ToArray(), "lookup order with wildcard");
         T.Eq(new[] { "/a/b/c", "**/a/b/c", "**/b/c", "**/c" }, KeyPattern.Candidates("/a/b/c", false).ToArray(), "lookup order without wildcard");
+        T.Eq("/breed/perks/\"health\"", KeyPattern.NamedPath("/breed/perks/\"*\"", "/Breed/Perks/\"Health\""), "the named path puts the lowercased name in place of \"*\"");
+        T.True(KeyPattern.NamedPath("/breed/perks/\"*\"", "/breed/perks/\"a/b\"") == null, "a name with a slash does not line up");
+        T.True(KeyPattern.NamedPath("/a/b", "/a/b") == null, "nothing to name");
+        T.Eq(new[] { "/p/\"hp\"", "**/p/\"hp\"", "**/\"hp\"", "/p/\"*\"", "**/p/\"*\"", "**/\"*\"", "*/\"*\"" }, KeyPattern.Candidates("/p/\"*\"", "/p/\"hp\"", true).ToArray(), "named candidates come first, without */name");
 
         T.Eq("human", KeyAnnotations.GroupOf("set/breed/mp/usa/late/x.set"), "breed group");
         T.Eq("human", KeyAnnotations.GroupOf("entity/humanskin/a/a.def"), "humanskin group");
@@ -43,6 +47,14 @@ static class KeyAnnotationsTests
         T.Eq("무기의 damage", KeyAnnotations.Load(dir, "weapon-ammo").Find("/a/damage", "block", false).Meaning, "a group file overrides common");
         T.Eq(5, KeyAnnotations.Load(dir, null).Count, "no group reads only common");
         T.Eq(0, KeyAnnotations.Load(Path.Combine(dir, "none"), "vehicle").Count, "a missing folder is empty");
+
+        // 따옴표 이름 줄은 이름을 넣은 경로의 주석이 먼저다
+        string dir2 = T.TempDir();
+        File.WriteAllText(Path.Combine(dir2, "common.psv"), "/breed/perks/\"*\"|block|추정|기술 이름과 수준|S\n/breed/perks/\"health\"|block|문서|체력|D\n");
+        var named = KeyAnnotations.Load(dir2, "human");
+        T.Eq("체력", named.Find("/breed/perks/\"*\"", "block", true, "/breed/perks/\"health\"").Meaning, "a named path has its own note");
+        T.Eq("기술 이름과 수준", named.Find("/breed/perks/\"*\"", "block", true, "/breed/perks/\"rifle\"").Meaning, "other names use the \"*\" note");
+        T.Eq("기술 이름과 수준", named.Find("/breed/perks/\"*\"", "block", true).Meaning, "without a raw path the \"*\" note is used");
 
         File.WriteAllText(Path.Combine(dir, "bad.psv"), "/a|block|추정\n");
         T.Throws<System.FormatException>(() => KeyAnnotations.Load(dir, "bad"), "a line with fewer than five fields is an error");

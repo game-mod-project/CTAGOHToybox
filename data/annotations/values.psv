@@ -3,6 +3,8 @@
 #   경로: 키 주석(common.psv)과 같은 규칙(정확한 경로, **/꼬리, */마지막 조각). 매크로 호출은 */("이름")
 #   자리: 호출 이름(speed(72)이면 speed), 앞에서 몇 번째(#1, #2 ...), 열쇠말 뒤 몇 번째(filling#1), 열쇠말 자체(=filled), 모든 값(*)
 #         #n은 첫 열쇠말(따옴표 없는 낱말, 예: filling) 앞의 값만 센다. 이름의 {n}은 자리 번호로 바뀐다
+#         따옴표 없는 낱말이 이 파일에 열쇠말로 적혀 있지 않고(=낱말, 낱말#n 없음) 그 자리의 #n이 있으면 열쇠말이 아니라 값이다(예: "rifle" lvl_3)
+#   경로의 "*"(따옴표 이름)는 이름을 넣어 줄을 나눌 수 있다: /breed/perks/"health"가 /breed/perks/"*"보다 먼저다
 #   근거: C 게임 파일 주석, A 키 주석(common.psv)의 설명, S 매크로 정의나 파일 구조, M 모더 글(docs/09)
 # 근거가 없는 자리는 이름 끝에 "(미확인)"을 붙인다.
 
@@ -114,6 +116,38 @@
 # ---------- 보병
 /breed/perks/"*"|#1|기술 이름|A
 /breed/perks/"*"|#2|수준|A
+/breed/perks/"health"|#1|항목 이름 (health = 체력)|A
+/breed/perks/"health"|#2|체력 배율 (100% = 1배)|A
+/breed/perks/"health_regeneration"|#1|항목 이름 (체력 회복)|A
+/breed/perks/"health_regeneration"|#2|체력 회복 배율 (100% = 1배)|A
+/breed/perks/"stamina"|#1|항목 이름 (stamina = 스태미나)|A
+/breed/perks/"stamina"|#2|스태미나 배율 (100% = 1배)|A
+/breed/perks/"stamina_regeneration"|#1|항목 이름 (스태미나 회복)|A
+/breed/perks/"stamina_regeneration"|#2|스태미나 회복 배율 (100% = 1배)|A
+/breed/perks/"speed"|#1|항목 이름 (speed = 이동 속도)|A
+/breed/perks/"speed"|#2|이동 속도 배수 (보통 1.00)|A
+/breed/perks/"personage"|#1|항목 이름 (personage = 소생 설정)|A
+/breed/perks/"personage"|#2|소생 설정 (0 = 숙련도 0에서 소생 가능, 1은 미확인)|C
+/breed/perks/"vision"|#1|항목 이름 (vision = 시야)|A
+/breed/perks/"vision"|#2|시야 필드 이름 (set/vision/vision_fields.inc)|A
+/breed/perks/"rifle"|#1|무기 종류 (rifle = 소총)|A
+/breed/perks/"rifle"|#2|기술 수준 (lvl_1~lvl_8, 높을수록 명중이 좋다)|C
+/breed/perks/"smg"|#1|무기 종류 (smg = 기관단총)|A
+/breed/perks/"smg"|#2|기술 수준 (lvl_1~, 높을수록 명중이 좋다)|C
+/breed/perks/"pistol"|#1|무기 종류 (pistol = 권총)|A
+/breed/perks/"pistol"|#2|기술 수준 (lvl_1~, 높을수록 명중이 좋다)|C
+/breed/perks/"mgun"|#1|무기 종류 (mgun = 기관총)|A
+/breed/perks/"mgun"|#2|기술 수준 (lvl_1~)|C
+/breed/perks/"mgun_light"|#1|무기 종류 (mgun_light = 경기관총)|A
+/breed/perks/"mgun_light"|#2|기술 수준 (lvl_1~)|C
+/breed/perks/"rocketlauncher"|#1|무기 종류 (rocketlauncher = 대전차 로켓·소총)|A
+/breed/perks/"rocketlauncher"|#2|기술 수준 (lvl_1~)|C
+/breed/perks/"tank_gun"|#1|무기 종류 (tank_gun = 전차포·포)|A
+/breed/perks/"tank_gun"|#2|기술 수준 (lvl_1~)|C
+/breed/perks/"melee"|#1|무기 종류 (melee = 근접 공격)|A
+/breed/perks/"melee"|#2|기술 수준 (lvl_1~)|A
+/breed/perks/"avoidance"|#1|항목 이름 (avoidance = 피해 회피)|A
+/breed/perks/"avoidance"|#2|회피 수준 (lvl_1~, 높을수록 저항이 크다)|C
 /breed/veterancy/"*"|#1|숙련 단계 이름|A
 /breed/veterancy/"*"|#2|그 단계에 필요한 값 (단위 미확인)|A
 /breed/perks/barricade/"*"|#1|구조물 분류|A
