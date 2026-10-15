@@ -156,3 +156,23 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 배운 것: 게임 안 대상을 안내할 때는 그 게임 속 이름이 한 병종·한 무기에만 쓰이는지 `data/display-names.csv`에서 먼저 센다.
 
 확인이 끝나 `ingame-check-app.json`의 수정을 모두 끄고 다시 빌드해 생성물을 지웠다.
+
+## 게임 설정 (하위 프로젝트 B, 2026-10-15, v1.067.0)
+
+프로젝트 `editor/projects/settings-check.json`(커밋하지 않음). 한 빌드에 일곱 건을 넣었다. 이 PC에서는 `resources_standard.set`과 `runtime_config.lua`를 MACE Wunderwaffe(`mod_3732639687`)가, `unitlimits.inc`를 MACE(`mod_2905667604`)가 덮어쓰므로, 수정은 그 판에 적용됐다. CTAToybox는 모드 목록 맨 뒤였다.
+
+| # | 고친 것 | 볼 곳 | 기대 | 결과 |
+|---|---|---|---|---|
+| 1 | `resources_standard.set` 시작 MP 5000 → 9137, 시작 RP 14 → 37 | 새 컨퀘스트(자원 standard) 첫 화면 | MP 9137, RP 37 | **확인**(사용자): MP 9137, RP 37. 새 캠페인 "Conquest 3"(`game.log` 00:02:36 Creating Campaign) |
+| 2 | `battle_zones.set` `parameters`의 `scoreStart=250` → 777 | 배틀존 시작 점수 | 777 | 판단 못 함. 스커미시를 하지 않았다 |
+| 3 | `unitlimits.inc` `officer=2` → 7 | 스커미시 구매 화면의 Leutnant [Heer](`mp/ger/*/Officer`, `inf_officer` 꼴로 `officer` 태그) 수 제한 | 7 | 판단 못 함. 스커미시를 하지 않았다 |
+| 4 | `runtime_config.lua` `WaveOffSecondsByAttackerState` degraded·reduced·retained 60·75·95 → 1135·1165·1210 | AI가 공격하는 컨퀘스트 전투의 `game.log` `[LUA] Print: attacker wave-off pressure … targetWaveOffSeconds=` | 1000 넘음 | **확인**(로그): 00:32:23~00:33:08 `attackerPressure= retained … targetWaveOffSeconds= 1210`, 00:33:23 `attackerPressure= reduced … targetWaveOffSeconds= 1165` |
+| 5 | 난이도 배수 | 숫자로 볼 곳 없음 | | 확인하지 않음 |
+
+알게 된 것:
+
+- **모드의 낱개 Lua 파일(`resource/script/...`)은 바닐라와 앞선 모드의 Lua를 덮어쓴다.** 4의 값이 Wunderwaffe의 낱개 파일 값(95·75)이 아니라 CTAToybox의 값이었다.
+- **컨퀘스트 자원 시작값(`StartVal`)은 새 캠페인에 들어간다.** 진행 중인 캠페인에 반영되는지는 이번에도 확인하지 않았다.
+- 같은 실행에서 우리 파일을 읽다가 생긴 오류는 `game.log`에 없다.
+
+확인이 끝나 수정을 모두 끄고, 게임을 끈 상태에서 다시 빌드해 생성물 네 파일을 지웠다. 확인 중에 만든 캠페인 "Conquest 3"은 시작 자원이 수정된 값(MP 9137)으로 만들어졌다.
