@@ -6,6 +6,7 @@
 //   filter <글자>             전체 탭 거르기
 //   open <글자>               값 고치기 창을 연다(지금 탭의 줄 가운데 이름·키·값에 글자가 든 첫 줄)
 //   type <n> <글자>           창의 n번째 값 칸에 쓴다(1부터)
+//   piece <n> <조각 이름> <글자>  창의 n번째 값이 문자열 속 설정이면 그 조각 칸에 쓴다
 //   scope unit|shared         창의 적용 범위
 //   ok                        "수정 목록에 넣기"를 누른다(꺼져 있으면 기록만 남긴다)
 //   cancel                    창을 닫는다
@@ -51,6 +52,7 @@ namespace CtaToybox.App
                         break;
                     }
                     case "type": { int n = int.Parse(arg.Substring(0, arg.IndexOf(' '))); dialog.TypeValue(n - 1, arg.Substring(arg.IndexOf(' ') + 1)); break; }
+                    case "piece": { var parts = arg.Split(' ', 3); dialog.TypePiece(int.Parse(parts[0]) - 1, parts[1], parts[2]); break; }
                     case "scope": dialog.ChooseScope(arg == "unit"); break;
                     case "ok":
                         if (dialog.PressOk()) { dialog = null; RefreshUnitViews(); RefreshEdits(); log.Add("ok: 넣었다"); }

@@ -40,6 +40,18 @@ namespace CtaToybox.Core
             return false;
         }
 
+        // 문자열 속 설정 조각의 뜻(values.psv의 자리 @이름). 후보 경로를 모두 본다. 모르면 null
+        public string PieceLabel(string path, string rawPath, string name)
+        {
+            foreach (string key in KeyPattern.Candidates(path, rawPath, true))
+            {
+                Dictionary<string, string> slots;
+                string label;
+                if (map.TryGetValue(key, out slots) && slots.TryGetValue("@" + name, out label)) return label;
+            }
+            return null;
+        }
+
         // 줄의 값마다 이름. 모르는 자리는 null. texts와 names는 같은 길이다(names는 감싼 호출의 이름, 없으면 null).
         // rawPath를 주면 따옴표 이름 줄은 이름을 넣은 경로의 값 이름을 먼저 찾는다(KeyPattern.Candidates)
         public List<string> Of(string path, IList<string> texts, IList<string> names, string rawPath = null)

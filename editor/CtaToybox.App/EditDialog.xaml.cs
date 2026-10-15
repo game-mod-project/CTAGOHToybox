@@ -18,6 +18,8 @@ namespace CtaToybox.App
         readonly UnitView unit;
         readonly RowView row;
         readonly Dictionary<int, TextBox> boxes = new Dictionary<int, TextBox>();
+        readonly Dictionary<int, List<TextBox>> pieceBoxes = new Dictionary<int, List<TextBox>>();   // 문자열 속 설정: 값 자리 → 조각 칸
+        readonly Dictionary<int, TextBlock> stepTexts = new Dictionary<int, TextBlock>();             // 단계표: 값 자리 → 풀이
 
         public EditDialog(EditorSession session, UnitView unit, RowView row, string label, string context)
         {
@@ -44,14 +46,48 @@ namespace CtaToybox.App
                 if (v.Editable && files.Count > 1)
                     caption.Children.Add(new TextBlock { Foreground = Brushes.Gray, FontSize = 12, TextWrapping = TextWrapping.Wrap,
                         Text = v.Trace.File.Substring(v.Trace.File.LastIndexOf('/') + 1) + " · 유닛 " + v.SharedBy + "개가 같이 씀" });
+                if (v.Editable && v.Pieces != null)
+                {
+                    // 문자열 속 설정: 조각마다 칸. 이미 수정이 있으면 그 새 값에서 시작한다(앞에 고친 조각이 남는다)
+                    var start = SettingStrings.Split(v.Edit != null ? v.Edit.New : v.Trace.Text) ?? v.Pieces;
+                    var block = new StackPanel { Margin = new Thickness(0, 3, 0, 3) };
+                    block.Children.Add(caption);
+                    var list = new List<TextBox>();
+                    for (int j = 0; j < v.Pieces.Count; j++)
+                    {
+                        var pieceLine = new DockPanel { Margin = new Thickness(12, 2, 0, 2) };
+                        var pieceCaption = new TextBlock { Width = 288, TextWrapping = TextWrapping.Wrap, FontSize = 12,
+                            Text = (v.PieceLabels[j] ?? v.Pieces[j].Name + " (뜻 미확인)") + "\n원문 " + v.Pieces[j].Name + " · 원래 " + v.Pieces[j].Value };
+                        DockPanel.SetDock(pieceCaption, Dock.Left);
+                        pieceLine.Children.Add(pieceCaption);
+                        var pieceBox = new TextBox { Text = start[j].Value, VerticalAlignment = VerticalAlignment.Top };
+                        pieceBox.TextChanged += (s, e) => Validate();
+                        pieceLine.Children.Add(pieceBox);
+                        block.Children.Add(pieceLine);
+                        list.Add(pieceBox);
+                    }
+                    pieceBoxes[i] = list;
+                    ValuesPanel.Children.Add(block);
+                    continue;
+                }
                 DockPanel.SetDock(caption, Dock.Left);
                 line.Children.Add(caption);
                 if (v.Editable)
                 {
                     var box = new TextBox { Text = Text.Value(v.Edit != null ? v.Edit.New : v.Trace.Text), VerticalAlignment = VerticalAlignment.Top };
                     box.TextChanged += (s, e) => Validate();
-                    line.Children.Add(box);
                     boxes[i] = box;
+                    if (v.Steps != null)
+                    {
+                        // 판 수 단계표: 칸 아래에 새 값의 풀이를 보인다
+                        var column = new StackPanel();
+                        column.Children.Add(box);
+                        var preview = new TextBlock { Foreground = Brushes.DimGray, FontSize = 12, TextWrapping = TextWrapping.Wrap };
+                        column.Children.Add(preview);
+                        stepTexts[i] = preview;
+                        line.Children.Add(column);
+                    }
+                    else line.Children.Add(box);
                 }
                 else line.Children.Add(new TextBlock { Text = "고칠 수 없다: " + v.Trace.Note, Foreground = Brushes.Gray, TextWrapping = TextWrapping.Wrap });
                 ValuesPanel.Children.Add(line);
@@ -85,7 +121,10 @@ namespace CtaToybox.App
         {
             var result = new List<string>();
             for (int i = 0; i < row.Values.Count; i++)
-                result.Add(boxes.ContainsKey(i) ? Token(row.Values[i].Trace.Text, boxes[i].Text) : null);
+            {
+                if (pieceBoxes.ContainsKey(i)) result.Add(SettingStrings.Join(row.Values[i].Trace.Text, pieceBoxes[i].Select(b => b.Text.Trim()).ToList()));
+                else result.Add(boxes.ContainsKey(i) ? Token(row.Values[i].Trace.Text, boxes[i].Text) : null);
+            }
             return result;
         }
 
@@ -108,6 +147,7 @@ namespace CtaToybox.App
                 if (error != null) errors.Add("값 " + (i + 1) + ": " + error);
                 else if (warning != null) warnings.Add("값 " + (i + 1) + ": " + warning);
             }
+            foreach (var kv in stepTexts) kv.Value.Text = "풀이: " + (SettingStrings.StepPreview(tokens[kv.Key]) ?? "꼴이 맞지 않는다");
             MessageText.Text = errors.Count > 0 ? string.Join("\n", errors) : string.Join("\n", warnings.Select(w => "경고: " + w));
             MessageText.Foreground = errors.Count > 0 ? Brushes.Firebrick : Brushes.DarkGoldenrod;
             OkButton.IsEnabled = errors.Count == 0 && changed;
@@ -133,6 +173,11 @@ namespace CtaToybox.App
 
         // 화면 확인 시나리오(--scenario)가 사람 대신 누른다. 사람이 하는 것과 같은 칸과 단추를 쓴다
         public void TypeValue(int index, string text) { boxes[index].Text = text; }
+        public void TypePiece(int index, string pieceName, string text)
+        {
+            int j = row.Values[index].Pieces.FindIndex(p => p.Name == pieceName);
+            pieceBoxes[index][j].Text = text;
+        }
         public void ChooseScope(bool unitOnly) { (unitOnly ? UnitRadio : SharedRadio).IsChecked = true; }
         public bool PressOk()
         {

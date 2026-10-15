@@ -32,5 +32,13 @@ static class ValueLabelsTests
         var l2 = ValueLabels.Load(file2);
         T.Eq(new[] { "항목 이름", "체력 (%)" }, l2.Of("/breed/perks/\"*\"", new[] { "\"health\"", "\"200%\"" }, new string[2], "/breed/perks/\"health\"").ToArray(), "a named path has its own value names");
         T.Eq(new[] { "기술 이름", "수준" }, l2.Of("/breed/perks/\"*\"", new[] { "\"rifle\"", "lvl_3" }, new string[2], "/breed/perks/\"rifle\"").ToArray(), "other names use the \"*\" names");
+
+        // 문자열 속 설정 조각의 뜻(자리 @이름)
+        string file3 = Path.Combine(dir, "values3.psv");
+        File.WriteAllText(file3, "/game/parameters|@scoreStart|시작 점수|S\n**/unitlimits|@officer|장교 수|S\n");
+        var l3 = ValueLabels.Load(file3);
+        T.Eq("시작 점수", l3.PieceLabel("/game/parameters", null, "scoreStart"), "a piece label by exact path");
+        T.Eq("장교 수", l3.PieceLabel("/game/presets/\"*\"/common/unitlimits", "/game/presets/\"s:x\"/common/unitLimits", "OFFICER"), "by tail, piece names ignore case");
+        T.True(l3.PieceLabel("/game/parameters", null, "flag_count") == null, "an unknown piece has no label");
     }
 }
