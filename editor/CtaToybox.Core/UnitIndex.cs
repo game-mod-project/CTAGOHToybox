@@ -37,6 +37,18 @@ namespace CtaToybox.Core
             var index = new UnitIndex { Signature = SignatureOf(stack) };
             for (int i = 0; i < paths.Count; i++)
             {
+                if (LuaTable.IsLua(paths[i]))
+                {
+                    // Lua 설정은 include가 없다. 값 가운데 수·수식의 개수를 센다
+                    var lua = LuaTable.Read(stack.ReadText(paths[i]));
+                    index.Units.Add(new UnitEntry
+                    {
+                        Path = paths[i], Kind = UnitKind.OfEditor(paths[i]), EditorKind = SettingFiles.Kind, Layer = stack.Find(paths[i]).Layer,
+                        Unresolved = lua.Errors.Count, Numbers = lua.Rows.Count(x => x.Kind == "number" || x.Kind == "expr"),
+                    });
+                    if (progress != null && (i + 1) % 1000 == 0) progress(i + 1, paths.Count);
+                    continue;
+                }
                 var r = resolver.Resolve(paths[i]);
                 index.Units.Add(new UnitEntry
                 {
@@ -61,7 +73,7 @@ namespace CtaToybox.Core
         }
 
         // 색인 형식이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다
-        const string FormatVersion = "4";
+        const string FormatVersion = "5";
 
         // 계층의 구성과 원본 파일(pak, 낱개 파일)의 크기·수정 시각으로 만든 지문
         public static string SignatureOf(SourceStack stack)

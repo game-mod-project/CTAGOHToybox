@@ -119,7 +119,7 @@ namespace CtaToybox.Core
         public void Rebase(Edit edit)
         {
             NeedProject();
-            var check = Check(edit, new Dictionary<string, SdlNode>(StringComparer.Ordinal));
+            var check = Check(edit, new Dictionary<string, List<KeyRow>>(StringComparer.Ordinal));
             if (check.Current == null) return;
             string before = edit.Old;
             edit.Old = check.Current;
@@ -129,27 +129,27 @@ namespace CtaToybox.Core
         public List<EditCheck> CheckEdits()
         {
             if (Project == null) return new List<EditCheck>();
-            var parsed = new Dictionary<string, SdlNode>(StringComparer.Ordinal);
+            var parsed = new Dictionary<string, List<KeyRow>>(StringComparer.Ordinal);
             return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed)).ToList();
         }
 
-        EditCheck Check(Edit e, Dictionary<string, SdlNode> parsed)
+        EditCheck Check(Edit e, Dictionary<string, List<KeyRow>> parsed)
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
-            SdlNode root;
-            if (!parsed.TryGetValue(file, out root))
+            List<KeyRow> rows;
+            if (!parsed.TryGetValue(file, out rows))
             {
-                string text = Stack.ReadText(file);
-                var p = text == null ? null : SdlCore.Parse(text);
-                root = p == null || p.Errors.Count > 0 ? null : p.Root;
-                parsed[file] = root;
+                string error;
+                rows = SourceRows.Of(file, Stack.ReadText(file), out error);
+                parsed[file] = rows;
             }
-            if (root == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 파싱되지 않는다: " + file };
-            var row = KeyLocator.Rows(root).FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            if (rows == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
+            var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
             var node = row != null && e.Arg >= 0 && e.Arg < row.Leaves.Count ? row.Leaves[e.Arg] : null;
             if (node == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 자리가 없다" };
             string rowText = string.Join(" ", row.Leaves.Select(l => l.Text));
-            if (node.Text != e.Old) return new EditCheck { Edit = e, Status = EditStatus.SourceChanged, Current = node.Text, RowText = rowText, Message = "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text };
+            bool same = LuaTable.IsLua(file) ? LuaPatcher.SameValue(node.Text, e.Old) : node.Text == e.Old;
+            if (!same) return new EditCheck { Edit = e, Status = EditStatus.SourceChanged, Current = node.Text, RowText = rowText, Message = "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text };
             if (e.Scope == "unit")
             {
                 string unit = SourceStack.ToVirtual(e.Unit ?? "");
