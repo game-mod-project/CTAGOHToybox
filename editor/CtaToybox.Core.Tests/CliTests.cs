@@ -26,6 +26,8 @@ static class CliTests
         File.WriteAllText(options, "{options {mods \"mod_111:0\" \"" + Path.GetFileName(outDir) + ":0\"}}");
         string settings = Path.Combine(work, "settings.json"), project = Path.Combine(work, "p.json");
         string o;
+        // 테스트는 실제로 켜진 게임에 영향받지 않는다
+        CliApp.GameRunning = () => false;
 
         T.Eq(2, Run(out o), "no command is a usage error");
         T.Eq(2, Run(out o, "frobnicate"), "an unknown command is a usage error");
@@ -63,6 +65,22 @@ static class CliTests
         T.Eq(0, Run(out o, "build", "--settings", settings, "--project", project), "build succeeds");
         T.True(o.Contains("적용 1건"), "build prints the summary");
         T.Eq("{a {x 9} {name \"n\"}}", Encoding.Latin1.GetString(File.ReadAllBytes(Path.Combine(outDir, "resource", "set", "a.set"))), "build writes the file");
+
+        // 게임이 실행 중이면 빌드하지 않는다: 실행 중에 바뀐 파일을 게임이 다시 읽다가 꺼진 적이 있다(2026-10-14)
+        T.Eq(0, Run(out o, "add", "--settings", settings, "--project", project, "--file", "set/a.set", "--path", "/a/x", "--new", "8"), "change the value");
+        CliApp.GameRunning = () => true;
+        try
+        {
+            T.Eq(1, Run(out o, "build", "--settings", settings, "--project", project), "build refuses while the game runs");
+            T.True(o.Contains("--force"), "and tells how to build anyway");
+            T.Eq("{a {x 9} {name \"n\"}}", Encoding.Latin1.GetString(File.ReadAllBytes(Path.Combine(outDir, "resource", "set", "a.set"))), "the refused build leaves the mod folder alone");
+            T.Eq(0, Run(out o, "build", "--settings", settings, "--project", project, "--force"), "build --force builds while the game runs");
+            T.True(o.Contains("경고: 게임이나 에디터가 실행 중이다"), "and still warns");
+            T.Eq("{a {x 8} {name \"n\"}}", Encoding.Latin1.GetString(File.ReadAllBytes(Path.Combine(outDir, "resource", "set", "a.set"))), "build --force writes the file");
+        }
+        finally { CliApp.GameRunning = () => false; }
+        T.Eq(0, Run(out o, "add", "--settings", settings, "--project", project, "--file", "set/a.set", "--path", "/a/x", "--new", "9"), "put it back");
+        T.Eq(0, Run(out o, "build", "--settings", settings, "--project", project), "rebuild");
 
         // 모르는 옵션
         T.Eq(2, Run(out o, "show", "set/a.set", "--settings", settings, "--fliter", "x"), "an unknown option is a usage error");
