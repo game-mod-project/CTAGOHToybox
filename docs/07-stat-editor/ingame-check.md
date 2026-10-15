@@ -227,3 +227,21 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 - 스커미시 로비에서 "Game settings → Test Mode"는 자원 무제한, AI 칸 오른쪽 클릭 → "Close slot"으로 적을 비우고 "Start with empty enemy team?"에 YES.
 - Spawn Menu의 국기 단추는 누를 때마다 소속을 돈다(독·소·영·미·핀·일·TEST). 배정 단추는 Auto Assign → Player 0 → … → Player 9로 돈다. 이번 판에서 나는 Player 1이었다. 항목을 누르면 놓을 자리에 초록 원이 커서를 따라오고, 한 번 더 누르면 놓는다.
 - 인벤토리 I, 직접 조종 E, 다음 탄 Space, 카메라를 고른 유닛에 Shift+F, 카메라 이동 W.
+
+## W-G 셋째 묶음 (2026-10-16, v1.067.0)
+
+남은 G4·G5·G7·G13을 AI가 게임과 에디터를 직접 조작해 확인했다. 프로젝트 `editor/projects/ingame-check-wg3.json`(커밋하지 않음, 수정 9건)과 손으로 넣은 파일 네 개(후보 사본 `mgun_ger.zz.ammo`·`mgun_ger.aaa.ammo`·`mgun_ger.aa.zz.ammo`, `breed/mp/ger/late/ersatz_gren_sl.set` 사본)를 썼다. 스커미시는 Test Mode, 밤은 "Mission Options → Nighttime"(로그 `With options: night_weather`)으로 열었다. 확인이 끝나 수정을 끄고 다시 빌드해 생성물과 사본을 지웠고 `options.set`을 되돌렸다.
+
+| 백로그 | 고친 것 | 본 것 | 결과 |
+|---|---|---|---|
+| G4 | `smg/mp40.ammo` `{block 32}` → 7, `inventory/weight` 3.1 → 10 | 분대장 인벤토리 툴팁, 직접 조종으로 탄창을 비운 뒤의 탄 수 | 칸마다 "9mm MP38/40 Magazine (10) (0.2 kg)". 한 칸의 발 수는 `weight`가 정한다(100/10 = 10, 바닐라 100/3.1 → 32). 쏘기 전 32/192, 다 쏜 뒤 0/192, 재장전 뒤 32/160. 재장전 양은 무기의 `filling` 32다. **`block`은 재장전 양도 아니다** |
+| G4 | `ersatz_gren_sl.set` 사본에서 `{item "mp40 ammo" 192}` → `{item "mp40 ammo"}`, `{item "ammo mgun_ger belt"}` 추가 | 구매 카드로 산 Ersatz-Grenadier 분대장 인벤토리 | 두 탄 모두 수량 없이 "(0.0 kg)" 한 칸(1발). **개수 없이 적은 아이템은 1개이고 `block`(7, 300)이 아니다** |
+| G5 | 후보 사본 `mgun_ger.zz.ammo`(mass 0.022), `mgun_ger.aaa.ammo`(0.021), `mgun_ger.aa.zz.ammo`(0.023)를 차례로 더함. `mgun_ger.belt.ammo`는 바닐라(0.0367) | 핀란드 Maxim MG 08(`"ammo mgun_ger" 1000`)의 탄 툴팁 | zz만 더했을 때 "7.92mm Belt-Fed Rounds (1000) (36.7 kg)" = belt. aaa를 더하자 "desc/ammo/mgun_ger aaa (1000) (21.0 kg)". aa.zz를 더하자 "desc/ammo/mgun_ger aa zz (1000) (23.0 kg)". **확인**: 후보 가운데 파일 이름순(점이 글자보다 앞) 맨 앞 파일을 고른다. 낱말 수(aa.zz는 4조각)와 계층(모드·바닐라)은 상관없다 |
+| G7 | 없음(빌드는 이 묶음 그대로) | 에디터(`call_to_arms_ed.exe`)에서 엔티티를 놓고 실행 | **일부 확인**: F2를 누르자 오른쪽 아래에 "RESET ALL INVENTORIES" 단추가 생겼다. 엔티티 목록(`-vehicle/germany/tank_medium/hummel`)을 고르고 맵을 누르면 놓인다. 새 맵에서 왼쪽 위 START를 누르면 "You have to store the map before!"가 나온다. Esc 메뉴 → Load…로 `map/multi/1v1_farmland`을 연 뒤 놓고 START를 누르자 시뮬레이션이 돌았다(로그 "Starting simulation on difficulty [normal]", 단추가 FINISH로 바뀜). 놓은 차량은 승무원이 없어 고를 수 없었고 인벤토리는 보지 못했다. 맵은 저장하지 않았다. 이번 에디터는 "Found 7 available mods"로 창작마당 모드까지 `options.set` 순서대로 켰다(둘째 묶음에서는 2개만 찾았다. 조건은 미확인) |
+| G13 | Kalinin과 Farmland의 `varnight1~3.set` `night_vision` 0.75 → 0.05 | 밤 판에서 적 AI 소속으로 놓은 분대를 내 분대 가까이에서 봄 | Kalinin 0.05: 직접 조종 거리 7.8m에 놓은 적 분대가 쏘는데(총구 불빛만 보임) 병사는 그려지지 않았다. Farmland: 같은 카메라·같은 자리(내 소총 분대에서 6.5m)에 적 분대를 놓자 0.75 판에서는 내 소총 분대가 3초 안에 8명을 쓰러뜨렸고 0.05 판에서는 내 소총 분대의 처치가 0이었다(그 적은 불빛 아래 다른 분대가 쓰러뜨렸다). **값이 낮을수록 밤에 적을 알아보는 거리가 준다는 쪽과 맞다.** 맵의 불빛과 AI 움직임이 섞여 배수가 어디에 곱해지는지는 미확인 |
+
+알게 된 것(조작):
+
+- 이 실행에서는 `options.set`에 있는데도 Spawn Menu 모드가 켜지지 않았다(로그에 `Mod: activate mod mod_3617250510`이 없음). EXTRAS → 모드 화면에서 켜자 게임이 모드 목록을 다시 쓰며 `ctatoybox`를 맨 앞으로 옮겼다. 시험 전후로 `options.set`을 백업에서 되돌린다.
+- 적 AI가 있는 판에서는 Spawn Menu의 번호가 소속을 가른다. 이번에는 Player 1이 적 AI, Player 2가 나였다(처치 기록의 이름과 고를 수 있는지로 가렸다).
+- 개수 없이 적은 탄은 툴팁에 수량이 나오지 않는다. 한 발이다.

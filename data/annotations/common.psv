@@ -229,7 +229,7 @@
 /entity/extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음)|S
 /extender[inventory]/box/item|block|추정|실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음)|S
 */size|block|확인|인벤토리 창의 크기. 가로 세로 칸 수|C
-*/weight|block|추정|적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인)|C
+*/weight|block|추정|적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발)|C
 /game_entity/extender[inventory]/weapon|block|추정|인벤토리에 장착할 수 있는 무기 종류 (추정: 값 "mgun")|S
 */mask|block|미확인|값 "mountable"|
 /game_entity/extender[cannon]|block|추정|화포 운용 기능. 밀기·사격·견인 상태를 정의한다 (추정: 하위 블록의 주석)|C
@@ -657,4 +657,4 @@
 */("velocity m/s")|macro|확인|탄종별 포구 초속 m/s. 탄종마다 초속이 다를 때 쓴다. ap 인자는 ap·apc·apche 등 철갑탄 계열에 함께 들어간다|C
 
 # ---------- 게임 안 확인으로 정한 것 (docs/07-stat-editor/ingame-check.md, 2026-10-14)
-**/bullet/inventory/block|block|미확인|탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 탄창 크기도 아니다: mp40.ammo를 32→7로 바꿔도 분대장 인벤토리의 MP40 탄창은 32발씩 6개였다(2026-10-16 게임 확인). 무엇을 정하는지는 미확인|S
+**/bullet/inventory/block|block|미확인|탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 탄창 크기도 아니다: mp40.ammo를 32→7로 바꿔도 분대장 인벤토리의 MP40 탄창은 32발씩 6개였다(2026-10-16 게임 확인). 재장전 양도 아니다: block 7에서 MP40을 비우고 재장전하자 32발이 찼다(무기 filling 32). 개수 없이 적은 아이템의 기본 수량도 아니다: breed에 {item "mp40 ammo"}처럼 개수를 빼면 1발이 들어갔다(2026-10-16 게임 확인). 바닐라 탄약 파일 148개 중 115개에서 100/weight의 정수 부분과 같다. 무엇을 정하는지는 미확인|S

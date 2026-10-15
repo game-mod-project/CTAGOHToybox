@@ -94,7 +94,7 @@
 | `/game_entity/extender[inventory]/box` | block | []x12 | 12 | 12 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[inventory]/box/item` | block | [str num]x25 | 6 | 25 | 예: "bandage_rus" 2 | 추정 | 실려 있는 아이템과 수량 (추정: 값 "ammo mgun_usa belt" 1000) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[inventory]/box/size` | block | [num num]x12 | 12 | 12 | 8 6 ¦ 4 4 ¦ 4 6 ¦ 6 6 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
-| `/game_entity/extender[inventory]/box/weight` | block | [num]x6 | 6 | 6 | 600 ~ 5000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 |  |
+| `/game_entity/extender[inventory]/box/weight` | block | [num]x6 | 6 | 6 | 600 ~ 5000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | 게임 파일 주석 |  |
 | `/game_entity/extender[stuff]` | block | [str]x504 | 504 | 504 | "stuff" | 추정 | 아이템 기능. 이 엔티티를 set/stuff의 아이템과 잇는다 (추정: 하위 item) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[stuff]/item` | block | [str]x504 | 504 | 504 | 예: "air_bomb_eng_250lb" | 추정 | 연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extension` | block | [str]x545 | 545 | 545 | 예: "250lb_gp_mk4.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 |  |
@@ -364,7 +364,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extender[inventory]/box` | block | []x18 | 12 | 18 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[inventory]/box/item` | block | [str num]x25 | 6 | 25 | 예: "bandage_rus" 2 | 추정 | 실려 있는 아이템과 수량 (추정: 값 "ammo mgun_usa belt" 1000) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
 | `/game_entity/extender[inventory]/box/size` | block | [num num]x18 | 12 | 18 | 4 4 ¦ 8 6 ¦ 4 6 ¦ 6 6 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
-| `/game_entity/extender[inventory]/box/weight` | block | [num]x12 | 12 | 12 | 200 ~ 5000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
+| `/game_entity/extender[inventory]/box/weight` | block | [num]x12 | 12 | 12 | 200 ~ 5000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/game_entity/extender[stuff]` | block | [str]x1009 | 505 | 1009 | "stuff" | 추정 | 아이템 기능. 이 엔티티를 set/stuff의 아이템과 잇는다 (추정: 하위 item) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/extender[stuff]/item` | block | [str]x505 | 505 | 505 | 예: "air_bomb_eng_250lb" | 추정 | 연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | 128+8 ¦ 80+48+8 |
 | `/game_entity/extension` | block | [str]x546 | 546 | 546 | 예: "250lb_gp_mk4.mdl" | 추정 | 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) | 파일 구조와 값에서 추론 | needs full QA |

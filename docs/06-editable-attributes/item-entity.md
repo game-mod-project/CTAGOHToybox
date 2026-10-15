@@ -49,7 +49,7 @@
 | `/game_entity/extender[inventory]` | "inventory" | **추정** 차량 화물칸 기능 (추정: 하위 box) |  | 12 | `entity/inventory/-gear_wearable/body/plash_palatka_a/plash_palatka_a.def` |
 | `/game_entity/extender[inventory]/box/item` | 예: "bandage_rus" 2 (13종 이상) | **추정** 실려 있는 아이템과 수량 (추정: 값 "ammo mgun_usa belt" 1000) |  | 6 | `entity/inventory/-gear_wearable/body/plash_palatka_a/plash_palatka_a.def` |
 | `/game_entity/extender[inventory]/box/size` | 8 6 ¦ 4 4 ¦ 4 6 ¦ 6 6 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 12 | `entity/inventory/-gear_wearable/body/plash_palatka_a/plash_palatka_a.def` |
-| `/game_entity/extender[inventory]/box/weight` | 600 ~ 5000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) |  | 6 | `entity/inventory/-stuff/ammo_box_inf/ammo_box_inf_ger.def` |
+| `/game_entity/extender[inventory]/box/weight` | 600 ~ 5000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) |  | 6 | `entity/inventory/-stuff/ammo_box_inf/ammo_box_inf_ger.def` |
 | `/game_entity/extender[stuff]` | "stuff" | **추정** 아이템 기능. 이 엔티티를 set/stuff의 아이템과 잇는다 (추정: 하위 item) |  | 504 | `entity/inventory/-ammo/-bomb/250lb_gp_mk4/250lb_gp_mk4.def` |
 | `/game_entity/extender[stuff]/item` | 예: "air_bomb_eng_250lb" (13종 이상) | **추정** 연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인) |  | 504 | `entity/inventory/-ammo/-bomb/250lb_gp_mk4/250lb_gp_mk4.def` |
 | `/game_entity/extension` | 예: "250lb_gp_mk4.mdl" (13종 이상) | **추정** 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) |  | 545 | `entity/inventory/-ammo/-bomb/250lb_gp_mk4/250lb_gp_mk4.def` |

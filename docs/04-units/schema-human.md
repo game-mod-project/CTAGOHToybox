@@ -636,7 +636,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/extender[inventory]/armor/volumes` | block | [str]x3 | 1 | 3 | "head" ¦ "body" | 추정 | 이 방어구가 덮는 볼륨 이름 (추정: 값 "head", "body") | 파일 구조와 값에서 추론 | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/human/extender[inventory]/box` | block | []x1 | 1 | 1 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
 | `/human/extender[inventory]/box/size` | block | [num num]x1 | 1 | 1 | 8 12 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
-| `/human/extender[inventory]/box/weight` | block | [num]x1 | 1 | 1 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
+| `/human/extender[inventory]/box/weight` | block | [num]x1 | 1 | 1 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/human/extender[inventory]/hand_left` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/human/extender[inventory]/hand_right` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/human/extender[resources]` | block | [str]x1 | 1 | 1 | "resources" | 추정 | 자원(공병의 건설 자원 등) 기능 (추정: 하위 resources) | 파일 구조와 값에서 추론 |  |

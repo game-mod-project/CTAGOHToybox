@@ -91,9 +91,9 @@
 | 합계 (서로 다른 이름) | 2,411 |
 
 - 앞의 세 규칙으로 하나의 파일에 이어지는 이름이 2,341개(97%)다.
-- 맞지 않은 56개 가운데 46개는 이름의 낱말이 파일 낱말의 일부인 파일이 있다. 예: `ammo mgun_usa` → `mgun_usa.belt.ammo` 하나, `ammo mgun_ger` → `mgun_ger.*.ammo` 10개, `bazooka` → `bazooka.*.ammo` 4개. 탄약 "계열"을 가리키는 이름으로 보이지만, 게임이 이것을 어떻게 고르는지는 **미확인**이다.
+- 맞지 않은 56개 가운데 46개는 이름의 낱말이 파일 낱말의 일부인 파일이 있다. 예: `ammo mgun_usa` → `mgun_usa.belt.ammo` 하나, `ammo mgun_ger` → `mgun_ger.*.ammo` 10개, `bazooka` → `bazooka.*.ammo` 4개. 탄약 "계열"을 가리키는 이름이다. 게임은 이름의 낱말을 모두 가진 파일 가운데 **파일 이름순(ASCII, 점이 글자보다 앞) 맨 앞 파일**을 고른다(2026-10-16 게임 확인. 같은 폴더의 후보로만 봤다).
 - 나머지 10개(`mgun`, `mgun1`, `kordr`, `grenade` 계열 일부 등)는 이름이 아니라 무기 자리나 다른 것을 가리키는 것으로 보인다. **미확인**.
-- 게임에서 확인한 것: `m3_grease`(첫 규칙. `docs/07-stat-editor/ingame-check.md`의 "일괄 확인" 4번), `ammo mgun_ger belt` → `mgun_ger.belt.ammo`(둘째 규칙, Panzer IV G), 계열 이름 `ammo mgun_ger` → `mgun_ger.belt.ammo`(핀란드 Maxim MG 08. 후보 9개 가운데 이 파일이다. 낱말이 가장 적고 이름순으로도 맨 앞이라 어느 규칙으로 고르는지는 아직 가르지 못했다). 2026-10-16 W-G에서 후보 파일마다 탄 무게를 다르게 바꿔 툴팁 무게로 가렸다.
+- 게임에서 확인한 것: `m3_grease`(첫 규칙. `docs/07-stat-editor/ingame-check.md`의 "일괄 확인" 4번), `ammo mgun_ger belt` → `mgun_ger.belt.ammo`(둘째 규칙, Panzer IV G), 계열 이름 `ammo mgun_ger` → `mgun_ger.belt.ammo`(핀란드 Maxim MG 08. 바닐라 후보 9개 가운데 이름순 맨 앞). 2026-10-16 W-G에서 후보 파일마다 탄 무게를 다르게 바꿔 툴팁 무게로 가렸다. 모드에 후보 사본을 더하자 `mgun_ger.zz.ammo`는 뽑히지 않고, `mgun_ger.aaa.ammo`, 이어서 낱말이 더 많은 `mgun_ger.aa.zz.ammo`가 뽑혔다. 그러므로 낱말 수나 계층이 아니라 이름순이다(`docs/07-stat-editor/ingame-check.md`의 "W-G 셋째 묶음").
 
 ## 유닛을 추가·수정하는 절차
 

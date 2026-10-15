@@ -66,7 +66,7 @@
 | `/from/inventory/fsm` | "belt" | **문서** 상태 기계 정의. 문자열은 이름 |  | 5 | `set/stuff/melee/shovel_eng` |
 | `/from/inventory/link_bone` | "gun_back" | **추정** 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") |  | 2 | `set/stuff/rifle/m12_shotgun` |
 | `/from/inventory/size` | 7 2 ¦ 4 6 ¦ 3 1 ¦ 6 2 ¦ 3 3 ¦ 4 2 ¦ 5 2 ¦ 7 3 ¦ 2 2 ¦ 4 5 ¦ 6 3 ¦ 2 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 49 | `set/stuff/explosive/compositionb_x4` |
-| `/from/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/melee/shovel_eng` |
+| `/from/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/melee/shovel_eng` |
 | `/from/mass` | 0.765 ~ 224 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 187 | `set/stuff/explosive/compositionb_x4` |
 | `/from/maxrange` | 40 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/thrower_v` |
 | `/from/minrange` | 5 ~ 150 | **추정** 최소 사거리 (추정: 이름) |  | 2 | `set/stuff/gun/600mm_karl` |
@@ -122,7 +122,7 @@
 | `/item/inventory/fsm` | "stuff" ¦ "belt" ¦ "hand-only" | **문서** 상태 기계 정의. 문자열은 이름 |  | 57 | `set/stuff/body/eng_radio` |
 | `/item/inventory/link_bone` | "backpacks" ¦ "head" ¦ "IK_UpDown" | **추정** 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") |  | 15 | `set/stuff/body/eng_radio` |
 | `/item/inventory/size` | 예: 3 4 (13종 이상) | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 51 | `set/stuff/body/eng_radio` |
-| `/item/inventory/weight` | 1 ~ 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 56 | `set/stuff/body/eng_radio` |
+| `/item/inventory/weight` | 1 ~ 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 56 | `set/stuff/body/eng_radio` |
 | `/item/mass` | 0.05 ~ 20 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 62 | `set/stuff/body/eng_radio` |
 | `/item/tag` | 예: "itemin1hand" (13종 이상) | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 60 | `set/stuff/body/eng_radio` |
 | `/weapon_bombing/filling` | "ammo air_bomb_eng_250lb" 2 ¦ "ammo air_bomb_eng_500lb" 2 ¦ "ammo air_bomb_ger_250kg" 1 ¦ "ammo air_bomb_ger_250kg" 2 ¦ "air_bomb_ger_50kg" 4 ¦ "air_bomb_100kg" 4 ¦ "ammo air_bomb_rus_250kg" 2 ¦ "ammo air_bomb_usa_500lb" 3 | **추정** 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 2x 200 rounds ¦ Uses stick magazine on the model. | 8 | `set/stuff/bombing/bomb_dropper_eng_100x2` |
@@ -151,7 +151,7 @@
 | `/weapon_bullet/gravity` | 0 | **추정** 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | same as other direct-fire "cannon" type weapons | 2 | `set/stuff/special/binocular` |
 | `/weapon_bullet/inventory/fsm` | "belt" | **문서** 상태 기계 정의. 문자열은 이름 |  | 1 | `set/stuff/special/binocular` |
 | `/weapon_bullet/inventory/size` | 2 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 1 | `set/stuff/special/binocular` |
-| `/weapon_bullet/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 1 | `set/stuff/special/binocular` |
+| `/weapon_bullet/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 1 | `set/stuff/special/binocular` |
 | `/weapon_bullet/mass` | 0 ~ 1.5 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 2 | `set/stuff/special/binocular` |
 | `/weapon_bullet/range` | 200 200 | **문서** 사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리 | 200m ¦ 285m max | 2 | `set/stuff/special/binocular` |
 | `/weapon_bullet/speed` | 1000 | **추정** 탄속 (추정: 위와 같은 키) | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. | 2 | `set/stuff/special/binocular` |
@@ -285,7 +285,7 @@
 | `/bullet/entity` | 예: "sturmtiger_ammo" (13종 이상) | **추정** 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | place holder | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
 | `/bullet/inventory/fsm` | "belt" | **문서** 상태 기계 정의. 문자열은 이름 |  | 99 | `set/stuff/flame/flame_thrower.ammo` |
 | `/bullet/inventory/size` | 1 1 ¦ 1 2 ¦ 2 1 ¦ 3 2 ¦ 2 2 ¦ 3 1 ¦ 3 3 ¦ 6 2 ¦ 8 4 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
-| `/bullet/inventory/weight` | 0.333 ~ 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
+| `/bullet/inventory/weight` | 0.333 ~ 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
 | `/bullet/mass` | 0.006 ~ 175 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
 | `/bullet/tag` | 예: "flame" (13종 이상) | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 120 | `set/stuff/explosive/goliath.100kg.ammo` |
 | `/bullet/trace/length` | 1.5 ~ 3 | **확인** 애니메이션 한 번에 해당하는 길이, 미터 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
@@ -329,7 +329,7 @@
 | `/from/detonationthickness` | 1 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 1 | `set/stuff/shell/bulletrus_125.ic.ammo` |
 | `/from/entity` | 예: "bazooka_heat_ammo" (13종 이상) | **추정** 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | place holder | 397 | `set/stuff/bazooka/bazooka.heat.ammo` |
 | `/from/inventory/size` | 예: 4 1 (13종 이상) | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 334 | `set/stuff/mortar/mortareng_107.he.ammo` |
-| `/from/inventory/weight` | 10 ~ 200 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 69 | `set/stuff/reactive/114mm_m8.ammo` |
+| `/from/inventory/weight` | 10 ~ 200 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 69 | `set/stuff/reactive/114mm_m8.ammo` |
 | `/from/mass` | 0.17 ~ 2170 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 357 | `set/stuff/bazooka/bazooka.heat.ammo` |
 | `/from/possibledamageradius` | 30 | **추정** 피해가 미칠 수 있는 반경 (추정: 이름) |  | 9 | `set/stuff/reactive/114mm_m8.ammo` |
 | `/from/tag` | 예: "heat_shell size1" (13종 이상) | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 394 | `set/stuff/bazooka/bazooka.heat.ammo` |
@@ -345,7 +345,7 @@
 | `/bullet/##trace/view/light` | 3 | 미확인. 값 1 |  | 1 | `set/stuff/rifle/shotgun.ammo` |
 | `/bullet/##trace/view/scaley` | 0.2 | 미확인 |  | 1 | `set/stuff/rifle/shotgun.ammo` |
 | `/bullet/damage/heating` | 10 | 미확인 |  | 1 | `set/stuff/rifle/grenade/usa_grenade.wp.ammo` |
-| `/bullet/inventory/block` | 5 ~ 300 | 미확인. 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 탄창 크기도 아니다: mp40.ammo를 32→7로 바꿔도 분대장 인벤토리의 MP40 탄창은 32발씩 6개였다(2026-10-16 게임 확인). 무엇을 정하는지는 미확인 |  | 103 | `set/stuff/flame/flame_thrower.ammo` |
+| `/bullet/inventory/block` | 5 ~ 300 | 미확인. 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 탄창 크기도 아니다: mp40.ammo를 32→7로 바꿔도 분대장 인벤토리의 MP40 탄창은 32발씩 6개였다(2026-10-16 게임 확인). 재장전 양도 아니다: block 7에서 MP40을 비우고 재장전하자 32발이 찼다(무기 filling 32). 개수 없이 적은 아이템의 기본 수량도 아니다: breed에 {item "mp40 ammo"}처럼 개수를 빼면 1발이 들어갔다(2026-10-16 게임 확인). 바닐라 탄약 파일 148개 중 115개에서 100/weight의 정수 부분과 같다. 무엇을 정하는지는 미확인 |  | 103 | `set/stuff/flame/flame_thrower.ammo` |
 | `/bullet/trace/view/light` | 1 | 미확인. 값 1 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/bullet/trace/view/scalex` | 1.5 ~ 2 | 미확인 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
 | `/bullet/trace/view/scaley` | 0.1 ~ 0.2 | 미확인 |  | 78 | `set/stuff/mgun/bren_drum_mag.ammo` |
@@ -456,7 +456,7 @@
 | `/bullet/detonationthickness` | 0.5 | **문서** 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 |  | 2 | `set/stuff/bazooka/rpg_he_ammo.pattern` |
 | `/bullet/inventory/fsm` | "belt" ¦ "stuff" | **문서** 상태 기계 정의. 문자열은 이름 |  | 7 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/inventory/size` | 3 1 ¦ 5 1 ¦ 4 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 6 | `set/stuff/bazooka/rpg_ammo.pattern` |
-| `/bullet/inventory/weight` | 100 ~ 1000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/bazooka/rpg_ammo.pattern` |
+| `/bullet/inventory/weight` | 100 ~ 1000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/mass` | 2.75 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 1 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/possibledamageradius` | 3 | **추정** 피해가 미칠 수 있는 반경 (추정: 이름) |  | 4 | `set/stuff/bazooka/rpg_ammo.pattern` |
 | `/bullet/tag` | "ammo rocketlauncher heat_shell heat dropboxed pierce no_ricochet" ¦ "ammo shell all_he fg dropboxed no_ricochet" ¦ "ammo rocketlauncher heat_shell dropboxed pierce no_ricochet" ¦ "ammo shell fg wp smoke wp_size1 dropboxed no_ricochet" ¦ "bomb fg itemin2hands build_in" ¦ "dropboxed distributable" ¦ "rocketselector rocketlauncher pierce no_ricochet" ¦ "ammo itemin2hands" | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 8 | `set/stuff/bazooka/rpg_ammo.pattern` |
@@ -483,7 +483,7 @@
 | `/from/inventory/fsm` | "pistol" | **문서** 상태 기계 정의. 문자열은 이름 |  | 1 | `set/stuff/pistol/pistol.pattern` |
 | `/from/inventory/link_bone` | "gun_back" | **추정** 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") |  | 5 | `set/stuff/mgun/hmgun.pattern` |
 | `/from/inventory/size` | 3 1 ¦ 7 2 ¦ 3 2 ¦ 2 1 ¦ 8 2 ¦ 6 2 ¦ 5 2 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 11 | `set/stuff/grenade/anti-personnel.pattern` |
-| `/from/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/melee/knife.pattern` |
+| `/from/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/melee/knife.pattern` |
 | `/from/lockfiredistancetime` | 0.5 | **확인** 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | Time that AIM is allowed to be out of range for before firing is disabled | 1 | `set/stuff/smg/smg.pattern` |
 | `/from/mass` | 0.3 ~ 3 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 5 | `set/stuff/explosive/explosive.pattern` |
 | `/from/parameters` | "api" | **추정** 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | SPgGr. ¦ Sprgr. | 1 | `set/stuff/mgun/hmgun.pattern` |
@@ -519,7 +519,7 @@
 | `/item/inventory/fsm` | "belt" ¦ "stuff" | **문서** 상태 기계 정의. 문자열은 이름 |  | 7 | `set/stuff/explosive/antipersonnel.pattern` |
 | `/item/inventory/link_bone` | "foot1r" | **추정** 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") |  | 1 | `set/stuff/head/heavy_headgear.pattern` |
 | `/item/inventory/size` | 2 2 ¦ 3 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 4 | `set/stuff/explosive/antitank.pattern` |
-| `/item/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/explosive/antipersonnel.pattern` |
+| `/item/inventory/weight` | 100 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 7 | `set/stuff/explosive/antipersonnel.pattern` |
 | `/item/mass` | 0.03 ~ 8 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 6 | `set/stuff/explosive/antitank.pattern` |
 | `/item/tag` | "smallitemin1hand head distributable" ¦ "smallitemin1hand dropboxed antipersonnel" ¦ "itemin2hands dropboxed antitank at_mine" ¦ "smallitemin1hand head armor distributable" ¦ "knife sharp_edge smallitemin1hand distributable" ¦ "missile smallitemin1hand throwable" | **추정** 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | game code ¦ fx code | 7 | `set/stuff/explosive/antipersonnel.pattern` |
 | `/item/throw/spreading` | 0.3 | **추정** 던질 때의 산포 (같은 자리의 본체 설명을 가져옴) | improved accuracy due to sight ¦ Skews the distribution of shells more biased toward the centre (>1) or away (<1) | 1 | `set/stuff/throwable.pattern` |
@@ -548,7 +548,7 @@
 | `/weapon_bullet/inventory/handle_bone` | "tank_back" | **확인** 무기를 손에 들지 않고 메고 있을 때 몸에 연결되는 무기 쪽 뼈대 | when weapon is shouldered (not equipped) this bone on the weapon is linked to the {link_bone} defined above | 1 | `set/stuff/flame/flame_thrower.pattern` |
 | `/weapon_bullet/inventory/link_bone` | "gun_back" ¦ "backpacks" | **추정** 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") |  | 2 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/inventory/size` | 8 2 ¦ 5 3 ¦ 4 2 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 3 | `set/stuff/bazooka/rpg_weapon.pattern` |
-| `/weapon_bullet/inventory/weight` | 100 ~ 1000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | will stack up in 100/2 = 2 on humans | 3 | `set/stuff/bazooka/rpg_weapon.pattern` |
+| `/weapon_bullet/inventory/weight` | 100 ~ 1000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) | will stack up in 100/2 = 2 on humans | 3 | `set/stuff/bazooka/rpg_weapon.pattern` |
 | `/weapon_bullet/lockfiredistancetime` | 0 | **확인** 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | Time that AIM is allowed to be out of range for before firing is disabled | 1 | `set/stuff/gun/gun.pattern` |
 | `/weapon_bullet/mass` | 1000 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 1 | `set/stuff/gun/gun.pattern` |
 | `/weapon_bullet/maxrange` | 25 | **문서** 쏠 수 있는 최대 거리 | 4,55km ¦ 4,3km | 1 | `set/stuff/gun/gun.pattern` |
