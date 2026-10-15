@@ -32,7 +32,7 @@ namespace CtaToybox.Core
 
         public static UnitIndex Build(SourceStack stack, Action<int, int> progress)
         {
-            var paths = stack.Paths.Where(p => UnitKind.Of(p) != null).OrderBy(p => p, StringComparer.Ordinal).ToList();
+            var paths = stack.Paths.Where(p => UnitKind.OfEditor(p) != null).OrderBy(p => p, StringComparer.Ordinal).ToList();
             var resolver = new SdlResolver(stack.ReadText);
             var index = new UnitIndex { Signature = SignatureOf(stack) };
             for (int i = 0; i < paths.Count; i++)
@@ -40,9 +40,9 @@ namespace CtaToybox.Core
                 var r = resolver.Resolve(paths[i]);
                 index.Units.Add(new UnitEntry
                 {
-                    Path = paths[i], Kind = UnitKind.Of(paths[i]), Layer = stack.Find(paths[i]).Layer,
+                    Path = paths[i], Kind = UnitKind.OfEditor(paths[i]), Layer = stack.Find(paths[i]).Layer,
                     Includes = r.Includes, Presets = r.Presets, Unresolved = r.Unresolved.Count, Numbers = CountNumbers(r.Nodes),
-                    EditorKind = UnitKind.EditorKindOf(UnitKind.Of(paths[i]), r.Includes)
+                    EditorKind = UnitKind.EditorKindOf(UnitKind.OfEditor(paths[i]), r.Includes)
                 });
                 if (progress != null && (i + 1) % 1000 == 0) progress(i + 1, paths.Count);
             }
@@ -61,7 +61,7 @@ namespace CtaToybox.Core
         }
 
         // 색인 형식이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다
-        const string FormatVersion = "3";
+        const string FormatVersion = "4";
 
         // 계층의 구성과 원본 파일(pak, 낱개 파일)의 크기·수정 시각으로 만든 지문
         public static string SignatureOf(SourceStack stack)

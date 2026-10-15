@@ -119,7 +119,7 @@ namespace CtaToybox.App
                 {
                     Entry = u,
                     Title = name ?? file,
-                    Sub = (name == null ? "" : file + " · ") + UnitKind.Label(u.EditorKind) + " · " + session.LayerLabel(u.Layer),
+                    Sub = (name == null ? "" : file + " · ") + session.KindLabel(u) + " · " + session.LayerLabel(u.Layer),
                 };
             }).ToList();
             ResultCountText.Text = found.Count > MaxResults ? found.Count.ToString("N0") + "개 가운데 앞의 " + MaxResults + "개 (이름순). 검색어를 더 쓴다." : found.Count.ToString("N0") + "개 (이름순)";

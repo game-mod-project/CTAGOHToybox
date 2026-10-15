@@ -10,7 +10,7 @@ static class UnitFilterTests
 
     public static void Run()
     {
-        T.Eq(new[] { "tank", "cannon", "car", "vehicle-other", "breed", "stuff" }, UnitKind.Editor, "editor kinds");
+        T.Eq(new[] { "tank", "cannon", "car", "vehicle-other", "breed", "stuff", "settings" }, UnitKind.Editor, "editor kinds");
         T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/armor.ext", "properties/tank.ext", "properties/vehicle.ext" }), "a tank reads tank.ext");
         T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/tank_assaultgun.ext" }), "an assault gun is a tank");
         T.Eq("cannon", UnitKind.EditorKindOf("vehicle", new[] { "properties/cannon_crew.ext", "properties/cannon.ext", "properties/tank_crew.ext" }), "cannon rules come before tank rules");
