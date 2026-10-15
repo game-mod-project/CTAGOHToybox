@@ -19,7 +19,7 @@
 /breed/perks/"stamina"|block|추정|스태미나 배율. 빠르게 움직일 때 줄어든다. 값 "125%"는 level_generic.inc의 단계 이름(1.25배) (추정: set/ability/stamina.set. Call to Arms 위키의 stamina 설명)|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
 /breed/perks/"stamina_regeneration"|block|추정|스태미나 회복 배율. 값 "150%"는 level_generic.inc의 단계 이름(1.5배) (추정: set/ability/stamina_regeneration.set. Call to Arms 위키의 staminaRegeneration 설명)|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
 /breed/perks/"speed"|block|추정|이동 속도 배수로 보인다. tier 매크로에서 보통 1.00, 정찰 1.10, 방어 0.90, 의무병 1.10, 민간인 0.90 (추정: set/breed/presets/perks/health.inc·specialties.inc의 값. 주석 없음)|S
-/breed/perks/"personage"|block|확인|소생 설정. 0이면 숙련도 0에서 쓰러진 병사를 살릴 수 있다 (확인: set/breed/presets/perks/health.inc 주석 "This means soldiers are revivable at veterancy 0"). 값은 소생 가능 상태(Personage 퍽)가 켜지는 숙련도로 보인다. 그러면 1은 숙련도 1부터다 (추정: 게임 문자열 perks/personage "Personage"와 perks/required_veterancy " (Vet. %i)", interaction_entity/human.inc 600행 "stops human from being revive-able")|C
+/breed/perks/"personage"|block|확인|소생 설정. 0이면 숙련도 0에서 쓰러진 병사를 살릴 수 있다 (확인: set/breed/presets/perks/health.inc 주석 "This means soldiers are revivable at veterancy 0"). 값은 소생 가능 상태(Personage 퍽)가 켜지는 숙련도다. 0이 아니면 Library의 퍽에 "Personage (Vet. N)"으로 보인다 (게임 안 확인 2026-10-15: tier2_standard를 3으로 바꾸자 그 tier의 병종은 "Personage (Vet. 3)", 다른 tier는 숙련도 표시 없이 "Personage")|C
 /breed/perks/"vision"|block|추정|시야 필드 이름. human, human_elite, human_recon이 있고 set/vision/vision_fields.inc의 같은 이름 필드로 이어진다 (추정: 이름 일치. set/breed/presets/perks/vision.inc의 매크로가 넣는다)|S
 /breed/perks/"rifle"|block|확인|소총 기술 수준. lvl_N은 set/ability/skill_rifle.set의 단계이고, 단계마다 자세(서기·앉기·엎드리기·엄폐)별 명중(accuracy, 높을수록 좋다)·반동·흔들림이 있다. lvl_1 명중 0.65, lvl_8 1.72 (확인: skill_rifle.set 주석)|C
 /breed/perks/"smg"|block|확인|기관단총 기술 수준. lvl_N은 set/ability/skill_smg.set의 단계(자세별 명중·반동·흔들림) (확인: skill 파일 구조와 skill_rifle.set 주석)|C
@@ -39,7 +39,7 @@
 /breed/veterancy/"*"|block|추정|숙련도 단계 이름과 그 단계에 필요한 값. 예: "lvl_1" 4 (추정: veterancy.inc의 주석에 단계별 숫자가 적혀 있으나 단위는 미확인)|S
 /breed/veterancy/(mod)|mod|추정|게임 모드 조건. (mod "mp" ...)는 멀티플레이에서만 적용 (추정: set/entitymanager.set에서 mod "mp"와 mod not "mp"가 짝으로 쓰임)|S
 /breed/inventory|block|추정|소지품 목록 (추정: 하위가 item 행)|S
-/breed/inventory/item|block|추정|소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
+/breed/inventory/item|block|추정|소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태). 수가 둘이면 병사마다 첫 수 ± 둘째 수 사이에서 개수가 정해진다 (게임 안 확인 2026-10-15: 의무병 붕대를 13 13으로 바꾸자 병사 6명이 21·2·24·11·25·4개)|파일 구조와 값에서 추론. 커뮤니티 가이드도 같은 설명: steamcommunity.com/sharedfiles/filedetails/?id=3629209372 (2026-10-11 확인)
 */in_hands|block|추정|스폰 때 손에 드는 아이템의 순번 (추정: 이름과 값 0~. 기준이 0부터인지는 미확인)|S
 /breed/tags|block|추정|유닛 분류 태그 문자열 (추정: 값 "soldier", "soldier_bazooka")|S
 */voice|block|추정|음성 세트 국가 코드 (추정: 값 eng 등)|S

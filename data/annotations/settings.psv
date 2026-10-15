@@ -25,8 +25,8 @@
 **/resources/ap|block|확인|AP(탄약 포인트) 묶음 (확인: 주석 "Ammo points")|C
 **/resources/rp|block|확인|RP(연구 포인트) 묶음 (확인: 주석 "Research points")|C
 */startval|block|확인|컨퀘스트를 시작할 때 이 자원의 양 (확인: values.set StartVal)|C
-*/wingain|block|확인|이긴 판마다 얻는 이 자원의 양. "판 수:양" 단계표이거나 수 하나 (확인: values.set WinGain "depending on how many games were played"). 칸의 값이 그 판부터 다음 칸 전까지 쓰이는지는 미확인|C
-*/losegain|block|확인|진 판마다 얻는 이 자원의 양. "판 수:양" 단계표이거나 수 하나 (확인: values.set LoseGain). 칸의 값이 그 판부터 다음 칸 전까지 쓰이는지는 미확인|C
+*/wingain|block|확인|이긴 판마다 얻는 이 자원의 양. "판 수:양" 단계표이거나 수 하나 (확인: values.set WinGain "depending on how many games were played"). 칸의 값은 그 판부터 다음 칸 전까지 쓰이고(계단), 첫 칸보다 앞의 판은 0이다 (LoseGain으로 게임 안 확인 2026-10-15. WinGain은 같은 꼴이라 같다고 본다)|C
+*/losegain|block|확인|진 판마다 얻는 이 자원의 양. "판 수:양" 단계표이거나 수 하나 (확인: values.set LoseGain). 칸의 값은 그 판부터 다음 칸 전까지 쓰이고(계단), 첫 칸보다 앞의 판은 0이다. 진행 중인 캠페인도 지금 파일의 값을 쓴다 (게임 안 확인 2026-10-15: "2:111 6:555"에서 1~4패가 0·111·111·111, 저장해 둔 캠페인에 "1:333"을 넣자 첫 패배가 333)|C
 */maprewards|block|확인|맵 종류별 추가 보상. 한 판은 무작위로 고른 한 종류다 (확인: values.set MapRewards)|C
 **/maprewards/airfield|block|확인|맵 종류가 비행장(Airfield)일 때 추가 보상 (확인: values.set MapRewards)|C
 **/maprewards/ammodepot|block|확인|맵 종류가 탄약고(Ammodepot)일 때 추가 보상 (확인: values.set MapRewards)|C

@@ -5,7 +5,7 @@
 #         #n은 첫 열쇠말(따옴표 없는 낱말, 예: filling) 앞의 값만 센다. 이름의 {n}은 자리 번호로 바뀐다
 #         따옴표 없는 낱말이 이 파일에 열쇠말로 적혀 있지 않고(=낱말, 낱말#n 없음) 그 자리의 #n이 있으면 열쇠말이 아니라 값이다(예: "rifle" lvl_3)
 #   경로의 "*"(따옴표 이름)는 이름을 넣어 줄을 나눌 수 있다: /breed/perks/"health"가 /breed/perks/"*"보다 먼저다
-#   근거: C 게임 파일 주석, A 키 주석(common.psv)의 설명, S 매크로 정의나 파일 구조, M 모더 글(docs/09)
+#   근거: C 게임 파일 주석, A 키 주석(common.psv)의 설명, S 매크로 정의나 파일 구조, M 모더 글(docs/09), G 게임 안 확인(docs/07-stat-editor/ingame-check.md)
 # 근거가 없는 자리는 이름 끝에 "(미확인)"을 붙인다.
 
 # ---------- 기동 (properties/mobility.inc와 유닛 파일의 인자 주석)
@@ -103,8 +103,8 @@
 **/box/size|#1|가로 칸 수|A
 **/box/size|#2|세로 칸 수|A
 /breed/inventory/item|#1|아이템 이름|A
-/breed/inventory/item|#2|개수|A
-/breed/inventory/item|#3|둘째 수 (미확인. 첫 수가 소수인 줄이 많아 첫 수는 기대값, 둘째 수는 ± 폭으로 보인다. 모더 글은 무작위 계수라고 한다)|S
+/breed/inventory/item|#2|개수 (둘째 수가 있으면 가운데 값. 소수도 된다)|G
+/breed/inventory/item|#3|± 폭 (병사마다 첫 수 ± 이 값 사이에서 개수가 정해진다)|G
 /breed/inventory/item|=filled|장전된 채로 지급 (열쇠말 filled)|M
 /breed/inventory/item|=filling|열쇠말 filling (뒤가 장전된 탄과 수량)|A
 /breed/inventory/item|filling#1|장전된 탄|A
@@ -127,7 +127,7 @@
 /breed/perks/"speed"|#1|항목 이름 (speed = 이동 속도)|A
 /breed/perks/"speed"|#2|이동 속도 배수 (보통 1.00)|A
 /breed/perks/"personage"|#1|항목 이름 (personage = 소생 설정)|A
-/breed/perks/"personage"|#2|소생이 켜지는 숙련도 (0 = 숙련도 0부터 소생 가능. 숙련도라는 해석은 추정)|C
+/breed/perks/"personage"|#2|소생이 켜지는 숙련도 (0 = 숙련도 0부터 소생 가능)|G
 /breed/perks/"vision"|#1|항목 이름 (vision = 시야)|A
 /breed/perks/"vision"|#2|시야 필드 이름 (set/vision/vision_fields.inc)|A
 /breed/perks/"rifle"|#1|무기 종류 (rifle = 소총)|A
