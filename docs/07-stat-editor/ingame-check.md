@@ -176,3 +176,22 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 - 같은 실행에서 우리 파일을 읽다가 생긴 오류는 `game.log`에 없다.
 
 확인이 끝나 수정을 모두 끄고, 게임을 끈 상태에서 다시 빌드해 생성물 네 파일을 지웠다. 확인 중에 만든 캠페인 "Conquest 3"은 시작 자원이 수정된 값(MP 9137)으로 만들어졌다.
+
+## W-G 묶음 (2026-10-15 준비, v1.067.0)
+
+프로젝트 `editor/projects/ingame-check-wg.json`(커밋하지 않음). 한 빌드에 열 건을 넣었다(`docs/10-backlog.md`의 G1·G2·G9~G13). 이 PC에서는 `resources_standard.set`을 MACE Wunderwaffe(`mod_3732639687`)가, `unitlimits.inc`를 MACE(`mod_2905667604`)가 덮어쓰므로 그 판에 적용했다. 나머지는 바닐라 판이다. 빌드한 파일은 원본과 아래 값만 다르다(2026-10-15 diff로 확인).
+
+| # | 백로그 | 고친 것 | 볼 곳 | 기대 | 결과 |
+|---|---|---|---|---|---|
+| 1 | G1 | `battle_zones.set` `parameters`의 `scoreStart=250` → 777 | 스커미시 배틀존의 시작 점수 | 777 | |
+| 2 | G1 | `unitlimits.inc` `officer=2` → 7 | 스커미시 구매 화면에서 Leutnant [Heer](`officer` 태그)의 수 제한 | 7 | |
+| 3 | G2 | `resources_standard.set` MP `LoseGain "1:130"` → `"2:111 6:555"` | 이어 하는 컨퀘스트 캠페인(자원 Standard)에서 한 판 지고 늘어난 MP | 130이 아니면 진행 중인 캠페인에도 설정이 들어간다 | |
+| 4 | G12 | 3과 같은 수정 | 새 컨퀘스트(자원 Standard)에서 네 판 연속 지고 판마다 늘어난 MP | 계단이면 둘째 판부터 111이 이어진다. 칸 사이를 잇는다면 211·311처럼 커진다. 첫 판(첫 칸 2보다 앞)의 값도 적는다 | |
+| 5 | G9 | `mp/ger/mid/medic.set` `{item "bandage_ger" 22.5 2.5}` → `13 13` | 새 컨퀘스트(독일)에서 Medic(한 번에 2명, `units_ger.set`의 `single_medic`)을 3~4번 사서 병사마다 German Bandage 수 | 0~26 사이로 흩어지면 둘째 수는 ± 폭이다. 모두 13이면 다른 뜻이다 | |
+| 6 | G10 | `health.inc` `tier2_standard`의 `{"personage" 0}` → 3 | 메인 메뉴 → Library → Soldiers에서 Medic [Heer](tier2_standard)의 퍽과, tier1 병종의 같은 퍽 | tier2는 "Personage (Vet. 3)", tier1은 "(Vet. 0)" | |
+| 7 | G11 | `set/stuff/gun/37mm_pak35`의 `{parameters "heat" {gravity 2}}` → 0 | 3.7cm PaK 36으로 HEAT 탄(Stiel.Gr.41)이 있으면 약 100m를 직접 조준해 쏜다 | HEAT 탄은 거의 일직선으로 날고, 철갑탄은 전처럼 휜다 | |
+| 8 | G13 | 1v1 Kalinin `varnight1~3.set`의 `{night_vision 0.75}` → 0.4 | 스커미시 1v1 Kalinin을 낮과 밤으로 열어 같은 유닛의 시야 표시선 반경을 견준다 | 밤이 낮의 절반 아래로 줄면 시야 배수다(바닐라 밤은 0.75) | |
+
+이번에 넣지 않은 것: G3(난이도 배수를 숫자로 볼 곳을 아직 찾지 못했다), G4(새 가설이 먼저다), G5(고르는 규칙을 시험할 설계가 먼저다), G6(`.mdl`은 편집기로 고치지 않는다), G7·G8(낮은 우선).
+
+확인 순서 제안: 6(메뉴) → 1·2·8(스커미시) → 5·7(새 컨퀘스트) → 4(같은 새 컨퀘스트에서 지기) → 3(이어 하는 캠페인). 확인이 끝나면 게임을 끈 상태에서 수정을 모두 끄고 다시 빌드해 생성물을 지운다.
