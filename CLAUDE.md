@@ -15,7 +15,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 |---|---|
 | `docs/` | 사람이 읽는 문서 |
 | `data/` | 스크립트가 생성한 데이터. 손으로 고치지 않는다. 예외: `data/annotations/` |
-| `tools/` | 분석 스크립트 (PowerShell 7, 외부 모듈 없음) |
+| `tools/` | 분석 스크립트 (PowerShell 7.4 이상, 외부 모듈 없음. 파서 DLL을 빌드하므로 .NET 8 SDK가 필요하다) |
 | `editor/` | 스탯 편집기 (.NET 8). 파서 본체(`CtaToybox.Core`)가 여기 있고 `tools/`의 스크립트가 이 DLL을 불러 쓴다 |
 | `mod/CTAToybox/` | 모드 본체. 게임의 `mods\CTAToybox`가 이 폴더를 가리키는 정션이다 |
 | `_work/` | 게임에서 추출한 원본. 커밋하지 않는다 |

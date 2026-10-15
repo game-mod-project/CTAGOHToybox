@@ -1,5 +1,6 @@
 // data/display-names.csv에서 엔티티의 표시 이름을 찾는다.
-// 확인된 키 규칙은 desc/entity/<파일 이름> 하나다(예: desc/entity/kv85 → KV-85). 보병과 아이템의 규칙은 확인하지 않아 붙이지 않는다.
+// 키 규칙: 차량 desc/entity/<파일 이름>(예: desc/entity/kv85 → KV-85), 보병 desc/human/<set/breed 아래 경로>, 무기·탄약 desc/weapon|ammo|stuff/<파일 이름의 낱말>.
+// 2026-10-14 데이터로 이름이 붙는 비율은 차량 98%, 보병 100%, 무기·탄약 95%다(docs/07-stat-editor/README.md의 "이름"). 게임 설정 파일은 AddPathName으로 붙인다.
 using System;
 using System.Collections.Generic;
 using System.IO;

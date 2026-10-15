@@ -125,7 +125,8 @@ namespace CtaToybox.App
             ResultCountText.Text = found.Count > MaxResults ? found.Count.ToString("N0") + "개 가운데 앞의 " + MaxResults + "개 (이름순). 검색어를 더 쓴다." : found.Count.ToString("N0") + "개 (이름순)";
         }
 
-        // x 폴더의 _x, _xx 파일: 원본 차량과 이름이 같은 파생 파일이다(무엇인지는 확인하지 않았다). 기본으로 숨긴다
+        // x 폴더의 _x, _xx 파일: 원본 차량과 이름이 같은 파생 파일이다. _xx는 폭발 잔해(바닐라 확인), _x는 부품 손상 모델로 보인다(미확인).
+        // 둘 다 스탯을 고칠 대상이 아니어서 기본으로 숨긴다(docs/09-modding-sources.md R19)
         static bool IsXVariant(string path)
         {
             string leaf = path.Substring(path.LastIndexOf('/') + 1);
