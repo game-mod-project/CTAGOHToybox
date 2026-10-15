@@ -96,6 +96,7 @@ static class Program
             ("ValueLabels", ValueLabelsTests.Run),
             ("SettingFiles", SettingFilesTests.Run),
             ("SettingsSession", SettingsSessionTests.Run),
+            ("SettingStrings", SettingStringsTests.Run),
             ("Cli", CliTests.Run),
         };
         foreach (var s in suites)
