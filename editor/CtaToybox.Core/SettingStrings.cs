@@ -105,6 +105,23 @@ namespace CtaToybox.Core
         }
 
         // 읽기용 풀이: "1:200 4:250" → "1 → 200, 4 → 250". 단계표가 아니면 null
+        // keyPath가 FlagCount면 한 칸이 한 판이다(duration_*.set 주석 "each entry is 1 game played. # of flags enabled : # of flags total on map").
+        // "2:5 2:5 3:5" → "1~2판 2/5, 3판 3/5": 같은 값이 이어지는 판은 묶는다. 다른 단계표는 "판 수 → 값"이다
+        public static string StepPreview(string token, string keyPath)
+        {
+            if (keyPath == null || !keyPath.EndsWith("/flagcount", StringComparison.OrdinalIgnoreCase) || StepShape(token) == null) return StepPreview(token);
+            var entries = Regex.Split(Body(token).Trim(), @"\s+").Select(e => e.Replace(':', '/')).ToList();
+            var parts = new List<string>();
+            for (int start = 0; start < entries.Count;)
+            {
+                int end = start;
+                while (end + 1 < entries.Count && entries[end + 1] == entries[start]) end++;
+                parts.Add((start == end ? (start + 1).ToString() : (start + 1) + "~" + (end + 1)) + "판 " + entries[start]);
+                start = end + 1;
+            }
+            return string.Join(", ", parts);
+        }
+
         public static string StepPreview(string token)
         {
             if (StepShape(token) == null) return null;

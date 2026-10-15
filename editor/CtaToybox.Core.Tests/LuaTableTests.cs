@@ -64,7 +64,7 @@ static class LuaTableTests
         T.Eq("number", r.Rows[4].Kind, "a negative number is a number");
         T.Eq("nil", r.Rows[10].Kind, "nil");
         T.Eq("/ConquestConfig.AttackerWaves/Ratio/\"0.9\"", r.Rows[11].RawPath, "a quoted key keeps its name in the raw path");
-        T.Eq("1:30 min (ms)", r.Rows[12].Comment, "a top-level scalar with a trailing comment");
+        T.Eq("Maximum time the AI waits. / 1:30 min (ms)", r.Rows[12].Comment, "a comment line above and a trailing comment are joined (E5)");
         T.True(r.Rows[13].Comment == null, "no comment");
 
         double d;

@@ -177,5 +177,36 @@ static class RealFilesCheck
         T.Eq(0, pieceMismatch, "every embedded setting string splits and joins back to its bytes");
         T.Eq(0, settingWrongSlot, "every editable settings value names the slot that holds that token");
         T.Eq(0, missingKeys.Count, "every settings summary key matches a real row");
+
+        // 차량·보병·무기·탄약의 요약 키도 실제 줄에 맞는지(Q13). 열 개마다 하나씩 먼저 열고, 못 찾은 키가 남을 때만 나머지를 연다
+        int unitsOpened = 0, unlabeled = 0;
+        var unitKeysMissing = new List<string>();
+        var unlabeledExamples = new List<string>();
+        using (var session = EditorSession.Open(settingsPath, Directory.GetCurrentDirectory(), null))
+        {
+            foreach (string kind in new[] { "vehicle", "breed", "stuff" })
+            {
+                var keys = SummaryKeys.Load(Path.Combine("editor", "summary"), kind, new KeyAnnotations());
+                var left = new HashSet<string>(keys.Keys, StringComparer.Ordinal);
+                var units = session.Index.Units.Where(u => u.Kind == kind && UnitKind.InEditor(u.EditorKind) && u.Numbers > 0).OrderBy(u => u.Path, StringComparer.Ordinal).ToList();
+                foreach (var u in units.Where((x, i) => i % 10 == 0).Concat(units.Where((x, i) => i % 10 != 0)))
+                {
+                    if (left.Count == 0) break;
+                    var view = session.OpenUnit(u.Path);
+                    unitsOpened++;
+                    foreach (var r in view.Rows) { string k = keys.KeyOf(r.Path, r.RawPath); if (k != null) left.Remove(k); }
+                }
+                unitKeysMissing.AddRange(left.Select(k => kind + " " + k));
+            }
+            // 게임 설정의 값 이름(D3): 고장 부품 비용과 수비 단계의 열림 조건은 값마다 이름이 있다
+            foreach (var u in session.Index.Units.Where(x => x.EditorKind == SettingFiles.Kind))
+                foreach (var r in session.OpenUnit(u.Path).Rows.Where(x => x.Path.Contains("/brokencomponent/") || x.Path.EndsWith("/unlock")))
+                    foreach (var v in r.Values.Where(x => x.Label == null)) { unlabeled++; if (unlabeledExamples.Count < 10) unlabeledExamples.Add(u.Path + " " + r.Path + " " + v.Trace.Text); }
+        }
+        Console.WriteLine("summary-units-opened=" + unitsOpened + " unit-summary-keys-missing=" + unitKeysMissing.Count + " setting-values-unlabeled=" + unlabeled);
+        foreach (string k in unitKeysMissing) Console.WriteLine("  unit summary key with no row: " + k);
+        foreach (string e in unlabeledExamples) Console.WriteLine("  unlabeled: " + e);
+        T.Eq(0, unitKeysMissing.Count, "every vehicle, infantry and weapon summary key matches a real row (Q13)");
+        T.Eq(0, unlabeled, "broken-component costs and defense-level unlocks have value names (D3)");
     }
 }

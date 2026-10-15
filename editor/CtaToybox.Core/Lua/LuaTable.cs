@@ -19,7 +19,7 @@ namespace CtaToybox.Core
         public string Value { get; set; }         // 값의 원문. 예: 2 * 60000, "escalating", true
         public int Index { get; set; }            // 값이 시작하는 글자 위치
         public string Kind { get; set; }          // number | expr | string | bool | nil
-        public string Comment { get; set; }       // 그 줄 끝 주석. 없으면 바로 위 주석 줄들. 없으면 null
+        public string Comment { get; set; }       // 바로 위 주석 줄들과 그 줄 끝 주석. 둘 다 있으면 " / "로 잇는다. 없으면 null
         public string TableComment { get; set; }  // 값을 감싼 가장 가까운 표 앞의 주석. 없으면 null
     }
 
@@ -311,7 +311,9 @@ namespace CtaToybox.Core
                 if (kind == "expr" && !TryEvaluate(valueText, out ignored)) throw Error(first, "계산되지 않는 식");
 
                 Tok trailing;
-                string comment = comments.TryGetValue(last.Line, out trailing) && trailing.Index > last.Index ? trailing.Text : fieldComment;
+                // 바로 위 주석 줄과 줄 끝 주석이 둘 다 있으면 " / "로 잇는다(UnitSpawnWaitTime: 뜻 / 단위)
+                string trailingText = comments.TryGetValue(last.Line, out trailing) && trailing.Index > last.Index ? trailing.Text : null;
+                string comment = fieldComment != null && trailingText != null ? fieldComment + " / " + trailingText : trailingText ?? fieldComment;
                 int occ;
                 seen.TryGetValue(path, out occ);
                 seen[path] = occ + 1;

@@ -95,9 +95,10 @@ dotnet run --project editor/CtaToybox.App -c Release
 종류에서 "게임 설정"을 고르면 컨퀘스트 자원(`resources_*.set`), 컨퀘스트 길이(`duration_*.set`), 컨퀘스트 전투 규칙(`campaign_capture_the_flag.set`), 컨퀘스트 AI(`runtime_config.lua`), 스커미시 모드(`set/multiplayer/games/*.set`), 난이도(`set/difficulty/*.dl`)가 나온다. 이름은 `editor/settings/files.psv`, 키의 뜻은 `data/annotations/settings.psv`, 요약 키는 `editor/summary/settings.psv`에 있다. 설계는 [../superpowers/specs/2026-10-15-settings-editor-design.md](../superpowers/specs/2026-10-15-settings-editor-design.md).
 
 - 수정은 항상 "전부"다. 파일 하나가 곧 설정이다. 가격·로스터와 무기·탄약 탭은 숨긴다. 값이 모두 문자열 단계표인 파일(`duration_*.set`)도 목록에 나온다.
-- `"이름=값;이름=값"` 문자열(게임 모드의 `parameters`, `unitLimits`)은 조각마다 칸이 있다. 조각 이름·개수·순서는 바꿀 수 없다. 조각의 뜻은 `values.psv`의 자리 `@이름`.
-- `"1:200 4:250"` 같은 판 수 단계표는 값 고치기 창 아래에 풀이를 보인다. 칸마다 수의 개수가 원래와 같아야 한다.
-- 컨퀘스트 AI(Lua)는 이 파일에 나오는 꼴만 읽는다(2026-10-15 바닐라에서 값 324개, 읽지 못한 것 0). 수식은 계산값을 함께 보이고, 개발사 영어 주석을 "원문 주석"으로 보인다. 새 값은 원래와 같은 종류(수·수식, 문자열, 참·거짓)여야 하고 `nil`은 고칠 수 없다. 모르는 문법이 있으면 파일 전체를 읽지 못함으로 보이고 고치지 못한다.
+- `"이름=값;이름=값"` 문자열(게임 모드의 `parameters`, `unitLimits`)은 조각마다 칸이 있다. 조각 이름·개수·순서는 바꿀 수 없다. 조각의 뜻은 `values.psv`의 자리 `@이름`. 표의 "수정" 칸과 수정 목록에는 바뀐 조각만 보인다.
+- `"1:200 4:250"` 같은 판 수 단계표는 값 고치기 창 아래에 풀이를 보인다(`1 → 200, 4 → 250`). 칸마다 수의 개수가 원래와 같아야 한다. `FlagCount`는 한 칸이 한 판이므로(`duration_*.set` 주석 "each entry is 1 game played") `1~9판 2/5, 10~24판 3/5`처럼 판 순서로 풀고 같은 값이 이어지는 판은 묶는다.
+- 키 끝이 같은 줄(시작 자원의 MP·RP, 맵 보상의 `MapRewards/Airfield` 등)은 서로 구분되는 데까지 상위 블록 이름을 붙인다(`MP`, `MP/MapRewards`, `CPLimitStages/#1`).
+- 컨퀘스트 AI(Lua)는 이 파일에 나오는 꼴만 읽는다(2026-10-15 바닐라에서 값 324개, 읽지 못한 것 0). 수식은 계산값을 함께 보이고, 개발사 영어 주석을 "원문 주석"으로 보인다(위 줄 주석과 줄 끝 주석이 다 있으면 " / "로 잇는다). 새 값은 원래와 같은 종류(수·수식, 문자열, 참·거짓)여야 하고 `nil`은 고칠 수 없다. 모르는 문법이 있으면 "이 Lua 파일은 읽지 못해 고칠 수 없다: 이유"로 보이고 고치지 못한다.
 - 멀티플레이는 모든 사람이 같은 모드를 써야 한다. 설정 파일을 바꾼 모드는 다른 사람과 어긋날 수 있다.
 - 게임에서 확인했다(2026-10-15, [ingame-check.md](ingame-check.md)): 컨퀘스트 자원 시작값은 새 캠페인에 들어간다(MP 9137, RP 37). 모드의 낱개 Lua 파일은 바닐라와 앞선 모드(Wunderwaffe)의 Lua를 덮어쓴다(`targetWaveOffSeconds= 1210`). 스커미시의 `parameters`·`unitLimits` 조각은 아직 게임에서 보지 않았다. 진행 중인 캠페인에 반영되는지도 확인하지 않았다.
 

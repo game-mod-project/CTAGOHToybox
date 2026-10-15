@@ -35,6 +35,7 @@ namespace CtaToybox.Core
         public string Unit { get; set; }
         public List<TraceRow> Rows { get; } = new List<TraceRow>();
         public List<string> Unresolved { get; set; }
+        public string ReadError { get; set; }     // 파일을 읽지 못해 줄이 없을 때의 안내(Lua 설정). 읽었으면 null
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
         public List<object> Nodes { get; set; }   // 펼친 노드. 아이템 이름을 모을 때 쓴다
     }
@@ -134,7 +135,8 @@ namespace CtaToybox.Core
         UnitTraceResult TraceLua(string unit)
         {
             var lua = LuaTable.Read(stack.ReadText(unit));
-            var result = new UnitTraceResult { Unit = unit, Unresolved = lua.Errors.Select(e => "Lua: " + e).ToList(), IncludeEdges = new List<SdlIncludeEdge>(), Nodes = new List<object>() };
+            var result = new UnitTraceResult { Unit = unit, Unresolved = new List<string>(), IncludeEdges = new List<SdlIncludeEdge>(), Nodes = new List<object>() };
+            if (lua.Errors.Count > 0) result.ReadError = "이 Lua 파일은 읽지 못해 고칠 수 없다: " + string.Join("; ", lua.Errors);
             foreach (var r in lua.Rows)
             {
                 var row = new TraceRow { Path = r.Path, RawPath = r.RawPath, Occurrence = r.Occurrence, Form = "block", LeafNames = new List<string> { null }, Comment = r.Comment, TableComment = r.TableComment };

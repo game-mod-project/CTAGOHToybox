@@ -213,6 +213,7 @@ namespace CtaToybox.Cli
                 var index = OpenIndex(stack, settingsPath, output);
                 output.WriteLine(traced.Unit + "  (" + (UnitKind.OfEditor(traced.Unit) ?? "유닛 아님") + ", 계층 " + stack.Find(traced.Unit).Layer + ")");
                 foreach (string u in traced.Unresolved) output.WriteLine("풀리지 않은 구문: " + u);
+                if (traced.ReadError != null) output.WriteLine(traced.ReadError);
                 string filter = opt.ContainsKey("filter") ? opt["filter"] : null;
                 // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다(앱의 OpenUnit과 같다)
                 bool settingsUnit = UnitKind.OfEditor(traced.Unit) == SettingFiles.Kind;

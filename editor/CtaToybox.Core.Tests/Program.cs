@@ -95,6 +95,7 @@ static class Program
             ("Roster", RosterTests.Run),
             ("ValueLabels", ValueLabelsTests.Run),
             ("Robustness", RobustnessTests.Run),
+            ("SettingsPolish", SettingsPolishTests.Run),
             ("SettingFiles", SettingFilesTests.Run),
             ("SettingsSession", SettingsSessionTests.Run),
             ("SettingStrings", SettingStringsTests.Run),

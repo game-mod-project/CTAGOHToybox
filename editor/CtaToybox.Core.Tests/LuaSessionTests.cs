@@ -71,7 +71,10 @@ static class LuaSessionTests
         using (var session = EditorSession.Open(settings2, repo2, null))
         {
             var view = session.OpenUnit(Lua);
-            T.True(view.Rows.Count == 0 && view.Unresolved.Count == 1 && view.Unresolved[0].StartsWith("Lua: "), "an unreadable Lua file shows why, with no rows");
+            T.True(view.Rows.Count == 0 && view.Unresolved.Count == 0 && view.ReadError != null && view.ReadError.StartsWith("이 Lua 파일은 읽지 못해 고칠 수 없다: "), "an unreadable Lua file says it cannot be edited and why, with no rows (E7)");
+            string traceOut;
+            T.Eq(0, Cli(out traceOut, "trace", Lua, "--settings", settings2), "CLI trace of the unreadable Lua file");
+            T.True(traceOut.Contains("이 Lua 파일은 읽지 못해 고칠 수 없다: "), "CLI trace says it too");
             session.OpenProject(Path.Combine(T.TempDir(), "old.json"));
             session.Project.Edits.Add(new Edit { Unit = Lua, File = Lua, Path = "/conquestconfig.startspawntime/attackmin", Occurrence = 0, Arg = 0, Old = "1 * 1000", New = "3" });
             T.Eq(EditStatus.TargetMissing, session.CheckEdits().Single().Status, "the old edit no longer finds its slot");

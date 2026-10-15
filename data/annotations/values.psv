@@ -202,8 +202,12 @@
 **/bots/finishmp|#1|끝 MP 배율|C
 **/bots/finishmp|min#1|최종값의 하한|C
 **/bots/finishmp|attackerMultiplier#1|공격 배율 (뜻 미확인)|S
-*/unlock|games#1|열리는 판 수|C
-*/unlock|progress#1|열리는 캠페인 진행률 (0~1)|C
+**/defenselevel/level_1/unlock|games#1|열리는 판 수 (진행률과 먼저 닿는 쪽)|C
+**/defenselevel/level_1/unlock|progress#1|열리는 캠페인 진행률 (0~1, 기간 무제한에서는 쓰지 않는다)|C
+**/defenselevel/level_2/unlock|games#1|열리는 판 수 (진행률과 먼저 닿는 쪽)|C
+**/defenselevel/level_2/unlock|progress#1|열리는 캠페인 진행률 (0~1, 기간 무제한에서는 쓰지 않는다)|C
+**/defenselevel/level_3/unlock|games#1|열리는 판 수 (진행률과 먼저 닿는 쪽)|C
+**/defenselevel/level_3/unlock|progress#1|열리는 캠페인 진행률 (0~1, 기간 무제한에서는 쓰지 않는다)|C
 **/paybackfactor|#1|MP 비율|C
 **/paybackfactor|#2|SP 비율|C
 **/paybackfactor|#3|AP 비율|C
@@ -228,12 +232,42 @@
 **/resupplycost/vehicles/fuel|#2|자원 (MP·AP 등)|C
 **/resupplycost/vehicles/resupply|#1|보급 1점당 비용|C
 **/resupplycost/vehicles/resupply|#2|자원 (MP·AP 등)|C
-*/body|#1|비율 (%)|C
-*/body|#2|% 표시|C
-*/body|#3|자원 (MP·AP 등)|C
-*/body|#4|두 번째 비율 (%)|C
-*/body|#5|% 표시|C
-*/body|#6|두 번째 자원|C
+**/brokencomponent/body|#1|비율 (%)|C
+**/brokencomponent/body|#2|% 표시|C
+**/brokencomponent/body|#3|자원 (MP·AP 등)|C
+**/brokencomponent/body|#4|두 번째 비율 (%)|C
+**/brokencomponent/body|#5|% 표시|C
+**/brokencomponent/body|#6|두 번째 자원|C
+**/brokencomponent/turret|#1|비율 (%)|C
+**/brokencomponent/turret|#2|% 표시|C
+**/brokencomponent/turret|#3|자원 (MP·AP 등)|C
+**/brokencomponent/turret|#4|두 번째 비율 (%)|C
+**/brokencomponent/turret|#5|% 표시|C
+**/brokencomponent/turret|#6|두 번째 자원|C
+**/brokencomponent/engine|#1|비율 (%)|C
+**/brokencomponent/engine|#2|% 표시|C
+**/brokencomponent/engine|#3|자원 (MP·AP 등)|C
+**/brokencomponent/engine|#4|두 번째 비율 (%)|C
+**/brokencomponent/engine|#5|% 표시|C
+**/brokencomponent/engine|#6|두 번째 자원|C
+**/brokencomponent/track|#1|비율 (%)|C
+**/brokencomponent/track|#2|% 표시|C
+**/brokencomponent/track|#3|자원 (MP·AP 등)|C
+**/brokencomponent/track|#4|두 번째 비율 (%)|C
+**/brokencomponent/track|#5|% 표시|C
+**/brokencomponent/track|#6|두 번째 자원|C
+**/brokencomponent/shield|#1|비율 (%)|C
+**/brokencomponent/shield|#2|% 표시|C
+**/brokencomponent/shield|#3|자원 (MP·AP 등)|C
+**/brokencomponent/shield|#4|두 번째 비율 (%)|C
+**/brokencomponent/shield|#5|% 표시|C
+**/brokencomponent/shield|#6|두 번째 자원|C
+**/brokencomponent/other|#1|비율 (%)|C
+**/brokencomponent/other|#2|% 표시|C
+**/brokencomponent/other|#3|자원 (MP·AP 등)|C
+**/brokencomponent/other|#4|두 번째 비율 (%)|C
+**/brokencomponent/other|#5|% 표시|C
+**/brokencomponent/other|#6|두 번째 자원|C
 **/support/airstrikes|#1|비율 (%)|C
 **/support/airstrikes|#2|% 표시|C
 **/support/airstrikes|#3|자원 (SP)|C

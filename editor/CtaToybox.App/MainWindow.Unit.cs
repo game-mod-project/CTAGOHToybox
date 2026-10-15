@@ -31,6 +31,7 @@ namespace CtaToybox.App
             }
             UnitTitle.Text = unit.DisplayName ?? unit.Unit.Substring(unit.Unit.LastIndexOf('/') + 1);
             UnitInfo.Text = UnitKind.Label(unit.EditorKind ?? unit.Kind) + " · 출처 " + session.LayerLabel(unit.Layer) + " · " + unit.Unit +
+                (unit.ReadError == null ? "" : "\n" + unit.ReadError) +
                 (unit.Unresolved.Count == 0 ? "" : "\n풀리지 않은 구문 " + unit.Unresolved.Count + "개: " + string.Join(", ", unit.Unresolved.Take(5)));
             ItemList.ItemsSource = unit.Items.Select(ItemLinkItemOf).ToList();
             ItemsTab.Header = "무기·탄약 (" + unit.Items.Count + ")";
@@ -65,9 +66,14 @@ namespace CtaToybox.App
             if (!groupOrder.TryGetValue(group, out order)) { order = groupOrder.Count; groupOrder[group] = order; }
 
             var edits = row.Values.Where(v => v.Edit != null).ToList();
+            // 문자열 속 설정은 수정 목록처럼 바뀐 조각만 보인다
             string newValues = string.Join("  ", edits.Select(v =>
-                (row.Values.Count > 1 ? Text.Value(v.Trace.Text) + " → " : "→ ") + Text.Value(v.Edit.New) +
-                (v.Edit.Scope == "unit" ? " (이 유닛만)" : " (전부)") + (v.Edit.Enabled ? "" : " [꺼짐]")));
+            {
+                var pieces = session.ChangedPieces(row.Path, row.RawPath, v.Edit);
+                string change = pieces != null && pieces.Count > 0 ? string.Join(", ", pieces)
+                    : (row.Values.Count > 1 ? Text.Value(v.Trace.Text) + " → " : "→ ") + Text.Value(v.Edit.New);
+                return change + (v.Edit.Scope == "unit" ? " (이 유닛만)" : " (전부)") + (v.Edit.Enabled ? "" : " [꺼짐]");
+            }));
             return new RowItem
             {
                 Row = row, Group = group, GroupOrder = order,

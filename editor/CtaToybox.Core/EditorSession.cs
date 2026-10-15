@@ -57,6 +57,7 @@ namespace CtaToybox.Core
         public string DisplayName { get; set; }
         public List<RowView> Rows { get; } = new List<RowView>();
         public List<string> Unresolved { get; set; }
+        public string ReadError { get; set; }         // 파일을 읽지 못해 고칠 수 없을 때의 안내. 읽었으면 null
         public List<ItemLink> Items { get; set; }
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
         public List<RowView> Roster { get; } = new List<RowView>();   // 가격·로스터 파일에서 이 유닛의 항목 줄
@@ -184,7 +185,7 @@ namespace CtaToybox.Core
             var view = new UnitView
             {
                 Unit = traced.Unit, Kind = kind, EditorKind = UnitKind.EditorKindOf(kind, traced.IncludeEdges.Select(e => e.ToFile)), Layer = Stack.Find(traced.Unit).Layer, DisplayName = Names.OfUnit(traced.Unit),
-                Unresolved = traced.Unresolved, IncludeEdges = traced.IncludeEdges,
+                Unresolved = traced.Unresolved, ReadError = traced.ReadError, IncludeEdges = traced.IncludeEdges,
                 Items = ItemLinks.ReferencedNames(traced.Nodes).Select(Items.Find).ToList()
             };
             foreach (var row in traced.Rows)
@@ -227,7 +228,7 @@ namespace CtaToybox.Core
                     if (!v.Editable || !SettingFiles.InArea(v.Trace.File)) continue;
                     v.Pieces = SettingStrings.Split(v.Trace.Text);
                     if (v.Pieces != null) v.PieceLabels = v.Pieces.Select(p => valueLabels.PieceLabel(row.Path, row.RawPath, p.Name)).ToList();
-                    v.Steps = SettingStrings.StepPreview(v.Trace.Text);
+                    v.Steps = SettingStrings.StepPreview(v.Trace.Text, row.Path);
                 }
             }
             RefreshEdits(view);
@@ -311,12 +312,13 @@ namespace CtaToybox.Core
                 Note = n.Find(row.Path, row.Form, true, row.RawPath) ?? NotesFor(file).Find(row.Path, row.Form, true, row.RawPath),
                 IsMacroCall = row.Form == "macro", ValueLabel = labels[e.Arg], ValueName = row.LeafNames[e.Arg],
                 RowText = string.Join(" ", texts), ValueCount = texts.Count,
-                ChangedPieces = ChangedPieces(row, e),
+                ChangedPieces = ChangedPieces(row.Path, row.RawPath, e),
             };
         }
 
-        // 문자열 속 설정의 수정에서 바뀐 조각들. 조각 이름이 원래와 같을 때만(아니면 null)
-        List<string> ChangedPieces(KeyRow row, Edit e)
+        // 문자열 속 설정의 수정에서 바뀐 조각들 "뜻(없으면 이름): 원래 → 새 값". 조각 이름이 원래와 같을 때만(아니면 null).
+        // 수정 목록(Describe)과 표의 "새 값" 칸이 같이 쓴다
+        public List<string> ChangedPieces(string path, string rawPath, Edit e)
         {
             if (!SettingFiles.InArea(SourceStack.ToVirtual(e.File ?? ""))) return null;
             var before = SettingStrings.Split(e.Old);
@@ -327,7 +329,7 @@ namespace CtaToybox.Core
             {
                 if (before[i].Name != after[i].Name) return null;
                 if (before[i].Value == after[i].Value) continue;
-                result.Add((valueLabels.PieceLabel(row.Path, row.RawPath, before[i].Name) ?? before[i].Name) + ": " + before[i].Value + " → " + after[i].Value);
+                result.Add((valueLabels.PieceLabel(path, rawPath, before[i].Name) ?? before[i].Name) + ": " + before[i].Value + " → " + after[i].Value);
             }
             return result;
         }
@@ -338,18 +340,28 @@ namespace CtaToybox.Core
         {
             foreach (var group in rows.Where(r => r.Context == null).GroupBy(r => r.Path.Substring(r.Path.LastIndexOf('/') + 1)))
             {
-                var parents = group.Select(r => Parent(r.RawPath ?? r.Path)).ToList();
-                if (parents.Distinct(StringComparer.OrdinalIgnoreCase).Count() < 2) continue;
-                foreach (var r in group) { r.Context = Parent(r.RawPath ?? r.Path); r.ContextIsNamesake = true; }
+                var parents = group.Select(r => Parents(r.RawPath ?? r.Path)).ToList();
+                int distinct = parents.Select(p => string.Join("/", p)).Distinct(StringComparer.OrdinalIgnoreCase).Count();
+                if (distinct < 2) continue;
+                // 서로 구분되는 데까지 거슬러 올라간다: MapRewards가 MP·RP에 다 있으면 MP/MapRewards, 두 표의 목록 항목이면 CPLimitStages/#1
+                int deepest = parents.Max(p => p.Count);
+                for (int depth = 1; depth <= deepest; depth++)
+                {
+                    var names = parents.Select(p => string.Join("/", p.Skip(Math.Max(0, p.Count - depth)))).ToList();
+                    if (depth < deepest && names.Distinct(StringComparer.OrdinalIgnoreCase).Count() < distinct) continue;
+                    int i = 0;
+                    foreach (var r in group) { r.Context = names[i++]; r.ContextIsNamesake = true; }
+                    break;
+                }
             }
         }
 
-        static string Parent(string path)
+        // 경로의 마지막 조각을 뺀 상위 조각들(따옴표는 뗀다). /a/b/c → [a, b]
+        static List<string> Parents(string path)
         {
-            int last = path.LastIndexOf('/');
-            if (last <= 0) return null;
-            int before = path.LastIndexOf('/', last - 1);
-            return path.Substring(before + 1, last - before - 1).Trim('"');
+            var parts = path.Split('/').Where(s => s.Length > 0).Select(s => s.Trim('"')).ToList();
+            if (parts.Count > 0) parts.RemoveAt(parts.Count - 1);
+            return parts;
         }
 
         // 같은 줄을 하나로 모은다. 매크로 인자 하나가 여러 곳에 펼쳐지면(예: 탄종마다 같은 사거리 표) 같은 원본 자리를 가리키는 줄이 여러 번 나온다.
