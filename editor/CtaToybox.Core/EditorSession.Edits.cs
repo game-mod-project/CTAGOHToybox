@@ -23,7 +23,7 @@ namespace CtaToybox.Core
             if (!value.Editable) return value.Trace.Note ?? "편집할 수 없는 자리다";
             if (scope != "shared" && scope != "unit") return "범위는 shared 또는 unit이다: " + scope;
             if (scope == "unit" && value.UnitScopeBlocker != null) return value.UnitScopeBlocker;
-            return TokenPatcher.CheckNewValue(value.Trace.Text, newText, out warning);
+            return ValueRules.CheckNewValue(value.Trace.File, value.Trace.Text, newText, out warning);
         }
 
         public Edit AddEdit(UnitView unit, ValueView value, string newText, string scope)

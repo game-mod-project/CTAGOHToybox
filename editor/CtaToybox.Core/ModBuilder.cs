@@ -292,8 +292,12 @@ namespace CtaToybox.Core
             var usable = new List<Edit>();
             foreach (var e in item.Edits)
             {
+                string ruleWarning;
+                string ruleError = e.New == null ? null : ValueRules.CheckNewValue(item.Source.VirtualPath, e.Old, e.New, out ruleWarning);
                 if (e.New != null && !TextCodec.CanEncode(e.New, kind))
                     results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "새 값에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + e.New });
+                else if (ruleError != null)
+                    results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = ruleError });
                 else usable.Add(e);
             }
             foreach (var p in item.Raw)

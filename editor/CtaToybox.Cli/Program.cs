@@ -265,7 +265,7 @@ namespace CtaToybox.Cli
                 var node = KeyLocator.Find(parsed.Root, keyPath, occ, arg);
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
                 string warning;
-                string error = TokenPatcher.CheckNewValue(node.Text, newValue, out warning);
+                string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning);
                 if (error != null) { output.WriteLine(error); return 1; }
                 if (warning != null) output.WriteLine("경고: " + warning);
                 string unit = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);

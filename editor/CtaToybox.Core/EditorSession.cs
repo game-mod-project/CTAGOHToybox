@@ -15,6 +15,9 @@ namespace CtaToybox.Core
         public Edit Edit { get; set; }                // 이 자리에 걸린 수정
         public string Name { get; set; }              // 값을 감싼 호출의 이름(cp(40)이면 cp). 화면에 값 이름으로 보인다. 없으면 null
         public string Label { get; set; }             // 값의 뜻(data/annotations/values.psv). 모르면 null
+        public List<SettingPiece> Pieces { get; set; }   // 문자열 속 설정("이름=값;…")의 조각. 게임 설정 폴더의 파일만. 아니면 null
+        public List<string> PieceLabels { get; set; }    // 조각마다 뜻(values.psv의 @이름). 모르면 그 자리 null
+        public string Steps { get; set; }                // 판 수 단계표의 읽기용 풀이. 아니면 null
         public bool Editable { get { return Trace.Arg >= 0; } }
     }
 
@@ -195,7 +198,15 @@ namespace CtaToybox.Core
             foreach (var row in view.Rows.Concat(view.Roster))
             {
                 var labels = valueLabels.Of(row.Path, row.Values.Select(v => v.Trace.Text).ToList(), row.Values.Select(v => v.Name).ToList(), row.RawPath);
-                for (int i = 0; i < row.Values.Count; i++) row.Values[i].Label = labels[i];
+                for (int i = 0; i < row.Values.Count; i++)
+                {
+                    var v = row.Values[i];
+                    v.Label = labels[i];
+                    if (!v.Editable || !SettingFiles.InArea(v.Trace.File)) continue;
+                    v.Pieces = SettingStrings.Split(v.Trace.Text);
+                    if (v.Pieces != null) v.PieceLabels = v.Pieces.Select(p => valueLabels.PieceLabel(row.Path, row.RawPath, p.Name)).ToList();
+                    v.Steps = SettingStrings.StepPreview(v.Trace.Text);
+                }
             }
             RefreshEdits(view);
             return view;

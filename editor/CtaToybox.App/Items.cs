@@ -115,6 +115,12 @@ namespace CtaToybox.App
         // 줄의 지금 값. 호출 안의 값은 원문처럼 이름(값 값)으로 묶는다: side(ger) lvl(lvl1 lvl2) cost(10.0)
         public static string ValuesLine(RowView row)
         {
+            // 문자열 속 설정: 조각마다 한 줄 "뜻: 값"
+            if (row.Values.Count == 1 && row.Values[0].Pieces != null)
+            {
+                var v0 = row.Values[0];
+                return string.Join("\n", v0.Pieces.Select((p, i) => (v0.PieceLabels[i] ?? p.Name + " (뜻 미확인)") + ": " + p.Value));
+            }
             // 값이 여럿이고 뜻을 아는 값이 있으면 한 줄에 하나씩 "뜻: 값"으로 보인다
             if (row.Values.Count > 1 && row.Values.Any(v => v.Label != null))
                 return string.Join("\n", row.Values.Select((v, i) => v.Label != null && v.Label.StartsWith("열쇠말") ? null : ValueName(row, i) + ": " + Value(v.Trace.Text)).Where(s => s != null));

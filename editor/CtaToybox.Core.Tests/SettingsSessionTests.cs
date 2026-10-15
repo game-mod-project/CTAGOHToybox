@@ -70,6 +70,24 @@ static class SettingsSessionTests
             var bz = session.OpenUnit(SettingFilesTests.Bz);
             var limits = bz.Rows.First(r => r.Path.EndsWith("/unitlimits"));
             T.Eq(SettingFilesTests.Limits, limits.Values[0].Trace.File, "an included preset traces to its file");
+
+            // 조각과 단계표: 화면이 쓰는 값
+            var parameters = bz.Rows.First(r => r.Path == "/game/parameters").Values[0];
+            T.Eq(new[] { "flag_capture_time", "scoreStart" }, parameters.Pieces.Select(x => x.Name).ToArray(), "the session splits piece strings");
+            T.Eq(2, parameters.PieceLabels.Count, "with one label slot per piece");
+            var dur = session.OpenUnit(SettingFilesTests.Dur);
+            T.Eq("2 → 5, 2 → 5, 3 → 5", dur.Rows.First(r => r.Path == "/normal/flagcount").Values[0].Steps, "step tables get a preview");
+            T.True(parameters.Steps == null && dur.Rows.First(r => r.Path == "/normal/flagcount").Values[0].Pieces == null, "a piece string is not a step table and the other way round");
+
+            // 같은 문자열의 조각을 차례로 고쳐도 앞의 것이 남는다(창은 기존 수정의 새 값에서 시작한다)
+            session.OpenProject(Path.Combine(T.TempDir(), "pieces.json"));
+            var row = bz.Rows.First(r => r.Path == "/game/parameters");
+            session.ApplyRow(bz, row, new[] { SettingStrings.Join(row.Values[0].Trace.Text, new[] { "61", "250" }) }, "shared");
+            session.RefreshEdits(bz);
+            string current = row.Values[0].Edit.New;
+            var start = SettingStrings.Split(current);
+            session.ApplyRow(bz, row, new[] { SettingStrings.Join(row.Values[0].Trace.Text, new[] { start[0].Value, "777" }) }, "shared");
+            T.Eq("\"flag_capture_time=61;scoreStart=777\"", session.Project.Edits.Single().New, "both piece changes are kept in one edit");
         }
 
         string o;
