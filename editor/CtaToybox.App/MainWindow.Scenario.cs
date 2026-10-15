@@ -12,6 +12,8 @@
 //   cancel                    창을 닫는다
 //   toggle <n>                수정 목록 n번째의 체크를 바꾼다
 //   remove <n>                수정 목록 n번째를 지운다
+//   group <목록> <글자> open|close  summary|full|roster 목록에서 이름에 글자가 든 첫 묶음을 펼치거나 접는다
+//   scroll <목록>             그 목록을 맨 아래로 내린다
 //   shot <이름>               창이 열려 있으면 창을, 아니면 주 창을 찍는다(<이름>.png)
 using System;
 using System.Collections.Generic;
@@ -73,6 +75,17 @@ namespace CtaToybox.App
                         RefreshEdits(); RefreshUnitViews();
                         break;
                     }
+                    case "group":
+                    {
+                        // group summary|full|roster <글자> open|close: 묶음 이름에 글자가 든 첫 묶음을 펼치거나 접는다
+                        var parts = arg.Split(' ');
+                        var list = parts[0] == "full" ? FullList : parts[0] == "roster" ? RosterList : SummaryList;
+                        string text = string.Join(" ", parts.Skip(1).Take(parts.Length - 2));
+                        var ex = Expanders(list).FirstOrDefault(x => x.DataContext is System.Windows.Data.CollectionViewGroup g && (g.Name as string ?? "").Contains(text));
+                        if (ex == null) log.Add("묶음 없음: " + line); else ex.IsExpanded = parts[parts.Length - 1] == "open";
+                        break;
+                    }
+                    case "scroll": { var sv = ScrollOf(arg == "full" ? FullList : arg == "roster" ? RosterList : SummaryList); if (sv != null) sv.ScrollToEnd(); break; }
                     case "shot":
                         await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);
                         if (dialog != null) dialog.UpdateLayout();
@@ -83,6 +96,16 @@ namespace CtaToybox.App
                 }
             }
             File.WriteAllLines(Path.Combine(outDir, "scenario-log.txt"), log);
+        }
+
+        static IEnumerable<Expander> Expanders(System.Windows.DependencyObject d)
+        {
+            for (int i = 0; i < System.Windows.Media.VisualTreeHelper.GetChildrenCount(d); i++)
+            {
+                var child = System.Windows.Media.VisualTreeHelper.GetChild(d, i);
+                if (child is Expander ex) yield return ex;
+                foreach (var inner in Expanders(child)) yield return inner;
+            }
         }
     }
 }

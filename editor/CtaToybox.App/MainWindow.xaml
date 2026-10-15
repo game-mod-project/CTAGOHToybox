@@ -7,12 +7,14 @@
   <Window.Resources>
     <local:ExpandSmallGroups x:Key="ExpandSmallGroups"/>
 
-    <!-- 접히는 묶음 머리. ConverterParameter의 수 이하인 묶음만 처음에 펼친다 -->
+    <!-- 접히는 묶음 머리. ConverterParameter는 "목록|수": 사용자가 펼치거나 접은 묶음은 그대로, 아니면 수 이하인 묶음만 처음에 펼친다.
+         Tag는 목록 이름이다(Group_Expanded가 상태를 기억한다) -->
     <Style x:Key="SummaryGroup" TargetType="GroupItem">
       <Setter Property="Template">
         <Setter.Value>
           <ControlTemplate TargetType="GroupItem">
-            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=6}" Margin="0,2">
+            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=summary|6}" Margin="0,2"
+                      Tag="summary" Expanded="Group_Expanded" Collapsed="Group_Collapsed">
               <Expander.Header>
                 <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  ("/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="줄)"/></TextBlock>
               </Expander.Header>
@@ -26,7 +28,23 @@
       <Setter Property="Template">
         <Setter.Value>
           <ControlTemplate TargetType="GroupItem">
-            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}}" Margin="0,2">
+            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=full}" Margin="0,2"
+                      Tag="full" Expanded="Group_Expanded" Collapsed="Group_Collapsed">
+              <Expander.Header>
+                <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  ("/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="줄)"/></TextBlock>
+              </Expander.Header>
+              <ItemsPresenter/>
+            </Expander>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="RosterGroup" TargetType="GroupItem">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="GroupItem">
+            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=roster}" Margin="0,2"
+                      Tag="roster" Expanded="Group_Expanded" Collapsed="Group_Collapsed">
               <Expander.Header>
                 <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  ("/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="줄)"/></TextBlock>
               </Expander.Header>
@@ -137,7 +155,7 @@
           <TextBlock x:Name="UnitTitle" FontSize="18" FontWeight="Bold" Text="왼쪽에서 유닛을 고른다" TextWrapping="Wrap"/>
           <TextBlock x:Name="UnitInfo" Foreground="#555555" TextWrapping="Wrap"/>
           <TextBlock x:Name="UnitHelp" Foreground="#666666" FontSize="12" TextWrapping="Wrap" Margin="0,4,0,0"
-                     Text="줄을 두 번 누르면 값을 고친다. '같이 쓰는 유닛'이 2 이상이면 '전부'로 고칠 때 그 유닛들도 바뀐다. 묶음 머리를 누르면 펼치고 접는다."/>
+                     Text="줄을 두 번 누르면 값을 고친다. '같이 쓰는 유닛'이 2 이상이면 '전부'로 고칠 때 그 유닛들도 바뀐다. 묶음 머리를 누르면 펼치고 접는다(값을 고쳐도 그대로 남는다)."/>
         </StackPanel>
         <TabControl x:Name="Tabs" Margin="0,6,0,0">
           <TabItem x:Name="SummaryTab" Header="요약">
@@ -161,16 +179,16 @@
           <TabItem x:Name="RosterTab" Header="가격·로스터">
             <DockPanel>
               <TextBlock x:Name="RosterHelp" DockPanel.Dock="Top" TextWrapping="Wrap" Foreground="#666666" Margin="0,4,0,6"
-                         Text="콘퀘스트·배틀존 등록 파일(set/multiplayer/units)과 연구 트리(set/dynamic_campaign/unit_research_*)에서 이름이 이 유닛과 같은 항목. 고치면 그 항목만 바뀐다. 묶음 머리가 파일과 항목 이름이다."/>
+                         Text="콘퀘스트·배틀존 등록 파일(set/multiplayer/units)과 연구 트리(set/dynamic_campaign/unit_research_*)에서 이름이 이 유닛과 같은 항목과, 분대 인자(c1(병종:수), crew, v1(차량), vehicle(차량))로 이 유닛을 부르는 분대. 고치면 그 항목만 바뀐다. 묶음 머리가 파일과 항목 이름이다."/>
               <ListView x:Name="RosterList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto">
-                <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource FullGroup}"/></ListView.GroupStyle>
+                <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource RosterGroup}"/></ListView.GroupStyle>
               </ListView>
             </DockPanel>
           </TabItem>
           <TabItem x:Name="ItemsTab" Header="무기·탄약">
             <DockPanel>
               <TextBlock DockPanel.Dock="Top" TextWrapping="Wrap" Foreground="#666666" Margin="0,4,0,6"
-                         Text="이 유닛이 이름으로 가리키는 무기·탄약·장비. 파일 하나로 이어진 것은 두 번 눌러 그 파일을 연다. '후보'나 '파일 없음'은 게임이 어느 파일을 쓰는지 확인하지 않은 이름이다."/>
+                         Text="이 유닛이 이름으로 가리키는 무기·탄약·장비. 파일로 이어진 것은 두 번 눌러 그 파일을 연다. 낱말이 맞는 후보가 한 폴더에 여럿이면 게임은 이름순 맨 앞 파일을 쓴다(게임 확인). '후보'나 '파일 없음'은 게임이 어느 파일을 쓰는지 확인하지 않은 이름이다."/>
               <ListBox x:Name="ItemList" MouseDoubleClick="ItemList_DoubleClick" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                 <ListBox.ItemTemplate>
                   <DataTemplate>

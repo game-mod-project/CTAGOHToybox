@@ -1,7 +1,8 @@
 // 유닛이 이름으로 가리키는 아이템(무기, 탄약 등)을 set/stuff의 파일로 잇는다.
 // 규칙은 2026-10-14의 데이터 조사에서 나왔다(docs/02-modding-research.md의 "아이템 이름과 파일"):
 //   1. 파일 이름과 같다  2. 이름의 낱말과 파일 이름을 점으로 나눈 낱말이 같다  3. 파일의 마지막 조각(확장자)을 빼면 같다
-// 세 규칙으로 파일이 정확히 하나일 때만 이어졌다고 본다. 나머지는 후보로만 보인다(게임이 어떻게 고르는지 미확인).
+// 세 규칙으로 파일이 정확히 하나일 때만 이어졌다고 본다. 세 규칙에 맞는 파일이 없으면 이름의 낱말을 모두 가진 파일을 후보로 모으고,
+// 후보가 한 폴더에 있으면 이름순 맨 앞 파일을 게임이 고르는 파일로 본다(G5). 나머지는 후보로만 보인다(미확인).
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace CtaToybox.Core
 
     public sealed class ItemLinks
     {
-        public const string RuleName = "이름", RuleWords = "낱말", RuleWordsNoExt = "확장자 뺀 낱말", RuleCandidates = "후보(미확인)", RuleNone = "없음";
+        public const string RuleName = "이름", RuleWords = "낱말", RuleWordsNoExt = "확장자 뺀 낱말", RuleFirstByName = "후보 중 이름순 맨 앞", RuleCandidates = "후보(미확인)", RuleNone = "없음";
 
         readonly Dictionary<string, List<string>> byLeaf = new Dictionary<string, List<string>>(StringComparer.Ordinal);
         readonly Dictionary<string, List<string>> byWords = new Dictionary<string, List<string>>(StringComparer.Ordinal);
@@ -76,8 +77,12 @@ namespace CtaToybox.Core
                 if (!rule.Value.TryGetValue(rule.Key == RuleName ? lower : key, out files)) continue;
                 return new ItemLink { Name = lower, Rule = files.Count == 1 ? rule.Key : RuleCandidates, Files = new List<string>(files) };
             }
-            var candidates = all.Where(f => words.All(f.Value.Contains)).Select(f => f.Key).ToList();
-            return new ItemLink { Name = lower, Rule = candidates.Count > 0 ? RuleCandidates : RuleNone, Files = candidates };
+            // 낱말을 모두 가진 파일들. 게임은 같은 폴더의 후보 가운데 이름순(점이 글자보다 앞) 맨 앞 파일을 고른다(G5, 2026-10-16 게임 확인).
+            // 여러 폴더에 걸친 후보는 확인하지 않았다
+            var candidates = all.Where(f => words.All(f.Value.Contains)).Select(f => f.Key).OrderBy(f => f, StringComparer.Ordinal).ToList();
+            if (candidates.Count == 0) return new ItemLink { Name = lower, Rule = RuleNone, Files = candidates };
+            bool oneFolder = candidates.Select(f => f.Substring(0, f.LastIndexOf('/'))).Distinct(StringComparer.Ordinal).Count() == 1;
+            return new ItemLink { Name = lower, Rule = oneFolder ? RuleFirstByName : RuleCandidates, Files = candidates };
         }
 
         // 펼친 노드에서 아이템 이름을 모은다: item·weapon 행의 첫 문자열과 filling 뒤의 문자열

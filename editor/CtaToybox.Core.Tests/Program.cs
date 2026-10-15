@@ -89,6 +89,7 @@ static class Program
             ("Usability", UsabilityTests.Run),
             ("UsabilityReview", UsabilityReviewTests.Run),
             ("TokenPatcher", TokenPatcherTests.Run),
+            ("ValueRules", ValueRulesTests.Run),
             ("ModBuilder", ModBuilderTests.Run),
             ("UnitScopeBuild", UnitScopeBuildTests.Run),
             ("UnitFilter", UnitFilterTests.Run),

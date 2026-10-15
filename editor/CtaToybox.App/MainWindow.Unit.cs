@@ -6,6 +6,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Threading;
 using CtaToybox.Core;
 
 namespace CtaToybox.App
@@ -44,10 +46,12 @@ namespace CtaToybox.App
 
         ItemLinkItem ItemLinkItemOf(ItemLink link)
         {
-            string name = link.Files.Count == 1 ? session.Names.OfUnit(link.Files[0]) : null;
+            bool picked = link.Rule == ItemLinks.RuleFirstByName;
+            string name = link.Files.Count == 1 || picked ? session.Names.OfUnit(link.Files[0]) : null;
             string where;
             if (link.Rule == ItemLinks.RuleNone) where = "이어지는 파일 없음 (미확인)";
             else if (link.Rule == ItemLinks.RuleCandidates) where = "후보 " + link.Files.Count + "개 (미확인): " + string.Join(", ", link.Files.Take(3).Select(f => f.Substring(f.LastIndexOf('/') + 1))) + (link.Files.Count > 3 ? " 외" : "");
+            else if (picked) where = link.Files[0] + "  (두 번 눌러 연다)\n게임이 고르는 파일: 낱말이 맞는 후보 " + link.Files.Count + "개 가운데 이름순 맨 앞";
             else where = link.Files[0] + "  (두 번 눌러 연다)";
             return new ItemLinkItem { Link = link, Title = (name == null ? "" : name + "  ·  ") + link.Name, Sub = where };
         }
@@ -92,9 +96,49 @@ namespace CtaToybox.App
             };
         }
 
+        // 펼침 상태와 스크롤 위치를 기억하는 유닛. 다른 유닛을 열면 지운다
+        string viewUnit;
+
+        void Group_Expanded(object sender, RoutedEventArgs e) { RememberGroup(sender, e, true); }
+        void Group_Collapsed(object sender, RoutedEventArgs e) { RememberGroup(sender, e, false); }
+
+        static void RememberGroup(object sender, RoutedEventArgs e, bool expanded)
+        {
+            var ex = sender as Expander;
+            var group = ex == null ? null : ex.DataContext as CollectionViewGroup;
+            if (group == null || !ReferenceEquals(e.OriginalSource, ex)) return;
+            GroupStates.Set((string)ex.Tag, group.Name, expanded);
+        }
+
+        static ScrollViewer ScrollOf(DependencyObject d)
+        {
+            if (d is ScrollViewer sv) return sv;
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(d); i++)
+            {
+                var found = ScrollOf(VisualTreeHelper.GetChild(d, i));
+                if (found != null) return found;
+            }
+            return null;
+        }
+
         public void RefreshUnitViews()
         {
             if (unit == null) return;
+            bool same = viewUnit == unit.Unit;
+            if (!same) { GroupStates.Clear(); viewUnit = unit.Unit; }
+            // 값을 고친 뒤 다시 그릴 때는 보던 자리에 둔다
+            var lists = new[] { SummaryList, FullList, RosterList };
+            var offsets = lists.Select(l => { var sv = ScrollOf(l); return sv == null ? 0 : sv.VerticalOffset; }).ToArray();
+            RebuildUnitViews();
+            if (same)
+                Dispatcher.BeginInvoke(DispatcherPriority.Loaded, new Action(() =>
+                {
+                    for (int i = 0; i < lists.Length; i++) { var sv = ScrollOf(lists[i]); if (sv != null) sv.ScrollToVerticalOffset(offsets[i]); }
+                }));
+        }
+
+        void RebuildUnitViews()
+        {
             session.RefreshEdits(unit);
             var summary = session.SummaryOf(unit);
             var summaryOrder = new Dictionary<string, int>();
@@ -139,7 +183,8 @@ namespace CtaToybox.App
         {
             var item = ItemList.SelectedItem as ItemLinkItem;
             if (item == null) return;
-            if (item.Link.Files.Count != 1 || item.Link.Rule == ItemLinks.RuleCandidates || item.Link.Rule == ItemLinks.RuleNone)
+            bool picked = item.Link.Rule == ItemLinks.RuleFirstByName;
+            if (!picked && (item.Link.Files.Count != 1 || item.Link.Rule == ItemLinks.RuleCandidates || item.Link.Rule == ItemLinks.RuleNone))
             {
                 MessageBox.Show(this, "'" + item.Link.Name + "'은 파일 하나로 이어지지 않는다. 게임이 어느 파일을 쓰는지 확인하지 않았다.\n\n" +
                     (item.Link.Files.Count == 0 ? "후보 파일 없음" : "후보:\n" + string.Join("\n", item.Link.Files.Take(20))), "무기·탄약");
