@@ -7,10 +7,24 @@ namespace CtaToybox.Core
         // 맞으면 null. warning은 막지 않는 경고다
         public static string CheckNewValue(string file, string oldText, string newText, out string warning)
         {
-            if (LuaTable.IsLua(file)) return LuaPatcher.CheckNewValue(oldText, newText, out warning);
-            string error = TokenPatcher.CheckNewValue(oldText, newText, out warning);
-            if (error != null || !SettingFiles.InArea(file)) return error;
+            string error = LuaTable.IsLua(file) ? LuaPatcher.CheckNewValue(oldText, newText, out warning) : TokenPatcher.CheckNewValue(oldText, newText, out warning);
+            if (error != null) return error;
+            warning = warning ?? RangeWarning(oldText, newText);
+            if (LuaTable.IsLua(file) || !SettingFiles.InArea(file)) return null;
             return SettingStrings.CheckPieces(oldText, newText) ?? SettingStrings.CheckSteps(oldText, newText);
+        }
+
+        // 범위 경고(막지 않는다): 0보다 큰 값을 음수로 바꾸면 실수일 수 있다. 수식이나 문자열은 보지 않는다.
+        // 몇 배인지는 보지 않는다(gravity 2→60 같은 정상 변경이 있다). 정수를 소수로 바꾸는 것도 보지 않는다({item "m24 grenade" 1.25 0.5}처럼 개수도 소수가 된다)
+        static string RangeWarning(string oldText, string newText)
+        {
+            string a = oldText == null ? null : oldText.Trim(), b = newText == null ? null : newText.Trim();
+            if (a == null || b == null || !SdlCore.IsNumber(a) || !SdlCore.IsNumber(b)) return null;
+            double before, after;
+            if (!double.TryParse(a, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out before) ||
+                !double.TryParse(b, System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out after)) return null;
+            if (before > 0 && after < 0) return "원래 값은 0보다 큰데 새 값이 음수다: " + b;
+            return null;
         }
 
         // 수정 한 건을 원본 텍스트에 미리 적용해 본다. 되면 null, 안 되면 이유.
