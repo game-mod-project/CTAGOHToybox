@@ -272,7 +272,9 @@ namespace CtaToybox.Core
                         var leaf = row.Leaves[i];
                         var t = new TraceValue { Text = leaf.Text, File = entry.File, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
                         // 항목 이름을 바꾸면 유닛과 이어지지 않는다. 호출 밖의 따옴표 없는 낱말(requires, costs 같은 열쇠말)도 고치지 않는다
-                        if (r == 0 && i == 0) { t.Arg = -1; t.Note = "항목 이름이다. 바꾸면 유닛과 이어지지 않는다"; }
+                        // 분대 호출 항목은 name() 인자가 항목 이름이다
+                        bool entryName = entry.IsCall ? r == 0 && string.Equals(row.LeafNames[i], "name", StringComparison.OrdinalIgnoreCase) : r == 0 && i == 0;
+                        if (entryName) { t.Arg = -1; t.Note = "항목 이름이다. 바꾸면 유닛과 이어지지 않는다"; }
                         else if (row.LeafNames[i] == null && leaf.Kind == "atom" && !SdlCore.IsNumber(leaf.Text)) { t.Arg = -1; t.Note = "열쇠말이다(" + leaf.Text + ")"; }
                         rv.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = 1,
                             UnitScopeBlocker = "가격·로스터 파일은 유닛이 읽는 파일이 아니다. 이 항목만 바뀐다" });
