@@ -26,6 +26,8 @@ namespace CtaToybox.Core
         public string Context { get; set; }     // 같은 키가 여러 번 나올 때 어느 부위의 것인지(예: volume body1). 없으면 null
         public List<TraceValue> Values { get; } = new List<TraceValue>();
         public List<string> LeafNames { get; set; }   // 값마다 감싼 호출의 이름(KeyRow.LeafNames). 호출 밖이면 null
+        public string Comment { get; set; }        // Lua 설정의 개발사 주석(그 줄). 없으면 null
+        public string TableComment { get; set; }   // Lua 설정의 표 앞 주석. 없으면 null
     }
 
     public sealed class UnitTraceResult
@@ -110,6 +112,7 @@ namespace CtaToybox.Core
         {
             unit = SourceStack.ToVirtual(unit);
             if (stack.Find(unit) == null) return null;
+            if (LuaTable.IsLua(unit)) return TraceLua(unit);
             var resolved = new SdlResolver(stack.ReadText).Resolve(unit);
             var root = new SdlNode("root", "", 0, true);
             root.Children.AddRange(resolved.Nodes);
@@ -123,6 +126,22 @@ namespace CtaToybox.Core
                 var traced = new TraceRow { Path = row.Path, RawPath = row.RawPath, LeafNames = row.LeafNames, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i] };
                 foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                 result.Rows.Add(traced);
+            }
+            return result;
+        }
+
+        // Lua 설정 파일: include·매크로가 없으므로 파일의 줄이 곧 펼친 줄이다. 읽지 못하면 줄 없이 이유만 낸다
+        UnitTraceResult TraceLua(string unit)
+        {
+            var lua = LuaTable.Read(stack.ReadText(unit));
+            var result = new UnitTraceResult { Unit = unit, Unresolved = lua.Errors.Select(e => "Lua: " + e).ToList(), IncludeEdges = new List<SdlIncludeEdge>(), Nodes = new List<object>() };
+            foreach (var r in lua.Rows)
+            {
+                var row = new TraceRow { Path = r.Path, RawPath = r.RawPath, Occurrence = r.Occurrence, Form = "block", LeafNames = new List<string> { null }, Comment = r.Comment, TableComment = r.TableComment };
+                var v = new TraceValue { Text = r.Value, File = unit, KeyPath = r.Path, Occurrence = r.Occurrence, Arg = 0 };
+                if (r.Kind == "nil") { v.Arg = -1; v.Note = "nil(값 없음)은 이번에 고칠 수 없다"; }
+                row.Values.Add(v);
+                result.Rows.Add(row);
             }
             return result;
         }

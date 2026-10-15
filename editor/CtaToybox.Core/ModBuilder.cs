@@ -5,6 +5,7 @@
 // scope가 unit인 수정: 값이 유닛 자신의 파일에 있으면 그 파일을 고친다. include한 파일에 있으면 공유 파일은 두고,
 // 유닛에서 그 파일까지의 include 사슬을 유닛 전용 사본으로 만든 뒤 include 경로를 사본으로 고쳐 쓴다(IncludeChain).
 // 사본을 하나라도 만들지 못하면 그 유닛의 include는 고쳐 쓰지 않는다: 없는 파일을 include하는 유닛을 내보내지 않는다.
+// .lua 파일(컨퀘스트 AI 설정)은 LuaPatcher로, 나머지는 TokenPatcher로 고친다.
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -309,7 +310,7 @@ namespace CtaToybox.Core
             // 적용이 검증에서 던져도 그때까지의 결과는 보고한다(호출한 쪽이 적용을 적용 불가로 바꾼다)
             var reported = new List<EditResult>();
             string patched;
-            try { patched = TokenPatcher.Apply(text, all, applied, item.Raw); }
+            try { patched = LuaTable.IsLua(item.Source.VirtualPath) ? LuaPatcher.Apply(text, all, applied) : TokenPatcher.Apply(text, all, applied, item.Raw); }
             finally
             {
                 reported.AddRange(applied.Where(r => item.Edits.Contains(r.Edit)));

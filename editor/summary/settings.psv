@@ -1,4 +1,4 @@
-# 게임 설정 요약 탭에 올리는 키. 형식과 규칙은 vehicle.psv와 같다. Lua 키는 단계 3(Task 9)에서 더한다.
+# 게임 설정 요약 탭에 올리는 키. 형식과 규칙은 vehicle.psv와 같다.
 */startval|시작 자원 (MP·SP·AP·RP)
 */wingain|이긴 판마다 얻는 자원
 */losegain|진 판마다 얻는 자원
@@ -41,3 +41,30 @@
 /difficulty/any/death_delay_min|출혈 사망 시간 (초)
 /difficulty/any/death_delay_max|출혈 사망 시간 (초)
 /difficulty/any/cover_efficiency|엄폐 효율
+/conquestconfig.startspawntime/defensemin|AI 첫 구매 시점 (ms)
+/conquestconfig.startspawntime/defensemax|AI 첫 구매 시점 (ms)
+/conquestconfig.startspawntime/attackmin|AI 첫 구매 시점 (ms)
+/conquestconfig.startspawntime/attackmax|AI 첫 구매 시점 (ms)
+/conquestconfig.spawncooldowntime/dcgwaveoffmin|AI 구매 간격 (ms)
+/conquestconfig.spawncooldowntime/dcgwaveoffmax|AI 구매 간격 (ms)
+/conquestconfig.spawncooldowntime/dcgmin|AI 구매 간격 (ms)
+/conquestconfig.spawncooldowntime/dcgmax|AI 구매 간격 (ms)
+/conquestconfig.attackerwaves/maxwavesmin|AI 공격 파도 수·크기·모양
+/conquestconfig.attackerwaves/maxwavesmax|AI 공격 파도 수·크기·모양
+/conquestconfig.attackerwaves/minunits|AI 공격 파도 수·크기·모양
+/conquestconfig.attackerwaves/maxunits|AI 공격 파도 수·크기·모양
+/conquestconfig.attackerwaves/pattern|AI 공격 파도 수·크기·모양
+/conquestconfig.attackerdynamicwaveoff/firstcheckseconds|AI 파도 사이 대기 (초)
+/conquestconfig.attackerdynamicwaveoff/forcereleaseseconds|AI 파도 사이 대기 (초)
+/conquestconfig.attackerdynamicwaveoff/waveoffsecondsbyattackerstate/degraded|AI 파도 사이 대기 (초)
+/conquestconfig.attackerdynamicwaveoff/waveoffsecondsbyattackerstate/reduced|AI 파도 사이 대기 (초)
+/conquestconfig.attackerdynamicwaveoff/waveoffsecondsbyattackerstate/retained|AI 파도 사이 대기 (초)
+/conquestconfig.defenderopening/minunitsperflag|AI 수비 첫 배치
+/conquestconfig.defenderopening/maxunitsperflag|AI 수비 첫 배치
+/conquestconfig.defenderopening/minunitsperflagfloor|AI 수비 첫 배치
+/conquestconfig.defenderopening/maxduration|AI 수비 첫 배치
+/conquestconfig.defendercounterattack/minunits|AI 반격
+/conquestconfig.defendercounterattack/maxunits|AI 반격
+/conquestconfig.defendercounterattack/responsechance|AI 반격
+/conquestconfig.unitspawnwaittime|AI 대기·명령 주기 (ms)
+/conquestconfig.orderrotationperiod|AI 대기·명령 주기 (ms)

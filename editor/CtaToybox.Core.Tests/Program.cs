@@ -97,6 +97,9 @@ static class Program
             ("SettingFiles", SettingFilesTests.Run),
             ("SettingsSession", SettingsSessionTests.Run),
             ("SettingStrings", SettingStringsTests.Run),
+            ("LuaTable", LuaTableTests.Run),
+            ("LuaPatcher", LuaPatcherTests.Run),
+            ("LuaSession", LuaSessionTests.Run),
             ("Cli", CliTests.Run),
         };
         foreach (var s in suites)

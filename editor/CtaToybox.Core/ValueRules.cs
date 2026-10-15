@@ -7,6 +7,7 @@ namespace CtaToybox.Core
         // 맞으면 null. warning은 막지 않는 경고다
         public static string CheckNewValue(string file, string oldText, string newText, out string warning)
         {
+            if (LuaTable.IsLua(file)) return LuaPatcher.CheckNewValue(oldText, newText, out warning);
             string error = TokenPatcher.CheckNewValue(oldText, newText, out warning);
             if (error != null || !SettingFiles.InArea(file)) return error;
             return SettingStrings.CheckPieces(oldText, newText) ?? SettingStrings.CheckSteps(oldText, newText);

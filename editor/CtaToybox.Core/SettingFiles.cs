@@ -16,7 +16,7 @@ namespace CtaToybox.Core
 
         // 목록에 한 항목으로 올리는 맨 위 파일. 이 파일들이 include하는 .inc는 그 항목의 전체 탭에 나온다
         static readonly Regex Top = new Regex(
-            @"^(set/dynamic_campaign/(resources|duration)_[^/]+\.set|set/multiplayer/games/[^/]+\.set|set/difficulty/[^/]+\.dl)$",
+            @"^(set/dynamic_campaign/(resources|duration)_[^/]+\.set|set/multiplayer/games/[^/]+\.set|set/difficulty/[^/]+\.dl|script/multiplayer/modes/conquest/runtime_config\.lua)$",
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         // 게임 설정이 있는 폴더. 문자열 속 설정과 단계표 검사는 이 아래 파일에만 한다

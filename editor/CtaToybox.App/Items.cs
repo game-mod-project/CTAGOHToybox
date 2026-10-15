@@ -77,8 +77,10 @@ namespace CtaToybox.App
         // 줄의 설명: 주석이 없는 매크로 호출 줄은 매크로 인자라는 것을 알린다
         public static string RowNote(RowView row)
         {
+            string comment = (row.SourceComment == null ? "" : "\n원문 주석: " + row.SourceComment) + (row.TableComment == null ? "" : "\n표 설명: " + row.TableComment);
             if (row.Note == null && row.IsMacroCall) return "[매크로 호출] 이 인자를 쓰는 값들이 함께 바뀐다. 인자로 계산한 값은 전체 탭의 '고칠 수 없는 값'에 보인다";
-            return Note(row.Note);
+            if (row.Note == null && comment.Length > 0) return "(한글 설명 없음)" + comment;
+            return Note(row.Note) + comment;
         }
 
         // 줄의 한글 이름: 키 주석의 뜻을 짧게 줄인 것. 뜻을 모르면 "(이름 미확인)"과 원문 키의 마지막 이름
@@ -115,6 +117,7 @@ namespace CtaToybox.App
         // 줄의 지금 값. 호출 안의 값은 원문처럼 이름(값 값)으로 묶는다: side(ger) lvl(lvl1 lvl2) cost(10.0)
         public static string ValuesLine(RowView row)
         {
+            if (row.Values.Count == 1 && row.Values[0].Computed != null) return Value(row.Values[0].Trace.Text) + "  (= " + row.Values[0].Computed + ")";
             // 문자열 속 설정: 조각마다 한 줄 "뜻: 값"
             if (row.Values.Count == 1 && row.Values[0].Pieces != null)
             {

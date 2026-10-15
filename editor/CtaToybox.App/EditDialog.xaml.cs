@@ -41,7 +41,7 @@ namespace CtaToybox.App
                 // 첫 줄: 값의 뜻. 둘째 줄: 원문의 이름과 자리, 원래 값
                 caption.Children.Add(new TextBlock { TextWrapping = TextWrapping.Wrap, FontWeight = FontWeights.SemiBold, Text = Text.ValueName(row, i) });
                 caption.Children.Add(new TextBlock { TextWrapping = TextWrapping.Wrap, Foreground = Brushes.DimGray, FontSize = 12,
-                    Text = (row.Values.Count > 1 ? (i + 1) + "번째 값" : "값") + (v.Name == null ? "" : " · 원문 " + v.Name + "()") + " · 원래 " + Text.Value(v.Trace.Text) +
+                    Text = (row.Values.Count > 1 ? (i + 1) + "번째 값" : "값") + (v.Name == null ? "" : " · 원문 " + v.Name + "()") + " · 원래 " + Text.Value(v.Trace.Text) + (v.Computed == null ? "" : " (= " + v.Computed + ")") +
                            (v.Edit == null ? "" : "  (수정됨: " + Text.Value(v.Edit.New) + ", " + (v.Edit.Scope == "unit" ? "이 유닛만" : "전부") + ")") });
                 if (v.Editable && files.Count > 1)
                     caption.Children.Add(new TextBlock { Foreground = Brushes.Gray, FontSize = 12, TextWrapping = TextWrapping.Wrap,

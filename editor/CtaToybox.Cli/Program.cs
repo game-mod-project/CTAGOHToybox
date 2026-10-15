@@ -232,10 +232,11 @@ namespace CtaToybox.Cli
                 if (file == null) { output.WriteLine("원본에 이 파일이 없다: " + positional[0]); return 1; }
                 var versions = stack.Versions(positional[0]);
                 output.WriteLine(file.VirtualPath + "  (계층 " + file.Layer + (versions.Count > 1 ? ", 겹침 " + string.Join(" → ", versions.Select(v => v.Layer)) : "") + ")");
-                var parsed = SdlCore.Parse(TextCodec.Decode(stack.Read(file), out TextKind kind));
-                if (parsed.Errors.Count > 0) { output.WriteLine("파싱되지 않는다: " + parsed.Errors[0]); return 1; }
+                string error;
+                var rows = SourceRows.Of(file.VirtualPath, TextCodec.Decode(stack.Read(file), out TextKind kind), out error);
+                if (rows == null) { output.WriteLine("읽히지 않는다: " + error); return 1; }
                 string filter = opt.ContainsKey("filter") ? opt["filter"] : null;
-                foreach (var row in KeyLocator.Rows(parsed.Root))
+                foreach (var row in rows)
                 {
                     if (row.Leaves.Count == 0) continue;
                     if (filter != null && row.Path.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0) continue;
@@ -260,9 +261,11 @@ namespace CtaToybox.Cli
                 if (file == null) { output.WriteLine("원본에 이 파일이 없다: " + fileArg); return 1; }
                 if (scope == "unit" && (SettingFiles.InArea(file.VirtualPath) || UnitKind.OfEditor(SourceStack.ToVirtual(opt["unit"])) == SettingFiles.Kind))
                 { output.WriteLine(SettingFiles.UnitScopeNote); return 1; }
-                var parsed = SdlCore.Parse(TextCodec.Decode(stack.Read(file), out TextKind kind));
-                if (parsed.Errors.Count > 0) { output.WriteLine("파싱되지 않는 파일은 고칠 수 없다: " + parsed.Errors[0]); return 1; }
-                var node = KeyLocator.Find(parsed.Root, keyPath, occ, arg);
+                string readError;
+                var rows = SourceRows.Of(file.VirtualPath, TextCodec.Decode(stack.Read(file), out TextKind kind), out readError);
+                if (rows == null) { output.WriteLine("읽히지 않는 파일은 고칠 수 없다: " + readError); return 1; }
+                var found = rows.FirstOrDefault(r => r.Occurrence == occ && string.Equals(r.Path, keyPath, StringComparison.OrdinalIgnoreCase));
+                var node = found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
                 string warning;
                 string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning);

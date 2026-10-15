@@ -1,6 +1,7 @@
 // 화면이 쓰는 편집 상태와 동작. 화면은 이 클래스만 부르고 원본을 직접 읽거나 파일을 쓰지 않는다.
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
@@ -18,6 +19,7 @@ namespace CtaToybox.Core
         public List<SettingPiece> Pieces { get; set; }   // 문자열 속 설정("이름=값;…")의 조각. 게임 설정 폴더의 파일만. 아니면 null
         public List<string> PieceLabels { get; set; }    // 조각마다 뜻(values.psv의 @이름). 모르면 그 자리 null
         public string Steps { get; set; }                // 판 수 단계표의 읽기용 풀이. 아니면 null
+        public string Computed { get; set; }             // Lua 수식(예: 2 * 60000)의 계산값 글자. 아니면 null
         public bool Editable { get { return Trace.Arg >= 0; } }
     }
 
@@ -33,6 +35,8 @@ namespace CtaToybox.Core
         public bool IsMacroCall { get; set; }         // 파일 안의 매크로 호출 줄. 계산에 쓰여 펼친 값으로는 못 고치는 인자를 여기서 고친다
         public string RosterEntry { get; set; }       // 가격·로스터 줄이면 '파일 · 항목 이름'. 유닛의 줄이면 null
         public int Repeats { get; set; } = 1;         // 같은 줄이 펼친 트리에 나온 횟수(CollapseRepeats가 하나로 모은 수)
+        public string SourceComment { get; set; }     // Lua 설정의 개발사 주석(영어 원문). 없으면 null
+        public string TableComment { get; set; }      // Lua 설정의 표 앞 주석. 없으면 null
         public List<ValueView> Values { get; } = new List<ValueView>();
     }
 
@@ -176,9 +180,14 @@ namespace CtaToybox.Core
             foreach (var row in traced.Rows)
             {
                 var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
+                r.SourceComment = row.Comment;
+                r.TableComment = row.TableComment;
                 foreach (var v in row.Values)
                 {
                     var vv = new ValueView { Trace = v, Name = row.LeafNames == null ? null : row.LeafNames[r.Values.Count] };
+                    double computed;
+                    if (LuaTable.IsLua(v.File) && !SdlCore.IsNumber(v.Text) && LuaTable.TryEvaluate(v.Text, out computed))
+                        vv.Computed = computed.ToString("0.###", CultureInfo.InvariantCulture);
                     if (v.Arg >= 0)
                     {
                         vv.SharedBy = Index.UsersOf(v.File).Count;
@@ -275,9 +284,10 @@ namespace CtaToybox.Core
             string file = SourceStack.ToVirtual(e.File ?? "");
             string text = Stack.ReadText(file);
             if (text == null) return null;
-            var parsed = SdlCore.Parse(text);
-            if (parsed.Errors.Count > 0) return null;
-            var row = KeyLocator.Rows(parsed.Root).FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            string error;
+            var rows = SourceRows.Of(file, text, out error);
+            if (rows == null) return null;
+            var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
             if (row == null || e.Arg < 0 || e.Arg >= row.Leaves.Count) return null;
             var texts = row.Leaves.Select(l => l.Text).ToList();
             var labels = valueLabels.Of(row.Path, texts, row.LeafNames, row.RawPath);
@@ -342,6 +352,7 @@ namespace CtaToybox.Core
             foreach (var e in traced.IncludeEdges) if (!files.Contains(e.ToFile)) files.Add(e.ToFile);
             foreach (string file in files)
             {
+                if (LuaTable.IsLua(file)) continue;   // Lua 설정에는 매크로 호출이 없다
                 string text = Stack.ReadText(file);
                 if (text == null) continue;
                 var parsed = SdlCore.Parse(text);
