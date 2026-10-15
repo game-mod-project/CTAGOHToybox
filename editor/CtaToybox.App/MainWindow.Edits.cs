@@ -115,7 +115,8 @@ namespace CtaToybox.App
             lines.AddRange(report.Results.Where(r => r.Status != EditStatus.Applied).Take(20).Select(r =>
                 Text.Status(r.Status) + ": " + KeyLabel.Readable(r.Edit.Path) + " (" + r.Edit.File + ")" + (r.Message == null ? "" : " — " + r.Message)));
             lines.Add("");
-            lines.Add("게임을 다시 시작하면 반영된다.");
+            // 목록 파일이 깨져 멈춘 빌드처럼 아무것도 바뀌지 않았으면 반영된다고 하지 않는다
+            lines.Add(report.WrittenFiles.Count + report.RemovedFiles.Count > 0 ? "게임을 다시 시작하면 반영된다." : "모드 폴더에 바뀐 것이 없다.");
             MessageBox.Show(this, string.Join("\n", lines), "빌드 결과");
             RefreshEdits();
         }

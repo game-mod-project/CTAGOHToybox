@@ -261,7 +261,27 @@ namespace CtaToybox.Core
                 // 미리 적용해 본다. 하나도 적용되지 않으면 사본을 만들지 않는다
                 var probe = new List<EditResult>();
                 TextKind kind;
-                TokenPatcher.Apply(TextCodec.Decode(stack.Read(source), out kind), allowed, probe);
+                string text = TextCodec.Decode(stack.Read(source), out kind);
+                try { TokenPatcher.Apply(text, allowed, probe); }
+                catch (InvalidOperationException)
+                {
+                    // 키 경로를 바꾸는 수정(예전 프로젝트의 블록 한정자 등)이 하나라도 있으면 전체가 던진다. 하나씩 해 보고 던지는 것만 뺀다
+                    var usable = new List<Edit>();
+                    foreach (var e in allowed)
+                    {
+                        try { TokenPatcher.Apply(text, new[] { e }, new List<EditResult>()); usable.Add(e); }
+                        catch (InvalidOperationException ex) { report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = ex.Message }); }
+                    }
+                    allowed = usable;
+                    probe.Clear();
+                    if (allowed.Count == 0) continue;
+                    try { TokenPatcher.Apply(text, allowed, probe); }
+                    catch (InvalidOperationException ex)
+                    {
+                        foreach (var e in allowed) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = ex.Message });
+                        continue;
+                    }
+                }
                 if (!probe.Any(r => r.Status == EditStatus.Applied)) { report.Results.AddRange(probe); continue; }
                 live[file] = allowed;
                 copySet.UnionWith(IncludeChain.CopySet(edges, unit, file));
@@ -365,13 +385,28 @@ namespace CtaToybox.Core
             string manifestPath = Path.Combine(modDir, ManifestName);
             if (!File.Exists(manifestPath)) return result;
             BuildManifest old;
-            try { old = JsonSerializer.Deserialize<BuildManifest>(File.ReadAllText(manifestPath, Encoding.UTF8), Json); }
+            bool hasList;
+            try
+            {
+                string json = File.ReadAllText(manifestPath, Encoding.UTF8);
+                // 이 도구는 늘 파일 목록(files 배열)을 쓴다. 목록이 없으면(null, {}) 깨진 것과 같이 다룬다. {}는 역직렬화하면 빈 목록이 되므로 원문에서 본다
+                using (var doc = JsonDocument.Parse(json))
+                {
+                    JsonElement files;
+                    hasList = doc.RootElement.ValueKind == JsonValueKind.Object && doc.RootElement.TryGetProperty("files", out files) && files.ValueKind == JsonValueKind.Array;
+                }
+                old = JsonSerializer.Deserialize<BuildManifest>(json, Json);
+            }
             catch (JsonException)
             {
                 report.FileErrors.Add(ManifestName + ": 이전 빌드의 목록 파일을 읽지 못해 빌드를 멈췄다. 목록에 있던 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다: " + manifestPath);
                 return null;
             }
-            if (old == null || old.Files == null) return result;
+            if (!hasList || old == null || old.Files == null)
+            {
+                report.FileErrors.Add(ManifestName + ": 이전 빌드의 목록 파일에 파일 목록이 없어 빌드를 멈췄다. 목록에 있던 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다: " + manifestPath);
+                return null;
+            }
             foreach (var f in old.Files)
             {
                 if (f == null || FullPath(f.Path) == null)
