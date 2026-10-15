@@ -76,6 +76,8 @@ static class LuaTableTests
         T.Eq("number", LuaTable.KindOf(" 7 "), "KindOf number");
         T.Eq("string", LuaTable.KindOf("\"probe\""), "KindOf string");
         T.True(LuaTable.KindOf("2 * x") == null && LuaTable.KindOf("{}") == null && LuaTable.KindOf("print(1)") == null && LuaTable.KindOf("") == null, "KindOf refuses names, tables and calls");
+        T.True(LuaTable.KindOf("5 -- x") == null && LuaTable.KindOf("5;") == null && LuaTable.KindOf("5 --[[x]]") == null && LuaTable.KindOf("5--1") == null,
+            "KindOf refuses a trailing comment or ; (the value must be the whole input; in a table it would break the file)");
 
         foreach (string bad in new[] { "local x = 1", "X = function() end", "X = { a = 1 + y }", "X = { [1] = 2 }", "X = { a = 1", "X = 1 ..", "X = \"open" })
         {

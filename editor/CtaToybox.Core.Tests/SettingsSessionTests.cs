@@ -21,7 +21,7 @@ static class SettingsSessionTests
         game = T.TempDir(); repo = T.TempDir(); outDir = T.TempDir();
         T.Zip(Path.Combine(game, "resource", "gamelogic.pak"), SettingFilesTests.Files());
         T.Put(Path.Combine(workshop, "222", "resource"), SettingFilesTests.Res,
-            "{Standard\n\t{GlobalMaxCP 2000}\n\t{Resources\n\t\t{MP {StartVal 1500}}\n\t}\n}");
+            "{Standard\n\t{GlobalMaxCP 2000}\n\t{Resources\n\t\t{MP {StartVal 1500}}\n\t\t{RP {StartVal 7}}\n\t}\n}");
         Utf8(repo, "data/annotations/common.psv", "*/mass|block|확인|무게|C\n");
         Utf8(repo, "data/annotations/settings.psv", "**/globalmaxcp|block|확인|전체 CP 상한|C\n*/startval|block|확인|시작할 때의 양|C\n");
         Utf8(repo, "editor/settings/files.psv", SettingFilesTests.Res + "|컨퀘스트 자원|컨퀘스트 자원 — standard\n" + SettingFilesTests.Dl + "|난이도|난이도 — normal\n");
@@ -88,6 +88,16 @@ static class SettingsSessionTests
             var start = SettingStrings.Split(current);
             session.ApplyRow(bz, row, new[] { SettingStrings.Join(row.Values[0].Trace.Text, new[] { start[0].Value, "777" }) }, "shared");
             T.Eq("\"flag_capture_time=61;scoreStart=777\"", session.Project.Edits.Single().New, "both piece changes are kept in one edit");
+            T.Eq(new[] { "flag_capture_time: 60 → 61", "scoreStart: 250 → 777" }, session.Describe(session.Project.Edits.Single()).ChangedPieces.ToArray(), "the edit list names only the changed pieces");
+
+            // 키 끝이 같고 상위 블록만 다른 줄은 상위 블록 이름을 부위로 보인다(시작 자원 MP·RP)
+            var res2 = session.OpenUnit(SettingFilesTests.Res);
+            T.Eq("MP", res2.Rows.First(r => r.Path == "/standard/resources/mp/startval").Context, "StartVal of MP");
+            T.True(res2.Rows.First(r => r.Path == "/standard/globalmaxcp").Context == null, "a key with no namesake gets no context");
+            // 요약 탭 줄 이름: 이름이 같은 줄에 붙인 상위 블록은 이름 뒤에 붙인다(이름을 대신하면 Low·Low·Low처럼 뜻이 사라진다)
+            T.Eq("시작할 때의 양 · MP", res2.Rows.First(r => r.Path == "/standard/resources/mp/startval").SummaryName("시작할 때의 양"), "namesake context follows the name");
+            T.Eq("volume body1", new RowView { Context = "volume body1" }.SummaryName("전면 장갑"), "a part context still stands for the name (A's summary)");
+            T.Eq("전면 장갑", new RowView().SummaryName("전면 장갑"), "no context: the name");
         }
 
         string o;

@@ -37,7 +37,16 @@ namespace CtaToybox.Core
         public int Repeats { get; set; } = 1;         // 같은 줄이 펼친 트리에 나온 횟수(CollapseRepeats가 하나로 모은 수)
         public string SourceComment { get; set; }     // Lua 설정의 개발사 주석(영어 원문). 없으면 null
         public string TableComment { get; set; }      // Lua 설정의 표 앞 주석. 없으면 null
+        public bool ContextIsNamesake { get; set; }   // Context가 이름이 같은 줄을 가르는 상위 블록 이름이다(게임 설정, NameNamesakes)
         public List<ValueView> Values { get; } = new List<ValueView>();
+
+        // 요약 탭의 줄 이름. 부위(volume body1 등)는 묶음 이름을 대신하는 줄 이름이 되고,
+        // 이름이 같은 줄의 상위 블록은 이름 뒤에 붙인다(대신하면 Low·Low·Low처럼 뜻이 사라진다)
+        public string SummaryName(string rowName)
+        {
+            if (Context == null) return rowName;
+            return ContextIsNamesake ? rowName + " · " + Context : Context;
+        }
     }
 
     public sealed class UnitView
@@ -200,8 +209,11 @@ namespace CtaToybox.Core
             AddMacroCalls(view, traced, n, summary);
             // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다
             if (kind == SettingFiles.Kind)
+            {
                 foreach (var r in view.Rows)
                     foreach (var v in r.Values) if (v.Editable) v.UnitScopeBlocker = SettingFiles.UnitScopeNote;
+                NameNamesakes(view.Rows);
+            }
             CollapseRepeats(view.Rows);
             AddRoster(view);
             foreach (var row in view.Rows.Concat(view.Roster))
@@ -276,6 +288,7 @@ namespace CtaToybox.Core
             public string ValueName { get; set; }  // 고친 값을 감싼 호출의 이름. 없으면 null
             public string RowText { get; set; }    // 원본 줄의 값 전체
             public int ValueCount { get; set; }
+            public List<string> ChangedPieces { get; set; }   // 문자열 속 설정이면 바뀐 조각만 "뜻(없으면 이름): 원래 → 새 값". 아니면 null
         }
 
         // 수정 목록이 보일 설명: 원본 파일에서 그 줄을 다시 찾아 이름을 붙인다. 줄을 찾지 못하면 null
@@ -297,7 +310,45 @@ namespace CtaToybox.Core
                 Note = n.Find(row.Path, row.Form, true, row.RawPath) ?? NotesFor(file).Find(row.Path, row.Form, true, row.RawPath),
                 IsMacroCall = row.Form == "macro", ValueLabel = labels[e.Arg], ValueName = row.LeafNames[e.Arg],
                 RowText = string.Join(" ", texts), ValueCount = texts.Count,
+                ChangedPieces = ChangedPieces(row, e),
             };
+        }
+
+        // 문자열 속 설정의 수정에서 바뀐 조각들. 조각 이름이 원래와 같을 때만(아니면 null)
+        List<string> ChangedPieces(KeyRow row, Edit e)
+        {
+            if (!SettingFiles.InArea(SourceStack.ToVirtual(e.File ?? ""))) return null;
+            var before = SettingStrings.Split(e.Old);
+            var after = SettingStrings.Split(e.New);
+            if (before == null || after == null || before.Count != after.Count) return null;
+            var result = new List<string>();
+            for (int i = 0; i < before.Count; i++)
+            {
+                if (before[i].Name != after[i].Name) return null;
+                if (before[i].Value == after[i].Value) continue;
+                result.Add((valueLabels.PieceLabel(row.Path, row.RawPath, before[i].Name) ?? before[i].Name) + ": " + before[i].Value + " → " + after[i].Value);
+            }
+            return result;
+        }
+
+        // 게임 설정에서 키 끝이 같고 상위 블록만 다른 줄(시작 자원의 MP·SP·AP·RP, 난이도의 enemy·ally·player 등)에
+        // 상위 블록의 원문 이름을 부위로 붙인다. 이름이 같은 줄이 없으면 붙이지 않는다
+        static void NameNamesakes(List<RowView> rows)
+        {
+            foreach (var group in rows.Where(r => r.Context == null).GroupBy(r => r.Path.Substring(r.Path.LastIndexOf('/') + 1)))
+            {
+                var parents = group.Select(r => Parent(r.RawPath ?? r.Path)).ToList();
+                if (parents.Distinct(StringComparer.OrdinalIgnoreCase).Count() < 2) continue;
+                foreach (var r in group) { r.Context = Parent(r.RawPath ?? r.Path); r.ContextIsNamesake = true; }
+            }
+        }
+
+        static string Parent(string path)
+        {
+            int last = path.LastIndexOf('/');
+            if (last <= 0) return null;
+            int before = path.LastIndexOf('/', last - 1);
+            return path.Substring(before + 1, last - before - 1).Trim('"');
         }
 
         // 같은 줄을 하나로 모은다. 매크로 인자 하나가 여러 곳에 펼쳐지면(예: 탄종마다 같은 사거리 표) 같은 원본 자리를 가리키는 줄이 여러 번 나온다.

@@ -49,7 +49,7 @@ namespace CtaToybox.App
                 if (v.Editable && v.Pieces != null)
                 {
                     // 문자열 속 설정: 조각마다 칸. 이미 수정이 있으면 그 새 값에서 시작한다(앞에 고친 조각이 남는다)
-                    var start = SettingStrings.Split(v.Edit != null ? v.Edit.New : v.Trace.Text) ?? v.Pieces;
+                    var start = SettingStrings.StartPieces(v.Pieces, v.Edit == null ? null : v.Edit.New);
                     var block = new StackPanel { Margin = new Thickness(0, 3, 0, 3) };
                     block.Children.Add(caption);
                     var list = new List<TextBox>();

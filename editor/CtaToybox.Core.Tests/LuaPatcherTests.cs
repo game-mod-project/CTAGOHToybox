@@ -27,6 +27,7 @@ static class LuaPatcherTests
         T.True(LuaPatcher.CheckNewValue("\"a\"", "'a'", out warning) != null, "the quote kind stays");
         T.True(LuaPatcher.CheckNewValue("nil", "3", out warning) != null, "nil is not editable");
         T.True(LuaPatcher.CheckNewValue("3", "", out warning) != null, "an empty value is refused");
+        T.True(LuaPatcher.CheckNewValue("1 * 1000", "5;", out warning) != null && LuaPatcher.CheckNewValue("1 * 1000", "5 -- x", out warning) != null, "a trailing ; or comment is refused");
         T.True(LuaPatcher.SameValue("1 * 1000", "1*1000") && !LuaPatcher.SameValue("\"a b\"", "\"ab\""), "SameValue ignores spaces only in numbers");
 
         string text = LuaTableTests.Sample;

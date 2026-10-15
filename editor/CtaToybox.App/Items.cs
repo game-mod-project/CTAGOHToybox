@@ -101,6 +101,8 @@ namespace CtaToybox.App
             if (d == null) return KeyLabel.Readable(e.Path) + " · " + (e.Arg + 1) + "번째 값: " + change;
             var row = new RowView { Path = e.Path, Note = d.Note, IsMacroCall = d.IsMacroCall };
             string rowName = RowName(row);
+            // 문자열 속 설정: 바뀐 조각만 보인다(문자열 전체는 길어 무엇이 바뀌었는지 읽히지 않는다)
+            if (d.ChangedPieces != null && d.ChangedPieces.Count > 0) return rowName + " · " + string.Join(", ", d.ChangedPieces);
             string valueName = d.ValueLabel ?? (d.ValueCount == 1 && d.ValueName == null ? null : (d.ValueName ?? (e.Arg + 1) + "번째 값") + " (뜻 미확인)");
             return rowName + (d.ValueCount > 1 ? "  [" + d.RowText.Replace("\"", "") + "]" : "") + (valueName == null ? "" : " · " + valueName) + ":  " + change;
         }

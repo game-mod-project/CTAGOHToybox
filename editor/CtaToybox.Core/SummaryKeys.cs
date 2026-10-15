@@ -12,13 +12,16 @@ namespace CtaToybox.Core
     {
         const int MaxLabel = 30;
         readonly Dictionary<string, string> labels = new Dictionary<string, string>(StringComparer.Ordinal);
+        readonly List<string> keys = new List<string>();   // 파일에 적힌 순서
 
         public string SourceFile { get; private set; }
         public int Count { get { return labels.Count; } }
+        public IEnumerable<string> Keys { get { return keys; } }
         public List<string> Labels { get; } = new List<string>();   // 화면 이름, 파일에 적힌 순서. 요약 탭의 묶음 순서다
 
         void Add(string path, string label)
         {
+            if (!labels.ContainsKey(path)) keys.Add(path);
             labels[path] = label;
             if (!Labels.Contains(label)) Labels.Add(label);
         }
@@ -64,11 +67,15 @@ namespace CtaToybox.Core
         // 펼친 경로는 이름을 "*"로 묶어 체력·속도·기술이 한 경로가 되므로, 요약 파일이 이름별로 줄을 나눌 수 있게 한다
         public string LabelOf(string expandedPath, string rawPath = null)
         {
+            string key = KeyOf(expandedPath, rawPath);
+            return key == null ? null : labels[key];
+        }
+
+        // 맞는 요약 키. 요약에 없으면 null
+        public string KeyOf(string expandedPath, string rawPath = null)
+        {
             foreach (string key in KeyPattern.Candidates(expandedPath, rawPath, true))
-            {
-                string label;
-                if (labels.TryGetValue(key, out label)) return label;
-            }
+                if (labels.ContainsKey(key)) return key;
             return null;
         }
     }

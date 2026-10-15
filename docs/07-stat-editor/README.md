@@ -82,6 +82,17 @@ dotnet run --project editor/CtaToybox.App -c Release
 
 화면 확인용 옵션: `--unit <가상 경로> --tab summary|full|items --filter <글자> --edit-row <항목 이름> --screenshot <png>`는 그 화면(또는 그 줄의 값 고치기 창)을 PNG로 저장하고 끝낸다. `--shots <목록 파일>`은 한 번 실행으로 여러 화면을 찍는다(한 줄: `파일 이름|유닛|탭|거르기|값 고치기 창 항목`). `--project <파일>`로 프로젝트를 고른다. `--scenario <파일>`은 값 고치기 창에 값을 쓰고, 범위를 고르고, 넣기를 누르고, 수정 목록의 체크를 바꾸거나 지우는 조작을 차례로 하며 화면을 찍는다(명령 목록은 `MainWindow.Scenario.cs` 머리 주석). 반드시 `--project`로 임시 프로젝트를 준다.
 
+### 게임 설정 (하위 프로젝트 B)
+
+종류에서 "게임 설정"을 고르면 컨퀘스트 자원(`resources_*.set`), 컨퀘스트 길이(`duration_*.set`), 컨퀘스트 전투 규칙(`campaign_capture_the_flag.set`), 컨퀘스트 AI(`runtime_config.lua`), 스커미시 모드(`set/multiplayer/games/*.set`), 난이도(`set/difficulty/*.dl`)가 나온다. 이름은 `editor/settings/files.psv`, 키의 뜻은 `data/annotations/settings.psv`, 요약 키는 `editor/summary/settings.psv`에 있다. 설계는 [../superpowers/specs/2026-10-15-settings-editor-design.md](../superpowers/specs/2026-10-15-settings-editor-design.md).
+
+- 수정은 항상 "전부"다. 파일 하나가 곧 설정이다. 가격·로스터와 무기·탄약 탭은 숨긴다. 값이 모두 문자열 단계표인 파일(`duration_*.set`)도 목록에 나온다.
+- `"이름=값;이름=값"` 문자열(게임 모드의 `parameters`, `unitLimits`)은 조각마다 칸이 있다. 조각 이름·개수·순서는 바꿀 수 없다. 조각의 뜻은 `values.psv`의 자리 `@이름`.
+- `"1:200 4:250"` 같은 판 수 단계표는 값 고치기 창 아래에 풀이를 보인다. 칸마다 수의 개수가 원래와 같아야 한다.
+- 컨퀘스트 AI(Lua)는 이 파일에 나오는 꼴만 읽는다(2026-10-15 바닐라에서 값 324개, 읽지 못한 것 0). 수식은 계산값을 함께 보이고, 개발사 영어 주석을 "원문 주석"으로 보인다. 새 값은 원래와 같은 종류(수·수식, 문자열, 참·거짓)여야 하고 `nil`은 고칠 수 없다. 모르는 문법이 있으면 파일 전체를 읽지 못함으로 보이고 고치지 못한다.
+- 멀티플레이는 모든 사람이 같은 모드를 써야 한다. 설정 파일을 바꾼 모드는 다른 사람과 어긋날 수 있다.
+- 게임에서 확인했다(2026-10-15, [ingame-check.md](ingame-check.md)): 컨퀘스트 자원 시작값은 새 캠페인에 들어간다(MP 9137, RP 37). 모드의 낱개 Lua 파일은 바닐라와 앞선 모드(Wunderwaffe)의 Lua를 덮어쓴다(`targetWaveOffSeconds= 1210`). 스커미시의 `parameters`·`unitLimits` 조각은 아직 게임에서 보지 않았다. 진행 중인 캠페인에 반영되는지도 확인하지 않았다.
+
 ## 유닛에서 시작해 고치기
 
 1. 유닛을 찾는다. 처음 한 번은 유닛 색인을 만든다(2026-10-13 이 PC에서 유닛 21,612개, 8.2초). 결과는 `editor/cache/`에 저장되고, 모드를 켜고 끄거나 모드가 갱신되면 다시 만든다.
