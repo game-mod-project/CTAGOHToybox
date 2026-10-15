@@ -44,6 +44,10 @@ static class SettingStringsTests
         T.True(SettingStrings.CheckSteps("\"2:5 2:5\"", "\"2:5:1 2:5\"") != null, "each entry keeps its count of numbers");
         T.Eq("1 → 200, 4 → 250", SettingStrings.StepPreview("\"1:200 4:250\""), "preview");
         T.True(SettingStrings.StepPreview("250") == null, "no preview for other values");
+        // FlagCount는 한 칸이 한 판이다(duration_*.set 주석 "each entry is 1 game played. # of flags enabled : # of flags total on map"). 같은 값이 이어지면 묶는다
+        T.Eq("1~2판 2/5, 3판 3/5", SettingStrings.StepPreview("\"2:5 2:5 3:5\"", "/normal/FlagCount"), "FlagCount reads game by game");
+        T.Eq("1~9판 2/5, 10~24판 3/5", SettingStrings.StepPreview("\"2:5 2:5 2:5 2:5 2:5 2:5 2:5 2:5 2:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5 3:5\"", "/normal/flagcount"), "the vanilla table");
+        T.Eq("1 → 200, 4 → 250", SettingStrings.StepPreview("\"1:200 4:250\"", "/standard/resources/mp/wingain"), "other step tables keep the games → value reading");
 
         const string area = "set/multiplayer/games/battle_zones.set", unit = "set/breed/mp/ger/mid/medic.set";
         string warning;

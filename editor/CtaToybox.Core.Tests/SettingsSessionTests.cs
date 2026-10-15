@@ -76,7 +76,7 @@ static class SettingsSessionTests
             T.Eq(new[] { "flag_capture_time", "scoreStart" }, parameters.Pieces.Select(x => x.Name).ToArray(), "the session splits piece strings");
             T.Eq(2, parameters.PieceLabels.Count, "with one label slot per piece");
             var dur = session.OpenUnit(SettingFilesTests.Dur);
-            T.Eq("2 → 5, 2 → 5, 3 → 5", dur.Rows.First(r => r.Path == "/normal/flagcount").Values[0].Steps, "step tables get a preview");
+            T.Eq("1~2판 2/5, 3판 3/5", dur.Rows.First(r => r.Path == "/normal/flagcount").Values[0].Steps, "FlagCount reads game by game (E9)");
             T.True(parameters.Steps == null && dur.Rows.First(r => r.Path == "/normal/flagcount").Values[0].Pieces == null, "a piece string is not a step table and the other way round");
 
             // 같은 문자열의 조각을 차례로 고쳐도 앞의 것이 남는다(창은 기존 수정의 새 값에서 시작한다)

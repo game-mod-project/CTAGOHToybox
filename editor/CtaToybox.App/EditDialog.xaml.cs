@@ -147,7 +147,7 @@ namespace CtaToybox.App
                 if (error != null) errors.Add("값 " + (i + 1) + ": " + error);
                 else if (warning != null) warnings.Add("값 " + (i + 1) + ": " + warning);
             }
-            foreach (var kv in stepTexts) kv.Value.Text = "풀이: " + (SettingStrings.StepPreview(tokens[kv.Key]) ?? "꼴이 맞지 않는다");
+            foreach (var kv in stepTexts) kv.Value.Text = "풀이: " + (SettingStrings.StepPreview(tokens[kv.Key], row.Path) ?? "꼴이 맞지 않는다");
             MessageText.Text = errors.Count > 0 ? string.Join("\n", errors) : string.Join("\n", warnings.Select(w => "경고: " + w));
             MessageText.Foreground = errors.Count > 0 ? Brushes.Firebrick : Brushes.DarkGoldenrod;
             OkButton.IsEnabled = errors.Count == 0 && changed;
