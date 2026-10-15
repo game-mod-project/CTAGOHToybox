@@ -183,15 +183,25 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 
 | # | 백로그 | 고친 것 | 볼 곳 | 기대 | 결과 |
 |---|---|---|---|---|---|
-| 1 | G1 | `battle_zones.set` `parameters`의 `scoreStart=250` → 777 | 스커미시 배틀존의 시작 점수 | 777 | |
-| 2 | G1 | `unitlimits.inc` `officer=2` → 7 | 스커미시 구매 화면에서 Leutnant [Heer](`officer` 태그)의 수 제한 | 7 | |
-| 3 | G2 | `resources_standard.set` MP `LoseGain "1:130"` → `"2:111 6:555"` | 이어 하는 컨퀘스트 캠페인(자원 Standard)에서 한 판 지고 늘어난 MP | 130이 아니면 진행 중인 캠페인에도 설정이 들어간다 | |
-| 4 | G12 | 3과 같은 수정 | 새 컨퀘스트(자원 Standard)에서 네 판 연속 지고 판마다 늘어난 MP | 계단이면 둘째 판부터 111이 이어진다. 칸 사이를 잇는다면 211·311처럼 커진다. 첫 판(첫 칸 2보다 앞)의 값도 적는다 | |
-| 5 | G9 | `mp/ger/mid/medic.set` `{item "bandage_ger" 22.5 2.5}` → `13 13` | 새 컨퀘스트(독일)에서 Medic(한 번에 2명, `units_ger.set`의 `single_medic`)을 3~4번 사서 병사마다 German Bandage 수 | 0~26 사이로 흩어지면 둘째 수는 ± 폭이다. 모두 13이면 다른 뜻이다 | |
-| 6 | G10 | `health.inc` `tier2_standard`의 `{"personage" 0}` → 3 | 메인 메뉴 → Library → Soldiers에서 Medic [Heer](tier2_standard)의 퍽과, tier1 병종의 같은 퍽 | tier2는 "Personage (Vet. 3)", tier1은 "(Vet. 0)" | |
+| 1 | G1 | `battle_zones.set` `parameters`의 `scoreStart=250` → 777 | 스커미시 배틀존의 시작 점수 | 777 | **확인**(2026-10-15): 양쪽 시작 점수 777 / 1000, 결과 화면 승리 점수 777 |
+| 2 | G1 | `unitlimits.inc` `officer=2` → 7 | 스커미시 구매 화면에서 Leutnant [Heer](`officer` 태그)의 수 제한 | 7 | **확인**: 구매 목록에 Officer 7/7(같은 목록의 Flamer 3/3, Sniper 5/5도 `unitlimits`와 같다) |
+| 3 | G2 | `resources_standard.set` MP `LoseGain "1:130"` → `"2:111 6:555"` | 이어 하는 컨퀘스트 캠페인(자원 Standard)에서 한 판 지고 늘어난 MP | 130이 아니면 진행 중인 캠페인에도 설정이 들어간다 | **확인**: 사용자 캠페인(conquest 1·2)은 경제 Very High라 이 수정이 닿지 않아 쓰지 않았다. 대신 시험 캠페인 "ctatoybox check2"를 `"2:222 6:555"`일 때 만들어 저장하고, 게임을 끄고 `"1:333"`으로 다시 빌드한 뒤 이어 해 첫 판을 지자 MP 333(옛 값이었다면 0) |
+| 4 | G12 | 3과 같은 수정 | 새 컨퀘스트(자원 Standard)에서 네 판 연속 지고 판마다 늘어난 MP | 계단이면 둘째 판부터 111이 이어진다. 칸 사이를 잇는다면 211·311처럼 커진다. 첫 판(첫 칸 2보다 앞)의 값도 적는다 | **확인**: 새 컨퀘스트 "ctatoybox check"에서 1~4패의 MP가 0·111·111·111(같은 판 AP 390·RP 4는 MACE 값 그대로). 계단이고 첫 칸 앞은 0이다 |
+| 5 | G9 | `mp/ger/mid/medic.set` `{item "bandage_ger" 22.5 2.5}` → `13 13` | 새 컨퀘스트(독일)에서 Medic(한 번에 2명, `units_ger.set`의 `single_medic`)을 3~4번 사서 병사마다 German Bandage 수 | 0~26 사이로 흩어지면 둘째 수는 ± 폭이다. 모두 13이면 다른 뜻이다 | **확인**: 의무병 6명의 German Bandage가 21·2·24·11·25·4개(인벤토리 I). 둘째 수는 ± 폭 |
+| 6 | G10 | `health.inc` `tier2_standard`의 `{"personage" 0}` → 3 | 메인 메뉴 → Library → Soldiers에서 Medic [Heer](tier2_standard)의 퍽과, tier1 병종의 같은 퍽 | tier2는 "Personage (Vet. 3)", tier1은 "(Vet. 0)" | **확인**: AP-Mine Engineer [Heer](`miner-ap.set`, tier2_standard)가 "Personage (Vet. 3)", 다른 tier의 병종은 "Personage"만 |
 | 7 | G11 | `set/stuff/gun/37mm_pak35`의 `{parameters "heat" {gravity 2}}` → 0 | (보지 않는다) | | **뺐다**(2026-10-15): 2와 0의 차이를 화면에서 가릴 수 있다는 근거가 없고, HEAT 탄은 후기형 PaK 36(`37mm_pak36_late.def`)에만 3발 있다. 수정은 빌드에 남아 있으나 그 탄에만 걸린다 |
-| 8 | G13 | 1v1 Kalinin `varnight1~3.set`의 `{night_vision 0.75}` → 0.4 | 스커미시 1v1 Kalinin을 낮과 밤으로 열어 같은 유닛의 시야 표시선 반경을 견준다 | 밤이 낮의 절반 아래로 줄면 시야 배수다(바닐라 밤은 0.75) | |
+| 8 | G13 | 1v1 Kalinin `varnight1~3.set`의 `{night_vision 0.75}` → 0.4 | 스커미시 1v1 Kalinin을 낮과 밤으로 열어 같은 유닛의 시야 표시선 반경을 견준다 | 밤이 낮의 절반 아래로 줄면 시야 배수다(바닐라 밤은 0.75) | **확인하지 못함**: 밤 전투는 열렸지만(로그 "With options: night_weather") 일반 게임 화면에 시야 범위를 그리는 표시가 없다. 기본 키(`interface.pak`의 `profiles/default/keys.set`)에 그런 키가 없고 `v_visor`는 바닐라 주석에만 나오는 개발용 표시다 |
 
 이번에 넣지 않은 것: G3(난이도 배수를 숫자로 볼 곳을 아직 찾지 못했다), G4(새 가설이 먼저다), G5(고르는 규칙을 시험할 설계가 먼저다), G6(`.mdl`은 편집기로 고치지 않는다), G7·G8(낮은 우선).
 
-확인 순서 제안: 6(메뉴) → 1·2·8(스커미시) → 5(새 컨퀘스트) → 4(같은 새 컨퀘스트에서 지기) → 3(이어 하는 캠페인). 7은 뺐다. 확인이 끝나면 게임을 끈 상태에서 수정을 모두 끄고 다시 빌드해 생성물을 지운다.
+확인 순서 제안: 6(메뉴) → 1·2·8(스커미시) → 5(새 컨퀘스트) → 4(같은 새 컨퀘스트에서 지기) → 3(이어 하는 캠페인). 7은 뺐다.
+
+2026-10-15에 AI가 PowerShell로 게임을 직접 조작해 확인했다(게임 창만 찍고, 게임을 맨 앞에 두고 마우스·키 입력을 보냄). 게임은 마우스를 Raw Input으로 읽어 맨 앞 창일 때만 입력을 받는다. 확인하는 동안 `options.set`을 창 모드(1360×768)로 바꿨다가 끝에 백업으로 되돌렸다. 사용자 세이브 conquest 1·2는 시작 전에 백업했고 끝에 해시가 같았다. 시험 캠페인 "ctatoybox check", "ctatoybox check2"는 프로필에 남겨 두었다(지워도 된다). 확인이 끝나 수정을 모두 끄고 게임을 끈 채 다시 빌드해 생성물을 지웠다.
+
+알게 된 것:
+
+- **breed 아이템의 둘째 수는 ± 폭이다.** 병사마다 첫 수 ± 둘째 수 사이에서 개수가 정해진다.
+- **`{"personage" N}`은 소생이 켜지는 숙련도다.** Library의 퍽에 "(Vet. N)"으로 보인다.
+- **단계표 "판:값"은 계단이다.** 그 판부터 다음 칸 전까지 같은 값이고, 첫 칸보다 앞의 판은 0이다.
+- **진행 중인 캠페인도 지금 파일의 설정을 쓴다.** 캠페인을 만들 때 값을 저장해 두지 않는다(적어도 LoseGain).
+- 컨퀘스트에서 지는 가장 빠른 길은 전투 메뉴의 RETREAT다. 확인이 끝나면 게임을 끈 상태에서 수정을 모두 끄고 다시 빌드해 생성물을 지운다.

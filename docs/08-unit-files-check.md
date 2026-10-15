@@ -44,11 +44,11 @@
 |---|---|---|
 | `{skin}` `{portrait}` `{icon}` `{icon_priority}` `{nationality}` | 맞음 | `medic.set`. 그 밖에 `{behaviour}` `{tags}` `{voice}` `{armors {head ...}}`가 있다 |
 | `{item "luger" filled}`, `{item "이름" 수}` | 맞음 | `{item "luger" filled}`, `{item "pistol ammo" 24 8}` |
-| 수가 둘이면 기본값 + 무작위 계수 | 미확인 | 파일에 설명이 없다. 2026-10-15 바닐라 `set/breed`에서 수가 둘인 줄 17,954개 가운데 16,664개는 첫 수가 소수다(`medic.set` `{item "bandage_ger" 22.5 2.5}`). 그래서 첫 수는 정확한 개수가 아니라 기대값이고 둘째 수는 ± 폭으로 보인다(추정). 게임 안 확인은 `docs/10-backlog.md` G9 |
+| 수가 둘이면 기본값 + 무작위 계수 | 고침 | 병사마다 첫 수 ± 둘째 수 사이에서 개수가 정해진다(게임 안 확인 2026-10-15: `medic.set`의 `{item "bandage_ger" 22.5 2.5}`를 `13 13`으로 바꾸자 의무병 6명이 21·2·24·11·25·4개). 바닐라 `set/breed`에서 수가 둘인 줄 17,954개 가운데 16,664개는 첫 수가 소수다 |
 | perk 레벨을 breed가 고른다 | 고침 | `{perks (include "ability.inc") ("rifle_skill_rank_2")("tier2_standard") ("medic")}`처럼 매크로 이름으로 고른다 |
 | 체력·스태미나·속도 값 | 고침 | `presets/perks/health.inc`의 `(define "tier1_standard" {"health" "150%"} {"health_regeneration" "10%"} {"stamina" "75%"} {"stamina_regeneration" "75%"} {"speed" 1.00} ...)` |
 | 시작 숙련 | 맞음 | `{veterancy (include "ability.inc") ("veterancy_lvl_0")}` |
-| 중상 플래그: 1이면 회복 가능, 0이면 즉사 | 고침 | 키는 `{"personage" 0}`(`health.inc`). 주석: "This means soldiers are revivable at veterancy 0". 1의 뜻은 파일에 없다. 값은 소생 가능 상태(Personage 퍽)가 켜지는 숙련도로 보인다(추정: 게임 문자열 `perks/personage` "Personage", `perks/required_veterancy` " (Vet. %i)", `human.inc` 600행 `{able "personage" 0} ;// stops human from being revive-able`). `interaction_entity/human.inc`에 `"dead_personage"`, `"personage_check"` 처리가 있다. 게임 안 확인은 G10 |
+| 중상 플래그: 1이면 회복 가능, 0이면 즉사 | 고침 | 키는 `{"personage" 0}`(`health.inc`). 주석: "This means soldiers are revivable at veterancy 0". 값은 소생 가능 상태(Personage 퍽)가 켜지는 숙련도다(게임 안 확인 2026-10-15: `tier2_standard`를 3으로 바꾸자 Library에 "Personage (Vet. 3)"). `interaction_entity/human.inc`에 `"dead_personage"`, `"personage_check"` 처리가 있다 |
 | `human.ext`의 `{Sensor}`, 시야 | 맞음 | `{vision "human"}`, `{vision "human_peripheral"}`, `{vision "noise_detection"}`, `{InformRange 80 100}`(주석: 첫 값 AI, 둘째 값 사용자) |
 
 ## 탱크와 차량

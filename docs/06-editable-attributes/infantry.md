@@ -25,7 +25,7 @@
 | `/breed/icon` | 예: "bazooka" (13종 이상) | **추정** 유닛 아이콘 이름. 주무장 종류로 붙어 있다: smg, autorifle, bazooka 등 (추정: 값) |  | 5044 | `set/breed/mp/can/late/antitank_piat.set` |
 | `/breed/icon_priority` | 0 ~ 52 | **추정** 아이콘 표시 우선순위 숫자 (추정: 이름. 정렬 방향은 미확인) |  | 5044 | `set/breed/mp/can/late/antitank_piat.set` |
 | `/breed/inventory/in_hands` | 0 ~ 4 | **추정** 스폰 때 손에 드는 아이템의 순번 (추정: 이름과 값 0~. 기준이 0부터인지는 미확인) |  | 4835 | `set/breed/mp/can/late/antitank_piat.set` |
-| `/breed/inventory/item` | 예: "piat" filling "piat_bomb ammo heata" 1 (13종 이상) | **추정** 소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태. 수가 둘일 때 둘째 수의 뜻은 미확인) | 128+8 ¦ 80+48+8 | 4970 | `set/breed/mp/can/late/antitank_piat.set` |
+| `/breed/inventory/item` | 예: "piat" filling "piat_bomb ammo heata" 1 (13종 이상) | **추정** 소지품 한 줄. 첫 문자열이 아이템 이름, filling 뒤는 장전된 탄과 수량, 끝의 수는 개수 (추정: 값 형태). 수가 둘이면 병사마다 첫 수 ± 둘째 수 사이에서 개수가 정해진다 (게임 안 확인 2026-10-15: 의무병 붕대를 13 13으로 바꾸자 병사 6명이 21·2·24·11·25·4개) | 128+8 ¦ 80+48+8 | 4970 | `set/breed/mp/can/late/antitank_piat.set` |
 | `/breed/nationality` | 예: fra_civilian (13종 이상) | **추정** 소속 국가 코드. usa, ger, rus, eng, fin 등 (추정: 이름과 값) |  | 5083 | `set/breed/civ/civ_fra_1.set` |
 | `/breed/perks/"*"` | 예: "rocketlauncher" lvl_1 (13종 이상) | **추정** 기술 이름과 수준. 예: "rifle" lvl_5. 이름은 인자로 남아 있다 (추정: set/breed/presets/perks/skills.inc의 매크로가 이 형태를 만든다) |  | 62 | `set/breed/mp/ned/late/resistance_medic.set` |
 | `/breed/perks/"*"/fortifications` | "foxhole" "medic_rally" ¦ "foxhole" "medic_rally" "auto_medic_place_flag" | **추정** 지을 수 있는 구조물 이름 목록 (추정: 값 "foxhole" "medic_rally") |  | 43 | `set/breed/mp/ned/late/resistance_medic.set` |
