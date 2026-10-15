@@ -32,12 +32,21 @@ namespace CtaToybox.Core
 
         static bool IsKeyword(string text) { return text.Length > 0 && text[0] != '"' && !SdlCore.IsNumber(text) && !text.StartsWith("%"); }
 
-        // 줄의 값마다 이름. 모르는 자리는 null. texts와 names는 같은 길이다(names는 감싼 호출의 이름, 없으면 null)
-        public List<string> Of(string path, IList<string> texts, IList<string> names)
+        // values.psv가 이 낱말을 열쇠말로 적었는가(=낱말 또는 낱말#n). 적지 않았고 그 자리의 #n 이름이 있으면 낱말은 값이다(예: "rifle" lvl_3의 lvl_3)
+        static bool DeclaresKeyword(Dictionary<string, string> slots, string word)
+        {
+            if (slots.ContainsKey("=" + word)) return true;
+            foreach (string k in slots.Keys) if (k.StartsWith(word + "#", StringComparison.OrdinalIgnoreCase)) return true;
+            return false;
+        }
+
+        // 줄의 값마다 이름. 모르는 자리는 null. texts와 names는 같은 길이다(names는 감싼 호출의 이름, 없으면 null).
+        // rawPath를 주면 따옴표 이름 줄은 이름을 넣은 경로의 값 이름을 먼저 찾는다(KeyPattern.Candidates)
+        public List<string> Of(string path, IList<string> texts, IList<string> names, string rawPath = null)
         {
             var result = new List<string>(texts.Count);
             Dictionary<string, string> slots = null;
-            foreach (string key in KeyPattern.Candidates(path, true))
+            foreach (string key in KeyPattern.Candidates(path, rawPath, true))
                 if (map.TryGetValue(key, out slots)) break;
             string keyword = null;
             int position = 0;
@@ -49,7 +58,8 @@ namespace CtaToybox.Core
                 {
                     if (slots != null) slots.TryGetValue(name, out label);
                 }
-                else if (slots != null && !slots.ContainsKey("*") && IsKeyword(texts[i]) && (i > 0 || !slots.ContainsKey("#1")))
+                else if (slots != null && !slots.ContainsKey("*") && IsKeyword(texts[i]) && (i > 0 || !slots.ContainsKey("#1"))
+                         && (keyword != null || DeclaresKeyword(slots, texts[i]) || !slots.ContainsKey("#" + (position + 1))))
                 {
                     // 따옴표 없는 낱말(filling, requires 등)은 뒤의 값을 묶는 열쇠말이다. 첫 값이 이름 자리면 열쇠말이 아니다
                     keyword = texts[i]; position = 0;

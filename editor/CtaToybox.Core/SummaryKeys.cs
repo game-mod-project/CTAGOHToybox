@@ -60,10 +60,11 @@ namespace CtaToybox.Core
             return keys;
         }
 
-        // 요약에 없으면 null
-        public string LabelOf(string expandedPath)
+        // 요약에 없으면 null. rawPath(원문 경로)를 주면 따옴표 이름 줄은 이름을 넣은 경로(/breed/perks/"health")를 먼저 찾는다:
+        // 펼친 경로는 이름을 "*"로 묶어 체력·속도·기술이 한 경로가 되므로, 요약 파일이 이름별로 줄을 나눌 수 있게 한다
+        public string LabelOf(string expandedPath, string rawPath = null)
         {
-            foreach (string key in KeyPattern.Candidates(expandedPath, true))
+            foreach (string key in KeyPattern.Candidates(expandedPath, rawPath, true))
             {
                 string label;
                 if (labels.TryGetValue(key, out label)) return label;

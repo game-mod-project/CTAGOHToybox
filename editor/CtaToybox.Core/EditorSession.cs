@@ -160,7 +160,7 @@ namespace CtaToybox.Core
             };
             foreach (var row in traced.Rows)
             {
-                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
+                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
                 foreach (var v in row.Values)
                 {
                     var vv = new ValueView { Trace = v, Name = row.LeafNames == null ? null : row.LeafNames[r.Values.Count] };
@@ -178,7 +178,7 @@ namespace CtaToybox.Core
             AddRoster(view);
             foreach (var row in view.Rows.Concat(view.Roster))
             {
-                var labels = valueLabels.Of(row.Path, row.Values.Select(v => v.Trace.Text).ToList(), row.Values.Select(v => v.Name).ToList());
+                var labels = valueLabels.Of(row.Path, row.Values.Select(v => v.Trace.Text).ToList(), row.Values.Select(v => v.Name).ToList(), row.RawPath);
                 for (int i = 0; i < row.Values.Count; i++) row.Values[i].Label = labels[i];
             }
             RefreshEdits(view);
@@ -215,7 +215,7 @@ namespace CtaToybox.Core
                 {
                     var row = entry.Rows[r];
                     if (row.Leaves.Count == 0) continue;
-                    var note = n.Find(row.Path, row.Form, true) ?? (row.Form == "macro" ? RosterMacroNote : r == 0 ? RosterNameNote : row.Path.EndsWith("/cost", StringComparison.Ordinal) ? RosterCostNote : null);
+                    var note = n.Find(row.Path, row.Form, true, row.RawPath) ?? (row.Form == "macro" ? RosterMacroNote : r == 0 ? RosterNameNote : row.Path.EndsWith("/cost", StringComparison.Ordinal) ? RosterCostNote : null);
                     var rv = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Note = note, RosterEntry = group, IsMacroCall = row.Form == "macro" };
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
@@ -253,11 +253,11 @@ namespace CtaToybox.Core
             var row = KeyLocator.Rows(parsed.Root).FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
             if (row == null || e.Arg < 0 || e.Arg >= row.Leaves.Count) return null;
             var texts = row.Leaves.Select(l => l.Text).ToList();
-            var labels = valueLabels.Of(row.Path, texts, row.LeafNames);
+            var labels = valueLabels.Of(row.Path, texts, row.LeafNames, row.RawPath);
             var n = NotesFor(SourceStack.ToVirtual(e.Unit ?? file));
             return new EditDescription
             {
-                Note = n.Find(row.Path, row.Form, true) ?? NotesFor(file).Find(row.Path, row.Form, true),
+                Note = n.Find(row.Path, row.Form, true, row.RawPath) ?? NotesFor(file).Find(row.Path, row.Form, true, row.RawPath),
                 IsMacroCall = row.Form == "macro", ValueLabel = labels[e.Arg], ValueName = row.LeafNames[e.Arg],
                 RowText = string.Join(" ", texts), ValueCount = texts.Count,
             };
@@ -323,7 +323,7 @@ namespace CtaToybox.Core
                 {
                     // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
                     if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
-                    var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Note = n.Find(row.Path, row.Form, true), SummaryLabel = summary.LabelOf(row.Path) };
+                    var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
                         var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };

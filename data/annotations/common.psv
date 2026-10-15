@@ -14,6 +14,22 @@
 */icon_priority|block|추정|아이콘 표시 우선순위 숫자 (추정: 이름. 정렬 방향은 미확인)|S
 */perks|block|추정|능력치·특기 묶음. 안에서 ability.inc를 include하고 매크로로 기술 수준을 넣는다 (추정: 파일 구조)|S
 /breed/perks/"*"|block|추정|기술 이름과 수준. 예: "rifle" lvl_5. 이름은 인자로 남아 있다 (추정: set/breed/presets/perks/skills.inc의 매크로가 이 형태를 만든다)|S
+/breed/perks/"health"|block|추정|체력 배율. 값 "200%"는 set/ability/level_generic.inc의 단계 이름이고 2.0배로 이어진다. 무엇의 몇 배인지(기본 체력)는 미확인. 모더 글: 500% = 1000hp. 대부분 set/breed/presets/perks/health.inc의 tier 매크로가 넣는다 (추정: set/ability/health.set이 level_generic의 "level_standard"를 쓴다)|파일 구조와 값에서 추론. 모더 글 steamcommunity.com/workshop/filedetails/discussion/3482057823/560246502201525806 (findings-goh.psv)
+/breed/perks/"health_regeneration"|block|추정|체력 자연 회복 배율. 값 "10%"는 level_generic.inc의 단계 이름(0.1배) (추정: set/ability/health_regeneration.set. Call to Arms 위키의 healthRegeneration "시간이 지나며 체력을 자연 회복하는 속도")|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
+/breed/perks/"stamina"|block|추정|스태미나 배율. 빠르게 움직일 때 줄어든다. 값 "125%"는 level_generic.inc의 단계 이름(1.25배) (추정: set/ability/stamina.set. Call to Arms 위키의 stamina 설명)|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
+/breed/perks/"stamina_regeneration"|block|추정|스태미나 회복 배율. 값 "150%"는 level_generic.inc의 단계 이름(1.5배) (추정: set/ability/stamina_regeneration.set. Call to Arms 위키의 staminaRegeneration 설명)|파일 구조와 값에서 추론. Call to Arms 위키 Modding/Terms (findings-en.psv)
+/breed/perks/"speed"|block|추정|이동 속도 배수로 보인다. tier 매크로에서 보통 1.00, 정찰 1.10, 방어 0.90, 의무병 1.10, 민간인 0.90 (추정: set/breed/presets/perks/health.inc·specialties.inc의 값. 주석 없음)|S
+/breed/perks/"personage"|block|확인|소생 설정. 0이면 숙련도 0에서 쓰러진 병사를 살릴 수 있다. 1의 뜻은 미확인 (확인: set/breed/presets/perks/health.inc 주석 "This means soldiers are revivable at veterancy 0")|C
+/breed/perks/"vision"|block|추정|시야 필드 이름. human, human_elite, human_recon이 있고 set/vision/vision_fields.inc의 같은 이름 필드로 이어진다 (추정: 이름 일치. set/breed/presets/perks/vision.inc의 매크로가 넣는다)|S
+/breed/perks/"rifle"|block|확인|소총 기술 수준. lvl_N은 set/ability/skill_rifle.set의 단계이고, 단계마다 자세(서기·앉기·엎드리기·엄폐)별 명중(accuracy, 높을수록 좋다)·반동·흔들림이 있다. lvl_1 명중 0.65, lvl_8 1.72 (확인: skill_rifle.set 주석)|C
+/breed/perks/"smg"|block|확인|기관단총 기술 수준. lvl_N은 set/ability/skill_smg.set의 단계(자세별 명중·반동·흔들림) (확인: skill 파일 구조와 skill_rifle.set 주석)|C
+/breed/perks/"pistol"|block|확인|권총 기술 수준. lvl_N은 set/ability/skill_pistol.set의 단계(자세별 명중·반동·흔들림) (확인: skill 파일 구조와 skill_rifle.set 주석)|C
+/breed/perks/"mgun"|block|확인|기관총 기술 수준. lvl_N은 set/ability/skill_mgun.set의 단계 (확인: skill 파일 구조와 skill_rifle.set 주석)|C
+/breed/perks/"mgun_light"|block|확인|경기관총 기술 수준. lvl_N은 set/ability/skill_mgun_light.set의 단계 (확인: skill 파일 구조와 skill_rifle.set 주석)|C
+/breed/perks/"rocketlauncher"|block|확인|대전차 로켓·대전차 소총 기술 수준. lvl_N은 set/ability/skill_rpg.set의 단계 (확인: skill_rpg.set의 {"rocketlauncher" from weapon})|C
+/breed/perks/"tank_gun"|block|확인|전차포·포 기술 수준. lvl_N은 set/ability/skill_tank_gun.set의 단계 (확인: skill_tank_gun.set의 {"tank_gun" from weapon})|C
+/breed/perks/"melee"|block|추정|근접 공격 기술 수준. lvl_N은 set/ability/melee.set의 단계 (추정: 이름 일치. melee.set 주석의 agility는 공격 빠르기)|S
+/breed/perks/"avoidance"|block|확인|피해 회피 기술 수준. lvl_N은 set/ability/avoidance.set의 단계: 죽을 때 무기를 떨어뜨리는 정도(drop_weapon), 밀침·기절 저항(knockdown_melee), 불 저항(fire), 저격 저항(aimed_shot). 높을수록 좋다 (확인: avoidance.set 주석)|C
 */barricade|block|추정|이 보병이 지을 수 있는 구조물 묶음 (추정: 하위 값이 "fortifications" "foxhole")|S
 /breed/perks/barricade/"*"|block|추정|구조물 분류와 구조물 이름 한 쌍 (추정: 값)|S
 */mechanic|block|추정|수리 능력. factor 뒤의 수가 배율 (추정: 이름과 값 factor 0.5)|S

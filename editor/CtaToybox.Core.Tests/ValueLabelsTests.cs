@@ -25,5 +25,12 @@ static class ValueLabelsTests
         T.Eq(new[] { "태그 1", "태그 2" }, l.Of("/game_entity/props", new[] { "steel", "vehicle" }, new string[2]).ToArray(), "bare words of a * key are not keywords");
         T.Eq(new string[] { null, null }, l.Of("/x/unknown", new[] { "a", "1" }, new string[2]).ToArray(), "unknown keys have no names");
         T.Eq(0, ValueLabels.Load(Path.Combine(dir, "none.psv")).Count, "a missing file is empty");
+
+        // 따옴표 이름 줄: 이름을 넣은 경로의 값 이름이 먼저다
+        string file2 = Path.Combine(dir, "values2.psv");
+        File.WriteAllText(file2, "/breed/perks/\"*\"|#1|기술 이름|A\n/breed/perks/\"*\"|#2|수준|A\n/breed/perks/\"health\"|#1|항목 이름|A\n/breed/perks/\"health\"|#2|체력 (%)|A\n");
+        var l2 = ValueLabels.Load(file2);
+        T.Eq(new[] { "항목 이름", "체력 (%)" }, l2.Of("/breed/perks/\"*\"", new[] { "\"health\"", "\"200%\"" }, new string[2], "/breed/perks/\"health\"").ToArray(), "a named path has its own value names");
+        T.Eq(new[] { "기술 이름", "수준" }, l2.Of("/breed/perks/\"*\"", new[] { "\"rifle\"", "lvl_3" }, new string[2], "/breed/perks/\"rifle\"").ToArray(), "other names use the \"*\" names");
     }
 }

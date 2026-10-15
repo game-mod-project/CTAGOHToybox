@@ -62,10 +62,10 @@ namespace CtaToybox.Core
             return result;
         }
 
-        // 없으면 null
-        public KeyNote Find(string path, string form, bool allowWildcard)
+        // 없으면 null. rawPath를 주면 따옴표 이름 줄은 이름을 넣은 경로의 주석을 먼저 찾는다(KeyPattern.Candidates)
+        public KeyNote Find(string path, string form, bool allowWildcard, string rawPath = null)
         {
-            foreach (string key in KeyPattern.Candidates(path, allowWildcard))
+            foreach (string key in KeyPattern.Candidates(path, rawPath, allowWildcard))
             {
                 KeyNote note;
                 if (map.TryGetValue(key + "\t" + form, out note)) return note;
