@@ -1,0 +1,43 @@
+# 게임 설정 요약 탭에 올리는 키. 형식과 규칙은 vehicle.psv와 같다. Lua 키는 단계 3(Task 9)에서 더한다.
+*/startval|시작 자원 (MP·SP·AP·RP)
+*/wingain|이긴 판마다 얻는 자원
+*/losegain|진 판마다 얻는 자원
+**/maprewards/airfield|맵 종류별 추가 보상
+**/maprewards/ammodepot|맵 종류별 추가 보상
+**/maprewards/bonus|맵 종류별 추가 보상
+**/maprewards/factory|맵 종류별 추가 보상
+**/maprewards/research|맵 종류별 추가 보상
+**/budget/start|전투 시작 CP
+**/budget/pointspersecond|초당 CP
+**/budget/limit|전투 중 CP 상한
+**/stagecp|단계별 CP
+**/globalmaxcp|전체 CP 상한
+**/paybackfactor|손실 환급 비율
+**/sellfactor|퇴역 환급 비율
+**/bots/startmp|AI 병력 (MP)
+**/bots/finishmp|AI 병력 (MP)
+**/bots/cp/base|AI 병력 (CP)
+**/botresources|위험도별 배율
+**/botveterancy|위험도별 배율
+**/rewards|위험도별 배율
+**/flagcount|판마다 깃발 수
+**/bots/researchstages|봇 연구 단계
+/game/parameters|모드 매개변수 (점수표·깃발 시간 등)
+/game/settings/scorefinal|종료 점수
+/game/settings/preparationtime|준비 시간 (초)
+/game/settings/impregnabletimeout|스폰 보호 시간 (초)
+**/unitlimits|유닛 수 제한
+*/("standard_all")|스커미시 자원 (시작·끝 MP, CP)
+*/("custom_all")|스커미시 자원 (시작·끝 MP, CP)
+/difficulty/enemy/health|적·아군·플레이어 체력·명중
+/difficulty/enemy/accuracy|적·아군·플레이어 체력·명중
+/difficulty/ally/health|적·아군·플레이어 체력·명중
+/difficulty/ally/accuracy|적·아군·플레이어 체력·명중
+/difficulty/player/health|적·아군·플레이어 체력·명중
+/difficulty/player/accuracy|적·아군·플레이어 체력·명중
+/difficulty/any/health|모든 병사 체력·명중·점사
+/difficulty/any/accuracy|모든 병사 체력·명중·점사
+/difficulty/any/burst|모든 병사 체력·명중·점사
+/difficulty/any/death_delay_min|출혈 사망 시간 (초)
+/difficulty/any/death_delay_max|출혈 사망 시간 (초)
+/difficulty/any/cover_efficiency|엄폐 효율
