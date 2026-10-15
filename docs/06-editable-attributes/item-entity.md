@@ -54,7 +54,7 @@
 | `/game_entity/extender[stuff]/item` | 예: "air_bomb_eng_250lb" (13종 이상) | **추정** 연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인) |  | 504 | `entity/inventory/-ammo/-bomb/250lb_gp_mk4/250lb_gp_mk4.def` |
 | `/game_entity/extension` | 예: "250lb_gp_mk4.mdl" (13종 이상) | **추정** 이 엔티티의 모델 파일(.mdl) 이름 (추정: 값이 항상 .mdl) |  | 545 | `entity/inventory/-ammo/-bomb/250lb_gp_mk4/250lb_gp_mk4.def` |
 | `/game_entity/lodclass` | "tracer" ¦ "casing" ¦ "decor_small" | **추정** 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") |  | 20 | `entity/inventory/-ammo/-shells/generic/howitzer_shell_105-150/howitzer_shell_105-150.def` |
-| `/game_entity/mass` | 30 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) |  | 3 | `entity/inventory/-stuff/box_metal/box_metal.def` |
+| `/game_entity/mass` | 30 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) |  | 3 | `entity/inventory/-stuff/box_metal/box_metal.def` |
 | `/game_entity/obstacleid` | "stuff" | **추정** 장애물 분류 이름 (추정: 값 "tank", "stuff") |  | 2 | `entity/inventory/-stuff/box_metal/box_metal.def` |
 | `/game_entity/props` | 예: "steel" "explosive_stuff" (13종 이상) | **추정** 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) |  | 332 | `entity/inventory/-ammo/-mortar/107mm_usa_mortar_he/107mm_usa_mortar_he.def` |
 | `/game_entity/spriteview/layer` | grounddynamic | **추정** 스프라이트를 그리는 층 (추정: 값 grounddynamic) |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |

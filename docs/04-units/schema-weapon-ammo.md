@@ -44,11 +44,11 @@
 | `/bullet/detonationthickness` | block | [num]x6 | 6 | 6 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/entity` | block | [str]x120 | 120 | 120 | 예: "sturmtiger_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/bullet/inventory` | block | []x120 | 120 | 120 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
-| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인 | 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 무엇을 정하는지는 미확인 | 파일 구조와 값에서 추론 |  |
+| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인 | 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 탄창 크기도 아니다: mp40.ammo를 32→7로 바꿔도 분대장 인벤토리의 MP40 탄창은 32발씩 6개였다(2026-10-16 게임 확인). 무엇을 정하는지는 미확인 | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/fsm` | block | [str]x99 | 99 | 99 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x120 | 120 | 120 | 1 1 ¦ 1 2 ¦ 2 1 ¦ 3 2 ¦ 2 2 ¦ 3 1 ¦ 3 3 ¦ 6 2 ¦ 8 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/bullet/inventory/weight` | block | [num]x120 | 120 | 120 | 0.333 ~ 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/bullet/mass` | block | [num]x120 | 120 | 120 | 0.006 ~ 175 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/bullet/mass` | block | [num]x120 | 120 | 120 | 0.006 ~ 175 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/bullet/tag` | block | [str]x189 [str str]x21 | 120 | 210 | 예: "flame" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/bullet/trace` | block | []x78 | 78 | 78 | 예: | 미확인(자동) |  |  |  |
 | `/bullet/trace/length` | block | [num]x78 | 78 | 78 | 1.5 ~ 3 | 확인 | 애니메이션 한 번에 해당하는 길이, 미터 | 게임 파일 주석 |  |
@@ -105,7 +105,7 @@
 | `/from/inventory/noview` | block | []x40 | 40 | 40 | 예: | 미확인(자동) |  |  |  |
 | `/from/inventory/size` | block | [num num]x334 | 334 | 334 | 예: 4 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/from/inventory/weight` | block | [num]x69 | 69 | 69 | 10 ~ 200 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/from/mass` | block | [num]x357 | 357 | 357 | 0.17 ~ 2170 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x357 | 357 | 357 | 0.17 ~ 2170 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/possibledamageradius` | block | [num]x9 | 9 | 9 | 30 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/tag` | block | [str]x446 [str str str str]x1 | 394 | 447 | 예: "heat_shell size1" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/from/trace` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
@@ -142,7 +142,7 @@
 | `/from/entity` | block | [str]x39 | 39 | 39 | 예: "f1" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/from/inventory` | block | []x33 | 33 | 33 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/size` | block | [num num]x33 | 33 | 33 | 2 1 ¦ 1 1 ¦ 3 1 ¦ 3 2 ¦ 1 2 ¦ 4 1 ¦ 2 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
-| `/from/mass` | block | [num]x25 | 25 | 25 | 0.383 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x25 | 25 | 25 | 0.383 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/possibledamageradius` | block | [num]x1 | 1 | 1 | 0.1 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/special` | block | []x11 | 11 | 11 | 예: | 미확인 | 하위에 mode, preparetime, preparecursor |  | {throw_off_always} |
 | `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate | 미확인 | 값 detonate |  |  |
@@ -165,7 +165,7 @@
 | `/weapon_throwing/aimrange` | block | [num]x1 | 1 | 1 | 30 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
 | `/weapon_throwing/filling` | block | [str]x1 | 1 | 1 | "throwable" | 추정 | 장전하는 탄의 태그 (추정: 값 "throwable") | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/weapon_throwing/foresight` | block | [str]x1 | 1 | 1 | "Foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_throwing/gravity` | block | [num]x1 | 1 | 1 | 1 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_throwing/gravity` | block | [num]x1 | 1 | 1 | 1 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_throwing/inventory` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_throwing/inventory/noview` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_throwing/states` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -193,7 +193,7 @@
 | `/from/entity` | block | [str]x16 | 16 | 16 | 예: "mine_ap_shrapnel_mk1" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/from/inventory` | block | []x5 | 5 | 5 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/size` | block | [num num]x5 | 5 | 5 | 1 2 ¦ 2 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
-| `/from/mass` | block | [num]x11 | 11 | 11 | 1.5 ~ 8 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x11 | 11 | 11 | 1.5 ~ 8 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 
 ### 파일 종류: .pattern
 
@@ -210,7 +210,7 @@
 | `/bullet/inventory/fsm` | block | [str]x7 | 7 | 7 | "belt" ¦ "stuff" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x6 | 6 | 6 | 3 1 ¦ 5 1 ¦ 4 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/bullet/inventory/weight` | block | [num]x7 | 7 | 7 | 100 ~ 1000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/bullet/mass` | block | [num]x1 | 1 | 1 | 2.75 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/bullet/mass` | block | [num]x1 | 1 | 1 | 2.75 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/bullet/possibledamageradius` | block | [num]x4 | 4 | 4 | 3 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/bullet/tag` | block | [str]x8 | 8 | 8 | "ammo rocketlauncher heat_shell heat dropboxed pierce no_ricochet" ¦ "ammo shell all_he fg dropboxed no_ricochet" ¦ "ammo rocketlauncher heat_shell dropboxed pierce no_ricochet" ¦ "ammo shell fg wp smoke wp_size1 dropboxed no_ricochet" ¦ "bomb fg itemin2hands build_in" ¦ "dropboxed distributable" ¦ "rocketselector rocketlauncher pierce no_ricochet" ¦ "ammo itemin2hands" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/from` | block | [str]x43 | 43 | 43 | "pattern generic" ¦ "pattern throwable" ¦ "pattern bullet" ¦ "pattern rifle" ¦ "pattern mgun_generic" ¦ "pattern he" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
@@ -263,14 +263,14 @@
 | `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x7 | 7 | 7 | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x11 | 11 | 11 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/fsm` | block | [str]x1 | 1 | 1 | "pistol" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/from/inventory/link_bone` | block | [str]x5 | 5 | 5 | "gun_back" | 추정 | 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/size` | block | [num num]x11 | 11 | 11 | 3 1 ¦ 7 2 ¦ 3 2 ¦ 2 1 ¦ 8 2 ¦ 6 2 ¦ 5 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/from/inventory/weight` | block | [num]x7 | 7 | 7 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/from/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
-| `/from/mass` | block | [num]x5 | 5 | 5 | 0.3 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x5 | 5 | 5 | 0.3 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/overmatchslope` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/overmatchslope/#row` | block | [num num]x2 | 1 | 2 | 0 1 ¦ 90 1 | 미확인(자동) |  |  |  |
 | `/from/parameters` | block | [str]x1 | 1 | 1 | "api" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
@@ -323,7 +323,7 @@
 | `/item/inventory/link_bone` | block | [str]x1 | 1 | 1 | "foot1r" | 추정 | 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") | 파일 구조와 값에서 추론 |  |
 | `/item/inventory/size` | block | [num num]x4 | 4 | 4 | 2 2 ¦ 3 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/item/inventory/weight` | block | [num]x7 | 7 | 7 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/item/mass` | block | [num]x6 | 6 | 6 | 0.03 ~ 8 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/item/mass` | block | [num]x6 | 6 | 6 | 0.03 ~ 8 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/item/tag` | block | [str]x7 | 7 | 7 | "smallitemin1hand head distributable" ¦ "smallitemin1hand dropboxed antipersonnel" ¦ "itemin2hands dropboxed antitank at_mine" ¦ "smallitemin1hand head armor distributable" ¦ "knife sharp_edge smallitemin1hand distributable" ¦ "missile smallitemin1hand throwable" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/item/throw` | block | []x1 | 1 | 1 | 예: | 추정 | 투척 설정 묶음 (추정: 하위 range, spreading, startangle) | 파일 구조와 값에서 추론 |  |
 | `/item/throw/spreading` | block | [num]x1 | 1 | 1 | 0.3 | 미확인(자동) |  |  | improved accuracy due to sight ¦ Skews the distribution of shells more biased toward the centre (>1) or away (<1) |
@@ -359,7 +359,7 @@
 | `/weapon_bullet/firesoundclose` | block | [str]x1 | 1 | 1 | "flame/blank_flame" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
 | `/weapon_bullet/firingtimeout` | block | [num num]x4 | 4 | 4 | 11 3 ¦ 0.4 0.2 ¦ 0.8 0.2 ¦ 0.35 0.15 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
 | `/weapon_bullet/foresight` | block | [str]x6 | 6 | 6 | "foresight3" ¦ "foresight" ¦ "Foresight1" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x4 | 4 | 4 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x4 | 4 | 4 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/inventory` | block | []x4 | 4 | 4 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x3 | 3 | 3 | "smg" ¦ "bazooka" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/weapon_bullet/inventory/handle_bone` | block | [str]x1 | 1 | 1 | "tank_back" | 확인 | 무기를 손에 들지 않고 메고 있을 때 몸에 연결되는 무기 쪽 뼈대 | 게임 파일 주석 | when weapon is shouldered (not equipped) this bone on the weapon is linked to the {link_bone} defined above |
@@ -367,7 +367,7 @@
 | `/weapon_bullet/inventory/size` | block | [num num]x3 | 3 | 3 | 8 2 ¦ 5 3 ¦ 4 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/weapon_bullet/inventory/weight` | block | [num]x3 | 3 | 3 | 100 ~ 1000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/weapon_bullet/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
-| `/weapon_bullet/mass` | block | [num]x1 | 1 | 1 | 1000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/weapon_bullet/mass` | block | [num]x1 | 1 | 1 | 1000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/weapon_bullet/minimumdamagemodifier` | block | [num]x2 | 1 | 2 | 3 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/weapon_bullet/minrange` | block | [num]x1 | 1 | 1 | 3 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
@@ -1513,11 +1513,11 @@
 | `/from/fillingvisible` | block | [str]x10 | 10 | 10 | "rocket" ¦ "faustrocket" ¦ "rocket00" | 미확인(자동) |  |  |  |
 | `/from/firesound` | block | [str]x45 | 45 | 45 | 예: "reactive/d1/Shared/Rocket_Launcher/" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
 | `/from/firesoundclose` | block | [str]x23 | 23 | 23 | "cannon/s3/d1/Shared/Mortar/" ¦ "cannon/s2/d1/Shared/Mortar/" ¦ "reactive/3p/GER/Panzerfaust/" ¦ "cannon/s1/d1/Shared/Mortar/" ¦ "cannon/s4/3p/Shared/Cannon_105to130mm_LV/" ¦ "gun/gun_interior/size4" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
-| `/from/gravity` | block | [num]x15 | 15 | 15 | 2 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x15 | 15 | 15 | 2 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x8 | 8 | 8 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/noview` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/from/inventory/size` | block | [num num]x5 | 5 | 5 | 7 1 ¦ 7 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
-| `/from/mass` | block | [num]x12 | 12 | 12 | 6 ~ 20.1 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x12 | 12 | 12 | 6 ~ 20.1 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/maxrange` | block | [num]x16 | 16 | 16 | 140 ~ 325 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minrange` | block | [num]x16 | 16 | 16 | 30 ~ 50 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/parameters` | block | [str]x17 | 10 | 17 | "he" ¦ "heat" ¦ "sm" ¦ "heata" ¦ "wp" ¦ "heatb" ¦ "he2 heavy" ¦ "aphe" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
@@ -1700,13 +1700,13 @@
 | `/from/firingtimeoutdistancefactor` | block | []x2 | 2 | 2 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x4 | 2 | 4 | 0.25 0.5 ¦ 1.0 1.0 ¦ 0.3 0.6 ¦ 0.8 1.0 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x14 | 14 | 14 | "foresight1" ¦ "foresight4" ¦ "foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x3 | 3 | 3 | 0.75 ~ 1.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x3 | 3 | 3 | 0.75 ~ 1.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x49 | 49 | 49 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/fsm` | block | [str]x5 | 5 | 5 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/from/inventory/link_bone` | block | [str]x2 | 2 | 2 | "gun_back" | 추정 | 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/size` | block | [num num]x49 | 49 | 49 | 7 2 ¦ 4 6 ¦ 3 1 ¦ 6 2 ¦ 3 3 ¦ 4 2 ¦ 5 2 ¦ 7 3 ¦ 2 2 ¦ 4 5 ¦ 6 3 ¦ 2 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/from/inventory/weight` | block | [num]x7 | 7 | 7 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/from/mass` | block | [num]x187 | 187 | 187 | 0.765 ~ 224 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x187 | 187 | 187 | 0.765 ~ 224 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/maxrange` | block | [num]x1 | 1 | 1 | 40 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minrange` | block | [num]x2 | 2 | 2 | 5 ~ 150 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/from/parameters` | block | [str]x151 | 97 | 151 | 예: "aphebc" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
@@ -1726,7 +1726,7 @@
 | `/from/parameters/cursor` | block | [str]x7 | 5 | 7 | "ironsights/grenade" | 확인 | 직접 조종에서 조준할 때의 마우스 커서 | 게임 파일 주석 | rts cursor ¦ mouse cursor for weapon when aiming in direct control |
 | `/from/parameters/cursorreloading` | block | [str]x19 | 7 | 19 | "gun_heat" ¦ "gun_he" ¦ "gun_wp" ¦ "gun_saphe" ¦ "gun_apcnr" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
 | `/from/parameters/falloffstrength` | block | [num]x18 | 18 | 18 | 0 | 미확인 | 값 0~0.15 |  |  |
-| `/from/parameters/gravity` | block | [num]x6 | 6 | 6 | 0.08 ~ 3 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/parameters/gravity` | block | [num]x6 | 6 | 6 | 0.08 ~ 3 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2 | 2 | 2 | 450 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/parameters/projectiledamagetable` | block | []x3 | 2 | 3 | 예: | 추정 | 거리별 관통력 표 (추정: #row가 두 수의 쌍이고 주석이 탄종 이름) | 파일 구조와 값에서 추론 | adjusted to reduce far shoot ¦ M8 API + 350mph airspeed and reduced curve |
 | `/from/parameters/projectiledamagetable/#row` | block | [num num]x15 | 2 | 15 | 예: 20 24 | 추정 | 거리와 관통력 한 쌍 (추정: 값) | 파일 구조와 값에서 추론 |  |
@@ -1788,7 +1788,7 @@
 | `/item/inventory/noview` | block | []x7 | 7 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/item/inventory/size` | block | [num num]x51 | 51 | 51 | 예: 3 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/item/inventory/weight` | block | [num]x57 | 56 | 57 | 1 ~ 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/item/mass` | block | [num]x62 | 62 | 62 | 0.05 ~ 20 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/item/mass` | block | [num]x62 | 62 | 62 | 0.05 ~ 20 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/item/preloaded` | block | []x1 | 1 | 1 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/item/tag` | block | [str]x59 [str str]x1 | 60 | 60 | 예: "itemin1hand" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/weapon_bombing` | block | []x8 | 8 | 8 | 예: | 미확인(자동) |  |  |  |
@@ -1837,13 +1837,13 @@
 | `/weapon_bullet/entity` | block | [str]x1 | 1 | 1 | "binocular" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/weapon_bullet/filling` | block | [str num]x2 [str]x1 | 3 | 3 | "light" 0 ¦ "dummy ap" | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/weapon_bullet/foresight` | block | [str]x3 | 3 | 3 | "foresight1" ¦ "Foresight3" ¦ "vision_rot" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/inventory` | block | []x2 | 2 | 2 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x1 | 1 | 1 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/weapon_bullet/inventory/noview` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_bullet/inventory/size` | block | [num num]x1 | 1 | 1 | 2 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/weapon_bullet/inventory/weight` | block | [num]x1 | 1 | 1 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/weapon_bullet/mass` | block | [num]x2 | 2 | 2 | 0 ~ 1.5 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/weapon_bullet/mass` | block | [num]x2 | 2 | 2 | 0 ~ 1.5 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/weapon_bullet/range` | block | [num num]x2 | 2 | 2 | 200 200 | 문서 | 사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리 | Steam 토론 steamcommunity.com/app/302670/discussions/0/135511259335716556, steamcommunity.com/app/244450/discussions/0/1743353164076238918 와 ModDB의 Men of War 모딩 FAQ가 같은 설명 (2026-10-12 확인) | 200m ¦ 285m max |
 | `/weapon_bullet/speed` | block | [num]x2 | 2 | 2 | 1000 | 추정 | 탄속 (추정: 위와 같은 키) | 파일 구조와 값에서 추론 | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
 | `/weapon_bullet/states` | block | []x1 | 1 | 1 | 예: | 추정 | 무기 동작별 보병 상태 이름 묶음 (추정: thrower.hand의 같은 구조) | 파일 구조와 값에서 추론 |  |
@@ -1870,7 +1870,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/inventory/fsm` | block | [str]x7 | 7 | 7 | "belt" ¦ "stuff" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x6 | 6 | 6 | 3 1 ¦ 5 1 ¦ 4 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/bullet/inventory/weight` | block | [num]x7 | 7 | 7 | 100 ~ 1000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/bullet/mass` | block | [num]x1 | 1 | 1 | 2.75 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/bullet/mass` | block | [num]x1 | 1 | 1 | 2.75 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/bullet/possibledamageradius` | block | [num]x4 | 4 | 4 | 3 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/bullet/tag` | block | [str]x8 | 8 | 8 | "ammo rocketlauncher heat_shell heat dropboxed pierce no_ricochet" ¦ "ammo shell all_he fg dropboxed no_ricochet" ¦ "ammo rocketlauncher heat_shell dropboxed pierce no_ricochet" ¦ "ammo shell fg wp smoke wp_size1 dropboxed no_ricochet" ¦ "bomb fg itemin2hands build_in" ¦ "dropboxed distributable" ¦ "rocketselector rocketlauncher pierce no_ricochet" ¦ "ammo itemin2hands" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/from` | block | [str]x43 | 43 | 43 | "pattern generic" ¦ "pattern throwable" ¦ "pattern bullet" ¦ "pattern rifle" ¦ "pattern mgun_generic" ¦ "pattern he" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
@@ -1896,7 +1896,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x7 | 7 | 7 | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/healthdamage` | block | [num]x8 | 8 | 8 | 55 ~ 350 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/inventory` | block | []x11 | 11 | 11 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/fsm` | block | [str]x1 | 1 | 1 | "pistol" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
@@ -1904,7 +1904,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/inventory/size` | block | [num num]x11 | 11 | 11 | 3 1 ¦ 7 2 ¦ 3 2 ¦ 2 1 ¦ 8 2 ¦ 6 2 ¦ 5 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/from/inventory/weight` | block | [num]x7 | 7 | 7 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/from/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
-| `/from/mass` | block | [num]x5 | 5 | 5 | 0.3 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x5 | 5 | 5 | 0.3 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/minimumdamagemodifier` | block | [num]x6 | 6 | 6 | 1 ~ 45 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/overmatchcalibre` | block | []x7 | 7 | 7 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
 | `/from/overmatchcalibre/#row` | block | [num num num]x105 | 7 | 105 | 예: 0 1 0.00 | 미확인 | 세 수 |  |  |
@@ -1975,7 +1975,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/item/inventory/link_bone` | block | [str]x1 | 1 | 1 | "foot1r" | 추정 | 착용했을 때 붙는 뼈대 이름 (추정: 값 "gun_back") | 파일 구조와 값에서 추론 |  |
 | `/item/inventory/size` | block | [num num]x4 | 4 | 4 | 2 2 ¦ 3 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/item/inventory/weight` | block | [num]x7 | 7 | 7 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/item/mass` | block | [num]x6 | 6 | 6 | 0.03 ~ 8 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/item/mass` | block | [num]x6 | 6 | 6 | 0.03 ~ 8 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/item/tag` | block | [str]x7 | 7 | 7 | "smallitemin1hand head distributable" ¦ "smallitemin1hand dropboxed antipersonnel" ¦ "itemin2hands dropboxed antitank at_mine" ¦ "smallitemin1hand head armor distributable" ¦ "knife sharp_edge smallitemin1hand distributable" ¦ "missile smallitemin1hand throwable" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/item/throw` | block | []x1 | 1 | 1 | 예: | 추정 | 투척 설정 묶음 (추정: 하위 range, spreading, startangle) | 파일 구조와 값에서 추론 |  |
 | `/item/throw/spreading` | block | [num]x1 | 1 | 1 | 0.3 | 미확인(자동) |  |  | improved accuracy due to sight ¦ Skews the distribution of shells more biased toward the centre (>1) or away (<1) |
@@ -2005,7 +2005,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/firesoundclose` | block | [str]x1 | 1 | 1 | "flame/blank_flame" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
 | `/weapon_bullet/firingtimeout` | block | [num num]x4 | 4 | 4 | 11 3 ¦ 0.4 0.2 ¦ 0.8 0.2 ¦ 0.35 0.15 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
 | `/weapon_bullet/foresight` | block | [str]x6 | 6 | 6 | "foresight3" ¦ "foresight" ¦ "Foresight1" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x5 | 5 | 5 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x5 | 5 | 5 | 0.65 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/healthdamage` | block | [num]x1 | 1 | 1 | 2500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/weapon_bullet/inventory` | block | []x4 | 4 | 4 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x3 | 3 | 3 | "smg" ¦ "bazooka" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
@@ -2014,7 +2014,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/inventory/size` | block | [num num]x3 | 3 | 3 | 8 2 ¦ 5 3 ¦ 4 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/weapon_bullet/inventory/weight` | block | [num]x3 | 3 | 3 | 100 ~ 1000 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/weapon_bullet/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
-| `/weapon_bullet/mass` | block | [num]x1 | 1 | 1 | 1000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/weapon_bullet/mass` | block | [num]x1 | 1 | 1 | 1000 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/weapon_bullet/minimumdamagemodifier` | block | [num]x2 | 1 | 2 | 3 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/weapon_bullet/minrange` | block | [num]x1 | 1 | 1 | 3 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
@@ -2087,11 +2087,11 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/detonationthickness` | block | [num]x7 | 7 | 7 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/bullet/entity` | block | [str]x120 | 120 | 120 | 예: "sturmtiger_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
 | `/bullet/inventory` | block | []x120 | 120 | 120 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
-| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인 | 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 무엇을 정하는지는 미확인 | 파일 구조와 값에서 추론 |  |
+| `/bullet/inventory/block` | block | [num]x103 | 103 | 103 | 5 ~ 300 | 미확인 | 탄약 파일의 inventory 안 값. 인벤토리 칸에 보이는 묶음 크기는 아니다: 250→37, 100→13으로 바꿔도 M26 Pershing 인벤토리에 4500발, 450발이 한 칸씩 그대로 보였다(2026-10-14 게임 확인). 탄창 크기도 아니다: mp40.ammo를 32→7로 바꿔도 분대장 인벤토리의 MP40 탄창은 32발씩 6개였다(2026-10-16 게임 확인). 무엇을 정하는지는 미확인 | 파일 구조와 값에서 추론 |  |
 | `/bullet/inventory/fsm` | block | [str]x99 | 99 | 99 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/bullet/inventory/size` | block | [num num]x120 | 120 | 120 | 1 1 ¦ 1 2 ¦ 2 1 ¦ 3 2 ¦ 2 2 ¦ 3 1 ¦ 3 3 ¦ 6 2 ¦ 8 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/bullet/inventory/weight` | block | [num]x120 | 120 | 120 | 0.333 ~ 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/bullet/mass` | block | [num]x120 | 120 | 120 | 0.006 ~ 175 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/bullet/mass` | block | [num]x120 | 120 | 120 | 0.006 ~ 175 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/bullet/possibledamageradius` | block | [num]x1 | 1 | 1 | 30 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/bullet/tag` | block | [str]x189 [str str]x21 | 120 | 210 | 예: "flame" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/bullet/trace` | block | []x78 | 78 | 78 | 예: | 미확인(자동) |  |  |  |
@@ -2147,7 +2147,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/firingtimeoutdistancefactor` | block | []x62 | 62 | 62 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
 | `/from/firingtimeoutdistancefactor/#row` | block | [num num]x201 | 62 | 201 | 예: 0.2 0.65 | 미확인 | 두 수 |  |  |
 | `/from/foresight` | block | [str]x14 | 14 | 14 | "foresight1" ¦ "foresight4" ¦ "foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/from/gravity` | block | [num]x199 | 186 | 199 | 0.3 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/gravity` | block | [num]x199 | 186 | 199 | 0.3 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/healthdamage` | block | [num]x49 | 48 | 49 | 55 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/inventory` | block | []x483 | 483 | 483 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/from/inventory/block` | block | [num]x42 | 42 | 42 | 5 ~ 10 | 미확인(자동) |  |  |  |
@@ -2157,7 +2157,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/inventory/size` | block | [num num]x426 | 426 | 426 | 예: 7 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/from/inventory/weight` | block | [num]x76 | 76 | 76 | 10 ~ 200 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
 | `/from/lockfiredistancetime` | block | [num]x12 | 12 | 12 | 0.5 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
-| `/from/mass` | block | [num]x597 | 597 | 597 | 0.17 ~ 2170 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/from/mass` | block | [num]x597 | 597 | 597 | 0.17 ~ 2170 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/maxrange` | block | [num]x34 | 34 | 34 | 40 ~ 325 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minimumdamagemodifier` | block | [num]x162 | 162 | 162 | 2 ~ 450 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/minrange` | block | [num]x35 | 35 | 35 | 5 ~ 150 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
@@ -2172,7 +2172,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/parameters/cursorreloading` | block | [str]x64 | 29 | 64 | "gun_ap" ¦ "gun_heat" ¦ "gun_he" ¦ "gun_api" ¦ "gun_wp" ¦ "gun_saphe" ¦ "gun_apcnr" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
 | `/from/parameters/falloffmeter` | block | [num]x1339 | 175 | 1339 | 1 ~ 220 | 미확인 | 값 1~220 |  |  |
 | `/from/parameters/falloffstrength` | block | [num]x1357 | 176 | 1357 | 0 ~ 0.15 | 미확인 | 값 0~0.15 |  |  |
-| `/from/parameters/gravity` | block | [num]x986 | 54 | 986 | 0.08 ~ 3.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/from/parameters/gravity` | block | [num]x986 | 54 | 986 | 0.08 ~ 3.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/healthdamage` | block | [num]x48 | 18 | 48 | 100 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2605 | 179 | 2605 | 5 ~ 774.518828571428 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
@@ -2303,7 +2303,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/item/inventory/noview` | block | []x7 | 7 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/item/inventory/size` | block | [num num]x51 | 51 | 51 | 예: 3 4 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/item/inventory/weight` | block | [num]x57 | 56 | 57 | 1 ~ 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/item/mass` | block | [num]x62 | 62 | 62 | 0.05 ~ 20 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/item/mass` | block | [num]x62 | 62 | 62 | 0.05 ~ 20 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/item/preloaded` | block | []x1 | 1 | 1 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/item/tag` | block | [str]x59 [str str]x1 | 60 | 60 | 예: "itemin1hand" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
 | `/weapon_bombing` | block | []x8 | 8 | 8 | 예: | 미확인(자동) |  |  |  |
@@ -2331,13 +2331,13 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/filling` | block | [str num]x3 [str]x1 | 4 | 4 | "light" 0 ¦ "dummy ap" ¦ "ammo goliath" 1 | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/weapon_bullet/firesound` | block | [str]x1 | 1 | 1 | "" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
 | `/weapon_bullet/foresight` | block | [str]x4 | 4 | 4 | "foresight1" ¦ "Foresight3" ¦ "vision_rot" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
-| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휜다. 0이면 떨어지지 않는다 (추정: .presets의 "default gravity" 2, "aerial gravity" 1, gun/.presets의 standard_firing_arc 3.5·curved 5.5·artillery 6.0. 0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
+| `/weapon_bullet/gravity` | block | [num]x2 | 2 | 2 | 0 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/weapon_bullet/inventory` | block | []x2 | 2 | 2 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/inventory/fsm` | block | [str]x1 | 1 | 1 | "belt" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/weapon_bullet/inventory/noview` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_bullet/inventory/size` | block | [num num]x1 | 1 | 1 | 2 1 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 | size of the window |
 | `/weapon_bullet/inventory/weight` | block | [num]x1 | 1 | 1 | 100 | 추정 | 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) | 게임 파일 주석 | will stack up in 100/2 = 2 on humans |
-| `/weapon_bullet/mass` | block | [num]x2 | 2 | 2 | 0 ~ 1.5 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명) | 게임 파일 주석 | with water ¦ empty weight |
+| `/weapon_bullet/mass` | block | [num]x2 | 2 | 2 | 0 ~ 1.5 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/weapon_bullet/preloaded` | block | []x1 | 1 | 1 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/weapon_bullet/range` | block | [num num]x3 | 3 | 3 | 200 200 ¦ 4 4.5 | 문서 | 사거리 두 값, 미터. 첫 값은 AI가 스스로 교전하는 거리, 둘째 값은 실제 최대 사거리 | Steam 토론 steamcommunity.com/app/302670/discussions/0/135511259335716556, steamcommunity.com/app/244450/discussions/0/1743353164076238918 와 ModDB의 Men of War 모딩 FAQ가 같은 설명 (2026-10-12 확인) | 200m ¦ 285m max |
 | `/weapon_bullet/speed` | block | [num]x3 | 3 | 3 | 500 ~ 1000 | 추정 | 탄속 (추정: 위와 같은 키) | 파일 구조와 값에서 추론 | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |

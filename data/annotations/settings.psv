@@ -102,7 +102,7 @@
 /difficulty/any/ai_damage|block|확인|AI 병사끼리 주는 피해 배수. 플레이어가 조종하는 유닛에는 적용되지 않는다 (확인: 주석)|C
 /difficulty/any/burst|block|확인|무기 설정의 점사 탄수에 곱하는 배수 (확인: 주석 "multiplier to number of bullets in burst from weapon settings")|C
 /difficulty/any/accuracy|block|확인|무기 설정의 명중에 곱하는 배수 (확인: 주석 "accuracy multiplier from weapon settings")|C
-/difficulty/any/health|block|확인|병사 설정의 체력에 곱하는 배수 (확인: 주석 "health multiplier from soldier settings")|C
+/difficulty/any/health|block|확인|병사 설정의 체력에 곱하는 배수 (확인: 주석 "health multiplier from soldier settings". 게임 안 확인 2026-10-16: multiplayer.dl을 3.0으로 바꾸자 스커미시에서 tier1 병사(150%)의 체력이 450/450)|C
 /difficulty/enemy/health|block|확인|적 유닛의 체력 배수. 0.5면 적이 피해를 두 배로 받는 것과 같다. 코옵에서는 동작하지 않는다 (확인: normal.dl 주석)|C
 /difficulty/enemy/accuracy|block|추정|적 유닛의 명중 배수 (추정: any의 accuracy와 같은 꼴. normal.dl 주석 "not working in coop")|S
 /difficulty/ally/health|block|추정|아군 AI의 체력 배수 (추정: 블록 이름 ally와 any의 health)|S
