@@ -183,7 +183,7 @@
 | `/game_entity/extender[inventory]` | "inventory" | **추정** 차량 화물칸 기능 (추정: 하위 box) |  | 747 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/extender[inventory]/box/item` | 예: "ammo mgun_usa belt" 1000 (13종 이상) | **추정** 실려 있는 아이템과 수량 (추정: 값 "ammo mgun_usa belt" 1000) | 600 rounds ¦ 50 rounds | 691 | `entity/-vehicle/eng/airborne/blenheim_mk1_eng/blenheim_mk1_eng.def` |
 | `/game_entity/extender[inventory]/box/size` | 9 12 ¦ 4 2 ¦ 0 0 ¦ 6 4 ¦ 9 6 ¦ 9 9 ¦ 6 6 ¦ 9 11 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 14 | `entity/-vehicle/eng/marine/goatley_boat/goatley_boat.def` |
-| `/game_entity/extender[inventory]/box/weight` | 2100 ~ 100000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인) |  | 16 | `entity/-vehicle/eng/marine/drifter_eng/drifter_eng.def` |
+| `/game_entity/extender[inventory]/box/weight` | 2100 ~ 100000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) |  | 16 | `entity/-vehicle/eng/marine/drifter_eng/drifter_eng.def` |
 | `/game_entity/extender[inventory]/weapon` | "mgun" ¦ "mgun2" ¦ "mgun1" ¦ "mgun3" | **추정** 인벤토리에 장착할 수 있는 무기 종류 (추정: 값 "mgun") | Placeholder weapon ¦ !!! PLACEHOLDER | 102 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
 | `/game_entity/extender[inventory]/weapon/mask` | "mountable" | **문서** 엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다 |  | 102 | `entity/-vehicle/eng/btr/bren_carrier/bren_carrier.def` |
 | `/game_entity/extender[land_patch]` | "land_patch" | **문서** 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 |  | 1 | `entity/-vehicle/ussr/cannon/x/305mm_mb_2_12_xx/305mm_mb_2_12_xx.def` |
@@ -1367,7 +1367,7 @@
 | `/extender[inventory]/armor/volumes` | "head" ¦ "body" | **추정** 이 방어구가 덮는 볼륨 이름 (추정: 값 "head", "body") | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading | 1 | `properties/human.ext` |
 | `/extender[inventory]/box/item` | "can" 1 ¦ "repair_kit" 5 ¦ "repair_kit" 3 ¦ "repair_kit" 1 | **추정** 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo | 7 | `properties/armoredcar.ext` |
 | `/extender[inventory]/box/size` | 9 10 ¦ 6 10 ¦ 6 2 ¦ 9 6 ¦ 8 8 ¦ 8 12 ¦ 9 15 ¦ 9 8 ¦ 4 4 ¦ 9 12 | **추정** 인벤토리 창의 크기. 가로 세로 칸 수 (같은 자리의 본체 설명을 가져옴) | size of the window | 15 | `properties/airborne.ext` |
-| `/extender[inventory]/box/weight` | 100 ~ 20000 | **추정** 적재 한도 (같은 자리의 본체 설명을 가져옴) |  | 14 | `properties/airborne.ext` |
+| `/extender[inventory]/box/weight` | 100 ~ 20000 | **추정** 적재 한도 (추정: 원문 주석 "will stack up in 100/2 = 2 on humans"으로 보아 쌓이는 수를 정하는 값. 단위 미확인). 게임 안 확인 2026-10-16: 탄약 파일 mp40.ammo의 inventory weight를 3.1→10으로 바꾸자 병사 인벤토리의 MP40 탄이 한 칸에 32발에서 10발이 됐다(100/weight). 차량·거치 무기 인벤토리에서는 탄이 한 칸에 다 들어갔다(4500발, 1000발) (같은 자리의 본체 설명을 가져옴) |  | 14 | `properties/airborne.ext` |
 | `/extender[inventory]/weapon` | "mgun" | **추정** 인벤토리에 장착할 수 있는 무기 종류 (같은 자리의 본체 설명을 가져옴) |  | 1 | `properties/vehicle.ext` |
 | `/extender[inventory]/weapon/mask` | "mountable" | **문서** 엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다 |  | 1 | `properties/vehicle.ext` |
 | `/extender[mine]` | "mine" | **추정** 지뢰 기능 (추정: 이름) |  | 2 | `properties/stuff_grenade_mine.ext` |
