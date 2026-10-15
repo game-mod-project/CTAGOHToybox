@@ -29,10 +29,17 @@ static class ItemLinksTests
         T.Eq(ItemLinks.RuleWordsNoExt, links.Find("bulletrus_85 aphebc").Rule, "same words without the extension");
         T.Eq(ItemLinks.RuleWordsNoExt, links.Find("BULLETRUS_85  APHEBC").Rule, "case and extra spaces do not matter");
         var family = links.Find("ammo mgun_ger");
-        T.Eq(ItemLinks.RuleCandidates, family.Rule, "a family name has candidates");
-        T.Eq(new[] { "set/stuff/mgun/mgun_ger.belt.ammo", "set/stuff/mgun/mgun_ger.drum.ammo" }, family.Files.ToArray(), "every file whose words contain the name's words, sorted");
-        T.Eq(ItemLinks.RuleCandidates, links.Find("ammo mgun_usa").Rule, "one subset candidate is still only a candidate");
+        T.Eq(ItemLinks.RuleFirstByName, family.Rule, "a family name in one folder goes to the first file by name (G5, in game 2026-10-16)");
+        T.Eq(new[] { "set/stuff/mgun/mgun_ger.belt.ammo", "set/stuff/mgun/mgun_ger.drum.ammo" }, family.Files.ToArray(), "every file whose words contain the name's words, the game's pick first");
+        T.Eq(ItemLinks.RuleFirstByName, links.Find("ammo mgun_usa").Rule, "one subset candidate is the game's pick too");
         T.Eq(ItemLinks.RuleCandidates, links.Find("dup").Rule, "the same file name in two folders is a candidate set");
+
+        // 이름순은 점이 글자보다 앞인 글자 순서(ASCII)다: aa.zz가 aaa와 belt보다 앞이다
+        var g5 = ItemLinks.Build(new[] { "set/stuff/mgun/mgun_ger.zz.ammo", "set/stuff/mgun/mgun_ger.belt.ammo", "set/stuff/mgun/mgun_ger.aaa.ammo", "set/stuff/mgun/mgun_ger.aa.zz.ammo" });
+        T.Eq("set/stuff/mgun/mgun_ger.aa.zz.ammo", g5.Find("ammo mgun_ger").Files[0], "more words but first by name wins");
+        // 후보가 여러 폴더에 걸치면 게임이 무엇을 고르는지 확인하지 않았다
+        var spread = ItemLinks.Build(new[] { "set/stuff/a/bazooka.heat.ammo", "set/stuff/b/bazooka.he.ammo" });
+        T.Eq(ItemLinks.RuleCandidates, spread.Find("bazooka").Rule, "candidates in two folders stay unconfirmed");
         T.Eq(2, links.Find("dup").Files.Count, "with both files");
         var none = links.Find("kordr");
         T.Eq(ItemLinks.RuleNone, none.Rule, "no file at all");
