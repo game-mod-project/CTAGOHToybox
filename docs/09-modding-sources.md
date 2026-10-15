@@ -68,6 +68,12 @@
 | R17 | [That207Guy's Realism](https://steamcommunity.com/workshop/filedetails/?id=3142379562) | 읽음 | 시야 설계 수치(사람 180~200m, 경전차·APC 800m, 중형 900m, 중전차 1000m). 경로 없음 |
 | R18 | [Long Range Combat](https://steamcommunity.com/workshop/filedetails/?id=2514972920) | 읽음 | 사거리 약 1.75배. 댓글: 멀티에서 쓰려면 `mod.info`의 게임 버전을 `any`로 |
 
+차량 파생 모델 `_x`·`_xx`(R19, 2026-10-15):
+
+| # | 사이트 | 읽기 | 쓸 만한 내용 | 바닐라 대조 |
+|---|---|---|---|---|
+| R19 | Best Way GEM RTS 문서(Men of War II, **개발사**): [X 모델](https://docs.bestway.com.ua/gem-rts-v1-ru/modeli/plan-nastroiki-modelei-tekhniki/kh-model-tekhniki.md), [XX 모델](https://docs.bestway.com.ua/gem-rts-v1-ru/modeli/plan-nastroiki-modelei-tekhniki/khkh-model-modeli-tekhniki.md), [모델 설정 순서](https://docs.bestway.com.ua/modeling/vehicle-model-setup-pipeline.md), [맵 장식용 파괴 차량](https://docs.bestway.com.ua/editor/map-editor/specifics-of-map-editing/creating-destroyed-vehicle-entities-for-map-entourage) | 읽음(서브에이전트, WebFetch) | X는 부분 손상 모델이다. 부품이 부서지면(폭발 파괴 제외) 그 부품을 X 모델의 것으로 바꾼다. XX는 수리할 수 없는 완전 파괴 모델이고 폭발 때 날아가는 부품이 있다. 둘 다 엔진이 바꾸는 기술용 모델이고 맵에 직접 두지 않는다 | `_xx`는 맞다: `vehicle-main.inc:249` `on destroy` → 차체면 `explosion` → `:579` `{set_skeleton "_xx" sync}`(`tank/tank-main.inc:446`도 같다). 엔진 파괴(`_burn`)는 바꾸지 않는다. `_x`는 GoH 스크립트에 차량을 바꾸는 줄이 없고 `_x.mdl`에 부품별 `{sequence "break" ...}`(807개 파일, 2,747곳)만 있다. 미확인. `_x.def` 806개는 include·장갑이 없다. `_xx.def`는 대부분 `properties/vehicle_xx.ext`를 읽고 본체와 따로 적힌 장갑 볼륨을 가진다. GoH 전용 Steam·모더 글은 찾지 못했다 |
+
 창작마당의 대형 모드(Hotmod 1968, Conquest Enhanced v2, Modern Conflict, Realism, Long Range Combat, Valour)는 이 PC에 구독돼 있지 않다(2026-10-14, `steamapps\workshop\content\400750`). 구독된 것은 MACE, MACE Wunderwaffe Ultimate Fusion ENG, Spawn Menu, Auto Medic-AA-Artillery & Weather Switch와 3617250510이다. 파일을 비교하려면 사용자가 구독해야 한다.
 
 ## 패치가 바꾼 파일 (개발자 공지)
