@@ -23,8 +23,11 @@ namespace CtaToybox.Core
         // 깨진 JSON은 파일 이름과 이유를 담은 InvalidDataException으로 던진다(화면과 명령줄이 스택 트레이스 대신 이유를 보인다)
         public static EditorSettings Load(string path)
         {
-            try { return JsonSerializer.Deserialize<EditorSettings>(File.ReadAllText(path, Encoding.UTF8), Json); }
+            EditorSettings loaded;
+            try { loaded = JsonSerializer.Deserialize<EditorSettings>(File.ReadAllText(path, Encoding.UTF8), Json); }
             catch (JsonException ex) { throw new InvalidDataException("설정 파일을 읽지 못했다: " + path + ": " + ex.Message, ex); }
+            if (loaded == null) throw new InvalidDataException("설정 파일을 읽지 못했다(내용이 비어 있다): " + path);
+            return loaded;
         }
 
         public void Save(string path)

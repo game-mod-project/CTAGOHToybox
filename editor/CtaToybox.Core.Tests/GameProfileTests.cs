@@ -38,6 +38,17 @@ static class GameProfileTests
         T.Eq(new[] { "vanilla", "mod_111" }, byDir.Layers.Select(l => l.Name).ToArray(), "the output folder is not read as a source layer");
         T.True(byDir.OutputModActive, "and counts as the active output mod");
         T.True(byDir.Warnings.Any(w => w.Contains("mymod") && w.Contains("Other")), "the name mismatch is warned about");
+        var later = GameProfile.PlanLayers(renamed, new[] { "mymod:0", "mod_111:0" });
+        T.True(later.Warnings.Any(w => w.Contains("뒤에 로드") && w.Contains("mymod 줄")) && !later.Warnings.Any(w => w.Contains("Other 줄")), "the load-order advice names the entry that is in options.set");
+
+        // 게임의 mods 아래 정션이 출력 폴더를 가리켜도 출력 모드다(실제 배치: mods\CTAToybox → 저장소 mod\CTAToybox)
+        string target = T.TempDir();
+        string junction = Path.Combine(game, "mods", "linked");
+        var mklink = System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("cmd.exe", "/c mklink /J \"" + junction + "\" \"" + target + "\"") { UseShellExecute = false, RedirectStandardOutput = true, CreateNoWindow = true });
+        mklink.WaitForExit();
+        T.True(Directory.Exists(junction), "the test junction exists");
+        var linked = GameProfile.PlanLayers(new EditorSettings { GameDir = game, WorkshopDir = workshop, OptionsSetPath = "unused", OutputModDir = target, OutputModName = "Other" }, new[] { "linked:0" });
+        T.True(linked.OutputModActive && linked.Layers.Count == 1, "a junction to the output folder is the output mod");
 
         string path = Path.Combine(T.TempDir(), "settings.json");
         settings.Save(path);

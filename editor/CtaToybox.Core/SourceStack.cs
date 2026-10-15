@@ -103,12 +103,16 @@ namespace CtaToybox.Core
         {
             if (file.Entry == null) return File.ReadAllBytes(file.Container);
             var entry = Archive(file.Container).GetEntry(file.Entry);
-            using (var s = entry.Open())
-            using (var m = new MemoryStream())
+            try
             {
-                s.CopyTo(m);
-                return m.ToArray();
+                using (var s = entry.Open())
+                using (var m = new MemoryStream())
+                {
+                    s.CopyTo(m);
+                    return m.ToArray();
+                }
             }
+            catch (InvalidDataException ex) { throw new InvalidDataException("pak 안의 파일을 읽지 못했다: " + file.Container + " 안의 " + file.Entry + ": " + ex.Message, ex); }
         }
 
         // 지금 게임이 읽을 그 파일의 텍스트. 없으면 null

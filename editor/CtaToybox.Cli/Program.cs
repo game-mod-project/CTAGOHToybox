@@ -282,6 +282,7 @@ namespace CtaToybox.Cli
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
                 string warning;
                 string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning)
+                               ?? (TextCodec.CanEncode(newValue, kind) ? null : "새 값에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + newValue)
                                ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue });
                 if (error != null) { output.WriteLine(error); return 1; }
                 if (warning != null) output.WriteLine("경고: " + warning);
@@ -324,12 +325,16 @@ namespace CtaToybox.Cli
             int occ = Number(opt, "occ"), arg = Number(opt, "arg");
             string scope = opt.ContainsKey("scope") ? opt["scope"].ToLowerInvariant() : null;
             if (scope != null && scope != "shared" && scope != "unit") throw new UsageException("--scope는 shared 또는 unit이다");
+            // --unit은 '이 유닛만' 수정을 고른다. '전부' 수정의 Unit은 만든 화면의 유닛일 뿐이라 거르지 않는다
             string unit = opt.ContainsKey("unit") ? SourceStack.ToVirtual(opt["unit"]) : null;
+            if (unit != null && scope == "shared") throw new UsageException("--unit은 '이 유닛만' 수정을 고를 때 쓴다. --scope shared와 함께 쓰지 않는다");
+            if (unit != null) scope = "unit";
             if (!File.Exists(projectPath)) { output.WriteLine("프로젝트 파일이 없다: " + projectPath); return 1; }
             var project = EditProject.Load(projectPath);
             var matches = project.Edits.Where(e => string.Equals(SourceStack.ToVirtual(e.File ?? ""), file, StringComparison.OrdinalIgnoreCase)
                 && string.Equals(e.Path, keyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == occ && e.Arg == arg
-                && (scope == null || e.Scope == scope) && (unit == null || string.Equals(SourceStack.ToVirtual(e.Unit ?? ""), unit, StringComparison.OrdinalIgnoreCase))).ToList();
+                && (scope == null || (scope == "unit") == (e.Scope == "unit"))
+                && (unit == null || string.Equals(SourceStack.ToVirtual(e.Unit ?? ""), unit, StringComparison.OrdinalIgnoreCase))).ToList();
             if (matches.Count == 0) { output.WriteLine("그 자리의 수정이 없다: " + file + " " + keyPath + " [" + occ + "] 값 " + arg); return 1; }
             if (matches.Count > 1)
             {

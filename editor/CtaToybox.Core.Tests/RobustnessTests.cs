@@ -110,5 +110,101 @@ static class RobustnessTests
         T.Eq(0, EditProject.Load(project).Edits.Count, "the edit is gone");
         T.Eq(1, Cli(out o, "remove", "--project", project, "--file", Def, "--path", "/game_entity/mass"), "removing a missing edit ends with 1");
         T.True(o.Contains("그 자리의 수정이 없다"), "with the reason");
+
+        ReviewFindings(settings, repo, work);
+    }
+
+    // W-B 최종 검토에서 나온 것(2026-10-15)
+    static void ReviewFindings(string settings, string repo, string work)
+    {
+        string o;
+
+        // I-1: 예전 프로젝트의 '이 유닛만' 한정자 수정이 include 파일에 있어도 빌드는 던지지 않는다. 그 수정만 적용 불가이고 같은 파일의 다른 수정은 된다
+        string v = T.TempDir(), outDir = T.TempDir();
+        T.Put(v, "entity/v/a.def", "{game_entity\r\n\t(include \"shared.inc\")\r\n\t{mass 10}\r\n}\r\n");
+        T.Put(v, "entity/v/shared.inc", "{extender \"inventory\" {box {item \"mine\" 24}}}\r\n");
+        using (var stack = new SourceStack(new[] { new SourceLayer("vanilla", v) }))
+        {
+            stack.Scan();
+            var old = new EditProject { Name = "old" };
+            old.Edits.Add(new Edit { Unit = "entity/v/a.def", File = "entity/v/shared.inc", Path = "/extender[inventory]", Arg = 0, Old = "\"inventory\"", New = "\"x\"", Scope = "unit" });
+            old.Edits.Add(new Edit { Unit = "entity/v/a.def", File = "entity/v/shared.inc", Path = "/extender[inventory]/box/item", Arg = 1, Old = "24", New = "5", Scope = "unit" });
+            BuildReport report = null;
+            try { report = new ModBuilder(stack, outDir).Build(old); }
+            catch (System.InvalidOperationException ex) { T.True(false, "an old qualifier edit must not throw out of the build: " + ex.Message); }
+            if (report != null)
+            {
+                var bad = report.Results.SingleOrDefault(r => r.Edit.Arg == 0);
+                T.True(bad != null && bad.Status == EditStatus.Invalid && bad.Message.Contains("키 경로"), "the qualifier edit is reported Invalid with the reason");
+                T.Eq(EditStatus.Applied, report.Results.Single(r => r.Edit.Arg == 1).Status, "the other edit in that file still applies");
+            }
+        }
+
+        // M-10: 목록 파일이 JSON이어도 파일 목록이 없으면(이 도구가 쓰는 꼴이 아니다) 깨진 것으로 보고 멈춘다
+        string v2 = T.TempDir(), out2 = T.TempDir();
+        T.Put(v2, "set/a.set", "{a {x 1}}");
+        File.WriteAllText(Path.Combine(out2, ModBuilder.ManifestName), "{}");
+        using (var stack = new SourceStack(new[] { new SourceLayer("vanilla", v2) }))
+        {
+            stack.Scan();
+            var p = new EditProject { Name = "p" };
+            p.Edits.Add(new Edit { Unit = "set/a.set", File = "set/a.set", Path = "/a/x", Old = "1", New = "2" });
+            var report = new ModBuilder(stack, out2).Build(p);
+            T.True(report.FileErrors.Any(f => f.Contains("목록 파일")) && report.WrittenFiles.Count == 0, "a manifest with no file list stops the build");
+        }
+
+        // M-3: 내용이 null인 JSON도 파일 이름이 든 오류다. 수정 목록이 null이면 빈 목록이다
+        string nullProject = Path.Combine(work, "null-project.json"), nullSettings = Path.Combine(work, "null-settings.json"), noEdits = Path.Combine(work, "no-edits.json");
+        File.WriteAllText(nullProject, "null");
+        File.WriteAllText(nullSettings, "null");
+        File.WriteAllText(noEdits, "{\"name\": \"x\", \"edits\": null}");
+        T.Throws<InvalidDataException>(() => EditProject.Load(nullProject), "a null project file is InvalidDataException");
+        T.Throws<InvalidDataException>(() => EditorSettings.Load(nullSettings), "a null settings file is InvalidDataException");
+        T.Eq(0, EditProject.Load(noEdits).Edits.Count, "a project with null edits has an empty list");
+        T.Eq(1, Cli(out o, "remove", "--project", nullProject, "--file", Def, "--path", "/game_entity/mass"), "remove with a null project ends with 1");
+        T.True(o.Contains("null-project.json") && !o.Contains("   at "), "with the file name and no stack trace");
+
+        // M-4: pak 안의 항목만 깨져도 어느 pak의 어느 파일인지 알린다
+        string game3 = T.TempDir();
+        string pak = Path.Combine(game3, "resource", "gamelogic.pak");
+        T.Zip(pak, ("set/t.set", "{t {0 5}}"));
+        byte[] bytes = File.ReadAllBytes(pak);
+        for (int i = 0; i + 11 < bytes.Length; i++)
+            if (bytes[i] == 0x50 && bytes[i + 1] == 0x4B && bytes[i + 2] == 0x01 && bytes[i + 3] == 0x02) { bytes[i + 10] = 99; bytes[i + 11] = 0; break; }   // 중앙 디렉터리의 압축 방식
+        File.WriteAllBytes(pak, bytes);
+        using (var stack = new SourceStack(new[] { new SourceLayer("vanilla", Path.Combine(game3, "resource")) }))
+        {
+            stack.Scan();
+            string message = null;
+            try { stack.Read(stack.Find("set/t.set")); }
+            catch (InvalidDataException ex) { message = ex.Message; }
+            T.True(message != null && message.Contains("gamelogic.pak") && message.Contains("set/t.set"), "a damaged pak entry names the pak and the entry");
+        }
+
+        // M-2: remove의 --unit은 '이 유닛만' 수정만 가린다. '전부' 수정은 그 유닛 화면에서 만들었어도 걸리지 않는다
+        string two = Path.Combine(work, "two.json");
+        var twoProject = new EditProject { Name = "two" };
+        twoProject.Edits.Add(new Edit { Unit = Def, File = Def, Path = "/game_entity/mass", Old = "10", New = "11", Scope = "shared" });
+        twoProject.Edits.Add(new Edit { Unit = Def, File = Def, Path = "/game_entity/mass", Old = "10", New = "12", Scope = "unit" });
+        twoProject.Save(two);
+        T.Eq(1, Cli(out o, "remove", "--project", two, "--file", Def, "--path", "/game_entity/mass"), "two edits at one slot need a choice");
+        T.True(o.Contains("2개"), "and the output says so");
+        T.Eq(0, Cli(out o, "remove", "--project", two, "--file", Def, "--path", "/game_entity/mass", "--unit", Def), "--unit picks the unit-scope edit");
+        var left = EditProject.Load(two).Edits;
+        T.True(left.Count == 1 && left[0].Scope == "shared", "and leaves the shared edit made from the same unit");
+        T.Eq(1, Cli(out o, "remove", "--project", two, "--file", Def, "--path", "/game_entity/mass", "--unit", Def), "--unit does not match a shared edit");
+        T.Eq(0, Cli(out o, "remove", "--project", two, "--file", Def, "--path", "/game_entity/mass", "--scope", "shared"), "--scope shared removes it");
+
+        // M-8: 화면과 명령줄도 파일의 인코딩으로 쓸 수 없는 값을 넣기 전에 막는다(빌드·수정 점검과 같은 규칙)
+        T.Eq(1, Cli(out o, "add", "--settings", settings, "--project", Path.Combine(work, "enc.json"), "--file", Def, "--path", "/game_entity/name", "--new", "\"한\""), "CLI add refuses a value the file cannot hold");
+        T.True(o.Contains("인코딩"), "with the reason");
+        using (var session = EditorSession.Open(settings, repo, null))
+        {
+            var unit = session.OpenUnit(Def);
+            var name = unit.Rows.First(r => r.Path == "/game_entity/name").Values[0];
+            string warning;
+            T.True(session.ValidateNew(unit, name, "\"한\"", "shared", out warning) != null, "the session refuses it too");
+            T.True(session.ValidateNew(unit, name, "\"é\"", "shared", out warning) == null, "a Latin-1 letter is fine");
+        }
     }
 }

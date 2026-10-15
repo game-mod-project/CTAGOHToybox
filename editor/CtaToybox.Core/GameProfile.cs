@@ -51,6 +51,7 @@ namespace CtaToybox.Core
         public static LayerPlan PlanLayers(EditorSettings settings, IEnumerable<string> modEntries)
         {
             var plan = new LayerPlan();
+            string outputEntry = settings.OutputModName;   // options.set에 적힌 출력 모드의 이름. 폴더로 알아보면 그 항목의 이름이다
             plan.Layers.Add(new SourceLayer("vanilla", Path.Combine(settings.GameDir, "resource")));
             foreach (string entry in modEntries)
             {
@@ -71,6 +72,7 @@ namespace CtaToybox.Core
                     {
                         if (!sameName) plan.Warnings.Add("options.set의 " + name + " 폴더가 출력 모드 폴더인데 설정의 출력 모드 이름은 " + settings.OutputModName + "이다. 설정의 이름을 " + name + "로 맞춘다.");
                         plan.OutputModActive = true;
+                        outputEntry = name;
                         continue;
                     }
                     dir = Path.Combine(settings.GameDir, "mods", name, "resource");
@@ -82,7 +84,7 @@ namespace CtaToybox.Core
             if (!plan.OutputModActive)
                 plan.Warnings.Add("출력 모드 " + settings.OutputModName + "가 게임에서 켜져 있지 않다. 빌드해도 게임에 반영되지 않는다.");
             else if (plan.LayersAfterOutput.Count > 0)
-                plan.Warnings.Add("출력 모드보다 뒤에 로드되는 모드가 있다: " + string.Join(", ", plan.LayersAfterOutput) + ". 이 모드들의 파일을 고친 수정은 덮어써진다. options.set의 {mods} 목록에서 " + settings.OutputModName + " 줄을 맨 뒤로 옮긴다.");
+                plan.Warnings.Add("출력 모드보다 뒤에 로드되는 모드가 있다: " + string.Join(", ", plan.LayersAfterOutput) + ". 이 모드들의 파일을 고친 수정은 덮어써진다. options.set의 {mods} 목록에서 " + outputEntry + " 줄을 맨 뒤로 옮긴다.");
             return plan;
         }
 
@@ -97,7 +99,7 @@ namespace CtaToybox.Core
                 var target = new DirectoryInfo(folder).ResolveLinkTarget(true);
                 return target != null && string.Equals(Full(target.FullName), output, StringComparison.OrdinalIgnoreCase);
             }
-            catch (IOException) { return false; }
+            catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException) { return false; }
         }
 
         static string Full(string path) { return Path.GetFullPath(path).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar); }

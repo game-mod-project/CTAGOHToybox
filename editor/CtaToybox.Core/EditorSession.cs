@@ -451,12 +451,7 @@ namespace CtaToybox.Core
         public void OpenProject(string path)
         {
             EditProject loaded;
-            if (File.Exists(path))
-            {
-                loaded = EditProject.Load(path);
-                if (loaded == null) throw new InvalidDataException("프로젝트 파일이 비어 있다: " + path);
-                if (loaded.Edits == null) loaded.Edits = new List<Edit>();
-            }
+            if (File.Exists(path)) loaded = EditProject.Load(path);
             else loaded = new EditProject { Name = Path.GetFileNameWithoutExtension(path) };
             Project = loaded;
             ProjectPath = path;

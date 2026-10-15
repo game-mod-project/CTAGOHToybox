@@ -27,12 +27,19 @@ namespace CtaToybox.Core
             string error = ValueRules.CheckNewValue(t.File, t.Text, newText, out warning);
             if (error != null) return error;
             // 창은 글자를 칠 때마다 검사한다. 원본은 세션 동안 바뀌지 않으므로 마지막에 읽은 파일 하나를 들고 있는다
-            if (!string.Equals(checkedFile, t.File, StringComparison.Ordinal)) { checkedText = Stack.ReadText(t.File); checkedFile = t.File; }
+            if (!string.Equals(checkedFile, t.File, StringComparison.Ordinal))
+            {
+                var source = Stack.Find(t.File);
+                checkedText = source == null ? null : TextCodec.Decode(Stack.Read(source), out checkedKind);
+                checkedFile = t.File;
+            }
             if (checkedText == null) return null;
+            if (!TextCodec.CanEncode(newText, checkedKind)) return "새 값에 이 파일의 인코딩(" + checkedKind + ")으로 쓸 수 없는 글자가 있다: " + newText;
             return ValueRules.CheckApplies(t.File, checkedText, new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = newText, Scope = scope });
         }
 
         string checkedFile, checkedText;
+        TextKind checkedKind;
 
         public Edit AddEdit(UnitView unit, ValueView value, string newText, string scope)
         {
