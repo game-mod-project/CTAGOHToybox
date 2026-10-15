@@ -22,11 +22,14 @@ namespace CtaToybox.Core
         // 게임 설정이 있는 폴더. 문자열 속 설정과 단계표 검사는 이 아래 파일에만 한다
         static readonly string[] Areas = { "set/dynamic_campaign/", "set/multiplayer/games/", "set/difficulty/", "script/multiplayer/modes/conquest/" };
 
+        // 같은 폴더에 있어도 게임 설정이 아닌 파일: 연구 표, 개발자 메모(values.set), 지도 목록. '전부'만 막을 까닭이 없다
+        static readonly Regex NotSettings = new Regex(@"^set/dynamic_campaign/(unit_research_[^/]+|values|map_points)\.set$", RegexOptions.IgnoreCase | RegexOptions.Compiled);
+
         public static bool IsTop(string virtualPath) { return virtualPath != null && Top.IsMatch(virtualPath); }
 
         public static bool InArea(string virtualPath)
         {
-            if (virtualPath == null) return false;
+            if (virtualPath == null || NotSettings.IsMatch(virtualPath)) return false;
             foreach (string a in Areas) if (virtualPath.StartsWith(a, StringComparison.OrdinalIgnoreCase)) return true;
             return false;
         }

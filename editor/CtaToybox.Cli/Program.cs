@@ -17,6 +17,7 @@ namespace CtaToybox.Cli
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
+            "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
@@ -30,6 +31,7 @@ namespace CtaToybox.Cli
             ["trace"] = new[] { "settings", "filter" },
             ["show"] = new[] { "settings", "filter" },
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit" },
+            ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit" },
             ["build"] = new[] { "settings", "project", "force" },
         };
 
@@ -73,6 +75,7 @@ namespace CtaToybox.Cli
                     case "trace": return Trace(positional, opt, settingsPath, output);
                     case "show": return Show(positional, opt, settingsPath, output);
                     case "add": return Add(opt, settingsPath, output);
+                    case "remove": return Remove(opt, output);
                     case "build": return Build(opt, settingsPath, output);
                     default: throw new UsageException("모르는 명령: " + args[0]);
                 }
@@ -82,6 +85,12 @@ namespace CtaToybox.Cli
                 output.WriteLine(ex.Message);
                 output.WriteLine(Usage);
                 return 2;
+            }
+            // 깨진 설정·프로젝트·pak: 코어가 파일 이름과 이유를 넣어 던진다. 스택 트레이스 대신 그것만 보인다
+            catch (InvalidDataException ex)
+            {
+                output.WriteLine("오류: " + ex.Message);
+                return 1;
             }
         }
 
@@ -177,6 +186,7 @@ namespace CtaToybox.Cli
                 var index = OpenIndex(stack, settingsPath, output);
                 // 이름은 게임과 켜 둔 모드의 현지화에서 읽는다(앱과 같다). --names를 주면 그 CSV를 쓴다
                 var names = opt.ContainsKey("names") ? DisplayNames.Load(opt["names"]) : DisplayNames.FromGame(settings, plan);
+                foreach (string w in names.Warnings) output.WriteLine("경고: " + w);
                 foreach (var kv in SettingFiles.LoadNames(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(settingsPath)), "settings", "files.psv")))
                     names.AddPathName(kv.Key, kv.Value.Name);
                 var found = index.Search(opt.ContainsKey("find") ? opt["find"] : null, null, opt.ContainsKey("layer") ? opt["layer"] : null, names)
@@ -204,6 +214,8 @@ namespace CtaToybox.Cli
                 output.WriteLine(traced.Unit + "  (" + (UnitKind.OfEditor(traced.Unit) ?? "유닛 아님") + ", 계층 " + stack.Find(traced.Unit).Layer + ")");
                 foreach (string u in traced.Unresolved) output.WriteLine("풀리지 않은 구문: " + u);
                 string filter = opt.ContainsKey("filter") ? opt["filter"] : null;
+                // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다(앱의 OpenUnit과 같다)
+                bool settingsUnit = UnitKind.OfEditor(traced.Unit) == SettingFiles.Kind;
                 foreach (var row in traced.Rows)
                 {
                     if (filter != null && row.Path.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0) continue;
@@ -212,7 +224,7 @@ namespace CtaToybox.Cli
                     {
                         var v = row.Values[i];
                         if (v.Arg < 0) { output.WriteLine("  " + i + "=" + v.Text + "  (" + v.Note + ")"); continue; }
-                        string blocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
+                        string blocker = settingsUnit || SettingFiles.InArea(v.File) ? SettingFiles.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
                         output.WriteLine("  " + i + "=" + v.Text + "  ← " + v.File + " " + v.KeyPath + " [" + v.Occurrence + "] 값 " + v.Arg +
                                          "  공유 " + index.UsersOf(v.File).Count + "  이 유닛만: " + (blocker == null ? "가능" : "불가(" + blocker + ")"));
                     }
@@ -262,13 +274,15 @@ namespace CtaToybox.Cli
                 if (scope == "unit" && (SettingFiles.InArea(file.VirtualPath) || UnitKind.OfEditor(SourceStack.ToVirtual(opt["unit"])) == SettingFiles.Kind))
                 { output.WriteLine(SettingFiles.UnitScopeNote); return 1; }
                 string readError;
-                var rows = SourceRows.Of(file.VirtualPath, TextCodec.Decode(stack.Read(file), out TextKind kind), out readError);
+                string text = TextCodec.Decode(stack.Read(file), out TextKind kind);
+                var rows = SourceRows.Of(file.VirtualPath, text, out readError);
                 if (rows == null) { output.WriteLine("읽히지 않는 파일은 고칠 수 없다: " + readError); return 1; }
                 var found = rows.FirstOrDefault(r => r.Occurrence == occ && string.Equals(r.Path, keyPath, StringComparison.OrdinalIgnoreCase));
                 var node = found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
                 string warning;
-                string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning);
+                string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning)
+                               ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue });
                 if (error != null) { output.WriteLine(error); return 1; }
                 if (warning != null) output.WriteLine("경고: " + warning);
                 string unit = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
@@ -301,6 +315,32 @@ namespace CtaToybox.Cli
                 output.WriteLine("수정을 더했다: " + file.VirtualPath + " " + keyPath + " " + node.Text + " → " + newValue + " (계층 " + file.Layer + (scope == "unit" ? ", 이 유닛만: " + unit : "") + ")");
                 return 0;
             }
+        }
+
+        // 프로젝트에서 한 자리의 수정을 지운다. 게임 파일은 읽지 않는다. 범위나 유닛을 주지 않았는데 그 자리의 수정이 여럿이면 고르게 한다
+        static int Remove(Dictionary<string, string> opt, TextWriter output)
+        {
+            string projectPath = Need(opt, "project"), file = SourceStack.ToVirtual(Need(opt, "file")), keyPath = Need(opt, "path");
+            int occ = Number(opt, "occ"), arg = Number(opt, "arg");
+            string scope = opt.ContainsKey("scope") ? opt["scope"].ToLowerInvariant() : null;
+            if (scope != null && scope != "shared" && scope != "unit") throw new UsageException("--scope는 shared 또는 unit이다");
+            string unit = opt.ContainsKey("unit") ? SourceStack.ToVirtual(opt["unit"]) : null;
+            if (!File.Exists(projectPath)) { output.WriteLine("프로젝트 파일이 없다: " + projectPath); return 1; }
+            var project = EditProject.Load(projectPath);
+            var matches = project.Edits.Where(e => string.Equals(SourceStack.ToVirtual(e.File ?? ""), file, StringComparison.OrdinalIgnoreCase)
+                && string.Equals(e.Path, keyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == occ && e.Arg == arg
+                && (scope == null || e.Scope == scope) && (unit == null || string.Equals(SourceStack.ToVirtual(e.Unit ?? ""), unit, StringComparison.OrdinalIgnoreCase))).ToList();
+            if (matches.Count == 0) { output.WriteLine("그 자리의 수정이 없다: " + file + " " + keyPath + " [" + occ + "] 값 " + arg); return 1; }
+            if (matches.Count > 1)
+            {
+                output.WriteLine("그 자리의 수정이 " + matches.Count + "개다. --scope나 --unit으로 고른다:");
+                foreach (var e in matches) output.WriteLine("  " + e.Scope + "  " + e.Unit + "  " + e.Old + " → " + e.New);
+                return 1;
+            }
+            project.Edits.Remove(matches[0]);
+            project.Save(projectPath);
+            output.WriteLine("수정을 지웠다: " + file + " " + keyPath + " " + matches[0].Old + " → " + matches[0].New + " (" + matches[0].Scope + ")");
+            return 0;
         }
 
         static int Build(Dictionary<string, string> opt, string settingsPath, TextWriter output)

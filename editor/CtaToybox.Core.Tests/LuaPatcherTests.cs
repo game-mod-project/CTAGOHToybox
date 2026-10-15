@@ -68,5 +68,11 @@ static class LuaPatcherTests
         T.Eq(1, report.Count(EditStatus.Invalid), "and reports the wrong-kind edit");
         string written = File.ReadAllText(Path.Combine(outDir, "resource", "script", "multiplayer", "modes", "conquest", "runtime_config.lua"));
         T.True(written.Contains("AttackMin = 5 * 60000,") && written.Contains("Flag = true,"), "the written file");
+
+        // 이전 생성물 지우기: 수정을 끄고 다시 빌드하면 .lua 생성물이 지워진다(Q12)
+        foreach (var e in project.Edits) e.Enabled = false;
+        report = new ModBuilder(stack, outDir).Build(project);
+        T.True(report.RemovedFiles.Contains("resource/" + Lua), "the stale Lua output is removed");
+        T.True(!File.Exists(Path.Combine(outDir, "resource", "script", "multiplayer", "modes", "conquest", "runtime_config.lua")), "and gone from the mod folder");
     }
 }

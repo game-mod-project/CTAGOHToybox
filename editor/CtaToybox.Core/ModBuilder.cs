@@ -80,6 +80,7 @@ namespace CtaToybox.Core
             string stage = Path.Combine(Path.GetTempPath(), "ctatoybox-build-" + Guid.NewGuid().ToString("N"));
             var manifest = new BuildManifest { Project = project.Name, BuiltAt = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ") };
             var previous = ReadPrevious(report);
+            if (previous == null) return report;
             try
             {
                 // 1. 임시 폴더에 고친 파일을 만든다
@@ -356,7 +357,8 @@ namespace CtaToybox.Core
             }
         }
 
-        // 이전 빌드의 목록 파일에서 지워도 되는 항목(출력 모드의 resource 아래)만 읽는다
+        // 이전 빌드의 목록 파일에서 지워도 되는 항목(출력 모드의 resource 아래)만 읽는다.
+        // 목록 파일이 깨졌으면 null: 그대로 빌드하면 이전 생성물의 기록을 덮어써 다시는 지우지 못하므로 빌드를 멈춘다
         Dictionary<string, BuildManifestFile> ReadPrevious(BuildReport report)
         {
             var result = new Dictionary<string, BuildManifestFile>(StringComparer.OrdinalIgnoreCase);
@@ -366,8 +368,8 @@ namespace CtaToybox.Core
             try { old = JsonSerializer.Deserialize<BuildManifest>(File.ReadAllText(manifestPath, Encoding.UTF8), Json); }
             catch (JsonException)
             {
-                report.Warnings.Add("이전 빌드의 목록 파일을 읽지 못했다. 이전 생성물을 지우지 않는다: " + manifestPath);
-                return result;
+                report.FileErrors.Add(ManifestName + ": 이전 빌드의 목록 파일을 읽지 못해 빌드를 멈췄다. 목록에 있던 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다: " + manifestPath);
+                return null;
             }
             if (old == null || old.Files == null) return result;
             foreach (var f in old.Files)
