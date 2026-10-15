@@ -105,7 +105,7 @@ namespace CtaToybox.Core
             {
                 if (p.Edit == null) continue;
                 var node = KeyLocator.Find(check.Root, p.Edit.Path, p.Edit.Occurrence, p.Edit.Arg);
-                if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다: " + p.Edit.Path);
+                if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다. 이 값을 바꾸면 키 경로가 바뀐다(블록 이름 뒤의 한정자나 숫자 행의 첫 값): " + p.Edit.Path);
             }
             return patched;
         }

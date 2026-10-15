@@ -77,12 +77,22 @@ namespace CtaToybox.Core
             return names;
         }
 
+        // 현지화를 읽지 못한 파일. 이름이 빠질 뿐 편집은 되므로 건너뛰고 경고만 한다
+        public List<string> Warnings { get; } = new List<string>();
+
         void AddPak(string pak)
         {
             if (!File.Exists(pak)) return;
-            using (var zip = System.IO.Compression.ZipFile.OpenRead(pak))
-                foreach (var e in zip.Entries.Where(x => x.FullName.EndsWith(".pot", StringComparison.OrdinalIgnoreCase)).OrderBy(x => x.FullName, StringComparer.OrdinalIgnoreCase))
-                    using (var r = new StreamReader(e.Open(), Encoding.UTF8)) AddPot(r.ReadToEnd());
+            try
+            {
+                using (var zip = System.IO.Compression.ZipFile.OpenRead(pak))
+                    foreach (var e in zip.Entries.Where(x => x.FullName.EndsWith(".pot", StringComparison.OrdinalIgnoreCase)).OrderBy(x => x.FullName, StringComparer.OrdinalIgnoreCase))
+                        using (var r = new StreamReader(e.Open(), Encoding.UTF8)) AddPot(r.ReadToEnd());
+            }
+            catch (Exception ex) when (ex is InvalidDataException || ex is IOException || ex is UnauthorizedAccessException)
+            {
+                Warnings.Add("현지화 파일을 읽지 못해 건너뛰었다(이 파일의 이름이 빠진다): " + pak + ": " + ex.Message);
+            }
         }
 
         // 유닛의 게임 속 이름. 키 규칙은 2026-10-14에 현지화 데이터로 확인했다:

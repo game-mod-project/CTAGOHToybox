@@ -74,12 +74,23 @@ static class ModBuilderTests
         T.True(Exists(outDir, "mod.info"), "a manifest entry outside resource/ is not deleted");
         T.Eq(3, report.Warnings.Count(w => w.Contains("목록 파일")), "each refused manifest entry is warned about");
 
-        // 깨진 목록 파일
-        File.WriteAllText(Path.Combine(outDir, ModBuilder.ManifestName), "not json");
+        // 깨진 목록 파일: 이전 생성물의 기록을 잃지 않도록 빌드를 멈추고 아무것도 쓰지 않는다(docs/10-backlog.md Q3, 2026-10-15)
+        File.Delete(Path.Combine(outDir, ModBuilder.ManifestName));
         foreach (var e in project.Edits) e.Enabled = true;
+        builder.Build(project);
+        string before = Read(outDir, "resource/set/a.set");
+        File.WriteAllText(Path.Combine(outDir, ModBuilder.ManifestName), "not json");
+        project.Edits.Single(e => e.Path == "/a/x").New = "11";
         report = builder.Build(project);
-        T.True(report.Warnings.Any(w => w.Contains("목록 파일")), "an unreadable manifest is warned about, not fatal");
-        T.Eq("{a {x 10} {y 20}}\r\n", Read(outDir, "resource/set/a.set"), "the build still completes");
+        T.True(report.FileErrors.Any(f => f.Contains("목록 파일")), "an unreadable manifest stops the build with an error");
+        T.Eq(0, report.WrittenFiles.Count + report.RemovedFiles.Count, "nothing is written or removed");
+        T.Eq(before, Read(outDir, "resource/set/a.set"), "the earlier output stays as it was");
+        T.Eq("not json", File.ReadAllText(Path.Combine(outDir, ModBuilder.ManifestName)), "the broken manifest is left for the user to look at");
+        File.Delete(Path.Combine(outDir, ModBuilder.ManifestName));
+        foreach (string f in Directory.GetFiles(Path.Combine(outDir, "resource", "set")).Where(f => !f.EndsWith("hand.set"))) File.Delete(f);
+        project.Edits.Single(e => e.Path == "/a/x").New = "10";
+        report = builder.Build(project);
+        T.Eq("{a {x 10} {y 20}}\r\n", Read(outDir, "resource/set/a.set"), "after the user removes the manifest and stale files the build completes");
 
         Sub(HandPlacedCollision);
         Sub(UndecodableAndUnencodable);

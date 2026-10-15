@@ -77,7 +77,13 @@ namespace CtaToybox.Core
         ZipArchive Archive(string pak)
         {
             ZipArchive z;
-            if (!open.TryGetValue(pak, out z)) { z = ZipFile.OpenRead(pak); open[pak] = z; }
+            if (!open.TryGetValue(pak, out z))
+            {
+                // 깨진 pak은 어느 파일인지 알려야 한다(ZipFile의 오류에는 경로가 없다)
+                try { z = ZipFile.OpenRead(pak); }
+                catch (InvalidDataException ex) { throw new InvalidDataException("pak 파일을 읽지 못했다: " + pak + ": " + ex.Message, ex); }
+                open[pak] = z;
+            }
             return z;
         }
 

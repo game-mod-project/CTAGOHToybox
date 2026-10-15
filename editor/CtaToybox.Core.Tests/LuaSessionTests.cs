@@ -56,6 +56,11 @@ static class LuaSessionTests
         string project = Path.Combine(T.TempDir(), "p.json");
         T.Eq(0, Cli(out o, "add", "--settings", settings, "--project", project, "--file", Lua, "--path", "/conquestconfig.attackerwaves/pattern", "--new", "\"flat\""), "add a Lua value");
         T.Eq(1, Cli(out o, "add", "--settings", settings, "--project", project, "--file", Lua, "--path", "/conquestconfig.attackerwaves/pattern", "--new", "flat"), "add refuses a wrong-kind Lua value");
+        // CLI build로 게임 설정과 Lua를 함께 빌드한다(Q12)
+        T.Eq(0, Cli(out o, "add", "--settings", settings, "--project", project, "--file", SettingFilesTests.Res, "--path", "/standard/globalmaxcp", "--new", "2100"), "add a settings edit too");
+        CliApp.GameRunning = () => false;
+        T.Eq(0, Cli(out o, "build", "--settings", settings, "--project", project), "CLI build with settings and Lua edits");
+        T.True(o.Contains("씀: resource/script/multiplayer/modes/conquest/runtime_config.lua") && o.Contains("씀: resource/" + SettingFilesTests.Res) && o.Contains("적용 2건"), "both files are written");
 
         // 모드가 읽기기가 모르는 문법으로 바꾼 Lua: 줄 없이 이유만, 이전 수정은 적용 불가
         string repo2, out2, game2;

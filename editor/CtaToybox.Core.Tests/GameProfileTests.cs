@@ -31,6 +31,14 @@ static class GameProfileTests
         T.True(!off.OutputModActive, "output mod absent from the list");
         T.True(off.Warnings.Any(w => w.Contains("켜져 있지 않")), "an inactive output mod is warned about");
 
+        // 출력 모드는 이름이 아니라 폴더로도 알아본다: 이름이 options.set의 표기와 달라도 원본 계층에 섞이지 않는다(Q6)
+        Directory.CreateDirectory(Path.Combine(game, "mods", "mymod", "resource"));
+        var renamed = new EditorSettings { GameDir = game, WorkshopDir = workshop, OptionsSetPath = "unused", OutputModDir = Path.Combine(game, "mods", "mymod"), OutputModName = "Other" };
+        var byDir = GameProfile.PlanLayers(renamed, new[] { "mod_111:0", "mymod:0" });
+        T.Eq(new[] { "vanilla", "mod_111" }, byDir.Layers.Select(l => l.Name).ToArray(), "the output folder is not read as a source layer");
+        T.True(byDir.OutputModActive, "and counts as the active output mod");
+        T.True(byDir.Warnings.Any(w => w.Contains("mymod") && w.Contains("Other")), "the name mismatch is warned about");
+
         string path = Path.Combine(T.TempDir(), "settings.json");
         settings.Save(path);
         var loaded = EditorSettings.Load(path);

@@ -12,5 +12,21 @@ namespace CtaToybox.Core
             if (error != null || !SettingFiles.InArea(file)) return error;
             return SettingStrings.CheckPieces(oldText, newText) ?? SettingStrings.CheckSteps(oldText, newText);
         }
+
+        // 수정 한 건을 원본 텍스트에 미리 적용해 본다. 되면 null, 안 되면 이유.
+        // 새 값 규칙을 지켜도 블록 한정자나 숫자 행의 첫 값을 바꾸면 키 경로가 바뀌어 빌드가 그 파일을 쓰지 못한다(CheckNewValue로는 보이지 않는다)
+        public static string CheckApplies(string file, string text, Edit edit)
+        {
+            var results = new System.Collections.Generic.List<EditResult>();
+            var one = new[] { new Edit { Unit = edit.Unit, File = edit.File, Path = edit.Path, Occurrence = edit.Occurrence, Arg = edit.Arg, Old = edit.Old, New = edit.New, Scope = edit.Scope } };
+            try
+            {
+                if (LuaTable.IsLua(file)) LuaPatcher.Apply(text, one, results);
+                else TokenPatcher.Apply(text, one, results);
+            }
+            catch (System.InvalidOperationException ex) { return "적용해 보니 안 된다: " + ex.Message; }
+            if (results.Count == 0) return "적용해 보니 결과가 없다";
+            return results[0].Status == EditStatus.Applied ? null : results[0].Message;
+        }
     }
 }

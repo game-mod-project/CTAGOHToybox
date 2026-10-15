@@ -35,6 +35,8 @@ static class SettingFilesTests
         T.True(!SettingFiles.IsTop("set/multiplayer/games/gamemode.template"), "only .set game modes");
         T.True(SettingFiles.InArea(Limits) && SettingFiles.InArea(DlInc) && SettingFiles.InArea("script/multiplayer/modes/conquest/waves.lua"), "the settings area holds included files too");
         T.True(!SettingFiles.InArea("set/breed/mp/ger/mid/medic.set"), "units are not in the settings area");
+        T.True(!SettingFiles.InArea("set/dynamic_campaign/unit_research_ger.set") && !SettingFiles.InArea("set/dynamic_campaign/values.set") && !SettingFiles.InArea("set/dynamic_campaign/map_points.set"),
+            "research, the developer notes file and the map list are not settings (Q10)");
 
         T.Eq("settings", UnitKind.OfEditor(Res), "OfEditor adds the settings kind");
         T.Eq("breed", UnitKind.OfEditor("set/breed/mp/ger/mid/medic.set"), "OfEditor keeps the unit kinds");

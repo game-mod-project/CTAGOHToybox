@@ -54,6 +54,12 @@ dotnet run --project editor/CtaToybox.Cli -c Release -- init --game "E:\SteamLib
    ctatoybox add --project editor/projects/my-tweaks.json --file entity/-vehicle/ussr/tank_heavy/kv85/kv85.def --path "/game_entity/extender[inventory]/box/item" --occ 0 --arg 1 --new 7
    ```
 
+   `add`는 원본에 미리 적용해 보고 안 되는 값을 거부한다. 블록 이름 뒤의 한정자(`extender[inventory]`의 `"inventory"`)나 숫자로 시작하는 행의 첫 값을 낱말로 바꾸는 것처럼 키 경로가 바뀌는 값이 그렇다. 더한 수정을 지울 때는 같은 자리로 `remove`를 쓴다. 그 자리에 '전부'와 '이 유닛만' 수정이 함께 있으면 `--scope`나 `--unit`으로 고른다.
+
+   ```
+   ctatoybox remove --project editor/projects/my-tweaks.json --file entity/-vehicle/ussr/tank_heavy/kv85/kv85.def --path "/game_entity/extender[inventory]/box/item" --arg 1
+   ```
+
 4. 게임을 끄고 빌드한다. 게임이나 에디터가 실행 중이면 `build`는 빌드하지 않고 오류로 끝난다. 그래도 빌드하려면 `--force`를 붙인다.
 
    ```
@@ -166,6 +172,7 @@ dotnet run --project editor/CtaToybox.App -c Release
 - 쓰는 곳은 `mod/CTAToybox/resource` 아래와 `mod/CTAToybox/.ctatoybox-build.json`뿐이다.
 - "이 유닛만" 수정은 원본에 없는 이름의 사본 파일도 만든다. 사본도 `.ctatoybox-build.json`에 적히고 다음 빌드에서 지워진다.
 - 지우는 것은 이전 빌드가 `.ctatoybox-build.json`에 적어 둔 파일뿐이다. 손으로 넣은 파일은 그대로 둔다.
+- `.ctatoybox-build.json`이 깨져 읽히지 않으면 빌드는 아무것도 쓰거나 지우지 않고 멈춘다(그대로 빌드하면 이전 생성물의 기록을 잃는다). 출력 폴더의 `resource` 아래에서 이전 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다.
 - 수정을 모두 끄고 빌드하면 생성물이 모두 사라진다.
 
 ## 알려진 한계

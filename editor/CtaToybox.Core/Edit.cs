@@ -32,9 +32,11 @@ namespace CtaToybox.Core
             Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping
         };
 
+        // 깨진 JSON은 파일 이름과 이유를 담은 InvalidDataException으로 던진다
         public static EditProject Load(string path)
         {
-            return JsonSerializer.Deserialize<EditProject>(System.IO.File.ReadAllText(path, Encoding.UTF8), Json);
+            try { return JsonSerializer.Deserialize<EditProject>(System.IO.File.ReadAllText(path, Encoding.UTF8), Json); }
+            catch (JsonException ex) { throw new InvalidDataException("프로젝트 파일을 읽지 못했다: " + path + ": " + ex.Message, ex); }
         }
 
         public void Save(string path)

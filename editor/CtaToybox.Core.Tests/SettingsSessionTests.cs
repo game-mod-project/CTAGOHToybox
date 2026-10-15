@@ -100,6 +100,13 @@ static class SettingsSessionTests
             T.Eq("전면 장갑", new RowView().SummaryName("전면 장갑"), "no context: the name");
         }
 
+        // 앱도 CLI처럼 settings.json 옆의 settings/files.psv를 읽는다(Q11)
+        string alt = Path.Combine(T.TempDir(), "settings.json");
+        File.Copy(settings, alt);
+        Utf8(Path.GetDirectoryName(alt), "settings/files.psv", SettingFilesTests.Res + "|컨퀘스트 자원|다른 이름\n");
+        using (var session = EditorSession.Open(alt, repo, null))
+            T.Eq("다른 이름", session.Names.OfUnit(SettingFilesTests.Res), "the names come from next to the settings file");
+
         string o;
         T.Eq(0, Cli(out o, "units", "--settings", settings, "--kind", "settings"), "units --kind settings");
         T.True(o.Contains(SettingFilesTests.Res) && o.Contains("컨퀘스트 자원 — standard"), "lists settings with their names");

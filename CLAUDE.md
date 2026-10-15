@@ -26,7 +26,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 
 - 테스트: `pwsh -NoProfile -File tools/tests/Run-Tests.ps1`
 - 편집기 테스트: `dotnet run --project editor/CtaToybox.Core.Tests -c Release`. 전체 테스트(`Run-Tests.ps1`)에 포함돼 있다. 실제 게임 파일 검증은 끝에 `-- real`을 붙인다.
-- 편집기 명령줄: `dotnet run --project editor/CtaToybox.Cli -c Release -- <명령>`. 명령은 `sources`, `units`, `trace`, `show`, `add`, `build`. 사용법은 `docs/07-stat-editor/README.md`. 유닛 색인 캐시는 `editor/cache/`(git 제외)에 생긴다.
+- 편집기 명령줄: `dotnet run --project editor/CtaToybox.Cli -c Release -- <명령>`. 명령은 `sources`, `units`, `trace`, `show`, `add`, `remove`, `build`. 사용법은 `docs/07-stat-editor/README.md`. 유닛 색인 캐시는 `editor/cache/`(git 제외)에 생긴다.
 - 편집기 화면: `dotnet run --project editor/CtaToybox.App -c Release`. 화면 확인은 `--unit <가상 경로> --tab summary|full --filter <글자> --screenshot <png>`로 PNG를 찍어 본다. 조작까지 확인할 때는 `--project <임시 파일> --scenario <시나리오 파일>`(명령은 `editor/CtaToybox.App/MainWindow.Scenario.cs` 머리 주석)로 값 넣기·범위·넣기·수정 켜고 끄기·삭제를 사람 대신 하고 그 사이 화면을 찍는다. 사용자의 프로젝트를 쓰지 않는다.
 - 바닐라 전체 재생성(약 6분): `pwsh -NoProfile -File tools/Invoke-Pipeline.ps1 -SourceRoot "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\resource" -WorkDir _work\vanilla -DataDir data`
 - 표시 이름: `pwsh -NoProfile -File tools/Build-DisplayNames.ps1 -LocPak "E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell\localizations\default.pak" -DataDir data`

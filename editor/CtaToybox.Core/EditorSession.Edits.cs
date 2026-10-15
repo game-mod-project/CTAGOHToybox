@@ -23,8 +23,16 @@ namespace CtaToybox.Core
             if (!value.Editable) return value.Trace.Note ?? "편집할 수 없는 자리다";
             if (scope != "shared" && scope != "unit") return "범위는 shared 또는 unit이다: " + scope;
             if (scope == "unit" && value.UnitScopeBlocker != null) return value.UnitScopeBlocker;
-            return ValueRules.CheckNewValue(value.Trace.File, value.Trace.Text, newText, out warning);
+            var t = value.Trace;
+            string error = ValueRules.CheckNewValue(t.File, t.Text, newText, out warning);
+            if (error != null) return error;
+            // 창은 글자를 칠 때마다 검사한다. 원본은 세션 동안 바뀌지 않으므로 마지막에 읽은 파일 하나를 들고 있는다
+            if (!string.Equals(checkedFile, t.File, StringComparison.Ordinal)) { checkedText = Stack.ReadText(t.File); checkedFile = t.File; }
+            if (checkedText == null) return null;
+            return ValueRules.CheckApplies(t.File, checkedText, new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = newText, Scope = scope });
         }
+
+        string checkedFile, checkedText;
 
         public Edit AddEdit(UnitView unit, ValueView value, string newText, string scope)
         {
@@ -119,7 +127,7 @@ namespace CtaToybox.Core
         public void Rebase(Edit edit)
         {
             NeedProject();
-            var check = Check(edit, new Dictionary<string, List<KeyRow>>(StringComparer.Ordinal));
+            var check = Check(edit, new Dictionary<string, SourceCheck>(StringComparer.Ordinal));
             if (check.Current == null) return;
             string before = edit.Old;
             edit.Old = check.Current;
@@ -129,20 +137,26 @@ namespace CtaToybox.Core
         public List<EditCheck> CheckEdits()
         {
             if (Project == null) return new List<EditCheck>();
-            var parsed = new Dictionary<string, List<KeyRow>>(StringComparer.Ordinal);
+            var parsed = new Dictionary<string, SourceCheck>(StringComparer.Ordinal);
             return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed)).ToList();
         }
 
-        EditCheck Check(Edit e, Dictionary<string, List<KeyRow>> parsed)
+        EditCheck Check(Edit e, Dictionary<string, SourceCheck> parsed)
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
-            List<KeyRow> rows;
-            if (!parsed.TryGetValue(file, out rows))
+            SourceCheck source;
+            if (!parsed.TryGetValue(file, out source))
             {
-                string error;
-                rows = SourceRows.Of(file, Stack.ReadText(file), out error);
-                parsed[file] = rows;
+                source = new SourceCheck();
+                var found = Stack.Find(file);
+                if (found != null)
+                {
+                    string error;
+                    source.Rows = SourceRows.Of(file, TextCodec.Decode(Stack.Read(found), out source.Kind), out error);
+                }
+                parsed[file] = source;
             }
+            var rows = source.Rows;
             if (rows == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
             var node = row != null && e.Arg >= 0 && e.Arg < row.Leaves.Count ? row.Leaves[e.Arg] : null;
@@ -157,8 +171,17 @@ namespace CtaToybox.Core
                 string blocker = IncludeChain.UnitScopeBlocker(new SdlResolver(Stack.ReadText).Resolve(unit).IncludeEdges, unit, file, e.Path);
                 if (blocker != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = blocker };
             }
+            // 빌드(ModBuilder)와 같은 규칙: 파일의 인코딩으로 쓸 수 있는가, 새 값 규칙에 맞는가
+            if (e.New != null && !TextCodec.CanEncode(e.New, source.Kind))
+                return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = "새 값에 이 파일의 인코딩(" + source.Kind + ")으로 쓸 수 없는 글자가 있다: " + e.New };
+            string warning;
+            string rule = e.New == null ? null : ValueRules.CheckNewValue(file, e.Old, e.New, out warning);
+            if (rule != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = rule };
             return new EditCheck { Edit = e, Status = EditStatus.Applied, Current = node.Text, RowText = rowText };
         }
+
+        // 수정 점검이 파일마다 한 번 읽은 것: 줄과 인코딩. 파일이 없거나 읽히지 않으면 Rows가 null이다
+        sealed class SourceCheck { public List<KeyRow> Rows; public TextKind Kind; }
 
         public BuildReport Build()
         {

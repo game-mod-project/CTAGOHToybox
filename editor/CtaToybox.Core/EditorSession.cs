@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Text.Json;
 
 namespace CtaToybox.Core
 {
@@ -101,7 +100,9 @@ namespace CtaToybox.Core
             if (rebuilt) say("유닛 색인을 새로 만들었다: " + s.Index.Units.Count + "개");
             say("게임 현지화에서 이름을 읽는 중");
             s.Names = DisplayNames.FromGame(s.Settings, s.Plan);
-            s.settingFiles = SettingFiles.LoadNames(Path.Combine(repoRoot, "editor", "settings", "files.psv"));
+            s.Plan.Warnings.AddRange(s.Names.Warnings);
+            // 게임 설정 파일 이름표는 명령줄과 같이 설정 파일 옆의 settings/files.psv에서 읽는다
+            s.settingFiles = SettingFiles.LoadNames(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(settingsPath)), "settings", "files.psv"));
             foreach (var kv in s.settingFiles) s.Names.AddPathName(kv.Key, kv.Value.Name);
             foreach (var layer in s.Plan.Layers) s.layerLabels[layer.Name] = layer.Name == "vanilla" ? "바닐라" : ModName(layer) ?? layer.Name;
             s.Items = ItemLinks.Build(s.Stack.Paths);
@@ -452,8 +453,7 @@ namespace CtaToybox.Core
             EditProject loaded;
             if (File.Exists(path))
             {
-                try { loaded = EditProject.Load(path); }
-                catch (JsonException ex) { throw new InvalidDataException("프로젝트 파일을 읽지 못했다: " + path + ": " + ex.Message, ex); }
+                loaded = EditProject.Load(path);
                 if (loaded == null) throw new InvalidDataException("프로젝트 파일이 비어 있다: " + path);
                 if (loaded.Edits == null) loaded.Edits = new List<Edit>();
             }
