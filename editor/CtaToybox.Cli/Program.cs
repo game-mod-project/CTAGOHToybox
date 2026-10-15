@@ -19,7 +19,7 @@ namespace CtaToybox.Cli
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
-            "종류: tank, cannon, car, vehicle-other, breed, stuff, 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다";
+            "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
 
         // 명령마다 받는 옵션. 여기에 없는 옵션은 사용법 오류다(오타를 조용히 버리지 않는다)
         static readonly Dictionary<string, string[]> KnownOptions = new Dictionary<string, string[]>(StringComparer.OrdinalIgnoreCase)
@@ -177,8 +177,10 @@ namespace CtaToybox.Cli
                 var index = OpenIndex(stack, settingsPath, output);
                 // 이름은 게임과 켜 둔 모드의 현지화에서 읽는다(앱과 같다). --names를 주면 그 CSV를 쓴다
                 var names = opt.ContainsKey("names") ? DisplayNames.Load(opt["names"]) : DisplayNames.FromGame(settings, plan);
+                foreach (var kv in SettingFiles.LoadNames(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(settingsPath)), "settings", "files.psv")))
+                    names.AddPathName(kv.Key, kv.Value.Name);
                 var found = index.Search(opt.ContainsKey("find") ? opt["find"] : null, null, opt.ContainsKey("layer") ? opt["layer"] : null, names)
-                    .Where(u => UnitKind.InEditor(u.EditorKind) && u.Numbers > 0 && (kind == null || u.EditorKind == kind || u.Kind == kind)).ToList();
+                    .Where(u => UnitKind.InEditor(u.EditorKind) && (u.Numbers > 0 || u.EditorKind == SettingFiles.Kind) && (kind == null || u.EditorKind == kind || u.Kind == kind)).ToList();
                 foreach (var u in found.Take(limit))
                 {
                     string name = names.OfUnit(u.Path);
@@ -199,7 +201,7 @@ namespace CtaToybox.Cli
                 var traced = new UnitTracer(stack).Trace(positional[0]);
                 if (traced == null) { output.WriteLine("원본에 이 파일이 없다: " + positional[0]); return 1; }
                 var index = OpenIndex(stack, settingsPath, output);
-                output.WriteLine(traced.Unit + "  (" + (UnitKind.Of(traced.Unit) ?? "유닛 아님") + ", 계층 " + stack.Find(traced.Unit).Layer + ")");
+                output.WriteLine(traced.Unit + "  (" + (UnitKind.OfEditor(traced.Unit) ?? "유닛 아님") + ", 계층 " + stack.Find(traced.Unit).Layer + ")");
                 foreach (string u in traced.Unresolved) output.WriteLine("풀리지 않은 구문: " + u);
                 string filter = opt.ContainsKey("filter") ? opt["filter"] : null;
                 foreach (var row in traced.Rows)
@@ -256,6 +258,8 @@ namespace CtaToybox.Cli
                 if (stack == null) return 1;
                 var file = stack.Find(fileArg);
                 if (file == null) { output.WriteLine("원본에 이 파일이 없다: " + fileArg); return 1; }
+                if (scope == "unit" && (SettingFiles.InArea(file.VirtualPath) || UnitKind.OfEditor(SourceStack.ToVirtual(opt["unit"])) == SettingFiles.Kind))
+                { output.WriteLine(SettingFiles.UnitScopeNote); return 1; }
                 var parsed = SdlCore.Parse(TextCodec.Decode(stack.Read(file), out TextKind kind));
                 if (parsed.Errors.Count > 0) { output.WriteLine("파싱되지 않는 파일은 고칠 수 없다: " + parsed.Errors[0]); return 1; }
                 var node = KeyLocator.Find(parsed.Root, keyPath, occ, arg);

@@ -61,6 +61,7 @@ namespace CtaToybox.Core
 
         string annotationDir, summaryDir;
         ValueLabels valueLabels = new ValueLabels();
+        Dictionary<string, SettingFiles.Entry> settingFiles = new Dictionary<string, SettingFiles.Entry>(StringComparer.OrdinalIgnoreCase);
         readonly Dictionary<string, string> layerLabels = new Dictionary<string, string>(StringComparer.Ordinal);
         UnitTracer tracer;
         readonly Dictionary<string, KeyAnnotations> notes = new Dictionary<string, KeyAnnotations>(StringComparer.Ordinal);
@@ -84,6 +85,8 @@ namespace CtaToybox.Core
             if (rebuilt) say("유닛 색인을 새로 만들었다: " + s.Index.Units.Count + "개");
             say("게임 현지화에서 이름을 읽는 중");
             s.Names = DisplayNames.FromGame(s.Settings, s.Plan);
+            s.settingFiles = SettingFiles.LoadNames(Path.Combine(repoRoot, "editor", "settings", "files.psv"));
+            foreach (var kv in s.settingFiles) s.Names.AddPathName(kv.Key, kv.Value.Name);
             foreach (var layer in s.Plan.Layers) s.layerLabels[layer.Name] = layer.Name == "vanilla" ? "바닐라" : ModName(layer) ?? layer.Name;
             s.Items = ItemLinks.Build(s.Stack.Paths);
             say("가격·로스터 파일을 읽는 중");
@@ -96,13 +99,13 @@ namespace CtaToybox.Core
             return s;
         }
 
-        // 편집기 목록: 편집기 종류(UnitKind.Editor)이고 값에 수가 하나라도 있는 유닛만. from·tag·entity 같은 이름만 있는 파일은 고칠 스탯이 없다.
+        // 편집기 목록: 편집기 종류(UnitKind.Editor)이고 값에 수가 하나라도 있는 유닛만. from·tag·entity 같은 이름만 있는 파일은 고칠 스탯이 없다. 게임 설정은 수가 없어도 넣는다(문자열 단계표만 있는 파일).
         // kind는 편집기 종류(tank 등)나 원래 종류(vehicle이면 차량 전부)다
         public IEnumerable<UnitEntry> Search(string text, string kind, string layer)
         {
             // 이름 있는 유닛을 먼저, 이름순으로. 이름이 없으면 경로순
             return Index.Search(text, null, layer, Names)
-                .Where(u => UnitKind.InEditor(u.EditorKind) && u.Numbers > 0)
+                .Where(u => UnitKind.InEditor(u.EditorKind) && (u.Numbers > 0 || u.EditorKind == SettingFiles.Kind))
                 .Where(u => kind == null || string.Equals(u.EditorKind, kind, StringComparison.OrdinalIgnoreCase) || string.Equals(u.Kind, kind, StringComparison.OrdinalIgnoreCase))
                 .Select(u => new { u, name = Names.OfUnit(u.Path) })
                 .OrderBy(x => x.name == null ? 1 : 0).ThenBy(x => x.name, StringComparer.OrdinalIgnoreCase).ThenBy(x => x.u.Path, StringComparer.Ordinal)
@@ -116,6 +119,14 @@ namespace CtaToybox.Core
             return layerLabels.TryGetValue(layer, out label) ? label : layer;
         }
 
+        // 목록에 보이는 종류 글자: 게임 설정은 files.psv의 묶음(컨퀘스트 자원 등), 나머지는 종류 이름
+        public string KindLabel(UnitEntry u)
+        {
+            SettingFiles.Entry e;
+            if (u.EditorKind == SettingFiles.Kind && settingFiles.TryGetValue(u.Path, out e)) return e.Group;
+            return UnitKind.Label(u.EditorKind);
+        }
+
         static string ModName(SourceLayer layer)
         {
             string info = Path.Combine(Path.GetDirectoryName(Path.GetFullPath(layer.ResourceDir)), "mod.info");
@@ -127,7 +138,8 @@ namespace CtaToybox.Core
 
         KeyAnnotations NotesFor(string unit)
         {
-            string group = KeyAnnotations.GroupOf(unit);
+            // 게임 설정은 편집기 전용 묶음 settings.psv를 쓴다. GroupOf는 Common.ps1과 같은 규칙으로 둔다
+            string group = UnitKind.OfEditor(unit) == SettingFiles.Kind ? SettingFiles.Kind : KeyAnnotations.GroupOf(unit);
             KeyAnnotations n;
             if (!notes.TryGetValue(group, out n)) { n = KeyAnnotations.Load(annotationDir, group); notes[group] = n; }
             return n;
@@ -149,7 +161,7 @@ namespace CtaToybox.Core
         {
             var traced = tracer.Trace(unit);
             if (traced == null) return null;
-            string kind = UnitKind.Of(traced.Unit);
+            string kind = UnitKind.OfEditor(traced.Unit);
             var n = NotesFor(traced.Unit);
             var summary = SummaryFor(kind, n);
             var view = new UnitView
@@ -174,6 +186,10 @@ namespace CtaToybox.Core
                 view.Rows.Add(r);
             }
             AddMacroCalls(view, traced, n, summary);
+            // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다
+            if (kind == SettingFiles.Kind)
+                foreach (var r in view.Rows)
+                    foreach (var v in r.Values) if (v.Editable) v.UnitScopeBlocker = SettingFiles.UnitScopeNote;
             CollapseRepeats(view.Rows);
             AddRoster(view);
             foreach (var row in view.Rows.Concat(view.Roster))

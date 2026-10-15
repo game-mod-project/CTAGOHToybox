@@ -34,6 +34,10 @@ namespace CtaToybox.App
                 (unit.Unresolved.Count == 0 ? "" : "\n풀리지 않은 구문 " + unit.Unresolved.Count + "개: " + string.Join(", ", unit.Unresolved.Take(5)));
             ItemList.ItemsSource = unit.Items.Select(ItemLinkItemOf).ToList();
             ItemsTab.Header = "무기·탄약 (" + unit.Items.Count + ")";
+            // 게임 설정에는 가격·로스터와 무기·탄약이 없다
+            var other = unit.Kind == SettingFiles.Kind ? Visibility.Collapsed : Visibility.Visible;
+            RosterTab.Visibility = ItemsTab.Visibility = other;
+            if (other == Visibility.Collapsed && (Tabs.SelectedItem == RosterTab || Tabs.SelectedItem == ItemsTab)) Tabs.SelectedItem = SummaryTab;
             RefreshUnitViews();
         }
 
