@@ -96,8 +96,11 @@ namespace CtaToybox.App
         void Build_Click(object sender, RoutedEventArgs e)
         {
             if (session == null || session.Project == null) return;
+            // 실행 중인 게임은 켤 때 본 모드 파일을 나중에 다시 읽는다. 그 사이에 파일을 바꾸거나 지우면 꺼질 수 있다(2026-10-14)
             if (EditorSession.GameRunning() &&
-                MessageBox.Show(this, "게임이나 에디터가 실행 중이다. 빌드해도 게임을 다시 시작해야 반영된다. 계속할까?", "빌드", MessageBoxButton.YesNo) != MessageBoxResult.Yes) return;
+                MessageBox.Show(this, "게임이나 에디터가 실행 중이다.\n\n실행 중에 모드 파일을 바꾸거나 지우면, 게임이 그 파일을 다시 읽을 때(예: 전투를 새로 시작할 때) 꺼질 수 있다. " +
+                                "게임을 끄고 빌드하는 것이 안전하다.\n\n그래도 빌드할까? 빌드했으면 전투를 새로 시작하지 말고 게임을 다시 시작한다.",
+                                "빌드", MessageBoxButton.YesNo, MessageBoxImage.Warning, MessageBoxResult.No) != MessageBoxResult.Yes) return;
             BuildReport report = null;
             if (!Try("빌드", () => report = session.Build())) return;
             var lines = new System.Collections.Generic.List<string>

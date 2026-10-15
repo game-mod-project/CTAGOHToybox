@@ -52,13 +52,15 @@ dotnet run --project editor/CtaToybox.Cli -c Release -- init --game "E:\SteamLib
    ctatoybox add --project editor/projects/my-tweaks.json --file entity/-vehicle/ussr/tank_heavy/kv85/kv85.def --path "/game_entity/extender[inventory]/box/item" --occ 0 --arg 1 --new 7
    ```
 
-4. 빌드한다.
+4. 게임을 끄고 빌드한다. 게임이나 에디터가 실행 중이면 `build`는 빌드하지 않고 오류로 끝난다. 그래도 빌드하려면 `--force`를 붙인다.
 
    ```
    ctatoybox build --project editor/projects/my-tweaks.json
    ```
 
 5. 게임을 다시 시작한다. 모드 목록에서 `CTAToybox`가 켜져 있어야 한다.
+
+게임이 실행 중일 때 빌드하면 안 되는 이유: 실행 중인 게임은 켤 때 본 모드 파일을 나중에 다시 읽는다. 2026-10-14에 게임이 켜진 채로 빌드해 확인용 수정 파일(`set/stuff/mgun/hmgun_usa.ammo`)이 지워졌다. 그 뒤 스커미시를 새로 시작하자 게임이 그 파일을 읽다가 `Block start expected! (eSDLReader.cpp:644)`로 꺼졌다(같은 맵의 첫 판은 정상, `game.log`).
 
 ## 화면 (CtaToybox.exe)
 
@@ -76,7 +78,7 @@ dotnet run --project editor/CtaToybox.App -c Release
 - **무기·탄약 탭**: 유닛이 이름으로 가리키는 무기·탄약과 이어진 파일, 이은 규칙이다. 파일 하나로 이어진 것은 두 번 눌러 연다. "후보"와 "파일 없음"은 게임이 어느 파일을 쓰는지 확인하지 않은 이름이다(규칙의 근거는 `docs/02-modding-research.md`의 "아이템 이름과 파일").
 - **값 고치기**: 창의 제목은 항목의 한글 이름이고, 값마다 뜻(예: `최고 속도 (km/h)`, `아이템 이름`, `수량`)과 원문 이름·자리·원래 값을 보인다. 값의 뜻은 `data/annotations/values.psv`에서 읽고, 없으면 "뜻 미확인"으로 적는다. 표의 "지금 값" 칸도 뜻을 아는 값은 한 줄에 하나씩 "뜻: 값"으로 보인다. 전체 탭은 줄마다 키 주석에서 뽑은 한글 이름을 굵게, 그 아래 원문 키를 보인다(뜻을 모르면 "이름 미확인"). 값을 두 번 누른다. 공유되는 값이면 영향받는 유닛 목록과 "전부 / 이 유닛만"이 나온다. "이 유닛만"이 안 되는 자리는 선택지가 꺼지고 이유가 보인다. 같은 자리를 다시 고치면 수정이 바뀐다(쌓이지 않는다).
 - **오른쪽 수정 목록**: 유닛별로 묶인다. 체크로 끄고 켠다. "삭제"하면 값이 원본으로 돌아간다. "원본이 바뀜"이 뜬 수정은 "지금 값에 맞추기"로 원래 값을 지금 원본 값으로 바꾸거나 삭제한다.
-- **빌드**: 게임이나 에디터가 실행 중이면 묻는다. 결과를 창으로 보인다.
+- **빌드**: 게임이나 에디터가 실행 중이면 꺼질 수 있다고 경고하고 묻는다(기본 선택은 "아니요"). 결과를 창으로 보인다.
 
 화면 확인용 옵션: `--unit <가상 경로> --tab summary|full|items --filter <글자> --edit-row <항목 이름> --screenshot <png>`는 그 화면(또는 그 줄의 값 고치기 창)을 PNG로 저장하고 끝낸다. `--shots <목록 파일>`은 한 번 실행으로 여러 화면을 찍는다(한 줄: `파일 이름|유닛|탭|거르기|값 고치기 창 항목`). `--project <파일>`로 프로젝트를 고른다. `--scenario <파일>`은 값 고치기 창에 값을 쓰고, 범위를 고르고, 넣기를 누르고, 수정 목록의 체크를 바꾸거나 지우는 조작을 차례로 하며 화면을 찍는다(명령 목록은 `MainWindow.Scenario.cs` 머리 주석). 반드시 `--project`로 임시 프로젝트를 준다.
 

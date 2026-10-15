@@ -1,7 +1,6 @@
 // 화면 없이 코어를 쓰는 명령줄 도구. 게임 폴더는 읽기만 하고, 쓰는 곳은 설정 파일, 프로젝트 파일, 출력 모드 폴더다.
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using CtaToybox.Core;
@@ -18,7 +17,7 @@ namespace CtaToybox.Cli
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
-            "  ctatoybox build --project <파일>\n" +
+            "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다";
 
@@ -31,8 +30,14 @@ namespace CtaToybox.Cli
             ["trace"] = new[] { "settings", "filter" },
             ["show"] = new[] { "settings", "filter" },
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit" },
-            ["build"] = new[] { "settings", "project" },
+            ["build"] = new[] { "settings", "project", "force" },
         };
+
+        // 값을 받지 않는 옵션
+        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force" };
+
+        // 게임이나 에디터가 실행 중인지. 테스트가 바꿔 끼운다
+        public static Func<bool> GameRunning = EditorSession.GameRunning;
 
         sealed class UsageException : Exception { public UsageException(string m) : base(m) { } }
 
@@ -47,7 +52,8 @@ namespace CtaToybox.Cli
                 var positional = new List<string>();
                 for (int i = 1; i < args.Length; i++)
                 {
-                    if (args[i].StartsWith("--"))
+                    if (args[i].StartsWith("--") && Flags.Contains(args[i].Substring(2))) opt[args[i].Substring(2)] = "";
+                    else if (args[i].StartsWith("--"))
                     {
                         if (i + 1 >= args.Length) throw new UsageException(args[i] + " 뒤에 값이 없다");
                         opt[args[i].Substring(2)] = args[++i];
@@ -294,13 +300,22 @@ namespace CtaToybox.Cli
         {
             string projectPath = Need(opt, "project");
             if (!File.Exists(projectPath)) { output.WriteLine("프로젝트 파일이 없다: " + projectPath); return 1; }
+            // 실행 중인 게임은 켤 때 본 모드 파일을 나중에 다시 읽는다. 그 사이에 파일을 바꾸거나 지우면 꺼질 수 있다
+            // (2026-10-14: 빌드가 지운 hmgun_usa.ammo를 다음 전투 시작 때 읽다가 "Block start expected!"로 꺼졌다)
+            if (GameRunning())
+            {
+                if (!opt.ContainsKey("force"))
+                {
+                    output.WriteLine("오류: 게임이나 에디터가 실행 중이다. 실행 중에 모드 파일을 바꾸거나 지우면, 게임이 그 파일을 다시 읽을 때(예: 전투를 새로 시작할 때) 꺼질 수 있다. 게임을 끄고 다시 빌드한다. 그래도 빌드하려면 --force를 붙인다.");
+                    return 1;
+                }
+                output.WriteLine("경고: 게임이나 에디터가 실행 중이다(--force). 전투를 새로 시작하지 말고 게임을 다시 시작한다. 실행 중인 게임은 바뀐 파일을 읽다가 꺼질 수 있다.");
+            }
             EditorSettings settings; LayerPlan plan;
             using (var stack = Open(settingsPath, output, out settings, out plan))
             {
                 if (stack == null) return 1;
                 foreach (string w in plan.Warnings) output.WriteLine("경고: " + w);
-                if (Process.GetProcessesByName("call_to_arms").Length > 0 || Process.GetProcessesByName("call_to_arms_ed").Length > 0)
-                    output.WriteLine("경고: 게임이나 에디터가 실행 중이다. 다시 시작해야 반영된다.");
                 var report = new ModBuilder(stack, settings.OutputModDir).Build(EditProject.Load(projectPath));
                 foreach (var r in report.Results.Where(x => x.Status != EditStatus.Applied || x.Message != null))
                     output.WriteLine(r.Status + ": " + r.Edit.File + " " + r.Edit.Path + " [" + r.Edit.Occurrence + "] 값 " + r.Edit.Arg + (r.Message == null ? "" : " : " + r.Message));
