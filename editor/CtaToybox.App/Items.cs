@@ -1,5 +1,6 @@
 // 화면 목록이 묶는 항목과 표시 문자열. 판단(고칠 수 있는지, 범위 등)은 EditorSession이 하고, 여기서는 글자만 만든다.
 using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
@@ -161,15 +162,29 @@ namespace CtaToybox.App
         }
     }
 
-    // 묶음을 처음에 펼칠지: 작은 묶음만 펼친다. 고칠 수 없는 값은 접는다
+    // 사용자가 펼치거나 접은 묶음. 값을 고쳐 목록을 다시 그려도 그대로 두고, 다른 유닛을 열면 지운다. 키는 "목록|묶음 이름"
+    public static class GroupStates
+    {
+        static readonly Dictionary<string, bool> states = new Dictionary<string, bool>(StringComparer.Ordinal);
+
+        static string Key(string list, object group) { return list + "|" + group; }
+        public static bool? Get(string list, object group) { bool v; return states.TryGetValue(Key(list, group), out v) ? v : (bool?)null; }
+        public static void Set(string list, object group, bool expanded) { states[Key(list, group)] = expanded; }
+        public static void Clear() { states.Clear(); }
+    }
+
+    // 묶음을 펼칠지. 매개변수는 "목록" 또는 "목록|수". 사용자가 펼치거나 접은 묶음은 그대로, 아니면 작은 묶음만 펼친다. 고칠 수 없는 값은 접는다
     public sealed class ExpandSmallGroups : IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var group = value as CollectionViewGroup;
             if (group == null) return true;
+            string[] p = ((string)parameter ?? "").Split('|');
+            bool? kept = GroupStates.Get(p[0], group.Name);
+            if (kept.HasValue) return kept.Value;
             if (string.Equals(group.Name as string, Text.NotEditableGroup, StringComparison.Ordinal)) return false;
-            int limit = parameter == null ? int.MaxValue : int.Parse((string)parameter, CultureInfo.InvariantCulture);
+            int limit = p.Length < 2 ? int.MaxValue : int.Parse(p[1], CultureInfo.InvariantCulture);
             return group.ItemCount <= limit;
         }
 
