@@ -2,6 +2,8 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+**상태:** 구현 끝(2026-10-17). 결과는 설계 문서 "구현 결과".
+
 **Goal:** 종류·경로·키·연산으로 고른 값을 대상 유닛 전부에 한 번에 고치는 규칙을 편집기(코어·명령줄·앱)에 넣는다. 규칙이 만든 수정은 지금의 수정과 같이 점검·빌드된다.
 
 **Architecture:** 계산은 `BulkRules`(코어)가 한다. 대상 유닛을 펼쳐 키가 맞는 값 자리를 모으고, 자리마다 범위와 겹침을 정해 `Edit`을 만든다(`Edit.Rule = id`). 규칙은 `EditProject.Rules`에 남는다. 세션이 넣기·고치기·끄기·지우기·다시 적용·합치기를 맡고, 명령줄 `rule`과 앱 규칙 창은 세션을 부른다.
