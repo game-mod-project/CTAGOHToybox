@@ -1,0 +1,149 @@
+{game_entity
+	(include "/properties/tank__ctb_pgz70_6ad19ad4.ext")
+	
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "vision_lev04" "open_top" "shield" "ammo_open_top_turret"}
+	{extension "pgz70.mdl"}
+	(include "pgz70.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "cannon_aa"}
+	{PatherId "t34"}
+
+	{extender "enumerator"
+		{digit_folder "ru1"}
+	}
+
+	("tank_medium_tier2")
+	("crew_5_human_extended")
+	;("commander_visible")
+
+;==============================================
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_jtiger_driver"} {end "seat_passenger"} {base "open"}}
+			{reverse {end "board_jtiger_driver" -1} {base "open -1"}}
+		}
+		{anm "gunner_r"
+			{forward {begin "board_Kv"} {end "seat_wirbel_gunner"} {base "open1"}}
+			{reverse {end "emit_tank_1_hold"}  {base "open1" -1}}
+		}
+		{anm "gunner_l"
+			{forward {begin "board_Kv"} {end "seat_wirbel_gunner"} {base "open1"}}
+			{reverse {end "emit_tank_1_hold"}  {base "open1" -1}}
+		}
+		{anm "charger_r"
+			{forward {begin "board_tank_right"} {end "seat_wirbel_charger"} {base "open2"}}
+			{reverse {end "emit_tank_1_hold"} {base "open2" -1}}
+		}
+		{anm "charger_l"
+			{forward {begin "board_tank_right"} {end "seat_wirbel_charger"} {base "open2"}}
+			{reverse {end "emit_tank_1_hold"} {base "open2" -1}}
+		}
+		{anm "gunner3_r"
+			{forward {begin "board_Kv"} {end "seat_wirbel_gunner"} {base "open1"}}
+			{reverse {end "emit_tank_1_hold"}  {base "open1" -1}}
+		}
+		{anm "gunner3_l"
+			{forward {begin "board_Kv"} {end "seat_wirbel_gunner"} {base "open1"}}
+			{reverse {end "emit_tank_1_hold"}  {base "open1" -1}}
+		}
+		{anm "charger3_r"
+			{forward {begin "board_tank_right"} {end "seat_wirbel_charger"} {base "open2"}}
+			{reverse {end "emit_tank_1_hold"} {base "open2" -1}}
+		}
+		{anm "charger3_l"
+			{forward {begin "board_tank_right"} {end "seat_wirbel_charger"} {base "open2"}}
+			{reverse {end "emit_tank_1_hold"} {base "open2" -1}}
+		}
+		{anm "commander_r"
+			{forward {begin "board_Kv"} {end "seat_wirbel_charger"} {base "open1"}}
+			{reverse {end "emit_tank_1_hold"} {base "open1" -1}}
+		}
+		{anm "commander_l"
+			{forward {begin "board_Kv"} {end "seat_wirbel_charger"} {base "open1"}}
+			{reverse {end "emit_tank_1_hold"} {base "open1" -1}}
+		}
+	}
+
+	("crew_human" place(driver)		door(emit1)  visor(visor1))
+
+	("crew_human_visible_anm"	place(commander)	door(emit2) visor(around) anm_left(commander_l)	anm_right(commander_r))
+	("crew_human_visible_anm"	place(gunner)		door(emit2) visor(main) anm_left(gunner_l)	anm_right(gunner_r))
+	("crew_human_visible_anm"	place(charger)		door(emit2) visor(none) anm_left(charger_l)	anm_right(charger_r))
+	("crew_human_visible_anm"	place(gunner3)		door(emit3) visor(main) anm_left(gunner3_l)	anm_right(gunner3_r))
+	("crew_human_visible_anm"	place(charger3)		door(emit3) visor(none) anm_left(charger3_l)	anm_right(charger3_r))
+;==============================================
+
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_57 aphe" 40}
+			{item "bulletrus_57 apcr" 15}
+			{item "bulletrus_57 he" 60}
+			{item "satchel_charge_rus" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun1"
+			{RestoreIKAfterAim}
+			{weapon "57mm_pg70_2" filling "bulletrus_57 aphe" 1}
+			{foresight "foresight1"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_aaa"
+				zeroing(3.5)
+				dispersion(0.20)
+			)
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon "57mm_pg70_2" filling "bulletrus_57 aphe" 1}
+			{foresight "foresight2"}
+			{gunner "gunner3"}
+			{charger "charger3"}
+			("abm_dymamic_aaa"
+				zeroing(3.5)
+				dispersion(0.20)
+			)
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 32000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.55))
+		("mobility_tank"
+			speed(55)  ;---------Max speed when fully accelerated on road, km/h.
+			reverse(9.5);---------Max speed in reverse on road, km/h. ;//7.5 historical + 2 due to terrain modifier
+			traverse(36) ;-------Track traverse, per second, in degrees.
+			weight(32.0) ;-------Weight in Tonnes.
+			power(500) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(420) ;----------Fuel capacity in Litres.
+			type(diesel) ;-------Fuel type. (diesel OR fuel)
+			range(210) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{speed2 20}
+	}
+	{bone "turret" 
+		{speed2 25}
+	}
+}

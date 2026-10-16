@@ -1,0 +1,117 @@
+{game_entity
+	(include "/properties/tank__ctb_obj907_c5c08cbc.ext")
+	
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "smoke" "nwg" "diesel"}
+	{extension "obj907.mdl"}
+	(include "obj907.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{PatherId "t34"}
+
+	{extender "enumerator"
+		{digit_folder "ru1"}
+	}
+
+;==============================================
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_jtiger_driver"} {end "seat_gunner_stand"} {base "open"}}
+			{reverse {end "board_jtiger_driver" -1} {base "open -1"}}
+		}
+		{anm "gunner"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"}  {base "open1" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open2" -1}}
+		}
+		{anm "commander"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+	}
+
+	("crew_human" place(driver)		door(emit1)  visor(visor1))
+	("crew_human" place(gunner)		door(emit2) visor(visor2))
+	("crew_human" place(charger)	door(emit2) visor(none))
+	("crew_human" place(commander)		door(emit2) visor(around))
+;==============================================
+
+    {extender "smokescreen"
+        {cooldown 10}
+        {itemTags "mortareng_50 sm"}
+    }
+
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_100 aphe" 23}		;34 rounds
+			{item "bulletrus_100 aphebc" 6}
+			{item "bulletrus_100 he" 25}
+			{item "ammo hmgun_rus ap" 4000}
+            {item "mortareng_50 sm" 12}
+			{item "satchel_charge_rus" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+				{weapon "100mm_d54ts" filling "bulletrus_100 aphe" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun"
+			{type "hull"}
+			{weapon "rusminigun" filled}
+			{foresight "foresight3"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+
+	}
+
+	{mass 32000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.74))
+		("mobility_tank"
+			speed(55)  ;---------Max speed when fully accelerated on road, km/h.
+			reverse(9.5);---------Max speed in reverse on road, km/h. ;//7.5 historical + 2 due to terrain modifier
+			traverse(36) ;-------Track traverse, per second, in degrees.
+			weight(32.0) ;-------Weight in Tonnes.
+			power(500) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(420) ;----------Fuel capacity in Litres.
+			type(diesel) ;-------Fuel type. (diesel OR fuel)
+			range(210) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -5 20}
+		{speed2 5}
+	}
+	{bone "turret" 
+		("turret_medium" power_traverse(19))
+	}
+}

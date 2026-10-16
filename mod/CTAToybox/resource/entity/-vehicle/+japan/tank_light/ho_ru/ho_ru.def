@@ -1,0 +1,155 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_ho_ru_cdae9b7d.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "td" "light" "-turret" "mantlet" "vision_lev03" "muzzle_37mm_47mm"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+	{patherId "panzer38"}
+	{collider "tank.light"}
+	{Extension "type-5-ho-ru.mdl"}
+	
+	{extender "enumerator"
+		{digit_folder "jap"}
+	}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 30}	
+			{left 30}	
+			{right 30}
+			{rear 30}
+			{bottom 12}
+			{top 12}
+		}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 30}	
+			{left 30}	
+			{right 30}
+			{rear 30}
+			{bottom 12}
+			{top 12}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 30}	
+			{left 30}	
+			{right 30}
+			{rear 30}
+			{bottom 12}
+			{top 12}
+		}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 30}	
+			{left 30}	
+			{right 30}
+			{rear 30}
+			{bottom 12}
+			{top 12}
+		}
+	}
+	{Volume "engine"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 30}	
+			{left 30}	
+			{right 30}
+			{rear 21}
+			{bottom 17}
+			{top 17}
+		}
+	}
+	{Volume "mantlet"
+		{thickness 50}
+	}
+		
+
+	("crew_3_human")
+	("crew_human" place(commander) door(emit1) door2(emit2) visor(top))
+	
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"} {base "open1" }}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open1" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"} {base "open2" }}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open2" -1}}
+		}
+		;{anm "right"
+			;{forward	{begin	"board_Is-2"} {end "seat_gunner_stand"}}
+			;{reverse 	{end	"emit_tank_2_hold"}}
+		;}
+		;{anm "armor"
+			;{forward	{begin	"board_highArmor"} 	{end "pose_seat_armor_1"}}
+			;{reverse 	{end	"emit_tank_2"}}
+		;}
+		;{anm "armor1"
+			;{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_2"}}
+			;{reverse 	{end	"emit_body"}}
+		;}
+		;{anm "armor2"
+			;{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			;{reverse 	{end	"emit_body"}}
+		;}
+	}
+
+	
+	{extender "inventory"
+		{box
+			{item "satchel_charge_jap" 1}
+			{item "bulletjap_47 aphe" 48}
+			{item "bulletjap_47 he" 34}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "47mm_type1" filling "bulletjap_47 aphe" 1}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_dymamic_td"
+				zeroing(2.8)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+	}
+
+	{mass 8500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(-0.45))
+		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8);---------Max speed in reverse on road, km/h.
+			traverse(34) ;-------Track traverse, per second, in degrees.
+			weight(8.5) ;-------Weight in Tonnes.
+			power(120) ;---------Engine Power, in hp.
+			track(6) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(153) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(209) ;---------Range in km, off-road.
+		)
+	}
+
+	;{bone "gun_rot"
+		;{limits -6 10}
+		;{speed2 8}
+	;}
+}
+

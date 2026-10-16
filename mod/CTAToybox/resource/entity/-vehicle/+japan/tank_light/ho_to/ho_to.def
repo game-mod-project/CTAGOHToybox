@@ -1,0 +1,95 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_ho_to_97293e8a.ext")
+	(include "/properties/selection/vehicle_elongated.inc" scale(1.1))
+	{props "spg" "light" "-turret" "shell_eject" "mantlet" "multi_board"  "vision_lev04" "muzzle_150mm_155mm" "shield" "open_top" "ammo_open_top" "detect_spg" "diesel" "artillery_minimap_heavy"}
+	{Extension "ho_to.mdl"}
+	(include "ho_to.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{patherId "panzer38"}
+	{collider "tank.light"}
+
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_light"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_body"} {end "pose_flak38-1_charger"}}
+			{reverse {end "emit_tank_1_hold" 1}}
+		}
+		{anm "commander"
+			{forward {begin "board_body"} {end "pose_m42_charger" 10}}
+			{reverse {end "board_big-midcar" -1}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human_visible_anm"	place(driver) 	 door(emit1) door2(emit1) visor(driver) anm_left(driver)  anm_right(driver))
+	("crew_human_visible_anm"	place(commander) door(emit2) door2(emit2) visor(main)	anm_left(commander)	anm_right(commander))
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor2))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_120 he" 11}
+			{item "bulletjap_120 ic" 3}
+			{item "bulletjap_120 heat" 4}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "120mm_type38" filling "bulletjap_120 he" 1}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_dymamic"
+				zeroing(4.5)
+				dispersion(0.25)
+			)
+		}
+	}
+
+	{mass 11500}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.2) len(-0.55))
+		("mobility_tank"
+			speed(47) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(11.5) ;-------Weight in Tonnes.
+			power(120) ;---------Engine Power, in hp.
+			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(218) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(140) ;---------Range in km, off-road.
+		)
+	}
+
+	;{bone "foresight1"
+	;	{limits -5 5}
+	;	{speed2 4}
+	;}
+	{bone "gun_rot"
+		{limits -10 20}
+		{speed2 10}
+	}
+	{bone "basis"
+		{speed2 2}
+	}
+}

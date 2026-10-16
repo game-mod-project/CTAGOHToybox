@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/tank__ctb_vk3001d_d71454d0.ext")
+	
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy"}
+	{extension "vk3001d.mdl"}
+	(include "vk3001d.ext")
+	{PatherId "panzer5"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+	}
+
+	("crew_5_human_extended")
+;	("commander_visible")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_cromwell"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"board_cromwell" -1}}
+		}
+		{anm "right"
+			{forward	{begin	"board_cromwell"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"board_cromwell" -1}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{extender "shield" {on}}
+
+
+	{extender "inventory"
+		{box
+			{item "bulletger_75_l70 apcbche" 27} 	; 52 rounds
+			{item "bulletger_75_l70 he" 25}
+			{item "ammo mgun_ger belt" 4500}		; 32 belts (150 rounds each)
+			{item "geballteladung_3kg" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_kwk42" filling "bulletger_75_l70 apcbche" 1}
+			{gunner "gunner gunner3"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun"
+			{type "coaxial"}
+			{weapon "mg42_tank" filled}
+			{foresight "foresight2"}
+			{gunner "gunner gunner3"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 36000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.94))
+		("mobility_tank"
+			speed(60) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8) ;---------Max speed in reverse on road, km/h. 3.9 + 2kmh
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(36) ;-------Weight in Tonnes.
+			power(700) ;---------Engine Power, in hp. //engine was not yet governed, was in Nov.43 (after panther D production ended)
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(700) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(100) ;---------Range in km, off-road.
+		)
+	}
+}

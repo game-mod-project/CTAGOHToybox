@@ -1,0 +1,98 @@
+{game_entity
+	(include "/properties/tank__ctb_us_m19_ccb7d07c.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "medium" "vision_lev04" "muzzle_37mm_40mm_auto" "flak" "open_top" "shield" "tractor" "tractor_medium" "sq_autocannon"}
+	(include "us_m19.ext")
+	{Extension "us_m19.mdl"}
+  	{PatherId "panzer3"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_zenite"}
+
+  	
+;==============================================
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)	
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_Kv"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "commander"			
+			{forward	{begin	"board_Kv"} {end "seat_driver_car"} {base "open_commander"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_commander" -1}}
+		}		
+		{anm "charger"
+			{forward	{begin	"board_HighArmor"} {end "pose_M19_charger"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner"-1}}
+		}		
+		{anm "gunner"
+			{forward	{begin	"board_HighArmor"} {end "pose_M19_gunner"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner"-1}}
+		}
+	}
+
+	("crew_human" place(driver)	    door(emit1) visor(driver))
+	("crew_human" place(commander)	door(emit0) visor(main))	
+	("crew_human_visible" place(gunner)	    door(emit2) visor(main))
+	("crew_human_visible" place(charger)	door(emit2) visor(main))
+;==============================================
+
+	{extender "inventory"
+		{box
+           		{item "bullet_40x331_auto usa apbc" 300}
+			{item "bullet_40x331_auto usa he" 300}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+        {place "gun"
+	    {RestoreIKAfterAim}
+            {weapon "40mm_m19" filling "ammo bullet_40x331_auto usa apbc" 14}
+            {gunner "gunner"}            
+            {charger "charger"}
+            {Barrels 2}
+			("abm_dymamic_aa"
+				zeroing(1.95)
+				dispersion(0.24)
+			)
+       		 }
+	}    
+	
+	{sensor
+		{visor "gunner"
+		    {vision "tank_main-l"}
+			{bone "visor1"}
+		}
+		{Visor "driver"
+            {vision "tank_driver"}
+            {bone "visor2"}
+		}
+	}
+
+	{mass 17463}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.49))
+       		("mobility_tank"
+			speed(56) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(38) ;-------Track traverse, per second, in degrees.
+			weight(17.5) ;-------Weight in Tonnes.
+			power(220) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(420) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(241) ;---------Range in km, off-road.
+		)
+	}
+	{bone "turret"
+		{speed2 30}
+	}
+}

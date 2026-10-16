@@ -1,0 +1,115 @@
+{game_entity
+	(include "/properties/tank__ctb_ka_chi_pontoons_3172cfae.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "medium" "vision_lev04" "muzzle_37mm_47mm" "diesel" "amphibia" "detect_tank_medium" "toggle_back_mg" "sq_armor_medium"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{patherId "panzer3"}
+	{collider "tank.medium"}
+	{Extension "ka_chi_pontoons.mdl"}
+	(include "ka_chi_pontoons.ext")				
+
+;==============================================crew==============================================
+
+	("crew_7_human")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_tank_right"} {end "seat_commander_hatch"} {base "open_pontoons"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_pontoons" -1}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_left"} {end "seat_commander_hatch"} {base "open_pontoons"}}
+			{reverse 	{end	"emit_tank_2_hold"}  {base "open_pontoons" -1}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+;================================================================================================
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_47 aphe" 56}	
+			{item "bulletjap_47 ap" 23}	
+			{item "bulletjap_47 he" 30}	
+			{item "ammo mgun_jap" 3000}
+			{item "10kg_naval_smoke_candle_grenade" 3}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "47mm_type1" filling "bulletjap_47 aphe" 1}
+			{gunner "gunner"}
+			{charger "gunner3"}
+			("abm_dymamic"
+				zeroing(2.5)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun2"
+			{type "rear"}
+			{weapon "type_97" filled}
+			{foresight "foresight5"}
+			{gunner "charger2"}
+			{charger "charger charger3"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+        }
+	{mass 26500}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(0.49))
+       		("mobility_tank"
+			speed(35) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(25) ;-------Track traverse, per second, in degrees.
+			weight(26.5) ;-------Weight in Tonnes.
+			power(240) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(889) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(210 ) ;---------Range in km, off-road.
+		)
+		{switch
+			{exitFromWater}
+			{terrain not "water" "deep_water"}
+		}
+	}
+	{chassis "water"
+		("chassis_defaults")
+		(mod not "mp" {ignorePatherBounds})
+		{waterline 1.5}
+		{switch
+			{terrain "water" "deep_water"}
+		}
+	}
+	{bone "turret"
+		("turret_medium" power_traverse(10))
+	}
+	{bone "gun_rot"
+		{speed2 8}
+		{limits -5 15}
+	}
+	{bone "mgun_rot1"
+		{limits -10 10}
+	}
+	{bone "mgun_rot2"
+		{limits -10 10}
+	}
+	{bone "mgun_rot3"
+		{limits -10 10}
+	}
+	{bone "mgun_rot4"
+		{limits -10 10}
+	}
+}

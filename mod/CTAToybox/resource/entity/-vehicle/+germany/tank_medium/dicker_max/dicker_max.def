@@ -1,0 +1,103 @@
+{game_entity	
+	(include "/properties/tank_assaultgun__ctb_dicker_max_e67bb981.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "td" "medium" "-turret" "open_top" "ammo_open_top" "vision_lev04" "muzzle_100mm_105mm" "shell_eject" "detect_td_medium" "sq_at_gun"}
+	{PatherId "panzer3"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	(include "dicker_max.ext")
+
+	{extender "shield"
+			{on}
+	}
+	
+	
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)	
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_HighArmor"} {end "seat_driver_car"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "charger2"			
+			{forward	{begin	"board_Kv"} {end "seat_driver_car"} {base "open_driver2"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver2" -1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_Kv"} {end "seat_driver_car"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "commander"			
+			{forward	{begin	"board_Kv"} {end "pose_nashorn_charger"} {base "open_commander"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_commander" -1}}
+		}
+	}
+
+	("crew_human" 	      place(driver)	door(emit4) visor(driver))
+	("crew_human_visible" place(charger)	door(emit2) visor(main))
+	("crew_human" 	      place(charger2)	door(emit5) visor(main))
+	("crew_human_visible" place(gunner)	door(emit3) visor(main))
+	("crew_human_visible" place(commander)	door(emit1) visor(main))
+	
+
+	{extender "inventory"
+		{box
+			{item "bulletger_105 aphe" 8}
+			{item "bulletger_105 apcbche" 10}
+			{item "bulletger_105 he" 8}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "105mm_K18" filling "bulletger_105 aphe" 1}
+			{gunner "gunner" minWorkers 1}
+			{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_td"
+				zeroing(3.5)
+				dispersion(0.25)
+			)
+		}
+	}
+
+	{mass 22000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(-1.05))
+		("mobility_tank"	
+			speed(28)  ;---------Max speed when fully accelerated on road, km/h.
+			reverse(6);----------Max speed in reverse on road, km/h.
+			traverse(15) ;-------Track traverse, per second, in degrees.
+			weight(22) ;-------Weight in Tonnes.
+			power(180) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(310) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(95) ;----------Range in km, off-road.
+		)
+	}
+
+	{Extension "dicker_max.mdl"}
+
+	{bone "gun_rot"
+		{speed2 4}
+		{limits 13 -20}
+	}
+	{bone "turret"
+		{speed2 5}
+		{limits 6 -6}
+	}
+}
+

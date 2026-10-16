@@ -1,0 +1,140 @@
+{game_entity
+	(include "/properties/tank__ctb_type_92_hac_late_9c2d554d.ext")
+	
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "light" "vision_lev03" "diesel" "tractor" "tractor_medium" "detect_tank_mg" "sq_mg"}
+	(include "type_92_hac_late.ext")
+	{extension "type_92_hac_late.mdl"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_bullet"}
+	{patherId "t26"}
+	{collider "tank.light"}
+
+	("crew_3_human_2_extended")
+	("gunner_open" place(gunner2) bone(gunner2) visorbone(mgun_rot) door(emit5) door2(emit5) anm_left(gunner2) anm_right(gunner2) group(passenger))
+	("crew_human" place(commander) door(emit1) door2(emit2) visor(main1))
+	("crew_human" place(gunner) door(emit1) door2(emit2) visor(main2))
+
+	{boarder
+		{anm "left"
+			{forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_gunner"}}
+			{reverse {end "emit_t34_hold"} {base "open_gunner" -1}}
+		}
+		{anm "right"
+			{forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse {end "emit_t34_hold"} {base "open_driver" -1}}
+		}
+		{anm "armor"
+			{forward {begin "board_LowArmor"} {end "seat_armor"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "driver"
+			{forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_commander"}}
+			{reverse {end "board_t26_driver" -1} {base "open_commander" -1}}
+		}
+		{anm "gunner2"
+			{forward {begin "board_HighArmor"} {end "cannon_small_charger"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit5)  animation(armor))
+
+	{sensor
+		{visor "main1"
+			{vision "tank_main_mg"}
+			{bone "foresight6"}
+		}
+	}
+	{sensor
+		{visor "main2"
+			{vision "tank_main_mg"}
+			{bone "foresight5"}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo type38_ammo clip" 3500}		;105 drums
+			{item "ammo type93_magazine ap" 2500}		;105 drums
+			{item "ammo mgun_jap" 3500}		;105 drums
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "mgun2"
+			{type "main"}
+			{weapon "type93_fixed" filling "ammo type93_magazine ap" 30}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun3"
+			{type "coaxial"}
+			{weapon "type_97" filling "ammo mgun_jap" 20}
+			{foresight "foresight6"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun"
+			{type "aa"}
+			{weapon "type_91" filling "ammo type38_ammo clip" 30}
+			{foresight "foresight3"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 3500}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.2) len(-0.37))
+		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(15) ;--------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(3.5) ;--------Weight in Tonnes.
+			power(45) ;----------Engine Power, in hp.
+			track(7.0) ;---------Track performance: [0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(182) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(200) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"
+		("turret_light" power_traverse(10)) ;// manual
+	}
+	{bone "mgun1_rot1"
+		{limits -10 10}
+	}
+	{bone "mgun1_rot2"
+		{limits -10 10}
+	}
+	;{bone "mgun2_rot1" ;left and right disable for mgun on turret
+	;	{limits -10 10}
+	;}
+	{bone "mgun2_rot2"
+		{limits -10 10}
+	}
+	{bone "mgun3_rot1"
+		{limits -15 15}
+	}
+	{bone "mgun3"
+		{limits -10 70}
+	}
+}

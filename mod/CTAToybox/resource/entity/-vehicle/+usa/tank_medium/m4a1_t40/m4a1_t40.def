@@ -1,0 +1,136 @@
+{game_entity
+	(include "/properties/tank__ctb_m4a1_t40_e4e66391.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "medium" "vision_lev04" "rocket" "muzzle_75mm_76mm" "captor" "detect_artillery" "artillery_minimap_medium_2" "sq_he_large"}
+	{extension "m4a1_t40.mdl"}
+	(include  "m4a1_t40.ext")
+	{PatherId "sherman"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+	("crew_5_human_extended2")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_m4_driver"} {end "seat_m4_gunner"} {base "open_driver1"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver"}}
+		}
+		{anm "co_driver"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"} {base "open_driver2"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_co_driver"}}
+		}
+		{anm "left"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_m4_crew"} {end "seat_m4_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+	}
+
+	
+	("seat_human" place(seat3) bone(seat03) door(emit6) animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit7) animation(armor2))
+
+	{extender "inventory"
+		{box
+			{item "bulletusa_75x350 ap" 17}			;90 rounds ;20,70,10% AP,HE,WP
+			{item "bulletusa_75x350 he" 63}
+			{item "bulletusa_75x350 wp" 9}
+			{item "ammo mgun_usa belt" 4250}		
+			{item "ammo 182mm_t91 he2" 20}	
+			{item "satchel_charge_usa" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_m3" filling "ammo bulletusa_75x350 ap" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3)
+				dispersion(0.3)
+			)
+		}
+		{place "rocket"
+			{RestoreIKAfterAim}
+			{Barrels 20}
+			{weapon "182mm_t40_whizbang" filling "ammo 182mm_t91 he2" 20}
+			{gunner "commander"}
+			{charger "commander"}
+			{foresight "foresight2"}
+			("abm_dymamic_rocket"
+				zeroing(10.0)	; // time it takes to aim until the reticle shrinks. Bigger values, more control.
+				dispersion(1)	; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
+			)
+			{StationaryFiring}
+			{basic}
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 32570} 	;+1ton rocket system
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(1.0))
+		("mobility_tank"
+			speed(38) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(30.6) ;-------Weight in Tonnes.
+			power(350) ;---------Engine Power, in hp.
+			track(4) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(660) ;----------Fuel capacity in Litres.
+			type(fuel) ;-------Fuel type. (diesel OR fuel)
+			range(190) ;---------Range in km, off-road.
+		)
+		{DisableMoveWhileFiring}
+	}
+
+	{bone "gun_rot"
+		{limits -10 25}
+		{speed2 5}
+	}
+	{bone "arms_connector"
+		{limits -10 25}
+		{speed2 5}
+	}
+	{bone "turret"
+		("turret_heavy" power_traverse(24))
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

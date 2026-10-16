@@ -1,0 +1,137 @@
+{game_entity
+	(include "/properties/tank__ctb_zhane_22ae142f.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "shield"}
+	{Extension "zhane.mdl"}
+	(include "zhane.ext")
+	{PatherId "panzer3"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+	}
+
+	;==============================================
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_jtiger_driver"} {end "seat_gunner_stand"} {base "open"}}
+			{reverse {end "board_jtiger_driver" -1} {base "open -1"}}
+		}
+		{anm "gunner"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"}  {base "open1" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+		{anm "commander"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "armor"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human" place(driver)		door(emit1)  visor(visor1))
+	("crew_human" place(gunner)		door(emit2) visor(visor2))
+	("crew_human" place(charger)	door(emit2) visor(none))
+	("crew_human" place(commander)		door(emit1) visor(around))
+
+	("seat_human" place(seat1) bone(seat1) door(emit5)  animation(armor))
+	("seat_human" place(seat2) bone(seat2) door(emit6)  animation(armor))
+;==============================================
+
+	{extender "shield" {on}}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade nbks"}
+	}
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bulletger_128 apcbche" 32} 	
+			{item "bulletger_128 he" 30}
+			{item "bulletger_20_auto ap" 300} 
+			{item "bulletger_20_auto he" 300}
+			{item "geballteladung_3kg" 1}
+			{item "nbks grenade" 6}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128oto" filling "ammo bulletger_128 apcbche" 3}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "gun1"
+			{type "coaxial"}
+			{weapon "20mm_flak38" filling "ammo bulletger_20_auto ap" 20}
+			{foresight "foresight2"}
+			{gunner "commander"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "gun2"
+			{type "coaxial"}
+			{weapon "20mm_flak38" filling "ammo bulletger_20_auto ap" 20}
+			{foresight "foresight3"}
+			{gunner "commander"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 45500}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.14))
+		("mobility_tank"
+			speed(46) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(5.3) ;-------Max speed in reverse on road, km/h. 3.3 + 2kmh
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(45.5) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(700) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(100) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{speed2 4}
+	}
+	{bone "turret"
+		("turret_medium" power_traverse(20))
+	}
+}

@@ -1,0 +1,127 @@
+{game_entity
+	(include "/properties/tank__ctb_t7_combat_car_c8dbd2bd.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(0.7))
+	{props "light" "vision_lev02" "tractor" "detect_tank_mg" "tractor_medium" "sq_mg"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+	{patherId "stuart"}
+	{collider "tank.light"}
+	(include "t7_combat_car.ext")
+
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_light"}
+			{bone "visor1"}
+		}
+	}
+	
+	;("armor_heavy" turret(15 15 15 15) body(15 12 12 6) body2(15 12 12 6))
+	;("armor_engine"  t(10 20 20 10))		
+	;("armor_mantlet" t(15))
+	
+	("crew_4_human")
+	("gunner_open" place(gunner2) bone(gunner2) visorbone(mgun_rot) door(emit1) door2(emit2) anm_left(gunner2) anm_right(gunner2) group(passenger))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}{end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}{end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "gunner2"
+			{forward {begin "board_MiddleArmor"} {end "pose_m24_gunner"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+
+	{extender "shield"
+		{on}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo mgun_usa belt" 6250}		; 20 boxes
+			{item "ammo hmgun_usa" 1000}			; 10 boxes
+			{item "satchel_charge_usa" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "mgun"
+			{RestoreIKAfterAim}
+			{weapon "browning_m2" filled}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun2"
+			{type "hull"}
+			{weapon "browning_m19a4_tank" filled}
+			{foresight "foresight5"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{ai_in_manual}
+			{basic}
+		}
+		{place "mgun1"
+			{type "coaxial"}
+			{weapon "browning_m19a5" filled}
+			{foresight "foresight4"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun3"
+			{type "aa"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight6"}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			("abm_mgun")
+			{ai_in_manual}
+			{basic}
+		}
+
+	}
+	{mass 18200}
+	{Chassis "track"
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.57))
+		("mobility_tank"
+			speed(56) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(26) ;--------Max speed in reverse on road, km/h.
+			traverse(40) ;-------Track traverse, per second, in degrees.
+			weight(2.7) ;--------Weight in Tonnes.
+			power(100) ;----------Engine Power, in hp.
+			track(7) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(42) ;-----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(120) ;----------Range in km, off-road.
+		)
+	}
+	
+	{Extension "t7_combat_car.mdl"}
+
+	{bone "turret"
+		;{limits -15 175}
+		{speed 0.01}
+	}
+	{bone "gun_rot"
+		{limits -20 10}
+		{speed 0.01}
+	}
+
+        
+}
+

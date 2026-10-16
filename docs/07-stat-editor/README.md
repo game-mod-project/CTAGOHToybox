@@ -189,6 +189,7 @@ ctatoybox build --project editor/projects/월드워.json
 - 지우는 것은 이전 빌드가 `.ctatoybox-build.json`에 적어 둔 파일뿐이다. 손으로 넣은 파일은 그대로 둔다.
 - `.ctatoybox-build.json`이 깨져 읽히지 않으면 빌드는 아무것도 쓰거나 지우지 않고 멈춘다(그대로 빌드하면 이전 생성물의 기록을 잃는다). 출력 폴더의 `resource` 아래에서 이전 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다.
 - 수정을 모두 끄고 빌드하면 생성물이 모두 사라진다.
+- 생성물과 `.ctatoybox-build.json`은 git에 넣는다(2026-10-17). 다시 빌드하면 함께 커밋한다. `builtAt` 때문에 목록 파일은 빌드마다 바뀐다. `.gitattributes`가 생성물의 줄바꿈을 바이트 그대로 둔다.
 
 ## 알려진 한계
 
