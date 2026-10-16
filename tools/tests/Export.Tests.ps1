@@ -45,6 +45,7 @@ New-Pak (Join-Path $src 'a_gamelogic.pak') @{
     'map/m.mi'       = (B '{mission}')
     'set/cyr.set'    = $nonAscii
     'set/img.pdn'    = (B 'PDN3<pdnImage width="4"><layers>')   # 이미지 편집기 파일: 앞부분은 글자지만 텍스트 정의가 아니다
+    'set/over.set'   = (B '{o 1}')                               # D16: 같은 경로의 낱개 파일이 이긴다
 }
 New-Pak (Join-Path $src 'b_dup.pak') @{
     'set/a.set'    = (B '{a 2}')
@@ -63,6 +64,7 @@ foreach ($pair in @(@("set/../../$escapeName", '{x 1}'), @('set/run.log', 'Error
 $za.Dispose(); $zs.Dispose()
 [IO.Directory]::CreateDirectory((Join-Path $src 'set\loose')) | Out-Null
 [IO.File]::WriteAllBytes((Join-Path $src 'set\loose\c.set'), (B '{c 3}'))
+[IO.File]::WriteAllBytes((Join-Path $src 'set\over.set'), (B '{o 2}'))
 
 pwsh -NoProfile -File "$PSScriptRoot/../Export-PakText.ps1" -SourceRoot $src -OutDir $out -DataDir $data | Out-Null
 Assert-Equal 0 $LASTEXITCODE 'extractor exit code'
@@ -85,6 +87,10 @@ Assert-Equal 'vehicle' (@($idx | Where-Object VirtualPath -eq 'entity/-vehicle/t
 Assert-Equal '-vehicle/T/T.def' (@($idx | Where-Object VirtualPath -eq 'entity/-vehicle/t/t.def')[0].OriginalPath.Split('/', 2)[1]) 'original case kept'
 
 Assert-Equal '{a 1}' ([IO.File]::ReadAllText((Join-Path $out 'set\a.set'))) 'first copy wins on disk'
+# D16: 한 모드 안에서 pak과 낱개 파일이 겹치면 게임은 낱개 파일을 쓴다(ingame-check.md 일괄 확인 8번)
+Assert-Equal 'text' (St 'set/over.set' 'loose') 'a loose file over a pak entry is the text that counts'
+Assert-Equal 'collision' (St 'set/over.set' 'a_gamelogic.pak') 'the pak entry under a loose file is marked as colliding'
+Assert-Equal '{o 2}' ([IO.File]::ReadAllText((Join-Path $out 'set\over.set'))) 'the loose file wins on disk'
 Assert-Equal $nonAscii ([IO.File]::ReadAllBytes((Join-Path $out 'set\cyr.set'))) 'non-ascii bytes preserved'
 Assert-Equal $false (Test-Path -LiteralPath (Join-Path $out 'map\m.mi')) 'out-of-scope not extracted'
 Assert-Equal 4 @(Import-Csv (Join-Path $data 'pak-summary.csv')).Count 'pak summary rows'
