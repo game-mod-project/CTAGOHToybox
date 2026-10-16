@@ -145,6 +145,10 @@ static class RealFilesCheck
         T.Eq(0, fromWrongSlot, "every editable inherited value names the slot that holds that token");
         T.Eq(riflePattern, k98Trace.From.Count > 0 ? k98Trace.From[0].File : null, "the K98 inherits rifle.pattern, as measured");
         T.True(index.UsersOf(riflePattern).Count > 50, "and rifle.pattern counts its inheritors as users");
+        // .presets가 include한 파일(Q16): rifle/.presets의 \set\small_firearms_accuracy.inc를 읽는 유닛
+        const string accuracyInc = "set/small_firearms_accuracy.inc";
+        Console.WriteLine("accuracy-inc-users=" + index.UsersOf(accuracyInc).Count);
+        T.True(index.UsersOf(accuracyInc).Count > 100, "a file a folder's .presets includes counts the units that read it (Q16)");
 
         // 게임 설정(하위 프로젝트 B): 맨 위 파일이 모두 읽히고, 같은 값으로 고쳐도 바이트가 같고, 문자열 속 설정은 나눴다 이으면 같다
         int settingFiles = 0, settingUnread = 0, luaRows = 0, luaMismatch = 0, pieceStrings = 0, pieceMismatch = 0, settingWrongSlot = 0;
