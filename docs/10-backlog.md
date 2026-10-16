@@ -11,15 +11,10 @@
 
 | ID | 내용 | 출처 | 메모 |
 |---|---|---|---|
-| P1 | 하위 프로젝트 C(스폰 모드 대체)를 시작할지 | 스펙 A 20행 | 기존 Spawn Menu 동작 조사(spike)부터. 크기 L |
-| P2 | 원 요청 4번 "추가 기능 검토" | 스펙 A 12행 | 후보는 아래 8절 "범위 밖으로 정한 것". 사용자 우선순위가 필요 |
-| P3 | 릴리스 `develop` → `main` | H15 | `main`은 5095791, develop이 220커밋 앞(2026-10-17) |
-| P4 | 대형 모드 비교(Hotmod 1968 등 6개) | `docs/09` 77행 | 보류(2026-10-15). 구독하면 모드 분석 도구로 비교 |
-| P5 | 병합이 끝난 로컬 브랜치 정리 | H15 | 2026-10-17 남은 것 21개: `chore/backlog-drop-ingame`, `docs/d1-annotations`, `docs/e18-built`, `docs/e18-spec`, `docs/g19-fourth`, `docs/handoff-2026-10-16-night`, `docs/r1-r2-research`, `docs/research-r3-r5-r6-d2`, `docs/wg3-results`, `docs/wg4-results`, `feat/e14-inherited-unit-scope`, `feat/e16-edit-titles`, `feat/e17-project-merge`, `feat/e18-class-vision`, `feat/e4-macro-swap`, `feat/w-d-usability`, `feat/w-h-rules`, `fix/e15-from-display`, `fix/q5-q8-q12`, `fix/w-h-expansion`, `perf/key-index`(모두 develop에 병합됨). 지워도 된다 |
-| P6 | 빌드 생성물과 `.ctatoybox-build.json`을 git에 넣을지 | H13 56행 | 지금은 추적하지 않는다. 넣으면 `builtAt` 때문에 빌드마다 diff |
-| P7 | 테스트에 외부 프레임워크(xUnit 등)를 써도 되는지 | H13 86행 | 답 없음. 지금은 자체 `T.Eq` |
-| P8 | Yandex Disk의 러시아어 GEM2 문서 묶음을 받아 볼지 | H13 85행 | 답 없음 |
-| P9 | 확인 중 만든 컨퀘스트 캠페인 "Conquest 3" 처리 | `ingame-check.md` 게임 설정 절 | 시작 자원이 수정 값(MP 9137)이다 |
+| P1 | 하위 프로젝트 C(스폰 모드 대체)를 시작할지 | 스펙 A 20행 | **대기**(사용자 2026-10-17). 시작하면 기존 Spawn Menu 동작 조사(spike)부터. 크기 L |
+| P2 | 원 요청 4번 "추가 기능 검토" | 스펙 A 12행 | **진행**(사용자 2026-10-17). 후보 12개와 권하는 순서를 `docs/11-feature-review.md`에 적었다(1순위 일괄 규칙, 2순위 SDL 원문 주석, 3순위 무기·탄약 복제). 어느 것을 할지 사용자가 고른다 |
+| P4 | 대형 모드 비교(Hotmod 1968 등 6개) | `docs/09` 77행 | **보류**(사용자 2026-10-15, 2026-10-17 다시 보류). 구독하면 모드 분석 도구로 비교 |
+| P8 | Yandex Disk의 러시아어 GEM2 문서 묶음을 받아 볼지 | H13 85행 | **받아서 확인**(사용자 2026-10-17). 주소가 기록에 없다. 옛 Best Way 위키 보존본, xgm.guru 글, 웹 검색으로 찾지 못했다. 사용자가 주소를 알려 주면 받아서 확인한다 |
 
 ## 2. 게임 안 확인
 
@@ -67,9 +62,9 @@
 | **W-F 뜻 채우기** | D1 나머지(저장소 자료로는 근거 없음. 웹의 개발사 문서로만 더 찾을 수 있다) | AI(웹 조사) | M | 근거를 찾은 것만 등급을 올린다. 못 찾으면 `미확인`으로 둔다 |
 | **W-I 조사** | R6, R1(Discord, 사용자 계정 필요) (R2·R3·R5는 2026-10-16에 끝냈다) | AI(웹) + 사용자(로그인) | S씩 | `docs/09`에 읽은 결과를 더한다 |
 | **W-J 하위 프로젝트 C** | P1 | AI + 사용자 결정 | L | spike → 스펙 → 플랜 |
-| **W-K 추가 기능 검토** | P2, 8절 (E4는 2026-10-16에 끝냈다) | 사용자 우선순위 → AI 설계 | L | 후보를 고른 뒤 스펙 |
+| **W-K 추가 기능 검토** | P2: `docs/11-feature-review.md`에서 사용자가 고른 후보 (E4는 2026-10-16에 끝냈다) | 사용자 우선순위 → AI 설계 | L | 후보를 고른 뒤 스펙 |
 
-남는 결정(P3–P9)은 작업과 따로 사용자에게 묻는다.
+남는 결정(P1, P2의 후보 고르기, P4, P8의 주소)은 작업과 따로 사용자에게 묻는다.
 
 **권하는 순서**(2026-10-17): 편집기 품질·기능(Q, E)과 조사 대부분(D2, R2·R3·R5)은 끝났다. 남은 AI 작업은 W-F(D1 나머지)와 W-I(R6)뿐이고, R1(Discord)은 사용자 계정이 있어야 한다. W-J·W-K는 사용자가 고른 순서로 시작한다. 게임 안 확인은 하지 않는다(사용자 2026-10-16).
 
@@ -128,3 +123,8 @@
 | 미확인 키 49건(D1 일부) | `docs/d1-annotations`(2026-10-16): `common.psv` 26(확인 5·추정 21)·`values.psv` 20·`settings.psv` 1·`weapon-ammo.psv` 2를 바닐라 주석과 구조, 게임 확인 기록으로 올렸다. 예: `/from/swayparams/speed`(흔들림 속도 계수), `firingtimeoutdistancefactor`(거리별 사격 지연 배수 표), `**/damage/damage`(성형작약 수류탄 관통 mm), `/game/order`. R3의 환경 거리 키 셋도 같이 넣었다. 유닛 문서·수정 가능한 속성 문서를 다시 만들었다(`keys-missing=0`) |
 | CHANGE-LOG 2·4·5쪽·옛 공지·Nexus(R1 일부), Steam 가이드 52건(R2) | `docs/r1-r2-research`(2026-10-16): `docs/09` "추가 조사"에 표로 넣었다. 개발자 글 45개와 공지 43건에서 모딩 항목을 뽑고 바닐라에 파일·키가 있는지 대조했다. 찾은 것: `pather.set`·`obstacle.reg` 변경은 Update 67이 처음(표 고침), 콘퀘스트 지속성 `{DynCmpPersistent}`·`{mark_for_persistence}`(바닐라에 있음), `teamsize_cp_factor`(바닐라 `battle_zones.set` 주석과 같음). 콘퀘스트 AI 로스터 가이드는 `conquest.<진영>.lua`의 `priority`를 고치라 하지만 지금 그 파일에는 없다(early·mid·late 파일에는 남아 있다). 러시아어 무기 가이드(3564691426)의 `armor_health`·`spotting_range` 등은 바닐라에 없다 |
 | 월드워 차종별 시야·탐지(E18) | `feat/e18-class-vision`(2026-10-16): 블록 복제 수정 종류(앱·명령줄·점검·빌드)와 `vision-preset --classes`. 시야 r 중전차 1.5(그대로)·중형 1.65·경전차 1.8·차량 1.8, 탐지 uncover 100·115·130·145. 프로젝트 `editor/projects/월드워-차종.json`(수정 601건, 경전차 161·중형 289대, 차량 파일 3). 출력 모드 빌드와 게임 확인은 하지 않았다. 거리 안개(`haze`)는 하지 않는 것으로 정했다 |
+| 릴리스 `develop` → `main`(P3) | 2026-10-17 사용자 결정 "진행": 로컬 `git merge --no-ff develop`으로 main에 넣었다(원격 저장소 없음) |
+| 병합이 끝난 로컬 브랜치(P5) | 2026-10-17 "정리": develop에 병합된 브랜치 22개를 지웠다(`git branch -d`). `develop`·`main`만 남았다 |
+| 빌드 생성물을 git에 넣을지(P6) | 2026-10-17 "추가": `mod/CTAToybox/resource`와 `.ctatoybox-build.json`을 추적한다. `.gitattributes`로 바이트를 그대로 둔다(`chore/track-build-output`) |
+| 외부 테스트 프레임워크(P7) | 2026-10-17 "사용": `editor/CtaToybox.Core.XunitTests`가 자체 테스트 묶음 47개를 xUnit으로 돌린다. `Run-Tests.ps1`은 `dotnet test`를 쓴다(`chore/xunit-tests`) |
+| 확인용 컨퀘스트 캠페인(P9) | 2026-10-17 "정리": "Conquest 3"은 저장 파일이 이미 없었다. 확인용 `ctatoybox check.sav`·`ctatoybox check2.sav`는 지우지 않고 `_work/ingame/campaign-archive/`로 옮겼다. 사용자 캠페인 conquest 1·2는 그대로다 |
