@@ -110,7 +110,7 @@ static class RealFilesCheck
         T.Eq(ItemLinks.RuleFirstByName + " set/stuff/mgun/mgun_ger.belt.ammo", family.Rule + " " + family.Files[0], "the family name goes to the file the game picked (G5)");
 
         // 원형 상속(E11): 아이템 파일의 {from} 이름이 모두 파일로 이어지고, 물려받은 값의 자리가 그 파일 그 자리의 글자인지
-        int fromUnits = 0, fromProblems = 0, inherited = 0, fromWrongSlot = 0;
+        int fromUnits = 0, fromProblems = 0, inherited = 0, fromWrongSlot = 0, appendable = 0, appendBad = 0;
         var fromStates = new Dictionary<string, int>(StringComparer.Ordinal);
         var fromExamples = new List<string>();
         foreach (var u in index.Units.Where(x => x.Kind == "stuff" || x.Kind == "pattern"))
@@ -124,6 +124,15 @@ static class RealFilesCheck
             foreach (var row in t.Rows.Where(r => r.From != null))
             {
                 fromStates[row.FromState] = (fromStates.TryGetValue(row.FromState, out int n) ? n : 0) + 1;
+                // E14: '이 유닛만'으로 덧붙일 수 있는 줄은 덧붙일 줄이 한 줄로 다시 읽히고 값이 같아야 한다
+                if (UnitScope.InheritedBlocker(t, row) == null)
+                {
+                    appendable++;
+                    string line = UnitScope.AppendLine(row, new Edit[0]);
+                    var back = KeyLocator.Rows(SdlCore.Parse("{from " + line + "}").Root).Where(r => r.Path != "/from").ToList();
+                    if (back.Count != 1 || back[0].Path != row.Path || !back[0].Leaves.Select(l => l.Text).SequenceEqual(row.Values.Select(v => v.Text)))
+                    { appendBad++; if (fromExamples.Count < 20) fromExamples.Add("append: " + u.Path + " " + line); }
+                }
                 foreach (var v in row.Values.Where(x => x.Arg >= 0))
                 {
                     inherited++;
@@ -137,11 +146,12 @@ static class RealFilesCheck
         const string k98 = "set/stuff/rifle/k98", riflePattern = "set/stuff/rifle/rifle.pattern";
         var k98Trace = tracer.Trace(k98);
         Console.WriteLine("from-units=" + fromUnits + " from-problems=" + fromProblems + " inherited-values=" + inherited + " from-wrong-slot=" + fromWrongSlot +
-                          " states=" + string.Join(",", fromStates.OrderBy(k => k.Key).Select(k => k.Key + ":" + k.Value)) +
+                          " states=" + string.Join(",", fromStates.OrderBy(k => k.Key).Select(k => k.Key + ":" + k.Value)) + " unit-appendable=" + appendable + " append-bad=" + appendBad +
                           " k98-chain=" + string.Join(" > ", k98Trace.From.Select(l => l.File)) + " rifle.pattern-users=" + index.UsersOf(riflePattern).Count);
         foreach (string e in fromExamples) Console.WriteLine("  " + e);
         T.True(fromUnits > 2000, "the item files that inherit were traced");
         T.Eq(0, fromProblems, "every {from} name in the game's item files leads to a file, without a cycle");
+        T.Eq(0, appendBad, "every inherited row that can be unit-scoped makes a line that reads back the same (E14)");
         T.Eq(0, fromWrongSlot, "every editable inherited value names the slot that holds that token");
         T.Eq(riflePattern, k98Trace.From.Count > 0 ? k98Trace.From[0].File : null, "the K98 inherits rifle.pattern, as measured");
         T.True(index.UsersOf(riflePattern).Count > 50, "and rifle.pattern counts its inheritors as users");

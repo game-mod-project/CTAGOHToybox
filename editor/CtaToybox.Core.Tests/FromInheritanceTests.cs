@@ -107,7 +107,7 @@ static class FromInheritanceTests
         var vRifleMass = view.Rows.Single(r => r.Path == "/from/mass" && r.From == Rifle);
         T.Eq("무게", vRifleMass.SummaryLabel, "an inherited row is in the summary");
         T.Eq(2, vRifleMass.Values[0].SharedBy, "shared by the pattern and its inheritor");
-        T.True(vRifleMass.Values[0].UnitScopeBlocker != null && vRifleMass.Values[0].UnitScopeBlocker.Contains("원형"), "an inherited value cannot be unit-scoped");
+        T.True(vRifleMass.Values[0].UnitScopeBlocker == null, "a plain inherited key can be unit-scoped by appending it to the child (E14)");
         T.Eq("원형 rifle.pattern에서 물려받는다", vRifleMass.FromLabel, "the inherited label");
         var vBulletMass = view.Rows.Single(r => r.Path == "/from/mass" && r.From == Bullet);
         T.True(vBulletMass.SummaryLabel == null, "an overridden row is not in the summary");
@@ -133,7 +133,7 @@ static class FromInheritanceTests
         T.Eq("/from/mass", added.Path, "at the parent's own key path");
         session.RefreshEdits(view);
         T.True(vRifleMass.Values[0].Edit != null, "and shows on the inherited row");
-        T.Throws<System.ArgumentException>(() => session.AddEdit(view, vRifleMass.Values[0], "4.6", "unit"), "unit scope is refused");
+        T.Throws<System.ArgumentException>(() => session.AddEdit(view, view.Rows.Single(r => r.Path == "/from/inventory/weight").Values[0], "11", "unit"), "unit scope is refused for an unconfirmed inherited row");
 
         // 명령줄도 같다: 원형으로 쓰이는 유닛의 '이 유닛만'은 막는다
         var cliOut = new StringWriter();

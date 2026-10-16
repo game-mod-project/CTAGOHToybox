@@ -134,7 +134,7 @@ namespace CtaToybox.Core
         public void Rebase(Edit edit)
         {
             NeedProject();
-            var check = Check(edit, new Dictionary<string, SourceCheck>(StringComparer.Ordinal), output => null);
+            var check = Check(edit, new Dictionary<string, SourceCheck>(StringComparer.Ordinal), output => null, tracer.Trace);
             if (check.Current == null) return;
             string before = edit.Old;
             edit.Old = check.Current;
@@ -146,10 +146,12 @@ namespace CtaToybox.Core
             if (Project == null) return new List<EditCheck>();
             var parsed = new Dictionary<string, SourceCheck>(StringComparer.Ordinal);
             var conflict = new ModBuilder(Stack, Settings.OutputModDir).OutputConflicts();
-            return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed, conflict)).ToList();
+            var traces = new Dictionary<string, UnitTraceResult>(StringComparer.Ordinal);
+            Func<string, UnitTraceResult> trace = u => { UnitTraceResult t; if (!traces.TryGetValue(u, out t)) { t = tracer.Trace(u); traces[u] = t; } return t; };
+            return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed, conflict, trace)).ToList();
         }
 
-        EditCheck Check(Edit e, Dictionary<string, SourceCheck> parsed, Func<string, string> conflict)
+        EditCheck Check(Edit e, Dictionary<string, SourceCheck> parsed, Func<string, string> conflict, Func<string, UnitTraceResult> trace)
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
             SourceCheck source;
@@ -179,7 +181,8 @@ namespace CtaToybox.Core
             {
                 string unit = SourceStack.ToVirtual(e.Unit ?? "");
                 if (Stack.Find(unit) == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Current = node.Text, RowText = rowText, Message = "원본에 이 유닛이 없다: " + unit };
-                string blocker = IncludeChain.UnitScopeBlocker(new SdlResolver(Stack.ReadText).Resolve(unit).IncludeEdges, unit, file, e.Path);
+                // 빌드와 같은 규칙(UnitScope): include 사슬, 원형에서 물려받은 값은 덧붙일 수 있는 줄인지(E14)
+                string blocker = UnitScope.Blocker(trace(unit), file, e.Path, e.Occurrence, e.Arg);
                 if (blocker != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = blocker };
             }
             // 빌드(ModBuilder)와 같은 규칙: 파일의 인코딩으로 쓸 수 있는가, 새 값 규칙에 맞는가
@@ -192,7 +195,7 @@ namespace CtaToybox.Core
             string applies = e.New == null ? null : ValueRules.CheckApplies(file, source.Text, e);
             if (applies != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = applies };
             // 빌드가 쓸 출력 파일이 손으로 넣은 파일과 겹치는가(Q5). '이 유닛만'이면 유닛 파일과 그 사본도 쓴다
-            foreach (string output in OutputsOf(e, file))
+            foreach (string output in OutputsOf(e, file, trace))
             {
                 string clash = conflict(output);
                 if (clash != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = clash };
@@ -204,12 +207,13 @@ namespace CtaToybox.Core
         sealed class SourceCheck { public List<KeyRow> Rows; public TextKind Kind; public string Text; }
 
         // 이 수정 때문에 빌드가 쓸 출력 가상 경로. '전부'는 그 파일, '이 유닛만'은 유닛 파일과(다른 파일의 값이면) 그 파일의 사본
-        static IEnumerable<string> OutputsOf(Edit e, string file)
+        // 원형에서 물려받은 값을 '이 유닛만' 고치면 유닛 파일에 덧붙이므로 사본은 없다(E14)
+        static IEnumerable<string> OutputsOf(Edit e, string file, Func<string, UnitTraceResult> trace)
         {
             if (e.Scope != "unit") { yield return file; yield break; }
             string unit = SourceStack.ToVirtual(e.Unit ?? "");
             yield return unit;
-            if (file != unit) yield return IncludeChain.CopyName(file, unit);
+            if (file != unit && UnitScope.InheritedRow(trace(unit), file, e.Path, e.Occurrence, e.Arg) == null) yield return IncludeChain.CopyName(file, unit);
         }
 
         public BuildReport Build()
