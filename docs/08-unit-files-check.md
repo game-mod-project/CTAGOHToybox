@@ -99,7 +99,7 @@
 |---|---|---|
 | 필드 단위, 한 유닛이 여러 필드 | 맞음 | `vision_fields.inc` 주석 |
 | 최대 거리 = 기준 거리 × `("spotting" r())` | 맞음 | 주석: "Sets the vision range, defined in generic.inc". 전체 배수는 `vision.set`의 `(define "radius" ... {radius (* 1.0 %r)})`(주석: 게임 전체 시야 거리를 바꾼다) |
-| `{uncover}` m, `{h_fov}`·`{v_fov}` 도 | 맞음 | 주석 |
+| `{uncover}` m, `{h_fov}`·`{v_fov}` 도 | 맞음 | 주석. 게임 안 확인(2026-10-16 월드워): 지상 필드의 `h_fov`를 모두 360으로 하자 시야(안개가 걷히는 곳)가 전차 중심의 원이 됐다(`docs/07-stat-editor/ingame-check.md` "월드워 시야") |
 | `human` 20 / 100° / 180° / 1.0 | 고침 | 지금 `h_fov 150` |
 | `human_peripheral` 10 / 240 / 120 / 0.2 | 고침 | 지금 `spotting r(0.22)` |
 | `vehicle_main` 25/50/100/1, `vehicle_top_mgun` 25/90/170/1, `vehicle_top_turret` 25/30/30/0.85, `vehicle_around` 15/360/170/0.6 | 맞음 | |
