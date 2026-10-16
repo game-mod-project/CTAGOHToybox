@@ -45,7 +45,7 @@ namespace CtaToybox.App
                            (v.Edit == null ? "" : "  (수정됨: " + Text.Value(v.Edit.New) + ", " + (v.Edit.Scope == "unit" ? "이 유닛만" : "전부") + ")") });
                 if (v.Editable && files.Count > 1)
                     caption.Children.Add(new TextBlock { Foreground = Brushes.Gray, FontSize = 12, TextWrapping = TextWrapping.Wrap,
-                        Text = v.Trace.File.Substring(v.Trace.File.LastIndexOf('/') + 1) + " · 유닛 " + v.SharedBy + "개가 같이 씀" });
+                        Text = v.Trace.File.Substring(v.Trace.File.LastIndexOf('/') + 1) + (SettingFiles.InArea(v.Trace.File) ? " · 게임 설정 파일" : " · 유닛 " + v.SharedBy + "개가 같이 씀") });
                 if (v.Editable && v.Pieces != null)
                 {
                     // 문자열 속 설정: 조각마다 칸. 이미 수정이 있으면 그 새 값에서 시작한다(앞에 고친 조각이 남는다)

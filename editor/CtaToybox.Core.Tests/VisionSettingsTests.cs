@@ -47,5 +47,18 @@ static class VisionSettingsTests
         T.True(fov.Values[0].Editable, "and is editable");
         T.Eq(SettingFiles.UnitScopeNote, fov.Values[0].UnitScopeBlocker, "shared only");
         T.Eq("확인", fov.Note == null ? null : fov.Note.Grade, "settings.psv annotates vision keys");
+
+        // 따옴표 이름 블록의 이름은 다른 파일이 그 이름으로 부르므로({vision "human"}) 고치지 못한다
+        var name = view.Rows.Single(r => r.Path == "/visions/\"*\"").Values[0];
+        T.True(!name.Editable, "a quoted block's own name is not editable");
+        T.True(name.Trace.Note != null && name.Trace.Note.Contains("블록 이름"), "and says why");
+
+        // E16: 수정 목록이 어느 필드의 값인지 보이게 따옴표 블록 이름을 건넨다
+        T.Eq(new[] { "tank_range_200" }, KeyLabel.QuotedNames("/visions/\"*\"/h_fov", "/visions/\"tank_range_200\"/h_fov").ToArray(), "the quoted block name");
+        T.Eq(new[] { "a/b", "c" }, KeyLabel.QuotedNames("/x/\"*\"/y/\"*\"/z", "/x/\"a/b\"/y/\"c\"/z").ToArray(), "several names, a slash inside quotes");
+        T.Eq(0, KeyLabel.QuotedNames("/x/y", "/x/y").Count, "none outside quoted blocks");
+        session.OpenProject(Path.Combine(repo, "editor", "projects", "e16.json"));
+        var edit = session.AddEdit(view, fov.Values[0], "360", "shared");
+        T.Eq(new[] { "human" }, session.Describe(edit).BlockNames.ToArray(), "the edit description carries the field name");
     }
 }

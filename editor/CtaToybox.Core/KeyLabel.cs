@@ -34,6 +34,20 @@ namespace CtaToybox.Core
             return parts;
         }
 
+        // 펼친 경로에서 "*"로 묶인 따옴표 이름 블록의 원문 이름들(따옴표를 뗀 것), 바깥부터. 없거나 두 경로가 맞지 않으면 빈 목록.
+        // 수정 목록이 "수평 시야각 (tank_range_200)"처럼 어느 블록의 값인지 보이게 한다(E16)
+        public static List<string> QuotedNames(string path, string rawPath)
+        {
+            var names = new List<string>();
+            if (path == null || rawPath == null) return names;
+            var p = Split(path);
+            var r = Split(rawPath);
+            if (p.Count != r.Count) return names;
+            for (int i = 0; i < p.Count; i++)
+                if (p[i] == "\"*\"" && r[i].Length >= 2 && r[i][0] == '"') names.Add(r[i].Trim('"'));
+            return names;
+        }
+
         public static string Readable(string path)
         {
             var parts = Split(path);

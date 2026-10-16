@@ -101,7 +101,8 @@ namespace CtaToybox.App
             string change = Value(e.Old) + " → " + Value(e.New);
             if (d == null) return KeyLabel.Readable(e.Path) + " · " + (e.Arg + 1) + "번째 값: " + change;
             var row = new RowView { Path = e.Path, Note = d.Note, IsMacroCall = d.IsMacroCall };
-            string rowName = RowName(row);
+            // 따옴표 이름 블록 안의 값이면 어느 블록인지 붙인다(월드워 67건이 모두 "수평 시야각"으로만 보였다, E16)
+            string rowName = RowName(row) + (d.BlockNames == null || d.BlockNames.Count == 0 ? "" : " (" + string.Join(" › ", d.BlockNames) + ")");
             // 문자열 속 설정: 바뀐 조각만 보인다(문자열 전체는 길어 무엇이 바뀌었는지 읽히지 않는다)
             if (d.ChangedPieces != null && d.ChangedPieces.Count > 0) return rowName + " · " + string.Join(", ", d.ChangedPieces);
             string valueName = d.ValueLabel ?? (d.ValueCount == 1 && d.ValueName == null ? null : (d.ValueName ?? (e.Arg + 1) + "번째 값") + " (뜻 미확인)");
@@ -157,6 +158,12 @@ namespace CtaToybox.App
         public static string Note(KeyNote note)
         {
             return note == null ? "(설명 없음)" : "[" + (note.Grade.Length == 0 ? "등급 없음" : note.Grade) + "] " + note.Meaning;
+        }
+
+        // '전부'로 고칠 때 바뀌는 범위. 게임 설정 파일은 유닛이 아니라 그 파일 하나가 항목이다(E16)
+        public static string SharedScope(string file, int users)
+        {
+            return SettingFiles.InArea(file) ? "게임 설정 파일 하나가 바뀐다" : "유닛 " + users + "개가 바뀐다";
         }
 
         public static string UnitName(EditorSession session, string unit)

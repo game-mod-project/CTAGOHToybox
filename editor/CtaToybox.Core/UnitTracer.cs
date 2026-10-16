@@ -79,6 +79,9 @@ namespace CtaToybox.Core
             return map;
         }
 
+        // 따옴표 이름 블록의 이름 자체({"human" ...}의 "human"). 다른 파일이 이 이름으로 부른다(승무원의 {vision "tank_range_200"} 등)
+        public const string BlockNameNote = "블록 이름이다. 다른 파일이 이 이름으로 부르므로(예: {vision \"이름\"}) 바꾸면 이어지지 않는다";
+
         TraceValue ValueOf(SdlNode leaf)
         {
             var v = new TraceValue { Text = leaf.Text, File = leaf.File, Arg = -1, Synthetic = leaf.Synthetic };
@@ -88,6 +91,7 @@ namespace CtaToybox.Core
             if (!SlotsOf(leaf.File).TryGetValue(leaf.Index, out slot)) { v.Note = "편집할 수 있는 자리가 아니다(include 인자이거나 파싱되지 않는 파일)"; return v; }
             v.KeyPath = slot.Path; v.Occurrence = slot.Occurrence;
             if (KeyLocator.IsDisabled(slot.Path)) { v.Note = KeyLocator.DisabledNote; return v; }
+            if (slot.Arg == 0 && slot.Path.EndsWith("/\"*\"", StringComparison.Ordinal)) { v.Note = BlockNameNote; return v; }
             v.Arg = slot.Arg;
             if (KeyLocator.IsNamed(slot.Path)) { v.NamedPath = slot.RawPath; v.NamedOccurrence = slot.RawOccurrence; }
             return v;

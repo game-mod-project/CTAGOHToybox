@@ -146,3 +146,4 @@
 **/uncover|block|확인|숨은 병사를 찾는 거리. 이 거리(m) 안의 숨은 병사(덤불 속 등)를 찾는다 (확인: vision_fields.inc 주석 "Will spot hidden soldiers in bushes within 15m")|C
 **/h_fov|block|확인|수평 시야각(도). 360이면 모든 방향을 본다 (확인: vision_fields.inc 주석 "Horizontal field of view arc". 게임 안 확인 2026-10-16: 지상 필드를 모두 360으로 하자 시야가 유닛 중심의 원이 됐다)|C
 **/v_fov|block|확인|수직 시야각(도). 180이면 바로 위·아래까지 본다 (확인: vision_fields.inc 주석 "Vertical field of view arc")|C
+/visions/"*"|block|확인|시야 필드 이름. 승무원·병사 설정이 {vision "이름"}으로 이 필드를 고른다. 이름은 고치지 못한다 (확인: vision_fields.inc 주석 "This script defines the VISION FIELDS of the units", properties·crew.ext의 {vision "tank_range_200"})|C
