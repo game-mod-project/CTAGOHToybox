@@ -94,6 +94,7 @@ static class Program
             ("ProjectMerge", ProjectMergeTests.Run),
             ("MacroSwap", MacroSwapTests.Run),
             ("BlockCopy", BlockCopyTests.Run),
+            ("BlockCopyBuild", BlockCopyBuildTests.Run),
             ("ReviewFix", ReviewFixTests.Run),
             ("Usability", UsabilityTests.Run),
             ("UsabilityReview", UsabilityReviewTests.Run),
