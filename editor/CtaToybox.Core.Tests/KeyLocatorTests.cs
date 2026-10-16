@@ -55,5 +55,19 @@ static class KeyLocatorTests
         T.True(index.Find("/game_entity/nope", 0, 0) == null, "index: an unknown path is null");
         T.Eq("/game_entity/volume", index.Row("/game_entity/volume", 1).Path, "the row itself");
         T.True(index.Row("/game_entity/volume", 2) == null, "no such row");
+
+        // (mod ...) 조건(E11): 안의 줄은 부모 경로에 실리고, 어느 조건 안인지를 따로 싣는다
+        var cond = KeyLocator.Rows(SdlCore.Parse(
+            "{weapon {limit 10} (mod \"mp\" {limit 50} (mod not \"coop\" {x 1})) (mod not \"mp\" {limit 200})}").Root);
+        T.Eq(new[] { null, null, "(mod \"mp\")", "(mod \"mp\") (mod not \"coop\")", "(mod not \"mp\")" }, cond.Select(r => r.Cond).ToArray(), "each row carries the conditions around it");
+        T.Eq(new[] { "/weapon", "/weapon/limit", "/weapon/limit", "/weapon/x", "/weapon/limit" }, cond.Select(r => r.Path).ToArray(), "condition rows keep the parent path");
+
+        // 따옴표 이름 블록(Q7): 원문 경로에는 이름이 있고, 같은 원문 경로 가운데 몇 번째인지를 따로 센다
+        var named = KeyLocator.Rows(SdlCore.Parse("{\"tiger\" {cost 1}} {\"panther\" {cost 2}} {\"Tiger\" {cost 3}}").Root);
+        T.Eq(new[] { 0, 0, 1, 1, 2, 2 }, named.Select(r => r.Occurrence).ToArray(), "occurrence counts the * path");
+        T.Eq(new[] { 0, 0, 0, 0, 1, 1 }, named.Select(r => r.RawOccurrence).ToArray(), "raw occurrence counts the named path, ignoring case");
+        var namedIndex = new KeyIndex(SdlCore.Parse("{\"tiger\" {cost 1}} {\"panther\" {cost 2}} {\"Tiger\" {cost 3}}").Root);
+        T.Eq("3", namedIndex.FindNamed("/\"tiger\"/cost", 1, 0).Text, "find by the named path and its own occurrence");
+        T.True(namedIndex.NamedRow("/\"leopard\"/cost", 0) == null, "an unknown name is null");
     }
 }

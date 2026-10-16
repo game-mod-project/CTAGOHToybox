@@ -15,6 +15,8 @@ namespace CtaToybox.Core
         public int Arg { get; set; }            // 그 행의 몇 번째 값인지 (Edit.Arg). -1이면 편집할 수 없는 자리다
         public bool Synthetic { get; set; }
         public string Note { get; set; }        // 편집할 수 없는 이유
+        public string NamedPath { get; set; }   // 따옴표 이름 블록 안이면 이름이 든 원문 경로(Edit.NamedPath). 아니면 null
+        public int NamedOccurrence { get; set; }
     }
 
     public sealed class TraceRow
@@ -24,6 +26,7 @@ namespace CtaToybox.Core
         public int Occurrence { get; set; }     // 펼친 뒤의 순번
         public string Form { get; set; }        // block | macro (KeyLocator의 행 형태). 주석을 찾을 때 쓴다
         public string Context { get; set; }     // 같은 키가 여러 번 나올 때 어느 부위의 것인지(예: volume body1). 없으면 null
+        public string Cond { get; set; }        // 감싼 (mod ...) 조건 원문. 조건 밖이면 null
         public List<TraceValue> Values { get; } = new List<TraceValue>();
         public List<string> LeafNames { get; set; }   // 값마다 감싼 호출의 이름(KeyRow.LeafNames). 호출 밖이면 null
         public string Comment { get; set; }        // Lua 설정의 개발사 주석(그 줄). 없으면 null
@@ -42,7 +45,7 @@ namespace CtaToybox.Core
 
     public sealed class UnitTracer
     {
-        sealed class Slot { public string Path; public int Occurrence; public int Arg; }
+        sealed class Slot { public string Path; public int Occurrence; public int Arg; public string RawPath; public int RawOccurrence; }
 
         readonly SourceStack stack;
         // 파일 → (토큰의 글자 위치 → 자리). 파싱되지 않는 파일은 빈 표다
@@ -62,7 +65,7 @@ namespace CtaToybox.Core
                 if (parsed.Errors.Count == 0)
                     foreach (var row in KeyLocator.Rows(parsed.Root))
                         for (int i = 0; i < row.Leaves.Count; i++)
-                            map[row.Leaves[i].Index] = new Slot { Path = row.Path, Occurrence = row.Occurrence, Arg = i };
+                            map[row.Leaves[i].Index] = new Slot { Path = row.Path, Occurrence = row.Occurrence, Arg = i, RawPath = row.RawPath, RawOccurrence = row.RawOccurrence };
             }
             slots[file] = map;
             return map;
@@ -75,7 +78,10 @@ namespace CtaToybox.Core
             if (leaf.File == null) { v.Note = "출처를 알 수 없다"; return v; }
             Slot slot;
             if (!SlotsOf(leaf.File).TryGetValue(leaf.Index, out slot)) { v.Note = "편집할 수 있는 자리가 아니다(include 인자이거나 파싱되지 않는 파일)"; return v; }
-            v.KeyPath = slot.Path; v.Occurrence = slot.Occurrence; v.Arg = slot.Arg;
+            v.KeyPath = slot.Path; v.Occurrence = slot.Occurrence;
+            if (KeyLocator.IsDisabled(slot.Path)) { v.Note = KeyLocator.DisabledNote; return v; }
+            v.Arg = slot.Arg;
+            if (KeyLocator.IsNamed(slot.Path)) { v.NamedPath = slot.RawPath; v.NamedOccurrence = slot.RawOccurrence; }
             return v;
         }
 
@@ -124,7 +130,7 @@ namespace CtaToybox.Core
             {
                 var row = rows[i];
                 if (row.Leaves.Count == 0) continue;
-                var traced = new TraceRow { Path = row.Path, RawPath = row.RawPath, LeafNames = row.LeafNames, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i] };
+                var traced = new TraceRow { Path = row.Path, RawPath = row.RawPath, LeafNames = row.LeafNames, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i], Cond = row.Cond };
                 foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                 result.Rows.Add(traced);
             }

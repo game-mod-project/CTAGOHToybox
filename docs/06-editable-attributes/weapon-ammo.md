@@ -11,7 +11,7 @@
 | 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 10 | 3 | 30 | 23 | 13 |
 | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 3 | 0 | 13 | 0 | 4 |
 | 본체 | 지뢰와 폭발물 (.mine) | `set/stuff/explosive/*.mine` | 8 | 2 | 0 | 6 | 0 | 0 |
-| 본체 | 투척 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
+| 연관 | 투척 원형 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
 | 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 53 | 9 | 61 | 8 | 24 |
 | 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 21 | 335 | 48 | 99 |
 | 연관 | 무기 상태 설정 (.fsm) | `set/stuff/_settings/*.fsm` | 5 | 0 | 0 | 5 | 0 | 0 |
@@ -409,10 +409,10 @@
 | `/from/inventory/size` | 1 2 ¦ 2 1 | **확인** 인벤토리 창의 크기. 가로 세로 칸 수 |  | 5 | `set/stuff/explosive/ap_shrapnel_mk1.mine` |
 | `/from/mass` | 1.5 ~ 8 | **추정** 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | with water ¦ empty weight | 11 | `set/stuff/explosive/ap_shrapnel_mk1.mine` |
 
-## 본체: 투척 (.hand)
+## 연관: 투척 원형 (.hand)
 
 - 위치: `set/stuff/thrower.hand`
-- 연결: 파일이 하나뿐이다. 어디서 가리키는지는 확인하지 않았다
+- 연결: `{from "hand thrower"}`로 물려받는 원형이다(`set/stuff/thrower_v`). 그 `thrower_v`를 가리키는 줄은 바닐라에서 `##`로 꺼진 `gaz98.def`의 무장 자리 하나뿐이라 실제로는 쓰이지 않는 것으로 보인다
 
 ### 뜻을 아는 속성 (11개)
 
@@ -1160,7 +1160,7 @@
 ## 연관: 무기 상태 설정 (.fsm)
 
 - 위치: `set/stuff/_settings/*.fsm`
-- 연결: 어디서 가리키는지는 확인하지 않았다
+- 연결: 아이템의 `inventory` 안 `{fsm "X"}`가 `set/stuff/_settings/X.fsm`을 가리킨다(아이템의 폴더와 상관없다). 바닐라의 값 6종과 파일 6개가 1:1이다(belt 132, stuff 35, hand-only 9, smg 2, bazooka·pistol 1). 내용은 줍기·들기·싣기 상태 이름이다
 
 ### 뜻을 아는 속성 (5개)
 

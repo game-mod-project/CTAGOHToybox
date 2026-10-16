@@ -18,6 +18,12 @@ namespace CtaToybox.Core
         public string New { get; set; }
         public string Scope { get; set; } = "shared";   // shared | unit
         public bool Enabled { get; set; } = true;
+        // 따옴표 이름 블록 안의 자리면 이름이 든 원문 경로(예 /"tiger"/cost)와 그 경로 가운데 몇 번째인지(Q7).
+        // 모드가 앞에 항목을 끼워 넣어 Occurrence가 밀려도 프로젝트를 열 때 이름으로 다시 찾는다. 이름이 없는 자리면 null
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public string NamedPath { get; set; }
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault)]
+        public int NamedOccurrence { get; set; }
     }
 
     public sealed class EditProject

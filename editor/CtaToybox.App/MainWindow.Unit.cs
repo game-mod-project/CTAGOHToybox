@@ -85,7 +85,7 @@ namespace CtaToybox.App
                 Name = Text.RowName(row),
                 Label = summary ? row.SummaryName(Text.RowName(row)) : Text.RowName(row),
                 Key = "키 " + (row.RawPath ?? row.Path),
-                Context = Text.ContextLine(summary ? null : row.Context, row.Repeats),
+                Context = Text.ContextLine(summary ? null : row.Context, row.Repeats, row.CondLabel),
                 Values = Text.ValuesLine(row),
                 NewValues = newValues,
                 Note = Text.RowNote(row),

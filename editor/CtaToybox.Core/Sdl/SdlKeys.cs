@@ -28,12 +28,15 @@ public static partial class SdlCore
         }
     }
 
+    // 지금 읽고 있는 (mod ...) 조건들. KeyRows가 처음부터 끝까지 한 스레드에서 돈다
+    [ThreadStatic] static string currentCond;
+
     static SdlRow Row(string path, string raw, string form, List<SdlNode> args)
     {
         var shapes = new List<string>(args.Count);
         var flat = new List<string>();
         foreach (var a in args) { shapes.Add(ArgShape(a)); Flat(a, flat); }
-        return new SdlRow { Path = path, RawPath = raw, Form = form, Shape = string.Join(" ", shapes), Args = string.Join(" ", flat), ArgNodes = args };
+        return new SdlRow { Path = path, RawPath = raw, Form = form, Shape = string.Join(" ", shapes), Args = string.Join(" ", flat), ArgNodes = args, Cond = currentCond };
     }
 
     static bool IsStatement(SdlNode k) { return k.Kind == "brace" || (k.Kind == "paren" && !IsExpr(k)); }
@@ -150,7 +153,13 @@ public static partial class SdlCore
             var args = new List<SdlNode>(); var nested = new List<SdlNode>();
             Split(kids, 1, args, nested);
             rows.Add(Row(parent + "/(mod)", raw + "/(mod)", "mod", args));
-            AddRows(nested, parent, raw, rows, qualified);
+            // 조건 안의 줄은 부모 경로에 싣고 조건은 Cond로 남긴다(개발사 문서: mod는 전역 모드에 따라 블록을 넣거나 뺀다)
+            var words = new List<string>();
+            foreach (var a in args) Flat(a, words);
+            string saved = currentCond, label = "(mod " + string.Join(" ", words) + ")";
+            currentCond = saved == null ? label : saved + " " + label;
+            try { AddRows(nested, parent, raw, rows, qualified); }
+            finally { currentCond = saved; }
         }
         else
         {
@@ -170,6 +179,7 @@ public static partial class SdlCore
         var q = new HashSet<string>(qualifiedBlocks ?? new string[0], StringComparer.OrdinalIgnoreCase);
         var nodes = new List<SdlNode>();
         if (topLevel != null) foreach (object x in topLevel) nodes.Add(Unwrap(x));
+        currentCond = null;
         AddRows(nodes, "", "", rows, q);
         return rows;
     }

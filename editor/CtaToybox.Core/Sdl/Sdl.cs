@@ -45,6 +45,7 @@ public sealed class SdlRow
     public string Shape { get; set; }
     public string Args { get; set; }
     public List<SdlNode> ArgNodes { get; set; }   // 이 행의 인자 노드. 편집기가 원본 토큰의 자리를 찾는 데 쓴다
+    public string Cond { get; set; }   // 이 행을 감싼 (mod ...) 조건들. 예 (mod "mp"), 겹치면 공백으로 잇는다. 조건 밖이면 null
 }
 
 public static partial class SdlCore

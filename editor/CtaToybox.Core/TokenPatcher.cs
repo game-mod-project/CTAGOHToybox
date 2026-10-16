@@ -79,6 +79,12 @@ namespace CtaToybox.Core
             var index = new KeyIndex(parsed.Root);
             foreach (var e in active)
             {
+                // 따옴표 이름 블록의 수정은 그 자리의 이름도 같아야 쓴다(Q7). 다르면 다른 항목이다
+                if (e.NamedPath != null && !SameName(index.Row(e.Path, e.Occurrence), e))
+                {
+                    results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 이름의 항목이 없다: " + e.NamedPath));
+                    continue;
+                }
                 var node = index.Find(e.Path, e.Occurrence, e.Arg);
                 if (node == null) { results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 자리가 없다: " + e.Path + " [" + e.Occurrence + "] 값 " + e.Arg)); continue; }
                 if (node.Text != e.Old) { results.Add(Result(e, EditStatus.SourceChanged, "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text)); continue; }
@@ -110,6 +116,12 @@ namespace CtaToybox.Core
                 if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다. 이 값을 바꾸면 키 경로가 바뀐다(블록 이름 뒤의 한정자나 숫자 행의 첫 값): " + p.Edit.Path);
             }
             return patched;
+        }
+
+        // 행이 수정의 이름 경로와 같은 항목인가(원문 경로와 그 경로 가운데 몇 번째)
+        public static bool SameName(KeyRow row, Edit e)
+        {
+            return row != null && string.Equals(row.RawPath, e.NamedPath, StringComparison.OrdinalIgnoreCase) && row.RawOccurrence == e.NamedOccurrence;
         }
 
         static EditResult Result(Edit e, EditStatus status, string message)
