@@ -6,14 +6,14 @@
 
 | 구분 | 파일 | 위치 | 속성 수 | 확인 | 문서 | 추정 | 정의 | 미확인 |
 |---|---|---|---|---|---|---|---|---|
-| 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 4 | 44 | 0 | 28 |
+| 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 4 | 46 | 0 | 26 |
 
 ## 본체: 아이템 엔티티
 
 - 위치: `entity/inventory/**/*.def`
 - 연결: `set/stuff` 아이템의 `entity`
 
-### 뜻을 아는 속성 (50개)
+### 뜻을 아는 속성 (52개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -33,6 +33,7 @@
 | `/actor/texmod` | "black" ¦ "green" ¦ "camo" | **추정** 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "black", "camo") |  | 3 | `entity/inventory/-gear_wearable/head/civilian_fedora_black/civilian_fedora_black.def` |
 | `/actor/volume` | "body" ¦ "body1" ¦ "select" ¦ "body2" ¦ "casing1" ¦ "casing2" ¦ "shield" ¦ "shell1" ¦ "shell2" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) |  | 63 | `entity/inventory/-gear_wearable/head/[soviet_union]/soviet_tankist_cap/soviet_tankist_cap.def` |
 | `/actor/volume/able` | clear ¦ | **추정** 볼륨이 반응하는 상호작용 묶음 (추정: 하위 플래그) |  | 20 | `entity/inventory/-tools/mine_detector/mine_detector.def` |
+| `/actor/volume/able/visible` | 0 | **추정** 0이면 이 볼륨이 시야를 가리지 않는다 (추정: /game_entity의 같은 자리와 같다. properties/vehicle.ext 502줄 유리, 516줄 램프 볼륨이 0) |  | 5 | `entity/inventory/-tools/pickaxe/pickaxe.def` |
 | `/actor/volume/density` | 0 | **문서** 장갑의 밀도(품질) 계수. 기본 1 |  | 19 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
 | `/actor/volume/material` | "wood" ¦ "glass" | **추정** 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") |  | 10 | `entity/inventory/-tools/pickaxe/pickaxe.def` |
 | `/actor/volume/tags` | "body" | **문서** 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 |  | 16 | `entity/inventory/-weapon/-grenades/anti_personnel/m24/m24.def` |
@@ -61,6 +62,7 @@
 | `/game_entity/spriteview/offset` | 0 0 5 ¦ 0 0 25 ¦ 0 0 3 | **추정** 위치 오프셋 x y z (추정: 값) |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/spriteview/sprite` | "pointer_halo" ¦ "mine_f.ebm" ¦ "pointer_clr.ebm" | **추정** 스프라이트로 쓰는 그림 파일(.ebm) (추정: 값 "arrow.ebm") |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/spriteview/sprite/scale` | 0.1 ~ 0.8 | **추정** 스프라이트 배율 (추정: 이름) |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
+| `/game_entity/spriteview/sprite/timer/mode` | play loop ¦ play | **추정** special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/texmod` | "ger" | **추정** 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") |  | 1 | `entity/inventory/-stuff/ammo_box_inf/ammo_box_inf_ger.def` |
 | `/game_entity/volume` | "body" ¦ "fuel" ¦ "body1" ¦ "body2" ¦ "select" | **추정** 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) |  | 410 | `entity/inventory/-ammo/-mortar/170mm_fin_mortar_he/170mm_fin_mortar_he.def` |
 | `/game_entity/volume/able` | ¦ clear | **추정** 볼륨이 반응하는 상호작용 묶음. clear는 상속된 설정을 지우는 것으로 보인다 (추정: 하위가 bullet, blast, touch 등 인자 없는 플래그) |  | 294 | `entity/inventory/-ammo/-mortar/170mm_fin_mortar_he/170mm_fin_mortar_he.def` |
@@ -68,7 +70,7 @@
 | `/game_entity/volume/tags` | "body" ¦ "pour_over" | **추정** 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") |  | 9 | `entity/inventory/-ammo/-shells/generic/shell_cannon/shell_cannon.def` |
 | `/game_entity/volume/thickness` | 1 ~ 50 | **추정** 볼륨의 장갑 두께. 단위는 mm로 보인다 (추정: 원문 주석이 "15 + 4", "4mm + .25"" 같이 판 두께를 적음) |  | 392 | `entity/inventory/-ammo/-mortar/170mm_fin_mortar_he/170mm_fin_mortar_he.def` |
 
-### 뜻을 모르는 속성 (28개)
+### 뜻을 모르는 속성 (26개)
 
 | 속성명 | 속성값 (범위·예) | 설명 | 게임 파일의 주석 (참고) | 파일 수 | 예시 파일 |
 |---|---|---|---|---|---|
@@ -77,7 +79,6 @@
 | `/actor/obstacle` | "body" | 미확인 |  | 18 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
 | `/actor/obstacle/circle2/radius` | 7.5 ~ 20 | 미확인 |  | 18 | `entity/inventory/-weapon/-grenades/anti_tank/m7/m7.def` |
 | `/actor/volume/able/obstacle` | 0 | 미확인. able의 하위. 값 0 |  | 1 | `entity/inventory/-tools/pickaxe/pickaxe.def` |
-| `/actor/volume/able/visible` | 0 | 미확인. able의 하위. 값 0 |  | 5 | `entity/inventory/-tools/pickaxe/pickaxe.def` |
 | `/entity/extender[stuff]` | "stuff" | 미확인 |  | 10 | `entity/inventory/-medical/bandage_eng/bandage_eng.def` |
 | `/entity/nogroupmesh` | 1 | 미확인. 값은 1뿐. 용도 불명 |  | 4 | `entity/inventory/-stuff/corpse/corpse.def` |
 | `/entity/spriteview/orientation` | trace | 미확인 |  | 3 | `entity/inventory/-weapon/-mines/mined_view/mined_view_defused.def` |
@@ -97,7 +98,6 @@
 | `/game_entity/spriteview/sprite/scale/linear/max` | 0.03 ~ 0.1 | 미확인 |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/spriteview/sprite/scale/linear/min` | 0.15 ~ 0.3 | 미확인 |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/spriteview/sprite/timer/duration` | 1 ~ 2 | 미확인 |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
-| `/game_entity/spriteview/sprite/timer/mode` | play loop ¦ play | 미확인. 값 detonate |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/spriteview/sprite/visibility` | 0.3 ~ 0.5 | 미확인 |  | 20 | `entity/inventory/-weapon/-mines/mine_antipersonnel_vis/mine_antipersonnel_vis.def` |
 | `/game_entity/volume/able/obstacle` | 0 | 미확인. able의 하위. 값 0 |  | 1 | `entity/inventory/-stuff/box_metal/box_metal.def` |
 

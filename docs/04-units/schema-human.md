@@ -631,7 +631,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/extender[inventory]/armor` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "accessories" | 추정 | 방어구 슬롯 하나. 문자열이 슬롯 이름 (추정: 값 "head", "body") | 파일 구조와 값에서 추론 |  |
 | `/human/extender[inventory]/armor/bone` | block | [str]x3 | 1 | 3 | "head" ¦ "IK_UpDown" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/human/extender[inventory]/armor/heatdamping` | block | [num]x1 | 1 | 1 | 0.6 | 미확인(자동) |  |  |  |
-| `/human/extender[inventory]/armor/mask` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "head2" | 미확인 | 값 "mountable" |  |  |
+| `/human/extender[inventory]/armor/mask` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "head2" | 추정 | extender[inventory]의 weapon 칸에서는 그 칸에 넣을 수 있는 아이템의 태그 조건 (추정: properties/vehicle.ext 28줄 {weapon "mgun" {mask "mountable"}}이고 set/stuff/mgun/mgun_generic.pattern 2줄 등 기관총·소총 패턴의 tag에 mountable이 있다). .mtl의 material, 사람의 armor 안 mask는 뜻 미확인 | 파일 구조와 값에서 추론 |  |
 | `/human/extender[inventory]/armor/pierceabsorb` | block | [num]x3 | 1 | 3 | 20 ~ 25 | 추정 | 방어구가 흡수하는 관통량 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/human/extender[inventory]/armor/volumes` | block | [str]x3 | 1 | 3 | "head" ¦ "body" | 추정 | 이 방어구가 덮는 볼륨 이름 (추정: 값 "head", "body") | 파일 구조와 값에서 추론 | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/human/extender[inventory]/box` | block | []x1 | 1 | 1 | 예: | 추정 | 화물칸 하나 (추정: 하위 size, weight, item) | 파일 구조와 값에서 추론 |  |
@@ -693,7 +693,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/human/sensor/visor` | block | [str]x4 | 1 | 4 | "eyes" ¦ "peripheral" ¦ "hearing" ¦ "telescope" | 미확인(자동) |  |  |  |
 | `/human/sensor/visor/bone` | block | [str]x3 | 1 | 3 | "visor" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/human/sensor/visor/vision` | block | [str]x3 | 1 | 3 | "human" ¦ "human_peripheral" ¦ "noise_detection" | 추정 | 시야·청각 프로필 이름. set/vision 참조로 보인다 (추정: 값 "noise_detection") | 파일 구조와 값에서 추론 | better vision than a in-closed turret |
-| `/human/simulation` | block | []x1 | 1 | 1 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
+| `/human/simulation` | block | []x1 | 1 | 1 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
 | `/human/simulation/able` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/human/simulation/state` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
 | `/human/simulatorid` | block | [str]x1 | 1 | 1 | "human" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |

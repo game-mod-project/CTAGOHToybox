@@ -39,7 +39,7 @@
 
 | ID | 내용 | 출처 | 메모 |
 |---|---|---|---|
-| D1 | 값 이름이 없는 키가 "뜻 미확인"으로 보인다. `common.psv` 미확인 59(확인 144·문서 78·추정 302), `values.psv` "미확인" 27줄(2026-10-15 W-F 뒤), `settings.psv` 2, `weapon-ammo.psv` 2 | H14 58행, 문서 훑기 집계 | 자주 쓰는 키부터 근거를 찾는다 |
+| D1 | 근거를 찾지 못해 "미확인"으로 남은 키: `common.psv` 32(확인 147·문서 79·추정 328), `values.psv` 5줄, `settings.psv` 1(`**/bots/cp/attackmultiplier`). 2026-10-16에 저장소 안 자료(바닐라 주석·구조, findings, 게임 확인 기록)로 49건을 올렸고 나머지는 키 이름 말고 근거가 없었다(rimlight, restoreik*, openforcrush, preloaded, decalview 플래그, density, detonationthickness 등) | H14 58행, 2026-10-16 D1 | 웹 자료(개발사 문서 D, docs/09)로만 더 찾을 수 있다 |
 
 ## 6. 조사 (웹·자료)
 
@@ -129,3 +129,4 @@
 | 렌더 거리와 탐지(V7, R3) | 같은 브랜치: `environment_config.ext`는 바닐라에 없다(모드 파일). 화면의 거리 안개는 환경 파일의 `{haze {start} {end}}`이고, 앞서 안개 거리로 적었던 `full_opaque_view_distance`는 물 표현 값이다(문서 셋을 고침). `set/vision` 파일은 환경 값을 읽지 않는다. 키 주석은 D1과 함께 `common.psv`에 넣는다 |
 | 에디터 PDF 2종(R5) | 같은 브랜치: 읽었다. 2013년 러시아어 원본의 영어판(게임 이름 없음, `theGame.exe`). F2/F1, 하위 편집기 1~9, `player` 0~7, 병종 편집기의 인벤토리, 단축키. 파일 구조·모드 내용은 없다. `docs/02` "에디터 설명서" |
 | 병종의 tier 같은 인자 없는 매크로 호출을 바꿀 수 없다(E4) | `feat/e4-macro-swap`(2026-10-16): 스펙 `docs/superpowers/specs/2026-10-16-e4-macro-swap-design.md`. 인자 없는 호출을 이름 하나의 줄로 보이고, 같은 파일에 정의된 다른 매크로로 바꾼다(`Edit.Kind = "macro-name"`, 앱·명령줄 `add --kind macro-name`·점검·빌드). 실제 병종 파일에서 18,103곳을 바꿔 보아 모두 적용되고 다시 읽혔다 |
+| 미확인 키 49건(D1 일부) | `docs/d1-annotations`(2026-10-16): `common.psv` 26(확인 5·추정 21)·`values.psv` 20·`settings.psv` 1·`weapon-ammo.psv` 2를 바닐라 주석과 구조, 게임 확인 기록으로 올렸다. 예: `/from/swayparams/speed`(흔들림 속도 계수), `firingtimeoutdistancefactor`(거리별 사격 지연 배수 표), `**/damage/damage`(성형작약 수류탄 관통 mm), `/game/order`. R3의 환경 거리 키 셋도 같이 넣었다. 유닛 문서·수정 가능한 속성 문서를 다시 만들었다(`keys-missing=0`) |

@@ -54,7 +54,7 @@
 | `/actor/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/actor/volume/able/select` | block | []x23 | 19 | 23 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/touch` | block | []x24 | 20 | 24 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
-| `/actor/volume/able/visible` | block | []x3 [num]x2 | 5 | 5 | 0 | 미확인 | able의 하위. 값 0 |  |  |
+| `/actor/volume/able/visible` | block | []x3 [num]x2 | 5 | 5 | 0 | 추정 | 0이면 이 볼륨이 시야를 가리지 않는다 (추정: /game_entity의 같은 자리와 같다. properties/vehicle.ext 502줄 유리, 516줄 램프 볼륨이 0) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/density` | block | [num]x19 | 19 | 19 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/actor/volume/material` | block | [str]x10 | 10 | 10 | "wood" ¦ "glass" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/tags` | block | [str]x19 | 16 | 19 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
@@ -122,7 +122,7 @@
 | `/game_entity/spriteview/sprite/scale/linear/min` | block | [num]x40 | 20 | 40 | 0.15 ~ 0.3 | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/timer` | block | []x60 | 20 | 60 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/timer/duration` | block | [num]x60 | 20 | 60 | 1 ~ 2 | 미확인(자동) |  |  |  |
-| `/game_entity/spriteview/sprite/timer/mode` | block | [atom atom]x40 [atom]x20 | 20 | 60 | play loop ¦ play | 미확인 | 값 detonate |  |  |
+| `/game_entity/spriteview/sprite/timer/mode` | block | [atom atom]x40 [atom]x20 | 20 | 60 | play loop ¦ play | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/game_entity/spriteview/sprite/visibility` | block | [num]x60 | 20 | 60 | 0.3 ~ 0.5 | 미확인(자동) |  |  |  |
 | `/game_entity/texmod` | block | [str]x1 | 1 | 1 | "ger" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume` | block | [str]x412 | 410 | 412 | "body" ¦ "fuel" ¦ "body1" ¦ "body2" ¦ "select" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 |  |
@@ -275,8 +275,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/obstacleid` | block | [str]x1699 | 1694 | 1699 | "stuff" ¦ "nothing" ¦ "construction" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/actor/props` | block | [str]x1822 [str str str]x1677 [str str]x62 [str str str str str str]x16 [str str str str]x3 | 1694 | 3582 | 예: "steel" "stuff" "collectable" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/actor/rimlight` | block | []x1677 | 1677 | 1677 | 예: | 미확인 | 인자 없는 플래그. 이름으로는 윤곽 조명으로 보이나 확인하지 못함 |  |  |
-| `/actor/simulation` | block | []x1693 | 1693 | 1693 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
-| `/actor/simulation/able` | block | [num]x1693 | 1693 | 1693 | 1 | 미확인 | 값 1 |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/actor/simulation` | block | []x1693 | 1693 | 1693 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
+| `/actor/simulation/able` | block | [num]x1693 | 1693 | 1693 | 1 | 추정 | 물리 시뮬레이션을 켠다(1)·끈다(0) (추정: /game_entity/simulation/able과 같은 자리. 0은 properties/stuff_flag.ext의 깃발과 고정 열차포뿐) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/actor/simulation/disablelinked` | block | [num]x1677 | 1677 | 1677 | 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/actor/simulatorid` | block | [str]x38 | 38 | 38 | "grenade" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |
 | `/actor/skeleton` | block | []x19 | 19 | 19 | 예: | 추정 | 엔티티에 추가하는 뼈대 정의 (추정: 하위 bone/position) | 파일 구조와 값에서 추론 |  |
@@ -294,7 +294,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/volume/able/obstacle` | block | [num]x974 | 140 | 974 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/actor/volume/able/select` | block | []x3373 | 1676 | 3373 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/touch` | block | []x3567 | 1694 | 3567 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
-| `/actor/volume/able/visible` | block | [num]x5027 []x1678 | 1676 | 6705 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/actor/volume/able/visible` | block | [num]x5027 []x1678 | 1676 | 6705 | 0 | 추정 | 0이면 이 볼륨이 시야를 가리지 않는다 (추정: /game_entity의 같은 자리와 같다. properties/vehicle.ext 502줄 유리, 516줄 램프 볼륨이 0) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/actor/volume/density` | block | [num]x1750 | 1694 | 1750 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/actor/volume/material` | block | [str]x10 | 10 | 10 | "wood" ¦ "glass" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/tags` | block | [str]x19 | 16 | 19 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
@@ -315,7 +315,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/obstacleid` | block | [str]x10 | 10 | 10 | "stuff" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/entity/props` | block | [str]x13 [str str str]x10 [str str]x1 | 10 | 24 | "steel" "stuff" "collectable" ¦ "nocover" ¦ "physics_damping" ¦ "grenade" "steel" ¦ "contact" ¦ "bipod" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/entity/rimlight` | block | []x10 | 10 | 10 | 예: | 미확인 | 인자 없는 플래그. 이름으로는 윤곽 조명으로 보이나 확인하지 못함 |  |  |
-| `/entity/simulation` | block | []x10 | 10 | 10 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
+| `/entity/simulation` | block | []x10 | 10 | 10 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
 | `/entity/simulation/able` | block | [num]x10 | 10 | 10 | 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/entity/simulation/disablelinked` | block | [num]x10 | 10 | 10 | 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/entity/simulatorid` | block | [str]x1 | 1 | 1 | "grenade" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |
@@ -378,8 +378,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/props` | block | [str str str]x518 [str]x498 [str str]x290 [str str str str]x6 [str str str str str str]x5 | 526 | 1319 | 예: "air_bomb" "explosive_stuff" "steel" | 추정 | 엔티티 속성 태그 목록. 재질("steel"), 종류("vehicle"), 동작 조건 등을 나열한다 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/rimlight` | block | []x455 | 455 | 455 | 예: | 미확인 | 인자 없는 플래그. 이름으로는 윤곽 조명으로 보이나 확인하지 못함 |  |  |
 | `/game_entity/scale` | block | [num]x4 | 4 | 4 | 0.85 ~ 1.5 | 미확인(자동) |  |  |  |
-| `/game_entity/simulation` | block | []x511 | 511 | 511 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
-| `/game_entity/simulation/able` | block | [num]x511 | 511 | 511 | 1 | 미확인 | 값 0 또는 1 |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/game_entity/simulation` | block | []x511 | 511 | 511 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/simulation/able` | block | [num]x511 | 511 | 511 | 1 | 추정 | 물리 시뮬레이션을 켠다(1)·끈다(0) (추정: 0은 properties/stuff_flag.ext 4줄의 깃발과 고정 열차포 305mm_mb_2_12.def 14줄뿐이고 vehicle.ext 4줄·stuff.ext 18줄 등 나머지는 1) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/game_entity/simulation/disablelinked` | block | [num]x493 | 493 | 493 | 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/game_entity/simulation/state` | block | [num]x17 | 17 | 17 | 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
 | `/game_entity/simulatorid` | block | [str]x14 | 14 | 14 | "grenade" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |
@@ -402,7 +402,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/spriteview/sprite/scale/linear/min` | block | [num]x40 | 20 | 40 | 0.15 ~ 0.3 | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/timer` | block | []x60 | 20 | 60 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/spriteview/sprite/timer/duration` | block | [num]x60 | 20 | 60 | 1 ~ 2 | 미확인(자동) |  |  |  |
-| `/game_entity/spriteview/sprite/timer/mode` | block | [atom atom]x40 [atom]x20 | 20 | 60 | play loop ¦ play | 미확인 | 값 detonate |  |  |
+| `/game_entity/spriteview/sprite/timer/mode` | block | [atom atom]x40 [atom]x20 | 20 | 60 | play loop ¦ play | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/game_entity/spriteview/sprite/visibility` | block | [num]x60 | 20 | 60 | 0.3 ~ 0.5 | 미확인(자동) |  |  |  |
 | `/game_entity/texmod` | block | [str]x1 | 1 | 1 | "ger" | 추정 | 기본으로 쓰는 텍스처 변형 이름 (추정: 값 "ger") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume` | block | [str]x3060 | 525 | 3060 | "body" ¦ "select" ¦ "body1" ¦ "body2" ¦ "fuel" ¦ "shield" ¦ "magazine" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
@@ -415,7 +415,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/volume/able/obstacle` | block | [num]x283 | 61 | 283 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/game_entity/volume/able/select` | block | []x993 | 494 | 993 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/touch` | block | []x1324 | 495 | 1324 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
-| `/game_entity/volume/able/visible` | block | [num]x1371 []x487 | 493 | 1858 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/game_entity/volume/able/visible` | block | [num]x1371 []x487 | 493 | 1858 | 0 | 추정 | 0이면 이 볼륨이 시야를 가리지 않는다 (추정: properties/vehicle.ext 502줄 유리 {able {visible 0}{obstacle 0}{window}}, 516줄 램프, 131줄 포신 볼륨처럼 얇거나 투명한 부위에만 0) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/game_entity/volume/density` | block | [num]x510 | 494 | 510 | 0 ~ 2 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/game_entity/volume/material` | block | [str]x6 | 6 | 6 | "fabric" | 추정 | 볼륨의 재질 이름. set/material.set 참조로 보인다 (추정: 값 "wood") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/tags` | block | [str]x9 | 9 | 9 | "body" ¦ "pour_over" | 추정 | 볼륨 태그. 재질이나 부위를 나타낸다 (추정: 값 "wood", "wheel", "body") | 파일 구조와 값에서 추론 | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |

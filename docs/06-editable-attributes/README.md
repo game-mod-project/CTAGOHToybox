@@ -20,23 +20,23 @@
 | [infantry.md](infantry.md) | 본체 | 보병 정의 | `set/breed/**/*.set` | 16 | 0 | 0 | 15 | 0 | 1 |
 | [infantry.md](infantry.md) | 연관 | 능력치 매크로 | `set/breed/**/*.inc` | 91 | 0 | 0 | 73 | 18 | 0 |
 | [infantry.md](infantry.md) | 연관 | 외형 엔티티 | `entity/humanskin/**/*.def` | 18 | 0 | 6 | 7 | 0 | 5 |
-| [vehicle.md](vehicle.md) | 본체 | 차량 엔티티 | `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def` | 282 | 24 | 14 | 122 | 75 | 47 |
-| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.ext) | `entity/-vehicle/**/*.ext` | 180 | 1 | 15 | 92 | 40 | 32 |
-| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.inc) | `entity/-vehicle/**/*.inc` | 113 | 0 | 9 | 55 | 39 | 10 |
-| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.ext) | `properties/**/*.ext` | 888 | 42 | 110 | 481 | 170 | 85 |
-| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.inc) | `properties/**/*.inc` | 605 | 136 | 102 | 246 | 30 | 91 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기와 장구 정의 (확장자 없음) | `set/stuff/<폴더>/<이름>` | 157 | 42 | 7 | 60 | 23 | 25 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기 정의 (.weapon) | `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon` | 58 | 16 | 4 | 20 | 9 | 9 |
+| [vehicle.md](vehicle.md) | 본체 | 차량 엔티티 | `entity/-vehicle/<진영>/<분류>/<이름>/<이름>.def` | 282 | 24 | 14 | 130 | 75 | 39 |
+| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.ext) | `entity/-vehicle/**/*.ext` | 180 | 1 | 15 | 99 | 40 | 25 |
+| [vehicle.md](vehicle.md) | 연관 | 차량 전용 속성 (.inc) | `entity/-vehicle/**/*.inc` | 113 | 0 | 9 | 57 | 39 | 8 |
+| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.ext) | `properties/**/*.ext` | 888 | 42 | 110 | 487 | 170 | 79 |
+| [vehicle.md](vehicle.md) | 연관 | 공통 속성 (.inc) | `properties/**/*.inc` | 605 | 136 | 102 | 247 | 30 | 90 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기와 장구 정의 (확장자 없음) | `set/stuff/<폴더>/<이름>` | 157 | 43 | 7 | 66 | 23 | 18 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 무기 정의 (.weapon) | `set/stuff/{reactive,mortar,bazooka,explosive}/*.weapon` | 58 | 16 | 4 | 22 | 9 | 7 |
 | [weapon-ammo.md](weapon-ammo.md) | 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 10 | 3 | 30 | 23 | 13 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 3 | 0 | 13 | 0 | 4 |
+| [weapon-ammo.md](weapon-ammo.md) | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 4 | 0 | 14 | 0 | 2 |
 | [weapon-ammo.md](weapon-ammo.md) | 본체 | 지뢰와 폭발물 (.mine) | `set/stuff/explosive/*.mine` | 8 | 2 | 0 | 6 | 0 | 0 |
 | [weapon-ammo.md](weapon-ammo.md) | 연관 | 투척 원형 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
-| [weapon-ammo.md](weapon-ammo.md) | 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 53 | 9 | 61 | 8 | 24 |
-| [weapon-ammo.md](weapon-ammo.md) | 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 21 | 335 | 48 | 99 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 54 | 9 | 65 | 8 | 19 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 21 | 401 | 48 | 33 |
 | [weapon-ammo.md](weapon-ammo.md) | 연관 | 무기 상태 설정 (.fsm) | `set/stuff/_settings/*.fsm` | 5 | 0 | 0 | 5 | 0 | 0 |
 | [weapon-ammo.md](weapon-ammo.md) | 연관 | 폭발 계산 매크로 | `set/blast.inc` | 71 | 0 | 0 | 53 | 0 | 18 |
-| [item-entity.md](item-entity.md) | 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 4 | 44 | 0 | 28 |
-| 합계 | | | | 3372 | 364 | 304 | 1726 | 483 | 495 |
+| [item-entity.md](item-entity.md) | 본체 | 아이템 엔티티 | `entity/inventory/**/*.def` | 78 | 2 | 4 | 46 | 0 | 26 |
+| 합계 | | | | 3372 | 367 | 304 | 1831 | 483 | 387 |
 
 ## 표 읽는 법
 

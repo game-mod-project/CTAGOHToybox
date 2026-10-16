@@ -3,5 +3,5 @@
 **/damage|block|추정|피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...})|S
 **/damage/radius|block|추정|피해가 미치는 반경, 미터 (추정: 이름. 값 1.05)|S
 **/damage/time|block|추정|피해가 이어지는 시간, 초 (추정: 이름과 원문 주석 "seconds")|S
-**/special/damage|block|미확인|값 5. 특수 사격(special) 설정의 하위|
-**/damage/damage|block|미확인|수류탄의 damage 하위. 값 31 ~ 150|
+**/special/damage|block|추정|저격 조준 사격(aimed shot)의 피해 배수로 보인다 (추정: 저격 소총 패턴의 special 안 {mode aim} 옆에 accuracy와 함께 있고 값이 2~5. 소총 피해 70 같은 값에 비해 작다. set/ability/avoidance.set 7줄 주석이 aimed sniper shot을 따로 다룬다)|S
+**/damage/damage|block|확인|성형작약(damage cumulative) 수류탄의 관통력, mm (확인: set/stuff/grenade/anti-tank grenade/rpg43.grenade 8줄 주석 "= 75mm of penetration", pwm_l.grenade 8줄 "= 150mm of penetration". 바닐라 4곳 모두 cumulative 안)|C

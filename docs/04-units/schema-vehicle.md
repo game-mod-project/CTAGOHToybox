@@ -196,7 +196,7 @@
 | `/game_entity/(define "crew_human_visible_anm")/placer/place` | block | [str param]x1 | 1 | 1 | "%place" %extra | 미확인(자동) |  |  | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/game_entity/(define "crew_human_visible_anm")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 추정 | 자리의 분류. 값 "crew" 등 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/(define "crew_human_visible_anm")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
-| `/game_entity/(define "crew_human_visible_anm")/placer/place/turnoff` | block | [param]x1 | 1 | 1 | %off | 미확인 | 하위에 sensor |  |  |
+| `/game_entity/(define "crew_human_visible_anm")/placer/place/turnoff` | block | [param]x1 | 1 | 1 | %off | 추정 | 이 승무원 자리에서 끄는 기능 목록. 하위 targetable, sensor (추정: archer.def 59줄 {turnoff {targetable}}의 주석 "sits out of view from top of turret". properties/tank_crew.ext 22줄 {turnoff {sensor}}) | 게임 파일 주석 |  |
 | `/game_entity/(define "crew_human_visible_anm")/placer/place/visor` | block | [str]x1 | 1 | 1 | "%visor" | 미확인(자동) |  |  |  |
 | `/game_entity/(define "crew_human")` | define | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/(define "crew_human")/boarder` | block | []x6 | 6 | 6 | 예: | 추정 | 탑승·하차 정의 묶음 (추정: 하위 anm, door, link) | 파일 구조와 값에서 추론 |  |
@@ -209,7 +209,7 @@
 | `/game_entity/(define "crew_human")/placer/place` | block | [str]x6 | 6 | 6 | "%place" | 미확인(자동) |  |  | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/game_entity/(define "crew_human")/placer/place/group` | block | [str]x6 | 6 | 6 | "crew" ¦ "%group" | 추정 | 자리의 분류. 값 "crew" 등 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/(define "crew_human")/placer/place/linkbone` | block | [str]x4 | 4 | 4 | "%bone" ¦ "%place" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
-| `/game_entity/(define "crew_human")/placer/place/turnoff` | block | []x3 [param]x3 | 6 | 6 | ¦ %off | 미확인 | 하위에 sensor |  |  |
+| `/game_entity/(define "crew_human")/placer/place/turnoff` | block | []x3 [param]x3 | 6 | 6 | ¦ %off | 추정 | 이 승무원 자리에서 끄는 기능 목록. 하위 targetable, sensor (추정: archer.def 59줄 {turnoff {targetable}}의 주석 "sits out of view from top of turret". properties/tank_crew.ext 22줄 {turnoff {sensor}}) | 게임 파일 주석 |  |
 | `/game_entity/(define "crew_human")/placer/place/turnoff/sensor` | block | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/(define "crew_human")/placer/place/turnoff/shadow` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/(define "crew_human")/placer/place/visor` | block | [str]x4 | 4 | 4 | "%visor" | 미확인(자동) |  |  |  |
@@ -224,7 +224,7 @@
 | `/game_entity/(define "crew")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/game_entity/(define "crew")/placer/place/group` | block | [str]x1 | 1 | 1 | "%group" | 추정 | 자리의 분류. 값 "crew" 등 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/(define "crew")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
-| `/game_entity/(define "crew")/placer/place/turnoff` | block | [param]x1 | 1 | 1 | %off | 미확인 | 하위에 sensor |  |  |
+| `/game_entity/(define "crew")/placer/place/turnoff` | block | [param]x1 | 1 | 1 | %off | 추정 | 이 승무원 자리에서 끄는 기능 목록. 하위 targetable, sensor (추정: archer.def 59줄 {turnoff {targetable}}의 주석 "sits out of view from top of turret". properties/tank_crew.ext 22줄 {turnoff {sensor}}) | 게임 파일 주석 |  |
 | `/game_entity/(define "crew")/placer/place/turnoff/shadow` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/(define "restore_ik_time")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/(define "restore_ik_time")/restoreiktime` | block | [num]x1 | 1 | 1 | 4 | 미확인 | 값 4~10 |  |  |
@@ -246,11 +246,11 @@
 | `/game_entity/boarder` | block | []x597 | 595 | 597 | 예: | 추정 | 탑승·하차 정의 묶음 (추정: 하위 anm, door, link) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm` | block | [str]x3896 | 595 | 3896 | 예: "driver" | 추정 | 좌석별 탑승 애니메이션. 문자열이 좌석 이름 (추정: 값 "driver", "gunner") | 파일 구조와 값에서 추론 | gunner ¦ commander |
 | `/game_entity/boarder/anm/forward` | block | []x3896 | 595 | 3896 | 예: | 추정 | 탑승 방향의 애니메이션 묶음 (추정: 하위 begin, end) | 파일 구조와 값에서 추론 | placeholder pose ¦ 4 |
-| `/game_entity/boarder/anm/forward/base` | block | [str]x647 [str num]x1 | 326 | 648 | 예: "open" | 미확인 | 값 "open" 또는 "open" -1 |  |  |
+| `/game_entity/boarder/anm/forward/base` | block | [str]x647 [str num]x1 | 326 | 648 | 예: "open" | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm/forward/begin` | block | [str]x2080 | 409 | 2080 | 예: "board_plane_left" | 추정 | 동작을 시작할 때의 애니메이션 이름 (추정: 값 "board_torpedo_boat") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm/forward/end` | block | [str]x1899 [str num]x1811 | 593 | 3710 | 예: "seat_driver_car" | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm/reverse` | block | []x2081 | 410 | 2081 | 예: | 추정 | 하차 방향의 애니메이션 묶음 (추정: 하위 end 값이 emit_...) | 파일 구조와 값에서 추론 |  |
-| `/game_entity/boarder/anm/reverse/base` | block | [str]x412 [str num]x235 | 318 | 647 | 예: "open" -1 | 미확인 | 값 "open" 또는 "open" -1 |  |  |
+| `/game_entity/boarder/anm/reverse/base` | block | [str]x412 [str num]x235 | 318 | 647 | 예: "open" -1 | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm/reverse/end` | block | [str]x1719 [str num]x361 | 409 | 2080 | 예: "board_plane_left" -1 | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/door` | block | [str]x5 | 3 | 5 | "emit" ¦ "emit1" ¦ "emit0" | 추정 | 출입 지점 이름 (추정: 값 "emit1") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/link` | block | [str str]x8 | 6 | 8 | "driver" "gunner" ¦ "emit" "driver" ¦ "emit1" "driver" ¦ "emit0" "driver" | 확인 | 출입 지점과 좌석의 연결. { link <from> <to> } | 게임 파일 주석 |  |
@@ -359,15 +359,15 @@
 | `/game_entity/obstacleid` | block | [str]x2 | 2 | 2 | "unbreakable" | 추정 | 장애물 분류 이름 (추정: 값 "tank", "stuff") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/patherid` | block | [str]x563 | 563 | 563 | 예: "blenheim" | 추정 | 길찾기 분류 이름 (추정: 값 "vehicle.large". set/PATHER.SET 참조로 보임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer` | block | []x80 | 77 | 80 | 예: | 추정 | 승무원 자리 정의 묶음 (추정: 하위 place) | 파일 구조와 값에서 추론 | sits out of view from top of turret |
-| `/game_entity/placer/crew` | block | [num]x3 | 3 | 3 | 0 | 미확인 | 값 0 또는 인자 없음 |  |  |
+| `/game_entity/placer/crew` | block | [num]x3 | 3 | 3 | 0 | 추정 | 승무원이 타는 엔티티임을 표시한다. 0이면 승무원이 없다 (추정: properties/vehicle.ext 35줄 {placer {crew}}가 모든 차량에 들어가고, 원격 조종 폭약 차량 sdkfz302.def 36~37줄과 자동 운용 열차포 305mm_mb_2_12.def 72~74줄만 {crew 0}과 함께 자리를 지움) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place` | block | [str]x124 [str atom]x52 | 77 | 176 | 예: "driver" | 추정 | 승무원 자리 하나. 문자열이 자리 이름 (추정: 값 "driver") | 파일 구조와 값에서 추론 | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/game_entity/placer/place/attach` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/entity` | block | [str]x40 | 10 | 40 | "lee_enfield_no1_mk3" ¦ "76mm_rus_he" ¦ "76mm_rus_apcr" ¦ "ammo_boxes_01" ¦ "ammo_boxes_04" ¦ "crate4" ¦ "ammo_boxes_03" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place/group` | block | [str]x10 | 10 | 10 | "crew" | 추정 | 자리의 분류. 값 "crew" 등 (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place/handlebone` | block | [str]x46 | 13 | 46 | "body" ¦ "basis" | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/linkbone` | block | [str]x48 | 15 | 48 | 예: "weapon1" | 추정 | 승무원을 붙이는 뼈대 이름 (추정: 값 "driver") | 파일 구조와 값에서 추론 |  |
-| `/game_entity/placer/place/turnoff` | block | []x42 | 29 | 42 | 예: | 미확인 | 하위에 sensor |  |  |
-| `/game_entity/placer/place/turnoff/sensor` | block | [num]x6 []x2 | 4 | 8 | 0 | 미확인 | 값 0 또는 인자 없음 |  |  |
+| `/game_entity/placer/place/turnoff` | block | []x42 | 29 | 42 | 예: | 추정 | 이 승무원 자리에서 끄는 기능 목록. 하위 targetable, sensor (추정: archer.def 59줄 {turnoff {targetable}}의 주석 "sits out of view from top of turret". properties/tank_crew.ext 22줄 {turnoff {sensor}}) | 게임 파일 주석 |  |
+| `/game_entity/placer/place/turnoff/sensor` | block | [num]x6 []x2 | 4 | 8 | 0 | 추정 | 이 자리의 승무원이 감지(sensor)를 쓰지 않게 한다 (추정: turnoff의 하위이고 같은 자리의 targetable은 archer.def 59줄 주석이 "보이지 않는 자리"로 설명한다. 이름) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place/turnoff/shadow` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/turnoff/targetable` | block | []x30 [num]x10 | 27 | 40 | 0 | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/usevision` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
@@ -378,8 +378,8 @@
 | `/game_entity/sensor/visor` | block | [str]x301 | 201 | 301 | 예: "rear" | 추정 | 감지기 하나. 문자열이 이름 (추정: 값 "hearing") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/sensor/visor/bone` | block | [str]x160 | 121 | 160 | 예: "foresight6" | 추정 | 감지기의 기준 뼈대 (추정: 값 "hearing_bone") | 파일 구조와 값에서 추론 | Boys rot ¦ turret |
 | `/game_entity/sensor/visor/vision` | block | [str]x272 | 187 | 272 | 예: "airborne_main" | 추정 | 시야·청각 프로필 이름. set/vision 참조로 보인다 (추정: 값 "noise_detection") | 파일 구조와 값에서 추론 | better vision than a in-closed turret |
-| `/game_entity/simulation` | block | []x4 | 4 | 4 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
-| `/game_entity/simulation/able` | block | [num]x4 | 4 | 4 | 0 ~ 1 | 미확인 | 값 0 또는 1 |  |  |
+| `/game_entity/simulation` | block | []x4 | 4 | 4 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/simulation/able` | block | [num]x4 | 4 | 4 | 0 ~ 1 | 추정 | 물리 시뮬레이션을 켠다(1)·끈다(0) (추정: 0은 properties/stuff_flag.ext 4줄의 깃발과 고정 열차포 305mm_mb_2_12.def 14줄뿐이고 vehicle.ext 4줄·stuff.ext 18줄 등 나머지는 1) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/simulation/disablelinked` | block | [num]x3 | 3 | 3 | 0 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/game_entity/targetclass` | block | [str]x562 [str str]x12 | 574 | 574 | "tank_medium" ¦ "howitzer" ¦ "tank_light" ¦ "armoredcar" ¦ "tank_heavy" ¦ "cannon_big" ¦ "cannon_small" ¦ "car" ¦ "cannon_zenite" ¦ "armoredcar" "bullet" ¦ "cannon_bullet" ¦ "armoredcar_l" | 추정 | 표적 분류. 다른 유닛이 이 엔티티를 어떤 종류의 표적으로 보는지 (추정: 값 "airborne") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/targetselector` | block | [str]x579 | 579 | 579 | 예: "tank_light" | 추정 | 표적 선택 규칙 이름 (추정: 값 "airborne_bullet". set/target 참조로 보임) | 파일 구조와 값에서 추론 |  |
@@ -389,12 +389,12 @@
 | `/game_entity/volume/able/contact` | block | [num]x139 []x4 | 57 | 143 | 0 ~ 1 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/contact_ground` | block | [num]x6 | 3 | 6 | 0 | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/float` | block | []x17 | 3 | 17 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/volume/able/hole` | block | []x3 | 2 | 3 | 예: | 미확인 | able의 하위 플래그. 관통 흔적과 관련된 것으로 보이나 확인하지 못함 |  |  |
-| `/game_entity/volume/able/holed` | block | []x1266 | 659 | 1266 | 예: | 미확인 | able의 하위 플래그. hole과의 차이 불명 |  |  |
+| `/game_entity/volume/able/hole` | block | []x3 | 2 | 3 | 예: | 추정 | 다른 볼륨(holed)을 잘라 내는 구멍 볼륨임을 표시한다 (추정: properties/vehicle.ext 461~466줄 "holes" 매크로가 이름 hole0~25인 볼륨에 {able clear {hole}} {density 0}만 준다. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/able/holed` | block | []x1266 | 659 | 1266 | 예: | 추정 | hole 볼륨으로 구멍이 뚫릴 수 있는 볼륨임을 표시한다 (추정: properties/vehicle.ext 581·586줄 궤도 볼륨에 {holed}. hole은 잘라 내는 쪽, holed는 잘리는 쪽. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/nolook` | block | [num]x4 | 3 | 4 | 1 | 미확인 | able의 하위. 값 1 |  |  |
 | `/game_entity/volume/able/nowounddecal` | block | [num]x57 []x18 | 53 | 75 | 0 | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/obstacle` | block | [num]x1435 | 493 | 1435 | 0 | 미확인 | able의 하위. 값 0 |  |  |
-| `/game_entity/volume/able/visible` | block | [num]x87 | 46 | 87 | 0 | 미확인 | able의 하위. 값 0 |  |  |
+| `/game_entity/volume/able/visible` | block | [num]x87 | 46 | 87 | 0 | 추정 | 0이면 이 볼륨이 시야를 가리지 않는다 (추정: properties/vehicle.ext 502줄 유리 {able {visible 0}{obstacle 0}{window}}, 516줄 램프, 131줄 포신 볼륨처럼 얇거나 투명한 부위에만 0) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/caststeel` | block | [num]x913 | 144 | 913 | 0.8063 | 확인 | 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | 게임 파일 주석 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/game_entity/volume/component` | block | [str]x64 | 44 | 64 | "body" ¦ "turret" ¦ "gun" ¦ "engine" ¦ "bodyback" ¦ "gun1" ¦ "gun2" | 추정 | 이 볼륨이 속한 부품 이름 (추정: vehicle.ext의 wheel 매크로가 {volume %0 {component %0}}) | 파일 구조와 값에서 추론 | Bucket |
 | `/game_entity/volume/density` | block | [num]x9 | 7 | 9 | 0 ~ 0.1 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
@@ -1152,11 +1152,11 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/boarder` | block | []x730 | 58 | 730 | 예: | 추정 | 탑승·하차 정의 묶음 (추정: 하위 anm, door, link) | 파일 구조와 값에서 추론 |  |
 | `/actor/boarder/anm` | block | [str]x513 | 56 | 513 | 예: "gunner" | 미확인(자동) |  |  | gunner ¦ commander |
 | `/actor/boarder/anm/forward` | block | []x513 | 56 | 513 | 예: | 미확인(자동) |  |  | placeholder pose ¦ 4 |
-| `/actor/boarder/anm/forward/base` | block | [str]x14 | 14 | 14 | "open_driver" | 미확인 | 값 "open" 또는 "open" -1 |  | seconds : CP |
+| `/actor/boarder/anm/forward/base` | block | [str]x14 | 14 | 14 | "open_driver" | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 | seconds : CP |
 | `/actor/boarder/anm/forward/begin` | block | [str]x96 | 14 | 96 | "board_tank" ¦ "board_HighArmor" ¦ "board_LowArmor" ¦ "board_Kv-85" ¦ "board_Is-2" ¦ "board_t26_driver" ¦ "board_tank_right" ¦ "board_kv2_driver" ¦ "board_MiddleArmor" ¦ "board_tank_left" ¦ "board_t34_driver" ¦ "board_kv" | 추정 | 동작을 시작할 때의 애니메이션 이름 (추정: 값 "board_torpedo_boat") | 파일 구조와 값에서 추론 |  |
 | `/actor/boarder/anm/forward/end` | block | [str num]x367 [str]x106 | 56 | 473 | 예: "pose_qf2_gunner" 10 | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/actor/boarder/anm/reverse` | block | []x96 | 14 | 96 | 예: | 미확인(자동) |  |  |  |
-| `/actor/boarder/anm/reverse/base` | block | [str num]x6 [str]x4 | 10 | 10 | "open_driver" -1 ¦ "close_driver" | 미확인 | 값 "open" 또는 "open" -1 |  | seconds : CP |
+| `/actor/boarder/anm/reverse/base` | block | [str num]x6 [str]x4 | 10 | 10 | "open_driver" -1 ¦ "close_driver" | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 | seconds : CP |
 | `/actor/boarder/anm/reverse/end` | block | [str]x90 [str num]x6 | 14 | 96 | "emit_tank_1_hold" ¦ "emit_body" ¦ "emit_tank_2_hold" ¦ "emit_tank_2" ¦ "board_t26_driver" -1 ¦ "emit_tank_1" ¦ "emit_t34_hold" | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/actor/boarder/door` | block | [str]x659 | 56 | 659 | "emit1" ¦ "emit2" ¦ "emit3" ¦ "emit4" ¦ "emit5" ¦ "emit6" ¦ "emit0" ¦ "emit7" ¦ "emit8" ¦ "emit9" | 추정 | 출입 지점 이름 (추정: 값 "emit1") | 파일 구조와 값에서 추론 |  |
 | `/actor/boarder/link` | block | [str str]x957 | 56 | 957 | 예: "emit1" "gunner" | 미확인(자동) |  |  | { link <from> <to> } |
@@ -1294,8 +1294,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/sensor/visor` | block | [str]x202 | 58 | 202 | "hearing" ¦ "main" ¦ "driver" ¦ "around" ¦ "human" ¦ "none" ¦ "back" ¦ "gunner3" ¦ "gunner4" | 미확인(자동) |  |  |  |
 | `/actor/sensor/visor/bone` | block | [str]x181 | 58 | 181 | "hearing_bone" ¦ "visor" ¦ "foresight1" ¦ "visor2" ¦ "visor1" ¦ "visor3" ¦ "foresight6" ¦ "foresight4" ¦ "foresight5" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/actor/sensor/visor/vision` | block | [str]x202 | 58 | 202 | "noise_detection" ¦ "cannon_main" ¦ "tank_range_200" ¦ "tank_driver" ¦ "human" ¦ "none" ¦ "tank_around" ¦ "tank_rear-mg" ¦ "cannon_range_210" ¦ "vehicle_around" ¦ "recon_main" ¦ "cannon_mortar" | 추정 | 시야·청각 프로필 이름. set/vision 참조로 보인다 (추정: 값 "noise_detection") | 파일 구조와 값에서 추론 | better vision than a in-closed turret |
-| `/actor/simulation` | block | []x69 | 58 | 69 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
-| `/actor/simulation/able` | block | [num]x69 | 58 | 69 | 1 | 미확인 | 값 1 |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/actor/simulation` | block | []x69 | 58 | 69 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
+| `/actor/simulation/able` | block | [num]x69 | 58 | 69 | 1 | 추정 | 물리 시뮬레이션을 켠다(1)·끈다(0) (추정: /game_entity/simulation/able과 같은 자리. 0은 properties/stuff_flag.ext의 깃발과 고정 열차포뿐) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/actor/simulation/disablelinked` | block | [num]x11 | 11 | 11 | 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/actor/skeleton` | block | []x47 | 47 | 47 | 예: | 추정 | 엔티티에 추가하는 뼈대 정의 (추정: 하위 bone/position) | 파일 구조와 값에서 추론 |  |
 | `/actor/skeleton/bone` | block | [str]x47 | 47 | 47 | "hearing_bone" | 미확인(자동) |  |  | Boys rot ¦ turret |
@@ -1306,14 +1306,14 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/volume/able` | block | []x3402 [atom]x1634 | 58 | 5036 | ¦ clear | 추정 | 볼륨이 반응하는 상호작용 묶음 (추정: 하위 플래그) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/actor/volume/able/contact` | block | [num]x2220 | 47 | 2220 | 0 ~ 1 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/contact_ground` | block | [num]x56 | 14 | 56 | 0 | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
-| `/actor/volume/able/hole` | block | []x1508 | 58 | 1508 | 예: | 미확인 | able의 하위 플래그. 관통 흔적과 관련된 것으로 보이나 확인하지 못함 |  |  |
-| `/actor/volume/able/holed` | block | []x96 | 37 | 96 | 예: | 미확인 | able의 하위 플래그. hole과의 차이 불명 |  |  |
+| `/actor/volume/able/hole` | block | []x1508 | 58 | 1508 | 예: | 추정 | 다른 볼륨(holed)을 잘라 내는 구멍 볼륨임을 표시한다 (추정: properties/vehicle.ext 461~466줄 "holes" 매크로가 이름 hole0~25인 볼륨에 {able clear {hole}} {density 0}만 준다. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
+| `/actor/volume/able/holed` | block | []x96 | 37 | 96 | 예: | 추정 | hole 볼륨으로 구멍이 뚫릴 수 있는 볼륨임을 표시한다 (추정: properties/vehicle.ext 581·586줄 궤도 볼륨에 {holed}. hole은 잘라 내는 쪽, holed는 잘리는 쪽. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/nolook` | block | [num]x2658 | 58 | 2658 | 1 | 미확인 | able의 하위. 값 1 |  |  |
 | `/actor/volume/able/nowounddecal` | block | []x694 | 58 | 694 | 예: | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/obstacle` | block | [num]x2112 | 47 | 2112 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/actor/volume/able/select` | block | []x58 | 58 | 58 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
 | `/actor/volume/able/touch` | block | []x58 | 58 | 58 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
-| `/actor/volume/able/visible` | block | [num]x2668 | 58 | 2668 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/actor/volume/able/visible` | block | [num]x2668 | 58 | 2668 | 0 | 추정 | 0이면 이 볼륨이 시야를 가리지 않는다 (추정: /game_entity의 같은 자리와 같다. properties/vehicle.ext 502줄 유리, 516줄 램프 볼륨이 0) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/actor/volume/caststeel` | block | [num]x78 | 8 | 78 | 0.6 ~ 0.8063 | 확인 | 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | 게임 파일 주석 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/actor/volume/component` | block | [str]x5724 | 58 | 5724 | 예: "body" | 미확인(자동) |  |  | Bucket |
 | `/actor/volume/density` | block | [num]x1624 | 58 | 1624 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
@@ -1372,11 +1372,11 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/boarder` | block | []x6 | 1 | 6 | 예: | 추정 | 탑승·하차 정의 묶음 (추정: 하위 anm, door, link) | 파일 구조와 값에서 추론 |  |
 | `/entity/boarder/anm` | block | [str]x4 | 1 | 4 | "driver" ¦ "passenger" ¦ "commander" | 미확인(자동) |  |  | gunner ¦ commander |
 | `/entity/boarder/anm/forward` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  | placeholder pose ¦ 4 |
-| `/entity/boarder/anm/forward/base` | block | [str]x4 | 1 | 4 | "doordriver" ¦ "doorpassenger" ¦ "doorcommander" ¦ "%base" | 미확인 | 값 "open" 또는 "open" -1 |  | seconds : CP |
+| `/entity/boarder/anm/forward/base` | block | [str]x4 | 1 | 4 | "doordriver" ¦ "doorpassenger" ¦ "doorcommander" ¦ "%base" | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 | seconds : CP |
 | `/entity/boarder/anm/forward/begin` | block | [str]x4 | 1 | 4 | "board_bigcar" ¦ "board_body" | 추정 | 동작을 시작할 때의 애니메이션 이름 (추정: 값 "board_torpedo_boat") | 파일 구조와 값에서 추론 |  |
 | `/entity/boarder/anm/forward/end` | block | [str]x4 | 1 | 4 | "seat_passenger" ¦ "seat_driver_car" ¦ "seat_universal_driver" | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/entity/boarder/anm/reverse` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
-| `/entity/boarder/anm/reverse/base` | block | [str]x4 | 1 | 4 | "doordriver" ¦ "doorpassenger" ¦ "doorcommander" ¦ "%base" | 미확인 | 값 "open" 또는 "open" -1 |  | seconds : CP |
+| `/entity/boarder/anm/reverse/base` | block | [str]x4 | 1 | 4 | "doordriver" ¦ "doorpassenger" ¦ "doorcommander" ¦ "%base" | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 | seconds : CP |
 | `/entity/boarder/anm/reverse/end` | block | [str num]x4 | 1 | 4 | "board_bigcar" -1 ¦ "board_body" -1 | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/entity/boarder/door` | block | [str]x1 | 1 | 1 | "emit1" | 추정 | 출입 지점 이름 (추정: 값 "emit1") | 파일 구조와 값에서 추론 |  |
 | `/entity/boarder/link` | block | [str str]x1 | 1 | 1 | "emit1" "driver" | 미확인(자동) |  |  | { link <from> <to> } |
@@ -1463,7 +1463,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/placer/place` | block | [str]x2 | 1 | 2 | "driver" | 미확인(자동) |  |  | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/entity/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 추정 | 자리의 분류. 값 "crew" 등 (추정: 값) | 파일 구조와 값에서 추론 | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
 | `/entity/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "driver" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
-| `/entity/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인 | 하위에 sensor |  |  |
+| `/entity/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 추정 | 이 승무원 자리에서 끄는 기능 목록. 하위 targetable, sensor (추정: archer.def 59줄 {turnoff {targetable}}의 주석 "sits out of view from top of turret". properties/tank_crew.ext 22줄 {turnoff {sensor}}) | 게임 파일 주석 |  |
 | `/entity/placer/place/turnoff/targetable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/entity/placer/place/usevision` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/entity/placer/place/visor` | block | [str]x1 | 1 | 1 | "main" | 미확인(자동) |  |  |  |
@@ -1475,14 +1475,14 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/sensor/visor` | block | [str]x4 | 1 | 4 | "hearing" ¦ "main" ¦ "around" ¦ "none" | 미확인(자동) |  |  |  |
 | `/entity/sensor/visor/bone` | block | [str]x3 | 1 | 3 | "hearing_bone" ¦ "visor2" ¦ "visor1" | 미확인(자동) |  |  | Boys rot ¦ turret |
 | `/entity/sensor/visor/vision` | block | [str]x4 | 1 | 4 | "noise_detection" ¦ "vehicle_main" ¦ "human_peripheral" ¦ "none" | 추정 | 시야·청각 프로필 이름. set/vision 참조로 보인다 (추정: 값 "noise_detection") | 파일 구조와 값에서 추론 | better vision than a in-closed turret |
-| `/entity/simulation` | block | []x1 | 1 | 1 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
+| `/entity/simulation` | block | []x1 | 1 | 1 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
 | `/entity/simulation/able` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/entity/targetclass` | block | [str]x1 | 1 | 1 | "car" | 추정 | 표적 분류. 다른 유닛이 이 엔티티를 어떤 종류의 표적으로 보는지 (추정: 값 "airborne") | 파일 구조와 값에서 추론 |  |
 | `/entity/targetselector` | block | [str]x1 | 1 | 1 | "car_bullet" | 추정 | 표적 선택 규칙 이름 (추정: 값 "airborne_bullet". set/target 참조로 보임) | 파일 구조와 값에서 추론 |  |
 | `/entity/volume` | block | [str]x216 | 1 | 216 | 예: "select" | 추정 | 모델의 충돌 볼륨 하나에 대한 설정. 첫 문자열이 볼륨 이름 (추정: properties/vehicle.ext의 매크로가 {volume %0 ...} 형태) | 파일 구조와 값에서 추론 | Hull ¦ Superstructure |
 | `/entity/volume/able` | block | [atom]x28 []x16 | 1 | 44 | clear ¦ | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/entity/volume/able/contact` | block | [num]x4 | 1 | 4 | 0 ~ 1 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
-| `/entity/volume/able/hole` | block | []x26 | 1 | 26 | 예: | 미확인 | able의 하위 플래그. 관통 흔적과 관련된 것으로 보이나 확인하지 못함 |  |  |
+| `/entity/volume/able/hole` | block | []x26 | 1 | 26 | 예: | 추정 | 다른 볼륨(holed)을 잘라 내는 구멍 볼륨임을 표시한다 (추정: properties/vehicle.ext 461~466줄 "holes" 매크로가 이름 hole0~25인 볼륨에 {able clear {hole}} {density 0}만 준다. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
 | `/entity/volume/able/nowounddecal` | block | []x14 | 1 | 14 | 예: | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/entity/volume/able/select` | block | []x1 | 1 | 1 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
 | `/entity/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
@@ -1537,11 +1537,11 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/boarder` | block | []x8192 | 763 | 8192 | 예: | 추정 | 탑승·하차 정의 묶음 (추정: 하위 anm, door, link) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm` | block | [str]x5676 | 682 | 5676 | 예: "driver" | 추정 | 좌석별 탑승 애니메이션. 문자열이 좌석 이름 (추정: 값 "driver", "gunner") | 파일 구조와 값에서 추론 | gunner ¦ commander |
 | `/game_entity/boarder/anm/forward` | block | []x5676 | 682 | 5676 | 예: | 추정 | 탑승 방향의 애니메이션 묶음 (추정: 하위 begin, end) | 파일 구조와 값에서 추론 | placeholder pose ¦ 4 |
-| `/game_entity/boarder/anm/forward/base` | block | [str]x1045 [str num]x1 | 385 | 1046 | 예: "open" | 미확인 | 값 "open" 또는 "open" -1 |  | seconds : CP |
+| `/game_entity/boarder/anm/forward/base` | block | [str]x1045 [str num]x1 | 385 | 1046 | 예: "open" | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 | seconds : CP |
 | `/game_entity/boarder/anm/forward/begin` | block | [str]x3332 | 478 | 3332 | 예: "board_plane_left" | 추정 | 동작을 시작할 때의 애니메이션 이름 (추정: 값 "board_torpedo_boat") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm/forward/end` | block | [str]x2753 [str num]x2151 | 680 | 4904 | 예: "seat_driver_car" | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/anm/reverse` | block | []x3433 | 479 | 3433 | 예: | 추정 | 하차 방향의 애니메이션 묶음 (추정: 하위 end 값이 emit_...) | 파일 구조와 값에서 추론 |  |
-| `/game_entity/boarder/anm/reverse/base` | block | [str]x739 [str num]x305 | 376 | 1044 | 예: "open" -1 | 미확인 | 값 "open" 또는 "open" -1 |  | seconds : CP |
+| `/game_entity/boarder/anm/reverse/base` | block | [str]x739 [str num]x305 | 376 | 1044 | 예: "open" -1 | 추정 | boarder anm 안에서는 타고 내릴 때 차량 쪽에서 재생하는 애니메이션(문·해치 열기). 뒤의 -1은 거꾸로 재생 (추정: properties/car_crew.ext 6~7줄 매크로가 base(doordriver) 등을 넣고, 값이 "open_driver", "doorleft" 같은 문 이름. -1은 bicycle.ext 40줄 reverse의 {end "board_moto_driver" -1}과 같은 꼴) | 파일 구조와 값에서 추론 | seconds : CP |
 | `/game_entity/boarder/anm/reverse/end` | block | [str]x2730 [str num]x702 | 478 | 3432 | 예: "board_plane_left" -1 | 추정 | 동작이 끝난 뒤의 자세 애니메이션 이름 (추정: 값 "seat_driver_car") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/door` | block | [str]x7794 | 682 | 7794 | 예: "emit1" | 추정 | 출입 지점 이름 (추정: 값 "emit1") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/boarder/link` | block | [str str]x9325 | 682 | 9325 | 예: "emit1" "driver" | 확인 | 출입 지점과 좌석의 연결. { link <from> <to> } | 게임 파일 주석 | { link <from> <to> } |
@@ -1632,7 +1632,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/decalview/sprite/prescaley` | block | [num]x2277 | 754 | 2277 | 0.175 ~ 0.9 | 추정 | 그림의 세로 배율 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/decalview/sprite/visibility` | block | [num]x31 | 31 | 31 | 0.25 | 미확인(자동) |  |  |  |
 | `/game_entity/decalview/usedirection` | block | []x2277 | 754 | 2277 | 예: | 미확인 | 인자 없는 플래그 |  |  |
-| `/game_entity/decalview/visible` | block | [num]x2308 | 754 | 2308 | 0 | 미확인 | 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/game_entity/decalview/visible` | block | [num]x2308 | 754 | 2308 | 0 | 추정 | 0이면 이 지면 표시를 처음에는 그리지 않는다 (추정: properties/selection/vehicle_selected.inc 2줄처럼 선택될 때만 보이는 선택 표시와 resupply.inc 814줄 보급 구역 표시가 모두 {visible 0}) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/game_entity/extender[cannon]` | block | [str]x253 | 206 | 253 | "cannon" | 추정 | 화포 운용 기능. 밀기·사격·견인 상태를 정의한다 (추정: 하위 블록의 주석) | 게임 파일 주석 |  |
 | `/game_entity/extender[cannon]/##` | block | [atom]x1 | 1 | 1 | animation | 미확인(자동) |  |  | No longer used? |
 | `/game_entity/extender[cannon]/##/aim` | block | [str str]x1 | 1 | 1 | "" "" | 미확인(자동) |  |  |  |
@@ -1712,7 +1712,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/perks/component/health/hp` | block | [num]x22291 | 763 | 22291 | 1 ~ 750 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/perks/component/health/hp_broken` | block | [num]x9473 [expr]x952 | 763 | 10425 | 1 ~ 1350 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/game_entity/placer` | block | []x7117 | 763 | 7117 | 예: | 추정 | 승무원 자리 정의 묶음 (추정: 하위 place) | 파일 구조와 값에서 추론 | sits out of view from top of turret |
-| `/game_entity/placer/crew` | block | []x763 [num]x3 | 763 | 766 | 0 | 미확인 | 값 0 또는 인자 없음 |  |  |
+| `/game_entity/placer/crew` | block | []x763 [num]x3 | 763 | 766 | 0 | 추정 | 승무원이 타는 엔티티임을 표시한다. 0이면 승무원이 없다 (추정: properties/vehicle.ext 35줄 {placer {crew}}가 모든 차량에 들어가고, 원격 조종 폭약 차량 sdkfz302.def 36~37줄과 자동 운용 열차포 305mm_mb_2_12.def 72~74줄만 {crew 0}과 함께 자리를 지움) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place` | block | [str]x8323 [str atom]x52 | 706 | 8375 | 예: "driver" | 추정 | 승무원 자리 하나. 문자열이 자리 이름 (추정: 값 "driver") | 파일 구조와 값에서 추론 | sits out of view from top of turret ¦ fake job so crew stay in vehicle, cant fire cus of DD canvas |
 | `/game_entity/placer/place/attach` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/entity` | block | [str]x49 | 13 | 49 | "lee_enfield_no1_mk3" ¦ "76mm_rus_he" ¦ "76mm_rus_apcr" ¦ "ammo_boxes_01" ¦ "ammo_boxes_04" ¦ "crate4" ¦ "ammo_boxes_03" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
@@ -1721,8 +1721,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/placer/place/linkbone` | block | [str]x4724 | 680 | 4724 | 예: "driver" | 추정 | 승무원을 붙이는 뼈대 이름 (추정: 값 "driver") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place/openforcrush` | block | []x750 | 204 | 750 | 예: | 미확인 | 인자 없는 플래그 |  |  |
 | `/game_entity/placer/place/sealable` | block | []x43 | 43 | 43 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/placer/place/turnoff` | block | []x1143 | 207 | 1143 | 예: | 미확인 | 하위에 sensor |  |  |
-| `/game_entity/placer/place/turnoff/sensor` | block | []x877 [num]x6 | 187 | 883 | 0 | 미확인 | 값 0 또는 인자 없음 |  |  |
+| `/game_entity/placer/place/turnoff` | block | []x1143 | 207 | 1143 | 예: | 추정 | 이 승무원 자리에서 끄는 기능 목록. 하위 targetable, sensor (추정: archer.def 59줄 {turnoff {targetable}}의 주석 "sits out of view from top of turret". properties/tank_crew.ext 22줄 {turnoff {sensor}}) | 게임 파일 주석 |  |
+| `/game_entity/placer/place/turnoff/sensor` | block | []x877 [num]x6 | 187 | 883 | 0 | 추정 | 이 자리의 승무원이 감지(sensor)를 쓰지 않게 한다 (추정: turnoff의 하위이고 같은 자리의 targetable은 archer.def 59줄 주석이 "보이지 않는 자리"로 설명한다. 이름) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/placer/place/turnoff/shadow` | block | []x18 | 6 | 18 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/turnoff/targetable` | block | [num]x445 []x262 | 119 | 707 | 0 | 미확인(자동) |  |  |  |
 | `/game_entity/placer/place/usevision` | block | [num]x83 | 82 | 83 | 0 | 미확인(자동) |  |  |  |
@@ -1736,8 +1736,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/sensor/visor/(mod)` | mod | [str]x40 [atom str]x40 | 20 | 80 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
 | `/game_entity/sensor/visor/bone` | block | [str]x3529 | 763 | 3529 | 예: "hearing_bone" | 추정 | 감지기의 기준 뼈대 (추정: 값 "hearing_bone") | 파일 구조와 값에서 추론 | Boys rot ¦ turret |
 | `/game_entity/sensor/visor/vision` | block | [str]x4220 | 763 | 4220 | 예: "noise_detection" | 추정 | 시야·청각 프로필 이름. set/vision 참조로 보인다 (추정: 값 "noise_detection") | 파일 구조와 값에서 추론 | better vision than a in-closed turret |
-| `/game_entity/simulation` | block | []x814 | 763 | 814 | 예: | 미확인 | 물리 시뮬레이션 설정 묶음으로 보이나 확인하지 못함 |  |  |
-| `/game_entity/simulation/able` | block | [num]x814 | 763 | 814 | 0 ~ 1 | 미확인 | 값 0 또는 1 |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
+| `/game_entity/simulation` | block | []x814 | 763 | 814 | 예: | 추정 | 물리 시뮬레이션 설정 묶음. 하위 able(켜기), state, disableLinked (추정: properties의 stuff.ext 18줄 {simulation {able 1} {disableLinked 1}}, human.ext 249줄 {simulation {able 1} {state 0}}. 움직이지 않는 깃발·고정 열차포만 able 0) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/simulation/able` | block | [num]x814 | 763 | 814 | 0 ~ 1 | 추정 | 물리 시뮬레이션을 켠다(1)·끈다(0) (추정: 0은 properties/stuff_flag.ext 4줄의 깃발과 고정 열차포 305mm_mb_2_12.def 14줄뿐이고 vehicle.ext 4줄·stuff.ext 18줄 등 나머지는 1) | 파일 구조와 값에서 추론 | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/game_entity/simulation/disablelinked` | block | [num]x50 | 47 | 50 | 0 ~ 1 | 미확인 | 값 1뿐. 용도 불명 |  |  |
 | `/game_entity/simulatorid` | block | [str]x30 | 30 | 30 | "airborne" ¦ "water" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/skeleton` | block | []x599 | 599 | 599 | 예: | 추정 | 엔티티에 추가하는 뼈대 정의 (추정: 하위 bone/position) | 파일 구조와 값에서 추론 |  |
@@ -1753,14 +1753,14 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/volume/able/contact` | block | [num]x37613 []x114 | 1513 | 37727 | 0 ~ 1 | 추정 | 접촉 판정 대상 (추정: able의 하위 플래그. 0이면 끔) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/contact_ground` | block | [num]x1556 | 394 | 1556 | 0 | 추정 | 지면 접촉 판정 대상 (추정: able의 하위 플래그) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/float` | block | []x127 | 12 | 127 | 예: | 미확인(자동) |  |  |  |
-| `/game_entity/volume/able/hole` | block | []x40875 | 1572 | 40875 | 예: | 미확인 | able의 하위 플래그. 관통 흔적과 관련된 것으로 보이나 확인하지 못함 |  |  |
-| `/game_entity/volume/able/holed` | block | []x4162 | 1238 | 4162 | 예: | 미확인 | able의 하위 플래그. hole과의 차이 불명 |  |  |
+| `/game_entity/volume/able/hole` | block | []x40875 | 1572 | 40875 | 예: | 추정 | 다른 볼륨(holed)을 잘라 내는 구멍 볼륨임을 표시한다 (추정: properties/vehicle.ext 461~466줄 "holes" 매크로가 이름 hole0~25인 볼륨에 {able clear {hole}} {density 0}만 준다. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
+| `/game_entity/volume/able/holed` | block | []x4162 | 1238 | 4162 | 예: | 추정 | hole 볼륨으로 구멍이 뚫릴 수 있는 볼륨임을 표시한다 (추정: properties/vehicle.ext 581·586줄 궤도 볼륨에 {holed}. hole은 잘라 내는 쪽, holed는 잘리는 쪽. 참고: findings-ru.psv의 Best Way 위키 설명과 맞다. 다른 게임 자료) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/nolook` | block | [num]x37712 | 1404 | 37712 | 1 | 미확인 | able의 하위. 값 1 |  |  |
 | `/game_entity/volume/able/nowounddecal` | block | []x25412 [num]x92 | 1123 | 25504 | 0 | 추정 | 피격 자국을 그리지 않음 (추정: 이름. 바퀴 볼륨에 쓰임) | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/obstacle` | block | [num]x36858 []x1 | 1813 | 36859 | 0 | 미확인 | able의 하위. 값 0 |  |  |
 | `/game_entity/volume/able/select` | block | []x763 | 763 | 763 | 예: | 추정 | 마우스 선택 대상 (추정: able의 하위 플래그, 볼륨 이름 "select") | 파일 구조와 값에서 추론 |  |
 | `/game_entity/volume/able/touch` | block | []x869 | 763 | 869 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
-| `/game_entity/volume/able/visible` | block | [num]x39358 | 1518 | 39358 | 0 | 미확인 | able의 하위. 값 0 |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/game_entity/volume/able/visible` | block | [num]x39358 | 1518 | 39358 | 0 | 추정 | 0이면 이 볼륨이 시야를 가리지 않는다 (추정: properties/vehicle.ext 502줄 유리 {able {visible 0}{obstacle 0}{window}}, 516줄 램프, 131줄 포신 볼륨처럼 얇거나 투명한 부위에만 0) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/game_entity/volume/able/window` | block | []x485 | 112 | 485 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/volume/caststeel` | block | [num]x2543 | 379 | 2543 | 0.3 ~ 0.88 | 확인 | 주조 장갑 보정. 같은 두께의 압연판에 비해 유효 장갑이 줄어드는 비율 | 게임 파일 주석 | effective armor reduction compared to solid plate ¦ effective armor reduction compared to solid plate; 25 + 75 spaced armor array ~86mm effective |
 | `/game_entity/volume/component` | block | [str]x89210 | 798 | 89210 | 예: "wingright" | 추정 | 이 볼륨이 속한 부품 이름 (추정: vehicle.ext의 wheel 매크로가 {volume %0 {component %0}}) | 파일 구조와 값에서 추론 | Bucket |
