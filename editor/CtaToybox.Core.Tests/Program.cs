@@ -113,6 +113,7 @@ static class Program
             ("SettingsSession", SettingsSessionTests.Run),
             ("VisionSettings", VisionSettingsTests.Run),
             ("VisionPresets", VisionPresetsTests.Run),
+            ("ClassVision", ClassVisionTests.Run),
             ("SettingStrings", SettingStringsTests.Run),
             ("LuaTable", LuaTableTests.Run),
             ("LuaPatcher", LuaPatcherTests.Run),

@@ -20,7 +20,7 @@ namespace CtaToybox.Cli
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
-            "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force]   (월드워 시야 프로젝트를 만든다. 있는 파일은 --force로만 덮어쓴다)\n" +
+            "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
 
@@ -36,11 +36,11 @@ namespace CtaToybox.Cli
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit", "kind" },
             ["merge"] = new[] { "settings", "project", "from" },
             ["build"] = new[] { "settings", "project", "force" },
-            ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force" },
+            ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
 
         // 값을 받지 않는 옵션
-        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force" };
+        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force", "classes" };
 
         // 게임이나 에디터가 실행 중인지. 테스트가 바꿔 끼운다
         public static Func<bool> GameRunning = EditorSession.GameRunning;
@@ -137,6 +137,7 @@ namespace CtaToybox.Cli
         {
             string variant = Need(opt, "variant").ToLowerInvariant(), projectPath = Need(opt, "project");
             if (variant != "wot" && variant != "wt") throw new UsageException("--variant는 wot 또는 wt다");
+            if (opt.ContainsKey("classes") && variant != "wot") throw new UsageException("--classes는 --variant wot와 쓴다");
             double scale = 4;
             if (opt.ContainsKey("scale") && (!double.TryParse(opt["scale"], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out scale) || scale <= 0))
                 throw new UsageException("--scale은 0보다 큰 수여야 한다");
@@ -147,12 +148,40 @@ namespace CtaToybox.Cli
                 if (stack == null) return 1;
                 var notes = new List<string>();
                 var project = VisionPresets.Build(stack, variant, scale, notes);
+                ClassReport classes = null;
+                if (opt.ContainsKey("classes"))
+                {
+                    var v = new ClassVision();
+                    v.HeavyUncover = Whole(opt, "heavy-uncover", v.HeavyUncover); v.MediumUncover = Whole(opt, "medium-uncover", v.MediumUncover);
+                    v.LightUncover = Whole(opt, "light-uncover", v.LightUncover); v.VehicleUncover = Whole(opt, "vehicle-uncover", v.VehicleUncover);
+                    v.MediumR = Positive(opt, "medium-r", v.MediumR); v.LightR = Positive(opt, "light-r", v.LightR); v.VehicleR = Positive(opt, "vehicle-r", v.VehicleR);
+                    var index = OpenIndex(stack, settingsPath, output);
+                    classes = VisionPresets.AddClasses(project, stack, index.Units, new UnitTracer(stack), u => index.HeirsOf(u).Count, v, notes);
+                }
                 project.Save(projectPath);
-                int fov = project.Edits.Count(e => e.NamedPath.EndsWith("/h_fov")), uncover = project.Edits.Count(e => e.NamedPath.EndsWith("/uncover"));
-                output.WriteLine("수정 " + project.Edits.Count + "건(h_fov " + fov + ", uncover " + uncover + ", r " + (project.Edits.Count - fov - uncover) + "): " + projectPath);
+                var fields = project.Edits.Where(e => e.Kind == null && e.NamedPath != null && e.File == VisionPresets.FieldsFile).ToList();
+                int fov = fields.Count(e => e.NamedPath.EndsWith("/h_fov")), uncover = fields.Count(e => e.NamedPath.EndsWith("/uncover"));
+                output.WriteLine("수정 " + project.Edits.Count + "건(h_fov " + fov + ", uncover " + uncover + ", r " + (fields.Count - fov - uncover) + (classes == null ? "" : ", 블록 복제 " + project.Edits.Count(e => e.Kind == BlockCopy.Kind) + ", 유닛·차량 파일 " + (project.Edits.Count - fields.Count - project.Edits.Count(e => e.Kind == BlockCopy.Kind))) + "): " + projectPath);
+                if (classes != null) output.WriteLine("경전차 " + classes.Light + ", 중형전차 " + classes.Medium + ", 차량 파일 " + classes.VehicleFiles + ", 건너뜀 " + classes.Skipped.Count);
                 foreach (string n in notes) output.WriteLine("  " + n);
                 return 0;
             }
+        }
+
+        static int Whole(Dictionary<string, string> opt, string name, int fallback)
+        {
+            if (!opt.ContainsKey(name)) return fallback;
+            int v;
+            if (!int.TryParse(opt[name], out v) || v < 0) throw new UsageException("--" + name + "는 0 이상의 정수다");
+            return v;
+        }
+
+        static double Positive(Dictionary<string, string> opt, string name, double fallback)
+        {
+            if (!opt.ContainsKey(name)) return fallback;
+            double v;
+            if (!double.TryParse(opt[name], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out v) || v <= 0) throw new UsageException("--" + name + "는 0보다 큰 수다");
+            return v;
         }
 
         // 설정을 읽어 원본 계층을 연다. 실패하면 null을 돌려주고 이유를 쓴다
