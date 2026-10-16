@@ -16,6 +16,10 @@
 //   remove <n>                수정 목록 n번째를 지운다
 //   group <목록> <글자> open|close  summary|full|roster 목록에서 이름에 글자가 든 첫 묶음을 펼치거나 접는다
 //   scroll <목록>             그 목록을 맨 아래로 내린다
+//   rule <종류>|<경로 글자>|<키>|<값 자리>|<연산>|<값>  일괄 규칙 창을 채워 연다(F1). 경로 글자는 쉼표로 나누고 비울 수 있다. 값 자리 -1은 수인 값 모두
+//   rulerow <글자>            지금 탭에서 이름·키·값에 글자가 든 첫 줄로 '이 키로 일괄 규칙...'을 연다(오른쪽 단추 메뉴와 같다)
+//   rulepreview               규칙 창의 '미리 보기'를 누른다
+//   ruleok                    규칙 창의 '수정 목록에 넣기'를 누른다
 //   shot <이름>               창이 열려 있으면 창을, 아니면 주 창을 찍는다(<이름>.png)
 using System;
 using System.Collections.Generic;
@@ -32,6 +36,7 @@ namespace CtaToybox.App
         async Task RunScenario(string file, string outDir)
         {
             EditDialog dialog = null;
+            RuleDialog ruleDialog = null;
             var log = new List<string>();
             foreach (string raw in File.ReadAllLines(file))
             {
@@ -76,7 +81,36 @@ namespace CtaToybox.App
                         if (dialog.PressCopy(arg)) { dialog.Close(); dialog = null; RefreshUnitViews(); RefreshEdits(); log.Add("copyblock: 넣었다"); }
                         else log.Add("copyblock: 넣지 못했다");
                         break;
-                    case "cancel": dialog.Close(); dialog = null; break;
+                    case "rule":
+                    {
+                        var p = arg.Split('|');
+                        var start = new CtaToybox.Core.BulkRule
+                        {
+                            Kind = p[0], Paths = p[1].Length == 0 ? null : p[1].Split(',').Select(x => x.Trim()).ToList(), Key = p[2],
+                            Arg = int.Parse(p[3]), Op = p[4], Value = p[5], Scope = "auto",
+                        };
+                        ruleDialog = OpenRuleDialog(start, null, Math.Max(1, start.Arg + 1), null, false);
+                        break;
+                    }
+                    case "rulerow":
+                    {
+                        var list = (Tabs.SelectedItem == SummaryTab ? SummaryList : FullList).ItemsSource as System.Collections.IEnumerable;
+                        var item = list == null ? null : list.Cast<RowItem>().Where(x => x.Editable)
+                            .FirstOrDefault(x => (x.Name ?? "").Contains(arg) || (x.Key ?? "").IndexOf(arg, StringComparison.OrdinalIgnoreCase) >= 0 || (x.Values ?? "").Contains(arg));
+                        if (item == null) { log.Add("rulerow: 줄을 찾지 못했다: " + arg); break; }
+                        ruleDialog = OpenRuleDialog(RuleForRow(item.Row), null, item.Row.Values.Count, RuleWarning(item.Row), false);
+                        log.Add("rulerow: " + item.Row.Path);
+                        break;
+                    }
+                    case "rulepreview": log.Add("rulepreview: " + (ruleDialog == null ? "창이 없다" : ruleDialog.PressPreview() ? "됐다" : "규칙이 맞지 않다")); break;
+                    case "ruleok":
+                        if (ruleDialog != null && ruleDialog.PressOk()) { ruleDialog.Close(); ruleDialog = null; AfterRuleChange(); log.Add("ruleok: 넣었다"); }
+                        else log.Add("ruleok: 단추가 꺼져 있거나 넣지 못했다");
+                        break;
+                    case "cancel":
+                        if (ruleDialog != null) { ruleDialog.Close(); ruleDialog = null; }
+                        else if (dialog != null) { dialog.Close(); dialog = null; }
+                        break;
                     case "toggle":
                     {
                         var e = ((IEnumerable<object>)EditList.ItemsSource.Cast<object>()).OfType<EditItem>().ElementAt(int.Parse(arg) - 1);
@@ -104,9 +138,9 @@ namespace CtaToybox.App
                     case "scroll": { var sv = ScrollOf(arg == "full" ? FullList : arg == "roster" ? RosterList : SummaryList); if (sv != null) sv.ScrollToEnd(); break; }
                     case "shot":
                         await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);
-                        if (dialog != null) dialog.UpdateLayout();
+                        if (ruleDialog != null) ruleDialog.UpdateLayout(); else if (dialog != null) dialog.UpdateLayout();
                         await Dispatcher.InvokeAsync(() => { }, DispatcherPriority.ApplicationIdle);
-                        SaveScreenshot(dialog != null ? (System.Windows.Window)dialog : this, Path.Combine(outDir, arg + ".png"));
+                        SaveScreenshot(ruleDialog != null ? ruleDialog : dialog != null ? (System.Windows.Window)dialog : this, Path.Combine(outDir, arg + ".png"));
                         break;
                     default: log.Add("모르는 명령: " + line); break;
                 }

@@ -91,11 +91,12 @@ namespace CtaToybox.Core
             var existing = Project.Edits.FirstOrDefault(e => e.Scope == scope && SameSlot(e, t) && (scope != "unit" || SourceStack.ToVirtual(e.Unit ?? "") == unit.Unit));
             if (existing != null)
             {
-                string oldNew = existing.New;
+                string oldNew = existing.New, oldRule = existing.Rule;
                 bool oldEnabled = existing.Enabled;
                 existing.New = newText;
                 existing.Enabled = true;
-                SaveOr(() => { existing.New = oldNew; existing.Enabled = oldEnabled; });
+                existing.Rule = null;   // 사람이 고친 규칙 수정은 규칙에서 떨어진다(F1)
+                SaveOr(() => { existing.New = oldNew; existing.Enabled = oldEnabled; existing.Rule = oldRule; });
                 return existing;
             }
             var edit = new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope, Kind = KindOf(t) };
@@ -127,7 +128,7 @@ namespace CtaToybox.Core
             }
 
             var objects = Project.Edits.ToList();
-            var states = objects.Select(e => new { e, e.New, e.Enabled, e.Old }).ToList();
+            var states = objects.Select(e => new { e, e.New, e.Enabled, e.Old, e.Rule }).ToList();
             try
             {
                 foreach (var p in plan)
@@ -139,7 +140,7 @@ namespace CtaToybox.Core
                     var target = scope == "unit" ? mine : shared;
                     if (scope != "unit" && mine != null) Project.Edits.Remove(mine);
                     if (token == t.Text) { if (target != null) Project.Edits.Remove(target); continue; }
-                    if (target != null) { target.New = token; target.Enabled = true; continue; }
+                    if (target != null) { target.New = token; target.Enabled = true; target.Rule = null; continue; }
                     Project.Edits.Add(new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = token, Scope = scope == "unit" ? "unit" : "shared", Kind = KindOf(t) });
                 }
                 Project.Save(ProjectPath);
@@ -148,7 +149,7 @@ namespace CtaToybox.Core
             {
                 Project.Edits.Clear();
                 Project.Edits.AddRange(objects);
-                foreach (var s in states) { s.e.New = s.New; s.e.Enabled = s.Enabled; s.e.Old = s.Old; }
+                foreach (var s in states) { s.e.New = s.New; s.e.Enabled = s.Enabled; s.e.Old = s.Old; s.e.Rule = s.Rule; }
                 throw;
             }
         }
@@ -167,8 +168,10 @@ namespace CtaToybox.Core
         {
             NeedProject();
             bool before = edit.Enabled;
+            string rule = edit.Rule;
             edit.Enabled = enabled;
-            SaveOr(() => edit.Enabled = before);
+            edit.Rule = null;   // 사람이 켜고 끈 규칙 수정은 규칙에서 떨어진다(F1)
+            SaveOr(() => { edit.Enabled = before; edit.Rule = rule; });
             RefreshOverlay();
         }
 
@@ -192,9 +195,12 @@ namespace CtaToybox.Core
                 throw new ArgumentException("지금 연 프로젝트와 같은 파일이다. 다른 프로젝트를 고른다.");
             var other = EditProject.Load(path);
             Reanchor(other.Edits);
-            int before = Project.Edits.Count;
             var report = Project.MergeFrom(other);
-            if (report.Added > 0) SaveOr(() => Project.Edits.RemoveRange(before, Project.Edits.Count - before));
+            int before = Project.Edits.Count - report.Added;
+            bool rules = other.Rules != null && other.Rules.Count > 0;
+            // 가져오는 규칙은 목록 끝에 붙이고 다시 계산한다(F1). 겹치는 자리는 지금 프로젝트가 이긴다
+            if (rules) Change(() => AppendRules(other.Rules), null);
+            else if (report.Added > 0) SaveOr(() => Project.Edits.RemoveRange(before, Project.Edits.Count - before));
             RefreshOverlay();
             return report;
         }

@@ -1,0 +1,81 @@
+<Window x:Class="CtaToybox.App.RuleDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="일괄 규칙" Width="900" Height="700" MinWidth="640" MinHeight="480" WindowStartupLocation="CenterOwner" ResizeMode="CanResizeWithGrip"
+        FontFamily="Malgun Gothic" FontSize="13">
+  <DockPanel Margin="14">
+    <Grid DockPanel.Dock="Top">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="120"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/><RowDefinition/>
+      </Grid.RowDefinitions>
+      <TextBlock Grid.Row="0" Text="이름" VerticalAlignment="Center"/>
+      <TextBox Grid.Row="0" Grid.Column="1" x:Name="NameBox" Margin="0,2" ToolTip="비우면 규칙 내용으로 이름을 붙인다"/>
+      <TextBlock Grid.Row="1" Text="대상 종류" VerticalAlignment="Center"/>
+      <ComboBox Grid.Row="1" Grid.Column="1" x:Name="KindBox" DisplayMemberPath="Label" Margin="0,2"/>
+      <TextBlock Grid.Row="2" Text="경로에 든 글자" VerticalAlignment="Center"/>
+      <TextBox Grid.Row="2" Grid.Column="1" x:Name="PathsBox" Margin="0,2" ToolTip="유닛 파일 경로에 모두 들어야 하는 글자. 쉼표로 나눈다(예: /tank_light/). 비우면 그 종류 전부"/>
+      <TextBlock Grid.Row="3" Text="원본 계층" VerticalAlignment="Center"/>
+      <ComboBox Grid.Row="3" Grid.Column="1" x:Name="LayerBox" DisplayMemberPath="Label" Margin="0,2"/>
+      <TextBlock Grid.Row="4" Text="키" VerticalAlignment="Center"/>
+      <DockPanel Grid.Row="4" Grid.Column="1" Margin="0,2">
+        <Button DockPanel.Dock="Right" Content="꼬리만 (**/…)" Padding="8,0" Margin="6,0,0,0" Click="Tail_Click"
+                ToolTip="키를 마지막 두 이름(**/locomotion/maxspeed 같은)으로 줄인다. 블록 이름이 유닛마다 다른 키도 잡힌다"/>
+        <TextBox x:Name="KeyBox" ToolTip="펼친 키 경로. **/꼬리로 쓰면 그 꼬리로 끝나는 키 모두"/>
+      </DockPanel>
+      <TextBlock Grid.Row="5" Text="값 자리" VerticalAlignment="Center"/>
+      <ComboBox Grid.Row="5" Grid.Column="1" x:Name="ArgBox" DisplayMemberPath="Label" Margin="0,2"/>
+      <TextBlock Grid.Row="6" Text="바꾸는 방법" VerticalAlignment="Center"/>
+      <DockPanel Grid.Row="6" Grid.Column="1" Margin="0,2">
+        <ComboBox x:Name="OpBox" DisplayMemberPath="Label" Width="180" DockPanel.Dock="Left"/>
+        <TextBox x:Name="ValueBox" Margin="6,0,0,0" ToolTip="곱하기·더하기는 수(소수점은 .). 정수였던 값은 반올림해 정수로 남는다"/>
+      </DockPanel>
+      <TextBlock Grid.Row="7" Text="적용 범위" VerticalAlignment="Center"/>
+      <ComboBox Grid.Row="7" Grid.Column="1" x:Name="ScopeBox" DisplayMemberPath="Label" Margin="0,2"/>
+    </Grid>
+    <StackPanel DockPanel.Dock="Top">
+      <TextBlock x:Name="WarnText" Foreground="#B05000" TextWrapping="Wrap" Margin="0,6,0,0"/>
+      <DockPanel Margin="0,8,0,0">
+        <Button x:Name="PreviewButton" DockPanel.Dock="Left" Content="미리 보기" Padding="14,3" Click="Preview_Click"/>
+        <TextBlock x:Name="TotalText" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0,0,0" TextWrapping="Wrap"/>
+      </DockPanel>
+    </StackPanel>
+    <StackPanel DockPanel.Dock="Bottom">
+      <TextBlock x:Name="MessageText" Foreground="#B00020" TextWrapping="Wrap" Margin="0,6,0,0"/>
+      <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,8,0,0">
+        <Button x:Name="OkButton" Content="수정 목록에 넣기" Padding="14,3" IsDefault="True" IsEnabled="False" Click="Ok_Click"/>
+        <Button Content="취소" Width="70" Margin="8,0,0,0" IsCancel="True"/>
+      </StackPanel>
+    </StackPanel>
+    <Grid Margin="0,8,0,0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/><RowDefinition Height="2*"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <TextBlock Grid.Row="0" x:Name="ChangesTitle" Text="바뀌는 값" FontWeight="Bold"/>
+      <ListBox Grid.Row="1" x:Name="ChangesList" Margin="0,2,0,6" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+            <StackPanel Margin="0,1">
+              <TextBlock Text="{Binding Title}" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding Sub}" Foreground="#666666" FontSize="12" TextWrapping="Wrap"/>
+            </StackPanel>
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+      <TextBlock Grid.Row="2" x:Name="SkippedTitle" Text="건너뛰는 유닛" FontWeight="Bold"/>
+      <ListBox Grid.Row="3" x:Name="SkippedList" Margin="0,2,0,0" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+        <ListBox.ItemTemplate>
+          <DataTemplate>
+            <StackPanel Margin="0,1">
+              <TextBlock Text="{Binding Title}" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding Sub}" Foreground="#666666" FontSize="12" TextWrapping="Wrap"/>
+            </StackPanel>
+          </DataTemplate>
+        </ListBox.ItemTemplate>
+      </ListBox>
+    </Grid>
+  </DockPanel>
+</Window>
