@@ -354,6 +354,8 @@ namespace CtaToybox.Core
             var rows = SourceRows.Of(file, text, out error);
             if (rows == null) return null;
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            if (e.Kind == BlockCopy.Kind)
+                return new EditDescription { ValueLabel = "블록 복제", RowText = e.Old, ValueCount = 1, BlockNames = new List<string>() };
             if (row != null && e.Kind == MacroSwap.Kind && row.Head != null)
             {
                 // 매크로 호출 이름 바꾸기(E4): 줄 이름은 그 호출의 주석, 값은 이름 하나다
@@ -573,6 +575,8 @@ namespace CtaToybox.Core
             EditProject loaded;
             if (File.Exists(path)) loaded = EditProject.Load(path);
             else loaded = new EditProject { Name = Path.GetFileNameWithoutExtension(path) };
+            // 복제 블록 안의 수정도 이름으로 다시 맞추도록 덧씌우기를 먼저 건다(E18)
+            RefreshOverlay(loaded);
             Reanchor(loaded.Edits);
             Project = loaded;
             ProjectPath = path;
@@ -580,6 +584,21 @@ namespace CtaToybox.Core
 
         // 따옴표 이름 블록의 수정(Q7): 원본에 항목이 끼어들거나 빠져 "몇 번째"가 밀렸으면 이름으로 같은 항목을 다시 찾아 Path·Occurrence를 맞춘다.
         // 그 이름이 원본에 없으면 그대로 두고, 점검·빌드가 "이 이름의 항목이 없다"로 막는다
+        // 프로젝트의 켜진 블록 복제를 원본 위에 덧씌운다(E18). 줄 자리를 기억하는 추적기와 값 검사 캐시를 새로 만든다
+        void RefreshOverlay(EditProject project)
+        {
+            var copies = project == null ? new List<Edit>() : project.Edits.Where(e => e.Kind == BlockCopy.Kind && e.Enabled).ToList();
+            Stack.Overlay = copies.Count == 0 ? null : (Func<string, string, string>)((file, text) =>
+            {
+                var mine = copies.Where(c => string.Equals(SourceStack.ToVirtual(c.File ?? ""), file, StringComparison.Ordinal)).ToList();
+                return mine.Count == 0 ? text : BlockCopy.ApplyAll(text, mine);
+            });
+            tracer = new UnitTracer(Stack);
+            checkedFile = null;
+        }
+
+        void RefreshOverlay() { RefreshOverlay(Project); }
+
         void Reanchor(IEnumerable<Edit> edits)
         {
             var indexes = new Dictionary<string, KeyIndex>(StringComparer.Ordinal);

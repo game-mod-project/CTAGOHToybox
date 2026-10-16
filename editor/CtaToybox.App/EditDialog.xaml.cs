@@ -26,11 +26,11 @@ namespace CtaToybox.App
             InitializeComponent();
             this.session = session; this.unit = unit; this.row = row;
             var editable = row.Values.Where(v => v.Editable).ToList();
-            var widest = editable.OrderByDescending(v => v.SharedBy).First();
+            var widest = editable.OrderByDescending(v => v.SharedBy).FirstOrDefault();
             KeyText.Text = label;
             ContextText.Text = (context == null ? "" : "부위: " + context + "\n") + "키: " + (row.RawPath ?? row.Path);
             NoteText.Text = Text.RowNote(row) + (row.Note == null ? "" : "\n출처: " + row.Note.Source);
-            var files = editable.Select(v => v.Trace.File).Distinct().ToList();
+            var files = (editable.Count > 0 ? editable : row.Values).Select(v => v.Trace.File).Where(f => f != null).Distinct().ToList();
             OriginText.Text = files.Count == 1 ? "값이 있는 파일: " + files[0] : "값마다 있는 파일이 다르다. 아래 값 옆에 적었다";
 
             for (int i = 0; i < row.Values.Count; i++)
@@ -103,6 +103,15 @@ namespace CtaToybox.App
             }
 
             // 범위: 같이 쓰는 값이 하나라도 있으면 묻는다. 영향받는 유닛은 가장 많이 같이 쓰는 값의 파일 기준이다
+            if (widest == null)
+            {
+                // 고칠 값이 없는 줄: 게임 설정 파일의 따옴표 이름 블록이면 복제만 할 수 있다(E18)
+                ScopePanel.Visibility = Visibility.Collapsed;
+                OkButton.IsEnabled = false;
+                RemoveButton.Visibility = Visibility.Collapsed;
+                if (Text.IsCopyableBlock(row)) AddCopyPanel();
+                return;
+            }
             var users = session.Index.UsersOf(widest.Trace.File);
             ScopePanel.Visibility = widest.SharedBy > 1 ? Visibility.Visible : Visibility.Collapsed;
             SharedRadio.Content = "전부 (이 값이 있는 파일을 쓰는 유닛 " + widest.SharedBy + "개가 모두 바뀐다)";
@@ -116,6 +125,35 @@ namespace CtaToybox.App
             if (editable.Any(v => v.Edit != null && v.Edit.Scope == "unit") && UnitRadio.IsEnabled) UnitRadio.IsChecked = true;
             RemoveButton.Visibility = row.Values.Any(v => v.Edit != null) ? Visibility.Visible : Visibility.Collapsed;
             Validate();
+        }
+
+        TextBox copyBox;
+
+        // 블록 복제 칸(E18): 새 이름을 쓰고 단추를 누르면 수정 목록에 넣는다. 복제된 블록의 값은 전체 탭에서 다른 값처럼 고친다
+        void AddCopyPanel()
+        {
+            var panel = new StackPanel { Margin = new Thickness(0, 10, 0, 0) };
+            panel.Children.Add(new TextBlock { Text = "이 블록 복제", FontWeight = FontWeights.Bold });
+            panel.Children.Add(new TextBlock { Foreground = Brushes.DimGray, FontSize = 12, TextWrapping = TextWrapping.Wrap,
+                Text = "이 블록(" + Text.Value(row.Values[0].Trace.Text) + ")을 새 이름으로 복사해 같은 파일에 더한다. 새 이름은 빈칸·따옴표·/ 없이 쓰고, 파일에 없는 이름이어야 한다. 다른 파일이 이 새 이름으로 부르게 하면 그 블록의 값이 쓰인다" });
+            var line = new DockPanel { Margin = new Thickness(0, 4, 0, 0) };
+            var button = new Button { Content = "이 블록 복제", Padding = new Thickness(10, 2, 10, 2), Margin = new Thickness(8, 0, 0, 0) };
+            DockPanel.SetDock(button, Dock.Right);
+            copyBox = new TextBox();
+            button.Click += (s, e) => { if (PressCopy()) DialogResult = true; };
+            line.Children.Add(button);
+            line.Children.Add(copyBox);
+            panel.Children.Add(line);
+            ValuesPanel.Children.Add(panel);
+        }
+
+        // 시나리오(copyblock)와 단추가 같이 쓴다
+        public bool PressCopy(string name = null)
+        {
+            if (copyBox == null) return false;
+            if (name != null) copyBox.Text = name;
+            string typed = copyBox.Text.Trim().Trim('"');
+            return Run(() => session.AddBlockCopy(unit, row.Values[0], "\"" + typed + "\""));
         }
 
         string Scope { get { return UnitRadio.IsChecked == true ? "unit" : "shared"; } }

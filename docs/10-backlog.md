@@ -33,7 +33,6 @@
 
 | ID | 내용 | 출처 | 크기 |
 |---|---|---|---|
-| E18 | 월드워 다음 단계: 차종별 시야 거리(WoT식으로 경전차·정찰을 길게), 거리 안개 조정. **사용자 결정 필요**(2026-10-16 데이터): 전차의 정면 필드는 포 사거리별 `tank_range_200`~`250`(모두 r 1.5)이고, 경·중·중전차 필드 `tank_main-l/m/h`는 바닐라에서 거의 쓰이지 않는다(`tank_main-m` 1곳). 그래서 필드 값만 고쳐서는 경전차만 길게 볼 수 없고 차량마다 쓰는 필드 이름을 바꿔야 한다(유닛별 수정, 많음). 정찰 필드 `recon_main`(38곳, r 1.75)·`recon_open`(4곳, r 2.2)은 필드 하나로 고칠 수 있다. 거리 안개는 환경 파일의 `{haze {start} {end}}`인데 편집기가 `set/environment`를 열지 못한다. 게임 안 확인은 없다(사용자가 뺐다) | 월드워 스펙 "하지 않는 것" | M |
 
 ## 5. 데이터·뜻 (미확인 키)
 
@@ -130,3 +129,4 @@
 | 병종의 tier 같은 인자 없는 매크로 호출을 바꿀 수 없다(E4) | `feat/e4-macro-swap`(2026-10-16): 스펙 `docs/superpowers/specs/2026-10-16-e4-macro-swap-design.md`. 인자 없는 호출을 이름 하나의 줄로 보이고, 같은 파일에 정의된 다른 매크로로 바꾼다(`Edit.Kind = "macro-name"`, 앱·명령줄 `add --kind macro-name`·점검·빌드). 실제 병종 파일에서 18,103곳을 바꿔 보아 모두 적용되고 다시 읽혔다 |
 | 미확인 키 49건(D1 일부) | `docs/d1-annotations`(2026-10-16): `common.psv` 26(확인 5·추정 21)·`values.psv` 20·`settings.psv` 1·`weapon-ammo.psv` 2를 바닐라 주석과 구조, 게임 확인 기록으로 올렸다. 예: `/from/swayparams/speed`(흔들림 속도 계수), `firingtimeoutdistancefactor`(거리별 사격 지연 배수 표), `**/damage/damage`(성형작약 수류탄 관통 mm), `/game/order`. R3의 환경 거리 키 셋도 같이 넣었다. 유닛 문서·수정 가능한 속성 문서를 다시 만들었다(`keys-missing=0`) |
 | CHANGE-LOG 2·4·5쪽·옛 공지·Nexus(R1 일부), Steam 가이드 52건(R2) | `docs/r1-r2-research`(2026-10-16): `docs/09` "추가 조사"에 표로 넣었다. 개발자 글 45개와 공지 43건에서 모딩 항목을 뽑고 바닐라에 파일·키가 있는지 대조했다. 찾은 것: `pather.set`·`obstacle.reg` 변경은 Update 67이 처음(표 고침), 콘퀘스트 지속성 `{DynCmpPersistent}`·`{mark_for_persistence}`(바닐라에 있음), `teamsize_cp_factor`(바닐라 `battle_zones.set` 주석과 같음). 콘퀘스트 AI 로스터 가이드는 `conquest.<진영>.lua`의 `priority`를 고치라 하지만 지금 그 파일에는 없다(early·mid·late 파일에는 남아 있다). 러시아어 무기 가이드(3564691426)의 `armor_health`·`spotting_range` 등은 바닐라에 없다 |
+| 월드워 차종별 시야·탐지(E18) | `feat/e18-class-vision`(2026-10-16): 블록 복제 수정 종류(앱·명령줄·점검·빌드)와 `vision-preset --classes`. 시야 r 중전차 1.5(그대로)·중형 1.65·경전차 1.8·차량 1.8, 탐지 uncover 100·115·130·145. 프로젝트 `editor/projects/월드워-차종.json`(수정 601건, 경전차 161·중형 289대, 차량 파일 3). 출력 모드 빌드와 게임 확인은 하지 않았다. 거리 안개(`haze`)는 하지 않는 것으로 정했다 |

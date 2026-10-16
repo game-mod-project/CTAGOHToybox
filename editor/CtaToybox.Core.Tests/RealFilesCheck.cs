@@ -175,6 +175,32 @@ static class RealFilesCheck
         T.True(swapChecked > 1000, "argument-less calls in breed files were swapped (E4)");
         T.Eq(0, swapBad, "every same-family swap applies and reads back (E4)");
 
+        // E18: 월드워-차종 프로젝트를 실제 판에서 만들어 임시 출력 폴더에 빌드한다
+        var classNotes = new List<string>();
+        var classProject = VisionPresets.Build(stack, "wot", 4, classNotes);
+        var classReport = VisionPresets.AddClasses(classProject, stack, index.Units, tracer, u => index.HeirsOf(u).Count, new ClassVision(), classNotes);
+        string classOut = Path.Combine(Path.GetTempPath(), "ctatoybox-e18-" + Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(classOut);
+        try
+        {
+            var classBuild = new ModBuilder(stack, classOut).Build(classProject);
+            var notApplied = classBuild.Results.Where(r => r.Status != EditStatus.Applied).ToList();
+            string fieldsOut = File.ReadAllText(Path.Combine(classOut, "resource", "set", "vision", "vision_fields.inc"));
+            string fieldsError;
+            var fieldRows = SourceRows.Of(VisionPresets.FieldsFile, fieldsOut, out fieldsError);
+            int copiedNames = new[] { VisionPresets.MediumField, VisionPresets.LightField, VisionPresets.VehicleField }.Count(n => fieldRows != null && fieldRows.Count(r => r.RawPath == "/\"" + n + "\"") == 1);
+            int named = Directory.EnumerateFiles(Path.Combine(classOut, "resource"), "*", SearchOption.AllDirectories).Count(f => { string t = File.ReadAllText(f); return t.Contains("\"" + VisionPresets.LightField + "\"") || t.Contains("\"" + VisionPresets.MediumField + "\"") || t.Contains("\"" + VisionPresets.VehicleField + "\""); });
+            Console.WriteLine("class-units-light=" + classReport.Light + " class-units-medium=" + classReport.Medium + " class-vehicle-files=" + classReport.VehicleFiles + " class-skipped=" + classReport.Skipped.Count +
+                              " class-edits=" + classProject.Edits.Count + " class-not-applied=" + notApplied.Count + " class-file-errors=" + classBuild.FileErrors.Count + " class-files-naming-fields=" + named);
+            foreach (var r in notApplied.Take(10)) Console.WriteLine("  class: " + r.Status + " " + r.Edit.Unit + " " + r.Edit.Path + " " + r.Message);
+            foreach (string e in classBuild.FileErrors.Take(10)) Console.WriteLine("  class file: " + e);
+            T.True(classReport.Light > 100 && classReport.Medium > 100, "light and medium tanks were found by folder (E18)");
+            T.Eq(0, notApplied.Count, "every class edit applies (E18)");
+            T.Eq(0, classBuild.FileErrors.Count, "and every file is written (E18)");
+            T.Eq(3, copiedNames, "the three class fields are in the output once each (E18)");
+        }
+        finally { Directory.Delete(classOut, true); }
+
         const string k98 = "set/stuff/rifle/k98", riflePattern = "set/stuff/rifle/rifle.pattern";
         var k98Trace = tracer.Trace(k98);
         Console.WriteLine("from-units=" + fromUnits + " from-problems=" + fromProblems + " inherited-values=" + inherited + " from-wrong-slot=" + fromWrongSlot +
