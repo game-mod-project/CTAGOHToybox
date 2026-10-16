@@ -14,6 +14,7 @@ static class VisionPresetsTests
         "{\"vehicle_around\" {uncover 15} {h_fov 360} (\"spotting\" r(0.6))}\n" +
         "{\"tank_range_200\" {uncover 20} {h_fov 15} (\"spotting2\" r(1.5) r_human(0.66) veh_vis(50) can_vis(50) can_fire(70))}\n" +
         "{\"watchtower\" {h_fov 90} (\"spotting\" r(1))}\n" +
+        "{\"recon_open\" {uncover 50} {h_fov 360} (\"spotting\" r(2.2))}\n" +
         "{\"airborne_main\" {uncover 0} {h_fov 110} (\"spotting\" r(3.5))}";
 
     static void PutFiles(string resource)
@@ -41,7 +42,8 @@ static class VisionPresetsTests
         T.Eq("set/vision/vision.set", human.Unit, "under the vision settings item");
         T.Eq("shared", human.Scope, "shared");
         T.Eq("50", wot.Edits.Single(e => e.NamedPath == "/\"human\"/uncover").New, "uncover becomes 50");
-        T.True(!wot.Edits.Any(e => e.NamedPath == "/\"vehicle_around\"/h_fov"), "a field already at the target makes no edit");
+        T.True(!wot.Edits.Any(e => e.NamedPath == "/\"vehicle_around\"/h_fov"), "a field outside the ground list makes no edit");
+        T.True(!wot.Edits.Any(e => e.NamedPath.StartsWith("/\"recon_open\"/")), "a ground field already at the target (h_fov 360, uncover 50) makes no edit");
         T.True(!wot.Edits.Any(e => e.NamedPath.Contains("airborne") || e.NamedPath.Contains("extra")), "fields outside the ground list are untouched");
         T.True(!wot.Edits.Any(e => e.NamedPath == "/\"watchtower\"/uncover") && notes.Any(n => n.Contains("watchtower") && n.Contains("uncover")), "missing keys and fields are noted, not invented");
         T.True(notes.Any(n => n.Contains("human_elite")), "a ground field absent from the file is noted");
