@@ -19,6 +19,8 @@ namespace CtaToybox.Cli
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 인자 없는 매크로 호출의 이름을 같은 파일에 정의된 다른 이름으로)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
+            "  ctatoybox rule preview|add --kind <종류> [--path <글자,…>] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
+            "  ctatoybox rule list|reapply|remove|enable|disable --project <파일> [--id <id>]   rule edit --project <파일> --id <id> <바꿀 옵션>   (일괄 규칙)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
@@ -35,6 +37,7 @@ namespace CtaToybox.Cli
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit", "kind" },
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit", "kind" },
             ["merge"] = new[] { "settings", "project", "from" },
+            ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id" },
             ["build"] = new[] { "settings", "project", "force" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
@@ -81,6 +84,7 @@ namespace CtaToybox.Cli
                     case "add": return Add(opt, settingsPath, output);
                     case "remove": return Remove(opt, output);
                     case "merge": return Merge(opt, output);
+                    case "rule": return Rule(positional, opt, settingsPath, output);
                     case "build": return Build(opt, settingsPath, output);
                     case "vision-preset": return VisionPreset(opt, settingsPath, output);
                     default: throw new UsageException("모르는 명령: " + args[0]);
@@ -455,6 +459,76 @@ namespace CtaToybox.Cli
             output.WriteLine("합쳤다: 더함 " + report.Added + "건, 이미 같음 " + report.Same + "건, 충돌 " + report.Conflicts.Count + "건 → " + projectPath);
             foreach (string c in report.Conflicts) output.WriteLine("  충돌: " + c);
             return 0;
+        }
+
+        // 일괄 규칙(F1): rule preview|add|list|edit|reapply|remove|enable|disable
+        static int Rule(List<string> positional, Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string sub = positional.Count > 0 ? positional[0].ToLowerInvariant() : null;
+            var known = new[] { "preview", "add", "list", "edit", "reapply", "remove", "enable", "disable" };
+            if (sub == null || !known.Contains(sub)) throw new UsageException("rule 뒤에는 " + string.Join(", ", known) + " 가운데 하나를 쓴다");
+            if (!File.Exists(settingsPath)) { output.WriteLine("설정 파일이 없다: " + settingsPath + ". 먼저 init을 실행한다."); return 1; }
+            using (var session = EditorSession.Open(settingsPath, Directory.GetCurrentDirectory(), null))
+            {
+                if (sub != "preview" || opt.ContainsKey("project")) session.OpenProject(Need(opt, "project"));
+                if (sub == "list")
+                {
+                    if (session.Rules.Count == 0) { output.WriteLine("규칙이 없다"); return 0; }
+                    foreach (var r in session.Rules)
+                        output.WriteLine(r.Id + "  " + (r.Enabled ? "켜짐" : "꺼짐") + "  수정 " + session.Project.Edits.Count(e => e.Rule == r.Id) + "건  " + r.Name + "  (" + r.Describe() + ")");
+                    return 0;
+                }
+                if (sub == "preview" || sub == "add")
+                {
+                    var rule = RuleFrom(opt, null);
+                    var preview = session.PreviewRule(rule);
+                    WritePreview(preview, output);
+                    if (sub == "preview") return 0;
+                    var added = session.AddRule(rule);
+                    output.WriteLine("규칙을 더했다: " + added.Id + " " + added.Name + " (수정 " + session.Project.Edits.Count(e => e.Rule == added.Id) + "건)");
+                    return 0;
+                }
+                string id = Need(opt, "id");
+                var existing = session.RuleOf(id);
+                if (existing == null) { output.WriteLine("이 id의 규칙이 없다: " + id); return 1; }
+                switch (sub)
+                {
+                    case "edit": session.EditRule(id, RuleFrom(opt, existing)); break;
+                    case "reapply": session.ReapplyRule(id); break;
+                    case "remove": session.RemoveRule(id); output.WriteLine("규칙을 지웠다: " + id); return 0;
+                    case "enable": session.SetRuleEnabled(id, true); break;
+                    case "disable": session.SetRuleEnabled(id, false); break;
+                }
+                output.WriteLine(sub + ": " + id + " " + session.RuleOf(id).Name + " (수정 " + session.Project.Edits.Count(e => e.Rule == id) + "건)");
+                return 0;
+            }
+        }
+
+        // 옵션으로 규칙을 만든다. baseRule이 있으면 주지 않은 칸은 그대로 둔다(rule edit)
+        static BulkRule RuleFrom(Dictionary<string, string> opt, BulkRule baseRule)
+        {
+            var r = baseRule == null ? new BulkRule() : baseRule.Copy();
+            if (opt.ContainsKey("name")) r.Name = opt["name"];
+            if (opt.ContainsKey("kind")) r.Kind = opt["kind"];
+            if (opt.ContainsKey("path")) r.Paths = opt["path"].Split(',').Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
+            if (opt.ContainsKey("layer")) r.Layer = opt["layer"];
+            if (opt.ContainsKey("key")) r.Key = opt["key"];
+            if (opt.ContainsKey("arg")) r.Arg = opt["arg"].ToLowerInvariant() == "all" ? -1 : Number(opt, "arg");
+            if (opt.ContainsKey("scope")) r.Scope = opt["scope"].ToLowerInvariant();
+            var ops = new[] { "set", "mul", "add" }.Where(opt.ContainsKey).ToList();
+            if (ops.Count > 1) throw new UsageException("--set, --mul, --add 가운데 하나만 쓴다");
+            if (ops.Count == 1) { r.Op = ops[0]; r.Value = opt[ops[0]]; }
+            string bad = BulkRules.Check(r);
+            if (bad != null) throw new UsageException(bad);
+            return r;
+        }
+
+        static void WritePreview(RulePreview p, TextWriter output)
+        {
+            output.WriteLine("바뀜 " + p.Changes.Count + "건(유닛 " + p.Units + " / 대상 " + p.Targets + "), 수정 " + p.Edits.Count + "건, 건너뜀 " + p.Skipped.Count + ", 대상 밖 " + p.OutsideUnits);
+            foreach (var c in p.Changes.Take(20)) output.WriteLine("  " + c.Unit + "  " + c.Old + " → " + c.New + "  (" + (c.Scope == "unit" ? "이 유닛만" : "전부") + ", " + c.File + ")");
+            if (p.Changes.Count > 20) output.WriteLine("  … 외 " + (p.Changes.Count - 20) + "건");
+            foreach (var g in p.Skipped.GroupBy(k => k.Reason).OrderByDescending(g => g.Count())) output.WriteLine("  건너뜀 " + g.Count() + ": " + g.Key);
         }
 
         static int Build(Dictionary<string, string> opt, string settingsPath, TextWriter output)
