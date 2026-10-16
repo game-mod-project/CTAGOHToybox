@@ -34,7 +34,9 @@ $st = $za.CreateEntry('set/breed/mp/ger/c.set').Open(); $bb = [Text.Encoding]::A
 & "$PSScriptRoot/../Compare-ModToVanilla.ps1" -VanillaDataDir $vanData -ModDataDir $modData *> $null
 
 $files = @(Import-Csv (Join-Path $modData 'diff-files.csv'))
-function Rel([string]$vp) { @($files | Where-Object VirtualPath -eq $vp)[0].Relation }
+# 같은 경로가 모드 안에 두 번 있으면 쓰이는 쪽(충돌이 아닌 행)을 본다. D16: 낱개 파일이 pak을 이긴다
+function Rel([string]$vp) { @($files | Where-Object { $_.VirtualPath -eq $vp -and $_.Status -ne 'collision' })[0].Relation }
+Assert-Equal 'loose' (@(Import-Csv (Join-Path $modData 'file-index.csv') | Where-Object { $_.VirtualPath -eq 'set/breed/mp/ger/c.set' -and $_.Status -ne 'collision' })[0].Source) 'the loose copy is the one that counts'
 Assert-Equal 'override-changed' (Rel 'set/breed/mp/ger/a.set') 'changed text file'
 Assert-Equal 'override-identical' (Rel 'set/breed/mp/ger/b.set') 'identical text file'
 Assert-Equal 'new' (Rel 'set/breed/mp/ger/c.set') 'new text file'

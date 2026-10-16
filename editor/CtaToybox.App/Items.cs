@@ -59,7 +59,7 @@ namespace CtaToybox.App
 
     public static class Text
     {
-        public const string NotEditableGroup = "고칠 수 없는 값 (치환·계산으로 만든 값, include 인자)";
+        public const string NotEditableGroup = "고칠 수 없는 값 (치환·계산으로 만든 값, include 인자, 꺼진 블록 ##)";
 
         // 값 하나를 화면에 보이는 글자로: 따옴표 문자열은 따옴표를 뗀다
         public static string Value(string token) { return token != null && token.StartsWith("\"") ? token.Trim('"') : token; }

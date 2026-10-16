@@ -1496,7 +1496,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/entity/weaponry/manualaccuracyzoom` | block | [num]x1 | 1 | 1 | 1.25 | 추정 | 직접 조종에서 확대했을 때 정확도 배율 (추정: 이름. 값 1.25) | 파일 구조와 값에서 추론 |  |
 | `/game_entity` | block | []x1621 [atom]x763 | 2384 | 2384 | ¦ actor | 추정 | 엔티티 정의의 최상위 블록. 차량·화포·보병 외형·일부 아이템이 쓴다 (추정: 파일 구조) | 파일 구조와 값에서 추론 | june '41 ¦ jan 45 |
 | `/game_entity/(mod)` | mod | [str]x71 [atom str]x20 | 88 | 91 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
-| `/game_entity/##` | block | [atom str]x763 | 763 | 763 | extender "detail" | 미확인 | 이름 앞에 ##가 붙은 블록. 값은 extender "detail". 꺼 둔 블록으로 보이나 엔진이 어떻게 처리하는지 확인하지 못함 |  | No longer used? |
+| `/game_entity/##` | block | [atom str]x763 | 763 | 763 | extender "detail" | 문서 | 이름 앞에 ##가 붙은 블록. 에디터가 꺼 둔 블록이고, 읽을 때 지우지 않지만 게임은 그 값을 쓰지 않는다 (문서: 개발사 Men of War II 설정 파일 문서. 바닐라 189곳도 옛 값·새 값 쌍 없이 끈 기능들이다) | https://docs.bestway.com.ua/foundational-knowledge/basic-knowledge-about-configuration-files.md | No longer used? |
 | `/game_entity/##/random` | block | []x763 | 763 | 763 | 예: | 미확인 | ## 블록의 하위. 용도 불명 |  |  |
 | `/game_entity/##bone` | block | [str]x43 | 43 | 43 | "commander_rot" | 미확인(자동) |  |  |  |
 | `/game_entity/##bone/speed2` | block | [num]x43 | 43 | 43 | 180 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | manual handcrack, extremely slow ¦ remote controlled from inside |

@@ -30,7 +30,7 @@
 | [weapon-ammo.md](weapon-ammo.md) | 본체 | 탄약 (.ammo) | `set/stuff/**/*.ammo` | 79 | 10 | 3 | 30 | 23 | 13 |
 | [weapon-ammo.md](weapon-ammo.md) | 본체 | 수류탄 (.grenade) | `set/stuff/grenade/*.grenade` | 20 | 3 | 0 | 13 | 0 | 4 |
 | [weapon-ammo.md](weapon-ammo.md) | 본체 | 지뢰와 폭발물 (.mine) | `set/stuff/explosive/*.mine` | 8 | 2 | 0 | 6 | 0 | 0 |
-| [weapon-ammo.md](weapon-ammo.md) | 본체 | 투척 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
+| [weapon-ammo.md](weapon-ammo.md) | 연관 | 투척 원형 (.hand) | `set/stuff/thrower.hand` | 15 | 3 | 0 | 8 | 0 | 4 |
 | [weapon-ammo.md](weapon-ammo.md) | 연관 | 원형 (.pattern) | `set/stuff/**/*.pattern` | 155 | 53 | 9 | 61 | 8 | 24 |
 | [weapon-ammo.md](weapon-ammo.md) | 연관 | 폴더의 매크로 모음 (.presets) | `set/stuff/<폴더>/.presets` | 533 | 30 | 21 | 335 | 48 | 99 |
 | [weapon-ammo.md](weapon-ammo.md) | 연관 | 무기 상태 설정 (.fsm) | `set/stuff/_settings/*.fsm` | 5 | 0 | 0 | 5 | 0 | 0 |
@@ -91,6 +91,6 @@
 
 - **값을 바꿨을 때 게임이 어떻게 반응하는지는 확인하지 않았다.** 이 문서는 값이 어디에 있는지만 알려 준다.
 - **"추정"과 "문서"는 틀릴 수 있다.** 추정은 이름과 값에서 추론한 것이고, 문서는 대부분 다른 게임의 자료다. 값을 고치기 전에 "확인"과 "정의"를 먼저 믿고, 나머지는 게임에서 시험해 본다.
-- **`##`로 시작하는 이름**(예: `##bone`)은 편집기가 꺼 둔 블록이다. 엔진 공식 문서에 따르면 게임은 그 안의 값을 쓰지 않는다.
+- **`##`로 시작하는 이름**(예: `##bone`)은 편집기가 꺼 둔 블록이다. 개발사 문서(Men of War II, https://docs.bestway.com.ua/foundational-knowledge/basic-knowledge-about-configuration-files.md)에 따르면 읽을 때 지우지 않지만 게임은 그 안의 값을 쓰지 않는다. 스탯 편집기도 이런 값은 고치지 못하게 한다.
 - **편제·비용·게임 규칙은 여기에 없다.** `set/multiplayer`, `set/dynamic_campaign` 등 유닛 파일이 아닌 설정은 [../04-units/schema-shared.md](../04-units/schema-shared.md)에 있다.
 - 기준은 바닐라 1.0.6.7이다. 모드가 추가한 속성은 [../05-workshop-mods/README.md](../05-workshop-mods/README.md)에 있다.

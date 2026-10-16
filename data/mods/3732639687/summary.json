@@ -1,17 +1,17 @@
 {
   "Id": "3732639687",
-  "Files": 70787,
+  "Files": 70834,
   "FilesByStatus": {
     "collision": 2481,
     "empty": 11,
     "excluded-binary": 39475,
-    "excluded-scope": 10021,
+    "excluded-scope": 10067,
     "reference-only": 383,
-    "text": 18416
+    "text": 18417
   },
   "FilesByRelation": {
     "in-mod-collision": 2481,
-    "new": 61632,
+    "new": 61679,
     "override-changed": 6564,
     "override-identical": 53,
     "override-unhashed": 57
@@ -22,7 +22,7 @@
     "new entity/inventory": 1263,
     "override-changed entity/humanskin": 1126,
     "new entity/humanskin": 763,
-    "new set/stuff": 451,
+    "new set/stuff": 452,
     "override-identical set/stuff": 49,
     "override-changed set/stuff": 43,
     "override-changed set/dynamic_campaign": 15,
@@ -48,7 +48,7 @@
     "item-entity new": 341,
     "pattern new": 14,
     "stuff changed": 43,
-    "stuff new": 437,
+    "stuff new": 438,
     "vehicle new": 528
   },
   "NewVehicleDefsByNation": {
@@ -59,19 +59,19 @@
     "+japan": 26
   },
   "NewBreedsByFolder": {},
-  "KeysNotInVanilla": 1626,
+  "KeysNotInVanilla": 1630,
   "KeysNotInVanillaByForm": {
-    "block": 1276,
-    "macro": 230,
-    "define": 102,
+    "block": 1278,
+    "macro": 231,
+    "define": 103,
     "mod": 13,
     "include": 3,
     "bare": 2
   },
-  "NamesNotInVanilla": 301,
+  "NamesNotInVanilla": 303,
   "NamesNotInVanillaByForm": {
-    "macro": 157,
-    "define": 84,
+    "macro": 158,
+    "define": 85,
     "block": 60
   },
   "DistinctNewBlockNames": 38,
@@ -95,5 +95,5 @@
     "entity/+inventory": 66,
     "entity/fx": 1
   },
-  "QuotedNamesNotInVanilla": 3296
+  "QuotedNamesNotInVanilla": 3295
 }

@@ -31,17 +31,17 @@
 | 모드 | 새 파일 | 내용이 바뀐 바닐라 파일 | 새 보병 | 새 차량류 .def | 새 아이템 | 바뀐 바닐라 유닛 파일 | 새 블록 이름 | 새 매크로 이름(정의+호출 행) | 바닐라에 없는 키 |
 |---|---|---|---|---|---|---|---|---|---|
 | [MACE](2905667604.md) | 113376 | 136 | 1100 | 1307 | 971 | 51 | 30 | 419 | 2343 |
-| [MACE Wunderwaffe Ultimate Fusion ENG](3732639687.md) | 61632 | 6564 | 0 | 528 | 437 | 44 | 38 | 241 | 1626 |
+| [MACE Wunderwaffe Ultimate Fusion ENG](3732639687.md) | 61679 | 6564 | 0 | 528 | 438 | 44 | 38 | 243 | 1630 |
 | [Spawn Menu](3295913567.md) | 70 | 2 | 0 | 5 | 0 | 0 | 2 | 2 | 15 |
 | [Auto Medic-AA-Artillery & Weather Switch](2829744930.md) | 168 | 51 | 0 | 0 | 0 | 28 | 6 | 0 | 25 |
 
 ## 모드 간 관계
 
-둘 이상의 모드가 같은 가상 경로에 가진 텍스트 파일은 5528개이고 그중 5486개는 내용이 다르다. 전체는 `data/mods/cross-mod-conflicts.csv`에 있다.
+둘 이상의 모드가 같은 가상 경로에 가진 텍스트 파일은 5528개이고 그중 5465개는 내용이 다르다. 전체는 `data/mods/cross-mod-conflicts.csv`에 있다.
 
 | 모드 조합 | 내용이 다른 파일 | 내용이 같은 파일 |
 |---|---|---|
-| MACE + MACE Wunderwaffe Ultimate Fusion ENG | 5479 | 42 |
+| MACE + MACE Wunderwaffe Ultimate Fusion ENG | 5458 | 63 |
 | Auto Medic-AA-Artillery & Weather Switch + MACE | 5 | 0 |
 | Auto Medic-AA-Artillery & Weather Switch + MACE + Spawn Menu | 1 | 0 |
 | Auto Medic-AA-Artillery & Weather Switch + MACE Wunderwaffe Ultimate Fusion ENG | 1 | 0 |

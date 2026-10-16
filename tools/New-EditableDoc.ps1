@@ -161,10 +161,10 @@ $pages = @(
             (CsvSection '본체' '탄약 (.ammo)' 'set/stuff/**/*.ammo' '무기의 `filling`과 차량의 `extender "inventory"/box/item`이 탄약 태그로 가리킨다' 'weapon-ammo' '.ammo'),
             (CsvSection '본체' '수류탄 (.grenade)' 'set/stuff/grenade/*.grenade' '보병의 `inventory/item`' 'weapon-ammo' '.grenade'),
             (CsvSection '본체' '지뢰와 폭발물 (.mine)' 'set/stuff/explosive/*.mine' '보병의 `inventory/item`' 'weapon-ammo' '.mine'),
-            (CsvSection '본체' '투척 (.hand)' 'set/stuff/thrower.hand' '파일이 하나뿐이다. 어디서 가리키는지는 확인하지 않았다' 'weapon-ammo' '.hand'),
+            (CsvSection '연관' '투척 원형 (.hand)' 'set/stuff/thrower.hand' '`{from "hand thrower"}`로 물려받는 원형이다(`set/stuff/thrower_v`). 그 `thrower_v`를 가리키는 줄은 바닐라에서 `##`로 꺼진 `gaz98.def`의 무장 자리 하나뿐이라 실제로는 쓰이지 않는 것으로 보인다' 'weapon-ammo' '.hand'),
             (CsvSection '연관' '원형 (.pattern)' 'set/stuff/**/*.pattern' '무기와 탄약의 `{from "pattern 이름"}`. 같은 원형을 쓰는 모든 아이템이 값을 물려받는다' 'weapon-ammo' '.pattern'),
             (CsvSection '연관' '폴더의 매크로 모음 (.presets)' 'set/stuff/<폴더>/.presets' '그 폴더와 하위 폴더의 파일이 include 없이 쓰는 매크로 정의. `("fire rate" rpm(240))` 같은 호출의 본문이 여기에 있다' 'weapon-ammo' '.presets' { 'from' }),
-            (CsvSection '연관' '무기 상태 설정 (.fsm)' 'set/stuff/_settings/*.fsm' '어디서 가리키는지는 확인하지 않았다' 'weapon-ammo' '.fsm'),
+            (CsvSection '연관' '무기 상태 설정 (.fsm)' 'set/stuff/_settings/*.fsm' '아이템의 `inventory` 안 `{fsm "X"}`가 `set/stuff/_settings/X.fsm`을 가리킨다(아이템의 폴더와 상관없다). 바닐라의 값 6종과 파일 6개가 1:1이다(belt 132, stuff 35, hand-only 9, smg 2, bazooka·pistol 1). 내용은 줍기·들기·싣기 상태 이름이다' 'weapon-ammo' '.fsm'),
             (SharedSection '연관' '폭발 계산 매크로' 'set/blast.inc' '탄약의 `("he_level_3")` 같은 매크로 호출과 `.presets`의 `(include "\set\blast.inc")`' { param($id) $id -eq 'set/blast.inc' })
         )
     },
@@ -407,7 +407,7 @@ $sum = { param($n) ($summary | Measure-Object $n -Sum).Sum }
 
 - **값을 바꿨을 때 게임이 어떻게 반응하는지는 확인하지 않았다.** 이 문서는 값이 어디에 있는지만 알려 준다.
 - **"추정"과 "문서"는 틀릴 수 있다.** 추정은 이름과 값에서 추론한 것이고, 문서는 대부분 다른 게임의 자료다. 값을 고치기 전에 "확인"과 "정의"를 먼저 믿고, 나머지는 게임에서 시험해 본다.
-- **`##`로 시작하는 이름**(예: `##bone`)은 편집기가 꺼 둔 블록이다. 엔진 공식 문서에 따르면 게임은 그 안의 값을 쓰지 않는다.
+- **`##`로 시작하는 이름**(예: `##bone`)은 편집기가 꺼 둔 블록이다. 개발사 문서(Men of War II, https://docs.bestway.com.ua/foundational-knowledge/basic-knowledge-about-configuration-files.md)에 따르면 읽을 때 지우지 않지만 게임은 그 안의 값을 쓰지 않는다. 스탯 편집기도 이런 값은 고치지 못하게 한다.
 - **편제·비용·게임 규칙은 여기에 없다.** `set/multiplayer`, `set/dynamic_campaign` 등 유닛 파일이 아닌 설정은 [../04-units/schema-shared.md](../04-units/schema-shared.md)에 있다.
 - 기준은 바닐라 1.0.6.7이다. 모드가 추가한 속성은 [../05-workshop-mods/README.md](../05-workshop-mods/README.md)에 있다.
 '@)

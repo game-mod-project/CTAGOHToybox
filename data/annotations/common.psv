@@ -258,7 +258,7 @@
 /game_entity/extender[stuff]|block|추정|아이템 기능. 이 엔티티를 set/stuff의 아이템과 잇는다 (추정: 하위 item)|S
 /actor/extender[stuff]/item|block|추정|연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인)|S
 /game_entity/extender[stuff]/item|block|추정|연결된 아이템 이름. set/stuff의 파일명과 일치한다 (추정: 참조 색인)|S
-/game_entity/##|block|미확인|이름 앞에 ##가 붙은 블록. 값은 extender "detail". 꺼 둔 블록으로 보이나 엔진이 어떻게 처리하는지 확인하지 못함|
+/game_entity/##|block|문서|이름 앞에 ##가 붙은 블록. 에디터가 꺼 둔 블록이고, 읽을 때 지우지 않지만 게임은 그 값을 쓰지 않는다 (문서: 개발사 Men of War II 설정 파일 문서. 바닐라 189곳도 옛 값·새 값 쌍 없이 끈 기능들이다)|https://docs.bestway.com.ua/foundational-knowledge/basic-knowledge-about-configuration-files.md
 */random|block|미확인|## 블록의 하위. 용도 불명|
 
 # ---------- 선택 표시
