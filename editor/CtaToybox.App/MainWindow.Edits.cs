@@ -25,7 +25,7 @@ namespace CtaToybox.App
 
         public void RefreshEdits()
         {
-            if (session == null || session.Project == null) { EditList.ItemsSource = null; EditCountText.Text = ""; return; }
+            if (session == null || session.Project == null) { EditList.ItemsSource = null; EditCountText.Text = ""; RefreshRules(); return; }
             var checks = session.CheckEdits().ToDictionary(c => c.Edit);
             var items = session.Project.Edits.Select(e =>
             {
@@ -35,15 +35,20 @@ namespace CtaToybox.App
                     c.Status == EditStatus.SourceChanged ? "원본이 바뀜: 지금 원본 값은 " + Text.Value(c.Current) + ". '원본의 지금 값에 맞추기'나 '삭제'를 고른다" :
                     Text.Status(c.Status) + ": " + c.Message;
                 string unitPath = SourceStack.ToVirtual(e.Unit ?? e.File ?? "");
+                string unitGroup = Text.UnitName(session, unitPath) + "   (" + unitPath.Substring(unitPath.LastIndexOf('/') + 1) + ")";
+                // 규칙이 만든 수정은 규칙 이름의 묶음에 모으고, 어느 유닛의 것인지는 설명 줄에 적는다(F1)
+                var rule = e.Rule == null ? null : session.RuleOf(e.Rule);
                 return new EditItem
                 {
                     Edit = e, Enabled = e.Enabled,
-                    Group = Text.UnitName(session, unitPath) + "   (" + unitPath.Substring(unitPath.LastIndexOf('/') + 1) + ")",
+                    Group = rule != null ? "규칙 · " + rule.Name : unitGroup,
                     Title = Text.EditTitle(session.Describe(e), e),
-                    Detail = (e.Scope == "unit" ? "이 유닛만" : "전부 (" + Text.SharedScope(SourceStack.ToVirtual(e.File), session.Index.UsersOf(e.File).Count) + ")") + " · " + e.File.Substring(e.File.LastIndexOf('/') + 1) + (e.Enabled ? "" : " · 꺼짐"),
+                    Detail = (rule != null ? unitGroup.Trim() + " · " : "") +
+                             (e.Scope == "unit" ? "이 유닛만" : "전부 (" + Text.SharedScope(SourceStack.ToVirtual(e.File), session.Index.UsersOf(e.File).Count) + ")") + " · " + e.File.Substring(e.File.LastIndexOf('/') + 1) + (e.Enabled ? "" : " · 꺼짐"),
                     Status = status,
                 };
             }).ToList();
+            RefreshRules();
             var view = new ListCollectionView(items);
             view.GroupDescriptions.Add(new PropertyGroupDescription("Group"));
             EditList.ItemsSource = view;
@@ -83,6 +88,113 @@ namespace CtaToybox.App
         {
             var item = SelectedEdit;
             if (item != null) ShowUnit(SourceStack.ToVirtual(item.Edit.Unit ?? item.Edit.File));
+        }
+
+        // 일괄 규칙 고르기 칸. 꺼진 규칙은 수정이 없어 목록에 안 보이므로 이 칸에서 고른다(F1)
+        void RefreshRules()
+        {
+            string keep = SelectedRuleId;
+            var rules = session == null ? new System.Collections.Generic.List<BulkRule>() : session.Rules.ToList();
+            RuleBox.ItemsSource = rules.Select(r => new Choice
+            {
+                Label = r.Name + (r.Enabled ? "" : " (꺼짐)") + " · 수정 " + session.Project.Edits.Count(x => x.Rule == r.Id) + "건",
+                Value = r.Id,
+            }).ToList();
+            RuleBox.IsEnabled = rules.Count > 0;
+            SelectRule(keep ?? (rules.Count > 0 ? rules[0].Id : null));
+        }
+
+        string SelectedRuleId { get { var c = RuleBox.SelectedItem as Choice; return c == null ? null : c.Value; } }
+
+        void SelectRule(string id)
+        {
+            var list = RuleBox.ItemsSource as System.Collections.Generic.List<Choice>;
+            RuleBox.SelectedItem = list == null ? null : list.FirstOrDefault(c => c.Value == id) ?? list.FirstOrDefault();
+        }
+
+        void EditList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var item = SelectedEdit;
+            if (item != null && item.Edit.Rule != null) SelectRule(item.Edit.Rule);
+        }
+
+        BulkRule PickedRule(string what)
+        {
+            var rule = SelectedRuleId == null ? null : session.RuleOf(SelectedRuleId);
+            if (rule == null) MessageBox.Show(this, "규칙이 없다. 요약·전체 탭의 줄을 오른쪽 단추로 눌러 '이 키로 일괄 규칙...'으로 만든다.", what);
+            return rule;
+        }
+
+        void AfterRuleChange()
+        {
+            RefreshEdits();
+            RefreshUnitViews();
+        }
+
+        // 요약·전체 탭 줄의 오른쪽 단추 메뉴: 지금 유닛의 종류, 그 줄의 키, 처음 고칠 수 있는 값의 자리로 채운 규칙 창(F1)
+        void RuleFromRow_Click(object sender, RoutedEventArgs e)
+        {
+            var menu = (ContextMenu)((MenuItem)sender).Parent;
+            var item = ((ListView)menu.PlacementTarget).SelectedItem as RowItem;
+            if (item == null || unit == null) { MessageBox.Show(this, "줄을 먼저 고른다.", "일괄 규칙"); return; }
+            OpenRuleDialog(RuleForRow(item.Row), null, item.Row.Values.Count, RuleWarning(item.Row), true);
+        }
+
+        BulkRule RuleForRow(RowView row)
+        {
+            int arg = row.Values.FindIndex(v => v.Editable);
+            return new BulkRule { Kind = unit.EditorKind, Key = row.Path, Arg = arg < 0 ? 0 : arg, Op = "mul", Value = "", Scope = "auto" };
+        }
+
+        static string RuleWarning(RowView row)
+        {
+            if (row.Note == null) return "이 키는 뜻이 주석에 없다(미확인). 게임에서 무엇이 바뀌는지 모르는 채로 여러 유닛에 걸린다.";
+            if (row.Note.Grade == "미확인") return "이 키의 뜻은 '미확인' 등급이다. 게임에서 무엇이 바뀌는지 모르는 채로 여러 유닛에 걸린다.";
+            return null;
+        }
+
+        // modal이 아니면(시나리오) 창을 돌려준다
+        RuleDialog OpenRuleDialog(BulkRule start, string ruleId, int valueCount, string warning, bool modal)
+        {
+            var dialog = new RuleDialog(session, start, ruleId, valueCount, warning) { Owner = this };
+            if (!modal) { dialog.Show(); return dialog; }
+            if (dialog.ShowDialog() == true) AfterRuleChange();
+            return null;
+        }
+
+        void EditRule_Click(object sender, RoutedEventArgs e)
+        {
+            var rule = PickedRule("규칙 고치기");
+            if (rule != null) OpenRuleDialog(rule, rule.Id, Math.Max(1, rule.Arg + 1), null, true);
+        }
+
+        void ReapplyRule_Click(object sender, RoutedEventArgs e)
+        {
+            var rule = PickedRule("규칙 다시 적용");
+            if (rule == null) return;
+            int before = session.Project.Edits.Count(x => x.Rule == rule.Id);
+            if (Try("규칙 다시 적용", () => session.ReapplyRule(rule.Id)))
+                MessageBox.Show(this, "'" + rule.Name + "': 수정 " + before + "건 → " + session.Project.Edits.Count(x => x.Rule == rule.Id) + "건", "규칙 다시 적용");
+            AfterRuleChange();
+        }
+
+        void ToggleRule_Click(object sender, RoutedEventArgs e)
+        {
+            var rule = PickedRule("규칙 끄기/켜기");
+            if (rule == null) return;
+            Try("규칙 끄기/켜기", () => session.SetRuleEnabled(rule.Id, !rule.Enabled));
+            AfterRuleChange();
+        }
+
+        void RemoveRule_Click(object sender, RoutedEventArgs e)
+        {
+            var rule = PickedRule("규칙 지우기");
+            if (rule == null) return;
+            int count = session.Project.Edits.Count(x => x.Rule == rule.Id);
+            if (MessageBox.Show(this, "'" + rule.Name + "' 규칙과 그 수정 " + count + "건을 지울까? 규칙에서 떨어진(사람이 고친) 수정은 남는다.", "규칙 지우기",
+                                MessageBoxButton.YesNo, MessageBoxImage.Question, MessageBoxResult.No) != MessageBoxResult.Yes) return;
+            Try("규칙 지우기", () => session.RemoveRule(rule.Id));
+            AfterRuleChange();
         }
 
         void OpenProject_Click(object sender, RoutedEventArgs e)

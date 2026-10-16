@@ -126,7 +126,7 @@ namespace CtaToybox.Core
             foreach (var u in targets)
             {
                 var traced = tracer.Trace(u.Path);
-                if (traced == null) continue;
+                if (traced == null) { preview.Skipped.Add(new RuleSkip { Unit = u.Path, Reason = "유닛 파일을 읽지 못했다" }); continue; }
                 bool any = false;
                 foreach (var row in traced.Rows.Where(r => KeyMatches(rule.Key, r)))
                 {
@@ -154,20 +154,20 @@ namespace CtaToybox.Core
                 string error;
                 string next = Compute(rule.Op, v.Text, rule.Value, out error);
                 if (next == null) { foreach (string u in kv.Value.Units) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = error }); continue; }
-                if (next == v.Text) continue;
+                if (next == v.Text) { foreach (string u in kv.Value.Units) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = "새 값이 원래 값과 같다(" + v.Text + ")" }); continue; }
                 string warning;
                 string rule2 = ValueRules.CheckNewValue(v.File, v.Text, next, out warning);
                 if (rule2 != null) { foreach (string u in kv.Value.Units) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = rule2 }); continue; }
                 Edit taken;
                 if (sharedTaken.TryGetValue(kv.Key, out taken))
                 {
-                    foreach (string u in kv.Value.Units) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = Owner(taken) + "('전부')가 이 자리에 있다" });
+                    foreach (string u in kv.Value.Units) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = Owner(taken, project) + "('전부')가 이 자리에 있다" });
                     continue;
                 }
                 var free = new List<string>();
                 foreach (string u in kv.Value.Units)
                 {
-                    if (unitTaken.TryGetValue(kv.Key + "|" + u, out taken)) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = Owner(taken) + "('이 유닛만')가 이 유닛에 있다" });
+                    if (unitTaken.TryGetValue(kv.Key + "|" + u, out taken)) preview.Skipped.Add(new RuleSkip { Unit = u, Reason = Owner(taken, project) + "('이 유닛만')가 이 유닛에 있다" });
                     else free.Add(u);
                 }
                 if (free.Count == 0) continue;
@@ -195,7 +195,12 @@ namespace CtaToybox.Core
             return preview;
         }
 
-        static string Owner(Edit e) { return e.Rule == null ? "직접 고친 수정" : "앞 규칙 " + e.Rule + "의 수정"; }
+        static string Owner(Edit e, EditProject project)
+        {
+            if (e.Rule == null) return "직접 고친 수정";
+            var rule = project == null || project.Rules == null ? null : project.Rules.FirstOrDefault(r => r.Id == e.Rule);
+            return "앞 규칙 '" + (rule == null ? e.Rule : rule.Name) + "'의 수정";
+        }
 
         static Edit NewEdit(BulkRule rule, TraceValue v, string unit, string next, string scope)
         {

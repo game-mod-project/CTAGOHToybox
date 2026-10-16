@@ -39,7 +39,7 @@ static class BulkRulesSessionTests
         // 두 규칙이 같은 자리: 앞 규칙이 가진다. 앞 규칙을 끄면 뒤 규칙이 가져간다
         var bigger = s.AddRule(BulkRulesTests.Rule("**/locomotion/maxspeed", "add", "5"));
         T.Eq(0, s.Project.Edits.Count(e => e.Rule == bigger.Id), "a later rule does not take the earlier rule's spot");
-        T.Eq(1, s.PreviewRule(bigger).Skipped.Count(k => k.Reason.Contains("앞 규칙")), "the preview names the earlier rule");
+        T.Eq(1, s.PreviewRule(bigger).Skipped.Count(k => k.Reason.Contains("앞 규칙 '" + speed.Name + "'")), "the preview names the earlier rule by its name");
         s.SetRuleEnabled(speed.Id, false);
         T.Eq(0, s.Project.Edits.Count(e => e.Rule == speed.Id), "a disabled rule has no edits");
         T.Eq("50", s.Project.Edits.Single(e => e.Rule == bigger.Id).New, "the later rule takes the spot (45 + 5)");

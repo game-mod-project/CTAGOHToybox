@@ -72,7 +72,9 @@ static class BulkRulesTests
         T.Eq(new[] { L2 }, withHuman.Edits.Select(e => e.Unit).ToArray(), "a hand-made shared edit keeps its spot");
         T.True(withHuman.Skipped.Single().Unit == L1 && withHuman.Skipped.Single().Reason.Contains("직접 고친"), "the skip names it");
 
-        T.Eq(0, Preview(s, Rule("**/locomotion/maxspeed", "mul", "1")).Edits.Count, "no edit when the value does not change");
+        var same = Preview(s, Rule("**/locomotion/maxspeed", "mul", "1"));
+        T.Eq(0, same.Edits.Count, "no edit when the value does not change");
+        T.True(same.Skipped.Count == 2 && same.Skipped.All(k => k.Reason.Contains("같다")), "and every target is counted as skipped, so changed + skipped covers the targets");
         var name = Preview(s, Rule("**/name", "mul", "2"));
         T.True(name.Edits.Count == 0 && name.Skipped.All(k => k.Reason.Contains("수가 아니다")), "a word value is skipped");
         var all = Rule("**/locomotion/maxspeed", "mul", "1.1");

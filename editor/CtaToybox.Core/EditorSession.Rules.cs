@@ -16,7 +16,7 @@ namespace CtaToybox.Core
         // 지금 프로젝트에 넣으면 무엇이 바뀌는지. 프로젝트는 바꾸지 않는다. 이미 있는 규칙이면 그 규칙보다 앞의 수정과 사람 수정만 겹침으로 본다
         public RulePreview PreviewRule(BulkRule rule)
         {
-            var probe = new EditProject { Edits = Project == null ? new List<Edit>() : Project.Edits.Where(e => e.Rule == null || Before(e.Rule, rule.Id)).ToList() };
+            var probe = new EditProject { Rules = Project == null ? null : Project.Rules, Edits = Project == null ? new List<Edit>() : Project.Edits.Where(e => e.Rule == null || Before(e.Rule, rule.Id)).ToList() };
             return BulkRules.Preview(rule, probe, Index.Units, tracer, f => Index.UsersOf(f), u => Index.HeirsOf(u).Count);
         }
 
