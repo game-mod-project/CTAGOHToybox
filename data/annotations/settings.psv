@@ -143,6 +143,6 @@
 /conquestconfig.unitspawnwaittime|block|확인|AI가 자원이나 유닛 타이머를 기다리다 다시 고르기까지의 최대 시간(ms. 90000 = 1분 30초) (확인: 629~630줄 주석 "1:30 min (ms)")|C
 /conquestconfig.orderrotationperiod|block|확인|분대가 새 명령을 받기까지의 간격(ms. 150000 = 2분 30초) (확인: 632~633줄 주석 "2:30 min (ms)")|C
 # ---------- 시야 (set/vision/vision.set, vision_fields.inc)
-**/uncover|block|확인|이 거리(m) 안의 숨은 병사(덤불 속 등)를 찾는다 (확인: vision_fields.inc 주석 "Will spot hidden soldiers in bushes within 15m")|C
+**/uncover|block|확인|숨은 병사를 찾는 거리. 이 거리(m) 안의 숨은 병사(덤불 속 등)를 찾는다 (확인: vision_fields.inc 주석 "Will spot hidden soldiers in bushes within 15m")|C
 **/h_fov|block|확인|수평 시야각(도). 360이면 모든 방향을 본다 (확인: vision_fields.inc 주석 "Horizontal field of view arc")|C
 **/v_fov|block|확인|수직 시야각(도). 180이면 바로 위·아래까지 본다 (확인: vision_fields.inc 주석 "Vertical field of view arc")|C
