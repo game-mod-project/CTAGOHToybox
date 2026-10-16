@@ -243,7 +243,7 @@ namespace CtaToybox.Core
                     if (v.Arg >= 0)
                     {
                         vv.SharedBy = Index.UsersOf(v.File).Count;
-                        vv.UnitScopeBlocker = row.From != null ? FromLevel.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
+                        vv.UnitScopeBlocker = row.From != null ? UnitScope.InheritedBlocker(traced, row) : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
                     }
                     r.Values.Add(vv);
                 }

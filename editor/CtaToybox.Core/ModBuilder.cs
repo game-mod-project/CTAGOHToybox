@@ -44,6 +44,7 @@ namespace CtaToybox.Core
         readonly string modDir, resourceDir;
         // 출력 상대 경로 → 그 파일에 담긴 수정. 파일을 쓰지 못했을 때 어느 수정이 적용되지 않았는지 찾는 데 쓴다
         readonly Dictionary<string, List<Edit>> owners = new Dictionary<string, List<Edit>>(StringComparer.OrdinalIgnoreCase);
+        UnitTracer tracer;   // 원형에서 물려받은 값을 찾을 때만 만든다(E14)
 
         // 출력 파일 하나를 만드는 데 필요한 것
         sealed class WorkItem
@@ -54,6 +55,7 @@ namespace CtaToybox.Core
             public List<Edit> Silent = new List<Edit>();               // 사본에 함께 넣는 '전부' 수정. 결과는 원래 파일 쪽에서 보고한다
             public List<RawPatch> Raw = new List<RawPatch>();          // include 경로 고쳐 쓰기
             public bool Always;                                        // 적용된 수정이 없어도 쓴다(사슬 중간의 사본)
+            public List<KeyValuePair<Edit, TraceRow>> Appends = new List<KeyValuePair<Edit, TraceRow>>();   // 원형에서 물려받은 값의 '이 유닛만': 맨 위 블록에 덧붙일 줄(E14)
         }
 
         // 한 유닛의 '이 유닛만' 수정이 만드는 사본들과 유닛 파일의 include 고쳐 쓰기
@@ -237,6 +239,7 @@ namespace CtaToybox.Core
                 return null;
             }
             var edges = new SdlResolver(stack.ReadText).Resolve(unit).IncludeEdges;
+            UnitTraceResult traced = null;
             var live = new Dictionary<string, List<Edit>>(StringComparer.Ordinal);
             var copySet = new HashSet<string>(StringComparer.Ordinal);
             foreach (var group in edits.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
@@ -244,14 +247,26 @@ namespace CtaToybox.Core
                 string file = group.Key;
                 // 유닛 자신의 파일: 같은 자리를 '전부' 수정도 고치면 '이 유닛만'이 이긴다(앞에 둔 수정이 이긴다). 화면의 EditorSession.EditFor와 같다
                 if (file == unit) { ItemFor(items, unit, unitSource).Edits.InsertRange(0, group); continue; }
+                // 원형에서 물려받은 값: 사본 대신 유닛 파일의 맨 위 블록에 같은 키를 덧붙인다(E14). 규칙은 화면·점검과 같은 UnitScope다
+                if (traced == null) traced = (tracer ?? (tracer = new UnitTracer(stack))).Trace(unit);
+                var rest = new List<Edit>();
+                foreach (var e in group)
+                {
+                    var row = UnitScope.InheritedRow(traced, file, e.Path, e.Occurrence, e.Arg);
+                    if (row == null) { rest.Add(e); continue; }
+                    string inheritedBlocker = UnitScope.InheritedBlocker(traced, row);
+                    if (inheritedBlocker != null) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = inheritedBlocker });
+                    else ItemFor(items, unit, unitSource).Appends.Add(new KeyValuePair<Edit, TraceRow>(e, row));
+                }
+                if (rest.Count == 0) continue;
                 var source = stack.Find(file);
                 if (source == null)
                 {
-                    foreach (var e in group) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없다: " + file });
+                    foreach (var e in rest) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없다: " + file });
                     continue;
                 }
                 var allowed = new List<Edit>();
-                foreach (var e in group)
+                foreach (var e in rest)
                 {
                     string blocker = IncludeChain.UnitScopeBlocker(edges, unit, file, e.Path);
                     if (blocker != null) report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = blocker });
@@ -338,6 +353,8 @@ namespace CtaToybox.Core
                 results.AddRange(reported);
             }
             int count = reported.Count(r => r.Status == EditStatus.Applied);
+            var appended = item.Appends.Count == 0 ? new List<Edit>() : Append(ref patched, item, kind, results);
+            count += appended.Count;
             if (count == 0 && item.Raw.Count == 0 && !item.Always) return null;
 
             string relative = "resource/" + item.Output;
@@ -347,8 +364,66 @@ namespace CtaToybox.Core
             Directory.CreateDirectory(Path.GetDirectoryName(target));
             File.WriteAllBytes(target, TextCodec.Encode(patched, kind));
             produced.Add(new BuildManifestFile { Path = relative, Layer = item.Source.Layer, Edits = count });
-            owners[relative] = item.Edits;
+            owners[relative] = item.Edits.Concat(appended).ToList();
             return null;
+        }
+
+        // 원형에서 물려받은 값의 '이 유닛만'(E14): 원형의 지금 값이 수정 당시와 같고 새 값 규칙에 맞는 것만 줄 단위로 모아 맨 위 블록 끝에 덧붙인다.
+        // 덧붙인 뒤 다시 읽어 그 키가 맨 위 블록에 새 값으로 있는지 본다. 아니면 던진다(호출한 쪽이 이 파일의 수정을 적용 불가로 바꾼다)
+        static List<Edit> Append(ref string text, WorkItem item, TextKind kind, List<EditResult> results)
+        {
+            var ok = new List<KeyValuePair<Edit, TraceRow>>();
+            foreach (var a in item.Appends)
+            {
+                var e = a.Key;
+                string now = e.Arg >= 0 && e.Arg < a.Value.Values.Count ? a.Value.Values[e.Arg].Text : null;
+                string warning;
+                string rule = e.New == null ? "새 값이 없다" : ValueRules.CheckNewValue(e.File, e.Old, e.New, out warning);
+                if (now != e.Old) results.Add(new EditResult { Edit = e, Status = EditStatus.SourceChanged, Message = "원형의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + now });
+                else if (rule != null) results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = rule });
+                else if (!TextCodec.CanEncode(e.New, kind)) results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "새 값에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + e.New });
+                else ok.Add(a);
+            }
+            if (ok.Count == 0) return new List<Edit>();
+            var lines = ok.GroupBy(a => a.Value).Select(g => new { Row = g.Key, Line = UnitScope.AppendLine(g.Key, g.Select(x => x.Key)) }).ToList();
+            var parsed = SdlCore.Parse(text);
+            int close = TopClose(parsed);
+            if (close < 0) throw new InvalidOperationException("유닛 파일의 맨 위 {from …} 블록을 찾지 못해 원형의 값을 덧붙일 수 없다");
+            // 파일의 줄바꿈을 따른다. 닫는 } 가 줄 끝에 붙어 있으면 줄을 먼저 바꾼다
+            string nl = text.Contains("\r\n") ? "\r\n" : "\n";
+            string lead = close > 0 && text[close - 1] != '\n' ? nl : "";
+            string patched = text.Substring(0, close) + lead + string.Concat(lines.Select(l => "\t" + l.Line + nl)) + text.Substring(close);
+            var check = SdlCore.Parse(patched);
+            if (check.Errors.Count > 0 || !SdlCore.RoundTrip(check)) throw new InvalidOperationException("원형의 값을 덧붙인 파일이 다시 파싱되지 않는다");
+            var rows = KeyLocator.Rows(check.Root);
+            foreach (var l in lines)
+            {
+                var last = rows.LastOrDefault(r => string.Equals(r.Path, l.Row.Path, StringComparison.OrdinalIgnoreCase));
+                var expected = UnitScope.AppendLine(l.Row, ok.Where(x => x.Value == l.Row).Select(x => x.Key));
+                if (last == null || "{" + KeyLabel.Split(last.RawPath).Last() + " " + string.Join(" ", last.Leaves.Select(x => x.Text)) + "}" != expected)
+                    throw new InvalidOperationException("덧붙인 뒤 맨 위 블록에 그 키가 새 값으로 없다: " + l.Row.Path);
+            }
+            text = patched;
+            foreach (var a in ok) results.Add(new EditResult { Edit = a.Key, Status = EditStatus.Applied });
+            return ok.Select(a => a.Key).ToList();
+        }
+
+        // 맨 위 {from …} 블록을 닫는 } 의 글자 자리. 없으면 -1
+        static int TopClose(SdlParseResult parsed)
+        {
+            var tokens = parsed.Tokens;
+            for (int i = 0; i + 1 < tokens.Count; i++)
+            {
+                if (tokens[i].Kind != "open" || tokens[i].Text != "{" || !string.Equals(tokens[i + 1].Text, "from", StringComparison.OrdinalIgnoreCase)) continue;
+                int depth = 0;
+                for (int j = i; j < tokens.Count; j++)
+                {
+                    if (tokens[j].Kind == "open") depth++;
+                    else if (tokens[j].Kind == "close" && --depth == 0) return tokens[j].Index;
+                }
+                return -1;
+            }
+            return -1;
         }
 
         // 출력 모드 폴더 기준 상대 경로의 전체 경로. resource 아래가 아니면 null

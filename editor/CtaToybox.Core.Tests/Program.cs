@@ -80,6 +80,7 @@ static class Program
             ("FromLinks", FromLinksTests.Run),
             ("FromInheritance", FromInheritanceTests.Run),
             ("FromDisplay", FromDisplayTests.Run),
+            ("InheritedUnitScope", InheritedUnitScopeTests.Run),
             ("UnitIndex", UnitIndexTests.Run),
             ("IncludeChain", IncludeChainTests.Run),
             ("UnitTracer", UnitTracerTests.Run),
