@@ -77,6 +77,8 @@ static class Program
             ("GameProfile", GameProfileTests.Run),
             ("KeyLocator", KeyLocatorTests.Run),
             ("ResolverOrigin", ResolverOriginTests.Run),
+            ("FromLinks", FromLinksTests.Run),
+            ("FromInheritance", FromInheritanceTests.Run),
             ("UnitIndex", UnitIndexTests.Run),
             ("IncludeChain", IncludeChainTests.Run),
             ("UnitTracer", UnitTracerTests.Run),

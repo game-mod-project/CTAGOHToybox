@@ -109,6 +109,43 @@ static class RealFilesCheck
         var family = items.Find("ammo mgun_ger");
         T.Eq(ItemLinks.RuleFirstByName + " set/stuff/mgun/mgun_ger.belt.ammo", family.Rule + " " + family.Files[0], "the family name goes to the file the game picked (G5)");
 
+        // 원형 상속(E11): 아이템 파일의 {from} 이름이 모두 파일로 이어지고, 물려받은 값의 자리가 그 파일 그 자리의 글자인지
+        int fromUnits = 0, fromProblems = 0, inherited = 0, fromWrongSlot = 0;
+        var fromStates = new Dictionary<string, int>(StringComparer.Ordinal);
+        var fromExamples = new List<string>();
+        foreach (var u in index.Units.Where(x => x.Kind == "stuff" || x.Kind == "pattern"))
+        {
+            var t = tracer.Trace(u.Path);
+            var problems = t.Unresolved.Where(x => x.StartsWith("from-")).ToList();
+            if (t.From.Count == 0 && problems.Count == 0) continue;
+            fromUnits++;
+            fromProblems += problems.Count;
+            foreach (string p in problems) if (fromExamples.Count < 20) fromExamples.Add(u.Path + " " + p);
+            foreach (var row in t.Rows.Where(r => r.From != null))
+            {
+                fromStates[row.FromState] = (fromStates.TryGetValue(row.FromState, out int n) ? n : 0) + 1;
+                foreach (var v in row.Values.Where(x => x.Arg >= 0))
+                {
+                    inherited++;
+                    KeyIndex root;
+                    if (!parsedFiles.TryGetValue(v.File, out root)) { root = new KeyIndex(SdlCore.Parse(stack.ReadText(v.File)).Root); parsedFiles[v.File] = root; }
+                    var node = root.Find(v.KeyPath, v.Occurrence, v.Arg);
+                    if (node == null || node.Text != v.Text) { fromWrongSlot++; if (fromExamples.Count < 20) fromExamples.Add("slot: " + u.Path + " " + row.Path + " ← " + v.File + " " + v.KeyPath); }
+                }
+            }
+        }
+        const string k98 = "set/stuff/rifle/k98", riflePattern = "set/stuff/rifle/rifle.pattern";
+        var k98Trace = tracer.Trace(k98);
+        Console.WriteLine("from-units=" + fromUnits + " from-problems=" + fromProblems + " inherited-values=" + inherited + " from-wrong-slot=" + fromWrongSlot +
+                          " states=" + string.Join(",", fromStates.OrderBy(k => k.Key).Select(k => k.Key + ":" + k.Value)) +
+                          " k98-chain=" + string.Join(" > ", k98Trace.From.Select(l => l.File)) + " rifle.pattern-users=" + index.UsersOf(riflePattern).Count);
+        foreach (string e in fromExamples) Console.WriteLine("  " + e);
+        T.True(fromUnits > 2000, "the item files that inherit were traced");
+        T.Eq(0, fromProblems, "every {from} name in the game's item files leads to a file, without a cycle");
+        T.Eq(0, fromWrongSlot, "every editable inherited value names the slot that holds that token");
+        T.Eq(riflePattern, k98Trace.From.Count > 0 ? k98Trace.From[0].File : null, "the K98 inherits rifle.pattern, as measured");
+        T.True(index.UsersOf(riflePattern).Count > 50, "and rifle.pattern counts its inheritors as users");
+
         // 게임 설정(하위 프로젝트 B): 맨 위 파일이 모두 읽히고, 같은 값으로 고쳐도 바이트가 같고, 문자열 속 설정은 나눴다 이으면 같다
         int settingFiles = 0, settingUnread = 0, luaRows = 0, luaMismatch = 0, pieceStrings = 0, pieceMismatch = 0, settingWrongSlot = 0;
         var settingExamples = new List<string>();

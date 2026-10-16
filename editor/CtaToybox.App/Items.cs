@@ -143,13 +143,13 @@ namespace CtaToybox.App
             return string.Join("  ", parts);
         }
 
-        // 줄의 부위와, 같은 줄을 모았으면 그 수. 둘 다 없으면 null
-        public static string ContextLine(string context, int repeats, string condLabel = null)
+        // 줄의 부위와, 같은 줄을 모았으면 그 수, 원형에서 물려받은 줄이면 그 상태. 모두 없으면 null
+        public static string ContextLine(string context, int repeats, string condLabel = null, string fromLabel = null)
         {
             string rep = repeats > 1 ? "같은 줄 " + repeats + "곳을 하나로 보인다. 고치면 모두 바뀐다" : null;
             // (mod ...) 조건 안의 줄은 그 조건일 때만 게임에 들어간다
             string cond = condLabel == null ? null : "조건: " + condLabel;
-            string tail = string.Join("  ·  ", new[] { cond, rep }.Where(x => x != null));
+            string tail = string.Join("  ·  ", new[] { fromLabel, cond, rep }.Where(x => x != null));
             if (context == null) return tail.Length == 0 ? null : tail;
             return "↳ " + context + (tail.Length == 0 ? "" : "  ·  " + tail);
         }

@@ -31,6 +31,9 @@ namespace CtaToybox.Core
         public List<string> LeafNames { get; set; }   // 값마다 감싼 호출의 이름(KeyRow.LeafNames). 호출 밖이면 null
         public string Comment { get; set; }        // Lua 설정의 개발사 주석(그 줄). 없으면 null
         public string TableComment { get; set; }   // Lua 설정의 표 앞 주석. 없으면 null
+        public string From { get; set; }        // 원형 상속으로 물려받은 줄이면 그 원형 파일(FromLevel.File). 유닛 자신의 줄이면 null
+        public string FromState { get; set; }   // FromLevel.Inherited | Overridden | Unconfirmed. 유닛 자신의 줄이면 null
+        public string FromBlock { get; set; }   // Unconfirmed일 때 자식 쪽에도 있는 감싼 블록
     }
 
     public sealed class UnitTraceResult
@@ -41,6 +44,7 @@ namespace CtaToybox.Core
         public string ReadError { get; set; }     // 파일을 읽지 못해 줄이 없을 때의 안내(Lua 설정). 읽었으면 null
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
         public List<object> Nodes { get; set; }   // 펼친 노드. 아이템 이름을 모을 때 쓴다
+        public List<FromLevel> From { get; set; } = new List<FromLevel>();   // {from}으로 물려받는 원형 파일, 가까운 것부터. 물려받지 않으면 빈 목록
     }
 
     public sealed class UnitTracer
@@ -51,7 +55,11 @@ namespace CtaToybox.Core
         // 파일 → (토큰의 글자 위치 → 자리). 파싱되지 않는 파일은 빈 표다
         readonly Dictionary<string, Dictionary<int, Slot>> slots = new Dictionary<string, Dictionary<int, Slot>>(StringComparer.Ordinal);
 
+        FromLinks links;
+
         public UnitTracer(SourceStack stack) { this.stack = stack; }
+
+        FromLinks Links { get { return links ?? (links = new FromLinks(stack.Paths)); } }
 
         Dictionary<int, Slot> SlotsOf(string file)
         {
@@ -114,13 +122,35 @@ namespace CtaToybox.Core
             return result;
         }
 
+        // 원형 상속에서 같은 키인지 가르는 경로. 이름 있는 부위 블록은 이름을 붙인다({parameters "ap2" {speed}} → /from/parameters"ap2"/speed).
+        // 탄종이 다른 parameters 블록은 서로 다른 블록이다. rows와 같은 순서다
+        public static List<string> KeyedPathsOf(List<KeyRow> rows)
+        {
+            var result = new List<string>(rows.Count);
+            var latest = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+            foreach (var row in rows)
+            {
+                int slash = row.Path.LastIndexOf('/');
+                string parent = row.Path.Substring(0, Math.Max(slash, 0)), parentKeyed;
+                if (!latest.TryGetValue(parent, out parentKeyed)) parentKeyed = parent;
+                string seg = row.Path.Substring(slash + 1);
+                var first = row.Leaves.Count > 0 ? row.Leaves[0] : null;
+                bool part = slash > 0 && PartBlocks.Contains(seg) && first != null && first.Kind == "str";
+                string keyed = parentKeyed + "/" + seg + (part ? "\"" + first.Text.Trim('"').Replace('/', '|') + "\"" : "");
+                latest[row.Path] = keyed;
+                result.Add(keyed);
+            }
+            return result;
+        }
+
         // 유닛 파일이 없으면 null
         public UnitTraceResult Trace(string unit)
         {
             unit = SourceStack.ToVirtual(unit);
             if (stack.Find(unit) == null) return null;
             if (LuaTable.IsLua(unit)) return TraceLua(unit);
-            var resolved = new SdlResolver(stack.ReadText).Resolve(unit);
+            var resolver = new SdlResolver(stack.ReadText);
+            var resolved = resolver.Resolve(unit);
             var root = new SdlNode("root", "", 0, true);
             root.Children.AddRange(resolved.Nodes);
             var result = new UnitTraceResult { Unit = unit, Unresolved = resolved.Unresolved, IncludeEdges = resolved.IncludeEdges, Nodes = resolved.Nodes };
@@ -134,7 +164,77 @@ namespace CtaToybox.Core
                 foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                 result.Rows.Add(traced);
             }
+            AddInherited(result, rows, resolver);
             return result;
+        }
+
+        const string Top = "/from";
+
+        // {from "이름" ...}으로 시작하는 유닛: 사슬의 원형 파일마다 따로 펼쳐 그 줄을 맨 위 블록을 from으로 바꿔 붙인다(E11).
+        // 이름을 찾지 못하거나 같은 파일이 다시 나오면 풀리지 않은 구문으로 알리고 멈춘다
+        void AddInherited(UnitTraceResult result, List<KeyRow> ownRows, SdlResolver resolver)
+        {
+            string name = FromLinks.NameOf(ownRows);
+            if (name == null) return;
+            string rawTop = ownRows.First(r => r.Path == Top && r.Occurrence == 0).RawPath;
+            var below = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+            foreach (string p in KeyedPathsOf(ownRows)) FromLevel.Count(below, p);
+            foreach (string f in new[] { result.Unit }.Concat(result.IncludeEdges.Select(e => e.ToFile)).Distinct())
+                foreach (string p in MacroCallPaths(f, false)) FromLevel.Count(below, p);
+            var seen = new HashSet<string>(StringComparer.Ordinal) { result.Unit };
+            string current = result.Unit;
+            while (name != null)
+            {
+                string parent = Links.Find(current, name);
+                if (parent == null) { result.Unresolved.Add("from-not-found: " + name + " (" + current + ")"); return; }
+                if (!seen.Add(parent)) { result.Unresolved.Add("from-cycle: " + name + " (" + current + ")"); return; }
+                var resolved = resolver.Resolve(parent);
+                var root = new SdlNode("root", "", 0, true);
+                root.Children.AddRange(resolved.Nodes);
+                var rows = KeyLocator.Rows(root);
+                var level = new FromLevel { File = parent, Name = name, Below = new Dictionary<string, int>(below, StringComparer.OrdinalIgnoreCase), Own = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase) };
+                level.Files = new[] { parent }.Concat(resolved.IncludeEdges.Select(e => e.ToFile)).Distinct().ToList();
+                level.Candidates = Links.Candidates(current, name);
+                var keyed = KeyedPathsOf(rows).Select(p => FromLinks.Reroot(p, Top)).ToList();
+                foreach (string p in keyed) if (p != null) FromLevel.Count(level.Own, p);
+                foreach (string f in level.Files)
+                    foreach (string p in MacroCallPaths(f, f == parent)) FromLevel.Count(level.Own, p);
+                result.From.Add(level);
+                foreach (string u in resolved.Unresolved) result.Unresolved.Add(u + " (원형 " + parent + ")");
+                var contexts = ContextsOf(rows);
+                for (int i = 0; i < rows.Count; i++)
+                {
+                    var row = rows[i];
+                    string path = FromLinks.Reroot(row.Path, Top);
+                    if (path == null || row.Leaves.Count == 0) continue;
+                    string block;
+                    string state = level.StateOf(keyed[i], out block);
+                    var traced = new TraceRow { Path = path, RawPath = FromLinks.Reroot(row.RawPath, rawTop), LeafNames = row.LeafNames, Occurrence = row.Occurrence, Form = row.Form, Context = contexts[i], Cond = row.Cond, From = parent, FromState = state, FromBlock = block };
+                    foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
+                    result.Rows.Add(traced);
+                }
+                foreach (var kv in level.Own) { int n; below.TryGetValue(kv.Key, out n); below[kv.Key] = n + kv.Value; }
+                name = FromLinks.NameOf(rows);
+                current = parent;
+            }
+        }
+
+        // 파일 원문의 매크로 호출 줄의 비교용 경로(KeyedPathsOf, 매크로 정의 안은 뺀다). reroot면 맨 위 블록을 from으로 바꾼다
+        IEnumerable<string> MacroCallPaths(string file, bool reroot)
+        {
+            if (LuaTable.IsLua(file)) yield break;
+            string text = stack.ReadText(file);
+            if (text == null) yield break;
+            var parsed = SdlCore.Parse(text);
+            if (parsed.Errors.Count > 0) yield break;
+            var rows = KeyLocator.Rows(parsed.Root);
+            var keyed = KeyedPathsOf(rows);
+            for (int i = 0; i < rows.Count; i++)
+            {
+                if (rows[i].Form != "macro" || rows[i].Path.Contains("(define ")) continue;
+                string p = reroot ? FromLinks.Reroot(keyed[i], Top) : keyed[i];
+                if (p != null) yield return p;
+            }
         }
 
         // Lua 설정 파일: include·매크로가 없으므로 파일의 줄이 곧 펼친 줄이다. 읽지 못하면 줄 없이 이유만 낸다
