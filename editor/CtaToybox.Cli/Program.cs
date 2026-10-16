@@ -16,7 +16,7 @@ namespace CtaToybox.Cli
             "  ctatoybox units [--find <글자>] [--kind <종류>] [--layer <계층>] [--limit N] [--names <csv>]\n" +
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
-            "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
+            "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 인자 없는 매크로 호출의 이름을 같은 파일에 정의된 다른 이름으로)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
@@ -32,7 +32,7 @@ namespace CtaToybox.Cli
             ["units"] = new[] { "settings", "find", "kind", "layer", "limit", "names" },
             ["trace"] = new[] { "settings", "filter" },
             ["show"] = new[] { "settings", "filter" },
-            ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit" },
+            ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit", "kind" },
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit" },
             ["merge"] = new[] { "settings", "project", "from" },
             ["build"] = new[] { "settings", "project", "force" },
@@ -298,6 +298,8 @@ namespace CtaToybox.Cli
             string scope = opt.ContainsKey("scope") ? opt["scope"].ToLowerInvariant() : "shared";
             if (scope != "shared" && scope != "unit") throw new UsageException("--scope는 shared 또는 unit이다");
             if (scope == "unit" && !opt.ContainsKey("unit")) throw new UsageException("--scope unit에는 --unit이 필요하다");
+            string editKind = opt.ContainsKey("kind") ? opt["kind"] : null;
+            if (editKind != null && editKind != MacroSwap.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + "만 쓴다");
             EditorSettings settings; LayerPlan plan;
             using (var stack = Open(settingsPath, output, out settings, out plan))
             {
@@ -311,12 +313,16 @@ namespace CtaToybox.Cli
                 var rows = SourceRows.Of(file.VirtualPath, text, out readError);
                 if (rows == null) { output.WriteLine("읽히지 않는 파일은 고칠 수 없다: " + readError); return 1; }
                 var found = rows.FirstOrDefault(r => r.Occurrence == occ && string.Equals(r.Path, keyPath, StringComparison.OrdinalIgnoreCase));
-                var node = found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
+                // --kind macro-name은 인자 없는 호출 줄의 이름 토큰을 고친다(E4)
+                var node = editKind == MacroSwap.Kind ? (found != null && found.Leaves.Count == 0 && arg == 0 ? found.Head : null) : found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
                 string warning;
                 string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning)
                                ?? (TextCodec.CanEncode(newValue, kind) ? null : "새 값에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + newValue)
-                               ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue });
+                               ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Kind = editKind });
+                string unitForSwap = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
+                if (error == null && editKind == MacroSwap.Kind)
+                    error = MacroSwap.Check(new UnitTracer(stack).Trace(unitForSwap), new Edit { Old = node.Text, New = newValue, Kind = editKind });
                 if (error != null) { output.WriteLine(error); return 1; }
                 if (warning != null) output.WriteLine("경고: " + warning);
                 string unit = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
@@ -335,7 +341,7 @@ namespace CtaToybox.Cli
 
                 var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
                 // 같은 자리·같은 범위의 수정이 있으면 값만 바꾼다(앱의 EditorSession.AddEdit과 같다). '이 유닛만'은 유닛까지 같아야 같은 수정이다
-                var existing = project.Edits.FirstOrDefault(e => e.Scope == scope
+                var existing = project.Edits.FirstOrDefault(e => e.Scope == scope && e.Kind == editKind
                     && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)
                     && string.Equals(e.Path, keyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == occ && e.Arg == arg
                     && (scope != "unit" || SourceStack.ToVirtual(e.Unit ?? "") == unit));
@@ -349,7 +355,7 @@ namespace CtaToybox.Cli
                 }
                 project.Edits.Add(new Edit
                 {
-                    Unit = unit, File = file.VirtualPath, Path = keyPath.ToLowerInvariant(), Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Scope = scope
+                    Unit = unit, File = file.VirtualPath, Path = keyPath.ToLowerInvariant(), Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Scope = scope, Kind = editKind
                 });
                 project.Save(projectPath);
                 output.WriteLine("수정을 더했다: " + file.VirtualPath + " " + keyPath + " " + node.Text + " → " + newValue + " (계층 " + file.Layer + (scope == "unit" ? ", 이 유닛만: " + unit : "") + ")");

@@ -143,6 +143,38 @@ static class RealFilesCheck
                 }
             }
         }
+        // E4: 병종 파일의 인자 없는 매크로 호출마다 같은 갈래의 다른 이름으로 바꿔 보면 적용되고 다시 읽혀야 한다
+        int swapCalls = 0, swapChecked = 0, swapBad = 0;
+        var swapExamples = new List<string>();
+        foreach (var u in index.Units.Where(x => x.Kind == "breed"))
+        {
+            string text = stack.ReadText(u.Path);
+            if (text == null) continue;
+            var parsedBreed = SdlCore.Parse(text);
+            if (parsedBreed.Errors.Count > 0) continue;
+            var calls = KeyLocator.Rows(parsedBreed.Root).Where(r => r.Form == "macro" && r.Leaves.Count == 0 && r.Head != null && !r.Path.Contains("(define ") && MacroSwap.NameOf(r.RawPath) != null).ToList();
+            if (calls.Count == 0) continue;
+            var defines = tracer.Trace(u.Path).Defines;
+            foreach (var c in calls)
+            {
+                swapCalls++;
+                string name = MacroSwap.NameOf(c.RawPath);
+                string other = MacroSwap.Choices(defines, name).FirstOrDefault(x => MacroSwap.SameFamily(x, name) && !string.Equals(x, name, StringComparison.OrdinalIgnoreCase));
+                if (other == null) continue;
+                swapChecked++;
+                var e = new Edit { Unit = u.Path, File = u.Path, Path = c.Path, Occurrence = c.Occurrence, Arg = 0, Old = c.Head.Text, New = "\"" + other + "\"", Kind = MacroSwap.Kind };
+                var results = new List<EditResult>();
+                string error = null;
+                try { TokenPatcher.Apply(text, new[] { e }, results); } catch (InvalidOperationException ex) { error = ex.Message; }
+                if (error != null || results.Count != 1 || results[0].Status != EditStatus.Applied)
+                { swapBad++; if (swapExamples.Count < 10) swapExamples.Add(u.Path + " " + c.Path + " → " + other + ": " + (error ?? (results.Count == 0 ? "no result" : results[0].Message))); }
+            }
+        }
+        Console.WriteLine("macro-calls=" + swapCalls + " macro-swap-checked=" + swapChecked + " macro-swap-bad=" + swapBad);
+        foreach (string e in swapExamples) Console.WriteLine("  " + e);
+        T.True(swapChecked > 1000, "argument-less calls in breed files were swapped (E4)");
+        T.Eq(0, swapBad, "every same-family swap applies and reads back (E4)");
+
         const string k98 = "set/stuff/rifle/k98", riflePattern = "set/stuff/rifle/rifle.pattern";
         var k98Trace = tracer.Trace(k98);
         Console.WriteLine("from-units=" + fromUnits + " from-problems=" + fromProblems + " inherited-values=" + inherited + " from-wrong-slot=" + fromWrongSlot +
@@ -211,7 +243,9 @@ static class RealFilesCheck
                         string error;
                         var fileRows = SourceRows.Of(v.Trace.File, stack.ReadText(v.Trace.File), out error);
                         var row = fileRows == null ? null : fileRows.FirstOrDefault(x => x.Occurrence == v.Trace.Occurrence && x.Path == v.Trace.KeyPath);
-                        if (row == null || v.Trace.Arg >= row.Leaves.Count || row.Leaves[v.Trace.Arg].Text != v.Trace.Text)
+                        // 매크로 호출 이름 자리(E4)는 호출 줄의 이름 토큰이다
+                        string at = row == null ? null : v.Trace.MacroName ? (row.Head == null ? null : row.Head.Text) : v.Trace.Arg < row.Leaves.Count ? row.Leaves[v.Trace.Arg].Text : null;
+                        if (at != v.Trace.Text)
                         { settingWrongSlot++; if (settingExamples.Count < 30) settingExamples.Add("slot: " + u.Path + " " + r.Path + " ← " + v.Trace.File + " " + v.Trace.KeyPath); }
                     }
                 }

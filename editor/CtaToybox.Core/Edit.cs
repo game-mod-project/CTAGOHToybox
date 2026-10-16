@@ -25,6 +25,9 @@ namespace CtaToybox.Core
         public string NamedPath { get; set; }
         [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault)]
         public int NamedOccurrence { get; set; }
+        // 무엇을 고치는지. 값이면 null(지금까지의 프로젝트 파일 그대로), 인자 없는 매크로 호출의 이름이면 MacroSwap.Kind(E4)
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public string Kind { get; set; }
     }
 
     // 프로젝트 합치기(EditProject.MergeFrom)의 결과
@@ -68,7 +71,7 @@ namespace CtaToybox.Core
                 var here = Edits.FirstOrDefault(x => SameSlot(x, e));
                 if (here == null)
                 {
-                    Edits.Add(new Edit { Unit = e.Unit, File = e.File, Path = e.Path, Occurrence = e.Occurrence, Arg = e.Arg, Old = e.Old, New = e.New, Scope = e.Scope, Enabled = e.Enabled, NamedPath = e.NamedPath, NamedOccurrence = e.NamedOccurrence });
+                    Edits.Add(new Edit { Unit = e.Unit, File = e.File, Path = e.Path, Occurrence = e.Occurrence, Arg = e.Arg, Old = e.Old, New = e.New, Scope = e.Scope, Enabled = e.Enabled, NamedPath = e.NamedPath, NamedOccurrence = e.NamedOccurrence, Kind = e.Kind });
                     report.Added++;
                 }
                 else if (here.New == e.New) report.Same++;
@@ -79,7 +82,7 @@ namespace CtaToybox.Core
 
         static bool SameSlot(Edit a, Edit b)
         {
-            return a.Scope == b.Scope && a.Occurrence == b.Occurrence && a.Arg == b.Arg
+            return a.Scope == b.Scope && a.Kind == b.Kind && a.Occurrence == b.Occurrence && a.Arg == b.Arg
                 && string.Equals(SourceStack.ToVirtual(a.File ?? ""), SourceStack.ToVirtual(b.File ?? ""), System.StringComparison.OrdinalIgnoreCase)
                 && string.Equals(a.Path, b.Path, System.StringComparison.OrdinalIgnoreCase)
                 && (a.Scope != "unit" || string.Equals(SourceStack.ToVirtual(a.Unit ?? ""), SourceStack.ToVirtual(b.Unit ?? ""), System.StringComparison.OrdinalIgnoreCase));

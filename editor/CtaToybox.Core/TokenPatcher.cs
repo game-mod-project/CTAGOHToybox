@@ -85,7 +85,8 @@ namespace CtaToybox.Core
                     results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 이름의 항목이 없다: " + e.NamedPath));
                     continue;
                 }
-                var node = index.Find(e.Path, e.Occurrence, e.Arg);
+                // 인자 없는 매크로 호출의 이름(E4): 호출 줄의 첫 토큰을 바꾼다. 바꾸면 키 경로도 바뀐다
+                var node = e.Kind == MacroSwap.Kind ? (index.Row(e.Path, e.Occurrence) == null ? null : index.Row(e.Path, e.Occurrence).Head) : index.Find(e.Path, e.Occurrence, e.Arg);
                 if (node == null) { results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 자리가 없다: " + e.Path + " [" + e.Occurrence + "] 값 " + e.Arg)); continue; }
                 if (node.Text != e.Old) { results.Add(Result(e, EditStatus.SourceChanged, "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text)); continue; }
                 string warning;
@@ -112,6 +113,15 @@ namespace CtaToybox.Core
             foreach (var p in patches)
             {
                 if (p.Edit == null) continue;
+                if (p.Edit.Kind == MacroSwap.Kind)
+                {
+                    // 이름이 바뀐 호출 줄이 같은 부모 아래 새 이름으로 있어야 한다
+                    string parent = p.Edit.Path.Substring(0, FromLevel.LastSlash(p.Edit.Path));
+                    string renamed = parent + "/(" + p.Edit.New.ToLowerInvariant() + ")";
+                    if (!KeyLocator.Rows(check.Root).Any(r => string.Equals(r.Path, renamed, StringComparison.OrdinalIgnoreCase) && r.Head != null && r.Head.Text == p.Edit.New))
+                        throw new InvalidOperationException("고친 뒤 새 이름의 매크로 호출이 없다: " + renamed);
+                    continue;
+                }
                 var node = checkIndex.Find(p.Edit.Path, p.Edit.Occurrence, p.Edit.Arg);
                 if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다. 이 값을 바꾸면 키 경로가 바뀐다(블록 이름 뒤의 한정자나 숫자 행의 첫 값): " + p.Edit.Path);
             }

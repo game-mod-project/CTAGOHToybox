@@ -79,6 +79,9 @@ namespace CtaToybox.App
         public static string RowNote(RowView row)
         {
             string comment = (row.SourceComment == null ? "" : "\n원문 주석: " + row.SourceComment) + (row.TableComment == null ? "" : "\n표 설명: " + row.TableComment);
+            // 인자 없는 호출(E4)은 이름만 바꾼다. 그 매크로가 넣는 값은 정의 파일 쪽 묶음에 펼친 줄로 보인다
+            if (row.Note == null && row.IsMacroCall && row.Values.Count == 1 && row.Values[0].Trace.MacroName)
+                return "[매크로 호출] 인자 없는 호출이다. 이름을 같은 파일에 정의된 다른 매크로로 바꿀 수 있다(값 고치기 창에 고를 수 있는 이름이 보인다). 이 매크로가 넣는 값은 정의 파일 묶음에 펼친 줄로 보인다";
             if (row.Note == null && row.IsMacroCall) return "[매크로 호출] 이 인자를 쓰는 값들이 함께 바뀐다. 인자로 계산한 값은 전체 탭의 '고칠 수 없는 값'에 보인다";
             if (row.Note == null && comment.Length > 0) return "(한글 설명 없음)" + comment;
             return Note(row.Note) + comment;
