@@ -1,0 +1,113 @@
+{game_entity
+	(include "/properties/tank__ctb_us_m2a2_45779e39.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "light" "vision_lev02" "detect_tank_mg" "muzzle_hmg_m2hb" "sq_mg"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+	{patherId "stuart"}
+	{collider "tank.light"}
+	(include "us_m2a2.ext")	
+
+	
+	
+	("crew_4_human")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_left"}{end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}{end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_lowArmor"} 	{end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit3)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit4)  animation(armor1))
+
+
+	{extender "shield"
+		{on}
+	}
+	{extender "inventory"
+		{box
+			{item "ammo hmgun_usa" 1625}
+			{item "ammo mgun_usa belt" 6250}		;6750 rounds
+			{item "satchel_charge_usa" 1} 
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "mgun"
+			{RestoreIKAfterAim}
+			{weapon "browning_m2" filled}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+
+		{place "mgun1"
+			{type "coaxial"}
+			{weapon "browning_m19a5" filled}
+			{foresight "foresight4"}
+			{gunner "charger"}
+			{charger "charger"}
+			{basic}
+		}
+		{place "mgun2"
+			{type "hull"}
+			{weapon "browning_m19a4_tank" filled}
+			{foresight "foresight5"}
+			{gunner "commander"}
+			{charger "commander"}
+			{ai_in_manual}
+			{basic}
+		}
+
+	}
+	{mass 12000}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.49))
+       		("mobility_tank"
+			speed(58) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(12) ;---------Max speed in reverse on road, km/h.
+			traverse(27) ;-------Track traverse, per second, in degrees.
+			weight(12) ;-------Weight in Tonnes.
+			power(220) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(5.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(340) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(160) ;---------Range in km, off-road.
+		)
+	}
+	
+	{Extension "us_m2a2.mdl"}
+	{texmod ""}
+
+	{bone "turret"
+		{limits -15 175}
+		("turret_light" power_traverse(24))
+	}
+	{bone "gun_rot"
+		{limits -20 10}
+		{speed2 5}
+	}
+
+
+
+        
+}
+

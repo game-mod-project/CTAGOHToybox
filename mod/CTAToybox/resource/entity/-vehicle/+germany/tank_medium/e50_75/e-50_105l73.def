@@ -1,0 +1,159 @@
+{game_entity
+	(include "/properties/tank__ctb_e_50_105l73_fa63db4f.ext")
+	(include "e-50_105l73_armor.ext") ; This file must contain the body/turret definitions
+	(include "/properties/shadow/tank.inc"  scale(1.0)) ;1.4
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "vision_lev04" "muzzle_100mm_105mm_sides" "shield" "detect_tank_heavy"}
+	{PatherId "tiger2"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+	("gunner_visible")
+
+{placer
+	{place "driver" {group "crew"} {visor "driver"}}
+}
+{boarder
+	{door "emit1"}
+	{link "emit1" "driver" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "gunner" {group "crew"} {visor "tur1"}}
+}
+{boarder
+	{door "emit2"}
+	{link "emit2" "gunner" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "charger" {group "crew"}}
+}
+{boarder
+	{door "emit5"}
+	{link "emit5" "charger" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "commander" {group "crew"} {linkbone "gunner2"} {visor "tur2_3"} {visor "tur2_4"} {visor "tur2_5"} {turnoff {sensor} {shadow}} {openForCrush} {visor "mgun_aa"}}
+}
+{boarder
+	{door "emit4"}
+	{link "emit4" "commander" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+(define "seat_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+("seat_human" place(seat1) bone(seat7) door(emit7)  animation(armor))
+("seat_human" place(seat2) bone(seat8) door(emit8)  animation(armor1))
+("seat_human" place(seat3) bone(seat9) door(emit9)  animation(armor1))
+("seat_human" place(seat4) bone(seat10) door(emit10)  animation(armor))
+
+                {extender "vision_mode"
+		{timer_object
+			{tag		"thermal"}
+			{active_time	   80}
+			{recharge_rate	  1.0}
+			{type	     "recharge"}
+	    }
+	}
+
+	{sensor
+		{visor "mgun_aa" {vision "vehicle_top_mgun"} {bone "visor8"}}
+		{visor "driver" {vision "tank_driver"} {bone "visor2"}}
+		{visor "driver_2" {vision "tank_driver"} {bone "visor3"}}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo mgun_ger" 2500}
+			{item "ammo bulletger_105_l68 apcbche" 16}
+			{item "ammo bulletger_105_l68 apcr" 16}
+			{item "ammo bulletger_105_l68 he" 10}
+			{item "ammo bulletger_20_auto apcr" 1050}
+			{item "ammo bulletger_20_auto he" 1050}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "105mm_kwk46_l73" filling "ammo bulletger_105_l68 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			{foresight "foresight1"}
+			{basic}
+		}
+		{place "gun2"
+			{type "coaxial_cannon"}
+			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{foresight "foresight2"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun1"
+			{type "aa"}
+			{weapon "mg42_tank" filled}
+			("abm_mgun")
+			{foresight "foresight4"}
+			{gunner "charger"}
+			{charger "charger"}
+			{basic}
+		}
+		{place "mgun2"
+			{type "cupola"}
+			{weapon "mg42_tank" filled}
+			{gunner "commander"}
+			{charger "commander"}
+			{foresight "foresight3"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 63000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(2.45))
+		("mobility_tank"
+			speed(60)
+			reverse(15.3)
+			traverse(30)
+			weight(63.0)
+			power(900)
+			track(3.5)
+			fuel(700)
+			type(fuel)
+			range(100)
+		)
+	}
+	{Extension "e-50_105l73.mdl"}
+}

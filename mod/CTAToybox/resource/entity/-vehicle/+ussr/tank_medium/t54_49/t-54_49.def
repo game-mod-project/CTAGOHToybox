@@ -1,0 +1,253 @@
+{game_entity
+	(include "/properties/tank__ctb_t_54_49_c72fb743.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "vision_lev04" "muzzle_100mm_105mm" "shield" "medium" "tank"}
+	{Extension "t54_49.mdl"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{PatherId "t34"}
+	{extender "enumerator"
+		{digit_folder "ru1"}
+	}
+	("tank_medium_tier3")
+	("crew_4_human")
+
+	("tracks" repair(3) thickness(25))
+	("gun" repair(3) thickness(35))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+
+	{Volume "body"
+		{thickness 80
+			{front 100}		; Nose
+			{top 30}		; Glacis
+			{rear 45}
+			{bottom 25}
+		}
+	}
+
+	{Volume "engine"
+		{thickness 30
+		}
+	}
+	{Volume "mantlet_mask"
+		{thickness 15
+		}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 200
+		}
+	}
+
+	{Volume "smoke_barrell"
+		{thickness 10
+		}
+	}
+	{Volume "smoke_barrelr"
+		{thickness 10
+		}
+	}
+
+	{Volume "turret1"
+		{thickness 100
+			{top 40}
+		}
+	}
+	{Volume "turret2"
+		{thickness 100
+			{top 30}
+		}
+	}
+	{Volume "turret"
+		{thickness 135
+			{front 200}
+			{rear 60}
+			{top 35}
+		}
+	}
+	{Volume "wavebreaker"
+		{thickness 15
+		}
+	}
+	{extender "shield" {on}}
+	("shield" args "detail1" 100)
+	("shield" args "detail2" 8)
+	("shield" args "detail3" 8)
+	("shield" args "detail4" 8)
+	("shield" args "detail5" 8)
+	("shield" args "detail7" 8)
+	("shield" args "detail8" 8)
+	("shield" args "detail9" 5)
+
+	("shield" args "shieldl1" 10)
+	("shield" args "shieldl2" 10)
+	("shield" args "shieldl3" 30)
+	("shield" args "shieldl4" 30)
+	("shield" args "shieldl5" 30)
+	("shield" args "shieldl6" 30)
+	("shield" args "shieldl7" 30)
+	("shield" args "shieldl8" 30)
+
+	("shield" args "shieldr1" 10)
+	("shield" args "shieldr2" 10)
+	("shield" args "shieldr3" 30)
+	("shield" args "shieldr4" 30)
+	("shield" args "shieldr5" 30)
+	("shield" args "shieldr6" 30)
+	("shield" args "shieldr7" 30)
+	("shield" args "shieldr8" 30)
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+	{component "shieldl7" {tags "cut_part"}}
+	{component "shieldl8" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}
+	{component "shieldr7" {tags "cut_part"}}
+	{component "shieldr8" {tags "cut_part"}}
+
+	{component "detail1" {tags "cut_part"}}
+	{component "detail2" {tags "cut_part"}}
+	{component "detail3" {tags "cut_part"}}
+	{component "detail4" {tags "cut_part"}}
+	{component "detail5" {tags "cut_part"}}
+	{component "detail7" {tags "cut_part"}}
+	{component "detail8" {tags "cut_part"}}
+	{component "detail9" {tags "cut_part"}}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_HighArmor"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_Is-2"} {end "seat_isu152_gunner2"} {base "open_commander"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Is-2"} {end "seat_isu152_gunner2"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_body"} {end "seat_isu1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor3"
+			{forward	{begin	"board_body"} 	{end "seat_isu"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+	}
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor))
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_100 aphe" 14}
+			{item "bulletrus_100 apds" 7}
+			{item "bulletrus_100 he" 16}
+			{item "ammo mgun_rus belt" 3500}
+			{item "ammo hmgun_rus" 250}
+			{item "satchel_charge_rus" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "100mm_d10t" filling "bulletrus_100 aphe" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic"
+				zeroing(1.0)
+				dispersion(0.10)
+			)	
+		}
+		{place "mgun"
+			{type "aa_hmg"}
+			{weapon "hmgun_aa_dshkm" filled}
+			{gunner "commander"}
+			{charger "commander"}
+			{LinkBone "mgun_rot"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "sg43" filled}
+			{foresight "foresight4"}
+			{gunner "driver"}
+			{charger "driver"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "sg43" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+	
+	{mass 35500}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(-0.7))
+		("mobility_tank"
+			speed(51)  ;---------Max speed when fully accelerated on road, km/h.
+			reverse(8);---------Max speed in reverse on road, km/h. ;//7.5 historical + 2 due to terrain modifier
+			traverse(36) ;-------Track traverse, per second, in degrees.
+			weight(35.5) ;-------Weight in Tonnes.
+			power(520) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(650) ;----------Fuel capacity in Litres.
+			type(diesel) ;-------Fuel type. (diesel OR fuel)
+			range(610) ;---------Range in km, off-road.
+		)
+	}
+	{bone "gun_rot"
+		{limits -5 20}
+		{speed2 4.5}
+	}
+	{bone "turret" 
+		{speed2 15}
+	}
+	{bone "mgun_aa_v"
+		{limits -20 85}
+		{speed2 35}
+	}
+}

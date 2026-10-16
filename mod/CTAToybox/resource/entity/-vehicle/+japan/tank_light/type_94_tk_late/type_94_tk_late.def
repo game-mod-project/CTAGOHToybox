@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/tank__ctb_type_94_tk_late_9931c6bb.ext")
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "light" "vision_lev03" "muzzle_37mm_47mm" "detect_tank_light" "tractor" "tractor_medium" "sq_armor_light"}
+	{extension "type_94_tk_late.mdl"}
+	(include "type_94_tk.ext")
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+	{patherId "stuart"}
+	{collider "tank.light"}
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_body"} {base "open_driver"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_tank_right"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_body"} {base "open_driver"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "armor"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human" place(driver)	    door(emit1) visor(driver))	
+	("crew_human" place(gunner)	    door(emit2) visor(main))
+	("seat_human" place(seat1) bone(seat01) door(emit4)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit3)  animation(armor1))
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_37 aphe" 47}		
+			{item "bulletjap_37 he2" 40}	
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "37mm_type94" filling "bulletjap_37 aphe" 1}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_dymamic"
+				zeroing(2.5)
+				dispersion(0.2)
+			)
+		}
+	}
+
+	{mass 3700}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.2) len(-0.47))
+		("mobility_tank"
+			speed(40) ;-----------Max speed when fully accelerated on road, km/h.
+			reverse(15) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;--------Track traverse, per second, in degrees.
+			weight(3.7) ;--------Weight in Tonnes.
+			power(35) ;----------Engine Power, in hp.
+			track(8.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(204) ;-----------Fuel capacity in Litres.
+			type(fuel) ;----------Fuel type. (diesel OR fuel)
+			range(200) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -10 10}
+		{speed2 8}
+	}
+	{bone "turret"
+		("turret_light" power_traverse(10)) ;// manual
+	}
+}

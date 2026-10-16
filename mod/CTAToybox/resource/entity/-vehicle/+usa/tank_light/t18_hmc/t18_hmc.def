@@ -1,0 +1,123 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_t18_hmc_3d3750cd.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "light" "vision_lev03" "muzzle_75mm_76mm" "detect_tank_light" "sq_he_medium"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_medium"}
+	(include "t18_hmc.ext")
+	{patherId "su76"}
+	{collider "tank.light"}
+
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	
+	;("armor_medium" turret(25 15 5 5) body(25 10 10 10) body2(25 10 10 10) body3(25 10 10 10))
+	;("armor_engine"  t(15 15 15 15))
+	;("armor_mantlet" t(35))
+
+
+
+	("crew_4_human")
+
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_Kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bulletusa_75x272 he" 30}	;46 rounds, 70/15/15%, HE/HEAT/WP
+			{item "ammo bulletusa_75x272 heat" 8}
+			{item "ammo bulletusa_75x272 wp" 8}
+			{item "ammo mgun_usa belt" 6250}		;6750 rounds
+			{item "satchel_charge_usa" 1}		; 15 boxes
+
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_m2_how" filling "bulletusa_75x272 he" 1}
+			{gunner "gunner"}
+			{charger "charger"}	
+			("abm_dymamic"
+				zeroing(4.00)
+				dispersion(0.25)
+			)
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight4"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{ai_in_manual}
+			{basic}
+		}
+		{place "mgun2"
+			{type "hull"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			{ai_in_manual}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 24000}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.2) len(0.47))
+		("mobility_tank"
+			speed(58) ;-----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(37) ;--------Track traverse, per second, in degrees.
+			weight(12.7) ;--------Weight in Tonnes.
+			power(262) ;----------Engine Power, in hp.
+			track(10.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(204) ;-----------Fuel capacity in Litres.
+			type(fuel) ;----------Fuel type. (diesel OR fuel)
+			range(112) ;----------Range in km, off-road.
+		)
+	}
+
+	{Extension "t18_hmc.mdl"}
+
+	{bone "turret"
+		{limits -21 21}
+		("turret_light" power_traverse(0)) ;// manual
+	}
+	{bone "gun_rot"
+		{limits -40 8}
+		{speed 0.00236667}
+	}
+
+}

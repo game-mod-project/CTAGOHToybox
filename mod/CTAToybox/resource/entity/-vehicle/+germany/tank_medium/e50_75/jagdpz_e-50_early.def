@@ -1,0 +1,80 @@
+{game_entity
+	(include "/properties/tank__ctb_jagdpz_e_50_early_0b351384.ext")
+	(include "jagdpz_e-50_early_armor.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "tractor" "heavy" "vision_lev04" "muzzle_122mm_128mm_sides" "shield" "detect_tank_heavy" "turret_rotator" "-turret"}
+	{PatherId "tiger2"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{extension "crew_jagd.ext"}
+
+	{sensor
+		{visor "tur1" {vision "tank_main-l"} {bone "visor1"}}
+		{visor "tur1_2" {vision "tank_main-l"} {bone "visor10"}}
+		{visor "tur2" {vision "tank_main-l"} {bone "visor4"}}
+		{visor "tur2_2" {vision "tank_main-l"} {bone "visor5"}}
+		{visor "tur2_3" {vision "tank_main-l"} {bone "visor6"}}
+		{visor "driver" {vision "tank_driver"} {bone "visor2"}}
+		{visor "driver_2" {vision "tank_driver"} {bone "visor3"}}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bulletger_128_2 apcbche" 12}
+			{item "ammo bulletger_128_2 apds" 12}
+			{item "ammo bulletger_128_2 he" 6}
+			{item "ammo bulletger_20_auto apcr" 1050}
+			{item "ammo bulletger_20_auto he" 1050}
+			{item "ammo mgun_ger" 1850}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_kwk46_l71" filling "ammo bulletger_128_2 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger charger2" minWorkers 1}
+			{foresight "foresight1"}
+			{basic}
+			{rotate}
+		}
+		{place "mgun2"
+			{type "cupola_cannon"}
+			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{foresight "foresight2"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "mg42_tank" filled}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			{foresight "foresight4"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 78000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(2.45))
+		("mobility_tank"
+			speed(60)
+			reverse(15.3)
+			traverse(30)
+			weight(78.0)
+			power(900)
+			track(3.5)
+			fuel(700)
+			type(fuel)
+			range(100)
+		)
+	}
+	{Extension "jagdpz_e-50_early.mdl"}
+}

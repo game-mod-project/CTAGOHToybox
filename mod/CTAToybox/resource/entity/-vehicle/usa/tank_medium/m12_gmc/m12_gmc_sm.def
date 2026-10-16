@@ -1,0 +1,9 @@
+{game_entity
+	(include "m12_gmc__ctb_m12_gmc_sm_b8033dac.inc")
+
+	{extender "inventory"
+		{box
+			{item "ammo bullet_155 usa sm2" 2}
+		}
+	}
+}

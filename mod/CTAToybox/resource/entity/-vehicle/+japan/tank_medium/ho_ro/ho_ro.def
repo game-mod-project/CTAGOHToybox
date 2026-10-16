@@ -1,0 +1,130 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_ho_ro_165be4b3.ext")
+	(include "/properties/selection/vehicle_elongated.inc" scale(1.1))
+	{props "spg" "light" "-turret" "shell_eject" "mantlet" "multi_board"  "vision_lev04" "muzzle_150mm_155mm" "shield" "open_top" "ammo_open_top" "detect_spg" "diesel" "artillery_minimap_heavy" "sq_he_large"}
+	{Extension "ho_ro.mdl"}
+	(include "ho_ro.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "cannon_howitzer"}
+	{patherId "panzer38"}
+	{collider "tank.light"}
+
+
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_medium"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_body"} {end "ho_ro_driver_pose"}}
+			{reverse {end "emit_tank_1_hold" 1}}
+		}
+		{anm "commander"
+			{forward {begin "board_body"} {end "ho_ro_commander_pose"}}
+			{reverse {end "board_big-midcar" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_body"} {end "ho_ro_gunner_pose"}}
+			{reverse {end "emit_tank_1_hold" 1}}
+		}
+		{anm "charger"
+			{forward {begin "board_body"} {end "ho_ro_charger_pose"}}
+			{reverse {end "emit_tank_1_hold" 1}}
+		}
+		{anm "gunner2"
+			{forward {begin "board_body"} {end "ho_ro_gunner2_pose"}}
+			{reverse {end "emit_tank_1_hold" 1}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human_visible_anm"	place(driver) 	 door(emit1) door2(emit1) visor(driver) anm_left(driver)  anm_right(driver))
+	("crew_human_visible_anm"	place(gunner)	 door(emit2) door2(emit2) visor(main)	anm_left(gunner)	anm_right(gunner))
+	("crew_human_visible_anm"	place(charger)	 door(emit3) door2(emit3) visor(main)	anm_left(charger)	anm_right(charger))
+	("crew_human_visible_anm"	place(commander) door(emit4) door2(emit4) visor(around)	anm_left(commander)	anm_right(commander))
+	("gunner_open" place(gunner2) bone(gunner2) visorbone(mgun_aa_rot1) door(emit4) door2(emit4) anm_left(gunner2) anm_right(gunner2) group(passenger))
+
+	("seat_human" place(seat1) bone(seat01) door(emit4)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit5)  animation(armor2))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_150 he" 12}
+			{item "bulletjap_150 ic" 6}
+			{item "bulletjap_150 wp" 3}
+			{item "satchel_charge_jap" 1}
+			{item "ammo mgun_jap" 2500}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "150mm_type38" filling "bulletjap_150 he" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic"
+				zeroing(4.5)
+				dispersion(0.25)
+			)
+		}
+		{place "mgun"
+			{type "aa"}
+			{weapon "type_97_inf" filled}
+			{gunner "gunner2"}
+			{charger "gunner2"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 11500}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.10))
+       		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(19) ;---------Max speed in reverse on road, km/h.
+			traverse(25) ;-------Track traverse, per second, in degrees.
+			weight(14.8) ;-------Weight in Tonnes.
+			power(200) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(889) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(210 ) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"
+		{limits -5 5}
+		{speed2 4}
+	}
+	{bone "gun_rot"
+		{limits -10 20}
+		{speed2 10}
+	}
+	{bone "basis"
+		{speed2 2}
+	}
+	{bone "mgun_pole"
+		{speed2 50}
+		{limits -10 10}
+	}
+	{bone "mgun_aa_rot1"
+		{limits -10 85}
+	}
+}

@@ -1,0 +1,193 @@
+{game_entity
+	(include "/properties/tank__ctb_us_m4_improved_6866d70b.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "medium" "vision_lev04" "muzzle_75mm_76mm" "muzzle_hmg_m2hb" "sq_armor_medium"}
+	{PatherId "m4a3"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{Extension "us_m4_improved.mdl"}
+	(include "us_m4_improved.ext")
+	
+				
+;==============================================
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)	
+
+	("commander_visible")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_left"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_HighArmor"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "charger2"			
+			{forward	{begin	"board_Kv"} {end "seat_driver_car"} {base "open_charger2"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger2" -1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_Kv"} {end "seat_driver_car"} {base "open_charger2"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_charger2" -1}}
+		}
+		{anm "commander"			
+			{forward	{begin	"board_Kv"} {end "pose_M8A1_commander"} {base "open_charger2"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger2" -1}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_lowArmor"} 	{end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_lowArmor"} {end "pose_pz3_right"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor3"
+			{forward	{begin	"board_lowArmor"} {end "pose_univ_carrier_pass_seat02"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("crew_human" place(driver)	    door(emit1) visor(driver))
+	("crew_human" place(charger)	door(emit3) visor(main))
+	("crew_human" place(charger2)	door(emit0) visor(main))
+	("crew_human" place(gunner)	    door(emit3) visor(main))
+	("crew_human_visible" place(commander)	door(emit3) visor(main))
+	
+	("seat_human" place(seat1) bone(seat01) door(emit4)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit5)  animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor2))
+	("seat_human" place(seat4) bone(seat04) door(emit7)  animation(armor3))
+
+	(define "define_place"
+	{placer
+		{place "%place" {visor "%visor"}{LinkBone "%bone"}{openForCrush} {turnoff {shadow}}{attach squat_lie}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} }
+	}
+	{Volume "%place"
+		{tags "attach" "attach_%place"}
+		{able clear {bullet 0} {touch 1}}
+	}
+	)
+
+	("define_place" place(seat5) bone(seat001) door(emit4)  animation(armor1))
+	("define_place" place(seat6) bone(seat002) door(emit5)  animation(armor))
+;==============================================
+
+	{extender "inventory"
+		;{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bulletusa_75x350 apcbche" 18}	;97 rounds ;20,70,10% AP,HE,WP
+			{item "bulletusa_75x350 he" 68}
+			{item "bulletusa_75x350 wp" 10}
+			{item "ammo hmgun_usa" 500}		;600 rounds
+			{item "ammo mgun_usa belt" 4250}		;4750 rounds
+			{item "satchel_charge_usa" 1}			
+			{item "browning_m2" filled {user "mgun"}}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_m3" filling "ammo bulletusa_75x350 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3)
+				dispersion(0.3)
+			)
+		}
+		{place "mgun1"
+			{type "coaxial"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight4"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			{basic}
+		}
+		{place "mgun2"
+			{type "hull"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight5"}
+			{gunner "charger2"}
+			{charger "charger2"}
+			{ai_in_manual}
+			("abm_mgun")
+			{basic}
+		}		
+		{place "mgun"
+			{type "aa"}
+			{gunner "commander"}
+			{charger "commander"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{ai_in_manual}
+			{basic}
+		}
+		{place "mgun4"
+			{type "hull"}
+			{weapon "browning_m19a4" filled}
+			{foresight "foresight7"}
+			{gunner "charger2"}
+			{charger "charger2"}
+			{ai_in_manual}
+			("abm_mgun")
+			{basic}
+		}						
+	}    
+	
+	{sensor
+		{visor "gunner"
+		    {vision "tank_main-l"}
+			{bone "visor1"}
+		}
+		{Visor "driver"
+            {vision "tank_driver"}
+            {bone "visor2"}
+		}
+		{visor "charger2"
+		    {vision "tank_main-l"}
+			{bone "visor3"}
+		}
+		{visor "commander"
+		    {vision "tank_main-l"}
+			{bone "visor4"}
+		}
+	}
+
+	{mass 30600}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.3) len(0.45))
+		("mobility_tank"
+			speed(38) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(5) ;---------Max speed in reverse on road, km/h.
+			traverse(22) ;-------Track traverse, per second, in degrees.
+			weight(30.6) ;-------Weight in Tonnes.
+			power(400) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(5.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(520) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(160) ;---------Range in km, off-road.
+		)
+	}
+	{bone "turret"
+		("turret_medium" power_traverse(24))
+	}
+}

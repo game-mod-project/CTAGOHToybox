@@ -1,0 +1,92 @@
+{game_entity
+	(include "/properties/tank__ctb_ta_se_5da04017.ext")
+	
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "light"  "vision_lev03" "muzzle_20mm_25mm_auto" "diesel" "open_top" "detect_tank_light" "sq_autocannon"}
+	{Extension "ta_se.mdl"}
+	(include "ta_se.ext")
+	{targetclass "tank_light"}
+	{targetSelector "cannon_zenite"}
+	{patherId "su76"}
+	{collider "tank.light"}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_tank_left"} {end "pose_vickers_gunlaeyr-R"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "left"
+			{forward {begin "board_tank_left"} {end "pose_vickers_gunlaeyr-R"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "aagun_61k_gunner"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_driver" 					 door(emit2) door2(emit2) door3(emit2))
+	("crew_human_visible_anm"	place(commander) door(emit2) visor(around) anm_left(right)   anm_right(right))
+	("crew_human_visible_anm"	place(gunner) 	 door(emit1) visor(main) 	 anm_left(left)    anm_right(left))
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_light"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_20_auto aphe" 240}		; 160 clips (4 rounds each)
+			{item "bulletjap_20_auto he" 400}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "20mm_type98" filling "bulletjap_20_auto he" 20}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_dymamic_aaa"
+				zeroing(1.95)
+				dispersion(0.24)
+			)
+		}
+	}
+
+	{mass 10740}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.4))
+		("mobility_tank"
+			speed(45) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(32) ;-------Track traverse, per second, in degrees.
+			weight(10.74) ;--------Weight in Tonnes.
+			power(160) ;---------Engine Power, in hp.
+			track(4) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(250) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(150) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -5 85}
+		{speed2 50}
+	}
+	{bone "turret"
+		{speed2 50}
+	}
+}

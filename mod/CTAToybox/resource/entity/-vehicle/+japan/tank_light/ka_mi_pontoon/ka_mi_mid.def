@@ -1,0 +1,143 @@
+{game_entity
+	(include "/properties/tank__ctb_ka_mi_mid_9ffdde79.ext")
+	
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "vision_lev03" "muzzle_37mm_47mm" "detect_tank_light" "diesel" "amphibia" "sq_armor_light"}
+	{Extension "ka_mi.mdl"}
+	(include "ka_mi_pontoon.ext")
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+	{patherId "bt"}
+	{collider "tank.light"}
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "commander"
+			{forward {begin "board_kv"} {base "open_commander"}}
+			{reverse {end "board_t26_driver" -1} {base "open_commander" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open_gunner" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_tank_right"} {base "open_charger" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_charger" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_right"} {base "open_gunner" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "driver"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open_charger" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_charger" -1}}
+		}
+		{anm "armor"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_body"}}
+		}
+	}
+
+	("crew_human" place(driver) door(emit1) visor(driver))
+    	("crew_human" place(gunner3)    door(emit2) visor(main))
+    	("crew_human" place(charger)   door(emit5) visor(main))
+    	("crew_human" place(gunner) door(emit4) visor(main))
+   	("crew_human" place(commander) door(emit3) visor(around))
+
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_37 aphe" 27}	
+			{item "bulletjap_37 ap" 12}	
+			{item "bulletjap_37 he2" 20}
+			{item "ammo mgun_jap" 3500}
+			{item "10kg_naval_smoke_candle_grenade" 3}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "37mm_type1" filling "bulletjap_37 aphe" 1}
+			{gunner "gunner"}
+			{charger "charger gunner3" minWorkers 1}
+			("abm_dymamic"
+				zeroing(2.5)
+				dispersion(0.20)
+			)  
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "type_97" filling "ammo mgun_jap" 20}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "type_97" filling "ammo mgun_jap" 20}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 9500}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.50))
+		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;--------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(9.5) ;-------Weight in Tonnes.
+			power(120) ;---------Engine Power, in hp.
+			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(212) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(170) ;----------Range in km, off-road.
+		)
+		{switch
+			{exitFromWater}
+			{terrain not "water" "deep_water"}
+		}
+	}
+	{chassis "water"
+		("chassis_defaults")
+		(mod not "mp" {ignorePatherBounds})
+		{waterline 1.2}
+		{switch
+			{terrain "water" "deep_water"}
+		}
+	}
+
+	{bone "mgun1_rot1"
+		{limits -25 25};left/right
+		{speed2 60}
+	}
+	{bone "mgun1_rot2"
+		{limits -2 15};up/down
+		{speed2 60}
+	}
+
+	{bone "gun_rot"
+		{limits -8 25}
+		{speed2 8}
+	}
+	{bone "turret"
+		("turret_light" power_traverse(8)) ;// manual
+	}
+}

@@ -1,0 +1,183 @@
+{game_entity
+	(include "/properties/tank__ctb_ss_ki_e5e4bede.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "medium" "vision_lev04" "muzzle_hmg_m2hb" "mine_exploder" "roller" "flame" "sq_mg"}
+	{Extension "ss_ki.mdl"}
+	(include  "ss_ki.ext")
+	{PatherId "roller.medium"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+
+	{sensor
+		{visor "mg_main"
+			{vision "tank_rear-mg"}
+			{bone "foresight10"}
+		}
+	}
+
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "commander"
+			{forward {begin "board_kv"} {end "pose_mgun_pz6"} {base "open_commander"}}
+			{reverse {end "board_t26_driver" -1} {base "open_commander" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open_gunner" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_tank_right"} {base "open_gunner" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "gunner4"
+			{forward {begin "board_tank_right"} {base "open_driver" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+		{anm "driver"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open_driver" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+	}
+
+	("crew_human" place(driver) door(emit1) visor(driver))
+	("crew_human" place(gunner) door(emit3) visor(mg_main))
+    ("crew_human" place(gunner3)    door(emit3) visor(around))
+	("crew_human" place(gunner4)    door(emit1) visor(around))
+   	("crew_human" place(commander) door(emit2) visor(around))
+
+	{extender "inventory"
+		{box
+			{item "ammo mgun_jap" 2010}
+			{item "ammo flame_thrower" 3680}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{type "main"}
+			{weapon "type_97" filling "ammo mgun_jap" 20}
+			{foresight "foresight3"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun5"
+			{type "main"}
+			{weapon "ss_ki_flamethrower" filled}
+			{foresight "foresight10"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun"
+			{type "left_flamer"}
+			{weapon "ss_ki_flamethrower" filled}
+			{foresight "foresight6"}
+			{gunner "gunner4"}
+			{charger "gunner4"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun2"
+			{type "right_flamer"}
+			{weapon "ss_ki_flamethrower_R2" filled}
+			{foresight "foresight7"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun3"
+			{type "right_flamer"}
+			{weapon "ss_ki_flamethrower_R1" filled}
+			{foresight "foresight8"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "gun4"
+			{type "left_flamer"}
+			{weapon "ss_ki_flamethrower_L2" filled}
+			{foresight "foresight9"}
+			{gunner "gunner4"}
+			{charger "gunner4"}
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 16000} ;// 30500 + 26760
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.3) len(-0.2))
+		("mobility_tank"
+			speed(37) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(15) ;---------Max speed in reverse on road, km/h.
+			traverse(25) ;-------Track traverse, per second, in degrees.
+			weight(16) ;------Weight in Tonnes.
+			power(145) ;---------Engine Power, in hp.
+			track(4) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(660) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(130) ;---------Range in km, off-road.
+		)
+	}
+	{bone "mgun1_rot1"
+		{limits -20 20}
+		{speed2 60}
+	}
+	{bone "mgun1_rot2"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame1_rot1"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame1_rot2"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame2_rot1"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame2_rot2"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame3_rot1"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame3_rot2"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame4_rot1"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame4_rot2"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame5_rot1"
+		{limits -10 10}
+		{speed2 60}
+	}
+	{bone "flame5_rot2"
+		{limits -10 10}
+		{speed2 60}
+	}
+}
