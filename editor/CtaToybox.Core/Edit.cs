@@ -72,7 +72,8 @@ namespace CtaToybox.Core
         public MergeReport MergeFrom(EditProject other)
         {
             var report = new MergeReport();
-            foreach (var e in other.Edits)
+            // 규칙이 만든 수정은 옮기지 않는다. 규칙을 붙인 뒤 다시 계산해 만든다(F1, 세션의 MergeProject)
+            foreach (var e in other.Edits.Where(x => x.Rule == null))
             {
                 var here = Edits.FirstOrDefault(x => SameSlot(x, e));
                 if (here == null)

@@ -115,6 +115,7 @@ static class Suites
         ("VisionPresets", VisionPresetsTests.Run),
         ("ClassVision", ClassVisionTests.Run),
         ("BulkRules", BulkRulesTests.Run),
+        ("BulkRulesSession", BulkRulesSessionTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
