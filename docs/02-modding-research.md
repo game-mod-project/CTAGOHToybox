@@ -14,7 +14,7 @@
 ### 접근하지 못했거나 찾지 못한 것
 
 - **Gates of Hell 전용 공식 모딩 위키나 문서 사이트.** 두 번 검색했지만 나오지 않았다. 없다고 단정할 수는 없다. 가이드 작성자들은 공식 Discord의 모딩 채널을 주된 문의처로 든다 [6]. Discord는 읽지 못했다.
-- **에디터 PDF 2종** (`mods\tools\map_editor(eng).pdf`, `mission_editor(eng).pdf`). 맵과 미션 제작용이라 이번 범위(유닛)에서 읽지 않았다.
+- **에디터 PDF 2종** (`mods\tools\map_editor(eng).pdf` 12쪽, `mission_editor(eng).pdf` 37쪽). 2026-10-16에 읽었다(R5, 아래 "에디터 설명서").
 - **ModDB.** GEM 2 엔진의 튜토리얼 목록 페이지가 검색에는 나오지만 접근이 거부됐다(HTTP 403) [14]. 게임 이름으로 추정한 주소에는 페이지가 없었다.
 - **Nexus Mods.** Call to Arms 항목 아래에 Gates of Hell용 모드 페이지가 있는 것은 확인했다 [13]. 쿠키 동의 화면에 가려 본문은 읽지 않았다.
 - **Steam 가이드 목록의 나머지.** "modding"으로 찾은 가이드 54건 중 첫 30건의 제목만 보았고 그중 3건을 읽었다.
@@ -75,7 +75,7 @@
 
 ### 로드 순서를 정하는 법
 
-게임 안에서는 모드 순서를 직접 정할 수 없고 켜는 순서대로도 되지 않는다는 보고가 있다. 프로필의 `options.set`에서 `{mods ...}` 목록의 줄 순서를 직접 고치는 방법이 알려져 있다 [7]. 같은 가이드는 ID 뒤의 숫자(`:2097245` 등)를 `:0`으로 바꾸니 오류가 없어졌다고 적었는데, 그 숫자가 무엇인지는 설명하지 않는다 [7].
+게임 안에서는 모드 순서를 직접 정할 수 없고 켜는 순서대로도 되지 않는다는 보고가 있다. 프로필의 `options.set`에서 `{mods ...}` 목록의 줄 순서를 직접 고치는 방법이 알려져 있다 [7]. 같은 가이드는 ID 뒤의 숫자(`:2097245` 등)를 `:0`으로 바꾸니 오류가 없어졌다고 적었는데, 그 숫자가 무엇인지는 설명하지 않는다 [7]. 2026-10-16 확인(R6): 이 PC의 `options.set`은 다섯 항목 모두 `:0`이고, 창작마당 목록 파일(`appworkshop_400750.acf`)의 크기·갱신 시각·매니페스트 값과도 맞는 것이 없다. 게임 실행 파일에서 이 꼴을 만드는 문자열도 찾지 못했다. 뜻은 미확인이다.
 
 ## 아이템 이름과 파일
 
@@ -158,12 +158,28 @@
 
 협동 플레이에서 같은 모드를 쓰는데도 리소스가 어긋난다는 가이드 제목이 있었으나 읽지 않았다.
 
+## 에디터 설명서 (게임 폴더의 PDF, 2026-10-16 R5)
+
+두 문서 모두 게임 이름이 없다. 실행 파일을 `theGame.exe`로 적고, 그림 속 글자 일부가 러시아어이며, PDF 속성은 2013-10-08 Word 2010(제목 "Редактор карт", "Описание редактора миссий")이다. Men of War 계열 에디터의 옛 설명서이고 GoH용으로 고쳐 쓴 것이 아니다. 아래는 문서의 주장이며 GoH 에디터에서 확인한 것은 따로 적는다.
+
+- 맵 에디터는 F2로 켜고 F1로 끈다(map p.1). F3은 두 문서에 없다. 미션은 패널 오른쪽 아래 `Start (Stop)` 단추로 시작·정지한다(mission p.3). 이 저장소의 GoH 에디터 확인(2026-10-16 W-G 셋째)에서는 왼쪽 위 START였다.
+- 미션 에디터는 숫자 1~9로 바꾸는 아홉 하위 편집기(보기, 엔티티, 그룹, 웨이포인트, 존, 트리거, 카메라, 엄폐, 환경)다(mission p.3~4). 목록에서 고르고 지도를 누르면 놓고, 오른쪽 끌기로 옮기고, Ctrl+오른쪽 끌기로 돌리고, Del로 지운다(mission p.7).
+- 소속은 놓은 엔티티의 `player` 속성(0~7)이다. 동맹·적은 Diplomacy에서 정한다(mission p.5, 8). 승무원은 트리거 명령 `board`(자리: gunner, driver, commander, charger)로 태우고 `wait_crew`, `emit`이 있다(mission p.30~31).
+- 사람의 인벤토리는 병사마다가 아니라 병종(breed) 편집기에서 고친다(Inventory Add/Remove, In hands). 차량 인벤토리를 고치는 법은 없다(mission p.8).
+- 단축키: Ctrl+T 태그, Alt+I mid 번호, Alt+P 이동 경로, Alt+H 높이 표시, Alt+X 에디터 나가기, Ctrl+F mid로 찾기. 시험용 G 폭탄, Y 화염병, B 폭발, 백틱 콘솔(mission p.36~37). 보기 편집기에서 게임 속도 10배~0.1배(mission p.5).
+- 맵·미션 파일의 폴더·이름·저장 형식, 모드 폴더, 모드 시험 방법은 나오지 않는다.
+- 이 저장소가 GoH 에디터에서 본 것 가운데 "RESET ALL INVENTORIES" 단추, "You have to store the map before!", V16의 Alt+F 안개·F7 난이도는 문서에 없다.
+
 ## 창작마당 게시
 
 이 저장소에서는 게시하지 않는다. 참고로 확인한 것만 적는다.
 
 - 패치 파일(`1.pat`, `2.pat`)을 순서대로 쌓는 방식은 창작마당 항목에는 필요 없다 [1].
-- 게임 폴더에 `call_to_arms_workshop.exe`가 있다. 이름으로 보아 업로드 도구로 추정하지만 실행하거나 설명을 찾지는 못했다.
+- 게임 폴더의 `binaries\x64\call_to_arms_workshop.exe`는 창작마당 업로드 도구 "Digitalmindsoft Workshop Upload"(Copyright 2024)다. 실행하지 않고 실행 파일에 든 화면 문자열로 확인했다(2026-10-16 R6):
+  - 주 화면: 내가 올린 항목 목록과 Create·Edit·Remove·Refresh, Steam Cloud 공간과 "Reset Cloud Storage".
+  - 게시 창: Upload Directory(올릴 모드 폴더), Preview Image(JPEG, 512×512), Tags, Title, Description, Visibility, Steam Workshop Contribution Agreement 동의 체크, Publish.
+  - mod.info 창: Name*, Min game version*, Max game version*, Description*, Require. 파일에는 `{name}`, `{tags}`, `{desc}`, `{require}`로 쓴다. 이 PC의 창작마당 모드 다섯의 `mod.info`도 `{mod {name} {tags} {desc} {minGameVersion} {maxGameVersion}}` 꼴이다.
+  - Steam API로 항목을 만들고(`CreateItem`) 갱신한다(`SubmitItemUpdate`). 처음 올린 항목의 공개 범위 기본값은 문자열로는 알 수 없다(미확인).
 - 같은 엔진 계열인 Men of War II의 공식 문서는 게임 설정의 패키지 화면에서 게시 버튼으로 올리고, 새로 올린 항목은 기본적으로 숨김 상태라고 설명한다 [5]. Gates of Hell의 절차가 같은지는 확인하지 못했다.
 - 다른 모드의 모델이나 자산을 쓰려면 원작자의 허락을 구하는 것이 관행이다. MACE는 설명에서 이를 명시적으로 요구한다 [8].
 

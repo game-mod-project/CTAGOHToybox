@@ -29,7 +29,7 @@
 | `call_to_arms.exe` | 1.0.6.7 | 게임 |
 | `call_to_arms_ed.exe` | 1.0.6.7 | 에디터 (맵·미션) |
 | `call_to_arms_server.exe` | 1.0.6.7 | 전용 서버 |
-| `call_to_arms_workshop.exe` | 표기 없음 | 이름으로 보아 창작마당 업로드 도구로 추정. 실행해 확인하지 않았다 |
+| `call_to_arms_workshop.exe` | 표기 없음 | 창작마당 업로드 도구 "Digitalmindsoft Workshop Upload"(2024). 실행하지 않고 실행 파일의 화면 문자열로 확인했다(2026-10-16 R6). 자세한 것은 `docs/02-modding-research.md` "창작마당 게시" |
 
 같은 폴더에 `steam_api64.dll`, 사운드 라이브러리 `mss64.dll`(Miles), 크래시 리포터 `BugSplat64.dll`·`BsSndRpt64.exe`, `d3dcompiler_47.dll` 등이 있다.
 
