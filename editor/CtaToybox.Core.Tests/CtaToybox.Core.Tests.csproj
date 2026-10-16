@@ -9,5 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\CtaToybox.Core\CtaToybox.Core.csproj" />
     <ProjectReference Include="..\CtaToybox.Cli\CtaToybox.Cli.csproj" />
+    <InternalsVisibleTo Include="CtaToybox.Core.XunitTests" />
   </ItemGroup>
 </Project>
