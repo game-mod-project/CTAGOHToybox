@@ -213,7 +213,8 @@ namespace CtaToybox.Core
                     foreach (var leaf in row.Leaves) traced.Values.Add(ValueOf(leaf));
                     result.Rows.Add(traced);
                 }
-                foreach (var kv in level.Own) { int n; below.TryGetValue(kv.Key, out n); below[kv.Key] = n + kv.Value; }
+                // 단계마다 따로 센다: 유닛이 한 번, 가까운 원형이 한 번 적은 키는 여러 번 적는 키가 아니다
+                foreach (var kv in level.Own) { int n; below.TryGetValue(kv.Key, out n); below[kv.Key] = Math.Max(n, kv.Value); }
                 name = FromLinks.NameOf(rows);
                 current = parent;
             }

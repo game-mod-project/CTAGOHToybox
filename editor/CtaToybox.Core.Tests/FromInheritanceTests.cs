@@ -1,5 +1,6 @@
 using System.IO;
 using System.Linq;
+using CtaToybox.Cli;
 using CtaToybox.Core;
 
 // E11: {from} 원형 상속을 펼친다. k98 → rifle.pattern → bullet.pattern
@@ -12,10 +13,10 @@ static class FromInheritanceTests
         string game = T.TempDir(), workshop = T.TempDir(), work = T.TempDir(), outDir = T.TempDir();
         repo = T.TempDir();
         T.Zip(Path.Combine(game, "resource", "gamelogic.pak"),
-            (Bullet, "{bullet\n {mass 5}\n {inventory {size 1 1} {weight 10}}\n {tag \"base\"}\n {speed 800}\n {hit 1}\n {hit 2}\n {parameters \"ap\" {pen 90}}\n {parameters \"he\" {pen 10}}\n}"),
+            (Bullet, "{bullet\n {mass 5}\n {inventory {size 1 1} {weight 10}}\n {tag \"base\"}\n {speed 800}\n {cal 9}\n {hit 1}\n {hit 2}\n {parameters \"ap\" {pen 90}}\n {parameters \"he\" {pen 10}}\n}"),
             ("set/stuff/rifle/.presets", "(define \"rof\" {fire_rate %rpm})"),
-            (Rifle, "{from \"pattern bullet\"\n {mass 4}\n {range 300}\n (\"rof\" rpm(600))\n}"),
-            (K98, "{from \"pattern rifle\"\n {range 500}\n {inventory {size 4 2}}\n {filling \"ammo x\" 5}\n {tag \"a\"}\n {tag \"b\"}\n {hit 3}\n {parameters \"ap\" {pen 95}}\n}"),
+            (Rifle, "{from \"pattern bullet\"\n {mass 4}\n {cal 8}\n {range 300}\n (\"rof\" rpm(600))\n}"),
+            (K98, "{from \"pattern rifle\"\n {range 500}\n {inventory {size 4 2}}\n {filling \"ammo x\" 5}\n {tag \"a\"}\n {tag \"b\"}\n {hit 3}\n {parameters \"ap\" {pen 95}}\n {cal 7}\n}"),
             ("set/stuff/odd/loop_a", "{from \"loop_b\" {x 1}}"),
             ("set/stuff/odd/loop_b", "{from \"loop_a\" {y 2}}"),
             ("set/stuff/odd/lost", "{from \"pattern nothing\" {z 3}}"),
@@ -58,6 +59,7 @@ static class FromInheritanceTests
         T.Eq("inventory", weight.FromBlock, "and names that block");
         T.Eq(FromLevel.Overridden, t.Rows.Single(r => r.Path == "/from/inventory/size" && r.From == Bullet).FromState, "a nested key the child writes is overridden");
         T.Eq(FromLevel.Inherited, t.Rows.Single(r => r.Path == "/from/speed").FromState, "a key nobody nearer writes is inherited");
+        T.Eq(FromLevel.Overridden, t.Rows.Single(r => r.Path == "/from/cal" && r.From == Bullet).FromState, "a key the unit and a nearer parent each write once is overridden, not repeated");
         var tag = t.Rows.Single(r => r.Path == "/from/tag" && r.From == Bullet);
         T.Eq(FromLevel.Unconfirmed, tag.FromState, "a key the child writes more than once is unconfirmed (it may accumulate)");
         T.True(tag.FromBlock == null, "and names no block");
@@ -92,7 +94,9 @@ static class FromInheritanceTests
         T.Eq(new[] { Bullet, K98, Rifle }, session.Index.UsersOf(Bullet).ToArray(), "users of the far parent");
         T.Eq(new[] { K98, Rifle }, session.Index.UsersOf(Rifle).ToArray(), "users of the near parent");
         T.Eq(new[] { K98, Rifle }, session.Index.UsersOf("set/stuff/rifle/.presets").ToArray(), "a parent's .presets is read by its inheritors");
-        T.Eq(6, session.Index.Units.Single(u => u.Path == K98).Numbers, "the editor list counts only the unit file's own numbers (500 4 2 5 3 95, not the inherited ones)");
+        T.Eq(7, session.Index.Units.Single(u => u.Path == K98).Numbers, "the editor list counts only the unit file's own numbers (500 4 2 5 3 95 7, not the inherited ones)");
+        T.Eq(new[] { K98, Rifle }, session.Index.HeirsOf(Bullet).ToArray(), "the units that inherit a pattern");
+        T.Eq(0, session.Index.HeirsOf(K98).Count, "a unit nobody inherits has no heirs");
 
         // 화면
         var view = session.OpenUnit(K98);
@@ -109,6 +113,9 @@ static class FromInheritanceTests
         T.Eq("들 때 무게", vWeight.SummaryLabel, "an unconfirmed row stays in the summary");
         T.True(vWeight.FromLabel.Contains("미확인") && vWeight.FromLabel.Contains("inventory"), "the unconfirmed label names the block");
         T.True(view.Rows.Single(r => r.Path == "/from/tag" && r.From == Bullet).FromLabel.Contains("여러 번"), "the repeated-key label says why");
+        var rifleView = session.OpenUnit(Rifle);
+        var rifleOwn = rifleView.Rows.Single(r => r.Path == "/from/mass" && r.From == null).Values[0];
+        T.True(rifleOwn.UnitScopeBlocker != null && rifleOwn.UnitScopeBlocker.Contains("1개"), "a unit another unit inherits cannot be unit-scoped (its heirs would change too): " + rifleOwn.UnitScopeBlocker);
         var vOwn = view.Rows.Single(r => r.Path == "/from/range" && r.From == null);
         T.True(vOwn.FromLabel == null && vOwn.Values[0].UnitScopeBlocker == null, "the unit's own row is unchanged");
         var call = view.Rows.Single(r => r.IsMacroCall && r.From == Rifle);
@@ -125,6 +132,14 @@ static class FromInheritanceTests
         T.True(vRifleMass.Values[0].Edit != null, "and shows on the inherited row");
         T.Throws<System.ArgumentException>(() => session.AddEdit(view, vRifleMass.Values[0], "4.6", "unit"), "unit scope is refused");
 
+        // 명령줄도 같다: 원형으로 쓰이는 유닛의 '이 유닛만'은 막는다
+        var cliOut = new StringWriter();
+        int code = CliApp.Run(new[] { "add", "--settings", settings, "--project", Path.Combine(T.TempDir(), "c.json"), "--file", Rifle, "--path", "/from/mass", "--new", "4.1", "--scope", "unit", "--unit", Rifle }, cliOut);
+        T.Eq(1, code, "cli add --scope unit on an inherited unit is refused");
+        T.True(cliOut.ToString().Contains("물려받는 유닛이 1개"), "with the reason: " + cliOut);
+        cliOut = new StringWriter();
+        CliApp.Run(new[] { "trace", Rifle, "--settings", settings, "--filter", "mass" }, cliOut);
+        T.True(cliOut.ToString().Contains("이 유닛만: 불가(이 유닛을 원형으로 물려받는 유닛이 1개"), "cli trace shows it");
         // 같은 줄 모으기는 다른 파일 단계의 줄을 모으지 않는다
         var a = new RowView { Path = "/from/x", Form = "block" };
         a.Values.Add(new ValueView { Trace = new TraceValue { Text = "1", Arg = -1 } });

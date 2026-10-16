@@ -29,7 +29,7 @@ namespace CtaToybox.Core
         public List<UnitEntry> Units { get; set; } = new List<UnitEntry>();
 
         static readonly IReadOnlyList<string> None = new string[0];
-        Dictionary<string, List<string>> users;
+        Dictionary<string, List<string>> users, heirs;
 
         public static UnitIndex Build(SourceStack stack, Action<int, int> progress)
         {
@@ -171,6 +171,26 @@ namespace CtaToybox.Core
             }
             List<string> found;
             return users.TryGetValue(SourceStack.ToVirtual(file), out found) ? found : None;
+        }
+
+        // 그 파일을 {from} 사슬로 물려받는 유닛(자기 자신은 빼고). 게임에서 원형의 수정은 이 유닛들에도 닿는다(2026-10-14)
+        public IReadOnlyList<string> HeirsOf(string file)
+        {
+            if (heirs == null)
+            {
+                var map = new Dictionary<string, List<string>>(StringComparer.Ordinal);
+                foreach (var u in Units)
+                    foreach (string f in (u.Inherits ?? new List<string>()).Distinct())
+                    {
+                        if (f == u.Path) continue;
+                        List<string> list;
+                        if (!map.TryGetValue(f, out list)) { list = new List<string>(); map[f] = list; }
+                        list.Add(u.Path);
+                    }
+                heirs = map;
+            }
+            List<string> found;
+            return heirs.TryGetValue(SourceStack.ToVirtual(file), out found) ? found : None;
         }
 
         public IEnumerable<UnitEntry> Search(string text, string kind, string layer, DisplayNames names)

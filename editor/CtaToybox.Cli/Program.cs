@@ -228,6 +228,7 @@ namespace CtaToybox.Cli
                         if (v.Arg < 0) { output.WriteLine("  " + i + "=" + v.Text + "  (" + v.Note + ")"); continue; }
                         string blocker = settingsUnit || SettingFiles.InArea(v.File) ? SettingFiles.UnitScopeNote
                             : row.From != null ? FromLevel.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
+                        if (blocker == null && index.HeirsOf(traced.Unit).Count > 0) blocker = FromLevel.HeirsNote(index.HeirsOf(traced.Unit).Count);
                         output.WriteLine("  " + i + "=" + v.Text + "  ← " + v.File + " " + v.KeyPath + " [" + v.Occurrence + "] 값 " + v.Arg +
                                          "  공유 " + index.UsersOf(v.File).Count + "  이 유닛만: " + (blocker == null ? "가능" : "불가(" + blocker + ")"));
                     }
@@ -294,6 +295,11 @@ namespace CtaToybox.Cli
                 {
                     if (stack.Find(unit) == null) { output.WriteLine("원본에 이 유닛 파일이 없다: " + unit); return 1; }
                     string blocker = IncludeChain.UnitScopeBlocker(new SdlResolver(stack.ReadText).Resolve(unit).IncludeEdges, unit, file.VirtualPath, keyPath);
+                    if (blocker == null)
+                    {
+                        int heirs = OpenIndex(stack, settingsPath, output).HeirsOf(unit).Count;
+                        if (heirs > 0) blocker = FromLevel.HeirsNote(heirs);
+                    }
                     if (blocker != null) { output.WriteLine(blocker); return 1; }
                 }
 

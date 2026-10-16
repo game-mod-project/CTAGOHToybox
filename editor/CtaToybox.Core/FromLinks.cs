@@ -106,11 +106,17 @@ namespace CtaToybox.Core
         public const string Inherited = "inherited", Overridden = "overridden", Unconfirmed = "unconfirmed";
         public const string UnitScopeNote = "원형에서 물려받은 값이다. '이 유닛만'은 안 된다. '전부'로 고치면 이 원형을 물려받는 유닛이 모두 바뀐다";
 
+        // 다른 유닛이 이 유닛을 원형으로 물려받을 때. 유닛 파일을 고치면(이 유닛만이라도) 물려받는 유닛도 바뀐다(게임 확인 2026-10-14 톰슨)
+        public static string HeirsNote(int count)
+        {
+            return "이 유닛을 원형으로 물려받는 유닛이 " + count + "개 있다. 게임에서 원형의 수정은 그 유닛들에도 닿으므로 '이 유닛만'은 안 된다. '전부'만 된다";
+        }
+
         public string File { get; set; }          // 원형 파일
         public string Name { get; set; }          // 이 파일을 가리킨 {from} 이름
         public List<string> Files { get; set; }   // 원형 파일과 그 파일이 include한 파일(매크로 호출 줄을 찾는 곳)
         public List<string> Candidates { get; set; }   // 이름에 맞는 파일들(FromLinks.Candidates). 둘 이상이면 File은 그 가운데 고른 것이다
-        public Dictionary<string, int> Below { get; set; }   // 자식 쪽 파일의 경로마다 나온 수(펼친 줄과 매크로 호출 줄, 맨 위 블록은 from)
+        public Dictionary<string, int> Below { get; set; }   // 자식 쪽(유닛과 더 가까운 원형 각각) 가운데 한 단계에서 그 경로가 나온 가장 큰 수(펼친 줄과 매크로 호출 줄, 맨 위 블록은 from)
         public Dictionary<string, int> Own { get; set; }     // 이 원형 파일 쪽(원형과 그 include)의 경로마다 나온 수
 
         // 줄의 상태. 감싼 블록 때문에 미확인이면 block에 그 블록(맨 위 블록 아래 경로)을 준다. 여러 번 적는 키라서 미확인이면 block은 null이다

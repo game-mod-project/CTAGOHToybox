@@ -235,6 +235,10 @@ namespace CtaToybox.Core
                 view.Rows.Add(r);
             }
             AddMacroCalls(view, traced, n, summary);
+            int heirs = Index.HeirsOf(traced.Unit).Count;
+            if (heirs > 0)
+                foreach (var r in view.Rows)
+                    foreach (var v in r.Values) if (v.Editable && v.UnitScopeBlocker == null) v.UnitScopeBlocker = FromLevel.HeirsNote(heirs);
             // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다
             if (kind == SettingFiles.Kind)
             {
