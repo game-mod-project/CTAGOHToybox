@@ -3,13 +3,14 @@
 //   - (define "이름" 본문): 이름을 등록하고 출력에는 남기지 않는다.
 //   - ("이름" k(v) args a b): 본문으로 바꾸고 %k, %0, %1을 인자로 치환한다.
 //   - (+ a b) 등 두 수의 산술식은 계산한다.
-//   - 조상 폴더의 .presets는 파일보다 먼저 읽어 define만 등록한다.
+//   - 파일이 있는 폴더의 .presets는 파일보다 먼저 읽어 define만 등록한다. 조상 폴더의 것은 읽지 않는다(게임 확인 2026-10-16).
+//   - 매크로 본문은 정의할 때 묶여 있던 값과 그 호출의 인자로만 펼친다. 부른 쪽의 인자는 넘기지 않는다(게임 확인 2026-10-16).
+//     include는 바깥 인자를 물려준다(게임에서 확인하지 않음).
 //   - (mod ...)와 {from "pattern ..."}은 펼치지 않는다.
 // 미해결 기록: include:<경로>(대상 없음), include-cycle:, include-depth:, include-unsafe:(작업 폴더 밖),
 //              include-parse-error:<경로>(대상에 괄호·따옴표 오류. 읽을 수 있는 데까지는 쓴다),
 //              macro:<이름>(정의 없음), macro-cycle:, macro-depth:, param:%<이름>(채워지지 않은 매개변수)
-// 물려받은 인자: 안쪽 매크로나 include가 자기에게 직접 주어지지 않은, 바깥 호출의 인자를 쓴 경우 Inherited에 적는다.
-//              엔진이 인자를 물려주는지 확인하지 못했으므로, 그 가정에 기대는 곳을 볼 수 있게 한다.
+// 물려받은 인자: 매크로나 include가 자기에게 직접 주어지지 않은 값(매크로는 정의할 때 묶인 값, include는 바깥 인자)을 쓴 경우 Inherited에 적는다.
 // 출처: 읽은 노드마다 파일의 가상 경로(SdlNode.File)를 적는다. 치환·계산으로 만든 노드는 Synthetic이다.
 //       include 지시문의 자리는 IncludeEdges에 적는다. .presets를 읽으며 지나간 include는 적지 않는다.
 using System;
@@ -46,7 +47,8 @@ public sealed class SdlResolver
     static readonly Encoding Latin1 = Encoding.GetEncoding(28591);
     static readonly HashSet<string> NoOwn = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-    sealed class Def { public List<object> Body; public string Dir; }
+    // Bind는 정의할 때 묶여 있던 값이다(include 인자 등). 호출은 이 값과 자기 인자만으로 본문을 펼친다(E13)
+    sealed class Def { public List<object> Body; public string Dir; public Dictionary<string, List<object>> Bind; }
     sealed class Parsed { public SdlNode Root; public bool HasErrors; }
 
     readonly string[] workDirs;   // 앞에 있는 폴더가 우선한다
@@ -287,7 +289,7 @@ public sealed class SdlResolver
             }
             if (word == "define" && kids.Count >= 2)
             {
-                defines[SdlCore.Unwrap(kids[1]).Text.Trim('"')] = new Def { Body = kids.GetRange(2, kids.Count - 2), Dir = dir };
+                defines[SdlCore.Unwrap(kids[1]).Text.Trim('"')] = new Def { Body = kids.GetRange(2, kids.Count - 2), Dir = dir, Bind = bind };
                 continue;
             }
             if (head != null && head.Kind == "str")
@@ -298,7 +300,8 @@ public sealed class SdlResolver
                 if (depth >= MaxDepth) { unresolved.Add("macro-depth:" + name); o.Add(n); continue; }
                 if (!defines.TryGetValue(name, out def)) { unresolved.Add("macro:" + name); o.Add(n); continue; }
                 macros.Add(name);
-                var b = NewBind(bind);
+                // 부른 쪽의 인자는 넘기지 않는다: 게임에서 매크로 안의 매크로가 바깥 인자를 받지 못해 꺼졌다(2026-10-16). 인자 값은 부른 쪽에서 계산한다
+                var b = NewBind(def.Bind);
                 var ownHere = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
                 int pos = -1;
                 for (int i = 1; i < kids.Count; i++)
@@ -348,15 +351,12 @@ public sealed class SdlResolver
         activeIncludes.Clear(); activeMacros.Clear();
 
         string dir = DirOf(virtualPath);
-        string acc = "";
-        foreach (string seg in dir.Split('/'))
+        // 파일이 있는 폴더의 .presets만 읽는다. 조상 폴더의 것은 게임이 쓰지 않았다(2026-10-16 "define not found")
+        if (dir.Length > 0)
         {
-            if (seg.Length == 0) continue;
-            acc = acc.Length > 0 ? acc + "/" + seg : seg;
-            string pv = acc + "/.presets";
-            if (string.Equals(pv, virtualPath, StringComparison.OrdinalIgnoreCase)) continue;
-            SdlNode proot = GetParsed(pv, true);
-            if (proot != null) { presets.Add(pv); Expand(proot.Children, acc, NewBind(null), NoOwn, 1); }
+            string pv = dir + "/.presets";
+            SdlNode proot = string.Equals(pv, virtualPath, StringComparison.OrdinalIgnoreCase) ? null : GetParsed(pv, true);
+            if (proot != null) { presets.Add(pv); Expand(proot.Children, dir, NewBind(null), NoOwn, 1); }
         }
         // .presets를 읽으며 쌓인 기록은 파일 자체의 것이 아니다
         includes.Clear(); macros.Clear(); inherited.Clear(); edges.Clear();
