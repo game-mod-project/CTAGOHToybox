@@ -245,3 +245,23 @@ B의 값을 고른 근거: 같은 형식의 탄약 파일에서 `inventory/block
 - 이 실행에서는 `options.set`에 있는데도 Spawn Menu 모드가 켜지지 않았다(로그에 `Mod: activate mod mod_3617250510`이 없음). EXTRAS → 모드 화면에서 켜자 게임이 모드 목록을 다시 쓰며 `ctatoybox`를 맨 앞으로 옮겼다. 시험 전후로 `options.set`을 백업에서 되돌린다.
 - 적 AI가 있는 판에서는 Spawn Menu의 번호가 소속을 가른다. 이번에는 Player 1이 적 AI, Player 2가 나였다(처치 기록의 이름과 고를 수 있는지로 가렸다).
 - 개수 없이 적은 탄은 툴팁에 수량이 나오지 않는다. 한 발이다.
+
+## W-G 넷째 묶음 (2026-10-16, v1.067.0)
+
+펼치기 규칙(G15)과 원형 상속(G16), `##` 블록(G17)을 AI가 게임을 직접 조작해 확인했다. 빌드 없이 시험 파일을 모드 폴더에 손으로 넣었고, 끝나고 지웠다(모드 폴더에는 `.gitkeep`만 남았다). `options.set`은 백업으로 되돌렸다.
+
+| 백로그 | 넣은 것 | 본 것 | 결과 |
+|---|---|---|---|
+| G15 정의 순서 | `smg/mp40_unfolded`의 `filling`을 `(define "ctb_d1" … 7) (define "ctb_d1" … 3) ("ctb_d1")`로 | Volksgrenadier 분대의 MP40 | "9mm MP38/40 Magazine (3/3)". **같은 이름을 두 번 정의하면 나중 정의가 쓰인다** |
+| G15 `.presets` 적용 | `rifle/.presets`(MACE판 사본) 끝에 `(define "ctb_up" {filling "ammo stg44" 9})`, `rifle/stg44`의 `filling`을 `("ctb_up")`로 | Volksgrenadier 분대장의 StG 44 | "7.92mm-K. MP-44 Magazine (9/9)". 폴더의 `.presets` 정의는 include 없이 그 폴더 파일에서 쓰인다 |
+| G15 바깥 인자 물려받기 | `rifle/k98`에 `(define "ctb_in" {filling … %n}) (define "ctb_out" ("ctb_in")) ("ctb_out" n(13))` | 게임 시작 | **시작할 때 꺼졌다**: "Block terminator expected! (eSDLReader.cpp:614) > file "/set/stuff/rifle/k98" >> file "define 'ctb_out'" > file "define 'ctb_in'" `{filling "ammo rifle_ger clip" %n}`". 안쪽 매크로는 바깥 호출의 `n(13)`을 받지 못했다. 그래서 `%n`이 채워지지 않은 채 읽히다 멈췄다. **엔진은 매크로 안에서 부른 매크로에 바깥 인자를 물려주지 않는다** |
+| G15 조상 `.presets` | `rifle/sniper/mosin_m27_scope`의 `filling`을 `("ctb_up")`로, `ctb_up`은 `rifle/.presets`에만 | 게임 시작 | **시작할 때 꺼졌다**: "define not found (eSDLReader.cpp:455) > file "/set/stuff/rifle/sniper/mosin_m27_scope" `("ctb_up")`". **조상 폴더의 `.presets`는 하위 폴더의 파일에 쓰이지 않는다** |
+| G16 | `rifle/k98_ctbparent`(바닐라 K98 사본, `filling` 9), `rifle/k98`을 `{from "k98_ctbparent" {filling "ammo rifle_ger clip" 3}}`로 | Ersatz-Grenadier 소총수의 Karabiner 98k | "7.92mm Mauser Rounds (3/3)". **원형 상속에서 자식 파일의 같은 키가 이긴다**. 자식에 적지 않은 키(무기 이름·모델 등)는 부모 것을 쓴다(Karabiner 98k로 보였다) |
+| G17 | 없음(바닐라 그대로) | Spawn Menu로 놓은 핀란드 PzKw IVJ(`{##extender "smokescreen"`)와 독일 Pz.Kpfw IV Ausf.J(켜져 있음) | 두 전차의 단추 줄과 명령판을 견줬다. 다른 것은 독일 쪽의 "Close Hatch" 단추 하나뿐이었다(연막과 무관). 연막 장치는 인벤토리의 `nbks grenade`(핀란드판은 `;`로 꺼짐)로 쓰므로 단추로는 가리지 못했다. **판단 못 함** |
+
+알게 된 것:
+
+- 하위 폴더 `rifle/sniper/.presets`를 모드에 넣었을 때도 MACE의 `hanyang_rifle`이 "define not found"로 멈췄다(`("bolt_action_m88")`). 그 정의는 MACE판 `rifle/.presets`에 있다. 모드의 `rifle/.presets`를 바닐라 사본으로 덮어 MACE 정의가 사라졌기 때문이다. **모드가 `.presets`를 덮으면 앞 모드가 그 파일에 더한 정의가 모두 사라진다.** 편집기는 이긴 계층의 파일을 원본으로 쓰므로 빌드로 만든 사본에는 이 문제가 없다.
+- 위 두 시험이 증명하듯, 엔진은 SDL에 문제가 있으면 그 파일을 읽는 순간 게임을 끈다. 시험 파일은 하나씩 나눠 넣는 것이 안전하다.
+- Spawn Menu의 국기 순서는 독→소→미→영→핀→일→TEST다(앞 기록과 다름). 목록 아래쪽 항목은 잘 눌리지 않는다. 휠로 올린 뒤 누른다.
+- 오프라인 프로필(`profiles/offline`)로 뜨면 창작마당 모드가 하나도 켜지지 않는다(로그 "Found 2 available mods"). Steam이 서버와 다시 연결된 뒤 다시 띄우면 7개가 켜졌다.
