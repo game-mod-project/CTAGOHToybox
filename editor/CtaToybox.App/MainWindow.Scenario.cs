@@ -10,6 +10,8 @@
 //   scope unit|shared         창의 적용 범위
 //   ok                        "수정 목록에 넣기"를 누른다(꺼져 있으면 기록만 남긴다)
 //   cancel                    창을 닫는다
+//   openblock <이름>          전체 탭에서 그 이름의 따옴표 이름 블록 줄(복제할 수 있는 줄)을 연다(E18)
+//   copyblock <새 이름>       열린 창(따옴표 이름 블록 줄)에서 그 블록을 새 이름으로 복제한다(E18)
 //   toggle <n>                수정 목록 n번째의 체크를 바꾼다
 //   remove <n>                수정 목록 n번째를 지운다
 //   group <목록> <글자> open|close  summary|full|roster 목록에서 이름에 글자가 든 첫 묶음을 펼치거나 접는다
@@ -46,7 +48,7 @@ namespace CtaToybox.App
                     case "open":
                     {
                         var list = (Tabs.SelectedItem == SummaryTab ? SummaryList : Tabs.SelectedItem == RosterTab ? RosterList : FullList).ItemsSource as System.Collections.IEnumerable;
-                        var item = list == null ? null : list.Cast<RowItem>().Where(x => x.Editable)
+                        var item = list == null ? null : list.Cast<RowItem>().Where(x => x.Editable || Text.IsCopyableBlock(x.Row))
                             .FirstOrDefault(x => (x.Name ?? "").Contains(arg) || (x.Key ?? "").Contains(arg) || (x.Values ?? "").Contains(arg));
                         if (item == null) { log.Add("open: 줄을 찾지 못했다: " + arg); break; }
                         dialog = new EditDialog(session, unit, item.Row, item.Name, item.Row.Context) { Owner = this };
@@ -59,6 +61,20 @@ namespace CtaToybox.App
                     case "ok":
                         if (dialog.PressOk()) { dialog = null; RefreshUnitViews(); RefreshEdits(); log.Add("ok: 넣었다"); }
                         else log.Add("ok: 단추가 꺼져 있거나 저장에 실패했다");
+                        break;
+                    case "openblock":
+                    {
+                        // 따옴표 이름 블록의 이름 줄(값이 그 이름인 복제할 수 있는 줄)을 연다(E18)
+                        var list = FullList.ItemsSource as System.Collections.IEnumerable;
+                        var item = list == null ? null : list.Cast<RowItem>().FirstOrDefault(x => Text.IsCopyableBlock(x.Row) && Text.Value(x.Row.Values[0].Trace.Text) == arg);
+                        if (item == null) { log.Add("openblock: 줄을 찾지 못했다: " + arg); break; }
+                        dialog = new EditDialog(session, unit, item.Row, item.Name, item.Row.Context) { Owner = this };
+                        dialog.Show();
+                        break;
+                    }
+                    case "copyblock":
+                        if (dialog.PressCopy(arg)) { dialog.Close(); dialog = null; RefreshUnitViews(); RefreshEdits(); log.Add("copyblock: 넣었다"); }
+                        else log.Add("copyblock: 넣지 못했다");
                         break;
                     case "cancel": dialog.Close(); dialog = null; break;
                     case "toggle":

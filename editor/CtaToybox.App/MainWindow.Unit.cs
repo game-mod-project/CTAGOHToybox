@@ -22,6 +22,7 @@ namespace CtaToybox.App
             UnitView opened = null;
             if (!Try("유닛 열기", () => opened = session.OpenUnit(path))) return;
             unit = opened;
+            shownCopies = CopyKey();
             if (unit == null)
             {
                 UnitTitle.Text = "원본에 이 파일이 없다: " + path;
@@ -122,9 +123,20 @@ namespace CtaToybox.App
             return null;
         }
 
+        string shownCopies = "";
+
+        string CopyKey()
+        {
+            if (session == null || session.Project == null) return "";
+            return string.Join("|", session.Project.Edits.Where(e => e.Kind == BlockCopy.Kind && e.Enabled).Select(e => e.File + " " + e.NamedPath + " " + e.New));
+        }
+
         public void RefreshUnitViews()
         {
             if (unit == null) return;
+            // 켜진 블록 복제가 바뀌면 펼친 줄이 달라진다(E18). 유닛을 다시 펼친다
+            string copies = CopyKey();
+            if (copies != shownCopies) { shownCopies = copies; unit = session.OpenUnit(unit.Unit) ?? unit; }
             bool same = viewUnit == unit.Unit;
             if (!same) { GroupStates.Clear(); viewUnit = unit.Unit; }
             // 값을 고친 뒤 다시 그릴 때는 보던 자리에 둔다
@@ -198,7 +210,7 @@ namespace CtaToybox.App
         {
             var item = ((ListView)sender).SelectedItem as RowItem;
             if (item == null || unit == null) return;
-            if (!item.Editable)
+            if (!item.Editable && !Text.IsCopyableBlock(item.Row))
             {
                 MessageBox.Show(this, "이 줄은 고칠 수 없다: " + (item.Tip ?? "치환이나 계산으로 만든 값이다") + "\n\n계산에 쓰인 원래 값은 전체 탭의 '매크로 호출' 묶음이나 그 값이 있는 파일에서 고친다.", "값 고치기");
                 return;

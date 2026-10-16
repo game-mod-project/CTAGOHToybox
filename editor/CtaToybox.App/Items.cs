@@ -101,6 +101,7 @@ namespace CtaToybox.App
         // 수정 목록의 제목: 줄 이름 [원본 줄] · 값 이름: 원래 → 새 값
         public static string EditTitle(EditorSession.EditDescription d, Edit e)
         {
+            if (e.Kind == BlockCopy.Kind) return "블록 복제: " + Value(e.Old) + " → " + Value(e.New);
             string change = Value(e.Old) + " → " + Value(e.New);
             if (d == null) return KeyLabel.Readable(e.Path) + " · " + (e.Arg + 1) + "번째 값: " + change;
             var row = new RowView { Path = e.Path, Note = d.Note, IsMacroCall = d.IsMacroCall };
@@ -167,6 +168,12 @@ namespace CtaToybox.App
         public static string SharedScope(string file, int users)
         {
             return SettingFiles.InArea(file) ? "게임 설정 파일 하나가 바뀐다" : "유닛 " + users + "개가 바뀐다";
+        }
+
+        // 고칠 값은 없지만 복제할 수 있는 줄: 게임 설정 파일의 따옴표 이름 블록 이름(E18)
+        public static bool IsCopyableBlock(RowView row)
+        {
+            return row.Values.Count == 1 && row.Values[0].Trace.Note == UnitTracer.BlockNameNote && row.Values[0].Trace.File != null && SettingFiles.InArea(row.Values[0].Trace.File);
         }
 
         public static string UnitName(EditorSession session, string unit)

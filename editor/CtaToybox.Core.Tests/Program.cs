@@ -95,6 +95,7 @@ static class Program
             ("MacroSwap", MacroSwapTests.Run),
             ("BlockCopy", BlockCopyTests.Run),
             ("BlockCopyBuild", BlockCopyBuildTests.Run),
+            ("BlockCopySession", BlockCopySessionTests.Run),
             ("ReviewFix", ReviewFixTests.Run),
             ("Usability", UsabilityTests.Run),
             ("UsabilityReview", UsabilityReviewTests.Run),

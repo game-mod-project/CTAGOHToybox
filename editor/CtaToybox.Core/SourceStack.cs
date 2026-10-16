@@ -121,8 +121,13 @@ namespace CtaToybox.Core
             var file = Find(virtualPath);
             if (file == null) return null;
             TextKind kind;
-            return TextCodec.Decode(Read(file), out kind);
+            string text = TextCodec.Decode(Read(file), out kind);
+            return Overlay == null ? text : Overlay(file.VirtualPath, text);
         }
+
+        // 편집기가 프로젝트의 블록 복제를 반영한 본문을 보이려고 덧씌운다(E18). (가상 경로, 원문) → 보일 본문. null이면 원문 그대로.
+        // ReadText만 거친다. Read(바이트)는 늘 원본이다(빌드·점검은 원본을 읽어 스스로 복제를 넣는다)
+        public Func<string, string, string> Overlay { get; set; }
 
         public void Dispose()
         {

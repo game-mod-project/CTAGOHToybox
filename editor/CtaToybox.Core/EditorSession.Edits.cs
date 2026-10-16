@@ -41,7 +41,8 @@ namespace CtaToybox.Core
             if (!string.Equals(checkedFile, t.File, StringComparison.Ordinal))
             {
                 var source = Stack.Find(t.File);
-                checkedText = source == null ? null : TextCodec.Decode(Stack.Read(source), out checkedKind);
+                // 빌드가 볼 본문: 원본에 켜진 블록 복제를 넣은 것(E18)
+                checkedText = source == null ? null : BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(source), out checkedKind), CopiesOf(t.File));
                 checkedFile = t.File;
             }
             if (checkedText == null) return null;
@@ -53,6 +54,32 @@ namespace CtaToybox.Core
 
         string checkedFile, checkedText;
         TextKind checkedKind;
+
+        // 게임 설정 파일의 따옴표 이름 블록을 새 이름으로 복제한다(E18). nameValue는 블록 이름 줄의 값(UnitTracer.BlockNameNote). 안 되면 ArgumentException
+        public Edit AddBlockCopy(UnitView unit, ValueView nameValue, string newName)
+        {
+            NeedProject();
+            var t = nameValue.Trace;
+            if (t.Note != UnitTracer.BlockNameNote || t.File == null || !SettingFiles.InArea(t.File)) throw new ArgumentException("게임 설정 파일의 따옴표 이름 블록만 복제할 수 있다");
+            string bad = BlockCopy.CheckName(newName);
+            if (bad != null) throw new ArgumentException(bad);
+            var source = Stack.Find(t.File);
+            if (source == null) throw new ArgumentException("원본에 이 파일이 없다: " + t.File);
+            TextKind kind;
+            string original = TextCodec.Decode(Stack.Read(source), out kind);
+            var parsed = SdlCore.Parse(BlockCopy.ApplyAll(original, CopiesOf(t.File)));
+            var row = new KeyIndex(parsed.Root).Row(t.KeyPath, t.Occurrence);
+            if (row == null) throw new ArgumentException("원본에 이 블록이 없다");
+            var edit = new Edit { Kind = BlockCopy.Kind, Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = 0, NamedPath = row.RawPath, NamedOccurrence = row.RawOccurrence, Old = t.Text, New = newName, Scope = "shared" };
+            var results = new List<EditResult>();
+            BlockCopy.Apply(original, CopiesOf(t.File).Concat(new[] { edit }), results);
+            var mine = results.Last();
+            if (mine.Status != EditStatus.Applied) throw new ArgumentException(mine.Message ?? "복제할 수 없다");
+            Project.Edits.Add(edit);
+            SaveOr(() => Project.Edits.Remove(edit));
+            RefreshOverlay();
+            return edit;
+        }
 
         public Edit AddEdit(UnitView unit, ValueView value, string newText, string scope)
         {
@@ -133,6 +160,7 @@ namespace CtaToybox.Core
             if (at < 0) return;
             Project.Edits.RemoveAt(at);
             SaveOr(() => Project.Edits.Insert(at, edit));
+            RefreshOverlay();
         }
 
         public void SetEnabled(Edit edit, bool enabled)
@@ -141,6 +169,7 @@ namespace CtaToybox.Core
             bool before = edit.Enabled;
             edit.Enabled = enabled;
             SaveOr(() => edit.Enabled = before);
+            RefreshOverlay();
         }
 
         // old를 원본의 지금 값으로 바꾼다. 자리가 없어졌으면 그대로 둔다
@@ -166,6 +195,7 @@ namespace CtaToybox.Core
             int before = Project.Edits.Count;
             var report = Project.MergeFrom(other);
             if (report.Added > 0) SaveOr(() => Project.Edits.RemoveRange(before, Project.Edits.Count - before));
+            RefreshOverlay();
             return report;
         }
 

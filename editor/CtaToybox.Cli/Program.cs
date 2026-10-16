@@ -33,7 +33,7 @@ namespace CtaToybox.Cli
             ["trace"] = new[] { "settings", "filter" },
             ["show"] = new[] { "settings", "filter" },
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit", "kind" },
-            ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit" },
+            ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit", "kind" },
             ["merge"] = new[] { "settings", "project", "from" },
             ["build"] = new[] { "settings", "project", "force" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force" },
@@ -299,7 +299,7 @@ namespace CtaToybox.Cli
             if (scope != "shared" && scope != "unit") throw new UsageException("--scope는 shared 또는 unit이다");
             if (scope == "unit" && !opt.ContainsKey("unit")) throw new UsageException("--scope unit에는 --unit이 필요하다");
             string editKind = opt.ContainsKey("kind") ? opt["kind"] : null;
-            if (editKind != null && editKind != MacroSwap.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + "만 쓴다");
+            if (editKind != null && editKind != MacroSwap.Kind && editKind != BlockCopy.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + " 또는 " + BlockCopy.Kind + "이다");
             EditorSettings settings; LayerPlan plan;
             using (var stack = Open(settingsPath, output, out settings, out plan))
             {
@@ -308,16 +308,25 @@ namespace CtaToybox.Cli
                 if (file == null) { output.WriteLine("원본에 이 파일이 없다: " + fileArg); return 1; }
                 if (scope == "unit" && (SettingFiles.InArea(file.VirtualPath) || UnitKind.OfEditor(SourceStack.ToVirtual(opt["unit"])) == SettingFiles.Kind))
                 { output.WriteLine(SettingFiles.UnitScopeNote); return 1; }
+                var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
+                // 이 프로젝트의 켜진 블록 복제를 넣은 본문에서 자리를 찾는다(빌드와 같은 본문, E18)
+                var fileCopies = project.Edits.Where(e => e.Kind == BlockCopy.Kind && e.Enabled && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)).ToList();
                 string readError;
-                string text = TextCodec.Decode(stack.Read(file), out TextKind kind);
+                string original = TextCodec.Decode(stack.Read(file), out TextKind kind);
+                string text = BlockCopy.ApplyAll(original, fileCopies);
                 var rows = SourceRows.Of(file.VirtualPath, text, out readError);
                 if (rows == null) { output.WriteLine("읽히지 않는 파일은 고칠 수 없다: " + readError); return 1; }
                 var found = rows.FirstOrDefault(r => r.Occurrence == occ && string.Equals(r.Path, keyPath, StringComparison.OrdinalIgnoreCase));
                 // --kind macro-name은 인자 없는 호출 줄의 이름 토큰을 고친다(E4)
-                var node = editKind == MacroSwap.Kind ? (found != null && found.Leaves.Count == 0 && arg == 0 ? found.Head : null) : found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
+                // --kind block-copy는 따옴표 이름 블록의 이름 줄을 고른다(E18)
+                var node = editKind == MacroSwap.Kind ? (found != null && found.Leaves.Count == 0 && arg == 0 ? found.Head : null)
+                    : editKind == BlockCopy.Kind ? (found != null && found.Path.EndsWith("/\"*\"", StringComparison.Ordinal) && arg == 0 && found.Leaves.Count > 0 ? found.Leaves[0] : null)
+                    : found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
-                string warning;
-                string error = ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning)
+                string warning = null;
+                string named = KeyLocator.IsNamed(keyPath) ? found.RawPath : null;
+                int namedOcc = named == null ? 0 : found.RawOccurrence;
+                string error = editKind == BlockCopy.Kind ? CopyError(original, fileCopies, file.VirtualPath, keyPath, occ, named, namedOcc, node.Text, newValue) : ValueRules.CheckNewValue(file.VirtualPath, node.Text, newValue, out warning)
                                ?? (TextCodec.CanEncode(newValue, kind) ? null : "새 값에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + newValue)
                                ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Kind = editKind });
                 string unitForSwap = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
@@ -339,7 +348,6 @@ namespace CtaToybox.Cli
                     if (blocker != null) { output.WriteLine(blocker); return 1; }
                 }
 
-                var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
                 // 같은 자리·같은 범위의 수정이 있으면 값만 바꾼다(앱의 EditorSession.AddEdit과 같다). '이 유닛만'은 유닛까지 같아야 같은 수정이다
                 var existing = project.Edits.FirstOrDefault(e => e.Scope == scope && e.Kind == editKind
                     && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)
@@ -355,12 +363,24 @@ namespace CtaToybox.Cli
                 }
                 project.Edits.Add(new Edit
                 {
-                    Unit = unit, File = file.VirtualPath, Path = keyPath.ToLowerInvariant(), Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Scope = scope, Kind = editKind
+                    Unit = unit, File = file.VirtualPath, Path = keyPath.ToLowerInvariant(), Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Scope = scope, Kind = editKind, NamedPath = named, NamedOccurrence = namedOcc
                 });
                 project.Save(projectPath);
                 output.WriteLine("수정을 더했다: " + file.VirtualPath + " " + keyPath + " " + node.Text + " → " + newValue + " (계층 " + file.Layer + (scope == "unit" ? ", 이 유닛만: " + unit : "") + ")");
                 return 0;
             }
+        }
+
+        // 블록 복제(E18)가 안 되는 이유. 되면 null. 이름 규칙, 원본 블록, 겹치는 이름을 빌드와 같은 규칙(BlockCopy.Apply)으로 본다
+        static string CopyError(string original, List<Edit> fileCopies, string file, string keyPath, int occ, string named, int namedOcc, string old, string newValue)
+        {
+            if (!SettingFiles.InArea(file)) return "게임 설정 파일의 따옴표 이름 블록만 복제할 수 있다";
+            string bad = BlockCopy.CheckName(newValue);
+            if (bad != null) return bad;
+            var results = new List<EditResult>();
+            BlockCopy.Apply(original, fileCopies.Concat(new[] { new Edit { Kind = BlockCopy.Kind, File = file, Path = keyPath, Occurrence = occ, Arg = 0, NamedPath = named, NamedOccurrence = namedOcc, Old = old, New = newValue } }), results);
+            var mine = results.Last();
+            return mine.Status == EditStatus.Applied ? null : mine.Message;
         }
 
         // 프로젝트에서 한 자리의 수정을 지운다. 게임 파일은 읽지 않는다. 범위나 유닛을 주지 않았는데 그 자리의 수정이 여럿이면 고르게 한다
@@ -379,6 +399,7 @@ namespace CtaToybox.Cli
             var matches = project.Edits.Where(e => string.Equals(SourceStack.ToVirtual(e.File ?? ""), file, StringComparison.OrdinalIgnoreCase)
                 && string.Equals(e.Path, keyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == occ && e.Arg == arg
                 && (scope == null || (scope == "unit") == (e.Scope == "unit"))
+                && (!opt.ContainsKey("kind") || e.Kind == opt["kind"])
                 && (unit == null || string.Equals(SourceStack.ToVirtual(e.Unit ?? ""), unit, StringComparison.OrdinalIgnoreCase))).ToList();
             if (matches.Count == 0) { output.WriteLine("그 자리의 수정이 없다: " + file + " " + keyPath + " [" + occ + "] 값 " + arg); return 1; }
             if (matches.Count > 1)
