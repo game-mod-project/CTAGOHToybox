@@ -142,6 +142,20 @@ dotnet run --project editor/CtaToybox.App -c Release
    ctatoybox build --project editor/projects/my-tweaks.json
    ```
 
+### 월드워 시야 프로젝트 (`vision-preset`)
+
+`vision-preset`은 지금 이긴 판의 `set/vision/vision_fields.inc`에서 지상 시야 필드 34개의 수정 목록을 만든다(설계: [../superpowers/specs/2026-10-16-worldwar-vision-design.md](../superpowers/specs/2026-10-16-worldwar-vision-design.md)).
+
+- `--variant wot`(월드워): 수평 시야각을 360으로, 숨은 병사를 찾는 거리를 50m로 바꾼다.
+- `--variant wt`(월드워-워썬더): 수평 시야각을 360으로 바꾸고, 거리 배수 r을 `--scale`배(기본 4)로 바꾼다.
+- `vision.set`의 전체 배수는 바꾸지 않는다. 항공·해상·청각·쌍안경까지 바뀌기 때문이다.
+- 이미 있는 프로젝트 파일은 `--force`를 줄 때만 덮어쓴다.
+
+```
+ctatoybox vision-preset --variant wot --project editor/projects/월드워.json
+ctatoybox build --project editor/projects/월드워.json
+```
+
 ### "이 유닛만"이 하는 일
 
 공유 파일은 건드리지 않는다. 유닛에서 그 파일까지의 include 사슬을 유닛 전용 사본으로 만들고, 유닛 파일과 사본 안의 include 경로를 사본으로 고쳐 쓴다.
