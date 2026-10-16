@@ -36,7 +36,7 @@ static class BlockCopySessionTests
             T.Eq(occurrence, reopened.Occurrence, "reopening keeps the slot inside the copy");
             T.True(session.CheckEdits().All(c => c.Status == EditStatus.Applied), "both check");
             // 시야 필드의 spotting2 r은 로스터의 r(연구 단계)이 아니라 거리 배수다
-            var labels = ValueLabels.Load(Path.Combine("data", "annotations", "values.psv"));
+            var labels = ValueLabels.Load(Path.Combine(T.RepoRoot(), "data", "annotations", "values.psv"));
             T.True(labels.Of("/visions/\"*\"/(\"spotting2\")", new[] { "1.5", "0.66" }, new[] { "r", "r_human" }, "/visions/\"tank_range_200\"/(\"spotting2\")")[0].StartsWith("거리 배수"), "the vision macro r is the distance multiplier");
             T.True(labels.Of("/\"*\"/(\"inf_sniper\")", new[] { "eng", "2" }, new[] { "side", "r" }, "/\"mp/eng/early/sniper\"/(\"inf_sniper\")")[1].Contains("연구 단계"), "the roster r stays the research stage");
             T.True(session.Describe(session.Project.Edits.Single(e => e.Kind == BlockCopy.Kind)).ValueLabel == "블록 복제", "the edit list names it");
