@@ -21,7 +21,8 @@ static class UnitIndexTests
 
         string vanilla = T.TempDir(), mod = T.TempDir(), work = T.TempDir();
         T.Zip(Path.Combine(vanilla, "entity", "-vehicle.pak"),
-            ("-vehicle/x/.presets", "(define \"m\" {k 1})"),
+            ("-vehicle/x/.presets", "(define \"m\" {k 1})"),   // 조상 폴더: 읽지 않는다(E13)
+            ("-vehicle/x/a/.presets", "(define \"m\" {k 2})"),
             ("-vehicle/x/a/a.def", "{game_entity (include \"s.inc\") (include \"/properties/tank.ext\")}"),
             ("-vehicle/x/a/b.def", "{game_entity (include \"s.inc\")}"),
             ("-vehicle/x/a/s.inc", "{box {item \"mine\" 24}}"),
@@ -42,13 +43,14 @@ static class UnitIndexTests
         T.Eq("vehicle", a.Kind, "kind");
         T.Eq("vanilla", a.Layer, "layer of the winning file");
         T.Eq(new[] { "entity/-vehicle/x/a/s.inc", "properties/tank.ext" }, a.Includes.ToArray(), "includes");
-        T.Eq(new[] { "entity/-vehicle/x/.presets" }, a.Presets.ToArray(), "presets of ancestor folders");
+        T.Eq(new[] { "entity/-vehicle/x/a/.presets" }, a.Presets.ToArray(), "only the presets of the unit's own folder");
         T.Eq("modX", index.Units[1].Layer, "an overridden unit reports the overriding layer");
         T.Eq(0, index.Units[1].Includes.Count, "the overriding file's includes are used, not the original's");
         T.Eq(1, index.Units[2].Unresolved, "unresolved includes are counted");
 
         T.Eq(new[] { "entity/-vehicle/x/a/a.def" }, index.UsersOf("entity/-vehicle/x/a/s.inc").ToArray(), "users of an include: b.def was overridden and no longer includes it");
-        T.Eq(3, index.UsersOf("entity/-vehicle/x/.presets").Count, "users of a .presets file");
+        T.Eq(2, index.UsersOf("entity/-vehicle/x/a/.presets").Count, "users of a .presets file are the units in its folder");
+        T.Eq(0, index.UsersOf("entity/-vehicle/x/.presets").Count, "an ancestor folder's .presets has no users");
         T.Eq(new[] { "entity/-vehicle/x/a/a.def" }, index.UsersOf("ENTITY/-vehicle/x/a/a.def").ToArray(), "a unit uses itself; lookup ignores case");
         T.Eq(0, index.UsersOf("properties/unused.ext").Count, "a file nobody reads has no users");
 

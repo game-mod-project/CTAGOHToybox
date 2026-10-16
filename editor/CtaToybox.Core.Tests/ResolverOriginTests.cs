@@ -8,7 +8,7 @@ static class ResolverOriginTests
 {
     static readonly Dictionary<string, string> Files = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
     {
-        ["entity/v/.presets"] = "(define \"mob\" {speed %speed} {mass 10})",
+        ["entity/v/a/.presets"] = "(define \"mob\" {speed %speed} {mass 10})",
         ["entity/v/a/a.def"] = "{game_entity\n (include \"a.inc\" scale(1.5))\n (include \"/properties/tank.ext\")\n (\"mob\" speed(40))\n {half (/ 10 4)}\n}",
         ["entity/v/a/a.inc"] = "{box {item \"mine\" 24}}\n{size %scale}\n{name \"x_%scale\"}\n(include \"deep.inc\")",
         ["entity/v/a/deep.inc"] = "{deep 1}",
@@ -40,7 +40,7 @@ static class ResolverOriginTests
         Origin(r, "/game_entity/armor", 0, "properties/tank.ext", "30", "a value from a root-relative include");
         Origin(r, "/game_entity/size", 0, "entity/v/a/a.def", "1.5", "an include argument comes from the including file");
         Origin(r, "/game_entity/speed", 0, "entity/v/a/a.def", "40", "a macro argument comes from the calling file");
-        Origin(r, "/game_entity/mass", 0, "entity/v/.presets", "10", "a value fixed in a macro body comes from the defining file");
+        Origin(r, "/game_entity/mass", 0, "entity/v/a/.presets", "10", "a value fixed in a macro body comes from the defining file");
 
         var half = Leaf(r, "/game_entity/half", 0);
         T.Eq("2.5", half.Text, "arithmetic is evaluated");

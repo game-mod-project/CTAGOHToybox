@@ -12,7 +12,7 @@ static class UnitTracerTests
     public static void Run()
     {
         string vanilla = T.TempDir();
-        T.Put(vanilla, "entity/v/.presets", "(define \"mob\" {speed %speed} {mass 10})");
+        T.Put(vanilla, "entity/v/a/.presets", "(define \"mob\" {speed %speed} {mass 10})");
         T.Put(vanilla, "entity/v/a/a.def", "{game_entity\n (include \"a.inc\" scale(1.5))\n (\"mob\" speed(40))\n {half (/ 10 4)}\n {volume \"body\" {thickness 45}}\n {volume \"turret\" {thickness 100}}\n}");
         T.Put(vanilla, "entity/v/a/a.inc", "{volume \"hull\" {thickness 20}}\n{box {item \"mine\" 24}}\n{size %scale}\n(include \"bad.inc\")");
         T.Put(vanilla, "entity/v/a/bad.inc", "{broken 1");
@@ -49,7 +49,7 @@ static class UnitTracerTests
         T.Eq(0, speed.Arg, "as that row's first value");
 
         var mass = Value(t, "/game_entity/mass", 0, 0);
-        T.Eq("entity/v/.presets", mass.File, "a macro body value is located in the defining file");
+        T.Eq("entity/v/a/.presets", mass.File, "a macro body value is located in the defining file");
         T.Eq("/(define \"mob\")/mass", mass.KeyPath, "inside the define");
 
         var size = Value(t, "/game_entity/size", 0, 0);

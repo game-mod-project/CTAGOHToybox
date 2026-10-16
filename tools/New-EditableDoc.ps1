@@ -163,7 +163,7 @@ $pages = @(
             (CsvSection '본체' '지뢰와 폭발물 (.mine)' 'set/stuff/explosive/*.mine' '보병의 `inventory/item`' 'weapon-ammo' '.mine'),
             (CsvSection '연관' '투척 원형 (.hand)' 'set/stuff/thrower.hand' '`{from "hand thrower"}`로 물려받는 원형이다(`set/stuff/thrower_v`). 그 `thrower_v`를 가리키는 줄은 바닐라에서 `##`로 꺼진 `gaz98.def`의 무장 자리 하나뿐이라 실제로는 쓰이지 않는 것으로 보인다' 'weapon-ammo' '.hand'),
             (CsvSection '연관' '원형 (.pattern)' 'set/stuff/**/*.pattern' '무기와 탄약의 `{from "pattern 이름"}`. 같은 원형을 쓰는 모든 아이템이 값을 물려받는다' 'weapon-ammo' '.pattern'),
-            (CsvSection '연관' '폴더의 매크로 모음 (.presets)' 'set/stuff/<폴더>/.presets' '그 폴더와 하위 폴더의 파일이 include 없이 쓰는 매크로 정의. `("fire rate" rpm(240))` 같은 호출의 본문이 여기에 있다' 'weapon-ammo' '.presets' { 'from' }),
+            (CsvSection '연관' '폴더의 매크로 모음 (.presets)' 'set/stuff/<폴더>/.presets' '그 폴더의 파일이 include 없이 쓰는 매크로 정의(하위 폴더는 쓰지 못한다, 2026-10-16 게임 확인). `("fire rate" rpm(240))` 같은 호출의 본문이 여기에 있다' 'weapon-ammo' '.presets' { 'from' }),
             (CsvSection '연관' '무기 상태 설정 (.fsm)' 'set/stuff/_settings/*.fsm' '아이템의 `inventory` 안 `{fsm "X"}`가 `set/stuff/_settings/X.fsm`을 가리킨다(아이템의 폴더와 상관없다). 바닐라의 값 6종과 파일 6개가 1:1이다(belt 132, stuff 35, hand-only 9, smg 2, bazooka·pistol 1). 내용은 줍기·들기·싣기 상태 이름이다' 'weapon-ammo' '.fsm'),
             (SharedSection '연관' '폭발 계산 매크로' 'set/blast.inc' '탄약의 `("he_level_3")` 같은 매크로 호출과 `.presets`의 `(include "\set\blast.inc")`' { param($id) $id -eq 'set/blast.inc' })
         )
