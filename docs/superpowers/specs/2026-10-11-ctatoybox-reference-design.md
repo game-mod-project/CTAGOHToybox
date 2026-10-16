@@ -1,5 +1,7 @@
 # CTAToybox 레퍼런스 구축 설계
 
+> **상태(2026-10-17)**: 구현됐다(참고 저장소). 남은 일은 `docs/10-backlog.md`에 있다.
+
 - 작성일: 2026-10-11
 - 대상 게임: Call to Arms - Gates of Hell: Ostfront (Steam appid `400750`, buildid `25492057`, 실행 파일 버전 `1.0.6.7`)
 - 게임 경로: `E:\SteamLibrary\steamapps\common\Call to Arms - Gates of Hell`

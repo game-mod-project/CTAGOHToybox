@@ -1,5 +1,7 @@
 # 스탯 편집기 화면 (구현 순서 4단계) Implementation Plan
 
+> **상태(2026-10-17)**: 끝났다(편집기 화면). 아래 체크 상자는 진행 중에 표시하지 않았다. 무엇을 했는지는 git 기록과 `docs/10-backlog.md` "정리하며 지운 것"에 있다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 명령줄 없이 창 하나에서 유닛을 찾고, 요약·전체 탭에서 값과 출처를 보고, "전부 / 이 유닛만"을 골라 고치고, 수정 목록을 관리하고 빌드할 수 있게 한다.

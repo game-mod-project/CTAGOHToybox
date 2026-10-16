@@ -1,5 +1,7 @@
 # 스탯 편집기 출처 추적과 "이 유닛만" (구현 순서 3단계) Implementation Plan
 
+> **상태(2026-10-17)**: 끝났다(값의 출처 추적). 아래 체크 상자는 진행 중에 표시하지 않았다. 무엇을 했는지는 git 기록과 `docs/10-backlog.md` "정리하며 지운 것"에 있다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 명령줄에서 유닛을 찾고, 유닛의 펼친 값이 어느 파일의 어느 자리에서 왔는지와 몇 개 유닛이 그 파일을 같이 쓰는지 보고, include로 공유된 값을 "이 유닛만" 고쳐 빌드할 수 있게 한다.
