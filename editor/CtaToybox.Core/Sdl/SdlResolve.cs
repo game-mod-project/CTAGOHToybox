@@ -17,6 +17,7 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -40,6 +41,8 @@ public sealed class SdlResolveResult
     public List<string> PresetIncludes { get; set; }   // .presets를 읽으며 include한 파일(이름순)
     public List<string> Inherited { get; set; }
     public List<SdlIncludeEdge> IncludeEdges { get; set; }
+    // 펼치기가 끝났을 때의 매크로 정의(이름 → 본문, 같은 이름이면 나중 정의). 원형의 매크로 호출 줄이 어떤 키를 쓰는지 볼 때 쓴다(E15)
+    public Dictionary<string, List<object>> Defines { get; set; }
 }
 
 public sealed class SdlResolver
@@ -370,7 +373,8 @@ public sealed class SdlResolver
         return new SdlResolveResult
         {
             Nodes = nodes, Unresolved = SortedDistinct(unresolved), Includes = SortedDistinct(includes),
-            Macros = SortedDistinct(macros), Presets = presets, PresetIncludes = presetIncludes, Inherited = SortedDistinct(inherited), IncludeEdges = edges
+            Macros = SortedDistinct(macros), Presets = presets, PresetIncludes = presetIncludes, Inherited = SortedDistinct(inherited), IncludeEdges = edges,
+            Defines = defines.ToDictionary(kv => kv.Key, kv => kv.Value.Body, StringComparer.OrdinalIgnoreCase)
         };
     }
 }

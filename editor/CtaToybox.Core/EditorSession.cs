@@ -487,19 +487,30 @@ namespace CtaToybox.Core
                     // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
                     if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
                     string path = row.Path, rawPath = row.RawPath, keyedPath = keyed == null ? null : keyed[k];
+                    string[] at;
                     if (level != null && file == level.File)
                     {
+                        // 원문 경로는 펼친 줄과 같이 자식 파일의 맨 위 블록 표기({From …}이면 /From)를 쓴다(E15)
                         path = FromLinks.Reroot(row.Path, "/from");
-                        rawPath = FromLinks.Reroot(row.RawPath, "/from");
+                        rawPath = FromLinks.Reroot(row.RawPath, level.RawTop);
                         keyedPath = FromLinks.Reroot(keyedPath, "/from");
                         if (path == null) continue;
+                    }
+                    else if (level != null && level.IncludeAt.TryGetValue(file, out at))
+                    {
+                        // 원형이 include한 파일의 호출 줄은 그 내용이 펼쳐진 자리의 경로로 보인다(E15)
+                        path = at[0] + row.Path;
+                        rawPath = at[1] + row.RawPath;
+                        keyedPath = at[2] + keyedPath;
                     }
                     var r = new RowView { Path = path, RawPath = rawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Cond = row.Cond, Note = n.Find(path, row.Form, WildcardFor(file, view.Unit), rawPath), SummaryLabel = summary.LabelOf(path, rawPath) };
                     if (level != null)
                     {
                         string block;
                         r.From = level.File;
-                        r.FromState = level.StateOf(keyedPath, out block);
+                        // 호출이 펼치는 키를 자식이 모두 적으면 그 호출의 값은 쓰이지 않는다(E15)
+                        string seg = row.Path.Substring(FromLevel.LastSlash(row.Path) + 1);
+                        r.FromState = level.CallStateOf(keyedPath, seg.Trim('(', ')').Trim('"'), out block);
                         r.FromBlock = block;
                         if (r.FromState == FromLevel.Overridden) r.SummaryLabel = null;
                     }
