@@ -295,8 +295,8 @@
 
 # ---------- 시야 필드의 거리 매크로 (set/vision/spotting.inc)
 */("spotting")|r|거리 배수. 대상별 기준 거리(사람 100m, 움직이는 차량 100m+50/r 등)에 곱한다|C
-*/("spotting2")|r|거리 배수(차량·포 대상)|C
-*/("spotting2")|r_human|보병 대상 거리 배수|S
+*/("spotting2")|r|거리 배수. 모든 대상의 기준 거리에 곱한다(보병 대상은 r_human과 함께)|C
+*/("spotting2")|r_human|보병 대상 거리 배수. r과 함께 곱한다(서 있는 병사 = 100 × r_human × r)|S
 */("spotting2")|veh_vis|발견한 차량이 시선이 끊길 때까지 계속 보이는 거리에 더하는 값(m)|C
 */("spotting2")|can_vis|발견한 포가 계속 보이는 거리에 더하는 값(m)|C
 */("spotting2")|can_fire|포·차량이 쏘면 드러나는 거리에 더하는 값(m)|C
