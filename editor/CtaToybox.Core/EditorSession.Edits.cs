@@ -134,7 +134,7 @@ namespace CtaToybox.Core
         public void Rebase(Edit edit)
         {
             NeedProject();
-            var check = Check(edit, new Dictionary<string, SourceCheck>(StringComparer.Ordinal));
+            var check = Check(edit, new Dictionary<string, SourceCheck>(StringComparer.Ordinal), output => null);
             if (check.Current == null) return;
             string before = edit.Old;
             edit.Old = check.Current;
@@ -145,10 +145,11 @@ namespace CtaToybox.Core
         {
             if (Project == null) return new List<EditCheck>();
             var parsed = new Dictionary<string, SourceCheck>(StringComparer.Ordinal);
-            return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed)).ToList();
+            var conflict = new ModBuilder(Stack, Settings.OutputModDir).OutputConflicts();
+            return Project.Edits.Where(e => e.Enabled).Select(e => Check(e, parsed, conflict)).ToList();
         }
 
-        EditCheck Check(Edit e, Dictionary<string, SourceCheck> parsed)
+        EditCheck Check(Edit e, Dictionary<string, SourceCheck> parsed, Func<string, string> conflict)
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
             SourceCheck source;
@@ -159,7 +160,8 @@ namespace CtaToybox.Core
                 if (found != null)
                 {
                     string error;
-                    source.Rows = SourceRows.Of(file, TextCodec.Decode(Stack.Read(found), out source.Kind), out error);
+                    source.Text = TextCodec.Decode(Stack.Read(found), out source.Kind);
+                    source.Rows = SourceRows.Of(file, source.Text, out error);
                 }
                 parsed[file] = source;
             }
@@ -186,11 +188,29 @@ namespace CtaToybox.Core
             string warning;
             string rule = e.New == null ? null : ValueRules.CheckNewValue(file, e.Old, e.New, out warning);
             if (rule != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = rule };
+            // 빌드와 같이 미리 적용해 본다: 키 경로를 바꾸는 예전 수정(Q2 전에 만든 블록 한정자 등)은 여기서 걸린다(Q5)
+            string applies = e.New == null ? null : ValueRules.CheckApplies(file, source.Text, e);
+            if (applies != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = applies };
+            // 빌드가 쓸 출력 파일이 손으로 넣은 파일과 겹치는가(Q5). '이 유닛만'이면 유닛 파일과 그 사본도 쓴다
+            foreach (string output in OutputsOf(e, file))
+            {
+                string clash = conflict(output);
+                if (clash != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = clash };
+            }
             return new EditCheck { Edit = e, Status = EditStatus.Applied, Current = node.Text, RowText = rowText };
         }
 
         // 수정 점검이 파일마다 한 번 읽은 것: 줄과 인코딩. 파일이 없거나 읽히지 않으면 Rows가 null이다
-        sealed class SourceCheck { public List<KeyRow> Rows; public TextKind Kind; }
+        sealed class SourceCheck { public List<KeyRow> Rows; public TextKind Kind; public string Text; }
+
+        // 이 수정 때문에 빌드가 쓸 출력 가상 경로. '전부'는 그 파일, '이 유닛만'은 유닛 파일과(다른 파일의 값이면) 그 파일의 사본
+        static IEnumerable<string> OutputsOf(Edit e, string file)
+        {
+            if (e.Scope != "unit") { yield return file; yield break; }
+            string unit = SourceStack.ToVirtual(e.Unit ?? "");
+            yield return unit;
+            if (file != unit) yield return IncludeChain.CopyName(file, unit);
+        }
 
         public BuildReport Build()
         {

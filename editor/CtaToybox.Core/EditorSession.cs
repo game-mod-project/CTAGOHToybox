@@ -179,20 +179,34 @@ namespace CtaToybox.Core
         KeyAnnotations NotesFor(string unit)
         {
             // 게임 설정은 편집기 전용 묶음 settings.psv를 쓴다. GroupOf는 Common.ps1과 같은 규칙으로 둔다
-            string group = UnitKind.OfEditor(unit) == SettingFiles.Kind ? SettingFiles.Kind : KeyAnnotations.GroupOf(unit);
+            string group = GroupFor(unit);
             KeyAnnotations n;
-            if (!notes.TryGetValue(group, out n)) { n = KeyAnnotations.Load(annotationDir, group); notes[group] = n; }
+            // 게임 설정에는 common.psv의 */이름이 붙지 않는다(Q8). settings.psv의 */이름만 쓴다
+            if (!notes.TryGetValue(group, out n)) { n = KeyAnnotations.Load(annotationDir, group, group != SettingFiles.Kind); notes[group] = n; }
             return n;
         }
 
-        // 화면이 요약 묶음의 순서를 정할 때 쓴다
-        public SummaryKeys SummaryOf(UnitView unit) { return SummaryFor(unit.Kind, NotesFor(unit.Unit)); }
-
-        SummaryKeys SummaryFor(string kind, KeyAnnotations n)
+        static string GroupFor(string unit)
         {
-            string key = kind ?? "(none)";
+            return UnitKind.OfEditor(unit) == SettingFiles.Kind ? SettingFiles.Kind : KeyAnnotations.GroupOf(unit);
+        }
+
+        // */이름 주석을 붙여도 되는 줄인지: file은 줄이 있는 파일(펼친 줄이면 유닛), unit은 열어 놓은 유닛.
+        // Get-Annotation과 같이 유닛 파일의 줄과 펼친 키에만 붙인다. 게임 설정은 NotesFor가 common.psv의 */이름을 빼 두었다(Q8)
+        static bool WildcardFor(string file, string unit)
+        {
+            return UnitKind.Of(file) != null || UnitKind.OfEditor(unit) == SettingFiles.Kind;
+        }
+
+        // 화면이 요약 묶음의 순서를 정할 때 쓴다
+        public SummaryKeys SummaryOf(UnitView unit) { return SummaryFor(unit.Kind, NotesFor(unit.Unit), GroupFor(unit.Unit)); }
+
+        // 요약 키 파일이 없으면 주석 묶음의 "확인" 키로 대신하므로, 종류와 묶음을 함께 열쇠로 둔다(Q8)
+        SummaryKeys SummaryFor(string kind, KeyAnnotations n, string group)
+        {
+            string key = (kind ?? "(none)") + "\t" + group;
             SummaryKeys s;
-            if (!summaries.TryGetValue(key, out s)) { s = SummaryKeys.Load(summaryDir, key, n); summaries[key] = s; }
+            if (!summaries.TryGetValue(key, out s)) { s = SummaryKeys.Load(summaryDir, kind ?? "(none)", n); summaries[key] = s; }
             return s;
         }
 
@@ -203,7 +217,8 @@ namespace CtaToybox.Core
             if (traced == null) return null;
             string kind = UnitKind.OfEditor(traced.Unit);
             var n = NotesFor(traced.Unit);
-            var summary = SummaryFor(kind, n);
+            var summary = SummaryFor(kind, n, GroupFor(traced.Unit));
+            bool wild = WildcardFor(traced.Unit, traced.Unit);
             var view = new UnitView
             {
                 Unit = traced.Unit, Kind = kind, EditorKind = UnitKind.EditorKindOf(kind, traced.IncludeEdges.Select(e => e.ToFile)), Layer = Stack.Find(traced.Unit).Layer, DisplayName = Names.OfUnit(traced.Unit),
@@ -213,7 +228,7 @@ namespace CtaToybox.Core
             };
             foreach (var row in traced.Rows)
             {
-                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Cond = row.Cond, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath),
+                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Cond = row.Cond, Note = n.Find(row.Path, row.Form, wild, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath),
                     From = row.From, FromState = row.FromState, FromBlock = row.FromBlock };
                 // 요약은 게임이 쓰는 값을 보이는 곳이라 자식 쪽 값에 가려진 원형의 줄은 넣지 않는다
                 if (row.FromState == FromLevel.Overridden) r.SummaryLabel = null;
@@ -295,7 +310,7 @@ namespace CtaToybox.Core
                 {
                     var row = entry.Rows[r];
                     if (row.Leaves.Count == 0) continue;
-                    var note = n.Find(row.Path, row.Form, true, row.RawPath) ?? (row.Form == "macro" ? RosterMacroNote : r == 0 ? RosterNameNote : row.Path.EndsWith("/cost", StringComparison.Ordinal) ? RosterCostNote : null);
+                    var note = n.Find(row.Path, row.Form, false, row.RawPath) ?? (row.Form == "macro" ? RosterMacroNote : r == 0 ? RosterNameNote : row.Path.EndsWith("/cost", StringComparison.Ordinal) ? RosterCostNote : null);
                     var rv = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Note = note, RosterEntry = group, IsMacroCall = row.Form == "macro", Cond = row.Cond };
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
@@ -343,7 +358,7 @@ namespace CtaToybox.Core
             var n = NotesFor(SourceStack.ToVirtual(e.Unit ?? file));
             return new EditDescription
             {
-                Note = n.Find(row.Path, row.Form, true, row.RawPath) ?? NotesFor(file).Find(row.Path, row.Form, true, row.RawPath),
+                Note = n.Find(row.Path, row.Form, WildcardFor(file, SourceStack.ToVirtual(e.Unit ?? file)), row.RawPath) ?? NotesFor(file).Find(row.Path, row.Form, WildcardFor(file, file), row.RawPath),
                 IsMacroCall = row.Form == "macro", ValueLabel = labels[e.Arg], ValueName = row.LeafNames[e.Arg],
                 RowText = string.Join(" ", texts), ValueCount = texts.Count,
                 ChangedPieces = ChangedPieces(row.Path, row.RawPath, e),
@@ -477,7 +492,7 @@ namespace CtaToybox.Core
                         keyedPath = FromLinks.Reroot(keyedPath, "/from");
                         if (path == null) continue;
                     }
-                    var r = new RowView { Path = path, RawPath = rawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Cond = row.Cond, Note = n.Find(path, row.Form, true, rawPath), SummaryLabel = summary.LabelOf(path, rawPath) };
+                    var r = new RowView { Path = path, RawPath = rawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Cond = row.Cond, Note = n.Find(path, row.Form, WildcardFor(file, view.Unit), rawPath), SummaryLabel = summary.LabelOf(path, rawPath) };
                     if (level != null)
                     {
                         string block;

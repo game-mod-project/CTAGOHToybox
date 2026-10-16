@@ -42,10 +42,13 @@ namespace CtaToybox.Core
             return "shared";
         }
 
-        public static KeyAnnotations Load(string annotationDir, string group)
+        // commonWildcards가 false면 common.psv의 */이름 줄은 읽지 않는다. 게임 설정처럼 유닛이 아닌 파일에서는
+        // 같은 이름이 다른 뜻으로 쓰이므로 그 묶음 파일(settings.psv)에 적은 */이름만 쓴다(Q8)
+        public static KeyAnnotations Load(string annotationDir, string group, bool commonWildcards = true)
         {
             var result = new KeyAnnotations();
-            var files = new List<string> { Path.Combine(annotationDir, "common.psv") };
+            string common = Path.Combine(annotationDir, "common.psv");
+            var files = new List<string> { common };
             if (group != null) files.Add(Path.Combine(annotationDir, group + ".psv"));
             foreach (string file in files)
             {
@@ -55,6 +58,7 @@ namespace CtaToybox.Core
                     if (line.Trim().Length == 0 || line.StartsWith("#")) continue;
                     string[] p = line.Split('|', 5);
                     if (p.Length < 5) throw new FormatException("주석 줄 형식 오류: " + line);
+                    if (!commonWildcards && file == common && p[0].StartsWith("*/", StringComparison.Ordinal)) continue;
                     string source;
                     result.map[p[0] + "\t" + p[1]] = new KeyNote { Grade = p[2], Meaning = p[3], Source = SourceNames.TryGetValue(p[4], out source) ? source : p[4] };
                 }
