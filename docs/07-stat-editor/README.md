@@ -131,7 +131,7 @@ dotnet run --project editor/CtaToybox.App -c Release
 
    - 윗줄은 펼친 뒤의 키 경로와 순번이다.
    - `←` 뒤는 그 값이 실제로 있는 파일, 그 파일 안의 키 경로, `[몇 번째]`, `값 N`이다. 이 넷을 `add`의 `--file`, `--path`, `--occ`, `--arg`에 넣는다. 펼친 뒤의 순번(`[3]`)과 파일 안의 순번(`[1]`)은 다르다.
-   - `공유 N`은 그 파일을 읽는 유닛의 수다. `shared`로 고치면 N개 유닛이 모두 바뀐다.
+   - `공유 N`은 그 파일을 읽는 유닛의 수다. 유닛 파일, include한 파일, 폴더의 `.presets`와 그 `.presets`가 include한 파일(예: `rifle/.presets`의 `\set\small_firearms_accuracy.inc`, 바닐라와 켜 둔 모드에서 618개), `{from}`으로 물려받는 원형과 그 원형이 읽는 파일을 센다. `shared`로 고치면 N개 유닛이 모두 바뀐다.
    - `이 유닛만: 가능`이면 `--scope unit`을 쓸 수 있다. `불가`면 괄호 안에 이유가 있다.
    - `←` 없이 괄호만 붙은 줄은 고칠 수 없는 값이다(치환이나 계산으로 만든 값, include 인자).
 

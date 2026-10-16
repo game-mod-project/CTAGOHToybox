@@ -12,7 +12,8 @@
 //              macro:<이름>(정의 없음), macro-cycle:, macro-depth:, param:%<이름>(채워지지 않은 매개변수)
 // 물려받은 인자: 매크로나 include가 자기에게 직접 주어지지 않은 값(매크로는 정의할 때 묶인 값, include는 바깥 인자)을 쓴 경우 Inherited에 적는다.
 // 출처: 읽은 노드마다 파일의 가상 경로(SdlNode.File)를 적는다. 치환·계산으로 만든 노드는 Synthetic이다.
-//       include 지시문의 자리는 IncludeEdges에 적는다. .presets를 읽으며 지나간 include는 적지 않는다.
+//       include 지시문의 자리는 IncludeEdges에 적는다. .presets를 읽으며 지나간 include는 IncludeEdges·Includes에 넣지 않고 PresetIncludes에 적는다
+//       (그 폴더의 유닛이 모두 읽는 파일이다. '이 유닛만' 사본 사슬에는 들지 않는다).
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -36,6 +37,7 @@ public sealed class SdlResolveResult
     public List<string> Includes { get; set; }
     public List<string> Macros { get; set; }
     public List<string> Presets { get; set; }
+    public List<string> PresetIncludes { get; set; }   // .presets를 읽으며 include한 파일(이름순)
     public List<string> Inherited { get; set; }
     public List<SdlIncludeEdge> IncludeEdges { get; set; }
 }
@@ -358,7 +360,8 @@ public sealed class SdlResolver
             SdlNode proot = string.Equals(pv, virtualPath, StringComparison.OrdinalIgnoreCase) ? null : GetParsed(pv, true);
             if (proot != null) { presets.Add(pv); Expand(proot.Children, dir, NewBind(null), NoOwn, 1); }
         }
-        // .presets를 읽으며 쌓인 기록은 파일 자체의 것이 아니다
+        // .presets를 읽으며 쌓인 기록은 파일 자체의 것이 아니다. include한 파일만 따로 남긴다(Q16: 그 파일을 쓰는 유닛 수)
+        var presetIncludes = SortedDistinct(includes);
         includes.Clear(); macros.Clear(); inherited.Clear(); edges.Clear();
 
         activeIncludes.Add(virtualPath);   // 자기 자신을 다시 include하면 순환이다
@@ -367,7 +370,7 @@ public sealed class SdlResolver
         return new SdlResolveResult
         {
             Nodes = nodes, Unresolved = SortedDistinct(unresolved), Includes = SortedDistinct(includes),
-            Macros = SortedDistinct(macros), Presets = presets, Inherited = SortedDistinct(inherited), IncludeEdges = edges
+            Macros = SortedDistinct(macros), Presets = presets, PresetIncludes = presetIncludes, Inherited = SortedDistinct(inherited), IncludeEdges = edges
         };
     }
 }

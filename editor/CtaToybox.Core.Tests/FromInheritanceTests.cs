@@ -20,7 +20,9 @@ static class FromInheritanceTests
             ("set/stuff/odd/loop_a", "{from \"loop_b\" {x 1}}"),
             ("set/stuff/odd/loop_b", "{from \"loop_a\" {y 2}}"),
             ("set/stuff/odd/lost", "{from \"pattern nothing\" {z 3}}"),
-            ("set/stuff/other/bullet.pattern", "{bullet {mass 7}}"));
+            ("set/stuff/other/bullet.pattern", "{bullet {mass 7}}"),
+            ("set/stuff/.presets", "(include \"/set/acc.inc\")"),
+            ("set/acc.inc", "(define \"sway\" {sway 1})"));
         Directory.CreateDirectory(Path.Combine(repo, "data", "annotations"));
         File.WriteAllText(Path.Combine(repo, "data", "annotations", "common.psv"), "**/mass|block|확인|무게. 킬로그램|C\n");
         Directory.CreateDirectory(Path.Combine(repo, "editor", "summary"));
@@ -94,6 +96,7 @@ static class FromInheritanceTests
         T.Eq(new[] { Bullet, K98, Rifle }, session.Index.UsersOf(Bullet).ToArray(), "users of the far parent");
         T.Eq(new[] { K98, Rifle }, session.Index.UsersOf(Rifle).ToArray(), "users of the near parent");
         T.Eq(new[] { K98, Rifle }, session.Index.UsersOf("set/stuff/rifle/.presets").ToArray(), "a parent's .presets is read by its inheritors");
+        T.Eq(new[] { Bullet, K98, Rifle }, session.Index.UsersOf("set/acc.inc").ToArray(), "so is a file the parent's .presets includes (Q16)");
         T.Eq(7, session.Index.Units.Single(u => u.Path == K98).Numbers, "the editor list counts only the unit file's own numbers (500 4 2 5 3 95 7, not the inherited ones)");
         T.Eq(new[] { K98, Rifle }, session.Index.HeirsOf(Bullet).ToArray(), "the units that inherit a pattern");
         T.Eq(0, session.Index.HeirsOf(K98).Count, "a unit nobody inherits has no heirs");

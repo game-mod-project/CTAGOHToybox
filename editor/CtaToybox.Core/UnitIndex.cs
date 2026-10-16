@@ -18,6 +18,7 @@ namespace CtaToybox.Core
         public string Layer { get; set; }
         public List<string> Includes { get; set; } = new List<string>();
         public List<string> Presets { get; set; } = new List<string>();
+        public List<string> PresetIncludes { get; set; } = new List<string>();   // .presets가 include해 읽는 파일(Q16). 그 폴더의 유닛이 모두 읽는다
         public List<string> Inherits { get; set; } = new List<string>();   // {from} 사슬의 원형 파일과 그 파일들이 include·.presets로 읽는 파일(E11)
         public int Unresolved { get; set; }
         public int Numbers { get; set; }    // 펼친 값 가운데 수의 개수. 0이면 고칠 스탯이 없는 파일이라 편집기 목록에서 뺀다
@@ -57,7 +58,7 @@ namespace CtaToybox.Core
                 index.Units.Add(new UnitEntry
                 {
                     Path = paths[i], Kind = UnitKind.OfEditor(paths[i]), Layer = stack.Find(paths[i]).Layer,
-                    Includes = r.Includes, Presets = r.Presets, Unresolved = r.Unresolved.Count, Numbers = CountNumbers(rows),
+                    Includes = r.Includes, Presets = r.Presets, PresetIncludes = r.PresetIncludes, Unresolved = r.Unresolved.Count, Numbers = CountNumbers(rows),
                     EditorKind = UnitKind.EditorKindOf(UnitKind.OfEditor(paths[i]), r.Includes),
                     Inherits = InheritsOf(paths[i], FromLinks.NameOf(rows), links, resolver, parents),
                 });
@@ -101,7 +102,7 @@ namespace CtaToybox.Core
                 if (!parents.TryGetValue(file, out p))
                 {
                     var r = resolver.Resolve(file);
-                    p = new Parent { Reads = new[] { file }.Concat(r.Includes).Concat(r.Presets).ToList(), FromName = FromLinks.NameOf(RowsOf(r.Nodes)) };
+                    p = new Parent { Reads = new[] { file }.Concat(r.Includes).Concat(r.Presets).Concat(r.PresetIncludes).ToList(), FromName = FromLinks.NameOf(RowsOf(r.Nodes)) };
                     parents[file] = p;
                 }
                 foreach (string f in p.Reads) if (!result.Contains(f)) result.Add(f);
@@ -111,8 +112,8 @@ namespace CtaToybox.Core
             return result;
         }
 
-        // 색인 형식이나 펼치기 규칙이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다(6: E13 자기 폴더의 .presets만, 7: E11 원형 상속)
-        const string FormatVersion = "7";
+        // 색인 형식이나 펼치기 규칙이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다(6: E13 자기 폴더의 .presets만, 7: E11 원형 상속, 8: Q16 .presets의 include)
+        const string FormatVersion = "8";
 
         // 계층의 구성과 원본 파일(pak, 낱개 파일)의 크기·수정 시각으로 만든 지문
         public static string SignatureOf(SourceStack stack)
@@ -154,14 +155,14 @@ namespace CtaToybox.Core
             File.WriteAllText(path, JsonSerializer.Serialize(this), new UTF8Encoding(false));
         }
 
-        // 그 파일을 읽는 유닛: 자기 자신, include, .presets, 물려받는 원형과 그 원형이 읽는 파일
+        // 그 파일을 읽는 유닛: 자기 자신, include, .presets와 그것이 include한 파일, 물려받는 원형과 그 원형이 읽는 파일
         public IReadOnlyList<string> UsersOf(string file)
         {
             if (users == null)
             {
                 var map = new Dictionary<string, List<string>>(StringComparer.Ordinal);
                 foreach (var u in Units)
-                    foreach (string f in new[] { u.Path }.Concat(u.Includes).Concat(u.Presets).Concat(u.Inherits ?? new List<string>()).Distinct())
+                    foreach (string f in new[] { u.Path }.Concat(u.Includes).Concat(u.Presets).Concat(u.PresetIncludes ?? new List<string>()).Concat(u.Inherits ?? new List<string>()).Distinct())
                     {
                         List<string> list;
                         if (!map.TryGetValue(f, out list)) { list = new List<string>(); map[f] = list; }
