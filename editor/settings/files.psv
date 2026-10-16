@@ -22,3 +22,4 @@ set/difficulty/normal.dl|난이도|난이도 — normal
 set/difficulty/hard.dl|난이도|난이도 — hard
 set/difficulty/heroic.dl|난이도|난이도 — heroic
 set/difficulty/multiplayer.dl|난이도|난이도 — multiplayer
+set/vision/vision.set|시야|시야 (필드·발견 거리)
