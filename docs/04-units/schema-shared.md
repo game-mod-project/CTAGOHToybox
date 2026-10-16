@@ -9492,9 +9492,9 @@
 | `/environment/haze/altitude_strength` | block | [num]x609 | 609 | 609 | 0 ~ 2.5 | 미확인(자동) |  |  |  |
 | `/environment/haze/color` | block | [atom]x609 | 609 | 609 | 예: 0xff4e5151 | 미확인(자동) |  |  | second |
 | `/environment/haze/enable` | block | []x607 | 607 | 607 | 예: | 미확인(자동) |  |  | to enable item ops in snipe cover |
-| `/environment/haze/end` | block | [num]x609 | 609 | 609 | 0 ~ 12000 | 미확인(자동) |  |  |  |
+| `/environment/haze/end` | block | [num]x609 | 609 | 609 | 0 ~ 12000 | 추정 | 거리 안개(haze)가 가장 짙어지는 거리(m) (추정: haze 블록의 start와 짝. 지도 환경 파일 값은 대부분 4000~6000) | 파일 구조와 값에서 추론 |  |
 | `/environment/haze/sky_haziness` | block | [num]x609 | 609 | 609 | 0 ~ 500 | 미확인(자동) |  |  |  |
-| `/environment/haze/start` | block | [num]x609 | 609 | 609 | -1000 ~ 5000 | 미확인(자동) |  |  | games played : starting CP of each match |
+| `/environment/haze/start` | block | [num]x609 | 609 | 609 | -1000 ~ 5000 | 추정 | 거리 안개(haze)가 시작되는 거리(m) (추정: haze 블록에 color·start·end·sky_haziness가 함께 있다. 지도 환경 파일 값 0~5000) | 파일 구조와 값에서 추론 | games played : starting CP of each match |
 | `/environment/light` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/light/ambient` | block | [atom]x609 | 609 | 609 | 예: 0xff1e1f1e | 미확인(자동) |  |  |  |
 | `/environment/light/camera_lens_effetcs` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
@@ -9550,7 +9550,7 @@
 | `/environment/ocean_wave_works/lake_settings/ocean_look/emissive_strength` | block | [num]x609 | 609 | 609 | 0.31 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/costal_softalpha_depth` | block | [num]x609 | 609 | 609 | 1 ~ 13 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 5500 | 미확인(자동) |  |  |  |
+| `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 5500 | 추정 | 물이 완전히 불투명하게 보이는 거리(m). 물 표현 설정이라 화면의 안개·렌더 거리나 유닛 발견과는 관계없다 (추정: ocean_wave_works의 sea·lake·river_settings › ocean_look › enhanced_water_look 안에 full_opaque_water_depth와 함께 있고, set/vision 파일은 환경 값을 읽지 않는다) | 파일 구조와 값에서 추론 |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/full_opaque_water_depth` | block | [num]x609 | 609 | 609 | 10 ~ 100 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/specular_color` | block | [atom]x609 | 609 | 609 | 0xffffffff | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/specular_intensity` | block | [num]x609 | 609 | 609 | 0.05 ~ 0.52 | 미확인(자동) |  |  |  |
@@ -9583,7 +9583,7 @@
 | `/environment/ocean_wave_works/river_settings/ocean_look/emissive_strength` | block | [num]x609 | 609 | 609 | 0.31 ~ 0.83 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/costal_softalpha_depth` | block | [num]x609 | 609 | 609 | 1 ~ 15 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 2000 | 미확인(자동) |  |  |  |
+| `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 2000 | 추정 | 물이 완전히 불투명하게 보이는 거리(m). 물 표현 설정이라 화면의 안개·렌더 거리나 유닛 발견과는 관계없다 (추정: ocean_wave_works의 sea·lake·river_settings › ocean_look › enhanced_water_look 안에 full_opaque_water_depth와 함께 있고, set/vision 파일은 환경 값을 읽지 않는다) | 파일 구조와 값에서 추론 |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/full_opaque_water_depth` | block | [num]x609 | 609 | 609 | 10 ~ 100 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/specular_color` | block | [atom]x609 | 609 | 609 | 0xffffffff ¦ 0xffb8b8b8 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/specular_intensity` | block | [num]x609 | 609 | 609 | 0.05 ~ 0.27 | 미확인(자동) |  |  |  |
@@ -9616,7 +9616,7 @@
 | `/environment/ocean_wave_works/sea_settings/ocean_look/emissive_strength` | block | [num]x609 | 609 | 609 | 0.07 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/costal_softalpha_depth` | block | [num]x609 | 609 | 609 | 1 ~ 30 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 10 ~ 9000 | 미확인(자동) |  |  |  |
+| `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 10 ~ 9000 | 추정 | 물이 완전히 불투명하게 보이는 거리(m). 물 표현 설정이라 화면의 안개·렌더 거리나 유닛 발견과는 관계없다 (추정: ocean_wave_works의 sea·lake·river_settings › ocean_look › enhanced_water_look 안에 full_opaque_water_depth와 함께 있고, set/vision 파일은 환경 값을 읽지 않는다) | 파일 구조와 값에서 추론 |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/full_opaque_water_depth` | block | [num]x609 | 609 | 609 | 1 ~ 1500 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/specular_color` | block | [atom]x609 | 609 | 609 | 0xffffffff ¦ 0xffffffae ¦ 0xfffedebf ¦ 0xfffbfbfb | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/specular_intensity` | block | [num]x609 | 609 | 609 | 0.05 ~ 1 | 미확인(자동) |  |  |  |

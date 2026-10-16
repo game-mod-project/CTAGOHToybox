@@ -135,7 +135,7 @@
 | `/from` | block | [str]x39 | 39 | 39 | "pattern smoke" ¦ "pattern anti-tank" ¦ "pattern anti-personnel" ¦ "pattern throwable" ¦ "pattern anti-personnel_contact" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/damage` | block | [atom atom]x23 [atom]x19 | 26 | 42 | add blastwave ¦ blastwave ¦ cumulative | 추정 | 피해 정의. 값은 피해 종류: blastwave, fire. add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/from/damage/area` | block | [num num]x38 | 26 | 38 | 4 10 ¦ 4.5 6 ¦ 3 5 ¦ 0.25 0.35 ¦ 0.01 0.25 ¦ 4 6 ¦ 1 2 ¦ 0.4 0.55 ¦ 0.6 2 ¦ 0.25 0.4 ¦ 3 6 ¦ 2.5 5.5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
-| `/from/damage/damage` | block | [num]x4 | 4 | 4 | 31 ~ 150 | 미확인 | 수류탄의 damage 하위. 값 31 ~ 150 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
+| `/from/damage/damage` | block | [num]x4 | 4 | 4 | 31 ~ 150 | 확인 | 성형작약(damage cumulative) 수류탄의 관통력, mm (확인: set/stuff/grenade/anti-tank grenade/rpg43.grenade 8줄 주석 "= 75mm of penetration", pwm_l.grenade 8줄 "= 150mm of penetration". 바닐라 4곳 모두 cumulative 안) | 게임 파일 주석 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/from/damage/distance` | block | [num]x4 | 4 | 4 | 0.25 | 미확인(자동) |  |  | activation distance |
 | `/from/damage/energy` | block | [num]x38 | 26 | 38 | 0 ~ 14 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
 | `/from/damage/ground_interaction_radius` | block | [num]x38 | 26 | 38 | 0 ~ 1 | 확인 | area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | 게임 파일 주석 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
@@ -144,8 +144,8 @@
 | `/from/inventory/size` | block | [num num]x33 | 33 | 33 | 2 1 ¦ 1 1 ¦ 3 1 ¦ 3 2 ¦ 1 2 ¦ 4 1 ¦ 2 2 | 확인 | 인벤토리 창의 크기. 가로 세로 칸 수 | 게임 파일 주석 |  |
 | `/from/mass` | block | [num]x25 | 25 | 25 | 0.383 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/possibledamageradius` | block | [num]x1 | 1 | 1 | 0.1 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
-| `/from/special` | block | []x11 | 11 | 11 | 예: | 미확인 | 하위에 mode, preparetime, preparecursor |  | {throw_off_always} |
-| `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate | 미확인 | 값 detonate |  |  |
+| `/from/special` | block | []x11 | 11 | 11 | 예: | 추정 | 무기의 특수 사용 설정. 저격 소총은 조준 사격(mode aim, accuracy·damage), 폭약·수류탄은 준비 시간과 기폭(mode detonate) (추정: set/stuff/rifle/sniper/sniper_rifle.pattern 4~11줄 {PrepareCursor "aimed_shot"}, set/ability/avoidance.set 7줄 주석 "resistance to being hit with aimed sniper shot", explosive/explosive.pattern 16~20줄) | 게임 파일 주석 | {throw_off_always} |
+| `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursor` | block | [str]x4 | 4 | 4 | "grenade" | 추정 | 준비 중 커서 (추정: 이름과 값 "grenade") | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparetime` | block | [num]x11 | 11 | 11 | 3.6 ~ 7 | 추정 | 사용 전 준비 시간 (추정: 이름과 값 2~8) | 파일 구조와 값에서 추론 |  |
 | `/from/tag` | block | [str]x41 | 39 | 41 | "smoke" ¦ "size1" ¦ "size2" ¦ "size3" ¦ "ic ap fire at" ¦ "smoke launcher" ¦ "grenade dropboxed antitank mine" ¦ "size4" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
@@ -260,8 +260,8 @@
 | `/from/detonationthickness` | block | [num]x4 | 4 | 4 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/disablericochet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/firingtimeout` | block | [num num]x8 | 8 | 8 | 3.5 0.5 ¦ 2.0 0.5 ¦ 1.5 0.5 ¦ 1.75 0.5 ¦ 1.0 0.5 ¦ 2.5 0.5 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
-| `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
-| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인 | 두 수 |  |  |
+| `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 확인 | 거리에 따라 FiringTimeout(AI 사격 사이 최소 지연)에 곱하는 배수 표 (확인: set/stuff/rifle/.presets 28~32줄 {FiringTimeout 2.0 0.5} 아래 행 주석 ";24m, 1.1s", ";96m, 2.0s". 개발자 변경 기록 docs/09 V4도 "modifies firing timeout based on distance (humans only)") | 게임 파일 주석 |  |
+| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 확인 | 사거리 대비 거리 비율과 FiringTimeout 배수 한 쌍 (확인: set/stuff/mgun/hmgun.pattern 43줄 {0.25 0.0} 주석 ";35m"(사거리 140의 0.25), rifle/.presets 30줄 {0.2 0.55} 주석 ";24m, 1.1s"(2.0 x 0.55)) | 게임 파일 주석 |  |
 | `/from/foresight` | block | [str]x7 | 7 | 7 | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
 | `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x11 | 11 | 11 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
@@ -280,10 +280,10 @@
 | `/from/range` | block | [num num]x7 | 7 | 7 | 120 120 ¦ 140 140 ¦ 70 70 ¦ 130 130 ¦ 80 80 | 추정 | 사거리 두 값 (추정: 원문 주석이 "200m", "285m max". 두 값의 구분은 미확인) | 게임 파일 주석 | 200m ¦ 285m max |
 | `/from/relaxationtime` | block | [num]x5 | 5 | 5 | 0.25 ~ 2 | 미확인 | 값 0.25~2 |  |  |
 | `/from/reloadanimbonus` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  |  |
-| `/from/special` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 mode, preparetime, preparecursor |  | {throw_off_always} |
+| `/from/special` | block | []x6 | 6 | 6 | 예: | 추정 | 무기의 특수 사용 설정. 저격 소총은 조준 사격(mode aim, accuracy·damage), 폭약·수류탄은 준비 시간과 기폭(mode detonate) (추정: set/stuff/rifle/sniper/sniper_rifle.pattern 4~11줄 {PrepareCursor "aimed_shot"}, set/ability/avoidance.set 7줄 주석 "resistance to being hit with aimed sniper shot", explosive/explosive.pattern 16~20줄) | 게임 파일 주석 | {throw_off_always} |
 | `/from/special/accuracy` | block | [num]x2 | 2 | 2 | 1.5 ~ 2.25 | 미확인(자동) |  |  |  |
-| `/from/special/damage` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 미확인 | 값 5. 특수 사격(special) 설정의 하위 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
-| `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate ¦ aim | 미확인 | 값 detonate |  |  |
+| `/from/special/damage` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 추정 | 저격 조준 사격(aimed shot)의 피해 배수로 보인다 (추정: 저격 소총 패턴의 special 안 {mode aim} 옆에 accuracy와 함께 있고 값이 2~5. 소총 피해 70 같은 값에 비해 작다. set/ability/avoidance.set 7줄 주석이 aimed sniper shot을 따로 다룬다) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
+| `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate ¦ aim | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursor` | block | [str]x5 | 5 | 5 | "grenade" ¦ "aimed_shot" ¦ "grenade_sm" | 추정 | 준비 중 커서 (추정: 이름과 값 "grenade") | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursorscene` | block | [str]x2 | 2 | 2 | "aimed_shot_scene" | 미확인(자동) |  |  |  |
 | `/from/special/preparetime` | block | [num]x4 | 4 | 4 | 2 ~ 8 | 추정 | 사용 전 준비 시간 (추정: 이름과 값 2~8) | 파일 구조와 값에서 추론 |  |
@@ -301,7 +301,7 @@
 | `/from/states/unload` | block | [str]x3 | 3 | 3 | "unload" | 추정 | 탄 빼기 상태 이름 | 파일 구조와 값에서 추론 |  |
 | `/from/syncedprojectiles` | block | [num]x3 | 3 | 3 | 1 | 확인 | 멀티플레이에서 탄흔·탄공 생성을 시각적으로 동기화한다. 자동화기에는 쓰지 않는다 | 게임 파일 주석 | not for automatic weapons ¦ visually syncs decal/crater spawn in multiplayer |
 | `/from/tag` | block | [str]x42 | 42 | 42 | 예: "smallitemin1hand grenade dynamite size4 distributable" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
-| `/from/thirdpersonparams` | block | [atom str]x9 | 9 | 9 | inherit "human default" | 미확인 | 값 inherit "human default" |  |  |
+| `/from/thirdpersonparams` | block | [atom str]x9 | 9 | 9 | inherit "human default" | 추정 | 직접 조종 카메라 설정을 고른다. inherit "human default"는 set/tp_control.set의 human 묶음 안 "default" 항목 (추정: tp_control.set 976~979줄 {human (include "third_person/human.inc")}, third_person/human.inc 1줄 {"default"와 카메라 주석. 차량은 같은 꼴로 inherit "vehicle atgun.pak40"을 쓴다) | 파일 구조와 값에서 추론 |  |
 | `/from/throw` | block | []x6 | 6 | 6 | 예: | 추정 | 투척 설정 묶음 (추정: 하위 range, spreading, startangle) | 파일 구조와 값에서 추론 |  |
 | `/from/throw/constantspeed` | block | [num]x1 | 1 | 1 | 13.5 | 미확인(자동) |  |  |  |
 | `/from/throw/range` | block | [num]x6 | 6 | 6 | 6.2 ~ 25 | 추정 | 던지는 거리 (추정: throw의 하위) | 파일 구조와 값에서 추론 | 200m ¦ 285m max |
@@ -371,7 +371,7 @@
 | `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/weapon_bullet/minimumdamagemodifier` | block | [num]x2 | 1 | 2 | 3 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/weapon_bullet/minrange` | block | [num]x1 | 1 | 1 | 3 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
-| `/weapon_bullet/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
+| `/weapon_bullet/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 추정 | 경사 장갑의 각도별 보정 표 (추정: set/small_firearms_accuracy.inc 120줄 매크로 이름 "ap_slope_multiplier"와 주석 "use for AP and for any other Projectiles". 행의 첫 값이 0~90이고 둘째 값이 90에서 99로 커진다) | 게임 파일 주석 |  |
 | `/weapon_bullet/overmatchcalibre/#row` | block | [num num num]x19 | 1 | 19 | 예: 0 0.1 0.0637 | 미확인(자동) |  |  |  |
 | `/weapon_bullet/overmatchdamping` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | [??] (angle - damping) |
 | `/weapon_bullet/overmatchdamping/#row` | block | [num num]x6 | 1 | 6 | 0 1 ¦ 30 1.1 ¦ 55 1.15 ¦ 60 1.45 ¦ 70 4 ¦ 90 6 | 미확인(자동) |  |  |  |
@@ -1507,8 +1507,8 @@
 | `/from/curve` | block | [str]x1 | 1 | 1 | "gun_std" | 확인 | 거리별 피해 곡선 이름. set/ballistics.set을 가리킨다 | 게임 파일 주석 | Refers to ballistic.set ¦ profile for weapon damage over distance. Defined in ballistics.set |
 | `/from/disablericochet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/entity` | block | [str]x12 | 12 | 12 | "bazooka_m1" ¦ "bazooka_m1a1" ¦ "bazooka_m9" ¦ "bazooka_m9a1" ¦ "faustpatrone_30" ¦ "panzerfaust_100" ¦ "panzerfaust_30" ¦ "panzerfaust_60" ¦ "panzershreck_43" ¦ "panzershreck_54" ¦ "piat" ¦ "recoilless_m18" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
-| `/from/falloffmeter` | block | [num]x2 | 2 | 2 | 180 | 미확인 | 값 1~220 |  |  |
-| `/from/falloffstrength` | block | [num]x2 | 2 | 2 | 0.15 | 미확인 | 값 0~0.15 |  |  |
+| `/from/falloffmeter` | block | [num]x2 | 2 | 2 | 180 | 추정 | 탄종별 정확도가 떨어지기 시작하는 거리 (추정: set/stuff/gun/.presets 264줄 {FalloffMeter %range_heat}, 452줄 {FalloffMeter %range_he}. spreading 표가 이 거리 뒤에 급격히 커지고, range_he 등은 accuracy_indirect의 주석이 정확도가 떨어지는 거리라고 적는다) | 게임 파일 주석 |  |
+| `/from/falloffstrength` | block | [num]x2 | 2 | 2 | 0.15 | 추정 | FalloffMeter를 넘은 뒤 정확도가 떨어지는 세기 (추정: set/stuff/gun/.presets 265줄 {FalloffStrength %falloff}, 곡사 accuracy_indirect는 falloff(0.05), 직사 accuracy_direct는 falloff(0.15)를 넣는다) | 파일 구조와 값에서 추론 |  |
 | `/from/filling` | block | [str num]x30 [str]x19 | 49 | 49 | 예: "ammo bazooka" 1 | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/from/fillingvisible` | block | [str]x10 | 10 | 10 | "rocket" ¦ "faustrocket" ¦ "rocket00" | 미확인(자동) |  |  |  |
 | `/from/firesound` | block | [str]x45 | 45 | 45 | 예: "reactive/d1/Shared/Rocket_Launcher/" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
@@ -1690,15 +1690,15 @@
 | `/from/curve` | block | [str]x4 | 4 | 4 | "shotgun" ¦ "bullet_smg" ¦ "bullet_mg" | 확인 | 거리별 피해 곡선 이름. set/ballistics.set을 가리킨다 | 게임 파일 주석 | Refers to ballistic.set ¦ profile for weapon damage over distance. Defined in ballistics.set |
 | `/from/disablericochet` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/from/entity` | block | [str]x1760 | 1760 | 1760 | 예: "compositionb_x4" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
-| `/from/falloffmeter` | block | [num]x1 | 1 | 1 | 100 | 미확인 | 값 1~220 |  |  |
-| `/from/falloffstrength` | block | [num]x1 | 1 | 1 | 0.15 | 미확인 | 값 0~0.15 |  |  |
+| `/from/falloffmeter` | block | [num]x1 | 1 | 1 | 100 | 추정 | 탄종별 정확도가 떨어지기 시작하는 거리 (추정: set/stuff/gun/.presets 264줄 {FalloffMeter %range_heat}, 452줄 {FalloffMeter %range_he}. spreading 표가 이 거리 뒤에 급격히 커지고, range_he 등은 accuracy_indirect의 주석이 정확도가 떨어지는 거리라고 적는다) | 게임 파일 주석 |  |
+| `/from/falloffstrength` | block | [num]x1 | 1 | 1 | 0.15 | 추정 | FalloffMeter를 넘은 뒤 정확도가 떨어지는 세기 (추정: set/stuff/gun/.presets 265줄 {FalloffStrength %falloff}, 곡사 accuracy_indirect는 falloff(0.05), 직사 accuracy_direct는 falloff(0.15)를 넣는다) | 파일 구조와 값에서 추론 |  |
 | `/from/filling` | block | [str num]x207 [str]x135 | 342 | 342 | 예: "bulletrus_100" | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/from/fillingvisible` | block | [str]x8 | 8 | 8 | "grenade" ¦ "shell" ¦ "vpgs41" | 미확인(자동) |  |  |  |
 | `/from/firesound` | block | [str]x325 | 324 | 325 | 예: "cannon/s4/d1/Shared/Cannon_85to100mm_HV/" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
 | `/from/firesoundclose` | block | [str]x346 | 346 | 346 | 예: "cannon/s4/3p/Shared/Cannon_85to100mm_HV/" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
 | `/from/firingtimeout` | block | [num num]x3 | 3 | 3 | 2.5 0.5 ¦ 2.75 0.5 ¦ 1.8 0.4 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
-| `/from/firingtimeoutdistancefactor` | block | []x2 | 2 | 2 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
-| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x4 | 2 | 4 | 0.25 0.5 ¦ 1.0 1.0 ¦ 0.3 0.6 ¦ 0.8 1.0 | 미확인 | 두 수 |  |  |
+| `/from/firingtimeoutdistancefactor` | block | []x2 | 2 | 2 | 예: | 확인 | 거리에 따라 FiringTimeout(AI 사격 사이 최소 지연)에 곱하는 배수 표 (확인: set/stuff/rifle/.presets 28~32줄 {FiringTimeout 2.0 0.5} 아래 행 주석 ";24m, 1.1s", ";96m, 2.0s". 개발자 변경 기록 docs/09 V4도 "modifies firing timeout based on distance (humans only)") | 게임 파일 주석 |  |
+| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x4 | 2 | 4 | 0.25 0.5 ¦ 1.0 1.0 ¦ 0.3 0.6 ¦ 0.8 1.0 | 확인 | 사거리 대비 거리 비율과 FiringTimeout 배수 한 쌍 (확인: set/stuff/mgun/hmgun.pattern 43줄 {0.25 0.0} 주석 ";35m"(사거리 140의 0.25), rifle/.presets 30줄 {0.2 0.55} 주석 ";24m, 1.1s"(2.0 x 0.55)) | 게임 파일 주석 |  |
 | `/from/foresight` | block | [str]x14 | 14 | 14 | "foresight1" ¦ "foresight4" ¦ "foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
 | `/from/gravity` | block | [num]x3 | 3 | 3 | 0.75 ~ 1.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/inventory` | block | []x49 | 49 | 49 | 예: | 추정 | 인벤토리에서의 표시 설정 (추정: 하위 size, weight, fsm) | 파일 구조와 값에서 추론 |  |
@@ -1725,7 +1725,7 @@
 | `/from/parameters/(mod)` | mod | [str]x20 | 20 | 20 | "mp" | 미확인(자동) |  |  |  |
 | `/from/parameters/cursor` | block | [str]x7 | 5 | 7 | "ironsights/grenade" | 확인 | 직접 조종에서 조준할 때의 마우스 커서 | 게임 파일 주석 | rts cursor ¦ mouse cursor for weapon when aiming in direct control |
 | `/from/parameters/cursorreloading` | block | [str]x19 | 7 | 19 | "gun_heat" ¦ "gun_he" ¦ "gun_wp" ¦ "gun_saphe" ¦ "gun_apcnr" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
-| `/from/parameters/falloffstrength` | block | [num]x18 | 18 | 18 | 0 | 미확인 | 값 0~0.15 |  |  |
+| `/from/parameters/falloffstrength` | block | [num]x18 | 18 | 18 | 0 | 추정 | FalloffMeter를 넘은 뒤 정확도가 떨어지는 세기 (추정: set/stuff/gun/.presets 265줄 {FalloffStrength %falloff}, 곡사 accuracy_indirect는 falloff(0.05), 직사 accuracy_direct는 falloff(0.15)를 넣는다) | 파일 구조와 값에서 추론 |  |
 | `/from/parameters/gravity` | block | [num]x6 | 6 | 6 | 0.08 ~ 3 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2 | 2 | 2 | 450 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/parameters/projectiledamagetable` | block | []x3 | 2 | 3 | 예: | 추정 | 거리별 관통력 표 (추정: #row가 두 수의 쌍이고 주석이 탄종 이름) | 파일 구조와 값에서 추론 | adjusted to reduce far shoot ¦ M8 API + 350mph airspeed and reduced curve |
@@ -1748,10 +1748,10 @@
 | `/from/relaxationtime` | block | [num]x2 | 2 | 2 | 0.25 | 미확인 | 값 0.25~2 |  |  |
 | `/from/reloadanimbonus` | block | [num]x2 | 2 | 2 | 57 | 미확인(자동) |  |  |  |
 | `/from/reloadsound` | block | [str]x348 | 346 | 348 | 예: "utility/" | 확인 | 장전음 | 게임 파일 주석 | sound for weapon reload |
-| `/from/special` | block | []x3 | 3 | 3 | 예: | 미확인 | 하위에 mode, preparetime, preparecursor |  | {throw_off_always} |
+| `/from/special` | block | []x3 | 3 | 3 | 예: | 추정 | 무기의 특수 사용 설정. 저격 소총은 조준 사격(mode aim, accuracy·damage), 폭약·수류탄은 준비 시간과 기폭(mode detonate) (추정: set/stuff/rifle/sniper/sniper_rifle.pattern 4~11줄 {PrepareCursor "aimed_shot"}, set/ability/avoidance.set 7줄 주석 "resistance to being hit with aimed sniper shot", explosive/explosive.pattern 16~20줄) | 게임 파일 주석 | {throw_off_always} |
 | `/from/special/accuracy` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  |  |
-| `/from/special/damage` | block | [num]x1 | 1 | 1 | 5 | 미확인 | 값 5. 특수 사격(special) 설정의 하위 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
-| `/from/special/mode` | block | [atom]x1 | 1 | 1 | aim | 미확인 | 값 detonate |  |  |
+| `/from/special/damage` | block | [num]x1 | 1 | 1 | 5 | 추정 | 저격 조준 사격(aimed shot)의 피해 배수로 보인다 (추정: 저격 소총 패턴의 special 안 {mode aim} 옆에 accuracy와 함께 있고 값이 2~5. 소총 피해 70 같은 값에 비해 작다. set/ability/avoidance.set 7줄 주석이 aimed sniper shot을 따로 다룬다) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
+| `/from/special/mode` | block | [atom]x1 | 1 | 1 | aim | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursor` | block | [str]x1 | 1 | 1 | "aimed_shot" | 추정 | 준비 중 커서 (추정: 이름과 값 "grenade") | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursorscene` | block | [str]x1 | 1 | 1 | "aimed_shot_scene" | 미확인(자동) |  |  |  |
 | `/from/special/preparetime` | block | [num]x1 | 1 | 1 | 3.5 | 추정 | 사용 전 준비 시간 (추정: 이름과 값 2~8) | 파일 구조와 값에서 추론 |  |
@@ -1800,7 +1800,7 @@
 | `/weapon_bullet` | block | []x4 | 4 | 4 | 예: | 추정 | 탄을 쏘는 무기 정의의 최상위 블록 (추정: 패턴 파일의 구조) | 파일 구조와 값에서 추론 | Example / Default Settings ¦ required for AT-Grenades with cumaltive damage |
 | `/weapon_bullet/("binocularsview")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/weapon_bullet/(define "binocularsview")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/weapon_bullet/(define "binocularsview")/thirdpersonparams` | block | [atom str]x1 | 1 | 1 | inherit "human default" | 미확인 | 값 inherit "human default" |  |  |
+| `/weapon_bullet/(define "binocularsview")/thirdpersonparams` | block | [atom str]x1 | 1 | 1 | inherit "human default" | 추정 | 직접 조종 카메라 설정을 고른다. inherit "human default"는 set/tp_control.set의 human 묶음 안 "default" 항목 (추정: tp_control.set 976~979줄 {human (include "third_person/human.inc")}, third_person/human.inc 1줄 {"default"와 카메라 주석. 차량은 같은 꼴로 inherit "vehicle atgun.pak40"을 쓴다) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/(define "binocularsview")/thirdpersonparams/level` | block | [num]x1 []x1 | 1 | 2 | 1 | 추정 | 3인칭 조준의 확대 단계 하나. 값은 단계 번호 (추정: 값 1, 2와 하위 camera) | 파일 구조와 값에서 추론 | 2 |
 | `/weapon_bullet/(define "binocularsview")/thirdpersonparams/level/aimer_type` | block | [str]x1 | 1 | 1 | "sniper" | 추정 | 조준 방식 이름 (추정: 값 "sniper") | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/(define "binocularsview")/thirdpersonparams/level/blur_mask` | block | [str]x1 | 1 | 1 | "/texture/common/environment/lens_effects/zoom_vignette_binoculars_mask" | 추정 | 가장자리 흐림 효과의 마스크 텍스처 (추정: 값이 텍스처 경로) | 파일 구조와 값에서 추론 |  |
@@ -1893,8 +1893,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/detonationthickness` | block | [num]x4 | 4 | 4 | 0.5 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/disablericochet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/firingtimeout` | block | [num num]x8 | 8 | 8 | 3.5 0.5 ¦ 2.0 0.5 ¦ 1.5 0.5 ¦ 1.75 0.5 ¦ 1.0 0.5 ¦ 2.5 0.5 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
-| `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
-| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 미확인 | 두 수 |  |  |
+| `/from/firingtimeoutdistancefactor` | block | []x6 | 6 | 6 | 예: | 확인 | 거리에 따라 FiringTimeout(AI 사격 사이 최소 지연)에 곱하는 배수 표 (확인: set/stuff/rifle/.presets 28~32줄 {FiringTimeout 2.0 0.5} 아래 행 주석 ";24m, 1.1s", ";96m, 2.0s". 개발자 변경 기록 docs/09 V4도 "modifies firing timeout based on distance (humans only)") | 게임 파일 주석 |  |
+| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x16 | 6 | 16 | 0.8 1.0 ¦ 1.0 1.0 ¦ 0.3 0.5 ¦ 0.25 0.0 ¦ 0.75 1.0 ¦ 0.25 0.6 ¦ 0.8 0.85 ¦ 0.2 0.55 ¦ 0.4 0.75 ¦ 0.2 0.5 ¦ 0.4 0.8 ¦ 0.6 0.9 | 확인 | 사거리 대비 거리 비율과 FiringTimeout 배수 한 쌍 (확인: set/stuff/mgun/hmgun.pattern 43줄 {0.25 0.0} 주석 ";35m"(사거리 140의 0.25), rifle/.presets 30줄 {0.2 0.55} 주석 ";24m, 1.1s"(2.0 x 0.55)) | 게임 파일 주석 |  |
 | `/from/foresight` | block | [str]x7 | 7 | 7 | "foresight14" ¦ "foresight12" ¦ "foresight3" ¦ "foresight18" ¦ "Foresight11" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
 | `/from/gravity` | block | [num]x1 | 1 | 1 | 2 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/healthdamage` | block | [num]x8 | 8 | 8 | 55 ~ 350 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
@@ -1906,8 +1906,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/lockfiredistancetime` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 조준점이 사거리 밖에 있어도 사격이 허용되는 시간 | 게임 파일 주석 | Time that AIM is allowed to be out of range for before firing is disabled |
 | `/from/mass` | block | [num]x5 | 5 | 5 | 0.3 ~ 3 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/from/minimumdamagemodifier` | block | [num]x6 | 6 | 6 | 1 ~ 45 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
-| `/from/overmatchcalibre` | block | []x7 | 7 | 7 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
-| `/from/overmatchcalibre/#row` | block | [num num num]x105 | 7 | 105 | 예: 0 1 0.00 | 미확인 | 세 수 |  |  |
+| `/from/overmatchcalibre` | block | []x7 | 7 | 7 | 예: | 추정 | 경사 장갑의 각도별 보정 표 (추정: set/small_firearms_accuracy.inc 120줄 매크로 이름 "ap_slope_multiplier"와 주석 "use for AP and for any other Projectiles". 행의 첫 값이 0~90이고 둘째 값이 90에서 99로 커진다) | 게임 파일 주석 |  |
+| `/from/overmatchcalibre/#row` | block | [num num num]x105 | 7 | 105 | 예: 0 1 0.00 | 추정 | 경사각(도로 보임), 유효 두께 배수, 셋째 값(뜻 미확인) (추정: set/small_firearms_accuracy.inc 121~139줄 표. 첫 값 0~90, 둘째 값 0.96~99, 셋째 값 0~1.29) | 파일 구조와 값에서 추론 |  |
 | `/from/overmatchslope` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/overmatchslope/#row` | block | [num num]x2 | 1 | 2 | 0 1 ¦ 90 1 | 미확인(자동) |  |  |  |
 | `/from/parameters` | block | [str]x1 | 1 | 1 | "api" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
@@ -1927,10 +1927,10 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/recoverytime` | block | [num]x4 | 4 | 4 | 0.186915887850467 ~ 2.33644859813084 | 확인 | 발사 간격, 초. "fire rate" 매크로가 60 / rpm으로 계산해 넣는다 | 게임 파일 주석 | increase fuel consumption by 2x |
 | `/from/relaxationtime` | block | [num]x5 | 5 | 5 | 0.25 ~ 2 | 미확인 | 값 0.25~2 |  |  |
 | `/from/reloadanimbonus` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  |  |
-| `/from/special` | block | []x6 | 6 | 6 | 예: | 미확인 | 하위에 mode, preparetime, preparecursor |  | {throw_off_always} |
+| `/from/special` | block | []x6 | 6 | 6 | 예: | 추정 | 무기의 특수 사용 설정. 저격 소총은 조준 사격(mode aim, accuracy·damage), 폭약·수류탄은 준비 시간과 기폭(mode detonate) (추정: set/stuff/rifle/sniper/sniper_rifle.pattern 4~11줄 {PrepareCursor "aimed_shot"}, set/ability/avoidance.set 7줄 주석 "resistance to being hit with aimed sniper shot", explosive/explosive.pattern 16~20줄) | 게임 파일 주석 | {throw_off_always} |
 | `/from/special/accuracy` | block | [num]x2 | 2 | 2 | 1.5 ~ 2.25 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
-| `/from/special/damage` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 미확인 | 값 5. 특수 사격(special) 설정의 하위 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
-| `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate ¦ aim | 미확인 | 값 detonate |  |  |
+| `/from/special/damage` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 추정 | 저격 조준 사격(aimed shot)의 피해 배수로 보인다 (추정: 저격 소총 패턴의 special 안 {mode aim} 옆에 accuracy와 함께 있고 값이 2~5. 소총 피해 70 같은 값에 비해 작다. set/ability/avoidance.set 7줄 주석이 aimed sniper shot을 따로 다룬다) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
+| `/from/special/mode` | block | [atom]x4 | 4 | 4 | detonate ¦ aim | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursor` | block | [str]x5 | 5 | 5 | "grenade" ¦ "aimed_shot" ¦ "grenade_sm" | 추정 | 준비 중 커서 (추정: 이름과 값 "grenade") | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursorscene` | block | [str]x2 | 2 | 2 | "aimed_shot_scene" | 미확인(자동) |  |  |  |
 | `/from/special/preparetime` | block | [num]x4 | 4 | 4 | 2 ~ 8 | 추정 | 사용 전 준비 시간 (추정: 이름과 값 2~8) | 파일 구조와 값에서 추론 |  |
@@ -1950,10 +1950,10 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/states/unload` | block | [str]x3 | 3 | 3 | "unload" | 추정 | 탄 빼기 상태 이름 | 파일 구조와 값에서 추론 |  |
 | `/from/swayparams` | block | []x9 | 9 | 9 | 예: | 추정 | 조준 흔들림 설정 (추정: 하위 bounds의 주석) | 파일 구조와 값에서 추론 |  |
 | `/from/swayparams/bounds` | block | [num num num num]x9 | 9 | 9 | -0.3 0.2 -0.4 0.3 ¦ -0.25 0.2 -0.35 0.3 ¦ -0.35 0.25 -0.45 0.35 | 확인 | 흔들림 한계. x 음의 좌우, y 양의 좌우, z 음의 상하, w 양의 상하 | 게임 파일 주석 | x -> negativeYaw, y -> positiveYaw, z -> negativePitch, w -> positive Pitch (in degree) |
-| `/from/swayparams/speed` | block | [num]x9 | 9 | 9 | 0.1 ~ 0.3 | 미확인 | 값 0.1~0.3. 조준 흔들림 속도로 보이나 확인하지 못함 |  | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
+| `/from/swayparams/speed` | block | [num]x9 | 9 | 9 | 0.1 ~ 0.3 | 확인 | 조준 흔들림 속도 계수 (확인: set/small_firearms_accuracy.inc 237줄 주석 "sway speed coef") | 게임 파일 주석 | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
 | `/from/syncedprojectiles` | block | [num]x3 | 3 | 3 | 1 | 확인 | 멀티플레이에서 탄흔·탄공 생성을 시각적으로 동기화한다. 자동화기에는 쓰지 않는다 | 게임 파일 주석 | not for automatic weapons ¦ visually syncs decal/crater spawn in multiplayer |
 | `/from/tag` | block | [str]x42 | 42 | 42 | 예: "smallitemin1hand grenade dynamite size4 distributable" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
-| `/from/thirdpersonparams` | block | [atom str]x9 | 9 | 9 | inherit "human default" | 미확인 | 값 inherit "human default" |  |  |
+| `/from/thirdpersonparams` | block | [atom str]x9 | 9 | 9 | inherit "human default" | 추정 | 직접 조종 카메라 설정을 고른다. inherit "human default"는 set/tp_control.set의 human 묶음 안 "default" 항목 (추정: tp_control.set 976~979줄 {human (include "third_person/human.inc")}, third_person/human.inc 1줄 {"default"와 카메라 주석. 차량은 같은 꼴로 inherit "vehicle atgun.pak40"을 쓴다) | 파일 구조와 값에서 추론 |  |
 | `/from/throw` | block | []x6 | 6 | 6 | 예: | 추정 | 투척 설정 묶음 (추정: 하위 range, spreading, startangle) | 파일 구조와 값에서 추론 |  |
 | `/from/throw/constantspeed` | block | [num]x1 | 1 | 1 | 13.5 | 미확인(자동) |  |  |  |
 | `/from/throw/range` | block | [num]x6 | 6 | 6 | 6.2 ~ 25 | 추정 | 던지는 거리 (추정: throw의 하위) | 파일 구조와 값에서 추론 | 200m ¦ 285m max |
@@ -2018,7 +2018,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/maxrange` | block | [num]x1 | 1 | 1 | 25 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/weapon_bullet/minimumdamagemodifier` | block | [num]x2 | 1 | 2 | 3 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/weapon_bullet/minrange` | block | [num]x1 | 1 | 1 | 3 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
-| `/weapon_bullet/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
+| `/weapon_bullet/overmatchcalibre` | block | []x1 | 1 | 1 | 예: | 추정 | 경사 장갑의 각도별 보정 표 (추정: set/small_firearms_accuracy.inc 120줄 매크로 이름 "ap_slope_multiplier"와 주석 "use for AP and for any other Projectiles". 행의 첫 값이 0~90이고 둘째 값이 90에서 99로 커진다) | 게임 파일 주석 |  |
 | `/weapon_bullet/overmatchcalibre/#row` | block | [num num num]x19 | 1 | 19 | 예: 0 0.1 0.0637 | 미확인(자동) |  |  |  |
 | `/weapon_bullet/overmatchdamping` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | [??] (angle - damping) |
 | `/weapon_bullet/overmatchdamping/#row` | block | [num num]x6 | 1 | 6 | 0 1 ¦ 30 1.1 ¦ 55 1.15 ¦ 60 1.45 ¦ 70 4 ¦ 90 6 | 미확인(자동) |  |  |  |
@@ -2127,7 +2127,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/curve` | block | [str]x27 | 27 | 27 | "gun_autocannon" ¦ "autorifle" ¦ "shotgun" ¦ "assaultrifle" ¦ "bullet_mg" ¦ "gun_std" ¦ "bullet_smg" | 확인 | 거리별 피해 곡선 이름. set/ballistics.set을 가리킨다 | 게임 파일 주석 | Refers to ballistic.set ¦ profile for weapon damage over distance. Defined in ballistics.set |
 | `/from/damage` | block | [atom]x397 [atom atom]x395 | 379 | 792 | add blastwave ¦ blastwave ¦ fire ¦ cumulative | 추정 | 피해 정의. 값은 피해 종류: blastwave, fire. add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/from/damage/area` | block | [num num]x761 | 377 | 761 | 예: 1.8 3 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
-| `/from/damage/damage` | block | [num]x4 | 4 | 4 | 31 ~ 150 | 미확인 | 수류탄의 damage 하위. 값 31 ~ 150 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
+| `/from/damage/damage` | block | [num]x4 | 4 | 4 | 31 ~ 150 | 확인 | 성형작약(damage cumulative) 수류탄의 관통력, mm (확인: set/stuff/grenade/anti-tank grenade/rpg43.grenade 8줄 주석 "= 75mm of penetration", pwm_l.grenade 8줄 "= 150mm of penetration". 바닐라 4곳 모두 cumulative 안) | 게임 파일 주석 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/from/damage/distance` | block | [num]x4 | 4 | 4 | 0.25 | 미확인(자동) |  |  | activation distance |
 | `/from/damage/energy` | block | [num]x761 | 377 | 761 | 0 ~ 130.05 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
 | `/from/damage/ground_interaction_radius` | block | [num]x761 | 377 | 761 | 0 ~ 2.5 | 확인 | area의 둘째 값에 곱해, 폭발이 지면 이펙트를 낼 만큼 지면에 가까운지 판정한다 | 게임 파일 주석 | value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx ¦ value is multiplied by 2nd value of area to determine is blast is close enough to ground to trigger terrain fx |
@@ -2137,15 +2137,15 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/detonationthickness` | block | [num]x23 | 23 | 23 | 0.5 ~ 1 | 문서 | 맞은 물체의 두께와 견주는 기폭 조건으로 보인다. 개발자 기록은 이 값이 있으면 나무 울타리 같은 얇은 물체에서 포탄이 터지지 않았다고 적는다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
 | `/from/disablericochet` | block | []x56 | 56 | 56 | 예: | 미확인(자동) |  |  |  |
 | `/from/entity` | block | [str]x2224 | 2224 | 2224 | 예: "bazooka_heat_ammo" | 추정 | 이 아이템의 엔티티 이름. entity/inventory의 .def 파일명과 일치한다 (추정: 참조 색인) | 파일 구조와 값에서 추론 | place holder |
-| `/from/falloffmeter` | block | [num]x3 | 3 | 3 | 100 ~ 180 | 미확인 | 값 1~220 |  |  |
-| `/from/falloffstrength` | block | [num]x3 | 3 | 3 | 0.15 | 미확인 | 값 0~0.15 |  |  |
+| `/from/falloffmeter` | block | [num]x3 | 3 | 3 | 100 ~ 180 | 추정 | 탄종별 정확도가 떨어지기 시작하는 거리 (추정: set/stuff/gun/.presets 264줄 {FalloffMeter %range_heat}, 452줄 {FalloffMeter %range_he}. spreading 표가 이 거리 뒤에 급격히 커지고, range_he 등은 accuracy_indirect의 주석이 정확도가 떨어지는 거리라고 적는다) | 게임 파일 주석 |  |
+| `/from/falloffstrength` | block | [num]x3 | 3 | 3 | 0.15 | 추정 | FalloffMeter를 넘은 뒤 정확도가 떨어지는 세기 (추정: set/stuff/gun/.presets 265줄 {FalloffStrength %falloff}, 곡사 accuracy_indirect는 falloff(0.05), 직사 accuracy_direct는 falloff(0.15)를 넣는다) | 파일 구조와 값에서 추론 |  |
 | `/from/filling` | block | [str num]x256 [str]x154 | 410 | 410 | 예: "ammo bazooka" 1 | 추정 | 장전하는 탄의 태그와 탄창 용량 (추정: 값 "ammo rifle_rus" 10) | 파일 구조와 값에서 추론 | 2x 200 rounds ¦ Uses stick magazine on the model. |
 | `/from/fillingvisible` | block | [str]x32 | 32 | 32 | "rocket" ¦ "grenade" ¦ "faustrocket" ¦ "shell" ¦ "rocket00" ¦ "vpgs41" | 미확인(자동) |  |  |  |
 | `/from/firesound` | block | [str]x375 | 374 | 375 | 예: "reactive/d1/Shared/Rocket_Launcher/" | 추정 | 발사음 경로 (추정: 이름과 값) | 파일 구조와 값에서 추론 | Placeholder |
 | `/from/firesoundclose` | block | [str]x374 | 374 | 374 | 예: "reactive/3p/GER/Panzerfaust/" | 추정 | 가까이서 들리는 발사음 경로 (추정: 이름과 값의 3p) | 파일 구조와 값에서 추론 | Placeholder |
 | `/from/firingtimeout` | block | [num num]x30 | 30 | 30 | 2.0 0.5 ¦ 4 0.5 ¦ 3.5 0.5 ¦ 1.5 0.5 ¦ 2.5 0.5 ¦ 3.1 0.5 ¦ 2.9 0.5 ¦ 1.75 0.5 ¦ 2.75 0.5 ¦ 1.8 0.4 | 확인 | 연사 사이의 지연 | 게임 파일 주석 | 3.5 0.5 ¦ delay between bursts |
-| `/from/firingtimeoutdistancefactor` | block | []x62 | 62 | 62 | 예: | 미확인 | 하위에 두 수의 행 |  |  |
-| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x201 | 62 | 201 | 예: 0.2 0.65 | 미확인 | 두 수 |  |  |
+| `/from/firingtimeoutdistancefactor` | block | []x62 | 62 | 62 | 예: | 확인 | 거리에 따라 FiringTimeout(AI 사격 사이 최소 지연)에 곱하는 배수 표 (확인: set/stuff/rifle/.presets 28~32줄 {FiringTimeout 2.0 0.5} 아래 행 주석 ";24m, 1.1s", ";96m, 2.0s". 개발자 변경 기록 docs/09 V4도 "modifies firing timeout based on distance (humans only)") | 게임 파일 주석 |  |
+| `/from/firingtimeoutdistancefactor/#row` | block | [num num]x201 | 62 | 201 | 예: 0.2 0.65 | 확인 | 사거리 대비 거리 비율과 FiringTimeout 배수 한 쌍 (확인: set/stuff/mgun/hmgun.pattern 43줄 {0.25 0.0} 주석 ";35m"(사거리 140의 0.25), rifle/.presets 30줄 {0.2 0.55} 주석 ";24m, 1.1s"(2.0 x 0.55)) | 게임 파일 주석 |  |
 | `/from/foresight` | block | [str]x14 | 14 | 14 | "foresight1" ¦ "foresight4" ¦ "foresight2" | 확인 | 총구 화염과 탄이 나가는 원점이 되는 뼈대 이름 | 게임 파일 주석 | bone for muzzleflash fx ¦ bone in weapon entity to define origin of fx and bullet |
 | `/from/gravity` | block | [num]x199 | 186 | 199 | 0.3 ~ 6 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/healthdamage` | block | [num]x49 | 48 | 49 | 55 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
@@ -2161,8 +2161,8 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/maxrange` | block | [num]x34 | 34 | 34 | 40 ~ 325 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/minimumdamagemodifier` | block | [num]x162 | 162 | 162 | 2 ~ 450 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
 | `/from/minrange` | block | [num]x35 | 35 | 35 | 5 ~ 150 | 추정 | 최소 사거리 (추정: 이름) | 파일 구조와 값에서 추론 |  |
-| `/from/overmatchcalibre` | block | []x28 | 28 | 28 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
-| `/from/overmatchcalibre/#row` | block | [num num num]x397 | 28 | 397 | 예: 0 0.1 0.0637 | 미확인 | 세 수 |  |  |
+| `/from/overmatchcalibre` | block | []x28 | 28 | 28 | 예: | 추정 | 경사 장갑의 각도별 보정 표 (추정: set/small_firearms_accuracy.inc 120줄 매크로 이름 "ap_slope_multiplier"와 주석 "use for AP and for any other Projectiles". 행의 첫 값이 0~90이고 둘째 값이 90에서 99로 커진다) | 게임 파일 주석 |  |
+| `/from/overmatchcalibre/#row` | block | [num num num]x397 | 28 | 397 | 예: 0 0.1 0.0637 | 추정 | 경사각(도로 보임), 유효 두께 배수, 셋째 값(뜻 미확인) (추정: set/small_firearms_accuracy.inc 121~139줄 표. 첫 값 0~90, 둘째 값 0.96~99, 셋째 값 0~1.29) | 파일 구조와 값에서 추론 |  |
 | `/from/overmatchslope` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  |  |
 | `/from/overmatchslope/#row` | block | [num num]x12 | 6 | 12 | 0 1 ¦ 90 1 | 미확인(자동) |  |  |  |
 | `/from/parameters` | block | [str]x12070 | 246 | 12070 | 예: "heat" | 추정 | 탄종별 설정. 문자열이 탄종 이름 (추정: 값 "heat", "clip") | 파일 구조와 값에서 추론 | SPgGr. ¦ Sprgr. |
@@ -2170,13 +2170,13 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/parameters/aimrange` | block | [num]x1 | 1 | 1 | 140 | 확인 | AI의 최대 사격 거리, 미터. {range 15 25}로 적을 때의 첫 값과 같다 | 게임 파일 주석 | meters ¦ Maximum fire range for AI. Expressed as {range 15 25} equals the same thing. |
 | `/from/parameters/cursor` | block | [str]x7 | 5 | 7 | "ironsights/grenade" | 확인 | 직접 조종에서 조준할 때의 마우스 커서 | 게임 파일 주석 | rts cursor ¦ mouse cursor for weapon when aiming in direct control |
 | `/from/parameters/cursorreloading` | block | [str]x64 | 29 | 64 | "gun_ap" ¦ "gun_heat" ¦ "gun_he" ¦ "gun_api" ¦ "gun_wp" ¦ "gun_saphe" ¦ "gun_apcnr" | 확인 | 직접 조종에서 장전 중일 때의 마우스 커서 | 게임 파일 주석 | rts reload cursor ¦ mouse cursor for weapon when reloading in direct control |
-| `/from/parameters/falloffmeter` | block | [num]x1339 | 175 | 1339 | 1 ~ 220 | 미확인 | 값 1~220 |  |  |
-| `/from/parameters/falloffstrength` | block | [num]x1357 | 176 | 1357 | 0 ~ 0.15 | 미확인 | 값 0~0.15 |  |  |
+| `/from/parameters/falloffmeter` | block | [num]x1339 | 175 | 1339 | 1 ~ 220 | 추정 | 탄종별 정확도가 떨어지기 시작하는 거리 (추정: set/stuff/gun/.presets 264줄 {FalloffMeter %range_heat}, 452줄 {FalloffMeter %range_he}. spreading 표가 이 거리 뒤에 급격히 커지고, range_he 등은 accuracy_indirect의 주석이 정확도가 떨어지는 거리라고 적는다) | 게임 파일 주석 |  |
+| `/from/parameters/falloffstrength` | block | [num]x1357 | 176 | 1357 | 0 ~ 0.15 | 추정 | FalloffMeter를 넘은 뒤 정확도가 떨어지는 세기 (추정: set/stuff/gun/.presets 265줄 {FalloffStrength %falloff}, 곡사 accuracy_indirect는 falloff(0.05), 직사 accuracy_direct는 falloff(0.15)를 넣는다) | 파일 구조와 값에서 추론 |  |
 | `/from/parameters/gravity` | block | [num]x986 | 54 | 986 | 0.08 ~ 3.5 | 추정 | 탄도에 적용하는 중력 값. 클수록 많이 휘어 닿는 거리가 줄어든다 (게임 안 확인 2026-10-16: 37mm PaK 36의 HEAT를 2에서 60으로 바꾸자 직접 조준의 조준점이 포 앞 2~4m에 묶였고 쏜 탄이 그 자리에 떨어졌다. 같은 포의 철갑탄은 커서를 따라갔다). 0이면 떨어지지 않는다는 것은 추정(0은 쏘지 않는 binocular·commander_vision에만 있다) | 파일 구조와 값에서 추론 | same as other direct-fire "cannon" type weapons |
 | `/from/parameters/healthdamage` | block | [num]x48 | 18 | 48 | 100 ~ 500 | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/from/parameters/maxrange` | block | [num]x1 | 1 | 1 | 140 | 문서 | 쏠 수 있는 최대 거리 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | 4,55km ¦ 4,3km |
 | `/from/parameters/minimumdamagemodifier` | block | [num]x2605 | 179 | 2605 | 5 ~ 774.518828571428 | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) | In case only generic value is called ¦ Filler defined in grams of TNT |
-| `/from/parameters/overmatchcalibre` | block | []x795 | 130 | 795 | 예: | 미확인 | 하위에 세 수의 행. 구경 대 장갑 두께 보정으로 보이나 확인하지 못함 |  |  |
+| `/from/parameters/overmatchcalibre` | block | []x795 | 130 | 795 | 예: | 추정 | 경사 장갑의 각도별 보정 표 (추정: set/small_firearms_accuracy.inc 120줄 매크로 이름 "ap_slope_multiplier"와 주석 "use for AP and for any other Projectiles". 행의 첫 값이 0~90이고 둘째 값이 90에서 99로 커진다) | 게임 파일 주석 |  |
 | `/from/parameters/overmatchcalibre/#row` | block | [num num num]x11140 | 130 | 11140 | 예: 0 1.0 0.00 | 미확인(자동) |  |  |  |
 | `/from/parameters/overmatchfixed` | block | []x109 | 70 | 109 | 예: | 미확인(자동) |  |  |  |
 | `/from/parameters/overmatchfixed/#row` | block | [num num]x2071 | 70 | 2071 | 예: 0 1.00 | 미확인(자동) |  |  |  |
@@ -2210,10 +2210,10 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/relaxationtime` | block | [num]x3 | 3 | 3 | 0.25 ~ 2.5 | 미확인 | 값 0.25~2 |  |  |
 | `/from/reloadanimbonus` | block | [num]x7 | 7 | 7 | 57 ~ 117 | 미확인(자동) |  |  |  |
 | `/from/reloadsound` | block | [str]x357 | 355 | 357 | 예: "bazooka" | 확인 | 장전음 | 게임 파일 주석 | sound for weapon reload |
-| `/from/special` | block | []x14 | 14 | 14 | 예: | 미확인 | 하위에 mode, preparetime, preparecursor |  | {throw_off_always} |
+| `/from/special` | block | []x14 | 14 | 14 | 예: | 추정 | 무기의 특수 사용 설정. 저격 소총은 조준 사격(mode aim, accuracy·damage), 폭약·수류탄은 준비 시간과 기폭(mode detonate) (추정: set/stuff/rifle/sniper/sniper_rifle.pattern 4~11줄 {PrepareCursor "aimed_shot"}, set/ability/avoidance.set 7줄 주석 "resistance to being hit with aimed sniper shot", explosive/explosive.pattern 16~20줄) | 게임 파일 주석 | {throw_off_always} |
 | `/from/special/accuracy` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  | weapon accuracy, the higher the better ¦ accuracy multiplier from weapon settings |
-| `/from/special/damage` | block | [num]x1 | 1 | 1 | 5 | 미확인 | 값 5. 특수 사격(special) 설정의 하위 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
-| `/from/special/mode` | block | [atom]x5 | 5 | 5 | detonate ¦ aim | 미확인 | 값 detonate |  |  |
+| `/from/special/damage` | block | [num]x1 | 1 | 1 | 5 | 추정 | 저격 조준 사격(aimed shot)의 피해 배수로 보인다 (추정: 저격 소총 패턴의 special 안 {mode aim} 옆에 accuracy와 함께 있고 값이 2~5. 소총 피해 70 같은 값에 비해 작다. set/ability/avoidance.set 7줄 주석이 aimed sniper shot을 따로 다룬다) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
+| `/from/special/mode` | block | [atom]x5 | 5 | 5 | detonate ¦ aim | 추정 | special 안에서는 특수 사용의 종류. aim = 저격 조준 사격, detonate = 기폭 (추정: sniper_rifle.pattern 5줄 {mode aim}, explosive.pattern 19줄 {mode detonate}). spriteview timer 안의 값 play, play loop는 재생 방식으로 보인다 | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursor` | block | [str]x5 | 5 | 5 | "grenade" ¦ "aimed_shot" | 추정 | 준비 중 커서 (추정: 이름과 값 "grenade") | 파일 구조와 값에서 추론 |  |
 | `/from/special/preparecursorscene` | block | [str]x1 | 1 | 1 | "aimed_shot_scene" | 미확인(자동) |  |  |  |
 | `/from/special/preparetime` | block | [num]x12 | 12 | 12 | 3.5 ~ 7 | 추정 | 사용 전 준비 시간 (추정: 이름과 값 2~8) | 파일 구조와 값에서 추론 |  |
@@ -2237,10 +2237,10 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/from/states/unload` | block | [str]x17 | 17 | 17 | "unload" | 추정 | 탄 빼기 상태 이름 | 파일 구조와 값에서 추론 |  |
 | `/from/swayparams` | block | []x2 | 2 | 2 | 예: | 추정 | 조준 흔들림 설정 (추정: 하위 bounds의 주석) | 파일 구조와 값에서 추론 |  |
 | `/from/swayparams/bounds` | block | [num num num num]x2 | 2 | 2 | -0.3 0.2 -0.4 0.3 | 확인 | 흔들림 한계. x 음의 좌우, y 양의 좌우, z 음의 상하, w 양의 상하 | 게임 파일 주석 | x -> negativeYaw, y -> positiveYaw, z -> negativePitch, w -> positive Pitch (in degree) |
-| `/from/swayparams/speed` | block | [num]x2 | 2 | 2 | 0.2 | 미확인 | 값 0.1~0.3. 조준 흔들림 속도로 보이나 확인하지 못함 |  | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
+| `/from/swayparams/speed` | block | [num]x2 | 2 | 2 | 0.2 | 확인 | 조준 흔들림 속도 계수 (확인: set/small_firearms_accuracy.inc 237줄 주석 "sway speed coef") | 게임 파일 주석 | velocity of bullet in meters per second ¦ Global muzzle velocity scale for all weapons in "gun" folder. |
 | `/from/syncedprojectiles` | block | [num]x30 | 29 | 30 | 0 ~ 1 | 확인 | 멀티플레이에서 탄흔·탄공 생성을 시각적으로 동기화한다. 자동화기에는 쓰지 않는다 | 게임 파일 주석 | not for automatic weapons ¦ visually syncs decal/crater spawn in multiplayer |
 | `/from/tag` | block | [str]x1751 [str str]x8 [str str str str]x2 | 1681 | 1761 | 예: "heat_shell size1" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
-| `/from/thirdpersonparams` | block | [atom str]x10 | 10 | 10 | inherit "human default" | 미확인 | 값 inherit "human default" |  |  |
+| `/from/thirdpersonparams` | block | [atom str]x10 | 10 | 10 | inherit "human default" | 추정 | 직접 조종 카메라 설정을 고른다. inherit "human default"는 set/tp_control.set의 human 묶음 안 "default" 항목 (추정: tp_control.set 976~979줄 {human (include "third_person/human.inc")}, third_person/human.inc 1줄 {"default"와 카메라 주석. 차량은 같은 꼴로 inherit "vehicle atgun.pak40"을 쓴다) | 파일 구조와 값에서 추론 |  |
 | `/from/thirdpersonparams/level` | block | [num]x10 | 10 | 10 | 1 | 추정 | 3인칭 조준의 확대 단계 하나. 값은 단계 번호 (추정: 값 1, 2와 하위 camera) | 파일 구조와 값에서 추론 | 2 |
 | `/from/thirdpersonparams/level/aimer_type` | block | [str]x10 | 10 | 10 | "sniper" | 추정 | 조준 방식 이름 (추정: 값 "sniper") | 파일 구조와 값에서 추론 |  |
 | `/from/thirdpersonparams/level/blur_mask` | block | [str]x10 | 10 | 10 | "/texture/common/environment/lens_effects/zoom_vignette_scope_01_mask" | 추정 | 가장자리 흐림 효과의 마스크 텍스처 (추정: 값이 텍스처 경로) | 파일 구조와 값에서 추론 |  |
@@ -2345,7 +2345,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/weapon_bullet/states/aim` | block | [str]x1 | 1 | 1 | "aim" | 추정 | 조준 상태 이름 | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/states/can_aim` | block | [str]x1 | 1 | 1 | "can-aim" | 추정 | 조준 가능 판정 상태 이름 | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/tag` | block | [str]x3 | 3 | 3 | "gun" ¦ "weapon smallitemin1hand field_glass visor distributable" ¦ "visor" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
-| `/weapon_bullet/thirdpersonparams` | block | [atom str]x1 | 1 | 1 | inherit "human default" | 미확인 | 값 inherit "human default" |  |  |
+| `/weapon_bullet/thirdpersonparams` | block | [atom str]x1 | 1 | 1 | inherit "human default" | 추정 | 직접 조종 카메라 설정을 고른다. inherit "human default"는 set/tp_control.set의 human 묶음 안 "default" 항목 (추정: tp_control.set 976~979줄 {human (include "third_person/human.inc")}, third_person/human.inc 1줄 {"default"와 카메라 주석. 차량은 같은 꼴로 inherit "vehicle atgun.pak40"을 쓴다) | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/thirdpersonparams/level` | block | [num]x1 []x1 | 1 | 2 | 1 | 추정 | 3인칭 조준의 확대 단계 하나. 값은 단계 번호 (추정: 값 1, 2와 하위 camera) | 파일 구조와 값에서 추론 | 2 |
 | `/weapon_bullet/thirdpersonparams/level/aimer_type` | block | [str]x1 | 1 | 1 | "sniper" | 추정 | 조준 방식 이름 (추정: 값 "sniper") | 파일 구조와 값에서 추론 |  |
 | `/weapon_bullet/thirdpersonparams/level/blur_mask` | block | [str]x1 | 1 | 1 | "/texture/common/environment/lens_effects/zoom_vignette_binoculars_mask" | 추정 | 가장자리 흐림 효과의 마스크 텍스처 (추정: 값이 텍스처 경로) | 파일 구조와 값에서 추론 |  |

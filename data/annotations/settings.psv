@@ -56,7 +56,7 @@
 **/mapselection|block|확인|판 수에 따라 쓸 맵. "판 수:mapSelection 값"(예 3:2-4 = 3판 뒤 mapSelection 2~4인 맵) (확인: values.set MapSelection)|C
 **/mapborder|block|확인|판 수에 따라 쓰는 맵 경계. "판 수:경계 번호"(예 3:2 = 3판 뒤 경계 2) (확인: values.set MapBorder)|C
 # ---------- 게임 모드 (set/multiplayer/games/*.set)
-/game/order|block|미확인|뜻 미확인(게임 모드 목록의 순서로 보인다). 주석이 없다|S
+/game/order|block|확인|게임 모드 목록에서의 순서 (확인: set/multiplayer/games/gamemode.template 4줄 주석 "specify order in game mode list")|C
 /game/parameters|block|확인|게임 모드 매개변수. "이름=값;…"의 조각마다 한 설정이다 (확인: 게임 모드 .set의 parameters 문자열과 그 주석)|C
 /game/settings/scorefinal|block|문서|전투가 끝나는 점수. 기본 1000이고 올리면 전투가 길어진다고 한다 (문서: 가이드. campaign_capture_the_flag.set 주석은 1000점에 이르는 시간 표를 적는다)|steamcommunity.com/sharedfiles/filedetails/?id=3610240102 (findings-goh.psv)
 /game/settings/scoremin|block|추정|게임 설정 화면에서 고를 수 있는 종료 점수의 최솟값 (추정: 이름과 options의 scoreFinal)|S

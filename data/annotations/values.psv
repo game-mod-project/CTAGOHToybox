@@ -55,9 +55,9 @@
 */("seat_human")|door|타고 내리는 문|S
 */("seat_human")|animation|타고 내리는 동작|S
 */("tracks")|thickness|궤도 장갑 두께 (mm)|S
-*/("tracks")|repair|수리 값 (미확인)|S
+*/("tracks")|repair|궤도 부품(trackleft·trackright)의 수리 시간 (RepairTime에 들어간다)|S
 */("gun")|thickness|포 장갑 두께 (mm)|S
-*/("gun")|repair|수리 값 (미확인)|S
+*/("gun")|repair|포 부품(gun~gun6)의 수리 시간 (RepairTime에 들어간다)|S
 
 # ---------- 무기 (set/stuff/gun/.presets, set/small_firearms_accuracy.inc의 주석)
 */("reload time")|seconds|재장전 시간 (초)|C
@@ -67,7 +67,7 @@
 */("velocity m/s")|he|고폭탄 초속 (m/s)|C
 */("velocity m/s")|apcr|apcr 초속 (정의가 쓰지 않는 인자, 미확인)|S
 */("velocity m/s")|heat|heat 초속 (정의가 쓰지 않는 인자, 미확인)|S
-*/("armor health")|damage|장갑에 주는 최소 피해 배수 (minimumDamageModifier, 미확인)|S
+*/("armor health")|damage|minimumDamageModifier의 기준값 (탄종별 1.0 또는 1.25배. 관통 뒤 부품 피해 계산에 쓰인다)|C
 */("accuracy_indirect")|r1|직사 탄 정확도 반경|C
 */("accuracy_indirect")|r2|곡사 정확도 반경|C
 */("accuracy_indirect")|rmax|최대 사거리에서 곡사 정확도 반경|C
@@ -82,13 +82,13 @@
 */("penetration_medium")|a|30m 관통력 (mm)|S
 */("penetration_medium")|b|100m 관통력 (mm)|S
 */("penetration_medium")|c|155m 관통력 (mm)|S
-*/("penetration_medium")|d|최대 사거리 쪽 관통력 (미확인)|S
+*/("penetration_medium")|d|205m 관통력 (mm). 사거리 지점의 관통력은 c와 이 값 사이를 사거리로 보간한다|S
 */("penetration_medium")|range|사거리 (m)|S
 **/parameters/range|#1|AI가 스스로 교전하는 거리 (m)|A
 **/parameters/range|#2|최대 사거리 (m)|A
 **/weapon_bullet/range|#1|AI가 스스로 교전하는 거리 (m)|A
 **/weapon_bullet/range|#2|최대 사거리 (m)|A
-/from/range|#1|사거리 첫 값 (구분 미확인)|A
+/from/range|#1|AI의 최대 사격 거리 (aimRange와 같다)|C
 /from/range|#2|사거리 둘째 값 (구분 미확인)|A
 **/radiustable/row|#1|거리 (m)|A
 **/radiustable/row|#2|산포 반경|A
@@ -159,7 +159,7 @@
 */limits|#1|아래 한계 각도|A
 */limits|#2|위 한계 각도|A
 */gears|*|전진 {n}단 기어비|A
-*/reargears|#1|첫 값 (미확인)|S
+*/reargears|#1|후진 첫 단 기어비 (Gears처럼 최고 속도 대비 비율로 보인다)|S
 */reargears|#2|후진 최고 속도 비율 (reverse / speed)|S
 **/brain/const|#1|상수 이름|A
 **/brain/const|#2|값|A
@@ -187,7 +187,7 @@
 **/"*"|lvl|등장 레벨|M
 **/"*"|r|봇이 쓸 수 있는 최소 연구 단계 (research_stage)|C
 **/"*"|rm|봇이 쓸 수 있는 최대 연구 단계 (research_stage_max)|C
-**/"*"|cool|cool (뜻 미확인)|S
+**/"*"|cool|교리 유닛을 다시 살 수 있을 때까지의 대기 (charge interval, ci와 같은 자리)|C
 **/"*"|d|교리 이름|S
 **/"*"|#1|항목 이름|S
 **/"*"|requires#1|먼저 연구할 항목|S
@@ -198,10 +198,10 @@
 # ---------- 게임 설정 (하위 프로젝트 B. 근거는 data/annotations/settings.psv와 같다)
 **/bots/startmp|#1|시작 MP 배율 (플레이어 군대 MP에 곱한다)|C
 **/bots/startmp|min#1|최종값의 하한|C
-**/bots/startmp|attackerMultiplier#1|공격 배율 (뜻 미확인)|S
+**/bots/startmp|attackerMultiplier#1|봇 StartMP에 더 곱하는 공격 배율 (수비 유닛 예산은 이 배율을 빼고 계산한다)|C
 **/bots/finishmp|#1|끝 MP 배율|C
 **/bots/finishmp|min#1|최종값의 하한|C
-**/bots/finishmp|attackerMultiplier#1|공격 배율 (뜻 미확인)|S
+**/bots/finishmp|attackerMultiplier#1|봇 FinishMP에 더 곱하는 공격 배율로 보인다 (StartMP의 같은 자리와 같은 꼴)|S
 **/defenselevel/level_1/unlock|games#1|열리는 판 수 (진행률과 먼저 닿는 쪽)|C
 **/defenselevel/level_1/unlock|progress#1|열리는 캠페인 진행률 (0~1, 기간 무제한에서는 쓰지 않는다)|C
 **/defenselevel/level_2/unlock|games#1|열리는 판 수 (진행률과 먼저 닿는 쪽)|C
@@ -273,25 +273,25 @@
 **/support/airstrikes|#3|자원 (SP)|C
 /game/parameters|@points_table_player|플레이어 점수표 "점령 비율/틱당 점수" 목록. 틱당 0.277이면 1000점까지 60분, 0.555면 30분 (파일 주석의 표)|C
 /game/parameters|@points_table_ai|AI 점수표 "점령 비율/틱당 점수" 목록 (꼴은 플레이어 점수표와 같다)|C
-/game/parameters|@points_table|점수표 "점령 비율/점수" 목록 (뜻 미확인)|S
-/game/parameters|@flag_capture_time|깃발 점령 시간 (단위 미확인)|S
-/game/parameters|@flag_release_time|깃발 해제 시간 (단위 미확인)|S
-/game/parameters|@flag_capture_factor|깃발 점령 계수 (뜻 미확인)|S
+/game/parameters|@points_table|점수표 "깃발 점유 비율/더할 점수" 목록|C
+/game/parameters|@flag_capture_time|중립 깃발을 점령하는 시간 (초)|C
+/game/parameters|@flag_release_time|적 깃발을 중립으로 되돌리는 시간 (초)|C
+/game/parameters|@flag_capture_factor|깃발 점령 계수 (gamemode.template 주석은 점령 구역 안 거리가 점령 속도에 주는 영향 0~1, ammunition·evacuation 주석은 유닛 점령 가중치에 곱하는 값)|C
 /game/parameters|@kill_score_multiplier|처치 점수 배수 (뜻 미확인)|S
-/game/parameters|@flag_count|깃발 수 표 (꼴 미확인)|S
-/game/parameters|@scoreStart|시작 점수 (미확인. 게임 안 확인 2에서 본다)|S
+/game/parameters|@flag_count|깃발 수 표 "깃발 수:최대 플레이어 수" (ammunition은 "전체 수:처음 수:최대 플레이어 수")|C
+/game/parameters|@scoreStart|스커미시 배틀존의 양쪽 시작 점수|G
 /game/parameters|@teamsize_cp_factor|팀 크기별 CP 배율 "최대 팀 크기:배율" (1:1.3 = 1대1이면 CP +30%)|C
-**/unitlimits|@officer|officer 분류의 최대 수 (미확인. 게임 안 확인 3에서 본다)|S
-**/unitlimits|@flamer|flamer 분류의 최대 수 (미확인)|S
-**/unitlimits|@sniper|sniper 분류의 최대 수 (미확인)|S
+**/unitlimits|@officer|officer 분류의 최대 수 (스커미시 구매 목록의 Officer n/n)|G
+**/unitlimits|@flamer|flamer 분류의 최대 수 (스커미시 구매 목록의 Flamer n/n)|G
+**/unitlimits|@sniper|sniper 분류의 최대 수 (스커미시 구매 목록의 Sniper n/n)|G
 */("standard_all")|start|시작 MP|S
 */("standard_all")|finish|끝 MP (growTime 동안 늘어난다)|S
 */("standard_all")|doctrine|교리 자원 시작값|S
-*/("standard_all")|cp|시간별 CP "시간:CP,…" (꼴 미확인)|S
+*/("standard_all")|cp|시간별 CP "초:CP,…" (commandPoints에 들어간다. 봇 CP Base의 "seconds : CP"와 같은 꼴로 보인다)|S
 */("custom_all")|start|시작 MP|S
 */("custom_all")|finish|끝 MP (growTime 동안 늘어난다)|S
 */("custom_all")|doctrine|교리 자원 시작값|S
-*/("custom_all")|cp|시간별 CP "시간:CP,…" (꼴 미확인)|S
+*/("custom_all")|cp|시간별 CP "초:CP,…" (commandPoints에 들어간다. 봇 CP Base의 "seconds : CP"와 같은 꼴로 보인다)|S
 
 # ---------- 시야 필드의 거리 매크로 (set/vision/spotting.inc)
 */("spotting")|r|거리 배수. 대상별 기준 거리(사람 100m, 움직이는 차량 100m+50/r 등)에 곱한다|C
