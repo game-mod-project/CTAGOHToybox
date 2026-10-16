@@ -77,7 +77,16 @@ namespace CtaToybox.App
                     var box = new TextBox { Text = Text.Value(v.Edit != null ? v.Edit.New : v.Trace.Text), VerticalAlignment = VerticalAlignment.Top };
                     box.TextChanged += (s, e) => Validate();
                     boxes[i] = box;
-                    if (v.Steps != null)
+                    if (v.Choices != null)
+                    {
+                        // 매크로 호출 이름(E4): 같은 파일에 정의된 이름만 고를 수 있다. 다른 이름은 게임이 시작할 때 꺼진다
+                        var column = new StackPanel();
+                        column.Children.Add(box);
+                        column.Children.Add(new TextBlock { Foreground = Brushes.DimGray, FontSize = 12, TextWrapping = TextWrapping.Wrap,
+                            Text = "고를 수 있는 이름(같은 파일의 정의): " + string.Join(", ", v.Choices) });
+                        line.Children.Add(column);
+                    }
+                    else if (v.Steps != null)
                     {
                         // 판 수 단계표: 칸 아래에 새 값의 풀이를 보인다
                         var column = new StackPanel();

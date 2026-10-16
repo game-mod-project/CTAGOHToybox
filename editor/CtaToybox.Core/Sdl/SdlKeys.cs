@@ -128,7 +128,9 @@ public static partial class SdlCore
             // 매크로 호출. 행의 값에는 인자 전체를 그대로 두고, 인자 안의 블록은 따로 키로도 낸다
             string path = parent + "/(" + head.Text.ToLowerInvariant() + ")", rawPath = raw + "/(" + head.Text + ")";
             var rest = Range(kids, 1);
-            rows.Add(Row(path, rawPath, "macro", rest));
+            var macroRow = Row(path, rawPath, "macro", rest);
+            macroRow.Head = head;
+            rows.Add(macroRow);
             var args = new List<SdlNode>(); var nested = new List<SdlNode>();
             Split(kids, 1, args, nested);
             AddArgBlocks(args, path, rawPath, rows, qualified);

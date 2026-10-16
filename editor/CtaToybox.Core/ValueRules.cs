@@ -32,7 +32,7 @@ namespace CtaToybox.Core
         public static string CheckApplies(string file, string text, Edit edit)
         {
             var results = new System.Collections.Generic.List<EditResult>();
-            var one = new[] { new Edit { Unit = edit.Unit, File = edit.File, Path = edit.Path, Occurrence = edit.Occurrence, Arg = edit.Arg, NamedPath = edit.NamedPath, NamedOccurrence = edit.NamedOccurrence, Old = edit.Old, New = edit.New, Scope = edit.Scope } };
+            var one = new[] { new Edit { Unit = edit.Unit, File = edit.File, Path = edit.Path, Occurrence = edit.Occurrence, Arg = edit.Arg, NamedPath = edit.NamedPath, NamedOccurrence = edit.NamedOccurrence, Old = edit.Old, New = edit.New, Scope = edit.Scope, Kind = edit.Kind } };
             try
             {
                 if (LuaTable.IsLua(file)) LuaPatcher.Apply(text, one, results);

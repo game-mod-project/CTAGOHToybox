@@ -24,8 +24,19 @@ namespace CtaToybox.Core
             if (scope != "shared" && scope != "unit") return "범위는 shared 또는 unit이다: " + scope;
             if (scope == "unit" && value.UnitScopeBlocker != null) return value.UnitScopeBlocker;
             var t = value.Trace;
+            string macroWarning = null;
+            if (t.MacroName)
+            {
+                // 매크로 이름은 같은 파일에 정의된 이름 가운데서만 고른다. 보이지 않는 이름이면 게임이 시작할 때 꺼진다(E4)
+                string name = (newText ?? "").Trim().Trim('"');
+                if (value.Choices == null || !value.Choices.Any(c => string.Equals(c, name, StringComparison.OrdinalIgnoreCase)))
+                    return "바꿀 수 있는 매크로 이름이 아니다: " + name + ". 고를 수 있는 이름: " + string.Join(", ", (value.Choices ?? new List<string>()).Take(20));
+                if ((newText ?? "").Trim() != "\"" + name + "\"") return "매크로 이름은 따옴표로 감싸 쓴다: \"" + name + "\"";
+                if (!MacroSwap.SameFamily(t.Text.Trim('"'), name)) macroWarning = "다른 갈래의 매크로다(" + t.Text.Trim('"') + " → " + name + "). 같은 파일의 정의라 게임은 읽지만 뜻이 다를 수 있다";
+            }
             string error = ValueRules.CheckNewValue(t.File, t.Text, newText, out warning);
             if (error != null) return error;
+            warning = macroWarning ?? warning;
             // 창은 글자를 칠 때마다 검사한다. 원본은 세션 동안 바뀌지 않으므로 마지막에 읽은 파일 하나를 들고 있는다
             if (!string.Equals(checkedFile, t.File, StringComparison.Ordinal))
             {
@@ -35,8 +46,10 @@ namespace CtaToybox.Core
             }
             if (checkedText == null) return null;
             if (!TextCodec.CanEncode(newText, checkedKind)) return "새 값에 이 파일의 인코딩(" + checkedKind + ")으로 쓸 수 없는 글자가 있다: " + newText;
-            return ValueRules.CheckApplies(t.File, checkedText, new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope });
+            return ValueRules.CheckApplies(t.File, checkedText, new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope, Kind = KindOf(t) });
         }
+
+        static string KindOf(TraceValue t) { return t.MacroName ? MacroSwap.Kind : null; }
 
         string checkedFile, checkedText;
         TextKind checkedKind;
@@ -58,7 +71,7 @@ namespace CtaToybox.Core
                 SaveOr(() => { existing.New = oldNew; existing.Enabled = oldEnabled; });
                 return existing;
             }
-            var edit = new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope };
+            var edit = new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope, Kind = KindOf(t) };
             Project.Edits.Add(edit);
             SaveOr(() => Project.Edits.Remove(edit));
             return edit;
@@ -100,7 +113,7 @@ namespace CtaToybox.Core
                     if (scope != "unit" && mine != null) Project.Edits.Remove(mine);
                     if (token == t.Text) { if (target != null) Project.Edits.Remove(target); continue; }
                     if (target != null) { target.New = token; target.Enabled = true; continue; }
-                    Project.Edits.Add(new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = token, Scope = scope == "unit" ? "unit" : "shared" });
+                    Project.Edits.Add(new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = token, Scope = scope == "unit" ? "unit" : "shared", Kind = KindOf(t) });
                 }
                 Project.Save(ProjectPath);
             }
@@ -187,9 +200,9 @@ namespace CtaToybox.Core
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
             if (e.NamedPath != null && !TokenPatcher.SameName(row, e))
                 return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 이름의 항목이 없다: " + e.NamedPath + (e.NamedOccurrence > 0 ? " [" + e.NamedOccurrence + "]" : "") };
-            var node = row != null && e.Arg >= 0 && e.Arg < row.Leaves.Count ? row.Leaves[e.Arg] : null;
+            var node = e.Kind == MacroSwap.Kind ? (row == null ? null : row.Head) : row != null && e.Arg >= 0 && e.Arg < row.Leaves.Count ? row.Leaves[e.Arg] : null;
             if (node == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 자리가 없다" };
-            string rowText = string.Join(" ", row.Leaves.Select(l => l.Text));
+            string rowText = e.Kind == MacroSwap.Kind ? node.Text : string.Join(" ", row.Leaves.Select(l => l.Text));
             bool same = LuaTable.IsLua(file) ? LuaPatcher.SameValue(node.Text, e.Old) : node.Text == e.Old;
             if (!same) return new EditCheck { Edit = e, Status = EditStatus.SourceChanged, Current = node.Text, RowText = rowText, Message = "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text };
             if (e.Scope == "unit")
@@ -206,6 +219,12 @@ namespace CtaToybox.Core
             string warning;
             string rule = e.New == null ? null : ValueRules.CheckNewValue(file, e.Old, e.New, out warning);
             if (rule != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = rule };
+            // 매크로 이름은 그 유닛을 펼칠 때 같은 파일에 정의된 이름이어야 한다(E4)
+            if (e.Kind == MacroSwap.Kind)
+            {
+                string swap = MacroSwap.Check(trace(SourceStack.ToVirtual(e.Unit ?? file)), e);
+                if (swap != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = swap };
+            }
             // 빌드와 같이 미리 적용해 본다: 키 경로를 바꾸는 예전 수정(Q2 전에 만든 블록 한정자 등)은 여기서 걸린다(Q5)
             string applies = e.New == null ? null : ValueRules.CheckApplies(file, source.Text, e);
             if (applies != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = node.Text, RowText = rowText, Message = applies };

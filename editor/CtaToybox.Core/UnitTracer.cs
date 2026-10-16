@@ -17,6 +17,7 @@ namespace CtaToybox.Core
         public string Note { get; set; }        // 편집할 수 없는 이유
         public string NamedPath { get; set; }   // 따옴표 이름 블록 안이면 이름이 든 원문 경로(Edit.NamedPath). 아니면 null
         public int NamedOccurrence { get; set; }
+        public bool MacroName { get; set; }     // 인자 없는 매크로 호출의 이름 자리(Text는 따옴표 포함 이름). 고치면 호출 이름이 바뀐다(E4)
     }
 
     public sealed class TraceRow
@@ -45,6 +46,7 @@ namespace CtaToybox.Core
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
         public List<object> Nodes { get; set; }   // 펼친 노드. 아이템 이름을 모을 때 쓴다
         public List<FromLevel> From { get; set; } = new List<FromLevel>();   // {from}으로 물려받는 원형 파일, 가까운 것부터. 물려받지 않으면 빈 목록
+        public Dictionary<string, List<object>> Defines { get; set; }   // 펼치기가 끝났을 때 보이는 매크로 정의(SdlResolveResult.Defines). 호출 이름 바꾸기(E4)가 쓴다
     }
 
     public sealed class UnitTracer
@@ -163,7 +165,7 @@ namespace CtaToybox.Core
             var resolved = resolver.Resolve(unit);
             var root = new SdlNode("root", "", 0, true);
             root.Children.AddRange(resolved.Nodes);
-            var result = new UnitTraceResult { Unit = unit, Unresolved = resolved.Unresolved, IncludeEdges = resolved.IncludeEdges, Nodes = resolved.Nodes };
+            var result = new UnitTraceResult { Unit = unit, Unresolved = resolved.Unresolved, IncludeEdges = resolved.IncludeEdges, Nodes = resolved.Nodes, Defines = resolved.Defines };
             var rows = KeyLocator.Rows(root);
             var contexts = ContextsOf(rows);
             for (int i = 0; i < rows.Count; i++)

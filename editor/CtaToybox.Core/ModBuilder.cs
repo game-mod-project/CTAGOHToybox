@@ -87,6 +87,14 @@ namespace CtaToybox.Core
             {
                 // 1. 임시 폴더에 고친 파일을 만든다
                 var enabled = project.Edits.Where(e => e.Enabled).ToList();
+                // 매크로 호출 이름 바꾸기(E4): 새 이름이 그 유닛을 펼칠 때 같은 파일에 정의된 이름이어야 한다. 아니면 게임이 시작할 때 꺼진다
+                foreach (var e in enabled.Where(x => x.Kind == MacroSwap.Kind).ToList())
+                {
+                    string swap = MacroSwap.Check((tracer ?? (tracer = new UnitTracer(stack))).Trace(SourceStack.ToVirtual(e.Unit ?? e.File ?? "")), e);
+                    if (swap == null) continue;
+                    report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = swap });
+                    enabled.Remove(e);
+                }
                 var shared = enabled.Where(e => e.Scope != "unit").ToList();
                 var items = new Dictionary<string, WorkItem>(StringComparer.Ordinal);
                 foreach (var group in shared.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))

@@ -16,6 +16,7 @@ namespace CtaToybox.Core
         public List<string> LeafNames { get; set; }   // 잎마다 그것을 감싼 호출의 이름(cp(40)이면 "cp"). 호출 밖이면 null
         public int RawOccurrence { get; set; }   // 같은 원문 경로(따옴표 이름 포함, 대소문자 무시) 가운데 몇 번째인지
         public string Cond { get; set; }         // 감싼 (mod ...) 조건. 조건 밖이면 null
+        public SdlNode Head { get; set; }        // 매크로 호출 행의 이름 토큰(E4). 다른 행은 null
     }
 
     // 한 파일의 행을 한 번만 만들어 (경로, 몇 번째)로 바로 찾는다. 경로는 대소문자를 가리지 않는다(KeyLocator.Find와 같다).
@@ -92,7 +93,7 @@ namespace CtaToybox.Core
                 var leaves = new List<SdlNode>();
                 var names = new List<string>();
                 foreach (var a in row.ArgNodes) AddLeaves(a, leaves, names, null);
-                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves, LeafNames = names, RawOccurrence = rn, Cond = row.Cond });
+                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves, LeafNames = names, RawOccurrence = rn, Cond = row.Cond, Head = row.Head });
             }
             return result;
         }

@@ -19,6 +19,7 @@ namespace CtaToybox.Core
         public List<string> PieceLabels { get; set; }    // 조각마다 뜻(values.psv의 @이름). 모르면 그 자리 null
         public string Steps { get; set; }                // 판 수 단계표의 읽기용 풀이. 아니면 null
         public string Computed { get; set; }             // Lua 수식(예: 2 * 60000)의 계산값 글자. 아니면 null
+        public List<string> Choices { get; set; }        // 매크로 호출 이름 자리면 바꿀 수 있는 이름들(MacroSwap.Choices, 지금 이름 포함). 아니면 null(E4)
         public bool Editable { get { return Trace.Arg >= 0; } }
     }
 
@@ -353,6 +354,12 @@ namespace CtaToybox.Core
             var rows = SourceRows.Of(file, text, out error);
             if (rows == null) return null;
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            if (row != null && e.Kind == MacroSwap.Kind && row.Head != null)
+            {
+                // 매크로 호출 이름 바꾸기(E4): 줄 이름은 그 호출의 주석, 값은 이름 하나다
+                var mn = NotesFor(SourceStack.ToVirtual(e.Unit ?? file));
+                return new EditDescription { Note = mn.Find(row.Path, row.Form, WildcardFor(file, SourceStack.ToVirtual(e.Unit ?? file)), row.RawPath), IsMacroCall = true, ValueLabel = "매크로 이름", RowText = row.Head.Text, ValueCount = 1, BlockNames = KeyLabel.QuotedNames(row.Path, row.RawPath) };
+            }
             if (row == null || e.Arg < 0 || e.Arg >= row.Leaves.Count) return null;
             var texts = row.Leaves.Select(l => l.Text).ToList();
             var labels = valueLabels.Of(row.Path, texts, row.LeafNames, row.RawPath);
@@ -485,7 +492,9 @@ namespace CtaToybox.Core
                 {
                     var row = fileRows[k];
                     // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
-                    if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
+                    // 인자 없는 호출("tier2_standard")은 이름 하나를 값으로 보인다. 그 이름을 같은 파일에 정의된 다른 매크로로 바꾼다(E4)
+                    bool nameOnly = row.Leaves.Count == 0 && row.Head != null && MacroSwap.NameOf(row.RawPath) != null;
+                    if (row.Form != "macro" || (row.Leaves.Count == 0 && !nameOnly) || row.Path.Contains("(define ")) continue;
                     string path = row.Path, rawPath = row.RawPath, keyedPath = keyed == null ? null : keyed[k];
                     string[] at;
                     if (level != null && file == level.File)
@@ -514,6 +523,14 @@ namespace CtaToybox.Core
                         r.FromBlock = block;
                         if (r.FromState == FromLevel.Overridden) r.SummaryLabel = null;
                     }
+                    if (nameOnly)
+                    {
+                        var t = new TraceValue { Text = row.Head.Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = 0, MacroName = true };
+                        var choices = MacroSwap.Choices(traced.Defines, MacroSwap.NameOf(row.RawPath));
+                        if (KeyLocator.IsDisabled(row.Path)) { t.Arg = -1; t.Note = KeyLocator.DisabledNote; }
+                        else if (choices.Count <= 1) { t.Arg = -1; t.Note = MacroSwap.NoChoiceNote; }
+                        r.Values.Add(new ValueView { Trace = t, Name = null, Label = "매크로 이름", Choices = choices, SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = level != null ? FromLevel.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
+                    }
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
                         var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
@@ -538,7 +555,8 @@ namespace CtaToybox.Core
         static bool SameSlot(Edit e, TraceValue v)
         {
             return string.Equals(SourceStack.ToVirtual(e.File ?? ""), v.File, StringComparison.Ordinal)
-                && string.Equals(e.Path, v.KeyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == v.Occurrence && e.Arg == v.Arg;
+                && string.Equals(e.Path, v.KeyPath, StringComparison.OrdinalIgnoreCase) && e.Occurrence == v.Occurrence && e.Arg == v.Arg
+                && (e.Kind == MacroSwap.Kind) == v.MacroName;
         }
 
         // 그 자리에 걸린 수정. '이 유닛만' 수정은 그 유닛의 것만 본다. 둘 다 있으면 '이 유닛만'이 이긴다(빌드와 같다)

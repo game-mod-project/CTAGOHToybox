@@ -46,6 +46,7 @@ public sealed class SdlRow
     public string Args { get; set; }
     public List<SdlNode> ArgNodes { get; set; }   // 이 행의 인자 노드. 편집기가 원본 토큰의 자리를 찾는 데 쓴다
     public string Cond { get; set; }   // 이 행을 감싼 (mod ...) 조건들. 예 (mod "mp"), 겹치면 공백으로 잇는다. 조건 밖이면 null
+    public SdlNode Head { get; set; }  // 매크로 호출 행의 이름 토큰("tier2_standard"). 이름을 바꾸는 수정이 쓴다(E4). 다른 행은 null
 }
 
 public static partial class SdlCore
