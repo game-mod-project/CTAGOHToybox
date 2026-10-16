@@ -1,5 +1,7 @@
 # 스탯 편집기 코어 (구현 순서 1~2단계) Implementation Plan
 
+> **상태(2026-10-17)**: 끝났다(편집기 코어, 하위 프로젝트 A). 아래 체크 상자는 진행 중에 표시하지 않았다. 무엇을 했는지는 git 기록과 `docs/10-backlog.md` "정리하며 지운 것"에 있다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 화면 없이 명령줄로 "원본의 값 하나를 바꾸는 수정"을 프로젝트 파일에 담고, 빌드해서 `mod/CTAToybox/resource`에 써넣고, 게임에서 그 값이 바뀌었는지 확인할 수 있게 한다.

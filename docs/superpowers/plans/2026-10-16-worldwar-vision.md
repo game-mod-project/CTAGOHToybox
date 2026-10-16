@@ -1,5 +1,7 @@
 # 월드워 360° 시야 Implementation Plan
 
+> **상태(2026-10-17)**: 끝났다(`feat/worldwar-vision`). 차종별 시야는 `2026-10-16-e18-class-vision.md`. 아래 체크 상자는 진행 중에 표시하지 않았다. 무엇을 했는지는 git 기록과 `docs/10-backlog.md` "정리하며 지운 것"에 있다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 편집기 프로젝트 "월드워"(WoT식)와 "월드워-워썬더"(비교용)를 만들어 전 지상 유닛의 시야를 360°로 넓히고, 두 방식을 게임에서 확인한다.

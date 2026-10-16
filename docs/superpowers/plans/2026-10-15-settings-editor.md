@@ -1,5 +1,7 @@
 # 게임 설정 편집 (하위 프로젝트 B) Implementation Plan
 
+> **상태(2026-10-17)**: 끝났다(게임 설정, 하위 프로젝트 B). 아래 체크 상자는 진행 중에 표시하지 않았다. 무엇을 했는지는 git 기록과 `docs/10-backlog.md` "정리하며 지운 것"에 있다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 컨퀘스트 자원·길이·전투 규칙·AI(Lua), 스커미시 모드, 난이도 설정 파일을 편집기의 새 종류 "게임 설정"으로 열어, 뜻과 단위를 보며 고치고 빌드한다.

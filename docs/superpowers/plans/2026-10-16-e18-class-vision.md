@@ -1,5 +1,7 @@
 # E18 차종별 시야·탐지 Implementation Plan
 
+> **상태(2026-10-17)**: 끝났다(`feat/e18-class-vision`, 2026-10-17 출력 모드에 빌드). 아래 체크 상자는 진행 중에 표시하지 않았다. 무엇을 했는지는 git 기록과 `docs/10-backlog.md` "정리하며 지운 것"에 있다.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 게임 설정 파일의 따옴표 이름 블록을 복제하는 수정 종류(블록 복제)를 만들고, 그것으로 `vision-preset --classes`가 차종별 시야 필드 셋과 유닛별 필드 바꾸기를 담은 월드워-차종 프로젝트를 만든다.
