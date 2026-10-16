@@ -377,6 +377,22 @@ namespace CtaToybox.Core
             }
         }
 
+        // 수정 점검(EditorSession.CheckEdits)이 빌드와 같은 규칙으로 보는 출력 충돌: 출력 가상 경로마다
+        // 이 도구가 만들지 않은 같은 경로의 파일이 출력 폴더에 있으면 StageItem과 같은 문장을, 아니면 null을 돌려준다.
+        // 목록 파일이 깨졌으면 아무것도 막지 않는다(빌드가 목록 파일 오류로 멈추고 알린다)
+        public Func<string, string> OutputConflicts()
+        {
+            var previous = ReadPrevious(new BuildReport());
+            return virtualPath =>
+            {
+                if (previous == null || string.IsNullOrEmpty(virtualPath)) return null;
+                string relative = "resource/" + virtualPath;
+                string full = FullPath(relative);
+                if (full == null || !File.Exists(full) || previous.ContainsKey(relative)) return null;
+                return "출력 폴더에 이 도구가 만들지 않은 같은 경로의 파일이 있다. 덮어쓰지 않는다: " + relative;
+            };
+        }
+
         // 이전 빌드의 목록 파일에서 지워도 되는 항목(출력 모드의 resource 아래)만 읽는다.
         // 목록 파일이 깨졌으면 null: 그대로 빌드하면 이전 생성물의 기록을 덮어써 다시는 지우지 못하므로 빌드를 멈춘다
         Dictionary<string, BuildManifestFile> ReadPrevious(BuildReport report)

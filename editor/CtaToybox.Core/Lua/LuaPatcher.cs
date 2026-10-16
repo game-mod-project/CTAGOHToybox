@@ -73,15 +73,21 @@ namespace CtaToybox.Core
                 sb.Insert(x.Value.Index, x.Key.New.Trim());
             }
             string patched = sb.ToString();
+            Verify(patched, patches.Select(x => x.Key));
+            return patched;
+        }
 
+        // 고친 파일을 다시 읽어 수정마다 그 자리에 새 값이 있는지 본다. 아니면 InvalidOperationException.
+        // 새 값 검사(CheckNewValue)를 통과한 값으로는 닿지 않는 방어 경로라 따로 떼어 시험한다(Q12)
+        internal static void Verify(string patched, IEnumerable<Edit> edits)
+        {
             var check = LuaTable.Read(patched);
             if (check.Errors.Count > 0) throw new InvalidOperationException("고친 Lua 파일이 다시 읽히지 않는다: " + check.Errors[0]);
-            foreach (var x in patches)
+            foreach (var e in edits)
             {
-                var row = check.Rows.FirstOrDefault(r => r.Occurrence == x.Key.Occurrence && string.Equals(r.Path, x.Key.Path, StringComparison.OrdinalIgnoreCase));
-                if (row == null || row.Value != x.Key.New.Trim()) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다: " + x.Key.Path);
+                var row = check.Rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+                if (row == null || row.Value != e.New.Trim()) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다: " + e.Path);
             }
-            return patched;
         }
 
         static EditResult Result(Edit e, EditStatus status, string message)

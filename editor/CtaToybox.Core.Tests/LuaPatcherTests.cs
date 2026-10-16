@@ -55,6 +55,14 @@ static class LuaPatcherTests
         LuaPatcher.Apply("X = function() end", new[] { E("/x", "1", "2") }, results);
         T.Eq(EditStatus.Invalid, results[0].Status, "an unreadable file reports Invalid instead of writing");
 
+        // 다시 읽기 검증(Q12): 새 값 검사를 통과한 값으로는 닿지 않으므로 검증만 따로 부른다
+        var spawn = E("/conquestconfig.startspawntime/attackmin", "1 * 1000", "5 * 60000");
+        LuaPatcher.Verify(patched, new[] { spawn });
+        T.Pass++;
+        T.Throws<System.InvalidOperationException>(() => LuaPatcher.Verify(patched.Replace("AttackMin = 5 * 60000,", "AttackMin = 5 * ,"), new[] { spawn }), "a patched file that no longer reads throws");
+        T.Throws<System.InvalidOperationException>(() => LuaPatcher.Verify(text, new[] { spawn }), "a slot without the new value throws");
+        T.Throws<System.InvalidOperationException>(() => LuaPatcher.Verify(patched, new[] { E("/conquestconfig.nothing", "1", "2") }), "a slot that is gone throws");
+
         T.True(ValueRules.CheckNewValue(Lua, "1 * 1000", "2 * x", out warning) != null, "ValueRules uses the Lua rules for .lua");
 
         // 빌드: .lua 수정이 resource/script 아래에 쓰인다
