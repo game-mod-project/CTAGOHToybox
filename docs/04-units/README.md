@@ -195,7 +195,7 @@ flowchart LR
 | 매크로 호출 | `("fire rate" rpm(240))`, `("wheel" args "wheelright")` | 이름 있는 인자는 `%rpm`으로, `args` 뒤의 인자는 `%0`, `%1`로 본문에 들어간다 |
 | 산술식 | `(/ 60 %rpm)`, `(+ 5 (* %filler 1))` | 연산자가 앞에 오는 전위 표기. `+ - * /` |
 | 조건 | `(mod "mp" {limit 50})`, `(mod not "mp" {limit 200})` | 전역 게임 모드에 따라 넣거나 뺀다. `"mp"`는 멀티플레이에서만, `not "mp"`는 그 밖에서만(개발사 문서: Men of War II의 [mod 명령](https://docs.bestway.com.ua/foundational-knowledge/basic-knowledge-about-configuration-files/mod-instruction.md). 문서는 `not_mp`로 적는다). 바닐라에는 `"coop"`, `"hardcore"`, `"gameclass:..."`, `"gametype:..."`도 있다(뜻 미확인) |
-| 원형 상속 | `{from "pattern rifle" ...}` | 같은 이름의 `.pattern` 파일에서 물려받는다 |
+| 원형 상속 | `{from "pattern rifle" ...}` | 이름의 낱말로 `set/stuff` 전체에서 찾은 파일(`rifle.pattern`)에서 물려받는다. 맞는 파일이 여럿이면 가까운 조상 폴더의 것으로 본다(추정, 아래) |
 | 숫자 행 | `{100 10}` | 표의 한 줄 |
 | `##` 접두 | `{##damage blastwave ...}` | 에디터가 꺼 둔 블록. 읽을 때 지우지 않지만 게임은 그 값을 쓰지 않는다(개발사 문서: Men of War II의 [설정 파일 기본](https://docs.bestway.com.ua/foundational-knowledge/basic-knowledge-about-configuration-files.md)). 바닐라 99개 파일에 189곳이고, 같은 항목의 옛 값·새 값 쌍은 없다: 매크로가 대신하는 손 계산 값(`he_level_N` 옆의 `##damage` 30곳), 쓰지 않는 장비(`commander_vision` 51곳 중 47곳) 등이다 |
 
@@ -285,7 +285,8 @@ $sr.Dispose()
 ## 한계
 
 - **펼치기 규칙은 추론이다.** include, 매크로, `.presets`의 처리 방식을 파일에서 추론해 구현했다. 유닛 파일 16,230개 중 풀리지 않은 구문이 남은 것은 16개이고 모두 채워지지 않은 매개변수(`%door2` 등)다. include와 매크로 이름은 전부 풀렸다. 이는 규칙이 맞다는 근거지만 엔진과 같은 결과라는 증명은 아니다.
-- **원형 상속은 합치지 않았다.** `{from "pattern rifle" ...}`의 유닛에는 그 파일에 적힌 값만 있다. 원형의 값은 `.pattern` 파일(종류 `pattern`)에 따로 있다. 게임에서는 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다(2026-10-16, `filling` 9인 부모를 `filling` 3인 자식이 물려받자 3/3으로 보였다).
+- **이 문서는 원형 상속을 합치지 않았다.** `{from "pattern rifle" ...}`의 유닛에는 그 파일에 적힌 값만 있다. 원형의 값은 `.pattern` 파일(종류 `pattern`)에 따로 있다. 게임에서는 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다(2026-10-16, `filling` 9인 부모를 `filling` 3인 자식이 물려받자 3/3으로 보였다). 편집기는 합쳐 보인다(E11, [docs/07-stat-editor/README.md](../07-stat-editor/README.md)).
+- **`{from}` 이름을 파일로 잇는 규칙은 추정이다.** 아이템 이름과 같이 파일 이름을 점으로 나눈 낱말로 찾는다: 파일 이름과 같거나(`k98`), 낱말이 같거나(`pattern rifle` → `rifle.pattern`, `knife pattern` → `knife.pattern`), 확장자를 빼면 같다(`bazooka_m1` → `bazooka_m1.weapon`). 폴더로 좁히지 않는다: 모드는 다른 폴더의 원형을 가리킨다(MACE `body/cap1_mengjiang` → `head/light_headgear.pattern`). 바닐라 2,565개와 켜 둔 모드까지 3,761개가 모두 파일로 이어졌다. 맞는 파일이 둘인 이름은 `pattern mgun`(MACE `hmg/mgun.pattern`과 바닐라 `mgun/mgun.pattern`)과 `air_bomb`(같은 폴더의 `.ammo`와 `.pattern`)뿐이다. 편집기는 가까운 조상 폴더의 것, 그다음 확장자가 같은 것을 고른다. 게임이 고르는 파일은 미확인이다(`docs/10-backlog.md` G18).
 - **`(mod ...)` 조건은 풀지 않았다.** 조건 안의 블록은 부모 경로에 그대로 실려 있다. 같은 키가 조건별로 두 번 나올 수 있다. 편집기는 그런 줄에 조건을 보인다("조건: 멀티플레이에서만" 등, 2026-10-16).
 - **매크로 정의의 순서.** 정의가 쓰인 뒤에 나오는 경우는 풀지 못한다. 실제로는 발생하지 않았다.
 - **매크로 본문은 정의할 때 묶여 있던 값과 그 호출의 인자로만 펼친다.** 매크로 안에서 부른 매크로는 바깥 호출의 인자를 받지 못한다(2026-10-16 게임 확인: 채워지지 않은 `%n` 때문에 "Block terminator expected"로 꺼졌다). 정의할 때 묶인 include 인자를 쓰는 것은 추정이고, include가 바깥 인자를 물려주는 것도 확인하지 않았다. 카탈로그의 `Inherited`는 그 호출에 직접 주어지지 않은 값을 쓴 곳이다. 바닐라 유닛 16,230개에는 없고, 유닛 범위 밖 `set/multiplayer/games`에 있다.

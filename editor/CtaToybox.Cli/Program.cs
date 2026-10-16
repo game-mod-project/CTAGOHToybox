@@ -213,6 +213,7 @@ namespace CtaToybox.Cli
                 var index = OpenIndex(stack, settingsPath, output);
                 output.WriteLine(traced.Unit + "  (" + (UnitKind.OfEditor(traced.Unit) ?? "유닛 아님") + ", 계층 " + stack.Find(traced.Unit).Layer + ")");
                 foreach (string u in traced.Unresolved) output.WriteLine("풀리지 않은 구문: " + u);
+                if (traced.From.Count > 0) output.WriteLine(FromLevel.ChainLine(traced.From));
                 if (traced.ReadError != null) output.WriteLine(traced.ReadError);
                 string filter = opt.ContainsKey("filter") ? opt["filter"] : null;
                 // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다(앱의 OpenUnit과 같다)
@@ -220,12 +221,14 @@ namespace CtaToybox.Cli
                 foreach (var row in traced.Rows)
                 {
                     if (filter != null && row.Path.IndexOf(filter, StringComparison.OrdinalIgnoreCase) < 0) continue;
-                    output.WriteLine(row.Path + " [" + row.Occurrence + "]");
+                    output.WriteLine(row.Path + " [" + row.Occurrence + "]" + (row.From == null ? "" : "  (" + FromLevel.LabelOf(row.From, row.FromState, row.FromBlock) + ")"));
                     for (int i = 0; i < row.Values.Count; i++)
                     {
                         var v = row.Values[i];
                         if (v.Arg < 0) { output.WriteLine("  " + i + "=" + v.Text + "  (" + v.Note + ")"); continue; }
-                        string blocker = settingsUnit || SettingFiles.InArea(v.File) ? SettingFiles.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
+                        string blocker = settingsUnit || SettingFiles.InArea(v.File) ? SettingFiles.UnitScopeNote
+                            : row.From != null ? FromLevel.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
+                        if (blocker == null && index.HeirsOf(traced.Unit).Count > 0) blocker = FromLevel.HeirsNote(index.HeirsOf(traced.Unit).Count);
                         output.WriteLine("  " + i + "=" + v.Text + "  ← " + v.File + " " + v.KeyPath + " [" + v.Occurrence + "] 값 " + v.Arg +
                                          "  공유 " + index.UsersOf(v.File).Count + "  이 유닛만: " + (blocker == null ? "가능" : "불가(" + blocker + ")"));
                     }
@@ -292,6 +295,11 @@ namespace CtaToybox.Cli
                 {
                     if (stack.Find(unit) == null) { output.WriteLine("원본에 이 유닛 파일이 없다: " + unit); return 1; }
                     string blocker = IncludeChain.UnitScopeBlocker(new SdlResolver(stack.ReadText).Resolve(unit).IncludeEdges, unit, file.VirtualPath, keyPath);
+                    if (blocker == null)
+                    {
+                        int heirs = OpenIndex(stack, settingsPath, output).HeirsOf(unit).Count;
+                        if (heirs > 0) blocker = FromLevel.HeirsNote(heirs);
+                    }
                     if (blocker != null) { output.WriteLine(blocker); return 1; }
                 }
 

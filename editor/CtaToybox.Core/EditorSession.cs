@@ -39,6 +39,10 @@ namespace CtaToybox.Core
         public bool ContextIsNamesake { get; set; }   // Context가 이름이 같은 줄을 가르는 상위 블록 이름이다(게임 설정, NameNamesakes)
         public string Cond { get; set; }              // 감싼 (mod ...) 조건 원문. 조건 밖이면 null
         public string CondLabel { get { return LabelOf(Cond); } }
+        public string From { get; set; }              // 원형 상속으로 물려받은 줄이면 그 원형 파일. 유닛 자신의 줄이면 null
+        public string FromState { get; set; }         // FromLevel.Inherited | Overridden | Unconfirmed
+        public string FromBlock { get; set; }         // Unconfirmed일 때 자식 쪽에도 있는 감싼 블록
+        public string FromLabel { get { return FromLevel.LabelOf(From, FromState, FromBlock); } }
         public List<ValueView> Values { get; } = new List<ValueView>();
 
         // (mod ...) 조건의 읽히는 이름. 개발사 문서(Men of War II)는 전역 모드를 멀티플레이(mp)와 그 밖으로만 나눈다.
@@ -78,6 +82,7 @@ namespace CtaToybox.Core
         public List<ItemLink> Items { get; set; }
         public List<SdlIncludeEdge> IncludeEdges { get; set; }
         public List<RowView> Roster { get; } = new List<RowView>();   // 가격·로스터 파일에서 이 유닛의 항목 줄
+        public string FromChain { get; set; }         // {from}으로 물려받는 원형 사슬의 안내(FromLevel.ChainLine). 물려받지 않으면 null
     }
 
     public sealed partial class EditorSession : IDisposable
@@ -203,11 +208,15 @@ namespace CtaToybox.Core
             {
                 Unit = traced.Unit, Kind = kind, EditorKind = UnitKind.EditorKindOf(kind, traced.IncludeEdges.Select(e => e.ToFile)), Layer = Stack.Find(traced.Unit).Layer, DisplayName = Names.OfUnit(traced.Unit),
                 Unresolved = traced.Unresolved, ReadError = traced.ReadError, IncludeEdges = traced.IncludeEdges,
-                Items = ItemLinks.ReferencedNames(traced.Nodes).Select(Items.Find).ToList()
+                Items = ItemLinks.ReferencedNames(traced.Nodes).Select(Items.Find).ToList(),
+                FromChain = FromLevel.ChainLine(traced.From),
             };
             foreach (var row in traced.Rows)
             {
-                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Cond = row.Cond, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
+                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Cond = row.Cond, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath),
+                    From = row.From, FromState = row.FromState, FromBlock = row.FromBlock };
+                // 요약은 게임이 쓰는 값을 보이는 곳이라 자식 쪽 값에 가려진 원형의 줄은 넣지 않는다
+                if (row.FromState == FromLevel.Overridden) r.SummaryLabel = null;
                 r.SourceComment = row.Comment;
                 r.TableComment = row.TableComment;
                 foreach (var v in row.Values)
@@ -219,13 +228,17 @@ namespace CtaToybox.Core
                     if (v.Arg >= 0)
                     {
                         vv.SharedBy = Index.UsersOf(v.File).Count;
-                        vv.UnitScopeBlocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
+                        vv.UnitScopeBlocker = row.From != null ? FromLevel.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, v.File, v.KeyPath);
                     }
                     r.Values.Add(vv);
                 }
                 view.Rows.Add(r);
             }
             AddMacroCalls(view, traced, n, summary);
+            int heirs = Index.HeirsOf(traced.Unit).Count;
+            if (heirs > 0)
+                foreach (var r in view.Rows)
+                    foreach (var v in r.Values) if (v.Editable && v.UnitScopeBlocker == null) v.UnitScopeBlocker = FromLevel.HeirsNote(heirs);
             // 게임 설정은 파일 하나가 곧 설정이라 '이 유닛만'이 없다
             if (kind == SettingFiles.Kind)
             {
@@ -420,7 +433,7 @@ namespace CtaToybox.Core
         static string RepeatKey(RowView row)
         {
             var sb = new System.Text.StringBuilder();
-            sb.Append(row.Path).Append('\t').Append(row.Form).Append('\t').Append(row.IsMacroCall);
+            sb.Append(row.Path).Append('\t').Append(row.Form).Append('\t').Append(row.IsMacroCall).Append('\t').Append(row.From);
             foreach (var v in row.Values)
             {
                 var t = v.Trace;
@@ -430,11 +443,18 @@ namespace CtaToybox.Core
             return sb.ToString();
         }
 
-        // 유닛 파일과 include한 파일의 매크로 호출 줄. 펼친 트리에서는 호출이 본문으로 바뀌어 사라지므로 따로 보인다
+        // 유닛 파일과 include한 파일의 매크로 호출 줄. 펼친 트리에서는 호출이 본문으로 바뀌어 사라지므로 따로 보인다.
+        // 물려받는 원형 파일과 그 include의 호출 줄도 원형의 상태와 함께 보인다(E11). 원형 파일 자신의 줄은 맨 위 블록을 from으로 바꾼다
         void AddMacroCalls(UnitView view, UnitTraceResult traced, KeyAnnotations n, SummaryKeys summary)
         {
             var files = new List<string> { traced.Unit };
             foreach (var e in traced.IncludeEdges) if (!files.Contains(e.ToFile)) files.Add(e.ToFile);
+            AddMacroCalls(view, traced, n, summary, files, null);
+            foreach (var level in traced.From) AddMacroCalls(view, traced, n, summary, level.Files, level);
+        }
+
+        void AddMacroCalls(UnitView view, UnitTraceResult traced, KeyAnnotations n, SummaryKeys summary, List<string> files, FromLevel level)
+        {
             foreach (string file in files)
             {
                 if (LuaTable.IsLua(file)) continue;   // Lua 설정에는 매크로 호출이 없다
@@ -442,11 +462,30 @@ namespace CtaToybox.Core
                 if (text == null) continue;
                 var parsed = SdlCore.Parse(text);
                 if (parsed.Errors.Count > 0) continue;
-                foreach (var row in KeyLocator.Rows(parsed.Root))
+                var fileRows = KeyLocator.Rows(parsed.Root);
+                var keyed = level == null ? null : UnitTracer.KeyedPathsOf(fileRows);
+                for (int k = 0; k < fileRows.Count; k++)
                 {
+                    var row = fileRows[k];
                     // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
                     if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
-                    var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Cond = row.Cond, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
+                    string path = row.Path, rawPath = row.RawPath, keyedPath = keyed == null ? null : keyed[k];
+                    if (level != null && file == level.File)
+                    {
+                        path = FromLinks.Reroot(row.Path, "/from");
+                        rawPath = FromLinks.Reroot(row.RawPath, "/from");
+                        keyedPath = FromLinks.Reroot(keyedPath, "/from");
+                        if (path == null) continue;
+                    }
+                    var r = new RowView { Path = path, RawPath = rawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Cond = row.Cond, Note = n.Find(path, row.Form, true, rawPath), SummaryLabel = summary.LabelOf(path, rawPath) };
+                    if (level != null)
+                    {
+                        string block;
+                        r.From = level.File;
+                        r.FromState = level.StateOf(keyedPath, out block);
+                        r.FromBlock = block;
+                        if (r.FromState == FromLevel.Overridden) r.SummaryLabel = null;
+                    }
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
                         var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
@@ -454,7 +493,7 @@ namespace CtaToybox.Core
                         // %이름은 바깥에서 받는 매개변수다. 고치면 매크로가 깨진다
                         if (KeyLocator.IsDisabled(row.Path)) { t.Arg = -1; t.Note = KeyLocator.DisabledNote; }
                         else if (t.Text.StartsWith("%")) { t.Arg = -1; t.Note = "매개변수(" + t.Text + ")라 고칠 수 없다. 이 값을 넘기는 쪽에서 고친다"; }
-                        r.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
+                        r.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = level != null ? FromLevel.UnitScopeNote : IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
                     }
                     view.Rows.Add(r);
                 }

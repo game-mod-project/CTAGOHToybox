@@ -13,7 +13,7 @@
 | `.pattern` | 원형. `{from "pattern 이름"}`이 가리키는 대상 | 64 |
 | `.presets` | 폴더별 매크로 모음. 그 폴더의 파일이 include 없이 쓴다 | 14 |
 
-아이템 대부분은 `{from "pattern 이름" ...}`으로 시작한다. 그 파일에는 원형과 다른 값만 적혀 있고, 원형의 값은 `.pattern` 파일에 있다. 두 값이 합쳐지는 규칙은 확인하지 못했으므로 이 문서는 둘을 따로 싣는다: 아래 "펼친 뒤의 키"에서 유닛 종류 `stuff`가 아이템 파일, `pattern`이 원형 파일이다.
+아이템 대부분은 `{from "pattern 이름" ...}`으로 시작한다. 그 파일에는 원형과 다른 값만 적혀 있고, 원형의 값은 `.pattern` 파일에 있다. 게임은 자식 파일의 같은 키를 쓰고 자식에 없는 키는 원형의 것을 쓴다(2026-10-16 게임 확인). 감싼 블록만 자식에 있을 때와 여러 번 적는 키의 합치기는 확인하지 못했으므로 이 문서는 둘을 따로 싣는다: 아래 "펼친 뒤의 키"에서 유닛 종류 `stuff`가 아이템 파일, `pattern`이 원형 파일이다. 편집기는 둘을 합쳐 보인다.
 
 탄속, 발사 간격, 장전 시간은 대개 `("velocity" mps(830))` 같은 매크로로 적혀 있고 `.presets`의 정의가 실제 키(`speed`, `recoveryTime`, `rechargeTime`)로 바꾼다.
 
@@ -58,7 +58,7 @@
 | `/bullet/trace/view/scaley` | block | [num]x78 | 78 | 78 | 0.1 ~ 0.2 | 미확인(자동) |  |  |  |
 | `/bullet/view` | block | [str]x36 | 36 | 36 | 예: "300mm_fin_mortar_he" | 추정 | 보이는 모델 엔티티 이름 (추정: 값이 entity와 같은 이름인 경우가 많음) | 파일 구조와 값에서 추론 |  |
 | `/bullet/view/tail` | block | [str str]x23 | 23 | 23 | "flare_tail_red" "fxshell" ¦ "flare_tail_green" "fxshell" ¦ "shell_tail" "tail" ¦ "hook_tail" "tail" | 추정 | 탄의 꼬리 이펙트. 이펙트 이름과 붙이는 뼈대 (추정: 값 "shell_tail" "tail") | 파일 구조와 값에서 추론 |  |
-| `/from` | block | [str]x398 | 398 | 398 | 예: "pattern rpg_heat_ammo" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x398 | 398 | 398 | 예: "pattern rpg_heat_ammo" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/("ap_blast")` | macro | [atom num]x78 | 78 | 78 | 예: args 1.1 | 미확인(자동) |  |  |  |
 | `/from/("apcr_blast")` | macro | [atom num]x23 | 23 | 23 | args 0.78 ¦ args 0.4 ¦ args 0.35 ¦ args 0.9 ¦ args 0.27 ¦ args 0.5 ¦ args 0.8 ¦ args 0.86 | 미확인(자동) |  |  |  |
 | `/from/("he_auto_blast")` | macro | [atom num]x15 | 15 | 15 | args 0.6 ¦ args 0.65 ¦ args 1.2 ¦ args 0.55 | 미확인(자동) |  |  |  |
@@ -132,7 +132,7 @@
 
 | 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |
 |---|---|---|---|---|---|---|---|---|---|
-| `/from` | block | [str]x39 | 39 | 39 | "pattern smoke" ¦ "pattern anti-tank" ¦ "pattern anti-personnel" ¦ "pattern throwable" ¦ "pattern anti-personnel_contact" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x39 | 39 | 39 | "pattern smoke" ¦ "pattern anti-tank" ¦ "pattern anti-personnel" ¦ "pattern throwable" ¦ "pattern anti-personnel_contact" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/damage` | block | [atom atom]x23 [atom]x19 | 26 | 42 | add blastwave ¦ blastwave ¦ cumulative | 추정 | 피해 정의. 값은 피해 종류: blastwave, fire. add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/from/damage/area` | block | [num num]x38 | 26 | 38 | 4 10 ¦ 4.5 6 ¦ 3 5 ¦ 0.25 0.35 ¦ 0.01 0.25 ¦ 4 6 ¦ 1 2 ¦ 0.4 0.55 ¦ 0.6 2 ¦ 0.25 0.4 ¦ 3 6 ¦ 2.5 5.5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
 | `/from/damage/damage` | block | [num]x4 | 4 | 4 | 31 ~ 150 | 미확인 | 수류탄의 damage 하위. 값 31 ~ 150 |  | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
@@ -185,7 +185,7 @@
 
 | 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |
 |---|---|---|---|---|---|---|---|---|---|
-| `/from` | block | [str]x16 | 16 | 16 | "pattern antitank" ¦ "pattern antipersonnel" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x16 | 16 | 16 | "pattern antitank" ¦ "pattern antipersonnel" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/damage` | block | [atom atom]x8 [atom]x5 | 5 | 13 | add blastwave ¦ blastwave | 추정 | 피해 정의. 값은 피해 종류: blastwave, fire. add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 | no blast damage. Used to ensure ground detonation fx are played ¦ = 41mm of penetration |
 | `/from/damage/area` | block | [num num]x13 | 5 | 13 | 0.6 2 ¦ 3 5 ¦ 6 8 ¦ 2.5 5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |
 | `/from/damage/energy` | block | [num]x13 | 5 | 13 | 0.25 ~ 1 | 추정 | 폭발 에너지. blast.inc의 매크로가 탄 무게와 작약량으로 계산한다 (추정: set/blast.inc의 식) | 파일 구조와 값에서 추론 | = 25mm of penetration ¦ = 140mm of penetration |
@@ -213,7 +213,7 @@
 | `/bullet/mass` | block | [num]x1 | 1 | 1 | 2.75 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/bullet/possibledamageradius` | block | [num]x4 | 4 | 4 | 3 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/bullet/tag` | block | [str]x8 | 8 | 8 | "ammo rocketlauncher heat_shell heat dropboxed pierce no_ricochet" ¦ "ammo shell all_he fg dropboxed no_ricochet" ¦ "ammo rocketlauncher heat_shell dropboxed pierce no_ricochet" ¦ "ammo shell fg wp smoke wp_size1 dropboxed no_ricochet" ¦ "bomb fg itemin2hands build_in" ¦ "dropboxed distributable" ¦ "rocketselector rocketlauncher pierce no_ricochet" ¦ "ammo itemin2hands" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
-| `/from` | block | [str]x43 | 43 | 43 | "pattern generic" ¦ "pattern throwable" ¦ "pattern bullet" ¦ "pattern rifle" ¦ "pattern mgun_generic" ¦ "pattern he" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x43 | 43 | 43 | "pattern generic" ¦ "pattern throwable" ¦ "pattern bullet" ¦ "pattern rifle" ¦ "pattern mgun_generic" ¦ "pattern he" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/("accuracy_hmg")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/("accuracy_mg")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/("accuracy_pistol")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1479,7 +1479,7 @@
 
 | 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |
 |---|---|---|---|---|---|---|---|---|---|
-| `/from` | block | [str]x53 | 53 | 53 | "pattern reactive" ¦ "pattern mortar" ¦ "pattern rpg_weapon" ¦ "bazooka_m1" ¦ "weapon panzershreck_43" ¦ "127mm_hvar_4" ¦ "50mm_rocketprojector" ¦ "76mm_rp3_x2" ¦ "82mm_bm8_24" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x53 | 53 | 53 | "pattern reactive" ¦ "pattern mortar" ¦ "pattern rpg_weapon" ¦ "bazooka_m1" ¦ "weapon panzershreck_43" ¦ "127mm_hvar_4" ¦ "50mm_rocketprojector" ¦ "76mm_rp3_x2" ¦ "82mm_bm8_24" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/("aerial gravity")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/from/("armor health")` | macro | [call:damage]x5 | 5 | 5 | damage ( 300 ) ¦ damage ( 250 ) | 미확인(자동) |  |  |  |
 | `/from/("fire rate")` | macro | [call:rpm]x19 | 19 | 19 | rpm ( 36 ) ¦ rpm ( 80 ) ¦ rpm ( 600 ) ¦ rpm ( 60 ) ¦ rpm ( 288 ) ¦ rpm ( 120 ) ¦ rpm ( 106 ) ¦ rpm ( 33.3 ) ¦ rpm ( 37.5 ) ¦ rpm ( 240 ) | 미확인(자동) |  |  |  |
@@ -1565,7 +1565,7 @@
 | 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |
 |---|---|---|---|---|---|---|---|---|---|
 | `/bullet` | block | []x1 | 1 | 1 | 예: | 추정 | 탄 정의의 최상위 블록 (추정: bullet.pattern) | 파일 구조와 값에서 추론 | required for AT-Grenades with cumaltive damage |
-| `/from` | block | [str]x2016 | 2016 | 2016 | 예: "pattern explosive" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x2016 | 2016 | 2016 | 예: "pattern explosive" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/("100_rus_slope_multipliers")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/from/("105_slope_multipliers")` | macro | []x11 | 11 | 11 | 예: | 미확인(자동) |  |  |  |
 | `/from/("122_rus_slope_multipliers")` | macro | []x4 | 4 | 4 | 예: | 미확인(자동) |  |  |  |
@@ -1873,7 +1873,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/mass` | block | [num]x1 | 1 | 1 | 2.75 | 추정 | 질량. 차량·무기의 원문 주석이 kg 단위로 적고 있다 (추정: 주석이 값의 내역을 kg으로 설명). 탄약 파일(bullet)에서는 한 발의 무게(kg)이고 인벤토리 툴팁의 무게 = 수량 × mass다 (게임 안 확인 2026-10-16: mgun_ger.belt.ammo를 0.011로 바꾸자 7.92mm 2850발이 31.4kg, 1000발이 11.0kg) | 게임 파일 주석 | with water ¦ empty weight |
 | `/bullet/possibledamageradius` | block | [num]x4 | 4 | 4 | 3 | 추정 | 피해가 미칠 수 있는 반경 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/bullet/tag` | block | [str]x8 | 8 | 8 | "ammo rocketlauncher heat_shell heat dropboxed pierce no_ricochet" ¦ "ammo shell all_he fg dropboxed no_ricochet" ¦ "ammo rocketlauncher heat_shell dropboxed pierce no_ricochet" ¦ "ammo shell fg wp smoke wp_size1 dropboxed no_ricochet" ¦ "bomb fg itemin2hands build_in" ¦ "dropboxed distributable" ¦ "rocketselector rocketlauncher pierce no_ricochet" ¦ "ammo itemin2hands" | 추정 | 분류 태그 문자열. 게임 코드와 이펙트 코드가 읽는다 (추정: 원문 주석 "game code", "fx code") | 게임 파일 주석 | game code ¦ fx code |
-| `/from` | block | [str]x43 | 43 | 43 | "pattern generic" ¦ "pattern throwable" ¦ "pattern bullet" ¦ "pattern rifle" ¦ "pattern mgun_generic" ¦ "pattern he" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x43 | 43 | 43 | "pattern generic" ¦ "pattern throwable" ¦ "pattern bullet" ¦ "pattern rifle" ¦ "pattern mgun_generic" ¦ "pattern he" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/from/accuracybymotionk` | block | [num]x3 | 3 | 3 | 0.1 ~ 0.9 | 추정 | 움직이는 동안의 명중률에 곱하는 계수 (추정: 이름. 값 0.1 ~ 0.9) | 파일 구조와 값에서 추론 |  |
 | `/from/aimingtolerance` | block | [num]x6 | 6 | 6 | 1 ~ 3 | 확인 | AI가 사격을 허용받는 조준 오차, 도 | 게임 파일 주석 | Measure in degrees of IK error when AI is allowed to shoot ¦ degrees |
@@ -2102,7 +2102,7 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/bullet/trace/view/scaley` | block | [num]x78 | 78 | 78 | 0.1 ~ 0.2 | 미확인(자동) |  |  |  |
 | `/bullet/view` | block | [str]x36 | 36 | 36 | 예: "300mm_fin_mortar_he" | 추정 | 보이는 모델 엔티티 이름 (추정: 값이 entity와 같은 이름인 경우가 많음) | 파일 구조와 값에서 추론 | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/bullet/view/tail` | block | [str str]x23 | 23 | 23 | "flare_tail_red" "fxshell" ¦ "flare_tail_green" "fxshell" ¦ "shell_tail" "tail" ¦ "hook_tail" "tail" | 추정 | 탄의 꼬리 이펙트. 이펙트 이름과 붙이는 뼈대 (추정: 값 "shell_tail" "tail") | 파일 구조와 값에서 추론 |  |
-| `/from` | block | [str]x2522 | 2522 | 2522 | 예: "pattern rpg_heat_ammo" | 추정 | 원형(pattern)에서 물려받는 아이템 정의. 첫 문자열 "pattern 이름"이 같은 이름의 .pattern 파일을 가리킨다 (추정: 참조 색인. 물려받은 값과 합쳐지는 규칙은 미확인) | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
+| `/from` | block | [str]x2522 | 2522 | 2522 | 예: "pattern rpg_heat_ammo" | 추정 | 원형(물려받을 파일)의 이름. 이 파일은 그 원형의 값을 물려받고 자기 값을 더한다. 자식 파일의 같은 키가 이기고, 자식에 없는 키는 원형의 것을 쓴다 (게임 안 확인 2026-10-16: filling 9인 사본을 원형으로 둔 자식이 filling 3을 적자 3/3, 무기 이름은 원형 것). 원형의 모드 수정은 물려받는 파일에도 닿는다 (게임 안 확인 2026-10-14). 이름은 set/stuff 전체에서 파일 이름의 낱말로 찾는다: "pattern rifle" → rifle.pattern, "bazooka_m1" → bazooka_m1.weapon (추정: 바닐라와 켜 둔 모드의 3,761개가 모두 이어짐). 감싼 블록만 자식에 있을 때와 여러 번 적는 키(tag)의 합치기는 미확인 | 파일 구조와 값에서 추론 | used for Multi MG half tracks ¦ "" |
 | `/from/(mod)` | mod | [atom str]x15 | 15 | 15 | not "mp" | 미확인(자동) |  |  |  |
 | `/from/##damage` | block | [atom atom]x18 [atom]x12 | 12 | 30 | add blastwave ¦ blastwave | 추정 | 피해 정의 한 건. 값은 피해 종류(blastwave, fire 등)이고 add가 붙으면 추가 피해 (추정: 탄약 파일의 {damage add blastwave ...}) | 파일 구조와 값에서 추론 |  |
 | `/from/##damage/area` | block | [num num]x30 | 12 | 30 | 예: 0.4 0.5 | 추정 | 피해 반경 두 값. 안쪽과 바깥쪽으로 보인다 (추정: 값 0.4 0.5, 9 14) | 파일 구조와 값에서 추론 |  |

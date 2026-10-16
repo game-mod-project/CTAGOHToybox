@@ -33,6 +33,7 @@ namespace CtaToybox.App
             }
             UnitTitle.Text = unit.DisplayName ?? unit.Unit.Substring(unit.Unit.LastIndexOf('/') + 1);
             UnitInfo.Text = UnitKind.Label(unit.EditorKind ?? unit.Kind) + " · 출처 " + session.LayerLabel(unit.Layer) + " · " + unit.Unit +
+                (unit.FromChain == null ? "" : "\n" + unit.FromChain) +
                 (unit.ReadError == null ? "" : "\n" + unit.ReadError) +
                 (unit.Unresolved.Count == 0 ? "" : "\n풀리지 않은 구문 " + unit.Unresolved.Count + "개: " + string.Join(", ", unit.Unresolved.Take(5)));
             ItemList.ItemsSource = unit.Items.Select(ItemLinkItemOf).ToList();
@@ -65,7 +66,7 @@ namespace CtaToybox.App
             else if (first == null) group = Text.NotEditableGroup;
             else if (summary) group = row.SummaryLabel;
             else if (row.IsMacroCall) group = "매크로 호출 · " + first.Trace.File;
-            else group = (first.Trace.File == unit.Unit ? "이 유닛의 파일 · " : "") + first.Trace.File + (first.SharedBy > 1 ? "  (유닛 " + first.SharedBy + "개가 같이 씀)" : "");
+            else group = (row.From != null ? "원형 · " : first.Trace.File == unit.Unit ? "이 유닛의 파일 · " : "") + first.Trace.File + (first.SharedBy > 1 ? "  (유닛 " + first.SharedBy + "개가 같이 씀)" : "");
             int order;
             if (!groupOrder.TryGetValue(group, out order)) { order = groupOrder.Count; groupOrder[group] = order; }
 
@@ -85,7 +86,7 @@ namespace CtaToybox.App
                 Name = Text.RowName(row),
                 Label = summary ? row.SummaryName(Text.RowName(row)) : Text.RowName(row),
                 Key = "키 " + (row.RawPath ?? row.Path),
-                Context = Text.ContextLine(summary ? null : row.Context, row.Repeats, row.CondLabel),
+                Context = Text.ContextLine(summary ? null : row.Context, row.Repeats, row.CondLabel, row.FromLabel),
                 Values = Text.ValuesLine(row),
                 NewValues = newValues,
                 Note = Text.RowNote(row),
