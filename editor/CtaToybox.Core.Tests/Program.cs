@@ -79,6 +79,7 @@ static class Program
             ("ResolverOrigin", ResolverOriginTests.Run),
             ("FromLinks", FromLinksTests.Run),
             ("FromInheritance", FromInheritanceTests.Run),
+            ("FromDisplay", FromDisplayTests.Run),
             ("UnitIndex", UnitIndexTests.Run),
             ("IncludeChain", IncludeChainTests.Run),
             ("UnitTracer", UnitTracerTests.Run),

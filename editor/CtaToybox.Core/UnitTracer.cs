@@ -141,6 +141,12 @@ namespace CtaToybox.Core
                 var first = row.Leaves.Count > 0 ? row.Leaves[0] : null;
                 bool part = slash > 0 && PartBlocks.Contains(seg) && first != null && first.Kind == "str";
                 string keyed = parentKeyed + "/" + seg + (part ? "\"" + first.Text.Trim('"').Replace('/', '|') + "\"" : "");
+                // 따옴표 이름 블록({"head" 1.3})은 "*"로 묶여 있으므로 원문의 이름으로 가른다(E15)
+                if (seg == "\"*\"" && row.RawPath != null)
+                {
+                    string raw = row.RawPath.Substring(FromLevel.LastSlash(row.RawPath) + 1);
+                    if (raw.Length >= 2 && raw[0] == '"') keyed = parentKeyed + "/\"" + raw.Trim('"').ToLowerInvariant().Replace('/', '|') + "\"";
+                }
                 latest[row.Path] = keyed;
                 result.Add(keyed);
             }
@@ -178,13 +184,17 @@ namespace CtaToybox.Core
         // 이름을 찾지 못하거나 같은 파일이 다시 나오면 풀리지 않은 구문으로 알리고 멈춘다
         void AddInherited(UnitTraceResult result, List<KeyRow> ownRows, SdlResolver resolver)
         {
+            // 원형 상속은 아이템 파일(set/stuff)의 규칙이다. 그 밖의 {from}은 펼치지도 풀리지 않은 구문으로 알리지도 않는다(E15)
+            if (!result.Unit.StartsWith("set/stuff/", StringComparison.Ordinal)) return;
             string name = FromLinks.NameOf(ownRows);
             if (name == null) return;
             string rawTop = ownRows.First(r => r.Path == Top && r.Occurrence == 0).RawPath;
             var below = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
-            foreach (string p in KeyedPathsOf(ownRows)) FromLevel.Count(below, p);
+            var plain = new HashSet<string>(StringComparer.OrdinalIgnoreCase);   // 조건 밖에서도 나온 경로
+            var ownKeyed = KeyedPathsOf(ownRows);
+            for (int i = 0; i < ownRows.Count; i++) { FromLevel.Count(below, ownKeyed[i]); if (ownRows[i].Cond == null) plain.Add(ownKeyed[i]); }
             foreach (string f in new[] { result.Unit }.Concat(result.IncludeEdges.Select(e => e.ToFile)).Distinct())
-                foreach (string p in MacroCallPaths(f, false)) FromLevel.Count(below, p);
+                foreach (var c in MacroCalls(f, false, null)) { FromLevel.Count(below, c.Keyed); if (c.Cond == null) plain.Add(c.Keyed); }
             var seen = new HashSet<string>(StringComparer.Ordinal) { result.Unit };
             string current = result.Unit;
             while (name != null)
@@ -196,13 +206,18 @@ namespace CtaToybox.Core
                 var root = new SdlNode("root", "", 0, true);
                 root.Children.AddRange(resolved.Nodes);
                 var rows = KeyLocator.Rows(root);
-                var level = new FromLevel { File = parent, Name = name, Below = new Dictionary<string, int>(below, StringComparer.OrdinalIgnoreCase), Own = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase) };
+                var level = new FromLevel { File = parent, Name = name, Below = new Dictionary<string, int>(below, StringComparer.OrdinalIgnoreCase), Own = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase),
+                    BelowPlain = new HashSet<string>(plain, StringComparer.OrdinalIgnoreCase), RawTop = rawTop };
                 level.Files = new[] { parent }.Concat(resolved.IncludeEdges.Select(e => e.ToFile)).Distinct().ToList();
                 level.Candidates = Links.Candidates(current, name);
+                foreach (var kv in resolved.Defines ?? new Dictionary<string, List<object>>()) level.MacroKeys[kv.Key] = BodyKeys(kv.Value);
                 var keyed = KeyedPathsOf(rows).Select(p => FromLinks.Reroot(p, Top)).ToList();
-                foreach (string p in keyed) if (p != null) FromLevel.Count(level.Own, p);
+                AddIncludeAt(level, rows, keyed, rawTop);
+                var ownPlain = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                for (int i = 0; i < rows.Count; i++)
+                    if (keyed[i] != null) { FromLevel.Count(level.Own, keyed[i]); if (rows[i].Cond == null) ownPlain.Add(keyed[i]); }
                 foreach (string f in level.Files)
-                    foreach (string p in MacroCallPaths(f, f == parent)) FromLevel.Count(level.Own, p);
+                    foreach (var c in MacroCalls(f, f == parent, level)) { FromLevel.Count(level.Own, c.Keyed); if (c.Cond == null) ownPlain.Add(c.Keyed); }
                 result.From.Add(level);
                 foreach (string u in resolved.Unresolved) result.Unresolved.Add(u + " (원형 " + parent + ")");
                 var contexts = ContextsOf(rows);
@@ -219,26 +234,77 @@ namespace CtaToybox.Core
                 }
                 // 단계마다 따로 센다: 유닛이 한 번, 가까운 원형이 한 번 적은 키는 여러 번 적는 키가 아니다
                 foreach (var kv in level.Own) { int n; below.TryGetValue(kv.Key, out n); below[kv.Key] = Math.Max(n, kv.Value); }
+                plain.UnionWith(ownPlain);
                 name = FromLinks.NameOf(rows);
                 current = parent;
             }
         }
 
-        // 파일 원문의 매크로 호출 줄의 비교용 경로(KeyedPathsOf, 매크로 정의 안은 뺀다). reroot면 맨 위 블록을 from으로 바꾼다
-        IEnumerable<string> MacroCallPaths(string file, bool reroot)
+        // 매크로 본문이 바로 쓰는 키(비교용 경로의 마지막 조각). 본문에 다른 호출·include가 있으면 다 알 수 없으므로 null
+        static List<string> BodyKeys(List<object> body)
         {
-            if (LuaTable.IsLua(file)) yield break;
-            string text = stack.ReadText(file);
-            if (text == null) yield break;
-            var parsed = SdlCore.Parse(text);
-            if (parsed.Errors.Count > 0) yield break;
-            var rows = KeyLocator.Rows(parsed.Root);
+            var root = new SdlNode("root", "", 0, true);
+            root.Children.AddRange(body);
+            var rows = KeyLocator.Rows(root);
             var keyed = KeyedPathsOf(rows);
+            var keys = new List<string>();
+            for (int i = 0; i < rows.Count; i++)
+            {
+                if (FromLevel.LastSlash(rows[i].Path) != 0) continue;   // 맨 위 줄만
+                if (rows[i].Form != "block") return null;
+                string k = keyed[i].Substring(1);
+                if (!keys.Contains(k)) keys.Add(k);
+            }
+            return keys;
+        }
+
+        // 원형이 include한 파일마다 그 내용이 펼쳐진 자리(맨 위 블록을 from으로 바꾼 경로의 앞부분). 그 파일의 값이 펼친 줄에 하나도 없으면 모른다(E15)
+        void AddIncludeAt(FromLevel level, List<KeyRow> rows, List<string> keyed, string rawTop)
+        {
+            foreach (string f in level.Files.Skip(1))
+            {
+                var fileRows = FileRows(f);
+                if (fileRows == null) continue;
+                var fileKeyed = KeyedPathsOf(fileRows);
+                for (int i = 0; i < rows.Count && !level.IncludeAt.ContainsKey(f); i++)
+                {
+                    if (keyed[i] == null) continue;
+                    var leaf = rows[i].Leaves.FirstOrDefault(l => l.File == f && !l.Synthetic);
+                    Slot slot;
+                    if (leaf == null || !SlotsOf(f).TryGetValue(leaf.Index, out slot)) continue;
+                    int j = fileRows.FindIndex(r => r.Path == slot.Path && r.Occurrence == slot.Occurrence);
+                    string path = FromLinks.Reroot(rows[i].Path, Top), raw = FromLinks.Reroot(rows[i].RawPath, rawTop);
+                    if (j < 0 || path == null || raw == null || !path.EndsWith(slot.Path, StringComparison.OrdinalIgnoreCase) || !keyed[i].EndsWith(fileKeyed[j], StringComparison.OrdinalIgnoreCase)) continue;
+                    level.IncludeAt[f] = new[] { path.Substring(0, path.Length - slot.Path.Length), raw.Substring(0, Math.Max(0, raw.Length - slot.RawPath.Length)), keyed[i].Substring(0, keyed[i].Length - fileKeyed[j].Length) };
+                }
+            }
+        }
+
+        List<KeyRow> FileRows(string file)
+        {
+            if (LuaTable.IsLua(file)) return null;
+            string text = stack.ReadText(file);
+            if (text == null) return null;
+            var parsed = SdlCore.Parse(text);
+            return parsed.Errors.Count > 0 ? null : KeyLocator.Rows(parsed.Root);
+        }
+
+        sealed class CallPath { public string Keyed; public string Cond; }
+
+        // 파일 원문의 매크로 호출 줄의 비교용 경로(KeyedPathsOf, 매크로 정의 안은 뺀다)와 조건. reroot면 맨 위 블록을 from으로 바꾼다.
+        // 원형이 include한 파일이면 그 내용이 펼쳐진 자리를 앞에 붙인다(level.IncludeAt)
+        IEnumerable<CallPath> MacroCalls(string file, bool reroot, FromLevel level)
+        {
+            var rows = FileRows(file);
+            if (rows == null) yield break;
+            var keyed = KeyedPathsOf(rows);
+            string[] at = null;
+            if (level != null && !reroot) level.IncludeAt.TryGetValue(file, out at);
             for (int i = 0; i < rows.Count; i++)
             {
                 if (rows[i].Form != "macro" || rows[i].Path.Contains("(define ")) continue;
-                string p = reroot ? FromLinks.Reroot(keyed[i], Top) : keyed[i];
-                if (p != null) yield return p;
+                string p = reroot ? FromLinks.Reroot(keyed[i], Top) : at != null ? at[2] + keyed[i] : keyed[i];
+                if (p != null) yield return new CallPath { Keyed = p, Cond = rows[i].Cond };
             }
         }
 

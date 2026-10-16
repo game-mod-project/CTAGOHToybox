@@ -19,7 +19,8 @@ namespace CtaToybox.Core
         readonly Dictionary<string, List<string>> byLeaf = new Dictionary<string, List<string>>(StringComparer.Ordinal);
         readonly Dictionary<string, List<string>> byWords = new Dictionary<string, List<string>>(StringComparer.Ordinal);
         readonly Dictionary<string, List<string>> byWordsNoExt = new Dictionary<string, List<string>>(StringComparer.Ordinal);
-        static readonly List<string> None = new List<string>();
+        // 빈 결과는 부를 때마다 새 목록이다(받은 쪽이 고쳐도 다른 결과에 번지지 않게, E15)
+        static List<string> None { get { return new List<string>(); } }
 
         public FromLinks(IEnumerable<string> virtualPaths)
         {
@@ -89,12 +90,25 @@ namespace CtaToybox.Core
             return top.Leaves[0].Text.Trim('"');
         }
 
-        // 원형의 경로를 물려받는 파일의 맨 위 블록 아래로 옮긴다(/bullet/mass → /from/mass). 원형의 맨 위 줄 자체는 null
+        // 원형의 경로를 물려받는 파일의 맨 위 블록 아래로 옮긴다(/bullet/mass → /from/mass). 원형의 맨 위 줄 자체는 null.
+        // 따옴표 안의 / 는 가르지 않는다(맨 위 매크로 이름 ("a/b"), E15)
         public static string Reroot(string path, string top)
         {
             if (path == null) return null;
-            int second = path.IndexOf('/', 1);
+            int second = SecondSlash(path);
             return second < 0 ? null : top + path.Substring(second);
+        }
+
+        // 첫 조각 뒤의 / 자리(따옴표 밖). 없으면 -1
+        static int SecondSlash(string path)
+        {
+            bool quoted = false;
+            for (int i = 1; i < path.Length; i++)
+            {
+                if (path[i] == '"') quoted = !quoted;
+                else if (path[i] == '/' && !quoted) return i;
+            }
+            return -1;
         }
     }
 
@@ -103,7 +117,8 @@ namespace CtaToybox.Core
     // 감싼 블록만 자식에 있을 때와, 여러 번 적는 키(tag 등)가 쌓이는지는 확인하지 않았다
     public sealed class FromLevel
     {
-        public const string Inherited = "inherited", Overridden = "overridden", Unconfirmed = "unconfirmed";
+        // Conditional: 자식 쪽 파일이 같은 키를 (mod …) 조건 안에서만 적는다. 그 조건에서는 자식 값, 아니면 원형 값을 쓴다(E15)
+        public const string Inherited = "inherited", Overridden = "overridden", Unconfirmed = "unconfirmed", Conditional = "conditional";
         public const string UnitScopeNote = "원형에서 물려받은 값이다. '이 유닛만'은 안 된다. '전부'로 고치면 이 원형을 물려받는 유닛이 모두 바뀐다";
 
         // 다른 유닛이 이 유닛을 원형으로 물려받을 때. 유닛 파일을 고치면(이 유닛만이라도) 물려받는 유닛도 바뀐다(게임 확인 2026-10-14 톰슨)
@@ -118,6 +133,10 @@ namespace CtaToybox.Core
         public List<string> Candidates { get; set; }   // 이름에 맞는 파일들(FromLinks.Candidates). 둘 이상이면 File은 그 가운데 고른 것이다
         public Dictionary<string, int> Below { get; set; }   // 자식 쪽(유닛과 더 가까운 원형 각각) 가운데 한 단계에서 그 경로가 나온 가장 큰 수(펼친 줄과 매크로 호출 줄, 맨 위 블록은 from)
         public Dictionary<string, int> Own { get; set; }     // 이 원형 파일 쪽(원형과 그 include)의 경로마다 나온 수
+        public HashSet<string> BelowPlain { get; set; } = new HashSet<string>(StringComparer.OrdinalIgnoreCase);   // Below 가운데 조건((mod …)) 밖에서도 나온 경로
+        public string RawTop { get; set; } = "/from";   // 물려받는 파일의 맨 위 블록을 원문 대소문자로 적은 것({From …}이면 /From)
+        public Dictionary<string, List<string>> MacroKeys { get; set; } = new Dictionary<string, List<string>>(StringComparer.OrdinalIgnoreCase);   // 매크로 이름 → 본문이 바로 쓰는 키(비교용 경로 조각). 모르면 null
+        public Dictionary<string, string[]> IncludeAt { get; set; } = new Dictionary<string, string[]>(StringComparer.Ordinal);   // 원형이 include한 파일 → 펼친 자리 {경로, 원문 경로, 비교용 경로}의 앞부분
 
         // 줄의 상태. 감싼 블록 때문에 미확인이면 block에 그 블록(맨 위 블록 아래 경로)을 준다. 여러 번 적는 키라서 미확인이면 block은 null이다
         public string StateOf(string path, out string block)
@@ -127,9 +146,12 @@ namespace CtaToybox.Core
             if (Below.TryGetValue(path, out below))
             {
                 // 이름 있는 부위 블록의 머리 줄({parameters "ap" ...}의 이름): 값은 블록 이름뿐이고 같은 이름의 블록이 자식에도 있다는 뜻이다
-                if (path.EndsWith("\"", StringComparison.Ordinal)) { block = path.Substring(path.IndexOf('/', 1) + 1); return Unconfirmed; }
+                // 따옴표 이름 블록({"head" 1.3})은 조각 전체가 이름이라 머리 줄이 아니라 값 줄이다
+                string last = path.Substring(path.LastIndexOf('/') + 1);
+                if (path.EndsWith("\"", StringComparison.Ordinal) && !last.StartsWith("\"", StringComparison.Ordinal)) { block = path.Substring(path.IndexOf('/', 1) + 1); return Unconfirmed; }
                 Own.TryGetValue(path, out own);
-                return below > 1 || own > 1 ? Unconfirmed : Overridden;
+                if (below > 1 || own > 1) return Unconfirmed;
+                return BelowPlain.Contains(path) ? Overridden : Conditional;
             }
             for (int i = path.LastIndexOf('/'); i > 0; i = path.LastIndexOf('/', i - 1))
             {
@@ -139,6 +161,41 @@ namespace CtaToybox.Core
                 if (Below.ContainsKey(prefix)) { block = prefix.Substring(second + 1); return Unconfirmed; }
             }
             return Inherited;
+        }
+
+        // 원형 파일의 매크로 호출 줄의 상태. 자식이 같은 호출을 하지 않아도, 호출이 펼치는 키를 자식이 모두 적으면 그 호출의 값은 쓰이지 않는다(E15).
+        // 펼치는 키를 모르면(본문에 다른 호출이 있으면) 호출 줄 자체의 상태다
+        public string CallStateOf(string keyedCallPath, string macroName, out string block)
+        {
+            string state = StateOf(keyedCallPath, out block);
+            List<string> keys;
+            if (state != Inherited || macroName == null || !MacroKeys.TryGetValue(macroName, out keys) || keys == null || keys.Count == 0) return state;
+            string parent = keyedCallPath.Substring(0, LastSlash(keyedCallPath));
+            var states = new List<string>();
+            string firstBlock = null;
+            foreach (string k in keys)
+            {
+                string b;
+                states.Add(StateOf(parent + "/" + k, out b));
+                if (firstBlock == null) firstBlock = b;
+            }
+            if (states.Contains(Inherited)) return Inherited;
+            if (states.All(s => s == Overridden)) return Overridden;
+            block = firstBlock;
+            return states.Contains(Unconfirmed) ? Unconfirmed : Conditional;
+        }
+
+        // 마지막 조각 앞의 / 자리(따옴표 밖). 매크로 이름에 / 가 든다("velocity m/s")
+        public static int LastSlash(string path)
+        {
+            int at = -1;
+            bool quoted = false;
+            for (int i = 0; i < path.Length; i++)
+            {
+                if (path[i] == '"') quoted = !quoted;
+                else if (path[i] == '/' && !quoted) at = i;
+            }
+            return at;
         }
 
         // 화면 머리에 보이는 사슬: "원형 사슬: rifle.pattern → bullet.pattern". 맞는 파일이 여럿인 이름은 그 수와 고른 파일을 덧붙인다. 사슬이 없으면 null
@@ -164,6 +221,7 @@ namespace CtaToybox.Core
             if (file == null) return null;
             string leaf = file.Substring(file.LastIndexOf('/') + 1);
             if (state == Overridden) return "원형 " + leaf + "의 값 · 가려짐: 자식 쪽 파일에 같은 키가 있어 게임은 그 값을 쓴다";
+            if (state == Conditional) return "원형 " + leaf + "에서 물려받는다 · 조건부: 자식 쪽 파일은 (mod …) 조건 안에서만 같은 키를 적는다. 그 조건에서는 자식 값을 쓴다";
             if (state == Unconfirmed && block == null) return "원형 " + leaf + "에서 물려받는다 · 미확인: 자식 쪽 파일에도 같은 키가 있다. 여러 번 적는 키라 쌓이는지 바뀌는지 확인하지 않았다";
             if (state == Unconfirmed) return "원형 " + leaf + "에서 물려받는다 · 미확인: 자식 쪽 파일에도 " + System.Text.RegularExpressions.Regex.Replace(block, "\"([^\"]*)\"", " \"$1\"") + " 블록이 있다. 블록째 바뀌는지 키마다 합쳐지는지 확인하지 않았다";
             return "원형 " + leaf + "에서 물려받는다";
