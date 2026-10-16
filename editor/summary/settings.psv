@@ -68,3 +68,5 @@
 /conquestconfig.defendercounterattack/responsechance|AI 반격
 /conquestconfig.unitspawnwaittime|AI 대기·명령 주기 (ms)
 /conquestconfig.orderrotationperiod|AI 대기·명령 주기 (ms)
+**/h_fov|시야각 (도)
+**/uncover|숨은 병사를 찾는 거리 (m)

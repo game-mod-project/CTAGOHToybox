@@ -19,6 +19,7 @@ namespace CtaToybox.Cli
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
+            "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force]   (월드워 시야 프로젝트를 만든다. 있는 파일은 --force로만 덮어쓴다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
 
@@ -33,6 +34,7 @@ namespace CtaToybox.Cli
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit" },
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit" },
             ["build"] = new[] { "settings", "project", "force" },
+            ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force" },
         };
 
         // 값을 받지 않는 옵션
@@ -77,6 +79,7 @@ namespace CtaToybox.Cli
                     case "add": return Add(opt, settingsPath, output);
                     case "remove": return Remove(opt, output);
                     case "build": return Build(opt, settingsPath, output);
+                    case "vision-preset": return VisionPreset(opt, settingsPath, output);
                     default: throw new UsageException("모르는 명령: " + args[0]);
                 }
             }
@@ -124,6 +127,29 @@ namespace CtaToybox.Cli
             s.Save(settingsPath);
             output.WriteLine("설정을 썼다: " + settingsPath);
             return 0;
+        }
+
+        // 월드워 시야 프로젝트(VisionPresets)를 지금 원본 계층에서 만들어 쓴다
+        static int VisionPreset(Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string variant = Need(opt, "variant").ToLowerInvariant(), projectPath = Need(opt, "project");
+            if (variant != "wot" && variant != "wt") throw new UsageException("--variant는 wot 또는 wt다");
+            double scale = 4;
+            if (opt.ContainsKey("scale") && (!double.TryParse(opt["scale"], System.Globalization.NumberStyles.Float, System.Globalization.CultureInfo.InvariantCulture, out scale) || scale <= 0))
+                throw new UsageException("--scale은 0보다 큰 수여야 한다");
+            if (File.Exists(projectPath) && !opt.ContainsKey("force")) { output.WriteLine("이미 있다: " + projectPath + ". 덮어쓰려면 --force"); return 1; }
+            EditorSettings settings; LayerPlan plan;
+            using (var stack = Open(settingsPath, output, out settings, out plan))
+            {
+                if (stack == null) return 1;
+                var notes = new List<string>();
+                var project = VisionPresets.Build(stack, variant, scale, notes);
+                project.Save(projectPath);
+                int fov = project.Edits.Count(e => e.NamedPath.EndsWith("/h_fov")), uncover = project.Edits.Count(e => e.NamedPath.EndsWith("/uncover"));
+                output.WriteLine("수정 " + project.Edits.Count + "건(h_fov " + fov + ", uncover " + uncover + ", r " + (project.Edits.Count - fov - uncover) + "): " + projectPath);
+                foreach (string n in notes) output.WriteLine("  " + n);
+                return 0;
+            }
         }
 
         // 설정을 읽어 원본 계층을 연다. 실패하면 null을 돌려주고 이유를 쓴다

@@ -112,8 +112,8 @@ namespace CtaToybox.Core
             return result;
         }
 
-        // 색인 형식이나 펼치기 규칙이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다(6: E13 자기 폴더의 .presets만, 7: E11 원형 상속, 8: Q16 .presets의 include)
-        const string FormatVersion = "8";
+        // 색인 형식이나 펼치기 규칙이 바뀌면 올린다. 지문에 들어가 옛 캐시를 다시 만들게 한다(6: E13 자기 폴더의 .presets만, 7: E11 원형 상속, 8: Q16 .presets의 include, 9: 시야 파일을 게임 설정으로)
+        const string FormatVersion = "9";
 
         // 계층의 구성과 원본 파일(pak, 낱개 파일)의 크기·수정 시각으로 만든 지문
         public static string SignatureOf(SourceStack stack)

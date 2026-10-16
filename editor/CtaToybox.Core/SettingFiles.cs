@@ -1,4 +1,4 @@
-// 게임 설정 파일(하위 프로젝트 B): 컨퀘스트 자원·길이·전투 규칙·AI, 스커미시 모드, 난이도.
+// 게임 설정 파일(하위 프로젝트 B): 컨퀘스트 자원·길이·전투 규칙·AI, 스커미시 모드, 난이도, 시야(set/vision, 월드워).
 // 편집기에만 있는 종류다. tools/lib/Common.ps1의 유닛 종류에는 넣지 않는다(UnitKind.Of는 그대로 둔다).
 // 스펙: docs/superpowers/specs/2026-10-15-settings-editor-design.md
 using System;
@@ -16,11 +16,11 @@ namespace CtaToybox.Core
 
         // 목록에 한 항목으로 올리는 맨 위 파일. 이 파일들이 include하는 .inc는 그 항목의 전체 탭에 나온다
         static readonly Regex Top = new Regex(
-            @"^(set/dynamic_campaign/(resources|duration)_[^/]+\.set|set/multiplayer/games/[^/]+\.set|set/difficulty/[^/]+\.dl|script/multiplayer/modes/conquest/runtime_config\.lua)$",
+            @"^(set/dynamic_campaign/(resources|duration)_[^/]+\.set|set/multiplayer/games/[^/]+\.set|set/difficulty/[^/]+\.dl|script/multiplayer/modes/conquest/runtime_config\.lua|set/vision/vision\.set)$",
             RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
         // 게임 설정이 있는 폴더. 문자열 속 설정과 단계표 검사는 이 아래 파일에만 한다
-        static readonly string[] Areas = { "set/dynamic_campaign/", "set/multiplayer/games/", "set/difficulty/", "script/multiplayer/modes/conquest/" };
+        static readonly string[] Areas = { "set/dynamic_campaign/", "set/multiplayer/games/", "set/difficulty/", "script/multiplayer/modes/conquest/", "set/vision/" };
 
         // 같은 폴더에 있어도 게임 설정이 아닌 파일: 연구 표, 개발자 메모(values.set), 지도 목록. '전부'만 막을 까닭이 없다
         static readonly Regex NotSettings = new Regex(@"^set/dynamic_campaign/(unit_research_[^/]+|values|map_points)\.set$", RegexOptions.IgnoreCase | RegexOptions.Compiled);

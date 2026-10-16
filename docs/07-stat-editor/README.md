@@ -92,7 +92,7 @@ dotnet run --project editor/CtaToybox.App -c Release
 
 ### 게임 설정 (하위 프로젝트 B)
 
-종류에서 "게임 설정"을 고르면 컨퀘스트 자원(`resources_*.set`), 컨퀘스트 길이(`duration_*.set`), 컨퀘스트 전투 규칙(`campaign_capture_the_flag.set`), 컨퀘스트 AI(`runtime_config.lua`), 스커미시 모드(`set/multiplayer/games/*.set`), 난이도(`set/difficulty/*.dl`)가 나온다. 이름은 `editor/settings/files.psv`, 키의 뜻은 `data/annotations/settings.psv`, 요약 키는 `editor/summary/settings.psv`에 있다. 설계는 [../superpowers/specs/2026-10-15-settings-editor-design.md](../superpowers/specs/2026-10-15-settings-editor-design.md).
+종류에서 "게임 설정"을 고르면 컨퀘스트 자원(`resources_*.set`), 컨퀘스트 길이(`duration_*.set`), 컨퀘스트 전투 규칙(`campaign_capture_the_flag.set`), 컨퀘스트 AI(`runtime_config.lua`), 스커미시 모드(`set/multiplayer/games/*.set`), 난이도(`set/difficulty/*.dl`), 시야(`set/vision/vision.set`과 그 include. 필드의 각도·근접 발견 거리와 거리 매크로 인자 r을 고친다. 전체 배수 `radius`는 식 안의 값이라 화면에서 고치지 못한다)가 나온다. 이름은 `editor/settings/files.psv`, 키의 뜻은 `data/annotations/settings.psv`, 요약 키는 `editor/summary/settings.psv`에 있다. 설계는 [../superpowers/specs/2026-10-15-settings-editor-design.md](../superpowers/specs/2026-10-15-settings-editor-design.md).
 
 - 수정은 항상 "전부"다. 파일 하나가 곧 설정이다. 가격·로스터와 무기·탄약 탭은 숨긴다. 값이 모두 문자열 단계표인 파일(`duration_*.set`)도 목록에 나온다.
 - `"이름=값;이름=값"` 문자열(게임 모드의 `parameters`, `unitLimits`)은 조각마다 칸이 있다. 조각 이름·개수·순서는 바꿀 수 없다. 조각의 뜻은 `values.psv`의 자리 `@이름`. 표의 "수정" 칸과 수정 목록에는 바뀐 조각만 보인다.
@@ -141,6 +141,20 @@ dotnet run --project editor/CtaToybox.App -c Release
    ctatoybox add --project editor/projects/my-tweaks.json --scope unit --unit entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack.def --file entity/-vehicle/usa/btr/m3a1_halftrack/m3a1_halftrack.inc --path "/extender[inventory]/box/item" --occ 1 --arg 1 --new 5
    ctatoybox build --project editor/projects/my-tweaks.json
    ```
+
+### 월드워 시야 프로젝트 (`vision-preset`)
+
+`vision-preset`은 지금 이긴 판의 `set/vision/vision_fields.inc`에서 지상 시야 필드 34개의 수정 목록을 만든다(설계: [../superpowers/specs/2026-10-16-worldwar-vision-design.md](../superpowers/specs/2026-10-16-worldwar-vision-design.md)).
+
+- `--variant wot`(월드워): 수평 시야각을 360으로, 숨은 병사를 찾는 거리를 50m로 바꾼다.
+- `--variant wt`(월드워-워썬더): 수평 시야각을 360으로 바꾸고, 거리 배수 r을 `--scale`배(기본 4)로 바꾼다.
+- `vision.set`의 전체 배수는 바꾸지 않는다. 항공·해상·청각·쌍안경까지 바뀌기 때문이다.
+- 이미 있는 프로젝트 파일은 `--force`를 줄 때만 덮어쓴다.
+
+```
+ctatoybox vision-preset --variant wot --project editor/projects/월드워.json
+ctatoybox build --project editor/projects/월드워.json
+```
 
 ### "이 유닛만"이 하는 일
 
