@@ -16,6 +16,33 @@ namespace CtaToybox.Core
         public List<string> LeafNames { get; set; }   // 잎마다 그것을 감싼 호출의 이름(cp(40)이면 "cp"). 호출 밖이면 null
     }
 
+    // 한 파일의 행을 한 번만 만들어 (경로, 몇 번째)로 바로 찾는다. 경로는 대소문자를 가리지 않는다(KeyLocator.Find와 같다).
+    // 같은 파일에서 여러 자리를 찾을 때 쓴다(빌드·점검의 TokenPatcher, 실제 파일 검증). Find가 부를 때마다 행 목록을 만드는 비용을 없앤다(W-E)
+    public sealed class KeyIndex
+    {
+        readonly Dictionary<string, KeyRow> rows = new Dictionary<string, KeyRow>(StringComparer.OrdinalIgnoreCase);
+
+        // Rows는 몇 번째를 대소문자를 가리지 않는 경로마다 센다. 그래서 (경로, 몇 번째)는 겹치지 않는다
+        public KeyIndex(SdlNode root)
+        {
+            foreach (var row in KeyLocator.Rows(root)) rows[Key(row.Path, row.Occurrence)] = row;
+        }
+
+        static string Key(string path, int occurrence) { return occurrence + "\u0001" + path; }
+
+        public KeyRow Row(string path, int occurrence)
+        {
+            KeyRow row;
+            return path != null && rows.TryGetValue(Key(path, occurrence), out row) ? row : null;
+        }
+
+        public SdlNode Find(string path, int occurrence, int arg)
+        {
+            var row = Row(path, occurrence);
+            return row != null && arg >= 0 && arg < row.Leaves.Count ? row.Leaves[arg] : null;
+        }
+    }
+
     public static class KeyLocator
     {
         // tools/lib/SdlKeys.ps1의 $SdlQualifiedBlocks와 같아야 한다
@@ -49,14 +76,10 @@ namespace CtaToybox.Core
             for (int i = expr ? 1 : 0; i < node.Children.Count; i++) AddLeaves(SdlCore.Unwrap(node.Children[i]), leaves, names, name);
         }
 
+        // 한 자리만 찾을 때. 같은 파일에서 여러 자리를 찾으면 KeyIndex를 한 번 만들어 쓴다
         public static SdlNode Find(SdlNode root, string path, int occurrence, int arg)
         {
-            foreach (var row in Rows(root))
-            {
-                if (row.Occurrence != occurrence || !string.Equals(row.Path, path, StringComparison.OrdinalIgnoreCase)) continue;
-                return arg >= 0 && arg < row.Leaves.Count ? row.Leaves[arg] : null;
-            }
-            return null;
+            return new KeyIndex(root).Find(path, occurrence, arg);
         }
     }
 }

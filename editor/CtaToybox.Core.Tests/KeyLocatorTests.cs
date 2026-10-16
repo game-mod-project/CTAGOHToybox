@@ -35,5 +35,25 @@ static class KeyLocatorTests
         T.True(KeyLocator.Find(root, "/game_entity/volume/thickness", 2, 0) == null, "an occurrence past the end is null");
         T.True(KeyLocator.Find(root, "/game_entity/nope", 0, 0) == null, "an unknown path is null");
         T.Eq("46000", KeyLocator.Find(root, "/GAME_ENTITY/Mass", 0, 0).Text, "paths compare case-insensitively");
+
+        // 행 색인(W-E): 파일 하나의 행을 한 번 만들어 (경로, 몇 번째)로 찾는다. Find와 같은 노드를 돌려준다
+        var index = new KeyIndex(root);
+        foreach (var row in KeyLocator.Rows(root))
+            for (int arg = 0; arg <= row.Leaves.Count; arg++)
+            {
+                // 행 목록을 처음부터 훑어 찾는 정의(색인 전의 Find)와 같은 노드여야 한다
+                var linear = KeyLocator.Rows(root).First(r => r.Occurrence == row.Occurrence && string.Equals(r.Path, row.Path, System.StringComparison.OrdinalIgnoreCase));
+                var expected = arg < linear.Leaves.Count ? linear.Leaves[arg] : null;
+                T.True(ReferenceEquals(expected, index.Find(row.Path, row.Occurrence, arg)) && ReferenceEquals(expected, KeyLocator.Find(root, row.Path, row.Occurrence, arg)),
+                    "the index and Find give the node a scan of the rows gives: " + row.Path + " [" + row.Occurrence + "] " + arg);
+            }
+        T.Eq("100", index.Find("/game_entity/volume/thickness", 1, 0).Text, "the second occurrence");
+        T.Eq("46000", index.Find("/GAME_ENTITY/Mass", 0, 0).Text, "the index compares paths case-insensitively");
+        T.True(index.Find("/game_entity/volume/thickness", 0, 2) == null, "index: a value index past the end is null");
+        T.True(index.Find("/game_entity/volume/thickness", 0, -1) == null, "index: a negative value index is null");
+        T.True(index.Find("/game_entity/volume/thickness", 2, 0) == null, "index: an occurrence past the end is null");
+        T.True(index.Find("/game_entity/nope", 0, 0) == null, "index: an unknown path is null");
+        T.Eq("/game_entity/volume", index.Row("/game_entity/volume", 1).Path, "the row itself");
+        T.True(index.Row("/game_entity/volume", 2) == null, "no such row");
     }
 }

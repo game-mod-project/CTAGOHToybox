@@ -76,9 +76,10 @@ namespace CtaToybox.Core
                     patches.Add(new Patch { Index = r.Index, Length = r.Old.Length, New = r.New });
                 }
             }
+            var index = new KeyIndex(parsed.Root);
             foreach (var e in active)
             {
-                var node = KeyLocator.Find(parsed.Root, e.Path, e.Occurrence, e.Arg);
+                var node = index.Find(e.Path, e.Occurrence, e.Arg);
                 if (node == null) { results.Add(Result(e, EditStatus.TargetMissing, "원본에 이 자리가 없다: " + e.Path + " [" + e.Occurrence + "] 값 " + e.Arg)); continue; }
                 if (node.Text != e.Old) { results.Add(Result(e, EditStatus.SourceChanged, "원본의 값이 바뀌었다. 수정 당시 " + e.Old + ", 지금 " + node.Text)); continue; }
                 string warning;
@@ -101,10 +102,11 @@ namespace CtaToybox.Core
             // 고친 결과를 다시 읽어 구조가 그대로인지, 그 자리에 새 값이 들어갔는지 확인한다
             var check = SdlCore.Parse(patched);
             if (check.Errors.Count > 0 || !SdlCore.RoundTrip(check)) throw new InvalidOperationException("고친 파일이 다시 파싱되지 않는다");
+            var checkIndex = new KeyIndex(check.Root);
             foreach (var p in patches)
             {
                 if (p.Edit == null) continue;
-                var node = KeyLocator.Find(check.Root, p.Edit.Path, p.Edit.Occurrence, p.Edit.Arg);
+                var node = checkIndex.Find(p.Edit.Path, p.Edit.Occurrence, p.Edit.Arg);
                 if (node == null || node.Text != p.Edit.New) throw new InvalidOperationException("고친 뒤 그 자리에 새 값이 없다. 이 값을 바꾸면 키 경로가 바뀐다(블록 이름 뒤의 한정자나 숫자 행의 첫 값): " + p.Edit.Path);
             }
             return patched;
