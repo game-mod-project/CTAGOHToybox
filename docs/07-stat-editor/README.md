@@ -54,7 +54,7 @@ dotnet run --project editor/CtaToybox.Cli -c Release -- init --game "E:\SteamLib
    ctatoybox add --project editor/projects/my-tweaks.json --file entity/-vehicle/ussr/tank_heavy/kv85/kv85.def --path "/game_entity/extender[inventory]/box/item" --occ 0 --arg 1 --new 7
    ```
 
-   `add`는 원본에 미리 적용해 보고 안 되는 값을 거부한다. 블록 이름 뒤의 한정자(`extender[inventory]`의 `"inventory"`)나 숫자로 시작하는 행의 첫 값을 낱말로 바꾸는 것처럼 키 경로가 바뀌는 값이 그렇다. 더한 수정을 지울 때는 같은 자리로 `remove`를 쓴다. 그 자리에 수정이 여럿이면 `--scope shared`('전부')나 `--unit <유닛 가상 경로>`(그 유닛의 '이 유닛만')로 고른다.
+   `add`는 원본에 미리 적용해 보고 안 되는 값을 거부한다. 블록 이름 뒤의 한정자(`extender[inventory]`의 `"inventory"`)나 숫자로 시작하는 행의 첫 값을 낱말로 바꾸는 것처럼 키 경로가 바뀌는 값이 그렇다. 더한 수정을 지울 때는 같은 자리로 `remove`를 쓴다. 빌드는 프로젝트 하나만 쓰므로, 다른 프로젝트(예: 월드워)의 수정을 함께 넣으려면 `merge --project <합칠 프로젝트> --from <가져올 프로젝트>`로 합친다(앱은 "다른 프로젝트 합치기..."). 같은 자리에 다른 값이 있으면 합칠 프로젝트의 값을 두고 충돌로 알린다. 그 자리에 수정이 여럿이면 `--scope shared`('전부')나 `--unit <유닛 가상 경로>`(그 유닛의 '이 유닛만')로 고른다.
 
    ```
    ctatoybox remove --project editor/projects/my-tweaks.json --file entity/-vehicle/ussr/tank_heavy/kv85/kv85.def --path "/game_entity/extender[inventory]/box/item" --arg 1

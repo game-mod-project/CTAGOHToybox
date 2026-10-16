@@ -105,6 +105,8 @@
             <TextBlock Text="프로젝트 " Foreground="#555555" VerticalAlignment="Center"/>
             <TextBlock x:Name="ProjectText" FontWeight="Bold" VerticalAlignment="Center"/>
             <Button x:Name="OpenProjectButton" Content="다른 프로젝트 열기..." Margin="8,0,0,0" Padding="8,1" IsEnabled="False" Click="OpenProject_Click"/>
+            <Button x:Name="MergeProjectButton" Content="다른 프로젝트 합치기..." Margin="6,0,0,0" Padding="8,1" IsEnabled="False" Click="MergeProject_Click"
+                    ToolTip="다른 프로젝트의 수정을 이 프로젝트에 더한다. 빌드는 프로젝트 하나만 쓰므로 월드워 같은 수정 목록을 함께 넣을 때 쓴다"/>
           </StackPanel>
           <TextBlock x:Name="SourcesText" Foreground="#555555" TextWrapping="Wrap" Margin="0,3,0,0"/>
           <TextBlock x:Name="WarningText" Foreground="#B00020" TextWrapping="Wrap"/>

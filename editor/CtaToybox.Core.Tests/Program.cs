@@ -91,6 +91,7 @@ static class Program
             ("EditorSession", EditorSessionTests.Run),
             ("EditorSessionEdit", EditorSessionEditTests.Run),
             ("CheckEdits", CheckEditsTests.Run),
+            ("ProjectMerge", ProjectMergeTests.Run),
             ("ReviewFix", ReviewFixTests.Run),
             ("Usability", UsabilityTests.Run),
             ("UsabilityReview", UsabilityReviewTests.Run),

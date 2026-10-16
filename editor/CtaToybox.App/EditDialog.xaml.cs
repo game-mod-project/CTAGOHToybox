@@ -101,6 +101,8 @@ namespace CtaToybox.App
             UsersList.ItemsSource = users.Take(MaxUsers).Select(u => Text.UnitName(session, u) + "   " + u).ToList();
             var blockers = editable.Where(v => v.UnitScopeBlocker != null).Select(v => v.UnitScopeBlocker).Distinct().ToList();
             UnitRadio.IsEnabled = blockers.Count == 0;
+            // 원형에서 물려받은 줄의 '이 유닛만'은 원형 파일이 아니라 유닛 파일에 키를 덧붙인다(E14)
+            if (row.From != null && UnitRadio.IsEnabled) UnitRadio.Content = "이 유닛만 (이 유닛 파일에 이 키를 덧붙인다. 원형을 물려받는 다른 유닛은 그대로)";
             BlockerText.Text = blockers.Count == 0 ? "" : "이 유닛만은 안 된다: " + string.Join(" / ", blockers);
             if (editable.Any(v => v.Edit != null && v.Edit.Scope == "unit") && UnitRadio.IsEnabled) UnitRadio.IsChecked = true;
             RemoveButton.Visibility = row.Values.Any(v => v.Edit != null) ? Visibility.Visible : Visibility.Collapsed;
