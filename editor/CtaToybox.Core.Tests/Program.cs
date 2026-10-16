@@ -93,6 +93,7 @@ static class Program
             ("CheckEdits", CheckEditsTests.Run),
             ("ProjectMerge", ProjectMergeTests.Run),
             ("MacroSwap", MacroSwapTests.Run),
+            ("BlockCopy", BlockCopyTests.Run),
             ("ReviewFix", ReviewFixTests.Run),
             ("Usability", UsabilityTests.Run),
             ("UsabilityReview", UsabilityReviewTests.Run),

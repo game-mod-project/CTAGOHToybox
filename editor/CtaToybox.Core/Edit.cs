@@ -25,7 +25,7 @@ namespace CtaToybox.Core
         public string NamedPath { get; set; }
         [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault)]
         public int NamedOccurrence { get; set; }
-        // 무엇을 고치는지. 값이면 null(지금까지의 프로젝트 파일 그대로), 인자 없는 매크로 호출의 이름이면 MacroSwap.Kind(E4)
+        // 무엇을 고치는지. 값이면 null(지금까지의 프로젝트 파일 그대로), 인자 없는 매크로 호출의 이름이면 MacroSwap.Kind(E4), 따옴표 이름 블록 복제면 BlockCopy.Kind(E18)
         [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
         public string Kind { get; set; }
     }
