@@ -36,9 +36,10 @@ Assert-Equal @('properties/base.ext') @($r.Includes) 'include list'
 Assert-Equal @('wheel') @($r.Macros) 'macro list'
 
 $r = Resolve-SdlFile $ctx 'set/stuff/gun/g1'
-Assert-Equal '{ from "pattern gun" { recoveryTime 0.25 } { recoveryTime 0.5 } { tag "n" } { o 1 } ( "nope" ) { x %unbound } }' (Get-SdlNodesText $r.Nodes) 'named macro, nested macro, arithmetic, presets'
-Assert-Equal @('macro:nope', 'param:%unbound') @($r.Unresolved | Sort-Object) 'unknown macro and unbound param reported'
-Assert-Equal @('set/stuff/.presets', 'set/stuff/gun/.presets') @($r.Presets) 'presets outer first'
+# E13: 조상 폴더의 .presets는 읽지 않는다(게임 확인 2026-10-16: 하위 폴더 파일에서 부르면 "define not found")
+Assert-Equal '{ from "pattern gun" { recoveryTime 0.25 } { recoveryTime 0.5 } { tag "n" } ( "outer" ) ( "nope" ) { x %unbound } }' (Get-SdlNodesText $r.Nodes) 'named macro, nested macro with explicit args, arithmetic, own-folder presets'
+Assert-Equal @('macro:nope', 'macro:outer', 'param:%unbound') @($r.Unresolved | Sort-Object) 'unknown macro, ancestor-only macro and unbound param reported'
+Assert-Equal @('set/stuff/gun/.presets') @($r.Presets) 'only the own folder presets are read'
 
 $r = Resolve-SdlFile $ctx 'set/uses.set'
 Assert-Equal '{ size 2.5 }' (Get-SdlNodesText $r.Nodes) 'include arguments bind params'
@@ -91,11 +92,22 @@ Put $w 'set/rec.set' '(define "a" ("a") ("a") {z 1}) ("a")'
 $r = Resolve-SdlFile $ctx 'set/rec.set'
 Assert-Equal @('macro-cycle:a') @($r.Unresolved) 'self-recursive macro is reported and terminates'
 
-# M4: 안쪽 매크로가 바깥 매크로의 인자를 물려받아 쓴 경우를 기록한다
+# E13: 안쪽 매크로는 바깥 호출의 인자를 받지 않는다(게임 확인 2026-10-16: 채워지지 않아 "Block terminator expected"로 꺼졌다)
 Put $w 'set/inh.set' '(define "inner" {val %x %0}) (define "outer" ("inner")) ("outer" x(7) args 9)'
 $r = Resolve-SdlFile $ctx 'set/inh.set'
-Assert-Equal '{ val 7 9 }' (Get-SdlNodesText $r.Nodes) 'inner macro still sees outer arguments'
-Assert-Equal @('%0', '%x') @($r.Inherited) 'use of an inherited argument is recorded'
+Assert-Equal '{ val %x %0 }' (Get-SdlNodesText $r.Nodes) 'an inner macro does not see the outer call arguments'
+Assert-Equal @('param:%0', 'param:%x') @($r.Unresolved | Sort-Object) 'and its params are reported unbound'
+# 정의할 때 묶여 있던 값(include 인자)은 쓴다: set/multiplayer/games의 bots_standard.inc가 이 꼴이다
+Put $w 'set/cap.inc' '(define "team" {cp %cp})'
+Put $w 'set/cap.set' '(include "cap.inc" cp(3)) ("team")'
+$r = Resolve-SdlFile $ctx 'set/cap.set'
+Assert-Equal '{ cp 3 }' (Get-SdlNodesText $r.Nodes) 'a macro keeps the include arguments bound where it was defined'
+Assert-Equal @('%cp') @($r.Inherited) 'use of a definition-time argument is recorded'
+# 부른 쪽의 include 인자도 넘어가지 않는다
+Put $w 'set/call.inc' '("free")'
+Put $w 'set/call.set' '(define "free" {v %cp}) (include "call.inc" cp(4))'
+$r = Resolve-SdlFile $ctx 'set/call.set'
+Assert-Equal '{ v %cp }' (Get-SdlNodesText $r.Nodes) 'the caller include arguments do not reach a macro defined elsewhere'
 $r = Resolve-SdlFile $ctx 'set/q.set'
 Assert-Equal 0 @($r.Inherited).Count 'directly passed arguments are not inherited'
 

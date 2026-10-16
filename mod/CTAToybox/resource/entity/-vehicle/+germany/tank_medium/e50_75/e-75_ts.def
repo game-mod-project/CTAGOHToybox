@@ -1,0 +1,156 @@
+{game_entity
+	(include "/properties/tank__ctb_e_75_ts_7ab9e2e3.ext")
+	(include "e-75_ts_armor.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "vision_lev04" "muzzle_122mm_128mm_sides" "shield" "detect_tank_heavy"}
+	{PatherId "tiger2"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+{placer
+	{place "driver" {group "crew"} {visor "driver"}}
+}
+{boarder
+	{door "emit1"}
+	{link "emit1" "driver" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "commander" {group "crew"} {visor "tur2"}}
+}
+{boarder
+	{door "emit3"}
+	{link "emit3" "commander" {anm "right"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "gunner" {group "crew"} {visor "tur1"}}
+}
+{boarder
+	{door "emit2"}
+	{link "emit2" "gunner" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+{placer
+	{place "charger" {group "crew"} {visor "tur4"}}
+}
+{boarder
+	{door "emit5"}
+	{link "emit5" "charger" {anm "left"} {forward putoff} {reverse puton}}
+}
+{placer
+	{place "charger2" {group "crew"}}
+}
+{boarder
+	{door "emit6"}
+	{link "emit6" "charger2" {anm "left"} {forward putoff} {reverse puton}}
+}
+
+(define "seat_human"
+	{placer
+		{place "%place" {group "%group"} {linkbone "%bone"} {turnoff {sensor} {shadow}}}
+	}
+	{boarder
+		{door "%door"}
+		{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+	}
+)
+
+("seat_human" place(seat1) bone(seat7) door(emit7)  animation(armor))
+("seat_human" place(seat2) bone(seat8) door(emit8)  animation(armor1))
+("seat_human" place(seat3) bone(seat9) door(emit9)  animation(armor1))
+("seat_human" place(seat4) bone(seat10) door(emit10)  animation(armor))
+
+	{sensor
+		{visor "tur1" {vision "tank_main-l"} {bone "visor1"}}
+		{visor "driver" {vision "tank_driver"} {bone "visor2"}}
+		{visor "driver_2" {vision "tank_driver"} {bone "visor3"}}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bulletger_128_2 apds" 10}
+			{item "ammo bulletger_128_2 he" 20}
+			{item "ammo bulletger_128_2 apcbche" 15}
+			{item "ammo bulletger_20_auto apcr" 1050}
+			{item "ammo bulletger_20_auto he" 1050}
+			{item "ammo mgun_ger" 1850}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_kwk44_2" filling "ammo bulletger_128_2 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger charger2" minWorkers 1}
+			{foresight "foresight1"}
+			{basic}
+		}
+		{place "mgun1"
+			{type "coaxial_cannon"}
+			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{foresight "foresight3a"}
+			{gunner "gunner"}
+			{charger "charger2"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun2"
+			{type "cupola_cannon"}
+			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{foresight "foresight2"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun"
+			{type "coaxial"}
+			{weapon "mg42_tank" filled}
+			{foresight "foresight3"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 91600}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(2.45))
+		("mobility_tank"
+			speed(40)
+			reverse(15)
+			traverse(30)
+			weight(91.6)
+			power(1200)
+			track(3.3)
+			fuel(860)
+			type(fuel)
+			range(90)
+		)
+	}
+	{Extension "e-75_ts.mdl"}
+}

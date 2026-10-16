@@ -1,0 +1,101 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_bison2_24bf2eb2.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc" scale(0.9))
+	{props "spg" "light" "-turret" "vision_lev06" "shell_eject" "muzzle_150mm_155mm" "shield" "tractor" "tractor_light" "open_top" "ammo_open_top" "detect_spg" "sq_he_large"}
+	{targetclass "tank_light"}
+	{targetSelector "cannon_howitzer"}
+	{patherId "panzer2"}
+	{collider "tank.light"}
+	(include "bison2.ext")
+
+	{texmod "desert"}
+	{extender "shield"
+		{on}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"board_pz4_driver" -1} {base "open_driver" 1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_tank_right"} {end "pose_pak40_gunlayer"} }
+			{reverse 	{end	"emit_body" 1} }
+		}
+		{anm "gunner"
+			{forward	{begin	"board_tank_right"} {end "pose_pak40_charger"} }
+			{reverse 	{end	"emit_body" 1}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_tank_right"} {end "seat_m7_com"} }
+			{reverse 	{end	"emit_body" 1}}
+		}
+	}
+
+	{boarder
+		{door "emit0"}
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+
+
+	("crew_human"	place(driver) 	 door(emit0) door2(emit0) visor(driver) anm_left(driver) anm_right(driver))
+	("crew_human_visible_anm"	place(charger) 	 door(emit1) door2(emit1) visor(driver) anm_left(charger) anm_right(charger))
+	("crew_human_visible_anm"	place(commander) door(emit1) door2(emit1) visor(around) anm_left(commander)  anm_right(commander))
+	("crew_human_visible_anm"	place(gunner) 	 door(emit2) door2(emit2) visor(main)   anm_left(gunner)   anm_right(gunner))
+
+	{extender "inventory"
+		{box
+			{item "bulletger_150_l11 he" 17}		
+			{item "geballteladung_3kg" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "150mm_sig33" filling "bulletger_150_l11 he" 1}
+			("abm_dymamic"
+				zeroing(4.5)
+				dispersion(0.25)
+			)
+		}
+	}
+
+	{mass 16000}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.2) len(-0.76))
+		("mobility_tank"
+			speed(35) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(18) ;-------Track traverse, per second, in degrees.
+			weight(24) ;---------Weight in Tonnes.
+			power(265) ;---------Engine Power, in hp.
+			track(3) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(470) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(130) ;---------Range in km, off-road.
+		)
+	}
+
+	{Extension "bison2.mdl"}
+
+	{bone "turret"
+		{speed2 3}
+		{limits -3 1}
+	}
+	{bone "gun_rot"
+		{speed2 6}
+		{limits -50 3}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

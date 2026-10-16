@@ -110,10 +110,10 @@
 | `/(define "armor_medium_cannon")/("cannon_thickness")` | macro | [atom num]x1 | 1 | 1 | args 6 | 미확인(자동) |  |  |  |
 | `/(define "armor_tag")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_tag")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "armor_tag")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "armor_tag")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "armor")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "armor")/volume/tags` | block | [str]x1 | 1 | 1 | "armor" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "armor")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "armoredcar_tier1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armoredcar_tier1")/("basic_armor")` | macro | [atom num]x1 | 1 | 1 | args 15 | 미확인(자동) |  |  |  |
@@ -124,29 +124,29 @@
 | `/(define "aux_turret")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "aux_turret")/("make_component")` | macro | [atom str str]x12 | 1 | 12 | args "aux_turret1" "aux_turret1" ¦ args "aux_turret11" "aux_turret1" ¦ args "aux_turret12" "aux_turret1" ¦ args "aux_turret2" "aux_turret2" ¦ args "aux_turret21" "aux_turret2" ¦ args "aux_turret22" "aux_turret2" ¦ args "aux_turret3" "aux_turret3" ¦ args "aux_turret31" "aux_turret3" ¦ args "aux_turret32" "aux_turret3" ¦ args "aux_turret4" "aux_turret4" ¦ args "aux_turret41" "aux_turret4" ¦ args "aux_turret42" "aux_turret4" | 미확인(자동) |  |  |  |
 | `/(define "aux_turret")/component` | block | [str]x4 | 1 | 4 | "aux_turret1" ¦ "aux_turret2" ¦ "aux_turret3" ¦ "aux_turret4" | 미확인(자동) |  |  |  |
-| `/(define "aux_turret")/component/repairorder` | block | [num]x4 | 1 | 4 | 6 ~ 7 | 미확인(자동) |  |  |  |
-| `/(define "aux_turret")/component/repairtime` | block | [param]x4 | 1 | 4 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "aux_turret")/component/repairorder` | block | [num]x4 | 1 | 4 | 6 ~ 7 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "aux_turret")/component/repairtime` | block | [param]x4 | 1 | 4 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "ballast")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ballast")/volume` | block | [str]x1 | 1 | 1 | "ballast%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "ballast")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "ballast")/volume/able/float` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "ballast")/volume/tags` | block | [str]x1 | 1 | 1 | "float" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "ballast")/volume/tags` | block | [str]x1 | 1 | 1 | "float" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "basic_armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "basic_armor")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "basic_armor")/armor/("set_ammo")` | macro | [atom param]x1 | 1 | 1 | args %0 | 미확인(자동) |  |  |  |
 | `/(define "basic_armor")/armor/("set_armor")` | macro | [atom atom]x47 | 1 | 47 | 예: args body | 미확인(자동) |  |  |  |
 | `/(define "bike_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "bike_durability")/perks/component` | block | [str]x1 [atom str]x1 | 1 | 2 | "body" ¦ tag "wheel" | 미확인(자동) |  |  |  |
+| `/(define "bike_durability")/perks/component` | block | [str]x1 [atom str]x1 | 1 | 2 | "body" ¦ tag "wheel" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "bike_durability")/perks/component/("global_damage_mod")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "bike_durability")/perks/component/armor_damage_modifier` | block | [num]x2 | 1 | 2 | 2 ~ 5 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
+| `/(define "bike_durability")/perks/component/armor_damage_modifier` | block | [num]x2 | 1 | 2 | 2 ~ 5 | 확인 | 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | 게임 파일 주석 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
 | `/(define "bike_durability")/perks/component/health` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "bike_durability")/perks/component/health/hp` | block | [param]x1 [num]x1 | 1 | 2 | 125 | 미확인(자동) |  |  |  |
-| `/(define "bike_durability")/perks/component/health/hp_broken` | block | [expr]x1 | 1 | 1 | ( + 1500 ( * %body 5 ) ) | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "bike_durability")/perks/component/health/hp` | block | [param]x1 [num]x1 | 1 | 2 | 125 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "bike_durability")/perks/component/health/hp_broken` | block | [expr]x1 | 1 | 1 | ( + 1500 ( * %body 5 ) ) | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "bike_parts")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_parts")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "bike_parts")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "bike_parts")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "bike_parts")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "bike_parts")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "bike_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bike_thickness")/("bike_parts")` | macro | [atom str param]x10 [atom str num]x2 | 1 | 12 | args "body1" %thickness ¦ args "body2" %thickness ¦ args "body3" %thickness ¦ args "body4" %thickness ¦ args "body5" %thickness ¦ args "body6" %thickness ¦ args "body7" %thickness ¦ args "body8" %thickness ¦ args "body9" %thickness ¦ args "body10" %thickness ¦ args "wheelleft1" 0.5 ¦ args "wheelleft2" 0.5 | 미확인(자동) |  |  |  |
@@ -163,13 +163,13 @@
 | `/(define "body")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "body")/("make_component")` | macro | [atom str str]x28 | 1 | 28 | 예: args "body" "body" | 미확인(자동) |  |  |  |
 | `/(define "body")/component` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  |  |
-| `/(define "body")/component/repairorder` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "body")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "body")/component/repairorder` | block | [num]x1 | 1 | 1 | 0 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "body")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "bodyback")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bodyback")/("make_component")` | macro | [atom str str]x16 | 1 | 16 | 예: args "bodyback" "bodyback" | 미확인(자동) |  |  |  |
 | `/(define "bodyback")/component` | block | [str]x1 | 1 | 1 | "bodyback" | 미확인(자동) |  |  |  |
-| `/(define "bodyback")/component/repairorder` | block | [num]x1 | 1 | 1 | 6 | 미확인(자동) |  |  |  |
-| `/(define "bodyback")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "bodyback")/component/repairorder` | block | [num]x1 | 1 | 1 | 6 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "bodyback")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "brain_vehicle")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "brain_vehicle")/brain` | block | [str]x1 | 1 | 1 | "vehicle" | 미확인(자동) |  |  |  |
 | `/(define "brain_vehicle")/brain/const` | block | [str num]x2 | 1 | 2 | "crush/min_danger_zone_time" 1 ¦ "crush/min_danger_zone_length" 1 | 미확인(자동) |  |  | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds |
@@ -177,20 +177,20 @@
 | `/(define "cabin")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cabin")/("make_component")` | macro | [atom str str]x11 | 1 | 11 | args "cabin" "cabin" ¦ args "cabin1" "cabin" ¦ args "cabin2" "cabin" ¦ args "cabin3" "cabin" ¦ args "cabin4" "cabin" ¦ args "cabin5" "cabin" ¦ args "cabin6" "cabin" ¦ args "cabin7" "cabin" ¦ args "cabin8" "cabin" ¦ args "cabin9" "cabin" ¦ args "cabin10" "cabin" | 미확인(자동) |  |  |  |
 | `/(define "cabin")/component` | block | [str]x1 | 1 | 1 | "cabin" | 미확인(자동) |  |  |  |
-| `/(define "cabin")/component/repairorder` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
-| `/(define "cabin")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "cabin")/component/repairorder` | block | [num]x1 | 1 | 1 | 2 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "cabin")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "cannon_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cannon_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "cannon_durability")/perks/component` | block | [str]x2 [atom str]x2 | 1 | 4 | "body" ¦ "gun" ¦ tag "wheel" ¦ tag "shield" | 미확인(자동) |  |  |  |
+| `/(define "cannon_durability")/perks/component` | block | [str]x2 [atom str]x2 | 1 | 4 | "body" ¦ "gun" ¦ tag "wheel" ¦ tag "shield" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "cannon_durability")/perks/component/("global_damage_mod")` | macro | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cannon_durability")/perks/component/health` | block | []x4 | 1 | 4 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "cannon_durability")/perks/component/health/hp` | block | [param]x4 | 1 | 4 | %body ¦ %gun ¦ %wheel ¦ %shield | 미확인(자동) |  |  |  |
-| `/(define "cannon_durability")/perks/component/health/hp_broken` | block | [expr]x1 | 1 | 1 | ( * %body 0.5 ) | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "cannon_durability")/perks/component/health/hp` | block | [param]x4 | 1 | 4 | %body ¦ %gun ¦ %wheel ¦ %shield | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "cannon_durability")/perks/component/health/hp_broken` | block | [expr]x1 | 1 | 1 | ( * %body 0.5 ) | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "cannon_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cannon_thickness")/volume` | block | [str]x28 | 1 | 28 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "cannon_thickness")/volume/able` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "cannon_thickness")/volume/able/nolook` | block | [num]x7 | 1 | 7 | 1 | 미확인(자동) |  |  |  |
-| `/(define "cannon_thickness")/volume/able/visible` | block | [num]x7 | 1 | 7 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "cannon_thickness")/volume/able/visible` | block | [num]x7 | 1 | 7 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "cannon_thickness")/volume/thickness` | block | [param]x28 | 1 | 28 | %0 | 미확인(자동) |  |  |  |
 | `/(define "car_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "car_thickness")/volume` | block | [str]x42 | 1 | 42 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
@@ -199,7 +199,7 @@
 | `/(define "car_trace")/track` | block | [param]x2 | 1 | 2 | %wheell ¦ %wheelr | 미확인(자동) |  |  |  |
 | `/(define "car_trace")/track/tracer` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "car_trace")/track/tracer/bone` | block | [param]x2 | 1 | 2 | %bonel ¦ %boner | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/(define "car_trace")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 미확인(자동) |  |  | in meters ¦ in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] |
+| `/(define "car_trace")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 확인 | 궤적(바퀴·궤도 자국)을 찍는 간격, 미터 | 게임 파일 주석 | in meters ¦ in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] |
 | `/(define "car_trace")/track/tracer/view` | block | [param]x2 | 1 | 2 | %fx | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/(define "charger_visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "charger_visible")/("crew_open")` | macro | [call:place call:bone call:visorbone call:door call:door2 call:anm_left call:anm_right call:group]x1 | 1 | 1 | place ( charger ) bone ( gunner2 ) visorbone ( mgun_rot ) door ( emit1 ) door2 ( emit2 ) anm_left ( left ) anm_right ( right ) group ( crew ) | 미확인(자동) |  |  |  |
@@ -214,19 +214,19 @@
 | `/(define "chassis_defaults")/fuelbag/remain` | block | [num]x1 | 1 | 1 | 200 | 미확인(자동) |  |  | Amount of fuel in vehicle when spawned. ¦ how much fuel is in fuel tank at spawn |
 | `/(define "chassis_defaults")/fuelbag/volume` | block | [num]x1 | 1 | 1 | 200 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "chassis_defaults")/speed` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | sway speed coef ¦ kmph |
-| `/(define "chassis_defaults")/speed/fast` | block | [num]x1 | 1 | 1 | 30 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "chassis_defaults")/speed/normal` | block | [num]x1 | 1 | 1 | 17 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "chassis_defaults")/speed/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
+| `/(define "chassis_defaults")/speed/fast` | block | [num]x1 | 1 | 1 | 30 | 확인 | 빠른 이동 속도. 이동 명령을 더블클릭했을 때 | 게임 파일 주석 | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/(define "chassis_defaults")/speed/normal` | block | [num]x1 | 1 | 1 | 17 | 확인 | 보통 이동 속도. 이동 명령을 한 번 클릭했을 때 | 게임 파일 주석 | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/(define "chassis_defaults")/speed/slow` | block | [num]x1 | 1 | 1 | 10 | 확인 | 느린 이동 속도. 주로 미션 스크립트에서 쓴다 | 게임 파일 주석 | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "commander_visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "commander_visible")/("crew_open")` | macro | [call:place call:bone call:visorbone call:door call:door2 call:anm_left call:anm_right call:group]x1 | 1 | 1 | place ( commander ) bone ( gunner2 ) visorbone ( vision_rot ) door ( emit1 ) door2 ( emit2 ) anm_left ( left ) anm_right ( right ) group ( crew ) | 미확인(자동) |  |  |  |
 | `/(define "component")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "component")/component` | block | [param]x1 | 1 | 1 | %component | 미확인(자동) |  |  |  |
-| `/(define "component")/component/repairorder` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "component")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "component")/component/repairorder` | block | [num]x1 | 1 | 1 | 0 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "component")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "component")/component/tags` | block | [param str]x1 | 1 | 1 | %component "hull" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "component")/volume` | block | [param]x1 | 1 | 1 | %volume | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "component")/volume/component` | block | [param]x1 | 1 | 1 | %component | 미확인(자동) |  |  |  |
-| `/(define "component")/volume/tags` | block | [param str]x1 | 1 | 1 | %component "hull" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "component")/volume/tags` | block | [param str]x1 | 1 | 1 | %component "hull" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "crew_1_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_1_human")/("crew_human")` | macro | [call:place call:door call:door2 call:visor]x1 | 1 | 1 | place ( driver ) door ( emit1 ) door2 ( emit2 ) visor ( driver ) | 미확인(자동) |  |  |  |
 | `/(define "crew_1_human")/("crew_inside")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -376,7 +376,7 @@
 | `/(define "crew_gunner")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_gunner")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_gunner")/placer/place/group` | block | [str]x1 | 1 | 1 | "%group" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_gunner")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew_gunner")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_gunner")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_gunner")/placer/place/turnoff/targetable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "crew_gunner")/placer/place/visor` | block | [str]x1 | 1 | 1 | "%visor" | 미확인(자동) |  |  |  |
@@ -401,7 +401,7 @@
 | `/(define "crew_human_2_v")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2_v")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2_v")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_human_2_v")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew_human_2_v")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_human_2_v")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2_v")/placer/place/turnoff/targetable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -414,7 +414,7 @@
 | `/(define "crew_human_2")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_human_2")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew_human_2")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_human_2")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2")/placer/place/turnoff/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_2")/placer/place/turnoff/targetable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
@@ -428,7 +428,7 @@
 | `/(define "crew_human_v")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_v")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_human_v")/placer/place/group` | block | [str]x1 | 1 | 1 | "%group" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_human_v")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew_human_v")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_human_v")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_v")/placer/place/turnoff/targetable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -441,7 +441,7 @@
 | `/(define "crew_human_visible_anm")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_human_visible_anm")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
+| `/(define "crew_human_visible_anm")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_human_visible_anm")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm")/placer/place/turnoff/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm")/placer/place/visor` | block | [str]x1 | 1 | 1 | "%visor" | 미확인(자동) |  |  |  |
@@ -455,7 +455,7 @@
 | `/(define "crew_human_visible_anm2")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm2")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible_anm2")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_human_visible_anm2")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
+| `/(define "crew_human_visible_anm2")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_human_visible_anm2")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human_visible")/("crew_human_visible_anm")` | macro | [call:place call:door call:door2 call:visor call:anm_left call:anm_right]x1 | 1 | 1 | place ( %place ) door ( %door ) door2 ( %door2 ) visor ( %visor ) anm_left ( left ) anm_right ( right ) | 미확인(자동) |  |  |  |
@@ -471,7 +471,7 @@
 | `/(define "crew_human")/placer` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human")/placer/place` | block | [str]x2 | 2 | 2 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_human")/placer/place/group` | block | [str]x2 | 2 | 2 | "%group" ¦ "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_human")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew_human")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_human")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human")/placer/place/turnoff/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_human")/placer/place/turnoff/targetable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
@@ -494,7 +494,7 @@
 | `/(define "crew_open_2")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_open_2")/placer/place` | block | [str param]x1 | 1 | 1 | "%place" %extra | 미확인(자동) |  |  |  |
 | `/(define "crew_open_2")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_open_2")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
+| `/(define "crew_open_2")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%place" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_open")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/boarder` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/boarder/door` | block | [str]x3 | 2 | 3 | "%door" ¦ "%door2" | 미확인(자동) |  |  |  |
@@ -505,7 +505,7 @@
 | `/(define "crew_open")/placer` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/placer/place` | block | [str param]x1 [str]x1 | 2 | 2 | "%place" %extra ¦ "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/placer/place/group` | block | [str]x2 | 2 | 2 | "%group" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew_open")/placer/place/linkbone` | block | [str]x2 | 2 | 2 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew_open")/placer/place/linkbone` | block | [str]x2 | 2 | 2 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew_open")/placer/place/sealable` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/placer/place/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
 | `/(define "crew_open")/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -581,15 +581,15 @@
 | `/(define "crew")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "crew")/placer/place/group` | block | [str]x1 | 1 | 1 | "crew" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "crew")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "crew")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "crew")/placer/place/turnoff` | block | [param]x1 | 1 | 1 | %off | 미확인(자동) |  |  |  |
 | `/(define "crew")/placer/place/visor` | block | [str]x1 | 1 | 1 | "%visor" | 미확인(자동) |  |  |  |
 | `/(define "declare_health")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "declare_health")/extender[vitality]` | block | [str]x1 | 1 | 1 | "vitality" | 미확인(자동) |  |  |  |
+| `/(define "declare_health")/extender[vitality]` | block | [str]x1 | 1 | 1 | "vitality" | 추정 | 체력과 스태미나 기능 (추정: 하위 health, stamina) | 파일 구조와 값에서 추론 |  |
 | `/(define "declare_health")/extender[vitality]/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "declare_health")/extender[vitality]/health/current` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | current stamina ¦ current resources |
-| `/(define "declare_health")/extender[vitality]/health/inc` | block | [num]x1 | 1 | 1 | 0.005 | 미확인(자동) |  |  | health regeneration per second ¦ stamina regeneration/usage per second (depending on movement mode and load) |
-| `/(define "declare_health")/extender[vitality]/health/max` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/(define "declare_health")/extender[vitality]/health/current` | block | [param]x1 | 1 | 1 | %0 | 추정 | 시작할 때의 체력 (추정: 이름. max와 같은 인자를 받는다) | 파일 구조와 값에서 추론 | current stamina ¦ current resources |
+| `/(define "declare_health")/extender[vitality]/health/inc` | block | [num]x1 | 1 | 1 | 0.005 | 확인 | 초당 체력 회복량 | 게임 파일 주석 | health regeneration per second ¦ stamina regeneration/usage per second (depending on movement mode and load) |
+| `/(define "declare_health")/extender[vitality]/health/max` | block | [param]x1 | 1 | 1 | %0 | 확인 | 최대 체력 | 게임 파일 주석 | max health ¦ max resources |
 | `/(define "double_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "double_engine")/("engine")` | macro | [call:volume call:number]x1 | 1 | 1 | volume ( engine ) number ( 2 ) | 미확인(자동) |  |  |  |
 | `/(define "double_engine")/("prop_blade")` | macro | [call:volume call:number]x4 | 1 | 4 | volume ( blade1 ) number ( 2 ) ¦ volume ( blade2 ) number ( 2 ) ¦ volume ( blade3 ) number ( 2 ) ¦ volume ( blade4 ) number ( 2 ) | 미확인(자동) |  |  |  |
@@ -597,26 +597,26 @@
 | `/(define "double_engine")/("single_engine")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "engine_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "engine_part")/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "engine_part")/component/repairorder` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  |  |
-| `/(define "engine_part")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "engine_part")/component/repairorder` | block | [num]x1 | 1 | 1 | 3 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "engine_part")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "engine_part")/component/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine_part")/volume` | block | [str]x1 | 1 | 1 | "%volume%number%part" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "engine_part")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "engine_part")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "engine_part")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "engine_part")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "engine_part")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "engine_part")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine_part")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "engine")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "engine")/("make_component")` | macro | [atom str str]x6 | 1 | 6 | args "engine" "engine" ¦ args "engine1" "engine" ¦ args "engine2" "engine" ¦ args "engine3" "engine" ¦ args "engine4" "engine" ¦ args "engine5" "engine" | 미확인(자동) |  |  |  |
 | `/(define "engine")/component` | block | [str]x2 | 2 | 2 | "%volume%number" ¦ "engine" | 미확인(자동) |  |  |  |
-| `/(define "engine")/component/repairorder` | block | [num]x2 | 2 | 2 | 3 | 미확인(자동) |  |  |  |
-| `/(define "engine")/component/repairtime` | block | [num]x1 [param]x1 | 2 | 2 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "engine")/component/repairorder` | block | [num]x2 | 2 | 2 | 3 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "engine")/component/repairtime` | block | [num]x1 [param]x1 | 2 | 2 | 20 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "engine")/component/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "engine")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "engine")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "engine")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "engine")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "engine")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "engine")/volume/tags` | block | [str]x1 | 1 | 1 | "engine%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "engine")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "fighter_tier1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "fighter_tier1")/("plane_durability")` | macro | [call:body call:engine call:propeller call:wing call:wheel call:part]x1 | 1 | 1 | body ( 100 ) engine ( 50 ) propeller ( 50 ) wing ( 80 ) wheel ( 100 ) part ( 100 ) | 미확인(자동) |  |  |  |
@@ -626,66 +626,66 @@
 | `/(define "fuel")/("internals")` | macro | [atom param atom num]x1 | 1 | 1 | args %0 fuel 1 | 미확인(자동) |  |  |  |
 | `/(define "general_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "general_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "general_durability")/perks/component` | block | [str]x12 [atom str]x9 | 1 | 21 | 예: "body" | 미확인(자동) |  |  |  |
+| `/(define "general_durability")/perks/component` | block | [str]x12 [atom str]x9 | 1 | 21 | 예: "body" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "general_durability")/perks/component/("global_damage_mod")` | macro | []x18 | 1 | 18 | 예: | 미확인(자동) |  |  |  |
-| `/(define "general_durability")/perks/component/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
+| `/(define "general_durability")/perks/component/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 5 | 확인 | 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | 게임 파일 주석 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
 | `/(define "general_durability")/perks/component/health` | block | []x21 | 1 | 21 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "general_durability")/perks/component/health/hp` | block | [param]x13 [num]x8 | 1 | 21 | 50 ~ 400 | 미확인(자동) |  |  |  |
-| `/(define "general_durability")/perks/component/health/hp_broken` | block | [num]x7 [expr]x2 [param]x1 | 1 | 10 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "general_durability")/perks/component/health/hp` | block | [param]x13 [num]x8 | 1 | 21 | 50 ~ 400 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "general_durability")/perks/component/health/hp_broken` | block | [num]x7 [expr]x2 [param]x1 | 1 | 10 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "glass")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "glass")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "glass")/component/repairorder` | block | [num]x1 | 1 | 1 | 13 | 미확인(자동) |  |  |  |
+| `/(define "glass")/component/repairorder` | block | [num]x1 | 1 | 1 | 13 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
 | `/(define "glass")/component/tags` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "glass")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "glass")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "glass")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "glass")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "glass")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "glass")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "glass")/volume/able/window` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "glass")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "glass")/volume/material` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  |  |
-| `/(define "glass")/volume/tags` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "glass")/volume/tags` | block | [str]x1 | 1 | 1 | "glass" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "glass")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
 | `/(define "global_damage_mod")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "global_damage_mod")/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
+| `/(define "global_damage_mod")/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 0.1 | 확인 | 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | 게임 파일 주석 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
 | `/(define "gun_shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun_shield")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "gun_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "gun_shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "gun_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "gun_shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "gun_shield")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "gun")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun")/("main_weapon")` | macro | [atom str param atom]x22 [atom str num atom]x2 | 1 | 24 | 예: args "gun" %thickness gun | 미확인(자동) |  |  |  |
 | `/(define "gun")/component` | block | [str]x1 | 1 | 1 | "gun" | 미확인(자동) |  |  |  |
-| `/(define "gun")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gun1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun1")/("main_weapon")` | macro | [atom str param atom]x5 | 1 | 5 | args "barrel11" %thickness gun1 ¦ args "barrel12" %thickness gun1 ¦ args "barrel13" %thickness gun1 ¦ args "barrel14" %thickness gun1 ¦ args "barrel15" %thickness gun1 | 미확인(자동) |  |  |  |
 | `/(define "gun1")/component` | block | [str]x1 | 1 | 1 | "gun1" | 미확인(자동) |  |  |  |
-| `/(define "gun1")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun1")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun1")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun1")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gun2")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun2")/("main_weapon")` | macro | [atom str param atom]x5 | 1 | 5 | args "barrel21" %thickness gun2 ¦ args "barrel22" %thickness gun2 ¦ args "barrel23" %thickness gun2 ¦ args "barrel24" %thickness gun2 ¦ args "barrel25" %thickness gun2 | 미확인(자동) |  |  |  |
 | `/(define "gun2")/component` | block | [str]x1 | 1 | 1 | "gun2" | 미확인(자동) |  |  |  |
-| `/(define "gun2")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun2")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun2")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun2")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gun3")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun3")/("main_weapon")` | macro | [atom str param atom]x5 | 1 | 5 | args "barrel31" %thickness gun3 ¦ args "barrel32" %thickness gun3 ¦ args "barrel33" %thickness gun3 ¦ args "barrel34" %thickness gun3 ¦ args "barrel35" %thickness gun3 | 미확인(자동) |  |  |  |
 | `/(define "gun3")/component` | block | [str]x1 | 1 | 1 | "gun3" | 미확인(자동) |  |  |  |
-| `/(define "gun3")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun3")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun3")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun3")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gun4")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun4")/("main_weapon")` | macro | [atom str param atom]x5 | 1 | 5 | args "barrel41" %thickness gun4 ¦ args "barrel42" %thickness gun4 ¦ args "barrel43" %thickness gun4 ¦ args "barrel44" %thickness gun4 ¦ args "barrel45" %thickness gun4 | 미확인(자동) |  |  |  |
 | `/(define "gun4")/component` | block | [str]x1 | 1 | 1 | "gun4" | 미확인(자동) |  |  |  |
-| `/(define "gun4")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun4")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun4")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun4")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gun5")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun5")/("main_weapon")` | macro | [atom str param atom]x5 | 1 | 5 | args "barrel51" %thickness gun5 ¦ args "barrel52" %thickness gun5 ¦ args "barrel53" %thickness gun5 ¦ args "barrel54" %thickness gun5 ¦ args "barrel55" %thickness gun5 | 미확인(자동) |  |  |  |
 | `/(define "gun5")/component` | block | [str]x1 | 1 | 1 | "gun5" | 미확인(자동) |  |  |  |
-| `/(define "gun5")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun5")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun5")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun5")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gun6")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gun6")/("main_weapon")` | macro | [atom str param atom]x5 | 1 | 5 | args "barrel61" %thickness gun6 ¦ args "barrel62" %thickness gun6 ¦ args "barrel63" %thickness gun6 ¦ args "barrel64" %thickness gun6 ¦ args "barrel65" %thickness gun6 | 미확인(자동) |  |  |  |
 | `/(define "gun6")/component` | block | [str]x1 | 1 | 1 | "gun6" | 미확인(자동) |  |  |  |
-| `/(define "gun6")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "gun6")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "gun6")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "gun6")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "gunner_open")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/boarder` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/boarder/door` | block | [str]x2 | 1 | 2 | "%door" ¦ "%door2" | 미확인(자동) |  |  |  |
@@ -696,7 +696,7 @@
 | `/(define "gunner_open")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/placer/place/group` | block | [str]x1 | 1 | 1 | "%group" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "gunner_open")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "gunner_open")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "gunner_open")/placer/place/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "gunner_open")/sensor/visor` | block | [str]x1 | 1 | 1 | "top" | 미확인(자동) |  |  |  |
@@ -710,30 +710,30 @@
 | `/(define "holes")/volume` | block | [str]x2 | 2 | 2 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "holes")/volume/able` | block | [atom]x2 | 2 | 2 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "holes")/volume/able/hole` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/(define "holes")/volume/density` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
+| `/(define "holes")/volume/density` | block | [num]x1 | 1 | 1 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "internals")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "internals")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "internals")/component/repairorder` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
-| `/(define "internals")/component/repairtime` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "internals")/component/repairorder` | block | [num]x1 | 1 | 1 | 5 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "internals")/component/repairtime` | block | [param]x1 | 1 | 1 | %2 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "internals")/component/tags` | block | [str]x1 | 1 | 1 | "%1" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "internals")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "internals")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "internals")/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "internals")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "internals")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "internals")/volume/tags` | block | [str str]x1 | 1 | 1 | "%1" "no_target" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "internals")/volume/tags` | block | [str str]x1 | 1 | 1 | "%1" "no_target" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "internals")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "lamp")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "lamp")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "lamp")/component/repairorder` | block | [num]x1 | 1 | 1 | 13 | 미확인(자동) |  |  |  |
+| `/(define "lamp")/component/repairorder` | block | [num]x1 | 1 | 1 | 13 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
 | `/(define "lamp")/component/tags` | block | [str]x1 | 1 | 1 | "lamp" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "lamp")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "lamp")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "lamp")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "lamp")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "lamp")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "lamp")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "lamp")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
 | `/(define "lamp")/volume/material` | block | [str]x1 | 1 | 1 | "glass" | 미확인(자동) |  |  |  |
-| `/(define "lamp")/volume/tags` | block | [str]x1 | 1 | 1 | "lamp" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "lamp")/volume/tags` | block | [str]x1 | 1 | 1 | "lamp" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "lamp")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
 | `/(define "locomotion")` | define | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/(define "locomotion")/braketime` | block | [num]x2 | 2 | 2 | 2 ~ 5 | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
@@ -754,49 +754,49 @@
 | `/(define "main_weapon")/volume/able` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "main_weapon")/volume/able/contact` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/(define "main_weapon")/volume/able/nolook` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
-| `/(define "main_weapon")/volume/able/obstacle` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
-| `/(define "main_weapon")/volume/able/visible` | block | [num]x2 | 2 | 2 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "main_weapon")/volume/able/obstacle` | block | [num]x2 | 2 | 2 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "main_weapon")/volume/able/visible` | block | [num]x2 | 2 | 2 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "main_weapon")/volume/component` | block | [str]x1 | 1 | 1 | "%2" | 미확인(자동) |  |  |  |
-| `/(define "main_weapon")/volume/tags` | block | [str str]x2 | 2 | 2 | "no_target" "%2" ¦ "no_target" "gun" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "main_weapon")/volume/tags` | block | [str str]x2 | 2 | 2 | "no_target" "%2" ¦ "no_target" "gun" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "main_weapon")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "make_component")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "make_component")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "make_component")/volume/component` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
-| `/(define "make_component")/volume/tags` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "make_component")/volume/tags` | block | [param]x1 | 1 | 1 | %1 | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "mantlet")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mantlet")/("make_component")` | macro | [atom str str]x6 | 1 | 6 | args "mantlet" "mantlet" ¦ args "mantlet1" "mantlet" ¦ args "mantlet2" "mantlet" ¦ args "mantlet3" "mantlet" ¦ args "mantlet4" "mantlet" ¦ args "mantlet5" "mantlet" | 미확인(자동) |  |  |  |
 | `/(define "mantlet")/component` | block | [str]x1 | 1 | 1 | "mantlet" | 미확인(자동) |  |  |  |
-| `/(define "mantlet")/component/repairorder` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  |  |
-| `/(define "mantlet")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "mantlet")/component/repairorder` | block | [num]x1 | 1 | 1 | 3 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "mantlet")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "marine_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "marine_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "marine_durability")/perks/component` | block | [atom str]x6 [str]x3 | 1 | 9 | "body" ¦ tag "hull" ¦ "cabin" ¦ "engine" ¦ tag "gun" ¦ tag "shield" ¦ tag "cut_part" ¦ tag "fuel" ¦ tag "ammo" | 미확인(자동) |  |  |  |
+| `/(define "marine_durability")/perks/component` | block | [atom str]x6 [str]x3 | 1 | 9 | "body" ¦ tag "hull" ¦ "cabin" ¦ "engine" ¦ tag "gun" ¦ tag "shield" ¦ tag "cut_part" ¦ tag "fuel" ¦ tag "ammo" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "marine_durability")/perks/component/("global_damage_mod")` | macro | []x9 | 1 | 9 | 예: | 미확인(자동) |  |  |  |
 | `/(define "marine_durability")/perks/component/health` | block | []x9 | 1 | 9 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "marine_durability")/perks/component/health/hp` | block | [param]x4 [num]x4 [expr]x1 | 1 | 9 | 100 ~ 120 | 미확인(자동) |  |  |  |
-| `/(define "marine_durability")/perks/component/health/hp_broken` | block | [expr]x4 [num]x4 | 1 | 8 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "marine_durability")/perks/component/health/hp` | block | [param]x4 [num]x4 [expr]x1 | 1 | 9 | 100 ~ 120 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "marine_durability")/perks/component/health/hp_broken` | block | [expr]x4 [num]x4 | 1 | 8 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "moto_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "moto_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "moto_durability")/perks/component` | block | [atom str]x6 [str]x2 | 1 | 8 | "body" ¦ "engine" ¦ tag "wheel" ¦ tag "glass" ¦ tag "shield" ¦ tag "cut_part" ¦ tag "fuel" ¦ tag "ammo" | 미확인(자동) |  |  |  |
+| `/(define "moto_durability")/perks/component` | block | [atom str]x6 [str]x2 | 1 | 8 | "body" ¦ "engine" ¦ tag "wheel" ¦ tag "glass" ¦ tag "shield" ¦ tag "cut_part" ¦ tag "fuel" ¦ tag "ammo" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "moto_durability")/perks/component/("global_damage_mod")` | macro | []x6 | 1 | 6 | 예: | 미확인(자동) |  |  |  |
-| `/(define "moto_durability")/perks/component/armor_damage_modifier` | block | [num]x5 | 1 | 5 | 2 ~ 5 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
+| `/(define "moto_durability")/perks/component/armor_damage_modifier` | block | [num]x5 | 1 | 5 | 2 ~ 5 | 확인 | 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | 게임 파일 주석 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
 | `/(define "moto_durability")/perks/component/health` | block | []x8 | 1 | 8 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "moto_durability")/perks/component/health/hp` | block | [num]x6 [param]x2 | 1 | 8 | 60 ~ 125 | 미확인(자동) |  |  |  |
-| `/(define "moto_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x1 [expr]x1 | 1 | 7 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "moto_durability")/perks/component/health/hp` | block | [num]x6 [param]x2 | 1 | 8 | 60 ~ 125 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "moto_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x1 [expr]x1 | 1 | 7 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "moto_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "moto_thickness")/volume` | block | [str]x14 | 1 | 14 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
-| `/(define "moto_thickness")/volume/tags` | block | [str]x1 | 1 | 1 | "explosive" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "moto_thickness")/volume/tags` | block | [str]x1 | 1 | 1 | "explosive" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "moto_thickness")/volume/thickness` | block | [param]x13 [num]x1 | 1 | 14 | 1 | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/(define "mp_gun_limits")/bone` | block | [str]x2 | 1 | 2 | "gun_rot1" ¦ "gun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "mp_gun_limits")/bone/limits` | block | [num num]x2 | 1 | 2 | -1 1 ¦ -25 15 | 미확인(자동) |  |  |  |
-| `/(define "mp_gun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 미확인(자동) |  |  |  |
+| `/(define "mp_gun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "mp_mgun_limits")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/(define "mp_mgun_limits")/bone` | block | [str]x2 | 1 | 2 | "mgun_rot1" ¦ "mgun_rot2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/(define "mp_mgun_limits")/bone/limits` | block | [num num]x2 | 1 | 2 | -1 1 ¦ -25 15 | 미확인(자동) |  |  |  |
-| `/(define "mp_mgun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 미확인(자동) |  |  |  |
+| `/(define "mp_mgun_limits")/bone/speed2` | block | [num]x2 | 1 | 2 | 60 ~ 360 | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "passenger_10_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "passenger_10_human")/("passenger_human")` | macro | [call:place call:bone call:door call:animation call:group]x10 | 1 | 10 | place ( seat1 ) bone ( seat01 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat2 ) bone ( seat02 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat3 ) bone ( seat03 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat4 ) bone ( seat04 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat5 ) bone ( seat05 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat6 ) bone ( seat06 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat7 ) bone ( seat07 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat8 ) bone ( seat08 ) door ( emit4 ) animation ( passenger ) group ( passenger ) ¦ place ( seat9 ) bone ( seat09 ) door ( emit3 ) animation ( passenger ) group ( passenger ) ¦ place ( seat10 ) bone ( seat10 ) door ( emit4 ) animation ( passenger ) group ( passenger ) | 미확인(자동) |  |  |  |
 | `/(define "passenger_12_human")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -821,7 +821,7 @@
 | `/(define "passenger_human")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "passenger_human")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "passenger_human")/placer/place/group` | block | [str]x1 | 1 | 1 | "%group" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "passenger_human")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "passenger_human")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "passenger_human")/placer/place/turnoff` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "passenger_human")/placer/place/turnoff/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "passenger_human")/placer/place/turnoff/targetable` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -835,41 +835,41 @@
 | `/(define "passenger")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "passenger")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "passenger")/placer/place/group` | block | [str]x1 | 1 | 1 | "passenger" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "passenger")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "passenger")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "passenger")/placer/place/turnoff` | block | [param]x1 | 1 | 1 | %off | 미확인(자동) |  |  |  |
 | `/(define "passenger")/placer/place/turnoff/sensor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "plane_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "plane_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "plane_durability")/perks/component` | block | [atom str]x4 [str]x3 | 1 | 7 | "body" ¦ "engine1" ¦ "engine2" ¦ tag "propeller" ¦ tag "wing" ¦ tag "wheel" ¦ tag "part" | 미확인(자동) |  |  |  |
+| `/(define "plane_durability")/perks/component` | block | [atom str]x4 [str]x3 | 1 | 7 | "body" ¦ "engine1" ¦ "engine2" ¦ tag "propeller" ¦ tag "wing" ¦ tag "wheel" ¦ tag "part" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "plane_durability")/perks/component/("global_damage_mod")` | macro | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/(define "plane_durability")/perks/component/health` | block | []x7 | 1 | 7 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "plane_durability")/perks/component/health/hp` | block | [param]x7 | 1 | 7 | %engine ¦ %body ¦ %propeller ¦ %wing ¦ %wheel ¦ %part | 미확인(자동) |  |  |  |
-| `/(define "plane_durability")/perks/component/health/hp_broken` | block | [expr]x5 [num]x1 | 1 | 6 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "plane_durability")/perks/component/health/hp` | block | [param]x7 | 1 | 7 | %engine ¦ %body ¦ %propeller ¦ %wing ¦ %wheel ¦ %part | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "plane_durability")/perks/component/health/hp_broken` | block | [expr]x5 [num]x1 | 1 | 6 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "prop_blade")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_blade")/component` | block | [str]x1 | 1 | 1 | "propeller%number" | 미확인(자동) |  |  |  |
-| `/(define "prop_blade")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "prop_blade")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "prop_blade")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "prop_blade")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "prop_blade")/component/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_blade")/volume` | block | [str]x1 | 1 | 1 | "%number%volume" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "prop_blade")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "prop_blade")/volume/able/blast` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "prop_blade")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
+| `/(define "prop_blade")/volume/able/blast` | block | []x1 | 1 | 1 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/(define "prop_blade")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "prop_blade")/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_blade")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "prop_blade")/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
+| `/(define "prop_blade")/volume/able/touch` | block | []x1 | 1 | 1 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "prop_blade")/volume/component` | block | [str]x1 | 1 | 1 | "propeller%number" | 미확인(자동) |  |  |  |
-| `/(define "prop_blade")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "prop_blade")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "still" "still%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_blade")/volume/thickness` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "prop_spin")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "prop_spin")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "prop_spin")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "prop_spin")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "prop_spin")/component/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_spin")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "prop_spin")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "prop_spin")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "prop_spin")/volume/component` | block | [str]x1 | 1 | 1 | "propeller%number" | 미확인(자동) |  |  |  |
-| `/(define "prop_spin")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "prop_spin")/volume/tags` | block | [str str str]x1 | 1 | 1 | "propeller" "spin" "spin%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "prop_spin")/volume/thickness` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  |  |
 | `/(define "quad_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "quad_engine")/("engine")` | macro | [call:volume call:number]x1 | 1 | 1 | volume ( engine ) number ( 4 ) | 미확인(자동) |  |  |  |
@@ -884,15 +884,15 @@
 | `/(define "restore_ik_time")/restoreiktime` | block | [num]x10 | 10 | 10 | 4 ~ 10 | 미확인(자동) |  |  |  |
 | `/(define "rocket")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "rocket")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "rocket")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 미확인(자동) |  |  |  |
-| `/(define "rocket")/component/repairtime` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "rocket")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "rocket")/component/repairtime` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "rocket")/component/tags` | block | [str]x1 | 1 | 1 | "rocket" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "rocket")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "rocket")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "rocket")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "rocket")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "rocket")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "rocket")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "rocket")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "rocket")/volume/tags` | block | [str]x1 | 1 | 1 | "rocket" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "rocket")/volume/tags` | block | [str]x1 | 1 | 1 | "rocket" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "rocket")/volume/thickness` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
 | `/(define "sandbags")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "sandbags")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
@@ -925,7 +925,7 @@
 | `/(define "seat_human")/placer` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "seat_human")/placer/place` | block | [str]x1 | 1 | 1 | "%place" | 미확인(자동) |  |  |  |
 | `/(define "seat_human")/placer/place/group` | block | [str]x1 | 1 | 1 | "passenger" | 미확인(자동) |  |  | priority of vehicles to attack assuming more than one is in weapon's range ¦ humans |
-| `/(define "seat_human")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 미확인(자동) |  |  |  |
+| `/(define "seat_human")/placer/place/linkbone` | block | [str]x1 | 1 | 1 | "%bone" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "seat_on_armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "seat_on_armor")/boarder` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "seat_on_armor")/boarder/anm` | block | [str]x1 | 1 | 1 | "armor" | 미확인(자동) |  |  |  |
@@ -935,25 +935,25 @@
 | `/(define "seat_on_armor")/boarder/anm/reverse` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "seat_on_armor")/boarder/anm/reverse/end` | block | [str]x1 | 1 | 1 | "emit_tank_1_hold" | 미확인(자동) |  |  |  |
 | `/(define "set_ammo")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "set_ammo")/setting` | block | [str]x2 | 1 | 2 | "ammo" ¦ "rocket" | 미확인(자동) |  |  |  |
+| `/(define "set_ammo")/setting` | block | [str]x2 | 1 | 2 | "ammo" ¦ "rocket" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "set_ammo")/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "set_ammo")/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "set_ammo")/setting/threshold/blast/koef` | block | [param]x1 [expr]x1 | 1 | 2 | %0 ¦ ( * %0 0.25 ) | 미확인(자동) |  |  |  |
+| `/(define "set_ammo")/setting/threshold/blast/koef` | block | [param]x1 [expr]x1 | 1 | 2 | %0 ¦ ( * %0 0.25 ) | 문서 | 폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "set_ammo")/setting/threshold/pierce` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | Minimum penetration necessary to leave a ricochet/pen mark on the armour |
-| `/(define "set_ammo")/setting/threshold/pierce/koef` | block | [num]x2 | 1 | 2 | 1 | 미확인(자동) |  |  |  |
-| `/(define "set_ammo")/setting/volumes` | block | [str]x3 | 1 | 3 | "ammo*" ¦ "rocket*" ¦ "shell*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
+| `/(define "set_ammo")/setting/threshold/pierce/koef` | block | [num]x2 | 1 | 2 | 1 | 문서 | 관통 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "set_ammo")/setting/volumes` | block | [str]x3 | 1 | 3 | "ammo*" ¦ "rocket*" ¦ "shell*" | 문서 | 이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/(define "set_armor")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "set_armor")/setting` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  |  |
 | `/(define "set_armor")/setting/threshold` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "set_armor")/setting/threshold/blast` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "set_armor")/setting/threshold/blast/koef` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
+| `/(define "set_armor")/setting/threshold/blast/koef` | block | [num]x1 | 1 | 1 | 0.5 | 문서 | 폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "set_armor")/setting/threshold/pierce` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Minimum penetration necessary to leave a ricochet/pen mark on the armour |
-| `/(define "set_armor")/setting/threshold/pierce/koef` | block | [num]x1 | 1 | 1 | 0.8 | 미확인(자동) |  |  |  |
+| `/(define "set_armor")/setting/threshold/pierce/koef` | block | [num]x1 | 1 | 1 | 0.8 | 문서 | 관통 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "set_armor")/setting/volumes` | block | [str]x1 | 1 | 1 | "%0*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/(define "shield_cover")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_cover")/component` | block | [str]x1 | 1 | 1 | "shield_cover" | 미확인(자동) |  |  |  |
-| `/(define "shield_cover")/component/repairorder` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  |  |
-| `/(define "shield_cover")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "shield_cover")/component/repairorder` | block | [num]x1 | 1 | 1 | 12 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "shield_cover")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "shield_cover")/volume` | block | [str]x3 | 1 | 3 | "shield_cover" ¦ "shield_cover1" ¦ "shield_cover2" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_cover")/volume/able` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "shield_cover")/volume/able/nowounddecal` | block | []x3 | 1 | 3 | 예: | 미확인(자동) |  |  |  |
@@ -962,45 +962,45 @@
 | `/(define "shield_cover")/volume/thickness` | block | [num]x3 | 1 | 3 | 0.5 | 미확인(자동) |  |  |  |
 | `/(define "shield_group")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_group")/component` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  |  |
-| `/(define "shield_group")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 미확인(자동) |  |  |  |
-| `/(define "shield_group")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "shield_group")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "shield_group")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "shield_group")/component/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_group")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_group")/volume/component` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  |  |
-| `/(define "shield_group")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_group")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_group")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield_part")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_part")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_part")/volume/component` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  |  |
-| `/(define "shield_part")/volume/tags` | block | [param]x1 | 1 | 1 | %2 | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_part")/volume/tags` | block | [param]x1 | 1 | 1 | %2 | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_part")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield_tear")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_tear")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield_tear")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 미확인(자동) |  |  |  |
-| `/(define "shield_tear")/component/repairtime` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "shield_tear")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "shield_tear")/component/repairtime` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "shield_tear")/component/tags` | block | [str str]x1 | 1 | 1 | "cut_part" "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_tear")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_tear")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield_tear")/volume/tags` | block | [str str]x1 | 1 | 1 | "cut_part" "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_tear")/volume/tags` | block | [str str]x1 | 1 | 1 | "cut_part" "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_tear")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield_track")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield_track")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield_track")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 미확인(자동) |  |  |  |
-| `/(define "shield_track")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "shield_track")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "shield_track")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "shield_track")/component/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_track")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield_track")/volume/caststeel` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
 | `/(define "shield_track")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield_track")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield_track")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield_track")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "shield")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 미확인(자동) |  |  |  |
-| `/(define "shield")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "shield")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "shield")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "shield")/component/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "shield")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "shield")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "shield")/volume/tags` | block | [str]x1 | 1 | 1 | "shield" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "shield")/volume/thickness` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  |  |
 | `/(define "single_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "single_engine")/("engine_part")` | macro | [call:volume call:number call:part]x6 | 1 | 6 | volume ( engine ) number ( 1 ) part ( 1 ) ¦ volume ( engine ) number ( 1 ) part ( 2 ) ¦ volume ( engine ) number ( 1 ) part ( 3 ) ¦ volume ( engine ) number ( 1 ) part ( 4 ) ¦ volume ( engine ) number ( 1 ) part ( 5 ) ¦ volume ( engine ) number ( 1 ) part ( 6 ) | 미확인(자동) |  |  |  |
@@ -1009,14 +1009,14 @@
 | `/(define "single_engine")/("prop_spin")` | macro | [call:volume call:number]x1 | 1 | 1 | volume ( spin ) number ( 1 ) | 미확인(자동) |  |  |  |
 | `/(define "solid_wheel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "solid_wheel")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "solid_wheel")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "solid_wheel")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "solid_wheel")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "solid_wheel")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "solid_wheel")/component/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "solid_wheel")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "solid_wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "solid_wheel")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "solid_wheel")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "solid_wheel")/volume/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "solid_wheel")/volume/tags` | block | [str str]x1 | 1 | 1 | "wheel" "no_target" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "solid_wheel")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "tank_heavy_tier1")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_heavy_tier1")/("basic_armor")` | macro | [atom num]x1 | 1 | 1 | args 30 | 미확인(자동) |  |  |  |
@@ -1043,10 +1043,10 @@
 | `/(define "tank_trace_ex")/track` | block | [str]x2 | 1 | 2 | "left" ¦ "right" | 미확인(자동) |  |  |  |
 | `/(define "tank_trace_ex")/track/texturescroller` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_trace_ex")/track/texturescroller/bone` | block | [str]x2 | 1 | 2 | "TrackL" ¦ "TrackR" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/(define "tank_trace_ex")/track/texturescroller/length` | block | [param]x2 | 1 | 2 | %len | 미확인(자동) |  |  | meters per animation ¦ 0.6 meters per animation |
+| `/(define "tank_trace_ex")/track/texturescroller/length` | block | [param]x2 | 1 | 2 | %len | 확인 | 궤도 텍스처가 애니메이션 한 번에 움직이는 거리, 미터 | 게임 파일 주석 | meters per animation ¦ 0.6 meters per animation |
 | `/(define "tank_trace_ex")/track/tracer` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_trace_ex")/track/tracer/bone` | block | [param]x2 | 1 | 2 | %boneleft ¦ %boneright | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/(define "tank_trace_ex")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 미확인(자동) |  |  | in meters ¦ in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] |
+| `/(define "tank_trace_ex")/track/tracer/step` | block | [param]x2 | 1 | 2 | %step | 확인 | 궤적(바퀴·궤도 자국)을 찍는 간격, 미터 | 게임 파일 주석 | in meters ¦ in degrees; possible values: 1, 3, 5, 9, 15, 45 [ 360 % (step * 8) = 0 ] |
 | `/(define "tank_trace_ex")/track/tracer/view` | block | [param]x2 | 1 | 2 | %fx | 미확인(자동) |  |  | fx has a glow that will show unless hidden until later called ¦ stop cooking FX, turret ring |
 | `/(define "tank_trace")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tank_trace")/("tank_trace_ex")` | macro | [call:fx call:step call:len call:boneleft call:boneright]x1 | 1 | 1 | fx ( %fx ) step ( %step ) len ( %len ) boneleft ( "FXtraceL1" ) boneright ( "FXtraceR1" ) | 미확인(자동) |  |  |  |
@@ -1055,42 +1055,42 @@
 | `/(define "tankette_tier1")/("general_durability")` | macro | [call:body call:engine call:turret call:mantlet call:gun call:track call:ammo]x1 | 1 | 1 | body ( 175 ) engine ( 150 ) turret ( 150 ) mantlet ( 100 ) gun ( 150 ) track ( 150 ) ammo ( 120 ) | 미확인(자동) |  |  |  |
 | `/(define "tearable")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tearable")/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "tearable")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 미확인(자동) |  |  |  |
-| `/(define "tearable")/component/repairtime` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "tearable")/component/repairorder` | block | [num]x1 | 1 | 1 | 11 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "tearable")/component/repairtime` | block | [num]x1 | 1 | 1 | 2 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "tearable")/component/tags` | block | [str str]x1 | 1 | 1 | "%volume%number" "part" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tearable")/volume` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "tearable")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "tearable")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "tearable")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "tearable")/volume/component` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  |  |
-| `/(define "tearable")/volume/tags` | block | [str]x1 | 1 | 1 | "%volume%number" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "tearable")/volume/tags` | block | [str]x1 | 1 | 1 | "%volume%number" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tearable")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume` | block | [str]x2 | 2 | 2 | "track%0%1" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "track_wheels")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "track_wheels")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "track_wheels")/volume/component` | block | [str]x1 | 1 | 1 | "track%0" | 미확인(자동) |  |  |  |
-| `/(define "track_wheels")/volume/tags` | block | [str str]x1 | 1 | 1 | "mover" "track" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "track_wheels")/volume/tags` | block | [str str]x1 | 1 | 1 | "mover" "track" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "track_wheels")/volume/thickness` | block | [param]x2 | 2 | 2 | %2 | 미확인(자동) |  |  |  |
 | `/(define "tracks")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tracks")/("track_wheels")` | macro | [atom atom num param]x72 | 2 | 72 | 예: args left 1 %thickness | 미확인(자동) |  |  |  |
 | `/(define "tracks")/component` | block | [str]x2 | 1 | 2 | "trackleft" ¦ "trackright" | 미확인(자동) |  |  |  |
-| `/(define "tracks")/component/repairorder` | block | [num]x2 | 1 | 2 | 4 | 미확인(자동) |  |  |  |
-| `/(define "tracks")/component/repairtime` | block | [param]x2 | 1 | 2 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "tracks")/component/repairorder` | block | [num]x2 | 1 | 2 | 4 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "tracks")/component/repairtime` | block | [param]x2 | 1 | 2 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "tracks")/component/tags` | block | [str str]x2 | 1 | 2 | "mover" "track" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tracks")/volume` | block | [str]x4 | 2 | 4 | "trackleft" ¦ "trackright" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "tracks")/volume/able` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "tracks")/volume/able/contact_ground` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  |  |
 | `/(define "tracks")/volume/able/holed` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
 | `/(define "tracks")/volume/able/nowounddecal` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
-| `/(define "tracks")/volume/tags` | block | [str str]x2 | 1 | 2 | "mover" "track" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "tracks")/volume/tags` | block | [str str]x2 | 1 | 2 | "mover" "track" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "tracks")/volume/thickness` | block | [param]x4 | 2 | 4 | %thickness | 미확인(자동) |  |  |  |
 | `/(define "train_durability")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "train_durability")/perks` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "train_durability")/perks/component` | block | [str]x8 [atom str]x6 | 1 | 14 | 예: "body" | 미확인(자동) |  |  |  |
+| `/(define "train_durability")/perks/component` | block | [str]x8 [atom str]x6 | 1 | 14 | 예: "body" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/(define "train_durability")/perks/component/("global_damage_mod")` | macro | []x12 | 1 | 12 | 예: | 미확인(자동) |  |  |  |
 | `/(define "train_durability")/perks/component/health` | block | []x14 | 1 | 14 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/(define "train_durability")/perks/component/health/hp` | block | [param]x9 [num]x5 | 1 | 14 | 60 ~ 200 | 미확인(자동) |  |  |  |
-| `/(define "train_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x2 [expr]x1 | 1 | 8 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/(define "train_durability")/perks/component/health/hp` | block | [param]x9 [num]x5 | 1 | 14 | 60 ~ 200 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/(define "train_durability")/perks/component/health/hp_broken` | block | [num]x5 [param]x2 [expr]x1 | 1 | 8 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/(define "transmission")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "transmission")/("internals")` | macro | [atom param atom num]x1 | 1 | 1 | args %0 transmission 20 | 미확인(자동) |  |  |  |
 | `/(define "triple_engine")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1101,44 +1101,44 @@
 | `/(define "turret")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "turret")/("make_component")` | macro | [atom str str]x13 | 1 | 13 | 예: args "turret" "turret" | 미확인(자동) |  |  |  |
 | `/(define "turret")/component` | block | [str]x1 | 1 | 1 | "turret" | 미확인(자동) |  |  |  |
-| `/(define "turret")/component/repairorder` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  |  |
-| `/(define "turret")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "turret")/component/repairorder` | block | [num]x1 | 1 | 1 | 2 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "turret")/component/repairtime` | block | [param]x1 | 1 | 1 | %repair | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "visible")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "visible")/volume` | block | [str param]x1 | 1 | 1 | "%volume%number" %extra | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "visible")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "visible")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "visible")/volume/tags` | block | [param]x1 | 1 | 1 | %tags | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "visible")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "visible")/volume/tags` | block | [param]x1 | 1 | 1 | %tags | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "visible")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "wheel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wheel")/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "wheel")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "wheel")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "wheel")/component/repairorder` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "wheel")/component/repairtime` | block | [num]x1 | 1 | 1 | 10 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "wheel")/component/tags` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wheel")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wheel")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "wheel")/volume/able/nowounddecal` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wheel")/volume/component` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  |  |
-| `/(define "wheel")/volume/tags` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wheel")/volume/tags` | block | [str]x1 | 1 | 1 | "wheel" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wheel")/volume/thickness` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
 | `/(define "wing")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wing")/component` | block | [str]x1 | 1 | 1 | "wing%component" | 미확인(자동) |  |  |  |
-| `/(define "wing")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "wing")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | 45 ¦ 30 |
+| `/(define "wing")/component/repairorder` | block | [num]x1 | 1 | 1 | 1 | 추정 | 부품을 수리하는 순서 (추정: 이름과 값이 작은 정수) | 파일 구조와 값에서 추론 |  |
+| `/(define "wing")/component/repairtime` | block | [num]x1 | 1 | 1 | 20 | 추정 | 부품을 수리하는 데 걸리는 시간 (추정: 이름. 단위는 초로 보임) | 파일 구조와 값에서 추론 | 45 ¦ 30 |
 | `/(define "wing")/component/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wing")/volume` | block | [str]x1 | 1 | 1 | "wing%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wing")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "wing")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "wing")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "wing")/volume/component` | block | [str]x1 | 1 | 1 | "wing%component" | 미확인(자동) |  |  |  |
-| `/(define "wing")/volume/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wing")/volume/tags` | block | [str str]x1 | 1 | 1 | "wing%component" "%tag" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wing")/volume/thickness` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "wood_shield")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wood_shield")/volume` | block | [str]x1 | 1 | 1 | "shieldw%number" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wood_shield")/volume/material` | block | [str]x1 | 1 | 1 | "wood" | 미확인(자동) |  |  |  |
-| `/(define "wood_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wood_shield")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "wood")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "wood")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "wood")/volume/material` | block | [str]x1 | 1 | 1 | "wood" | 미확인(자동) |  |  |  |
-| `/(define "wood")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "wood")/volume/tags` | block | [str]x1 | 1 | 1 | "wood" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(include)` | include | [str]x78 [str call:scale]x4 | 26 | 82 | 예: "vehicle.ext" | 미확인(자동) |  |  |  |
 | `/##` | block | [atom str]x1 | 1 | 1 | extender "detail" | 미확인(자동) |  |  | No longer used? |
 | `/##/random` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1148,21 +1148,21 @@
 | `/##weaponry/place/charger` | block | [str]x1 | 1 | 1 | "gunner" | 미확인(자동) |  |  |  |
 | `/##weaponry/place/gunner` | block | [str]x1 | 1 | 1 | "gunner" | 미확인(자동) |  |  |  |
 | `/##weaponry/place/linkanimation` | block | [str]x1 | 1 | 1 | "off" | 미확인(자동) |  |  |  |
-| `/##weaponry/place/linkbone` | block | [str]x1 | 1 | 1 | "mgun" | 미확인(자동) |  |  |  |
+| `/##weaponry/place/linkbone` | block | [str]x1 | 1 | 1 | "mgun" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/##weaponry/place/rotate` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/##weaponry/place/type` | block | [str]x1 | 1 | 1 | "main" | 미확인(자동) |  |  | "unit tag" or "unit type" + "current main weapon tag" |
+| `/##weaponry/place/type` | block | [str]x1 | 1 | 1 | "main" | 문서 | 무장 자리의 종류. 예: "mgun_hull"은 차체 기관총, "mgun_coaxial"은 동축 기관총 | xgm.guru/p/vtv/58644 (Men of War 기준, 2026-10-12 확인) | "unit tag" or "unit type" + "current main weapon tag" |
 | `/<bare>` | bare | [atom]x22 | 22 | 22 | actor ¦ game_entity | 미확인(자동) |  |  |  |
 | `/able` | block | [str]x9 [str str]x3 [str str str str]x2 [str str str]x1 | 14 | 15 | "talk" ¦ "emit_crew_on_injure" ¦ "talk" "-emit_passangers_on_enemy" ¦ "-select" "neutral" ¦ "emit_on_attack" ¦ "crew" "fight" "minimap" "personage" ¦ "-emit_passangers_on_enemy" ¦ "emit_crew_on_injure" "talk" "-emit_passangers_on_enemy" ¦ "emit_passangers_on_enemy" "repaired" "minimap" "ally_crew" | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/animation` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/animation/(include)` | include | [str]x2 | 1 | 2 | "_reg_human_movement.inc" ¦ "_reg_vehicle_crew.inc" | 미확인(자동) |  |  |  |
 | `/animation/smooth` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  |  |
 | `/armor` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
-| `/armor/setting` | block | [str]x3 | 3 | 3 | "body" | 미확인(자동) |  |  |  |
-| `/armor/setting/thickness` | block | [num]x2 | 2 | 2 | 20 | 미확인(자동) |  |  |  |
+| `/armor/setting` | block | [str]x3 | 3 | 3 | "body" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/armor/setting/thickness` | block | [num]x2 | 2 | 2 | 20 | 문서 | 장갑 두께. 값이 1개면 모든 면, 2개면 전면과 나머지, 4개면 전면·측면·후면·상하 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/armor/setting/threshold` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/armor/setting/threshold/blast` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/armor/setting/threshold/blast/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/armor/setting/volumes` | block | [str]x2 | 2 | 2 | "body*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
+| `/armor/setting/threshold/blast/value` | block | [num]x1 | 1 | 1 | 10 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/armor/setting/volumes` | block | [str]x2 | 2 | 2 | "body*" | 문서 | 이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/autooperatable` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/boarder` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  |  |
 | `/boarder/anm` | block | [str]x13 | 4 | 13 | "gunner" ¦ "commander" ¦ "driver1" ¦ "driver2" ¦ "driver" | 미확인(자동) |  |  |  |
@@ -1177,7 +1177,7 @@
 | `/body/permit` | block | [atom]x2 | 2 | 2 | body | 미확인(자동) |  |  |  |
 | `/body/proper` | block | [atom atom]x2 | 2 | 2 | body sensible | 미확인(자동) |  |  |  |
 | `/bone` | block | [str]x1 | 1 | 1 | "foresight2" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
+| `/bone/speed` | block | [num]x1 | 1 | 1 | 5 | 문서 | 뼈대의 최대 속도(옛 단위). 포탑이나 포가 도는 빠르기를 정한다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) | sway speed coef ¦ kmph |
 | `/brain` | block | [str]x3 | 3 | 3 | "vehicle" ¦ "actor" ¦ "human" | 미확인(자동) |  |  |  |
 | `/brain/const` | block | [str num]x5 | 1 | 5 | "bomb/detect_explosives" 7 ¦ "bomb/detect_grenades" 5 ¦ "bomb/danger_zone" 7 ¦ "fight/distance" 2 ¦ "weapon/change_time" 5 | 미확인(자동) |  |  | hide if danger is more than "x" meters away, otherwise run away ¦ disable ai weapon switch for 5 seconds |
 | `/brain/properties` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -1191,54 +1191,54 @@
 | `/chassis/("mobility_car")` | macro | [call:speed call:speedatmaxturn call:reverse call:weight call:power call:fuel call:type call:range]x1 | 1 | 1 | speed ( 40 ) speedatmaxturn ( 20 ) reverse ( 5 ) weight ( 0.075 ) power ( 1.3 ) fuel ( 0.1 ) type ( fuel ) range ( 1000 ) | 미확인(자동) |  |  |  |
 | `/chassis/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
 | `/chassis/crawl` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | "crawl" stance - in cover ¦ "crawl" stance - moving. Also serves as default if other conditions are not defined in this block. |
-| `/chassis/crawl/fast` | block | [num num num]x1 | 1 | 1 | 6 9 180 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/crawl/normal` | block | [num num num]x1 | 1 | 1 | 4.5 7 180 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/chassis/crawl/slow` | block | [num num num]x1 | 1 | 1 | 3.5 6 180 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/chassis/elevationacceleration` | block | [num]x1 | 1 | 1 | 8 | 미확인(자동) |  |  | how quickly aircraft can change from level flight to full climb or dive. (m/s^2) |
+| `/chassis/crawl/fast` | block | [num num num]x1 | 1 | 1 | 6 9 180 | 문서 | 포복, 빠름(플레이어 명령). 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/chassis/crawl/normal` | block | [num num num]x1 | 1 | 1 | 4.5 7 180 | 문서 | 포복, 보통. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/crawl/slow` | block | [num num num]x1 | 1 | 1 | 3.5 6 180 | 문서 | 포복, 느림(지쳤거나 다쳤을 때). 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Slow speed. Mainly used in mission scripting ¦ km/h |
+| `/chassis/elevationacceleration` | block | [num]x1 | 1 | 1 | 8 | 확인 | 수평 비행에서 최대 상승·강하로 바뀌는 빠르기, m/s² | 게임 파일 주석 | how quickly aircraft can change from level flight to full climb or dive. (m/s^2) |
 | `/chassis/fuelbag` | block | []x5 | 4 | 5 | 예: | 미확인(자동) |  |  |  |
 | `/chassis/fuelbag/fuel` | block | [str]x5 | 4 | 5 | "fuel" | 미확인(자동) |  |  | Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel. ¦ Fuel type. |
 | `/chassis/fuelbag/rate` | block | [num]x5 | 4 | 5 | 0 ~ 10 | 미확인(자동) |  |  | Fuel consumption rate. Based on off-road range of vehicle. ¦ liters per kilometer |
 | `/chassis/fuelbag/remain` | block | [num]x5 | 4 | 5 | 1 ~ 500 | 미확인(자동) |  |  | Amount of fuel in vehicle when spawned. ¦ how much fuel is in fuel tank at spawn |
 | `/chassis/fuelbag/volume` | block | [num]x5 | 4 | 5 | 1 ~ 500 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/chassis/ignorepatherbounds` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/chassis/injured` | block | [num]x1 | 1 | 1 | 0.85 | 미확인(자동) |  |  | speed multiplier when health is below 30% of maximum |
+| `/chassis/injured` | block | [num]x1 | 1 | 1 | 0.85 | 확인 | 체력이 최대의 30% 아래일 때의 속도 배수 | 게임 파일 주석 | speed multiplier when health is below 30% of maximum |
 | `/chassis/locomotion` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/chassis/locomotion/braketime` | block | [num]x2 | 1 | 2 | 2.5 ~ 3 | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/chassis/locomotion/maxspeed` | block | [num]x2 | 1 | 2 | 40 ~ 75 | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/chassis/locomotion/maxspeedatmaxturn` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
-| `/chassis/locomotion/splineradius` | block | [num]x2 | 1 | 2 | 10 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
+| `/chassis/locomotion/maxspeedatmaxturn` | block | [num]x1 | 1 | 1 | 15 | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/chassis/locomotion/splineradius` | block | [num]x2 | 1 | 2 | 10 | 확인 | 경로(스플라인) 위에서의 회전 반경 제한, 미터. 경로 계획용 매개변수 | 게임 파일 주석 | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
 | `/chassis/locomotion/starttime` | block | [num]x2 | 1 | 2 | 8 ~ 20 | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/chassis/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 40 | 미확인(자동) |  |  | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
-| `/chassis/locomotion/steeron` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
-| `/chassis/locomotion/stoptime` | block | [num]x2 | 1 | 2 | 4 ~ 5 | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/chassis/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 40 | 확인 | 조향을 놓았을 때 바퀴가 중립으로 돌아오는 속도, 도/초 | 게임 파일 주석 | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
+| `/chassis/locomotion/steeron` | block | [num]x1 | 1 | 1 | 15 | 확인 | 조향 바퀴가 꺾이는 속도, 도/초 | 게임 파일 주석 | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
+| `/chassis/locomotion/stoptime` | block | [num]x2 | 1 | 2 | 4 ~ 5 | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/chassis/locomotion/turnradius` | block | [num]x2 | 1 | 2 | 10 ~ 50 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/chassis/maxairbornealtitude` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  |  |
-| `/chassis/maxelevationspeed` | block | [num]x1 | 1 | 1 | 8 | 미확인(자동) |  |  | climb rate, how many meters per second aircraft changes altitude when in full climb or dive |
-| `/chassis/maxsideslope` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | limit in degrees that aircraft can roll while in a turn |
+| `/chassis/maxairbornealtitude` | block | [num]x1 | 1 | 1 | 100 | 추정 | 최대 비행 고도 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/chassis/maxelevationspeed` | block | [num]x1 | 1 | 1 | 8 | 확인 | 상승률. 최대 상승·강하 때 초당 고도 변화량, m/s | 게임 파일 주석 | climb rate, how many meters per second aircraft changes altitude when in full climb or dive |
+| `/chassis/maxsideslope` | block | [num]x1 | 1 | 1 | 15 | 확인 | 선회 중에 기체가 기울 수 있는 한계 각도 | 게임 파일 주석 | limit in degrees that aircraft can roll while in a turn |
 | `/chassis/run` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/chassis/run/bow` | block | [num num num]x1 | 1 | 1 | 16 5.0 600 | 미확인(자동) |  |  | mission script movement mode |
-| `/chassis/run/fast` | block | [num num num]x2 | 2 | 2 | 25 25 500 ¦ 18 5.8 600 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/run/normal` | block | [num num num]x2 | 2 | 2 | 7 7 200 ¦ 13 6.2 600 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/chassis/run/slow` | block | [num num num]x2 | 2 | 2 | 3 3 100 ¦ 8 3.2 360 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/chassis/run/sneak` | block | [num num num]x1 | 1 | 1 | 5 2 360 | 미확인(자동) |  |  | mission script movement mode |
-| `/chassis/run/spot` | block | [num num num]x1 | 1 | 1 | 6 2 420 | 미확인(자동) |  |  | Manual TPC Zoom |
-| `/chassis/run/walk` | block | [num num num]x1 | 1 | 1 | 4 1.8 600 | 미확인(자동) |  |  | single flick, walk mode |
-| `/chassis/sideslopespeed` | block | [num]x1 | 1 | 1 | 45 | 미확인(자동) |  |  | how quickly in degrees per second that aircraft rolls |
+| `/chassis/run/bow` | block | [num num num]x1 | 1 | 1 | 16 5.0 600 | 문서 | 후퇴(withdraw) 명령 때의 질주. 달리는 동안 사격하지 않는다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | mission script movement mode |
+| `/chassis/run/fast` | block | [num num num]x2 | 2 | 2 | 25 25 500 ¦ 18 5.8 600 | 문서 | 전력 질주. 전투 중의 기본 이동. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/chassis/run/normal` | block | [num num num]x2 | 2 | 2 | 7 7 200 ¦ 13 6.2 600 | 문서 | 보통 달리기. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/run/slow` | block | [num num num]x2 | 2 | 2 | 3 3 100 ¦ 8 3.2 360 | 문서 | 느린 달리기. 지쳤거나 험한 지형에서 자동으로 켜진다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Slow speed. Mainly used in mission scripting ¦ km/h |
+| `/chassis/run/sneak` | block | [num num num]x1 | 1 | 1 | 5 2 360 | 문서 | 걷기 모드의 하나. AI가 숨은 적을 수색할 때 쓴다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | mission script movement mode |
+| `/chassis/run/spot` | block | [num num num]x1 | 1 | 1 | 6 2 420 | 문서 | 걷기 모드의 하나. AI가 숨은 적을 수색할 때 쓴다. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Manual TPC Zoom |
+| `/chassis/run/walk` | block | [num num num]x1 | 1 | 1 | 4 1.8 600 | 문서 | 느긋하게 걷거나 짐을 든 채 걷기. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | single flick, walk mode |
+| `/chassis/sideslopespeed` | block | [num]x1 | 1 | 1 | 45 | 확인 | 기체가 기우는 속도, 도/초 | 게임 파일 주석 | how quickly in degrees per second that aircraft rolls |
 | `/chassis/speed` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | sway speed coef ¦ kmph |
-| `/chassis/speed/fast` | block | [num]x2 | 1 | 2 | 20 ~ 100 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/speed/normal` | block | [num]x2 | 1 | 2 | 15 ~ 80 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/chassis/speed/slow` | block | [num]x2 | 1 | 2 | 10 ~ 60 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
+| `/chassis/speed/fast` | block | [num]x2 | 1 | 2 | 20 ~ 100 | 확인 | 빠른 이동 속도. 이동 명령을 더블클릭했을 때 | 게임 파일 주석 | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/chassis/speed/normal` | block | [num]x2 | 1 | 2 | 15 ~ 80 | 확인 | 보통 이동 속도. 이동 명령을 한 번 클릭했을 때 | 게임 파일 주석 | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/speed/slow` | block | [num]x2 | 1 | 2 | 10 ~ 60 | 확인 | 느린 이동 속도. 주로 미션 스크립트에서 쓴다 | 게임 파일 주석 | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/chassis/strafe` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/chassis/strafe/back` | block | [num num num num num str str]x1 | 1 | 1 | 8 0 0 10.5 1.22 "run_back_spot_gun_up" "run_back_spot_gun_down" | 미확인(자동) |  |  |  |
-| `/chassis/strafe/forth` | block | [num num num num num str str]x3 | 1 | 3 | 3 2 0 6.5 3 "walk_spot_gun_up_1" "walk_spot_gun_down_1" ¦ 3 2 1 11.0 1 "run_spot_gun_up" "run_spot_gun_down" ¦ 8 0 0 13.2 1.2 "run_spot_gun_up" "run_spot_gun_down" | 미확인(자동) |  |  | 6.5 km/h move 2 km/h animation 0.37 scale --> in Run |
-| `/chassis/strafe/left` | block | [num num num num num str str]x1 | 1 | 1 | 4 0 0 10.5 1.22 "run_spot_back-strafe_gun_up" "run_spot_back-strafe_gun_down" | 미확인(자동) |  |  |  |
-| `/chassis/strafe/right` | block | [num num num num num str str]x1 | 1 | 1 | 8 0 0 13.0 1.1 "run_spot_left-strafe_gun_up" "run_spot_left-strafe_gun_down" | 미확인(자동) |  |  |  |
+| `/chassis/strafe/back` | block | [num num num num num str str]x1 | 1 | 1 | 8 0 0 10.5 1.22 "run_back_spot_gun_up" "run_back_spot_gun_down" | 문서 | 조준한 채 뒤로 이동. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/chassis/strafe/forth` | block | [num num num num num str str]x3 | 1 | 3 | 3 2 0 6.5 3 "walk_spot_gun_up_1" "walk_spot_gun_down_1" ¦ 3 2 1 11.0 1 "run_spot_gun_up" "run_spot_gun_down" ¦ 8 0 0 13.2 1.2 "run_spot_gun_up" "run_spot_gun_down" | 문서 | 조준한 채 앞으로 이동. AI가 전투 중 짧은 거리를 움직일 때 쓴다. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | 6.5 km/h move 2 km/h animation 0.37 scale --> in Run |
+| `/chassis/strafe/left` | block | [num num num num num str str]x1 | 1 | 1 | 4 0 0 10.5 1.22 "run_spot_back-strafe_gun_up" "run_spot_back-strafe_gun_down" | 문서 | 조준한 채 왼쪽으로 이동. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/chassis/strafe/right` | block | [num num num num num str str]x1 | 1 | 1 | 8 0 0 13.0 1.1 "run_spot_left-strafe_gun_up" "run_spot_left-strafe_gun_down" | 문서 | 조준한 채 오른쪽으로 이동. 값에 속도와 상체·하체 애니메이션 이름이 들어 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/chassis/swim` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/chassis/swim/fast` | block | [num num num]x1 | 1 | 1 | 5 5 180 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/chassis/swim/normal` | block | [num num num]x1 | 1 | 1 | 3 5 180 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/chassis/swim/slow` | block | [num num num]x1 | 1 | 1 | 2 5 180 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
+| `/chassis/swim/fast` | block | [num num num]x1 | 1 | 1 | 5 5 180 | 문서 | 수영, 빠름. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/chassis/swim/normal` | block | [num num num]x1 | 1 | 1 | 3 5 180 | 문서 | 수영, 보통. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/chassis/swim/slow` | block | [num num num]x1 | 1 | 1 | 2 5 180 | 문서 | 수영, 느림. 세 값은 이동 속도 km/h, 애니메이션 기준 속도 km/h, 회전 속도 도/초 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/chassismanager` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/chassismanager/current` | block | [str]x1 | 1 | 1 | "wheel" | 미확인(자동) |  |  | current stamina ¦ current resources |
+| `/chassismanager/current` | block | [str]x1 | 1 | 1 | "wheel" | 추정 | 여러 구동계 가운데 지금 쓰는 것의 이름 (추정: 값 "wheel") | 파일 구조와 값에서 추론 | current stamina ¦ current resources |
 | `/collider` | block | [str]x28 | 28 | 28 | 예: "airborne" | 미확인(자동) |  |  |  |
 | `/compoundobstacles` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/constrain` | block | [atom]x11 | 11 | 11 | ground ¦ none | 미확인(자동) |  |  |  |
@@ -1252,89 +1252,89 @@
 | `/extender[cannon]/attack` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/extender[cannon]/attack/obstacle` | block | [str]x1 | 1 | 1 | "open" | 미확인(자동) |  |  |  |
 | `/extender[cannon]/attack/workers` | block | [str str]x2 | 2 | 2 | "gunner" "commander" | 미확인(자동) |  |  |  |
-| `/extender[cannon]/move` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  | move state: cannon being pushed and which positions play animations |
+| `/extender[cannon]/move` | block | []x3 | 3 | 3 | 예: | 문서 | 대포를 밀 때의 승무원 애니메이션. 첫 값이 왼쪽 자리, 둘째 값이 오른쪽 자리이고 비워 두면 재생하지 않는다 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) | move state: cannon being pushed and which positions play animations |
 | `/extender[cannon]/move/obstacle` | block | [str]x3 | 3 | 3 | "close" | 미확인(자동) |  |  |  |
 | `/extender[cannon]/move/workers` | block | [str str atom num]x3 | 3 | 3 | "driver1" "driver2" minWorkers 2 | 미확인(자동) |  |  |  |
 | `/extender[inventory]` | block | [str]x15 | 15 | 15 | "inventory" | 미확인(자동) |  |  |  |
-| `/extender[inventory]/armor` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "accessories" | 미확인(자동) |  |  |  |
+| `/extender[inventory]/armor` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "accessories" | 추정 | 방어구 슬롯 하나. 문자열이 슬롯 이름 (추정: 값 "head", "body") | 파일 구조와 값에서 추론 |  |
 | `/extender[inventory]/armor/bone` | block | [str]x3 | 1 | 3 | "head" ¦ "IK_UpDown" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
 | `/extender[inventory]/armor/heatdamping` | block | [num]x1 | 1 | 1 | 0.6 | 미확인(자동) |  |  |  |
 | `/extender[inventory]/armor/mask` | block | [str]x3 | 1 | 3 | "head" ¦ "body" ¦ "head2" | 미확인(자동) |  |  |  |
-| `/extender[inventory]/armor/pierceabsorb` | block | [num]x3 | 1 | 3 | 20 ~ 25 | 미확인(자동) |  |  |  |
-| `/extender[inventory]/armor/volumes` | block | [str]x3 | 1 | 3 | "head" ¦ "body" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
+| `/extender[inventory]/armor/pierceabsorb` | block | [num]x3 | 1 | 3 | 20 ~ 25 | 추정 | 방어구가 흡수하는 관통량 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/extender[inventory]/armor/volumes` | block | [str]x3 | 1 | 3 | "head" ¦ "body" | 추정 | 이 방어구가 덮는 볼륨 이름 (추정: 값 "head", "body") | 파일 구조와 값에서 추론 | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/extender[inventory]/box` | block | []x15 | 15 | 15 | 예: | 미확인(자동) |  |  |  |
 | `/extender[inventory]/box/clear` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[inventory]/box/item` | block | [str num]x11 | 7 | 11 | "can" 1 ¦ "repair_kit" 5 ¦ "repair_kit" 3 ¦ "repair_kit" 1 | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
+| `/extender[inventory]/box/item` | block | [str num]x11 | 7 | 11 | "can" 1 ¦ "repair_kit" 5 ¦ "repair_kit" 3 ¦ "repair_kit" 1 | 추정 | 실려 있는 아이템과 수량 (추정: /game_entity 아래의 같은 자리와 값 형태가 같음) | 파일 구조와 값에서 추론 | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
 | `/extender[inventory]/box/size` | block | [num num]x15 | 15 | 15 | 9 10 ¦ 8 8 ¦ 9 15 ¦ 4 4 ¦ 6 10 ¦ 6 2 ¦ 9 6 ¦ 8 12 ¦ 9 8 ¦ 9 12 | 미확인(자동) |  |  | size of the window |
 | `/extender[inventory]/box/weight` | block | [num]x14 | 14 | 14 | 100 ~ 20000 | 미확인(자동) |  |  |  |
 | `/extender[inventory]/hand_left` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/extender[inventory]/hand_right` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/extender[inventory]/weapon` | block | [str]x1 | 1 | 1 | "mgun" | 미확인(자동) |  |  |  |
-| `/extender[inventory]/weapon/mask` | block | [str]x1 | 1 | 1 | "mountable" | 미확인(자동) |  |  |  |
-| `/extender[mine]` | block | [str]x2 | 2 | 2 | "mine" | 미확인(자동) |  |  |  |
-| `/extender[resources]` | block | [str]x1 | 1 | 1 | "resources" | 미확인(자동) |  |  |  |
+| `/extender[inventory]/weapon/mask` | block | [str]x1 | 1 | 1 | "mountable" | 문서 | 엔티티에 기본으로 달린 기관총 모델을 장착 무기의 모델로 대체할 때 넣는다 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
+| `/extender[mine]` | block | [str]x2 | 2 | 2 | "mine" | 추정 | 지뢰 기능 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/extender[resources]` | block | [str]x1 | 1 | 1 | "resources" | 추정 | 자원(공병의 건설 자원 등) 기능 (추정: 하위 resources) | 파일 구조와 값에서 추론 |  |
 | `/extender[resources]/resources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[resources]/resources/current` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | current stamina ¦ current resources |
-| `/extender[resources]/resources/income` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | resources regeneration per second |
-| `/extender[resources]/resources/max` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/extender[resources]/resources/current` | block | [num]x1 | 1 | 1 | 10 | 확인 | 시작할 때의 자원 | 게임 파일 주석 | current stamina ¦ current resources |
+| `/extender[resources]/resources/income` | block | [num]x1 | 1 | 1 | 0.1 | 확인 | 초당 자원 회복량 | 게임 파일 주석 | resources regeneration per second |
+| `/extender[resources]/resources/max` | block | [num]x1 | 1 | 1 | 10 | 확인 | 자원 최대치 | 게임 파일 주석 | max health ¦ max resources |
 | `/extender[stuff]` | block | [str]x5 | 5 | 5 | "stuff" | 미확인(자동) |  |  |  |
 | `/extender[stuff]/item` | block | [str]x2 | 2 | 2 | "barrel" ¦ "human" | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
 | `/extender[talk]` | block | [str]x10 | 10 | 10 | "talk" | 미확인(자동) |  |  |  |
-| `/extender[talk]/talker` | block | [str]x10 | 10 | 10 | "cannon" ¦ "tank" ¦ "human" | 미확인(자동) |  |  |  |
-| `/extender[vitality]` | block | [str]x2 | 2 | 2 | "vitality" | 미확인(자동) |  |  |  |
+| `/extender[talk]/talker` | block | [str]x10 | 10 | 10 | "cannon" ¦ "tank" ¦ "human" | 추정 | 음성 대사를 고르는 화자 종류 (추정: 값 "cannon", "tank", "human") | 파일 구조와 값에서 추론 |  |
+| `/extender[vitality]` | block | [str]x2 | 2 | 2 | "vitality" | 추정 | 체력과 스태미나 기능 (추정: 하위 health, stamina) | 파일 구조와 값에서 추론 |  |
 | `/extender[vitality]/(mod)` | mod | [str]x1 | 1 | 1 | "hardcore" | 미확인(자동) |  |  |  |
 | `/extender[vitality]/damage` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/extender[vitality]/damage/"*"` | block | [str num]x22 | 1 | 22 | 예: "head" 1.3 | 미확인(자동) |  |  |  |
-| `/extender[vitality]/damageblast` | block | [num]x2 | 1 | 2 | 1 ~ 1.2 | 미확인(자동) |  |  |  |
+| `/extender[vitality]/damage/"*"` | block | [str num]x22 | 1 | 22 | 예: "head" 1.3 | 추정 | 맞은 부위별 피해 배수. 예: "head" 1.3 (추정: 값) | 파일 구조와 값에서 추론 |  |
+| `/extender[vitality]/damageblast` | block | [num]x2 | 1 | 2 | 1 ~ 1.2 | 추정 | 폭발 피해 배수 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/extender[vitality]/damagetpc` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | Third person and direct control |
-| `/extender[vitality]/damagetpc/"*"` | block | [str num]x22 | 1 | 22 | 예: "head" 1.75 | 미확인(자동) |  |  |  |
+| `/extender[vitality]/damagetpc/"*"` | block | [str num]x22 | 1 | 22 | 예: "head" 1.75 | 추정 | 3인칭 직접 조종 중일 때의 부위별 피해 배수 (추정: 이름의 tpc와 값 "head" 1.75) | 파일 구조와 값에서 추론 |  |
 | `/extender[vitality]/health` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/extender[vitality]/health/current` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | current stamina ¦ current resources |
-| `/extender[vitality]/health/inc` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | health regeneration per second ¦ stamina regeneration/usage per second (depending on movement mode and load) |
-| `/extender[vitality]/health/max` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/extender[vitality]/health/current` | block | [num]x1 | 1 | 1 | 100 | 추정 | 시작할 때의 체력 (추정: 이름. max와 같은 인자를 받는다) | 파일 구조와 값에서 추론 | current stamina ¦ current resources |
+| `/extender[vitality]/health/inc` | block | [num]x1 | 1 | 1 | 1 | 확인 | 초당 체력 회복량 | 게임 파일 주석 | health regeneration per second ¦ stamina regeneration/usage per second (depending on movement mode and load) |
+| `/extender[vitality]/health/max` | block | [num]x1 | 1 | 1 | 100 | 확인 | 최대 체력 | 게임 파일 주석 | max health ¦ max resources |
 | `/extender[vitality]/stamina` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/extender[vitality]/stamina/current` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | current stamina ¦ current resources |
+| `/extender[vitality]/stamina/current` | block | [num]x1 | 1 | 1 | 100 | 확인 | 시작할 때의 스태미나 | 게임 파일 주석 | current stamina ¦ current resources |
 | `/extender[vitality]/stamina/inc` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | health regeneration per second ¦ stamina regeneration/usage per second (depending on movement mode and load) |
-| `/extender[vitality]/stamina/inc/fast` | block | [num num num num]x1 | 1 | 1 | -3 -3 -3 -3 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/extender[vitality]/stamina/inc/normal` | block | [num num num num]x1 | 1 | 1 | +2 +2 +1.5 +1 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/extender[vitality]/stamina/inc/slow` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/extender[vitality]/stamina/inc/stay` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 미확인(자동) |  |  |  |
-| `/extender[vitality]/stamina/inc/walk` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 미확인(자동) |  |  | single flick, walk mode |
-| `/extender[vitality]/stamina/load` | block | [num num num num]x1 | 1 | 1 | 0 25 50 75 | 미확인(자동) |  |  | equipment weight (in kg) |
-| `/extender[vitality]/stamina/max` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max health ¦ max resources |
+| `/extender[vitality]/stamina/inc/fast` | block | [num num num num]x1 | 1 | 1 | -3 -3 -3 -3 | 추정 | 질주할 때의 초당 스태미나 증감(음수면 소모). 값 넷은 load의 무게 구간별 | 파일 구조와 값에서 추론 | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
+| `/extender[vitality]/stamina/inc/normal` | block | [num num num num]x1 | 1 | 1 | +2 +2 +1.5 +1 | 추정 | 보통 달리기의 초당 스태미나 증감. 값 넷은 load의 무게 구간별 | 파일 구조와 값에서 추론 | Standard speed. Single click movement order ¦ single flick, running mode |
+| `/extender[vitality]/stamina/inc/slow` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 추정 | 느리게 달릴 때의 초당 스태미나 증감. 값 넷은 load의 무게 구간별 | 파일 구조와 값에서 추론 | Slow speed. Mainly used in mission scripting ¦ km/h |
+| `/extender[vitality]/stamina/inc/stay` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 추정 | 서 있을 때의 초당 스태미나 증감. 값 넷은 load의 무게 구간별 (추정: 원문 주석 "stamina regeneration/usage per second") | 파일 구조와 값에서 추론 |  |
+| `/extender[vitality]/stamina/inc/walk` | block | [num num num num]x1 | 1 | 1 | +3 +3 +2.5 +2 | 추정 | 걸을 때의 초당 스태미나 증감. 값 넷은 load의 무게 구간별 | 파일 구조와 값에서 추론 | single flick, walk mode |
+| `/extender[vitality]/stamina/load` | block | [num num num num]x1 | 1 | 1 | 0 25 50 75 | 확인 | 장비 무게 구간, kg. 뒤따르는 inc 표의 열이 이 구간에 대응한다 | 게임 파일 주석 | equipment weight (in kg) |
+| `/extender[vitality]/stamina/max` | block | [num]x1 | 1 | 1 | 100 | 추정 | 최대 스태미나 (추정: 이름) | 파일 구조와 값에서 추론 | max health ¦ max resources |
 | `/extender[vitality]/stamina/movement_limits` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/extender[vitality]/stamina/movement_limits/fast` | block | [num num]x1 | 1 | 1 | 1 10 | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
 | `/extender[vitality]/stamina/movement_limits/normal` | block | [num num]x1 | 1 | 1 | 0 0 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
 | `/extender[vitality]/stamina/movement_limits/slow` | block | [num num]x1 | 1 | 1 | -1 -1 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/extension` | block | [str]x1 | 1 | 1 | "human_fsm.ext" | 미확인(자동) |  |  |  |
-| `/fsm` | block | [str]x2 | 2 | 2 | "animal" ¦ "human" | 미확인(자동) |  |  |  |
+| `/fsm` | block | [str]x2 | 2 | 2 | "animal" ¦ "human" | 문서 | 상태 기계 정의. 문자열은 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/fsm/(include)` | include | [str]x15 | 1 | 15 | 예: "human_fsm/request.inc" | 미확인(자동) |  |  |  |
-| `/fsm/request` | block | [str]x7 | 1 | 7 | "dead" ¦ "idle" ¦ "move" ¦ "rotate" ¦ "stop-move" ¦ "switch-move" ¦ "swim" | 미확인(자동) |  |  |  |
-| `/fsm/request/duration` | block | [num]x2 | 1 | 2 | 2 | 미확인(자동) |  |  |  |
-| `/fsm/request/exit` | block | [str]x1 | 1 | 1 | "stop-move" | 미확인(자동) |  |  |  |
+| `/fsm/request` | block | [str]x7 | 1 | 7 | "dead" ¦ "idle" ¦ "move" ¦ "rotate" ¦ "stop-move" ¦ "switch-move" ¦ "swim" | 문서 | 상태 기계가 받는 요청 하나. 이름이 같은 태그를 가진 상태로 전환한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/fsm/request/duration` | block | [num]x2 | 1 | 2 | 2 | 문서 | 코드가 요청을 다시 부르기까지 허용되는 최대 틱 수. 넘으면 요청이 취소된다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/fsm/request/exit` | block | [str]x1 | 1 | 1 | "stop-move" | 문서 | 요청이 시간 초과로 취소될 때 자동으로 넘어갈 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/fsm/request/interrupt` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/fsm/request/priority` | block | [num]x7 | 1 | 7 | 0 ~ 50 | 미확인(자동) |  |  |  |
-| `/fsm/start` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  | games played : starting CP of each match |
-| `/fsm/state` | block | [str]x6 | 1 | 6 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" ¦ "dying" ¦ "dead" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/fsm/state/from` | block | [str]x4 | 1 | 4 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" | 미확인(자동) |  |  |  |
-| `/fsm/state/tag` | block | [str]x12 | 1 | 12 | "rotate" ¦ "dying" ¦ "stop-move" ¦ "stand" ¦ "swim" ¦ "move" ¦ "switch-move" ¦ "idle" ¦ "dead" ¦ "stored" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
-| `/fsm/state/to` | block | [str]x6 | 1 | 6 | "walk" ¦ "stand" ¦ "idle" ¦ "switch_move" | 미확인(자동) |  |  |  |
-| `/fsm/state/transit` | block | [str]x1 | 1 | 1 | "dead" | 미확인(자동) |  |  |  |
-| `/fsm/subset` | block | [str]x1 | 1 | 1 | "default" | 미확인(자동) |  |  |  |
-| `/hearingbias` | block | [num]x4 | 4 | 4 | 0 ~ 250 | 미확인(자동) |  |  | reduces units ability to hear sound signals. value = meters ¦ in meters |
-| `/lodclass` | block | [str]x25 | 25 | 25 | "decor_medium" ¦ "cannon" ¦ "stuff_weapon" ¦ "human" ¦ "stuff_small" ¦ "stuff_mine" ¦ "vehicle_plane" ¦ "part_small" ¦ "decor_landmark" ¦ "stuff_grenade" ¦ "vehicle" | 미확인(자동) |  |  |  |
+| `/fsm/request/priority` | block | [num]x7 | 1 | 7 | 0 ~ 50 | 문서 | 요청의 우선순위. 여러 요청이 겹치면 값이 큰 것을 고른다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/fsm/start` | block | [str]x1 | 1 | 1 | "stand" | 문서 | 유닛이 처음 놓이는 상태의 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | games played : starting CP of each match |
+| `/fsm/state` | block | [str]x6 | 1 | 6 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" ¦ "dying" ¦ "dead" | 문서 | 상태 하나. 문자열이 상태 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | 2hand & 1hand items ¦ to enable item ops in snipe cover |
+| `/fsm/state/from` | block | [str]x4 | 1 | 4 | "stand" ¦ "walk" ¦ "switch_move" ¦ "idle" | 문서 | 이 상태로 들어올 수 있는 출발 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/fsm/state/tag` | block | [str]x12 | 1 | 12 | "rotate" ¦ "dying" ¦ "stop-move" ¦ "stand" ¦ "swim" ¦ "move" ¦ "switch-move" ¦ "idle" ¦ "dead" ¦ "stored" | 문서 | 상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | hybrid AT grenade / mines ¦ thrower hand weapon |
+| `/fsm/state/to` | block | [str]x6 | 1 | 6 | "walk" ¦ "stand" ¦ "idle" ¦ "switch_move" | 문서 | 이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/fsm/state/transit` | block | [str]x1 | 1 | 1 | "dead" | 문서 | 조건이 되면 요청 없이 자동으로 넘어가는 다음 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/fsm/subset` | block | [str]x1 | 1 | 1 | "default" | 문서 | 상태 부분집합. 유닛의 현재 상태와 맞지 않는 상태를 선택에서 뺀다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/hearingbias` | block | [num]x4 | 4 | 4 | 0 ~ 250 | 확인 | 소리 신호를 듣는 능력을 줄인다. 값은 미터 | 게임 파일 주석 | reduces units ability to hear sound signals. value = meters ¦ in meters |
+| `/lodclass` | block | [str]x25 | 25 | 25 | "decor_medium" ¦ "cannon" ¦ "stuff_weapon" ¦ "human" ¦ "stuff_small" ¦ "stuff_mine" ¦ "vehicle_plane" ¦ "part_small" ¦ "decor_landmark" ¦ "stuff_grenade" ¦ "vehicle" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
 | `/mass` | block | [num]x7 | 7 | 7 | 1 ~ 500 | 미확인(자동) |  |  | 65kg human + 5kg bike |
 | `/nogroupmesh` | block | [num]x5 | 5 | 5 | 1 | 미확인(자동) |  |  |  |
 | `/novisibilitypatch` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/obstacleid` | block | [str]x14 | 14 | 14 | "tank" ¦ "human" ¦ "stuff" ¦ "nothing" ¦ "construction" ¦ "marine" | 미확인(자동) |  |  |  |
 | `/patherid` | block | [str]x13 | 13 | 13 | "cannon.carried" ¦ "cannon.small" ¦ "animal" ¦ "armored" ¦ "bicycle" ¦ "human" ¦ "water" ¦ "railway" ¦ "tank" ¦ "vehicle.large" | 미확인(자동) |  |  |  |
 | `/perks` | block | []x13 | 13 | 13 | 예: | 미확인(자동) |  |  |  |
-| `/perks/blastwave_modifier` | block | [num]x13 | 13 | 13 | 5 ~ 20 | 미확인(자동) |  |  |  |
-| `/perks/component` | block | [str]x2 | 2 | 2 | "body" | 미확인(자동) |  |  |  |
+| `/perks/blastwave_modifier` | block | [num]x13 | 13 | 13 | 5 ~ 20 | 추정 | 폭풍 피해에 곱하는 배수 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/perks/component` | block | [str]x2 | 2 | 2 | "body" | 추정 | 내구도를 정하는 부품 하나. 문자열이 부품 이름이고, tag "이름"이면 그 태그가 붙은 부품 전부 (추정: 값 "body", tag "wheel") | 파일 구조와 값에서 추론 |  |
 | `/perks/component/("global_damage_mod")` | macro | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/perks/component/health` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | health multiplier from soldier settings ¦ A better way to translate this is that it will deal 2x damage to the enemy. In the editor it is hard to understand, as if you're switching between players it will always display the hitpoints of "player". But the enemy units on that particular instance will have half the total health. |
-| `/perks/component/health/hp` | block | [num]x2 | 2 | 2 | 60 ~ 120 | 미확인(자동) |  |  |  |
-| `/perks/component/health/hp_broken` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  | destroys component and cannot be repaired |
+| `/perks/component/health/hp` | block | [num]x2 | 2 | 2 | 60 ~ 120 | 추정 | 부품의 체력. *_durability 매크로의 인자가 그대로 들어간다 (추정: 이름과 매크로 정의) | 파일 구조와 값에서 추론 |  |
+| `/perks/component/health/hp_broken` | block | [num]x2 | 2 | 2 | 1 | 확인 | 부품이 고장 난 뒤 이만큼 더 피해를 받으면 파괴되어 수리할 수 없게 된다 | 게임 파일 주석 | destroys component and cannot be repaired |
 | `/placer` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/placer/crew` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/placer/place` | block | [str]x1 | 1 | 1 | "driver" | 미확인(자동) |  |  |  |
@@ -1344,9 +1344,9 @@
 | `/rimlight` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/sensor` | block | []x12 | 12 | 12 | 예: | 미확인(자동) |  |  |  |
 | `/sensor/attackzone` | block | [num]x1 | 1 | 1 | 2.5 | 미확인(자동) |  |  |  |
-| `/sensor/informrange` | block | [num num]x2 | 2 | 2 | 80 100 ¦ 50 75 | 미확인(자동) |  |  | first = AI , second = USER |
-| `/sensor/minrecognizetime` | block | [num]x1 | 1 | 1 | 0.01 | 미확인(자동) |  |  |  |
-| `/sensor/recognizetime` | block | [num]x2 | 2 | 2 | 0.01 | 미확인(자동) |  |  |  |
+| `/sensor/informrange` | block | [num num]x2 | 2 | 2 | 80 100 ¦ 50 75 | 확인 | 아군끼리 발견 정보를 전달하는 거리. 첫 값은 AI, 둘째 값은 사용자 | 게임 파일 주석 | first = AI , second = USER |
+| `/sensor/minrecognizetime` | block | [num]x1 | 1 | 1 | 0.01 | 추정 | 대상을 식별하는 데 걸리는 최소 시간 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/sensor/recognizetime` | block | [num]x2 | 2 | 2 | 0.01 | 추정 | 대상을 식별하는 데 걸리는 시간 (추정: 이름) | 파일 구조와 값에서 추론 |  |
 | `/sensor/visor` | block | [str]x31 | 12 | 31 | "main" ¦ "none" ¦ "around" ¦ "hearing" ¦ "eyes" ¦ "driver" ¦ "human" ¦ "peripheral" ¦ "telescope" | 미확인(자동) |  |  |  |
 | `/sensor/visor/(mod)` | mod | [str]x2 [atom str]x2 | 1 | 4 | "mp" ¦ not "mp" | 미확인(자동) |  |  |  |
 | `/sensor/visor/bone` | block | [str]x24 | 11 | 24 | "visor" ¦ "visor2" ¦ "visor1" ¦ "hearing_bone" ¦ "foresight1" ¦ "visor3" ¦ "basis" ¦ "foresight3" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
@@ -1355,28 +1355,28 @@
 | `/simulation/able` | block | [num]x14 | 14 | 14 | 0 ~ 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/simulation/disablelinked` | block | [num]x6 | 6 | 6 | 1 | 미확인(자동) |  |  |  |
 | `/simulation/state` | block | [num]x3 | 3 | 3 | 0 ~ 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/simulatorid` | block | [str]x6 | 6 | 6 | "grenade" ¦ "airborne" ¦ "human" ¦ "water" | 미확인(자동) |  |  |  |
+| `/simulatorid` | block | [str]x6 | 6 | 6 | "grenade" ¦ "airborne" ¦ "human" ¦ "water" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |
 | `/skeleton` | block | []x7 | 7 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/bone` | block | [str]x7 | 7 | 7 | "hearing_bone" ¦ "mined_view" ¦ "basis" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x3 | 3 | 3 | 0 0 1 0 -1 0 1 0 0 0 0 0 ¦ 1 0 0 0 -1 0 0 0 1 0 0 0 | 미확인(자동) |  |  |  |
-| `/skeleton/bone/position` | block | [num num num]x4 | 4 | 4 | 0 0 40 ¦ 0 0 50 ¦ 0 0 70 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x3 | 3 | 3 | 0 0 1 0 -1 0 1 0 0 0 0 0 ¦ 1 0 0 0 -1 0 0 0 1 0 0 0 | 추정 | 뼈대의 방향과 위치를 담은 3x4 행렬 (추정: Call to Arms 위키도 추정이라고 밝힘) | calltoarms.fandom.com/wiki/Modding/Files (2026-10-12 확인) |  |
+| `/skeleton/bone/position` | block | [num num num]x4 | 4 | 4 | 0 0 40 ¦ 0 0 50 ¦ 0 0 70 | 추정 | 뼈대의 위치 x y z (추정: Call to Arms 위키도 추정이라고 밝힘) | calltoarms.fandom.com/wiki/Modding/Files (2026-10-12 확인) |  |
 | `/targetclass` | block | [str]x9 [str str]x5 | 14 | 14 | "cannon_bullet" ¦ "car" ¦ "tank_medium" "ap fg bullet" ¦ "airborne" ¦ "armoredcar" "bullet" ¦ "cannon_small" "ap fg" ¦ "human" ¦ "howitzer" | 미확인(자동) |  |  |  |
 | `/targetselector` | block | [str]x14 | 14 | 14 | "cannon_bullet" ¦ "car_bullet" ¦ "tank_medium" ¦ "airborne_bullet" ¦ "tank_zenite" ¦ "cannon_small" ¦ "human" ¦ "cannon_zenite" ¦ "cannon_aa" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x48 | 20 | 48 | 예: "body" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/volume/able` | block | []x27 [atom]x13 | 16 | 40 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
+| `/volume/able/blast` | block | []x2 | 2 | 2 | 예: | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/volume/able/bullet` | block | []x2 | 2 | 2 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/contact` | block | []x3 [num]x1 | 4 | 4 | 0 | 미확인(자동) |  |  |  |
 | `/volume/able/contact_ground` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/volume/able/nolook` | block | [num]x9 | 1 | 9 | 1 | 미확인(자동) |  |  |  |
 | `/volume/able/nowounddecal` | block | []x3 | 2 | 3 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/obstacle` | block | [num]x12 []x1 | 5 | 13 | 0 | 미확인(자동) |  |  |  |
+| `/volume/able/obstacle` | block | [num]x12 []x1 | 5 | 13 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/select` | block | []x6 | 5 | 6 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/touch` | block | []x10 | 9 | 10 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/visible` | block | [num]x4 []x2 | 4 | 6 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/volume/density` | block | [num]x10 | 8 | 10 | 0 | 미확인(자동) |  |  |  |
+| `/volume/able/touch` | block | []x10 | 9 | 10 | 예: | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/visible` | block | [num]x4 []x2 | 4 | 6 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/volume/density` | block | [num]x10 | 8 | 10 | 0 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/volume/material` | block | [str]x1 | 1 | 1 | "fabric" | 미확인(자동) |  |  |  |
-| `/volume/tags` | block | [str str]x8 [str]x5 | 2 | 13 | "no_target" "fire" ¦ "fire" ¦ "body" "fire" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/volume/tags` | block | [str str]x8 [str]x5 | 2 | 13 | "no_target" "fire" ¦ "fire" ¦ "body" "fire" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/volume/thickness` | block | [num]x23 | 11 | 23 | 0 ~ 5 | 미확인(자동) |  |  |  |
 | `/weaponry` | block | []x7 | 7 | 7 | 예: | 미확인(자동) |  |  |  |
 | `/weaponry/manualaccuracy` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
@@ -1387,7 +1387,7 @@
 | `/weaponry/place/charger` | block | [str]x2 | 2 | 2 | "gunner" | 미확인(자동) |  |  |  |
 | `/weaponry/place/gunner` | block | [str]x2 | 2 | 2 | "gunner" | 미확인(자동) |  |  |  |
 | `/weaponry/place/linkanimation` | block | [str]x3 | 3 | 3 | "off" ¦ "on" | 미확인(자동) |  |  |  |
-| `/weaponry/place/linkbone` | block | [str]x3 | 3 | 3 | "mgun" ¦ "right_hand" | 미확인(자동) |  |  |  |
+| `/weaponry/place/linkbone` | block | [str]x3 | 3 | 3 | "mgun" ¦ "right_hand" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/weaponry/place/rotate` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/weaponry/place/sequentialaim` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | was at 1 |
 | `/weaponry/tpcinstantaiming` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -2211,9 +2211,9 @@
 | `/"*"/inflammation_time` | block | [num]x40 | 15 | 40 | 0.1 ~ 10000 | 미확인(자동) |  |  |  |
 | `/"*"/level` | block | []x744 | 13 | 744 | 예: | 미확인(자동) |  |  | 0 ¦ 1 |
 | `/"*"/level/(mod)` | mod | [str]x3 | 1 | 3 | "hardcore" | 미확인(자동) |  |  |  |
-| `/"*"/level/blur_mask` | block | [str]x260 | 13 | 260 | "/texture/common/environment/lens_effects/vehicle_telescope_mask" ¦ "/texture/common/environment/lens_effects/zoom_vignette_infantry_01_mask" ¦ "/texture/common/environment/lens_effects/zoom_vignette_vehicle_01_mask" ¦ "/texture/common/environment/lens_effects/zoom_vignette_binoculars_mask" | 미확인(자동) |  |  |  |
-| `/"*"/level/blur_strength` | block | [num]x540 | 13 | 540 | 2 ~ 10 | 미확인(자동) |  |  | blur strength modifier |
-| `/"*"/level/camera` | block | [str]x723 | 13 | 723 | 예: "human_zoom0" | 미확인(자동) |  |  | in reality it did not have zoom3 ¦ magnification x4 |
+| `/"*"/level/blur_mask` | block | [str]x260 | 13 | 260 | "/texture/common/environment/lens_effects/vehicle_telescope_mask" ¦ "/texture/common/environment/lens_effects/zoom_vignette_infantry_01_mask" ¦ "/texture/common/environment/lens_effects/zoom_vignette_vehicle_01_mask" ¦ "/texture/common/environment/lens_effects/zoom_vignette_binoculars_mask" | 추정 | 가장자리 흐림 효과의 마스크 텍스처 (추정: 값이 텍스처 경로) | 파일 구조와 값에서 추론 |  |
+| `/"*"/level/blur_strength` | block | [num]x540 | 13 | 540 | 2 ~ 10 | 추정 | 가장자리 흐림의 세기 (추정: 이름) | 파일 구조와 값에서 추론 | blur strength modifier |
+| `/"*"/level/camera` | block | [str]x723 | 13 | 723 | 예: "human_zoom0" | 확인 | 이 단계에서 쓰는 카메라 프리셋. 배율을 정한다. human_zoom4는 4배 | 게임 파일 주석 | in reality it did not have zoom3 ¦ magnification x4 |
 | `/"*"/level/delta` | block | [num]x270 | 13 | 270 | 0 ~ 100 | 미확인(자동) |  |  | distance delta, effects number of steps in between near and far ¦ distance delta |
 | `/"*"/level/disable_fow` | block | [num]x437 []x1 | 13 | 438 | 0 | 미확인(자동) |  |  | not disabled fog of war |
 | `/"*"/level/distance` | block | [num]x261 | 13 | 261 | 1 ~ 300 | 미확인(자동) |  |  | activation distance |
@@ -2221,19 +2221,19 @@
 | `/"*"/level/faroffset` | block | [num num num]x279 | 13 | 279 | 예: 0 11 22 | 미확인(자동) |  |  | camera position offect at distanceMax |
 | `/"*"/level/gunnerviewoff` | block | [num]x11 | 5 | 11 | 1 | 미확인(자동) |  |  |  |
 | `/"*"/level/hide_crosshair` | block | [num]x3 []x1 | 2 | 4 | 1 | 미확인(자동) |  |  |  |
-| `/"*"/level/lens_dirt_mask` | block | [str]x222 | 11 | 222 | "/texture/common/environment/lens_effects/dirty_lens_scope_02" ¦ "/texture/common/environment/lens_effects/dirty_lens_scope_01" | 미확인(자동) |  |  |  |
-| `/"*"/level/linkbone` | block | [str]x531 | 13 | 531 | 예: "head" | 미확인(자동) |  |  |  |
+| `/"*"/level/lens_dirt_mask` | block | [str]x222 | 11 | 222 | "/texture/common/environment/lens_effects/dirty_lens_scope_02" ¦ "/texture/common/environment/lens_effects/dirty_lens_scope_01" | 추정 | 렌즈 얼룩 효과에 쓰는 텍스처 (추정: 값이 텍스처 경로) | 파일 구조와 값에서 추론 |  |
+| `/"*"/level/linkbone` | block | [str]x531 | 13 | 531 | 예: "head" | 추정 | 조준 카메라가 붙는 뼈대 (추정: 값 "head") | 파일 구조와 값에서 추론 |  |
 | `/"*"/level/manualaccuracyzoom` | block | []x262 | 13 | 262 | 예: | 미확인(자동) |  |  |  |
-| `/"*"/level/mouse_speed_factor` | block | [num]x2 | 1 | 2 | 0.6 ~ 0.8 | 미확인(자동) |  |  |  |
+| `/"*"/level/mouse_speed_factor` | block | [num]x2 | 1 | 2 | 0.6 ~ 0.8 | 추정 | 조준 중 마우스 감도 배수 (추정: 이름과 값 0.6 ~ 0.8) | 파일 구조와 값에서 추론 |  |
 | `/"*"/level/nearoffset` | block | [num num num]x279 | 13 | 279 | 예: 10 11 12 | 미확인(자동) |  |  | camera position offect at distanceMin |
 | `/"*"/level/no_grain` | block | []x261 | 13 | 261 | 예: | 미확인(자동) |  |  | no film grain (graphics setting) |
 | `/"*"/level/no_rim_light` | block | []x271 | 13 | 271 | 예: | 미확인(자동) |  |  | no rim light (graphics setting) |
 | `/"*"/level/offset` | block | [num num num]x329 | 13 | 329 | 예: 3 8 4.75 | 미확인(자동) |  |  |  |
-| `/"*"/level/refraction_mask` | block | [str]x226 | 11 | 226 | "/texture/common/environment/lens_effects/vehicle_telescope_base_bp" ¦ "/texture/common/environment/lens_effects/zoom_vignette_artillery_bp" ¦ "/texture/common/environment/lens_effects/zoom_vignette_vehicle_01_bp" ¦ "/texture/common/environment/lens_effects/vehicle_telescope_eng_aa_bp" | 미확인(자동) |  |  |  |
-| `/"*"/level/scope_vignette` | block | [str]x213 | 10 | 213 | 예: "/texture/common/environment/lens_effects/vehicle_telescope_eng_aa" | 미확인(자동) |  |  |  |
+| `/"*"/level/refraction_mask` | block | [str]x226 | 11 | 226 | "/texture/common/environment/lens_effects/vehicle_telescope_base_bp" ¦ "/texture/common/environment/lens_effects/zoom_vignette_artillery_bp" ¦ "/texture/common/environment/lens_effects/zoom_vignette_vehicle_01_bp" ¦ "/texture/common/environment/lens_effects/vehicle_telescope_eng_aa_bp" | 추정 | 굴절 효과의 마스크 텍스처 (추정: 값이 텍스처 경로) | 파일 구조와 값에서 추론 |  |
+| `/"*"/level/scope_vignette` | block | [str]x213 | 10 | 213 | 예: "/texture/common/environment/lens_effects/vehicle_telescope_eng_aa" | 추정 | 조준경 테두리로 쓰는 텍스처 (추정: 값이 lens_effects 폴더의 텍스처 경로) | 파일 구조와 값에서 추론 |  |
 | `/"*"/level/soundeffect` | block | [str]x224 | 11 | 224 | "enclosed_vehicle" ¦ "opentop_vehicle" | 미확인(자동) |  |  |  |
 | `/"*"/level/vignette` | block | [str]x47 | 9 | 47 | "/texture/common/environment/lens_effects/zoom_vignette_infantry_01" ¦ "/texture/common/environment/lens_effects/zoom_vignette_artillery_01" ¦ "/texture/common/environment/lens_effects/zoom_vignette_vehicle_01" | 미확인(자동) |  |  |  |
-| `/"*"/level/vignette_fade_speed` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | factoring the speed at which the vignette fades in/out |
+| `/"*"/level/vignette_fade_speed` | block | [num]x1 | 1 | 1 | 5 | 확인 | 조준경 테두리(비네트)가 나타나고 사라지는 속도 계수 | 게임 파일 주석 | factoring the speed at which the vignette fades in/out |
 | `/"*"/level/vignette_gloss` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/"*"/level/vision_modes_active` | block | []x244 | 12 | 244 | 예: | 미확인(자동) |  |  |  |
 | `/"*"/level/with_owner` | block | []x55 | 10 | 55 | 예: | 미확인(자동) |  |  | removes shield to prevent clipping |
@@ -3405,12 +3405,12 @@
 | `/(define "accuracy_battle_rifle")/("rifle_range")` | macro | [call:r0 call:r1 call:r2 call:r3 call:globalaccuracy]x1 | 1 | 1 | r0 ( 0.3 ) r1 ( 0.6 ) r2 ( 1.2 ) r3 ( 1.80 ) globalaccuracy ( 1.00 ) | 미확인(자동) |  |  |  |
 | `/(define "accuracy_by_motion")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "accuracy_by_motion")/accuracybymotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "accuracy_by_motion")/accuracybymotion/byangularspeed` | block | [param]x1 | 1 | 1 | %accuracy_by_angular | 미확인(자동) |  |  |  |
-| `/(define "accuracy_by_motion")/accuracybymotion/bylinearspeed` | block | [param]x1 | 1 | 1 | %accuracy_by_linear | 미확인(자동) |  |  |  |
-| `/(define "accuracy_by_motion")/accuracybymotion/disordertime` | block | [param]x1 | 1 | 1 | %disorder_time | 미확인(자동) |  |  | s |
-| `/(define "accuracy_by_motion")/accuracybymotion/maxangularspeed` | block | [param]x1 | 1 | 1 | %max_angular | 미확인(자동) |  |  | deg/s |
-| `/(define "accuracy_by_motion")/accuracybymotion/maxlinearspeed` | block | [param]x1 | 1 | 1 | %max_linear | 미확인(자동) |  |  | km/h |
-| `/(define "accuracy_by_motion")/accuracybymotion/ordertime` | block | [param]x1 | 1 | 1 | %order_time | 미확인(자동) |  |  | s |
+| `/(define "accuracy_by_motion")/accuracybymotion/byangularspeed` | block | [param]x1 | 1 | 1 | %accuracy_by_angular | 추정 | 회전 속도에 따른 명중률 보정의 세기 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/(define "accuracy_by_motion")/accuracybymotion/bylinearspeed` | block | [param]x1 | 1 | 1 | %accuracy_by_linear | 추정 | 이동 속도에 따른 명중률 보정의 세기 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/(define "accuracy_by_motion")/accuracybymotion/disordertime` | block | [param]x1 | 1 | 1 | %disorder_time | 추정 | 움직이기 시작한 뒤 명중률이 흐트러지는 데 걸리는 시간, 초 (추정: 이름과 원문 주석의 단위) | 파일 구조와 값에서 추론 | s |
+| `/(define "accuracy_by_motion")/accuracybymotion/maxangularspeed` | block | [param]x1 | 1 | 1 | %max_angular | 추정 | 명중률 보정을 계산할 때 기준이 되는 최대 회전 속도, 도/초 (추정: 이름과 원문 주석의 단위) | 파일 구조와 값에서 추론 | deg/s |
+| `/(define "accuracy_by_motion")/accuracybymotion/maxlinearspeed` | block | [param]x1 | 1 | 1 | %max_linear | 추정 | 명중률 보정을 계산할 때 기준이 되는 최대 이동 속도, km/h (추정: 이름과 원문 주석의 단위) | 파일 구조와 값에서 추론 | km/h |
+| `/(define "accuracy_by_motion")/accuracybymotion/ordertime` | block | [param]x1 | 1 | 1 | %order_time | 추정 | 멈춘 뒤 명중률이 회복되는 데 걸리는 시간, 초 (추정: 이름과 원문 주석의 단위) | 파일 구조와 값에서 추론 | s |
 | `/(define "accuracy_hmg_tank")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "accuracy_hmg_tank")/("hmg_range")` | macro | [call:r1 call:r2 call:r3 call:globalaccuracy]x1 | 1 | 1 | r1 ( 0.4 ) r2 ( 1.2 ) r3 ( 1.4 ) globalaccuracy ( 1.00 ) | 미확인(자동) |  |  |  |
 | `/(define "accuracy_hmg")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3468,42 +3468,42 @@
 | `/(define "apcr_slope_multiplier")/overmatchfixed` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "apcr_slope_multiplier")/overmatchfixed/#row` | block | [num num]x19 | 1 | 19 | 예: 0 1.00 | 미확인(자동) |  |  |  |
 | `/(define "armor health")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor health")/minimumdamagemodifier` | block | [expr]x1 | 1 | 1 | ( * 1.0 %damage ) | 미확인(자동) |  |  |  |
+| `/(define "armor health")/minimumdamagemodifier` | block | [expr]x1 | 1 | 1 | ( * 1.0 %damage ) | 문서 | 최소 피해. 계산식은 출처에 설명되어 있지 않다 | Call to Arms Steam 토론 steamcommunity.com/app/302670/discussions/0/3647273545681516166 (2026-10-12 확인) |  |
 | `/(define "armor_75mm")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_75mm")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_75mm")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_75mm")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_75mm")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_75mm")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_75mm")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_75mm")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 15 | 미확인(자동) |  |  |  |
+| `/(define "armor_75mm")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 15 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_adjustable")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_adjustable")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_adjustable")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_adjustable")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_adjustable")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_adjustable")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_adjustable")/armor/setting/threshold/blast/value` | block | [param]x1 [num]x1 | 1 | 2 | 10 | 미확인(자동) |  |  |  |
+| `/(define "armor_adjustable")/armor/setting/threshold/blast/value` | block | [param]x1 [num]x1 | 1 | 2 | 10 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_adjustable")/armor/setting/threshold/pierce` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Minimum penetration necessary to leave a ricochet/pen mark on the armour |
-| `/(define "armor_adjustable")/armor/setting/threshold/pierce/calibre` | block | [param]x1 | 1 | 1 | %calibre | 미확인(자동) |  |  |  |
-| `/(define "armor_adjustable")/armor/setting/threshold/pierce/value` | block | [param]x1 | 1 | 1 | %thresh_ap | 미확인(자동) |  |  |  |
-| `/(define "armor_adjustable")/armor/setting/volumes` | block | [str]x8 | 1 | 8 | "body*" ¦ "box*" ¦ "wire*" ¦ "wires*" ¦ "wood*" ¦ "door*" ¦ "roof*" ¦ "floor*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
+| `/(define "armor_adjustable")/armor/setting/threshold/pierce/calibre` | block | [param]x1 | 1 | 1 | %calibre | 문서 | 관통 피해의 문턱을 구경으로 정한다. 단위 mm | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "armor_adjustable")/armor/setting/threshold/pierce/value` | block | [param]x1 | 1 | 1 | %thresh_ap | 문서 | 관통 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "armor_adjustable")/armor/setting/volumes` | block | [str]x8 | 1 | 8 | "body*" ¦ "box*" ¦ "wire*" ¦ "wires*" ¦ "wood*" ¦ "door*" ¦ "roof*" ¦ "floor*" | 문서 | 이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/(define "armor_bunker_medium")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_bunker_medium")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_bunker_medium")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_bunker_medium")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_bunker_medium")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_bunker_medium")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_bunker_medium")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_bunker_medium")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 35 | 미확인(자동) |  |  |  |
+| `/(define "armor_bunker_medium")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 35 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_construction")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_construction")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_construction")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
-| `/(define "armor_construction")/armor/setting/ray_cast_thickness` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
+| `/(define "armor_construction")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "armor_construction")/armor/setting/ray_cast_thickness` | block | []x2 | 1 | 2 | 예: | 문서 | 장갑 두께를 재는 방법. 1이면 탄이 볼륨을 지나간 거리로, 0이면 thickness 값으로 잰다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_construction")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_construction")/armor/setting/threshold/pierce` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | Minimum penetration necessary to leave a ricochet/pen mark on the armour |
-| `/(define "armor_construction")/armor/setting/threshold/pierce/koef` | block | [num]x2 | 1 | 2 | 1 | 미확인(자동) |  |  |  |
-| `/(define "armor_construction")/armor/setting/volumes` | block | [str]x8 | 1 | 8 | "body*" ¦ "box*" ¦ "wire*" ¦ "wires*" ¦ "wood*" ¦ "door*" ¦ "roof*" ¦ "floor*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
+| `/(define "armor_construction")/armor/setting/threshold/pierce/koef` | block | [num]x2 | 1 | 2 | 1 | 문서 | 관통 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "armor_construction")/armor/setting/volumes` | block | [str]x8 | 1 | 8 | "body*" ¦ "box*" ¦ "wire*" ¦ "wires*" ¦ "wood*" ¦ "door*" ¦ "roof*" ¦ "floor*" | 문서 | 이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/(define "armor_disable_damage_acc")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_disable_damage_acc")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_disable_damage_acc")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_disable_damage_acc")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_disable_damage_acc")/armor/setting/disable_damage_acc` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_dragontooth")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_dragontooth")/("armor_adjustable")` | macro | [call:thresh_fg call:thresh_ap call:calibre]x1 | 1 | 1 | thresh_fg ( 13 ) thresh_ap ( 60 ) calibre ( 37 ) | 미확인(자동) |  |  |  |
@@ -3513,26 +3513,26 @@
 | `/(define "armor_fence_wood")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_fence_wood")/("armor_use_volume_thickness")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_fence_wood")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_fence_wood")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_fence_wood")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_fence_wood")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_fence_wood")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_fence_wood")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 4.75 | 미확인(자동) |  |  |  |
+| `/(define "armor_fence_wood")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 4.75 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_fragile")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_fragile")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_fragile")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_fragile")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_fragile")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_fragile")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_fragile")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_fragile")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 2 | 미확인(자동) |  |  |  |
+| `/(define "armor_fragile")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 2 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_glass")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_glass")/("armor_adjustable")` | macro | [call:thresh_fg call:thresh_ap call:calibre]x1 | 1 | 1 | thresh_fg ( 6 ) thresh_ap ( 15 ) calibre ( 0 ) | 미확인(자동) |  |  |  |
 | `/(define "armor_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_heavy")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_heavy")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_heavy")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_heavy")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_heavy")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_heavy")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_heavy")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 22 ~ 24 | 미확인(자동) |  |  |  |
+| `/(define "armor_heavy")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 22 ~ 24 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_hedgehog")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_hedgehog")/("armor_adjustable")` | macro | [call:thresh_fg call:thresh_ap call:calibre]x1 | 1 | 1 | thresh_fg ( 35 ) thresh_ap ( 80 ) calibre ( 57 ) | 미확인(자동) |  |  |  |
 | `/(define "armor_house_concrete_light")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3546,40 +3546,40 @@
 | `/(define "armor_light")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_light")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_light")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_light")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_light")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_light")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_light")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_light")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 10 | 미확인(자동) |  |  |  |
+| `/(define "armor_light")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 10 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_medium")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_medium")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_medium")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_medium")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_medium")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_medium")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_medium")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_medium")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 12 ~ 13 | 미확인(자동) |  |  |  |
+| `/(define "armor_medium")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 12 ~ 13 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_post")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_post")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_post")/("armor_use_volume_thickness")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_post")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_post")/armor/setting` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  |  |
+| `/(define "armor_post")/armor/setting` | block | [str]x1 | 1 | 1 | "body" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_post")/armor/setting/threshold` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_post")/armor/setting/threshold/blast` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_post")/armor/setting/threshold/blast/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
+| `/(define "armor_post")/armor/setting/threshold/blast/value` | block | [num]x1 | 1 | 1 | 10 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_sandbag_woodbeam")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_sandbag_woodbeam")/("armor_construction")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_sandbag_woodbeam")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_sandbag_woodbeam")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "armor_sandbag_woodbeam")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_sandbag_woodbeam")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_sandbag_woodbeam")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "armor_sandbag_woodbeam")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 10 | 미확인(자동) |  |  |  |
+| `/(define "armor_sandbag_woodbeam")/armor/setting/threshold/blast/value` | block | [num]x2 | 1 | 2 | 10 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_sandbag")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_sandbag")/("armor_adjustable")` | macro | [call:thresh_fg call:thresh_ap call:calibre]x1 | 1 | 1 | thresh_fg ( 10 ) thresh_ap ( 15 ) calibre ( 30 ) | 미확인(자동) |  |  |  |
 | `/(define "armor_stack")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_stack")/("armor_adjustable")` | macro | [call:thresh_fg call:thresh_ap call:calibre]x1 | 1 | 1 | thresh_fg ( 10 ) thresh_ap ( 15 ) calibre ( 15 ) | 미확인(자동) |  |  |  |
 | `/(define "armor_use_volume_thickness")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_use_volume_thickness")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "armor_use_volume_thickness")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
-| `/(define "armor_use_volume_thickness")/armor/setting/ray_cast_thickness` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  |  |
+| `/(define "armor_use_volume_thickness")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "armor_use_volume_thickness")/armor/setting/ray_cast_thickness` | block | [num]x2 | 1 | 2 | 0 | 문서 | 장갑 두께를 재는 방법. 1이면 탄이 볼륨을 지나간 거리로, 0이면 thickness 값으로 잰다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "armor_wires")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "armor_wires")/("armor_light")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "at_grenade_blast")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3663,9 +3663,9 @@
 | `/(define "base_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "base_vol")/volume` | block | [str]x1 | 1 | 1 | "base%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "base_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "base_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "base_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "base_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "base_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "base_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "base_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "base_vol")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "bedford_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bedford_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
@@ -3678,22 +3678,22 @@
 | `/(define "bf110_sound")/on/link_sound` | block | [str str]x11 | 1 | 11 | "engine1_start" "vehicle/airborne/bf109/109_engine_start" ¦ "engine1_idle" "vehicle/airborne/bf109/109_engine_idle" ¦ "engine1_full" "vehicle/airborne/bf109/109_engine_full" ¦ "engine2_idle" "vehicle/airborne/bf109/110_engine2_idle" ¦ "engine2_start" "vehicle/airborne/bf109/110_engine2_start" ¦ "engine2_full" "vehicle/airborne/bf109/110_engine2_full" ¦ "engine_accelerate" "vehicle/airborne/bf109/109_accelerate" ¦ "engine_decelerate" "vehicle/airborne/bf109/109_decelerate" ¦ "engine_stop" "vehicle/airborne/bf109/109_engine_stop" ¦ "gear_work" "vehicle/airborne/bf109/109_landing_gear" ¦ "bkg_plane" "vehicle/airborne/bkg/bkg_plane_01" | 미확인(자동) |  |  |  |
 | `/(define "blast_protection")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "blast_protection")/armor` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "blast_protection")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 미확인(자동) |  |  |  |
+| `/(define "blast_protection")/armor/setting` | block | [str]x2 | 1 | 2 | "body" ¦ "roof" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "blast_protection")/armor/setting/threshold` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "blast_protection")/armor/setting/threshold/blast` | block | []x2 | 1 | 2 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "blast_protection")/armor/setting/threshold/blast/value` | block | [param]x2 | 1 | 2 | %dmg | 미확인(자동) |  |  |  |
+| `/(define "blast_protection")/armor/setting/threshold/blast/value` | block | [param]x2 | 1 | 2 | %dmg | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "body_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "body_vol")/volume` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "body_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "body_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "body_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "body_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "body_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "bole_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bole_vol")/volume` | block | [str]x1 | 1 | 1 | "bole%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "bole_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "bole_vol")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "bole_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "bole_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "bole_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "bole_vol")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "bole_vol")/volume/able/touch` | block | [num]x1 | 1 | 1 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "bole_vol")/volume/able/visible` | block | [num]x1 | 1 | 1 | 0 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "bole_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "bole" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "bole_vol")/volume/thickness` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "bonealign")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "bonealign")/bone` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Land;"}} ¦ "}} |
@@ -3768,7 +3768,7 @@
 | `/(define "cliff_vol")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/(define "cliff_vol")/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "cliff_vol")/volume/able/contact_ground` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "cliff_vol")/volume/able/obstacle` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
+| `/(define "cliff_vol")/volume/able/obstacle` | block | []x1 | 1 | 1 | 예: | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "con_mortar_barrage")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "con_mortar_barrage")/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "con_mortar_barrage")/on/if` | block | [atom atom str]x1 | 1 | 1 | not tagged "fired" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -3779,16 +3779,16 @@
 | `/(define "cookoff_rand_explosion")/delay` | block | [param param]x1 | 1 | 1 | %0 %1 | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "cookoff_rand_explosion")/delay/call_synced` | block | [str]x2 | 1 | 2 | "kill_cookoff" ¦ "explosion" | 미확인(자동) |  |  | hatch fire ¦ normal cookoff |
 | `/(define "crate_ammo_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "crate_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "crate_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "crate_ammo_heavy")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "crate_ammo_heavy")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "crate_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 100 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 100 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -3803,7 +3803,7 @@
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 10 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "crew_ani_delay")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crew_ani_delay")/delay` | block | [param str]x1 | 1 | 1 | %time "%delay" | 미확인(자동) |  |  | Delay set to match reload time of main weapon ¦ reload time -0.5 |
 | `/(define "crew_ani_delay")/delay/with_linked_entity` | block | [str]x1 | 1 | 1 | "%crew" | 미확인(자동) |  |  |  |
@@ -3926,20 +3926,20 @@
 | `/(define "declare_fire_volume")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volume")/volume` | block | [str]x4 | 2 | 4 | "fire%0" ¦ "smoke%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "declare_fire_volume")/volume/able` | block | [atom]x4 | 2 | 4 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "declare_fire_volume")/volume/tags` | block | [str]x4 | 2 | 4 | "fire" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "declare_fire_volume")/volume/tags` | block | [str]x4 | 2 | 4 | "fire" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "declare_fire_volumes")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volumes")/("declare_fire_volume")` | macro | [atom num]x20 | 2 | 20 | args 0 ¦ args 1 ¦ args 2 ¦ args 3 ¦ args 4 ¦ args 5 ¦ args 6 ¦ args 7 ¦ args 8 ¦ args 9 | 미확인(자동) |  |  |  |
 | `/(define "declare_fire_volumes")/props` | block | [str]x2 | 2 | 2 | "burning_old" | 미확인(자동) |  |  |  |
 | `/(define "do_healing_lie")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "do_healing_lie")/state` | block | [str]x3 | 1 | 3 | "lie_healing_%0_begin" ¦ "lie_healing_%0" ¦ "lie_healing_%0_end" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/(define "do_healing_lie")/state/from` | block | [str]x1 | 1 | 1 | "lie" | 미확인(자동) |  |  |  |
-| `/(define "do_healing_lie")/state/tag` | block | [str]x7 | 1 | 7 | "down" ¦ "healing" ¦ "heal-%0" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
-| `/(define "do_healing_lie")/state/to` | block | [str]x3 | 1 | 3 | "lie_healing_%0" ¦ "lie_healing_%0_end" ¦ "lie" | 미확인(자동) |  |  |  |
+| `/(define "do_healing_lie")/state/from` | block | [str]x1 | 1 | 1 | "lie" | 문서 | 이 상태로 들어올 수 있는 출발 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "do_healing_lie")/state/tag` | block | [str]x7 | 1 | 7 | "down" ¦ "healing" ¦ "heal-%0" | 문서 | 상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | hybrid AT grenade / mines ¦ thrower hand weapon |
+| `/(define "do_healing_lie")/state/to` | block | [str]x3 | 1 | 3 | "lie_healing_%0" ¦ "lie_healing_%0_end" ¦ "lie" | 문서 | 이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "do_healing")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "do_healing")/state` | block | [str]x3 | 1 | 3 | "healing_%0_begin" ¦ "healing_%0" ¦ "healing_%0_end" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/(define "do_healing")/state/from` | block | [str]x1 | 1 | 1 | "squat" | 미확인(자동) |  |  |  |
-| `/(define "do_healing")/state/tag` | block | [str]x7 | 1 | 7 | "squat" ¦ "healing" ¦ "heal-%0" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
-| `/(define "do_healing")/state/to` | block | [str]x3 | 1 | 3 | "healing_%0" ¦ "healing_%0_end" ¦ "squat" | 미확인(자동) |  |  |  |
+| `/(define "do_healing")/state/from` | block | [str]x1 | 1 | 1 | "squat" | 문서 | 이 상태로 들어올 수 있는 출발 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "do_healing")/state/tag` | block | [str]x7 | 1 | 7 | "squat" ¦ "healing" ¦ "heal-%0" | 문서 | 상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | hybrid AT grenade / mines ¦ thrower hand weapon |
+| `/(define "do_healing")/state/to` | block | [str]x3 | 1 | 3 | "healing_%0" ¦ "healing_%0_end" ¦ "squat" | 문서 | 이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "ds39")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ds39")/link_sound` | block | [str str]x6 | 1 | 6 | "action_recoil" "weapon/action/recoil/open_bolt_mg/" ¦ "tail_close" "weapon/shot/smallarms/s3/d1/RUS/DS39/Tail/" ¦ "head_mid" "weapon/shot/smallarms/s3/d2/RUS/DS39/Head/" ¦ "tail_mid" "weapon/shot/smallarms/s3/d2/RUS/DS39/Tail/" ¦ "head_far" "weapon/shot/smallarms/s3/d3/RUS/DS39/Head/" ¦ "tail_far" "weapon/shot/smallarms/s3/d3/RUS/DS39/Tail/" | 미확인(자동) |  |  |  |
 | `/(define "dshk38_int")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4015,16 +4015,16 @@
 | `/(define "firing")/firing_welrod` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "firing")/thrower` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "flag_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "flag_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "flag_ammo_heavy")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "flag_ammo_heavy")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "flag_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4039,18 +4039,18 @@
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 10 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "flag_ammo")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "flag_ammo")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "flag_ammo")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "flag_ammo")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "flag_ammo")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "flag_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "flag_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "flag_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "flag_ammo")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 250 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "flag_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "flag_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "flag_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 250 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "flag_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "flag_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4059,7 +4059,7 @@
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "flag_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 5 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "flame_fx")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flame_fx")/"*"` | block | [str]x1 | 1 | 1 | "stuff weapon flame_thrower %tag" | 미확인(자동) |  |  |  |
 | `/(define "flame_fx")/"*"/on` | block | [str]x4 [atom]x1 [str atom]x1 | 1 | 6 | spawn ¦ "start_burst" ¦ "end_burst" ¦ "link_human" ¦ "unlink_human" ¦ "fire" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
@@ -4087,7 +4087,7 @@
 | `/(define "flash_fx")/"*"/on/if/add_view` | block | [str str str]x2 | 1 | 2 | "%flash" "flashbarrel" "foresight%foresight" ¦ "flash_gun_silencer" "flashbarrel" "foresight%foresight" | 미확인(자동) |  |  | engine exhaust ¦ idle exhaust |
 | `/(define "flight_model")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flight_model")/(mod)` | mod | [str]x1 | 1 | 1 | "mp" | 미확인(자동) |  |  |  |
-| `/(define "flight_model")/elevationacceleration` | block | [expr]x1 | 1 | 1 | ( + ( / %climb_speed 4 ) 2 ) | 미확인(자동) |  |  | how quickly aircraft can change from level flight to full climb or dive. (m/s^2) |
+| `/(define "flight_model")/elevationacceleration` | block | [expr]x1 | 1 | 1 | ( + ( / %climb_speed 4 ) 2 ) | 확인 | 수평 비행에서 최대 상승·강하로 바뀌는 빠르기, m/s² | 게임 파일 주석 | how quickly aircraft can change from level flight to full climb or dive. (m/s^2) |
 | `/(define "flight_model")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flight_model")/fuelbag/fuel` | block | [str]x1 | 1 | 1 | "fuel" | 미확인(자동) |  |  | Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel. ¦ Fuel type. |
 | `/(define "flight_model")/fuelbag/rate` | block | [expr]x1 | 1 | 1 | ( * 20 ( / %fuel %range ) ) | 미확인(자동) |  |  | Fuel consumption rate. Based on off-road range of vehicle. ¦ liters per kilometer |
@@ -4100,15 +4100,15 @@
 | `/(define "flight_model")/locomotion/normal` | block | [expr]x2 | 1 | 2 | ( * 1.0 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) ¦ ( * 1.1 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
 | `/(define "flight_model")/locomotion/slow` | block | [expr]x2 | 1 | 2 | ( * 0.7 ( / ( * %speed %power ) ( * %weight %aerodynamics ) ) ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "flight_model")/locomotion/turnradius` | block | [expr]x2 | 1 | 2 | ( * 0.3 %turn ) ¦ ( * 0.3 %turnMP ) | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/(define "flight_model")/maxelevationspeed` | block | [expr]x1 | 1 | 1 | ( + ( / %climb_speed 6 ) 2 ) | 미확인(자동) |  |  | climb rate, how many meters per second aircraft changes altitude when in full climb or dive |
-| `/(define "flight_model")/maxsideslope` | block | [param]x1 | 1 | 1 | %roll_angle | 미확인(자동) |  |  | limit in degrees that aircraft can roll while in a turn |
-| `/(define "flight_model")/sideslopespeed` | block | [param]x1 [expr]x1 | 1 | 2 | %roll_rate ¦ ( * 2 %roll_rate ) | 미확인(자동) |  |  | how quickly in degrees per second that aircraft rolls |
+| `/(define "flight_model")/maxelevationspeed` | block | [expr]x1 | 1 | 1 | ( + ( / %climb_speed 6 ) 2 ) | 확인 | 상승률. 최대 상승·강하 때 초당 고도 변화량, m/s | 게임 파일 주석 | climb rate, how many meters per second aircraft changes altitude when in full climb or dive |
+| `/(define "flight_model")/maxsideslope` | block | [param]x1 | 1 | 1 | %roll_angle | 확인 | 선회 중에 기체가 기울 수 있는 한계 각도 | 게임 파일 주석 | limit in degrees that aircraft can roll while in a turn |
+| `/(define "flight_model")/sideslopespeed` | block | [param]x1 [expr]x1 | 1 | 2 | %roll_rate ¦ ( * 2 %roll_rate ) | 확인 | 기체가 기우는 속도, 도/초 | 게임 파일 주석 | how quickly in degrees per second that aircraft rolls |
 | `/(define "foxhole")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "foxhole")/volume` | block | [param]x1 | 1 | 1 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "foxhole")/volume/able` | block | [atom]x1 | 1 | 1 | clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "foxhole")/volume/able/blast` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/(define "foxhole")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "foxhole")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "foxhole")/volume/able/blast` | block | [num]x1 | 1 | 1 | 1 | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/(define "foxhole")/volume/able/obstacle` | block | [num]x1 | 1 | 1 | 1 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "foxhole")/volume/tags` | block | [str]x1 | 1 | 1 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "foxhole")/volume/thickness` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  |  |
 | `/(define "frag_grenade_protection")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "frag_grenade_protection")/("blast_protection")` | macro | [call:dmg]x1 | 1 | 1 | dmg ( 6 ) | 미확인(자동) |  |  |  |
@@ -4317,7 +4317,7 @@
 | `/(define "holster_fx")/"*"/on` | block | [atom]x1 | 1 | 1 | spawn | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "holster_fx")/"*"/on/link_sound` | block | [str str]x1 | 1 | 1 | "holster" "human/holster/%sound" | 미확인(자동) |  |  |  |
 | `/(define "human health")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "human health")/healthdamage` | block | [expr]x1 | 1 | 1 | ( * 1.0 %damage ) | 미확인(자동) |  |  |  |
+| `/(define "human health")/healthdamage` | block | [expr]x1 | 1 | 1 | ( * 1.0 %damage ) | 문서 | 사람과 동물에게 주는 체력 피해. 관통력과 별개의 값이며 단위는 임의다 | Call to Arms 위키의 용어집 calltoarms.fandom.com/wiki/Modding/Terms (2026-10-12 확인) |  |
 | `/(define "humber_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "humber_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "humber_sound")/on/link_sound` | block | [str str]x18 | 1 | 18 | 예: "move" "vehicle/wheels/armored_car" | 미확인(자동) |  |  |  |
@@ -4421,11 +4421,11 @@
 | `/(define "light_mk_sound")/on/link_sound` | block | [str str]x7 | 1 | 7 | "engine_start" "vehicle/engine/A17_Tetrarch/start" ¦ "engine_stop" "vehicle/engine/A17_Tetrarch/stop" ¦ "engine_idle" "vehicle/engine/A17_Tetrarch/idle" ¦ "engine_full" "vehicle/engine/A17_Tetrarch/full" ¦ "exhaust" "vehicle/engine/A17_Tetrarch/exhaust" ¦ "move" "vehicle/tracks/valentine/" ¦ "rotate_turret" "vehicle/turret/handcrank/handcrank_light" | 미확인(자동) |  |  |  |
 | `/(define "look_chain")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "look_chain")/state` | block | [str]x7 | 1 | 7 | "look_%0_in" ¦ "look_%0" ¦ "look_%0_throw_begin" ¦ "look_%0_throw_end" ¦ "look_%0_fire" ¦ "look_%0_recoil" ¦ "look_%0_out" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/(define "look_chain")/state/condition` | block | [str]x1 | 1 | 1 | "look-%0-in" | 미확인(자동) |  |  |  |
-| `/(define "look_chain")/state/from` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  |  |
-| `/(define "look_chain")/state/tag` | block | [str]x31 | 1 | 31 | 예: "up" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
-| `/(define "look_chain")/state/to` | block | [str]x6 | 1 | 6 | "look_%0" ¦ "look_%0_fire" ¦ "look_%0_throw_begin" ¦ "look_%0_out" ¦ "look_%0_recoil" ¦ "stand" | 미확인(자동) |  |  |  |
-| `/(define "look_chain")/state/transit` | block | [str]x3 | 1 | 3 | "look_%0" ¦ "look_%0_throw_end" | 미확인(자동) |  |  |  |
+| `/(define "look_chain")/state/condition` | block | [str]x1 | 1 | 1 | "look-%0-in" | 문서 | 이 상태에 들어가기 위한 조건. 요청 이름과 같아야 한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "look_chain")/state/from` | block | [str]x1 | 1 | 1 | "stand" | 문서 | 이 상태로 들어올 수 있는 출발 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "look_chain")/state/tag` | block | [str]x31 | 1 | 31 | 예: "up" | 문서 | 상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | hybrid AT grenade / mines ¦ thrower hand weapon |
+| `/(define "look_chain")/state/to` | block | [str]x6 | 1 | 6 | "look_%0" ¦ "look_%0_fire" ¦ "look_%0_throw_begin" ¦ "look_%0_out" ¦ "look_%0_recoil" ¦ "stand" | 문서 | 이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "look_chain")/state/transit` | block | [str]x3 | 1 | 3 | "look_%0" ¦ "look_%0_throw_end" | 문서 | 조건이 되면 요청 없이 자동으로 넘어가는 다음 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "ls26")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ls26")/link_sound` | block | [str str]x5 | 1 | 5 | "Tail_Close" "weapon/shot/smallarms/s3/d1/FIN/LS26/tail/" ¦ "Head_Mid" "weapon/shot/smallarms/s3/d2/FIN/LS26/head/" ¦ "Tail_Mid" "weapon/shot/smallarms/s3/d2/FIN/LS26/tail/" ¦ "Head_Far" "weapon/shot/smallarms/s3/d3/FIN/LS26/head/" ¦ "Tail_Far" "weapon/shot/smallarms/s3/d3/FIN/LS26/tail/" | 미확인(자동) |  |  |  |
 | `/(define "m10_gmc_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4523,38 +4523,38 @@
 | `/(define "mobility_btr")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_btr")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_btr")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_btr")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_btr")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_btr")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_btr")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_btr")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
-| `/(define "mobility_btr")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_btr")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_btr")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
+| `/(define "mobility_btr")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_btr")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_btr")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_btr")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_btr")/locomotion/normal` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_btr")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_btr")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_btr")/locomotion/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/(define "mobility_btr")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
+| `/(define "mobility_btr")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 확인 | 경로(스플라인) 위에서의 회전 반경 제한, 미터. 경로 계획용 매개변수 | 게임 파일 주석 | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
 | `/(define "mobility_btr")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * ( / %speed ( / %power %weight ) ) 4 ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_btr")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
-| `/(define "mobility_btr")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
-| `/(define "mobility_btr")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 2 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_btr")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 25 | 확인 | 조향을 놓았을 때 바퀴가 중립으로 돌아오는 속도, 도/초 | 게임 파일 주석 | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
+| `/(define "mobility_btr")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 10 | 확인 | 조향 바퀴가 꺾이는 속도, 도/초 | 게임 파일 주석 | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
+| `/(define "mobility_btr")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 2 ( * %weight ( * %speed 0.004 ) ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_btr")/locomotion/turnradius` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
 | `/(define "mobility_cannon")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_cannon")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_cannon")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.25 ( / %weight 10000 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_cannon")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 70 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_cannon")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 70 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_cannon")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_cannon")/locomotion/gears` | block | [num num num num]x1 | 1 | 1 | 0.35 0.5 0.7 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_cannon")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 60 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_cannon")/locomotion/gears` | block | [num num num num]x1 | 1 | 1 | 0.35 0.5 0.7 1.0 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_cannon")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 60 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_cannon")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_cannon")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_cannon")/locomotion/reargears` | block | [num num]x1 | 1 | 1 | 0.33 0.75 | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_cannon")/locomotion/reargears` | block | [num num]x1 | 1 | 1 | 0.33 0.75 | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_cannon")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.33 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_cannon")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( + 1.25 ( / %weight 4000 ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_cannon")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 0.35 ( / %weight 4000 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_cannon")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 0.35 ( / %weight 4000 ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_cannon")/locomotion/turnradius` | block | [expr]x1 | 1 | 1 | ( + 2 ( / %weight 5000 ) ) | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/(define "mobility_cannon")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.65 ( / %weight 5500 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
-| `/(define "mobility_cannon")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.65 ( / %weight 5500 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_cannon")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.65 ( / %weight 5500 ) ) | 확인 | 직접 조종 시 회전 속도가 0에서 최대까지 오르는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_cannon")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.65 ( / %weight 5500 ) ) | 확인 | 직접 조종 시 회전 속도가 최대에서 0까지 내려가는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
 | `/(define "mobility_cannon")/locomotion/turntime` | block | [expr]x1 | 1 | 1 | ( - ( + ( / %weight 500 ) ( / 50 %speed ) ) 0 ) | 미확인(자동) |  |  | Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define |
 | `/(define "mobility_car")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_car")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4564,21 +4564,21 @@
 | `/(define "mobility_car")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_car")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_car")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_car")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_car")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_car")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_car")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_car")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
-| `/(define "mobility_car")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_car")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_car")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
+| `/(define "mobility_car")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_car")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_car")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_car")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_car")/locomotion/normal` | block | [num]x1 | 1 | 1 | 25 | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_car")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_car")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_car")/locomotion/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/(define "mobility_car")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
+| `/(define "mobility_car")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 확인 | 경로(스플라인) 위에서의 회전 반경 제한, 미터. 경로 계획용 매개변수 | 게임 파일 주석 | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
 | `/(define "mobility_car")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * ( / %speed ( / %power %weight ) ) 7 ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_car")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 30 | 미확인(자동) |  |  | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
-| `/(define "mobility_car")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
-| `/(define "mobility_car")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3 ( * %weight ( * %speed 0.020 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_car")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 30 | 확인 | 조향을 놓았을 때 바퀴가 중립으로 돌아오는 속도, 도/초 | 게임 파일 주석 | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
+| `/(define "mobility_car")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 20 | 확인 | 조향 바퀴가 꺾이는 속도, 도/초 | 게임 파일 주석 | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
+| `/(define "mobility_car")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3 ( * %weight ( * %speed 0.020 ) ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_car")/locomotion/turnradius` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
 | `/(define "mobility_goliath")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_goliath")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4588,21 +4588,21 @@
 | `/(define "mobility_goliath")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_goliath")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_goliath")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.30 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_goliath")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_goliath")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_goliath")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_goliath")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_goliath")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
-| `/(define "mobility_goliath")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_goliath")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_goliath")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
+| `/(define "mobility_goliath")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_goliath")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_goliath")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_goliath")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_goliath")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_goliath")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_goliath")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_goliath")/locomotion/slow` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_goliath")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 4 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_goliath")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 0.60 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_goliath")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 0.60 ( * %weight 0.04 ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_goliath")/locomotion/turnradius` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/(define "mobility_goliath")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.35 ( * ( / %weight 6 ) 0.04 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
-| `/(define "mobility_goliath")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.3 ( * ( / %weight 6 ) 0.04 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_goliath")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.35 ( * ( / %weight 6 ) 0.04 ) ) | 확인 | 직접 조종 시 회전 속도가 0에서 최대까지 오르는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_goliath")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.3 ( * ( / %weight 6 ) 0.04 ) ) | 확인 | 직접 조종 시 회전 속도가 최대에서 0까지 내려가는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
 | `/(define "mobility_goliath")/locomotion/turntime` | block | [expr]x1 | 1 | 1 | ( * ( / 360 %traverse ) 1.1 ) | 미확인(자동) |  |  | Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define |
 | `/(define "mobility_medium_boat")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_medium_boat")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4613,18 +4613,18 @@
 | `/(define "mobility_medium_boat")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_medium_boat")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1.5 ( * %weight ( * %speed 0.002 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_medium_boat")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.8 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_medium_boat")/locomotion/gears` | block | [num num num]x1 | 1 | 1 | 0.5 0.7 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_medium_boat")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
+| `/(define "mobility_medium_boat")/locomotion/gears` | block | [num num num]x1 | 1 | 1 | 0.5 0.7 1.0 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_medium_boat")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
 | `/(define "mobility_medium_boat")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_medium_boat")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_medium_boat")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_medium_boat")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_medium_boat")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_medium_boat")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_medium_boat")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.3 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/(define "mobility_medium_boat")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 3 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
+| `/(define "mobility_medium_boat")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 3 | 확인 | 경로(스플라인) 위에서의 회전 반경 제한, 미터. 경로 계획용 매개변수 | 게임 파일 주석 | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
 | `/(define "mobility_medium_boat")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 30 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_medium_boat")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 15 | 미확인(자동) |  |  | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
-| `/(define "mobility_medium_boat")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 7.5 | 미확인(자동) |  |  | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
-| `/(define "mobility_medium_boat")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3.5 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_medium_boat")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 15 | 확인 | 조향을 놓았을 때 바퀴가 중립으로 돌아오는 속도, 도/초 | 게임 파일 주석 | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
+| `/(define "mobility_medium_boat")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 7.5 | 확인 | 조향 바퀴가 꺾이는 속도, 도/초 | 게임 파일 주석 | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
+| `/(define "mobility_medium_boat")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3.5 ( * %weight ( * %speed 0.004 ) ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_medium_boat")/locomotion/turnradius` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
 | `/(define "mobility_small_boat")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_small_boat")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4635,18 +4635,18 @@
 | `/(define "mobility_small_boat")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_small_boat")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 1.5 ( * %weight ( * %speed 0.004 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_small_boat")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_small_boat")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_small_boat")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
+| `/(define "mobility_small_boat")/locomotion/gears` | block | [num num]x1 | 1 | 1 | 0.15 1 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_small_boat")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
 | `/(define "mobility_small_boat")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_small_boat")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_small_boat")/locomotion/maxspeedatmaxturn` | block | [param]x1 | 1 | 1 | %speedatmaxturn | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_small_boat")/locomotion/normal` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_small_boat")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_small_boat")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_small_boat")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.3 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
-| `/(define "mobility_small_boat")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 미확인(자동) |  |  | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
+| `/(define "mobility_small_boat")/locomotion/splineradius` | block | [num]x1 | 1 | 1 | 0.75 | 확인 | 경로(스플라인) 위에서의 회전 반경 제한, 미터. 경로 계획용 매개변수 | 게임 파일 주석 | limit turning radius on the splines (path planner parameter), meters ¦ limit turning radius on the splines, meters |
 | `/(define "mobility_small_boat")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * ( / %speed ( / %power %weight ) ) 7 ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_small_boat")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 40 | 미확인(자동) |  |  | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
-| `/(define "mobility_small_boat")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
-| `/(define "mobility_small_boat")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3.5 ( * %weight ( * %speed 0.020 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_small_boat")/locomotion/steeroff` | block | [num]x1 | 1 | 1 | 40 | 확인 | 조향을 놓았을 때 바퀴가 중립으로 돌아오는 속도, 도/초 | 게임 파일 주석 | Steering wheel's relaxed (no control applied) neutral position return speed, degrees per second. ¦ wheel stop turn speed in degrees per second |
+| `/(define "mobility_small_boat")/locomotion/steeron` | block | [num]x1 | 1 | 1 | 20 | 확인 | 조향 바퀴가 꺾이는 속도, 도/초 | 게임 파일 주석 | Steering wheel's turn speed, degrees per second. ¦ wheel turn speed in degrees per second |
+| `/(define "mobility_small_boat")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3.5 ( * %weight ( * %speed 0.020 ) ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_small_boat")/locomotion/turnradius` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
 | `/(define "mobility_tank_slow")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank_slow")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4656,21 +4656,21 @@
 | `/(define "mobility_tank_slow")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_tank_slow")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank_slow")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.80 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_tank_slow")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_tank_slow")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_tank_slow")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_tank_slow")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_tank_slow")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
-| `/(define "mobility_tank_slow")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_tank_slow")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_tank_slow")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
+| `/(define "mobility_tank_slow")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_tank_slow")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_tank_slow")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_tank_slow")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_tank_slow")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_tank_slow")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_tank_slow")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_tank_slow")/locomotion/slow` | block | [num]x1 | 1 | 1 | 4 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_tank_slow")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 5 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_tank_slow")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 1.50 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_tank_slow")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 1.50 ( * %weight 0.04 ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_tank_slow")/locomotion/turnradius` | block | [expr]x1 | 1 | 1 | ( + 1 ( + ( / %speed 12 ) ( / %weight 60 ) ) ) | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/(define "mobility_tank_slow")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
-| `/(define "mobility_tank_slow")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_tank_slow")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 확인 | 직접 조종 시 회전 속도가 0에서 최대까지 오르는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_tank_slow")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 확인 | 직접 조종 시 회전 속도가 최대에서 0까지 내려가는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
 | `/(define "mobility_tank_slow")/locomotion/turntime` | block | [expr]x1 | 1 | 1 | ( / 360 %traverse ) | 미확인(자동) |  |  | Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define |
 | `/(define "mobility_tank_special")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank_special")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4680,21 +4680,21 @@
 | `/(define "mobility_tank_special")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_tank_special")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank_special")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.80 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_tank_special")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_tank_special")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_tank_special")/locomotion/fast` | block | [param]x1 | 1 | 1 | %fast | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_tank_special")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_tank_special")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
-| `/(define "mobility_tank_special")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_tank_special")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_tank_special")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
+| `/(define "mobility_tank_special")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_tank_special")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_tank_special")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_tank_special")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_tank_special")/locomotion/normal` | block | [param]x1 | 1 | 1 | %normal | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_tank_special")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_tank_special")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_tank_special")/locomotion/slow` | block | [param]x1 | 1 | 1 | %slow | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_tank_special")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 5 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_tank_special")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 1.50 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_tank_special")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 1.50 ( * %weight 0.04 ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_tank_special")/locomotion/turnradius` | block | [expr]x1 | 1 | 1 | ( + 1 ( + ( / %speed 12 ) ( / %weight 60 ) ) ) | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/(define "mobility_tank_special")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
-| `/(define "mobility_tank_special")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_tank_special")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 확인 | 직접 조종 시 회전 속도가 0에서 최대까지 오르는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_tank_special")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 확인 | 직접 조종 시 회전 속도가 최대에서 0까지 내려가는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
 | `/(define "mobility_tank_special")/locomotion/turntime` | block | [expr]x1 | 1 | 1 | ( / 360 %traverse ) | 미확인(자동) |  |  | Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define |
 | `/(define "mobility_tank")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4704,21 +4704,21 @@
 | `/(define "mobility_tank")/fuelbag/volume` | block | [param]x1 | 1 | 1 | %fuel | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "mobility_tank")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_tank")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 0.80 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
-| `/(define "mobility_tank")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope before physics kick in |
+| `/(define "mobility_tank")/locomotion/fallslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 이 경사를 넘으면 물리 처리가 시작되는 최대 경사 | 게임 파일 주석 | Maximum slope before physics kick in |
 | `/(define "mobility_tank")/locomotion/fast` | block | [expr]x1 | 1 | 1 | ( * %speed 0.9 ) | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_tank")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 미확인(자동) |  |  | Gearing affects acceleration curve. ¦ Forward gear ratios |
-| `/(define "mobility_tank")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
-| `/(define "mobility_tank")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 미확인(자동) |  |  | Maximum slope to drive up hill |
+| `/(define "mobility_tank")/locomotion/gears` | block | [num num num num num]x1 | 1 | 1 | 0.5 0.65 0.8 0.9 1.0 | 확인 | 전진 기어비. 가속 곡선에 영향을 준다 | 게임 파일 주석 | Gearing affects acceleration curve. ¦ Forward gear ratios |
+| `/(define "mobility_tank")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
+| `/(define "mobility_tank")/locomotion/maxslope` | block | [num]x1 | 1 | 1 | 75 | 확인 | 오르막으로 주행할 수 있는 최대 경사 | 게임 파일 주석 | Maximum slope to drive up hill |
 | `/(define "mobility_tank")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
-| `/(define "mobility_tank")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 미확인(자동) |  |  | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
+| `/(define "mobility_tank")/locomotion/maxspeedatmaxturn` | block | [expr]x1 | 1 | 1 | ( * %speed ( * ( / %track 30 ) ( / %power ( * %weight 5 ) ) ) ) | 확인 | 급선회할 때 제한되는 최고 속도 | 게임 파일 주석 | Max speed the vehicle is limited to when executing a tight turn. ¦ Direct Control, Max speed the vehicle is limited to when executing a tight turn. |
 | `/(define "mobility_tank")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.6 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_tank")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_tank")/locomotion/reargears` | block | [num expr]x1 | 1 | 1 | 0.05 ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_tank")/locomotion/slow` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_tank")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * 5 ( / %speed ( / %power %weight ) ) ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_tank")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 1.50 ( * %weight 0.04 ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_tank")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 1.50 ( * %weight 0.04 ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_tank")/locomotion/turnradius` | block | [expr]x1 | 1 | 1 | ( + 1 ( + ( / %speed 12 ) ( / %weight 60 ) ) ) | 미확인(자동) |  |  | AI turning radius, lower = able to turn more without stopping. ¦ New turning radius to help reduce "stop and neutral" turns for tanks |
-| `/(define "mobility_tank")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
-| `/(define "mobility_tank")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 미확인(자동) |  |  | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_tank")/locomotion/turnstart` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 확인 | 직접 조종 시 회전 속도가 0에서 최대까지 오르는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from 0Â°/s rotation speed to max rotation speed. ¦ / |
+| `/(define "mobility_tank")/locomotion/turnstop` | block | [expr]x1 | 1 | 1 | ( + 0.6 ( * ( / %weight 6 ) 0.05 ) ) | 확인 | 직접 조종 시 회전 속도가 최대에서 0까지 내려가는 데 걸리는 시간 | 게임 파일 주석 | Direct Control, Time for vehicle to from max rotation speed to 0Â°/s rotation speed to max rotation speed. ¦ / |
 | `/(define "mobility_tank")/locomotion/turntime` | block | [expr]x1 | 1 | 1 | ( / 360 %traverse ) | 미확인(자동) |  |  | Direct Control, Time it takes to do a full 360 degree at max turn speed, fetching custom define |
 | `/(define "mobility_train")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_train")/fuelbag` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4729,13 +4729,13 @@
 | `/(define "mobility_train")/locomotion` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "mobility_train")/locomotion/braketime` | block | [expr]x1 | 1 | 1 | ( + 2 ( * %weight ( * %speed 0.01 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with brakes applied. ¦ time to decelerate from max speed to 0 kph in seconds when using brakes (hard stop) |
 | `/(define "mobility_train")/locomotion/fast` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Sprint speed. Double click movement order ¦ speed for fast movement state (double mouse click move order) |
-| `/(define "mobility_train")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 미확인(자동) |  |  | Time to switch between forward and reverse. |
+| `/(define "mobility_train")/locomotion/gearswitchdelay` | block | [num]x1 | 1 | 1 | 0.5 | 확인 | 전진과 후진을 바꾸는 데 걸리는 시간 | 게임 파일 주석 | Time to switch between forward and reverse. |
 | `/(define "mobility_train")/locomotion/maxspeed` | block | [param]x1 | 1 | 1 | %speed | 미확인(자동) |  |  | Max speed. ¦ max speed while in flight mode in kph |
 | `/(define "mobility_train")/locomotion/normal` | block | [expr]x1 | 1 | 1 | ( * %speed 0.66 ) | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
-| `/(define "mobility_train")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 미확인(자동) |  |  | Reverse max speed. |
+| `/(define "mobility_train")/locomotion/reargears` | block | [expr]x1 | 1 | 1 | ( / %reverse %speed ) | 확인 | 후진 기어비. 후진 최고 속도를 정한다 | 게임 파일 주석 | Reverse max speed. |
 | `/(define "mobility_train")/locomotion/slow` | block | [expr]x1 | 1 | 1 | ( * %speed 0.33 ) | 미확인(자동) |  |  | Slow speed. Mainly used in mission scripting ¦ km/h |
 | `/(define "mobility_train")/locomotion/starttime` | block | [expr]x1 | 1 | 1 | ( * ( / %speed ( / %power %weight ) ) 9 ) | 미확인(자동) |  |  | Time for vehicle to accelerate from 0kph to max speed. ¦ time to accelerate to max speed from 0 kph in seconds |
-| `/(define "mobility_train")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3 ( * %weight ( * %speed 0.025 ) ) ) | 미확인(자동) |  |  | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
+| `/(define "mobility_train")/locomotion/stoptime` | block | [expr]x1 | 1 | 1 | ( + 3 ( * %weight ( * %speed 0.025 ) ) ) | 확인 | 브레이크를 쓰지 않고 최고 속도에서 완전히 멈출 때까지의 시간(타력 주행) | 게임 파일 주석 | Time to come to a complete stop from max speed with out applying brakes. "Coasting". ¦ time to decelerate from max speed to 0 kph in seconds when coasting to a stop (not applying forward motion) |
 | `/(define "mobility_train")/locomotive` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "morris_car_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "morris_car_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
@@ -4794,10 +4794,10 @@
 | `/(define "panhard_sound")/on/link_sound` | block | [str str]x18 | 1 | 18 | 예: "move" "vehicle/wheels/armored_car" | 미확인(자동) |  |  |  |
 | `/(define "peep_chain")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "peep_chain")/state` | block | [str]x3 | 1 | 3 | "peep_%0_in" ¦ "peep_%0" ¦ "peep_%0_out" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/(define "peep_chain")/state/condition` | block | [str]x1 | 1 | 1 | "peep-%0-in" | 미확인(자동) |  |  |  |
-| `/(define "peep_chain")/state/from` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  |  |
-| `/(define "peep_chain")/state/tag` | block | [str]x7 | 1 | 7 | "up" ¦ "looking" ¦ "peep-%0-in" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
-| `/(define "peep_chain")/state/to` | block | [str]x3 | 1 | 3 | "peep_%0" ¦ "peep_%0_out" ¦ "stand" | 미확인(자동) |  |  |  |
+| `/(define "peep_chain")/state/condition` | block | [str]x1 | 1 | 1 | "peep-%0-in" | 문서 | 이 상태에 들어가기 위한 조건. 요청 이름과 같아야 한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "peep_chain")/state/from` | block | [str]x1 | 1 | 1 | "stand" | 문서 | 이 상태로 들어올 수 있는 출발 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/(define "peep_chain")/state/tag` | block | [str]x7 | 1 | 7 | "up" ¦ "looking" ¦ "peep-%0-in" | 문서 | 상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | hybrid AT grenade / mines ¦ thrower hand weapon |
+| `/(define "peep_chain")/state/to` | block | [str]x3 | 1 | 3 | "peep_%0" ¦ "peep_%0_out" ¦ "stand" | 문서 | 이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/(define "pistol_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "pistol_range")/spreading` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "pistol_range")/spreading/radiustable` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4806,7 +4806,7 @@
 | `/(define "place")/place` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  |  |
 | `/(define "place")/place/entity` | block | [str]x1 | 1 | 1 | "%1" | 미확인(자동) |  |  | parts ¦ airborne parts |
 | `/(define "place")/place/handlebone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  |  |
-| `/(define "place")/place/linkbone` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  |  |
+| `/(define "place")/place/linkbone` | block | [str]x1 | 1 | 1 | "%0" | 문서 | 무기가 붙는 뼈대 | Men of War: Assault Squad 2 튜토리얼 moddb.com/games/men-of-war-assault-squad-2/tutorials/cannon-helicopter-tank-tracks-and-hatch-tutorial (2026-10-12 확인) |  |
 | `/(define "plane_range")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "plane_range")/spreading` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "plane_range")/spreading/radiustable` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4989,8 +4989,8 @@
 | `/(define "roof_vol")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "roof_vol")/volume` | block | [str]x1 | 1 | 1 | "%0" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "roof_vol")/volume/able` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "roof_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "roof_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "roof" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "roof_vol")/volume/able/visible` | block | [param]x1 | 1 | 1 | %1 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "roof_vol")/volume/tags` | block | [str]x1 | 1 | 1 | "roof" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "s60_sound")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "s60_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "s60_sound")/on/link_sound` | block | [str str]x6 | 1 | 6 | "engine_start" "vehicle/engine/s60/start" ¦ "engine_stop" "vehicle/engine/s60/stop" ¦ "engine_idle" "vehicle/engine/s60/idle" ¦ "engine_full" "vehicle/engine/s60/full" ¦ "exhaust" "vehicle/engine/s60/exhaust" ¦ "move" "vehicle/tracks/s60/" | 미확인(자동) |  |  |  |
@@ -5230,16 +5230,16 @@
 | `/(define "su85_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "su85_sound")/on/link_sound` | block | [str str]x7 | 1 | 7 | "engine_start" "vehicle/engine/t34/start" ¦ "engine_stop" "vehicle/engine/t34/stop" ¦ "engine_idle" "vehicle/engine/t34/idle" ¦ "engine_full" "vehicle/engine/t34/full" ¦ "exhaust" "vehicle/engine/t34/exhaust" ¦ "move" "vehicle/tracks/t34" ¦ "rotate_turret" "vehicle/turret/gun/gun_horizontal" | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "supply_ammo_fixed")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_ammo_fixed")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_ammo_fixed")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_ammo_fixed")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "supply_ammo_fixed")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 6 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 6 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5254,18 +5254,18 @@
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "supply_ammo")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "supply_ammo")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_ammo")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_ammo")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_ammo")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "supply_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "supply_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "supply_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_ammo")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "supply_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "supply_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_ammo")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 10 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "supply_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5280,72 +5280,72 @@
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "supply_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "supply_engineer_light")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "supply_engineer_light")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_engineer_light")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_engineer_light")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_engineer_light")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "supply_engineer_light")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 200 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_engineer_light")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "supply_engineer_light")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_engineer_light")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 200 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_engineer_light")/extender[supply_zone]/mechanicresources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/mechanicresources/amount` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/mechanicresources/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "supply_engineer_light")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_engineer_light")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "supply_engineer_light")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_engineer_light")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/resupply/("items_engineer")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/resupply/("items_explosives")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer_light")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "supply_engineer_light")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "supply_engineer")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "supply_engineer")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_engineer")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_engineer")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_engineer")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "supply_engineer")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_engineer")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "supply_engineer")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_engineer")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_engineer")/extender[supply_zone]/mechanicresources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/mechanicresources/amount` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/mechanicresources/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "supply_engineer")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_engineer")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "supply_engineer")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_engineer")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/resupply/("items_engineer")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/resupply/("items_explosives")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_engineer")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "supply_engineer")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "supply_fuel")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "supply_fuel")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_fuel")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_fuel")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_fuel")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "supply_fuel")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "supply_fuel")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "supply_fuel")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_fuel")/extender[supply_zone]/fuel` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel. ¦ Fuel type. |
 | `/(define "supply_fuel")/extender[supply_zone]/fuel/amount` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "supply_fuel")/extender[supply_zone]/fuel/value` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %liters | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "supply_fuel")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "supply_fuel")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_fuel")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %liters | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_fuel")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "supply_fuel")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_fuel")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/extender[supply_zone]/resupply/item` | block | [str str num]x1 | 1 | 1 | "flame_thrower" "ammo" 50 | 미확인(자동) |  |  | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
+| `/(define "supply_fuel")/extender[supply_zone]/resupply/item` | block | [str str num]x1 | 1 | 1 | "flame_thrower" "ammo" 50 | 추정 | 보급해 주는 품목 한 줄. 대상 무기나 아이템, 종류, 수량 (추정: 값 "flame_thrower" "ammo" 50) | 파일 구조와 값에서 추론 | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
 | `/(define "supply_fuel")/extender[supply_zone]/resupply/item/value` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "supply_fuel")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 1 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "supply_medic")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "supply_medic")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_medic")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "supply_medic")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_medic")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "supply_medic")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "supply_medic")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "supply_medic")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_medic")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 50 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "supply_medic")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 5 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "supply_medic")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 2 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_medic")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 50 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_medic")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 5 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "supply_medic")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 2 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_medic")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_medic")/extender[supply_zone]/resupply/("items_medic")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "supply_medic")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 1 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "sway_mg")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "sway_mg")/swayparams` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "sway_mg")/swayparams/bounds` | block | [num num num num]x1 | 1 | 1 | -0.3 0.2 -0.4 0.3 | 미확인(자동) |  |  | x -> negativeYaw, y -> positiveYaw, z -> negativePitch, w -> positive Pitch (in degree) |
@@ -5507,16 +5507,16 @@
 | `/(define "tractor_sound")/on` | block | [str atom]x1 | 1 | 1 | "add_movement_sound" overload | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/(define "tractor_sound")/on/link_sound` | block | [str str]x5 | 1 | 5 | "move" "vehicle/wheels/engine_tractor" ¦ "engine_full" "vehicle/engine/_old/engine_tractor" ¦ "engine_stop" "vehicle/engine/_old/engine_tractor_end" ¦ "exhaust" "vehicle/engine/_old/engine_tractor_up" ¦ "engine_idle" "vehicle/engine/_old/engine_tractor_idle" | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "truck_ammo_heavy_2x")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "truck_ammo_heavy_2x")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "truck_ammo_heavy_2x")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo_heavy_2x")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "truck_ammo_heavy_2x")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 2000 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 2000 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5530,18 +5530,18 @@
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "truck_ammo_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "truck_ammo_heavy")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "truck_ammo_heavy")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "truck_ammo_heavy")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo_heavy")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "truck_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 1000 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 1000 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5555,21 +5555,21 @@
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "truck_ammo")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 미확인(자동) |  |  |  |
+| `/(define "truck_ammo")/decalview` | block | [atom]x1 | 1 | 1 | supply_zone | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/(define "truck_ammo")/decalview/layer` | block | [atom]x1 | 1 | 1 | grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/(define "truck_ammo")/decalview/sprite` | block | [str]x1 | 1 | 1 | "supply_zone.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/(define "truck_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 미확인(자동) |  |  |  |
+| `/(define "truck_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/(define "truck_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 미확인(자동) |  |  | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "truck_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources/amount` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 미확인(자동) |  |  | resupply radius in meter |
-| `/(define "truck_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 미확인(자동) |  |  | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "truck_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
+| `/(define "truck_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5578,13 +5578,13 @@
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_ger")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_rus")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_usa")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | resupply period in seconds |
+| `/(define "truck_ammo")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 2 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
 | `/(define "turret_heavy")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "turret_heavy")/speed2` | block | [expr]x1 | 1 | 1 | ( + 4 ( / %power_traverse 3 ) ) | 미확인(자동) |  |  |  |
+| `/(define "turret_heavy")/speed2` | block | [expr]x1 | 1 | 1 | ( + 4 ( / %power_traverse 3 ) ) | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "turret_light")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "turret_light")/speed2` | block | [expr]x1 | 1 | 1 | ( + 10 ( / %power_traverse 2.5 ) ) | 미확인(자동) |  |  |  |
+| `/(define "turret_light")/speed2` | block | [expr]x1 | 1 | 1 | ( + 10 ( / %power_traverse 2.5 ) ) | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "turret_medium")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "turret_medium")/speed2` | block | [expr]x1 | 1 | 1 | ( + 6 ( / %power_traverse 2.5 ) ) | 미확인(자동) |  |  |  |
+| `/(define "turret_medium")/speed2` | block | [expr]x1 | 1 | 1 | ( + 6 ( / %power_traverse 2.5 ) ) | 문서 | 뼈대의 최대 속도. 회전은 도/초, 직선 이동은 미터/초. speed의 새 단위판이다 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/(define "ultra_vision")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "ultra_vision")/h_fov` | block | [num]x1 | 1 | 1 | 360 | 미확인(자동) |  |  |  |
 | `/(define "ultra_vision")/radius` | block | [num]x1 | 1 | 1 | 20 | 미확인(자동) |  |  | resupply radius in meter |
@@ -5610,10 +5610,10 @@
 | `/(define "volume")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "volume")/volume` | block | [param]x2 | 2 | 2 | %0 | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/(define "volume")/volume/able` | block | [atom]x1 []x1 | 2 | 2 | clear ¦ | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/(define "volume")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
+| `/(define "volume")/volume/able/bullet` | block | []x1 | 1 | 1 | 예: | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/(define "volume")/volume/able/contact` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
-| `/(define "volume")/volume/able/obstacle` | block | []x1 [num]x1 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
-| `/(define "volume")/volume/tags` | block | [str]x2 | 2 | 2 | "body" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/(define "volume")/volume/able/obstacle` | block | []x1 [num]x1 | 2 | 2 | 1 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/(define "volume")/volume/tags` | block | [str]x2 | 2 | 2 | "body" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "volume")/volume/thickness` | block | [num]x2 | 2 | 2 | 1 ~ 60 | 미확인(자동) |  |  |  |
 | `/(define "water_bullets")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "water_bullets")/if` | block | [atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str atom atom str]x1 | 1 | 1 | stuff "bullet_fx size1" else stuff "bullet_fx size2 intermediate" else stuff "bullet_fx size2" else stuff "bullet_fx size3 api" else stuff "bullet_fx size3" else stuff "auto size1" else stuff "auto size2" else stuff "shell size1" else stuff "shell size2" else stuff "shell size3" else stuff "shell size4" | 미확인(자동) |  |  | Molotov Grenades ¦ Pistol Caliber |
@@ -5796,15 +5796,15 @@
 | `/any/vehicle_burst` | block | [num]x1 | 1 | 1 | 1.2 | 미확인(자동) |  |  | increase bullet count in 1 burst for all vehicles (values < 1 reduce shots in burst) |
 | `/any/vehicle_recoil` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | recoil multiplier for all machine guns mounted on vehicles |
 | `/armor` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  |  |
-| `/armor/setting` | block | [str]x5 | 5 | 5 | "body" | 미확인(자동) |  |  |  |
-| `/armor/setting/ray_cast_thickness` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
+| `/armor/setting` | block | [str]x5 | 5 | 5 | "body" | 문서 | 장갑 설정 묶음 하나. 문자열은 설정 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/armor/setting/ray_cast_thickness` | block | []x3 | 3 | 3 | 예: | 문서 | 장갑 두께를 재는 방법. 1이면 탄이 볼륨을 지나간 거리로, 0이면 thickness 값으로 잰다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/armor/setting/threshold` | block | []x8 | 5 | 8 | 예: | 미확인(자동) |  |  |  |
 | `/armor/setting/threshold/blast` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/armor/setting/threshold/blast/koef` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  |  |
-| `/armor/setting/threshold/blast/value` | block | [num]x2 | 2 | 2 | 15 ~ 64 | 미확인(자동) |  |  |  |
+| `/armor/setting/threshold/blast/koef` | block | [num]x3 | 3 | 3 | 1 | 문서 | 폭발 피해의 문턱을 그 자리의 유효 장갑 두께 × 이 값으로 정한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/armor/setting/threshold/blast/value` | block | [num]x2 | 2 | 2 | 15 ~ 64 | 문서 | 폭발 피해의 문턱값. 이보다 작은 피해는 무시한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/armor/setting/threshold/pierce` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  | Minimum penetration necessary to leave a ricochet/pen mark on the armour |
-| `/armor/setting/threshold/pierce/calibre` | block | [num]x3 | 3 | 3 | 12 | 미확인(자동) |  |  |  |
-| `/armor/setting/volumes` | block | [str]x5 | 5 | 5 | "body*" | 미확인(자동) |  |  | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
+| `/armor/setting/threshold/pierce/calibre` | block | [num]x3 | 3 | 3 | 12 | 문서 | 관통 피해의 문턱을 구경으로 정한다. 단위 mm | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/armor/setting/volumes` | block | [str]x5 | 5 | 5 | "body*" | 문서 | 이 설정을 적용할 볼륨 이름이나 마스크(예: "ammo*"). 여러 개를 나열할 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | prevent destroying at spawn moment ¦ Disables rocket volume after firing while reloading |
 | `/blend` | block | [str]x206 | 2 | 206 | 예: "pose_lie_empty" | 미확인(자동) |  |  |  |
 | `/blend/pose` | block | [str atom]x206 | 2 | 206 | 예: "weapon\anim_item_lie_take_end_01" end | 미확인(자동) |  |  |  |
 | `/bone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
@@ -5934,18 +5934,18 @@
 | `/dda_modal` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/dda_modal/button` | block | [str]x2 | 2 | 2 | "/interface/skin/game/doctrine_preview/doctrine_preview" | 미확인(자동) |  |  |  |
 | `/dda_modal/drop_offset` | block | [str]x2 | 2 | 2 | "5" | 미확인(자동) |  |  |  |
-| `/decalview` | block | [param]x22 [str]x4 []x1 | 27 | 27 | %name ¦ "selection_active" ¦  ¦ "mineDetectionDecal" ¦ "selection_selectable" ¦ "selection_selected" | 미확인(자동) |  |  |  |
+| `/decalview` | block | [param]x22 [str]x4 []x1 | 27 | 27 | %name ¦ "selection_active" ¦  ¦ "mineDetectionDecal" ¦ "selection_selectable" ¦ "selection_selected" | 추정 | 지면에 그리는 데칼 하나. 값은 데칼 이름 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
 | `/decalview/dynamic` | block | []x26 | 26 | 26 | 예: | 미확인(자동) |  |  |  |
 | `/decalview/ground` | block | []x26 | 26 | 26 | 예: | 미확인(자동) |  |  |  |
-| `/decalview/layer` | block | [atom]x27 | 27 | 27 | alpha ¦ grounddynamic | 미확인(자동) |  |  |  |
-| `/decalview/offset` | block | [num num num]x26 | 26 | 26 | 0 0 10 ¦ 0 0 1 | 미확인(자동) |  |  |  |
-| `/decalview/sprite` | block | [str]x27 | 27 | 27 | 예: "cannon_selected.ebm" | 미확인(자동) |  |  |  |
+| `/decalview/layer` | block | [atom]x27 | 27 | 27 | alpha ¦ grounddynamic | 추정 | 데칼을 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/decalview/offset` | block | [num num num]x26 | 26 | 26 | 0 0 10 ¦ 0 0 1 | 추정 | 위치 오프셋 x y z (추정: 값 0 0 10) | 파일 구조와 값에서 추론 |  |
+| `/decalview/sprite` | block | [str]x27 | 27 | 27 | 예: "cannon_selected.ebm" | 추정 | 데칼로 쓰는 그림 파일(.ebm) (추정: 값 "supply_zone.ebm") | 파일 구조와 값에서 추론 |  |
 | `/decalview/sprite/light` | block | [num]x27 | 27 | 27 | 0.2 ~ 1 | 미확인(자동) |  |  |  |
-| `/decalview/sprite/prescalex` | block | [expr]x22 [num]x5 | 27 | 27 | 0.07 ~ 0.4 | 미확인(자동) |  |  |  |
-| `/decalview/sprite/prescaley` | block | [expr]x22 [num]x5 | 27 | 27 | 0.07 ~ 0.4 | 미확인(자동) |  |  |  |
-| `/decalview/sprite/preturn` | block | [num]x4 | 4 | 4 | 90 | 미확인(자동) |  |  |  |
+| `/decalview/sprite/prescalex` | block | [expr]x22 [num]x5 | 27 | 27 | 0.07 ~ 0.4 | 추정 | 그림의 가로 배율 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/decalview/sprite/prescaley` | block | [expr]x22 [num]x5 | 27 | 27 | 0.07 ~ 0.4 | 추정 | 그림의 세로 배율 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/decalview/sprite/preturn` | block | [num]x4 | 4 | 4 | 90 | 추정 | 미리 돌려 놓는 각도, 도 (추정: 값 90) | 파일 구조와 값에서 추론 |  |
 | `/decalview/usedirection` | block | []x26 | 26 | 26 | 예: | 미확인(자동) |  |  |  |
-| `/decalview/visible` | block | [num]x27 | 27 | 27 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/decalview/visible` | block | [num]x27 | 27 | 27 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/dialog` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/dialog/face_color` | block | [str]x2 | 2 | 2 | "23 23 23 200" ¦ "40 40 40 50" | 미확인(자동) |  |  | 50 50 50 ¦ 178 55 55 55 |
 | `/dialog/frame_color` | block | [str]x1 | 1 | 1 | "20 20 20  " | 미확인(자동) |  |  |  |
@@ -5986,22 +5986,22 @@
 | `/easy/unitset/value` | block | [param]x1 | 1 | 1 | %period | 미확인(자동) |  |  |  |
 | `/event_history` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/event_history/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(9)p(0)" ¦ "<f(open_sans)s(8)>p(0)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ This appears in the XP bar and in the title of MP settings. It's also the font for many pop up windows excepting 'loading...' and 'loading multiplayer resources...' ; dbd4cb |
-| `/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 미확인(자동) |  |  |  |
-| `/extender[land_patch]` | block | [str]x6 | 6 | 6 | "land_patch" | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/alignenabled` | block | [num]x5 | 5 | 5 | 1 | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/alignstacked` | block | [num]x5 | 5 | 5 | 0 ~ 1 | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/alignvolumes` | block | [num]x2 | 2 | 2 | 0 ~ 1 | 미확인(자동) |  |  |  |
+| `/extender[edifice]` | block | [str]x1 | 1 | 1 | "edifice" | 문서 | 지붕이나 위층 바닥을 숨겨야 하는 건물 조각에 붙이는 기능 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) |  |
+| `/extender[land_patch]` | block | [str]x6 | 6 | 6 | "land_patch" | 문서 | 모델에 지형 패치(유닛이 땅처럼 다닐 수 있는 면)가 있음을 뜻한다. 참호와 구덩이를 지형에 맞추는 데도 쓴다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/extender[land_patch]/alignenabled` | block | [num]x5 | 5 | 5 | 1 | 문서 | 메시를 지면에 맞춰 정렬할지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/extender[land_patch]/alignstacked` | block | [num]x5 | 5 | 5 | 0 ~ 1 | 문서 | 정렬에 쓸 지면 층. 0은 원래 지면(참호용), 1은 이미 파인 지면(구덩이용). 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/extender[land_patch]/alignvolumes` | block | [num]x2 | 2 | 2 | 0 ~ 1 | 문서 | 볼륨 중심에서 지면까지의 거리가 변하지 않도록 볼륨을 옮길지 여부. 기본 0 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/extender[land_patch]/bigkernel` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/randomrotate` | block | [num]x2 | 2 | 2 | 1 | 미확인(자동) |  |  |  |
+| `/extender[land_patch]/randomrotate` | block | [num]x2 | 2 | 2 | 1 | 문서 | 편집기에서 지면에 놓을 때 무작위로 회전시킬지 여부. 기본 0 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/extender[land_patch]/removeentities` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/extender[land_patch]/terraintype` | block | [str str]x4 | 4 | 4 | "ground" "ground" ¦ "ground" "rock" ¦ "ground" "snow" | 미확인(자동) |  |  |  |
+| `/extender[land_patch]/terraintype` | block | [str str]x4 | 4 | 4 | "ground" "ground" ¦ "ground" "rock" ¦ "ground" "snow" | 문서 | 이 패치가 나타내는 지형 종류. 기본은 ground이고 전체 목록은 set/interaction_terrain/terrains.set에 있다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/extender[land_patch]/updateentities` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  |  |
 | `/extender[light]` | block | [str]x1 | 1 | 1 | "light" | 미확인(자동) |  |  |  |
-| `/extender[light]/preset` | block | [str]x4 | 1 | 4 | "default" ¦ "lamp_spot" ¦ "lamp_point" ¦ "lamp_search" | 미확인(자동) |  |  |  |
-| `/extender[light]/preset/break_bone` | block | [str]x4 | 1 | 4 | "lamp_glass1" | 미확인(자동) |  |  |  |
-| `/extender[light]/preset/break_fx` | block | [str]x4 | 1 | 4 | "lamp_hit" | 미확인(자동) |  |  |  |
-| `/extender[light]/preset/light_bone` | block | [str]x4 | 1 | 4 | "lamp_light_point1" ¦ "lamp_light_spot1" | 미확인(자동) |  |  |  |
-| `/extender[light]/preset/light_fx` | block | [str]x4 | 1 | 4 | "light_post" ¦ "light_post_dir" ¦ "light_post_plafond" ¦ "light_searchlight" | 미확인(자동) |  |  |  |
+| `/extender[light]/preset` | block | [str]x4 | 1 | 4 | "default" ¦ "lamp_spot" ¦ "lamp_point" ¦ "lamp_search" | 추정 | 조명 프리셋 하나. 문자열이 이름 (추정: 값 "lamp_spot", "lamp_point") | 파일 구조와 값에서 추론 |  |
+| `/extender[light]/preset/break_bone` | block | [str]x4 | 1 | 4 | "lamp_glass1" | 추정 | 깨지는 부분(유리)의 뼈대 (추정: 이름과 값 "lamp_glass1") | 파일 구조와 값에서 추론 |  |
+| `/extender[light]/preset/break_fx` | block | [str]x4 | 1 | 4 | "lamp_hit" | 추정 | 조명이 깨질 때의 효과 이름 (추정: 이름과 값 "lamp_hit") | 파일 구조와 값에서 추론 |  |
+| `/extender[light]/preset/light_bone` | block | [str]x4 | 1 | 4 | "lamp_light_point1" ¦ "lamp_light_spot1" | 추정 | 빛이 나오는 자리의 뼈대 (추정: 이름과 값) | 파일 구조와 값에서 추론 |  |
+| `/extender[light]/preset/light_fx` | block | [str]x4 | 1 | 4 | "light_post" ¦ "light_post_dir" ¦ "light_post_plafond" ¦ "light_searchlight" | 추정 | 빛 효과 이름 (추정: 이름과 값 "light_post") | 파일 구조와 값에서 추론 |  |
 | `/frame` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/frame/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(28)c(255 255 255)" ¦ "f(open_sans)s(28)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ This appears in the XP bar and in the title of MP settings. It's also the font for many pop up windows excepting 'loading...' and 'loading multiplayer resources...' ; dbd4cb |
 | `/gc_hint` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
@@ -6137,7 +6137,7 @@
 | `/listbox/item/text_style/focused` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(235 178 108)y." | 미확인(자동) |  |  |  |
 | `/listbox/item/text_style/normal` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(176 151 121)y." | 미확인(자동) |  |  | Standard speed. Single click movement order ¦ single flick, running mode |
 | `/listbox/item/text_style/selected` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(235 178 108)y." | 미확인(자동) |  |  |  |
-| `/lodclass` | block | [str]x18 | 18 | 18 | "huge" ¦ "decor_medium" ¦ "decor_big" ¦ "decor_shellhole" ¦ "part_small" ¦ "part_big" ¦ "decor_landmark" ¦ "decor_building" ¦ "decor_bush" ¦ "decor_tree" ¦ "decor_trench" | 미확인(자동) |  |  |  |
+| `/lodclass` | block | [str]x18 | 18 | 18 | "huge" ¦ "decor_medium" ¦ "decor_big" ¦ "decor_shellhole" ¦ "part_small" ¦ "part_big" ¦ "decor_landmark" ¦ "decor_building" ¦ "decor_bush" ¦ "decor_tree" ¦ "decor_trench" | 추정 | 상세도(LOD) 전환 거리 등급의 이름 (추정: 값 "vehicle_plane", "human") | 파일 구조와 값에서 추론 |  |
 | `/mass` | block | [num]x10 | 10 | 10 | 1 ~ 50000 | 미확인(자동) |  |  | 65kg human + 5kg bike |
 | `/message_history` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/message_history/text_style` | block | [str]x2 | 2 | 2 | "f(anka)s(%fs)p(0)c(255 255 255)" ¦ "f(open_sans)s(%fs)p(0)c(255 255 255)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ This appears in the XP bar and in the title of MP settings. It's also the font for many pop up windows excepting 'loading...' and 'loading multiplayer resources...' ; dbd4cb |
@@ -6349,11 +6349,11 @@
 | `/presets/"*"/specmode` | block | [str]x54 | 12 | 54 | "all_normal" ¦ "cp_80" ¦ "cp_100" ¦ "cp_120" ¦ "cp_60" ¦ "cp_140" ¦ "cp_160" ¦ "cp_180" ¦ "cp_200" ¦ "cp_250" | 미확인(자동) |  |  |  |
 | `/presets/"*"/unitmode` | block | [str]x54 | 12 | 54 | "early" ¦ "late" ¦ "mid" | 미확인(자동) |  |  |  |
 | `/props` | block | [str str]x7 [str]x6 [str str str str str str]x2 [str str str str str]x2 [str str str str]x1 | 19 | 19 | 예: "big" "part" | 미확인(자동) |  |  |  |
-| `/request` | block | [str]x85 | 1 | 85 | 예: "dead" | 미확인(자동) |  |  |  |
-| `/request/duration` | block | [num]x13 | 1 | 13 | 1 ~ 2 | 미확인(자동) |  |  |  |
-| `/request/exit` | block | [str]x7 | 1 | 7 | "stop-move" ¦ "stop-hold-back" ¦ "stop-rotate" ¦ "stop-repair" ¦ "stop-animation" | 미확인(자동) |  |  |  |
+| `/request` | block | [str]x85 | 1 | 85 | 예: "dead" | 문서 | 상태 기계가 받는 요청 하나. 이름이 같은 태그를 가진 상태로 전환한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/request/duration` | block | [num]x13 | 1 | 13 | 1 ~ 2 | 문서 | 코드가 요청을 다시 부르기까지 허용되는 최대 틱 수. 넘으면 요청이 취소된다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/request/exit` | block | [str]x7 | 1 | 7 | "stop-move" ¦ "stop-hold-back" ¦ "stop-rotate" ¦ "stop-repair" ¦ "stop-animation" | 문서 | 요청이 시간 초과로 취소될 때 자동으로 넘어갈 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/request/interrupt` | block | []x5 | 1 | 5 | 예: | 미확인(자동) |  |  |  |
-| `/request/priority` | block | [num]x85 | 1 | 85 | 0 ~ 50 | 미확인(자동) |  |  |  |
+| `/request/priority` | block | [num]x85 | 1 | 85 | 0 ~ 50 | 문서 | 요청의 우선순위. 여러 요청이 겹치면 값이 큰 것을 고른다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/request/switch` | block | [str num]x2 | 1 | 2 | "walk" 0 ¦ "walk" 1 | 미확인(자동) |  |  |  |
 | `/scenario` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/scenario/text_style` | block | [str]x2 | 2 | 2 | "s(10)c(200 200 200)" | 미확인(자동) |  |  | temp size fix prev use s(%fs) ¦ This appears in the XP bar and in the title of MP settings. It's also the font for many pop up windows excepting 'loading...' and 'loading multiplayer resources...' ; dbd4cb |
@@ -6375,59 +6375,59 @@
 | `/selector/group/sort/weapon` | block | [str]x50 []x20 | 18 | 70 | "rocketlauncher" ¦ "at_rifle" ¦  ¦ "bullet" ¦ "aa" ¦ "fg" ¦ "ap" ¦ "grenade" | 미확인(자동) |  |  |  |
 | `/selector/type` | block | [str]x17 | 17 | 17 | 예: "airborne_bullet" | 미확인(자동) |  |  | "unit tag" or "unit type" + "current main weapon tag" |
 | `/selector/unit` | block | [str str]x5 [str]x1 | 4 | 6 | "human" ¦ "human" "rocketlauncher" ¦ "human" "at_rifle" ¦ "human" "ap" ¦ "human" "bullet" ¦ "human" "fg" | 미확인(자동) |  |  | "unit tag" or "unit type" + "current main weapon tag" ¦ (ap = molotov grenades, AT grenade launchers, Rocketlaunchers, AT rifles) |
-| `/sequence` | block | [str]x1339 | 2 | 1339 | 예: "cinematics\lst_attn_01" | 미확인(자동) |  |  | if too slow, semi autos won't play animation everytime ¦ {file "weapon\anim_mg_stand_reload_up.anm"} @note: commented out because of diff wep speeds. |
+| `/sequence` | block | [str]x1339 | 2 | 1339 | 예: "cinematics\lst_attn_01" | 추정 | 애니메이션 시퀀스 하나. 문자열이 이름 (추정: 하위 file, speed) | 파일 구조와 값에서 추론 | if too slow, semi autos won't play animation everytime ¦ {file "weapon\anim_mg_stand_reload_up.anm"} @note: commented out because of diff wep speeds. |
 | `/sequence/additive` | block | []x8 | 1 | 8 | 예: | 미확인(자동) |  |  |  |
 | `/sequence/dynamicspeed` | block | []x23 | 2 | 23 | 예: | 미확인(자동) |  |  |  |
 | `/sequence/dynamicspeed/#row` | block | [num num num]x36 | 2 | 36 | 예: 102 103 1000 | 미확인(자동) |  |  |  |
 | `/sequence/events` | block | []x224 | 2 | 224 | 예: | 미확인(자동) |  |  |  |
 | `/sequence/events/#row` | block | [num str]x790 | 2 | 790 | 예: 11 "leg_right" | 미확인(자동) |  |  |  |
-| `/sequence/file` | block | [str]x260 | 2 | 260 | 예: "flinch/flinch_head_01.anm" | 미확인(자동) |  |  |  |
+| `/sequence/file` | block | [str]x260 | 2 | 260 | 예: "flinch/flinch_head_01.anm" | 추정 | 재생할 애니메이션 파일(.anm) (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/sequence/movement` | block | []x69 | 2 | 69 | 예: | 미확인(자동) |  |  |  |
 | `/sequence/pinback` | block | [num]x8 []x5 | 1 | 13 | 2 | 미확인(자동) |  |  |  |
 | `/sequence/resume` | block | []x177 | 2 | 177 | 예: | 미확인(자동) |  |  |  |
 | `/sequence/rotate` | block | [str num num num num]x4 | 1 | 4 | "body" 0 0 1 -90 | 미확인(자동) |  |  |  |
 | `/sequence/smooth` | block | [num]x304 | 2 | 304 | 0 ~ 0.7 | 미확인(자동) |  |  |  |
-| `/sequence/speed` | block | [num]x647 | 2 | 647 | 0.15 ~ 4 | 미확인(자동) |  |  | sway speed coef ¦ kmph |
+| `/sequence/speed` | block | [num]x647 | 2 | 647 | 0.15 ~ 4 | 추정 | 재생 속도 배수 (추정: 이름과 값 0.15 ~ 4) | 파일 구조와 값에서 추론 | sway speed coef ¦ kmph |
 | `/simulation` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/simulation/able` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
 | `/simulation/state` | block | [num]x3 | 3 | 3 | 1 | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/simulatorid` | block | [str]x3 | 3 | 3 | "pillar" | 미확인(자동) |  |  |  |
+| `/simulatorid` | block | [str]x3 | 3 | 3 | "pillar" | 추정 | 물리 시뮬레이션 종류 (추정: 값 "airborne", "human", "water", "grenade") | 파일 구조와 값에서 추론 |  |
 | `/skeleton` | block | []x3 | 3 | 3 | 예: | 미확인(자동) |  |  |  |
 | `/skeleton/bone` | block | [str]x1 | 1 | 1 | "basis" | 미확인(자동) |  |  | Land;"}} ¦ "}} |
-| `/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x1 | 1 | 1 | 0 0 1 0 -1 0 1 0 0 0 0 -0.5 | 미확인(자동) |  |  |  |
+| `/skeleton/bone/matrix34` | block | [num num num num num num num num num num num num]x1 | 1 | 1 | 0 0 1 0 -1 0 1 0 0 0 0 -0.5 | 추정 | 뼈대의 방향과 위치를 담은 3x4 행렬 (추정: Call to Arms 위키도 추정이라고 밝힘) | calltoarms.fandom.com/wiki/Modding/Files (2026-10-12 확인) |  |
 | `/skeleton/texmods` | block | []x4 | 2 | 4 | 예: | 미확인(자동) |  |  |  |
-| `/skeleton/texmods/"*"` | block | [str str]x95 | 2 | 95 | 예: "Autumn" "aut" | 미확인(자동) |  |  |  |
+| `/skeleton/texmods/"*"` | block | [str str]x95 | 2 | 95 | 예: "Autumn" "aut" | 추정 | 텍스처 변형(위장·계절) 이름과 텍스처 접미사 한 쌍 (추정: 값 "Autumn" "aut") | 파일 구조와 값에서 추론 |  |
 | `/slider` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/slider/folder` | block | [str]x2 | 2 | 2 | "/interface/skin/game/slider/" | 미확인(자동) |  |  |  |
 | `/smooth` | block | [num]x27 | 2 | 27 | 0 ~ 0.5 | 미확인(자동) |  |  |  |
 | `/split` | block | [num]x1 | 1 | 1 | 2 | 미확인(자동) |  |  | { split <index> <from> <to> } |
 | `/splitter` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/splitter/folder` | block | [str]x2 | 2 | 2 | "/interface/skin/game/splitter/" | 미확인(자동) |  |  |  |
-| `/spriteview` | block | [str]x1 | 1 | 1 | "selection_linked" | 미확인(자동) |  |  |  |
-| `/spriteview/layer` | block | [atom]x1 | 1 | 1 | debug | 미확인(자동) |  |  |  |
-| `/spriteview/offset` | block | [num num param]x1 | 1 | 1 | 0 0 %off | 미확인(자동) |  |  |  |
+| `/spriteview` | block | [str]x1 | 1 | 1 | "selection_linked" | 추정 | 엔티티에 붙여 그리는 스프라이트 하나 (추정: 하위 sprite, layer) | 파일 구조와 값에서 추론 |  |
+| `/spriteview/layer` | block | [atom]x1 | 1 | 1 | debug | 추정 | 스프라이트를 그리는 층 (추정: 값 grounddynamic) | 파일 구조와 값에서 추론 |  |
+| `/spriteview/offset` | block | [num num param]x1 | 1 | 1 | 0 0 %off | 추정 | 위치 오프셋 x y z (추정: 값) | 파일 구조와 값에서 추론 |  |
 | `/spriteview/orientation` | block | [atom]x1 | 1 | 1 | billboard | 미확인(자동) |  |  |  |
-| `/spriteview/sprite` | block | [str]x1 | 1 | 1 | "arrow.ebm" | 미확인(자동) |  |  |  |
-| `/spriteview/sprite/prescalex` | block | [expr]x1 | 1 | 1 | ( * 0.4 %scale ) | 미확인(자동) |  |  |  |
-| `/spriteview/sprite/prescaley` | block | [expr]x1 | 1 | 1 | ( * 0.4 %scale ) | 미확인(자동) |  |  |  |
-| `/spriteview/visible` | block | [num]x1 | 1 | 1 | 0 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/start` | block | [str]x1 | 1 | 1 | "stand" | 미확인(자동) |  |  | games played : starting CP of each match |
+| `/spriteview/sprite` | block | [str]x1 | 1 | 1 | "arrow.ebm" | 추정 | 스프라이트로 쓰는 그림 파일(.ebm) (추정: 값 "arrow.ebm") | 파일 구조와 값에서 추론 |  |
+| `/spriteview/sprite/prescalex` | block | [expr]x1 | 1 | 1 | ( * 0.4 %scale ) | 추정 | 그림의 가로 배율 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/spriteview/sprite/prescaley` | block | [expr]x1 | 1 | 1 | ( * 0.4 %scale ) | 추정 | 그림의 세로 배율 (추정: 이름) | 파일 구조와 값에서 추론 |  |
+| `/spriteview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/start` | block | [str]x1 | 1 | 1 | "stand" | 문서 | 유닛이 처음 놓이는 상태의 이름 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | games played : starting CP of each match |
 | `/state` | block | [str]x168 | 11 | 168 | 예: "stand_bazooka_pick" | 미확인(자동) |  |  | 2hand & 1hand items ¦ to enable item ops in snipe cover |
-| `/state/condition` | block | [str]x25 | 6 | 25 | 예: "board" | 미확인(자동) |  |  |  |
-| `/state/from` | block | [str]x57 | 10 | 57 | "stand" ¦ "lie" ¦ "snipe" ¦ "squat" ¦ "walk" ¦ "board" ¦ "lie_aim" ¦ "squat_aim" ¦ "stand_noaim" ¦ "throwoff_end" | 미확인(자동) |  |  |  |
-| `/state/fromtagged` | block | [str]x23 | 2 | 23 | "up" ¦ "snipe" ¦ "squat" ¦ "onboard" ¦ "down" ¦ "swim" ¦ "healing" ¦ "cover" | 미확인(자동) |  |  |  |
-| `/state/split` | block | [str str]x39 | 3 | 39 | 예: "snipe_aim" "recoil" | 미확인(자동) |  |  | { split <index> <from> <to> } |
-| `/state/tag` | block | [str]x537 | 11 | 537 | 예: "up" | 미확인(자동) |  |  | hybrid AT grenade / mines ¦ thrower hand weapon |
-| `/state/to` | block | [str]x158 | 11 | 158 | 예: "stand" | 미확인(자동) |  |  |  |
-| `/state/transit` | block | [str]x57 | 8 | 57 | 예: "stand" | 미확인(자동) |  |  |  |
+| `/state/condition` | block | [str]x25 | 6 | 25 | 예: "board" | 문서 | 이 상태에 들어가기 위한 조건. 요청 이름과 같아야 한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/state/from` | block | [str]x57 | 10 | 57 | "stand" ¦ "lie" ¦ "snipe" ¦ "squat" ¦ "walk" ¦ "board" ¦ "lie_aim" ¦ "squat_aim" ¦ "stand_noaim" ¦ "throwoff_end" | 문서 | 이 상태로 들어올 수 있는 출발 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/state/fromtagged` | block | [str]x23 | 2 | 23 | "up" ¦ "snipe" ¦ "squat" ¦ "onboard" ¦ "down" ¦ "swim" ¦ "healing" ¦ "cover" | 문서 | 이 태그를 가진 모든 상태에서 이 상태로 들어올 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/state/split` | block | [str str]x39 | 3 | 39 | 예: "snipe_aim" "recoil" | 문서 | 유닛을 반독립적인 부분(예: 상체와 하체)으로 나눠 따로 애니메이션한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | { split <index> <from> <to> } |
+| `/state/tag` | block | [str]x537 | 11 | 537 | 예: "up" | 문서 | 상태에 붙는 태그. 같은 이름의 요청이 이 상태를 고르게 하고, 다른 시스템이 유닛의 상태를 알아보는 데 쓴다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | hybrid AT grenade / mines ¦ thrower hand weapon |
+| `/state/to` | block | [str]x158 | 11 | 158 | 예: "stand" | 문서 | 이 상태에서 넘어갈 수 있는 상태. 여러 개를 둘 수 있다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/state/transit` | block | [str]x57 | 8 | 57 | 예: "stand" | 문서 | 조건이 되면 요청 없이 자동으로 넘어가는 다음 상태 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
 | `/static_text` | block | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/static_text/disabled_text_color` | block | [str]x2 | 2 | 2 | "209 120 54" ¦ "67 67 67" | 미확인(자동) |  |  |  |
-| `/subset` | block | [str atom str]x3 [str]x2 | 1 | 5 | "default" ¦ "with_item" from "default" ¦ "with_weapon" from "default" ¦ "with_bazooka" from "with_weapon" ¦ "on_board" | 미확인(자동) |  |  |  |
-| `/subset/disable` | block | [str]x14 | 1 | 14 | "down" ¦ "squat" ¦ "looking" ¦ "repair" ¦ "revive" ¦ "weapon" ¦ "open-with-item" ¦ "step-aside" ¦ "up" | 미확인(자동) |  |  |  |
-| `/subset/enable` | block | [str]x3 | 1 | 3 | "open-with-item" ¦ "weapon" ¦ "board" | 미확인(자동) |  |  | to enable item ops in snipe cover |
+| `/subset` | block | [str atom str]x3 [str]x2 | 1 | 5 | "default" ¦ "with_item" from "default" ¦ "with_weapon" from "default" ¦ "with_bazooka" from "with_weapon" ¦ "on_board" | 문서 | 상태 부분집합. 유닛의 현재 상태와 맞지 않는 상태를 선택에서 뺀다. from 뒤는 물려받을 부모 부분집합 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/subset/disable` | block | [str]x14 | 1 | 14 | "down" ¦ "squat" ¦ "looking" ¦ "repair" ¦ "revive" ¦ "weapon" ¦ "open-with-item" ¦ "step-aside" ¦ "up" | 문서 | 이 부분집합에서 이 태그를 가진 상태를 못 쓰게 한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) |  |
+| `/subset/enable` | block | [str]x3 | 1 | 3 | "open-with-item" ¦ "weapon" ¦ "board" | 문서 | 이 부분집합에서 이 태그를 가진 상태를 쓸 수 있게 한다 | GEM RTS 엔진 공식 문서 docs.bestway.com.ua (Men of War II 기준, 2026-10-12 확인) | to enable item ops in snipe cover |
 | `/switch` | block | [str]x1 | 1 | 1 | "walk" | 미확인(자동) |  |  |  |
-| `/switch/link` | block | [str str]x4 | 1 | 4 | "stand" "walk" ¦ "stand" "walk_switch_move" ¦ "stand_recoil" "walk_recoil" ¦ "stand_bolt" "walk_bolt" | 미확인(자동) |  |  | { link <from> <to> } |
-| `/switch/split` | block | [num str str]x2 | 1 | 2 | 0 "stand" "walk" ¦ 0 "stand_aim" "walk" | 미확인(자동) |  |  | { split <index> <from> <to> } |
+| `/switch/link` | block | [str str]x4 | 1 | 4 | "stand" "walk" ¦ "stand" "walk_switch_move" ¦ "stand_recoil" "walk_recoil" ¦ "stand_bolt" "walk_bolt" | 확인 | 상태 전환의 연결 하나. 값은 출발 상태와 도착 상태 | 게임 파일 주석 | { link <from> <to> } |
+| `/switch/split` | block | [num str str]x2 | 1 | 2 | 0 "stand" "walk" ¦ 0 "stand_aim" "walk" | 확인 | 나뉜 부분의 전환 하나. 값은 부분 번호, 출발 상태, 도착 상태 | 게임 파일 주석 | { split <index> <from> <to> } |
 | `/talk` | block | [str]x80 []x2 | 5 | 82 | 예: | 미확인(자동) |  |  | replaces kill_enemy sound after 3 to 6 units killed one time. Subsequent kills return to "kill_enemy" ¦ on selecting an owned unit |
 | `/talk/("cannon_phrases")` | macro | [atom atom]x21 | 1 | 21 | 예: args alert | 미확인(자동) |  |  |  |
 | `/talk/("human_phrases")` | macro | [atom atom]x32 | 1 | 32 | 예: args ally_die | 미확인(자동) |  |  |  |
@@ -6447,16 +6447,16 @@
 | `/video_dialog/subtitle_text_style` | block | [str]x2 | 2 | 2 | "e(shadow)f(anka)s(15)c(255 255 255)" ¦ "e(shadow)f(open_sans)s(30)c(185 199 199)" | 미확인(자동) |  |  |  |
 | `/volume` | block | [str]x32 [atom str]x3 | 11 | 35 | 예: "rock" | 미확인(자동) |  |  | Main Body ¦ Truck Bed |
 | `/volume/able` | block | []x13 [atom]x4 | 7 | 17 | ¦ clear | 미확인(자동) |  |  | disables vehicle from being crewed until body is repaired ¦ stops uncontrolable actions (keep incase friendly is set on fire and is not damaged/killed) |
-| `/volume/able/blast` | block | [num]x2 []x2 | 3 | 4 | 1 | 미확인(자동) |  |  | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
-| `/volume/able/bullet` | block | []x1 [num]x1 | 2 | 2 | 0 | 미확인(자동) |  |  |  |
+| `/volume/able/blast` | block | [num]x2 []x2 | 3 | 4 | 1 | 문서 | 폭발 충격파에 반응하는지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | koef = coefficient. Threshold = koef value x volume effective thickness ¦ 75mm+ HE will break |
+| `/volume/able/bullet` | block | []x1 [num]x1 | 2 | 2 | 0 | 문서 | 탄환과의 충돌에 반응하는지 여부. 기본 1. 0이면 탄이 그냥 지나간다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
 | `/volume/able/contact` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/volume/able/obstacle` | block | [num]x10 | 5 | 10 | 0 | 미확인(자동) |  |  |  |
-| `/volume/able/overlap` | block | [num]x2 []x1 | 2 | 3 | 1 | 미확인(자동) |  |  |  |
-| `/volume/able/touch` | block | [num]x2 | 1 | 2 | 0 | 미확인(자동) |  |  |  |
-| `/volume/able/visible` | block | [num]x13 | 4 | 13 | 0 ~ 1 | 미확인(자동) |  |  | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
-| `/volume/density` | block | [num]x2 | 2 | 2 | 0 ~ 0.007 | 미확인(자동) |  |  |  |
+| `/volume/able/obstacle` | block | [num]x10 | 5 | 10 | 0 | 문서 | 이 볼륨에서 이동 장애물 구역을 자동으로 만들지 여부. 기본 1 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/overlap` | block | [num]x2 []x1 | 2 | 3 | 1 | 문서 | 다른 물체와 겹칠 때 겹침 이벤트를 보내는지 여부(예: 병사가 지나가면 덤불이 흔들림) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/touch` | block | [num]x2 | 1 | 2 | 0 | 문서 | 이 볼륨 위에서 마우스 커서 모양이 바뀌는지 여부(예: 창문) | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) |  |
+| `/volume/able/visible` | block | [num]x13 | 4 | 13 | 0 ~ 1 | 문서 | 시야 판정과 높이 맵 생성에 쓰이는 볼륨인지 여부. 기본 1. 켜면 뒤의 것을 가린다 | Best Way 옛 공식 위키 wiki.bestway.com.ua의 web.archive.org 보존본 (В тылу врага 2 기준, 2026-10-12 확인) | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
+| `/volume/density` | block | [num]x2 | 2 | 2 | 0 ~ 0.007 | 문서 | 장갑의 밀도(품질) 계수. 기본 1 | mow-portal.ru의 SOEdit 해설 글 (Men of War 계열, 2026-10-12 확인) |  |
 | `/volume/material` | block | [str]x1 | 1 | 1 | "ground" | 미확인(자동) |  |  |  |
-| `/volume/tags` | block | [str]x17 [str str]x6 | 7 | 23 | "body" ¦ "body" "fire" ¦ "bole" ¦ "lamp" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
+| `/volume/tags` | block | [str]x17 [str str]x6 | 7 | 23 | "body" ¦ "body" "fire" ¦ "bole" ¦ "lamp" | 문서 | 볼륨에 붙이는 태그. "no_target"은 AI가 그 볼륨을 표적으로 삼지 않게 한다 | Gates of Hell 개발자 변경 기록 steamcommunity.com/app/400750/discussions/0/4498514133983766024 (2026-10-12 확인) | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/volume/thickness` | block | [num]x19 | 8 | 19 | 0.2 ~ 1000 | 미확인(자동) |  |  |  |
 | `/zclipvisibility` | block | [num]x4 | 4 | 4 | 0 ~ 1 | 미확인(자동) |  |  |  |
 | `/zoomfactor` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  |  |
@@ -7529,7 +7529,7 @@
 | `/(define "generic_v")/squad_cost_factor` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | Cost is NOT the addition of the elements making up the unit, because it is overriden by the doctrine cost. |
 | `/(define "generic_v")/tags` | block | [str]x1 | 1 | 1 | "all %t" | 미확인(자동) |  |  | tag for conquest so that vehicle cannot be repaired/recovered ¦ strikes types see at {strokes} in set\ability\melee.set |
 | `/(define "global_damage_mod")` | define | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
-| `/(define "global_damage_mod")/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 0.1 | 미확인(자동) |  |  | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
+| `/(define "global_damage_mod")/armor_damage_modifier` | block | [num]x1 | 1 | 1 | 0.1 | 확인 | 관통력 가운데 얼마가 부품 피해로 들어가는지를 조정하는 배수 | 게임 파일 주석 | multiplier adjusts ratio of which part of penetration does damage to component. (shell penetration - armor thickness) verses minimumDamageModifier. values < 1 = less damage done by over penetration. |
 | `/(define "inf_medic")` | define | []x2 | 2 | 2 | 예: | 미확인(자동) |  |  |  |
 | `/(define "inf_medic")/("inf_settings_general")` | macro | [call:cost]x2 | 2 | 2 | cost ( %cost ) | 미확인(자동) |  |  |  |
 | `/(define "inf_medic")/cp` | block | [num]x2 | 2 | 2 | 2 ~ 3 | 미확인(자동) |  |  | source code only supports 6 values |
@@ -9492,9 +9492,9 @@
 | `/environment/haze/altitude_strength` | block | [num]x609 | 609 | 609 | 0 ~ 2.5 | 미확인(자동) |  |  |  |
 | `/environment/haze/color` | block | [atom]x609 | 609 | 609 | 예: 0xff4e5151 | 미확인(자동) |  |  | second |
 | `/environment/haze/enable` | block | []x607 | 607 | 607 | 예: | 미확인(자동) |  |  | to enable item ops in snipe cover |
-| `/environment/haze/end` | block | [num]x609 | 609 | 609 | 0 ~ 12000 | 미확인(자동) |  |  |  |
+| `/environment/haze/end` | block | [num]x609 | 609 | 609 | 0 ~ 12000 | 추정 | 거리 안개(haze)가 가장 짙어지는 거리(m) (추정: haze 블록의 start와 짝. 지도 환경 파일 값은 대부분 4000~6000) | 파일 구조와 값에서 추론 |  |
 | `/environment/haze/sky_haziness` | block | [num]x609 | 609 | 609 | 0 ~ 500 | 미확인(자동) |  |  |  |
-| `/environment/haze/start` | block | [num]x609 | 609 | 609 | -1000 ~ 5000 | 미확인(자동) |  |  | games played : starting CP of each match |
+| `/environment/haze/start` | block | [num]x609 | 609 | 609 | -1000 ~ 5000 | 추정 | 거리 안개(haze)가 시작되는 거리(m) (추정: haze 블록에 color·start·end·sky_haziness가 함께 있다. 지도 환경 파일 값 0~5000) | 파일 구조와 값에서 추론 | games played : starting CP of each match |
 | `/environment/light` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/light/ambient` | block | [atom]x609 | 609 | 609 | 예: 0xff1e1f1e | 미확인(자동) |  |  |  |
 | `/environment/light/camera_lens_effetcs` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
@@ -9550,7 +9550,7 @@
 | `/environment/ocean_wave_works/lake_settings/ocean_look/emissive_strength` | block | [num]x609 | 609 | 609 | 0.31 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/costal_softalpha_depth` | block | [num]x609 | 609 | 609 | 1 ~ 13 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 5500 | 미확인(자동) |  |  |  |
+| `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 5500 | 추정 | 물이 완전히 불투명하게 보이는 거리(m). 물 표현 설정이라 화면의 안개·렌더 거리나 유닛 발견과는 관계없다 (추정: ocean_wave_works의 sea·lake·river_settings › ocean_look › enhanced_water_look 안에 full_opaque_water_depth와 함께 있고, set/vision 파일은 환경 값을 읽지 않는다) | 파일 구조와 값에서 추론 |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/enhanced_water_look/full_opaque_water_depth` | block | [num]x609 | 609 | 609 | 10 ~ 100 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/specular_color` | block | [atom]x609 | 609 | 609 | 0xffffffff | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/lake_settings/ocean_look/specular_intensity` | block | [num]x609 | 609 | 609 | 0.05 ~ 0.52 | 미확인(자동) |  |  |  |
@@ -9583,7 +9583,7 @@
 | `/environment/ocean_wave_works/river_settings/ocean_look/emissive_strength` | block | [num]x609 | 609 | 609 | 0.31 ~ 0.83 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/costal_softalpha_depth` | block | [num]x609 | 609 | 609 | 1 ~ 15 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 2000 | 미확인(자동) |  |  |  |
+| `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 100 ~ 2000 | 추정 | 물이 완전히 불투명하게 보이는 거리(m). 물 표현 설정이라 화면의 안개·렌더 거리나 유닛 발견과는 관계없다 (추정: ocean_wave_works의 sea·lake·river_settings › ocean_look › enhanced_water_look 안에 full_opaque_water_depth와 함께 있고, set/vision 파일은 환경 값을 읽지 않는다) | 파일 구조와 값에서 추론 |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/enhanced_water_look/full_opaque_water_depth` | block | [num]x609 | 609 | 609 | 10 ~ 100 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/specular_color` | block | [atom]x609 | 609 | 609 | 0xffffffff ¦ 0xffb8b8b8 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/river_settings/ocean_look/specular_intensity` | block | [num]x609 | 609 | 609 | 0.05 ~ 0.27 | 미확인(자동) |  |  |  |
@@ -9616,7 +9616,7 @@
 | `/environment/ocean_wave_works/sea_settings/ocean_look/emissive_strength` | block | [num]x609 | 609 | 609 | 0.07 ~ 1 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look` | block | []x609 | 609 | 609 | 예: | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/costal_softalpha_depth` | block | [num]x609 | 609 | 609 | 1 ~ 30 | 미확인(자동) |  |  |  |
-| `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 10 ~ 9000 | 미확인(자동) |  |  |  |
+| `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/full_opaque_view_distance` | block | [num]x609 | 609 | 609 | 10 ~ 9000 | 추정 | 물이 완전히 불투명하게 보이는 거리(m). 물 표현 설정이라 화면의 안개·렌더 거리나 유닛 발견과는 관계없다 (추정: ocean_wave_works의 sea·lake·river_settings › ocean_look › enhanced_water_look 안에 full_opaque_water_depth와 함께 있고, set/vision 파일은 환경 값을 읽지 않는다) | 파일 구조와 값에서 추론 |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/enhanced_water_look/full_opaque_water_depth` | block | [num]x609 | 609 | 609 | 1 ~ 1500 | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/specular_color` | block | [atom]x609 | 609 | 609 | 0xffffffff ¦ 0xffffffae ¦ 0xfffedebf ¦ 0xfffbfbfb | 미확인(자동) |  |  |  |
 | `/environment/ocean_wave_works/sea_settings/ocean_look/specular_intensity` | block | [num]x609 | 609 | 609 | 0.05 ~ 1 | 미확인(자동) |  |  |  |
@@ -10044,7 +10044,7 @@
 | `/high/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/high/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/high/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
-| `/high/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
+| `/high/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 추정 | 수리 능력. factor 뒤의 수가 수리 속도 배수 (추정: 값 factor 0.5, factor 1.0과 매크로 이름 basic_repair, engineer) | 파일 구조와 값에서 추론 |  |
 | `/high/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/high/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/high/resupplycost/support` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -10298,7 +10298,7 @@
 | `/low/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/low/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/low/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
-| `/low/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
+| `/low/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 추정 | 수리 능력. factor 뒤의 수가 수리 속도 배수 (추정: 값 factor 0.5, factor 1.0과 매크로 이름 basic_repair, engineer) | 파일 구조와 값에서 추론 |  |
 | `/low/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/low/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/low/resupplycost/support` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -11028,7 +11028,7 @@
 | `/standard/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/standard/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/standard/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
-| `/standard/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
+| `/standard/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 추정 | 수리 능력. factor 뒤의 수가 수리 속도 배수 (추정: 값 factor 0.5, factor 1.0과 매크로 이름 basic_repair, engineer) | 파일 구조와 값에서 추론 |  |
 | `/standard/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/standard/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/standard/resupplycost/support` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -11251,7 +11251,7 @@
 | `/veryhigh/resources/sp/wingain` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  | games played : MP gain |
 | `/veryhigh/resupplycost` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/veryhigh/resupplycost/human` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | -TARGET CLASS- ¦ fallback value if no other subordinated case is applicable |
-| `/veryhigh/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 미확인(자동) |  |  |  |
+| `/veryhigh/resupplycost/human/mechanic` | block | [num atom]x1 | 1 | 1 | 0.25 AP | 추정 | 수리 능력. factor 뒤의 수가 수리 속도 배수 (추정: 값 factor 0.5, factor 1.0과 매크로 이름 basic_repair, engineer) | 파일 구조와 값에서 추론 |  |
 | `/veryhigh/resupplycost/human/newitem` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/veryhigh/resupplycost/human/weight` | block | [num atom]x1 | 1 | 1 | 1 AP | 미확인(자동) |  |  |  |
 | `/veryhigh/resupplycost/support` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |

@@ -1,0 +1,29 @@
+# 보병 요약 탭에 올리는 키. 형식과 규칙은 vehicle.psv와 같다.
+# 따옴표 이름 줄({"health" "200%"})은 펼친 경로가 /breed/perks/"*" 하나로 묶인다. 이름을 넣은 경로(/breed/perks/"health")로 줄을 나눈다.
+# 이 값들은 대부분 set/breed/presets/perks/*.inc의 매크로(tier1_standard 등) 안에 있다. 고치면 그 매크로를 쓰는 병종이 모두 바뀐다.
+/breed/perks/"health"|체력 (%)
+/breed/perks/"health_regeneration"|체력 회복 (%)
+/breed/perks/"stamina"|스태미나 (%)
+/breed/perks/"stamina_regeneration"|스태미나 회복 (%)
+/breed/perks/"speed"|이동 속도 (1.00 기준)
+/breed/perks/"rifle"|무기 기술 (이름, 수준)
+/breed/perks/"smg"|무기 기술 (이름, 수준)
+/breed/perks/"pistol"|무기 기술 (이름, 수준)
+/breed/perks/"mgun"|무기 기술 (이름, 수준)
+/breed/perks/"mgun_light"|무기 기술 (이름, 수준)
+/breed/perks/"rocketlauncher"|무기 기술 (이름, 수준)
+/breed/perks/"tank_gun"|무기 기술 (이름, 수준)
+/breed/perks/"melee"|무기 기술 (이름, 수준)
+/breed/perks/"avoidance"|회피 기술 (수준)
+/breed/perks/"personage"|소생 설정 (0이면 숙련도 0에서 소생 가능)
+/breed/perks/"vision"|시야 종류
+/breed/perks/"*"|그 밖의 기술과 수준
+**/perks/mechanic|수리 능력
+/breed/veterancy/"*"|숙련도 단계
+**/inventory/item|소지품 (이름, 수량)
+**/inventory/in_hands|손에 드는 소지품 순번
+**/armors/head|머리 장구
+/breed/skin|외형
+/breed/nationality|국적
+/breed/behaviour|행동 유형
+/breed/tags|분류 태그

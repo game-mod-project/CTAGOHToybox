@@ -1,0 +1,25 @@
+# 게임 설정 항목의 화면 이름. 형식: 경로|묶음|화면 이름. 손으로 고친다.
+# 스커미시 모드와 난이도의 게임 안 이름은 확인하지 않아 파일 이름을 함께 적는다.
+set/dynamic_campaign/resources_low.set|컨퀘스트 자원|컨퀘스트 자원 — low
+set/dynamic_campaign/resources_standard.set|컨퀘스트 자원|컨퀘스트 자원 — standard
+set/dynamic_campaign/resources_high.set|컨퀘스트 자원|컨퀘스트 자원 — high
+set/dynamic_campaign/resources_very_high.set|컨퀘스트 자원|컨퀘스트 자원 — very_high
+set/dynamic_campaign/duration_short.set|컨퀘스트 길이|컨퀘스트 길이 — short
+set/dynamic_campaign/duration_normal.set|컨퀘스트 길이|컨퀘스트 길이 — normal
+set/dynamic_campaign/duration_long.set|컨퀘스트 길이|컨퀘스트 길이 — long
+set/dynamic_campaign/duration_very_long.set|컨퀘스트 길이|컨퀘스트 길이 — very_long
+set/dynamic_campaign/duration_unlimited.set|컨퀘스트 길이|컨퀘스트 길이 — unlimited
+set/multiplayer/games/campaign_capture_the_flag.set|컨퀘스트 전투 규칙|컨퀘스트 전투 규칙 (campaign_capture_the_flag)
+script/multiplayer/modes/conquest/runtime_config.lua|컨퀘스트 AI|컨퀘스트 AI 설정 (runtime_config.lua)
+set/multiplayer/games/battle_zones.set|스커미시 모드|스커미시 — 배틀존 (battle_zones)
+set/multiplayer/games/frontlines.set|스커미시 모드|스커미시 — 프런트라인 (frontlines)
+set/multiplayer/games/cooperative.set|스커미시 모드|스커미시 — cooperative
+set/multiplayer/games/evacuation.set|스커미시 모드|스커미시 — evacuation
+set/multiplayer/games/ammunition.set|스커미시 모드|스커미시 — ammunition
+set/difficulty/training.dl|난이도|난이도 — training
+set/difficulty/easy.dl|난이도|난이도 — easy
+set/difficulty/normal.dl|난이도|난이도 — normal
+set/difficulty/hard.dl|난이도|난이도 — hard
+set/difficulty/heroic.dl|난이도|난이도 — heroic
+set/difficulty/multiplayer.dl|난이도|난이도 — multiplayer
+set/vision/vision.set|시야|시야 (필드·발견 거리)

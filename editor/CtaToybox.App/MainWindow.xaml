@@ -1,0 +1,248 @@
+<Window x:Class="CtaToybox.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CtaToybox.App"
+        Title="CTAToybox 스탯 편집기" Width="1600" Height="950" MinWidth="1100" MinHeight="600" WindowStartupLocation="CenterScreen"
+        Background="White" FontFamily="Malgun Gothic" FontSize="13">
+  <Window.Resources>
+    <local:ExpandSmallGroups x:Key="ExpandSmallGroups"/>
+
+    <!-- 접히는 묶음 머리. ConverterParameter는 "목록|수": 사용자가 펼치거나 접은 묶음은 그대로, 아니면 수 이하인 묶음만 처음에 펼친다.
+         Tag는 목록 이름이다(Group_Expanded가 상태를 기억한다) -->
+    <Style x:Key="SummaryGroup" TargetType="GroupItem">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="GroupItem">
+            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=summary|6}" Margin="0,2"
+                      Tag="summary" Expanded="Group_Expanded" Collapsed="Group_Collapsed">
+              <Expander.Header>
+                <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  ("/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="줄)"/></TextBlock>
+              </Expander.Header>
+              <ItemsPresenter/>
+            </Expander>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="FullGroup" TargetType="GroupItem">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="GroupItem">
+            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=full}" Margin="0,2"
+                      Tag="full" Expanded="Group_Expanded" Collapsed="Group_Collapsed">
+              <Expander.Header>
+                <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  ("/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="줄)"/></TextBlock>
+              </Expander.Header>
+              <ItemsPresenter/>
+            </Expander>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="RosterGroup" TargetType="GroupItem">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="GroupItem">
+            <Expander IsExpanded="{Binding Mode=OneTime, Converter={StaticResource ExpandSmallGroups}, ConverterParameter=roster}" Margin="0,2"
+                      Tag="roster" Expanded="Group_Expanded" Collapsed="Group_Collapsed">
+              <Expander.Header>
+                <TextBlock FontWeight="Bold"><Run Text="{Binding Name, Mode=OneWay}"/><Run Text="  ("/><Run Text="{Binding ItemCount, Mode=OneWay}"/><Run Text="줄)"/></TextBlock>
+              </Expander.Header>
+              <ItemsPresenter/>
+            </Expander>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <!-- 값 목록의 열. 항목 칸에 이름, 문맥, 설명을 모두 줄을 바꿔 보인다(설명이 화면 밖으로 밀리지 않게) -->
+    <GridView x:Key="RowColumns" x:Shared="False">
+      <GridViewColumn Header="항목과 설명" Width="330">
+        <GridViewColumn.CellTemplate>
+          <DataTemplate>
+            <StackPanel ToolTip="{Binding Tip}" Margin="0,2">
+              <TextBlock Text="{Binding Label}" FontWeight="SemiBold" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding Key}" FontFamily="Consolas, Malgun Gothic" Foreground="#2F5D8A" FontSize="12" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding Context}" Foreground="#666666" FontSize="12" TextWrapping="Wrap"/>
+              <TextBlock Text="{Binding Note}" Foreground="#777777" FontSize="12" TextWrapping="Wrap"/>
+            </StackPanel>
+          </DataTemplate>
+        </GridViewColumn.CellTemplate>
+      </GridViewColumn>
+      <GridViewColumn Header="지금 값" Width="215">
+        <GridViewColumn.CellTemplate>
+          <DataTemplate><TextBlock Text="{Binding Values}" TextWrapping="Wrap" ToolTip="{Binding Tip}"/></DataTemplate>
+        </GridViewColumn.CellTemplate>
+      </GridViewColumn>
+      <GridViewColumn Header="수정" Width="110">
+        <GridViewColumn.CellTemplate>
+          <DataTemplate><TextBlock Text="{Binding NewValues}" Foreground="#0B5394" FontWeight="Bold" TextWrapping="Wrap"/></DataTemplate>
+        </GridViewColumn.CellTemplate>
+      </GridViewColumn>
+      <GridViewColumn Header="같이 씀" Width="65">
+        <GridViewColumn.CellTemplate>
+          <DataTemplate><TextBlock Text="{Binding Shared}" ToolTip="이 값이 있는 파일을 읽는 유닛 수. '전부'로 고치면 모두 바뀐다"/></DataTemplate>
+        </GridViewColumn.CellTemplate>
+      </GridViewColumn>
+      <GridViewColumn Header="이 유닛만" Width="70">
+        <GridViewColumn.CellTemplate>
+          <DataTemplate><TextBlock Text="{Binding Scope}" ToolTip="이 유닛만 따로 고칠 수 있는지. '불가'면 마우스를 올려 이유를 본다"/></DataTemplate>
+        </GridViewColumn.CellTemplate>
+      </GridViewColumn>
+    </GridView>
+  </Window.Resources>
+
+  <DockPanel>
+    <Border DockPanel.Dock="Top" Padding="10,8" BorderBrush="#DDDDDD" BorderThickness="0,0,0,1" Background="#F7F7F7">
+      <DockPanel>
+        <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" VerticalAlignment="Center">
+          <TextBlock x:Name="EditCountText" VerticalAlignment="Center" Margin="0,0,12,0"/>
+          <Button x:Name="BuildButton" Content="빌드 (모드 폴더에 쓰기)" Padding="14,6" IsEnabled="False" Click="Build_Click"
+                  ToolTip="수정 목록을 mod\CTAToybox에 써넣는다. 게임을 다시 시작해야 반영된다"/>
+        </StackPanel>
+        <StackPanel>
+          <StackPanel Orientation="Horizontal">
+            <TextBlock Text="프로젝트 " Foreground="#555555" VerticalAlignment="Center"/>
+            <TextBlock x:Name="ProjectText" FontWeight="Bold" VerticalAlignment="Center"/>
+            <Button x:Name="OpenProjectButton" Content="다른 프로젝트 열기..." Margin="8,0,0,0" Padding="8,1" IsEnabled="False" Click="OpenProject_Click"/>
+            <Button x:Name="MergeProjectButton" Content="다른 프로젝트 합치기..." Margin="6,0,0,0" Padding="8,1" IsEnabled="False" Click="MergeProject_Click"
+                    ToolTip="다른 프로젝트의 수정을 이 프로젝트에 더한다. 빌드는 프로젝트 하나만 쓰므로 월드워 같은 수정 목록을 함께 넣을 때 쓴다"/>
+          </StackPanel>
+          <TextBlock x:Name="SourcesText" Foreground="#555555" TextWrapping="Wrap" Margin="0,3,0,0"/>
+          <TextBlock x:Name="WarningText" Foreground="#B00020" TextWrapping="Wrap"/>
+          <TextBlock x:Name="StatusText" Foreground="#555555"/>
+        </StackPanel>
+      </DockPanel>
+    </Border>
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="340" MinWidth="220"/>
+        <ColumnDefinition Width="5"/>
+        <ColumnDefinition Width="*" MinWidth="400"/>
+        <ColumnDefinition Width="5"/>
+        <ColumnDefinition Width="400" MinWidth="250"/>
+      </Grid.ColumnDefinitions>
+
+      <DockPanel Grid.Column="0" Margin="8">
+        <StackPanel DockPanel.Dock="Top">
+          <TextBlock Text="유닛 찾기" FontWeight="Bold" FontSize="14"/>
+          <TextBlock Text="게임 속 이름이나 파일 이름의 일부를 쓴다 (예: KV-85, panther, m3a1)" Foreground="#666666" FontSize="12" TextWrapping="Wrap" Margin="0,2"/>
+          <TextBox x:Name="SearchBox" Margin="0,2,0,6" TextChanged="Search_Changed" IsEnabled="False"/>
+          <DockPanel Margin="0,2"><TextBlock Text="종류" Width="40" VerticalAlignment="Center"/><ComboBox x:Name="KindBox" DisplayMemberPath="Label" SelectionChanged="Search_Changed" IsEnabled="False"/></DockPanel>
+          <DockPanel Margin="0,2"><TextBlock Text="출처" Width="40" VerticalAlignment="Center"/><ComboBox x:Name="LayerBox" DisplayMemberPath="Label" SelectionChanged="Search_Changed" IsEnabled="False"
+                    ToolTip="그 파일이 지금 어느 원본(바닐라 또는 모드)에서 오는지"/></DockPanel>
+          <CheckBox x:Name="ShowXBox" Margin="0,4,0,0" Checked="Search_Changed" Unchecked="Search_Changed" IsEnabled="False">
+            <TextBlock TextWrapping="Wrap" Text="_x, _xx 파일도 보이기 (x 폴더의 같은 이름 파생 파일)"/>
+          </CheckBox>
+          <TextBlock x:Name="ResultCountText" Foreground="#555555" Margin="0,4"/>
+        </StackPanel>
+        <ListBox x:Name="UnitList" SelectionChanged="UnitList_SelectionChanged" HorizontalContentAlignment="Stretch"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                 VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.VirtualizationMode="Recycling">
+          <ListBox.ItemTemplate>
+            <DataTemplate>
+              <StackPanel Margin="0,2">
+                <TextBlock Text="{Binding Title}" FontWeight="Bold" TextWrapping="Wrap"/>
+                <TextBlock Text="{Binding Sub}" Foreground="#666666" FontSize="12" TextWrapping="Wrap"/>
+              </StackPanel>
+            </DataTemplate>
+          </ListBox.ItemTemplate>
+        </ListBox>
+      </DockPanel>
+
+      <GridSplitter Grid.Column="1" HorizontalAlignment="Stretch" Background="#EEEEEE"/>
+
+      <DockPanel Grid.Column="2" Margin="8">
+        <StackPanel DockPanel.Dock="Top">
+          <TextBlock x:Name="UnitTitle" FontSize="18" FontWeight="Bold" Text="왼쪽에서 유닛을 고른다" TextWrapping="Wrap"/>
+          <TextBlock x:Name="UnitInfo" Foreground="#555555" TextWrapping="Wrap"/>
+          <TextBlock x:Name="UnitHelp" Foreground="#666666" FontSize="12" TextWrapping="Wrap" Margin="0,4,0,0"
+                     Text="줄을 두 번 누르면 값을 고친다. '같이 쓰는 유닛'이 2 이상이면 '전부'로 고칠 때 그 유닛들도 바뀐다. 묶음 머리를 누르면 펼치고 접는다(값을 고쳐도 그대로 남는다)."/>
+        </StackPanel>
+        <TabControl x:Name="Tabs" Margin="0,6,0,0">
+          <TabItem x:Name="SummaryTab" Header="요약">
+            <ListView x:Name="SummaryList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.VirtualizationMode="Recycling">
+              <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource SummaryGroup}"/></ListView.GroupStyle>
+            </ListView>
+          </TabItem>
+          <TabItem x:Name="FullTab" Header="전체">
+            <DockPanel>
+              <DockPanel DockPanel.Dock="Top" Margin="0,4">
+                <TextBlock Text="거르기 " VerticalAlignment="Center"/>
+                <TextBox x:Name="FullFilter" TextChanged="FullFilter_Changed" ToolTip="항목, 값, 설명, 파일 이름에 이 글자가 든 줄만 보인다"/>
+              </DockPanel>
+              <ListView x:Name="FullList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                        VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.VirtualizationMode="Recycling">
+                <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource FullGroup}"/></ListView.GroupStyle>
+              </ListView>
+            </DockPanel>
+          </TabItem>
+          <TabItem x:Name="RosterTab" Header="가격·로스터">
+            <DockPanel>
+              <TextBlock x:Name="RosterHelp" DockPanel.Dock="Top" TextWrapping="Wrap" Foreground="#666666" Margin="0,4,0,6"
+                         Text="콘퀘스트·배틀존 등록 파일(set/multiplayer/units)과 연구 트리(set/dynamic_campaign/unit_research_*)에서 이름이 이 유닛과 같은 항목과, 분대 인자(c1(병종:수), crew, v1(차량), vehicle(차량))로 이 유닛을 부르는 분대. 고치면 그 항목만 바뀐다. 묶음 머리가 파일과 항목 이름이다."/>
+              <ListView x:Name="RosterList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+                <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource RosterGroup}"/></ListView.GroupStyle>
+              </ListView>
+            </DockPanel>
+          </TabItem>
+          <TabItem x:Name="ItemsTab" Header="무기·탄약">
+            <DockPanel>
+              <TextBlock DockPanel.Dock="Top" TextWrapping="Wrap" Foreground="#666666" Margin="0,4,0,6"
+                         Text="이 유닛이 이름으로 가리키는 무기·탄약·장비. 파일로 이어진 것은 두 번 눌러 그 파일을 연다. 낱말이 맞는 후보가 한 폴더에 여럿이면 게임은 이름순 맨 앞 파일을 쓴다(게임 확인). '후보'나 '파일 없음'은 게임이 어느 파일을 쓰는지 확인하지 않은 이름이다."/>
+              <ListBox x:Name="ItemList" MouseDoubleClick="ItemList_DoubleClick" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListBox.ItemTemplate>
+                  <DataTemplate>
+                    <StackPanel Margin="0,3">
+                      <TextBlock Text="{Binding Title}" FontWeight="Bold" TextWrapping="Wrap"/>
+                      <TextBlock Text="{Binding Sub}" Foreground="#666666" FontSize="12" TextWrapping="Wrap"/>
+                    </StackPanel>
+                  </DataTemplate>
+                </ListBox.ItemTemplate>
+              </ListBox>
+            </DockPanel>
+          </TabItem>
+        </TabControl>
+      </DockPanel>
+
+      <GridSplitter Grid.Column="3" HorizontalAlignment="Stretch" Background="#EEEEEE"/>
+
+      <DockPanel Grid.Column="4" Margin="8">
+        <StackPanel DockPanel.Dock="Top">
+          <TextBlock Text="수정 목록" FontWeight="Bold" FontSize="14"/>
+          <TextBlock x:Name="EditHelp" Foreground="#666666" FontSize="12" TextWrapping="Wrap" Margin="0,2,0,4"
+                     Text="고친 값이 여기에 쌓인다. 체크를 끄면 빌드에서 빠진다. 위의 '빌드'를 눌러야 모드 폴더에 써지고, 게임을 다시 시작해야 반영된다."/>
+        </StackPanel>
+        <WrapPanel DockPanel.Dock="Bottom" Margin="0,4,0,0">
+          <Button Content="삭제 (원래 값으로)" Padding="8,3" Margin="0,0,6,4" Click="RemoveEdit_Click"/>
+          <Button Content="원본의 지금 값에 맞추기" Padding="8,3" Margin="0,0,6,4" Click="RebaseEdit_Click"
+                  ToolTip="'원본이 바뀜'인 수정의 원래 값을 원본의 지금 값으로 바꿔 다시 적용되게 한다"/>
+          <Button Content="그 유닛 열기" Padding="8,3" Margin="0,0,6,4" Click="OpenEditUnit_Click"/>
+        </WrapPanel>
+        <ListView x:Name="EditList" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" MouseDoubleClick="OpenEditUnit_Click">
+          <ListView.GroupStyle>
+            <GroupStyle>
+              <GroupStyle.HeaderTemplate>
+                <DataTemplate><TextBlock FontWeight="Bold" Margin="0,8,0,2" Text="{Binding Name}" TextWrapping="Wrap"/></DataTemplate>
+              </GroupStyle.HeaderTemplate>
+            </GroupStyle>
+          </ListView.GroupStyle>
+          <ListView.ItemTemplate>
+            <DataTemplate>
+              <DockPanel Margin="0,2">
+                <CheckBox DockPanel.Dock="Left" IsChecked="{Binding Enabled, Mode=OneWay}" Click="EditEnabled_Click" Tag="{Binding}" VerticalAlignment="Top" Margin="0,2,6,0"
+                          ToolTip="끄면 빌드에서 빠진다"/>
+                <StackPanel>
+                  <TextBlock Text="{Binding Title}" TextWrapping="Wrap"/>
+                  <TextBlock Text="{Binding Detail}" Foreground="#555555" FontSize="12" TextWrapping="Wrap"/>
+                  <TextBlock Text="{Binding Status}" Foreground="#B00020" TextWrapping="Wrap"/>
+                </StackPanel>
+              </DockPanel>
+            </DataTemplate>
+          </ListView.ItemTemplate>
+        </ListView>
+      </DockPanel>
+    </Grid>
+  </DockPanel>
+</Window>

@@ -1,0 +1,44 @@
+// 값 이름(data/annotations/values.psv): 호출 이름, 자리 번호, 열쇠말 뒤 자리, 열쇠말 자체, 모든 값
+using System.Linq;
+using System.IO;
+using CtaToybox.Core;
+
+static class ValueLabelsTests
+{
+    public static void Run()
+    {
+        string dir = T.TempDir(), file = Path.Combine(dir, "values.psv");
+        File.WriteAllText(file,
+            "# 주석\n" +
+            "*/(\"mobility_car\")|speed|최고 속도|C\n" +
+            "**/box/item|#1|아이템 이름|A\n**/box/item|#2|수량|A\n**/box/item|filling#1|채운 것|A\n**/box/item|filling#2|채운 양|A\n" +
+            "/breed/inventory/item|#1|아이템 이름|A\n/breed/inventory/item|=filled|장전된 채로|M\n" +
+            "*/gears|*|전진 {n}단|A\n*/props|*|태그 {n}|A\n");
+        var l = ValueLabels.Load(file);
+        T.Eq(9, l.Count, "entries");
+        T.Eq(new[] { "최고 속도", null }, l.Of("/game_entity/chassis/(\"mobility_car\")", new[] { "72", "14" }, new[] { "speed", "reverse" }).ToArray(), "a call argument is named by its call; unknown names stay null");
+        T.Eq(new[] { "아이템 이름", "수량" }, l.Of("/game_entity/extender[inventory]/box/item", new[] { "\"mine m1a1\"", "24" }, new string[] { null, null }).ToArray(), "positions");
+        T.Eq(new[] { "아이템 이름", "수량", "열쇠말 filling (뒤의 값을 묶는다)", "채운 것", "채운 양" },
+            l.Of("/game_entity/extender[inventory]/box/item", new[] { "\"barrel\"", "20", "filling", "\"fuel\"", "420" }, new string[5]).ToArray(), "values after a keyword count from the keyword");
+        T.Eq(new[] { "아이템 이름", "장전된 채로" }, l.Of("/breed/inventory/item", new[] { "\"luger\"", "filled" }, new string[2]).ToArray(), "a keyword can have its own name");
+        T.Eq(new[] { "전진 1단", "전진 2단" }, l.Of("/game_entity/chassis/locomotion/gears", new[] { "0.5", "0.65" }, new string[2]).ToArray(), "every value with its number");
+        T.Eq(new[] { "태그 1", "태그 2" }, l.Of("/game_entity/props", new[] { "steel", "vehicle" }, new string[2]).ToArray(), "bare words of a * key are not keywords");
+        T.Eq(new string[] { null, null }, l.Of("/x/unknown", new[] { "a", "1" }, new string[2]).ToArray(), "unknown keys have no names");
+        T.Eq(0, ValueLabels.Load(Path.Combine(dir, "none.psv")).Count, "a missing file is empty");
+
+        // 따옴표 이름 줄: 이름을 넣은 경로의 값 이름이 먼저다
+        string file2 = Path.Combine(dir, "values2.psv");
+        File.WriteAllText(file2, "/breed/perks/\"*\"|#1|기술 이름|A\n/breed/perks/\"*\"|#2|수준|A\n/breed/perks/\"health\"|#1|항목 이름|A\n/breed/perks/\"health\"|#2|체력 (%)|A\n");
+        var l2 = ValueLabels.Load(file2);
+        T.Eq(new[] { "항목 이름", "체력 (%)" }, l2.Of("/breed/perks/\"*\"", new[] { "\"health\"", "\"200%\"" }, new string[2], "/breed/perks/\"health\"").ToArray(), "a named path has its own value names");
+        T.Eq(new[] { "기술 이름", "수준" }, l2.Of("/breed/perks/\"*\"", new[] { "\"rifle\"", "lvl_3" }, new string[2], "/breed/perks/\"rifle\"").ToArray(), "other names use the \"*\" names");
+
+        // 문자열 속 설정 조각의 뜻(자리 @이름)
+        string file3 = Path.Combine(dir, "values3.psv");
+        File.WriteAllText(file3, "/game/parameters|@scoreStart|시작 점수|S\n**/unitlimits|@officer|장교 수|S\n");
+        var l3 = ValueLabels.Load(file3);
+        T.Eq("시작 점수", l3.PieceLabel("/game/parameters", null, "scoreStart"), "a piece label by exact path");
+        T.Eq("장교 수", l3.PieceLabel("/game/presets/\"*\"/common/unitlimits", "/game/presets/\"s:x\"/common/unitLimits", "OFFICER"), "by tail, piece names ignore case");
+        T.True(l3.PieceLabel("/game/parameters", null, "flag_count") == null, "an unknown piece has no label");
+    }
+}

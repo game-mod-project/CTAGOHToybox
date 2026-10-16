@@ -73,11 +73,14 @@ function Register-Content([string]$vp, [string]$orig, [string]$source, [byte[]]$
     $hash = [Convert]::ToHexString($sha.ComputeHash($bytes))
     if ($seen.ContainsKey($vp)) {
         $first = $seen[$vp]
-        if ($first.Sha1 -eq $hash) { Add-IndexRow $vp $orig $source $bytes.Length 'duplicate' "같은 내용: $($first.Source)" $hash }
-        else { Add-IndexRow $vp $orig $source $bytes.Length 'collision' "다른 내용: $($first.Source)" $hash }
-        return
+        if ($first.Sha1 -eq $hash) { Add-IndexRow $vp $orig $source $bytes.Length 'duplicate' "같은 내용: $($first.Source)" $hash; return }
+        # 한 모드 안에서 pak과 낱개 파일이 겹치면 게임은 낱개 파일을 쓴다(docs/07-stat-editor/ingame-check.md 일괄 확인 8번).
+        # pak끼리 겹치면 먼저 읽은 것을 남긴다(게임에서 확인하지 않았다)
+        if (-not ($source -eq 'loose' -and $first.Source -ne 'loose')) { Add-IndexRow $vp $orig $source $bytes.Length 'collision' "다른 내용: $($first.Source)" $hash; return }
+        $first.Row.Status = 'collision'
+        $first.Row.Reason = "같은 경로의 낱개 파일이 이긴다: $source"
     }
-    $seen[$vp] = [pscustomobject]@{ Source = $source; Sha1 = $hash }
+    $seen[$vp] = [pscustomobject]@{ Source = $source; Sha1 = $hash; Row = $null }
     # 앞서 같은 경로에 0바이트 파일이 있었다면 내용 있는 쪽을 쓰고, 0바이트 쪽을 충돌로 적는다
     if ($emptyRows.ContainsKey($vp)) {
         $emptyRows[$vp].Status = 'collision'
@@ -90,6 +93,7 @@ function Register-Content([string]$vp, [string]$orig, [string]$source, [byte[]]$
     $ext = Get-SdlFileKind $vp
     if ($script:ReferenceExt -contains $ext) { Add-IndexRow $vp $orig $source $bytes.Length 'reference-only' "SDL 아님($ext), 참조 목록" $hash }
     else { Add-IndexRow $vp $orig $source $bytes.Length 'text' '' $hash }
+    $seen[$vp].Row = $index[$index.Count - 1]
 }
 
 foreach ($pak in (Get-ChildItem -LiteralPath $SourceRoot -Recurse -File -Filter '*.pak' | Sort-Object FullName)) {

@@ -1,0 +1,101 @@
+{game_entity
+	(include "/properties/tank__ctb_so_ki_49e56bc6.ext")
+	
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "light"  "flak" "vision_lev03" "open_top" "diesel" "detect_tank_light" "sq_autocannon"}
+	{Extension "so_ki.mdl"}
+	(include "so_ki.ext")
+	{targetclass "tank_light"}
+	{targetSelector "cannon_zenite"}
+	{patherId "su76"}
+	{collider "tank.light"}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_tank_left"} {end "pose_vickers_gunlaeyr-R"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "co_driver"
+			{forward {begin "board_tank_right"} {base "open_gunner"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_tank_left"} {end "aagun_61k_gunner"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "aagun_61k_gunner"} {base "open_gunner"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_driver" 					 door(emit0) door2(emit1) door3(emit2))
+	("crew_co_driver" 		place(commander) 	door(emit0) door2(emit1) door3(emit2))
+	("crew_human_visible_anm"	place(gunner) 	 door(emit1) visor(main) 	 anm_left(left)    anm_right(left))
+	
+	("seat_human" place(seat1) bone(seat01) door(emit4)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit5)  animation(armor2))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor2))
+	("seat_human" place(seat4) bone(seat04) door(emit7)  animation(armor1))
+
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_light"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_20_auto aphe" 240}		; 160 clips (4 rounds each)
+			{item "bulletjap_20_auto he" 400}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "20mm_type98_x2" filling "bulletjap_20_auto he" 40}
+			{Barrels 2}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_dymamic_aaa"
+				zeroing(1.95)
+				dispersion(0.24)
+			)
+		}
+	}
+
+	{mass 10740}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.4))
+		("mobility_tank"
+			speed(45) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(10) ;---------Max speed in reverse on road, km/h.
+			traverse(32) ;-------Track traverse, per second, in degrees.
+			weight(10.74) ;--------Weight in Tonnes.
+			power(160) ;---------Engine Power, in hp.
+			track(4) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(250) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(150) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -5 85}
+		{speed2 50}
+	}
+	{bone "turret"
+		{speed2 50}
+	}
+}

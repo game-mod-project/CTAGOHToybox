@@ -1,0 +1,106 @@
+{game_entity
+	(include "/properties/tank__ctb_te_ke_mg_30fb5e0b.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "light" "vision_lev03" "detect_tank_mg" "detect_tank_light" "tractor" "tractor_light" "sq_mg"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+	{patherId "stuart"}
+	{collider "tank.light"}
+	{Extension "te_ke_mg.mdl"}
+	(include "te_ke.ext")			
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("transmission" args "transmission")	
+
+	
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_light"}
+			{bone "visor1"}
+		}
+	}	
+
+;==============================================crew==============================================
+	("crew_2_human_extended")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_t26_driver"} {end "pose_t26_driver"} {base "open_driver"}}
+			{reverse {end "board_t26_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_tank_left"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "seat_m7_com"} {base "open_commander"}}
+			{reverse {end "emit_tank_1_hold"} {base "open_commander" -1}}
+		}
+		{anm "armor1"
+			{forward {begin "board_LowArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor3"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_lowarmor"} {end "pose_seat_mimosa10"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_lowarmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_2"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3) animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4) animation(armor2))
+	("seat_human" place(seat3) bone(seat03) door(emit5) animation(armor3))	
+;================================================================================================
+
+	{extender "inventory"
+		{box
+			{item "ammo mgun_jap" 5000}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{type "main"}
+			{weapon "type_97" filled}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 7000}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.49))
+       		("mobility_tank"
+			speed(50) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(7) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(7) ;-------Weight in Tonnes.
+			power(130) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(5.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(340) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(300) ;---------Range in km, off-road.
+		)
+	}
+	{bone "turret"
+		("turret_light" power_traverse(10))
+	}
+	{bone "gun_rot"
+		{speed2 8}
+		{limits -10 10}
+	}
+}
+

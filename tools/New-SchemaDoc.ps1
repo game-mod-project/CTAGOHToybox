@@ -10,21 +10,13 @@ $AnnotationDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFr
 $OutDir = $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath($OutDir)
 [IO.Directory]::CreateDirectory($OutDir) | Out-Null
 $utf8 = [Text.UTF8Encoding]::new($false)
+. "$PSScriptRoot/lib/Annotations.ps1"
 $groups = 'human', 'vehicle', 'weapon-ammo', 'inventory', 'shared'
 $resolved = @(Import-Csv -LiteralPath (Join-Path $DataDir 'keys-resolved.csv'))
 
 function Cell([string]$s) { ($s -replace '\r?\n', ' ' -replace '\|', '\|').Trim() }
 function PathCell([string]$p) { '`' + ($p -replace '`', "'" -replace '\|', '\|') + '`' }
 
-# 주석 조회. 정확한 경로가 우선하고, $AllowWildcard일 때만 */이름 주석을 쓴다.
-# 와일드카드는 유닛 파일과 펼친 키에만 허용한다: 공용 설정이나 모델 파일에는 같은 이름이 다른 뜻으로 쓰인다.
-function Get-Annotation([hashtable]$Ann, [string]$Kind, [string]$Path, [string]$Form, [bool]$AllowWildcard) {
-    $last = $Path.Substring($Path.LastIndexOf('/') + 1)
-    $keys = @("$Kind`t$Path`t$Form", "*`t$Path`t$Form")
-    if ($AllowWildcard) { $keys += @("$Kind`t*/$last`t$Form", "*`t*/$last`t$Form") }
-    foreach ($k in $keys) { if ($Ann.ContainsKey($k)) { return $Ann[$k] } }
-    [pscustomobject]@{ Grade = '미확인(자동)'; Meaning = ''; Source = '' }
-}
 function Range($r) {
     if ($r.NumMin -ne '' -and $null -ne $r.NumMin) { if ($r.NumMin -eq $r.NumMax) { return "$($r.NumMin)" } else { return "$($r.NumMin) ~ $($r.NumMax)" } }
     if ($r.Values -and $r.Values -ne '(13종 이상)') { return $r.Values }
@@ -39,29 +31,12 @@ foreach ($gg in $groups) {
     }
 }
 
-$unitFileKinds = '.def', '.set', '(no-ext)', '.ammo', '.weapon', '.grenade', '.mine', '.pattern'
-$sourceNames = @{ C = '게임 파일 주석'; S = '파일 구조와 값에서 추론' }
 $header = '| 경로 | 형태 | 값 형태 | 파일 수 | 횟수 | 값 범위·예 | 등급 | 의미 | 출처 | 같은 이름 키의 원문 주석(참고) |'
 $sep = '|---|---|---|---|---|---|---|---|---|---|'
 
 foreach ($g in $groups) {
     $keys = @(Import-Csv -LiteralPath (Join-Path $DataDir "keys-$g.csv"))
-    $ann = @{}
-    # 모든 그룹에 공통인 주석 (경로|형태|등급|의미|출처)
-    $commonPath = Join-Path $AnnotationDir 'common.psv'
-    if (Test-Path -LiteralPath $commonPath) {
-        foreach ($line in [IO.File]::ReadLines($commonPath)) {
-            if (-not $line.Trim() -or $line.StartsWith('#')) { continue }
-            $p = $line.Split('|', 5)
-            if ($p.Count -lt 5) { throw "주석 줄 형식 오류: $line" }
-            $src = if ($sourceNames.ContainsKey($p[4])) { $sourceNames[$p[4]] } else { $p[4] }
-            $ann["*`t$($p[0])`t$($p[1])"] = [pscustomobject]@{ Grade = $p[2]; Meaning = $p[3]; Source = $src }
-        }
-    }
-    $annPath = Join-Path $AnnotationDir "$g.csv"
-    if (Test-Path -LiteralPath $annPath) {
-        foreach ($a in (Import-Csv -LiteralPath $annPath)) { $ann["$($a.FileKind)`t$($a.Path)`t$($a.Form)"] = $a }
-    }
+    $ann = Read-Annotations -AnnotationDir $AnnotationDir -Group $g
     # 펼친 키에 붙일 원문 주석: 같은 그룹에서 마지막 조각이 같은 원본 키의 주석
     $commentByName = @{}
     foreach ($k in $keys) { if ($k.Comments) { $commentByName[$k.Path.Substring($k.Path.LastIndexOf('/') + 1)] = $k.Comments } }
@@ -83,7 +58,7 @@ foreach ($g in $groups) {
         [void]$sb.AppendLine()
         [void]$sb.AppendLine($header); [void]$sb.AppendLine($sep)
         foreach ($r in ($kindGroup.Group | Sort-Object Path, Form)) {
-            $a = Get-Annotation $ann $r.FileKind $r.Path $r.Form ($g -ne 'shared' -and $unitFileKinds -contains $r.FileKind)
+            $a = Get-Annotation $ann $r.FileKind $r.Path $r.Form ($g -ne 'shared' -and $UnitFileKinds -contains $r.FileKind)
             [void]$sb.AppendLine("| $(PathCell $r.Path) | $($r.Form) | $(Cell $r.ArgShapes) | $($r.FileCount) | $($r.Count) | $(Cell (Range $r)) | $(Cell $a.Grade) | $(Cell $a.Meaning) | $(Cell $a.Source) | $(Cell $r.Comments) |")
         }
         [void]$sb.AppendLine()

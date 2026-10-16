@@ -1,0 +1,128 @@
+{game_entity
+	(include "/properties/tank__ctb_shi_ki_798e5d80.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "medium" "vision_lev04" "multi_turret" "muzzle_37mm_47mm" "sq_armor_medium"}
+	{Extension "shi_ki.mdl"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{patherId "panzer3"}
+	{collider "tank.medium"}
+	(include "chi_ha.ext")	
+
+	("crew_4_human")
+	("crew_human" place(charger) door(emit1) door2(emit2) visor(back))
+	("commander_visible")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_tank_right"} {end "pose_watch_binocular"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_left"} {end "pose_watch_binocular"} {base "open_commander"}}
+			{reverse 	{end	"emit_tank_2_hold"}  {base "open_commander" -1}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} 	{end "pose_pz3_right"}}
+			{reverse 	{end	"emit_tank_1"}}
+		}
+	}
+
+	{sensor
+		{visor "back"
+			{vision "tank_rear-mg"}
+			{bone "foresight4"}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit4) animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit5) animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit6) animation(armor1))
+	("seat_human" place(seat4) bone(seat04) door(emit7) animation(armor2))
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_37 aphe" 19}		;50 rounds
+			{item "bulletjap_37 aphe2" 10}		;50 rounds
+			{item "bulletjap_37 ap" 5}
+			{item "bulletjap_37 he" 30}
+			{item "ammo mgun_jap" 3213}		;53 drums
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "37mm_type97" filling "bulletjap_37 aphe" 1}
+			{foresight "foresight1"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			("abm_dymamic"
+				zeroing(2.0)
+				dispersion(0.20)
+			)
+			{rotate}
+			{basic}
+		}
+		{place "mgun1"
+			{type "rear"}
+			{weapon "type_97" filled}
+			{foresight "foresight4"}
+			{gunner "charger"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun"
+			{type "commander"}
+			{weapon "commander_vision"}
+			{foresight "vision_rot"}
+			{gunner "commander"}
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 27900}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.10))
+       		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(19) ;---------Max speed in reverse on road, km/h.
+			traverse(25) ;-------Track traverse, per second, in degrees.
+			weight(14.8) ;-------Weight in Tonnes.
+			power(200) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(889) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(210 ) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "foresight1"
+		{limits -2.5 2.5}
+	}
+
+	{bone "aux_turret1"
+		("turret_medium" power_traverse(10))
+	}
+	{bone "gun_rot"
+		{limits -10 10}
+		{speed2 3}
+	}
+	{bone "mgun_t_rot1"
+		{limits -15 15}
+	}
+	{bone "mgun_t_rot2"
+		{limits -15 15}
+	}
+	{bone "mgun_t_rot2"
+		{limits -15 15}
+	}
+}

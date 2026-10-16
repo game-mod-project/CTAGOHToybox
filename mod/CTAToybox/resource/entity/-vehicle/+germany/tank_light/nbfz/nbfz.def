@@ -1,0 +1,162 @@
+{game_entity
+	(include "/properties/tank__ctb_nbfz_bfdaaca2.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "turret_rotator" "medium" "multi_turret" "vision_lev04" "muzzle_75mm_76mm" "sq_armor_medium"}
+	{extender "enumerator"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{PatherId "t28"}
+	(include "nbfz.ext")
+	
+	("tank_light_tier1")
+
+	("crew_6_human")
+	("crew_human" place(charger) door(emit1) door2(emit2) visor(back) animation(armor2))
+	("crew_human" place(gunner3) door(emit1) door2(emit2) visor(gunner3) animation(armor1))
+	("crew_human" place(charger2) door(emit1) door2(emit2) visor(gunner4) animation(armor))
+	("crew_human" place(commander) door(emit1) door2(emit2) visor(commander) animation(driver))
+
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open1"}}
+			{reverse {end "emit_t34_hold"} {base "open_driver"}}
+		}
+		{anm "left"
+			{forward {begin "board_Is-2"} {end "seat_commander_hatch"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_Is-2"} {end "seat_commander_hatch"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "armor"
+			{forward {begin "board_lowArmor"} {end "pose_seat_armor_2"} {base "open2"}}
+			{reverse {end "emit_body"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_lowArmor"} {end "seat_armor"} {base "open3"}}
+			{reverse {end "emit_body"}}
+		}
+		{anm "armor2"
+			{forward {begin "board_lowArmor"} {end "pose_seat_armor_1"} {base "open"}}
+			{reverse {end "emit_body"}}
+		}
+	}
+
+
+	{sensor
+		{visor "charger2"
+			{vision "tank_rear-mg"}
+			{bone "foresight5"}
+		}
+		{visor "gunner3"
+			{vision "tank_rear-mg"}
+			{bone "foresight6"}
+		}
+		{visor "around"
+			{vision "ctb_tank_light"}
+		}
+	}
+	
+
+	{extender "shield"
+		{on}
+	}
+	{extender "inventory"
+		{box
+			{item "bulletger_75_l24 apcbche" 25} 		; 80 rounds
+			{item "bulletger_75_l24 he" 40}
+			{item "bulletger_75_l24 heat" 10}
+			{item "bulletger_75_l24 sm" 4}
+			{item "bulletger_37 aphe" 59} 		; 125 rounds
+			{item "bulletger_37 he" 60}
+			{item "bulletger_37 apcr" 5}
+			{item "ammo mgun_ger belt" 2850}		; 21 belts (150 rounds each)
+			{item "geballteladung_3kg" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_kwk37" filling "ammo bulletger_75_l24 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger"}	
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon "37mm_kwk36" filling "ammo bulletger_37 aphe" 1}
+			{foresight "Foresight2"}
+			{gunner "gunner"}
+			{charger "charger"}	
+			{basic}
+		}
+
+		{place "mgun1"
+			{type "coaxial"}
+			{weapon "mg34_tank" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{ai_in_manual}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun2"
+			("abm_mgun")
+			{type "hull"}
+			{weapon "mg34_tank" filled}
+			{foresight "foresight5"}
+			{gunner "commander"}
+			{charger "commander"}
+			{ai_in_manual}
+			{basic}
+		}
+		{place "mgun3"
+			("abm_mgun")
+			{type "rear"}
+			{weapon "mg34_tank" filled}
+			{foresight "foresight6"}
+			{gunner "charger2"}
+			{charger "charger2"}
+			{ai_in_manual}
+			{basic}
+		}
+	}
+
+	{mass 28000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.45))
+		("mobility_tank"
+			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(28) ;-------Weight in Tonnes.
+			power(265) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(470) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(130) ;---------Range in km, off-road.
+		)
+	}
+
+	
+	{Extension "nbfz.mdl"}
+	{texmod ""}
+	{bone "turret"
+		{limits}
+		("turret_light" power_traverse(0)) ;// manual
+	}
+	{bone "gun_rot"
+		{limits -22 10}
+		{speed 0.0016}
+	}
+	{bone "aux_turret1"
+		{speed2 25}
+	}
+	{bone "aux_turret2"
+		{speed2 25}
+	}
+}

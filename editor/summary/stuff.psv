@@ -1,0 +1,18 @@
+# 무기·탄약·장비 요약 탭에 올리는 키. 형식과 규칙은 vehicle.psv와 같다.
+# 연사 속도와 탄속은 매크로 인자라 펼친 값으로는 계산된 수만 보인다. 매크로 호출 줄의 인자를 올린다.
+**/filling|탄창 (탄 종류, 발 수)
+**/rechargetime|재장전 시간 (초)
+/from/("fire rate")|연사 속도 (분당 발 수)
+/from/("velocity")|탄속 (m/s)
+/from/("velocity m/s")|탄속 (m/s)
+/from/parameters/("velocity")|탄속 (m/s)
+**/calibre|구경 (mm)
+/from/mass|질량 (kg)
+/bullet/mass|질량 (kg)
+**/burst/short|짧은 점사 (발 수, 무작위 폭)
+**/burst/long|긴 점사 (발 수, 무작위 폭)
+**/burst/rangekoef|긴 점사를 쓰는 거리 배수
+**/spreading/burstaccuracy|연사 중 발마다 정확도
+**/inventory/block|block 값 (뜻 미확인. 인벤토리 칸을 나누는 묶음 크기는 아니다: 2026-10-14 게임 확인)
+**/inventory/weight|적재 무게값 (미확인)
+**/inventory/size|인벤토리 칸 크기

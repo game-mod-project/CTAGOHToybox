@@ -1,0 +1,88 @@
+{game_entity
+	(include "/properties/tank__ctb_zsu_37_add99a39.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "light" "diesel" "turret" "vision_lev03" "muzzle_37mm_47mm" "tractor" "tractor_medium" "detect_cannon_aa" "open_top" "ammo_open_top_turret" "sq_autocannon"}
+	{Extension "zsu_37.mdl"}
+	(include "zsu_37.ext")
+	{targetclass "tank_light"}
+	{targetSelector "tank_zenite"}
+	{PatherID "t60"}
+	{collider "tank.light"}
+
+	{boarder
+		{anm "driver"
+			{forward 	{begin "board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end "emit_t34_hold"} {base "close_driver"}}
+		}
+		{anm "charger2"
+			{forward	{begin "board_tank_right"} {end "aagun_61k_gunner"} {base "open_gunner"}}
+			{reverse 	{end "emit_tank_2_hold"} {base "close_gunner" }}
+		}
+		{anm "charger"
+			{forward	{begin "board_tank_left"} {end "aagun_72k_gunner"} {base "open_commander"}}
+			{reverse 	{end "emit_tank_2_hold"} {base "close_commander"}}
+		}
+		{anm "gunner"
+			{forward	{begin "board_tank_right"} {end "aagun_61k_charger"} {base "open_gunner"}}
+			{reverse 	{end "emit_tank_2_hold"} {base "close_gunner"}}
+		}
+		{anm "commander"
+			{forward	{begin "board_tank_left"} {end "aagun_72k_commander"} {base "open_commander"}}
+			{reverse 	{end "emit_tank_2_hold"} {base "close_commander"}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_37_auto ap" 150}		; 60 clips (5 rounds each)
+			{item "bulletrus_37_auto he" 150}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "37mm_61k_zsu37" filling "bulletrus_37_auto he" 7}
+			{gunner "gunner"};{gunner "gunner gunner2" minWorkers 1}
+            		{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_aaa"
+				zeroing(1.2)
+				dispersion(0.15)
+			)
+		}
+	}
+
+	("crew_inside")
+	("crew_driver"					door(emit3) door2(emit3) door3(emit3))
+
+	("crew_human_visible_anm"	place(commander)	door(emit2) visor(around)	anm_left(commander)	anm_right(commander))
+	("crew_human_visible_anm"	place(gunner)		door(emit1) visor(main)		anm_left(gunner)	anm_right(gunner))
+	("crew_human_visible_anm"	place(charger)		door(emit2) visor(around)	anm_left(charger)	anm_right(charger))
+	("crew_human_visible_anm"	place(charger2)		door(emit1) visor(around)	anm_left(charger2)	anm_right(charger2))
+
+	{mass 14500}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.17) len(-0.51))
+		("mobility_tank"
+			speed(37.5) ;--------Max speed when fully accelerated on road, km/h.
+			reverse(15) ;--------Max speed in reverse on road, km/h.
+			traverse(32) ;-------Track traverse, per second, in degrees.
+			weight(14.5) ;-------Weight in Tonnes.
+			power(300) ;---------Engine Power, in hp.
+			track(4.2) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(350) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(245) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -2 75}
+		{speed2 30}
+	}
+	{bone "turret"
+		{speed2 50}
+	}
+}

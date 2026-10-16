@@ -1,0 +1,102 @@
+{game_entity	
+	(include "/properties/tank_assaultgun__ctb_ho_ni_ii_214fdd55.ext")
+	(include "/properties/selection/vehicle_elongated.inc" scale(1.0))
+	{props "spg" "medium" "-turret" "mantlet" "vision_lev03" "muzzle_100mm_105mm" "shell_eject" "shield" "open_top" "detect_spg" "artillery_minimap_medium" "ammo_open_top" "sq_at_gun"}
+	{Extension "ho_ni_ii.mdl"}
+	(include "ho_ni_ii.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "cannon_howitzer"}
+	{patherId "panzer38"}
+	{collider "tank.light"}
+
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_medium"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_body"} {end "ho_ro_driver_pose"}}
+			{reverse {end "emit_tank_1_hold" 1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_tank_right"} {end "ho_ni_i_gunner_pose"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_left"} {end "ho_ni_i_charger_pose"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "commander"
+			{forward {begin "board_tank_right"} {end "ho_ni_i_commander_pose"}}
+			{reverse {end "emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "seat_armor"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human_visible_anm"	place(driver) 	 door(emit1) door2(emit1) visor(driver)  anm_left(driver)  	   anm_right(driver))
+	("crew_human_visible_anm"	place(gunner) 	 door(emit2) door2(emit2) visor(main) 	 anm_left(gunner)      anm_right(gunner))
+	("crew_human_visible_anm"	place(charger) 	 door(emit3) door2(emit3) visor(around)  anm_left(charger)     anm_right(charger))
+	("crew_human_visible_anm"	place(commander) door(emit4) door2(emit4) visor(around)  anm_left(commander)   anm_right(commander))
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_105_type91 he" 10}	
+			{item "bulletjap_105_type91 aphe" 5}
+			{item "bulletjap_105_type91 heat" 4}	
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "105mm_type91_tank" filling "bulletjap_105_type91 he" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_td"
+				zeroing(2.5)
+				dispersion(0.25)
+			)
+			{rotate}
+		}
+	}
+
+	{mass 13000}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.10))
+       		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(19) ;---------Max speed in reverse on road, km/h.
+			traverse(25) ;-------Track traverse, per second, in degrees.
+			weight(14.8) ;-------Weight in Tonnes.
+			power(200) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(889) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(210 ) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -10 20}
+		{speed2 10}
+	}
+	{bone "turret"
+		{limits -11 11}
+		{speed2 8}
+	}
+}

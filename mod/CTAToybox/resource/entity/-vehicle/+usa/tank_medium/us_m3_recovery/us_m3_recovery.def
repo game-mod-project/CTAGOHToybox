@@ -1,0 +1,123 @@
+{game_entity
+	(include "/properties/tank__ctb_us_m3_recovery_e4c53019.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/resupply.inc")
+	{props "medium"  "muzzle_75mm_76mm" "recovery"}
+	(include "us_m3.ext")
+	{PatherId "panzer3"}
+	{PatherId "sherman"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	
+	("supply_engineer")
+
+	{Extension "us_m3_recovery.mdl"}
+
+;==============================================
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)	
+	
+	("commander_visible")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_t34_driver"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "gunner2"
+			{forward	{begin	"board_t34_driver"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "charger2"
+			{forward	{begin	"board_t34_driver"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}				
+		{anm "gunner"
+			{forward	{begin	"board_t34_driver"} {end "pose_M8A1_charger"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_t34_driver"} {end "seat_driver_car"} {base "open_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"} {base "open_gunner" -1}}
+		}		
+		{anm "commander"			
+			{forward	{begin	"board_sherman_left"} {end "pose_M8A1_commander"} {base "open_commander"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_commander" -1}}
+		}
+	}
+
+	("crew_human_visible" place(driver)	    door(emit0) visor(driver))
+	("crew_human_visible" place(gunner)	    door(emit2) visor(main))	
+	("crew_human_visible" place(charger)	door(emit2) visor(main))
+	("crew_human_visible" place(commander)	door(emit1) visor(main))
+;==============================================
+
+	{extender "inventory"
+		{box
+			
+			{item "browning_m2" filled {user "mgun"}}
+			{item "ammo hmgun_usa" 2000}
+			{item "repair_kit" 15}
+			{item "mine_detector" 2}
+			{item "shovel_usa" 5}
+			{item "pickaxe" 5}
+			{item "satchel_charge_usa" 5}
+			{item "wirecutters" 2}
+		}
+	}
+	{Weaponry
+		{place "mgun"
+			{type "aa"}
+			{gunner "commander"}
+			{charger "commander"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{ai_in_manual}
+			{basic}
+		}
+	}    
+	
+	{sensor
+		{visor "gunner"
+		    {vision "tank_main-l"}
+			{bone "visor1"}
+		}
+		{Visor "driver"
+            {vision "tank_driver"}
+            {bone "visor2"}
+		}
+		{visor "gunner2"
+		    {vision "tank_main-l"}
+			{bone "visor3"}
+		}
+		{visor "commander"
+		    {vision "tank_main-l"}
+			{bone "visor4"}
+		}
+	}
+
+	{mass 27900}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(0.51))
+		("mobility_tank"
+			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(27.9) ;-------Weight in Tonnes.
+			power(400) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(662) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(192) ;---------Range in km, off-road.
+		)
+	}
+}

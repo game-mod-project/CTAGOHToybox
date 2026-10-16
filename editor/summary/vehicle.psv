@@ -1,0 +1,34 @@
+# 차량 요약 탭에 올리는 키. 형식: 경로|화면 이름. 경로 규칙은 data/annotations와 같다(정확한 경로, **/꼬리, */이름).
+# 이름은 data/annotations/common.psv의 의미에서 뽑았다. 키의 등급(확인·문서·추정)은 화면의 설명 칸에 따로 보인다.
+*/("mobility_tank")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_tank_slow")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_car")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_btr")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+*/("mobility_cannon")|기동 (속도·선회·무게·엔진·연료) ← 여기서 고친다
+**/locomotion/maxspeed|최고 속도 (km/h, 위의 기동 줄에서 나온다)
+**/locomotion/slow|저속 이동 속도 (km/h)
+**/locomotion/maxslope|오를 수 있는 최대 경사
+**/locomotion/gears|전진 기어비
+**/locomotion/reargears|후진 기어비
+**/fuelbag/volume|연료 탱크 용량 (L)
+**/fuelbag/remain|시작할 때 연료
+**/fuelbag/rate|연료 소모율
+**/fuelbag/fuel|연료 종류
+/game_entity/mass|질량 (kg)
+**/volume/thickness|장갑 두께 (mm)
+**/thickness/front|전면 장갑 (mm)
+**/thickness/top|상면 장갑 (mm)
+**/thickness/rear|후면 장갑 (mm)
+**/thickness/bottom|하면 장갑 (mm)
+**/thickness/left|좌측 장갑 (mm)
+**/thickness/right|우측 장갑 (mm)
+**/volume/caststeel|주조 장갑 보정
+**/component/health/hp|부품 체력
+**/component/health/hp_broken|고장 뒤 파괴까지 받는 피해
+**/component/repairtime|부품 수리 시간
+**/weaponry/place/weapon|무장 (무기, 장전 탄, 발 수)
+**/extender[inventory]/box/item|적재품 (이름, 수량)
+**/extender[inventory]/box/size|화물칸 크기 (가로 세로 칸)
+**/bone/speed2|뼈대(포탑·포 등) 최대 속도
+**/bone/limits|회전 한계 각도
+**/sensor/visor/vision|시야 프로필

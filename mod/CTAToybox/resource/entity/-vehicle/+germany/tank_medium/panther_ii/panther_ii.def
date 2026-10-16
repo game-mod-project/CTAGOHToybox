@@ -1,0 +1,125 @@
+{game_entity
+	(include "/properties/tank__ctb_panther_ii_8d84eb6b.ext")
+	
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "medium" "vision_lev04" "muzzle_85mm_93mm" "shield" "smoke" "nvw" "detect_tank_heavy" "sq_armor_heavy"}
+	{Extension "panther_II.mdl"}
+	(include "panzer_II.ext")
+	{PatherId "panzer5"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+	}
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "commander"
+			{forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_commander"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_commander" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_cromwell"} {end "pose_mgun_pz6"}}
+			{reverse {end "board_cromwell" -1} {base "open_driver" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_codriver"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_codriver" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_cromwell"} {end "pose_mgun_pz6"}}
+			{reverse {end "board_cromwell" -1} {base "close_codriver"}}
+		}
+		{anm "driver"
+			{forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+	}
+
+	("crew_human" place(gunner)		door(emit3) door2(emit3) visor(main))
+	("crew_human" place(driver)		door(emit1) door2(emit1) visor(driver))
+	("crew_human" place(charger)	door(emit3) door2(emit3) visor(none))
+	("crew_human" place(gunner3)	door(emit2) door2(emit2) visor(driver))
+	("crew_human" place(commander)	door(emit4) door2(emit4) visor(around))
+
+	{extender "shield" {on}}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade nbks"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_75_l70 apcbche" 37} 	; 82 rounds
+			{item "bulletger_75_l70 he" 41}
+			{item "ammo mgun_ger belt" 4800}		; 34 belts (150 rounds each)
+			{item "geballteladung_3kg" 1}
+			{item "nbks grenade" 6}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "75mm_kwk44" filling "bulletger_75_l70 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "mg42_tank" filled}
+			{LinkBone "mgun2"}
+			{LinkAnimation "off"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "mg42_tank" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 45400}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.18))
+		("mobility_tank"
+			speed(55) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(5.3) ;-------Max speed in reverse on road, km/h. 3.3 + 2kmh
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(45.4) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(730) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(250) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{speed2 4}
+	}
+	{bone "turret"
+		("turret_medium" power_traverse(18))
+	}
+}

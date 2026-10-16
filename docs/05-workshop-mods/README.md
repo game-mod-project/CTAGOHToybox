@@ -31,17 +31,17 @@
 | 모드 | 새 파일 | 내용이 바뀐 바닐라 파일 | 새 보병 | 새 차량류 .def | 새 아이템 | 바뀐 바닐라 유닛 파일 | 새 블록 이름 | 새 매크로 이름(정의+호출 행) | 바닐라에 없는 키 |
 |---|---|---|---|---|---|---|---|---|---|
 | [MACE](2905667604.md) | 113376 | 136 | 1100 | 1307 | 971 | 51 | 30 | 419 | 2343 |
-| [MACE Wunderwaffe Ultimate Fusion ENG](3732639687.md) | 61632 | 6564 | 0 | 528 | 437 | 44 | 38 | 241 | 1626 |
+| [MACE Wunderwaffe Ultimate Fusion ENG](3732639687.md) | 61679 | 6564 | 0 | 528 | 438 | 44 | 38 | 243 | 1630 |
 | [Spawn Menu](3295913567.md) | 70 | 2 | 0 | 5 | 0 | 0 | 2 | 2 | 15 |
 | [Auto Medic-AA-Artillery & Weather Switch](2829744930.md) | 168 | 51 | 0 | 0 | 0 | 28 | 6 | 0 | 25 |
 
 ## 모드 간 관계
 
-둘 이상의 모드가 같은 가상 경로에 가진 텍스트 파일은 5528개이고 그중 5486개는 내용이 다르다. 전체는 `data/mods/cross-mod-conflicts.csv`에 있다.
+둘 이상의 모드가 같은 가상 경로에 가진 텍스트 파일은 5528개이고 그중 5465개는 내용이 다르다. 전체는 `data/mods/cross-mod-conflicts.csv`에 있다.
 
 | 모드 조합 | 내용이 다른 파일 | 내용이 같은 파일 |
 |---|---|---|
-| MACE + MACE Wunderwaffe Ultimate Fusion ENG | 5479 | 42 |
+| MACE + MACE Wunderwaffe Ultimate Fusion ENG | 5458 | 63 |
 | Auto Medic-AA-Artillery & Weather Switch + MACE | 5 | 0 |
 | Auto Medic-AA-Artillery & Weather Switch + MACE + Spawn Menu | 1 | 0 |
 | Auto Medic-AA-Artillery & Weather Switch + MACE Wunderwaffe Ultimate Fusion ENG | 1 | 0 |
@@ -147,6 +147,6 @@ MACE와 Fusion 사이를 뺀 나머지 겹침:
 - **맵과 미션 파일은 범위 밖이다.** Spawn Menu와 Auto Medic의 핵심 기능이 여기에 있다.
 - **Lua 스크립트는 목록만 있다.** 바뀐 스크립트의 내용은 비교하지 않았다.
 - **펼치기 규칙은 추론이다.** `docs/04-units/README.md`의 "한계"가 그대로 적용된다. 모드 사이의 include 순서(Fusion → MACE → 바닐라)도 추정이다.
-- **로드 순서에 따른 최종 결과는 계산하지 않았다.** 여러 모드가 같은 파일을 다르게 가질 때 게임이 어느 것을 쓰는지 확인하지 못했으므로, 각 모드를 바닐라와 따로 비교했다.
+- **로드 순서에 따른 최종 결과는 계산하지 않았다.** 각 모드를 바닐라와 따로 비교했다. 게임이 어느 것을 쓰는지는 이후 확인됐다: 같은 경로면 `options.set`의 모드 목록에서 뒤에 있는 모드가 이기고, 한 모드 안에서는 낱개 파일이 pak을 이긴다(2026-10-13, `docs/07-stat-editor/ingame-check.md`). 이 규칙으로 최종 결과를 계산하는 기능은 아직 없다.
 - **게임 버전.** 바닐라 기준은 1.0.6.7이다. 모드가 그보다 앞선 버전의 바닐라 파일을 복사해 고친 경우, "내용이 바뀐 파일"에는 모드의 의도와 무관한 게임 업데이트 차이가 섞여 있을 수 있다.
 - **새 이름의 뜻은 대부분 추정이다.** 모드 제작자의 문서를 찾지 못했고 이름과 쓰인 자리로 판단했다. 매크로 이름은 살펴보지 않았다.

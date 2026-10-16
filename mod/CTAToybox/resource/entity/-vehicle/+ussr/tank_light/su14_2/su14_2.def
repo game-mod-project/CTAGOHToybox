@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_su14_2_54fc315c.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "spg" "vision_lev05" "muzzle_170mm_210mm" "diesel" "heavy" "detect_tank_heavy" "artillery_minimap_heavy" "sq_he_large"}
+	{Extension "su-14.mdl"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{PatherId "smk"}
+	{collider "tank.heavy"}
+	(include "su_14_2.ext")
+
+	("crew_7_human")
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_hummel_driver"} {end "seat_driver_car"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_hummel"} {end "seat_driver_car"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_hummel"} {end "seat_driver_car"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+		{anm "commander"
+			{forward	{begin	"board_hummel"} {end "seat_driver_car"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+	}
+
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_203 he" 8}		;8 rounds
+			{item "ammo mgun_rus dt" 2300}		;40 drums
+			{item "satchel_charge_rus" 1}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{gunner "gunner gunner2 gunner3" minWorkers 1}
+			{charger "charger charger2" minWorkers 1}
+			{weapon "203mm_b4_mace" filling "bulletrus_203 he" 1}
+			("abm_dymamic_gun"
+				zeroing(8.0)	; // time it takes to aim until the reticle shrinks. Bigger values, more control.
+				dispersion(1)	; // time it takes to distort the reticle when you move the gun (how abrupt it loses zeroing). Bigger values, more control.
+			)
+		}
+
+		{place "mgun"
+			{type "rear"}
+			{weapon "dt" filling "ammo mgun_rus dt" 63}
+			{foresight "foresight3"}
+			{gunner "charger3"}
+			{charger "commander"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 48000}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(1.48))
+		("mobility_tank"
+			speed(28.9) ;--------Max speed when fully accelerated on road, km/h.
+			reverse(14) ;--------Max speed in reverse on road, km/h.
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(54) ;---------Weight in Tonnes.
+			power(500) ;---------Engine Power, in hp.
+			track(3.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(910) ;----------Fuel capacity in Litres.
+			type(diesel) ;-------Fuel type. (diesel OR fuel)
+			range(100) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "basis"
+		{speed2 1.5}
+	}
+	{bone "gun_rot"
+		{speed2 5}
+	}
+	(mod "mp"
+		{brain
+			{properties
+				{fire_mode hold}
+			}
+		}
+	)
+}

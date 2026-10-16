@@ -1,0 +1,132 @@
+{game_entity
+	(include "/properties/tank__ctb_chi_ha_lg_ab006dc9.ext")
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props  "medium" "shell_eject" "open_top" "ammo_open_top" "diesel" "vision_lev04" "muzzle_122mm_128mm" "td" "detect_td_medium" "sq_he_large"}
+	{Extension "chi_ha_lg.mdl"}
+	(include "chi_ha_lg.ext")
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+	{patherId "panzer3"}
+	{collider "tank.medium"}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+	}
+
+	{sensor
+		{visor "around"
+			{vision "ctb_tank_medium"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_SdKfz251-1"} {end "seat_driver_car"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_SdKfz251-1"} {end "chi_ha_lg_gunner"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "charger2"
+			{forward {begin "board_SdKfz251-1"} {end "chi_ha_lg_loader2"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "charger"
+			{forward {begin "board_SdKfz251-1"} {end "chi_ha_lg_loader1"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "commander"
+			{forward {begin "board_SdKfz251-1"} {end "chi_ha_lg_commander"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "left"
+			{forward {begin "board_SdKfz251-1"} {end "seat_driver_car"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "right"
+			{forward {begin "board_SdKfz251-1"} {end "seat_driver_car"}}
+			{reverse {end "emit_body" 1}}
+		}
+		{anm "armor"
+				{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_1"}}
+				{reverse {end "emit_tank_1"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_MiddleArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+
+	(define "seat_human"
+		{placer
+			;{place "%place" {group "passenger"} {LinkBone "%bone"} {openForCrush}}
+			{place "%place" {group "passenger"} {LinkBone "%bone"}}
+		}
+		{boarder
+			{door "%door"}
+			{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	("crew_driver" 								door(emit0)  door2(emit0) door3(emit0))
+	("crew_human_visible_anm" place(gunner) 	door(emit2)  door2(emit2) visor(main)	anm_left(gunner)  	 anm_right(gunner))
+	("crew_human_visible_anm" place(charger2) 	door(emit3)  door2(emit3) visor(around)	anm_left(charger2)   anm_right(charger2))
+	("crew_human_visible_anm" place(charger) 	door(emit4)  door2(emit4) visor(around)	anm_left(charger)  	 anm_right(charger))
+	("crew_human_visible_anm" place(commander)  door(emit5)  door2(emit5) visor(around)	anm_left(commander)  anm_right(commander))
+
+	("seat_human" place(seat1) bone(seat01) door(emit0)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit1)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{extender "inventory"
+		{box
+			{item "bulletjap_120_long he" 7}		; 45 rounds
+			{item "bulletjap_120_long aphe" 3}
+			{item "satchel_charge_jap" 1}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "120mm_year_type10" filling "bulletjap_120_long he" 1}
+			{gunner "gunner"}
+			{charger "charger charger2"  minWorkers 1}
+			("abm_dymamic_td"
+				zeroing(3.5)
+				dispersion(0.25)
+			)
+		}
+	}
+
+	{mass 20000}
+	{Chassis
+		("tank_trace" fx("tracks_sm") step(0.3) len(-0.10))
+       		("mobility_tank"
+			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(19) ;---------Max speed in reverse on road, km/h.
+			traverse(25) ;-------Track traverse, per second, in degrees.
+			weight(14.8) ;-------Weight in Tonnes.
+			power(200) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
+			track(4.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(889) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(210 ) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -3 18}
+		{speed2 15}
+	}
+	{bone "turret"
+		{limits -100 100}
+		("turret_medium" power_traverse(7))
+	}
+}

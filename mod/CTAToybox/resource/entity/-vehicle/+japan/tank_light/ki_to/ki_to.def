@@ -1,0 +1,189 @@
+{game_entity
+	(include "/properties/tank__ctb_ki_to_376b5dd4.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{collider "tank.light"}
+	{props "light" "vision_lev03" "muzzle_20mm_25mm_auto" "detect_tank_light" "open_top" "flak" "sq_autocannon" "shell_eject"}
+	{targetclass "tank_light"}                                                
+	{targetSelector "tank_light"}                                             
+	{targetClass "light_tank"}
+	{Extension "type97_te-ke_mg.mdl"}
+	
+	{extender "enumerator"
+		{digit_folder "jap"}
+	}
+
+	{Volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 14}	
+			{left 14}	
+			{right 14}
+			{rear 14}
+			{bottom 5}
+			{top 5}
+		}
+	}
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 14}	
+			{left 14}	
+			{right 14}
+			{rear 14}
+			{bottom 5}
+			{top 5}
+		}
+	}
+	{Volume "engine"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{Volume "mantlet"
+		{thickness 12}
+	}
+	{Volume "track"
+		{thickness 10}
+	}
+	{Volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 20}
+	}
+	{Volume "gun"
+		{component "gun"}
+		{tags "gun"}
+		{thickness 20}
+	}
+	
+	{extender "inventory"
+		{box
+			{item "bulletjap_20_auto aphe" 200}
+			{item "bulletjap_20_auto he" 320}
+			{item "satchel_charge_jap" 1}
+			{item "ammo mgun_jap" 2400}
+		}   
+	}
+	{Weaponry
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "20mm_type98" filling "bulletjap_20_auto he" 20}
+			{gunner "gunner"}
+			{charger "commander"}
+			("abm_dymamic_aa"
+				zeroing(1.2)
+				dispersion(0.15)
+			)
+			{basic}
+		}
+		{place "mgun"
+			{type "hull"}
+			{weapon "type_97" filled} 
+			{gunner "driver"}
+			{charger "driver"}
+			{foresight "foresight2"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	("crew_4_human")
+
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_kv"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_right"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+		;{anm "armor"
+			;{forward	{begin	"board_MiddleArmor"} 	{end "pose_seat_armor_1"}}
+			;{reverse 	{end	"emit_tank_1"}}
+		;}
+		;{anm "armor1"
+			;{forward	{begin	"board_MiddleArmor"} 	{end "pose_seat_armor_2"}}
+			;{reverse 	{end	"emit_body"}}
+		;}
+		;{anm "gunner"
+			;{forward	{begin	"board_HighArmor"} {end "pose_flak38_gunlayer"}}
+			;{reverse 	{end	"emit_tank_2"}}
+		;}
+		{anm "commander"
+			{forward	{begin	"board_HighArmor"} {end "pose_vicers_commander"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_tank_left"} {end "pose_vicers_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{placer
+		{place "driver" {group "crew"} {visor "driver"}}
+	}
+	{placer
+		{place "gunner" {visor "main"}}
+		{place "commander" {visor "main"}}
+	}
+	{boarder
+		{door "emit0"}
+		{door "emit1"}
+		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+
+	("crew_human_visible" place(gunner)	door1(emit1) door2(emit2) visor(main))
+	("crew_human" place(gunner)	door1(emit1))
+	("crew_human" place(commander)	door1(emit2))
+       
+	{mass 7400}
+	{Chassis
+		("tank_trace_ex" fx("tracks_sm") step(0.3) len(0.25) boneleft("wheell4") boneright("wheelr4"))
+		("mobility_tank"
+			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8);---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(7.4) ;-------Weight in Tonnes.
+			power(65) ;---------Engine Power, in hp.
+			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(153) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(250) ;---------Range in km, off-road.
+		)
+	}
+	{sensor
+		{visor "driver"
+			{vision "tank_driver"}
+			{bone "visor1"}
+		}
+		{visor "main"
+			{vision "tank_main-l"}
+			{bone "visor2"}
+		}
+		{visor "back"
+			{vision "tank_rear-mg"}
+			{bone "foresight4"}
+		}
+	}
+
+
+
+}

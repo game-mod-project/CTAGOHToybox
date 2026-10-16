@@ -1,0 +1,91 @@
+{game_entity
+	(include "/properties/tank__ctb_e_50_3ee3dd93.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0)) ;1.4
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "vision_lev04" "muzzle_85mm_93mm" "shield" "smoke" "nvw" "detect_tank_heavy"}
+	{PatherId "panzer5"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{Extension "e-50.mdl"}
+	(include "e-50.ext")
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+
+	("crew_5_human_2")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_88_l71 apcbche" 40}	; 86 rounds
+			{item "bulletger_88_l71 he" 40}
+			{item "bulletger_88_l71 apcr" 5}
+			{item "ammo mgun_ger belt" 4500}		; 32 belts (150 rounds each)
+			{item "geballteladung_3kg" 1}
+			{item "nbks grenade" 6}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "88mm_kwk43" filling "bulletger_88_l71 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun1"
+			{type "coaxial"}
+			{weapon "mg34_tank" filled}
+			{foresight "foresight4"}
+			{gunner "gunner"}
+			{charger "charger charger2" minWorkers 1}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 66600}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(1.16))
+		("mobility_tank"
+			speed(60) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(15.3) ;---------Max speed in reverse on road, km/h. 3.3 + 2kmh
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(66.6) ;-------Weight in Tonnes.
+			power(900) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(700) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(100) ;---------Range in km, off-road.
+		)
+	}
+
+}

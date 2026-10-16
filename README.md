@@ -16,6 +16,8 @@ Call to Arms - Gates of Hell: Ostfront의 모드를 만들기 위한 레퍼런�
 | [docs/04-units/README.md](docs/04-units/README.md) | 유닛 구성 레퍼런스의 입구. 유닛을 이루는 파일의 참조 관계, 문법, 데이터 파일 안내 |
 | [docs/04-units/coverage.md](docs/04-units/coverage.md) | 누락 검증 결과와, 그 검증이 보장하는 것·보장하지 않는 것 |
 | [docs/05-workshop-mods/README.md](docs/05-workshop-mods/README.md) | 창작마당 모드 4종이 바닐라에 무엇을 더했는지 |
+| [docs/06-editable-attributes/README.md](docs/06-editable-attributes/README.md) | 유닛의 값을 바꾸려면 어느 파일의 어떤 속성을 고쳐야 하는지. 파일별 속성명·속성값·설명 |
+| [docs/07-stat-editor/README.md](docs/07-stat-editor/README.md) | 스탯 편집기(명령줄)의 사용법과 한계 |
 
 ### 유닛 스키마
 
@@ -52,6 +54,7 @@ Call to Arms - Gates of Hell: Ostfront의 모드를 만들기 위한 레퍼런�
 | `docs/` | 문서 |
 | `data/` | 문서의 바탕이 되는 데이터. 유닛별 전체 값은 여기에 있다 |
 | `tools/` | 데이터와 문서를 만드는 스크립트 (PowerShell 7, 추가 설치 없음) |
+| `editor/` | 스탯 편집기. 지금은 명령줄 도구다 |
 | `mod/CTAToybox/` | 모드 본체. 지금은 `mod.info`만 있는 빈 뼈대다 |
 | `_work/` | 게임에서 추출한 원본. 저장소에 넣지 않는다 |
 
@@ -63,3 +66,5 @@ Call to Arms - Gates of Hell: Ostfront의 모드를 만들기 위한 레퍼런�
 |---|---|
 | [docs/superpowers/specs/2026-10-11-ctatoybox-reference-design.md](docs/superpowers/specs/2026-10-11-ctatoybox-reference-design.md) | 처음에 합의한 설계 |
 | [docs/superpowers/plans/2026-10-11-ctatoybox-reference.md](docs/superpowers/plans/2026-10-11-ctatoybox-reference.md) | 구현 계획. 실제 구현은 여러 곳에서 달라졌으며 차이는 그 문서 머리에 적혀 있다 |
+| [docs/superpowers/specs/2026-10-12-stat-editor-design.md](docs/superpowers/specs/2026-10-12-stat-editor-design.md) | 스탯 편집기의 설계. 아직 구현하지 않았다 |
+| [docs/superpowers/plans/2026-10-12-stat-editor-core.md](docs/superpowers/plans/2026-10-12-stat-editor-core.md) | 스탯 편집기 구현 계획 1: 코어와 명령줄 도구. 아직 실행하지 않았다 |
