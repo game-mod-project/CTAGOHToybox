@@ -35,7 +35,7 @@ namespace CtaToybox.Core
             }
             if (checkedText == null) return null;
             if (!TextCodec.CanEncode(newText, checkedKind)) return "새 값에 이 파일의 인코딩(" + checkedKind + ")으로 쓸 수 없는 글자가 있다: " + newText;
-            return ValueRules.CheckApplies(t.File, checkedText, new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = newText, Scope = scope });
+            return ValueRules.CheckApplies(t.File, checkedText, new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope });
         }
 
         string checkedFile, checkedText;
@@ -58,7 +58,7 @@ namespace CtaToybox.Core
                 SaveOr(() => { existing.New = oldNew; existing.Enabled = oldEnabled; });
                 return existing;
             }
-            var edit = new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = newText, Scope = scope };
+            var edit = new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = newText, Scope = scope };
             Project.Edits.Add(edit);
             SaveOr(() => Project.Edits.Remove(edit));
             return edit;
@@ -100,7 +100,7 @@ namespace CtaToybox.Core
                     if (scope != "unit" && mine != null) Project.Edits.Remove(mine);
                     if (token == t.Text) { if (target != null) Project.Edits.Remove(target); continue; }
                     if (target != null) { target.New = token; target.Enabled = true; continue; }
-                    Project.Edits.Add(new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, Old = t.Text, New = token, Scope = scope == "unit" ? "unit" : "shared" });
+                    Project.Edits.Add(new Edit { Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = t.Arg, NamedPath = t.NamedPath, NamedOccurrence = t.NamedOccurrence, Old = t.Text, New = token, Scope = scope == "unit" ? "unit" : "shared" });
                 }
                 Project.Save(ProjectPath);
             }
@@ -166,6 +166,8 @@ namespace CtaToybox.Core
             var rows = source.Rows;
             if (rows == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
+            if (e.NamedPath != null && !TokenPatcher.SameName(row, e))
+                return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 이름의 항목이 없다: " + e.NamedPath + (e.NamedOccurrence > 0 ? " [" + e.NamedOccurrence + "]" : "") };
             var node = row != null && e.Arg >= 0 && e.Arg < row.Leaves.Count ? row.Leaves[e.Arg] : null;
             if (node == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 자리가 없다" };
             string rowText = string.Join(" ", row.Leaves.Select(l => l.Text));

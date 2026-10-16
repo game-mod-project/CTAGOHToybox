@@ -37,7 +37,24 @@ namespace CtaToybox.Core
         public string SourceComment { get; set; }     // Lua 설정의 개발사 주석(영어 원문). 없으면 null
         public string TableComment { get; set; }      // Lua 설정의 표 앞 주석. 없으면 null
         public bool ContextIsNamesake { get; set; }   // Context가 이름이 같은 줄을 가르는 상위 블록 이름이다(게임 설정, NameNamesakes)
+        public string Cond { get; set; }              // 감싼 (mod ...) 조건 원문. 조건 밖이면 null
+        public string CondLabel { get { return LabelOf(Cond); } }
         public List<ValueView> Values { get; } = new List<ValueView>();
+
+        // (mod ...) 조건의 읽히는 이름. 개발사 문서(Men of War II)는 전역 모드를 멀티플레이(mp)와 그 밖으로만 나눈다.
+        // Gates of Hell의 다른 조건 이름(coop, hardcore, gameclass:..., gametype:...)은 뜻을 확인하지 않아 원문 그대로 보인다
+        public static string LabelOf(string cond)
+        {
+            if (string.IsNullOrEmpty(cond)) return null;
+            var parts = System.Text.RegularExpressions.Regex.Matches(cond, @"\(mod [^)]*\)").Cast<System.Text.RegularExpressions.Match>().Select(m => m.Value).ToList();
+            return string.Join(" · ", parts.Select(p =>
+            {
+                string inner = p.Substring(5, p.Length - 6).Trim();
+                if (inner == "\"mp\"" || inner == "mp") return "멀티플레이에서만";
+                if (inner == "not \"mp\"" || inner == "not_mp") return "멀티플레이가 아닐 때만";
+                return p + "일 때만 (뜻 미확인)";
+            }));
+        }
 
         // 요약 탭의 줄 이름. 부위(volume body1 등)는 묶음 이름을 대신하는 줄 이름이 되고,
         // 이름이 같은 줄의 상위 블록은 이름 뒤에 붙인다(대신하면 Low·Low·Low처럼 뜻이 사라진다)
@@ -190,7 +207,7 @@ namespace CtaToybox.Core
             };
             foreach (var row in traced.Rows)
             {
-                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
+                var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Context = row.Context, Cond = row.Cond, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
                 r.SourceComment = row.Comment;
                 r.TableComment = row.TableComment;
                 foreach (var v in row.Values)
@@ -266,15 +283,17 @@ namespace CtaToybox.Core
                     var row = entry.Rows[r];
                     if (row.Leaves.Count == 0) continue;
                     var note = n.Find(row.Path, row.Form, true, row.RawPath) ?? (row.Form == "macro" ? RosterMacroNote : r == 0 ? RosterNameNote : row.Path.EndsWith("/cost", StringComparison.Ordinal) ? RosterCostNote : null);
-                    var rv = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Note = note, RosterEntry = group, IsMacroCall = row.Form == "macro" };
+                    var rv = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, Note = note, RosterEntry = group, IsMacroCall = row.Form == "macro", Cond = row.Cond };
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
                         var leaf = row.Leaves[i];
                         var t = new TraceValue { Text = leaf.Text, File = entry.File, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
+                        if (KeyLocator.IsNamed(row.Path)) { t.NamedPath = row.RawPath; t.NamedOccurrence = row.RawOccurrence; }
                         // 항목 이름을 바꾸면 유닛과 이어지지 않는다. 호출 밖의 따옴표 없는 낱말(requires, costs 같은 열쇠말)도 고치지 않는다
                         // 분대 호출 항목은 name() 인자가 항목 이름이다
                         bool entryName = entry.IsCall ? r == 0 && string.Equals(row.LeafNames[i], "name", StringComparison.OrdinalIgnoreCase) : r == 0 && i == 0;
-                        if (entryName) { t.Arg = -1; t.Note = "항목 이름이다. 바꾸면 유닛과 이어지지 않는다"; }
+                        if (KeyLocator.IsDisabled(row.Path)) { t.Arg = -1; t.Note = KeyLocator.DisabledNote; }
+                        else if (entryName) { t.Arg = -1; t.Note = "항목 이름이다. 바꾸면 유닛과 이어지지 않는다"; }
                         else if (row.LeafNames[i] == null && leaf.Kind == "atom" && !SdlCore.IsNumber(leaf.Text)) { t.Arg = -1; t.Note = "열쇠말이다(" + leaf.Text + ")"; }
                         rv.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = 1,
                             UnitScopeBlocker = "가격·로스터 파일은 유닛이 읽는 파일이 아니다. 이 항목만 바뀐다" });
@@ -427,12 +446,14 @@ namespace CtaToybox.Core
                 {
                     // 매크로 정의 안의 호출은 이 유닛이 그 매크로를 쓸 때만 펼쳐지므로 보이지 않는다(쓰는지 알 수 없다)
                     if (row.Form != "macro" || row.Leaves.Count == 0 || row.Path.Contains("(define ")) continue;
-                    var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
+                    var r = new RowView { Path = row.Path, RawPath = row.RawPath, Occurrence = row.Occurrence, Form = row.Form, IsMacroCall = true, Cond = row.Cond, Note = n.Find(row.Path, row.Form, true, row.RawPath), SummaryLabel = summary.LabelOf(row.Path, row.RawPath) };
                     for (int i = 0; i < row.Leaves.Count; i++)
                     {
                         var t = new TraceValue { Text = row.Leaves[i].Text, File = file, KeyPath = row.Path, Occurrence = row.Occurrence, Arg = i };
+                        if (KeyLocator.IsNamed(row.Path)) { t.NamedPath = row.RawPath; t.NamedOccurrence = row.RawOccurrence; }
                         // %이름은 바깥에서 받는 매개변수다. 고치면 매크로가 깨진다
-                        if (t.Text.StartsWith("%")) { t.Arg = -1; t.Note = "매개변수(" + t.Text + ")라 고칠 수 없다. 이 값을 넘기는 쪽에서 고친다"; }
+                        if (KeyLocator.IsDisabled(row.Path)) { t.Arg = -1; t.Note = KeyLocator.DisabledNote; }
+                        else if (t.Text.StartsWith("%")) { t.Arg = -1; t.Note = "매개변수(" + t.Text + ")라 고칠 수 없다. 이 값을 넘기는 쪽에서 고친다"; }
                         r.Values.Add(new ValueView { Trace = t, Name = row.LeafNames[i], SharedBy = Index.UsersOf(file).Count, UnitScopeBlocker = IncludeChain.UnitScopeBlocker(traced.IncludeEdges, traced.Unit, file, row.Path) });
                     }
                     view.Rows.Add(r);
@@ -467,8 +488,32 @@ namespace CtaToybox.Core
             EditProject loaded;
             if (File.Exists(path)) loaded = EditProject.Load(path);
             else loaded = new EditProject { Name = Path.GetFileNameWithoutExtension(path) };
+            Reanchor(loaded.Edits);
             Project = loaded;
             ProjectPath = path;
+        }
+
+        // 따옴표 이름 블록의 수정(Q7): 원본에 항목이 끼어들거나 빠져 "몇 번째"가 밀렸으면 이름으로 같은 항목을 다시 찾아 Path·Occurrence를 맞춘다.
+        // 그 이름이 원본에 없으면 그대로 두고, 점검·빌드가 "이 이름의 항목이 없다"로 막는다
+        void Reanchor(IEnumerable<Edit> edits)
+        {
+            var indexes = new Dictionary<string, KeyIndex>(StringComparer.Ordinal);
+            foreach (var e in edits.Where(x => x.NamedPath != null && x.File != null && !LuaTable.IsLua(x.File)))
+            {
+                string file = SourceStack.ToVirtual(e.File);
+                KeyIndex index;
+                if (!indexes.TryGetValue(file, out index))
+                {
+                    string text = Stack.ReadText(file);
+                    var parsed = text == null ? null : SdlCore.Parse(text);
+                    index = parsed == null || parsed.Errors.Count > 0 ? null : new KeyIndex(parsed.Root);
+                    indexes[file] = index;
+                }
+                var row = index == null ? null : index.NamedRow(e.NamedPath, e.NamedOccurrence);
+                if (row == null) continue;
+                e.Path = row.Path;
+                e.Occurrence = row.Occurrence;
+            }
         }
 
         public void Dispose()

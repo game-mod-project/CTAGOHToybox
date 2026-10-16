@@ -14,6 +14,8 @@ namespace CtaToybox.Core
         public int Occurrence { get; set; }      // 같은 경로를 가진 행 가운데 파일에 나온 순서
         public List<SdlNode> Leaves { get; set; }
         public List<string> LeafNames { get; set; }   // 잎마다 그것을 감싼 호출의 이름(cp(40)이면 "cp"). 호출 밖이면 null
+        public int RawOccurrence { get; set; }   // 같은 원문 경로(따옴표 이름 포함, 대소문자 무시) 가운데 몇 번째인지
+        public string Cond { get; set; }         // 감싼 (mod ...) 조건. 조건 밖이면 null
     }
 
     // 한 파일의 행을 한 번만 만들어 (경로, 몇 번째)로 바로 찾는다. 경로는 대소문자를 가리지 않는다(KeyLocator.Find와 같다).
@@ -21,11 +23,29 @@ namespace CtaToybox.Core
     public sealed class KeyIndex
     {
         readonly Dictionary<string, KeyRow> rows = new Dictionary<string, KeyRow>(StringComparer.OrdinalIgnoreCase);
+        readonly Dictionary<string, KeyRow> named = new Dictionary<string, KeyRow>(StringComparer.OrdinalIgnoreCase);
 
-        // Rows는 몇 번째를 대소문자를 가리지 않는 경로마다 센다. 그래서 (경로, 몇 번째)는 겹치지 않는다
+        // Rows는 몇 번째를 대소문자를 가리지 않는 경로마다 센다. 그래서 (경로, 몇 번째)는 겹치지 않는다. 원문 경로도 같다
         public KeyIndex(SdlNode root)
         {
-            foreach (var row in KeyLocator.Rows(root)) rows[Key(row.Path, row.Occurrence)] = row;
+            foreach (var row in KeyLocator.Rows(root))
+            {
+                rows[Key(row.Path, row.Occurrence)] = row;
+                named[Key(row.RawPath, row.RawOccurrence)] = row;
+            }
+        }
+
+        // 따옴표 이름이 든 원문 경로(예 /"tiger"/cost)와 그 경로 가운데 몇 번째인지로 찾는다(Q7: 모드가 항목을 끼워 넣어도 같은 이름을 찾는다)
+        public KeyRow NamedRow(string rawPath, int rawOccurrence)
+        {
+            KeyRow row;
+            return rawPath != null && named.TryGetValue(Key(rawPath, rawOccurrence), out row) ? row : null;
+        }
+
+        public SdlNode FindNamed(string rawPath, int rawOccurrence, int arg)
+        {
+            var row = NamedRow(rawPath, rawOccurrence);
+            return row != null && arg >= 0 && arg < row.Leaves.Count ? row.Leaves[arg] : null;
         }
 
         static string Key(string path, int occurrence) { return occurrence + "\u0001" + path; }
@@ -45,6 +65,14 @@ namespace CtaToybox.Core
 
     public static class KeyLocator
     {
+        // 키 앞에 ##가 붙은 블록({##damage ...}, {## pulseperiod ...}) 안의 자리인가.
+        // 개발사 문서(Men of War II): ##는 꺼 둔 블록이다. 읽을 때 지우지 않지만 게임은 그 값을 쓰지 않는다
+        public static bool IsDisabled(string path) { return path != null && path.Contains("/##"); }
+        public const string DisabledNote = "게임이 쓰지 않는 꺼진 블록(##) 안의 값이다(개발사 문서). 쓰려면 원본에서 ##를 지운다";
+
+        // 따옴표 이름 블록 안의 자리인가({"tiger" ...}). 이런 자리는 원문 경로의 이름으로도 찾는다(Q7)
+        public static bool IsNamed(string path) { return path != null && path.Contains("\"*\""); }
+
         // tools/lib/SdlKeys.ps1의 $SdlQualifiedBlocks와 같아야 한다
         static readonly string[] Qualified = { "extender" };
 
@@ -52,16 +80,19 @@ namespace CtaToybox.Core
         {
             var result = new List<KeyRow>();
             var seen = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+            var seenRaw = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
             foreach (var row in SdlCore.KeyRows(root.Children, Qualified))
             {
                 if (row.Form != "block" && row.Form != "macro") continue;
-                int n;
+                int n, rn;
                 seen.TryGetValue(row.Path, out n);
                 seen[row.Path] = n + 1;
+                seenRaw.TryGetValue(row.RawPath, out rn);
+                seenRaw[row.RawPath] = rn + 1;
                 var leaves = new List<SdlNode>();
                 var names = new List<string>();
                 foreach (var a in row.ArgNodes) AddLeaves(a, leaves, names, null);
-                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves, LeafNames = names });
+                result.Add(new KeyRow { Path = row.Path, RawPath = row.RawPath, Form = row.Form, Occurrence = n, Leaves = leaves, LeafNames = names, RawOccurrence = rn, Cond = row.Cond });
             }
             return result;
         }

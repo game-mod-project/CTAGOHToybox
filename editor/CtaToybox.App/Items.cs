@@ -144,11 +144,14 @@ namespace CtaToybox.App
         }
 
         // 줄의 부위와, 같은 줄을 모았으면 그 수. 둘 다 없으면 null
-        public static string ContextLine(string context, int repeats)
+        public static string ContextLine(string context, int repeats, string condLabel = null)
         {
             string rep = repeats > 1 ? "같은 줄 " + repeats + "곳을 하나로 보인다. 고치면 모두 바뀐다" : null;
-            if (context == null) return rep;
-            return "↳ " + context + (rep == null ? "" : "  ·  " + rep);
+            // (mod ...) 조건 안의 줄은 그 조건일 때만 게임에 들어간다
+            string cond = condLabel == null ? null : "조건: " + condLabel;
+            string tail = string.Join("  ·  ", new[] { cond, rep }.Where(x => x != null));
+            if (context == null) return tail.Length == 0 ? null : tail;
+            return "↳ " + context + (tail.Length == 0 ? "" : "  ·  " + tail);
         }
 
         public static string Note(KeyNote note)

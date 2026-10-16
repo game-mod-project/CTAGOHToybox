@@ -94,6 +94,7 @@ static class Program
             ("UnitScopeBuild", UnitScopeBuildTests.Run),
             ("UnitFilter", UnitFilterTests.Run),
             ("Roster", RosterTests.Run),
+            ("RulesSession", RulesSessionTests.Run),
             ("ValueLabels", ValueLabelsTests.Run),
             ("Robustness", RobustnessTests.Run),
             ("SettingsPolish", SettingsPolishTests.Run),
