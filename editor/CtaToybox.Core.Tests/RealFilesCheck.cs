@@ -62,7 +62,7 @@ static class RealFilesCheck
 
         // 출처 추적: 차량 전체에서, 편집 가능하다고 한 자리의 값이 실제로 그 파일 그 자리의 토큰과 같은지 본다
         var tracer = new UnitTracer(stack);
-        var parsedFiles = new Dictionary<string, SdlNode>(StringComparer.Ordinal);
+        var parsedFiles = new Dictionary<string, KeyIndex>(StringComparer.Ordinal);   // 파일마다 행 색인 하나(값마다 행 목록을 만들면 40분 걸렸다)
         int traced = 0, values = 0, editable = 0, wrongSlot = 0;
         foreach (var u in index.Units.Where(x => x.Kind == "vehicle"))
         {
@@ -74,9 +74,9 @@ static class RealFilesCheck
                     values++;
                     if (v.Arg < 0) continue;
                     editable++;
-                    SdlNode root;
-                    if (!parsedFiles.TryGetValue(v.File, out root)) { root = SdlCore.Parse(stack.ReadText(v.File)).Root; parsedFiles[v.File] = root; }
-                    var node = KeyLocator.Find(root, v.KeyPath, v.Occurrence, v.Arg);
+                    KeyIndex root;
+                    if (!parsedFiles.TryGetValue(v.File, out root)) { root = new KeyIndex(SdlCore.Parse(stack.ReadText(v.File)).Root); parsedFiles[v.File] = root; }
+                    var node = root.Find(v.KeyPath, v.Occurrence, v.Arg);
                     if (node == null || node.Text != v.Text) { wrongSlot++; if (examples.Count < 20) examples.Add("slot: " + u.Path + " " + row.Path + " ← " + v.File + " " + v.KeyPath); }
                 }
         }
