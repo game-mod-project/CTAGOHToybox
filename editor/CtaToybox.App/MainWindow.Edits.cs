@@ -40,7 +40,7 @@ namespace CtaToybox.App
                     Edit = e, Enabled = e.Enabled,
                     Group = Text.UnitName(session, unitPath) + "   (" + unitPath.Substring(unitPath.LastIndexOf('/') + 1) + ")",
                     Title = Text.EditTitle(session.Describe(e), e),
-                    Detail = (e.Scope == "unit" ? "이 유닛만" : "전부 (유닛 " + session.Index.UsersOf(e.File).Count + "개가 바뀐다)") + " · " + e.File.Substring(e.File.LastIndexOf('/') + 1) + (e.Enabled ? "" : " · 꺼짐"),
+                    Detail = (e.Scope == "unit" ? "이 유닛만" : "전부 (" + Text.SharedScope(SourceStack.ToVirtual(e.File), session.Index.UsersOf(e.File).Count) + ")") + " · " + e.File.Substring(e.File.LastIndexOf('/') + 1) + (e.Enabled ? "" : " · 꺼짐"),
                     Status = status,
                 };
             }).ToList();

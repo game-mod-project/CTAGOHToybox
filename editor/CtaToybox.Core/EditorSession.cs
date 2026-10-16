@@ -340,6 +340,7 @@ namespace CtaToybox.Core
             public string RowText { get; set; }    // 원본 줄의 값 전체
             public int ValueCount { get; set; }
             public List<string> ChangedPieces { get; set; }   // 문자열 속 설정이면 바뀐 조각만 "뜻(없으면 이름): 원래 → 새 값". 아니면 null
+            public List<string> BlockNames { get; set; }      // 줄이 든 따옴표 이름 블록의 이름(바깥부터). 없으면 빈 목록(E16)
         }
 
         // 수정 목록이 보일 설명: 원본 파일에서 그 줄을 다시 찾아 이름을 붙인다. 줄을 찾지 못하면 null
@@ -362,6 +363,7 @@ namespace CtaToybox.Core
                 IsMacroCall = row.Form == "macro", ValueLabel = labels[e.Arg], ValueName = row.LeafNames[e.Arg],
                 RowText = string.Join(" ", texts), ValueCount = texts.Count,
                 ChangedPieces = ChangedPieces(row.Path, row.RawPath, e),
+                BlockNames = KeyLabel.QuotedNames(row.Path, row.RawPath),
             };
         }
 
