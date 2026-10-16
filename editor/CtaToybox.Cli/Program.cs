@@ -18,6 +18,7 @@ namespace CtaToybox.Cli
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
+            "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force]   (월드워 시야 프로젝트를 만든다. 있는 파일은 --force로만 덮어쓴다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
@@ -33,6 +34,7 @@ namespace CtaToybox.Cli
             ["show"] = new[] { "settings", "filter" },
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit" },
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit" },
+            ["merge"] = new[] { "settings", "project", "from" },
             ["build"] = new[] { "settings", "project", "force" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force" },
         };
@@ -78,6 +80,7 @@ namespace CtaToybox.Cli
                     case "show": return Show(positional, opt, settingsPath, output);
                     case "add": return Add(opt, settingsPath, output);
                     case "remove": return Remove(opt, output);
+                    case "merge": return Merge(opt, output);
                     case "build": return Build(opt, settingsPath, output);
                     case "vision-preset": return VisionPreset(opt, settingsPath, output);
                     default: throw new UsageException("모르는 명령: " + args[0]);
@@ -381,6 +384,20 @@ namespace CtaToybox.Cli
             project.Edits.Remove(matches[0]);
             project.Save(projectPath);
             output.WriteLine("수정을 지웠다: " + file + " " + keyPath + " " + matches[0].Old + " → " + matches[0].New + " (" + matches[0].Scope + ")");
+            return 0;
+        }
+
+        // E17: 빌드는 프로젝트 하나만 쓴다. 다른 프로젝트의 수정을 이 프로젝트로 가져온다
+        static int Merge(Dictionary<string, string> opt, TextWriter output)
+        {
+            string projectPath = Need(opt, "project"), fromPath = Need(opt, "from");
+            if (!File.Exists(fromPath)) { output.WriteLine("가져올 프로젝트 파일이 없다: " + fromPath); return 1; }
+            if (string.Equals(Path.GetFullPath(projectPath), Path.GetFullPath(fromPath), StringComparison.OrdinalIgnoreCase)) { output.WriteLine("같은 프로젝트끼리는 합치지 않는다: " + projectPath); return 1; }
+            var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
+            var report = project.MergeFrom(EditProject.Load(fromPath));
+            if (report.Added > 0) project.Save(projectPath);
+            output.WriteLine("합쳤다: 더함 " + report.Added + "건, 이미 같음 " + report.Same + "건, 충돌 " + report.Conflicts.Count + "건 → " + projectPath);
+            foreach (string c in report.Conflicts) output.WriteLine("  충돌: " + c);
             return 0;
         }
 

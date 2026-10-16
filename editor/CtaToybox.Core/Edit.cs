@@ -1,6 +1,7 @@
 // 수정 한 건과 프로젝트 파일(editor/projects/<이름>.json).
 // Old와 New는 따옴표를 포함한 토큰 원문이다: 문자열이면 "body", 낱말이나 수면 120.
 using System.Collections.Generic;
+using System.Linq;
 using System.IO;
 using System.Text;
 using System.Text.Json;
@@ -26,6 +27,14 @@ namespace CtaToybox.Core
         public int NamedOccurrence { get; set; }
     }
 
+    // 프로젝트 합치기(EditProject.MergeFrom)의 결과
+    public sealed class MergeReport
+    {
+        public int Added { get; set; }
+        public int Same { get; set; }
+        public List<string> Conflicts { get; } = new List<string>();
+    }
+
     public sealed class EditProject
     {
         public string Name { get; set; }
@@ -47,6 +56,33 @@ namespace CtaToybox.Core
             if (loaded == null) throw new InvalidDataException("프로젝트 파일을 읽지 못했다(내용이 비어 있다): " + path);
             if (loaded.Edits == null) loaded.Edits = new List<Edit>();
             return loaded;
+        }
+
+        // other의 수정을 이 프로젝트에 더한다(E17: 빌드는 프로젝트 하나만 쓴다). 같은 자리(범위, '이 유닛만'이면 유닛, 파일, 키 경로, 몇 번째, 몇 번째 값)에
+        // 새 값까지 같으면 건너뛰고, 새 값이 다르면 이 프로젝트의 것을 두고 충돌로 알린다. 더하는 수정은 사본이다(켜짐·이름 경로 포함)
+        public MergeReport MergeFrom(EditProject other)
+        {
+            var report = new MergeReport();
+            foreach (var e in other.Edits)
+            {
+                var here = Edits.FirstOrDefault(x => SameSlot(x, e));
+                if (here == null)
+                {
+                    Edits.Add(new Edit { Unit = e.Unit, File = e.File, Path = e.Path, Occurrence = e.Occurrence, Arg = e.Arg, Old = e.Old, New = e.New, Scope = e.Scope, Enabled = e.Enabled, NamedPath = e.NamedPath, NamedOccurrence = e.NamedOccurrence });
+                    report.Added++;
+                }
+                else if (here.New == e.New) report.Same++;
+                else report.Conflicts.Add(e.File + " " + e.Path + " [" + e.Occurrence + "] 값 " + e.Arg + (e.Scope == "unit" ? " (이 유닛만: " + e.Unit + ")" : "") + ": 가져올 값 " + e.New + ", 이 프로젝트의 값 " + here.New + "(그대로 둔다)");
+            }
+            return report;
+        }
+
+        static bool SameSlot(Edit a, Edit b)
+        {
+            return a.Scope == b.Scope && a.Occurrence == b.Occurrence && a.Arg == b.Arg
+                && string.Equals(SourceStack.ToVirtual(a.File ?? ""), SourceStack.ToVirtual(b.File ?? ""), System.StringComparison.OrdinalIgnoreCase)
+                && string.Equals(a.Path, b.Path, System.StringComparison.OrdinalIgnoreCase)
+                && (a.Scope != "unit" || string.Equals(SourceStack.ToVirtual(a.Unit ?? ""), SourceStack.ToVirtual(b.Unit ?? ""), System.StringComparison.OrdinalIgnoreCase));
         }
 
         public void Save(string path)

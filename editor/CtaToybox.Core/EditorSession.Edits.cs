@@ -141,6 +141,21 @@ namespace CtaToybox.Core
             SaveOr(() => edit.Old = before);
         }
 
+        // 다른 프로젝트 파일의 수정을 지금 프로젝트에 더하고 저장한다(E17). 같은 자리에 다른 값이면 지금 것을 둔다(MergeReport.Conflicts).
+        // 깨진 파일은 InvalidDataException, 지금 프로젝트 파일 자신이면 ArgumentException
+        public MergeReport MergeProject(string path)
+        {
+            NeedProject();
+            if (string.Equals(System.IO.Path.GetFullPath(path), System.IO.Path.GetFullPath(ProjectPath), StringComparison.OrdinalIgnoreCase))
+                throw new ArgumentException("지금 연 프로젝트와 같은 파일이다. 다른 프로젝트를 고른다.");
+            var other = EditProject.Load(path);
+            Reanchor(other.Edits);
+            int before = Project.Edits.Count;
+            var report = Project.MergeFrom(other);
+            if (report.Added > 0) SaveOr(() => Project.Edits.RemoveRange(before, Project.Edits.Count - before));
+            return report;
+        }
+
         public List<EditCheck> CheckEdits()
         {
             if (Project == null) return new List<EditCheck>();

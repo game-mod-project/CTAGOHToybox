@@ -16,7 +16,7 @@ namespace CtaToybox.App
         {
             try { session.OpenProject(path); }
             catch (InvalidDataException ex) { MessageBox.Show(this, ex.Message, "프로젝트"); }
-            BuildButton.IsEnabled = session.Project != null;
+            BuildButton.IsEnabled = MergeProjectButton.IsEnabled = session.Project != null;
             ProjectText.Text = session.Project == null ? "(없음. 오른쪽 단추로 연다)" : session.Project.Name;
             ProjectText.ToolTip = session.ProjectPath;
             RefreshEdits();
@@ -91,6 +91,24 @@ namespace CtaToybox.App
             string dir = session.ProjectPath != null ? Path.GetDirectoryName(Path.GetFullPath(session.ProjectPath)) : Path.Combine(options.Repo, "editor", "projects");
             var dialog = new OpenFileDialog { Filter = "프로젝트 (*.json)|*.json", CheckFileExists = false, InitialDirectory = Directory.Exists(dir) ? dir : options.Repo, Title = "프로젝트 열기 (없는 이름을 쓰면 새로 만든다)" };
             if (dialog.ShowDialog(this) == true) OpenProjectFile(dialog.FileName);
+        }
+
+        // 다른 프로젝트의 수정을 이 프로젝트에 더한다(E17). 같은 자리에 다른 값이 있으면 이 프로젝트의 것을 두고 알린다
+        void MergeProject_Click(object sender, RoutedEventArgs e)
+        {
+            if (session == null || session.Project == null) return;
+            string dir = Path.GetDirectoryName(Path.GetFullPath(session.ProjectPath));
+            var dialog = new OpenFileDialog { Filter = "프로젝트 (*.json)|*.json", CheckFileExists = true, InitialDirectory = Directory.Exists(dir) ? dir : options.Repo, Title = "이 프로젝트에 합칠 프로젝트" };
+            if (dialog.ShowDialog(this) != true) return;
+            MergeReport report = null;
+            if (!Try("프로젝트 합치기", () => report = session.MergeProject(dialog.FileName))) return;
+            var lines = new System.Collections.Generic.List<string> { "더한 수정 " + report.Added + "건, 이미 같은 수정 " + report.Same + "건, 충돌 " + report.Conflicts.Count + "건" };
+            if (report.Conflicts.Count > 0) lines.Add("충돌은 이 프로젝트의 값을 그대로 두었다:");
+            lines.AddRange(report.Conflicts.Take(20).Select(c => "  " + c));
+            if (report.Conflicts.Count > 20) lines.Add("  외 " + (report.Conflicts.Count - 20) + "건");
+            MessageBox.Show(this, string.Join("\n", lines), "프로젝트 합치기");
+            RefreshEdits();
+            RefreshUnitViews();
         }
 
         void Build_Click(object sender, RoutedEventArgs e)
