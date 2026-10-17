@@ -145,6 +145,7 @@ static class Suites
         ("L10nFont", L10nFontTests.Run),
         ("L10nBuild", L10nBuildTests.Run),
         ("L10nCli", L10nCliTests.Run),
+        ("L10nNames", L10nNamesTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),

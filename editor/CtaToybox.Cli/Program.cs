@@ -408,6 +408,8 @@ namespace CtaToybox.Cli
                 var index = OpenIndex(stack, settingsPath, output);
                 // 이름은 게임과 켜 둔 모드의 현지화에서 읽는다(앱과 같다). --names를 주면 그 CSV를 쓴다
                 var names = opt.ContainsKey("names") ? DisplayNames.Load(opt["names"]) : DisplayNames.FromGame(settings, plan);
+                // 한글 이름: 저장소는 설정 파일 폴더(editor)의 부모
+                if (!opt.ContainsKey("names")) names.AddTranslations(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetFullPath(settingsPath))), "l10n", "ko"));
                 foreach (string w in names.Warnings) output.WriteLine("경고: " + w);
                 foreach (var kv in SettingFiles.LoadNames(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(settingsPath)), "settings", "files.psv")))
                     names.AddPathName(kv.Key, kv.Value.Name);
