@@ -117,6 +117,7 @@ static class Suites
         ("BulkRules", BulkRulesTests.Run),
         ("BulkRulesSession", BulkRulesSessionTests.Run),
         ("BulkRulesCli", BulkRulesCliTests.Run),
+        ("ArmyIndex", ArmyIndexTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),

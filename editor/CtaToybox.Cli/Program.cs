@@ -13,13 +13,13 @@ namespace CtaToybox.Cli
             "사용법:\n" +
             "  ctatoybox init --game <폴더> --workshop <폴더> --options <파일> --out <폴더> [--name <이름>]\n" +
             "  ctatoybox sources\n" +
-            "  ctatoybox units [--find <글자>] [--kind <종류>] [--layer <계층>] [--limit N] [--names <csv>]\n" +
+            "  ctatoybox units [--find <글자>] [--kind <종류>] [--layer <계층>] [--limit N] [--names <csv>] [--army ger|rus|usa|eng|fin|jap]\n" +
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 인자 없는 매크로 호출의 이름을 같은 파일에 정의된 다른 이름으로)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
-            "  ctatoybox rule preview|add --kind <종류> [--path <글자,…>] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
+            "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
             "  ctatoybox rule list|reapply|remove|enable|disable --project <파일> [--id <id>]   rule edit --project <파일> --id <id> <바꿀 옵션>   (일괄 규칙)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
@@ -31,13 +31,13 @@ namespace CtaToybox.Cli
         {
             ["init"] = new[] { "settings", "game", "workshop", "options", "out", "name" },
             ["sources"] = new[] { "settings" },
-            ["units"] = new[] { "settings", "find", "kind", "layer", "limit", "names" },
+            ["units"] = new[] { "settings", "find", "kind", "layer", "limit", "names", "army" },
             ["trace"] = new[] { "settings", "filter" },
             ["show"] = new[] { "settings", "filter" },
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit", "kind" },
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit", "kind" },
             ["merge"] = new[] { "settings", "project", "from" },
-            ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id" },
+            ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude" },
             ["build"] = new[] { "settings", "project", "force" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
@@ -253,6 +253,13 @@ namespace CtaToybox.Cli
                     names.AddPathName(kv.Key, kv.Value.Name);
                 var found = index.Search(opt.ContainsKey("find") ? opt["find"] : null, null, opt.ContainsKey("layer") ? opt["layer"] : null, names)
                     .Where(u => UnitKind.InEditor(u.EditorKind) && (u.Numbers > 0 || u.EditorKind == SettingFiles.Kind) && (kind == null || u.EditorKind == kind || u.Kind == kind)).ToList();
+                if (opt.ContainsKey("army"))
+                {
+                    string army = opt["army"].ToLowerInvariant();
+                    if (!ArmyIndex.IsArmy(army)) throw new UsageException("--army는 다음 가운데 하나다: " + string.Join(", ", ArmyIndex.Armies));
+                    var armies = ArmyIndex.Build(stack, index.Units);
+                    found = found.Where(u => armies.ArmyOf(u.Path) == army).ToList();
+                }
                 foreach (var u in found.Take(limit))
                 {
                     string name = names.OfUnit(u.Path);
@@ -512,6 +519,8 @@ namespace CtaToybox.Cli
             if (opt.ContainsKey("kind")) r.Kind = opt["kind"];
             if (opt.ContainsKey("path")) r.Paths = opt["path"].Split(',').Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
             if (opt.ContainsKey("layer")) r.Layer = opt["layer"];
+            if (opt.ContainsKey("army")) r.Army = opt["army"].ToLowerInvariant();
+            if (opt.ContainsKey("exclude")) r.Exclude = opt["exclude"].Split(',').Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
             if (opt.ContainsKey("key")) r.Key = opt["key"];
             if (opt.ContainsKey("arg")) r.Arg = opt["arg"].ToLowerInvariant() == "all" ? -1 : Number(opt, "arg");
             if (opt.ContainsKey("scope")) r.Scope = opt["scope"].ToLowerInvariant();

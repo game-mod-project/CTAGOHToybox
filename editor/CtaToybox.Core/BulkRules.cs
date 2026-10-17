@@ -17,6 +17,10 @@ namespace CtaToybox.Core
         public string Kind { get; set; }            // 편집기 종류(tank 등) 또는 원래 종류(vehicle)
         public List<string> Paths { get; set; }     // 유닛 경로에 모두 들어야 하는 글자. null이나 빈 목록이면 그 종류 전부
         public string Layer { get; set; }           // 계층 이름(vanilla, mod_…). null이면 전부
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public string Army { get; set; }            // 군대(ArmyIndex.Armies). null이면 거르지 않는다(팩션 강화)
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public List<string> Exclude { get; set; }   // 유닛 경로에 하나라도 들면 대상에서 뺀다. null이면 빼지 않는다
         public string Key { get; set; }             // 펼친 키(정확한 경로 또는 **/꼬리)
         public int Arg { get; set; }                // 줄의 몇 번째 값. -1이면 수인 값 모두
         public string Op { get; set; }              // set | mul | add
@@ -26,14 +30,14 @@ namespace CtaToybox.Core
 
         public BulkRule Copy()
         {
-            return new BulkRule { Id = Id, Name = Name, Kind = Kind, Paths = Paths == null ? null : new List<string>(Paths), Layer = Layer, Key = Key, Arg = Arg, Op = Op, Value = Value, Scope = Scope, Enabled = Enabled };
+            return new BulkRule { Id = Id, Name = Name, Kind = Kind, Paths = Paths == null ? null : new List<string>(Paths), Layer = Layer, Army = Army, Exclude = Exclude == null ? null : new List<string>(Exclude), Key = Key, Arg = Arg, Op = Op, Value = Value, Scope = Scope, Enabled = Enabled };
         }
 
         // 화면·명령줄에 보이는 한 줄 설명
         public string Describe()
         {
             string what = Op == "mul" ? "×" + Value : Op == "add" ? (Value.StartsWith("-") ? Value : "+" + Value) : "= " + Value;
-            return Kind + (Paths == null || Paths.Count == 0 ? "" : " [" + string.Join(", ", Paths) + "]") + (Layer == null ? "" : " (" + Layer + ")") + " · " + Key + (Arg < 0 ? " 모든 값" : Arg > 0 ? " 값 " + Arg : "") + " " + what + (Scope == "auto" ? "" : " · " + Scope);
+            return Kind + (Army == null ? "" : " " + Army) + (Paths == null || Paths.Count == 0 ? "" : " [" + string.Join(", ", Paths) + "]") + (Layer == null ? "" : " (" + Layer + ")") + " · " + Key + (Arg < 0 ? " 모든 값" : Arg > 0 ? " 값 " + Arg : "") + " " + what + (Scope == "auto" ? "" : " · " + Scope);
         }
     }
 
@@ -66,6 +70,7 @@ namespace CtaToybox.Core
             double v;
             if (rule.Op != "set" && !double.TryParse(rule.Value, NumberStyles.Float, CultureInfo.InvariantCulture, out v)) return "배수·더할 값은 수다: " + rule.Value;
             if (rule.Arg < -1) return "값 자리는 0 이상이거나 -1(모든 값)이다";
+            if (rule.Army != null && !ArmyIndex.IsArmy(rule.Army)) return "군대는 " + string.Join(", ", ArmyIndex.Armies) + " 가운데 하나다: " + rule.Army;
             return null;
         }
 
@@ -92,6 +97,7 @@ namespace CtaToybox.Core
         {
             if (!string.Equals(u.EditorKind, rule.Kind, StringComparison.OrdinalIgnoreCase) && !string.Equals(u.Kind, rule.Kind, StringComparison.OrdinalIgnoreCase)) return false;
             if (rule.Layer != null && !string.Equals(u.Layer, rule.Layer, StringComparison.OrdinalIgnoreCase)) return false;
+            if (rule.Exclude != null && rule.Exclude.Any(p => !string.IsNullOrEmpty(p) && u.Path.IndexOf(p, StringComparison.OrdinalIgnoreCase) >= 0)) return false;
             return rule.Paths == null || rule.Paths.All(p => string.IsNullOrEmpty(p) || u.Path.IndexOf(p, StringComparison.OrdinalIgnoreCase) >= 0);
         }
 
@@ -105,7 +111,7 @@ namespace CtaToybox.Core
         sealed class Slot { public TraceValue Value; public List<string> Units = new List<string>(); public Dictionary<string, UnitTraceResult> Traces = new Dictionary<string, UnitTraceResult>(); }
 
         // project의 다른 수정(사람과 앞 규칙)과의 겹침을 본다. 만든 수정의 Rule은 rule.Id다
-        public static RulePreview Preview(BulkRule rule, EditProject project, IEnumerable<UnitEntry> units, UnitTracer tracer, Func<string, IReadOnlyList<string>> usersOf, Func<string, int> heirsOf)
+        public static RulePreview Preview(BulkRule rule, EditProject project, IEnumerable<UnitEntry> units, UnitTracer tracer, Func<string, IReadOnlyList<string>> usersOf, Func<string, int> heirsOf, Func<string, string> armyOf = null)
         {
             var preview = new RulePreview();
             string bad = Check(rule);
@@ -119,7 +125,8 @@ namespace CtaToybox.Core
                 if (e.Scope == "unit") unitTaken[k + "|" + SourceStack.ToVirtual(e.Unit ?? "")] = e; else sharedTaken[k] = e;
             }
 
-            var targets = units.Where(u => IsTarget(rule, u)).OrderBy(u => u.Path, StringComparer.Ordinal).ToList();
+            if (rule.Army != null && armyOf == null) throw new ArgumentException("군대로 고르는 규칙에는 군대 색인이 필요하다");
+            var targets = units.Where(u => IsTarget(rule, u) && (rule.Army == null || armyOf(u.Path) == rule.Army)).OrderBy(u => u.Path, StringComparer.Ordinal).ToList();
             preview.Targets = targets.Count;
             var targetSet = new HashSet<string>(targets.Select(u => u.Path), StringComparer.Ordinal);
             var slots = new Dictionary<string, Slot>(StringComparer.Ordinal);

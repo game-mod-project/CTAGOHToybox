@@ -95,6 +95,9 @@ namespace CtaToybox.Core
         public DisplayNames Names { get; private set; }
         public ItemLinks Items { get; private set; }
         public RosterLinks Roster { get; private set; }
+        // 유닛의 군대(팩션 강화). 처음 쓸 때 만든다
+        public ArmyIndex Armies { get { return armies ?? (armies = ArmyIndex.Build(Stack, Index.Units)); } }
+        ArmyIndex armies;
         public EditProject Project { get; private set; }
         public string ProjectPath { get; private set; }
 
