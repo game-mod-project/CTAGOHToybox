@@ -25,5 +25,22 @@ static class SpawnRealCheck
         foreach (var g in skipped.GroupBy(x => x.Substring(x.LastIndexOf(':') + 1).Trim().Split(':')[0]).OrderByDescending(g => g.Count()).Take(8)) Console.WriteLine("  spawn skipped " + g.Count() + "x: " + g.First());
         T.True(cat.Units.Any(u => u.Def.StartsWith("entity/-vehicle/") && index.Units.Any(x => x.Path == u.Def && x.Layer == "mod_3732639687")), "Wunderwaffe vehicles are in the spawn list");
         T.True(cat.Squads.Count > 500, "the skirmish rosters give squads");
+
+        // 스커미시 로스터
+        var rosterSkipped = new List<string>(); var notes = new List<string>();
+        var roster = RosterRewrite.Build(stack, cat, new RosterOptions(), rosterSkipped, notes);
+        int bad = 0, added = 0;
+        foreach (var f in roster.Where(f => f.Path.EndsWith(".set") || f.Path.EndsWith(".inc")))
+        {
+            TextKind kind;
+            string text = TextCodec.Decode(f.Bytes, out kind);
+            var before = stack.ReadText(f.Path.Substring("resource/".Length));
+            if (SdlCore.Parse(text).Errors.Count > SdlCore.Parse(before ?? "").Errors.Count) { bad++; Console.WriteLine("  spawn roster parse: " + f.Path); }
+            added += System.Text.RegularExpressions.Regex.Matches(text, "g\\(ctb_spawn\\)").Count;
+        }
+        Console.WriteLine("spawn-roster-files=" + roster.Count + " spawn-roster-new-entries=" + added + " spawn-roster-skipped=" + rosterSkipped.Count + " icons=" + roster.Count(f => f.Path.EndsWith(".tga")));
+        foreach (var g in rosterSkipped.GroupBy(x => x.Substring(x.IndexOf(':') + 1).Trim().Split(':')[0]).OrderByDescending(g => g.Count()).Take(5)) Console.WriteLine("  spawn roster skipped " + g.Count() + "x: " + g.First());
+        T.Eq(0, bad, "rewritten rosters parse as well as the originals");
+        T.True(added > 0, "missing vehicles are added to the rosters");
     }
 }

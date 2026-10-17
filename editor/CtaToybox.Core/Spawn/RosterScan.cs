@@ -37,10 +37,10 @@ namespace CtaToybox.Core.Spawn
 
     public static class RosterScan
     {
-        static readonly Regex Skirmish = new Regex(@"^set/multiplayer/units/(early|mid|late)/units_([a-z]+)\.set$", RegexOptions.CultureInvariant);
-        static readonly Regex Inf = new Regex(@"^set/multiplayer/units/(early|mid|late)/inf_([a-z]+)\.set$", RegexOptions.CultureInvariant);
+        static readonly Regex Skirmish = new Regex(@"^set/multiplayer/units/(early|mid|late)/units_([a-z]+)(?:_[a-z0-9_]+)?\.set$", RegexOptions.CultureInvariant);
+        static readonly Regex Inf = new Regex(@"^set/multiplayer/units/(early|mid|late)/inf_([a-z]+)(?:_[a-z0-9_]+)?\.set$", RegexOptions.CultureInvariant);
 
-        // 스커미시 시기 로스터면 (시기, 국가), 아니면 null
+        // 스커미시 시기 로스터면 (시기, 국가), 아니면 null. 모드가 더한 꼬리도 같은 국가다(MACE late/inf_jap_mace_mp.set)
         public static (string Period, string Army)? SkirmishFile(string virtualPath)
         {
             var m = Skirmish.Match(SourceStack.ToVirtual(virtualPath));

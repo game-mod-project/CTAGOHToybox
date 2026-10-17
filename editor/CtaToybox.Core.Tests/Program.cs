@@ -125,6 +125,7 @@ static class Suites
         ("FactionPresetCli", FactionPresetCliTests.Run),
         ("SpawnWriter", SpawnWriterTests.Run),
         ("SpawnCatalog", SpawnCatalogTests.Run),
+        ("SpawnRoster", SpawnRosterTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),

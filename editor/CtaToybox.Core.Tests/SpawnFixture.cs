@@ -43,6 +43,7 @@ static class SpawnFixture
             ("properties/airborne.ext", "{x 1}\n"), ("set/breed/mp/ger/mid/artilleryman.set", "{breed {x 1}}\n"),
             ("set/multiplayer/games/presets/global_parameters/unitlimits.inc", "{unitLimits \"officer=2;limit4=4\"}\n"),
         };
+        set.RemoveAll(x => System.Array.Exists(extraSet, e => e.Name == x.Item1));   // 같은 경로는 넘긴 판으로 바꾼다
         set.AddRange(extraSet);
         T.Zip(Path.Combine(game, "resource", "gamelogic.pak"), set.ToArray());
         T.Zip(Path.Combine(game, "resource", "map", "single.pak"), ("single/02-ger/m1/0.mi", MissionText));
