@@ -152,3 +152,4 @@
 - 고친 버그: 프로젝트 합치기가 같은 원본 블록의 이름이 다른 블록 복제를 하나로 합쳐(월드워-차종의 필드 복제 3개 중 2개가 빠졌다) 이제 따로 둔다.
 - 미확인(게임 안 확인 없음): 더한 `health`·`rechargeTime` 줄이 매크로·원형 값을 이기는지, 두 `fuelbag` 가운데 어느 것이 쓰이는지, 컨퀘스트 AI MP가 플레이어 군대 값을 따라 커지는지, 스커미시 봇 배율이 시작 MP·CP에 곱해지는지.
 - 2026-10-17 사용자 실행에서 게임이 꺼졌다: "define not found > file "/set/stuff/bazooka/raketenwerfer43_ctb_ger" ("penetration_short" …)". 그 정의는 MACE pak의 `set/stuff/bazooka/.presets`에만 있다. 출력 모드에 그 폴더의 `.presets`가 없어서 출력 모드의 낱개 사본이 정의를 찾지 못한 것으로 보인다(추정: 게임이 파일과 같은 곳의 `.presets`를 읽는다). 빌드가 이제 쓴 파일의 폴더마다 이긴 판의 `.presets`를 바이트 그대로 같이 쓴다(13개 폴더). 고친 판이 게임에서 뜨는지는 확인하지 않았다.
+- 같은 날 두 번째로 꺼졌다: "pattern not found > file "/set/stuff/gun/20mm_flak38_x4_2_ctb_ger" {from "20mm_flak38_2"}". 원형 `20mm_flak38_2`는 MACE Wunderwaffe 폴더의 낱개 파일이다. 빌드가 이제 쓴 아이템 파일이 `{from}`으로 물려받는 파일(원형 사슬 전부)을 이긴 판 그대로 같이 쓴다(독일 판에서 `.pattern` 18개 포함). 출력 모드의 `{from}` 이름 281개가 모두 출력 모드 안의 파일로 풀리는 것을 확인했다. 게임에서 뜨는지는 확인하지 않았다.

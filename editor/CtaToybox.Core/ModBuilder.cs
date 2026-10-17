@@ -193,6 +193,28 @@ namespace CtaToybox.Core
                 }
                 foreach (var plan in plans) manifest.Files.AddRange(plan.Produced);
 
+                // 1-3a. 쓴 아이템 파일이 {from}으로 물려받는 파일(원형 사슬)을 이긴 판 그대로 같이 쓴다(2026-10-17 게임이 꺼졌다: 출력 모드의 사본
+                // set/stuff/gun/20mm_flak38_x4_2_ctb_ger의 {from "20mm_flak38_2"}가 "pattern not found". 원형은 MACE Wunderwaffe 폴더에만 있었다)
+                var writtenPaths = new HashSet<string>(manifest.Files.Select(f => f.Path.Substring("resource/".Length)), StringComparer.OrdinalIgnoreCase);
+                foreach (string written in writtenPaths.Where(p => p.StartsWith("set/stuff/", StringComparison.Ordinal)).OrderBy(p => p, StringComparer.Ordinal).ToList())
+                {
+                    var traced = (tracer ?? (tracer = new UnitTracer(stack))).Trace(written);
+                    if (traced == null) continue;
+                    foreach (var level in traced.From)
+                    {
+                        string parent = SourceStack.ToVirtual(level.File ?? "");
+                        if (parent.Length == 0 || writtenPaths.Contains(parent)) continue;
+                        var parentSource = stack.FindReal(parent);
+                        if (parentSource == null) continue;
+                        var produced = new List<BuildManifestFile>();
+                        string error;
+                        try { error = StageItem(new WorkItem { Output = parent, Source = parentSource, Always = true }, stage, previous, new List<EditResult>(), produced); }
+                        catch (Exception ex) { error = ex.Message; }
+                        if (error != null) report.FileErrors.Add(parent + ": " + error);
+                        else { manifest.Files.AddRange(produced); writtenPaths.Add(parent); }
+                    }
+                }
+
                 // 1-3. 쓴 파일의 폴더에 .presets가 있으면 이긴 판을 그대로 같이 쓴다(2026-10-17 게임이 꺼졌다: 출력 모드의 사본
                 // set/stuff/bazooka/raketenwerfer43_ctb_ger가 MACE pak의 bazooka/.presets에만 있는 "penetration_short"를 "define not found").
                 // 같은 내용이라 다른 파일이 읽는 정의는 그대로다
