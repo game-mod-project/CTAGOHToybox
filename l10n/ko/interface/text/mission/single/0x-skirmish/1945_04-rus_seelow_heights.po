@@ -35,31 +35,31 @@ msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"
-msgstr ""
+msgstr "증원 메뉴:"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/buys_on_after_flag"
 msgid "Units unlock permanently"
-msgstr ""
+msgstr "유닛이 영구 해금된다"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/name"
 msgid "Bloodshed at Seelow Heights"
-msgstr ""
+msgstr "젤로 고지의 유혈전"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/name_big"
 msgid "Bloodshed at Seelow Heights"
-msgstr ""
+msgstr "젤로 고지의 유혈전"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/story"
 msgid "Seelow heights, Oderbruch Offensive. The attack is about to begin. As usual, there will be a big artillery bombardment. Attack as soon as possible!\n\nGoals:\n - Clear the way to Berlin.\n - Destruction of the German 9th Army."
-msgstr ""
+msgstr "젤로 고지, 오더브루흐 공세. 공격이 곧 시작된다. 늘 그렇듯 대규모 포격이 있을 것이다. 가능한 한 빨리 공격하라!\n\n목표:\n - 베를린으로 가는 길을 열어라.\n - 독일 제9군을 격멸하라."
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/place"
 msgid "Seelow, Germany"
-msgstr ""
+msgstr "독일 젤로"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/date"
 msgid "April, 1945"
-msgstr ""
+msgstr "1945년 4월"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/outro_start"
 msgid ""
@@ -67,52 +67,52 @@ msgstr ""
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/outro_completed"
 msgid "Victory! The road to Berlin is now open. Good job!"
-msgstr ""
+msgstr "승리다! 베를린으로 가는 길이 열렸다. 잘했다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/outro_failed"
 msgid "Mission failed; enemy resistance was too much. We will have to try again!"
-msgstr ""
+msgstr "임무 실패. 적의 저항이 너무 강했다. 다시 도전해야 한다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/outro_failed_hq"
 msgid "Mission failed! - The enemy captured our HQ!"
-msgstr ""
+msgstr "임무 실패! - 적이 우리 본부를 점령했다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/mission_hq"
 msgid "You must hold your field HQ!"
-msgstr ""
+msgstr "야전 본부를 사수해야 한다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/mission_attack"
 msgid "Break through the Seelow Heights"
-msgstr ""
+msgstr "젤로 고지를 돌파하라"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/flag_capture_status"
 msgid "Your soldiers secured %1%/7 German positions!"
-msgstr ""
+msgstr "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/narrator_start0"
 msgid "You are now in the lair of the Beast! This is our field HQ, it must remain in our control!"
-msgstr ""
+msgstr "야수의 소굴에 들어왔다! 이곳이 우리 야전 본부다. 반드시 지켜야 한다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/narrator_start1"
 msgid "Comrade, you are tasked with breaching through these heavily defended heights. We must crush the Seelow defenses and drive on to Berlin!"
-msgstr ""
+msgstr "동무, 임무는 방어가 단단한 이 고지를 돌파하는 것이다. 젤로 방어선을 분쇄하고 베를린까지 진격해야 한다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/narrator_start2"
 msgid "The germans are planning to reinforce their lines with everything they've got! Make sure to flank them and overwhelm them with our numbers!"
-msgstr ""
+msgstr "독일군은 있는 것을 모두 쏟아 부어 전선을 보강할 계획이다! 측면을 치고 우리의 수로 압도하라!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/narrator_start3"
 msgid "Begin securing the objectives, you will get some reinforcements soon!"
-msgstr ""
+msgstr "목표 확보를 시작하라. 곧 증원이 도착한다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/allied_enemy_near_hq"
 msgid "Comrades! Germans are sneaking up on our Field HQ!"
-msgstr ""
+msgstr "동무들! 독일군이 우리 야전 본부로 몰래 접근하고 있다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/player_enemy_near_hq"
 msgid "We must hold this command post at all costs, or ruin the coordination of an entire army!"
-msgstr ""
+msgstr "이 지휘소를 반드시 사수해야 한다. 아니면 한 개 군 전체의 협조가 무너진다!"
 
 msgctxt "mission/single/01-rus_skirmish/1945_04-rus_seelow_heights/hq_bonus"
 msgid "Comrade! Now you can request an airstrike."
-msgstr ""
+msgstr "동무! 이제 공습을 요청할 수 있다."

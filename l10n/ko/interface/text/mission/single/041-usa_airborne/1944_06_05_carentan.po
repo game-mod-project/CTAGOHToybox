@@ -15,67 +15,67 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/date"
 msgid "June 12th, 1944 · Carentan, Normandy, France."
-msgstr ""
+msgstr "1944년 6월 12일 · 프랑스 노르망디, 카랑탕."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/lose_winters"
 msgid "Lt. Winters is dead!"
-msgstr ""
+msgstr "위터스 Lieutenant가 전사했다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/name"
 msgid "The Eagles and the Devils"
-msgstr ""
+msgstr "독수리와 악마"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/name_big"
 msgid "The Eagles and the Devils"
-msgstr ""
+msgstr "독수리와 악마"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator02"
 msgid "Move men! Get out of the ditch! Go!"
-msgstr ""
+msgstr "움직여라! 도랑에서 나와! 가라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator03"
 msgid "The crossroads are secure! Move north along the road to the center of town. Let's move out!"
-msgstr ""
+msgstr "교차로를 확보했다! 도로를 따라 북쪽 시내 중심으로 이동한다. 출발!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator04"
 msgid "We've got no cover here! Move! Move!"
-msgstr ""
+msgstr "여기엔 엄폐물이 없다! 움직여! 움직여!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator05"
 msgid "We need to hit those mortars fast, or they'll rip us apart!"
-msgstr ""
+msgstr "저 박격포를 빨리 치지 않으면 우리가 갈기갈기 찢긴다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator06"
 msgid "Look alive! A fresh squad here to join the fight."
-msgstr ""
+msgstr "정신 차려라! 새 분대가 전투에 합류한다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator07"
 msgid "Left flank is clear!"
-msgstr ""
+msgstr "좌측방 정리 완료!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator08"
 msgid "Gardens on the right are secure!"
-msgstr ""
+msgstr "우측 정원 확보했다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator09"
 msgid "We have managed to clear everything south of this railway! We've observed enemy movement in the town, they appear to be preparing to counterattack."
-msgstr ""
+msgstr "이 철길 남쪽은 전부 소탕했다! 시내에서 적의 움직임이 관측된다. 반격을 준비하는 듯하다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator10"
 msgid "Our Weapons Platoon has caught up to us. Get them set in and prepare to defend our position."
-msgstr ""
+msgstr "화기 소대가 따라붙었다. 배치해서 진지 방어를 준비해라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator11"
 msgid "Enemy mortars! Take cover!"
-msgstr ""
+msgstr "적 박격포다! 엄폐해라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator13"
 msgid "Friendly glider troops coming from the North-West!"
-msgstr ""
+msgstr "북서쪽에서 아군 글라이더 부대가 온다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator14"
 msgid "Kraut Halftrack!"
-msgstr ""
+msgstr "독일 놈들 반궤도차다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator15"
 msgid "Go, go, go!"
@@ -83,95 +83,95 @@ msgstr "가, 가, 가!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator17"
 msgid "Be careful with that, Trooper!"
-msgstr ""
+msgstr "조심해서 다뤄, Trooper!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator18"
 msgid "We've got orders to set up defenses on the high ground to the west of town. We're not going to wait around here for another counterattack."
-msgstr ""
+msgstr "마을 서쪽 고지대에 방어 진지를 구축하라는 명령이 떨어졌다. 여기서 또 반격을 기다리고 있지는 않겠다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator19"
 msgid "Well you just take it easy, Lip. We'll get you out of here and back to England."
-msgstr ""
+msgstr "그래, 진정해라, 립. 널 여기서 빼내서 영국으로 돌려보내 주마."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_lipton01"
 msgid "Don't worry about me, Sir. I'll be back before long."
-msgstr ""
+msgstr "저는 걱정 마십시오. 곧 돌아오겠습니다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier01"
 msgid "It seems quiet, Sir."
-msgstr ""
+msgstr "조용한 것 같습니다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier02"
 msgid "Look, Sir! They're pulling back!"
-msgstr ""
+msgstr "보십시오! 놈들이 물러납니다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier03"
 msgid "Jerry is retreating again!"
-msgstr ""
+msgstr "독일 놈들이 또 후퇴합니다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier04"
 msgid "Those Krauts have had enough!"
-msgstr ""
+msgstr "저 독일 놈들, 이제 질렸나 봅니다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier05"
 msgid "Hey, check this out! Jerry was too busy runnin’ to take this with ‘em!"
-msgstr ""
+msgstr "이거 보십시오! 독일 놈들이 도망치느라 이걸 두고 갔습니다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier06"
 msgid "This area of town is secure! What do we have planned next, Sir?"
-msgstr ""
+msgstr "이 구역은 확보됐습니다! 다음 계획은 뭡니까?"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier07"
 msgid "Take cover! Enemy machine gun!"
-msgstr ""
+msgstr "엄폐해라! 적 기관총이다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/outro_completed"
 msgid "Well done! With Carentan secured, our forces at Omaha and Utah are now linked. With this continuous beachhead, our forces can break out and take control of the Cotentin peninsula."
-msgstr ""
+msgstr "잘했다! 카랑탕을 확보하면서 오마하와 유타의 아군이 연결되었다. 끊김 없는 교두보 덕분에 아군은 돌파해 코탕탱 반도를 장악할 수 있다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/outro_failed"
 msgid "We failed! Carentan remains in German hands, preventing our forces on Utah and Omaha beaches from linking up. You must try again!"
-msgstr ""
+msgstr "실패했다! 카랑탕은 여전히 독일군 손에 있어 유타와 오마하 해변의 아군이 합류하지 못한다. 다시 도전하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/place"
 msgid "101st Airborne Division \"Screaming Eagles\""
-msgstr ""
+msgstr "제101공수사단 \"비명을 지르는 독수리\""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/situation1"
 msgid "D-Day +6, 06:00h"
-msgstr ""
+msgstr "D-데이 +6, 06:00시"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/story"
 msgid "  It's been almost a week since you parachuted into France, and it’s been one hell of a week. The Germans are not ready to give up Normandy, and several fierce counterattacks have proven that this battle is far from over.\n\n  It’s clear that whoever holds Carentan, holds the key to the Cotentin peninsula. If the 101st takes Carentan, our Utah and Omaha Beach forces can unite to form a continuous front.\n\n  Your regiment, the 506th PIR, will approach Carentan from the south. Your orders are to take the Carentan railway station. In support of your push, the 401st Glider Infantry Regiment will attack from the opposite side of town.\n\n Good luck!"
-msgstr ""
+msgstr "  프랑스에 낙하한 지 거의 일주일이 지났고, 정말 지독한 한 주였다. 독일군은 노르망디를 포기할 생각이 없으며, 몇 차례 격렬한 반격은 이 전투가 결코 끝나지 않았음을 보여 주었다.\n\n  카랑탕을 쥐는 쪽이 코탕탱 반도의 열쇠를 쥔다는 것은 분명하다. 제101사단이 카랑탕을 점령하면 유타와 오마하 해변의 아군이 하나로 이어진 전선을 만들 수 있다.\n\n  당신의 연대, 제506 PIR은 남쪽에서 카랑탕에 접근한다. 명령은 카랑탕 철도역을 점령하는 것이다. 이 공격을 지원하기 위해 제401 글라이더 보병 연대가 시내 반대편에서 공격한다.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task1"
 msgid "Neutralize the enemy MG42 and clear the crossroads!"
-msgstr ""
+msgstr "적 MG42를 제압하고 교차로를 소탕하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task2"
 msgid "Clear the road heading to the center of Carentan!"
-msgstr ""
+msgstr "카랑탕 중심으로 향하는 도로를 소탕하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task3"
 msgid "Neutralize enemy mortars in the gardens!"
-msgstr ""
+msgstr "정원의 적 박격포를 제압하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task4"
 msgid "Prepare to defend your position!"
-msgstr ""
+msgstr "진지 방어를 준비하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task5"
 msgid "Defend your position until reinforcements arrive!"
-msgstr ""
+msgstr "증원이 도착할 때까지 진지를 지켜라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task6"
 msgid "Neutralize enemy mortars in the town!"
-msgstr ""
+msgstr "시내의 적 박격포를 제압하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task7"
 msgid "Link up with allied Glider troops and capture enemy HQ!"
-msgstr ""
+msgstr "아군 글라이더 부대와 합류하고 적 본부를 점령하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_secret"
 msgid "Secret Objective #1"
@@ -179,20 +179,20 @@ msgstr "비밀 목표 1"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_secret_comp"
 msgid "(Secret Objective #1) Find the German rocket artillery."
-msgstr ""
+msgstr "(비밀 목표 #1) 독일군 로켓 포병을 찾아라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_winters"
 msgid "Lt. Winters must survive."
-msgstr ""
+msgstr "위터스 Lieutenant를 살려라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_heal_winters"
 msgid "Treat Lt. Winters before he bleeds to death!"
-msgstr ""
+msgstr "위터스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/timer"
 msgid "Prepare for an enemy counterattack:"
-msgstr ""
+msgstr "적 반격에 대비하라:"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/timer2"
 msgid "Defend your position!"
-msgstr ""
+msgstr "진지를 지켜라!"

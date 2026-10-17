@@ -15,351 +15,351 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/name"
 msgid "Pegasus Bridge"
-msgstr ""
+msgstr "페가수스 다리"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/name_big"
 msgid "Pegasus Bridge"
-msgstr ""
+msgstr "페가수스 다리"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/outro_completed"
 msgid "Victory is ours, you have done an outstanding job. This will show Jerry what we’re capable of. The invasion beaches will not be threatened by flanking attacks!"
-msgstr ""
+msgstr "승리했다, 훌륭하게 해냈다. 제리 놈들에게 우리가 무엇을 할 수 있는지 똑똑히 보여 줬다. 상륙 해안은 측면 공격의 위협을 받지 않을 것이다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/outro_failed"
 msgid "Alas there is no success to be reported. The invasion beaches will be vulnerable to counterattacks as a result, and there is little we can do to prevent that. We must try again immediately!"
-msgstr ""
+msgstr "안타깝게도 보고할 성공이 없다. 그 결과 상륙 해안은 반격에 취약해졌고, 이를 막을 방법도 거의 없다. 즉시 다시 시도해야 한다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/date"
 msgid "June 6th, 1944 · Normandy, France"
-msgstr ""
+msgstr "1944년 6월 6일 · 프랑스 노르망디"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/place"
 msgid "6th Airlanding Brigade"
-msgstr ""
+msgstr "제6공수상륙여단"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/story"
 msgid "To protect the invasion against German flanking attacks, a couple of bridges East of the beaches must be secured. \n\n This task has been assigned to the British 6th Airborne Brigade. They are to seize the bridge over the Caen canal and the nearby bridge over the Orne river. \n\nMonths of training proved to be invaluable as the pilot landed the glider right at the bridge over the Orne canal. \n\n Time to spring into action! First, chase the Germans out and secure Bénouville Bridge."
-msgstr ""
+msgstr "상륙 작전을 독일군의 측면 공격으로부터 지키려면 해안 동쪽의 다리 몇 곳을 확보해야 한다.\n\n이 임무는 영국 제6공수여단에 맡겨졌다. 캉 운하 위의 다리와 인근 오른강 위의 다리를 점령해야 한다.\n\n몇 달간의 훈련은 조종사가 글라이더를 오른 운하 다리 바로 옆에 착륙시키면서 값어치를 입증했다.\n\n이제 행동할 때다! 먼저 독일군을 몰아내고 베누빌 다리를 확보하라."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/gameover/defense"
 msgid "You could not hold your positions."
-msgstr ""
+msgstr "진지를 지키지 못했다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/gameover/pl_dead"
 msgid "You lost all of your units."
-msgstr ""
+msgstr "유닛을 모두 잃었다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_01"
 msgid "The pilots almost got us killed faster than Jerry could! Is everyone alright? Get your stuff and get out."
-msgstr ""
+msgstr "조종사들 때문에 제리보다 먼저 죽을 뻔했다! 다들 괜찮나? 짐 챙겨서 나와라."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_02"
 msgid "This bridge is what it’s all about. We have to capture and hold it until our reinforcements arrive."
-msgstr ""
+msgstr "이 다리가 핵심이다. 증원군이 올 때까지 점령하고 지켜야 한다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_03"
 msgid "Thank God Jerry didn't hear us landing. Let's keep it that way."
-msgstr ""
+msgstr "제리가 착륙 소리를 못 들어서 다행이다. 계속 그렇게 두자."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_04"
 msgid "Sir, there's a pillbox up ahead. Could be a right pain. Best knock it out first."
-msgstr ""
+msgstr "중위님, 앞에 토치카가 있습니다. 골칫거리가 될 수 있으니 먼저 처리하는 게 좋겠습니다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_05"
 msgid "Right, here's the plan: my section will take up positions overlooking the pillbox and provide covering fire, so your men can approach the bridge."
-msgstr ""
+msgstr "좋아, 계획은 이렇다. 내 분대가 토치카가 내려다보이는 곳에 자리 잡고 엄호 사격을 하겠다. 그동안 자네 부하들이 다리로 접근해라."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_ally_on_position"
 msgid "We're in place and ready to pin that pillbox down. Say the word."
-msgstr ""
+msgstr "위치에 도착했고 토치카를 제압할 준비가 됐다. 신호만 내려라."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_player_spotted"
 msgid "We’ve been spotted! Everyone, open fire!"
-msgstr ""
+msgstr "들켰다! 전원 사격 개시!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_shots_fired"
 msgid "Why didn’t you wait for us?! Return fire!"
-msgstr ""
+msgstr "왜 기다리지 않았나?! 응사해라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_bunker_suppressed"
 msgid "Brilliant work! That pillbox is quiet."
-msgstr ""
+msgstr "훌륭하다! 토치카가 조용해졌다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_pl_see_mgun"
 msgid "There’s an MG on the other side! Someone take it out so we can cross the canal!"
-msgstr ""
+msgstr "맞은편에 기관총이 있다! 누가 처리해라, 그래야 운하를 건널 수 있다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_enemy_retreat"
 msgid "Look at ‘em legging it! Not a bad start to the morning, ha?"
-msgstr ""
+msgstr "줄행랑치는 꼴 좀 봐라! 아침 시작치고 나쁘지 않군, 안 그래?"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_kwk_crew_killed"
 msgid "Smart move out there. One less headache to worry about."
-msgstr ""
+msgstr "잘했다. 골칫거리 하나가 줄었다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_bridge_cleared"
 msgid "The bridge is ours. Keep focused, I’m sure there will be more of them."
-msgstr ""
+msgstr "다리는 우리 것이다. 집중해라, 놈들이 더 올 게 분명하다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_01"
 msgid "It seems like Jerry hasn’t rigged the bridge with explosives, I’d wager they have them stashed somewhere nearby. Let’s have a look around."
-msgstr ""
+msgstr "제리가 다리에 폭약을 설치하지 않은 모양이다. 근처 어딘가에 숨겨 뒀을 거다. 주변을 살펴보자."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_02"
 msgid "Look, some lads from the other landing zone have arrived."
-msgstr ""
+msgstr "봐라, 다른 착륙 지점에서 온 병사들이 도착했다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_03"
 msgid "One PIAT? That’s it? Are they having a laugh?!"
-msgstr ""
+msgstr "PIAT 한 정? 그게 다냐? 장난하나?!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_04"
 msgid "I can tell them to turn around if you wish, Lieutenant."
-msgstr ""
+msgstr "원하시면 돌아가라고 말하겠습니다, Lieutenant."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_05"
 msgid "I reckon it’s better than nothing. Still, this guy better treat that PIAT like it’s his firstborn."
-msgstr ""
+msgstr "없는 것보다는 낫겠지. 그래도 저 친구, PIAT를 맏아들처럼 다뤄야 할 거다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_06"
 msgid "Looks like that's the last of them. The bridge is clear, area secure, and Jerry is running away. Well done! Now back to the bridge. Squad leader’s meeting in 10."
-msgstr ""
+msgstr "이게 마지막인 것 같다. 다리는 깨끗하고, 지역은 확보됐고, 제리는 도망치고 있다. 잘했다! 이제 다리로 돌아가라. 10분 뒤 분대장 회의다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/hint_civilians_01"
 msgid "Let’s see if there are some locals around, they might know where Jerry keeps his ammo."
-msgstr ""
+msgstr "근처에 현지인이 있는지 찾아보자. 제리가 탄약을 어디에 두는지 알지도 모른다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/pl_see_hotel_mgun"
 msgid "MG! Hotel building, first floor, get to cover!"
-msgstr ""
+msgstr "기관총이다! 호텔 건물 1층, 엄폐해라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/flak38_see"
 msgid "Heads up, anti-air spotted in the field! Knock it out so our boys in the sky can breathe easy!"
-msgstr ""
+msgstr "조심해라, 들판에 대공포가 있다! 하늘의 아군이 안심하고 숨 쉴 수 있게 처리해라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/flak38_hint_destroy"
 msgid "We need to take out that Flak. Use a PIAT or find some explosives. Anything that we can use to disable it."
-msgstr ""
+msgstr "저 Flak를 제거해야 한다. PIAT를 쓰거나 폭약을 찾아라. 무력화할 수 있는 건 뭐든 좋다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/flak38_destroyed"
 msgid "Nice one! That bloody Flak won't bother anyone again!"
-msgstr ""
+msgstr "좋았다! 저 빌어먹을 Flak는 이제 아무도 괴롭히지 못한다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/fake_explosives_01"
 msgid "Check this out! I reckon these are the explosives meant for the bridge."
-msgstr ""
+msgstr "이것 좀 봐라! 다리용 폭약인 것 같다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/fake_explosives_02"
 msgid "Not the charges... But have a look, perhaps we’ll find something handy."
-msgstr ""
+msgstr "폭약은 아니다… 하지만 살펴봐라, 쓸 만한 게 나올지도 모른다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/explosives_found"
 msgid "Here they are! Take care of those charges. One hand grenade near the vehicle might be enough to blow it up."
-msgstr ""
+msgstr "찾았다! 저 폭약을 처리해라. 차량 가까이에 수류탄 한 발이면 터뜨리기에 충분할 거다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/explosives_destroyed"
 msgid "Blimey, were they planning to blow up half of Normandy or what?!"
-msgstr ""
+msgstr "이런, 노르망디 절반을 날려 버릴 작정이었나?!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_01"
 msgid "Excusez-moi, monsieur... Seen any Allemania explosives? Satchels, grenades, that sort?"
-msgstr ""
+msgstr "실례합니다, 선생님… 독일 폭약 못 보셨습니까? 폭약 가방이나 수류탄 같은 거요."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_02"
 msgid "(French) No, no, monsieur, there must be some mistake. I am not sheltering enemies of the Reich."
-msgstr ""
+msgstr "(프랑스어) 아니요, 아니요, 선생님, 뭔가 착오가 있나 봅니다. 저는 제국의 적을 숨겨 주지 않습니다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_03"
 msgid "Nah, mate, we're British! Tea, football, England! Aight, look... Explosives, Boche ammunition! We need that sort of a thing, you get it?"
-msgstr ""
+msgstr "아니, 이봐요, 우린 영국인이오! 홍차, 축구, 잉글랜드! 자, 보시오… 폭약, 독일 놈들 탄약! 그런 게 필요하오, 알겠소?"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_04"
 msgid "Ah, oui, oui, of course! Here small depot, but les Boches, they take it away. Dominique, mon voisin, he is résistant, watch the depot, oui? Now he is in the stable… Eh… West… Big box! Box en bois, comprendre? Wood box! He have eyes like un faucon and moustache… Long, very long, jusqu’à Marseille! Good luck, les Anglais, merci!"
-msgstr ""
+msgstr "아, 위, 위, 물론이죠! 여기 작은 창고, 하지만 독일 놈들, 가져갔어요. 도미니크, 내 이웃, 그는 레지스탕스, 창고를 지켰어요, 위? 지금 그는 마구간에… 어… 서쪽… 큰 상자! 나무 상자, 알겠어요? 나무 상자! 그는 매 같은 눈에 콧수염… 길고, 아주 길어요, 마르세유까지! 행운을 빌어요, 영국 분들, 고마워요!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_05"
 msgid "Alright then... Got it. Thank you, monsieur. And stay safe out there."
-msgstr ""
+msgstr "좋소, 알겠소. 감사합니다, 선생님. 몸조심하시오."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/hint_civilians_02"
 msgid "Reckon he means the barn west of here. There is another civvie. Sharp eyes, big moustache. Bet he knows more about the charges."
-msgstr ""
+msgstr "여기서 서쪽에 있는 헛간을 말하는 것 같다. 거기 다른 민간인이 있다. 눈매가 날카롭고 콧수염이 큰 사람이다. 폭약에 대해 더 알 거다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_06"
 msgid "You're Dominique? Moustache down to Marseilie, eyes like falcon? Yeah, you match the description."
-msgstr ""
+msgstr "도미니크 맞소? 마르세유까지 닿는 콧수염에 매 같은 눈이라던데? 그래, 인상착의가 딱 맞소."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_07"
 msgid "Oui, je suis Dominique! You are… Des soldats anglais, yes?"
-msgstr ""
+msgstr "위, 제가 도미니크예요! 당신들은… 영국 군인, 맞죠?"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_08"
 msgid "Monsieur, where did they take the ammo? We need the German explosives."
-msgstr ""
+msgstr "선생님, 탄약을 어디로 가져갔습니까? 독일 폭약이 필요합니다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_09"
 msgid "When you, les Anglais, you come and make noise, ze Boches, zey move ze ammo, oui? They take it... How you say... Plus loin, more far. Suivez-moi? Moi show you!"
-msgstr ""
+msgstr "당신들 영국인이 와서 소란 피우면, 독일 놈들, 탄약을 옮겨요, 위? 가져갔어요… 뭐라고 하죠… 더 멀리, 더 먼 곳. 따라오세요? 제가 보여 줄게요!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_10"
 msgid "But écoutez, if ze soldats allemands are here… You shoot, d’accord?"
-msgstr ""
+msgstr "하지만 들어요, 독일 군인이 여기 있으면… 쏘세요, 알겠죠?"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_11"
 msgid "Clear out Germans by that barn, and he'll show us where they stashed the charges."
-msgstr ""
+msgstr "저 헛간 근처의 독일군을 쓸어 내라. 그러면 폭약을 어디에 숨겼는지 보여 줄 거다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_12"
 msgid "Ça semble sûr maintenant. Come on, go with me!"
-msgstr ""
+msgstr "이제 안전해 보여요. 갑시다, 나와 함께 가요!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_01"
 msgid "The Germans will be here even sooner than you think. Set up defensive positions. Don’t let them come too close to the bridge. We do not have enough manpower to attack this riverside one more time."
-msgstr ""
+msgstr "독일군은 생각보다 더 빨리 올 것이다. 방어 진지를 구축해라. 다리에 너무 가까이 접근하지 못하게 해라. 이 강변을 다시 공격할 병력은 없다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_02"
 msgid "They're here! Hold the line and keep them off the bridge!"
-msgstr ""
+msgstr "놈들이 왔다! 전선을 지키고 다리에서 떼어 놓아라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_03"
 msgid "I’m trying to raise sections from the other landing zones. They might be able to support us. Hold tight until then."
-msgstr ""
+msgstr "다른 착륙 지점의 분대와 연락을 시도하고 있다. 지원해 줄 수 있을지 모른다. 그때까지 버텨라."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_04"
 msgid "We did it, they’re pulling back!"
-msgstr ""
+msgstr "해냈다, 놈들이 물러난다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_btr_spawned"
 msgid "Heads up, a half-track incoming!"
-msgstr ""
+msgstr "조심해라, 하프트랙이 접근한다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_btr_destroyed"
 msgid "Good, the half-track is sorted."
-msgstr ""
+msgstr "좋아, 하프트랙은 처리했다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_armor_t1_spawned"
 msgid "Another one rollin' in! Get the PIAT! And if you’re out, find grenades or something, quick!"
-msgstr ""
+msgstr "또 한 대가 굴러온다! PIAT를 가져와라! 없으면 수류탄이든 뭐든 빨리 찾아라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_armor_t1_destroyed"
 msgid "Well done, that'll make 'em think twice before pushing again."
-msgstr ""
+msgstr "잘했다, 이러면 다시 밀고 들어오기 전에 두 번 생각할 거다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_ammo_out_01"
 msgid "I'm dry! I need a fresh mag!"
-msgstr ""
+msgstr "탄이 떨어졌다! 새 탄창이 필요하다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_ammo_out_02"
 msgid "We are running out of ammunition. Take a look around, you'll probably find some weapon crates left by the Germans."
-msgstr ""
+msgstr "탄약이 떨어지고 있다. 주변을 살펴봐라, 독일군이 두고 간 무기 상자가 있을 거다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_pl_reinf"
 msgid "A squad from another landing zone has arrived. We’ve expected the ground forces but they will work for now too. I reckon they’ve just increased our chances of holding this bridge."
-msgstr ""
+msgstr "다른 착륙 지점에서 분대가 도착했다. 지상군을 기다렸지만 일단 이들로도 충분하다. 이 다리를 지킬 가능성이 높아졌다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_preparation"
 msgid "Grab any ammo you can. Search the crates, buildings… Bodies… The Germans could hit us any minute."
-msgstr ""
+msgstr "구할 수 있는 탄약은 전부 챙겨라. 상자, 건물… 시체도 뒤져라… 독일군이 언제든 칠 수 있다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_mortars_offmap_started"
 msgid "Incoming mortar! Get to cover!"
-msgstr ""
+msgstr "박격포탄 접근! 엄폐해라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_mortars_offmap_done"
 msgid "They’ve stopped shooting. Means they’re on the move. Get ready, lads!"
-msgstr ""
+msgstr "사격이 멈췄다. 이동 중이라는 뜻이다. 준비해라, 제군들!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_mortar_on_pos"
 msgid "They’ve deployed a mortar to the northwest of us! Get rid of it before it buries all of us under this damn bridge!"
-msgstr ""
+msgstr "북서쪽에 박격포를 배치했다! 놈이 우리를 이 빌어먹을 다리 밑에 파묻기 전에 제거해라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_attack_south_01"
 msgid "The Germans are moving in from the south! Make sure this flank is secured, don’t let them surround us!"
-msgstr ""
+msgstr "독일군이 남쪽에서 들어온다! 이 측면을 확보해라, 포위당하게 두지 마라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_attack_north_01"
 msgid "They’re pushing in from the north! Bloody hell, if they break through, that squad of ours and the entire flank are in real trouble!"
-msgstr ""
+msgstr "북쪽에서 밀고 들어온다! 젠장, 돌파당하면 우리 분대와 측면 전체가 정말 위험해진다!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_at_on_position"
 msgid "Eyes on the western direction, lads! They’ve brought in an AT gun."
-msgstr ""
+msgstr "서쪽을 주시해라, 제군들! 대전차포를 가져왔다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_commandos_arrived"
 msgid "Just look who finally decided to show up! Commandos! These guys are as tough as they come. Now it's Jerry who's got the problem. Let's destroy the remaining attacking forces together."
-msgstr ""
+msgstr "마침내 누가 나타났나 봐라! 코만도다! 이 친구들은 최고로 강하다. 이제 제리가 곤란해질 차례다. 남은 공격 부대를 함께 쓸어버리자."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/bridge_captured"
 msgid "We lost the Bridge! Get over there and take it back, now!"
-msgstr ""
+msgstr "다리를 빼앗겼다! 당장 가서 되찾아라!"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/bridge_recaptured"
 msgid "Good, the bridge is ours again. I nearly got a heart attack."
-msgstr ""
+msgstr "좋아, 다리가 다시 우리 것이다. 심장마비로 죽는 줄 알았다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/b33r"
 msgid "Quenching thirst at work? Since when have you become Irish?"
-msgstr ""
+msgstr "근무 중에 목을 축이나? 언제부터 아일랜드 사람이 됐나?"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cafe"
 msgid "Café Goon… Goon-dry? Christ, sounds like something you catch, not drink. Ah, Gondrée. Bloody French."
-msgstr ""
+msgstr "카페 군… 군-드리? 맙소사, 마시는 게 아니라 걸리는 병 이름 같군. 아, 공드레. 빌어먹을 프랑스어."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/ushanka"
 msgid "Have the Soviets really got such hats? No way they are seriously wearing furry rotten teabags on their heads."
-msgstr ""
+msgstr "소련 놈들이 정말 저런 모자를 쓰나? 털 달린 썩은 티백을 머리에 쓰고 다닐 리가 없다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_01"
 msgid "You’re telling me they are so late because were dragging the damn orchestra?.."
-msgstr ""
+msgstr "늦은 이유가 빌어먹을 오케스트라를 끌고 오느라 그랬다는 말인가?.."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_02"
 msgid "Gentlemen, frightfully sorry for the terrible delay. Traffic on the beaches was nothing short of murderous."
-msgstr ""
+msgstr "여러분, 지독히 늦어서 정말 죄송합니다. 해변 교통이 살인적이었습니다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_03"
 msgid "Great to see you here, your lordship. We managed so far, but now we’re at the end of our tether to be honest."
-msgstr ""
+msgstr "와 주셔서 반갑습니다, 각하. 지금까지는 버텼지만 솔직히 이제 한계입니다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_04"
 msgid "You have held this sector with remarkable resolve. An exceptional achievement indeed. I shall raise the matter of your promotion with Command. They already owe you a proper drink, preferably something French."
-msgstr ""
+msgstr "이 구역을 놀라운 결의로 지켜 내셨습니다. 실로 대단한 업적입니다. 사령부에 여러분의 진급 건을 건의하겠습니다. 사령부는 이미 여러분께 제대로 된 술 한잔을 빚졌습니다. 가능하면 프랑스산으로요."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_05"
 msgid "We’ll agree to anything spirit-based, your lordship. Even if it tastes like petrol."
-msgstr ""
+msgstr "독한 술이라면 뭐든 좋습니다, 각하. 휘발유 맛이 나더라도요."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_06"
 msgid "But you sound dreadfully weary, gentlemen. To your good fortune, we brought some sleeping bags. Have a rest chaps, before sheer exhaustion claims you."
-msgstr ""
+msgstr "하지만 몹시 지쳐 보이는군요, 여러분. 다행히 침낭을 가져왔습니다. 극심한 피로에 쓰러지기 전에 좀 쉬십시오."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_07"
 msgid "I reckon that’s even better than a wine. And my back… It’s so numb. Thank you, Milord."
-msgstr ""
+msgstr "와인보다 낫겠습니다. 등이… 감각이 없을 지경이었는데. 감사합니다, 각하."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_08"
 msgid "I shan’t trouble you any longer. Worry not, we’ll take care of it."
-msgstr ""
+msgstr "더는 폐를 끼치지 않겠습니다. 걱정 마십시오, 나머지는 우리가 맡겠습니다."
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/01_clear"
 msgid "Take control of the Bénouville bridge"
-msgstr ""
+msgstr "베누빌 다리를 점령하라"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/02_explosives"
 msgid "Find and neutralize the demolition charges"
-msgstr ""
+msgstr "폭파 장치를 찾아 무력화하라"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/04_flak38"
 msgid "Destroy the 20mm anti-air gun"
-msgstr ""
+msgstr "20mm 대공포를 파괴하라"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/05_bridge_night"
 msgid "Defeat the enemy counterattack"
-msgstr ""
+msgstr "적의 반격을 격퇴하라"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/06_bridge_morning"
 msgid "Hold the bridge until relieved"
-msgstr ""
+msgstr "교대할 때까지 다리를 지켜라"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret01_civilians"
 msgid "Secret objective #1"
@@ -367,7 +367,7 @@ msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret01_civilians_completed"
 msgid "Secret objective: A guy with big Moustache - Ask civilians for help"
-msgstr ""
+msgstr "비밀 목표: 콧수염 큰 남자 - 민간인에게 도움을 청했다"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret02_ushanka"
 msgid "Secret objective #2"
@@ -375,15 +375,15 @@ msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret02_ushanka_completed"
 msgid "Secret objective: Ostfront Trophies - Put an Ushanka hat on while having a beer crate in hands"
-msgstr ""
+msgstr "비밀 목표: 동부전선 전리품 - 맥주 상자를 든 채 우샨카 모자를 썼다"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret03_kwk"
 msgid "Secret objective #3"
-msgstr ""
+msgstr "비밀 목표 #3"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret03_kwk_completed"
 msgid "Secret objective: Hands off! - Eliminate the KwK 39 crew before they board the gun"
-msgstr ""
+msgstr "비밀 목표: 손 떼! - KwK 39 승무원이 포에 탑승하기 전에 제거했다"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/skip_preparation"
 msgid "Skip preparation"
@@ -391,8 +391,8 @@ msgstr "준비 생략"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/timer_bridge_lost"
 msgid "<c(B29557)>Take back the positions</c>"
-msgstr ""
+msgstr "<c(B29557)>진지를 되찾아라</c>"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/timer_preparation"
 msgid "German counterattack"
-msgstr ""
+msgstr "독일군의 반격"

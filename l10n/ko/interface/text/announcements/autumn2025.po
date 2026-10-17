@@ -15,4 +15,4 @@ msgstr ""
 
 msgctxt "announce_autumn2025"
 msgid "Welcome back to the battlefield, Soldiers. New update 60 inbound!\n\nWe have optimized <c(f5d167)>MULTIPLAYER</c> memory consumption and loading times, more <c(f5d167)>ANIMATION</c> improvements, new features to control your vehicle's <c(f5d167)>REVERSE</c> motion, and more!.\n\n Thank you for your continued support."
-msgstr ""
+msgstr "전장에 돌아온 것을 환영한다, 병사들이여. 업데이트 60이 도착한다!\n\n<c(f5d167)>멀티플레이</c> 메모리 사용량과 로딩 시간을 최적화했고, <c(f5d167)>애니메이션</c> 개선, 차량의 <c(f5d167)>후진</c> 제어 신기능 등을 더했다!\n\n 변함없는 성원에 감사드린다."

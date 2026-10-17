@@ -35,31 +35,31 @@ msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"
-msgstr ""
+msgstr "증원 메뉴:"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/buys_on_after_flag"
 msgid "Units unlock permanently"
-msgstr ""
+msgstr "유닛이 영구 해금된다"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/name"
 msgid "Operation Cobra [SKIRMISH]"
-msgstr ""
+msgstr "코브라 작전 [스커미시]"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/name_big"
 msgid "Operation Cobra"
-msgstr ""
+msgstr "코브라 작전"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/story"
 msgid "Combat Command B, 3rd Armored Division - Operation Cobra.\n\nGentlemen, today the 3rd Armored Division will punch deep into enemy territory.\n\nGoals: \n - Break through the German lines.\n - Capture Marigny."
-msgstr ""
+msgstr "제3기갑사단 B 전투지휘부 - 코브라 작전.\n\n제군, 오늘 제3기갑사단은 적진 깊숙이 파고든다.\n\n목표: \n - 독일군 전선을 돌파하라.\n - 마리니를 점령하라."
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/place"
 msgid "Outskirts of Marigny"
-msgstr ""
+msgstr "마리니 외곽"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/date"
 msgid "July, 1944"
-msgstr ""
+msgstr "1944년 7월"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/outro_start"
 msgid ""
@@ -67,60 +67,60 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/outro_completed"
 msgid "Well done! This was the best result we could have expected. HQ will be pleased with your reports."
-msgstr ""
+msgstr "잘했다! 기대할 수 있는 최선의 결과다. 본부가 자네의 보고에 만족할 것이다."
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/outro_failed"
 msgid "That's quite unexpected! What happened? We need to win this one for Ike!"
-msgstr ""
+msgstr "이건 정말 뜻밖이군! 무슨 일이 있었나? 아이크를 위해서라도 이번에는 이겨야 한다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/outro_failed_hq"
 msgid "That borders on disaster. We failed to secure a win, you need to go back and get another effort going!"
-msgstr ""
+msgstr "이건 재앙에 가깝다. 승리를 확보하지 못했다. 돌아가서 다시 공세를 시작해야 한다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/mission_hq"
 msgid "You must hold your field HQ!"
-msgstr ""
+msgstr "야전 본부를 사수해야 한다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/mission_attack"
 msgid "Punch a hole in the enemy position and drive north!"
-msgstr ""
+msgstr "적 진지에 구멍을 내고 북쪽으로 진격하라!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/flag_capture_status"
 msgid "Your soldiers secured %1%/7 German positions!"
-msgstr ""
+msgstr "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/narrator_start0"
 msgid "Welcome back to the front line, Lieutenant! This is our field HQ, it must remain in our control!"
-msgstr ""
+msgstr "전선에 돌아온 것을 환영한다, Lieutenant! 여기가 우리 야전 본부다. 반드시 우리가 장악하고 있어야 한다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/narrator_start1"
 msgid "Operation Cobra is in full swing, a swift assault is necessary to breach through the German lines."
-msgstr ""
+msgstr "코브라 작전이 한창이다. 독일군 전선을 뚫으려면 신속한 강습이 필요하다."
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/narrator_start2"
 msgid "Be quick, be decisive, and try not to lose too many men! Use the terrain to your advantage."
-msgstr ""
+msgstr "빠르고 과감하게 움직여라. 그리고 병력을 너무 잃지 않도록 해라! 지형을 이용해라."
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/narrator_start3"
 msgid "More reinforcements will become available as you progress with your assault!"
-msgstr ""
+msgstr "공격이 진행될수록 더 많은 증원이 가능해진다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/allied_enemy_near_hq"
 msgid "Gentlemen! Germans are close to our Field HQ!"
-msgstr ""
+msgstr "제군! 독일군이 야전 본부 가까이에 있다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/allied_enemy_plane"
 msgid "Enemy plane!!!"
-msgstr ""
+msgstr "적 항공기다!!!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/allied_enemy_plane2"
 msgid "German aircraft inbound!"
-msgstr ""
+msgstr "독일 항공기 접근 중!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/player_enemy_near_hq"
 msgid "We must hold our command post! There is no room for surrender!"
-msgstr ""
+msgstr "지휘소를 지켜야 한다! 항복할 여지는 없다!"
 
 msgctxt "mission/single/04-usa/1944_07_skirmish_operation_cobra/hq_bonus"
 msgid "Major! Now you can request an airstrike."
-msgstr ""
+msgstr "Major! 이제 공습을 요청할 수 있습니다."

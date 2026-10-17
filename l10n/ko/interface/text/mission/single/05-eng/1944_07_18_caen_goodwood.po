@@ -15,319 +15,319 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/name"
 msgid "Goodwood"
-msgstr ""
+msgstr "구드우드"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/name_big"
 msgid "Goodwood"
-msgstr ""
+msgstr "구드우드"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/story"
 msgid "Operation Goodwood starts today.\n\nMore than one thousand RAF heavy bombers, flying extremely low, are on their way to bomb enemy positions in Colombelles, Cagny, and a number of other villages and towns.\n\nThanks to the air and artillery support, progress has been good so far; you’re already miles to the south of Caen. In front lies your target for today, which is the village of Cagny.\n\nWe have no idea what the bombing attacks have achieved, or what remains of the enemy; the whole area in and around the village looks like it has been completely obliterated. Take control of the area and form a closed front to defend against any possible German counterattacks."
-msgstr ""
+msgstr "구드우드 작전이 오늘 시작된다.\n\n1,000대가 넘는 영국 공군 중폭격기가 매우 낮게 날아 콜롱벨, 카니, 그 밖의 여러 마을과 도시의 적 진지를 폭격하러 가고 있다.\n\n항공 및 포병 지원 덕분에 지금까지 진척이 좋다. 이미 캉 남쪽 수 마일까지 왔다. 오늘의 목표는 눈앞에 있는 카니 마을이다.\n\n폭격이 어떤 성과를 냈는지, 적이 얼마나 남았는지는 알 수 없다. 마을과 그 주변 전역이 완전히 초토화된 것처럼 보인다. 이 지역을 장악하고 독일군의 반격에 대비해 빈틈없는 전선을 형성하라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/date"
 msgid "July 18th, 1944 · South-East of Caen, Normandy"
-msgstr ""
+msgstr "1944년 7월 18일 · 노르망디 캉 남동쪽"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/place"
 msgid "2nd Armoured battalion, Irish Guards"
-msgstr ""
+msgstr "아이리시 가즈 제2기갑대대"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/outro_completed"
 msgid "Any planned German counterthrust has been stopped dead in its tracks, even if our losses now prevent us from going on an all- out offensive. Have a rest, you deserve it."
-msgstr ""
+msgstr "독일군이 계획한 반격은 시작도 전에 저지됐다. 아군 피해 탓에 전면 공세로 넘어가지는 못하지만 말이다. 푹 쉬어라, 그럴 자격이 있다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/outro_failed"
 msgid "This makes us look like useless bleeders! Instead of a splendid victory we’ve been routed like never before. The Germans will keep their hold on Normandy and we’re stuck in the middle of nowhere. Try again!"
-msgstr ""
+msgstr "우리가 쓸모없는 놈들처럼 보이게 됐다! 멋진 승리는커녕 유례없는 참패를 당했다. 독일군은 노르망디를 계속 장악하고 우리는 허허벌판에 갇혔다. 다시 시도해라!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/mission_option_select1"
 msgid "Select your Doctrine for the mission.\nIt affects available units list and objectives.       "
-msgstr ""
+msgstr "임무에 사용할 교리를 선택하라.\n사용 가능한 유닛 목록과 목표에 영향을 준다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/doctrine_allround"
 msgid "All-Round: Churchill AVRE + Achilles Mk. II"
-msgstr ""
+msgstr "만능: 처칠 AVRE + 아킬레스 Mk. II"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/doctrine_defensive"
 msgid "Defensive: Cromwell Mk. VI CS + Staghound AA"
-msgstr ""
+msgstr "방어: 크롬웰 Mk. VI CS + 스태그하운드 AA"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/doctrine_irregular"
 msgid "Irregular: Sherman “Crab” + Churchill Mk.VIII"
-msgstr ""
+msgstr "비정규: 셔먼 “크랩” + 처칠 Mk.VIII"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/doctrine_offensive"
 msgid "Offensive: Churchill “Crocodile” + BL 5.5-inch Mk.III"
-msgstr ""
+msgstr "공세: 처칠 “크로커다일” + BL 5.5-inch Mk.III"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/cutscene/intro_01"
 msgid "Battalion, listen up! Today we have to secure the town of Cagny and provide cover to assaulting mechanized convoys."
-msgstr ""
+msgstr "대대, 잘 들어라! 오늘은 카니 마을을 확보하고 돌격하는 기계화 수송대를 엄호해야 한다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/cutscene/intro_02"
 msgid "Don’t worry about Jerry, the RAF has served them bombs for breakfast."
-msgstr ""
+msgstr "제리는 걱정 마라, 공군이 놈들에게 아침 식사로 폭탄을 대접했다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/cutscene/intro_03"
 msgid "Ambush! Multiple AT guns!"
-msgstr ""
+msgstr "매복이다! 대전차포 다수!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/cutscene/intro_04"
 msgid "Where the hell did they come from?!"
-msgstr ""
+msgstr "대체 어디서 나타난 거냐?!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_01"
 msgid "Second wave, move out and eliminate the enemy! Remember, every phase in this operation is scheduled for a specific time."
-msgstr ""
+msgstr "2파, 출발해서 적을 제거해라! 이 작전의 모든 단계는 정해진 시각에 맞춰 진행된다는 걸 기억해라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_02"
 msgid "That’s a damn bloodbath! We shouldn’t attack them in the open. This part looks like the weakest spot in the German line. We’ll have higher chances to break through there."
-msgstr ""
+msgstr "빌어먹을 피바다다! 탁 트인 곳에서 공격하면 안 된다. 이쪽이 독일군 전선에서 가장 약한 곳 같다. 여기서 돌파할 가능성이 더 높다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_03"
 msgid "The AT guns on the right flank control the main road. If we destroy them, we’ll be able to request additional units."
-msgstr ""
+msgstr "우측면의 대전차포가 주도로를 장악하고 있다. 놈들을 파괴하면 추가 유닛을 요청할 수 있다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_04"
 msgid "Good, we can call in reinforcements now."
-msgstr ""
+msgstr "좋아, 이제 증원군을 부를 수 있다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_05"
 msgid "Sergeant O’Hara, I need you to assist the other vehicles. Move to the left and destroy the remaining guns!"
-msgstr ""
+msgstr "Sergeant 오하라, 다른 차량들을 지원해라. 좌측으로 이동해서 남은 포를 파괴해라!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_06"
 msgid "Where the hell did they get these AT guns from? The carpet bombing should have wiped them out! Never mind. We are already behind schedule, so let’s move on."
-msgstr ""
+msgstr "이 대전차포들은 대체 어디서 났나? 융단폭격으로 쓸어버렸어야 하는데! 신경 쓰지 마라. 이미 일정이 늦었으니 계속 가자."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_gun_destroyed_01"
 msgid "That son of a bitch is down!"
-msgstr ""
+msgstr "그 개자식 쓰러졌다!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part01_gun_destroyed_02"
 msgid "Nice hit, the bastards are dead!"
-msgstr ""
+msgstr "명중이다, 그 자식들 죽었다!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_01"
 msgid "Jerry is retreating to the north and digging in, which will slow down our offensive. Get rid of them as soon as possible."
-msgstr ""
+msgstr "제리가 북쪽으로 후퇴해 참호를 파고 있다. 우리 공세가 늦어질 것이다. 최대한 빨리 제거해라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_02_allround"
 msgid "The Germans have turned the entire road into a stronghold. Shit, the house-to-house clearing is gonna take the whole day…"
-msgstr ""
+msgstr "독일군이 도로 전체를 요새로 만들었다. 젠장, 집집마다 소탕하려면 하루 종일 걸리겠다…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_03_allround"
 msgid "Lucky for us, we can turn these houses into their graves. Gentlemen, I would like to introduce our demolition miracle - Churchill AVRE. Its firepower is enough to get rid of entire fortifications in the space of a few minutes."
-msgstr ""
+msgstr "다행히 이 집들을 놈들의 무덤으로 만들 수 있다. 제군, 우리의 파괴 기적을 소개한다. 처칠 AVRE다. 화력이 몇 분 만에 요새 전체를 날려 버릴 만하다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_04_allround"
 msgid "The AVRE has arrived. Now show Jerry there is nowhere to hide!"
-msgstr ""
+msgstr "AVRE가 도착했다. 이제 제리에게 숨을 곳이 없다는 걸 보여 줘라!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_05_allround"
 msgid "This 230mm beast is really wild. Good work men, this road is no longer a threat to us."
-msgstr ""
+msgstr "이 230mm 괴물은 정말 사납군. 잘했다, 제군. 이 도로는 더 이상 위협이 아니다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_02_offensive"
 msgid "The Germans have dug trenches between these hedgerows and everywhere else. Shit, this clearing is gonna take the whole day…"
-msgstr ""
+msgstr "독일군이 산울타리 사이와 온 사방에 참호를 팠다. 젠장, 이 소탕에 하루 종일 걸리겠다…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_03_offensive"
 msgid "Lucky for us, we can literally smoke them out. Gentlemen, I would like to introduce a solution against these rats - the Churchill Crocodile. And what’s better than a flamethrower? That’s right! A bloody armoured flamethrower!"
-msgstr ""
+msgstr "다행히 말 그대로 연기로 몰아낼 수 있다. 제군, 이 쥐새끼들에 대한 해답을 소개한다. 처칠 크로커다일이다. 화염방사기보다 더 좋은 게 뭐겠나? 그렇다! 빌어먹을 장갑 화염방사기다!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_04_offensive"
 msgid "The Crocodile has arrived. Now make Jerry regret he survived the carpet bombing!"
-msgstr ""
+msgstr "크로커다일이 도착했다. 이제 제리가 융단폭격에서 살아남은 걸 후회하게 만들어라!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_05_offensive"
 msgid "Smoking them out is definitely easier than clearing every German foxhole in the area. Good work, men."
-msgstr ""
+msgstr "연기로 몰아내는 편이 이 일대 독일군 참호를 일일이 소탕하는 것보다 확실히 쉽다. 잘했다, 제군."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_02_defensive"
 msgid "The Germans have even more guns! Shit, we’re gonna lose so many tanks again…"
-msgstr ""
+msgstr "독일군에게 포가 더 있다! 젠장, 또 전차를 한꺼번에 잃겠다…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_03_defensive"
 msgid "Lucky for us, we finally received support against AT guns. Gentlemen, I would like to introduce the Cromwell VI. Its mobility and 95mm gun allows it to manoeuvre in close quarters and avoid the enemy's field of view."
-msgstr ""
+msgstr "다행히 드디어 대전차포에 맞설 지원을 받았다. 제군, 크롬웰 VI를 소개한다. 기동력과 95mm 포 덕분에 근접전에서 움직이며 적의 시야를 피할 수 있다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_04_defensive"
 msgid "The Cromwell has arrived. Just provide it with precise coordinates and it will take care of the rest."
-msgstr ""
+msgstr "크롬웰이 도착했다. 정확한 좌표만 주면 나머지는 알아서 처리한다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_05_defensive"
 msgid "Where was this Cromwell when we were attacking the first line? Could’ve saved so many lives…"
-msgstr ""
+msgstr "첫 번째 방어선을 공격할 때는 이 크롬웰이 어디 있었나? 수많은 목숨을 구할 수 있었을 텐데…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_02_irregular"
 msgid "The Germans have set up an entire minefield close to their positions! Shit, we’re gonna waste the whole day waiting for engineers…"
-msgstr ""
+msgstr "독일군이 진지 근처에 지뢰밭을 통째로 깔았다! 젠장, 공병을 기다리느라 하루를 다 날리겠다…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_03_irregular"
 msgid "Lucky for us, we have a reliable sapper. Gentlemen, I would like to introduce a solution against all minefields - the Sherman Crab. Use it for clearing up the mines."
-msgstr ""
+msgstr "다행히 믿을 만한 공병이 있다. 제군, 모든 지뢰밭에 대한 해답을 소개한다. 셔먼 크랩이다. 이걸로 지뢰를 제거해라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_04_irregular"
 msgid "The Crab has arrived. Now get rid of this minefield."
-msgstr ""
+msgstr "크랩이 도착했다. 이제 이 지뢰밭을 치워라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_05_irregular"
 msgid "Perfect, these mines are no danger to us anymore. Good work, men."
-msgstr ""
+msgstr "완벽하다, 이 지뢰들은 더 이상 위협이 아니다. 잘했다, 제군."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_06"
 msgid "Deal with the remaining Germans in the northern part of town so we can advance further."
-msgstr ""
+msgstr "마을 북쪽에 남은 독일군을 처리해서 더 전진할 수 있게 해라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_07"
 msgid "Excellent, the northern town is ours."
-msgstr ""
+msgstr "훌륭하다, 북쪽 마을은 우리 것이다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_08"
 msgid "And here is the air force. The most useless unit of today…"
-msgstr ""
+msgstr "공군이 왔군. 오늘 가장 쓸모없는 부대가…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_09"
 msgid "Don’t jump to conclusions. One of these planes is going in circles, he is probably scouting the area. Let’s see what enemy units he can spot."
-msgstr ""
+msgstr "성급히 판단하지 마라. 저 비행기 중 한 대가 원을 그리며 돌고 있다. 아마 이 일대를 정찰 중일 거다. 어떤 적 유닛을 찾아내는지 보자."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_10"
 msgid "Lots of Germans with anti-tank equipment are waiting for us. O’Hara, mark their positions so we know where exactly to expect more of these ambushes."
-msgstr ""
+msgstr "대전차 장비를 든 독일군이 많이 기다리고 있다. 오하라, 놈들의 위치를 표시해라. 이런 매복이 정확히 어디서 더 나올지 알아야 한다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part02_doc_unit_lost"
 msgid "Damn, they’ve destroyed our special vehicle!"
-msgstr ""
+msgstr "젠장, 우리 특수 차량이 파괴당했다!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_01"
 msgid "We are almost at the finish line. There are still some remaining German forces up ahead. I am providing you with more reinforcements so you can crush them."
-msgstr ""
+msgstr "결승선이 코앞이다. 앞쪽에 아직 독일군이 남아 있다. 놈들을 박살 낼 수 있도록 증원군을 더 지원하겠다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_02"
 msgid "The squadron we saw before reports movement of an armoured column moving in our direction. Be prepared for potential counter-attacks."
-msgstr ""
+msgstr "아까 본 편대가 장갑 종대가 우리 쪽으로 이동 중이라고 보고했다. 반격 가능성에 대비해라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_03"
 msgid "Enemy armoured vehicles to the south!"
-msgstr ""
+msgstr "남쪽에 적 장갑차량이다!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_04"
 msgid "They are sending small anti-tank groups! Keep infantry close to our tanks to cover them."
-msgstr ""
+msgstr "소규모 대전차 조를 보내고 있다! 보병을 전차 가까이 붙여서 엄호해라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_05"
 msgid "Incoming artillery! Take cover!"
-msgstr ""
+msgstr "포격 접근! 엄폐해라!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_06"
 msgid "The artillery is very accurate, meaning someone is spotting for their battery. O'Hara, find this observer and deal with him!"
-msgstr ""
+msgstr "포격이 매우 정확하다. 누군가 놈들 포대의 관측을 하고 있다는 뜻이다. 오하라, 그 관측병을 찾아서 처리해라!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_07"
 msgid "Got that damn observer! This artillery should not fire anymore."
-msgstr ""
+msgstr "그 빌어먹을 관측병을 잡았다! 이 포병은 더 이상 사격하지 못할 거다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_08"
 msgid "Shit, that artillery observer got away! Don’t be surprised if there are further artillery strikes."
-msgstr ""
+msgstr "젠장, 포병 관측병이 도망쳤다! 추가 포격이 와도 놀라지 마라."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_09"
 msgid "What the hell is that?! Has anyone seen these tanks before?"
-msgstr ""
+msgstr "저게 대체 뭐냐?! 저런 전차를 본 사람 있나?"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_10"
 msgid "All units, load APDS! We have to destroy them!"
-msgstr ""
+msgstr "전 유닛, APDS 장전! 놈들을 파괴해야 한다!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_12"
 msgid "I got one of them! Not as invincible as they look!"
-msgstr ""
+msgstr "한 대 잡았다! 보기만큼 무적은 아니군!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/part03_13"
 msgid "The second one is burning! Hell yes, we did it, men!"
-msgstr ""
+msgstr "두 번째 놈이 불타고 있다! 그래, 해냈다, 제군!"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/cutscene/outro_01"
 msgid "Just look at this thing… 150mm armor at least… We got really lucky taking it down…"
-msgstr ""
+msgstr "이것 좀 봐라… 장갑이 최소 150mm는 되겠군… 이걸 잡다니 정말 운이 좋았다…"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/cutscene/outro_02"
 msgid "I’m wondering how many of these Jerry has left. Let’s hope we don’t meet any more of them on our way."
-msgstr ""
+msgstr "제리가 이런 걸 몇 대나 더 가지고 있을지 궁금하다. 가는 길에 더는 마주치지 않길 바란다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/narrator/secret_infantry"
 msgid "So… Should the tank crews take a nap or something?"
-msgstr ""
+msgstr "그럼… 전차 승무원들은 낮잠이라도 자야 하나?"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/hint_doctrine_unit"
 msgid "A new <c(B29557)>doctrine</c> unit is available at the reinforcements tab."
-msgstr ""
+msgstr "증원 탭에서 새로운 <c(B29557)>교리</c> 유닛을 사용할 수 있다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/gameover_units_lost"
 msgid "You've lost all of your units."
-msgstr ""
+msgstr "모든 유닛을 잃었다."
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/reinf_menu_allround"
 msgid "<c(B29557)>[All-Round]</c> Forces"
-msgstr ""
+msgstr "<c(B29557)>[만능]</c> 병력"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/reinf_menu_offensive"
 msgid "<c(B29557)>[Offensive]</c> Forces"
-msgstr ""
+msgstr "<c(B29557)>[공세]</c> 병력"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/reinf_menu_defensive"
 msgid "<c(B29557)>[Defensive]</c> Forces"
-msgstr ""
+msgstr "<c(B29557)>[방어]</c> 병력"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/reinf_menu_irregular"
 msgid "<c(B29557)>[Irregular]</c> Forces"
-msgstr ""
+msgstr "<c(B29557)>[비정규]</c> 병력"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task01_flank"
 msgid "Break through the right Flank to receive Reinforcements"
-msgstr ""
+msgstr "우측면을 돌파해 증원군을 받아라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task02_trench"
 msgid "Assist allied Tanks to secure the First Line of Defense"
-msgstr ""
+msgstr "아군 전차를 도와 첫 번째 방어선을 확보하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task03_north"
 msgid "Secure the northern Part of Cagny and complete the Doctrine Objective"
-msgstr ""
+msgstr "카니 북부를 확보하고 교리 목표를 완료하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task04_allround"
 msgid "<c(B29557)>[All-Round Doctrine]</c> Eliminate enemy Infantry covered in Buildings using the Churchill AVRE"
-msgstr ""
+msgstr "<c(B29557)>[만능 교리]</c> 처칠 AVRE로 건물에 엄폐한 적 보병을 제거하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task04_offensive"
 msgid "<c(B29557)>[Offensive Doctrine]</c> Eliminate 20 Enemies using Fire Damage with the Churchill Crocodile"
-msgstr ""
+msgstr "<c(B29557)>[공세 교리]</c> 처칠 크로커다일의 화염 피해로 적 20명을 제거하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task04_defensive"
 msgid "<c(B29557)>[Defensive Doctrine]</c> Eliminate enemy AT guns using the Cromwell IV"
-msgstr ""
+msgstr "<c(B29557)>[방어 교리]</c> 크롬웰 IV로 적 대전차포를 제거하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task04_irregular"
 msgid "<c(B29557)>[Irregular Doctrine]</c> Clear all Mines using the Sherman Crab"
-msgstr ""
+msgstr "<c(B29557)>[비정규 교리]</c> 셔먼 크랩으로 지뢰를 모두 제거하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task05_ruins"
 msgid "Capture the Ruins of Cagny"
-msgstr ""
+msgstr "카니의 폐허를 점령하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task06_tanks"
 msgid "Destroy all German Tanks"
-msgstr ""
+msgstr "독일 전차를 모두 파괴하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task_opt01_observer"
 msgid "Find and eliminate the Artillery Observer before he escapes"
-msgstr ""
+msgstr "포병 관측병이 도망치기 전에 찾아 제거하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task_opt01_observer_completed"
 msgid "Call an Ambulance!.. But not for me! - Find and eliminate the Artillery Observer before he escapes"
-msgstr ""
+msgstr "구급차를 불러라!.. 하지만 내가 아니라! - 포병 관측병이 도망치기 전에 찾아 제거하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task_secret01"
 msgid "Secret objective #1"
@@ -335,20 +335,20 @@ msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task_secret01_complete"
 msgid "Secret objective #1: Pawn Promotion - Complete the first objective using only infantry"
-msgstr ""
+msgstr "비밀 목표 #1: 폰 승급 - 보병만으로 첫 번째 목표를 완료하라"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/obj_progress_allround"
 msgid "<c(B29557)>[Doctrine objective]</c>: %1% Enemies remaining"
-msgstr ""
+msgstr "<c(B29557)>[교리 목표]</c>: 남은 적 %1%명"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/obj_progress_offensive"
 msgid "<c(B29557)>[Doctrine objective]</c>: %1% more Enemies to eliminate using Fire Damage"
-msgstr ""
+msgstr "<c(B29557)>[교리 목표]</c>: 화염 피해로 제거할 적 %1%명 남음"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/obj_progress_irregular"
 msgid "<c(B29557)>[Doctrine objective]</c>: %1% Mines remaining"
-msgstr ""
+msgstr "<c(B29557)>[교리 목표]</c>: 남은 지뢰 %1%개"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/obj_progress_observer"
 msgid "One of your Units has been marked by an Artillery Observer!"
-msgstr ""
+msgstr "아군 유닛 하나가 포병 관측병에게 표적으로 지정됐다!"

@@ -451,7 +451,7 @@ msgstr "독일군을 충분히 지연시키지 못한 탓에 놈들이 동쪽 �
 
 msgctxt "mission/single/01-rus/1942_05_kerch/part1_retreat_button"
 msgid "Retreat"
-msgstr ""
+msgstr "후퇴"
 
 msgctxt "mission/single/01-rus/1942_05_kerch/part1_retreat_button_hint"
 msgid "Order soldiers to retreat to allied positions"

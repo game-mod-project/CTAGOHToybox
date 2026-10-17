@@ -75,7 +75,7 @@ msgstr "동상"
 
 msgctxt "mission/multi/1v1_workshop/name"
 msgid "Workshop"
-msgstr ""
+msgstr "워크숍"
 
 msgctxt "mission/multi/1v1_ladoga/name"
 msgid "Ladoga"
@@ -215,7 +215,7 @@ msgstr "카르파티아"
 
 msgctxt "mission/multi/3v3_king_of_the_hill/name"
 msgid "King Of The Hill"
-msgstr ""
+msgstr "언덕의 왕"
 
 msgctxt "mission/multi/3v3_lakeside_airfield/name"
 msgid "Lakeside Airfield"

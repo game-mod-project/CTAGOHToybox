@@ -15,116 +15,116 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/date"
 msgid "September 24th, 1944 · Veghel, Netherlands."
-msgstr ""
+msgstr "1944년 9월 24일 · 네덜란드 페헬."
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/name"
 msgid "Contesting Hell's Highway"
-msgstr ""
+msgstr "지옥의 가도를 둘러싼 싸움"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/name_big"
 msgid "Contesting Hell's Highway"
-msgstr ""
+msgstr "지옥의 가도를 둘러싼 싸움"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator01"
 msgid "Incoming! Take cover!"
-msgstr ""
+msgstr "포격이다! 엄폐해라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator_soldier01"
 msgid "Panzers! I see German armor coming from the north!"
-msgstr ""
+msgstr "판처다! 북쪽에서 독일 기갑이 온다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator03"
 msgid "Get to defensive positions! We have to protect our supply trucks!"
-msgstr ""
+msgstr "방어 위치로 가라! 보급 트럭을 지켜야 한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator14"
 msgid "Look alive! More Krauts are coming from along the highway!"
-msgstr ""
+msgstr "정신 차려라! 도로를 따라 독일 놈들이 더 온다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator13"
 msgid "A Panther! Gun crew, aim for a weak spot, or it will kill us!"
-msgstr ""
+msgstr "판터다! 포수, 약점을 노려라, 안 그러면 우리가 당한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator15"
 msgid "Our 57 mil is down! Someone deal with that Panther!"
-msgstr ""
+msgstr "57mm가 쓰러졌다! 누가 저 판터를 처리해라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator04"
 msgid "They are retreating!"
-msgstr ""
+msgstr "놈들이 후퇴한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator05"
 msgid "Looks like they've had enough! We need to ensure the highway ahead is clear of any Germans."
-msgstr ""
+msgstr "이제 질렸나 보군! 앞쪽 도로에 독일군이 남지 않았는지 확인해야 한다."
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator12"
 msgid "Continue to protect our trucks. They must deliver supplies to our troops!"
-msgstr ""
+msgstr "계속 트럭을 지켜라. 아군 병력에게 보급품을 전달해야 한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator06"
 msgid "German tank destroyers are operating nearby. Locate and destroy them."
-msgstr ""
+msgstr "독일군 구축전차가 근처에서 활동 중이다. 찾아서 파괴해라."
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator09"
 msgid "Support has arrived!"
-msgstr ""
+msgstr "지원이 도착했다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator16"
 msgid "We have been granted limited artillery support from a nearby battery. One high-explosive and two smoke barrages are available."
-msgstr ""
+msgstr "근처 포대에서 제한된 포병 지원을 받았다. 고폭탄 포격 한 번과 연막 포격 두 번을 쓸 수 있다."
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator10"
 msgid "We need to clear any remaining enemies from the village and nearby woods."
-msgstr ""
+msgstr "마을과 근처 숲에 남은 적을 모두 소탕해야 한다."
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator07"
 msgid "Good job! The enemy tank destroyers won't threaten our convoys anymore!"
-msgstr ""
+msgstr "잘했다! 적 구축전차는 더 이상 우리 호송대를 위협하지 못한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator08"
 msgid "The highway is clear of enemy troops! Let's get those trucks moving!"
-msgstr ""
+msgstr "도로에서 적이 사라졌다! 트럭을 움직이자!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/outro_completed"
 msgid "Excellent work! You have thwarted the enemy’s attempts to take Highway 69. The road to Arnhem is still open to XXX Corps. Congratulations, soldier!"
-msgstr ""
+msgstr "훌륭하다! 69번 도로를 빼앗으려는 적의 시도를 저지했다. 아른험으로 가는 길은 아직 제30군단에 열려 있다. 축하한다, 병사!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/outro_failed"
 msgid "Losing this part of the highway to the Germans will delay the operation. It’s absolutely necessary to take back the road. You must try again!"
-msgstr ""
+msgstr "이 구간을 독일군에게 빼앗기면 작전이 지연된다. 반드시 도로를 되찾아야 한다. 다시 도전하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/place"
 msgid "101st Airborne Division \"Screaming Eagles\""
-msgstr ""
+msgstr "제101공수사단 \"비명을 지르는 독수리\""
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/reinf_arty"
 msgid "Artillery barrage"
-msgstr ""
+msgstr "포격"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/reinf_smoke"
 msgid "Smoke barrage"
-msgstr ""
+msgstr "연막 포격"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/story"
 msgid "  Having secured Veghel five days ago, the 101st is thrown into battle once more. The allied ground forces approach from the south along Highway 69, which is the only road available for their advance.\n\n  If the British XXX Corps is to succeed, you need to fend off any enemy attacks and prevent the narrow stretch of highway from falling into German hands.\n\n  With the success of Operation Market Garden hanging in the balance, the importance of your task cannot be overstated.\n\n Good luck!"
-msgstr ""
+msgstr "  닷새 전 페헬을 확보한 제101사단은 다시 전투에 투입된다. 연합군 지상군은 남쪽에서 69번 도로를 따라 접근하는데, 이것이 그들이 진격할 수 있는 유일한 도로다.\n\n  영국 제30군단이 성공하려면 적의 공격을 막아 내고 이 좁은 도로 구간이 독일군 손에 넘어가지 않게 해야 한다.\n\n  마켓 가든 작전의 성패가 달린 만큼, 이 임무의 중요성은 아무리 강조해도 지나치지 않다.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/task01"
 msgid "Protect the supply trucks (at least 3 must survive)"
-msgstr ""
+msgstr "보급 트럭을 지켜라 (최소 3대 생존)"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/task02"
 msgid "Clear the enemies from the highway!"
-msgstr ""
+msgstr "도로의 적을 소탕하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/task03"
 msgid "Find and neutralize German tank destroyers!"
-msgstr ""
+msgstr "독일군 구축전차를 찾아 제압하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/task04"
 msgid "Clear the remaining enemies!"
-msgstr ""
+msgstr "남은 적을 소탕하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/task05"
 msgid "Escort the supply trucks safely to the end of the highway (at least 3 trucks must get there)."
-msgstr ""
+msgstr "보급 트럭을 도로 끝까지 안전하게 호위하라 (최소 3대 도착)."

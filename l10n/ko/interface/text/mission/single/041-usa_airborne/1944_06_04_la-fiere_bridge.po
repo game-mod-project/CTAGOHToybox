@@ -15,160 +15,160 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/allies01"
 msgid "Bazooka team, awaiting orders!"
-msgstr ""
+msgstr "바주카 조, 명령을 기다립니다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/allies02"
 msgid "Sniper team, ready for action!"
-msgstr ""
+msgstr "저격조, 출동 준비 완료!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/date"
 msgid "June 6th, 1944 · La Fière, Normandy, France."
-msgstr ""
+msgstr "1944년 6월 6일 · 프랑스 노르망디, 라피에르."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/name"
 msgid "Stand at La Fière"
-msgstr ""
+msgstr "라피에르를 사수하라"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/name_big"
 msgid "Stand at La Fière"
-msgstr ""
+msgstr "라피에르를 사수하라"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator01"
 msgid "The Germans have flooded the fields around the Merderet river because they anticipated the invasion..."
-msgstr ""
+msgstr "독일군은 침공을 예상하고 메르데레 강 주변 들판을 침수시켜 놓았다..."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator02"
 msgid "We need to secure the bridge to prevent German reserves from counterattacking Sainte-Mere-Eglise or reinforcing the Utah Beach defenses!"
-msgstr ""
+msgstr "독일군 예비대가 생트메르에글리즈를 반격하거나 유타 해변 방어를 증원하지 못하게 다리를 확보해야 한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator03"
 msgid "There is a small garrison in a nearby manor. We need to capture the manor to secure and hold the bridge."
-msgstr ""
+msgstr "근처 저택에 소규모 수비대가 있다. 다리를 확보하고 지키려면 저택을 점령해야 한다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator04"
 msgid "There's no time to waste! Let's push the Germans out of there!"
-msgstr ""
+msgstr "낭비할 시간 없다! 독일군을 몰아내자!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator05"
 msgid "We cleared out the Krauts! Search for additional equipment and prepare for the inevitable counterattack. This bridge is as important to them as it is to us."
-msgstr ""
+msgstr "독일 놈들을 쓸어냈다! 추가 장비를 찾고 피할 수 없는 반격에 대비하라. 이 다리는 놈들에게도 우리만큼 중요하다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator06"
 msgid "Jerry left some explosives in this crate. Let's mine the approach to the bridge with anti-tank mines."
-msgstr ""
+msgstr "독일 놈들이 이 상자에 폭약을 두고 갔다. 다리로 오는 길목에 대전차 지뢰를 깔자."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator07"
 msgid "Jerry has the frontal approaches covered. Let's push farther south along the path and hit them from the flank!"
-msgstr ""
+msgstr "독일 놈들이 정면 접근로를 막고 있다. 길을 따라 더 남쪽으로 밀고 가서 측면을 치자!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator08"
 msgid "We now have a 57mm AT-Gun. Let's position it with a good view of the road."
-msgstr ""
+msgstr "57mm 대전차포를 얻었다. 도로가 잘 보이는 곳에 배치하자."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator09"
 msgid "A medic team is at your disposal!"
-msgstr ""
+msgstr "위생병 조를 지원한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator10"
 msgid "Search the boxes and vehicles around the manor. Gather as much ammo and weapons as you can find!"
-msgstr ""
+msgstr "저택 주변의 상자와 차량을 뒤져라. 찾을 수 있는 탄약과 무기를 최대한 모아라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator11"
 msgid "Here they come!"
-msgstr ""
+msgstr "놈들이 온다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator12"
 msgid "Enemy artillery incoming! Take cover!"
-msgstr ""
+msgstr "적 포격 접근 중! 엄폐해라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator13"
 msgid "They've got us zeroed! Spread it out!"
-msgstr ""
+msgstr "놈들이 우리 위치를 잡았다! 흩어져라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator14"
 msgid "They're retreating!"
-msgstr ""
+msgstr "후퇴한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator15"
 msgid "There's something wrong with the AT-gun's breech. Don't fire it too much, or it'll break!"
-msgstr ""
+msgstr "대전차포 포미에 이상이 있다. 너무 많이 쏘면 고장 난다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator_soldier01"
 msgid "Shit! The AT gun's breech broke! Someone grab a repair kit!"
-msgstr ""
+msgstr "젠장! 대전차포 포미가 부서졌다! 누가 수리 키트 좀 가져와!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator_soldier02"
 msgid "The AT-gun patched up! We're back in business!"
-msgstr ""
+msgstr "대전차포를 땜질했다! 다시 쏠 수 있다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator18"
 msgid "We need to defend both the manor and the bridge! Hold the line!"
-msgstr ""
+msgstr "저택과 다리를 모두 지켜야 한다! 전선을 사수하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator_secret"
 msgid "He's not going anywhere!"
-msgstr ""
+msgstr "저놈은 어디도 못 간다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator_secret2"
 msgid "Look what we found, Jerry’s radio! Time to call for some backup!"
-msgstr ""
+msgstr "이것 봐라, 독일 놈들 무전기다! 지원을 요청할 때다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator_secret2a"
 msgid "About time you showed up! We’re in the thick of it!"
-msgstr ""
+msgstr "이제야 왔군! 우리는 한창 격전 중이다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/narrator_secret_spot"
 msgid "Hey! A bike messenger is making a break for it! Stop him before he can alert another German garrison!"
-msgstr ""
+msgstr "이봐! 자전거 전령이 도망친다! 다른 독일군 수비대에 알리기 전에 막아라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/outro_completed"
 msgid "Excellent work! We have successfully secured one of the most important bridges in the area. This position will allow us to build a strong defensive line against any possible German counterattack from the west."
-msgstr ""
+msgstr "훌륭하다! 이 지역에서 가장 중요한 다리 가운데 하나를 확보했다. 이 진지 덕분에 서쪽에서 올 수 있는 독일군 반격에 맞서 튼튼한 방어선을 구축할 수 있다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/outro_failed"
 msgid "We've lost control of the bridge! With the causeway open, the Germans can advance toward St Mere-Eglise and threaten the invasion. You must try again!"
-msgstr ""
+msgstr "다리를 빼앗겼다! 둑길이 뚫리면 독일군이 생트메르에글리즈로 진격해 침공을 위협할 것이다. 다시 도전하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/place"
 msgid "82nd Airborne Division \"All American\""
-msgstr ""
+msgstr "제82공수사단 '올 아메리칸'"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/secret_objective1_hidden"
 msgid "(Secret objective #1)"
-msgstr ""
+msgstr "(비밀 목표 #1)"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/secret_objective2_hidden"
 msgid "(Secret objective #2)"
-msgstr ""
+msgstr "(비밀 목표 #2)"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/story"
 msgid "  Daybreak on D-Day. The 82nd Airborne is on the ground in Normandy. Not everything went right; the cloud base over the drop zone and the German Flak was dense. You have spent hours of darkness trying to find your comrades, and after a short headcount, it’s clear that this will be one hell of a day.\n\n  Your group is tasked to take the bridge at La Fière and hold it until the US Army arrives from Utah Beach. \n\n  Your task is vital; once you take the bridge, the enemy can no longer approach St. Mère-Église from the west, or reach the roads to the invasion beaches.\n\n Good luck!"
-msgstr ""
+msgstr "  D-데이의 새벽. 제82공수사단이 노르망디에 내렸다. 모든 것이 순조롭지는 않았다. 강하 지점 위의 구름은 낮게 깔렸고 독일군 Flak은 빽빽했다. 어둠 속에서 몇 시간을 동료를 찾아 헤맸고, 짧은 점호를 해 보니 오늘은 정말 지독한 하루가 되리라는 게 분명하다.\n\n  당신의 부대는 라피에르의 다리를 점령하고 유타 해변에서 미 육군이 도착할 때까지 지키는 임무를 받았다. \n\n  이 임무는 매우 중요하다. 다리를 점령하면 적은 더 이상 서쪽에서 생트메르에글리즈에 접근할 수 없고, 상륙 해변으로 가는 도로에도 닿지 못한다.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/task1"
 msgid "Capture the manor and secure the bridge!"
-msgstr ""
+msgstr "저택을 점령하고 다리를 확보하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/task2"
 msgid "Prepare for a counterattack."
-msgstr ""
+msgstr "반격에 대비하라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/task3"
 msgid "Defend the bridge and the manor!"
-msgstr ""
+msgstr "다리와 저택을 지켜라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/task_secondary1"
 msgid "Place at least four anti-tank mines on the road."
-msgstr ""
+msgstr "도로에 대전차 지뢰를 최소 네 개 설치하라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/task_secret1"
 msgid "(Secret objective) Stop the enemy soldier on a bike before he alarms a nearby garrison."
-msgstr ""
+msgstr "(비밀 목표) 자전거 탄 적 병사가 근처 수비대에 경보를 울리기 전에 막아라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/task_secret2"
 msgid "(Secret objective) Use the radio to call in reinforcements."
-msgstr ""
+msgstr "(비밀 목표) 무전기로 증원을 요청하라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge/timer1"
 msgid "Time before the German counterattack:"
-msgstr ""
+msgstr "독일군 반격까지 남은 시간:"

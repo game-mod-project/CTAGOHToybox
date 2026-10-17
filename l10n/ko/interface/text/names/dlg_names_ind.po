@@ -15,32 +15,32 @@ msgstr ""
 
 msgctxt "names/ind/first"
 msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
-msgstr ""
+msgstr "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
 
 msgctxt "names/ind/last"
 msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
-msgstr ""
+msgstr "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
 
 msgctxt "names/ind_medic/first"
 msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
-msgstr ""
+msgstr "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
 
 msgctxt "names/ind_medic/last"
 msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
-msgstr ""
+msgstr "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
 
 msgctxt "names/ind_officer/first"
 msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
-msgstr ""
+msgstr "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
 
 msgctxt "names/ind_officer/last"
 msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
-msgstr ""
+msgstr "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
 
 msgctxt "names/ind_sniper/first"
 msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
-msgstr ""
+msgstr "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
 
 msgctxt "names/ind_sniper/last"
 msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
-msgstr ""
+msgstr "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"

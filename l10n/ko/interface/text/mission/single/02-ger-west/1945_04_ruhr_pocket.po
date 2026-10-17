@@ -215,7 +215,7 @@ msgstr "이제 1945년 4월이다. 몇 주 전 레마겐의 루덴도르프 다�
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/surrender"
 msgid "Surrender"
-msgstr ""
+msgstr "항복"
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/task1"
 msgid "Go to the local Volkssturm forces and recruit 10 soldiers."

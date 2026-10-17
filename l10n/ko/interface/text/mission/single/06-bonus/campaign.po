@@ -15,12 +15,12 @@ msgstr ""
 
 msgctxt "mp/army/z_bonus"
 msgid "BONUS MISSIONS"
-msgstr ""
+msgstr "보너스 임무"
 
 msgctxt "mission/single/06-bonus/campaign/name"
 msgid "JUBILEE BONUS MISSIONS</c>"
-msgstr ""
+msgstr "주빌리 보너스 임무</c>"
 
 msgctxt "mission/single/06-bonus/campaign/title"
 msgid "Ostfront, 1941-1945"
-msgstr ""
+msgstr "동부 전선, 1941-1945"

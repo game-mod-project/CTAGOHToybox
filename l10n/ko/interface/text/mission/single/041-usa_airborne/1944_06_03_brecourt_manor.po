@@ -15,119 +15,119 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/date"
 msgid "June 6th, 1944 · Brécourt Manor, Normandy, France."
-msgstr ""
+msgstr "1944년 6월 6일 · 프랑스 노르망디, 브레쿠르 저택."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/ending"
 msgid "The successful assault at Brécourt Manor, in part, gave the troops at Utah Beach a relatively easy landing. This assault has become a classic case study in military training for engaging a superior enemy force. Colonel Robert Sink, who commanded the 506th Parachute Infantry Regiment, put forward Dick Winters for the Medal of Honor. Still, it was downgraded to the Distinguished Service Cross due to a policy allowing only one Medal of Honor per division. Despite this, both Winters and Lieutenant Speirs would later gain global recognition for their actions at Brécourt Manor and in subsequent battles."
-msgstr ""
+msgstr "브레쿠르 저택 공격의 성공은 유타 해변의 아군이 비교적 쉽게 상륙하는 데 일부 기여했다. 이 공격은 우세한 적을 상대하는 법을 가르치는 군사 훈련의 대표적인 연구 사례가 되었다. 제506 낙하산 보병 연대를 지휘한 로버트 싱크 대령은 딕 위터스를 명예 훈장 후보로 추천했다. 그러나 사단당 명예 훈장은 한 명뿐이라는 방침 때문에 수훈 십자장으로 낮춰졌다. 그럼에도 위터스와 스파이어스 Lieutenant는 훗날 브레쿠르 저택과 이어진 전투에서의 활약으로 세계적인 명성을 얻는다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/name"
 msgid "Hold Fast!"
-msgstr ""
+msgstr "버텨라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/name_big"
 msgid "Hold Fast!"
-msgstr ""
+msgstr "버텨라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator01"
 msgid "Easy Company, Listen Up! Our boys on Utah Beach are getting hammered by that Kraut artillery. Drop everything except weapons and ammo!"
-msgstr ""
+msgstr "이지 중대, 잘 들어라! 유타 해변의 아군이 저 독일 놈들 포격에 두들겨 맞고 있다. 무기와 탄약만 빼고 전부 내려놔라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator02"
 msgid "Our main objective is to destroy the enemy howitzer battery. Use TNT or satchel charges!"
-msgstr ""
+msgstr "우리의 주 목표는 적 곡사포 포대를 파괴하는 것이다. TNT나 가방형 폭약을 써라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator03"
 msgid "After we're done with the howitzers, we'll need to clear the Germans from the nearby manor."
-msgstr ""
+msgstr "곡사포를 처리하고 나면 근처 저택의 독일군을 소탕해야 한다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator04"
 msgid "We'll use the .30 cal machine guns to set a base of fire and assault the enemy artillery from the flank. We'll get in close, then hit them hard and fast."
-msgstr ""
+msgstr ".30구경 기관총으로 엄호 사격 진지를 구축하고 측면에서 적 포대를 돌격한다. 바짝 붙어서 빠르고 강하게 친다."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator05"
 msgid "Avoid the open field to the east, or they'll spot us!"
-msgstr ""
+msgstr "동쪽의 트인 들판은 피해라. 들키면 끝이다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator06"
 msgid "Great job! We destroyed the guns!"
-msgstr ""
+msgstr "잘했다! 포를 파괴했다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator07"
 msgid "We need to take out that MG42 on the other side of the field!"
-msgstr ""
+msgstr "들판 건너편의 MG42를 제거해야 한다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator08"
 msgid "Excellent! That MG42 is not a threat anymore!"
-msgstr ""
+msgstr "좋아! 저 MG42는 더 이상 위협이 아니다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator09"
 msgid "Now we need to take the manor! Let's go!"
-msgstr ""
+msgstr "이제 저택을 점령한다! 가자!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator10"
 msgid "The manor is ours! Good job!"
-msgstr ""
+msgstr "저택은 우리 것이다! 잘했다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator11"
 msgid "Stay out of the open field in front of the cannons! They'll stop firing at the beaches and instead start fire at us!"
-msgstr ""
+msgstr "포 앞의 트인 들판에는 들어가지 마라! 해변 사격을 멈추고 우리를 쏘기 시작할 거다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator12"
 msgid "Enemy infantry, coming from the east! Get one of those .30 cals over here and pour it on them!"
-msgstr ""
+msgstr "동쪽에서 적 보병이다! 저쪽에 .30구경 하나 끌고 와서 쏟아부어라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator13"
 msgid "Hey Lieutenant Speirs. We appreciate Dog Company's help today."
-msgstr ""
+msgstr "이봐, 스파이어스 Lieutenant. 오늘 도그 중대가 도와줘서 고맙소."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator14"
 msgid "Yeah, sure. Here you go."
-msgstr ""
+msgstr "그래, 알았소. 여기 있소."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_gun1"
 msgid "One down, three to go!"
-msgstr ""
+msgstr "하나 끝, 셋 남았다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_gun2"
 msgid "Another one destroyed! On to the next gun!"
-msgstr ""
+msgstr "또 하나 파괴했다! 다음 포로 간다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_gun3"
 msgid "There's only one left! Let's go!"
-msgstr ""
+msgstr "한 문 남았다! 가자!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_secret"
 msgid "I can't see a thing... Maybe I could see better if I climbed up this tree..."
-msgstr ""
+msgstr "아무것도 안 보이는군... 이 나무에 올라가면 더 잘 보일지도 모르겠다..."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs1"
 msgid "D Company here! We figured you could use some help!"
-msgstr ""
+msgstr "D중대다! 도움이 필요할 것 같아서 왔다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs2"
 msgid "Looks like they've had enough!"
-msgstr ""
+msgstr "이제 질렸나 보군!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs3"
 msgid "... Hey, you got some cigarettes?"
-msgstr ""
+msgstr "... 이봐, 담배 좀 있나?"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs4"
 msgid "..."
-msgstr ""
+msgstr "..."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_tank"
 msgid "Hey! We could use some help over here! Blow up these obstacles so we can get through!"
-msgstr ""
+msgstr "이봐! 여기 좀 도와줘! 이 장애물을 날려 줘야 우리가 지나갈 수 있다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_tank2"
 msgid "Thanks! We were sitting ducks!"
-msgstr ""
+msgstr "고맙다! 꼼짝없이 당할 뻔했다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/outro_failed"
 msgid "You failed to complete the primary objective! Because we did not silence the enemy artillery, our boys on Utah Beach took heavy damage. You must try again!"
-msgstr ""
+msgstr "주 목표를 완수하지 못했다! 적 포병을 침묵시키지 못해 유타 해변의 아군이 큰 피해를 입었다. 다시 도전하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/outro_completed"
 msgid ""
@@ -135,56 +135,56 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/place"
 msgid "101st Airborne Division \"Screaming Eagles\""
-msgstr ""
+msgstr "제101공수사단 \"비명을 지르는 독수리\""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/situation1"
 msgid "Brécourt Manor - 08:35 hours"
-msgstr ""
+msgstr "브레쿠르 저택 - 08:35시"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/situation2"
 msgid "E (\"Easy\") Company, 2nd Battalion, 506th Parachute Infantry Regiment"
-msgstr ""
+msgstr "제506 낙하산 보병 연대 2대대 E(\"이지\") 중대"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/story"
 msgid "  6th of June, 1944. It’s been about 7 hours since you made the 'Big Jump'.\n\n  You have spent most of the night moving towards your main objective and regrouping with your Easy Company comrades along the way. After daybreak, you arrive at Le Grand Chemin, a small village between Ste Marie du Mont and Utah Beach.\n\n  The main task of securing the Utah Beach causeways is far from complete. The company’s Headquarters Section is missing in action this morning, so your orders are to report to Battalion HQ, Lieutenant Winters.\n\n Good luck!"
-msgstr ""
+msgstr "  1944년 6월 6일. '빅 점프'를 한 지 7시간쯤 지났다.\n\n  당신은 밤새 주 목표를 향해 이동하며 도중에 이지 중대 동료들과 다시 모였다. 동이 트자 생트마리뒤몽과 유타 해변 사이의 작은 마을 르 그랑 슈맹에 도착한다.\n\n  유타 해변 둑길 확보라는 주 임무는 아직 끝나지 않았다. 오늘 아침 중대 본부 분대는 행방불명이다. 따라서 당신의 명령은 대대 본부의 위터스 Lieutenant에게 보고하는 것이다.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task1"
 msgid "Sabotage the enemy howitzers!"
-msgstr ""
+msgstr "적 곡사포를 파괴하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task2"
 msgid "Neutralize the enemy machine gun!"
-msgstr ""
+msgstr "적 기관총을 제압하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task3"
 msgid "Capture the manor!"
-msgstr ""
+msgstr "저택을 점령하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task4"
 msgid "Destroy the roadblock."
-msgstr ""
+msgstr "저지선을 파괴하라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_secret"
 msgid "(Secret objective) Climb up the tree"
-msgstr ""
+msgstr "(비밀 목표) 나무에 올라가라"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_secret_noncomp"
 msgid "(Secret objective)"
-msgstr ""
+msgstr "(비밀 목표)"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_speirs"
 msgid "Lt. Speirs must survive."
-msgstr ""
+msgstr "스파이어스 Lieutenant를 살려라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_winters"
 msgid "Lt. Winters must survive."
-msgstr ""
+msgstr "위터스 Lieutenant를 살려라."
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_heal_speirs"
 msgid "Treat Lt. Speirs before he bleeds to death!"
-msgstr ""
+msgstr "스파이어스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_heal_winters"
 msgid "Treat Lt. Winters before he bleeds to death!"
-msgstr ""
+msgstr "위터스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"

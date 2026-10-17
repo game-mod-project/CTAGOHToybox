@@ -15,20 +15,20 @@ msgstr ""
 
 msgctxt "main_menu2/dynamic_campaign/hint_difficulty_easy"
 msgid "Easy Difficulty: \n• Greatly reduces enemy infantry health \n• Greatly reduces enemy weapon accuracy for all units \n• Reduces enemy rate of throwing grenades \n• Greatly increases player infantry health \n• Increases friendly AI infantry health \n• Only biplanes will spawn on the first six days (Mace)"
-msgstr ""
+msgstr "쉬움 난이도: \n• 적 보병 체력 대폭 감소 \n• 모든 적 유닛 무기 명중률 대폭 감소 \n• 적 수류탄 투척 빈도 감소 \n• 플레이어 보병 체력 대폭 증가 \n• 아군 AI 보병 체력 증가 \n• 처음 엿새 동안은 복엽기만 등장 (Mace)"
 
 msgctxt "main_menu2/dynamic_campaign/hint_difficulty_normal"
 msgid "Normal Difficulty: \n• Reduces enemy infantry health \n• Reduces enemy weapon accuracy for all units \n• All other stats are at standard values \n• Only biplanes will spawn on the first six days (Mace)"
-msgstr ""
+msgstr "보통 난이도: \n• 적 보병 체력 감소 \n• 모든 적 유닛 무기 명중률 감소 \n• 그 밖의 능력치는 기본값 \n• 처음 엿새 동안은 복엽기만 등장 (Mace)"
 
 msgctxt "main_menu2/dynamic_campaign/hint_difficulty_hard"
 msgid "Hard Difficulty: \n• Reduces enemy infantry health \n• Slightly reduces enemy weapon accuracy for all units \n• All other stats are at standard values \n• Only biplanes will spawn on the first six days (Mace)"
-msgstr ""
+msgstr "어려움 난이도: \n• 적 보병 체력 감소 \n• 모든 적 유닛 무기 명중률 소폭 감소 \n• 그 밖의 능력치는 기본값 \n• 처음 엿새 동안은 복엽기만 등장 (Mace)"
 
 msgctxt "main_menu2/dynamic_campaign/hint_difficulty_heroic"
 msgid "Hardcore Difficulty: \n• Slightly reduces enemy infantry health \n• All other stats are at standard values \n• Planes can spawn in every mission \n• Airstrikes will directly bomb the target, with no scouting pass (Mace)"
-msgstr ""
+msgstr "하드코어 난이도: \n• 적 보병 체력 소폭 감소 \n• 그 밖의 능력치는 기본값 \n• 모든 임무에서 항공기 등장 가능 \n• 공습은 정찰 비행 없이 목표를 바로 폭격 (Mace)"
 
 msgctxt "version_short_string"
 msgid "Call to Arms - Gates of Hell version %1% - <c(FFA500)>Multiplayer and Conquest Expanded Mod 1.80"
-msgstr ""
+msgstr "Call to Arms - Gates of Hell 버전 %1% - <c(FFA500)>멀티플레이 및 정복전 확장 모드 1.80"

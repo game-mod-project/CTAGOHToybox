@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/campaign/title"
 msgid "Germany/USSR - 1939-45"
-msgstr ""
+msgstr "독일/소련 - 1939-45"
 
 msgctxt "mission/single/0x-skirmish/campaign/name"
 msgid "Skirmishes"
-msgstr ""
+msgstr "소규모 교전"

@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/campaign/title"
 msgid "Finland, 1939-45"
-msgstr ""
+msgstr "핀란드, 1939-45"
 
 msgctxt "mission/single/03-fin/campaign/name"
 msgid "TALVISOTA</c>"
-msgstr ""
+msgstr "탈비소타</c>"

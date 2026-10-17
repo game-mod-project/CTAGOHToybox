@@ -35,31 +35,31 @@ msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"
-msgstr ""
+msgstr "증원 메뉴:"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/buys_on_after_flag"
 msgid "Units unlock permanently"
-msgstr ""
+msgstr "유닛이 영구 해금된다"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/name"
 msgid "Kharkov"
-msgstr ""
+msgstr "하르코프"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/name_big"
 msgid "Kharkov"
-msgstr ""
+msgstr "하르코프"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/story"
 msgid "The third battle of Kharkov - Counterattack. We have to re-take Kharkov. Failure would result in a big gap in the front line.\n\nGoals:\n - Take the town in a swift counterattack.\n - Destroy all abandoned enemy material."
-msgstr ""
+msgstr "제3차 하르코프 전투 - 반격. 하르코프를 되찾아야 한다. 실패하면 전선에 큰 틈이 생긴다.\n\n목표:\n - 신속한 반격으로 도시를 탈환하라.\n - 버려진 적 물자를 모두 파괴하라."
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/place"
 msgid "On the west side of Kharkov"
-msgstr ""
+msgstr "하르코프 서쪽"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/date"
 msgid "February, 1943"
-msgstr ""
+msgstr "1943년 2월"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_start"
 msgid ""
@@ -67,52 +67,52 @@ msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_completed"
 msgid "Congratulations! Your counterattack was executed brilliantly. The frontline is closed once again! We lost an appalling number of men today, and we owe it to them to hold Kharkov at any cost."
-msgstr ""
+msgstr "축하한다! 반격이 훌륭하게 이루어졌다. 전선이 다시 막혔다! 오늘 끔찍한 수의 병사를 잃었다. 그들을 위해서라도 하르코프를 어떻게든 지켜야 한다."
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_failed"
 msgid "This was a failure, maybe not surprising - considering the enemy has enjoyed overwhelming numerical superiority. Whatever is left of your troops will now retreat in chaos with the red army in hot pursuit."
-msgstr ""
+msgstr "실패였다. 적이 압도적인 수적 우위를 누렸으니 놀랄 일은 아닐지도 모른다. 남은 병력은 붉은 군대에 바짝 쫓기며 혼란 속에 퇴각할 것이다."
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_failed_hq"
 msgid "Mission failed - the enemy captured your HQ!"
-msgstr ""
+msgstr "임무 실패 - 적이 본부를 점령했다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_hq"
 msgid "You must hold your field HQ!"
-msgstr ""
+msgstr "야전 본부를 사수해야 한다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_attack"
 msgid "Capture the outskirts of Kharkov!"
-msgstr ""
+msgstr "하르코프 외곽을 점령하라!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/flag_capture_status"
 msgid "Your soldiers secured %1%/7 Soviet positions!"
-msgstr ""
+msgstr "아군이 소련군 진지 %1%/7곳을 확보했다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start0"
 msgid "Welcome to battle, Major! This is our field HQ, it must remain in our control!"
-msgstr ""
+msgstr "전장에 온 것을 환영한다, Major! 이곳이 우리 야전 본부다. 반드시 지켜야 한다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start1"
 msgid "You need to attack at full speed! Use the mobility of your armor to achieve surprise."
-msgstr ""
+msgstr "전속력으로 공격해야 한다! 기갑의 기동력으로 기습을 달성하라."
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start2"
 msgid "The soviets deployed many tanks. Make sure you spot them before rushing in!"
-msgstr ""
+msgstr "소련군은 전차를 많이 배치했다. 돌진하기 전에 반드시 먼저 발견하라!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start3"
 msgid "Begin securing the objectives, meanwhile more reinforcements are being prepared for deployment!"
-msgstr ""
+msgstr "목표 확보를 시작하라. 그동안 투입할 증원을 더 준비하고 있다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/allied_enemy_near_hq"
 msgid "Comrades! Soviets are close to our Field HQ!"
-msgstr ""
+msgstr "동무들! 소련군이 우리 야전 본부에 접근했다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/player_enemy_near_hq"
 msgid "We must hold the command post! There can be no surrender!"
-msgstr ""
+msgstr "지휘소를 사수해야 한다! 항복이란 없다!"
 
 msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/hq_bonus"
 msgid "Major! Now you can request an airstrike, ZG 1 is at your disposal."
-msgstr ""
+msgstr "Major! 이제 공습을 요청할 수 있다. ZG 1이 지원 가능하다."

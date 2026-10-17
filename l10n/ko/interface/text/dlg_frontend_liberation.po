@@ -15,4 +15,4 @@ msgstr ""
 
 msgctxt "main_menu2/multiplayer/menu_doctrine_modal_title"
 msgid "Doctrine Unit Preview: "
-msgstr ""
+msgstr "교리 유닛 미리보기:"

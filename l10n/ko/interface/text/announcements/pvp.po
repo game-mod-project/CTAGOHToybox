@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "announce_pvp"
 msgid "Play more, wait less.\n\n Jump into Ranked PvP 1v1 & 2v2 or Casual queues with quick MMR-matched opponents. No more dead lobbies. No more getting kicked. Just nonstop games.\n\n Join our Discord Now! Go to -  <c(f5d167)>Channels & Roles- Ranked PvP role</c> - and join in on the fun!"
-msgstr ""
+msgstr "더 많이 플레이하고 덜 기다리세요.\n\n 랭크 PvP 1v1 & 2v2 또는 캐주얼 대기열에 참가해 MMR이 비슷한 상대와 바로 대전하세요. 텅 빈 로비도, 강제 퇴장도 없습니다. 끊김 없는 게임만 있습니다.\n\n 지금 Discord에 참여하세요! <c(f5d167)>채널 & 역할 - 랭크 PvP 역할</c>로 가서 함께 즐기세요!"
 
 msgctxt "button/discordserver"
 msgid "JOIN DISCORD SERVER!"
-msgstr ""
+msgstr "DISCORD 서버 참여!"

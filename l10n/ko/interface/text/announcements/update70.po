@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "announce_update70"
 msgid "Yet another highly anticipated update for our dynamic campaign generator, Conquest, is here!\n\n Smarter AI, dug-in defensive positions, community-requested changes, retreating mechanics and devastating counterattacks.\n\nUpdate 70 also brings you sound optimizations, and much more! \n\n<c(f5d167)>We're running a special sale to celebrate this important milestone!</c>"
-msgstr ""
+msgstr "동적 캠페인 생성기 정복전을 위한 또 하나의 기다리던 업데이트가 도착했습니다!\n\n 더 똑똑해진 AI, 참호를 판 방어 진지, 커뮤니티가 요청한 변경, 후퇴 시스템, 그리고 파괴적인 반격이 담겨 있습니다.\n\n업데이트 70은 사운드 최적화와 그 밖에 많은 것도 가져옵니다! \n\n<c(f5d167)>이 중요한 이정표를 기념해 특별 할인을 진행합니다!</c>"
 
 msgctxt "button/discounts2"
 msgid "<c(f5d167)>CHECK YOUR DISCOUNT!</c>"
-msgstr ""
+msgstr "<c(f5d167)>할인 확인!</c>"

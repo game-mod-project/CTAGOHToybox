@@ -35,31 +35,31 @@ msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"
-msgstr ""
+msgstr "증원 메뉴:"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/buys_on_after_flag"
 msgid "Units unlock permanently"
-msgstr ""
+msgstr "유닛이 영구 해금된다"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/name"
 msgid "Battle of the Bulge [SKIRMISH]"
-msgstr ""
+msgstr "벌지 전투 [스커미시]"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/name_big"
 msgid "Battle of the Bulge"
-msgstr ""
+msgstr "벌지 전투"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/story"
 msgid "The Battle of the Bulge\n\nAfter the initial battles, you are surrounded by Germans. Time for a breakout attempt!\n\nGoals:\n - Break the encirclement.\n - Close the front."
-msgstr ""
+msgstr "벌지 전투\n\n초기 전투 후 너는 독일군에게 포위되었다. 포위망을 돌파할 때다!\n\n목표:\n - 포위망을 돌파하라.\n - 전선을 닫아라."
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/place"
 msgid "Region between Hotton and Bastogne"
-msgstr ""
+msgstr "호턴과 바스토뉴 사이 지역"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/date"
 msgid "January, 1945"
-msgstr ""
+msgstr "1945년 1월"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_start"
 msgid ""
@@ -67,60 +67,60 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_completed"
 msgid "Well done! We'll drive them back to their starting point next!"
-msgstr ""
+msgstr "잘했다! 다음에는 놈들을 출발선까지 몰아낸다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_failed"
 msgid "This is not the desired outcome. You need to regroup, and use different tactics!"
-msgstr ""
+msgstr "바라던 결과가 아니다. 전열을 재정비하고 다른 전술을 써야 한다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_failed_hq"
 msgid "We have been defeated at the Ardennes. With nothing to stop the Germans, they may get to Antwerp and cut our european armies in two!"
-msgstr ""
+msgstr "아르덴에서 패했다. 독일군을 막을 것이 없으니 안트베르펜에 도달해 유럽의 아군을 둘로 갈라놓을 수도 있다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_hq"
 msgid "You must hold your field HQ!"
-msgstr ""
+msgstr "야전 본부를 사수해야 한다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_attack"
 msgid "Punch a hole in the enemy position and drive east!"
-msgstr ""
+msgstr "적 진지에 구멍을 내고 동쪽으로 진격하라!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/flag_capture_status"
 msgid "Your soldiers secured %1%/7 German positions!"
-msgstr ""
+msgstr "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start0"
 msgid "The German assault on the Ardennes has taken us by complete surprise! Lieutenant, This is your field HQ, as you know by now, we cannot afford to lose it!"
-msgstr ""
+msgstr "독일군의 아르덴 공격은 우리에게 완전한 기습이었다! Lieutenant, 여기가 야전 본부다. 이미 알다시피 잃어서는 안 된다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start1"
 msgid "The Krauts hit us hard during Christmas, but our new year's resolution is to turn the tables on their offensive! Seize the initiative and drive the Nazis back to Germany!"
-msgstr ""
+msgstr "독일 놈들이 크리스마스에 우리를 세게 쳤지만, 우리의 신년 결의는 놈들의 공세를 뒤집는 것이다! 주도권을 잡고 나치를 독일로 몰아내라!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start2"
 msgid "Expect heavy resistance from their well-trained and battle hardened troops."
-msgstr ""
+msgstr "잘 훈련되고 전투 경험이 풍부한 적의 거센 저항을 각오해라."
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start3"
 msgid "Begin the attack, Lieutenant! Show them what we're made of!"
-msgstr ""
+msgstr "공격을 개시해라, Lieutenant! 우리가 어떤 사람들인지 보여 줘라!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/allied_enemy_near_hq"
 msgid "Gentlemen! Germans are close to our Field HQ!"
-msgstr ""
+msgstr "제군! 독일군이 야전 본부 가까이에 있다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/allied_enemy_plane"
 msgid "Enemy plane!!!"
-msgstr ""
+msgstr "적 항공기다!!!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/allied_enemy_plane2"
 msgid "German aircraft inbound!"
-msgstr ""
+msgstr "독일 항공기 접근 중!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/player_enemy_near_hq"
 msgid "We must hold our command post! You have your orders!"
-msgstr ""
+msgstr "지휘소를 지켜야 한다! 명령은 받았을 것이다!"
 
 msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/hq_bonus"
 msgid "Lieutenant! Now may now request an airstrike. The skies have cleared since the Krauts began their offensive, and now wse may resume our air supremacy!"
-msgstr ""
+msgstr "Lieutenant! 이제 공습을 요청할 수 있다. 독일 놈들이 공세를 시작한 뒤로 하늘이 개었으니, 다시 제공권을 되찾을 수 있다!"

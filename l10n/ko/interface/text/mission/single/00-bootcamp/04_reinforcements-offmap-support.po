@@ -31,7 +31,7 @@ msgstr "훈련 4: 증원"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/name_big"
 msgid "Reinforcements"
-msgstr ""
+msgstr "증원"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/00"
 msgid "Soldaten! Welcome back to the front line! Today you will learn advanced strategies like requesting reinforcements from HQ and using support weaponry like the artillery signaller."

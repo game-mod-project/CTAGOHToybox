@@ -15,16 +15,16 @@ msgstr ""
 
 msgctxt "gameover/mission_completed"
 msgid "<f(pobeda)s(42)b+c(EEEEEE)e(shadow)>Mission Completed!"
-msgstr ""
+msgstr "<f(pobeda)s(42)b+c(EEEEEE)e(shadow)>임무 완료!"
 
 msgctxt "gameover/mission_failed"
 msgid "<f(pobeda)s(42)b+c(EEEEEE)e(shadow)>Mission Failed!"
-msgstr ""
+msgstr "<f(pobeda)s(42)b+c(EEEEEE)e(shadow)>임무 실패!"
 
 msgctxt "main_menu2/dynamic_campaign/region_hint_finest_hour"
 msgid "Western Europe - (Finest Hour Maps)"
-msgstr ""
+msgstr "서유럽 - (Finest Hour 맵)"
 
 msgctxt "main_menu2/dynamic_campaign/region_hint_west_fh"
 msgid "Western Europe - (Finest Hour + Liberation Maps)"
-msgstr ""
+msgstr "서유럽 - (Finest Hour + Liberation 맵)"

@@ -95,20 +95,20 @@ msgstr "각하! 멀리서 또 다른 종대가 접근하는 소리가 들립니�
 
 msgctxt "mission/single/03-fin/1941_08_porlampi/place"
 msgid "8th Infantry Division"
-msgstr ""
+msgstr "제8보병사단"
 
 msgctxt "mission/single/03-fin/1941_08_porlampi/task1"
 msgid "Ambush the enemy supply convoy"
-msgstr ""
+msgstr "적 보급 수송대를 매복 공격하라"
 
 msgctxt "mission/single/03-fin/1941_08_porlampi/task2"
 msgid "Intercept and silence the retreating artillery column."
-msgstr ""
+msgstr "후퇴하는 포병 종대를 차단해 침묵시켜라."
 
 msgctxt "mission/single/03-fin/1941_08_porlampi/task3"
 msgid "Capture and re-supply the enemy artillery"
-msgstr ""
+msgstr "적 포병을 점령하고 재보급하라"
 
 msgctxt "mission/single/03-fin/1941_08_porlampi/task4"
 msgid "Eliminate the enemy forces in the area"
-msgstr ""
+msgstr "지역 내 적 병력을 섬멸하라"

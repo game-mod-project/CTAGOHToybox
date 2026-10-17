@@ -15,32 +15,32 @@ msgstr ""
 
 msgctxt "names/mon/first"
 msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
-msgstr ""
+msgstr "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
 
 msgctxt "names/mon/last"
 msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
-msgstr ""
+msgstr "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
 
 msgctxt "names/mon_medic/first"
 msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
-msgstr ""
+msgstr "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
 
 msgctxt "names/mon_medic/last"
 msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
-msgstr ""
+msgstr "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
 
 msgctxt "names/mon_officer/first"
 msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
-msgstr ""
+msgstr "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
 
 msgctxt "names/mon_officer/last"
 msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
-msgstr ""
+msgstr "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
 
 msgctxt "names/mon_sniper/first"
 msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
-msgstr ""
+msgstr "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
 
 msgctxt "names/mon_sniper/last"
 msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
-msgstr ""
+msgstr "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"

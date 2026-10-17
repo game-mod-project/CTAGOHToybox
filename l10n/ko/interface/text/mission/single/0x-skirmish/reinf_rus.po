@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_rus/hintbonus"
 msgid "Air bombing of the selected area"
-msgstr ""
+msgstr "선택 지역 폭격"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/hint"
 msgid "Deploy your reinforcements on the battlefield"
@@ -23,7 +23,7 @@ msgstr "증원을 전장에 배치하라"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/menu:1_1"
 msgid "Infantry"
-msgstr ""
+msgstr "보병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/menu:2_1"
 msgid "Support"
@@ -31,11 +31,11 @@ msgstr "지원"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/menu:3_1"
 msgid "Vehicles"
-msgstr ""
+msgstr "차량"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/menu:4_1"
 msgid "Tanks"
-msgstr ""
+msgstr "전차"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/menu:back"
 msgid "Return to menu"
@@ -51,7 +51,7 @@ msgstr "BM-31-12 Andryusha"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/280mm_br5"
 msgid "280mm mortar(Br-5)"
-msgstr ""
+msgstr "280mm 박격포(Br-5)"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/crew"
 msgid "Tank crew"
@@ -75,7 +75,7 @@ msgstr "정치위원"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/signaller"
 msgid "Battery Signaller"
-msgstr ""
+msgstr "포대 통신병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/flamer"
 msgid "Flamer"
@@ -91,7 +91,7 @@ msgstr "보병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/partisans"
 msgid "Partisans"
-msgstr ""
+msgstr "파르티잔"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/paras"
 msgid "Paratroopers"
@@ -103,23 +103,23 @@ msgstr "돌격 공병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/gmarines"
 msgid "Guards Marines"
-msgstr ""
+msgstr "근위 해병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/militia"
 msgid "Militia"
-msgstr ""
+msgstr "민병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/conscripts"
 msgid "Conscript squad"
-msgstr ""
+msgstr "징집병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/spetsnaz"
 msgid "Spetsnaz"
-msgstr ""
+msgstr "스페츠나츠"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/penalsq"
 msgid "Penal Squad"
-msgstr ""
+msgstr "징벌 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/guardsinf"
 msgid "Guards Inf."
@@ -127,7 +127,7 @@ msgstr "근위 보병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/reconsq"
 msgid "Recon Squad"
-msgstr ""
+msgstr "정찰 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/crate"
 msgid "Ammo crate"
@@ -139,7 +139,7 @@ msgstr "Maxim M1910/30"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/sg43_stand"
 msgid "SG-43 Stand MG"
-msgstr ""
+msgstr "SG-43 거치 기관총"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/dshk_stan"
 msgid "DShK M1938 MG"
@@ -147,7 +147,7 @@ msgstr "DShK M1938 MG"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/dshk_aa"
 msgid "DShK M1938 AA"
-msgstr ""
+msgstr "DShK M1938 대공"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/120mm_pm38"
 msgid "120mm PM-38"
@@ -155,11 +155,11 @@ msgstr "120mm PM-38"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/122mm_m30"
 msgid "122mm M-30"
-msgstr ""
+msgstr "122mm M-30"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/122mm_a19"
 msgid "122mm A-19"
-msgstr ""
+msgstr "122mm A-19"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/152mm_ml20"
 msgid "152mm ML-20 M1937"
@@ -167,7 +167,7 @@ msgstr "152mm ML-20 M1937"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/152mm_br2"
 msgid "152mm gun(Br-2)"
-msgstr ""
+msgstr "152mm 포(Br-2)"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/203mm_b4"
 msgid "203mm B-4 M1931"
@@ -211,7 +211,7 @@ msgstr "76mm ZIS-3 M1942"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/76mm_zis3_towed"
 msgid "76mm ZIS-3 towed"
-msgstr ""
+msgstr "76mm ZIS-3 견인"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/76mm_f22"
 msgid "76mm F-22 M1936"
@@ -235,7 +235,7 @@ msgstr "85mm 52-K M1939"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/85mm_52k_towed"
 msgid "85mm 52-K towed"
-msgstr ""
+msgstr "85mm 52-K 견인"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/ba20"
 msgid "BA-20"
@@ -259,7 +259,7 @@ msgstr "BM-13 Katyusha"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/zis5guards"
 msgid "ZIS-5/Guards"
-msgstr ""
+msgstr "ZIS-5/근위"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/gaz_aaa_72k"
 msgid "GAZ-AAA 72-K"
@@ -267,15 +267,15 @@ msgstr "GAZ-AAA 72-K"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/zis5eng"
 msgid "ZIS-5(Engineer)"
-msgstr ""
+msgstr "ZIS-5(공병)"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/gaz_fuel"
 msgid "GAZ-AAA(Fuel)"
-msgstr ""
+msgstr "GAZ-AAA(연료)"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/gaz_aaa_supply"
 msgid "GAZ-AAA(Supply)"
-msgstr ""
+msgstr "GAZ-AAA(보급)"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/t37a"
 msgid "T-37A"
@@ -315,7 +315,7 @@ msgstr "BT-7A"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/kht26"
 msgid "KhT-26(flame)"
-msgstr ""
+msgstr "KhT-26(화염)"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/t60"
 msgid "T-60 M1941"
@@ -363,15 +363,15 @@ msgstr "SU-85"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/t3476_40"
 msgid "T-34-76 M1940"
-msgstr ""
+msgstr "T-34-76 M1940"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/t3476_41"
 msgid "T-34-76 M1941"
-msgstr ""
+msgstr "T-34-76 M1941"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/t3476_42"
 msgid "T-34-76 M1942"
-msgstr ""
+msgstr "T-34-76 M1942"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/t3457_43"
 msgid "T-34/57 M1943"
@@ -455,11 +455,11 @@ msgstr "Valentine Mk.IX"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/smg_squad"
 msgid "SMG squad"
-msgstr ""
+msgstr "기관단총 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/marines"
 msgid "Marines"
-msgstr ""
+msgstr "해병"
 
 msgctxt "mission/single/0x-skirmish/menu_rus/su100"
 msgid "SU-100"

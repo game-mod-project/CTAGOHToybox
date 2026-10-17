@@ -15,108 +15,108 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/date"
 msgid "April 20th, 1945 · Drethem, Germany."
-msgstr ""
+msgstr "1945년 4월 20일 · 독일 드레템."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/name"
 msgid "When will it end?"
-msgstr ""
+msgstr "언제 끝나는가?"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/name_big"
 msgid "When will it end?"
-msgstr ""
+msgstr "언제 끝나는가?"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator01"
 msgid "Bahrendorf is ours. Now, we must secure Drethem and the surrounding area before we can cross the river."
-msgstr ""
+msgstr "바렌도르프는 우리 것이다. 이제 강을 건너기 전에 드레템과 주변 지역을 확보해야 한다."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator02"
 msgid "Let's send a patrol to Drethem to see if there are any enemy forces in the area."
-msgstr ""
+msgstr "드레템에 정찰대를 보내 이 일대에 적 병력이 있는지 확인하자."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator04"
 msgid "We should take a look at that farmhouse as well."
-msgstr ""
+msgstr "저 농가도 살펴봐야 한다."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator03"
 msgid "Ambush!"
-msgstr ""
+msgstr "매복이다!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator_civilian01"
 msgid "*Shit*, the Americans are here. Please! You must leave this place!"
-msgstr ""
+msgstr "*젠장*, 미군이 왔어. 제발! 여기서 떠나야 해요!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator05"
 msgid "Why do you say that? What's got you worried?"
-msgstr ""
+msgstr "왜 그렇게 말하지? 뭐가 걱정이냐?"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator_civilian03"
 msgid "There are fanatical troops in the surrounding area. They are observing us. They are observing the whole area!"
-msgstr ""
+msgstr "주변에 광신적인 부대가 있어요. 우리를 지켜보고 있어요. 이 일대 전체를 지켜보고 있다고요!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator_civilian04"
 msgid "Junger Mann, we cannot be seen helping you, nor do we want to be caught in the middle of a fight. Not with them! Not here! *God Help Us!*"
-msgstr ""
+msgstr "젊은이, 우리가 당신들을 돕는 모습을 보이면 안 돼요. 싸움에 휘말리고 싶지도 않고요. 그들 앞에서는 안 돼요! 여기선 안 돼요! *하느님, 도와주소서!*"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator06"
 msgid "Listen up, men! Set up a defensive perimeter around the village and stay alert! There could be more stubborn Krauts nearby."
-msgstr ""
+msgstr "잘 들어라, 제군! 마을 주위에 방어 경계선을 치고 경계를 늦추지 마라! 근처에 고집 센 독일 놈들이 더 있을 수 있다."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator07"
 msgid "We need to get these civilians out of harm's way. Let's use one of these trucks to evacuate them back to Bahrendorf."
-msgstr ""
+msgstr "이 민간인들을 위험에서 빼내야 한다. 이 트럭 한 대로 바렌도르프까지 대피시키자."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator08"
 msgid "The civilians should be safe now!"
-msgstr ""
+msgstr "이제 민간인들은 안전할 것이다!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator_civilian02"
 msgid "Thank you for saving us! But please, just turn around! As long as you can and spare your men! And spare my village! This war - it is already over."
-msgstr ""
+msgstr "구해 줘서 고마워요! 하지만 제발, 돌아가세요! 할 수 있을 때, 병사들을 아끼세요! 내 마을도 살려 주세요! 이 전쟁은 이미 끝났어요."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator10"
 msgid "Move out! Secure the remaining areas on our side of the river!"
-msgstr ""
+msgstr "출발해라! 강 이쪽 편에 남은 지역을 확보해라!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/narrator09"
 msgid "Due to the poor weather conditions, we cannot use our aircraft, but we can use a nearby artillery battery to strike the enemy."
-msgstr ""
+msgstr "날씨가 나빠 항공기를 쓸 수 없지만, 근처 포대를 이용해 적을 타격할 수 있다."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/outro_completed"
 msgid "At last! You have reached the Elbe, and the war is as good as over. Those civilians will be very thankful, and you’ve done a great job to master a challenging situation. You have gloriously completed a campaign that was long and difficult. Maybe High Command will finally send you for some R & R, or maybe you can even go home? Time will tell. One thing is sure: you have earned a reputation of legendary proportions. Excellent work, soldier!"
-msgstr ""
+msgstr "드디어! 엘베에 도달했고 전쟁은 사실상 끝났다. 저 민간인들은 크게 감사할 것이며, 당신은 어려운 상황을 훌륭히 해냈다. 길고 힘든 캠페인을 영광스럽게 완수했다. 어쩌면 최고사령부가 마침내 휴가를 보내 줄지도 모른다. 아니, 집에 갈 수도 있을까? 두고 볼 일이다. 한 가지는 확실하다. 당신은 전설적인 명성을 얻었다. 훌륭했다, 병사!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/outro_failed"
 msgid "That’s very unfortunate. This kind of failure hasn’t happened in a long time. But maybe the circumstances were too unusual and too complicated this time. Maybe that’s what caused your mistakes. Your record shows you should be able to get this right. You should try again!"
-msgstr ""
+msgstr "매우 안타깝다. 이런 실패는 오랫동안 없었다. 하지만 이번에는 상황이 너무 특이하고 복잡했을지도 모른다. 그 탓에 실수가 나왔을 수도 있다. 당신의 기록을 보면 제대로 해낼 수 있을 것이다. 다시 도전하라!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/place"
 msgid "82nd Airborne Division \"All American\""
-msgstr ""
+msgstr "제82공수사단 '올 아메리칸'"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/reinforcements_artillery"
 msgid "Artillery barrage"
-msgstr ""
+msgstr "포격"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/story"
 msgid "  After the Battle of the Bulge, and after helping to secure the Ruhr, the 82nd Airborne Division is driving into Germany. Anyone in their right mind can see that the war is ending. Yet, any Germans caught waving a white flag still run the risk of being executed on the spot.\n\n  The 82nd knows full well what might still happen as it enters the hamlet of Bahrendorf. Your unit advances to Drethem, which is on the Elbe River. After taking Drethem, crossing the river can be considered only if the area is secure.\n\n Good luck!"
-msgstr ""
+msgstr "  벌지 전투를 치르고 루르 확보를 도운 뒤, 제82공수사단은 독일 본토로 진격하고 있다. 제정신인 사람이라면 전쟁이 끝나가고 있음을 알 수 있다. 그런데도 백기를 흔들다 붙잡힌 독일인은 여전히 그 자리에서 처형될 위험이 있다.\n\n  제82사단은 바렌도르프 마을에 들어서면 무슨 일이 벌어질지 잘 알고 있다. 당신의 부대는 엘베 강변의 드레템으로 진격한다. 드레템을 점령한 뒤에는 지역이 안전할 때에만 강 도하를 고려할 수 있다.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/task01"
 msgid "Secure the village of Drethem."
-msgstr ""
+msgstr "드레템 마을을 확보하라."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/task02"
 msgid "Check the nearby farmhouse."
-msgstr ""
+msgstr "근처 농가를 조사하라."
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/task03"
 msgid "Defend the village!"
-msgstr ""
+msgstr "마을을 지켜라!"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/task04"
 msgid "Evacuate the civilians to safety. (All 10 must survive)"
-msgstr ""
+msgstr "민간인을 안전한 곳으로 대피시켜라. (10명 모두 생존)"
 
 msgctxt "mission/single/041-usa_airborne/1945_04_30_elbe/task05"
 msgid "Clear all the enemy resistance on this side of the Elbe River."
-msgstr ""
+msgstr "엘베 강 이쪽 편의 적 저항을 모두 소탕하라."

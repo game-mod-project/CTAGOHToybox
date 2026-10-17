@@ -16,15 +16,15 @@ msgstr ""
 
 msgctxt "mp/game/evacuation"
 msgid "Last Stand"
-msgstr ""
+msgstr "라스트 스탠드"
 
 msgctxt "mp/game/evacuation/info"
 msgid "\nDefend your HQ against waves of enemies. \nHold out until time has expired! \nSecure key locations for additional resources!"
-msgstr ""
+msgstr "\n밀려오는 적 웨이브로부터 본부를 방어하라. \n시간이 다 될 때까지 버텨라! \n핵심 지점을 확보해 추가 자원을 얻어라!"
 
 msgctxt "mp/game/evacuation/rules"
 msgid "Last Stand"
-msgstr ""
+msgstr "라스트 스탠드"
 
 msgctxt "mp/game/evacuation/objective"
 msgid ""
@@ -32,36 +32,36 @@ msgstr ""
 
 msgctxt "mp/game/text/evacuation_wavetime"
 msgid "The %1%. enemy wave will arrive in"
-msgstr ""
+msgstr "%1%번째 적 웨이브 도착까지"
 
 msgctxt "mp/game/text/evacuation_supply_secured"
 msgid "You have secured the designated location, HQ has sent you additional resources."
-msgstr ""
+msgstr "지정된 지점을 확보해 본부가 추가 자원을 보냈다."
 
 msgctxt "mp/game/text/evacuation_supply_enabled"
 msgid "Secondary objective available! Secure the designated location for additional resources!"
-msgstr ""
+msgstr "보조 목표 발생! 지정된 지점을 확보해 추가 자원을 얻어라!"
 
 msgctxt "mp/settings/team#defenders"
 msgid "Team A Defenders"
-msgstr ""
+msgstr "A팀 방어"
 
 msgctxt "mp/settings/team#attackers"
 msgid "Team B Attackers"
-msgstr ""
+msgstr "B팀 공격"
 
 msgctxt "mp/lobby/setup/settings.firstWaveTime"
 msgid "Start wave time"
-msgstr ""
+msgstr "첫 웨이브 시간"
 
 msgctxt "mp/lobby/setup/settings.firstWaveTime#hint"
 msgid "Time in seconds between the start of the match and the first attack wave."
-msgstr ""
+msgstr "경기 시작부터 첫 공격 웨이브까지의 시간(초)."
 
 msgctxt "mp/lobby/setup/settings.waveTime"
 msgid "Interval wave time"
-msgstr ""
+msgstr "웨이브 간격"
 
 msgctxt "mp/lobby/setup/settings.waveTime#hint"
 msgid "Time in seconds between each attack wave after the first attack."
-msgstr ""
+msgstr "첫 공격 이후 각 공격 웨이브 사이의 시간(초)."

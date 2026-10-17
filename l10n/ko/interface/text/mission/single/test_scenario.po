@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "mission/single/test_scenario/test/name"
 msgid "test"
-msgstr ""
+msgstr "테스트"
 
 msgctxt "mission/single/test_scenario/test/name_big"
 msgid ""
@@ -23,4 +23,4 @@ msgstr ""
 
 msgctxt "mission/single/test_scenario/test/test"
 msgid "this is a test subtitle message, this should display in white color on the bottom of the cutscene. And it will remain here for the whole duration of the cutscene. It should also auto-trigger a voice file for this line, like with the talk command."
-msgstr ""
+msgstr "이는 테스트 자막 메시지다. 컷신 하단에 흰색으로 표시되어 컷신 내내 남아 있어야 한다. 또한 talk 명령처럼 이 대사의 음성 파일도 자동으로 재생되어야 한다."

@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/hintbonus"
 msgid "Air bombing of the selected area"
-msgstr ""
+msgstr "선택 지역 폭격"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/hint"
 msgid "Deploy your reinforcements on the battlefield"
@@ -23,7 +23,7 @@ msgstr "증원을 전장에 배치하라"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/menu:1_1"
 msgid "Infantry"
-msgstr ""
+msgstr "보병"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/menu:2_1"
 msgid "Support"
@@ -31,11 +31,11 @@ msgstr "지원"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/menu:3_1"
 msgid "Vehicles"
-msgstr ""
+msgstr "차량"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/menu:4_1"
 msgid "Tanks"
-msgstr ""
+msgstr "전차"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/menu:back"
 msgid "Return to menu"
@@ -71,7 +71,7 @@ msgstr "화염방사병"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/signaller"
 msgid "Battery signaller"
-msgstr ""
+msgstr "포대 통신병"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/atsq"
 msgid "AT squad"
@@ -83,15 +83,15 @@ msgstr "소총 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/glider_sq"
 msgid "Glider squad"
-msgstr ""
+msgstr "글라이더 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/recon_sq"
 msgid "Recon squad"
-msgstr ""
+msgstr "정찰 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/rifle_heavy_sq"
 msgid "Heavy rifle squad"
-msgstr ""
+msgstr "중무장 소총 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/engineer_sq"
 msgid "Engineer squad"
@@ -99,23 +99,23 @@ msgstr "공병 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/airborne_sq"
 msgid "Airborne squad"
-msgstr ""
+msgstr "공수 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/veteran_sq"
 msgid "Veteran squad"
-msgstr ""
+msgstr "베테랑 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/1stspecial_sq"
 msgid "1st Special squad"
-msgstr ""
+msgstr "제1특수 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/ranger_sq"
 msgid "Ranger squad"
-msgstr ""
+msgstr "레인저 분대"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m3a1_arm_inf"
 msgid "Rifle squad(M3A1)"
-msgstr ""
+msgstr "소총 분대(M3A1)"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/crate"
 msgid "Supply Crate"
@@ -135,7 +135,7 @@ msgstr "연료 트럭"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/cckw_engineer"
 msgid "Engineering Truck"
-msgstr ""
+msgstr "공병 트럭"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m2_30cal_tripod"
 msgid "Browning M1919A4"
@@ -151,7 +151,7 @@ msgstr "M8 Greyhound"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m21_mortar_carrier"
 msgid "Mortar Carrier M21"
-msgstr ""
+msgstr "M21 박격포 수송차"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m15a1_cgmc"
 msgid "CGMC M15A1"
@@ -191,7 +191,7 @@ msgstr "37mm Gun M3A1"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m21_mortar_carrier"
 msgid "Mortar Carrier M21"
-msgstr ""
+msgstr "M21 박격포 수송차"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/57mm_m1"
 msgid "57mm Gun M1"
@@ -211,19 +211,19 @@ msgstr "MGMC M16"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/40mm_m1"
 msgid "40mm Automatic M1"
-msgstr ""
+msgstr "40mm 자동포 M1"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/76mm_m5_m1"
 msgid "M5 Gun M1 Carriage"
-msgstr ""
+msgstr "M5 포 M1 포가"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/76mm_m5_m6"
 msgid "M5 Gun M6 Carriage"
-msgstr ""
+msgstr "M5 포 M6 포가"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/75mm_m1a1"
 msgid "75mm M1A1"
-msgstr ""
+msgstr "75mm M1A1"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/107mm_m2"
 msgid "4.2-inch Mortar M2"
@@ -231,7 +231,7 @@ msgstr "4.2-inch Mortar M2"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m10_gmc"
 msgid "M10 Wolverine"
-msgstr ""
+msgstr "M10 Wolverine"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m8_hmc"
 msgid "75mm HMC M8"
@@ -239,7 +239,7 @@ msgstr "75mm HMC M8"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m18_hellcat"
 msgid "M18 'Hellcat'"
-msgstr ""
+msgstr "M18 'Hellcat'"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a1_75_late"
 msgid "M4A1 (Late)"
@@ -251,19 +251,19 @@ msgstr "M4A3 (후기)"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3_75w_e4_5"
 msgid "M4A3(75)W 'E4-5'"
-msgstr ""
+msgstr "M4A3(75)W 'E4-5'"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3e2_75"
 msgid "M4A3E2(75)W Jumbo"
-msgstr ""
+msgstr "M4A3E2(75)W Jumbo"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3e2_76"
 msgid "M4A3E2(76)W Jumbo"
-msgstr ""
+msgstr "M4A3E2(76)W Jumbo"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3_75w"
 msgid "M4A3(75)W"
-msgstr ""
+msgstr "M4A3(75)W"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3_105"
 msgid "M4A3(105)"
@@ -279,11 +279,11 @@ msgstr "M26 Pershing"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m36b1_gmc_t33"
 msgid "M36B1 'Slugger'"
-msgstr ""
+msgstr "M36B1 'Slugger'"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3_calliope"
 msgid "M4A3 'Calliope'"
-msgstr ""
+msgstr "M4A3 'Calliope'"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a3_76w_hvss"
 msgid "M4A3(76)W HVSS"
@@ -291,7 +291,7 @@ msgstr "M4A3(76)W HVSS"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m7b1_hmc"
 msgid "M7B1 Priest"
-msgstr ""
+msgstr "M7B1 Priest"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m4a1_76w"
 msgid "M4A1(76)W"
@@ -307,11 +307,11 @@ msgstr "105mm Howitzer M3"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/155mm_m1a1_longtom"
 msgid "155mm 'Long Tom'"
-msgstr ""
+msgstr "155mm 'Long Tom'"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/114mm_m1"
 msgid "4.5in M1 Howitzer"
-msgstr ""
+msgstr "4.5in M1 곡사포"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/155mm_m1"
 msgid "155mm Howitzer M1"
@@ -319,7 +319,7 @@ msgstr "155mm Howitzer M1"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/203mm_m1"
 msgid "8in Howitzer M1"
-msgstr ""
+msgstr "8in 곡사포 M1"
 
 msgctxt "mission/single/041-usa_airborne/menu_usa/m12_gmc"
 msgid "155mm GMC M12"

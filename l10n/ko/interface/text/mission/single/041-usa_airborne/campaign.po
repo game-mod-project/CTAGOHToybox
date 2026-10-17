@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/campaign/title"
 msgid "USA, 1944-45"
-msgstr ""
+msgstr "미국, 1944-45"
 
 msgctxt "mission/single/041-usa_airborne/campaign/name"
 msgid "AIRBORNE</c>"
-msgstr ""
+msgstr "공수</c>"

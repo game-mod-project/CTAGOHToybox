@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/campaign/title"
 msgid "Germany (Western Front), 1940-45"
-msgstr ""
+msgstr "독일 (서부 전선), 1940-45"
 
 msgctxt "mission/single/051-ger_finesthour/campaign/name"
 msgid "The Eagle and the Lion</c>"
-msgstr ""
+msgstr "독수리와 사자</c>"

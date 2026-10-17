@@ -16,7 +16,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/player_reinf_arrive"
 msgid "Our reinforcements are here!"
-msgstr ""
+msgstr "증원이 도착했다!"
 
 msgctxt "mission/single/04-usa/player_reinf_arrive_alt"
 msgid "Reinforcements have arrived!"
@@ -24,24 +24,24 @@ msgstr "증원이 도착했다!"
 
 msgctxt "mission/single/04-usa/allied_obj_capture"
 msgid "Strategic position secured!"
-msgstr ""
+msgstr "전략 거점을 확보했다!"
 
 msgctxt "mission/single/04-usa/allied_obj_capture_alt"
 msgid "Key point captured!"
-msgstr ""
+msgstr "핵심 지점을 점령했다!"
 
 msgctxt "mission/single/04-usa/allied_obj_lost"
 msgid "We lost a strategic point!"
-msgstr ""
+msgstr "전략 거점을 잃었다!"
 
 msgctxt "mission/single/04-usa/allied_obj_lost_alt"
 msgid "Strategic location was retaken by enemy soldiers!"
-msgstr ""
+msgstr "전략 지점을 적이 탈환했다!"
 
 msgctxt "mission/single/04-usa/incoming_enemy_arty"
 msgid "Enemy artillery incoming! On the ground!"
-msgstr ""
+msgstr "적 포탄이 날아온다! 엎드려!"
 
 msgctxt "mission/single/04-usa/repair_abandoned_tank"
 msgid "Repair and recover this abandoned enemy tank!"
-msgstr ""
+msgstr "버려진 적 전차를 수리해 회수하라!"

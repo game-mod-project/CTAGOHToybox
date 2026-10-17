@@ -15,15 +15,15 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzglehr_sq"
 msgid "Pz-Lehr Pz.Grenadier squad"
-msgstr ""
+msgstr "판처 레어 판처그레나디어 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_sq"
 msgid "Pz-Lehr Pz.Aufklarer squad"
-msgstr ""
+msgstr "판처 레어 판처 아우프클레러 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_ht"
 msgid "Pz-Lehr Armored Pz.Aufklarer"
-msgstr ""
+msgstr "판처 레어 장갑 판처 아우프클레러"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_sq"
 msgid "Pz-Lehr Pz.Sturmgrenadier squad"
@@ -31,15 +31,15 @@ msgstr "판처 레어 판처슈투름그레나디어 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_ht"
 msgid "Pz-Lehr Armored Pz.Sturmgrenadier"
-msgstr ""
+msgstr "판처 레어 장갑 판처 슈투름그레나디어"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_sq"
 msgid "Pz-Lehr Pz.Pionier squad"
-msgstr ""
+msgstr "판처 레어 판처피오니어 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_ht"
 msgid "Pz-Lehr Armored Pz.Pionier"
-msgstr ""
+msgstr "판처 레어 장갑 판처피오니어"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_1"
 msgid "Sd.Kfz 234/1 (2cm)"
@@ -63,7 +63,7 @@ msgstr "포병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_22"
 msgid "Sd.Kfz 251/22 Ausf.D (7.5cm PaK 40)"
-msgstr ""
+msgstr "Sd.Kfz 251/22 Ausf.D (7.5cm PaK 40)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/105mm_lefh18_40"
 msgid "10.5cm LeFH 18/40"
@@ -83,7 +83,7 @@ msgstr "Sd.Kfz 7/2 (3.7cm FlaK)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_21"
 msgid "Sd.Kfz 251/21 Ausf.D (15mm Drilling)"
-msgstr ""
+msgstr "Sd.Kfz 251/21 Ausf.D (15mm Drilling)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/mg42_lafette"
 msgid "Lafette MG 42"
@@ -91,7 +91,7 @@ msgstr "Lafette MG 42"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/hintartybonus"
 msgid "Artillery strike of the selected area"
-msgstr ""
+msgstr "선택한 지역에 포병 사격"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/artystrike_heavy"
 msgid "Heavy Artillery Barrage"
@@ -103,11 +103,11 @@ msgstr "대형 포병 포격"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/artystrike"
 msgid "Artillery barrage"
-msgstr ""
+msgstr "포격"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_1_stuka"
 msgid "Sd.Kfz 251/1 Ausf.D (Wurfrahmen 40)"
-msgstr ""
+msgstr "Sd.Kfz 251/1 Ausf.D (Wurfrahmen 40)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/hummel"
 msgid "Hummel"

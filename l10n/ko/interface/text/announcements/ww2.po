@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "announce_ww2sale"
 msgid "81 years have passed since the end of the Second World War in Europe.\n\n Call to Arms - Gates of Hell remembers and honours the combatants that took part in the most devastating conflict in history.\n\n <c(f5d167)>Enjoy one week of discount, complete your collection!</c>"
-msgstr ""
+msgstr "유럽에서 제2차 세계 대전이 끝난 지 81년이 지났습니다.\n\n Call to Arms - Gates of Hell은 역사상 가장 참혹한 분쟁에 참전한 이들을 기억하고 기립니다.\n\n <c(f5d167)>일주일간의 할인을 즐기고 컬렉션을 완성하세요!</c>"
 
 msgctxt "button/discounts"
 msgid "<c(f5d167)>CHECK THE DISCOUNTS!</c>"
-msgstr ""
+msgstr "<c(f5d167)>할인 확인!</c>"

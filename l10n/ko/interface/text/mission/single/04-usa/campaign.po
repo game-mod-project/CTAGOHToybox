@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/campaign/title"
 msgid "USA, 1944-45"
-msgstr ""
+msgstr "미국, 1944-45"
 
 msgctxt "mission/single/04-usa/campaign/name"
 msgid "LIBERATION</c>"
-msgstr ""
+msgstr "해방</c>"

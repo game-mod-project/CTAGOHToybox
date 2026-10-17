@@ -16,8 +16,8 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/arty_bad_location"
 msgid "The location you marked for artillery is out of range for targeting. Please call-in artillery on a new location!"
-msgstr ""
+msgstr "포병 목표로 표시한 위치는 조준 사거리 밖이다. 새 위치에 포병 사격을 요청하라!"
 
 msgctxt "mission/single/0x-skirmish/arty_called"
 msgid "Keep your heads down! Our artillery guns are opening fire!"
-msgstr ""
+msgstr "엎드려라! 아군 포병이 사격을 개시한다!"

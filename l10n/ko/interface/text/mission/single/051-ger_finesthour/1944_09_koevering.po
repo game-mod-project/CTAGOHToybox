@@ -15,99 +15,99 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/01"
 msgid "These arrogant Englishmen... They have no idea what they’re in for."
-msgstr ""
+msgstr "건방진 영국 놈들... 자기들이 무슨 일을 당할지 꿈에도 모르는군."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/02"
 msgid "There's no time for that. Our reinforcements are on their way, we just need to cut the highway and delay them as long as we possibly can."
-msgstr ""
+msgstr "그럴 시간 없다. 증원이 오는 중이니, 우리는 고속도로를 끊고 최대한 오래 놈들을 지연시키면 된다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/03"
 msgid "It seems like there's a gap between convoys. I don't see any more incoming vehicles. We should try to take over that manor across the highway, looks like a decent spot to hold. This is our chance."
-msgstr ""
+msgstr "호송대 사이에 틈이 생긴 것 같다. 더 오는 차량이 안 보인다. 고속도로 건너편의 저택을 점령하자. 버티기 괜찮은 곳 같다. 지금이 기회다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/04"
 msgid "Richtig. We have secured the manor and cut their lifeline. It won't be long before they come back. Our reinforcements should be here any moment now. Soldaten! Dig in and prepare to hold your ground!"
-msgstr ""
+msgstr "Richtig. 저택을 확보하고 놈들의 보급선을 끊었다. 곧 놈들이 돌아올 것이다. 증원도 곧 도착할 거다. Soldaten! 참호를 파고 자리를 지킬 준비를 해라!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/05"
 msgid "We have been reinforced by some Grenadiere, they have set up a forward post by the highway."
-msgstr ""
+msgstr "그레나디어 부대가 증원으로 와서 고속도로 옆에 전진 초소를 설치했다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/06"
 msgid "More of our Kampfgruppe has just arrived from the West."
-msgstr ""
+msgstr "우리 캄프그루페의 나머지가 서쪽에서 막 도착했다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/07"
 msgid "We've got some pretty strong guns with us now."
-msgstr ""
+msgstr "이제 꽤 강력한 포도 갖췄다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/08"
 msgid "We've also got a radio vehicle and an artillery observer. If we lose him, we won't have artillery support anymore."
-msgstr ""
+msgstr "무전 차량과 포병 관측병도 있다. 관측병을 잃으면 더는 포병 지원을 받을 수 없다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/09"
 msgid "There are British and American units all around us, I'm sure they will want their highway back. Use the remaining time to set up defences. We must hold!"
-msgstr ""
+msgstr "우리 주위에 영국군과 미군 부대가 깔려 있다. 놈들은 분명 고속도로를 되찾으려 할 것이다. 남은 시간에 방어 준비를 해라. 반드시 지켜야 한다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/10"
 msgid "Keep the radio vehicle concealed, if it gets damaged we will lose access to artillery support."
-msgstr ""
+msgstr "무전 차량을 은폐해 둬라. 파손되면 포병 지원을 받을 수 없다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/11"
 msgid "We can’t hold them anymore. They've got too many tanks! We need to fall back and regroup.."
-msgstr ""
+msgstr "더는 막을 수 없다. 놈들에게 전차가 너무 많다! 후퇴해서 재집결해야 한다.."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/12"
 msgid "Move all of your troops to the West we’re going out the way we came. There isn't much time left."
-msgstr ""
+msgstr "전 병력을 서쪽으로 이동시켜라. 왔던 길로 빠져나간다. 시간이 얼마 없다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/01"
 msgid "Verdammt... That column stretches farther than I can see... Trucks, tanks, everything..."
-msgstr ""
+msgstr "Verdammt... 저 종대는 눈이 닿는 데까지 이어져 있어... 트럭, 전차, 별게 다 있다..."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/02"
 msgid "Should we go back and report? Command should know they've got a lot of tanks."
-msgstr ""
+msgstr "돌아가서 보고할까? 사령부는 놈들에게 전차가 많다는 걸 알아야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/03"
 msgid "They've got reinforcements! Vehicles approaching from the East!"
-msgstr ""
+msgstr "놈들에게 증원이 있다! 동쪽에서 차량이 접근 중이다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/04"
 msgid "It's getting darker... Something's moving in the distance! Panzer!"
-msgstr ""
+msgstr "점점 어두워지고 있다... 저 멀리 뭔가 움직인다! 판처다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/05"
 msgid "We are running out of ammo! We cannot hold them for too long! There's too many of them!"
-msgstr ""
+msgstr "탄약이 떨어져 간다! 오래 막을 수 없다! 너무 많다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/06"
 msgid "Go back! I'll cover you!"
-msgstr ""
+msgstr "물러나라! 내가 엄호하겠다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/01"
 msgid "They don't even expect us. Marching like it's a parade."
-msgstr ""
+msgstr "우리가 올 줄은 꿈에도 모르는군. 열병식이라도 하듯 행군하고 있어."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/02"
 msgid "They don't seem to be paying much attention at all. We should eliminate the patrols before we go in."
-msgstr ""
+msgstr "별로 주의를 기울이지 않는 것 같다. 진입하기 전에 순찰대부터 제거해야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/03"
 msgid "They are running away!"
-msgstr ""
+msgstr "도망친다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/04"
 msgid "The Grenadiers have already dug their foxholes on the North-East flank. We should focus our defences around the main road."
-msgstr ""
+msgstr "그레나디어들이 이미 북동쪽 측면에 개인호를 팠다. 우리는 큰길 주변에 방어를 집중해야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/05"
 msgid "Incoming artillery! It's getting closer!"
-msgstr ""
+msgstr "포격이 날아온다! 점점 가까워지고 있다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[reinforcements]/artillery"
 msgid "Artillery fire"
-msgstr ""
+msgstr "포병 사격"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[reinforcements]/skip_button"
 msgid "Skip preparation phase"
@@ -115,56 +115,56 @@ msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[scenario_text]/transition_time"
 msgid "Half an hour later..."
-msgstr ""
+msgstr "30분 뒤..."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_01"
 msgid "Cut the highway and take control over the manor"
-msgstr ""
+msgstr "고속도로를 끊고 저택을 장악하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_02"
 msgid "Prepare all-round defensive positions"
-msgstr ""
+msgstr "전방위 방어 진지를 준비하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_03"
 msgid "Do not let any British trucks reach the Northern end of the highway (at least 3 your soldiers must survive)"
-msgstr ""
+msgstr "영국군 트럭이 고속도로 북단에 도달하지 못하게 하라 (아군 병사 최소 3명이 생존해야 한다)"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_04"
 msgid "Fall back with all your forces to the West (at least 3 soldiers must survive)"
-msgstr ""
+msgstr "전 병력을 이끌고 서쪽으로 후퇴하라 (병사 최소 3명이 생존해야 한다)"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_secondary_01"
 msgid "Keep the radio vehicle operational"
-msgstr ""
+msgstr "무전 차량을 가동 상태로 유지하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[timer]/timer01"
 msgid "Estimated time until another British convoy"
-msgstr ""
+msgstr "다음 영국군 호송대까지 예상 시간"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/name"
 msgid "Cutting the Highway"
-msgstr ""
+msgstr "고속도로 차단"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/name_big"
 msgid "Cutting the Highway"
-msgstr ""
+msgstr "고속도로 차단"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/outro_completed"
 msgid "Even though our initial strike was a success we couldn't hold against a massive amount of enemy armor. We had to retreat from this sector but the battle is not over yet. Now we are able to count our losses, regroup and strike the enemy even harder."
-msgstr ""
+msgstr "첫 타격은 성공했지만 압도적인 적 기갑부대를 막아낼 수는 없었다. 이 구역에서 철수해야 했으나 전투는 끝나지 않았다. 이제 손실을 헤아리고, 재집결해 적을 더 강하게 칠 수 있다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/outro_failed"
 msgid "That’s a disappointment. Our last chance to cut the Allied spearhead has come and gone, and now the allies are likely to reach Arnhem after all. We should organize another attempt to take the road as soon as possible, failure is not an option!"
-msgstr ""
+msgstr "실망스럽다. 연합군 선봉을 끊을 마지막 기회가 지나가 버렸고, 이제 연합군은 결국 아른험에 도달할 것이다. 가능한 한 빨리 도로를 차지할 재시도를 준비해야 한다. 실패는 용납되지 않는다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/date"
 msgid "September 26th, 1944 · Koevering, North-Brabant, Netherlands"
-msgstr ""
+msgstr "1944년 9월 26일 · 네덜란드 노르트브라반트, 쿠버링"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/place"
 msgid "Kampfgruppe Jungwirth"
-msgstr ""
+msgstr "캄프그루페 융비르트"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/story"
 msgid "A few days ago, the British paratroopers in Arnhem retreated South across the Rhine River, effectively putting an end to Operation Market Garden. \n\n All that remains of the original plan is the salient around Highway 69 (Hell’s Highway), and the Allies are hanging on to it with everything they have. \n\n Your unit is part of “Kampfgruppe Jungwirth”, which is in position near Koevering, ready to attack Highway 69. \n\n If you succeed, the allies to the North will be trapped! Take the highway, and hold it!"
-msgstr ""
+msgstr "며칠 전 아른험의 영국 공수부대가 라인강 남쪽으로 후퇴하면서 마켓 가든 작전은 사실상 끝났다. \n\n 원래 계획에서 남은 것은 69번 고속도로(지옥의 고속도로) 주변의 돌출부뿐이며, 연합군은 총력을 다해 이를 붙들고 있다. \n\n 당신의 부대는 쿠버링 근처에 자리 잡고 69번 고속도로 공격을 준비 중인 '캄프그루페 융비르트'의 일부다. \n\n 성공하면 북쪽의 연합군은 고립된다! 고속도로를 점령하고 사수하라!"

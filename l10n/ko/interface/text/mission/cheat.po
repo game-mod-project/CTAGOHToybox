@@ -43,7 +43,7 @@ msgstr "전체 설정"
 
 msgctxt "mission/cheat/返回"
 msgid "Back"
-msgstr ""
+msgstr "뒤로"
 
 msgctxt "mission/cheat/轻型坦克"
 msgid "Light Tank"

@@ -15,123 +15,123 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/01"
 msgid "Soldaten! The Canadians are not too far away from here and we are the only ones standing in their way to Walcheren."
-msgstr ""
+msgstr "Soldaten! 캐나다군이 멀지 않은 곳까지 왔고, 발헤렌으로 가는 길을 막고 있는 건 우리뿐이다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/02"
 msgid "Even the flooded fields are not stopping them... We are the first line of defence of Woensdrecht and Hoogerheide and we need to hold our current positions as long as possible to have time to prepare our main defences on the higher ground."
-msgstr ""
+msgstr "침수된 들판도 놈들을 막지 못한다... 우리는 보언스드레흐트와 후게르하이더의 제1선 방어다. 높은 지대에 주방어선을 준비할 시간을 벌려면 현재 진지를 최대한 오래 지켜야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/03"
 msgid "Do not allow the enemy to breach our line. Our main defences are not ready yet. Hold your positions along the roads going from East to West."
-msgstr ""
+msgstr "적이 우리 전선을 돌파하게 두지 마라. 주방어선은 아직 준비가 끝나지 않았다. 동서로 뻗은 도로를 따라 진지를 지켜라."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/04"
 msgid "The Canadians are surely going to bring a lot of armor, you can find anti-tank and anti-personnel mines in the engineering trucks. Try to lay as many as possible on the roads going from South to North."
-msgstr ""
+msgstr "캐나다군은 분명 기갑을 많이 데려올 것이다. 공병 트럭에 대전차 지뢰와 대인 지뢰가 있다. 남북으로 난 도로에 최대한 많이 매설해라."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/05"
 msgid "Good job. That should help us delay them."
-msgstr ""
+msgstr "잘했다. 이걸로 놈들을 지연시킬 수 있을 거다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/06"
 msgid "Enemy artillery! Take cover!"
-msgstr ""
+msgstr "적 포격이다! 엄폐해라!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/07"
 msgid "They are coming on the left flank!"
-msgstr ""
+msgstr "좌측 측면으로 온다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/08"
 msgid "Our scouts are predicting we still have a couple of minutes before the enemy arrives. Use this time wisely. Strengthen our weak points and make sure we have anti-tank weapons pointing at every road."
-msgstr ""
+msgstr "정찰병 말로는 적 도착까지 아직 몇 분 남았다고 한다. 시간을 잘 써라. 약점을 보강하고 모든 도로를 겨눈 대전차 무기를 갖춰라."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/09"
 msgid "They are taking a beating on the left flank but seems like they are starting a new attack on the right flank!"
-msgstr ""
+msgstr "좌측 측면에서는 호되게 당하고 있지만 우측 측면에서 새 공격을 시작하는 것 같다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/10"
 msgid "Take a look inside the boxes, you should find some grenades, explosives and panzerfausts there."
-msgstr ""
+msgstr "상자 안을 살펴봐라. 수류탄, 폭약, 판처파우스트가 있을 거다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/11"
 msgid "They are deploying more troops on both flanks!"
-msgstr ""
+msgstr "양쪽 측면에 병력을 더 투입하고 있다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/12"
 msgid "We cannot hold the first line for much longer, or we'll be overrun. Our guns on the second line should be deployed already. Move your men back to strengthen the main defences."
-msgstr ""
+msgstr "제1선을 오래 지킬 수 없다. 돌파당한다. 제2선의 포는 이미 배치됐을 거다. 병력을 물려 주방어선을 강화해라."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/13"
 msgid "We need to hold three strategic positions that ensure the Canadians can't break through. We have a couple of 8,8 cm guns and 10,5 cm howitzers, make use of them."
-msgstr ""
+msgstr "캐나다군이 돌파하지 못하도록 세 곳의 전략 거점을 지켜야 한다. 8.8cm포와 10.5cm 곡사포가 몇 문 있으니 활용해라."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/14"
 msgid "Enemy artillery barrage!! They likely know where our positions are now so take cover!"
-msgstr ""
+msgstr "적 포격이다!! 이제 우리 위치를 알 가능성이 높으니 엄폐해라!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/15"
 msgid "Finally! Our reinforcements are here!"
-msgstr ""
+msgstr "드디어! 증원이 도착했다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/16"
 msgid "We cannot afford losing any more ground! Our mission is over, we are on the verge of ending up in another pocket. Holding Woensdrecht is impossible, now we have to fight for our lives."
-msgstr ""
+msgstr "더는 땅을 내줄 수 없다! 우리 임무는 끝났고, 또 하나의 포위망에 갇히기 직전이다. 보언스드레흐트 사수는 불가능하다. 이제 살아남기 위해 싸워야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_officer/17"
 msgid "The situation is falling apart quickly. The Allies are gaining ground. We must hold our positions for at least five more minutes so our command can reposition."
-msgstr ""
+msgstr "상황이 빠르게 무너지고 있다. 연합군이 전진하고 있다. 사령부가 재배치할 수 있도록 최소 5분은 더 진지를 지켜야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/01"
 msgid "It never stops raining here. The mud is worse than in the East. At least there it froze."
-msgstr ""
+msgstr "여긴 비가 그치질 않는다. 진흙이 동부보다 더 심하다. 거기서는 적어도 얼기라도 했지."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/02"
 msgid "They keep coming. Artillery, infantry and tanks. How much longer can we hold them back?"
-msgstr ""
+msgstr "계속 몰려온다. 포병, 보병, 전차. 얼마나 더 막을 수 있을까?"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/03"
 msgid "Do you believe that still matters? The Allies already have France. They have supplies, fuel... everything. Their logistics are much better than ours..."
-msgstr ""
+msgstr "아직도 그게 중요하다고 생각하나? 연합군은 이미 프랑스를 차지했어. 보급도 연료도... 전부 있어. 놈들의 병참은 우리보다 훨씬 낫다..."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/04"
 msgid "Survive… for what? Another pocket? Another retreat? Haven't we been through enough of that recently?"
-msgstr ""
+msgstr "살아남아서... 뭘 하겠다고? 또 포위당하고? 또 후퇴하고? 최근에 그런 건 겪을 만큼 겪지 않았나?"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/05"
 msgid "Clear! That must have been a resistance hideout. Let's see what else they've been hiding here."
-msgstr ""
+msgstr "제압! 레지스탕스 은신처였나 보군. 여기에 또 뭘 숨겨 놨나 보자."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/06"
 msgid "A damaged howitzer? Why hasn't anyone repaired it yet?"
-msgstr ""
+msgstr "파손된 곡사포? 왜 아직 아무도 수리하지 않았지?"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier1/07"
 msgid "Just like new! Now let's make use of it."
-msgstr ""
+msgstr "새것 같군! 이제 써먹어 보자."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier2/01"
 msgid "Don’t complain. Mud means tanks get stuck. And we need every advantage against those Canadians."
-msgstr ""
+msgstr "투덜대지 마라. 진흙이면 전차가 빠진다. 그 캐나다 놈들을 상대하려면 모든 이점이 필요하다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier2/02"
 msgid "Until we’re ordered otherwise. That’s how it works. If we fail Walcheren will be open to the Allies and it’s the key to the Scheldt. As long as we remain here, Antwerp is useless to them"
-msgstr ""
+msgstr "다른 명령이 있을 때까지다. 그런 거다. 우리가 실패하면 발헤렌이 연합군에게 열리고, 그곳이 스헬더의 열쇠다. 우리가 여기 버티는 한 안트베르펜은 놈들에게 쓸모가 없다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier2/03"
 msgid "Better to keep your eyes on your section and your rifle ready than think of such things. That’s how you survive."
-msgstr ""
+msgstr "그런 생각은 하지 말고 담당 구역을 살피고 소총을 준비하는 게 낫다. 그래야 살아남는다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier2/04"
 msgid "You survive for the man next to you. For the chance that we see home again. That’s enough for me..."
-msgstr ""
+msgstr "옆의 전우를 위해 살아남는 거다. 고향을 다시 볼 기회를 위해서. 난 그걸로 충분하다..."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier2/05"
 msgid "Wait! I see someone with a weapon inside that house!"
-msgstr ""
+msgstr "잠깐! 저 집 안에 무기를 든 사람이 보인다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/narrator_soldier2/06"
 msgid "Let's take a few repairs kits and try to put this gun back in action. We will need it!"
-msgstr ""
+msgstr "수리 도구를 몇 개 챙겨서 이 포를 다시 쓸 수 있게 해 보자. 필요할 거다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/reinforcement/skip_preparation"
 msgid "Skip preparation"
@@ -139,31 +139,31 @@ msgstr "준비 생략"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task01"
 msgid "Prepare to defend the first line"
-msgstr ""
+msgstr "제1선 방어를 준비하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task02"
 msgid "Hold the first line until the main defences are ready"
-msgstr ""
+msgstr "주방어선이 준비될 때까지 제1선을 사수하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task03"
 msgid "Hold the artillery hill! (hold at least 2 out of 3 zones)"
-msgstr ""
+msgstr "포병 고지를 사수하라! (3개 구역 중 최소 2개 유지)"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task04"
 msgid "Hold the windmill hill! (hold at least 2 out of 3 zones)"
-msgstr ""
+msgstr "풍차 언덕을 사수하라! (3개 구역 중 최소 2개 유지)"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task05"
 msgid "Hold the railroad line! (hold at least 2 out of 3 zones)"
-msgstr ""
+msgstr "철도 노선을 사수하라! (3개 구역 중 최소 2개 유지)"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task06"
 msgid "Hold your ground! (hold at least 2 out of 3 zones)"
-msgstr ""
+msgstr "진지를 사수하라! (3개 구역 중 최소 2개 유지)"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret01"
 msgid "Secret objective #1: Lay at least 100 mines"
-msgstr ""
+msgstr "비밀 목표 #1: 지뢰를 100개 이상 매설하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret01_hidden"
 msgid "Secret objective #1"
@@ -171,7 +171,7 @@ msgstr "비밀 목표 1"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret02"
 msgid "Secret objective #2: Find the Dutch resistance hideout"
-msgstr ""
+msgstr "비밀 목표 #2: 네덜란드 레지스탕스 은신처를 찾아라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret02_hidden"
 msgid "Secret objective #2"
@@ -179,44 +179,44 @@ msgstr "비밀 목표 2"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret03"
 msgid "Secret objective #3: Repair the damaged howitzer"
-msgstr ""
+msgstr "비밀 목표 #3: 파손된 곡사포를 수리하라"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret03_hidden"
 msgid "Secret objective #3"
-msgstr ""
+msgstr "비밀 목표 #3"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/timer/defend"
 msgid "Hold your ground for at least:"
-msgstr ""
+msgstr "최소 이 시간 동안 진지를 사수하라:"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/timer/preparation"
 msgid "Time before the enemy attack"
-msgstr ""
+msgstr "적 공격까지 남은 시간"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/name"
 msgid "The Black Friday"
-msgstr ""
+msgstr "검은 금요일"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/name_big"
 msgid "The Black Friday"
-msgstr ""
+msgstr "검은 금요일"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/outro_completed"
 msgid "You have completed all mission objectives but this was a battle we couldn't win. With our determination we managed to slow down the Canadian attack just enough to regroup our forces and avoid even heavier losses."
-msgstr ""
+msgstr "모든 임무 목표를 완수했지만 이길 수 없는 전투였다. 우리의 결의로 캐나다군의 공격을 충분히 늦춰 병력을 재집결시키고 더 큰 손실을 피할 수 있었다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/outro_failed"
 msgid "Was that really all you could do? The Allies are now storming Walcheren peninsula, which means the harbor of Antwerp will be open to them very soon. You should organise a last ditch effort to undo this loss!"
-msgstr ""
+msgstr "정말 그게 전부였나? 연합군이 이제 발헤렌 반도로 쇄도하고 있다. 곧 안트베르펜 항구가 놈들에게 열린다는 뜻이다. 이 손실을 만회할 마지막 노력을 준비해라!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/date"
 msgid "October 10th, 1944 · Woensdrecht, North-Brabant, Netherlands"
-msgstr ""
+msgstr "1944년 10월 10일 · 네덜란드 노르트브라반트, 보언스드레흐트"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/place"
 msgid "Kampfgruppe Chill"
-msgstr ""
+msgstr "캄프그루페 힐"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/story"
 msgid "The Allies are still unable to use the harbor of Antwerp, and all of their supplies have to be brought in from Normandy by truck. \n\n For this reason, the Canadians have started advancing in the direction of Woensdrecht today. They intend to gain access to the Zuid-Beveland peninsula and the Scheldt estuary. \n\n You have been stationed at Hoogerheide, where you will stop them from breaking through to the peninsula. The stakes could not be higher!"
-msgstr ""
+msgstr "연합군은 아직 안트베르펜 항구를 쓸 수 없어서 모든 보급품을 노르망디에서 트럭으로 실어 와야 한다. \n\n 이 때문에 캐나다군이 오늘 보언스드레흐트 방향으로 진격을 시작했다. 쥐트베벨란트 반도와 스헬더 하구에 접근하려는 것이다. \n\n 당신은 후게르하이더에 배치되어 놈들이 반도로 돌파하는 것을 막아야 한다. 이보다 큰 판돈은 없다!"

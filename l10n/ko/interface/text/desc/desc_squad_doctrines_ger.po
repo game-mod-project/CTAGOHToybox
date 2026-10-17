@@ -44,11 +44,11 @@ msgstr "<c(B29557)>( I )</c> 3.7cm Flak 37"
 
 msgctxt "desc/squad/doctrine_50mm_flak41_early"
 msgid "<c(B29557)>( II )</c> 5cm FlaK 41"
-msgstr "<c(B29557)>( II )</c> 5cm FlaK 41"
+msgstr "<c(B29557)>( II )</c> 5cm Flak 41"
 
 msgctxt "desc/squad/doctrine_50mm_flak41_mid"
 msgid "<c(B29557)>( II )</c> 5cm Flak 41"
-msgstr "<c(B29557)>( II )</c> 5cm FlaK 41"
+msgstr "<c(B29557)>( II )</c> 5cm Flak 41"
 
 msgctxt "desc/squad/doctrine_75mm_legebig18"
 msgid "<c(B29557)>( I )</c> 7.5cm Le.Geb.IG 18"
@@ -84,11 +84,11 @@ msgstr "<c(B29557)>( I )</c> 8.8cm Flak 18"
 
 msgctxt "desc/squad/doctrine_88mm_flak18_early"
 msgid "<c(B29557)>( III )</c> 8.8cm FlaK 18"
-msgstr "<c(B29557)>( III )</c> 8.8cm FlaK 18"
+msgstr "<c(B29557)>( III )</c> 8.8cm Flak 18"
 
 msgctxt "desc/squad/doctrine_88mm_flak18_mid"
 msgid "<c(B29557)>( III )</c> 8.8cm Flak 18"
-msgstr "<c(B29557)>( III )</c> 8.8cm FlaK 18"
+msgstr "<c(B29557)>( III )</c> 8.8cm Flak 18"
 
 msgctxt "desc/squad/doctrine_88mm_flak36_late"
 msgid "<c(B29557)>( II )</c> 8.8cm Flak 36"

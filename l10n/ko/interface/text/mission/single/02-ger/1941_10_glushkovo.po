@@ -155,11 +155,11 @@ msgstr "보급 트럭"
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:1_1"
 msgid "Infantry"
-msgstr ""
+msgstr "보병"
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:2_1"
 msgid "Emplacements"
-msgstr ""
+msgstr "진지"
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:3_1"
 msgid "Armor vehicles"

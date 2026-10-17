@@ -15,87 +15,87 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/date"
 msgid "December 29th, 1941 · Feodosia, Crimea, Ukraine"
-msgstr ""
+msgstr "1941년 12월 29일 · 우크라이나 크림반도, 페오도시야"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/gameover/failed"
 msgid "The squad led by Lieutenant Arkady F. Aydinov could not establish control over the bridgehead."
-msgstr ""
+msgstr "Lieutenant 아르카디 F. 아이디노프가 이끄는 분대는 교두보를 장악하지 못했다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/hints/pistol_holder"
 msgid "To signal other troops, fire a flare at the pier. The squad leader has the flare gun in his inventory."
-msgstr ""
+msgstr "다른 부대에 신호를 보내려면 부두에서 신호탄을 쏴라. 분대장의 인벤토리에 신호탄 권총이 있다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/name"
 msgid "Red Tide"
-msgstr ""
+msgstr "붉은 파도"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/name_big"
 msgid "Red Tide"
-msgstr ""
+msgstr "붉은 파도"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/armor"
 msgid "The Fascists brought in their vehicles! Use the full firepower of the gunboat and destroy them."
-msgstr ""
+msgstr "파시스트들이 차량을 끌고 왔다! 포함의 화력을 총동원해 파괴해라."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/boat_crash_01"
 msgid "Scum! The nervedragging anti-tank guns here! Comrades, we must silence those guns immediately."
-msgstr ""
+msgstr "쓰레기 같은 놈들! 여기 신경을 갉아먹는 대전차포가 있다! 동지들, 저 포를 당장 침묵시켜야 한다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/clear_01"
 msgid "Well done, marines. A strong showing. Looks like the Germans didn't expect us. But we should not relax too early - they will surely try to retake this ground."
-msgstr ""
+msgstr "잘했다, 해병들. 훌륭한 활약이다. 독일 놈들은 우리가 올 줄 몰랐던 모양이다. 그래도 너무 일찍 방심하지 마라. 놈들은 반드시 이곳을 되찾으려 할 것이다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/defense_01"
 msgid "Here they come, the bastards. Didn't take them long. We must hold this line - the outcome of the operation depends on this very patch of land. Get to work, comrades."
-msgstr ""
+msgstr "놈들이 온다, 개자식들. 오래 걸리지도 않았군. 이 전선을 지켜야 한다. 작전의 성패가 바로 이 땅뙈기에 달렸다. 일하자, 동지들."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/flare_01"
 msgid "Good work, boys - the lighthouse is secured. Now fire the flare and let the others know. They're likely already worried sick over there."
-msgstr ""
+msgstr "잘했다, 제군들. 등대를 확보했다. 이제 신호탄을 쏴서 다른 부대에 알려라. 저쪽은 분명 걱정이 태산일 거다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/flare_02"
 msgid "The entrance is free!"
-msgstr ""
+msgstr "입구가 뚫렸다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/landing_01"
 msgid "Let's go, comrades! We need to take that lighthouse and signal a flare - without it, no reinforcements will come. We won't last long standing in the open like this!"
-msgstr ""
+msgstr "가자, 동지들! 저 등대를 점령하고 신호탄을 쏴야 한다. 그러지 않으면 증원이 오지 않는다. 이렇게 노출된 채로 오래 버티지 못한다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/landing_02"
 msgid "Germans are bringing more from the south! Best to leave a few men behind to cover the landing zone. We should not leave our rear uncovered."
-msgstr ""
+msgstr "독일 놈들이 남쪽에서 병력을 더 데려오고 있다! 상륙 지점을 엄호할 인원을 몇 명 남겨 둬라. 후방을 비워 두면 안 된다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/mo4_control"
 msgid "The Germans are well dug in at the port. Our comrades will assault them, and they will need naval support. I placed one of our gunboats under your command. It's on the far side of the pier."
-msgstr ""
+msgstr "독일군은 항구에 단단히 참호를 파고 있다. 우리 동지들이 돌격할 텐데 해상 지원이 필요할 거다. 포함 한 척을 자네 지휘 아래 두었다. 부두 맞은편 끝에 있다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/mortars"
 msgid "Get down! Enemy mortar fire incoming! Expect the Germans to charge as soon as the mortars stop firing!"
-msgstr ""
+msgstr "엎드려라! 적 박격포 사격이 온다! 박격포가 멎는 즉시 독일 놈들이 돌격할 거다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/plane_01"
 msgid "Enemy aircraft! It's going straight for the gunboat - shoot it down immediately!"
-msgstr ""
+msgstr "적 항공기다! 곧장 포함으로 향하고 있다. 즉시 격추해라!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/plane_02"
 msgid "Heads up - aircraft incoming from the west! It's preparing to strike the gunboat!"
-msgstr ""
+msgstr "조심해, 서쪽에서 항공기가 접근 중이다! 포함을 공격할 준비를 하고 있다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/plane_03"
 msgid "Another plane approaches!"
-msgstr ""
+msgstr "비행기가 또 접근한다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/port_cleared"
 msgid "Well done, comrades - the port is under our control now. Reinforcements should arrive at any moment."
-msgstr ""
+msgstr "잘했다, 동지들. 항구는 이제 우리 손에 있다. 증원이 곧 도착할 거다."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/preparation_01"
 msgid "Reinforcements have arrived - just in time. Let's use this short pause to prepare for the enemy's counterattack."
-msgstr ""
+msgstr "증원이 도착했다. 때맞춰 왔군. 이 짧은 틈에 적의 반격에 대비하자."
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/narrator/aydinov/retreat"
 msgid "They're falling back! We've done it, comrades! We held the line - and showed the full strength of our Black Sea Fleet! Now our brothers in arms and families in Sevastopol have a real chance to stand strong!"
-msgstr ""
+msgstr "놈들이 물러난다! 해냈다, 동지들! 전선을 지켰고 우리 흑해 함대의 진정한 힘을 보여 줬다! 이제 세바스토폴의 전우들과 가족들도 굳건히 버틸 진짜 기회를 얻었다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/outro_completed"
 msgid ""
@@ -103,11 +103,11 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/outro_failed"
 msgid "Ouch! That is not the outcome Stavka planned. You don’t want this reported to HQ. Maybe you should try again?"
-msgstr ""
+msgstr "아이쿠! 스타프카가 계획한 결과가 아니다. 본부에 보고되길 바라지는 않겠지. 다시 해 보는 게 어때?"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/place"
 msgid "Lt. Aydinov's landing party, Soviet Black Sea Fleet"
-msgstr ""
+msgstr "Lt. 아이디노프의 상륙조, 소련 흑해 함대"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/skip_preparation"
 msgid "Skip preparation"
@@ -115,32 +115,32 @@ msgstr "준비 생략"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/story"
 msgid "You are going on a mission to support besieged Sevastopol. To be precise, you are ordered to secure the Crimean harbor of Feodosiya for the large invasion force that will land there. We will go ashore behind the enemy’s back, and you will be in the first echelon. \nThis attack will relieve pressure on Sevastopol for sure, when the Germans have to turn around and fight us in Feodosiya; the importance of this mission cannot be overstated. \nThe success of your mission depends on your improvisation skills and the ability to use every bit of equipment you come across. \n\nGood luck!"
-msgstr ""
+msgstr "당신은 포위된 세바스토폴을 지원하는 임무를 맡았다. 정확히는 크림반도의 페오도시야 항구를 확보해 그곳에 상륙할 대규모 상륙군을 맞이하라는 명령이다. 우리는 적의 배후로 상륙하며, 당신은 제1진에 속한다. \n독일군이 방향을 돌려 페오도시야에서 우리와 싸워야 하므로 이 공격은 세바스토폴의 부담을 분명 덜어 줄 것이다. 이 임무의 중요성은 아무리 강조해도 지나치지 않다. \n임무의 성패는 당신의 임기응변과 눈에 띄는 모든 장비를 활용하는 능력에 달렸다. \n\n행운을 빈다!"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/tasks/01-lighthouse"
 msgid "Capture the lighthouse"
-msgstr ""
+msgstr "등대를 점령하라"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/tasks/02-flare"
 msgid "Fire a flare near the lighthouse"
-msgstr ""
+msgstr "등대 근처에서 신호탄을 쏴라"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/tasks/03-clean"
 msgid "Establish control over the port area"
-msgstr ""
+msgstr "항구 지역을 장악하라"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/tasks/04-pak36"
 msgid "Capture or eliminate the AT guns"
-msgstr ""
+msgstr "대전차포를 노획하거나 제거하라"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/tasks/05-defense"
 msgid "Hold the landing zone near the lighthouse"
-msgstr ""
+msgstr "등대 근처 상륙 지점을 사수하라"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/tasks/06-mo4"
 msgid "The gunboat under your command must survive"
-msgstr ""
+msgstr "지휘 아래 있는 포함이 반드시 살아남아야 한다"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/timer"
 msgid "German counter-attack:"
-msgstr ""
+msgstr "독일군 반격:"

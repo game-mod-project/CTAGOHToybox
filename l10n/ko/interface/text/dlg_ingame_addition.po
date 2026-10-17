@@ -16,24 +16,24 @@ msgstr ""
 
 msgctxt "actionbar/human/medic_switch"
 msgid "自动医疗开关"
-msgstr ""
+msgstr "자동 의료 전환"
 
 msgctxt "actionbar/human/medic_switch/usage"
 msgid "单击按钮可设定这名医疗兵是否会执行自动医疗命令，默认为开启状态。\n如果单击后医疗兵身上弹出提示字符，且状态切换正常，说明脚本正在运行。"
-msgstr ""
+msgstr "버튼을 클릭해 이 위생병이 자동 치료 명령을 수행할지 설정한다. 기본값은 켜짐.\n클릭 후 위생병 몸에 안내 문자가 뜨고 상태가 정상적으로 전환되면 스크립트가 작동 중인 것이다."
 
 msgctxt "actionbar/ai_auto_move"
 msgid "切换 AI/玩家 控制"
-msgstr ""
+msgstr "AI/플레이어 조종 전환"
 
 msgctxt "actionbar/ai_auto_move/usage"
 msgid "单击此按钮，然后单击地面即可切换。\n注意同时选中多个单位时必须要有小队长才能生效。"
-msgstr ""
+msgstr "이 버튼을 클릭한 뒤 지면을 클릭하면 전환된다.\n여러 유닛을 동시에 선택했을 때는 분대장이 있어야 적용된다."
 
 msgctxt "actionbar/weather_switch"
 msgid "随机切换天气"
-msgstr ""
+msgstr "날씨 무작위 전환"
 
 msgctxt "actionbar/weather_switch/usage"
 msgid "来自mod：高清随机天气按钮"
-msgstr ""
+msgstr "모드 출처: 고화질 무작위 날씨 버튼"

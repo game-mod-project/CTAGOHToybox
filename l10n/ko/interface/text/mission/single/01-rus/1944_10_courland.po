@@ -211,7 +211,7 @@ msgstr "위생병"
 
 msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:1_1"
 msgid "Infantry"
-msgstr ""
+msgstr "보병"
 
 msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:2_1"
 msgid "Support"
@@ -219,11 +219,11 @@ msgstr "지원"
 
 msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:3_1"
 msgid "Vehicles"
-msgstr ""
+msgstr "차량"
 
 msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:4_1"
 msgid "Tanks"
-msgstr ""
+msgstr "전차"
 
 msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:back"
 msgid "Return to menu"

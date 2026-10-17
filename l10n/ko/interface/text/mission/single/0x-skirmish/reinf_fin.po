@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/hintbonus"
 msgid "Air attack of the selected area"
-msgstr ""
+msgstr "선택한 지역에 대한 공습"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/hint"
 msgid "Deploy your reinforcements on the battlefield"
@@ -23,7 +23,7 @@ msgstr "증원을 전장에 배치하라"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/menu:1_1"
 msgid "Infantry"
-msgstr ""
+msgstr "보병"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/menu:2_1"
 msgid "Support"
@@ -31,11 +31,11 @@ msgstr "지원"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/menu:3_1"
 msgid "Vehicles"
-msgstr ""
+msgstr "차량"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/menu:4_1"
 msgid "Tanks"
-msgstr ""
+msgstr "전차"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/menu:back"
 msgid "Return to menu"
@@ -43,11 +43,11 @@ msgstr "메뉴로 돌아가기"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/airstrike"
 msgid "Airstrike"
-msgstr ""
+msgstr "공습"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/airstrike2"
 msgid "Bombing run"
-msgstr ""
+msgstr "폭격"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/medic"
 msgid "Medic"
@@ -59,7 +59,7 @@ msgstr "장교"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/signaller"
 msgid "Battery Signaller"
-msgstr ""
+msgstr "포대 통신병"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/riflesq"
 msgid "Rifle squad"
@@ -71,31 +71,31 @@ msgstr "보병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_scout"
 msgid "Scout Section"
-msgstr ""
+msgstr "정찰 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/lmg_squad"
 msgid "LMG squad"
-msgstr ""
+msgstr "경기관총 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/civil_guard"
 msgid "Civil guard"
-msgstr ""
+msgstr "민간 경비대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_cav"
 msgid "Cavalry squad"
-msgstr ""
+msgstr "기병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/border_guard"
 msgid "Border Guard"
-msgstr ""
+msgstr "국경경비대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/gebirgsjag"
 msgid "Gebirgsjager"
-msgstr ""
+msgstr "게비르크스예거"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_border_jag"
 msgid "Border Jaeger Sq"
-msgstr ""
+msgstr "국경 예거 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_engineer"
 msgid "Engineer squad"
@@ -103,23 +103,23 @@ msgstr "공병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/reservist"
 msgid "Reservist squad"
-msgstr ""
+msgstr "예비역 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_jaeger"
 msgid "Jaeger Squad"
-msgstr ""
+msgstr "예거 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ger_squad"
 msgid "German Infantry"
-msgstr ""
+msgstr "독일 보병"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/jaeger_lmg"
 msgid "Jaeger LMG squad"
-msgstr ""
+msgstr "예거 경기관총 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/jaeger_ger_sq"
 msgid "Jaeger German Sq"
-msgstr ""
+msgstr "예거 독일 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/37mm_pak36"
 msgid "3.7cm PaK 36"
@@ -127,11 +127,11 @@ msgstr "3.7cm PaK 36"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/assault_squad"
 msgid "Assault squad"
-msgstr ""
+msgstr "돌격 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ger_vet_inf"
 msgid "German veterans"
-msgstr ""
+msgstr "독일 베테랑"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/sdkfz10_4"
 msgid "Sd.Kfz 10/4 (2cm)"
@@ -139,7 +139,7 @@ msgstr "Sd.Kfz 10/4 (2cm)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_sissi"
 msgid "Sissi commandos"
-msgstr ""
+msgstr "시시 코만도"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/crew"
 msgid "Tank crew"
@@ -159,7 +159,7 @@ msgstr "저격수"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/whitedeath"
 msgid "Elite sniper"
-msgstr ""
+msgstr "정예 저격수"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/crate"
 msgid "Ammo crate"
@@ -167,15 +167,15 @@ msgstr "탄약 상자"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ford_3ton_fuel"
 msgid "Ford 3-Ton(Fuel)"
-msgstr ""
+msgstr "Ford 3-Ton(연료)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ford_3ton_ammo"
 msgid "Ford 3-Ton(Supply)"
-msgstr ""
+msgstr "Ford 3-Ton(보급)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ford_3ton_eng"
 msgid "Ford(Engineer)"
-msgstr ""
+msgstr "Ford(공병)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/heavy_mg_maxim_m1910_30"
 msgid "Maxim M/09-09"
@@ -215,11 +215,11 @@ msgstr "Pz.SpW. P204(f)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/panzer3j"
 msgid "Pz.Kpfw III J"
-msgstr ""
+msgstr "Pz.Kpfw III J"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/panzer3h"
 msgid "Pz.Kpfw III H"
-msgstr ""
+msgstr "Pz.Kpfw III H"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/sdkfz231"
 msgid "Sd.Kfz 231"
@@ -235,7 +235,7 @@ msgstr "7.5cm leIG 18"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/panzer35s"
 msgid "Pz.Kpfw 35S 739"
-msgstr ""
+msgstr "Pz.Kpfw 35S 739"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/20mm_l39"
 msgid "20 Pst Kiv/39"
@@ -255,7 +255,7 @@ msgstr "47 PstK/39"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/45mm_pstk32_tow"
 msgid "45 PstK/32(towed)"
-msgstr ""
+msgstr "45 PstK/32(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_m1902"
 msgid "76mm M1902"
@@ -295,7 +295,7 @@ msgstr "T-34B"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/l62"
 msgid "Anti II L-62"
-msgstr ""
+msgstr "Anti II L-62"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/bt42"
 msgid "BT-42"
@@ -327,11 +327,11 @@ msgstr "T-50"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/pz38h_735"
 msgid "Hotchkiss H39"
-msgstr ""
+msgstr "Hotchkiss H39"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/kht130_fin"
 msgid "KhT-130(Flame)"
-msgstr ""
+msgstr "KhT-130(화염)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/t26_33_fin"
 msgid "T-26B"
@@ -355,7 +355,7 @@ msgstr "76mm F-22 M1936"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/75mm_k40_tow"
 msgid "75 K/40(towed)"
-msgstr ""
+msgstr "75 K/40(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/75mm_k40"
 msgid "75 K/40"
@@ -363,7 +363,7 @@ msgstr "75 K/40"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_f22_tow"
 msgid "76mm-F-22(towed)"
-msgstr ""
+msgstr "76mm-F-22(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_k36"
 msgid "76 K/36"
@@ -371,7 +371,7 @@ msgstr "76 K/36"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_k36_tow"
 msgid "76 K/36(towed)"
-msgstr ""
+msgstr "76 K/36(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_k02_30_40"
 msgid "76 K/02-30/40"
@@ -383,19 +383,19 @@ msgstr "76 K/02"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/sdkfz10_pak38"
 msgid "Sd.Kfz10(PaK 38)"
-msgstr ""
+msgstr "Sd.Kfz10(PaK 38)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_k02_30_40_tow"
 msgid "76 K/02(towed)"
-msgstr ""
+msgstr "76 K/02(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/50mm_pak38_tow"
 msgid "5cm PaK38(towed)"
-msgstr ""
+msgstr "5cm PaK38(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/50mm_pak38"
 msgid "5cm PaK38"
-msgstr ""
+msgstr "5cm PaK38"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/50mm_ptsk38"
 msgid "50 PstK/38"
@@ -415,11 +415,11 @@ msgstr "Pz.Kpfw I Ausf.B"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/panzer2c"
 msgid "Pz II Ausf.C"
-msgstr ""
+msgstr "Pz II Ausf.C"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/88mm_flak18_tow"
 msgid "8.8cm FlaK18(tow)"
-msgstr ""
+msgstr "8.8cm FlaK18(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/105mm_lefh18"
 msgid "10.5cm LeFH 18"
@@ -427,15 +427,15 @@ msgstr "10.5cm LeFH 18"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/122mm_a19"
 msgid "122mm A-19 M1931/3"
-msgstr ""
+msgstr "122mm A-19 M1931/3"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/122mm_a19_tow"
 msgid "122mm A-19(towed)"
-msgstr ""
+msgstr "122mm A-19(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/75mm_itk37_tow"
 msgid "75ItK/37(towed)"
-msgstr ""
+msgstr "75ItK/37(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/107mm_k10"
 msgid "107 K/10"
@@ -443,7 +443,7 @@ msgstr "107 K/10"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/107mm_k10_tow"
 msgid "107 K/10(towed)"
-msgstr ""
+msgstr "107 K/10(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/105mm_h33"
 msgid "105 H/33"
@@ -455,7 +455,7 @@ msgstr "150 H/40"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/150mm_nebelwerfer41"
 msgid "Nebelwerfer 41"
-msgstr ""
+msgstr "Nebelwerfer 41"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/150mm_sfh18"
 msgid "15cm sFH 18"
@@ -463,11 +463,11 @@ msgstr "15cm sFH 18"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ford_3ton_breda"
 msgid "Ford(20 ItK/35)"
-msgstr ""
+msgstr "Ford(20 ItK/35)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/vickers_6t_altb"
 msgid "Vickers 6T Alt.B"
-msgstr ""
+msgstr "Vickers 6T Alt.B"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/122mm_m1910_fin"
 msgid "122 H/10-30"
@@ -547,7 +547,7 @@ msgstr "76 ItK/31"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_itk31tow"
 msgid "76 ItK/31(towed)"
-msgstr ""
+msgstr "76 ItK/31(견인)"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/76mm_k02_late"
 msgid "76 K/02 (Late)"

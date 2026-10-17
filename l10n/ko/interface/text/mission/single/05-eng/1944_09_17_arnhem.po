@@ -15,323 +15,323 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/name"
 msgid "Arnhem Hell"
-msgstr ""
+msgstr "아른험 지옥"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/name_big"
 msgid "Arnhem Hell"
-msgstr ""
+msgstr "아른험 지옥"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/outro_completed"
 msgid "You can be proud of yourself; you did everything you possibly could, despite the odds and poor planning on the part of supreme command. The Germans are duly impressed with your courage and tenacity. If only this operation would have been properly planned..."
-msgstr ""
+msgstr "자랑스러워해도 좋다. 불리한 상황과 최고 사령부의 부실한 계획에도 할 수 있는 모든 것을 다했다. 독일군도 자네의 용기와 끈기에 감명받았다. 이 작전이 제대로 계획되었더라면…"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/outro_failed"
 msgid "In the end, there was no way in which you could have held the position at the bridge. Lacking firepower and proper means of communication, plus very poor planning, this outcome was predictable; but your courage will be remembered."
-msgstr ""
+msgstr "결국 다리의 진지를 지킬 방법은 없었다. 화력과 제대로 된 통신 수단이 부족한 데다 계획마저 매우 부실했으니 이 결과는 예견된 것이었다. 그러나 자네들의 용기는 기억될 것이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/date"
 msgid "September 17th, 1944 · Arnhem, Netherlands"
-msgstr ""
+msgstr "1944년 9월 17일 · 네덜란드 아른험"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/place"
 msgid "1st Airborne Division"
-msgstr ""
+msgstr "제1공수사단"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/story"
 msgid "Operation Market Garden has begun!\n\nXXX Corps also started moving into the Netherlands from Belgium. They need to cover the distance to Arnhem in a matter of days if they are to relieve your unit at the Arnhem bridge.\n\nIn the Nijmegen area, the US paratroopers will also attempt to capture the bridges.\n\nYou have marched from your dropzone to Arnhem proper in the meantime. The Drop Zone, however, was miles away from the bridge you have to take; you have been marching east along the river for a while now, wondering why there isn't a single German to be seen.\n\nYour orders are to take the bridge and to hold it until XXX Corps arrives from the south. It’s a relatively simple objective, but it will be hard to achieve."
-msgstr ""
+msgstr "마켓 가든 작전이 시작됐다!\n\n제30군단도 벨기에에서 네덜란드로 진격하기 시작했다. 아른험 다리의 자네 부대를 구원하려면 며칠 안에 아른험까지의 거리를 주파해야 한다.\n\n네이메헌 일대에서는 미 공수부대도 다리를 점령하려 시도할 것이다.\n\n그동안 자네는 강하 지점에서 아른험 시내로 행군했다. 그러나 강하 지점은 점령할 다리에서 수 마일 떨어져 있었다. 한참 동안 강을 따라 동쪽으로 행군하면서 독일군이 한 명도 보이지 않는 이유를 의아해했다.\n\n임무는 다리를 점령하고 제30군단이 남쪽에서 도착할 때까지 지키는 것이다. 비교적 단순한 목표지만 달성하기는 어려울 것이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_b_east"
 msgid "Jerry is attacking our positions at the Eastern side of the bridge!"
-msgstr ""
+msgstr "제리가 다리 동쪽의 우리 진지를 공격하고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_b_west"
 msgid "Germans are pushing our positions at the Western side of the bridge!"
-msgstr ""
+msgstr "독일군이 다리 서쪽의 우리 진지를 밀어붙이고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_district"
 msgid "They are attacking the residential area!"
-msgstr ""
+msgstr "놈들이 주택가를 공격하고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_factory"
 msgid "The enemy is attacking the factory facilities!"
-msgstr ""
+msgstr "적이 공장 시설을 공격하고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_hq"
 msgid "Germans are attacking HQ! We cannot lose it!"
-msgstr ""
+msgstr "독일군이 본부를 공격하고 있다! 뺏기면 안 된다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_jeeppark"
 msgid "Positions at the jeep park are under attack!"
-msgstr ""
+msgstr "지프 주차장 진지가 공격받고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_post"
 msgid "Our outpost is under attack!"
-msgstr ""
+msgstr "우리 전초가 공격받고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_prison"
 msgid "Another attack, it’s on the prison building!"
-msgstr ""
+msgstr "또 공격이다, 교도소 건물이다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/attack_workshop"
 msgid "The enemy is attacking our positions at the workshop facilities!"
-msgstr ""
+msgstr "적이 작업장 시설의 우리 진지를 공격하고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_b_east"
 msgid "We’ve lost our positions at the Eastern side of the bridge!"
-msgstr ""
+msgstr "다리 동쪽의 진지를 잃었다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_b_west"
 msgid "The enemy has captured our positions at the Western side of the bridge!"
-msgstr ""
+msgstr "적이 다리 서쪽의 우리 진지를 점령했다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_district"
 msgid "We’ve lost control over the residential area!"
-msgstr ""
+msgstr "주택가를 빼앗겼다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_factory"
 msgid "Germans have captured our positions at the factory facilities! Fall back to the Eastern side of the bridge!"
-msgstr ""
+msgstr "독일군이 공장 시설의 우리 진지를 점령했다! 다리 동쪽으로 후퇴해라!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_hq"
 msgid "We’ve lost the HQ!"
-msgstr ""
+msgstr "본부를 잃었다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_jeeppark"
 msgid "Germans have taken control over the jeep park!"
-msgstr ""
+msgstr "독일군이 지프 주차장을 장악했다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_post"
 msgid "They have captured our outpost!"
-msgstr ""
+msgstr "놈들이 우리 전초를 점령했다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_prison"
 msgid "The prison building has been lost! Now they can strike right to our HQ!"
-msgstr ""
+msgstr "교도소 건물을 잃었다! 이제 놈들이 우리 본부를 곧장 칠 수 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/captured_workshop"
 msgid "Workshop facilities have been lost! Fall back to the prison building!"
-msgstr ""
+msgstr "작업장 시설을 잃었다! 교도소 건물로 후퇴해라!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/6pd_lost_01"
 msgid "We just lost one of our 6-pounders!"
-msgstr ""
+msgstr "6파운더 한 문을 잃었다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/6pd_lost_02"
 msgid "The enemy has destroyed another 6-pounder! We have only one left!"
-msgstr ""
+msgstr "적이 6파운더를 또 한 문 파괴했다! 한 문밖에 안 남았다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/6pd_lost_03"
 msgid "We’ve lost all our 6-pounders! Now we can count only on our PIATs!"
-msgstr ""
+msgstr "6파운더를 전부 잃었다! 이제 PIAT에 의지할 수밖에 없다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/intro_01"
 msgid "We’ve made it. Come on men, the bridge is not that far by now. Let’s keep moving."
-msgstr ""
+msgstr "해냈다. 가자, 제군. 다리는 이제 그리 멀지 않다. 계속 이동하자."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/intro_02"
 msgid "Digby should have been here by now but I don’t think we can wait for him any longer. I’m afraid we will have to handle this ourselves."
-msgstr ""
+msgstr "디그비가 벌써 도착했어야 하는데 더는 기다릴 수 없을 것 같다. 우리끼리 해결해야 할 것 같다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/intro_03"
 msgid "Hopefully, they will reach us by morning. Till then, we must control this bridge. Lucky for us, looks like most of the Germans have gone, so we shouldn’t meet tough resistance."
-msgstr ""
+msgstr "아침까지는 도착하길 바란다. 그때까지 이 다리를 장악해야 한다. 다행히 독일군 대부분이 떠난 것 같으니 강한 저항은 없을 것이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/intro_04"
 msgid "The bridge is ours now. Dig in, keep watch and get some rest. Digby had better show up by morning…"
-msgstr ""
+msgstr "이제 다리는 우리 것이다. 참호를 파고, 경계하고, 좀 쉬어라. 디그비는 아침까지 나타나는 게 좋을 텐데…"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/secret01_hint"
 msgid "This appears to be one of the tanks which attacked us during the day, let's see if it's still repairable."
-msgstr ""
+msgstr "낮에 우리를 공격했던 전차 중 하나 같다. 아직 수리할 수 있는지 보자."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/enemy_see_pl_tank"
 msgid "Looks like we scared them to death with the tank."
-msgstr ""
+msgstr "우리 전차 때문에 놈들이 겁에 질려 죽은 모양이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/morning_01"
 msgid "Beautiful morning, Colonel Frost. I hope your kits are not completely soaked. The weather here is indeed not much different from our homelands."
-msgstr ""
+msgstr "아름다운 아침입니다, 프로스트 대령님. 장비가 완전히 젖지 않았기를 바랍니다. 이곳 날씨는 우리 고향과 정말 다르지 않군요."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/morning_02"
 msgid "Good to see you, Major. The kits are fine which I cannot say about our situation."
-msgstr ""
+msgstr "반갑네, Major. 장비는 멀쩡하네만, 우리 상황은 그렇다고 할 수 없군."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/morning_03"
 msgid "Thirty Corps is moving much slower than we’ve expected even in the worst case scenario. It seems like we have to be ready for all possible German counterattacks."
-msgstr ""
+msgstr "제30군단은 최악의 경우를 가정했을 때보다도 훨씬 느리게 움직이고 있다. 독일군의 모든 반격 가능성에 대비해야 할 것 같다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/morning_04"
 msgid "I believe we have everything we need, Colonel. The 6-pounders are rolling out, AT specialists looking for ambush positions."
-msgstr ""
+msgstr "필요한 건 다 갖춘 것 같습니다, 대령님. 6파운더는 배치 중이고, 대전차 전문가들은 매복 위치를 찾고 있습니다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/morning_05"
 msgid "This might not be enough, I am afraid. The enemy cannot afford to lose this bridge, otherwise their entire frontline will fall. They will throw everything they have."
-msgstr ""
+msgstr "그것으로는 부족할지도 모르네. 적은 이 다리를 잃을 여유가 없네. 잃으면 전선 전체가 무너지니까. 가진 것을 전부 쏟아부을 걸세."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/morning_06"
 msgid "This is going to be not easy for us but I am sure we will do it. The Corps has some delay but they are not that far from us. I suggest discussing the details in the HQ if you have any by far."
-msgstr ""
+msgstr "우리에게 쉽지 않겠지만 해낼 수 있다고 확신합니다. 군단이 좀 늦어졌지만 그리 멀리 있지는 않습니다. 아직 의견이 있으시면 본부에서 세부 사항을 논의하는 것이 좋겠습니다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_01"
 msgid "Listen up, lads! We are to hold this bridge until the ground forces arrive. Could be hours, could be days. No one knows. The only thing I know is that Jerry has to take this bridge brick by brick if they want it."
-msgstr ""
+msgstr "잘 들어라, 제군! 지상군이 도착할 때까지 이 다리를 지킨다. 몇 시간이 될 수도, 며칠이 될 수도 있다. 아무도 모른다. 내가 아는 건 제리가 이 다리를 원한다면 벽돌 하나하나 빼앗아야 한다는 것뿐이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_02"
 msgid "We’re completely surrounded, gentlemen. That simplifies our problem. Shoot everything that moves and expect enemy attacks from all directions."
-msgstr ""
+msgstr "우리는 완전히 포위됐다, 제군. 덕분에 문제가 단순해졌다. 움직이는 건 전부 쏴라. 사방에서 적의 공격이 올 것이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_03"
 msgid "Remember, this is the job we have been trained for. The eyes of the world are upon us. Let us show them what the Airborne can do."
-msgstr ""
+msgstr "기억해라, 이것이 우리가 훈련받은 일이다. 세계의 눈이 우리를 보고 있다. 공수부대가 무엇을 할 수 있는지 보여 주자."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_04"
 msgid "I have always appreciated your attitude, Sir Digby. However let us not forget how short we are on supplies. Make every shot count and spare your ammo."
-msgstr ""
+msgstr "자네의 그 자세는 늘 높이 평가해 왔소, 디그비 경. 하지만 보급이 얼마나 부족한지 잊지 맙시다. 한 발 한 발 헛되이 쏘지 말고 탄약을 아끼시오."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_05"
 msgid "In case you decide to take positions in houses… For God’s sake, please watch your head while going upstairs. These bloody stairs will take us out quicker than the Germans."
-msgstr ""
+msgstr "집에 진지를 잡을 생각이라면… 제발 위층으로 올라갈 때 머리를 조심하라. 이 빌어먹을 계단이 독일군보다 먼저 우리를 쓰러뜨릴 거다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/resistance_01"
 msgid "Goedemorgen friends, we are the local resistance fighters. Can’t miss the chance to throw occupants off our land."
-msgstr ""
+msgstr "좋은 아침입니다, 친구들. 우리는 현지 저항군입니다. 점령자를 우리 땅에서 쫓아낼 기회를 놓칠 수 없지요."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/resistance_02"
 msgid "How can we assist you? We know every corner of this city and could help you either on the battlefield or go look for some ammunition and weapons."
-msgstr ""
+msgstr "어떻게 도우면 되겠습니까? 우리는 이 도시의 구석구석을 압니다. 전장에서 도울 수도 있고, 탄약과 무기를 찾으러 갈 수도 있습니다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/resistance_ammo"
 msgid "Got it. My people will come back soon, you will not regret. We won’t let you down."
-msgstr ""
+msgstr "알겠습니다. 우리 사람들이 곧 돌아올 겁니다, 후회하지 않을 겁니다. 실망시키지 않겠습니다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/resistance_joined"
 msgid "It’s an honor for us to fight back the occupiers together with you. We won’t let you down."
-msgstr ""
+msgstr "점령군을 함께 몰아내게 되어 영광입니다. 실망시키지 않겠습니다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_artstrike_start"
 msgid "They are firing artillery at our positions! Take cover at our defensive positions!"
-msgstr ""
+msgstr "놈들이 우리 진지에 포격을 하고 있다! 방어 진지에서 엄폐해라!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/preparation_artstrike_done"
 msgid "We haven't got much time, make sure we are ready to meet the German forces very soon."
-msgstr ""
+msgstr "시간이 많지 않다. 곧 독일군을 맞을 준비를 갖춰라."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part02_01"
 msgid "Is that all? I expected something more serious, not a few token infantrymen."
-msgstr ""
+msgstr "이게 다인가? 좀 더 대단한 걸 기대했는데, 보병 몇 명이라니."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part02_02"
 msgid "Those poor sods must’ve been probing our defenses."
-msgstr ""
+msgstr "불쌍한 놈들, 우리 방어선을 떠보던 모양이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part02_03"
 msgid "Gentlemen, I’ve received a spot of good news. Thirty Corps and the American 82nd are advancing towards the bridge at Nijmegen. We might get relief even sooner as we thought."
-msgstr ""
+msgstr "제군, 좋은 소식이 있네. 제30군단과 미 제82사단이 네이메헌 다리를 향해 진격 중이다. 생각보다 더 빨리 구원받을 수도 있다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part02_04"
 msgid "Sir, if I'm correct, then the ground forces will be here in a couple hours."
-msgstr ""
+msgstr "대령님, 제 계산이 맞다면 지상군이 몇 시간 안에 이곳에 도착할 겁니다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part02_05"
 msgid "The whole show hangs on what we do today. If we make it, we might just wrap up the war by Christmas. Think of the lives saved."
-msgstr ""
+msgstr "모든 게 오늘 우리가 하는 일에 달려 있네. 성공하면 크리스마스까지 전쟁을 끝낼 수도 있어. 구할 수 있는 목숨을 생각하게."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part03_01"
 msgid "Everyone, take cover in basements! They are rolling out rocket artillery!"
-msgstr ""
+msgstr "모두 지하실로 대피해라! 로켓 포병을 전개하고 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part03_02"
 msgid "I have one of my best squads on the other side. They’ll do their best."
-msgstr ""
+msgstr "내 최고의 분대 중 하나가 반대편에 있다. 최선을 다할 것이다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part03_03"
 msgid "Let’s be very careful, these are elite troops. First, we have to distract them before they fire."
-msgstr ""
+msgstr "아주 조심하자, 이놈들은 정예다. 먼저 놈들이 사격하기 전에 주의를 분산시켜야 한다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part03_04"
 msgid "Look, the Germans have left some explosive charges here. That’s exactly what we need."
-msgstr ""
+msgstr "봐라, 독일군이 여기 폭약을 놓고 갔다. 우리에게 딱 필요한 거다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part03_05"
 msgid "Fantastic job, people. We should get the hell out of here before their reinforcements arrive."
-msgstr ""
+msgstr "훌륭했다, 제군. 놈들의 증원군이 오기 전에 여기서 빠져나가자."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part04_01"
 msgid "I cannot believe they made it… Now all the odds to hold this city are on our side!"
-msgstr ""
+msgstr "놈들이 해내다니 믿을 수 없다… 이제 이 도시를 지킬 가능성이 모두 우리 쪽에 있다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part04_02"
 msgid "Seems like the Corps is stuck on its way. We have to hold a little longer."
-msgstr ""
+msgstr "군단이 오는 길에 발이 묶인 모양이다. 조금 더 버텨야 한다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part04_03"
 msgid "Damn, I’ve been hit!"
-msgstr ""
+msgstr "젠장, 맞았다!"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/part04_ammo"
 msgid "The resistance has brought us this truck. They said to take a look inside."
-msgstr ""
+msgstr "저항군이 이 트럭을 가져왔다. 안을 살펴보라고 했다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/outro_01"
 msgid "They will not come for us, will they?"
-msgstr ""
+msgstr "놈들이 우리를 잡으러 오지는 않겠지, 그렇지?"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/narrator/cutscene/outro_02"
 msgid "Tell them to lower their weapons… Our fight is over…"
-msgstr ""
+msgstr "무기를 내리라고 전해라… 우리 싸움은 끝났다…"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/01_bridge"
 msgid "Secure the bridge"
-msgstr ""
+msgstr "다리를 확보하라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/02_hq"
 msgid "Hold the HQ building at all costs"
-msgstr ""
+msgstr "본부 건물을 사수하라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/03_nebelwerfer"
 msgid "Destroy the Nebelwerfer battery"
-msgstr ""
+msgstr "네벨베르퍼 포대를 파괴하라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt01_workshop"
 msgid "Hold the workshop facilities"
-msgstr ""
+msgstr "작업장 시설을 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt02_prison"
 msgid "Hold the prison building"
-msgstr ""
+msgstr "교도소 건물을 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt03_jeeppark"
 msgid "Hold the jeep park"
-msgstr ""
+msgstr "지프 주차장을 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt04_b_east"
 msgid "Hold the eastern bridge"
-msgstr ""
+msgstr "동쪽 다리를 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt04_b_west"
 msgid "Hold the western bridge"
-msgstr ""
+msgstr "서쪽 다리를 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt06_district"
 msgid "Hold the residential area"
-msgstr ""
+msgstr "주택가를 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt07_factory"
 msgid "Hold the factory facilities"
-msgstr ""
+msgstr "공장 시설을 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt08_post"
 msgid "Hold the outpost"
-msgstr ""
+msgstr "전초를 지켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt_resistance_ammo_completed"
 msgid "I'll take two - Ask the Dutch resistance squad to find more ammunition"
-msgstr ""
+msgstr "두 개 주세요 - 네덜란드 저항군 분대에게 탄약을 더 찾아 달라고 요청했다"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/opt_resistance_recruit_completed"
 msgid "Doomed Tea Party - Recruit the Dutch resistance squad"
-msgstr ""
+msgstr "운명의 티파티 - 네덜란드 저항군 분대를 영입했다"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret01"
 msgid "Secret objective #1"
@@ -339,7 +339,7 @@ msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret01_completed"
 msgid "Secret objective: Why die for Arnhem? - Make German garrison retreat without fight"
-msgstr ""
+msgstr "비밀 목표: 아른험을 위해 왜 죽나? - 전투 없이 독일 수비대를 후퇴시켰다"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret02"
 msgid "Secret objective #2"
@@ -347,11 +347,11 @@ msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret02_completed"
 msgid "Secret objective: Career shift - After loosing all AT guns, give a PIAT to any of your former AT gun crew"
-msgstr ""
+msgstr "비밀 목표: 전직 - 대전차포를 모두 잃은 뒤 이전 대전차포 승무원 중 한 명에게 PIAT를 주었다"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/loose_nebelwerfer"
 msgid "You did not destroy the artillery in time."
-msgstr ""
+msgstr "제때 포병을 파괴하지 못했다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/loose_units_lost"
 msgid "You lost all your units."
@@ -360,23 +360,23 @@ msgstr "모든 유닛을 잃었다."
 #, boost-format
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/obj_progress_reinf"
 msgid "Allied forces are %1% km away"
-msgstr ""
+msgstr "아군이 %1% km 거리에 있다"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/reinf_resistance_ammo"
 msgid "Search for ammo"
-msgstr ""
+msgstr "탄약 수색"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/reinf_resistance_ammo_hint"
 msgid "Send the Dutch Resistance squad to search for ammunition. They will come back later with their findings."
-msgstr ""
+msgstr "네덜란드 저항군 분대를 탄약 수색에 보낸다. 나중에 찾은 물자를 가지고 돌아온다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/reinf_resistance_join"
 msgid "Join us"
-msgstr ""
+msgstr "합류"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/reinf_resistance_join_hint"
 msgid "The Dutch Resistance squad becomes playable for the rest of this mission."
-msgstr ""
+msgstr "네덜란드 저항군 분대를 이번 임무 동안 직접 조작할 수 있다."
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/reinf_skip_preparation"
 msgid "Skip preparation"
@@ -384,12 +384,12 @@ msgstr "준비 생략"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/timer_nebelwerfer"
 msgid "Distract artillery men before they fire"
-msgstr ""
+msgstr "포병이 사격하기 전에 주의를 분산시켜라"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/timer_preparation"
 msgid "Arrival of German mechanized forces"
-msgstr ""
+msgstr "독일 기계화 부대 도착"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/hint_choice"
 msgid "The Dutch Resistance squad is willing to help you. Choose one of the options in the <c(B29557)>reinforcements tab</c>."
-msgstr ""
+msgstr "네덜란드 저항군 분대가 도움을 주려 한다. <c(B29557)>증원 탭</c>에서 선택지 중 하나를 골라라."

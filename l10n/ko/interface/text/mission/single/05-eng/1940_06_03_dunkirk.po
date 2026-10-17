@@ -15,295 +15,295 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/name"
 msgid "Dynamo"
-msgstr ""
+msgstr "다이나모"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/name_big"
 msgid "Dynamo"
-msgstr ""
+msgstr "다이나모"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/story"
 msgid "Ever since the Germans broke through at Sedan three weeks ago, the Allies have been on the back foot.\n\nCalais fell on the 27th, and Belgium capitulated on the 28th. The perimeter around Dunkirk is shrinking, and an attack on the remaining allied forces seems to be a matter of time only.\n\nThe Germans are pushing in on the shrinking perimeter from all sides, including from the air.\n\nToday, it’s up to you and your comrades to buy the evacuation operation more time and to keep the Germans away from the beach as far as possible."
-msgstr ""
+msgstr "3주 전 독일군이 스당을 돌파한 이후 연합군은 줄곧 밀리고 있다.\n\n칼레는 27일에 함락됐고 벨기에는 28일에 항복했다. 됭케르크 방어선은 점점 줄어들고 있으며, 남은 연합군에 대한 공격은 시간문제로 보인다.\n\n독일군은 공중을 포함해 사방에서 줄어드는 방어선을 조여 오고 있다.\n\n오늘은 자네와 동료들이 철수 작전에 시간을 벌어 주고 독일군을 최대한 해변에서 멀리 떨어뜨려 놓아야 한다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/date"
 msgid "June 3rd, 1940 · Dunkirk, France"
-msgstr ""
+msgstr "1940년 6월 3일 · 프랑스 됭케르크"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/place"
 msgid "British Expeditionary Force, Armée de Terre"
-msgstr ""
+msgstr "영국 원정군, 프랑스 육군"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/outro_completed"
 msgid "Your tenacity and courage have saved many lives today. The British empire will be able to continue the fight another day as the last country in Europe fighting against Germany."
-msgstr ""
+msgstr "자네의 끈기와 용기가 오늘 많은 목숨을 살렸다. 대영제국은 유럽에서 독일에 맞서 싸우는 마지막 나라로서 앞으로도 싸울 수 있게 됐다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/outro_failed"
 msgid "Operation Dynamo has not been very successful, and it remains to be seen whether we will stay in the war - or surrender."
-msgstr ""
+msgstr "다이나모 작전은 그리 성공적이지 못했고, 우리가 전쟁을 계속할지 항복할지는 두고 봐야 한다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_01"
 msgid "With all due respect, Sir, but you only won because Cliff Bastin was out half the season."
-msgstr ""
+msgstr "말씀드리기 송구하지만 대위님, 그건 클리프 배스틴이 시즌 절반을 쉬었으니까 이기신 겁니다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_02"
 msgid "Keep telling yourself that. Everton didn’t need Bastin to lift the cup."
-msgstr ""
+msgstr "계속 그렇게 우겨 봐라. 에버턴은 컵을 들어 올리는 데 배스틴이 필요 없었어."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_03"
 msgid "Lawton just had one flashy season. He’d never last against Arsenal’s back line in their prime!"
-msgstr ""
+msgstr "로턴은 한 시즌 반짝했을 뿐입니다. 전성기 아스널 수비진 앞에서는 절대 못 버텼을 겁니다!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_04"
 msgid "We have more of these flyers than we do toilet paper… They really want us to wave the white flag."
-msgstr ""
+msgstr "이 전단이 화장지보다 더 많은데… 정말 우리가 백기를 들길 바라는군."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_05"
 msgid "God help us if Jerry gets his hands on us…"
-msgstr ""
+msgstr "제리 놈들 손에 걸리면 큰일이다…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_06"
 msgid "Let’s just… Let’s just keep moving…"
-msgstr ""
+msgstr "그냥… 그냥 계속 가자고…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_07"
 msgid "Sir… Haven’t you heard what they do to prisoners?"
-msgstr ""
+msgstr "대위님… 놈들이 포로를 어떻게 한다는 얘기 못 들으셨습니까?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_08"
 msgid "I’ve only heard the rumors, same as you."
-msgstr ""
+msgstr "나도 자네처럼 소문만 들었다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_10"
 msgid "Is it true they use prisoners as bloody human shields?"
-msgstr ""
+msgstr "포로를 빌어먹을 인간 방패로 쓴다는 게 사실입니까?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_11"
 msgid "Where did you hear that, Corporal? Same place you heard the Gunners were still the best in England?"
-msgstr ""
+msgstr "어디서 들었나, Corporal? 건너스가 아직도 영국 최고라고 들었던 그곳인가?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_12"
 msgid "The whole company is talking about this. And there's worse… Have you heard what the French are saying?"
-msgstr ""
+msgstr "중대 전체가 그 얘기를 합니다. 더 심한 것도 있고요… 프랑스 놈들이 뭐라고 하는지 들으셨습니까?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_13"
 msgid "Alright, Corporal, let’s just hope we don’t find out."
-msgstr ""
+msgstr "좋아, Corporal. 알게 되지 않기만 바라자."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_14"
 msgid "Oh my God…"
-msgstr ""
+msgstr "맙소사…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_15"
 msgid "They’ve sent civilian boats? Well, I reckon it’s better than nothing."
-msgstr ""
+msgstr "민간 선박까지 보냈다고? 그래도 없는 것보다는 낫겠지."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/intro_16"
 msgid "There you are, lieutenant! Over here, I’ve got a job for you."
-msgstr ""
+msgstr "거기 있었군, 중위! 이쪽으로 와라, 자네에게 맡길 일이 있다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_01"
 msgid "Set up the first line of defense at the double. Our engineers are busy sabotaging the vehicles to prevent them from falling into enemy hands. We have to hold the Germans here until they are done."
-msgstr ""
+msgstr "지금 당장 첫 번째 방어선을 구축해라. 공병들이 차량이 적의 손에 넘어가지 않도록 파괴 작업을 하고 있다. 작업이 끝날 때까지 독일군을 여기서 막아야 한다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_02"
 msgid "Calling this situation critical is an understatement. The evacuation is far from complete and the enemy may strike any second."
-msgstr ""
+msgstr "상황이 위급하다는 말로는 부족하다. 철수는 한참 멀었고 적은 언제든 공격할 수 있다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_03"
 msgid "During the retreat we left a lot of weapons and ammunition in these crates. Take a look inside them."
-msgstr ""
+msgstr "후퇴하면서 이 상자들에 무기와 탄약을 많이 남겨 뒀다. 안을 살펴봐라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_04"
 msgid "Sir, where are the rest of the gun crews?"
-msgstr ""
+msgstr "중위님, 나머지 포 승무원들은 어디 있습니까?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_05"
 msgid "I beg your pardon, Lieutenant?"
-msgstr ""
+msgstr "뭐라고 했나, Lieutenant?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_06"
 msgid "We have a couple of AT guns but… Not enough trained personnel to operate them."
-msgstr ""
+msgstr "대전차포는 몇 문 있습니다만… 운용할 훈련된 인원이 부족합니다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_07"
 msgid "They’re most likely either on the beach or on their way home. I’m afraid some of your riflemen have to learn on the fly. This evacuation has been a total mess from the beginning."
-msgstr ""
+msgstr "아마 해변에 있거나 이미 귀국길에 올랐을 것이다. 미안하지만 자네 소총수 몇 명은 하면서 배워야겠다. 이번 철수는 처음부터 엉망진창이었다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_11"
 msgid "What the?.. Jerry is already here!"
-msgstr ""
+msgstr "뭐야?.. 제리가 벌써 왔다!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_12"
 msgid "Damn, I’ve seen this before. It looks like they’re probing our line, that means the fun is about to begin…"
-msgstr ""
+msgstr "젠장, 전에도 본 적 있다. 우리 전선을 떠보는 거다. 곧 본격적으로 시작된다는 뜻이다…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_14"
 msgid "Watch out, enemy plane incoming! Get to cover!"
-msgstr ""
+msgstr "조심해, 적 항공기 접근 중이다! 엄폐해라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_15"
 msgid "We don’t have much time, bolster the line as much as you can."
-msgstr ""
+msgstr "시간이 없다. 가능한 한 전선을 보강해라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_16"
 msgid "Sir, with all due respect… How are we meant to hold here? We’re already running low."
-msgstr ""
+msgstr "대위님, 말씀드리기 송구하지만… 여기서 어떻게 버팁니까? 벌써 탄약이 바닥나 갑니다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part01_17"
 msgid "I saw some crates with small arms ammunition that were left during the retreat. Take a look at them."
-msgstr ""
+msgstr "후퇴할 때 소화기 탄약이 든 상자 몇 개를 남겨 둔 걸 봤다. 확인해 봐라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_01"
 msgid "Here they are! Hold fast!"
-msgstr ""
+msgstr "놈들이 왔다! 버텨라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_02"
 msgid "The engineers are still working on the vehicles. Use anything you can find in ammunition crates and don’t let them get too close to us!"
-msgstr ""
+msgstr "공병들은 아직 차량 작업 중이다. 탄약 상자에서 쓸 수 있는 건 뭐든 써라. 놈들이 너무 가까이 오지 못하게 해라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_03"
 msgid "Damn, we haven’t got enough AT-guns to stop all these tanks…"
-msgstr ""
+msgstr "젠장, 이 전차들을 전부 막기엔 대전차포가 부족하다…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_04"
 msgid "The retreating forces have left us a lot of rifles with cup dischargers. Their AT grenades are powerful enough to stop a tank at close quarters. We can shoot from behind fences and from buildings to ambush their vehicles."
-msgstr ""
+msgstr "후퇴한 부대가 컵 발사기를 단 소총을 많이 두고 갔다. 대전차 수류탄은 근거리에서 전차를 세울 만큼 강력하다. 울타리와 건물 뒤에서 쏴서 놈들 차량을 매복 공격할 수 있다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_06"
 msgid "The boys have finished! Lieutenant Shaw, retreat to the second line, I’m going to put the remainder of one of my companies under your command."
-msgstr ""
+msgstr "다들 끝냈다! Lieutenant 쇼, 두 번째 방어선으로 후퇴해라. 우리 중대 하나의 잔여 병력을 자네 지휘 아래 두겠다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_07"
 msgid "The engineers have set up a timer to blow up the vehicles. Make sure you stay well clear of them!"
-msgstr ""
+msgstr "공병들이 차량을 폭파할 타이머를 설치했다. 반드시 멀리 떨어져 있어라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_08"
 msgid "The vehicles are going to go up any second. Be careful."
-msgstr ""
+msgstr "차량이 곧 터진다. 조심해라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_09"
 msgid "What a waste. But I reckon it’s better than leaving them to the enemy."
-msgstr ""
+msgstr "아깝군. 그래도 적에게 넘겨주는 것보다는 낫다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_lost"
 msgid "Our defense has collapsed! Lieutenant Shaw, I am relieving you of your command, dismissed!"
-msgstr ""
+msgstr "우리 방어선이 무너졌다! Lieutenant 쇼, 자네의 지휘권을 박탈한다. 해산!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/part02_fallback_reminder"
 msgid "Fall back to the second line, lieutenant! Think of your men."
-msgstr ""
+msgstr "두 번째 방어선으로 물러나라, 중위! 부하들을 생각해라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_01"
 msgid "Watch the skies, incoming enemy planes!"
-msgstr ""
+msgstr "하늘을 봐라, 적기 접근 중이다!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_02"
 msgid "Hey, look! The Brylcreem Boys decided to show up! Go get ‘em!"
-msgstr ""
+msgstr "이봐, 봐라! 브릴크림 보이즈가 드디어 나타났다! 가서 혼내 줘라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_03"
 msgid "We should assist them somehow… Has anyone seen a functional anti-air gun?"
-msgstr ""
+msgstr "어떻게든 도와줘야 한다… 작동하는 대공포를 본 사람 있나?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_04"
 msgid "I am afraid all of them are out of service. With a bit of luck you might repair one of them."
-msgstr ""
+msgstr "전부 고장 난 것 같습니다. 운이 좋으면 하나쯤은 수리할 수 있을 겁니다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_05"
 msgid "Excellent, that’s exactly what we need right now. This Bofors can shoot the bloody planes down."
-msgstr ""
+msgstr "훌륭하다, 바로 지금 필요한 거다. 이 보포스가 빌어먹을 비행기들을 떨어뜨릴 수 있다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_06"
 msgid "More German planes incoming, reload the gun!"
-msgstr ""
+msgstr "독일 항공기가 더 온다, 포를 재장전해라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_07"
 msgid "I don’t see anymore of them. Brilliant work! I bet the RAF will owe us."
-msgstr ""
+msgstr "더는 안 보인다. 훌륭했다! 공군이 우리에게 신세를 졌을 거다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_08"
 msgid "Well, at least we’ve repaired this Bofors."
-msgstr ""
+msgstr "뭐, 적어도 이 보포스는 고쳤군."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_09"
 msgid "They just shot down one of our planes! We need to find something against these German fighters!"
-msgstr ""
+msgstr "우리 비행기 한 대가 격추당했다! 저 독일 전투기들에 맞설 방법을 찾아야 한다!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/dogfight_10"
 msgid "They’ve destroyed our fighters! We can’t count on RAF support anymore."
-msgstr ""
+msgstr "아군 전투기가 전멸했다! 더는 공군 지원을 기대할 수 없다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/pl_reinf_01"
 msgid "Sir, there are a few allied troops coming from the east! Where are they coming from?"
-msgstr ""
+msgstr "대위님, 동쪽에서 아군 병력이 몇 명 오고 있습니다! 어디서 오는 겁니까?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/pl_reinf_02"
 msgid "These are the reinforcements we expected an hour ago… Use them to fill any gaps in your line."
-msgstr ""
+msgstr "한 시간 전에 기다렸던 증원군이다… 전선의 빈틈을 메우는 데 써라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/pl_first_line_retreat_warning"
 msgid "Where the hell are you going?! There was no order for falling back!"
-msgstr ""
+msgstr "어디로 가는 거냐?! 후퇴 명령은 없었다!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/evac_boat_01"
 msgid "Vessels from home are beginning to arrive. We must hold our ground to protect the evacuation."
-msgstr ""
+msgstr "본국에서 온 선박이 도착하기 시작했다. 철수를 지키려면 버텨야 한다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/evac_boat_02"
 msgid "There’s a vessel at the mole, steady on!"
-msgstr ""
+msgstr "방파제에 선박이 있다, 침착하게!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/evac_boat_03"
 msgid "Another boat is at the mole, provide cover!"
-msgstr ""
+msgstr "또 한 척이 방파제에 왔다, 엄호해라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/evac_boat_04"
 msgid "A transport is at the mole, keep at it!"
-msgstr ""
+msgstr "수송선이 방파제에 있다, 계속해라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/evac_boat_05"
 msgid "This is the last one! We must hold a little longer while the wounded are loaded."
-msgstr ""
+msgstr "이게 마지막이다! 부상자를 싣는 동안 조금만 더 버텨야 한다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/enemy_near_beach"
 msgid "The Germans have reached the beach! Wipe them out before they slaughter our men at the mole!"
-msgstr ""
+msgstr "독일군이 해변에 도달했다! 방파제의 아군을 학살하기 전에 쓸어버려라!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/outro_01"
 msgid "To the mole, quick!"
-msgstr ""
+msgstr "방파제로, 빨리!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/outro_02"
 msgid "Damn, how many of you are still out there…"
-msgstr ""
+msgstr "젠장, 아직 밖에 몇 명이나 남은 거냐…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/outro_03"
 msgid "Major! Greenwood, have you seen him?"
-msgstr ""
+msgstr "Major! 그린우드 보셨습니까?"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/outro_04"
 msgid "We’re the last ones! Move your arse to the mole, lieutenant!"
-msgstr ""
+msgstr "우리가 마지막이다! 방파제로 엉덩이를 움직여라, 중위!"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/outro_05"
 msgid "Shit…"
-msgstr ""
+msgstr "젠장…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/narrator/cutscene/outro_06"
 msgid "I don’t know how we made it out of there…"
-msgstr ""
+msgstr "어떻게 거기서 빠져나왔는지 모르겠다…"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/gameover_early_retreat"
 msgid "You fell back too early. Do not send your units too far from your first defensive line."
-msgstr ""
+msgstr "너무 일찍 후퇴했다. 부대를 첫 번째 방어선에서 너무 멀리 보내지 마라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/gameover_def_lost"
 msgid "The enemy has broken through."
-msgstr ""
+msgstr "적이 돌파했다."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/progress_evac"
 msgid "You have saved %1% lives"
-msgstr ""
+msgstr "%1%명의 목숨을 구했다"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/reinf_airstrike"
 msgid "Air Strike"
@@ -311,40 +311,40 @@ msgstr "공습"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/timer_preparation"
 msgid "Prepare your defensive lines"
-msgstr ""
+msgstr "방어선을 준비하라"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/timer_sabotage"
 msgid "Vehicles sabotage, stay away"
-msgstr ""
+msgstr "차량 파괴 작업 중, 접근 금지"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/hint_airstrike"
 msgid "Royal Air Forces are ready to provide close air support. There are only <c(B29557)>2 planes available</c>, use them as a last resort."
-msgstr ""
+msgstr "영국 공군이 근접 항공 지원을 준비했다. <c(B29557)>항공기는 2대뿐</c>이니 최후의 수단으로 써라."
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/timer_early_fallback"
 msgid "<c(B29557)>Bring your units back to the first defensive line</c>"
-msgstr ""
+msgstr "<c(B29557)>부대를 첫 번째 방어선으로 복귀시켜라</c>"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/tasks/01_defense"
 msgid "Protect the Evactuation of British Expeditionary Forces"
-msgstr ""
+msgstr "영국 원정군의 철수를 지켜라"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/tasks/02_line_one"
 msgid "Hold the First Line while Engineers are sabotaging Abandoned Vehicles"
-msgstr ""
+msgstr "공병이 버려진 차량을 파괴하는 동안 첫 번째 방어선을 지켜라"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/tasks/03_fallback"
 msgid "Fall back to the Second Line"
-msgstr ""
+msgstr "두 번째 방어선으로 후퇴하라"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/tasks/04_line_two"
 msgid "Slow down the German advance"
-msgstr ""
+msgstr "독일군의 진격을 늦춰라"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/tasks/opt03_dogfight"
 msgid "Help the Royal Air Force to win the Dogfight"
-msgstr ""
+msgstr "영국 공군이 공중전에서 이기도록 도와라"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/tasks/opt03_dogfight_completed"
 msgid "Unlike Tom - Help the Royal Air Force to win the Dogfight"
-msgstr ""
+msgstr "톰과 달리 - 영국 공군이 공중전에서 이기도록 도와라"

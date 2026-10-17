@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/campaign/title"
 msgid "COMMONWEALTH (Western Front), 1940-45"
-msgstr ""
+msgstr "영연방 (서부 전선), 1940-45"
 
 msgctxt "mission/single/05-eng/campaign/name"
 msgid "THEIR FINEST HOUR</c>"
-msgstr ""
+msgstr "그들의 최고의 순간</c>"
