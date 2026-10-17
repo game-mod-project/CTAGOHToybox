@@ -1,0 +1,54 @@
+# source: mod_2905667604 interface/text/mission/multi/zace_common.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (common)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/multi/bunker_limit"
+msgid "We can only build one fuel depot!"
+msgstr "연료 보급소는 하나만 지을 수 있다!"
+
+msgctxt "mission/multi/fuel_limit"
+msgid "We can only build one fuel depot!"
+msgstr "연료 보급소는 하나만 지을 수 있다!"
+
+msgctxt "mission/multi/supply_limit"
+msgid "We can only build one ammo depot!"
+msgstr "탄약 보급소는 하나만 지을 수 있다!"
+
+msgctxt "mission/multi/enemy_ambush"
+msgid "Fuck, we're surrounded!"
+msgstr "제기랄, 포위당했다!"
+
+msgctxt "mission/multi/enemy_ambush2"
+msgid "They have ambushed us!"
+msgstr "놈들이 매복했다!"
+
+msgctxt "mission/multi/enemy_plane_alert2"
+msgid "Enemy bomber! Scatter!"
+msgstr "적 폭격기다! 흩어져라!"
+
+msgctxt "mission/multi/enemy_planes_taken_out"
+msgid "We have successfully contacted air support, they have intercepted the enemy, no aircraft can attack us!"
+msgstr "항공 지원과 교신에 성공했다. 적을 요격했으니 우리를 공격할 항공기는 없다!"
+
+msgctxt "mission/multi/enemy_planes_continue"
+msgid "We failed to contact air support on time, enemy planes can still attack!"
+msgstr "제때 항공 지원과 교신하지 못했다. 적 항공기가 아직 공격할 수 있다!"
+
+msgctxt "mission/multi/enemy_planes_chance_reduced"
+msgid "Due to our command vehicle the chance of us reaching air support is higher."
+msgstr "지휘 차량 덕분에 항공 지원과 교신할 확률이 높아졌다."
+
+msgctxt "mission/multi/enemy_artillery_arrived"
+msgid "We intercepted enemy communications, they have brought in artillery!"
+msgstr "적 통신을 가로챘다. 포병을 끌어왔다!"

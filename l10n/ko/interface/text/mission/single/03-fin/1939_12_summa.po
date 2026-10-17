@@ -1,0 +1,158 @@
+# source: vanilla interface/text/mission/single/03-fin/1939_12_summa.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1939_12_summa)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/03-fin/1939_12_summa/date"
+msgid "December 18th, 1939 · Summa, Finland"
+msgstr "1939년 12월 18일 · 핀란드 숨마"
+
+msgctxt "mission/single/03-fin/1939_12_summa/men"
+msgid "You lost all your men!"
+msgstr "병사를 모두 잃었다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/name"
+msgid "Through Ice and Fire"
+msgstr "얼음과 불을 뚫고"
+
+msgctxt "mission/single/03-fin/1939_12_summa/name_big"
+msgid "Through Ice and Fire"
+msgstr "얼음과 불을 뚫고"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/01"
+msgid "Welcome to the Mannerheim line, soldiers! The soviets are about to run into the strongest fortifications our country has to offer!"
+msgstr "만네르헤임 선에 온 것을 환영한다, 병사들! 소련군은 우리나라가 가진 가장 강력한 요새와 맞부딪치게 된다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/02"
+msgid "Our main bunkers are designed to provide cross-fire as the enemy tries to surround them. Anti-tank and machinegun emplacements will make short work of the aggressors!"
+msgstr "우리 주력 벙커는 적이 포위하려 할 때 십자 사격을 가하도록 설계됐다. 대전차 진지와 기관총 진지가 침략자들을 순식간에 처리할 것이다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/03"
+msgid "The enemy is already deploying their artillery. We expect a full-blown frontal assault. Use this time to take positions on the trenches!"
+msgstr "적이 벌써 포병을 배치하고 있다. 전면 정면 공격이 예상된다. 이 시간에 참호의 위치를 잡아라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/04"
+msgid "The enemy artillery is targetting anti-tank obstacles! They are made out of stone, so they will shatter!  The enemy tanks will undoubtedly roll through the holes."
+msgstr "적 포병이 대전차 장애물을 노리고 있다! 돌로 만들어 부서질 것이다! 적 전차는 틀림없이 그 구멍으로 굴러 들어올 것이다."
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/05"
+msgid "The aggressors are launching their armored assault! Prepare to hold the line! Focus on immobilising the armor and keep the infantry pinned down!"
+msgstr "침략자들이 기갑 공격을 시작한다! 방어선을 지킬 준비를 해라! 기갑의 발을 묶는 데 집중하고 보병은 제압해라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/05b"
+msgid "The enemy is launching another attack!"
+msgstr "적이 또 공격을 시작한다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/06"
+msgid "Good job. Prepare to defend from subsequent enemy waves!"
+msgstr "잘했다. 이어지는 적의 다음 파도를 막을 준비를 해라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/06b"
+msgid "Another enemy armored assault has been defeated. Good work!"
+msgstr "적의 또 한 차례 기갑 공격을 격퇴했다. 잘했다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/07"
+msgid "The communists are planning to hit us on the western flank! Take positions and spread out your men - we don't want them all blown to bits from the enemy heavy artillery."
+msgstr "공산주의자들이 서쪽 측면을 칠 계획이다! 위치를 잡고 병력을 분산시켜라 - 적 중포에 한꺼번에 날아가면 안 된다."
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/08"
+msgid "The enemy is launching another assault toward the centre!"
+msgstr "적이 또 중앙으로 공격을 시작한다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/09"
+msgid "The soviets are launching another wave on the western flank!"
+msgstr "소련군이 서쪽 측면에 또 파도를 보낸다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/10"
+msgid "The enemy is advancing on the eastern flank! "
+msgstr "적이 동쪽 측면으로 전진 중이다! "
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/11"
+msgid "Good job, soldiers! You have earned my respect and the admiration of our great nation!"
+msgstr "잘했다, 병사들! 나의 존경과 위대한 우리나라의 찬사를 얻었다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/12"
+msgid "The SJ-5 bunker is designed specifically to bait the enemy into a crossfire. Let them come around it, and open fire from the sides!"
+msgstr "SJ-5 벙커는 적을 십자 사격으로 유인하도록 특별히 설계됐다. 우회해 들어오게 두고 측면에서 사격을 개시해라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/aa"
+msgid "Enemy vehicles with automatic weaponry have been spotted coming this way!"
+msgstr "자동화기를 장착한 적 차량이 이쪽으로 오는 것이 발견됐다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/arty_down"
+msgid "The enemy heavy artillery has been taken out! Great job!"
+msgstr "적 중포를 제거했다! 훌륭하다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/b4m"
+msgid "If you can afford it, take a trip to the enemy heavy artillery and see if you can take them out!"
+msgstr "여력이 된다면 적 중포를 찾아가 제거할 수 있는지 살펴봐라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/fail1"
+msgid "No! All your soldiers are dead! Unacceptable!"
+msgstr "안 돼! 병사가 모두 죽었다! 용납할 수 없다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/fail2"
+msgid "The enemy has penetrated our lines! Surround them and destroy them!"
+msgstr "적이 방어선을 뚫었다! 포위해서 격멸해라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/scouts"
+msgid "Enemy scout vehicles are approaching!"
+msgstr "적 정찰 차량이 접근 중이다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/officer/smk"
+msgid "The enemy has brought a huge armored monster. You must immobilise and eliminate it as swiftly as possible!"
+msgstr "적이 거대한 기갑 괴물을 끌고 왔다. 최대한 빨리 발을 묶고 제거해야 한다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/soldier/br5"
+msgid "Sir! Our forward scouts have detected enemy heavy guns on our western flank. "
+msgstr "각하! 전방 정찰대가 서쪽 측면에서 적 중포를 발견했습니다. "
+
+msgctxt "mission/single/03-fin/1939_12_summa/narrator/soldier/smk"
+msgid "What the hell is that tank? It's a bloody battleship!"
+msgstr "저 전차는 대체 뭐야? 빌어먹을 전함이잖아!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/outro_completed"
+msgid "Excellent work! You have given the Soviets more than just a black eye, and morale got a real boost out of this battle. If you continue like this, your military career will get a boost too!\nWe have given the population of Viipuri hope, and we’ve taken a lot of equipment from the enemy. That extra equipment will greatly help our situation. This is not over yet!"
+msgstr "훌륭하다! 소련군에게 멍든 눈 이상의 피해를 입혔고 이 전투로 사기가 크게 올랐다. 이대로 계속하면 당신의 군 경력도 오를 것이다!\n비푸리 주민들에게 희망을 주었고 적에게서 많은 장비를 빼앗았다. 그 추가 장비는 우리 상황에 큰 도움이 될 것이다. 아직 끝나지 않았다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/outro_failed"
+msgid "All that is now left to defend Finland is an unfinished second fortified line, which is much less of a defence than the Mannerheim line was. The Soviets race toward Helsinki and it looks like we’ve been dealt a knock- out punch. All we can do is surrender. This is not how it’s supposed to end!"
+msgstr "이제 핀란드를 지킬 것은 미완성인 제2요새선뿐이며, 만네르헤임 선에 비하면 방어력이 훨씬 떨어진다. 소련군이 헬싱키를 향해 질주하고 우리는 KO 펀치를 맞은 것 같다. 항복하는 것 말고는 할 수 있는 일이 없다. 이렇게 끝나서는 안 된다!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/place"
+msgid "2nd battalion of the 9th JR"
+msgstr "제9보병연대 제2대대"
+
+msgctxt "mission/single/03-fin/1939_12_summa/skip"
+msgid "Skip preparation phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/03-fin/1939_12_summa/story"
+msgid " The USSR has invaded Finland. After initial skirmishes, the main force of the red army arrives at the Finnish main line of defence in december of 1939. This line, known as the Mannerheim line, will have to stop the red army where the main axis of the Soviet attack leads past Summa and toward Viipuri. Bitter fighting ensues. But this is not the Maginot line, and the defenders know this fight will be anything but a walk-over.\n\n In this mission, you will have to prove your leadership by making sure you don’t get flanked while you hold on to Finland’s only defensive line that has a chance of stopping the red army."
+msgstr " 소련이 핀란드를 침공했다. 초기 충돌 뒤 1939년 12월 붉은 군대 주력이 핀란드 주 방어선에 도착한다. 만네르헤임 선이라 불리는 이 방어선은 소련군 공격의 주축이 숨마를 지나 비푸리로 향하는 지점에서 붉은 군대를 막아야 한다. 치열한 전투가 벌어진다. 하지만 이곳은 마지노선이 아니며, 방어군은 이 싸움이 결코 쉽지 않을 것임을 안다.\n\n 이 임무에서 당신은 붉은 군대를 막을 가능성이 있는 핀란드 유일의 방어선을 지키면서 측면을 찔리지 않도록 하여 지휘 능력을 증명해야 한다."
+
+msgctxt "mission/single/03-fin/1939_12_summa/task1"
+msgid "Hold the Mannerheim line!"
+msgstr "만네르헤임 선을 사수하라!"
+
+msgctxt "mission/single/03-fin/1939_12_summa/task2"
+msgid "Destroy the enemy experimental heavy tank"
+msgstr "적 시험용 중전차를 파괴하라"
+
+msgctxt "mission/single/03-fin/1939_12_summa/taskopt1"
+msgid "Raid the enemy super-heavy mortars"
+msgstr "적 초중박격포를 급습하라"
+
+msgctxt "mission/single/03-fin/1939_12_summa/timer"
+msgid "Time until enemy attack!"
+msgstr "적 공격까지 남은 시간!"

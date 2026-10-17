@@ -1,0 +1,397 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_05_pegasus)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/name"
+msgid "페가수스 다리"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/name_big"
+msgid "페가수스 다리"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/outro_completed"
+msgid "승리했다, 훌륭하게 해냈다. 제리 놈들에게 우리가 무엇을 할 수 있는지 똑똑히 보여 줬다. 상륙 해안은 측면 공격의 위협을 받지 않을 것이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/outro_failed"
+msgid "안타깝게도 보고할 성공이 없다. 그 결과 상륙 해안은 반격에 취약해졌고, 이를 막을 방법도 거의 없다. 즉시 다시 시도해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/date"
+msgid "1944년 6월 6일 · 프랑스 노르망디"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/place"
+msgid "제6공수상륙여단"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/story"
+msgid "상륙 작전을 독일군의 측면 공격으로부터 지키려면 해안 동쪽의 다리 몇 곳을 확보해야 한다.\n\n이 임무는 영국 제6공수여단에 맡겨졌다. 캉 운하 위의 다리와 인근 오른강 위의 다리를 점령해야 한다.\n\n몇 달간의 훈련은 조종사가 글라이더를 오른 운하 다리 바로 옆에 착륙시키면서 값어치를 입증했다.\n\n이제 행동할 때다! 먼저 독일군을 몰아내고 베누빌 다리를 확보하라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/gameover/defense"
+msgid "진지를 지키지 못했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/gameover/pl_dead"
+msgid "유닛을 모두 잃었다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_01"
+msgid "조종사들 때문에 제리보다 먼저 죽을 뻔했다! 다들 괜찮나? 짐 챙겨서 나와라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_02"
+msgid "이 다리가 핵심이다. 증원군이 올 때까지 점령하고 지켜야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_03"
+msgid "제리가 착륙 소리를 못 들어서 다행이다. 계속 그렇게 두자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_04"
+msgid "중위님, 앞에 토치카가 있습니다. 골칫거리가 될 수 있으니 먼저 처리하는 게 좋겠습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/landing_05"
+msgid "좋아, 계획은 이렇다. 내 분대가 토치카가 내려다보이는 곳에 자리 잡고 엄호 사격을 하겠다. 그동안 자네 부하들이 다리로 접근해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_ally_on_position"
+msgid "위치에 도착했고 토치카를 제압할 준비가 됐다. 신호만 내려라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_player_spotted"
+msgid "들켰다! 전원 사격 개시!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_shots_fired"
+msgid "왜 기다리지 않았나?! 응사해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_bunker_suppressed"
+msgid "훌륭하다! 토치카가 조용해졌다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_pl_see_mgun"
+msgid "맞은편에 기관총이 있다! 누가 처리해라, 그래야 운하를 건널 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_enemy_retreat"
+msgid "줄행랑치는 꼴 좀 봐라! 아침 시작치고 나쁘지 않군, 안 그래?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_kwk_crew_killed"
+msgid "잘했다. 골칫거리 하나가 줄었다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part01_bridge_cleared"
+msgid "다리는 우리 것이다. 집중해라, 놈들이 더 올 게 분명하다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_01"
+msgid "제리가 다리에 폭약을 설치하지 않은 모양이다. 근처 어딘가에 숨겨 뒀을 거다. 주변을 살펴보자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_02"
+msgid "봐라, 다른 착륙 지점에서 온 병사들이 도착했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_03"
+msgid "PIAT 한 정? 그게 다냐? 장난하나?!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_04"
+msgid "원하시면 돌아가라고 말하겠습니다, Lieutenant."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_05"
+msgid "없는 것보다는 낫겠지. 그래도 저 친구, PIAT를 맏아들처럼 다뤄야 할 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part02_06"
+msgid "이게 마지막인 것 같다. 다리는 깨끗하고, 지역은 확보됐고, 제리는 도망치고 있다. 잘했다! 이제 다리로 돌아가라. 10분 뒤 분대장 회의다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/hint_civilians_01"
+msgid "근처에 현지인이 있는지 찾아보자. 제리가 탄약을 어디에 두는지 알지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/pl_see_hotel_mgun"
+msgid "기관총이다! 호텔 건물 1층, 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/flak38_see"
+msgid "조심해라, 들판에 대공포가 있다! 하늘의 아군이 안심하고 숨 쉴 수 있게 처리해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/flak38_hint_destroy"
+msgid "저 Flak를 제거해야 한다. PIAT를 쓰거나 폭약을 찾아라. 무력화할 수 있는 건 뭐든 좋다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/flak38_destroyed"
+msgid "좋았다! 저 빌어먹을 Flak는 이제 아무도 괴롭히지 못한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/fake_explosives_01"
+msgid "이것 좀 봐라! 다리용 폭약인 것 같다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/fake_explosives_02"
+msgid "폭약은 아니다… 하지만 살펴봐라, 쓸 만한 게 나올지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/explosives_found"
+msgid "찾았다! 저 폭약을 처리해라. 차량 가까이에 수류탄 한 발이면 터뜨리기에 충분할 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/explosives_destroyed"
+msgid "이런, 노르망디 절반을 날려 버릴 작정이었나?!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_01"
+msgid "실례합니다, 선생님… 독일 폭약 못 보셨습니까? 폭약 가방이나 수류탄 같은 거요."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_02"
+msgid "(프랑스어) 아니요, 아니요, 선생님, 뭔가 착오가 있나 봅니다. 저는 제국의 적을 숨겨 주지 않습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_03"
+msgid "아니, 이봐요, 우린 영국인이오! 홍차, 축구, 잉글랜드! 자, 보시오… 폭약, 독일 놈들 탄약! 그런 게 필요하오, 알겠소?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_04"
+msgid "아, 위, 위, 물론이죠! 여기 작은 창고, 하지만 독일 놈들, 가져갔어요. 도미니크, 내 이웃, 그는 레지스탕스, 창고를 지켰어요, 위? 지금 그는 마구간에… 어… 서쪽… 큰 상자! 나무 상자, 알겠어요? 나무 상자! 그는 매 같은 눈에 콧수염… 길고, 아주 길어요, 마르세유까지! 행운을 빌어요, 영국 분들, 고마워요!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_05"
+msgid "좋소, 알겠소. 감사합니다, 선생님. 몸조심하시오."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/hint_civilians_02"
+msgid "여기서 서쪽에 있는 헛간을 말하는 것 같다. 거기 다른 민간인이 있다. 눈매가 날카롭고 콧수염이 큰 사람이다. 폭약에 대해 더 알 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_06"
+msgid "도미니크 맞소? 마르세유까지 닿는 콧수염에 매 같은 눈이라던데? 그래, 인상착의가 딱 맞소."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_07"
+msgid "위, 제가 도미니크예요! 당신들은… 영국 군인, 맞죠?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_08"
+msgid "선생님, 탄약을 어디로 가져갔습니까? 독일 폭약이 필요합니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_09"
+msgid "당신들 영국인이 와서 소란 피우면, 독일 놈들, 탄약을 옮겨요, 위? 가져갔어요… 뭐라고 하죠… 더 멀리, 더 먼 곳. 따라오세요? 제가 보여 줄게요!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_10"
+msgid "하지만 들어요, 독일 군인이 여기 있으면… 쏘세요, 알겠죠?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_11"
+msgid "저 헛간 근처의 독일군을 쓸어 내라. 그러면 폭약을 어디에 숨겼는지 보여 줄 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/civilians_12"
+msgid "이제 안전해 보여요. 갑시다, 나와 함께 가요!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_01"
+msgid "독일군은 생각보다 더 빨리 올 것이다. 방어 진지를 구축해라. 다리에 너무 가까이 접근하지 못하게 해라. 이 강변을 다시 공격할 병력은 없다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_02"
+msgid "놈들이 왔다! 전선을 지키고 다리에서 떼어 놓아라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_03"
+msgid "다른 착륙 지점의 분대와 연락을 시도하고 있다. 지원해 줄 수 있을지 모른다. 그때까지 버텨라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_04"
+msgid "해냈다, 놈들이 물러난다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_btr_spawned"
+msgid "조심해라, 하프트랙이 접근한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_btr_destroyed"
+msgid "좋아, 하프트랙은 처리했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_armor_t1_spawned"
+msgid "또 한 대가 굴러온다! PIAT를 가져와라! 없으면 수류탄이든 뭐든 빨리 찾아라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_armor_t1_destroyed"
+msgid "잘했다, 이러면 다시 밀고 들어오기 전에 두 번 생각할 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_ammo_out_01"
+msgid "탄이 떨어졌다! 새 탄창이 필요하다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part03_ammo_out_02"
+msgid "탄약이 떨어지고 있다. 주변을 살펴봐라, 독일군이 두고 간 무기 상자가 있을 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_pl_reinf"
+msgid "다른 착륙 지점에서 분대가 도착했다. 지상군을 기다렸지만 일단 이들로도 충분하다. 이 다리를 지킬 가능성이 높아졌다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_preparation"
+msgid "구할 수 있는 탄약은 전부 챙겨라. 상자, 건물… 시체도 뒤져라… 독일군이 언제든 칠 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_mortars_offmap_started"
+msgid "박격포탄 접근! 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_mortars_offmap_done"
+msgid "사격이 멈췄다. 이동 중이라는 뜻이다. 준비해라, 제군들!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_mortar_on_pos"
+msgid "북서쪽에 박격포를 배치했다! 놈이 우리를 이 빌어먹을 다리 밑에 파묻기 전에 제거해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_attack_south_01"
+msgid "독일군이 남쪽에서 들어온다! 이 측면을 확보해라, 포위당하게 두지 마라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_attack_north_01"
+msgid "북쪽에서 밀고 들어온다! 젠장, 돌파당하면 우리 분대와 측면 전체가 정말 위험해진다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_at_on_position"
+msgid "서쪽을 주시해라, 제군들! 대전차포를 가져왔다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/part04_commandos_arrived"
+msgid "마침내 누가 나타났나 봐라! 코만도다! 이 친구들은 최고로 강하다. 이제 제리가 곤란해질 차례다. 남은 공격 부대를 함께 쓸어버리자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/bridge_captured"
+msgid "다리를 빼앗겼다! 당장 가서 되찾아라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/bridge_recaptured"
+msgid "좋아, 다리가 다시 우리 것이다. 심장마비로 죽는 줄 알았다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/b33r"
+msgid "근무 중에 목을 축이나? 언제부터 아일랜드 사람이 됐나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cafe"
+msgid "카페 군… 군-드리? 맙소사, 마시는 게 아니라 걸리는 병 이름 같군. 아, 공드레. 빌어먹을 프랑스어."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/ushanka"
+msgid "소련 놈들이 정말 저런 모자를 쓰나? 털 달린 썩은 티백을 머리에 쓰고 다닐 리가 없다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_01"
+msgid "늦은 이유가 빌어먹을 오케스트라를 끌고 오느라 그랬다는 말인가?.."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_02"
+msgid "여러분, 지독히 늦어서 정말 죄송합니다. 해변 교통이 살인적이었습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_03"
+msgid "와 주셔서 반갑습니다, 각하. 지금까지는 버텼지만 솔직히 이제 한계입니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_04"
+msgid "이 구역을 놀라운 결의로 지켜 내셨습니다. 실로 대단한 업적입니다. 사령부에 여러분의 진급 건을 건의하겠습니다. 사령부는 이미 여러분께 제대로 된 술 한잔을 빚졌습니다. 가능하면 프랑스산으로요."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_05"
+msgid "독한 술이라면 뭐든 좋습니다, 각하. 휘발유 맛이 나더라도요."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_06"
+msgid "하지만 몹시 지쳐 보이는군요, 여러분. 다행히 침낭을 가져왔습니다. 극심한 피로에 쓰러지기 전에 좀 쉬십시오."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_07"
+msgid "와인보다 낫겠습니다. 등이… 감각이 없을 지경이었는데. 감사합니다, 각하."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/narrator/cutscene/outro_08"
+msgid "더는 폐를 끼치지 않겠습니다. 걱정 마십시오, 나머지는 우리가 맡겠습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/01_clear"
+msgid "베누빌 다리를 점령하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/02_explosives"
+msgid "폭파 장치를 찾아 무력화하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/04_flak38"
+msgid "20mm 대공포를 파괴하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/05_bridge_night"
+msgid "적의 반격을 격퇴하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/06_bridge_morning"
+msgid "교대할 때까지 다리를 지켜라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret01_civilians"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret01_civilians_completed"
+msgid "비밀 목표: 콧수염 큰 남자 - 민간인에게 도움을 청했다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret02_ushanka"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret02_ushanka_completed"
+msgid "비밀 목표: 동부전선 전리품 - 맥주 상자를 든 채 우샨카 모자를 썼다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret03_kwk"
+msgid "비밀 목표 #3"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret03_kwk_completed"
+msgid "비밀 목표: 손 떼! - KwK 39 승무원이 포에 탑승하기 전에 제거했다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/skip_preparation"
+msgid "준비 생략"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/timer_bridge_lost"
+msgid "<c(B29557)>진지를 되찾아라</c>"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/timer_preparation"
+msgid "독일군의 반격"
+msgstr ""

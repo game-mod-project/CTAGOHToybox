@@ -1,0 +1,125 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_12_skirmish_bulge)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/name"
+msgid "벌지 전투 [스커미시]"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/name_big"
+msgid "벌지 전투"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/story"
+msgid "벌지 전투\n\n초기 전투 후 너는 독일군에게 포위되었다. 포위망을 돌파할 때다!\n\n목표:\n - 포위망을 돌파하라.\n - 전선을 닫아라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/place"
+msgid "호턴과 바스토뉴 사이 지역"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/date"
+msgid "1945년 1월"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_completed"
+msgid "잘했다! 다음에는 놈들을 출발선까지 몰아낸다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_failed"
+msgid "바라던 결과가 아니다. 전열을 재정비하고 다른 전술을 써야 한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/outro_failed_hq"
+msgid "아르덴에서 패했다. 독일군을 막을 것이 없으니 안트베르펜에 도달해 유럽의 아군을 둘로 갈라놓을 수도 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_hq"
+msgid "야전 본부를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/mission_attack"
+msgid "적 진지에 구멍을 내고 동쪽으로 진격하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/flag_capture_status"
+msgid "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start0"
+msgid "독일군의 아르덴 공격은 우리에게 완전한 기습이었다! Lieutenant, 여기가 야전 본부다. 이미 알다시피 잃어서는 안 된다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start1"
+msgid "독일 놈들이 크리스마스에 우리를 세게 쳤지만, 우리의 신년 결의는 놈들의 공세를 뒤집는 것이다! 주도권을 잡고 나치를 독일로 몰아내라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start2"
+msgid "잘 훈련되고 전투 경험이 풍부한 적의 거센 저항을 각오해라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/narrator_start3"
+msgid "공격을 개시해라, Lieutenant! 우리가 어떤 사람들인지 보여 줘라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/allied_enemy_near_hq"
+msgid "제군! 독일군이 야전 본부 가까이에 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/allied_enemy_plane"
+msgid "적 항공기다!!!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/allied_enemy_plane2"
+msgid "독일 항공기 접근 중!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/player_enemy_near_hq"
+msgid "지휘소를 지켜야 한다! 명령은 받았을 것이다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_skirmish_bulge/hq_bonus"
+msgid "Lieutenant! 이제 공습을 요청할 수 있다. 독일 놈들이 공세를 시작한 뒤로 하늘이 개었으니, 다시 제공권을 되찾을 수 있다!"
+msgstr ""

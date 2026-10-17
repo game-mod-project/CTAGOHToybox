@@ -1,0 +1,145 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_06_tilly_sur_seulles)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/name"
+msgid "역류 [스커미시]"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/name_big"
+msgid "역류"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/story"
+msgid "독일군은 지금까지 연합군을 바다로 몰아내지 못했다. \n\n 캉 바로 서쪽에서 영국군이 전진했다. 캉을 협공으로 우회하려는 듯하다. 이들은 어제 틸리쉬르쇨 동쪽의 생피에르를 이미 점령했고, 틸리 북동쪽의 103고지도 장악했다.\n\n 당신과 판처 레어 사단은 틸리쉬르쇨 마을을 향해 반격한다. 현재 영국군이 점령한 이곳을 연합군이 캉을 포위하지 못하도록 해 지기 전에 되찾아야 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/place"
+msgid "판처 레어 사단, 기갑군단"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/date"
+msgid "1944년 6월 12일 · 프랑스 노르망디, 틸리쉬르쇨"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/outro_completed"
+msgid "본때를 보여 줬다! 영국군에게 심각한 타격을 입혔고, 이 성공의 큰 몫은 자네의 지휘 덕이다. 연합군을 다시 해변으로 몰아낼 새로운 가능성이 열렸다. 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/outro_failed"
+msgid "롬멜 원수에게 누가 보고하겠나? 연합군 전선을 뚫고 밀어낼 기회였는데, 오히려 영국 기갑부대가 돌파했다. 이제 놈들을 막기 위한 새로운 시도를 짜야 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/outro_failed_hq"
+msgid "임무 실패 - 파국에 가깝다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/mission_hq"
+msgid "야전 본부를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/mission_extra"
+msgid "영국 정찰기를 격추하라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/mission_attack"
+msgid "틸리쉬르쇨 도로 북쪽으로 전진해 연합군을 몰아내라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/flag_capture_status"
+msgid "아군이 영국군 진지 %1%/7곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/narrator_start0"
+msgid "틸리쉬르쇨에 온 것을 환영한다, Major! 이곳이 야전 본부다. 반드시 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/narrator_start1"
+msgid "공격해야 한다! 우리 기갑의 우세로 승리를 쟁취해라. 영국군 전선에 구멍을 뚫어라."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/narrator_start2"
+msgid "빠르고 과감하게 움직여라. 그리고 병력을 너무 잃지 않도록 해라! 지형을 이용해라."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/narrator_start3"
+msgid "공격이 진행될수록 더 많은 증원이 가능해진다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/allied_enemy_near_hq"
+msgid "Major! 영국군이 야전 본부 가까이 왔습니다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/allied_enemy_plane"
+msgid "적 항공기다!!!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/allied_enemy_plane2"
+msgid "영국 항공기가 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/player_enemy_near_hq"
+msgid "지휘소를 지켜야 한다! 항복할 여지는 없다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/hq_bonus"
+msgid "Major! 이제 포병 사격을 요청할 수 있습니다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/tasks/secret01"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/tasks/secret01_completed"
+msgid "비밀 목표 #1: 굴욕적이다! - 처칠 전차를 노획하라."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/tasks/secret02"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/tasks/secret02_completed"
+msgid "비밀 목표 #2: 해트트릭! - 영국 전투기 세 대를 연속으로 격추하라."
+msgstr ""

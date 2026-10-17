@@ -1,0 +1,118 @@
+# source: vanilla interface/text/desc/desc_squad_ger_dcg_late.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Squads\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_gebirgs_recon_late_con(ger)"
+msgid "<c(A5A095)>(4)</c> Gebirgsaufklärer squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 게비르크스아우프클레러 분대 [1944]"
+
+msgctxt "desc/squad/squad_pzg_lehr_armor_con"
+msgid "<c(A5A095)>(3+)</c> Armored Pz-Lehr Pz.Grenadier squad [1944]"
+msgstr "<c(A5A095)>(3+)</c> 기갑 판처 레어 판처그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_sturm_pzg_lehr_armor_con"
+msgid "<c(A5A095)>(3+)</c> Armored Pz-Lehr Pz.Sturmgrenadier squad [1944]"
+msgstr "<c(A5A095)>(3+)</c> 기갑 판처 레어 판처슈투름그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_pz_pio_late_con"
+msgid "<c(A5A095)>(2)</c> Armored Pz.Pionier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 기갑 판처피오니어 분대 [1944]"
+
+msgctxt "desc/squad/squad_fusilier_late_con(ger)"
+msgid "<c(A5A095)>(3)</c> Füsilier squad [1944]"
+msgstr "<c(A5A095)>(3)</c> 퓌질리어 분대 [1944]"
+
+msgctxt "desc/squad/squad_fusilier_smg_late_con(ger)"
+msgid "<c(A5A095)>(3)</c> Füsilier SMG squad [1944]"
+msgstr "<c(A5A095)>(3)</c> 퓌질리어 기관단총 분대 [1944]"
+
+msgctxt "desc/squad/squad_pz_recon_armor_late_con"
+msgid "<c(A5A095)>(2)</c> Armored Pz.Aufklärer team [1944]"
+msgstr "<c(A5A095)>(2)</c> 기갑 판처아우프클레러 조 [1944]"
+
+msgctxt "desc/squad/squad_lw_jaeger_con(ger)"
+msgid "<c(A5A095)>(2)</c> Luftwaffe Jäger squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 루프트바페 예거 분대 [1944]"
+
+msgctxt "desc/squad/squad_fallschirmjaeger_late_motor_con"
+msgid "<c(A5A095)>(4)</c> Motorized Fallschirmjäger squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 차량화 팔쉬름예거 분대 [1944]"
+
+msgctxt "desc/squad/squad_fallschirm_recon_late_con(ger)"
+msgid "<c(A5A095)>(4)</c> Fallschirmaufklärer squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 팔쉬름아우프클레러 분대 [1944]"
+
+msgctxt "desc/squad/squad_volkssturm_con(ger)"
+msgid "<c(A5A095)>(1)</c> Volkssturm squad [1945]"
+msgstr "<c(A5A095)>(1)</c> 폴크스슈투름 분대 [1945]"
+
+msgctxt "desc/squad/squad_grenadier_con(ger)"
+msgid "<c(A5A095)>(2)</c> Grenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_sturmgren_con(ger)"
+msgid "<c(A5A095)>(2)</c> Sturmgrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 슈투름그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_sturmgren_heavy_con(ger)"
+msgid "<c(A5A095)>(2)</c> Heavy Sturmgrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 중무장 슈투름그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_volksg_con(ger)"
+msgid "<c(A5A095)>(2)</c> Volksgrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 폭스그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_volksg_sturm_con(ger)"
+msgid "<c(A5A095)>(2)</c> Sturm Volksgrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 슈투름 폭스그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_volksg_heavy_con(ger)"
+msgid "<c(A5A095)>(2)</c> Heavy Volksgrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 중무장 폭스그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_pzgren_motor_con"
+msgid "<c(A5A095)>(2)</c> Motorized Panzergrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 차량화 판처그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_pzgren_armor_con"
+msgid "<c(A5A095)>(2)</c> Armored Panzergrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 기갑 판처그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_sturm_pzgren_armor_con"
+msgid "<c(A5A095)>(2)</c> Armored Pz.Sturmgrenadier squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 기갑 판처슈투름그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_sturmjager_con(ger)"
+msgid "<c(A5A095)>(3)</c> Sturmjäger squad [1944]"
+msgstr "<c(A5A095)>(3)</c> 슈투름예거 분대 [1944]"
+
+msgctxt "desc/squad/squad_sturm_begleitgren_motor_con"
+msgid "<c(A5A095)>(3)</c> Motorized Sturm Begleitgrenadier squad [1944]"
+msgstr "<c(A5A095)>(3)</c> 차량화 슈투름 베글라이트그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_pzg_gd_armor_con"
+msgid "<c(A5A095)>(3+)</c> Armored Großdeutschland Pz.grenadier squad [1944]"
+msgstr "<c(A5A095)>(3+)</c> 기갑 그로스도이칠란트 판처그레나디어 분대 [1944]"
+
+msgctxt "desc/squad/squad_gebirgsjaeger_late_con(ger)"
+msgid "<c(A5A095)>(4)</c> Gebirgsjäger squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대 [1944]"
+
+msgctxt "desc/squad/squad_fallschirmjaeger_late_con(ger)"
+msgid "<c(A5A095)>(4)</c> Fallschirmjäger squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 팔쉬름예거 분대 [1944]"
+
+msgctxt "desc/squad/squad_brandenburger_44_con(ger)"
+msgid "<c(A5A095)>(4)</c> Brandenburger squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 브란덴부르거 분대 [1944]"

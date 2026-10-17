@@ -1,0 +1,126 @@
+# source: vanilla interface/text/mission/single/04-usa/1944_10_skirmish_hurtgen_forest.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_10_skirmish_hurtgen_forest)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/mission_buys_stay_flag"
+msgid "Reinforcement Menu:"
+msgstr "증원 메뉴:"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/buys_on_after_flag"
+msgid "Units unlock permanently"
+msgstr "유닛이 영구 해금된다"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/name"
+msgid "Battle of Hurtgen Forest [SKIRMISH]"
+msgstr "휘르트겐 숲 전투 [스커미시]"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/name_big"
+msgid "Battle of Hurtgen Forest"
+msgstr "휘르트겐 숲 전투"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/story"
+msgid "Operation Queen, Hurtgen offensive - The attack by the 28th Division started on 2nd November.\n\n2nd Rangers listen up! The forest ahead needs to be cleared of enemies. Clear the forest and chase the enemy out!\n\nGoals:\n - Clear the forest.\n - Chase the enemy from his trenches."
+msgstr "퀸 작전, 휘르트겐 공세 - 제28사단의 공격은 11월 2일에 시작되었다.\n\n제2레인저, 잘 들어라! 앞의 숲에서 적을 소탕해야 한다. 숲을 정리하고 적을 몰아내라!\n\n목표:\n - 숲을 소탕하라.\n - 적을 참호에서 몰아내라."
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/place"
+msgid "Hurtgen Forest"
+msgstr "휘르트겐 숲"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/date"
+msgid "November, 1944"
+msgstr "1944년 11월"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/outro_completed"
+msgid "Well done! High command will be pleased. Now, it's on to the Rhine river."
+msgstr "잘했다! 사령부가 만족할 것이다. 이제 라인 강으로 간다."
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/outro_failed"
+msgid "That was brutal. But you're going to bounce back! Go back, and remember you might benefit from using different tactics."
+msgstr "잔혹했다. 하지만 다시 일어설 것이다! 돌아가라. 다른 전술을 쓰면 도움이 될 수도 있다는 점을 기억해라."
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/outro_failed_hq"
+msgid "We lost our HQ and are no longer in control here."
+msgstr "본부를 잃어 더 이상 이곳을 장악하지 못한다."
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/mission_hq"
+msgid "You must hold your field HQ!"
+msgstr "야전 본부를 사수해야 한다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/mission_attack"
+msgid "Punch a hole in the enemy positions!"
+msgstr "적 진지에 구멍을 내라!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/flag_capture_status"
+msgid "Your soldiers secured %1%/7 German positions!"
+msgstr "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/narrator_start0"
+msgid "Welcome to the infamous Hürtgen forest! This is your field HQ, it must remain in our control!"
+msgstr "악명 높은 휘르트겐 숲에 온 것을 환영한다! 여기가 야전 본부다. 반드시 우리가 장악하고 있어야 한다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/narrator_start1"
+msgid "Lieutenant, we're against the ropes here, and high command deems it best to seize the initiative immediately. Attack!"
+msgstr "Lieutenant, 우리는 몰리고 있고, 사령부는 즉시 주도권을 잡는 것이 최선이라고 판단했다. 공격하라!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/narrator_start2"
+msgid "The germans are unprepared for a massive assault, but their fortifications and obstacles will be tough to crack!"
+msgstr "독일군은 대규모 공격에 대비하지 못했지만, 놈들의 방어 시설과 장애물은 깨기 어려울 것이다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/narrator_start3"
+msgid "Commence the assault, more reinforcements will be sent here soon!"
+msgstr "강습을 개시해라. 곧 더 많은 증원이 이곳으로 올 것이다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/allied_enemy_near_hq"
+msgid "Attention! Our Field HQ is under threat!"
+msgstr "주의! 야전 본부가 위협받고 있다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/allied_enemy_plane"
+msgid "Enemy plane!!!"
+msgstr "적 항공기다!!!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/allied_enemy_plane2"
+msgid "German aircraft inbound!"
+msgstr "독일 항공기 접근 중!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/player_enemy_near_hq"
+msgid "Hold the command post or go down trying! We cannot afford to retreat!"
+msgstr "지휘소를 사수하거나 쓰러질 때까지 싸워라! 후퇴할 여유는 없다!"
+
+msgctxt "mission/single/04-usa/1944_10_skirmish_hurtgen_forest/hq_bonus"
+msgid "Attention! Now you can request an airstrike."
+msgstr "주의! 이제 공습을 요청할 수 있다."

@@ -1,0 +1,405 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA - Gates of Hell (doctrines)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mp/lobby/setup/player.doctrine"
+msgid "교리"
+msgstr ""
+
+msgctxt "mp/lobby/setup/player.doctrine#hint"
+msgid "교리로 군대를 특화합니다."
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/random"
+msgid "무작위"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/random#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_fin_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_support"
+msgid "지원 <c(a655af)>[Scorched Earth DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_ger_support#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_support"
+msgid "지원 <c(a655af)>[Scorched Earth DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/early_rus_support#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_lendlease"
+msgid "무기 대여"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_lendlease#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_fin_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_support"
+msgid "지원 <c(a655af)>[Scorched Earth DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_ger_support#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_lendlease"
+msgid "무기 대여"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_lendlease#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_support"
+msgid "지원 <c(a655af)>[Scorched Earth DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_rus_support#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_lendlease"
+msgid "무기 대여"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_lendlease#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_fin_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_allround2"
+msgid "만능 (서부) <c(7e5be4)>[Liberation DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_allround2#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_support"
+msgid "지원 <c(a655af)>[Scorched Earth DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_ger_support#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_allround#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_defensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_lendlease"
+msgid "무기 대여"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_lendlease#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_irregular#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_offensive#hint"
+msgid ""
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_support"
+msgid "지원 <c(7e5be4)>[Scorched Earth DLC]</c>"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_rus_support#hint"
+msgid ""
+msgstr ""

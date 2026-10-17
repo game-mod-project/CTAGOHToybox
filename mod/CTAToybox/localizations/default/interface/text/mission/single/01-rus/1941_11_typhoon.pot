@@ -1,0 +1,150 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1941_11_typhoon)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/arty_strike"
+msgid "포병 지원"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/arty_strike_hint"
+msgid "포격할 지역을 클릭하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/date"
+msgid "1941년 11월 16일 · 모스크바 인근 볼로콜람스크."
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/01-rus/1941_11_typhoon/dummyguns"
+msgid "더미 포 5문 중 %1%문 완성. 더미 포를 세울 자리마다 장작 2단을 가져가야 한다. 더미 포는 적 포병 사격을 끈다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/name"
+msgid "절대영도"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/name_big"
+msgid "절대영도"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/assistant/01"
+msgid "포격을 선택하고 지정된 사격 지역을 클릭하라. 적을 쓰러뜨리면 점수를 얻는다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/assistant/02"
+msgid "적 포병이 십자선 위치에 곧 사격한다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/01"
+msgid "동지들, 잘 왔다. 때맞춰 왔군. 여기는 병력이 심각하게 모자라다. 잠깐... 이게 전부인가?!!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/02"
+msgid "이런... 완전히 막다른 길에 몰렸군! 파시스트 놈들이 모스크바로 가려고 여기를 뚫으려 한다는 걸 안다. 막기 위해 할 수 있는 건 다 해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/03"
+msgid "놈들이 공격한다! 포병을 준비해 쓸어버려라! 전선을 지켜라!!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/04a"
+msgid "저 비행기는 관측기였던 것 같다! 적 포병이 우리 대전차포를 부수려 들 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/04b"
+msgid "저 비행기가 우리 대전차포를 정찰하고 있다! 적 포병이 관측한 곳은 뭐든 쏠 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/05"
+msgid "최고사령부가 예비대를 동원했고, 신형 시제 전차도 있다. 동지, 이 괴물의 포탄을 맞고 살아남을 독일 차량은 없다. 파시스트 해충들을 있어야 할 지옥으로 돌려보내라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/06"
+msgid "파시스트들이 마을에 들어왔다! 당장 쓸어내지 않으면 우리는 끝장이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/fail"
+msgid "독일군을 마을 안에 들이지 말라고 명령했다! 우리 붉은 군대에 겁쟁이와 배신자가 설 자리는 없다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/01"
+msgid "이 좌표를 받아라! 지옥을 보여 줘라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/01b"
+msgid "이 좌표에 사격하라! 놈들의 비명을 듣고 싶다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/01c"
+msgid "사격 개시! 지옥을 보여 줘라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/02"
+msgid "포병 재장전 완료! 목표를 기다린다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/03"
+msgid "지뢰를 묻자. 대전차포에 사수를 붙여야 한다. 가자!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/scout/01"
+msgid "독일군은 관측병으로 포병과 비행기의 목표를 찾는다. 우리가 더미 포를 만들 목재를 모아 놨다. 부하들이 아깝다면 놈들의 포병을 딴 데로 돌려놓는 게 좋을 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/scout/02"
+msgid "포병 준비 완료! 좌표를 기다린다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/scout/03"
+msgid "포병이 당했다! 대포 없이 버텨야 한다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/outro_completed"
+msgid "타이푼 작전은 독일군에게 큰 기대 속에 시작되었으나, 곧 끈질긴 소련군의 저항에 막혀 독일군은 더 나아가기가 갈수록 어려워졌다. 혹독한 겨울 날씨, 끊임없는 전투 소모, 소련군 방어선의 완강함이 쉼 없던 전격전을 멈춰 세웠다. 동쪽에서 온 신규 예비대와 함께 스타프카는 반격을 명령한다. 베를린으로 가는 길이 시작될 참이었다. 대조국전쟁의 결과는 이제 피할 수 없게 되었다.\n\n 두보세코보 역 방어의 성공을 기려 여러 기념비가 세워졌고, 판필로프의 28인은 집단으로 소련 영웅 칭호를 받았다. 하지만 실상 이 이야기는 꾸며낸 것으로 드러났다. 전투에는 훨씬 많은 병사가 있었고, 제8\n 근위소총사단의 손실은 훨씬 컸다. 판필로프 장군 동지는 이틀 뒤인 11월 18일에 전사했다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/outro_failed"
+msgid "공격을 막지 못한 탓에 독일군은 저지 없이 진군하고, 곧 모스크바를 포위할 공산이 크다. 동쪽의 우리 증원군은 모스크바를 지키기에 제때 닿지 못할 것이다. 사기에 큰 타격이 될 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/place"
+msgid "제1075소총연대"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/scenario"
+msgid "볼로콜람스크 도로. 모스크바에서 100km도 채 안 된다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/skip"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/story"
+msgid "독일군이 "타이푼 작전" 중 모스크바 방어선 북쪽을 우회하려고 볼로콜람스크를 공격한다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/task1"
+msgid "적이 두보세코보에 닿지 못하게 하라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/task_guns"
+msgid "적 포병 사격을 유인할 더미 포를 만들어라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/timer"
+msgid "진지를 준비하라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/timer_village"
+msgid "독일군이 마을에 들어왔다! 소탕하고 다시 들어오지 못하게 하라!"
+msgstr ""

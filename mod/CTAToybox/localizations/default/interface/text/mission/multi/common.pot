@@ -1,0 +1,61 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (common)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/multi/enemy_plane_alert1"
+msgid "적 항공기다! 폭격하려는 것이다!"
+msgstr ""
+
+msgctxt "mission/multi/enemy_plane_alert2"
+msgid "적 폭격기다! 다음 접근 때 공습을 각오해라!"
+msgstr ""
+
+msgctxt "mission/multi/minefield_alert1"
+msgid "빌어먹을! 지뢰밭 표지판이 보인다!"
+msgstr ""
+
+msgctxt "mission/multi/minefield_alert2"
+msgid "조심해라, 근처에 지뢰가 있다!"
+msgstr ""
+
+msgctxt "mission/multi/minefield_alert3"
+msgid "젠장! 적이 이 근방에 지뢰를 묻었다! 조심해라!"
+msgstr ""
+
+msgctxt "mission/multi/display_defense_rus"
+msgid ""
+msgstr ""
+
+msgctxt "mission/multi/display_defense_ger"
+msgid ""
+msgstr ""
+
+msgctxt "mission/multi/display_defense_fin"
+msgid ""
+msgstr ""
+
+msgctxt "mission/multi/display_defense_usa"
+msgid ""
+msgstr ""
+
+msgctxt "mission/multi/display_defense_eng"
+msgid ""
+msgstr ""
+
+msgctxt "mission/multi/enemy_retreat"
+msgid "놈들이 후퇴한다! 전선을 지켜냈다! 잘했다!"
+msgstr ""
+
+msgctxt "mission/multi/enemy_retreat2"
+msgid "우리가 이겼다! 놈들이 도망친다!"
+msgstr ""

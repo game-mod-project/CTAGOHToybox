@@ -1,0 +1,45 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA - Gates of Hell (usa doctrines)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mp/lobby/doctrine/mid_usa_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_usa_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_usa_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/mid_usa_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_usa_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_usa_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_usa_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_usa_allround"
+msgid "만능"
+msgstr ""

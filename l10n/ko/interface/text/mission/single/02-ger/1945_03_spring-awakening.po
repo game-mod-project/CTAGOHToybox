@@ -1,0 +1,150 @@
+# source: vanilla interface/text/mission/single/02-ger/1945_03_spring-awakening.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1945_03_spring-awakening)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/date"
+msgid "March 10th, 1945 · East of Lake Balaton, Hungary"
+msgstr "1945년 3월 10일 · 헝가리 발라톤 호수 동쪽"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/name"
+msgid "The Final Offensive <c(a655af)>[DLC]</c>"
+msgstr "최후의 공세 <c(a655af)>[DLC]</c>"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/name_big"
+msgid "The Final Offensive"
+msgstr "최후의 공세"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/01"
+msgid "Soldaten! We have a task of strategic importance ahead! Our forces are conducting a counteroffensive codenamed \"Spring Awakening\"."
+msgstr "Soldaten! 전략적으로 중요한 임무가 앞에 있다! 아군은 암호명 \"봄의 각성\"이라는 반격 작전을 수행 중이다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/02"
+msgid "The soviet forces are well entrenched, and maybe they outnumber us, but today we have the latest armor and weaponry at our disposal. The bolshevik armor will be no match for our Königstigers."
+msgstr "소련군은 참호를 굳게 파고 있고 수적으로 우세할지도 모르지만, 오늘 우리에겐 최신 기갑과 무기가 있다. 볼셰비키 기갑은 우리 Königstiger의 상대가 되지 못한다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/03"
+msgid "We are low on supplies. You are to seize the key depots of this area first. Watch out for enemy aviation."
+msgstr "보급이 부족하다. 먼저 이 지역의 핵심 보급소를 점령해라. 적 항공기를 조심해라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/04"
+msgid "Good job! Our reinforcements will be arriving shortly from the south west."
+msgstr "잘했다! 증원군이 곧 남서쪽에서 도착할 것이다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/05"
+msgid "Excellent work! There are some supply vehicles here, maybe they have some of our ammunition we can take back."
+msgstr "훌륭하다! 여기 보급 차량이 몇 대 있다. 우리 탄약을 챙겨 갈 수 있을지도 모른다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/06"
+msgid "Finally! Some much needed fuel is at our disposal. Let's make the most out of this trophy."
+msgstr "드디어! 절실했던 연료를 쓸 수 있게 됐다. 이 전리품을 최대한 활용하자."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/07"
+msgid "This workshop contains all the tools we need if we run our of our own repair tools. Let's scavenge all we can find."
+msgstr "이 정비소에는 수리 도구가 바닥났을 때 필요한 장비가 모두 있다. 찾을 수 있는 건 전부 챙기자."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/08"
+msgid "The enemy HQ is taken out! We have taken a huge leap forward in this fight. In case the enemy counter-attacks, you should get ready!"
+msgstr "적 사령부가 제거됐다! 이 전투에서 크게 앞서 나갔다. 적이 반격할 경우에 대비해 준비해라!"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/09"
+msgid "Good work Soldiers. We've managed to drive out the enemy from all the key objectives. Unfortunately, we don't have the fuel for a next offensive move."
+msgstr "잘했다, 병사들. 모든 핵심 목표에서 적을 몰아냈다. 안타깝게도 다음 공세에 쓸 연료가 없다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/10"
+msgid "We've been ordered to take all the valuable supplies and hold off any Soviet counterattacks. Our original starting position cannot fall to the enemy under any circumstance!"
+msgstr "귀중한 물자를 모두 챙기고 소련군의 반격을 막으라는 명령을 받았다. 우리의 최초 출발 위치는 어떤 일이 있어도 적에게 넘어가서는 안 된다!"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/11"
+msgid "You are given command of our heaviest and most devastating weapon: the Jagdtiger. Blow those Soviet tanks to bits!"
+msgstr "우리의 가장 무겁고 파괴적인 무기인 Jagdtiger의 지휘를 맡긴다. 소련 전차를 박살 내라!"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/12"
+msgid "Damn it! Soviet troops are already entering our starting positions! Clear the area immediately!"
+msgstr "젠장! 소련군이 벌써 우리 출발 위치에 들어오고 있다! 즉시 소탕해라!"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/13"
+msgid "Excellent work, Soldaten! Once again you have made the Fatherland proud. "
+msgstr "훌륭하다, Soldaten! 다시 한번 조국의 이름을 빛냈다. "
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/14"
+msgid "Look, a damaged soviet tank stranded in the swamp... I suppose we could use it."
+msgstr "봐라, 습지에 파손된 소련 전차가 갇혀 있다... 쓸 수 있을 것 같다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/narrator/officer/15"
+msgid "A T-34 has been ditched in the swamp. I bet we can get it repaired!"
+msgstr "T-34 한 대가 습지에 빠져 있다. 수리할 수 있을 것이다!"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/outro_completed"
+msgid "Well done! You accomplished about everything there was to accomplish in this offensive. In real life, even though the initial advance had been successful, the attacking force was too weak to push much further and the strategic objectives were not met. This marked the last serious offensive of the Wehrmacht in the east."
+msgstr "잘했다! 이 공세에서 이룰 수 있는 것을 거의 모두 이루었다. 실제로는 초기 진격이 성공했음에도 공격 병력이 너무 약해 더 밀고 나가지 못했고 전략 목표는 달성되지 못했다. 이것이 베어마흐트의 동부 전선 마지막 본격 공세였다."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/outro_failed"
+msgid "Oh no! That ruins our chances to get to the strategic objectives - the oil fields. This means the immediate end to our ambitions. It seems we should have tried differently. "
+msgstr "이런! 전략 목표인 유전에 닿을 가능성이 사라졌다. 이로써 우리의 야망은 즉시 끝났다. 다르게 시도했어야 했던 모양이다. "
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/place"
+msgid "6th Army"
+msgstr "제6군"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/reinf_crew"
+msgid "Tankmen"
+msgstr "전차병"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/reinf_squad"
+msgid "Panzergrenadiere"
+msgstr "판처그레나디어"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/story"
+msgid " On the eastern front, Budapest has been lost to the Soviets in February. The last Hungarian oil reserves available to the axis have also been lost. Hitler decides a counterattack must be conducted. General Balck and the resurrected 6th army are sent to the attack. His forces, among which the IIIrd Panzer Korps, will be part of a pincer attack into the area south- east of lake Balaton. The objective is to reach the Danube river. On march 6th, the main force attacks from the north side of Balaton.\n\n In this mission, you will be put in charge of the attack on the village of Sárszentágota. Your supply state is critical, and therefore your first objectives will be to take the Soviet fuel and supply dumps. Once you have resupplied your units, push on to take the enemy HQ in order to eliminate any threat of a counterattack. Use any enemy equipment you can capture and repair to make the odds a little bit less desperate.\n\nGood luck!"
+msgstr " 동부 전선에서 2월에 부다페스트가 소련군에 넘어갔다. 추축국이 쓸 수 있는 마지막 헝가리 유전도 잃었다. 히틀러는 반격을 결정한다. 발크 장군과 재건된 제6군이 공격에 투입된다. 제3기갑군단을 포함한 그의 병력은 발라톤 호수 남동쪽 지역으로 향하는 양면 협공의 일부가 된다. 목표는 다뉴브강에 도달하는 것이다. 3월 6일 주력이 발라톤 북쪽에서 공격한다.\n\n 이 임무에서 당신은 샤르센타고타 마을 공격을 맡는다. 보급 상태가 위태로우므로 첫 목표는 소련군의 연료와 보급 집적소를 빼앗는 것이다. 부대를 재보급한 뒤 밀고 나가 적 사령부를 점령해 반격 위협을 제거해라. 노획해 수리할 수 있는 적 장비는 무엇이든 써서 승산을 조금이나마 높여라.\n\n행운을 빈다!"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task1"
+msgid "Clear the crossroads for reinforcements to arrive."
+msgstr "증원군이 도착할 수 있도록 교차로를 소탕하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task2"
+msgid "Capture the ammo depot."
+msgstr "탄약 집적소를 점령하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task3"
+msgid "Capture the fuel depot."
+msgstr "연료 집적소를 점령하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task4"
+msgid "Capture the repair workshop."
+msgstr "정비소를 점령하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task5"
+msgid "Destroy the enemy HQ."
+msgstr "적 사령부를 파괴하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task6"
+msgid "Defend from the soviet assault, fall back to the original position."
+msgstr "소련군의 공격을 막고 최초 위치로 후퇴하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task_sec"
+msgid "Secret Objective"
+msgstr "비밀 목표"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/task_sec1"
+msgid "Secret Objective: Salvage some of the soviet tanks in the swamp."
+msgstr "비밀 목표: 습지의 소련 전차 몇 대를 회수하라."
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/timer"
+msgid "The counterattack will arrive in:"
+msgstr "반격 도착까지:"
+
+msgctxt "mission/single/02-ger/1945_03_spring-awakening/timer2"
+msgid "Defend your starting position!"
+msgstr "출발 위치를 방어하라!"

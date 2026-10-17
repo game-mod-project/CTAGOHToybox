@@ -1,0 +1,122 @@
+# source: mod_2905667604 interface/text/desc/desc_ammo_mace_ger.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/ammo/bullet_37x257 ger he"
+msgid "Patroon 37mm Brisantgranaat No. 1 [<c(ff1200)>HE</c>]"
+msgstr "Patroon 37mm Brisantgranaat No. 1 [<c(ff1200)>HE</c>]"
+
+msgctxt "desc/ammo/bullet_37x257 ger aphe"
+msgid "Patroon 37mm Pantsergranaat No. 1 [<c(ff6a00)>APHE</c>]"
+msgstr "Patroon 37mm Pantsergranaat No. 1 [<c(ff6a00)>APHE</c>]"
+
+msgctxt "desc/ammo/bullet_37x257 ger apbc"
+msgid "Patroon 37mm Pantsergranaat No. 1 [<c(ff6a00)>APBC</c>]"
+msgstr "Patroon 37mm Pantsergranaat No. 1 [<c(ff6a00)>APBC</c>]"
+
+msgctxt "desc/ammo/210mm_werfer_21"
+msgid "Wfr.Gr.21 Rocket"
+msgstr "Wfr.Gr.21 로켓"
+
+msgctxt "desc/ammo/55mm_r4m"
+msgid "55mm R4M Rocket"
+msgstr "55mm R4M 로켓"
+
+msgctxt "desc/ammo/73mm_rz65"
+msgid "73mm R65 Rocket"
+msgstr "73mm R65 로켓"
+
+msgctxt "desc/ammo/air_bomb_ger_500kg"
+msgid "SC-500 Bomb"
+msgstr "SC-500 폭탄"
+
+msgctxt "desc/ammo/sc_ger_500"
+msgid "SC-500 Bomb"
+msgstr "SC-500 폭탄"
+
+msgctxt "desc/ammo/air_bomb_ger_1000kg"
+msgid "SC-1000 Bomb"
+msgstr "SC-1000 폭탄"
+
+msgctxt "desc/ammo/sc_1000"
+msgid "SC-1000 Bomb"
+msgstr "SC-1000 폭탄"
+
+msgctxt "desc/ammo/air_bomb_ger_flam_500kg"
+msgid "SC-500 Incendiary Bomb"
+msgstr "SC-500 소이 폭탄"
+
+msgctxt "desc/ammo/sc_ger_500_flam"
+msgid "SC-500 Incendiary Bomb"
+msgstr "SC-500 소이 폭탄"
+
+msgctxt "desc/ammo/bulletger_128 apche"
+msgid "12.8 cm Pzgr. Patr. 43 [<c(ff6a00)>APCHE</c>] <c(65696d)>L/55</c>"
+msgstr "12.8 cm Pzgr. Patr. 43 [<c(ff6a00)>APCHE</c>] <c(65696d)>L/55</c>"
+
+msgctxt "desc/ammo/bulletger_55_auto apcbche"
+msgid "5.5cm Pzgr. 58 [<c(ff6a00)>APCBCHE</c>] <c(65696d)>L/76.5</c>"
+msgstr "5.5cm Pzgr. 58 [<c(ff6a00)>APCBCHE</c>] <c(65696d)>L/76.5</c>"
+
+msgctxt "desc/ammo/bulletger_55_auto he"
+msgid "5.5cm Sprgr. 58 [<c(ff1200)>HE</c>] <c(65696d)>L/76.5</c>"
+msgstr "5.5cm Sprgr. 58 [<c(ff1200)>HE</c>] <c(65696d)>L/76.5</c>"
+
+msgctxt "desc/ammo/bulletger_128_2 apc"
+msgid "12.8cm PzGr. [<c(ff6a00)>APC</c>]"
+msgstr "12.8cm PzGr. [<c(ff6a00)>APC</c>]"
+
+msgctxt "desc/ammo/bulletger_128_2 apcbc"
+msgid "12.8cm PzGr.43 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/55</c>"
+msgstr "12.8cm PzGr.43 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/55</c>"
+
+msgctxt "desc/ammo/bulletger_128_2 he"
+msgid "12.8cm Sprgr. [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
+msgstr "12.8cm Sprgr. [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
+
+msgctxt "desc/ammo/bulletger_37_auto apcbc"
+msgid "3.7cm Psgr. L'Spur [<c(ff6a00)>APCBC</c>] <c(65696d)>L/77</c>"
+msgstr "3.7cm Psgr. L'Spur [<c(ff6a00)>APCBC</c>] <c(65696d)>L/77</c>"
+
+msgctxt "desc/ammo/bulletger_37_auto he"
+msgid "3.7cm Brsprgr. Vk.L'Spur [<c(ff1200)>HE</c>] <c(65696d)>L/77</c>"
+msgstr "3.7cm Brsprgr. Vk.L'Spur [<c(ff1200)>HE</c>] <c(65696d)>L/77</c>"
+
+msgctxt "desc/ammo/bulletger_37_auto apcr"
+msgid "3.7cm H-Pzgr.L'Spur o.Zerl. [<c(48c445)>APCR</c>] <c(65696d)>L/77</c>"
+msgstr "3.7cm H-Pzgr.L'Spur o.Zerl. [<c(48c445)>APCR</c>] <c(65696d)>L/77</c>"
+
+msgctxt "desc/ammo/bulletger_105_2 he"
+msgid "10.5cm Sprgr. [<c(ff1200)>HE</c>] <c(65696d)>L/68</c>"
+msgstr "10.5cm Sprgr. [<c(ff1200)>HE</c>] <c(65696d)>L/68</c>"
+
+msgctxt "desc/ammo/bulletger_105_2 apcbc"
+msgid "10.5cm PzGr.39 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/68</c>"
+msgstr "10.5cm PzGr.39 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/68</c>"
+
+msgctxt "desc/ammo/bulletger_105_2 apcr"
+msgid "10.5cm PzGr.40 [<c(48c445)>APCR</c>] <c(65696d)>L/68</c>"
+msgstr "10.5cm PzGr.40 [<c(48c445)>APCR</c>] <c(65696d)>L/68</c>"
+
+msgctxt "desc/ammo/bulletger_105 apcbche"
+msgid "10.5cm PzGr. rot [<c(ff6a00)>APCBC</c>] <c(65696d)>L/52</c>"
+msgstr "10.5cm PzGr. rot [<c(ff6a00)>APCBC</c>] <c(65696d)>L/52</c>"
+
+msgctxt "desc/ammo/bulletger_20x105b aphe"
+msgid "20×105mmB [<c(ff6a00)>APHE</c>] <c(65696d)>L/46</c>"
+msgstr "20×105mmB [<c(ff6a00)>APHE</c>] <c(65696d)>L/46</c>"
+
+msgctxt "desc/ammo/wanze_charge_ammo"
+msgid "450KG Explosive Charge [<c(ff1200)>HE</c>]"
+msgstr "450KG 폭파 장약 [<c(ff1200)>HE</c>]"

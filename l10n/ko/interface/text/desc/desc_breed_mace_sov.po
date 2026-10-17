@@ -1,0 +1,150 @@
+# source: mod_2905667604 interface/text/desc/desc_breed_mace_sov.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name (desc_breeds_usa)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/human/mp/rus/mid/commisar_t1"
+msgid "Commissar [KA]"
+msgstr "정치위원 [KA]"
+
+msgctxt "desc/human/mp/rus/mid/commisar_t2"
+msgid "Commissar [KA]"
+msgstr "정치위원 [KA]"
+
+msgctxt "desc/human/mp/rus/mid/commisar_t3"
+msgid "Commissar [KA]"
+msgstr "정치위원 [KA]"
+
+msgctxt "desc/human/mp/rus/mid/commisar_t4"
+msgid "Commissar [KA]"
+msgstr "정치위원 [KA]"
+
+msgctxt "desc/human/mp/rus/late/marine_rmn"
+msgid "Marine [VMF]"
+msgstr "해병 [VMF]"
+
+msgctxt "desc/human/mp/rus/late/assault-sap_as44"
+msgid "Assault Sapper [KA]"
+msgstr "돌격 공병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/smg_ppk"
+msgid "SMG Inf. [KA]"
+msgstr "기관단총 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/smg_ppt27"
+msgid "SMG Inf. [KA]"
+msgstr "기관단총 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_bren"
+msgid "Veteran Partisan MG Operator [KA]"
+msgstr "베테랑 파르티잔 기관총 사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_lewis"
+msgid "Partisan MG Operator [KA]"
+msgstr "파르티잔 기관총 사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_rpd"
+msgid "Mountain Cavalary MG Operator [KA]"
+msgstr "산악 기병 기관총 사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_rpd_asst"
+msgid "Mountain Cavalary MG Asst. [KA]"
+msgstr "산악 기병 기관총 부사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/antitank_9"
+msgid "Rifle grenadier [KA]"
+msgstr "소총 유탄병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/antitank_10"
+msgid "Rifle grenadier Asst. [KA]"
+msgstr "소총 유탄병 부사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/antitank_8"
+msgid "AT Support [KA]"
+msgstr "대전차 지원 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_nco_2"
+msgid "Guards Squadleader [KA]"
+msgstr "근위 분대장 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_rpg1"
+msgid "Guards AT inf. [KA]"
+msgstr "근위 대전차 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_mgun_4"
+msgid "Guards MG Operator [KA]"
+msgstr "근위 기관총 사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_mgun_5"
+msgid "Guards MG Asst. [KA]"
+msgstr "근위 기관총 부사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_mgun_6"
+msgid "Guards MG Asst. [KA]"
+msgstr "근위 기관총 부사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_rifle_2"
+msgid "Guards Rifleman [KA]"
+msgstr "근위 소총수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_rifle_3"
+msgid "Guards Rifleman [KA]"
+msgstr "근위 소총수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_senior_rifle_2"
+msgid "Guards Senior Rifleman [KA]"
+msgstr "근위 상급 소총수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_senior_smg_2"
+msgid "Guards Senior SMG inf. [KA]"
+msgstr "근위 상급 기관단총 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/guards_smg_4"
+msgid "Guards SMG inf. [KA]"
+msgstr "근위 기관단총 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_smg_2"
+msgid "Veteran Partisan SMG inf. [KA]"
+msgstr "베테랑 파르티잔 기관단총 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_rmn50_2"
+msgid "Veteran Partisan Rifle Grenadier [KA]"
+msgstr "베테랑 파르티잔 소총 유탄병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_rmn50_asst_2"
+msgid "Veteran Partisan Rifle Grenadier Asst. [KA]"
+msgstr "베테랑 파르티잔 소총 유탄병 부사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/antitank_asst_RPG1_coq"
+msgid "AT Asst. Inf. [KA]"
+msgstr "대전차 부사수 [KA]"
+
+msgctxt "desc/human/mp/rus/late/antitank_RPG1_coq"
+msgid "AT Inf. [KA]"
+msgstr "대전차 보병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/signaller_ai"
+msgid "Artillery Signaller [KA]"
+msgstr "포병 통신병 [KA]"
+
+msgctxt "desc/human/mp/rus/late/recon_nco_binos"
+msgid "Recon Squadleader [KA]"
+msgstr "정찰 분대장 [KA]"
+
+msgctxt "desc/human/mp/rus/mid/recon_nco_binos"
+msgid "Recon Squadleader [KA]"
+msgstr "정찰 분대장 [KA]"
+
+msgctxt "desc/human/mp/rus/mid/nkvd_recon_nco_binos"
+msgid "Recon Squadleader [NKVD]"
+msgstr "정찰 분대장 [NKVD]"

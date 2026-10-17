@@ -1,0 +1,58 @@
+# source: vanilla interface/text/mission/single/common.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (common)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/hint_repair"
+msgid "Engineers and tankmen are able to repair a vehicle, the latter with the exception of the vehicle's hull. To repair a damaged vehicle, press [Shift]+[R] or click the \"Repair\" button (the wrench) while a capable soldier or the defect vehicle is selected."
+msgstr "공병과 전차병은 차량을 수리할 수 있으나, 전차병은 차체는 수리하지 못한다. 손상된 차량을 수리하려면 수리 가능한 병사나 고장 난 차량을 선택한 상태에서 [Shift]+[R]을 누르거나 \"수리\" 단추(렌치)를 클릭한다."
+
+msgctxt "mission/single/hint_bleeding_heal"
+msgid "Wounded soldiers with at least a veterancy of 1 can be revived for a short time before they bleed out. Select a medic and click the bleeding man. Medics and various elite soldiers have basic medic training indicated by the cross icon."
+msgstr "계급 1 이상의 베테랑 부상병은 출혈로 죽기 전 잠시 동안 되살릴 수 있다. 위생병을 선택하고 출혈 중인 병사를 클릭한다. 위생병과 일부 정예 병사는 십자 아이콘으로 표시되는 기초 의무 훈련을 받았다."
+
+msgctxt "mission/single/hint_hide_corpse"
+msgid "To pick up the corpse, click the Take icon (in the inventory actions icon group) and click the body. To put the corpse down, select any weapon, drag the body out of your soldier's inventory or click the Drop icon and specify a location."
+msgstr "시신을 들려면 인벤토리 행동 아이콘 모음의 가져오기 아이콘을 클릭한 뒤 시신을 클릭한다. 시신을 내려놓으려면 아무 무기나 선택하고 시신을 병사의 인벤토리 밖으로 끌어내거나 내려놓기 아이콘을 클릭한 뒤 위치를 지정한다."
+
+msgctxt "mission/single/hint_newbuy"
+msgid "New reinforcement available!"
+msgstr "새 증원을 사용할 수 있다!"
+
+msgctxt "mission/single/hint_newbuys"
+msgid "New reinforcements accessible!"
+msgstr "새 증원을 사용할 수 있다!"
+
+msgctxt "mission/single/hint_resources"
+msgid "Resources grow over time. As you hold more points, this growth increases."
+msgstr "자원은 시간이 지나면 늘어난다. 점령한 지점이 많을수록 증가량이 커진다."
+
+msgctxt "mission/single/hint_killtanksmoney"
+msgid "Destroying enemy armor and cannons adds extra resource points as well."
+msgstr "적 기갑과 화포를 파괴해도 자원 점수가 추가로 늘어난다."
+
+msgctxt "mission/single/stealth_status_0"
+msgid "Your stealth status: <c(4fe736)>undetected"
+msgstr "은신 상태: <c(4fe736)>미발각"
+
+msgctxt "mission/single/stealth_status_1"
+msgid "Your stealth status: <c(ffff00)>suspect"
+msgstr "은신 상태: <c(ffff00)>의심"
+
+msgctxt "mission/single/stealth_status_2"
+msgid "Your stealth status: <c(ff9900)>warning!"
+msgstr "은신 상태: <c(ff9900)>경고!"
+
+msgctxt "mission/single/stealth_status_3"
+msgid "Your stealth status: <c(e74236)>exposed!"
+msgstr "은신 상태: <c(e74236)>노출!"

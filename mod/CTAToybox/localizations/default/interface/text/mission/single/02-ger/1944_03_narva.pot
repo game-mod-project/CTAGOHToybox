@@ -1,0 +1,189 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_03_narva)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1944_03_narva/date"
+msgid "1944년 3월 10일 · 나르바 서쪽"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/lose"
+msgid "모든 병력을 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/name"
+msgid "나르바의 격돌 <c(a655af)>[DLC]</c>"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/name_big"
+msgid "나르바의 격돌"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/01"
+msgid "나르바에 온 것을 환영한다, Herr Leutnant. 소련군은 습지에 발이 묶인 것 같다..."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/02"
+msgid "방어선이 두 개 있지만 최고 사령부는 슈트라흐비츠 전투단의 Tiger를 앞세워 공세로 전환하길 원한다. 문제는 이 일대 소련군에 대한 정보가 전혀 없다는 것이다. 함정으로 걸어 들어가는 것일 수도 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/03"
+msgid "습지를 건너 소련군 문서를 입수해 필요한 정보를 가져와라. 놈들의 사령부에 가서 문서를 챙기고 빠져나와라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/04"
+msgid "정찰대가 소련군 사령부 위치를 확인했다. 정찰대가 표적을 관측해 줄 것이다. 신중하게 전진해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/05"
+msgid "잘했다, 이것이 우리가 필요한 문서다. 지금 당장 최고 사령부로 가져가라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/06"
+msgid "수고했다, 문서와 지도는 이제 상세히 분석하고 번역할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/07"
+msgid "세상에! 소련군은 습지에 발이 묶인 게 아니라 재편 중이었다! 기갑 공격을 준비하던 현장을 덮쳤다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/08"
+msgid "기습을 당했으니 소련군은 틀림없이 계획을 앞당길 것이다. 놈들의 기갑을 막을 준비를 해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/09"
+msgid "적이 움직인다! 제1방어선의 지휘를 맡아라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/10"
+msgid "전 병사들, 주목하라! 그로스도이칠란트 사단 병력이 더 강력한 대전차 무기를 갖춘 제2방어선을 후방에 배치했다. 우리는 후퇴해 방어선을 굳히라는 명령을 받았다. 이동하라!!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/11"
+msgid "Herr Leutnant, 그로스도이칠란트 부대의 지휘를 맡아 방어선을 계속 지키십시오! 곧 적 공격의 주력과 맞닥뜨릴 것입니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/12"
+msgid "볼셰비키가 밀어붙인다! 다음 공격이 온다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/13"
+msgid "잘했다, Soldaten! 적을 그 자리에서 멈춰 세웠다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/14"
+msgid "소련군의 공격에도 슈트라흐비츠 전투단의 원래 명령을 잊어서는 안 된다. 우리가 주도권을 잡고 즉시 공격해야 한다. 적이 물러서고 있다, 이제 우리가 결정타를 날릴 차례다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/15"
+msgid "슈트라흐비츠 전투단의 증원군이 지휘 하에 들어왔습니다, Herr Leutnant. 적을 지옥으로 곧장 몰아내십시오!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/16"
+msgid "주목, 적이 남쪽에서 측면 공격을 시작했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/17"
+msgid "아군 차량 한 대가 적 포병의 표적이 됐다! 조심해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/18"
+msgid "잘했다, 병사들. 볼셰비키는 나르바에서 쫓겨날 것이고 우리의 영웅적인 방어는 역사에 남을 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/narrator/officer/19"
+msgid "적 항공기가 안개 속에서 아군 전차 한 대를 찾으려 한다! 공습에 대비해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/outro_completed"
+msgid "승리는 우리의 것이다! 계획이 통했고 적은 공세를 포기했다. 이 구역은 다시 조용해졌다. 나르바 수비대의 전우들을 구하려면 다음에는 적의 측면을 파고들어 이 소련 공세의 판세를 뒤집어야 한다. 당신이 첫 일격을 가했다, 훌륭하다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/outro_failed"
+msgid "이건 불행이라는 말로는 부족하다! 아무래도 가진 수단을 다르게 썼어야 했다. 이제 소련군이 돌파할 것이고, 나르바 수비대의 전우들은 곧 포위당할 것이다. 다시 시도해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/place"
+msgid "슈트라흐비츠 전투단"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/artilleryman"
+msgid "포병"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/b1bis"
+msgid "Panzer B2"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/gd"
+msgid "그로스도이칠란트 분대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/grille"
+msgid "Grille Ausf. K"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/jagdpanther"
+msgid "Jagdpanther"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/medic"
+msgid "위생병"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/panzer4h"
+msgid "Panzer IV Ausf. H"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/tiger1e"
+msgid "Tiger I Ausf. E"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/reinf/wirbelwind"
+msgid "Flakpanzer IV Wirbelwind"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/story"
+msgid " 독일군은 전선 곳곳에서 퇴각하고 있다. 쿠르스크 전투와 쿠투조프 작전 이후 전선이 서쪽으로 너무 빠르게 이동해, 독일군은 '판터 방어선'이 붉은 물결을 막아 주길 바랄 뿐이다. 북부 집단군은 나르바강 서안에 진지를 잡는다. 3월에 소련군이 나르바 남서쪽을 돌파하며 상황이 급변한다.\n\n 소련 제59군의 대규모 공격이 독일 제43군단의 측면을 위협해 보급선을 끊고 나르바 시를 고립시키려 한다.\n\n 이 임무에서 당신은 방어선 안의 부대를 지휘한다. 전선은 조용하고 적은 소극적으로 보인다. 정찰 분대를 보내 정보를 찾아라. 전선 뒤로 가서 정보나 지도를 손에 넣고 사령부로 돌아와라. 얻은 정보를 바탕으로 방어든 반격이든 명령을 내려라. 어느 쪽이든 지휘는 당신 몫이며 낭비할 시간이 없다.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/task1"
+msgid "소련군 전략 문서를 입수하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/task2"
+msgid "문서를 아군 사령부에 전달하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/task3"
+msgid "소련군의 공격을 막아라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/task4"
+msgid "제2방어선으로 후퇴하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/task5"
+msgid "적을 밀어내고 지역을 확보하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/timer1"
+msgid "제1방어선을 사수하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/timer2"
+msgid "제2방어선으로 물러나라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_03_narva/timer3"
+msgid "어떤 대가를 치르더라도 제2방어선을 지켜라!"
+msgstr ""

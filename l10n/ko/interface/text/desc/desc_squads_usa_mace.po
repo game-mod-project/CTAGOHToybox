@@ -1,0 +1,234 @@
+# source: mod_2905667604 interface/text/desc/desc_squads_usa_mace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/conquest_c47_d"
+msgid "Douglas C-47 Skytrain"
+msgstr "Douglas C-47 Skytrain"
+
+msgctxt "desc/squad/m26_all"
+msgid "T26E4 'Super Pershing'"
+msgstr "T26E4 'Super Pershing'"
+
+msgctxt "desc/squad/m26_off"
+msgid "M26 Pershing"
+msgstr "M26 Pershing"
+
+msgctxt "desc/squad/m26_irr"
+msgid "M26E1 Pershing"
+msgstr "M26E1 Pershing"
+
+msgctxt "desc/squad/m26_def"
+msgid "M26 Pershing 'Field Mod'"
+msgstr "M26 Pershing 'Field Mod'"
+
+msgctxt "desc/squad/m26_sup"
+msgid "T26E4 Pershing"
+msgstr "T26E4 Pershing"
+
+msgctxt "desc/squad/squad_officer_m3a1_halftrack_con_mace"
+msgid "Motor Company HQ"
+msgstr "차량화 중대 본부"
+
+msgctxt "desc/squad/squad_officer_m5a1_halftrack_con_mace"
+msgid "Motor Company HQ"
+msgstr "차량화 중대 본부"
+
+msgctxt "desc/squad/conquest_f80a"
+msgid "P-80B Shooting Star 1000lb Bomb"
+msgstr "P-80B Shooting Star 1000lb 폭탄"
+
+msgctxt "desc/squad/f80a_450x2"
+msgid "P-80B Shooting Star"
+msgstr "P-80B Shooting Star"
+
+msgctxt "desc/squad/single_signaller(usa)"
+msgid "Artillery Signaller [USAGF]"
+msgstr "포병 통신병 [USAGF]"
+
+msgctxt "desc/squad/squad_navy_shore_sup(usa)"
+msgid "<c(A5A095)>(1)</c> Naval Shore Patrol Squad"
+msgstr "<c(A5A095)>(1)</c> 해군 해안 순찰 분대"
+
+msgctxt "desc/squad/squad_landing_force_sup(usa)"
+msgid "<c(A5A095)>(2)</c> Naval Landing Force Squad"
+msgstr "<c(A5A095)>(2)</c> 해군 상륙부대 분대"
+
+msgctxt "desc/squad/squad_seabees_sup_1(usa)"
+msgid "<c(A5A095)>(2)</c> Naval Construction Battalion Rifle Squad 'Seabees'"
+msgstr "<c(A5A095)>(2)</c> 해군 건설대대 소총 분대 'Seabees'"
+
+msgctxt "desc/squad/squad_seabees_sup_2(usa)"
+msgid "<c(A5A095)>(2)</c> Naval Construction Battalion Engineer Squad 'Seabees'"
+msgstr "<c(A5A095)>(2)</c> 해군 건설대대 공병 분대 'Seabees'"
+
+msgctxt "desc/squad/squad_def_marine_sup(usa)"
+msgid "<c(A5A095)>(2)</c> Marine Defense Rifle Squad"
+msgstr "<c(A5A095)>(2)</c> 해병 방어 소총 분대"
+
+msgctxt "desc/squad/squad_marine_bunker_late_sup(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Bunker Buster Squad"
+msgstr "<c(A5A095)>(3)</c> 해병 벙커 파괴 분대"
+
+msgctxt "desc/squad/squad_marine_lmg_late_sup(usa)"
+msgid "<c(A5A095)>(3)</c> Marine LMG Squad"
+msgstr "<c(A5A095)>(3)</c> 해병 경기관총 분대"
+
+msgctxt "desc/squad/squad_marine_rec_late_sup(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Scout Squad"
+msgstr "<c(A5A095)>(3)</c> 해병 정찰병 분대"
+
+msgctxt "desc/squad/squad_marine_late_sup_1(usa)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Marine Rifle Squad (1944)"
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 해병 소총 분대 (1944)"
+
+msgctxt "desc/squad/squad_marine_late_sup_2(usa)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> Marine Rifle Squad (1945)"
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 해병 소총 분대 (1945)"
+
+msgctxt "desc/squad/squad_marine_assault_late_sup_3(usa)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> Marine Assault Squad (1945)"
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 해병 돌격 분대 (1945)"
+
+msgctxt "desc/squad/squad_marine_nbb_late_sup(usa)"
+msgid "<c(A5A095)>(3)</c> Naval Beach Battalion Shore Party"
+msgstr "<c(A5A095)>(3)</c> 해군 해안대대 상륙 지원조"
+
+msgctxt "desc/squad/squad_para_late_sup_1(usa)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Paramarine Rifle Squad"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 공수해병 소총 분대"
+
+msgctxt "desc/squad/squad_para_late_sup_2(usa)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Paramarine Demolition Squad"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 공수해병 폭파 분대"
+
+msgctxt "desc/squad/squad_mcdu_sup(usa)"
+msgid "<c(A5A095)>(4)</c> Naval Combat Demolition Unit Squad"
+msgstr "<c(A5A095)>(4)</c> 해군 전투 폭파대 분대"
+
+msgctxt "desc/squad/squad_amph_rec_sup(usa)"
+msgid "<c(A5A095)>(4)</c> Marine Amphibious Recon Squad"
+msgstr "<c(A5A095)>(4)</c> 해병 수륙 정찰 분대"
+
+msgctxt "desc/squad/squad_para_scout_sup(usa)"
+msgid "<c(A5A095)>(4)</c> Paramarine Recon Squad"
+msgstr "<c(A5A095)>(4)</c> 공수해병 정찰 분대"
+
+msgctxt "desc/squad/squad_4th_late_sup_1(usa)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>1.</c> 4th Marine Div. Rifle Squad"
+msgstr "<c(A5A095)>(4+)</c> <c(E56042)>1.</c> 제4해병사단 소총 분대"
+
+msgctxt "desc/squad/squad_4th_late_sup_2(usa)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>2.</c> 4th Marine Div. Assault Squad"
+msgstr "<c(A5A095)>(4+)</c> <c(E56042)>2.</c> 제4해병사단 돌격 분대"
+
+msgctxt "desc/squad/squad_navy_shore_con(usa)"
+msgid "<c(A5A095)>(1)</c> Naval Shore Patrol Squad"
+msgstr "<c(A5A095)>(1)</c> 해군 해안 순찰 분대"
+
+msgctxt "desc/squad/squad_landing_force_con(usa)"
+msgid "<c(A5A095)>(2)</c> Naval Landing Force Squad"
+msgstr "<c(A5A095)>(2)</c> 해군 상륙부대 분대"
+
+msgctxt "desc/squad/squad_seabees_con_1(usa)"
+msgid "<c(A5A095)>(2)</c> Naval Construction Battalion Rifle Squad 'Seabees'"
+msgstr "<c(A5A095)>(2)</c> 해군 건설대대 소총 분대 'Seabees'"
+
+msgctxt "desc/squad/squad_seabees_con_2(usa)"
+msgid "<c(A5A095)>(2)</c> Naval Construction Battalion Engineer Squad 'Seabees'"
+msgstr "<c(A5A095)>(2)</c> 해군 건설대대 공병 분대 'Seabees'"
+
+msgctxt "desc/squad/squad_def_marine_con(usa)"
+msgid "<c(A5A095)>(2)</c> Marine Defense Rifle Squad"
+msgstr "<c(A5A095)>(2)</c> 해병 방어 소총 분대"
+
+msgctxt "desc/squad/squad_marine_bunker_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Bunker Buster Squad"
+msgstr "<c(A5A095)>(3)</c> 해병 벙커 파괴 분대"
+
+msgctxt "desc/squad/squad_marine_lmg_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> Marine LMG Squad"
+msgstr "<c(A5A095)>(3)</c> 해병 경기관총 분대"
+
+msgctxt "desc/squad/squad_marine_rec_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Scout Squad"
+msgstr "<c(A5A095)>(3)</c> 해병 정찰병 분대"
+
+msgctxt "desc/squad/squad_marine_late_con_1(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Rifle Squad (1944)"
+msgstr "<c(A5A095)>(3)</c> 해병 소총 분대 (1944)"
+
+msgctxt "desc/squad/squad_marine_late_con_2(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Rifle Squad (1945)"
+msgstr "<c(A5A095)>(3)</c> 해병 소총 분대 (1945)"
+
+msgctxt "desc/squad/squad_marine_assault_late_con_3(usa)"
+msgid "<c(A5A095)>(3)</c> Marine Assault Squad (1945)"
+msgstr "<c(A5A095)>(3)</c> 해병 돌격 분대 (1945)"
+
+msgctxt "desc/squad/squad_marine_nbb_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> Naval Beach Battalion Shore Party"
+msgstr "<c(A5A095)>(3)</c> 해군 해안대대 상륙 지원조"
+
+msgctxt "desc/squad/squad_para_late_con_1(usa)"
+msgid "<c(A5A095)>(4)</c> Paramarine Rifle Squad"
+msgstr "<c(A5A095)>(4)</c> 공수해병 소총 분대"
+
+msgctxt "desc/squad/squad_para_late_con_2(usa)"
+msgid "<c(A5A095)>(4)</c> Paramarine Demolition Squad"
+msgstr "<c(A5A095)>(4)</c> 공수해병 폭파 분대"
+
+msgctxt "desc/squad/squad_mcdu_con(usa)"
+msgid "<c(A5A095)>(4)</c> Naval Combat Demolition Unit Squad"
+msgstr "<c(A5A095)>(4)</c> 해군 전투 폭파대 분대"
+
+msgctxt "desc/squad/squad_amph_rec_con(usa)"
+msgid "<c(A5A095)>(4)</c> Marine Amphibious Recon Squad"
+msgstr "<c(A5A095)>(4)</c> 해병 수륙 정찰 분대"
+
+msgctxt "desc/squad/squad_para_scout_con(usa)"
+msgid "<c(A5A095)>(4)</c> Paramarine Recon Squad"
+msgstr "<c(A5A095)>(4)</c> 공수해병 정찰 분대"
+
+msgctxt "desc/squad/squad_4th_late_con_1(usa)"
+msgid "<c(A5A095)>(4+)</c> 4th Marine Division Rifle Squad"
+msgstr "<c(A5A095)>(4+)</c> 제4해병사단 소총 분대"
+
+msgctxt "desc/squad/squad_4th_late_con_2(usa)"
+msgid "<c(A5A095)>(4+)</c> 4th Marine Division Assault Squad"
+msgstr "<c(A5A095)>(4+)</c> 제4해병사단 돌격 분대"
+
+msgctxt "desc/squad/single_at(usa)"
+msgid "<c(E56042)>1.</c> AT Detachment (M1A1)"
+msgstr "<c(E56042)>1.</c> 대전차 분견대 (M1A1)"
+
+msgctxt "desc/squad/single_at_new(usa)"
+msgid "<c(E56042)>2.</c> AT Detachment (M9A1)"
+msgstr "<c(E56042)>2.</c> 대전차 분견대 (M9A1)"
+
+msgctxt "desc/squad/single_at_new2(usa)"
+msgid "<c(E56042)>3.</c> AT Detachment (T74)"
+msgstr "<c(E56042)>3.</c> 대전차 분견대 (T74)"
+
+msgctxt "desc/squad/conquest_f80a"
+msgid "P80 1000lb Bomb"
+msgstr "P80 1000lb 폭탄"
+
+msgctxt "desc/squad/single_at_m20_con(usa)"
+msgid "T74 Bazooka AT Team (T74)"
+msgstr "T74 바주카 대전차 조 (T74)"
+
+msgctxt "desc/squad/squad_little_david_engineers_con"
+msgid "Little David Builders Detachment (Paradrop)"
+msgstr "리틀 데이비드 건설 분견대 (공수 투하)"

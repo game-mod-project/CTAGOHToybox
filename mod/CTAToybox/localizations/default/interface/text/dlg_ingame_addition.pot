@@ -1,0 +1,37 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Cta - Gates of Hell (dlg_ingame)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2021-04-28 12:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "actionbar/human/medic_switch"
+msgid "자동 의료 전환"
+msgstr "Auto-medic switch"
+
+msgctxt "actionbar/human/medic_switch/usage"
+msgid "버튼을 클릭해 이 위생병이 자동 치료 명령을 수행할지 설정한다. 기본값은 켜짐.\n클릭 후 위생병 몸에 안내 문자가 뜨고 상태가 정상적으로 전환되면 스크립트가 작동 중인 것이다."
+msgstr "Click to set whether this medic will perform auto-medic commands, it's ON by default. \nIf a hint pops up on the medic after clicking, and the status switches normally, it means that auto-medic script is running."
+
+msgctxt "actionbar/ai_auto_move"
+msgid "AI/플레이어 조종 전환"
+msgstr "Toggle AI/player control"
+
+msgctxt "actionbar/ai_auto_move/usage"
+msgid "이 버튼을 클릭한 뒤 지면을 클릭하면 전환된다.\n여러 유닛을 동시에 선택했을 때는 분대장이 있어야 적용된다."
+msgstr "Click this button, then click on the ground to toggle.\nWhen multiple units are selected, you must have a squad leader for this to take effect."
+
+msgctxt "actionbar/weather_switch"
+msgid "날씨 무작위 전환"
+msgstr "Random weather switch"
+
+msgctxt "actionbar/weather_switch/usage"
+msgid "모드 출처: 고화질 무작위 날씨 버튼"
+msgstr "From MOD: Random Weather Button"

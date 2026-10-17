@@ -1,0 +1,178 @@
+# source: vanilla interface/text/mission/single/041-usa_airborne/1944_06_06_bloody_gulch.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_06_bloody_gulch)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/airstrike"
+msgid "Artillery barrage"
+msgstr "포격"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/date"
+msgid "June 13th, 1944 · near Carentan, Normandy, France."
+msgstr "1944년 6월 13일 · 프랑스 노르망디, 카랑탕 부근."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/name"
+msgid "Battle of Bloody Gulch"
+msgstr "블러디 걸치 전투"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/name_big"
+msgid "Battle of Bloody Gulch"
+msgstr "블러디 걸치 전투"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator01"
+msgid "Easy Company! Our scouts reported that an enemy formation is coming our way and will be here soon!"
+msgstr "이지 중대! 정찰병 보고에 따르면 적 부대가 이쪽으로 오고 있고 곧 도착한다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator03"
+msgid "Take up defensive positions along these hedgerows. Reinforce them if you need to. Use the mines to cover possible enemy approaches."
+msgstr "이 산울타리를 따라 방어 위치를 잡아라. 필요하면 보강해라. 지뢰로 적의 접근로를 막아라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator04"
+msgid "Hold your ground and let them come to us. Hang tough, men!"
+msgstr "버텨라, 그리고 놈들이 오게 두어라. 굳건히 버텨라, 제군!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator05"
+msgid "The enemy has trapped our scout team behind their lines. They’ve held up in this compound!"
+msgstr "적이 정찰조를 전선 뒤에서 가두었다. 놈들이 저 구내에 틀어박혔다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator06"
+msgid "Third squad! Break through the German line, link up with the scout team, and fall back before the enemy attack arrives."
+msgstr "제3분대! 독일군 전선을 돌파해서 정찰조와 합류하고, 적 공격이 오기 전에 후퇴해라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator07"
+msgid "Come on, Blithe! Stand up! Get on your feet, soldier! Fire your weapon, Blithe!"
+msgstr "일어나, 블라이드! 일어서라, 병사! 총을 쏴, 블라이드!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator08"
+msgid "Here they come! Get ready, soldiers!"
+msgstr "놈들이 온다! 준비해라, 제군!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator09"
+msgid "Enemy halftracks! Take them out!"
+msgstr "적 반궤도차다! 처치해라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator10"
+msgid "They are bringing mortars!"
+msgstr "놈들이 박격포를 끌고 온다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator11"
+msgid "I hear tank tracks in the distance! Enemy armor inbound!"
+msgstr "멀리서 전차 궤도 소리가 들린다! 적 기갑이 접근 중이다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator12"
+msgid "We need to neutralize the German armor. Bazooka teams, flank and destroy them!"
+msgstr "독일 기갑을 제압해야 한다. 바주카 조, 측면으로 돌아가 파괴해라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator13"
+msgid "Tanks destroyed!"
+msgstr "전차 격파!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator14"
+msgid "We've repelled the enemy assault! Now that we have armor, it's time to go on the offensive."
+msgstr "적 공격을 격퇴했다! 기갑이 생겼으니 이제 공세로 전환할 때다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator15"
+msgid "No time to rest, let's push 'em back!"
+msgstr "쉴 틈 없다, 놈들을 밀어붙이자!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator16"
+msgid "Germans have breached the perimeter!"
+msgstr "독일군이 방어선을 뚫었다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator18"
+msgid "Well done! Those German mortars are done for!"
+msgstr "잘했다! 저 독일군 박격포는 끝장났다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator_soldier01"
+msgid "You guys made it just in time. I thought we were goners for sure! If you help me get back to HQ, I can call for additional support with my radio."
+msgstr "제때 와 줬군요. 정말 죽는 줄 알았습니다! 본부로 돌아가는 걸 도와주면 제 무전기로 추가 지원을 요청할 수 있습니다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/outro_completed"
+msgid "Easy Company successfully repelled the German attack with support from the 2nd Armored Division. With the German attackers routed, the Allies were able to push west and cut off the German forces in the Cotentin Peninsula from German-occupied France."
+msgstr "이지 중대는 제2기갑사단의 지원을 받아 독일군 공격을 성공적으로 격퇴했다. 독일 공격군이 패주하자 연합군은 서쪽으로 진격해 코탕탱 반도의 독일군을 독일 점령 프랑스와 차단할 수 있었다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/outro_failed"
+msgid "Easy Company was destroyed by the Germans while defending its position west of Carentan. Now, nothing stands in the way of the German advance towards Carentan. You must try again!"
+msgstr "이지 중대는 카랑탕 서쪽 진지를 지키다 독일군에 의해 전멸했다. 이제 카랑탕을 향한 독일군 진격을 막을 것은 아무것도 없다. 다시 도전하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/lose_winters"
+msgid "Lt. Winters is dead!"
+msgstr "위터스 Lieutenant가 전사했다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/place"
+msgid "101st Airborne Division \"Screaming Eagles\""
+msgstr "제101공수사단 \"비명을 지르는 독수리\""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/preparation"
+msgid "Skip preparation phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/preparation_hint"
+msgid "Press on this button to skip the preparation countdown and move on to the next part of the mission."
+msgstr "이 단추를 누르면 준비 카운트다운을 건너뛰고 임무의 다음 단계로 넘어간다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/skip_prep"
+msgid "Skip preparation phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/story"
+msgid "  The 101st has been in action constantly since the jump into Normandy over a week ago. After clearing Carentan yesterday, it’s time to push forward and capitalize on this victory.\n\n  Easy company will be covering the extreme right flank. Headquarters has sent scouts forward along the axis of advance. Depending on what they report, we will proceed accordingly. Report to the 506th Parachute Infantry Regiment for further orders and prepare for what could be a bloody battle.\n\n Good luck!"
+msgstr "  제101사단은 노르망디 강하 이후 일주일 넘게 쉬지 않고 싸웠다. 어제 카랑탕을 소탕했으니, 이 승리를 발판 삼아 전진할 때다.\n\n  이지 중대는 가장 오른쪽 측면을 맡는다. 본부는 진격 축을 따라 정찰대를 앞서 보냈다. 이들의 보고에 따라 행동을 정한다. 제506 낙하산 보병 연대에 보고해 추가 명령을 받고, 피비린내 나는 전투가 될 수 있는 싸움에 대비하라.\n\n 행운을 빈다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task1"
+msgid "Prepare a defense line along the hedgerow!"
+msgstr "산울타리를 따라 방어선을 구축하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task2"
+msgid "Rescue the scout team!"
+msgstr "정찰조를 구출하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task3"
+msgid "Save the radio operator from the scout team."
+msgstr "정찰조의 무전병을 구출하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task4"
+msgid "Escort the radio operator to your HQ for additional support."
+msgstr "추가 지원을 받도록 무전병을 본부까지 호위하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task5"
+msgid "Hold your position and defend the HQ!"
+msgstr "위치를 지키고 본부를 방어하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task6"
+msgid "Flank and neutralize enemy StuGs!"
+msgstr "측면으로 돌아 적 StuG를 제압하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task7"
+msgid "Clear the remaining enemy troops from the battlefield!"
+msgstr "전장에 남은 적 병력을 소탕하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_winters"
+msgid "Lt. Winters must survive."
+msgstr "위터스 Lieutenant를 살려라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_heal_winters"
+msgid "Treat Lt. Winters before he bleeds to death!"
+msgstr "위터스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_secret"
+msgid "Secret Objective #1"
+msgstr "비밀 목표 1"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_secret_comp"
+msgid "(Secret Objective #1): Encourage Blithe"
+msgstr "(비밀 목표 #1): 블라이드를 격려하라"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/timer1"
+msgid "Remaining time before enemy attack:"
+msgstr "적 공격까지 남은 시간:"

@@ -1,0 +1,138 @@
+# source: vanilla interface/text/mission/single/051-ger_finesthour/1940_05_arras.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1940_05_arras)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[hint]"
+msgid "Select the target of mortar barrage"
+msgstr "박격포 제압 사격의 목표를 선택하라"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/01"
+msgid "We must continue moving, secure that outpost so our advance can continue."
+msgstr "계속 전진해야 한다. 전초 기지를 확보해 진격을 이어 가자."
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/02"
+msgid "Take your platoon and advance and clear the enemy positions ahead of us, you have the support of a nearby mortar company. Do not waste any time, we need to keep moving West."
+msgstr "소대를 이끌고 전진해 앞의 적 진지를 제거해라. 근처 박격포 중대가 지원한다. 시간 낭비하지 마라, 서쪽으로 계속 나아가야 한다."
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/03"
+msgid "We have a long way to go and we cannot afford any further delays."
+msgstr "갈 길이 멀다. 더 이상 지체할 여유가 없다."
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/04"
+msgid "Good job men. Hold here in case the English decide they want this back. The column will now continue moving."
+msgstr "수고했다, 제군들. 영국 놈들이 되찾으려 할지 모르니 여기를 지켜라. 이제 종대는 다시 이동한다."
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/05"
+msgid "Oh god! Where did they come from?! We need to stop them!"
+msgstr "맙소사! 저놈들 어디서 나왔지?! 막아야 한다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/06"
+msgid "I’ve received word that some heavy guns are being brought forward! We need to hold out as long as we can while they set up the guns!"
+msgstr "중포가 전방으로 이동 중이라는 연락을 받았다! 포를 설치하는 동안 최대한 버텨야 한다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/07"
+msgid "A screen of 88s and howitzers have been set up just behind us. You can now fallback and regroup at Mercatel to reinforce them!"
+msgstr "88mm포와 곡사포 방어막이 바로 뒤에 설치됐다. 이제 메르카텔로 후퇴해 재집결하고 그들을 보강해라!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/08"
+msgid "Take command of the 88s set up just outside Mercatel. We need to stop the enemy armored assault before they reach the town and cut deeper into our lines!"
+msgstr "메르카텔 바로 바깥에 설치된 88mm포를 지휘해라. 적 기갑 공격이 마을에 닿아 우리 전선을 더 깊이 파고들기 전에 막아야 한다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/09"
+msgid "Gute arbeit, männer. The Tommies are running away! They won't come back anytime soon while the Luftwaffe is in the sky!"
+msgstr "Gute Arbeit, Männer. 토미들이 도망가고 있다! 루프트바페가 하늘에 있는 한 한동안 돌아오지 못할 것이다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/01"
+msgid "Herr leutnant! Our forward Aufklärer spotted some Tommies dug in around the town ahead of us. What are your orders?"
+msgstr "Herr Leutnant! 전방 판처 아우프클레러가 앞 마을 주변에 참호를 판 토미들을 발견했습니다. 명령은 무엇입니까?"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/02"
+msgid "Panzer Alarm! Tanks coming from the North-West!"
+msgstr "판처 경보! 북서쪽에서 전차가 온다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/03"
+msgid "Their armor is too thick! We're doing nothing to them! Aim at the tracks and immobilise them!"
+msgstr "장갑이 너무 두껍다! 아무 소용이 없다! 궤도를 노려서 움직이지 못하게 해라!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/04"
+msgid "The British artillery is trying to hit one of our Acht-Acht's! Move it to a new position before they zero in on it!"
+msgstr "영국군 포병이 우리 아흐트아흐트 중 하나를 조준하고 있다! 영점이 잡히기 전에 다른 위치로 옮겨라!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/05"
+msgid "Take grenades and explosives from this crate!  Use anything you can find! We must stop them!"
+msgstr "이 상자에서 수류탄과 폭약을 챙겨라!  찾을 수 있는 건 뭐든 써라! 저놈들을 막아야 한다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/06"
+msgid "Planes incoming!... Wait, it's our boys! They will show them now!"
+msgstr "비행기가 온다!... 잠깐, 우리 쪽이다! 이제 본때를 보여 줄 거다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[reinforcements]/mortars"
+msgid "Mortar barrage"
+msgstr "박격포 제압 사격"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[scenario]/phase2"
+msgid "2 hours later..."
+msgstr "2시간 뒤..."
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task01"
+msgid "Eliminate British forward positions"
+msgstr "영국군 전방 진지를 제거하라"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task02"
+msgid "Stop enemy tanks before they reach our temporary HQ!"
+msgstr "적 전차가 임시 본부에 도달하기 전에 막아라!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task03"
+msgid "Repulse the enemy counter-attack!"
+msgstr "적의 반격을 격퇴하라!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task_secret01"
+msgid "Secret objective #1"
+msgstr "비밀 목표 1"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task_secret01_completed"
+msgid "Secret objective #1: Shoot a turret off a Matilda I tank"
+msgstr "비밀 목표 #1: Matilda I 전차의 포탑을 날려 버려라"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[timer]/timer_phase2"
+msgid "Do not let the enemy tanks reach the field HQ:"
+msgstr "적 전차가 야전 본부에 도달하지 못하게 하라:"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/name"
+msgid "Fall Gelb"
+msgstr "팔 겔프"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/name_big"
+msgid "Fall Gelb"
+msgstr "팔 겔프"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/outro_completed"
+msgid "Wunderbar! Your improvisation skills have stopped the British counterattack, which means the ghost division can continue racing to the Channel coast. Well done, and keep going!"
+msgstr "Wunderbar! 자네의 임기응변이 영국군의 반격을 막았다. 덕분에 유령 사단은 해협 해안을 향한 질주를 계속할 수 있다. 잘했다, 계속 가라!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/outro_failed"
+msgid "This is serious; our advance has come to a halt because the British tanks have broken the encirclement we almost established. We cannot afford to push forward anymore. This is a serious setback!"
+msgstr "심각하다. 우리가 거의 완성했던 포위망을 영국 전차들이 깨뜨리는 바람에 진격이 멈췄다. 더 이상 밀고 나갈 여유가 없다. 심각한 차질이다!"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/date"
+msgid "May 21st, 1940 · Arras, Pas-de-Calais, France"
+msgstr "1940년 5월 21일 · 프랑스 파드칼레, 아라스"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/place"
+msgid "7th Panzer Division"
+msgstr "제7판처사단"
+
+msgctxt "mission/single/051-ger_finesthour/1940_05_arras/story"
+msgid "Just 11 days ago, Europe went from ‘Sitzkrieg’ to ‘Blitzkrieg’ with the rapid advance of German troops into the Netherlands, Belgium, and Luxembourg.\n\n Taking everyone by surprise, the Germans quickly cross the Meuse River at Sedan just days later and push West. \n\nExploiting the element of surprise, the 7th Panzer Division has been on the move for 8 days straight. Right now, you are approaching Agny, south of Arras. \n\n We have just found a British strongpoint that is blocking our way. \n\n Take the lead and clear that up quickly, so we can maintain momentum and drive forward to the Channel Coast."
+msgstr "불과 11일 전, 독일군이 네덜란드, 벨기에, 룩셈부르크로 빠르게 진격하면서 유럽은 '앉은뱅이 전쟁'에서 '전격전'으로 넘어갔다.\n\n모두의 허를 찌른 독일군은 며칠 뒤 스당에서 뫼즈강을 신속히 건너 서쪽으로 밀어붙인다.\n\n기습의 이점을 살려 제7판처사단은 8일 연속으로 이동 중이다. 지금 당신은 아라스 남쪽의 아니에 접근하고 있다.\n\n우리 앞길을 막는 영국군 거점이 방금 발견됐다.\n\n선두에 서서 신속히 소탕하라. 그래야 기세를 유지해 해협 해안까지 계속 진격할 수 있다."

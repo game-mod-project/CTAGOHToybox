@@ -1,0 +1,223 @@
+# source: vanilla interface/text/mission/single/02-ger/1943_11_wotan.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1943_11_wotan)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/date"
+msgid "November 23rd, 1943 - Armeegruppe 35/46."
+msgstr "1943년 11월 23일 - 35/46 집단군."
+
+#, boost-format
+msgctxt "mission/single/02-ger/1943_11_wotan/defence_progress"
+msgid "Enemy wave %1% out of 10 underway!"
+msgstr "적 %1%번째 파도 진행 중, 총 10번!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/name"
+msgid "In Spite of Everything"
+msgstr "그럼에도 불구하고"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/name_big"
+msgid "In Spite of Everything"
+msgstr "그럼에도 불구하고"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/assistant/skip"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/1"
+msgid "Soldiers! The enemy is about to assault this position in great numbers. Today we have to stand our ground! The Wotan line must stop the Bolsheviks right here."
+msgstr "병사들이여! 적이 곧 대규모로 이 진지를 공격한다. 오늘 우리는 한 걸음도 물러서서는 안 된다! 보탄 선은 바로 이곳에서 볼셰비키를 막아야 한다."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/10"
+msgid "They must be preparing for another major assault. Now that they are familiar with our positions, they'll be attempting to smash us to pieces! "
+msgstr "놈들은 또 한 번 대공세를 준비하고 있을 것이다. 이제 우리 진지를 알고 있으니 우리를 박살 내려 들 것이다! "
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/11"
+msgid "Use this time to build new defensive positions! And lay more mines! Expect the Soviets to bombard the current ones!"
+msgstr "이 시간에 새 방어 진지를 구축해라! 지뢰도 더 깔아라! 소련군이 현재 진지를 포격할 것이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/12"
+msgid "Excellent work soldiers. Our forward observers have spotted the enemy tank forces halting their offensive. Fend off their remaining infantry! This is our last stand! Make the Reich proud!"
+msgstr "훌륭하다, 병사들. 전방 관측병이 적 전차 부대가 공세를 멈추는 것을 확인했다. 남은 보병을 막아내라! 이것이 마지막 저항이다! 제국의 이름을 빛내라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/13"
+msgid "Once more you have proven your tactical leadership, Herr Leutnant. I'm proud to be serving by your side."
+msgstr "다시 한번 전술적 지휘 능력을 증명했습니다, Herr Leutnant. 당신 곁에서 복무하게 되어 자랑스럽습니다."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/14"
+msgid "All the troops have been lost! The enemy has obliterated your men!"
+msgstr "전 병력을 잃었다! 적이 부대를 말살했다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/15"
+msgid "The Soviets have breached the industrial area! Our key position has been completely overrun!"
+msgstr "소련군이 공업 지대를 돌파했다! 핵심 진지가 완전히 유린당했다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/16"
+msgid "The enemy has set foot in the industrial area! You need to drive them out of there immediately, that's an order!"
+msgstr "적이 공업 지대에 발을 들였다! 즉시 몰아내라, 명령이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/17"
+msgid "Russians in the factory facilities! Herr Leutnant, drive them out of there now! Or we're lost!"
+msgstr "공장 시설에 러시아군이다! Herr Leutnant, 당장 몰아내십시오! 안 그러면 우린 끝장입니다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/18"
+msgid "The enemy has entered our industrial position! Eliminate them as the highest priority! If more of them enter the premises, we're done!"
+msgstr "적이 우리 공업 진지에 진입했다! 최우선으로 제거해라! 더 들어오면 우린 끝이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/2"
+msgid "Your task is to hold this industrial position at all costs. Expect attacks from all sides! Luckily the poor weather keeps enemy attack aircraft grounded. No reinforcements are available, but we have a solid line of defense at your disposal. You are our only hope in stopping the Red tide!"
+msgstr "자네 임무는 이 공업 진지를 어떤 대가를 치르더라도 사수하는 것이다. 사방에서 공격이 온다! 다행히 악천후로 적 공격기는 뜨지 못한다. 증원은 없지만 견고한 방어선이 있다. 붉은 물결을 막을 마지막 희망은 자네뿐이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/3"
+msgid "Armored vehicles are expected from the south..."
+msgstr "남쪽에서 기갑 차량이 올 것이다..."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/4"
+msgid "Enemy infantry regiments crossed the Dnieper and are expected to attack us from the north... we don't know how much longer it will take for them to build pontoon crossings and deploy armored divisions from this sector..."
+msgstr "적 보병 연대가 드니프로강을 건넜고 북쪽에서 공격해 올 것이다... 부교를 놓고 이쪽 지역으로 기갑 사단을 투입하기까지 얼마나 걸릴지 알 수 없다..."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/5"
+msgid "We also anticipate that Ivan will attempt to break through at the village. Grenadiers with short-range weaponry have been deployed there for close-quarters combat..."
+msgstr "이반이 마을에서 돌파를 시도할 것으로도 예상된다. 근접전을 위해 단거리 무기를 든 그레나디어가 배치되어 있다..."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/6"
+msgid "You have some time to prepare the defenses before the arrival of the first enemy scouts. Dig foxholes, position your men and lay down the mines from the crates by the dispersal area."
+msgstr "적 첫 정찰대가 오기 전까지 방어를 준비할 시간이 약간 있다. 참호를 파고 병력을 배치하고, 집결지 옆 상자에서 지뢰를 꺼내 매설해라."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/7"
+msgid "The enemy is almost here. Man your positions! If we can hold until nightfall the enemy may call off their assault!"
+msgstr "적이 거의 다 왔다. 위치에 서라! 해가 질 때까지 버티면 적이 공격을 거둘지도 모른다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/8"
+msgid "That was not much... I believe we are about to face the true grunt of the enemy attack. Get ready to defend the southern flank!"
+msgstr "별것 아니었다... 이제 진짜 적의 주공을 맞게 될 것이다. 남쪽 측면 방어를 준비해라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/9"
+msgid "The Soviets have slowed down their pace. They must be preparing for a decisive blow! Use this valuable time to resupply and reinforce the defenses!"
+msgstr "소련군의 속도가 느려졌다. 결정타를 준비하는 것이 틀림없다! 이 귀중한 시간에 보급하고 방어를 보강해라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/artillery"
+msgid "The enemy has deployed heavy artillery on the northwest. They're trying to bombard us from afar!"
+msgstr "적이 북서쪽에 중포를 배치했다. 먼 거리에서 우리를 포격하려는 것이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/mortars1"
+msgid "The Soviets are deploying mortars on the north!"
+msgstr "소련군이 북쪽에 박격포를 배치하고 있다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/mortars2"
+msgid "Enemy mortars spotted in the south! They're planning to bomb us out!"
+msgstr "남쪽에서 적 박격포 발견! 우리를 폭격해 내쫓을 속셈이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/n_generic1"
+msgid "The Bolsheviks are coming from the north!"
+msgstr "볼셰비키가 북쪽에서 온다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/n_generic2"
+msgid "Ivan is assaulting our northern flank!"
+msgstr "이반이 북쪽 측면을 공격한다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/n_inf"
+msgid "The Soviet infantry has arrived at our northern positions! We're now fighting on 2 fronts! "
+msgstr "소련 보병이 북쪽 진지에 도달했다! 이제 두 전선에서 싸운다! "
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/nw_generic1"
+msgid "Soviet column approaching us from the northwest! On the road!"
+msgstr "소련 종대가 북서쪽에서 접근 중! 도로 위다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/nw_generic2"
+msgid "Ivan has been spotted in the northwest. They're coming along the mud road."
+msgstr "북서쪽에서 이반 발견. 진흙길을 따라 오고 있다."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/s_generic1"
+msgid "Soviets spotted near the southern road! They're coming this way!"
+msgstr "남쪽 도로 근처에서 소련군 발견! 이쪽으로 온다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/s_generic2"
+msgid "Enemy troops coming from the south, from the main road!"
+msgstr "적군이 남쪽에서, 대로를 따라 온다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/s_tanks"
+msgid "Enemy tank column coming from the south on the road!"
+msgstr "남쪽 도로에서 적 전차 종대가 온다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/se2_generic1"
+msgid "Soviets coming from the south!"
+msgstr "남쪽에서 소련군이 온다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/se2_generic2"
+msgid "The enemy is approaching from the south!"
+msgstr "적이 남쪽에서 접근 중이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/se_generic1"
+msgid "The enemy is approaching from the southeast! Hold them back!"
+msgstr "적이 남동쪽에서 접근 중이다! 저지해라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/se_generic2"
+msgid "Soviet wave coming from the southeast! "
+msgstr "소련군의 파도가 남동쪽에서 온다! "
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/se_scouts"
+msgid "The Bolsheviks scouts are coming from the southeast!"
+msgstr "볼셰비키 정찰대가 남동쪽에서 온다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/sw_generic1"
+msgid "Enemy infantry storming the positions on the southwest!"
+msgstr "적 보병이 남서쪽 진지를 급습 중이다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/officer/sw_generic2"
+msgid "The Soviets are attempting to breach our positions in the southwest!"
+msgstr "소련군이 남서쪽에서 우리 진지를 돌파하려 한다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/narrator/soldier/1"
+msgid "Herr Leutnant, it seems the Soviets stopped pressing us further!"
+msgstr "Herr Leutnant, 소련군이 더 이상 압박하지 않는 것 같습니다!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/outro_completed"
+msgid "The onslaught continued and the Wehrmacht committed all their strength and courage to withstand the Red wave. In Ukraine, the tenacious Soviet forces continued overwhelming the unfinished Wotan line with brute force. Whatever fortifications had been built along the Dnieper were rather subpar, as both materials and labor had been insufficient to build a position strong enough to withstand the might of the Red Army. Nevertheless, in some places, the Germans held the line until well into 1944. Surrounded, undergunned and in spite of all the odds, the Panther-Wotan line bought precious time for the Wehrmacht, for more solid attempts to stop the avalanche of the Soviets and attempt to tilt the balance of the eastern front once more..."
+msgstr "공세는 계속됐고 베어마흐트는 붉은 물결을 견디기 위해 모든 힘과 용기를 쏟아부었다. 우크라이나에서 끈질긴 소련군은 미완성된 보탄 선을 물량으로 계속 짓눌렀다. 드니프로강을 따라 쌓은 요새는 재료도 인력도 붉은 군대의 위력을 견딜 만한 진지를 짓기에 턱없이 부족해 허술했다. 그럼에도 일부 지역에서 독일군은 1944년이 한참 지나도록 방어선을 지켰다. 포위되고 화력이 모자란 상황에서도, 모든 악조건을 딛고 판터-보탄 선은 베어마흐트에 귀중한 시간을 벌어 주었다. 소련의 눈사태를 막고 동부 전선의 균형을 다시 기울이려는 더 견고한 시도를 위해서였다..."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/outro_failed"
+msgid "Since you were unable to stop the Red tide here, the Red Army can now march west unopposed. They will leave Army Group Centre in complete disarray, and will be able to reach Warsaw before summer. A year from now, still in 1944, Berlin will fall to the allies."
+msgstr "이곳에서 붉은 물결을 막지 못한 탓에 붉은 군대는 이제 서쪽으로 거침없이 진군할 수 있다. 중부 집단군은 완전한 혼란에 빠질 것이고, 소련군은 여름이 오기 전에 바르샤바에 닿을 것이다. 1년 뒤, 여전히 1944년에 베를린은 연합군에게 함락될 것이다."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/place"
+msgid "West of Gomel, Gomel Oblast."
+msgstr "호멜 서쪽, 호멜주."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/skip"
+msgid "Skip preparation phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/story"
+msgid "The Germans have been constructing defenses along the west bank of the Dnieper river in an attempt to stop the Red Army's advance. But the Soviets arrive earlier than expected."
+msgstr "독일군은 붉은 군대의 진격을 막으려 드니프로강 서안을 따라 방어선을 구축해 왔다. 그러나 소련군은 예상보다 일찍 도착한다."
+
+msgctxt "mission/single/02-ger/1943_11_wotan/task1"
+msgid "Hold the industrial position at all costs!"
+msgstr "공업 진지를 어떤 대가를 치르더라도 사수하라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/task2"
+msgid "Prepare the defenses"
+msgstr "방어를 준비하라"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/task3"
+msgid "Eliminate any remaining Soviet troops!"
+msgstr "남은 소련군을 모조리 제거하라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/timer1"
+msgid "Prepare the defenses!"
+msgstr "방어를 준비하라!"
+
+msgctxt "mission/single/02-ger/1943_11_wotan/timer2"
+msgid "Time until the next wave:"
+msgstr "다음 파도까지 남은 시간:"

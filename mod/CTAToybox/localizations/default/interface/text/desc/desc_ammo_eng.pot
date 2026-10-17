@@ -1,0 +1,477 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Commonwealth ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/ammo/flare_eng artillery_88"
+msgid "조명탄 (영국 25-pdr)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng artillery_114"
+msgid "조명탄 (영국 4.5인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng artillery_127"
+msgid "조명탄 (영국 5인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng artillery_140"
+msgid "조명탄 (영국 5.5인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng artillery_152"
+msgid "조명탄 (영국 6인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng artillery_183"
+msgid "조명탄 (영국 7.2인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng artillery_203"
+msgid "조명탄 (영국 8인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng mortar_81"
+msgid "조명탄 (영국 박격포 3인치)"
+msgstr ""
+
+msgctxt "desc/ammo/flare_eng mortar_107"
+msgid "조명탄 (영국 박격포 4.2인치)"
+msgstr ""
+
+msgctxt "desc/ammo/7_65mm_pistol"
+msgid ".32 ACP Welrod 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/eng_revolver_clip_38"
+msgid ".38 Revolver Mk.IIz 클립"
+msgstr ""
+
+msgctxt "desc/ammo/eng_revolver_clip_45"
+msgid ".455 Webley Revolver 클립"
+msgstr ""
+
+msgctxt "desc/ammo/sten_mag eng_smg"
+msgid "9mm Sten 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/lanchester_mag eng_smg"
+msgid "9mm Lanchester 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/de_lisle_carbine_mag"
+msgid ".45 ACP De Lisle Carbine 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_eng clip"
+msgid ".303 Mk.VII 소총 클립"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_eng belt"
+msgid ".303 Mk.VIIIz 탄띠"
+msgstr ""
+
+msgctxt "desc/stuff/mgun_ger belt mk2"
+msgid "7.92mm Mk.IIz 탄띠"
+msgstr ""
+
+msgctxt "desc/ammo/hmgun_eng"
+msgid "S.A. AP .5인치 W.I 탄띠"
+msgstr ""
+
+msgctxt "desc/stuff/hmgun_eng"
+msgid "S.A. AP .5인치 W.I 탄띠"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_15_auto ap"
+msgid "S.A. AP 15mm W.G Mk.IZ 탄띠"
+msgstr ""
+
+msgctxt "desc/stuff/bulleteng_15_auto ap"
+msgid "S.A. AP 15mm W.G Mk.IZ 탄띠"
+msgstr ""
+
+msgctxt "desc/ammo/bren_mag"
+msgid ".303 Bren 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/bren_drum_mag"
+msgid ".303 Bren 드럼 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/vickers_berthier_mag"
+msgid ".303 Vickers-Berthier 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/lewis_mag"
+msgid ".303 Lewis Gun 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/vickers_go_mag"
+msgid ".303 Vickers GO 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/atrifle_eng ap2"
+msgid "RG .55 Boys Mk.II AP rounds"
+msgstr ""
+
+msgctxt "desc/ammo/atrifle_eng ap"
+msgid "RG .55 Boys Mk.I AP rounds"
+msgstr ""
+
+msgctxt "desc/ammo/atrifle_eng"
+msgid "RG .55 Boys AP rounds"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_37x257 eng ap"
+msgid "37mm AP 탄 Mk.I [<c(ff6a00)>AP</c>] <c(65696d)>L/45</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_37x257 eng he"
+msgid "37mm HE 포탄 Mk.I [<c(ff1200)>HE</c>] <c(65696d)>L/45</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_40x158mm_auto eng he"
+msgid "40mm HE 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/39</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_40x331_auto eng apbc"
+msgid "40mm APBC 탄 Mk.V.T [<c(ff6a00)>APBC</c>] <c(65696d)>L/60</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_40x331_auto eng he"
+msgid "40mm HE 포탄 Mk.X.T [<c(ff1200)>HE</c>] <c(65696d)>L/60</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_40x331_auto eng sap"
+msgid "40mm SAP 탄 Mk.IX.T [<c(ff6a00)>SAP</c>] <c(65696d)>L/60</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x307 eng ap"
+msgid "6-pdr Hotchkiss AP 탄[<c(ff6a00)>AP</c>] <c(65696d)>L/40</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x307 eng he"
+msgid "6-pdr Hotchkiss HE 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/40</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x441 eng ap"
+msgid "6-pdr AP 탄 Mk.II.T [<c(ff6a00)>AP</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x441 eng apc"
+msgid "6-pdr APC 탄 Mk.VIII.T [<c(ff6a00)>APC</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x441 eng apcbc"
+msgid "6-pdr APCBC 탄 Mk.IX.T [<c(ff6a00)>APCBC</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x441 eng apcr"
+msgid "6-pdr APCR 탄 Mk.I.T [<c(48c445)>APCR</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x441 eng apds"
+msgid "6-pdr APDS 탄 Mk.I.T [<c(48c445)>APDS</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_57x441 eng he"
+msgid "6-pdr HE 포탄 Mk.X.T [<c(ff1200)>HE</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_20_auto ap"
+msgid "20mm AP 탄 Mk.IX.T 탄띠 [<c(ff6a00)>AP</c>] <c(65696d)>L/70</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_20_auto he"
+msgid "20mm HE/HE-T 포탄 탄띠 [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_20_auto hei"
+msgid "20mm HEI/HEI-T 포탄 탄띠 [<c(ff1200)>HE-I</c>] <c(65696d)>L/70</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulletusa_37 littlejohn apcr"
+msgid "37mm APSV 탄 Mk.I.T [<c(48c445)>APCNR</c>] <c(65696d)>L/53</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_40 ap"
+msgid "2-pdr APHV 탄 Mk.I.T [<c(ff6a00)>AP</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_40 ap2"
+msgid "2-pdr AP 탄 Mk.I.T [<c(ff6a00)>AP</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_40 apcbc"
+msgid "2-pdr APCBC 탄 Mk.I.T [<c(ff6a00)>APCBC</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_40 he"
+msgid "2-pdr HE 포탄 Mk.II.T [<c(ff1200)>HE</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_40 littlejohn apcr"
+msgid "2-pdr APSV 탄 Mk.I.T [<c(48c445)>APCNR</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_40 littlejohn apcr2"
+msgid "2-pdr APSV 탄 Mk.II.T [<c(48c445)>APCNR</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_57 ap"
+msgid "6-pdr AP 탄 Mk.II.T [<c(ff6a00)>AP</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_57 apc"
+msgid "6-pdr APC 탄 Mk.VIII.T [<c(ff6a00)>APC</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_57 apcbc"
+msgid "6-pdr APCBC 탄 Mk.IX.T [<c(ff6a00)>APCBC</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_57 apcr"
+msgid "6-pdr APCR 탄 Mk.I.T [<c(48c445)>APCR</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_57 apds"
+msgid "6-pdr APDS 탄 Mk.I.T [<c(48c445)>APDS</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_57 he"
+msgid "6-pdr HE 포탄 Mk.X.T [<c(ff1200)>HE</c>] <c(65696d)>L/43 L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76 ap"
+msgid "17-pdr AP 탄 Mk.III.T [<c(ff6a00)>AP</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76 apc"
+msgid "17-pdr APC 탄 Mk.IV.T [<c(ff6a00)>APC</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76 apcbc"
+msgid "17-pdr APCBC 탄 Mk.VIII.T [<c(ff6a00)>APCBC</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76 apds"
+msgid "17-pdr APDS 탄 Mk.I.T [<c(48c445)>APDS</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76 he"
+msgid "17-pdr HE 포탄 Mk.II.T [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76 he2"
+msgid "17-pdr HE/HC 포탄 Mk.I.T [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76_l25 he"
+msgid "3인치 HE 포탄 Mk.I [<c(ff1200)>HE</c>] <c(65696d)>L/25</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_76_l25 sm"
+msgid "3인치 연막 포탄 Mk.I [<c(FFFFFF)>연막</c>] <c(65696d)>L/25</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_77 apcbc"
+msgid "77mm HV APCBC 탄 Mk.VIII.T [<c(ff6a00)>APCBC</c>] <c(65696d)>L/49</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_77 apds"
+msgid "77mm HV APDS 탄 Mk.I.T [<c(48c445)>APDS</c>] <c(65696d)>L/49</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_77 he"
+msgid "77mm HV HE 포탄 Mk.II.T [<c(ff1200)>HE</c>] <c(65696d)>L/49</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_84x294 eng ap"
+msgid "18-pdr AP 탄 Mk.I.T [<c(ff6a00)>AP</c>] <c(65696d)>L/28</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_84x294 eng he"
+msgid "18-pdr HE 포탄 Mk.I [<c(ff1200)>HE</c>] <c(65696d)>L/28</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_88 ap"
+msgid "25-pdr AP 탄 Mk.I.T [<c(ff6a00)>AP</c>] <c(65696d)>L/28</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_88 he"
+msgid "25-pdr HE 포탄 Mk.I.D [<c(ff1200)>HE</c>] <c(65696d)>L/28</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_88 sm"
+msgid "25-pdr 연막 포탄 Mk.I.D [<c(FFFFFF)>연막</c>] <c(65696d)>L/28</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_94 he"
+msgid "3.7인치 HE 포탄 Mk.I [<c(ff1200)>HE</c>] <c(65696d)>L/11.7</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_94 heat"
+msgid "3.7인치 H.E/A.T. 포탄 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11.7</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_94 wp"
+msgid "3.7인치 연막 포탄 Mk.I.D [<c(FFFFFF)>WP</c>] <c(65696d)>L/11.7</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_94_l50 ap"
+msgid "3.7인치 AP 탄 Mk.V.T [<c(ff6a00)>AP</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_94_l50 he"
+msgid "3.7인치 HE 포탄 Mk.V [<c(ff1200)>HE</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_94_l50 aphe"
+msgid "3.7인치 SAP 탄 Mk.IV.T [<c(ff6a00)>APHE</c>] <c(65696d)>L/50</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_95 he"
+msgid "95mm HE 포탄 Mk.XI.D [<c(ff1200)>HE</c>] <c(65696d)>L/18</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_95 heat"
+msgid "95mm H.E/A.T. 포탄 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/18</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_95 sm"
+msgid "95mm 연막 포탄 Mk.I [<c(FFFFFF)>연막</c>] <c(65696d)>L/18</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_114x86 eng he"
+msgid "4.5인치 HE 포탄 Mk.I.D [<c(ff1200)>HE</c>] <c(65696d)>L/13.2</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_114x86 eng wp"
+msgid "4.5인치 연막 확산 포탄 Mk.I.D [<c(FFFFFF)>WP</c>] <c(65696d)>L/13.2</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_114 he"
+msgid "4.5인치 HE 포탄 Mk.I.D [<c(ff1200)>HE</c>] <c(65696d)>L/43</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_120 he"
+msgid "4.7인치 50-lb HE 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/45</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_127 he"
+msgid "5인치 56-lb HE 포탄 Mk.I.D [<c(ff1200)>HE</c>] <c(65696d)>L/37</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_140 he"
+msgid "5.5인치 HE 100-lb 포탄 Mk.I.D [<c(ff1200)>HE</c>] <c(65696d)>L/30</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_140 he2"
+msgid "5.5인치 HE 80-lb 포탄 Mk.I.D [<c(ff1200)>HE</c>] <c(65696d)>L/30</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_140 sm"
+msgid "5.5인치 연막 포탄 Mk.I.D [연막] <c(65696d)>L/30</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_152 he"
+msgid "6인치 HE 포탄 Mk.II.D [<c(ff1200)>HE</c>] <c(65696d)>L/13</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_152 he2"
+msgid "6인치 HE 포탄 Mk.XX.B [<c(ff1200)>HE</c>] <c(65696d)>L/35</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_183 he"
+msgid "7.2인치 HE 포탄 Mk.I [<c(ff1200)>HE</c>] <c(65696d)>L/22</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_203 he"
+msgid "8인치 HE 포탄 Mk.III [<c(ff1200)>HE</c>] <c(65696d)>L/17</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_230 he"
+msgid "1호 파괴 폭탄 [<c(ff1200)>HE</c>] <c(65696d)>플라잉 더스트빈</c>"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_ger belt mk2"
+msgid "7.92mm S.A. Mk.IIz 탄띠탄"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_50 he"
+msgid "2인치 HE 박격포탄 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_50 sm"
+msgid "2인치 연막 박격포탄 [<c(FFFFFF)>연막</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_50 wp"
+msgid "2인치 확산 연막 박격포탄 [<c(FFFFFF)>WP</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_81 he"
+msgid "3인치 HE 박격포탄 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_81 sm"
+msgid "3인치 연막 박격포탄 [<c(FFFFFF)>연막</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_81 wp"
+msgid "3인치 확산 연막 박격포탄 [<c(FFFFFF)>WP</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_107 he"
+msgid "4.2인치 HE 박격포탄 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_107 sm"
+msgid "4.2인치 연막 박격포탄 [<c(FFFFFF)>연막</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mortareng_107 wp"
+msgid "4.2인치 확산 연막 박격포탄 [<c(FFFFFF)>WP</c>]"
+msgstr ""
+
+msgctxt "desc/stuff/mgun_ger belt mk2"
+msgid "7.92mm S.A. Mk.IIz 탄띠탄"
+msgstr ""
+
+msgctxt "desc/ammo/eng_grenade he"
+msgid "[<c(ff1200)>HE</c>] 소총 유탄 No.36M Mk.I"
+msgstr ""
+
+msgctxt "desc/ammo/eng_grenade heat"
+msgid "[<c(c9a6ff)>HEAT</c>] 소총 유탄 No.68/AT"
+msgstr ""
+
+msgctxt "desc/ammo/piat_bomb heat"
+msgid "[<c(c9a6ff)>HEAT</c>] PIAT 폭탄 Mk.IA"
+msgstr ""
+
+msgctxt "desc/ammo/piat_bomb heata"
+msgid "[<c(c9a6ff)>HEAT</c>] PIAT 폭탄 Mk.IV"
+msgstr ""
+
+msgctxt "desc/ammo/76mm_rp3 he"
+msgid "RP-3 60lb 로켓 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/air_bomb_eng_250lb"
+msgid "250lb 범용 Mk.IV 폭탄"
+msgstr ""
+
+msgctxt "desc/ammo/air_bomb_eng_500lb"
+msgid "500lb MC 폭탄"
+msgstr ""

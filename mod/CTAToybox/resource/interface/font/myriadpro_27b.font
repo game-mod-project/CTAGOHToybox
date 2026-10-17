@@ -1,0 +1,7 @@
+{font_atlas
+	{name "myriadpro"}
+	{size 27}
+	{height 35}
+	{style 1}
+	{binary_data "main_27.fnt"}
+}

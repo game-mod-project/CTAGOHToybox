@@ -1,0 +1,58 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Liberation special soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/narrator/ger-116pzofficer"
+msgid "제116 판처 사단 지휘관"
+msgstr ""
+
+msgctxt "desc/human/narrator/ger-fallschirmjaeger"
+msgid "제3 팔쉬름예거 사단 지휘관"
+msgstr ""
+
+msgctxt "desc/human/narrator/usa-2ndrangers"
+msgid "제2 레인저 지휘관"
+msgstr ""
+
+msgctxt "desc/human/narrator/usa-officer"
+msgid "미 육군 장교"
+msgstr ""
+
+msgctxt "desc/human/narrator/usa-3rdarmoured2"
+msgid "전차장"
+msgstr ""
+
+msgctxt "desc/human/narrator/usa-3rdarmoured"
+msgid "제3기갑사단 지휘관"
+msgstr ""
+
+msgctxt "desc/human/narrator/ger-hellmann"
+msgid "디트리히 헬만"
+msgstr ""
+
+msgctxt "desc/human/narrator/yug-partisan1"
+msgid "유고슬라비아 파르티잔 지도자"
+msgstr ""
+
+msgctxt "desc/human/narrator/yug-partisan2"
+msgid "볼쇼이 이오시프"
+msgstr ""
+
+msgctxt "desc/human/narrator/rus-tankist"
+msgid "소련 전차장"
+msgstr ""
+
+msgctxt "desc/human/narrator/rus-aydinov"
+msgid "Lt. 아르카디 아이디노프"
+msgstr ""

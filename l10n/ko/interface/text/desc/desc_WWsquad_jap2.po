@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_jap2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/single_tankman_ace_jap"
+msgid "Elite Tank Crew"
+msgstr "정예 전차 승무원"
+
+msgctxt "info/special/single_tankman_ace_jap"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr "<c(c3baae)>정예 승무원</c>"
+
+msgctxt "desc/squad/jap_kg_shikon_fury"
+msgid "Sensha 11th Regiment (Shikon)"
+msgstr "제11 센샤 연대 (시콘)"
+
+msgctxt "info/special/jap_kg_shikon_fury"
+msgid "<c(c3baae)>Ace Medium Armor</c>"
+msgstr "<c(c3baae)>에이스 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_kg_banzai_charge"
+msgid "Banzai Assault Group"
+msgstr "반자이 돌격단"
+
+msgctxt "info/special/jap_kg_banzai_charge"
+msgid "<c(c3baae)>Light Assault & Inf</c>"
+msgstr "<c(c3baae)>경형 돌격과 보병</c>"
+
+msgctxt "desc/squad/jap_kg_chi_ha_platoon"
+msgid "Type 97 Chi-Ha Platoon"
+msgstr "Type 97 Chi-Ha 소대"
+
+msgctxt "info/special/jap_kg_chi_ha_platoon"
+msgid "<c(c3baae)>Medium Armor Platoon</c>"
+msgstr "<c(c3baae)>중형 기갑 소대</c>"
+
+msgctxt "desc/squad/jap_kg_chi_ha_kai_platoon"
+msgid "Type 97 Chi-Ha Kai Platoon"
+msgstr "Type 97 Chi-Ha Kai 소대"
+
+msgctxt "info/special/jap_kg_chi_ha_kai_platoon"
+msgid "<c(c3baae)>Medium Armor Platoon</c>"
+msgstr "<c(c3baae)>중형 기갑 소대</c>"
+
+msgctxt "desc/squad/jap_kg_chi_he_vanguard"
+msgid "Type 1 Chi-He Vanguard"
+msgstr "Type 1 Chi-He 선봉"
+
+msgctxt "info/special/jap_kg_chi_he_vanguard"
+msgid "<c(c3baae)>Advanced Medium Armor</c>"
+msgstr "<c(c3baae)>고급 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_kg_ho_ni_battery"
+msgid "Type 1 Ho-Ni Battery"
+msgstr "Type 1 Ho-Ni 포대"
+
+msgctxt "info/special/jap_kg_ho_ni_battery"
+msgid "<c(c3baae)>Self-Propelled Gun</c>"
+msgstr "<c(c3baae)>자주포</c>"
+
+msgctxt "desc/squad/jap_kg_ho_ro_assault"
+msgid "Type 4 Ho-Ro Assault Group"
+msgstr "Type 4 Ho-Ro 돌격단"
+
+msgctxt "info/special/jap_kg_ho_ro_assault"
+msgid "<c(c3baae)>Heavy Assault Gun</c>"
+msgstr "<c(c3baae)>대형 돌격포</c>"
+
+msgctxt "desc/squad/jap_kg_jungle_ambush"
+msgid "Jungle Ambush Force"
+msgstr "정글 매복 부대"
+
+msgctxt "info/special/jap_kg_jungle_ambush"
+msgid "<c(c3baae)>Light Ambush Group</c>"
+msgstr "<c(c3baae)>경형 매복 집단</c>"
+
+msgctxt "desc/squad/jap_kg_snlf_island_def"
+msgid "SNLF Island Defense"
+msgstr "SNLF 섬 방어"
+
+msgctxt "info/special/jap_kg_snlf_island_def"
+msgid "<c(c3baae)>Amphibious Assault</c>"
+msgstr "<c(c3baae)>상륙 돌격</c>"
+
+msgctxt "desc/squad/jap_kg_heavy_support"
+msgid "Heavy Fire Support"
+msgstr "중화력 지원"
+
+msgctxt "info/special/jap_kg_heavy_support"
+msgid "<c(c3baae)>Medium Support Armor</c>"
+msgstr "<c(c3baae)>중형 지원 기갑</c>"
+
+msgctxt "desc/squad/jap_kg_manchuria_patrol"
+msgid "Manchuria Border Patrol"
+msgstr "만주 국경 순찰대"
+
+msgctxt "info/special/jap_kg_manchuria_patrol"
+msgid "<c(c3baae)>Captured Light Armor</c>"
+msgstr "<c(c3baae)>노획 경기갑</c>"
+
+msgctxt "desc/squad/jap_kg_aa_motorized"
+msgid "Motorized AA Defense"
+msgstr "차량화 대공 방어"
+
+msgctxt "info/special/jap_kg_aa_motorized"
+msgid "<c(c3baae)>Mobile Anti-Air</c>"
+msgstr "<c(c3baae)>기동 대공</c>"
+
+msgctxt "desc/squad/jap_kg_burma_flankers"
+msgid "Burma Jungle Flankers"
+msgstr "버마 정글 측면 부대"
+
+msgctxt "info/special/jap_kg_burma_flankers"
+msgid "<c(c3baae)>Light Flanking Armor</c>"
+msgstr "<c(c3baae)>경형 측면 기갑</c>"
+
+msgctxt "desc/squad/jap_kg_infantry_support"
+msgid "I-Go Infantry Support"
+msgstr "I-Go 보병 지원"
+
+msgctxt "info/special/jap_kg_infantry_support"
+msgid "<c(c3baae)>Infantry Support</c>"
+msgstr "<c(c3baae)>보병 지원</c>"
+
+msgctxt "desc/squad/jap_kg_rapid_recon"
+msgid "Rapid Recon Network"
+msgstr "신속 정찰망"
+
+msgctxt "info/special/jap_kg_rapid_recon"
+msgid "<c(c3baae)>Light Recon</c>"
+msgstr "<c(c3baae)>경정찰</c>"
+
+msgctxt "desc/squad/jap_kg_mech_transport"
+msgid "Mechanized Transport Assault"
+msgstr "기계화 수송 돌격"
+
+msgctxt "info/special/jap_kg_mech_transport"
+msgid "<c(c3baae)>Armored Transport</c>"
+msgstr "<c(c3baae)>장갑 수송</c>"
+
+msgctxt "desc/squad/jap_kg_type94_swarm"
+msgid "Type 94 Tankette Swarm"
+msgstr "Type 94 탱케트 무리"
+
+msgctxt "info/special/jap_kg_type94_swarm"
+msgid "<c(c3baae)>Tankette Swarm</c>"
+msgstr "<c(c3baae)>탱케트 무리</c>"
+
+msgctxt "desc/squad/jap_kg_ro_go_assault"
+msgid "Ro-Go Heavy Assault"
+msgstr "Ro-Go 중형 돌격"
+
+msgctxt "info/special/jap_kg_ro_go_assault"
+msgid "<c(c3baae)>Multi-Turret Assault</c>"
+msgstr "<c(c3baae)>다포탑 돌격</c>"
+
+msgctxt "desc/squad/jap_kg_captured_armor"
+msgid "Captured Armor Platoon"
+msgstr "노획 기갑 소대"
+
+msgctxt "info/special/jap_kg_captured_armor"
+msgid "<c(c3baae)>Captured Mix</c>"
+msgstr "<c(c3baae)>노획 혼성</c>"
+
+msgctxt "desc/squad/jap_kg_amphibious_assault"
+msgid "Amphibious Task Force"
+msgstr "수륙양용 임무부대"
+
+msgctxt "info/special/jap_kg_amphibious_assault"
+msgid "<c(c3baae)>Amphibious Armor</c>"
+msgstr "<c(c3baae)>수륙양용 기갑</c>"
+
+msgctxt "desc/squad/jap_kg_okinawa_defense"
+msgid "Okinawa Defensive Line"
+msgstr "오키나와 방어선"
+
+msgctxt "info/special/jap_kg_okinawa_defense"
+msgid "<c(c3baae)>Defensive Armor Line</c>"
+msgstr "<c(c3baae)>방어 기갑 전열</c>"
+
+msgctxt "desc/squad/jap_kg_mobile_rocket"
+msgid "Mobile Rocket Artillery"
+msgstr "기동 로켓포"
+
+msgctxt "info/special/jap_kg_mobile_rocket"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr "<c(c3baae)>로켓포</c>"
+
+msgctxt "desc/squad/jap_kg_kamikaze_platoon"
+msgid "Kamikaze Assault Platoon"
+msgstr "가미카제 돌격 소대"
+
+msgctxt "info/special/jap_kg_kamikaze_platoon"
+msgid "<c(c3baae)>Suicide Assault</c>"
+msgstr "<c(c3baae)>자살 돌격</c>"
+
+msgctxt "desc/squad/jap_kg_chi_nu_defense"
+msgid "Type 3 Chi-Nu Defense"
+msgstr "Type 3 Chi-Nu 방어"
+
+msgctxt "info/special/jap_kg_chi_nu_defense"
+msgid "<c(c3baae)>Advanced Medium Armor</c>"
+msgstr "<c(c3baae)>고급 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_chi_to_platoon"
+msgid "Prototype: Type 4 Chi-To Platoon"
+msgstr "시제: Type 4 Chi-To 소대"
+
+msgctxt "info/special/jap_exp_chi_to_platoon"
+msgid "<c(c3baae)>Prototype Medium Armor</c>"
+msgstr "<c(c3baae)>시제 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_chi_ri_2_platoon"
+msgid "Prototype: Type 5 Chi-Ri II"
+msgstr "시제: Type 5 Chi-Ri II"
+
+msgctxt "info/special/jap_exp_chi_ri_2_platoon"
+msgid "<c(c3baae)>Autoloader Medium Armor</c>"
+msgstr "<c(c3baae)>자동장전 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_chi_nu_kai_snipers"
+msgid "Prototype: Chi-Nu Kai Sniper Group"
+msgstr "시제: Chi-Nu Kai 저격단"
+
+msgctxt "info/special/jap_exp_chi_nu_kai_snipers"
+msgid "<c(c3baae)>Prototype Sniper Armor</c>"
+msgstr "<c(c3baae)>시제 저격 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_type_5_spearhead"
+msgid "Prototype: Type 5 Spearhead"
+msgstr "시제: Type 5 선봉"
+
+msgctxt "info/special/jap_exp_type_5_spearhead"
+msgid "<c(c3baae)>Advanced Assault Armor</c>"
+msgstr "<c(c3baae)>고급 돌격 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_oi_150_bunker"
+msgid "Prototype: O-I Mobile Fortress"
+msgstr "시제: O-I 이동 요새"
+
+msgctxt "info/special/jap_exp_oi_150_bunker"
+msgid "<c(c3baae)>Super Heavy Fortress</c>"
+msgstr "<c(c3baae)>초중형 요새</c>"
+
+msgctxt "desc/squad/jap_exp_oho_fortress"
+msgid "Prototype: O-Ho Multi-Turret"
+msgstr "시제: O-Ho 다포탑"
+
+msgctxt "info/special/jap_exp_oho_fortress"
+msgid "<c(c3baae)>Super Heavy Multi-Turret</c>"
+msgstr "<c(c3baae)>초중형 다포탑</c>"
+
+msgctxt "desc/squad/jap_exp_oni_2_push"
+msgid "Prototype: O-Ni 2 Heavy Push"
+msgstr "시제: O-Ni 2 중형 돌파"
+
+msgctxt "info/special/jap_exp_oni_2_push"
+msgid "<c(c3baae)>Super Heavy Assault</c>"
+msgstr "<c(c3baae)>초중형 돌격</c>"
+
+msgctxt "desc/squad/jap_exp_type_5_heavy_decisive"
+msgid "Prototype: Type 5 Heavy Decisive"
+msgstr "시제: Type 5 중형 결전"
+
+msgctxt "info/special/jap_exp_type_5_heavy_decisive"
+msgid "<c(c3baae)>Ultimate Heavy Armor</c>"
+msgstr "<c(c3baae)>궁극의 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_hori_production_line"
+msgid "Prototype: Ho-Ri Production TD Line"
+msgstr "시제: Ho-Ri 양산형 구축전차 전열"
+
+msgctxt "info/special/jap_exp_hori_production_line"
+msgid "<c(c3baae)>Heavy TD Battery</c>"
+msgstr "<c(c3baae)>중형 구축전차 포대</c>"
+
+msgctxt "desc/squad/jap_exp_hori_prototype_ambush"
+msgid "Prototype: Ho-Ri Proto Ambush"
+msgstr "시제: Ho-Ri 시제형 매복"
+
+msgctxt "info/special/jap_exp_hori_prototype_ambush"
+msgid "<c(c3baae)>Heavy TD Ambush</c>"
+msgstr "<c(c3baae)>중형 구축전차 매복</c>"
+
+msgctxt "desc/squad/jap_exp_hori_2_aa_defense"
+msgid "Prototype: Ho-Ri 2 AA Defense"
+msgstr "시제: Ho-Ri 2 대공 방어"
+
+msgctxt "info/special/jap_exp_hori_2_aa_defense"
+msgid "<c(c3baae)>Heavy Anti-Air TD</c>"
+msgstr "<c(c3baae)>중형 대공 구축전차</c>"
+
+msgctxt "desc/squad/jap_exp_hato_siege"
+msgid "Prototype: Ha-To Orbital Strike"
+msgstr "시제: Ha-To 궤도 타격"
+
+msgctxt "info/special/jap_exp_hato_siege"
+msgid "<c(c3baae)>Super Heavy Artillery</c>"
+msgstr "<c(c3baae)>초중포</c>"
+
+msgctxt "desc/squad/jap_exp_nato_td_platoon"
+msgid "Prototype: Na-To Open Top TD"
+msgstr "시제: Na-To 무개형 구축전차"
+
+msgctxt "info/special/jap_exp_nato_td_platoon"
+msgid "<c(c3baae)>Open Top TD Platoon</c>"
+msgstr "<c(c3baae)>무개형 구축전차 소대</c>"
+
+msgctxt "desc/squad/jap_exp_tiger_export"
+msgid "Prototype: Tiger Export Guard"
+msgstr "시제: 티거 수출형 근위"
+
+msgctxt "info/special/jap_exp_tiger_export"
+msgid "<c(c3baae)>Imported Heavy Armor</c>"
+msgstr "<c(c3baae)>수입 중형 기갑</c>"
+
+msgctxt "desc/squad/jap_exp_tokyo_1946"
+msgid "Prototype: Tokyo Defense 1946"
+msgstr "시제: 1946 도쿄 방어"
+
+msgctxt "info/special/jap_exp_tokyo_1946"
+msgid "<c(c3baae)>Decisive Battle Group</c>"
+msgstr "<c(c3baae)>결전 집단</c>"
+
+msgctxt "desc/squad/jap_exp_emperor_guard"
+msgid "Prototype: Emperor's Last Stand"
+msgstr "시제: 천황의 마지막 항전"
+
+msgctxt "info/special/jap_exp_emperor_guard"
+msgid "<c(c3baae)>Ultimate Guard Array</c>"
+msgstr "<c(c3baae)>궁극의 근위 진형</c>"

@@ -1,0 +1,221 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (2-combat)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/00-bootcamp/2-combat/date"
+msgid "1941년 6월 26일 - 벨라루스 SSR, 그로드노."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/failmedic"
+msgid "위생병이 늦어서 병사가 출혈로 사망했다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/lose"
+msgid "병사를 모두 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/minedetect1"
+msgid "됐다! 첫 지뢰가 나왔다. 더 있을 게 분명하다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/minedetect2"
+msgid "좋아, 이게 전부인 것 같다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/name"
+msgid "훈련 5: 불의 시험"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/name_big"
+msgid "불의 시험"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/hints/foxhole"
+msgid "지형이 엄폐물을 주지 않으면 직접 참호를 파야 한다. 병사가 파려면 야전삽이 필요하다. 오른쪽 아래에 "방어 시설" 하위 메뉴가 있어 무엇을 지을지 고를 수 있다. 공병은 더 다양한 시설을 세울 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/hints/medic"
+msgid "위생병은 전장에서 가장 귀한 자산 중 하나다. 출혈 중인 병사를 치료할 수 있는 건 위생병뿐이다. 위생병을 선택한 채 부상병 위에 커서를 올리면 치료 표시가 뜬다. 출혈 중인 병사를 너무 오래 방치하면 죽는다는 점을 명심하라..."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/hints/minedetector"
+msgid "지뢰를 찾으려면 지뢰 탐지기를 써야 한다. 트럭의 소지품에서 꺼내라. 병사의 소지품에 들어가면 오른쪽 아래 '물품 옵션' 하위 메뉴의 '지뢰 탐지' 단추로 특정 지점을 훑을 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/hints/repair"
+msgid "수리 도구함은 차량마다 들어 있다. 수리 도구함이 떨어지면 직접 주워 모아야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/hints/repair2"
+msgid "탄약은 상자 곳곳에 흩어져 있다. 연료를 채우려면 급유 트럭을 차량 가까이 불러오거나, 차량 안에 있는 제리캔으로 연료를 주워 모아야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/hints/plantmines"
+msgid "구역에 지뢰를 묻으려면 "물품" 메뉴에서 "대전차 지뢰"나 "AP 지뢰" 아이콘을 누른다. 지도 아무 곳이나 왼쪽 클릭으로 지점을 가리킨다. Shift를 누른 채 가리키면 여러 곳에 지뢰 매설을 예약한다. 왼쪽 클릭을 누른 채 커서를 끌면 한 줄로 여러 개를 놓을 수 있다. 병사는 자기 위치에서 클릭한 방향으로 매설을 시작한다. 지뢰 하나를 묻는 데 잠시 걸리며, 예를 들어 대전차 지뢰는 더 오래 걸린다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/defend"
+msgid "놈들이 온다! 자리를 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/defend2"
+msgid "훌륭하다, 제군들."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/die1"
+msgid "교전이다! 모두 엎드려! 소련 국경 순찰대가 우리 소리를 들은 모양이다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/die2"
+msgid "우리가 제압 사격을 하겠다! 위생병! 저 친구를 돌봐라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/dig"
+msgid "놈들이 우리가 여기 있는 걸 안다. 다른 순찰대도 오고 있을 것이다. 반격은 우리가 막아낸다! 참호를 파라, 서둘러! 삽이 더 필요하면 트럭에 더 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/end"
+msgid "지역 소탕 완료! 훌륭하다. 조국이 자랑스러워할 것이다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/repairtank1"
+msgid "말하게 하는 건 어렵지 않았다. 이반 놈들이 마을 북쪽에 소대 하나를 더 두고 있다더군. 우리 임무는 놈들을 쓸어버리는 것이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/repairtank2"
+msgid "잠깐만... 저 전차는 작동할 것 같다. 수리하고 정비해 보자. 일이 훨씬 쉬워질 것이다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/repairtank3"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/start1"
+msgid "젠장! 지뢰다! 나와!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/start1_2"
+msgid "트럭은 끝났다. 걸어서 계속 간다. 이 길의 지뢰 제거부터 시작한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/start2"
+msgid "너! 트럭에서 지뢰 탐지기를 가져와 앞길을 훑어라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/tank"
+msgid "이 물건엔 탄약도 연료도 없다! 이런 빌어먹을 상황이 다 있나. 네가 채워 넣어야 한다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/village"
+msgid "분대의 절반을 데리고 북쪽에서 마을 측면을 돌아라. 옆에서 그 개자식들을 치고, 썩어빠진 소굴에서 수류탄으로 몰아내라. 우리는 놈들의 위치를 계속 보면서 총구를 이쪽으로 묶어 두겠다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/village1"
+msgid "엄폐물로 가! 마을에서 사격을 받고 있다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/village2"
+msgid "젠장! 저항 없이 이 지역을 확보하라고 했는데! 침공이 이 공산주의자들을 기습하지 못했다! 저 마을에 분견대 하나가 통째로 있는 모양이다. 기관총으로 진지를 굳혀 놨다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/place"
+msgid "제7보병사단."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/story"
+msgid "부대와 차량을 지휘하며 첫 전투의 세례를 받아 보라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task1"
+msgid "지뢰를 제거하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task1_2"
+msgid "출혈 중인 병사를 치료하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task2"
+msgid "반격에 맞서 진지를 지켜라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task3"
+msgid "참호를 최소 2개 파고 반격을 막을 준비를 하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task4"
+msgid "마을 측면을 돌아 모든 기관총을 제거하고 외곽을 무력화하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task5"
+msgid "버려진 장갑차량을 정비하라"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task6"
+msgid "적을 마을 전체에서 몰아내라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task7"
+msgid "적 호송대에 대비해 도로에 지뢰를 매설하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task8"
+msgid "적 호송대를 섬멸하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task_ap"
+msgid "이 구역에 AP 지뢰를 최소 10개 매설하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/task_at"
+msgid "이 구역에 대전차 지뢰를 최소 10개 매설하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/convoy"
+msgid "러시아 호송대가 곧 북쪽에서 동쪽 도로를 따라 온다. 다리 건너 도로에 지뢰를 묻어라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/plantmines"
+msgid "제군, 트럭에서 AP 지뢰와 대전차 지뢰를 모두 챙겨라. 표시된 지점마다 하나씩 매설하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/timerconvoy"
+msgid "<c(ffff00)>러시아 호송대 도착까지:"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/timerconvoywarn"
+msgid "<c(ff4200)>러시아 호송대 도착까지:"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/status_ap_mines"
+msgid "지정 구역에 AP 지뢰를 %1%/10개 매설했다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/status_at_mines"
+msgid "지정 구역에 대전차 지뢰를 %1%/10개 매설했다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/reinforcements"
+msgid "증원군이다. 늦더라도 안 오는 것보단 낫지..."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/narrator/officer/attackconvoy"
+msgid "호송대가 접근한다! 엎드려 숨어라. 지뢰밭에 들어올 때까지 공격하지 마라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/outro_completed"
+msgid "잘했다, 병사. 첫 전투에서 살아남았군. 자네를 믿어도 되겠어."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/2-combat/outro_failed"
+msgid "명령을 따르고 빨리 해내라. 슈트라프바탈리온에 끌려가고 싶지는 않을 것이다!"
+msgstr ""

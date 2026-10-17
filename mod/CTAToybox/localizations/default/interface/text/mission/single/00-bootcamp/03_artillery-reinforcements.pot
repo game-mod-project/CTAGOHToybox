@@ -1,0 +1,181 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (03_artillery-reinforcements)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/complete"
+msgid "축하한다, 세 번째 훈련(대전차포와 포병)을 마쳤다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/date"
+msgid "1941년 6월 24일 · 소련 국경"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/hint_video"
+msgid "이 단추를 눌러 이 훈련 단계의 영상을 다시 본다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/name"
+msgid "훈련 3: 대전차포와 포병"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/name_big"
+msgid "대전차포와 포병"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/00"
+msgid "병사들! 최전선에 다시 온 것을 환영한다! 오늘은 대전차포를 배치하는 법, 모래주머니를 쌓는 법, 직접 사격과 간접 사격 유닛을 구분하는 법을 배운다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/01"
+msgid "먼저 병사 전원을 대전차포 승무원으로 붙여라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/01b"
+msgid "병사들, 대전차포를 연못 근처의 새 사격 위치로 옮길 시간이다. 움직여라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/02"
+msgid "좋다! 이제 대전차포 둘레에 모래주머니를 쌓아 방어를 강화할 차례다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/03"
+msgid "길 아래에 적 차량이다! 쓸어버려라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/04"
+msgid "이게 뭐지?! 소련 중전차 KV-1이다! 즉시 APCR탄으로 격파해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/04b"
+msgid "중전차를 잘 격파했다! 이제 다시 이동 준비를 하자."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/05"
+msgid "이 트럭을 받아라. 대전차포를 연결해서 새 위치로 빠르게 견인해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/05b"
+msgid "대전차포를 분리해서 참호 근처 위치로 옮겨라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/06a"
+msgid "이제 우리의 표준 경야전곡사포인 10.5cm LeFH 18에 익숙해지자! 먼저 포에 쓸 탄약이 필요하다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/06b"
+msgid "탄약 트럭이 생겼다. 곡사포에 승무원을 배치하고, 트럭을 가까이 몰아 곡사포에 탄약을 보급해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/07"
+msgid "소련군이 우리 위치 서쪽 마을에 도착했다. 곡사포로 놈들의 트럭을 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/07helper"
+msgid "같은 목표나 지점에 여러 발을 쏘면 이후 사격마다 명중률이 올라간다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/08"
+msgid "소련 장갑차를 발견했다! 곡사포 탄약을 철갑탄(APHE)이나 대전차 고폭탄(HEAT)으로 바꿔 직접 사격으로 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/09"
+msgid "훌륭한 격파다! 이제 남은 적병을 처치해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/hint/01"
+msgid "대전차포의 사격 모드가 '응사'로 설정돼 있다. '자유 사격'으로 바꾸거나 직접 조종 모드에서 수동으로 쏴라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/scene/01"
+msgid "5cm PaK 38이다. 직사 대전차포로, 정확한 사격으로 적 전차를 매복 공격하기에 이상적이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/scene/02"
+msgid "위치를 바꾸는 건 언제나 좋은 방법이다. 예를 들어 새 위치에서는 도로를 더 좋은 각도로 볼 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/scene/03"
+msgid "트럭으로 대전차포를 새 위치까지 견인해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/outro_completed"
+msgid "임무 완수!\n\n이 임무를 계속 하려면 '계속'을, 곧바로 다음 임무로 가려면 '다음'을 눌러라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/place"
+msgid "중부집단군"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/reinf_video"
+msgid "단계 다시 보기."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/replay_video"
+msgid "영상 다시 보기"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/story"
+msgid "포병 훈련에 온 것을 환영한다, 병사.\n\n이 훈련에서는 포병 진지의 기본과 직사·간접 사격 모드가 전투에서 얼마나 결정적일 수 있는지 배운다.\n\n포병은 기동력이 부족한 만큼 화력으로 보완한다.\n\n                                        행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task1"
+msgid "모든 병력으로 대전차포에 승무원을 배치하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task1b"
+msgid "대전차포를 표시된 새 위치로 옮겨라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task2"
+msgid "대전차포 주변에 모래주머니를 쌓아라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task3"
+msgid "적 차량을 파괴하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task4"
+msgid "적 KV-1을 파괴하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task5a"
+msgid "견인할 수 있게 대전차포를 트럭에 연결하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task5"
+msgid "표시된 새 위치까지 대전차포를 견인하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task5b"
+msgid "대전차포를 분리해 지정된 위치로 옮겨라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task6"
+msgid "경야전곡사포에 탄약을 보급하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task7"
+msgid "곡사포로 적 트럭을 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task8"
+msgid "AP/HEAT탄으로 직접 사격해 소련 장갑차를 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task9"
+msgid "남은 적 부대를 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/outro_failed"
+msgid "패배했다!"
+msgstr ""

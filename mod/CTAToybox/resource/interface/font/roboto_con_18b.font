@@ -1,0 +1,7 @@
+{font_atlas
+	{name "roboto_con"}
+	{size 18}
+	{height 23}
+	{style 1}
+	{binary_data "main_18.fnt"}
+}

@@ -1,0 +1,150 @@
+# source: vanilla interface/text/desc/desc_vehicles_generic.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic vehicles\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/entity/air-bag"
+msgid "Barge"
+msgstr "바지선"
+
+msgctxt "desc/entity/armored_locomotive"
+msgid "Armed locomotive"
+msgstr "무장 기관차"
+
+msgctxt "desc/entity/cistern"
+msgid "Cistern Wagon"
+msgstr "탱크 화차"
+
+msgctxt "desc/entity/coaster_ship"
+msgid "Small freighter"
+msgstr "소형 화물선"
+
+msgctxt "desc/entity/crane_m"
+msgid "Crane"
+msgstr "크레인"
+
+msgctxt "desc/entity/crane_rail1"
+msgid "Crane"
+msgstr "크레인"
+
+msgctxt "desc/entity/crane_rail"
+msgid "Crane"
+msgstr "크레인"
+
+msgctxt "desc/entity/drg_class75"
+msgid "DRG Class 75"
+msgstr "DRG Class 75"
+
+msgctxt "desc/entity/drg_class75"
+msgid "DRG Class 75"
+msgstr "DRG Class 75"
+
+msgctxt "info/special/drg_class75"
+msgid "<c(c3baae)>Locomotive</c>"
+msgstr "<c(c3baae)>기관차</c>"
+
+msgctxt "desc/entity/drg_class75_rus"
+msgid "DRG Class 75"
+msgstr "DRG Class 75"
+
+msgctxt "info/special/drg_class75_rus"
+msgid "<c(c3baae)>Locomotive</c>"
+msgstr "<c(c3baae)>기관차</c>"
+
+msgctxt "desc/entity/passengervan"
+msgid "Wagon"
+msgstr "화차"
+
+msgctxt "desc/entity/platform"
+msgid "Wagon"
+msgstr "화차"
+
+msgctxt "desc/entity/platform_can"
+msgid "Wagon"
+msgstr "화차"
+
+msgctxt "desc/entity/platform_gun"
+msgid "Wagon"
+msgstr "화차"
+
+msgctxt "desc/entity/small_barge"
+msgid "Barge"
+msgstr "바지선"
+
+msgctxt "desc/entity/steam_locomotive"
+msgid "Locomotive"
+msgstr "기관차"
+
+msgctxt "desc/entity/tendor"
+msgid "Tender coal car"
+msgstr "탄수차"
+
+msgctxt "desc/entity/tradevan"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/tradevan_big"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/tradevan_explosive"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/tramway"
+msgid "Wagon"
+msgstr "화차"
+
+msgctxt "desc/entity/universal"
+msgid "Tractor"
+msgstr "트랙터"
+
+msgctxt "desc/entity/wagon1"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon1a"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon1a_ammo"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon_cistern"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon_platform"
+msgid "Cistern Wagon"
+msgstr "탱크 화차"
+
+msgctxt "desc/entity/wagon_plato"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon_plato_ammo1"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon_plato_ammo2"
+msgid "Cargo Wagon"
+msgstr "화물 화차"
+
+msgctxt "desc/entity/wagon_tanker"
+msgid "Cistern"
+msgstr "탱크 화차"
+
+msgctxt "desc/entity/ya5_k"
+msgid "Barge"
+msgstr "바지선"

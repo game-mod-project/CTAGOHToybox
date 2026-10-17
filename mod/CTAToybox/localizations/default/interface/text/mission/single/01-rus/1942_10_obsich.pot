@@ -1,0 +1,250 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1942_10_obsich)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1942_10_obsich/attack"
+msgid "공격 신호"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/date"
+msgid "1942년 10월 20일 · 점령지 우크라이나."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/name"
+msgid "불굴"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/name_big"
+msgid "불굴"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/ger_officer"
+msgid "마을에 도착하면 포로들은 처리하고 병사들을 모아 늪지 소탕에 나서도록 해라. 사령부는 골치 아픈 파르티잔 집단을 색출하길 원한다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/ger_soldier"
+msgid "Scheisse! 조향이 안 돼... 브레이크도 나갔어, 젠장!!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan/01"
+msgid "가라, 동지들. 엄폐하고 눈에 띄는 무기는 뭐든 챙겨라! 파시스트 침략자들에게 죽음을!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan/02"
+msgid "앞으로 동지들! 보급 트럭은 우리 것이다! 거기서 챙길 수 있는 건 전부 챙겨라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan/03"
+msgid "독일군이 온다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan/04"
+msgid "독일군이다! 독일군이 마을을 떠나고 있다! 이쪽으로 온다!!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan/05"
+msgid "지휘관 동지, 놈들이 우리 위치를 불었을 것 같지는 않습니다! 독일군만이 아닙니다. 마을 주민 일부도 합류했습니다! 파시스트들이 우리 동포를 우리에게 겨누게 하고 있습니다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/01"
+msgid "옵시치에 온 걸 환영한다, 동지들. 여기는 내가 책임자다. 요즘 파시스트들이 이 길로 호송대를 많이 보내고 있어서, 보급품을 실은 만만한 놈들을 노린다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/02"
+msgid "자네들의 도움이 필요하다! 독일군이 우리 마을에 뭔가 하고 있다. 요새화된 보급 거점이 됐고, 구역을 보강했는데 우리 주민들이 어떻게 됐는지 아무것도 모른다. 최악의 사태가 두렵다..."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/03"
+msgid "알았다. 따라와라! 우리 은신처로 안내하겠다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/04"
+msgid "마을의 독일군 활동이 걱정스러울 만큼 활발하다. 무모한 독일 장교가 주둔 중인데 소련 최고사령부가 그를 제거해 달라고 요청했다. 모든 출입구가 경비 중이다. 이 파시스트 돼지는 중요한 놈이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/05"
+msgid "자네 병사들과 함께 마을에 침투해서 기갑을 처치할 것이다. 무엇보다 저 파시스트 장교를 살려서 도망치게 하지 마라! 히틀러 무리에게 큰 타격을 줄 수 있다면, 놈들이 우리 마을을 내버려 두길 바란다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/06"
+msgid "뭐라고!? 말도 안 돼! 누가 우리 은신처를 팔았다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/07"
+msgid "너희를 믿지 말았어야 했다, 배신자들!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/08"
+msgid "젠장! 하노마그다! 저 차량을 측면에서 돌아 뒤를 쳐라, MG-42가 우리를 다 죽이기 전에!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/09"
+msgid "상자에 탄약과 무기, 장비가 있다! 필요한 걸 가져가라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/10"
+msgid "잘했다, 동지들. 이제 우리 위치가 노출됐다. 옵시치를 해방하고 파시스트 지휘관을 제거하는 계획을 계속 진행해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/11"
+msgid "가라! 조국을 위하여! 파시스트 야수에게 죽음을!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/12"
+msgid "한잔하자, 동지들! 이제부터 우리 마을이 파시즘의 멍에에서 자유롭기를!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/convoy1"
+msgid "파시스트들이 일정에 쫓겨 서두르고 있다. 보급 차량만 매복 공격하고 나머지는 보내 줘라. 놈들이 자네를 쫓을 것 같진 않다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/convoy2"
+msgid "동지, 트럭에만 집중해라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/convoy3"
+msgid "기갑은 무시해라! 우리는 보급 차량에만 관심이 있다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/mortars"
+msgid "적이 박격포를 가져왔다! 빨리 제거해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/officer"
+msgid "장교가 도망치려 한다! 무슨 일이 있어도 놓쳐선 안 된다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part31"
+msgid "자네 분대가 신속히 움직여야 한다. 내 부하 일부가 마을에서 관측병 노릇을 하고 있다. 장교가 쓸 만한 도주로를 모두 차단해라. 자네가 신호를 주면 공격하겠다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part32"
+msgid "장교가 위험에 처하면 도망치려 할 것이다!! 공격 신호를 줄 때까지 모든 출구를 막아 놔야 한다. 이 위험한 임무를 돕도록 최정예 부하 셋을 붙여 주겠다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part41"
+msgid "그리운 우리 집이다! ...문서를 전부 두고 갔군... 아주 흥미로운데..."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part42"
+msgid "호송대다. 아주 많다. 우리가 진창에 완전히 빠지지 않는 몇 안 되는 교차로 중 하나에 있는 모양이다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part43"
+msgid "트럭 한 대를 막을 때마다... 한 분 지연시킬 때마다... 전선의 동지들이 파시스트의 진격을 멈출 귀중한 시간을 번다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part44"
+msgid "곧 또 다른 대열이 온다! 계속 알려 주겠다! 도착까지 몇 분 남았을 것이다! 마을 주변에서 지뢰나 폭발물을 찾아 놈들에 대비해라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part45"
+msgid "적 호송대가 북서쪽에서 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part46"
+msgid "파시스트 대열이 남서쪽에서 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part47"
+msgid "주의! 적 호송대가 남쪽에서 도착한다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part48"
+msgid "내 정찰병들이 보니 다음 독일 호송대가 거의 코앞까지 왔다! 계속 알려 주겠다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/partisan_lead/part49"
+msgid "트럭을 쳐라! 그게 우리 목표다! 장갑차량은 지나가게 둬라! 파시스트 기갑은 우리가 상대할 수 없다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/player/01"
+msgid "함께하겠다, 동지. 먼저 독일군이 무슨 일인지 알아채기 전에 여기서 빠져나가야 한다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/player/02"
+msgid "그만둬라, 동지! 우린 배신하지 않았다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/player/03"
+msgid "방어 위치를 잡아라! 마지막 한 사람까지 이곳을 지킨다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/player/part41"
+msgid "무슨 일입니까?"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/player/part42"
+msgid "우리 분대가 최대한 많이 매복 공격하겠다! 독일군 움직임을 계속 알려 달라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/narrator/player/secret"
+msgid "아하, 이게 뭐지? 뭔가 방법이 있겠는데..."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/outro_completed"
+msgid "비텝스크 관문은 전쟁에서 중요한 역할을 하게 된다. 파르티잔이 보급선을 더 쉽게 교란할 수 있게 해 주었다. 쿠르스크 전투 같은 큰 전투도 파르티잔의 영향을 받았다. 독일 보급은 다시는 안전하지 못했다. 많은 파르티잔이 자기 지역이 해방된 뒤 붉은 군대에 재입대했고, 그 해방에는 그들 자신이 큰 몫을 했다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/outro_failed"
+msgid "독일의 공격이 성공했으니 노출된 기지는 더 쓸 수 없다. 모든 장비와 보급품을 수십 킬로미터에 걸친 늪지를 통해 날라야 한다. 이 전투에서 졌으니 집을 떠나야 하는 주민들과 보급품도 나눠야 한다. 한동안 독일 증원을 막지 못할 것이다. 이 전투 때문에 전선에서 또 하나를 잃지 않았기만을 바랄 뿐이다."
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/01-rus/1942_10_obsich/part4_progress"
+msgid "보급 트럭 10대 중 %1%대 무력화."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/place"
+msgid "포로 분대"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/story"
+msgid "소련군 포로 중 가치 있는 이들의 호송대가 심문과 수용소 수감을 위해 오가고 있다. 비 오는 가을이라 쓸 만한 길은 몇 개 남지 않았다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/task1"
+msgid "파르티잔을 도와 독일 호송대를 제거하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/task2"
+msgid "파르티잔을 따라 그들의 지하 은신처로 가라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/task3"
+msgid "야영지를 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/task4"
+msgid "옵시치에서 독일군을 몰아내라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/task5"
+msgid "적 호송대를 제거하라. 보급 차량이 하나도 통과하게 두지 마라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/taskoff"
+msgid "독일군 고위 장교를 사살하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/tasksec1"
+msgid "비밀 목표"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/tasksec1c"
+msgid "버려진 독일 트럭을 찾아라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1942_10_obsich/timer"
+msgid "다음 호송대 도착까지:"
+msgstr ""

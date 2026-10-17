@@ -1,0 +1,130 @@
+# source: vanilla interface/text/mission/single/01-rus/1943_11_kiev.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1943_11_kiev)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/date"
+msgid "November 7th, 1943 · Fastiv, Kyiv oblast"
+msgstr "1943년 11월 7일 · 키이우주 파스티우"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/name"
+msgid "Street to Street <c(a655af)>[DLC]</c>"
+msgstr "거리마다 싸운다 <c(a655af)>[DLC]</c>"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/name_big"
+msgid "Street to Street"
+msgstr "거리마다 싸운다"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/01"
+msgid "Comrades, welcome to Fastiv! The city is crawling with Fascists behind every window, our job is to liberate the city by force!"
+msgstr "동지들, 파스티우에 온 걸 환영한다! 창문마다 파시스트가 득실거린다. 우리 임무는 무력으로 이 도시를 해방하는 것이다!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/02"
+msgid "Show no mercy! Drive the invaders from our city, but be cautious at every corner. The enemy is well prepared for our arrival."
+msgstr "자비는 없다! 침략자들을 우리 도시에서 몰아내라. 다만 모퉁이마다 조심해라. 적은 우리 도착에 대비해 잘 준비하고 있다."
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/03"
+msgid "The enemy has barricaded the streets. Some of those rubble piles are too damn high to climb or to blow up. You will have to go around them to get to the city centre!"
+msgstr "적이 거리를 바리케이드로 막았다. 일부 잔해 더미는 올라가거나 폭파하기엔 너무 높다. 도시 중심으로 가려면 우회해야 한다!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/04"
+msgid "Reinforcements are at your disposal. Crush the enemy, Comrade. There is no room for defeat."
+msgstr "증원을 마음껏 쓸 수 있다. 적을 짓밟아라, 동지. 패배할 여지는 없다."
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/05"
+msgid "Tiger tank, coming from the east!"
+msgstr "티거 전차, 동쪽에서 온다!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/06"
+msgid "Watch out! There's an anti-tank gun at the end of this street!"
+msgstr "조심해라! 이 거리 끝에 대전차포가 있다!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/07"
+msgid "Great work, Soldiers!"
+msgstr "잘했다, 병사들!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/08"
+msgid "Enemy heavy tank destroyer spotted on the southeast!"
+msgstr "남동쪽에서 적 중구축전차 발견!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/narrator/officer/09"
+msgid "An enemy tank is approaching from the south!"
+msgstr "적 전차가 남쪽에서 접근 중!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/outro_completed"
+msgid "Congratulations on a job well done! Your veterancy really showed in this battle. It won’t be long until we reach the Polish border, and the liberation of the entire Soviet Union is a matter of time. A favorable report, describing how your actions led to victory, will be sent to HQ. Great job!"
+msgstr "수고했다, 축하한다! 이번 전투에서 자네의 노련함이 제대로 드러났다. 머지않아 폴란드 국경에 닿을 것이고, 소련 전역의 해방은 시간문제다. 자네의 행동이 어떻게 승리로 이어졌는지 설명하는 호의적인 보고서를 본부에 보내겠다. 훌륭하다!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/outro_failed"
+msgid "That is rather unexpected to say the least! Did you really just allow these exhausted and starving Germans to mess up your attack? We need more resolve and aggression for the next attempt. You should try a different approach. Go back out there and try again."
+msgstr "적어도 예상 밖이군! 지치고 굶주린 독일군에게 정말로 공격을 망치게 놔뒀나? 다음 시도에는 더 큰 결의와 공격성이 필요하다. 다른 접근법을 시도해 봐라. 돌아가서 다시 해 봐라."
+
+msgctxt "mission/single/01-rus/1943_11_kiev/place"
+msgid "3rd Guards Tank Army (1st Ukranian Front)"
+msgstr "제3근위전차군 (제1우크라이나 전선)"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_assaultsapper"
+msgid "Assault Sappers"
+msgstr "돌격 공병"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_bm37"
+msgid "82mm BM-37"
+msgstr "82mm BM-37"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_kv142"
+msgid "KV-1 M1942"
+msgstr "KV-1 M1942"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_kv8"
+msgid "KV-8 (flame)"
+msgstr "KV-8 (화염)"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_medic"
+msgid "Medic"
+msgstr "위생병"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_su152"
+msgid "SU-152"
+msgstr "SU-152"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_supply"
+msgid "Gaz-AAA Supply"
+msgstr "Gaz-AAA 보급"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_t34"
+msgid "Shielded T-34"
+msgstr "Shielded T-34"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_t50"
+msgid "T-60"
+msgstr "T-60"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_tankmen"
+msgid "Tankmen"
+msgstr "전차병"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/reinf_zis3"
+msgid "76mm Zis-3"
+msgstr "76mm Zis-3"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/story"
+msgid "After a last push on the east of the Dnieper, the Soviets have now regained all territory east of the river. The Germans have decided to construct a defense line on the west bank. Even before the work is finished, the Soviets are already across the Dnieper at Lyutezh, north of Kiev. From there, the Soviets break out to the south in a wide sweep west of Kiev. Brushing any opposition aside, the third Guards tank army leads the way toward Fastiv, a railway node south of Kiev.\n\nIn this mission, you will need to use the lessons you learned in Stalingrad to win. Most roads to the center seem to have been blocked thoroughly, so you will need to flank the enemy if your troops are to reach the final objective, which is to eliminate the enemy’s core position in this part of the town.\n\nGood luck!"
+msgstr "드니프로강 동쪽에서의 마지막 밀어붙이기 끝에 소련군은 강 동쪽의 전 영토를 되찾았다. 독일군은 서안에 방어선을 구축하기로 했다. 공사가 끝나기도 전에 소련군은 키이우 북쪽 류테시에서 이미 드니프로강을 건넜다. 거기서 소련군은 키이우 서쪽을 크게 돌아 남쪽으로 돌파한다. 모든 저항을 쓸어버리며 제3근위전차군이 키이우 남쪽의 철도 요충지 파스티우로 길을 연다.\n\n이번 임무에서는 스탈린그라드에서 배운 교훈을 활용해 승리해야 한다. 중심으로 가는 대부분의 도로는 철저히 막힌 듯하니, 병력이 최종 목표, 즉 이 도시 구역에 있는 적의 핵심 거점을 제거하려면 적을 측면에서 공격해야 한다.\n\n행운을 빈다!"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/task1"
+msgid "Drive the enemy out of the city"
+msgstr "적을 도시에서 몰아내라"
+
+msgctxt "mission/single/01-rus/1943_11_kiev/task2"
+msgid "Secure the food supplies"
+msgstr "식량 보급품을 확보하라"

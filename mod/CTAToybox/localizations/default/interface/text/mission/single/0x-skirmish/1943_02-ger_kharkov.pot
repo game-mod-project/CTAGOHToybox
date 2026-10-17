@@ -1,0 +1,117 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1943_02-ger_kharkov)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/name"
+msgid "하르코프"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/name_big"
+msgid "하르코프"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/story"
+msgid "제3차 하르코프 전투 - 반격. 하르코프를 되찾아야 한다. 실패하면 전선에 큰 틈이 생긴다.\n\n목표:\n - 신속한 반격으로 도시를 탈환하라.\n - 버려진 적 물자를 모두 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/place"
+msgid "하르코프 서쪽"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/date"
+msgid "1943년 2월"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_completed"
+msgid "축하한다! 반격이 훌륭하게 이루어졌다. 전선이 다시 막혔다! 오늘 끔찍한 수의 병사를 잃었다. 그들을 위해서라도 하르코프를 어떻게든 지켜야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_failed"
+msgid "실패였다. 적이 압도적인 수적 우위를 누렸으니 놀랄 일은 아닐지도 모른다. 남은 병력은 붉은 군대에 바짝 쫓기며 혼란 속에 퇴각할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/outro_failed_hq"
+msgid "임무 실패 - 적이 본부를 점령했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_hq"
+msgid "야전 본부를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/mission_attack"
+msgid "하르코프 외곽을 점령하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/flag_capture_status"
+msgid "아군이 소련군 진지 %1%/7곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start0"
+msgid "전장에 온 것을 환영한다, Major! 이곳이 우리 야전 본부다. 반드시 지켜야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start1"
+msgid "전속력으로 공격해야 한다! 기갑의 기동력으로 기습을 달성하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start2"
+msgid "소련군은 전차를 많이 배치했다. 돌진하기 전에 반드시 먼저 발견하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/narrator_start3"
+msgid "목표 확보를 시작하라. 그동안 투입할 증원을 더 준비하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/allied_enemy_near_hq"
+msgid "동무들! 소련군이 우리 야전 본부에 접근했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/player_enemy_near_hq"
+msgid "지휘소를 사수해야 한다! 항복이란 없다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1943_02-ger_kharkov/hq_bonus"
+msgid "Major! 이제 공습을 요청할 수 있다. ZG 1이 지원 가능하다."
+msgstr ""

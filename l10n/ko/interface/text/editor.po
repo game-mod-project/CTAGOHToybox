@@ -1,0 +1,430 @@
+# source: vanilla interface/text/editor.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms (editor)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "missioneditor/zone"
+msgid "zone [5]"
+msgstr "구역 [5]"
+
+msgctxt "anchormanager/evaluate"
+msgid "Evaluate"
+msgstr "평가"
+
+msgctxt "anchormanager/add"
+msgid "Add"
+msgstr "추가"
+
+msgctxt "missioneditor/waypoint"
+msgid "waypoint [4]"
+msgstr "경유점 [4]"
+
+msgctxt "anchormanager/radius"
+msgid "Radius..."
+msgstr "반경..."
+
+msgctxt "anchormanager/anchorradius"
+msgid "Enter anchor's radius"
+msgstr "앵커의 반경을 입력하십시오"
+
+msgctxt "missioneditor/squad"
+msgid "squad [3]"
+msgstr "분대 [3]"
+
+msgctxt "missioneditor/unload"
+msgid " Unload "
+msgstr " 하차 "
+
+msgctxt "anchormanager/gridcellsize"
+msgid "Enter anchor's grid cell size"
+msgstr "앵커의 격자 칸 크기를 입력하십시오"
+
+msgctxt "landmanager/terrain"
+msgid "Terrains"
+msgstr "지형"
+
+msgctxt "landmanager/blue"
+msgid "B:"
+msgstr "B:"
+
+msgctxt "anchormanager/seed"
+msgid "Seed..."
+msgstr "시드..."
+
+msgctxt "anchormanager/show"
+msgid "Show"
+msgstr "표시"
+
+msgctxt "anchormanager/update"
+msgid "Update"
+msgstr "갱신"
+
+msgctxt "finddialog/actor"
+msgid "Actor uid:"
+msgstr "액터 uid:"
+
+msgctxt "landmanager/remove"
+msgid "Remove"
+msgstr "제거"
+
+msgctxt "landmanager/ocean"
+msgid "Ocean"
+msgstr "바다"
+
+#, boost-format
+msgctxt "missioneditor/save_mission_exist"
+msgid "Mission '%1%' already exist. Overwrite ?"
+msgstr "임무 '%1%'이(가) 이미 있습니다. 덮어쓰겠습니까?"
+
+msgctxt "finddialog/entity"
+msgid "Entity id:"
+msgstr "엔티티 id:"
+
+#, boost-format
+msgctxt "mapeditor/save_map"
+msgid "Save map '%1%' as:"
+msgstr "지도 '%1%'을(를) 다음 이름으로 저장:"
+
+msgctxt "mapeditor/clip"
+msgid "clip [3]"
+msgstr "클립 [3]"
+
+msgctxt "finddialog/find"
+msgid "Find"
+msgstr "찾기"
+
+msgctxt "mapeditor/land"
+msgid "land [2]"
+msgstr "육지 [2]"
+
+msgctxt "landmanager/fill"
+msgid "Fill"
+msgstr "채우기"
+
+msgctxt "finddialog/title"
+msgid "Find"
+msgstr "찾기"
+
+msgctxt "landmanager/add"
+msgid "Add"
+msgstr "추가"
+
+msgctxt "finddialog/waypoint"
+msgid "Waypoint uid:"
+msgstr "경유점 uid:"
+
+msgctxt "mapeditor/mesh_group"
+msgid "mesh group [5]"
+msgstr "메시 그룹 [5]"
+
+msgctxt "mapeditor/choose"
+msgid "Choose the map"
+msgstr "지도 선택"
+
+msgctxt "landmanager/tesselation"
+msgid "Tesselation"
+msgstr "테셀레이션"
+
+msgctxt "landmanager/create"
+msgid "Create"
+msgstr "생성"
+
+msgctxt "missioneditor/simulate_on"
+msgid " <s(8)c(00ff00)>START "
+msgstr " <s(8)c(00ff00)>시작 "
+
+msgctxt "landmanager/green"
+msgid "G:"
+msgstr "G:"
+
+msgctxt "mapeditor/mission_lost"
+msgid "Mission data will be lost. Are you sure ?"
+msgstr "임무 데이터가 사라집니다. 계속하겠습니까?"
+
+msgctxt "mapeditor/entity"
+msgid "entity [1]"
+msgstr "엔티티 [1]"
+
+msgctxt "mapeditor/game"
+msgid "-GAME-"
+msgstr "-게임-"
+
+msgctxt "landmanager/red"
+msgid "R:"
+msgstr "R:"
+
+msgctxt "missioneditor/camera"
+msgid "camera [7]"
+msgstr "카메라 [7]"
+
+msgctxt "landmanager/save"
+msgid "Save"
+msgstr "저장"
+
+msgctxt "landmanager/sharp"
+msgid "Sharp"
+msgstr "선명"
+
+msgctxt "landmanager/soft"
+msgid "Soft"
+msgstr "부드러움"
+
+msgctxt "mapeditor/map"
+msgid "MAP : "
+msgstr "지도 : "
+
+msgctxt "landmanager/color"
+msgid "Colors"
+msgstr "색상"
+
+#, c-format
+msgctxt "zonemanager/zonename_already_used"
+msgid "Zone name '%s' already used"
+msgstr "구역 이름 '%s'은(는) 이미 사용 중입니다"
+
+msgctxt "landmanager/height"
+msgid "Heights"
+msgstr "높이"
+
+msgctxt "mapeditor/saveas"
+msgid "Save As..."
+msgstr "다른 이름으로 저장..."
+
+msgctxt "landmanager/polygon"
+msgid "Polygons"
+msgstr "폴리곤"
+
+msgctxt "landmanager/texture"
+msgid "Textures"
+msgstr "텍스처"
+
+#, boost-format
+msgctxt "mapeditor/save_map_exist"
+msgid "Map '%1%' already exist. Overwrite ?"
+msgstr "지도 '%1%'이(가) 이미 있습니다. 덮어쓰겠습니까?"
+
+msgctxt "landmanager/grass"
+msgid "Grass"
+msgstr "풀"
+
+msgctxt "mapeditor/edifice"
+msgid "edifice [4]"
+msgstr "건축물 [4]"
+
+msgctxt "missioneditor/as"
+msgid "' as:"
+msgstr "' 이름:"
+
+msgctxt "mapeditor/data_lost"
+msgid "All unsaved data will be lost. Are you sure ?"
+msgstr "저장하지 않은 데이터가 모두 사라집니다. 계속하겠습니까?"
+
+msgctxt "mapeditor/anchor"
+msgid "anchor"
+msgstr "앵커"
+
+msgctxt "mapeditor/load"
+msgid "Load..."
+msgstr "불러오기..."
+
+msgctxt "mapeditor/reload"
+msgid "Reload"
+msgstr "다시 불러오기"
+
+msgctxt "missioneditor/game"
+msgid "-GAME-"
+msgstr "-게임-"
+
+msgctxt "mapeditor/new"
+msgid "New"
+msgstr "새로 만들기"
+
+msgctxt "mapeditor/checkout"
+msgid "Check Out"
+msgstr "체크아웃"
+
+msgctxt "mapeditor/undocheckout"
+msgid "Undo check Out"
+msgstr "체크아웃 취소"
+
+msgctxt "mapeditor/save"
+msgid "Save"
+msgstr "저장"
+
+msgctxt "mapeditor/untitled"
+msgid "<<untitled>"
+msgstr "<<untitled>"
+
+msgctxt "missioneditor/view"
+msgid "view [1]"
+msgstr "보기 [1]"
+
+msgctxt "missioneditor/actor"
+msgid "entity [2]"
+msgstr "엔티티 [2]"
+
+msgctxt "missioneditor/trigger"
+msgid "trigger [6]"
+msgstr "트리거 [6]"
+
+msgctxt "missioneditor/cover"
+msgid "cover [8]"
+msgstr "엄폐물 [8]"
+
+msgctxt "missioneditor/environment"
+msgid "environment [9]"
+msgstr "환경 [9]"
+
+msgctxt "missioneditor/choose"
+msgid "Choose the mission"
+msgstr "임무 선택"
+
+msgctxt "missioneditor/exit"
+msgid " Exit "
+msgstr " 종료 "
+
+msgctxt "missioneditor/load"
+msgid " Load... "
+msgstr " 불러오기... "
+
+msgctxt "missioneditor/mission"
+msgid " MISSION : "
+msgstr " 임무 : "
+
+msgctxt "missioneditor/no_script"
+msgid "no script"
+msgstr "스크립트 없음"
+
+msgctxt "missioneditor/path"
+msgid "path"
+msgstr "경로"
+
+msgctxt "missioneditor/player"
+msgid "player"
+msgstr "플레이어"
+
+msgctxt "missioneditor/reload"
+msgid " Reload "
+msgstr " 다시 불러오기 "
+
+msgctxt "missioneditor/checkout"
+msgid "Check Out"
+msgstr "체크아웃"
+
+msgctxt "missioneditor/undocheckout"
+msgid "Undo check Out"
+msgstr "체크아웃 취소"
+
+msgctxt "missioneditor/save"
+msgid " Save "
+msgstr " 저장 "
+
+msgctxt "missioneditor/save_mission"
+msgid "Save mission '"
+msgstr "임무 '"
+
+msgctxt "inventorybrowser/ammo"
+msgid "ammo"
+msgstr "탄약"
+
+msgctxt "missioneditor/saveas"
+msgid " Save As... "
+msgstr " 다른 이름으로 저장... "
+
+msgctxt "missioneditor/script_name"
+msgid "Script name: "
+msgstr "스크립트 이름: "
+
+msgctxt "zonemanager/globalwpangle"
+msgid "Angle:"
+msgstr "각도:"
+
+msgctxt "missioneditor/simulate_off"
+msgid " <s(8)c(00ffff)>FINISH "
+msgstr " <s(8)c(00ffff)>종료 "
+
+msgctxt "missioneditor/untitled"
+msgid "<<untitled>"
+msgstr "<<untitled>"
+
+msgctxt "missioneditor/confirm_globals_reload"
+msgid "Global options were changed. Reload now to apply changes?"
+msgstr "전역 옵션이 변경되었습니다. 변경 사항을 적용하려면 지금 다시 불러오겠습니까?"
+
+msgctxt "scenecommon/finish"
+msgid "FINISH"
+msgstr "종료"
+
+msgctxt "scenecommon/simulate"
+msgid "SIMULATE"
+msgstr "시뮬레이션"
+
+msgctxt "tagdialog/add"
+msgid "Add"
+msgstr "추가"
+
+msgctxt "tagdialog/remove"
+msgid "Remove"
+msgstr "제거"
+
+msgctxt "tagdialog/tags"
+msgid "Tags of selection"
+msgstr "선택 항목의 태그"
+
+msgctxt "zonemanager/add"
+msgid "Add"
+msgstr "추가"
+
+msgctxt "zonemanager/current"
+msgid "Current:"
+msgstr "현재:"
+
+msgctxt "zonemanager/delete"
+msgid "Delete"
+msgstr "DELETE"
+
+msgctxt "zonemanager/enter_zone"
+msgid "Enter zone name"
+msgstr "구역 이름을 입력하십시오"
+
+msgctxt "zonemanager/globalwplocation"
+msgid "Direct:"
+msgstr "직접:"
+
+msgctxt "zonemanager/globalwpname"
+msgid "Name:"
+msgstr "이름:"
+
+msgctxt "zonemanager/newcircle"
+msgid "New Circle"
+msgstr "새 원"
+
+msgctxt "zonemanager/newpoly"
+msgid "New Poly"
+msgstr "새 다각형"
+
+msgctxt "zonemanager/points"
+msgid "Points:"
+msgstr "점:"
+
+msgctxt "zonemanager/radius"
+msgid "Radius:"
+msgstr "반경:"
+
+msgctxt "inventorybrowser/all"
+msgid "all stuff"
+msgstr "모든 물품"
+
+msgctxt "inventorybrowser/weapon"
+msgid "weapon"
+msgstr "무기"

@@ -1,0 +1,299 @@
+# source: mod_2905667604 interface/text/desc/desc_squad_doctrines_jap_zace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Doctrine squads\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/squad/doctrine_se_ri"
+msgid "<c(B29557)>( I )</c> Type 97 Se-Ri"
+msgstr "<c(B29557)>( I )</c> Type 97 Se-Ri"
+
+msgctxt "desc/squad/doctrine_tank_mounted_variant_1"
+msgid "<c(B29557)>( I )</c> <c(E56042)>1.</c> Armored Recon Platoon (Type 94)"
+msgstr "<c(B29557)>( I )</c> <c(E56042)>1.</c> 기갑 정찰 소대 (Type 94)"
+
+msgctxt "desc/squad/doctrine_tank_mounted_variant_2"
+msgid "<c(B29557)>( I )</c> <c(E56042)>2.</c> Armored Recon Platoon (Type 97)"
+msgstr "<c(B29557)>( I )</c> <c(E56042)>2.</c> 기갑 정찰 소대 (Type 97)"
+
+msgctxt "desc/squad/doctrine_squad_type_5_at_late"
+msgid "<c(B29557)>( I )</c> AT Squad (Type 5 45mm)"
+msgstr "<c(B29557)>( I )</c> 대전차 분대 (Type 5 45mm)"
+
+msgctxt "desc/squad/doctrine_shi_ki"
+msgid "<c(B29557)>( I )</c> Type 97 Shi-Ki Command Tank"
+msgstr "<c(B29557)>( I )</c> Type 97 Shi-Ki 지휘 전차"
+
+msgctxt "desc/squad/doctrine_a6m3_late"
+msgid "<c(B29557)>( I )</c> A6M3 60Kg Bomb"
+msgstr "<c(B29557)>( I )</c> A6M3 60Kg 폭탄"
+
+msgctxt "desc/squad/doctrine_37mm_type_11_late"
+msgid "<c(B29557)>( I )</c> Type 11 37mm Infantry Gun"
+msgstr "<c(B29557)>( I )</c> Type 11 37mm 보병 Gun"
+
+msgctxt "desc/squad/doctrine_type_93_kokusan"
+msgid "<c(B29557)>( I )</c> Type 93 Kokusan"
+msgstr "<c(B29557)>( I )</c> Type 93 Kokusan"
+
+msgctxt "desc/squad/doctrine_ka_ho_late"
+msgid "<c(B29557)>( I )</c> Type 3 Ka-Ho"
+msgstr "<c(B29557)>( I )</c> Type 3 Ka-Ho"
+
+msgctxt "desc/squad/doctrine_so_ki"
+msgid "<c(B29557)>( I )</c> Type 98 So-Ki"
+msgstr "<c(B29557)>( I )</c> Type 98 So-Ki"
+
+msgctxt "desc/squad/doctrine_105mm_recoilless"
+msgid "<c(B29557)>( I )</c> Type 4 105mm Recoilless Rifle"
+msgstr "<c(B29557)>( I )</c> Type 4 105mm 무반동포"
+
+msgctxt "desc/squad/doctrine_squad_hmg_cav_late"
+msgid "<c(B29557)>( I )</c> Type 92 HMG with Cavalry Inf."
+msgstr "<c(B29557)>( I )</c> Type 92 중기관총 기병 보병 포함"
+
+msgctxt "desc/squad/doctrine_ho_i_late"
+msgid "<c(B29557)>( I )</c> Type 2 Ho-I"
+msgstr "<c(B29557)>( I )</c> Type 2 Ho-I"
+
+msgctxt "desc/squad/doctrine_type11_mortar"
+msgid "<c(B29557)>( I )</c> 2x Type 11 70mm Mortar"
+msgstr "<c(B29557)>( I )</c> 2x Type 11 70mm Mortar"
+
+msgctxt "desc/squad/doctrine_small_airstrike_jap_late"
+msgid "<c(B29557)>( I )</c> 50kg Bomb"
+msgstr "<c(B29557)>( I )</c> 50kg 폭탄"
+
+msgctxt "desc/squad/doctrine_50mm_type98_mortar"
+msgid "<c(B29557)>( I )</c> Type 98 50mm Demolition Mortar"
+msgstr "<c(B29557)>( I )</c> Type 98 50mm 폭파 박격포"
+
+msgctxt "desc/squad/doctrine_150mm_type97_mortar_short"
+msgid "<c(B29557)>( I )</c> <c(E56042)>1.</c> Type 97 Short 150mm Mortar"
+msgstr "<c(B29557)>( I )</c> <c(E56042)>1.</c> Type 97 Short 150mm Mortar"
+
+msgctxt "desc/squad/doctrine_150mm_type97_mortar_long"
+msgid "<c(B29557)>( I )</c> <c(E56042)>2.</c> Type 97 Long 150mm Mortar"
+msgstr "<c(B29557)>( I )</c> <c(E56042)>2.</c> Type 97 Long 150mm Mortar"
+
+msgctxt "desc/squad/doctrine_type97_snipers_late"
+msgid "<c(B29557)>( I )</c> Type 97 With Snipers"
+msgstr "<c(B29557)>( I )</c> Type 97 저격수 포함"
+
+msgctxt "desc/squad/doctrine_outdated_tanks"
+msgid "<c(B29557)>( I )</c> 3x Reserve Tanks"
+msgstr "<c(B29557)>( I )</c> 3x 예비 전차"
+
+msgctxt "desc/squad/doctrine_overvalwagen_aa_late"
+msgid "<c(B29557)>( I )</c> Captured AA Overvalwagen"
+msgstr "<c(B29557)>( I )</c> 노획 대공 Overvalwagen"
+
+msgctxt "desc/squad/doctrine_to_ku"
+msgid "<c(B29557)>( I )</c> Type 5 To-Ku"
+msgstr "<c(B29557)>( I )</c> Type 5 To-Ku"
+
+msgctxt "desc/squad/doctrine_overvalwagen"
+msgid "<c(B29557)>( I )</c> Overvalwagen With Sappers + Type 98 20mm AA"
+msgstr "<c(B29557)>( I )</c> Overvalwagen + 공병 + Type 98 20mm 대공포"
+
+msgctxt "desc/squad/doctrine_squad_manchurian_officer_late(jap)"
+msgid "<c(B29557)>( I )</c> Manchurian Officer"
+msgstr "<c(B29557)>( I )</c> 만주 장교"
+
+msgctxt "desc/squad/doctrine_captured_t8"
+msgid "<c(B29557)>( I )</c> Captured T12 GMC"
+msgstr "<c(B29557)>( I )</c> 노획 T12 GMC"
+
+msgctxt "desc/squad/doctrine_ford_3ton_itk40"
+msgid "<c(B29557)>( I )</c> Ford 3-Ton 20 ItK/40 Breda"
+msgstr "<c(B29557)>( I )</c> Ford 3-Ton 20 ItK/40 Breda"
+
+msgctxt "desc/squad/doctrine_t60_fin_late"
+msgid "<c(B29557)>( I )</c> T-60 FIN"
+msgstr "<c(B29557)>( I )</c> T-60 FIN"
+
+msgctxt "desc/squad/doctrine_pz38tna_b"
+msgid "<c(B29557)>( I )</c> Pz.38(t) n.A."
+msgstr "<c(B29557)>( I )</c> Pz.38(t) n.A."
+
+msgctxt "desc/squad/doctrine_nbfz"
+msgid "<c(B29557)>( I )</c> Neubaufahrzeug"
+msgstr "<c(B29557)>( I )</c> Neubaufahrzeug"
+
+msgctxt "desc/squad/doctrine_sdkfz_251_21"
+msgid "<c(B29557)>( I )</c> Sd.Kfz.251/10"
+msgstr "<c(B29557)>( I )</c> Sd.Kfz.251/10"
+
+msgctxt "desc/squad/doctrine_chi_yu"
+msgid "<c(B29557)>( I )</c> Type 97 Chi-Yu"
+msgstr "<c(B29557)>( I )</c> Type 97 Chi-Yu"
+
+msgctxt "desc/squad/doctrine_ki_57"
+msgid "<c(B29557)>( II )</c> Mitsubishi Ki-57 'Topsy' Paratrooper"
+msgstr "<c(B29557)>( II )</c> Mitsubishi Ki-57 'Topsy' 공수병"
+
+msgctxt "desc/squad/doctrine_160mm_mt_13_mortar"
+msgid "<c(B29557)>( II )</c> 160mm MT-13 Mortar"
+msgstr "<c(B29557)>( II )</c> 160mm MT-13 Mortar"
+
+msgctxt "desc/squad/doctrine_squad_takasago"
+msgid "<c(B29557)>( II )</c> Tokumu Kikan"
+msgstr "<c(B29557)>( II )</c> Tokumu Kikan"
+
+msgctxt "desc/squad/doctrine_chi_ha_sg_lg"
+msgid "<c(B29557)>( II )</c> Type 97 Chi-Ha LG"
+msgstr "<c(B29557)>( II )</c> Type 97 Chi-Ha LG"
+
+msgctxt "desc/squad/doctrine_chi_nu_kai"
+msgid "<c(B29557)>( II )</c> Type 3 Chi-Nu Kai"
+msgstr "<c(B29557)>( II )</c> Type 3 Chi-Nu Kai"
+
+msgctxt "desc/squad/doctrine_ho_ro"
+msgid "<c(B29557)>( II )</c> Type 4 Ho-Ro"
+msgstr "<c(B29557)>( II )</c> Type 4 Ho-Ro"
+
+msgctxt "desc/squad/doctrine_squad_jap_signaller_late"
+msgid "<c(B29557)>( II )</c> Artillery Signaller"
+msgstr "<c(B29557)>( II )</c> 포병 통신병"
+
+msgctxt "desc/squad/doctrine_20cm_type_4_mortar"
+msgid "<c(B29557)>( II )</c> 20cm Type 4 Rocket Mortar"
+msgstr "<c(B29557)>( II )</c> 20cm Type 4 로켓 박격포"
+
+msgctxt "desc/squad/doctrine_75mm_type_88_aa_late"
+msgid "<c(B29557)>( II )</c> Type 88 75mm AA"
+msgstr "<c(B29557)>( II )</c> Type 88 75mm 대공"
+
+msgctxt "desc/squad/doctrine_105mm_type_14_aa"
+msgid "<c(B29557)>( II )</c> Type 14 105mm AA"
+msgstr "<c(B29557)>( II )</c> Type 14 105mm 대공"
+
+msgctxt "desc/squad/doctrine_75mm_m_37_jap_late"
+msgid "<c(B29557)>( II )</c> Type 4 75mm AA"
+msgstr "<c(B29557)>( II )</c> Type 4 75mm 대공"
+
+msgctxt "desc/squad/doctrine_na_to"
+msgid "<c(B29557)>( II )</c> Type 5 Na-To"
+msgstr "<c(B29557)>( II )</c> Type 5 Na-To"
+
+msgctxt "desc/squad/doctrine_ho_to"
+msgid "<c(B29557)>( II )</c> Type 4 Ho-To"
+msgstr "<c(B29557)>( II )</c> Type 4 Ho-To"
+
+msgctxt "desc/squad/doctrine_ki46_late"
+msgid "<c(B29557)>( II )</c> Ki-46 II Recon Plane"
+msgstr "<c(B29557)>( II )</c> Ki-46 II 정찰기"
+
+msgctxt "desc/squad/doctrine_type38_120mm_late"
+msgid "<c(B29557)>( II )</c> Type 38 120mm"
+msgstr "<c(B29557)>( II )</c> Type 38 120mm"
+
+msgctxt "desc/squad/doctrine_75mm_type_38_kai"
+msgid "<c(B29557)>( II )</c> Type 38 75mm Improved"
+msgstr "<c(B29557)>( II )</c> Type 38 75mm 개량형"
+
+msgctxt "desc/squad/doctrine_ro_go_12cm"
+msgid "<c(B29557)>( II )</c> Ro-Go Exp. (12cm)"
+msgstr "<c(B29557)>( II )</c> Ro-Go 시제 (12cm)"
+
+msgctxt "desc/squad/doctrine_te_ke_gas"
+msgid "<c(B29557)>( I )</c> Type 97 Te-Ke Prot. + Gas Trailer"
+msgstr "<c(B29557)>( I )</c> Type 97 Te-Ke Prot. + 가스 트레일러"
+
+msgctxt "desc/squad/doctrine_105mm_experimental_at_gun"
+msgid "<c(B29557)>( III )</c> 105mm Experimental AT Gun"
+msgstr "<c(B29557)>( III )</c> 105mm 시제 대전차포"
+
+msgctxt "desc/squad/doctrine_type3_rocket_booster"
+msgid "<c(B29557)>( III )</c> Type 3 rocket booster"
+msgstr "<c(B29557)>( III )</c> Type 3 로켓 부스터"
+
+msgctxt "desc/squad/doctrine_100mm_type99_late"
+msgid "<c(B29557)>( III )</c> Type 99 10cm"
+msgstr "<c(B29557)>( III )</c> Type 99 10cm"
+
+msgctxt "desc/squad/doctrine_big_airstrike_jap_late"
+msgid "<c(B29557)>( III )</c> 250kg Bomb"
+msgstr "<c(B29557)>( III )</c> 250kg 폭탄"
+
+msgctxt "desc/squad/doctrine_squad_jap_signaller_yamato_late"
+msgid "<c(B29557)>( III )</c> 460mm Artillery Signaller 'Yamato'"
+msgstr "<c(B29557)>( III )</c> 460mm 포병 통신병 'Yamato'"
+
+msgctxt "desc/squad/doctrine_b5n2_late"
+msgid "<c(B29557)>( III )</c> B5N2 250Kg Bomb"
+msgstr "<c(B29557)>( III )</c> B5N2 250Kg 폭탄"
+
+msgctxt "desc/squad/doctrine_rocket_truck_late"
+msgid "<c(B29557)>( IV )</c> Type 94 (Rocket)"
+msgstr "<c(B29557)>( IV )</c> Type 94 (Rocket)"
+
+msgctxt "desc/squad/doctrine_105mm_type92_late"
+msgid "<c(B29557)>( III )</c> Type 92 10cm"
+msgstr "<c(B29557)>( III )</c> Type 92 10cm"
+
+msgctxt "desc/squad/doctrine_ki_148_late"
+msgid "<c(B29557)>( III )</c> Ki-148 I-Go Model 1B"
+msgstr "<c(B29557)>( III )</c> Ki-148 I-Go Model 1B"
+
+msgctxt "desc/squad/doctrine_320mm_spigt_mortar"
+msgid "<c(B29557)>( III )</c> Type 98 Spigot Mortar"
+msgstr "<c(B29557)>( III )</c> Type 98 Spigot Mortar"
+
+msgctxt "desc/squad/doctrine_ho_ni_ii"
+msgid "<c(B29557)>( III )</c> Type 1 Ho-Ni II"
+msgstr "<c(B29557)>( III )</c> Type 1 Ho-Ni II"
+
+msgctxt "desc/squad/doctrine_45cm_japan_rocket"
+msgid "<c(B29557)>( IV )</c> Type 4 45cm Naval Rocket"
+msgstr "<c(B29557)>( IV )</c> Type 4 45cm 해군 로켓"
+
+msgctxt "desc/squad/doctrine_sfh18_jap_late"
+msgid "<c(B29557)>( IV )</c> 15cm sFH 18"
+msgstr "<c(B29557)>( IV )</c> 15cm sFH 18"
+
+msgctxt "desc/squad/doctrine_15cm_type_96"
+msgid "<c(B29557)>( IV )</c> Type 96 150mm"
+msgstr "<c(B29557)>( IV )</c> Type 96 150mm"
+
+msgctxt "desc/squad/doctrine_kikka_late"
+msgid "<c(B29557)>( IV )</c> Kikka 500kg Bomb"
+msgstr "<c(B29557)>( IV )</c> Kikka 500kg 폭탄"
+
+msgctxt "desc/squad/doctrine_15cm_type_89"
+msgid "<c(B29557)>( IV )</c> Type 89 15cm"
+msgstr "<c(B29557)>( IV )</c> Type 89 15cm"
+
+msgctxt "desc/squad/doctrine_o_i"
+msgid "<c(B29557)>( IV )</c> Type 5 O-I"
+msgstr "<c(B29557)>( IV )</c> Type 5 O-I"
+
+msgctxt "desc/squad/doctrine_tiger1e_jap"
+msgid "<c(B29557)>( IV )</c> Heavy Tank No.6"
+msgstr "<c(B29557)>( IV )</c> 중전차 No.6"
+
+msgctxt "desc/squad/doctrine_type_21_rocket_bomb"
+msgid "<c(B29557)>( IV )</c> Type 21 Rocket Booster"
+msgstr "<c(B29557)>( IV )</c> Type 21 로켓 부스터"
+
+msgctxt "desc/squad/doctrine_ha_to"
+msgid "<c(B29557)>( V )</c> Type 4 Ha-To"
+msgstr "<c(B29557)>( V )</c> Type 4 Ha-To"
+
+msgctxt "desc/squad/doctrine_ho_ri"
+msgid "<c(B29557)>( V )</c> Type 5 Ho-Ri"
+msgstr "<c(B29557)>( V )</c> Type 5 Ho-Ri"
+
+msgctxt "desc/squad/doctrine_chi_se"
+msgid "<c(B29557)>( V )</c> Type 6 Chi-Se"
+msgstr "<c(B29557)>( V )</c> Type 6 Chi-Se"

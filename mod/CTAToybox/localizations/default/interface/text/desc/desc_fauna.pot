@@ -1,0 +1,85 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Fauna\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/fauna/camel"
+msgid "낙타"
+msgstr ""
+
+msgctxt "desc/fauna/carp"
+msgid "잉어"
+msgstr ""
+
+msgctxt "desc/fauna/chicken"
+msgid "닭"
+msgstr ""
+
+msgctxt "desc/fauna/cow"
+msgid "소"
+msgstr ""
+
+msgctxt "desc/fauna/crab"
+msgid "게"
+msgstr ""
+
+msgctxt "desc/fauna/dog"
+msgid "개"
+msgstr ""
+
+msgctxt "desc/fauna/donkey"
+msgid "당나귀"
+msgstr ""
+
+msgctxt "desc/fauna/fish"
+msgid "물고기"
+msgstr ""
+
+msgctxt "desc/fauna/fly"
+msgid "파리"
+msgstr ""
+
+msgctxt "desc/fauna/goat"
+msgid "염소"
+msgstr ""
+
+msgctxt "desc/fauna/hawk"
+msgid "매"
+msgstr ""
+
+msgctxt "desc/fauna/horse"
+msgid "말"
+msgstr ""
+
+msgctxt "desc/fauna/pig"
+msgid "돼지"
+msgstr ""
+
+msgctxt "desc/fauna/raven"
+msgid "큰까마귀"
+msgstr ""
+
+msgctxt "desc/fauna/red_deer_hind"
+msgid "붉은사슴 암컷"
+msgstr ""
+
+msgctxt "desc/fauna/red_deer_stag"
+msgid "붉은사슴 수컷"
+msgstr ""
+
+msgctxt "desc/fauna/seagull"
+msgid "갈매기"
+msgstr ""
+
+msgctxt "desc/fauna/sheep"
+msgid "양"
+msgstr ""

@@ -1,0 +1,394 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell American MP soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/mp/can/late/antitank_piat"
+msgid "대전차 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/antitank_piat_asst"
+msgid "대전차 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/artilleryman"
+msgid "왕립 포병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/bat_2ic"
+msgid "대대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/bat_com"
+msgid "대대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/bat_signalman"
+msgid "대대 통신병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/batman"
+msgid "당번병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/batman_smg"
+msgid "당번병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/coy_2ic"
+msgid "중대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/coy_com"
+msgid "중대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/coy_sgt_maj"
+msgid "중대 Sergeant Major [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/coy_signalman"
+msgid "중대 통신병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/crew"
+msgid "승무원 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_at_piat"
+msgid "방어 대전차 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_at_piat_asst"
+msgid "방어 대전차 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_mg"
+msgid "방어 기관총 사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_mg_asst"
+msgid "방어 기관총 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_rifle"
+msgid "방어 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_rifle_band"
+msgid "방어 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_sec_2ic"
+msgid "방어 분대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_sec_com"
+msgid "방어 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/def_sec_com_sgt"
+msgid "방어 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/detach_com"
+msgid "분견대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/driver"
+msgid "운전병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/driver_smg"
+msgid "운전병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/medic"
+msgid "위생병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mg"
+msgid "기관총 사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mg_asst"
+msgid "기관총 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mg_crew"
+msgid "기관총 승무원 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_mg"
+msgid "차량화 기관총 사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_mg_asst"
+msgid "차량화 기관총 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_piat"
+msgid "차량화 대전차 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_piat_asst"
+msgid "차량화 대전차 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_rifle"
+msgid "차량화 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_rifle_band"
+msgid "차량화 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_rifle_sniper"
+msgid "차량화 저격수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_detach_com_cpl"
+msgid "차량화 정찰 분견대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_detach_com_lcpl"
+msgid "차량화 정찰 분견대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_driver"
+msgid "차량화 정찰 운전병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_mg"
+msgid "차량화 정찰 기관총 사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_piat"
+msgid "차량화 정찰 대전차 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_rifle"
+msgid "차량화 정찰병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_scout_sec_com"
+msgid "차량화 정찰 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_sec_2ic"
+msgid "차량화 분대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/mot_sec_com"
+msgid "차량화 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_batman"
+msgid "제1낙하산 당번병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_coy_2ic"
+msgid "제1낙하산 중대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_coy_com"
+msgid "제1낙하산 중대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_coy_sgt_maj"
+msgid "제1낙하산 중대 Sergeant Major [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_crew"
+msgid "제1낙하산 승무원 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_medic"
+msgid "제1낙하산 위생병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_mg"
+msgid "제1낙하산 기관총 사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_mg_asst"
+msgid "제1낙하산 기관총 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_mg_asst_smg"
+msgid "제1낙하산 기관총 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_mortar"
+msgid "제1낙하산 박격포병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_mortar_asst"
+msgid "제1낙하산 박격포 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_piat"
+msgid "제1낙하산 대전차 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_piat_asst"
+msgid "제1낙하산 대전차 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_plt_com"
+msgid "제1낙하산 소대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_plt_sgt"
+msgid "제1낙하산 소대 Sergeant [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_rifle"
+msgid "제1낙하산 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_rifle_band"
+msgid "제1낙하산 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_sec_2ic"
+msgid "제1낙하산 분대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_sec_com"
+msgid "제1낙하산 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_sec_com_cpl"
+msgid "제1낙하산 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_sec_mortar"
+msgid "제1낙하산 분대 박격포병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_smg"
+msgid "제1낙하산 기관단총 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_smg_band"
+msgid "제1낙하산 기관단총 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/para_sniper"
+msgid "제1낙하산 저격수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/pio"
+msgid "공병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/pio_builder"
+msgid "공병 건설병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/pio_sec_com_cpl"
+msgid "공병 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/pio_sec_com_sgt"
+msgid "공병 분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/plt_batman"
+msgid "소대 당번병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/plt_com"
+msgid "소대 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/plt_sgt"
+msgid "소대 Sergeant [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rear_echelon_rifle"
+msgid "후방 지원 소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rear_echelon_smg"
+msgid "후방 지원 기관단총 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rifle"
+msgid "소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rifle_band"
+msgid "소총수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rifle_piat"
+msgid "대전차 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rifle_piat_asst"
+msgid "대전차 부사수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/rifle_sniper"
+msgid "저격수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/sec_2ic"
+msgid "분대 부지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/sec_com"
+msgid "분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/sec_com_sgt"
+msgid "분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/sec_subcom"
+msgid "소분대장 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/smg"
+msgid "기관단총 보병 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/sniper"
+msgid "저격수 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/tank_commander"
+msgid "전차 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/tank_commander_m1928"
+msgid "전차 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/tankman"
+msgid "전차 승무원 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/vehicle_com_cpl"
+msgid "차량 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/vehicle_com_sgt"
+msgid "차량 지휘관 [CA]"
+msgstr ""
+
+msgctxt "desc/human/mp/can/late/vehicle_crew"
+msgid "차량 승무원 [CA]"
+msgstr ""

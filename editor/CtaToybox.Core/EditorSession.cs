@@ -128,6 +128,7 @@ namespace CtaToybox.Core
             if (rebuilt) say("유닛 색인을 새로 만들었다: " + s.Index.Units.Count + "개");
             say("게임 현지화에서 이름을 읽는 중");
             s.Names = DisplayNames.FromGame(s.Settings, s.Plan);
+            if (repoRoot != null) s.Names.AddTranslations(Path.Combine(repoRoot, "l10n", "ko"));   // 한글 이름(원문 (한글))
             s.Plan.Warnings.AddRange(s.Names.Warnings);
             // 게임 설정 파일 이름표는 명령줄과 같이 설정 파일 옆의 settings/files.psv에서 읽는다
             s.settingFiles = SettingFiles.LoadNames(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(settingsPath)), "settings", "files.psv"));

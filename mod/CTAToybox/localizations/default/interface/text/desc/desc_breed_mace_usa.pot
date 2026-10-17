@@ -1,0 +1,535 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name (desc_breeds_usa)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+# Navy
+msgctxt "desc/human/mp/usa/late/navy_shore_rifle"
+msgid "해군 해안반 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_smg"
+msgid "해군 해안반 기관단총 보병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_sl"
+msgid "해군 해안반 분대장 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_mg"
+msgid "해군 해안반 기관총 사수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_mg_asst"
+msgid "해군 해안반 기관총 부사수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_shotgun"
+msgid "해군 해안반 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_rifle"
+msgid "해군 해안반 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_smg"
+msgid "해군 해안반 기관단총 보병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/landing_force_sl"
+msgid "해군 상륙부대 분대장 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/landing_force_sa"
+msgid "해군 상륙부대 부분대장 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/landing_force_bar"
+msgid "해군 상륙부대 자동소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/landing_force_rifle"
+msgid "해군 상륙부대 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/landing_force_mg"
+msgid "해군 상륙부대 기관총 사수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/def_marines_sl"
+msgid "방어 해병 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/def_marines_bar"
+msgid "방어 해병 자동소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/def_marines_bar_asst"
+msgid "방어 해병 자동소총수 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/def_marines_rifleman"
+msgid "방어 해병 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_sl1"
+msgid "NCB 분대장 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_sl2"
+msgid "NCB 분대장 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_sa1"
+msgid "NCB 부분대장 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_sa2"
+msgid "NCB 부분대장 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_bar"
+msgid "NCB 자동소총수 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_mechanic"
+msgid "NCB 정비병 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_engineer"
+msgid "NCB 공병 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_demoman"
+msgid "NCB 폭파병 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/seabees_rifleman"
+msgid "NCB 소총수 '시비스' [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_sl_thomp"
+msgid "해병 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_sl_garand"
+msgid "해병 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_sl_carbine_gren"
+msgid "해병 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_sa"
+msgid "해병 부분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_flamer"
+msgid "해병 화염방사병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_flamer_asst"
+msgid "해병 화염방사병 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_at_1"
+msgid "해병 대전차 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_at_2"
+msgid "해병 대전차 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_bar"
+msgid "해병 자동소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_bar_late"
+msgid "해병 자동소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_bar_asst"
+msgid "해병 자동소총수 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_bar_asst_late"
+msgid "해병 자동소총수 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_demoman"
+msgid "해병 폭파병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_gren"
+msgid "해병 소총 유탄병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_mortar_asst"
+msgid "해병 소총 유탄병 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_mortar"
+msgid "해병 소총 유탄병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_heavy_gren"
+msgid "해병 박격포병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_heavy_gren_ammo"
+msgid "해병 박격포 탄약수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_heavy_gren_asst"
+msgid "해병 박격포 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_lmg"
+msgid "해병 기관총 사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_lmg_ammo"
+msgid "해병 기관총 탄약수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_lmg_asst"
+msgid "해병 기관총 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_rifleman"
+msgid "해병 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_rifleman_late"
+msgid "해병 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/recon_marine_bar"
+msgid "해병 정찰 자동소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/recon_marine_rifleman"
+msgid "해병 정찰 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/recon_marine_sl_carbine"
+msgid "해병 정찰 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/recon_marine_smg"
+msgid "해병 정찰 기관단총 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nbb_sl_carbine"
+msgid "NBB 해안반 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nbb_sa"
+msgid "NBB 해안반 부분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nbb_rifleman"
+msgid "NBB 해안반 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nbb_mechanic"
+msgid "NBB 해안반 정비병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nbb_demoman"
+msgid "NBB 해안반 폭파병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nbb_smg"
+msgid "NBB 해안반 기관단총 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_sl_scout"
+msgid "공수해병 정찰 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_sa_scout"
+msgid "공수해병 정찰 부분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_rifleman_scout"
+msgid "공수해병 정찰 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_sl"
+msgid "공수해병 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_sa1"
+msgid "공수해병 부분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_sa2"
+msgid "공수해병 부분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_rifleman"
+msgid "공수해병 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_demoman"
+msgid "공수해병 폭파병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_smg"
+msgid "공수해병 기관단총 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_lmg"
+msgid "공수해병 기관총 사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/paramarine_lmg_asst"
+msgid "공수해병 기관총 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_sl"
+msgid "제4해병사단 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_bar"
+msgid "제4해병사단 자동소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_bar_asst"
+msgid "제4해병사단 자동소총수 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_smg"
+msgid "제4해병사단 기관단총 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_rifleman"
+msgid "제4해병사단 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_sl2"
+msgid "제4해병사단 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_at1"
+msgid "제4해병사단 대전차 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_at2"
+msgid "제4해병사단 대전차 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_flamer"
+msgid "제4해병사단 화염방사병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_flamer_asst"
+msgid "제4해병사단 화염방사병 부사수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/4th_marine_demoman"
+msgid "제4해병사단 폭파병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ncdu_sl"
+msgid "NCDU 분대장 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ncdu_sa"
+msgid "NCDU 부분대장 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ncdu_rifleman"
+msgid "NCDU 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ncdu_smg"
+msgid "NCDU 기관단총 보병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ncdu_demoman"
+msgid "NCDU 폭파병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_ampfh_rec_sl"
+msgid "해병 상륙 정찰 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_ampfh_rec_sa"
+msgid "해병 상륙 정찰 부분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_ampfh_rec_bar"
+msgid "해병 상륙 정찰 자동소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_ampfh_rec_rifleman"
+msgid "해병 상륙 정찰 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_ampfh_rec_at_1"
+msgid "해병 상륙 정찰 대전차 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_scout_sl"
+msgid "해병 정찰 분대장 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_scout_rifleman"
+msgid "해병 정찰 소총수 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_scout_smg"
+msgid "해병 정찰 기관단총 보병 [USMC]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/marine_scout_sniper"
+msgid "해병 정찰 저격수 [USMC]"
+msgstr ""
+
+# Army
+msgctxt "desc/human/mp/usa/late/tank_com_fury"
+msgid "전차 지휘관 'Fury' [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_vet"
+msgid "베테랑 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_vet"
+msgid "베테랑 전차 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_ace"
+msgid "에이스 전차 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_asst_m9a1"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_m20"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_asst_m20"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_builder_little_david"
+msgid "중무장 공병 Little David [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_little_david"
+msgid "중무장 공병 Little David [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_little_asst_david"
+msgid "중무장 공병 부사수 Little David [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/driver_arv"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/platoon_com_para_m22"
+msgid "소대 지휘관 통신병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/officer_2lt_para_m22"
+msgid "보급 장교 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_2lt_para_m22"
+msgid "낙하 장교 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/signaller_ai"
+msgid "포병 통신병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_m20"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_asst_m20"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_2lt_t1"
+msgid "Second Lieutenant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/platoon_com_t2"
+msgid "소대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/platoon_com_t3"
+msgid "소대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_company_com_t4"
+msgid "기갑 중대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_com_t1"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_com_t2"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_com_t3"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_com_t4"
+msgid "중대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_sec_com_binos"
+msgid "정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_sec_com_binos"
+msgid "정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_sec_com_binos"
+msgid "정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_com_binos"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_com_binos"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_com_binos"
+msgid "제6 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/cav_tl_binos"
+msgid "기병 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_recon_tl_binos"
+msgid "제82 공수 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_recon_tl_binos"
+msgid "제1 기갑 정찰 조장 [USAGF]"
+msgstr ""

@@ -1,0 +1,222 @@
+# source: vanilla interface/text/mission/single/02-ger-west/1944_06_saint_lo_hills.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_saint_lo_hills)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/date"
+msgid "June 10th-16th, 1944 · Hill 192, Normandy, France "
+msgstr "1944년 6월 10~16일 · 프랑스 노르망디, 192고지"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/hq"
+msgid "Warnings issued about US troops close to HQ:%1%/3"
+msgstr "본부 근처 미군에 대한 경고: %1%/3"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/lose_hq"
+msgid "The enemy entered the HQ and you failed to have them eliminated after three warnings."
+msgstr "적이 본부에 들어왔고 세 번의 경고에도 제거하지 못했다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/name"
+msgid "The Hills of Saint-Lô"
+msgstr "생로의 언덕"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/name_big"
+msgid "The Hills of Saint-Lô"
+msgstr "생로의 언덕"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/01"
+msgid "Fallschirmjäger! We are deployed here to assist the 352nd Infantry Division in holding the Americans back! We are severely outgunned, but well entrenched."
+msgstr "팔쉬름예거! 우리는 제352보병사단이 미군을 저지하도록 돕기 위해 이곳에 배치됐다! 화력은 크게 열세지만 참호는 잘 파 놨다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/02"
+msgid "We will defend this position until the rest of our motorised Kampfgruppe arrives."
+msgstr "기동 캄프그루페의 나머지가 도착할 때까지 이 진지를 방어한다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/03"
+msgid "Spread out, man the guns and mortars, and lay down obstacles to reinforce our defensive line!"
+msgstr "흩어져서 포와 박격포를 배치하고, 방어선을 강화할 장애물을 깔아라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/04"
+msgid "The enemy is expected to come from the northern slopes. We need to use the terrain to our advantage!"
+msgstr "적은 북쪽 사면에서 올 것으로 예상된다. 지형을 우리에게 유리하게 써야 한다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/05"
+msgid "The hedgerows make it hard for us to see the enemy approaching, but equally allow us to channel the enemy into kill zones."
+msgstr "산울타리 때문에 접근하는 적을 보기 어렵지만, 마찬가지로 적을 살상 지대로 몰아넣을 수 있다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/06"
+msgid "The enemy has dug out positions on the northern slope, stand your ground and get ready to harrass the enemy on the corner of every hedgerow!"
+msgstr "적이 북쪽 사면에 진지를 팠다. 버티면서 산울타리 모퉁이마다 적을 괴롭힐 준비를 해라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/07"
+msgid "These first enemy squads are probably the scouts. Get ready for some serious attacks!"
+msgstr "첫 적 분대들은 아마 정찰병일 것이다. 본격적인 공격에 대비해라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/08"
+msgid "The enemy artillery ceased fire. I suspect they will use spotters to pinpoint some of our specific positions for bombardment."
+msgstr "적 포병이 사격을 멈췄다. 관측병을 써서 우리 특정 진지를 정확히 찾아 포격하려는 것 같다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/09"
+msgid "The enemy is intensifying the assault toward the west!"
+msgstr "적이 서쪽으로 공격을 강화하고 있다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/10"
+msgid "Attention! Enemy aircraft inbound!"
+msgstr "주의! 적기가 접근 중이다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/11"
+msgid "Fallschirmjäger! You are doing an excellent job in containing the enemy, but we are struggling to keep up with this massive assault! "
+msgstr "팔쉬름예거! 적을 저지하는 솜씨가 훌륭하지만, 이 대규모 공격을 따라가기 벅차다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/12"
+msgid "Now that the enemy is giving us some breathing space, I'm ordering you to fall back to our HQ on the other side of the valley. The motorised Kampfgruppe should arrive soon to strengthen our lines there."
+msgstr "적이 숨 돌릴 틈을 주니, 계곡 반대편의 본부로 후퇴하도록 명령한다. 기동 캄프그루페가 곧 도착해 그곳 방어선을 강화할 것이다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/13"
+msgid "Our reinforcements are finally here! "
+msgstr "드디어 증원이 왔다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/14"
+msgid "Additional reserves, as well as artillery strikes, have been made available to you to make sure the enemy does not take Hill 192."
+msgstr "적이 192고지를 차지하지 못하도록 추가 예비대와 포격 지원을 쓸 수 있게 했다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/15"
+msgid "The enemy will try to attack Hill 192 with everything they've got. But this time, the terrain is our advantage; we hold the high ground. They shouldn't even be trying, but these Americans are tenacious as hell!"
+msgstr "적은 가진 모든 것을 걸고 192고지를 공격하려 할 것이다. 하지만 이번엔 지형이 우리에게 유리하다. 우리가 고지를 차지했다. 시도조차 하지 말아야 하는데, 이 미군 놈들은 지독하게 끈질기다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/16"
+msgid "Watch out! Americans have managed to flank us on the east!"
+msgstr "조심해라! 미군이 동쪽에서 우리 측면을 돌았다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/17"
+msgid "A brilliantly executed defense, Fallschirmjäger! The Americans will learn to fear you, Green Devils. At this pace, we will soon push them back into the sea!"
+msgstr "훌륭하게 수행한 방어다, 팔쉬름예거! 미군은 너희 녹색 악마를 두려워하게 될 것이다. 이 속도면 곧 놈들을 바다로 밀어낼 것이다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/18"
+msgid "The Americans have brought their mobile artillery forward. They will likely try to hit the HQ. Avoid placing your troops around the courtyard, and take the artillery out if you can afford to send a detachment right now."
+msgstr "미군이 기동 포병을 전방으로 가져왔다. 본부를 때리려 할 것이다. 안뜰 주위에 병력을 두지 말고, 지금 분견대를 보낼 여유가 있다면 포병을 제거해라."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/19"
+msgid "A fine display of tactical mastery, taking those artillery pieces out! This is why they call on the Fallschirmjäger; to get the job done!"
+msgstr "그 포들을 제거한 전술이 훌륭하다! 그래서 팔쉬름예거를 부르는 것이다. 일을 끝내라고!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/arty"
+msgid "Enemy artillery inbound! Keep your heads down, Fallschirmjäger!"
+msgstr "적 포격이 온다! 고개를 숙여라, 팔쉬름예거!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/arty2"
+msgid "Here comes the American artillery again! The Americans really want to flatten these hedgerows! Take cover!"
+msgstr "미군 포병이 또 온다! 미군은 이 산울타리를 정말 평지로 만들고 싶어 한다! 엄폐해라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/fail_lastwarning"
+msgid "The Americans are still inside the perimeter of the HQ! This is your last warning! Have them removed or die trying!"
+msgstr "미군이 아직 본부 외곽 안에 있다! 이게 마지막 경고다! 제거하거나 죽도록 싸워라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/fail_warning"
+msgid "Attention! The Americans are inside the HQ perimeter! I want you to take them out within 2 minutes!"
+msgstr "주의! 미군이 본부 외곽 안에 있다! 2분 안에 제거해라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/pzfaust"
+msgid "We are very low on AT weaponry, but around the foxholes we have crates with Panzerfausts and other useful tools."
+msgstr "대전차 무기가 매우 부족하지만, 개인호 주변 상자에 Panzerfaust와 다른 쓸 만한 도구가 있다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/outro_completed"
+msgid "Excellent work! The enemy has been taught a lesson in adaptability and improvisation. Well done, we will be able to contain the Americans in the beachhead. General Schimpf will be very happy to hear about this. "
+msgstr "훌륭하다! 적에게 적응력과 임기응변의 교훈을 가르쳤다. 잘했다, 미군을 교두보에 가둬 둘 수 있을 것이다. 심프 장군이 이 소식을 들으면 아주 기뻐할 것이다."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/outro_failed"
+msgid "We have failed to hold these hills, and the allies can now walk right into St. Lo! Even though you were facing a very strong enemy, General Schimpf will probably not like the news very much. The Fallschirmjäger are not used to losing battles!"
+msgstr "이 언덕을 지키지 못했고, 연합군은 이제 생로로 걸어 들어갈 수 있다! 아주 강한 적을 상대했다 해도 심프 장군은 이 소식을 별로 좋아하지 않을 것이다. 팔쉬름예거는 전투에서 지는 데 익숙하지 않다!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/place"
+msgid "3rd Fallschirmjäger Division "
+msgstr "제3 팔쉬름예거 사단"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_arty"
+msgid "SfH 18 Artillery Barrage"
+msgstr "SfH 18 포격"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad"
+msgid "Fallschirmjäger"
+msgstr "팔쉬름예거"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_ammo"
+msgid "Ammo crate"
+msgstr "탄약 상자"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_defensive"
+msgid "Fallschirmjäger Recon"
+msgstr "팔쉬름예거 정찰대"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_irregular"
+msgid "Fallschirmjäger Pioniere"
+msgstr "팔쉬름예거 피오니어"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_medic"
+msgid "Medic"
+msgstr "위생병"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/skip"
+msgid "Skip preparation phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/story"
+msgid " June 10th, 1944. “Festung Europa” is under attack. The allied foothold has expanded in the past 4 days, and now the hills around St. Lô are in the front line. The line north of St. Lô must be held at all costs. Your 3rd Fallschirmjäger Division is setting up positions on the hills in front of St. Lô. The hills are perfect for defense; however, we can’t defend the entire region with the available manpower. The enemy is approaching from the north. Our best bet is to dig in at St. Georges d’Elle.\n\n Set up your line making sure the enemy is being funneled into your killing zones and make sure you defend your AT guns against flanking moves by enemy infantry. Reinforcements are on the way, but they will take some time to get here - if they get here at all. Now, it’s time for your baptism of fire.\n\nHals- und Beinbruch!"
+msgstr " 1944년 6월 10일. "페스퉁 유럽"이 공격받고 있다. 지난 나흘간 연합군의 교두보가 확대됐고, 이제 생로 일대 언덕이 최전선이다. 생로 북쪽 방어선은 무슨 일이 있어도 지켜야 한다. 제3 팔쉬름예거 사단은 생로 앞 언덕에 진지를 구축하고 있다. 언덕은 방어에 최적이지만, 가용 인력으로 전 지역을 방어할 수는 없다. 적은 북쪽에서 접근 중이다. 최선책은 생조르주델에 참호를 파는 것이다.\n\n 적이 살상 지대로 유인되도록 방어선을 세우고, 적 보병의 측면 기동으로부터 대전차포를 지켜라. 증원이 오고 있지만, 오더라도 시간이 걸린다. 이제 불의 세례를 받을 때다.\n\n할스 운트 바인브루흐!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task1"
+msgid "Fortify the defensive line at St-Georges d’Elle."
+msgstr "생조르주델의 방어선을 강화하라."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task2"
+msgid "Hold back the Americans and prevent them from breaching the road."
+msgstr "미군을 저지하고 도로 돌파를 막아라."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task3"
+msgid "Defend the HQ, prevent the Americans from taking the hill."
+msgstr "본부를 방어하고 미군이 언덕을 차지하지 못하게 하라."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task_opt1"
+msgid "Send a detachment to eliminate the artillery."
+msgstr "분견대를 보내 포병을 제거하라."
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/timer1"
+msgid "Prepare for the American attack!"
+msgstr "미군의 공격에 대비하라!"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/timer2"
+msgid "Next American assault in:"
+msgstr "다음 미군 공격까지:"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/timer3"
+msgid "Fall back to the HQ and await reinforcements. Time until our reinforcements arrive:"
+msgstr "본부로 후퇴해 증원을 기다려라. 증원 도착까지 남은 시간:"

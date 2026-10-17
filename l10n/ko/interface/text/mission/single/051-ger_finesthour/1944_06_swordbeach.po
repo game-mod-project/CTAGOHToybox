@@ -1,0 +1,126 @@
+# source: vanilla interface/text/mission/single/051-ger_finesthour/1944_06_swordbeach.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_swordbeach)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/01"
+msgid "Soldaten! The day has come... The Allies are storming the beaches of France. We have to stop them and push them back into the sea. Our future relies on you today."
+msgstr "Soldaten! 그날이 왔다... 연합군이 프랑스 해안에 상륙하고 있다. 놈들을 막아 바다로 밀어내야 한다. 오늘 우리의 미래가 자네들에게 달려 있다."
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/02"
+msgid "Their landing craft are in sight. Take one last minute to check your weapons and reinforce our weak points."
+msgstr "적 상륙정이 시야에 들어왔다. 마지막으로 무기를 점검하고 취약한 곳을 보강해라."
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/03"
+msgid "Another wave of landing craft incoming! Prepare yourself!"
+msgstr "상륙정 파도가 또 온다! 대비해라!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/04"
+msgid "The British broke through on our right flank! Our defence is collapsing! Quick, reinforce the right flank before they swarm the town!"
+msgstr "영국군이 우리 우측 측면을 돌파했다! 방어선이 무너지고 있다! 놈들이 마을로 몰려들기 전에 어서 우측 측면을 보강해라!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/05"
+msgid "Soldaten! Our new objective is to take up positions inside the town and to stop the British from capturing it! You are allowed to tactically retreat to our second line!"
+msgstr "Soldaten! 새 목표는 마을 안에 진지를 잡고 영국군이 점령하지 못하게 막는 것이다! 제2선으로 전술 후퇴해도 좋다!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/06"
+msgid "We are not getting any support. We are the last stand in this area. Soldaten! Fall back to the Widerstandsnest!"
+msgstr "지원은 오지 않는다. 우리가 이 지역의 마지막 보루다. Soldaten! 비더슈탄트스네스트로 후퇴해라!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_officer/07"
+msgid "There are Panzerfausts and anti-tank grenades in these crates! Take as many as you need to destroy the tanks!"
+msgstr "이 상자에 판처파우스트와 대전차 수류탄이 들어 있다! 전차를 파괴할 만큼 가져가라!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/01"
+msgid "They are getting too close!"
+msgstr "너무 가까이 왔다!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/02"
+msgid "They are coming!"
+msgstr "놈들이 온다!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/03"
+msgid "Verdammt! What is that coming our way?! They have amphibious Panzers?!"
+msgstr "Verdammt! 이쪽으로 오는 건 뭐야?! 수륙양용 판처인가?!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/04"
+msgid "Herr Kommandant! They are everywhere! And they've got even more tanks!"
+msgstr "Herr Kommandant! 사방에 놈들이 깔렸습니다! 게다가 전차가 더 있습니다!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/05"
+msgid "There's an armored vehicle that has been damaged by an artillery shell. We should repair it and put it back in action."
+msgstr "포탄에 파손된 장갑차량이 있다. 수리해서 다시 투입해야 한다."
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/06"
+msgid "Herr Kommandant! We're gonna get overrun! Where are our reinforcements?!"
+msgstr "Herr Kommandant! 이대로면 돌파당합니다! 증원은 어디 있습니까?!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_01"
+msgid "Stop the invasion on the beach!"
+msgstr "해안에서 상륙을 저지하라!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_02"
+msgid "Do not let the enemy capture the town!"
+msgstr "적이 마을을 점령하지 못하게 하라!"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_03"
+msgid "Hold the WN21! (at least 5 soldiers need to survive)"
+msgstr "WN21을 사수하라! (병사 최소 5명이 생존해야 한다)"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_secondary1"
+msgid "Repair the armored vehicle"
+msgstr "장갑차량을 수리하라"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_secret01"
+msgid "Secret objective #1"
+msgstr "비밀 목표 1"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_secret01_completed"
+msgid "Secret objective #1: Destroy an enemy tank on the beach using the detonator"
+msgstr "비밀 목표 #1: 기폭 장치를 사용해 해안의 적 전차를 파괴하라"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[timers]/task_02"
+msgid "Hold the town"
+msgstr "마을을 사수하라"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[timers]/task_03"
+msgid "Hold the WN21"
+msgstr "WN21을 사수하라"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/name"
+msgid "Sword Beach"
+msgstr "소드 해변"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/name_big"
+msgid "Sword Beach"
+msgstr "소드 해변"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/outro_completed"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/outro_failed"
+msgid "The Atlantikwall isn't supposed to fail, but it did! This beach is now firmly in British hands, when we should have thrown them all back into the sea. What went wrong, and what are you going to do about it?"
+msgstr "대서양 방벽은 무너지면 안 되는데 무너졌다! 이 해변은 이제 영국군 손에 넘어갔다. 놈들을 전부 바다로 던져 넣었어야 했다. 무엇이 잘못됐고, 어떻게 수습할 것인가?"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/date"
+msgid "June 6th, 1944 · Lion-sur-Mer, Normandy, France"
+msgstr "1944년 6월 6일 · 프랑스 노르망디, 리옹쉬르메르"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/place"
+msgid "716. Infanterie-Division"
+msgstr "제716보병사단"
+
+msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/story"
+msgid "It’s the early morning of June 6th, 1944. In the coastal town of Lion-sur-Mer, everything seems quiet. The Normandy beaches are empty except for barbed wire and obstacles. The coastal fortifications have never fired a single shot in anger yet. \n\n After months of quiet anticipation and preparations, the silence is suddenly shattered by the horrifying sound of incoming shells, followed by a series of heavy explosions around your Atlantikwall position. Several allied cruisers have opened fire from a great distance, and the effect is devastating. Sound the alarm! \n\n Is this the moment you’ve been preparing for in the past months? \n\n Position WN 21, located just West of Lion-sur-Mer, gets pounded by a naval bombardment, and there’s nothing you can do about it, except wait until it’s over, and brace for the invasion."
+msgstr "1944년 6월 6일 이른 아침이다. 해안 마을 리옹쉬르메르는 모든 것이 고요해 보인다. 노르망디 해변은 철조망과 장애물만 남긴 채 텅 비어 있다. 해안 요새는 아직 실전에서 한 발도 쏜 적이 없다. \n\n 몇 달간의 조용한 기다림과 준비 끝에, 침묵은 날아드는 포탄의 섬뜩한 소리와 대서양 방벽 진지 주변의 연이은 굉음에 갑자기 깨진다. 연합군 순양함 여러 척이 먼 거리에서 포문을 열었고, 그 효과는 참혹하다. 경보를 울려라! \n\n 지난 몇 달 동안 준비해 온 순간이 바로 지금인가? \n\n 리옹쉬르메르 바로 서쪽의 WN 21 진지는 함포 사격에 두들겨 맞고 있다. 끝나기를 기다렸다가 상륙에 대비하는 것 말고는 달리 할 수 있는 일이 없다."

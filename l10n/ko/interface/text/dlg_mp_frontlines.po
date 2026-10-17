@@ -1,0 +1,103 @@
+# source: vanilla interface/text/dlg_mp_frontlines.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: laststand\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+
+msgctxt "mp/game/frontlines"
+msgid "Frontlines"
+msgstr "프런트라인"
+
+msgctxt "mp/game/frontlines/info"
+msgid "\nOne army attacks the defended position of the other team. \nFight for territory and incur as many losses as possible to the foe!"
+msgstr "\n한 군대가 상대 팀의 방어 진지를 공격한다. \n영토를 두고 싸워 적에게 최대한 많은 손실을 입혀라!"
+
+msgctxt "mp/game/frontlines/rules"
+msgid "Frontlines\n\nFrontlines is an attack-and-defend scenario. Team A attacks and team B defends. The attacking team's goal is to capture all lines of defense within the time limit. The defending team's goal is to hold these lines of defense. Each line of defense is indicated by a set of flags, and all must be captured to enable the defense to fall. The game ends and is won by the attacking team if all lines of defense are captured. Points are awarded by killing enemy troops, and the attack-defense effectiveness. At the end of the game, the team with the best performance wins."
+msgstr "프런트라인\n\n프런트라인은 공격과 방어 시나리오입니다. A팀이 공격하고 B팀이 방어합니다. 공격팀의 목표는 제한 시간 안에 모든 방어선을 점령하는 것입니다. 방어팀의 목표는 이 방어선을 지키는 것입니다. 각 방어선은 깃발 묶음으로 표시되며, 방어선이 무너지려면 모든 깃발을 점령해야 합니다. 모든 방어선이 점령되면 게임이 끝나고 공격팀이 승리합니다. 적 병력을 처치하고 공방 효율에 따라 점수를 얻습니다. 게임이 끝났을 때 가장 좋은 성과를 낸 팀이 승리합니다."
+
+msgctxt "mp/game/frontlines/objective/a"
+msgid "Capture all lines of the enemy defense before the time runs out."
+msgstr "시간이 다 되기 전에 적 방어선을 모두 점령하라."
+
+msgctxt "mp/game/frontlines/objective/b"
+msgid "Hold back the enemy at the defensive line, until the time expires."
+msgstr "시간이 끝날 때까지 방어선에서 적을 막아라."
+
+msgctxt "mp/game/text/unitlost"
+msgid "Unit lost"
+msgstr "유닛 손실"
+
+msgctxt "mp/game/text/frontline_ready"
+msgid "Get ready! The attack will commence in %1% seconds."
+msgstr "준비하라! %1%초 후 공격이 시작된다."
+
+msgctxt "mp/game/text/frontline_go_a"
+msgid "Forward! Capture all the flags to take the front line."
+msgstr "전진! 모든 깃발을 점령해 전선을 확보하라."
+
+msgctxt "mp/game/text/frontline_go_b"
+msgid "The enemy is attacking! Hold your positions!"
+msgstr "적이 공격해 온다! 위치를 사수하라!"
+
+msgctxt "mp/game/text/frontline_captured"
+msgid "The front line has been captured!"
+msgstr "전선을 점령했다!"
+
+msgctxt "mp/game/text/frontline_flag_captured"
+msgid "A strategic area has been captured!"
+msgstr "전략 지역을 점령했다!"
+
+msgctxt "mp/game/text/frontline_retreat_hint"
+msgid "Retreat to the next line"
+msgstr "다음 방어선으로 후퇴"
+
+msgctxt "mp/game/text/frontline_retreat_btn"
+msgid "Retreat"
+msgstr "후퇴"
+
+msgctxt "mp/game/text/frontline_phase_hint"
+msgid "Front line"
+msgstr "전선"
+
+msgctxt "mp/settings/frontlineteam#attackers"
+msgid "Team A Attackers"
+msgstr "A팀 공격"
+
+msgctxt "mp/settings/frontlineteam#defenders"
+msgid "Team B Defenders"
+msgstr "B팀 방어"
+
+msgctxt "mp/lobby/setup/settings.freezeTime"
+msgid "Frontline preparation time"
+msgstr "전선 준비 시간"
+
+msgctxt "mp/lobby/setup/settings.freezeTime#hint"
+msgid "Time allotted for preparing the defenses and mustering the attack"
+msgstr "방어를 준비하고 공격 병력을 집결시키는 데 주어지는 시간"
+
+msgctxt "mp/settings/teamb#defenders"
+msgid "Team B Defenders"
+msgstr "B팀 방어"
+
+msgctxt "mp/settings/teama#attackers"
+msgid "Team A Attackers"
+msgstr "A팀 공격"
+
+msgctxt "actionbar/frontline_retreat"
+msgid "Retreat to the second line!"
+msgstr "두 번째 방어선으로 후퇴!"
+
+msgctxt "actionbar/frontline_retreat/action"
+msgid "Retreat to the next line of defenses and receive new resources."
+msgstr "다음 방어선으로 후퇴해 새 자원을 받는다."

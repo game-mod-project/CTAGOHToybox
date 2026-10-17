@@ -1,0 +1,334 @@
+# source: mod_3732639687 interface/text/desc/desc_weapon_rus2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Soviet weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/weapon/130mm_s26"
+msgid "130mm S-26"
+msgstr "130mm S-26"
+
+msgctxt "desc/weapon/122mm_d30t"
+msgid "122mm D-30T"
+msgstr "122mm D-30T"
+
+msgctxt "desc/weapon/152mm_m64"
+msgid "152mm M64"
+msgstr "152mm M64"
+
+msgctxt "desc/weapon/130mm_s70"
+msgid "130mm S-70"
+msgstr "130mm S-70"
+
+msgctxt "desc/weapon/mgun_aa_dt"
+msgid "DT MG AA"
+msgstr "DT MG AA"
+
+msgctxt "desc/weapon/sgmt"
+msgid "SGMT"
+msgstr "SGMT"
+
+msgctxt "desc/weapon/hmgun_aa_m2hb"
+msgid "M2HB HMG AA"
+msgstr "M2HB HMG AA"
+
+msgctxt "desc/weapon/hmgun_aa_dshk"
+msgid "DShK HMG AA"
+msgstr "DShK HMG AA"
+
+msgctxt "desc/weapon/hmgun_aa_dshkm"
+msgid "DShKM HMG AA"
+msgstr "DShKM HMG AA"
+
+msgctxt "desc/weapon/kpvt_2"
+msgid "KPVT"
+msgstr "KPVT"
+
+msgctxt "desc/weapon/kpvt"
+msgid "KPVT"
+msgstr "KPVT"
+
+msgctxt "desc/weapon/14_5mm_kpvt_x2"
+msgid "2x KPVT"
+msgstr "2x KPVT"
+
+msgctxt "desc/weapon/14_5mm_kpvt_x4"
+msgid "4x KPVT"
+msgstr "4x KPVT"
+
+msgctxt "desc/weapon/25mm_72k_x2"
+msgid "Twin 25mm obr. 1940 L/76.6"
+msgstr "Twin 25mm obr. 1940 L/76.6"
+
+msgctxt "desc/weapon/20mm_mg151_20_x3"
+msgid "Triple 20mm MG 151/20 L/89"
+msgstr "Triple 20mm MG 151/20 L/89"
+
+msgctxt "desc/weapon/37mm_sh37"
+msgid "37mm Sh-37 L/65"
+msgstr "37mm Sh-37 L/65"
+
+msgctxt "desc/weapon/37mm_61k_x2"
+msgid "Twin 37mm obr. 1939 L/62.1"
+msgstr "Twin 37mm obr. 1939 L/62.1"
+
+msgctxt "desc/weapon/45mm_vt43"
+msgid "45mm VT-43 L/66"
+msgstr "45mm VT-43 L/66"
+
+msgctxt "desc/weapon/76mm_kt28"
+msgid "76mm KT-28 L/16.5"
+msgstr "76mm KT-28 L/16.5"
+
+msgctxt "desc/weapon/76mm_kt35"
+msgid "76mm KT-35 L/16.5"
+msgstr "76mm KT-35 L/16.5"
+
+msgctxt "desc/weapon/76mm_f96"
+msgid "76mm F-96 L/42"
+msgstr "76mm F-96 L/42"
+
+msgctxt "desc/weapon/85mm_f30"
+msgid "85mm F-30 L/50"
+msgstr "85mm F-30 L/50"
+
+msgctxt "desc/weapon/100mm_d10t"
+msgid "100mm D-10T L/52"
+msgstr "100mm D-10T L/52"
+
+msgctxt "desc/weapon/100mm_lb1"
+msgid "100mm LB-1 L/52"
+msgstr "100mm LB-1 L/52"
+
+msgctxt "desc/weapon/100mm_s34"
+msgid "100mm S-34 L/55"
+msgstr "100mm S-34 L/55"
+
+msgctxt "desc/weapon/107mm_zis6"
+msgid "107mm ZIS-6 L/73.5"
+msgstr "107mm ZIS-6 L/73.5"
+
+msgctxt "desc/weapon/122mm_a19s"
+msgid "122mm A-19S L/48.5"
+msgstr "122mm A-19S L/48.5"
+
+msgctxt "desc/weapon/122mm_d25t"
+msgid "122mm D-25T L/48.5"
+msgstr "122mm D-25T L/48.5"
+
+msgctxt "desc/weapon/122mm_d25t-2"
+msgid "122mm D-25T L/48.5"
+msgstr "122mm D-25T L/48.5"
+
+msgctxt "desc/weapon/122mm_d25ts"
+msgid "122mm D-25TS L/54"
+msgstr "122mm D-25TS L/54"
+
+msgctxt "desc/weapon/122mm_d25t_revenge"
+msgid "122mm D-25T L/55 'Revenge'"
+msgstr "122mm D-25T L/55 'Revenge'"
+
+msgctxt "desc/weapon/122mm_d25_44t"
+msgid "122mm D-25-44T L/48"
+msgstr "122mm D-25-44T L/48"
+
+msgctxt "desc/weapon/250kg_tt250_x2"
+msgid "Twin 250KG TT-250 Tank Torpedo Launcher"
+msgstr "Twin 250KG TT-250 Tank Torpedo Launcher"
+
+msgctxt "desc/weapon/107mm_zis6m"
+msgid "107mm ZIS-6M L/73.5"
+msgstr "107mm ZIS-6M L/73.5"
+
+msgctxt "desc/weapon/107mm_zis6-2"
+msgid "107mm ZiS-6 L/49.6"
+msgstr "107mm ZiS-6 L/49.6"
+
+msgctxt "desc/weapon/122mm_d25-2"
+msgid "122mm D-25 L/43"
+msgstr "122mm D-25 L/43"
+
+msgctxt "desc/weapon/107mm_zis24"
+msgid "107mm ZIS-24 L/70"
+msgstr "107mm ZIS-24 L/70"
+
+msgctxt "desc/weapon/107mm_zis5"
+msgid "107mm ZIS-5 L/56"
+msgstr "107mm ZIS-5 L/56"
+
+msgctxt "desc/weapon/125mm_ampulomet_x6"
+msgid "125mm Incendiary Launcher X6"
+msgstr "125mm Incendiary Launcher X6"
+
+msgctxt "desc/weapon/130mm_s70a"
+msgid "130mm S-70A"
+msgstr "130mm S-70A"
+
+msgctxt "desc/weapon/130mm_m65"
+msgid "130mm M-65"
+msgstr "130mm M-65"
+
+msgctxt "desc/weapon/152mm_m10t_2"
+msgid "152mm M-10T 2x"
+msgstr "152mm M-10T 2x"
+
+msgctxt "desc/weapon/152mm_64-152T"
+msgid "152mm 64-152T"
+msgstr "152mm 64-152T"
+
+msgctxt "desc/weapon/152mm_J2"
+msgid "152mm J-2"
+msgstr "152mm J-2"
+
+msgctxt "desc/weapon/180mm_b1p"
+msgid "180mm B-1-P"
+msgstr "180mm B-1-P"
+
+msgctxt "desc/weapon/76mm_3k"
+msgid "76mm 3-K L/55.1"
+msgstr "76mm 3-K L/55.1"
+
+msgctxt "desc/weapon/76mm_m1a2"
+msgid "76mm M1A2 L/52"
+msgstr "76mm M1A2 L/52"
+
+msgctxt "desc/weapon/82mm_bm8"
+msgid "82mm M-8 Rockets Launcher"
+msgstr "82mm M-8 Rockets Launcher"
+
+msgctxt "desc/weapon/100mm_lb1-2"
+msgid "100mm LB-1 L/56"
+msgstr "100mm LB-1 L/56"
+
+msgctxt "desc/weapon/type/secondary_rockets"
+msgid "Secondary Rockets"
+msgstr "보조 로켓"
+
+msgctxt "desc/weapon/type/mgun_coaxial"
+msgid "Coaxial Machine Gun"
+msgstr "동축 기관총"
+
+msgctxt "desc/weapon/150mm_gm45"
+msgid "150mm GM-45"
+msgstr "150mm GM-45"
+
+msgctxt "desc/weapon/152mm_zpl_75"
+msgid "152mm ZPL-75"
+msgstr "152mm ZPL-75"
+
+msgctxt "desc/weapon/180mm_zpl_70"
+msgid "180mm ZPL-70"
+msgstr "180mm ZPL-70"
+
+msgctxt "desc/weapon/152mm_zpl_75_1"
+msgid "152mm ZPL-75"
+msgstr "152mm ZPL-75"
+
+msgctxt "desc/weapon/100mm_d54ts"
+msgid "100mm D-54TS"
+msgstr "100mm D-54TS"
+
+msgctxt "desc/weapon/dshk_2"
+msgid "DShK HMG"
+msgstr "DShK HMG"
+
+msgctxt "desc/weapon/dshk_3"
+msgid "DShK HMG"
+msgstr "DShK HMG"
+
+msgctxt "desc/weapon/57mm_pg70_2"
+msgid "57mm PG70"
+msgstr "57mm PG70"
+
+msgctxt "desc/stuff/retro_ammo"
+msgid "Rocket Booster"
+msgstr "로켓 부스터"
+
+msgctxt "desc/weapon/rusminigun"
+msgid "Russian-made Gatling gun"
+msgstr "러시아제 개틀링 기관포"
+
+msgctxt "desc/weapon/152mm_2a83"
+msgid "152mm 2A83"
+msgstr "152mm 2A83"
+
+msgctxt "desc/weapon/rg6_3"
+msgid "RG-6 40mm Grenade Launcher"
+msgstr "RG-6 40mm Grenade Launcher"
+
+msgctxt "desc/weapon/85mm_d-70"
+msgid "85mm D-70"
+msgstr "85mm D-70"
+
+msgctxt "desc/weapon/130mm_b13_2"
+msgid "130mm B-13"
+msgstr "130mm B-13"
+
+msgctxt "desc/weapon/pkt"
+msgid "PKT"
+msgstr "PKT"
+
+msgctxt "desc/weapon/pkm"
+msgid "PKM"
+msgstr "PKM"
+
+msgctxt "desc/weapon/pkm_t"
+msgid "PKM"
+msgstr "PKM"
+
+msgctxt "desc/weapon/type/mgun_aa"
+msgid "Mgun AA"
+msgstr "대공 기관총"
+
+msgctxt "desc/weapon/122mm_m62_t2"
+msgid "122mm M-62-T2"
+msgstr "122mm M-62-T2"
+
+msgctxt "desc/weapon/122mm_m62t2"
+msgid "122mm M-62-T2"
+msgstr "122mm M-62-T2"
+
+msgctxt "desc/weapon/50mm_zk500s"
+msgid "50mm ZK 500S"
+msgstr "50mm ZK 500S"
+
+msgctxt "desc/weapon/57mm_535t"
+msgid "57mm 535T"
+msgstr "57mm 535T"
+
+msgctxt "desc/weapon/82mm_bm37_2"
+msgid "82mm BM-37 9x Launcher"
+msgstr "82mm BM-37 9x Launcher"
+
+msgctxt "desc/weapon/type/aa_hmg"
+msgid "AA mgun"
+msgstr "대공 기관총"
+
+msgctxt "desc/stuff/no8_smoke"
+msgid "No. 8 Smoke Grenade"
+msgstr "No. 8 연막 수류탄"
+
+msgctxt "desc/weapon/152mm_c26bm"
+msgid "152mm S-26 BM"
+msgstr "152mm S-26 BM"
+
+msgctxt "desc/weapon/45mm_20k"
+msgid "45mm 20-K"
+msgstr "45mm 20-K"
+
+msgctxt "desc/weapon/122mm_u11"
+msgid "122mm U-11 L/22"
+msgstr "122mm U-11 L/22"
+
+msgctxt "desc/weapon/152mm_m51"
+msgid "152mm M-51"
+msgstr "152mm M-51"

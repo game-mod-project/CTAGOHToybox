@@ -1,0 +1,145 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_09_20_marketgarden_skirmish)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/name"
+msgid "제30군단의 질주 [스커미시]"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/name_big"
+msgid "제30군단의 질주"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/story"
+msgid "마켓 가든 5일째, 오늘이 작전 전체의 성패를 가른다.\n\n제30군단은 이용 중인 도로에 대한 독일군의 맹렬한 반격 속에서도 계속 전진해 왔다. 이 도로는 이미 '지옥의 하이웨이'라는 별명이 붙었다.\n\n도로 동서에서 끊임없이 반격이 들어오는데도 자네는 네이메헌까지 진격했다.\n\n불행히도 이 지역의 독일군 병력과 위치에 대한 정보가 없다. 전진하면서 직접 놈들의 위치를 알아내야 한다. 공수부대는 불과 7마일 떨어진 바로 다음 다리에서 우리를 기다리고 있다. 가자!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/place"
+msgid "제30군단"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/date"
+msgid "1944년 9월 20일 · 네덜란드 네이메헌"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/outro_completed"
+msgid "국왕께 자랑스러운 일을 했다! 틀림없이 전공 보고서에 언급될 것이다. 작전 전체가 실패할 운명인 듯하지만 이제 마켓 가든에 마지막 기회를 주며 계속 밀어붙일 수 있다. 앞일은 두고 보자. 훌륭한 전투였다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/outro_failed"
+msgid "안타깝군, 지휘관! 독일군이 예상보다 효율적으로 대응해 작전 전체가 위험에 빠졌다. 독일군 진지를 뚫을 방법을 찾았어야 했는데 그러지 못했다. 호록스 장군께 누가 보고하나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/outro_failed_hq"
+msgid "이건 재앙에 가깝다. 승리를 확보하지 못했다. 돌아가서 다시 공세를 시작해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/mission_hq"
+msgid "북쪽 교두보를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/mission_attack"
+msgid "적 진지에 구멍을 내고 북쪽으로 진격하라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/flag_capture_status"
+msgid "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/narrator_start0"
+msgid "전선에 돌아온 걸 환영한다, Lieutenant! 여기가 북쪽 교두보다. 반드시 우리가 장악해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/narrator_start1"
+msgid "마켓 가든 작전이 중대 국면이다. 무슨 수를 써서라도 아른험으로 밀고 나가야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/narrator_start2"
+msgid "빠르고 과감하게 움직여라. 그리고 병력을 너무 잃지 않도록 해라! 지형을 이용해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/narrator_start3"
+msgid "공격이 진행될수록 더 많은 증원이 가능해진다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/allied_enemy_near_hq"
+msgid "제군! 독일군이 야전 본부 가까이에 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/player_enemy_near_hq"
+msgid "지휘소를 지켜야 한다! 항복할 여지는 없다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/player_rescue"
+msgid "제82공수사단 미군이 앞에서 발이 묶였다! 도와주자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/para_survivors_assign"
+msgid "만나서 반갑습니다, Lieutenant! 살아 나올 줄 몰랐습니다! 저희 병력은 Lieutenant의 지휘를 받겠습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/hq_bonus"
+msgid "Major! 이제 공습을 요청할 수 있습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/rescue"
+msgid "고립된 공수부대원을 구출하라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret01"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret01_completed"
+msgid "비밀 목표 #1: 지독하군! - 적 병사를 불태웠다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret02"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret02_completed"
+msgid "비밀 목표 #2: 고양이 길들이기! - 독일 판터를 노획했다."
+msgstr ""

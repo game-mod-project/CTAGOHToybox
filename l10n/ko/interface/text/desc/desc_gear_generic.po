@@ -1,0 +1,287 @@
+# source: vanilla interface/text/desc/desc_gear_generic.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell generic gear\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/stuff/ammo_box_inf_ger"
+msgid "Ammo Box"
+msgstr "탄약 상자"
+
+msgctxt "desc/stuff/ammo_box_shell_ger"
+msgid "Shell Ammo Box"
+msgstr "포탄 상자"
+
+msgctxt "desc/stuff/b33r"
+msgid "Rack with Beverages"
+msgstr "음료 선반"
+
+msgctxt "desc/stuff/barbwire_kit"
+msgid "Barbwire Kit"
+msgstr "철조망 키트"
+
+msgctxt "desc/stuff/barrel"
+msgid "Barrel"
+msgstr "통"
+
+msgctxt "desc/stuff/box1"
+msgid "Box 1"
+msgstr "상자 1"
+
+msgctxt "desc/stuff/box2"
+msgid "Box 2"
+msgstr "상자 2"
+
+msgctxt "desc/stuff/can"
+msgid "Jerry Can"
+msgstr "제리캔"
+
+msgctxt "desc/stuff/canned_meat"
+msgid "Canned Meat"
+msgstr "통조림 고기"
+
+msgctxt "desc/stuff/chicken"
+msgid "Chicken"
+msgstr "닭"
+
+msgctxt "desc/stuff/civilian_beanie"
+msgid "Cap"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_cook_cap"
+msgid "Cap"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_dockyard_cap"
+msgid "Cap"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_fedora_black"
+msgid "Hat"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_fedora_brown"
+msgid "Hat"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_fedora_green"
+msgid "Hat"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_fedora_grey"
+msgid "Hat"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_fedora_orange"
+msgid "Hat"
+msgstr "모자"
+
+msgctxt "desc/stuff/civilian_flat_cap_leather"
+msgid "Cap"
+msgstr "모자"
+
+msgctxt "desc/stuff/commander_vision"
+msgid "Commander Vision"
+msgstr "지휘관 시야"
+
+msgctxt "desc/stuff/cord_wood"
+msgid "Wood"
+msgstr "목재"
+
+msgctxt "desc/stuff/cumulative_charge"
+msgid "Cumulative Charge"
+msgstr "성형 장약"
+
+msgctxt "desc/stuff/cumulative_launcher"
+msgid "Cumulative Launcher"
+msgstr "성형 장약 발사기"
+
+msgctxt "desc/stuff/diesel"
+msgid "Diesel"
+msgstr "디젤"
+
+msgctxt "desc/stuff/dummy"
+msgid "Dummy"
+msgstr "더미"
+
+msgctxt "desc/stuff/feltbahn_combat_pack"
+msgid "German Combat Pack"
+msgstr "독일 전투 배낭"
+
+msgctxt "desc/stuff/filling_empty"
+msgid "Empty"
+msgstr "비어 있음"
+
+msgctxt "desc/stuff/german_radio"
+msgid "German Feld.Fu.B Radio"
+msgstr "독일 Feld.Fu.B 무전기"
+
+msgctxt "desc/stuff/hedgehog_kit"
+msgid "Hedgehog Kit"
+msgstr "헤지호그 키트"
+
+msgctxt "desc/stuff/human"
+msgid "Human"
+msgstr "사람"
+
+msgctxt "desc/stuff/knife_ger"
+msgid "German Knife"
+msgstr "독일 나이프"
+
+msgctxt "desc/stuff/knife_rus"
+msgid "Soviet Knife"
+msgstr "소련 나이프"
+
+msgctxt "desc/stuff/lamp"
+msgid "Lamp"
+msgstr "램프"
+
+msgctxt "desc/stuff/liquid"
+msgid "Fuel"
+msgstr "연료"
+
+msgctxt "desc/stuff/matchbox"
+msgid "Match Box"
+msgstr "성냥갑"
+
+msgctxt "desc/stuff/medkit"
+msgid "Medical Kit"
+msgstr "의료 키트"
+
+msgctxt "desc/stuff/mine_detector"
+msgid "Mine Detector"
+msgstr "지뢰 탐지기"
+
+msgctxt "desc/stuff/morphine"
+msgid "Morphine"
+msgstr "모르핀"
+
+msgctxt "desc/stuff/panzershreck_carrycase"
+msgid "Panzershreck Ammunition Carrycase"
+msgstr "Panzershreck 탄약 가방"
+
+msgctxt "desc/stuff/petrol"
+msgid "Petrol"
+msgstr "휘발유"
+
+msgctxt "desc/stuff/pickaxe"
+msgid "Trench Pickaxe"
+msgstr "참호 곡괭이"
+
+msgctxt "desc/stuff/plant"
+msgid "Camouflage Kit"
+msgstr "위장 키트"
+
+msgctxt "desc/stuff/plash_palatka_a"
+msgid "Plash Palatka A"
+msgstr "Plash Palatka A"
+
+msgctxt "desc/stuff/plash_palatka_b"
+msgid "Plash Palatka B"
+msgstr "Plash Palatka B"
+
+msgctxt "desc/stuff/plash_palatka_c"
+msgid "Plash Palatka C"
+msgstr "Plash Palatka C"
+
+msgctxt "desc/stuff/repair_kit"
+msgid "Repair Kit"
+msgstr "수리 키트"
+
+msgctxt "desc/stuff/round_sandbag_kit"
+msgid "Round Sandbag Kit"
+msgstr "원형 모래주머니 키트"
+
+msgctxt "desc/stuff/sandbag_kit"
+msgid "Sandbags"
+msgstr "모래주머니"
+
+msgctxt "desc/stuff/sandbag_kit_vehicle"
+msgid "Sandbags, Vehicle Kit"
+msgstr "모래주머니, 차량 키트"
+
+msgctxt "desc/stuff/sandbag_vehicle"
+msgid "Sandbag Kit (Vehicle)"
+msgstr "모래주머니 키트 (차량)"
+
+msgctxt "desc/stuff/secret_doc_bag2"
+msgid "Confidential Documents"
+msgstr "기밀 문서"
+
+msgctxt "desc/stuff/secret_doc_bag3"
+msgid "Confidential Documents"
+msgstr "기밀 문서"
+
+msgctxt "desc/stuff/shell_cannon"
+msgid "Empty Casing"
+msgstr "빈 탄피"
+
+msgctxt "desc/stuff/shell_cannon_auto"
+msgid "Empty Casing"
+msgstr "빈 탄피"
+
+msgctxt "desc/stuff/shell_flare"
+msgid "Shell Flare"
+msgstr "조명탄"
+
+msgctxt "desc/stuff/shovel_ger"
+msgid "German Shovel"
+msgstr "독일 삽"
+
+msgctxt "desc/stuff/shovel_rus"
+msgid "Soviet Shovel"
+msgstr "소련 삽"
+
+msgctxt "desc/stuff/smokescreen"
+msgid "Smoke Screen"
+msgstr "연막"
+
+msgctxt "desc/stuff/sn40_body_armor"
+msgid "SN40 Body Armor"
+msgstr "SN40 방탄복"
+
+msgctxt "desc/stuff/sugar"
+msgid "Fuel-Soluble Chemicals"
+msgstr "연료 용해 화학물질"
+
+msgctxt "desc/stuff/tent_kit"
+msgid "Tent building kit"
+msgstr "텐트 설치 키트"
+
+msgctxt "desc/stuff/veshmeshok_basic"
+msgid "Veshmeshok Basic"
+msgstr "Veshmeshok 기본형"
+
+msgctxt "desc/stuff/veshmeshok_full"
+msgid "Veshmeshok Full"
+msgstr "Veshmeshok 완전형"
+
+msgctxt "desc/stuff/veshmeshok_regular"
+msgid "Veshmeshok Regular"
+msgstr "Veshmeshok 일반형"
+
+msgctxt "desc/stuff/water"
+msgid "Water"
+msgstr "물"
+
+msgctxt "desc/stuff/wirecutters"
+msgid "Wire Cutters"
+msgstr "와이어 커터"
+
+msgctxt "desc/stuff/steak"
+msgid "Meat"
+msgstr "고기"
+
+msgctxt "desc/stuff/gold_bar"
+msgid "Gold bar"
+msgstr "금괴"

@@ -1,0 +1,106 @@
+# source: vanilla interface/text/desc/desc_squad_usa_dcg_late.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Squads\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_101st_pathfinder_con(usa)"
+msgid "<c(A5A095)>(4)</c> 101st Airborne Pathfinders [1944]"
+msgstr "<c(A5A095)>(4)</c> 제101공수사단 패스파인더 [1944]"
+
+msgctxt "desc/squad/squad_82nd_pathfinder_con(usa)"
+msgid "<c(A5A095)>(4+)</c> 82nd Airborne Pathfinders [1944]"
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 패스파인더 [1944]"
+
+msgctxt "desc/squad/squad_101st_eng_con(usa)"
+msgid "<c(A5A095)>(4)</c> 101st Airborne Engineer Squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 제101공수사단 공병 분대 [1944]"
+
+msgctxt "desc/squad/squad_101st_con(usa)"
+msgid "<c(A5A095)>(4)</c> 101st Airborne Squad [1944]"
+msgstr "<c(A5A095)>(4)</c> 제101공수사단 분대 [1944]"
+
+msgctxt "desc/squad/squad_101st_glider_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> 101st Glider Squad [1944]"
+msgstr "<c(A5A095)>(3)</c> 제101 글라이더 분대 [1944]"
+
+msgctxt "desc/squad/squad_82nd_glider_late_con(usa)"
+msgid "<c(A5A095)>(3+)</c> 82nd Glider Squad [1944]"
+msgstr "<c(A5A095)>(3+)</c> 제82 글라이더 분대 [1944]"
+
+msgctxt "desc/squad/squad_82nd_glider_pio_late_con(usa)"
+msgid "<c(A5A095)>(3+)</c> 82nd Glider Pioneer Squad [1944]"
+msgstr "<c(A5A095)>(3+)</c> 제82 글라이더 공병 분대 [1944]"
+
+msgctxt "desc/squad/squad_82nd_late_con(usa)"
+msgid "<c(A5A095)>(4+)</c> 82nd Airborne Squad [1944]"
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 분대 [1944]"
+
+msgctxt "desc/squad/squad_82nd_eng_late_con(usa)"
+msgid "<c(A5A095)>(4+)</c> 82nd Airborne Engineer Squad [1944]"
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 공병 분대 [1944]"
+
+msgctxt "desc/squad/squad_82nd_demo_late_con(usa)"
+msgid "<c(A5A095)>(4+)</c> 82nd Airborne Demolition Section [1944]"
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 폭파 분대 [1944]"
+
+msgctxt "desc/squad/squad_ranger_assault_late_con(usa)"
+msgid "<c(A5A095)>(4)</c> Ranger Assault Section [1944]"
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 [1944]"
+
+msgctxt "desc/squad/squad_ranger_assault_mg_late_con(usa)"
+msgid "<c(A5A095)>(4)</c> Ranger Assault Section (MG) [1944]"
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 (기관총) [1944]"
+
+msgctxt "desc/squad/squad_ranger_special_late_con(usa)"
+msgid "<c(A5A095)>(4)</c> Ranger Special Weapons Section [1944]"
+msgstr "<c(A5A095)>(4)</c> 레인저 특수무기 분대 [1944]"
+
+msgctxt "desc/squad/squad_rifle_late_con(usa)"
+msgid "<c(A5A095)>(2)</c> Rifle Squad [1944]"
+msgstr "<c(A5A095)>(2)</c> 소총 분대 [1944]"
+
+msgctxt "desc/squad/squad_vet_rifle_late_con(usa)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Squad [1944]"
+msgstr "<c(A5A095)>(2+)</c> 베테랑 소총 분대 [1944]"
+
+msgctxt "desc/squad/squad_arm_rifle_mech_late_con(usa)"
+msgid "<c(A5A095)>(2)</c> Armored Rifle Squad (Mounted) [1944]"
+msgstr "<c(A5A095)>(2)</c> 기갑 소총 분대 (탑승) [1944]"
+
+msgctxt "desc/squad/squad_2nd_arm_rifle_mech_late_con(usa)"
+msgid "<c(A5A095)>(2+)</c> 2nd.AD Rifle Squad (Mounted) [1944]"
+msgstr "<c(A5A095)>(2+)</c> 제2기갑사단 소총 분대 (탑승) [1944]"
+
+msgctxt "desc/squad/squad_1st_rifle_late_con(usa)"
+msgid "<c(A5A095)>(3+)</c> 1st.Div Rifle Squad [1944]"
+msgstr "<c(A5A095)>(3+)</c> 제1사단 소총 분대 [1944]"
+
+msgctxt "desc/squad/squad_1st_arm_rifle_mech_late_con(usa)"
+msgid "<c(A5A095)>(3+)</c> 1st.AD Rifle Squad (Mounted) [1944]"
+msgstr "<c(A5A095)>(3+)</c> 제1기갑사단 소총 분대 (탑승) [1944]"
+
+msgctxt "desc/squad/squad_eng_mech_late_con(usa)"
+msgid "<c(A5A095)>(2)</c> Engineer Squad (Mounted) [1944]"
+msgstr "<c(A5A095)>(2)</c> 공병 분대 (탑승) [1944]"
+
+msgctxt "desc/squad/squad_mountain_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> Mountain Rifle Squad [1945]"
+msgstr "<c(A5A095)>(3)</c> 산악 소총 분대 [1945]"
+
+msgctxt "desc/squad/squad_mountain_pio_late_con(usa)"
+msgid "<c(A5A095)>(3)</c> Mountain Pioneer Squad [1945]"
+msgstr "<c(A5A095)>(3)</c> 산악 공병 분대 [1945]"
+
+msgctxt "desc/squad/single_at4_con(usa)"
+msgid "M18 Recoilless Rifle Squad"
+msgstr "M18 무반동총 분대"

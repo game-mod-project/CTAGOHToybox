@@ -1,0 +1,25 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) ()\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/test_scenario/test/name"
+msgid "테스트"
+msgstr ""
+
+msgctxt "mission/single/test_scenario/test/name_big"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/test_scenario/test/test"
+msgid "이는 테스트 자막 메시지다. 컷신 하단에 흰색으로 표시되어 컷신 내내 남아 있어야 한다. 또한 talk 명령처럼 이 대사의 음성 파일도 자동으로 재생되어야 한다."
+msgstr ""

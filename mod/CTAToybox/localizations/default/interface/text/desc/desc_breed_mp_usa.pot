@@ -1,0 +1,5306 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell American MP soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/mp/usa/late/101st_speirs"
+msgid "<c(A6EAB1)>로널드 스피어스</c>"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_winters"
+msgid "<c(A6EAB1)>리처드 윈터스</c>"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/early/artilleryman"
+msgid "포병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/early/tankman"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/early/tank_commander"
+msgid "전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_company_1st_sgt"
+msgid "제1사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_company_com"
+msgid "제1사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_company_radio"
+msgid "제1사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_company_sgt"
+msgid "제1사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_company_xo"
+msgid "제1사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_platoon_com"
+msgid "제1사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_platoon_radio"
+msgid "제1사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_platoon_ssgt"
+msgid "제1사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_at"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_at_asst_m1"
+msgid "제1사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_at_asst_m1a1"
+msgid "제1사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_at_m1"
+msgid "제1사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_at_m1a1"
+msgid "제1사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_band"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_band2"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_bar"
+msgid "제1사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_bar_ammo"
+msgid "제1사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_bar_asst"
+msgid "제1사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_carbine"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_cpl"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_gren"
+msgid "제1사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_m1903"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_pfc"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_scout"
+msgid "제1사단 정찰 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_rifle_sniper"
+msgid "제1사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sec_lead_carbine"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sec_lead_rifle"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_asst"
+msgid "제1사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_asst_gren"
+msgid "제1사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_rifle"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_rifle_cpl"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_cpl"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_smg"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_sl_smg_m1928"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_smg"
+msgid "제1사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_smg_20"
+msgid "제1사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_smg_m1928"
+msgid "제1사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_at"
+msgid "제1특수임무부대 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_demo"
+msgid "제1특수임무부대 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_gren"
+msgid "제1특수임무부대 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_lmg"
+msgid "제1특수임무부대 경기관총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_mech"
+msgid "제1특수임무부대 정비병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_medic"
+msgid "제1특수임무부대 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_radio"
+msgid "제1특수임무부대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/1st_special_sec_lead"
+msgid "제1특수임무부대 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle"
+msgid "제3사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_at_asst"
+msgid "제3사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_at_m1a1"
+msgid "제3사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_band"
+msgid "제3사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_bar"
+msgid "제3사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_bar_ammo"
+msgid "제3사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_bar_asst"
+msgid "제3사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_gren"
+msgid "제3사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_rifle_sniper"
+msgid "제3사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_sl_asst"
+msgid "제3사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_sl_asst_gren"
+msgid "제3사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_sl_rifle"
+msgid "제3사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/3rd_sl_smg"
+msgid "제3사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle"
+msgid "제45사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_at_asst"
+msgid "제45사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_at_m1a1"
+msgid "제45사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_band"
+msgid "제45사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_bar"
+msgid "제45사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_bar_ammo"
+msgid "제45사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_bar_asst"
+msgid "제45사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_gren"
+msgid "제45사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_rifle_sniper"
+msgid "제45사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_sl_asst"
+msgid "제45사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_sl_asst_gren"
+msgid "제45사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_sl_rifle"
+msgid "제45사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/45th_sl_smg"
+msgid "제45사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_at_asst"
+msgid "제82공수사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_at_m1a1"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_carbine"
+msgid "제82공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_company_1st_sgt"
+msgid "제82공수사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_company_com"
+msgid "제82공수사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_company_radio"
+msgid "제82공수사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_company_radio"
+msgid "제82공수사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_company_sgt"
+msgid "제82공수사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_company_xo"
+msgid "제82공수사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_crew"
+msgid "제82공수사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_demo"
+msgid "제82공수사단 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_at_asst"
+msgid "제82공수사단 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_at_m1a1"
+msgid "제82공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_carbine"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_flamer"
+msgid "제82공수사단 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_rifle"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_sl"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_sl_asst_gren"
+msgid "제82공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_sl_smg"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_eng_smg"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_at_asst"
+msgid "제82 글라이더 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_at_m1a1"
+msgid "제82 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_bar"
+msgid "제82 글라이더 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_bar_ammo"
+msgid "제82 글라이더 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_bar_asst"
+msgid "제82 글라이더 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_mg_ammo"
+msgid "제82 글라이더 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_mg_asst"
+msgid "제82 글라이더 기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_mg_crew"
+msgid "제82 글라이더 기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_pio_carbine"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_pio_flamer"
+msgid "제82 글라이더 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_pio_rifle"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_pio_rifle_at"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_pio_sl"
+msgid "제82 글라이더 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_pio_sl_asst"
+msgid "제82 글라이더 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_rifle"
+msgid "제82 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_rifle_band2"
+msgid "제82 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_rifle_gren"
+msgid "제82 글라이더 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_sl_asst"
+msgid "제82 글라이더 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_sl_rifle"
+msgid "제82 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_sl_smg"
+msgid "제82 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_glider_sniper"
+msgid "제82 글라이더 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_mg_ammo"
+msgid "제82공수사단 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_mg_asst"
+msgid "제82공수사단 기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_mg_crew"
+msgid "제82공수사단 기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_pathfinder_carbine"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_pathfinder_rifle"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_pathfinder_smg"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_platoon_com"
+msgid "제82공수사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_platoon_com_asst"
+msgid "제82공수사단 소대장 보좌 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_platoon_radio"
+msgid "제82공수사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_platoon_ssgt"
+msgid "제82공수사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_recon_rifle"
+msgid "제82공수사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_recon_tl"
+msgid "제82 공수 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_rifle"
+msgid "제82공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_rifle_gren"
+msgid "제82공수사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_sl"
+msgid "제82공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_sl_asst"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_sl_asst_gren"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_sl_asst_smg"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_sl_smg"
+msgid "제82공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_smg"
+msgid "제82공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/82nd_sniper"
+msgid "제82공수사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_asst_m1"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_asst_m1a1"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_gren"
+msgid "대전차 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_m1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/antitank_m1a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_company_1st_sgt"
+msgid "제1기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_company_com"
+msgid "제1기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_company_sgt"
+msgid "제1기갑사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_company_ssgt"
+msgid "제1기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_driver"
+msgid "제1기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_medic"
+msgid "제1기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_platoon_com"
+msgid "제1기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_platoon_com_mp"
+msgid "제1기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_platoon_ssgt"
+msgid "제1기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_recon_carbine"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_recon_rifle"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_recon_smg"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_recon_tl"
+msgid "제1 기갑 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle"
+msgid "제1기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_at"
+msgid "제1기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_at_asst_m1"
+msgid "제1기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_at_asst_m1a1"
+msgid "제1기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_at_m1"
+msgid "제1기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_at_m1a1"
+msgid "제1기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_band"
+msgid "제1기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_band2"
+msgid "제1기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_bar"
+msgid "제1기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_bar_ammo"
+msgid "제1기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_bar_asst"
+msgid "제1기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_gren"
+msgid "제1기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_rifle_sniper"
+msgid "제1기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_sl_asst"
+msgid "제1기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_sl_asst_carbine"
+msgid "제1기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_sl_carbine"
+msgid "제1기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_sl_rifle"
+msgid "제1기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_vehicle_com"
+msgid "제1기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_vehicle_crew"
+msgid "제1기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar1_vehicle_crew"
+msgid "제1기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_company_1st_sgt"
+msgid "제2기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_company_com"
+msgid "제2기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_company_sgt"
+msgid "제2기갑사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_company_ssgt"
+msgid "제2기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_driver"
+msgid "제2기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_medic"
+msgid "제2기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_platoon_com"
+msgid "제2기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_platoon_com_mp"
+msgid "제2기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_platoon_ssgt"
+msgid "제2기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_recon_carbine"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_recon_rifle"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_recon_smg"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_recon_tl"
+msgid "제2기갑사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_at"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_at_asst"
+msgid "제2기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_at_m1a1"
+msgid "제2기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_band"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_band2"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_bar"
+msgid "제2기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_bar_ammo"
+msgid "제2기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_bar_asst"
+msgid "제2기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_gren"
+msgid "제2기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_rifle_sniper"
+msgid "제2기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_sl_asst"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_sl_asst_carbine"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_sl_carbine"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_sl_rifle"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_tank_com"
+msgid "제2기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_tankman"
+msgid "제2기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_tankman_m1"
+msgid "제2기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_vehicle_com"
+msgid "제2기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ar2_vehicle_crew"
+msgid "제2기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/artilleryman"
+msgid "포병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/cav_driver"
+msgid "기병 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/cav_gunner"
+msgid "기병 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/cav_rifle"
+msgid "기병 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/cav_sec_lead"
+msgid "기병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/company_1st_sgt"
+msgid "중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/company_com"
+msgid "중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/company_radio"
+msgid "중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/company_sgt"
+msgid "중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/company_xo"
+msgid "중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/crew"
+msgid "승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/driver"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/driver_smg"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_at_asst_m1"
+msgid "공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_at_asst_m1a1"
+msgid "공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_at_m1"
+msgid "공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_at_m1a1"
+msgid "공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_builder"
+msgid "공병 건설병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_flamer"
+msgid "공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_gren"
+msgid "공병 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_mine_ap"
+msgid "공병 AP 지뢰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_mine_at"
+msgid "공병 대전차 지뢰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_recon"
+msgid "공병 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_recon_gren"
+msgid "공병 정찰 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_recon_sec_lead"
+msgid "공병 정찰 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_recon_tl"
+msgid "공병 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_rifle"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_shotgun"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_sl"
+msgid "공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_sl_asst"
+msgid "공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_sl_asst_gren"
+msgid "공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/engineer_smg"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/fo"
+msgid "전방 관측병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/fo_radio_105"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/fo_radio_155"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/fo_radio_203"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/medic"
+msgid "위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mg_crew"
+msgid "기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mg_crew_asst"
+msgid "기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mp_carbine"
+msgid "헌병 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mp_rifle"
+msgid "헌병 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mp_rifle_m1903"
+msgid "헌병 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mp_sl_asst"
+msgid "헌병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mp_sl_rifle"
+msgid "헌병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/mp_smg"
+msgid "헌병 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_1st_sgt"
+msgid "First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_cpl_carbine"
+msgid "Corporal [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_cpl_rifle"
+msgid "Corporal [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_msgt"
+msgid "Master Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_sgt_carbine"
+msgid "Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_sgt_rifle"
+msgid "Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_ssgt_carbine"
+msgid "Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_ssgt_rifle"
+msgid "Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_tsgt_carbine"
+msgid "Technical Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/nco_tsgt_rifle"
+msgid "Technical Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_1lt"
+msgid "First Lieutenant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_2lt"
+msgid "Second Lieutenant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_cpt"
+msgid "Captain [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_ltc"
+msgid "Lieutenant Colonel [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/officer_maj"
+msgid "Major [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/pilot"
+msgid "조종사 [USAAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/platoon_com"
+msgid "소대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/platoon_radio"
+msgid "소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/platoon_ssgt"
+msgid "소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_at_m1a1"
+msgid "레인저 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_bar"
+msgid "레인저 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_bar_ammo"
+msgid "레인저 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_bar_asst"
+msgid "레인저 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_company_1st_sgt"
+msgid "레인저 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_company_com"
+msgid "레인저 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_crew"
+msgid "레인저 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_gren"
+msgid "레인저 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_mg_ammo"
+msgid "레인저 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_mg_crew"
+msgid "레인저 기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_mg_crew_asst"
+msgid "레인저 기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_platoon_com"
+msgid "레인저 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_platoon_ssgt"
+msgid "레인저 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_rifle"
+msgid "레인저 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sec_asst_boys"
+msgid "레인저 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sec_asst_m1a1"
+msgid "레인저 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sec_lead"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sl_rifle_cpl"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sl_rifle_gren_cpl"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sl_rifle_sgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sl_smg_cpl"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sl_smg_sgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_smg"
+msgid "레인저 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/ranger_sniper"
+msgid "레인저 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_at"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_at_asst_m1"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_at_asst_m1a1"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_at_m1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_at_m1a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_band"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_band2"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_bar"
+msgid "자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_bar_ammo"
+msgid "자동소총수 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_bar_asst"
+msgid "자동소총수 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_carbine"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_cpl"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_gren"
+msgid "소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_m1903"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_pfc"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_scout"
+msgid "정찰 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/rifle_sniper"
+msgid "저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sec_lead_carbine"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sec_lead_rifle"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sl_asst"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sl_asst_gren"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sl_rifle"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sl_rifle_cpl"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sl_smg"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/sl_smg_m1928"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/smg"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/smg_20"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/smg_m1928"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_commander"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_com"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_com_1lt"
+msgid "제1기갑사단 전차 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_com_cpt"
+msgid "제1기갑사단 전차 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_com_m1"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_com_smg"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tank_com_ssgt"
+msgid "제1기갑사단 전차 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman_cpl"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman_m1"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman_pfc"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman_smg"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman_t4"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/tankman_t5"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vehicle_com"
+msgid "차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vehicle_crew"
+msgid "차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vehicle_crew_m1"
+msgid "차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_at"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_at_asst_m1"
+msgid "베테랑 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_at_asst_m1a1"
+msgid "베테랑 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_at_m1"
+msgid "베테랑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_at_m1a1"
+msgid "베테랑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_band"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_bar"
+msgid "베테랑 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_bar_ammo"
+msgid "베테랑 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_bar_asst"
+msgid "베테랑 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_gren"
+msgid "베테랑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_rifle_sniper"
+msgid "베테랑 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_sl_asst"
+msgid "베테랑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_sl_asst_gren"
+msgid "베테랑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_sl_rifle"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_sl_smg"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/mid/vet_smg"
+msgid "베테랑 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_company_1st_sgt"
+msgid "제1사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_company_com"
+msgid "제1사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_company_radio"
+msgid "제1사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_company_xo"
+msgid "제1사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_crew"
+msgid "제1사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_driver"
+msgid "제1사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_company_1st_sgt"
+msgid "제1사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_company_com"
+msgid "제1사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_company_radio"
+msgid "제1사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_company_xo"
+msgid "제1사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_crew"
+msgid "제1사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_driver"
+msgid "제1사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_medic"
+msgid "제1사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_platoon_com"
+msgid "제1사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_platoon_radio"
+msgid "제1사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_platoon_tsgt"
+msgid "제1사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_at_asst"
+msgid "제1사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_at_m9a1"
+msgid "제1사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_band"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_bar"
+msgid "제1사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_bar_ammo"
+msgid "제1사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_bar_asst"
+msgid "제1사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_gren"
+msgid "제1사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_rifle_sniper"
+msgid "제1사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_sl_asst"
+msgid "제1사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_sl_asst_gren"
+msgid "제1사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_sl_rifle"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_sl_smg"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_late_sl_smg_m3"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_medic"
+msgid "제1사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_platoon_com"
+msgid "제1사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_platoon_radio"
+msgid "제1사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_platoon_tsgt"
+msgid "제1사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_at"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_at_asst"
+msgid "제1사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_at_m1a1"
+msgid "제1사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_at_m9a1"
+msgid "제1사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_band"
+msgid "제1사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_bar"
+msgid "제1사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_bar_ammo"
+msgid "제1사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_bar_asst"
+msgid "제1사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_gren"
+msgid "제1사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_rifle_sniper"
+msgid "제1사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_sl_asst"
+msgid "제1사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_sl_asst_gren"
+msgid "제1사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_sl_rifle"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_sl_smg"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_sl_smg_m3"
+msgid "제1사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_smg"
+msgid "제1사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_smg_m3"
+msgid "제1사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_at"
+msgid "제1특수임무부대 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_demo"
+msgid "제1특수임무부대 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_gren"
+msgid "제1특수임무부대 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_lmg"
+msgid "제1특수임무부대 경기관총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_mech"
+msgid "제1특수임무부대 정비병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_medic"
+msgid "제1특수임무부대 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_radio"
+msgid "제1특수임무부대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/1st_special_sec_lead"
+msgid "제1특수임무부대 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle"
+msgid "제29사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_at_asst"
+msgid "제29사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_at_m9a1"
+msgid "제29사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_band"
+msgid "제29사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_bar"
+msgid "제29사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_bar_ammo"
+msgid "제29사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_bar_asst"
+msgid "제29사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_gren"
+msgid "제29사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_rifle_sniper"
+msgid "제29사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_sl_asst"
+msgid "제29사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_sl_asst_gren"
+msgid "제29사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_sl_rifle"
+msgid "제29사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_late_sl_smg"
+msgid "제29사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle"
+msgid "제29사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_at_asst"
+msgid "제29사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_at_m1a1"
+msgid "제29사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_band"
+msgid "제29사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_bar"
+msgid "제29사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_bar_ammo"
+msgid "제29사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_bar_asst"
+msgid "제29사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_gren"
+msgid "제29사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_rifle_sniper"
+msgid "제29사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_sl_asst"
+msgid "제29사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_sl_asst_gren"
+msgid "제29사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_sl_rifle"
+msgid "제29사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/29th_sl_smg"
+msgid "제29사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_at_asst"
+msgid "제82공수사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_at_m1a1"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_at_m9"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_at_m9a1"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_bar"
+msgid "제82공수사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_bar_asst"
+msgid "제82공수사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_carbine"
+msgid "제82공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_company_1st_sgt"
+msgid "제82공수사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_company_com"
+msgid "제82공수사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_company_radio"
+msgid "제82공수사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_company_sgt"
+msgid "제82공수사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_company_xo"
+msgid "제82공수사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_crew"
+msgid "제82공수사단 화기 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_demo"
+msgid "제82공수사단 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_demo_off"
+msgid "제82공수사단 폭파 장교 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_at_asst"
+msgid "제82공수사단 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_at_m1a1"
+msgid "제82공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_at_m9a1"
+msgid "제82공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_carbine"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_flamer"
+msgid "제82공수사단 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_rifle"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl_asst"
+msgid "제82공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl_asst_cpl_gren"
+msgid "제82공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl_asst_gren"
+msgid "제82공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl_sgt"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl_sgt_smg"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_sl_smg"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_eng_smg"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_at_asst"
+msgid "제82 글라이더 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_at_m1a1"
+msgid "제82 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_at_m9a1"
+msgid "제82 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_bar"
+msgid "제82 글라이더 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_bar_ammo"
+msgid "제82 글라이더 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_bar_asst"
+msgid "제82 글라이더 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_mg"
+msgid "제82 글라이더 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_mg_ammo"
+msgid "제82 글라이더 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_mg_asst"
+msgid "제82 글라이더 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_pio_carbine"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_pio_flamer"
+msgid "제82 글라이더 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_pio_rifle"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_pio_rifle_at"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_pio_sl"
+msgid "제82 글라이더 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_pio_sl_asst"
+msgid "제82 글라이더 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_rifle"
+msgid "제82 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_rifle_band2"
+msgid "제82 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_rifle_gren"
+msgid "제82 글라이더 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_sl_asst"
+msgid "제82 글라이더 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_sl_rifle"
+msgid "제82 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_sl_smg"
+msgid "제82 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_glider_sniper"
+msgid "제82 글라이더 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_at_asst"
+msgid "제82공수사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_at_m1a1"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_at_m9"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_at_m9a1"
+msgid "제82공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_bar"
+msgid "제82공수사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_bar_asst"
+msgid "제82공수사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_carbine"
+msgid "제82공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_company_1st_sgt"
+msgid "제82공수사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_company_com"
+msgid "제82공수사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_company_radio"
+msgid "제82공수사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_company_sgt"
+msgid "제82공수사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_company_xo"
+msgid "제82공수사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_crew"
+msgid "제82공수사단 화기 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_demo"
+msgid "제82공수사단 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_demo_off"
+msgid "제82공수사단 폭파 장교 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_at_asst"
+msgid "제82공수사단 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_at_m9a1"
+msgid "제82공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_carbine"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_flamer"
+msgid "제82공수사단 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_rifle"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_sl"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_sl_asst"
+msgid "제82공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_sl_asst_gren"
+msgid "제82공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_sl_smg"
+msgid "제82공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_eng_smg"
+msgid "제82공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_at_asst"
+msgid "제82 글라이더 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_at_m1a1"
+msgid "제82 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_at_m9a1"
+msgid "제82 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_bar"
+msgid "제82 글라이더 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_bar_ammo"
+msgid "제82 글라이더 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_bar_asst"
+msgid "제82 글라이더 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_mg"
+msgid "제82 글라이더 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_mg_ammo"
+msgid "제82 글라이더 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_mg_asst"
+msgid "제82 글라이더 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_pio_carbine"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_pio_flamer"
+msgid "제82 글라이더 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_pio_rifle"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_pio_rifle_at"
+msgid "제82 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_pio_sl"
+msgid "제82 글라이더 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_pio_sl_asst"
+msgid "제82 글라이더 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_rifle"
+msgid "제82 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_rifle_band2"
+msgid "제82 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_rifle_gren"
+msgid "제82 글라이더 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_sl_asst"
+msgid "제82 글라이더 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_sl_rifle"
+msgid "제82 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_sl_smg"
+msgid "제82 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_glider_sniper"
+msgid "제82 글라이더 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_medic"
+msgid "제82공수사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_mg"
+msgid "제82공수사단 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_mg_ammo"
+msgid "제82공수사단 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_mg_asst"
+msgid "제82공수사단 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_pathfinder_carbine"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_pathfinder_rifle"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_pathfinder_smg"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_platoon_com"
+msgid "제82공수사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_platoon_radio"
+msgid "제82공수사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_platoon_ssgt"
+msgid "제82공수사단 소대 향도 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_platoon_tsgt"
+msgid "제82공수사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_recon_rifle"
+msgid "제82공수사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_recon_tl"
+msgid "제82공수사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_rifle"
+msgid "제82공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_rifle_gren"
+msgid "제82공수사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_sl"
+msgid "제82공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_sl_asst"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_sl_asst_gren"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_smg"
+msgid "제82공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_smg_m3"
+msgid "제82공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_late_sniper"
+msgid "제82공수사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_medic"
+msgid "제82공수사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_mg"
+msgid "제82공수사단 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_mg_ammo"
+msgid "제82공수사단 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_mg_asst"
+msgid "제82공수사단 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_pathfinder_carbine"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_pathfinder_rifle"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_pathfinder_smg"
+msgid "제82공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_platoon_com"
+msgid "제82공수사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_platoon_com_asst"
+msgid "제82공수사단 부소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_platoon_radio"
+msgid "제82공수사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_platoon_ssgt"
+msgid "제82공수사단 소대 향도 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_platoon_tsgt"
+msgid "제82공수사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_recon_rifle"
+msgid "제82공수사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_recon_tl"
+msgid "제82공수사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_rifle"
+msgid "제82공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_rifle_gren"
+msgid "제82공수사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl"
+msgid "제82공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl_asst"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl_asst_cpl"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl_asst_cpl_gren"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl_asst_gren"
+msgid "제82공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl_sgt"
+msgid "제82공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sl_sgt_smg"
+msgid "제82공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_smg"
+msgid "제82공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/82nd_sniper"
+msgid "제82공수사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_at_asst"
+msgid "제101공수사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_at_m1a1"
+msgid "제101공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_at_m9"
+msgid "제101공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_at_m9a1"
+msgid "제101공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_bar"
+msgid "제101공수사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_bar_asst"
+msgid "제101공수사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_carbine"
+msgid "제101공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_company_1st_sgt"
+msgid "제101공수사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_company_com"
+msgid "제101공수사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_company_radio"
+msgid "제101공수사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_company_sgt"
+msgid "제101공수사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_company_xo"
+msgid "제101공수사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_crew"
+msgid "제101공수사단 화기 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_demo"
+msgid "제101공수사단 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_demo_off"
+msgid "제101공수사단 폭파 장교 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_at_asst"
+msgid "제101공수사단 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_at_m1a1"
+msgid "제101공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_at_m9a1"
+msgid "제101공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_carbine"
+msgid "제101공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_flamer"
+msgid "제101공수사단 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_rifle"
+msgid "제101공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl"
+msgid "제101공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl_asst"
+msgid "제101공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl_asst_cpl_gren"
+msgid "제101공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl_asst_gren"
+msgid "제101공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl_sgt"
+msgid "제101공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl_sgt_smg"
+msgid "제101공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_sl_smg"
+msgid "제101공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_eng_smg"
+msgid "제101공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_at_asst"
+msgid "제101 글라이더 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_at_m1a1"
+msgid "제101 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_at_m9a1"
+msgid "제101 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_bar"
+msgid "제101 글라이더 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_bar_ammo"
+msgid "제101 글라이더 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_bar_asst"
+msgid "제101 글라이더 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_mg"
+msgid "제101 글라이더 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_mg_ammo"
+msgid "제101 글라이더 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_mg_asst"
+msgid "제101 글라이더 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_pio_carbine"
+msgid "제101 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_pio_flamer"
+msgid "제101 글라이더 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_pio_rifle"
+msgid "제101 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_pio_rifle_at"
+msgid "제101 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_pio_sl"
+msgid "제101 글라이더 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_pio_sl_asst"
+msgid "제101 글라이더 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_rifle"
+msgid "제101 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_rifle_band2"
+msgid "제101 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_rifle_gren"
+msgid "제101 글라이더 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_sl_asst"
+msgid "제101 글라이더 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_sl_rifle"
+msgid "제101 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_sl_smg"
+msgid "제101 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_glider_sniper"
+msgid "제101 글라이더 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_at_asst"
+msgid "제101공수사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_at_m1a1"
+msgid "제101공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_at_m9"
+msgid "제101공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_at_m9a1"
+msgid "제101공수사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_bar"
+msgid "제101공수사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_bar_asst"
+msgid "제101공수사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_carbine"
+msgid "제101공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_company_1st_sgt"
+msgid "제101공수사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_company_com"
+msgid "제101공수사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_company_radio"
+msgid "제101공수사단 중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_company_sgt"
+msgid "제101공수사단 중대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_company_xo"
+msgid "제101공수사단 중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_crew"
+msgid "제101공수사단 화기 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_demo"
+msgid "제101공수사단 폭파병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_demo_off"
+msgid "제101공수사단 폭파 장교 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_at_asst"
+msgid "제101공수사단 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_at_m9a1"
+msgid "제101공수사단 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_carbine"
+msgid "제101공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_flamer"
+msgid "제101공수사단 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_rifle"
+msgid "제101공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_sl"
+msgid "제101공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_sl_asst"
+msgid "제101공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_sl_asst_gren"
+msgid "제101공수사단 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_sl_smg"
+msgid "제101공수사단 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_eng_smg"
+msgid "제101공수사단 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_at_asst"
+msgid "제101 글라이더 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_at_m1a1"
+msgid "제101 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_at_m9a1"
+msgid "제101 글라이더 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_bar"
+msgid "제101 글라이더 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_bar_ammo"
+msgid "제101 글라이더 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_bar_asst"
+msgid "제101 글라이더 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_mg"
+msgid "제101 글라이더 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_mg_ammo"
+msgid "제101 글라이더 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_mg_asst"
+msgid "제101 글라이더 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_pio_carbine"
+msgid "제101 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_pio_flamer"
+msgid "제101 글라이더 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_pio_rifle"
+msgid "제101 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_pio_rifle_at"
+msgid "제101 글라이더 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_pio_sl"
+msgid "제101 글라이더 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_pio_sl_asst"
+msgid "제101 글라이더 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_rifle"
+msgid "제101 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_rifle_band2"
+msgid "제101 글라이더 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_rifle_gren"
+msgid "제101 글라이더 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_sl_asst"
+msgid "제101 글라이더 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_sl_rifle"
+msgid "제101 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_sl_smg"
+msgid "제101 글라이더 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_glider_sniper"
+msgid "제101 글라이더 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_medic"
+msgid "제101공수사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_mg"
+msgid "제101공수사단 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_mg_ammo"
+msgid "제101공수사단 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_mg_asst"
+msgid "제101공수사단 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_pathfinder_carbine"
+msgid "제101공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_pathfinder_rifle"
+msgid "제101공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_pathfinder_smg"
+msgid "제101공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_platoon_com"
+msgid "제101공수사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_platoon_radio"
+msgid "제101공수사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_platoon_ssgt"
+msgid "제101공수사단 소대 향도 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_platoon_tsgt"
+msgid "제101공수사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_recon_rifle"
+msgid "제101공수사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_recon_tl"
+msgid "제101공수사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_rifle"
+msgid "제101공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_rifle_gren"
+msgid "제101공수사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_sl"
+msgid "제101공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_sl_asst"
+msgid "제101공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_sl_asst_gren"
+msgid "제101공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_smg"
+msgid "제101공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_smg_m3"
+msgid "제101공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_late_sniper"
+msgid "제101공수사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_medic"
+msgid "제101공수사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_mg"
+msgid "제101공수사단 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_mg_ammo"
+msgid "제101공수사단 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_mg_asst"
+msgid "제101공수사단 기관총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_pathfinder_carbine"
+msgid "제101공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_pathfinder_rifle"
+msgid "제101공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_pathfinder_smg"
+msgid "제101공수사단 패스파인더 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_platoon_com"
+msgid "제101공수사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_platoon_com_asst"
+msgid "제101공수사단 부소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_platoon_radio"
+msgid "제101공수사단 소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_platoon_ssgt"
+msgid "제101공수사단 소대 향도 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_platoon_tsgt"
+msgid "제101공수사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_recon_rifle"
+msgid "제101공수사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_recon_tl"
+msgid "제101공수사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_rifle"
+msgid "제101공수사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_rifle_gren"
+msgid "제101공수사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl"
+msgid "제101공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl_asst"
+msgid "제101공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl_asst_cpl"
+msgid "제101공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl_asst_cpl_gren"
+msgid "제101공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl_asst_gren"
+msgid "제101공수사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl_sgt"
+msgid "제101공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sl_sgt_smg"
+msgid "제101공수사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_smg"
+msgid "제101공수사단 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/101st_sniper"
+msgid "제101공수사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_asst"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_gren"
+msgid "대전차 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_m1a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_m9"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_m9a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/antitank_m9a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_carbine_gren"
+msgid "기갑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_company_1st_sgt"
+msgid "기갑 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_company_com"
+msgid "기갑 중대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_company_ssgt"
+msgid "기갑 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_crew"
+msgid "기갑 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_driver"
+msgid "기갑 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_carbine_gren"
+msgid "기갑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_company_1st_sgt"
+msgid "기갑 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_company_com"
+msgid "기갑 중대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_company_ssgt"
+msgid "기갑 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_crew"
+msgid "기갑 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_driver"
+msgid "기갑 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_medic"
+msgid "기갑 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_platoon_com"
+msgid "기갑 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_platoon_tsgt"
+msgid "기갑 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_recon_rifle"
+msgid "기갑 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_recon_smg"
+msgid "기갑 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_recon_tl"
+msgid "기갑 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_at_asst"
+msgid "기갑 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_at_m1a1"
+msgid "기갑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_at_m9a1"
+msgid "기갑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_band"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_band2"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_bar"
+msgid "기갑 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_bar_ammo"
+msgid "기갑 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_bar_asst"
+msgid "기갑 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_gren"
+msgid "기갑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_rifle_sniper"
+msgid "기갑 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_sl_asst"
+msgid "기갑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_sl_asst_carbine"
+msgid "기갑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_sl_carbine"
+msgid "기갑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_late_sl_rifle"
+msgid "기갑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_medic"
+msgid "기갑 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_platoon_com"
+msgid "기갑 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_platoon_com_mp"
+msgid "기갑 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_platoon_tsgt"
+msgid "기갑 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_recon_rifle"
+msgid "기갑 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_recon_smg"
+msgid "기갑 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_recon_tl"
+msgid "기갑 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_at"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_at_asst"
+msgid "기갑 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_at_m1a1"
+msgid "기갑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_at_m9a1"
+msgid "기갑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_band"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_band2"
+msgid "기갑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_bar"
+msgid "기갑 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_bar_ammo"
+msgid "기갑 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_bar_asst"
+msgid "기갑 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_gren"
+msgid "기갑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_rifle_sniper"
+msgid "기갑 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_sl_asst"
+msgid "기갑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_sl_asst_carbine"
+msgid "기갑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_sl_carbine"
+msgid "기갑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar_sl_rifle"
+msgid "기갑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_company_1st_sgt"
+msgid "제1기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_company_com"
+msgid "제1기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_company_ssgt"
+msgid "제1기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_crew"
+msgid "제1기갑사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_driver"
+msgid "제1기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_company_1st_sgt"
+msgid "제1기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_company_com"
+msgid "제1기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_company_ssgt"
+msgid "제1기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_crew"
+msgid "제1기갑사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_driver"
+msgid "제1기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_medic"
+msgid "제1기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_platoon_com"
+msgid "제1기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_platoon_tsgt"
+msgid "제1기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_recon_rifle"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_recon_smg"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_recon_tl"
+msgid "제1 기갑 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_at_asst"
+msgid "제1기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_at_m9a1"
+msgid "제1기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_band"
+msgid "제1기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_bar"
+msgid "제1기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_bar_ammo"
+msgid "제1기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_bar_asst"
+msgid "제1기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_gren"
+msgid "제1기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_rifle_sniper"
+msgid "제1기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_sl_asst"
+msgid "제1기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_sl_asst_carbine"
+msgid "제1기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_sl_carbine"
+msgid "제1기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_late_sl_rifle"
+msgid "제1기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_medic"
+msgid "제1기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_platoon_com"
+msgid "제1기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_platoon_com_mp"
+msgid "제1기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_platoon_tsgt"
+msgid "제1기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_recon_rifle"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_recon_smg"
+msgid "제1기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_recon_tl"
+msgid "제1 기갑 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_at_asst"
+msgid "제1기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_at_m1a1"
+msgid "제1기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_at_m9a1"
+msgid "제1기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_band"
+msgid "제1기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_bar"
+msgid "제1기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_bar_ammo"
+msgid "제1기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_bar_asst"
+msgid "제1기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_gren"
+msgid "제1기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_rifle_sniper"
+msgid "제1기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_sl_asst"
+msgid "제1기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_sl_asst_carbine"
+msgid "제1기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_sl_carbine"
+msgid "제1기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_sl_rifle"
+msgid "제1기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_tank_com"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_tank_com_m1"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_tank_com_m3"
+msgid "제1기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_tankman"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_tankman_m1"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar1_tankman_m3"
+msgid "제1기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_at_asst"
+msgid "제2기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_at_m1a1"
+msgid "제2기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_band"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_bar"
+msgid "제2기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_bar_ammo"
+msgid "제2기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_bar_asst"
+msgid "제2기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_rifle_gren"
+msgid "제2기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_sl_asst"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_camo_sl_rifle"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_carbine_gren"
+msgid "제2기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_company_1st_sgt"
+msgid "제2기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_company_com"
+msgid "제2기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_company_ssgt"
+msgid "제2기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_crew"
+msgid "제2기갑사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_driver"
+msgid "제2기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_carbine_gren"
+msgid "제2기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_company_1st_sgt"
+msgid "제2기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_company_com"
+msgid "제2기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_company_ssgt"
+msgid "제2기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_crew"
+msgid "제2기갑사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_driver"
+msgid "제2기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_medic"
+msgid "제2기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_platoon_com"
+msgid "제2기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_platoon_tsgt"
+msgid "제2기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_recon_rifle"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_recon_smg"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_recon_tl"
+msgid "제2기갑사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_at"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_at_asst"
+msgid "제2기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_at_m1a1"
+msgid "제2기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_at_m9a1"
+msgid "제2기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_band"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_band2"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_bar"
+msgid "제2기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_bar_ammo"
+msgid "제2기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_bar_asst"
+msgid "제2기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_gren"
+msgid "제2기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_rifle_sniper"
+msgid "제2기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_sl_asst"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_sl_asst_carbine"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_sl_carbine"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_late_sl_rifle"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_medic"
+msgid "제2기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_platoon_com"
+msgid "제2기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_platoon_tsgt"
+msgid "제2기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_recon_rifle"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_recon_smg"
+msgid "제2기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_recon_tl"
+msgid "제2기갑사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_at"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_at_asst"
+msgid "제2기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_at_m1a1"
+msgid "제2기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_at_m9a1"
+msgid "제2기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_band"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_band2"
+msgid "제2기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_bar"
+msgid "제2기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_bar_ammo"
+msgid "제2기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_bar_ammo2"
+msgid "제2기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_bar_asst"
+msgid "제2기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_bar_asst2"
+msgid "제2기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_gren"
+msgid "제2기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_rifle_sniper"
+msgid "제2기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_sl_asst"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_sl_asst_carbine"
+msgid "제2기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_sl_carbine"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_sl_rifle"
+msgid "제2기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tank_com"
+msgid "제2기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tank_com_m1"
+msgid "제2기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tank_com_m1a1"
+msgid "제2기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tank_com_m3"
+msgid "제2기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tankman"
+msgid "제2기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tankman_m1"
+msgid "제2기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_tankman_m3"
+msgid "제2기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_com"
+msgid "제2기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_com_m1"
+msgid "제2기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_com_m1a1"
+msgid "제2기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_com_m3"
+msgid "제2기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_crew"
+msgid "제2기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_crew_m1"
+msgid "제2기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar2_vehicle_crew_m3"
+msgid "제2기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_carbine_gren"
+msgid "제3기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_company_1st_sgt"
+msgid "제3기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_company_com"
+msgid "제3기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_company_ssgt"
+msgid "제3기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_crew"
+msgid "제3기갑사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_driver"
+msgid "제3기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_carbine_gren"
+msgid "제3기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_company_1st_sgt"
+msgid "제3기갑사단 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_company_com"
+msgid "제3기갑사단 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_company_ssgt"
+msgid "제3기갑사단 중대 Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_crew"
+msgid "제3기갑사단 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_driver"
+msgid "제3기갑사단 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_medic"
+msgid "제3기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_platoon_com"
+msgid "제3기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_platoon_tsgt"
+msgid "제3기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_recon_rifle"
+msgid "제3기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_recon_smg"
+msgid "제3기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_recon_tl"
+msgid "제3기갑사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_at_asst"
+msgid "제3기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_at_m1a1"
+msgid "제3기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_at_m9a1"
+msgid "제3기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_band"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_band2"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_bar"
+msgid "제3기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_bar_ammo"
+msgid "제3기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_bar_asst"
+msgid "제3기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_gren"
+msgid "제3기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_rifle_sniper"
+msgid "제3기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_sl_asst"
+msgid "제3기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_sl_asst_carbine"
+msgid "제3기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_sl_carbine"
+msgid "제3기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_late_sl_rifle"
+msgid "제3기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_medic"
+msgid "제3기갑사단 위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_platoon_com"
+msgid "제3기갑사단 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_platoon_tsgt"
+msgid "제3기갑사단 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_recon_rifle"
+msgid "제3기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_recon_smg"
+msgid "제3기갑사단 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_recon_tl"
+msgid "제3기갑사단 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_at"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_at_asst"
+msgid "제3기갑사단 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_at_m1a1"
+msgid "제3기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_at_m9a1"
+msgid "제3기갑사단 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_band"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_band2"
+msgid "제3기갑사단 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_bar"
+msgid "제3기갑사단 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_bar_ammo"
+msgid "제3기갑사단 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_bar_asst"
+msgid "제3기갑사단 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_gren"
+msgid "제3기갑사단 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_rifle_sniper"
+msgid "제3기갑사단 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_sl_asst"
+msgid "제3기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_sl_asst_carbine"
+msgid "제3기갑사단 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_sl_carbine"
+msgid "제3기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_sl_rifle"
+msgid "제3기갑사단 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tank_com"
+msgid "제3기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tank_com_m1"
+msgid "제3기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tank_com_m1a1"
+msgid "제3기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tank_com_m3"
+msgid "제3기갑사단 전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tankman"
+msgid "제3기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tankman_m1"
+msgid "제3기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tankman_m3"
+msgid "제3기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_tankman_t5_m3"
+msgid "제3기갑사단 전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_com"
+msgid "제3기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_com_m1"
+msgid "제3기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_com_m1a1"
+msgid "제3기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_com_m3"
+msgid "제3기갑사단 차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_crew"
+msgid "제3기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_crew_m1"
+msgid "제3기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ar3_vehicle_crew_m3"
+msgid "제3기갑사단 차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/artilleryman"
+msgid "포병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/artilleryman_1"
+msgid "포병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/cav_driver"
+msgid "기병 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/cav_gunner"
+msgid "기병 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/cav_tl"
+msgid "기병 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/company_1st_sgt"
+msgid "중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/company_com"
+msgid "중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/company_radio"
+msgid "중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/company_radio_vt"
+msgid "중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/company_xo"
+msgid "중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/crew"
+msgid "승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/driver"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/driver_m3"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_at_asst"
+msgid "공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_at_m1a1"
+msgid "공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_at_m9a1"
+msgid "공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_builder"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_flamer"
+msgid "공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_gren"
+msgid "공병 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_mine_ap"
+msgid "공병 AP 지뢰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_mine_at"
+msgid "공병 대전차 지뢰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_recon"
+msgid "공병 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_recon_gren"
+msgid "공병 정찰 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_recon_sec_lead"
+msgid "공병 정찰 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_recon_tl"
+msgid "공병 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_rifle"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_shotgun"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_sl"
+msgid "공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_sl_asst"
+msgid "공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/engineer_smg"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/fo"
+msgid "전방 관측병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/fo_radio_105"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/fo_radio_155"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/fo_radio_203"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/fo_radio_240"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_asst"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_gren"
+msgid "대전차 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_m1a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_m9"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_m9a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_m18"
+msgid "무반동포 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_m18_asst"
+msgid "무반동포 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_antitank_m18_ammo"
+msgid "무반동포 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_artilleryman"
+msgid "포병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_cav_driver"
+msgid "기병 운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_cav_gunner"
+msgid "기병 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_cav_tl"
+msgid "기병 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_company_1st_sgt"
+msgid "중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_company_com"
+msgid "중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_company_radio"
+msgid "중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_company_radio_vt"
+msgid "중대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_company_xo"
+msgid "중대 부지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_crew"
+msgid "승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_driver"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_driver_m3"
+msgid "운전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_at_asst"
+msgid "공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_at_m1a1"
+msgid "공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_at_m9a1"
+msgid "공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_builder"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_flamer"
+msgid "공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_gren"
+msgid "공병 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_mine_ap"
+msgid "공병 AP 지뢰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_mine_at"
+msgid "공병 대전차 지뢰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_recon"
+msgid "공병 정찰병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_recon_gren"
+msgid "공병 정찰 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_recon_sec_lead"
+msgid "공병 정찰 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_recon_tl"
+msgid "공병 정찰 조장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_rifle"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_shotgun"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_sl"
+msgid "공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_sl_asst"
+msgid "공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_engineer_smg"
+msgid "공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo"
+msgid "전방 관측병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_105"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_105_vt"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_155"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_155_vt"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_203"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_203_vt"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_fo_radio_240"
+msgid "전방 관측 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_medic"
+msgid "위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_mg_crew"
+msgid "기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_mg_crew_asst"
+msgid "기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_platoon_com"
+msgid "소대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_platoon_radio"
+msgid "소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_platoon_tsgt"
+msgid "소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_at"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_at_asst"
+msgid "대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_at_m1a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_at_m9a1"
+msgid "대전차 보병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_band"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_band2"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_bar"
+msgid "자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_bar_ammo"
+msgid "자동소총수 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_bar_asst"
+msgid "자동소총수 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_gren"
+msgid "소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_scout"
+msgid "정찰 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_rifle_sniper"
+msgid "저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_sl_asst"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_sl_asst_gren"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_sl_asst"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_sl_rifle"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_sl_smg"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_sl_smg_m3"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_smg"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_smg_m3"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_at"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_at_asst"
+msgid "베테랑 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_at_m9"
+msgid "베테랑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_at_m9a1"
+msgid "베테랑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_band"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_bar"
+msgid "베테랑 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_bar_ammo"
+msgid "베테랑 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_bar_asst"
+msgid "베테랑 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_gren"
+msgid "베테랑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_rifle_sniper"
+msgid "베테랑 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_sl_asst"
+msgid "베테랑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_sl_asst_gren"
+msgid "베테랑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_sl_rifle"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_sl_smg"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_sl_smg_m3"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_smg"
+msgid "베테랑 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/late_vet_smg_m3"
+msgid "베테랑 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/medic"
+msgid "위생병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mg_crew"
+msgid "기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mg_crew_asst"
+msgid "기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_at_asst"
+msgid "산악 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_at_m1a1"
+msgid "산악 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_at_m9a1"
+msgid "산악 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_bar"
+msgid "산악 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_bar_ammo"
+msgid "산악 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_bar_asst"
+msgid "산악 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng"
+msgid "산악 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng_at_asst"
+msgid "산악 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng_at_m1a1"
+msgid "산악 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng_at_m9a1"
+msgid "산악 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng_flamer"
+msgid "산악 공병 화염방사병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng_sl"
+msgid "산악 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_eng_sl_asst"
+msgid "산악 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_mg"
+msgid "산악 기관총 사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_mg_ammo"
+msgid "산악 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_pio"
+msgid "산악 공병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_pio_at_asst"
+msgid "산악 공병 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_pio_at_m1a1"
+msgid "산악 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_pio_at_m9a1"
+msgid "산악 공병 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_pio_sl"
+msgid "산악 공병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_pio_sl_asst"
+msgid "산악 공병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_rifle"
+msgid "산악 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_rifle_at"
+msgid "산악 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_rifle_gren"
+msgid "산악 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_sl_asst_gren"
+msgid "산악 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_sl_rifle"
+msgid "산악 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_sl_smg"
+msgid "산악 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_sl_smg_m3"
+msgid "산악 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mountain_sniper"
+msgid "산악 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mp_carbine"
+msgid "헌병 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mp_rifle"
+msgid "헌병 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mp_sl_asst"
+msgid "헌병 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mp_sl_rifle"
+msgid "헌병 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mp_smg"
+msgid "헌병 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/mp_smg_m3"
+msgid "헌병 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_crew"
+msgid "해군 승무원 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_crew_pistol"
+msgid "해군 승무원 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_carbine"
+msgid "해군 해안반 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_medic"
+msgid "해군 상륙반 위생병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_rifle"
+msgid "해군 해안반 소총수 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_smg"
+msgid "해군 해안반 기관단총 보병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/navy_shore_smg_m3"
+msgid "해군 해안반 기관단총 보병 [USN]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_1st_sgt"
+msgid "First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_cpl_carbine"
+msgid "Corporal [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_cpl_rifle"
+msgid "Corporal [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_msgt"
+msgid "Master Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_sgt_carbine"
+msgid "Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_sgt_rifle"
+msgid "Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_ssgt_carbine"
+msgid "Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_ssgt_rifle"
+msgid "Staff Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_tsgt_carbine"
+msgid "Technical Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/nco_tsgt_rifle"
+msgid "Technical Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/officer_1lt"
+msgid "First Lieutenant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/officer_2lt"
+msgid "Second Lieutenant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/officer_cpt"
+msgid "Captain [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/officer_ltc"
+msgid "Lieutenant Colonel [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/officer_maj"
+msgid "Major [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/pilot"
+msgid "조종사 [USAAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/platoon_com"
+msgid "소대 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/platoon_radio"
+msgid "소대 무전병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/platoon_tsgt"
+msgid "소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_bar"
+msgid "레인저 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_bar_asst"
+msgid "레인저 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_gren"
+msgid "레인저 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_rifle"
+msgid "레인저 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_1st_sgt"
+msgid "레인저 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_sniper"
+msgid "레인저 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_assault_m1a1"
+msgid "레인저 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_at_m1a1"
+msgid "레인저 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_at_m9a1"
+msgid "레인저 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_bar"
+msgid "레인저 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_bar_ammo"
+msgid "레인저 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_bar_asst"
+msgid "레인저 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_company_1st_sgt"
+msgid "레인저 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_company_com"
+msgid "레인저 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_crew"
+msgid "레인저 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_gren"
+msgid "레인저 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_at_m9a1"
+msgid "레인저 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_bar"
+msgid "레인저 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_bar_ammo"
+msgid "레인저 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_bar_asst"
+msgid "레인저 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_company_1st_sgt"
+msgid "레인저 중대 First Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_company_com"
+msgid "레인저 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_crew"
+msgid "레인저 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_gren"
+msgid "레인저 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_mg_ammo"
+msgid "레인저 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_mg_crew"
+msgid "레인저 기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_mg_crew_asst"
+msgid "레인저 기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_platoon_com"
+msgid "레인저 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_platoon_tsgt"
+msgid "레인저 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_rifle"
+msgid "레인저 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sec_lead"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sl_asst_m9a1"
+msgid "레인저 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sl_rifle_sgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sl_rifle_ssgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sl_smg_sgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sl_smg_ssgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_late_sniper"
+msgid "레인저 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_mg_ammo"
+msgid "레인저 기관총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_mg_crew"
+msgid "레인저 기관총 조원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_mg_crew_asst"
+msgid "레인저 기관총 조 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_platoon_com"
+msgid "레인저 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_platoon_tsgt"
+msgid "레인저 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_rifle"
+msgid "레인저 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sec_lead"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_asst_boys"
+msgid "레인저 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_asst_m9"
+msgid "레인저 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_asst_m9a1"
+msgid "레인저 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_rifle_sgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_rifle_ssgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_smg_sgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sl_smg_ssgt"
+msgid "레인저 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/ranger_sniper"
+msgid "레인저 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_at"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_at_asst"
+msgid "소총수 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_at_m1a1"
+msgid "소총수 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_at_m9a1"
+msgid "소총수 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_band"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_band2"
+msgid "소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_bar"
+msgid "자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_bar_ammo"
+msgid "자동소총수 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_bar_ammo2"
+msgid "자동소총수 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_bar_asst"
+msgid "자동소총수 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_bar_asst2"
+msgid "자동소총수 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_gren"
+msgid "소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_scout"
+msgid "정찰 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/rifle_sniper"
+msgid "저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/sl_asst"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/sl_asst_gren"
+msgid "부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/sl_rifle"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/sl_smg"
+msgid "분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/smg"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/smg_20"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/smg_m3"
+msgid "기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_commander"
+msgid "전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com"
+msgid "전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_m1"
+msgid "전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_m1a1"
+msgid "전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_m3"
+msgid "전차장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_1lt"
+msgid "전차 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_1lt_m1"
+msgid "전차 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_1lt_m1a1"
+msgid "전차 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_1lt_m3"
+msgid "전차 소대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_cpt"
+msgid "전차 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_cpt_m1"
+msgid "전차 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_cpt_m1a1"
+msgid "전차 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_cpt_m3"
+msgid "전차 중대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_ssgt"
+msgid "전차 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_ssgt_m1"
+msgid "전차 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_ssgt_m1a1"
+msgid "전차 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tank_com_ssgt_m3"
+msgid "전차 소대 Sergeant [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_m1"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_m3"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_cpl"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_cpl_m1"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_cpl_m3"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_pfc"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_pfc_m1"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_pfc_m3"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_t4"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_t4_m1"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_t4_m3"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_t5"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_t5_m1"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/tankman_t5_m3"
+msgid "전차 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_com"
+msgid "차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_com_m1"
+msgid "차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_com_m1a1"
+msgid "차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_com_m3"
+msgid "차량 지휘관 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_crew"
+msgid "차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_crew_m1"
+msgid "차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_crew_m1_gren"
+msgid "차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vehicle_crew_m3"
+msgid "차량 승무원 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_at"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_at_asst"
+msgid "베테랑 대전차 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_at_m9"
+msgid "베테랑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_at_m9a1"
+msgid "베테랑 대전차병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_band"
+msgid "베테랑 소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_bar"
+msgid "베테랑 자동소총수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_bar_ammo"
+msgid "베테랑 자동소총 탄약수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_bar_asst"
+msgid "베테랑 자동소총 부사수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_gren"
+msgid "베테랑 소총 유탄병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_rifle_sniper"
+msgid "베테랑 저격수 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_sl_asst"
+msgid "베테랑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_sl_asst_gren"
+msgid "베테랑 부분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_sl_rifle"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_sl_smg"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_sl_smg_m3"
+msgid "베테랑 분대장 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_smg"
+msgid "베테랑 기관단총병 [USAGF]"
+msgstr ""
+
+msgctxt "desc/human/mp/usa/late/vet_smg_m3"
+msgid "베테랑 기관단총병 [USAGF]"
+msgstr ""

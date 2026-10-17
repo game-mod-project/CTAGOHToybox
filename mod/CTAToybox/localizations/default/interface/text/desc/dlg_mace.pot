@@ -1,0 +1,38 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "mp/lobby/doctrine/late_usa_support"
+msgid "지원 (아시아)"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_jap_defensive"
+msgid "방어"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_jap_irregular"
+msgid "비정규"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_jap_offensive"
+msgid "공격"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_jap_allround"
+msgid "만능"
+msgstr ""
+
+msgctxt "mp/lobby/doctrine/late_jap_support"
+msgid "지원"
+msgstr ""

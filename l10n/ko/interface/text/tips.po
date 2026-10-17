@@ -1,0 +1,182 @@
+# source: mod_2905667604 interface/text/tips.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms (tips)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "tip25"
+msgid "\"One should never trust quotes on the internet, as one cannot verify their origin.\"\n\n<s(18)e(shadow)b+c(dacba2)>Abraham Lincoln"
+msgstr "\"인터넷의 인용구는 절대 믿지 마라. 출처를 확인할 수 없으니까.\"\n\n<s(18)e(shadow)b+c(dacba2)>에이브러햄 링컨"
+
+msgctxt "tip35"
+msgid "\"No enemy bomber can reach the Ruhr. If one reaches the Ruhr, my name is not Goering. You may call me Meyer.\"\n\n<s(18)e(shadow)b+c(5b88b0)>Hermann Meyer"
+msgstr "\"적 폭격기는 루르에 닿지 못한다. 한 대라도 닿는다면 내 이름은 괴링이 아니다. 마이어라고 불러도 좋다.\"\n\n<s(18)e(shadow)b+c(5b88b0)>헤르만 마이어"
+
+msgctxt "tip12"
+msgid "\"NUTS!.\"\n\n<s(18)e(shadow)b+c(5b88b0)>Anthony McAuliffe"
+msgstr "\"엿 먹어라!\"\n\n<s(18)e(shadow)b+c(5b88b0)>앤서니 매콜리프"
+
+msgctxt "tip02"
+msgid "\"Yes, you will CUM!\"\n\n<s(18)e(shadow)b+c(5b88b0)>Andy"
+msgstr "\"그래, 싸게 될 거야!\"\n\n<s(18)e(shadow)b+c(5b88b0)>Andy"
+
+msgctxt "tip03"
+msgid "\"Kaboom\"\n\n<s(18)e(shadow)b+c(5b88b0)>Catt"
+msgstr "\"쾅\"\n\n<s(18)e(shadow)b+c(5b88b0)>Catt"
+
+msgctxt "tip28"
+msgid "\"DO NOT REPORT BUGS WITH SUBMODS!!!!\"\n\n<s(18)e(shadow)b+c(5b88b0)>Editu"
+msgstr "\"서브모드 버그는 제보하지 마!!!!\"\n\n<s(18)e(shadow)b+c(5b88b0)>Editu"
+
+msgctxt "tip07"
+msgid "\"I’m the birthday twink I decide who dies\"\n\n<s(18)e(shadow)b+c(5b88b0)>Catt"
+msgstr "\"내가 생일 트윙크니까 누가 죽을지는 내가 정한다\"\n\n<s(18)e(shadow)b+c(5b88b0)>Catt"
+
+msgctxt "tip48"
+msgid "\"I didn't see combat.\"\n\n<s(18)e(shadow)b+c(dacba2)>Nemo Revera"
+msgstr "\"나는 전투를 못 봤다.\"\n\n<s(18)e(shadow)b+c(dacba2)>Nemo Revera"
+
+msgctxt "tip22"
+msgid "\"Look at my rear though.\"\n\n<s(18)e(shadow)b+c(dacba2)>Tele"
+msgstr "\"그래도 내 뒤는 좀 봐 줘.\"\n\n<s(18)e(shadow)b+c(dacba2)>Tele"
+
+msgctxt "tip04"
+msgid "\"In preparing for battle I have always found that plans are useless, but planning is indispensable.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"전투를 준비하면서 늘 느낀 것은, 계획은 쓸모없지만 계획 세우기는 없어서는 안 된다는 점이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip06"
+msgid "\"If you want total security, go to prison. There you're fed, clothed, given medical care and so on. The only thing lacking... is freedom.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"완전한 안전을 원하면 감옥에 가라. 거기서는 먹여 주고, 입혀 주고, 치료도 해 준다. 모자란 것은 오직... 자유뿐이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip30"
+msgid "\"The search for a scapegoat is the easiest of all hunting expeditions.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"희생양 찾기는 모든 사냥 중에서 가장 쉬운 사냥이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip08"
+msgid "\"You do not lead by hitting people over the head -- that's assault, not leadership.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"사람의 머리를 후려쳐서 이끄는 것이 아니다. 그건 폭행이지 리더십이 아니다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip09"
+msgid "\"Get it all on record now - get the films - get the witnesses -because somewhere down the road of history some bastard will get up and say that this never happened.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"지금 모든 것을 기록으로 남겨라. 영상을 확보하고 증인을 확보하라. 역사의 어느 길목에선가 어떤 놈이 일어나 이런 일은 없었다고 말할 테니까.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip10"
+msgid "\"What counts is not necessarily the size of the dog in the fight - it's the size of the fight in the dog.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"싸움에서 중요한 것은 개의 크기가 아니라 개 안에 든 싸움 기질의 크기다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip11"
+msgid "\"Never send a battalion to take a hill if a regiment is available.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"연대를 쓸 수 있다면 고지를 점령하라고 대대를 보내지 마라.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip13"
+msgid "\"Pessimism never won any battle.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"비관주의가 이긴 전투는 없다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip34"
+msgid "\"The problem in defense is how far you can go without destroying from within what you are trying to defend from without.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"방어의 문제는, 밖에서 지키려는 것을 안에서부터 무너뜨리지 않고 어디까지 갈 수 있느냐이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip14"
+msgid "\"I hate war as only a soldier who has lived it can, only as one who has seen its brutality, its futility, its stupidity.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"나는 전쟁을 겪어 본 군인만이 미워할 수 있는 방식으로 전쟁을 미워한다. 그 잔혹함과 헛됨, 어리석음을 본 사람으로서.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip39"
+msgid "\"Leadership consists of nothing but taking responsibility for everything that goes wrong and giving your subordinates credit for everything that goes well.\"\n\n<s(18)e(shadow)b+c(dacba2)>Dwight D. Eisenhower"
+msgstr "\"리더십이란 잘못된 모든 일의 책임을 지고, 잘된 모든 일의 공을 부하에게 돌리는 것에 지나지 않는다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+
+msgctxt "tip23"
+msgid "\"Every German soldier must be made to feel that he is living under the muzzle of a Russian gun.\"\n\n<s(18)e(shadow)b+c(dacba2)>Vasily Chuikov"
+msgstr "\"독일 병사 하나하나가 러시아군 포구 아래에 있다고 느끼게 만들어야 한다.\"\n\n<s(18)e(shadow)b+c(dacba2)>바실리 추이코프"
+
+msgctxt "tip42"
+msgid "\"Stalin ordered us to stand fast and save Stalingrad. So we knew then that it was 'do or die'. We could not retreat.\"\n\n<s(18)e(shadow)b+c(dacba2)>Vasily Chuikov"
+msgstr "\"스탈린은 버텨서 스탈린그라드를 지키라고 명령했다. 그래서 우리는 죽기 아니면 살기임을 알았다. 물러설 수 없었다.\"\n\n<s(18)e(shadow)b+c(dacba2)>바실리 추이코프"
+
+msgctxt "tip40"
+msgid "\"We are harassing them and will go on harassing them until they are totally exhausted. This is not merely tactics of a definite kind - it is a strategy with a broad perspective, directed at definitive and total victory.\"\n\n<s(18)e(shadow)b+c(dacba2)>Semyon Timoshenko"
+msgstr "\"우리는 적을 괴롭히고 있고, 그들이 완전히 지칠 때까지 계속 괴롭힐 것이다. 이것은 단순한 일정한 전술이 아니라, 결정적이고 완전한 승리를 향한 넓은 시야의 전략이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>세묜 티모셴코"
+
+msgctxt "tip26"
+msgid "\"As long as there are sovereign nations possessing great power, war is inevitable.\"\n\n<s(18)e(shadow)b+c(dacba2)>Albert Einstein"
+msgstr "\"큰 힘을 가진 주권 국가가 있는 한, 전쟁은 피할 수 없다.\"\n\n<s(18)e(shadow)b+c(dacba2)>알베르트 아인슈타인"
+
+msgctxt "tip44"
+msgid "\"It is a popular idea that a man is a hero just because he was killed in action. Rather, I think, a man is frequently a fool when he gets killed.\"\n\n<s(18)e(shadow)b+c(dacba2)>George Patton"
+msgstr "\"전사했다는 이유만으로 영웅이라는 생각은 흔한 통념이다. 오히려 사람은 죽을 때 바보인 경우가 많다고 나는 생각한다.\"\n\n<s(18)e(shadow)b+c(dacba2)>조지 패튼"
+
+msgctxt "tip31"
+msgid "\"Every man is scared in his first battle. If he says he's not, he's a liar. Some men are cowards but they fight the same as the brave men or they get the hell slammed out of them watching men fight who are just as scared as they are. The real hero is the man who fights even though he is scared.\"\n\n<s(18)e(shadow)b+c(dacba2)>George Patton"
+msgstr "\"누구나 첫 전투에서는 겁이 난다. 안 난다고 하면 거짓말쟁이다. 겁쟁이도 있지만, 그들도 용감한 자들과 똑같이 싸운다. 안 그러면 자기만큼 겁먹은 자들이 싸우는 걸 지켜보다 호되게 당한다. 진짜 영웅은 겁이 나는데도 싸우는 사람이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>조지 패튼"
+
+msgctxt "tip33"
+msgid "\"Few men are killed by bayonets, but many are scared by them. Having the bayonet fixed makes our men want to close. Only the threat to close will defeat a determined enemy.\"\n\n<s(18)e(shadow)b+c(dacba2)>George Patton"
+msgstr "\"총검에 죽는 사람은 적지만, 겁먹는 사람은 많다. 착검을 하면 우리 병사들은 접근하고 싶어진다. 접근하겠다는 위협만이 단호한 적을 꺾는다.\"\n\n<s(18)e(shadow)b+c(dacba2)>조지 패튼"
+
+msgctxt "tip36"
+msgid "\"Those who can win a war well can rarely make a good peace, and those who could make a good peace would never have won the war.\"\n\n<s(18)e(shadow)b+c(dacba2)>Winston Churchill"
+msgstr "\"전쟁을 잘 이기는 자는 좋은 평화를 만들기 어렵고, 좋은 평화를 만들 수 있는 자는 애초에 전쟁에서 이기지 못했을 것이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+
+msgctxt "tip54"
+msgid "\"\All the greatest things are simple, and many can be expressed in a single word: freedom; justice; honour; duty; mercy; hope.\"\n\n<s(18)e(shadow)b+c(dacba2)>Winston Churchill"
+msgstr "\"\모든 위대한 것은 단순하고, 많은 것이 한 단어로 표현된다. 자유, 정의, 명예, 의무, 자비, 희망.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+
+msgctxt "tip50"
+msgid "\"Never hold discussions with the monkey when the organ grinder is in the room.\"\n\n<s(18)e(shadow)b+c(dacba2)>Winston Churchill"
+msgstr "\"오르간 연주자가 방에 있는데 원숭이와 토론하지 마라.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+
+msgctxt "tip37"
+msgid "\"An appeaser is one who feeds a crocodile, hoping it will eat him last.\"\n\n<s(18)e(shadow)b+c(dacba2)>Winston Churchill"
+msgstr "\"유화론자란 악어가 자기를 마지막에 잡아먹기를 바라며 악어에게 먹이를 주는 자다.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+
+msgctxt "tip55"
+msgid "\"Some goddamn fool once said that flanks have got to be secure. Since then sonsofbitches all over the globe have been guarding their flanks. I don't agree with that. My flanks are something for the enemy to worry about, not me. Before he finds out where my flanks are, I'll be cutting the bastard's throat.\"\n\n<s(18)e(shadow)b+c(dacba2)>Patton"
+msgstr "\"어떤 망할 바보가 측면은 안전해야 한다고 말했다. 그 뒤로 온 세상의 개자식들이 측면을 지키고 있다. 나는 동의하지 않는다. 내 측면은 적이 걱정할 일이지 내가 걱정할 일이 아니다. 적이 내 측면이 어디인지 알아내기 전에, 나는 그 새끼의 목을 따 놓을 것이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>패튼"
+
+msgctxt "tip45"
+msgid "\"Leadership is the capacity and will to rally men and women to a common purpose and the character which inspires confidence\"\n\n<s(18)e(shadow)b+c(dacba2)>Bernard Montgomery"
+msgstr "\"리더십이란 사람들을 공동의 목적으로 결집시키는 능력과 의지, 그리고 신뢰를 불러일으키는 인격이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>버나드 몽고메리"
+
+msgctxt "tip46"
+msgid "\"I am not one of those who see war as a cricket match where you first give anything to defeat the opponent and then shake hands.\"\n\n<s(18)e(shadow)b+c(dacba2)>Douglas Bader"
+msgstr "\"나는 전쟁을 크리켓 경기처럼 보는 사람이 아니다. 상대를 이기려고 처음엔 뭐든 내주고 나서 악수나 하는 그런 경기 말이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>더글러스 베이더"
+
+msgctxt "tip47"
+msgid "\"Which would your men rather be, tired or dead?\"\n\n<s(18)e(shadow)b+c(dacba2)>Erwin Rommel"
+msgstr "\"자네 부하들은 지치는 것과 죽는 것 중 어느 쪽이 낫겠나?\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+
+msgctxt "tip49"
+msgid "\"Never allow yourself to hate people because of the actions of a few. Hatred and bigotry destroyed my nation, and millions died. I would hope that most people do not hate Germans because of the Nazis, or Americans because of slaves. Never hate, it only eats you alive. Keep an open mind and always look for the good in people. You may be surprised at what you find.\"\n\n<s(18)e(shadow)b+c(dacba2)>Erich Hartmann"
+msgstr "\"몇몇의 행동 때문에 사람들을 미워하지 마라. 증오와 편협함이 내 나라를 무너뜨렸고 수백만이 죽었다. 사람들이 나치 때문에 독일인을 미워하지 않고, 노예제 때문에 미국인을 미워하지 않기를 바란다. 절대 미워하지 마라. 증오는 너를 산 채로 갉아먹을 뿐이다. 열린 마음으로 언제나 사람의 좋은 면을 찾아라. 찾아낸 것에 놀랄지도 모른다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에리히 하르트만"
+
+msgctxt "tip51"
+msgid "\"Good men and bad men alike are capable of weakness. The difference is simply that a bad man will be proud all his life of one good deed – while an honest man is hardly aware of his good acts, but remembers a single sin for years on end...\"\n\n<s(18)e(shadow)b+c(dacba2)>Vasily Grossman"
+msgstr "\"선한 사람이든 악한 사람이든 약해질 수 있다. 차이는 단지, 악한 사람은 평생 선행 하나를 자랑스러워하지만, 정직한 사람은 자기 선행을 거의 의식하지 못하고 죄 하나를 몇 해씩 기억한다는 것이다...\"\n\n<s(18)e(shadow)b+c(dacba2)>바실리 그로스만"
+
+msgctxt "tip52"
+msgid "\"We are not retreating... we are advancing in another direction.\"\n\n<s(18)e(shadow)b+c(dacba2)>Douglas MacArthur"
+msgstr "\"우리는 후퇴하는 게 아니다... 다른 방향으로 전진하는 것이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>더글러스 맥아더"
+
+msgctxt "tip43"
+msgid "\"Fuck.\"\n\n<s(18)e(shadow)b+c(dacba2)>Erwin Rommel"
+msgstr "\"젠장.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+
+msgctxt "tip27"
+msgid "\"No plan survives contact with the enemy.\"\n\n<s(18)e(shadow)b+c(dacba2)>Erwin Rommel"
+msgstr "\"어떤 계획도 적과 접촉하면 살아남지 못한다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+
+msgctxt "tip53"
+msgid "\"Sweat saves blood, blood saves lives, but brains save both.\"\n\n<s(18)e(shadow)b+c(dacba2)>Erwin Rommel"
+msgstr "\"땀은 피를 아끼고, 피는 목숨을 아끼지만, 머리는 둘 다 아낀다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+
+msgctxt "tip56"
+msgid "\"Courage which goes against military expediency is stupidity, or, if it is insisted upon by a commander, irresponsibility.\"\n\n<s(18)e(shadow)b+c(dacba2)>Erwin Rommel"
+msgstr "\"군사적 합리성에 어긋나는 용기는 어리석음이고, 지휘관이 그것을 고집한다면 무책임이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"

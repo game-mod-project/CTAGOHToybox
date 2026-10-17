@@ -1,0 +1,7 @@
+{font_atlas
+	{name "anka"}
+	{size 10}
+	{height 11}
+	{style 0}
+	{binary_data "main_10.fnt"}
+}

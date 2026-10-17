@@ -1,0 +1,3734 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell British MP soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/mp/eng/early/51hl_at_boys"
+msgid "제51 하일랜드 사단 대전차병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_at_boys_asst"
+msgid "제51 하일랜드 사단 대전차 부사수 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_bat_2ic"
+msgid "제51 하일랜드 사단 대대 부지휘관 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_bat_com"
+msgid "제51 하일랜드 사단 대대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_bat_signalman"
+msgid "제51 하일랜드 사단 대대 통신병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_batman"
+msgid "제51 하일랜드 사단 당번병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_coy_2ic"
+msgid "제51 하일랜드 사단 중대 부지휘관 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_coy_com"
+msgid "제51 하일랜드 사단 중대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_coy_signalman"
+msgid "제51 하일랜드 사단 중대 통신병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_crew"
+msgid "제51 하일랜드 사단 승무원 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_detach_com_cpl"
+msgid "제51 하일랜드 사단 분견대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_detach_com_sgt"
+msgid "제51 하일랜드 사단 분견대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_driver"
+msgid "제51 하일랜드 사단 운전병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_medic"
+msgid "제51 하일랜드 사단 위생병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_mg"
+msgid "제51 하일랜드 사단 기관총 사수 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_mg_asst"
+msgid "제51 하일랜드 사단 기관총 부사수 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_pio"
+msgid "제51 하일랜드 사단 공병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_pio_builder"
+msgid "제51 하일랜드 사단 공병 건설병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_pio_sec_com"
+msgid "제51 하일랜드 사단 공병 분대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_batman"
+msgid "제51 하일랜드 사단 소대 당번병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_com"
+msgid "제51 하일랜드 사단 소대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_com_wo3"
+msgid "제51 하일랜드 사단 소대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_plt_sgt"
+msgid "제51 하일랜드 사단 소대 Sergeant [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_rifle"
+msgid "제51 하일랜드 사단 소총수 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_rifle_band"
+msgid "제51 하일랜드 사단 소총수 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_rifle_gren"
+msgid "제51 하일랜드 사단 소총 유탄병 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_2ic"
+msgid "제51 하일랜드 사단 부분대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_com"
+msgid "제51 하일랜드 사단 분대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_com_lcpl"
+msgid "제51 하일랜드 사단 분대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sec_com_sgt"
+msgid "제51 하일랜드 사단 분대장 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/51hl_sniper"
+msgid "제51 하일랜드 사단 저격수 [TA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/antitank_boys"
+msgid "대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/antitank_boys_asst"
+msgid "대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/antitank_gren"
+msgid "소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/artilleryman"
+msgid "왕립 포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_2ic"
+msgid "대대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_com"
+msgid "대대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_rsm"
+msgid "대대 연대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/bat_signalman"
+msgid "대대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/batman"
+msgid "당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_detach_com"
+msgid "코만도 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_mg"
+msgid "코만도 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_mg_asst"
+msgid "코만도 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_rifle"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_rifle_band"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_rifle_gren"
+msgid "코만도 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_sec_com"
+msgid "코만도 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_smg"
+msgid "코만도 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_sniper"
+msgid "코만도 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_subsec_2ic"
+msgid "코만도 소분대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/com_subsec_com"
+msgid "코만도 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_2ic"
+msgid "중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_com"
+msgid "중대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_qm_sgt"
+msgid "중대 병참 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_sgt_maj"
+msgid "중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/coy_signalman"
+msgid "중대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/crew"
+msgid "승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/detach_com_cpl"
+msgid "분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/detach_com_sgt"
+msgid "분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/driver"
+msgid "운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo"
+msgid "전방 포병 관측 장교 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_88"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_127"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_152"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/fo_radio_203"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_at_boys"
+msgid "근위 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_at_boys_asst"
+msgid "근위 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_bat_2ic"
+msgid "근위 대대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_bat_com"
+msgid "근위 대대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_bat_signalman"
+msgid "근위 대대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_batman"
+msgid "근위 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_coy_2ic"
+msgid "근위 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_coy_com"
+msgid "근위 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_coy_signalman"
+msgid "근위 중대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_crew"
+msgid "근위 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_detach_com_cpl"
+msgid "근위 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_detach_com_sgt"
+msgid "근위 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_driver"
+msgid "근위 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_medic"
+msgid "근위 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_mg"
+msgid "근위 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_mg_asst"
+msgid "근위 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_pio"
+msgid "근위 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_pio_builder"
+msgid "근위 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_pio_sec_com"
+msgid "근위 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_batman"
+msgid "근위 소대 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_com"
+msgid "근위 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_com_wo3"
+msgid "근위 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_plt_sgt"
+msgid "근위 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_rifle"
+msgid "근위 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_rifle_band"
+msgid "근위 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_rifle_gren"
+msgid "근위 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_2ic"
+msgid "근위 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_com"
+msgid "근위 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_com_lcpl"
+msgid "근위 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sec_com_sgt"
+msgid "근위 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/gds_sniper"
+msgid "근위 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_at_boys"
+msgid "왕립 하일랜드 블랙 워치 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_at_boys_asst"
+msgid "왕립 하일랜드 블랙 워치 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_batman"
+msgid "왕립 하일랜드 블랙 워치 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_coy_2ic"
+msgid "왕립 하일랜드 블랙 워치 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_coy_com"
+msgid "왕립 하일랜드 블랙 워치 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_coy_signalman"
+msgid "왕립 하일랜드 블랙 워치 중대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_crew"
+msgid "왕립 하일랜드 블랙 워치 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_detach_com_cpl"
+msgid "왕립 하일랜드 블랙 워치 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_detach_com_sgt"
+msgid "왕립 하일랜드 블랙 워치 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_driver"
+msgid "왕립 하일랜드 블랙 워치 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_medic"
+msgid "왕립 하일랜드 블랙 워치 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_mg"
+msgid "왕립 하일랜드 블랙 워치 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_mg_asst"
+msgid "왕립 하일랜드 블랙 워치 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_pio"
+msgid "왕립 하일랜드 블랙 워치 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_pio_builder"
+msgid "왕립 하일랜드 블랙 워치 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_pio_sec_com"
+msgid "왕립 하일랜드 블랙 워치 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_plt_batman"
+msgid "왕립 하일랜드 블랙 워치 소대 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_plt_com"
+msgid "왕립 하일랜드 블랙 워치 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_plt_sgt"
+msgid "왕립 하일랜드 블랙 워치 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_rifle"
+msgid "왕립 하일랜드 블랙 워치 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_rifle_band"
+msgid "왕립 하일랜드 블랙 워치 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_2ic"
+msgid "왕립 하일랜드 블랙 워치 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_com"
+msgid "왕립 하일랜드 블랙 워치 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_com_sgt"
+msgid "왕립 하일랜드 블랙 워치 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/hl_bw_sec_sniper"
+msgid "왕립 하일랜드 블랙 워치 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/medic"
+msgid "위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg"
+msgid "기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg_asst"
+msgid "기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg_crew"
+msgid "기관총 조원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mg_crew_asst"
+msgid "기관총 조 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_boys"
+msgid "차량화 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_boys_asst"
+msgid "차량화 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_mg"
+msgid "차량화 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_mg_asst"
+msgid "차량화 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_rifle"
+msgid "차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_rifle_band"
+msgid "차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_detach_com_cpl"
+msgid "차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_detach_com_lcpl"
+msgid "차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_driver"
+msgid "차량화 정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_gunner"
+msgid "차량화 정찰 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_scout_sec_com"
+msgid "차량화 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_sec_2ic"
+msgid "차량화 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mot_sec_com"
+msgid "차량화 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mp_detach_com"
+msgid "헌병 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mp_pistol"
+msgid "헌병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/mp_rifle"
+msgid "헌병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pilot"
+msgid "조종사 [RAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio"
+msgid "공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_band"
+msgid "공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_boys"
+msgid "공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_boys_asst"
+msgid "공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_builder"
+msgid "공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_gren"
+msgid "공병 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_mg"
+msgid "공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_mg_asst"
+msgid "공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/pio_sec_com"
+msgid "공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_batman"
+msgid "소대 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_com"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_com_wo3"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/plt_sgt"
+msgid "소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_boys"
+msgid "왕립 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_boys_asst"
+msgid "왕립 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_builder"
+msgid "왕립 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mg"
+msgid "왕립 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mg_asst"
+msgid "왕립 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mine_ap"
+msgid "왕립 공병 AP 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_mine_at"
+msgid "왕립 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_sapper"
+msgid "왕립 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_sec_2ic"
+msgid "왕립 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/r_eng_sec_com"
+msgid "왕립 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rear_echelon_rifle"
+msgid "후방 지원 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_detach_com_cpl"
+msgid "정찰 캐리어 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_detach_com_sgt"
+msgid "정찰 캐리어 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_driver"
+msgid "정찰 캐리어 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_gunner"
+msgid "정찰 캐리어 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_carrier_rifle"
+msgid "정찰 캐리어 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_rifle"
+msgid "정찰 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_sec_com"
+msgid "정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_troop_com"
+msgid "정찰 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rec_troop_com_wo3"
+msgid "정찰 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rifle"
+msgid "소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rifle_band"
+msgid "소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/rifle_gren"
+msgid "소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_2ic"
+msgid "부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com_lcpl"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com_m1928"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sec_com_sgt"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/sniper"
+msgid "저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/tank_commander"
+msgid "전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/tank_commander_sgt"
+msgid "전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/tankman"
+msgid "전차 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/vehicle_com_cpl"
+msgid "차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/vehicle_com_sgt"
+msgid "차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/early/vehicle_crew"
+msgid "차량 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_boys"
+msgid "제1공정 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_boys_asst"
+msgid "제1공정 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_crew"
+msgid "제1공정 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_mg"
+msgid "제1공정 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_mg_asst"
+msgid "제1공정 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_piat"
+msgid "제1공정 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_piat_asst"
+msgid "제1공정 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_pio"
+msgid "제1공정 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_pio_sec_com"
+msgid "제1공정 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_pio_sec_com_cpl"
+msgid "제1공정 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_mg"
+msgid "제1공정 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_mg_asst"
+msgid "제1공정 정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_rifle"
+msgid "제1공정 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sec_2ic"
+msgid "제1공정 정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sec_com"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sec_com_bino"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_smg"
+msgid "제1공정 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rec_sniper"
+msgid "제1공정 정찰 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rifle"
+msgid "제1공정 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_rifle_band"
+msgid "제1공정 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sec_2ic"
+msgid "제1공정 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sec_com"
+msgid "제1공정 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sec_com_cpl"
+msgid "제1공정 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_smg"
+msgid "제1공정 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_land_sniper"
+msgid "제1공정 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_batman"
+msgid "제1공수사단 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_boys"
+msgid "제1공수사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_boys_asst"
+msgid "제1공수사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_coy_2ic"
+msgid "제1공수사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_coy_com"
+msgid "제1공수사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_coy_sgt_maj"
+msgid "제1공수사단 중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_crew"
+msgid "제1공수사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng"
+msgid "제1공수사단 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_at_mine"
+msgid "제1공수사단 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_boys"
+msgid "제1공수사단 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_boys_asst"
+msgid "제1공수사단 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_mg"
+msgid "제1공수사단 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_mg_asst"
+msgid "제1공수사단 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_piat"
+msgid "제1공수사단 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_piat_asst"
+msgid "제1공수사단 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_sapper"
+msgid "제1공수사단 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_sec_2ic"
+msgid "제1공수사단 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_eng_sec_com"
+msgid "제1공수사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_medic"
+msgid "제1공수사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mg"
+msgid "제1공수사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mg_asst"
+msgid "제1공수사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mortar"
+msgid "제1공수사단 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_mortar_asst"
+msgid "제1공수사단 박격포 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_piat"
+msgid "제1공수사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_piat_asst"
+msgid "제1공수사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_plt_com"
+msgid "제1공수사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_plt_sgt"
+msgid "제1공수사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_mg"
+msgid "제1공수사단 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_mg_asst"
+msgid "제1공수사단 정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_rifle"
+msgid "제1공수사단 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_2ic"
+msgid "제1공수사단 정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_com"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_com_bino"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_sec_mortar"
+msgid "제1공수사단 정찰 분대 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rec_smg"
+msgid "제1공수사단 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rifle"
+msgid "제1공수사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rifle_band"
+msgid "제1공수사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_rifle_gren"
+msgid "제1공수사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_2ic"
+msgid "제1공수사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_com"
+msgid "제1공수사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_com_cpl"
+msgid "제1공수사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sec_mortar"
+msgid "제1공수사단 분대 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_smg"
+msgid "제1공수사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/1st_air_para_sniper"
+msgid "제1공수사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_boys"
+msgid "제51 하일랜드 사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_boys_asst"
+msgid "제51 하일랜드 사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_piat"
+msgid "제51 하일랜드 사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_at_piat_asst"
+msgid "제51 하일랜드 사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_batman"
+msgid "제51 하일랜드 사단 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_coy_2ic"
+msgid "제51 하일랜드 사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_coy_com"
+msgid "제51 하일랜드 사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_crew"
+msgid "제51 하일랜드 사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_detach_com"
+msgid "제51 하일랜드 사단 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_driver"
+msgid "제51 하일랜드 사단 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_medic"
+msgid "제51 하일랜드 사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_mg"
+msgid "제51 하일랜드 사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_mg_asst"
+msgid "제51 하일랜드 사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio"
+msgid "제51 하일랜드 사단 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio_builder"
+msgid "제51 하일랜드 사단 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio_sec_com_cpl"
+msgid "제51 하일랜드 사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_pio_sec_com_sgt"
+msgid "제51 하일랜드 사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_plt_com"
+msgid "제51 하일랜드 사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_plt_sgt"
+msgid "제51 하일랜드 사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle"
+msgid "제51 하일랜드 사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle_band"
+msgid "제51 하일랜드 사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle_gren"
+msgid "제51 하일랜드 사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_rifle_sniper"
+msgid "제51 하일랜드 사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_2ic"
+msgid "제51 하일랜드 사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_com"
+msgid "제51 하일랜드 사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_com_sgt"
+msgid "제51 하일랜드 사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_sec_subcom"
+msgid "제51 하일랜드 사단 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_smg"
+msgid "제51 하일랜드 사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/51hl_smg_mk2"
+msgid "제51 하일랜드 사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_boys"
+msgid "제7기갑사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_boys_asst"
+msgid "제7기갑사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_piat"
+msgid "제7기갑사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_at_piat_asst"
+msgid "제7기갑사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_batman"
+msgid "제7기갑사단 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_coy_2ic"
+msgid "제7기갑사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_coy_com"
+msgid "제7기갑사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_coy_sgt_maj"
+msgid "제7기갑사단 중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_crew"
+msgid "제7기갑사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_detach_com"
+msgid "제7기갑사단 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_driver"
+msgid "제7기갑사단 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_medic"
+msgid "제7기갑사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_mg"
+msgid "제7기갑사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_mg_asst"
+msgid "제7기갑사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_plt_batman"
+msgid "제7기갑사단 소대 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_plt_com"
+msgid "제7기갑사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_plt_sgt"
+msgid "제7기갑사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle"
+msgid "제7기갑사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle_band"
+msgid "제7기갑사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle_gren"
+msgid "제7기갑사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_rifle_sniper"
+msgid "제7기갑사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_2ic"
+msgid "제7기갑사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_com"
+msgid "제7기갑사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_com_sgt"
+msgid "제7기갑사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_sec_subcom"
+msgid "제7기갑사단 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_smg"
+msgid "제7기갑사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_smg_mk2"
+msgid "제7기갑사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_tank_com"
+msgid "제7기갑사단 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_tank_com_m1928"
+msgid "제7기갑사단 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_tankman"
+msgid "제7기갑사단 전차 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_vehicle_com_cpl"
+msgid "제7기갑사단 차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_vehicle_com_sgt"
+msgid "제7기갑사단 차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/7th_ad_vehicle_crew"
+msgid "제7기갑사단 차량 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_boys"
+msgid "대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_boys_asst"
+msgid "대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_gren"
+msgid "소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_piat"
+msgid "대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/antitank_piat_asst"
+msgid "대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/artilleryman"
+msgid "왕립 포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_2ic"
+msgid "대대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_com"
+msgid "대대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_rsm"
+msgid "대대 연대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/bat_signalman"
+msgid "대대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/batman"
+msgid "당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/batman_smg"
+msgid "당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_boys"
+msgid "코만도 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_boys_asst"
+msgid "코만도 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_crew"
+msgid "코만도 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_driver"
+msgid "코만도 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_mg"
+msgid "코만도 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_mg_asst"
+msgid "코만도 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_piat"
+msgid "코만도 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_piat_asst"
+msgid "코만도 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_rifle"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_rifle_band"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_rifle_gren"
+msgid "코만도 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_sec_com"
+msgid "코만도 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_smg"
+msgid "코만도 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_sniper"
+msgid "코만도 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_subsec_2ic"
+msgid "코만도 소분대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/com_subsec_com"
+msgid "코만도 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_2ic"
+msgid "중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_com"
+msgid "중대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_qm_sgt"
+msgid "중대 병참 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_sgt_maj"
+msgid "중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/coy_signalman"
+msgid "중대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/crew"
+msgid "승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_at_boys"
+msgid "방어 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_at_boys_asst"
+msgid "방어 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_mg"
+msgid "방어 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_mg_asst"
+msgid "방어 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_rifle"
+msgid "방어 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_rifle_band"
+msgid "방어 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_sec_2ic"
+msgid "방어 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_sec_com"
+msgid "방어 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/def_sec_com_sgt"
+msgid "방어 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/detach_com"
+msgid "분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/driver"
+msgid "운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/driver_smg"
+msgid "운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo"
+msgid "전방 포병 관측 장교 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_88"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_114"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_140"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/fo_radio_183"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/medic"
+msgid "위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg"
+msgid "기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg_asst"
+msgid "기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg_crew"
+msgid "기관총 조원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mg_crew_asst"
+msgid "기관총 조 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_boys"
+msgid "차량화 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_boys_asst"
+msgid "차량화 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_mg"
+msgid "차량화 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_mg_asst"
+msgid "차량화 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_rifle"
+msgid "차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_rifle_band"
+msgid "차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_detach_com_cpl"
+msgid "차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_detach_com_lcpl"
+msgid "차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_driver"
+msgid "차량화 정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_gunner"
+msgid "차량화 정찰 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_scout_sec_com"
+msgid "차량화 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_sec_2ic"
+msgid "차량화 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_sec_com"
+msgid "차량화 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mot_sec_com_sten"
+msgid "차량화 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mp_detach_com"
+msgid "헌병 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mp_pistol"
+msgid "헌병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/mp_rifle"
+msgid "헌병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pilot"
+msgid "조종사 [RAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio"
+msgid "공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio_builder"
+msgid "공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio_sec_com_cpl"
+msgid "공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/pio_sec_com_sgt"
+msgid "공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_batman"
+msgid "소대 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_com"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/plt_sgt"
+msgid "소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_boys"
+msgid "왕립 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_boys_asst"
+msgid "왕립 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_builder"
+msgid "왕립 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mg"
+msgid "왕립 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mg_asst"
+msgid "왕립 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mine_ap"
+msgid "왕립 공병 AP 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_mine_at"
+msgid "왕립 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_sapper"
+msgid "왕립 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_sec_2ic"
+msgid "왕립 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/r_eng_sec_com"
+msgid "왕립 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rear_echelon_rifle"
+msgid "후방 지원 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rear_echelon_rifle_p14"
+msgid "후방 지원 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_detach_com"
+msgid "정찰 캐리어 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_driver"
+msgid "정찰 캐리어 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_gunner"
+msgid "정찰 캐리어 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_carrier_sec_com"
+msgid "정찰 캐리어 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_driver"
+msgid "정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_mg"
+msgid "정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_mg_asst"
+msgid "정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_rifle_band"
+msgid "정찰 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_sec_2ic"
+msgid "정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rec_sec_com"
+msgid "정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle"
+msgid "소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle_band"
+msgid "소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle_gren"
+msgid "소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rifle_sniper"
+msgid "저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_boys"
+msgid "영국 해병대 코만도 대전차병 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_boys_asst"
+msgid "영국 해병대 코만도 대전차 부사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_crew"
+msgid "영국 해병대 코만도 승무원 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_mg"
+msgid "영국 해병대 코만도 기관총 사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_mg_asst"
+msgid "영국 해병대 코만도 기관총 부사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_rifle"
+msgid "영국 해병대 코만도 소총수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_rifle_band"
+msgid "영국 해병대 코만도 소총수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_rifle_gren"
+msgid "영국 해병대 코만도 소총 유탄병 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_sniper"
+msgid "영국 해병대 코만도 저격수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_subsec_com"
+msgid "영국 해병대 코만도 소분대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_subsec_detach_com"
+msgid "영국 해병대 코만도 소분대 분견대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rm_com_subsec_detach_com_mg"
+msgid "영국 해병대 코만도 소분대 분견대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_able"
+msgid "영국 해군 코만도 수병 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_bm"
+msgid "영국 해군 코만도 상륙 지휘관 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_bma"
+msgid "영국 해군 코만도 상륙 지휘관 보좌 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_leading"
+msgid "영국 해군 코만도 상등수병 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_mg"
+msgid "영국 해군 코만도 기관총 사수 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_mg_asst"
+msgid "영국 해군 코만도 기관총 부사수 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_rifle"
+msgid "영국 해군 코만도 소총수 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/rn_com_smg"
+msgid "영국 해군 코만도 기관단총병 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_boys"
+msgid "SAS 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_boys_asst"
+msgid "SAS 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_crew"
+msgid "SAS 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_driver"
+msgid "SAS 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_mg"
+msgid "SAS 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_mg_asst"
+msgid "SAS 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_rifle"
+msgid "SAS 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_rifle_gren"
+msgid "SAS 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_sec_com"
+msgid "SAS 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_smg"
+msgid "SAS 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_sniper"
+msgid "SAS 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_subsec_com"
+msgid "SAS 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_subsec_com_cpl"
+msgid "SAS 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_troop_com"
+msgid "SAS 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sas_tsmg"
+msgid "SAS 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_2ic"
+msgid "부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_com"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_com_sgt"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_com_sten"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sec_subcom"
+msgid "소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/smg"
+msgid "기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/smg_mk2"
+msgid "기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/sniper"
+msgid "저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/tank_commander"
+msgid "전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/tank_commander_m1928"
+msgid "전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/tankman"
+msgid "전차 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vehicle_com_cpl"
+msgid "차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vehicle_com_sgt"
+msgid "차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vehicle_crew"
+msgid "차량 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_boys"
+msgid "베테랑 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_boys_asst"
+msgid "베테랑 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_mg"
+msgid "베테랑 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_mg_asst"
+msgid "베테랑 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_piat"
+msgid "베테랑 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_piat_asst"
+msgid "베테랑 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle"
+msgid "베테랑 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle_band"
+msgid "베테랑 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle_gren"
+msgid "베테랑 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_rifle_sniper"
+msgid "베테랑 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_2ic"
+msgid "베테랑 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_com"
+msgid "베테랑 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_com_sgt"
+msgid "베테랑 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_com_sten"
+msgid "베테랑 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_sec_subcom"
+msgid "베테랑 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_smg"
+msgid "베테랑 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/mid/vet_smg_mk2"
+msgid "베테랑 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_crew"
+msgid "제1공정 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_mg"
+msgid "제1공정 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_mg_asst"
+msgid "제1공정 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_piat"
+msgid "제1공정 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_piat_asst"
+msgid "제1공정 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_pio"
+msgid "제1공정 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_pio_sec_com"
+msgid "제1공정 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_pio_sec_com_cpl"
+msgid "제1공정 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_mg"
+msgid "제1공정 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_mg_asst"
+msgid "제1공정 정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_rifle"
+msgid "제1공정 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_2ic"
+msgid "제1공정 정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_com"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sec_com_bino"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_smg"
+msgid "제1공정 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rec_sniper"
+msgid "제1공정 정찰 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rifle"
+msgid "제1공정 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_rifle_band"
+msgid "제1공정 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sec_2ic"
+msgid "제1공정 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sec_com"
+msgid "제1공정 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sec_com_cpl"
+msgid "제1공정 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_smg"
+msgid "제1공정 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_land_sniper"
+msgid "제1공정 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_batman"
+msgid "제1공수사단 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_coy_2ic"
+msgid "제1공수사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_coy_com"
+msgid "제1공수사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_coy_sgt_maj"
+msgid "제1공수사단 중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_crew"
+msgid "제1공수사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng"
+msgid "제1공수사단 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_at_mine"
+msgid "제1공수사단 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_flamer"
+msgid "제1공수사단 공병 화염방사병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_mg"
+msgid "제1공수사단 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_mg_asst"
+msgid "제1공수사단 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_piat"
+msgid "제1공수사단 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_piat_asst"
+msgid "제1공수사단 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sapper"
+msgid "제1공수사단 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sec_2ic"
+msgid "제1공수사단 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sec_com"
+msgid "제1공수사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_eng_sec_com_sgt"
+msgid "제1공수사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_medic"
+msgid "제1공수사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mg"
+msgid "제1공수사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mg_asst"
+msgid "제1공수사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mg_asst_smg"
+msgid "제1공수사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mortar"
+msgid "제1공수사단 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_mortar_asst"
+msgid "제1공수사단 박격포 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_piat"
+msgid "제1공수사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_piat_asst"
+msgid "제1공수사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_plt_com"
+msgid "제1공수사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_plt_sgt"
+msgid "제1공수사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg"
+msgid "제1공수사단 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg_asst"
+msgid "제1공수사단 정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg_vgo"
+msgid "제1공수사단 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_mg_vgo_asst"
+msgid "제1공수사단 정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_rifle"
+msgid "제1공수사단 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_2ic"
+msgid "제1공수사단 정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_com"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_com_bino"
+msgid "제1 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_sec_mortar"
+msgid "제1공수사단 정찰 분대 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rec_smg_band"
+msgid "제1공수사단 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rifle"
+msgid "제1공수사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rifle_band"
+msgid "제1공수사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_rifle_gren"
+msgid "제1공수사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_2ic"
+msgid "제1공수사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_com"
+msgid "제1공수사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_com_cpl"
+msgid "제1공수사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sec_mortar"
+msgid "제1공수사단 분대 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_smg"
+msgid "제1공수사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_smg_band"
+msgid "제1공수사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_smg_band_patchett"
+msgid "제1공수사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/1st_air_para_sniper"
+msgid "제1공수사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_crew"
+msgid "제6공정 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_mg"
+msgid "제6공정 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_mg_asst"
+msgid "제6공정 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_piat"
+msgid "제6공정 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_piat_asst"
+msgid "제6공정 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_pio"
+msgid "제6공정 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_pio_sec_com"
+msgid "제6공정 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_pio_sec_com_cpl"
+msgid "제6공정 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_mg"
+msgid "제6공정 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_mg_asst"
+msgid "제6공정 정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_rifle"
+msgid "제6공정 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_2ic"
+msgid "제6공정 정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_com"
+msgid "제6 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_sec_com_bino"
+msgid "제6 공수 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rec_smg"
+msgid "제6공정 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rifle"
+msgid "제6공정 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_rifle_band"
+msgid "제6공정 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sec_2ic"
+msgid "제6공정 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sec_com"
+msgid "제6공정 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sec_com_cpl"
+msgid "제6공정 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_smg"
+msgid "제6공정 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_land_sniper"
+msgid "제6공정 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_batman"
+msgid "제6공수사단 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_coy_2ic"
+msgid "제6공수사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_coy_com"
+msgid "제6공수사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_coy_sgt_maj"
+msgid "제6공수사단 중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_crew"
+msgid "제6공수사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng"
+msgid "제6공수사단 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_at_mine"
+msgid "제6공수사단 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_flamer"
+msgid "제6공수사단 공병 화염방사병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_mg"
+msgid "제6공수사단 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_mg_asst"
+msgid "제6공수사단 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_piat"
+msgid "제6공수사단 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_piat_asst"
+msgid "제6공수사단 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sapper"
+msgid "제6공수사단 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sec_2ic"
+msgid "제6공수사단 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sec_com"
+msgid "제6공수사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_eng_sec_com_sgt"
+msgid "제6공수사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_medic"
+msgid "제6공수사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mg"
+msgid "제6공수사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mg_asst"
+msgid "제6공수사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mg_asst_smg"
+msgid "제6공수사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mortar"
+msgid "제6공수사단 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_mortar_asst"
+msgid "제6공수사단 박격포 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_piat"
+msgid "제6공수사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_piat_asst"
+msgid "제6공수사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_plt_com"
+msgid "제6공수사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_plt_sgt"
+msgid "제6공수사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_rifle"
+msgid "제6공수사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_rifle_band"
+msgid "제6공수사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_rifle_gren"
+msgid "제6공수사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_2ic"
+msgid "제6공수사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_com"
+msgid "제6공수사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_com_cpl"
+msgid "제6공수사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sec_mortar"
+msgid "제6공수사단 분대 박격포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_smg"
+msgid "제6공수사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_smg_band"
+msgid "제6공수사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/6th_air_para_sniper"
+msgid "제6공수사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_coy_2ic"
+msgid "제7기갑사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_coy_com"
+msgid "제7기갑사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_coy_sgt_maj"
+msgid "제7기갑사단 중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_crew"
+msgid "제7기갑사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_detach_com"
+msgid "제7기갑사단 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_driver"
+msgid "제7기갑사단 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_driver_smg"
+msgid "제7기갑사단 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_builder"
+msgid "제7기갑사단 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_flamer"
+msgid "제7기갑사단 공병 화염방사병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mg"
+msgid "제7기갑사단 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mg_asst"
+msgid "제7기갑사단 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mine_ap"
+msgid "제7기갑사단 공병 AP 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_mine_at"
+msgid "제7기갑사단 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_piat"
+msgid "제7기갑사단 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_piat_asst"
+msgid "제7기갑사단 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_sapper"
+msgid "제7기갑사단 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_sec_2ic"
+msgid "제7기갑사단 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_eng_sec_com"
+msgid "제7기갑사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_medic"
+msgid "제7기갑사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mg"
+msgid "제7기갑사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mg_asst"
+msgid "제7기갑사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_mg"
+msgid "제7기갑사단 차량화 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_mg_asst"
+msgid "제7기갑사단 차량화 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_piat"
+msgid "제7기갑사단 차량화 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_piat_asst"
+msgid "제7기갑사단 차량화 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_rifle"
+msgid "제7기갑사단 차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_rifle_band"
+msgid "제7기갑사단 차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_rifle_sniper"
+msgid "제7기갑사단 차량화 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_detach_com_cpl"
+msgid "제7기갑사단 차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_detach_com_lcpl"
+msgid "제7기갑사단 차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_driver"
+msgid "제7기갑사단 차량화 정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_mg"
+msgid "제7기갑사단 차량화 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_piat"
+msgid "제7기갑사단 차량화 정찰 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_rifle"
+msgid "제7기갑사단 차량화 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_scout_sec_com"
+msgid "제7기갑사단 차량화 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_sec_2ic"
+msgid "제7기갑사단 차량화 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_mot_sec_com"
+msgid "제7기갑사단 차량화 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_piat"
+msgid "제7기갑사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_piat_asst"
+msgid "제7기갑사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio"
+msgid "제7기갑사단 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio_builder"
+msgid "제7기갑사단 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio_sec_com_cpl"
+msgid "제7기갑사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_pio_sec_com_sgt"
+msgid "제7기갑사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_plt_com"
+msgid "제7기갑사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_plt_sgt"
+msgid "제7기갑사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle"
+msgid "제7기갑사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle_band"
+msgid "제7기갑사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle_gren"
+msgid "제7기갑사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_rifle_sniper"
+msgid "제7기갑사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_2ic"
+msgid "제7기갑사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_com"
+msgid "제7기갑사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_com_sgt"
+msgid "제7기갑사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_sec_subcom"
+msgid "제7기갑사단 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_smg"
+msgid "제7기갑사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_tank_com"
+msgid "제7기갑사단 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_tank_com_m1928"
+msgid "제7기갑사단 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_tankman"
+msgid "제7기갑사단 전차 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_vehicle_com_cpl"
+msgid "제7기갑사단 차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_vehicle_com_sgt"
+msgid "제7기갑사단 차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/7th_ad_vehicle_crew"
+msgid "제7기갑사단 차량 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/antitank_gren"
+msgid "소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/antitank_piat"
+msgid "대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/antitank_piat_asst"
+msgid "대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/artilleryman"
+msgid "왕립 포병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_2ic"
+msgid "대대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_com"
+msgid "대대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_rsm"
+msgid "대대 연대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/bat_signalman"
+msgid "대대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/batman"
+msgid "당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/batman_smg"
+msgid "당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_crew"
+msgid "코만도 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_delisle"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_driver"
+msgid "코만도 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_mg"
+msgid "코만도 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_mg_asst"
+msgid "코만도 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_band"
+msgid "코만도 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_gren"
+msgid "코만도 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_piat"
+msgid "코만도 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_rifle_piat_asst"
+msgid "코만도 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_sec_com"
+msgid "코만도 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_smg"
+msgid "코만도 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_smg_s"
+msgid "코만도 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_sniper"
+msgid "코만도 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_subsec_2ic"
+msgid "코만도 소분대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_subsec_2ic_smg_s"
+msgid "코만도 소분대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/com_subsec_com"
+msgid "코만도 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_2ic"
+msgid "중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_com"
+msgid "중대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_qm_sgt"
+msgid "중대 병참 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_sgt_maj"
+msgid "중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/coy_signalman"
+msgid "중대 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/crew"
+msgid "승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_at_piat"
+msgid "방어 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_at_piat_asst"
+msgid "방어 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_mg"
+msgid "방어 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_mg_asst"
+msgid "방어 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_rifle"
+msgid "방어 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_rifle_band"
+msgid "방어 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_sec_2ic"
+msgid "방어 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_sec_com"
+msgid "방어 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/def_sec_com_sgt"
+msgid "방어 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/detach_com"
+msgid "분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/driver"
+msgid "운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/driver_smg"
+msgid "운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo"
+msgid "전방 포병 관측 장교 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_88"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_114"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_140"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/fo_radio_183"
+msgid "전방 포병 관측 통신병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_coy_2ic"
+msgid "근위 기갑사단 중대 부지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_coy_com"
+msgid "근위 기갑사단 중대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_coy_sgt_maj"
+msgid "근위 기갑사단 중대 Sergeant Major [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_crew"
+msgid "근위 기갑사단 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_detach_com"
+msgid "근위 기갑사단 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_driver"
+msgid "근위 기갑사단 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_builder"
+msgid "근위 기갑사단 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_flamer"
+msgid "근위 기갑사단 공병 화염방사병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mg"
+msgid "근위 기갑사단 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mg_asst"
+msgid "근위 기갑사단 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mine_ap"
+msgid "근위 기갑사단 공병 AP 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_mine_at"
+msgid "근위 기갑사단 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_piat"
+msgid "근위 기갑사단 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_piat_asst"
+msgid "근위 기갑사단 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_sapper"
+msgid "근위 기갑사단 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_sec_2ic"
+msgid "근위 기갑사단 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_eng_sec_com"
+msgid "근위 기갑사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_medic"
+msgid "근위 기갑사단 위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mg"
+msgid "근위 기갑사단 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mg_asst"
+msgid "근위 기갑사단 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_mg"
+msgid "근위 기갑사단 차량화 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_mg_asst"
+msgid "근위 기갑사단 차량화 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_piat"
+msgid "근위 기갑사단 차량화 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_piat_asst"
+msgid "근위 기갑사단 차량화 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_rifle"
+msgid "근위 기갑사단 차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_rifle_band"
+msgid "근위 기갑사단 차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_rifle_sniper"
+msgid "근위 기갑사단 차량화 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_detach_com_cpl"
+msgid "근위 기갑사단 차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_detach_com_lcpl"
+msgid "근위 기갑사단 차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_driver"
+msgid "근위 기갑사단 차량화 정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_mg"
+msgid "근위 기갑사단 차량화 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_piat"
+msgid "근위 기갑사단 차량화 정찰 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_rifle"
+msgid "근위 기갑사단 차량화 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_scout_sec_com"
+msgid "근위 기갑사단 차량화 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_sec_2ic"
+msgid "근위 기갑사단 차량화 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_mot_sec_com"
+msgid "근위 기갑사단 차량화 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_piat"
+msgid "근위 기갑사단 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_piat_asst"
+msgid "근위 기갑사단 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio"
+msgid "근위 기갑사단 공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio_builder"
+msgid "근위 기갑사단 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio_sec_com_cpl"
+msgid "근위 기갑사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_pio_sec_com_sgt"
+msgid "근위 기갑사단 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_plt_com"
+msgid "근위 기갑사단 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_plt_sgt"
+msgid "근위 기갑사단 소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle"
+msgid "근위 기갑사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle_band"
+msgid "근위 기갑사단 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle_gren"
+msgid "근위 기갑사단 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_rifle_sniper"
+msgid "근위 기갑사단 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_2ic"
+msgid "근위 기갑사단 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_com"
+msgid "근위 기갑사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_com_sgt"
+msgid "근위 기갑사단 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_sec_subcom"
+msgid "근위 기갑사단 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_smg"
+msgid "근위 기갑사단 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_tank_com"
+msgid "근위 기갑사단 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_tank_com_m1928"
+msgid "근위 기갑사단 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_tankman"
+msgid "근위 기갑사단 전차 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_vehicle_com_cpl"
+msgid "근위 기갑사단 차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_vehicle_com_sgt"
+msgid "근위 기갑사단 차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/gds_ad_vehicle_crew"
+msgid "근위 기갑사단 차량 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/glider_pilot_rifle"
+msgid "글라이더 조종사 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/glider_pilot_smg"
+msgid "글라이더 조종사 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/medic"
+msgid "위생병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg"
+msgid "기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg_asst"
+msgid "기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg_crew"
+msgid "기관총 조원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mg_crew_asst"
+msgid "기관총 조 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_mg"
+msgid "차량화 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_mg_asst"
+msgid "차량화 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_piat"
+msgid "차량화 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_piat_asst"
+msgid "차량화 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_rifle"
+msgid "차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_rifle_band"
+msgid "차량화 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_rifle_sniper"
+msgid "차량화 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_detach_com_cpl"
+msgid "차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_detach_com_lcpl"
+msgid "차량화 정찰 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_driver"
+msgid "차량화 정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_mg"
+msgid "차량화 정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_piat"
+msgid "차량화 정찰 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_rifle"
+msgid "차량화 정찰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_scout_sec_com"
+msgid "차량화 정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_sec_2ic"
+msgid "차량화 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mot_sec_com"
+msgid "차량화 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mp_detach_com"
+msgid "헌병 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mp_pistol"
+msgid "헌병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/mp_rifle"
+msgid "헌병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pilot"
+msgid "조종사 [RAF]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio"
+msgid "공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio_builder"
+msgid "공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio_sec_com_cpl"
+msgid "공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/pio_sec_com_sgt"
+msgid "공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/plt_batman"
+msgid "소대 당번병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/plt_com"
+msgid "소대 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/plt_sgt"
+msgid "소대 Sergeant [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_builder"
+msgid "왕립 공병 건설병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_flamer"
+msgid "왕립 공병 화염방사병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mg"
+msgid "왕립 공병 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mg_asst"
+msgid "왕립 공병 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mine_ap"
+msgid "왕립 공병 AP 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_mine_at"
+msgid "왕립 공병 대전차 지뢰병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_piat"
+msgid "왕립 공병 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_piat_asst"
+msgid "왕립 공병 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_sapper"
+msgid "왕립 공병 전투공병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_sec_2ic"
+msgid "왕립 공병 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/r_eng_sec_com"
+msgid "왕립 공병 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rear_echelon_rifle"
+msgid "후방 지원 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rear_echelon_smg"
+msgid "후방 지원 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_detach_com"
+msgid "정찰 캐리어 분견대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_driver"
+msgid "정찰 캐리어 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_mg"
+msgid "정찰 캐리어 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_piat"
+msgid "정찰 캐리어 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_rifle"
+msgid "정찰 캐리어 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_carrier_sec_com"
+msgid "정찰 캐리어 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_driver"
+msgid "정찰 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_mg"
+msgid "정찰 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_mg_asst"
+msgid "정찰 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_rifle_band"
+msgid "정찰 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_sec_2ic"
+msgid "정찰 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rec_sec_com"
+msgid "정찰 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle"
+msgid "소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_band"
+msgid "소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_gren"
+msgid "소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_piat"
+msgid "대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_piat_asst"
+msgid "대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rifle_sniper"
+msgid "저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_crew"
+msgid "영국 해병대 코만도 승무원 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg"
+msgid "영국 해병대 코만도 기관총 사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg_asst"
+msgid "영국 해병대 코만도 기관총 부사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg_vgo"
+msgid "영국 해병대 코만도 기관총 사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_mg_vgo_asst"
+msgid "영국 해병대 코만도 기관총 부사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle"
+msgid "영국 해병대 코만도 소총수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle_band"
+msgid "영국 해병대 코만도 소총수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle_piat"
+msgid "영국 해병대 코만도 대전차병 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_rifle_piat_asst"
+msgid "영국 해병대 코만도 대전차 부사수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_sniper"
+msgid "영국 해병대 코만도 저격수 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_com"
+msgid "영국 해병대 코만도 소분대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_detach_com"
+msgid "영국 해병대 코만도 소분대 분견대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_detach_com_mg"
+msgid "영국 해병대 코만도 소분대 분견대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rm_com_subsec_detach_com_mg_vgo"
+msgid "영국 해병대 코만도 소분대 분견대장 [RM]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_able"
+msgid "영국 해군 코만도 수병 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_bm"
+msgid "영국 해군 코만도 상륙 지휘관 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_bma"
+msgid "영국 해군 코만도 상륙 지휘관 보좌 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_leading"
+msgid "영국 해군 코만도 상등수병 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_mg"
+msgid "영국 해군 코만도 기관총 사수 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_mg_asst"
+msgid "영국 해군 코만도 기관총 부사수 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_rifle"
+msgid "영국 해군 코만도 소총수 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_com_smg"
+msgid "영국 해군 코만도 기관단총병 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/rn_crew"
+msgid "영국 해군 승무원 [RN]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_crew"
+msgid "SAS 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_driver"
+msgid "SAS 운전병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_mg"
+msgid "SAS 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_mg_asst"
+msgid "SAS 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_piat"
+msgid "SAS 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_piat_asst"
+msgid "SAS 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_rifle"
+msgid "SAS 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_rifle_gren"
+msgid "SAS 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_sec_com"
+msgid "SAS 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_smg"
+msgid "SAS 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_smg_mk5"
+msgid "SAS 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_sniper"
+msgid "SAS 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_subsec_com"
+msgid "SAS 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_subsec_com_cpl"
+msgid "SAS 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_troop_com"
+msgid "SAS 소대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sas_tsmg"
+msgid "SAS 기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_2ic"
+msgid "부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_com"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_com_sgt"
+msgid "분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sec_subcom"
+msgid "소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/smg"
+msgid "기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/smg_mk3"
+msgid "기관단총병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/sniper"
+msgid "저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_com"
+msgid "SOE 지휘관"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_delisle"
+msgid "SOE 요원"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_radio_op"
+msgid "SOE 무전병"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_sten2s"
+msgid "SOE 요원"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_sten6"
+msgid "SOE 요원"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_welrod"
+msgid "SOE 요원"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/soe_xo"
+msgid "SOE 부지휘관"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tank_commander"
+msgid "전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tank_commander_m1928"
+msgid "전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tank_commander_ace"
+msgid "에이스 전차장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/tankman"
+msgid "전차 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vehicle_com_cpl"
+msgid "차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vehicle_com_sgt"
+msgid "차량 지휘관 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vehicle_crew"
+msgid "차량 승무원 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_at_piat"
+msgid "베테랑 대전차병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_at_piat_asst"
+msgid "베테랑 대전차 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_mg"
+msgid "베테랑 기관총 사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_mg_asst"
+msgid "베테랑 기관총 부사수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle"
+msgid "베테랑 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle_band"
+msgid "베테랑 소총수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle_gren"
+msgid "베테랑 소총 유탄병 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_rifle_sniper"
+msgid "베테랑 저격수 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_2ic"
+msgid "베테랑 부분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_com"
+msgid "베테랑 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_com_sgt"
+msgid "베테랑 분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_sec_subcom"
+msgid "베테랑 소분대장 [BA]"
+msgstr ""
+
+msgctxt "desc/human/mp/eng/late/vet_smg"
+msgid "베테랑 기관단총병 [BA]"
+msgstr ""

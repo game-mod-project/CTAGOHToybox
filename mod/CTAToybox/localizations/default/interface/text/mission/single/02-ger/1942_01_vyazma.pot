@@ -1,0 +1,277 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1942_01_vyazma)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/date"
+msgid "1942년 1월 16일 - 글루시코보"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/lose_troops"
+msgid "병사를 모두 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/mission_option_select1"
+msgid "전술 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/name"
+msgid "제자리로 돌아오다"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/name_big"
+msgid "제자리로 돌아오다"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/hint/skip"
+msgid "준비가 되었다면 오른쪽 버튼을 눌러 방어 준비를 건너뛸 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/leutnant/01"
+msgid "맙소사, 처음 왔을 때는 이곳이 훨씬 나아 보였는데."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/leutnant/02"
+msgid "닥쳐라. 우리 상황은 웃을 일이 아니다. 압도적인 병력에 포위되기 직전인데 그들의 집요한 반격에 맞설 수단은 거의 없다. 우리에게 유리한 건 우리 근접 항공 지원의 뛰어난 성과뿐이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/leutnant/03"
+msgid "마요"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/leutnant/04"
+msgid "Herr Hauptmann, 요청하신 대로 보고드립니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/01"
+msgid "잘 왔다! 가까이 오라. 한때 그대가 이 구역 공격을 이끌었지, 오늘은 공군의 도움을 받아 이곳을 방어해 주길 바란다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/02"
+msgid "소련군이 북쪽과 북서쪽에서 전면 공격을 해 올 것으로 예상한다. 우리가 소련군과 아군 포위 사이를 가로막는 유일한 존재다. 더는 후퇴는 없다, 알아들었나?"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/03"
+msgid "볼셰비키 기갑에 맞설 가장 파괴적인 무기인 8.8cm 대공포 여단을 배정한다. 이 포를 중심으로 전술을 완전히 짜야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/04"
+msgid "이들은 우리 포병 신호병이다. 이들의 조명탄이 회프너의 제4 군 포병에게 길을 알려 줄 것이다. 아껴서 써라. 루프트바페 ZG26 비행대가 지상군을 지원할 것이다. 행운을 빈다, Herr Leutnant!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/05"
+msgid "엄폐물을 찾아라! 적이 곧 불꽃놀이를 시작할 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/06"
+msgid "주도로 북쪽으로 너무 멀리 방어 시설을 짓지 마라! 그곳이 소련군이 우리 방어선이 있다고 생각하는 지역이다. 틀림없이 그곳을 쑥대밭으로 폭격할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/07"
+msgid "예상대로 놈들은 우리 방어선이 더 북쪽에 있다고 생각했군... 뭐, 우리 사선을 비우는 한 방법이기도 하다. 대비해라, 적이 곧 모습을 드러낼 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/08"
+msgid "우리 포병 신호병을 쓸 수 있다. 이들의 조명탄이 회프너의 제4 군 포병에게 길을 알려 줄 것이다. 아껴서 써라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/09"
+msgid "항공 지원을 제외하면 우리는 고립되어 있으니 증원은 기대하지 마라. 방어선의 구멍을 메우도록 후방에 예비대를 남겨 두어라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/10"
+msgid "우리의 따뜻한 환영이 마음에 들지 않았을 것이다. 자리를 지켜라, 적이 우리 측면을 노릴 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/11"
+msgid "볼셰비키를 훌륭하게 막아냈다! 하지만 인접 부대는 준비가 덜 된 채 기습을 당했다. 남서쪽에서 오는 공격에 대비해라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/12"
+msgid "소련군 선두가 남서쪽에서 도착했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/13"
+msgid "저게 대체 뭐야?! 보통 포병이 아니다!!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/14"
+msgid "Herr Lieutenant, 가용 병력을 모두 데리고 위협을 제거하십시오!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/15"
+msgid "훌륭하다! 우리 쪽으로 오는 추가 공격은 보고되지 않았다. 부근에 남은 적 전차를 처리하고, 저 거대한 놈들 중 일부를 쓸 수 있도록 건질 수 있는지 살펴라. 최소 40톤은 나갈 것이다!!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/16"
+msgid "젠장, 날씨가 크게 나빠졌다. 이런 조건에서는 우리 비행사들이 도울 수 없다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf109_1"
+msgid "호출부호 \"발트카우츠\"가 요청한 목표를 향해 급강하 중이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf109_2"
+msgid "항공 지원이 오고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf109_3"
+msgid "호출부호 \"발트카우츠\"가 \"로테\" 편대를 목표로 보냈다고 보고한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf110_1"
+msgid "호출부호 \"비르징\"에게 지정 지역 폭격을 요청한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf110_2"
+msgid "\"비르징\"이 귀관의 좌표를 폭격하러 가고 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf110_3"
+msgid "ZG26 일부 편대가 오고 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf110_4"
+msgid "호출부호 \"비르징\"에게 지정 지역 기총 소사를 요청한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/airstrike_bf110_5"
+msgid "\"비르징\"이 귀관의 좌표를 기총 소사하러 가고 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/flak1"
+msgid "아군 항공기가 이 지역에서 적 대공포를 보고하고 있다. 대공포가 제거되기 전에는 근접 항공 지원 공격을 계속하기를 꺼린다. 찾아서 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/n_1"
+msgid "북쪽에서 소련군 눈사태다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/n_2"
+msgid "볼셰비키가 북쪽에서 다시 왔다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/nw_1"
+msgid "적이 북서쪽에서 다시 우리를 밀어붙이고 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/nw_2"
+msgid "적 전차가 북서쪽에서 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/nw_3"
+msgid "소련 기갑이 북서쪽에서 진입 중이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/sw_1"
+msgid "적 대규모 기갑 대형이 남서쪽에서 오고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/sw_2"
+msgid "적 전차가 남서쪽 도로에서 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/sw_3"
+msgid "남서쪽이다! 기갑이 도로를 따라온다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/player/01"
+msgid "총통께서는 크리스마스까지 모스크바의 볼셰비키를 포위하겠다고 하셨지. 어느 크리스마스인지는 말씀하지 않으신 모양이야."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/player/02"
+msgid "엄폐해라!!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/player/03"
+msgid "젠장! 총사령관이 죽었다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/player/04"
+msgid "볼셰비키가 사령부 구내에 들어왔다! 즉시 몰아내야 한다, 우리 지휘부가 위험하다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/player/05"
+msgid "사령부 부근에 소련군이다! 지휘관과 참모진이 위험하다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/player/06"
+msgid "젠장! 소련군이 사령부 가까이에 있다! 참모진을 지켜야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/outro_completed"
+msgid "제9 군의 굳건한 방어와 루프트바페의 영웅적 기여 덕에 코네프의 부대는 중부집단군 포위에 실패했다. 소련군의 반격은 2월에 정체되었다. 새로운 전선 배치는 르제프 고기분쇄기와 다른 전투들로 이어졌고, 끔찍한 손실에도 소련의 희생은 수도를 지켜 냈다. 이후 히틀러는 남쪽 캅카스와 스탈린그라드로 눈을 돌렸고, 이는 모스크바가 소련 수중에 굳건히 남고 이를 점령하려는 시도가 더는 없으리라는 뜻이었다. 태풍 작전은 실패했다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/outro_failed"
+msgid "이 전투에서 패하면 중부집단군 주력이 곧 포위되고, 보급이 줄어 병력과 차량의 참담한 손실이 닥칠 것이다. 그뿐 아니라 드네프르 도하 지점의 통제권을 다시 잃었다. 이는 제자리로 돌아가는 것보다 더 나쁘다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/place"
+msgid "중부집단군 제9 군."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/preparation"
+msgid "적이 접근하고 있다. 방어를 준비해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/reinf_110_50"
+msgid "Bf-110 SC-50"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/reinf_110_500"
+msgid "Bf-110 SC-500"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/reinf_110_guns"
+msgid "Bf-110 기총 소사"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/story"
+msgid "태풍 작전이 정체되자 스타프카가 반격에 나서 베어마흐트를 방어 태세로 몰아넣고 10월에 점령했던 진지까지 밀어냈다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/task1"
+msgid "사령부를 목숨을 걸고 지켜라! 참모진을 안전하게 지켜라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/task2"
+msgid "중포를 제거하고 소련군 진지를 무력화하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/taskopt1"
+msgid "대공포를 제거해 항공 지원을 재개시켜라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/taskopt2"
+msgid "소련 KV급 중전차를 최소 한 대 건져 내라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_01_vyazma/timer"
+msgid "사령부를 방어하라:"
+msgstr ""

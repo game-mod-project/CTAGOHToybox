@@ -1,0 +1,46 @@
+# source: mod_2905667604 interface/text/names/dlg_names_chi.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms - Gates of Hell: Ostfront (names for finland)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "names/chi/first"
+msgid "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+msgstr "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+
+msgctxt "names/chi/last"
+msgid "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+msgstr "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+
+msgctxt "names/chi_medic/first"
+msgid "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+msgstr "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+
+msgctxt "names/chi_medic/last"
+msgid "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+msgstr "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+
+msgctxt "names/chi_officer/first"
+msgid "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+msgstr "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+
+msgctxt "names/chi_officer/last"
+msgid "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+msgstr "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+
+msgctxt "names/chi_sniper/first"
+msgid "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+msgstr "Anwei\nBaolin\nChangming\nCheng\nDawei\nDequan\nFang\nFeng\nGuang\nGuoqiang\nGuosheng\nHai\nHong\nHuai\nHui\nJian\nJianguo\nJiang\nJing\nJun\nKang\nLiang\nMao\nMing\nNing\nPeng\nQiang\nQiu\nShan\nSheng\nShouyi\nShun\nSong\nTao\nWei\nWen\nXiang\nXiangyu\nXiao\nXin\nXing\nXiu\nXu\nYan\nYang\nYong\nYuan\nYue\nZemin\nZhen\nZhiguo\nZhimin\nZhong\nZhou\nZhuo\n"
+
+msgctxt "names/chi_sniper/last"
+msgid "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"
+msgstr "Wang\nLi\nZhang\nLiu\nChen\nYang\nHuang\nZhao\nWu\nZhou\nXu\nSun\nMa\nZhu\nHu\nGuo\nHe\nGao\nLin\nLuo\nZheng\nXie\nTang\nSong\nHan\nFeng\nCao\nPeng\nCheng\nWei\nJiang\nShen\nYao\nDeng\nSu\nPan\nFang\nShi\nZeng\nHao\nQian\nKong\nTan\nCai\nFan\nLai\nMeng\nMo\nBao\nTian\nPei\n"

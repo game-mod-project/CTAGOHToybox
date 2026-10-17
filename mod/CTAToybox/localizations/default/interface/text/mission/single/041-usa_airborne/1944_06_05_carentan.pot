@@ -1,0 +1,197 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_05_carentan)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/date"
+msgid "1944년 6월 12일 · 프랑스 노르망디, 카랑탕."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/lose_winters"
+msgid "위터스 Lieutenant가 전사했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/name"
+msgid "독수리와 악마"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/name_big"
+msgid "독수리와 악마"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator02"
+msgid "움직여라! 도랑에서 나와! 가라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator03"
+msgid "교차로를 확보했다! 도로를 따라 북쪽 시내 중심으로 이동한다. 출발!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator04"
+msgid "여기엔 엄폐물이 없다! 움직여! 움직여!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator05"
+msgid "저 박격포를 빨리 치지 않으면 우리가 갈기갈기 찢긴다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator06"
+msgid "정신 차려라! 새 분대가 전투에 합류한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator07"
+msgid "좌측방 정리 완료!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator08"
+msgid "우측 정원 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator09"
+msgid "이 철길 남쪽은 전부 소탕했다! 시내에서 적의 움직임이 관측된다. 반격을 준비하는 듯하다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator10"
+msgid "화기 소대가 따라붙었다. 배치해서 진지 방어를 준비해라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator11"
+msgid "적 박격포다! 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator13"
+msgid "북서쪽에서 아군 글라이더 부대가 온다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator14"
+msgid "독일 놈들 반궤도차다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator15"
+msgid "가, 가, 가!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator17"
+msgid "조심해서 다뤄, Trooper!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator18"
+msgid "마을 서쪽 고지대에 방어 진지를 구축하라는 명령이 떨어졌다. 여기서 또 반격을 기다리고 있지는 않겠다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator19"
+msgid "그래, 진정해라, 립. 널 여기서 빼내서 영국으로 돌려보내 주마."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_lipton01"
+msgid "저는 걱정 마십시오. 곧 돌아오겠습니다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier01"
+msgid "조용한 것 같습니다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier02"
+msgid "보십시오! 놈들이 물러납니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier03"
+msgid "독일 놈들이 또 후퇴합니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier04"
+msgid "저 독일 놈들, 이제 질렸나 봅니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier05"
+msgid "이거 보십시오! 독일 놈들이 도망치느라 이걸 두고 갔습니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier06"
+msgid "이 구역은 확보됐습니다! 다음 계획은 뭡니까?"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator_soldier07"
+msgid "엄폐해라! 적 기관총이다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/outro_completed"
+msgid "잘했다! 카랑탕을 확보하면서 오마하와 유타의 아군이 연결되었다. 끊김 없는 교두보 덕분에 아군은 돌파해 코탕탱 반도를 장악할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/outro_failed"
+msgid "실패했다! 카랑탕은 여전히 독일군 손에 있어 유타와 오마하 해변의 아군이 합류하지 못한다. 다시 도전하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/place"
+msgid "제101공수사단 \"비명을 지르는 독수리\""
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/situation1"
+msgid "D-데이 +6, 06:00시"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/story"
+msgid "  프랑스에 낙하한 지 거의 일주일이 지났고, 정말 지독한 한 주였다. 독일군은 노르망디를 포기할 생각이 없으며, 몇 차례 격렬한 반격은 이 전투가 결코 끝나지 않았음을 보여 주었다.\n\n  카랑탕을 쥐는 쪽이 코탕탱 반도의 열쇠를 쥔다는 것은 분명하다. 제101사단이 카랑탕을 점령하면 유타와 오마하 해변의 아군이 하나로 이어진 전선을 만들 수 있다.\n\n  당신의 연대, 제506 PIR은 남쪽에서 카랑탕에 접근한다. 명령은 카랑탕 철도역을 점령하는 것이다. 이 공격을 지원하기 위해 제401 글라이더 보병 연대가 시내 반대편에서 공격한다.\n\n 행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task1"
+msgid "적 MG42를 제압하고 교차로를 소탕하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task2"
+msgid "카랑탕 중심으로 향하는 도로를 소탕하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task3"
+msgid "정원의 적 박격포를 제압하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task4"
+msgid "진지 방어를 준비하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task5"
+msgid "증원이 도착할 때까지 진지를 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task6"
+msgid "시내의 적 박격포를 제압하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task7"
+msgid "아군 글라이더 부대와 합류하고 적 본부를 점령하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_secret"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_secret_comp"
+msgid "(비밀 목표 #1) 독일군 로켓 포병을 찾아라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_winters"
+msgid "위터스 Lieutenant를 살려라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_heal_winters"
+msgid "위터스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/timer"
+msgid "적 반격에 대비하라:"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/timer2"
+msgid "진지를 지켜라!"
+msgstr ""

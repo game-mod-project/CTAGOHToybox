@@ -1,0 +1,125 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_08_skirmish_falaise_pocket)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/name"
+msgid "팔레즈 포위망 [스커미시]"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/name_big"
+msgid "팔레즈 포위망"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/story"
+msgid "남쪽에서 올라오는 제3군의 진격이 순조롭다 - 포위망을 닫아라.\n\n제3기갑사단 장병들! 역사적인 기회가 눈앞에 있다. 독일군 주력을 포위망에 가둘 수 있다!\n\n목표:\n - 북쪽으로 진격해 포위망을 닫아라.\n - 적을 섬멸하라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/place"
+msgid "칼바도스, 팔레즈"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/date"
+msgid "1944년 8월 17일"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/outro_completed"
+msgid "잘했다! 이것은 정말 중요한 승리로 역사에 남을 것이다. 아주 잘했다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/outro_failed"
+msgid "실패했군. 이런 일이 일어나게 둘 수 없다. 돌아가서 다시 시도해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/outro_failed_hq"
+msgid "본부를 잃었다. 이것으로 끝이다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/mission_hq"
+msgid "야전 본부를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/mission_attack"
+msgid "적 진지에 구멍을 내고 북쪽으로 진격하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/flag_capture_status"
+msgid "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/narrator_start0"
+msgid "전선에 돌아온 것을 환영한다, Lieutenant! 여기가 야전 본부다. 반드시 장악하고 있어라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/narrator_start1"
+msgid "제군, 즉시 공격하는 수밖에 없다. 본부의 명령은 매우 분명했다. 공격을 미룰 여유는 없다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/narrator_start2"
+msgid "독일군은 우리가 이 방향에서 공격하리라 예상하지 못할 것이다. 놈들을 잡자!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/narrator_start3"
+msgid "공격을 개시해라. 그동안 더 많은 증원이 준비되고 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/allied_enemy_near_hq"
+msgid "주의, 독일군이 야전 본부로 접근하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/allied_enemy_plane"
+msgid "적 항공기다!!!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/allied_enemy_plane2"
+msgid "독일 항공기 접근 중!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/player_enemy_near_hq"
+msgid "무슨 일이 있어도 지휘소를 지켜야 한다! 후퇴할 여지는 없다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_08_skirmish_falaise_pocket/hq_bonus"
+msgid "Major! 이제 공습을 요청할 수 있습니다."
+msgstr ""

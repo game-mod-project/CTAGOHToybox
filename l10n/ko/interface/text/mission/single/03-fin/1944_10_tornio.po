@@ -1,0 +1,102 @@
+# source: vanilla interface/text/mission/single/03-fin/1944_10_tornio.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_10_tornio)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/date"
+msgid "8th October, 1944 · Tornio, Finno-Swedish border"
+msgstr "1944년 10월 8일 · 핀란드-스웨덴 국경, 토르니오"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/men"
+msgid "You lost all your men!"
+msgstr "병사를 모두 잃었다!"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/name"
+msgid "The Bridge Too Far"
+msgstr "너무 먼 다리"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/name_big"
+msgid "The Bridge Too Far"
+msgstr "너무 먼 다리"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/01"
+msgid "Jaegers! Today we have a mission for you of great importance! The fate of the country is in your hands!"
+msgstr "예거들! 오늘 제군에게 매우 중요한 임무가 주어졌다! 나라의 운명이 제군의 손에 달렸다!"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/02"
+msgid "The bridge in front of us is of great value to the Germans. They want it because it gives access to the shortest route to Norway."
+msgstr "우리 앞의 다리는 독일군에게 대단히 가치가 크다. 노르웨이로 가는 가장 짧은 길로 이어지기 때문이다."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/03"
+msgid "I need you to seize the control of that bridge and eliminate the enemy garrison! You're the finest our army has to offer - show us what you're made of!"
+msgstr "그 다리를 장악하고 적 수비대를 섬멸해라! 제군은 우리 군이 내보낼 수 있는 최정예다. 실력을 보여 줘라!"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/04"
+msgid "That's it, men! The bridge is ours. "
+msgstr "됐다, 제군들! 다리는 우리 것이다."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/05"
+msgid "The enemy still remains in the nearby settlement, it's necessary you drive them out of there and secure a solid bridgehead."
+msgstr "적은 아직 인근 마을에 남아 있다. 놈들을 몰아내고 견고한 교두보를 확보해야 한다."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/06"
+msgid "Soldiers! The enemy has been driven out but their offensive capability is still extant. You are to fortify the bridgehead and prepare for any possible enemy attacks!"
+msgstr "제군들! 적을 몰아냈지만 공격 능력은 아직 남아 있다. 교두보를 요새화하고 있을지 모를 적의 공격에 대비해라!"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/07"
+msgid "Listen up, astoveri! Intelligence has reported that the German battle group in the area includes Panzer Battalion 211. Expect an attack with their armor, even if they're just some old captured French tanks. Scavenge as many Anti-tank weapons as possible, and prepare for the enemy attack."
+msgstr "잘 들어라, 아스토베리! 정보에 따르면 이 지역의 독일 전투단에 제211기갑대대가 포함되어 있다. 노획한 낡은 프랑스제 전차에 불과하더라도 기갑 공격을 예상해라. 대전차 무기를 최대한 긁어모으고 적의 공격에 대비해라."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/08"
+msgid "Congratulations, soldiers. Your courage and sacrifice are second to none. "
+msgstr "축하한다, 제군들. 제군의 용기와 희생은 누구에게도 뒤지지 않는다."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/outro_completed"
+msgid "Great job! The Germans are now hurrying along the route north, to escape to Norway. From this moment on, it will be like a walk in the park compared to what we’ve been through since 1939. We’ll be home before Christmas, and by then the war will be over for Finland. Congratulations on a campaign well fought and a victory well earned!"
+msgstr "훌륭했다! 독일군은 지금 노르웨이로 달아나려고 북쪽 길을 서둘러 올라가고 있다. 이제부터는 1939년 이래 우리가 겪은 것에 비하면 산책이나 다름없을 것이다. 크리스마스 전에는 집에 돌아갈 것이고, 그때면 핀란드의 전쟁도 끝나 있을 것이다. 잘 싸운 전역과 값진 승리를 축하한다!"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/outro_failed"
+msgid "This was our chance to live up to the commitment we made to the Soviets, and if they think we’ve failed, they will invade once more - and it won’t be long. Right now, the Germans can take their sweet time to redeploy their troops, and it will be up to us to fend off the red army again."
+msgstr "이것은 소련과 한 약속을 지킬 기회였다. 소련이 우리가 실패했다고 보면 다시 침공할 것이고, 오래 걸리지 않을 것이다. 지금 독일군은 느긋하게 병력을 재배치할 수 있고, 붉은 군대를 다시 막아 내는 것은 우리 몫이 될 것이다."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/place"
+msgid "11th Jaeger Regiment"
+msgstr "제11예거 연대"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/skip"
+msgid "Skip preparation Phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/story"
+msgid " October, 1944. The armistice with the Soviet Union was signed a few weeks ago, and because of that, Finland has to break diplomatic ties with Germany and expel any German soldiers from Finland. The “Lapland war” begins. Parts of 3rd Division are shipped to Tornio, a port on the Swedish border, with reinforcements to follow soon after. At Tornio, they surprise the German garrison and drive them out of the town. Soon after, more elements of the 3rd division are supposed to arrive.\n\n In this mission, you lead the initial landing party, commanding JR 11. You need to set up a perimeter east of Tornio. Expect Kampfgruppe Kraeutler to counterattack from the east, as they will definitely need the Liakanjoki bridge to get to Tornio, and it’s up to you to defend the bridge against your former allies. Set up a defensive line quickly, and hold the bridge until the rest of the division and the tanks arrive."
+msgstr " 1944년 10월. 몇 주 전 소련과 휴전 협정이 체결되었고, 그 때문에 핀란드는 독일과 외교 관계를 끊고 핀란드 내 독일군을 추방해야 한다. '라플란드 전쟁'이 시작된다. 제3사단 일부가 스웨덴 국경의 항구 토르니오로 수송되고, 증원이 곧 뒤따른다. 토르니오에서 이들은 독일 수비대를 기습해 시내에서 몰아낸다. 곧이어 제3사단의 나머지 병력이 도착할 예정이다.\n\n 이 임무에서 너는 JR 11을 지휘해 최초 상륙 부대를 이끈다. 토르니오 동쪽에 방어선을 쳐야 한다. 크로이틀러 전투단이 동쪽에서 반격해 올 것이다. 놈들은 토르니오로 가려면 리아칸요키 다리가 반드시 필요하니, 옛 동맹군에 맞서 다리를 지키는 것이 너의 일이다. 방어선을 신속히 구축하고, 사단 본대와 전차가 도착할 때까지 다리를 지켜라."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/task1"
+msgid "Secure the bridges"
+msgstr "다리를 확보하라"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/task2"
+msgid "Drive the enemy out of the settlement"
+msgstr "적을 마을에서 몰아내라"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/task3"
+msgid "Resupply your forces and prepare for the arrival of Kampfgruppe Krautler"
+msgstr "병력을 재보급하고 크로이틀러 전투단의 도착에 대비하라"
+
+msgctxt "mission/single/03-fin/1944_10_tornio/task4"
+msgid "Destroy the German column and do not let them get away across the bridge."
+msgstr "독일군 종대를 파괴하고 다리를 건너 달아나지 못하게 하라."
+
+msgctxt "mission/single/03-fin/1944_10_tornio/timer"
+msgid "Time until enemy arrival:"
+msgstr "적 도착까지 남은 시간:"

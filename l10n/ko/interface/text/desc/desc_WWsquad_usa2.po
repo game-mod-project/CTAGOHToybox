@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_usa2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_with2types_conquest"
+msgid "Ace Tank Crew"
+msgstr "에이스 전차 승무원"
+
+msgctxt "info/special/single_tankman_ace_usa"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr "<c(c3baae)>정예 승무원</c>"
+
+msgctxt "desc/squad/usa_kg_fury"
+msgid "Kampfgruppe 'Fury' (M4A3E8)"
+msgstr "캄프그루페 '퓨리' (M4A3E8)"
+
+msgctxt "info/special/usa_kg_fury"
+msgid "<c(c3baae)>Veteran Medium Armor</c>"
+msgstr "<c(c3baae)>베테랑 중형 기갑</c>"
+
+msgctxt "desc/squad/usa_kg_thunderbolt"
+msgid "Kampfgruppe 'Thunderbolt VII'"
+msgstr "캄프그루페 '썬더볼트 VII'"
+
+msgctxt "info/special/usa_kg_thunderbolt"
+msgid "<c(c3baae)>Ace Armor Spearhead</c>"
+msgstr "<c(c3baae)>에이스 기갑 선봉</c>"
+
+msgctxt "desc/squad/usa_kg_1st_armored"
+msgid "1st Armored Spearhead"
+msgstr "제1기갑사단 선봉"
+
+msgctxt "info/special/usa_kg_1st_armored"
+msgid "<c(c3baae)>Mechanized Assault</c>"
+msgstr "<c(c3baae)>기계화 돌격</c>"
+
+msgctxt "desc/squad/usa_kg_jumbo_breakthrough"
+msgid "Jumbo Breakthrough Platoon"
+msgstr "점보 돌파 소대"
+
+msgctxt "info/special/usa_kg_jumbo_breakthrough"
+msgid "<c(c3baae)>Heavy Assault Armor</c>"
+msgstr "<c(c3baae)>중형 돌격 기갑</c>"
+
+msgctxt "desc/squad/usa_kg_hellcat_ambush"
+msgid "M18 Hellcat Ambush Group"
+msgstr "M18 헬캣 매복단"
+
+msgctxt "info/special/usa_kg_hellcat_ambush"
+msgid "<c(c3baae)>Fast TD Wolfpack</c>"
+msgstr "<c(c3baae)>고속 구축전차 늑대 무리</c>"
+
+msgctxt "desc/squad/usa_kg_blackcat_flank"
+msgid "Black Cat Flanking Force"
+msgstr "블랙캣 측면 부대"
+
+msgctxt "info/special/usa_kg_blackcat_flank"
+msgid "<c(c3baae)>Elite TD Recon</c>"
+msgstr "<c(c3baae)>정예 구축전차 정찰</c>"
+
+msgctxt "desc/squad/usa_kg_jackson_hunters"
+msgid "M36 Jackson Tank Hunters"
+msgstr "M36 잭슨 전차 사냥꾼"
+
+msgctxt "info/special/usa_kg_jackson_hunters"
+msgid "<c(c3baae)>Heavy TD Battery</c>"
+msgstr "<c(c3baae)>중형 구축전차 포대</c>"
+
+msgctxt "desc/squad/usa_kg_stuart_recon"
+msgid "M5A1 Stuart Recon Platoon"
+msgstr "M5A1 스튜어트 정찰 소대"
+
+msgctxt "info/special/usa_kg_stuart_recon"
+msgid "<c(c3baae)>Light Recon Armor</c>"
+msgstr "<c(c3baae)>경정찰 기갑</c>"
+
+msgctxt "desc/squad/usa_kg_chaffee_wolfpack"
+msgid "M24 Chaffee Wolfpack"
+msgstr "M24 채피 늑대 무리"
+
+msgctxt "info/special/usa_kg_chaffee_wolfpack"
+msgid "<c(c3baae)>Advanced Light Armor</c>"
+msgstr "<c(c3baae)>고급 경기갑</c>"
+
+msgctxt "desc/squad/usa_kg_pershing_vanguard"
+msgid "M26 Pershing Vanguard"
+msgstr "M26 퍼싱 선봉"
+
+msgctxt "info/special/usa_kg_pershing_vanguard"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr "<c(c3baae)>중형 돌파</c>"
+
+msgctxt "desc/squad/usa_kg_super_pershing"
+msgid "Super Pershing Hunter Group"
+msgstr "슈퍼 퍼싱 사냥단"
+
+msgctxt "info/special/usa_kg_super_pershing"
+msgid "<c(c3baae)>Heavy Tank Destroyer</c>"
+msgstr "<c(c3baae)>중형 구축전차</c>"
+
+msgctxt "desc/squad/usa_kg_marine_assault"
+msgid "Marine Beach Assault Group"
+msgstr "해병 해안 돌격단"
+
+msgctxt "info/special/usa_kg_marine_assault"
+msgid "<c(c3baae)>Amphibious Assault</c>"
+msgstr "<c(c3baae)>상륙 돌격</c>"
+
+msgctxt "desc/squad/usa_kg_airborne_support"
+msgid "Airborne Fire Support Battery"
+msgstr "공수 화력 지원 포대"
+
+msgctxt "info/special/usa_kg_airborne_support"
+msgid "<c(c3baae)>Light Fire Support</c>"
+msgstr "<c(c3baae)>경화력 지원</c>"
+
+msgctxt "desc/squad/usa_kg_calliope_barrage"
+msgid "Calliope Rocket Barrage"
+msgstr "칼리오페 로켓 일제사격"
+
+msgctxt "info/special/usa_kg_calliope_barrage"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr "<c(c3baae)>로켓포</c>"
+
+msgctxt "desc/squad/usa_kg_zippo_clearing"
+msgid "Zippo Flame Clearing Force"
+msgstr "지포 화염 소탕 부대"
+
+msgctxt "info/special/usa_kg_zippo_clearing"
+msgid "<c(c3baae)>Flame Assault Group</c>"
+msgstr "<c(c3baae)>화염 돌격 집단</c>"
+
+msgctxt "desc/squad/usa_kg_greyhound_patrol"
+msgid "M8 Greyhound Patrol"
+msgstr "M8 그레이하운드 정찰대"
+
+msgctxt "info/special/usa_kg_greyhound_patrol"
+msgid "<c(c3baae)>Armored Car Patrol</c>"
+msgstr "<c(c3baae)>장갑차 정찰대</c>"
+
+msgctxt "desc/squad/usa_kg_meat_chopper"
+msgid "Meat Chopper AA Defense"
+msgstr "미트 쵸퍼 대공 방어"
+
+msgctxt "info/special/usa_kg_meat_chopper"
+msgid "<c(c3baae)>Mobile AA Battery</c>"
+msgstr "<c(c3baae)>기동 대공 포대</c>"
+
+msgctxt "desc/squad/usa_kg_cavalry_recon"
+msgid "Cavalry Reconnaissance Group"
+msgstr "기병 정찰단"
+
+msgctxt "info/special/usa_kg_cavalry_recon"
+msgid "<c(c3baae)>Light Cavalry Recon</c>"
+msgstr "<c(c3baae)>경기병 정찰</c>"
+
+msgctxt "desc/squad/usa_kg_priest_battery"
+msgid "M7 Priest Artillery Battery"
+msgstr "M7 프리스트 포병 포대"
+
+msgctxt "info/special/usa_kg_priest_battery"
+msgid "<c(c3baae)>SPG Artillery Group</c>"
+msgstr "<c(c3baae)>자주포 집단</c>"
+
+msgctxt "desc/squad/usa_kg_heavy_artillery"
+msgid "M12 Heavy Artillery Battery"
+msgstr "M12 중포 포대"
+
+msgctxt "info/special/usa_kg_heavy_artillery"
+msgid "<c(c3baae)>Heavy Siege Artillery</c>"
+msgstr "<c(c3baae)>중형 공성포</c>"
+
+msgctxt "desc/squad/usa_kg_wolverine_line"
+msgid "M10 Wolverine Defensive Line"
+msgstr "M10 울버린 방어선"
+
+msgctxt "info/special/usa_kg_wolverine_line"
+msgid "<c(c3baae)>TD Defense Line</c>"
+msgstr "<c(c3baae)>구축전차 방어선</c>"
+
+msgctxt "desc/squad/usa_kg_105_support"
+msgid "Sherman 105mm Support Platoon"
+msgstr "셔먼 105mm 지원 소대"
+
+msgctxt "info/special/usa_kg_105_support"
+msgid "<c(c3baae)>Heavy Infantry Support</c>"
+msgstr "<c(c3baae)>중형 보병 지원</c>"
+
+msgctxt "desc/squad/usa_kg_ranger_firebase"
+msgid "Ranger Mobile Firebase"
+msgstr "레인저 이동 화력 기지"
+
+msgctxt "info/special/usa_kg_ranger_firebase"
+msgid "<c(c3baae)>Special Forces Support</c>"
+msgstr "<c(c3baae)>특수부대 지원</c>"
+
+msgctxt "desc/squad/usa_kg_90mm_td"
+msgid "90mm Tank Hunter Crossfire"
+msgstr "90mm 전차 사냥 십자포화"
+
+msgctxt "info/special/usa_kg_90mm_td"
+msgid "<c(c3baae)>Advanced TD Group</c>"
+msgstr "<c(c3baae)>고급 구축전차 집단</c>"
+
+msgctxt "desc/squad/usa_exp_t29_spearhead"
+msgid "Prototype: T29 Heavy Spearhead"
+msgstr "시제: T29 중형 선봉"
+
+msgctxt "info/special/usa_exp_t29_spearhead"
+msgid "<c(c3baae)>Prototype Heavy Armor</c>"
+msgstr "<c(c3baae)>시제 중형 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_t30_bunker_buster"
+msgid "Prototype: T30 Bunker Buster"
+msgstr "시제: T30 벙커 파괴"
+
+msgctxt "info/special/usa_exp_t30_bunker_buster"
+msgid "<c(c3baae)>Heavy Siege Armor</c>"
+msgstr "<c(c3baae)>중형 공성 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_t34_sniper"
+msgid "Prototype: T34 Heavy Sniper Group"
+msgstr "시제: T34 중형 저격단"
+
+msgctxt "info/special/usa_exp_t34_sniper"
+msgid "<c(c3baae)>Heavy Sniper Armor</c>"
+msgstr "<c(c3baae)>중형 저격 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_t95_doom_turtle"
+msgid "Prototype: T95 Doom Turtle Escort"
+msgstr "시제: T95 둠 터틀 호위"
+
+msgctxt "info/special/usa_exp_t95_doom_turtle"
+msgid "<c(c3baae)>Super Heavy Assault</c>"
+msgstr "<c(c3baae)>초중형 돌격</c>"
+
+msgctxt "desc/squad/usa_exp_m103_vanguard"
+msgid "Prototype: M103 Cold War Vanguard"
+msgstr "시제: M103 냉전 선봉"
+
+msgctxt "info/special/usa_exp_m103_vanguard"
+msgid "<c(c3baae)>Cold War Heavy Tank</c>"
+msgstr "<c(c3baae)>냉전 중전차</c>"
+
+msgctxt "desc/squad/usa_exp_t110e5_breakthrough"
+msgid "Prototype: T110E5 Ultimate Breakthrough"
+msgstr "시제: T110E5 궁극의 돌파"
+
+msgctxt "info/special/usa_exp_t110e5_breakthrough"
+msgid "<c(c3baae)>Ultimate Heavy Armor</c>"
+msgstr "<c(c3baae)>궁극의 중형 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_t110e3_assault"
+msgid "Prototype: T110E3 Heavy Assault"
+msgstr "시제: T110E3 중형 돌격"
+
+msgctxt "info/special/usa_exp_t110e3_assault"
+msgid "<c(c3baae)>Heavy Assault TD</c>"
+msgstr "<c(c3baae)>중형 돌격 구축전차</c>"
+
+msgctxt "desc/squad/usa_exp_t57_autoloader"
+msgid "Prototype: T57 Autoloader Battery"
+msgstr "시제: T57 자동장전 포대"
+
+msgctxt "info/special/usa_exp_t57_autoloader"
+msgid "<c(c3baae)>Burst Damage Armor</c>"
+msgstr "<c(c3baae)>순간 화력 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_m_v_y_alien"
+msgid "Prototype: M-V-Y Alien Tech Group"
+msgstr "시제: M-V-Y 외계 기술단"
+
+msgctxt "info/special/usa_exp_m_v_y_alien"
+msgid "<c(c3baae)>Unconventional Armor</c>"
+msgstr "<c(c3baae)>비정형 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_gorilla_siege"
+msgid "Prototype: Gorilla Super Siege"
+msgstr "시제: 고릴라 초중형 공성"
+
+msgctxt "info/special/usa_exp_gorilla_siege"
+msgid "<c(c3baae)>Super Heavy SPG</c>"
+msgstr "<c(c3baae)>초중형 자주포</c>"
+
+msgctxt "desc/squad/usa_exp_blackrock_apocalypse"
+msgid "Prototype: Blackrock Apocalypse"
+msgstr "시제: 블랙록 종말"
+
+msgctxt "info/special/usa_exp_blackrock_apocalypse"
+msgid "<c(c3baae)>Apocalypse Armor</c>"
+msgstr "<c(c3baae)>종말 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_60tpl_wing"
+msgid "Prototype: 60TP_L Joint Assault"
+msgstr "시제: 60TP_L 합동 돌격"
+
+msgctxt "info/special/usa_exp_60tpl_wing"
+msgid "<c(c3baae)>Joint Concept Armor</c>"
+msgstr "<c(c3baae)>공동 개념 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_t58_heavy_auto"
+msgid "Prototype: T58 Heavy Autoloader"
+msgstr "시제: T58 중형 자동장전"
+
+msgctxt "info/special/usa_exp_t58_heavy_auto"
+msgid "<c(c3baae)>Heavy Burst Damage</c>"
+msgstr "<c(c3baae)>중형 순간 화력</c>"
+
+msgctxt "desc/squad/usa_exp_ares90c_stealth"
+msgid "Prototype: Ares 90c Stealth Hunters"
+msgstr "시제: 아레스 90c 스텔스 사냥단"
+
+msgctxt "info/special/usa_exp_ares90c_stealth"
+msgid "<c(c3baae)>Stealth TD Pack</c>"
+msgstr "<c(c3baae)>스텔스 구축전차 무리</c>"
+
+msgctxt "desc/squad/usa_exp_aht7_escort"
+msgid "Prototype: AHT-7 Heavy Escort"
+msgstr "시제: AHT-7 중형 호위"
+
+msgctxt "info/special/usa_exp_aht7_escort"
+msgid "<c(c3baae)>Heavy Escort Armor</c>"
+msgstr "<c(c3baae)>중형 호위 기갑</c>"
+
+msgctxt "desc/squad/usa_exp_t803_future"
+msgid "Prototype: T803 Future MBT Group"
+msgstr "시제: T803 미래 주력 전차단"
+
+msgctxt "info/special/usa_exp_t803_future"
+msgid "<c(c3baae)>Future Tech MBT</c>"
+msgstr "<c(c3baae)>미래 기술 주력 전차</c>"

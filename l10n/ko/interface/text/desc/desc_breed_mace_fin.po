@@ -1,0 +1,374 @@
+# source: mod_2905667604 interface/text/desc/desc_breed_mace_fin.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name (desc_breeds_usa)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/human/mp/fin/early/swe_recon_sl_binos"
+msgid "Recon Squadleader [Svensk Volontär]"
+msgstr "정찰 분대장 [스벤스크 볼론테르]"
+
+msgctxt "desc/human/mp/fin/mid/hq_lr_recon_sl_binos"
+msgid "Kaukopartiojoukot Scout Squadleader [Maavoimat]"
+msgstr "카우코파르티오주코트 정찰 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/light_scout_sl_binos"
+msgid "Kevyt Osasto Squadleader [Maavoimat]"
+msgstr "케비트 오사스토 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/scout_sl_binos"
+msgid "Scout Squadleader [Maavoimat]"
+msgstr "정찰 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/vet_scout_sl_binos"
+msgid "Veteran Scout Squadleader [Maavoimat]"
+msgstr "베테랑 정찰 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/hq_lr_recon_sl_binos"
+msgid "Kaukopartiojoukot Scout Squadleader [Maavoimat]"
+msgstr "카우코파르티오주코트 정찰 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_scout_sl_binos"
+msgid "Jääkäri Scout Squadleader [Maavoimat]"
+msgstr "예캐리 정찰 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/officer_t1"
+msgid "Officer [Maavoimat]"
+msgstr "장교 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/officer_t2"
+msgid "Officer [Maavoimat]"
+msgstr "장교 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/officer_t3"
+msgid "Officer [Maavoimat]"
+msgstr "장교 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/officer_t4"
+msgid "Officer [Maavoimat]"
+msgstr "장교 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/reservist_rifle_winchester"
+msgid "Reserve Rifleman [Maavoimat]"
+msgstr "예비 소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/civil_guard_rifle_winchester_1895"
+msgid "Civil Guard Rifleman [Maavoimat]"
+msgstr "민방위대 소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/reservist_rifle_winchester_1895"
+msgid "Reserve Rifleman [Maavoimat]"
+msgstr "예비 소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/reservist_mg_lewis_gun"
+msgid "Reserve MG Operator Rifleman [Maavoimat]"
+msgstr "예비 기관총 사수 소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/jag_rifle_carcano_coq"
+msgid "Jääkäri [Maavoimat]"
+msgstr "예캐리 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/jag_smg_stick_carl_gustaf_m_45_coq"
+msgid "Jääkäri [Maavoimat]"
+msgstr "예캐리 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/border_jag_sl_mauser_m96_coq"
+msgid "Rajajääkäri [Maavoimat]"
+msgstr "라야예캐리 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/border_jag_smg_stick_sig_mkms_coq"
+msgid "Rajajääkäri [Maavoimat]"
+msgstr "라야예캐리 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/sissi_mg_m21bar_asst_coq"
+msgid "Sissi MG Assist. [Maavoimat]"
+msgstr "시시 기관총 부사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/sissi_mg_m21bar_coq"
+msgid "Sissi MG Operator [Maavoimat]"
+msgstr "시시 기관총 사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/sissi_sa_ag_m42_coq"
+msgid "Sissi [Maavoimat]"
+msgstr "시시 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/smg_sig_mkms"
+msgid "SMG Infantry [Maavoimat]"
+msgstr "기관단총 보병 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/rifleman_carcano"
+msgid "Rifleman [Maavoimat]"
+msgstr "소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/rifleman_ag_m42_coq"
+msgid "Rifleman [Maavoimat]"
+msgstr "소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/rifleman_ag_m42_coq"
+msgid "Rifleman [Maavoimat]"
+msgstr "소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/cav_sa_ag_m42_coq"
+msgid "Ratsuväki [Maavoimat]"
+msgstr "라추배키 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/cav_mg_lewis_gun"
+msgid "Ratsuväki MG Operator [Maavoimat]"
+msgstr "라추배키 기관총 사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/cav_mg_asst_mauser_m96_coq"
+msgid "Ratsuväki MG Assist. [Maavoimat]"
+msgstr "라추배키 기관총 부사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/mid/cav_sl_ppsh41_9mm_drum_coq"
+msgid "Ratsuväki Squadleader [Maavoimat]"
+msgstr "라추배키 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/villager_squadleader"
+msgid "Villager Squadleader [Maavoimat]"
+msgstr "마을 주민 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/villager_type38"
+msgid "Villager [Maavoimat]"
+msgstr "마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/villager_shotgun_drunk"
+msgid "Drunk Villager [Maavoimat]"
+msgstr "술 취한 마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/villager_shotgun"
+msgid "Villager [Maavoimat]"
+msgstr "마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/villager_winchester_1895"
+msgid "Villager [Maavoimat]"
+msgstr "마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/villager_carcano"
+msgid "Villager [Maavoimat]"
+msgstr "마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/vet_village_squadleader"
+msgid "Experienced Villager Squadleader [Maavoimat]"
+msgstr "숙련 마을 주민 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/vet_village_mosin_1"
+msgid "Experienced Villager [Maavoimat]"
+msgstr "숙련 마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/vet_village_mosin_1"
+msgid "Experienced Villager [Maavoimat]"
+msgstr "숙련 마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/vet_village_ppsh"
+msgid "Experienced Villager [Maavoimat]"
+msgstr "숙련 마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/vet_village_mosin_3"
+msgid "Experienced Villager [Maavoimat]"
+msgstr "숙련 마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/vet_village_mosin_2"
+msgid "Experienced Villager [Maavoimat]"
+msgstr "숙련 마을 주민 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/swe_squadleader_mauser_m96_coq"
+msgid "Swedish Volunteer Squadleader"
+msgstr "스웨덴 의용병 분대장"
+
+msgctxt "desc/human/mp/fin/early/swe_smg_suomi_m31_stick_coq"
+msgid "Swedish Volunteer SMG"
+msgstr "스웨덴 의용병 기관단총"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman_mauser_m96_coq"
+msgid "Swedish Volunteer Rifleman"
+msgstr "스웨덴 의용병 소총수"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman_gev_m40_coq"
+msgid "Heavy Swedish Volunteer"
+msgstr "중무장 스웨덴 의용병"
+
+msgctxt "desc/human/mp/fin/mid/mg_m21bar_coq"
+msgid "Heavy Swedish Volunteer MG Operator"
+msgstr "중무장 스웨덴 의용병 기관총 사수"
+
+msgctxt "desc/human/mp/fin/early/border_guard_sl_gev_m40_coq"
+msgid "Rajavartija Squadleader [Rajavartiolaitos]"
+msgstr "라야바르티야 분대장 [라야바르티올라이토스]"
+
+msgctxt "desc/human/mp/fin/early/border_guard_rifle_carcano_coq"
+msgid "Rajavartija [Rajavartiolaitos]"
+msgstr "라야바르티야 [라야바르티올라이토스]"
+
+msgctxt "desc/human/mp/fin/early/border_guard_rifle_type38_coq"
+msgid "Rajavartija [Rajavartiolaitos]"
+msgstr "라야바르티야 [라야바르티올라이토스]"
+
+msgctxt "desc/human/mp/fin/late/reservist_rifle_2"
+msgid "Reserve Rifleman [Maavoimat]"
+msgstr "예비 소총수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/reservist_mg_2"
+msgid "Reserve MG Operator [Maavoimat]"
+msgstr "예비 기관총 사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/reservist_mg_asst_2"
+msgid "Reserve MG Asst. [Maavoimat]"
+msgstr "예비 기관총 부사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_scout_rifle_2"
+msgid "Jääkäri Scout [Maavoimat]"
+msgstr "예캐리 정찰병 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_scout_sa_2"
+msgid "Jääkäri Scout [Maavoimat]"
+msgstr "예캐리 정찰병 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_scout_sl_2"
+msgid "Jääkäri Scout Squadleader [Maavoimat]"
+msgstr "예캐리 정찰 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_sa_2"
+msgid "Jääkäri [Maavoimat]"
+msgstr "예캐리 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_sl_2"
+msgid "Jääkäri Squadleader [Maavoimat]"
+msgstr "예캐리 분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_sl_asst"
+msgid "Jääkäri Squadleader Asst. [Maavoimat]"
+msgstr "예캐리 부분대장 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_mg_2"
+msgid "Jääkäri MG Operator [Maavoimat]"
+msgstr "예캐리 기관총 사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_mg_asst_2"
+msgid "Jääkäri MG Asst. [Maavoimat]"
+msgstr "예캐리 기관총 부사수 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/late/jag_pzfaust_2"
+msgid "Jääkäri AT Inf. [Maavoimat]"
+msgstr "예캐리 대전차 보병 [마아보이마트]"
+
+msgctxt "desc/human/mp/fin/early/swe_squadleader_rifle"
+msgid "Squadleader [Frivilligkåren]"
+msgstr "분대장 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_smg_stick"
+msgid "SMG Inf. [Frivilligkåren]"
+msgstr "기관단총 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_smg_mp35"
+msgid "SMG Inf. [Frivilligkåren]"
+msgstr "기관단총 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_smg_drum"
+msgid "SMG Inf. [Frivilligkåren]"
+msgstr "기관단총 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman_sa"
+msgid "Rifleman [Frivilligkåren]"
+msgstr "소총수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman_m40"
+msgid "Rifleman [Frivilligkåren]"
+msgstr "소총수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman_carbine_early"
+msgid "Rifleman [Frivilligkåren]"
+msgstr "소총수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman_carbine"
+msgid "Rifleman [Frivilligkåren]"
+msgstr "소총수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_rifleman"
+msgid "Rifleman [Frivilligkåren]"
+msgstr "소총수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_mg_m21bar"
+msgid "MG Operator [Frivilligkåren]"
+msgstr "기관총 사수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_mg_ls_26"
+msgid "MG Operator [Frivilligkåren]"
+msgstr "기관총 사수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_mg_asst_m21bar"
+msgid "MG Assist. [Frivilligkåren]"
+msgstr "기관총 부사수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_mg_asst_ls_26"
+msgid "MG Assist. [Frivilligkåren]"
+msgstr "기관총 부사수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_engineer_sl"
+msgid "Engineer Squadleader [Frivilligkåren]"
+msgstr "공병 분대장 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_engineer_rifle"
+msgid "Engineer Rifleman [Frivilligkåren]"
+msgstr "공병 소총수 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_engineer_builder"
+msgid "Engineer [Frivilligkåren]"
+msgstr "공병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/late/swe_engineer_heavy"
+msgid "Heavy Engineer [Frivilligkåren]"
+msgstr "중무장 공병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_engineer_heavy"
+msgid "Heavy Engineer [Frivilligkåren]"
+msgstr "중무장 공병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_crew"
+msgid "Artilleryman [Frivilligkåren]"
+msgstr "포병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_crew_asst"
+msgid "Artilleryman [Frivilligkåren]"
+msgstr "포병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_atr"
+msgid "AT rifle inf. [Frivilligkåren]"
+msgstr "대전차 소총 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/swe_atr_asst"
+msgid "AT support inf. [Frivilligkåren]"
+msgstr "대전차 지원 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/late/antitank_pvg_m42"
+msgid "AT inf. [Svensk Volontär]"
+msgstr "대전차 보병 [스벤스크 볼론테르]"
+
+msgctxt "desc/human/mp/fin/late/antitank_pansarskott_m46"
+msgid "AT inf. [Svensk Volontär]"
+msgstr "대전차 보병 [스벤스크 볼론테르]"
+
+msgctxt "desc/human/mp/fin/late/antitank_pvg_m42_asst"
+msgid "AT support Inf. [Svensk Volontär]"
+msgstr "대전차 지원 보병 [스벤스크 볼론테르]"
+
+msgctxt "desc/human/mp/fin/early/antitank_pvg_m42"
+msgid "AT inf. [Frivilligkåren]"
+msgstr "대전차 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/early/antitank_pvg_m42_asst"
+msgid "AT support Inf. [Frivilligkåren]"
+msgstr "대전차 지원 보병 [프리빌리그코렌]"
+
+msgctxt "desc/human/mp/fin/late/signaller_ai"
+msgid "Artillery Signaller [Maavoimat]"
+msgstr "포병 통신병 [마아보이마트]"

@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_rus2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/single_tankman_ace_rus"
+msgid "Elite Guard Tank Crew"
+msgstr "정예 근위 전차 승무원"
+
+msgctxt "info/special/single_tankman_ace_rus"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr "<c(c3baae)>정예 승무원</c>"
+
+msgctxt "desc/squad/rus_kg_t34_76_early"
+msgid "Kampfgruppe T-34 (Early)"
+msgstr "캄프그루페 T-34 (초기)"
+
+msgctxt "info/special/rus_kg_t34_76_early"
+msgid "<c(c3baae)>Medium Armor Swarm</c>"
+msgstr "<c(c3baae)>중형 기갑 무리</c>"
+
+msgctxt "desc/squad/rus_kg_t34_76_late"
+msgid "Kampfgruppe T-34 (1943)"
+msgstr "캄프그루페 T-34 (1943)"
+
+msgctxt "info/special/rus_kg_t34_76_late"
+msgid "<c(c3baae)>Medium Armor Swarm</c>"
+msgstr "<c(c3baae)>중형 기갑 무리</c>"
+
+msgctxt "desc/squad/rus_kg_t34_85_mass"
+msgid "T-34/85 Armored Wave"
+msgstr "T-34/85 기갑 파상"
+
+msgctxt "info/special/rus_kg_t34_85_mass"
+msgid "<c(c3baae)>Main Battle Group</c>"
+msgstr "<c(c3baae)>주력 전투 집단</c>"
+
+msgctxt "desc/squad/rus_kg_kv1_shock"
+msgid "KV-1 Shock Group"
+msgstr "KV-1 충격단"
+
+msgctxt "info/special/rus_kg_kv1_shock"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr "<c(c3baae)>중형 돌파</c>"
+
+msgctxt "desc/squad/rus_kg_is2_breakthrough"
+msgid "IS-2 Breakthrough Spearhead"
+msgstr "IS-2 돌파 선봉"
+
+msgctxt "info/special/rus_kg_is2_breakthrough"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr "<c(c3baae)>중형 돌파</c>"
+
+msgctxt "desc/squad/rus_kg_su85_ambush"
+msgid "SU-85 Tank Destroyer Battery"
+msgstr "SU-85 구축전차 포대"
+
+msgctxt "info/special/rus_kg_su85_ambush"
+msgid "<c(c3baae)>TD Ambush Group</c>"
+msgstr "<c(c3baae)>구축전차 매복 집단</c>"
+
+msgctxt "desc/squad/rus_kg_su100_hunter"
+msgid "SU-100 Hunter-Killer Group"
+msgstr "SU-100 헌터킬러단"
+
+msgctxt "info/special/rus_kg_su100_hunter"
+msgid "<c(c3baae)>Heavy TD Group</c>"
+msgstr "<c(c3baae)>중형 구축전차 집단</c>"
+
+msgctxt "desc/squad/rus_kg_isu152_beast"
+msgid "ISU-152 'Beast Killer' Group"
+msgstr "ISU-152 '야수 사냥꾼' 집단"
+
+msgctxt "info/special/rus_kg_isu152_beast"
+msgid "<c(c3baae)>Assault Gun Group</c>"
+msgstr "<c(c3baae)>돌격포 집단</c>"
+
+msgctxt "desc/squad/rus_kg_kv2_bunker"
+msgid "KV-2 Bunker Buster Force"
+msgstr "KV-2 벙커 파괴 부대"
+
+msgctxt "info/special/rus_kg_kv2_bunker"
+msgid "<c(c3baae)>Bunker Buster Group</c>"
+msgstr "<c(c3baae)>벙커 파괴 집단</c>"
+
+msgctxt "desc/squad/rus_kg_light_recon"
+msgid "T-70M Reconnaissance Platoon"
+msgstr "T-70M 정찰 소대"
+
+msgctxt "info/special/rus_kg_light_recon"
+msgid "<c(c3baae)>Light Recon Group</c>"
+msgstr "<c(c3baae)>경정찰 집단</c>"
+
+msgctxt "desc/squad/rus_kg_bt7_swarm"
+msgid "BT-7 Fast Cavalry"
+msgstr "BT-7 고속 기병"
+
+msgctxt "info/special/rus_kg_bt7_swarm"
+msgid "<c(c3baae)>Fast Cavalry Group</c>"
+msgstr "<c(c3baae)>고속 기병 집단</c>"
+
+msgctxt "desc/squad/rus_kg_lend_lease_sherman"
+msgid "Lend-Lease Sherman Battalion"
+msgstr "무기대여 셔먼 대대"
+
+msgctxt "info/special/rus_kg_lend_lease_sherman"
+msgid "<c(c3baae)>Lend-Lease Armor</c>"
+msgstr "<c(c3baae)>무기대여 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_lend_lease_mixed"
+msgid "Lend-Lease British Mix"
+msgstr "무기대여 영국 혼성"
+
+msgctxt "info/special/rus_kg_lend_lease_mixed"
+msgid "<c(c3baae)>Lend-Lease Armor</c>"
+msgstr "<c(c3baae)>무기대여 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_is1_spearhead"
+msgid "IS-1 Vanguard Group"
+msgstr "IS-1 선봉단"
+
+msgctxt "info/special/rus_kg_is1_spearhead"
+msgid "<c(c3baae)>Heavy Spearhead</c>"
+msgstr "<c(c3baae)>중형 선봉</c>"
+
+msgctxt "desc/squad/rus_kg_su122_assault"
+msgid "SU-122 Assault Battery"
+msgstr "SU-122 돌격 포대"
+
+msgctxt "info/special/rus_kg_su122_assault"
+msgid "<c(c3baae)>Assault Gun Group</c>"
+msgstr "<c(c3baae)>돌격포 집단</c>"
+
+msgctxt "desc/squad/rus_kg_su76_support"
+msgid "SU-76 Infantry Support Group"
+msgstr "SU-76 보병 지원단"
+
+msgctxt "info/special/rus_kg_su76_support"
+msgid "<c(c3baae)>Infantry Support Armor</c>"
+msgstr "<c(c3baae)>보병 지원 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_rbt5_barrage"
+msgid "RBT-5 Rocket Barrage Force"
+msgstr "RBT-5 로켓 일제사격 부대"
+
+msgctxt "info/special/rus_kg_rbt5_barrage"
+msgid "<c(c3baae)>Rocket Artillery Armor</c>"
+msgstr "<c(c3baae)>로켓포 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_tank_desant_t34"
+msgid "T-34 Tank Desant Group"
+msgstr "T-34 전차 데산트단"
+
+msgctxt "info/special/rus_kg_tank_desant_t34"
+msgid "<c(c3baae)>Tank & Infantry Assault</c>"
+msgstr "<c(c3baae)>전차와 보병 돌격</c>"
+
+msgctxt "desc/squad/rus_kg_guards_tank_desant"
+msgid "Guards Heavy Tank Desant"
+msgstr "근위 중전차 데산트"
+
+msgctxt "info/special/rus_kg_guards_tank_desant"
+msgid "<c(c3baae)>Elite Combined Arms</c>"
+msgstr "<c(c3baae)>정예 합동 병과</c>"
+
+msgctxt "desc/squad/rus_kg_urban_assault"
+msgid "KV-85 Urban Assault Group"
+msgstr "KV-85 시가전 돌격단"
+
+msgctxt "info/special/rus_kg_urban_assault"
+msgid "<c(c3baae)>Urban Assault Armor</c>"
+msgstr "<c(c3baae)>시가전 돌격 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_heavy_spg"
+msgid "Kursk Heavy TD Group"
+msgstr "쿠르스크 중형 구축전차 집단"
+
+msgctxt "info/special/rus_kg_heavy_spg"
+msgid "<c(c3baae)>Heavy TD Group</c>"
+msgstr "<c(c3baae)>중형 구축전차 집단</c>"
+
+msgctxt "desc/squad/rus_kg_ba10_scout"
+msgid "BA-10 Armored Recon Company"
+msgstr "BA-10 장갑 정찰 중대"
+
+msgctxt "info/special/rus_kg_ba10_scout"
+msgid "<c(c3baae)>Armored Recon</c>"
+msgstr "<c(c3baae)>장갑 정찰</c>"
+
+msgctxt "desc/squad/rus_kg_aa_defense"
+msgid "ZSU-37 Mobile AA Battery"
+msgstr "ZSU-37 기동 대공 포대"
+
+msgctxt "info/special/rus_kg_aa_defense"
+msgid "<c(c3baae)>Mobile AA Group</c>"
+msgstr "<c(c3baae)>기동 대공 집단</c>"
+
+msgctxt "desc/squad/rus_kg_is3_shock"
+msgid "IS-3 Victory Shock Group"
+msgstr "IS-3 승전 충격단"
+
+msgctxt "info/special/rus_kg_is3_shock"
+msgid "<c(c3baae)>Heavy Victory Group</c>"
+msgstr "<c(c3baae)>중형 승전 집단</c>"
+
+msgctxt "desc/squad/rus_kg_t44_flank"
+msgid "T-44 Cold War Vanguard"
+msgstr "T-44 냉전 선봉"
+
+msgctxt "info/special/rus_kg_t44_flank"
+msgid "<c(c3baae)>Late War Medium Armor</c>"
+msgstr "<c(c3baae)>후기 중형 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_kv85_transition"
+msgid "KV-85 Transition Group"
+msgstr "KV-85 과도기 집단"
+
+msgctxt "info/special/rus_kg_kv85_transition"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr "<c(c3baae)>중형 돌파</c>"
+
+msgctxt "desc/squad/rus_kg_is2_45_veteran"
+msgid "IS-2 '45 Veteran Spearhead"
+msgstr "IS-2 '45 베테랑 선봉"
+
+msgctxt "info/special/rus_kg_is2_45_veteran"
+msgid "<c(c3baae)>Veteran Heavy Armor</c>"
+msgstr "<c(c3baae)>베테랑 중형 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_su100y_bunker_buster"
+msgid "SU-100Y Naval Gun Assault"
+msgstr "SU-100Y 해군포 돌격"
+
+msgctxt "info/special/rus_kg_su100y_bunker_buster"
+msgid "<c(c3baae)>Super Heavy Assault Gun</c>"
+msgstr "<c(c3baae)>초중형 돌격포</c>"
+
+msgctxt "desc/squad/rus_exp_is7_apocalypse"
+msgid "Wunderwaffe: IS-7 Apocalypse"
+msgstr "분더바페: IS-7 종말"
+
+msgctxt "info/special/rus_exp_is7_apocalypse"
+msgid "<c(c3baae)>Prototype Heavy Spearhead</c>"
+msgstr "<c(c3baae)>시제 중형 선봉</c>"
+
+msgctxt "desc/squad/rus_exp_obj279_nuclear"
+msgid "Wunderwaffe: Object 279 Nuclear Spearhead"
+msgstr "분더바페: Object 279 핵 선봉"
+
+msgctxt "info/special/rus_exp_obj279_nuclear"
+msgid "<c(c3baae)>Nuclear Survivor Armor</c>"
+msgstr "<c(c3baae)>핵 생존 기갑</c>"
+
+msgctxt "desc/squad/rus_exp_kv6_behemoth"
+msgid "Wunderwaffe: KV-6 Land Cruiser"
+msgstr "분더바페: KV-6 육상 순양함"
+
+msgctxt "info/special/rus_exp_kv6_behemoth"
+msgid "<c(c3baae)>Land Cruiser Group</c>"
+msgstr "<c(c3baae)>육상 순양함 집단</c>"
+
+msgctxt "desc/squad/rus_exp_obj263_sniper"
+msgid "Wunderwaffe: Object 263 Siberian Sniper"
+msgstr "분더바페: Object 263 시베리아 저격수"
+
+msgctxt "info/special/rus_exp_obj263_sniper"
+msgid "<c(c3baae)>Prototype TD Ambush</c>"
+msgstr "<c(c3baae)>시제 구축전차 매복</c>"
+
+msgctxt "desc/squad/rus_exp_obj490_future"
+msgid "Wunderwaffe: Object 490 Future Sight"
+msgstr "분더바페: Object 490 미래시"
+
+msgctxt "info/special/rus_exp_obj490_future"
+msgid "<c(c3baae)>Future Tech Armor</c>"
+msgstr "<c(c3baae)>미래 기술 기갑</c>"
+
+msgctxt "desc/squad/rus_exp_super_heavy_spg"
+msgid "Wunderwaffe: Obj 261 Orbital Strike"
+msgstr "분더바페: Obj 261 궤도 타격"
+
+msgctxt "info/special/rus_exp_super_heavy_spg"
+msgid "<c(c3baae)>Prototype Super SPG</c>"
+msgstr "<c(c3baae)>시제 초중형 자주포</c>"
+
+msgctxt "desc/squad/rus_kg_t54_oder"
+msgid "Oder River Assault Group (T-54 '47)"
+msgstr "오데르강 돌격단 (T-54 '47)"
+
+msgctxt "info/special/rus_kg_t54_oder"
+msgid "<c(c3baae)>Cold War Vanguard</c>"
+msgstr "<c(c3baae)>냉전 선봉</c>"
+
+msgctxt "desc/squad/rus_kg_is7_shock"
+msgid "IS-7 Shock Guard"
+msgstr "IS-7 충격 근위"
+
+msgctxt "info/special/rus_kg_is7_shock"
+msgid "<c(c3baae)>Ultimate Shock Armor</c>"
+msgstr "<c(c3baae)>궁극의 충격 기갑</c>"
+
+msgctxt "desc/squad/rus_kg_obj279_nbc"
+msgid "Object 279 NBC Vanguard"
+msgstr "Object 279 NBC 선봉"
+
+msgctxt "info/special/rus_kg_obj279_nbc"
+msgid "<c(c3baae)>Nuclear Survivor Mech</c>"
+msgstr "<c(c3baae)>핵 생존 기계화</c>"
+
+msgctxt "desc/squad/rus_kg_isu130_penal"
+msgid "Penal Assault Kampfgruppe"
+msgstr "징벌 돌격 캄프그루페"
+
+msgctxt "info/special/rus_kg_isu130_penal"
+msgid "<c(c3baae)>Heavy Assault & Flame</c>"
+msgstr "<c(c3baae)>중형 돌격과 화염</c>"
+
+msgctxt "desc/squad/rus_kg_t44_desant"
+msgid "T-44 Experimental Desant"
+msgstr "T-44 실험 데산트"
+
+msgctxt "info/special/rus_kg_t44_desant"
+msgid "<c(c3baae)>Naval Infantry Assault</c>"
+msgstr "<c(c3baae)>해군 보병 돌격</c>"
+
+msgctxt "desc/squad/rus_kg_obj260_guard"
+msgid "Object 260 Guard Array"
+msgstr "Object 260 근위 진형"
+
+msgctxt "info/special/rus_kg_obj260_guard"
+msgid "<c(c3baae)>Prototype Guard Force</c>"
+msgstr "<c(c3baae)>시제 근위 부대</c>"

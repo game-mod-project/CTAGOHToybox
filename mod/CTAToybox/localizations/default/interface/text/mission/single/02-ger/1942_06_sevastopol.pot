@@ -1,0 +1,161 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1942_06_sevastopol)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/date"
+msgid "1942년 6월 17일 · 크림 반도 세바스토폴"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_all_round"
+msgid "전방위, 제213 보병 연대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_challenge"
+msgid "도전! 슈투름피오니어가 아니면 죽음을!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_offensive"
+msgid "공세, 제173 공병 대대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/lose"
+msgid "모든 병력을 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/name"
+msgid "세바스토폴 공방전 <c(a655af)>[DLC]</c>"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/name_big"
+msgid "세바스토폴 공방전"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/01"
+msgid "병사들! 잘 들어라!! 우리는 벨베크 강을 건너 작은 교두보를 확보하는 데 성공했다. 하지만 가장 어려운 부분은 아직 남았다..."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/02"
+msgid "주 계곡 진지로 뚫고 들어가 주력 공격 부대가 지나갈 지뢰밭 통로를 열어야 한다. 그래야 오늘의 주 목표인 하치우스 능선을 공격할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/03"
+msgid "먼저 동쪽으로 전진하며 거점 몇 곳을 소탕해야 한다. 가자!!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/04"
+msgid "이제 벨베크 계곡을 장악했으니 해안 포대 30번에 대한 공격을 시작할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/05"
+msgid "공격 준비가 끝났다. 정면 공격으로 주 포대를 점령하거나, 먼저 한쪽 이상의 측면을 공격할 수도 있다. 선택은 그대에게 달렸다, Herr Leutnant."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/06"
+msgid "이차 지뢰밭과 대전차 진지를 조심해라. 우리 진격에 위험할 수 있다. 소련군의 반격도 경계해라. 적은 싸우지 않고 능선을 내주지 않을 것이다..."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/07"
+msgid "Thor 공성 박격포를 그대의 지휘 아래 둔다. 소련군에게 베어마흐트 최중량 포병의 멍에 아래 놓인다는 게 무슨 뜻인지 보여 줘라! 운용을 유지하려면 보급 차량 한 분견대가 통째로 필요하다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/08"
+msgid "추가 증원으로 소련군 방어를 돌파해 포대에 도달하길 기대한다. 최고사령부는 더는 지체를 용납하지 않을 것이다. 적을 섬멸하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/09"
+msgid "적은 전선을 보강하려고 흑해 함대 해병도 투입했다. 조심해라! 이들은 상대하기 힘든 강적이니 가진 것을 모두 쏟아부어야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/10"
+msgid "잘했다, 병사들!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/11"
+msgid "잘했다, 계속 밀어붙여라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/12"
+msgid "훌륭하다! 이 기세를 이어가라, 할 일이 많이 남았다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/13"
+msgid "적 포대가 마침내 사라졌다. 후대의 역사책에 오래 남을 업적이다, 병사들!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/14"
+msgid "훌륭하다! 이 길의 통제는 극히 중요하다. 소련군이 포대 단지에 드나드는 것을 막을 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/15"
+msgid "잘했다, 동쪽 고지는 우리 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/16"
+msgid "지뢰밭이 소탕되었다! 이제 아군이 북쪽 접근로를 안전하게 통과할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/17"
+msgid "이제 북쪽의 지뢰밭을 소탕하는 것이 그대의 임무다. 그래야 우리 증원 부대가 통과할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/outro_completed"
+msgid "훌륭하다! 요새를 점령했고 포대 전체가 무력화되었다. 제11 군은 전선에 돌파구를 얻었으며 즉시 세바스토폴로 진군할 것이다. 막심 고리키 요새 승리에 대해 본부에 호의적인 보고를 올리겠다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/outro_failed"
+msgid "이것은 본부에 보고할 만한 결과가 결코 아니다. 우리 부대는 돌파하지 못했고, 그 결과 공격이 완전히 멈췄다. 재편성한 뒤 다시 시도해야 하며, 다른 전술을 쓰면 도움이 될 수도 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/place"
+msgid "제213 보병 연대, 제173 공병 대대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/story"
+msgid "독일 제11 군은 소련 수중에 남은 크림 반도의 마지막 지역을 점령하려 한다. 케르치 반도를 점령했고 이제 사방에서 세바스토폴로 접근한다. 독일군은 흑해 함대와 이반 예피모비치 페트로프가 이끄는 '독립 연안군'의 완강한 저항에 부딪힌다. 방어군은 곳곳에 참호를 파고 해안 포대의 지원을 받는다. 진척은 더디며, 방어 시설을 파괴하고 시가지로 뚫고 들어가기 위해 중포가 전선에 투입된다.\n\n이번 임무에서 그대는 30번 포대, 독일군이 '막심 고리키 1 요새'라 부르는 곳에 대한 공격을 이끈다. 우리의 가장 큰 공성 박격포를 쓸 수 있으니 방어를 침묵시키는 데 써라. 포대의 주포는 이미 가동 불능이다. 보병으로 좌측면을 지켜라. 제1 방어선을 제거했으면 언덕 꼭대기를 급습해 요새를 점령하라. 공세는 더 이상 지체할 수 없다. 이 일을 성사시키는 것은 그대에게 달렸다.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task1"
+msgid "제1 방어선의 거점을 모두 소탕하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task1_1"
+msgid "거점 \"오스트로프\"를 소탕하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task1_2"
+msgid "거점 \"양계장\"을 소탕하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task1_3"
+msgid "거점 \"토마토 공장\"을 소탕하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task2"
+msgid "지뢰밭을 통과할 길을 열어라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task3"
+msgid "해안 포대 30번의 주포대 구역을 소탕하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task4"
+msgid "소피야 페롭스카야 국영 농장 진입로를 소탕하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1942_06_sevastopol/task5"
+msgid "보루 진입로를 소탕하라."
+msgstr ""
