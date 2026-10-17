@@ -41,5 +41,22 @@ static class SpawnWriterTests
         T.Eq("{mission}", stack.ReadText("map/a.mi"), "the Spawn Menu copy does not win");
         T.True(warnings.Any(w => w.Contains("mod_3617250510")), "the dropped layer is reported");
         T.Eq(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(outDir)), "CTAToyboxSpawn"), SpawnSources.SpawnModDirOf(settings), "default spawn folder next to the output mod");
+
+        // 게임 mods 아래 정션으로 켠 스폰 모드는 자기 자신이라 원본에서 빠진다(2026-10-17: 지난 생성물을 원본으로 읽어 로스터 146개를 지웠다)
+        string spawnDir = Path.Combine(T.TempDir(), "CTAToyboxSpawn");
+        T.Put(spawnDir, "resource/map/a.mi", "{mission old}");
+        string junction = Path.Combine(game, "mods", "ctatoyboxspawn");
+        Directory.CreateDirectory(Path.Combine(game, "mods"));
+        var mk = System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo("cmd.exe", "/c mklink /J \"" + junction + "\" \"" + spawnDir + "\"") { CreateNoWindow = true, UseShellExecute = false });
+        mk.WaitForExit();
+        if (Directory.Exists(junction))
+        {
+            File.WriteAllText(options, "{options {mods \"mod_2905667604:0\" \"" + Path.GetFileName(outDir) + ":0\" \"ctatoyboxspawn:0\"}}");
+            settings.SpawnModDir = spawnDir;
+            plan = GameProfile.PlanLayers(settings, GameProfile.ReadModEntries(File.ReadAllText(options)));
+            T.Eq(new[] { "vanilla", "mod_2905667604", "output" }, SpawnSources.Layers(settings, plan, null).Select(l => l.Name).ToArray(), "a spawn mod enabled through a junction is not a source");
+            Directory.Delete(junction);
+        }
+        else T.True(false, "mklink /J failed: the junction case was not tested");
     }
 }

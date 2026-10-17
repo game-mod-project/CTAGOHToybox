@@ -1,8 +1,11 @@
 {
-  "builtAt": "2026-10-17T06:46:30Z",
+  "builtAt": "2026-10-17T13:08:24Z",
   "files": [
     {
       "path": "localizations/default/interface/text/mission/ctatoybox_spawn.pot"
+    },
+    {
+      "path": "resource/interface/layout/views/scene/component/gameunitreinforcementview.xml"
     },
     {
       "path": "resource/interface/layout/views/scene/scenegameview.xml"

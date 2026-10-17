@@ -61,6 +61,16 @@ namespace CtaToybox.Core.Spawn
                 if (patched == null) report.Skipped.Add(SceneViewPatch.Path + ": " + error);
                 else files.Add(new SpawnFile { Path = "resource/" + view.VirtualPath, Bytes = Encoding.UTF8.GetBytes(patched), Source = view.Layer });
             }
+            if (o.Menu.GridCols > 0)
+            {
+                var rv = stack.Find(ReinforcementViewPatch.Path);
+                string rerr = null;
+                string rx = rv == null ? null : ReinforcementViewPatch.Patch(Encoding.UTF8.GetString(stack.Read(rv)), o.Menu.GridCols, out rerr);
+                if (rv == null) report.Skipped.Add(ReinforcementViewPatch.Path + ": 계층에 없다");
+                else if (rx == null) report.Skipped.Add(ReinforcementViewPatch.Path + ": " + rerr);
+                else files.Add(new SpawnFile { Path = "resource/" + rv.VirtualPath, Bytes = Encoding.UTF8.GetBytes(rx), Source = rv.Layer });
+                report.Notes.Add("미확인: 증원 창을 가로 격자(" + o.Menu.GridCols + "열)로 바꾼 것을 게임이 받는지. 안 되면 spawn-menu build --list");
+            }
             report.Notes.Add("미확인: 증원 창 메뉴가 멀티·컨퀘스트에서 보이는지, 메뉴가 사라지는 문제가 고쳐지는지(게임 안에서만 알 수 있다)");
             return files;
         }
