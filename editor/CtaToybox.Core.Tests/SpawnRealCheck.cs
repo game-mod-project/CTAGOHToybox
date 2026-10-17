@@ -42,5 +42,25 @@ static class SpawnRealCheck
         foreach (var g in rosterSkipped.GroupBy(x => x.Substring(x.IndexOf(':') + 1).Trim().Split(':')[0]).OrderByDescending(g => g.Count()).Take(5)) Console.WriteLine("  spawn roster skipped " + g.Count() + "x: " + g.First());
         T.Eq(0, bad, "rewritten rosters parse as well as the originals");
         T.True(added > 0, "missing vehicles are added to the rosters");
+
+        // 맵 사본: 넣은 줄을 빼면 이긴 판 바이트와 같다
+        var mapSkipped = new List<string>();
+        int campaign, multi;
+        var maps = MapPatch.Build(stack, mapSkipped, out campaign, out multi);
+        int differ = 0;
+        foreach (var f in maps)
+        {
+            string v = f.Path.Substring("resource/".Length);
+            string orig = System.Text.Encoding.Latin1.GetString(stack.Read(stack.Find(v)));
+            string back = System.Text.Encoding.Latin1.GetString(f.Bytes);
+            foreach (string line in new[] { MapPatch.MenuInclude, MapPatch.NationInclude(MapPatch.NationOf(v) ?? "x") })
+                foreach (string nl in new[] { "\r\n", "\n" }) back = back.Replace("\t" + line + nl, "");
+            if (back != orig && back.Replace("\n", "") != orig.Replace("\n", "")) { differ++; if (differ <= 3) Console.WriteLine("  spawn map differs: " + v); }
+        }
+        Console.WriteLine("spawn-maps campaign=" + campaign + " multi=" + multi + " skipped=" + mapSkipped.Count + " layers=" + string.Join(",", maps.GroupBy(m => m.Source).Select(g => g.Key + ":" + g.Count())));
+        foreach (string ms in mapSkipped.Take(8)) Console.WriteLine("  spawn map skipped: " + ms);
+        // Spawn Menu of MACE는 멀티 389개, 원래 Spawn Menu는 388개(spike). 하나는 그 모드에만 있는 맵이라 계층에 없다
+        T.True(campaign >= 91 && multi >= 388, "at least the maps Spawn Menu covered");
+        T.Eq(0, differ, "map copies are the winning file plus the include lines only");
     }
 }

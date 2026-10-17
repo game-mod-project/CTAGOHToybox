@@ -126,6 +126,7 @@ static class Suites
         ("SpawnWriter", SpawnWriterTests.Run),
         ("SpawnCatalog", SpawnCatalogTests.Run),
         ("SpawnRoster", SpawnRosterTests.Run),
+        ("SpawnMap", SpawnMapTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
