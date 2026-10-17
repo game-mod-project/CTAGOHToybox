@@ -1,6 +1,8 @@
 // 증원 창 메뉴 menu.mi(스펙 "캠페인·컨퀘스트: 증원 창 메뉴", "옵션").
 // 꼴은 Spawn Menu의 cheat.mi를 따른다(docs/13-spawn-menu-spike.md, 2026-10-17에 원문을 읽어 맞춤):
 //  - 견본: 맵 밖(-9600, 9700 근처)에 숨긴 {Human "<병종>" 0x<id> ...}와 {Tags "hidden" "<국가>" "<태그>" 0x<id>}. 비행기는 {Entity}+조종사+{Link}.
+//    견본은 국가마다 templates_<국가>.mi에 따로 쓴다. 멀티 맵은 모두, 캠페인 맵은 그 맵에 나오는 국가 것만 넣는다(MapPatch).
+//    견본 파일은 ctb_has_<국가>를 1로 켜고, 국가 화면은 견본이 없는 국가 단추를 숨긴다.
 //  - 단추를 누르면 트리거가 견본을 대기 구역(77777, 88888)으로 복제하고(actor_to_waypoint {clone}), 차량은 "spawn"으로 만든 뒤
 //    함수가 소속을 정하고 놓을 자리(ctb_place)로 옮긴다("placement", 보병은 "waypoint" {make_squad}). 차량에는 "linker"로 승무원을 태운다.
 //  - 화면은 단추 이름의 와일드카드로 보이고 숨긴다: 화면 N의 단추는 ctb_sN_bK, 모두 숨기기는 ctb_s*.
@@ -16,6 +18,7 @@ namespace CtaToybox.Core.Spawn
     {
         public int PageSize { get; set; } = 21;
         public int GridCols { get; set; } = 7;   // 증원 창 단추 칸 열 수(가로 격자). 0이면 바닐라 세로 목록 그대로
+        public bool AllNations { get; set; }     // 캠페인 맵에도 모든 국가 견본을 넣는다(기본은 그 맵에 나오는 국가만)
     }
 
     public sealed class MenuButton
@@ -43,6 +46,8 @@ namespace CtaToybox.Core.Spawn
         public List<MenuScreen> Screens { get; } = new List<MenuScreen>();
         public int Templates { get; set; }
         public int Triggers { get; set; }
+        // 국가 → templates_<국가>.mi 글. 그 국가의 숨긴 견본(사람·비행기)과 ctb_has_<국가>를 켜는 트리거
+        public Dictionary<string, string> TemplateFiles { get; } = new Dictionary<string, string>(StringComparer.Ordinal);
     }
 
     public sealed class MenuBuilder
@@ -66,12 +71,18 @@ namespace CtaToybox.Core.Spawn
         int nextScreen = 1;
         int nextUnit = 1;
 
-        // 견본
+        // 견본. 국가마다 따로 모아 templates_<국가>.mi로 쓴다(맵이 필요한 국가 파일만 include한다)
         readonly Dictionary<string, (int Id, string Tag)> humanTemplates = new Dictionary<string, (int, string)>(StringComparer.OrdinalIgnoreCase);
-        readonly StringBuilder templates = new StringBuilder();
-        readonly StringBuilder tagLines = new StringBuilder();
-        readonly StringBuilder linkLines = new StringBuilder();
+        readonly Dictionary<string, (StringBuilder Objects, StringBuilder Links, StringBuilder Tags)> byArmy = new Dictionary<string, (StringBuilder, StringBuilder, StringBuilder)>(StringComparer.Ordinal);
         int nextId = 0xC100;
+
+        (StringBuilder Objects, StringBuilder Links, StringBuilder Tags) Of(string army)
+        {
+            if (!byArmy.TryGetValue(army, out var t)) { t = (new StringBuilder(), new StringBuilder(), new StringBuilder()); byArmy[army] = t; }
+            return t;
+        }
+
+        public static string HasVar(string army) { return "ctb_has_" + army; }
 
         MenuBuilder(SpawnCatalog cat, MenuOptions o, Func<string, bool> hasIcon, Func<string, bool> hasBreed, List<string> skipped)
         {
@@ -130,16 +141,22 @@ namespace CtaToybox.Core.Spawn
             var toolsScreen = NewScreen(null, "Tools");
             foreach (string army in armies) homes[army] = NewScreen(army, "Home").Id;
 
-            foreach (string army in armies) MakeArmy(army, result.Screens.Single(s => s.Id == homes[army]), nationScreen, ownerScreen, supportScreen, toolsScreen);
-
             // 국가 화면: 바로 고르는 단추(토글 아님, 사용자 결정)
+            var hides = new List<object> { MNode.Hide(HideAll), MNode.Show("ctb_s" + nationScreen.Id + "_*") };
             foreach (string army in armies)
             {
                 string ev = "ctb_e_nat_" + army;
-                Add(nationScreen, Str("nation_" + army, ArmyText.TryGetValue(army, out var t) ? t : army), Icon("button_1_" + army, "button_1_ger"), ev);
+                var b = Add(nationScreen, Str("nation_" + army, ArmyText.TryGetValue(army, out var t) ? t : army), Icon("button_1_" + army, "button_1_ger"), ev);
                 events.Add(ev);
                 triggers.Add(MNode.EventTrigger(ev, MNode.SetVar("ctb_nation", armies.IndexOf(army) + 1), MNode.Hide(HideAll), MNode.Show("ctb_s" + homes[army] + "_*")));
+                // 이 맵이 그 국가 견본 파일을 넣지 않았으면(캠페인) 그 국가 단추를 숨긴다. 견본 없이는 보병·승무원을 만들 수 없다
+                hides.Add(MNode.IfVar(HasVar(army), "==", 0, MNode.Hide(b.Name)));
             }
+            string nationEv = "ctb_e_s" + nationScreen.Id;
+            events.Add(nationEv);
+            triggers.Add(MNode.EventTrigger(nationEv, hides.ToArray()));
+
+            foreach (string army in armies) MakeArmy(army, result.Screens.Single(s => s.Id == homes[army]), nationScreen, ownerScreen, supportScreen, toolsScreen);
             // 소속 화면: Auto(autoassign)와 Player 0~9(바로 고름). 값 0 = autoassign, k = player k-1(cheat.mi "set player"와 같은 값)
             for (int k = 0; k <= 10; k++)
             {
@@ -326,11 +343,12 @@ namespace CtaToybox.Core.Spawn
             string tag = "ctb_h" + (humanTemplates.Count + 1);
             int i = humanTemplates.Count;
             double x = -9700 + (i % 60) * 3, y = 9600 + (i / 60) * 3;
-            templates.Append("\t{Human ").Append(MNode.Q(breed)).Append(" 0x").Append(id.ToString("x")).Append("\r\n")
+            var to = Of(army);
+            to.Objects.Append("\t{Human ").Append(MNode.Q(breed)).Append(" 0x").Append(id.ToString("x")).Append("\r\n")
                 .Append("\t\t{Position ").Append(F(x)).Append(' ').Append(F(y)).Append("}\r\n")
                 .Append("\t\t{Volume \"ram\"\r\n\t\t\t{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}\r\n\t\t\t{disabled}\r\n\t\t}\r\n")
                 .Append("\t\t{Player 0}\r\n\t}\r\n");
-            tagLines.Append("\t{Tags \"hidden\" ").Append(MNode.Q(army)).Append(' ').Append(MNode.Q(tag)).Append(" 0x").Append(id.ToString("x")).Append("}\r\n");
+            to.Tags.Append("\t{Tags \"hidden\" ").Append(MNode.Q(army)).Append(' ').Append(MNode.Q(tag)).Append(" 0x").Append(id.ToString("x")).Append("}\r\n");
             humanTemplates[breed] = (id, tag);
             return (id, tag);
         }
@@ -353,15 +371,16 @@ namespace CtaToybox.Core.Spawn
             string tag = "ctb_a" + index, ev = "ctb_e_a" + index;
             int ent = nextId++, man = nextId++;
             double x = -9500 + (index % 40) * 40, y = 8300;
-            templates.Append("\t{Entity ").Append(MNode.Q(u.Name)).Append(" 0x").Append(ent.ToString("x")).Append("\r\n")
+            var to = Of(army);
+            to.Objects.Append("\t{Entity ").Append(MNode.Q(u.Name)).Append(" 0x").Append(ent.ToString("x")).Append("\r\n")
                 .Append("\t\t{Position ").Append(F(x)).Append(' ').Append(F(y)).Append("}\r\n\t\t{DisableObstacles}\r\n\t\t{Player 0}\r\n")
                 .Append("\t\t{Chassis \"airborne\" {AirborneMode 1} {Altitude 40}}\r\n\t\t{ChassisManager {Current \"airborne\"}}\r\n\t}\r\n")
                 .Append("\t{Human ").Append(MNode.Q(pilot)).Append(" 0x").Append(man.ToString("x")).Append("\r\n")
                 .Append("\t\t{Position ").Append(F(x + 4)).Append(' ').Append(F(y)).Append("}\r\n")
                 .Append("\t\t{Volume \"ram\"\r\n\t\t\t{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}\r\n\t\t\t{disabled}\r\n\t\t}\r\n")
                 .Append("\t\t{Player 0}\r\n\t}\r\n");
-            linkLines.Append("\t{Link 0x").Append(man.ToString("x")).Append(" {0x").Append(ent.ToString("x")).Append(" \"driver\"}}\r\n");
-            tagLines.Append("\t{Tags ").Append(MNode.Q(tag)).Append(" \"hidden\" ").Append(MNode.Q(army)).Append(" \"ctb_air\" 0x").Append(ent.ToString("x")).Append("}\r\n");
+            to.Links.Append("\t{Link 0x").Append(man.ToString("x")).Append(" {0x").Append(ent.ToString("x")).Append(" \"driver\"}}\r\n");
+            to.Tags.Append("\t{Tags ").Append(MNode.Q(tag)).Append(" \"hidden\" ").Append(MNode.Q(army)).Append(" \"ctb_air\" 0x").Append(ent.ToString("x")).Append("}\r\n");
             var actions = new List<object>
             {
                 new MNode(MNode.Q("waypoint"), new MNode("who", new MNode("type", "actor"), new MNode("actors", new MNode("tag", MNode.Q(tag)))), new MNode("action", new MNode("type", "start"), new MNode("waypoint", MNode.Q(Place)), "{clone}", new MNode("approach", "teleport"))),
@@ -483,7 +502,7 @@ namespace CtaToybox.Core.Spawn
             var reinf = new MNode("reinforcements");
             reinf.Add(Button(new MenuButton { Name = Root, Text = Str("spawn", "Spawn"), Image = "button_1_ger", Event = "ctb_e_root" }, true));
             foreach (var s in result.Screens) foreach (var b in s.Buttons) reinf.Add(Button(b, false));
-            var vars = new MNode("vars", new[] { "ctb_nation", "ctb_nation_side", "ctb_campaign", "ctb_owner", "ctb_god", "ctb_maxvet", "ctb_never" }.Select(v => (object)new MNode(MNode.Q(v))).ToArray());
+            var vars = new MNode("vars", new[] { "ctb_nation", "ctb_nation_side", "ctb_campaign", "ctb_owner", "ctb_god", "ctb_maxvet", "ctb_never" }.Concat(armies.Select(HasVar)).Select(v => (object)new MNode(MNode.Q(v))).ToArray());
             var funcs = new MNode("functions").Add(Functions(home).ToArray());
             var trig = new MNode("triggers").Add(Loops(armies).ToArray()).Add(triggers.ToArray());
             var zones = new[] { ("infantryzone", 77777), ("tankzone", 88888) }.Select(z => new MNode("zone " + MNode.Q("poly"), new MNode("position", z.Item2 + " " + z.Item2 + " 0"), new MNode("Name", MNode.Q(z.Item1)),
@@ -498,8 +517,18 @@ namespace CtaToybox.Core.Spawn
             result.Triggers = triggers.Count + 3;
             var sb = new StringBuilder();
             sb.Append(";{mission\r\n; CTAToybox Spawn: editor/CtaToybox.Core/Spawn/MenuBuilder.cs가 만든 파일이다. 손으로 고치지 않는다\r\n");
-            sb.Append(templates).Append(linkLines).Append(tagLines);
             helpers.Write(sb, 1);
+            foreach (string army in armies) result.TemplateFiles[army] = TemplateFile(army);
+            return sb.ToString();
+        }
+
+        // 국가 견본 파일: 맵이 menu.mi 앞에 읽는다. 견본과 함께 "이 맵에 이 국가 견본이 있다"는 변수를 켠다
+        string TemplateFile(string army)
+        {
+            var t = Of(army);
+            var sb = new StringBuilder(";{mission\r\n; CTAToybox Spawn: " + army + " 견본. editor/CtaToybox.Core/Spawn/MenuBuilder.cs가 만든 파일이다. 손으로 고치지 않는다\r\n");
+            sb.Append(t.Objects).Append(t.Links).Append(t.Tags);
+            new MNode("Helpers", new MNode("triggers", new MNode(MNode.Q("ctb_has_" + army), "{condition }", new MNode("actions", MNode.SetVar(HasVar(army), 1))))).Write(sb, 1);
             return sb.ToString();
         }
 

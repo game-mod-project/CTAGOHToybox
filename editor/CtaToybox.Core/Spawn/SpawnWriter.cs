@@ -61,12 +61,23 @@ namespace CtaToybox.Core.Spawn
             foreach (string old in previous.Where(p => !now.Contains(p)))
             {
                 string full = Path.Combine(modDir, old.Replace('/', Path.DirectorySeparatorChar));
-                try { if (File.Exists(full)) { File.Delete(full); report.Removed.Add(old); } }
+                try { if (File.Exists(full)) { File.Delete(full); report.Removed.Add(old); PruneEmpty(Path.GetDirectoryName(full), modDir); } }
                 catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException) { report.Errors.Add(old + ": 지우지 못했다: " + ex.Message); kept.Add(old); }
             }
             var manifest = new Manifest { BuiltAt = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"), Files = kept.OrderBy(p => p, StringComparer.Ordinal).Select(p => new Entry { Path = p }).ToList() };
             File.WriteAllText(Path.Combine(modDir, ManifestName), JsonSerializer.Serialize(manifest, Json) + "\n", new UTF8Encoding(false));
             return report;
+        }
+
+        // 지운 파일의 폴더가 비면 모드 폴더 아래까지 거슬러 올라가며 지운다(빈 폴더만)
+        static void PruneEmpty(string dir, string modDir)
+        {
+            string root = Path.GetFullPath(modDir).TrimEnd(Path.DirectorySeparatorChar);
+            for (string d = Path.GetFullPath(dir); d != null && d.Length > root.Length && d.StartsWith(root + Path.DirectorySeparatorChar, StringComparison.OrdinalIgnoreCase); d = Path.GetDirectoryName(d))
+            {
+                if (Directory.EnumerateFileSystemEntries(d).Any()) return;
+                Directory.Delete(d);
+            }
         }
 
         public static DateTime? BuiltAt(string modDir)
