@@ -121,6 +121,7 @@ static class Suites
         ("FileCopy", FileCopyTests.Run),
         ("AddLine", AddLineTests.Run),
         ("FactionPreset", FactionPresetTests.Run),
+        ("FactionPresetCli", FactionPresetCliTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
