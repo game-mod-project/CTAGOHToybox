@@ -60,7 +60,8 @@ static class FileCopyTests
         string presetsOut = Path.Combine(outDir, "resource", "set", "stuff", "rifle", ".presets");
         T.True(File.Exists(presetsOut) && File.ReadAllText(presetsOut) == "(define \"pen\" {pen 1})\n", "the folder .presets goes along unchanged (define not found, 2026-10-17)");
         T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "mgun", ".presets")), "no .presets for a folder that has none");
-        T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "k98")) && !File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "rifle.pattern")), "the originals are not written");
+        T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "k98")), "the original is not written");
+        T.Eq("{weapon\n {rechargeTime 6}\n {range 100}\n}\n", File.ReadAllText(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "rifle.pattern")), "the inherited pattern goes along unchanged");
 
         s.SetEnabled(edit, false);
         var weightCheck = s.CheckEdits().Single(c => c.Edit.File == copy);

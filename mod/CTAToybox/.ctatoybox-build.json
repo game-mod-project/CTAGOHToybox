@@ -1,6 +1,6 @@
 {
   "project": "강화-독일",
-  "builtAt": "2026-10-17T02:52:38Z",
+  "builtAt": "2026-10-17T03:27:00Z",
   "files": [
     {
       "path": "resource/set/stuff/bazooka/20mm_fliegerfaust_ctb_ger.weapon",
@@ -18411,6 +18411,256 @@
       "path": "resource/properties/moto__ctb_bmw_r71_1fceaf2f.ext",
       "layer": "vanilla",
       "edits": 4
+    },
+    {
+      "path": "resource/set/stuff/bazooka/rpg_weapon.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/bazooka/bazooka_m1.weapon",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/bazooka/panzershreck_43.weapon",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/bazooka/panzershreck_54.weapon",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/flame/flame_thrower.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/flame/14mm_flammenwerfer_251_16_l",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/gun.pattern",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/128mm_pak44",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/150mm_sig33",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/155mm_gpf",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/20mm_flak38",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/20mm_flak38_2",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/20mm_kwk30",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/20mm_mg151",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/37mm_flak37",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/47mm_pakt",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/50mm_pak38",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/50mm_kwk39",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/75mm_kwk37",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/75mm_pak39",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/75mm_pak40",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/75mm_kwk42",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/75mm_kwk40",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/75mm_kwk40_l48",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/76mm_qf17",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/88mm_flak36",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/88mm_kwk43",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/88mm_pak43",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mg34_tank",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mgun.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mgun_generic.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/bullet.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/reactive/reactive.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mgun_light.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mg_131.pattern",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mg13_no_bipod",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mg34_belt",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/mg42_belt",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mortar/mortar.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/pistol/pistol.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/bar_bipod",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/rifle.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/grenade/rifle_grenade.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/grenade/sturmpistole.pattern",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/stg44",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/ptr/at_rifle.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/sniper/semi_sniper_rifle.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/sniper/sniper_rifle.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/smg/smg.pattern",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/smg/thompson_m1_30",
+      "layer": "vanilla",
+      "edits": 0
     },
     {
       "path": "resource/set/stuff/bazooka/.presets",

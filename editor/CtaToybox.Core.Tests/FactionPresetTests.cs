@@ -88,7 +88,8 @@ static class FactionPresetTests
         T.True(Out(outDir, "set/stuff/rifle/k98_ctb_ger").Contains("{rechargeTime 3}"), "inherited reload time: a line in the copy: " + Out(outDir, "set/stuff/rifle/k98_ctb_ger"));
         T.True(Out(outDir, "set/stuff/gun/88mm_kwk36_ctb_ger").Contains("{rechargeTime 4}"), "own reload time halved: " + Out(outDir, "set/stuff/gun/88mm_kwk36_ctb_ger"));
         T.True(Out(outDir, "set/stuff/mgun/mg34_ctb_ger.weapon").Contains("4.25"), "macro reload time halved in the copy: " + Out(outDir, "set/stuff/mgun/mg34_ctb_ger.weapon"));
-        T.True(Out(outDir, "set/stuff/rifle/k98") == null && Out(outDir, "set/stuff/gun/88mm_kwk36") == null && Out(outDir, "set/stuff/rifle/rifle.pattern") == null, "originals and patterns are not written");
+        T.True(Out(outDir, "set/stuff/rifle/k98") == null && Out(outDir, "set/stuff/gun/88mm_kwk36") == null, "the original weapons are not written");
+        T.Eq("{weapon\n {rechargeTime 6}\n}\n", Out(outDir, "set/stuff/rifle/rifle.pattern"), "the pattern a copy inherits goes along unchanged (pattern not found, 2026-10-17)");
         string ger = Out(outDir, GerInf);
         T.True(ger.Contains("{item \"k98_ctb_ger\" filled}") && ger.Contains("{item \"mg34_ctb_ger\" filled}"), "the German soldier carries the copies: " + ger);
         T.True(ger.Contains("{\"health\" \"600%\"}"), "and has health ×2");
