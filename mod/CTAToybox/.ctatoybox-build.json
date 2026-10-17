@@ -1,6 +1,6 @@
 {
   "project": "강화-독일",
-  "builtAt": "2026-10-17T02:41:20Z",
+  "builtAt": "2026-10-17T02:52:38Z",
   "files": [
     {
       "path": "resource/set/stuff/bazooka/20mm_fliegerfaust_ctb_ger.weapon",
@@ -18411,6 +18411,71 @@
       "path": "resource/properties/moto__ctb_bmw_r71_1fceaf2f.ext",
       "layer": "vanilla",
       "edits": 4
+    },
+    {
+      "path": "resource/set/stuff/bazooka/.presets",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/bombing/.presets",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/flame/.presets",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/gun/.presets",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mgun/.presets",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/mortar/.presets",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/pistol/.presets",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/reactive/.presets",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/.presets",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/grenade/.presets",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/ptr/.presets",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/rifle/sniper/.presets",
+      "layer": "mod_2905667604",
+      "edits": 0
+    },
+    {
+      "path": "resource/set/stuff/smg/.presets",
+      "layer": "vanilla",
+      "edits": 0
     }
   ]
 }
