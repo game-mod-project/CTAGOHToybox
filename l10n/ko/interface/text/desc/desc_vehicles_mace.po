@@ -1,0 +1,3882 @@
+# source: mod_2905667604 interface/text/desc/desc_vehicles_mace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell German vehicles\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/entity/dummy_emplacement_info"
+msgid "<c(BA7517)>How to place in battle:</c>\n<c(FFFFFF)>Open the new reinforcement tab (the one with the wrench),</c>\nselect an engineer (only works with those) and place down the emplacement of choice.\nMP and CP price in battle can be ignored."
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_1"
+msgid "Emplacement Variant N.1"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_2"
+msgid "Emplacement Variant N.2"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_3"
+msgid "Emplacement Variant N.3"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_4"
+msgid "Emplacement Variant N.4"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_5"
+msgid "Emplacement Variant N.5"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_6"
+msgid "Emplacement Variant N.6"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_7"
+msgid "Emplacement Variant N.7"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_8"
+msgid "Emplacement Variant N.8"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_9"
+msgid "Supply Depot (2000 AP)"
+msgstr ""
+
+msgctxt "desc/entity/dummy_build_10"
+msgid "Supply Fuel Depot (2000 Fuel)"
+msgstr ""
+
+msgctxt "info/special/t_14_uk"
+msgid "<c(c3baae)>Assault Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_14_uk"
+msgid "T14 (57mm)"
+msgstr ""
+
+msgctxt "info/special/churchill_na75"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/churchill_na75"
+msgid "Churchill Mk.IV NA 75"
+msgstr ""
+
+msgctxt "info/special/comet1_a34_shield"
+msgid "<c(c3baae)>Cruiser Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/comet1_a34_shield"
+msgid "Comet I (Up-Armoured)"
+msgstr ""
+
+msgctxt "info/special/matilda2_mk2_frog"
+msgid "<c(c3baae)>Heavy Flame Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/matilda2_mk2_frog"
+msgid "Matilda II MK.II 'Frog'"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_stationary_type_ru_tripod"
+msgid "Type 92 Tripod"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_stationary_type_ru_tripod"
+msgid "<c(c3baae)>Light MG</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_ru_tripod"
+msgid "Type 92 Tripod"
+msgstr ""
+
+msgctxt "info/special/type_ru_tripod"
+msgid "<c(c3baae)>Light MG</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_21_rocket_booster_stat"
+msgid "Type 21 Rocket Booster"
+msgstr ""
+
+msgctxt "info/special/type_21_rocket_booster_stat"
+msgid "<c(c3baae)>Rocket Booster</c>"
+msgstr ""
+
+msgctxt "desc/entity/320mm_type98_mortar"
+msgid "Type 98 320mm"
+msgstr ""
+
+msgctxt "info/special/320mm_type98_mortar"
+msgid "<c(c3baae)>Spigot Mortar</c>"
+msgstr ""
+
+msgctxt "info/special/ram_kangaroo_mk2_badger"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ram_kangaroo_mk2_badger"
+msgid "Ram Badger Mk. I"
+msgstr ""
+
+msgctxt "info/special/ram_mkii"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ram_mkii"
+msgid "Ram Mk.II"
+msgstr ""
+
+msgctxt "info/special/ram_mki"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ram_mki"
+msgid "Ram Mk.I"
+msgstr ""
+
+msgctxt "info/special/sherman2_skink"
+msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/sherman2_skink"
+msgid "Anti-Aircraft Tank 'Skink'"
+msgstr ""
+
+msgctxt "desc/entity/staghound_mk3_prot"
+msgid "Staghound Mk.III (Prototype)"
+msgstr ""
+
+msgctxt "info/special/staghound_mk3_prot"
+msgid "<c(c3baae)>Armoured Car</c>"
+msgstr ""
+
+msgctxt "info/special/se_ri"
+msgid "<c(c3baae)>Armored Recovery Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/se_ri"
+msgid "Type 97 Se-Ri"
+msgstr ""
+
+msgctxt "desc/entity/panzer5d_fra"
+msgid "Pz.Kpfw Panther Ausf.D 'Dauphiné'"
+msgstr ""
+
+msgctxt "info/special/panzer5d"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "info/special/panther_ii_turm"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m5a1_halftrack_commander"
+msgid "M5A1 Halftrack (Command)"
+msgstr ""
+
+msgctxt "info/special/m5a1_halftrack_commander"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_halftrack_commander"
+msgid "M3A1 Halftrack (Command)"
+msgstr ""
+
+msgctxt "info/special/m3a1_halftrack_commander"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/bf109_g6_250kg"
+msgid "Bf 109 G-6"
+msgstr ""
+
+msgctxt "info/special/bf109_g6_250kg"
+msgid "<c(c3baae)>Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/bf109_g6_rocket"
+msgid "Bf 109 G-6"
+msgstr ""
+
+msgctxt "info/special/bf109_g6_rocket"
+msgid "<c(c3baae)>Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/bf110_e2_rocket"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "info/special/bf110_e2_rocket"
+msgid "<c(c3baae)>Fighter Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/bf110_e2_1000kg"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "info/special/bf110_e2_1000kg"
+msgid "<c(c3baae)>Fighter Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/bf110_e2_flam_500kg"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "info/special/bf110_e2_flam_500kg"
+msgid "<c(c3baae)>Fighter Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/yak1_ser69_50kg"
+msgid "Yak-1-69"
+msgstr ""
+
+msgctxt "info/special/yak1_ser69_50kg"
+msgid "<c(c3baae)>Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/po2_flame"
+msgid "U-2"
+msgstr ""
+
+msgctxt "info/special/po2_flame"
+msgid "<c(c3baae)>Light Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/po2_rocket"
+msgid "U-2"
+msgstr ""
+
+msgctxt "info/special/po2_rocket"
+msgid "<c(c3baae)>Light Bomber</c>"
+msgstr ""
+
+msgctxt "info/special/p47_d22_m8"
+msgid "<c(c3baae)>Multirole Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/p47_d22_m8"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "info/special/p47_d22_250lb"
+msgid "<c(c3baae)>Multirole Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/p47_d22_250lb"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "info/special/p47_d22_hvar"
+msgid "<c(c3baae)>Multirole Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/p47_d22_hvar"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/entity/ki_57"
+msgid "Mitsubishi Ki-57 'Topsy'"
+msgstr ""
+
+msgctxt "info/special/ki_57"
+msgid "<c(c3baae)>Transport Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_calliope"
+msgid "M4A3(75)W T34 'Calliope'"
+msgstr ""
+
+msgctxt "info/special/m4a3_calliope"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_experimental_at_gun"
+msgid "105mm Experimental AT Gun"
+msgstr ""
+
+msgctxt "info/special/105mm_experimental_at_gun"
+msgid "<c(c3baae)>Anti-Tank Cannon</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_halftrack_sup"
+msgid "M3A1 Halftrack (Supply)"
+msgstr ""
+
+msgctxt "info/special/m3a1_halftrack_sup"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/t21e1_mortar_carrier"
+msgid "4.2-inch Mortar Carrier T21E1"
+msgstr ""
+
+msgctxt "info/special/t21e1_mortar_carrier"
+msgid "<c(c3baae)>Mortar Carrier</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a4_croc"
+msgid "M4A4 'Crocodile'"
+msgstr ""
+
+msgctxt "info/special/m4a4_croc"
+msgid "<c(c3baae)>Flame Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_105_hvss_h5"
+msgid "M4A4(105)(POA-CWS-H5) HVSS"
+msgstr ""
+
+msgctxt "info/special/m4a3_105_hvss_h5"
+msgid "<c(c3baae)>Flame Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t90_mmc"
+msgid "155mm MMC T90"
+msgstr ""
+
+msgctxt "info/special/t90_mmc"
+msgid "<c(c3baae)>Self-propelled Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_lee_late"
+msgid "M3 Lee (Late)"
+msgstr ""
+
+msgctxt "info/special/m3_lee_late"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_76w_e4_5"
+msgid "M4A1(76)W 'E4-5' (Flame)"
+msgstr ""
+
+msgctxt "info/special/m4a1_76w_e4_5"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_75w_poa_h1"
+msgid "M4A3(POA-CWS-H1) (Flame)"
+msgstr ""
+
+msgctxt "info/special/m4a3_75w_poa_h1"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3e2_105"
+msgid "M4A3E2(105)"
+msgstr ""
+
+msgctxt "info/special/m4a3e2_105"
+msgid "<c(c3baae)>Assault Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/staghound_howitzer"
+msgid "Staghound Howitzer"
+msgstr ""
+
+msgctxt "info/special/staghound_howitzer"
+msgid "<c(c3baae)>Self Propelled Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/152mm_bl_6_mk19_8a"
+msgid "BL 6-inch Mk.XIX on Mk.VIIA Carriage"
+msgstr ""
+
+msgctxt "info/special/152mm_bl_6_mk19_8a"
+msgid "<c(c3baae)>Heavy Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_20mm_itk35"
+msgid "20 ItK/35 Breda"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_20mm_itk35"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_25mm_72k"
+msgid "25mm 72-K M1940"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_25mm_72k"
+msgid "<c(c3baae)>Light AA</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_20mm_flak30"
+msgid "2cm FlaK 30"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_20mm_flak30"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_40mm_m1"
+msgid "40mm Automatic Gun M1"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_40mm_m1"
+msgid "<c(c3baae)>AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/40mm_m1_late"
+msgid "40mm Automatic Gun M1"
+msgstr ""
+
+msgctxt "info/special/40mm_m1_late"
+msgid "<c(c3baae)>AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_20mm_oerlikon"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_20mm_oerlikon"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpanther_ii"
+msgid "Jagdpanther II"
+msgstr ""
+
+msgctxt "info/special/jagdpanther_ii"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/50mm_type98_mortar"
+msgid "Type 98 50mm Mortar"
+msgstr ""
+
+msgctxt "info/special/50mm_type98_mortar"
+msgid "<c(c3baae)>Demolition Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/85mm_52k_late"
+msgid "85mm 52-K M1939"
+msgstr ""
+
+msgctxt "info/special/85mm_52k_late"
+msgid "<c(c3baae)>Heavy AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_50cal_late"
+msgid "Willys MB (HMG)"
+msgstr ""
+
+msgctxt "info/special/willys_mb_50cal_late"
+msgid "<c(c3baae)>Armed Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/50mm_flak41_late"
+msgid "5cm Flak 41"
+msgstr ""
+
+msgctxt "info/special/50mm_flak41_late"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/88mm_pak4341_late"
+msgid "8.8cm PaK 43/41"
+msgstr ""
+
+msgctxt "info/special/88mm_pak4341_late"
+msgid "<c(c3baae)>Heavy AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/88mm_flak36_late"
+msgid "8.8cm FlaK 36"
+msgstr ""
+
+msgctxt "info/special/88mm_flak36_late"
+msgid "<c(c3baae)>Heavy AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ammo_rocket_trailer_usa"
+msgid "Cargo Trailer 1/4-Ton (Supply)"
+msgstr ""
+
+msgctxt "info/special/ammo_rocket_trailer_usa"
+msgid "<c(c3baae)>Ammo Trailer</c>"
+msgstr ""
+
+msgctxt "desc/entity/114mm_t27_launcher"
+msgid "T27 Rocket Launcher"
+msgstr ""
+
+msgctxt "info/special/114mm_t27_launcher"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/t77_spaa"
+msgid "T77E1 MGMC"
+msgstr ""
+
+msgctxt "info/special/t77_spaa"
+msgid "<c(c3baae)>Light AA Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/183mm_t88_launcher"
+msgid "T88 Rocket Launcher"
+msgstr ""
+
+msgctxt "info/special/183mm_t88_launcher"
+msgid "<c(c3baae)>Rocket Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/114mm_t66_launcher"
+msgid "T66 Rocket Launcher 'Honeycomb'"
+msgstr ""
+
+msgctxt "info/special/114mm_t66_launcher"
+msgid "<c(c3baae)>Rocket Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/m18_hellcat_105mm"
+msgid "105mm HMC T88"
+msgstr ""
+
+msgctxt "info/special/m18_hellcat_105mm"
+msgid "<c(c3baae)>Support Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/tiz_am600"
+msgid "Harley-Davidson WLA"
+msgstr ""
+
+msgctxt "info/special/tiz_am600"
+msgid "<c(c3baae)>Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_medic"
+msgid "Willys MB 'Medic'"
+msgstr ""
+
+msgctxt "info/special/willys_mb_medic"
+msgid "<c(c3baae)>Medical Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_shield_50cal"
+msgid "Willys MB (HMG) 'Field mod'"
+msgstr ""
+
+msgctxt "info/special/willys_mb_shield_50cal"
+msgid "<c(c3baae)>Armed Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_shield_30cal"
+msgid "Willys MB (2x MG) 'Field mod'"
+msgstr ""
+
+msgctxt "info/special/willys_mb_shield_30cal"
+msgid "<c(c3baae)>Armed Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_bazooka"
+msgid "Willys MB (Bazooka) 'Field mod'"
+msgstr ""
+
+msgctxt "info/special/willys_mb_bazooka"
+msgid "<c(c3baae)>Armed Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/wc51_t27"
+msgid "WC-51 T27 'Xylophone'"
+msgstr ""
+
+msgctxt "info/special/wc51_t27"
+msgid "<c(c3baae)>Rocket Launcher Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/114mm_m12a1_launcher"
+msgid "M12A1 Rocket Launcher"
+msgstr ""
+
+msgctxt "info/special/114mm_m12a1_launcher"
+msgid "<c(c3baae)>Rocket Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/183mm_t91_launcher"
+msgid "T91 Rocket Launcher"
+msgstr ""
+
+msgctxt "info/special/183mm_t91_launcher"
+msgid "<c(c3baae)>Rocket Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/273mm_t59_trailer"
+msgid "T59 Rocket Launcher"
+msgstr ""
+
+msgctxt "info/special/273mm_t59_trailer"
+msgid "<c(c3baae)>Rocket Cart</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_t45_mk10"
+msgid "Willys MB 'T45' (Late)"
+msgstr ""
+
+msgctxt "info/special/willys_mb_t45_mk10"
+msgid "<c(c3baae)>Rocket Launcher Jeep</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_t45_mk3"
+msgid "Willys MB 'T45'"
+msgstr ""
+
+msgctxt "info/special/willys_mb_t45_mk3"
+msgid "<c(c3baae)>Rocket Launcher Jeep</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_t27"
+msgid "Willys MB (Rocket Launcher) 'Field mod'"
+msgstr ""
+
+msgctxt "info/special/willys_mb_t27"
+msgid "<c(c3baae)>Rocket Launcher Jeep</c>"
+msgstr ""
+
+msgctxt "desc/entity/gmc_t27_mgun"
+msgid "GMC CCKW-352 T27 ‘Xylophone’ (HMG)"
+msgstr ""
+
+msgctxt "info/special/gmc_t27_mgun"
+msgid "<c(c3baae)>Rocket Launcher Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/gmc_t27"
+msgid "GMC CCKW-353 T27 ‘Xylophone’"
+msgstr ""
+
+msgctxt "info/special/gmc_t27"
+msgid "<c(c3baae)>Rocket Launcher Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/ft17_jap"
+msgid "Ko-Gata Sensha"
+msgstr ""
+
+msgctxt "info/special/ft17_jap"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ft17_mg_jap"
+msgid "Ko-Gata Sensha (MG)"
+msgstr ""
+
+msgctxt "info/special/ft17_mg_jap"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/f80a_mk78x4"
+msgid "P-80B Shooting Star"
+msgstr ""
+
+msgctxt "info/special/f80a_mk78x4"
+msgid "<c(c3baae)>Jet Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/f80a_rockets_127x12"
+msgid "P-80B Shooting Star"
+msgstr ""
+
+msgctxt "info/special/f80a_rockets_127x12"
+msgid "<c(c3baae)>Jet Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/f80a_450x2"
+msgid "P-80B Shooting Star"
+msgstr ""
+
+msgctxt "info/special/f80a_450x2"
+msgid "<c(c3baae)>Jet Fighter</c>"
+msgstr ""
+
+msgctxt "desc/entity/t26e4_prod"
+msgid "T26E4 Pershing"
+msgstr ""
+
+msgctxt "info/special/t26e4_prod"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m5_stuart_auto"
+msgid "M5 (T16)"
+msgstr ""
+
+msgctxt "info/special/m5_stuart_auto"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_firefly"
+msgid "M4A3 (17pdr)"
+msgstr ""
+
+msgctxt "info/special/m4a3_firefly"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_m1_late"
+msgid "155mm Howitzer M1"
+msgstr ""
+
+msgctxt "info/special/155mm_m1_late"
+msgid "<c(c3baae)>Heavy Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/122mm_a19_late"
+msgid "122mm A-19 M1931/37"
+msgstr ""
+
+msgctxt "info/special/122mm_a19_late"
+msgid "<c(c3baae)>Heavy Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_sig33_late"
+msgid "15cm sIG 33 (Late)"
+msgstr ""
+
+msgctxt "info/special/150mm_sig33_late"
+msgid "<c(c3baae)>Heavy Infantry Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_pak36_late"
+msgid "3.7cm PaK 36 (Late)"
+msgstr ""
+
+msgctxt "info/special/37mm_pak36_late"
+msgid "<c(c3baae)>Light AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/il2_mod42_ai"
+msgid "IL-2 M1942"
+msgstr ""
+
+msgctxt "info/special/il2_mod42_ai"
+msgid "<c(c3baae)>Fighter Bomber</c>"
+msgstr ""
+
+msgctxt "info/special/me_262_50mm"
+msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/me_262_50mm"
+msgid "Me 262A-1a/U4"
+msgstr ""
+
+msgctxt "info/special/me_262_rockets_210x2"
+msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/me_262_rockets_210x2"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "info/special/me_262_rockets_250x2_ai"
+msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/me_262_rockets_250x2_ai"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "info/special/me_262_rockets_250x2"
+msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/me_262_rockets_250x2"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "info/special/me_262_500x2"
+msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/me_262_500x2"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_dshk_aa"
+msgid "DShK M1938"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_dshk_aa"
+msgid "<c(c3baae)>Heavy MG</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_m2_50cal_tripod"
+msgid "Browning M2HB"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_m2_50cal_tripod"
+msgid "<c(c3baae)>Heavy MG</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_sfh18_late"
+msgid "15cm sFH 18"
+msgstr ""
+
+msgctxt "info/special/150mm_sfh18_late"
+msgid "<c(c3baae)>Heavy Field Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz251_20"
+msgid "Sd.Kfz 251/20"
+msgstr ""
+
+msgctxt "info/special/sdkfz251_20"
+msgid "<c(c3baae)>Mobile Spotlight</c>"
+msgstr ""
+
+msgctxt "desc/entity/high_mg_mg42"
+msgid "Hi-Lafette MG 42"
+msgstr ""
+
+msgctxt "info/special/high_mg_mg42"
+msgid "<c(c3baae)>Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/high_mg_mg34"
+msgid "Hi-Lafette MG 34"
+msgstr ""
+
+msgctxt "info/special/high_mg_mg34"
+msgid "<c(c3baae)>Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_mg42_lafette"
+msgid "Lafette MG 42"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_mg42_lafette"
+msgid "<c(c3baae)>Heavy MG</c>"
+msgstr ""
+
+msgctxt "desc/entity/nbfz"
+msgid "Pz.Kpfw Nb.Fz"
+msgstr ""
+
+msgctxt "info/special/nbfz"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz6p_Panzerbefehiswagen"
+msgid "VK 45.01 (P)"
+msgstr ""
+
+msgctxt "info/special/pz6p_Panzerbefehiswagen"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk_4501_p"
+msgid "VK 45.01 P"
+msgstr ""
+
+msgctxt "info/special/vk_4501_p"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pzbefwgvi_p"
+msgid "Pz.Bfw VI P"
+msgstr ""
+
+msgctxt "info/special/pzbefwgvi_p"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz6p_Panzerbefehiswagen_commander"
+msgid "Pz.Bfw VI P"
+msgstr ""
+
+msgctxt "info/special/pz6p_Panzerbefehiswagen_commander"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/blitz3_6_art_ammo_beutpanzer"
+msgid "Opel Blitz (Captured Supply)"
+msgstr ""
+
+msgctxt "info/special/blitz3_6_art_ammo_beutpanzer"
+msgid "<c(c3baae)>Ammo Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/88mm-raketenwerfer43"
+msgid "8.8cm Raketenwerfer 43"
+msgstr ""
+
+msgctxt "info/special/88mm-raketenwerfer43"
+msgid "<c(c3baae)>Rocket AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz221_spzb41"
+msgid "Sd.Kfz 221 (2.8cm)"
+msgstr ""
+
+msgctxt "info/special/sdkfz221_spzb41"
+msgid "<c(c3baae)>Armored AT Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz251c_stuka"
+msgid "Sd.Kfz 251/1 (Wurfrahmen 40)"
+msgstr ""
+
+msgctxt "info/special/sdkfz251c_stuka"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/geschuetzwagen_ivb"
+msgid "Heuschrecke 10"
+msgstr ""
+
+msgctxt "info/special/geschuetzwagen_ivb"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/dicker_max"
+msgid "Dicker Max"
+msgstr ""
+
+msgctxt "info/special/dicker_max"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv2_754r"
+msgid "Pz.Kpfw 754(r) 'KW-II'"
+msgstr ""
+
+msgctxt "info/special/kv2_754r"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/sturer_emil"
+msgid "Sturer Emil"
+msgstr ""
+
+msgctxt "info/special/sturer_emil"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/tiger_p"
+msgid "Pz.Kpfw VI P"
+msgstr ""
+
+msgctxt "info/special/tiger_p_commander"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/tiger_p_commander"
+msgid "Pz.Bef.Wg VI P"
+msgstr ""
+
+msgctxt "info/special/tiger_p"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/elefant"
+msgid "Panzerjäger Tiger (P) 'Elefant'"
+msgstr ""
+
+msgctxt "info/special/elefant"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/pzkpfw_6_ausf_b_tiger_sla16"
+msgid "Pz.Kpfw Tiger II Ausf.B (Sla. 16)"
+msgstr ""
+
+msgctxt "info/special/pzkpfw_6_ausf_b_tiger_sla16"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz6bh_105mm"
+msgid "Pz.Kpfw Tiger II Ausf.B (KwK 10.5cm)"
+msgstr ""
+
+msgctxt "info/special/pz6bh_105mm"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/wanze"
+msgid "Borgward IV Panzerjäger Wanze"
+msgstr ""
+
+msgctxt "info/special/wanze"
+msgid "<c(c3baae)>Anti-Tank Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/wanze_ammo"
+msgid "Borgward IV (Ammo Carrier)"
+msgstr ""
+
+msgctxt "info/special/wanze_demo_radio"
+msgid "<c(c3baae)>Demolition Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/wanze_demo_radio"
+msgid "Borgward IV (Demolition)"
+msgstr ""
+
+msgctxt "info/special/wanze_demo"
+msgid "<c(c3baae)>Demolition Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/wanze_charge_ammo_radio"
+msgid "Demolition Charge"
+msgstr ""
+
+msgctxt "info/special/wanze_charge_ammo_radio"
+msgid "<c(c3baae)>Explosive</c>"
+msgstr ""
+
+msgctxt "info/special/sdkfz301wanze"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "info/special/wanze_demo"
+msgid "<c(c3baae)>Demolition Vehicle</c>"
+msgstr ""
+
+msgctxt "info/special/sdkfz301wanze"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/marder_1fcm_36"
+msgid "Geschützwagen FCM(f)"
+msgstr ""
+
+msgctxt "info/special/marder_1fcm_36"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/pzkpfw_8_maus"
+msgid "Pz.Kpfw VIII Maus"
+msgstr ""
+
+msgctxt "info/special/pzkpfw_8_maus"
+msgid "<c(c3baae)>Super-Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/flakpanzer1a"
+msgid "Flakpanzer I"
+msgstr ""
+
+msgctxt "info/special/flakpanzer1a"
+msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/Pzkpfw_2hVK903"
+msgid "Pz.Sfl.Ic"
+msgstr ""
+
+msgctxt "info/special/Pzkpfw_2hVK903"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/panther_ii_turm"
+msgid "Pz.Kpfw Panther II (Schmale Blende)"
+msgstr ""
+
+msgctxt "info/special/panther_ii_turm"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/panther_ii_88"
+msgid "Pz.Kpfw Ausf. F (8.8cm KwK 43 L/71)"
+msgstr ""
+
+msgctxt "info/special/panther_ii_88"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/panther_ii"
+msgid "Pz.Kpfw Panther II"
+msgstr ""
+
+msgctxt "info/special/panther_ii"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a4_firefly_ger"
+msgid "Pz.Kpfw 748(a) 'Firefly'"
+msgstr ""
+
+msgctxt "info/special/m4a4_firefly_ger"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpanzer_iv_a"
+msgid "Panzer IV/70(A)"
+msgstr ""
+
+msgctxt "info/special/jagdpanzer_iv_a"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpanzer_iv_a_armor"
+msgid "Panzer IV/70(A) (Late)"
+msgstr ""
+
+msgctxt "info/special/jagdpanzer_iv_a_armor"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/bison2"
+msgid "Sturmpanzer II"
+msgstr ""
+
+msgctxt "info/special/bison2"
+msgid "<c(c3baae)>Heavy Assault Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/sherman5c_ger"
+msgid "Pz.Kpfw M4A4 748(e) 'Firefly'"
+msgstr ""
+
+msgctxt "info/special/sherman5c_ger"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/e_100a"
+msgid "E-100 Blueprint"
+msgstr ""
+
+msgctxt "info/special/e_100a"
+msgid "<c(c3baae)>Super-Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/e_100b"
+msgid "Pz.Kpfw Tiger-Maus"
+msgstr ""
+
+msgctxt "info/special/e_100b"
+msgid "<c(c3baae)>Super-Heavy Tank</c>"
+msgstr ""
+
+msgctxt "info/special/coelian_ii"
+msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/coelian_ii"
+msgid "FlakPz.V Mammut"
+msgstr ""
+
+msgctxt "info/special/coelian_i"
+msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/coelian_i"
+msgid "FlakPz.V Coelian"
+msgstr ""
+
+msgctxt "desc/entity/bergetiger"
+msgid "Bergetiger"
+msgstr ""
+
+msgctxt "info/special/bergetiger"
+msgid "<c(c3baae)>Armored Recovery Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/bergepanther"
+msgid "Bergepanther"
+msgstr ""
+
+msgctxt "info/special/bergepanther"
+msgid "<c(c3baae)>Armored Recovery Vehicle</c>"
+msgstr ""
+
+msgctxt "info/special/ezart"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ezart"
+msgid "Ersatz M10"
+msgstr ""
+
+msgctxt "desc/entity/us_m22"
+msgid "M22"
+msgstr ""
+
+msgctxt "desc/entity/inf_crate_little_david"
+msgid "Little David Ammo Crate"
+msgstr ""
+
+msgctxt "info/special/inf_crate_little_david"
+msgid "<c(c3baae)>Supply</c>"
+msgstr ""
+
+msgctxt "desc/entity/little_david"
+msgid "36-Inch Little David"
+msgstr ""
+
+msgctxt "info/special/little_david"
+msgid "<c(c3baae)>Siege Mortar</c>"
+msgstr ""
+
+msgctxt "info/special/churchill_crocodile"
+msgid "<c(c3baae)>Heavy Flame Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/churchill_crocodile"
+msgid "Churchill Crocodile"
+msgstr ""
+
+msgctxt "info/special/churchill_crocodile_trailer"
+msgid "<c(c3baae)>Trailer</c>"
+msgstr ""
+
+msgctxt "desc/entity/churchill_crocodile_trailer"
+msgid "Fuel Trailer"
+msgstr ""
+
+msgctxt "desc/entity/tiz_am600"
+msgid "Harley-Davidson WLA"
+msgstr ""
+
+msgctxt "info/special/willys_jeep_medical"
+msgid "<c(c3baae)>Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_jeep_medical"
+msgid "Willys MB (Medic)"
+msgstr ""
+
+msgctxt "info/special/us_xylophone"
+msgid "<c(c3baae)>Rocket artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_xylophone"
+msgid "GMC (114mm M8)"
+msgstr ""
+
+msgctxt "info/special/us_m3_stuart"
+msgid "<c(c3baae)>Light tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m3_stuart"
+msgid "M3 Stuart"
+msgstr ""
+
+msgctxt "info/special/us_m2a2"
+msgid "<c(c3baae)>Light tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m2a2"
+msgid "M2A2"
+msgstr ""
+
+msgctxt "info/special/us_m6a2e1"
+msgid "<c(c3baae)>Heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m6a2e1"
+msgid "M6A2E1"
+msgstr ""
+
+msgctxt "info/special/us_t30"
+msgid "<c(c3baae)>Heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t30"
+msgid "T30"
+msgstr ""
+
+msgctxt "info/special/us_t29"
+msgid "<c(c3baae)>Heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t29"
+msgid "T29"
+msgstr ""
+
+msgctxt "info/special/us_t34"
+msgid "<c(c3baae)>Heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t34"
+msgid "T34"
+msgstr ""
+
+msgctxt "info/special/us_t32e1"
+msgid "<c(c3baae)>Heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t32e1"
+msgid "T32E1"
+msgstr ""
+
+msgctxt "info/special/us_t18e2"
+msgid "<c(c3baae)>Armored car</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t18e2"
+msgid "T18E2"
+msgstr ""
+
+msgctxt "info/special/us_t95"
+msgid "<c(c3baae)>Super heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t95"
+msgid "T95 GMC"
+msgstr ""
+
+msgctxt "info/special/m2_medium"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2_medium"
+msgid "M2"
+msgstr ""
+
+msgctxt "info/special/m2a1_medium"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2a1_medium"
+msgid "M2A1"
+msgstr ""
+
+msgctxt "info/special/m2e1_medium_flamm"
+msgid "<c(c3baae)>Medium Flame Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2e1_medium_flamm"
+msgid "M2E1"
+msgstr ""
+
+msgctxt "info/special/us_m3_recovery"
+msgid "<c(c3baae)>Armored recovery vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m3_recovery"
+msgid "M31 ARV"
+msgstr ""
+
+msgctxt "info/special/us_m4_improved"
+msgid "<c(c3baae)>Medium tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4_improved"
+msgid "M4 Improved"
+msgstr ""
+
+msgctxt "info/special/us_m4_t34"
+msgid "<c(c3baae)>Medium tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4_t34"
+msgid "M4 (T34)"
+msgstr ""
+
+msgctxt "info/special/us_m4a3e2_cobraking"
+msgid "<c(c3baae)>Heavy tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4a3e2_cobraking"
+msgid "M4A3E2 'Cobra King'"
+msgstr ""
+
+msgctxt "info/special/us_m4a3e8"
+msgid "<c(c3baae)>Medium tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4a3e8"
+msgid "M4A3E8"
+msgstr ""
+
+msgctxt "info/special/us_m4a3e8_fury"
+msgid "<c(c3baae)>Medium tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4a3e8_fury"
+msgid "M4A3E8 'Fury'"
+msgstr ""
+
+msgctxt "info/special/us_m4a3e8_thundervii"
+msgid "<c(c3baae)>Medium tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4a3e8_thundervii"
+msgid "M4A3E8 'Thunderbolt VII'"
+msgstr ""
+
+msgctxt "info/special/us_m4a3r3_zippo"
+msgid "<c(c3baae)>Flame tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m4a3r3_zippo"
+msgid "M4A3R3 'Zippo'"
+msgstr ""
+
+msgctxt "info/special/us_m8a1"
+msgid "<c(c3baae)>Gun Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m8a1"
+msgid "M8A1 GMC"
+msgstr ""
+
+msgctxt "info/special/us_m10a1"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m10a1"
+msgid "M10A1 GMC"
+msgstr ""
+
+msgctxt "info/special/us_m18_90"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m18_90"
+msgid "90mm M18 GMC"
+msgstr ""
+
+msgctxt "info/special/us_m18_blackcat"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m18_blackcat"
+msgid "M18 GMC 'Black Cat'"
+msgstr ""
+
+msgctxt "info/special/us_m36b2"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m36b2"
+msgid "90mm GMC M36B2"
+msgstr ""
+
+msgctxt "info/special/us_t95_gen2"
+msgid "<c(c3baae)>Gun Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t95_gen2"
+msgid "T28"
+msgstr ""
+
+msgctxt "info/special/m26e1_pershing"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m26e1_pershing"
+msgid "M26E1 Pershing"
+msgstr ""
+
+msgctxt "info/special/m26_pershing_concrete"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m26_pershing_concrete"
+msgid "M26 Pershing 'Field Mod'"
+msgstr ""
+
+msgctxt "info/special/m26_t99_pershing"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m26_t99_pershing"
+msgid "M26 Pershing 'T99'"
+msgstr ""
+
+msgctxt "info/special/us_lvtm24"
+msgid "<c(c3baae)>Amphibious Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_lvtm24"
+msgid "LVT-M24"
+msgstr ""
+
+msgctxt "info/special/us_lvta4"
+msgid "<c(c3baae)>Amphibious Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_lvta4"
+msgid "LVT(A)-4"
+msgstr ""
+
+msgctxt "info/special/us_lvta1"
+msgid "<c(c3baae)>Amphibious Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_lvta1"
+msgid "LVT(A)-1"
+msgstr ""
+
+msgctxt "info/special/us_m24"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m24"
+msgid "M24"
+msgstr ""
+
+msgctxt "info/special/us_m19"
+msgid "<c(c3baae)>Multiple Gun Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m19"
+msgid "M19A1 MGMC"
+msgstr ""
+
+msgctxt "info/special/us_t69"
+msgid "<c(c3baae)>Multiple Gun Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t69"
+msgid "T69 MGMC"
+msgstr ""
+
+msgctxt "desc/entity/tri-polsten_20mm"
+msgid "Polsten Triple Gun"
+msgstr ""
+
+msgctxt "info/special/tri-polsten_20mm"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "info/special/us_m6a1"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_m6a1"
+msgid "M6A1"
+msgstr ""
+
+msgctxt "desc/entity/gmc_ammo"
+msgid "GMC CCKW (Supply)"
+msgstr ""
+
+msgctxt "info/special/gmc_ammo"
+msgid "<c(c3baae)>Supply Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/gmc_fuel"
+msgid "GMC CCKW (Fuel)"
+msgstr ""
+
+msgctxt "info/special/gmc_fuel"
+msgid "<c(c3baae)>Fuel Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/gmc_transport"
+msgid "GMC CCKW (Transport)"
+msgstr ""
+
+msgctxt "info/special/gmc_transport"
+msgid "<c(c3baae)>Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/gmc_engineer"
+msgid "GMC CCKW (Engineer)"
+msgstr ""
+
+msgctxt "info/special/gmc_engineer"
+msgid "<c(c3baae)>Engineering Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/stud_ammo"
+msgid "Studebaker US6 (Supply)"
+msgstr ""
+
+msgctxt "info/special/stud_ammo"
+msgid "<c(c3baae)>Supply Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/stud_fuel"
+msgid "Studebaker US6 (Fuel)"
+msgstr ""
+
+msgctxt "info/special/stud_fuel"
+msgid "<c(c3baae)>Fuel Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/stud_transport"
+msgid "Studebaker US6 (Transport)"
+msgstr ""
+
+msgctxt "info/special/stud_transport"
+msgid "<c(c3baae)>Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/stud_engineer"
+msgid "Studebaker US6 (Engineer)"
+msgstr ""
+
+msgctxt "info/special/stud_engineer"
+msgid "<c(c3baae)>Engineering Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/is_3"
+msgid "IS-3"
+msgstr ""
+
+msgctxt "info/special/is_3"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/is_4"
+msgid "IS-4"
+msgstr ""
+
+msgctxt "info/special/is_4"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/is_4m"
+msgid "IS-4M"
+msgstr ""
+
+msgctxt "info/special/is_4m"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/is_6"
+msgid "IS-6"
+msgstr ""
+
+msgctxt "info/special/is_6"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/is_7"
+msgid "IS-7"
+msgstr ""
+
+msgctxt "info/special/is_7"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv122"
+msgid "KV-122"
+msgstr ""
+
+msgctxt "info/special/kv122"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv_220"
+msgid "KV-220"
+msgstr ""
+
+msgctxt "info/special/kv_220"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv220"
+msgid "KV-220-2"
+msgstr ""
+
+msgctxt "info/special/kv220"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv2_zis6"
+msgid "KV-2 (ZiS-6)"
+msgstr ""
+
+msgctxt "info/special/kv2_zis6"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv4b"
+msgid "KV-4B"
+msgstr ""
+
+msgctxt "info/special/kv4b"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv5"
+msgid "KV-5"
+msgstr ""
+
+msgctxt "info/special/kv5"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/matilda_f96"
+msgid "MK-II"
+msgstr ""
+
+msgctxt "info/special/kv5"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/bm8_24"
+msgid "BM-8-24"
+msgstr ""
+
+msgctxt "info/special/bm8_24"
+msgid "<c(c3baae)>Light Rocket Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/rbt_5"
+msgid "RBT-5"
+msgstr ""
+
+msgctxt "info/special/rbt_5"
+msgid "<c(c3baae)>Light Rocket Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/su14_2"
+msgid "SU-14-1"
+msgstr ""
+
+msgctxt "info/special/su14_2"
+msgid "<c(c3baae)>Self-Propelled Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/t50e"
+msgid "T-50 (Up-Armored)"
+msgstr ""
+
+msgctxt "info/special/t50e"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t70_45"
+msgid "T-70 VT-42"
+msgstr ""
+
+msgctxt "info/special/t70_45"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/zsu_37"
+msgid "ZSU-37"
+msgstr ""
+
+msgctxt "info/special/zsu_37"
+msgid "<c(c3baae)>Light AA Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/zut_37"
+msgid "ZUT-37"
+msgstr ""
+
+msgctxt "info/special/zut_37"
+msgid "<c(c3baae)>Light AA Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/su122_2"
+msgid "SU-122"
+msgstr ""
+
+msgctxt "info/special/su122_2"
+msgid "<c(c3baae)>Self-Propelled Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/t44"
+msgid "T-44"
+msgstr ""
+
+msgctxt "info/special/t44"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t28_40"
+msgid "T-28 M1940"
+msgstr ""
+
+msgctxt "info/special/t28_40"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t28_85"
+msgid "T-28 (F-30)"
+msgstr ""
+
+msgctxt "info/special/t28_85"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t29"
+msgid "T-29"
+msgstr ""
+
+msgctxt "info/special/t29"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t34_100"
+msgid "T-34-100"
+msgstr ""
+
+msgctxt "info/special/t34_100"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t44_122"
+msgid "T-44-122"
+msgstr ""
+
+msgctxt "info/special/t44_122"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ussr_m3_medium"
+msgid "M3 Lee"
+msgstr ""
+
+msgctxt "info/special/ussr_m3_medium"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t18_hmc"
+msgid "T18"
+msgstr ""
+
+msgctxt "info/special/t18_hmc"
+msgid "<c(c3baae)>Self-Propelled Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/t7_combat_car"
+msgid "Combat Car T7"
+msgstr ""
+
+msgctxt "info/special/t7_combat_car"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/us_t55e1"
+msgid "T55E1"
+msgstr ""
+
+msgctxt "info/special/us_t55e1"
+msgid "<c(c3baae)>Gun Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/morser_16"
+msgid "210 H/17"
+msgstr ""
+
+msgctxt "info/special/morser_16"
+msgid "<c(c3baae)>Heavy Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/pak_44"
+msgid "12.8 cm PaK 44"
+msgstr ""
+
+msgctxt "info/special/pak_44"
+msgid "<c(c3baae)>Super-Heavy AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/t8_105mm_at_gun"
+msgid "105mm Gun T8"
+msgstr ""
+
+msgctxt "info/special/t8_105mm_at_gun"
+msgid "<c(c3baae)>Heavy AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/gaz_su12"
+msgid "GAZ-AAA SU-12"
+msgstr ""
+
+msgctxt "info/special/gaz_su12"
+msgid "<c(c3baae)>Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/zsu_29k"
+msgid "YaG-10 (29-K)"
+msgstr ""
+
+msgctxt "info/special/zsu_29k"
+msgid "<c(c3baae)>Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz251_22"
+msgid "Sd.Kfz.251/22"
+msgstr ""
+
+msgctxt "info/special/sdkfz251_22"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz_251_21"
+msgid "Sd.Kfz.251/10"
+msgstr ""
+
+msgctxt "info/special/sdkfz_251_21"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz_251_10"
+msgid "Sd.Kfz.251/21"
+msgstr ""
+
+msgctxt "info/special/sdkfz_251_10"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/sdkfz_251_9"
+msgid "Sd.Kfz.251/9"
+msgstr ""
+
+msgctxt "info/special/sdkfz_251_9"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz2j"
+msgid "Pz.Kpfw. II Ausf. J"
+msgstr ""
+
+msgctxt "info/special/pz2j"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz38tna"
+msgid "Pz.Kpfw. 38 (t) n.A."
+msgstr ""
+
+msgctxt "info/special/pz38tna"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz38tna_b"
+msgid "Pz.Kpfw. 38 (t) n.A."
+msgstr ""
+
+msgctxt "info/special/pz38tna_b"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/flpz_v_coelian"
+msgid "Flakpanzer 341"
+msgstr ""
+
+msgctxt "info/special/flpz_v_coelian"
+msgid "<c(c3baae)>Medium AA Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m1a2_test"
+msgid "M1A2 SEP TUSK I"
+msgstr ""
+
+msgctxt "info/special/m1a2_test"
+msgid "<c(c3baae)>Main Battle Tank</c>"
+msgstr ""
+
+msgctxt "info/special/willys_jeep_shield_rocket"
+msgid "<c(c3baae)>Transport</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_jeep_shield_rocket"
+msgid "Willys MB (Bazooka M1A1)"
+msgstr ""
+
+msgctxt "info/special/vk_3002"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk_3002"
+msgid "VK 3002"
+msgstr ""
+
+msgctxt "info/special/waffletractor"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/waffletractor"
+msgid "Krupp-Steyr Waffenträger"
+msgstr ""
+
+msgctxt "info/special/t_vi_100_ussr"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_vi_100_ussr"
+msgid "T-VI-100"
+msgstr ""
+
+msgctxt "info/special/t_vi_100"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_vi_100"
+msgid "T-VI"
+msgstr ""
+
+msgctxt "info/special/t_v_85"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_v_85"
+msgid "T-V-85"
+msgstr ""
+
+msgctxt "info/special/t_v"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_v"
+msgid "T-V"
+msgstr ""
+
+msgctxt "info/special/t_14_uk"
+msgid "<c(c3baae)>Assault Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_14_uk"
+msgid "T14 (57mm)"
+msgstr ""
+
+msgctxt "info/special/t_14"
+msgid "<c(c3baae)>Assault Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_14"
+msgid "T14 (75mm)"
+msgstr ""
+
+msgctxt "info/special/stormpjas_fm_43"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/stormpjas_fm_43"
+msgid "Spj fm/43-44"
+msgstr ""
+
+msgctxt "info/special/smk_dshk"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/smk_dshk"
+msgid "SMK (12.7mm DShK)"
+msgstr ""
+
+msgctxt "info/special/pbil_m40"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/pbil_m40"
+msgid "Pbil m/40"
+msgstr ""
+
+msgctxt "info/special/lvtdgb_m40"
+msgid "<c(c3baae)>AA Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/lvtdgb_m40"
+msgid "Lvtdgb m/40"
+msgstr ""
+
+msgctxt "info/special/ksp_76"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/ksp_76"
+msgid "KSP-76"
+msgstr ""
+
+msgctxt "info/special/d1"
+msgid "<c(c3baae)>Heavy Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/d1"
+msgid "152mm D1 M1943"
+msgstr ""
+
+msgctxt "info/special/d-44"
+msgid "<c(c3baae)>Heavy AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/d-44"
+msgid "85mm Divisional Gun D-44"
+msgstr ""
+
+msgctxt "info/special/comet"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/comet"
+msgid "Comet I"
+msgstr ""
+
+msgctxt "info/special/88_itk_37"
+msgid "<c(c3baae)>Heavy AA cannon</c>"
+msgstr ""
+
+msgctxt "desc/entity/88_itk_37"
+msgid "88 Itk/37"
+msgstr ""
+
+msgctxt "info/special/37_itk_37"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37_itk_37"
+msgid "37 Itk/37"
+msgstr ""
+
+msgctxt "info/special/300mm_krh42"
+msgid "<c(c3baae)>Super Heavy Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/300mm_krh42"
+msgid "300 Krh/42"
+msgstr ""
+
+msgctxt "info/special/280mm_rakh43"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/280mm_rakh43"
+msgid "280 Rkh/43"
+msgstr ""
+
+msgctxt "info/special/25mm_apx_model38"
+msgid "<c(c3baae)>Light AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/25mm_apx_model38"
+msgid "25 PstK/37"
+msgstr ""
+
+msgctxt "info/special/20_itk_38"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/20_itk_38"
+msgid "20 Itk/38"
+msgstr ""
+
+msgctxt "info/special/20_itk_30"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/20_itk_30"
+msgid "20 Itk/30"
+msgstr ""
+
+msgctxt "info/special/panther_f"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/panther_f"
+msgid "Pz.Kpfw Panther Ausf. F"
+msgstr ""
+
+msgctxt "info/special/sav_m43_1944"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/sav_m43_1944"
+msgid "Sav m/43-44"
+msgstr ""
+
+msgctxt "info/special/sav_m43_1946"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/sav_m43_1946"
+msgid "Sav m/43-46"
+msgstr ""
+
+msgctxt "info/special/37mm_m1915_trench_gun_fin"
+msgid "<c(c3baae)>Trench Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_m1915_trench_gun_fin"
+msgid "37 K/15"
+msgstr ""
+
+msgctxt "info/special/37mm_m1915_trench_gun"
+msgid "<c(c3baae)>Trench Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_m1915_trench_gun"
+msgid "37mm Trench Gun M1915"
+msgstr ""
+
+msgctxt "info/special/char_2c"
+msgid "<c(c3baae)>Super Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/char_2c"
+msgid "Char 2C"
+msgstr ""
+
+msgctxt "info/special/char_2c_armored"
+msgid "<c(c3baae)>Super Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/char_2c_armored"
+msgid "Char 2C 'Field Mod'"
+msgstr ""
+
+msgctxt "info/special/char_2c_bis"
+msgid "<c(c3baae)>Super Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/char_2c_bis"
+msgid "Char 2C Bis"
+msgstr ""
+
+msgctxt "info/special/char_2c_bis_armored"
+msgid "<c(c3baae)>Super Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/char_2c_bis_armored"
+msgid "Char 2C Bis 'Field Mod'"
+msgstr ""
+
+msgctxt "info/special/b1_ter"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/b1_ter"
+msgid "Char B1 Ter"
+msgstr ""
+
+msgctxt "info/special/d2"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/d2"
+msgid "Char D2"
+msgstr ""
+
+msgctxt "info/special/p204_f_fra"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/p204_f_fra"
+msgid "AMD.35"
+msgstr ""
+
+msgctxt "info/special/panzer35s_fra"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/panzer35s_fra"
+msgid "Somua S.35"
+msgstr ""
+
+msgctxt "info/special/pz38h_735_fra"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz38h_735_fra"
+msgid "Hotchkiss H.35"
+msgstr ""
+
+msgctxt "info/special/flammpanzer_b2_fra"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/flammpanzer_b2_fra"
+msgid "Char B1 Bis Flamethrower (Captured)"
+msgstr ""
+
+msgctxt "info/special/panzerb2_fra"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/panzerb2_fra"
+msgid "Char B1 Bis"
+msgstr ""
+
+msgctxt "info/special/arl_44_acl1"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/arl_44_acl1"
+msgid "ARL-44 (ACL-1)"
+msgstr ""
+
+msgctxt "info/special/arl_44"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/arl_44"
+msgid "ARL-44"
+msgstr ""
+
+msgctxt "info/special/amd35_sa35"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/amd35_sa35"
+msgid "AMD.35 (SA35)"
+msgstr ""
+
+msgctxt "info/special/lorraine_37l"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/lorraine_37l"
+msgid "Lorraine 37L (47mm) 'Field Mod'"
+msgstr ""
+
+msgctxt "info/special/amc34_yr"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/amc34_yr"
+msgid "AMC.34 YR"
+msgstr ""
+
+msgctxt "info/special/daf_39"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/daf_39"
+msgid "Pz.SpW. DAF 201(h)"
+msgstr ""
+
+msgctxt "info/special/daf_39_com_old"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/daf_39_com_old"
+msgid "Pz.BfW. DAF 201(h)"
+msgstr ""
+
+msgctxt "info/special/daf_39_com"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/daf_39_com"
+msgid "Pz.BfW. DAF 201(h)"
+msgstr ""
+
+msgctxt "info/special/pbil_m40_ger"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/pbil_m40_ger"
+msgid "Pz.SpW. M39(d)"
+msgstr ""
+
+msgctxt "info/special/pzspwg_204"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/pzspwg_204"
+msgid "Pz.SpW. P204(f) KwK"
+msgstr ""
+
+msgctxt "info/special/isu_152_2"
+msgid "<c(c3baae)>Heavy Assault Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/isu_152_2"
+msgid "ISU-152-2"
+msgstr ""
+
+msgctxt "info/special/t3476_41_stz"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t3476_41_stz"
+msgid "T-34 M1941 (Up-Armored)"
+msgstr ""
+
+msgctxt "info/special/m4a1_t40"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_t40"
+msgid "M4A1 T40 'Whizbang'"
+msgstr ""
+
+msgctxt "info/special/m4a1_m17"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_m17"
+msgid "M4A1 T40 'Whizbang' (4.5-Inch M10)"
+msgstr ""
+
+msgctxt "info/special/solothurn_s18_100"
+msgid "<c(c3baae)>Anti-Tank Cannon</c>"
+msgstr ""
+
+msgctxt "desc/entity/solothurn_s18_100"
+msgid "Solothurn S-18/100"
+msgstr ""
+
+msgctxt "desc/entity/210mm_rakh42"
+msgid "210 Rkh/41"
+msgstr ""
+
+msgctxt "info/special/210mm_rakh42"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_42"
+msgid "T-42 Polutankov"
+msgstr ""
+
+msgctxt "info/special/t_42"
+msgid "<c(c3baae)>Super Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t_26e"
+msgid "T-26 (Up-Armored)"
+msgstr ""
+
+msgctxt "info/special/t_26e"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/t92_hmc"
+msgid "T92 HMC"
+msgstr ""
+
+msgctxt "info/special/t92_hmc"
+msgid "<c(c3baae)>Howitzer Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/t93_hmc"
+msgid "8-inch GMC T93"
+msgstr ""
+
+msgctxt "info/special/t93_hmc"
+msgid "<c(c3baae)>Gun Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/t92_hmc"
+msgid "240mm HMC T92"
+msgstr ""
+
+msgctxt "info/special/t92_hmc"
+msgid "<c(c3baae)>Howitzer Motor Carriage</c>"
+msgstr ""
+
+msgctxt "desc/entity/t44a"
+msgid "T-44A"
+msgstr ""
+
+msgctxt "info/special/t44a"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/stationary_type_92_hmg_short"
+msgid "Type 92 HMG"
+msgstr ""
+
+msgctxt "info/special/stationary_type_92_hmg_short"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_stationary_type_92_hmg_tall"
+msgid "Type 92 HMG"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_stationary_type_92_hmg_tall"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/stationary_type_92_hmg_tall"
+msgid "Type 92 HMG"
+msgstr ""
+
+msgctxt "info/special/stationary_type_92_hmg_tall"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_10_rocket_booster"
+msgid "Type 10 Rocket Booster"
+msgstr ""
+
+msgctxt "info/special/type_10_rocket_booster"
+msgid "<c(c3baae)>Rocket Booster</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_3_rocket_booster"
+msgid "Type 3 Rocket Booster"
+msgstr ""
+
+msgctxt "info/special/type_3_rocket_booster"
+msgid "<c(c3baae)>Rocket Booster</c>"
+msgstr ""
+
+msgctxt "desc/entity/100mm_type99"
+msgid "Type 99 10cm"
+msgstr ""
+
+msgctxt "info/special/100mm_type99"
+msgid "<c(c3baae)>Mountain Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_type_14_aa"
+msgid "Type 14 105mm AA"
+msgstr ""
+
+msgctxt "info/special/105mm_type_14_aa"
+msgid "<c(c3baae)>Heavy AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/20cm_type_4_mortar"
+msgid "Type 4 20cm Rocket Launcher"
+msgstr ""
+
+msgctxt "info/special/20cm_type_4_mortar"
+msgid "<c(c3baae)>Rocket Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_20mm_type_98_aa"
+msgid "Type 98 20mm AA"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_20mm_type_98_aa"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/20mm_type_98_aa"
+msgid "Type 98 20mm AA"
+msgstr ""
+
+msgctxt "info/special/20mm_type_98_aa"
+msgid "<c(c3baae)>Light AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_type1_at_noshield"
+msgid "Type 1 37mm AT"
+msgstr ""
+
+msgctxt "info/special/37mm_type1_at_noshield"
+msgid "<c(c3baae)>Light AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_type94_at_noshield"
+msgid "Type 94 37mm AT"
+msgstr ""
+
+msgctxt "info/special/37mm_type94_at_noshield"
+msgid "<c(c3baae)>Light AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_type1_at"
+msgid "Type 1 37mm AT"
+msgstr ""
+
+msgctxt "info/special/37mm_type1_at"
+msgid "<c(c3baae)>Light AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_type94_at"
+msgid "Type 94 37mm AT"
+msgstr ""
+
+msgctxt "info/special/37mm_type94_at"
+msgid "<c(c3baae)>Light AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/47mm_type1_at_noshield"
+msgid "Type 1 47mm AT"
+msgstr ""
+
+msgctxt "info/special/47mm_type1_at_noshield"
+msgid "<c(c3baae)>Medium AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/47mm_type1_at"
+msgid "Type 1 47mm AT"
+msgstr ""
+
+msgctxt "info/special/47mm_type1_at"
+msgid "<c(c3baae)>Medium AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/45cm_japan_rocket"
+msgid "Type 5 45cm Rocket"
+msgstr ""
+
+msgctxt "info/special/45cm_japan_rocket"
+msgid "<c(c3baae)>Rocket Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_type_88_aa"
+msgid "Type 88 75mm AA"
+msgstr ""
+
+msgctxt "info/special/75mm_type_88_aa"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_stationary_type_93_hmg"
+msgid "Type 93 HMG"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_stationary_type_93_hmg"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/stationary_type_93_hmg"
+msgid "Type 93 HMG"
+msgstr ""
+
+msgctxt "info/special/stationary_type_93_hmg"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_97_at_rifle"
+msgid "Type 97 AT Rifle"
+msgstr ""
+
+msgctxt "info/special/type_97_at_rifle"
+msgid "<c(c3baae)>AT Rifle</c>"
+msgstr ""
+
+msgctxt "desc/entity/inf_crate_jap"
+msgid "Japanese Ammo Crate"
+msgstr ""
+
+msgctxt "info/special/inf_crate_jap"
+msgid "<c(c3baae)>Supply</c>"
+msgstr ""
+
+msgctxt "desc/entity/inf_crate_jap"
+msgid "Japanese Ammo Crate"
+msgstr ""
+
+msgctxt "info/special/inf_crate_jap"
+msgid "<c(c3baae)>Supply</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ri_prototype"
+msgid "Type 5 Ho-Ri"
+msgstr ""
+
+msgctxt "info/special/ho_ri_prototype"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ri_production"
+msgid "Type 5 Ho-Ri (late)"
+msgstr ""
+
+msgctxt "info/special/ho_ri_production"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/te_ke"
+msgid "Type 97 Te-Ke"
+msgstr ""
+
+msgctxt "info/special/te_ke"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/te_ke_mg"
+msgid "Type 97 Te-Ke MG"
+msgstr ""
+
+msgctxt "info/special/te_ke_mg"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/te_ke_mg_prototype"
+msgid "Type 97 Te-Ke MG (Prototype)"
+msgstr ""
+
+msgctxt "info/special/te_ke_mg_prototype"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ro"
+msgid "Type 4 Ho-Ro"
+msgstr ""
+
+msgctxt "info/special/ho_ro"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_ho"
+msgid "Type 3 Ka-Ho"
+msgstr ""
+
+msgctxt "info/special/ka_ho"
+msgid "<c(c3baae)>Flame Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ke_ni"
+msgid "Type 98 Ke-Ni (Prototype)"
+msgstr ""
+
+msgctxt "info/special/ke_ni"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/so_ki"
+msgid "Type 98 So-Ki"
+msgstr ""
+
+msgctxt "info/special/so_ki"
+msgid "<c(c3baae)>Light AA Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ta_se"
+msgid "Type 98 Ta-Se"
+msgstr ""
+
+msgctxt "info/special/ta_se"
+msgid "<c(c3baae)>Light AA Tank</c>"
+msgstr ""
+
+msgctxt "info/special/chi_yu"
+msgid "<c(c3baae)>Flail Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_yu"
+msgid "Type 97 Chi-Yu"
+msgstr ""
+
+msgctxt "desc/entity/shi_ki"
+msgid "Type 97 Shi-Ki"
+msgstr ""
+
+msgctxt "info/special/shi_ki"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha"
+msgid "Type 97 Chi-Ha"
+msgstr ""
+
+msgctxt "info/special/chi_ha"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_late"
+msgid "Type 97 Chi-Ha (Late)"
+msgstr ""
+
+msgctxt "info/special/chi_ha_late"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_bamboo"
+msgid "Type 97 Chi-Ha"
+msgstr ""
+
+msgctxt "info/special/chi_ha_bamboo"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_late_bamboo"
+msgid "Type 97 Chi-Ha (Late)"
+msgstr ""
+
+msgctxt "info/special/chi_ha_late_bamboo"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_ijn"
+msgid "Type 97 Chi-Ha"
+msgstr ""
+
+msgctxt "info/special/chi_ha_ijn"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_late_ijn"
+msgid "Type 97 Chi-Ha (Late)"
+msgstr ""
+
+msgctxt "info/special/chi_ha_late_ijn"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai_ijn"
+msgid "Type 97 Chi-Ha Kai"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai_ijn"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai_ijn_late"
+msgid "Type 97 Chi-Ha Kai"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai_ijn_late"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai"
+msgid "Type 97 Chi-Ha Kai"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai_bamboo"
+msgid "Type 97 Chi-Ha Kai"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai_bamboo"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai_late_ijn"
+msgid "Type 97 Chi-Ha Kai (Late)"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai_late_ijn"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai_late"
+msgid "Type 97 Chi-Ha Kai (Late)"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai_late"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_kai_late_bamboo"
+msgid "Type 97 Chi-Ha Kai (Late)"
+msgstr ""
+
+msgctxt "info/special/chi_ha_kai_late_bamboo"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_chi_without"
+msgid "Type 3 Ka-Chi"
+msgstr ""
+
+msgctxt "info/special/ka_chi_without"
+msgid "<c(c3baae)>Amphibious Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_chi_pontoons"
+msgid "Type 3 Ka-Chi"
+msgstr ""
+
+msgctxt "info/special/ka_chi_pontoons"
+msgid "<c(c3baae)>Amphibious Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_mi"
+msgid "Type 2 Ka-Mi"
+msgstr ""
+
+msgctxt "info/special/ka_mi"
+msgid "<c(c3baae)>Amphibious Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_mi_pontoon"
+msgid "Type 2 Ka-Mi"
+msgstr ""
+
+msgctxt "info/special/ka_mi_pontoon"
+msgid "<c(c3baae)>Amphibious Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_mi_mid"
+msgid "Type 2 Ka-Mi"
+msgstr ""
+
+msgctxt "info/special/ka_mi_mid"
+msgid "<c(c3baae)>Amphibious Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ka_mi_pontoon_mid"
+msgid "Type 2 Ka-Mi"
+msgstr ""
+
+msgctxt "info/special/ka_mi_pontoon_mid"
+msgid "<c(c3baae)>Amphibious Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_lg"
+msgid "Type 97 Chi-Ha Long Gun"
+msgstr ""
+
+msgctxt "info/special/chi_ha_lg"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ha_sg"
+msgid "Type 97 Chi-Ha Short Gun"
+msgstr ""
+
+msgctxt "info/special/chi_ha_sg"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_he"
+msgid "Type 1 Chi-He"
+msgstr ""
+
+msgctxt "info/special/chi_he"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_nu"
+msgid "Type 3 Chi-Nu"
+msgstr ""
+
+msgctxt "info/special/chi_nu"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_nu2"
+msgid "Type 3 Chi-Nu II"
+msgstr ""
+
+msgctxt "info/special/chi_nu2"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_nu_kai"
+msgid "Type 3 Chi-Nu Kai"
+msgstr ""
+
+msgctxt "info/special/chi_nu_kai"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_i"
+msgid "Type 2 Ho-I"
+msgstr ""
+
+msgctxt "info/special/ho_i"
+msgid "<c(c3baae)>Infanty Support Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_i"
+msgid "Type 2 Ho-I"
+msgstr ""
+
+msgctxt "info/special/ho_i"
+msgid "<c(c3baae)>Infanty Support Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_type_94_mortar"
+msgid "Type 94 (150mm Mortar)"
+msgstr ""
+
+msgctxt "info/special/150mm_type_94_mortar"
+msgid "<c(c3baae)>Mortar Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_aa"
+msgid "Type 94 (AA)"
+msgstr ""
+
+msgctxt "info/special/type_94_aa"
+msgid "<c(c3baae)>AA Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_ammo"
+msgid "Type 94 (Supply)"
+msgstr ""
+
+msgctxt "info/special/type_94_ammo"
+msgid "<c(c3baae)>Supply</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_eng"
+msgid "Type 94 (Engineer)"
+msgstr ""
+
+msgctxt "info/special/type_94_eng"
+msgid "<c(c3baae)>Engineering Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_fuel"
+msgid "Type 94 (Fuel)"
+msgstr ""
+
+msgctxt "info/special/type_94_fuel"
+msgid "<c(c3baae)>Fuel Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_rocket"
+msgid "Type 94 (Rocket)"
+msgstr ""
+
+msgctxt "info/special/type_94_rocket"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_transport"
+msgid "Type 94 (Transport)"
+msgstr ""
+
+msgctxt "info/special/type_94_transport"
+msgid "<c(c3baae)>Transport Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/70mm_type92_early"
+msgid "Type 92 70mm Battalion Gun"
+msgstr ""
+
+msgctxt "info/special/70mm_type92_early"
+msgid "<c(c3baae)>Battalion Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/70mm_type92_late"
+msgid "Type 92 70mm Battalion Gun (Late)"
+msgstr ""
+
+msgctxt "info/special/70mm_type92_late"
+msgid "<c(c3baae)>Battalion Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ha_go"
+msgid "Type 95 Ha-Go"
+msgstr ""
+
+msgctxt "info/special/ha_go"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ha_go_flamm"
+msgid "Type 95 Ha-Go (Flamethrower)"
+msgstr ""
+
+msgctxt "info/special/ha_go_flamm"
+msgid "<c(c3baae)>Flame Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ha_go_ijn"
+msgid "Type 95 Ha-Go"
+msgstr ""
+
+msgctxt "info/special/ha_go_ijn"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ha_go_late_ijn"
+msgid "Type 95 Ha-Go (Late)"
+msgstr ""
+
+msgctxt "info/special/ha_go_late_ijn"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ha_go_late"
+msgid "Type 95 Ha-Go (Late)"
+msgstr ""
+
+msgctxt "info/special/ha_go_late"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/o_i"
+msgid "O-I (105mm)"
+msgstr ""
+
+msgctxt "info/special/o_i"
+msgid "<c(c3baae)>Super-Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/o_i_150"
+msgid "O-I"
+msgstr ""
+
+msgctxt "info/special/o_i_150"
+msgid "<c(c3baae)>Super-Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_95_car_open"
+msgid "Type 95 'Kurogane'"
+msgstr ""
+
+msgctxt "info/special/type_95_car_open"
+msgid "<c(c3baae)>Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_95_car_close"
+msgid "Type 95 'Kurogane'"
+msgstr ""
+
+msgctxt "info/special/type_95_car_close"
+msgid "<c(c3baae)>Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_97_motorcycle_late"
+msgid "Type 97 Motorcycle"
+msgstr ""
+
+msgctxt "info/special/type_97_motorcycle_late"
+msgid "<c(c3baae)>Motorcycle</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_97_motorcycle_shield_late"
+msgid "Type 97 Motorcycle"
+msgstr ""
+
+msgctxt "info/special/type_97_motorcycle_shield_late"
+msgid "<c(c3baae)>Motorcycle</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_97_motorcycle"
+msgid "Type 97 Motorcycle"
+msgstr ""
+
+msgctxt "info/special/type_97_motorcycle"
+msgid "<c(c3baae)>Motorcycle</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_97_motorcycle_shield"
+msgid "Type 97 Motorcycle"
+msgstr ""
+
+msgctxt "info/special/type_97_motorcycle_shield"
+msgid "<c(c3baae)>Motorcycle</c>"
+msgstr ""
+
+msgctxt "desc/entity/100mm_type91"
+msgid "Type 91 10cm"
+msgstr ""
+
+msgctxt "info/special/100mm_type91"
+msgid "<c(c3baae)>Medium Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/120mm_type2_mortar"
+msgid "Type 2 120mm Mortar"
+msgstr ""
+
+msgctxt "info/special/120mm_type2_mortar"
+msgid "<c(c3baae)>Medium Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/120mm_type2_mortar"
+msgid "Type 2 120mm Mortar"
+msgstr ""
+
+msgctxt "info/special/120mm_type2_mortar"
+msgid "<c(c3baae)>Medium Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_type97_mortar_long"
+msgid "Type 97 150mm Mortar (Long)"
+msgstr ""
+
+msgctxt "info/special/150mm_type97_mortar_long"
+msgid "<c(c3baae)>Heavy Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_type97_mortar_short"
+msgid "Type 97 150mm Mortar (Short)"
+msgstr ""
+
+msgctxt "info/special/150mm_type97_mortar_short"
+msgid "<c(c3baae)>Heavy Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_type_96"
+msgid "Type 96 15cm"
+msgstr ""
+
+msgctxt "info/special/150mm_type_96"
+msgid "<c(c3baae)>Heavy Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/70mm_type11_mortar"
+msgid "Type 11 70mm Mortar"
+msgstr ""
+
+msgctxt "info/special/70mm_type11_mortar"
+msgid "<c(c3baae)>Light Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/81mm_type97_mortar"
+msgid "Type 97 81mm Mortar"
+msgstr ""
+
+msgctxt "info/special/81mm_type97_mortar"
+msgid "<c(c3baae)>Light Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/90mm_type97_mortar"
+msgid "Type 97 90mm Mortar"
+msgstr ""
+
+msgctxt "info/special/90mm_type97_mortar"
+msgid "<c(c3baae)>Light Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ri_2_aa"
+msgid "Type 5 Ho-Ri II"
+msgstr ""
+
+msgctxt "info/special/ho_ri_2_aa"
+msgid "<c(c3baae)>Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/entity/ke_nu"
+msgid "Type 95 Ha-Go (57mm)"
+msgstr ""
+
+msgctxt "info/special/ke_nu"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_92_10cm"
+msgid "Type 92 10cm"
+msgstr ""
+
+msgctxt "info/special/type_92_10cm"
+msgid "<c(c3baae)>Medium Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/ro_go_early"
+msgid "Type 95 Ro-Go"
+msgstr ""
+
+msgctxt "info/special/ro_go_early"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ro_go_late"
+msgid "Type 95 Ro-Go (Late)"
+msgstr ""
+
+msgctxt "info/special/ro_go_late"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/tiger1e_jap"
+msgid "Heavy Tank No.6"
+msgstr ""
+
+msgctxt "info/special/tiger1e_jap"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_type_4_recoilless"
+msgid "Type 4 105mm Recoilless Rifle"
+msgstr ""
+
+msgctxt "info/special/105mm_type_4_recoilless"
+msgid "<c(c3baae)>Recoilless Rifle</c>"
+msgstr ""
+
+msgctxt "desc/entity/ro_go_exp"
+msgid "Ro-Go Exp. (12cm)"
+msgstr ""
+
+msgctxt "info/special/ro_go_exp"
+msgid "<c(c3baae)>SPAG</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_to"
+msgid "Type 4 Chi-To"
+msgstr ""
+
+msgctxt "info/special/chi_to"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/is_4_100"
+msgid "IS-4 (Prototype)"
+msgstr ""
+
+msgctxt "info/special/is_4_100"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/overvalwagen_gun"
+msgid "Overvalwagen (Marine Versie)"
+msgstr ""
+
+msgctxt "info/special/overvalwagen_gun"
+msgid "<c(c3baae)>APC</c>"
+msgstr ""
+
+msgctxt "desc/entity/overvalwagen_aa"
+msgid "Overvalwagen (Luchtverdediging Versie)"
+msgstr ""
+
+msgctxt "info/special/overvalwagen_aa"
+msgid "<c(c3baae)>APC</c>"
+msgstr ""
+
+msgctxt "desc/entity/overvalwagen_apc"
+msgid "Overvalwagen"
+msgstr ""
+
+msgctxt "info/special/overvalwagen_apc"
+msgid "<c(c3baae)>APC</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_ri_2"
+msgid "Type 5 Chi-Ri II"
+msgstr ""
+
+msgctxt "info/special/chi_ri_2"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_se"
+msgid "Type 6 Chi-Se"
+msgstr ""
+
+msgctxt "info/special/chi_se"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_to"
+msgid "Type 4 Ho-To"
+msgstr ""
+
+msgctxt "info/special/ho_to"
+msgid "<c(c3baae)>SPG</c>"
+msgstr ""
+
+msgctxt "desc/entity/na_to"
+msgid "Type 5 Na-To"
+msgstr ""
+
+msgctxt "info/special/na_to"
+msgid "<c(c3baae)>Self-Propelled Anti-Tank Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_type_90"
+msgid "Type 90 75mm"
+msgstr ""
+
+msgctxt "info/special/75mm_type_90"
+msgid "<c(c3baae)>Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_type_38_fin"
+msgid "150mm H/14j"
+msgstr ""
+
+msgctxt "info/special/105mm_type_38_fin"
+msgid "<c(c3baae)>Heavy Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_type_38_jap"
+msgid "Type 38 150mm"
+msgstr ""
+
+msgctxt "info/special/105mm_type_38_jap"
+msgid "<c(c3baae)>Heavy Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/ha_to"
+msgid "Type 4 Ha-To"
+msgstr ""
+
+msgctxt "info/special/ha_to"
+msgid "<c(c3baae)>Self-Propelled Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/na_to"
+msgid "Type 5 Na-To"
+msgstr ""
+
+msgctxt "info/special/na_to"
+msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ni_i"
+msgid "Type 1 Ho-Ni-I"
+msgstr ""
+
+msgctxt "info/special/ho_ni_ii"
+msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ni_ii"
+msgid "Type 1 Ho-Ni-II"
+msgstr ""
+
+msgctxt "info/special/ho_ni_iii"
+msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ni_iii"
+msgid "Type 3 Ho-Ni-III"
+msgstr ""
+
+msgctxt "info/special/ho_ni_i"
+msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/chi_so"
+msgid "Type 4 Chi-So"
+msgstr ""
+
+msgctxt "info/special/chi_so"
+msgid "<c(c3baae)>APC</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_92_hac_early"
+msgid "Type 92 Jyu-Sokosha"
+msgstr ""
+
+msgctxt "info/special/type_92_hac_early"
+msgid "<c(c3baae)>HAC</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_92_hac_late"
+msgid "Type 92 Jyu-Sokosha (Late)"
+msgstr ""
+
+msgctxt "info/special/type_92_hac_late"
+msgid "<c(c3baae)>HAC</c>"
+msgstr ""
+
+msgctxt "desc/entity/to_ku_pontoons"
+msgid "Type 5 To-Ku"
+msgstr ""
+
+msgctxt "info/special/to_ku_pontoons"
+msgid "<c(c3baae)>Amphibious Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/to_ku"
+msgid "Type 5 To-Ku"
+msgstr ""
+
+msgctxt "info/special/to_ku"
+msgid "<c(c3baae)>Amphibious Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/15cm_type_89"
+msgid "Type 89 15cm"
+msgstr ""
+
+msgctxt "info/special/15cm_type_89"
+msgid "<c(c3baae)>Heavy Artillery</c>"
+msgstr ""
+
+msgctxt "desc/entity/25mm_type_96"
+msgid "Type 96 25mm AA"
+msgstr ""
+
+msgctxt "desc/entity/25mm_type_96_early"
+msgid "Type 96 25mm AA"
+msgstr ""
+
+msgctxt "info/special/25mm_type_96_early"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "info/special/25mm_type_96"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/25mm_type_96_mid"
+msgid "Type 96 25mm AA"
+msgstr ""
+
+msgctxt "info/special/25mm_type_96_mid"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/kikka"
+msgid "Nakajima Kikka"
+msgstr ""
+
+msgctxt "info/special/kikka"
+msgid "<c(c3baae)>Turbojet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/kikka2"
+msgid "Nakajima Kikka"
+msgstr ""
+
+msgctxt "info/special/kikka2"
+msgid "<c(c3baae)>Turbojet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/kikka2_800kg"
+msgid "Nakajima Kikka"
+msgstr ""
+
+msgctxt "info/special/kikka2_800kg"
+msgid "<c(c3baae)>Turbojet-Powered Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/ho_ha"
+msgid "Type 1 Ho-Ha"
+msgstr ""
+
+msgctxt "info/special/ho_ha"
+msgid "<c(c3baae)>APC</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_type_38"
+msgid "Type 38 75mm"
+msgstr ""
+
+msgctxt "info/special/75mm_type_38"
+msgid "<c(c3baae)>Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_type_38_late"
+msgid "Type 38 75mm (Late)"
+msgstr ""
+
+msgctxt "info/special/75mm_type_38_late"
+msgid "<c(c3baae)>Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_type_38_kai"
+msgid "Type 38 75mm Improved (Late)"
+msgstr ""
+
+msgctxt "info/special/75mm_type_38_kai"
+msgid "<c(c3baae)>Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_type_38_kai_mid"
+msgid "Type 38 75mm Improved"
+msgstr ""
+
+msgctxt "info/special/75mm_type_38_kai_mid"
+msgid "<c(c3baae)>Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/so_da"
+msgid "Type 98 So-Da"
+msgstr ""
+
+msgctxt "info/special/so_da"
+msgid "<c(c3baae)>Artillery Tractor</c>"
+msgstr ""
+
+msgctxt "desc/entity/so_da_ammo"
+msgid "Type 98 So-Da (Ammo)"
+msgstr ""
+
+msgctxt "info/special/so_da_ammo"
+msgid "<c(c3baae)>Ammunition Carrier</c>"
+msgstr ""
+
+msgctxt "desc/entity/150mm_sfh18_jap"
+msgid "15cm sFH 18"
+msgstr ""
+
+msgctxt "info/special/150mm_sfh18_jap"
+msgid "<c(c3baae)>Heavy Field Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2_halftrack_jap"
+msgid "M2 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m2_halftrack_jap"
+msgid "<c(c3baae)>Halftrack</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_gmc_jap"
+msgid "75mm GMC M3"
+msgstr ""
+
+msgctxt "info/special/m3_gmc_jap"
+msgid "<c(c3baae)>Self-propelled Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_stuart_jap"
+msgid "M3 Stuart (Early)"
+msgstr ""
+
+msgctxt "info/special/m3_stuart_jap"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/ss_ki"
+msgid "Soukou Sagyou Ki"
+msgstr ""
+
+msgctxt "info/special/ss_ki"
+msgid "<c(c3baae)>Engineering Vehicle</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_m_37_jap"
+msgid "Type 4 75mm"
+msgstr ""
+
+msgctxt "info/special/75mm_m_37_jap"
+msgid "<c(c3baae)>Medium AA Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/i_go_late_ijn"
+msgid "Type 89 I-Go (Late)"
+msgstr ""
+
+msgctxt "info/special/i_go_late_ijn"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/i_go_late"
+msgid "Type 89 I-Go (Late)"
+msgstr ""
+
+msgctxt "info/special/i_go_late"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/i_go"
+msgid "Type 89 I-Go"
+msgstr ""
+
+msgctxt "info/special/i_go"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/i_go_ijn"
+msgid "Type 89 I-Go"
+msgstr ""
+
+msgctxt "info/special/i_go_ijn"
+msgid "<c(c3baae)>Medium Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/120mm_type_38_early"
+msgid "Type 38 120mm"
+msgstr ""
+
+msgctxt "info/special/120mm_type_38_early"
+msgid "<c(c3baae)>Heavy Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/120mm_type_38_late"
+msgid "Type 38 120mm"
+msgstr ""
+
+msgctxt "info/special/120mm_type_38_late"
+msgid "<c(c3baae)>Heavy Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_type_11"
+msgid "Type 11 37mm"
+msgstr ""
+
+msgctxt "info/special/37mm_type_11"
+msgid "<c(c3baae)>Infantry Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ki_46_II"
+msgid "Ki 46 II Recon"
+msgstr ""
+
+msgctxt "info/special/ki_46_II"
+msgid "<c(c3baae)>Recon Plane</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_93_kokusan"
+msgid "Type 93 Kokusan"
+msgstr ""
+
+msgctxt "info/special/type_93_kokusan"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/swe_12cm_bofors"
+msgid "12cm Kanon M/24 L/50"
+msgstr ""
+
+msgctxt "info/special/swe_12cm_bofors"
+msgid "<c(c3baae)>Heavy Field Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/ford_3ton_itk40"
+msgid "Ford 3-Ton 20 ItK/40 Breda"
+msgstr ""
+
+msgctxt "info/special/ford_3ton_itk40"
+msgid "<c(c3baae)>Truck</c>"
+msgstr ""
+
+msgctxt "desc/entity/t60_fin"
+msgid "T-60 M1941"
+msgstr ""
+
+msgctxt "info/special/t60_fin"
+msgid "<c(c3baae)>Light Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_tk_mg_early"
+msgid "Type 94 TK MG (early)"
+msgstr ""
+
+msgctxt "info/special/type_94_tk_mg_early"
+msgid "<c(c3baae)>Tankette</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_tk_mg_late"
+msgid "Type 94 TK MG (Late)"
+msgstr ""
+
+msgctxt "info/special/type_94_tk_mg_late"
+msgid "<c(c3baae)>Tankette</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_tk_late"
+msgid "Type 94 TK (late)"
+msgstr ""
+
+msgctxt "info/special/type_94_tk_late"
+msgid "<c(c3baae)>Tankette</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_tk_trailer_gas"
+msgid "Type 94 Trailer (Mustard Gas)"
+msgstr ""
+
+msgctxt "info/special/type_94_tk_trailer_gas"
+msgid "<c(c3baae)>Gas Trailer</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_94_tk_trailer"
+msgid "Ammo Trailer"
+msgstr ""
+
+msgctxt "info/special/type_94_tk_trailer"
+msgid "<c(c3baae)>Ammo Trailer</c>"
+msgstr ""
+
+msgctxt "info/special/155mm_t25_mortar"
+msgid "<c(c3baae)>Heavy Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_t25_mortar"
+msgid "155mm T25 Mortar"
+msgstr ""
+
+msgctxt "info/special/160mm_mt_13_mortar"
+msgid "<c(c3baae)>Heavy Mortar</c>"
+msgstr ""
+
+msgctxt "desc/entity/160mm_mt_13_mortar"
+msgid "160mm MT-13 Mortar"
+msgstr ""
+
+msgctxt "desc/entity/mg131_tripod"
+msgid "MG 131 Tripod"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_mg131_tripod"
+msgid "MG 131 Tripod"
+msgstr ""
+
+msgctxt "info/special/mg131_tripod"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_mg131_tripod"
+msgid "<c(c3baae)>Heavy Machine Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/strumpanzer5g"
+msgid "Sturmpanther (15cm)"
+msgstr ""
+
+msgctxt "info/special/strumpanzer5g"
+msgid "<c(c3baae)>Heavy Assault Gun</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4_90"
+msgid "M4 (90)"
+msgstr ""
+
+msgctxt "info/special/m4_90"
+msgid "<c(c3baae)>Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/entity/a6m3_60kg"
+msgid "A6M3"
+msgstr ""
+
+msgctxt "info/special/a6m3_60kg"
+msgid "<c(c3baae)>Fighter Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/a6m3_rockets"
+msgid "A6M3"
+msgstr ""
+
+msgctxt "info/special/a6m3_rockets"
+msgid "<c(c3baae)>Fighter Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/a6m3_rockets_ai"
+msgid "A6M3"
+msgstr ""
+
+msgctxt "info/special/a6m3_rockets_ai"
+msgid "<c(c3baae)>Fighter Aircraft</c>"
+msgstr ""
+
+msgctxt "desc/entity/b5n2_60x6kg"
+msgid "B5N2"
+msgstr ""
+
+msgctxt "info/special/b5n2_60x6kg"
+msgid "<c(c3baae)>High-Level Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/b5n2_250kg"
+msgid "B5N2"
+msgstr ""
+
+msgctxt "info/special/b5n2_250kg"
+msgid "<c(c3baae)>High-Level Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/b5n2_800kg"
+msgid "B5N2"
+msgstr ""
+
+msgctxt "info/special/b5n2_800kg"
+msgid "<c(c3baae)>High-Level Bomber</c>"
+msgstr ""
+
+msgctxt "desc/entity/120mm_k78_31_late_def"
+msgid "120 K/78-31"
+msgstr ""
+
+msgctxt "info/special/120mm_k78_31_late_def"
+msgid "<c(c3baae)>Medium Field Howitzer</c>"
+msgstr ""
+
+msgctxt "desc/entity/humber_scout_command"
+msgid "Humber Scout Mk.II (Command)"
+msgstr ""
+
+msgctxt "info/special/humber_command"
+msgid "<c(c3baae)>Scout Car</c>"
+msgstr ""
+
+msgctxt "desc/entity/northover_projector"
+msgid "Northover Projector"
+msgstr ""
+
+msgctxt "info/special/northover_projector"
+msgid "<c(c3baae)>Grenade Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_northover_projector"
+msgid "Northover Projector"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_northover_projector"
+msgid "<c(c3baae)>Grenade Launcher</c>"
+msgstr ""
+
+msgctxt "desc/entity/ba20_command_fin"
+msgid "BA-20 (Command)"
+msgstr ""
+
+msgctxt "info/special/ba20_command_fin"
+msgid "<c(c3baae)>Armored Car</c>"
+msgstr ""

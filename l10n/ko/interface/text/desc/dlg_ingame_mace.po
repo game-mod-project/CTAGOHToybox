@@ -1,0 +1,195 @@
+# source: mod_2905667604 interface/text/desc/dlg_ingame_mace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms - Gates of Hell: Ostfront (dlg_ingame)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "actionbar/littledavid"
+msgid "Place 36-inch Little David"
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon1"
+msgid "Place Down Type 99 Smoke Candle"
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon1/usage"
+msgid "After clicking this button, click and drag on the map to define the position for placing down the smoke grenade."
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon2"
+msgid "Place Down 10kg Smoke Candle"
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon2/usage"
+msgid "After clicking this button, click and drag on the map to define the position for placing down the smoke grenade."
+msgstr ""
+
+msgctxt "actionbar/littledavid/usage"
+msgid "After clicking this button, click and drag on the map to define the position for building a coastal gun emplacement. Upgrade by clicking on concrete pad again with engineers, <c(F44336)>REMEMBER the gun cannot turn</c>"
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_normal"
+msgid "Switch to AP/HE"
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_normal/usage"
+msgid "Click this button to switch between firing modes: Fire Only AP/HE."
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_heat"
+msgid "Switch to HEAT"
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_heat/usage"
+msgid "Click this button to switch between firing modes: Fire Only HEAT."
+msgstr ""
+
+msgctxt "actionbar/smine_decoy"
+msgid "S-Mine Screen"
+msgstr ""
+
+msgctxt "actionbar/toggle_back_mg"
+msgid "Enable/Disable Side/Back MG"
+msgstr ""
+
+msgctxt "actionbar/toggle_back_mg/usage"
+msgid "Click this button to enable or disable the Side/Back mg's"
+msgstr ""
+
+msgctxt "main_menu2/dynamic_campaign/region_hint_Ostfront_Talvisota_West"
+msgid "Ostfront Maps + Talsivota Maps + Western Europe - (All Maps)"
+msgstr ""
+
+msgctxt "actionbar/jap_type21_buildable"
+msgid "Place Rocket Pod emplacement"
+msgstr ""
+
+msgctxt "actionbar/jap_type21_buildable/usage"
+msgid "After clicking this button, click and drag on the map to define the position for the field cannon. Remember that it is static, cannot move and has min and max range."
+msgstr ""
+
+msgctxt "actionbar/swe_gun_buildable/action"
+msgid "Place Rocket Pod emplacement"
+msgstr ""
+
+msgctxt "actionbar/jap_type21_buildable"
+msgid "Place Field Gun emplacement"
+msgstr ""
+
+msgctxt "actionbar/swe_gun_buildable/usage"
+msgid "After clicking this button, click and drag on the map to define the position for the field cannon. Remember that it is static and cannot move."
+msgstr ""
+
+msgctxt "actionbar/swe_gun_buildable/action"
+msgid "Place field gun emplacement"
+msgstr ""
+
+msgctxt "mp/presets/unit/mace"
+msgid "Sandbox MACE (WIP)"
+msgstr ""
+
+msgctxt "mp/army/mace_test"
+msgid "[MACE] Testing (WIP Stuff)"
+msgstr ""
+
+msgctxt "mp/army/test"
+msgid "[MACE] Testing (WIP Stuff)"
+msgstr ""
+
+msgctxt "mp/alliance/jap"
+msgid "Japan"
+msgstr ""
+
+msgctxt "mp/army/jap"
+msgid "Japan"
+msgstr ""
+
+msgctxt "mp/army/+france"
+msgid "[MACE] France"
+msgstr ""
+
+msgctxt "mp/army/+finland"
+msgid "[MACE] Finland"
+msgstr ""
+
+msgctxt "mp/army/+germany"
+msgid "[MACE] Germany"
+msgstr ""
+
+msgctxt "mp/army/jap_late"
+msgid "[MACE] Japan (Late War)"
+msgstr ""
+
+msgctxt "mp/army/+japan"
+msgid "[MACE] Japan"
+msgstr ""
+
+msgctxt "mp/army/+swe"
+msgid "[MACE] Sweden"
+msgstr ""
+
+msgctxt "mp/army/+usa"
+msgid "[MACE] USA"
+msgstr ""
+
+msgctxt "mp/army/+ussr"
+msgid "[MACE] USSR"
+msgstr ""
+
+msgctxt "mp/army/fra"
+msgid "[MACE] France"
+msgstr ""
+
+msgctxt "mp/army/fra_early"
+msgid "[MACE] France (Early War)"
+msgstr ""
+
+msgctxt "mp/army/fra_mid"
+msgid "[MACE] France (Mid War)"
+msgstr ""
+
+msgctxt "mp/army/small_arms_test"
+msgid "[MACE] Test Firearms (WIP Stuff)"
+msgstr ""
+
+msgctxt "actionbar/recovery"
+msgid "Repair Near Vehicles"
+msgstr ""
+
+msgctxt "actionbar/recovery/usage"
+msgid "Click this button to use the repair tool and start repairs within a limited radius. <c(F44336)>Remember! Both the recovery vehicle and the vehicle being repaired will be unable to move for 40 seconds. This action cannot be cancelled.</c>"
+msgstr ""
+
+msgctxt "actionbar/deploy_gas"
+msgid "Deploy Mustard Gas"
+msgstr ""
+
+msgctxt "actionbar/deploy_gas/usage"
+msgid "Click this button to deploy <c(18AB31)>Mustard Gas</c> from the trailer to the surrounding area."
+msgstr ""
+
+msgctxt "actionbar/detonate_wanze_charge"
+msgid "Detonate the Charge!"
+msgstr ""
+
+msgctxt "actionbar/detonate_wanze_charge/usage"
+msgid "Click this button to detonate the wanze charge, alternatively you can DC and press the fire key."
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_jap"
+msgid "Skip preparation phase"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_jap"
+msgid "Move Deployment Point"
+msgstr ""

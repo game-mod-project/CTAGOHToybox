@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_jap2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/single_tankman_ace_jap"
+msgid "Elite Tank Crew"
+msgstr ""
+
+msgctxt "info/special/single_tankman_ace_jap"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_shikon_fury"
+msgid "Sensha 11th Regiment (Shikon)"
+msgstr ""
+
+msgctxt "info/special/jap_kg_shikon_fury"
+msgid "<c(c3baae)>Ace Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_banzai_charge"
+msgid "Banzai Assault Group"
+msgstr ""
+
+msgctxt "info/special/jap_kg_banzai_charge"
+msgid "<c(c3baae)>Light Assault & Inf</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_chi_ha_platoon"
+msgid "Type 97 Chi-Ha Platoon"
+msgstr ""
+
+msgctxt "info/special/jap_kg_chi_ha_platoon"
+msgid "<c(c3baae)>Medium Armor Platoon</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_chi_ha_kai_platoon"
+msgid "Type 97 Chi-Ha Kai Platoon"
+msgstr ""
+
+msgctxt "info/special/jap_kg_chi_ha_kai_platoon"
+msgid "<c(c3baae)>Medium Armor Platoon</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_chi_he_vanguard"
+msgid "Type 1 Chi-He Vanguard"
+msgstr ""
+
+msgctxt "info/special/jap_kg_chi_he_vanguard"
+msgid "<c(c3baae)>Advanced Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_ho_ni_battery"
+msgid "Type 1 Ho-Ni Battery"
+msgstr ""
+
+msgctxt "info/special/jap_kg_ho_ni_battery"
+msgid "<c(c3baae)>Self-Propelled Gun</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_ho_ro_assault"
+msgid "Type 4 Ho-Ro Assault Group"
+msgstr ""
+
+msgctxt "info/special/jap_kg_ho_ro_assault"
+msgid "<c(c3baae)>Heavy Assault Gun</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_jungle_ambush"
+msgid "Jungle Ambush Force"
+msgstr ""
+
+msgctxt "info/special/jap_kg_jungle_ambush"
+msgid "<c(c3baae)>Light Ambush Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_snlf_island_def"
+msgid "SNLF Island Defense"
+msgstr ""
+
+msgctxt "info/special/jap_kg_snlf_island_def"
+msgid "<c(c3baae)>Amphibious Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_heavy_support"
+msgid "Heavy Fire Support"
+msgstr ""
+
+msgctxt "info/special/jap_kg_heavy_support"
+msgid "<c(c3baae)>Medium Support Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_manchuria_patrol"
+msgid "Manchuria Border Patrol"
+msgstr ""
+
+msgctxt "info/special/jap_kg_manchuria_patrol"
+msgid "<c(c3baae)>Captured Light Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_aa_motorized"
+msgid "Motorized AA Defense"
+msgstr ""
+
+msgctxt "info/special/jap_kg_aa_motorized"
+msgid "<c(c3baae)>Mobile Anti-Air</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_burma_flankers"
+msgid "Burma Jungle Flankers"
+msgstr ""
+
+msgctxt "info/special/jap_kg_burma_flankers"
+msgid "<c(c3baae)>Light Flanking Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_infantry_support"
+msgid "I-Go Infantry Support"
+msgstr ""
+
+msgctxt "info/special/jap_kg_infantry_support"
+msgid "<c(c3baae)>Infantry Support</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_rapid_recon"
+msgid "Rapid Recon Network"
+msgstr ""
+
+msgctxt "info/special/jap_kg_rapid_recon"
+msgid "<c(c3baae)>Light Recon</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_mech_transport"
+msgid "Mechanized Transport Assault"
+msgstr ""
+
+msgctxt "info/special/jap_kg_mech_transport"
+msgid "<c(c3baae)>Armored Transport</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_type94_swarm"
+msgid "Type 94 Tankette Swarm"
+msgstr ""
+
+msgctxt "info/special/jap_kg_type94_swarm"
+msgid "<c(c3baae)>Tankette Swarm</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_ro_go_assault"
+msgid "Ro-Go Heavy Assault"
+msgstr ""
+
+msgctxt "info/special/jap_kg_ro_go_assault"
+msgid "<c(c3baae)>Multi-Turret Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_captured_armor"
+msgid "Captured Armor Platoon"
+msgstr ""
+
+msgctxt "info/special/jap_kg_captured_armor"
+msgid "<c(c3baae)>Captured Mix</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_amphibious_assault"
+msgid "Amphibious Task Force"
+msgstr ""
+
+msgctxt "info/special/jap_kg_amphibious_assault"
+msgid "<c(c3baae)>Amphibious Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_okinawa_defense"
+msgid "Okinawa Defensive Line"
+msgstr ""
+
+msgctxt "info/special/jap_kg_okinawa_defense"
+msgid "<c(c3baae)>Defensive Armor Line</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_mobile_rocket"
+msgid "Mobile Rocket Artillery"
+msgstr ""
+
+msgctxt "info/special/jap_kg_mobile_rocket"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_kamikaze_platoon"
+msgid "Kamikaze Assault Platoon"
+msgstr ""
+
+msgctxt "info/special/jap_kg_kamikaze_platoon"
+msgid "<c(c3baae)>Suicide Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_kg_chi_nu_defense"
+msgid "Type 3 Chi-Nu Defense"
+msgstr ""
+
+msgctxt "info/special/jap_kg_chi_nu_defense"
+msgid "<c(c3baae)>Advanced Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_chi_to_platoon"
+msgid "Prototype: Type 4 Chi-To Platoon"
+msgstr ""
+
+msgctxt "info/special/jap_exp_chi_to_platoon"
+msgid "<c(c3baae)>Prototype Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_chi_ri_2_platoon"
+msgid "Prototype: Type 5 Chi-Ri II"
+msgstr ""
+
+msgctxt "info/special/jap_exp_chi_ri_2_platoon"
+msgid "<c(c3baae)>Autoloader Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_chi_nu_kai_snipers"
+msgid "Prototype: Chi-Nu Kai Sniper Group"
+msgstr ""
+
+msgctxt "info/special/jap_exp_chi_nu_kai_snipers"
+msgid "<c(c3baae)>Prototype Sniper Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_type_5_spearhead"
+msgid "Prototype: Type 5 Spearhead"
+msgstr ""
+
+msgctxt "info/special/jap_exp_type_5_spearhead"
+msgid "<c(c3baae)>Advanced Assault Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_oi_150_bunker"
+msgid "Prototype: O-I Mobile Fortress"
+msgstr ""
+
+msgctxt "info/special/jap_exp_oi_150_bunker"
+msgid "<c(c3baae)>Super Heavy Fortress</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_oho_fortress"
+msgid "Prototype: O-Ho Multi-Turret"
+msgstr ""
+
+msgctxt "info/special/jap_exp_oho_fortress"
+msgid "<c(c3baae)>Super Heavy Multi-Turret</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_oni_2_push"
+msgid "Prototype: O-Ni 2 Heavy Push"
+msgstr ""
+
+msgctxt "info/special/jap_exp_oni_2_push"
+msgid "<c(c3baae)>Super Heavy Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_type_5_heavy_decisive"
+msgid "Prototype: Type 5 Heavy Decisive"
+msgstr ""
+
+msgctxt "info/special/jap_exp_type_5_heavy_decisive"
+msgid "<c(c3baae)>Ultimate Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_hori_production_line"
+msgid "Prototype: Ho-Ri Production TD Line"
+msgstr ""
+
+msgctxt "info/special/jap_exp_hori_production_line"
+msgid "<c(c3baae)>Heavy TD Battery</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_hori_prototype_ambush"
+msgid "Prototype: Ho-Ri Proto Ambush"
+msgstr ""
+
+msgctxt "info/special/jap_exp_hori_prototype_ambush"
+msgid "<c(c3baae)>Heavy TD Ambush</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_hori_2_aa_defense"
+msgid "Prototype: Ho-Ri 2 AA Defense"
+msgstr ""
+
+msgctxt "info/special/jap_exp_hori_2_aa_defense"
+msgid "<c(c3baae)>Heavy Anti-Air TD</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_hato_siege"
+msgid "Prototype: Ha-To Orbital Strike"
+msgstr ""
+
+msgctxt "info/special/jap_exp_hato_siege"
+msgid "<c(c3baae)>Super Heavy Artillery</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_nato_td_platoon"
+msgid "Prototype: Na-To Open Top TD"
+msgstr ""
+
+msgctxt "info/special/jap_exp_nato_td_platoon"
+msgid "<c(c3baae)>Open Top TD Platoon</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_tiger_export"
+msgid "Prototype: Tiger Export Guard"
+msgstr ""
+
+msgctxt "info/special/jap_exp_tiger_export"
+msgid "<c(c3baae)>Imported Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_tokyo_1946"
+msgid "Prototype: Tokyo Defense 1946"
+msgstr ""
+
+msgctxt "info/special/jap_exp_tokyo_1946"
+msgid "<c(c3baae)>Decisive Battle Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/jap_exp_emperor_guard"
+msgid "Prototype: Emperor's Last Stand"
+msgstr ""
+
+msgctxt "info/special/jap_exp_emperor_guard"
+msgid "<c(c3baae)>Ultimate Guard Array</c>"
+msgstr ""

@@ -1,0 +1,31 @@
+# source: mod_2905667604 interface/text/desc/desc_weapon_mace_fin.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/weapon/280mm_rkh43"
+msgid "280mm Rkh/43"
+msgstr ""
+
+msgctxt "desc/weapon/300mm_krh42"
+msgid "300mm Rkh/42"
+msgstr ""
+
+msgctxt "desc/weapon/pvg_m42"
+msgid "20mm Pvg m/42"
+msgstr ""
+
+msgctxt "desc/weapon/mauser_t18_swe"
+msgid "Mauser Tankgewehr M1918"
+msgstr ""

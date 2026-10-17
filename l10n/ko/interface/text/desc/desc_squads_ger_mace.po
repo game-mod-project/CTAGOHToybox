@@ -1,0 +1,202 @@
+# source: mod_2905667604 interface/text/desc/desc_squads_ger_mace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_officer_250_3_con_mace"
+msgid "Sd.Kfz 250/3 (Command)"
+msgstr ""
+
+msgctxt "desc/squad/squad_volksg_sturm_late_all_3_mace(ger)"
+msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> Volksg. Strum Squad [Heer]"
+msgstr ""
+
+msgctxt "desc/squad/squad_steilau_con(ger)"
+msgid "<c(A5A095)>(4)</c> Einheit Stielau Jagd-Kommand Squad [Heer]"
+msgstr ""
+
+msgctxt "desc/squad/single_signaller(ger)"
+msgid "Artillery Signaller [Heer]"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade_con(ger)"
+msgid "Gren. Riflemen"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade(ger)"
+msgid "<c(E56042)>1.</c> Gren. Riflemen"
+msgstr ""
+
+msgctxt "desc/squad/single_at_grb39(ger)"
+msgid "<c(E56042)>2.</c> Gren. AT Detachment"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_late_off_1(ger)"
+msgid "<c(A5A095)>(1)</c> <c(E56042)>1.</c> Landesschützen (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_late_off_2(ger)"
+msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> Landesschützen (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_grenadier_late_off(ger)"
+msgid "<c(A5A095)>(2)</c> Grenadier (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_atrifle_late_def(ger)"
+msgid "<c(A5A095)>(2)</c> AT-Rifle (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_lw_feldg_late_irr(ger)"
+msgid "<c(A5A095)>(2)</c> LW. Feldgendarmerie Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_late_all2_1(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Feldgendarmerie Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_late_all2_2(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Feldgendarmerie Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_auf_recon_late_def(ger)"
+msgid "<c(A5A095)>(2)</c> Aufklärer (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pz_auf_recon_at_late_sup(ger)"
+msgid "<c(A5A095)>(2)</c> Panzeraufklärer (AT) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_endsieg_sturmgren_late_def(ger)"
+msgid "<c(A5A095)>(3)</c> Endsieg Sturmgrenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pz_hg_late_sup(ger)"
+msgid "<c(A5A095)>(3+)</c> Fallschirm-Panzergrenadier HG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pio_hg_late_sup(ger)"
+msgid "<c(A5A095)>(3+)</c> Fallschirm-Panzerpionier HG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_late_off_1(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Fallschirmjäger (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_late_off_2(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Fallschirmjäger (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_recon_late_off_1(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Fallschirmaufklärer (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_recon_late_off_2(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Fallschirmaufklärer (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pz_recon_early_off_1(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Panzeraufklärer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pz_recon_early_off_2(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Panzeraufklärer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_con(ger)"
+msgid "<c(A5A095)>(1)</c> Landesschützen (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_heavy_con(ger)"
+msgid "<c(A5A095)>(1)</c> Landesschützen Heavy (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_con(ger)"
+msgid "<c(A5A095)>(2)</c> Feldgendarmerie Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_heavy_con(ger)"
+msgid "<c(A5A095)>(2)</c> Feldgendarmerie Heavy Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_lw_feldg_con(ger)"
+msgid "<c(A5A095)>(2)</c> LW. Feldgendarmerie Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_endsieg_sturmgren_con(ger)"
+msgid "<c(A5A095)>(3)</c> Endsieg Sturmgrenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pz_hg_con(ger)"
+msgid "<c(A5A095)>(3+)</c> Fallschirm-Panzergrenadier HG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pio_hg_con(ger)"
+msgid "<c(A5A095)>(3+)</c> Fallschirm-Panzerpionier HG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_con(ger)"
+msgid "<c(A5A095)>(4)</c> Fallschirmjäger (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_heavy_con(ger)"
+msgid "<c(A5A095)>(4)</c> Fallschirmjäger Heavy (Süd) Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_km_late_con(ger)"
+msgid "Kriegsmarine Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/single_grb39(ger)"
+msgid "AT Rifle Detachment (GRB-39)"
+msgstr ""
+
+msgctxt "desc/squad/single_wz35(ger)"
+msgid "AT Rifle Detachment 'Wz. 35 PzB 770(p)'"
+msgstr ""
+
+msgctxt "desc/squad/single_sturmpistole(ger)"
+msgid "Gren. Detachment (Sturmpistole)"
+msgstr ""
+
+msgctxt "desc/squad/single_mg131(ger)"
+msgid "Heavy MG Detachment (MG 131)"
+msgstr ""
+
+msgctxt "desc/squad/single_fliegerfaust(ger)"
+msgid "AA Launcher Detachment (Fliegerfaust B)"
+msgstr ""
+
+msgctxt "desc/squad/squad_pzlehr_pz_sturmgren(ger)"
+msgid "Pz-Lehr Pz.Sturmgrenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_ersatztrupp_con(ger)"
+msgid "<c(A5A095)>(4)</c> 150th Panzerbrigade"
+msgstr ""
+
+msgctxt "desc/squad/conquest_me_262_50mm"
+msgid "Me 262A-1a/U4 50mm"
+msgstr ""
+
+msgctxt "desc/squad/me_262_50mm"
+msgid "Me 262A-1a/U4 50mm"
+msgstr ""
+
+msgctxt "desc/squad/conquest_me_262_500x2"
+msgid "Me 262 A-1a Schwalbe 500kg Bomb"
+msgstr ""
+
+msgctxt "desc/squad/me_262_500x2"
+msgid "Me 262 A-1a Schwalbe 500kg Bomb"
+msgstr ""

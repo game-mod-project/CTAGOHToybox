@@ -1,0 +1,107 @@
+# source: mod_2905667604 interface/text/desc/desc_weapon_mace_rus.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/weapon/bomb_dropper_rus_100x2"
+msgid "2x FAB-50 Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_rus_50x2"
+msgid "2x FAB-50 Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_rus_zab50x4"
+msgid "4x ZAB-50FP Incendiary Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/ros_132mm"
+msgid "8x 132-mm ROS-132 rockets"
+msgstr ""
+
+msgctxt "desc/weapon/82mm_rs82_ai"
+msgid "8x 82-mm RS-82 Rockets"
+msgstr ""
+
+msgctxt "desc/weapon/45mm_m42_t70"
+msgid "45mm M1942 L/66"
+msgstr ""
+
+msgctxt "desc/weapon/107mm_zis6"
+msgid "107mm ZIS-6 L/73"
+msgstr ""
+
+msgctxt "desc/weapon/85mm_f30"
+msgid "85mm F-30 L/52"
+msgstr ""
+
+msgctxt "desc/weapon/130mm_s30"
+msgid "130 mm S-70 L/88"
+msgstr ""
+
+msgctxt "desc/weapon/37mm_61k_zsu37"
+msgid "37mm 61-K L/67"
+msgstr ""
+
+msgctxt "desc/weapon/85mm_d-44"
+msgid "85mm D-44 L/55"
+msgstr ""
+
+msgctxt "desc/weapon/152mm_BL10"
+msgid "152mm BL-10 L/50"
+msgstr ""
+
+msgctxt "desc/weapon/203mm_b4_mace"
+msgid "203mm B4 L/25"
+msgstr ""
+
+msgctxt "desc/weapon/122mm_m30s_2"
+msgid "122mm M-30s L/22"
+msgstr ""
+
+msgctxt "desc/weapon/100mm_lb1"
+msgid "100mm LB-1 L/53"
+msgstr ""
+
+msgctxt "desc/weapon/tt-250_torpedo_x2"
+msgid "TT-250 x2 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/weapon/76mm_f96"
+msgid "76mm F-96 L/42"
+msgstr ""
+
+msgctxt "desc/weapon/122mm_d30t"
+msgid "122mm D-30T L/46"
+msgstr ""
+
+msgctxt "desc/weapon/122mm_d25t"
+msgid "122mm D-25T L/46"
+msgstr ""
+
+msgctxt "desc/weapon/107mm_m1910_t42"
+msgid "107mm M1910/30 L/38"
+msgstr ""
+
+msgctxt "desc/weapon/37mm_sh37"
+msgid "37mm Sh-37 cannon L/37"
+msgstr ""
+
+msgctxt "desc/weapon/160mm_mt_13"
+msgid "160mm MT-13 Mortar"
+msgstr ""
+
+msgctxt "desc/weapon/37mm_hotchkiss_trench_gun"
+msgid "37mm trench gun M1915 L/19"
+msgstr ""

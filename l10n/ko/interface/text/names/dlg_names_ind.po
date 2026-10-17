@@ -1,0 +1,46 @@
+# source: mod_2905667604 interface/text/names/dlg_names_ind.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms - Gates of Hell: Ostfront (names for finland)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "names/ind/first"
+msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
+msgstr ""
+
+msgctxt "names/ind/last"
+msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
+msgstr ""
+
+msgctxt "names/ind_medic/first"
+msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
+msgstr ""
+
+msgctxt "names/ind_medic/last"
+msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
+msgstr ""
+
+msgctxt "names/ind_officer/first"
+msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
+msgstr ""
+
+msgctxt "names/ind_officer/last"
+msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
+msgstr ""
+
+msgctxt "names/ind_sniper/first"
+msgid "Adi\nAgus\nAnwar\nBambang\nBudi\nCahyo\nDarma\nEko\nGatot\nGunawan\nHadi\nHalim\nHasan\nIndra\nIskandar\nJaya\nJoko\nKartika\nLestari\nMade\nMarwan\nMustofa\nNugroho\nPutra\nRahmat\nRohman\nSlamet\nSukarno\nSuharto\nSulaiman\nSutrisno\nSyamsul\nTri\nWahyu\nWira\nYanto\nYusuf\nZainal\n"
+msgstr ""
+
+msgctxt "names/ind_sniper/last"
+msgid "Santoso\nSaputra\nPranoto\nHartono\nWijaya\nSuryadi\nSutanto\nKurniawan\nSubekti\nNugraha\nGunawan\nSiregar\nNasution\nLubis\nHalim\nBasuki\nDarsono\nSuprapto\nWibowo\nHidayat\nSyafruddin\nPane\nHusodo\nTirtosudiro\nMangunsarkoro\nKartasasmita\nSoedibjo\n"
+msgstr ""

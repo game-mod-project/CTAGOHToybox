@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_usa2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_with2types_conquest"
+msgid "Ace Tank Crew"
+msgstr ""
+
+msgctxt "info/special/single_tankman_ace_usa"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_fury"
+msgid "Kampfgruppe 'Fury' (M4A3E8)"
+msgstr ""
+
+msgctxt "info/special/usa_kg_fury"
+msgid "<c(c3baae)>Veteran Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_thunderbolt"
+msgid "Kampfgruppe 'Thunderbolt VII'"
+msgstr ""
+
+msgctxt "info/special/usa_kg_thunderbolt"
+msgid "<c(c3baae)>Ace Armor Spearhead</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_1st_armored"
+msgid "1st Armored Spearhead"
+msgstr ""
+
+msgctxt "info/special/usa_kg_1st_armored"
+msgid "<c(c3baae)>Mechanized Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_jumbo_breakthrough"
+msgid "Jumbo Breakthrough Platoon"
+msgstr ""
+
+msgctxt "info/special/usa_kg_jumbo_breakthrough"
+msgid "<c(c3baae)>Heavy Assault Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_hellcat_ambush"
+msgid "M18 Hellcat Ambush Group"
+msgstr ""
+
+msgctxt "info/special/usa_kg_hellcat_ambush"
+msgid "<c(c3baae)>Fast TD Wolfpack</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_blackcat_flank"
+msgid "Black Cat Flanking Force"
+msgstr ""
+
+msgctxt "info/special/usa_kg_blackcat_flank"
+msgid "<c(c3baae)>Elite TD Recon</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_jackson_hunters"
+msgid "M36 Jackson Tank Hunters"
+msgstr ""
+
+msgctxt "info/special/usa_kg_jackson_hunters"
+msgid "<c(c3baae)>Heavy TD Battery</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_stuart_recon"
+msgid "M5A1 Stuart Recon Platoon"
+msgstr ""
+
+msgctxt "info/special/usa_kg_stuart_recon"
+msgid "<c(c3baae)>Light Recon Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_chaffee_wolfpack"
+msgid "M24 Chaffee Wolfpack"
+msgstr ""
+
+msgctxt "info/special/usa_kg_chaffee_wolfpack"
+msgid "<c(c3baae)>Advanced Light Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_pershing_vanguard"
+msgid "M26 Pershing Vanguard"
+msgstr ""
+
+msgctxt "info/special/usa_kg_pershing_vanguard"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_super_pershing"
+msgid "Super Pershing Hunter Group"
+msgstr ""
+
+msgctxt "info/special/usa_kg_super_pershing"
+msgid "<c(c3baae)>Heavy Tank Destroyer</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_marine_assault"
+msgid "Marine Beach Assault Group"
+msgstr ""
+
+msgctxt "info/special/usa_kg_marine_assault"
+msgid "<c(c3baae)>Amphibious Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_airborne_support"
+msgid "Airborne Fire Support Battery"
+msgstr ""
+
+msgctxt "info/special/usa_kg_airborne_support"
+msgid "<c(c3baae)>Light Fire Support</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_calliope_barrage"
+msgid "Calliope Rocket Barrage"
+msgstr ""
+
+msgctxt "info/special/usa_kg_calliope_barrage"
+msgid "<c(c3baae)>Rocket Artillery</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_zippo_clearing"
+msgid "Zippo Flame Clearing Force"
+msgstr ""
+
+msgctxt "info/special/usa_kg_zippo_clearing"
+msgid "<c(c3baae)>Flame Assault Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_greyhound_patrol"
+msgid "M8 Greyhound Patrol"
+msgstr ""
+
+msgctxt "info/special/usa_kg_greyhound_patrol"
+msgid "<c(c3baae)>Armored Car Patrol</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_meat_chopper"
+msgid "Meat Chopper AA Defense"
+msgstr ""
+
+msgctxt "info/special/usa_kg_meat_chopper"
+msgid "<c(c3baae)>Mobile AA Battery</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_cavalry_recon"
+msgid "Cavalry Reconnaissance Group"
+msgstr ""
+
+msgctxt "info/special/usa_kg_cavalry_recon"
+msgid "<c(c3baae)>Light Cavalry Recon</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_priest_battery"
+msgid "M7 Priest Artillery Battery"
+msgstr ""
+
+msgctxt "info/special/usa_kg_priest_battery"
+msgid "<c(c3baae)>SPG Artillery Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_heavy_artillery"
+msgid "M12 Heavy Artillery Battery"
+msgstr ""
+
+msgctxt "info/special/usa_kg_heavy_artillery"
+msgid "<c(c3baae)>Heavy Siege Artillery</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_wolverine_line"
+msgid "M10 Wolverine Defensive Line"
+msgstr ""
+
+msgctxt "info/special/usa_kg_wolverine_line"
+msgid "<c(c3baae)>TD Defense Line</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_105_support"
+msgid "Sherman 105mm Support Platoon"
+msgstr ""
+
+msgctxt "info/special/usa_kg_105_support"
+msgid "<c(c3baae)>Heavy Infantry Support</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_ranger_firebase"
+msgid "Ranger Mobile Firebase"
+msgstr ""
+
+msgctxt "info/special/usa_kg_ranger_firebase"
+msgid "<c(c3baae)>Special Forces Support</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_kg_90mm_td"
+msgid "90mm Tank Hunter Crossfire"
+msgstr ""
+
+msgctxt "info/special/usa_kg_90mm_td"
+msgid "<c(c3baae)>Advanced TD Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t29_spearhead"
+msgid "Prototype: T29 Heavy Spearhead"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t29_spearhead"
+msgid "<c(c3baae)>Prototype Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t30_bunker_buster"
+msgid "Prototype: T30 Bunker Buster"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t30_bunker_buster"
+msgid "<c(c3baae)>Heavy Siege Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t34_sniper"
+msgid "Prototype: T34 Heavy Sniper Group"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t34_sniper"
+msgid "<c(c3baae)>Heavy Sniper Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t95_doom_turtle"
+msgid "Prototype: T95 Doom Turtle Escort"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t95_doom_turtle"
+msgid "<c(c3baae)>Super Heavy Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_m103_vanguard"
+msgid "Prototype: M103 Cold War Vanguard"
+msgstr ""
+
+msgctxt "info/special/usa_exp_m103_vanguard"
+msgid "<c(c3baae)>Cold War Heavy Tank</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t110e5_breakthrough"
+msgid "Prototype: T110E5 Ultimate Breakthrough"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t110e5_breakthrough"
+msgid "<c(c3baae)>Ultimate Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t110e3_assault"
+msgid "Prototype: T110E3 Heavy Assault"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t110e3_assault"
+msgid "<c(c3baae)>Heavy Assault TD</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t57_autoloader"
+msgid "Prototype: T57 Autoloader Battery"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t57_autoloader"
+msgid "<c(c3baae)>Burst Damage Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_m_v_y_alien"
+msgid "Prototype: M-V-Y Alien Tech Group"
+msgstr ""
+
+msgctxt "info/special/usa_exp_m_v_y_alien"
+msgid "<c(c3baae)>Unconventional Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_gorilla_siege"
+msgid "Prototype: Gorilla Super Siege"
+msgstr ""
+
+msgctxt "info/special/usa_exp_gorilla_siege"
+msgid "<c(c3baae)>Super Heavy SPG</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_blackrock_apocalypse"
+msgid "Prototype: Blackrock Apocalypse"
+msgstr ""
+
+msgctxt "info/special/usa_exp_blackrock_apocalypse"
+msgid "<c(c3baae)>Apocalypse Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_60tpl_wing"
+msgid "Prototype: 60TP_L Joint Assault"
+msgstr ""
+
+msgctxt "info/special/usa_exp_60tpl_wing"
+msgid "<c(c3baae)>Joint Concept Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t58_heavy_auto"
+msgid "Prototype: T58 Heavy Autoloader"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t58_heavy_auto"
+msgid "<c(c3baae)>Heavy Burst Damage</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_ares90c_stealth"
+msgid "Prototype: Ares 90c Stealth Hunters"
+msgstr ""
+
+msgctxt "info/special/usa_exp_ares90c_stealth"
+msgid "<c(c3baae)>Stealth TD Pack</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_aht7_escort"
+msgid "Prototype: AHT-7 Heavy Escort"
+msgstr ""
+
+msgctxt "info/special/usa_exp_aht7_escort"
+msgid "<c(c3baae)>Heavy Escort Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/usa_exp_t803_future"
+msgid "Prototype: T803 Future MBT Group"
+msgstr ""
+
+msgctxt "info/special/usa_exp_t803_future"
+msgid "<c(c3baae)>Future Tech MBT</c>"
+msgstr ""

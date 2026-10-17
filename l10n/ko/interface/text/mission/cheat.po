@@ -1,0 +1,250 @@
+# source: mod_3617250510 interface/text/mission/cheat.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (cheat)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/cheat/步兵小队"
+msgid "Infantry squad"
+msgstr ""
+
+msgctxt "mission/cheat/专职士兵"
+msgid "Career Infantry"
+msgstr ""
+
+msgctxt "mission/cheat/架设武器"
+msgid "Emplace Weapons"
+msgstr ""
+
+msgctxt "mission/cheat/载具"
+msgid "Vehicle"
+msgstr ""
+
+msgctxt "mission/cheat/装甲支援"
+msgid "Armored Support"
+msgstr ""
+
+msgctxt "mission/cheat/飞机支援"
+msgid "Air Support"
+msgstr ""
+
+msgctxt "mission/cheat/全局设置"
+msgid "Global Settings"
+msgstr ""
+
+msgctxt "mission/cheat/返回"
+msgid "Back"
+msgstr ""
+
+msgctxt "mission/cheat/轻型坦克"
+msgid "Light Tank"
+msgstr ""
+
+msgctxt "mission/cheat/中型坦克"
+msgid "Medium Tank"
+msgstr ""
+
+msgctxt "mission/cheat/重型坦克"
+msgid "Heavy Tank"
+msgstr ""
+
+msgctxt "mission/cheat/歼击坦克"
+msgid "Tank Destroyer"
+msgstr ""
+
+msgctxt "mission/cheat/删除单个单位"
+msgid "Delete Single Unit"
+msgstr ""
+
+msgctxt "mission/cheat/删除所有单位"
+msgid "Delete All Units"
+msgstr ""
+
+msgctxt "mission/cheat/删除所有飞机"
+msgid "Delete All Aircraft"
+msgstr ""
+
+msgctxt "mission/cheat/升级单位"
+msgid "Max out a single unit"
+msgstr ""
+
+msgctxt "mission/cheat/以最高等级生成单位开"
+msgid "Generate units at the highest level:<c(99ff4d)>ON</c>"
+msgstr ""
+
+msgctxt "mission/cheat/以最高等级生成单位关"
+msgid "Generate units at the highest level:<c(ff0000)>OFF</c>"
+msgstr ""
+
+msgctxt "mission/cheat/清理残骸"
+msgid "Clear Debris"
+msgstr ""
+
+msgctxt "mission/cheat/飞机轰炸"
+msgid "Pick Aircraft Bombing Zone"
+msgstr ""
+
+msgctxt "mission/cheat/冬季涂装开"
+msgid "Winter Camo:<c(99ff4d)>ON</c>"
+msgstr ""
+
+msgctxt "mission/cheat/冬季涂装关"
+msgid "Winter Camo:<c(ff0000)>OFF</c>"
+msgstr ""
+
+msgctxt "mission/cheat/林地涂装开"
+msgid "Forest Camo:<c(99ff4d)>ON</c>"
+msgstr ""
+
+msgctxt "mission/cheat/林地涂装关"
+msgid "Forest Camo:<c(ff0000)>OFF</c>"
+msgstr ""
+
+msgctxt "mission/cheat/沙漠涂装开"
+msgid "Desert Camo:<c(99ff4d)>ON</c>"
+msgstr ""
+
+msgctxt "mission/cheat/沙漠涂装关"
+msgid "Desert Camo:<c(ff0000)>OFF</c>"
+msgstr ""
+
+msgctxt "mission/cheat/自动分配"
+msgid "Auto Assign"
+msgstr ""
+
+msgctxt "mission/cheat/P0"
+msgid "Player 0"
+msgstr ""
+
+msgctxt "mission/cheat/P1"
+msgid "Player 1"
+msgstr ""
+
+msgctxt "mission/cheat/P2"
+msgid "Player 2"
+msgstr ""
+
+msgctxt "mission/cheat/P3"
+msgid "Player 3"
+msgstr ""
+
+msgctxt "mission/cheat/P4"
+msgid "Player 4"
+msgstr ""
+
+msgctxt "mission/cheat/P5"
+msgid "Player 5"
+msgstr ""
+
+msgctxt "mission/cheat/P6"
+msgid "Player 6"
+msgstr ""
+
+msgctxt "mission/cheat/P7"
+msgid "Player 7"
+msgstr ""
+
+msgctxt "mission/cheat/P8"
+msgid "Player 8"
+msgstr ""
+
+msgctxt "mission/cheat/P9"
+msgid "Player 9"
+msgstr ""
+
+msgctxt "mission/cheat/ai开"
+msgid "AI Control:<c(99ff4d)>ON</c>"
+msgstr ""
+
+msgctxt "mission/cheat/ai关"
+msgid "AI Control:<c(ff0000)>OFF</c>"
+msgstr ""
+
+msgctxt "mission/ger/cheat/掷弹兵班【武装党卫军】"
+msgid "Panzergrenadier Squad[Waffen-SS]"
+msgstr ""
+
+msgctxt "mission/ger/cheat/装甲侦察班【武装党卫军】"
+msgid "Armored Recon Squad[Waffen-SS]"
+msgstr ""
+
+msgctxt "mission/ger/cheat/装甲掷弹兵班【武装党卫军】"
+msgid "Veteran Panzergrenadier Squad[Waffen-SS]"
+msgstr ""
+
+msgctxt "mission/cheat/冲锋枪手stg44"
+msgid "SMG soldier(STG44)"
+msgstr ""
+
+msgctxt "mission/cheat/反坦克手(PZB.39)"
+msgid "AT Inf(PZB.39)"
+msgstr ""
+
+msgctxt "mission/cheat/炮手"
+msgid "Artilleryman"
+msgstr ""
+
+msgctxt "mission/cheat/火炮通讯兵"
+msgid "Artillery Signaller"
+msgstr ""
+
+msgctxt "mission/cheat/反坦克手(PTRD)"
+msgid "AT Inf(PTRD-41)"
+msgstr ""
+
+msgctxt "mission/cheat/反坦克手(PTRS)"
+msgid "AT Inf(PTRS-41)"
+msgstr ""
+
+msgctxt "mission/cheat/反坦克手(博伊斯)"
+msgid "AT Inf(Boys AT rifle)"
+msgstr ""
+
+msgctxt "mission/cheat/usa/伞降82师"
+msgid "Airborne(82nd)"
+msgstr ""
+
+msgctxt "mission/cheat/usa/伞降101师"
+msgid "Airborne(101nd)"
+msgstr ""
+
+msgctxt "mission/cheat/精锐坦克手"
+msgid "Elite Tank crew"
+msgstr ""
+
+msgctxt "mission/cheat/fin/法国步兵班"
+msgid "French infantry squad"
+msgstr ""
+
+msgctxt "mission/cheat/ger/国防军武器箱"
+msgid "<c(47E7ED)>Wehrmacht Weapon Crate</c>"
+msgstr ""
+
+msgctxt "mission/cheat/usa/美国武器箱"
+msgid "<c(47E7ED)>American Weapon Crate</c>"
+msgstr ""
+
+msgctxt "mission/cheat/rus/苏军武器箱"
+msgid "<c(47E7ED)>Soviet Weapon Crate</c>"
+msgstr ""
+
+msgctxt "mission/cheat/fin/芬兰武器箱"
+msgid "<c(47E7ED)>Finnish Weapon Crate</c>"
+msgstr ""
+
+msgctxt "mission/cheat/eng/英军武器箱"
+msgid "<c(47E7ED)>British Weapon Crate</c>"
+msgstr ""
+
+msgctxt "actionbar/change_paint_scheme_toggle"
+msgid "Change Paint Scheme"
+msgstr ""

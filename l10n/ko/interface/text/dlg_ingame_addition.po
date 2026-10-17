@@ -1,0 +1,39 @@
+# source: mod_2829744930 interface/text/dlg_ingame_addition.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Cta - Gates of Hell (dlg_ingame)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2021-04-28 12:20+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "actionbar/human/medic_switch"
+msgid "自动医疗开关"
+msgstr ""
+
+msgctxt "actionbar/human/medic_switch/usage"
+msgid "单击按钮可设定这名医疗兵是否会执行自动医疗命令，默认为开启状态。\n如果单击后医疗兵身上弹出提示字符，且状态切换正常，说明脚本正在运行。"
+msgstr ""
+
+msgctxt "actionbar/ai_auto_move"
+msgid "切换 AI/玩家 控制"
+msgstr ""
+
+msgctxt "actionbar/ai_auto_move/usage"
+msgid "单击此按钮，然后单击地面即可切换。\n注意同时选中多个单位时必须要有小队长才能生效。"
+msgstr ""
+
+msgctxt "actionbar/weather_switch"
+msgid "随机切换天气"
+msgstr ""
+
+msgctxt "actionbar/weather_switch/usage"
+msgid "来自mod：高清随机天气按钮"
+msgstr ""

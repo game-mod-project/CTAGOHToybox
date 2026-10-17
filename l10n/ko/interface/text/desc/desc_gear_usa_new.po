@@ -1,0 +1,830 @@
+# source: mod_2905667604 interface/text/desc/desc_gear_usa_new.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Soviet Gear\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/stuff/grenade_ammo_box"
+msgid "Supply Box"
+msgstr ""
+
+msgctxt "desc/stuff/a4_hat_usn"
+msgid "A4 Mechanics Hat"
+msgstr ""
+
+msgctxt "desc/stuff/n3_hat_usn"
+msgid "N-3 Utility Cap"
+msgstr ""
+
+msgctxt "desc/stuff/utility_cap_usn"
+msgid "1944 Utility Cap"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_m1_usn_green"
+msgid "M1 Tropical Cover"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_m1_usn_camo"
+msgid "M1 Tropical Cover"
+msgstr ""
+
+msgctxt "desc/stuff/campaign_hat_usn_chad"
+msgid "1912 Campaign-Field Hat"
+msgstr ""
+
+msgctxt "desc/stuff/campaign_hat_usn"
+msgid "1912 Campaign-Field Hat"
+msgstr ""
+
+msgctxt "desc/stuff/m8_smoke"
+msgid "AN-M8 White Smoke"
+msgstr ""
+
+msgctxt "desc/stuff/m18_smoke"
+msgid "M18 Smoke Flare"
+msgstr ""
+
+msgctxt "desc/stuff/grenade_mk1"
+msgid "Mk I Grenade"
+msgstr ""
+
+msgctxt "desc/stuff/grenade_mk2"
+msgid "Mk II Grenade"
+msgstr ""
+
+msgctxt "desc/stuff/mkiiia2_offensive"
+msgid "Mk IIIA2 Grenade"
+msgstr ""
+
+msgctxt "desc/stuff/us_incendiary"
+msgid "AN-M14 Incendiary Grenade"
+msgstr ""
+
+msgctxt "desc/stuff/airborne_equipment"
+msgid "T-5 Airborne Parachute Kit"
+msgstr ""
+
+msgctxt "desc/stuff/airborne_equipment_001"
+msgid "Magzine Pouches"
+msgstr ""
+
+msgctxt "desc/stuff/ammo_us"
+msgid "Magazine Vest & Bag"
+msgstr ""
+
+msgctxt "desc/stuff/ammo_us2"
+msgid "Magazine Pouches & Bag"
+msgstr ""
+
+msgctxt "desc/stuff/flamer_tank"
+msgid "Flamethrower Fuel Tank"
+msgstr ""
+
+msgctxt "desc/stuff/franz-ammo1"
+msgid "Ammunition Sling"
+msgstr ""
+
+msgctxt "desc/stuff/mgun_ammo"
+msgid "Ammo Belt"
+msgstr ""
+
+msgctxt "desc/stuff/radio_usa"
+msgid "SCR-300 Portable Radio"
+msgstr ""
+
+msgctxt "desc/stuff/radio_usa_short"
+msgid "SCR-300 Portable Radio"
+msgstr ""
+
+msgctxt "desc/stuff/us_equipmento"
+msgid "Officer Equipment"
+msgstr ""
+
+msgctxt "desc/stuff/us_haversack"
+msgid "US Haversac"
+msgstr ""
+
+msgctxt "desc/stuff/us_haversack_shovel"
+msgid "US Haversac + Shovel"
+msgstr ""
+
+msgctxt "desc/stuff/us_marine_haversack"
+msgid "USMC Haversac + Shovel"
+msgstr ""
+
+msgctxt "desc/stuff/us_musette"
+msgid "US Musette"
+msgstr ""
+
+msgctxt "desc/stuff/us_rocketbag"
+msgid "Bazooka Rocketbag"
+msgstr ""
+
+msgctxt "desc/stuff/usa_tankcrew_leader"
+msgid "Tank Commander Equipment"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment2"
+msgid "USMC Equipment"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment3"
+msgid "USMC Equipment"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment4"
+msgid "USMC Equipment"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment5"
+msgid "USMC Equipment"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipmentm"
+msgid "Medical Bags"
+msgstr ""
+
+msgctxt "desc/stuff/cigarette"
+msgid "Cigarette"
+msgstr ""
+
+msgctxt "desc/stuff/glasses"
+msgid "Round Glasses"
+msgstr ""
+
+msgctxt "desc/stuff/sunglasses"
+msgid "Aviators"
+msgstr ""
+
+msgctxt "desc/stuff/pickaxe_little_david"
+msgid "Heavy Engineering Pickaxe"
+msgstr ""
+
+msgctxt "desc/stuff/shovel_engineer_swe"
+msgid "Heavy Engineering Shovel"
+msgstr ""
+
+msgctxt "desc/stuff/cap_mia"
+msgid "Visor Cap [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_mia"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngc"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngclocal"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap2_min"
+msgid "Visor Cap [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap2_rngc_police"
+msgid "Visor Cap [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_google"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_google"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngc_police"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngc_police_radio"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_min"
+msgid "Visor Cap [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap2_rngc"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_ija"
+msgid "Visor Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_ijn"
+msgid "Visor Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_peta_1"
+msgid "Field Cap [PETA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_cha_radio"
+msgid "Field Cap [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_mia1"
+msgid "Field Cap [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_mia2"
+msgid "Field Cap [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngc"
+msgid "Field Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngc_cavalry"
+msgid "Fur Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngclocal"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngclocal_elite7-9"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngclocal_hd"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap2_rngclocal"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap2_rngc"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap3_rngc"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc_gilly"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc_goggles"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc_radio"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_camo"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_flap"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_flap_camo"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_camo"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_radio"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_camo"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_flap"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_google"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_nco"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_radio"
+msgid "Field Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_para"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_para_flap"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_peta_cap_1"
+msgid "Field Cap [PETA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_peta_cap_2"
+msgid "Field Cap [PETA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_recruit"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_recruit_flap"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcaptest_rngc"
+msgid "Field Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldhat1_mia"
+msgid "Visor Cap [MIA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldhat4_min_sailor"
+msgid "Visor Cap [Sailor]"
+msgstr ""
+
+msgctxt "desc/stuff/hachimaki"
+msgid "Hachimaki"
+msgstr ""
+
+msgctxt "desc/stuff/hachimaki_navy"
+msgid "Hachimaki [Navy]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_mia"
+msgid "Helmet [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_mia_nlf"
+msgid "Helmet [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_rngc"
+msgid "Helmet [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet2_mia"
+msgid "Helmet [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_rngc"
+msgid "Helmet [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet3_mia"
+msgid "Helmet [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet3_rngc"
+msgid "Helmet [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet4_snlf1_paratrooper"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_92"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_92_ijn"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_92_snlf"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_medic"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_flap"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_net_camo"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_net_flap"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_net_flap"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_pilot_helmet"
+msgid "Japanese Pilot Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_sailor_cap"
+msgid "Sailor Cap"
+msgstr ""
+
+msgctxt "desc/stuff/jap_tanker_helmet"
+msgid "Japanese Tank Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_flap"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_hachimaki"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_hachimaki_flap"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_flap"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_hachimaki"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_hachimaki_flap"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_flap"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_mask"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_flap"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_net"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet2_rngc"
+msgid "Helmet [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_camo"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_net_camo"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_fra_m35_tank"
+msgid "Tank Helmet [FRA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_flap"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_guard"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_hachimaki"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_hachimaki_flap"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_camo"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_hachimaki"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_hachimaki_flap"
+msgid "Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_medic"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_net"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_camo"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_flap"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_para_ija"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_para_ijn"
+msgid "Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_para_ops"
+msgid "Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment1"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment1_marine"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment2"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment3"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment4"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment5"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment6"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_gas_mask"
+msgid "Japanese Gas Mask [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/japanese_radio"
+msgid "Japanese Radio [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_at_backpack"
+msgid "Japanese AT Supply Box [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_hmg_backpack"
+msgid "Japanese MG Supply Box [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear1"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear2"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear3"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear3_b"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear3_c"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear4"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_officer_full"
+msgid "Japanese NCO Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_nco"
+msgid "Japanese NCO Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_nco_full"
+msgid "Japanese NCO Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_officer"
+msgid "Japanese NCO Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_konbaku_backpack"
+msgid "Japanese Backpack [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_type35_sabre"
+msgid "Japanese Type 35 Sabre [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear_giretsu"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1mgun"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1mgun_heavy1"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1rifle"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1rifle_heavy1"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1smg"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1smg_heavy1"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/kamikaze_bomb"
+msgid "Japanese kamikaze Charges [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_nco"
+msgid "Summer Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ija"
+msgid "Summer Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ija_flap"
+msgid "Summer Helmet [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ija_hachimaki"
+msgid "Summer Helmet + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ijn_hachimaki"
+msgid "Summer Helmet + Hachimaki [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ijn_flap"
+msgid "Summer Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ijn"
+msgid "Summer Helmet [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/tokusi_vest"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/tokusi_vest_off"
+msgid "Japanese Equipment [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/tortoise_armor"
+msgid "Japanese Tortoise [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/translationoficap1_rngc"
+msgid "Visor Cap [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/trench_armor_ija"
+msgid "Japanese Body Armour [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/trench_armor_ija_full"
+msgid "Japanese Body Armour [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear5"
+msgid "Japanese Equipment [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_officer_cap"
+msgid "Japanese Officer Cap [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_mengjiang"
+msgid "Field Cap [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap2_mengjiang"
+msgid "Field Cap [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap3_mengjiang"
+msgid "Field Cap [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_google"
+msgid "Field Cap [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_google"
+msgid "Field Cap [INJ]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldhat1_mia2"
+msgid "Field Hat [MIA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_mengjiang"
+msgid "Field Hat [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_recruit_ina"
+msgid "Field Cap [INA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldturban_ina"
+msgid "Turban [INA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_fra_beret_tank"
+msgid "Beret [FRA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_fra_beret_tank_officer"
+msgid "Beret [FRA]"
+msgstr ""
+
+msgctxt "desc/stuff/uk_helm_brodie_ina"
+msgid "Steel helmet Mk. II [INA]"
+msgstr ""

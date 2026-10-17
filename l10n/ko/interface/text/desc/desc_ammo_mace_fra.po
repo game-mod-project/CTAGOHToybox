@@ -1,0 +1,78 @@
+# source: mod_2905667604 interface/text/desc/desc_ammo_mace_fra.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/ammo/bulletfra_25 ap"
+msgid "25×193.5mm R [<c(ff6a00)>AP</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/bulletger_155 sm"
+msgid "155mm Mle1915 Shell [SMOKE] <c(65696d)>L/5</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulletger_155 he"
+msgid "155mm Mle1915 Shell [<c(ff1200)>HE</c>] <c(65696d)>L/5</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulletfr_75 apcbc"
+msgid "75mm OR Mle.44 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/70</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulletfr_75 he"
+msgid "75mm OE Mle.28 [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulletfr_90 apcbc"
+msgid "90mm PCO-50 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/65</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulletfr_90 he"
+msgid "90mm Obus explosif [<c(ff1200)>HE</c>] <c(65696d)>L/65</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_47 fra apcbc"
+msgid "4.7cm Mle1936 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/53</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_75x241 fra aphe"
+msgid "7.5cm Mle1916 [<c(ff6a00)>APHE</c>] <c(65696d)>L/17</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_75x241 fra he"
+msgid "7.5cm Mle1900 [<c(ff1200)>HE</c>] <c(65696d)>L/17</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_47x193 fra apc"
+msgid "4.7cm Mle1935 [<c(ff6a00)>APC</c>] <c(65696d)>L/32</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_47x193 fra he"
+msgid "4.7cm Mle1935 [<c(ff1200)>HE</c>] <c(65696d)>L/32</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_47 fra aphe"
+msgid "4.7cm Mle1935 [<c(ff6a00)>APHE</c>] <c(65696d)>L/4</c>"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_fra belt"
+msgid "7.5×54mm MAS Mod. 1929"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_37x149_fra apc"
+msgid "3.7cm Mle1937 [<c(ff6a00)>APC</c>] <c(65696d)>L/21</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_37x149_fra he"
+msgid "3.7cm Mle1937 [<c(ff1200)>HE</c>] <c(65696d)>L/21</c>"
+msgstr ""

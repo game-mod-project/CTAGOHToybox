@@ -26,6 +26,7 @@ namespace CtaToybox.Cli
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
+            "  ctatoybox l10n extract|check|build [--dir <번역 보관, 기본 l10n/ko>] [--file <글자>] [--force]   (한글화: 보관 갱신, 검사, 출력 모드에 .pot·글꼴 쓰기)\n" +
             "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--keep-cost] [--basic-buttons]   (Spawn Menu를 대체하는 스폰 모드를 만든다. preview는 쓰지 않고 수만 보인다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
@@ -44,6 +45,7 @@ namespace CtaToybox.Cli
             ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude", "any", "items" },
             ["build"] = new[] { "settings", "project", "force" },
             ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
+            ["l10n"] = new[] { "settings", "dir", "file", "force" },
             ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
@@ -95,6 +97,7 @@ namespace CtaToybox.Cli
                     case "vision-preset": return VisionPreset(opt, settingsPath, output);
                     case "faction-preset": return FactionPresetCli(opt, settingsPath, output);
                     case "spawn-menu": return SpawnMenu(positional, opt, settingsPath, output);
+                    case "l10n": return L10n(positional, opt, settingsPath, output);
                     default: throw new UsageException("모르는 명령: " + args[0]);
                 }
             }
@@ -216,6 +219,69 @@ namespace CtaToybox.Cli
                 if (opt.ContainsKey("report")) File.WriteAllLines(opt["report"], report.Edits.Select(kv => "수정 " + kv.Key + ": " + kv.Value).Concat(report.Shared.Select(x => "공유 " + x)).Concat(report.Skipped.Select(x => "건너뜀 " + x)).Concat(report.Notes));
                 return 0;
             }
+        }
+
+        // 한글화(docs/superpowers/specs/2026-10-17-korean-localization-design.md): extract(번역 보관 갱신), check(검사), build(출력 모드에 쓰기)
+        static int L10n(List<string> positional, Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string sub = positional.Count > 0 ? positional[0].ToLowerInvariant() : null;
+            if (sub != "extract" && sub != "check" && sub != "build") throw new UsageException("l10n 다음에 extract, check, build 가운데 하나");
+            string dir = opt.ContainsKey("dir") ? opt["dir"] : Path.Combine("l10n", "ko");
+            EditorSettings settings; LayerPlan plan;
+            using (var probe = Open(settingsPath, output, out settings, out plan)) { if (probe == null) return 1; }
+            var warnings = new List<string>();
+            if (sub == "extract")
+            {
+                var sources = Core.L10n.L10nSources.Collect(settings, plan, warnings);
+                foreach (string w in warnings) output.WriteLine("  " + w);
+                var r = Core.L10n.L10nCatalog.Extract(sources, dir, GameVersion(settings));
+                output.WriteLine("파일 " + r.Files + ", 항목 " + r.Entries + ", 추가 " + r.Added + ", 바뀜 " + r.Changed + ", 지움 " + r.Removed + ", 미번역 " + r.Untranslated + ", fuzzy " + r.Fuzzy + ": " + dir);
+                foreach (string f in r.RemovedFiles) output.WriteLine("  지운 파일 " + f);
+                return 0;
+            }
+            var terms = Core.L10n.Glossary.Load(Path.Combine(dir, "glossary.psv"));
+            string interfacePak = Path.Combine(settings.GameDir, "resource", "interface", "interface.pak");
+            var fonts = File.Exists(interfacePak) ? Core.L10n.FontMap.Build(interfacePak) : new List<Core.L10n.FontOverride>();
+            if (!File.Exists(interfacePak)) output.WriteLine("  interface.pak이 없어 글꼴을 바꾸지 않고 글자 검사를 건너뛴다: " + interfacePak);
+            var glyphs = fonts.Count > 0 ? Core.L10n.L10nCheck.MainGlyphs(settings.GameDir, Core.L10n.FontMap.TargetFnts(fonts)) : null;
+            var issues = Core.L10n.L10nCheck.Catalog(dir, terms, glyphs, opt.ContainsKey("file") ? opt["file"] : null);
+            var errors = issues.Where(i => i.IsError).ToList();
+            if (sub == "check")
+            {
+                foreach (var i in errors) output.WriteLine("오류 " + i.File + " " + i.Key + " " + i.Kind + ": " + i.Detail);
+                output.WriteLine("오류 " + errors.Count + ", 미번역 " + issues.Count(i => i.Kind == "untranslated") + ", fuzzy " + issues.Count(i => i.Kind == "fuzzy"));
+                return errors.Count > 0 ? 1 : 0;
+            }
+            if (GameRunning())
+            {
+                if (!opt.ContainsKey("force"))
+                {
+                    output.WriteLine("오류: 게임이나 에디터가 실행 중이다. 실행 중에 모드 파일을 바꾸거나 지우면, 게임이 그 파일을 다시 읽을 때(예: 전투를 새로 시작할 때) 꺼질 수 있다. 게임을 끄고 다시 빌드한다. 그래도 빌드하려면 --force를 붙인다.");
+                    return 1;
+                }
+                output.WriteLine("경고: 게임이나 에디터가 실행 중이다(--force). 전투를 새로 시작하지 말고 게임을 다시 시작한다.");
+            }
+            if (errors.Count > 0)
+            {
+                foreach (var i in errors.Take(20)) output.WriteLine("오류 " + i.File + " " + i.Key + " " + i.Kind + ": " + i.Detail);
+                output.WriteLine("검사 오류 " + errors.Count + "건. 고친 뒤 다시 빌드한다(l10n check)");
+                return 1;
+            }
+            var all = Core.L10n.L10nSources.Collect(settings, plan, warnings);
+            foreach (string w in warnings) output.WriteLine("  " + w);
+            var br = Core.L10n.L10nBuilder.Build(all, dir, fonts, settings.OutputModDir);
+            output.WriteLine("쓴 파일 " + br.Written.Count + "(원문 파일 " + br.Files + ", 번역 " + br.Translated + ", 영어로 둔 항목 " + br.FellBack + "), 글꼴 " + fonts.Count + ", 지운 파일 " + br.Removed.Count + ", 오류 " + br.Errors.Count + ": " + settings.OutputModDir);
+            foreach (string e in br.Errors.Take(20)) output.WriteLine("  오류 " + e);
+            return br.Errors.Count > 0 ? 1 : 0;
+        }
+
+        // binaries/x64/call_to_arms.exe의 제품 버전(예: 1.0.6.7-aaa36ed4d). 없으면 빈 글자
+        static string GameVersion(EditorSettings settings)
+        {
+            string exe = Path.Combine(settings.GameDir, "binaries", "x64", "call_to_arms.exe");
+            if (!File.Exists(exe)) return "";
+            try { return System.Diagnostics.FileVersionInfo.GetVersionInfo(exe).ProductVersion ?? ""; }
+            catch (IOException) { return ""; }
         }
 
         // 스폰 모드(docs/superpowers/specs/2026-10-17-spawn-menu-replacement-design.md). preview는 쓰지 않고 수만 보인다

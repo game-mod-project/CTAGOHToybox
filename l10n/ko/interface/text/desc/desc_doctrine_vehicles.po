@@ -1,0 +1,938 @@
+# source: mod_3732639687 interface/text/desc/desc_doctrine_vehicles.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic vehicles\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Yozora\n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/entity/doctrine_kv-220"
+msgid "KV-220"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv5"
+msgid "KV-5"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is2u"
+msgid "IS-2U(110) v.1"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is2u_1"
+msgid "IS-2U(110) v.2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is3_0"
+msgid "IS-3 122mm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is3_1"
+msgid "IS-3 100mm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is5"
+msgid "IS-5"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is6"
+msgid "IS-6"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj260"
+msgid "Object 260"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is7"
+msgid "IS-7"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_0bj_268"
+msgid "Object 268 'St. John 's Wort'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_isu130"
+msgid "ISU-130"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t44"
+msgid "T-44"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t44_2"
+msgid "T-44 100mm LB-1"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_rbt5"
+msgid "RBT-5"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv122"
+msgid "KV-122"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_object248"
+msgid "Object-248"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is4"
+msgid "IS-4"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is4m"
+msgid "IS-4M"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv-3"
+msgid "KV-3"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv-4_dukhov_turret"
+msgid "KV-4 'Dukhov Turret' v.1"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv-4_strukov_turret"
+msgid "KV-4 'Strukov Turret' v.2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv2_zis6"
+msgid "KV2-ZIS6"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv-6"
+msgid "KV-6"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_object279"
+msgid "Object 279"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_object263"
+msgid "Object 263"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_object263a"
+msgid "Object 263 Type A"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj261"
+msgid "Object 261"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_zsu37gos"
+msgid "ZSU-37"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t_v"
+msgid "T-V [Panther]"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t44_122"
+msgid "T-44-122"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t54_47"
+msgid "T-54-1947"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bz-75_tank"
+msgid "BZ-75 v.1"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bz-75_tank1"
+msgid "BZ-75 v.2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_114sp2"
+msgid "114 SP2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bz79"
+msgid "BZ-79"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bzt70s"
+msgid "BZT-70S"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ptz78"
+msgid "PTZ-78"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj907"
+msgid "Object 907"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_pgz70"
+msgid "PGZ70"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_object_490"
+msgid "Object 490"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t34_zsu37_2"
+msgid "ZSU-37-2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_us_t29"
+msgid "T29"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t30_usa"
+msgid "T30"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t34_usa"
+msgid "T34"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m5_hst_ammo"
+msgid "M5 High-Speed Tractor (HMG) - AMMO"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t57_tank"
+msgid "T57"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t92_hmc"
+msgid "T92"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t49"
+msgid "T49"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m46"
+msgid "M46 Patton"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m46_1"
+msgid "M46 Patton (105mm)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t95"
+msgid "T95"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m103"
+msgid "M103"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t110e3"
+msgid "T110E3"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t110e5"
+msgid "T110E5"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m-v-y_tank1"
+msgid "M-V-Y '120mm Gun T124'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m-v-y_tank"
+msgid "M-V-Y '105mm Gun T141'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_60tp_l"
+msgid "60TP 'Lewandowskiego'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_60tp_l_aa"
+msgid "60TP AA 'Lewandowskiego'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_caernarvon"
+msgid "Caernarvon"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_tog2"
+msgid "TOG II*"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_centurion"
+msgid "Centurion Mk. I"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_conqueror"
+msgid "Conqueror"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_tortez"
+msgid "Tortoise"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fv215"
+msgid "FV215"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fv215b"
+msgid "FV215b"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fv215b_183"
+msgid "FV215b (183mm)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_aht7"
+msgid "AHT-7"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t58"
+msgid "T58"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fv4025"
+msgid "FV4025"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ares90c"
+msgid "Ares 90C"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_blackrock"
+msgid "Blackrock"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_super_conquer"
+msgid "Super Conqueror"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amxm4"
+msgid "AMX M4"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx67"
+msgid "AMX 67"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_skink"
+msgid "Skink"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t803"
+msgid "T803"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_executor"
+msgid "Executor"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_grille_15_l63"
+msgid "Grille 15 'Pinocchio'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-100c"
+msgid "E-100 Ausf. C"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_pz8_woodland"
+msgid "Pz.Kpfw VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_pz8_tiger"
+msgid "Pz.Kpfw VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_pz8_winter"
+msgid "Pz.Kpfw VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_p1000"
+msgid "P1000"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vk1602"
+msgid "VK1602 'Leopard' 5cm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vk1602_30mm"
+msgid "VK1602 'Leopard' 3cm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vk1602_1943"
+msgid "VK1602-early 'Leopard' 5cm 1943"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e100aa"
+msgid "E-100 Ausf.B Field modification"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e100_15"
+msgid "E-100 15cm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-100hd"
+msgid "E-100 Super Heavy HD"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e79"
+msgid "E-79 'Panther III'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_lowe_1943"
+msgid "Pz.Kpfw VII 'Löwe' 1943"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_lowe_1944"
+msgid "Pz.Kpfw VII 'Löwe' 1944"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_lowehd"
+msgid "Pz.Kpfw VII 'Löwe'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_panther2"
+msgid "Pz.Kpfw V 'Panther II'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vk4503"
+msgid "VK4503"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_coelian_i"
+msgid "Flakpanzer V 'Coelian'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_type_5"
+msgid "Proto typeType 2605"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_jpze100"
+msgid "Jagdpanzer E-100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e75_ts_3dst"
+msgid "E-75 TS"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e100_gw"
+msgid "G.W. E-100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_dicker_max"
+msgid "Dicker Max"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_sturer_emil"
+msgid "Sturer Emil"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-50"
+msgid "E-50"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e25"
+msgid "E-25 Ausf.A"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e25x7"
+msgid "E-25 Ausf.B"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e40a"
+msgid "E-40 Ausf.A"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e75"
+msgid "E-75"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e90"
+msgid "E-90"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e90_ace"
+msgid "E-90 ACE"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e200_robztest"
+msgid "E-200"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e100_v1_robz"
+msgid "E-100 V-1"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e100_waffentrager_robz"
+msgid "E-100 Waffenträger"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vk3001d"
+msgid "VK 30.01 (D)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vk72_robztest"
+msgid "VK 72.01 (K)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kugelblitz"
+msgid "Kugelblitz"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_rhmb_wt"
+msgid "Rheinmetall Borsig WT"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_v1"
+msgid "Fieseler Fi 103 (V-1)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_v2_a4"
+msgid "Aggregat-4 (V-2)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e50gt"
+msgid "E-50 GT"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-50_75l100"
+msgid "E-50 7.5cm L/100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-50_105l68"
+msgid "E-50 10.5cm L/68"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-50_105l73"
+msgid "E-50 10.5cm L/73"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_88l71"
+msgid "E-75 8.8cm L/71"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_88l100"
+msgid "E-75 8.8cm L/100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_105l68"
+msgid "E-75 10.5cm L/68"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_105l73"
+msgid "E-75 10.5cm L/73"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_early"
+msgid "E-75 Early"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_sturm"
+msgid "E-75 Sturm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e-75_ts"
+msgid "E-75 TS(Standard Type)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_jagdpz_e-50"
+msgid "Jagdpanzer E-50"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_jagdpz_e-50_early"
+msgid "Jagdpanzer E-50 Early"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_jagdpz_e-75"
+msgid "Jagdpanzer E-75"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_jagdpz_e-75_sturm"
+msgid "Jagdpanzer E-75 Sturm"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e65"
+msgid "E-65"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e77"
+msgid "E-77"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_e90pz"
+msgid "Jagdpanzer E-90"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_flakmaus"
+msgid "Flakpanzer VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_gwe100"
+msgid "G.W. E-100 II"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_krv"
+msgid "KRV"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_mausking"
+msgid "Mausking"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_sge100"
+msgid "StuG E-100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_taschenratte"
+msgid "Taschenratte"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_tigermaus"
+msgid "Tiger-Maus"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_jpze100_2"
+msgid "Jagdpanzer E-100 II"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_gw_tiger"
+msgid "G.W. Tiger"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_lownn"
+msgid "Pz.Kpfw VII 'Löwe' N"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_o-ho"
+msgid "O-Ho"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_o_ni_2"
+msgid "O-Ni"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_type_5_heavy"
+msgid "Type 5 Heavy (late)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t26e5"
+msgid "T26E5"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_centurion_mk10"
+msgid "Centurion Mk.10"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_conqueror_mk2"
+msgid "Conqueror Mk.2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_is-4s"
+msgid "IS-4S"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj906"
+msgid "Object 906"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_chieftain5"
+msgid "Chieftain Mk.5"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_centurion3"
+msgid "Centurion Mk.3"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kampfpanzer_67"
+msgid "Kampfpanzer 67"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_maus_desert"
+msgid "Maus (Desert)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ct2"
+msgid "CT-2"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vz71"
+msgid "Vz. 71"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vz68"
+msgid "Vz. 68"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t-54_49"
+msgid "T-54-1949"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_gorilla"
+msgid "Gorilla"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fv4004_conway"
+msgid "FV4004 “Conway”"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fv4005_stage_2"
+msgid "FV4005"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx105"
+msgid "AMX 105"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx12t"
+msgid "AMX 12t"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_105"
+msgid "AMX 13 (105)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_75"
+msgid "AMX 13 (75)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_75_harpon"
+msgid "AMX 13 (75) 'Harpon'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_90"
+msgid "AMX 13 (90)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_90_harpon"
+msgid "AMX 13 (90) 'Harpon'"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_genie"
+msgid "AMX 13 Génie"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_maxson"
+msgid "AMX 13 Maxson"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx40_0"
+msgid "AMX 40"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx40_ww2"
+msgid "AMX 40 (WW2)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx50_100"
+msgid "AMX 50 100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx_50_foch"
+msgid "AMX 50 Foch"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx_50_t090"
+msgid "AMX 50 TO90"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx_50b"
+msgid "AMX 50 B"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx_auf1"
+msgid "AMX AuF1"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx_m4_1949"
+msgid "AMX M4 mle. 49"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx_mle48"
+msgid "AMX AC mle. 48"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bat25t"
+msgid "Bat.-Châtillon 25 t"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bdr_g1b_1934"
+msgid "BDR G1 B (1934)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bdr_g1b_dca30"
+msgid "BDR G1 B (DCA 30)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bdr_g1b_sa32"
+msgid "BDR G1 B (SA32)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_bdr_g1b_sa44"
+msgid "BDR G1 B (SA44)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_elc_amx"
+msgid "AMX ELC"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_foch155"
+msgid "AMX 50 Foch (155)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_lorraine40t_sd"
+msgid "Lorraine 40 t"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m4a1_fl10"
+msgid "M4A1 FL 10"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_m4a1_revalorise"
+msgid "M4A1 Revalorisé"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_somua_sm"
+msgid "Somua SM"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_panther_2"
+msgid "Pz.Kpfw II (8.8cm KwK 43 L/71)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_type91"
+msgid "Type 91"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ho_ru"
+msgid "Ho-Ru"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ke_to"
+msgid "Type 2 Ke-To"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ki_to"
+msgid "Ki-To"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_chi_ni"
+msgid "Chi-Ni"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t32"
+msgid "T32"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv8s"
+msgid "KV-8S"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv7_u13"
+msgid "KV-7 U-13"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t10"
+msgid "T-10M"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t10_d25t"
+msgid "IS-8"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_a20"
+msgid "A-20"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj_780"
+msgid "Object 780"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_tet100"
+msgid "Tet-100"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_zhane"
+msgid "Coccodrillo"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_tiger_h_west"
+msgid "Pz.Kpfw VI Tiger Ausf.H West Front"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_tiger_h_east"
+msgid "Pz.Kpfw VI Tiger Ausf.H East Front"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_xiniu"
+msgid "Rinoceronte"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_neu"
+msgid "Pz.Kpfw Neu"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_hori_shugo"
+msgid "Type 5 “Shu-Go”"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj268_c"
+msgid "Object 268 'St. John 's Wort' Type C"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj_268"
+msgid "Object 268 'St. John 's Wort' (With 25mm 72-K anti-aircraft gun)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_kv1_122"
+msgid "KV-1(122mm howitzer)"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_sfac105"
+msgid "SFAC 105"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_fauteur"
+msgid "Fauteur"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_amx13_dca"
+msgid "AMX 13 DCA"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_vfw"
+msgid "VFW"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_t34_44supply"
+msgid "T-34-85 (1944) Supply Tank"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_ke_ho"
+msgid "Type 5 Ke-Ho"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj705"
+msgid "Object 705"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj705a"
+msgid "Object 705A"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_obj704"
+msgid "Object 704"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_Jumbo90"
+msgid "M4/T26 “Jumbo”"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_T110E4"
+msgid "T110E4"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_centrx"
+msgid "Centurion Action X"
+msgstr ""
+
+msgctxt "desc/entity/doctrine_black_prince"
+msgid "Black Prince"
+msgstr ""

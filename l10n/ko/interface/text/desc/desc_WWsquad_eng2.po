@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_eng2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/single_tankman_ace_eng"
+msgid "Ace Tank Crew"
+msgstr ""
+
+msgctxt "info/special/single_tankman_ace_eng"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_firefly_ace"
+msgid "Firefly Ace Task Force"
+msgstr ""
+
+msgctxt "info/special/eng_kg_firefly_ace"
+msgid "<c(c3baae)>Veteran Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_desert_rats"
+msgid "7th Armored 'Desert Rats'"
+msgstr ""
+
+msgctxt "info/special/eng_kg_desert_rats"
+msgid "<c(c3baae)>Cruiser Tank Troop</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_matilda_inf"
+msgid "Matilda Infantry Support Group"
+msgstr ""
+
+msgctxt "info/special/eng_kg_matilda_inf"
+msgid "<c(c3baae)>Heavy Infantry Support</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_valentine"
+msgid "Valentine Assault Platoon"
+msgstr ""
+
+msgctxt "info/special/eng_kg_valentine"
+msgid "<c(c3baae)>Infantry Tank Platoon</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_churchill_croc"
+msgid "Churchill Crocodile Assault"
+msgstr ""
+
+msgctxt "info/special/eng_kg_churchill_croc"
+msgid "<c(c3baae)>Heavy Flame Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_guards_armoured"
+msgid "Guards Armoured Spearhead"
+msgstr ""
+
+msgctxt "info/special/eng_kg_guards_armoured"
+msgid "<c(c3baae)>Elite Armored Spearhead</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_irish_guards"
+msgid "Irish Guards Combined Arms"
+msgstr ""
+
+msgctxt "info/special/eng_kg_irish_guards"
+msgid "<c(c3baae)>Guards Mechanized</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_market_garden"
+msgid "Operation Market Garden Gliders"
+msgstr ""
+
+msgctxt "info/special/eng_kg_market_garden"
+msgid "<c(c3baae)>Airborne Light Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_commando_raid"
+msgid "Royal Commando Night Raid"
+msgstr ""
+
+msgctxt "info/special/eng_kg_commando_raid"
+msgid "<c(c3baae)>Special Forces Raid</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_achilles_troop"
+msgid "Achilles Tank Hunter Troop"
+msgstr ""
+
+msgctxt "info/special/eng_kg_achilles_troop"
+msgid "<c(c3baae)>Tank Destroyer Troop</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_sexton_battery"
+msgid "Sexton SPG Battery"
+msgstr ""
+
+msgctxt "info/special/eng_kg_sexton_battery"
+msgid "<c(c3baae)>Self-Propelled Artillery</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_comet_platoon"
+msgid "Comet Assault Platoon"
+msgstr ""
+
+msgctxt "info/special/eng_kg_comet_platoon"
+msgid "<c(c3baae)>Advanced Cruiser Tanks</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_cromwell_recon"
+msgid "Cromwell Armored Recon"
+msgstr ""
+
+msgctxt "info/special/eng_kg_cromwell_recon"
+msgid "<c(c3baae)>Fast Recon Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_kangaroo_assault"
+msgid "Canadian Kangaroo Assault"
+msgstr ""
+
+msgctxt "info/special/eng_kg_kangaroo_assault"
+msgid "<c(c3baae)>Mechanized Heavy Infantry</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_hobarts_funnies"
+msgid "Hobart's Funnies Special Armor"
+msgstr ""
+
+msgctxt "info/special/eng_kg_hobarts_funnies"
+msgid "<c(c3baae)>Special Engineering Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_polish_1st_ad"
+msgid "Polish 1st Armored Division"
+msgstr ""
+
+msgctxt "info/special/eng_kg_polish_1st_ad"
+msgid "<c(c3baae)>Allied Mechanized Force</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_challenger_troop"
+msgid "Challenger A30 Anti-Tank Troop"
+msgstr ""
+
+msgctxt "info/special/eng_kg_challenger_troop"
+msgid "<c(c3baae)>Heavy AT Cruiser</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_archer_ambush"
+msgid "Archer Ambush Position"
+msgstr ""
+
+msgctxt "info/special/eng_kg_archer_ambush"
+msgid "<c(c3baae)>Rear-Facing Ambush TD</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_sherman_tulip"
+msgid "Sherman Tulip Rocket Barrage"
+msgstr ""
+
+msgctxt "info/special/eng_kg_sherman_tulip"
+msgid "<c(c3baae)>Rocket Armed Mediums</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_grant_desert"
+msgid "El Alamein Grant Force"
+msgstr ""
+
+msgctxt "info/special/eng_kg_grant_desert"
+msgid "<c(c3baae)>Desert Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_churchill_qf75"
+msgid "Churchill QF 75mm Line"
+msgstr ""
+
+msgctxt "info/special/eng_kg_churchill_qf75"
+msgid "<c(c3baae)>Heavy Infantry Armor Line</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_wasp_flame"
+msgid "Wasp Flame Clearance Squad"
+msgstr ""
+
+msgctxt "info/special/eng_kg_wasp_flame"
+msgid "<c(c3baae)>Light Flame Carrier</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_staghound_patrol"
+msgid "Staghound Long Range Patrol"
+msgstr ""
+
+msgctxt "info/special/eng_kg_staghound_patrol"
+msgid "<c(c3baae)>Heavy Armored Car Patrol</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_aec_heavy_ac"
+msgid "AEC Heavy Cavalry Troop"
+msgstr ""
+
+msgctxt "info/special/eng_kg_aec_heavy_ac"
+msgid "<c(c3baae)>Heavy Armored Cavalry</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_tortoise_assault"
+msgid "Prototype: Tortoise Unstoppable Wall"
+msgstr ""
+
+msgctxt "info/special/eng_exp_tortoise_assault"
+msgid "<c(c3baae)>Super Heavy Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_conqueror_troop"
+msgid "Prototype: Conqueror Heavy Troop"
+msgstr ""
+
+msgctxt "info/special/eng_exp_conqueror_troop"
+msgid "<c(c3baae)>Cold War Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_death_star"
+msgid "Prototype: FV215b 183 'Death Star'"
+msgstr ""
+
+msgctxt "info/special/eng_exp_death_star"
+msgid "<c(c3baae)>Super Heavy TD Battery</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_super_conqueror"
+msgid "Prototype: Super Conqueror Spearhead"
+msgstr ""
+
+msgctxt "info/special/eng_exp_super_conqueror"
+msgid "<c(c3baae)>Ultimate Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_chieftain_vanguard"
+msgid "Prototype: Chieftain Cold War Vanguard"
+msgstr ""
+
+msgctxt "info/special/eng_exp_chieftain_vanguard"
+msgid "<c(c3baae)>Advanced MBT Troop</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_fv4025_troop"
+msgid "Prototype: FV4025 Experimental Troop"
+msgstr ""
+
+msgctxt "info/special/eng_exp_fv4025_troop"
+msgid "<c(c3baae)>Experimental Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_arl44_heavy"
+msgid "Prototype: French ARL 44 Revival"
+msgstr ""
+
+msgctxt "info/special/eng_exp_arl44_heavy"
+msgid "<c(c3baae)>French Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_char2c_behemoth"
+msgid "Prototype: Char 2C Behemoth Array"
+msgstr ""
+
+msgctxt "info/special/eng_exp_char2c_behemoth"
+msgid "<c(c3baae)>Super Heavy Land Cruiser</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_amx_coalition"
+msgid "Prototype: Anglo-French AMX Coalition"
+msgstr ""
+
+msgctxt "info/special/eng_exp_amx_coalition"
+msgid "<c(c3baae)>Oscillating Turret Force</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_nato_task_force"
+msgid "Prototype: NATO Early Task Force"
+msgstr ""
+
+msgctxt "info/special/eng_exp_nato_task_force"
+msgid "<c(c3baae)>Cold War Joint Task Force</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_fv215b_line"
+msgid "Prototype: FV215b Defensive Line"
+msgstr ""
+
+msgctxt "info/special/eng_exp_fv215b_line"
+msgid "<c(c3baae)>Heavy Defensive Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_executor_squadron"
+msgid "Prototype: Executor Elite Armored Cars"
+msgstr ""
+
+msgctxt "info/special/eng_exp_executor_squadron"
+msgid "<c(c3baae)>Super Heavy Armored Car</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_caernarvon_troop"
+msgid "Prototype: Caernarvon Assault Troop"
+msgstr ""
+
+msgctxt "info/special/eng_exp_caernarvon_troop"
+msgid "<c(c3baae)>Heavy Assault Vanguard</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_arl44_acl1"
+msgid "Prototype: ARL 44 ACL1 Early Resistance"
+msgstr ""
+
+msgctxt "info/special/eng_exp_arl44_acl1"
+msgid "<c(c3baae)>Early French Heavy</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_centurion3_push"
+msgid "Prototype: Centurion Mk3 Hammer"
+msgstr ""
+
+msgctxt "info/special/eng_exp_centurion3_push"
+msgid "<c(c3baae)>Advanced MBT Push</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_tog2_breakthrough"
+msgid "Prototype: TOG II Landship Assault"
+msgstr ""
+
+msgctxt "info/special/eng_exp_tog2_breakthrough"
+msgid "<c(c3baae)>Landship Breakthrough</c>"
+msgstr ""

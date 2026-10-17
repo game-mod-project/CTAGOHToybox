@@ -1,0 +1,890 @@
+# source: mod_2905667604 interface/text/desc/desc_squads_con_jap_mace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/conquest_ki_57"
+msgid "Mitsubishi Ki-57 'Topsy' Paratrooper"
+msgstr ""
+
+msgctxt "desc/squad/conquest_a6m3"
+msgid "A6M3 60kg Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_b5n2_250kg"
+msgid "B5N2 250kg Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_b5n2_800kg"
+msgid "B5N2 800kg Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_kikka"
+msgid "Nakajima Kikka 500kg Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_kikka_800kg"
+msgid "Nakajima Kikka 800kg Bomb"
+msgstr ""
+
+msgctxt "desc/squad/conquest_ki_46_II"
+msgid "Ki 46 II Recon"
+msgstr ""
+
+msgctxt "desc/squad/single_grenade_rifle_late_con(jap)"
+msgid "AT Rifle Grenadiers"
+msgstr ""
+
+msgctxt "desc/squad/squad_at_late_con(jap)"
+msgid "AT Squad"
+msgstr ""
+
+msgctxt "desc/squad/single_ap_miner_snlf_con(jap)"
+msgid "AP Miners (IJN)"
+msgstr ""
+
+msgctxt "desc/squad/single_at_miner_snlf_con(jap)"
+msgid "AT Miners (IJN)"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_type_95_con"
+msgid "Type 95 Kurogane (Command)"
+msgstr ""
+
+msgctxt "desc/squad/81mm_type97_mortar_barrage"
+msgid "Medium Mortar Barrage"
+msgstr ""
+
+msgctxt "desc/squad/120mm_type2_mortar_barrage"
+msgid "Heavy Mortar Barrage"
+msgstr ""
+
+msgctxt "desc/squad/type_92_10cm_smoke_barrage"
+msgid "Medium Smoke Barrage"
+msgstr ""
+
+msgctxt "desc/squad/type_92_10cm_artillery_barrage"
+msgid "Medium Artillery Barrage"
+msgstr ""
+
+msgctxt "desc/squad/150mm_type_96_artillery_barrage"
+msgid "Heavy Artillery Barrage"
+msgstr ""
+
+msgctxt "desc/squad/ki_148_ammo_dummy"
+msgid "Ki 148 Radio Controlled Guided Rocket"
+msgstr ""
+
+msgctxt "desc/stuff/ki_148_ammo_dummy"
+msgid "Ki 148 Radio Controlled Guided Rocket"
+msgstr ""
+
+msgctxt "desc/entity/ki_148_ammo_dummy"
+msgid "Ki 148 Radio Controlled Guided Rocket"
+msgstr ""
+
+msgctxt "desc/squad/ki_148_ammo_dummy"
+msgid "Ki 148 Radio Controlled Guided Rocket"
+msgstr ""
+
+msgctxt "desc/squad/ki_148_artillery_barrage"
+msgid "Ki 148 Strike <c(F44336)>CAN MISS TARGET</c>"
+msgstr ""
+
+msgctxt "desc/squad/kikka2"
+msgid "Nakajima Kikka"
+msgstr ""
+
+msgctxt "desc/squad/ki_46_II"
+msgid "Ki 46 II Recon"
+msgstr ""
+
+msgctxt "desc/squad/team_officer_con(jap)"
+msgid "Command Team"
+msgstr ""
+
+msgctxt "desc/squad/single_signaller_yamato(jap)"
+msgid "Heavy Artillery Signaller [IJN]"
+msgstr ""
+
+msgctxt "desc/squad/single_signaller(jap)"
+msgid "Artillery Signaller [IJA]"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_shi_ki_con"
+msgid "Type 97 Shi-Ki (Command)"
+msgstr ""
+
+msgctxt "desc/squad/squad_mia_local_late_con(jap)"
+msgid "<c(A5A095)>(0)</c> GMIA Militia Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_peta_hei_late_con(jap)"
+msgid "<c(A5A095)>(0)</c> PETA Hei-Ho Militia Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kokumin_con(jap)"
+msgid "<c(A5A095)>(0)</c> Kokumin Giyutai"
+msgstr ""
+
+msgctxt "desc/squad/squad_kokumin_late_con(jap)"
+msgid "<c(A5A095)>(0)</c> Kokumin Giyutai (Late)"
+msgstr ""
+
+msgctxt "desc/squad/squad_gakutai_late_con(jap)"
+msgid "<c(A5A095)>(0)</c> Gakutotai"
+msgstr ""
+
+msgctxt "desc/squad/squad_hei_ho_con(jap)"
+msgid "<c(A5A095)>(0)</c> Hei-Ho Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_rngc_guerilla_grenadier_con(jap)"
+msgid "<c(A5A095)>(1)</c> PNA Anti-Guerrilla Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_bandit_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> PNA Anti-Bandit Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_aux_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> MNA Auxiliary Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gmia_rifle_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> GMIA Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_ina_guerilla_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> INA Guerrilla Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_bandit_lmg_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> PNA Anti-Bandit LMG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_aux_lmg_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> MNA Auxiliary LMG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gmia_lmg_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> GMIA LMG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_boeitai_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Boeitai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_boeitai_gren_late(jap)"
+msgid "<c(A5A095)>(1)</c> Boeitai Mortar Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_cea_rifle_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> CEA Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_cea_scout_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> CEA Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_cea_pio_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> CEA Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_cea_gren_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> CEA Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_rusu_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Rusu Shidan Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_rusu_gren_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Rusu Shidan Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gokyotai_con(jap)"
+msgid "<c(A5A095)>(1)</c> Gokyotai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_border_guard_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Border Guards Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_border_guard_gren_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Border Guards Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_laborer_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Setsueitai Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_airfield1_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Airfield Defense Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_airfield2_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Airfield Defense Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_airfield_pio_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Airfield Defense Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_keisatsutai_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Tokubetsu Keisatsutai"
+msgstr ""
+
+msgctxt "desc/squad/squad_nlf_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> NLF Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_labourer_late_con(jap)"
+msgid "<c(A5A095)>(1)</c> Navy Kenchiku Shisetsu Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_giyugun_con(jap)"
+msgid "<c(A5A095)>(1)</c> Giyugun Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_prot_con(jap)"
+msgid "<c(A5A095)>(2)</c> Special Amphibious Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_prot_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> Special Amphibious Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Rifle Squad "
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_assault_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_security_con(jap)"
+msgid "<c(A5A095)>(2)</c> Security Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_assault_con(jap)"
+msgid "<c(A5A095)>(2)</c> Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_garrison_pioneer_con(jap)"
+msgid "<c(A5A095)>(2)</c> Island Defence Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_garrison_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> Island Defence Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_csnlf_rifle_con(jap)"
+msgid "<c(A5A095)>(2)</c> CSNLF Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_csnlf_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> CSNLF Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_csnlf_hq_con(jap)"
+msgid "<c(A5A095)>(2)</c> CSNLF HQ Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_tesseki_butai_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIA Tesseki Butai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_min_marine_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIN Marine Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_peace_guard_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> PNA Peace Guard Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_cav_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> MNA Cavalry Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gmia_cav_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIA Cavalry Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_peace_guard_pio_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> PNA Peace Guard Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_ina_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> INA Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_ina_scout_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> INA Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_tesseki_butai_gren_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIA Tesseki Butai Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gmia_cav_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIA Cavalry Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_min_police_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIN Police Patrol Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_peta_patrol_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> PETA Giyugun Patrol Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_peta_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> PETA Kyodo Boei Giyugun Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_peta_rifle_lmg_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> PETA Kyodo Boei Giyugun LMG Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mia_scout_con(jap)"
+msgid "<c(A5A095)>(2)</c> GMIA Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Rifle Squad (Var.1)"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf2_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Rifle Squad (Var.2)"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf3_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Rifle Squad (Var.3)"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_gren_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_recon_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Recon Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_conense_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Defense Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_guard_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Guards Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_guard_gren_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Guards Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_low_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Substandard Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_improved_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Improved Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gren_low_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Substandard Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gren_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_motor_rifle_late_con"
+msgid "<c(A5A095)>(2)</c> Motorized Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_motor_grenadier_late_con"
+msgid "<c(A5A095)>(2)</c> Motorized Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_scout_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mounted_recon_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Mounted Recon Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mounted_recon_gren_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Mounted Recon Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pioneer1_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pioneer2_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kempeitai_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Kempeitai Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_gren_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_at_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious AT-Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_mortar_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Mortar Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_amphibious_pioneer_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Amphibious Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_at_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> AT-Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_security_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> Security Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_defense_late_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Defense Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_home_guard_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> Special Indep. Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf2_assault_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Assault Squad (Late)"
+msgstr ""
+
+msgctxt "desc/squad/squad_18th_rifle_con(jap)"
+msgid "<c(A5A095)>(2+)</c> 18th Shindan Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_gren_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf2_con(jap)"
+msgid "<c(A5A095)>(2)</c> SNLF Rifle Squad (Late)"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_aux_con(jap)"
+msgid "<c(A5A095)>(2)</c> MNA Infantry Auxiliary Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_cav_con(jap)"
+msgid "<c(A5A095)>(2+)</c> MNA Cavalry Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_railway_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> GMIA Kirin Railway Guards Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_railway_gren_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> GMIA KKirin Railway Guards Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_16th_rifle_con(jap)"
+msgid "<c(A5A095)>(2+)</c> 16th Shindan Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_south_scout_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> Veteran Scout Squad (South)"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_south_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Squad (South)"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_south_gren_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> Veteran Grenadier Squad (South)"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_chi_rifle_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> Veteran Rifle Squad (China)"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_chi_lmg_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> Veteran LMG Squad (China)"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_chi_gren_late_con(jap)"
+msgid "<c(A5A095)>(2+)</c> Veteran Grenadier Squad (China)"
+msgstr ""
+
+msgctxt "desc/squad/squad_cav_gren_con(jap)"
+msgid "<c(A5A095)>(3)</c> Kihei Recon Gren. Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_hq_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka SNLF HQ Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_rifle_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka SNLF Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_rifle2_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka SNLF Rifle Squad (Late)"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_scout_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka SNLF Recon Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_pioneer_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka SNLF Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_csnlf_rifle_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka CSNLF Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_gren_squad_con(jap)"
+msgid "<c(A5A095)>(3)</c> Yokosuka SNLF Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kido_late_con(jap)"
+msgid "<c(A5A095)>(3+)</c> Kido Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_special_ind_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Special Indep. Rifle Squad (1945+)"
+msgstr ""
+
+msgctxt "desc/squad/squad_special_ind_gren_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Special Indep. Grenadier Squad (1945+)"
+msgstr ""
+
+msgctxt "desc/squad/squad_special_amphibious_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Special Amphibious Rifle Squad (1945+)"
+msgstr ""
+
+msgctxt "desc/squad/squad_special_amphibious_gren_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Special Amphibious Grenadier Squad (1945+)"
+msgstr ""
+
+msgctxt "desc/squad/squad_kiheitai_rifle_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Kiheitai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kiheitai_lmg_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Kiheitai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kiheitai_gren_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Kiheitai Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_takasago_scout_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Takasago Giyutai Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_takasago_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Takasago Giyutai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_takasago_gren_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Takasago Giyutai Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_armor_rifle_late_con"
+msgid "<c(A5A095)>(3)</c> Armored Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_armor_pio_late_con"
+msgid "<c(A5A095)>(3)</c> Armored Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kanto_mobile_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Kanto Mobile Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kanto_mobile_gren_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Kanto Mobile Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_nikuhaku_con(jap)"
+msgid "<c(A5A095)>(3)</c> Teishintai Assault Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_nikuhaku_tank_hunter_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> Teishintai Tank Hunter Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_chien_taoi_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> GMIA Chien Tao Tui Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_chien_taoi_mortar_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> GMIA Chien Tao Tui Mortar Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mia_imperial_rifle_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> GMIA Imperial Guard Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_capital_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> PNA Capital Guard Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mia_imperial_rifle_gren_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> GMIA Imperial Guard Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_peace_cav_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> PNA Peace Guard Cavalry Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_capital_cav_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> PNA Peace Guard Cavalry Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mia_imperial_cav_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> GMIA Imperial Guard Cavalry Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_cav_honor_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> MNA Cavalry Guardian Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_assault_light_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> SNLF Assault Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_assault_heavy_late_con(jap)"
+msgid "<c(A5A095)>(3)</c> SNLF Assault Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kanto_gren_con(jap)"
+msgid "<c(A5A095)>(3+)</c> Kanto Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_takasago_2_con(jap)"
+msgid "<c(A5A095)>(3+)</c> Tasakago Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_1th_rifle_con"
+msgid "<c(A5A095)>(3+)</c> 1st Jade Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_1th_grenadier_con"
+msgid "<c(A5A095)>(3+)</c> 1st Jade Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_elite_rifle_late_con(jap)"
+msgid "<c(A5A095)>(3+)</c> Elite Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_elite_gren_late_con(jap)"
+msgid "<c(A5A095)>(3+)</c> Elite Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kido_mobile_late_con(jap)"
+msgid "<c(A5A095)>(3+)</c> Kido Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_5th_shindan_scout_late_con"
+msgid "<c(A5A095)>(3+)</c> 5th Shindan Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_5th_shindan_rifle_late_con"
+msgid "<c(A5A095)>(3+)</c> 5th Shindan Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_5th_shindan_gren_late_con"
+msgid "<c(A5A095)>(3+)</c> 5th Shindan Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_mna_cav_guard_con(jap)"
+msgid "<c(A5A095)>(3+)</c> MNA Cavalry Guardian Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_teishin_shudan_eng_con(jap)"
+msgid "<c(A5A095)>(4)</c> Teishin Shudan Engineer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_yugeki_con(jap)"
+msgid "<c(A5A095)>(4)</c> Yugeki Light Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_yugeki_heavy_con(jap)"
+msgid "<c(A5A095)>(4)</c> Yugeki Heavy Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kure_rifle_con(jap)"
+msgid "<c(A5A095)>(4)</c> 101st Kure SNLF Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kure_assault_con(jap)"
+msgid "<c(A5A095)>(4)</c> 101st Kure SNLF Assault Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kure_gren_con(jap)"
+msgid "<c(A5A095)>(4)</c> 101st Kure SNLF Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_yugeki_light_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Yugeki Light Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_yugeki_heavy_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Yugeki Heavy Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gigo_commando_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Gigo Force Commando Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_giretsu_kuteitai_late_con(jap)"
+msgid "<c(A5A095)>(4+)</c> Giretsu Kuteitai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_rifle_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_gren_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_scout_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_pioneer_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_cav_rifle_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Cavalry Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_cav_lmg_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Cavalry Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_imperial_guard_cav_gren_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Konoe Shidan Cavalry Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_teishin_scout_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Teishin Shudan Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_teishin_rifle_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Teishin Shudan Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_teishin_pioneer_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Teishin Shudan Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kakku_rifle_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Kakku Hohei Rentai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_kakku_demolition_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> Kakku Hohei Rentai Demolition Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_asano_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> GMIA Asano Cavalry Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_asano_gren_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> GMIA Asano Cavalry Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gando_special_force_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> GMIA Gando Special Force"
+msgstr ""
+
+msgctxt "desc/squad/squad_pna_police_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> PNA Salt Tax Police Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kuteitai_rifle_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kuteitai_smg_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kuteitai_grenadier_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kuteitai_demolition_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Demolition Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kuteitai_scout_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Scout Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_kuteitai_pioneer_late_con(jap)"
+msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Pioneer Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_gando_special_force_con(jap)"
+msgid "<c(A5A095)>(4)</c> GMIA Gando Special Force"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_101st_rifle_late_con(jap)"
+msgid "<c(A5A095)>(4+)</c> 101st Kure SNLF Rifle Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_101st_gren_late_con(jap)"
+msgid "<c(A5A095)>(4+)</c> 101st Kure SNLF Grenadier Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_snlf_101st_assault_late_con(jap)"
+msgid "<c(A5A095)>(4+)</c> 101st Kure SNLF Assault Squad"
+msgstr ""
+
+msgctxt "desc/squad/squad_tokumu_late_con(jap)"
+msgid "<c(A5A095)>(4+)</c> Tokumu Kikan Squad"
+msgstr ""
+
+msgctxt "desc/squad/tank_mounted_variant_1_late_con"
+msgid "<c(A5A095)>(2)</c> Armored Recon Platoon (Type 94)"
+msgstr ""
+
+msgctxt "desc/squad/tank_mounted_variant_2_late_con"
+msgid "<c(A5A095)>(3)</c> Armored Recon Platoon (Type 97)"
+msgstr ""

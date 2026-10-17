@@ -1,0 +1,34 @@
+# source: mod_2905667604 interface/text/dlg_frontend_zace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms (dlg_frontend)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "main_menu2/dynamic_campaign/hint_difficulty_easy"
+msgid "Easy Difficulty: \n• Greatly reduces enemy infantry health \n• Greatly reduces enemy weapon accuracy for all units \n• Reduces enemy rate of throwing grenades \n• Greatly increases player infantry health \n• Increases friendly AI infantry health \n• Only biplanes will spawn on the first six days (Mace)"
+msgstr ""
+
+msgctxt "main_menu2/dynamic_campaign/hint_difficulty_normal"
+msgid "Normal Difficulty: \n• Reduces enemy infantry health \n• Reduces enemy weapon accuracy for all units \n• All other stats are at standard values \n• Only biplanes will spawn on the first six days (Mace)"
+msgstr ""
+
+msgctxt "main_menu2/dynamic_campaign/hint_difficulty_hard"
+msgid "Hard Difficulty: \n• Reduces enemy infantry health \n• Slightly reduces enemy weapon accuracy for all units \n• All other stats are at standard values \n• Only biplanes will spawn on the first six days (Mace)"
+msgstr ""
+
+msgctxt "main_menu2/dynamic_campaign/hint_difficulty_heroic"
+msgid "Hardcore Difficulty: \n• Slightly reduces enemy infantry health \n• All other stats are at standard values \n• Planes can spawn in every mission \n• Airstrikes will directly bomb the target, with no scouting pass (Mace)"
+msgstr ""
+
+msgctxt "version_short_string"
+msgid "Call to Arms - Gates of Hell version %1% - <c(FFA500)>Multiplayer and Conquest Expanded Mod 1.80"
+msgstr ""

@@ -1,0 +1,342 @@
+# source: mod_3732639687 interface/text/desc/desc_WWsquad_rus2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/single_tankman_ace_rus"
+msgid "Elite Guard Tank Crew"
+msgstr ""
+
+msgctxt "info/special/single_tankman_ace_rus"
+msgid "<c(c3baae)>Elite Crew</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_t34_76_early"
+msgid "Kampfgruppe T-34 (Early)"
+msgstr ""
+
+msgctxt "info/special/rus_kg_t34_76_early"
+msgid "<c(c3baae)>Medium Armor Swarm</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_t34_76_late"
+msgid "Kampfgruppe T-34 (1943)"
+msgstr ""
+
+msgctxt "info/special/rus_kg_t34_76_late"
+msgid "<c(c3baae)>Medium Armor Swarm</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_t34_85_mass"
+msgid "T-34/85 Armored Wave"
+msgstr ""
+
+msgctxt "info/special/rus_kg_t34_85_mass"
+msgid "<c(c3baae)>Main Battle Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_kv1_shock"
+msgid "KV-1 Shock Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_kv1_shock"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_is2_breakthrough"
+msgid "IS-2 Breakthrough Spearhead"
+msgstr ""
+
+msgctxt "info/special/rus_kg_is2_breakthrough"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_su85_ambush"
+msgid "SU-85 Tank Destroyer Battery"
+msgstr ""
+
+msgctxt "info/special/rus_kg_su85_ambush"
+msgid "<c(c3baae)>TD Ambush Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_su100_hunter"
+msgid "SU-100 Hunter-Killer Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_su100_hunter"
+msgid "<c(c3baae)>Heavy TD Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_isu152_beast"
+msgid "ISU-152 'Beast Killer' Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_isu152_beast"
+msgid "<c(c3baae)>Assault Gun Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_kv2_bunker"
+msgid "KV-2 Bunker Buster Force"
+msgstr ""
+
+msgctxt "info/special/rus_kg_kv2_bunker"
+msgid "<c(c3baae)>Bunker Buster Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_light_recon"
+msgid "T-70M Reconnaissance Platoon"
+msgstr ""
+
+msgctxt "info/special/rus_kg_light_recon"
+msgid "<c(c3baae)>Light Recon Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_bt7_swarm"
+msgid "BT-7 Fast Cavalry"
+msgstr ""
+
+msgctxt "info/special/rus_kg_bt7_swarm"
+msgid "<c(c3baae)>Fast Cavalry Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_lend_lease_sherman"
+msgid "Lend-Lease Sherman Battalion"
+msgstr ""
+
+msgctxt "info/special/rus_kg_lend_lease_sherman"
+msgid "<c(c3baae)>Lend-Lease Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_lend_lease_mixed"
+msgid "Lend-Lease British Mix"
+msgstr ""
+
+msgctxt "info/special/rus_kg_lend_lease_mixed"
+msgid "<c(c3baae)>Lend-Lease Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_is1_spearhead"
+msgid "IS-1 Vanguard Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_is1_spearhead"
+msgid "<c(c3baae)>Heavy Spearhead</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_su122_assault"
+msgid "SU-122 Assault Battery"
+msgstr ""
+
+msgctxt "info/special/rus_kg_su122_assault"
+msgid "<c(c3baae)>Assault Gun Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_su76_support"
+msgid "SU-76 Infantry Support Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_su76_support"
+msgid "<c(c3baae)>Infantry Support Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_rbt5_barrage"
+msgid "RBT-5 Rocket Barrage Force"
+msgstr ""
+
+msgctxt "info/special/rus_kg_rbt5_barrage"
+msgid "<c(c3baae)>Rocket Artillery Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_tank_desant_t34"
+msgid "T-34 Tank Desant Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_tank_desant_t34"
+msgid "<c(c3baae)>Tank & Infantry Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_guards_tank_desant"
+msgid "Guards Heavy Tank Desant"
+msgstr ""
+
+msgctxt "info/special/rus_kg_guards_tank_desant"
+msgid "<c(c3baae)>Elite Combined Arms</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_urban_assault"
+msgid "KV-85 Urban Assault Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_urban_assault"
+msgid "<c(c3baae)>Urban Assault Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_heavy_spg"
+msgid "Kursk Heavy TD Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_heavy_spg"
+msgid "<c(c3baae)>Heavy TD Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_ba10_scout"
+msgid "BA-10 Armored Recon Company"
+msgstr ""
+
+msgctxt "info/special/rus_kg_ba10_scout"
+msgid "<c(c3baae)>Armored Recon</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_aa_defense"
+msgid "ZSU-37 Mobile AA Battery"
+msgstr ""
+
+msgctxt "info/special/rus_kg_aa_defense"
+msgid "<c(c3baae)>Mobile AA Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_is3_shock"
+msgid "IS-3 Victory Shock Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_is3_shock"
+msgid "<c(c3baae)>Heavy Victory Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_t44_flank"
+msgid "T-44 Cold War Vanguard"
+msgstr ""
+
+msgctxt "info/special/rus_kg_t44_flank"
+msgid "<c(c3baae)>Late War Medium Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_kv85_transition"
+msgid "KV-85 Transition Group"
+msgstr ""
+
+msgctxt "info/special/rus_kg_kv85_transition"
+msgid "<c(c3baae)>Heavy Breakthrough</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_is2_45_veteran"
+msgid "IS-2 '45 Veteran Spearhead"
+msgstr ""
+
+msgctxt "info/special/rus_kg_is2_45_veteran"
+msgid "<c(c3baae)>Veteran Heavy Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_su100y_bunker_buster"
+msgid "SU-100Y Naval Gun Assault"
+msgstr ""
+
+msgctxt "info/special/rus_kg_su100y_bunker_buster"
+msgid "<c(c3baae)>Super Heavy Assault Gun</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_exp_is7_apocalypse"
+msgid "Wunderwaffe: IS-7 Apocalypse"
+msgstr ""
+
+msgctxt "info/special/rus_exp_is7_apocalypse"
+msgid "<c(c3baae)>Prototype Heavy Spearhead</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_exp_obj279_nuclear"
+msgid "Wunderwaffe: Object 279 Nuclear Spearhead"
+msgstr ""
+
+msgctxt "info/special/rus_exp_obj279_nuclear"
+msgid "<c(c3baae)>Nuclear Survivor Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_exp_kv6_behemoth"
+msgid "Wunderwaffe: KV-6 Land Cruiser"
+msgstr ""
+
+msgctxt "info/special/rus_exp_kv6_behemoth"
+msgid "<c(c3baae)>Land Cruiser Group</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_exp_obj263_sniper"
+msgid "Wunderwaffe: Object 263 Siberian Sniper"
+msgstr ""
+
+msgctxt "info/special/rus_exp_obj263_sniper"
+msgid "<c(c3baae)>Prototype TD Ambush</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_exp_obj490_future"
+msgid "Wunderwaffe: Object 490 Future Sight"
+msgstr ""
+
+msgctxt "info/special/rus_exp_obj490_future"
+msgid "<c(c3baae)>Future Tech Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_exp_super_heavy_spg"
+msgid "Wunderwaffe: Obj 261 Orbital Strike"
+msgstr ""
+
+msgctxt "info/special/rus_exp_super_heavy_spg"
+msgid "<c(c3baae)>Prototype Super SPG</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_t54_oder"
+msgid "Oder River Assault Group (T-54 '47)"
+msgstr ""
+
+msgctxt "info/special/rus_kg_t54_oder"
+msgid "<c(c3baae)>Cold War Vanguard</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_is7_shock"
+msgid "IS-7 Shock Guard"
+msgstr ""
+
+msgctxt "info/special/rus_kg_is7_shock"
+msgid "<c(c3baae)>Ultimate Shock Armor</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_obj279_nbc"
+msgid "Object 279 NBC Vanguard"
+msgstr ""
+
+msgctxt "info/special/rus_kg_obj279_nbc"
+msgid "<c(c3baae)>Nuclear Survivor Mech</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_isu130_penal"
+msgid "Penal Assault Kampfgruppe"
+msgstr ""
+
+msgctxt "info/special/rus_kg_isu130_penal"
+msgid "<c(c3baae)>Heavy Assault & Flame</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_t44_desant"
+msgid "T-44 Experimental Desant"
+msgstr ""
+
+msgctxt "info/special/rus_kg_t44_desant"
+msgid "<c(c3baae)>Naval Infantry Assault</c>"
+msgstr ""
+
+msgctxt "desc/squad/rus_kg_obj260_guard"
+msgid "Object 260 Guard Array"
+msgstr ""
+
+msgctxt "info/special/rus_kg_obj260_guard"
+msgid "<c(c3baae)>Prototype Guard Force</c>"
+msgstr ""

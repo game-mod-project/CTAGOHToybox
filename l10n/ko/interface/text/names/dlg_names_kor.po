@@ -1,0 +1,46 @@
+# source: mod_2905667604 interface/text/names/dlg_names_kor.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms - Gates of Hell: Ostfront (names for finland)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "names/kor/first"
+msgid "Cheol\nDong-hun\nEun-sik\nGi-beom\nHa-neul\nHee-sung\nHyeon-su\nIn-ho\nJae-hyun\nJin-seok\nJong-su\nJun-ho\nKi-tae\nMan-seok\nMin-jun\nMyung-ho\nNam-sik\nSang-hoon\nSeok-jin\nSeung-hwan\nSi-woo\nSoo-hyun\nSung-min\nTae-ho\nWon-seok\nYong-chul\nYong-ho\nYoon-seok\nYoung-min\nChang-ho\nChul-soo\nDo-hyun\nGeon-woo\nGwang-su\nHa-jun\nHyeon-woo\nIl-seok\nJae-won\nJong-hyuk\nJoon-young\nKyung-ho\nMin-seok\nSang-jin\nSeok-ho\nSeung-min\nTae-jin\nWoo-jin\nYong-seok\nYoon-ho\nYoung-ho\nBo-kyung\nEun-hee\nGa-young\nHye-jin\nHyun-jung\nJi-eun\nJi-young\nJung-hee\nKyung-sook\nMi-kyung\nMi-sook\nMin-hee\nNa-young\nSoo-jin\nSun-hee\nYeon-hee\nYoung-ae\nYoung-hee\n"
+msgstr ""
+
+msgctxt "names/kor/last"
+msgid "Kim\nLee\nPark\nChoi\nJung\nKang\nCho\nYoon\nJang\nIm\nShin\nHan\nOh\nSeo\nJeon\nKwon\nHwang\nAhn\nSong\nHong\nYang\nLim\nBaek\nYoo\nNam\nHa\nRyu\nKo\nByun\nYim\nMoon\nSim\nNa\nBae\nJoo\nEom\nCha\nGong\nGil\nJin\nMa\nHuh\nWi\nJee\nNo\n"
+msgstr ""
+
+msgctxt "names/kor_medic/first"
+msgid "Cheol\nDong-hun\nEun-sik\nGi-beom\nHa-neul\nHee-sung\nHyeon-su\nIn-ho\nJae-hyun\nJin-seok\nJong-su\nJun-ho\nKi-tae\nMan-seok\nMin-jun\nMyung-ho\nNam-sik\nSang-hoon\nSeok-jin\nSeung-hwan\nSi-woo\nSoo-hyun\nSung-min\nTae-ho\nWon-seok\nYong-chul\nYong-ho\nYoon-seok\nYoung-min\nChang-ho\nChul-soo\nDo-hyun\nGeon-woo\nGwang-su\nHa-jun\nHyeon-woo\nIl-seok\nJae-won\nJong-hyuk\nJoon-young\nKyung-ho\nMin-seok\nSang-jin\nSeok-ho\nSeung-min\nTae-jin\nWoo-jin\nYong-seok\nYoon-ho\nYoung-ho\nBo-kyung\nEun-hee\nGa-young\nHye-jin\nHyun-jung\nJi-eun\nJi-young\nJung-hee\nKyung-sook\nMi-kyung\nMi-sook\nMin-hee\nNa-young\nSoo-jin\nSun-hee\nYeon-hee\nYoung-ae\nYoung-hee\n"
+msgstr ""
+
+msgctxt "names/kor_medic/last"
+msgid "Kim\nLee\nPark\nChoi\nJung\nKang\nCho\nYoon\nJang\nIm\nShin\nHan\nOh\nSeo\nJeon\nKwon\nHwang\nAhn\nSong\nHong\nYang\nLim\nBaek\nYoo\nNam\nHa\nRyu\nKo\nByun\nYim\nMoon\nSim\nNa\nBae\nJoo\nEom\nCha\nGong\nGil\nJin\nMa\nHuh\nWi\nJee\nNo\n"
+msgstr ""
+
+msgctxt "names/kor_officer/first"
+msgid "Cheol\nDong-hun\nEun-sik\nGi-beom\nHa-neul\nHee-sung\nHyeon-su\nIn-ho\nJae-hyun\nJin-seok\nJong-su\nJun-ho\nKi-tae\nMan-seok\nMin-jun\nMyung-ho\nNam-sik\nSang-hoon\nSeok-jin\nSeung-hwan\nSi-woo\nSoo-hyun\nSung-min\nTae-ho\nWon-seok\nYong-chul\nYong-ho\nYoon-seok\nYoung-min\nChang-ho\nChul-soo\nDo-hyun\nGeon-woo\nGwang-su\nHa-jun\nHyeon-woo\nIl-seok\nJae-won\nJong-hyuk\nJoon-young\nKyung-ho\nMin-seok\nSang-jin\nSeok-ho\nSeung-min\nTae-jin\nWoo-jin\nYong-seok\nYoon-ho\nYoung-ho\nBo-kyung\nEun-hee\nGa-young\nHye-jin\nHyun-jung\nJi-eun\nJi-young\nJung-hee\nKyung-sook\nMi-kyung\nMi-sook\nMin-hee\nNa-young\nSoo-jin\nSun-hee\nYeon-hee\nYoung-ae\nYoung-hee\n"
+msgstr ""
+
+msgctxt "names/kor_officer/last"
+msgid "Kim\nLee\nPark\nChoi\nJung\nKang\nCho\nYoon\nJang\nIm\nShin\nHan\nOh\nSeo\nJeon\nKwon\nHwang\nAhn\nSong\nHong\nYang\nLim\nBaek\nYoo\nNam\nHa\nRyu\nKo\nByun\nYim\nMoon\nSim\nNa\nBae\nJoo\nEom\nCha\nGong\nGil\nJin\nMa\nHuh\nWi\nJee\nNo\n"
+msgstr ""
+
+msgctxt "names/kor_sniper/first"
+msgid "Cheol\nDong-hun\nEun-sik\nGi-beom\nHa-neul\nHee-sung\nHyeon-su\nIn-ho\nJae-hyun\nJin-seok\nJong-su\nJun-ho\nKi-tae\nMan-seok\nMin-jun\nMyung-ho\nNam-sik\nSang-hoon\nSeok-jin\nSeung-hwan\nSi-woo\nSoo-hyun\nSung-min\nTae-ho\nWon-seok\nYong-chul\nYong-ho\nYoon-seok\nYoung-min\nChang-ho\nChul-soo\nDo-hyun\nGeon-woo\nGwang-su\nHa-jun\nHyeon-woo\nIl-seok\nJae-won\nJong-hyuk\nJoon-young\nKyung-ho\nMin-seok\nSang-jin\nSeok-ho\nSeung-min\nTae-jin\nWoo-jin\nYong-seok\nYoon-ho\nYoung-ho\nBo-kyung\nEun-hee\nGa-young\nHye-jin\nHyun-jung\nJi-eun\nJi-young\nJung-hee\nKyung-sook\nMi-kyung\nMi-sook\nMin-hee\nNa-young\nSoo-jin\nSun-hee\nYeon-hee\nYoung-ae\nYoung-hee\n"
+msgstr ""
+
+msgctxt "names/kor_sniper/last"
+msgid "Kim\nLee\nPark\nChoi\nJung\nKang\nCho\nYoon\nJang\nIm\nShin\nHan\nOh\nSeo\nJeon\nKwon\nHwang\nAhn\nSong\nHong\nYang\nLim\nBaek\nYoo\nNam\nHa\nRyu\nKo\nByun\nYim\nMoon\nSim\nNa\nBae\nJoo\nEom\nCha\nGong\nGil\nJin\nMa\nHuh\nWi\nJee\nNo\n"
+msgstr ""
