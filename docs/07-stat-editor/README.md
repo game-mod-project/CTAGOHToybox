@@ -215,6 +215,23 @@ ctatoybox spawn-menu preview
 ctatoybox spawn-menu build [--keep-cost] [--basic-buttons]
 ```
 
+### 한글화 (`l10n`)
+
+게임과 켜 둔 모드의 현지화 `.pot`을 한국어로 바꿔 출력 모드 `CTAToybox`에 넣는다(설계: [../superpowers/specs/2026-10-17-korean-localization-design.md](../superpowers/specs/2026-10-17-korean-localization-design.md), 계획: [../superpowers/plans/2026-10-17-korean-localization.md](../superpowers/plans/2026-10-17-korean-localization.md)).
+
+1. 갱신 `l10n extract`: 바닐라와 켜 둔 모드(로드 순서상 가장 뒤의 파일이 원문)에서 `l10n/ko/<원래 경로>.po`를 만들거나 고친다. 원문이 바뀐 항목은 `#, fuzzy`와 `#| msgid`(예전 원문)를 남기고, 사라진 키는 지우고, 새 키는 비워 둔다. 머리에 원문 층과 게임 버전(`call_to_arms.exe` 제품 버전)을 적는다.
+2. 번역: `.po`의 `msgstr`를 채운다. 용어집은 `l10n/ko/glossary.psv`(`원문|번역|메모`, 원문과 번역이 같으면 "그대로 둘 말").
+3. 검사 `l10n check [--file <글자>]`: 태그 `<…>`, `%` 자리표시(순서까지), `\n` 수, `{…}`, 그대로 둘 말, 글꼴에 없는 글자. 오류가 있으면 종료 1. 미번역·fuzzy는 수만 센다.
+4. 빌드 `l10n build`: 검사 오류가 있거나 게임이 실행 중이면(`--force` 없이) 멈춘다. `mod/CTAToybox/localizations/default/<경로>.pot`(msgid가 한국어, 비었거나 fuzzy면 영어)과 한글 없는 글꼴 81개의 `.font`(`resource/interface/font/`, `binary_data`만 가장 가까운 `main_<크기>.fnt`)를 쓴다. 자기 목록 `.ctatoybox-l10n.json`의 지난 생성물만 지우고, 편집기 빌드 목록에 있는 경로와 목록 밖의 있는 파일은 덮지 않는다.
+
+편집기의 유닛 이름은 `원문 (한글)`으로 보인다(번역이 있고 fuzzy가 아닐 때). 검색은 둘 다에 걸린다. 미확인 다섯 가지는 설계 문서 "미확인"에 있다.
+
+```
+ctatoybox l10n extract
+ctatoybox l10n check
+ctatoybox l10n build
+```
+
 ### "이 유닛만"이 하는 일
 
 공유 파일은 건드리지 않는다. 유닛에서 그 파일까지의 include 사슬을 유닛 전용 사본으로 만들고, 유닛 파일과 사본 안의 include 경로를 사본으로 고쳐 쓴다.
