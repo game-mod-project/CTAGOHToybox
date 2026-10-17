@@ -26,5 +26,9 @@ static class L10nRealCheck
         Console.WriteLine("l10n-vanilla-pot files=" + files + " entries=" + entries + " roundtrip-bad=" + bad);
         T.True(files > 300 && entries > 20000, "vanilla pot files read");
         T.Eq(0, bad, "every vanilla pot round trips");
+
+        var main12 = L10nCheck.MainGlyphs(s.GameDir, new[] { "main_12.fnt" });
+        Console.WriteLine("l10n-main_12 glyphs=" + main12.Count + " hangul=" + main12.Count(c => c >= 0xAC00 && c <= 0xD7A3));
+        T.True(main12.Contains(0xAC00) && main12.Contains(0xD7A3), "main_12 has hangul syllables");
     }
 }

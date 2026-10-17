@@ -133,6 +133,7 @@ static class Suites
         ("L10nPo", L10nPoTests.Run),
         ("L10nSources", L10nSourcesTests.Run),
         ("L10nCatalog", L10nCatalogTests.Run),
+        ("L10nCheck", L10nCheckTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
