@@ -1734,16 +1734,13 @@
 {"ho_ri_prototype" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"hori_shugo" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"m2_halftrack_jap" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}
-{"o-ho" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"o_i" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
-{"o_ni_2" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"overvalwagen_gun" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}
 {"ro_go_early" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"ro_go_late" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"type91" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"type_10_rocket_booster" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"type_5" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
-{"type_5_heavy" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"type_94_tk_trailer" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"type_94_tk_trailer_gas" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"type_97_motorcycle" ("vehicle2" period(late) cd(0) ci(0) t() side(jap) crew1(tankman:1) crew2(tank_commander:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}

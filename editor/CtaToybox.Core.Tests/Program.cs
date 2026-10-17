@@ -138,6 +138,7 @@ static class Suites
         ("SpawnMenu", SpawnMenuTests.Run),
         ("SpawnGenerator", SpawnGeneratorTests.Run),
         ("SpawnCli", SpawnCliTests.Run),
+        ("SpawnGrid", SpawnGridTests.Run),
         ("L10nPo", L10nPoTests.Run),
         ("L10nSources", L10nSourcesTests.Run),
         ("L10nCatalog", L10nCatalogTests.Run),

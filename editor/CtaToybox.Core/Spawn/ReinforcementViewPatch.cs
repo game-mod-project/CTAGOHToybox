@@ -1,0 +1,31 @@
+// 증원 창 단추 칸을 세로 목록에서 가로 격자로 바꾼다(사용자 요청: 하위 메뉴가 원게임 구매 창처럼 가로로 펼쳐지게).
+// 바닐라 interface.pak!layout/views/scene/component/GameUnitReinforcementView.xml의 단추 칸은
+// <StepScrollPane id="unit_types_container" visibleElements="7"> 세로 목록이다. 같은 id의 <GridPanel cols="N">으로 바꾼다.
+// 구매 창(GameUnitSpawnView.xml)이 같은 꼴(GridPanel id="unit_container" cols="3" hgap="2" vgap="2")을 쓴다.
+// 게임이 이 id의 칸을 격자로 받아 단추를 채우는지는 미확인이다. 안 되면 spawn-menu build --list로 세로 판으로 되돌린다
+using System;
+using System.Text.RegularExpressions;
+
+namespace CtaToybox.Core.Spawn
+{
+    public static class ReinforcementViewPatch
+    {
+        public const string Path = "interface/layout/views/scene/component/gameunitreinforcementview.xml";
+        static readonly Regex Pane = new Regex("<StepScrollPane\\b[^>]*\\bid=\"unit_types_container\"[^>]*>(?<body>.*?)</StepScrollPane>", RegexOptions.Singleline | RegexOptions.CultureInvariant);
+
+        public static string Patch(string xml, int cols, out string error)
+        {
+            error = null;
+            if (cols < 1) { error = "열 수는 1 이상"; return null; }
+            var m = Pane.Match(xml);
+            if (!m.Success)
+            {
+                if (xml.Contains("<GridPanel id=\"unit_types_container\"")) return xml;
+                error = "StepScrollPane id=\"unit_types_container\"를 찾지 못했다";
+                return null;
+            }
+            string grid = "<GridPanel id=\"unit_types_container\" cols=\"" + cols + "\" hgap=\"2\" vgap=\"2\">" + m.Groups["body"].Value + "</GridPanel>";
+            return xml.Substring(0, m.Index) + grid + xml.Substring(m.Index + m.Length);
+        }
+    }
+}

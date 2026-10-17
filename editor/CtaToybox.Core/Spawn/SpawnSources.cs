@@ -43,6 +43,30 @@ namespace CtaToybox.Core.Spawn
             return stack;
         }
 
-        static string Full(string path) { return Path.GetFullPath(path).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar); }
+        // 게임 mods 아래의 모드 폴더는 저장소 폴더를 가리키는 정션일 수 있다(mods\ctatoyboxspawn → mod\CTAToyboxSpawn).
+        // 정션을 풀지 않으면 스폰 모드 자신의 지난 생성물을 원본으로 읽는다(2026-10-17: 로스터 146개가 지워졌다)
+        static string Full(string path)
+        {
+            string full = Path.GetFullPath(path).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+            // 위로 올라가며 처음 만나는 정션을 그 대상으로 바꾼다(mods\ctatoyboxspawn\resource → mod\CTAToyboxSpawn\resource)
+            string tail = "";
+            for (string dir = full; !string.IsNullOrEmpty(dir); dir = Path.GetDirectoryName(dir))
+            {
+                try
+                {
+                    var info = new DirectoryInfo(dir);
+                    if (info.Exists && info.LinkTarget != null)
+                    {
+                        var target = info.ResolveLinkTarget(true);
+                        if (target != null) return Path.GetFullPath(Path.Combine(target.FullName, tail)).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
+                    }
+                }
+                catch (Exception ex) when (ex is IOException || ex is UnauthorizedAccessException) { break; }
+                string name = Path.GetFileName(dir);
+                if (string.IsNullOrEmpty(name)) break;
+                tail = tail.Length == 0 ? name : Path.Combine(name, tail);
+            }
+            return full;
+        }
     }
 }

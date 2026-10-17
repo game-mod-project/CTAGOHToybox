@@ -103,6 +103,9 @@ namespace CtaToybox.Core.Spawn
                 bool air = u.EditorKind == "vehicle-other" && u.Includes.Contains("properties/airborne.ext") && !path.Split('/').Contains("x");
                 if (!vehicle && !air && !(u.EditorKind == "vehicle-other" && inRoster != null)) continue;
                 if (shared.Contains(path)) { skipped.Add(path + ": 두 국가 이상의 로스터에 있다"); continue; }
+                // 원래 어느 로스터에도 없고 정의가 풀리지 않는 차량은 넣지 않는다. 게임이 처음으로 읽다가 꺼진다
+                // (2026-10-17 Wunderwaffe tog2.def: define "tank_heavy_tier3" not found). 원래 로스터에 있던 차량은 게임이 이미 읽던 것이라 둔다
+                if (u.Unresolved > 0 && inRoster == null) { skipped.Add(path + ": 정의가 풀리지 않는다(풀리지 않은 구문 " + u.Unresolved + "). 원래 로스터에도 없다"); continue; }
                 string army = armies.ArmyOf(path);
                 if (army == null && inRoster != null && inRoster.Count == 1) army = inRoster.Keys.First();
                 if (army == null) { skipped.Add(path + ": 국가를 정하지 못했다"); continue; }

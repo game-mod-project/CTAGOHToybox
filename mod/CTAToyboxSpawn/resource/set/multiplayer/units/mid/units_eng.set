@@ -972,14 +972,12 @@
 {"76mm_qf17_early" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"76mm_qf17_mid" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"ammo_trailer_eng" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
-{"amx105" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx12t" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_105" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_75" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_75_harpon" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_90" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_90_harpon" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"amx13_dca" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_genie" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx13_maxson" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx40_0" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
@@ -991,13 +989,8 @@
 {"amx_50b" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx_auf1" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amx_m4_1949" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"amx_mle48" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"amxm4" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"bat25t" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"bdr_g1b_1934" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"bdr_g1b_dca30" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"bdr_g1b_sa32" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"bdr_g1b_sa44" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"bedford_oyd_piat" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}
 {"bedford_qlt_piat" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}
 {"black_prince" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
@@ -1018,7 +1011,6 @@
 {"foch155" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"fv215" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"fv215b" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
-{"fv215b_183" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"fv4004_conway" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"fv4005_stage_2" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"fv4025" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
@@ -1036,9 +1028,7 @@
 {"ram_kangaroo_mk2_badger" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"ram_mki" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"ram_mkii" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
-{"sfac105" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"sherman2_skink" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"somua_sm" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(medium) cw(0) cp(0) cost(0))}
 {"super_conquer" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
-{"tog2" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"tortez" ("vehicle2" period(mid) cd(0) ci(0) t() side(eng) crew1(tankman:1) crew2(tank_commander_m1928:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}

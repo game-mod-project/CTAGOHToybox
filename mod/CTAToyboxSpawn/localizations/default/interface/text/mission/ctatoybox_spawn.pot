@@ -98,10 +98,6 @@ msgctxt "mission/ctatoybox_spawn/family_bat"
 msgid "bat"
 msgstr ""
 
-msgctxt "mission/ctatoybox_spawn/family_bdr"
-msgid "bdr"
-msgstr ""
-
 msgctxt "mission/ctatoybox_spawn/family_bedford"
 msgid "bedford"
 msgstr ""
@@ -550,10 +546,6 @@ msgctxt "mission/ctatoybox_spawn/family_sexton"
 msgid "sexton"
 msgstr ""
 
-msgctxt "mission/ctatoybox_spawn/family_sfac"
-msgid "sfac"
-msgstr ""
-
 msgctxt "mission/ctatoybox_spawn/family_sg"
 msgid "sg"
 msgstr ""
@@ -642,10 +634,6 @@ msgctxt "mission/ctatoybox_spawn/family_to"
 msgid "to"
 msgstr ""
 
-msgctxt "mission/ctatoybox_spawn/family_tog"
-msgid "tog"
-msgstr ""
-
 msgctxt "mission/ctatoybox_spawn/family_tortez"
 msgid "tortez"
 msgstr ""
@@ -676,10 +664,6 @@ msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/family_usa"
 msgid "usa"
-msgstr ""
-
-msgctxt "mission/ctatoybox_spawn/family_v"
-msgid "v"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/family_valentine"

@@ -1352,7 +1352,6 @@
 {"ammo_trailer_usa" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"blackrock" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(tankman_m3:1) crew2(tank_com_m3:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"cckw_inf" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(tankman_m3:1) crew2(tank_com_m3:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}
-{"ford_gpa" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(tankman_m3:1) crew2(tank_com_m3:1) g(ctb_spawn) b(vehicles) cw(0) cp(0) cost(0))}
 {"gorilla" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(tankman_m3:1) crew2(tank_com_m3:1) g(ctb_spawn) b(heavy) cw(0) cp(0) cost(0))}
 {"heavy_mg_40mm_m1" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}
 {"heavy_mg_m1917_30cal" ("vehicle2" period(late) cd(0) ci(0) t() side(usa) crew1(artilleryman:2) g(ctb_spawn) b(empl) cw(0) cp(0) cost(0))}

@@ -15,6 +15,7 @@ namespace CtaToybox.Core.Spawn
     public sealed class MenuOptions
     {
         public int PageSize { get; set; } = 21;
+        public int GridCols { get; set; } = 7;   // 증원 창 단추 칸 열 수(가로 격자). 0이면 바닐라 세로 목록 그대로
     }
 
     public sealed class MenuButton
