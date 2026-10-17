@@ -28,6 +28,9 @@ namespace CtaToybox.Core
         // 무엇을 고치는지. 값이면 null(지금까지의 프로젝트 파일 그대로), 인자 없는 매크로 호출의 이름이면 MacroSwap.Kind(E4), 따옴표 이름 블록 복제면 BlockCopy.Kind(E18)
         [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
         public string Kind { get; set; }
+        // 일괄 규칙(F1)이 만든 수정이면 그 규칙의 id. 사람이 만든 수정은 null이다(파일에 쓰지 않는다)
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public string Rule { get; set; }
     }
 
     // 프로젝트 합치기(EditProject.MergeFrom)의 결과
@@ -42,6 +45,9 @@ namespace CtaToybox.Core
     {
         public string Name { get; set; }
         public List<Edit> Edits { get; set; } = new List<Edit>();
+        // 일괄 규칙(F1). 목록 순서가 겹치는 자리의 우선순위다. 없으면 null이라 파일에 쓰지 않는다(예전 프로젝트 파일과 같다)
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public List<BulkRule> Rules { get; set; }
 
         static readonly JsonSerializerOptions Json = new JsonSerializerOptions
         {
@@ -66,7 +72,8 @@ namespace CtaToybox.Core
         public MergeReport MergeFrom(EditProject other)
         {
             var report = new MergeReport();
-            foreach (var e in other.Edits)
+            // 규칙이 만든 수정은 옮기지 않는다. 규칙을 붙인 뒤 다시 계산해 만든다(F1, 세션의 MergeProject)
+            foreach (var e in other.Edits.Where(x => x.Rule == null))
             {
                 var here = Edits.FirstOrDefault(x => SameSlot(x, e));
                 if (here == null)

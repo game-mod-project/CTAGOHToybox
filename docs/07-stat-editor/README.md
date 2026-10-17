@@ -156,6 +156,26 @@ ctatoybox vision-preset --variant wot --project editor/projects/월드워.json
 ctatoybox build --project editor/projects/월드워.json
 ```
 
+### 일괄 규칙 (`rule`, F1)
+
+"이 종류의 유닛 모두에서 이 키의 값을 이렇게"를 규칙 하나로 프로젝트에 넣는다(설계: [../superpowers/specs/2026-10-17-f1-bulk-rules-design.md](../superpowers/specs/2026-10-17-f1-bulk-rules-design.md)).
+
+- 칸: 대상 종류(`--kind tank` 등), 유닛 경로에 모두 들어야 하는 글자(`--path /tank_light/`. 여럿이면 쉼표로 나눈다), 원본 계층(`--layer`), 펼친 키(정확한 경로 또는 `**/꼬리`), 값 자리(`--arg 0`, `all`이면 수인 값 모두), 바꾸는 방법(`--mul`·`--add`·`--set` 가운데 하나), 범위(`--scope auto|shared|unit`).
+- 정수였던 값은 반올림해 정수로 남고, 소수는 소수 셋째 자리까지 쓴다. 수가 아닌 값은 곱하거나 더하지 않는다.
+- 범위 `auto`: 그 파일을 쓰는 유닛이 모두 대상이면 '전부' 수정 하나, 아니면 대상 유닛마다 '이 유닛만'. '이 유닛만'이 안 되는 값(매크로 본문 등)은 건너뛰고 이유를 보인다.
+- 사람이 고친 수정과 목록 앞 규칙의 수정이 있는 자리는 건너뛴다. 규칙이 만든 수정을 사람이 고치거나 끄면 그 수정은 규칙에서 떨어지고, 다시 적용해도 남는다.
+- 규칙을 고치거나 끄거나 지우면 그 규칙과 목록 뒤 규칙들의 수정을 다시 계산한다. 원본(모드)이 바뀌면 "다시 적용"한다.
+- 화면: 요약·전체 탭의 줄을 오른쪽 단추로 눌러 "이 키로 일괄 규칙...". 지금 유닛의 종류, 그 줄의 키, 처음 고칠 수 있는 값의 자리로 창이 채워진다. "꼬리만"은 키를 마지막 두 이름(`**/locomotion/maxspeed`)으로 줄인다. "미리 보기"로 바뀌는 값(앞 500건)과 건너뛰는 유닛, 합계를 본 뒤 "수정 목록에 넣기". 미리 본 뒤 칸을 바꾸면 다시 미리 봐야 넣을 수 있다. 뜻이 미확인인 키는 창이 경고한다(막지는 않는다).
+- 수정 목록에서 규칙이 만든 수정은 `규칙 · <이름>` 묶음에 모인다. 아래 "일괄 규칙" 칸에서 규칙을 고르고(꺼진 규칙도 여기 있다) 고치기·다시 적용·끄기/켜기·지우기를 누른다.
+
+```
+ctatoybox rule preview --kind tank --path /tank_light/ --key "**/locomotion/maxspeed" --mul 1.1
+ctatoybox rule add --project editor/projects/my-tweaks.json --name "경전차 속도 10%" --kind tank --path /tank_light/ --key "**/locomotion/maxspeed" --mul 1.1
+ctatoybox rule list --project editor/projects/my-tweaks.json
+ctatoybox rule edit --project editor/projects/my-tweaks.json --id <id> --mul 1.2
+ctatoybox rule reapply|enable|disable|remove --project editor/projects/my-tweaks.json --id <id>
+```
+
 ### "이 유닛만"이 하는 일
 
 공유 파일은 건드리지 않는다. 유닛에서 그 파일까지의 include 사슬을 유닛 전용 사본으로 만들고, 유닛 파일과 사본 안의 include 경로를 사본으로 고쳐 쓴다.

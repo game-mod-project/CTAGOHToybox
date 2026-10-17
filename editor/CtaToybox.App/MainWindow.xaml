@@ -164,6 +164,7 @@
             <ListView x:Name="SummaryList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto"
                       VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.VirtualizationMode="Recycling">
               <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource SummaryGroup}"/></ListView.GroupStyle>
+              <ListView.ContextMenu><ContextMenu><MenuItem Header="이 키로 일괄 규칙..." Click="RuleFromRow_Click"/></ContextMenu></ListView.ContextMenu>
             </ListView>
           </TabItem>
           <TabItem x:Name="FullTab" Header="전체">
@@ -175,6 +176,7 @@
               <ListView x:Name="FullList" MouseDoubleClick="Row_DoubleClick" ScrollViewer.HorizontalScrollBarVisibility="Auto"
                         VirtualizingPanel.IsVirtualizing="True" VirtualizingPanel.IsVirtualizingWhenGrouping="True" VirtualizingPanel.VirtualizationMode="Recycling">
                 <ListView.GroupStyle><GroupStyle ContainerStyle="{StaticResource FullGroup}"/></ListView.GroupStyle>
+                <ListView.ContextMenu><ContextMenu><MenuItem Header="이 키로 일괄 규칙..." Click="RuleFromRow_Click"/></ContextMenu></ListView.ContextMenu>
               </ListView>
             </DockPanel>
           </TabItem>
@@ -214,13 +216,25 @@
           <TextBlock x:Name="EditHelp" Foreground="#666666" FontSize="12" TextWrapping="Wrap" Margin="0,2,0,4"
                      Text="고친 값이 여기에 쌓인다. 체크를 끄면 빌드에서 빠진다. 위의 '빌드'를 눌러야 모드 폴더에 써지고, 게임을 다시 시작해야 반영된다."/>
         </StackPanel>
-        <WrapPanel DockPanel.Dock="Bottom" Margin="0,4,0,0">
-          <Button Content="삭제 (원래 값으로)" Padding="8,3" Margin="0,0,6,4" Click="RemoveEdit_Click"/>
-          <Button Content="원본의 지금 값에 맞추기" Padding="8,3" Margin="0,0,6,4" Click="RebaseEdit_Click"
-                  ToolTip="'원본이 바뀜'인 수정의 원래 값을 원본의 지금 값으로 바꿔 다시 적용되게 한다"/>
-          <Button Content="그 유닛 열기" Padding="8,3" Margin="0,0,6,4" Click="OpenEditUnit_Click"/>
-        </WrapPanel>
-        <ListView x:Name="EditList" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" MouseDoubleClick="OpenEditUnit_Click">
+        <StackPanel DockPanel.Dock="Bottom" Margin="0,4,0,0">
+          <WrapPanel>
+            <Button Content="삭제 (원래 값으로)" Padding="8,3" Margin="0,0,6,4" Click="RemoveEdit_Click"/>
+            <Button Content="원본의 지금 값에 맞추기" Padding="8,3" Margin="0,0,6,4" Click="RebaseEdit_Click"
+                    ToolTip="'원본이 바뀜'인 수정의 원래 값을 원본의 지금 값으로 바꿔 다시 적용되게 한다"/>
+            <Button Content="그 유닛 열기" Padding="8,3" Margin="0,0,6,4" Click="OpenEditUnit_Click"/>
+          </WrapPanel>
+          <DockPanel Margin="0,4,0,4">
+            <TextBlock Text="일괄 규칙 " FontWeight="Bold" VerticalAlignment="Center" DockPanel.Dock="Left"/>
+            <ComboBox x:Name="RuleBox" DisplayMemberPath="Label" ToolTip="일괄 규칙. 규칙이 만든 수정을 고르면 그 규칙이 골라진다. 꺼진 규칙도 여기서 고른다"/>
+          </DockPanel>
+          <WrapPanel>
+            <Button Content="규칙 고치기" Padding="8,3" Margin="0,0,6,4" Click="EditRule_Click"/>
+            <Button Content="규칙 다시 적용" Padding="8,3" Margin="0,0,6,4" Click="ReapplyRule_Click" ToolTip="규칙의 수정을 지우고 지금 원본으로 다시 만든다. 사람이 고친 수정은 그대로 둔다"/>
+            <Button Content="규칙 끄기/켜기" Padding="8,3" Margin="0,0,6,4" Click="ToggleRule_Click"/>
+            <Button Content="규칙 지우기" Padding="8,3" Margin="0,0,6,4" Click="RemoveRule_Click"/>
+          </WrapPanel>
+        </StackPanel>
+        <ListView x:Name="EditList" SelectionChanged="EditList_SelectionChanged" HorizontalContentAlignment="Stretch" ScrollViewer.HorizontalScrollBarVisibility="Disabled" MouseDoubleClick="OpenEditUnit_Click">
           <ListView.GroupStyle>
             <GroupStyle>
               <GroupStyle.HeaderTemplate>

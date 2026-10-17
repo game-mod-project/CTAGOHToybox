@@ -201,6 +201,29 @@ static class RealFilesCheck
         }
         finally { Directory.Delete(classOut, true); }
 
+        // F1: 탱크 전부의 최고 속도 ×1.1 규칙을 실제 판에서 미리 보고 임시 출력 폴더에 빌드한다
+        var speedRule = new BulkRule { Id = "realrule", Name = "tank speed", Kind = "tank", Key = "**/locomotion/maxspeed", Arg = 0, Op = "mul", Value = "1.1" };
+        var ruleProject = new EditProject { Name = "f1-real", Rules = new List<BulkRule> { speedRule } };
+        var rulePreview = BulkRules.Preview(speedRule, ruleProject, index.Units, tracer, f => index.UsersOf(f), u => index.HeirsOf(u).Count);
+        ruleProject.Edits.AddRange(rulePreview.Edits);
+        string ruleOut = Path.Combine(Path.GetTempPath(), "ctatoybox-f1-" + Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(ruleOut);
+        try
+        {
+            var ruleBuild = new ModBuilder(stack, ruleOut).Build(ruleProject);
+            var ruleBad = ruleBuild.Results.Where(r => r.Status != EditStatus.Applied).ToList();
+            var reasons = rulePreview.Skipped.GroupBy(k => k.Reason.Length > 40 ? k.Reason.Substring(0, 40) : k.Reason).OrderByDescending(g => g.Count()).Take(5);
+            Console.WriteLine("rule-targets=" + rulePreview.Targets + " rule-units=" + rulePreview.Units + " rule-changes=" + rulePreview.Changes.Count + " rule-edits=" + rulePreview.Edits.Count +
+                              " rule-outside=" + rulePreview.OutsideUnits + " rule-skipped=" + rulePreview.Skipped.Count + " rule-not-applied=" + ruleBad.Count + " rule-file-errors=" + ruleBuild.FileErrors.Count);
+            foreach (var g in reasons) Console.WriteLine("  rule skip " + g.Count() + ": " + g.Key);
+            foreach (var r in ruleBad.Take(10)) Console.WriteLine("  rule: " + r.Status + " " + r.Edit.Unit + " " + r.Edit.Path + " " + r.Message);
+            T.True(rulePreview.Units > 100, "the speed rule changes more than a hundred tanks (F1)");
+            T.Eq(0, ruleBad.Count, "every rule edit applies (F1)");
+            T.Eq(0, ruleBuild.FileErrors.Count, "and every file is written (F1)");
+            T.Eq(rulePreview.Targets, rulePreview.Units + rulePreview.Skipped.Select(k => k.Unit).Except(rulePreview.Changes.Select(c => c.Unit)).Distinct().Count(), "every target either changes or is skipped with a reason (F1)");
+        }
+        finally { Directory.Delete(ruleOut, true); }
+
         const string k98 = "set/stuff/rifle/k98", riflePattern = "set/stuff/rifle/rifle.pattern";
         var k98Trace = tracer.Trace(k98);
         Console.WriteLine("from-units=" + fromUnits + " from-problems=" + fromProblems + " inherited-values=" + inherited + " from-wrong-slot=" + fromWrongSlot +
