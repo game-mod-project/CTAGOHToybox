@@ -23,7 +23,7 @@ static class SpawnRosterTests
             ("interface/scene/unit_icon/button_5_ger_00.tga", "TGA5"));
         using var o = SpawnFixture.Open(settings);
         var skipped = new List<string>(); var notes = new List<string>();
-        var files = RosterRewrite.Build(o.Stack, o.Catalog, new RosterOptions(), skipped, notes);
+        var files = RosterRewrite.Build(o.Stack, o.Catalog, new RosterOptions { Enabled = true, AddVehicles = true }, skipped, notes);
         string units = Text(files, "resource/" + SpawnFixture.UnitsGer);
         T.True(units.Contains("cd(0) ci(0)") && units.Contains("cost(0)") && units.Contains("cp(0)") && !units.Contains("cost(105)"), "values zero: " + units);
         T.True(units.Contains("b(light)") && units.Contains("b(empl)"), "light tank button, gun button kept");
@@ -42,7 +42,7 @@ static class SpawnRosterTests
         T.True(notes.Any(n => n.Contains("미확인")), "new buttons noted as unverified");
 
         // 기본 단추·원래 비용
-        files = RosterRewrite.Build(o.Stack, o.Catalog, new RosterOptions { BasicButtons = true, KeepCost = true }, new List<string>(), new List<string>());
+        files = RosterRewrite.Build(o.Stack, o.Catalog, new RosterOptions { Enabled = true, AddVehicles = true, BasicButtons = true, KeepCost = true }, new List<string>(), new List<string>());
         units = Text(files, "resource/" + SpawnFixture.UnitsGer);
         T.True(units.Contains("cost(105)") && units.Contains("b(tanks) cw(4)") && units.Contains("{\"ht\" (") && units.Contains("b(tanks) cw(0) cp(0) cost(100)"), "basic buttons and kept cost: " + units);
         T.True(!files.Any(f => f.Path.Contains("button_") || f.Path.Contains("budget")), "no button files with basic buttons");
@@ -51,7 +51,7 @@ static class SpawnRosterTests
         settings = SpawnFixture.Make(out repo, out stat, out spawn, (SpawnFixture.InfGer, "{\"mp/ger/mid/tankman\" (\"inf_tankman\" side(ger) cost(5.0))}\n"));
         using var o2 = SpawnFixture.Open(settings);
         skipped = new List<string>();
-        units = Text(RosterRewrite.Build(o2.Stack, o2.Catalog, new RosterOptions(), skipped, new List<string>()), "resource/" + SpawnFixture.UnitsGer);
+        units = Text(RosterRewrite.Build(o2.Stack, o2.Catalog, new RosterOptions { Enabled = true, AddVehicles = true }, skipped, new List<string>()), "resource/" + SpawnFixture.UnitsGer);
         T.True(!units.Contains("{\"ht\"") && skipped.Any(s => s.Contains("ht.def") && s.Contains("tank_commander")), "roster_crew_missing_skipped");
     }
 }

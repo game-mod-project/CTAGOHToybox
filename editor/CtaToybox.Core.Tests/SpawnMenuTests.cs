@@ -56,11 +56,28 @@ static class SpawnMenuTests
         var entities = Regex.Matches(menu, "\\{entity \"([^\"]+)\"\\}").Select(m => m.Groups[1].Value).Distinct().ToList();
         var known = new HashSet<string>(cat.Units.Select(u => u.Name).Concat(new[] { "artillery_single_150_dummy" }));
         T.True(entities.All(known.Contains), "every spawned entity is a known unit: " + string.Join(",", entities.Where(e => !known.Contains(e))));
-        var humans = Regex.Matches(menu, "\\{Human \"([^\"]+)\"").Select(m => m.Groups[1].Value).ToList();
+        // 견본은 국가 파일에만 있다
+        T.True(!menu.Contains("{Human ") && !menu.Contains("{Entity "), "no templates in menu.mi");
+        T.Eq(MenuBuilder.Armies(cat).ToArray(), r.TemplateFiles.Keys.ToArray(), "a template file per menu nation");
+        string templates = string.Concat(r.TemplateFiles.Values);
+        var humans = Regex.Matches(templates, "\\{Human \"([^\"]+)\"").Select(m => m.Groups[1].Value).ToList();
         T.True(humans.All(h => o.Stack.Find(SpawnCatalog.BreedFile(h)) != null), "every template breed resolves");
         var soldiers = humans.Where(h => !h.EndsWith("pilot")).ToList();
         T.Eq(soldiers.Count, soldiers.Distinct().Count(), "one template per breed");
-        T.True(menu.Contains("{Human \"mp/ger/mid/rifle\"") && Regex.IsMatch(menu, "\\{\"loop\" 3\\r\\n"), "squad members cloned by count");
+        foreach (var kv in r.TemplateFiles)
+        {
+            T.Eq(0, SdlCore.Parse(kv.Value).Errors.Count, "template file parses: " + kv.Key);
+            T.True(Regex.Matches(kv.Value, "\\{Human \"mp/([a-z]+)/").Cast<Match>().All(m => m.Groups[1].Value == kv.Key), "a nation's file holds only its soldiers: " + kv.Key);
+            T.True(kv.Value.Contains("\"ctb_has_" + kv.Key + "$\"") && kv.Value.Contains("{value 1}"), "the file marks its nation as present: " + kv.Key);
+            T.True(menu.Contains("{\"ctb_has_" + kv.Key + "\"}"), "the menu declares the presence variable: " + kv.Key);
+        }
+        T.True(r.TemplateFiles["ger"].Contains("{Human \"mp/ger/mid/rifle\"") && Regex.IsMatch(menu, "\\{\"loop\" 3\\r\\n"), "squad members cloned by count");
+        // 국가 화면을 열면 견본이 없는 국가 단추를 숨긴다
+        var nationScreen = r.Screens.Single(s => s.Title == "Nation");
+        string natTrigger = menu.Substring(menu.IndexOf("{id \"ctb_e_s" + nationScreen.Id + "\"}"));
+        natTrigger = natTrigger.Substring(0, natTrigger.IndexOf("{id ", 5) < 0 ? natTrigger.Length : natTrigger.IndexOf("{id ", 5));
+        foreach (var b in nationScreen.Buttons.Where(b => b.Event.StartsWith("ctb_e_nat_")))
+            T.True(natTrigger.Contains("\"ctb_has_" + b.Event.Substring("ctb_e_nat_".Length) + "$\"") && natTrigger.Contains("\"" + b.Name + "\""), "nation button hidden without templates: " + b.Name);
         T.True(menu.Contains("\"ctb_start\"") && menu.Contains("{type side}") && menu.Contains("{state \"-\"}"), "start trigger and visible root");
 
         // 옵션(Task 6)

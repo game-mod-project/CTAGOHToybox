@@ -22,6 +22,9 @@ static class SpawnWriterTests
         T.Eq(1, r.Unchanged.Count, "same bytes are not written again");
         r = SpawnWriter.Write(dir, new[] { F("resource/map/b.mi", "B"), F("resource/user.txt", "over") }, stat);
         T.True(!File.Exists(Path.Combine(dir, "resource", "map", "a.mi")) && r.Removed.Contains("resource/map/a.mi"), "stale own file removed");
+        SpawnWriter.Write(dir, new[] { F("resource/map/b.mi", "B"), F("resource/set/deep/c.set", "C") }, stat);
+        SpawnWriter.Write(dir, new[] { F("resource/map/b.mi", "B") }, stat);
+        T.True(!Directory.Exists(Path.Combine(dir, "resource", "set")) && Directory.Exists(Path.Combine(dir, "resource", "map")), "emptied folders are removed, others kept");
         T.Eq("mine", File.ReadAllText(Path.Combine(dir, "resource", "user.txt")), "writer_keeps_foreign_files");
         T.True(r.Errors.Any(e => e.Contains("user.txt")), "a foreign file is reported, not overwritten");
 

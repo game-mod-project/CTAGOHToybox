@@ -27,7 +27,7 @@ namespace CtaToybox.Cli
             "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "  ctatoybox l10n extract|check|build [--dir <번역 보관, 기본 l10n/ko>] [--file <글자>] [--force]   (한글화: 보관 갱신, 검사, 출력 모드에 .pot·글꼴 쓰기)\n" +
-            "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--keep-cost] [--basic-buttons] [--grid <열, 기본 7> | --list]   (Spawn Menu를 대체하는 스폰 모드를 만든다. preview는 쓰지 않고 수만 보인다)\n" +
+            "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--all-nations] [--grid <열, 기본 7> | --list] [--roster [--roster-add] [--keep-cost] [--basic-buttons]]   (Spawn Menu를 대체하는 스폰 모드를 만든다. --roster는 스커미시 구매 창도 바꾼다. preview는 쓰지 않고 수만 보인다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
 
@@ -46,12 +46,12 @@ namespace CtaToybox.Cli
             ["build"] = new[] { "settings", "project", "force" },
             ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
             ["l10n"] = new[] { "settings", "dir", "file", "force" },
-            ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons", "list", "grid" },
+            ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons", "list", "grid", "roster", "roster-add", "all-nations" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
 
         // 값을 받지 않는 옵션
-        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force", "classes", "keep-cost", "basic-buttons", "list" };
+        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force", "classes", "keep-cost", "basic-buttons", "list", "roster", "roster-add", "all-nations" };
 
         // 게임이나 에디터가 실행 중인지. 테스트가 바꿔 끼운다
         public static Func<bool> GameRunning = EditorSession.GameRunning;
@@ -310,11 +310,12 @@ namespace CtaToybox.Cli
                 var armies = ArmyIndex.Build(stack, index.Units);
                 var categories = Core.Spawn.SpawnCategories.Load(Path.Combine("editor", "spawn", "categories.psv"), warnings);
                 var report = new Core.Spawn.SpawnReport();
-                var o = new Core.Spawn.SpawnOptions { Roster = new Core.Spawn.RosterOptions { KeepCost = opt.ContainsKey("keep-cost"), BasicButtons = opt.ContainsKey("basic-buttons") } };
+                var o = new Core.Spawn.SpawnOptions { Roster = new Core.Spawn.RosterOptions { Enabled = opt.ContainsKey("roster") || opt.ContainsKey("roster-add"), AddVehicles = opt.ContainsKey("roster-add"), KeepCost = opt.ContainsKey("keep-cost"), BasicButtons = opt.ContainsKey("basic-buttons") } };
+                o.Menu.AllNations = opt.ContainsKey("all-nations");
                 o.Menu.GridCols = opt.ContainsKey("list") ? 0 : Whole(opt, "grid", 7);
                 var files = Core.Spawn.SpawnGenerator.Generate(stack, index, armies, categories, o, report);
                 foreach (string w in warnings) output.WriteLine("  " + w);
-                output.WriteLine("맵 " + report.Maps + "(캠페인 " + report.CampaignMaps + ", 멀티 " + report.MultiMaps + "), 유닛 " + report.Units + ", 분대 " + report.Squads + ", 새 로스터 항목 " + report.NewRosterEntries + ", 단추 " + report.Buttons + ", 화면 " + report.Screens + ", 견본 " + report.Templates + ", 파일 " + files.Count + ", 건너뜀 " + report.Skipped.Count);
+                output.WriteLine("맵 " + report.Maps + "(캠페인 " + report.CampaignMaps + ", 멀티 " + report.MultiMaps + "), 유닛 " + report.Units + ", 분대 " + report.Squads + ", 새 로스터 항목 " + report.NewRosterEntries + ", 단추 " + report.Buttons + ", 화면 " + report.Screens + ", 견본 " + report.Templates + (report.CampaignMaps > 0 ? "(캠페인 맵마다 평균 " + (report.CampaignTemplateArmies / (double)report.CampaignMaps).ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) + "개 국가)" : "") + ", 파일 " + files.Count + ", 건너뜀 " + report.Skipped.Count);
                 foreach (string s in report.Skipped.Take(20)) output.WriteLine("  건너뜀 " + s);
                 foreach (string n in report.Notes) output.WriteLine("  " + n);
                 if (sub == "preview") return 0;
@@ -325,7 +326,7 @@ namespace CtaToybox.Cli
                 Directory.CreateDirectory(outDir);
                 string info = Path.Combine(outDir, "mod.info");
                 if (!File.Exists(info))
-                    File.WriteAllText(info, "{mod\n\t{name \"CTAToybox Spawn\"}\n\t{tags \"Mod\"}\n\t{desc \"CTAToybox spawn menu: free skirmish roster with all units and a reinforcement menu in every map. Generated by the CTAToybox editor.\"}\n\t{minGameVersion \"any\"}\n\t{maxGameVersion \"any\"}\n}\n");
+                    File.WriteAllText(info, "{mod\n\t{name \"CTAToybox Spawn\"}\n\t{tags \"Mod\"}\n\t{desc \"CTAToybox spawn menu: a reinforcement menu in every map. Generated by the CTAToybox editor.\"}\n\t{minGameVersion \"any\"}\n\t{maxGameVersion \"any\"}\n}\n");
                 var written = Core.Spawn.SpawnWriter.Write(outDir, files, settings.OutputModDir);
                 output.WriteLine("썼다 " + written.Written.Count + ", 그대로 " + written.Unchanged.Count + ", 지웠다 " + written.Removed.Count + ", 오류 " + written.Errors.Count + ": " + outDir);
                 foreach (string e in written.Errors.Take(20)) output.WriteLine("  오류 " + e);

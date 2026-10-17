@@ -201,18 +201,19 @@ ctatoybox build --project editor/projects/강화-독일.json
 Spawn Menu of MACE를 대체하는 모드 `mod/CTAToyboxSpawn`(이름 `CTAToybox Spawn`)을 만든다(설계: [../superpowers/specs/2026-10-17-spawn-menu-replacement-design.md](../superpowers/specs/2026-10-17-spawn-menu-replacement-design.md), 조사: [../13-spawn-menu-spike.md](../13-spawn-menu-spike.md)). 스탯 출력 모드와 다른 폴더이고 같은 경로를 쓰지 않는다(겹치면 쓰지 않고 오류).
 
 - 입력: 지금 계층에서 Spawn Menu 두 모드(3617250510, 3295913567)와 스폰 모드 자신을 뺀 것, 그리고 스탯 출력 모드. 그래서 맵은 Auto Medic·MACE가 고친 판이 이긴다.
-- 스커미시 구매 창: 시기 로스터(`set/multiplayer/units/<시기>/{units,inf}_<국가>*.set`)의 cd·ci·cp·cost·cw·cool을 0으로, 병종 틀(`settings_inf*.set`)의 CP를 0으로, `unitlimits*.inc`의 한도를 999로. 로스터에 없던 전차·포·차량은 국가·시기마다 새 항목으로 더한다(승무원은 국가 기본 → 같은 파일에서 가장 많이 쓰는 구성). 단추는 `budget*.inc`의 `{buttons}`를 `inf1 inf2 empl vehicles light medium heavy td air`로 바꾸고 tanks 그림(`button_5_<국가>`)을 6~9번으로 복사한다. 컨퀘스트 로스터는 그대로다.
-- 맵: 캠페인 `map/single/**/0.mi`와 멀티 `map/multi/**/*.mi`마다 이긴 판 + `{mission}` 닫는 괄호 앞 include 줄(캠페인은 `nation_<국가>.mi`와 `menu.mi`, 멀티는 `menu.mi`).
+- 스커미시 구매 창: 기본으로 바꾸지 않는다(2026-10-18 사용자 결정: 스폰 메뉴만 둔다). `--roster`를 주면 시기 로스터(`set/multiplayer/units/<시기>/{units,inf}_<국가>*.set`)의 cd·ci·cp·cost·cw·cool을 0으로, 병종 틀(`settings_inf*.set`)의 CP를 0으로, `unitlimits*.inc`의 한도를 999로 하고, 단추는 `budget*.inc`의 `{buttons}`를 `inf1 inf2 empl vehicles light medium heavy td air`로 바꾸고 tanks 그림(`button_5_<국가>`)을 6~9번으로 복사한다(`--basic-buttons`면 단추 그대로, `--keep-cost`면 비용 그대로). `--roster-add`는 여기에 로스터에 없던 전차·포·차량을 국가·시기마다 새 항목으로 더한다(승무원은 국가 기본 → 같은 파일에서 가장 많이 쓰는 구성). 게임은 판을 열 때 그 판 국가·시기의 로스터 차량을 모두 미리 읽어서(`eScenePreload`), 더한 차량만큼 로딩이 길어진다(2026-10-17 21:59 game.log: 210초 넘게, 미리 읽은 차량 43종 중 38종이 더한 차량). 컨퀘스트 로스터는 그대로다.
+- 맵: 캠페인 `map/single/**/0.mi`와 멀티 `map/multi/**/*.mi`마다 이긴 판 + `{mission}` 닫는 괄호 앞 include 줄(캠페인은 `nation_<국가>.mi`, 견본 `templates_<국가>.mi`, `menu.mi` 순서, 멀티는 견본과 `menu.mi`).
+- 견본(`templates_<국가>.mi`): 메뉴가 복제하는 숨긴 사람·비행기를 국가마다 따로 둔다. 멀티 맵은 판의 국가를 맵을 만들 때 알 수 없어서 모두 넣고, 캠페인 맵은 그 맵 글에 나오는 병종 국가(`"mp/<국가>/…"`)와 캠페인 국가만 넣는다(2026-10-18 실측 평균 1.9개 국가, 못 찾으면 모두). 견본 파일은 `ctb_has_<국가>`를 1로 켜고, 국가 화면은 견본이 없는 국가 단추를 숨긴다. `--all-nations`면 캠페인 맵에도 모두 넣는다. 판을 열 때 견본 2,965명을 만드는 데 약 100초 걸렸다(같은 로그, 판에 없는 일본 장비까지 읽음).
 - 메뉴(`resource/map/ctatoybox_spawn/menu.mi`): 증원 창 단추로 만든 단계 메뉴. 맨 위 `Spawn` → 국가(바로 고름)·소속(Auto, Player 0~9 바로 고름)·보병(분대·낱개, 시기별)·포·차량·전차(경·중형·중·구축)·항공기·지원(포격 소·중·대, 증원 점수)·도구(무적, 등급 최대, 생성 시 최고 등급, 찍은 유닛 삭제, 비행기 삭제, 잔해 정리). 한 화면 21개를 넘으면 계열 묶음 화면과 Next/Prev. 분대는 로스터 구성 그대로 숨긴 견본을 복제한다. 캠페인은 국가·소속(Player 0)이 미리 정해지고, 멀티는 시작할 때 소속 화면을 연다. 글자는 `localizations/default/interface/text/mission/ctatoybox_spawn.pot`(영어).
 - 화면: `SceneGameView.xml`의 세 패널(멀티·싱글·컨퀘스트) 모두에 증원 창을 조건 없이 둔다.
 - 다시 만들 때는 지난 생성물(`.ctatoybox-spawn.json`)만 지우고 바꾼다. 게임 패치·모드 갱신·스탯 출력 모드 재빌드 뒤에는 다시 만든다.
-- git: 맵 사본(약 210MB)은 넣지 않는다(`.gitignore`). 메뉴·로스터·글자·화면·그림은 넣는다.
+- git: 맵 사본(약 210MB)은 넣지 않는다(`.gitignore`). 메뉴·견본·글자·화면(그리고 `--roster`로 만든 로스터·그림)은 넣는다. 지난 생성물을 지우면 빈 폴더도 지운다.
 - 게임에 연결: 게임 `mods` 폴더에 정션을 만들고(`New-Item -ItemType Junction -Path "<게임>\mods\CTAToyboxSpawn" -Target "E:\CTAToybox\mod\CTAToyboxSpawn"`), 모드 목록에서 모든 모드 뒤에 켜고 Spawn Menu of MACE는 끈다.
-- 미확인(게임 안에서만 알 수 있다): 새 종류 단추를 게임이 받는지(안 되면 `--basic-buttons`), 증원 창이 멀티·컨퀘스트에서 보이는지와 사라지는 문제가 고쳐지는지, `{type side}`가 멀티에서 국가를 주는지, 봇이 비용 0 로스터를 쓰는지, 견본 id(0xC100~)가 맵의 id와 부딪히는지(Spawn Menu도 같은 범위를 쓴다).
+- 미확인(게임 안에서만 알 수 있다): 견본 파일의 트리거가 `ctb_has_<국가>`를 켜는지(따로 include한 `{Helpers}`가 합쳐지는지. 안 되면 `--all-nations`), 새 종류 단추를 게임이 받는지(`--roster`일 때. 안 되면 `--basic-buttons`), 증원 창이 멀티·컨퀘스트에서 보이는지와 사라지는 문제가 고쳐지는지, `{type side}`가 멀티에서 국가를 주는지, 봇이 비용 0 로스터를 쓰는지, 견본 id(0xC100~)가 맵의 id와 부딪히는지(Spawn Menu도 같은 범위를 쓴다).
 
 ```
 ctatoybox spawn-menu preview
-ctatoybox spawn-menu build [--keep-cost] [--basic-buttons]
+ctatoybox spawn-menu build [--all-nations] [--grid <열> | --list] [--roster [--roster-add] [--keep-cost] [--basic-buttons]]
 ```
 
 ### 한글화 (`l10n`)
