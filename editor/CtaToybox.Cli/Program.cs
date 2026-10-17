@@ -26,6 +26,7 @@ namespace CtaToybox.Cli
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
+            "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--keep-cost] [--basic-buttons]   (Spawn Menu를 대체하는 스폰 모드를 만든다. preview는 쓰지 않고 수만 보인다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
 
@@ -43,11 +44,12 @@ namespace CtaToybox.Cli
             ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude", "any", "items" },
             ["build"] = new[] { "settings", "project", "force" },
             ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
+            ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
 
         // 값을 받지 않는 옵션
-        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force", "classes" };
+        static readonly HashSet<string> Flags = new HashSet<string>(StringComparer.OrdinalIgnoreCase) { "force", "classes", "keep-cost", "basic-buttons" };
 
         // 게임이나 에디터가 실행 중인지. 테스트가 바꿔 끼운다
         public static Func<bool> GameRunning = EditorSession.GameRunning;
@@ -92,6 +94,7 @@ namespace CtaToybox.Cli
                     case "build": return Build(opt, settingsPath, output);
                     case "vision-preset": return VisionPreset(opt, settingsPath, output);
                     case "faction-preset": return FactionPresetCli(opt, settingsPath, output);
+                    case "spawn-menu": return SpawnMenu(positional, opt, settingsPath, output);
                     default: throw new UsageException("모르는 명령: " + args[0]);
                 }
             }
@@ -212,6 +215,54 @@ namespace CtaToybox.Cli
                 foreach (string n in report.Notes) output.WriteLine("  " + n);
                 if (opt.ContainsKey("report")) File.WriteAllLines(opt["report"], report.Edits.Select(kv => "수정 " + kv.Key + ": " + kv.Value).Concat(report.Shared.Select(x => "공유 " + x)).Concat(report.Skipped.Select(x => "건너뜀 " + x)).Concat(report.Notes));
                 return 0;
+            }
+        }
+
+        // 스폰 모드(docs/superpowers/specs/2026-10-17-spawn-menu-replacement-design.md). preview는 쓰지 않고 수만 보인다
+        static int SpawnMenu(List<string> positional, Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string sub = positional.Count > 0 ? positional[0].ToLowerInvariant() : null;
+            if (sub != "preview" && sub != "build") throw new UsageException("spawn-menu 다음에 preview 또는 build");
+            if (sub == "build" && GameRunning())
+            {
+                if (!opt.ContainsKey("force"))
+                {
+                    output.WriteLine("오류: 게임이나 에디터가 실행 중이다. 실행 중에 모드 파일을 바꾸거나 지우면, 게임이 그 파일을 다시 읽을 때(예: 전투를 새로 시작할 때) 꺼질 수 있다. 게임을 끄고 다시 만든다. 그래도 만들려면 --force를 붙인다.");
+                    return 1;
+                }
+                output.WriteLine("경고: 게임이나 에디터가 실행 중이다(--force). 전투를 새로 시작하지 말고 게임을 다시 시작한다.");
+            }
+            EditorSettings settings; LayerPlan plan;
+            using (var probe = Open(settingsPath, output, out settings, out plan)) { if (probe == null) return 1; }
+            string outDir = Path.GetFullPath(opt.ContainsKey("out") ? opt["out"] : Core.Spawn.SpawnSources.SpawnModDirOf(settings));
+            settings.SpawnModDir = outDir;
+            var warnings = new List<string>();
+            using (var stack = Core.Spawn.SpawnSources.Open(settings, plan, warnings))
+            {
+                bool rebuilt;
+                var index = UnitIndex.LoadOrBuild(stack, Path.Combine("editor", "cache", "spawn-unit-index.json"), null, out rebuilt);
+                var armies = ArmyIndex.Build(stack, index.Units);
+                var categories = Core.Spawn.SpawnCategories.Load(Path.Combine("editor", "spawn", "categories.psv"), warnings);
+                var report = new Core.Spawn.SpawnReport();
+                var o = new Core.Spawn.SpawnOptions { Roster = new Core.Spawn.RosterOptions { KeepCost = opt.ContainsKey("keep-cost"), BasicButtons = opt.ContainsKey("basic-buttons") } };
+                var files = Core.Spawn.SpawnGenerator.Generate(stack, index, armies, categories, o, report);
+                foreach (string w in warnings) output.WriteLine("  " + w);
+                output.WriteLine("맵 " + report.Maps + "(캠페인 " + report.CampaignMaps + ", 멀티 " + report.MultiMaps + "), 유닛 " + report.Units + ", 분대 " + report.Squads + ", 새 로스터 항목 " + report.NewRosterEntries + ", 단추 " + report.Buttons + ", 화면 " + report.Screens + ", 견본 " + report.Templates + ", 파일 " + files.Count + ", 건너뜀 " + report.Skipped.Count);
+                foreach (string s in report.Skipped.Take(20)) output.WriteLine("  건너뜀 " + s);
+                foreach (string n in report.Notes) output.WriteLine("  " + n);
+                if (sub == "preview") return 0;
+
+                var statBuilt = File.Exists(Path.Combine(settings.OutputModDir, ModBuilder.ManifestName)) ? File.GetLastWriteTimeUtc(Path.Combine(settings.OutputModDir, ModBuilder.ManifestName)) : (DateTime?)null;
+                var spawnBuilt = Core.Spawn.SpawnWriter.BuiltAt(outDir);
+                if (statBuilt != null && spawnBuilt != null && statBuilt > spawnBuilt) output.WriteLine("  알림: 스탯 출력 모드가 지난 스폰 생성보다 나중에 빌드됐다. 이번 생성이 그것을 반영한다");
+                Directory.CreateDirectory(outDir);
+                string info = Path.Combine(outDir, "mod.info");
+                if (!File.Exists(info))
+                    File.WriteAllText(info, "{mod\n\t{name \"CTAToybox Spawn\"}\n\t{tags \"Mod\"}\n\t{desc \"CTAToybox spawn menu: free skirmish roster with all units and a reinforcement menu in every map. Generated by the CTAToybox editor.\"}\n\t{minGameVersion \"any\"}\n\t{maxGameVersion \"any\"}\n}\n");
+                var written = Core.Spawn.SpawnWriter.Write(outDir, files, settings.OutputModDir);
+                output.WriteLine("썼다 " + written.Written.Count + ", 그대로 " + written.Unchanged.Count + ", 지웠다 " + written.Removed.Count + ", 오류 " + written.Errors.Count + ": " + outDir);
+                foreach (string e in written.Errors.Take(20)) output.WriteLine("  오류 " + e);
+                return written.Errors.Count > 0 ? 1 : 0;
             }
         }
 

@@ -129,6 +129,7 @@ static class Suites
         ("SpawnMap", SpawnMapTests.Run),
         ("SpawnMenu", SpawnMenuTests.Run),
         ("SpawnGenerator", SpawnGeneratorTests.Run),
+        ("SpawnCli", SpawnCliTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
