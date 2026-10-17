@@ -17,7 +17,8 @@ namespace CtaToybox.Core.Spawn
     public sealed class MenuOptions
     {
         public int PageSize { get; set; } = 21;
-        public int GridCols { get; set; } = 7;   // 증원 창 단추 칸 열 수(가로 격자). 0이면 바닐라 세로 목록 그대로
+        // 증원 창 단추 칸 열 수(가로 격자). 0이면 바닐라 세로 목록 그대로. 기본 0: 격자 판으로 게임이 판 화면을 만들다 꺼졌다(2026-10-18 game.log)
+        public int GridCols { get; set; }
         public bool AllNations { get; set; }     // 캠페인 맵에도 모든 국가 견본을 넣는다(기본은 그 맵에 나오는 국가만)
     }
 

@@ -75,7 +75,7 @@ namespace CtaToybox.Core.Spawn
                 if (rv == null) report.Skipped.Add(ReinforcementViewPatch.Path + ": 계층에 없다");
                 else if (rx == null) report.Skipped.Add(ReinforcementViewPatch.Path + ": " + rerr);
                 else files.Add(new SpawnFile { Path = "resource/" + rv.VirtualPath, Bytes = Encoding.UTF8.GetBytes(rx), Source = rv.Layer });
-                report.Notes.Add("미확인: 증원 창을 가로 격자(" + o.Menu.GridCols + "열)로 바꾼 것을 게임이 받는지. 안 되면 spawn-menu build --list");
+                report.Notes.Add("주의: 증원 창 가로 격자(" + o.Menu.GridCols + "열)는 2026-10-18 게임이 판 화면을 만들다 꺼진 판이다");
             }
             report.Notes.Add("미확인: 증원 창 메뉴가 멀티·컨퀘스트에서 보이는지, 메뉴가 사라지는 문제가 고쳐지는지(게임 안에서만 알 수 있다)");
             if (!o.Menu.AllNations) report.Notes.Add("미확인: 견본 파일(templates_<국가>.mi)의 트리거가 ctb_has_<국가>를 켜서 국가 화면이 그 맵의 국가만 보이는지. 안 되면 spawn-menu build --all-nations");
