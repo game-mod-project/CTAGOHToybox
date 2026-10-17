@@ -17,7 +17,7 @@ namespace CtaToybox.Core
         public RulePreview PreviewRule(BulkRule rule)
         {
             var probe = new EditProject { Rules = Project == null ? null : Project.Rules, Edits = Project == null ? new List<Edit>() : Project.Edits.Where(e => e.Rule == null || Before(e.Rule, rule.Id)).ToList() };
-            return BulkRules.Preview(rule, probe, Index.Units, tracer, f => Index.UsersOf(f), u => Index.HeirsOf(u).Count, p => Armies.ArmyOf(p));
+            return BulkRules.Preview(rule, probe, Index.Units, tracer, f => Index.UsersOf(f), u => Index.HeirsOf(u).Count, p => Armies.ArmyOf(p), n => Items.IsAmmo(n));
         }
 
         // id가 rule보다 목록 앞에 있는 규칙인가. rule이 목록에 없으면(새 규칙) 모든 규칙이 앞이다
@@ -59,6 +59,7 @@ namespace CtaToybox.Core
                 rule.Name = string.IsNullOrWhiteSpace(changed.Name) ? changed.Describe() : changed.Name;
                 rule.Kind = changed.Kind; rule.Paths = changed.Paths == null ? null : new List<string>(changed.Paths); rule.Layer = changed.Layer;
                 rule.Army = changed.Army; rule.Exclude = changed.Exclude == null ? null : new List<string>(changed.Exclude);
+                rule.Any = changed.Any == null ? null : new List<string>(changed.Any); rule.Items = changed.Items;
                 rule.Key = changed.Key; rule.Arg = changed.Arg; rule.Op = changed.Op; rule.Value = changed.Value; rule.Scope = changed.Scope;
             }, id);
         }
@@ -121,7 +122,7 @@ namespace CtaToybox.Core
 
         static void Restore(BulkRule target, BulkRule from)
         {
-            target.Name = from.Name; target.Kind = from.Kind; target.Paths = from.Paths; target.Layer = from.Layer; target.Key = from.Key; target.Army = from.Army; target.Exclude = from.Exclude;
+            target.Name = from.Name; target.Kind = from.Kind; target.Paths = from.Paths; target.Layer = from.Layer; target.Key = from.Key; target.Army = from.Army; target.Exclude = from.Exclude; target.Any = from.Any; target.Items = from.Items;
             target.Arg = from.Arg; target.Op = from.Op; target.Value = from.Value; target.Scope = from.Scope; target.Enabled = from.Enabled;
         }
 
@@ -136,7 +137,7 @@ namespace CtaToybox.Core
             Project.Edits.RemoveAll(e => e.Rule != null && ids.Contains(e.Rule));
             foreach (var rule in later.Where(r => r.Enabled))
             {
-                var preview = BulkRules.Preview(rule, Project, Index.Units, tracer, f => Index.UsersOf(f), u => Index.HeirsOf(u).Count, p => Armies.ArmyOf(p));
+                var preview = BulkRules.Preview(rule, Project, Index.Units, tracer, f => Index.UsersOf(f), u => Index.HeirsOf(u).Count, p => Armies.ArmyOf(p), n => Items.IsAmmo(n));
                 Project.Edits.AddRange(preview.Edits);
             }
         }

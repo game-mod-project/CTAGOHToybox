@@ -120,6 +120,7 @@ static class Suites
         ("ArmyIndex", ArmyIndexTests.Run),
         ("FileCopy", FileCopyTests.Run),
         ("AddLine", AddLineTests.Run),
+        ("FactionPreset", FactionPresetTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
