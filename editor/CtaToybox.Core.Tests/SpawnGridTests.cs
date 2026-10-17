@@ -22,10 +22,11 @@ static class SpawnGridTests
             ("entity/-vehicle/eng/tank_heavy/broken/broken.def", "{game_entity\n (include \"/properties/tank.ext\")\n (\"no_such_macro\")\n}\n"));
         using var o = SpawnFixture.Open(settings);
         T.True(!o.Catalog.Units.Any(u => u.Name == "broken") && o.Skipped.Any(s => s.Contains("broken.def") && s.Contains("풀리지 않는다")), "a vehicle whose definition does not resolve and is in no roster is left out");
-        var files = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions(), new SpawnReport());
+        // 기본은 바닐라 세로 목록(2026-10-18 게임이 격자 판 화면을 만들다 꺼졌다: ld:create scenegameview.xml EXCEPTION_ACCESS_VIOLATION)
+        var list = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions(), new SpawnReport());
+        T.True(!list.Any(f => f.Path.EndsWith("gameunitreinforcementview.xml", System.StringComparison.OrdinalIgnoreCase)), "the default keeps the vanilla vertical list");
+        var files = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { Menu = new MenuOptions { GridCols = 7 } }, new SpawnReport());
         var view = files.SingleOrDefault(f => f.Path.EndsWith("gameunitreinforcementview.xml", System.StringComparison.OrdinalIgnoreCase));
-        T.True(view != null && System.Text.Encoding.UTF8.GetString(view.Bytes).Contains("cols=\"7\""), "the generator writes the grid view by default");
-        var list = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { Menu = new MenuOptions { GridCols = 0 } }, new SpawnReport());
-        T.True(!list.Any(f => f.Path.EndsWith("gameunitreinforcementview.xml", System.StringComparison.OrdinalIgnoreCase)), "--list keeps the vanilla vertical list");
+        T.True(view != null && System.Text.Encoding.UTF8.GetString(view.Bytes).Contains("cols=\"7\""), "--grid 7 writes the grid view");
     }
 }

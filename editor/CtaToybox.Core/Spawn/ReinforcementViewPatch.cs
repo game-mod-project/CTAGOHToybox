@@ -2,7 +2,9 @@
 // 바닐라 interface.pak!layout/views/scene/component/GameUnitReinforcementView.xml의 단추 칸은
 // <StepScrollPane id="unit_types_container" visibleElements="7"> 세로 목록이다. 같은 id의 <GridPanel cols="N">으로 바꾼다.
 // 구매 창(GameUnitSpawnView.xml)이 같은 꼴(GridPanel id="unit_container" cols="3" hgap="2" vgap="2")을 쓴다.
-// 게임이 이 id의 칸을 격자로 받아 단추를 채우는지는 미확인이다. 안 되면 spawn-menu build --list로 세로 판으로 되돌린다
+// 2026-10-18 이 판으로 캠페인 판을 열자 게임이 판 화면(scenegameview.xml)을 만들다 EXCEPTION_ACCESS_VIOLATION으로 꺼졌다.
+// 같은 판의 SceneGameView.xml은 Spawn Menu(정상 동작) 것과 조건 줄만 다르고 싱글에서는 둘 다 켜진다. 바뀐 것은 이 칸의 종류(StepScrollPane → GridPanel)뿐이라
+// 게임 코드가 이 칸을 StepScrollPane으로 다룬다고 본다(스키마의 StepScrollPane에는 방향 속성이 없다). 그래서 기본에서 뺐고 --grid N으로만 쓴다
 using System;
 using System.Text.RegularExpressions;
 
