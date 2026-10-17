@@ -226,6 +226,7 @@ ctatoybox build --project editor/projects/강화-독일.json
 
 - 쓰는 곳은 `mod/CTAToybox/resource` 아래와 `mod/CTAToybox/.ctatoybox-build.json`뿐이다.
 - "이 유닛만" 수정은 원본에 없는 이름의 사본 파일도 만든다. 사본도 `.ctatoybox-build.json`에 적히고 다음 빌드에서 지워진다.
+- 쓴 파일과 같은 폴더의 `.presets`(이긴 판)와, 쓴 아이템 파일이 `{from}`으로 물려받는 원형 사슬(이긴 판)을 바이트 그대로 같이 쓴다. 출력 모드에 있는 파일이 다른 모드 폴더에만 있는 정의·원형을 찾지 못해 게임이 꺼졌기 때문이다(2026-10-17 `define not found`, `pattern not found`). 내용이 같아 다른 파일이 읽는 값은 바뀌지 않는다.
 - 지우는 것은 이전 빌드가 `.ctatoybox-build.json`에 적어 둔 파일뿐이다. 손으로 넣은 파일은 그대로 둔다.
 - `.ctatoybox-build.json`이 깨져 읽히지 않으면 빌드는 아무것도 쓰거나 지우지 않고 멈춘다(그대로 빌드하면 이전 생성물의 기록을 잃는다). 출력 폴더의 `resource` 아래에서 이전 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다.
 - 수정을 모두 끄고 빌드하면 생성물이 모두 사라진다.
