@@ -77,6 +77,16 @@ namespace CtaToybox.Core.Spawn
                 else files.Add(new SpawnFile { Path = "resource/" + rv.VirtualPath, Bytes = Encoding.UTF8.GetBytes(rx), Source = rv.Layer });
                 report.Notes.Add("주의: 증원 창 가로 격자(" + o.Menu.GridCols + "열)는 2026-10-18 게임이 판 화면을 만들다 꺼진 판이다");
             }
+            else if (o.Menu.VisibleButtons > 0)
+            {
+                var rv = stack.Find(ReinforcementViewPatch.Path);
+                string rerr = null;
+                string rx = rv == null ? null : ReinforcementViewPatch.SetVisible(Encoding.UTF8.GetString(stack.Read(rv)), o.Menu.VisibleButtons, out rerr);
+                if (rv == null) report.Skipped.Add(ReinforcementViewPatch.Path + ": 계층에 없다");
+                else if (rx == null) report.Skipped.Add(ReinforcementViewPatch.Path + ": " + rerr);
+                else files.Add(new SpawnFile { Path = "resource/" + rv.VirtualPath, Bytes = Encoding.UTF8.GetBytes(rx), Source = rv.Layer });
+                report.Notes.Add("미확인: 증원 창에 단추 " + o.Menu.VisibleButtons + "개가 화면 높이 안에 다 보이는지. 잘리면 spawn-menu build --visible <더 작은 수>");
+            }
             report.Notes.Add("미확인: 증원 창 메뉴가 멀티·컨퀘스트에서 보이는지, 메뉴가 사라지는 문제가 고쳐지는지(게임 안에서만 알 수 있다)");
             if (!o.Menu.AllNations) report.Notes.Add("미확인: 견본 파일(templates_<국가>.mi)의 트리거가 ctb_has_<국가>를 켜서 국가 화면이 그 맵의 국가만 보이는지. 안 되면 spawn-menu build --all-nations");
             return files;
