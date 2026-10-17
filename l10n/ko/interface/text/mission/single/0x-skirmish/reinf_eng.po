@@ -91,7 +91,7 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_eng/inf"
 msgid "Rifle squad"
-msgstr ""
+msgstr "소총 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_eng/51st_hi_sq"
 msgid "51st Highland squad"

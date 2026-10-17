@@ -15,11 +15,11 @@ msgstr ""
 
 msgctxt "mission/single/00-bootcamp/2-combat/date"
 msgid "June 26th, 1941 - Grodno, Belorussian SSR."
-msgstr ""
+msgstr "1941년 6월 26일 - 벨라루스 SSR, 그로드노."
 
 msgctxt "mission/single/00-bootcamp/2-combat/failmedic"
 msgid "Your medic was not fast enough and the soldier bled to death."
-msgstr ""
+msgstr "위생병이 늦어서 병사가 출혈로 사망했다."
 
 msgctxt "mission/single/00-bootcamp/2-combat/lose"
 msgid "You lost all your men!"

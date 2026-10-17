@@ -55,59 +55,59 @@ msgstr ""
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/04"
 msgid "What is this?! It's a heavy Soviet tank, a KV-1! Take it out immediately using APCR rounds!"
-msgstr ""
+msgstr "이게 뭐지?! 소련 중전차 KV-1이다! 즉시 APCR탄으로 격파해라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/04b"
 msgid "Great job destroying the heavy tank! Now let us prepare to relocate again."
-msgstr ""
+msgstr "중전차를 잘 격파했다! 이제 다시 이동 준비를 하자."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/05"
 msgid "Here, take this truck and attach your AT gun to it so you can tow it quickly to a new location."
-msgstr ""
+msgstr "이 트럭을 받아라. 대전차포를 연결해서 새 위치로 빠르게 견인해라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/05b"
 msgid "Detach the AT gun and move it into position near the trenches!"
-msgstr ""
+msgstr "대전차포를 분리해서 참호 근처 위치로 옮겨라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/06a"
 msgid "Now we will familiarize ourselves with our standard light field howitzer, the 10.5cm LeFH 18! First, you need some ammunition for it."
-msgstr ""
+msgstr "이제 우리의 표준 경야전곡사포인 10.5cm LeFH 18에 익숙해지자! 먼저 포에 쓸 탄약이 필요하다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/06b"
 msgid "You now possess an ammunition truck. Crew the artillery piece and drive the truck closer to resupply your howitzer!"
-msgstr ""
+msgstr "탄약 트럭이 생겼다. 곡사포에 승무원을 배치하고, 트럭을 가까이 몰아 곡사포에 탄약을 보급해라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/07"
 msgid "Soviets have arrived at the village west of our location. Use the howitzer to destroy their trucks!"
-msgstr ""
+msgstr "소련군이 우리 위치 서쪽 마을에 도착했다. 곡사포로 놈들의 트럭을 파괴해라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/07helper"
 msgid "Firing multiple shots at the same target or location increases the accuracy of each subsequent shot."
-msgstr ""
+msgstr "같은 목표나 지점에 여러 발을 쏘면 이후 사격마다 명중률이 올라간다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/08"
 msgid "Soviets armored car spotted! Switch the howitzer ammunition to either armor-piercing (APHE) or high-explosive anti-tank (HEAT) to destroy it with direct fire!"
-msgstr ""
+msgstr "소련 장갑차를 발견했다! 곡사포 탄약을 철갑탄(APHE)이나 대전차 고폭탄(HEAT)으로 바꿔 직접 사격으로 파괴해라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/09"
 msgid "An exceptional kill! Now, kill the remaining enemy soldiers!"
-msgstr ""
+msgstr "훌륭한 격파다! 이제 남은 적병을 처치해라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/hint/01"
 msgid "Your AT gun is set to 'return fire' firing mode. Switch to 'fire at will' or manually shoot in direct control mode."
-msgstr ""
+msgstr "대전차포의 사격 모드가 '응사'로 설정돼 있다. '자유 사격'으로 바꾸거나 직접 조종 모드에서 수동으로 쏴라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/scene/01"
 msgid "This is the 5cm PaK 38. It is a direct-fire Anti-Tank weapon. Ideal for ambushing enemy tanks with pinpoint accuracy."
-msgstr ""
+msgstr "5cm PaK 38이다. 직사 대전차포로, 정확한 사격으로 적 전차를 매복 공격하기에 이상적이다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/scene/02"
 msgid "Changing your location is always good idea. For example, your new location should allow for an even better angle of the road."
-msgstr ""
+msgstr "위치를 바꾸는 건 언제나 좋은 방법이다. 예를 들어 새 위치에서는 도로를 더 좋은 각도로 볼 수 있다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/scene/03"
 msgid "Tow your AT gun to the new position using the truck."
-msgstr ""
+msgstr "트럭으로 대전차포를 새 위치까지 견인해라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/outro_completed"
 msgid "Mission Accomplished!\n\nClick on 'continue' to keep playing this mission or click on 'next' to proceed directly into the next mission."
@@ -123,60 +123,60 @@ msgstr ""
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/replay_video"
 msgid "Replay Video"
-msgstr ""
+msgstr "영상 다시 보기"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/story"
 msgid "Welcome to artillery training, Soldier.\n\nIn this tutorial you will learn the basics of artillery emplacements and how their direct and indirect fire modes can be decisive in battle.\n\nWhat artillery lacks in mobility, it makes up for in firepower.\n\n                                        Good luck!"
-msgstr ""
+msgstr "포병 훈련에 온 것을 환영한다, 병사.\n\n이 훈련에서는 포병 진지의 기본과 직사·간접 사격 모드가 전투에서 얼마나 결정적일 수 있는지 배운다.\n\n포병은 기동력이 부족한 만큼 화력으로 보완한다.\n\n                                        행운을 빈다!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task1"
 msgid "Crew the AT gun with all your men."
-msgstr ""
+msgstr "모든 병력으로 대전차포에 승무원을 배치하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task1b"
 msgid "Move your AT gun to a new location as shown."
-msgstr ""
+msgstr "대전차포를 표시된 새 위치로 옮겨라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task2"
 msgid "Build sandbags for your AT gun."
-msgstr ""
+msgstr "대전차포 주변에 모래주머니를 쌓아라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task3"
 msgid "Destroy the enemy vehicles!"
-msgstr ""
+msgstr "적 차량을 파괴하라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task4"
 msgid "Destroy the enemy KV-1!"
-msgstr ""
+msgstr "적 KV-1을 파괴하라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task5a"
 msgid "Connect your AT gun to the truck for towing."
-msgstr ""
+msgstr "견인할 수 있게 대전차포를 트럭에 연결하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task5"
 msgid "Tow the AT gun to the new position as indicated."
-msgstr ""
+msgstr "표시된 새 위치까지 대전차포를 견인하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task5b"
 msgid "Detach the AT gun and move it into the given position."
-msgstr ""
+msgstr "대전차포를 분리해 지정된 위치로 옮겨라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task6"
 msgid "Resupply the light field howitzer."
-msgstr ""
+msgstr "경야전곡사포에 탄약을 보급하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task7"
 msgid "Destroy the enemy trucks with the howitzer."
-msgstr ""
+msgstr "곡사포로 적 트럭을 파괴하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task8"
 msgid "Destroy the Soviet armored car with direct fire with AP/HEAT shells."
-msgstr ""
+msgstr "AP/HEAT탄으로 직접 사격해 소련 장갑차를 파괴하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/task9"
 msgid "Destroy the remaining enemy units."
-msgstr ""
+msgstr "남은 적 부대를 파괴하라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/outro_failed"
 msgid "You have been defeated!"
-msgstr ""
+msgstr "패배했다!"

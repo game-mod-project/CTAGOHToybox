@@ -20,7 +20,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/player_reinf_arrive_alt"
 msgid "Reinforcements have arrived!"
-msgstr ""
+msgstr "증원이 도착했다!"
 
 msgctxt "mission/single/041-usa_airborne/allied_obj_capture"
 msgid "Strategic position secured!"

@@ -339,7 +339,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/inf_t1"
 msgid "Rifle Squad"
-msgstr ""
+msgstr "소총 분대"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/inf_t2"
 msgid "Jäger Squad"

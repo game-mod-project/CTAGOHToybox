@@ -6,6 +6,7 @@
 # 메모: 장비, 계급, 탄종, 약어(군대 약어), 부대, 병과, 군대, 일반(일반 군사 용어, AI가 정함)
 
 # --- 탄종·약어(그대로) ---
+# MG·SMG·AT·AA는 일반 말로 번역한다(MG Operator → 기관총 사수, AT gun → 대전차포). 무기 이름(MG 34)은 장비 규칙으로 그대로
 HE|HE|탄종
 HEAT|HEAT|탄종
 AP|AP|탄종
@@ -15,10 +16,6 @@ APCBC-HE|APCBC-HE|탄종
 APCR|APCR|탄종
 APDS|APDS|탄종
 WP|WP|탄종
-MG|MG|약어(기관총)
-SMG|SMG|약어(기관단총)
-AT|AT|약어(대전차)
-AA|AA|약어(대공)
 SdKfz|SdKfz|장비
 Sd.Kfz.|Sd.Kfz.|장비
 USAGF|USAGF|약어(군대)
@@ -183,3 +180,9 @@ Last Stand|라스트 스탠드|일반(게임 모드)
 Victory Points|승점|일반
 Manpower|인력|일반(MP)
 Command Points|지휘 점수|일반(CP)
+MG Operator|기관총 사수|일반
+AT gun|대전차포|일반
+AT Rifleman|대전차 소총수|일반
+SMG|기관단총|일반(낱말로 쓸 때)
+Flak|Flak|장비(독일 대공포 이름)
+HQ|본부|일반

@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/180"
 msgid "Artillery strike"
-msgstr ""
+msgstr "포격"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/date"
 msgid "September 27th, 1942 · Stalingrad"

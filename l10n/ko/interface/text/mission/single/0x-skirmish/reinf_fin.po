@@ -63,7 +63,7 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/riflesq"
 msgid "Rifle squad"
-msgstr ""
+msgstr "소총 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_fin/inf"
 msgid "Infantry squad"

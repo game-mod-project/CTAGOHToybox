@@ -79,7 +79,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/inf"
 msgid "Rifle squad"
-msgstr ""
+msgstr "소총 분대"
 
 msgctxt "mission/single/04-usa/menu_usa/glider_sq"
 msgid "Glider squad"
