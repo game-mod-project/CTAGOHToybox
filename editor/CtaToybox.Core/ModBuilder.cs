@@ -193,6 +193,25 @@ namespace CtaToybox.Core
                 }
                 foreach (var plan in plans) manifest.Files.AddRange(plan.Produced);
 
+                // 1-3. 쓴 파일의 폴더에 .presets가 있으면 이긴 판을 그대로 같이 쓴다(2026-10-17 게임이 꺼졌다: 출력 모드의 사본
+                // set/stuff/bazooka/raketenwerfer43_ctb_ger가 MACE pak의 bazooka/.presets에만 있는 "penetration_short"를 "define not found").
+                // 같은 내용이라 다른 파일이 읽는 정의는 그대로다
+                var presetDirs = manifest.Files.Select(f => f.Path.Substring("resource/".Length)).Where(p => p.Contains('/'))
+                    .Select(p => p.Substring(0, p.LastIndexOf('/'))).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(d => d, StringComparer.Ordinal).ToList();
+                foreach (string dir in presetDirs)
+                {
+                    string presetPath = dir + "/.presets";
+                    if (manifest.Files.Any(f => string.Equals(f.Path, "resource/" + presetPath, StringComparison.OrdinalIgnoreCase))) continue;
+                    var presetSource = stack.FindReal(presetPath);
+                    if (presetSource == null) continue;
+                    var produced = new List<BuildManifestFile>();
+                    string error;
+                    try { error = StageItem(new WorkItem { Output = presetPath, Source = presetSource, Always = true }, stage, previous, new List<EditResult>(), produced); }
+                    catch (Exception ex) { error = ex.Message; }
+                    if (error != null) report.FileErrors.Add(presetPath + ": " + error);
+                    else manifest.Files.AddRange(produced);
+                }
+
                 // 2. 이전 생성물과 이번 생성물을 모두 적은 목록 파일을 먼저 쓴다
                 var fresh = new HashSet<string>(manifest.Files.Select(x => x.Path), StringComparer.OrdinalIgnoreCase);
                 var stale = previous.Values.Where(x => !fresh.Contains(x.Path)).ToList();

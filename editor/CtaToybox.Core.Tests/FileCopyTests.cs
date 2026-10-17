@@ -13,7 +13,7 @@ static class FileCopyTests
         repo = T.TempDir(); outDir = T.TempDir();
         T.Zip(Path.Combine(game, "resource", "set.pak"),
             (K98, "{from \"rifle.pattern\"\n {weight 4}\n}\n"), (G43, "{from \"rifle.pattern\"\n {weight 5}\n}\n"), (Pattern, "{weapon\n {rechargeTime 6}\n {range 100}\n}\n"),
-            ("set/stuff/mgun/mg34.weapon", "{weight 11}\n"));
+            ("set/stuff/mgun/mg34.weapon", "{weight 11}\n"), ("set/stuff/rifle/.presets", "(define \"pen\" {pen 1})\n"));
         Directory.CreateDirectory(Path.Combine(repo, "data", "annotations"));
         string options = Path.Combine(work, "options.set");
         File.WriteAllText(options, "{options {mods \"" + Path.GetFileName(outDir) + ":0\"}}");
@@ -57,6 +57,9 @@ static class FileCopyTests
         T.True(File.Exists(outCopy) && File.ReadAllText(outCopy).Contains("{weight 8}") && File.ReadAllText(outCopy).Contains("{from \"rifle.pattern\""), "the copy is written with its edit");
         T.True(File.ReadAllText(outCopy).Contains("{rechargeTime 3}"), "the inherited reload time is appended to the copy: " + File.ReadAllText(outCopy));
         T.True(File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "g43_ctb_ger")), "a copy without edits is written too");
+        string presetsOut = Path.Combine(outDir, "resource", "set", "stuff", "rifle", ".presets");
+        T.True(File.Exists(presetsOut) && File.ReadAllText(presetsOut) == "(define \"pen\" {pen 1})\n", "the folder .presets goes along unchanged (define not found, 2026-10-17)");
+        T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "mgun", ".presets")), "no .presets for a folder that has none");
         T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "k98")) && !File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "rifle", "rifle.pattern")), "the originals are not written");
 
         s.SetEnabled(edit, false);
