@@ -596,6 +596,10 @@ namespace CtaToybox.Core
                 var mine = copies.Where(c => string.Equals(SourceStack.ToVirtual(c.File ?? ""), file, StringComparison.Ordinal)).ToList();
                 return mine.Count == 0 ? text : BlockCopy.ApplyAll(text, mine);
             });
+            // 파일 사본(팩션 강화): 사본 경로가 원본 내용으로 보이고, 아이템 이름으로도 풀린다
+            var filePairs = FileCopy.Pairs(project);
+            Stack.SetCopies(filePairs.Where(kv => Stack.FindReal(kv.Key) == null));
+            Items = ItemLinks.Build(Stack.Paths);
             tracer = new UnitTracer(Stack);
             checkedFile = null;
         }

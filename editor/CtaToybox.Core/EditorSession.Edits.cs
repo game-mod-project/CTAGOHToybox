@@ -55,6 +55,21 @@ namespace CtaToybox.Core
         string checkedFile, checkedText;
         TextKind checkedKind;
 
+        // 파일 사본을 더한다(팩션 강화). target이 null이면 FileCopy.NameFor(source, suffix). 안 되면 ArgumentException
+        public Edit AddFileCopy(string unit, string source, string target)
+        {
+            NeedProject();
+            string bad = FileCopy.CheckTarget(Stack, source, target);
+            if (bad != null) throw new ArgumentException(bad);
+            if (Project.Edits.Any(x => x.Kind == FileCopy.Kind && SourceStack.ToVirtual(x.New ?? "") == SourceStack.ToVirtual(target)))
+                throw new ArgumentException("같은 사본이 이미 있다: " + target);
+            var edit = FileCopy.New(unit, source, target);
+            Project.Edits.Add(edit);
+            SaveOr(() => Project.Edits.Remove(edit));
+            RefreshOverlay();
+            return edit;
+        }
+
         // 게임 설정 파일의 따옴표 이름 블록을 새 이름으로 복제한다(E18). nameValue는 블록 이름 줄의 값(UnitTracer.BlockNameNote). 안 되면 ArgumentException
         public Edit AddBlockCopy(UnitView unit, ValueView nameValue, string newName)
         {
@@ -219,6 +234,12 @@ namespace CtaToybox.Core
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
             var source = SourceOf(file, parsed);
+            // 파일 사본(팩션 강화): 원본이 있고 사본 경로가 비어 있으면 적용된다
+            if (e.Kind == FileCopy.Kind)
+            {
+                string bad = FileCopy.CheckTarget(Stack, e.File, e.New);
+                return new EditCheck { Edit = e, Status = bad == null ? EditStatus.Applied : Stack.FindReal(file) == null ? EditStatus.TargetMissing : EditStatus.Invalid, Message = bad };
+            }
             // 블록 복제(E18): 빌드와 같이 원본에 넣어 본 결과가 그 수정의 점검 결과다
             if (e.Kind == BlockCopy.Kind)
             {

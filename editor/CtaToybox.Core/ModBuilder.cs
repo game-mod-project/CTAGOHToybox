@@ -113,8 +113,25 @@ namespace CtaToybox.Core
                     report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = swap });
                     enabled.Remove(e);
                 }
-                var shared = enabled.Where(e => e.Scope != "unit").ToList();
+                // 파일 사본(팩션 강화): 만들 수 있는 사본만 원본 위에 등록한다. 그래야 사본을 가리키는 수정이 사본 본문을 읽고, 빠진 사본은 "파일이 없다"로 막힌다
                 var items = new Dictionary<string, WorkItem>(StringComparer.Ordinal);
+                var goodCopies = new List<Edit>();
+                stack.SetCopies(null);
+                foreach (var e in enabled.Where(x => x.Kind == FileCopy.Kind).ToList())
+                {
+                    string bad = FileCopy.CheckTarget(stack, e.File, e.New) ?? (goodCopies.Any(c => SourceStack.ToVirtual(c.New) == SourceStack.ToVirtual(e.New)) ? "같은 사본이 이미 있다: " + e.New : null);
+                    enabled.Remove(e);
+                    if (bad != null) { report.Results.Add(new EditResult { Edit = e, Status = stack.FindReal(e.File ?? "") == null ? EditStatus.TargetMissing : EditStatus.Invalid, Message = bad }); continue; }
+                    goodCopies.Add(e);
+                }
+                stack.SetCopies(goodCopies.Select(e => new KeyValuePair<string, string>(e.New, e.File)));
+                foreach (var e in goodCopies)
+                {
+                    var item = ItemFor(items, SourceStack.ToVirtual(e.New), stack.Find(e.New));
+                    item.Always = true;
+                    item.Edits.Add(e);
+                }
+                var shared = enabled.Where(e => e.Scope != "unit").ToList();
                 foreach (var group in shared.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
                 {
                     var source = stack.Find(group.Key);
@@ -362,8 +379,14 @@ namespace CtaToybox.Core
                 results.AddRange(copyResults);
                 copiedCount = copyResults.Count(r => r.Status == EditStatus.Applied);
             }
+            // 파일 사본은 이 파일을 쓰는 것 자체다(item.Always)
+            foreach (var e in item.Edits.Where(x => x.Kind == FileCopy.Kind))
+            {
+                results.Add(new EditResult { Edit = e, Status = EditStatus.Applied });
+                copiedCount++;
+            }
             var usable = new List<Edit>();
-            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind))
+            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind && x.Kind != FileCopy.Kind))
             {
                 string ruleWarning;
                 string ruleError = e.New == null ? null : ValueRules.CheckNewValue(item.Source.VirtualPath, e.Old, e.New, out ruleWarning);

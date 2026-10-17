@@ -17,6 +17,7 @@ namespace CtaToybox.Cli
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
             "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 인자 없는 매크로 호출의 이름을 같은 파일에 정의된 다른 이름으로)\n" +
+            "  ctatoybox add --project <파일> --kind file-copy --file <원본 가상 경로> --new <사본 가상 경로>   (같은 폴더에 새 이름의 사본. 유닛이 쓰게 하려면 이름 값을 사본 이름으로 바꾼다)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
             "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
@@ -331,8 +332,23 @@ namespace CtaToybox.Cli
             }
         }
 
+        // 파일 사본(팩션 강화): add --kind file-copy --file <원본> --new <사본 가상 경로>
+        static int AddFileCopy(Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string projectPath = Need(opt, "project"), source = Need(opt, "file"), target = Need(opt, "new");
+            using (var session = EditorSession.Open(settingsPath, Directory.GetCurrentDirectory(), null))
+            {
+                session.OpenProject(projectPath);
+                try { session.AddFileCopy(opt.ContainsKey("unit") ? opt["unit"] : null, source, target); }
+                catch (ArgumentException ex) { output.WriteLine(ex.Message); return 1; }
+                output.WriteLine("사본을 넣었다: " + SourceStack.ToVirtual(source) + " → " + SourceStack.ToVirtual(target));
+                return 0;
+            }
+        }
+
         static int Add(Dictionary<string, string> opt, string settingsPath, TextWriter output)
         {
+            if (opt.ContainsKey("kind") && opt["kind"] == FileCopy.Kind) return AddFileCopy(opt, settingsPath, output);
             string projectPath = Need(opt, "project"), fileArg = Need(opt, "file"), keyPath = Need(opt, "path"), newValue = Need(opt, "new");
             int occ = Number(opt, "occ"), arg = Number(opt, "arg");
             string scope = opt.ContainsKey("scope") ? opt["scope"].ToLowerInvariant() : "shared";
