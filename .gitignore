@@ -8,3 +8,7 @@ editor/cache/
 
 # 팩션 강화 프로젝트는 faction-preset이 만든다(각 10MB 안팎). 다시 만드는 명령은 docs/07-stat-editor/README.md "팩션별 강화 프로젝트"
 editor/projects/강화-*.json
+
+# 스폰 모드의 맵 사본(게임 맵 .mi를 통째로 복사한 것, 약 210MB). spawn-menu build로 다시 만든다. 메뉴(ctatoybox_spawn/)는 추적한다
+mod/CTAToyboxSpawn/resource/map/*
+!mod/CTAToyboxSpawn/resource/map/ctatoybox_spawn/

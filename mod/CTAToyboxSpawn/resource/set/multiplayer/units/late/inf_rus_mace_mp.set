@@ -1,0 +1,71 @@
+;SDL
+
+;===================================
+;        INSTRUCTIONS    
+;===================================
+
+; In this file onee configures the humans which are spawned in vehicles or squads
+; The humans have a CP and cost associated with them which collectively add up for the final squad value
+; Check ../settings_inf.set for the global defines for CP, capture weight (CW), score, etc.
+
+;===================================
+;        PRICING CHART	       
+;===================================
+
+; // Standard prices below are for tier2 infantry
+
+;shotgun 		= 5
+;mosin 			= 8
+;pps43 			= 10
+;ppsh41 stick 	= 10
+;svt38/40 		= 13
+;m1928a1 		= 12
+;pps43 			= 10
+;ppsh41 stick 	= 10
+;ppsh41 drum	= 13
+;ppd 			= 13
+;avt40 			= 15
+;dp27			= 40
+;dt				= 40
+;rifle grenade 	= +20
+;any % pzfaust 	= +2
+;any pzfaust 	= +5
+;any flamer		= 60
+;engineer		= 50
+;miner 			= 40
+
+; // price modifiers (If not tier2)
+;tier 0 		= -3, MG -10
+;tier 1 		= -1, MG -10
+;tier 1 vet 	= 0, MG 0
+;tier 2 vet		= +2, MG +5
+;tier 3 		= +5, MG +10
+;tier 3 vet 	= +8, MG +15
+;tier 4 		= +10, MG +20
+;tier 4 vet 	= +13, MG +25
+
+
+;===================================
+;        BREED DECLARATIONS       
+;===================================
+
+{"mp/rus/late/elite_guards_rifle"				("inf_tier3" side(rus) period(late) cost(0))}
+{"mp/rus/late/elite_guards_senior_rifle"		        	("inf_tier3" side(rus) period(late) cost(0))}
+
+{"mp/rus/late/mountain_cav_mg"				("inf_tier4" side(rus) period(late) cost(0))}
+{"mp/rus/late/mountain_cav_mg_asst"		        	("inf_tier4" side(rus) period(late) cost(0))}
+
+{"mp/rus/late/vet_partisan_smg_2"			("inf_tier1" side(rus) period(late) cost(0))} ; ppsh41 stick
+{"mp/rus/late/vet_partisan_rmn50_2"			("inf_tier1" side(rus) period(late) cost(0))} ; mp40 + % pzfaust 60
+{"mp/rus/late/vet_partisan_rmn50_asst_2"		("inf_tier1" side(rus) period(late) cost(0))} ; mp40 + % pzfaust 60
+
+{"mp/rus/late/guards_mgun_4"				("inf_tier2" side(rus) period(late) cost(0))} ; dp27
+{"mp/rus/late/guards_mgun_5"				("inf_tier2" side(rus) period(late) cost(0))} ; mosin
+{"mp/rus/late/guards_mgun_6"				("inf_tier2" side(rus) period(late) cost(0))} ; mosin
+{"mp/rus/late/guards_nco_2"					("inf_tier2" side(rus) period(late) cost(0))} ; ppsh41 drum
+{"mp/rus/late/guards_rifle_2"			("inf_tier2" side(rus) period(late) cost(0))} ; svt40
+{"mp/rus/late/guards_rifle_3"			("inf_tier2" side(rus) period(late) cost(0))} ; svt40
+{"mp/rus/late/guards_senior_rifle_2"		("inf_tier2" side(rus) period(late) cost(0))} ; svt40
+{"mp/rus/late/guards_senior_smg_2"			("inf_tier2" side(rus) period(late) cost(0))} ; ppsh41 drum
+{"mp/rus/late/guards_smg_4"					("inf_tier2" side(rus) period(late) cost(0))} ; ppsh41 drum
+{"mp/rus/late/guards_rpg1"					("inf_tier2" side(rus) period(late) cost(0))} ; ppsh41 drum

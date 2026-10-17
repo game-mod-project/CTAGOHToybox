@@ -1,0 +1,1907 @@
+{
+  "builtAt": "2026-10-17T06:46:30Z",
+  "files": [
+    {
+      "path": "localizations/default/interface/text/mission/ctatoybox_spawn.pot"
+    },
+    {
+      "path": "resource/interface/layout/views/scene/scenegameview.xml"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_03.tga"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/menu.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/nation_eng.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/nation_fin.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/nation_ger.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/nation_jap.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/nation_rus.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/nation_usa.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/1v1_barbarossa/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/1v1_cobra/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/1v1_karjala/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/1v1_reichswald_aut/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/2v2_bastogne/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/2v2_blitzkrieg/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/2v2_stalingrad_factory/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/2v2_tali_ihantala/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/3v3_crimea/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/3v3_hells_highway/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/3v3_normandy/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/3v3_volga/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/4v4_goodwood/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/4v4_kursk/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/4v4_mannerheim/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/0_frontlines/4v4_siegfried/frontlines.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_balzerweg/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_balzerweg/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_crossing/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_fall_gelb_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_fall_gelb_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_farmland/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_farmland/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_farmstead/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_farmstead/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_forssa_dam/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_forssa_dam/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_hiekalla/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_hiekalla/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_holzbach/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_holzbach/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_isigny_ruins/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_isigny_ruins/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_jarven/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_jarven/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_kalinin/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_kalinin/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_ladoga/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_ladoga/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_losheim_gap/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_losheim_gap/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_nevel/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_oosterbeek_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_oosterbeek_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_oryol/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_ouren_valley/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_ouren_valley/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_radar_hill/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_radar_hill/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_reka/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_reka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_riverbank/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_solingen_factory_aut/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_solingen_factory_aut/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_tormasenvaara/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_tormasenvaara/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_uran/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_uran/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_valley/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_valley/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_volokolamsk/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_weteringsteeg/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_weteringsteeg/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_workshop/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/1v1_workshop/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_blizzard/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_blizzard/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_bubingen/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_bubingen/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_countryside/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_countryside/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_courtyard/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_courtyard/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_dunkirk_dunes_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_dunkirk_dunes_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_fall/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_fall/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_gelid/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_gelid/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_glubinka/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_glubinka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_grave_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_grave_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_hakola/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_hakola/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_heelsum_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_heelsum_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_hunting/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_hunting/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_hutor/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_hutor/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_industry/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_industry/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_invanovka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_kainuo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_kainuo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_karvola/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_karvola/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_katrinovo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_katrinovo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_kavichy_factory/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_mannerheim/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_mannerheim/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_marvie_ridge/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_marvie_ridge/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_monastery/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_monastery/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_mortain/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_mortain/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_olshanka/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_olshanka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_rouncy/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_rouncy/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_sainte_marie_du_mont/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_sainte_marie_du_mont/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_shaforovo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_shaforovo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_st_vith/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_st_vith/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_stalingrad/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_stalingrad/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_suburbs/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_suburbs/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_suishka/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_suishka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_tikhvin/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_tikhvin/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_urban_hell/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_urban_hell/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_vainikalan/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_vainikalan/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_wesel_aut/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_wesel_aut/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_ziborovo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/2v2_ziborovo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_barrikady/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_barrikady/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_brozha/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_brozha/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_canals_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_canals_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_elanskaya/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_elanskaya/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_factory/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_factory/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_general_winter/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_general_winter/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_general_winter/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_glushkovo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_glushkovo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hamminkeln_aut/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hamminkeln_aut/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hqvistvaara/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hqvistvaara/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hungary/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hungary/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hurtgenwald/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_hurtgenwald/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_king_of_the_hill/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_king_of_the_hill/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_king_of_the_hill/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_lakeside_airfield/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_lakeside_airfield/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_lakhta/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_lakhta/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_lalobbe/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_lalobbe/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_mikli/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_mikli/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_mont_cassel/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_mont_cassel/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_mortain_station/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_mortain_station/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_natramala/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_natramala/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_posenov/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_posenov/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_radusha_airfield/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_radusha_airfield/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_ranes/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_ranes/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_samree/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_samree/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_sopheke_quarry/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_sopheke_quarry/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_steppe/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_steppe/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_trenches/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_trenches/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_voronezh/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_voronezh/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_wotan/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_wotan/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_wotan/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_zeeland_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/3v3_zeeland_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_arras_countryside_sum/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_arras_countryside_sum/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_arras_countryside_sum/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_dubovka/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_dubovka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_dubovka/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_eindhoven/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_eindhoven/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_eindhoven/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_fields/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_fields/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_fields/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_grassland/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_grassland/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_grassland/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hanhijarvi/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hanhijarvi/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hanhijarvi/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hill_331/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hill_331/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hill_331/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hills/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hills/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_hills/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_houdremont/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_houdremont/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_houdremont/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_kirjavala/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_kirjavala/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_kirjavala/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_krasny_bor/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_kylmapuro/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_kylmapuro/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_kylmapuro/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_lysovo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_lysovo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_lysovo/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_martinville_ridge/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_martinville_ridge/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_martinville_ridge/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_niemen/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_niemen/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_niemen/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_olkhovatka/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_olkhovatka/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_olkhovatka/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_purple_heart_lane/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_purple_heart_lane/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_purple_heart_lane/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_remagen_aut/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_remagen_aut/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_remagen_aut/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_rikila/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_rikila/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_rikila/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_schoppen/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_schoppen/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_schoppen/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_shiryayevo/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_shiryayevo/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_shiryayevo/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_sikovitsy/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_sikovitsy/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_sikovitsy/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_swamp/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_swamp/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vahikkala/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vahikkala/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vahikkala/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vitebsk/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vitebsk/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vitebsk/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vlissingen_breach/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vlissingen_breach/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_vlissingen_breach/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_winter_walk/ammunition.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_winter_walk/battle_zones.mi"
+    },
+    {
+      "path": "resource/map/multi/4v4_winter_walk/evacuation.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_a_kalinin/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_a_runway/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_anciens/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_anctoville_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_atzerath_valley/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_bergen_radar/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_black_sea_coast/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_bretteville_sur_odon/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_broukerque_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_bubingen/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_cadran_chateau/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_caen_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_canals_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_carpiquet_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_crisbecq_battery/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_d_uran/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_d_vyazma/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_deulin_chataeu/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_dom_burtgen/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_dubovka/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_dunkirk_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_dyle_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_elden_landings/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_f_barrikady/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_f_bridges_of_lysovo/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_f_bykovo/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_f_factory/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_f_lazurnyi/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_flanders_fields_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_flooded_lowlands/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_frozen_highlands/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_glushkovo/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_gullheim_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hamburg_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hanhijarvi/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hanhijarvi_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hazebrouck/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_heistern/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hill_331/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hills/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hilltop/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_honsfeld/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hotton/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_houdremont/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hungarian_swamps/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_hurtgenwald/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_isigny_ruins/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_karvola/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_karvola_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kirjavala/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kirjavala_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kirkenes_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kylmapuro/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kylmapuro_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kymhi_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_kymhi_airfield_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_la_vallee/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_laisniemi/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_laisniemi_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_lakhta/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_lakhta_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_lalobbe/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_malschbach/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_mannerheim/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_martinville_ridge/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_maupertus_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_middenhof/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_mikli/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_mikli_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_narofominsk/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_natramala/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_natramala_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_niemen/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_nord_battery/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_oberhundem_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_olkhovatka/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_oostkapelle/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_pinsk/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_pont_hebert/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_puhoksen/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_puhoksen_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_purple_heart_lane/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_radekhiv/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_radusha_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_ranes/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_raseiniai/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_rasputitsa/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_rethem_station_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_rouncy/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_ruetzen/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_ruhr_factory_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_rzhev/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_sainte_marie_du_mont/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_samree/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_samree_depot/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_schoppen/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_semois_river/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_shaforovo/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_shiryayevo/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_sieg_river/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_siegfried_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_stalingrad_outskirts/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_tormasenvaara/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_utah_beach/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_vainikalan/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_vainikalan_winter/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_valkenburg_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_velikiyeluki/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_verviers_airfield/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_villers_bocage_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_vlissingen_breach_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_wasteland/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_westkapelle_aut/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/multi/dcg_zeeland_sum/campaign_capture_the_flag.mi"
+    },
+    {
+      "path": "resource/map/single/00-bootcamp/01_inf-control/0.mi"
+    },
+    {
+      "path": "resource/map/single/00-bootcamp/02_vehicle-control/0.mi"
+    },
+    {
+      "path": "resource/map/single/00-bootcamp/03_artillery-reinforcements/0.mi"
+    },
+    {
+      "path": "resource/map/single/00-bootcamp/04_reinforcements-offmap-support/0.mi"
+    },
+    {
+      "path": "resource/map/single/00-bootcamp/2-combat/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1941_11_typhoon/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1941_12_tikhvin/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1942_05_kerch/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1942_09_pavlovs_house/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1942_10_obsich/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1942_12_winterstorm/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1943_07_ponyri/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1943_11_kiev/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1944_10_courland/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus/1945_04_konigsberg/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus_skirmish/1941_07-rus_smolensk/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus_skirmish/1942_10-rus_stalingrad_volga/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus_skirmish/1944_07-rus_op_bagration/0.mi"
+    },
+    {
+      "path": "resource/map/single/01-rus_skirmish/1945_04-rus_seelow_heights/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger-west/1944_06_saint_lo_hills/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger-west/1944_08_07_luttich/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger-west/1944_08_19_falaise_escape/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger-west/1944_12_samree/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger-west/1945_01_thirimont/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger-west/1945_04_ruhr_pocket/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1941_10_glushkovo/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1942_01_vyazma/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1942_06_sevastopol/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1942_09_elbrus/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1943_02_krasny_bor/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1943_07_petrovka/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1943_11_wotan/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1944_03_narva/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1944_09_yugoslavia/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger/1945_03_spring-awakening/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger_skirmish/1941_11-ger_moscow/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger_skirmish/1943_02-ger_kharkov/0.mi"
+    },
+    {
+      "path": "resource/map/single/02-ger_skirmish/1945-04-ger_berlin/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1939_12_kollaa/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1939_12_summa/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1940_01_raate_road/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1941_08_ino_station/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1941_08_porlampi/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1944_06_tali-ilhantala/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin/1944_10_tornio/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin_skirmish/1940_02-fin_honkaniemi/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin_skirmish/1941_07-fin_petrozavodsk/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/0.mi"
+    },
+    {
+      "path": "resource/map/single/03-fin_skirmish/1944_07-fin_ilomantsi/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_06_pointe_du_hoc/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_07_hedgerow_hell/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_07_skirmish_operation_cobra/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_08_mortain/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_08_skirmish_falaise_pocket/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_10_skirmish_hurtgen_forest/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_12_hill400/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_12_hotton/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1944_12_skirmish_bulge/0.mi"
+    },
+    {
+      "path": "resource/map/single/04-usa/1945_03_cologne/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_06_01_pathfinders/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_06_03_brecourt_manor/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_06_04_la-fiere_bridge/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_06_05_carentan/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_06_06_bloody_gulch/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_09_01_nijmegen/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_09_02_veghel/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_12_01_noville/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_12_02_elsenborn/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1944_12_03_bastogne/0.mi"
+    },
+    {
+      "path": "resource/map/single/041-usa_airborne/1945_04_30_elbe/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1940_05_13_dyle/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1940_05_20_arras_skirmish/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1940_06_03_dunkirk/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1944_06_05_pegasus/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1944_07_13_villers-bocage_skirmish/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1944_07_18_caen_goodwood/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1944_09_17_arnhem/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1944_09_20_marketgarden_skirmish/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1944_09_20_oosterbeek/0.mi"
+    },
+    {
+      "path": "resource/map/single/05-eng/1945_03_24_varsity/0.mi"
+    },
+    {
+      "path": "resource/map/single/051-ger_finesthour/1940_05_arras/0.mi"
+    },
+    {
+      "path": "resource/map/single/051-ger_finesthour/1940_06_st_valery_en_caux/0.mi"
+    },
+    {
+      "path": "resource/map/single/051-ger_finesthour/1944_06_swordbeach/0.mi"
+    },
+    {
+      "path": "resource/map/single/051-ger_finesthour/1944_06_tilly_sur_seulles/0.mi"
+    },
+    {
+      "path": "resource/map/single/051-ger_finesthour/1944_09_koevering/0.mi"
+    },
+    {
+      "path": "resource/map/single/051-ger_finesthour/1944_10_woensdrecht/0.mi"
+    },
+    {
+      "path": "resource/map/single/06-bonus/1941_12_feodosia/0.mi"
+    },
+    {
+      "path": "resource/map/single/06-bonus/1944_03_trap/0.mi"
+    },
+    {
+      "path": "resource/map/single/06-bonus/1945_04_yugoslavia/0.mi"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/budget.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/budget_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_attacker_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/unitlimits.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_eng_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_fin_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_ger_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_jap_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_rus_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_usa_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_jap.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/settings_inf.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/settings_inf_mace_mp.set"
+    }
+  ]
+}

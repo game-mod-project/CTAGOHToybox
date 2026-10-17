@@ -1,0 +1,14 @@
+# 스폰 메뉴의 유닛 종류 규칙. 형식: 종류|규칙|값,값  (# 뒤는 주석)
+# 종류: light medium heavy td air car empl other
+# 규칙: folder = 정의 경로에 그 조각이 있다, name = 정의 파일 이름에 그 단어가 있다, button = 스커미시 로스터의 b() 값
+# 앞에 있는 줄이 이긴다. 로스터 b()가 tanks가 아니면 button 줄이 먼저다.
+# 아무 줄에도 안 맞으면 편집기 종류로 정한다: tank → medium, cannon → empl, car → car, 나머지 → other
+empl|button|empl
+car|button|vehicles
+td|name|stug,jagd,gmc,spg,sau,su_,marder,hetzer,nashorn,elefant,ferdinand,isu,achilles,wolverine,hellcat,archer,brummbar,sturm,semovente,zis30,zis_30
+light|folder|/tank_light/,/light/
+medium|folder|/tank_medium/
+heavy|folder|/tank_heavy/,/heavy/
+air|folder|/airborne/
+car|folder|/car/,/btr/
+empl|folder|/cannon/,/cannons/
