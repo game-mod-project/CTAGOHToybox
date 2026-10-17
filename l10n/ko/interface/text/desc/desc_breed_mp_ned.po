@@ -16,36 +16,36 @@ msgstr ""
 
 msgctxt "desc/human/mp/ned/late/resistance_bren"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_enfield"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_k98"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_k98_pzf"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_mg34"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_mg42"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_mp40"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_sten"
 msgid "Dutch Resistance Fighter"
-msgstr ""
+msgstr "네덜란드 저항군 대원"
 
 msgctxt "desc/human/mp/ned/late/resistance_medic"
 msgid "Dutch Resistance Medic"
-msgstr ""
+msgstr "네덜란드 저항군 위생병"

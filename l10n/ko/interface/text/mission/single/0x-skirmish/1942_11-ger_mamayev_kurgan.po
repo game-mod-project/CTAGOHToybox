@@ -15,23 +15,23 @@ msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"
@@ -55,7 +55,7 @@ msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/place"
 msgid "Stalingrad"
-msgstr ""
+msgstr "스탈린그라드"
 
 msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/date"
 msgid "September, 1942"

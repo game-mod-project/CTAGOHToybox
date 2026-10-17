@@ -15,48 +15,48 @@ msgstr ""
 
 msgctxt "desc/entity/unic304f"
 msgid "Unic U304(f)"
-msgstr ""
+msgstr "Unic U304(f)"
 
 msgctxt "info/special/unic304f"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/geschutzwagen_39h"
 msgid "Geschuetzwagen 39H(f) (7.5cm)"
-msgstr ""
+msgstr "Geschuetzwagen 39H(f) (7.5cm)"
 
 msgctxt "info/special/geschutzwagen_39h"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/panzer4b"
 msgid "Pz.Kpfw IV Ausf.B"
-msgstr ""
+msgstr "Pz.Kpfw IV Ausf.B"
 
 msgctxt "info/special/panzer4b"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/stug3a"
 msgid "StuG III Ausf.A"
-msgstr ""
+msgstr "StuG III Ausf.A"
 
 msgctxt "info/special/stug3a"
 msgid "<c(c3baae)>Assault Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>돌격포</c>"
 
 msgctxt "desc/entity/flammpanzer_b2"
 msgid "Pz.Kpfw. B2 Flamm"
-msgstr ""
+msgstr "Pz.Kpfw. B2 Flamm"
 
 msgctxt "info/special/flammpanzer_b2"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/bf109_e4b"
 msgid "Bf-109 E4/B"
-msgstr ""
+msgstr "Bf-109 E4/B"
 
 msgctxt "info/special/bf109_e4b"
 msgid "<c(c3baae)>Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"

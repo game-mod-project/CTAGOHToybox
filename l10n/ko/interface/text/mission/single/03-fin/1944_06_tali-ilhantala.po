@@ -19,7 +19,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/men"
 msgid "You lost all your men!"
-msgstr ""
+msgstr "병사를 모두 잃었다!"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/name"
 msgid "The Northern Gambit"
@@ -91,19 +91,19 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/203"
 msgid "203 H/17"
-msgstr ""
+msgstr "203 H/17"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/blenheim"
 msgid "Blenheim Mk.1"
-msgstr ""
+msgstr "Blenheim Mk.1"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/bt42"
 msgid "BT-42"
-msgstr ""
+msgstr "BT-42"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/eng"
 msgid "Heavy Engineers"
-msgstr ""
+msgstr "중장 공병"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/inf"
 msgid "Jaeger Squad"
@@ -111,19 +111,19 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/isu152"
 msgid "JSU 152"
-msgstr ""
+msgstr "JSU 152"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/kv1"
 msgid "KV-1A (Late)"
-msgstr ""
+msgstr "KV-1A (후기)"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/mortar"
 msgid "81 Krh/36"
-msgstr ""
+msgstr "81 Krh/36"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/pak9738"
 msgid "75 PstK/97-38"
-msgstr ""
+msgstr "75 PstK/97-38"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/resupply"
 msgid "Re-supply truck"
@@ -131,7 +131,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/stug"
 msgid "Stu 40 G"
-msgstr ""
+msgstr "Stu 40 G"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/t34"
 msgid "T-34/84"
@@ -139,7 +139,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/t50"
 msgid "T-50"
-msgstr ""
+msgstr "T-50"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/tm1"
 msgid "180mm TM-1 strike"
@@ -147,7 +147,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/skip"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/story"
 msgid " June 26th, 1944. After a Soviet artillery bombardment that lasts for an hour - and which includes waves of ground attack aircraft - a major Soviet offensive bursts forward from Tali village. Somewhere west of Lake Leitimojärvi, the Soviet attack comes to a standstill in front of defensive positions that have been dug out of the hilltops of Kuokkalan Vuoret. They are manned and defended by infantry regiment JR48.\n\n As Soviet tanks move forward aggressively, the situation becomes critical for the Finns, with a real threat of getting surrounded. The survival of the defenders is at stake. Not only that; if this Soviet attack succeeds, it will open up a gap in the VKT line, which would compromise many more units! A counterattack has been organised, and the armored division is being sent forward to arrive in the afternoon.\n\n In this mission, you will command the defence of the hills. You need to hold off the Soviet armor until your own tanks arrive. If you cannot hold the line at the village, use the second line at the crossroads. Use the terrain to your advantage, you have to stop those tanks!"
@@ -155,7 +155,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/task1"
 msgid "Prepare for the enemy attack!"
-msgstr ""
+msgstr "적의 공격에 대비하라!"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/task2"
 msgid "Hold the crossroads at all costs until the arrival of the Armored Division."

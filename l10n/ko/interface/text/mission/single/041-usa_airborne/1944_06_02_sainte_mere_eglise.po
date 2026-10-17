@@ -235,7 +235,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task_sec"
 msgid "Secret Objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task_sec_completed"
 msgid "Secret Objective - Find the lost supply drop."

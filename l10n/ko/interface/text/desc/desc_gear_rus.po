@@ -15,248 +15,248 @@ msgstr ""
 
 msgctxt "desc/stuff/bandage_rus"
 msgid "Soviet Bandage"
-msgstr ""
+msgstr "소련 붕대"
 
 msgctxt "desc/stuff/f1"
 msgid "F1 Grenade"
-msgstr ""
+msgstr "F1 수류탄"
 
 msgctxt "desc/stuff/molotov_cocktail"
 msgid "Molotov Cocktail"
-msgstr ""
+msgstr "화염병"
 
 msgctxt "desc/stuff/pmd mine"
 msgid "Antipersonnel PMD Mine"
-msgstr ""
+msgstr "대인 PMD 지뢰"
 
 msgctxt "desc/stuff/rdg1_smoke"
 msgid "RGD-1 (Smoke)"
-msgstr ""
+msgstr "RGD-1 (연막)"
 
 msgctxt "desc/stuff/rdg1_smoke_supplies"
 msgid "RGD-1 (Supplies)"
-msgstr ""
+msgstr "RGD-1 (보급품)"
 
 msgctxt "desc/stuff/rgd33"
 msgid "RGD M/33 Grenade"
-msgstr ""
+msgstr "RGD M/33 수류탄"
 
 msgctxt "desc/stuff/rgd33_smoke"
 msgid "RGD M/43 (Smoke)"
-msgstr ""
+msgstr "RGD M/43 (연막)"
 
 msgctxt "desc/stuff/rgd33_smoke_ammo"
 msgid "RGD M/43 (Ammo paradrop)"
-msgstr ""
+msgstr "RGD M/43 (탄약 공중 투하)"
 
 msgctxt "desc/stuff/rgd33_smoke_weapons"
 msgid "RGD M/43 (Weapons paradrop)"
-msgstr ""
+msgstr "RGD M/43 (무기 공중 투하)"
 
 msgctxt "desc/stuff/rpd43_grenade"
 msgid "RPD M/43 AT Grenade"
-msgstr ""
+msgstr "RPD M/43 대전차 수류탄"
 
 msgctxt "desc/stuff/rpg40"
 msgid "RPG M/40 AT Grenade"
-msgstr ""
+msgstr "RPG M/40 대전차 수류탄"
 
 msgctxt "desc/stuff/rpg43"
 msgid "RPG M/43 AT Grenade"
-msgstr ""
+msgstr "RPG M/43 대전차 수류탄"
 
 msgctxt "desc/stuff/rus_cossack_hat"
 msgid "Cossack cap"
-msgstr ""
+msgstr "코사크 모자"
 
 msgctxt "desc/stuff/satchel_charge"
 msgid "Satchel Charge"
-msgstr ""
+msgstr "폭약 가방"
 
 msgctxt "desc/stuff/satchel_charge_rus"
 msgid "Soviet Satchel Charge"
-msgstr ""
+msgstr "소련 폭약 가방"
 
 msgctxt "desc/stuff/soviet_adrian"
 msgid "Adrian Mod.16 Helmet"
-msgstr ""
+msgstr "Adrian Mod.16 헬멧"
 
 msgctxt "desc/stuff/soviet_budinovka"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_artillery"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_border"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_down"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_down_artillery"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_down_border"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_down_early"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_down_nkvd"
 msgid "Budinovka (NKVD)"
-msgstr ""
+msgstr "Budinovka (NKVD)"
 
 msgctxt "desc/stuff/soviet_budinovka_early"
 msgid "Budinovka"
-msgstr ""
+msgstr "Budinovka"
 
 msgctxt "desc/stuff/soviet_budinovka_nkvd"
 msgid "Budinovka (NKVD)"
-msgstr ""
+msgstr "Budinovka (NKVD)"
 
 msgctxt "desc/stuff/soviet_commisar_cap"
 msgid "Commisar's Visor"
-msgstr ""
+msgstr "정치위원 모자"
 
 msgctxt "desc/stuff/soviet_commisar_cap_artillery"
 msgid "Artillery Commisar's Visor"
-msgstr ""
+msgstr "포병 정치위원 모자"
 
 msgctxt "desc/stuff/soviet_commisar_cap_border"
 msgid "Border Guard officer's Visor"
-msgstr ""
+msgstr "국경경비대 장교 모자"
 
 msgctxt "desc/stuff/soviet_commisar_cap_early"
 msgid "Commisar's Visor"
-msgstr ""
+msgstr "정치위원 모자"
 
 msgctxt "desc/stuff/soviet_marine_pilotka"
 msgid "Sailor's Cap"
-msgstr ""
+msgstr "수병 모자"
 
 msgctxt "desc/stuff/soviet_naval_commisar_cap"
 msgid "Commisar's Visor"
-msgstr ""
+msgstr "정치위원 모자"
 
 msgctxt "desc/stuff/soviet_nkvd_cap"
 msgid "NKVD Political Officer's Visor"
-msgstr ""
+msgstr "NKVD 정치장교 모자"
 
 msgctxt "desc/stuff/soviet_pilotka"
 msgid "Pilotka"
-msgstr ""
+msgstr "Pilotka"
 
 msgctxt "desc/stuff/soviet_pilotka_artillery"
 msgid "Pilotka"
-msgstr ""
+msgstr "Pilotka"
 
 msgctxt "desc/stuff/soviet_pilotka_border"
 msgid "Pilotka"
-msgstr ""
+msgstr "Pilotka"
 
 msgctxt "desc/stuff/soviet_pilotka_early"
 msgid "Pilotka"
-msgstr ""
+msgstr "Pilotka"
 
 msgctxt "desc/stuff/soviet_pilotka_grey"
 msgid "Pilotka"
-msgstr ""
+msgstr "Pilotka"
 
 msgctxt "desc/stuff/soviet_pilotka_nkvd"
 msgid "NKVD Pilotka"
-msgstr ""
+msgstr "NKVD Pilotka"
 
 msgctxt "desc/stuff/soviet_ssh35_helmet"
 msgid "'Steel Helmet' Ssh-36"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-36"
 
 msgctxt "desc/stuff/soviet_ssh35_helmet_strapontop"
 msgid "'Steel Helmet' Ssh-36"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-36"
 
 msgctxt "desc/stuff/soviet_ssh39_brown"
 msgid "'Steel Helmet' Ssh-39"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-39"
 
 msgctxt "desc/stuff/soviet_ssh39_helmet"
 msgid "'Steel Helmet' Ssh-39"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-39"
 
 msgctxt "desc/stuff/soviet_ssh39_marine"
 msgid "'Steel Helmet' Ssh-39 (Naval)"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-39 (해군)"
 
 msgctxt "desc/stuff/soviet_ssh39_medic"
 msgid "'Steel Helmet' Ssh-39 (Medic)"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-39 (위생병)"
 
 msgctxt "desc/stuff/soviet_ssh39_winter"
 msgid "'Steel Helmet' Ssh-39"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-39"
 
 msgctxt "desc/stuff/soviet_ssh40_brown"
 msgid "'Steel Helmet' Ssh-40"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-40"
 
 msgctxt "desc/stuff/soviet_ssh40_helmet"
 msgid "'Steel Helmet' Ssh-40"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-40"
 
 msgctxt "desc/stuff/soviet_ssh40_marine"
 msgid "'Steel Helmet' Ssh-40 (Naval)"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-40 (해군)"
 
 msgctxt "desc/stuff/soviet_ssh40_medic"
 msgid "'Steel Helmet' Ssh-40 (Medic)"
-msgstr ""
+msgstr "'강철 헬멧' Ssh-40 (위생병)"
 
 msgctxt "desc/stuff/soviet_tankist_cap"
 msgid "Tank Commander's Visor"
-msgstr ""
+msgstr "전차장 모자"
 
 msgctxt "desc/stuff/soviet_tankovy_helmet"
 msgid "Tanker's Cap"
-msgstr ""
+msgstr "전차병 모자"
 
 msgctxt "desc/stuff/soviet_tankovy_helmet_rubber"
 msgid "Tanker's Cap"
-msgstr ""
+msgstr "전차병 모자"
 
 msgctxt "desc/stuff/soviet_ushanka"
 msgid "Ushanka"
-msgstr ""
+msgstr "Ushanka"
 
 msgctxt "desc/stuff/soviet_ushanka_naval"
 msgid "Ushanka (Naval)"
-msgstr ""
+msgstr "Ushanka (해군)"
 
 msgctxt "desc/stuff/soviet_ushanka_untied"
 msgid "Ushanka"
-msgstr ""
+msgstr "Ushanka"
 
 msgctxt "desc/stuff/soviet_warden_furcap"
 msgid "Ushanka"
-msgstr ""
+msgstr "Ushanka"
 
 msgctxt "desc/stuff/tm_35 mine"
 msgid "Anti-Tank TM Obr.35 Mine"
-msgstr ""
+msgstr "대전차 TM Obr.35 지뢰"
 
 msgctxt "desc/stuff/tm_41 mine"
 msgid "Anti-Tank TM Obr.41 Mine"
-msgstr ""
+msgstr "대전차 TM Obr.41 지뢰"
 
 msgctxt "desc/stuff/tmd_44 mine"
 msgid "Anti-Tank TMD Obr.44 Mine"
-msgstr ""
+msgstr "대전차 TMD Obr.44 지뢰"
 
 msgctxt "desc/stuff/tmd_b mine"
 msgid "Anti-Tank TMD-B mine"
-msgstr ""
+msgstr "대전차 TMD-B 지뢰"

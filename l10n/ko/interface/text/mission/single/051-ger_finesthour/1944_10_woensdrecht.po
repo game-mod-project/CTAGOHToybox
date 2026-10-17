@@ -135,7 +135,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/reinforcement/skip_preparation"
 msgid "Skip preparation"
-msgstr ""
+msgstr "준비 생략"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task01"
 msgid "Prepare to defend the first line"
@@ -167,7 +167,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret01_hidden"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret02"
 msgid "Secret objective #2: Find the Dutch resistance hideout"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret02_hidden"
 msgid "Secret objective #2"
-msgstr ""
+msgstr "비밀 목표 2"
 
 msgctxt "mission/single/051-ger_finesthour/1944_10_woensdrecht/tasks/task_secret03"
 msgid "Secret objective #3: Repair the damaged howitzer"

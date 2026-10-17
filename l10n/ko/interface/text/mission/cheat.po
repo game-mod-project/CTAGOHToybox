@@ -15,31 +15,31 @@ msgstr ""
 
 msgctxt "mission/cheat/步兵小队"
 msgid "Infantry squad"
-msgstr ""
+msgstr "보병 분대"
 
 msgctxt "mission/cheat/专职士兵"
 msgid "Career Infantry"
-msgstr ""
+msgstr "직업 보병"
 
 msgctxt "mission/cheat/架设武器"
 msgid "Emplace Weapons"
-msgstr ""
+msgstr "거치 무기"
 
 msgctxt "mission/cheat/载具"
 msgid "Vehicle"
-msgstr ""
+msgstr "차량"
 
 msgctxt "mission/cheat/装甲支援"
 msgid "Armored Support"
-msgstr ""
+msgstr "기갑 지원"
 
 msgctxt "mission/cheat/飞机支援"
 msgid "Air Support"
-msgstr ""
+msgstr "항공 지원"
 
 msgctxt "mission/cheat/全局设置"
 msgid "Global Settings"
-msgstr ""
+msgstr "전체 설정"
 
 msgctxt "mission/cheat/返回"
 msgid "Back"
@@ -47,204 +47,204 @@ msgstr ""
 
 msgctxt "mission/cheat/轻型坦克"
 msgid "Light Tank"
-msgstr ""
+msgstr "경전차"
 
 msgctxt "mission/cheat/中型坦克"
 msgid "Medium Tank"
-msgstr ""
+msgstr "중형전차"
 
 msgctxt "mission/cheat/重型坦克"
 msgid "Heavy Tank"
-msgstr ""
+msgstr "중전차"
 
 msgctxt "mission/cheat/歼击坦克"
 msgid "Tank Destroyer"
-msgstr ""
+msgstr "구축전차"
 
 msgctxt "mission/cheat/删除单个单位"
 msgid "Delete Single Unit"
-msgstr ""
+msgstr "유닛 하나 삭제"
 
 msgctxt "mission/cheat/删除所有单位"
 msgid "Delete All Units"
-msgstr ""
+msgstr "모든 유닛 삭제"
 
 msgctxt "mission/cheat/删除所有飞机"
 msgid "Delete All Aircraft"
-msgstr ""
+msgstr "모든 항공기 삭제"
 
 msgctxt "mission/cheat/升级单位"
 msgid "Max out a single unit"
-msgstr ""
+msgstr "유닛 하나 최대 강화"
 
 msgctxt "mission/cheat/以最高等级生成单位开"
 msgid "Generate units at the highest level:<c(99ff4d)>ON</c>"
-msgstr ""
+msgstr "최고 등급으로 유닛 생성: <c(99ff4d)>켜짐</c>"
 
 msgctxt "mission/cheat/以最高等级生成单位关"
 msgid "Generate units at the highest level:<c(ff0000)>OFF</c>"
-msgstr ""
+msgstr "최고 등급으로 유닛 생성: <c(ff0000)>꺼짐</c>"
 
 msgctxt "mission/cheat/清理残骸"
 msgid "Clear Debris"
-msgstr ""
+msgstr "잔해 정리"
 
 msgctxt "mission/cheat/飞机轰炸"
 msgid "Pick Aircraft Bombing Zone"
-msgstr ""
+msgstr "항공기 폭격 구역 선택"
 
 msgctxt "mission/cheat/冬季涂装开"
 msgid "Winter Camo:<c(99ff4d)>ON</c>"
-msgstr ""
+msgstr "겨울 도장: <c(99ff4d)>켜짐</c>"
 
 msgctxt "mission/cheat/冬季涂装关"
 msgid "Winter Camo:<c(ff0000)>OFF</c>"
-msgstr ""
+msgstr "겨울 도장: <c(ff0000)>꺼짐</c>"
 
 msgctxt "mission/cheat/林地涂装开"
 msgid "Forest Camo:<c(99ff4d)>ON</c>"
-msgstr ""
+msgstr "숲 도장: <c(99ff4d)>켜짐</c>"
 
 msgctxt "mission/cheat/林地涂装关"
 msgid "Forest Camo:<c(ff0000)>OFF</c>"
-msgstr ""
+msgstr "숲 도장: <c(ff0000)>꺼짐</c>"
 
 msgctxt "mission/cheat/沙漠涂装开"
 msgid "Desert Camo:<c(99ff4d)>ON</c>"
-msgstr ""
+msgstr "사막 도장: <c(99ff4d)>켜짐</c>"
 
 msgctxt "mission/cheat/沙漠涂装关"
 msgid "Desert Camo:<c(ff0000)>OFF</c>"
-msgstr ""
+msgstr "사막 도장: <c(ff0000)>꺼짐</c>"
 
 msgctxt "mission/cheat/自动分配"
 msgid "Auto Assign"
-msgstr ""
+msgstr "자동 배정"
 
 msgctxt "mission/cheat/P0"
 msgid "Player 0"
-msgstr ""
+msgstr "플레이어 0"
 
 msgctxt "mission/cheat/P1"
 msgid "Player 1"
-msgstr ""
+msgstr "플레이어 1"
 
 msgctxt "mission/cheat/P2"
 msgid "Player 2"
-msgstr ""
+msgstr "플레이어 2"
 
 msgctxt "mission/cheat/P3"
 msgid "Player 3"
-msgstr ""
+msgstr "플레이어 3"
 
 msgctxt "mission/cheat/P4"
 msgid "Player 4"
-msgstr ""
+msgstr "플레이어 4"
 
 msgctxt "mission/cheat/P5"
 msgid "Player 5"
-msgstr ""
+msgstr "플레이어 5"
 
 msgctxt "mission/cheat/P6"
 msgid "Player 6"
-msgstr ""
+msgstr "플레이어 6"
 
 msgctxt "mission/cheat/P7"
 msgid "Player 7"
-msgstr ""
+msgstr "플레이어 7"
 
 msgctxt "mission/cheat/P8"
 msgid "Player 8"
-msgstr ""
+msgstr "플레이어 8"
 
 msgctxt "mission/cheat/P9"
 msgid "Player 9"
-msgstr ""
+msgstr "플레이어 9"
 
 msgctxt "mission/cheat/ai开"
 msgid "AI Control:<c(99ff4d)>ON</c>"
-msgstr ""
+msgstr "AI 조종: <c(99ff4d)>켜짐</c>"
 
 msgctxt "mission/cheat/ai关"
 msgid "AI Control:<c(ff0000)>OFF</c>"
-msgstr ""
+msgstr "AI 조종: <c(ff0000)>꺼짐</c>"
 
 msgctxt "mission/ger/cheat/掷弹兵班【武装党卫军】"
 msgid "Panzergrenadier Squad[Waffen-SS]"
-msgstr ""
+msgstr "판처그레나디어 분대[Waffen-SS]"
 
 msgctxt "mission/ger/cheat/装甲侦察班【武装党卫军】"
 msgid "Armored Recon Squad[Waffen-SS]"
-msgstr ""
+msgstr "장갑 정찰 분대[Waffen-SS]"
 
 msgctxt "mission/ger/cheat/装甲掷弹兵班【武装党卫军】"
 msgid "Veteran Panzergrenadier Squad[Waffen-SS]"
-msgstr ""
+msgstr "베테랑 판처그레나디어 분대[Waffen-SS]"
 
 msgctxt "mission/cheat/冲锋枪手stg44"
 msgid "SMG soldier(STG44)"
-msgstr ""
+msgstr "기관단총병(STG44)"
 
 msgctxt "mission/cheat/反坦克手(PZB.39)"
 msgid "AT Inf(PZB.39)"
-msgstr ""
+msgstr "대전차 보병(PZB.39)"
 
 msgctxt "mission/cheat/炮手"
 msgid "Artilleryman"
-msgstr ""
+msgstr "포병"
 
 msgctxt "mission/cheat/火炮通讯兵"
 msgid "Artillery Signaller"
-msgstr ""
+msgstr "포병 통신병"
 
 msgctxt "mission/cheat/反坦克手(PTRD)"
 msgid "AT Inf(PTRD-41)"
-msgstr ""
+msgstr "대전차 보병(PTRD-41)"
 
 msgctxt "mission/cheat/反坦克手(PTRS)"
 msgid "AT Inf(PTRS-41)"
-msgstr ""
+msgstr "대전차 보병(PTRS-41)"
 
 msgctxt "mission/cheat/反坦克手(博伊斯)"
 msgid "AT Inf(Boys AT rifle)"
-msgstr ""
+msgstr "대전차 보병(Boys 대전차 소총)"
 
 msgctxt "mission/cheat/usa/伞降82师"
 msgid "Airborne(82nd)"
-msgstr ""
+msgstr "공수(제82사단)"
 
 msgctxt "mission/cheat/usa/伞降101师"
 msgid "Airborne(101nd)"
-msgstr ""
+msgstr "공수(제101사단)"
 
 msgctxt "mission/cheat/精锐坦克手"
 msgid "Elite Tank crew"
-msgstr ""
+msgstr "정예 전차 승무원"
 
 msgctxt "mission/cheat/fin/法国步兵班"
 msgid "French infantry squad"
-msgstr ""
+msgstr "프랑스 보병 분대"
 
 msgctxt "mission/cheat/ger/国防军武器箱"
 msgid "<c(47E7ED)>Wehrmacht Weapon Crate</c>"
-msgstr ""
+msgstr "<c(47E7ED)>베어마흐트 무기 상자</c>"
 
 msgctxt "mission/cheat/usa/美国武器箱"
 msgid "<c(47E7ED)>American Weapon Crate</c>"
-msgstr ""
+msgstr "<c(47E7ED)>미국 무기 상자</c>"
 
 msgctxt "mission/cheat/rus/苏军武器箱"
 msgid "<c(47E7ED)>Soviet Weapon Crate</c>"
-msgstr ""
+msgstr "<c(47E7ED)>소련 무기 상자</c>"
 
 msgctxt "mission/cheat/fin/芬兰武器箱"
 msgid "<c(47E7ED)>Finnish Weapon Crate</c>"
-msgstr ""
+msgstr "<c(47E7ED)>핀란드 무기 상자</c>"
 
 msgctxt "mission/cheat/eng/英军武器箱"
 msgid "<c(47E7ED)>British Weapon Crate</c>"
-msgstr ""
+msgstr "<c(47E7ED)>영국 무기 상자</c>"
 
 msgctxt "actionbar/change_paint_scheme_toggle"
 msgid "Change Paint Scheme"
-msgstr ""
+msgstr "도장 바꾸기"

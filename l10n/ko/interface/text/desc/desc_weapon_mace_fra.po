@@ -16,44 +16,44 @@ msgstr ""
 
 msgctxt "desc/weapon/25mm_sa1935"
 msgid "2.5cm Canon SA Mle. 1935"
-msgstr ""
+msgstr "2.5cm Canon SA Mle. 1935"
 
 msgctxt "desc/weapon/75mm_apx_1897"
 msgid "7.5cm APX Canon modèle 1897 L/17"
-msgstr ""
+msgstr "7.5cm APX Canon modèle 1897 L/17"
 
 msgctxt "desc/weapon/75mm_sa44"
 msgid "7.5cm SA44 L/70"
-msgstr ""
+msgstr "7.5cm SA44 L/70"
 
 msgctxt "desc/weapon/90mm_sa45"
 msgid "9.0cm SA45 L/65"
-msgstr ""
+msgstr "9.0cm SA45 L/65"
 
 msgctxt "desc/weapon/37mm_sa18"
 msgid "3.7cm SA18 L/21"
-msgstr ""
+msgstr "3.7cm SA18 L/21"
 
 msgctxt "desc/weapon/47mm_sa37"
 msgid "4.7cm SA37 L/53"
-msgstr ""
+msgstr "4.7cm SA37 L/53"
 
 msgctxt "desc/weapon/25mm_apx"
 msgid "2.5cm semi-automatique modèle 1934 L/77"
-msgstr ""
+msgstr "2.5cm semi-automatique modèle 1934 L/77"
 
 msgctxt "desc/weapon/revolver_gun"
 msgid "3.7cm Hotchkiss Revolver Cannon L/20"
-msgstr ""
+msgstr "3.7cm Hotchkiss Revolver Cannon L/20"
 
 msgctxt "desc/weapon/155mm_Schneider_mace"
 msgid "15.5cm Schneider L/3"
-msgstr ""
+msgstr "15.5cm Schneider L/3"
 
 msgctxt "desc/weapon/47mm_SA34_mace"
 msgid "4.7cm SA34 L/4"
-msgstr ""
+msgstr "4.7cm SA34 L/4"
 
 msgctxt "desc/weapon/47mm_SA35"
 msgid "4.7cm SA35 L/32"
-msgstr ""
+msgstr "4.7cm SA35 L/32"

@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/02-ger-west/campaign/title"
 msgid "Germany (Western Front), 1944-45"
-msgstr ""
+msgstr "독일(서부 전선), 1944-45"
 
 msgctxt "mission/single/02-ger-west/campaign/name"
 msgid "FESTUNG EUROPA</c>"
-msgstr ""
+msgstr "FESTUNG EUROPA</c>"

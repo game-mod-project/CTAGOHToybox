@@ -99,7 +99,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task_secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[tasks]/task_secret01_completed"
 msgid "Secret objective #1: Shoot a turret off a Matilda I tank"

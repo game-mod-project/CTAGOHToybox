@@ -15,23 +15,23 @@ msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1945-04-ger_berlin/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/02-ger_skirmish/1945-04-ger_berlin/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/02-ger_skirmish/1945-04-ger_berlin/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/02-ger_skirmish/1945-04-ger_berlin/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/02-ger_skirmish/1945-04-ger_berlin/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/02-ger_skirmish/1945-04-ger_berlin/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"

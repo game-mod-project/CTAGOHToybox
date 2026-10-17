@@ -16,92 +16,92 @@ msgstr ""
 
 msgctxt "desc/human/narrator/eng-arnhem-frost"
 msgid "Lt. Col. John Frost"
-msgstr ""
+msgstr "Lt. Col. 존 프로스트"
 
 msgctxt "desc/human/narrator/eng-arnhem-digby"
 msgid "Maj. Digby Tatham-Warter"
-msgstr ""
+msgstr "Maj. 딕비 태섬워터"
 
 msgctxt "desc/human/narrator/eng-pegasus-howard"
 msgid "Maj. John Howard"
-msgstr ""
+msgstr "Maj. 존 하워드"
 
 msgctxt "desc/human/narrator/eng-pegasus-lovat"
 msgid "Brigadier Simon Fraser, Lord Lovat"
-msgstr ""
+msgstr "Brigadier 사이먼 프레이저, 러벳 경"
 
 msgctxt "desc/human/narrator/eng-pegasus-wood"
 msgid "Lt. David Wood"
-msgstr ""
+msgstr "Lt. 데이비드 우드"
 
 msgctxt "desc/human/narrator/eng-dyle-crosby"
 msgid "Cpl. Stuart Crosby"
-msgstr ""
+msgstr "Cpl. 스튜어트 크로스비"
 
 msgctxt "desc/human/narrator/eng-dyle-carter"
 msgid "Cpt. Robert Carter"
-msgstr ""
+msgstr "Cpt. 로버트 카터"
 
 msgctxt "desc/human/narrator/eng-dyle-williams"
 msgid "Lt. Mike Williams"
-msgstr ""
+msgstr "Lt. 마이크 윌리엄스"
 
 msgctxt "desc/human/narrator/eng-dunkirk-ingram"
 msgid "Maj. Ollie Ingram"
-msgstr ""
+msgstr "Maj. 올리 잉그럼"
 
 msgctxt "desc/human/narrator/eng-dunkirk-shaw"
 msgid "Lt. Ken Shaw"
-msgstr ""
+msgstr "Lt. 켄 쇼"
 
 msgctxt "desc/human/narrator/eng-dunkirk-greenwood"
 msgid "Sgt. Glen Greenwood"
-msgstr ""
+msgstr "Sgt. 글렌 그린우드"
 
 msgctxt "desc/human/narrator/eng-varsity-para-officer"
 msgid "Cpt. Samuel Rowse"
-msgstr ""
+msgstr "Cpt. 새뮤얼 라우스"
 
 msgctxt "desc/human/narrator/eng-varsity-para-soldier"
 msgid "Sgt. Fletcher Shelton"
-msgstr ""
+msgstr "Sgt. 플레처 셸턴"
 
 msgctxt "desc/human/narrator/eng-varsity-tank-officer"
 msgid "Lt. Leonard Hall"
-msgstr ""
+msgstr "Lt. 레너드 홀"
 
 msgctxt "desc/human/narrator/eng-varsity-tank-soldier"
 msgid "Pvt. Ewan MacKenzie"
-msgstr ""
+msgstr "Pvt. 이윈 매켄지"
 
 msgctxt "desc/human/narrator/eng-goodwood-officer"
 msgid "Cpt. Conall MacSullivan"
-msgstr ""
+msgstr "Cpt. 코널 맥설리번"
 
 msgctxt "desc/human/narrator/eng-goodwood-soldier"
 msgid "Sgt. Aiden O'Hara"
-msgstr ""
+msgstr "Sgt. 에이든 오하라"
 
 msgctxt "desc/human/narrator/fra-civilian3"
 msgid "French Farmer"
-msgstr ""
+msgstr "프랑스 농부"
 
 msgctxt "desc/human/narrator/ned-resistance"
 msgid "Dutch Resistance Leader"
-msgstr ""
+msgstr "네덜란드 저항군 지도자"
 
 msgctxt "desc/human/narrator/pol-oosterbek-officer"
 msgid "Lt. Jan Kowalczyk"
-msgstr ""
+msgstr "Lt. 얀 코발치크"
 
 msgctxt "desc/human/narrator/eng-oosterbek-urquhart"
 msgid "Maj. Gen Elliot Urquhart"
-msgstr ""
+msgstr "Maj. Gen 엘리엇 어커트"
 
 msgctxt "desc/human/narrator/eng-officer"
 msgid "Company Commander"
-msgstr ""
+msgstr "중대장"
 
 msgctxt "desc/human/narrator/eng-tank_commander"
 msgid "Guards AD. Tank Commander"
-msgstr ""
+msgstr "근위 기갑사단 전차장"

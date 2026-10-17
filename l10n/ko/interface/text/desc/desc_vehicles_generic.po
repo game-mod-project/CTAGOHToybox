@@ -15,136 +15,136 @@ msgstr ""
 
 msgctxt "desc/entity/air-bag"
 msgid "Barge"
-msgstr ""
+msgstr "바지선"
 
 msgctxt "desc/entity/armored_locomotive"
 msgid "Armed locomotive"
-msgstr ""
+msgstr "무장 기관차"
 
 msgctxt "desc/entity/cistern"
 msgid "Cistern Wagon"
-msgstr ""
+msgstr "탱크 화차"
 
 msgctxt "desc/entity/coaster_ship"
 msgid "Small freighter"
-msgstr ""
+msgstr "소형 화물선"
 
 msgctxt "desc/entity/crane_m"
 msgid "Crane"
-msgstr ""
+msgstr "크레인"
 
 msgctxt "desc/entity/crane_rail1"
 msgid "Crane"
-msgstr ""
+msgstr "크레인"
 
 msgctxt "desc/entity/crane_rail"
 msgid "Crane"
-msgstr ""
+msgstr "크레인"
 
 msgctxt "desc/entity/drg_class75"
 msgid "DRG Class 75"
-msgstr ""
+msgstr "DRG Class 75"
 
 msgctxt "desc/entity/drg_class75"
 msgid "DRG Class 75"
-msgstr ""
+msgstr "DRG Class 75"
 
 msgctxt "info/special/drg_class75"
 msgid "<c(c3baae)>Locomotive</c>"
-msgstr ""
+msgstr "<c(c3baae)>기관차</c>"
 
 msgctxt "desc/entity/drg_class75_rus"
 msgid "DRG Class 75"
-msgstr ""
+msgstr "DRG Class 75"
 
 msgctxt "info/special/drg_class75_rus"
 msgid "<c(c3baae)>Locomotive</c>"
-msgstr ""
+msgstr "<c(c3baae)>기관차</c>"
 
 msgctxt "desc/entity/passengervan"
 msgid "Wagon"
-msgstr ""
+msgstr "화차"
 
 msgctxt "desc/entity/platform"
 msgid "Wagon"
-msgstr ""
+msgstr "화차"
 
 msgctxt "desc/entity/platform_can"
 msgid "Wagon"
-msgstr ""
+msgstr "화차"
 
 msgctxt "desc/entity/platform_gun"
 msgid "Wagon"
-msgstr ""
+msgstr "화차"
 
 msgctxt "desc/entity/small_barge"
 msgid "Barge"
-msgstr ""
+msgstr "바지선"
 
 msgctxt "desc/entity/steam_locomotive"
 msgid "Locomotive"
-msgstr ""
+msgstr "기관차"
 
 msgctxt "desc/entity/tendor"
 msgid "Tender coal car"
-msgstr ""
+msgstr "탄수차"
 
 msgctxt "desc/entity/tradevan"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/tradevan_big"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/tradevan_explosive"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/tramway"
 msgid "Wagon"
-msgstr ""
+msgstr "화차"
 
 msgctxt "desc/entity/universal"
 msgid "Tractor"
-msgstr ""
+msgstr "트랙터"
 
 msgctxt "desc/entity/wagon1"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon1a"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon1a_ammo"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon_cistern"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon_platform"
 msgid "Cistern Wagon"
-msgstr ""
+msgstr "탱크 화차"
 
 msgctxt "desc/entity/wagon_plato"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon_plato_ammo1"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon_plato_ammo2"
 msgid "Cargo Wagon"
-msgstr ""
+msgstr "화물 화차"
 
 msgctxt "desc/entity/wagon_tanker"
 msgid "Cistern"
-msgstr ""
+msgstr "탱크 화차"
 
 msgctxt "desc/entity/ya5_k"
 msgid "Barge"
-msgstr ""
+msgstr "바지선"

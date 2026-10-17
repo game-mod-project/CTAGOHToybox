@@ -15,264 +15,264 @@ msgstr ""
 
 msgctxt "desc/squad/squad_with2types_conquest"
 msgid "Ace Tank Crew"
-msgstr ""
+msgstr "에이스 전차 승무원"
 
 msgctxt "info/special/single_tankman_ace"
 msgid "<c(c3baae)>Elite Crew</c>"
-msgstr ""
+msgstr "<c(c3baae)>정예 승무원</c>"
 
 msgctxt "desc/squad/kampfgruppe_tiger1hunt"
 msgid "Kampfgruppe 'Wittmann' (Ace Tiger)"
-msgstr ""
+msgstr "캄프그루페 '비트만' (에이스 티거)"
 
 msgctxt "info/special/kampfgruppe_tiger1hunt"
 msgid "<c(c3baae)>Kampfgruppe</c>"
-msgstr ""
+msgstr "<c(c3baae)>캄프그루페</c>"
 
 msgctxt "desc/squad/kampfgruppe_panzerkeil"
 msgid "Kampfgruppe Panzerkeil (King Tiger + Panthers)"
-msgstr ""
+msgstr "캄프그루페 판처카일 (킹 티거 + 판터)"
 
 msgctxt "info/special/kampfgruppe_panzerkeil"
 msgid "<c(c3baae)>Heavy Armor Spearhead</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 기갑 선봉</c>"
 
 msgctxt "desc/squad/jagd_kampfgruppe"
 msgid "Schwere Panzerjäger-Abteilung (Jagdtiger + StuG III)"
-msgstr ""
+msgstr "슈베레 판처예거 아프타일룽 (Jagdtiger + StuG III)"
 
 msgctxt "info/special/jagd_kampfgruppe"
 msgid "<c(c3baae)>Heavy Tank Destroyer Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 구축전차 집단</c>"
 
 msgctxt "desc/squad/wunderwaffe_e_serie"
 msgid "Wunderwaffe: E-Series Breakthrough Group"
-msgstr ""
+msgstr "분더바페: E 시리즈 돌파 집단"
 
 msgctxt "info/special/wunderwaffe_e_serie"
 msgid "<c(c3baae)>Wunderwaffe Armor Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>분더바페 기갑 집단</c>"
 
 msgctxt "desc/squad/wunderwaffe_maus_flak"
 msgid "Wunderwaffe: Maus Fortress Array"
-msgstr ""
+msgstr "분더바페: 마우스 요새 진형"
 
 msgctxt "info/special/wunderwaffe_maus_flak"
 msgid "<c(c3baae)>Super Heavy AA Formation</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 대공 편대</c>"
 
 msgctxt "desc/squad/wunderwaffe_v2_launch_team"
 msgid "Wunderwaffe: V-2 Mobile Launch Team"
-msgstr ""
+msgstr "분더바페: V-2 이동 발사조"
 
 msgctxt "info/special/wunderwaffe_v2_launch_team"
 msgid "<c(c3baae)>Strategic Missile Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>전략 미사일 집단</c>"
 
 msgctxt "desc/squad/kampfgruppe_blitzkrieg"
 msgid "Kampfgruppe Blitzkrieg (Pz.IV + Pz.III)"
-msgstr ""
+msgstr "캄프그루페 블리츠크리크 (Pz.IV + Pz.III)"
 
 msgctxt "info/special/kampfgruppe_blitzkrieg"
 msgid "<c(c3baae)>Medium Armor Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 기갑 집단</c>"
 
 msgctxt "desc/squad/kampfgruppe_sturm"
 msgid "Sturmgeschütz-Batterie (StuH 42 + StuG III)"
-msgstr ""
+msgstr "슈투름게슈츠 포대 (StuH 42 + StuG III)"
 
 msgctxt "info/special/kampfgruppe_sturm"
 msgid "<c(c3baae)>Assault Gun Battery</c>"
-msgstr ""
+msgstr "<c(c3baae)>돌격포 포대</c>"
 
 msgctxt "desc/squad/kampfgruppe_schwere"
 msgid "Schwere Panzer-Abteilung (Tiger I + Pz.IV H)"
-msgstr ""
+msgstr "슈베레 판처 아프타일룽 (Tiger I + Pz.IV H)"
 
 msgctxt "info/special/kampfgruppe_schwere"
 msgid "<c(c3baae)>Heavy Armor Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 기갑 집단</c>"
 
 msgctxt "desc/squad/kampfgruppe_jagd_late"
 msgid "Late War AT Ambush Group (Jagdpanther + Hetzer)"
-msgstr ""
+msgstr "후기 대전차 매복 집단 (Jagdpanther + Hetzer)"
 
 msgctxt "info/special/kampfgruppe_jagd_late"
 msgid "<c(c3baae)>Tank Destroyer Ambush</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차 매복</c>"
 
 msgctxt "desc/squad/kampfgruppe_aufklarung"
 msgid "Mobile Recon Hunting Squad (Nashorn + Puma)"
-msgstr ""
+msgstr "기동 정찰 사냥 분대 (Nashorn + Puma)"
 
 msgctxt "info/special/kampfgruppe_aufklarung"
 msgid "<c(c3baae)>Mobile Recon Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>기동 정찰 집단</c>"
 
 msgctxt "desc/squad/wunderwaffe_e_artillerie"
 msgid "Wunderwaffe: E-Series SPG Position"
-msgstr ""
+msgstr "분더바페: E 시리즈 자주포 진지"
 
 msgctxt "info/special/wunderwaffe_e_artillerie"
 msgid "<c(c3baae)>Super Heavy Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중포</c>"
 
 msgctxt "desc/squad/wunderwaffe_mausking_assault"
 msgid "Wunderwaffe: Mausking Assault Array"
-msgstr ""
+msgstr "분더바페: 마우스킹 돌격 진형"
 
 msgctxt "info/special/wunderwaffe_mausking_assault"
 msgid "<c(c3baae)>Super Heavy Assault Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 돌격 집단</c>"
 
 msgctxt "desc/squad/wunderwaffe_e_jagd"
 msgid "Wunderwaffe: E-Series Heavy Hunting Group"
-msgstr ""
+msgstr "분더바페: E 시리즈 중형 사냥 집단"
 
 msgctxt "info/special/wunderwaffe_e_jagd"
 msgid "<c(c3baae)>Super Heavy Tank Destroyers</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 구축전차</c>"
 
 msgctxt "desc/squad/kampfgruppe_grossdeutschland"
 msgid "Kampfgruppe 'Großdeutschland'"
-msgstr ""
+msgstr "캄프그루페 '그로스도이칠란트'"
 
 msgctxt "info/special/kampfgruppe_grossdeutschland"
 msgid "<c(c3baae)>Elite Mechanized Infantry</c>"
-msgstr ""
+msgstr "<c(c3baae)>정예 기계화 보병</c>"
 
 msgctxt "desc/squad/kampfgruppe_lehr_spearhead"
 msgid "Panzer Lehr Spearhead"
-msgstr ""
+msgstr "판처 레어 선봉"
 
 msgctxt "info/special/kampfgruppe_lehr_spearhead"
 msgid "<c(c3baae)>Heavy Mechanized Spearhead</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 기계화 선봉</c>"
 
 msgctxt "desc/squad/kampfgruppe_sturm_rider"
 msgid "Assault Gun Rider Group (StuG III + Fallschirmjäger)"
-msgstr ""
+msgstr "돌격포 탑승 집단 (StuG III + 팔쉬름예거)"
 
 msgctxt "info/special/kampfgruppe_sturm_rider"
 msgid "<c(c3baae)>Assault Gun with Riders</c>"
-msgstr ""
+msgstr "<c(c3baae)>보병 탑승 돌격포</c>"
 
 msgctxt "desc/squad/kampfgruppe_aufklarung_motor"
 msgid "Motorized Recon Battalion"
-msgstr ""
+msgstr "차량화 정찰 대대"
 
 msgctxt "info/special/kampfgruppe_aufklarung_motor"
 msgid "<c(c3baae)>Motorized Reconnaissance</c>"
-msgstr ""
+msgstr "<c(c3baae)>차량화 정찰</c>"
 
 msgctxt "desc/squad/kampfgruppe_volks_sperrverband"
 msgid "Volksgrenadier Blocking Force"
-msgstr ""
+msgstr "폭스그레나디어 저지 부대"
 
 msgctxt "info/special/kampfgruppe_volks_sperrverband"
 msgid "<c(c3baae)>Static Defense Force</c>"
-msgstr ""
+msgstr "<c(c3baae)>고정 방어 부대</c>"
 
 msgctxt "desc/squad/wunderwaffe_maus_tiger_guard"
 msgid "Wunderwaffe: Maus Heavy Guard"
-msgstr ""
+msgstr "분더바페: 마우스 중형 근위"
 
 msgctxt "info/special/wunderwaffe_maus_tiger_guard"
 msgid "<c(c3baae)>Super Heavy Guard</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 근위</c>"
 
 msgctxt "desc/squad/wunderwaffe_maus_koenigstiger"
 msgid "Wunderwaffe: Apocalyptic Spearhead"
-msgstr ""
+msgstr "분더바페: 종말의 선봉"
 
 msgctxt "info/special/wunderwaffe_maus_koenigstiger"
 msgid "<c(c3baae)>Ultimate Heavy Spearhead</c>"
-msgstr ""
+msgstr "<c(c3baae)>궁극의 중형 선봉</c>"
 
 msgctxt "desc/squad/ger_kg_e50_muncheberg"
 msgid "Kampfgruppe 'Müncheberg' (E-50 & Infantry)"
-msgstr ""
+msgstr "캄프그루페 '뮌헤베르크' (E-50과 보병)"
 
 msgctxt "info/special/ger_kg_e50_muncheberg"
 msgid "<c(c3baae)>Medium Armor & Infantry</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 기갑과 보병</c>"
 
 msgctxt "desc/squad/ger_kg_e75_nachtjager"
 msgid "E-75 'Nachtjäger' Escort"
-msgstr ""
+msgstr "E-75 '나흐트예거' 호위"
 
 msgctxt "info/special/ger_kg_e75_nachtjager"
 msgid "<c(c3baae)>Heavy AA Escort</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공 호위</c>"
 
 msgctxt "desc/squad/ger_kg_e100_festung"
 msgid "Festungs-Bataillon E-100"
-msgstr ""
+msgstr "페스퉁스 대대 E-100"
 
 msgctxt "info/special/ger_kg_e100_festung"
 msgid "<c(c3baae)>Super Heavy Siege</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 공성</c>"
 
 msgctxt "desc/squad/ger_kg_panther2_gotenhafen"
 msgid "Kampfgruppe 'Gotenhafen' (Panther II & Infantry)"
-msgstr ""
+msgstr "캄프그루페 '고텐하펜' (Panther II와 보병)"
 
 msgctxt "info/special/ger_kg_panther2_gotenhafen"
 msgid "<c(c3baae)>Late War Defensive Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>후기 방어 집단</c>"
 
 msgctxt "desc/squad/ger_kg_jpze50_aufklarung"
 msgid "Aufklärungs-Jagd-Gruppe E-50"
-msgstr ""
+msgstr "아우프클레룽스 야크트 그루페 E-50"
 
 msgctxt "info/special/ger_kg_jpze50_aufklarung"
 msgid "<c(c3baae)>Heavy Mobile Recon</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 기동 정찰</c>"
 
 msgctxt "desc/squad/ger_kg_mausking_lehr"
 msgid "Mausking Panzer-Lehr Spearhead"
-msgstr ""
+msgstr "마우스킹 판처 레어 선봉"
 
 msgctxt "info/special/ger_kg_mausking_lehr"
 msgid "<c(c3baae)>Super Heavy Mechanized</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 기계화</c>"
 
 msgctxt "desc/squad/wunderwaffe_v1_e100_strike"
 msgid "Wunderwaffe: V1 E-100 Strike Group"
-msgstr ""
+msgstr "분더바페: V1 E-100 타격 집단"
 
 msgctxt "info/special/wunderwaffe_v1_e100_strike"
 msgid "<c(c3baae)>Missile Strike Group</c>"
-msgstr ""
+msgstr "<c(c3baae)>미사일 타격 집단</c>"
 
 msgctxt "desc/squad/experten_leopard_swarm"
 msgid "Experten Leopard Swarm"
-msgstr ""
+msgstr "엑스페르텐 레오파르트 무리"
 
 msgctxt "info/special/experten_leopard_swarm"
 msgid "<c(c3baae)>Light Recon Swarm</c>"
-msgstr ""
+msgstr "<c(c3baae)>경형 정찰 무리</c>"
 
 msgctxt "desc/squad/experten_waffentrager_ambush"
 msgid "Experten Waffenträger Ambush"
-msgstr ""
+msgstr "엑스페르텐 바펜트레거 매복"
 
 msgctxt "info/special/experten_waffentrager_ambush"
 msgid "<c(c3baae)>Heavy TD Ambush</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 구축전차 매복</c>"
 
 msgctxt "desc/squad/experten_kpz67_spearhead"
 msgid "Experten KPz 67 Spearhead"
-msgstr ""
+msgstr "엑스페르텐 KPz 67 선봉"
 
 msgctxt "info/special/experten_kpz67_spearhead"
 msgid "<c(c3baae)>MBT Spearhead</c>"
-msgstr ""
+msgstr "<c(c3baae)>주력 전차 선봉</c>"
 
 msgctxt "desc/squad/experten_taschenratte_assault"
 msgid "Experten Taschenratte Assault"
-msgstr ""
+msgstr "엑스페르텐 타셴라테 돌격"
 
 msgctxt "info/special/experten_taschenratte_assault"
 msgid "<c(c3baae)>Super Heavy Assault</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 돌격</c>"

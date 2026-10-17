@@ -15,88 +15,88 @@ msgstr ""
 
 msgctxt "desc/squad/ba20_command_fin_con_mace"
 msgid "BA-20 (Command)"
-msgstr ""
+msgstr "BA-20 (지휘)"
 
 msgctxt "desc/squad/single_at_wz35(fin)"
 msgid "Reserve AT Detachment"
-msgstr ""
+msgstr "예비 대전차 분견대"
 
 msgctxt "desc/squad/single_mg_vkt(fin)"
 msgid "MG Detachment (MG42-VKT)"
-msgstr ""
+msgstr "기관총 분견대 (MG42-VKT)"
 
 msgctxt "desc/squad/squad_emergency_reserves_late(fin)"
 msgid "<c(A5A095)>(+1)</c> Emergency Reserve Squad"
-msgstr ""
+msgstr "<c(A5A095)>(+1)</c> 비상 예비 분대"
 
 msgctxt "desc/squad/squad_special_jag_recon_late_len(fin)"
 msgid "<c(A5A095)>(4)</c> Special Jäger Recon Section"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 특수 예거 정찰 분대"
 
 msgctxt "desc/squad/squad_special_jag_late_len(fin)"
 msgid "<c(A5A095)>(4)</c> Special Jäger Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 특수 예거 분대"
 
 msgctxt "desc/squad/squad_emergency_reserves_coq(fin)"
 msgid "<c(A5A095)>(+1)</c> Emergency Reserve Squad"
-msgstr ""
+msgstr "<c(A5A095)>(+1)</c> 비상 예비 분대"
 
 msgctxt "desc/squad/squad_special_jag_recon_coq(fin)"
 msgid "<c(A5A095)>(4)</c> Special Jäger Recon Section"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 특수 예거 정찰 분대"
 
 msgctxt "desc/squad/squad_special_jag_coq(fin)"
 msgid "<c(A5A095)>(4)</c> Special Jäger Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 특수 예거 분대"
 
 msgctxt "desc/squad/single_bazooker2(fin)"
 msgid "AT Detachment (PVG M42)"
-msgstr ""
+msgstr "대전차 분견대 (PVG M42)"
 
 msgctxt "desc/squad/single_bazooker(fin)"
 msgid "AT Detachment (Panzerschreck)"
-msgstr ""
+msgstr "대전차 분견대 (Panzerschreck)"
 
 msgctxt "desc/squad/squad_at_late_pvg_m42_con(fin)"
 msgid "AT Detachment (PVG M42)"
-msgstr ""
+msgstr "대전차 분견대 (PVG M42)"
 
 msgctxt "desc/squad/squad_rifle_lmg_heavy_con(fin)"
 msgid "Heavy LMG Squad"
-msgstr ""
+msgstr "중무장 경기관총 분대"
 
 msgctxt "desc/squad/squad_swe_rifle_team_early(fin)"
 msgid "<c(A5A095)>(3)</c> Swedish Vol. Rifle Section"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 스웨덴 의용 소총 분대"
 
 msgctxt "desc/squad/squad_swe_vol_early(fin)"
 msgid "<c(A5A095)>(3)</c> Swedish Vol. Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 스웨덴 의용 분대"
 
 msgctxt "desc/squad/squad_swe_assault(fin)"
 msgid "<c(A5A095)>(3)</c> Swedish Vol. Assault Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 스웨덴 의용 돌격 분대"
 
 msgctxt "desc/squad/squad_swe_vol_late(fin)"
 msgid "<c(A5A095)>(3)</c> Swedish Vol. Squad [Late]"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 스웨덴 의용 분대 [후기]"
 
 msgctxt "desc/squad/squad_swe_at_team(fin)"
 msgid "<c(A5A095)>(3)</c> Swedish Vol. AT Team"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 스웨덴 의용 대전차 조"
 
 msgctxt "desc/squad/squad_swe_engineer_team(fin)"
 msgid "<c(A5A095)>(3)</c> Swedish Vol. Engineer Team"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 스웨덴 의용 공병 조"
 
 msgctxt "desc/squad/village_guard_squad(fin)"
 msgid "<c(A5A095)>(1)</c> Finnish Village Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 핀란드 마을 분대"
 
 msgctxt "desc/squad/experienced_village_guard_squad(fin)"
 msgid "<c(A5A095)>(1)</c> Experienced Finnish Village Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 숙련 핀란드 마을 분대"
 
 msgctxt "desc/squad/single_signaller(fin)"
 msgid "Artillery Signaller [Maavoimat]"
-msgstr ""
+msgstr "포병 통신병 [마아보이마트]"

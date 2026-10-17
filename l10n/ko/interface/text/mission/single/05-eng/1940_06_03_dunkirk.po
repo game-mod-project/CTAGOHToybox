@@ -307,7 +307,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/reinf_airstrike"
 msgid "Air Strike"
-msgstr ""
+msgstr "공습"
 
 msgctxt "mission/single/05-eng/1940_06_03_dunkirk/ui/timer_preparation"
 msgid "Prepare your defensive lines"

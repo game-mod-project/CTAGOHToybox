@@ -15,4 +15,4 @@ msgstr ""
 
 msgctxt "desc/weapon/flammenwerfer_b2"
 msgid "Flammenwerfer B2"
-msgstr ""
+msgstr "Flammenwerfer B2"

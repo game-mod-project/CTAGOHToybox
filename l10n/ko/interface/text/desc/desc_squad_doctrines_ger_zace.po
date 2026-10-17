@@ -16,216 +16,216 @@ msgstr ""
 
 msgctxt "desc/squad/doctrine_kettenkrad_goliath_late"
 msgid "<c(B29557)>( I )</c> Demolition Squad"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> 폭파 분대"
 
 msgctxt "desc/squad/doctrine_ostwind"
 msgid "<c(B29557)>( I ) </c> <c(E56042)>1.</c> Ostwind"
-msgstr ""
+msgstr "<c(B29557)>( I ) </c> <c(E56042)>1.</c> Ostwind"
 
 msgctxt "desc/squad/doctrine_wirbelwind"
 msgid "<c(B29557)>( I )</c> <c(E56042)>2.</c> Wirbelwind"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> <c(E56042)>2.</c> Wirbelwind"
 
 msgctxt "desc/squad/doctrine_sdkfz_251_10"
 msgid "<c(B29557)>( I )</c> Sd.Kfz.251/21"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Sd.Kfz.251/21"
 
 msgctxt "desc/squad/doctrine_sdkfz_251_9"
 msgid "<c(B29557)>( I )</c> Sd.Kfz.251/9"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Sd.Kfz.251/9"
 
 msgctxt "desc/squad/doctrine_sdkfz_72"
 msgid "<c(B29557)>( I )</c> Sd.Kfz 7/2 (3.7cm)"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Sd.Kfz 7/2 (3.7cm)"
 
 msgctxt "desc/squad/doctrine_sdkfz221_28mm"
 msgid "<c(B29557)>( I )</c> Sd.Kfz 221 (2.8cm)"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Sd.Kfz 221 (2.8cm)"
 
 msgctxt "desc/squad/doctrine_pz_ii_h"
 msgid "<c(B29557)>( I )</c> VK.903"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> VK.903"
 
 msgctxt "desc/squad/doctrine_pzspwg_204"
 msgid "<c(B29557)>( I )</c> Pz.Sp.Wg.P204(f) KwK 38"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Pz.Sp.Wg.P204(f) KwK 38"
 
 msgctxt "desc/squad/doctrine_75mm_pak9738_late"
 msgid "<c(B29557)>( I )</c> 7.5cm PaK 97/38"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> 7.5cm PaK 97/38"
 
 msgctxt "desc/squad/doctrine_char_2c_bis"
 msgid "<c(B29557)>( I )</c> <c(E56042)>2.</c> Captured Char 2C Bis"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> <c(E56042)>2.</c> 노획 Char 2C Bis"
 
 msgctxt "desc/squad/doctrine_char_2c"
 msgid "<c(B29557)>( I )</c> <c(E56042)>1.</c> Captured Char 2C"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> <c(E56042)>1.</c> 노획 Char 2C"
 
 msgctxt "desc/squad/doctrine_mg_131_tripod"
 msgid "<c(B29557)>( I )</c> MG 131 Tripod"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> MG 131 삼각대"
 
 msgctxt "desc/squad/doctrine_pbil"
 msgid "<c(B29557)>( I )</c> Pbil m/40"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Pbil m/40"
 
 msgctxt "desc/squad/doctrine_wanze"
 msgid "<c(B29557)>( I )</c> Borgward Wanze IV"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Borgward Wanze IV"
 
 msgctxt "desc/squad/doctrine_daf_m39"
 msgid "<c(B29557)>( I )</c> Pz.SpW. DAF 201 (h)"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Pz.SpW. DAF 201 (h)"
 
 msgctxt "desc/squad/doctrine_pz2j"
 msgid "<c(B29557)>( I )</c> Pz.Kpfw. II Ausf. J"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Pz.Kpfw. II Ausf. J"
 
 msgctxt "desc/squad/doctrine_bergepanther"
 msgid "<c(B29557)>( II )</c> Bergepanzerwagen V"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> Bergepanzerwagen V"
 
 msgctxt "desc/squad/doctrine_pz756r_late"
 msgid "<c(B29557)>( II )</c> Pz.Kpfw KV-1B 756(r)"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> Pz.Kpfw KV-1B 756(r)"
 
 msgctxt "desc/squad/doctrine_marder_1fcm_36"
 msgid "<c(B29557)>( II )</c> Geschützwagen FCM (f)"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> Geschützwagen FCM (f)"
 
 msgctxt "desc/squad/doctrine_bison2"
 msgid "<c(B29557)>( II )</c> Sturmpanzer II"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> Sturmpanzer II"
 
 msgctxt "desc/squad/doctrine_wespe_late"
 msgid "<c(B29557)>( III )</c> Wespe"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Wespe"
 
 msgctxt "desc/squad/doctrine_me_262_50mm"
 msgid "<c(B29557)>( II )</c> Me 262A-1a/U4 50mm"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> Me 262A-1a/U4 50mm"
 
 msgctxt "desc/squad/doctrine_grille"
 msgid "<c(B29557)>( III )</c> Grille Ausf. K"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Grille Ausf. K"
 
 msgctxt "desc/squad/doctrine_dicker_max"
 msgid "<c(B29557)>( III )</c> Dicker Max"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Dicker Max"
 
 msgctxt "desc/squad/doctrine_210mm_morser18_late"
 msgid "<c(B29557)>( IV )</c> 21cm Mörser 18"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 21cm Mörser 18"
 
 msgctxt "desc/squad/doctrine_vk_3002"
 msgid "<c(B29557)>( III )</c> VK 3002"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> VK 3002"
 
 msgctxt "desc/squad/doctrine_pak_44"
 msgid "<c(B29557)>( III )</c> 12.8 cm Pak 44"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> 12.8 cm Pak 44"
 
 msgctxt "desc/squad/doctrine_coelian"
 msgid "<c(B29557)>( III )</c> <c(E56042)>1.</c> Coelian"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> <c(E56042)>1.</c> Coelian"
 
 msgctxt "desc/squad/doctrine_sturer_emil"
 msgid "<c(B29557)>( III )</c> Sturer Emil"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Sturer Emil"
 
 msgctxt "desc/squad/doctrine_mammut"
 msgid "<c(B29557)>( III )</c> <c(E56042)>2.</c> FlakPz. V Mammut"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> <c(E56042)>2.</c> FlakPz. V Mammut"
 
 msgctxt "desc/squad/doctrine_ger_firefly"
 msgid "<c(B29557)>( III )</c> Pz.Kpfw M4A4 748(e) 'Firefly'"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Pz.Kpfw M4A4 748(e) 'Firefly'"
 
 msgctxt "desc/squad/doctrine_waffentrager"
 msgid "<c(B29557)>( III )</c> Krupp-Steyr Waffenträger"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Krupp-Steyr Waffenträger"
 
 msgctxt "desc/squad/doctrine_jagdpanzer_iv_a_armor"
 msgid "<c(B29557)>( III )</c> <c(E56042)>1.</c> Panzer IV/70 (A)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> <c(E56042)>1.</c> Panzer IV/70 (A)"
 
 msgctxt "desc/squad/doctrine_panzer4_70_v"
 msgid "<c(B29557)>( III )</c> <c(E56042)>2.</c> Panzer IV/70 (V)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> <c(E56042)>2.</c> Panzer IV/70 (V)"
 
 msgctxt "desc/squad/doctrine_tiger1hunt"
 msgid "<c(B29557)>( IV )</c> Tiger Ausf.E 'Ace'"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Tiger Ausf.E 'Ace'"
 
 msgctxt "desc/squad/doctrine_hummel_nashorn"
 msgid "<c(B29557)>( IV )</c> Hummel + Nashorn"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Hummel + Nashorn"
 
 msgctxt "desc/squad/doctrine_panther_f"
 msgid "<c(B29557)>( IV )</c> Pz.Kpfw Panther II + Pz.Kpfw Panther F (8.8 KwK 43 L/71)"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Pz.Kpfw Panther II + Pz.Kpfw Panther F (8.8 KwK 43 L/71)"
 
 msgctxt "desc/squad/doctrine_porsche_command"
 msgid "<c(B29557)>( IV )</c> Pz.Bef.VI (P)"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Pz.Bef.VI (P)"
 
 msgctxt "desc/squad/doctrine_ferdinand_late"
 msgid "<c(B29557)>( IV )</c> Ferdinand"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Ferdinand"
 
 msgctxt "desc/squad/doctrine_jagdpanther"
 msgid "<c(B29557)>( IV )</c> Jagdpanther"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Jagdpanther"
 
 msgctxt "desc/squad/doctrine_ersatz_m10"
 msgid "<c(B29557)>( IV )</c> 'M10'"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 'M10'"
 
 msgctxt "desc/squad/doctrine_210mm_nebelwerfer42_late"
 msgid "<c(B29557)>( IV )</c> 21cm NbW 42"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 21cm NbW 42"
 
 msgctxt "desc/squad/doctrine_me262"
 msgid "<c(B29557)>( IV )</c> Me 262 A-1a Schwalbe 500kg Bomb"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Me 262 A-1a Schwalbe 500kg 폭탄"
 
 msgctxt "desc/squad/doctrine_sturmtiger"
 msgid "<c(B29557)>( IV )</c> Sturmmörser"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> Sturmmörser"
 
 msgctxt "desc/squad/doctrine_600mm_thor_late"
 msgid "<c(B29557)>( V )</c> 60cm Karl Gerät"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 60cm Karl Gerät"
 
 msgctxt "desc/squad/doctrine_300mm_nebelwerfer42"
 msgid "<c(B29557)>( V )</c> 30cm NbW 42"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 30cm NbW 42"
 
 msgctxt "desc/squad/doctrine_pz38h_w40_ger"
 msgid "<c(B29557)>( V )</c> Pz.Kpfw 38H (Wurfrahmen 40)"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Pz.Kpfw 38H (Wurfrahmen 40)"
 
 msgctxt "desc/squad/doctrine_sdkfz251d_1_stuka"
 msgid "<c(B29557)>( V )</c> Stuka Zu Fuss"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Stuka Zu Fuss"
 
 msgctxt "desc/squad/doctrine_e_100b"
 msgid "<c(B29557)>( V )</c> Pz.Kpfw Tiger-Maus"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Pz.Kpfw Tiger-Maus"
 
 msgctxt "desc/squad/doctrine_e_100a"
 msgid "<c(B29557)>( V )</c> E-100 Blueprint Design"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> E-100 설계안"
 
 msgctxt "desc/squad/doctrine_jagdtiger"
 msgid "<c(B29557)>( V )</c> Jagdtiger"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Jagdtiger"
 
 msgctxt "desc/squad/doctrine_pz6bh_105mm"
 msgid "<c(B29557)>( V )</c> Tiger II Ausf.B (10.5cm)"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Tiger II Ausf.B (10.5cm)"
 
 msgctxt "desc/squad/doctrine_maus"
 msgid "<c(B29557)>( V )</c> Maus"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Maus"

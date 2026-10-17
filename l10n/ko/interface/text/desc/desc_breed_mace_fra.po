@@ -15,64 +15,64 @@ msgstr ""
 
 msgctxt "desc/human/mp/fra/mid/tankman_fra"
 msgid "Tankman [ADT]"
-msgstr ""
+msgstr "전차병 [ADT]"
 
 msgctxt "desc/human/mp/fra/mid/tankman_asst_fra"
 msgid "Tankman [ADT]"
-msgstr ""
+msgstr "전차병 [ADT]"
 
 msgctxt "desc/human/mp/fra/mid/tank_commander_fra"
 msgid "Tank Commander [ADT]"
-msgstr ""
+msgstr "전차 지휘관 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/tankman_fra"
 msgid "Tankman [ADT]"
-msgstr ""
+msgstr "전차병 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/tankman_asst_fra"
 msgid "Tankman [ADT]"
-msgstr ""
+msgstr "전차병 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/tank_commander_fra"
 msgid "Tank Commander [ADT]"
-msgstr ""
+msgstr "전차 지휘관 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/tankman"
 msgid "Tankman [ADT]"
-msgstr ""
+msgstr "전차병 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/tank_commander"
 msgid "Tank Commander [ADT]"
-msgstr ""
+msgstr "전차 지휘관 [ADT]"
 
 msgctxt "desc/human/mp/fra/late/tankman_fra_eng"
 msgid "Tankman [FFL]"
-msgstr ""
+msgstr "전차병 [FFL]"
 
 msgctxt "desc/human/mp/fra/late/tank_commander_fra_eng"
 msgid "Tank Commander [FFL]"
-msgstr ""
+msgstr "전차 지휘관 [FFL]"
 
 msgctxt "desc/human/mp/fra/late/tankman_fra_eng"
 msgid "Tankman [FFL]"
-msgstr ""
+msgstr "전차병 [FFL]"
 
 msgctxt "desc/human/mp/fra/late/tank_commander_fra_eng"
 msgid "Tank Commander [FFL]"
-msgstr ""
+msgstr "전차 지휘관 [FFL]"
 
 msgctxt "desc/human/mp/fra/mid/tankman_fra_eng"
 msgid "Tankman [FFL]"
-msgstr ""
+msgstr "전차병 [FFL]"
 
 msgctxt "desc/human/mp/fra/mid/tank_commander_fra_eng"
 msgid "Tank Commander [FFL]"
-msgstr ""
+msgstr "전차 지휘관 [FFL]"
 
 msgctxt "desc/human/mp/fra/early/tankman_fra_eng"
 msgid "Tankman [FFL]"
-msgstr ""
+msgstr "전차병 [FFL]"
 
 msgctxt "desc/human/mp/fra/early/tank_commander_fra_eng"
 msgid "Tank Commander [FFL]"
-msgstr ""
+msgstr "전차 지휘관 [FFL]"

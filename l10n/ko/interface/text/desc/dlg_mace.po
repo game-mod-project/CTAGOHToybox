@@ -16,24 +16,24 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_usa_support"
 msgid "Support (Asia)"
-msgstr ""
+msgstr "지원 (아시아)"
 
 msgctxt "mp/lobby/doctrine/late_jap_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/late_jap_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/late_jap_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/late_jap_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/late_jap_support"
 msgid "Support"
-msgstr ""
+msgstr "지원"

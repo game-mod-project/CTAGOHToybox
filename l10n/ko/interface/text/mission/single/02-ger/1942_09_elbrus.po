@@ -15,227 +15,227 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/ally_officer/p2_01"
 msgid "Greetings! We are on our way to the \"Hotu-Tau\" pass. "
-msgstr ""
+msgstr "안녕하십니까! 우리는 \"호투타우\" 고개로 가는 길입니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/ally_officer/p2_02"
 msgid "Negative, we're short on time and the Soviets may get there first."
-msgstr ""
+msgstr "안 됩니다, 시간이 부족하고 소련군이 먼저 도착할 수도 있습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/ally_officer/p2_03"
 msgid "Roger, if we do get back, we will definitely be in need of a drink!"
-msgstr ""
+msgstr "알겠습니다, 돌아오게 되면 반드시 한잔해야겠군요!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/date"
 msgid "September 1942 · Mount Elbrus, Caucasus"
-msgstr ""
+msgstr "1942년 9월 · 캅카스 엘브루스 산"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_01"
 msgid "Damn, look, a corpse!"
-msgstr ""
+msgstr "젠장, 봐, 시체다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_02"
 msgid "The enemy is here. We need to raise the alarm!"
-msgstr ""
+msgstr "적이 여기 있다. 경보를 울려야 한다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_03"
 msgid "Alarm! Enemy contact!"
-msgstr ""
+msgstr "경보! 적과 접촉!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_04"
 msgid "We're under attack! Sound the alarm immediately!"
-msgstr ""
+msgstr "공격받고 있다! 즉시 경보를 울려라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_04_shot"
 msgid "This is shooting! We are under attack, raise the alarm, right now!"
-msgstr ""
+msgstr "총소리다! 공격받고 있다, 경보를 울려라, 당장!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_05_a"
 msgid "What is it?"
-msgstr ""
+msgstr "무슨 일입니까?"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_05_b"
 msgid "Hmm... What is it over there?"
-msgstr ""
+msgstr "음... 저쪽에 뭐가 있지?"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_06_a"
 msgid "Who is there?"
-msgstr ""
+msgstr "거기 누구냐?"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/extra_person/p1_06_b"
 msgid "What was it?"
-msgstr ""
+msgstr "뭐였지?"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/gameover/won"
 msgid "Good job!"
-msgstr ""
+msgstr "잘했다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/name"
 msgid "Among the heavens"
-msgstr ""
+msgstr "하늘 한가운데서"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/name_big"
 msgid "Among the heavens"
-msgstr ""
+msgstr "하늘 한가운데서"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/outro_completed"
 msgid "Machine gun fire echoed across the mountains for several hours. Slowly the tide of battle turned against Lieutenant Grigoryants and his men. Only 4 men from his detachment made it back alive. The Lieutenants body was one of many that slipped down the mountain slope."
-msgstr ""
+msgstr "기관총 사격 소리가 몇 시간 동안 산에 울려 퍼졌다. 전세는 서서히 Lieutenant 그리고랸츠와 그의 부하들에게 불리하게 돌아갔다. 그의 분견대에서 살아 돌아온 것은 4명뿐이었다. Lieutenant의 시신은 산비탈로 미끄러져 내린 수많은 시신 중 하나였다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/outro_failed"
 msgid "The Soviets, having seen the vulnerability of isolated stations like the one you just lost, will now raid every single strategic point in this mountain range and by the end of 1942, the entire Caucasus might be lost. The 11th Army will very likely get pushed all the way back into the Taman Peninsula."
-msgstr ""
+msgstr "방금 잃은 것 같은 고립된 초소의 취약함을 확인한 소련군은 이제 이 산악 지대의 모든 전략 지점을 습격할 것이고, 1942년 말이면 캅카스 전체를 잃을 수도 있다. 제11 군은 타만 반도까지 밀려날 가능성이 매우 높다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_01"
 msgid "We are almost there."
-msgstr ""
+msgstr "거의 다 왔다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_02"
 msgid "Our task is to capture \"Shelter of the Eleven\", ideally without raising the alarm."
-msgstr ""
+msgstr "우리 임무는 \"열한 명의 대피소\"를 점령하는 것이다. 가능하면 경보를 울리지 않고."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_03"
 msgid "They don't expect us. We have the element of surprise."
-msgstr ""
+msgstr "놈들은 우리를 예상하지 못한다. 우리에겐 기습의 이점이 있다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_04"
 msgid "We should eliminate any enemy patrols along the way."
-msgstr ""
+msgstr "가는 길에 만나는 적 순찰대를 제거해야 한다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_05"
 msgid "Correct, our tracks will go unseen. Visibility is poor and we can get close to their patrols without being seen."
-msgstr ""
+msgstr "맞다, 우리 발자국은 보이지 않을 것이다. 시야가 나빠 들키지 않고 순찰대 가까이 다가갈 수 있다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_06"
 msgid "They raised the alarm! It's going to get much tougher."
-msgstr ""
+msgstr "경보를 울렸다! 훨씬 힘들어질 것이다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_07"
 msgid "Take defensive positions around the building, I will contact HQ. Our reinforcements will deal with the remaining enemy units."
-msgstr ""
+msgstr "건물 주변에 방어 위치를 잡아라, 나는 본부에 연락하겠다. 증원 부대가 남은 적 부대를 처리할 것이다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_08"
 msgid "The Reich will be proud of you soldiers. Excellent work!"
-msgstr ""
+msgstr "제국이 그대들을 자랑스러워할 것이다. 훌륭하다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_09"
 msgid "The hotel is in front of us. You should quietly silence the perimeter without being spotted."
-msgstr ""
+msgstr "호텔이 눈앞에 있다. 들키지 않고 조용히 외곽을 제압해야 한다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p1_10"
 msgid "Capture the building, take out all the Bolsheviks! Kill everyone around the shelter."
-msgstr ""
+msgstr "건물을 점령하고 볼셰비키를 모조리 제거해라! 대피소 주변의 모두를 죽여라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_01"
 msgid "The enemy will now make their next move. Gather the squad for a briefing!"
-msgstr ""
+msgstr "적이 이제 다음 수를 둘 것이다. 분대를 모아 브리핑을 하자!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_02"
 msgid "Gentlemen, listen up."
-msgstr ""
+msgstr "제군, 잘 들어라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_03"
 msgid "Our scouts have spotted Soviet movement five kilometers to the northeast. We must assume that they will try to recapture this position."
-msgstr ""
+msgstr "우리 정찰병이 북동쪽 5킬로미터에서 소련군의 움직임을 발견했다. 그들이 이 진지를 탈환하려 한다고 가정해야 한다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_04"
 msgid "We need to get ready for anything. Plant explosives around the area."
-msgstr ""
+msgstr "무슨 일이든 대비해야 한다. 지역 주변에 폭약을 설치해라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_05"
 msgid "What the hell?!"
-msgstr ""
+msgstr "이게 대체 뭐야?!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_06"
 msgid "Save the explosives for the Bolsheviks!"
-msgstr ""
+msgstr "폭약은 볼셰비키를 위해 아껴라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_07"
 msgid "Don't waste your bullets! We will need every round for the Soviets’ attack!"
-msgstr ""
+msgstr "총알을 낭비하지 마라! 소련군의 공격에는 한 발 한 발이 필요하다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_08"
 msgid "You have a good supply of mines at your disposal. Mine the four slopes in this sector, and prepare defensive positions. Choose the best defensive positions. We know that the Soviets can attack from 4 possible directions. Place the machine gun points among the stones, to control possible attack directions. Don't let the Soviets take over the Shelter!"
-msgstr ""
+msgstr "지뢰를 충분히 쓸 수 있다. 이 구역의 비탈 네 곳에 지뢰를 묻고 방어 위치를 준비해라. 가장 좋은 방어 위치를 골라라. 소련군은 네 방향에서 공격할 수 있다. 가능한 공격 방향을 통제하도록 바위 사이에 기관총 진지를 설치해라. 소련군이 대피소를 빼앗게 두지 마라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_09"
 msgid "All slopes are mined - excellent work. This will give us an additional ace up our sleeves."
-msgstr ""
+msgstr "모든 비탈에 지뢰를 묻었다. 훌륭하다. 이로써 소매 속에 비장의 카드가 하나 더 생겼다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_10"
 msgid "We'll hold this position for the time being."
-msgstr ""
+msgstr "당분간 이 위치를 지킨다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_11"
 msgid "Nice to see you! Can we treat you to a warm drink?"
-msgstr ""
+msgstr "반갑습니다! 따뜻한 음료 한 잔 대접해도 될까요?"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_12"
 msgid "Good luck with your mission! We found several bottles of vodka here, when you get back we can share them."
-msgstr ""
+msgstr "임무 행운을 빕니다! 여기서 보드카 몇 병을 찾았습니다, 돌아오면 같이 나눕시다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p2_15"
 msgid "Any moment now, stay on high alert!"
-msgstr ""
+msgstr "언제든 올 수 있다, 계속 극도로 경계해라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_01"
 msgid "Move into position immediately!"
-msgstr ""
+msgstr "즉시 위치로 이동해라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_02"
 msgid "Excellent! Get on the radio to HQ and report the enemy is attacking the \"Shelter of the Eleven\". Tell them we are outnumbered and that we need reinforcements immediately!"
-msgstr ""
+msgstr "훌륭하다! 무전기로 본부를 호출해 적이 \"열한 명의 대피소\"를 공격 중이라고 보고해라. 수적으로 열세이며 즉시 증원이 필요하다고 전해라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_03"
 msgid "Hold your positions at all costs and buy them some time!"
-msgstr ""
+msgstr "위치를 목숨을 걸고 지켜 시간을 벌어라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_04"
 msgid "Great, now to the generator."
-msgstr ""
+msgstr "좋다, 이제 발전기로 가자."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_05"
 msgid "There's too many of them! We need reinforcements."
-msgstr ""
+msgstr "놈들이 너무 많다! 증원이 필요하다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_06"
 msgid "Find a repair kit and fix the generator immediately!"
-msgstr ""
+msgstr "수리 도구를 찾아 즉시 발전기를 고쳐라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_07"
 msgid "Just in time!"
-msgstr ""
+msgstr "때맞춰 왔군!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_08"
 msgid "Damn! They have deployed mortars on the north!"
-msgstr ""
+msgstr "젠장! 북쪽에 박격포를 배치했다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_09"
 msgid "Destroy the enemy mortars immediately or we will be done for!"
-msgstr ""
+msgstr "적 박격포를 즉시 파괴해라, 그러지 않으면 우리는 끝장이다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_officer/p3_10"
 msgid "It looks like these are all their remaining troops. Kill them!"
-msgstr ""
+msgstr "저들이 남은 병력 전부인 것 같다. 죽여라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p1_01"
 msgid "Numerous enemy patrols are to be expected."
-msgstr ""
+msgstr "적 순찰대가 다수 있을 것으로 예상됩니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p1_02"
 msgid "The blizzard will conceal our movement."
-msgstr ""
+msgstr "눈보라가 우리 움직임을 가려 줄 것입니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p1_03"
 msgid "The area is ours. There are still a few patrols around, but the hotel is secured."
-msgstr ""
+msgstr "지역은 우리 것입니다. 순찰대가 몇 남아 있지만 호텔은 확보했습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p1_04"
 msgid "The area is secure! All hostiles have been silenced, the remaining Soviets fled northeast."
-msgstr ""
+msgstr "지역이 확보되었습니다! 적대 세력은 모두 침묵했고, 남은 소련군은 북동쪽으로 달아났습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_01"
 msgid "The storm has cleared. What a beautiful view."
-msgstr ""
+msgstr "폭풍이 걷혔다. 경치가 정말 아름답군."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_02"
 msgid ""
@@ -243,127 +243,127 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_03"
 msgid "The northeastern slope is mined."
-msgstr ""
+msgstr "북동쪽 비탈에 지뢰를 묻었습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_04"
 msgid "The eastern slope is mined."
-msgstr ""
+msgstr "동쪽 비탈에 지뢰를 묻었습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_05"
 msgid "The northern slope is mined."
-msgstr ""
+msgstr "북쪽 비탈에 지뢰를 묻었습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_06"
 msgid "The northwestern slope is mined."
-msgstr ""
+msgstr "북서쪽 비탈에 지뢰를 묻었습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_07"
 msgid "I am glad we're done here. Frostbite is starting to creep in..."
-msgstr ""
+msgstr "여기 일이 끝나서 다행이다. 동상이 슬금슬금 오기 시작했거든..."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p2_08"
 msgid "How much longer before the Soviets arrive?"
-msgstr ""
+msgstr "소련군이 오려면 얼마나 더 있어야 하지?"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_01"
 msgid "Alarm! Alarm! Herr Leutnant, the Soviets are coming!"
-msgstr ""
+msgstr "경보! 경보! Herr Leutnant, 소련군이 오고 있습니다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_02"
 msgid "We ran into Russian forces on the northwestern slope. We exchanged fire, but we had to retreat. There's too many of them!"
-msgstr ""
+msgstr "북서쪽 비탈에서 러시아군과 마주쳤습니다. 교전했지만 후퇴해야 했습니다. 너무 많습니다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_03"
 msgid "The generator is fixed! We can contact HQ now."
-msgstr ""
+msgstr "발전기를 고쳤습니다! 이제 본부와 연락할 수 있습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_04"
 msgid "HQ is deploying a nearby squad to our position. It will take a couple of minutes for them to arrive."
-msgstr ""
+msgstr "본부가 근처 분대를 우리 위치로 보내고 있습니다. 도착까지 몇 분 걸릴 겁니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_05"
 msgid "I think I see what's wrong with it. This is pretty easy to repair."
-msgstr ""
+msgstr "뭐가 문제인지 알 것 같습니다. 수리하기 꽤 쉽습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_06"
 msgid "Herr Leutnant, we could use the generator to power the radio, but it's broken down."
-msgstr ""
+msgstr "Herr Leutnant, 발전기로 무전기를 돌릴 수 있는데 고장 났습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_07"
 msgid "Yes sir! If I remember correctly, I saw one around the houses on the southeastern slope."
-msgstr ""
+msgstr "알겠습니다! 제 기억이 맞다면 남동쪽 비탈의 집들 근처에서 본 것 같습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_08"
 msgid "Yes sir! I think I saw one around the huts near the hotel."
-msgstr ""
+msgstr "알겠습니다! 호텔 근처 오두막 부근에서 본 것 같습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_09"
 msgid "Yes sir! I vividly remember seeing a repair kit near the hotel."
-msgstr ""
+msgstr "알겠습니다! 호텔 근처에서 수리 도구를 본 기억이 생생합니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_10"
 msgid "The reinforcements have arrived."
-msgstr ""
+msgstr "증원 부대가 도착했습니다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_11"
 msgid "Soviet infantry coming from the northeastern slope!"
-msgstr ""
+msgstr "소련 보병이 북동쪽 비탈에서 오고 있습니다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_12"
 msgid "Soviet squad spotted on the eastern slope!"
-msgstr ""
+msgstr "동쪽 비탈에서 소련 분대 발견!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_13"
 msgid "Enemies spotted coming from the northern slope!"
-msgstr ""
+msgstr "북쪽 비탈에서 적이 오는 것이 보입니다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_14"
 msgid "Enemy approaching from the northwestern slope!"
-msgstr ""
+msgstr "북서쪽 비탈에서 적이 접근 중입니다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_15"
 msgid "Mortars eliminated!"
-msgstr ""
+msgstr "박격포 제거!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/pl_soldier/p3_16"
 msgid "They are retreating! We repelled the attack!"
-msgstr ""
+msgstr "후퇴하고 있다! 공격을 격퇴했다!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/place"
 msgid "1st Gebirgsjägerdivision"
-msgstr ""
+msgstr "제1 게비르크스예거 사단"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/story"
 msgid "During the 'Fall Blau' offensive, the 'Shelter of the Eleven', a mountaineer hotel, becomes a refuge to the Gebirgsjäger. An attempt to recapture the refuge should be expected."
-msgstr ""
+msgstr "'청색 작전' 공세 중 산악인 호텔 '열한 명의 대피소'가 게비르크스예거의 피난처가 된다. 이 피난처를 탈환하려는 시도가 예상된다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_01"
 msgid "Don't raise the alarm!"
-msgstr ""
+msgstr "경보를 울리지 마라!"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_02"
 msgid "Find a repair kit"
-msgstr ""
+msgstr "수리 도구를 찾아라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_02_1"
 msgid "Take the repair kit to the generator room"
-msgstr ""
+msgstr "수리 도구를 발전기실로 가져가라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_03"
 msgid "Mine the northeastern slope"
-msgstr ""
+msgstr "북동쪽 비탈에 지뢰를 묻어라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_04"
 msgid "Mine the eastern slope"
-msgstr ""
+msgstr "동쪽 비탈에 지뢰를 묻어라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_05"
 msgid "Mine the northern slope"
-msgstr ""
+msgstr "북쪽 비탈에 지뢰를 묻어라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_06"
 msgid "Mine the northwestern slope"
-msgstr ""
+msgstr "북서쪽 비탈에 지뢰를 묻어라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/sec_task_01"
 msgid ""
@@ -379,19 +379,19 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/task_01"
 msgid "Capture the \"Shelter of the Eleven\""
-msgstr ""
+msgstr "\"열한 명의 대피소\"를 점령하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/task_02"
 msgid "Prepare to defend the hotel"
-msgstr ""
+msgstr "호텔 방어를 준비하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/task_03"
 msgid "Defend the Shelter of the Eleven"
-msgstr ""
+msgstr "열한 명의 대피소를 방어하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/task_04"
 msgid "Destroy the enemy mortar battery"
-msgstr ""
+msgstr "적 박격포 포대를 파괴하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/task_05"
 msgid ""
@@ -399,7 +399,7 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_01"
 msgid "August 1942. Mountain Elbrus, near the \"Shelter of the Eleven\"."
-msgstr ""
+msgstr "1942년 8월. 엘브루스 산, \"열한 명의 대피소\" 부근."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_02"
 msgid ""
@@ -407,56 +407,56 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_03"
 msgid "Finish the preparation phase"
-msgstr ""
+msgstr "준비 단계를 마친다"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_03_hint"
 msgid "If you are sure you are ready, click to complete the preparation phase."
-msgstr ""
+msgstr "준비가 되었다고 확신하면 클릭해 준비 단계를 끝내라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_04"
 msgid "Prepare to defend your position. Lay down explosives and use this time to resupply your men. When you are ready, press the button to end the preparation phase."
-msgstr ""
+msgstr "위치 방어를 준비하라. 폭약을 설치하고 이 시간에 부대를 재보급하라. 준비가 되면 버튼을 눌러 준비 단계를 끝내라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_05"
 msgid "You can find additional ammunition in boxes."
-msgstr ""
+msgstr "상자에서 추가 탄약을 찾을 수 있다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_05_1"
 msgid "Place charges on mountain slopes. Place them in places where you expect the enemy to pass in the direction of the shelter. Use the scout to detonate the charges when the enemy passes there."
-msgstr ""
+msgstr "산비탈에 폭약을 설치해라. 적이 대피소 방향으로 지나갈 것으로 예상되는 곳에 설치해라. 적이 지나갈 때 정찰병으로 폭약을 기폭해라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_06"
 msgid "The reinforcements will arrive in:"
-msgstr ""
+msgstr "증원 도착까지:"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_07"
 msgid "Blow up the northeast"
-msgstr ""
+msgstr "북동쪽을 폭파하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_07_hint"
 msgid "Detonate the charges on the northeastern side."
-msgstr ""
+msgstr "북동쪽 폭약을 기폭하라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_08"
 msgid "Blow up the east"
-msgstr ""
+msgstr "동쪽을 폭파하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_08_hint"
 msgid "Detonate the charges on the eastern side."
-msgstr ""
+msgstr "동쪽 폭약을 기폭하라."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_09"
 msgid "Blow up the north"
-msgstr ""
+msgstr "북쪽을 폭파하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_09_hint"
 msgid "Explosive charges laid in the north."
-msgstr ""
+msgstr "북쪽에 폭약을 설치했다."
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_10"
 msgid "Blow up the charges on the northwestern side"
-msgstr ""
+msgstr "북서쪽 폭약을 폭파하라"
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/text/text_10_hint"
 msgid "Detonate the charges on the northwestern side."
-msgstr ""
+msgstr "북서쪽 폭약을 기폭하라."

@@ -15,184 +15,184 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/date"
 msgid "10th of February, 1943 · Krasny Bor, Leningrad Oblast"
-msgstr ""
+msgstr "1943년 2월 10일 · 레닌그라드 주 크라스니 보르"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/name"
 msgid "The Legend of Krasny Bor"
-msgstr ""
+msgstr "크라스니 보르의 전설"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/name_big"
 msgid "The Legend of Krasny Bor"
-msgstr ""
+msgstr "크라스니 보르의 전설"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/hint/01"
 msgid "The \"Blue Division\""
-msgstr ""
+msgstr "\"청색 사단\""
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/01"
 msgid "Soldiers of the 250th Infantry Division! Listen up!"
-msgstr ""
+msgstr "제250 보병 사단 병사들! 잘 들어라!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/02"
 msgid "The Soviet counteroffensive is at large! The bolsheviks are eager to break the Leningrad encirclement and are dashing toward your defences with armor! Everything is at stake!"
-msgstr ""
+msgstr "소련군 반격이 한창이다! 볼셰비키는 레닌그라드 포위를 깨려고 기갑을 앞세워 그대들의 방어선으로 돌진하고 있다! 모든 것이 걸려 있다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/03"
 msgid "Today is the day where the Red wave will meet the Blue wall! You already defeated the communists once. I am confident you will do it once more! "
-msgstr ""
+msgstr "오늘 붉은 물결이 푸른 벽과 마주치는 날이다! 그대들은 이미 공산주의자들을 한 번 물리쳤다. 한 번 더 해내리라 확신한다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/04"
 msgid "Your objective is to hold our rear headquarters at all costs, but it will also be convenient to secure our secondary key objectives: "
-msgstr ""
+msgstr "그대의 목표는 후방 사령부를 목숨을 걸고 지키는 것이지만, 이차 핵심 목표도 확보해 두면 좋다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/04a"
 msgid "The railway station,..."
-msgstr ""
+msgstr "철도역..."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/04b"
 msgid "...the artillery battery,..."
-msgstr ""
+msgstr "...포병 포대..."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/04c"
 msgid "...and the communications vehicle, which you need to keep operational to maintain radio-contact to call for reinforcements. "
-msgstr ""
+msgstr "...그리고 증원을 요청하는 무전 연락을 유지하기 위해 가동 상태로 지켜야 하는 통신 차량이다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/05"
 msgid "I regret to inform you our Anti-tank weaponry is in extremely short supply. However, we have reserves of mines and grenades to deal with the enemy tanks. "
-msgstr ""
+msgstr "유감스럽게도 우리 대전차 무기는 극히 부족하다. 하지만 적 전차를 상대할 지뢰와 수류탄 비축분은 있다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/06"
 msgid "The enemy has commenced to bombard our first line. Get to work laying mine-fields and prepare for the enemy assault.  "
-msgstr ""
+msgstr "적이 우리 제1선에 포격을 시작했다. 지뢰밭을 설치하는 일에 착수하고 적의 돌격에 대비해라."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/07"
 msgid "The enemy is approaching. You can tell where they are coming from, as they will use flares to light up the path for their tanks! Hold out until sunrise. No step back!"
-msgstr ""
+msgstr "적이 접근하고 있다. 전차를 위해 조명탄으로 길을 밝히므로 어디서 오는지 알 수 있다! 동틀 때까지 버텨라. 한 걸음도 물러서지 마라!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/08"
 msgid "Our field hospital is endangered so close to the front line. I have ordered its immediate re-location. You must protect it at all costs!"
-msgstr ""
+msgstr "우리 야전 병원이 전선과 이렇게 가까워 위험하다. 즉시 이전을 명령했다. 목숨을 걸고 지켜야 한다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/09"
 msgid "You should consider pulling back your forces into a second defensive line in the village. It has been fortified for the occasion."
-msgstr ""
+msgstr "마을의 제2 방어선으로 병력을 물리는 것을 고려해 보라. 이 상황에 맞게 요새화해 두었다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/comms1"
 msgid "The communications vehicle has been jeopardised! Try to get it back in action!"
-msgstr ""
+msgstr "통신 차량이 위험에 빠졌다! 다시 가동시켜라!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/comms2"
 msgid "Reinforcements are now at your disposal."
-msgstr ""
+msgstr "이제 증원 부대를 쓸 수 있다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/end"
 msgid "Good job soldiers. You have once again made the Fatherland proud!"
-msgstr ""
+msgstr "잘했다, 병사들. 그대들은 다시 한번 조국을 자랑스럽게 했다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/hospital_complete"
 msgid "The evacuation of the hospital was a success. Our wounded will live to fight once more."
-msgstr ""
+msgstr "병원 대피는 성공했다. 우리 부상병들은 살아서 다시 싸울 것이다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/hospital_fail"
 msgid "The trucks with the wounded have been hit! This careless escorting will not be tolerated!"
-msgstr ""
+msgstr "부상병을 실은 트럭이 피격당했다! 이런 부주의한 호위는 용납할 수 없다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/hq"
 msgid "Enemy tanks are approaching our headquarters. See to it! They need to be destroyed immediately!"
-msgstr ""
+msgstr "적 전차가 우리 사령부로 접근하고 있다. 처리해라! 즉시 파괴해야 한다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/positions"
 msgid "The soviet forces are building defensive positions!"
-msgstr ""
+msgstr "소련군이 방어 진지를 구축하고 있다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/prisoners"
 msgid "The enemy has a column of prisoners being taken away. I need you to ambush the column and liberate our men!"
-msgstr ""
+msgstr "적이 포로 종대를 끌고 가고 있다. 종대를 매복 공격해 우리 병사들을 구출해라!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/prisoners_complete"
 msgid "Good to have our soldiers fighting for the fatherland once again!"
-msgstr ""
+msgstr "우리 병사들이 다시 조국을 위해 싸우게 되어 기쁘다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/narrator/officer/rocket"
 msgid "Enemy rocket artillery in the area! Stalin's organs have arrived to set the tunes for the sunrise!"
-msgstr ""
+msgstr "이 지역에 적 로켓 포병이다! 스탈린의 오르간이 일출을 알리는 곡을 연주하러 왔다!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/outro_completed"
 msgid "Because the blue division held the line at Krasny Bor, the 18th army was not surrounded like the 6th at Stalingrad. But they paid a terrible price; only 1 in five got out alive. \nThe Germans thought the blue division’s tenacity was unmatched. This seems no more than fair, considering how little they had to defend themselves against the huge odds."
-msgstr ""
+msgstr "청색 사단이 크라스니 보르에서 전선을 지킨 덕에 제18 군은 스탈린그라드의 제6 군처럼 포위되지 않았다. 하지만 끔찍한 대가를 치렀다. 다섯 명 중 한 명만 살아서 빠져나왔다.\n독일군은 청색 사단의 끈기가 비할 데 없다고 생각했다. 엄청난 열세 속에서 스스로를 지킬 수단이 얼마 없었음을 생각하면 과장은 아닌 듯하다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/outro_failed"
 msgid "Your failure to hold Krasny Bor has grave consequences; the 18th army has just been cut off from the front, facing the same fate as the 6th army at Stalingrad. Thousands will succumb to injury, illness and starvation. Those that can still walk will be sent to Siberia. This is a dent in your reputation to say the least!  \n"
-msgstr ""
+msgstr "크라스니 보르를 지키지 못한 것은 중대한 결과를 낳는다. 제18 군은 전선에서 막 단절되어 스탈린그라드의 제6 군과 같은 운명을 맞게 되었다. 수천 명이 부상과 질병, 굶주림으로 쓰러질 것이다. 아직 걸을 수 있는 자는 시베리아로 보내질 것이다. 그대의 평판에 흠이 간 것은 말할 것도 없다!\n"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/place"
 msgid "250th Infantry Division \"Blue Division\""
-msgstr ""
+msgstr "제250 보병 사단 \"청색 사단\""
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/apminer"
 msgid "AP miners"
-msgstr ""
+msgstr "AP 지뢰병"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/artillerymen"
 msgid "Artillerymen"
-msgstr ""
+msgstr "포병"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/atminer"
 msgid "AT miners"
-msgstr ""
+msgstr "대전차 지뢰병"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/atsquad"
 msgid "AT detachment"
-msgstr ""
+msgstr "대전차 분견대"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/engineer"
 msgid "Field Engineers"
-msgstr ""
+msgstr "야전 공병"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/medic"
 msgid "Medics"
-msgstr ""
+msgstr "위생병"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/mgun"
 msgid "MG-42 lafette"
-msgstr ""
+msgstr "MG-42 라페테"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/squad"
 msgid "Regular infantry squad"
-msgstr ""
+msgstr "일반 보병 분대"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/reinf/supply"
 msgid "Supply crate"
-msgstr ""
+msgstr "보급 상자"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/skip"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/story"
 msgid "February 1943; the Red army goes offensive in the Leningrad region. Operation \"polar star\" aims to encircle the German 18th army. One of its goals is to take Tosno, following the road and railroad, both leading straight through Krasny Bor.\n\nKrasny Bor is at the centre of attention in this mission. The initial attack is met by the Spanish Blue Division, who have dug in a handful of AT guns and a few artillery pieces at the village. With enemies approaching from all sides, this battle will be a serious test of your improvisation skills.\n\nHold your position until it is time to counterattack!"
-msgstr ""
+msgstr "1943년 2월, 붉은 군대가 레닌그라드 지역에서 공세에 나선다. \"북극성\" 작전은 독일 제18 군을 포위하는 것이 목표다. 그 목표 중 하나는 도로와 철도를 따라 토스노를 점령하는 것이며, 두 길 모두 크라스니 보르를 곧장 지난다.\n\n이번 임무의 중심은 크라스니 보르다. 최초의 공격은 마을에 대전차포 몇 문과 포병 몇 문을 파 놓은 스페인 청색 사단이 맞이한다. 사방에서 적이 접근하는 이번 전투는 그대의 임기응변 능력을 크게 시험할 것이다.\n\n반격할 때가 올 때까지 위치를 사수하라!"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/task_hospital"
 msgid "Escort the trucks evacuating the hospital. At least 2 trucks must survive."
-msgstr ""
+msgstr "병원을 대피시키는 트럭을 호위하라. 최소 2대는 살아남아야 한다."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/task_main"
 msgid "Don't let the enemy tanks overrun the headquarters."
-msgstr ""
+msgstr "적 전차가 사령부를 짓밟지 못하게 하라."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/taskopt_arty"
 msgid "Don't let the enemy tanks overrun the artillery battery"
-msgstr ""
+msgstr "적 전차가 포병 포대를 짓밟지 못하게 하라"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/taskopt_comms"
 msgid "Keep the radio vehicle crewed and operational for reinforcements."
-msgstr ""
+msgstr "증원을 위해 무전 차량에 승무원을 태워 가동 상태로 유지하라."
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/taskopt_station"
 msgid "Don't let the enemy tanks enter the train station"
-msgstr ""
+msgstr "적 전차가 기차역에 들어오지 못하게 하라"
 
 msgctxt "mission/single/02-ger/1943_02_krasny_bor/timer"
 msgid "Prepare for the enemy attack!"
-msgstr ""
+msgstr "적의 공격에 대비하라!"

@@ -79,7 +79,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator15"
 msgid "Go, go, go!"
-msgstr ""
+msgstr "가, 가, 가!"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/narrator17"
 msgid "Be careful with that, Trooper!"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_secret"
 msgid "Secret Objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_05_carentan/task_secret_comp"
 msgid "(Secret Objective #1) Find the German rocket artillery."

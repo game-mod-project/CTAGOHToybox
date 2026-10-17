@@ -31,7 +31,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_fin_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/early_fin_allround#hint"
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_fin_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/early_fin_defensive#hint"
 msgid ""
@@ -47,7 +47,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_fin_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/early_fin_irregular#hint"
 msgid ""
@@ -55,7 +55,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_fin_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/early_fin_offensive#hint"
 msgid ""
@@ -63,7 +63,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_ger_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/early_ger_allround#hint"
 msgid ""
@@ -71,7 +71,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_ger_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/early_ger_defensive#hint"
 msgid ""
@@ -79,7 +79,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_ger_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/early_ger_irregular#hint"
 msgid ""
@@ -87,7 +87,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_ger_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/early_ger_offensive#hint"
 msgid ""
@@ -103,7 +103,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_rus_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/early_rus_allround#hint"
 msgid ""
@@ -111,7 +111,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_rus_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/early_rus_defensive#hint"
 msgid ""
@@ -119,7 +119,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_rus_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/early_rus_irregular#hint"
 msgid ""
@@ -127,7 +127,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_rus_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/early_rus_offensive#hint"
 msgid ""
@@ -143,7 +143,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_fin_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/mid_fin_allround#hint"
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_fin_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/mid_fin_defensive#hint"
 msgid ""
@@ -167,7 +167,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_fin_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/mid_fin_irregular#hint"
 msgid ""
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_fin_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/mid_fin_offensive#hint"
 msgid ""
@@ -183,7 +183,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_ger_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/mid_ger_allround#hint"
 msgid ""
@@ -191,7 +191,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_ger_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/mid_ger_defensive#hint"
 msgid ""
@@ -199,7 +199,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_ger_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/mid_ger_irregular#hint"
 msgid ""
@@ -207,7 +207,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_ger_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/mid_ger_offensive#hint"
 msgid ""
@@ -223,7 +223,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_rus_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/mid_rus_allround#hint"
 msgid ""
@@ -231,7 +231,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_rus_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/mid_rus_defensive#hint"
 msgid ""
@@ -247,7 +247,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_rus_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/mid_rus_irregular#hint"
 msgid ""
@@ -255,7 +255,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/mid_rus_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/mid_rus_offensive#hint"
 msgid ""
@@ -271,7 +271,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_fin_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/late_fin_allround#hint"
 msgid ""
@@ -279,7 +279,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_fin_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/late_fin_defensive#hint"
 msgid ""
@@ -295,7 +295,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_fin_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/late_fin_irregular#hint"
 msgid ""
@@ -303,7 +303,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_fin_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/late_fin_offensive#hint"
 msgid ""
@@ -311,7 +311,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_ger_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/late_ger_allround#hint"
 msgid ""
@@ -327,7 +327,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_ger_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/late_ger_defensive#hint"
 msgid ""
@@ -335,7 +335,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_ger_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/late_ger_irregular#hint"
 msgid ""
@@ -343,7 +343,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_ger_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/late_ger_offensive#hint"
 msgid ""
@@ -359,7 +359,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_rus_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/late_rus_allround#hint"
 msgid ""
@@ -367,7 +367,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_rus_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/late_rus_defensive#hint"
 msgid ""
@@ -383,7 +383,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_rus_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/late_rus_irregular#hint"
 msgid ""
@@ -391,7 +391,7 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/late_rus_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/late_rus_offensive#hint"
 msgid ""

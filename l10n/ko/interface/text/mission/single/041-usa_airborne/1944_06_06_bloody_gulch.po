@@ -115,7 +115,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/preparation"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/preparation_hint"
 msgid "Press on this button to skip the preparation countdown and move on to the next part of the mission."
@@ -123,7 +123,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/skip_prep"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/story"
 msgid "  The 101st has been in action constantly since the jump into Normandy over a week ago. After clearing Carentan yesterday, it’s time to push forward and capitalize on this victory.\n\n  Easy company will be covering the extreme right flank. Headquarters has sent scouts forward along the axis of advance. Depending on what they report, we will proceed accordingly. Report to the 506th Parachute Infantry Regiment for further orders and prepare for what could be a bloody battle.\n\n Good luck!"
@@ -167,7 +167,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_secret"
 msgid "Secret Objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_secret_comp"
 msgid "(Secret Objective #1): Encourage Blithe"

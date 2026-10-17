@@ -16,52 +16,52 @@ msgstr ""
 
 msgctxt "desc/human/narrator/ger-woensdrecht-officer"
 msgid "Oberleutnant Werner Meyer"
-msgstr ""
+msgstr "Oberleutnant 베르너 마이어"
 
 msgctxt "desc/human/narrator/ger-woensdrecht-soldier1"
 msgid "Gefreiter Herbert Lange"
-msgstr ""
+msgstr "Gefreiter 헤르베르트 랑에"
 
 msgctxt "desc/human/narrator/ger-woensdrecht-soldier2"
 msgid "Obergefreiter Karl Bergmann"
-msgstr ""
+msgstr "Obergefreiter 카를 베르크만"
 
 msgctxt "desc/human/narrator/ger-koevering-squadleader"
 msgid "Oberfeldwebel Ludwig Weissmann"
-msgstr ""
+msgstr "Oberfeldwebel 루트비히 바이스만"
 
 msgctxt "desc/human/narrator/ger-koevering-soldier1"
 msgid "Gefreiter Otto Reinhardt"
-msgstr ""
+msgstr "Gefreiter 오토 라인하르트"
 
 msgctxt "desc/human/narrator/ger-koevering-soldier2"
 msgid "Obergefreiter Dieter Vogel"
-msgstr ""
+msgstr "Obergefreiter 디터 포겔"
 
 msgctxt "desc/human/narrator/ger-arras_officer"
 msgid "Oberleutnant Friedrich von Hohenfeld"
-msgstr ""
+msgstr "Oberleutnant 프리드리히 폰 호엔펠트"
 
 msgctxt "desc/human/narrator/ger-arras_soldier"
 msgid "Gefreiter Hans Richter"
-msgstr ""
+msgstr "Gefreiter 한스 리히터"
 
 msgctxt "desc/human/narrator/ger-stvalery_officer"
 msgid "Leutnant Wilhelm Albrecht"
-msgstr ""
+msgstr "Leutnant 빌헬름 알브레히트"
 
 msgctxt "desc/human/narrator/ger-stvalery_soldier"
 msgid "Obergefreiter Rudolf Schwarz"
-msgstr ""
+msgstr "Obergefreiter 루돌프 슈바르츠"
 
 msgctxt "desc/human/narrator/ger-swordbeach-officer"
 msgid "Leutnant Franz Schneider"
-msgstr ""
+msgstr "Leutnant 프란츠 슈나이더"
 
 msgctxt "desc/human/narrator/ger-swordbeach-soldier"
 msgid "Gefreiter Kurt Hoffmann"
-msgstr ""
+msgstr "Gefreiter 쿠르트 호프만"
 
 msgctxt "desc/human/narrator/ger-wittmann"
 msgid "Michael Wittmann"
-msgstr ""
+msgstr "미하엘 비트만"

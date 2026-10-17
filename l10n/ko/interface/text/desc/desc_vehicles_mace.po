@@ -15,3868 +15,3868 @@ msgstr ""
 
 msgctxt "desc/entity/dummy_emplacement_info"
 msgid "<c(BA7517)>How to place in battle:</c>\n<c(FFFFFF)>Open the new reinforcement tab (the one with the wrench),</c>\nselect an engineer (only works with those) and place down the emplacement of choice.\nMP and CP price in battle can be ignored."
-msgstr ""
+msgstr "<c(BA7517)>전투 중 설치 방법:</c>\n<c(FFFFFF)>새 증원 탭(렌치 모양)을 열고,</c>\n공병을 고른 뒤(공병만 가능) 원하는 진지를 설치한다.\n전투 중 MP와 CP 가격은 무시해도 된다."
 
 msgctxt "desc/entity/dummy_build_1"
 msgid "Emplacement Variant N.1"
-msgstr ""
+msgstr "Emplacement Variant N.1"
 
 msgctxt "desc/entity/dummy_build_2"
 msgid "Emplacement Variant N.2"
-msgstr ""
+msgstr "Emplacement Variant N.2"
 
 msgctxt "desc/entity/dummy_build_3"
 msgid "Emplacement Variant N.3"
-msgstr ""
+msgstr "Emplacement Variant N.3"
 
 msgctxt "desc/entity/dummy_build_4"
 msgid "Emplacement Variant N.4"
-msgstr ""
+msgstr "Emplacement Variant N.4"
 
 msgctxt "desc/entity/dummy_build_5"
 msgid "Emplacement Variant N.5"
-msgstr ""
+msgstr "Emplacement Variant N.5"
 
 msgctxt "desc/entity/dummy_build_6"
 msgid "Emplacement Variant N.6"
-msgstr ""
+msgstr "Emplacement Variant N.6"
 
 msgctxt "desc/entity/dummy_build_7"
 msgid "Emplacement Variant N.7"
-msgstr ""
+msgstr "Emplacement Variant N.7"
 
 msgctxt "desc/entity/dummy_build_8"
 msgid "Emplacement Variant N.8"
-msgstr ""
+msgstr "Emplacement Variant N.8"
 
 msgctxt "desc/entity/dummy_build_9"
 msgid "Supply Depot (2000 AP)"
-msgstr ""
+msgstr "보급 창고 (2000 AP)"
 
 msgctxt "desc/entity/dummy_build_10"
 msgid "Supply Fuel Depot (2000 Fuel)"
-msgstr ""
+msgstr "연료 보급 창고 (연료 2000)"
 
 msgctxt "info/special/t_14_uk"
 msgid "<c(c3baae)>Assault Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>돌격 전차</c>"
 
 msgctxt "desc/entity/t_14_uk"
 msgid "T14 (57mm)"
-msgstr ""
+msgstr "T14 (57mm)"
 
 msgctxt "info/special/churchill_na75"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/churchill_na75"
 msgid "Churchill Mk.IV NA 75"
-msgstr ""
+msgstr "Churchill Mk.IV NA 75"
 
 msgctxt "info/special/comet1_a34_shield"
 msgid "<c(c3baae)>Cruiser Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>순항전차</c>"
 
 msgctxt "desc/entity/comet1_a34_shield"
 msgid "Comet I (Up-Armoured)"
-msgstr ""
+msgstr "Comet I (장갑 강화)"
 
 msgctxt "info/special/matilda2_mk2_frog"
 msgid "<c(c3baae)>Heavy Flame Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 화염 전차</c>"
 
 msgctxt "desc/entity/matilda2_mk2_frog"
 msgid "Matilda II MK.II 'Frog'"
-msgstr ""
+msgstr "Matilda II MK.II 'Frog'"
 
 msgctxt "desc/entity/heavy_mg_stationary_type_ru_tripod"
 msgid "Type 92 Tripod"
-msgstr ""
+msgstr "Type 92 Tripod"
 
 msgctxt "info/special/heavy_mg_stationary_type_ru_tripod"
 msgid "<c(c3baae)>Light MG</c>"
-msgstr ""
+msgstr "<c(c3baae)>경기관총</c>"
 
 msgctxt "desc/entity/type_ru_tripod"
 msgid "Type 92 Tripod"
-msgstr ""
+msgstr "Type 92 Tripod"
 
 msgctxt "info/special/type_ru_tripod"
 msgid "<c(c3baae)>Light MG</c>"
-msgstr ""
+msgstr "<c(c3baae)>경기관총</c>"
 
 msgctxt "desc/entity/type_21_rocket_booster_stat"
 msgid "Type 21 Rocket Booster"
-msgstr ""
+msgstr "Type 21 로켓 부스터"
 
 msgctxt "info/special/type_21_rocket_booster_stat"
 msgid "<c(c3baae)>Rocket Booster</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 부스터</c>"
 
 msgctxt "desc/entity/320mm_type98_mortar"
 msgid "Type 98 320mm"
-msgstr ""
+msgstr "Type 98 320mm"
 
 msgctxt "info/special/320mm_type98_mortar"
 msgid "<c(c3baae)>Spigot Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>스피곳 박격포</c>"
 
 msgctxt "info/special/ram_kangaroo_mk2_badger"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ram_kangaroo_mk2_badger"
 msgid "Ram Badger Mk. I"
-msgstr ""
+msgstr "Ram Badger Mk. I"
 
 msgctxt "info/special/ram_mkii"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ram_mkii"
 msgid "Ram Mk.II"
-msgstr ""
+msgstr "Ram Mk.II"
 
 msgctxt "info/special/ram_mki"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ram_mki"
 msgid "Ram Mk.I"
-msgstr ""
+msgstr "Ram Mk.I"
 
 msgctxt "info/special/sherman2_skink"
 msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대공포</c>"
 
 msgctxt "desc/entity/sherman2_skink"
 msgid "Anti-Aircraft Tank 'Skink'"
-msgstr ""
+msgstr "대공 전차 'Skink'"
 
 msgctxt "desc/entity/staghound_mk3_prot"
 msgid "Staghound Mk.III (Prototype)"
-msgstr ""
+msgstr "Staghound Mk.III (시제)"
 
 msgctxt "info/special/staghound_mk3_prot"
 msgid "<c(c3baae)>Armoured Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "info/special/se_ri"
 msgid "<c(c3baae)>Armored Recovery Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑 구난차</c>"
 
 msgctxt "desc/entity/se_ri"
 msgid "Type 97 Se-Ri"
-msgstr ""
+msgstr "Type 97 Se-Ri"
 
 msgctxt "desc/entity/panzer5d_fra"
 msgid "Pz.Kpfw Panther Ausf.D 'Dauphiné'"
-msgstr ""
+msgstr "Pz.Kpfw Panther Ausf.D 'Dauphiné'"
 
 msgctxt "info/special/panzer5d"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "info/special/panther_ii_turm"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m5a1_halftrack_commander"
 msgid "M5A1 Halftrack (Command)"
-msgstr ""
+msgstr "M5A1 Halftrack (지휘)"
 
 msgctxt "info/special/m5a1_halftrack_commander"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/m3a1_halftrack_commander"
 msgid "M3A1 Halftrack (Command)"
-msgstr ""
+msgstr "M3A1 Halftrack (지휘)"
 
 msgctxt "info/special/m3a1_halftrack_commander"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/bf109_g6_250kg"
 msgid "Bf 109 G-6"
-msgstr ""
+msgstr "Bf 109 G-6"
 
 msgctxt "info/special/bf109_g6_250kg"
 msgid "<c(c3baae)>Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"
 
 msgctxt "desc/entity/bf109_g6_rocket"
 msgid "Bf 109 G-6"
-msgstr ""
+msgstr "Bf 109 G-6"
 
 msgctxt "info/special/bf109_g6_rocket"
 msgid "<c(c3baae)>Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"
 
 msgctxt "desc/entity/bf110_e2_rocket"
 msgid "Bf 110 E-2"
-msgstr ""
+msgstr "Bf 110 E-2"
 
 msgctxt "info/special/bf110_e2_rocket"
 msgid "<c(c3baae)>Fighter Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>전폭기</c>"
 
 msgctxt "desc/entity/bf110_e2_1000kg"
 msgid "Bf 110 E-2"
-msgstr ""
+msgstr "Bf 110 E-2"
 
 msgctxt "info/special/bf110_e2_1000kg"
 msgid "<c(c3baae)>Fighter Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>전폭기</c>"
 
 msgctxt "desc/entity/bf110_e2_flam_500kg"
 msgid "Bf 110 E-2"
-msgstr ""
+msgstr "Bf 110 E-2"
 
 msgctxt "info/special/bf110_e2_flam_500kg"
 msgid "<c(c3baae)>Fighter Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>전폭기</c>"
 
 msgctxt "desc/entity/yak1_ser69_50kg"
 msgid "Yak-1-69"
-msgstr ""
+msgstr "Yak-1-69"
 
 msgctxt "info/special/yak1_ser69_50kg"
 msgid "<c(c3baae)>Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"
 
 msgctxt "desc/entity/po2_flame"
 msgid "U-2"
-msgstr ""
+msgstr "U-2"
 
 msgctxt "info/special/po2_flame"
 msgid "<c(c3baae)>Light Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>경폭격기</c>"
 
 msgctxt "desc/entity/po2_rocket"
 msgid "U-2"
-msgstr ""
+msgstr "U-2"
 
 msgctxt "info/special/po2_rocket"
 msgid "<c(c3baae)>Light Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>경폭격기</c>"
 
 msgctxt "info/special/p47_d22_m8"
 msgid "<c(c3baae)>Multirole Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>다목적 전투기</c>"
 
 msgctxt "desc/entity/p47_d22_m8"
 msgid "Republic P-47D-22 Razorback"
-msgstr ""
+msgstr "Republic P-47D-22 Razorback"
 
 msgctxt "info/special/p47_d22_250lb"
 msgid "<c(c3baae)>Multirole Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>다목적 전투기</c>"
 
 msgctxt "desc/entity/p47_d22_250lb"
 msgid "Republic P-47D-22 Razorback"
-msgstr ""
+msgstr "Republic P-47D-22 Razorback"
 
 msgctxt "info/special/p47_d22_hvar"
 msgid "<c(c3baae)>Multirole Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>다목적 전투기</c>"
 
 msgctxt "desc/entity/p47_d22_hvar"
 msgid "Republic P-47D-22 Razorback"
-msgstr ""
+msgstr "Republic P-47D-22 Razorback"
 
 msgctxt "desc/entity/ki_57"
 msgid "Mitsubishi Ki-57 'Topsy'"
-msgstr ""
+msgstr "Mitsubishi Ki-57 'Topsy'"
 
 msgctxt "info/special/ki_57"
 msgid "<c(c3baae)>Transport Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송기</c>"
 
 msgctxt "desc/entity/m4a3_calliope"
 msgid "M4A3(75)W T34 'Calliope'"
-msgstr ""
+msgstr "M4A3(75)W T34 'Calliope'"
 
 msgctxt "info/special/m4a3_calliope"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/105mm_experimental_at_gun"
 msgid "105mm Experimental AT Gun"
-msgstr ""
+msgstr "105mm Experimental AT Gun"
 
 msgctxt "info/special/105mm_experimental_at_gun"
 msgid "<c(c3baae)>Anti-Tank Cannon</c>"
-msgstr ""
+msgstr "<c(c3baae)>대전차포</c>"
 
 msgctxt "desc/entity/m3a1_halftrack_sup"
 msgid "M3A1 Halftrack (Supply)"
-msgstr ""
+msgstr "M3A1 Halftrack (보급)"
 
 msgctxt "info/special/m3a1_halftrack_sup"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/t21e1_mortar_carrier"
 msgid "4.2-inch Mortar Carrier T21E1"
-msgstr ""
+msgstr "4.2-inch Mortar Carrier T21E1"
 
 msgctxt "info/special/t21e1_mortar_carrier"
 msgid "<c(c3baae)>Mortar Carrier</c>"
-msgstr ""
+msgstr "<c(c3baae)>박격포 운반차</c>"
 
 msgctxt "desc/entity/m4a4_croc"
 msgid "M4A4 'Crocodile'"
-msgstr ""
+msgstr "M4A4 'Crocodile'"
 
 msgctxt "info/special/m4a4_croc"
 msgid "<c(c3baae)>Flame Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>화염 전차</c>"
 
 msgctxt "desc/entity/m4a3_105_hvss_h5"
 msgid "M4A4(105)(POA-CWS-H5) HVSS"
-msgstr ""
+msgstr "M4A4(105)(POA-CWS-H5) HVSS"
 
 msgctxt "info/special/m4a3_105_hvss_h5"
 msgid "<c(c3baae)>Flame Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>화염 전차</c>"
 
 msgctxt "desc/entity/t90_mmc"
 msgid "155mm MMC T90"
-msgstr ""
+msgstr "155mm MMC T90"
 
 msgctxt "info/special/t90_mmc"
 msgid "<c(c3baae)>Self-propelled Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 박격포</c>"
 
 msgctxt "desc/entity/m3_lee_late"
 msgid "M3 Lee (Late)"
-msgstr ""
+msgstr "M3 Lee (후기)"
 
 msgctxt "info/special/m3_lee_late"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m4a1_76w_e4_5"
 msgid "M4A1(76)W 'E4-5' (Flame)"
-msgstr ""
+msgstr "M4A1(76)W 'E4-5' (화염)"
 
 msgctxt "info/special/m4a1_76w_e4_5"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m4a3_75w_poa_h1"
 msgid "M4A3(POA-CWS-H1) (Flame)"
-msgstr ""
+msgstr "M4A3(POA-CWS-H1) (화염)"
 
 msgctxt "info/special/m4a3_75w_poa_h1"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m4a3e2_105"
 msgid "M4A3E2(105)"
-msgstr ""
+msgstr "M4A3E2(105)"
 
 msgctxt "info/special/m4a3e2_105"
 msgid "<c(c3baae)>Assault Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>돌격 전차</c>"
 
 msgctxt "desc/entity/staghound_howitzer"
 msgid "Staghound Howitzer"
-msgstr ""
+msgstr "Staghound Howitzer"
 
 msgctxt "info/special/staghound_howitzer"
 msgid "<c(c3baae)>Self Propelled Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 곡사포</c>"
 
 msgctxt "desc/entity/152mm_bl_6_mk19_8a"
 msgid "BL 6-inch Mk.XIX on Mk.VIIA Carriage"
-msgstr ""
+msgstr "BL 6-inch Mk.XIX on Mk.VIIA Carriage"
 
 msgctxt "info/special/152mm_bl_6_mk19_8a"
 msgid "<c(c3baae)>Heavy Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 야포</c>"
 
 msgctxt "desc/entity/heavy_mg_20mm_itk35"
 msgid "20 ItK/35 Breda"
-msgstr ""
+msgstr "20 ItK/35 Breda"
 
 msgctxt "info/special/heavy_mg_20mm_itk35"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/heavy_mg_25mm_72k"
 msgid "25mm 72-K M1940"
-msgstr ""
+msgstr "25mm 72-K M1940"
 
 msgctxt "info/special/heavy_mg_25mm_72k"
 msgid "<c(c3baae)>Light AA</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공 전차</c>"
 
 msgctxt "desc/entity/heavy_mg_20mm_flak30"
 msgid "2cm FlaK 30"
-msgstr ""
+msgstr "2cm FlaK 30"
 
 msgctxt "info/special/heavy_mg_20mm_flak30"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/heavy_mg_40mm_m1"
 msgid "40mm Automatic Gun M1"
-msgstr ""
+msgstr "40mm Automatic Gun M1"
 
 msgctxt "info/special/heavy_mg_40mm_m1"
 msgid "<c(c3baae)>AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공포</c>"
 
 msgctxt "desc/entity/40mm_m1_late"
 msgid "40mm Automatic Gun M1"
-msgstr ""
+msgstr "40mm Automatic Gun M1"
 
 msgctxt "info/special/40mm_m1_late"
 msgid "<c(c3baae)>AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공포</c>"
 
 msgctxt "desc/entity/heavy_mg_20mm_oerlikon"
 msgid "Oerlikon No.2 Universal Mount"
-msgstr ""
+msgstr "Oerlikon No.2 Universal Mount"
 
 msgctxt "info/special/heavy_mg_20mm_oerlikon"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/jagdpanther_ii"
 msgid "Jagdpanther II"
-msgstr ""
+msgstr "Jagdpanther II"
 
 msgctxt "info/special/jagdpanther_ii"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/50mm_type98_mortar"
 msgid "Type 98 50mm Mortar"
-msgstr ""
+msgstr "Type 98 50mm Mortar"
 
 msgctxt "info/special/50mm_type98_mortar"
 msgid "<c(c3baae)>Demolition Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>폭파 박격포</c>"
 
 msgctxt "desc/entity/85mm_52k_late"
 msgid "85mm 52-K M1939"
-msgstr ""
+msgstr "85mm 52-K M1939"
 
 msgctxt "info/special/85mm_52k_late"
 msgid "<c(c3baae)>Heavy AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 대공포</c>"
 
 msgctxt "desc/entity/willys_mb_50cal_late"
 msgid "Willys MB (HMG)"
-msgstr ""
+msgstr "Willys MB (중기관총)"
 
 msgctxt "info/special/willys_mb_50cal_late"
 msgid "<c(c3baae)>Armed Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>무장 수송차</c>"
 
 msgctxt "desc/entity/50mm_flak41_late"
 msgid "5cm Flak 41"
-msgstr ""
+msgstr "5cm Flak 41"
 
 msgctxt "info/special/50mm_flak41_late"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/88mm_pak4341_late"
 msgid "8.8cm PaK 43/41"
-msgstr ""
+msgstr "8.8cm PaK 43/41"
 
 msgctxt "info/special/88mm_pak4341_late"
 msgid "<c(c3baae)>Heavy AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 대전차포</c>"
 
 msgctxt "desc/entity/88mm_flak36_late"
 msgid "8.8cm FlaK 36"
-msgstr ""
+msgstr "8.8cm FlaK 36"
 
 msgctxt "info/special/88mm_flak36_late"
 msgid "<c(c3baae)>Heavy AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 대공포</c>"
 
 msgctxt "desc/entity/ammo_rocket_trailer_usa"
 msgid "Cargo Trailer 1/4-Ton (Supply)"
-msgstr ""
+msgstr "화물 트레일러 1/4톤 (보급)"
 
 msgctxt "info/special/ammo_rocket_trailer_usa"
 msgid "<c(c3baae)>Ammo Trailer</c>"
-msgstr ""
+msgstr "<c(c3baae)>탄약 트레일러</c>"
 
 msgctxt "desc/entity/114mm_t27_launcher"
 msgid "T27 Rocket Launcher"
-msgstr ""
+msgstr "T27 Rocket Launcher"
 
 msgctxt "info/special/114mm_t27_launcher"
 msgid "<c(c3baae)>Rocket Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓포</c>"
 
 msgctxt "desc/entity/t77_spaa"
 msgid "T77E1 MGMC"
-msgstr ""
+msgstr "T77E1 MGMC"
 
 msgctxt "info/special/t77_spaa"
 msgid "<c(c3baae)>Light AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공 전차</c>"
 
 msgctxt "desc/entity/183mm_t88_launcher"
 msgid "T88 Rocket Launcher"
-msgstr ""
+msgstr "T88 Rocket Launcher"
 
 msgctxt "info/special/183mm_t88_launcher"
 msgid "<c(c3baae)>Rocket Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사기</c>"
 
 msgctxt "desc/entity/114mm_t66_launcher"
 msgid "T66 Rocket Launcher 'Honeycomb'"
-msgstr ""
+msgstr "T66 Rocket Launcher 'Honeycomb'"
 
 msgctxt "info/special/114mm_t66_launcher"
 msgid "<c(c3baae)>Rocket Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사기</c>"
 
 msgctxt "desc/entity/m18_hellcat_105mm"
 msgid "105mm HMC T88"
-msgstr ""
+msgstr "105mm HMC T88"
 
 msgctxt "info/special/m18_hellcat_105mm"
 msgid "<c(c3baae)>Support Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>지원 구축전차</c>"
 
 msgctxt "desc/entity/tiz_am600"
 msgid "Harley-Davidson WLA"
-msgstr ""
+msgstr "Harley-Davidson WLA"
 
 msgctxt "info/special/tiz_am600"
 msgid "<c(c3baae)>Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송차</c>"
 
 msgctxt "desc/entity/willys_mb_medic"
 msgid "Willys MB 'Medic'"
-msgstr ""
+msgstr "Willys MB 'Medic'"
 
 msgctxt "info/special/willys_mb_medic"
 msgid "<c(c3baae)>Medical Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>의무 수송차</c>"
 
 msgctxt "desc/entity/willys_mb_shield_50cal"
 msgid "Willys MB (HMG) 'Field mod'"
-msgstr ""
+msgstr "Willys MB (중기관총) '야전 개조'"
 
 msgctxt "info/special/willys_mb_shield_50cal"
 msgid "<c(c3baae)>Armed Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>무장 수송차</c>"
 
 msgctxt "desc/entity/willys_mb_shield_30cal"
 msgid "Willys MB (2x MG) 'Field mod'"
-msgstr ""
+msgstr "Willys MB (2x MG) '야전 개조'"
 
 msgctxt "info/special/willys_mb_shield_30cal"
 msgid "<c(c3baae)>Armed Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>무장 수송차</c>"
 
 msgctxt "desc/entity/willys_mb_bazooka"
 msgid "Willys MB (Bazooka) 'Field mod'"
-msgstr ""
+msgstr "Willys MB (Bazooka) '야전 개조'"
 
 msgctxt "info/special/willys_mb_bazooka"
 msgid "<c(c3baae)>Armed Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>무장 수송차</c>"
 
 msgctxt "desc/entity/wc51_t27"
 msgid "WC-51 T27 'Xylophone'"
-msgstr ""
+msgstr "WC-51 T27 'Xylophone'"
 
 msgctxt "info/special/wc51_t27"
 msgid "<c(c3baae)>Rocket Launcher Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사 트럭</c>"
 
 msgctxt "desc/entity/114mm_m12a1_launcher"
 msgid "M12A1 Rocket Launcher"
-msgstr ""
+msgstr "M12A1 Rocket Launcher"
 
 msgctxt "info/special/114mm_m12a1_launcher"
 msgid "<c(c3baae)>Rocket Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사기</c>"
 
 msgctxt "desc/entity/183mm_t91_launcher"
 msgid "T91 Rocket Launcher"
-msgstr ""
+msgstr "T91 Rocket Launcher"
 
 msgctxt "info/special/183mm_t91_launcher"
 msgid "<c(c3baae)>Rocket Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사기</c>"
 
 msgctxt "desc/entity/273mm_t59_trailer"
 msgid "T59 Rocket Launcher"
-msgstr ""
+msgstr "T59 Rocket Launcher"
 
 msgctxt "info/special/273mm_t59_trailer"
 msgid "<c(c3baae)>Rocket Cart</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 수레</c>"
 
 msgctxt "desc/entity/willys_mb_t45_mk10"
 msgid "Willys MB 'T45' (Late)"
-msgstr ""
+msgstr "Willys MB 'T45' (후기)"
 
 msgctxt "info/special/willys_mb_t45_mk10"
 msgid "<c(c3baae)>Rocket Launcher Jeep</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사 지프</c>"
 
 msgctxt "desc/entity/willys_mb_t45_mk3"
 msgid "Willys MB 'T45'"
-msgstr ""
+msgstr "Willys MB 'T45'"
 
 msgctxt "info/special/willys_mb_t45_mk3"
 msgid "<c(c3baae)>Rocket Launcher Jeep</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사 지프</c>"
 
 msgctxt "desc/entity/willys_mb_t27"
 msgid "Willys MB (Rocket Launcher) 'Field mod'"
-msgstr ""
+msgstr "Willys MB (로켓 발사기) '야전 개조'"
 
 msgctxt "info/special/willys_mb_t27"
 msgid "<c(c3baae)>Rocket Launcher Jeep</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사 지프</c>"
 
 msgctxt "desc/entity/gmc_t27_mgun"
 msgid "GMC CCKW-352 T27 ‘Xylophone’ (HMG)"
-msgstr ""
+msgstr "GMC CCKW-352 T27 ‘Xylophone’ (중기관총)"
 
 msgctxt "info/special/gmc_t27_mgun"
 msgid "<c(c3baae)>Rocket Launcher Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사 트럭</c>"
 
 msgctxt "desc/entity/gmc_t27"
 msgid "GMC CCKW-353 T27 ‘Xylophone’"
-msgstr ""
+msgstr "GMC CCKW-353 T27 ‘Xylophone’"
 
 msgctxt "info/special/gmc_t27"
 msgid "<c(c3baae)>Rocket Launcher Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사 트럭</c>"
 
 msgctxt "desc/entity/ft17_jap"
 msgid "Ko-Gata Sensha"
-msgstr ""
+msgstr "Ko-Gata Sensha"
 
 msgctxt "info/special/ft17_jap"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/ft17_mg_jap"
 msgid "Ko-Gata Sensha (MG)"
-msgstr ""
+msgstr "Ko-Gata Sensha (기관총)"
 
 msgctxt "info/special/ft17_mg_jap"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/f80a_mk78x4"
 msgid "P-80B Shooting Star"
-msgstr ""
+msgstr "P-80B Shooting Star"
 
 msgctxt "info/special/f80a_mk78x4"
 msgid "<c(c3baae)>Jet Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 전투기</c>"
 
 msgctxt "desc/entity/f80a_rockets_127x12"
 msgid "P-80B Shooting Star"
-msgstr ""
+msgstr "P-80B Shooting Star"
 
 msgctxt "info/special/f80a_rockets_127x12"
 msgid "<c(c3baae)>Jet Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 전투기</c>"
 
 msgctxt "desc/entity/f80a_450x2"
 msgid "P-80B Shooting Star"
-msgstr ""
+msgstr "P-80B Shooting Star"
 
 msgctxt "info/special/f80a_450x2"
 msgid "<c(c3baae)>Jet Fighter</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 전투기</c>"
 
 msgctxt "desc/entity/t26e4_prod"
 msgid "T26E4 Pershing"
-msgstr ""
+msgstr "T26E4 Pershing"
 
 msgctxt "info/special/t26e4_prod"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/m5_stuart_auto"
 msgid "M5 (T16)"
-msgstr ""
+msgstr "M5 (T16)"
 
 msgctxt "info/special/m5_stuart_auto"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/m4a3_firefly"
 msgid "M4A3 (17pdr)"
-msgstr ""
+msgstr "M4A3 (17pdr)"
 
 msgctxt "info/special/m4a3_firefly"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/155mm_m1_late"
 msgid "155mm Howitzer M1"
-msgstr ""
+msgstr "155mm Howitzer M1"
 
 msgctxt "info/special/155mm_m1_late"
 msgid "<c(c3baae)>Heavy Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 곡사포</c>"
 
 msgctxt "desc/entity/122mm_a19_late"
 msgid "122mm A-19 M1931/37"
-msgstr ""
+msgstr "122mm A-19 M1931/37"
 
 msgctxt "info/special/122mm_a19_late"
 msgid "<c(c3baae)>Heavy Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중포</c>"
 
 msgctxt "desc/entity/150mm_sig33_late"
 msgid "15cm sIG 33 (Late)"
-msgstr ""
+msgstr "15cm sIG 33 (후기)"
 
 msgctxt "info/special/150mm_sig33_late"
 msgid "<c(c3baae)>Heavy Infantry Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 보병포</c>"
 
 msgctxt "desc/entity/37mm_pak36_late"
 msgid "3.7cm PaK 36 (Late)"
-msgstr ""
+msgstr "3.7cm PaK 36 (후기)"
 
 msgctxt "info/special/37mm_pak36_late"
 msgid "<c(c3baae)>Light AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대전차포</c>"
 
 msgctxt "desc/entity/il2_mod42_ai"
 msgid "IL-2 M1942"
-msgstr ""
+msgstr "IL-2 M1942"
 
 msgctxt "info/special/il2_mod42_ai"
 msgid "<c(c3baae)>Fighter Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>전폭기</c>"
 
 msgctxt "info/special/me_262_50mm"
 msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 항공기</c>"
 
 msgctxt "desc/entity/me_262_50mm"
 msgid "Me 262A-1a/U4"
-msgstr ""
+msgstr "Me 262A-1a/U4"
 
 msgctxt "info/special/me_262_rockets_210x2"
 msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 항공기</c>"
 
 msgctxt "desc/entity/me_262_rockets_210x2"
 msgid "Me 262 A-1a Schwalbe"
-msgstr ""
+msgstr "Me 262 A-1a Schwalbe"
 
 msgctxt "info/special/me_262_rockets_250x2_ai"
 msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 항공기</c>"
 
 msgctxt "desc/entity/me_262_rockets_250x2_ai"
 msgid "Me 262 A-1a Schwalbe"
-msgstr ""
+msgstr "Me 262 A-1a Schwalbe"
 
 msgctxt "info/special/me_262_rockets_250x2"
 msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 항공기</c>"
 
 msgctxt "desc/entity/me_262_rockets_250x2"
 msgid "Me 262 A-1a Schwalbe"
-msgstr ""
+msgstr "Me 262 A-1a Schwalbe"
 
 msgctxt "info/special/me_262_500x2"
 msgid "<c(c3baae)>Jet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>제트 항공기</c>"
 
 msgctxt "desc/entity/me_262_500x2"
 msgid "Me 262 A-1a Schwalbe"
-msgstr ""
+msgstr "Me 262 A-1a Schwalbe"
 
 msgctxt "desc/entity/heavy_mg_dshk_aa"
 msgid "DShK M1938"
-msgstr ""
+msgstr "DShK M1938"
 
 msgctxt "info/special/heavy_mg_dshk_aa"
 msgid "<c(c3baae)>Heavy MG</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 기관총</c>"
 
 msgctxt "desc/entity/heavy_mg_m2_50cal_tripod"
 msgid "Browning M2HB"
-msgstr ""
+msgstr "Browning M2HB"
 
 msgctxt "info/special/heavy_mg_m2_50cal_tripod"
 msgid "<c(c3baae)>Heavy MG</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 기관총</c>"
 
 msgctxt "desc/entity/150mm_sfh18_late"
 msgid "15cm sFH 18"
-msgstr ""
+msgstr "15cm sFH 18"
 
 msgctxt "info/special/150mm_sfh18_late"
 msgid "<c(c3baae)>Heavy Field Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 야전 곡사포</c>"
 
 msgctxt "desc/entity/sdkfz251_20"
 msgid "Sd.Kfz 251/20"
-msgstr ""
+msgstr "Sd.Kfz 251/20"
 
 msgctxt "info/special/sdkfz251_20"
 msgid "<c(c3baae)>Mobile Spotlight</c>"
-msgstr ""
+msgstr "<c(c3baae)>이동식 탐조등</c>"
 
 msgctxt "desc/entity/high_mg_mg42"
 msgid "Hi-Lafette MG 42"
-msgstr ""
+msgstr "Hi-Lafette MG 42"
 
 msgctxt "info/special/high_mg_mg42"
 msgid "<c(c3baae)>Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>기관총</c>"
 
 msgctxt "desc/entity/high_mg_mg34"
 msgid "Hi-Lafette MG 34"
-msgstr ""
+msgstr "Hi-Lafette MG 34"
 
 msgctxt "info/special/high_mg_mg34"
 msgid "<c(c3baae)>Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>기관총</c>"
 
 msgctxt "desc/entity/heavy_mg_mg42_lafette"
 msgid "Lafette MG 42"
-msgstr ""
+msgstr "Lafette MG 42"
 
 msgctxt "info/special/heavy_mg_mg42_lafette"
 msgid "<c(c3baae)>Heavy MG</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 기관총</c>"
 
 msgctxt "desc/entity/nbfz"
 msgid "Pz.Kpfw Nb.Fz"
-msgstr ""
+msgstr "Pz.Kpfw Nb.Fz"
 
 msgctxt "info/special/nbfz"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/pz6p_Panzerbefehiswagen"
 msgid "VK 45.01 (P)"
-msgstr ""
+msgstr "VK 45.01 (P)"
 
 msgctxt "info/special/pz6p_Panzerbefehiswagen"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/vk_4501_p"
 msgid "VK 45.01 P"
-msgstr ""
+msgstr "VK 45.01 P"
 
 msgctxt "info/special/vk_4501_p"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/pzbefwgvi_p"
 msgid "Pz.Bfw VI P"
-msgstr ""
+msgstr "Pz.Bfw VI P"
 
 msgctxt "info/special/pzbefwgvi_p"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/pz6p_Panzerbefehiswagen_commander"
 msgid "Pz.Bfw VI P"
-msgstr ""
+msgstr "Pz.Bfw VI P"
 
 msgctxt "info/special/pz6p_Panzerbefehiswagen_commander"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/blitz3_6_art_ammo_beutpanzer"
 msgid "Opel Blitz (Captured Supply)"
-msgstr ""
+msgstr "Opel Blitz (노획 보급)"
 
 msgctxt "info/special/blitz3_6_art_ammo_beutpanzer"
 msgid "<c(c3baae)>Ammo Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>탄약 트럭</c>"
 
 msgctxt "desc/entity/88mm-raketenwerfer43"
 msgid "8.8cm Raketenwerfer 43"
-msgstr ""
+msgstr "8.8cm Raketenwerfer 43"
 
 msgctxt "info/special/88mm-raketenwerfer43"
 msgid "<c(c3baae)>Rocket AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 대전차포</c>"
 
 msgctxt "desc/entity/sdkfz221_spzb41"
 msgid "Sd.Kfz 221 (2.8cm)"
-msgstr ""
+msgstr "Sd.Kfz 221 (2.8cm)"
 
 msgctxt "info/special/sdkfz221_spzb41"
 msgid "<c(c3baae)>Armored AT Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑 대전차 차량</c>"
 
 msgctxt "desc/entity/sdkfz251c_stuka"
 msgid "Sd.Kfz 251/1 (Wurfrahmen 40)"
-msgstr ""
+msgstr "Sd.Kfz 251/1 (Wurfrahmen 40)"
 
 msgctxt "info/special/sdkfz251c_stuka"
 msgid "<c(c3baae)>Rocket Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓포</c>"
 
 msgctxt "desc/entity/geschuetzwagen_ivb"
 msgid "Heuschrecke 10"
-msgstr ""
+msgstr "Heuschrecke 10"
 
 msgctxt "info/special/geschuetzwagen_ivb"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/dicker_max"
 msgid "Dicker Max"
-msgstr ""
+msgstr "Dicker Max"
 
 msgctxt "info/special/dicker_max"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/kv2_754r"
 msgid "Pz.Kpfw 754(r) 'KW-II'"
-msgstr ""
+msgstr "Pz.Kpfw 754(r) 'KW-II'"
 
 msgctxt "info/special/kv2_754r"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/sturer_emil"
 msgid "Sturer Emil"
-msgstr ""
+msgstr "Sturer Emil"
 
 msgctxt "info/special/sturer_emil"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/tiger_p"
 msgid "Pz.Kpfw VI P"
-msgstr ""
+msgstr "Pz.Kpfw VI P"
 
 msgctxt "info/special/tiger_p_commander"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/tiger_p_commander"
 msgid "Pz.Bef.Wg VI P"
-msgstr ""
+msgstr "Pz.Bef.Wg VI P"
 
 msgctxt "info/special/tiger_p"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/elefant"
 msgid "Panzerjäger Tiger (P) 'Elefant'"
-msgstr ""
+msgstr "Panzerjäger Tiger (P) 'Elefant'"
 
 msgctxt "info/special/elefant"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/pzkpfw_6_ausf_b_tiger_sla16"
 msgid "Pz.Kpfw Tiger II Ausf.B (Sla. 16)"
-msgstr ""
+msgstr "Pz.Kpfw Tiger II Ausf.B (Sla. 16)"
 
 msgctxt "info/special/pzkpfw_6_ausf_b_tiger_sla16"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/pz6bh_105mm"
 msgid "Pz.Kpfw Tiger II Ausf.B (KwK 10.5cm)"
-msgstr ""
+msgstr "Pz.Kpfw Tiger II Ausf.B (KwK 10.5cm)"
 
 msgctxt "info/special/pz6bh_105mm"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/wanze"
 msgid "Borgward IV Panzerjäger Wanze"
-msgstr ""
+msgstr "Borgward IV Panzerjäger Wanze"
 
 msgctxt "info/special/wanze"
 msgid "<c(c3baae)>Anti-Tank Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>대전차 차량</c>"
 
 msgctxt "desc/entity/wanze_ammo"
 msgid "Borgward IV (Ammo Carrier)"
-msgstr ""
+msgstr "Borgward IV (탄약 운반차)"
 
 msgctxt "info/special/wanze_demo_radio"
 msgid "<c(c3baae)>Demolition Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>폭파 차량</c>"
 
 msgctxt "desc/entity/wanze_demo_radio"
 msgid "Borgward IV (Demolition)"
-msgstr ""
+msgstr "Borgward IV (폭파)"
 
 msgctxt "info/special/wanze_demo"
 msgid "<c(c3baae)>Demolition Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>폭파 차량</c>"
 
 msgctxt "desc/entity/wanze_charge_ammo_radio"
 msgid "Demolition Charge"
-msgstr ""
+msgstr "폭파 장약"
 
 msgctxt "info/special/wanze_charge_ammo_radio"
 msgid "<c(c3baae)>Explosive</c>"
-msgstr ""
+msgstr "<c(c3baae)>폭약</c>"
 
 msgctxt "info/special/sdkfz301wanze"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "info/special/wanze_demo"
 msgid "<c(c3baae)>Demolition Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>폭파 차량</c>"
 
 msgctxt "info/special/sdkfz301wanze"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/marder_1fcm_36"
 msgid "Geschützwagen FCM(f)"
-msgstr ""
+msgstr "Geschützwagen FCM(f)"
 
 msgctxt "info/special/marder_1fcm_36"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/pzkpfw_8_maus"
 msgid "Pz.Kpfw VIII Maus"
-msgstr ""
+msgstr "Pz.Kpfw VIII Maus"
 
 msgctxt "info/special/pzkpfw_8_maus"
 msgid "<c(c3baae)>Super-Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/flakpanzer1a"
 msgid "Flakpanzer I"
-msgstr ""
+msgstr "Flakpanzer I"
 
 msgctxt "info/special/flakpanzer1a"
 msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대공포</c>"
 
 msgctxt "desc/entity/Pzkpfw_2hVK903"
 msgid "Pz.Sfl.Ic"
-msgstr ""
+msgstr "Pz.Sfl.Ic"
 
 msgctxt "info/special/Pzkpfw_2hVK903"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/panther_ii_turm"
 msgid "Pz.Kpfw Panther II (Schmale Blende)"
-msgstr ""
+msgstr "Pz.Kpfw Panther II (Schmale Blende)"
 
 msgctxt "info/special/panther_ii_turm"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/panther_ii_88"
 msgid "Pz.Kpfw Ausf. F (8.8cm KwK 43 L/71)"
-msgstr ""
+msgstr "Pz.Kpfw Ausf. F (8.8cm KwK 43 L/71)"
 
 msgctxt "info/special/panther_ii_88"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/panther_ii"
 msgid "Pz.Kpfw Panther II"
-msgstr ""
+msgstr "Pz.Kpfw Panther II"
 
 msgctxt "info/special/panther_ii"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m4a4_firefly_ger"
 msgid "Pz.Kpfw 748(a) 'Firefly'"
-msgstr ""
+msgstr "Pz.Kpfw 748(a) 'Firefly'"
 
 msgctxt "info/special/m4a4_firefly_ger"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/jagdpanzer_iv_a"
 msgid "Panzer IV/70(A)"
-msgstr ""
+msgstr "Panzer IV/70(A)"
 
 msgctxt "info/special/jagdpanzer_iv_a"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/jagdpanzer_iv_a_armor"
 msgid "Panzer IV/70(A) (Late)"
-msgstr ""
+msgstr "Panzer IV/70(A) (후기)"
 
 msgctxt "info/special/jagdpanzer_iv_a_armor"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/bison2"
 msgid "Sturmpanzer II"
-msgstr ""
+msgstr "Sturmpanzer II"
 
 msgctxt "info/special/bison2"
 msgid "<c(c3baae)>Heavy Assault Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 돌격포</c>"
 
 msgctxt "desc/entity/sherman5c_ger"
 msgid "Pz.Kpfw M4A4 748(e) 'Firefly'"
-msgstr ""
+msgstr "Pz.Kpfw M4A4 748(e) 'Firefly'"
 
 msgctxt "info/special/sherman5c_ger"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e_100a"
 msgid "E-100 Blueprint"
-msgstr ""
+msgstr "E-100 Blueprint"
 
 msgctxt "info/special/e_100a"
 msgid "<c(c3baae)>Super-Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/e_100b"
 msgid "Pz.Kpfw Tiger-Maus"
-msgstr ""
+msgstr "Pz.Kpfw Tiger-Maus"
 
 msgctxt "info/special/e_100b"
 msgid "<c(c3baae)>Super-Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "info/special/coelian_ii"
 msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대공포</c>"
 
 msgctxt "desc/entity/coelian_ii"
 msgid "FlakPz.V Mammut"
-msgstr ""
+msgstr "FlakPz.V Mammut"
 
 msgctxt "info/special/coelian_i"
 msgid "<c(c3baae)>Self-Propelled Anti-Aircraft Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대공포</c>"
 
 msgctxt "desc/entity/coelian_i"
 msgid "FlakPz.V Coelian"
-msgstr ""
+msgstr "FlakPz.V Coelian"
 
 msgctxt "desc/entity/bergetiger"
 msgid "Bergetiger"
-msgstr ""
+msgstr "Bergetiger"
 
 msgctxt "info/special/bergetiger"
 msgid "<c(c3baae)>Armored Recovery Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑 구난차</c>"
 
 msgctxt "desc/entity/bergepanther"
 msgid "Bergepanther"
-msgstr ""
+msgstr "Bergepanther"
 
 msgctxt "info/special/bergepanther"
 msgid "<c(c3baae)>Armored Recovery Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑 구난차</c>"
 
 msgctxt "info/special/ezart"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ezart"
 msgid "Ersatz M10"
-msgstr ""
+msgstr "Ersatz M10"
 
 msgctxt "desc/entity/us_m22"
 msgid "M22"
-msgstr ""
+msgstr "M22"
 
 msgctxt "desc/entity/inf_crate_little_david"
 msgid "Little David Ammo Crate"
-msgstr ""
+msgstr "리틀 데이비드 탄약 상자"
 
 msgctxt "info/special/inf_crate_little_david"
 msgid "<c(c3baae)>Supply</c>"
-msgstr ""
+msgstr "<c(c3baae)>보급품</c>"
 
 msgctxt "desc/entity/little_david"
 msgid "36-Inch Little David"
-msgstr ""
+msgstr "36인치 리틀 데이비드"
 
 msgctxt "info/special/little_david"
 msgid "<c(c3baae)>Siege Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>공성 박격포</c>"
 
 msgctxt "info/special/churchill_crocodile"
 msgid "<c(c3baae)>Heavy Flame Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 화염 전차</c>"
 
 msgctxt "desc/entity/churchill_crocodile"
 msgid "Churchill Crocodile"
-msgstr ""
+msgstr "Churchill Crocodile"
 
 msgctxt "info/special/churchill_crocodile_trailer"
 msgid "<c(c3baae)>Trailer</c>"
-msgstr ""
+msgstr "<c(c3baae)>트레일러</c>"
 
 msgctxt "desc/entity/churchill_crocodile_trailer"
 msgid "Fuel Trailer"
-msgstr ""
+msgstr "연료 트레일러"
 
 msgctxt "desc/entity/tiz_am600"
 msgid "Harley-Davidson WLA"
-msgstr ""
+msgstr "Harley-Davidson WLA"
 
 msgctxt "info/special/willys_jeep_medical"
 msgid "<c(c3baae)>Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송차</c>"
 
 msgctxt "desc/entity/willys_jeep_medical"
 msgid "Willys MB (Medic)"
-msgstr ""
+msgstr "Willys MB (위생)"
 
 msgctxt "info/special/us_xylophone"
 msgid "<c(c3baae)>Rocket artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓포</c>"
 
 msgctxt "desc/entity/us_xylophone"
 msgid "GMC (114mm M8)"
-msgstr ""
+msgstr "GMC (114mm M8)"
 
 msgctxt "info/special/us_m3_stuart"
 msgid "<c(c3baae)>Light tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/us_m3_stuart"
 msgid "M3 Stuart"
-msgstr ""
+msgstr "M3 Stuart"
 
 msgctxt "info/special/us_m2a2"
 msgid "<c(c3baae)>Light tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/us_m2a2"
 msgid "M2A2"
-msgstr ""
+msgstr "M2A2"
 
 msgctxt "info/special/us_m6a2e1"
 msgid "<c(c3baae)>Heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_m6a2e1"
 msgid "M6A2E1"
-msgstr ""
+msgstr "M6A2E1"
 
 msgctxt "info/special/us_t30"
 msgid "<c(c3baae)>Heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_t30"
 msgid "T30"
-msgstr ""
+msgstr "T30"
 
 msgctxt "info/special/us_t29"
 msgid "<c(c3baae)>Heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_t29"
 msgid "T29"
-msgstr ""
+msgstr "T29"
 
 msgctxt "info/special/us_t34"
 msgid "<c(c3baae)>Heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_t34"
 msgid "T34"
-msgstr ""
+msgstr "T34"
 
 msgctxt "info/special/us_t32e1"
 msgid "<c(c3baae)>Heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_t32e1"
 msgid "T32E1"
-msgstr ""
+msgstr "T32E1"
 
 msgctxt "info/special/us_t18e2"
 msgid "<c(c3baae)>Armored car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/us_t18e2"
 msgid "T18E2"
-msgstr ""
+msgstr "T18E2"
 
 msgctxt "info/special/us_t95"
 msgid "<c(c3baae)>Super heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/us_t95"
 msgid "T95 GMC"
-msgstr ""
+msgstr "T95 GMC"
 
 msgctxt "info/special/m2_medium"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m2_medium"
 msgid "M2"
-msgstr ""
+msgstr "M2"
 
 msgctxt "info/special/m2a1_medium"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m2a1_medium"
 msgid "M2A1"
-msgstr ""
+msgstr "M2A1"
 
 msgctxt "info/special/m2e1_medium_flamm"
 msgid "<c(c3baae)>Medium Flame Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 화염 전차</c>"
 
 msgctxt "desc/entity/m2e1_medium_flamm"
 msgid "M2E1"
-msgstr ""
+msgstr "M2E1"
 
 msgctxt "info/special/us_m3_recovery"
 msgid "<c(c3baae)>Armored recovery vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑 구난차</c>"
 
 msgctxt "desc/entity/us_m3_recovery"
 msgid "M31 ARV"
-msgstr ""
+msgstr "M31 ARV"
 
 msgctxt "info/special/us_m4_improved"
 msgid "<c(c3baae)>Medium tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/us_m4_improved"
 msgid "M4 Improved"
-msgstr ""
+msgstr "M4 Improved"
 
 msgctxt "info/special/us_m4_t34"
 msgid "<c(c3baae)>Medium tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/us_m4_t34"
 msgid "M4 (T34)"
-msgstr ""
+msgstr "M4 (T34)"
 
 msgctxt "info/special/us_m4a3e2_cobraking"
 msgid "<c(c3baae)>Heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_m4a3e2_cobraking"
 msgid "M4A3E2 'Cobra King'"
-msgstr ""
+msgstr "M4A3E2 'Cobra King'"
 
 msgctxt "info/special/us_m4a3e8"
 msgid "<c(c3baae)>Medium tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/us_m4a3e8"
 msgid "M4A3E8"
-msgstr ""
+msgstr "M4A3E8"
 
 msgctxt "info/special/us_m4a3e8_fury"
 msgid "<c(c3baae)>Medium tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/us_m4a3e8_fury"
 msgid "M4A3E8 'Fury'"
-msgstr ""
+msgstr "M4A3E8 'Fury'"
 
 msgctxt "info/special/us_m4a3e8_thundervii"
 msgid "<c(c3baae)>Medium tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/us_m4a3e8_thundervii"
 msgid "M4A3E8 'Thunderbolt VII'"
-msgstr ""
+msgstr "M4A3E8 'Thunderbolt VII'"
 
 msgctxt "info/special/us_m4a3r3_zippo"
 msgid "<c(c3baae)>Flame tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>화염 전차</c>"
 
 msgctxt "desc/entity/us_m4a3r3_zippo"
 msgid "M4A3R3 'Zippo'"
-msgstr ""
+msgstr "M4A3R3 'Zippo'"
 
 msgctxt "info/special/us_m8a1"
 msgid "<c(c3baae)>Gun Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/us_m8a1"
 msgid "M8A1 GMC"
-msgstr ""
+msgstr "M8A1 GMC"
 
 msgctxt "info/special/us_m10a1"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/us_m10a1"
 msgid "M10A1 GMC"
-msgstr ""
+msgstr "M10A1 GMC"
 
 msgctxt "info/special/us_m18_90"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/us_m18_90"
 msgid "90mm M18 GMC"
-msgstr ""
+msgstr "90mm M18 GMC"
 
 msgctxt "info/special/us_m18_blackcat"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/us_m18_blackcat"
 msgid "M18 GMC 'Black Cat'"
-msgstr ""
+msgstr "M18 GMC 'Black Cat'"
 
 msgctxt "info/special/us_m36b2"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/us_m36b2"
 msgid "90mm GMC M36B2"
-msgstr ""
+msgstr "90mm GMC M36B2"
 
 msgctxt "info/special/us_t95_gen2"
 msgid "<c(c3baae)>Gun Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/us_t95_gen2"
 msgid "T28"
-msgstr ""
+msgstr "T28"
 
 msgctxt "info/special/m26e1_pershing"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/m26e1_pershing"
 msgid "M26E1 Pershing"
-msgstr ""
+msgstr "M26E1 Pershing"
 
 msgctxt "info/special/m26_pershing_concrete"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/m26_pershing_concrete"
 msgid "M26 Pershing 'Field Mod'"
-msgstr ""
+msgstr "M26 Pershing 'Field Mod'"
 
 msgctxt "info/special/m26_t99_pershing"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/m26_t99_pershing"
 msgid "M26 Pershing 'T99'"
-msgstr ""
+msgstr "M26 Pershing 'T99'"
 
 msgctxt "info/special/us_lvtm24"
 msgid "<c(c3baae)>Amphibious Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용차</c>"
 
 msgctxt "desc/entity/us_lvtm24"
 msgid "LVT-M24"
-msgstr ""
+msgstr "LVT-M24"
 
 msgctxt "info/special/us_lvta4"
 msgid "<c(c3baae)>Amphibious Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용차</c>"
 
 msgctxt "desc/entity/us_lvta4"
 msgid "LVT(A)-4"
-msgstr ""
+msgstr "LVT(A)-4"
 
 msgctxt "info/special/us_lvta1"
 msgid "<c(c3baae)>Amphibious Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용차</c>"
 
 msgctxt "desc/entity/us_lvta1"
 msgid "LVT(A)-1"
-msgstr ""
+msgstr "LVT(A)-1"
 
 msgctxt "info/special/us_m24"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/us_m24"
 msgid "M24"
-msgstr ""
+msgstr "M24"
 
 msgctxt "info/special/us_m19"
 msgid "<c(c3baae)>Multiple Gun Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>다연장 자주포</c>"
 
 msgctxt "desc/entity/us_m19"
 msgid "M19A1 MGMC"
-msgstr ""
+msgstr "M19A1 MGMC"
 
 msgctxt "info/special/us_t69"
 msgid "<c(c3baae)>Multiple Gun Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>다연장 자주포</c>"
 
 msgctxt "desc/entity/us_t69"
 msgid "T69 MGMC"
-msgstr ""
+msgstr "T69 MGMC"
 
 msgctxt "desc/entity/tri-polsten_20mm"
 msgid "Polsten Triple Gun"
-msgstr ""
+msgstr "Polsten Triple Gun"
 
 msgctxt "info/special/tri-polsten_20mm"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "info/special/us_m6a1"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/us_m6a1"
 msgid "M6A1"
-msgstr ""
+msgstr "M6A1"
 
 msgctxt "desc/entity/gmc_ammo"
 msgid "GMC CCKW (Supply)"
-msgstr ""
+msgstr "GMC CCKW (보급)"
 
 msgctxt "info/special/gmc_ammo"
 msgid "<c(c3baae)>Supply Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>보급 트럭</c>"
 
 msgctxt "desc/entity/gmc_fuel"
 msgid "GMC CCKW (Fuel)"
-msgstr ""
+msgstr "GMC CCKW (연료)"
 
 msgctxt "info/special/gmc_fuel"
 msgid "<c(c3baae)>Fuel Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>연료 트럭</c>"
 
 msgctxt "desc/entity/gmc_transport"
 msgid "GMC CCKW (Transport)"
-msgstr ""
+msgstr "GMC CCKW (수송)"
 
 msgctxt "info/special/gmc_transport"
 msgid "<c(c3baae)>Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송차</c>"
 
 msgctxt "desc/entity/gmc_engineer"
 msgid "GMC CCKW (Engineer)"
-msgstr ""
+msgstr "GMC CCKW (공병)"
 
 msgctxt "info/special/gmc_engineer"
 msgid "<c(c3baae)>Engineering Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>공병 수송차</c>"
 
 msgctxt "desc/entity/stud_ammo"
 msgid "Studebaker US6 (Supply)"
-msgstr ""
+msgstr "Studebaker US6 (보급)"
 
 msgctxt "info/special/stud_ammo"
 msgid "<c(c3baae)>Supply Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>보급 트럭</c>"
 
 msgctxt "desc/entity/stud_fuel"
 msgid "Studebaker US6 (Fuel)"
-msgstr ""
+msgstr "Studebaker US6 (연료)"
 
 msgctxt "info/special/stud_fuel"
 msgid "<c(c3baae)>Fuel Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>연료 트럭</c>"
 
 msgctxt "desc/entity/stud_transport"
 msgid "Studebaker US6 (Transport)"
-msgstr ""
+msgstr "Studebaker US6 (수송)"
 
 msgctxt "info/special/stud_transport"
 msgid "<c(c3baae)>Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송차</c>"
 
 msgctxt "desc/entity/stud_engineer"
 msgid "Studebaker US6 (Engineer)"
-msgstr ""
+msgstr "Studebaker US6 (공병)"
 
 msgctxt "info/special/stud_engineer"
 msgid "<c(c3baae)>Engineering Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>공병 수송차</c>"
 
 msgctxt "desc/entity/is_3"
 msgid "IS-3"
-msgstr ""
+msgstr "IS-3"
 
 msgctxt "info/special/is_3"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is_4"
 msgid "IS-4"
-msgstr ""
+msgstr "IS-4"
 
 msgctxt "info/special/is_4"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is_4m"
 msgid "IS-4M"
-msgstr ""
+msgstr "IS-4M"
 
 msgctxt "info/special/is_4m"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is_6"
 msgid "IS-6"
-msgstr ""
+msgstr "IS-6"
 
 msgctxt "info/special/is_6"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is_7"
 msgid "IS-7"
-msgstr ""
+msgstr "IS-7"
 
 msgctxt "info/special/is_7"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv122"
 msgid "KV-122"
-msgstr ""
+msgstr "KV-122"
 
 msgctxt "info/special/kv122"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv_220"
 msgid "KV-220"
-msgstr ""
+msgstr "KV-220"
 
 msgctxt "info/special/kv_220"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv220"
 msgid "KV-220-2"
-msgstr ""
+msgstr "KV-220-2"
 
 msgctxt "info/special/kv220"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv2_zis6"
 msgid "KV-2 (ZiS-6)"
-msgstr ""
+msgstr "KV-2 (ZiS-6)"
 
 msgctxt "info/special/kv2_zis6"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv4b"
 msgid "KV-4B"
-msgstr ""
+msgstr "KV-4B"
 
 msgctxt "info/special/kv4b"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv5"
 msgid "KV-5"
-msgstr ""
+msgstr "KV-5"
 
 msgctxt "info/special/kv5"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/matilda_f96"
 msgid "MK-II"
-msgstr ""
+msgstr "MK-II"
 
 msgctxt "info/special/kv5"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/bm8_24"
 msgid "BM-8-24"
-msgstr ""
+msgstr "BM-8-24"
 
 msgctxt "info/special/bm8_24"
 msgid "<c(c3baae)>Light Rocket Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경형 로켓 전차</c>"
 
 msgctxt "desc/entity/rbt_5"
 msgid "RBT-5"
-msgstr ""
+msgstr "RBT-5"
 
 msgctxt "info/special/rbt_5"
 msgid "<c(c3baae)>Light Rocket Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경형 로켓 전차</c>"
 
 msgctxt "desc/entity/su14_2"
 msgid "SU-14-1"
-msgstr ""
+msgstr "SU-14-1"
 
 msgctxt "info/special/su14_2"
 msgid "<c(c3baae)>Self-Propelled Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/t50e"
 msgid "T-50 (Up-Armored)"
-msgstr ""
+msgstr "T-50 (장갑 강화)"
 
 msgctxt "info/special/t50e"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/t70_45"
 msgid "T-70 VT-42"
-msgstr ""
+msgstr "T-70 VT-42"
 
 msgctxt "info/special/t70_45"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/zsu_37"
 msgid "ZSU-37"
-msgstr ""
+msgstr "ZSU-37"
 
 msgctxt "info/special/zsu_37"
 msgid "<c(c3baae)>Light AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공 전차</c>"
 
 msgctxt "desc/entity/zut_37"
 msgid "ZUT-37"
-msgstr ""
+msgstr "ZUT-37"
 
 msgctxt "info/special/zut_37"
 msgid "<c(c3baae)>Light AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공 전차</c>"
 
 msgctxt "desc/entity/su122_2"
 msgid "SU-122"
-msgstr ""
+msgstr "SU-122"
 
 msgctxt "info/special/su122_2"
 msgid "<c(c3baae)>Self-Propelled Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/t44"
 msgid "T-44"
-msgstr ""
+msgstr "T-44"
 
 msgctxt "info/special/t44"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t28_40"
 msgid "T-28 M1940"
-msgstr ""
+msgstr "T-28 M1940"
 
 msgctxt "info/special/t28_40"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t28_85"
 msgid "T-28 (F-30)"
-msgstr ""
+msgstr "T-28 (F-30)"
 
 msgctxt "info/special/t28_85"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t29"
 msgid "T-29"
-msgstr ""
+msgstr "T-29"
 
 msgctxt "info/special/t29"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t34_100"
 msgid "T-34-100"
-msgstr ""
+msgstr "T-34-100"
 
 msgctxt "info/special/t34_100"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t44_122"
 msgid "T-44-122"
-msgstr ""
+msgstr "T-44-122"
 
 msgctxt "info/special/t44_122"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ussr_m3_medium"
 msgid "M3 Lee"
-msgstr ""
+msgstr "M3 Lee"
 
 msgctxt "info/special/ussr_m3_medium"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t18_hmc"
 msgid "T18"
-msgstr ""
+msgstr "T18"
 
 msgctxt "info/special/t18_hmc"
 msgid "<c(c3baae)>Self-Propelled Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/t7_combat_car"
 msgid "Combat Car T7"
-msgstr ""
+msgstr "Combat Car T7"
 
 msgctxt "info/special/t7_combat_car"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/us_t55e1"
 msgid "T55E1"
-msgstr ""
+msgstr "T55E1"
 
 msgctxt "info/special/us_t55e1"
 msgid "<c(c3baae)>Gun Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/morser_16"
 msgid "210 H/17"
-msgstr ""
+msgstr "210 H/17"
 
 msgctxt "info/special/morser_16"
 msgid "<c(c3baae)>Heavy Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중포</c>"
 
 msgctxt "desc/entity/pak_44"
 msgid "12.8 cm PaK 44"
-msgstr ""
+msgstr "12.8 cm PaK 44"
 
 msgctxt "info/special/pak_44"
 msgid "<c(c3baae)>Super-Heavy AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 대전차포</c>"
 
 msgctxt "desc/entity/t8_105mm_at_gun"
 msgid "105mm Gun T8"
-msgstr ""
+msgstr "105mm Gun T8"
 
 msgctxt "info/special/t8_105mm_at_gun"
 msgid "<c(c3baae)>Heavy AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 대전차포</c>"
 
 msgctxt "desc/entity/gaz_su12"
 msgid "GAZ-AAA SU-12"
-msgstr ""
+msgstr "GAZ-AAA SU-12"
 
 msgctxt "info/special/gaz_su12"
 msgid "<c(c3baae)>Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>트럭</c>"
 
 msgctxt "desc/entity/zsu_29k"
 msgid "YaG-10 (29-K)"
-msgstr ""
+msgstr "YaG-10 (29-K)"
 
 msgctxt "info/special/zsu_29k"
 msgid "<c(c3baae)>Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>트럭</c>"
 
 msgctxt "desc/entity/sdkfz251_22"
 msgid "Sd.Kfz.251/22"
-msgstr ""
+msgstr "Sd.Kfz.251/22"
 
 msgctxt "info/special/sdkfz251_22"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/sdkfz_251_21"
 msgid "Sd.Kfz.251/10"
-msgstr ""
+msgstr "Sd.Kfz.251/10"
 
 msgctxt "info/special/sdkfz_251_21"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/sdkfz_251_10"
 msgid "Sd.Kfz.251/21"
-msgstr ""
+msgstr "Sd.Kfz.251/21"
 
 msgctxt "info/special/sdkfz_251_10"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/sdkfz_251_9"
 msgid "Sd.Kfz.251/9"
-msgstr ""
+msgstr "Sd.Kfz.251/9"
 
 msgctxt "info/special/sdkfz_251_9"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/pz2j"
 msgid "Pz.Kpfw. II Ausf. J"
-msgstr ""
+msgstr "Pz.Kpfw. II Ausf. J"
 
 msgctxt "info/special/pz2j"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/pz38tna"
 msgid "Pz.Kpfw. 38 (t) n.A."
-msgstr ""
+msgstr "Pz.Kpfw. 38 (t) n.A."
 
 msgctxt "info/special/pz38tna"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/pz38tna_b"
 msgid "Pz.Kpfw. 38 (t) n.A."
-msgstr ""
+msgstr "Pz.Kpfw. 38 (t) n.A."
 
 msgctxt "info/special/pz38tna_b"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/flpz_v_coelian"
 msgid "Flakpanzer 341"
-msgstr ""
+msgstr "Flakpanzer 341"
 
 msgctxt "info/special/flpz_v_coelian"
 msgid "<c(c3baae)>Medium AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공 전차</c>"
 
 msgctxt "desc/entity/m1a2_test"
 msgid "M1A2 SEP TUSK I"
-msgstr ""
+msgstr "M1A2 SEP TUSK I"
 
 msgctxt "info/special/m1a2_test"
 msgid "<c(c3baae)>Main Battle Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>주력 전차</c>"
 
 msgctxt "info/special/willys_jeep_shield_rocket"
 msgid "<c(c3baae)>Transport</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송차</c>"
 
 msgctxt "desc/entity/willys_jeep_shield_rocket"
 msgid "Willys MB (Bazooka M1A1)"
-msgstr ""
+msgstr "Willys MB (Bazooka M1A1)"
 
 msgctxt "info/special/vk_3002"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/vk_3002"
 msgid "VK 3002"
-msgstr ""
+msgstr "VK 3002"
 
 msgctxt "info/special/waffletractor"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/waffletractor"
 msgid "Krupp-Steyr Waffenträger"
-msgstr ""
+msgstr "Krupp-Steyr Waffenträger"
 
 msgctxt "info/special/t_vi_100_ussr"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/t_vi_100_ussr"
 msgid "T-VI-100"
-msgstr ""
+msgstr "T-VI-100"
 
 msgctxt "info/special/t_vi_100"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/t_vi_100"
 msgid "T-VI"
-msgstr ""
+msgstr "T-VI"
 
 msgctxt "info/special/t_v_85"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t_v_85"
 msgid "T-V-85"
-msgstr ""
+msgstr "T-V-85"
 
 msgctxt "info/special/t_v"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t_v"
 msgid "T-V"
-msgstr ""
+msgstr "T-V"
 
 msgctxt "info/special/t_14_uk"
 msgid "<c(c3baae)>Assault Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>돌격 전차</c>"
 
 msgctxt "desc/entity/t_14_uk"
 msgid "T14 (57mm)"
-msgstr ""
+msgstr "T14 (57mm)"
 
 msgctxt "info/special/t_14"
 msgid "<c(c3baae)>Assault Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>돌격 전차</c>"
 
 msgctxt "desc/entity/t_14"
 msgid "T14 (75mm)"
-msgstr ""
+msgstr "T14 (75mm)"
 
 msgctxt "info/special/stormpjas_fm_43"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/stormpjas_fm_43"
 msgid "Spj fm/43-44"
-msgstr ""
+msgstr "Spj fm/43-44"
 
 msgctxt "info/special/smk_dshk"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/smk_dshk"
 msgid "SMK (12.7mm DShK)"
-msgstr ""
+msgstr "SMK (12.7mm DShK)"
 
 msgctxt "info/special/pbil_m40"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/pbil_m40"
 msgid "Pbil m/40"
-msgstr ""
+msgstr "Pbil m/40"
 
 msgctxt "info/special/lvtdgb_m40"
 msgid "<c(c3baae)>AA Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공 트럭</c>"
 
 msgctxt "desc/entity/lvtdgb_m40"
 msgid "Lvtdgb m/40"
-msgstr ""
+msgstr "Lvtdgb m/40"
 
 msgctxt "info/special/ksp_76"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/ksp_76"
 msgid "KSP-76"
-msgstr ""
+msgstr "KSP-76"
 
 msgctxt "info/special/d1"
 msgid "<c(c3baae)>Heavy Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중포</c>"
 
 msgctxt "desc/entity/d1"
 msgid "152mm D1 M1943"
-msgstr ""
+msgstr "152mm D1 M1943"
 
 msgctxt "info/special/d-44"
 msgid "<c(c3baae)>Heavy AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 대전차포</c>"
 
 msgctxt "desc/entity/d-44"
 msgid "85mm Divisional Gun D-44"
-msgstr ""
+msgstr "85mm Divisional Gun D-44"
 
 msgctxt "info/special/comet"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/comet"
 msgid "Comet I"
-msgstr ""
+msgstr "Comet I"
 
 msgctxt "info/special/88_itk_37"
 msgid "<c(c3baae)>Heavy AA cannon</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/88_itk_37"
 msgid "88 Itk/37"
-msgstr ""
+msgstr "88 Itk/37"
 
 msgctxt "info/special/37_itk_37"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/37_itk_37"
 msgid "37 Itk/37"
-msgstr ""
+msgstr "37 Itk/37"
 
 msgctxt "info/special/300mm_krh42"
 msgid "<c(c3baae)>Super Heavy Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중형 박격포</c>"
 
 msgctxt "desc/entity/300mm_krh42"
 msgid "300 Krh/42"
-msgstr ""
+msgstr "300 Krh/42"
 
 msgctxt "info/special/280mm_rakh43"
 msgid "<c(c3baae)>Rocket Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓포</c>"
 
 msgctxt "desc/entity/280mm_rakh43"
 msgid "280 Rkh/43"
-msgstr ""
+msgstr "280 Rkh/43"
 
 msgctxt "info/special/25mm_apx_model38"
 msgid "<c(c3baae)>Light AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대전차포</c>"
 
 msgctxt "desc/entity/25mm_apx_model38"
 msgid "25 PstK/37"
-msgstr ""
+msgstr "25 PstK/37"
 
 msgctxt "info/special/20_itk_38"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/20_itk_38"
 msgid "20 Itk/38"
-msgstr ""
+msgstr "20 Itk/38"
 
 msgctxt "info/special/20_itk_30"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/20_itk_30"
 msgid "20 Itk/30"
-msgstr ""
+msgstr "20 Itk/30"
 
 msgctxt "info/special/panther_f"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/panther_f"
 msgid "Pz.Kpfw Panther Ausf. F"
-msgstr ""
+msgstr "Pz.Kpfw Panther Ausf. F"
 
 msgctxt "info/special/sav_m43_1944"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/sav_m43_1944"
 msgid "Sav m/43-44"
-msgstr ""
+msgstr "Sav m/43-44"
 
 msgctxt "info/special/sav_m43_1946"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/sav_m43_1946"
 msgid "Sav m/43-46"
-msgstr ""
+msgstr "Sav m/43-46"
 
 msgctxt "info/special/37mm_m1915_trench_gun_fin"
 msgid "<c(c3baae)>Trench Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>참호포</c>"
 
 msgctxt "desc/entity/37mm_m1915_trench_gun_fin"
 msgid "37 K/15"
-msgstr ""
+msgstr "37 K/15"
 
 msgctxt "info/special/37mm_m1915_trench_gun"
 msgid "<c(c3baae)>Trench Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>참호포</c>"
 
 msgctxt "desc/entity/37mm_m1915_trench_gun"
 msgid "37mm Trench Gun M1915"
-msgstr ""
+msgstr "37mm Trench Gun M1915"
 
 msgctxt "info/special/char_2c"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/char_2c"
 msgid "Char 2C"
-msgstr ""
+msgstr "Char 2C"
 
 msgctxt "info/special/char_2c_armored"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/char_2c_armored"
 msgid "Char 2C 'Field Mod'"
-msgstr ""
+msgstr "Char 2C '야전 개조'"
 
 msgctxt "info/special/char_2c_bis"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/char_2c_bis"
 msgid "Char 2C Bis"
-msgstr ""
+msgstr "Char 2C Bis"
 
 msgctxt "info/special/char_2c_bis_armored"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/char_2c_bis_armored"
 msgid "Char 2C Bis 'Field Mod'"
-msgstr ""
+msgstr "Char 2C Bis '야전 개조'"
 
 msgctxt "info/special/b1_ter"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/b1_ter"
 msgid "Char B1 Ter"
-msgstr ""
+msgstr "Char B1 Ter"
 
 msgctxt "info/special/d2"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/d2"
 msgid "Char D2"
-msgstr ""
+msgstr "Char D2"
 
 msgctxt "info/special/p204_f_fra"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/p204_f_fra"
 msgid "AMD.35"
-msgstr ""
+msgstr "AMD.35"
 
 msgctxt "info/special/panzer35s_fra"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/panzer35s_fra"
 msgid "Somua S.35"
-msgstr ""
+msgstr "Somua S.35"
 
 msgctxt "info/special/pz38h_735_fra"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/pz38h_735_fra"
 msgid "Hotchkiss H.35"
-msgstr ""
+msgstr "Hotchkiss H.35"
 
 msgctxt "info/special/flammpanzer_b2_fra"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/flammpanzer_b2_fra"
 msgid "Char B1 Bis Flamethrower (Captured)"
-msgstr ""
+msgstr "Char B1 Bis Flamethrower (Captured)"
 
 msgctxt "info/special/panzerb2_fra"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/panzerb2_fra"
 msgid "Char B1 Bis"
-msgstr ""
+msgstr "Char B1 Bis"
 
 msgctxt "info/special/arl_44_acl1"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/arl_44_acl1"
 msgid "ARL-44 (ACL-1)"
-msgstr ""
+msgstr "ARL-44 (ACL-1)"
 
 msgctxt "info/special/arl_44"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/arl_44"
 msgid "ARL-44"
-msgstr ""
+msgstr "ARL-44"
 
 msgctxt "info/special/amd35_sa35"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/amd35_sa35"
 msgid "AMD.35 (SA35)"
-msgstr ""
+msgstr "AMD.35 (SA35)"
 
 msgctxt "info/special/lorraine_37l"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/lorraine_37l"
 msgid "Lorraine 37L (47mm) 'Field Mod'"
-msgstr ""
+msgstr "Lorraine 37L (47mm) '야전 개조'"
 
 msgctxt "info/special/amc34_yr"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/amc34_yr"
 msgid "AMC.34 YR"
-msgstr ""
+msgstr "AMC.34 YR"
 
 msgctxt "info/special/daf_39"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/daf_39"
 msgid "Pz.SpW. DAF 201(h)"
-msgstr ""
+msgstr "Pz.SpW. DAF 201(h)"
 
 msgctxt "info/special/daf_39_com_old"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/daf_39_com_old"
 msgid "Pz.BfW. DAF 201(h)"
-msgstr ""
+msgstr "Pz.BfW. DAF 201(h)"
 
 msgctxt "info/special/daf_39_com"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/daf_39_com"
 msgid "Pz.BfW. DAF 201(h)"
-msgstr ""
+msgstr "Pz.BfW. DAF 201(h)"
 
 msgctxt "info/special/pbil_m40_ger"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/pbil_m40_ger"
 msgid "Pz.SpW. M39(d)"
-msgstr ""
+msgstr "Pz.SpW. M39(d)"
 
 msgctxt "info/special/pzspwg_204"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/pzspwg_204"
 msgid "Pz.SpW. P204(f) KwK"
-msgstr ""
+msgstr "Pz.SpW. P204(f) KwK"
 
 msgctxt "info/special/isu_152_2"
 msgid "<c(c3baae)>Heavy Assault Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 돌격포</c>"
 
 msgctxt "desc/entity/isu_152_2"
 msgid "ISU-152-2"
-msgstr ""
+msgstr "ISU-152-2"
 
 msgctxt "info/special/t3476_41_stz"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t3476_41_stz"
 msgid "T-34 M1941 (Up-Armored)"
-msgstr ""
+msgstr "T-34 M1941 (장갑 강화)"
 
 msgctxt "info/special/m4a1_t40"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m4a1_t40"
 msgid "M4A1 T40 'Whizbang'"
-msgstr ""
+msgstr "M4A1 T40 'Whizbang'"
 
 msgctxt "info/special/m4a1_m17"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/m4a1_m17"
 msgid "M4A1 T40 'Whizbang' (4.5-Inch M10)"
-msgstr ""
+msgstr "M4A1 T40 'Whizbang' (4.5-Inch M10)"
 
 msgctxt "info/special/solothurn_s18_100"
 msgid "<c(c3baae)>Anti-Tank Cannon</c>"
-msgstr ""
+msgstr "<c(c3baae)>대전차포</c>"
 
 msgctxt "desc/entity/solothurn_s18_100"
 msgid "Solothurn S-18/100"
-msgstr ""
+msgstr "Solothurn S-18/100"
 
 msgctxt "desc/entity/210mm_rakh42"
 msgid "210 Rkh/41"
-msgstr ""
+msgstr "210 Rkh/41"
 
 msgctxt "info/special/210mm_rakh42"
 msgid "<c(c3baae)>Rocket Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓포</c>"
 
 msgctxt "desc/entity/t_42"
 msgid "T-42 Polutankov"
-msgstr ""
+msgstr "T-42 Polutankov"
 
 msgctxt "info/special/t_42"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/t_26e"
 msgid "T-26 (Up-Armored)"
-msgstr ""
+msgstr "T-26 (장갑 강화)"
 
 msgctxt "info/special/t_26e"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/t92_hmc"
 msgid "T92 HMC"
-msgstr ""
+msgstr "T92 HMC"
 
 msgctxt "info/special/t92_hmc"
 msgid "<c(c3baae)>Howitzer Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 곡사포</c>"
 
 msgctxt "desc/entity/t93_hmc"
 msgid "8-inch GMC T93"
-msgstr ""
+msgstr "8-inch GMC T93"
 
 msgctxt "info/special/t93_hmc"
 msgid "<c(c3baae)>Gun Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/t92_hmc"
 msgid "240mm HMC T92"
-msgstr ""
+msgstr "240mm HMC T92"
 
 msgctxt "info/special/t92_hmc"
 msgid "<c(c3baae)>Howitzer Motor Carriage</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 곡사포</c>"
 
 msgctxt "desc/entity/t44a"
 msgid "T-44A"
-msgstr ""
+msgstr "T-44A"
 
 msgctxt "info/special/t44a"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/stationary_type_92_hmg_short"
 msgid "Type 92 HMG"
-msgstr ""
+msgstr "Type 92 HMG"
 
 msgctxt "info/special/stationary_type_92_hmg_short"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "desc/entity/heavy_mg_stationary_type_92_hmg_tall"
 msgid "Type 92 HMG"
-msgstr ""
+msgstr "Type 92 HMG"
 
 msgctxt "info/special/heavy_mg_stationary_type_92_hmg_tall"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "desc/entity/stationary_type_92_hmg_tall"
 msgid "Type 92 HMG"
-msgstr ""
+msgstr "Type 92 HMG"
 
 msgctxt "info/special/stationary_type_92_hmg_tall"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "desc/entity/type_10_rocket_booster"
 msgid "Type 10 Rocket Booster"
-msgstr ""
+msgstr "Type 10 Rocket Booster"
 
 msgctxt "info/special/type_10_rocket_booster"
 msgid "<c(c3baae)>Rocket Booster</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 부스터</c>"
 
 msgctxt "desc/entity/type_3_rocket_booster"
 msgid "Type 3 Rocket Booster"
-msgstr ""
+msgstr "Type 3 Rocket Booster"
 
 msgctxt "info/special/type_3_rocket_booster"
 msgid "<c(c3baae)>Rocket Booster</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 부스터</c>"
 
 msgctxt "desc/entity/100mm_type99"
 msgid "Type 99 10cm"
-msgstr ""
+msgstr "Type 99 10cm"
 
 msgctxt "info/special/100mm_type99"
 msgid "<c(c3baae)>Mountain Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>산포</c>"
 
 msgctxt "desc/entity/105mm_type_14_aa"
 msgid "Type 14 105mm AA"
-msgstr ""
+msgstr "Type 14 105mm AA"
 
 msgctxt "info/special/105mm_type_14_aa"
 msgid "<c(c3baae)>Heavy AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 대공포</c>"
 
 msgctxt "desc/entity/20cm_type_4_mortar"
 msgid "Type 4 20cm Rocket Launcher"
-msgstr ""
+msgstr "Type 4 20cm Rocket Launcher"
 
 msgctxt "info/special/20cm_type_4_mortar"
 msgid "<c(c3baae)>Rocket Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사기</c>"
 
 msgctxt "desc/entity/heavy_mg_20mm_type_98_aa"
 msgid "Type 98 20mm AA"
-msgstr ""
+msgstr "Type 98 20mm 대공포"
 
 msgctxt "info/special/heavy_mg_20mm_type_98_aa"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/20mm_type_98_aa"
 msgid "Type 98 20mm AA"
-msgstr ""
+msgstr "Type 98 20mm 대공포"
 
 msgctxt "info/special/20mm_type_98_aa"
 msgid "<c(c3baae)>Light AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공포</c>"
 
 msgctxt "desc/entity/37mm_type1_at_noshield"
 msgid "Type 1 37mm AT"
-msgstr ""
+msgstr "Type 1 37mm 대전차포"
 
 msgctxt "info/special/37mm_type1_at_noshield"
 msgid "<c(c3baae)>Light AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대전차포</c>"
 
 msgctxt "desc/entity/37mm_type94_at_noshield"
 msgid "Type 94 37mm AT"
-msgstr ""
+msgstr "Type 94 37mm AT"
 
 msgctxt "info/special/37mm_type94_at_noshield"
 msgid "<c(c3baae)>Light AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대전차포</c>"
 
 msgctxt "desc/entity/37mm_type1_at"
 msgid "Type 1 37mm AT"
-msgstr ""
+msgstr "Type 1 37mm 대전차포"
 
 msgctxt "info/special/37mm_type1_at"
 msgid "<c(c3baae)>Light AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대전차포</c>"
 
 msgctxt "desc/entity/37mm_type94_at"
 msgid "Type 94 37mm AT"
-msgstr ""
+msgstr "Type 94 37mm AT"
 
 msgctxt "info/special/37mm_type94_at"
 msgid "<c(c3baae)>Light AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대전차포</c>"
 
 msgctxt "desc/entity/47mm_type1_at_noshield"
 msgid "Type 1 47mm AT"
-msgstr ""
+msgstr "Type 1 47mm 대전차포"
 
 msgctxt "info/special/47mm_type1_at_noshield"
 msgid "<c(c3baae)>Medium AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대전차포</c>"
 
 msgctxt "desc/entity/47mm_type1_at"
 msgid "Type 1 47mm AT"
-msgstr ""
+msgstr "Type 1 47mm 대전차포"
 
 msgctxt "info/special/47mm_type1_at"
 msgid "<c(c3baae)>Medium AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대전차포</c>"
 
 msgctxt "desc/entity/45cm_japan_rocket"
 msgid "Type 5 45cm Rocket"
-msgstr ""
+msgstr "Type 5 45cm Rocket"
 
 msgctxt "info/special/45cm_japan_rocket"
 msgid "<c(c3baae)>Rocket Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓 발사기</c>"
 
 msgctxt "desc/entity/75mm_type_88_aa"
 msgid "Type 88 75mm AA"
-msgstr ""
+msgstr "Type 88 75mm AA"
 
 msgctxt "info/special/75mm_type_88_aa"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/heavy_mg_stationary_type_93_hmg"
 msgid "Type 93 HMG"
-msgstr ""
+msgstr "Type 93 HMG"
 
 msgctxt "info/special/heavy_mg_stationary_type_93_hmg"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "desc/entity/stationary_type_93_hmg"
 msgid "Type 93 HMG"
-msgstr ""
+msgstr "Type 93 HMG"
 
 msgctxt "info/special/stationary_type_93_hmg"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "desc/entity/type_97_at_rifle"
 msgid "Type 97 AT Rifle"
-msgstr ""
+msgstr "Type 97 AT Rifle"
 
 msgctxt "info/special/type_97_at_rifle"
 msgid "<c(c3baae)>AT Rifle</c>"
-msgstr ""
+msgstr "<c(c3baae)>대전차 소총</c>"
 
 msgctxt "desc/entity/inf_crate_jap"
 msgid "Japanese Ammo Crate"
-msgstr ""
+msgstr "일본군 탄약 상자"
 
 msgctxt "info/special/inf_crate_jap"
 msgid "<c(c3baae)>Supply</c>"
-msgstr ""
+msgstr "<c(c3baae)>보급품</c>"
 
 msgctxt "desc/entity/inf_crate_jap"
 msgid "Japanese Ammo Crate"
-msgstr ""
+msgstr "일본군 탄약 상자"
 
 msgctxt "info/special/inf_crate_jap"
 msgid "<c(c3baae)>Supply</c>"
-msgstr ""
+msgstr "<c(c3baae)>보급품</c>"
 
 msgctxt "desc/entity/ho_ri_prototype"
 msgid "Type 5 Ho-Ri"
-msgstr ""
+msgstr "Type 5 Ho-Ri"
 
 msgctxt "info/special/ho_ri_prototype"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/ho_ri_production"
 msgid "Type 5 Ho-Ri (late)"
-msgstr ""
+msgstr "Type 5 Ho-Ri (후기)"
 
 msgctxt "info/special/ho_ri_production"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/te_ke"
 msgid "Type 97 Te-Ke"
-msgstr ""
+msgstr "Type 97 Te-Ke"
 
 msgctxt "info/special/te_ke"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/te_ke_mg"
 msgid "Type 97 Te-Ke MG"
-msgstr ""
+msgstr "Type 97 Te-Ke MG"
 
 msgctxt "info/special/te_ke_mg"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/te_ke_mg_prototype"
 msgid "Type 97 Te-Ke MG (Prototype)"
-msgstr ""
+msgstr "Type 97 Te-Ke MG (시제)"
 
 msgctxt "info/special/te_ke_mg_prototype"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/ho_ro"
 msgid "Type 4 Ho-Ro"
-msgstr ""
+msgstr "Type 4 Ho-Ro"
 
 msgctxt "info/special/ho_ro"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/ka_ho"
 msgid "Type 3 Ka-Ho"
-msgstr ""
+msgstr "Type 3 Ka-Ho"
 
 msgctxt "info/special/ka_ho"
 msgid "<c(c3baae)>Flame Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>화염 전차</c>"
 
 msgctxt "desc/entity/ke_ni"
 msgid "Type 98 Ke-Ni (Prototype)"
-msgstr ""
+msgstr "Type 98 Ke-Ni (시제)"
 
 msgctxt "info/special/ke_ni"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/so_ki"
 msgid "Type 98 So-Ki"
-msgstr ""
+msgstr "Type 98 So-Ki"
 
 msgctxt "info/special/so_ki"
 msgid "<c(c3baae)>Light AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공 전차</c>"
 
 msgctxt "desc/entity/ta_se"
 msgid "Type 98 Ta-Se"
-msgstr ""
+msgstr "Type 98 Ta-Se"
 
 msgctxt "info/special/ta_se"
 msgid "<c(c3baae)>Light AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경대공 전차</c>"
 
 msgctxt "info/special/chi_yu"
 msgid "<c(c3baae)>Flail Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>도리깨 전차</c>"
 
 msgctxt "desc/entity/chi_yu"
 msgid "Type 97 Chi-Yu"
-msgstr ""
+msgstr "Type 97 Chi-Yu"
 
 msgctxt "desc/entity/shi_ki"
 msgid "Type 97 Shi-Ki"
-msgstr ""
+msgstr "Type 97 Shi-Ki"
 
 msgctxt "info/special/shi_ki"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha"
 msgid "Type 97 Chi-Ha"
-msgstr ""
+msgstr "Type 97 Chi-Ha"
 
 msgctxt "info/special/chi_ha"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_late"
 msgid "Type 97 Chi-Ha (Late)"
-msgstr ""
+msgstr "Type 97 Chi-Ha (후기)"
 
 msgctxt "info/special/chi_ha_late"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_bamboo"
 msgid "Type 97 Chi-Ha"
-msgstr ""
+msgstr "Type 97 Chi-Ha"
 
 msgctxt "info/special/chi_ha_bamboo"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_late_bamboo"
 msgid "Type 97 Chi-Ha (Late)"
-msgstr ""
+msgstr "Type 97 Chi-Ha (후기)"
 
 msgctxt "info/special/chi_ha_late_bamboo"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_ijn"
 msgid "Type 97 Chi-Ha"
-msgstr ""
+msgstr "Type 97 Chi-Ha"
 
 msgctxt "info/special/chi_ha_ijn"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_late_ijn"
 msgid "Type 97 Chi-Ha (Late)"
-msgstr ""
+msgstr "Type 97 Chi-Ha (후기)"
 
 msgctxt "info/special/chi_ha_late_ijn"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai_ijn"
 msgid "Type 97 Chi-Ha Kai"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai"
 
 msgctxt "info/special/chi_ha_kai_ijn"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai_ijn_late"
 msgid "Type 97 Chi-Ha Kai"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai"
 
 msgctxt "info/special/chi_ha_kai_ijn_late"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai"
 msgid "Type 97 Chi-Ha Kai"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai"
 
 msgctxt "info/special/chi_ha_kai"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai_bamboo"
 msgid "Type 97 Chi-Ha Kai"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai"
 
 msgctxt "info/special/chi_ha_kai_bamboo"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai_late_ijn"
 msgid "Type 97 Chi-Ha Kai (Late)"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai (후기)"
 
 msgctxt "info/special/chi_ha_kai_late_ijn"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai_late"
 msgid "Type 97 Chi-Ha Kai (Late)"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai (후기)"
 
 msgctxt "info/special/chi_ha_kai_late"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_ha_kai_late_bamboo"
 msgid "Type 97 Chi-Ha Kai (Late)"
-msgstr ""
+msgstr "Type 97 Chi-Ha Kai (후기)"
 
 msgctxt "info/special/chi_ha_kai_late_bamboo"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ka_chi_without"
 msgid "Type 3 Ka-Chi"
-msgstr ""
+msgstr "Type 3 Ka-Chi"
 
 msgctxt "info/special/ka_chi_without"
 msgid "<c(c3baae)>Amphibious Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 중형 전차</c>"
 
 msgctxt "desc/entity/ka_chi_pontoons"
 msgid "Type 3 Ka-Chi"
-msgstr ""
+msgstr "Type 3 Ka-Chi"
 
 msgctxt "info/special/ka_chi_pontoons"
 msgid "<c(c3baae)>Amphibious Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 중형 전차</c>"
 
 msgctxt "desc/entity/ka_mi"
 msgid "Type 2 Ka-Mi"
-msgstr ""
+msgstr "Type 2 Ka-Mi"
 
 msgctxt "info/special/ka_mi"
 msgid "<c(c3baae)>Amphibious Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 경전차</c>"
 
 msgctxt "desc/entity/ka_mi_pontoon"
 msgid "Type 2 Ka-Mi"
-msgstr ""
+msgstr "Type 2 Ka-Mi"
 
 msgctxt "info/special/ka_mi_pontoon"
 msgid "<c(c3baae)>Amphibious Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 경전차</c>"
 
 msgctxt "desc/entity/ka_mi_mid"
 msgid "Type 2 Ka-Mi"
-msgstr ""
+msgstr "Type 2 Ka-Mi"
 
 msgctxt "info/special/ka_mi_mid"
 msgid "<c(c3baae)>Amphibious Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 경전차</c>"
 
 msgctxt "desc/entity/ka_mi_pontoon_mid"
 msgid "Type 2 Ka-Mi"
-msgstr ""
+msgstr "Type 2 Ka-Mi"
 
 msgctxt "info/special/ka_mi_pontoon_mid"
 msgid "<c(c3baae)>Amphibious Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 경전차</c>"
 
 msgctxt "desc/entity/chi_ha_lg"
 msgid "Type 97 Chi-Ha Long Gun"
-msgstr ""
+msgstr "Type 97 Chi-Ha Long Gun"
 
 msgctxt "info/special/chi_ha_lg"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/chi_ha_sg"
 msgid "Type 97 Chi-Ha Short Gun"
-msgstr ""
+msgstr "Type 97 Chi-Ha Short Gun"
 
 msgctxt "info/special/chi_ha_sg"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/chi_he"
 msgid "Type 1 Chi-He"
-msgstr ""
+msgstr "Type 1 Chi-He"
 
 msgctxt "info/special/chi_he"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_nu"
 msgid "Type 3 Chi-Nu"
-msgstr ""
+msgstr "Type 3 Chi-Nu"
 
 msgctxt "info/special/chi_nu"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_nu2"
 msgid "Type 3 Chi-Nu II"
-msgstr ""
+msgstr "Type 3 Chi-Nu II"
 
 msgctxt "info/special/chi_nu2"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_nu_kai"
 msgid "Type 3 Chi-Nu Kai"
-msgstr ""
+msgstr "Type 3 Chi-Nu Kai"
 
 msgctxt "info/special/chi_nu_kai"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/ho_i"
 msgid "Type 2 Ho-I"
-msgstr ""
+msgstr "Type 2 Ho-I"
 
 msgctxt "info/special/ho_i"
 msgid "<c(c3baae)>Infanty Support Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>보병 지원 전차</c>"
 
 msgctxt "desc/entity/ho_i"
 msgid "Type 2 Ho-I"
-msgstr ""
+msgstr "Type 2 Ho-I"
 
 msgctxt "info/special/ho_i"
 msgid "<c(c3baae)>Infanty Support Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>보병 지원 전차</c>"
 
 msgctxt "desc/entity/150mm_type_94_mortar"
 msgid "Type 94 (150mm Mortar)"
-msgstr ""
+msgstr "Type 94 (150mm Mortar)"
 
 msgctxt "info/special/150mm_type_94_mortar"
 msgid "<c(c3baae)>Mortar Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>박격포 트럭</c>"
 
 msgctxt "desc/entity/type_94_aa"
 msgid "Type 94 (AA)"
-msgstr ""
+msgstr "Type 94 (대공)"
 
 msgctxt "info/special/type_94_aa"
 msgid "<c(c3baae)>AA Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공 트럭</c>"
 
 msgctxt "desc/entity/type_94_ammo"
 msgid "Type 94 (Supply)"
-msgstr ""
+msgstr "Type 94 (보급)"
 
 msgctxt "info/special/type_94_ammo"
 msgid "<c(c3baae)>Supply</c>"
-msgstr ""
+msgstr "<c(c3baae)>보급품</c>"
 
 msgctxt "desc/entity/type_94_eng"
 msgid "Type 94 (Engineer)"
-msgstr ""
+msgstr "Type 94 (공병)"
 
 msgctxt "info/special/type_94_eng"
 msgid "<c(c3baae)>Engineering Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>공병 트럭</c>"
 
 msgctxt "desc/entity/type_94_fuel"
 msgid "Type 94 (Fuel)"
-msgstr ""
+msgstr "Type 94 (연료)"
 
 msgctxt "info/special/type_94_fuel"
 msgid "<c(c3baae)>Fuel Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>연료 트럭</c>"
 
 msgctxt "desc/entity/type_94_rocket"
 msgid "Type 94 (Rocket)"
-msgstr ""
+msgstr "Type 94 (로켓)"
 
 msgctxt "info/special/type_94_rocket"
 msgid "<c(c3baae)>Rocket Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓포</c>"
 
 msgctxt "desc/entity/type_94_transport"
 msgid "Type 94 (Transport)"
-msgstr ""
+msgstr "Type 94 (수송)"
 
 msgctxt "info/special/type_94_transport"
 msgid "<c(c3baae)>Transport Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>수송 트럭</c>"
 
 msgctxt "desc/entity/70mm_type92_early"
 msgid "Type 92 70mm Battalion Gun"
-msgstr ""
+msgstr "Type 92 70mm Battalion Gun"
 
 msgctxt "info/special/70mm_type92_early"
 msgid "<c(c3baae)>Battalion Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대대포</c>"
 
 msgctxt "desc/entity/70mm_type92_late"
 msgid "Type 92 70mm Battalion Gun (Late)"
-msgstr ""
+msgstr "Type 92 70mm Battalion Gun (후기)"
 
 msgctxt "info/special/70mm_type92_late"
 msgid "<c(c3baae)>Battalion Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대대포</c>"
 
 msgctxt "desc/entity/ha_go"
 msgid "Type 95 Ha-Go"
-msgstr ""
+msgstr "Type 95 Ha-Go"
 
 msgctxt "info/special/ha_go"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/ha_go_flamm"
 msgid "Type 95 Ha-Go (Flamethrower)"
-msgstr ""
+msgstr "Type 95 Ha-Go (화염방사)"
 
 msgctxt "info/special/ha_go_flamm"
 msgid "<c(c3baae)>Flame Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>화염 경전차</c>"
 
 msgctxt "desc/entity/ha_go_ijn"
 msgid "Type 95 Ha-Go"
-msgstr ""
+msgstr "Type 95 Ha-Go"
 
 msgctxt "info/special/ha_go_ijn"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/ha_go_late_ijn"
 msgid "Type 95 Ha-Go (Late)"
-msgstr ""
+msgstr "Type 95 Ha-Go (후기)"
 
 msgctxt "info/special/ha_go_late_ijn"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/ha_go_late"
 msgid "Type 95 Ha-Go (Late)"
-msgstr ""
+msgstr "Type 95 Ha-Go (후기)"
 
 msgctxt "info/special/ha_go_late"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/o_i"
 msgid "O-I (105mm)"
-msgstr ""
+msgstr "O-I (105mm)"
 
 msgctxt "info/special/o_i"
 msgid "<c(c3baae)>Super-Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/o_i_150"
 msgid "O-I"
-msgstr ""
+msgstr "O-I"
 
 msgctxt "info/special/o_i_150"
 msgid "<c(c3baae)>Super-Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/type_95_car_open"
 msgid "Type 95 'Kurogane'"
-msgstr ""
+msgstr "Type 95 'Kurogane'"
 
 msgctxt "info/special/type_95_car_open"
 msgid "<c(c3baae)>Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>승용차</c>"
 
 msgctxt "desc/entity/type_95_car_close"
 msgid "Type 95 'Kurogane'"
-msgstr ""
+msgstr "Type 95 'Kurogane'"
 
 msgctxt "info/special/type_95_car_close"
 msgid "<c(c3baae)>Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>승용차</c>"
 
 msgctxt "desc/entity/type_97_motorcycle_late"
 msgid "Type 97 Motorcycle"
-msgstr ""
+msgstr "Type 97 Motorcycle"
 
 msgctxt "info/special/type_97_motorcycle_late"
 msgid "<c(c3baae)>Motorcycle</c>"
-msgstr ""
+msgstr "<c(c3baae)>오토바이</c>"
 
 msgctxt "desc/entity/type_97_motorcycle_shield_late"
 msgid "Type 97 Motorcycle"
-msgstr ""
+msgstr "Type 97 Motorcycle"
 
 msgctxt "info/special/type_97_motorcycle_shield_late"
 msgid "<c(c3baae)>Motorcycle</c>"
-msgstr ""
+msgstr "<c(c3baae)>오토바이</c>"
 
 msgctxt "desc/entity/type_97_motorcycle"
 msgid "Type 97 Motorcycle"
-msgstr ""
+msgstr "Type 97 Motorcycle"
 
 msgctxt "info/special/type_97_motorcycle"
 msgid "<c(c3baae)>Motorcycle</c>"
-msgstr ""
+msgstr "<c(c3baae)>오토바이</c>"
 
 msgctxt "desc/entity/type_97_motorcycle_shield"
 msgid "Type 97 Motorcycle"
-msgstr ""
+msgstr "Type 97 Motorcycle"
 
 msgctxt "info/special/type_97_motorcycle_shield"
 msgid "<c(c3baae)>Motorcycle</c>"
-msgstr ""
+msgstr "<c(c3baae)>오토바이</c>"
 
 msgctxt "desc/entity/100mm_type91"
 msgid "Type 91 10cm"
-msgstr ""
+msgstr "Type 91 10cm"
 
 msgctxt "info/special/100mm_type91"
 msgid "<c(c3baae)>Medium Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 포</c>"
 
 msgctxt "desc/entity/120mm_type2_mortar"
 msgid "Type 2 120mm Mortar"
-msgstr ""
+msgstr "Type 2 120mm Mortar"
 
 msgctxt "info/special/120mm_type2_mortar"
 msgid "<c(c3baae)>Medium Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 박격포</c>"
 
 msgctxt "desc/entity/120mm_type2_mortar"
 msgid "Type 2 120mm Mortar"
-msgstr ""
+msgstr "Type 2 120mm Mortar"
 
 msgctxt "info/special/120mm_type2_mortar"
 msgid "<c(c3baae)>Medium Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 박격포</c>"
 
 msgctxt "desc/entity/150mm_type97_mortar_long"
 msgid "Type 97 150mm Mortar (Long)"
-msgstr ""
+msgstr "Type 97 150mm Mortar (Long)"
 
 msgctxt "info/special/150mm_type97_mortar_long"
 msgid "<c(c3baae)>Heavy Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 박격포</c>"
 
 msgctxt "desc/entity/150mm_type97_mortar_short"
 msgid "Type 97 150mm Mortar (Short)"
-msgstr ""
+msgstr "Type 97 150mm Mortar (Short)"
 
 msgctxt "info/special/150mm_type97_mortar_short"
 msgid "<c(c3baae)>Heavy Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 박격포</c>"
 
 msgctxt "desc/entity/150mm_type_96"
 msgid "Type 96 15cm"
-msgstr ""
+msgstr "Type 96 15cm"
 
 msgctxt "info/special/150mm_type_96"
 msgid "<c(c3baae)>Heavy Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중포</c>"
 
 msgctxt "desc/entity/70mm_type11_mortar"
 msgid "Type 11 70mm Mortar"
-msgstr ""
+msgstr "Type 11 70mm Mortar"
 
 msgctxt "info/special/70mm_type11_mortar"
 msgid "<c(c3baae)>Light Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>경박격포</c>"
 
 msgctxt "desc/entity/81mm_type97_mortar"
 msgid "Type 97 81mm Mortar"
-msgstr ""
+msgstr "Type 97 81mm Mortar"
 
 msgctxt "info/special/81mm_type97_mortar"
 msgid "<c(c3baae)>Light Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>경박격포</c>"
 
 msgctxt "desc/entity/90mm_type97_mortar"
 msgid "Type 97 90mm Mortar"
-msgstr ""
+msgstr "Type 97 90mm Mortar"
 
 msgctxt "info/special/90mm_type97_mortar"
 msgid "<c(c3baae)>Light Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>경박격포</c>"
 
 msgctxt "desc/entity/ho_ri_2_aa"
 msgid "Type 5 Ho-Ri II"
-msgstr ""
+msgstr "Type 5 Ho-Ri II"
 
 msgctxt "info/special/ho_ri_2_aa"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/ke_nu"
 msgid "Type 95 Ha-Go (57mm)"
-msgstr ""
+msgstr "Type 95 Ha-Go (57mm)"
 
 msgctxt "info/special/ke_nu"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/type_92_10cm"
 msgid "Type 92 10cm"
-msgstr ""
+msgstr "Type 92 10cm"
 
 msgctxt "info/special/type_92_10cm"
 msgid "<c(c3baae)>Medium Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 포</c>"
 
 msgctxt "desc/entity/ro_go_early"
 msgid "Type 95 Ro-Go"
-msgstr ""
+msgstr "Type 95 Ro-Go"
 
 msgctxt "info/special/ro_go_early"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/ro_go_late"
 msgid "Type 95 Ro-Go (Late)"
-msgstr ""
+msgstr "Type 95 Ro-Go (후기)"
 
 msgctxt "info/special/ro_go_late"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/tiger1e_jap"
 msgid "Heavy Tank No.6"
-msgstr ""
+msgstr "Heavy Tank No.6"
 
 msgctxt "info/special/tiger1e_jap"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/105mm_type_4_recoilless"
 msgid "Type 4 105mm Recoilless Rifle"
-msgstr ""
+msgstr "Type 4 105mm Recoilless Rifle"
 
 msgctxt "info/special/105mm_type_4_recoilless"
 msgid "<c(c3baae)>Recoilless Rifle</c>"
-msgstr ""
+msgstr "<c(c3baae)>무반동총</c>"
 
 msgctxt "desc/entity/ro_go_exp"
 msgid "Ro-Go Exp. (12cm)"
-msgstr ""
+msgstr "Ro-Go Exp. (12cm)"
 
 msgctxt "info/special/ro_go_exp"
 msgid "<c(c3baae)>SPAG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대전차포</c>"
 
 msgctxt "desc/entity/chi_to"
 msgid "Type 4 Chi-To"
-msgstr ""
+msgstr "Type 4 Chi-To"
 
 msgctxt "info/special/chi_to"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/is_4_100"
 msgid "IS-4 (Prototype)"
-msgstr ""
+msgstr "IS-4 (시제)"
 
 msgctxt "info/special/is_4_100"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/overvalwagen_gun"
 msgid "Overvalwagen (Marine Versie)"
-msgstr ""
+msgstr "Overvalwagen (해병형)"
 
 msgctxt "info/special/overvalwagen_gun"
 msgid "<c(c3baae)>APC</c>"
-msgstr ""
+msgstr "<c(c3baae)>APC</c>"
 
 msgctxt "desc/entity/overvalwagen_aa"
 msgid "Overvalwagen (Luchtverdediging Versie)"
-msgstr ""
+msgstr "Overvalwagen (대공형)"
 
 msgctxt "info/special/overvalwagen_aa"
 msgid "<c(c3baae)>APC</c>"
-msgstr ""
+msgstr "<c(c3baae)>APC</c>"
 
 msgctxt "desc/entity/overvalwagen_apc"
 msgid "Overvalwagen"
-msgstr ""
+msgstr "Overvalwagen"
 
 msgctxt "info/special/overvalwagen_apc"
 msgid "<c(c3baae)>APC</c>"
-msgstr ""
+msgstr "<c(c3baae)>APC</c>"
 
 msgctxt "desc/entity/chi_ri_2"
 msgid "Type 5 Chi-Ri II"
-msgstr ""
+msgstr "Type 5 Chi-Ri II"
 
 msgctxt "info/special/chi_ri_2"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/chi_se"
 msgid "Type 6 Chi-Se"
-msgstr ""
+msgstr "Type 6 Chi-Se"
 
 msgctxt "info/special/chi_se"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/ho_to"
 msgid "Type 4 Ho-To"
-msgstr ""
+msgstr "Type 4 Ho-To"
 
 msgctxt "info/special/ho_to"
 msgid "<c(c3baae)>SPG</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/na_to"
 msgid "Type 5 Na-To"
-msgstr ""
+msgstr "Type 5 Na-To"
 
 msgctxt "info/special/na_to"
 msgid "<c(c3baae)>Self-Propelled Anti-Tank Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대전차포</c>"
 
 msgctxt "desc/entity/75mm_type_90"
 msgid "Type 90 75mm"
-msgstr ""
+msgstr "Type 90 75mm"
 
 msgctxt "info/special/75mm_type_90"
 msgid "<c(c3baae)>Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>야포</c>"
 
 msgctxt "desc/entity/105mm_type_38_fin"
 msgid "150mm H/14j"
-msgstr ""
+msgstr "150mm H/14j"
 
 msgctxt "info/special/105mm_type_38_fin"
 msgid "<c(c3baae)>Heavy Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 곡사포</c>"
 
 msgctxt "desc/entity/105mm_type_38_jap"
 msgid "Type 38 150mm"
-msgstr ""
+msgstr "Type 38 150mm"
 
 msgctxt "info/special/105mm_type_38_jap"
 msgid "<c(c3baae)>Heavy Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 곡사포</c>"
 
 msgctxt "desc/entity/ha_to"
 msgid "Type 4 Ha-To"
-msgstr ""
+msgstr "Type 4 Ha-To"
 
 msgctxt "info/special/ha_to"
 msgid "<c(c3baae)>Self-Propelled Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 박격포</c>"
 
 msgctxt "desc/entity/na_to"
 msgid "Type 5 Na-To"
-msgstr ""
+msgstr "Type 5 Na-To"
 
 msgctxt "info/special/na_to"
 msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대전차포</c>"
 
 msgctxt "desc/entity/ho_ni_i"
 msgid "Type 1 Ho-Ni-I"
-msgstr ""
+msgstr "Type 1 Ho-Ni-I"
 
 msgctxt "info/special/ho_ni_ii"
 msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대전차포</c>"
 
 msgctxt "desc/entity/ho_ni_ii"
 msgid "Type 1 Ho-Ni-II"
-msgstr ""
+msgstr "Type 1 Ho-Ni-II"
 
 msgctxt "info/special/ho_ni_iii"
 msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대전차포</c>"
 
 msgctxt "desc/entity/ho_ni_iii"
 msgid "Type 3 Ho-Ni-III"
-msgstr ""
+msgstr "Type 3 Ho-Ni-III"
 
 msgctxt "info/special/ho_ni_i"
 msgid "<c(c3baae)>Self-Propelled AT Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 대전차포</c>"
 
 msgctxt "desc/entity/chi_so"
 msgid "Type 4 Chi-So"
-msgstr ""
+msgstr "Type 4 Chi-So"
 
 msgctxt "info/special/chi_so"
 msgid "<c(c3baae)>APC</c>"
-msgstr ""
+msgstr "<c(c3baae)>APC</c>"
 
 msgctxt "desc/entity/type_92_hac_early"
 msgid "Type 92 Jyu-Sokosha"
-msgstr ""
+msgstr "Type 92 Jyu-Sokosha"
 
 msgctxt "info/special/type_92_hac_early"
 msgid "<c(c3baae)>HAC</c>"
-msgstr ""
+msgstr "<c(c3baae)>HAC</c>"
 
 msgctxt "desc/entity/type_92_hac_late"
 msgid "Type 92 Jyu-Sokosha (Late)"
-msgstr ""
+msgstr "Type 92 Jyu-Sokosha (후기)"
 
 msgctxt "info/special/type_92_hac_late"
 msgid "<c(c3baae)>HAC</c>"
-msgstr ""
+msgstr "<c(c3baae)>HAC</c>"
 
 msgctxt "desc/entity/to_ku_pontoons"
 msgid "Type 5 To-Ku"
-msgstr ""
+msgstr "Type 5 To-Ku"
 
 msgctxt "info/special/to_ku_pontoons"
 msgid "<c(c3baae)>Amphibious Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 중형 전차</c>"
 
 msgctxt "desc/entity/to_ku"
 msgid "Type 5 To-Ku"
-msgstr ""
+msgstr "Type 5 To-Ku"
 
 msgctxt "info/special/to_ku"
 msgid "<c(c3baae)>Amphibious Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>수륙양용 중형 전차</c>"
 
 msgctxt "desc/entity/15cm_type_89"
 msgid "Type 89 15cm"
-msgstr ""
+msgstr "Type 89 15cm"
 
 msgctxt "info/special/15cm_type_89"
 msgid "<c(c3baae)>Heavy Artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>중포</c>"
 
 msgctxt "desc/entity/25mm_type_96"
 msgid "Type 96 25mm AA"
-msgstr ""
+msgstr "Type 96 25mm 대공포"
 
 msgctxt "desc/entity/25mm_type_96_early"
 msgid "Type 96 25mm AA"
-msgstr ""
+msgstr "Type 96 25mm 대공포"
 
 msgctxt "info/special/25mm_type_96_early"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "info/special/25mm_type_96"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/25mm_type_96_mid"
 msgid "Type 96 25mm AA"
-msgstr ""
+msgstr "Type 96 25mm 대공포"
 
 msgctxt "info/special/25mm_type_96_mid"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/kikka"
 msgid "Nakajima Kikka"
-msgstr ""
+msgstr "Nakajima Kikka"
 
 msgctxt "info/special/kikka"
 msgid "<c(c3baae)>Turbojet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>터보제트 항공기</c>"
 
 msgctxt "desc/entity/kikka2"
 msgid "Nakajima Kikka"
-msgstr ""
+msgstr "Nakajima Kikka"
 
 msgctxt "info/special/kikka2"
 msgid "<c(c3baae)>Turbojet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>터보제트 항공기</c>"
 
 msgctxt "desc/entity/kikka2_800kg"
 msgid "Nakajima Kikka"
-msgstr ""
+msgstr "Nakajima Kikka"
 
 msgctxt "info/special/kikka2_800kg"
 msgid "<c(c3baae)>Turbojet-Powered Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>터보제트 항공기</c>"
 
 msgctxt "desc/entity/ho_ha"
 msgid "Type 1 Ho-Ha"
-msgstr ""
+msgstr "Type 1 Ho-Ha"
 
 msgctxt "info/special/ho_ha"
 msgid "<c(c3baae)>APC</c>"
-msgstr ""
+msgstr "<c(c3baae)>APC</c>"
 
 msgctxt "desc/entity/75mm_type_38"
 msgid "Type 38 75mm"
-msgstr ""
+msgstr "Type 38 75mm"
 
 msgctxt "info/special/75mm_type_38"
 msgid "<c(c3baae)>Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>야포</c>"
 
 msgctxt "desc/entity/75mm_type_38_late"
 msgid "Type 38 75mm (Late)"
-msgstr ""
+msgstr "Type 38 75mm (후기)"
 
 msgctxt "info/special/75mm_type_38_late"
 msgid "<c(c3baae)>Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>야포</c>"
 
 msgctxt "desc/entity/75mm_type_38_kai"
 msgid "Type 38 75mm Improved (Late)"
-msgstr ""
+msgstr "Type 38 75mm Improved (후기)"
 
 msgctxt "info/special/75mm_type_38_kai"
 msgid "<c(c3baae)>Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>야포</c>"
 
 msgctxt "desc/entity/75mm_type_38_kai_mid"
 msgid "Type 38 75mm Improved"
-msgstr ""
+msgstr "Type 38 75mm Improved"
 
 msgctxt "info/special/75mm_type_38_kai_mid"
 msgid "<c(c3baae)>Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>야포</c>"
 
 msgctxt "desc/entity/so_da"
 msgid "Type 98 So-Da"
-msgstr ""
+msgstr "Type 98 So-Da"
 
 msgctxt "info/special/so_da"
 msgid "<c(c3baae)>Artillery Tractor</c>"
-msgstr ""
+msgstr "<c(c3baae)>포 견인차</c>"
 
 msgctxt "desc/entity/so_da_ammo"
 msgid "Type 98 So-Da (Ammo)"
-msgstr ""
+msgstr "Type 98 So-Da (탄약)"
 
 msgctxt "info/special/so_da_ammo"
 msgid "<c(c3baae)>Ammunition Carrier</c>"
-msgstr ""
+msgstr "<c(c3baae)>탄약 운반차</c>"
 
 msgctxt "desc/entity/150mm_sfh18_jap"
 msgid "15cm sFH 18"
-msgstr ""
+msgstr "15cm sFH 18"
 
 msgctxt "info/special/150mm_sfh18_jap"
 msgid "<c(c3baae)>Heavy Field Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 야전 곡사포</c>"
 
 msgctxt "desc/entity/m2_halftrack_jap"
 msgid "M2 Halftrack"
-msgstr ""
+msgstr "M2 Halftrack"
 
 msgctxt "info/special/m2_halftrack_jap"
 msgid "<c(c3baae)>Halftrack</c>"
-msgstr ""
+msgstr "<c(c3baae)>반궤도차</c>"
 
 msgctxt "desc/entity/m3_gmc_jap"
 msgid "75mm GMC M3"
-msgstr ""
+msgstr "75mm GMC M3"
 
 msgctxt "info/special/m3_gmc_jap"
 msgid "<c(c3baae)>Self-propelled Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "desc/entity/m3_stuart_jap"
 msgid "M3 Stuart (Early)"
-msgstr ""
+msgstr "M3 Stuart (초기)"
 
 msgctxt "info/special/m3_stuart_jap"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/ss_ki"
 msgid "Soukou Sagyou Ki"
-msgstr ""
+msgstr "Soukou Sagyou Ki"
 
 msgctxt "info/special/ss_ki"
 msgid "<c(c3baae)>Engineering Vehicle</c>"
-msgstr ""
+msgstr "<c(c3baae)>공병 차량</c>"
 
 msgctxt "desc/entity/75mm_m_37_jap"
 msgid "Type 4 75mm"
-msgstr ""
+msgstr "Type 4 75mm"
 
 msgctxt "info/special/75mm_m_37_jap"
 msgid "<c(c3baae)>Medium AA Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 대공포</c>"
 
 msgctxt "desc/entity/i_go_late_ijn"
 msgid "Type 89 I-Go (Late)"
-msgstr ""
+msgstr "Type 89 I-Go (후기)"
 
 msgctxt "info/special/i_go_late_ijn"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/i_go_late"
 msgid "Type 89 I-Go (Late)"
-msgstr ""
+msgstr "Type 89 I-Go (후기)"
 
 msgctxt "info/special/i_go_late"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/i_go"
 msgid "Type 89 I-Go"
-msgstr ""
+msgstr "Type 89 I-Go"
 
 msgctxt "info/special/i_go"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/i_go_ijn"
 msgid "Type 89 I-Go"
-msgstr ""
+msgstr "Type 89 I-Go"
 
 msgctxt "info/special/i_go_ijn"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/120mm_type_38_early"
 msgid "Type 38 120mm"
-msgstr ""
+msgstr "Type 38 120mm"
 
 msgctxt "info/special/120mm_type_38_early"
 msgid "<c(c3baae)>Heavy Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 곡사포</c>"
 
 msgctxt "desc/entity/120mm_type_38_late"
 msgid "Type 38 120mm"
-msgstr ""
+msgstr "Type 38 120mm"
 
 msgctxt "info/special/120mm_type_38_late"
 msgid "<c(c3baae)>Heavy Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 곡사포</c>"
 
 msgctxt "desc/entity/37mm_type_11"
 msgid "Type 11 37mm"
-msgstr ""
+msgstr "Type 11 37mm"
 
 msgctxt "info/special/37mm_type_11"
 msgid "<c(c3baae)>Infantry Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>보병포</c>"
 
 msgctxt "desc/entity/ki_46_II"
 msgid "Ki 46 II Recon"
-msgstr ""
+msgstr "Ki 46 II 정찰"
 
 msgctxt "info/special/ki_46_II"
 msgid "<c(c3baae)>Recon Plane</c>"
-msgstr ""
+msgstr "<c(c3baae)>정찰기</c>"
 
 msgctxt "desc/entity/type_93_kokusan"
 msgid "Type 93 Kokusan"
-msgstr ""
+msgstr "Type 93 Kokusan"
 
 msgctxt "info/special/type_93_kokusan"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"
 
 msgctxt "desc/entity/swe_12cm_bofors"
 msgid "12cm Kanon M/24 L/50"
-msgstr ""
+msgstr "12cm Kanon M/24 L/50"
 
 msgctxt "info/special/swe_12cm_bofors"
 msgid "<c(c3baae)>Heavy Field Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 야포</c>"
 
 msgctxt "desc/entity/ford_3ton_itk40"
 msgid "Ford 3-Ton 20 ItK/40 Breda"
-msgstr ""
+msgstr "Ford 3-Ton 20 ItK/40 Breda"
 
 msgctxt "info/special/ford_3ton_itk40"
 msgid "<c(c3baae)>Truck</c>"
-msgstr ""
+msgstr "<c(c3baae)>트럭</c>"
 
 msgctxt "desc/entity/t60_fin"
 msgid "T-60 M1941"
-msgstr ""
+msgstr "T-60 M1941"
 
 msgctxt "info/special/t60_fin"
 msgid "<c(c3baae)>Light Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "desc/entity/type_94_tk_mg_early"
 msgid "Type 94 TK MG (early)"
-msgstr ""
+msgstr "Type 94 TK MG (초기)"
 
 msgctxt "info/special/type_94_tk_mg_early"
 msgid "<c(c3baae)>Tankette</c>"
-msgstr ""
+msgstr "<c(c3baae)>탱케트</c>"
 
 msgctxt "desc/entity/type_94_tk_mg_late"
 msgid "Type 94 TK MG (Late)"
-msgstr ""
+msgstr "Type 94 TK MG (후기)"
 
 msgctxt "info/special/type_94_tk_mg_late"
 msgid "<c(c3baae)>Tankette</c>"
-msgstr ""
+msgstr "<c(c3baae)>탱케트</c>"
 
 msgctxt "desc/entity/type_94_tk_late"
 msgid "Type 94 TK (late)"
-msgstr ""
+msgstr "Type 94 TK (후기)"
 
 msgctxt "info/special/type_94_tk_late"
 msgid "<c(c3baae)>Tankette</c>"
-msgstr ""
+msgstr "<c(c3baae)>탱케트</c>"
 
 msgctxt "desc/entity/type_94_tk_trailer_gas"
 msgid "Type 94 Trailer (Mustard Gas)"
-msgstr ""
+msgstr "Type 94 Trailer (Mustard Gas)"
 
 msgctxt "info/special/type_94_tk_trailer_gas"
 msgid "<c(c3baae)>Gas Trailer</c>"
-msgstr ""
+msgstr "<c(c3baae)>독가스 트레일러</c>"
 
 msgctxt "desc/entity/type_94_tk_trailer"
 msgid "Ammo Trailer"
-msgstr ""
+msgstr "탄약 트레일러"
 
 msgctxt "info/special/type_94_tk_trailer"
 msgid "<c(c3baae)>Ammo Trailer</c>"
-msgstr ""
+msgstr "<c(c3baae)>탄약 트레일러</c>"
 
 msgctxt "info/special/155mm_t25_mortar"
 msgid "<c(c3baae)>Heavy Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 박격포</c>"
 
 msgctxt "desc/entity/155mm_t25_mortar"
 msgid "155mm T25 Mortar"
-msgstr ""
+msgstr "155mm T25 Mortar"
 
 msgctxt "info/special/160mm_mt_13_mortar"
 msgid "<c(c3baae)>Heavy Mortar</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 박격포</c>"
 
 msgctxt "desc/entity/160mm_mt_13_mortar"
 msgid "160mm MT-13 Mortar"
-msgstr ""
+msgstr "160mm MT-13 Mortar"
 
 msgctxt "desc/entity/mg131_tripod"
 msgid "MG 131 Tripod"
-msgstr ""
+msgstr "MG 131 Tripod"
 
 msgctxt "desc/entity/heavy_mg_mg131_tripod"
 msgid "MG 131 Tripod"
-msgstr ""
+msgstr "MG 131 Tripod"
 
 msgctxt "info/special/mg131_tripod"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "info/special/heavy_mg_mg131_tripod"
 msgid "<c(c3baae)>Heavy Machine Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>중기관총</c>"
 
 msgctxt "desc/entity/strumpanzer5g"
 msgid "Sturmpanther (15cm)"
-msgstr ""
+msgstr "Sturmpanther (15cm)"
 
 msgctxt "info/special/strumpanzer5g"
 msgid "<c(c3baae)>Heavy Assault Gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>대형 돌격포</c>"
 
 msgctxt "desc/entity/m4_90"
 msgid "M4 (90)"
-msgstr ""
+msgstr "M4 (90)"
 
 msgctxt "info/special/m4_90"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/a6m3_60kg"
 msgid "A6M3"
-msgstr ""
+msgstr "A6M3"
 
 msgctxt "info/special/a6m3_60kg"
 msgid "<c(c3baae)>Fighter Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"
 
 msgctxt "desc/entity/a6m3_rockets"
 msgid "A6M3"
-msgstr ""
+msgstr "A6M3"
 
 msgctxt "info/special/a6m3_rockets"
 msgid "<c(c3baae)>Fighter Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"
 
 msgctxt "desc/entity/a6m3_rockets_ai"
 msgid "A6M3"
-msgstr ""
+msgstr "A6M3"
 
 msgctxt "info/special/a6m3_rockets_ai"
 msgid "<c(c3baae)>Fighter Aircraft</c>"
-msgstr ""
+msgstr "<c(c3baae)>전투기</c>"
 
 msgctxt "desc/entity/b5n2_60x6kg"
 msgid "B5N2"
-msgstr ""
+msgstr "B5N2"
 
 msgctxt "info/special/b5n2_60x6kg"
 msgid "<c(c3baae)>High-Level Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>고고도 폭격기</c>"
 
 msgctxt "desc/entity/b5n2_250kg"
 msgid "B5N2"
-msgstr ""
+msgstr "B5N2"
 
 msgctxt "info/special/b5n2_250kg"
 msgid "<c(c3baae)>High-Level Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>고고도 폭격기</c>"
 
 msgctxt "desc/entity/b5n2_800kg"
 msgid "B5N2"
-msgstr ""
+msgstr "B5N2"
 
 msgctxt "info/special/b5n2_800kg"
 msgid "<c(c3baae)>High-Level Bomber</c>"
-msgstr ""
+msgstr "<c(c3baae)>고고도 폭격기</c>"
 
 msgctxt "desc/entity/120mm_k78_31_late_def"
 msgid "120 K/78-31"
-msgstr ""
+msgstr "120 K/78-31"
 
 msgctxt "info/special/120mm_k78_31_late_def"
 msgid "<c(c3baae)>Medium Field Howitzer</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 야전 곡사포</c>"
 
 msgctxt "desc/entity/humber_scout_command"
 msgid "Humber Scout Mk.II (Command)"
-msgstr ""
+msgstr "Humber Scout Mk.II (지휘)"
 
 msgctxt "info/special/humber_command"
 msgid "<c(c3baae)>Scout Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>정찰차</c>"
 
 msgctxt "desc/entity/northover_projector"
 msgid "Northover Projector"
-msgstr ""
+msgstr "Northover Projector"
 
 msgctxt "info/special/northover_projector"
 msgid "<c(c3baae)>Grenade Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>유탄 발사기</c>"
 
 msgctxt "desc/entity/heavy_mg_northover_projector"
 msgid "Northover Projector"
-msgstr ""
+msgstr "Northover Projector"
 
 msgctxt "info/special/heavy_mg_northover_projector"
 msgid "<c(c3baae)>Grenade Launcher</c>"
-msgstr ""
+msgstr "<c(c3baae)>유탄 발사기</c>"
 
 msgctxt "desc/entity/ba20_command_fin"
 msgid "BA-20 (Command)"
-msgstr ""
+msgstr "BA-20 (지휘)"
 
 msgctxt "info/special/ba20_command_fin"
 msgid "<c(c3baae)>Armored Car</c>"
-msgstr ""
+msgstr "<c(c3baae)>장갑차</c>"

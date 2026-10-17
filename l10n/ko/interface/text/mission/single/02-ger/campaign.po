@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/campaign/title"
 msgid "Germany, 1941-45"
-msgstr ""
+msgstr "독일, 1941-45"
 
 msgctxt "mission/single/02-ger/campaign/name"
 msgid "OSTFRONT</c>"
-msgstr ""
+msgstr "동부 전선</c>"

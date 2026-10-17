@@ -15,196 +15,196 @@ msgstr ""
 
 msgctxt "desc/ammo/m57_250lb"
 msgid "AN-M57 250lb GP Bomb"
-msgstr ""
+msgstr "AN-M57 250lb 범용 폭탄"
 
 msgctxt "desc/ammo/air_bomb_usa_250lb"
 msgid "AN-M57 250lb GP Bomb"
-msgstr ""
+msgstr "AN-M57 250lb 범용 폭탄"
 
 msgctxt "desc/ammo/air_bomb_usa_500kg"
 msgid "AN-M65 1000lb GP Bomb"
-msgstr ""
+msgstr "AN-M65 1000lb 범용 폭탄"
 
 msgctxt "desc/ammo/sc_500"
 msgid "AN-M65 1000lb GP Bomb"
-msgstr ""
+msgstr "AN-M65 1000lb 범용 폭탄"
 
 msgctxt "desc/ammo/air_bomb_usa_340kg_mk78"
 msgid "Mk. 78 750lb Incendiary Bomb"
-msgstr ""
+msgstr "Mk. 78 750lb 소이 폭탄"
 
 msgctxt "desc/ammo/340kg_mk78_bomb"
 msgid "Mk. 78 750lb Incendiary Bomb"
-msgstr ""
+msgstr "Mk. 78 750lb 소이 폭탄"
 
 msgctxt "desc/ammo/bulletusa_155_l40 wp"
 msgid "155mm Smoke WP, Shell M110 [<c(FFFFFF)>WP</c>] <c(65696d)>L23</c>"
-msgstr ""
+msgstr "155mm 연막 WP, 포탄 M110 [<c(FFFFFF)>WP</c>] <c(65696d)>L23</c>"
 
 msgctxt "desc/ammo/bulletusa_105 heata"
 msgid "105mm HEAT-T, Shell M67E1 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "105mm HEAT-T, 포탄 M67E1 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/usa_mortar he"
 msgid "60mm HE, Shell M49A2 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "60mm HE, 포탄 M49A2 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/usa_mortar wp"
 msgid "60mm Smoke WP, Shell T-6 [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "60mm 연막 WP, 포탄 T-6 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/stuff/mortarusa_60_he"
 msgid "60mm HE, Shell M49A2 [<c(ff1200)>HE</c>] (grenade)"
-msgstr ""
+msgstr "60mm HE, 포탄 M49A2 [<c(ff1200)>HE</c>] (수류탄)"
 
 msgctxt "desc/stuff/mortarusa_60_wp"
 msgid "60mm Smoke WP, Shell T-6 [<c(FFFFFF)>WP</c>] (grenade)"
-msgstr ""
+msgstr "60mm 연막 WP, 포탄 T-6 [<c(FFFFFF)>WP</c>] (수류탄)"
 
 msgctxt "desc/ammo/bulletusa_203 apcbc"
 msgid "8-inch Mk.19 APCBC [<c(ff6a00)>APCBC</c>] <c(65696d)>L/50</c>"
-msgstr ""
+msgstr "8인치 Mk.19 APCBC [<c(ff6a00)>APCBC</c>] <c(65696d)>L/50</c>"
 
 msgctxt "desc/ammo/little_david he"
 msgid "914mm Little David Shell [<c(ff1200)>HE</c>] <c(65696d)>L/7</c>"
-msgstr ""
+msgstr "914mm Little David 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/7</c>"
 
 msgctxt "desc/ammo/little_david nuke"
 msgid "914mm Little David Shell [<c(000000)>Nuke</c>] <c(65696d)>L/7</c>"
-msgstr ""
+msgstr "914mm Little David 포탄 [<c(000000)>핵</c>] <c(65696d)>L/7</c>"
 
 msgctxt "desc/ammo/bulletusa_120 apfsds"
 msgid "M829A2 [<c(ff6a00)>APFSDS</c>] <c(65696d)>L/44</c>"
-msgstr ""
+msgstr "M829A2 [<c(ff6a00)>APFSDS</c>] <c(65696d)>L/44</c>"
 
 msgctxt "desc/ammo/bulletusa_120 heat"
 msgid "M830A1 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/44</c>"
-msgstr ""
+msgstr "M830A1 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/44</c>"
 
 msgctxt "desc/ammo/273mm_t59"
 msgid "10.75-inch Rockets T91 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "10.75인치 로켓 T91 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/182mm_t91 he"
 msgid "7.2-inch Rockets T37 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "7.2인치 로켓 T37 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/182mm_t91 he2"
 msgid "7.2-inch Rockets T57 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "7.2인치 로켓 T57 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/182mm_t91 ic"
 msgid "7.2-inch Rockets T102 [<c(c9a6ff)>IC</c>]"
-msgstr ""
+msgstr "7.2인치 로켓 T102 [<c(c9a6ff)>IC</c>]"
 
 msgctxt "desc/ammo/182mm_t91 sm"
 msgid "7.2-inch Rockets T88 [SMOKE]"
-msgstr ""
+msgstr "7.2인치 로켓 T88 [연막]"
 
 msgctxt "desc/ammo/114mm_m8 he"
 msgid "4.5-inch Rockets M8 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 M8 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_m8 he2"
 msgid "4.5-inch Rockets T41 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 T41 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_m8 heat"
 msgid "4.5-inch Rockets T3 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 T3 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/114mm_m16 wp"
 msgid "4.5-inch Rockets T84 [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 T84 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/114mm_m16 he"
 msgid "4.5-inch Rockets M16 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 M16 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_m12a1 he"
 msgid "4.5-inch Rockets M20 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 M20 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_mk10 he"
 msgid "4.5-inch Rockets Mk. 10 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 Mk. 10 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_mk10 wp"
 msgid "4.5-inch Rockets Mk. 10 [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 Mk. 10 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/114mm_mk3 he"
 msgid "4.5-inch Rockets Mk. 3 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 Mk. 3 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_mk3 wp"
 msgid "4.5-inch Rockets Mk. 3 [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "4.5인치 로켓 Mk. 3 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/bulletusa_240 he"
 msgid "240mm M114 [<c(ff1200)>HE</c>] <c(65696d)>L/35</c>"
-msgstr ""
+msgstr "240mm M114 [<c(ff1200)>HE</c>] <c(65696d)>L/35</c>"
 
 msgctxt "desc/ammo/bulletusa_155_l40 apcbche"
 msgid "155mm APC-T, Projectile M112B1 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/41</c>"
-msgstr ""
+msgstr "155mm APC-T, 탄 M112B1 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/41</c>"
 
 msgctxt "desc/ammo/bulletusa_155_l40 hvap"
 msgid "155mm HVAP-T, Shot T35E1 [<c(48c445)>HVAP</c>] <c(65696d)>L/41</c>"
-msgstr ""
+msgstr "155mm HVAP-T, 탄 T35E1 [<c(48c445)>HVAP</c>] <c(65696d)>L/41</c>"
 
 msgctxt "desc/ammo/bulletusa_155_l40 he"
 msgid "155mm HE, Shell M107 [<c(ff1200)>HE</c>] <c(65696d)>L/41</c>"
-msgstr ""
+msgstr "155mm HE, 포탄 M107 [<c(ff1200)>HE</c>] <c(65696d)>L/41</c>"
 
 msgctxt "desc/ammo/bulletusa_155_l40 hvap"
 msgid "T35 Shell [<c(48c445)>HVAP</c>] <c(65696d)>L/41</c>"
-msgstr ""
+msgstr "T35 포탄 [<c(48c445)>HVAP</c>] <c(65696d)>L/41</c>"
 
 msgctxt "desc/ammo/mortarrus_155 he"
 msgid "155mm HE, Shell T26E1 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "155mm HE, 포탄 T26E1 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarrus_155 wp"
 msgid "155mm Smoke WP, Shell T28E2 [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "155mm 연막 WP, 포탄 T28E2 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/t15e1_bulletusa_105 apcbc"
 msgid "105mm APC-T, Projectile T32E1 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/65</c>"
-msgstr ""
+msgstr "105mm APC-T, 탄 T32E1 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/65</c>"
 
 msgctxt "desc/ammo/t15e1_bulletusa_105 apcbche"
 msgid "105mm APC-T, Projectile T13E1 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/65</c>"
-msgstr ""
+msgstr "105mm APC-T, 탄 T13E1 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/65</c>"
 
 msgctxt "desc/ammo/t15e1_bulletusa_105 hvap"
 msgid "105mm HVAP-T, Shot T29E3 [<c(48c445)>HVAP</c>] <c(65696d)>L/65</c>"
-msgstr ""
+msgstr "105mm HVAP-T, 탄 T29E3 [<c(48c445)>HVAP</c>] <c(65696d)>L/65</c>"
 
 msgctxt "desc/ammo/t15e1_bulletusa_105 he"
 msgid "105mm HE, Shell T30E1 [<c(ff1200)>HE</c>] <c(65696d)>L/65</c>"
-msgstr ""
+msgstr "105mm HE, 포탄 T30E1 [<c(ff1200)>HE</c>] <c(65696d)>L/65</c>"
 
 msgctxt "desc/ammo/bulletusa_120 apcbc"
 msgid "120mm APC-T, Projectile T14E3 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm APC-T, 탄 T14E3 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletusa_120 hvap"
 msgid "120mm HVAP-T, Shot T17E1 [<c(48c445)>HVAP</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm HVAP-T, 탄 T17E1 [<c(48c445)>HVAP</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletusa_120 he"
 msgid "120mm HE, Shell T15E1 [<c(ff1200)>HE</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm HE, 포탄 T15E1 [<c(ff1200)>HE</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletusa_120 apds"
 msgid "120mm APDS-T, Shot T18E1 [<c(48c445)>APDS</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm APDS-T, 탄 T18E1 [<c(48c445)>APDS</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/114mm_m17 he"
 msgid "4.5-inch M17 Rockets [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "4.5인치 M17 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/114mm_m17 wp"
 msgid "4.5-inch M17 Rockets [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "4.5인치 M17 로켓 [<c(FFFFFF)>WP</c>]"

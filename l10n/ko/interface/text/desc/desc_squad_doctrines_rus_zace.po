@@ -16,176 +16,176 @@ msgstr ""
 
 msgctxt "desc/squad/doctrine_zsu_37"
 msgid "<c(B29557)>( I )</c> ZSU-37"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> ZSU-37"
 
 msgctxt "desc/squad/doctrine_t70_45_inf"
 msgid "<c(B29557)>( I )</c> T-70 VT-42 With inf."
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T-70 VT-42 보병 포함"
 
 msgctxt "desc/squad/doctrine_t50e"
 msgid "<c(B29557)>( I )</c> T-50 (Up-Armored)"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T-50 (증가장갑)"
 
 msgctxt "desc/squad/doctrine_t_26e"
 msgid "<c(B29557)>( I )</c> T-26 (Up-Armored)"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T-26 (증가장갑)"
 
 msgctxt "desc/squad/doctrine_m41_ampulomet_late"
 msgid "<c(B29557)>( I )</c> Ampulomet M1941"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Ampulomet M1941"
 
 msgctxt "desc/squad/doctrine_ksp_76"
 msgid "<c(B29557)>( I )</c> KSP 76"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> KSP 76"
 
 msgctxt "desc/squad/doctrine_zut_37"
 msgid "<c(B29557)>( I )</c> ZUT-37"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> ZUT-37"
 
 msgctxt "desc/squad/doctrine_2m4a2_76_rus"
 msgid "<c(B29557)>( II )</c> 2x M4A2(76)W"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> 2x M4A2(76)W"
 
 msgctxt "desc/squad/doctrine_t_42"
 msgid "<c(B29557)>( II )</c> T-42 + Some Conscripts"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> T-42 + 일부 징집병"
 
 msgctxt "desc/squad/doctrine_towed_d44"
 msgid "<c(B29557)>( II )</c> D-44"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> D-44"
 
 msgctxt "desc/squad/doctrine_kv220_2"
 msgid "<c(B29557)>( II )</c> KV-220-2"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> KV-220-2"
 
 msgctxt "desc/squad/doctrine_zsu_29k"
 msgid "<c(B29557)>( II )</c> YaG-10 (29-K)"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> YaG-10 (29-K)"
 
 msgctxt "desc/squad/doctrine_yag10_29k_late"
 msgid "<c(B29557)>( II )</c> YaG-10 29-K"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> YaG-10 29-K"
 
 msgctxt "desc/squad/doctrine_churchill3_valentine9"
 msgid "<c(B29557)>( II )</c> Churchill III + Valentine IX + matilda f96"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> Churchill III + Valentine IX + matilda f96"
 
 msgctxt "desc/squad/doctrine_kv85"
 msgid "<c(B29557)>( II ) <c(E56042)>1.</c> </c> KV-85"
-msgstr ""
+msgstr "<c(B29557)>( II ) <c(E56042)>1.</c> </c> KV-85"
 
 msgctxt "desc/squad/doctrine_kv122"
 msgid "<c(B29557)>( II ) <c(E56042)>2.</c> </c> KV-122"
-msgstr ""
+msgstr "<c(B29557)>( II ) <c(E56042)>2.</c> </c> KV-122"
 
 msgctxt "desc/squad/doctrine_kv_220"
 msgid "<c(B29557)>( II )</c> KV-220"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> KV-220"
 
 msgctxt "desc/squad/doctrine_zis6_bm8_48_late"
 msgid "<c(B29557)>( III )</c> BM-8-48 (ZiS-6)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> BM-8-48 (ZiS-6)"
 
 msgctxt "desc/squad/doctrine_107mm_m1910_30_late"
 msgid "<c(B29557)>( III )</c> 107mm M1910/30"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> 107mm M1910/30"
 
 msgctxt "desc/squad/doctrine_kv2_zis6"
 msgid "<c(B29557)>( III )</c> KV-2 (ZiS-6)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> KV-2 (ZiS-6)"
 
 msgctxt "desc/squad/doctrine_t44_122"
 msgid "<c(B29557)>( III )</c> T-44-122"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> T-44-122"
 
 msgctxt "desc/squad/doctrine_t44a"
 msgid "<c(B29557)>( III )</c> T-44A"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> T-44A"
 
 msgctxt "desc/squad/doctrine_t34_100"
 msgid "<c(B29557)>( III )</c> T-34-100"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> T-34-100"
 
 msgctxt "desc/squad/doctrine_t_v_85"
 msgid "<c(B29557)>( III )</c> T-V (85mm)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> T-V (85mm)"
 
 msgctxt "desc/entity/doctrine_t60_bm8_24_late"
 msgid "<c(B29557)>( III )</c> BM-8-24 (T-60)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> BM-8-24 (T-60)"
 
 msgctxt "desc/squad/doctrine_122mm_a19"
 msgid "<c(B29557)>( IV )</c> 122mm A-19"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 122mm A-19"
 
 msgctxt "desc/squad/doctrine_su_14"
 msgid "<c(B29557)>( IV )</c> SU-14-1"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> SU-14-1"
 
 msgctxt "desc/squad/doctrine_zis6_bm13_16_late"
 msgid "<c(B29557)>( IV )</c> BM-13-16 (ZiS-6)"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> BM-13-16 (ZiS-6)"
 
 msgctxt "desc/squad/doctrine_d1"
 msgid "<c(B29557)>( IV )</c> 152mm D1 M1943"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 152mm D1 M1943"
 
 msgctxt "desc/squad/doctrine_is2b"
 msgid "<c(B29557)>( IV )</c> IS-2 M1945"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> IS-2 M1945"
 
 msgctxt "desc/squad/doctrine_t_vi_100"
 msgid "<c(B29557)>( IV )</c> <c(E56042)>2.</c> T-VI (100mm)"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> <c(E56042)>2.</c> T-VI (100mm)"
 
 msgctxt "desc/squad/doctrine_isu152_2"
 msgid "<c(B29557)>( IV )</c> ISU-152-2"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> ISU-152-2"
 
 msgctxt "desc/squad/doctrine_kv4b"
 msgid "<c(B29557)>( IV )</c> KV-4B"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> KV-4B"
 
 msgctxt "desc/squad/doctrine_is_3"
 msgid "<c(B29557)>( IV )</c> IS-3"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> IS-3"
 
 msgctxt "desc/squad/doctrine_su14_2"
 msgid "<c(B29557)>( IV )</c> SU-14-2"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> SU-14-2"
 
 msgctxt "desc/squad/doctrine_203mm_b4_late"
 msgid "<c(B29557)>( IV )</c> 203mm B4-M"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 203mm B4-M"
 
 msgctxt "desc/squad/doctrine_280mm_br5_late"
 msgid "<c(B29557)>( V )</c> 280mm Br-5"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 280mm Br-5"
 
 msgctxt "desc/squad/doctrine_152mm_br2_late"
 msgid "<c(B29557)>( V )</c> 152mm Br-2"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 152mm Br-2"
 
 msgctxt "desc/squad/doctrine_bm31"
 msgid "<c(B29557)>( V )</c> Studebaker BM-31-12"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> Studebaker BM-31-12"
 
 msgctxt "desc/squad/doctrine_rbt_5"
 msgid "<c(B29557)>( V )</c> RBT-5"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> RBT-5"
 
 msgctxt "desc/squad/doctrine_300mm_bm31"
 msgid "<c(B29557)>( V )</c> 300mm BM-31"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 300mm BM-31"
 
 msgctxt "desc/squad/doctrine_is_4"
 msgid "<c(B29557)>( V )</c> IS-4"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> IS-4"
 
 msgctxt "desc/squad/doctrine_is_6"
 msgid "<c(B29557)>( V )</c> IS-6"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> IS-6"
 
 msgctxt "desc/squad/doctrine_152mm_ml20_late"
 msgid "<c(B29557)>( IV )</c> 152mm ML-20"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 152mm ML-20"

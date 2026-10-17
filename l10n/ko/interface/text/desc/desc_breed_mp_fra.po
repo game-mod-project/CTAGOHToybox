@@ -16,40 +16,40 @@ msgstr ""
 
 msgctxt "desc/human/mp/fra/early/rifle"
 msgid "Rifleman [ADT]"
-msgstr ""
+msgstr "소총수 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/mg_assist"
 msgid "MG Asst. [ADT]"
-msgstr ""
+msgstr "기관총 부사수 [ADT]"
 
 msgctxt "desc/human/mp/fra/early/mg"
 msgid "MG Operator [ADT]"
-msgstr ""
+msgstr "기관총 사수 [ADT]"
 
 msgctxt "desc/human/mp/fra/late/resistance_bren"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"
 
 msgctxt "desc/human/mp/fra/late/resistance_enfield"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"
 
 msgctxt "desc/human/mp/fra/late/resistance_k98"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"
 
 msgctxt "desc/human/mp/fra/late/resistance_k98_pzf"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"
 
 msgctxt "desc/human/mp/fra/late/resistance_mg34"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"
 
 msgctxt "desc/human/mp/fra/late/resistance_mp40"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"
 
 msgctxt "desc/human/mp/fra/late/resistance_sten"
 msgid "French Resistance Fighter [FFI]"
-msgstr ""
+msgstr "프랑스 저항군 대원 [FFI]"

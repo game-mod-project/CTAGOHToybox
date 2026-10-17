@@ -147,7 +147,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task_secret_01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task_secret_01_completed"
 msgid "Secret objective #1: Find a cave with hidden British equipment"

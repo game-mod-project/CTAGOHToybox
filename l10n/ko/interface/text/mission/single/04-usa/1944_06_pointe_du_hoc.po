@@ -132,7 +132,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/naval_arty"
 msgid "Naval Artillery"
-msgstr ""
+msgstr "함포"
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/naval_arty_hint"
 msgid "Call in naval support from USS Satterlee"
@@ -176,7 +176,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/skip"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/story"
 msgid " “Operation Overlord” has begun! The largest armada of warships ever to have been assembled is crossing the English Channel towards France. Careful planning and reconnaissance has shown that it will be essential to take out specific parts of the “Atlantic wall” just before the beaches are stormed by the allies. One of them is the German battery at Pointe du Hoc. It is up to the 2nd Ranger battalion to scale Pointe du Hoc and silence the battery.\n\n In this mission, you will land on the small beach and fight your way to the top. Once at the top, you must drive the defenders away and find the battery. You will get support from USS Satterlee and the US air force if needed. This is where the liberation of Europe starts.\n\nGood luck!"
@@ -300,7 +300,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/gameover_units_dead"
 msgid "You lost all your units."
-msgstr ""
+msgstr "모든 유닛을 잃었다."
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/mission_fallback_beach"
 msgid "Fallback to the positions on the beach"
@@ -333,4 +333,4 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/secret01_secret01_shown"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"

@@ -15,16 +15,16 @@ msgstr ""
 
 msgctxt "mission/multi/2v2_courtyard/weather_options_choices"
 msgid "Select the weather conditions for the battle:"
-msgstr ""
+msgstr "전투의 날씨를 고르시오:"
 
 msgctxt "mission/multi/2v2_courtyard/any_weather"
 msgid "Any weather conditions"
-msgstr ""
+msgstr "아무 날씨"
 
 msgctxt "mission/multi/2v2_courtyard/day_weather"
 msgid "Daytime"
-msgstr ""
+msgstr "낮"
 
 msgctxt "mission/multi/2v2_courtyard/night_weather"
 msgid "Nighttime"
-msgstr ""
+msgstr "밤"

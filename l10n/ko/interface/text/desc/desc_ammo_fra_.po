@@ -15,12 +15,12 @@ msgstr ""
 
 msgctxt "desc/ammo/bulletfra_25 ap"
 msgid "25 mm Mle 1934 P (Ch F) [<c(ff6a00)>AP</c>] <c(65696d)>L/72</c>"
-msgstr ""
+msgstr "25 mm Mle 1934 P (Ch F) [<c(ff6a00)>AP</c>] <c(65696d)>L/72</c>"
 
 msgctxt "desc/ammo/rifle_fra clip"
 msgid "8mm Berthier clip"
-msgstr ""
+msgstr "8mm Berthier 클립"
 
 msgctxt "desc/ammo/fm_24_29_mag"
 msgid "7.5mm FM 24/29 Magazine"
-msgstr ""
+msgstr "7.5mm FM 24/29 탄창"

@@ -27,7 +27,7 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_sq"
 msgid "Pz-Lehr Pz.Sturmgrenadier squad"
-msgstr ""
+msgstr "판처 레어 판처슈투름그레나디어 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_ht"
 msgid "Pz-Lehr Armored Pz.Sturmgrenadier"
@@ -43,23 +43,23 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_1"
 msgid "Sd.Kfz 234/1 (2cm)"
-msgstr ""
+msgstr "Sd.Kfz 234/1 (2cm)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_3"
 msgid "Sd.Kfz 234/3 (7.5cm)"
-msgstr ""
+msgstr "Sd.Kfz 234/3 (7.5cm)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz250a_9"
 msgid "Sd.Kfz 250/9 (2cm)"
-msgstr ""
+msgstr "Sd.Kfz 250/9 (2cm)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_16"
 msgid "Sd.Kfz 251/16 Ausf. D (14mm Flamm)"
-msgstr ""
+msgstr "Sd.Kfz 251/16 Ausf. D (14mm Flamm)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/artymen"
 msgid "Artillerymen"
-msgstr ""
+msgstr "포병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_22"
 msgid "Sd.Kfz 251/22 Ausf.D (7.5cm PaK 40)"
@@ -67,19 +67,19 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/105mm_lefh18_40"
 msgid "10.5cm LeFH 18/40"
-msgstr ""
+msgstr "10.5cm LeFH 18/40"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz7_1"
 msgid "Sd.Kfz 7/1 (2cm)"
-msgstr ""
+msgstr "Sd.Kfz 7/1 (2cm)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_4"
 msgid "Sd.Kfz 234/4 (7.5cm PaK 40)"
-msgstr ""
+msgstr "Sd.Kfz 234/4 (7.5cm PaK 40)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz7_2"
 msgid "Sd.Kfz 7/2 (3.7cm FlaK)"
-msgstr ""
+msgstr "Sd.Kfz 7/2 (3.7cm FlaK)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_21"
 msgid "Sd.Kfz 251/21 Ausf.D (15mm Drilling)"
@@ -87,7 +87,7 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/mg42_lafette"
 msgid "Lafette MG 42"
-msgstr ""
+msgstr "Lafette MG 42"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/hintartybonus"
 msgid "Artillery strike of the selected area"
@@ -95,11 +95,11 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/artystrike_heavy"
 msgid "Heavy Artillery Barrage"
-msgstr ""
+msgstr "대형 포병 포격"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/artystrike_heavy"
 msgid "Heavy artillery barrage"
-msgstr ""
+msgstr "대형 포병 포격"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/artystrike"
 msgid "Artillery barrage"
@@ -111,24 +111,24 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/hummel"
 msgid "Hummel"
-msgstr ""
+msgstr "Hummel"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/wespe"
 msgid "Wespe"
-msgstr ""
+msgstr "Wespe"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/grille_k"
 msgid "Grille Ausf.K (15cm)"
-msgstr ""
+msgstr "Grille Ausf.K (15cm)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/wirbelwind"
 msgid "FlakPz.IV Wirbelwind"
-msgstr ""
+msgstr "FlakPz.IV Wirbelwind"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/ostwind"
 msgid "FlakPz.IV Ostwind"
-msgstr ""
+msgstr "FlakPz.IV Ostwind"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/jagdpanzer4_l48"
 msgid "Jagdpanzer IV"
-msgstr ""
+msgstr "Jagdpanzer IV"

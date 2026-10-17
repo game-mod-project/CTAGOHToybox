@@ -19,7 +19,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/hint"
 msgid "Deploy your reinforcements on the battlefield"
-msgstr ""
+msgstr "증원을 전장에 배치하라"
 
 msgctxt "mission/single/04-usa/menu_usa/menu:1_1"
 msgid "Infantry"
@@ -27,7 +27,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/menu:2_1"
 msgid "Support"
-msgstr ""
+msgstr "지원"
 
 msgctxt "mission/single/04-usa/menu_usa/menu:3_1"
 msgid "Vehicles"
@@ -39,35 +39,35 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/menu:back"
 msgid "Return to menu"
-msgstr ""
+msgstr "메뉴로 돌아가기"
 
 msgctxt "mission/single/04-usa/menu_usa/airstrike"
 msgid "Air strike"
-msgstr ""
+msgstr "공습"
 
 msgctxt "mission/single/04-usa/menu_usa/crew"
 msgid "Tank crew"
-msgstr ""
+msgstr "전차 승무원"
 
 msgctxt "mission/single/04-usa/menu_usa/artymen"
 msgid "Artillerymen"
-msgstr ""
+msgstr "포병"
 
 msgctxt "mission/single/04-usa/menu_usa/sniper"
 msgid "Sniper"
-msgstr ""
+msgstr "저격수"
 
 msgctxt "mission/single/04-usa/menu_usa/officer"
 msgid "Officer"
-msgstr ""
+msgstr "장교"
 
 msgctxt "mission/single/04-usa/menu_usa/medic"
 msgid "Medic"
-msgstr ""
+msgstr "위생병"
 
 msgctxt "mission/single/04-usa/menu_usa/flamer"
 msgid "Flamer"
-msgstr ""
+msgstr "화염방사병"
 
 msgctxt "mission/single/04-usa/menu_usa/signaller"
 msgid "Battery signaller"
@@ -75,7 +75,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/atsq"
 msgid "AT squad"
-msgstr ""
+msgstr "대전차 분대"
 
 msgctxt "mission/single/04-usa/menu_usa/inf"
 msgid "Rifle squad"
@@ -95,7 +95,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/engineer_sq"
 msgid "Engineer squad"
-msgstr ""
+msgstr "공병 분대"
 
 msgctxt "mission/single/04-usa/menu_usa/airborne_sq"
 msgid "Airborne squad"
@@ -119,19 +119,19 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/crate"
 msgid "Supply Crate"
-msgstr ""
+msgstr "보급 상자"
 
 msgctxt "mission/single/04-usa/menu_usa/cckw_art_ammo"
 msgid "Supply Truck"
-msgstr ""
+msgstr "보급 트럭"
 
 msgctxt "mission/single/04-usa/menu_usa/cckw_fuel"
 msgid "Fuel Truck"
-msgstr ""
+msgstr "연료 트럭"
 
 msgctxt "mission/single/04-usa/menu_usa/cckw_fuel"
 msgid "Fuel Truck"
-msgstr ""
+msgstr "연료 트럭"
 
 msgctxt "mission/single/04-usa/menu_usa/cckw_engineer"
 msgid "Engineering Truck"
@@ -139,15 +139,15 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m2_30cal_tripod"
 msgid "Browning M1919A4"
-msgstr ""
+msgstr "Browning M1919A4"
 
 msgctxt "mission/single/04-usa/menu_usa/m2_50cal_tripod"
 msgid "Browning M2HB"
-msgstr ""
+msgstr "Browning M2HB"
 
 msgctxt "mission/single/04-usa/menu_usa/m8_greyhound"
 msgid "M8 Greyhound"
-msgstr ""
+msgstr "M8 Greyhound"
 
 msgctxt "mission/single/04-usa/menu_usa/m21_mortar_carrier"
 msgid "Mortar Carrier M21"
@@ -155,39 +155,39 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m15a1_cgmc"
 msgid "CGMC M15A1"
-msgstr ""
+msgstr "CGMC M15A1"
 
 msgctxt "mission/single/04-usa/menu_usa/m20"
 msgid "M20"
-msgstr ""
+msgstr "M20"
 
 msgctxt "mission/single/04-usa/menu_usa/m2_halftrack"
 msgid "M2 Halftrack"
-msgstr ""
+msgstr "M2 Halftrack"
 
 msgctxt "mission/single/04-usa/menu_usa/50cal_quad_m45"
 msgid "M55 Quadmount"
-msgstr ""
+msgstr "M55 4연장 기관총"
 
 msgctxt "mission/single/04-usa/menu_usa/m5a1_stuart"
 msgid "M5A1 Stuart"
-msgstr ""
+msgstr "M5A1 Stuart"
 
 msgctxt "mission/single/04-usa/menu_usa/m24_chaffee"
 msgid "M24 Chaffee"
-msgstr ""
+msgstr "M24 Chaffee"
 
 msgctxt "mission/single/04-usa/menu_usa/81mm_m1"
 msgid "81mm Mortar M1"
-msgstr ""
+msgstr "81mm Mortar M1"
 
 msgctxt "mission/single/04-usa/menu_usa/60mm_m2"
 msgid "60mm Mortar M2"
-msgstr ""
+msgstr "60mm Mortar M2"
 
 msgctxt "mission/single/04-usa/menu_usa/37mm_m3a1"
 msgid "37mm Gun M3A1"
-msgstr ""
+msgstr "37mm Gun M3A1"
 
 msgctxt "mission/single/04-usa/menu_usa/m21_mortar_carrier"
 msgid "Mortar Carrier M21"
@@ -195,19 +195,19 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/57mm_m1"
 msgid "57mm Gun M1"
-msgstr ""
+msgstr "57mm Gun M1"
 
 msgctxt "mission/single/04-usa/menu_usa/105mm_m2a1"
 msgid "105mm M2A1"
-msgstr ""
+msgstr "105mm M2A1"
 
 msgctxt "mission/single/04-usa/menu_usa/90mm_m1a1"
 msgid "90mm Gun M1A1"
-msgstr ""
+msgstr "90mm Gun M1A1"
 
 msgctxt "mission/single/04-usa/menu_usa/m16_mgmc"
 msgid "MGMC M16"
-msgstr ""
+msgstr "MGMC M16"
 
 msgctxt "mission/single/04-usa/menu_usa/40mm_m1"
 msgid "40mm Automatic M1"
@@ -227,7 +227,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/107mm_m2"
 msgid "4.2-inch Mortar M2"
-msgstr ""
+msgstr "4.2-inch Mortar M2"
 
 msgctxt "mission/single/04-usa/menu_usa/m10_gmc"
 msgid "M10 Wolverine"
@@ -235,7 +235,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m8_hmc"
 msgid "75mm HMC M8"
-msgstr ""
+msgstr "75mm HMC M8"
 
 msgctxt "mission/single/04-usa/menu_usa/m18_hellcat"
 msgid "M18 'Hellcat'"
@@ -243,11 +243,11 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m4a1_75_late"
 msgid "M4A1 (Late)"
-msgstr ""
+msgstr "M4A1 (후기)"
 
 msgctxt "mission/single/04-usa/menu_usa/m4a3_75_late"
 msgid "M4A3 (Late)"
-msgstr ""
+msgstr "M4A3 (후기)"
 
 msgctxt "mission/single/04-usa/menu_usa/m4a3_75w_e4_5"
 msgid "M4A3(75)W 'E4-5'"
@@ -267,15 +267,15 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m4a3_105"
 msgid "M4A3(105)"
-msgstr ""
+msgstr "M4A3(105)"
 
 msgctxt "mission/single/04-usa/menu_usa/m4a3_105_hvss"
 msgid "M4A3(105) HVSS"
-msgstr ""
+msgstr "M4A3(105) HVSS"
 
 msgctxt "mission/single/04-usa/menu_usa/m26_pershing"
 msgid "M26 Pershing"
-msgstr ""
+msgstr "M26 Pershing"
 
 msgctxt "mission/single/04-usa/menu_usa/m36b1_gmc_t33"
 msgid "M36B1 'Slugger'"
@@ -287,7 +287,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m4a3_76w_hvss"
 msgid "M4A3(76)W HVSS"
-msgstr ""
+msgstr "M4A3(76)W HVSS"
 
 msgctxt "mission/single/04-usa/menu_usa/m7b1_hmc"
 msgid "M7B1 Priest"
@@ -295,15 +295,15 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m4a1_76w"
 msgid "M4A1(76)W"
-msgstr ""
+msgstr "M4A1(76)W"
 
 msgctxt "mission/single/04-usa/menu_usa/m4a3_76w"
 msgid "M4A3(76)W"
-msgstr ""
+msgstr "M4A3(76)W"
 
 msgctxt "mission/single/04-usa/menu_usa/105mm_m3"
 msgid "105mm Howitzer M3"
-msgstr ""
+msgstr "105mm Howitzer M3"
 
 msgctxt "mission/single/04-usa/menu_usa/155mm_m1a1_longtom"
 msgid "155mm 'Long Tom'"
@@ -315,7 +315,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/155mm_m1"
 msgid "155mm Howitzer M1"
-msgstr ""
+msgstr "155mm Howitzer M1"
 
 msgctxt "mission/single/04-usa/menu_usa/203mm_m1"
 msgid "8in Howitzer M1"
@@ -323,4 +323,4 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/menu_usa/m12_gmc"
 msgid "155mm GMC M12"
-msgstr ""
+msgstr "155mm GMC M12"

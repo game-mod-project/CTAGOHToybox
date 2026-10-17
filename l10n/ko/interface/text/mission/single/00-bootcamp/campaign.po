@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/00-bootcamp/campaign/name"
 msgid "Basic Combat Training, 1939-1941"
-msgstr ""
+msgstr "기초 전투 훈련, 1939-1941"
 
 msgctxt "mission/single/00-bootcamp/campaign/title"
 msgid "BOOT CAMP"
-msgstr ""
+msgstr "신병 훈련소"

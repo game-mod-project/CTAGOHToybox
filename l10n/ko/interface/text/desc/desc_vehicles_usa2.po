@@ -15,340 +15,340 @@ msgstr ""
 
 msgctxt "desc/entity/us_t29"
 msgid "T29"
-msgstr ""
+msgstr "T29"
 
 msgctxt "info/special/us_t29"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/t30_usa"
 msgid "T30"
-msgstr ""
+msgstr "T30"
 
 msgctxt "info/special/t30_usa"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/t34_usa"
 msgid "T34"
-msgstr ""
+msgstr "T34"
 
 msgctxt "info/special/t34_usa"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/m5_hst_ammo"
 msgid "M5 High-Speed Tractor (HMG) - AMMO"
-msgstr ""
+msgstr "M5 고속 트랙터 (HMG) - 탄약"
 
 msgctxt "desc/entity/t57_tank"
 msgid "T57"
-msgstr ""
+msgstr "T57"
 
 msgctxt "desc/entity/t92_hmc"
 msgid "T92"
-msgstr ""
+msgstr "T92"
 
 msgctxt "desc/entity/t49"
 msgid "T49"
-msgstr ""
+msgstr "T49"
 
 msgctxt "desc/entity/m46"
 msgid "M46 Patton"
-msgstr ""
+msgstr "M46 Patton"
 
 msgctxt "desc/entity/m46_1"
 msgid "M46 Patton (105mm)"
-msgstr ""
+msgstr "M46 Patton (105mm)"
 
 msgctxt "desc/entity/t95"
 msgid "T95"
-msgstr ""
+msgstr "T95"
 
 msgctxt "desc/entity/m103"
 msgid "M103"
-msgstr ""
+msgstr "M103"
 
 msgctxt "desc/entity/t110e3"
 msgid "T110E3"
-msgstr ""
+msgstr "T110E3"
 
 msgctxt "desc/entity/t110e5"
 msgid "T110E5"
-msgstr ""
+msgstr "T110E5"
 
 msgctxt "desc/entity/m-v-y_tank1"
 msgid "M-V-Y '120mm Gun T124'"
-msgstr ""
+msgstr "M-V-Y '120mm Gun T124'"
 
 msgctxt "desc/entity/m-v-y_tank"
 msgid "M-V-Y '105mm Gun T141'"
-msgstr ""
+msgstr "M-V-Y '105mm Gun T141'"
 
 msgctxt "desc/entity/60tp_l"
 msgid "60TP 'Lewandowskiego'"
-msgstr ""
+msgstr "60TP 'Lewandowskiego'"
 
 msgctxt "desc/entity/60tp_l_aa"
 msgid "60TP AA 'Lewandowskiego'"
-msgstr ""
+msgstr "60TP AA 'Lewandowskiego'"
 
 msgctxt "desc/entity/caernarvon"
 msgid "Caernarvon"
-msgstr ""
+msgstr "Caernarvon"
 
 msgctxt "desc/entity/tog2"
 msgid "TOG II*"
-msgstr ""
+msgstr "TOG II*"
 
 msgctxt "desc/entity/centurion"
 msgid "Centurion Mk. I"
-msgstr ""
+msgstr "Centurion Mk. I"
 
 msgctxt "desc/entity/conqueror"
 msgid "Conqueror"
-msgstr ""
+msgstr "Conqueror"
 
 msgctxt "desc/entity/tortez"
 msgid "Tortoise"
-msgstr ""
+msgstr "Tortoise"
 
 msgctxt "desc/entity/fv215"
 msgid "FV215"
-msgstr ""
+msgstr "FV215"
 
 msgctxt "desc/entity/fv215b"
 msgid "FV215b"
-msgstr ""
+msgstr "FV215b"
 
 msgctxt "desc/entity/fv215b_183"
 msgid "FV215b (183mm)"
-msgstr ""
+msgstr "FV215b (183mm)"
 
 msgctxt "desc/entity/aht7"
 msgid "AHT-7"
-msgstr ""
+msgstr "AHT-7"
 
 msgctxt "desc/entity/t58"
 msgid "T58"
-msgstr ""
+msgstr "T58"
 
 msgctxt "desc/entity/fv4025"
 msgid "FV4025"
-msgstr ""
+msgstr "FV4025"
 
 msgctxt "desc/entity/ares90c"
 msgid "Ares 90C"
-msgstr ""
+msgstr "Ares 90C"
 
 msgctxt "desc/entity/blackrock"
 msgid "Blackrock"
-msgstr ""
+msgstr "Blackrock"
 
 msgctxt "desc/entity/super_conquer"
 msgid "Super Conqueror"
-msgstr ""
+msgstr "Super Conqueror"
 
 msgctxt "desc/entity/amxm4"
 msgid "AMX M4"
-msgstr ""
+msgstr "AMX M4"
 
 msgctxt "desc/entity/amx67"
 msgid "AMX 67"
-msgstr ""
+msgstr "AMX 67"
 
 msgctxt "desc/entity/skink"
 msgid "Skink"
-msgstr ""
+msgstr "Skink"
 
 msgctxt "desc/entity/t803"
 msgid "T803"
-msgstr ""
+msgstr "T803"
 
 msgctxt "desc/entity/executor"
 msgid "Executor"
-msgstr ""
+msgstr "Executor"
 
 msgctxt "info/special/executor"
 msgid "<c(c3baae)>Wheeled Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>차륜 전차</c>"
 
 msgctxt "desc/entity/t26e5"
 msgid "T26E5"
-msgstr ""
+msgstr "T26E5"
 
 msgctxt "desc/entity/centurion_mk10"
 msgid "Centurion Mk.10"
-msgstr ""
+msgstr "Centurion Mk.10"
 
 msgctxt "desc/entity/conqueror_mk2"
 msgid "Conqueror Mk.2"
-msgstr ""
+msgstr "Conqueror Mk.2"
 
 msgctxt "desc/entity/chieftain5"
 msgid "Chieftain Mk.5"
-msgstr ""
+msgstr "Chieftain Mk.5"
 
 msgctxt "desc/entity/centurion3"
 msgid "Centurion Mk.3"
-msgstr ""
+msgstr "Centurion Mk.3"
 
 msgctxt "desc/entity/gorilla"
 msgid "Gorilla"
-msgstr ""
+msgstr "Gorilla"
 
 msgctxt "desc/entity/fv4004_conway"
 msgid "FV4004 “Conway”"
-msgstr ""
+msgstr "FV4004 “Conway”"
 
 msgctxt "desc/entity/fv4005_stage_2"
 msgid "FV4005"
-msgstr ""
+msgstr "FV4005"
 
 msgctxt "desc/entity/amx105"
 msgid "AMX 105"
-msgstr ""
+msgstr "AMX 105"
 
 msgctxt "desc/entity/amx12t"
 msgid "AMX 12t"
-msgstr ""
+msgstr "AMX 12t"
 
 msgctxt "desc/entity/amx13_105"
 msgid "AMX 13 (105)"
-msgstr ""
+msgstr "AMX 13 (105)"
 
 msgctxt "desc/entity/amx13_75"
 msgid "AMX 13 (75)"
-msgstr ""
+msgstr "AMX 13 (75)"
 
 msgctxt "desc/entity/amx13_75_harpon"
 msgid "AMX 13 (75) 'Harpon'"
-msgstr ""
+msgstr "AMX 13 (75) 'Harpon'"
 
 msgctxt "desc/entity/amx13_90"
 msgid "AMX 13 (90)"
-msgstr ""
+msgstr "AMX 13 (90)"
 
 msgctxt "desc/entity/amx13_90_harpon"
 msgid "AMX 13 (90) 'Harpon'"
-msgstr ""
+msgstr "AMX 13 (90) 'Harpon'"
 
 msgctxt "desc/entity/amx13_genie"
 msgid "AMX 13 Génie"
-msgstr ""
+msgstr "AMX 13 Génie"
 
 msgctxt "desc/entity/amx13_maxson"
 msgid "AMX 13 Maxson"
-msgstr ""
+msgstr "AMX 13 Maxson"
 
 msgctxt "desc/entity/amx40_0"
 msgid "AMX 40"
-msgstr ""
+msgstr "AMX 40"
 
 msgctxt "desc/entity/amx40_ww2"
 msgid "AMX 40 (WW2)"
-msgstr ""
+msgstr "AMX 40 (WW2)"
 
 msgctxt "desc/entity/amx50_100"
 msgid "AMX 50 100"
-msgstr ""
+msgstr "AMX 50 100"
 
 msgctxt "desc/entity/amx_50_foch"
 msgid "AMX 50 Foch"
-msgstr ""
+msgstr "AMX 50 Foch"
 
 msgctxt "desc/entity/amx_50_t090"
 msgid "AMX 50 TO90"
-msgstr ""
+msgstr "AMX 50 TO90"
 
 msgctxt "desc/entity/amx_50b"
 msgid "AMX 50 B"
-msgstr ""
+msgstr "AMX 50 B"
 
 msgctxt "desc/entity/amx_auf1"
 msgid "AMX AuF1"
-msgstr ""
+msgstr "AMX AuF1"
 
 msgctxt "desc/entity/amx_m4_1949"
 msgid "AMX M4 mle. 49"
-msgstr ""
+msgstr "AMX M4 mle. 49"
 
 msgctxt "desc/entity/amx_mle48"
 msgid "AMX AC mle. 48"
-msgstr ""
+msgstr "AMX AC mle. 48"
 
 msgctxt "desc/entity/bat25t"
 msgid "Bat.-Châtillon 25 t"
-msgstr ""
+msgstr "Bat.-Châtillon 25 t"
 
 msgctxt "desc/entity/bdr_g1b_1934"
 msgid "BDR G1 B (1934)"
-msgstr ""
+msgstr "BDR G1 B (1934)"
 
 msgctxt "desc/entity/bdr_g1b_dca30"
 msgid "BDR G1 B (DCA 30)"
-msgstr ""
+msgstr "BDR G1 B (DCA 30)"
 
 msgctxt "desc/entity/bdr_g1b_sa32"
 msgid "BDR G1 B (SA32)"
-msgstr ""
+msgstr "BDR G1 B (SA32)"
 
 msgctxt "desc/entity/bdr_g1b_sa44"
 msgid "BDR G1 B (SA44)"
-msgstr ""
+msgstr "BDR G1 B (SA44)"
 
 msgctxt "desc/entity/elc_amx"
 msgid "AMX ELC"
-msgstr ""
+msgstr "AMX ELC"
 
 msgctxt "desc/entity/foch155"
 msgid "AMX 50 Foch (155)"
-msgstr ""
+msgstr "AMX 50 Foch (155)"
 
 msgctxt "desc/entity/lorraine40t_sd"
 msgid "Lorraine 40 t"
-msgstr ""
+msgstr "Lorraine 40 t"
 
 msgctxt "desc/entity/m4a1_fl10"
 msgid "M4A1 FL 10"
-msgstr ""
+msgstr "M4A1 FL 10"
 
 msgctxt "desc/entity/m4a1_revalorise"
 msgid "M4A1 Revalorisé"
-msgstr ""
+msgstr "M4A1 Revalorisé"
 
 msgctxt "desc/entity/somua_sm"
 msgid "Somua SM"
-msgstr ""
+msgstr "Somua SM"
 
 msgctxt "desc/entity/t32"
 msgid "T32"
-msgstr ""
+msgstr "T32"
 
 msgctxt "desc/entity/sfac105"
 msgid "SFAC 105"
-msgstr ""
+msgstr "SFAC 105"
 
 msgctxt "desc/entity/fauteur"
 msgid "Fauteur"
-msgstr ""
+msgstr "Fauteur"
 
 msgctxt "desc/entity/amx13_dca"
 msgid "AMX 13 DCA"
-msgstr ""
+msgstr "AMX 13 DCA"
 
 msgctxt "desc/entity/Jumbo90"
 msgid "M4/T26 “Jumbo”"
-msgstr ""
+msgstr "M4/T26 “Jumbo”"
 
 msgctxt "desc/entity/T110E4"
 msgid "T110E4"
-msgstr ""
+msgstr "T110E4"
 
 msgctxt "desc/entity/centrx"
 msgid "Centurion Action X"
-msgstr ""
+msgstr "Centurion Action X"
 
 msgctxt "desc/entity/black_prince"
 msgid "Black Prince"
-msgstr ""
+msgstr "Black Prince"

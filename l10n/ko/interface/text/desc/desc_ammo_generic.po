@@ -16,144 +16,144 @@ msgstr ""
 
 msgctxt "desc/ammo/ap"
 msgid "<f(anka)s(12)x.>Armor Piercing"
-msgstr ""
+msgstr "<f(anka)s(12)x.>철갑탄"
 
 msgctxt "desc/ammo/ap2"
 msgid "<f(anka)s(12)x.>Armor Piercing"
-msgstr ""
+msgstr "<f(anka)s(12)x.>철갑탄"
 
 msgctxt "desc/ammo/apbc"
 msgid "AP Ballistic Cap"
-msgstr ""
+msgstr "AP 탄도 캡"
 
 msgctxt "desc/ammo/apbc2"
 msgid "AP Ballistic Cap"
-msgstr ""
+msgstr "AP 탄도 캡"
 
 msgctxt "desc/ammo/apc"
 msgid "AP Capped"
-msgstr ""
+msgstr "AP 피모"
 
 msgctxt "desc/ammo/apc2"
 msgid "AP Capped"
-msgstr ""
+msgstr "AP 피모"
 
 msgctxt "desc/ammo/apcbc"
 msgid "AP Capped Ballist. Cap"
-msgstr ""
+msgstr "AP 피모 탄도 캡"
 
 msgctxt "desc/ammo/apcbc2"
 msgid "AP Capped Ballist. Cap"
-msgstr ""
+msgstr "AP 피모 탄도 캡"
 
 msgctxt "desc/ammo/apcbche"
 msgid "APC Ballist. Cap w/ HE Fill"
-msgstr ""
+msgstr "APC 탄도 캡, HE 충전"
 
 msgctxt "desc/ammo/apcbche2"
 msgid "APC Ballist. Cap w/ HE Fill"
-msgstr ""
+msgstr "APC 탄도 캡, HE 충전"
 
 msgctxt "desc/ammo/apche"
 msgid "AP Capped w/ HE Filler"
-msgstr ""
+msgstr "AP 피모, HE 충전"
 
 msgctxt "desc/ammo/apche2"
 msgid "AP Capped w/ HE Filler"
-msgstr ""
+msgstr "AP 피모, HE 충전"
 
 msgctxt "desc/ammo/apcr"
 msgid "AP Composite Rigid"
-msgstr ""
+msgstr "AP 복합 경질"
 
 msgctxt "desc/ammo/apcr2"
 msgid "AP Composite Rigid"
-msgstr ""
+msgstr "AP 복합 경질"
 
 msgctxt "desc/ammo/apds"
 msgid "AP Discarding Sabot"
-msgstr ""
+msgstr "AP 분리 새보"
 
 msgctxt "desc/ammo/apds2"
 msgid "AP Discarding Sabot"
-msgstr ""
+msgstr "AP 분리 새보"
 
 msgctxt "desc/ammo/aphe"
 msgid "AP w/ HE Filler"
-msgstr ""
+msgstr "AP, HE 충전"
 
 msgctxt "desc/ammo/aphe2"
 msgid "AP w/ HE Filler"
-msgstr ""
+msgstr "AP, HE 충전"
 
 msgctxt "desc/ammo/aphebc"
 msgid "AP Ballist. Cap w/ HE Fill"
-msgstr ""
+msgstr "AP 탄도 캡, HE 충전"
 
 msgctxt "desc/ammo/aphebc2"
 msgid "AP Ballist. Cap w/ HE Fill"
-msgstr ""
+msgstr "AP 탄도 캡, HE 충전"
 
 msgctxt "desc/ammo/he"
 msgid "High Explosive"
-msgstr ""
+msgstr "고폭탄"
 
 msgctxt "desc/ammo/he2"
 msgid "High Explosive"
-msgstr ""
+msgstr "고폭탄"
 
 msgctxt "desc/ammo/hei"
 msgid "High Explosive Incendiary"
-msgstr ""
+msgstr "고폭 소이탄"
 
 msgctxt "desc/stuff/bulleteng_20_auto"
 msgid "High Explosive Incendiary"
-msgstr ""
+msgstr "고폭 소이탄"
 
 msgctxt "desc/ammo/heat"
 msgid "High Explosive Anti Tank"
-msgstr ""
+msgstr "대전차 고폭탄"
 
 msgctxt "desc/ammo/heat2"
 msgid "High Explosive Anti Tank"
-msgstr ""
+msgstr "대전차 고폭탄"
 
 msgctxt "desc/ammo/heata"
 msgid "High Explosive Anti Tank"
-msgstr ""
+msgstr "대전차 고폭탄"
 
 msgctxt "desc/ammo/heatb"
 msgid "High Explosive Anti Tank"
-msgstr ""
+msgstr "대전차 고폭탄"
 
 msgctxt "desc/ammo/heatc"
 msgid "High Explosive Anti Tank"
-msgstr ""
+msgstr "대전차 고폭탄"
 
 msgctxt "desc/ammo/hvap"
 msgid "High Velocity Armor Piercing"
-msgstr ""
+msgstr "고속 철갑탄"
 
 msgctxt "desc/ammo/ic"
 msgid "Incendiary"
-msgstr ""
+msgstr "소이탄"
 
 msgctxt "desc/ammo/ic2"
 msgid "Incendiary"
-msgstr ""
+msgstr "소이탄"
 
 msgctxt "desc/ammo/sm"
 msgid "Smoke"
-msgstr ""
+msgstr "연막탄"
 
 msgctxt "desc/ammo/sm2"
 msgid "Smoke"
-msgstr ""
+msgstr "연막탄"
 
 msgctxt "desc/ammo/wp"
 msgid "White Phosphorus"
-msgstr ""
+msgstr "백린탄"
 
 msgctxt "desc/ammo/wp2"
 msgid "White Phosphorus"
-msgstr ""
+msgstr "백린탄"

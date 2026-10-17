@@ -363,7 +363,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret01_civilians"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret01_civilians_completed"
 msgid "Secret objective: A guy with big Moustache - Ask civilians for help"
@@ -371,7 +371,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret02_ushanka"
 msgid "Secret objective #2"
-msgstr ""
+msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/tasks/secret02_ushanka_completed"
 msgid "Secret objective: Ostfront Trophies - Put an Ushanka hat on while having a beer crate in hands"
@@ -387,7 +387,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/skip_preparation"
 msgid "Skip preparation"
-msgstr ""
+msgstr "준비 생략"
 
 msgctxt "mission/single/05-eng/1944_06_05_pegasus/ui/timer_bridge_lost"
 msgid "<c(B29557)>Take back the positions</c>"

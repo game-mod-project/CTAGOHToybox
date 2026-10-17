@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/01-rus/campaign/title"
 msgid "USSR, 1941-45"
-msgstr ""
+msgstr "소련, 1941~45"
 
 msgctxt "mission/single/01-rus/campaign/name"
 msgid "ZA RODINU!"
-msgstr ""
+msgstr "조국을 위하여!"

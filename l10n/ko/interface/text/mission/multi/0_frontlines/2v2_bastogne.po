@@ -15,16 +15,16 @@ msgstr ""
 
 msgctxt "mission/multi/0_frontlines/2v2_bastogne/weather_options_choices"
 msgid "Select the weather conditions for the battle:"
-msgstr ""
+msgstr "전투의 날씨를 고르시오:"
 
 msgctxt "mission/multi/0_frontlines/2v2_bastogne/any_weather"
 msgid "Any weather conditions"
-msgstr ""
+msgstr "아무 날씨"
 
 msgctxt "mission/multi/0_frontlines/2v2_bastogne/day_weather"
 msgid "Daytime"
-msgstr ""
+msgstr "낮"
 
 msgctxt "mission/multi/0_frontlines/2v2_bastogne/night_weather"
 msgid "Nighttime"
-msgstr ""
+msgstr "밤"

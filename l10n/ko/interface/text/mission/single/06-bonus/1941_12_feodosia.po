@@ -111,7 +111,7 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/skip_preparation"
 msgid "Skip preparation"
-msgstr ""
+msgstr "준비 생략"
 
 msgctxt "mission/single/06-bonus/1941_12_feodosia/story"
 msgid "You are going on a mission to support besieged Sevastopol. To be precise, you are ordered to secure the Crimean harbor of Feodosiya for the large invasion force that will land there. We will go ashore behind the enemy’s back, and you will be in the first echelon. \nThis attack will relieve pressure on Sevastopol for sure, when the Germans have to turn around and fight us in Feodosiya; the importance of this mission cannot be overstated. \nThe success of your mission depends on your improvisation skills and the ability to use every bit of equipment you come across. \n\nGood luck!"

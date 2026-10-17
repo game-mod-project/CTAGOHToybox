@@ -19,116 +19,116 @@ msgstr "포격"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/date"
 msgid "September 27th, 1942 · Stalingrad"
-msgstr ""
+msgstr "1942년 9월 27일 · 스탈린그라드"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/name"
 msgid "Pavlov's House <c(a655af)>[DLC]</c>"
-msgstr ""
+msgstr "파블로프의 집 <c(a655af)>[DLC]</c>"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/name_big"
 msgid "Pavlov's House"
-msgstr ""
+msgstr "파블로프의 집"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/01"
 msgid "What has become of our beloved Stalingrad? The streets of the city are ruined… almost everything has been demolished."
-msgstr ""
+msgstr "사랑하는 스탈린그라드가 어떻게 되었단 말인가? 도시의 거리는 폐허다... 거의 모든 것이 무너졌다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/02"
 msgid "Comrades, I've taken command of the 62nd Army. I tell you this - Stalingrad will decide our fate! I’ll either keep the fascists out of Stalingrad or die trying. There is no land beyond the Volga!"
-msgstr ""
+msgstr "동지들, 나는 제62군의 지휘를 맡았다. 말해 두겠다. 스탈린그라드가 우리의 운명을 결정한다! 나는 파시스트들을 스탈린그라드 밖으로 막아내거나, 그러다 죽겠다. 볼가강 너머에는 땅이 없다!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/03"
 msgid "I do realise your men have been called forward without resupply. You need weapons and ammo. We are going to deal with this situation first. We know for a fact a German depot is nearby."
-msgstr ""
+msgstr "자네들이 보급도 없이 전선에 불려 나왔다는 걸 안다. 무기와 탄약이 필요하다. 먼저 이 문제부터 해결하겠다. 근처에 독일군 보급소가 있다는 것이 확실하다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/04"
 msgid "Your next objective is to take the strategic apartment building overlooking this entire area."
-msgstr ""
+msgstr "다음 목표는 이 일대를 전부 내려다보는 전략적 아파트 건물을 점령하는 것이다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/05"
 msgid "Due to our grueling losses, I have put into action Order 166: Offensives are to be organized into small groups with sub-machine guns, hand grenades, and anti-tank rifles. Taking this building is your assignment, Comrades. I will try to get reinforcements for you after the building is in your hands."
-msgstr ""
+msgstr "처참한 손실 때문에 제166호 명령을 발동했다. 공세는 기관단총, 수류탄, 대전차 소총을 갖춘 소규모 집단으로 편성한다. 이 건물을 점령하는 것이 자네들의 임무다, 동지들. 건물이 자네들 손에 들어오면 증원을 얻어 보내 보겠다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/06"
 msgid "Good work Comrades. Take positions around this building. The Germans will surely want to take back such a strategic spot."
-msgstr ""
+msgstr "잘했다, 동지들. 이 건물 주위에 진지를 잡아라. 독일군은 반드시 이런 전략적 요충지를 되찾으려 할 것이다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/07"
 msgid "I am dispatching Lieutenant Afanasyev from the 3rd Machine Gun Company to reinforce your position. Sergeant Pavlov, you remain in command of this group. Keep your building safe!"
-msgstr ""
+msgstr "제3기관총 중대의 Lieutenant 아파나시예프를 보내 자네들 진지를 보강하겠다. Sergeant 파블로프, 자네가 계속 이 집단을 지휘한다. 건물을 안전하게 지켜라!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/08"
 msgid "I am sending a notorious sniper to reinforce your men, Comrade Pavlov. He is young, but has a reputation among the fascist hordes. Keep him alive and safe."
-msgstr ""
+msgstr "악명 높은 저격수를 보내 자네 병사들을 보강하겠다, 파블로프 동지. 젊지만 파시스트 무리 사이에서 이름이 높다. 그를 살려서 안전하게 지켜라."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/09"
 msgid "Comrades, engineering supplies have been found left behind by the Germans. I am ordering you to reinforce the approaches of the building to improve its defensive capabilities. "
-msgstr ""
+msgstr "동지들, 독일군이 두고 간 공병 보급품을 찾았다. 건물 접근로를 보강해서 방어력을 높이도록 명령한다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/10"
 msgid "Make our defense unbreakable! All the furious attacks of the Fascist troops will shatter upon these obstacles just like sea waves are broken by granite rock!"
-msgstr ""
+msgstr "우리의 방어를 무너지지 않게 만들어라! 파도가 화강암 바위에 부서지듯, 파시스트 군대의 모든 맹공이 이 장애물에 부서질 것이다!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/11"
 msgid "That's it, Comrades. We are winning. Every German soldier must be made to feel that he is living under the muzzle of a Russian gun."
-msgstr ""
+msgstr "그렇다, 동지들. 우리가 이기고 있다. 독일 병사 하나하나가 러시아의 총구 아래 살고 있다고 느끼게 만들어야 한다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/12"
 msgid "German artillery has been deployed very close to your position and they are threatening our landings on the Volga. I need you to take them out, Comrades!"
-msgstr ""
+msgstr "독일 포병이 자네들 진지 아주 가까이에 배치돼 볼가강의 우리 상륙지점을 위협하고 있다. 놈들을 제거해라, 동지들!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/13"
 msgid "Good work, Soldiers. I would not have believed such an inferno could open up on earth. Your men died but they did not retreat. Remarkable."
-msgstr ""
+msgstr "잘했다, 병사들. 지상에 이런 지옥이 열릴 수 있다는 걸 믿지 못했을 것이다. 자네 병사들은 죽었지만 물러나지 않았다. 대단하다."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/narrator/chuikov/14"
 msgid "Enemies are within Pavlov's House and you've left it unprotected! I'll give you a minute to turn this situation over, or you're done! And don't let this happen again!"
-msgstr ""
+msgstr "적이 파블로프의 집 안에 있는데 방치했군! 상황을 뒤집을 시간을 1분 주겠다, 아니면 끝장이다! 다시는 이런 일이 없게 해라!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/outro_completed"
 msgid "Excellent work! This was a remarkable display of leadership and tenacity. You have defied the odds and successfully prevented the fascists from taking the main prize of their campaign: Stalingrad. You are a true hero of the Soviet Union. Better get your uniform washed and pressed for a ceremony!"
-msgstr ""
+msgstr "훌륭하다! 지도력과 끈기를 보여 준 놀라운 활약이었다. 자네는 불리한 상황을 이겨내고 파시스트들이 이번 작전의 최대 목표인 스탈린그라드를 차지하는 것을 막아냈다. 자네는 진정한 소련의 영웅이다. 제복을 빨아 다려 두는 게 좋겠다, 기념식이 있을 것이다!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/outro_failed"
 msgid "That is a dramatic end to a dramatic battle. What now? Do we let the fascists take control of Stalingrad? General Chuikov will not like this news. You will have to go in again and this time, hold on to the house. Don’t give up, there is no land beyond the Volga!"
-msgstr ""
+msgstr "극적인 전투의 극적인 결말이다. 이제 어떻게 하나? 파시스트들이 스탈린그라드를 장악하게 두는가? 추이코프 장군이 이 소식을 좋아하지 않을 것이다. 다시 들어가야 하고, 이번에는 그 집을 지켜내야 한다. 포기하지 마라, 볼가강 너머에는 땅이 없다!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/place"
 msgid "13th Guards Rifle Division, 62nd Army"
-msgstr ""
+msgstr "제62군 제13근위소총사단"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/story"
 msgid "German army group B has reached Stalingrad, despite Stalin’s order 227 saying “not a step back”. Already in September, street fighting is a grim everyday reality.\n\nThe Soviet 62nd army, commanded by general Chuikov, is hanging on to a few small bridgeheads on the west bank of the Volga river.\n\nIf the Germans want to get to the Volga, they will need to get past Pavlov’s house first!\n\nIn this mission, General Chuikov will brief you on taking the house with your men. As soon as you have full control of the house, prepare every floor and every position for the inevitable next fascist attack. Hold the house long enough for the next wave of supplies to arrive. Show no mercy.\n\nZa Rodinu!"
-msgstr ""
+msgstr "독일 B집단군이 "한 걸음도 물러서지 마라"는 스탈린의 제227호 명령에도 불구하고 스탈린그라드에 도달했다. 이미 9월, 시가전은 암울한 일상이 되었다.\n\n추이코프 장군이 지휘하는 소련 제62군은 볼가강 서안의 몇 안 되는 작은 교두보에 매달리고 있다.\n\n독일군이 볼가강에 닿으려면 먼저 파블로프의 집을 넘어야 한다!\n\n이번 임무에서 추이코프 장군이 병사들과 함께 집을 점령하는 방법을 지시한다. 집을 완전히 장악하는 즉시 모든 층과 모든 위치를 파시스트의 불가피한 다음 공격에 대비해 준비하라. 다음 보급이 도착할 때까지 집을 지켜라. 자비를 베풀지 마라.\n\n조국을 위하여!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/task1"
 msgid "Secure the strategic building"
-msgstr ""
+msgstr "전략 건물을 확보하라"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/task2"
 msgid "Hold the building at all costs!"
-msgstr ""
+msgstr "무슨 일이 있어도 건물을 지켜라!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/task3"
 msgid "Take out the enemy artillery threatening the Volga landings"
-msgstr ""
+msgstr "볼가강 상륙지점을 위협하는 적 포병을 제거하라"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/task4"
 msgid "Sergeant Yakov Pavlov must survive!"
-msgstr ""
+msgstr "Sergeant 야코프 파블로프는 반드시 살아야 한다!"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/task5"
 msgid "Keep Sniper Anatoly Checkov alive."
-msgstr ""
+msgstr "저격수 아나톨리 체코프를 살려 두어라."
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/task_supply"
 msgid "Secure supplies"
-msgstr ""
+msgstr "보급품을 확보하라"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/timer"
 msgid "German counter-attack in:"
-msgstr ""
+msgstr "독일군 반격까지:"
 
 msgctxt "mission/single/01-rus/1942_09_pavlovs_house/mission_heal_pavlov"
 msgid "Treat Sergeant Yakov Pavlov before he bleeds to death!"
-msgstr ""
+msgstr "Sergeant 야코프 파블로프가 과다출혈로 죽기 전에 치료하라!"

@@ -16,16 +16,16 @@ msgstr ""
 
 msgctxt "desc/weapon/20mm_polsten_skink1"
 msgid "20mm Polsten Mk.I"
-msgstr ""
+msgstr "20mm Polsten Mk.I"
 
 msgctxt "desc/weapon/matilda_flamethrower"
 msgid "3-Inch Flame Projector"
-msgstr ""
+msgstr "3-Inch Flame Projector"
 
 msgctxt "desc/weapon/76mm_17pdr_mk2"
 msgid "77mm OQF Mk.II L/55"
-msgstr ""
+msgstr "77mm OQF Mk.II L/55"
 
 msgctxt "desc/weapon/63mm_northover_projector"
 msgid "63mm Northover Projector"
-msgstr ""
+msgstr "63mm Northover Projector"

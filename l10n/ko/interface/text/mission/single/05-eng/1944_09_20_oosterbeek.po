@@ -539,7 +539,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret01_completed"
 msgid "Secret objective: Undeathly Shadow - Reach the British positions unspotted and without kills"
@@ -547,7 +547,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret02"
 msgid "Secret objective #2"
-msgstr ""
+msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret02_completed"
 msgid "Secret objective: Networking - Complete all optional side activities"

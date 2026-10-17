@@ -16,4 +16,4 @@ msgstr ""
 
 msgctxt "desc/stuff/opel_blitz_wheel"
 msgid "Opel Blitz Wheel"
-msgstr ""
+msgstr "Opel Blitz 바퀴"

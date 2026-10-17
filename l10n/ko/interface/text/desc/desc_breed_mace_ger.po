@@ -15,368 +15,368 @@ msgstr ""
 
 msgctxt "desc/human/mp/ger/mid/recon_sl_binos"
 msgid "Aufklärer Squadleader [Heer]"
-msgstr ""
+msgstr "아우프클레러 분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_recon_sl_binos"
 msgid "Fallschirmaufklärer Squadleader [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름 아우프클레러 분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/gebirgs_recon_sl_binos"
 msgid "Gebirgsaufklärer Squadleader [Heer]"
-msgstr ""
+msgstr "게비르크스 아우프클레러 분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/officer_t1"
 msgid "Leutnant [Heer]"
-msgstr ""
+msgstr "Leutnant [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/officer_t2"
 msgid "Leutnant [Heer]"
-msgstr ""
+msgstr "Leutnant [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/officer_t3"
 msgid "Leutnant [Heer]"
-msgstr ""
+msgstr "Leutnant [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/officer_t4"
 msgid "Leutnant [Heer]"
-msgstr ""
+msgstr "Leutnant [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_sl"
 msgid "150th Panzerbrigade Squadleader [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_sl_asst"
 msgid "150th Panzerbrigade Asst. Leader [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_bar"
 msgid "150th Panzerbrigade MG Operator [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 기관총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_mg"
 msgid "150th Panzerbrigade MG Operator [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 기관총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_mg_asst"
 msgid "150th Panzerbrigade MG Asst. [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 기관총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_rifle_a"
 msgid "150th Panzerbrigade Rifleman [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 소총수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_rifle_g"
 msgid "150th Panzerbrigade Rifleman [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 소총수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_stg"
 msgid "150th Panzerbrigade Rifleman [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 소총수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_at_1"
 msgid "150th Panzerbrigade AT Inf [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 대전차 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/steilau_at_2"
 msgid "150th Panzerbrigade AT Asst. [Heer]"
-msgstr ""
+msgstr "제150 판처 여단 대전차 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/mgun_3"
 msgid "MG Operator [Heer]"
-msgstr ""
+msgstr "기관총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/mgun_4"
 msgid "MG Asst. [Heer]"
-msgstr ""
+msgstr "기관총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/fallsch_rifle_grenadier_grb39_coq"
 msgid "Fallschirmjäger AT Rifle [Heer]"
-msgstr ""
+msgstr "팔쉬름예거 대전차 소총 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/antitank_fliegerfaust_coq"
 msgid "Fliegerfaust Operator [Heer]"
-msgstr ""
+msgstr "Fliegerfaust 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/antitank_fliegerfaust_asst_coq"
 msgid "Fliegerfaust Assist. [Heer]"
-msgstr ""
+msgstr "Fliegerfaust 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/rifle_sturmpistole_coq"
 msgid "Sturmpistole Operator [Heer]"
-msgstr ""
+msgstr "Sturmpistole 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/rifle_sturmpistole_asst_coq"
 msgid "Sturmpistole Assist. [Heer]"
-msgstr ""
+msgstr "Sturmpistole 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/antitank_wz35"
 msgid "AT Rifle Operator [Heer]"
-msgstr ""
+msgstr "대전차 소총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/antitank_asst_wz35"
 msgid "AT Rifle Assist. [Heer]"
-msgstr ""
+msgstr "대전차 소총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/antitank_grb39_coq"
 msgid "AT Rifle Operator [Heer]"
-msgstr ""
+msgstr "대전차 소총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/mid/antitank_grb39_asst_coq"
 msgid "AT Rifle Assist. [Heer]"
-msgstr ""
+msgstr "대전차 소총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/gebirgs_smg_fnab"
 msgid "Gebirgsjäger [Heer]"
-msgstr ""
+msgstr "게비르크스예거 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/gd_pzgren_mg_asst_2"
 msgid "GD.Pz.Grenadier MG Asst. [Heer]"
-msgstr ""
+msgstr "그로스도이칠란트 판처그레나디어 기관총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/gd_pzgren_mg_2"
 msgid "GD.Pz.Grenadier MG Operator [Heer]"
-msgstr ""
+msgstr "그로스도이칠란트 판처그레나디어 기관총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_sa_grenadier_2"
 msgid "Fallschirmjäger [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_beretta"
 msgid "Fallschirmjäger [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/gren_rifle_grenadier_grb39"
 msgid "Grenadier [Heer]"
-msgstr ""
+msgstr "그레나디어 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/nco_2"
 msgid "Squadleader [Heer]"
-msgstr ""
+msgstr "분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/nco_asst_2"
 msgid "Squadleader Asst. [Heer]"
-msgstr ""
+msgstr "부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/antitank_11"
 msgid "AT support Inf. [Heer]"
-msgstr ""
+msgstr "대전차 지원 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/antitank_10"
 msgid "AT Inf. [Heer]"
-msgstr ""
+msgstr "대전차 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/antitank_7"
 msgid "AT support Inf. [Heer]"
-msgstr ""
+msgstr "대전차 지원 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/antitank_6"
 msgid "AT Inf. [Heer]"
-msgstr ""
+msgstr "대전차 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/antitank_9"
 msgid "AA support Inf. [Heer]"
-msgstr ""
+msgstr "대공 지원 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/antitank_8"
 msgid "AA Inf. [Heer]"
-msgstr ""
+msgstr "대공 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_grb39_2"
 msgid "Aufklärer AT Inf. [Heer]"
-msgstr ""
+msgstr "아우프클레러 대전차 보병 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_grb39_asst_2"
 msgid "Aufklärer AT Asst. [Heer]"
-msgstr ""
+msgstr "아우프클레러 대전차 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_mg_2"
 msgid "Aufklärer MG Operator [Heer]"
-msgstr ""
+msgstr "아우프클레러 기관총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_mg_asst_2"
 msgid "Aufklärer MG Asst. [Heer]"
-msgstr ""
+msgstr "아우프클레러 기관총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_rifle_2"
 msgid "Aufklärer [Heer]"
-msgstr ""
+msgstr "아우프클레러 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_sl_2"
 msgid "Aufklärer Squadleader [Heer]"
-msgstr ""
+msgstr "아우프클레러 분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_sl_asst_2"
 msgid "Aufklärer Asst. Leader [Heer]"
-msgstr ""
+msgstr "아우프클레러 부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/recon_sl_asst_3"
 msgid "Aufklärer Asst. Leader [Heer]"
-msgstr ""
+msgstr "아우프클레러 부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/pzgren_sturm_pzf_2"
 msgid "Pz.Sturmgrenadier [Heer]"
-msgstr ""
+msgstr "판처 슈투름그레나디어 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/pzgren_sturm_sl_2"
 msgid "Pz.Sturmgrenadier Squadleader [Heer]"
-msgstr ""
+msgstr "판처 슈투름그레나디어 분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/pzgren_sturm_sl_asst_2"
 msgid "Pz.Sturmgrenadier Asst. Leader [Heer]"
-msgstr ""
+msgstr "판처 슈투름그레나디어 부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/pzgren_sturm_stg_2"
 msgid "Pz.Sturmgrenadier [Heer]"
-msgstr ""
+msgstr "판처 슈투름그레나디어 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/pzgren_sturm_aa_2"
 msgid "Pz.Sturmgrenadier [Heer]"
-msgstr ""
+msgstr "판처 슈투름그레나디어 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/pzgren_sturm_aa_asst_2"
 msgid "Pz.Sturmgrenadier [Heer]"
-msgstr ""
+msgstr "판처 슈투름그레나디어 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/feldg_nco_2"
 msgid "Squadleader [Feldgendarmerie]"
-msgstr ""
+msgstr "분대장 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/feldg_rifle_2"
 msgid "Rifleman [Feldgendarmerie]"
-msgstr ""
+msgstr "소총수 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/feldg_smg_2"
 msgid "SMG Inf. [Feldgendarmerie]"
-msgstr ""
+msgstr "기관단총 보병 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_recon_sl_2"
 msgid "Fallschirmaufklärer Squadleader [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름 아우프클레러 분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_recon_pzf_2"
 msgid "Fallschirmaufklärer AT Inf. [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름 아우프클레러 대전차 보병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/feldg_nco_2"
 msgid "Squadleader [Feldgendarmerie]"
-msgstr ""
+msgstr "분대장 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/feldg_rifle_2"
 msgid "Rifleman [Feldgendarmerie]"
-msgstr ""
+msgstr "소총수 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/feldg_smg_2"
 msgid "SMG Inf. [Feldgendarmerie]"
-msgstr ""
+msgstr "기관단총 보병 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/feldg_mg_2"
 msgid "MG Operator [Feldgendarmerie]"
-msgstr ""
+msgstr "기관총 사수 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/feldg_mg_asst_2"
 msgid "MG Asst. [Feldgendarmerie]"
-msgstr ""
+msgstr "기관총 부사수 [펠트겐다르메리]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_sl_3"
 msgid "Fallschirmjäger NCO [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 부사관 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_sl_asst_3"
 msgid "Fallschirmjäger NCO Asst. [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 부사관 부사수 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_smg_3"
 msgid "Fallschirmjäger [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_sl_2"
 msgid "Fallschirmpionier Squadleader [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_sl_asst_2"
 msgid "Fallschirmpionier Asst. Leader [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 부분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_sa_2"
 msgid "Fallschirmpionier [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_sa_grenadier_2"
 msgid "Fallschirmpionier [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_builder_2"
 msgid "Fallschirmpionier Engineer [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 공병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_demolition_2"
 msgid "Fallschirmpionier Demolitionist [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 폭파병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_ap_miner"
 msgid "Fallschirmpionier AP Miner [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 AP 지뢰병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_at_miner"
 msgid "Fallschirmpionier AT Miner [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름피오니어 대전차 지뢰병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/landes_rifle_2"
 msgid "Landesschütze [Heer]"
-msgstr ""
+msgstr "란데스쉬체 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/landes_sl_2"
 msgid "Landesschütze Squadleader [Heer]"
-msgstr ""
+msgstr "란데스쉬체 분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/landes_sl_asst_2"
 msgid "Landesschütze Asst. Leader [Heer]"
-msgstr ""
+msgstr "란데스쉬체 부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/landes_sl_asst_3"
 msgid "Landesschütze Asst. Leader [Heer]"
-msgstr ""
+msgstr "란데스쉬체 부분대장 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/landes_mg_2"
 msgid "Landesschütze MG Operator [Heer]"
-msgstr ""
+msgstr "란데스쉬체 기관총 사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/landes_mg_asst_2"
 msgid "Landesschütze MG Asst. [Heer]"
-msgstr ""
+msgstr "란데스쉬체 기관총 부사수 [헤어]"
 
 msgctxt "desc/human/mp/ger/late/feldg_lw_nco_2"
 msgid "Feldgendarmerie Squadleader [Luftwaffe]"
-msgstr ""
+msgstr "펠트겐다르메리 분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/feldg_lw_rifle_2"
 msgid "Feldgendarmerie Rifleman [Luftwaffe]"
-msgstr ""
+msgstr "펠트겐다르메리 소총수 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/feldg_lw_smg_2"
 msgid "Feldgendarmerie SMG Inf. [Luftwaffe]"
-msgstr ""
+msgstr "펠트겐다르메리 기관단총 보병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_sl_2"
 msgid "Fallschirmjäger Squadleader [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_sl_asst_2"
 msgid "Fallschirmjäger Squadleader Asst. [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 부분대장 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_smg_2"
 msgid "Fallschirmjäger SMG Inf. [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 기관단총 보병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_demolition"
 msgid "Fallschirmjäger [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/fallsch_pio_builder"
 msgid "Fallschirmjäger Engineer [Luftwaffe]"
-msgstr ""
+msgstr "팔쉬름예거 공병 [루프트바페]"
 
 msgctxt "desc/human/mp/ger/late/signaller_ai"
 msgid "Artillery Signaller [Heer]"
-msgstr ""
+msgstr "포병 통신병 [헤어]"

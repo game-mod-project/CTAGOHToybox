@@ -111,7 +111,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[reinforcements]/skip_button"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[scenario_text]/transition_time"
 msgid "Half an hour later..."

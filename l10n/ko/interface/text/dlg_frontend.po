@@ -3230,7 +3230,7 @@ msgstr ""
 
 msgctxt "options/keys/actions/smoke_decoy"
 msgid "Smoke screen"
-msgstr ""
+msgstr "연막"
 
 msgctxt "options/keys/actions/smoke_decoy#desc"
 msgid "Launch a smoke screen of a selected vehicle with this ability."
@@ -4359,7 +4359,7 @@ msgstr ""
 
 msgctxt "main_menu2/market/filter/box"
 msgid "Box"
-msgstr ""
+msgstr "상자"
 
 msgctxt "main_menu2/market/filter/key"
 msgid "Key"
@@ -4639,7 +4639,7 @@ msgstr ""
 
 msgctxt "main_menu2/library/soldiers/perks/medic"
 msgid "Medic"
-msgstr ""
+msgstr "위생병"
 
 msgctxt "prepare_resources"
 msgid "<c(cec7c3)f(roboto_mono)>Loading..."
@@ -5119,7 +5119,7 @@ msgstr ""
 
 msgctxt "user_statistics/leaderboards2/column/player"
 msgid "Player"
-msgstr ""
+msgstr "플레이어"
 
 msgctxt "user_statistics/leaderboards2/column/games_played"
 msgid "<x.>Games played"
@@ -5895,7 +5895,7 @@ msgstr ""
 
 msgctxt "main_menu2/dynamic_campaign/airstrikes"
 msgid "Support"
-msgstr ""
+msgstr "지원"
 
 msgctxt "main_menu2/dynamic_campaign/emplacements"
 msgid "Emplacements"
@@ -5939,7 +5939,7 @@ msgstr ""
 
 msgctxt "main_menu2/dynamic_campaign/buy"
 msgid "RECRUIT"
-msgstr ""
+msgstr "신병"
 
 msgctxt "main_menu2/dynamic_campaign/resupply_all"
 msgid "RESUPPLY ALL"

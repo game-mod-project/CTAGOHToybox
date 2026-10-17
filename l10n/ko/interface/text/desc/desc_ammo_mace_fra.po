@@ -15,64 +15,64 @@ msgstr ""
 
 msgctxt "desc/ammo/bulletfra_25 ap"
 msgid "25×193.5mm R [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "25×193.5mm R [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/bulletger_155 sm"
 msgid "155mm Mle1915 Shell [SMOKE] <c(65696d)>L/5</c>"
-msgstr ""
+msgstr "155mm Mle1915 포탄 [연막] <c(65696d)>L/5</c>"
 
 msgctxt "desc/ammo/bulletger_155 he"
 msgid "155mm Mle1915 Shell [<c(ff1200)>HE</c>] <c(65696d)>L/5</c>"
-msgstr ""
+msgstr "155mm Mle1915 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/5</c>"
 
 msgctxt "desc/ammo/bulletfr_75 apcbc"
 msgid "75mm OR Mle.44 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "75mm OR Mle.44 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bulletfr_75 he"
 msgid "75mm OE Mle.28 [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "75mm OE Mle.28 [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bulletfr_90 apcbc"
 msgid "90mm PCO-50 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/65</c>"
-msgstr ""
+msgstr "90mm PCO-50 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/65</c>"
 
 msgctxt "desc/ammo/bulletfr_90 he"
 msgid "90mm Obus explosif [<c(ff1200)>HE</c>] <c(65696d)>L/65</c>"
-msgstr ""
+msgstr "90mm Obus explosif [<c(ff1200)>HE</c>] <c(65696d)>L/65</c>"
 
 msgctxt "desc/ammo/bullet_47 fra apcbc"
 msgid "4.7cm Mle1936 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/53</c>"
-msgstr ""
+msgstr "4.7cm Mle1936 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/53</c>"
 
 msgctxt "desc/ammo/bullet_75x241 fra aphe"
 msgid "7.5cm Mle1916 [<c(ff6a00)>APHE</c>] <c(65696d)>L/17</c>"
-msgstr ""
+msgstr "7.5cm Mle1916 [<c(ff6a00)>APHE</c>] <c(65696d)>L/17</c>"
 
 msgctxt "desc/ammo/bullet_75x241 fra he"
 msgid "7.5cm Mle1900 [<c(ff1200)>HE</c>] <c(65696d)>L/17</c>"
-msgstr ""
+msgstr "7.5cm Mle1900 [<c(ff1200)>HE</c>] <c(65696d)>L/17</c>"
 
 msgctxt "desc/ammo/bullet_47x193 fra apc"
 msgid "4.7cm Mle1935 [<c(ff6a00)>APC</c>] <c(65696d)>L/32</c>"
-msgstr ""
+msgstr "4.7cm Mle1935 [<c(ff6a00)>APC</c>] <c(65696d)>L/32</c>"
 
 msgctxt "desc/ammo/bullet_47x193 fra he"
 msgid "4.7cm Mle1935 [<c(ff1200)>HE</c>] <c(65696d)>L/32</c>"
-msgstr ""
+msgstr "4.7cm Mle1935 [<c(ff1200)>HE</c>] <c(65696d)>L/32</c>"
 
 msgctxt "desc/ammo/bullet_47 fra aphe"
 msgid "4.7cm Mle1935 [<c(ff6a00)>APHE</c>] <c(65696d)>L/4</c>"
-msgstr ""
+msgstr "4.7cm Mle1935 [<c(ff6a00)>APHE</c>] <c(65696d)>L/4</c>"
 
 msgctxt "desc/ammo/mgun_fra belt"
 msgid "7.5×54mm MAS Mod. 1929"
-msgstr ""
+msgstr "7.5×54mm MAS Mod. 1929"
 
 msgctxt "desc/ammo/bullet_37x149_fra apc"
 msgid "3.7cm Mle1937 [<c(ff6a00)>APC</c>] <c(65696d)>L/21</c>"
-msgstr ""
+msgstr "3.7cm Mle1937 [<c(ff6a00)>APC</c>] <c(65696d)>L/21</c>"
 
 msgctxt "desc/ammo/bullet_37x149_fra he"
 msgid "3.7cm Mle1937 [<c(ff1200)>HE</c>] <c(65696d)>L/21</c>"
-msgstr ""
+msgstr "3.7cm Mle1937 [<c(ff1200)>HE</c>] <c(65696d)>L/21</c>"

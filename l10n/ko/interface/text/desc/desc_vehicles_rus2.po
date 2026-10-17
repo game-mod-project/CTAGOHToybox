@@ -16,380 +16,380 @@ msgstr ""
 
 msgctxt "desc/entity/kv-220"
 msgid "KV-220"
-msgstr ""
+msgstr "KV-220"
 
 msgctxt "desc/entity/kv5"
 msgid "KV-5"
-msgstr ""
+msgstr "KV-5"
 
 msgctxt "info/special/kv5"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is2u"
 msgid "IS-2U(110) v.1"
-msgstr ""
+msgstr "IS-2U(110) v.1"
 
 msgctxt "info/special/is2u"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is2u_1"
 msgid "IS-2U(110) v.2"
-msgstr ""
+msgstr "IS-2U(110) v.2"
 
 msgctxt "info/special/is2u_1"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is3_0"
 msgid "IS-3 122mm"
-msgstr ""
+msgstr "IS-3 122mm"
 
 msgctxt "info/special/is3_0"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is3_1"
 msgid "IS-3 100mm"
-msgstr ""
+msgstr "IS-3 100mm"
 
 msgctxt "info/special/is3_1"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is5"
 msgid "IS-5"
-msgstr ""
+msgstr "IS-5"
 
 msgctxt "info/special/is5"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is6"
 msgid "IS-6"
-msgstr ""
+msgstr "IS-6"
 
 msgctxt "info/special/is6"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/obj260"
 msgid "Object 260"
-msgstr ""
+msgstr "Object 260"
 
 msgctxt "info/special/obj260"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is7"
 msgid "IS-7"
-msgstr ""
+msgstr "IS-7"
 
 msgctxt "info/special/is7"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/0bj_268"
 msgid "Object 268 'St. John 's Wort'"
-msgstr ""
+msgstr "Object 268 'St. John 's Wort'"
 
 msgctxt "info/special/0bj_268"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/isu130"
 msgid "ISU-130"
-msgstr ""
+msgstr "ISU-130"
 
 msgctxt "info/special/isu130"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/t44"
 msgid "T-44"
-msgstr ""
+msgstr "T-44"
 
 msgctxt "info/special/t44"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/t44_2"
 msgid "T-44 100mm LB-1"
-msgstr ""
+msgstr "T-44 100mm LB-1"
 
 msgctxt "info/special/t44_2"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/rbt5"
 msgid "RBT-5"
-msgstr ""
+msgstr "RBT-5"
 
 msgctxt "info/special/rbt5"
 msgid "<c(c3baae)>Fast Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>고속 전차</c>"
 
 msgctxt "desc/entity/kv122"
 msgid "KV-122"
-msgstr ""
+msgstr "KV-122"
 
 msgctxt "info/special/kv122"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/object248"
 msgid "Object-248"
-msgstr ""
+msgstr "Object-248"
 
 msgctxt "info/special/object248"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is4"
 msgid "IS-4"
-msgstr ""
+msgstr "IS-4"
 
 msgctxt "info/special/is4"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/is4m"
 msgid "IS-4M"
-msgstr ""
+msgstr "IS-4M"
 
 msgctxt "info/special/is4m"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kv-3"
 msgid "KV-3"
-msgstr ""
+msgstr "KV-3"
 
 msgctxt "desc/entity/kv-4_dukhov_turret"
 msgid "KV-4 'Dukhov Turret' v.1"
-msgstr ""
+msgstr "KV-4 'Dukhov Turret' v.1"
 
 msgctxt "desc/entity/kv-4_strukov_turret"
 msgid "KV-4 'Strukov Turret' v.2"
-msgstr ""
+msgstr "KV-4 'Strukov Turret' v.2"
 
 msgctxt "desc/entity/kv2_zis6"
 msgid "KV2-ZIS6"
-msgstr ""
+msgstr "KV2-ZIS6"
 
 msgctxt "desc/entity/kv-6"
 msgid "KV-6"
-msgstr ""
+msgstr "KV-6"
 
 msgctxt "desc/entity/object279"
 msgid "Object 279"
-msgstr ""
+msgstr "Object 279"
 
 msgctxt "desc/entity/object263"
 msgid "Object 263"
-msgstr ""
+msgstr "Object 263"
 
 msgctxt "desc/entity/object263a"
 msgid "Object 263 Type A"
-msgstr ""
+msgstr "Object 263 Type A"
 
 msgctxt "desc/entity/obj261"
 msgid "Object 261"
-msgstr ""
+msgstr "Object 261"
 
 msgctxt "desc/entity/zsu37gos"
 msgid "ZSU-37"
-msgstr ""
+msgstr "ZSU-37"
 
 msgctxt "desc/entity/t_v"
 msgid "T-V [Panther]"
-msgstr ""
+msgstr "T-V [Panther]"
 
 msgctxt "desc/entity/t44_122"
 msgid "T-44-122"
-msgstr ""
+msgstr "T-44-122"
 
 msgctxt "desc/entity/t54_47"
 msgid "T-54-1947"
-msgstr ""
+msgstr "T-54-1947"
 
 msgctxt "desc/entity/bz-75_tank"
 msgid "BZ-75 v.1"
-msgstr ""
+msgstr "BZ-75 v.1"
 
 msgctxt "desc/entity/bz-75_tank1"
 msgid "BZ-75 v.2"
-msgstr ""
+msgstr "BZ-75 v.2"
 
 msgctxt "info/special/kv-3"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/kv-4_dukhov_turret"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/kv-4_strukov_turret"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/kv2_zis6"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/kv-6"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/object279"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/object263"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "info/special/object263a"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "info/special/zsu37gos"
 msgid "<c(c3baae)>AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공 전차</c>"
 
 msgctxt "info/special/t34_zsu37_2"
 msgid "<c(c3baae)>AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공 전차</c>"
 
 msgctxt "info/special/t_v"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "info/special/t44_122"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "info/special/t54_47"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "info/special/bz-75_tank"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "info/special/bz-75_tank1"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/114sp2"
 msgid "114 SP2"
-msgstr ""
+msgstr "114 SP2"
 
 msgctxt "desc/entity/bz79"
 msgid "BZ-79"
-msgstr ""
+msgstr "BZ-79"
 
 msgctxt "desc/entity/bzt70s"
 msgid "BZT-70S"
-msgstr ""
+msgstr "BZT-70S"
 
 msgctxt "desc/entity/ptz78"
 msgid "PTZ-78"
-msgstr ""
+msgstr "PTZ-78"
 
 msgctxt "desc/entity/obj907"
 msgid "Object 907"
-msgstr ""
+msgstr "Object 907"
 
 msgctxt "desc/entity/pgz70"
 msgid "PGZ70"
-msgstr ""
+msgstr "PGZ70"
 
 msgctxt "desc/entity/object_490"
 msgid "Object 490"
-msgstr ""
+msgstr "Object 490"
 
 msgctxt "desc/entity/t34_zsu37_2"
 msgid "ZSU-37-2"
-msgstr ""
+msgstr "ZSU-37-2"
 
 msgctxt "desc/entity/is-4s"
 msgid "IS-4S"
-msgstr ""
+msgstr "IS-4S"
 
 msgctxt "desc/entity/obj906"
 msgid "Object 906"
-msgstr ""
+msgstr "Object 906"
 
 msgctxt "desc/entity/ct2"
 msgid "CT-2"
-msgstr ""
+msgstr "CT-2"
 
 msgctxt "desc/entity/vz71"
 msgid "Vz. 71"
-msgstr ""
+msgstr "Vz. 71"
 
 msgctxt "desc/entity/vz68"
 msgid "Vz. 68"
-msgstr ""
+msgstr "Vz. 68"
 
 msgctxt "desc/entity/t-54_49"
 msgid "T-54-1949"
-msgstr ""
+msgstr "T-54-1949"
 
 msgctxt "desc/entity/kv8s"
 msgid "KV-8S"
-msgstr ""
+msgstr "KV-8S"
 
 msgctxt "desc/entity/kv7_u13"
 msgid "KV-7 U-13"
-msgstr ""
+msgstr "KV-7 U-13"
 
 msgctxt "desc/entity/t10"
 msgid "T-10M"
-msgstr ""
+msgstr "T-10M"
 
 msgctxt "desc/entity/t10_d25t"
 msgid "IS-8"
-msgstr ""
+msgstr "IS-8"
 
 msgctxt "desc/entity/a20"
 msgid "A-20"
-msgstr ""
+msgstr "A-20"
 
 msgctxt "desc/entity/a20"
 msgid "A-20"
-msgstr ""
+msgstr "A-20"
 
 msgctxt "desc/entity/obj_780"
 msgid "Object 780"
-msgstr ""
+msgstr "Object 780"
 
 msgctxt "desc/entity/tet100"
 msgid "Tet-100"
-msgstr ""
+msgstr "Tet-100"
 
 msgctxt "desc/entity/obj_268"
 msgid "Object 268 'St. John 's Wort' (With 25mm 72-K anti-aircraft gun)"
-msgstr ""
+msgstr "Object 268 'St. John 's Wort' (25mm 72-K 대공포 장착)"
 
 msgctxt "desc/entity/kv1_122"
 msgid "KV-1(122mm howitzer)"
-msgstr ""
+msgstr "KV-1(122mm 곡사포)"
 
 msgctxt "desc/entity/t34_44supply"
 msgid "T-34-85 (1944) Supply Tank"
-msgstr ""
+msgstr "T-34-85 (1944) 보급 전차"
 
 msgctxt "desc/entity/obj705"
 msgid "Object 705"
-msgstr ""
+msgstr "Object 705"
 
 msgctxt "desc/entity/obj705a"
 msgid "Object 705A"
-msgstr ""
+msgstr "Object 705A"
 
 msgctxt "desc/entity/obj704"
 msgid "Object 704"
-msgstr ""
+msgstr "Object 704"

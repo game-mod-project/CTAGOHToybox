@@ -15,24 +15,24 @@ msgstr ""
 
 msgctxt "desc/ammo/bulleteng_75 ap"
 msgid "75mm M72 Shot [<c(ff6a00)>AP</c>] <c(65696d)>L/55</c>"
-msgstr ""
+msgstr "75mm M72 탄 [<c(ff6a00)>AP</c>] <c(65696d)>L/55</c>"
 
 msgctxt "desc/ammo/bulleteng_75 apcbc"
 msgid "75mm M61 Shot [<c(ff6a00)>APCBC</c>] <c(65696d)>L/55</c>"
-msgstr ""
+msgstr "75mm M61 탄 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/55</c>"
 
 msgctxt "desc/ammo/bulleteng_75 he"
 msgid "75mm M48 Shell [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
-msgstr ""
+msgstr "75mm M48 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
 
 msgctxt "desc/ammo/bulleteng_63 he"
 msgid "No.36M Mk.I Grenade 'Mills Bomb' [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "No.36M Mk.I 수류탄 '밀스 수류탄' [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulleteng_63 heat"
 msgid "Rifle Grenade No.68/AT [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "소총 유탄 No.68/AT [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulleteng_63 ic"
 msgid "No.76 Special Incendiary Grenade [<c(c9a6ff)>IC</c>]"
-msgstr ""
+msgstr "No.76 특수 소이 수류탄 [<c(c9a6ff)>IC</c>]"

@@ -15,240 +15,240 @@ msgstr ""
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/alias1"
 msgid "player"
-msgstr ""
+msgstr "플레이어"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/alias2"
 msgid "AI"
-msgstr ""
+msgstr "AI"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/alias3"
 msgid "ger"
-msgstr ""
+msgstr "ger"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/convoy"
 msgid "Enemy convoy arrival scheduled for:"
-msgstr ""
+msgstr "적 호송대 도착 예정:"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/date"
 msgid "November 9th, 1941 · Tikhvin railway hub"
-msgstr ""
+msgstr "1941년 11월 9일 · 티흐빈 철도 요충지"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/location"
 msgid "Tikhvin railway hub. November 9th."
-msgstr ""
+msgstr "티흐빈 철도 요충지. 11월 9일."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/name"
 msgid "The Cold Supper"
-msgstr ""
+msgstr "차가운 저녁 식사"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/name_big"
 msgid "The Cold Supper"
-msgstr ""
+msgstr "차가운 저녁 식사"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/outro_completed"
 msgid "Tikhvin was as far east as ‘Army Group North’ would ever get. The Soviet counter-attack of December 41 pushed the Germans out almost exactly one month after it had been lost. Once re-taken, the Soviets never lost control of the Tikhvin railway hub again and Leningrad would not fall, despite the fact that the siege lasted almost 900 days. "
-msgstr ""
+msgstr "티흐빈은 북부집단군이 동쪽으로 닿은 가장 먼 곳이었다. 1941년 12월 소련군의 반격이 티흐빈을 빼앗긴 지 거의 정확히 한 달 만에 독일군을 몰아냈다. 되찾은 뒤 소련은 티흐빈 철도 요충지의 통제를 다시는 잃지 않았고, 포위가 거의 900일 동안 이어졌음에도 레닌그라드는 함락되지 않았다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/outro_failed"
 msgid "Because you lost the battle, the people of Leningrad will receive even smaller rations than they already have until now. The situation has just become critical! There is no way of saying how many people will pay with their lives for this failure."
-msgstr ""
+msgstr "전투에 패해 레닌그라드 시민들은 지금까지보다 더 적은 배급을 받게 된다. 상황이 방금 위급해졌다! 이 실패로 몇 명이 목숨을 잃을지 알 수 없다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/place"
 msgid "Special Detachment"
-msgstr ""
+msgstr "특수 분견대"
 
 #, boost-format
 msgctxt "mission/single/01-rus/1941_12_tikhvin/progress_p3"
 msgid "Compromise the garrison! %1% Out of a minimum of 4 targets accomplished."
-msgstr ""
+msgstr "수비대를 교란하라! 최소 4개 목표 중 %1%개 완수."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/01"
 msgid "Nighttime reduces the units' vision but vehicles and loud gunshots will be heard over a distance. Try to be stealthy."
-msgstr ""
+msgstr "밤에는 유닛의 시야가 줄지만 차량과 큰 총소리는 멀리까지 들린다. 은밀하게 움직여라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/02"
 msgid "Look for something to contaminate the fuel tank. Get a soldier to bring the item close to the hatch."
-msgstr ""
+msgstr "연료 탱크를 오염시킬 물건을 찾아라. 병사 한 명이 그 물건을 해치 가까이 가져가게 하라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/03"
 msgid "To contaminate the enemy kitchen, take a soldier with a repair kit in his hands and bring it to the kitchen area. Engine lubricants are not particularly edible."
-msgstr ""
+msgstr "적 취사장을 오염시키려면 수리 도구함을 든 병사를 취사 구역으로 데려가라. 엔진 윤활유는 그리 먹음직하지 않다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/04"
 msgid "To take out the German howitzers silently, bring a soldier close enough to the gun barrel and he will sabotage the gun."
-msgstr ""
+msgstr "독일 곡사포를 소리 없이 제거하려면 병사 한 명을 포신 가까이 데려가라. 포를 파괴 공작할 것이다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/05"
 msgid "There are several paths leading to the second aerosled. Scouting will be needed to determine the best one."
-msgstr ""
+msgstr "두 번째 에어로썰매로 가는 길이 여러 갈래다. 어느 길이 가장 좋은지 정찰이 필요하다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/06"
 msgid "Try to remain stealthy. Do not get too close to sleeping Germans or raise suspicion. You should use the silenced Nagant pistol to take out enemies quietly."
-msgstr ""
+msgstr "은밀함을 유지하라. 잠든 독일군에게 너무 가까이 가거나 의심을 사지 마라. 소음기를 단 나강 권총으로 적을 조용히 처치해야 한다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/07"
 msgid "A high-ranking officer is performing an inspection. He may carry documents. You must wait for the right time to ambush him."
-msgstr ""
+msgstr "고위 장교가 시찰 중이다. 문서를 지녔을 수 있다. 매복할 알맞은 때를 기다려야 한다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/08"
 msgid "The target may be eliminated silently. Come closer for instructions."
-msgstr ""
+msgstr "목표를 소리 없이 제거할 수 있다. 가까이 와서 지시를 들어라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_assistant/09"
 msgid "There is a fuel supply area which we should sabotage. Quietly, if possible... I have some ideas."
-msgstr ""
+msgstr "파괴 공작해야 할 연료 보급 구역이 있다. 가능하면 조용히... 생각해 둔 것이 있다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/01"
 msgid "Full throttle! He's right behind us!"
-msgstr ""
+msgstr "전속력이다! 바로 뒤에 붙었다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/02"
 msgid "Left!"
-msgstr ""
+msgstr "왼쪽!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/03"
 msgid "Go through the shrubs! He won't know where we went!"
-msgstr ""
+msgstr "덤불을 뚫고 가라! 우리가 어디로 갔는지 모를 것이다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/04"
 msgid "We have to regroup with the other aerosled! .... the radio caught a bullet, we can't communicate ... we will have to find them using another way!"
-msgstr ""
+msgstr "다른 에어로썰매와 합류해야 한다! .... 무전기가 총알을 맞았다, 교신이 안 된다 ... 다른 방법으로 찾아야 한다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/05"
 msgid "We have the documents! Let me see..."
-msgstr ""
+msgstr "문서를 얻었다! 어디 보자..."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/06"
 msgid "A Panzer got on our tail and we had to evade it using a different route, but our radio was broken... what's the status?"
-msgstr ""
+msgstr "판처가 뒤에 붙어서 다른 길로 피해야 했는데 무전기가 고장 났다... 상황이 어떤가?"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/07"
 msgid "Abort? No! We must take action now while they are resting. First, we must find out where their depots and supplies are, and destroy them."
-msgstr ""
+msgstr "중단? 안 된다! 놈들이 쉬는 지금 움직여야 한다. 먼저 놈들의 보급창과 물자가 어디 있는지 알아내 파괴해야 한다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/08"
 msgid "I can translate German... sounds like a cunning plan... Let's go."
-msgstr ""
+msgstr "나는 독일어를 번역할 수 있다... 교활한 계획 같군... 가자."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/09"
 msgid "Hmm. It seems we laid our hands on the complete plan of the defense sectors and units located here, plus the scheduled arrival of new logistic columns. This is pure gold, comrades."
-msgstr ""
+msgstr "흠. 이곳의 방어 구역과 부대 배치를 담은 전체 계획, 그리고 새 보급 종대의 도착 일정까지 손에 넣은 것 같다. 이건 순금이다, 동지들."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/10"
 msgid "We will wreak all sorts of havoc while we can! We could potentially visit.... let's see... An artillery position! The barracks! The fuel depot..."
-msgstr ""
+msgstr "할 수 있는 동안 온갖 난장판을 만들겠다! 방문할 수 있는 곳은... 어디 보자... 포병 진지! 병영! 연료 보급창..."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/11"
 msgid "Apparently, judging by the distance between German units, they rely on a powerful radio vehicle for communication. If we can take that out, the Germans here will be isolated. Look for antennas to find it..."
-msgstr ""
+msgstr "독일 부대 사이의 거리로 보건대 놈들은 통신을 강력한 무전 차량에 의존한다. 그걸 없애면 여기 독일군은 고립된다. 안테나를 찾아 위치를 알아내라..."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/12"
 msgid "Don't let us get spotted or noticed by enemy officers! Make sure to shoot them before engaging in combat. They will likely call for reinforcements!"
-msgstr ""
+msgstr "적 장교에게 들키거나 눈에 띄지 마라! 교전하기 전에 먼저 쏴라. 놈들은 증원을 부를 것이다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/13"
 msgid "That officer over there is still safe and sound! I bet he's calling for reinforcements as we speak. Brace yourselves!"
-msgstr ""
+msgstr "저기 있는 장교가 아직 멀쩡하다! 지금쯤 증원을 부르고 있을 거다. 각오해라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/14"
 msgid "See that guy with the peaked cap? He's an officer! You should have taken him out by now! I bet he is calling in reinforcements."
-msgstr ""
+msgstr "챙 달린 모자를 쓴 저 녀석 보이나? 장교다! 진작 처치했어야 했다! 증원을 부르고 있을 거다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/15"
 msgid "Bloody hell, this place stinks of petrol. The fuel must have an open valve somewhere. Hmmm... We could put some chemicals into the fuel to stall their engines..."
-msgstr ""
+msgstr "빌어먹을, 여기 휘발유 냄새가 진동한다. 어딘가 연료 밸브가 열려 있는 모양이다. 흠... 연료에 화학물질을 넣어 엔진을 멈추게 할 수도 있겠군..."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/16"
 msgid "I'm sure we don't want to interrupt their sleep... What a great occasion. Why don't we introduce a new ingredient onto the kitchen ovens? Erm... go fetch a repair kit. I'm sure there are some delicious lubricants and anti-freezing fluids in there. "
-msgstr ""
+msgstr "놈들의 잠을 방해하고 싶진 않지... 아주 좋은 기회다. 취사 화덕에 새 재료를 넣어 보는 건 어떤가? 음... 수리 도구함을 가져와라. 거기에 맛 좋은 윤활유와 부동액이 있을 것이다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/17"
 msgid "Aha, there's the artillery. I suspect if we blow them up, the noise will alert the fascists. How about we take out the guards silently... and then we put some pebbles in the gun barrels? Next time they fire... they will have some surprise fireworks!"
-msgstr ""
+msgstr "아하, 저기 포병이다. 폭파하면 그 소리에 파시스트들이 알아챌 것 같다. 경비병을 소리 없이 처리하고... 포신에 자갈을 채워 넣으면 어떨까? 다음에 쏠 때... 깜짝 불꽃놀이가 터질 것이다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/18"
 msgid "Comrades, in a few minutes a fuel convoy is scheduled to arrive. We should take it out!"
-msgstr ""
+msgstr "동지들, 몇 분 뒤 연료 호송대가 도착할 예정이다. 처치해야 한다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/19"
 msgid "A logistics column is scheduled to arrive in a few minutes. The Manifest: Howitzer ammunition. I don't think we should let the fascist dogs have any of that!"
-msgstr ""
+msgstr "몇 분 뒤 보급 종대가 도착할 예정이다. 적재 목록은 곡사포 탄약이다. 파시스트 개들에게 한 발도 넘겨줄 수 없다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/20"
 msgid "Oh yes. Guten appetit, you swine!"
-msgstr ""
+msgstr "오, 그래. 많이 먹어라, 돼지들아! (Guten Appetit!)"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/21"
 msgid "Alright, comrades. That's enough. Time to get the hell out!"
-msgstr ""
+msgstr "좋다, 동지들. 이만하면 됐다. 이제 여기서 빠져나간다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/22"
 msgid "Hah! They won't know what hit 'em."
-msgstr ""
+msgstr "하! 무슨 일인지도 모를 거다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/23"
 msgid "That's the howitzers! Good job."
-msgstr ""
+msgstr "저건 곡사포다! 잘했다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/24"
 msgid "Excellent. They can't call for reinforcements now. But this is no license to go out there with guns blazing! They still outnumber us and we should try and act quietly!"
-msgstr ""
+msgstr "훌륭하다. 이제 증원을 부르지 못한다. 하지만 총을 쏘며 뛰쳐나가도 된다는 허가는 아니다! 놈들 수가 여전히 우리보다 많으니 조용히 움직여야 한다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/25"
 msgid "The officer by the roadblock might be calling in reinforcements, kill him right now!"
-msgstr ""
+msgstr "검문소 옆 장교가 증원을 부르고 있을지 모른다, 당장 죽여라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/26"
 msgid "I bet that officer just called for reinforcements!"
-msgstr ""
+msgstr "저 장교가 방금 증원을 불렀을 거다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/27"
 msgid "That officer by the sandbags will have called in reinforcements by now!"
-msgstr ""
+msgstr "모래주머니 옆 저 장교가 벌써 증원을 불렀을 것이다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/28"
 msgid "Officer spotted! Don't let him detect you!"
-msgstr ""
+msgstr "장교 발견! 들키지 마라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/29"
 msgid "Officer! Don't get into a fight without killing him first, or else he might call for reinforcements."
-msgstr ""
+msgstr "장교다! 먼저 죽이지 않고 교전하지 마라, 아니면 증원을 부를 것이다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/30"
 msgid "Damn! We woke them up! I guess the only way to sabotage this place now is to kill everybody."
-msgstr ""
+msgstr "젠장! 놈들을 깨웠다! 이제 이곳을 파괴 공작하는 방법은 전부 죽이는 것뿐인 듯하다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/arty"
 msgid "There is an artillery battery which we must take care of. I got an idea for taking them out silently when we get there."
-msgstr ""
+msgstr "처리해야 할 포병 중대가 있다. 거기 가면 소리 없이 제거할 방법이 있다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/barracks"
 msgid "The Fascists have some designated barracks. I'm sure we could stealthily deal with them while they sleep."
-msgstr ""
+msgstr "파시스트들에게 지정 병영이 있다. 놈들이 자는 동안 은밀히 처리할 수 있을 것이다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/fuel"
 msgid "There is a fuel supply area which we should sabotage. Quietly, if possible... I have some ideas."
-msgstr ""
+msgstr "파괴 공작해야 할 연료 보급 구역이 있다. 가능하면 조용히... 생각해 둔 것이 있다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_partisan/01"
 msgid "Comrades! Thanks for helping us! Let us help you on your mission!"
-msgstr ""
+msgstr "동지들! 도와줘서 고맙소! 우리도 당신들의 임무를 돕겠소!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_partisan/02"
 msgid "Kill the fascists!"
-msgstr ""
+msgstr "파시스트들을 죽여라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_radioman/01"
 msgid "Comrade Commissar! We thought you were dead! We have been unable to contact you since we approached Tikhvin!"
-msgstr ""
+msgstr "정치위원 동지! 돌아가신 줄 알았습니다! 티흐빈에 접근한 뒤로 연락이 닿지 않았습니다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_radioman/02"
 msgid "Not good Sir... It's full of Germans building defenses. It's suicidal to attack the enemy garrison. Should we abort?"
-msgstr ""
+msgstr "좋지 않습니다... 방어 시설을 쌓는 독일군으로 가득합니다. 적 수비대를 공격하는 건 자살행위입니다. 중단할까요?"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_radioman/03"
 msgid "How shall we proceed, comrade Commissar?"
-msgstr ""
+msgstr "어떻게 진행할까요, 정치위원 동지?"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_radioman/04"
 msgid ""
@@ -256,108 +256,108 @@ msgstr ""
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/01"
 msgid "We're getting away! The German's tracks are sinking into the snow!"
-msgstr ""
+msgstr "빠져나가고 있다! 독일 놈의 궤도가 눈에 빠지고 있다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/02"
 msgid "Go, go, go!"
-msgstr ""
+msgstr "가, 가, 가!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/03"
 msgid "Comrade Commissar, the road is blocked. This way leads to the German rear... We're lost!"
-msgstr ""
+msgstr "정치위원 동지, 길이 막혔습니다. 이 길은 독일군 후방으로 통합니다... 길을 잃었습니다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/04"
 msgid "Comrade Commissar, the Germans always write everything down. We could look out for a high-ranking officer and take his documents."
-msgstr ""
+msgstr "정치위원 동지, 독일군은 뭐든 다 적어 둡니다. 고위 장교를 노려서 문서를 빼앗으면 됩니다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/05"
 msgid "Comrade Commissar, how will we manage to prevent the Germans from calling in reinforcements?"
-msgstr ""
+msgstr "정치위원 동지, 독일군이 증원을 부르지 못하게 하려면 어떻게 합니까?"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/06"
 msgid "I can't see movement at those barracks, they must be asleep. Hmm, smells sweet. They must be preparing breakfast already."
-msgstr ""
+msgstr "저 병영에서는 움직임이 안 보입니다, 자고 있는 게 틀림없습니다. 흠, 달콤한 냄새가 납니다. 벌써 아침을 준비하는 모양입니다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/07"
 msgid "Artillery position, over there!"
-msgstr ""
+msgstr "포병 진지가 저쪽에 있습니다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/08"
 msgid "Something's going on over by the lamp post. What the hell?!"
-msgstr ""
+msgstr "가로등 쪽에서 무슨 일이 벌어지고 있습니다. 대체 뭐야?!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/09"
 msgid "Shit! Those tanks over there are being manned! Stop making noise!"
-msgstr ""
+msgstr "젠장! 저쪽 전차들에 사람이 타고 있다! 소리 내지 마!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/10"
 msgid "I see an officer! Watch out!"
-msgstr ""
+msgstr "장교가 보입니다! 조심하십시오!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_soldier/11"
 msgid "That is an officer! Don't let him see you..."
-msgstr ""
+msgstr "저건 장교다! 눈에 띄지 마라..."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/story"
 msgid "Army Group North dashes towards the key city of Leningrad. Tikhvin is taken.\n\nThe Red Army orders a counteroffensive for the next day. In preparation, the lines are infiltrated."
-msgstr ""
+msgstr "북부집단군이 핵심 도시 레닌그라드를 향해 돌진한다. 티흐빈이 함락되었다.\n\n붉은 군대는 다음 날 반격을 명령한다. 이를 준비하기 위해 전선에 침투한다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task1"
 msgid "Establish contact with the other aerosled."
-msgstr ""
+msgstr "다른 에어로썰매와 연락을 취하라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task2"
 msgid "The Commissar must survive!"
-msgstr ""
+msgstr "정치위원은 반드시 살아남아야 한다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/talk_co_down"
 msgid "Medic! - Commissar is wounded and requires first aid!"
-msgstr ""
+msgstr "위생병! - 정치위원이 부상을 입어 응급처치가 필요하다!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task_heal_co"
 msgid "Revive Commissar before he bleeds to death!"
-msgstr ""
+msgstr "정치위원이 과다 출혈로 죽기 전에 소생시켜라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task3"
 msgid "The Commissar must obtain the German documents. He can read German."
-msgstr ""
+msgstr "정치위원이 독일 문서를 입수해야 한다. 그는 독일어를 읽을 수 있다."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task4"
 msgid "Compromise the German garrison!"
-msgstr ""
+msgstr "독일 수비대를 교란하라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task4_1"
 msgid "Sabotage the artillery position"
-msgstr ""
+msgstr "포병 진지를 파괴 공작하라"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task4_2"
 msgid "Ambush and destroy the ammo convoy."
-msgstr ""
+msgstr "탄약 호송대를 매복 공격해 섬멸하라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task4_3"
 msgid "Sabotage the German barracks"
-msgstr ""
+msgstr "독일 병영을 파괴 공작하라"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task4_4"
 msgid "Take out the fuel column!"
-msgstr ""
+msgstr "연료 종대를 제거하라!"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task4_5"
 msgid "Sabotage the fuel containers"
-msgstr ""
+msgstr "연료 용기를 파괴 공작하라"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task5"
 msgid "Proceed to the extraction point."
-msgstr ""
+msgstr "탈출 지점으로 이동하라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task_opt"
 msgid "Take out the radio vehicle to disable enemy communications."
-msgstr ""
+msgstr "무전 차량을 제거해 적 통신을 끊어라."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task_sec1"
 msgid "Secret Objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/task_sec1_completed"
 msgid "Free the allied Partisans."
-msgstr ""
+msgstr "동맹 파르티잔을 해방하라."

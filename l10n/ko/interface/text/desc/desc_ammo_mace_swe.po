@@ -15,56 +15,56 @@ msgstr ""
 
 msgctxt "desc/ammo/bulletfin_75_k02 ap"
 msgid "75mm slpprj m/40 [<c(ff6a00)>AP</c>] <c(65696d)>L/21</c>"
-msgstr ""
+msgstr "75mm slpprj m/40 [<c(ff6a00)>AP</c>] <c(65696d)>L/21</c>"
 
 msgctxt "desc/ammo/bulletfin_75_k02 apbc"
 msgid "75mm slpprj m/40B [<c(ff6a00)>APBC</c>] <c(65696d)>L/21</c>"
-msgstr ""
+msgstr "75mm slpprj m/40B [<c(ff6a00)>APBC</c>] <c(65696d)>L/21</c>"
 
 msgctxt "desc/ammo/bulletfin_75_k02 aphe"
 msgid "75mm slpgr m/39 [<c(ff6a00)>APHE</c>] <c(65696d)>L/21</c>"
-msgstr ""
+msgstr "75mm slpgr m/39 [<c(ff6a00)>APHE</c>] <c(65696d)>L/21</c>"
 
 msgctxt "desc/ammo/bulletfin_75_k02 he"
 msgid "75mm sgr m/22-38 [<c(ff1200)>HE</c>] <c(65696d)>L/21</c>"
-msgstr ""
+msgstr "75mm sgr m/22-38 [<c(ff1200)>HE</c>] <c(65696d)>L/21</c>"
 
 msgctxt "desc/ammo/bulletfin_105_k44 apbc"
 msgid "105mm slpprj m/44 [<c(ff6a00)>APBC</c>] <c(65696d)>L/55</c>"
-msgstr ""
+msgstr "105mm slpprj m/44 [<c(ff6a00)>APBC</c>] <c(65696d)>L/55</c>"
 
 msgctxt "desc/ammo/bulletfin_105_k44 he"
 msgid "105mm sgr m/34 LT [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
-msgstr ""
+msgstr "105mm sgr m/34 LT [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
 
 msgctxt "desc/ammo/bulletfin_105_k44 heat"
 msgid "105mm psgr m/49 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/55</c>"
-msgstr ""
+msgstr "105mm psgr m/49 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/55</c>"
 
 msgctxt "desc/ammo/bullet_20x138b_auto swe ap"
 msgid "20mm slpgr [<c(ff6a00)>AP</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "20mm slpgr [<c(ff6a00)>AP</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bullet_20x138b_auto swe he"
 msgid "20mm slsgr [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "20mm slsgr [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bullet_20x120_auto dk he"
 msgid "20×120mm Madsen [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "20×120mm Madsen [<c(ff1200)>HE</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bullet_20x120_auto dk ap"
 msgid "20×120mm Madsen [<c(ff6a00)>APCBC</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "20×120mm Madsen [<c(ff6a00)>APCBC</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/sgr_m38 he"
 msgid "150mm sgr m/38 [<c(ff1200)>HE</c>] <c(65696d)>L/12</c>"
-msgstr ""
+msgstr "150mm sgr m/38 [<c(ff1200)>HE</c>] <c(65696d)>L/12</c>"
 
 msgctxt "desc/ammo/120mm_swe_l50 aphe"
 msgid "12cm Slpgr [<c(ff6a00)>APHE</c>] <c(65696d)>L/50</c>"
-msgstr ""
+msgstr "12cm Slpgr [<c(ff6a00)>APHE</c>] <c(65696d)>L/50</c>"
 
 msgctxt "desc/ammo/120mm_swe_l50 he"
 msgid "12cm Sgr [<c(ff1200)>HE</c>] <c(65696d)>L/50</c>"
-msgstr ""
+msgstr "12cm Sgr [<c(ff1200)>HE</c>] <c(65696d)>L/50</c>"

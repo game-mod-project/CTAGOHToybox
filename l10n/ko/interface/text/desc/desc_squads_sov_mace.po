@@ -15,76 +15,76 @@ msgstr ""
 
 msgctxt "desc/squad/single_at_mace1(rus)"
 msgid "<c(E56042)>1.</c> AT Detachment (PTRD)"
-msgstr ""
+msgstr "<c(E56042)>1.</c> 대전차 분견대 (PTRD)"
 
 msgctxt "desc/squad/single_at_mace2(rus)"
 msgid "<c(E56042)>2.</c> AT Detachment (PTRS)"
-msgstr ""
+msgstr "<c(E56042)>2.</c> 대전차 분견대 (PTRS)"
 
 msgctxt "desc/squad/single_bazooker_mace1(rus)"
 msgid "<c(E56042)>1.</c> AT Detachment (Panzerfaust)"
-msgstr ""
+msgstr "<c(E56042)>1.</c> 대전차 분견대 (Panzerfaust)"
 
 msgctxt "desc/squad/single_bazooker_mace2(rus)"
 msgid "<c(E56042)>2.</c> AT Detachment (Panzerschreck)"
-msgstr ""
+msgstr "<c(E56042)>2.</c> 대전차 분견대 (Panzerschreck)"
 
 msgctxt "desc/squad/single_at_con(rus)"
 msgid "AT Detachment (PTRD)"
-msgstr ""
+msgstr "대전차 분견대 (PTRD)"
 
 msgctxt "desc/squad/squad_guard_special_rifle_late_def_1(rus)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Special Guards Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 특별 근위 소총 분대"
 
 msgctxt "desc/squad/squad_guard_special_rifle_late_def_2(rus)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Special Guards Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 특별 근위 소총 분대"
 
 msgctxt "desc/squad/squad_guard_special_smg_late_def_1(rus)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Special Guards SMG Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 특별 근위 기관단총 분대"
 
 msgctxt "desc/squad/squad_guard_special_smg_late_def_2(rus)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Special Guards SMG Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 특별 근위 기관단총 분대"
 
 msgctxt "desc/squad/squad_vet_partisan_special_con(rus)"
 msgid "<c(A5A095)>(+1)</c> Veteran Partisan Special Squad"
-msgstr ""
+msgstr "<c(A5A095)>(+1)</c> 베테랑 파르티잔 특수 분대"
 
 msgctxt "desc/squad/squad_guard_special_rifle_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Special Guards Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 특별 근위 소총 분대"
 
 msgctxt "desc/squad/squad_guard_special_rifle_heavy_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Special Heavy Guards Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 특별 중무장 근위 소총 분대"
 
 msgctxt "desc/squad/squad_guard_special_smg_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Special Guards SMG Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 특별 근위 기관단총 분대"
 
 msgctxt "desc/squad/squad_guard_special_smg_heavy_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Special Heavy Guards SMG Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 특별 중무장 근위 기관단총 분대"
 
 msgctxt "desc/squad/single_signaller(rus)"
 msgid "Artillery Signaller [KA]"
-msgstr ""
+msgstr "포병 통신병 [KA]"
 
 msgctxt "desc/squad/squad_cossacks_con(rus)"
 msgid "Cossacks Squad"
-msgstr ""
+msgstr "코사크 분대"
 
 msgctxt "desc/squad/squad_marines_late_con(rus)"
 msgid "Marine Squad (VMF)"
-msgstr ""
+msgstr "해병 분대 (VMF)"
 
 msgctxt "desc/squad/single_at_rpg1_late_con(rus)"
 msgid "AT Detachment (RPG-1)"
-msgstr ""
+msgstr "대전차 분견대 (RPG-1)"
 
 msgctxt "desc/squad/ba20_command_con_mace"
 msgid "BA-20 (Command)"
-msgstr ""
+msgstr "BA-20 (지휘)"

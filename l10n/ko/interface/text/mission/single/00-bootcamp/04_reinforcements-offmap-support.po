@@ -23,7 +23,7 @@ msgstr "1941년 6월 25일 · 소련 국경"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint_video"
 msgid "Press this button to re-watch the video for this tutorial phase."
-msgstr ""
+msgstr "이 단추를 눌러 이 훈련 단계의 영상을 다시 본다."
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/name"
 msgid "Tutorial 4: Reinforcements"
@@ -123,11 +123,11 @@ msgstr "적의 공격을 격퇴하라"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/outro_completed"
 msgid "Mission Accomplished!\n\nClick on 'continue' to keep playing this mission or click on 'next' to proceed directly into the next mission."
-msgstr ""
+msgstr "임무 완수!\n\n이 임무를 계속 하려면 '계속'을, 곧바로 다음 임무로 가려면 '다음'을 눌러라."
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/place"
 msgid "Army Group Centre"
-msgstr ""
+msgstr "중부집단군"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/replay_video"
 msgid "Replay Video"
@@ -175,19 +175,19 @@ msgstr "패배했다!"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/sdkfz222"
 msgid "Sd.Kfz 222 Ausf.A"
-msgstr ""
+msgstr "Sd.Kfz 222 Ausf.A"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/mg34_lafette"
 msgid "Lafette MG 34"
-msgstr ""
+msgstr "Lafette MG 34"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/80mm_sgrw34"
 msgid "8cm sGrW 34"
-msgstr ""
+msgstr "8cm sGrW 34"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/20mm_flak30"
 msgid "2cm FlaK 30"
-msgstr ""
+msgstr "2cm FlaK 30"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/inf"
 msgid "Rifle Squad"
@@ -195,11 +195,11 @@ msgstr "소총 분대"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/signaller"
 msgid "Artillery Signaller"
-msgstr ""
+msgstr "포병 통신병"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/panzer4f1"
 msgid "Pz.Kpfw IV Ausf.F1"
-msgstr ""
+msgstr "Pz.Kpfw IV Ausf.F1"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/airstrike2"
 msgid "Bf 110 Airstrike"
@@ -211,4 +211,4 @@ msgstr "포격"
 
 msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/skip"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"

@@ -1004,7 +1004,7 @@ msgstr ""
 
 msgctxt "mp/army/civilian"
 msgid "Civilian"
-msgstr ""
+msgstr "민간인"
 
 msgctxt "mp/lobby/slot/menu/ai_heroic"
 msgid "AI: Heroic"
@@ -2860,7 +2860,7 @@ msgstr ""
 
 msgctxt "mp/scene/hint_v1"
 msgid "Support"
-msgstr ""
+msgstr "지원"
 
 msgctxt "mp/statistics/player/units_header"
 msgid "# #Your top units#<x.>Infantry kills#<x.>Vehicle kills#<x.>Score#<x.>Effectiveness#"
@@ -3696,40 +3696,40 @@ msgstr ""
 
 msgctxt "mp/scene/unit_spawn/skip_preparation_ger"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mp/scene/unit_spawn/skip_preparation_rus"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mp/scene/unit_spawn/skip_preparation_fin"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mp/scene/unit_spawn/skip_preparation_usa"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mp/scene/unit_spawn/skip_preparation_eng"
 msgid "Skip preparation phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mp/scene/unit_spawn/move_spawn_ger"
 msgid "Move Deployment Point"
-msgstr ""
+msgstr "배치 지점 이동"
 
 msgctxt "mp/scene/unit_spawn/move_spawn_rus"
 msgid "Move Deployment Point"
-msgstr ""
+msgstr "배치 지점 이동"
 
 msgctxt "mp/scene/unit_spawn/move_spawn_fin"
 msgid "Move Deployment Point"
-msgstr ""
+msgstr "배치 지점 이동"
 
 msgctxt "mp/scene/unit_spawn/move_spawn_usa"
 msgid "Move Deployment Point"
-msgstr ""
+msgstr "배치 지점 이동"
 
 msgctxt "mp/scene/unit_spawn/move_spawn_eng"
 msgid "Move Deployment Point"
-msgstr ""
+msgstr "배치 지점 이동"

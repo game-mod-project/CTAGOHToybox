@@ -331,7 +331,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task_secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_07_18_caen_goodwood/ui/task_secret01_complete"
 msgid "Secret objective #1: Pawn Promotion - Complete the first objective using only infantry"

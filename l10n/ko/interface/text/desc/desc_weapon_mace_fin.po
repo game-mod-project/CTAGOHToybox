@@ -16,16 +16,16 @@ msgstr ""
 
 msgctxt "desc/weapon/280mm_rkh43"
 msgid "280mm Rkh/43"
-msgstr ""
+msgstr "280mm Rkh/43"
 
 msgctxt "desc/weapon/300mm_krh42"
 msgid "300mm Rkh/42"
-msgstr ""
+msgstr "300mm Rkh/42"
 
 msgctxt "desc/weapon/pvg_m42"
 msgid "20mm Pvg m/42"
-msgstr ""
+msgstr "20mm Pvg m/42"
 
 msgctxt "desc/weapon/mauser_t18_swe"
 msgid "Mauser Tankgewehr M1918"
-msgstr ""
+msgstr "Mauser Tankgewehr M1918"

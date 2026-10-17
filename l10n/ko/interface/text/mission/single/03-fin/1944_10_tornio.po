@@ -19,7 +19,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_10_tornio/men"
 msgid "You lost all your men!"
-msgstr ""
+msgstr "병사를 모두 잃었다!"
 
 msgctxt "mission/single/03-fin/1944_10_tornio/name"
 msgid "The Bridge Too Far"
@@ -75,7 +75,7 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1944_10_tornio/skip"
 msgid "Skip preparation Phase"
-msgstr ""
+msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/03-fin/1944_10_tornio/story"
 msgid " October, 1944. The armistice with the Soviet Union was signed a few weeks ago, and because of that, Finland has to break diplomatic ties with Germany and expel any German soldiers from Finland. The “Lapland war” begins. Parts of 3rd Division are shipped to Tornio, a port on the Swedish border, with reinforcements to follow soon after. At Tornio, they surprise the German garrison and drive them out of the town. Soon after, more elements of the 3rd division are supposed to arrive.\n\n In this mission, you lead the initial landing party, commanding JR 11. You need to set up a perimeter east of Tornio. Expect Kampfgruppe Kraeutler to counterattack from the east, as they will definitely need the Liakanjoki bridge to get to Tornio, and it’s up to you to defend the bridge against your former allies. Set up a defensive line quickly, and hold the bridge until the rest of the division and the tanks arrive."

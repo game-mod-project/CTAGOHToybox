@@ -15,700 +15,700 @@ msgstr ""
 
 msgctxt "desc/stuff/bandage_fin"
 msgid "Finnish Bandages"
-msgstr ""
+msgstr "핀란드 붕대"
 
 msgctxt "desc/stuff/fin_fieldcap"
 msgid "Verikauha M/36"
-msgstr ""
+msgstr "Verikauha M/36"
 
 msgctxt "desc/stuff/fin_fieldcap_tilted"
 msgid "Verikauha M/36"
-msgstr ""
+msgstr "Verikauha M/36"
 
 msgctxt "desc/stuff/fin_furcap"
 msgid "Mannerheimari"
-msgstr ""
+msgstr "Mannerheimari"
 
 msgctxt "desc/stuff/fin_stalhelm"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_buckled"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_medic"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_skull"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_skull_buckled"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_skull_tilted"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_tilted"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_ww1"
 msgid "Stahlhelm M16 helmet"
-msgstr ""
+msgstr "Stahlhelm M16 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_ww1_buckled"
 msgid "Stahlhelm M16 helmet"
-msgstr ""
+msgstr "Stahlhelm M16 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_ww1_skull"
 msgid "Stahlhelm M16 helmet"
-msgstr ""
+msgstr "Stahlhelm M16 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_ww1_skull_buckled"
 msgid "Stahlhelm M16 helmet"
-msgstr ""
+msgstr "Stahlhelm M16 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_ww1_skull_tilted"
 msgid "Stahlhelm M16 helmet"
-msgstr ""
+msgstr "Stahlhelm M16 헬멧"
 
 msgctxt "desc/stuff/fin_stalhelm_ww1_tilted"
 msgid "Stahlhelm M16 helmet"
-msgstr ""
+msgstr "Stahlhelm M16 헬멧"
 
 msgctxt "desc/stuff/fin_tank_helmet"
 msgid "Tankman's crash helmet"
-msgstr ""
+msgstr "전차병 충돌 방지 헬멧"
 
 msgctxt "desc/stuff/fin_ushanka"
 msgid "M/22 Officer's Cap"
-msgstr ""
+msgstr "M/22 장교 모자"
 
 msgctxt "desc/stuff/knife_fin"
 msgid "Puukko knife"
-msgstr ""
+msgstr "Puukko 나이프"
 
 msgctxt "desc/stuff/m32"
 msgid "M/32 Grenade"
-msgstr ""
+msgstr "M/32 수류탄"
 
 msgctxt "desc/stuff/m32_satchel"
 msgid "M/32 Anti-tank Satchel"
-msgstr ""
+msgstr "M/32 대전차 폭약 가방"
 
 msgctxt "desc/stuff/m32_stick"
 msgid "M/32 (Stick) Grenade"
-msgstr ""
+msgstr "M/32 (자루형) 수류탄"
 
 msgctxt "desc/stuff/m36"
 msgid "M/36 Impact Grenade"
-msgstr ""
+msgstr "M/36 충격 수류탄"
 
 msgctxt "desc/stuff/m39 mine"
 msgid "Anti-Tank M/39 mine"
-msgstr ""
+msgstr "대전차 M/39 지뢰"
 
 msgctxt "desc/stuff/luhas mine"
 msgid "Antipersonnel Luhas mine"
-msgstr ""
+msgstr "대인 Luhas 지뢰"
 
 msgctxt "desc/stuff/m42_wp"
 msgid "M/42F (White Phosphorus)"
-msgstr ""
+msgstr "M/42F (백린)"
 
 msgctxt "desc/stuff/m43_smoke"
 msgid "M/43 SN (Smoke)"
-msgstr ""
+msgstr "M/43 SN (연막)"
 
 msgctxt "desc/stuff/molotov_bundle_fin"
 msgid "Molotov Cocktail Bundle"
-msgstr ""
+msgstr "화염병 묶음"
 
 msgctxt "desc/stuff/molotov_cocktail_fin"
 msgid "Molotov Cocktail"
-msgstr ""
+msgstr "화염병"
 
 msgctxt "desc/stuff/shovel_engineer_fin"
 msgid "Heavy Engineering Shovel"
-msgstr ""
+msgstr "대형 공병삽"
 
 msgctxt "desc/stuff/shovel_fin"
 msgid "Entrenching tool"
-msgstr ""
+msgstr "야전삽"
 
 msgctxt "desc/stuff/svkkr_pm"
 msgid "Svkkr PM (Smoke)"
-msgstr ""
+msgstr "Svkkr PM (연막)"
 
 msgctxt "desc/stuff/fin_helm_cze"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_arm"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_camo1"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_camo2"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_camo3"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_camo4"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage_arm"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage_camo1"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage_camo2"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage_camo3"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage_camo4"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_foliage_var2"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_cze_var2"
 msgid "Czech M/32 Steel Helmet"
-msgstr ""
+msgstr "체코 M/32 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_arm"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_camo1"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_camo2"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_camo3"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_camo4"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap_arm"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap_camo1"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap_camo2"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap_camo3"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap_camo4"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_fieldcap_skull"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap_arm"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap_camo1"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap_camo2"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap_camo3"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap_camo4"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_furcap_skull"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m17_skull"
 msgid "M/17 Steel Helmet"
-msgstr ""
+msgstr "M/17 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_arm1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1_arm"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1_camo1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1_camo2"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1_camo3"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1_green"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var1_skull"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2_arm"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2_camo1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2_camo2"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2_camo3"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2_green"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_band_var2_skull"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_camo1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_camo2"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_camo3"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage_arm"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage_camo1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage_camo2"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage_camo3"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage_green"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_foliage_skull"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_skull"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1_arm"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1_camo1"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1_camo2"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1_camo3"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1_green"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m38_var1_skull"
 msgid "M/38 Steel Helmet"
-msgstr ""
+msgstr "M/38 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m40"
 msgid "M/40 Steel Helmet"
-msgstr ""
+msgstr "M/40 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m40_band"
 msgid "M/40 Steel Helmet"
-msgstr ""
+msgstr "M/40 강철 헬멧"
 
 msgctxt "desc/stuff/fin_helm_m40_foliage"
 msgid "M/40 Steel Helmet"
-msgstr ""
+msgstr "M/40 강철 헬멧"
 
 msgctxt "desc/stuff/swe_helm"
 msgid "Swedish M/26 Steel Helmet"
-msgstr ""
+msgstr "스웨덴 M/26 강철 헬멧"
 
 msgctxt "desc/stuff/swe_helm_m37"
 msgid "Swedish M/37 Steel Helmet"
-msgstr ""
+msgstr "스웨덴 M/37 강철 헬멧"
 
 msgctxt "desc/stuff/swe_helm_m37_band"
 msgid "Swedish M/37 Steel Helmet"
-msgstr ""
+msgstr "스웨덴 M/37 강철 헬멧"
 
 msgctxt "desc/stuff/swe_helm_m37_foliage"
 msgid "Swedish M/37 Steel Helmet"
-msgstr ""
+msgstr "스웨덴 M/37 강철 헬멧"
 
 msgctxt "desc/stuff/fin_fieldcap_m27"
 msgid "M/27 Field Hat"
-msgstr ""
+msgstr "M/27 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m27_brown"
 msgid "M/27 Field Hat"
-msgstr ""
+msgstr "M/27 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m27_brown_nco"
 msgid "M/27 Field Hat (NCO)"
-msgstr ""
+msgstr "M/27 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m27_brown_officer"
 msgid "M/27 Field Hat (Officer)"
-msgstr ""
+msgstr "M/27 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m27_nco"
 msgid "M/27 Field Hat (NCO)"
-msgstr ""
+msgstr "M/27 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m27_officer"
 msgid "M/27 Field Hat (Officer)"
-msgstr ""
+msgstr "M/27 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_air"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_arm"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_arm_nco_inf"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_arm_officer_tank"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_foliage"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_arm"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_arm_nco_inf"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_arm_officer_tank"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_foliage"
 msgid "M/36 Verikauha Field Hat"
-msgstr ""
+msgstr "M/36 Verikauha 야전모"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_nco"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_nco_inf"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_gray_officer_inf"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_nco"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_nco_arty"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_nco_cav"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_nco_inf"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_nco_tank"
 msgid "M/36 Verikauha Field Hat (NCO)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_officer_air"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_officer_arty"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_officer_cav"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_officer_inf"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_fieldcap_m36_officer_tank"
 msgid "M/36 Verikauha Field Hat (Officer)"
-msgstr ""
+msgstr "M/36 Verikauha 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_furcap_m27"
 msgid "M/27 Field Hat"
-msgstr ""
+msgstr "M/27 야전모"
 
 msgctxt "desc/stuff/fin_furcap_m27_brown"
 msgid "M/27 Field Hat"
-msgstr ""
+msgstr "M/27 야전모"
 
 msgctxt "desc/stuff/fin_furcap_m27_brown_nco"
 msgid "M/27 Field Hat (NCO)"
-msgstr ""
+msgstr "M/27 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_furcap_m27_brown_officer"
 msgid "M/27 Field Hat (Officer)"
-msgstr ""
+msgstr "M/27 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_furcap_m27_nco"
 msgid "M/27 Field Hat (NCO)"
-msgstr ""
+msgstr "M/27 야전모 (부사관)"
 
 msgctxt "desc/stuff/fin_furcap_m27_officer"
 msgid "M/27 Field Hat (Officer)"
-msgstr ""
+msgstr "M/27 야전모 (장교)"
 
 msgctxt "desc/stuff/fin_furcap_m39_closed"
 msgid "M/39 Fur Hat"
-msgstr ""
+msgstr "M/39 털모자"
 
 msgctxt "desc/stuff/fin_furcap_m39_down"
 msgid "M/39 Fur Hat"
-msgstr ""
+msgstr "M/39 털모자"
 
 msgctxt "desc/stuff/fin_furcap_m39_up"
 msgid "M/39 Fur Hat"
-msgstr ""
+msgstr "M/39 털모자"
 
 msgctxt "desc/stuff/fin_furcap_m39_up_officer"
 msgid "M/39 Fur Hat (Officer)"
-msgstr ""
+msgstr "M/39 털모자 (장교)"
 
 msgctxt "desc/stuff/fin_hat_koivistolainen"
 msgid "Koivistolainen"
-msgstr ""
+msgstr "Koivistolainen"
 
 msgctxt "desc/stuff/fin_hat_m27"
 msgid "M/27 Hat"
-msgstr ""
+msgstr "M/27 모자"
 
 msgctxt "desc/stuff/fin_hat_m27_brown"
 msgid "M/27 Hat"
-msgstr ""
+msgstr "M/27 모자"
 
 msgctxt "desc/stuff/fin_helm_tank"
 msgid "Nakkipipo Tank Helmet"
-msgstr ""
+msgstr "Nakkipipo 전차 헬멧"
 
 msgctxt "desc/stuff/fin_summercap_m39"
 msgid "M/39 Summer Hat"
-msgstr ""
+msgstr "M/39 하계모"
 
 msgctxt "desc/stuff/fin_summercap_m39_air"
 msgid "M/39 Summer Hat"
-msgstr ""
+msgstr "M/39 하계모"
 
 msgctxt "desc/stuff/fin_summercap_m39_arm"
 msgid "M/39 Summer Hat"
-msgstr ""
+msgstr "M/39 하계모"
 
 msgctxt "desc/stuff/fin_summercap_m39_arm_nco_inf"
 msgid "M/39 Summer Hat (NCO)"
-msgstr ""
+msgstr "M/39 하계모 (부사관)"
 
 msgctxt "desc/stuff/fin_summercap_m39_arm_officer_tank"
 msgid "M/39 Summer Hat (Officer)"
-msgstr ""
+msgstr "M/39 하계모 (장교)"
 
 msgctxt "desc/stuff/fin_summercap_m39_nco_cav"
 msgid "M/39 Summer Hat (NCO)"
-msgstr ""
+msgstr "M/39 하계모 (부사관)"
 
 msgctxt "desc/stuff/fin_summercap_m39_nco_inf"
 msgid "M/39 Summer Hat (NCO)"
-msgstr ""
+msgstr "M/39 하계모 (부사관)"
 
 msgctxt "desc/stuff/fin_summercap_m39_nco_tank"
 msgid "M/39 Summer Hat (NCO)"
-msgstr ""
+msgstr "M/39 하계모 (부사관)"
 
 msgctxt "desc/stuff/fin_summercap_m39_officer_air"
 msgid "M/39 Summer Hat (Officer)"
-msgstr ""
+msgstr "M/39 하계모 (장교)"
 
 msgctxt "desc/stuff/fin_summercap_m39_officer_arty"
 msgid "M/39 Summer Hat (Officer)"
-msgstr ""
+msgstr "M/39 하계모 (장교)"
 
 msgctxt "desc/stuff/fin_summercap_m39_officer_cav"
 msgid "M/39 Summer Hat (Officer)"
-msgstr ""
+msgstr "M/39 하계모 (장교)"
 
 msgctxt "desc/stuff/fin_summercap_m39_officer_inf"
 msgid "M/39 Summer Hat (Officer)"
-msgstr ""
+msgstr "M/39 하계모 (장교)"
 
 msgctxt "desc/stuff/fin_summercap_m39_officer_tank"
 msgid "M/39 Summer Hat (Officer)"
-msgstr ""
+msgstr "M/39 하계모 (장교)"
 
 msgctxt "desc/stuff/fin_summercap_m39_side"
 msgid "M/39 Summer Hat"
-msgstr ""
+msgstr "M/39 하계모"
 
 msgctxt "desc/stuff/fin_summercap_m39_strap"
 msgid "M/39 Summer Hat"
-msgstr ""
+msgstr "M/39 하계모"
 
 msgctxt "desc/stuff/swe_furcap"
 msgid "Swedish Palsmössa M1909 Fur Hat"
-msgstr ""
+msgstr "스웨덴 Palsmössa M1909 털모자"
 
 msgctxt "desc/stuff/swe_sidecap"
 msgid "Swedish Side Cap"
-msgstr ""
+msgstr "스웨덴 사이드캡"
 
 msgctxt "desc/stuff/swe_sidecap_green"
 msgid "Swedish Side Cap"
-msgstr ""
+msgstr "스웨덴 사이드캡"
 
 msgctxt "desc/stuff/swe_sidecap_side"
 msgid "Swedish Side Cap"
-msgstr ""
+msgstr "스웨덴 사이드캡"
 
 msgctxt "desc/stuff/swe_sidecap_side_green"
 msgid "Swedish Side Cap"
-msgstr ""
+msgstr "스웨덴 사이드캡"
 
 msgctxt "desc/stuff/swe_skicap"
 msgid "Swedish Skidmössa Ski Cap"
-msgstr ""
+msgstr "스웨덴 Skidmössa 스키모"
 
 msgctxt "desc/stuff/swe_skicap_green"
 msgid "Swedish Skidmössa Ski Cap"
-msgstr ""
+msgstr "스웨덴 Skidmössa 스키모"

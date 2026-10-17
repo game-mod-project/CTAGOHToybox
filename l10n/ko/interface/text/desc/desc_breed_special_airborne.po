@@ -16,64 +16,64 @@ msgstr ""
 
 msgctxt "desc/human/narrator/fra-civilian1"
 msgid "French Farmer"
-msgstr ""
+msgstr "프랑스 농부"
 
 msgctxt "desc/human/narrator/fra-civilian2"
 msgid "French Civilian"
-msgstr ""
+msgstr "프랑스 민간인"
 
 msgctxt "desc/human/narrator/ger-civilian"
 msgid "German Civilian"
-msgstr ""
+msgstr "독일 민간인"
 
 msgctxt "desc/human/narrator/usa-airborne_officer"
 msgid "82nd Airborne Platoon Commander"
-msgstr ""
+msgstr "제82공수사단 소대장"
 
 msgctxt "desc/human/narrator/usa-airborne_officer101"
 msgid "101st Airborne Platoon Commander"
-msgstr ""
+msgstr "제101공수사단 소대장"
 
 msgctxt "desc/human/narrator/usa-airborne_soldier"
 msgid "82nd Paratrooper"
-msgstr ""
+msgstr "제82공수사단 공수병"
 
 msgctxt "desc/human/narrator/usa-airborne_soldier101"
 msgid "101st Paratrooper"
-msgstr ""
+msgstr "제101공수사단 공수병"
 
 msgctxt "desc/human/narrator/usa-desobry"
 msgid "Maj. William R. Desobry"
-msgstr ""
+msgstr "Maj. 윌리엄 R. 데소브리"
 
 msgctxt "desc/human/narrator/usa-winters"
 msgid "Lt. Richard Winters"
-msgstr ""
+msgstr "Lt. 리처드 윈터스"
 
 msgctxt "desc/human/narrator/usa-lipton"
 msgid "Sgt. Carwood Lipton"
-msgstr ""
+msgstr "Sgt. 카우드 립턴"
 
 msgctxt "desc/human/narrator/usa-mcauliffe"
 msgid "Gen. Anthony McAuliffe"
-msgstr ""
+msgstr "Gen. 앤서니 매콜리프"
 
 msgctxt "desc/human/narrator/usa-spiers"
 msgid "Lt. Ronald Speirs"
-msgstr ""
+msgstr "Lt. 로널드 스피어스"
 
 msgctxt "desc/human/narrator/usa-airborne_officer_winter"
 msgid "82nd Airborne Platoon Commander"
-msgstr ""
+msgstr "제82공수사단 소대장"
 
 msgctxt "desc/human/narrator/usa-airborne_officer101_winter"
 msgid "101st Airborne Platoon Commander"
-msgstr ""
+msgstr "제101공수사단 소대장"
 
 msgctxt "desc/human/narrator/usa-airborne_soldier_winter"
 msgid "82nd Paratrooper"
-msgstr ""
+msgstr "제82공수사단 공수병"
 
 msgctxt "desc/human/narrator/usa-airborne_soldier101_winter"
 msgid "101st Paratrooper"
-msgstr ""
+msgstr "제101공수사단 공수병"

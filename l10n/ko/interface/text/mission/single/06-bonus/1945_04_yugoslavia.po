@@ -259,7 +259,7 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task_secret"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task_secret_completed"
 msgid "Secret objective #1: Intercept and capture the supply truck"

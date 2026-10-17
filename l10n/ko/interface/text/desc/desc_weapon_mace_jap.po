@@ -16,316 +16,316 @@ msgstr ""
 
 msgctxt "desc/weapon/type_ru_lmg"
 msgid "Type Ru"
-msgstr ""
+msgstr "Type Ru"
 
 msgctxt "desc/weapon/type_92_large"
 msgid "Type 92 (92 Round Magazine)"
-msgstr ""
+msgstr "Type 92 (92 Round Magazine)"
 
 msgctxt "desc/weapon/type_92"
 msgid "Type 92"
-msgstr ""
+msgstr "Type 92"
 
 msgctxt "desc/weapon/type_92_bipod"
 msgid "Type 92"
-msgstr ""
+msgstr "Type 92"
 
 msgctxt "desc/weapon/80mm_ijn_rocket_launcher"
 msgid "Navy Antitank Launcher (80mm)"
-msgstr ""
+msgstr "Navy Antitank Launcher (80mm)"
 
 msgctxt "desc/weapon/100mm_ijn_rocket_launcher"
 msgid "Navy Antitank Launcher (100mm)"
-msgstr ""
+msgstr "Navy Antitank Launcher (100mm)"
 
 msgctxt "desc/weapon/320mm_type98_mortar"
 msgid "Type 98 320mm"
-msgstr ""
+msgstr "Type 98 320mm"
 
 msgctxt "desc/weapon/type_21_rocket_booster"
 msgid "Type 21 Rocket Booster"
-msgstr ""
+msgstr "Type 21 로켓 부스터"
 
 msgctxt "desc/stuff/knife_jap"
 msgid "Type 30 Bayonet"
-msgstr ""
+msgstr "Type 30 Bayonet"
 
 msgctxt "desc/weapon/beretta_m38_43_jap"
 msgid "Type Itariya"
-msgstr ""
+msgstr "Type Itariya"
 
 msgctxt "desc/weapon/type35"
 msgid "Type 35 Infantry Rifle"
-msgstr ""
+msgstr "Type 35 Infantry Rifle"
 
 msgctxt "desc/weapon/bomb_dropper_jap_empty"
 msgid "Paratroopers"
-msgstr ""
+msgstr "공수병"
 
 msgctxt "desc/stuff/type_99_smoke_candle_grenade_supplies"
 msgid "Type 99 Smoke Candle (Supply)"
-msgstr ""
+msgstr "Type 99 Smoke Candle (보급)"
 
 msgctxt "desc/stuff/type_99_smoke_candle_grenade_tank"
 msgid "Type 99 Smoke Candle"
-msgstr ""
+msgstr "Type 99 Smoke Candle"
 
 msgctxt "desc/weapon/150mm_tarenso"
 msgid "Experimental 150mm Rocket Launcher (20x150mm Rockets)"
-msgstr ""
+msgstr "Experimental 150mm Rocket Launcher (20x150mm Rockets)"
 
 msgctxt "desc/weapon/50mm_type89"
 msgid "Type 89 50mm"
-msgstr ""
+msgstr "Type 89 50mm"
 
 msgctxt "desc/weapon/37mm_type11"
 msgid "Type 11 37mm L/25"
-msgstr ""
+msgstr "Type 11 37mm L/25"
 
 msgctxt "desc/weapon/20mm_type99"
 msgid "20mm Type 99 Model 1 cannon x2 L/63"
-msgstr ""
+msgstr "20mm Type 99 Model 1 cannon x2 L/63"
 
 msgctxt "desc/weapon/bomb_dropper_jap_60x2"
 msgid "2x Type 97 Number 6 Navy Bomb 60Kg"
-msgstr ""
+msgstr "2x Type 97 Number 6 Navy Bomb 60Kg"
 
 msgctxt "desc/weapon/bomb_dropper_jap_60x6"
 msgid "6x Type 97 Number 6 Navy Bomb 60Kg"
-msgstr ""
+msgstr "6x Type 97 Number 6 Navy Bomb 60Kg"
 
 msgctxt "desc/weapon/bomb_dropper_jap_250x1"
 msgid "1x Type 98 Number 25 Navy Bomb 250Kg"
-msgstr ""
+msgstr "1x Type 98 Number 25 Navy Bomb 250Kg"
 
 msgctxt "desc/weapon/bomb_dropper_jap_250x2"
 msgid "2x Type 98 Number 25 Navy Bomb 250Kg"
-msgstr ""
+msgstr "2x Type 98 Number 25 Navy Bomb 250Kg"
 
 msgctxt "desc/weapon/bomb_dropper_jap_500x1"
 msgid "1x Number 50 Mod.2 Navy Bomb 500Kg"
-msgstr ""
+msgstr "1x Number 50 Mod.2 Navy Bomb 500Kg"
 
 msgctxt "desc/weapon/bomb_dropper_jap_800x1"
 msgid "1x Number 80 Mod.1 Bomb Navy 800Kg"
-msgstr ""
+msgstr "1x Number 80 Mod.1 Bomb Navy 800Kg"
 
 msgctxt "desc/weapon/84kg_type_5"
 msgid "2x Type 3 No.6 Mod.27 Mk.1 Rockets"
-msgstr ""
+msgstr "2x Type 3 No.6 Mod.27 Mk.1 Rockets"
 
 msgctxt "desc/weapon/25mm_type96"
 msgid "Type 96 25mm L/60"
-msgstr ""
+msgstr "Type 96 25mm L/60"
 
 msgctxt "desc/weapon/57mm_type90"
 msgid "Type 90 57mm L/18"
-msgstr ""
+msgstr "Type 90 57mm L/18"
 
 msgctxt "desc/weapon/75mm_type90"
 msgid "Type 90 75mm L/38"
-msgstr ""
+msgstr "Type 90 75mm L/38"
 
 msgctxt "desc/weapon/type94_70mm_tank"
 msgid "Type 94 70mm Tank Gun L/14"
-msgstr ""
+msgstr "Type 94 70mm Tank Gun L/14"
 
 msgctxt "desc/weapon/105mm_type5_2"
 msgid "Type 5 105mm Tank Gun L/55"
-msgstr ""
+msgstr "Type 5 105mm Tank Gun L/55"
 
 msgctxt "desc/weapon/105mm_type5"
 msgid "Type 5 105mm Tank Gun L/55"
-msgstr ""
+msgstr "Type 5 105mm Tank Gun L/55"
 
 msgctxt "desc/weapon/37mm_type97"
 msgid "Type 98 37mm Tank Gun L/50"
-msgstr ""
+msgstr "Type 98 37mm Tank Gun L/50"
 
 msgctxt "desc/weapon/37mm_type94"
 msgid "Type 94 37mm Tank Gun L/39"
-msgstr ""
+msgstr "Type 94 37mm Tank Gun L/39"
 
 msgctxt "desc/weapon/37mm_type94_at"
 msgid "Type 94 37mm Anti Tank Gun L/45"
-msgstr ""
+msgstr "Type 94 37mm Anti Tank Gun L/45"
 
 msgctxt "desc/weapon/37mm_type100"
 msgid "Type 100 37mm L/50"
-msgstr ""
+msgstr "Type 100 37mm L/50"
 
 msgctxt "desc/weapon/57mm_type97"
 msgid "Type 97 57mm L/18"
-msgstr ""
+msgstr "Type 97 57mm L/18"
 
 msgctxt "desc/weapon/47mm_type1_at"
 msgid "Type 1 47mm Anti Tank Gun L/53"
-msgstr ""
+msgstr "Type 1 47mm Anti Tank Gun L/53"
 
 msgctxt "desc/weapon/47mm_type1"
 msgid "Type 1 47mm Tank Gun L/47"
-msgstr ""
+msgstr "Type 1 47mm Tank Gun L/47"
 
 msgctxt "desc/weapon/75mm_type3"
 msgid "Type 3 75mm L/43"
-msgstr ""
+msgstr "Type 3 75mm L/43"
 
 msgctxt "desc/weapon/75mm_type4"
 msgid "Type 4 75mm L/56"
-msgstr ""
+msgstr "Type 4 75mm L/56"
 
 msgctxt "desc/weapon/75mm_type5"
 msgid "Type 5 75mm L/56"
-msgstr ""
+msgstr "Type 5 75mm L/56"
 
 msgctxt "desc/weapon/20mm_type98"
 msgid "Type 98 20mm L/70"
-msgstr ""
+msgstr "Type 98 20mm L/70"
 
 msgctxt "desc/weapon/20mm_type98_x2"
 msgid "Dual 20mm Type 98 L/70"
-msgstr ""
+msgstr "Dual 20mm Type 98 L/70"
 
 msgctxt "desc/weapon/105mm_type92"
 msgid "Type 92 105mm L/45"
-msgstr ""
+msgstr "Type 92 105mm L/45"
 
 msgctxt "desc/weapon/150mm_type38"
 msgid "Type 38 150mm L/11"
-msgstr ""
+msgstr "Type 38 150mm L/11"
 
 msgctxt "desc/weapon/120mm_schneidercanet1898"
 msgid "120mm Schneider-Canet M1897 L/26"
-msgstr ""
+msgstr "120mm Schneider-Canet M1897 L/26"
 
 msgctxt "desc/weapon/120mm_year_type10"
 msgid "Type 10 120mm L/46"
-msgstr ""
+msgstr "Type 10 120mm L/46"
 
 msgctxt "desc/weapon/150mm_type89"
 msgid "Type 89 150mm L/40"
-msgstr ""
+msgstr "Type 89 150mm L/40"
 
 msgctxt "desc/weapon/105mm_type14"
 msgid "Type 14 105mm L/40"
-msgstr ""
+msgstr "Type 14 105mm L/40"
 
 msgctxt "desc/weapon/105mm_type91_tank"
 msgid "Type 91 105mm L/24"
-msgstr ""
+msgstr "Type 91 105mm L/24"
 
 msgctxt "desc/weapon/105mm_type91"
 msgid "Type 91 105mm L/24"
-msgstr ""
+msgstr "Type 91 105mm L/24"
 
 msgctxt "desc/weapon/105mm_type99"
 msgid "Type 99 105mm L/17"
-msgstr ""
+msgstr "Type 99 105mm L/17"
 
 msgctxt "desc/weapon/105mm_type4"
 msgid "Type 4 105mm L/11"
-msgstr ""
+msgstr "Type 4 105mm L/11"
 
 msgctxt "desc/weapon/type92_70mm"
 msgid "Type 92 70mm L/10"
-msgstr ""
+msgstr "Type 92 70mm L/10"
 
 msgctxt "desc/weapon/75mm_type88"
 msgid "Type 88 75mm L/44"
-msgstr ""
+msgstr "Type 88 75mm L/44"
 
 msgctxt "desc/weapon/45cm_naval"
 msgid "45cm Naval Rocket"
-msgstr ""
+msgstr "45cm Naval Rocket"
 
 msgctxt "desc/weapon/20mm_type97_rifle"
 msgid "Type 97 20mm L/53"
-msgstr ""
+msgstr "Type 97 20mm L/53"
 
 msgctxt "desc/weapon/20mm_type97_rifle_heat"
 msgid "Type 97 20mm L/53"
-msgstr ""
+msgstr "Type 97 20mm L/53"
 
 msgctxt "desc/weapon/20cm_type4_mortar"
 msgid "Type 4 20cm"
-msgstr ""
+msgstr "Type 4 20cm"
 
 msgctxt "desc/weapon/type_3_rocket_booster"
 msgid "Rocket Booster"
-msgstr ""
+msgstr "로켓 부스터"
 
 msgctxt "desc/weapon/75mm_type38"
 msgid "Type 38 75mm L/31"
-msgstr ""
+msgstr "Type 38 75mm L/31"
 
 msgctxt "desc/weapon/75mm_type38_kai"
 msgid "Type 38 Kai 75mm L/31"
-msgstr ""
+msgstr "Type 38 Kai 75mm L/31"
 
 msgctxt "desc/weapon/70mm_type11"
 msgid "Type 11 70mm"
-msgstr ""
+msgstr "Type 11 70mm"
 
 msgctxt "desc/weapon/81mm_type97"
 msgid "Type 97 81mm"
-msgstr ""
+msgstr "Type 97 81mm"
 
 msgctxt "desc/weapon/90mm_type97"
 msgid "Type 97 90mm"
-msgstr ""
+msgstr "Type 97 90mm"
 
 msgctxt "desc/weapon/150mm_type97_short"
 msgid "Type 97 150mm"
-msgstr ""
+msgstr "Type 97 150mm"
 
 msgctxt "desc/weapon/150mm_type97_long"
 msgid "Type 97 150mm"
-msgstr ""
+msgstr "Type 97 150mm"
 
 msgctxt "desc/weapon/120mm_type2"
 msgid "Type 2 120mm"
-msgstr ""
+msgstr "Type 2 120mm"
 
 msgctxt "desc/weapon/75mm_lightweight_type5"
 msgid "Lightweight Type 5 75mm L/56"
-msgstr ""
+msgstr "Lightweight Type 5 75mm L/56"
 
 msgctxt "desc/weapon/300mm_type3_mortar"
 msgid "Type 3 300mm"
-msgstr ""
+msgstr "Type 3 300mm"
 
 msgctxt "desc/weapon/15cm_type96_tank"
 msgid "Type 96 15cm L/23"
-msgstr ""
+msgstr "Type 96 15cm L/23"
 
 msgctxt "desc/weapon/15cm_type96"
 msgid "Type 96 15cm L/23"
-msgstr ""
+msgstr "Type 96 15cm L/23"
 
 msgctxt "desc/weapon/120mm_type38"
 msgid "Type 38 120mm L/11"
-msgstr ""
+msgstr "Type 38 120mm L/11"
 
 msgctxt "desc/weapon/30mm_type5"
 msgid "Type 5 30mm x2 L/45"
-msgstr ""
+msgstr "Type 5 30mm x2 L/45"
 
 msgctxt "desc/weapon/105mm_type5_prototype"
 msgid "105mm Experimental High Velocity L/50"
-msgstr ""
+msgstr "105mm Experimental High Velocity L/50"
 
 msgctxt "desc/weapon/120mm_navy_short_gun"
 msgid "Type 1 120mm Navy Short Gun L/12"
-msgstr ""
+msgstr "Type 1 120mm Navy Short Gun L/12"
 
 msgctxt "desc/weapon/75mm_type5_auto"
 msgid "Type II Model I 75mm L/56"
-msgstr ""
+msgstr "Type II Model I 75mm L/56"
 
 msgctxt "desc/weapon/75mm_type99"
 msgid "Type 99 75mm Tank Gun L/18"
-msgstr ""
+msgstr "Type 99 75mm Tank Gun L/18"
 
 msgctxt "desc/weapon/37mm_type1"
 msgid "Type 1 37mm L/50"
-msgstr ""
+msgstr "Type 1 37mm L/50"

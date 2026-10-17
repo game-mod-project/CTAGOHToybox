@@ -15,327 +15,327 @@ msgstr ""
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/ally_ambush_ready"
 msgid "We set up our positions and are ready to greet our guests. Tell us when you're ready, too. I bet Ivan will show up right after the snowstorm ends, so hurry."
-msgstr ""
+msgstr "진지를 구축했고 손님 맞을 준비가 됐다. 너희도 준비되면 알려 줘라. 이반은 눈보라가 그치자마자 나타날 테니 서둘러라."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/ally_ambush_spawn"
 msgid "The Soviet columns drive on the main road and railroad. My platoon is on the way to intercept. Please take care of the rest."
-msgstr ""
+msgstr "소련 종대가 대로와 철도를 따라 온다. 우리 소대가 가로막으러 가는 중이다. 나머지는 부탁한다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/ammobox_exploded"
 msgid "This may not be the Juhannus festival, but Ivan's artillery made for a great fireworks display. Good job, everyone!"
-msgstr ""
+msgstr "유한누스 축제는 아니지만 이반의 포병이 멋진 불꽃놀이를 보여 줬군. 다들 잘했다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/date"
 msgid "December 7th, 1939 · Kollaa River, Finland"
-msgstr ""
+msgstr "1939년 12월 7일 · 핀란드 콜라강"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/gameover/kollaa_lost"
 msgid "The Soviets broke your defensive lines."
-msgstr ""
+msgstr "소련군이 방어선을 돌파했다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/gameover/units_dead"
 msgid "You lost all your men!"
-msgstr ""
+msgstr "병사를 모두 잃었다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/gameover/win"
 msgid "Kollaa did not fall!"
-msgstr ""
+msgstr "콜라는 무너지지 않았다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_officer_01"
 msgid "Here are some of our retreating troops from Suojärvi. They had a tough battle before, and now Ivan is on their heels. We expect them to arrive in the morning."
-msgstr ""
+msgstr "수오예르비에서 후퇴한 아군 일부가 여기 있다. 앞서 힘겨운 전투를 치렀고 지금은 이반이 바로 뒤를 쫓고 있다. 아침에 도착할 것으로 본다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_officer_02"
 msgid "The retreating troops will take and fortify our main defensive positions behind the river. However, they are not ready to receive the red tide yet. We must slow them down here, while our main line prepares."
-msgstr ""
+msgstr "후퇴한 병력이 강 뒤의 주 방어 진지를 점령해 강화할 것이다. 하지만 아직 붉은 물결을 받아낼 준비가 되어 있지 않다. 주 방어선이 준비될 때까지 여기서 놈들을 늦춰야 한다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_officer_03"
 msgid "Your objective is to set up ambushes along the forest area. The allied units will support you by taking positions along the main road and the railroad. You have to support each other if things get hairy!"
-msgstr ""
+msgstr "임무는 숲 지대를 따라 매복을 설치하는 것이다. 아군 부대가 대로와 철도를 따라 진지를 잡고 지원할 것이다. 상황이 위험해지면 서로 도와야 한다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_soldier_01"
 msgid "It's so cold out here, I can't even sneak into the bushes to answer nature's call."
-msgstr ""
+msgstr "너무 추워서 볼일을 보러 덤불에 숨어들지도 못하겠다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_soldier_02"
 msgid "Maybe so… Simo, what kind of sniper does not use a scope anyway?"
-msgstr ""
+msgstr "그럴지도... 시모, 조준경을 안 쓰는 저격수가 어디 있어?"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_wd_01"
 msgid "This cold is our greatest ally. It will slow down the enemy more than any of our bullets."
-msgstr ""
+msgstr "이 추위가 우리의 가장 큰 아군이다. 우리 총알 어느 것보다 적을 더 늦출 거다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/intro_wd_02"
 msgid "I’m more accurate and harder to detect without it!"
-msgstr ""
+msgstr "난 그게 없는 편이 더 정확하고 눈에 덜 띈다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/lost_base4"
 msgid "We lost our positions at Base 4!"
-msgstr ""
+msgstr "4번 기지 진지를 잃었다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/lost_trench_02"
 msgid "We lost our positions on the left side of the main road!"
-msgstr ""
+msgstr "대로 왼쪽 진지를 잃었다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/lost_trench_03"
 msgid "Soviet forces have captured our positions right of the main road!"
-msgstr ""
+msgstr "소련군이 대로 오른쪽 진지를 점령했다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/lost_trench_04"
 msgid "The enemy has captured one of our positions in the center!"
-msgstr ""
+msgstr "적이 중앙의 진지 하나를 점령했다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/lost_trench_05"
 msgid "The enemy has captured one of our positions on the left flank!"
-msgstr ""
+msgstr "적이 좌측면의 진지 하나를 점령했다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/lost_trench_06"
 msgid "The enemy has captured our positions at the railroad!"
-msgstr ""
+msgstr "적이 철도 진지를 점령했다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/name"
 msgid "Kollaa Kestää"
-msgstr ""
+msgstr "콜라 케스태"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/name_big"
 msgid "Kollaa Kestää"
-msgstr ""
+msgstr "콜라 케스태"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/objective_progress"
 msgid "Engineers can install %1% more AT mines"
-msgstr ""
+msgstr "공병이 대전차 지뢰를 %1%개 더 설치할 수 있다"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task01"
 msgid "Hold the Kollaa line at all costs!"
-msgstr ""
+msgstr "콜라 방어선을 어떤 대가를 치르더라도 사수하라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task02"
 msgid "Destroy the Soviet vanguard forces"
-msgstr ""
+msgstr "소련군 선봉대를 격멸하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task03"
 msgid "Hold the positions near the railroad"
-msgstr ""
+msgstr "철도 근처 진지를 사수하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task04"
 msgid "Hold the positions near the main road"
-msgstr ""
+msgstr "대로 근처 진지를 사수하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt01"
 msgid "Set up the ambush positions using terrain (at least 3)"
-msgstr ""
+msgstr "지형을 이용해 매복 진지를 구축하라 (최소 3곳)"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt02"
 msgid "Wait until both Soviet columns are fully visible before opening fire to maximize the element of surprise"
-msgstr ""
+msgstr "기습 효과를 극대화하려면 소련군 종대 두 개가 모두 완전히 보일 때까지 기다렸다가 사격하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt03"
 msgid "Simo Häyhä, the \"White Death\" must survive"
-msgstr ""
+msgstr "\"하얀 죽음\" 시모 해위해를 반드시 살려라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt04"
 msgid "Destroy artillery emplacements"
-msgstr ""
+msgstr "포병 진지를 파괴하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt05"
 msgid "Protect the engineers while they are setting up AT mines"
-msgstr ""
+msgstr "공병이 대전차 지뢰를 설치하는 동안 보호하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt06"
 msgid "Kill the Soviet flamethrowers"
-msgstr ""
+msgstr "소련 화염방사병을 처치하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_opt07"
 msgid "Save \"White Death\" before he bleeds out!"
-msgstr ""
+msgstr "\"하얀 죽음\"이 과다 출혈로 죽기 전에 구하라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/task_secret01_completed"
 msgid "Secret objective - Detonate the ammo crate to destroy the artillery emplacement"
-msgstr ""
+msgstr "비밀 목표 - 탄약 상자를 폭파해 포병 진지를 파괴하라"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/objectives/timer_vanguard"
 msgid "Arrival of Soviet vanguard forces"
-msgstr ""
+msgstr "소련군 선봉대 도착"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_ally_retreat"
 msgid "You do not have to fight until the last man, or else we will not have any defenders left. Use maneuver defense tactics, pick better positions, and retreat when the moment is right."
-msgstr ""
+msgstr "마지막 한 명까지 싸울 필요는 없다. 그러면 방어할 병력이 남지 않는다. 기동 방어 전술을 쓰고, 더 좋은 위치를 고르고, 때가 되면 후퇴해라."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_01"
 msgid "Watch out! Ivan has brought his artillery emplacements! They will be very dangerous for our engineers out in the open. We have to destroy them as fast as possible! I am providing you with a captured Soviet armoured vehicle for this purpose. Use it to raid the enemy's rear and destroy this artillery battery."
-msgstr ""
+msgstr "조심해라! 이반이 포병 진지를 끌고 왔다! 노출된 공병에게 매우 위험할 것이다. 최대한 빨리 파괴해야 한다! 이를 위해 노획한 소련 장갑차를 내주겠다. 이걸로 적 후방을 급습해 이 포대를 파괴해라."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_destroyed"
 msgid "Excellent job! This artillery battery will not bother us anymore!"
-msgstr ""
+msgstr "훌륭하다! 이 포대는 더 이상 우릴 괴롭히지 못한다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_strike_01"
 msgid "Artillery strike! Everyone, take cover!"
-msgstr ""
+msgstr "포격이다! 전원 엄폐해라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_strike_02"
 msgid "I hear the artillery! Lay down!"
-msgstr ""
+msgstr "포성이 들린다! 엎드려라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_strike_base4"
 msgid "Artillery strike at the fourth base positions, take cover!"
-msgstr ""
+msgstr "제4기지 진지에 포격이다, 엄폐해라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_strike_hq"
 msgid "Soviet artillery is firing at our positions at the Dugout Hill, take cover!"
-msgstr ""
+msgstr "소련 포병이 토굴 언덕의 우리 진지를 사격 중이다, 엄폐해라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_strike_rock_01"
 msgid "The Soviets are firing their long range artillery at our trenches near the rock positions!"
-msgstr ""
+msgstr "소련군이 바위 진지 근처 우리 참호에 장거리 포를 쏘고 있다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_artillery_strike_rock_02"
 msgid "Soviet artillery is firing on the hill at the rock positions!"
-msgstr ""
+msgstr "소련 포병이 바위 진지의 언덕을 사격 중이다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_end_01"
 msgid "You're right, we stopped their advance. At least for now. Men, you all proved yourselves today. I am very proud of you all. Take some rest, you've earned it."
-msgstr ""
+msgstr "맞다, 놈들의 진격을 멈췄다. 적어도 지금은. 제군, 오늘 모두 실력을 증명했다. 모두가 정말 자랑스럽다. 좀 쉬어라, 그럴 자격이 있다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_engineers_01"
 msgid "Our forces have taken and fortified the main defensive line. But the engineers have not placed enough AT mines yet. We have to protect them as long as possible. The more mines they place, the easier the fight will be for us."
-msgstr ""
+msgstr "아군이 주 방어선을 점령해 강화했다. 하지만 공병이 아직 대전차 지뢰를 충분히 설치하지 못했다. 가능한 한 오래 공병을 보호해야 한다. 지뢰를 많이 깔수록 싸움이 쉬워진다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_last_wave"
 msgid "Soldiers, scouts report that the Soviet forces are too exhausted to advance! We did it! Let's send their remaining forces to hell!"
-msgstr ""
+msgstr "병사들, 정찰병 보고에 따르면 소련군은 너무 지쳐서 진격하지 못한다! 해냈다! 남은 놈들을 지옥으로 보내자!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_part2_few_man"
 msgid "If necessary, fall back to the rock positions. You don't have to stay in the forest forever."
-msgstr ""
+msgstr "필요하면 바위 진지로 후퇴해라. 숲에 영원히 머물 필요는 없다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_part3_last_push"
 msgid "Soldiers, I received bad news from the frontline at Tolvajärvi. The enemy has broken through there, which means we are the next target. We are the last line of defense in Karelia! Our country depends on us! Let them come - we will stop them right here - let's make history!"
-msgstr ""
+msgstr "병사들, 톨바예르비 전선에서 나쁜 소식이 왔다. 그곳이 적에게 뚫렸다, 다음 목표는 우리다. 우리는 카렐리야의 마지막 방어선이다! 조국이 우리에게 달려 있다! 오라고 해라 - 바로 여기서 막아낼 것이다 - 역사를 만들자!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_part3_main_force"
 msgid "Here they come! Men, prepare to fight! Let’s show them what we're made of! For our land, for our families, for our freedom, they shall not pass! The Kollaa line shall not fall!"
-msgstr ""
+msgstr "놈들이 온다! 제군, 싸울 준비를 해라! 우리가 어떤 사람인지 보여 주자! 우리 땅을 위해, 우리 가족을 위해, 우리 자유를 위해, 놈들은 지나가지 못한다! 콜라 방어선은 무너지지 않는다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_part3_pause_done"
 msgid "And here they come again. They are throwing everything at us. We have to hold this line, men. Otherwise, the whole front will fall. I believe in you."
-msgstr ""
+msgstr "또 오는군. 놈들이 가진 걸 전부 던지고 있다. 이 방어선을 지켜야 한다, 제군. 안 그러면 전선 전체가 무너진다. 너희를 믿는다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_part3_preparation"
 msgid "We slowed them down for a little while. Use this time to reinforce your positions and to destroy the Soviet artillery!"
-msgstr ""
+msgstr "놈들을 잠시 늦췄다. 이 시간에 진지를 보강하고 소련 포병을 파괴해라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_pause_01"
 msgid "Seems like the Soviets decided to give us a little break. I don't think any of them expected this much resistance from us. You are doing very well, men. It's an honor for me to serve with you."
-msgstr ""
+msgstr "소련군이 우리에게 잠깐 숨 돌릴 틈을 주기로 한 것 같다. 놈들 중 누구도 우리가 이렇게 저항할 줄은 몰랐을 것이다. 아주 잘하고 있다, 제군. 함께 복무하는 것이 영광이다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_positions_lost"
 msgid "They broke our defensive lines! We have to retreat!"
-msgstr ""
+msgstr "놈들이 방어선을 돌파했다! 후퇴해야 한다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_rail_pos_lost"
 msgid "The enemy has captured our positions at the railroad... The Kollaa line has been breached..."
-msgstr ""
+msgstr "적이 철도 진지를 점령했다... 콜라 방어선이 뚫렸다..."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_road_pos_lost"
 msgid "The enemy has captured our positions at the main road... The Kollaa line has been breached..."
-msgstr ""
+msgstr "적이 대로 진지를 점령했다... 콜라 방어선이 뚫렸다..."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_vanguard_destroyed"
 msgid "Great job, soldiers! The column is destroyed. However, don't relax just yet. It looks like they only sent a small recon group. Heavier forces will be here soon."
-msgstr ""
+msgstr "잘했다, 병사들! 종대가 파괴됐다. 하지만 아직 긴장을 풀지 마라. 소규모 정찰대만 보낸 것 같다. 더 강한 병력이 곧 올 것이다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_wd_bleeding"
 msgid "Simo Häyhä is injured! Help him as soon as possible!"
-msgstr ""
+msgstr "시모 해위해가 부상당했다! 최대한 빨리 도와라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/officer_wd_dead"
 msgid "Perkele! Simo Häyhä didn't make it... He was such a talented man."
-msgstr ""
+msgstr "페르켈레! 시모 해위해가 죽었다... 정말 재능 있는 사람이었는데."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/outro_completed"
 msgid "Outstanding work! The Finns achieved what the world thought impossible. The Battle of Kollaa lasted over three grueling months, but through sheer determination and tactical brilliance, the defense held strong. Finland’s resilience has become legendary, giving the nation hope in its darkest hour."
-msgstr ""
+msgstr "대단하다! 핀란드군은 세상이 불가능하다고 여긴 일을 해냈다. 콜라 전투는 석 달 넘게 고통스럽게 이어졌지만, 순전한 결의와 뛰어난 전술로 방어는 굳건히 버텼다. 핀란드의 불굴의 의지는 전설이 되어 가장 어두운 시기에 나라에 희망을 주었다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/outro_failed"
 msgid "The Kollaa River defense has fallen, and with it, a critical opportunity to stall the Soviet advance. Without a foothold, the Finns face a grim future as the Soviets push deeper into Karelia. This loss will echo throughout Finland, but the fight is not yet over - regroup and find another way!"
-msgstr ""
+msgstr "콜라강 방어선이 무너졌고, 소련군의 진격을 늦출 중요한 기회도 함께 사라졌다. 발판이 없으니 소련군이 카렐리야 깊숙이 밀고 들어오면서 핀란드군에게는 암울한 미래가 닥친다. 이 패배는 핀란드 전역에 울려 퍼지겠지만 싸움은 아직 끝나지 않았다 - 재편성해서 다른 방법을 찾아라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/pause_soldier_01"
 msgid "I'm quite surprised there aren't any Soviet planes overhead. They'd probably bomb us to pieces if they had a chance."
-msgstr ""
+msgstr "소련 비행기가 머리 위에 하나도 없어서 꽤 놀랍군. 기회만 있었으면 우리를 박살 냈을 텐데."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/pause_soldier_02"
 msgid "Didn't the retreating troops from Suojärvi bring anything to eat or drink with them? I feel quite hungry and thirsty."
-msgstr ""
+msgstr "수오예르비에서 후퇴한 병력이 먹을 것이나 마실 것을 안 가져왔나? 배고프고 목마르다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/pause_wd_01"
 msgid "Oh, forgive us, your Majesty! I am sure the retreating troops simply forgot to carry the entire field kitchen on their backs under artillery fire. Look around, we are standing by the river. Just crush some ice and melt it at one of the burning tanks."
-msgstr ""
+msgstr "오, 용서하십시오, 폐하! 후퇴한 병력이 포격 속에서 야전 취사장 전체를 등에 지고 오는 걸 깜빡했나 봅니다. 주위를 보십시오, 강가에 서 있습니다. 얼음을 깨서 불타는 전차 옆에서 녹이면 됩니다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/place"
 msgid "Kollaa River, Loimola area, Ladoga’s Karelia"
-msgstr ""
+msgstr "콜라강, 로이몰라 지역, 라도가 카렐리야"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/artillery"
 msgid "37 PstK/36"
-msgstr ""
+msgstr "37 PstK/36"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/btn_ambush"
 msgid "Begin ambush!"
-msgstr ""
+msgstr "매복 개시!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/btn_skip_preparation"
 msgid "Skip preparation"
-msgstr ""
+msgstr "준비 생략"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/doctrine_allround"
 msgid "<c(B29557)>All-Round:</c> 76 RK/27"
-msgstr ""
+msgstr "<c(B29557)>전방위:</c> 76 RK/27"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/doctrine_defensive"
 msgid "<c(B29557)>Defensive:</c> 76 RK/27"
-msgstr ""
+msgstr "<c(B29557)>방어형:</c> 76 RK/27"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/doctrine_irregular"
 msgid "<c(B29557)>Irregular:</c> Sissi Commandos"
-msgstr ""
+msgstr "<c(B29557)>비정규전:</c> 시시 코만도"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/doctrine_offensive"
 msgid "<c(B29557)>Offensive:</c> 120 K/78-31"
-msgstr ""
+msgstr "<c(B29557)>공격형:</c> 120 K/78-31"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/gift"
 msgid "Captured BA-6"
-msgstr ""
+msgstr "노획 BA-6"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/inf_at"
 msgid "AT Rifleman"
-msgstr ""
+msgstr "대전차 소총수"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/inf_t1"
 msgid "Rifle Squad"
@@ -343,128 +343,128 @@ msgstr "소총 분대"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/inf_t2"
 msgid "Jäger Squad"
-msgstr ""
+msgstr "예거 분대"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/mortar"
 msgid "81 Krh/36"
-msgstr ""
+msgstr "81 Krh/36"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/resupply"
 msgid "Ford V3000S (Supply)"
-msgstr ""
+msgstr "Ford V3000S (보급)"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/small_talk_soldier_01"
 msgid "So... Has anyone heard what happened back there in Suojärvi?"
-msgstr ""
+msgstr "그래서... 수오예르비에서 무슨 일이 있었는지 들은 사람 있나?"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/small_talk_soldier_02"
 msgid "Oh man... Only so few troops have made it here so far. And now it's our turn to meet the Reds... Hard to believe just last week I was back home, chopping wood and minding my own business."
-msgstr ""
+msgstr "아이고... 지금까지 여기 온 병력이 이것뿐이라니. 그리고 이제 우리가 빨갱이들을 맞을 차례다... 불과 지난주에 집에서 장작을 패며 내 일이나 하고 있었다는 게 믿기지 않는다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/small_talk_soldier_03"
 msgid "I miss my family so much... I would give anything to hear from them. But you know, mail takes forever as the lines are cut. I hope my son manages the farm and helps my daughters."
-msgstr ""
+msgstr "가족이 너무 보고 싶다... 소식을 들을 수만 있다면 뭐든 내놓겠다. 하지만 선이 끊겨서 우편은 한참 걸린다. 아들이 농장을 잘 꾸리고 딸들을 도와주길 바란다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/small_talk_wd_01"
 msgid "It's been too rough. Our men got hammered by endless artillery barrages. We were forced to retreat before encountering enemies."
-msgstr ""
+msgstr "너무 힘들었다. 우리 병사들은 끝없는 포격에 두들겨 맞았다. 적과 만나기도 전에 후퇴해야 했다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/small_talk_wd_02"
 msgid "Feels like a different world now. But that's the price we pay to keep our families safe."
-msgstr ""
+msgstr "딴 세상 같다. 하지만 가족을 지키려면 치러야 할 대가다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_ally_retreat"
 msgid "Perkele, it seems like the whole population of Murmansk is storming our positions! Retreating to better positions, cover me."
-msgstr ""
+msgstr "페르켈레, 무르만스크 주민 전체가 우리 진지로 쏟아져 오는 것 같다! 더 좋은 위치로 후퇴한다, 엄호해라."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_end_01"
 msgid "Is that... Is that all?"
-msgstr ""
+msgstr "이게... 이게 다인가?"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_flamethrowers"
 msgid "Flamethrowers incoming! They are going to set fire to the forest areas!"
-msgstr ""
+msgstr "화염방사병이 온다! 숲에 불을 지르려 한다!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_flamethrowers_dead"
 msgid "Very good, these flamethrowers will not damage our forest anymore."
-msgstr ""
+msgstr "좋아, 이 화염방사병들은 이제 우리 숲을 해치지 못한다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_flamethrowers_escaped"
 msgid "Perkele, one of those flamethrowers has escaped! We should at least try to kill the rest of them!"
-msgstr ""
+msgstr "페르켈레, 화염방사병 한 놈이 도망쳤다! 나머지라도 처치하자!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_molotov"
 msgid "It's funny, but the Soviets still haven't admitted the invasion of Suomi. A week ago, when they bombed Helsinki, their propagandists claimed they were dropping food instead of bombs. So let's give them a real treat in return right here, and call it a cocktail party!"
-msgstr ""
+msgstr "웃기지만 소련은 아직도 수오미 침공을 인정하지 않는다. 일주일 전 헬싱키를 폭격했을 때 선전꾼들은 폭탄이 아니라 식량을 떨어뜨렸다고 주장했다. 그러니 여기서 진짜 대접을 해 주자, 칵테일 파티라고 부르자!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_part2_few_man"
 msgid "We do not have a lot of troops left here, and the enemy is pushing like crazy... When will the main defensive line be ready?"
-msgstr ""
+msgstr "여기 남은 병력이 많지 않은데 적은 미친 듯이 밀어붙인다... 주 방어선은 언제 준비되나?"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_pause"
 msgid "Use this break to resupply, patch yourself up, and shake the snow out of your boots."
-msgstr ""
+msgstr "이 휴식 시간에 보급받고, 응급 처치하고, 군화 속 눈을 털어 내라."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_secret_task_hint"
 msgid "Just look how close they placed their ammunition crates near the artillery. I bet one grenade could make a beautiful firework."
-msgstr ""
+msgstr "저기 포병 옆에 탄약 상자를 얼마나 가깝게 놓았는지 봐라. 수류탄 하나면 멋진 불꽃놀이가 될 거다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_strike_completed"
 msgid "We destroyed 4 units already! Where did they get even more?!"
-msgstr ""
+msgstr "벌써 4대를 파괴했다! 이놈들은 도대체 어디서 더 끌고 오는 거지?!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_strike_shown"
 msgid "It's worth destroying those artillery emplacements as quickly as possible."
-msgstr ""
+msgstr "저 포병 진지를 최대한 빨리 파괴할 가치가 있다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_tanks_hint"
 msgid "You're right, Simo. We have to take advantage of this. At least we have plenty of bottles. Me and the other boys call them \"cocktail for Molotov\". I am wondering if it's possible to drink them to warm up. I mean, they are still cocktails..."
-msgstr ""
+msgstr "맞다, 시모. 이걸 이용해야 한다. 적어도 병은 넉넉하다. 나와 다른 녀석들은 이걸 \"몰로토프를 위한 칵테일\"이라 부른다. 몸을 녹이려고 마셔도 되나 궁금하다. 그러니까, 그래도 칵테일이잖아..."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_vanguard_arrived"
 msgid "My men are in ambush, waiting for your command to open fire. Let's wait for the moment the entire column is visible."
-msgstr ""
+msgstr "우리 병사들이 매복해서 사격 명령을 기다린다. 종대 전체가 보이는 순간을 기다리자."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_vanguard_destroyed"
 msgid "Change your ambush positions as often as you can. I am sure that each next wave of Soviets will attack the places where they saw you last."
-msgstr ""
+msgstr "매복 위치를 가능한 한 자주 바꿔라. 다음 소련군 파도는 마지막으로 너를 본 곳을 공격할 거다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_vanguard_reached_half"
 msgid "All of them are in sight, come on, aseveljet!"
-msgstr ""
+msgstr "전부 시야에 들어왔다, 가자, 아세벨예트!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_vanguard_reached_threshold"
 msgid "We can't wait anymore! Open fire!"
-msgstr ""
+msgstr "더는 기다릴 수 없다! 사격 개시!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/soldier_vanguard_spawned"
 msgid "All vehicles are in sight, waiting for your command."
-msgstr ""
+msgstr "모든 차량이 시야에 있다, 명령을 기다린다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/story"
 msgid "December, 1939. The Soviet army crosses the border and invades Finland in several places. \nIn the South- East, the Soviets attack Finnish positions at Suojärvi. The Finnish retreat, because their position becomes untenable. They retreat to a position on the Kollaa river; this is considered more defensible than the one at Suojärvi, but the Soviets are still hot on their heels! \nA defensive line must be set up very quickly; the 12th division cannot keep retreating to the west. \nAnd so, the Winter War begins in earnest. The situation is as clear as it is serious; you need to stop the Soviets here, or else the entire front line will collapse and your comrades in the west, like at Summa, might get attacked from behind. \nReport to your commanding officer immediately, there is no time to waste; do whatever is required to stop this red tide! "
-msgstr ""
+msgstr "1939년 12월. 소련군이 국경을 넘어 여러 곳에서 핀란드를 침공한다. \n남동쪽에서 소련군은 수오예르비의 핀란드 진지를 공격한다. 진지를 지킬 수 없게 된 핀란드군은 후퇴한다. 콜라강의 진지로 물러나는데, 수오예르비보다 방어하기 낫다고 여겨지지만 소련군이 바짝 뒤쫓고 있다! \n방어선을 매우 빠르게 구축해야 한다. 제12사단은 서쪽으로 계속 물러날 수 없다. \n이렇게 겨울 전쟁이 본격적으로 시작된다. 상황은 분명한 만큼 심각하다. 여기서 소련군을 막지 못하면 전선 전체가 무너지고, 숨마 같은 서쪽의 동료들이 뒤에서 공격당할 수 있다. \n즉시 지휘관에게 보고해라. 낭비할 시간이 없다. 이 붉은 물결을 막기 위해 필요한 일은 무엇이든 해라! "
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/vanguard_see_player"
 msgid "They saw us! Return fire!"
-msgstr ""
+msgstr "놈들이 우릴 봤다! 응사해라!"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/wd_end"
 msgid "I think so. I don't see more of them incoming."
-msgstr ""
+msgstr "그런 것 같다. 더 오는 놈들이 안 보인다."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/wd_flamethrowers_01"
 msgid "Let me deal with them..."
-msgstr ""
+msgstr "내가 처리하겠다..."
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/wd_molotov"
 msgid "Cocktail for Molotov? I get the part about Molotov, but why is it a cocktail?"
-msgstr ""
+msgstr "몰로토프를 위한 칵테일? 몰로토프는 알겠는데, 왜 칵테일이지?"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/wd_pause"
 msgid "I've already lost count of the men I shot. I don't understand why they are advancing so recklessly. What's the whole point of it?"
-msgstr ""
+msgstr "쏜 놈들이 몇인지 벌써 세다 말았다. 왜 저렇게 무모하게 전진하는지 모르겠다. 대체 무슨 의미가 있지?"
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/wd_tanks_hint"
 msgid "Why do the Soviets send their tanks without infantry cover? Just look at how unprotected these tanks are. It's not that hard to ambush them with the Molotov cocktails onto their engine bay."
-msgstr ""
+msgstr "소련군은 왜 보병 엄호 없이 전차를 보내지? 저 전차들이 얼마나 무방비한지 봐라. 엔진실에 화염병을 던져 매복하는 건 어렵지 않다."

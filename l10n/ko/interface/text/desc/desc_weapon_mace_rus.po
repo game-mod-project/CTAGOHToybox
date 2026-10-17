@@ -16,92 +16,92 @@ msgstr ""
 
 msgctxt "desc/weapon/bomb_dropper_rus_100x2"
 msgid "2x FAB-50 Bomb"
-msgstr ""
+msgstr "2x FAB-50 Bomb"
 
 msgctxt "desc/weapon/bomb_dropper_rus_50x2"
 msgid "2x FAB-50 Bomb"
-msgstr ""
+msgstr "2x FAB-50 Bomb"
 
 msgctxt "desc/weapon/bomb_dropper_rus_zab50x4"
 msgid "4x ZAB-50FP Incendiary Bomb"
-msgstr ""
+msgstr "4x ZAB-50FP Incendiary Bomb"
 
 msgctxt "desc/weapon/ros_132mm"
 msgid "8x 132-mm ROS-132 rockets"
-msgstr ""
+msgstr "8x 132-mm ROS-132 rockets"
 
 msgctxt "desc/weapon/82mm_rs82_ai"
 msgid "8x 82-mm RS-82 Rockets"
-msgstr ""
+msgstr "8x 82-mm RS-82 Rockets"
 
 msgctxt "desc/weapon/45mm_m42_t70"
 msgid "45mm M1942 L/66"
-msgstr ""
+msgstr "45mm M1942 L/66"
 
 msgctxt "desc/weapon/107mm_zis6"
 msgid "107mm ZIS-6 L/73"
-msgstr ""
+msgstr "107mm ZIS-6 L/73"
 
 msgctxt "desc/weapon/85mm_f30"
 msgid "85mm F-30 L/52"
-msgstr ""
+msgstr "85mm F-30 L/52"
 
 msgctxt "desc/weapon/130mm_s30"
 msgid "130 mm S-70 L/88"
-msgstr ""
+msgstr "130 mm S-70 L/88"
 
 msgctxt "desc/weapon/37mm_61k_zsu37"
 msgid "37mm 61-K L/67"
-msgstr ""
+msgstr "37mm 61-K L/67"
 
 msgctxt "desc/weapon/85mm_d-44"
 msgid "85mm D-44 L/55"
-msgstr ""
+msgstr "85mm D-44 L/55"
 
 msgctxt "desc/weapon/152mm_BL10"
 msgid "152mm BL-10 L/50"
-msgstr ""
+msgstr "152mm BL-10 L/50"
 
 msgctxt "desc/weapon/203mm_b4_mace"
 msgid "203mm B4 L/25"
-msgstr ""
+msgstr "203mm B4 L/25"
 
 msgctxt "desc/weapon/122mm_m30s_2"
 msgid "122mm M-30s L/22"
-msgstr ""
+msgstr "122mm M-30s L/22"
 
 msgctxt "desc/weapon/100mm_lb1"
 msgid "100mm LB-1 L/53"
-msgstr ""
+msgstr "100mm LB-1 L/53"
 
 msgctxt "desc/weapon/tt-250_torpedo_x2"
 msgid "TT-250 x2 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "TT-250 x2 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/weapon/76mm_f96"
 msgid "76mm F-96 L/42"
-msgstr ""
+msgstr "76mm F-96 L/42"
 
 msgctxt "desc/weapon/122mm_d30t"
 msgid "122mm D-30T L/46"
-msgstr ""
+msgstr "122mm D-30T L/46"
 
 msgctxt "desc/weapon/122mm_d25t"
 msgid "122mm D-25T L/46"
-msgstr ""
+msgstr "122mm D-25T L/46"
 
 msgctxt "desc/weapon/107mm_m1910_t42"
 msgid "107mm M1910/30 L/38"
-msgstr ""
+msgstr "107mm M1910/30 L/38"
 
 msgctxt "desc/weapon/37mm_sh37"
 msgid "37mm Sh-37 cannon L/37"
-msgstr ""
+msgstr "37mm Sh-37 cannon L/37"
 
 msgctxt "desc/weapon/160mm_mt_13"
 msgid "160mm MT-13 Mortar"
-msgstr ""
+msgstr "160mm MT-13 Mortar"
 
 msgctxt "desc/weapon/37mm_hotchkiss_trench_gun"
 msgid "37mm trench gun M1915 L/19"
-msgstr ""
+msgstr "37mm trench gun M1915 L/19"

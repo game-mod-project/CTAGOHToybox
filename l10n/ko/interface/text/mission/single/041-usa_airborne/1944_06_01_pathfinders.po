@@ -311,7 +311,7 @@ msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task_sec1"
 msgid "Secret Objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task_sec1_comp"
 msgid "(Secret Objective) Kill the collaborator before he raises the alarm and brings German reinforcements."

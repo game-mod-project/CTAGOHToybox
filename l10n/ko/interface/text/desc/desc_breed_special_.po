@@ -16,44 +16,44 @@ msgstr ""
 
 msgctxt "desc/human/narrator/ger-116pzofficer"
 msgid "116th Panzer Division Commander"
-msgstr ""
+msgstr "제116 판처 사단 지휘관"
 
 msgctxt "desc/human/narrator/ger-fallschirmjaeger"
 msgid "3rd Fallschirmjäger Div. Commander"
-msgstr ""
+msgstr "제3 팔쉬름예거 사단 지휘관"
 
 msgctxt "desc/human/narrator/usa-2ndrangers"
 msgid "2nd Rangers Commander"
-msgstr ""
+msgstr "제2 레인저 지휘관"
 
 msgctxt "desc/human/narrator/usa-officer"
 msgid "US Army Officer"
-msgstr ""
+msgstr "미 육군 장교"
 
 msgctxt "desc/human/narrator/usa-3rdarmoured2"
 msgid "Tank Commander"
-msgstr ""
+msgstr "전차장"
 
 msgctxt "desc/human/narrator/usa-3rdarmoured"
 msgid "3rd Armored Division Commander"
-msgstr ""
+msgstr "제3기갑사단 지휘관"
 
 msgctxt "desc/human/narrator/ger-hellmann"
 msgid "Dietrich Hellmann"
-msgstr ""
+msgstr "디트리히 헬만"
 
 msgctxt "desc/human/narrator/yug-partisan1"
 msgid "Yugoslavian Partisan leader"
-msgstr ""
+msgstr "유고슬라비아 파르티잔 지도자"
 
 msgctxt "desc/human/narrator/yug-partisan2"
 msgid "Bolshoy Iosif"
-msgstr ""
+msgstr "볼쇼이 이오시프"
 
 msgctxt "desc/human/narrator/rus-tankist"
 msgid "Soviet tank commander"
-msgstr ""
+msgstr "소련 전차장"
 
 msgctxt "desc/human/narrator/rus-aydinov"
 msgid "Lt. Arkady Aydinov"
-msgstr ""
+msgstr "Lt. 아르카디 아이디노프"

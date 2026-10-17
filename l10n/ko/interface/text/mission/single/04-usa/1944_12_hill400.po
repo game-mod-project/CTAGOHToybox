@@ -19,23 +19,23 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/date"
 msgid "December 16th, 1944 · Hill 400, Hürtgen Forest, Germany "
@@ -232,11 +232,11 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_12_hill400/reinf_mortar"
 msgid "81mm M1 Mortar"
-msgstr ""
+msgstr "81mm M1 Mortar"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/reinf_officer"
 msgid "Officer"
-msgstr ""
+msgstr "장교"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/reinf_p47"
 msgid "P47D-22 Airstrike"
@@ -252,7 +252,7 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1944_12_hill400/reinf_sniper"
 msgid "Sniper"
-msgstr ""
+msgstr "저격수"
 
 msgctxt "mission/single/04-usa/1944_12_hill400/reinf_supply"
 msgid "CCKW (Supply)"

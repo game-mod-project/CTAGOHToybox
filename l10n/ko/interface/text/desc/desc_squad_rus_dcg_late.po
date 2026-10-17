@@ -15,144 +15,144 @@ msgstr ""
 
 msgctxt "desc/squad/squad_vet_partisan_rifle_late_con(rus)"
 msgid "<c(A5A095)>(1+)</c> Veteran Partisan Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(1+)</c> 베테랑 파르티잔 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_vet_partisan_smg_late_con(rus)"
 msgid "<c(A5A095)>(1+)</c> Veteran Partisan SMG squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(1+)</c> 베테랑 파르티잔 기관단총 분대 [1944]"
 
 msgctxt "desc/squad/squad_nkvd_recon_con(rus)"
 msgid "<c(A5A095)>(2)</c> NKVD Recon squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> NKVD 정찰 분대"
 
 msgctxt "desc/squad/squad_recon_44_con(rus)"
 msgid "<c(A5A095)>(2)</c> Recon squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 정찰 분대 [1944]"
 
 msgctxt "desc/squad/squad_nkvd_sapper_con(rus)"
 msgid "<c(A5A095)>(2)</c> NKVD Sapper squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> NKVD 공병 분대"
 
 msgctxt "desc/squad/squad_sapper_con(rus)"
 msgid "<c(A5A095)>(2)</c> Sapper squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_sapper_44_con(rus)"
 msgid "<c(A5A095)>(2)</c> Sapper squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 공병 분대 [1944]"
 
 msgctxt "desc/squad/squad_nkvd_at_rifle_con(rus)"
 msgid "<c(A5A095)>(2)</c> NKVD AT rifle squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> NKVD 대전차 소총 분대"
 
 msgctxt "desc/squad/squad_nkvd_rifle_con(rus)"
 msgid "<c(A5A095)>(2)</c> NKVD Rifle squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> NKVD 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_43_con(rus)"
 msgid "<c(A5A095)>(2)</c> Rifle squad [1943]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 소총 분대 [1943]"
 
 msgctxt "desc/squad/squad_rifle_43_heavy_con(rus)"
 msgid "<c(A5A095)>(2)</c> Heavy Rifle squad [1943]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 중무장 소총 분대 [1943]"
 
 msgctxt "desc/squad/squad_rifle_44_con(rus)"
 msgid "<c(A5A095)>(2)</c> Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_smg_mg_43_con(rus)"
 msgid "<c(A5A095)>(2)</c> SMG squad [1943]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 기관단총 분대 [1943]"
 
 msgctxt "desc/squad/squad_smg_mg_43_heavy_con(rus)"
 msgid "<c(A5A095)>(2)</c> Heavy SMG squad [1943]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 중무장 기관단총 분대 [1943]"
 
 msgctxt "desc/squad/squad_smg_mg_44_con(rus)"
 msgid "<c(A5A095)>(2)</c> SMG squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 기관단총 분대 [1944]"
 
 msgctxt "desc/squad/squad_guardsrifle_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Guards Rifle squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 근위 소총 분대"
 
 msgctxt "desc/squad/squad_guardsrifle_motorised_con"
 msgid "<c(A5A095)>(2+)</c> Mot. Guards Rifle squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 차량화 근위 소총 분대"
 
 msgctxt "desc/squad/squad_guards_smg_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Guards SMG squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 근위 기관단총 분대"
 
 msgctxt "desc/squad/squad_guardsrifle_44_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Guards Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 근위 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_guardsrifle_44_motor_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Mot. Guards Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 차량화 근위 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_guards_smg_mg_44_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Guards SMG squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 근위 기관단총 분대 [1944]"
 
 msgctxt "desc/squad/squad_guards_smg_mg_44_motor_con(rus)"
 msgid "<c(A5A095)>(2+)</c> Mot. Guards SMG squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 차량화 근위 기관단총 분대 [1944]"
 
 msgctxt "desc/squad/squad_nkvd_mountain_con(rus)"
 msgid "<c(A5A095)>(3)</c> NKVD Mountain Rifle squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> NKVD 산악 소총 분대"
 
 msgctxt "desc/squad/squad_marines_reg_con(rus)"
 msgid "<c(A5A095)>(3)</c> Marine Rifle squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 해병 소총 분대"
 
 msgctxt "desc/squad/squad_cav_44_con(rus)"
 msgid "<c(A5A095)>(3)</c> Cavalry Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 기병 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_elite_guardsrifle_44_motor_con(rus)"
 msgid "<c(A5A095)>(3+)</c> Mot. Elite Guards Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> 차량화 정예 근위 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_elite_guards_smg_mg_44_motor_con(rus)"
 msgid "<c(A5A095)>(3+)</c> Mot. Elite Guards SMG squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> 차량화 정예 근위 기관단총 분대 [1944]"
 
 msgctxt "desc/squad/squad_guards_cav_44_con(rus)"
 msgid "<c(A5A095)>(3+)</c> Guards Cavalry Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> 근위 기병 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_guards_marines_44_con(rus)"
 msgid "<c(A5A095)>(3+)</c> Guards Marine Rifle squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> 근위 해병 소총 분대 [1944]"
 
 msgctxt "desc/squad/squad_nkvd_mountain_cav_con(rus)"
 msgid "<c(A5A095)>(4)</c> NKVD Mountain Cavalry squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> NKVD 산악 기병 분대"
 
 msgctxt "desc/squad/squad_mountain_cav_44_con(rus)"
 msgid "<c(A5A095)>(4)</c> Mountain Cavalry squad [1944]"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 산악 기병 분대 [1944]"
 
 msgctxt "desc/squad/squad_assaultsappers_con(rus)"
 msgid "<c(A5A095)>(4)</c> Assault-engineer Sapper squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 돌격공병 분대"
 
 msgctxt "desc/squad/squad_assaultsappers_flame_con(rus)"
 msgid "<c(A5A095)>(4)</c> Assault-engineer Flamer squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 돌격공병 화염방사 분대"
 
 msgctxt "desc/squad/squad_assaultsappers_at_con(rus)"
 msgid "<c(A5A095)>(4)</c> Assault-engineer AT squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 돌격공병 대전차 분대"
 
 msgctxt "desc/squad/squad_paras_con(rus)"
 msgid "<c(A5A095)>(4)</c> Paratrooper squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 공수병 분대"
 
 msgctxt "desc/squad/squad_guards_paras_con(rus)"
 msgid "<c(A5A095)>(4+)</c> Guards Paratrooper squad"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> 근위 공수병 분대"

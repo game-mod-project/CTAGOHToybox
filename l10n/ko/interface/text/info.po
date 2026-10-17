@@ -23,11 +23,11 @@ msgstr ""
 
 msgctxt "info/squad/mp_squad_shock(rus)"
 msgid "Shock Inf."
-msgstr ""
+msgstr "돌격 보병"
 
 msgctxt "info/squad/mp_squad_reserve(ger)"
 msgid "Reserves"
-msgstr ""
+msgstr "예비대"
 
 msgctxt "info/squad/mp_single_rifleaut(ger)"
 msgid "Semi-auto Inf."
@@ -47,7 +47,7 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_rifle(ger)"
 msgid "Rifleman"
-msgstr ""
+msgstr "소총수"
 
 msgctxt "info/squad/mp_squad_paratrooper(rus)"
 msgid "Soviet Paratroopers of the start of WW2 saw action in the Winter War and in several behind enemy line operations of WW2. They are, therefore, trained for versatile operations that include sabotage, assassination, combat, etc. <c(DB465A)>Soviet Paratroopers are a compromise between sabotage and frontline combat. They are semi-stealthy and carry deadly satchels and molotovs, but they also wield light semi-automatic weapons for short to medium range encounters. They also sprint faster to be able to be able to ensure swift 'boom and zooms'. To fully maaximise their potential they do require careful micro-control.</c>"
@@ -63,15 +63,15 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_medic(ger)"
 msgid "Medic"
-msgstr ""
+msgstr "위생병"
 
 msgctxt "info/squad/mp_squad_heavy(ger)"
 msgid "Regular Inf."
-msgstr ""
+msgstr "일반 보병"
 
 msgctxt "info/squad/mp_single_engineer(ger)"
 msgid "Field engineer"
-msgstr ""
+msgstr "야전 공병"
 
 msgctxt "info/pz6e"
 msgid "Entered service with the German army in 1942 and was considered the best tank until the end of 1943. Soviet 45mm guns could not penetrate the Tiger's armor even at point-blank range, while its 88mm gun was able to destroy any tank of the times."
@@ -119,7 +119,7 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_engineer(rus)"
 msgid "Field engineer"
-msgstr ""
+msgstr "야전 공병"
 
 msgctxt "info/squad/mp_single_at_44(ger)"
 msgid "AT Detach."
@@ -127,11 +127,11 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_medic(rus)"
 msgid "Medic"
-msgstr ""
+msgstr "위생병"
 
 msgctxt "info/squad/mp_single_flamer(ger)"
 msgid "Flamer"
-msgstr ""
+msgstr "화염방사병"
 
 msgctxt "info/squad/at_rifle(eng)"
 msgid "Boys AT, the British anti-tank rifle, was adopted in November 1937. Since its killing power was rather low – a 60-gram bullet could pierce up to 15mm of armor – such rifles were only used against light-armored targets. This rifle couldn't destroy a medium or heavy tank, it could only knock off a track or damage a gun."
@@ -147,11 +147,11 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_sniper(ger)"
 msgid "Sniper"
-msgstr ""
+msgstr "저격수"
 
 msgctxt "info/squad/mp_single_officer(ger)"
 msgid "Officer"
-msgstr ""
+msgstr "장교"
 
 msgctxt "info/squad/mp_squad_basic(rus)"
 msgid "The light infantry composes the basic structure of Soviet rushed recruitment and deployment of troops during WW2. <c(DB465A)>The squad leader carries a sub-machinegun and a few grenades while the standard squad members have ordinary rifles.</c>]"
@@ -175,7 +175,7 @@ msgstr ""
 
 msgctxt "info/squad/mp_squad_basic(ger)"
 msgid "Light Inf."
-msgstr ""
+msgstr "경보병"
 
 msgctxt "info/mk4"
 msgid "The first production models of a new infantry support tank appeared in June 1941. The design was to replace the Mk.II \"Matilda\", which was quickly becoming obsolete, but due to a short development cycle it was sent to production with a range of defects. The tank had a low profile and strong armor, but its extremely weak armament negated these advantages. Further modifications did not help - a newly mounted 75mm gun did not improve its anti-tank capabilities leaving the Mk.IV with the role of an infantry support vehicle."
@@ -191,7 +191,7 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_flamer(rus)"
 msgid "Flamer"
-msgstr ""
+msgstr "화염방사병"
 
 msgctxt "info/squad/officer(rus)"
 msgid "The presence of a veteran officer on the battlefield can turn the course of any battle. Using his field binoculars he can spot enemy infantry and saboteurs hiding in bushes and tall grass. The officer can also spot enemy units at a distance allowing you to regroup and react ahead of time. Besides his binoculars, he also carries a knife and a Nagant pistol. These weapons are poorly suited for a heated battle."
@@ -239,11 +239,11 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_tankman(rus)"
 msgid "Tank Crew"
-msgstr ""
+msgstr "전차 승무원"
 
 msgctxt "info/squad/mp_single_rifle(rus)"
 msgid "Rifleman"
-msgstr ""
+msgstr "소총수"
 
 msgctxt "info/squad/mp_single_smg(rus)"
 msgid "PPSH trooper"
@@ -275,7 +275,7 @@ msgstr ""
 
 msgctxt "info/squad/mp_squad_sappers(rus)"
 msgid "Assault Sappers"
-msgstr ""
+msgstr "돌격 공병"
 
 msgctxt "info/squad/mp_single_supply(rus)"
 msgid "Supply detach."
@@ -283,11 +283,11 @@ msgstr ""
 
 msgctxt "info/squad/mp_single_officer(rus)"
 msgid "Commissar"
-msgstr ""
+msgstr "정치위원"
 
 msgctxt "info/squad/mp_single_sniper(rus)"
 msgid "Sniper"
-msgstr ""
+msgstr "저격수"
 
 msgctxt "info/squad/mp_single_sabotage(rus)"
 msgid "SMERSH soldier"
@@ -335,7 +335,7 @@ msgstr ""
 
 msgctxt "info/squad/mp_squad_spetsnaz(rus)"
 msgid "Osnaz Unit"
-msgstr ""
+msgstr "오스나즈 부대"
 
 msgctxt "info/squad/ap_miners(rus)"
 msgid "Anti-personnel minefields are intended to deny enemy personnel entry to deployment sites and are usually used in front of occupied positions or to guard one's flanks. A group of four mine-laying specialists is armed with PPSh submachine guns and is capable of quickly laying minefields, thereby securing disputed or strategically important sectors."

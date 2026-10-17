@@ -15,16 +15,16 @@ msgstr ""
 
 msgctxt "desc/ammo/280mm_rkh43"
 msgid "280mm Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "280mm 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletfin_20 he"
 msgid "20 tkrv-Vj3 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "20 tkrv-Vj3 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/20mm_swe ap"
 msgid "20 Slpprj m/42 [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "20 Slpprj m/42 [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/20mm_swe he"
 msgid "20 Sgr m/43 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "20 Sgr m/43 [<c(ff1200)>HE</c>]"

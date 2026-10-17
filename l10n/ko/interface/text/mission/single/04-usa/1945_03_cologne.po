@@ -19,27 +19,27 @@ msgstr ""
 
 msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/04-usa/1945_03_cologne/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/04-usa/1945_03_cologne/lose"
 msgid "You lost all your troops!"
-msgstr ""
+msgstr "모든 병력을 잃었다!"
 
 msgctxt "mission/single/04-usa/1945_03_cologne/name"
 msgid "Lair of the Beast"

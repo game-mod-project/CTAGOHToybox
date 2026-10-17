@@ -15,23 +15,23 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1944_03_trap/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/mission_option_select1"
 msgid "SELECT YOUR TACTICAL DOCTRINE:"
-msgstr ""
+msgstr "전술 교리를 선택하라:"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/date"
 msgid "July 15th, 1944 · Belarus"
@@ -239,7 +239,7 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1944_03_trap/tasks/secret01_lunch"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/tasks/secret01_lunch_completed"
 msgid "Secret objective #1: Bring a piece of chicken to the field kitchen"
@@ -273,7 +273,7 @@ msgstr ""
 
 msgctxt "mission/single/06-bonus/1944_03_trap/ui/skip_preparation"
 msgid "Skip preparation"
-msgstr ""
+msgstr "준비 생략"
 
 msgctxt "mission/single/06-bonus/1944_03_trap/ui/timer"
 msgid "Soviet forces arrival"

@@ -16,12 +16,12 @@ msgstr ""
 
 msgctxt "desc/ammo/he3"
 msgid "High Explosive"
-msgstr ""
+msgstr "고폭탄"
 
 msgctxt "desc/ammo/apfsds"
 msgid "Armour-Piercing Fin-Stabilized Discarding Sabot"
-msgstr ""
+msgstr "철갑 날개안정 분리 새보탄"
 
 msgctxt "desc/ammo/mortareng_66 wp"
 msgid "66mm M250 Grenade [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "66mm M250 수류탄 [<c(FFFFFF)>WP</c>]"

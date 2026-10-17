@@ -83,7 +83,7 @@ msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[tasks]/task_secret01_completed"
 msgid "Secret objective #1: Destroy an enemy tank on the beach using the detonator"

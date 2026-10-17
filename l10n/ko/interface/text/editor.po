@@ -311,7 +311,7 @@ msgstr ""
 
 msgctxt "missioneditor/player"
 msgid "player"
-msgstr ""
+msgstr "플레이어"
 
 msgctxt "missioneditor/reload"
 msgid " Reload "

@@ -16,236 +16,236 @@ msgstr ""
 
 msgctxt "desc/squad/doctrine_us_m19_late"
 msgid "<c(B29557)>( I )</c> M19 MGMC"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> M19 MGMC"
 
 msgctxt "desc/squad/doctrine_t77_spaa"
 msgid "<c(B29557)>( I )</c> T77E1 MGMC"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T77E1 MGMC"
 
 msgctxt "desc/squad/doctrine_114mm_m12a1_launcher"
 msgid "<c(B29557)>( I )</c> M12A1 Rocket Launcher"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> M12A1 로켓 발사기"
 
 msgctxt "desc/squad/doctrine_183mm_t91_launcher"
 msgid "<c(B29557)>( I )</c> T91 Rocket Launcher"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T91 로켓 발사기"
 
 msgctxt "desc/squad/doctrine_m24_chaffee_t91"
 msgid "<c(B29557)>( I )</c> Chaffee + 273mm T59 Rocket Launcher"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> Chaffee + 273mm T59 로켓 발사기"
 
 msgctxt "desc/squad/doctrine_squad_scout_sniper_squad(usa)"
 msgid "<c(B29557)>( I )</c> Marine Scout-Sniper Squad"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> 해병 정찰 저격 분대"
 
 msgctxt "desc/squad/doctrine_squad_us_com_late(usa)"
 msgid "<c(B29557)>( I )</c> Supply Officer"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> 보급 장교"
 
 msgctxt "desc/squad/doctrine_m8_hmc_late"
 msgid "<c(B29557)>( I )</c> <c(E56042)>1.</c> 75mm HMC M8"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> <c(E56042)>1.</c> 75mm HMC M8"
 
 msgctxt "desc/squad/doctrine_m8a1"
 msgid "<c(B29557)>( I )</c> <c(E56042)>2.</c> 75mm GMC M8A1"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> <c(E56042)>2.</c> 75mm GMC M8A1"
 
 msgctxt "desc/squad/doctrine_t18_hmc"
 msgid "<c(B29557)>( I )</c> T18"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T18"
 
 msgctxt "desc/squad/doctrine_t7_combat_car"
 msgid "<c(B29557)>( I )</c> T7 Combat Car"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T7 Combat Car"
 
 msgctxt "desc/squad/doctrine_polsten"
 msgid "<c(B29557)>( I )</c> Triple Polsten"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> 3연장 Polsten"
 
 msgctxt "desc/squad/doctrine_lvta4"
 msgid "<c(B29557)>( I )</c> LVT(A)-4"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> LVT(A)-4"
 
 msgctxt "desc/squad/doctrine_m5_stuart_auto"
 msgid "<c(B29557)>( I )</c> M5 (T16)"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> M5 (T16)"
 
 msgctxt "desc/squad/doctrine_m13_mgmc_late"
 msgid "<c(B29557)>( I )</c> MGMC M13"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> MGMC M13"
 
 msgctxt "desc/squad/doctrine_cckw_engineer_minerollersherman_late"
 msgid "<c(B29557)>( I )</c> T1E3 M4A1 + CCKW Engineer Truck"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T1E3 M4A1 + CCKW 공병 트럭"
 
 msgctxt "desc/squad/doctrine_t69_usmc"
 msgid "<c(B29557)>( I )</c> T69 MGMC"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T69 MGMC"
 
 msgctxt "desc/squad/doctrine_t18_boarhound"
 msgid "<c(B29557)>( I )</c> T18E2 'Boarhound'"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> T18E2 'Boarhound'"
 
 msgctxt "desc/squad/doctrine_p47_250_late"
 msgid "<c(B29557)>( I )</c> P-47 250lb Bomb"
-msgstr ""
+msgstr "<c(B29557)>( I )</c> P-47 250lb 폭탄"
 
 msgctxt "desc/squad/doctrine_c47_d_paratroopers"
 msgid "<c(B29557)>( II )</c> C-47 Douglas Skytrain Paratrooper"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> C-47 Douglas Skytrain 공수병"
 
 msgctxt "desc/squad/doctrine_m18_hellcat_105mm"
 msgid "<c(B29557)>( II )</c> 105mm HMC T88"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> 105mm HMC T88"
 
 msgctxt "desc/squad/doctrine_us_m4_improved"
 msgid "<c(B29557)>( II )</c> M4 (Improved)"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> M4 (개량형)"
 
 msgctxt "desc/squad/doctrine_155mm_t25_mortar"
 msgid "<c(B29557)>( II )</c> 155mm T25 Mortar"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> 155mm T25 Mortar"
 
 msgctxt "desc/squad/doctrine_us_t55e1"
 msgid "<c(B29557)>( II )</c> T55E1"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> T55E1"
 
 msgctxt "desc/squad/doctrine_zippo"
 msgid "<c(B29557)>( II )</c>  M4A3R3 'Zippo' "
-msgstr ""
+msgstr "<c(B29557)>( II )</c>  M4A3R3 'Zippo' "
 
 msgctxt "desc/squad/doctrine_us_m18_blackcat"
 msgid "<c(B29557)>( II )</c> M18 GMC Blackcat"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> M18 GMC Blackcat"
 
 msgctxt "desc/squad/doctrine_us_m4a3e8_thundervii"
 msgid "<c(B29557)>( II )</c> M4A3E8 Thunderbolt VII"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> M4A3E8 Thunderbolt VII"
 
 msgctxt "desc/squad/doctrine_us_m6a1_late"
 msgid "<c(B29557)>( II )</c> M6A1"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> M6A1"
 
 msgctxt "desc/squad/doctrine_p47_recon_late"
 msgid "<c(B29557)>( II )</c> P47 Recon"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> P47 정찰기"
 
 msgctxt "desc/squad/doctrine_t14"
 msgid "<c(B29557)>( II )</c> T14"
-msgstr ""
+msgstr "<c(B29557)>( II )</c> T14"
 
 msgctxt "desc/squad/doctrine_p80_flame_late"
 msgid "<c(B29557)>( III )</c> P-80 750lb Napalm Bomb"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> P-80 750lb 네이팜 폭탄"
 
 msgctxt "desc/squad/doctrine_p47_500_late"
 msgid "<c(B29557)>( III )</c> P-47 500lb Bomb"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> P-47 500lb 폭탄"
 
 msgctxt "desc/squad/doctrine_wc51_t27"
 msgid "<c(B29557)>( III )</c> WC-51 T27 'Xylophone'"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> WC-51 T27 'Xylophone'"
 
 msgctxt "desc/squad/doctrine_willys_mb_t27"
 msgid "<c(B29557)>( III )</c> Willys MB 'Rocket Field mod'"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Willys MB 'Rocket Field mod'"
 
 msgctxt "desc/squad/doctrine_willys_mb_t45_mk10"
 msgid "<c(B29557)>( III )</c> Willys MB 'T45' (Late)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> Willys MB 'T45' (후기)"
 
 msgctxt "desc/squad/doctrine_t19_hmc_late"
 msgid "<c(B29557)>( III )</c> 105mm HMC T19"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> 105mm HMC T19"
 
 msgctxt "desc/squad/doctrine_m7b1_hmc_late"
 msgid "<c(B29557)>( III )</c> 105mm HMC M7B1"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> 105mm HMC M7B1"
 
 msgctxt "desc/squad/doctrine_m36b2"
 msgid "<c(B29557)>( III )</c> M36B2 'Jackson'"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> M36B2 'Jackson'"
 
 msgctxt "desc/squad/doctrine_m18_90"
 msgid "<c(B29557)>( III )</c> M18 (90 mm)"
-msgstr ""
+msgstr "<c(B29557)>( III )</c> M18 (90 mm)"
 
 msgctxt "desc/squad/doctrine_114mm_t66_launcher"
 msgid "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> 4.5-Inch T66 Rocket Launcher"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> 4.5-Inch T66 로켓 발사기"
 
 msgctxt "desc/squad/doctrine_182mm_t88_launcher"
 msgid "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> 7.2-Inch T88 Rocket Launcher"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> 7.2-Inch T88 로켓 발사기"
 
 msgctxt "desc/squad/doctrine_p80_1000_late"
 msgid "<c(B29557)>( IV )</c> P-80 1000lb Bomb"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> P-80 1000lb 폭탄"
 
 msgctxt "desc/squad/doctrine_double_xylo"
 msgid "<c(B29557)>( IV )</c> 2x GMC T27 ‘Xylophone’"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 2x GMC T27 ‘Xylophone’"
 
 msgctxt "desc/squad/doctrine_m12_gmc_late"
 msgid "<c(B29557)>( IV )</c> 155mm GMC M12"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 155mm GMC M12"
 
 msgctxt "desc/squad/doctrine_t26e4_late"
 msgid "<c(B29557)>( IV )</c> T26E4"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> T26E4"
 
 msgctxt "desc/squad/doctrine_us_m6a2e1"
 msgid "<c(B29557)>( IV )</c> M6A2E1"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> M6A2E1"
 
 msgctxt "desc/squad/doctrine_us_t32e1"
 msgid "<c(B29557)>( IV )</c> T32E1"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> T32E1"
 
 msgctxt "desc/squad/doctrine_us_t30"
 msgid "<c(B29557)>( IV )</c> T30 Heavy Tank"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> T30 중전차"
 
 msgctxt "desc/squad/doctrine_us_t29"
 msgid "<c(B29557)>( IV )</c> T29 Heavy Tank"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> T29 중전차"
 
 msgctxt "desc/squad/doctrine_david_engineer(usa)"
 msgid "<c(B29557)>( IV )</c> 36-Inch Little David"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> 36-Inch Little David"
 
 msgctxt "desc/squad/doctrine_us_m4_whizbang"
 msgid "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> M4A1 T40 'Whizbang'"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> M4A1 T40 'Whizbang'"
 
 msgctxt "desc/squad/doctrine_m4a1_m17"
 msgid "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> M4A1 T40 'Whizbang' (4.5-Inch M10)"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> M4A1 T40 'Whizbang' (4.5-Inch M10)"
 
 msgctxt "desc/squad/doctrine_m4a3_calliope_late"
 msgid "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> M4A3(75)W 'Calliope'"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> <c(45b6fe)>1.</c> M4A3(75)W 'Calliope'"
 
 msgctxt "desc/squad/doctrine_m26_t99_late"
 msgid "<c(B29557)>( IV )</c> M26 Pershing 'T99'"
-msgstr ""
+msgstr "<c(B29557)>( IV )</c> M26 Pershing 'T99'"
 
 msgctxt "desc/squad/doctrine_155mm_m1a1_longtom_late"
 msgid "<c(B29557)>( V )</c> 155mm M1A1 Long Tom"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 155mm M1A1 Long Tom"
 
 msgctxt "desc/squad/doctrine_t92_hmc"
 msgid "<c(B29557)>( V )</c> 240mm HMC T92"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 240mm HMC T92"
 
 msgctxt "desc/squad/doctrine_t93_hmc"
 msgid "<c(B29557)>( V )</c> 8-in GMC T93"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> 8-in GMC T93"
 
 msgctxt "desc/squad/doctrine_us_t34"
 msgid "<c(B29557)>( V )</c> T34 Heavy Tank"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> T34 중전차"
 
 msgctxt "desc/squad/doctrine_us_t95"
 msgid "<c(B29557)>( V )</c> T95 GMC"
-msgstr ""
+msgstr "<c(B29557)>( V )</c> T95 GMC"

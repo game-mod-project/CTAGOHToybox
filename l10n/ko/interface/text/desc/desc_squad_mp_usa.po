@@ -15,660 +15,660 @@ msgstr ""
 
 msgctxt "desc/squad/squad_101st_pathfinder_late_all(usa)"
 msgid "<c(A5A095)>(4)</c> 101st AB Pathfinder Team"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제101공수사단 패스파인더 조"
 
 msgctxt "desc/squad/squad_101st_pathfinder_late_def(usa)"
 msgid "<c(A5A095)>(4)</c> 101st AB Pathfinder Team"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제101공수사단 패스파인더 조"
 
 msgctxt "desc/squad/squad_82nd_pathfinder_late_irr(usa)"
 msgid "<c(A5A095)>(4+)</c> 82nd AB Pathfinder Team"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 패스파인더 조"
 
 msgctxt "desc/squad/squad_82nd_pathfinder_late_off(usa)"
 msgid "<c(A5A095)>(4+)</c> 82nd AB Pathfinder Team"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 패스파인더 조"
 
 msgctxt "desc/squad/conquest_p47"
 msgid "P47 500lb Bomb"
-msgstr ""
+msgstr "P47 500lb 폭탄"
 
 msgctxt "desc/squad/conquest_p47_light"
 msgid "P47 100lb Bomb"
-msgstr ""
+msgstr "P47 100lb 폭탄"
 
 msgctxt "desc/squad/conquest_p47_recon"
 msgid "P47 Recon"
-msgstr ""
+msgstr "P47 정찰"
 
 msgctxt "desc/squad/squad_mp_mid_all(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_cav_mid_all(usa)"
 msgid "<c(A5A095)>(2)</c> Cavalry Recon Section"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 기병 정찰 분대"
 
 msgctxt "desc/squad/squad_1st_rifle_mid_all_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 1st.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 제1사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_rifle_mid_all_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 1st.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 제1사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_rifle_mid_all_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 1st.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 제1사단 소총 분대"
 
 msgctxt "desc/squad/squad_2nd_arm_rifle_mech_mid_all_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 2nd.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 제2기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_2nd_arm_rifle_mech_mid_all_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 2nd.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 제2기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_2nd_arm_rifle_mech_mid_all_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 2nd.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 제2기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_vet_rifle_mid_all_1(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_mid_all_2(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_mid_all_3(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_ranger_assault_mid_all_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Ranger Assault Section (Substitute)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 레인저 돌격 분대 (대체)"
 
 msgctxt "desc/squad/squad_ranger_assault_mid_all_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Ranger Assault Section (Substitute)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 레인저 돌격 분대 (대체)"
 
 msgctxt "desc/squad/squad_ranger_assault_mg_mid_all_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/squad_ranger_assault_mg_mid_all_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/squad_45th_rifle_mid_def(usa)"
 msgid "<c(A5A095)>(1)</c> 45th.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 제45사단 소총 분대"
 
 msgctxt "desc/squad/squad_eng_recon_mid_def(usa)"
 msgid "<c(A5A095)>(2)</c> Engineer Recon Section"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 공병 정찰 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_def_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_def_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_def_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_eng_mid_def(usa)"
 msgid "<c(A5A095)>(2)</c> Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_pio_mid_def(usa)"
 msgid "<c(A5A095)>(3)</c> 82nd Glider Pioneer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 제82 글라이더 공병 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_mid_def_1(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_mid_def_2(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_mid_def_3(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_eng_mid_def(usa)"
 msgid "<c(A5A095)>(4)</c> 82nd Airborne Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제82공수사단 공병 분대"
 
 msgctxt "desc/squad/squad_82nd_mid_def_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 82nd Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제82공수사단 분대"
 
 msgctxt "desc/squad/squad_82nd_mid_def_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 82nd Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제82공수사단 분대"
 
 msgctxt "desc/squad/squad_mp_mid_irr(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_irr_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_irr_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_irr_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_pio_mid_irr(usa)"
 msgid "<c(A5A095)>(3)</c> 82nd Glider Pioneer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 제82 글라이더 공병 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_mid_irr_1(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_mid_irr_2(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_mid_irr_3(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_recon_mid_irr(usa)"
 msgid "<c(A5A095)>(4)</c> 82nd Airborne Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제82공수사단 정찰 조"
 
 msgctxt "desc/squad/squad_82nd_eng_mid_irr(usa)"
 msgid "<c(A5A095)>(4)</c> 82nd Airborne Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제82공수사단 공병 분대"
 
 msgctxt "desc/squad/squad_82nd_mid_irr_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 82nd Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제82공수사단 분대"
 
 msgctxt "desc/squad/squad_82nd_mid_irr_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 82nd Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제82공수사단 분대"
 
 msgctxt "desc/squad/squad_mp_mid_off(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_1st_arm_recon_mid_off(usa)"
 msgid "<c(A5A095)>(2)</c> 1st.AD Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 제1기갑사단 정찰 조"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mid_off_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 1st.AD Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 제1기갑사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mid_off_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 1st.AD Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 제1기갑사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mid_off_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 1st.AD Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 제1기갑사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mech_mid_off_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mech_mid_off_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mech_mid_off_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_vet_rifle_mid_off_1(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_mid_off_2(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_mid_off_3(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_ranger_assault_mid_off_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Ranger Assault Section (Substitute)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 레인저 돌격 분대 (대체)"
 
 msgctxt "desc/squad/squad_ranger_assault_mid_off_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Ranger Assault Section (Substitute)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 레인저 돌격 분대 (대체)"
 
 msgctxt "desc/squad/squad_ranger_assault_mg_mid_off_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/squad_ranger_assault_mg_mid_off_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/50cal_quad_m45_mid"
 msgid "M55 Quadmount"
-msgstr ""
+msgstr "M55 4연장 기관총"
 
 msgctxt "desc/squad/squad_mp_late_all(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_cav_late_all_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Cavalry Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기병 정찰 조"
 
 msgctxt "desc/squad/squad_cav_late_all_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Cavalry Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기병 정찰 조"
 
 msgctxt "desc/squad/squad_rifle_late_all_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_late_all_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_late_all_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_1st_rifle_late_all_1(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 1st.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 제1사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_rifle_late_all_2(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 1st.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 제1사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_rifle_late_all_3(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 1st.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 제1사단 소총 분대"
 
 msgctxt "desc/squad/squad_ranger_assault_sub_late_all(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Assault Section (Substitute)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 (대체)"
 
 msgctxt "desc/squad/squad_ranger_assault_late_all(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/squad_ranger_special_late_all(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Special Weapons Section"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 특수무기 분대"
 
 msgctxt "desc/squad/squad_mp_late_def(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_cav_late_def_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Cavalry Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기병 정찰 조"
 
 msgctxt "desc/squad/squad_cav_late_def_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Cavalry Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기병 정찰 조"
 
 msgctxt "desc/squad/squad_rifle_late_def_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_late_def_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_late_def_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_eng_late_def_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 공병 분대"
 
 msgctxt "desc/squad/squad_eng_late_def_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 공병 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_late_def_1(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_late_def_2(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_vet_rifle_late_def_3(usa)"
 msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_101st_glider_late_def_1(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 101st Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제101 글라이더 분대"
 
 msgctxt "desc/squad/squad_101st_glider_late_def_2(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 101st Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제101 글라이더 분대"
 
 msgctxt "desc/squad/squad_101st_glider_late_def_3(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 101st Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제101 글라이더 분대"
 
 msgctxt "desc/squad/squad_101st_eng_late_def(usa)"
 msgid "<c(A5A095)>(4)</c> 101st Airborne Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제101공수사단 공병 분대"
 
 msgctxt "desc/squad/squad_101st_late_def_1(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 101st Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제101공수사단 분대"
 
 msgctxt "desc/squad/squad_101st_late_def_2(usa)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 101st Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제101공수사단 분대"
 
 msgctxt "desc/squad/squad_mp_late_irr(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_cav_late_irr_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Cavalry Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기병 정찰 조"
 
 msgctxt "desc/squad/squad_cav_late_irr_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Cavalry Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기병 정찰 조"
 
 msgctxt "desc/squad/squad_rifle_late_irr_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 29th.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 제29사단 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_late_irr_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 29th.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 제29사단 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_late_irr_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 29th.Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 제29사단 소총 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_pio_late_irr(usa)"
 msgid "<c(A5A095)>(3+)</c> 82nd Glider Pioneer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> 제82 글라이더 공병 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_late_irr_1(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_late_irr_2(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_late_irr_3(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_recon_late_irr(usa)"
 msgid "<c(A5A095)>(4+)</c> 82nd Airborne Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 정찰 조"
 
 msgctxt "desc/squad/squad_82nd_demo_late_irr(usa)"
 msgid "<c(A5A095)>(4+)</c> 82nd Airborne Demolitions Section"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> 제82공수사단 폭파 분대"
 
 msgctxt "desc/squad/squad_82nd_late_irr_1(usa)"
 msgid "<c(A5A095)>(4+)</c> <c(E56042)>1.</c> 82nd Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> <c(E56042)>1.</c> 제82공수사단 분대"
 
 msgctxt "desc/squad/squad_82nd_late_irr_2(usa)"
 msgid "<c(A5A095)>(4+)</c> <c(E56042)>2.</c> 82nd Airborne Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4+)</c> <c(E56042)>2.</c> 제82공수사단 분대"
 
 msgctxt "desc/squad/squad_arm_recon_late_off(usa)"
 msgid "<c(A5A095)>(2)</c> Armored Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 기갑 정찰 조"
 
 msgctxt "desc/squad/squad_arm_rifle_late_off_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Armored Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기갑 소총 분대"
 
 msgctxt "desc/squad/squad_arm_rifle_late_off_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Armored Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기갑 소총 분대"
 
 msgctxt "desc/squad/squad_arm_rifle_late_off_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Armored Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 기갑 소총 분대"
 
 msgctxt "desc/squad/squad_arm_rifle_mech_late_off_1(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Armored Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기갑 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_arm_rifle_mech_late_off_2(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Armored Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기갑 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_arm_rifle_mech_late_off_3(usa)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Armored Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 기갑 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_1st_arm_recon_late_off(usa)"
 msgid "<c(A5A095)>(3+)</c> 1st.AD Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> 제1기갑사단 정찰 조"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_late_off_1(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_late_off_2(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_late_off_3(usa)"
 msgid "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_10th_mountain_late_off_1(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 10th Mountain Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제10산악사단 소총 분대"
 
 msgctxt "desc/squad/squad_10th_mountain_late_off_2(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 10th Mountain Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제10산악사단 소총 분대"
 
 msgctxt "desc/squad/squad_10th_mountain_late_off_3(usa)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 10th Mountain Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제10산악사단 소총 분대"
 
 msgctxt "desc/squad/squad_ranger_assault_sub_late_off(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Assault Section (Substitute)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 (대체)"
 
 msgctxt "desc/squad/squad_ranger_assault_late_off(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/squad_ranger_special_late_off(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Special Weapons Section"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 특수무기 분대"
 
 msgctxt "desc/squad/single_rifle(usa)"
 msgid "Rifleman"
-msgstr ""
+msgstr "소총수"
 
 msgctxt "desc/squad/single_smg(usa)"
 msgid "SMG Inf."
-msgstr ""
+msgstr "기관단총 보병"
 
 msgctxt "desc/squad/single_mg(usa)"
 msgid "Automatic Rifleman Team"
-msgstr ""
+msgstr "자동소총수 조"
 
 msgctxt "desc/squad/single_at(usa)"
 msgid "AT Team"
-msgstr ""
+msgstr "대전차 조"
 
 msgctxt "desc/squad/single_at_con(usa)"
 msgid "M1 Bazooka AT Team"
-msgstr ""
+msgstr "M1 바주카 대전차 조"
 
 msgctxt "desc/squad/single_at1_con(usa)"
 msgid "M1A1 Bazooka AT Team"
-msgstr ""
+msgstr "M1A1 바주카 대전차 조"
 
 msgctxt "desc/squad/single_at2_con(usa)"
 msgid "M9 Bazooka AT Team"
-msgstr ""
+msgstr "M9 바주카 대전차 조"
 
 msgctxt "desc/squad/single_at3_con(usa)"
 msgid "M9A1 Bazooka AT Team"
-msgstr ""
+msgstr "M9A1 바주카 대전차 조"
 
 msgctxt "desc/squad/single_riflegrenade(usa)"
 msgid "AT Rifle Grenadiers"
-msgstr ""
+msgstr "대전차 소총유탄병"
 
 msgctxt "desc/squad/single_riflegrenade_con(usa)"
 msgid "M1903 AT Rifle Grenadiers"
-msgstr ""
+msgstr "M1903 대전차 소총유탄병"
 
 msgctxt "desc/squad/single_riflegrenade2_con(usa)"
 msgid "M1 AT Rifle Grenadiers"
-msgstr ""
+msgstr "M1 대전차 소총유탄병"
 
 msgctxt "desc/squad/single_ap_miner(usa)"
 msgid "AP Miners"
-msgstr ""
+msgstr "AP 지뢰병"
 
 msgctxt "desc/squad/single_at_miner(usa)"
 msgid "AT Miners"
-msgstr ""
+msgstr "대전차 지뢰병"
 
 msgctxt "desc/squad/single_engineer(usa)"
 msgid "Engineers"
-msgstr ""
+msgstr "공병"
 
 msgctxt "desc/squad/single_flamer(usa)"
 msgid "Flamer"
-msgstr ""
+msgstr "화염방사병"
 
 msgctxt "desc/squad/single_tankman(usa)"
 msgid "Tank Crew"
-msgstr ""
+msgstr "전차 승무원"
 
 msgctxt "desc/squad/single_medic(usa)"
 msgid "Medic"
-msgstr ""
+msgstr "위생병"
 
 msgctxt "desc/squad/single_sniper(usa)"
 msgid "Sniper"
-msgstr ""
+msgstr "저격수"
 
 msgctxt "desc/squad/single_officer(usa)"
 msgid "Officer"
-msgstr ""
+msgstr "장교"
 
 msgctxt "desc/squad/single_shotgun(usa)"
 msgid "Shotgun Team"
-msgstr ""
+msgstr "산탄총 조"
 
 msgctxt "desc/squad/squad_officer_con(usa)"
 msgid "Infantry Platoon HQ"
-msgstr ""
+msgstr "보병 소대 본부"
 
 msgctxt "desc/squad/squad_officer_m3a1_commander_con"
 msgid "Cavalry Platoon HQ"
-msgstr ""
+msgstr "기병 소대 본부"
 
 msgctxt "desc/squad/squad_officer_m3a1_halftrack_con"
 msgid "Armored Company HQ"
-msgstr ""
+msgstr "기갑 중대 본부"
 
 msgctxt "desc/squad/squad_mp_con(usa)"
 msgid "<c(A5A095)>(1)</c> Military Police Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 헌병 분대"
 
 msgctxt "desc/squad/squad_45th_rifle_con(usa)"
 msgid "<c(A5A095)>(1)</c> 45th Div Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(1)</c> 제45사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_arm_recon_con(usa)"
 msgid "<c(A5A095)>(2)</c> 1st.AD Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 제1기갑사단 정찰 조"
 
 msgctxt "desc/squad/squad_cav_late_con1(usa)"
 msgid "<c(A5A095)>(2)</c> Cavalry Recon Team (M1919)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 기병 정찰 조 (M1919)"
 
 msgctxt "desc/squad/squad_cav_late_con2(usa)"
 msgid "<c(A5A095)>(2)</c> Cavalry Recon Team (M2HB)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 기병 정찰 조 (M2HB)"
 
 msgctxt "desc/squad/squad_82nd_recon_con(usa)"
 msgid "<c(A5A095)>(4)</c> 82nd Recon Team"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제82 정찰 조"
 
 msgctxt "desc/squad/squad_rifle_con(usa)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 소총 분대"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_con(usa)"
 msgid "<c(A5A095)>(2)</c> 1st.AD Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 제1기갑사단 소총 분대"
 
 msgctxt "desc/squad/squad_1st_arm_rifle_mech_con(usa)"
 msgid "<c(A5A095)>(2)</c> 1st.AD Rifle Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 제1기갑사단 소총 분대 (탑승)"
 
 msgctxt "desc/squad/squad_eng_con(usa)"
 msgid "<c(A5A095)>(2)</c> Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_eng_mech_con(usa)"
 msgid "<c(A5A095)>(2)</c> Engineer Squad (Mounted)"
-msgstr ""
+msgstr "<c(A5A095)>(2)</c> 공병 분대 (탑승)"
 
 msgctxt "desc/squad/squad_vet_rifle_con(usa)"
 msgid "<c(A5A095)>(2+)</c> Veteran Rifle Squad"
-msgstr ""
+msgstr "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_con(usa)"
 msgid "<c(A5A095)>(3)</c> 82nd Glider Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 제82 글라이더 분대"
 
 msgctxt "desc/squad/squad_82nd_glider_pio_con(usa)"
 msgid "<c(A5A095)>(3)</c> 82nd Glider Pioneer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(3)</c> 제82 글라이더 공병 분대"
 
 msgctxt "desc/squad/squad_ranger_assault_con(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Assault Section"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대"
 
 msgctxt "desc/squad/squad_ranger_assault_mg_con(usa)"
 msgid "<c(A5A095)>(4)</c> Ranger Assault Section (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 레인저 돌격 분대 (기관총)"
 
 msgctxt "desc/squad/squad_82nd_con(usa)"
 msgid "<c(A5A095)>(4)</c> 82nd Airborne Squad (MG)"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제82공수사단 분대 (기관총)"
 
 msgctxt "desc/squad/squad_82nd_eng_con(usa)"
 msgid "<c(A5A095)>(4)</c> 82nd Airborne Engineer Squad"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제82공수사단 공병 분대"
 
 msgctxt "desc/squad/1st_special_con(usa)"
 msgid "<c(A5A095)>(4)</c> 1st Special Combat Section"
-msgstr ""
+msgstr "<c(A5A095)>(4)</c> 제1 특수전투 분대"

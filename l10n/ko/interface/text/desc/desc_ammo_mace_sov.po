@@ -15,84 +15,84 @@ msgstr ""
 
 msgctxt "desc/ammo/ussr_barrel"
 msgid "Smoke Barrel [SMOKE]"
-msgstr ""
+msgstr "연막통 [연막]"
 
 msgctxt "desc/weapon/type/ussr_smoke_barrel"
 msgid "Smoke Barrel"
-msgstr ""
+msgstr "연막통"
 
 msgctxt "desc/weapon/ussr_smoke_barrel1"
 msgid "Left Smoke Barrel"
-msgstr ""
+msgstr "왼쪽 연막통"
 
 msgctxt "desc/weapon/ussr_smoke_barrel2"
 msgid "Right Smoke Barrel"
-msgstr ""
+msgstr "오른쪽 연막통"
 
 msgctxt "desc/ammo/br_240sp"
 msgid "TT-250 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "TT-250 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletrus_76 wp"
 msgid "76.2-mm D-350 [<c(FFBF55)>YELLOW PHOSPHORUS</c>] <c(65696d)>L/42</c>"
-msgstr ""
+msgstr "76.2-mm D-350 [<c(FFBF55)>황린</c>] <c(65696d)>L/42</c>"
 
 msgctxt "desc/ammo/bulletrus_76 apbc"
 msgid "76.2-mm OFBR-350SP [<c(ff6a00)>APBC</c>] <c(65696d)>L/42</c>"
-msgstr ""
+msgstr "76.2-mm OFBR-350SP [<c(ff6a00)>APBC</c>] <c(65696d)>L/42</c>"
 
 msgctxt "desc/ammo/bulletrus_100 apcbc"
 msgid "100-mm BR-412D [<c(ff6a00)>APCBC</c>] <c(65696d)>L/59</c>"
-msgstr ""
+msgstr "100-mm BR-412D [<c(ff6a00)>APCBC</c>] <c(65696d)>L/59</c>"
 
 msgctxt "desc/ammo/bulletrus_130 apcbc"
 msgid "130-mm BR-482B [<c(ff6a00)>APCBC</c>] <c(65696d)>L/88</c>"
-msgstr ""
+msgstr "130-mm BR-482B [<c(ff6a00)>APCBC</c>] <c(65696d)>L/88</c>"
 
 msgctxt "desc/ammo/bulletrus_85 apcbc"
 msgid "85-mm BR-367 [<c(ff6a00)>APCBC</c>]"
-msgstr ""
+msgstr "85-mm BR-367 [<c(ff6a00)>APCBC</c>]"
 
 msgctxt "desc/ammo/bulletrus_122_l48 apcbc"
 msgid "122-mm BR-471D [<c(ff6a00)>APCBC</c>] <c(65696d)>L/48</c>"
-msgstr ""
+msgstr "122-mm BR-471D [<c(ff6a00)>APCBC</c>] <c(65696d)>L/48</c>"
 
 msgctxt "desc/ammo/bullet_37x257 fin aphe"
 msgid "37×258-mm R [<c(ff6a00)>APHE</c>] <c(65696d)>L/19</c>"
-msgstr ""
+msgstr "37×258-mm R [<c(ff6a00)>APHE</c>] <c(65696d)>L/19</c>"
 
 msgctxt "desc/ammo/bullet_37x257 fin apbc"
 msgid "37×258-mm R [<c(ff6a00)>APBC</c>] <c(65696d)>L/19</c>"
-msgstr ""
+msgstr "37×258-mm R [<c(ff6a00)>APBC</c>] <c(65696d)>L/19</c>"
 
 msgctxt "desc/ammo/mortarrus_160 he"
 msgid "160-mm F-852 Shell [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "160-mm F-852 포탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/ros_132mm"
 msgid "132-mm ROS-132 rocket [<c(ff6a00)>SAP-HE</c>]"
-msgstr ""
+msgstr "132-mm ROS-132 로켓 [<c(ff6a00)>SAP-HE</c>]"
 
 msgctxt "desc/ammo/zab50fp"
 msgid "ZAB-50FP Incendiary Bomb"
-msgstr ""
+msgstr "ZAB-50FP 소이 폭탄"
 
 msgctxt "desc/ammo/air_bomb_rus_zab50"
 msgid "ZAB-50FP Incendiary Bomb"
-msgstr ""
+msgstr "ZAB-50FP 소이 폭탄"
 
 msgctxt "desc/ammo/air_bomb_rus_100kg"
 msgid "FAB-100"
-msgstr ""
+msgstr "FAB-100"
 
 msgctxt "desc/ammo/fab_100"
 msgid "FAB-100"
-msgstr ""
+msgstr "FAB-100"
 
 msgctxt "desc/ammo/air_bomb_rus_50kg"
 msgid "FAB-50"
-msgstr ""
+msgstr "FAB-50"
 
 msgctxt "desc/ammo/fab_50"
 msgid "FAB-50"
-msgstr ""
+msgstr "FAB-50"

@@ -335,7 +335,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret01_completed"
 msgid "Secret objective: Why die for Arnhem? - Make German garrison retreat without fight"
@@ -343,7 +343,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret02"
 msgid "Secret objective #2"
-msgstr ""
+msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/tasks/secret02_completed"
 msgid "Secret objective: Career shift - After loosing all AT guns, give a PIAT to any of your former AT gun crew"
@@ -355,7 +355,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/loose_units_lost"
 msgid "You lost all your units."
-msgstr ""
+msgstr "모든 유닛을 잃었다."
 
 #, boost-format
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/obj_progress_reinf"
@@ -380,7 +380,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/reinf_skip_preparation"
 msgid "Skip preparation"
-msgstr ""
+msgstr "준비 생략"
 
 msgctxt "mission/single/05-eng/1944_09_17_arnhem/ui/timer_nebelwerfer"
 msgid "Distract artillery men before they fire"

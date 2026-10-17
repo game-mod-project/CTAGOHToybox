@@ -15,8 +15,8 @@ msgstr ""
 
 msgctxt "mission/single/01-rus_skirmish/campaign/title"
 msgid "1941-45"
-msgstr ""
+msgstr "1941-45"
 
 msgctxt "mission/single/01-rus_skirmish/campaign/name"
 msgid "USSR Skirmishes"
-msgstr ""
+msgstr "소련 소규모 전투"

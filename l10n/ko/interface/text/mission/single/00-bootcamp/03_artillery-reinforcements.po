@@ -15,43 +15,43 @@ msgstr ""
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/complete"
 msgid "Congratulations, you have finished the third tutorial (AT guns and artillery)."
-msgstr ""
+msgstr "축하한다, 세 번째 훈련(대전차포와 포병)을 마쳤다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/date"
 msgid "June 24th, 1941 · Border with the USSR"
-msgstr ""
+msgstr "1941년 6월 24일 · 소련 국경"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/hint_video"
 msgid "Press this button to re-watch the video for this tutorial phase."
-msgstr ""
+msgstr "이 단추를 눌러 이 훈련 단계의 영상을 다시 본다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/name"
 msgid "Tutorial 3: AT Guns and Artillery"
-msgstr ""
+msgstr "훈련 3: 대전차포와 포병"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/name_big"
 msgid "AT Guns and Artillery"
-msgstr ""
+msgstr "대전차포와 포병"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/00"
 msgid "Soldaten! Welcome back to the front line! Today you will learn how to deploy Anti-Tank guns, build sandbags, and distinguish between direct and indirect fire units."
-msgstr ""
+msgstr "병사들! 최전선에 다시 온 것을 환영한다! 오늘은 대전차포를 배치하는 법, 모래주머니를 쌓는 법, 직접 사격과 간접 사격 유닛을 구분하는 법을 배운다."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/01"
 msgid "First, use all of your soldiers to crew the Anti-Tank gun."
-msgstr ""
+msgstr "먼저 병사 전원을 대전차포 승무원으로 붙여라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/01b"
 msgid "Soldiers, it's time to relocate the AT gun to a new firing position near the pond. Move it!"
-msgstr ""
+msgstr "병사들, 대전차포를 연못 근처의 새 사격 위치로 옮길 시간이다. 움직여라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/02"
 msgid "Great! Now it's time to build sandbags around your AT gun for extra protection!"
-msgstr ""
+msgstr "좋다! 이제 대전차포 둘레에 모래주머니를 쌓아 방어를 강화할 차례다!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/03"
 msgid "Enemy vehicles down the road! Wipe them out!"
-msgstr ""
+msgstr "길 아래에 적 차량이다! 쓸어버려라!"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/narrator/ger_officer/04"
 msgid "What is this?! It's a heavy Soviet tank, a KV-1! Take it out immediately using APCR rounds!"
@@ -111,15 +111,15 @@ msgstr "트럭으로 대전차포를 새 위치까지 견인해라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/outro_completed"
 msgid "Mission Accomplished!\n\nClick on 'continue' to keep playing this mission or click on 'next' to proceed directly into the next mission."
-msgstr ""
+msgstr "임무 완수!\n\n이 임무를 계속 하려면 '계속'을, 곧바로 다음 임무로 가려면 '다음'을 눌러라."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/place"
 msgid "Army Group Centre"
-msgstr ""
+msgstr "중부집단군"
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/reinf_video"
 msgid "Re-watch steps."
-msgstr ""
+msgstr "단계 다시 보기."
 
 msgctxt "mission/single/00-bootcamp/03_artillery-reinforcements/replay_video"
 msgid "Replay Video"

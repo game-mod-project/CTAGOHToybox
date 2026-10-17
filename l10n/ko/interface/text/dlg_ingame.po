@@ -188,7 +188,7 @@ msgstr ""
 
 msgctxt "entity_info/desc/car"
 msgid "<c(c3baae)>car</c>"
-msgstr ""
+msgstr "<c(c3baae)>승용차</c>"
 
 msgctxt "storing/entities"
 msgid "Entities"
@@ -676,7 +676,7 @@ msgstr ""
 
 msgctxt "actionbar/mine_detection"
 msgid "Mine Detector"
-msgstr ""
+msgstr "지뢰 탐지기"
 
 msgctxt "actionbar/put_dynamite"
 msgid "Use explosives"
@@ -1128,7 +1128,7 @@ msgstr ""
 
 msgctxt "entity_info/desc/tank/medium"
 msgid "<c(c3baae)>medium tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "actionbar/map_control/show_tracers"
 msgid "Show tracers"
@@ -1244,7 +1244,7 @@ msgstr ""
 
 msgctxt "entity_info/desc/tank/light"
 msgid "<c(c3baae)>light tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>경전차</c>"
 
 msgctxt "actionbar/highlight/corpses/action"
 msgid "Enable/disable highlighting of corpses."
@@ -1616,7 +1616,7 @@ msgstr ""
 
 msgctxt "vehiclebar/terrain/water"
 msgid "Water"
-msgstr ""
+msgstr "물"
 
 msgctxt "actionbar/vehicle_supplies"
 msgid "Remaining Supplies"
@@ -1816,7 +1816,7 @@ msgstr ""
 
 msgctxt "extender/flare"
 msgid "Flares"
-msgstr ""
+msgstr "조명탄"
 
 msgctxt "weapon_view/level"
 msgid "<f(anka)e(shadow)s(12)y(+15)>%1%"
@@ -2008,7 +2008,7 @@ msgstr ""
 
 msgctxt "entity_info/desc/moto"
 msgid "<c(c3baae)>motorcycle</c>"
-msgstr ""
+msgstr "<c(c3baae)>오토바이</c>"
 
 msgctxt "loading/pathernetwork"
 msgid "Initializing pather network"
@@ -2072,7 +2072,7 @@ msgstr ""
 
 msgctxt "extender/smokescreen"
 msgid "Smoke Screen"
-msgstr ""
+msgstr "연막"
 
 msgctxt "stats/color/ally"
 msgid "<c(86b9d1)>"
@@ -2112,11 +2112,11 @@ msgstr ""
 
 msgctxt "entity_info/desc/tank"
 msgid "<c(c3baae)>tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>전차</c>"
 
 msgctxt "entity_info/desc/tank/heavy"
 msgid "<c(c3baae)>heavy tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "entity_info/desc/human"
 msgid ""
@@ -2132,7 +2132,7 @@ msgstr ""
 
 msgctxt "entity_info/desc/marine"
 msgid "<c(c3baae)>boat</c>"
-msgstr ""
+msgstr "<c(c3baae)>보트</c>"
 
 msgctxt "entity_info/crew"
 msgid "Crew"
@@ -2312,7 +2312,7 @@ msgstr ""
 
 msgctxt "entity_info/desc/self_propelled"
 msgid "<c(c3baae)>self-propelled gun</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주포</c>"
 
 msgctxt "entity_info/armor_hull"
 msgid "Hull Armor"

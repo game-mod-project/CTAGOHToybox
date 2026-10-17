@@ -15,332 +15,332 @@ msgstr ""
 
 msgctxt "desc/weapon/fn_mg"
 msgid "FN MAG general-purpose machine gun"
-msgstr ""
+msgstr "FN MAG general-purpose machine gun"
 
 msgctxt "desc/weapon/90mm_t15e2"
 msgid "90mm Gun T15E2 L/73"
-msgstr ""
+msgstr "90mm Gun T15E2 L/73"
 
 msgctxt "desc/weapon/105mm_t5e2"
 msgid "105mm Gun T5E2 L/67.5"
-msgstr ""
+msgstr "105mm Gun T5E2 L/67.5"
 
 msgctxt "desc/weapon/120mm_t53"
 msgid "120mm Gun T53 L/60"
-msgstr ""
+msgstr "120mm Gun T53 L/60"
 
 msgctxt "desc/weapon/155mm_t7"
 msgid "155mm Gun T7 L/40"
-msgstr ""
+msgstr "155mm Gun T7 L/40"
 
 msgctxt "desc/weapon/240mm_t92"
 msgid "240mm M1 Howitzer"
-msgstr ""
+msgstr "240mm M1 Howitzer"
 
 msgctxt "desc/weapon/120mm_t57"
 msgid "120mm T179"
-msgstr ""
+msgstr "120mm T179"
 
 msgctxt "desc/weapon/120mm_m103"
 msgid "120mm M58"
-msgstr ""
+msgstr "120mm M58"
 
 msgctxt "desc/weapon/105mm_t5e1"
 msgid "105mm T5E1"
-msgstr ""
+msgstr "105mm T5E1"
 
 msgctxt "desc/weapon/152mm_xm81"
 msgid "152mm XM81"
-msgstr ""
+msgstr "152mm XM81"
 
 msgctxt "desc/weapon/155mm_t7e2"
 msgid "155mm T7E2"
-msgstr ""
+msgstr "155mm T7E2"
 
 msgctxt "desc/weapon/90mm_m3a1"
 msgid "90mm M3A1"
-msgstr ""
+msgstr "90mm M3A1"
 
 msgctxt "desc/weapon/105mm_T141"
 msgid "105mm T141"
-msgstr ""
+msgstr "105mm T141"
 
 msgctxt "desc/weapon/120mm_t124"
 msgid "120mm T124"
-msgstr ""
+msgstr "120mm T124"
 
 msgctxt "desc/weapon/84mm_20pdr_oqf"
 msgid "84 mm 20pdr OQF Mk.I"
-msgstr ""
+msgstr "84 mm 20pdr OQF Mk.I"
 
 msgctxt "desc/weapon/94mm_28pdr_oqf"
 msgid "94 mm 28pdr OQF"
-msgstr ""
+msgstr "94 mm 28pdr OQF"
 
 msgctxt "desc/weapon/94mm_32pdr_oqf"
 msgid "94 mm 32pdr OQF"
-msgstr ""
+msgstr "94 mm 32pdr OQF"
 
 msgctxt "desc/weapon/120mm_l1a2"
 msgid "120mm L1A2"
-msgstr ""
+msgstr "120mm L1A2"
 
 msgctxt "desc/weapon/120mm_l1a1a"
 msgid "120mm L1A1A"
-msgstr ""
+msgstr "120mm L1A1A"
 
 msgctxt "desc/weapon/183mm_qf_l4a1"
 msgid "183mm QF L4A1"
-msgstr ""
+msgstr "183mm QF L4A1"
 
 msgctxt "desc/weapon/76mm_qf_17_pounder"
 msgid "76mm QF 17-pounder"
-msgstr ""
+msgstr "76mm QF 17-pounder"
 
 msgctxt "desc/weapon/20mm_itk35"
 msgid "20mm Itk/35 L/65"
-msgstr ""
+msgstr "20mm Itk/35 L/65"
 
 msgctxt "desc/weapon/105mm_m4"
 msgid "105mm M4"
-msgstr ""
+msgstr "105mm M4"
 
 msgctxt "desc/weapon/105mm_m4-2"
 msgid "105mm M4"
-msgstr ""
+msgstr "105mm M4"
 
 msgctxt "desc/weapon/127mm_hvar_12"
 msgid "127mm HVAR rocket launcher x12"
-msgstr ""
+msgstr "127mm HVAR rocket launcher x12"
 
 msgctxt "desc/weapon/165mm_m135e1"
 msgid "165mm M135E1"
-msgstr ""
+msgstr "165mm M135E1"
 
 msgctxt "desc/weapon/155mm_t180"
 msgid "155mm T180"
-msgstr ""
+msgstr "155mm T180"
 
 msgctxt "desc/weapon/114mm_gun_mbc"
 msgid "114mm Gun MBC"
-msgstr ""
+msgstr "114mm Gun MBC"
 
 msgctxt "desc/weapon/90mm_m3_10"
 msgid "90mm M3"
-msgstr ""
+msgstr "90mm M3"
 
 msgctxt "desc/weapon/browning_m2_x4_2"
 msgid "12.7mm Browning M2 x4"
-msgstr ""
+msgstr "12.7mm Browning M2 x4"
 
 msgctxt "desc/weapon/114mm_m73"
 msgid "114mm Gun M73"
-msgstr ""
+msgstr "114mm Gun M73"
 
 msgctxt "desc/weapon/90mm_t15e1_2"
 msgid "90mm Gun T15E1"
-msgstr ""
+msgstr "90mm Gun T15E1"
 
 msgctxt "desc/weapon/browning_m19a4"
 msgid "Browning M1919A4"
-msgstr ""
+msgstr "Browning M1919A4"
 
 msgctxt "desc/weapon/browning_m2_x2_2"
 msgid "Twin 12.7mm Browning M2"
-msgstr ""
+msgstr "Twin 12.7mm Browning M2"
 
 msgctxt "desc/weapon/browning_m2"
 msgid "12.7mm Browning M2"
-msgstr ""
+msgstr "12.7mm Browning M2"
 
 msgctxt "desc/weapon/128mm_sa45_67"
 msgid "128mm SA45"
-msgstr ""
+msgstr "128mm SA45"
 
 msgctxt "desc/weapon/128mm_sa45_67_2"
 msgid "128mm SA45"
-msgstr ""
+msgstr "128mm SA45"
 
 msgctxt "desc/weapon/130mm_45_model_1935"
 msgid "130mm Model 1935"
-msgstr ""
+msgstr "130mm Model 1935"
 
 msgctxt "desc/weapon/120mm_m88"
 msgid "120mm M88"
-msgstr ""
+msgstr "120mm M88"
 
 msgctxt "desc/weapon/20mm_polsten_2"
 msgid "20mm Polsten"
-msgstr ""
+msgstr "20mm Polsten"
 
 msgctxt "desc/weapon/110mm_high"
 msgid "110mm High Velocity Gun"
-msgstr ""
+msgstr "110mm High Velocity Gun"
 
 msgctxt "desc/weapon/90mm_m3_2"
 msgid "90mm M3"
-msgstr ""
+msgstr "90mm M3"
 
 msgctxt "desc/weapon/120mm_M58"
 msgid "120mm M58"
-msgstr ""
+msgstr "120mm M58"
 
 msgctxt "desc/weapon/105mm_royalordnance_L7A1"
 msgid "105mm Royal Ordnance L7A1"
-msgstr ""
+msgstr "105mm Royal Ordnance L7A1"
 
 msgctxt "desc/weapon/120_mm_QF_L1A2"
 msgid "120mm QF L1A2"
-msgstr ""
+msgstr "120mm QF L1A2"
 
 msgctxt "desc/weapon/binocular2"
 msgid "Binocular"
-msgstr ""
+msgstr "쌍안경"
 
 msgctxt "desc/weapon/commander_vision2"
 msgid "Commander Vision"
-msgstr ""
+msgstr "지휘관 시야"
 
 msgctxt "desc/weapon/120mm_L1A1"
 msgid "120mm L1A1"
-msgstr ""
+msgstr "120mm L1A1"
 
 msgctxt "desc/weapon/120mm_L11"
 msgid "120mm L11"
-msgstr ""
+msgstr "120mm L11"
 
 msgctxt "desc/weapon/83mm_20pr_2"
 msgid "83mm 20-pdr"
-msgstr ""
+msgstr "83mm 20-pdr"
 
 msgctxt "desc/weapon/fnmg"
 msgid "FN MAG"
-msgstr ""
+msgstr "FN MAG"
 
 msgctxt "desc/weapon/155mm_mpcs_seg"
 msgid "155mm MPCS"
-msgstr ""
+msgstr "155mm MPCS"
 
 msgctxt "desc/weapon/120mm_Conway"
 msgid "120mm L1A1 Conway"
-msgstr ""
+msgstr "120mm L1A1 Conway"
 
 msgctxt "desc/weapon/183mm_l4a1"
 msgid "183mm QF L4A1"
-msgstr ""
+msgstr "183mm QF L4A1"
 
 msgctxt "desc/weapon/15mm_besa_1"
 msgid "15mm Besa"
-msgstr ""
+msgstr "15mm Besa"
 
 msgctxt "desc/weapon/15mm_besa_2"
 msgid "15mm Besa"
-msgstr ""
+msgstr "15mm Besa"
 
 msgctxt "desc/weapon/45mm_20k_ace"
 msgid "45mm 20-K"
-msgstr ""
+msgstr "45mm 20-K"
 
 msgctxt "desc/weapon/75mm_italy"
 msgid "75mm Gun (Italy)"
-msgstr ""
+msgstr "75mm Gun (Italy)"
 
 msgctxt "desc/weapon/75mm_madam"
 msgid "75mm Madam"
-msgstr ""
+msgstr "75mm Madam"
 
 msgctxt "desc/weapon/75mm_sa50_ace"
 msgid "75mm SA50"
-msgstr ""
+msgstr "75mm SA50"
 
 msgctxt "desc/weapon/75mm_sa51_ace"
 msgid "75mm SA51"
-msgstr ""
+msgstr "75mm SA51"
 
 msgctxt "desc/weapon/90mm_dca30_ace"
 msgid "90mm DCA 30"
-msgstr ""
+msgstr "90mm DCA 30"
 
 msgctxt "desc/weapon/90mm_f3_ace"
 msgid "90mm F3"
-msgstr ""
+msgstr "90mm F3"
 
 msgctxt "desc/weapon/100mm_sa47_ace"
 msgid "100mm SA47"
-msgstr ""
+msgstr "100mm SA47"
 
 msgctxt "desc/weapon/100mm_sa47a_ace"
 msgid "100mm SA47A"
-msgstr ""
+msgstr "100mm SA47A"
 
 msgctxt "desc/weapon/105mm_fr_ace"
 msgid "105mm French Gun"
-msgstr ""
+msgstr "105mm French Gun"
 
 msgctxt "desc/weapon/105mm_fr_ace_baraban"
 msgid "105mm French Gun (Autoloader)"
-msgstr ""
+msgstr "105mm French Gun (Autoloader)"
 
 msgctxt "desc/weapon/105mm_how_ace"
 msgid "105mm Howitzer"
-msgstr ""
+msgstr "105mm Howitzer"
 
 msgctxt "desc/weapon/105mm_m2a1_ace"
 msgid "105mm M2A1"
-msgstr ""
+msgstr "105mm M2A1"
 
 msgctxt "desc/weapon/120mm_SA46_ace"
 msgid "120mm SA46"
-msgstr ""
+msgstr "120mm SA46"
 
 msgctxt "desc/weapon/120mm_SA46_td_ace"
 msgid "120mm SA46 AT"
-msgstr ""
+msgstr "120mm SA46 AT"
 
 msgctxt "desc/weapon/155mm_f1_ace"
 msgid "155mm F1"
-msgstr ""
+msgstr "155mm F1"
 
 msgctxt "desc/weapon/155mm_T180_2"
 msgid "155mm T180"
-msgstr ""
+msgstr "155mm T180"
 
 msgctxt "desc/weapon/ATGMx4fr"
 msgid "4x French ATGM Launcher"
-msgstr ""
+msgstr "4x French ATGM Launcher"
 
 msgctxt "desc/weapon/browning_m2_ace"
 msgid "12.7mm Browning M2"
-msgstr ""
+msgstr "12.7mm Browning M2"
 
 msgctxt "desc/weapon/browning_m2_x4_2"
 msgid "12.7mm Browning M2 x4"
-msgstr ""
+msgstr "12.7mm Browning M2 x4"
 
 msgctxt "desc/weapon/Maxsim_ace"
 msgid "Maxson AA Machine Gun"
-msgstr ""
+msgstr "Maxson AA Machine Gun"
 
 msgctxt "desc/weapon/Maxsim"
 msgid "Maxson AA Machine Gun"
-msgstr ""
+msgstr "Maxson AA Machine Gun"
 
 msgctxt "desc/weapon/Maxsim_ace_dual"
 msgid "Twin Maxson AA Machine Gun"
-msgstr ""
+msgstr "Twin Maxson AA Machine Gun"
 
 msgctxt "desc/weapon/30mm_auto_ace"
 msgid "30mm HS-831A"
-msgstr ""
+msgstr "30mm HS-831A"
 
 msgctxt "desc/weapon/105mm_bitubede"
 msgid "105mm Bitubede"
-msgstr ""
+msgstr "105mm Bitubede"
 
 msgctxt "desc/weapon/browning_m2_x4_3"
 msgid "12.7mm Browning M2 x4"
-msgstr ""
+msgstr "12.7mm Browning M2 x4"
 
 msgctxt "desc/weapon/105mm_L7A2"
 msgid "105mm L7A2"
-msgstr ""
+msgstr "105mm L7A2"

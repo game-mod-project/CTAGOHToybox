@@ -16,96 +16,96 @@ msgstr ""
 
 msgctxt "desc/weapon/besa"
 msgid "Besa Machine Gun"
-msgstr ""
+msgstr "Besa Machine Gun"
 
 msgctxt "desc/weapon/besax2"
 msgid "Twin Besa Machine Guns"
-msgstr ""
+msgstr "Twin Besa Machine Guns"
 
 msgctxt "desc/weapon/browning_m2"
 msgid "Browning M2"
-msgstr ""
+msgstr "Browning M2"
 
 msgctxt "desc/weapon/browning_m2_x6"
 msgid "6x Browning M2"
-msgstr ""
+msgstr "6x Browning M2"
 
 msgctxt "desc/weapon/browning_m3_x6"
 msgid "6x Browning M3"
-msgstr ""
+msgstr "6x Browning M3"
 
 msgctxt "desc/weapon/browning_m19a4"
 msgid "Browning M1919A4"
-msgstr ""
+msgstr "Browning M1919A4"
 
 msgctxt "desc/weapon/browning_m19a4_left"
 msgid "Browning M1919A4 (Left)"
-msgstr ""
+msgstr "Browning M1919A4 (Left)"
 
 msgctxt "desc/weapon/browning_m19a4_right"
 msgid "Browning M1919A4 (Right)"
-msgstr ""
+msgstr "Browning M1919A4 (Right)"
 
 msgctxt "desc/weapon/browning_m19a4_tank"
 msgid "Browning M1919A4 (Tank)"
-msgstr ""
+msgstr "Browning M1919A4 (Tank)"
 
 msgctxt "desc/weapon/browning_x2"
 msgid "Twin Browning"
-msgstr ""
+msgstr "Twin Browning"
 
 msgctxt "desc/weapon/browning_x4"
 msgid "Quad Browning"
-msgstr ""
+msgstr "Quad Browning"
 
 msgctxt "desc/weapon/dshk"
 msgid "DShK"
-msgstr ""
+msgstr "DShK"
 
 msgctxt "desc/weapon/dshk_100"
 msgid "DShK (100 rounds)"
-msgstr ""
+msgstr "DShK (100 rounds)"
 
 msgctxt "desc/weapon/dt"
 msgid "DT Machine Gun"
-msgstr ""
+msgstr "DT Machine Gun"
 
 msgctxt "desc/weapon/dt_x2"
 msgid "Twin DT Machine Guns"
-msgstr ""
+msgstr "Twin DT Machine Guns"
 
 msgctxt "desc/weapon/hmgun_aa_dshk"
 msgid "DShK AA Heavy Machine Gun"
-msgstr ""
+msgstr "DShK AA Heavy Machine Gun"
 
 msgctxt "desc/weapon/hmgun_aa_dshkm"
 msgid "DShKM AA Heavy Machine Gun"
-msgstr ""
+msgstr "DShKM AA Heavy Machine Gun"
 
 msgctxt "desc/weapon/hmgun_aa_m2hb"
 msgid "M2HB AA Heavy Machine Gun"
-msgstr ""
+msgstr "M2HB AA Heavy Machine Gun"
 
 msgctxt "desc/weapon/lewis_gun_ger"
 msgid "Lewis Gun (Captured)"
-msgstr ""
+msgstr "Lewis Gun (Captured)"
 
 msgctxt "desc/weapon/madsen_belt"
 msgid "Madsen (Belt-fed)"
-msgstr ""
+msgstr "Madsen (Belt-fed)"
 
 msgctxt "desc/weapon/mg131"
 msgid "MG 131"
-msgstr ""
+msgstr "MG 131"
 
 msgctxt "desc/weapon/mg131_mount"
 msgid "MG 131 (Mounted)"
-msgstr ""
+msgstr "MG 131 (Mounted)"
 
 msgctxt "desc/weapon/sgmt"
 msgid "SGMT Machine Gun"
-msgstr ""
+msgstr "SGMT Machine Gun"
 
 msgctxt "desc/weapon/Type_77_hmgun"
 msgid "Type 77 Heavy Machine Gun"
-msgstr ""
+msgstr "Type 77 Heavy Machine Gun"

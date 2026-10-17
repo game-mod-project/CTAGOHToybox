@@ -15,23 +15,23 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_allround"
 msgid "Doctrine: All-Round"
-msgstr ""
+msgstr "교리: 전방위"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_defensive"
 msgid "Doctrine: Defensive"
-msgstr ""
+msgstr "교리: 방어"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_irregular"
 msgid "Doctrine: Irregular"
-msgstr ""
+msgstr "교리: 비정규"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/doctrine_offensive"
 msgid "Doctrine: Offensive"
-msgstr ""
+msgstr "교리: 공세"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/mission_buys_stay_flag"
 msgid "Reinforcement Menu:"
@@ -131,7 +131,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret01_completed"
 msgid "Secret objective #1: Wicked! - incinerated enemy soldiers"
@@ -139,7 +139,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret02"
 msgid "Secret objective #2"
-msgstr ""
+msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1944_09_20_marketgarden_skirmish/tasks/secret02_completed"
 msgid "Secret objective #2: Tamed the cat! - captured German panther."

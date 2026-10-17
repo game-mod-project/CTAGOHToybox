@@ -15,12 +15,12 @@ msgstr ""
 
 msgctxt "desc/weapon/chauchat"
 msgid "Chauchat M/15"
-msgstr ""
+msgstr "Chauchat M/15"
 
 msgctxt "desc/weapon/berthier_m1916"
 msgid "Berthier Mle.1907/15 M16"
-msgstr ""
+msgstr "Berthier Mle.1907/15 M16"
 
 msgctxt "desc/weapon/fm_24_29"
 msgid "FM 24/29"
-msgstr ""
+msgstr "FM 24/29"

@@ -15,72 +15,72 @@ msgstr ""
 
 msgctxt "desc/fauna/camel"
 msgid "Camel"
-msgstr ""
+msgstr "낙타"
 
 msgctxt "desc/fauna/carp"
 msgid "Carp"
-msgstr ""
+msgstr "잉어"
 
 msgctxt "desc/fauna/chicken"
 msgid "Chicken"
-msgstr ""
+msgstr "닭"
 
 msgctxt "desc/fauna/cow"
 msgid "Cow"
-msgstr ""
+msgstr "소"
 
 msgctxt "desc/fauna/crab"
 msgid "Crab"
-msgstr ""
+msgstr "게"
 
 msgctxt "desc/fauna/dog"
 msgid "Dog"
-msgstr ""
+msgstr "개"
 
 msgctxt "desc/fauna/donkey"
 msgid "Donkey"
-msgstr ""
+msgstr "당나귀"
 
 msgctxt "desc/fauna/fish"
 msgid "Fish"
-msgstr ""
+msgstr "물고기"
 
 msgctxt "desc/fauna/fly"
 msgid "Flies"
-msgstr ""
+msgstr "파리"
 
 msgctxt "desc/fauna/goat"
 msgid "Goat"
-msgstr ""
+msgstr "염소"
 
 msgctxt "desc/fauna/hawk"
 msgid "Hawk"
-msgstr ""
+msgstr "매"
 
 msgctxt "desc/fauna/horse"
 msgid "Horse"
-msgstr ""
+msgstr "말"
 
 msgctxt "desc/fauna/pig"
 msgid "Pig"
-msgstr ""
+msgstr "돼지"
 
 msgctxt "desc/fauna/raven"
 msgid "Raven"
-msgstr ""
+msgstr "큰까마귀"
 
 msgctxt "desc/fauna/red_deer_hind"
 msgid "Red Deer Hind"
-msgstr ""
+msgstr "붉은사슴 암컷"
 
 msgctxt "desc/fauna/red_deer_stag"
 msgid "Red Deer Stag"
-msgstr ""
+msgstr "붉은사슴 수컷"
 
 msgctxt "desc/fauna/seagull"
 msgid "Seagull"
-msgstr ""
+msgstr "갈매기"
 
 msgctxt "desc/fauna/sheep"
 msgid "Sheep"
-msgstr ""
+msgstr "양"

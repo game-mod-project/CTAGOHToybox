@@ -15,20 +15,20 @@ msgstr ""
 
 msgctxt "mission/multi/2v2_glubinka/name"
 msgid "Glubinka <c(7e5be4)>[Jubilee]"
-msgstr ""
+msgstr "글루빈카 <c(7e5be4)>[Jubilee]"
 
 msgctxt "mission/multi/2v2_hunting/name"
 msgid "Hunting <c(7e5be4)>[Jubilee]"
-msgstr ""
+msgstr "사냥 <c(7e5be4)>[Jubilee]"
 
 msgctxt "mission/multi/2v2_hutor/name"
 msgid "Hutor <c(7e5be4)>[Jubilee]"
-msgstr ""
+msgstr "후토르 <c(7e5be4)>[Jubilee]"
 
 msgctxt "mission/multi/3v3_general_winter/name"
 msgid "General Winter <c(7e5be4)>[Jubilee]"
-msgstr ""
+msgstr "동장군 <c(7e5be4)>[Jubilee]"
 
 msgctxt "mission/multi/4v4_winter_walk/name"
 msgid "Winter Walk <c(7e5be4)>[Jubilee]"
-msgstr ""
+msgstr "겨울 행군 <c(7e5be4)>[Jubilee]"

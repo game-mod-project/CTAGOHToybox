@@ -15,588 +15,588 @@ msgstr ""
 
 msgctxt "desc/entity/grille_15_l63"
 msgid "Grille 15 'Pinocchio'"
-msgstr ""
+msgstr "Grille 15 'Pinocchio'"
 
 msgctxt "desc/entity/grille_15"
 msgid "Grille 15 'Pinocchio' Recon"
-msgstr ""
+msgstr "Grille 15 'Pinocchio' Recon"
 
 msgctxt "info/special/grille_15_l63"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/e-100c"
 msgid "E-100 Ausf. C"
-msgstr ""
+msgstr "E-100 Ausf. C"
 
 msgctxt "info/special/e-100c"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/pz8_woodland"
 msgid "Pz.Kpfw VIII 'Maus'"
-msgstr ""
+msgstr "Pz.Kpfw VIII 'Maus'"
 
 msgctxt "info/special/pz8_woodland"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/pz8_tiger"
 msgid "Pz.Kpfw VIII 'Maus'"
-msgstr ""
+msgstr "Pz.Kpfw VIII 'Maus'"
 
 msgctxt "desc/entity/pz8_winter"
 msgid "Pz.Kpfw VIII 'Maus'"
-msgstr ""
+msgstr "Pz.Kpfw VIII 'Maus'"
 
 msgctxt "desc/entity/p1000"
 msgid "P1000"
-msgstr ""
+msgstr "P1000"
 
 msgctxt "desc/entity/vk1602"
 msgid "VK1602 'Leopard' 5cm"
-msgstr ""
+msgstr "VK1602 'Leopard' 5cm"
 
 msgctxt "info/special/vk1602"
 msgid "<c(c3baae)>Fast Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>고속 전차</c>"
 
 msgctxt "desc/entity/vk1602_30mm"
 msgid "VK1602 'Leopard' 3cm"
-msgstr ""
+msgstr "VK1602 'Leopard' 3cm"
 
 msgctxt "info/special/vk1602_30mm"
 msgid "<c(c3baae)>Fast Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>고속 전차</c>"
 
 msgctxt "desc/entity/vk1602_1943"
 msgid "VK1602-early 'Leopard' 5cm 1943"
-msgstr ""
+msgstr "VK1602-early 'Leopard' 5cm 1943"
 
 msgctxt "info/special/vk1602_1943"
 msgid "<c(c3baae)>Fast Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>고속 전차</c>"
 
 msgctxt "desc/entity/e100aa"
 msgid "E-100 Ausf.B Field modification"
-msgstr ""
+msgstr "E-100 Ausf.B 야전 개조형"
 
 msgctxt "info/special/e100aa"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e100_15"
 msgid "E-100 15cm"
-msgstr ""
+msgstr "E-100 15cm"
 
 msgctxt "info/special/e-100_150"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-100hd"
 msgid "E-100 Super Heavy HD"
-msgstr ""
+msgstr "E-100 초중형 HD"
 
 msgctxt "info/special/e-100hd"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e79"
 msgid "E-79 'Panther III'"
-msgstr ""
+msgstr "E-79 'Panther III'"
 
 msgctxt "info/special/e79"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/lowe_1943"
 msgid "Pz.Kpfw VII 'Löwe' 1943"
-msgstr ""
+msgstr "Pz.Kpfw VII 'Löwe' 1943"
 
 msgctxt "info/special/lowe_1943"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/lowe_1944"
 msgid "Pz.Kpfw VII 'Löwe' 1944"
-msgstr ""
+msgstr "Pz.Kpfw VII 'Löwe' 1944"
 
 msgctxt "info/special/lowe_1944"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/lowehd"
 msgid "Pz.Kpfw VII 'Löwe'"
-msgstr ""
+msgstr "Pz.Kpfw VII 'Löwe'"
 
 msgctxt "info/special/lowehd"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/panther2"
 msgid "Pz.Kpfw V 'Panther II'"
-msgstr ""
+msgstr "Pz.Kpfw V 'Panther II'"
 
 msgctxt "info/special/panther2"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/vk4503"
 msgid "VK4503"
-msgstr ""
+msgstr "VK4503"
 
 msgctxt "info/special/vk4503"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/coelian_i"
 msgid "Flakpanzer V 'Coelian'"
-msgstr ""
+msgstr "Flakpanzer V 'Coelian'"
 
 msgctxt "info/special/coelian_i"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/type_5"
 msgid "Proto typeType 2605"
-msgstr ""
+msgstr "시제형 Type 2605"
 
 msgctxt "info/special/type_5"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/jpze100"
 msgid "Jagdpanzer E-100"
-msgstr ""
+msgstr "Jagdpanzer E-100"
 
 msgctxt "info/special/jpze100"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/e75_ts_3dst"
 msgid "E-75 TS"
-msgstr ""
+msgstr "E-75 TS"
 
 msgctxt "info/special/e75_ts_3dst"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e100_gw"
 msgid "G.W. E-100"
-msgstr ""
+msgstr "G.W. E-100"
 
 msgctxt "info/special/e100_gw"
 msgid "<c(c3baae)>Self-propelled heavy artillery</c>"
-msgstr ""
+msgstr "<c(c3baae)>자주 중포</c>"
 
 msgctxt "desc/entity/steyr_wt"
 msgid "Steyr Waffentrager"
-msgstr ""
+msgstr "Steyr Waffentrager"
 
 msgctxt "info/special/steyr_wt"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/dicker_max"
 msgid "Dicker Max"
-msgstr ""
+msgstr "Dicker Max"
 
 msgctxt "info/special/dicker_max"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/sturer_emil"
 msgid "Sturer Emil"
-msgstr ""
+msgstr "Sturer Emil"
 
 msgctxt "info/special/sturer_emil"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/e-50"
 msgid "E-50"
-msgstr ""
+msgstr "E-50"
 
 msgctxt "info/special/e-50"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e25"
 msgid "E-25 Ausf.A"
-msgstr ""
+msgstr "E-25 Ausf.A"
 
 msgctxt "info/special/e25"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/e25x7"
 msgid "E-25 Ausf.B"
-msgstr ""
+msgstr "E-25 Ausf.B"
 
 msgctxt "info/special/e25x7"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/e40a"
 msgid "E-40 Ausf.A"
-msgstr ""
+msgstr "E-40 Ausf.A"
 
 msgctxt "info/special/e40a"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e75"
 msgid "E-75"
-msgstr ""
+msgstr "E-75"
 
 msgctxt "info/special/e75"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e90"
 msgid "E-90"
-msgstr ""
+msgstr "E-90"
 
 msgctxt "info/special/e90"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e90_ace"
 msgid "E-90 ACE"
-msgstr ""
+msgstr "E-90 ACE"
 
 msgctxt "info/special/e90_ace"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e200_robztest"
 msgid "E-200"
-msgstr ""
+msgstr "E-200"
 
 msgctxt "info/special/e200_robztest"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/e100_v1_robz"
 msgid "E-100 V-1"
-msgstr ""
+msgstr "E-100 V-1"
 
 msgctxt "info/special/e100_v1_robz"
 msgid "<c(c3baae)>Super Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>초중전차</c>"
 
 msgctxt "desc/entity/e100_waffentrager_robz"
 msgid "E-100 Waffenträger"
-msgstr ""
+msgstr "E-100 Waffenträger"
 
 msgctxt "info/special/e100_waffentrager_robz"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/vk3001d"
 msgid "VK 30.01 (D)"
-msgstr ""
+msgstr "VK 30.01 (D)"
 
 msgctxt "info/special/vk3001d"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/vk72_robztest"
 msgid "VK 72.01 (K)"
-msgstr ""
+msgstr "VK 72.01 (K)"
 
 msgctxt "info/special/vk72_robztest"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/kugelblitz"
 msgid "Kugelblitz"
-msgstr ""
+msgstr "Kugelblitz"
 
 msgctxt "info/special/kugelblitz"
 msgid "<c(c3baae)>AA Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>대공 전차</c>"
 
 msgctxt "desc/entity/rhmb_wt"
 msgid "Rheinmetall Borsig WT"
-msgstr ""
+msgstr "Rheinmetall Borsig WT"
 
 msgctxt "info/special/rhmb_wt"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/v1"
 msgid "Fieseler Fi 103 (V-1)"
-msgstr ""
+msgstr "Fieseler Fi 103 (V-1)"
 
 msgctxt "info/special/v1"
 msgid "<c(c3baae)>Rocket</c>"
-msgstr ""
+msgstr "<c(c3baae)>로켓</c>"
 
 msgctxt "desc/entity/v2_a4"
 msgid "Aggregat-4 (V-2)"
-msgstr ""
+msgstr "Aggregat-4 (V-2)"
 
 msgctxt "info/special/v2_a4"
 msgid "<c(c3baae)>Ballistic Missile</c>"
-msgstr ""
+msgstr "<c(c3baae)>탄도 미사일</c>"
 
 msgctxt "desc/entity/e50gt"
 msgid "E-50 GT"
-msgstr ""
+msgstr "E-50 GT"
 
 msgctxt "info/special/e50gt"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e-50_75l100"
 msgid "E-50 7.5cm L/100"
-msgstr ""
+msgstr "E-50 7.5cm L/100"
 
 msgctxt "info/special/e-50_75l100"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e-50_105l68"
 msgid "E-50 10.5cm L/68"
-msgstr ""
+msgstr "E-50 10.5cm L/68"
 
 msgctxt "info/special/e-50_105l68"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e-50_105l73"
 msgid "E-50 10.5cm L/73"
-msgstr ""
+msgstr "E-50 10.5cm L/73"
 
 msgctxt "info/special/e-50_105l73"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e-75_88l71"
 msgid "E-75 8.8cm L/71"
-msgstr ""
+msgstr "E-75 8.8cm L/71"
 
 msgctxt "info/special/e-75_88l71"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-75_88l100"
 msgid "E-75 8.8cm L/100"
-msgstr ""
+msgstr "E-75 8.8cm L/100"
 
 msgctxt "info/special/e-75_88l100"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-75_105l68"
 msgid "E-75 10.5cm L/68"
-msgstr ""
+msgstr "E-75 10.5cm L/68"
 
 msgctxt "info/special/e-75_105l68"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-75_105l73"
 msgid "E-75 10.5cm L/73"
-msgstr ""
+msgstr "E-75 10.5cm L/73"
 
 msgctxt "info/special/e-75_105l73"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-75_early"
 msgid "E-75 Early"
-msgstr ""
+msgstr "E-75 초기형"
 
 msgctxt "info/special/e-75_early"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-75_sturm"
 msgid "E-75 Sturm"
-msgstr ""
+msgstr "E-75 Sturm"
 
 msgctxt "info/special/e-75_sturm"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/e-75_ts"
 msgid "E-75 TS(Standard Type)"
-msgstr ""
+msgstr "E-75 TS(표준형)"
 
 msgctxt "info/special/e-75_ts"
 msgid "<c(c3baae)>Heavy Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중전차</c>"
 
 msgctxt "desc/entity/jagdpz_e-50"
 msgid "Jagdpanzer E-50"
-msgstr ""
+msgstr "Jagdpanzer E-50"
 
 msgctxt "info/special/jagdpz_e-50"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/jagdpz_e-50_early"
 msgid "Jagdpanzer E-50 Early"
-msgstr ""
+msgstr "Jagdpanzer E-50 초기형"
 
 msgctxt "info/special/jagdpz_e-50_early"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/jagdpz_e-75"
 msgid "Jagdpanzer E-75"
-msgstr ""
+msgstr "Jagdpanzer E-75"
 
 msgctxt "info/special/jagdpz_e-75"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/jagdpz_e-75_sturm"
 msgid "Jagdpanzer E-75 Sturm"
-msgstr ""
+msgstr "Jagdpanzer E-75 Sturm"
 
 msgctxt "info/special/jagdpz_e-75_sturm"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/e65"
 msgid "E-65"
-msgstr ""
+msgstr "E-65"
 
 msgctxt "desc/entity/e77"
 msgid "E-77"
-msgstr ""
+msgstr "E-77"
 
 msgctxt "info/special/e65"
 msgid "<c(c3baae)>Medium Tank</c>"
-msgstr ""
+msgstr "<c(c3baae)>중형 전차</c>"
 
 msgctxt "desc/entity/e90pz"
 msgid "Jagdpanzer E-90"
-msgstr ""
+msgstr "Jagdpanzer E-90"
 
 msgctxt "info/special/e90pz"
 msgid "<c(c3baae)>Tank Destroyer</c>"
-msgstr ""
+msgstr "<c(c3baae)>구축전차</c>"
 
 msgctxt "desc/entity/flakmaus"
 msgid "Flakpanzer VIII 'Maus'"
-msgstr ""
+msgstr "Flakpanzer VIII 'Maus'"
 
 msgctxt "desc/entity/gwe100"
 msgid "G.W. E-100 II"
-msgstr ""
+msgstr "G.W. E-100 II"
 
 msgctxt "desc/entity/krv"
 msgid "KRV"
-msgstr ""
+msgstr "KRV"
 
 msgctxt "desc/entity/mausking"
 msgid "Mausking"
-msgstr ""
+msgstr "Mausking"
 
 msgctxt "desc/entity/sge100"
 msgid "StuG E-100"
-msgstr ""
+msgstr "StuG E-100"
 
 msgctxt "desc/entity/taschenratte"
 msgid "Taschenratte"
-msgstr ""
+msgstr "Taschenratte"
 
 msgctxt "desc/entity/tigermaus"
 msgid "Tiger-Maus"
-msgstr ""
+msgstr "Tiger-Maus"
 
 msgctxt "desc/entity/jpze100_2"
 msgid "Jagdpanzer E-100 II"
-msgstr ""
+msgstr "Jagdpanzer E-100 II"
 
 msgctxt "desc/entity/gw_tiger"
 msgid "G.W. Tiger"
-msgstr ""
+msgstr "G.W. Tiger"
 
 msgctxt "desc/entity/lownn"
 msgid "Pz.Kpfw VII 'Löwe' N"
-msgstr ""
+msgstr "Pz.Kpfw VII 'Löwe' N"
 
 msgctxt "desc/entity/o-ho"
 msgid "O-Ho"
-msgstr ""
+msgstr "O-Ho"
 
 msgctxt "desc/entity/o_ni_2"
 msgid "O-Ni"
-msgstr ""
+msgstr "O-Ni"
 
 msgctxt "desc/entity/type_5_heavy"
 msgid "Type 5 Heavy (late)"
-msgstr ""
+msgstr "Type 5 Heavy (후기형)"
 
 msgctxt "desc/entity/kampfpanzer_67"
 msgid "Kampfpanzer 67"
-msgstr ""
+msgstr "Kampfpanzer 67"
 
 msgctxt "desc/entity/maus_desert"
 msgid "Maus (Desert)"
-msgstr ""
+msgstr "Maus (사막)"
 
 msgctxt "desc/entity/panther_2"
 msgid "Pz.Kpfw II (8.8cm KwK 43 L/71)"
-msgstr ""
+msgstr "Pz.Kpfw II (8.8cm KwK 43 L/71)"
 
 msgctxt "desc/entity/type91"
 msgid "Type 91"
-msgstr ""
+msgstr "Type 91"
 
 msgctxt "desc/entity/ho_ru"
 msgid "Ho-Ru"
-msgstr ""
+msgstr "Ho-Ru"
 
 msgctxt "desc/entity/ke_to"
 msgid "Type 2 Ke-To"
-msgstr ""
+msgstr "Type 2 Ke-To"
 
 msgctxt "desc/entity/ki_to"
 msgid "Ki-To"
-msgstr ""
+msgstr "Ki-To"
 
 msgctxt "desc/entity/chi_ni"
 msgid "Chi-Ni"
-msgstr ""
+msgstr "Chi-Ni"
 
 msgctxt "desc/entity/zhane"
 msgid "Coccodrillo"
-msgstr ""
+msgstr "Coccodrillo"
 
 msgctxt "desc/entity/tiger_h_west"
 msgid "Pz.Kpfw VI Tiger Ausf.H West Front"
-msgstr ""
+msgstr "Pz.Kpfw VI Tiger Ausf.H 서부 전선"
 
 msgctxt "desc/entity/tiger_h_east"
 msgid "Pz.Kpfw VI Tiger Ausf.H East Front"
-msgstr ""
+msgstr "Pz.Kpfw VI Tiger Ausf.H 동부 전선"
 
 msgctxt "desc/entity/xiniu"
 msgid "Rinoceronte"
-msgstr ""
+msgstr "Rinoceronte"
 
 msgctxt "desc/entity/neu"
 msgid "Pz.Kpfw Neu"
-msgstr ""
+msgstr "Pz.Kpfw Neu"
 
 msgctxt "desc/entity/hori_shugo"
 msgid "Type 5 “Shu-Go”"
-msgstr ""
+msgstr "Type 5 “Shu-Go”"
 
 msgctxt "desc/entity/obj268_c"
 msgid "Object 268 'St. John 's Wort' Type C"
-msgstr ""
+msgstr "Object 268 'St. John 's Wort' Type C"
 
 msgctxt "desc/entity/vfw"
 msgid "VFW"
-msgstr ""
+msgstr "VFW"
 
 msgctxt "desc/entity/ke_ho"
 msgid "Type 5 Ke-Ho"
-msgstr ""
+msgstr "Type 5 Ke-Ho"

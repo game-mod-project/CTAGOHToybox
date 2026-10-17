@@ -16,116 +16,116 @@ msgstr ""
 
 msgctxt "desc/human/p47_d22"
 msgid "Republic P-47D-22 Razorback"
-msgstr ""
+msgstr "Republic P-47D-22 Razorback"
 
 msgctxt "desc/human/p47_d22_recon"
 msgid "Republic P-47D-22 Razorback"
-msgstr ""
+msgstr "Republic P-47D-22 Razorback"
 
 msgctxt "desc/human/bf110_e2"
 msgid "Bf 110 E-2"
-msgstr ""
+msgstr "Bf 110 E-2"
 
 msgctxt "desc/human/bf109_g6"
 msgid "Bf 109 G-6"
-msgstr ""
+msgstr "Bf 109 G-6"
 
 msgctxt "desc/human/bf109_f4"
 msgid "Bf 109 F-4"
-msgstr ""
+msgstr "Bf 109 F-4"
 
 msgctxt "desc/human/blenheim_mk1"
 msgid "Blenheim Mk.1"
-msgstr ""
+msgstr "Blenheim Mk.1"
 
 msgctxt "desc/human/blenheim_mk1_recon"
 msgid "Blenheim Mk.1"
-msgstr ""
+msgstr "Blenheim Mk.1"
 
 msgctxt "desc/human/fi156"
 msgid "Fi-156"
-msgstr ""
+msgstr "Fi-156"
 
 msgctxt "desc/human/i16"
 msgid "Polikarpov I-16"
-msgstr ""
+msgstr "Polikarpov I-16"
 
 msgctxt "desc/human/il2_mod42"
 msgid "IL-2 M1942"
-msgstr ""
+msgstr "IL-2 M1942"
 
 msgctxt "desc/human/po2"
 msgid "U-2"
-msgstr ""
+msgstr "U-2"
 
 msgctxt "desc/human/yak1_ser69"
 msgid "Yak-1-69"
-msgstr ""
+msgstr "Yak-1-69"
 
 msgctxt "desc/human/narrator/assistant"
 msgid "Combat Advisor"
-msgstr ""
+msgstr "전투 조언자"
 
 msgctxt "desc/human/narrator/fin-officer"
 msgid "Kapteeni"
-msgstr ""
+msgstr "Kapteeni"
 
 msgctxt "desc/human/narrator/fin-sniper"
 msgid "Simo Häyhä"
-msgstr ""
+msgstr "시모 해위해"
 
 msgctxt "desc/human/narrator/fin-soldier"
 msgid "Soldier"
-msgstr ""
+msgstr "병사"
 
 msgctxt "desc/human/narrator/ger-Officer"
 msgid "Hauptmann"
-msgstr ""
+msgstr "Hauptmann"
 
 msgctxt "desc/human/narrator/ger-gebirgsjaeger"
 msgid "Gebirgsjäger"
-msgstr ""
+msgstr "게비르크스예거"
 
 msgctxt "desc/human/narrator/ger-player"
 msgid "Player"
-msgstr ""
+msgstr "플레이어"
 
 msgctxt "desc/human/narrator/ger-soldier"
 msgid "Soldier"
-msgstr ""
+msgstr "병사"
 
 msgctxt "desc/human/narrator/ger-tanker"
 msgid "Tankman"
-msgstr ""
+msgstr "전차병"
 
 msgctxt "desc/human/narrator/hint"
 msgid "Hint"
-msgstr ""
+msgstr "힌트"
 
 msgctxt "desc/human/narrator/rus-chuikov"
 msgid "Vasily Chuikov"
-msgstr ""
+msgstr "바실리 추이코프"
 
 msgctxt "desc/human/narrator/rus-commissar"
 msgid "Comissar"
-msgstr ""
+msgstr "정치위원"
 
 msgctxt "desc/human/narrator/rus-partisan"
 msgid "Partisan"
-msgstr ""
+msgstr "파르티잔"
 
 msgctxt "desc/human/narrator/rus-player"
 msgid "Player"
-msgstr ""
+msgstr "플레이어"
 
 msgctxt "desc/human/narrator/rus-radioman"
 msgid "Radioman"
-msgstr ""
+msgstr "무전병"
 
 msgctxt "desc/human/narrator/rus-soldier"
 msgid "Soldier"
-msgstr ""
+msgstr "병사"
 
 msgctxt "desc/human/narrator/rus-winter"
 msgid "Special Ops Soldier"
-msgstr ""
+msgstr "특수부대 병사"

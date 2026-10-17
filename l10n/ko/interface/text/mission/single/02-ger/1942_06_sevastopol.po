@@ -15,148 +15,148 @@ msgstr ""
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/date"
 msgid "June 17th, 1942 · Sevastopol, Crimea"
-msgstr ""
+msgstr "1942년 6월 17일 · 크림 반도 세바스토폴"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/mission_option_select1"
 msgid "Select your Doctrine for the mission:"
-msgstr ""
+msgstr "임무에 쓸 교리를 선택하라:"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_all_round"
 msgid "All-Round, 213th Infantry Regiment"
-msgstr ""
+msgstr "전방위, 제213 보병 연대"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_challenge"
 msgid "Challenge! Sturmpioniere or death!"
-msgstr ""
+msgstr "도전! 슈투름피오니어가 아니면 죽음을!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_offensive"
 msgid "Offensive, 173rd Engineer Battalion"
-msgstr ""
+msgstr "공세, 제173 공병 대대"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/lose"
 msgid "You lost all your troops!"
-msgstr ""
+msgstr "모든 병력을 잃었다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/name"
 msgid "The Siege of Sevastopol <c(a655af)>[DLC]</c>"
-msgstr ""
+msgstr "세바스토폴 공방전 <c(a655af)>[DLC]</c>"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/name_big"
 msgid "The Siege of Sevastopol"
-msgstr ""
+msgstr "세바스토폴 공방전"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/01"
 msgid "Soldaten! Listen up!! We have succeeded in crossing the Belbek river and establishing a small bridgehead. But the hardest part is still to come..."
-msgstr ""
+msgstr "병사들! 잘 들어라!! 우리는 벨베크 강을 건너 작은 교두보를 확보하는 데 성공했다. 하지만 가장 어려운 부분은 아직 남았다..."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/02"
 msgid "We need to break into the main valley positions and clear a way through the minefield for our main force of attack. Only then can we attack haccius ridge, which is our main objective today. "
-msgstr ""
+msgstr "주 계곡 진지로 뚫고 들어가 주력 공격 부대가 지나갈 지뢰밭 통로를 열어야 한다. 그래야 오늘의 주 목표인 하치우스 능선을 공격할 수 있다."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/03"
 msgid "We need to start by advancing eastward and clearing several strongpoints. Los geht's!!"
-msgstr ""
+msgstr "먼저 동쪽으로 전진하며 거점 몇 곳을 소탕해야 한다. 가자!!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/04"
 msgid "We now control the Belbek valley and can start our attack on coastal battery 30."
-msgstr ""
+msgstr "이제 벨베크 계곡을 장악했으니 해안 포대 30번에 대한 공격을 시작할 수 있다."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/05"
 msgid "We are all set for the attack. We can start off with a frontal attack to take the main battery, or we can try to attack one or more flanks to begin with. It is your choice, Herr Leutnant."
-msgstr ""
+msgstr "공격 준비가 끝났다. 정면 공격으로 주 포대를 점령하거나, 먼저 한쪽 이상의 측면을 공격할 수도 있다. 선택은 그대에게 달렸다, Herr Leutnant."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/06"
 msgid "Look out for secondary minefields and AT positions. They may prove dangerous for our advance, be on the loukout for any soviet counter attack as well, the enemy is not going to give up the ridge without a fight..."
-msgstr ""
+msgstr "이차 지뢰밭과 대전차 진지를 조심해라. 우리 진격에 위험할 수 있다. 소련군의 반격도 경계해라. 적은 싸우지 않고 능선을 내주지 않을 것이다..."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/07"
 msgid "I am placing under your command our Thor siege mortar. Show those soviets what it means to be under the yoke of the Wehrmacht's heaviest artillery! It will require a whole detachment of resupply vehicles to keep it in operation!"
-msgstr ""
+msgstr "Thor 공성 박격포를 그대의 지휘 아래 둔다. 소련군에게 베어마흐트 최중량 포병의 멍에 아래 놓인다는 게 무슨 뜻인지 보여 줘라! 운용을 유지하려면 보급 차량 한 분견대가 통째로 필요하다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/08"
 msgid "With the additional reinforcements, I expect you to break through the soviet defences and reach the battery. High command will expect no further delays. Annihilate the enemy!"
-msgstr ""
+msgstr "추가 증원으로 소련군 방어를 돌파해 포대에 도달하길 기대한다. 최고사령부는 더는 지체를 용납하지 않을 것이다. 적을 섬멸하라!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/09"
 msgid "The enemy has also deployed marines from the Black Sea Fleet to reinforce their lines. Beware! These are tough nuts to crack, you will need to throw everything you have at them!"
-msgstr ""
+msgstr "적은 전선을 보강하려고 흑해 함대 해병도 투입했다. 조심해라! 이들은 상대하기 힘든 강적이니 가진 것을 모두 쏟아부어야 한다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/10"
 msgid "Well done, Soldaten! "
-msgstr ""
+msgstr "잘했다, 병사들!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/11"
 msgid "Good work, keep pushing!"
-msgstr ""
+msgstr "잘했다, 계속 밀어붙여라!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/12"
 msgid "Excellent! Keep up the progress, there is much left to do!"
-msgstr ""
+msgstr "훌륭하다! 이 기세를 이어가라, 할 일이 많이 남았다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/13"
 msgid "The enemy battery has at last ceased to be. An accomplishment that will live long in our future generation's history books, Soldaten!"
-msgstr ""
+msgstr "적 포대가 마침내 사라졌다. 후대의 역사책에 오래 남을 업적이다, 병사들!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/14"
 msgid "Excellent work! The control of this route is of upmost importance, this will stop soviets from being able to get in or out of the battery complex."
-msgstr ""
+msgstr "훌륭하다! 이 길의 통제는 극히 중요하다. 소련군이 포대 단지에 드나드는 것을 막을 수 있다."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/15"
 msgid "Good work, the eastern high ground is ours!"
-msgstr ""
+msgstr "잘했다, 동쪽 고지는 우리 것이다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/16"
 msgid "The minefields have been cleared! Our forces can now safely cross through the northern approaches."
-msgstr ""
+msgstr "지뢰밭이 소탕되었다! 이제 아군이 북쪽 접근로를 안전하게 통과할 수 있다."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/17"
 msgid "You are now tasked with clearing the minefields on the north. This will allow our reinforcements to come through."
-msgstr ""
+msgstr "이제 북쪽의 지뢰밭을 소탕하는 것이 그대의 임무다. 그래야 우리 증원 부대가 통과할 수 있다."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/outro_completed"
 msgid "Excellent work! The fort has been taken and the entire battery neutralized. The 11th army has its breach in the line and will march on Sevastopol immediately. We will file a favorable report to HQ about your victory at Fort Maksim Gorki! "
-msgstr ""
+msgstr "훌륭하다! 요새를 점령했고 포대 전체가 무력화되었다. 제11 군은 전선에 돌파구를 얻었으며 즉시 세바스토폴로 진군할 것이다. 막심 고리키 요새 승리에 대해 본부에 호의적인 보고를 올리겠다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/outro_failed"
 msgid "This is definitely not the kind of outcome we can report to HQ. Our troops were unable to break through, and the attack has come to a complete standstill as a result. You will have to try again after re- grouping, and perhaps using different tactics will help. "
-msgstr ""
+msgstr "이것은 본부에 보고할 만한 결과가 결코 아니다. 우리 부대는 돌파하지 못했고, 그 결과 공격이 완전히 멈췄다. 재편성한 뒤 다시 시도해야 하며, 다른 전술을 쓰면 도움이 될 수도 있다."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/place"
 msgid "213th Infantry Regiment, 173rd Engineer Battalion"
-msgstr ""
+msgstr "제213 보병 연대, 제173 공병 대대"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/story"
 msgid "The German 11th army is trying to take the last parts of the Crimea that are in Soviet hands. They have taken the Kerch peninsula and now they approach Sevastopol from all sides. The Germans meet stiff resistance from the Black Sea fleet and the 'Separate Coastal Army' under Ivan Yefimovich Petrov. The defenders have dug in everywhere, and they are backed by coastal batteries. Progress is slow, and heavy artillery is brought to the front in an attempt to destroy the defenses and punch through to the city proper.\n\nIn this mission, you will lead the attack on battery number 30, or 'Fort Maksim Gorki 1' as the Germans call it. You will have our heaviest siege mortar at your disposal, use it to silence the defenses. The battery's main guns are already out of action. Use your infantry to protect the left flank. Once you have taken out the first line of defense, storm the hilltop and take the fort. We can't allow any more delays in the offensive. It's up to you to make this work.\n\nGood luck!"
-msgstr ""
+msgstr "독일 제11 군은 소련 수중에 남은 크림 반도의 마지막 지역을 점령하려 한다. 케르치 반도를 점령했고 이제 사방에서 세바스토폴로 접근한다. 독일군은 흑해 함대와 이반 예피모비치 페트로프가 이끄는 '독립 연안군'의 완강한 저항에 부딪힌다. 방어군은 곳곳에 참호를 파고 해안 포대의 지원을 받는다. 진척은 더디며, 방어 시설을 파괴하고 시가지로 뚫고 들어가기 위해 중포가 전선에 투입된다.\n\n이번 임무에서 그대는 30번 포대, 독일군이 '막심 고리키 1 요새'라 부르는 곳에 대한 공격을 이끈다. 우리의 가장 큰 공성 박격포를 쓸 수 있으니 방어를 침묵시키는 데 써라. 포대의 주포는 이미 가동 불능이다. 보병으로 좌측면을 지켜라. 제1 방어선을 제거했으면 언덕 꼭대기를 급습해 요새를 점령하라. 공세는 더 이상 지체할 수 없다. 이 일을 성사시키는 것은 그대에게 달렸다.\n\n행운을 빈다!"
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task1"
 msgid "Clear all of the strongpoints at the first line of defences."
-msgstr ""
+msgstr "제1 방어선의 거점을 모두 소탕하라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task1_1"
 msgid "Clear Strongpoint \"Ostrov\"."
-msgstr ""
+msgstr "거점 \"오스트로프\"를 소탕하라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task1_2"
 msgid "Clear Strongpoint \"Chicken Farm\"."
-msgstr ""
+msgstr "거점 \"양계장\"을 소탕하라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task1_3"
 msgid "Clear Strongpoint \"Tomato Plant\"."
-msgstr ""
+msgstr "거점 \"토마토 공장\"을 소탕하라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task2"
 msgid "Clear a way through the minefield."
-msgstr ""
+msgstr "지뢰밭을 통과할 길을 열어라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task3"
 msgid "Clear Coastal Battery 30’s Main Battery block."
-msgstr ""
+msgstr "해안 포대 30번의 주포대 구역을 소탕하라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task4"
 msgid "Clear the Sophia Perovskoy State farm access road."
-msgstr ""
+msgstr "소피야 페롭스카야 국영 농장 진입로를 소탕하라."
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/task5"
 msgid "Clear the Bastion access road."
-msgstr ""
+msgstr "보루 진입로를 소탕하라."

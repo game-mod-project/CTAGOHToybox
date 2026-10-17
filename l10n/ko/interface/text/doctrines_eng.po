@@ -15,48 +15,48 @@ msgstr ""
 
 msgctxt "mp/lobby/doctrine/early_eng_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/early_eng_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/early_eng_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/early_eng_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/mid_eng_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/mid_eng_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/mid_eng_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/mid_eng_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"
 
 msgctxt "mp/lobby/doctrine/late_eng_defensive"
 msgid "Defensive"
-msgstr ""
+msgstr "방어"
 
 msgctxt "mp/lobby/doctrine/late_eng_irregular"
 msgid "Irregular"
-msgstr ""
+msgstr "비정규"
 
 msgctxt "mp/lobby/doctrine/late_eng_offensive"
 msgid "Offensive"
-msgstr ""
+msgstr "공격"
 
 msgctxt "mp/lobby/doctrine/late_eng_allround"
 msgid "All-Round"
-msgstr ""
+msgstr "만능"

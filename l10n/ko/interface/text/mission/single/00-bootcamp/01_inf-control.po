@@ -15,168 +15,168 @@ msgstr ""
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/complete"
 msgid "Congratulations, you have finished the first tutorial (basic infantry control)."
-msgstr ""
+msgstr "축하한다, 첫 번째 훈련(기초 보병 조작)을 마쳤다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/date"
 msgid "June 22nd, 1941 · Border with the USSR"
-msgstr ""
+msgstr "1941년 6월 22일 · 소련 국경"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/help"
 msgid "Re-watch steps"
-msgstr ""
+msgstr "단계 다시 보기"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/hint"
 msgid "Press this button to re-watch the video for this tutorial phase."
-msgstr ""
+msgstr "이 단추를 눌러 이 훈련 단계의 영상을 다시 본다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/name"
 msgid "Tutorial 1: Infantry Control"
-msgstr ""
+msgstr "훈련 1: 보병 조작"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/name_big"
 msgid "Infantry Control"
-msgstr ""
+msgstr "보병 조작"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/00"
 msgid "About time! Park the truck and unload!"
-msgstr ""
+msgstr "이제야 왔군! 트럭을 세우고 내려라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/01"
 msgid "Soldaten! Welcome to the \"Ostfront\"! You are now in the front line. If you want to remain in one piece, you will follow all my orders to the letter!"
-msgstr ""
+msgstr "병사들! "동부전선"에 온 것을 환영한다! 이제 제군은 최전선에 있다. 온전한 몸으로 남고 싶다면 내 명령을 하나도 빠짐없이 따라야 한다!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/02"
 msgid "The first thing you need to know as infantrymen, is to ALWAYS seek cover. In the open, you are vulnerable. Cover improves your survivability and your aim. Now, take cover behind the sandbags."
-msgstr ""
+msgstr "보병으로서 가장 먼저 알아야 할 것은 항상 엄폐물을 찾으라는 것이다. 탁 트인 곳에서는 취약하다. 엄폐물은 생존력과 명중률을 높여 준다. 자, 모래주머니 뒤로 엄폐하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/03"
 msgid "We seem to be clear... MG team 1, stay here. Everyone else, forward, take positions on the stone wall. Los gehts!"
-msgstr ""
+msgstr "이상 없는 것 같다... 기관총 1조는 여기 남아라. 나머지는 전진해서 돌담에 위치를 잡아라. 가자! (Los geht's!)"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/04"
 msgid "The Bolsheviks will be coming down that road any minute now. We will ambush them. Soldaten, get ready!"
-msgstr ""
+msgstr "볼셰비키 놈들이 곧 저 길로 내려올 것이다. 놈들을 매복 공격한다. 병사들, 준비하라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/05"
 msgid "Alright, I can see the Ivans! Hold your fire until they're in front of us."
-msgstr ""
+msgstr "좋아, 이반 놈들이 보인다! 놈들이 앞에 올 때까지 사격하지 마라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/06"
 msgid "Now, give them hell!"
-msgstr ""
+msgstr "자, 지옥을 보여 줘라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/07"
 msgid "Very good. You have achieved your first kills. The more kills you achieve, the higher your veterancy. You will improve your shooting and survival skills."
-msgstr ""
+msgstr "아주 좋다. 첫 사살을 올렸군. 사살이 늘수록 숙련도가 올라가고 사격과 생존 기술이 향상된다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/08"
 msgid "Our neighboring squad has found a pocket of resistance up ahead. There is an MG pinning our boys down. We are behind them! I need you to get close and throw a grenade on that MG nest."
-msgstr ""
+msgstr "옆 분대가 전방에서 저항 거점을 발견했다. 기관총이 우리 병력을 제압하고 있다. 우리는 놈들 뒤에 있다! 가까이 접근해서 저 기관총 둥지에 수류탄을 던져라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/09"
 msgid "Well done, men! Finish these Ivans off!"
-msgstr ""
+msgstr "잘했다, 제군! 이반 놈들을 마저 처치하라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/10"
 msgid "Look at that, the Ivans have unwillingly brought us a truck! Go and look if it has any weaponry we can loot!"
-msgstr ""
+msgstr "보라, 이반 놈들이 어쩌다 트럭을 갖다 바쳤군! 가서 노획할 무기가 있는지 확인해라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/11"
 msgid "Damn it! There's a soviet tank ambushing us from the other side of the farm! Get behind it and destroy it with the AT grenades that you have acquired."
-msgstr ""
+msgstr "젠장! 농장 반대편에서 소련 전차가 우리를 매복하고 있다! 뒤로 돌아가 입수한 대전차 수류탄으로 부숴라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/12"
 msgid "Good job! Blown to smithereens! Now finish off the remaining infantry!"
-msgstr ""
+msgstr "잘했다! 산산조각 났군! 이제 남은 보병을 마저 처치하라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/13"
 msgid "Enemy armored car coming down the road!"
-msgstr ""
+msgstr "적 장갑차가 길을 따라 내려온다!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/14"
 msgid "Fortunately, we are prepared for this. Take command of the AT rifleman, and turn that armored car into Swiss cheese!"
-msgstr ""
+msgstr "다행히 우리는 대비가 되어 있다. 대전차 소총수를 직접 조종해서 저 장갑차를 벌집으로 만들어라!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/ger_officer/15"
 msgid "Well done, men! You have completed my instructions to the letter. "
-msgstr ""
+msgstr "잘했다, 제군! 내 지시를 하나도 빠짐없이 완수했다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/01"
 msgid "Welcome to boot camp, Soldier. In this tutorial, you will learn how to control infantry, the most common and important type of unit on the battlefield."
-msgstr ""
+msgstr "신병 훈련소에 온 것을 환영한다, 병사. 이 훈련에서는 전장에서 가장 흔하고 중요한 유닛인 보병을 조작하는 법을 배운다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/01b"
 msgid "During a cutscene, you cannot control your units. Some cutscenes, like this one, can be skipped. To do so, press the \"continue\" button on the top-right corner."
-msgstr ""
+msgstr "연출 장면 중에는 유닛을 조작할 수 없다. 이 장면처럼 건너뛸 수 있는 연출도 있다. 건너뛰려면 오른쪽 위 구석의 "계속" 단추를 눌러라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/02"
 msgid "To move your soldier, select him and right-click on the destination. A double click will make him sprint until his stamina runs out. If you move your cursor close to objects, it will prompt the soldier to take cover, previewing a silhouette. Now, make your soldier take cover with the rest of the men."
-msgstr ""
+msgstr "병사를 이동시키려면 선택한 뒤 목적지를 오른쪽 클릭한다. 더블 클릭하면 체력이 다할 때까지 질주한다. 커서를 사물 가까이 가져가면 병사가 엄폐하도록 실루엣 미리보기가 뜬다. 이제 병사를 나머지 병력과 함께 엄폐시켜라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/03"
 msgid "Well done. You should always move your troops from one cover to the next. "
-msgstr ""
+msgstr "잘했다. 항상 엄폐물에서 엄폐물로 부대를 이동시켜야 한다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/04"
 msgid "Approach the MG nest carefully from behind. Move from one bush or cover to the next. A prone soldier will be harder to spot. When the MG nest is taken out, the rest of the squad will assist you in taking out the remaining Soviets."
-msgstr ""
+msgstr "기관총 둥지에 뒤쪽에서 조심스럽게 접근하라. 덤불이나 엄폐물에서 다음 엄폐물로 옮겨 가라. 엎드린 병사는 발견하기 더 어렵다. 기관총 둥지를 제거하면 나머지 분대가 남은 소련군을 처치하는 것을 돕는다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/05"
 msgid "Select your soldier, and press 'X' or click on the 'examine' icon. When you hover over the vehicle, the cursor will change to an eye. Transfer any AT grenades from the inventory of the truck to your soldier's inventory."
-msgstr ""
+msgstr "병사를 선택하고 'X'를 누르거나 '조사' 아이콘을 클릭하라. 차량 위에 커서를 올리면 눈 모양으로 바뀐다. 트럭 소지품의 대전차 수류탄을 병사의 소지품으로 옮겨라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/06"
 msgid "Infantry can move in any terrain, but vehicles, especially wheeled vehicles, must use roads to travel at maximum speed, which makes them easy to ambush."
-msgstr ""
+msgstr "보병은 어떤 지형에서도 움직일 수 있지만, 차량, 특히 바퀴 달린 차량은 최고 속도로 가려면 도로를 써야 해서 매복당하기 쉽다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/07"
 msgid "Buildings and other objects block the line of sight of units. You can see the enemy tank because other friendly units are actively fighting it. But no enemy unit is currently able to see your soldier. Because of this, you can easily flank the enemy tank without being detected."
-msgstr ""
+msgstr "건물과 다른 사물은 유닛의 시선을 가린다. 다른 아군 유닛이 적 전차와 교전 중이라 적 전차가 보이는 것이다. 하지만 지금 적 유닛 중 누구도 당신의 병사를 볼 수 없다. 그래서 들키지 않고 적 전차의 측면을 쉽게 돌 수 있다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/08"
 msgid "You must be aware of your mission objectives. You can always open your mission tasks with the hotkey \"O\"."
-msgstr ""
+msgstr "임무 목표를 항상 알고 있어야 한다. 단축키 "O"로 언제든 임무 과업을 열 수 있다."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/narrator/scene/09"
 msgid "Quite often, you will need to get rid of remaining enemies to proceed with the next stages of a mission. Keep an eye out for enemies who may be concealed in the \"fog of war\", for example, hiding in trenches."
-msgstr ""
+msgstr "임무의 다음 단계로 가려면 남은 적을 제거해야 하는 경우가 많다. 참호 안에 숨은 적처럼 "전장의 안개" 속에 가려진 적을 잘 살펴라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/outro_completed"
 msgid "Mission Accomplished!\n\nClick on 'continue' to keep playing this mission or click on 'next' to proceed directly into the next mission."
-msgstr ""
+msgstr "임무 완수!\n\n이 임무를 계속 하려면 '계속'을, 곧바로 다음 임무로 가려면 '다음'을 눌러라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/place"
 msgid "Army Group Centre"
-msgstr ""
+msgstr "중부집단군"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/story"
 msgid "Welcome to boot camp, Soldier.\n\nIn this tutorial, you will learn how to control infantry, the most common and important type of unit in the battlefield.\n\n                                        Good luck!"
-msgstr ""
+msgstr "신병 훈련소에 온 것을 환영한다, 병사.\n\n이 훈련에서는 전장에서 가장 흔하고 중요한 유닛인 보병을 조작하는 법을 배운다.\n\n                                        행운을 빈다!"
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task1"
 msgid "Take cover behind the sandbags."
-msgstr ""
+msgstr "모래주머니 뒤에 엄폐하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task2"
 msgid "Take cover behind the stone wall."
-msgstr ""
+msgstr "돌담 뒤에 엄폐하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task3"
 msgid "Eliminate the Soviet border patrol."
-msgstr ""
+msgstr "소련 국경 순찰대를 제거하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task4"
 msgid "Take out the MG nest with a grenade."
-msgstr ""
+msgstr "수류탄으로 기관총 둥지를 제거하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task5"
 msgid "Retrieve AT grenades from the Soviet truck."
-msgstr ""
+msgstr "소련 트럭에서 대전차 수류탄을 회수하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task6"
 msgid "Destroy the Soviet tank with the AT grenades."
-msgstr ""
+msgstr "대전차 수류탄으로 소련 전차를 파괴하라."
 
 msgctxt "mission/single/00-bootcamp/01_inf-control/task7"
 msgid "Eliminate the armored car with the AT rifle."
-msgstr ""
+msgstr "대전차 소총으로 장갑차를 제거하라."

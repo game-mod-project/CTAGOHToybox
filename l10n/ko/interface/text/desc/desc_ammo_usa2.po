@@ -15,216 +15,216 @@ msgstr ""
 
 msgctxt "desc/ammo/bulletusa_105x900 apbc"
 msgid "105mm Shot T32 [<c(ff6a00)>APBC</c>] <c(65696d)>L/67.5</c>"
-msgstr ""
+msgstr "105mm 탄 T32 [<c(ff6a00)>APBC</c>] <c(65696d)>L/67.5</c>"
 
 msgctxt "desc/ammo/bulletusa_105x900 he"
 msgid "105mm Shell T30E1 [<c(ff1200)>HE</c>] <c(65696d)>L/67.5</c>"
-msgstr ""
+msgstr "105mm 포탄 T30E1 [<c(ff1200)>HE</c>] <c(65696d)>L/67.5</c>"
 
 msgctxt "desc/ammo/bulletusa_105x900 hvap"
 msgid "105mm Shot T29E3 [<c(48c445)>HVAP</c>] <c(65696d)>L/67.5</c>"
-msgstr ""
+msgstr "105mm 탄 T29E3 [<c(48c445)>HVAP</c>] <c(65696d)>L/67.5</c>"
 
 msgctxt "desc/ammo/bulletusa_120x1200 apcbche"
 msgid "120mm Projectile T14E3 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm 탄 T14E3 [<c(ff6a00)>APCBC-HE</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletusa_120x1200 he"
 msgid "120mm Shell M73 [<c(ff1200)>HE</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm 포탄 M73 [<c(ff1200)>HE</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletusa_120x1200 hvap"
 msgid "120mm Shot T17E1 [<c(48c445)>HVAP</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "120mm 탄 T17E1 [<c(48c445)>HVAP</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletusa_120t57 apbc"
 msgid "120mm M358 [<c(ff6a00)>APBC</c>]"
-msgstr ""
+msgstr "120mm M358 [<c(ff6a00)>APBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_120t57 heat"
 msgid "120mm M469 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "120mm M469 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulletusa_120t57 he"
 msgid "120mm M356 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "120mm M356 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_240 he"
 msgid "240mm M114 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "240mm M114 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_105t29 he"
 msgid "105mm T30E1 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "105mm T30E1 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_105t29 apcbc"
 msgid "105mm T32 [<c(ff6a00)>APCBC</c>]"
-msgstr ""
+msgstr "105mm T32 [<c(ff6a00)>APCBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_105t29 apcr"
 msgid "105mm T29E3 [<c(48c445)>APCR</c>]"
-msgstr ""
+msgstr "105mm T29E3 [<c(48c445)>APCR</c>]"
 
 msgctxt "desc/ammo/bulletusa_152 he"
 msgid "152mm M657A2 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "152mm M657A2 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_152 heat"
 msgid "152mm M409A1 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "152mm M409A1 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 he"
 msgid "155mm M107 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "155mm M107 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 apcr"
 msgid "155mm M795 [<c(48c445)>APCR</c>]"
-msgstr ""
+msgstr "155mm M795 [<c(48c445)>APCR</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 apbc"
 msgid "155mm M112B1 [<c(ff6a00)>APBC</c>]"
-msgstr ""
+msgstr "155mm M112B1 [<c(ff6a00)>APBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 apcbc"
 msgid "155mm T29E1 [<c(ff6a00)>APCBC</c>]"
-msgstr ""
+msgstr "155mm T29E1 [<c(ff6a00)>APCBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x600 heat"
 msgid "90mm M348 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "90mm M348 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x600 apcbc"
 msgid "90mm M82 [<c(ff6a00)>APCBC</c>]"
-msgstr ""
+msgstr "90mm M82 [<c(ff6a00)>APCBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x600 apcr"
 msgid "90mm M332 [<c(48c445)>APCR</c>]"
-msgstr ""
+msgstr "90mm M332 [<c(48c445)>APCR</c>]"
 
 msgctxt "desc/ammo/127mm_hvar.he"
 msgid "127mm HVAR HE rocket"
-msgstr ""
+msgstr "127mm HVAR HE 로켓"
 
 msgctxt "desc/ammo/bulletusa_165 apcbc"
 msgid "165mm T112 [<c(ff6a00)>APCBC</c>]"
-msgstr ""
+msgstr "165mm T112 [<c(ff6a00)>APCBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_165 he"
 msgid "165mm M123 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "165mm M123 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 heat"
 msgid "155mm M410 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "155mm M410 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulleteng_114 aphe"
 msgid "114mm Mk 1T [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "114mm Mk 1T [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulleteng_114 ap"
 msgid "114mm Mk 1 [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "114mm Mk 1 [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/bulleteng_114 he2"
 msgid "114mm Mk 1D [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "114mm Mk 1D [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_114 apcbche"
 msgid "114mm M33 [<c(ff6a00)>APCBC-HE</c>]"
-msgstr ""
+msgstr "114mm M33 [<c(ff6a00)>APCBC-HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_114 he"
 msgid "114mm M65 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "114mm M65 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_114 hvap"
 msgid "114mm T29 [<c(48c445)>HVAP</c>]"
-msgstr ""
+msgstr "114mm T29 [<c(48c445)>HVAP</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x1270 apcbche"
 msgid "90mm T41 [<c(ff6a00)>APCBC-HE</c>]"
-msgstr ""
+msgstr "90mm T41 [<c(ff6a00)>APCBC-HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x1270 he"
 msgid "90mm T42 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "90mm T42 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x1270 hvap"
 msgid "90mm T44 [<c(48c445)>HVAP</c>]"
-msgstr ""
+msgstr "90mm T44 [<c(48c445)>HVAP</c>]"
 
 msgctxt "desc/ammo/bulleteng_20_auto box ap"
 msgid "20mm Shot Mk.1 [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "20mm 탄 Mk.1 [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/bulleteng_20_auto box hei"
 msgid "20mm Shell Mk.1Z [<c(ff1200)>HEI</c>]"
-msgstr ""
+msgstr "20mm 포탄 Mk.1Z [<c(ff1200)>HEI</c>]"
 
 msgctxt "desc/ammo/bulletusa_120 apcbche"
 msgid "120mm T14E3 [<c(ff6a00)>APCBC-HE</c>]"
-msgstr ""
+msgstr "120mm T14E3 [<c(ff6a00)>APCBC-HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_120 he"
 msgid "120mm M73 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "120mm M73 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletusa_120 hvap"
 msgid "120mm T17E1 [<c(48c445)>HVAP</c>]"
-msgstr ""
+msgstr "120mm T17E1 [<c(48c445)>HVAP</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 hesh"
 msgid "155mm T152E5 [<c(ff9900)>HESH</c>]"
-msgstr ""
+msgstr "155mm T152E5 [<c(ff9900)>HESH</c>]"
 
 msgctxt "desc/ammo/bulletusa_120 apbc"
 msgid "120mm M358 [<c(ff6a00)>APBC</c>]"
-msgstr ""
+msgstr "120mm M358 [<c(ff6a00)>APBC</c>]"
 
 msgctxt "desc/ammo/bulletusa_120 heat"
 msgid "120mm M469 [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "120mm M469 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulleteng_105 apds"
 msgid "105mm L28A1 [<c(48c445)>APDS</c>]"
-msgstr ""
+msgstr "105mm L28A1 [<c(48c445)>APDS</c>]"
 
 msgctxt "desc/ammo/bulleteng_105 he"
 msgid "105mm L35 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "105mm L35 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulleteng_105 sm"
 msgid "105mm L45 [<c(ffffff)>Smoke</c>]"
-msgstr ""
+msgstr "105mm L45 [<c(ffffff)>연막</c>]"
 
 msgctxt "desc/ammo/bulleteng_120 apds"
 msgid "120mm L1A1 [<c(48c445)>APDS</c>]"
-msgstr ""
+msgstr "120mm L1A1 [<c(48c445)>APDS</c>]"
 
 msgctxt "desc/ammo/bulleteng_120 he"
 msgid "120mm L31 [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "120mm L31 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulleteng_120 sm"
 msgid "120mm L34 [<c(ffffff)>Smoke</c>]"
-msgstr ""
+msgstr "120mm L34 [<c(ffffff)>연막</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x600 sm"
 msgid "90mm M313 [<c(ffffff)>Smoke</c>]"
-msgstr ""
+msgstr "90mm M313 [<c(ffffff)>연막</c>]"
 
 msgctxt "desc/ammo/bulleteng_120 sm"
 msgid "120mm L34 [<c(ffffff)>Smoke</c>]"
-msgstr ""
+msgstr "120mm L34 [<c(ffffff)>연막</c>]"
 
 msgctxt "desc/ammo/bulletusa_90x1270 sm"
 msgid "90mm T35 [<c(ffffff)>Smoke</c>]"
-msgstr ""
+msgstr "90mm T35 [<c(ffffff)>연막</c>]"
 
 msgctxt "desc/ammo/bulletusa_155 apcbche"
 msgid "155mm T29E1 [<c(ff6a00)>APCBC-HE</c>]"
-msgstr ""
+msgstr "155mm T29E1 [<c(ff6a00)>APCBC-HE</c>]"
 
 msgctxt "desc/ammo/hmgun2_usa.api"
 msgid ".50 cal API M8 Rounds"
-msgstr ""
+msgstr ".50 구경 API M8 탄"

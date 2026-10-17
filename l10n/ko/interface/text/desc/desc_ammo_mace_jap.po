@@ -15,663 +15,663 @@ msgstr ""
 
 msgctxt "desc/ammo/80mm_ijn_rocket"
 msgid "80mm S.C.R [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "80mm S.C.R [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/100mm_ijn_rocket"
 msgid "100mm S.C.R [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "100mm S.C.R [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/mortarjap_320 he"
 msgid "Type 98 320mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 98 320mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type_98_rocketbomb he"
 msgid "Type 98 Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 98 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/stuff/gas_canister"
 msgid "Gas Canister"
-msgstr ""
+msgstr "가스통"
 
 msgctxt "desc/ammo/mortarjap_50 he"
 msgid "Small Stick Bomb"
-msgstr ""
+msgstr "소형 막대 폭탄"
 
 msgctxt "desc/ammo/mortarjap_50 he2"
 msgid "Large Stick Bomb"
-msgstr ""
+msgstr "대형 막대 폭탄"
 
 msgctxt "desc/ammo/sc_jap_60"
 msgid "Type 97 Number 6 Navy Bomb 60Kg"
-msgstr ""
+msgstr "Type 97 Number 6 해군 폭탄 60Kg"
 
 msgctxt "desc/ammo/air_bomb_jap_60kg"
 msgid "Type 97 Number 6 Navy Bomb 60Kg"
-msgstr ""
+msgstr "Type 97 Number 6 해군 폭탄 60Kg"
 
 msgctxt "desc/ammo/air_bomb_jap_250kg"
 msgid "Type 98 Number 25 Navy Bomb 250Kg"
-msgstr ""
+msgstr "Type 98 Number 25 해군 폭탄 250Kg"
 
 msgctxt "desc/ammo/sc_jap_250"
 msgid "Type 98 Number 25 Navy Bomb 250Kg"
-msgstr ""
+msgstr "Type 98 Number 25 해군 폭탄 250Kg"
 
 msgctxt "desc/ammo/air_bomb_jap_500kg"
 msgid "Type Number 50 Model 2 Navy Bomb 500Kg"
-msgstr ""
+msgstr "Type Number 50 Model 2 해군 폭탄 500Kg"
 
 msgctxt "desc/ammo/sc_jap_500"
 msgid "Type Number 50 Model 2 Navy Bomb 500Kg"
-msgstr ""
+msgstr "Type Number 50 Model 2 해군 폭탄 500Kg"
 
 msgctxt "desc/ammo/air_bomb_jap_800kg"
 msgid "Number 80 Mod.1 Bomb Navy 800Kg"
-msgstr ""
+msgstr "Number 80 Mod.1 폭탄 해군 800Kg"
 
 msgctxt "desc/ammo/sc_jap_800"
 msgid "Number 80 Mod.1 Bomb Navy 800Kg"
-msgstr ""
+msgstr "Number 80 Mod.1 폭탄 해군 800Kg"
 
 msgctxt "desc/ammo/84kg_type_5"
 msgid "Type 3 No.6 Mod.27 Mk.1 Rocket"
-msgstr ""
+msgstr "Type 3 No.6 Mod.27 Mk.1 로켓"
 
 msgctxt "desc/ammo/bulletjap_37 aphe"
 msgid "Type 94 37mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 94 37mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_37 aphe2"
 msgid "Type 1 37mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 1 37mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_37 ap"
 msgid "Type 4 37mm [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "Type 4 37mm [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/bulletjap_37 wp"
 msgid "Type 5 37mm [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "Type 5 37mm [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/bulletjap_37 he"
 msgid "Type 1 37mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 1 37mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_37 he2"
 msgid "Type 94 37mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 94 37mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_47 he"
 msgid "Type 1 47mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 1 47mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_47 aphe"
 msgid "Type 1 47mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 1 47mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_47 ap"
 msgid "Type 4 47mm [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "Type 4 47mm [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/bulletjap_57 aphe"
 msgid "Type 92 57mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/18</c>"
-msgstr ""
+msgstr "Type 92 57mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/18</c>"
 
 msgctxt "desc/ammo/bulletjap_57 he"
 msgid "Type 90 57mm [<c(ff1200)>HE</c>] <c(65696d)>L/18</c>"
-msgstr ""
+msgstr "Type 90 57mm [<c(ff1200)>HE</c>] <c(65696d)>L/18</c>"
 
 msgctxt "desc/ammo/bulletjap_57 heat"
 msgid "Type 3 57mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/18</c>"
-msgstr ""
+msgstr "Type 3 57mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/18</c>"
 
 msgctxt "desc/ammo/bulletjap_70 he"
 msgid "Type 92 70mm [<c(ff1200)>HE</c>] <c(65696d)>L/10</c>"
-msgstr ""
+msgstr "Type 92 70mm [<c(ff1200)>HE</c>] <c(65696d)>L/10</c>"
 
 msgctxt "desc/ammo/bulletjap_70 aphe"
 msgid "Type 95 70mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/10</c>"
-msgstr ""
+msgstr "Type 95 70mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/10</c>"
 
 msgctxt "desc/ammo/bulletjap_70 heat"
 msgid "Type 3 70mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/10</c>"
-msgstr ""
+msgstr "Type 3 70mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/10</c>"
 
 msgctxt "desc/ammo/bulletjap_70_type94 he"
 msgid "Type 92 70mm [<c(ff1200)>HE</c>] <c(65696d)>L/14</c>"
-msgstr ""
+msgstr "Type 92 70mm [<c(ff1200)>HE</c>] <c(65696d)>L/14</c>"
 
 msgctxt "desc/ammo/bulletjap_70_type94 aphe"
 msgid "Type 95 70mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/14</c>"
-msgstr ""
+msgstr "Type 95 70mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/14</c>"
 
 msgctxt "desc/ammo/bulletjap_70_type94 heat"
 msgid "Type 3 70mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/14</c>"
-msgstr ""
+msgstr "Type 3 70mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/14</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l31 aphe"
 msgid "Type 95 75mm[<c(ff6a00)>APHE</c>] <c(65696d)>L/31</c>"
-msgstr ""
+msgstr "Type 95 75mm[<c(ff6a00)>APHE</c>] <c(65696d)>L/31</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l31 he"
 msgid "Type 90 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/31</c>"
-msgstr ""
+msgstr "Type 90 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/31</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l31 heat"
 msgid "Type 2 75mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/31</c>"
-msgstr ""
+msgstr "Type 2 75mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/31</c>"
 
 msgctxt "desc/ammo/bulletjapl31_75 aphebc"
 msgid "Fixed QF 75x294mm R [<c(ff6a00)>APHEBC</c>] <c(65696d)>L/31</c>"
-msgstr ""
+msgstr "Fixed QF 75x294mm R [<c(ff6a00)>APHEBC</c>] <c(65696d)>L/31</c>"
 
 msgctxt "desc/ammo/bulletjapl31_75 heat"
 msgid "Fixed QF 75x294mm R [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/31</c>"
-msgstr ""
+msgstr "Fixed QF 75x294mm R [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/31</c>"
 
 msgctxt "desc/ammo/bulletjapl31_75 he"
 msgid "Fixed QF 75x294mm R [<c(ff1200)>HE</c>] <c(65696d)>L/31</c>"
-msgstr ""
+msgstr "Fixed QF 75x294mm R [<c(ff1200)>HE</c>] <c(65696d)>L/31</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l18 aphe"
 msgid "Type 95 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/18</c>"
-msgstr ""
+msgstr "Type 95 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/18</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l18 he"
 msgid "Type 94 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/18</c>"
-msgstr ""
+msgstr "Type 94 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/18</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l18 heat"
 msgid "Type 2 75mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/18</c>"
-msgstr ""
+msgstr "Type 2 75mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/18</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l38 aphe"
 msgid "Type 1 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/38</c>"
-msgstr ""
+msgstr "Type 1 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/38</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l38 aphe2"
 msgid "Type 1 Toku Kou 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/38</c>"
-msgstr ""
+msgstr "Type 1 Toku Kou 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/38</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l38 he"
 msgid "Type 94 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/38</c>"
-msgstr ""
+msgstr "Type 94 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/38</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l38 he"
 msgid "Type 90 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/38</c>"
-msgstr ""
+msgstr "Type 90 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/38</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l43 aphe"
 msgid "Type 1 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 1 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l43 aphe2"
 msgid "Type 1 Toku Kou 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 1 Toku Kou 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l43 ap"
 msgid "Type 4 75mm [<c(ff6a00)>AP</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 4 75mm [<c(ff6a00)>AP</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l43 he"
 msgid "Type 94 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 94 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l56 aphe"
 msgid "Type 1 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 1 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l56 aphe2"
 msgid "Type 1 Toku Kou 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 1 Toku Kou 75mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l56 ap"
 msgid "Type 4 75mm [<c(ff6a00)>AP</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 4 75mm [<c(ff6a00)>AP</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_75_l56 he"
 msgid "Type 90 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/56</c>"
-msgstr ""
+msgstr "Type 90 75mm [<c(ff1200)>HE</c>] <c(65696d)>L/56</c>"
 
 msgctxt "desc/ammo/bulletjap_105_rg he"
 msgid "Shisei Perforated Case [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Shisei Perforated Case [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_105_rg heat"
 msgid "Shisei Perforated Case [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Shisei Perforated Case [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_105 aphe"
 msgid "Type 2 105mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 2 105mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105 ap"
 msgid "Type 4 105mm [<c(ff6a00)>AP</c>]"
-msgstr ""
+msgstr "Type 4 105mm [<c(ff6a00)>AP</c>]"
 
 msgctxt "desc/ammo/bulletjap_105 he"
 msgid "Type 4 105mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 4 105mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_l40 aphe"
 msgid "Type 95 105mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 95 105mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_l40 he"
 msgid "Type 91 105mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 91 105mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type91 heat"
 msgid "Type 3 105mm [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "Type 3 105mm [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type91 he"
 msgid "Type 91 105mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 91 105mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type91 he2"
 msgid "Type 91 Kai 105mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 91 Kai 105mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type91 wp"
 msgid "Type 91 105mm [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "Type 91 105mm [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type91 ic"
 msgid "Type 91 105mm [<c(c9a6ff)>IC</c>]"
-msgstr ""
+msgstr "Type 91 105mm [<c(c9a6ff)>IC</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type91 aphe"
 msgid "Type 95 105mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 95 105mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_105_type99 he"
 msgid "Type 99 105mm [<c(ff1200)>HE</c>] <c(65696d)>L/17</c>"
-msgstr ""
+msgstr "Type 99 105mm [<c(ff1200)>HE</c>] <c(65696d)>L/17</c>"
 
 msgctxt "desc/ammo/bulletjap_105_type99 aphe"
 msgid "Type 99 105mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/17</c>"
-msgstr ""
+msgstr "Type 99 105mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/17</c>"
 
 msgctxt "desc/ammo/bulletjap_120 aphe"
 msgid "Type 88 120mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 88 120mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_120 he"
 msgid "Type 38 120mm [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 38 120mm [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_120 heat"
 msgid "Type 2 120mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 2 120mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_120 ic"
 msgid "Type 1 120mm [<c(c9a6ff)>IC</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 1 120mm [<c(c9a6ff)>IC</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_120sc aphe"
 msgid "Schneider-Canet 120mm [<c(ff6a00)>SAP</c>] <c(65696d)>L/26</c>"
-msgstr ""
+msgstr "Schneider-Canet 120mm [<c(ff6a00)>SAP</c>] <c(65696d)>L/26</c>"
 
 msgctxt "desc/ammo/bulletjap_120sc he"
 msgid "Schneider-Canet 120mm [<c(ff1200)>HE</c>] <c(65696d)>L/26</c>"
-msgstr ""
+msgstr "Schneider-Canet 120mm [<c(ff1200)>HE</c>] <c(65696d)>L/26</c>"
 
 msgctxt "desc/ammo/bulletjap_120_long he"
 msgid "Ordinary Mod.1 [<c(ff1200)>HE</c>] <c(65696d)>L/46</c>"
-msgstr ""
+msgstr "Ordinary Mod.1 [<c(ff1200)>HE</c>] <c(65696d)>L/46</c>"
 
 msgctxt "desc/ammo/bulletjap_120_long aphe"
 msgid "C.P.(BF) [<c(ff6a00)>SAP</c>] <c(65696d)>L/46</c>"
-msgstr ""
+msgstr "C.P.(BF) [<c(ff6a00)>SAP</c>] <c(65696d)>L/46</c>"
 
 msgctxt "desc/ammo/bulletjap_150 aphe"
 msgid "Type 95 150mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 95 150mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_150 he"
 msgid "Type 92 150mm [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 92 150mm [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_150 wp"
 msgid "Type 13 150mm  [<c(FFFFFF)>WP</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 13 150mm  [<c(FFFFFF)>WP</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_150 ic"
 msgid "Type 87 150mm  [<c(c9a6ff)>IC</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 87 150mm  [<c(c9a6ff)>IC</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_150 heat"
 msgid "Type 2 150mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Type 2 150mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_150_type96 aphe"
 msgid "Type 95 150mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/23</c>"
-msgstr ""
+msgstr "Type 95 150mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/23</c>"
 
 msgctxt "desc/ammo/bulletjap_150_type96 he"
 msgid "Type 92 150mm [<c(ff1200)>HE</c>] <c(65696d)>L/23</c>"
-msgstr ""
+msgstr "Type 92 150mm [<c(ff1200)>HE</c>] <c(65696d)>L/23</c>"
 
 msgctxt "desc/ammo/bulletjap_150_type96 heat"
 msgid "Type 4 150mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/23</c>"
-msgstr ""
+msgstr "Type 4 150mm [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/23</c>"
 
 msgctxt "desc/ammo/bulletjap_150_type96 wp"
 msgid "Type 13 150mm  [<c(FFFFFF)>WP</c>] <c(65696d)>L/23</c>"
-msgstr ""
+msgstr "Type 13 150mm  [<c(FFFFFF)>WP</c>] <c(65696d)>L/23</c>"
 
 msgctxt "desc/ammo/bulletjap_150_type96 ic"
 msgid "Type 87 150mm  [<c(c9a6ff)>IC</c>] <c(65696d)>L/23</c>"
-msgstr ""
+msgstr "Type 87 150mm  [<c(c9a6ff)>IC</c>] <c(65696d)>L/23</c>"
 
 msgctxt "desc/ammo/bulletjap_20_auto aphe"
 msgid "20x142mm Magazine [<c(ff6a00)>APHE</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "20x142mm 탄창 [<c(ff6a00)>APHE</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bulletjap_20_auto he"
 msgid "20x142mm Magazine [<c(ff1200)>HE-I</c>] <c(65696d)>L/70</c>"
-msgstr ""
+msgstr "20x142mm 탄창 [<c(ff1200)>HE-I</c>] <c(65696d)>L/70</c>"
 
 msgctxt "desc/ammo/bulletjap_25_auto aphe"
 msgid "25x163mm Magazine [<c(ff6a00)>AP</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "25x163mm 탄창 [<c(ff6a00)>AP</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bulletjap_25_auto he"
 msgid "25x163mm Magazine [<c(ff1200)>HE-I</c>] <c(65696d)>L/60</c>"
-msgstr ""
+msgstr "25x163mm 탄창 [<c(ff1200)>HE-I</c>] <c(65696d)>L/60</c>"
 
 msgctxt "desc/ammo/bullet_30_auto aphe"
 msgid "30mm Shell [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "30mm 포탄 [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/bulletjap_120_ass he"
 msgid "Short Ordinary [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Short Ordinary [<c(ff1200)>HE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_120_ass aphe"
 msgid "Short Ordinary [<c(ff6a00)>APHE</c>] <c(65696d)>L/11</c>"
-msgstr ""
+msgstr "Short Ordinary [<c(ff6a00)>APHE</c>] <c(65696d)>L/11</c>"
 
 msgctxt "desc/ammo/bulletjap_150_l40 he"
 msgid "Type 89 150mm [<c(ff1200)>HE</c>] <c(65696d)>L/40</c>"
-msgstr ""
+msgstr "Type 89 150mm [<c(ff1200)>HE</c>] <c(65696d)>L/40</c>"
 
 msgctxt "desc/ammo/bulletjap_150_l40 aphe"
 msgid "Type 89 150mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/40</c>"
-msgstr ""
+msgstr "Type 89 150mm [<c(ff6a00)>APHE</c>] <c(65696d)>L/40</c>"
 
 msgctxt "desc/ammo/bulletjap_20 he"
 msgid "Type 97 20x125mm Magazine [<c(ff1200)>HE</c>] <c(65696d)>L/53</c>"
-msgstr ""
+msgstr "Type 97 20x125mm 탄창 [<c(ff1200)>HE</c>] <c(65696d)>L/53</c>"
 
 msgctxt "desc/ammo/bulletjap_20 ap"
 msgid "Type 97 20x125mm Magazine [<c(ff6a00)>AP</c>] <c(65696d)>L/53</c>"
-msgstr ""
+msgstr "Type 97 20x125mm 탄창 [<c(ff6a00)>AP</c>] <c(65696d)>L/53</c>"
 
 msgctxt "desc/ammo/bulletjap_20 heat"
 msgid "Type 97 20x125mm Shell [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/53</c>"
-msgstr ""
+msgstr "Type 97 20x125mm 포탄 [<c(c9a6ff)>HEAT</c>] <c(65696d)>L/53</c>"
 
 msgctxt "desc/ammo/hotchkiss_37mm he"
 msgid "37mm Hotchkiss Shell [<c(ff1200)>HE</c>] <c(65696d)>L/20</c>"
-msgstr ""
+msgstr "37mm Hotchkiss 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/20</c>"
 
 msgctxt "desc/ammo/hotchkiss_37mm aphe"
 msgid "37mm Hotchkiss Shell [<c(ff6a00)>APHE</c>] <c(65696d)>L/20</c>"
-msgstr ""
+msgstr "37mm Hotchkiss 포탄 [<c(ff6a00)>APHE</c>] <c(65696d)>L/20</c>"
 
 # Rockets
 msgctxt "desc/ammo/150mm_tarenso"
 msgid "150mm Tarenso Rockets [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "150mm Tarenso 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/45cm_naval_rocket"
 msgid "450mm Naval Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "450mm 해군 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/ki_148_rocket"
 msgid "Ki-148 I-Gо̄ Model 1 Otsu Guided Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Ki-148 I-Gо̄ Model 1 Otsu 유도 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type_3_rocket he"
 msgid "Type 3 Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 3 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type_3_rocket he2"
 msgid "Type 10 Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 10 로켓 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/20cm_rocket_mortar he"
 msgid "Type 4 Mortar Rocket [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 4 박격포 로켓 [<c(ff1200)>HE</c>]"
 
 # mortars
 msgctxt "desc/ammo/type_89_mortar_shell ic"
 msgid "Type 89 Mortar Grenade [<c(c9a6ff)>IC</c>]"
-msgstr ""
+msgstr "Type 89 박격포탄 [<c(c9a6ff)>IC</c>]"
 
 msgctxt "desc/ammo/type_89_mortar_shell wp"
 msgid "Type 11 Smoke Grenade [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "Type 11 연막 수류탄 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/type_89_mortar_shell he"
 msgid "Type 89 Mortar Grenade [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 89 박격포탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type_89_mortar_shell he2"
 msgid "Type 91 Grenade [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 91 수류탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type_89_mortar_shell he3"
 msgid "Type 10 Grenade [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 10 수류탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type_89_mortar_shell sm"
 msgid "Type 89 Mortar Grenade [Smoke]"
-msgstr ""
+msgstr "Type 89 박격포탄 [연막]"
 
 msgctxt "desc/ammo/mortarjap_70 he"
 msgid "Type 11 70mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 11 70mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_81 he"
 msgid "Type 98 81mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 98 81mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_81 he2"
 msgid "Type 100 81mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 100 81mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_90 he"
 msgid "Type 94 90mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 94 90mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_90 he2"
 msgid "Type 2 90mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 2 90mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_90 wp"
 msgid "Type 94 90mm [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "Type 94 90mm [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/mortarjap_90 ic"
 msgid "Type 94 90mm [<c(c9a6ff)>IC</c>]"
-msgstr ""
+msgstr "Type 94 90mm [<c(c9a6ff)>IC</c>]"
 
 msgctxt "desc/ammo/mortarjap_120 he"
 msgid "Type 2 120mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 2 120mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_120 he2"
 msgid "Type 2 120mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 2 120mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/mortarjap_120 ap"
 msgid "Type 2 120mm [<c(ff6a00)>APHE</c>]"
-msgstr ""
+msgstr "Type 2 120mm [<c(ff6a00)>APHE</c>]"
 
 msgctxt "desc/ammo/mortarjap_150 he"
 msgid "Type 97 150mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 97 150mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/bulletjap300 he"
 msgid "Type 3 300mm [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 3 300mm [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/flare_jap artillery_460"
 msgid "Artillery Flares (460mm Yamato Shells) [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "포병 조명탄 (460mm 야마토 포탄) [<c(ff1200)>HE</c>]"
 
 # equipment
 msgctxt "desc/ammo/type99_grenade he"
 msgid "Type 99 Grenade [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 99 수류탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type99_grenade_3 he"
 msgid "Type 3 Grenade [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 3 수류탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type99_grenade_91 he"
 msgid "Type 91 Grenade [<c(ff1200)>HE</c>]"
-msgstr ""
+msgstr "Type 91 수류탄 [<c(ff1200)>HE</c>]"
 
 msgctxt "desc/ammo/type99_grenade_3 wp"
 msgid "Type 3 Grenade [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "Type 3 수류탄 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/type99_grenade_91 wp"
 msgid "Type 91 Grenade [<c(FFFFFF)>WP</c>]"
-msgstr ""
+msgstr "Type 91 수류탄 [<c(FFFFFF)>WP</c>]"
 
 msgctxt "desc/ammo/type2_grenade heata"
 msgid "30mm Type 2 Grenade (A) [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "30mm Type 2 수류탄 (A) [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/type2_grenade heatb"
 msgid "40mm Type 2 Grenade (B) [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "40mm Type 2 수류탄 (B) [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/stuff/dutch_mushroom mine"
 msgid "Anti-Tank Dutch Mushroom Mine"
-msgstr ""
+msgstr "대전차 더치 머시룸 지뢰"
 
 msgctxt "desc/stuff/yardstick mine"
 msgid "Anti-Tank Yard Stick Mine"
-msgstr ""
+msgstr "대전차 야드스틱 지뢰"
 
 msgctxt "desc/stuff/bomb mine"
 msgid "Anti-Tank Type 98 No.25 Bomb Mine"
-msgstr ""
+msgstr "대전차 Type 98 No.25 폭탄 지뢰"
 
 msgctxt "desc/stuff/type_96 mine"
 msgid "Anti-Boat Type 96 Mine"
-msgstr ""
+msgstr "대선박 Type 96 지뢰"
 
 msgctxt "desc/stuff/type93_ap mine"
 msgid "Anti-Personnel Type 93 Mine"
-msgstr ""
+msgstr "대인 Type 93 지뢰"
 
 msgctxt "desc/stuff/type93 mine"
 msgid "Anti-Tank Type 93 Mine"
-msgstr ""
+msgstr "대전차 Type 93 지뢰"
 
 msgctxt "desc/stuff/beehive mine"
 msgid "Anti-Personnel Beehive Mine"
-msgstr ""
+msgstr "대인 벌집 지뢰"
 
 msgctxt "desc/stuff/type3 mine"
 msgid "Anti-Personnel Type 3 Mine (A)"
-msgstr ""
+msgstr "대인 Type 3 지뢰 (A)"
 
 msgctxt "desc/stuff/type3b mine"
 msgid "Anti-Personnel Type 3 Mine (B)"
-msgstr ""
+msgstr "대인 Type 3 지뢰 (B)"
 
 msgctxt "desc/stuff/Type23"
 msgid "Type 23 Fragmentation Grenade"
-msgstr ""
+msgstr "Type 23 파편 수류탄"
 
 msgctxt "desc/ammo/type_5_rocket"
 msgid "Type 5 Rocket 45mm [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "Type 5 로켓 45mm [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/type_4_rocket_90"
 msgid "Type 4 Rocket 90mm [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "Type 4 로켓 90mm [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/type_4_rocket_70"
 msgid "Type 4 Rocket 70mm [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "Type 4 로켓 70mm [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/ammo/mine_lunge"
 msgid "TNT Explosive"
-msgstr ""
+msgstr "TNT 폭약"
 
 msgctxt "desc/stuff/bandage_jap"
 msgid "Japanese bandage"
-msgstr ""
+msgstr "일본군 붕대"
 
 msgctxt "desc/stuff/satchel_charge_jap"
 msgid "Japanese 7-10Kg Satchel Charge"
-msgstr ""
+msgstr "일본군 7-10Kg 가방 폭약"
 
 msgctxt "desc/stuff/glass_smoke"
 msgid "Frangible Smoke Grenade"
-msgstr ""
+msgstr "파쇄식 연막 수류탄"
 
 msgctxt "desc/stuff/shovel_jap"
 msgid "Japanese Shovel"
-msgstr ""
+msgstr "일본군 삽"
 
 msgctxt "desc/stuff/type11_wp"
 msgid "Type 11 Smoke Grenade"
-msgstr ""
+msgstr "Type 11 연막 수류탄"
 
 msgctxt "desc/stuff/type_99_smoke_candle"
 msgid "Type 99 Smoke Candle (Entity)"
-msgstr ""
+msgstr "Type 99 연막통 (개체)"
 
 msgctxt "desc/ammo/tao_rocket"
 msgid "TOA Iron Works Disposable Rocket [<c(c9a6ff)>HEAT</c>]"
-msgstr ""
+msgstr "TOA Iron Works Disposable 로켓 [<c(c9a6ff)>HEAT</c>]"
 
 msgctxt "desc/stuff/chi_pottery_ic"
 msgid "Incendiary Pottery Grenade"
-msgstr ""
+msgstr "소이 도자기 수류탄"
 
 msgctxt "desc/stuff/chi_pottery_smoke"
 msgid "Smoke Pottery Grenade"
-msgstr ""
+msgstr "연막 도자기 수류탄"
 
 msgctxt "desc/stuff/eino1"
 msgid "Eihandgranaat No.1"
-msgstr ""
+msgstr "Eihandgranaat No.1"
 
 msgctxt "desc/stuff/molotov_smoke_jap"
 msgid "Smoke Kaenbin"
-msgstr ""
+msgstr "연막 카엔빈"
 
 msgctxt "desc/stuff/rg14_30_jap"
 msgid "RG-14/30"
-msgstr ""
+msgstr "RG-14/30"
 
 msgctxt "desc/stuff/rg14_jap"
 msgid "RG-14"
-msgstr ""
+msgstr "RG-14"
 
 msgctxt "desc/stuff/gongxian_smoke"
 msgid "Gongxian Smoke Grenade"
-msgstr ""
+msgstr "궁셴 연막 수류탄"
 
 msgctxt "desc/stuff/chi_pottery_smoke"
 msgid "Smoke Pottery Grenade"
-msgstr ""
+msgstr "연막 도자기 수류탄"
 
 msgctxt "desc/ammo/bulletjap_47 aphebc"
 msgid "Type 1 47mm [<c(ff6a00)>APHEBC</c>]"
-msgstr ""
+msgstr "Type 1 47mm [<c(ff6a00)>APHEBC</c>]"
 
 msgctxt "desc/ammo/bulletjap_37 aphebc"
 msgid "Type 1 47mm [<c(ff6a00)>APHEBC</c>]"
-msgstr ""
+msgstr "Type 1 47mm [<c(ff6a00)>APHEBC</c>]"

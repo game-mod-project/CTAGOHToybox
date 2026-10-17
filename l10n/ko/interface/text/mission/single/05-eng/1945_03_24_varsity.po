@@ -503,7 +503,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret01"
 msgid "Secret objective #1"
-msgstr ""
+msgstr "비밀 목표 1"
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret01_completed"
 msgid "Secret objective: Fare Dodger - Solve the railway puzzle and capture the tank"
@@ -511,7 +511,7 @@ msgstr ""
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret02"
 msgid "Secret objective #2"
-msgstr ""
+msgstr "비밀 목표 2"
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret02_completed"
 msgid "Secret objective: Hangover - Put all available Schnapps crates into the Comet inventory"
