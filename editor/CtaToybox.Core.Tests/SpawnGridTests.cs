@@ -33,7 +33,7 @@ static class SpawnGridTests
         var list = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions(), new SpawnReport());
         var tall = list.SingleOrDefault(f => f.Path.EndsWith("gameunitreinforcementview.xml", System.StringComparison.OrdinalIgnoreCase));
         string tallText = tall == null ? "" : System.Text.Encoding.UTF8.GetString(tall.Bytes);
-        T.True(tallText.Contains("<StepScrollPane") && tallText.Contains("visibleElements=\"25\"") && !tallText.Contains("GridPanel"), "the default is the vertical list showing 25 buttons");
+        T.True(tallText.Contains("<StepScrollPane") && tallText.Contains("visibleElements=\"10\"") && !tallText.Contains("GridPanel"), "the default is the vertical list showing 10 buttons");
         var vanilla = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { Menu = new MenuOptions { VisibleButtons = 0 } }, new SpawnReport());
         T.True(!vanilla.Any(f => f.Path.EndsWith("gameunitreinforcementview.xml", System.StringComparison.OrdinalIgnoreCase)), "--visible 0 keeps the vanilla view file");
         var files = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { Menu = new MenuOptions { GridCols = 7 } }, new SpawnReport());

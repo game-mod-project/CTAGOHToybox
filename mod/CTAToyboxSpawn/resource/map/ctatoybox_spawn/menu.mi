@@ -2809,9 +2809,9 @@
 			{"ctb_s2_b11" {state hidden} {text "mission/ctatoybox_spawn/owner_10"} {image "back"} {hint "mission/ctatoybox_spawn/owner_10"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_own_10"}}
 			{"ctb_s2_b12" {state hidden} {text "mission/ctatoybox_spawn/home"} {image "back"} {hint "mission/ctatoybox_spawn/home"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_home"}}
 			{"ctb_s3_b1" {state hidden} {text "mission/ctatoybox_spawn/home"} {image "back"} {hint "mission/ctatoybox_spawn/home"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_home"}}
-			{"ctb_s3_b2" {state hidden} {text "mission/ctatoybox_spawn/arty_s"} {image "150mm_sfh18_artillery_barrage"} {hint "mission/ctatoybox_spawn/arty_s"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_arty_s"} {waypoint "ctb_target"} {previewEntity crosshair}}
-			{"ctb_s3_b3" {state hidden} {text "mission/ctatoybox_spawn/arty_m"} {image "150mm_sfh18_artillery_barrage"} {hint "mission/ctatoybox_spawn/arty_m"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_arty_m"} {waypoint "ctb_target"} {previewEntity crosshair}}
-			{"ctb_s3_b4" {state hidden} {text "mission/ctatoybox_spawn/arty_l"} {image "150mm_sfh18_artillery_barrage"} {hint "mission/ctatoybox_spawn/arty_l"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_arty_l"} {waypoint "ctb_target"} {previewEntity crosshair}}
+			{"ctb_s3_b2" {state hidden} {text "mission/ctatoybox_spawn/arty_s"} {image "150mm_sfh18_artillery_barrage"} {hint "mission/ctatoybox_spawn/arty_s"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_arty_s"} {waypoint "ctb_wp_arty_s"} {previewEntity crosshair}}
+			{"ctb_s3_b3" {state hidden} {text "mission/ctatoybox_spawn/arty_m"} {image "150mm_sfh18_artillery_barrage"} {hint "mission/ctatoybox_spawn/arty_m"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_arty_m"} {waypoint "ctb_wp_arty_m"} {previewEntity crosshair}}
+			{"ctb_s3_b4" {state hidden} {text "mission/ctatoybox_spawn/arty_l"} {image "150mm_sfh18_artillery_barrage"} {hint "mission/ctatoybox_spawn/arty_l"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_arty_l"} {waypoint "ctb_wp_arty_l"} {previewEntity crosshair}}
 			{"ctb_s3_b5" {state hidden} {text "mission/ctatoybox_spawn/points"} {image "artystrike"} {hint "mission/ctatoybox_spawn/points"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_points"}}
 			{"ctb_s4_b1" {state hidden} {text "mission/ctatoybox_spawn/home"} {image "back"} {hint "mission/ctatoybox_spawn/home"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_home"}}
 			{"ctb_s4_b2" {state hidden} {text "mission/ctatoybox_spawn/god_on"} {image "back"} {hint "mission/ctatoybox_spawn/god_on"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_god_on"}}
@@ -6385,7 +6385,7 @@
 			{"ctb_s383_b14" {state hidden} {text "mission/ctatoybox_spawn/back"} {image "back"} {hint "mission/ctatoybox_spawn/back"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_s10"}}
 			{"ctb_s383_b15" {state hidden} {text "mission/ctatoybox_spawn/home"} {image "back"} {hint "mission/ctatoybox_spawn/home"} {count -1} {score 0} {delay 0} {eventStart "ctb_e_home"}}
 		}
-		{vars {"ctb_nation"} {"ctb_nation_side"} {"ctb_campaign"} {"ctb_owner"} {"ctb_god"} {"ctb_maxvet"} {"ctb_never"} {"ctb_has_ger"} {"ctb_has_rus"} {"ctb_has_usa"} {"ctb_has_eng"} {"ctb_has_fin"} {"ctb_has_jap"}}
+		{vars {"ctb_nation"} {"ctb_nation_side"} {"ctb_campaign"} {"ctb_owner"} {"ctb_god"} {"ctb_maxvet"} {"ctb_never"} {"ctb_open"} {"ctb_has_ger"} {"ctb_has_rus"} {"ctb_has_usa"} {"ctb_has_eng"} {"ctb_has_fin"} {"ctb_has_jap"}}
 		{functions
 			{"ctb_home"
 				{"reinforcement" {operation hide} {name "ctb_s*"}}
@@ -6413,6 +6413,7 @@
 					{condition {type cmp_i} {var "ctb_nation$"} {op "=="} {value 6}}
 					{"reinforcement" {operation show} {name "ctb_s10_*"}}
 				}
+				{"set_i" {var "ctb_open$"} {op "="} {value 1}}
 			}
 			{"ctb_owner"
 				{"if"
@@ -7386,6 +7387,7 @@
 						{condition {type cmp_i} {var "ctb_campaign$"} {op "=="} {value 0}}
 						{"reinforcement" {operation hide} {name "ctb_s*"}}
 						{"reinforcement" {operation show} {name "ctb_s2_*"}}
+						{"set_i" {var "ctb_open$"} {op "="} {value 1}}
 					}
 				}
 			}
@@ -171612,9 +171614,9 @@
 					}
 				}
 				{actions
-					{"loop" 1
-						{"spawn" {entity "artillery_single_150_dummy"} {waypoint "ctb_target"}}
-						{"delay" {time 1.5}}
+					{"loop" 5
+						{"spawn" {entity "artillery_single_150_dummy"} {waypoint "ctb_wp_arty_s"}}
+						{"delay" {time 0.4}}
 					}
 					{"event" {event "ctb_e_arty_s"} {mode reset} {delay 0}}
 					{"trigger" {name "ctb_e_arty_s"}}
@@ -171628,9 +171630,9 @@
 					}
 				}
 				{actions
-					{"loop" 3
-						{"spawn" {entity "artillery_single_150_dummy"} {waypoint "ctb_target"}}
-						{"delay" {time 1.5}}
+					{"loop" 12
+						{"spawn" {entity "artillery_single_150_dummy"} {waypoint "ctb_wp_arty_m"}}
+						{"delay" {time 0.4}}
 					}
 					{"event" {event "ctb_e_arty_m"} {mode reset} {delay 0}}
 					{"trigger" {name "ctb_e_arty_m"}}
@@ -171644,9 +171646,9 @@
 					}
 				}
 				{actions
-					{"loop" 6
-						{"spawn" {entity "artillery_single_150_dummy"} {waypoint "ctb_target"}}
-						{"delay" {time 1.5}}
+					{"loop" 20
+						{"spawn" {entity "artillery_single_150_dummy"} {waypoint "ctb_wp_arty_l"}}
+						{"delay" {time 0.4}}
 					}
 					{"event" {event "ctb_e_arty_l"} {mode reset} {delay 0}}
 					{"trigger" {name "ctb_e_arty_l"}}
@@ -171883,7 +171885,19 @@
 					}
 				}
 				{actions
-					{"call" {function "ctb_home"}}
+					{"if"
+						{condition {type cmp_i} {var "ctb_open$"} {op "=="} {value 1}}
+						{"reinforcement" {operation hide} {name "ctb_s*"}}
+						{"set_i" {var "ctb_open$"} {op "="} {value 2}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "ctb_open$"} {op "=="} {value 0}}
+						{"call" {function "ctb_home"}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "ctb_open$"} {op "=="} {value 2}}
+						{"set_i" {var "ctb_open$"} {op "="} {value 0}}
+					}
 					{"event" {event "ctb_e_root"} {mode reset} {delay 0}}
 					{"trigger" {name "ctb_e_root"}}
 				}
@@ -171907,5 +171921,8 @@
 			{"ctb_wait_veh" {position 88888 88888 0} {radius 1}}
 			{"ctb_place" {position -9553.58 7012.8 0} {radius 1}}
 			{"ctb_target" {position -9546.01 7248.6 0} {radius 1}}
+			{"ctb_wp_arty_s" {position -9546.01 7248.6 0} {radius 20}}
+			{"ctb_wp_arty_m" {position -9546.01 7248.6 0} {radius 40}}
+			{"ctb_wp_arty_l" {position -9546.01 7248.6 0} {radius 70}}
 		}
 	}

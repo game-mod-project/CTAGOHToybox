@@ -19,8 +19,9 @@ namespace CtaToybox.Core.Spawn
         public int PageSize { get; set; } = 21;
         // 증원 창 단추 칸 열 수(가로 격자). 0이면 바닐라 세로 목록 그대로. 기본 0: 격자 판으로 게임이 판 화면을 만들다 꺼졌다(2026-10-18 game.log)
         public int GridCols { get; set; }
-        // 증원 창 세로 목록에 한 번에 보이는 단추 수(바닐라 7). 0이면 화면 파일을 쓰지 않는다. 기본 25 = 메뉴 한 화면(PageSize 21 + 이동 단추 4, 2026-10-18 사용자 결정)
-        public int VisibleButtons { get; set; } = 25;
+        // 증원 창 세로 목록에 한 번에 보이는 단추 수(바닐라 7). 0이면 화면 파일을 쓰지 않는다. 25는 화면을 넘어 아래 단추를 누를 수 없었다(2026-10-18 사용자).
+        // 기본 10: 단추 그림 stub.tga 144x72 + gap 2 → 10칸 740 + 위아래 스크롤 단추 16x2 = 772px로 1080 화면에서 점수 창과 위쪽 여백이 남는다
+        public int VisibleButtons { get; set; } = 10;
         public bool AllNations { get; set; }     // 캠페인 맵에도 모든 국가 견본을 넣는다(기본은 그 맵에 나오는 국가만)
     }
 
@@ -57,6 +58,7 @@ namespace CtaToybox.Core.Spawn
     {
         public const string Root = "ctb_root", HideAll = "ctb_s*", Place = "ctb_place", Target = "ctb_target", WaitInf = "ctb_wait_inf", WaitVeh = "ctb_wait_veh";
         public const string PotKey = "mission/ctatoybox_spawn/";
+        public const string Open = "ctb_open";   // 메뉴가 열려 있으면 1
         public static readonly string[] NavEvents = { "ctb_e_root", "ctb_e_home" };
         static readonly string[] ArmyOrder = { "ger", "rus", "usa", "eng", "fin", "jap" };
         static readonly Dictionary<string, string> ArmyText = new Dictionary<string, string> { ["ger"] = "Germany", ["rus"] = "Soviet Union", ["usa"] = "United States", ["eng"] = "Britain", ["fin"] = "Finland", ["jap"] = "Japan" };
@@ -175,8 +177,13 @@ namespace CtaToybox.Core.Spawn
             // 처음 화면으로: 지금 국가의 처음 화면
             var home = new MNode(MNode.Q("ctb_home"), MNode.Hide(HideAll));
             foreach (string army in armies) home.Add(MNode.IfVar("ctb_nation", "==", armies.IndexOf(army) + 1, MNode.Show("ctb_s" + homes[army] + "_*")));
+            home.Add(MNode.SetVar(Open, 1));
             events.Add("ctb_e_root"); events.Add("ctb_e_home");
-            triggers.Add(MNode.EventTrigger("ctb_e_root", MNode.Call("ctb_home")));
+            // 맨 위 Spawn 단추는 여닫기다(사용자 지적 2026-10-18: 메뉴가 완전히 접히지 않는다). 열려 있으면(1) 모두 숨기고 2를 거쳐 0으로, 닫혀 있으면(0) 처음 화면
+            triggers.Add(MNode.EventTrigger("ctb_e_root",
+                MNode.IfVar(Open, "==", 1, MNode.Hide(HideAll), MNode.SetVar(Open, 2)),
+                MNode.IfVar(Open, "==", 0, MNode.Call("ctb_home")),
+                MNode.IfVar(Open, "==", 2, MNode.SetVar(Open, 0))));
             triggers.Add(MNode.EventTrigger("ctb_e_home", MNode.Call("ctb_home")));
             result.Text = Render(armies, home);
         }
@@ -392,15 +399,23 @@ namespace CtaToybox.Core.Spawn
             AddUnit(screen, "desc/entity/" + u.Name, Icon(u.Name, CategoryIcon("air", army)), ev, actions);
         }
 
-        // 지원: 포격 소·중·대(곡사포 더미 1·3·6발, 바닐라 kollaa 43455 꼴), 증원 점수
+        // 포격 소·중·대: (키, 글자, 발 수, 흩어지는 반경). 사용자 요청(2026-10-18): 찍은 지점 둘레에 최소 5발에서 최대 20발.
+        // 바닐라 포격은 반경이 큰 웨이포인트에 spawn을 되풀이한다(01-rus/1942_05_kerch "part2/enemy/main/art/global": loop 12, 웨이포인트 1659~1661 radius 1400,
+        // 실행 파일에 disable_random_spawn_position 명령이 있다 → spawn은 웨이포인트 반경 안 아무 데나 놓는다고 본다). 그래서 크기마다 반경이 다른 웨이포인트를 둔다.
+        // 반경 값의 거리 단위는 미확인(바닐라 캠페인 포격 지점 반경 2~2000, 평균 462)
+        public static readonly (string Key, string Label, int Shots, int Radius)[] Barrages =
+        {
+            ("arty_s", "Artillery (small)", 5, 20), ("arty_m", "Artillery (medium)", 12, 40), ("arty_l", "Artillery (large)", 20, 70),
+        };
+
         void MakeSupport(MenuScreen s)
         {
-            foreach (var (key, label, shots) in new[] { ("arty_s", "Artillery (small)", 1), ("arty_m", "Artillery (medium)", 3), ("arty_l", "Artillery (large)", 6) })
+            foreach (var (key, label, shots, _) in Barrages)
             {
-                string ev = "ctb_e_" + key;
-                Add(s, Str(key, label), "150mm_sfh18_artillery_barrage", ev, Target, "crosshair");
+                string ev = "ctb_e_" + key, wp = "ctb_wp_" + key;
+                Add(s, Str(key, label), "150mm_sfh18_artillery_barrage", ev, wp, "crosshair");
                 events.Add(ev);
-                triggers.Add(MNode.EventTrigger(ev, new MNode(MNode.Q("loop") + " " + shots, new MNode(MNode.Q("spawn"), new MNode("entity", MNode.Q("artillery_single_150_dummy")), new MNode("waypoint", MNode.Q(Target))), new MNode(MNode.Q("delay"), new MNode("time", "1.5")))));
+                triggers.Add(MNode.EventTrigger(ev, new MNode(MNode.Q("loop") + " " + shots, new MNode(MNode.Q("spawn"), new MNode("entity", MNode.Q("artillery_single_150_dummy")), new MNode("waypoint", MNode.Q(wp))), new MNode(MNode.Q("delay"), new MNode("time", "0.4")))));
             }
             string pe = "ctb_e_points";
             Add(s, Str("points", "Reinforcement points +1000"), "artystrike", pe);
@@ -492,7 +507,7 @@ namespace CtaToybox.Core.Spawn
             foreach (string army in armies) start.Add(MNode.IfVar("ctb_campaign", "==", 0, MNode.IfVar("ctb_nation_side", "==", armies.IndexOf(army) + 1, MNode.SetVar("ctb_nation", armies.IndexOf(army) + 1))));
             start.Add(MNode.IfVar("ctb_campaign", "==", 1, MNode.SetVar("ctb_owner", 1)));
             start.Add(MNode.Show(Root));
-            start.Add(MNode.IfVar("ctb_campaign", "==", 0, MNode.Hide(HideAll), MNode.Show("ctb_s" + result.Screens.Single(s => s.Title == "Owner").Id + "_*")));
+            start.Add(MNode.IfVar("ctb_campaign", "==", 0, MNode.Hide(HideAll), MNode.Show("ctb_s" + result.Screens.Single(s => s.Title == "Owner").Id + "_*"), MNode.SetVar(Open, 1)));
             yield return new MNode(MNode.Q("ctb_start"), "{condition }", start);
             yield return new MNode(MNode.Q("ctb_keep_menu"), "{autoreset}", new MNode("condition", new MNode("terms", new MNode(MNode.Q("1.cmp_i"), new MNode("var", MNode.Q("ctb_never$")), new MNode("op", MNode.Q("==")), new MNode("value", "0")))),
                 new MNode("actions", new MNode(MNode.Q("delay"), new MNode("time", "30")), MNode.Show(Root)));
@@ -505,7 +520,7 @@ namespace CtaToybox.Core.Spawn
             var reinf = new MNode("reinforcements");
             reinf.Add(Button(new MenuButton { Name = Root, Text = Str("spawn", "Spawn"), Image = "button_1_ger", Event = "ctb_e_root" }, true));
             foreach (var s in result.Screens) foreach (var b in s.Buttons) reinf.Add(Button(b, false));
-            var vars = new MNode("vars", new[] { "ctb_nation", "ctb_nation_side", "ctb_campaign", "ctb_owner", "ctb_god", "ctb_maxvet", "ctb_never" }.Concat(armies.Select(HasVar)).Select(v => (object)new MNode(MNode.Q(v))).ToArray());
+            var vars = new MNode("vars", new[] { "ctb_nation", "ctb_nation_side", "ctb_campaign", "ctb_owner", "ctb_god", "ctb_maxvet", "ctb_never", Open }.Concat(armies.Select(HasVar)).Select(v => (object)new MNode(MNode.Q(v))).ToArray());
             var funcs = new MNode("functions").Add(Functions(home).ToArray());
             var trig = new MNode("triggers").Add(Loops(armies).ToArray()).Add(triggers.ToArray());
             var zones = new[] { ("infantryzone", 77777), ("tankzone", 88888) }.Select(z => new MNode("zone " + MNode.Q("poly"), new MNode("position", z.Item2 + " " + z.Item2 + " 0"), new MNode("Name", MNode.Q(z.Item1)),
@@ -515,6 +530,7 @@ namespace CtaToybox.Core.Spawn
                 new MNode(MNode.Q(WaitVeh), new MNode("position", "88888 88888 0"), new MNode("radius", "1")),
                 new MNode(MNode.Q(Place), new MNode("position", "-9553.58 7012.8 0"), new MNode("radius", "1")),
                 new MNode(MNode.Q(Target), new MNode("position", "-9546.01 7248.6 0"), new MNode("radius", "1")));
+            foreach (var b in Barrages) waypoints.Add(new MNode(MNode.Q("ctb_wp_" + b.Key), new MNode("position", "-9546.01 7248.6 0"), new MNode("radius", b.Radius.ToString())));
             var helpers = new MNode("Helpers").Add(events.Select(e => (object)new MNode("event", MNode.Q(e))).ToArray()).Add(zones).Add(reinf, vars, funcs, trig, waypoints);
             result.Templates = humanTemplates.Count;
             result.Triggers = triggers.Count + 3;
