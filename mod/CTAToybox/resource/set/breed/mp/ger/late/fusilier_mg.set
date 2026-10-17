@@ -1,0 +1,38 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_42_fus_mg"}
+	{portrait "ger_fus"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_3")("tier3_recon")
+		
+	
+	{"health" "500%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg42_belt_ctb_ger" filling "mgun_ger belt ammo" 200}
+		{item "mgun_ger belt ammo" 1500}
+
+		;{item "p38" filled}
+		;{item "pistol ammo" 16}
+
+		{item "m24 grenade" 0.5 1}
+		{item "m24_smoke grenade" 0.5 1}
+
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

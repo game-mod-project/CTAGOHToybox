@@ -1,0 +1,45 @@
+;SDL
+
+
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 26}
+	}
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 50}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 30}
+	}
+	{volume "aux_turret1"
+		{component "turret"}
+		{thickness 26}
+	}
+	{volume "aux_turret2"
+		{component "turret"}
+		{thickness 26}
+	}
+
+	("make_component" args "aux_turret1" "aux_turret1")
+	("make_component" args "aux_turret2" "aux_turret2")
+
+	("tracks" repair(30) thickness(40))
+	("gun" repair(30) thickness(50))
+	("aux_turret" repair(45))
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+
+
+	;("armor_medium" turret(15 13 13 8) turret1(8 8 8 8) turret2(8 8 8 8) body(20 13 13 8))
+	;("armor_engine"  t(10 10 8 7))
+	;("armor_mantlet" t(150))

@@ -59,11 +59,11 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_75_l24 apcbche" 17}		; 44 rounds
-			{item "bulletger_75_l24 he" 22}
-			{item "bulletger_75_l24 sm" 4}
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 5}
+			{item "bulletger_75_l24 apcbche" 85}		; 44 rounds
+			{item "bulletger_75_l24 he" 110}
+			{item "bulletger_75_l24 sm" 20}
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 10}
 		}
 	}
 
@@ -71,7 +71,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk37" filling "bulletger_75_l24 apcbche" 1}
+			{weapon "75mm_kwk37_ctb_ger" filling "bulletger_75_l24 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic_td"
@@ -85,15 +85,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.43))
 		("mobility_tank"
-			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			speed(60) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(8) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(20.7) ;-------Weight in Tonnes.
 			power(265) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
 			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(310) ;----------Fuel capacity in Litres.
+			fuel(3100) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(95) ;----------Range in km, off-road.
+			range(950) ;----------Range in km, off-road.
 		)
 	}
 

@@ -9,27 +9,27 @@
 	{collider "tank.light"}
 
 	("tank_light_tier1")
-	("gun" repair(30) thickness(25))
+	("gun" repair(30) thickness(50))
 	("body" repair(45))
 
 	{volume "body1"		; ring
-		{thickness 40}
+		{thickness 80}
 		{CastSteel 0.8063}
 	}
 	{volume "body2"		; main
-		{thickness 40
-			{top 25}
+		{thickness 80
+			{top 50}
 		}
 		{CastSteel 0.8063}
 	}
 	{volume "body3"		; 
-		{thickness 40
-			{top 25}
+		{thickness 80
+			{top 50}
 		}
 		{CastSteel 0.8063}
 	}
 	{volume "cupola"
-		{thickness 40}
+		{thickness 80}
 		{CastSteel 0.8063}
 	}
 
@@ -49,9 +49,9 @@
 
 	{extender "inventory"
 		{box
-			{item "bullet_37x149 ger apc" 39}	; 100 rounds
-			{item "bullet_37x149 ger he" 60}
-			{item "ammo mgun_ger belt" 1200}	; 9 belts (150 rounds each)
+			{item "bullet_37x149 ger apc" 195}	; 100 rounds
+			{item "bullet_37x149 ger he" 300}
+			{item "ammo mgun_ger belt" 6000}	; 9 belts (150 rounds each)
 		}
 	}
 
@@ -59,7 +59,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "37mm_kwk146f" filling "bullet_37x149 ger apc" 1}
+			{weapon "37mm_kwk146f_ctb_ger" filling "bullet_37x149 ger apc" 1}
 			{gunner "gunner"}
 			{charger "gunner"}
 			("abm_dymamic_td"
@@ -69,7 +69,7 @@
 		}
 		{place "mgun2"
 			{type "coaxial"}
-			{weapon "mg31f" filled}
+			{weapon "mg31f_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "gunner"}
 			{charger "gunner"}

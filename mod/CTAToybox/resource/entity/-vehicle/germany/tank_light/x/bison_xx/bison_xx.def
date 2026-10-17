@@ -1,0 +1,65 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bison_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 16}
+	}
+	{volume "barrel2"
+		{thickness 16}
+	}
+	{volume "barrel3"
+		{thickness 16}
+	}
+	{volume "body1"			; Hull
+		{thickness 26
+			{top 16}			; Glacis
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine"
+		{thickness 26
+			{front 10}
+			{top 16}
+			{bottom 10}
+		}
+	}
+	{volume "gun_shield"
+		{thickness 16}
+		{able {holed}}
+	}
+	{volume "shieldt1"
+		{thickness 16}
+	}
+	{volume "shieldt2"
+		{thickness 16}
+		{able {holed}}
+	}
+	{volume "shieldt3"
+		{thickness 16}
+		{able {holed}}
+	}
+	{volume "shieldt4"
+		{thickness 16}
+		{able {holed}}
+	}
+	{volume "shieldt"
+		{thickness 16}
+	}
+	{volume "part8"
+		{thickness 16}
+	}
+
+	("tracks" thickness(30))
+
+	{volume "turret"
+		{thickness 16}
+	}
+	{volume "wheell"
+		{thickness 20}
+	}
+	{volume "wheelr"
+		{thickness 20}
+	}
+}

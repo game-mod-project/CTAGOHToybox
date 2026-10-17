@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_gj_pio_mg_asst"}
+	{portrait "ger_regular"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m42_helmet_winter_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("loader_skill_rank_2")("tier2_standard")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		
+		{item "rifle_ger clip ammo" 150}
+		{item "mgun_ger belt ammo" 1250}
+		{item "bandage_ger"}
+		{item "shovel_ger"}
+		{in_hands 0}
+	}
+}

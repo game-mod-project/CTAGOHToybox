@@ -1,0 +1,98 @@
+{game_entity
+	(include "/properties/tank__ctb_rhmb_wt_48a1e9bd.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.3))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "td" "medium" "multi_board" "vision_lev04" "muzzle_122mm_128mm_sides" "shell_eject" "open_top"}
+	{extension "rhmb_wt.mdl"}
+	(include "rhmb_wt.ext")
+	{patherId "nashorn"}
+	{targetclass "tank_medium"}
+	{targetSelector "cannon_howitzer"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	
+	
+	("crew_3_human")
+	
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_t34_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse 	{end	"emit_t34_hold"} {base "close_driver"}}
+		}
+		{anm "gunner"
+			{forward	{begin	"board_su76"} {end "seat_armor"}}
+			{reverse 	{end	"board_su76" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_hummel"} {end "pose_seat_armor_2"} {base "open_back_door"}}
+			{reverse 	{end	"emit_body" 1} {base "open_back_door" -1}}
+		}
+	}
+
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+		}
+	)
+
+	{placer
+		{place "driver" {group "crew"} {visor "driver"}}
+	}
+	{placer
+		{place "gunner" {visor "main"}}
+	}
+	{boarder
+		{door "emit0"}
+		{door "emit1"}
+		{link "emit0" "driver" {anm "driver"} {forward putoff} {reverse puton}}
+	}
+	("crew_human" place(charger)	door1(emit1))
+	("crew_human" place(gunner)	    door1(emit1))
+
+	{extender "inventory"
+		{box
+			{item "bulletger_128 apcbche" 170} 	
+			{item "bulletger_128 he" 30}
+			{item "geballteladung_3kg" 2}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_kwk46_ctb_ger" filling "ammo bulletger_128 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+	}
+
+	{mass 20700}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.2) len(-0.52))
+		("mobility_tank"
+			speed(53) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(12) ;--------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(20.7) ;---------Weight in Tonnes.
+			power(207) ;---------Engine Power, in hp.
+			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(6000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1300) ;---------Range in km, off-road.
+		)
+	}
+
+}

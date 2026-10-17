@@ -1,0 +1,33 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun (Adapted for E-75 TS)
+;=========================================
+
+{from "pattern gun"			; L/55  "E-75 TS"
+	{filling "bulletger_128_2"}
+	
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_85to100mm/"}
+	{reloadSound "utility/"}
+	
+	{range 240 240}
+	{calibre 128}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(920) apcr(1230) he(750) heat(1))
+	
+	("armor health" damage(340))
+	("armor health custom" shell(apcbche) damage(340) velocity(920) filler(567))
+	("armor health custom" shell(apds) damage(340) velocity(1230) filler(0))
+	("128_slope_multipliers")
+
+	("penetration_long" shell(apcbche) range(240) a(265) b(245) c(225) d(205) e(185)) 
+
+	("penetration_long" shell(apds) range(240) a(340) b(315) c(285) d(250) e(225)) 
+
+	{parameters "he"
+		{range 240 240}
+	}
+
+	("accuracy_direct" r1(0.42) range_ap(240) range_he(240) range_heat(240))
+}

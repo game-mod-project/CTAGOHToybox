@@ -39,10 +39,10 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletrus_45 aphebc" 72}		;146/188 rounds with or without radio
-			{item "bulletrus_45 he" 73}
-			{item "ammo mgun_rus dt" 2331}		;38 drums
-			{item "geballteladung_3kg" 1}
+			{item "bulletrus_45 aphebc" 360}		;146/188 rounds with or without radio
+			{item "bulletrus_45 he" 365}
+			{item "ammo mgun_rus dt" 11655}		;38 drums
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -50,7 +50,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "45mm_20k" filling "bulletrus_45 aphebc" 1}
+			{weapon "45mm_20k_ctb_ger" filling "bulletrus_45 aphebc" 1}
 			{gunner "gunner"}
 			{charger "commander"}
 			("abm_dymamic"
@@ -60,7 +60,7 @@
 		}
 		{place "mgun"
 			{type "coaxial"}
-			{weapon "dt" filling "ammo mgun_rus dt" 63}
+			{weapon "dt_ctb_ger" filling "ammo mgun_rus dt" 63}
 			{foresight "foresight3"}
 			{gunner "gunner"}
 			{charger "commander"}
@@ -73,15 +73,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm") step(0.3) len(1.15))
 		("mobility_tank"
-			speed(52) ;----------Max speed when fully accelerated on road, km/h.
+			speed(78) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(19) ;--------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(13.8) ;-------Weight in Tonnes.
 			power(400) ;---------Engine Power, in hp.
 			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(650) ;----------Fuel capacity in Litres.
+			fuel(6500) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(150) ;---------Range in km, off-road.
+			range(1500) ;---------Range in km, off-road.
 		)
 	}
 

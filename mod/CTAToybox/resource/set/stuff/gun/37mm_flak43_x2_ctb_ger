@@ -1,0 +1,40 @@
+;_________________________________________
+; German medium AA gun
+;=========================================
+
+
+{from "pattern gun"			; L/89
+	{filling "bulletger_37_auto" 20}
+	{fireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Autocannon_20to30mm/"}
+	{reloadSound "tank/reload_small"}
+	{recoveryTime 0.3}
+	("range_autocannon_37-40")
+	{cursor "ironsights/aa"}
+	{calibre 37}
+	("medium_aa")
+
+	{Automatic}
+
+	("fire rate" rpm(360)) ;180 150
+	("reload time" seconds(0.6))
+
+	("velocity" mps(1100))
+	("armor health" damage(100))
+	("armor health custom" shell(ap) damage(100) velocity(1100) filler(22)) ;pzgr.18 has filler
+	("37_slope_multipliers")
+
+	; PzGr.18
+	("penetration_medium" shell(ap) range(160) a(53) b(43) c(33) d(26) e(20))
+
+	{parameters "he"										; SPgGr.
+		{range 150 150}
+		(mod "mp" {unlimitedRangeTPC 1})	;// unrestricts range in TPC/FPC for shooting at aircraft
+	}
+
+	; Pzgr.40/37(t)
+   	("penetration_medium" shell(apcr) range(160) a(90) b(48) c(22) d(10) e(5))
+
+	("accuracy_direct" r1(0.55) range_ap(150) range_he(150) range_heat(170))
+
+}

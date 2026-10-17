@@ -55,12 +55,12 @@
 	{extender "inventory"
 		{weapon "mgun" {mask "mountable"}}
 		{box
-			{item "bulletger_150_l11 he" 30}            ; 38 rounds
-            		{item "bulletger_150_l11 heat" 7}	
-			{item "ammo mgun_ger belt" 4500}		; 32 belts (150 rounds each)
-			{item "mg42_drum" filled {user "mgun"}}
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 6}
+			{item "bulletger_150_l11 he" 150}            ; 38 rounds
+            		{item "bulletger_150_l11 heat" 35}	
+			{item "ammo mgun_ger belt" 22500}		; 32 belts (150 rounds each)
+			{item "mg42_drum_ctb_ger" filled {user "mgun"}}
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 12}
 		}
 	}
 
@@ -68,7 +68,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "150mm_stuh43_t" filling "bulletger_150_l11 he" 1}
+			{weapon "150mm_stuh43_t_ctb_ger" filling "bulletger_150_l11 he" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic"
@@ -78,7 +78,7 @@
 		}
 		{place "mgun2"
 			{type "coaxial"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "gunner"}
 			{charger "charger"}
@@ -87,7 +87,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -111,15 +111,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(0.94))
 		("mobility_tank"
-			speed(45) ;----------Max speed when fully accelerated on road, km/h.
+			speed(68) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(5.3) ;-------Max speed in reverse on road, km/h. 3.3 + 2kmh
 			traverse(35) ;-------Track traverse, per second, in degrees.
 			weight(45.5) ;-------Weight in Tonnes.
 			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
 			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(700) ;----------Fuel capacity in Litres.
+			fuel(7000) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(100) ;---------Range in km, off-road.
+			range(1000) ;---------Range in km, off-road.
 		)
 	}
 

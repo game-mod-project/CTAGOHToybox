@@ -1,0 +1,28 @@
+;_________________________________________
+; Russian heavy SPG gun
+;=========================================
+
+{from "pattern gun"			; L/29 "0bj_268" 'St. John 's Wort'
+	{tag "agf howitzer"}
+	{filling "bulletrus_152"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm_HV/"}
+	{fireSoundClose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	("range_220")
+	{calibre 152}
+
+	("reload time" seconds(13))
+
+	("velocity m/s" ap(760) apcr(1) he(750) heat(770)) ;740
+	("armor health" damage(480))
+	("armor health custom" shell(aphe) damage(480) velocity(760) filler(680))
+	("armor health custom" shell(aphebc) damage(480) velocity(760) filler(540))
+
+	("penetration_long" shell(aphe) range(220) a(205) b(192) c(177) d(162) e(148))  ;RHA
+
+	("penetration_long" shell(aphebc) range(230) a(275) b(267) c(255) d(236) e(221))  ;RHA
+
+	("penetration_medium" shell(heat) range(230) a(250) b(250) c(250) d(250) e(250))
+
+	("accuracy_direct" r1(0.50) range_ap(230) range_he(220) range_heat(230)) ;95
+}

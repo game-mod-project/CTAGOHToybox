@@ -1,0 +1,39 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_mg"}
+	{portrait "ger_regular"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m39_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_2")("tier2_standard")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg34_drum_ctb_ger" filling "mgun_ger drum ammo" 100}
+		{item "mgun_ger drum ammo" 500}
+		{item "mgun_ger belt ammo" 1000}
+
+		;{item "p38" filled}
+		;{item "pistol ammo" 16 8}
+
+		{item "m24 grenade" 0.5 1}
+		{item "m24_smoke grenade" 0.5 1}
+
+		{item "bandage_ger" 7 1}
+		{item "ger_sidecap_m39_var1_inf"}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

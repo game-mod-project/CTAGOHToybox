@@ -1,0 +1,73 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "stug3g_late_xx.mdl"}
+	{volume "barrel"
+		{thickness 53}
+	}
+	{volume "body1"
+		{thickness 53}
+	}
+	{volume "body2"
+		{thickness 53}
+	}
+	{volume "body3"
+		{thickness 53}
+	}
+	{volume "body4"
+		{thickness 53}
+	}
+	{volume "body5"
+		{thickness 53}
+	}
+	{volume "body6"
+		{thickness 53}
+	}
+	{volume "body7"
+		{thickness 53}
+	}
+	{volume "body8"
+		{thickness 53}
+	}
+	{volume "crew"
+		{thickness 53}
+	}
+	{volume "cupola"
+		{thickness 53}
+	}
+	{volume "engine"
+		{thickness 53}
+	}
+	{volume "mantlet1"
+		{thickness 53}
+	}
+	{volume "mantlet2"
+		{thickness 53}
+	}
+	{volume "mantlet3"
+		{thickness 53}
+	}
+	{volume "part1"
+		{thickness 53}
+	}
+	{volume "part2"
+		{thickness 53}
+	}
+	{volume "part3"
+		{thickness 53}
+	}
+	{volume "shieldl3"
+		{thickness 53}
+	}
+	{volume "shieldr1"
+		{thickness 53}
+	}
+	{volume "shieldr3"
+		{thickness 53}
+	}
+	{volume "trackleft"
+		{thickness 53}
+	}
+	{volume "trackright"
+		{thickness 53}
+	}
+}

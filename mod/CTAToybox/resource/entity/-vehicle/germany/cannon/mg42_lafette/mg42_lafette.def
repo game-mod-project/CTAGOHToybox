@@ -1,0 +1,9 @@
+{
+	(include "lafette__ctb_mg42_lafette_ae880cae.inc")
+	{props "cannon_sandbag_standard"}
+	{extender "inventory"
+		{box
+			{item "mg42_belt_long_ctb_ger" filling "ammo mgun_ger belt ap" 600 {user "mgun"}}
+		}
+	}
+}

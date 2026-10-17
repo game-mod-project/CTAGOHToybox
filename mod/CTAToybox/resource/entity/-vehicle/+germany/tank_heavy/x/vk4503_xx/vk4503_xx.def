@@ -1,0 +1,53 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "vk4503_xx.mdl"}
+
+	{volume "body"			; Hull
+		{thickness 240
+			{front 300}		; Lower Nose
+			{top 450}		; Glacis
+			{rear 75}
+			{bottom 75}
+		}
+	}
+	{volume "body1"			; Superstructure
+		{thickness 240
+			{front 450}
+			{top 120}
+			{rear 75}
+			{bottom 75}		; Overhang (above tracks)
+		}
+	}
+	{volume "engine"		
+		{thickness 240
+			{front 75}
+			{top 120}
+			{rear 240}
+			{bottom 75}		; Overhang (above tracks)
+		}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 240
+			{front 300}
+			{top 120}
+			{bottom 75}
+		}
+	}
+	{volume "turret2"		; Buldge for Cupola
+		{thickness 240
+			{top 120}
+			{bottom 75}
+		}
+	}
+	{volume "turret1"		; Turret Ring
+		{thickness 240
+			{front 300}
+			{top 75}
+			{bottom 75}
+		}
+	}
+	{volume "mantlet"
+		{thickness 360}
+		{CastSteel 0.8063}
+	}
+}

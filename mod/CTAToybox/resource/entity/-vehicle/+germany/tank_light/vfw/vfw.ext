@@ -1,0 +1,248 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("shield_tear"  args "shieldl1" 40)
+	("shield_tear"  args "shieldl2" 40)
+	("shield_tear"  args "shieldl3" 40)
+	("shield_tear"  args "shieldl4" 40)
+	("shield_tear"  args "shieldl5" 40)
+	("shield_tear"  args "shieldl6" 40)
+	("shield_tear"  args "shieldl7" 40)
+
+	("shield_tear" args "shieldr1" 40)
+	("shield_tear" args "shieldr2" 40)
+	("shield_tear" args "shieldr3" 40)
+	("shield_tear" args "shieldr4" 40)
+	("shield_tear" args "shieldr5" 40)
+	("shield_tear" args "shieldr6" 40)
+	("shield_tear" args "shieldr7" 40)
+
+
+	("gun" repair(30) thickness(120))
+	("tracks" repair(30) thickness(100))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")	
+
+	{volume "body1"	
+		{thickness 60}
+	}
+	{volume "body2"	
+		{thickness 60}
+	}
+	{volume "body3"	
+		{thickness 60}
+	}
+
+	{volume "engine1"
+		{thickness 60}
+	}
+	{volume "engine2"
+		{thickness 60}
+	}
+	{volume "engine3"
+		{thickness 60}
+	}
+
+	{volume "transmission"
+		{thickness 60
+		}
+	}
+
+	{volume "gun2"	
+		{thickness 60}
+	}
+	{volume "gun3"	
+		{thickness 60}
+	}
+
+	{volume "armor1"
+		{thickness 20
+		}
+	}
+	{volume "armor2"
+		{thickness 20
+		}
+	}
+	{volume "armor3"
+		{thickness 60
+		}
+	}
+	{volume "armor4"
+		{thickness 60
+		}
+	}
+	{volume "armor5"
+		{thickness 60
+		}
+	}
+	{volume "armor6"
+		{thickness 60
+		}
+	}
+	{volume "armor7"
+		{thickness 60
+		}
+	}
+	{volume "armor8"
+		{thickness 60
+		}
+	}
+	{volume "armor9"
+		{thickness 60
+		}
+	}
+	{volume "armor10"
+		{thickness 60
+		}
+	}
+	{volume "armor11"
+		{thickness 60
+		}
+	}
+	{volume "armor12"
+		{thickness 60
+		}
+	}
+	{volume "armor13"
+		{thickness 60
+		}
+	}
+
+{volume "gun_rot2_shield1"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield2"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield3"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield4"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield5"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield6"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield7"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield8"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield9"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield10"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield11"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield12"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield13"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield14"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield15"
+		{thickness 50
+		}
+	}
+{volume "gun_rot2_shield16"
+		{thickness 50
+		}
+	}
+
+{volume "gun_rot1"
+		{thickness 60
+		}
+	}
+{volume "gun_rot2"
+		{thickness 60
+		}
+	}
+{volume "gun_rot3"
+		{thickness 60
+		}
+	}
+{volume "gun_rot4"
+		{thickness 60
+		}
+	}
+{volume "gun_rot5"
+		{thickness 60
+		}
+	}
+{volume "gun_rot6"
+		{thickness 60
+		}
+	}
+{volume "gun_rot7"
+		{thickness 60
+		}
+	}
+{volume "gun_rot8"
+		{thickness 60
+		}
+	}
+{volume "gun_rot9"
+		{thickness 60
+		}
+	}
+{volume "gun_rot10"
+		{thickness 60
+		}
+	}
+{volume "gun_rot11"
+		{thickness 60
+		}
+	}
+{volume "gun_rot12"
+		{thickness 60
+		}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+	{component "shieldl7" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}
+	{component "shieldr7" {tags "cut_part"}}

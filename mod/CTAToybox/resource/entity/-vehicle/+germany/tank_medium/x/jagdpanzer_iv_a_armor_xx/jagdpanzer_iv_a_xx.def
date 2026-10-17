@@ -1,0 +1,36 @@
+{game_entity	
+	(include "/properties/vehicle_xx.ext")
+	{Extension "jagdpanzer_iv_a_xx.mdl"}	
+	
+		{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+		{rear 50}
+	}
+}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+	}
+}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+		{rear 50}
+	}
+}
+
+	{Volume "shieldL8"
+		{Thickness 15}
+	}
+	{Volume "shieldR8"
+		{Thickness 15}
+	}
+
+}

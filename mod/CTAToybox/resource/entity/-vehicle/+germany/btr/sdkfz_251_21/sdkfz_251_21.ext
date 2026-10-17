@@ -1,0 +1,86 @@
+("armoredcar_tier1")
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("tracks" repair(30) thickness(30))
+
+	("gun" repair(30) thickness(40))
+
+	("turret" repair(45))
+	("fuel" args "fuel")
+	("ammo" args "ammo")
+	("ammo" args "ammo2")
+	("transmission" args "transmission")
+
+	{volume "body1" {thickness 29} {able {holed}}}
+	{volume "transmission" {able {NoWoundDecal 0}}}
+
+	{volume "turret1"		; Turret
+		{thickness 9}
+	}
+
+	{volume "engine1"
+		{thickness 29}
+	}
+	{volume "engine2"
+		{thickness 29}
+	}
+
+	{volume "detail2"
+		{thickness 4}
+	}
+	{volume "detail1"
+		{thickness 4}
+	}
+	
+	{component "detail1" {tags "cut_part"}}
+	{component "detail2" {tags "cut_part"}}
+	
+	{Volume "wheelleft2"
+		{thickness 30}
+	}
+	{Volume "wheelleft3"
+		{thickness 30}
+	}
+	{Volume "wheelleft4"
+		{thickness 30}
+	}
+	{Volume "wheelleft5"
+		{thickness 30}
+	}
+	{Volume "wheelleft6"
+		{thickness 30}
+	}
+	{Volume "wheelleft7"
+		{thickness 30}
+	}
+	{Volume "wheelleft8"
+		{thickness 30}
+	}
+	{Volume "wheelleft9"
+		{thickness 30}
+	}
+	{Volume "wheelright2"
+		{thickness 30}
+	}
+	{Volume "wheelright3"
+		{thickness 30}
+	}
+	{Volume "wheelright4"
+		{thickness 30}
+	}
+	{Volume "wheelright5"
+		{thickness 30}
+	}
+	{Volume "wheelright6"
+		{thickness 30}
+	}
+	{Volume "wheelright7"
+		{thickness 30}
+	}
+	{Volume "wheelright8"
+		{thickness 30}
+	}
+	{Volume "wheelright9"
+		{thickness 30}
+	}

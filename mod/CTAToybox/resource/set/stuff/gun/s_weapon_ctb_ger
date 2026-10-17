@@ -1,0 +1,12 @@
+{from "pattern gun"
+	{filling "mine s" 1}
+	{entity "mine_s"}
+	("range_160")
+	{cursor "ironsights/aa"}
+	{calibre 13}
+
+	("human health" damage(0))
+	("fire rate" rpm(180))
+	("reload time" seconds(3))
+	("velocity" mps(24))
+}

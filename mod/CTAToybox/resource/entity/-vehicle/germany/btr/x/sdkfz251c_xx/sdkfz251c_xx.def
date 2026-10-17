@@ -1,0 +1,63 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz251c_xx.mdl"}
+
+	{volume "part1"		; wheel front left
+		{thickness 1}
+	}
+	{volume "part2"		; wheel front right
+		{thickness 1}
+	}
+
+	{volume "part4"		; track wheel left
+		{thickness 30}
+	}
+	{volume "part5"		; track wheel right 1
+		{thickness 30}
+	}
+	{volume "part6"		; track wheel right 2
+		{thickness 30}
+	}
+	
+	{volume "part9"		; engine door left
+		{thickness 20}
+	}
+	{volume "part10"	; engine door right
+		{thickness 20}
+	}
+	
+	{volume "body1"		; Lower Hull
+		{thickness 16}
+	}
+
+	{volume "body2"		; Upper Hull
+		{thickness 16}
+		{able {holed}}
+	}
+	
+	{volume "engine1"	; Lower
+		{thickness 16
+			{front 	29}
+		}
+	}
+	{volume "engine2"	; Upper
+		{thickness 16
+			{front 	29}
+			{top	20}
+		}
+	}
+	{Volume "part8" ; MG Shield
+		{thickness 16}
+	}
+
+	{volume "part3"		; door left
+		{thickness 16}
+		{able {obstacle 0}}
+	}
+	
+	{volume "part7"		; door right
+		{thickness 16}
+		{able {obstacle 0}}
+	}
+	("tracks" thickness(30))
+}

@@ -1,0 +1,4 @@
+{from "mg34_tank"
+	{filling "mgun_ger" 75}
+	{rechargeTime 4.25}
+}

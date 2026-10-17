@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pz_pio_nco_stg"}
+	{portrait "ger_pionier"}
+	{icon "stg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m39_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_defense")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "stg44_ctb_ger" filled}
+		{item "stg44 ammo" 900}
+
+		{item "m24_splinter grenade" 4.5 1}
+		{item "nbk39 grenade" 4.5 1}
+
+		{item "bandage_ger" 7 1}
+
+		{in_hands 0}
+	}
+}

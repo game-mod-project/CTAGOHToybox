@@ -1,0 +1,40 @@
+;SDL
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 30mm
+
+	("tank_medium_tier2")
+
+	("tracks" repair(30) thickness(60))
+	("gun" repair(30) thickness(90))
+
+	{volume "engine"
+		{thickness 60
+			{rear 30}
+			{front 30}
+			{bottom 45}
+		}
+	}
+	{volume "body"
+		{thickness 60
+			{front 90}
+			{top 45}
+			{bottom 45}
+		}
+	}
+	{volume "turret"
+		{thickness 60
+			{front 90}
+			{top 45}
+			{bottom 45}
+		}
+	}
+	{volume "shieldl1"
+		{thickness 90}
+	}
+	{volume "shieldl2"
+		{thickness 90}
+	}
+	{volume "shieldl3"
+		{thickness 90}
+	}

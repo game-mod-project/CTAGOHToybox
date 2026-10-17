@@ -1,0 +1,17 @@
+{from "pattern mgun"
+	{tag "mgun_light"}
+	{inventory {size 6 2}}
+	{filling "ammo lewis_mag" 97}
+	{entity "lewis_gun"}
+	{fireSound 	"smallarms/s3/d1/ENG/Lewis_Gun/Head/"}
+	{fireSoundclose "smallarms/s3/3p/ENG/Lewis_Gun/"}
+	{reloadSound "dt"}
+	{calibre 7.62}
+	{mass 7.2}
+
+	("fire rate" rpm(580))
+	("velocity" mps(743.7))
+	("burst_medium")
+	("spreading_medium")
+	{rechargeTime 3}
+}

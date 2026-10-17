@@ -1,0 +1,34 @@
+{game_entity
+	{Extension "pzkpfw_2hvk903_xx.mdl"}
+	(include "/properties/vehicle_xx.ext")	
+	{volume "body"
+		{thickness 40}
+	}
+	{volume "body1"
+		{thickness 40}
+	}
+	{volume "body2"
+		{thickness 40}
+	}
+	{volume "turret"
+		{thickness 40}
+	}
+	{volume "turret1"
+		{thickness 40}
+	}
+	{volume "turret2"
+		{thickness 40}
+	}
+	{volume "gun"
+		{thickness 40}
+	}
+	{volume "mantlet"
+		{thickness 40}
+	}
+	{volume "trackleft"
+		{thickness 20}
+	}
+	{volume "trackright"
+		{thickness 20}
+	}
+}

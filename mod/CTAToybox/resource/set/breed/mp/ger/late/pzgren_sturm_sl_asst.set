@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pzgren_sturm_nco_stg_1"}
+	{portrait "ger_pzgrenadier"}
+	{icon "stg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "stg44_ctb_ger" filled}
+		{item "stg44 ammo" 900}
+
+		{item "m24 grenade" 4.5 1}
+		{item "m24_smoke grenade" 4.5 1}
+		{item "m24_geballteladung grenade" 2}
+		{item "faustpatrone_30_ctb_ger weapon" 1 1 filled}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,38 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/55 "pak44 Static" (物理严谨修复版)
+	{desc "128mm PaK46 L/71"}
+	{filling "bulletger_128_2"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	("range_220")
+	{calibre 128}
+
+	("reload time" seconds(6.25))
+
+	("velocity m/s" ap(1020) apcr(1500) he(850) heat(1))
+	("armor health" damage(340))
+	("armor health custom" shell(apche) damage(340) velocity(1020) filler(786))
+	("armor health custom" shell(apcbche) damage(340) velocity(1020) filler(786))
+	("armor health custom" shell(apds) damage(340) velocity(1500) filler(0))
+	("128_slope_multipliers")
+
+	; Pzgr.43
+	("penetration_long" shell(apcbche) range(230) a(295) b(275) c(255) d(230) e(210))
+
+	; 12.8/8.8cm Pzgr.T.46
+	("penetration_long" shell(apds) range(230) a(350) b(325) c(290) d(250) e(220))
+
+	{parameters "he"
+		{range 230 230}
+	}
+
+	; He
+	("penetration_long" shell(he) range(230) a(37) b(37) c(37) d(37) e(37))  ;RHA
+
+	("accuracy_direct" r1(0.45) range_ap(230) range_he(230) range_heat(230))
+}

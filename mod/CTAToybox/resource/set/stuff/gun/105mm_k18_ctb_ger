@@ -1,0 +1,28 @@
+;_________________________________________
+; German heavy field gun
+;=========================================
+
+
+{from "pattern gun"			; Dicker Max
+	{filling "bulletger_105"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundClose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	{range 220 220}
+	{calibre 105}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(822) apcr(1) he(835) heat(1))
+	("armor health" damage(350))
+	("armor health custom" shell(aphe) damage(325) velocity(822) filler(238))
+	("armor health custom" shell(apcbche) damage(325) velocity(822) filler(357))
+
+	; Pzgr.
+	("penetration_long" shell(aphe) range(220) a(155) b(144) c(133) d(123) e(114) f(105))
+
+	; Pzgr. Rot
+	("penetration_long" shell(apcbche) range(220) a(187) b(173) c(159) d(147) e(136) f(125))
+
+	("accuracy_direct" r1(0.70) range_ap(220) range_he(220) range_heat(210))
+}

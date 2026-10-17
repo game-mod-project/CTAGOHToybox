@@ -1,0 +1,40 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_rfl_sniper_elite"}
+	{portrait "ger_sniper"}
+	{icon "sniper"}
+	{icon_priority 1}
+	{tags "soldier"}
+	{nationality ger}
+	{voice ger_sniper}
+	{armors
+		{head ger_fieldcap_m43_off}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("stealth")
+		("sniper_vision")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "g43_scope_ctb_ger" filling "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger gewehr ammo" 100}
+		{item "rifle_ger clip ammo" 450 50}
+
+		{item "m24 grenade" 2.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 0.3 1}
+
+		{item "bandage_ger" 11 1}
+		{item "knife_ger"}
+		{item "ger_stalhelm_m43_cover_band"}
+
+		{in_hands 0}
+	}
+}

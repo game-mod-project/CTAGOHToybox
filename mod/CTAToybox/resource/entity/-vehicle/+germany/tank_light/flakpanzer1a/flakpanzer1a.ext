@@ -1,0 +1,201 @@
+;SDL
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+	; spare tracks 15mm
+
+
+	
+
+	("ammo" args "ammo1")
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+
+	("tank_light_tier1")
+	("tracks" repair(30) thickness(30))
+	("gun" repair(30) thickness(30))
+	
+	{Volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body4"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body5"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body6"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body7"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body8"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body9"
+		{tags "body"}
+		{component "body"}
+		{thickness 
+			{front 26}	
+			{left 26}	
+			{right 26}
+			{rear 26}
+			{bottom 16}
+			{top 16}
+		}
+	}
+	{Volume "body_cover1"
+		{Thickness 26}
+	}
+	{Volume "body_cover2"
+		{Thickness 26}
+	}
+	{Volume "body_cover3"
+		{Thickness 26}
+	}
+	{Volume "body_cover4"
+		{Thickness 26}
+	}
+	{Volume "body_cover5"
+		{Thickness 26}
+	}
+	{Volume "end1"
+		{Thickness 14}
+	}
+	{Volume "end2"
+		{Thickness 14}
+	}
+	{Volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 10}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 14}
+	}
+	{Volume "turret_cover1"
+		{Thickness 14}
+	}
+	{Volume "turret_cover2"
+		{Thickness 14}
+	}
+	{Volume "turret_cover4"
+		{Thickness 14}
+	}
+	{Volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 
+			{front 14}
+		}
+	}
+
+	{extender "shield"
+		{on}
+	}
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+
+	("shield_group" args "shieldl1" 16 "shield")
+	("shield_group" args "shieldl2" 16 "shield")
+	("shield_group" args "shieldl3" 16 "shield")
+	("shield_group" args "shieldl4" 16 "shield")
+	("shield_group" args "shieldl5" 16 "shield")
+	("shield_group" args "shieldr1" 16 "shield")
+	("shield_group" args "shieldr2" 16 "shield")
+	("shield_group" args "shieldr3" 16 "shield")
+	("shield_group" args "shieldr4" 16 "shield")
+	("shield_group" args "shieldr5" 16 "shield")
+	
+	

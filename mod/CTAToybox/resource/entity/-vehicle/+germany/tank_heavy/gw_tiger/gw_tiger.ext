@@ -1,0 +1,124 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+	("gun2" repair(30) thickness(150))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			
+		{thickness 90
+		    {front  180}
+			{bottom	48}
+			{top 48}
+			{rear  48}
+		} 
+	}
+	{volume "body2"			
+		{thickness 540
+		}
+	}
+	{volume "body3"			
+		{thickness 90
+		    {front  180}
+			{bottom	48}
+			{top 180}
+			{rear  48}
+		} 
+	}
+	{volume "body4"			
+		{thickness 90
+		    {front  180}
+			{bottom	48}
+			{top 48}
+			{rear  48}
+		} 
+	}
+	{volume "body5"			
+		{thickness 90
+		    {front  180}
+			{bottom	48}
+			{top 48}
+			{rear  48}
+		} 
+	}
+	{volume "engine"		
+		{thickness 90
+		    {front  180}
+			{bottom	48}
+			{top 48}
+			{rear  48}
+		} 
+	}
+	{volume "armorl1"
+		{thickness 48
+		}
+	}
+	{volume "armorl2"
+		{thickness 48
+		}
+	}
+	{volume "armorl3"
+		{thickness 48
+		}
+	}
+	{volume "armorl4"
+		{thickness 48
+		}
+	}
+	{volume "armorr1"
+		{thickness 48
+		}
+	}
+	{volume "armorr2"
+		{thickness 48
+		}
+	}
+	{volume "armorr3"
+		{thickness 48
+		}
+	}
+	{volume "armorr4"
+		{thickness 48
+		}
+	}
+	{volume "armorb1"
+		{thickness 48
+		}
+	}
+	{volume "armorb2"
+		{thickness 48
+		}
+	}
+	{volume "gunsheild"
+		{thickness 90
+		}
+	}
+	{volume "gunsheild2"
+		{thickness 90
+		}
+	}
+	{volume "armorfront1"
+		{thickness 90
+		}
+	}
+	{volume "armorfront2"
+		{thickness 90
+		}
+	}
+	{volume "armorfront3"
+		{thickness 90
+		}
+	}
+

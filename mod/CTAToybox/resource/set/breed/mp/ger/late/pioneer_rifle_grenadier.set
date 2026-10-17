@@ -1,0 +1,40 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pio_rfl_gren"}
+	{portrait "ger_pionier"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_band_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_grenade_launcher_ctb_ger" filling "k98_grenade heata ammo" 2}
+		{item "k98_grenade he ammo" 50}
+		{item "k98_grenade heata ammo" 25}
+
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+
+		{item "m24_splinter grenade" 4.5 1}
+		{item "nbk39 grenade" 2.5 1}
+		{item "hafthohlladung grenade" 1.5 1}
+
+		{item "bandage_ger" 7 1}
+		{item "wirecutters"}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,7 @@
+{from "stg44"
+	{entity "mkb42h"}
+	{mass 4.9}
+
+	("velocity" mps(640))
+	{rechargeTime 2.25}
+}

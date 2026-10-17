@@ -1,0 +1,41 @@
+
+
+	("tracks" repair(30) thickness(38))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "inventory")
+
+	("make_component" args "body2" "body")
+
+	;front, side(left/right), back, cover(top/bottom)
+	{volume "body"			; Superstructure
+		{thickness 63
+			{front 200}
+			{top 63}
+			{rear 63}
+			{bottom 63}		; Overhang (above tracks)
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 200
+			{front 200}
+			{top 200}
+			{rear 200}
+			{bottom 200}		; Overhang (above tracks)
+		}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 150
+			{front 150}
+			{top 150}
+			{bottom 150}
+		}
+	}
+	{volume "mantlet"
+		{thickness 200
+		}
+	}
+	{volume "engine"
+		{thickness 63
+		}
+	}

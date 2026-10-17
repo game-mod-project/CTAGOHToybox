@@ -1,0 +1,70 @@
+{game_entity
+	(include "/properties/cannon_mgun__ctb_mg131_tripod_ec7d4e1c.ext")
+	{Extension "mg131_tripod.mdl"}
+	{props "vision_lev00_can" "no_sandbags" "detect_cannon_aa" "sq_mg"}
+
+	{boarder
+		{anm "gunner"
+			{forward {end "m2_30cal_tripod_gunner" 10}}
+		}
+		{anm "commander"
+			{forward {end "m2_30cal_tripod_loader" 10}}
+		}
+		{anm "driver1"
+			{forward {end "mgun_browning_driver_r"}}
+		}
+		{anm "driver2"
+			{forward {end "mortar_driver_l"}}
+		}
+	}
+
+	{extender "cannon"
+		{animation
+		;// "gunner" "commander"
+			{move "mgun_browning_driver_r" "mortar_driver_l"}
+			{fire "" ""} ;mg_maxim_gunner_fire
+			{aim "" ""}
+			{reload "" ""}
+		}
+	}
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "mg131_bipod_ctb_ger" filling "ammo hmgun_ger" 300 {user "mgun"}}
+			{item "ammo hmgun_ger" 12500}
+		}
+	}
+	
+	{Weaponry
+		{place "mgun"
+			{type "main"}
+			{gunner "gunner"}
+			{charger "gunner"}
+			{LinkBone "mgun"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{Rotate}
+		}
+	}
+
+	{mass 32}
+	{Chassis
+		("mobility_cannon"
+			speed(12) ;----------------------------------Max speed.
+			weight(32) ;---------------------------------Weight in Kilograms.
+		)
+	}
+
+	{bone "basis"
+		{speed2 20}
+	}
+	{bone "gun_rot"
+		{limits -15 15}
+		{speed2 60}
+	}
+	{bone "turret"
+		{limits -13 13}
+		{speed2 60}
+	}
+}

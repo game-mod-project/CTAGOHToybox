@@ -1,0 +1,9 @@
+;SDL
+
+(include "car__ctb_kettenkrad_eng_0c8b3799.ext")
+{props "halftrack"}
+("tracks" repair(30) thickness(40))
+
+{extender "talk"
+	{talker "tank"}
+}

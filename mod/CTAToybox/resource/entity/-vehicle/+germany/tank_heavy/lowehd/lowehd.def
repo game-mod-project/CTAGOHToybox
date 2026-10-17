@@ -1,0 +1,136 @@
+{game_entity
+	(include "/properties/tank__ctb_lowehd_822e2e85.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "heavy" "vision_lev05" "muzzle_100mm_105mm_sides" "diesel" "detect_tank_heavy"}
+	{extension "lowehd.mdl"}
+	(include "lowehd.ext")
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{collider "tank.heavy"}
+	{PatherId "tiger2"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+		}
+	}
+
+	("crew_5_human")
+	;("crew_human_visible" 	place(gunner2)	door1(emit1) door2(emit2) visor(main))
+
+	("gunner_visible")
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bulletger_105_l70 apcbche" 95}	; 46 rounds ;22
+			{item "bulletger_105_l70 apcr" 25}	
+			{item "bulletger_105_l70 he" 80}
+			{item "bulletger_105_l70 heat" 25}	
+			{item "ammo mgun_ger belt" 15000}		; 32 belts (150 rounds each) ;2700
+			{item "ammo mgun_ger drum" 3000}				; 12 drums (50 rounds each)
+			{item "mg42_drum_ctb_ger" filled {user "mgun"}}
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 4}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "105mm_kwk42_ctb_ger" filling "bulletger_105_l70 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight5"}
+			{gunner "gunner3"}
+			{gunner "gunner3"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun"
+			{type "aa"}
+			{gunner "commander"}
+			{charger "commander"}
+			{LinkBone "mgun_rot"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 92500}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.8)) ;("tank_trace" fx("tracks_big") step(0.47) len(0.98))
+		("mobility_tank"
+			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(14) ;---------Max speed in reverse on road, km/h. ;9 12
+			traverse(20) ;-------Track traverse, per second, in degrees. ;18
+			weight(92.5) ;-------Weight in Tonnes.
+			power(800) ;---------Engine Power, in hp. Maybach HL 230 P30 or Maybach HL 234 (900).
+			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(5200) ;----------Fuel capacity in Litres.
+			type(fuel) ;-------Fuel type. (diesel OR fuel)
+			range(1000) ;---------Range in km, off-road.
+		)
+	}
+
+	;{bone "gun_rot"
+	;	{limits -4 20}
+	;	{speed2 3}
+	;}
+	{bone "turret"
+		;{speed 0.004}
+		{speed2 8}
+	}
+	{bone "gun_rot"
+		{limits -14 14}
+		;{speed 8.004}
+		{speed2 4}
+	}
+	;{bone "turret"
+	;	{speed2 8}
+	;}
+
+	{texmod "camo"}
+}

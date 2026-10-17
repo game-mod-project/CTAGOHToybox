@@ -1,0 +1,155 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "pz35t_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 30}
+	}
+	{volume "barrel2"
+		{thickness 30}
+	}
+	{volume "body1"			; lower Hull
+		{thickness 32
+			{front 50}
+			{top 32}		; glacis
+			{rear 10}
+			{bottom 16}
+		}
+	}
+	{volume "body2"			; upper hull
+		{thickness 10
+			{front 50}
+			{left 32}
+			{right 32}
+		}
+	}
+	{volume "body3"			; superstructure
+		{thickness 32
+			{front 50}
+			{top 24}
+			{rear 10}
+		}
+	}
+	{volume "cupola"
+		{thickness 50}
+	}
+	{volume "engine1"		; main engine
+		{thickness 32
+			{front 10}
+			{top 24}
+			{bottom 16}
+		}
+	}
+	{volume "engine2"		; engine left side
+		{thickness 32
+			{front 10}
+			{top 24}
+			{bottom 16}
+		}
+	}
+	{volume "engine3"		; engine right side
+		{thickness 32
+			{front 10}
+			{top 24}
+		}
+	}
+	{volume "hatch"
+		{thickness 50}
+	}
+	{volume "mantlet"
+		{thickness 50}
+	}
+	{volume "part2"
+		{thickness 24}
+	}
+	{volume "trackleft1"
+		{thickness 30}
+	}
+	{volume "trackleft2"
+		{thickness 30}
+	}
+	{volume "trackleft3"
+		{thickness 30}
+	}
+	{volume "trackleft4"
+		{thickness 30}
+	}
+	{volume "trackleft5"
+		{thickness 30}
+	}
+	{volume "trackleft6"
+		{thickness 30}
+	}
+	{volume "trackleft7"
+		{thickness 30}
+	}
+	{volume "trackleft8"
+		{thickness 30}
+	}
+	{volume "trackleft10"
+		{thickness 30}
+	}
+	{volume "trackleft11"
+		{thickness 30}
+	}
+	{volume "trackleft12"
+		{thickness 30}
+	}
+	{volume "trackleft13"
+		{thickness 30}
+	}
+	{volume "trackright1"
+		{thickness 30}
+	}
+	{volume "trackright2"
+		{thickness 30}
+	}
+	{volume "trackright3"
+		{thickness 30}
+	}
+	{volume "trackright4"
+		{thickness 30}
+	}
+	{volume "trackright7"
+		{thickness 30}
+	}
+	{volume "trackright8"
+		{thickness 30}
+	}
+	{volume "trackright9"
+		{thickness 30}
+	}
+	{volume "trackright11"
+		{thickness 30}
+	}
+	{volume "trackright12"
+		{thickness 30}
+	}
+	{volume "trackright13"
+		{thickness 30}
+	}
+	{volume "turret1"
+		{thickness 32		; main turret
+			{front 16}
+			{top 16}
+			{bottom 16}
+		}
+	}
+	{volume "turret2"		; turret ring
+		{thickness 32}
+	}
+	{volume "turret3"		; turret front
+		{thickness 32
+			{front 50}
+			{top 16}
+			{rear 16}
+			{bottom 16}
+		}
+	}
+	{volume "turret4"		; left side of mantlet
+		{thickness 50}
+	}
+	{volume "turret5"		; right side of mantlet
+		{thickness 50}
+	}
+}

@@ -1,0 +1,35 @@
+{breed
+	{behaviour soldier}
+	{skin "us_m41_ranger_hs2_rfl_band_pfc"}
+	{portrait "ger_regular"}
+	{icon "rifle"}
+	{icon_priority 6}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head us_m1_b}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "m1_carbine_ctb_ger" filling "m1_carbine_mag ammo" 30}
+		{item "m1_carbine_mag ammo" 300}
+
+		{item "m24 grenade" 4.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+
+		{item "mgun_ger belt ammo" 2500}
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

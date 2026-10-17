@@ -1,0 +1,126 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+
+	("tank_heavy_tier2")
+
+	("make_component" args "barrel11"     "gun1")
+	("make_component" args "barrel12"     "gun1")
+
+	("tracks" repair(50) thickness(90))
+	("gun1" repair(15) thickness(60))
+	("gun" repair(30) thickness(780))
+
+	{volume "trackleft"
+		{able {holed}}
+	}
+	{volume "trackright"
+		{able {holed}}
+	}
+
+	("shield_tear" args "shieldl1" 120)	
+	("shield_tear" args "shieldl2" 120)
+	("shield_tear" args "shieldl3" 120)
+	("shield_tear" args "shieldr1" 120)	
+	("shield_tear" args "shieldr2" 120)
+	("shield_tear" args "shieldr3" 120)
+
+	("shield_tear" args "shieldl4" 90)
+	("shield_tear" args "shieldr4" 90)
+
+	;("shield" args "shield_front" 50)	
+	
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 360
+			{front 450} 	; 14.5mm base
+			{top 120}
+			{bottom 240}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body2"			; Hull
+		{thickness 360
+			{front 450} 	; 14.5mm base
+			{top 120}
+			{bottom 240}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine1"		; Hull
+		{thickness 360
+			{top 120}		; Glacis
+			{bottom 240}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine2"		; Hull
+		{thickness 360
+			{top 120}		; Glacis
+			{bottom 240}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 600
+			{front 660} 	; 14.5mm base
+			{top 180}		; Glacis
+			{bottom 240}
+		}
+		{Quality "large_flaw"}														
+	}
+	{volume "turret2"		; Front Lower Cheek
+		{thickness 600
+			{front 600} 	; 14.5mm base
+			{top 180}		; Glacis
+			{bottom 240}
+		}
+		{Quality "large_flaw"}
+	}
+	
+	{volume "barrel11"
+		{thickness 60}	
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+        }
+	{volume "barrel12"
+		{thickness 60}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+        }
+
+	{volume "cupola1"
+		{thickness 120}
+        }
+	{volume "cupola2"
+		{thickness 120}
+        }
+
+	{volume "mantlet"
+		{thickness 780}
+		{Quality "large_flaw"}
+        }
+
+	{volume "barrel1"
+		{thickness 780}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+        }
+
+	{volume "shield_front"
+		{thickness 150}
+		{Quality "large_flaw"}
+		{tags "armor"}
+    }
+
+
+	

@@ -1,0 +1,28 @@
+{from "pattern rifle_grenade"
+	{tag "at_rifle" "ap"}
+	{entity "grb_39"}
+	{filling "ammo grb_39_bullet" 1}
+	{fillingVisible "grenade"}
+	{fireSound "smallarms/s3/d1/GER/K98k/Schiessbecher/"}
+	{fireSoundclose "smallarms/s3/3p/GER/K98k/Schiessbecher/"}
+	{reloadSound "kar98"}
+	{calibre 60}
+	{mass 8.2}
+
+	{parameters "he"
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_he"}
+		{spreading 6
+			{SpreadXYRatio 0.75}
+		}
+		{range 80 80}
+	}
+
+	{parameters "heat" ;gew.pz.gr.30 Feb '42
+		{cursorReloading "gun_heat"}
+		{range 60 60}
+		("penetration" args 120)
+		("armor health" damage(180))
+	}
+	{rechargeTime 5}
+}

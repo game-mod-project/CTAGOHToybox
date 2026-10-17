@@ -1,0 +1,125 @@
+{Low
+	{GlobalMaxCP 9999}
+	;{StageCP 50 60 70 80 90}
+	{StageCP 9999 9999 9999 9999 9999}
+	{SpecialCP 450}					;// airstrikes special tab
+	{EmplacementCP 450}				;// buildable with engineer
+	{Bots
+		{StartMP	1.5 min 99999 attackerMultiplier 1.5} ;// lite 2026-09-26 (main: 3.0 min 190000 x7.00)
+		{FinishMP	1.5 min 99999 attackerMultiplier 1.5} ;// lite 2026-09-26 (main: 3.0 min 190000 x7.00)
+		{CP
+			{Base "0:300"} ;// lite 2026-09-26 (main: "0:600 300:750 600:900 900:1000") ;// seconds : CP
+			{RoundMultiplier "0:0.65 2:0.8 4:0.9 6:1.0 8:1.1 12:1.2 14:1.3"} ;// games played : multiplier for CP
+			{AttackMultiplier 100}
+		}
+		{DefenseLevel
+			{level_1
+				{DefenseBudgetPlayer	0.5}	;// budget it multiplied by number of flags
+				{DefenseBudgetAI		0.5} ;// lite 2026-09-26 (main 2.0)	;// places defender units with bot StartMP * this factor (StartMP without attackermultiplier) for player side
+				{unlock games 0 progress 0.0}	;// number of games to unlock this level, or progress in percent (campaign progress bar)
+			}
+			{level_2							;// once level is reached previous level values are ignored only currently level is used
+				{DefenseBudgetPlayer	0.75}
+				{DefenseBudgetAI		0.75} ;// lite 2026-09-26 (main 2.5)
+				{unlock games 0 progress 0.0}
+			}
+			{level_3
+				{DefenseBudgetPlayer	1.0}
+				{DefenseBudgetAI		1.0} ;// lite 2026-09-26 (main 3.0)
+				{unlock games 0 progress 0.0}
+			}
+		}
+	}
+	;// {factor MP / SP / AP / RP} Assumes value of 1 if not defined.
+	{PaybackFactor 0.6 0 0 0}		;// MP paid back when loosing solider, squad or vehicle
+	{SellFactor 0.7 0 0 0}
+	{ScavengedVehicleSellFactor 0.7 0 0 0}		;// captured enemy vehicle
+	{RiskFactor
+		{Low
+			{BotResources 1.0} ;// lite 2026-09-26 (main 3.0)
+			{BotVeterancy 4}
+			{Rewards 1.0}
+		}
+		{Standard
+			{BotResources 1.25} ;// lite 2026-09-26 (main 4.0)
+			{BotVeterancy 6}
+			{Rewards 1.25}
+		}
+		{High
+			{BotResources 1.5} ;// lite 2026-09-26 (main 5.0)
+			{BotVeterancy 8}
+			{Rewards 1.5}
+		}
+	}
+	{Resources
+		{MP ;// Manpower (generic money)
+			{StartVal 99999} ;// lite 2026-09-26 (main 9999999)
+			{WinGain "1:99999"}
+			{LoseGain "1:99999"}
+			{MapRewards	;//Bonus resources on various game types (a game can only be one randomly chosen type). Types: Airfield, Ammodepot, Bonus, Factory, Research.
+				{Airfield	300}
+				{Ammodepot	300}
+				{Bonus		600}
+				{Factory	450}
+				{Research	300}
+			}
+		}
+		{SP ;// Special Points (airstrikes)
+			{StartVal 999}
+			{WinGain 999}
+			{LoseGain 999}
+			{MapRewards
+				{Airfield 6}
+			}
+		}
+		{AP ;// Ammo points
+			{StartVal 99999} ;// lite 2026-09-26 (main 9999999)
+			{WinGain "1:99999"}
+			{LoseGain "1:99999"}
+			{MapRewards
+				{Airfield	150}
+				{Ammodepot	1350}
+				{Bonus		300}
+				{Factory	750}
+				{Research	150}
+			}
+		}
+		{RP ;// Research points
+			{StartVal 999} ;// lite 2026-09-26 (main 5000)
+			{WinGain 999}
+			{LoseGain 999}
+			{MapRewards
+				{Bonus		3}
+				{Research	5}
+			}
+		}
+		{Budget
+			{Start "0:99999 10:99999 20:99999 16:99999 20:99999"} ;// games played : starting CP of each match
+			{PointsPerSecond 0.25} ;// CP income
+			{Limit 99999} ;// Max CP
+		}
+	}
+	{ResupplyCost
+		{Human
+			{NewItem 1 AP}
+			{Weight 1 AP}
+			{Mechanic 0.25 AP}
+		}
+		{Vehicles
+			{Weight 1 AP}
+			{Fuel 0.25 AP}
+			{Resupply 0.15 AP}
+			{BrokenComponent
+				{body 40 % MP 1 % AP}
+				{turret 20 % MP 1 % AP}
+				{engine 20 % MP 1 % AP}
+				{track 10 % MP 1 % AP}
+				{shield 1 % MP 1 % AP}
+				{other 2 % MP 1 % AP} ;// If none of the above. Required.
+			}
+		}
+		{Support
+			{Airstrikes 100 % SP}
+		}
+	}
+}

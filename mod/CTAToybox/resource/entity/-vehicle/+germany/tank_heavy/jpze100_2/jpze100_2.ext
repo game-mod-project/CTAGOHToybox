@@ -1,0 +1,127 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("shield_tear"  args "shieldl1" 450)
+	("shield_tear"  args "shieldl2" 450)
+	("shield_tear"  args "shieldl3" 450)
+
+
+	("shield_tear" args "shieldr1" 450)
+	("shield_tear" args "shieldr2" 450)
+	("shield_tear" args "shieldr3" 450)
+
+
+	("gun" repair(30) thickness(300))
+	("tracks" repair(30) thickness(250))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")	
+
+	{volume "body1"	
+		{thickness 1500
+		}
+	}
+	{volume "body2"	
+		{thickness 750
+			{front 1250}		
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "body3"	
+		{thickness 1000}
+	}
+	{volume "body4"
+		{thickness 600
+			{front 1250}		
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "body5"
+		{thickness 600
+			{front 750}		
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "body6"
+		{thickness 600
+			{front 800}		
+			{top 200}
+		}
+	}
+	{volume "body7"
+		{thickness 600
+			{front 800}		
+			{top 200}
+		}
+	}
+	{volume "aux_turret1"
+		{thickness 600
+			{front 800}		
+			{top 200}
+		}
+	}
+
+
+	{volume "engine"
+		{thickness 600
+			{front 600}		
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+
+	{volume "gunrot"	
+		{thickness 1000
+			{front 1650}	
+		}
+	}
+	{volume "gunrot2"	
+		{thickness 1250
+		}
+	}
+
+	{volume "gun3"
+		{thickness 100
+		}
+	}
+
+	{volume "transmission"
+		{thickness 100
+		}
+	}
+
+	{volume "board1"
+		{thickness 50
+		}
+	}
+	{volume "board2"
+		{thickness 50
+		}
+	}
+	{volume "board3"
+		{thickness 50
+		}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+

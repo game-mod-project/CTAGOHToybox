@@ -1,0 +1,87 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "grille_k_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 60}
+	}
+	{volume "barrel2"
+		{thickness 60}
+	}
+	{volume "barrel3"
+		{thickness 60}
+	}
+	{volume "body1"			; Hull and Superstructure Front Half
+		{thickness 30
+			{front 30}
+			{top 20}		; Glacis
+			{bottom 16}
+		}
+	}
+	{volume "body2"			; Driver's Cabin
+		{thickness 30
+			{top 16}
+		}
+	}
+	{volume "body3"			; Hull Rear bottom
+		{thickness 30
+			{rear 20}
+			{bottom 16}
+		}
+	}
+	{volume "body4"			; Super Superstructure Rear upper
+		{thickness 30
+			{top 16}
+			{front 12}
+			{bottom 16}
+		}
+		{able {holed}}
+	}
+
+	{volume "engine1"		; Lower Half
+		{thickness 30
+			{rear 12}
+			{bottom 16}
+		}
+	}
+	{volume "engine2"		; Upper Half
+		{thickness 30
+			{top 16}
+			{rear 12}
+			{bottom 16}
+		}
+	}
+
+
+	{volume "tshield1"
+		{thickness 20}
+	}
+	{volume "tshield2"
+		{thickness 20}
+	}
+	{volume "tshield3"
+		{thickness 20}
+	}
+	{volume "tshield4"
+		{thickness 20}
+	}
+	{volume "tshield5"
+		{thickness 20}
+	}
+	{volume "tshield6"
+		{thickness 20}
+	}
+	{volume "tshield7"
+		{thickness 20}
+	}
+	{volume "tshield8"
+		{thickness 20}
+	}
+	{volume "tshield9"
+		{thickness 20}
+	}
+	{volume "tshield10"
+		{thickness 20}
+	}
+	("tracks" thickness(30))
+}

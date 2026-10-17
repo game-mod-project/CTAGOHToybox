@@ -1,0 +1,78 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "pz38t_f_xx.mdl"}
+	
+	{volume "barrel"
+		{thickness 30}
+	}
+	{volume "body1"			; Hull
+		{thickness 30
+			{front 100}		; 25mm base + 25mm plate
+			{top 24}		; Glacis
+			{rear 16}
+			{bottom 16}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 
+			{front 100}		; 25mm base + 25mm plate
+			{top 16}
+			{left 60}		; 15mm base + 15mm plate
+			{right 60}		; 15mm base + 15mm plate
+			{rear 30}
+			{bottom 16}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 30
+			{front 16}
+			{top 16}
+			{bottom 16}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 30
+			{front 16}
+			{top 20}
+			{bottom 16}
+		}
+	}
+	{volume "turret"		; Front side (box shape)
+		{thickness 60
+			{front 100}		; 25mm base + 25mm plate
+			{top 24}
+			{rear 24}
+			{bottom 60}
+		}
+	}
+	{volume "turret1"		; Front half
+		{thickness 60
+			{top 24}
+			{rear 24}
+			{bottom 24}
+		}
+	}
+	{volume "turret2"		; Rear half
+		{thickness 60
+			{front 16}
+			{top 24}
+			{rear 50}
+			{bottom 16}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 50}
+	}
+	{volume "mantlet2"
+		{thickness 50}
+	}
+	{volume "cupola"
+		{thickness 30
+			{top 16}
+		}
+	}
+	{volume "part3"
+		{thickness 10}
+	}
+	("tracks" thickness(30))
+}

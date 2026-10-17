@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_smg_3"}
+	{portrait "ger_regular"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m43_cap}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_standard")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_unfolded_ctb_ger" filled}
+		{item "m24 grenade" 2 1}
+		{item "m24_geballteladung grenade" 1 1}
+		{item "mp40 ammo" 1920}
+		{item "bandage_ger" 6}
+		{in_hands 0}
+	}
+}

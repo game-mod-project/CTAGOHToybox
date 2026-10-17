@@ -1,0 +1,144 @@
+
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "inventory")
+
+	;volume, component/tag
+	("make_component" args "body1" "body")
+
+	{volume "body"			; Superstructure
+		{thickness 250
+			{front 300}
+			{top 200}
+			{rear 250}
+			{bottom 250}		; Overhang (above tracks)
+		}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 250
+			{front 375}
+			{top 250}
+			{bottom 250}
+		}
+	}
+	{volume "mantlet"
+		{thickness 625
+		}
+	}
+	{volume "shield"
+		{thickness 50
+		}
+	}
+	{volume "shieldL1"
+		{thickness 38
+		}
+	}
+	{volume "shieldR1"
+		{thickness 38
+		}
+	}
+	{volume "shieldL2"
+		{thickness 38
+		}
+	}
+	{volume "shieldR2"
+		{thickness 38
+		}
+	}
+	{volume "shieldL3"
+		{thickness 38
+		}
+	}
+	{volume "shieldR3"
+		{thickness 38
+		}
+	}
+	{volume "shieldL4"
+		{thickness 38
+		}
+	}
+	{volume "shieldR4"
+		{thickness 38
+		}
+	}
+	{volume "shieldL5"
+		{thickness 38
+		}
+	}
+	{volume "shieldR5"
+		{thickness 38
+		}
+	}
+	{volume "shieldL6"
+		{thickness 38
+		}
+	}
+	{volume "shieldR6"
+		{thickness 38
+		}
+	}
+	{volume "shieldL7"
+		{thickness 38
+		}
+	}
+	{volume "shieldR7"
+		{thickness 38
+		}
+	}
+	{volume "shieldL8"
+		{thickness 38
+		}
+	}
+	{volume "shieldR8"
+		{thickness 38
+		}
+	}
+	{volume "trackl"
+		{thickness 50
+		}
+	}
+	{volume "trackr"
+		{thickness 50
+		}
+	}
+	{volume "engine"
+		{thickness 200
+		}
+	}
+	{volume "wheel"
+		{thickness 50
+		}
+	}
+	{volume "wheelr"
+		{thickness 50
+		}
+	}
+	{volume "wheell"
+		{thickness 50
+		}
+	}
+	{volume "wheelright"
+		{thickness 50
+		}
+	}
+	{volume "wheelleft"
+		{thickness 50
+		}
+	}
+
+	{extender "shield" {on}}
+
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldl6" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+	{component "shieldr6" {tags "shield"}}

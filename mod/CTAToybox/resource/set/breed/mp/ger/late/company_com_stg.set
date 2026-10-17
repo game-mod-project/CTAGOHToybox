@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_co_2_hauptmann_stg"}
+	{portrait "ger_officer"}
+	{icon "stg"}
+	{icon_priority 5}
+	{tags "soldier"}
+	{nationality ger}
+	{voice ger_officer}
+	{armors
+		{head ger_fieldcap_m43_off}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+		("binocular_vision")
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "stg44_ctb_ger" filled}
+		{item "stg44 ammo" 900}
+
+		{item "bandage_ger" 7 1}
+		{item "binocular"}
+
+		{in_hands 0}
+	}
+}

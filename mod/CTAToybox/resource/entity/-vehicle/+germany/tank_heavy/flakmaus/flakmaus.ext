@@ -1,0 +1,69 @@
+("tank_heavy_tier2")
+
+	("tracks" repair(180) thickness(300))
+	("gun" repair(60) thickness(150))
+
+	("ammo" args "inventory")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+
+	{Volume "body1"
+		{thickness 600
+			{front 1000}
+			{top 300}
+			{rear 1000}
+			{bottom 250}
+		}
+	}
+	{Volume "body2"
+		{thickness 600
+			{front 1000}
+			{top 300}
+			{rear 800}
+			{bottom 250}
+		}
+	}
+	{Volume "shield1"
+		{thickness 500
+		}
+	}
+	{Volume "shield2"
+		{thickness 525
+			{front 1250}
+		}
+	}
+	{Volume "shield3"
+		{thickness 300
+		}
+	}
+	{Volume "engine"
+		{thickness 600
+			{front 1000}
+			{top 300}
+			{rear 800}
+			{bottom 250}
+		}
+	}
+	{Volume "gunshield"
+		{thickness 550
+		    {front 750}
+		}
+		{HighHardness}
+	}
+	{Volume "turret1"
+		{thickness 750
+		    {front 1250}
+			{top 500}
+			{rear 1000}
+			{bottom 1000}
+		}
+	}
+	{Volume "turret2"
+		{thickness 750 
+		    {front 1250}
+			{top 500}
+			{rear 1000}
+			{bottom 1000}
+		}
+	}

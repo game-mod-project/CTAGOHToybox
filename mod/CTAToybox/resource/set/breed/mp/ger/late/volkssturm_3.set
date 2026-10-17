@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_45_volkssturm_smg_coat"}
+	{portrait "ger_volkssturm"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head civilian_flat_cap_leather}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_1")("tier1_defense")
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_unfolded_ctb_ger" filled}
+		{item "mp40 ammo" 960}
+
+		{item "m24 grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 0.5 1}
+
+		{item "bandage_ger" 5 1}
+
+		{in_hands 0}
+	}
+}

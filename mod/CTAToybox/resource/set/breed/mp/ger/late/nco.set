@@ -1,0 +1,38 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_nco_smg_feldwebel_1"}
+	{portrait "ger_nco"}
+	{icon "stg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "stg44_ctb_ger" filled}
+		{item "stg44 ammo" 1200}
+
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 80 40}
+
+		{item "m24 grenade" 4.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 0.3 1}
+
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

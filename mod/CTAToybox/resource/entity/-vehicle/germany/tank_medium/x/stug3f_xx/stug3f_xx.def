@@ -1,0 +1,73 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "stug3f_xx.mdl"}
+	{volume "body2"
+		{thickness 53}
+	}
+	{volume "box2"
+		{thickness 53}
+	}
+	{volume "box3"
+		{thickness 53}
+	}
+	{volume "body1"
+		{thickness 53}
+	}
+	{volume "body3"
+		{thickness 53}
+	}
+	{volume "body4"
+		{thickness 53}
+	}
+	{volume "body5"
+		{thickness 53}
+	}
+	{volume "box1"
+		{thickness 53}
+	}
+	{volume "engine"
+		{thickness 53}
+	}
+	{volume "gun"
+		{thickness 53}
+	}
+	{volume "mantlet1"
+		{thickness 53}
+	}
+	{volume "mantlet2"
+		{thickness 53}
+	}
+	{volume "part1"
+		{thickness 53}
+	}
+	{volume "part2"
+		{thickness 53}
+	}
+	{volume "part3"
+		{thickness 53}
+	}
+	{volume "trackleft1"
+		{thickness 53}
+	}
+	{volume "trackleft2"
+		{thickness 53}
+	}
+	{volume "trackleft3"
+		{thickness 53}
+	}
+	{volume "trackleft4"
+		{thickness 53}
+	}
+	{volume "trackright1"
+		{thickness 53}
+	}
+	{volume "trackright2"
+		{thickness 53}
+	}
+	{volume "trackright3"
+		{thickness 53}
+	}
+	{volume "trackright4"
+		{thickness 53}
+	}
+}

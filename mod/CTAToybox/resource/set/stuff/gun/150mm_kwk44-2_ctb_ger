@@ -1,0 +1,37 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/40 "E-100a", "E-100b 150", "E-100 HD"
+	{filling "bulletger_150"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm_HV/"}
+	{fireSoundClose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	("range_220")
+	{calibre 150}
+
+	("reload time" seconds(13)) ;20 22
+
+	("velocity m/s" ap(805) apcr(880) he(700) heat(490))
+	("armor health" damage(480))
+	("armor health custom" shell(apcbche) damage(480) velocity(805) filler(660))
+
+	; Pzgr.43
+	("penetration_long" shell(apcbche) range(240) a(246) b(241) c(229) d(215) e(197))
+
+	; Pzgr.44
+	("penetration_long" shell(apcr) range(240) a(304) b(282) c(257) d(234) e(213))
+	{parameters "apcr" ; Pzgr.44
+		("large_apcr_slope_multiplier")
+	}
+
+	; Gr.44 Hl
+	("penetration_long" shell(heat) range(240) a(300) b(300) c(300) d(300) e(300))
+
+	{parameters "he"
+		{range 220 220}
+	}
+
+	("accuracy_direct" r1(0.57) range_ap(240) range_he(240) range_heat(240)) ;60 65
+}

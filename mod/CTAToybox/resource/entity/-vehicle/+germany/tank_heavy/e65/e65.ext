@@ -1,0 +1,126 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("shield" args "shieldl1" 30)
+	("shield" args "shieldl2" 30)
+	("shield" args "shieldl3" 30)
+	("shield" args "shieldl4" 30)
+	("shield" args "shieldl5" 30)
+
+	("shield" args "shieldr1" 30)
+	("shield" args "shieldr2" 30)
+	("shield" args "shieldr3" 30)
+	("shield" args "shieldr4" 30)
+	("shield" args "shieldr5" 30)
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+	("gun2" repair(30) thickness(150))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			
+		{thickness 360
+			{front 480}
+			{rear 360}
+			{top 90}
+			{bottom 150}
+		}
+	}
+	{volume "body2"			
+		{thickness 180
+			{front 300}
+			{rear 360}
+			{top 90}
+			{bottom 90}
+		}
+	}
+	{volume "body3"			
+		{thickness 180
+			{front 480}
+			{rear 150}
+			{top 90}
+			{bottom 90}
+		}
+	}
+	{volume "body4"			
+		{thickness 180
+			{front 300}
+			{rear 150}
+			{top 90}
+			{bottom 90}
+		}
+	}
+	{volume "body5"			
+		{thickness 180
+			{front 480}
+			{rear 360}
+			{top 90}
+			{bottom 90}
+		}
+	}
+	{volume "engine"		
+		{thickness 150
+		}
+	}
+	{volume "turret1"
+		{thickness 480
+			{front 810}
+			{rear 360}
+			{top 150}
+			{bottom 120}
+		}
+	}
+	{volume "turret2"
+		{thickness 360
+			{front 300}
+			{rear 150}
+			{top 150}
+			{bottom 120}
+		}
+	}
+	{volume "turret3"
+		{thickness 360
+			{front 300}
+			{rear 150}
+			{top 150}
+			{bottom 120}
+		}
+	}
+	{volume "turret4"
+		{thickness 360
+			{front 300}
+			{rear 150}
+			{top 150}
+			{bottom 120}
+		}
+	}
+
+	;("armor_heavy" turret(200 100 80 40) body(180 80 80 40)) ;
+	;("armor_mantlet" t(200))
+	;("armor_engine"  t(80 80 40 40))
+
+	{Volume "gunrot"
+		{thickness 540}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}

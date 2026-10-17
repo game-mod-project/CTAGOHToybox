@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_rfl_sniper"}
+	{portrait "ger_sniper"}
+	{icon "sniper"}
+	{icon_priority 1}
+	{nationality ger_sniper}
+	{armors
+		{head ger_m34_sidecap}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+		("sniper_vision")
+		{"stealth"}
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_scope_ctb_ger" filled}
+		{item "bandage_ger" 6}
+		{item "pistol ammo" 200}
+		{item "luger_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300}
+		;{item "plant" 2}
+		{item "knife_ger"}
+		{in_hands 0}
+	}
+}

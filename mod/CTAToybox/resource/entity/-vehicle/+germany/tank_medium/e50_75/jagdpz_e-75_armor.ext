@@ -1,0 +1,90 @@
+;SDL
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(125))
+	("ammo" args "inventory")
+
+	; Components for damage logic
+	{component "body" {tags "body"}}
+	{component "engine" {tags "engine"}}
+	{component "fuel" {tags "fuel"}}
+	{component "ammo" {tags "ammo"}}
+
+	; Main hull body - base thickness = SIDE armor
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 400
+			{front 600}
+			{rear 300}
+			{top 125}
+		}
+	}
+	{volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 400
+			{front 600}
+			{rear 300}
+			{top 125}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 350
+			{front 550}
+			{rear 250}
+			{top 100}
+		}
+	}
+
+	; Casemate (fixed superstructure housing the 150mm gun)
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 450
+			{front 700}
+			{rear 300}
+			{top 150}
+		}
+	}
+	{volume "body4"
+		{tags "body"}
+		{component "body"}
+		{thickness 450
+			{front 700}
+			{rear 300}
+			{top 150}
+		}
+	}
+	{volume "body5"
+		{tags "body"}
+		{component "body"}
+		{thickness 450
+			{front 700}
+			{rear 300}
+			{top 150}
+		}
+	}
+	{volume "hull"
+		{tags "body"}
+		{component "body"}
+		{thickness 400
+			{front 600}
+			{rear 300}
+			{top 125}
+		}
+	}
+
+	{volume "mantlet"
+		{tags "body"}
+		{component "body"}
+		{thickness 650}
+	}
+
+	{volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 125}
+	}

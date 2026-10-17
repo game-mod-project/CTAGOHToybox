@@ -1,0 +1,82 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+
+	
+
+	
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	
+	("transmission" args "transmission")
+
+	("tank_medium_tier1")
+
+	("tracks" repair(30) thickness(40))
+	("gun" repair(30) thickness(40))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{Volume "body"
+		{component "body"}
+		{tags "body"}
+		{thickness 
+			{front 80}	
+			{left 80}	
+			{right 80}
+			{rear 40}
+			{bottom 24}
+			{top 24}
+		}
+	}
+	{Volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 
+			{front 40}	
+			{left 40}	
+			{right 40}
+			{rear 40}
+			{bottom 24}
+		}
+	}
+	{Volume "body2"
+		{component "body"}
+		{tags "body"}
+		{thickness 
+			{front 40}	
+			{left 40}	
+			{right 40}
+			{rear 20}
+			{bottom 24}
+		}
+	}
+	{volume "engine"
+		{thickness 40
+			{front 20}
+			{top 20}
+			{rear 40}
+		}
+	}
+	{Volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 
+			{front 40}	
+			{left 40}	
+			{right 40}
+			{rear 40}
+		}
+	}
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}

@@ -1,0 +1,53 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer742r_xx.mdl"}
+	
+	{volume "barrel"
+	{thickness 30}
+	}
+	{volume "body1"
+	{thickness 30}
+	}
+	{volume "body2"
+	{thickness 30}
+	}
+	{volume "engine"
+	{thickness 30}
+	}
+	{volume "mantlet"
+	{thickness 30}
+	}
+	{volume "part1"
+	{thickness 30}
+	}
+	{volume "part2"
+	{thickness 30}
+	}
+	{volume "part3"
+	{thickness 30}
+	}
+	{volume "part4"
+	{thickness 30}
+	}
+	{volume "shieldl1"
+	{thickness 30}
+	}
+	{volume "trackleft"
+	{thickness 30}
+	}
+	{volume "trackright1"
+	{thickness 30}
+	}
+	{volume "trackright"
+	{thickness 30}
+	}
+	{volume "turret1"
+	{thickness 30}
+	}
+	{volume "turret2"
+	{thickness 30}
+	}
+	{volume "turret3"
+	{thickness 30}
+	}
+}

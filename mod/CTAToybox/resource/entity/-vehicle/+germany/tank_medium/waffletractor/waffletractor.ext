@@ -1,0 +1,64 @@
+;SDL
+
+	("tank_medium_tier1")
+
+	("gun" repair(30) thickness(75))
+	("tracks" repair(30) thickness(50))
+
+	{volume "trackleft" {able {holed}}}
+	{volume "trackright" {able {holed}}}
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	("shield" args "wheell0" 25)
+	("shield" args "wheell1" 25)
+	("shield" args "wheell2" 25)
+	("shield" args "wheell3" 25)
+	("shield" args "wheell4" 25)
+	("shield" args "wheell5" 25)
+
+	("shield" args "wheelr0" 25)
+	("shield" args "wheelr1" 25)
+	("shield" args "wheelr2" 25)
+	("shield" args "wheelr3" 25)
+	("shield" args "wheelr4" 25)
+	("shield" args "wheelr5" 25)
+
+	{volume "body1"		
+		{thickness 25
+		}
+	}
+	{volume "body2"		
+		{thickness 25
+			{top 50}
+		}
+	}
+	{volume "body3"		
+		{thickness 25
+			{top 50}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 50
+			{top 25}
+		}
+	}
+       	{volume "turret1"
+		{thickness 50}
+                {able {holed}}
+	}
+	{volume "mantlet"		; Armor on Gun
+		{thickness 50}
+		{able {holed}}
+	}
+
+	{volume "cupola1"		; Armor on Gun
+		{thickness 25}
+	}
+	{volume "cupola2"		; Armor on Gun
+		{thickness 25}
+	}

@@ -1,0 +1,140 @@
+{game_entity
+	(include "/properties/tank__ctb_pzkpfw_8_maus_3a724ab1.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{collider "tank.heavy"}
+	{props "heavy" "turret_rotator" "smoke" "nvw" "vision_lev05" "muzzle_122mm_128mm" "sq_armor_super_heavy"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{Extension "pzkpfw_8_maus.mdl"}
+	(include "pzkpfw_8_maus.ext")
+	{PatherId "elefant"}
+
+;==============================================
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank"} {end "seat_driver_car"} {base "open_driver"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_driver" -1}}
+		}
+		{anm "charger2"
+			{forward	{begin	"board_tank"} {end "seat_driver_car"} {base "open_charger"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger" -1}}
+		}
+		{anm "gunner2"
+			{forward	{begin	"board_tank"} {end "seat_driver_car"} {base "open_charger"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger" -1}}
+		}
+		{anm "charger"
+			{forward	{begin	"board_sherman_right"} {end "seat_driver_car"} {base "open_crew"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_crew" -1}}
+		}
+		{anm "gunner"			
+			{forward	{begin	"board_sherman_right"} {end "seat_driver_car"} {base "open_charger"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger" -1}}
+		}
+		{anm "commander"			
+			{forward	{begin	"board_sherman_right"} {end "seat_driver_car"} {base "open_crew"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_crew" -1}}
+		}
+	}
+
+	("crew_human" place(driver)	door(emit0) visor(driver))
+	("crew_human" place(charger2)	door(emit1) visor(main))
+	("crew_human" place(charger)	door(emit2) visor(main))
+	("crew_human" place(gunner2)	door(emit2) visor(main))
+	("crew_human" place(gunner)	door(emit1) visor(main))
+	("crew_human" place(commander)	door(emit2) visor(main))
+	
+;==============================================
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade nbk39"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_128_2 apc" 75}
+			;{item "bulletger_128_2 apcbc" 7} 	        ; 82 rounds 128mm
+			{item "bulletger_128_2 he" 75}
+			{item "bulletger_75_l24 sm" 50} 		; 150 rounds 75mm
+			{item "bulletger_75_l24 heat" 245}
+			{item "bulletger_75_l24 he" 250}
+			{item "ammo mgun_ger belt" 22500}		; 32 belts (150 rounds each)
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 12}
+		}
+	}
+	
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_kwk44_ctb_ger" filling "bulletger_128_2 apc" 1}
+			{gunner "gunner"}
+			{charger "charger"}	
+				("abm_dymamic_td"
+				zeroing(3.5)
+				dispersion(0.25)
+			)
+		}
+	
+		{place "gun2"
+			{weapon "75mm_stuk42_0_ctb_ger" filling "bulletger_75_l24 heat" 1}
+			{foresight "foresight1a"}
+			{gunner "gunner2"}
+			{charger "charger2"}
+			("abm_mgun")
+			{basic}
+		}
+
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+		}
+
+	}
+	{mass 188000}
+		{Chassis
+		("tank_trace" fx("tracks_big") step(0.20) len(-2.50))
+		("mobility_tank"
+			speed(12.75) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8.5) ;--------Max speed in reverse on road, km/h.
+			traverse(8.1) ;-------Track traverse, per second, in degrees.
+			weight(188.0) ;-------Weight in Tonnes.
+			power(440) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(27000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(220) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -8 15}
+		{speed2 3}
+	}
+	{bone "turret"
+		("turret_heavy" power_traverse(1))
+	}
+
+	;{texmod "camo"}
+}
+
+
+
+

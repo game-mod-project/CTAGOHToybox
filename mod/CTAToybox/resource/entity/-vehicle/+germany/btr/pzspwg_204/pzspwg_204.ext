@@ -1,0 +1,58 @@
+;SDL
+	
+	;notes
+	;tracks and wheels 20mm
+	;gun 20mm and 25mm
+
+	("armoredcar_tier2")
+
+	("gun" repair(30) thickness(40))
+	("turret" repair(45))
+
+	("wheel" args "wheelright1" 15)
+	("wheel" args "wheelleft1" 15)
+        ("wheel" args "wheelright2" 15)
+	("wheel" args "wheelleft2" 15)
+
+        ("shield" args "shieldL4" 30)
+        ("shield" args "shieldR4" 30)
+        ("shield" args "shieldL5" 30)
+        ("shield" args "shieldR5" 30)
+        ("shield" args "shieldL6" 30)
+        ("shield" args "shieldR6" 30)
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 30
+                      {left 40}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 40
+		}
+	}
+	{volume "body3"			; 75mm gun shield
+		{thickness 14}
+	}
+	{volume "body4"			; Hull
+		{thickness 30
+		}
+	}
+        {volume "engine"			; Hull
+		{thickness 30
+		}
+	}
+	{volume "turret"
+		{thickness 30}
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "mantlet1"
+		{thickness 40}
+	}

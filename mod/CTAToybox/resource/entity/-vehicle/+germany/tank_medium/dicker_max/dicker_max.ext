@@ -1,0 +1,115 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; schürzen 5mm
+
+	("tank_medium_tier2")
+
+	{volume "trackright" {able {holed}}}
+	{volume "trackleft" {able {holed}}}
+	{volume "body3" {able {holed}}}
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(88))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+        {volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 75
+			{front 125}
+			{top 30}
+			{bottom 25}		
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 75
+			{front 125}
+			{top 25}
+			{bottom 25}		
+		}
+	}
+	{volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 75
+			{rear 50}
+			{top 25}
+			{bottom 25}		
+		}
+	}
+	{volume "shield1"
+		{thickness 75
+			{front 125}
+			{top 30}		
+		}
+	}
+	{volume "shield2"
+		{thickness 75
+			{front 125}
+			{top 30}		
+		}
+	}
+	{volume "mantlet1"
+		{thickness 50}
+	}
+	{volume "mantlet2"
+		{thickness 125}
+	}
+
+	("shield" args "wheelleft1" 38)
+	("shield" args "wheelleft2" 38)
+	("shield" args "wheelleft3" 38)
+	("shield" args "wheelleft4" 38)
+	("shield" args "wheelleft5" 38)
+	("shield" args "wheelleft6" 38)
+	("shield" args "wheelleft7" 38)
+	("shield" args "wheelleft8" 38)
+	("shield" args "wheelleft9" 38)
+	("shield" args "wheelleft10" 38)
+	("shield" args "wheelleft11" 38)
+	("shield" args "wheelleft12" 38)
+	("shield" args "wheelleft13" 38)
+	("shield" args "wheelleft14" 38)
+	
+
+	("shield" args "wheelright1" 38)
+	("shield" args "wheelright2" 38)
+	("shield" args "wheelright3" 38)
+	("shield" args "wheelright4" 38)
+	("shield" args "wheelright5" 38)
+	("shield" args "wheelright6" 38)
+	("shield" args "wheelright7" 38)
+	("shield" args "wheelright8" 38)
+	("shield" args "wheelright9" 38)
+	("shield" args "wheelright10" 38)
+	("shield" args "wheelright11" 38)
+	("shield" args "wheelright12" 38)
+	("shield" args "wheelright13" 38)
+	("shield" args "wheelright14" 38)
+
+	("shield" args "shieldl1" 10)
+	("shield" args "shieldl2" 10)
+	("shield" args "shieldl3" 10)
+	("shield" args "shieldr1" 10)
+	("shield" args "shieldr2" 10)
+	("shield" args "shieldr3" 10)
+	("shield" args "shield3" 10)
+	("shield" args "shield4" 10)
+	("shield" args "periscope" 10)
+	("shield" args "detail2_back1" 10)
+	("shield" args "detail1_back2" 50)
+	

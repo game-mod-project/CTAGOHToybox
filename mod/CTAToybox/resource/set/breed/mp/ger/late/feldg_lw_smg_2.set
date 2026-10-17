@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_43_fielddiv_smg"}
+	{portrait "ger_feldg"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_overseascap_luft_var3}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_defense")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp34_ctb_ger" filled}
+		{item "kpistm39_stick ammo" 960}
+
+		{item "m24 grenade" 2.5 1}
+
+		{item "bandage_ger" 7 1}
+
+		{in_hands 0}
+	}
+}

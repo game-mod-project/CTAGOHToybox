@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_42_fus_nco_rfl_2"}
+	{portrait "ger_fus"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_var3}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_recon")
+		("sniper_vision")
+		
+	
+	{"health" "500%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_scope_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+
+		{item "m24 grenade" 4.5 1}
+		{item "m24_smoke grenade" 4.5 1}
+		{item "panzerfaust_60_ctb_ger weapon" 1 1 filled}
+
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

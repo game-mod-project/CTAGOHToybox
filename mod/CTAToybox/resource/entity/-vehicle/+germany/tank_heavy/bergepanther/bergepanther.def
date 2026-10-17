@@ -1,0 +1,78 @@
+{game_entity
+	(include "/properties/tank__ctb_bergepanther_577948fe.ext")
+	(include "/properties/shadow/tank.inc" scale(1.4))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	(include "/properties/resupply.inc")
+	{props "medium" "vision_lev03" "shield" "detect_tank_medium" "tractor" "tractor_heavy" "recovery"}
+	(include "bergepanther.ext")
+	{extension "bergepanther.mdl"}
+	{PatherId "panzer5"}
+	{targetclass "tank_medium"}
+	{targetSelector "tank_medium"}
+
+	("supply_engineer")
+	
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "driver_co"
+			{forward {begin "board_pz4_driver"} {end "pose_mgun_pz6"} {base "open_driver"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_cromwell"} {end "pose_mgun_pz6"}}
+			{reverse {end "board_cromwell" -1}}
+		}
+		{anm "right"
+			{forward {begin "board_cromwell"} {end "pose_mgun_pz6"}}
+			{reverse {end "board_cromwell" -1}}
+		}
+		{anm "armor"
+			{forward {begin "board_HighArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	
+	("crew_human" place(driver)	door(emit0) visor(driver))
+	("crew_human" place(driver_co)	door(emit1) visor(driver))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{box
+			{item "repair_kit" 30}
+			{item "tmi_35" "mine" 120}
+			{item "mine_detector" 4}
+			{item "shovel_ger" 10}
+			{item "pickaxe" 10}
+			{item "geballteladung_3kg" 10}
+			{item "s" "mine" 240}
+			{item "wirecutters" 4}
+		}
+	}
+
+	{mass 40000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.94))
+		("mobility_tank"
+			speed(78) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h. 3.9 + 2kmh
+			traverse(19) ;-------Track traverse, per second, in degrees.
+			weight(40) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp. //engine was not yet governed, was in Nov.43 (after panther D production ended)
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(8000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1000) ;---------Range in km, off-road.
+		)
+	}
+}

@@ -1,0 +1,36 @@
+;_________________________________________
+; German heavy long-barreled AT Gun
+;=========================================
+
+{from "pattern gun"			; L/73 "tiger2h_105" (终极物理平衡版)
+	{filling "bulletger_105_l68"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_85to100mm/"}
+	{reloadSound "utility/"}
+	{range 220 220} 
+	{calibre 105}
+
+	("reload time" seconds(6.25))
+
+	("velocity m/s" ap(1100) apcr(1250) he(900) heat(700))
+	("armor health" damage(270))
+	
+	("armor health custom" shell(aphe) damage(270) velocity(1100) filler(122))
+	("armor health custom" shell(apcbche) damage(270) velocity(1100) filler(122))
+	("armor health custom" shell(apcr) damage(270) velocity(1250) filler(35))
+	("105_slope_multipliers")
+
+	("penetration_long" shell(aphe) range(230) a(265) b(245) c(225) d(205) e(185))
+
+	("penetration_long" shell(apcbche) range(230) a(305) b(285) c(265) d(240) e(215))
+
+	("penetration_long" shell(apcr) range(230) a(350) b(315) c(275) d(220) e(180))
+
+	("penetration_long" shell(heat) range(230) a(180) b(180) c(180) d(180) e(180))
+
+	{parameters "he"
+		{range 230 230}
+	}
+
+	("accuracy_direct" r1(0.45) range_ap(230) range_he(230) range_heat(230))
+}

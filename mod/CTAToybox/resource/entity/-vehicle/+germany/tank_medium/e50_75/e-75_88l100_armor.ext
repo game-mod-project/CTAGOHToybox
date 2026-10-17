@@ -1,0 +1,88 @@
+;SDL
+
+	("tracks" repair(30) thickness(75))
+	("gun" repair(30) thickness(150))
+
+	; Component definitions link volumes to the tank's health system
+	{component "body" {tags "body"}}
+	{component "turret" {tags "turret"}}
+	{component "engine" {tags "engine"}}
+	{component "ammo" {tags "ammo"}}
+	{component "transmission" {tags "transmission"}}
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 300
+			{front 375}
+			{rear 200}
+			{top 150}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 150
+			{front 375}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 100
+			{front 625}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "turret2"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 200
+			{front 625}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 688}
+	}
+
+	; Internal Damage Zones (Essential for visual destruction and fires)
+	{volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 125}
+	}
+	{volume "transmission"
+		{tags "transmission"}
+		{component "transmission"}
+		{thickness 125}
+	}
+	{volume "ammo"
+		{tags "ammo"}
+		{component "ammo"}
+		{thickness 25}
+	}
+
+	; Shield / Ekran logic
+	(define "ekran"
+		{volume "%name" {tags "shield"} {component "shield"} {thickness %t}}
+	)
+	("ekran" name(ekran_body) t(63))
+	("ekran" name(ekran_body2) t(63))
+	("ekran" name(ekran_body3) t(63))
+	("ekran" name(ekran_body4) t(63))
+	("ekran" name(ekran_turret) t(63))
+	("ekran" name(ekran_turret17) t(175))
+	("ekran" name(ekran_turret18) t(300))
+	("ekran" name(ekran_mantlet) t(250))
+
+	; Wheels and Tracks
+	{volume "trackright" {component "trackright"} {tags "track"}}
+	{volume "trackleft" {component "trackleft"} {tags "track"}}
+	{volume "wheels" {component "wheels"} {tags "wheels"} {thickness 50}}

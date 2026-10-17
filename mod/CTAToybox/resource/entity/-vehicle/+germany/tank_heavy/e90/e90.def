@@ -1,0 +1,91 @@
+{game_entity
+	(include "/properties/tank__ctb_e90_1fc75472.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.heavy"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{props "heavy" "vision_lev05" "muzzle_122mm_128mm" "shield" "smoke" "nvw" "detect_tank_heavy" "wheeled"}
+	{PatherId "tiger2"}
+	{Extension "e90.mdl"}
+	(include "e90.ext")
+
+	{extender "enumerator"}
+
+	("transmission" args "transmission")
+	("crew_4_human")
+
+	{placer
+		{place "driver"		{visor "driver"}}
+		{place "gunner"		{visor "main"}}
+		{place "commander"	{visor "mgun"}{sealable}}
+	}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade nbk39"}
+	}
+
+	{extender "vision_mode"
+		{timer_object
+			{tag		"thermal"}
+			{active_time	   120}
+			{recharge_rate	  1.0}
+			{type	     "recharge"}
+	    }
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_128 apcbche" 210}	; 86 rounds
+			{item "bulletger_128 he" 215}
+			{item "ammo hmgun_ger" 20000}
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 12}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon 	"128mm_kwk44-2_ctb_ger" filling "ammo bulletger_128 apcbche" 1}
+			("abm_dymamic_stabilised"
+				zeroing(2.9)
+				dispersion(0.13)
+			)
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "mg131_mount_ctb_ger" filled}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 95000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(1.25))
+		("mobility_tank"
+			speed(53) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(11) ;--------Max speed in reverse on road, km/h.
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(95.8) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.3) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(8600) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(900) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"			;gun horizontal
+		{speed 0.0062}
+	}
+	{bone "gun_rot"			;gun vertical
+		{speed 0.0015}
+	}
+	{texmod "2"}
+}

@@ -48,13 +48,13 @@
 	{extender "inventory"
 		{weapon "mgun" {mask "mountable"}}
 		{box
-			{item "bulletger_75_l43 apcbche" 26} 	; 87 rounds
-			{item "bulletger_75_l43 he" 44}
-			{item "bulletger_75_l43 apcr" 2}
-			{item "bulletger_75_l43 heatc" 14}
-			{item "ammo mgun_ger belt" 2850}		; 21 belts (150 rounds each)
-			{item "mg34_drum" filled {user "mgun"}}
-			{item "geballteladung_3kg" 1}
+			{item "bulletger_75_l43 apcbche" 130} 	; 87 rounds
+			{item "bulletger_75_l43 he" 220}
+			{item "bulletger_75_l43 apcr" 10}
+			{item "bulletger_75_l43 heatc" 70}
+			{item "ammo mgun_ger belt" 14250}		; 21 belts (150 rounds each)
+			{item "mg34_drum_ctb_ger" filled {user "mgun"}}
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -62,7 +62,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk40_l48" filling "bulletger_75_l43 apcbche" 1}
+			{weapon "75mm_kwk40_l48_ctb_ger" filling "bulletger_75_l43 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic"
@@ -72,7 +72,7 @@
 		}
 		{place "mgun2"
 			{type "coaxial"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "gunner"}
 			{charger "charger"}
@@ -81,7 +81,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -105,15 +105,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.45))
 		("mobility_tank"
-			speed(38) ;----------Max speed when fully accelerated on road, km/h.
+			speed(57) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(8) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(25.0) ;-------Weight in Tonnes.
 			power(265) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
 			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(470) ;----------Fuel capacity in Litres.
+			fuel(4700) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(130) ;---------Range in km, off-road.
+			range(1300) ;---------Range in km, off-road.
 		)
 	}
 

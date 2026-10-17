@@ -1,0 +1,51 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz6_cargo_xx.mdl"}
+	{volume "board_back2"
+		{thickness 4}
+	}
+	{volume "body1"
+		{thickness 8}
+	}
+	{volume "body2"
+		{thickness 8}
+	}
+	{volume "body3"
+		{thickness 8}
+	}
+	{volume "body4"
+		{thickness 8}
+	}
+	{volume "bodyback1"
+		{thickness 4}
+	}
+	{volume "bodyback2"
+		{thickness 4}
+	}
+	{volume "bodyback3"
+		{thickness 4}
+	}
+	{volume "bodyback4"
+		{thickness 4}
+	}
+	{volume "engine_cover2_r"
+		{thickness 4}
+	}
+
+	{volume "part1"
+		{thickness 4}
+	}
+	{volume "part2"
+		{thickness 4}
+	}
+	{volume "shield_cover1"
+		{thickness 4}
+	}
+	{volume "shield_cover2"
+		{thickness 4}
+	}
+	{volume "wheelleft1"
+		{thickness 1}
+	}
+	("tracks" thickness(30))
+}

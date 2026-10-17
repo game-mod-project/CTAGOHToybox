@@ -1,0 +1,41 @@
+;_________________________________________
+; ARTY - German heavy howitzer (Grille 15 L/63)
+;=========================================
+
+{from "pattern gun"			; L/63 "Grille 15"
+	{filling "bulletger_150_l30" 1}
+	{fireSound "gun/gun_122_152"}
+	{fireSoundclose "gun/gun_122_152"}
+	{reloadSound "tank/reload_howitzer"}
+	("heavy_artillery")
+	{calibre 150}
+	{range 415 415} ; // 13.3km
+
+	("reload time" seconds(9))
+
+	; Fixed absurd velocities. L/63 gives great muzzle velocity, but not sci-fi levels.
+	("velocity m/s" ap(950) apcr(1150) he(800) heat(850))
+	("armor health" damage(450))
+	("85-155_slope_multipliers")
+
+	; Brought APHE down to realistic kinetic levels for 150mm @ 950m/s
+	("penetration_long" shell(aphe) range(240) a(285) b(270) c(245) d(215) e(185))
+
+	; APCR: High muzzle velocity gives massive close-range pen, but low mass causes rapid distance falloff
+	("penetration_long" shell(apcr) range(240) a(360) b(330) c(290) d(245) e(195))
+	{parameters "apcr"
+		("large_apcr_slope_multiplier")
+	}
+
+	; HEAT: Adjusted to a more realistic WW2 shaped charge capability (~1.8x caliber)
+	("penetration_long" shell(heat) range(240) a(280) b(280) c(280) d(280) e(280))
+
+	("accuracy_indirect"   
+		r1(0.52) 				
+		r2(8.25) 					
+		rmax(27) 				
+		range_ap(240) 			
+		range_heat(240) 		
+		range_he(415)			
+	)
+}

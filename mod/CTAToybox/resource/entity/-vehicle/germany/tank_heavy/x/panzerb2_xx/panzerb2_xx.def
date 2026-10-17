@@ -1,0 +1,116 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzerb2_xx.mdl"}
+	{volume "barrel1"
+		{thickness 60}
+	}
+	{volume "barrel11"
+		{thickness 90}
+	}
+	{volume "body1"			; Hull
+		{thickness 165
+			{front 180}
+			{bottom 60}
+		}
+	}
+	{volume "body2"			; Hull
+		{thickness 165
+			{front 180}
+			{top 75}
+			{rear 30}
+			{bottom 60}
+		}
+	}
+	{volume "body3"			; 75mm gun shield
+		{thickness 180}
+	}
+	{volume "body4"			; driver 
+		{thickness 165
+			{front 180}
+			{top 75}
+			{bottom 60}
+		}
+	}
+	{volume "body5"			; turret ring
+		{thickness 180}
+	}
+	{volume "body6"			; right block
+		{thickness 165
+			{front 180}
+			{top 75}
+			{rear 30}
+			{bottom 38.1}
+		}
+	}
+	{volume "body7"			; left block
+		{thickness 165
+			{front 180}
+			{top 75}
+			{rear 30}
+			{bottom 38.1}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 165
+			{front 30}
+			{top 75}
+			{rear 150}
+			{bottom 60}
+		}
+	}
+	{volume "engine2"		; left block
+		{thickness 165
+			{front 30}
+			{top 75}
+			{rear 150}
+			{bottom 38.1}
+		}
+	}
+	{volume "engine3"		; right block
+		{thickness 165
+			{front 30}
+			{top 75}
+			{rear 150}
+			{bottom 38.1}
+		}
+	}
+	{volume "turret1"
+		{thickness 168
+			{top 90}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"
+		{thickness 168}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 168}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 144
+			{top 90}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "armor1"
+		{thickness 165}
+	}
+	{volume "armor2"
+		{thickness 165}
+	}
+	{volume "armor3"
+		{thickness 165}
+	}
+	{volume "armor4"
+		{thickness 165}
+	}
+	{volume "armor5"
+		{thickness 165}
+	}
+	{volume "armor6"
+		{thickness 165}
+	}
+	("tracks" thickness(60))
+}

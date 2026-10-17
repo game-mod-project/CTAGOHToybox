@@ -1,0 +1,112 @@
+;SDL
+
+
+
+	("gun" repair(60) thickness(400))
+	("tracks" repair(60) thickness(300))
+
+	("ammo" args "inventory")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	("shield_tear" args "shieldl1" 450)	;100
+	("shield_tear" args "shieldl2" 450)	
+	("shield_tear" args "shieldl3" 450)	
+	("shield_tear" args "shieldl4" 450)	
+
+	("shield_tear" args "shieldr1" 450)	
+	("shield_tear" args "shieldr2" 450)	
+	("shield_tear" args "shieldr3" 450)		
+	("shield_tear" args "shieldr4" 450)		
+
+	{volume "body1"			; Upper front Hull
+		{thickness 600
+			{front 1000}
+			{top 400}
+			{rear 300}
+		}
+	}
+	{volume "body2"
+		{thickness 600
+			{front 950}
+			{rear 750}
+			{bottom 300}
+		}
+	}
+	{volume "body4"
+		{thickness 600
+			{front 300}
+			{rear 750}
+			{bottom 300}
+		}
+	}
+	{volume "body3"
+		{thickness 600
+			{front 300}
+			{rear 750}
+			{bottom 300}
+		}
+	}
+	{volume "engine1"
+		{thickness 300
+			{top 600}
+			{bottom 300}
+		}
+	}
+	{volume "engine2"
+		{thickness 300
+			{top 600}
+			{bottom 300}
+		}
+	}
+	{Volume "rubka"
+		{thickness 750
+		    {front  950}
+			{bottom	325}
+			{top 325}
+			{rear   750}
+		} 
+	}
+	{volume "turret"
+		{thickness 800
+			{top 325}
+		}
+	}
+	{volume "attached"
+		{thickness 300}
+	}
+	{volume "ram"
+		{thickness 400}
+	}
+	{volume "mantlet"
+		{thickness 950
+			{front 950} ;{thickness 320}
+		}
+		{HighHardness}
+		{CastSteel 0.8063}
+	}
+	{Volume "mantlet2"
+		{thickness 500}
+	}
+	{Volume "mask"
+		{thickness 1100}
+		{CastSteel 0.8063}
+	}
+	{Volume "shieldf"
+		{thickness 950}
+		{HighHardness}
+	}
+
+	{Volume "gunend"
+		{thickness 350}
+	}
+
+	{Volume "frontl"
+		{thickness 950}
+	}
+	{Volume "frontr"
+		{thickness 950}
+	}

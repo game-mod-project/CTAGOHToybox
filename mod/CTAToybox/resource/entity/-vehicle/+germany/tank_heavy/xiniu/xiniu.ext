@@ -1,0 +1,97 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("shield_tear"  args "shieldl1" 33)
+	("shield_tear"  args "shieldl2" 36)
+	("shield_tear"  args "shieldl3" 39)
+	("shield_tear"  args "shieldl4" 42)
+	("shield_tear"  args "shieldl5" 45)
+	("shield_tear"  args "shieldl6" 48)
+
+	("shield_tear" args "shieldr1" 33)
+	("shield_tear" args "shieldr2" 36)
+	("shield_tear" args "shieldr3" 39)
+	("shield_tear" args "shieldr4" 42)
+	("shield_tear" args "shieldr5" 45)
+	("shield_tear" args "shieldr6" 48)
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+	("gun2" repair(30) thickness(150))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Upper front Hull
+		{thickness 225	
+			{front 540}
+			{rear 120}
+			{top 120}
+			{bottom 660}
+		}
+	}
+	{volume "body2"			
+		{thickness 225
+			{front 480}
+			{rear 120}
+			{top 660}
+			{bottom 120}
+		}
+	}
+	{volume "body3"			
+		{thickness 690
+			{front 690}
+			{rear 360}
+			{top 135}
+		}
+	}
+	{volume "engine"		
+		{thickness 225
+			{front 75}
+			{rear 90}
+			{top 105}
+			{bottom 75}
+		}
+	}
+	{volume "aturret"
+		{thickness 360
+			{front 630}
+			{rear 36}
+			{top 105}
+			{bottom 90}	
+		}
+	}
+	{volume "aturret2"
+		{thickness 480		
+			{front 600}
+			{top 150}
+		}
+	}
+	{volume "aturret3"
+		{thickness 1050	
+		}
+	}
+	{volume "gunrot"
+		{thickness 210	
+		}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}

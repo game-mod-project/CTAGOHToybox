@@ -1,0 +1,97 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Upper front Hull
+		{thickness 300	
+			{front 540}
+			{rear 240}
+			{top 120}
+			{bottom 120}
+		}
+	}
+	{volume "body2"			
+		{thickness 300	
+			{front 690}
+			{rear 450}
+			{top 450}
+			{bottom 39}
+		}
+	}
+	{volume "body4"			
+		{thickness 300	
+			{front 480}
+			{rear 240}
+			{top 120}
+			{bottom 120}
+		}
+	}
+	{volume "engine"		
+		{thickness 300	
+			{front 120}
+			{rear 240}
+			{top 120}
+			{bottom 120}
+		}
+	}
+	{volume "turret1"
+		{thickness 360
+			{front 540}
+			{rear 480}
+			{top 150}
+			{bottom 75}
+		}
+	}
+	{volume "turret2"
+		{thickness 300		
+			{front 375}
+			{top 240}
+			{bottom 75}
+		}
+	}
+	{volume "turret3"
+		{thickness 240}
+	}
+	{volume "turret4"
+		{thickness 360
+			{front 540}
+			{rear 480}
+			{top 150}
+			{bottom 75}
+		}
+	}
+
+	{volume "mgun"
+		{thickness 60}
+	}
+
+	{volume "gun_rot1"
+		{thickness 510}
+	}
+
+	{volume "gun_rot2"
+		{thickness 510}
+	}
+
+	{volume "trackshield1"
+		{thickness 60}
+	}
+	{volume "trackshield2"
+		{thickness 60}
+	}
+	{volume "trackshield3"
+		{thickness 60}
+	}

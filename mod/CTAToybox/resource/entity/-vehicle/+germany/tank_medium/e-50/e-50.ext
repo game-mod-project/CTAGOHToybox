@@ -1,0 +1,37 @@
+
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "inventory")
+
+	{volume "body"
+		{thickness 200
+			{front 375}
+		}
+	}
+	{volume "body1"
+		{thickness 200
+			{front 375}
+			{bottom 100}
+		}
+	}
+	{volume "turret"
+		{thickness 325
+			{front 538}
+			{top 100}	
+			{rear 200}
+		}
+	}
+	{volume "mantlet"
+		{thickness 375
+		}
+	}
+	{volume "engine1"
+		{thickness 200
+			{front 63}
+			{rear 200}
+			{top 63}
+			{bottom 63}
+		}
+	}

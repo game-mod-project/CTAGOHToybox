@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_pio_pack_smg"}
+	{portrait "ger_pionier"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m34_sidecap}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_standard")
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "ppsh41_drum_ctb_ger" filled}
+		{item "m24 grenade" 2}
+		{item "bandage_ger" 6}
+		{item "m24_geballteladung grenade" 2}
+		{item "geballteladung_3kg"}
+		{item "wirecutters"}
+		{item "ppsh_drum ammo" 1420}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pz_aufklar_nco_g43"}
+	{portrait "ger_scout"}
+	{icon "autorifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_recon")
+		
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43_ctb_ger" filling "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger gewehr ammo" 100}
+		{item "rifle_ger clip ammo" 300 50}
+
+		{item "m24 grenade" 2.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 0.3 1}
+
+		{item "bandage_ger" 7 1}
+
+		{in_hands 0}
+	}
+}

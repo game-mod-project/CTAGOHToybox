@@ -1,0 +1,63 @@
+;SDL
+
+	("tracks" repair(30) thickness(75))
+	("gun" repair(30) thickness(125))
+
+	; Components for damage logic
+	{component "body" {tags "body"}}
+	{component "turret" {tags "turret"}}
+	{component "engine" {tags "engine"}}
+	{component "fuel" {tags "fuel"}}
+	{component "ammo" {tags "ammo"}}
+
+	; Body Volumes
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 300
+			{front 375}
+			{rear 200}
+			{top 150}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 200
+			{front 300}
+			{rear 150}
+			{top 75}
+		}
+	}
+
+	; Turret Volumes
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 200
+			{front 463}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 500}
+	}
+
+	; Engine/Internal
+	{volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 125}
+	}
+
+	; Shields (Ekrans)
+	{volume "ekran_body" {thickness 63} {tags "shield"} {component "shield"}}
+	{volume "ekran_turret" {thickness 63} {tags "shield"} {component "shield"}}
+	; ... add other ekran volumes here following the same format
+
+	; Tracks/Wheels
+	{volume "trackright" {thickness 50} {tags "track"} {component "trackright"}}
+	{volume "trackleft" {thickness 50} {tags "track"} {component "trackleft"}}

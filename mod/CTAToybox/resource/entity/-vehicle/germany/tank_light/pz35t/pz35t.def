@@ -46,11 +46,11 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_37 aphe" 28}		; 72 rounds
-			{item "bulletger_37 he" 36}
-			{item "bulletger_37 apcr" 7}
-			{item "ammo mgun_ger belt" 1600}	; 18 belts (100 rounds each)
-			{item "geballteladung_3kg" 1}
+			{item "bulletger_37 aphe" 140}		; 72 rounds
+			{item "bulletger_37 he" 180}
+			{item "bulletger_37 apcr" 35}
+			{item "ammo mgun_ger belt" 8000}	; 18 belts (100 rounds each)
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -58,7 +58,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "37mm_kwk34t" filling "bulletger_37 aphe" 1}
+			{weapon "37mm_kwk34t_ctb_ger" filling "bulletger_37 aphe" 1}
 			{gunner "gunner"}
 			{charger "commander"}
 			("abm_dymamic_poor"
@@ -68,7 +68,7 @@
 		}
 		{place "mgun2"
 			{type "coaxial"}
-			{weapon "mg37t" filled}
+			{weapon "mg37t_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "gunner"}
 			{charger "commander"}
@@ -77,7 +77,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg37t" filled}
+			{weapon "mg37t_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -99,15 +99,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm") step(0.32) len(0.40))
 		("mobility_tank"
-			speed(34) ;----------Max speed when fully accelerated on road, km/h.
+			speed(51) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(10);---------Max speed in reverse on road, km/h.
 			traverse(34) ;-------Track traverse, per second, in degrees.
 			weight(10.5) ;-------Weight in Tonnes.
 			power(120) ;---------Engine Power, in hp.
 			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(153) ;----------Fuel capacity in Litres.
+			fuel(1530) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(115) ;---------Range in km, off-road.
+			range(1150) ;---------Range in km, off-road.
 		)
 	}
 

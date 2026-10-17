@@ -1,0 +1,41 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_at_rfl_gren_1"}
+	{portrait "ger_regular"}
+	{icon "atrifle"}
+	{icon_priority 0}
+	{tags "soldier_atr"}
+	{nationality ger}
+	{armors
+		{head ger_m40_helmet_mid}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+		("at_rank_3")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "grb_39_ctb_ger" filling "grb_39_bullet heat ammo" 2}
+		{item "grb_39_bullet he ammo" 125}
+		{item "grb_39_bullet heat ammo" 50}
+
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 2.3 1}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+
+		{item "ger_fieldcap_m43_var2"}
+
+		{in_hands 0}
+	}
+}

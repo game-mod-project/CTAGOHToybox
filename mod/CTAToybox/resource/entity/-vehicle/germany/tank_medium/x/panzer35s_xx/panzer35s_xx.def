@@ -1,0 +1,125 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer35s_xx.mdl"}
+
+	{volume "barrel"
+		{thickness 63}
+	}
+	{volume "body1"			; Hull
+		{thickness 100
+			{rear 25}
+			{bottom 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; Middle Superstructure
+		{thickness 100
+			{front 88}		; Glacis
+			{rear 25}
+			{bottom 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"			; Top Superstructure
+		{thickness 100
+			{front 118}
+			{top 63}
+			{rear 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; Front Left Superstructure
+		{thickness 100
+			{front 118}
+			{top 63}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 100
+			{front 25}
+			{rear 63}
+			{bottom 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine2"
+		{thickness 100
+			{front 25}
+			{top 63}
+			{rear 63}
+			{bottom 63}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 113
+			{front 140}
+			{top 75}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; Square Back side
+		{thickness 113}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"
+		{thickness 113}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 113}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 100
+			{top 75}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "part2"
+		{thickness 13}
+	}
+	{volume "part3"
+		{thickness 75}
+	}
+	{volume "part5"
+		{thickness 10}
+	}
+
+	{volume "shieldl2"
+		{thickness 63}
+	}
+	{volume "shieldl3"
+		{thickness 63}
+	}
+	{volume "shieldl5"
+		{thickness 63}
+	}
+	{volume "shieldl6"
+		{thickness 53}
+	}
+	{volume "shieldl7"
+		{thickness 53}
+	}
+	{volume "shieldl8"
+		{thickness 53}
+	}
+	{volume "shieldr1"
+		{thickness 63}
+	}
+	{volume "shieldr4"
+		{thickness 63}
+	}
+	{volume "shieldr6"
+		{thickness 53}
+	}
+	{volume "shieldr7"
+		{thickness 53}
+	}
+	{volume "shieldr8"
+		{thickness 53}
+	}
+
+	("tracks" thickness(50))
+}

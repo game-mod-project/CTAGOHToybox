@@ -1,0 +1,110 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 20mm
+
+	("tank_medium_tier2")
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	
+	("tracks" repair(30) thickness(38))
+	("gun" repair(30) thickness(75))
+
+	{volume "sticky"
+		{tags "grenade_fg_target"}
+		{able clear {contact} {touch}}
+		{component "sticky_body"}
+	}
+	{component "sticky_body"}
+
+	{Volume "body1"
+		{component "body"}
+		{tags "body"}
+		{thickness 38
+			{front 88}
+			{top 20}	
+			{rear 50}
+			{bottom 13}
+		}
+	}
+
+	{Volume "Magazine"
+		{Thickness 38}
+	}
+	{Volume "Left2"
+		{Thickness 38}
+	}
+	{Volume "right2"
+		{Thickness 38}
+	}
+	{Volume "Left1"
+		{Thickness 25}
+	}
+	{Volume "right1"
+		{Thickness 25}
+	}
+
+	{Volume "Inventory_vol"
+		{Thickness 8}
+	}
+
+	{Volume "baffleBT1"
+		{Thickness 50}
+	}
+	{Volume "baffleBT2"
+		{Thickness 38}
+	}
+	{Volume "baffleBT3"
+		{Thickness 38}
+	}
+	{Volume "baffleBT4"
+		{Thickness 38}
+	}
+	{Volume "baffleBT5"
+		{Thickness 38}
+	}
+
+	{Volume "BodyShieldL"
+		{component "turret"}
+		{tags "turret"}
+		{Thickness 75}
+	}
+	{Volume "BodyShieldR"
+		{component "turret"}
+		{tags "turret"}
+		{Thickness 75}
+	}
+
+	{Volume "box1"
+		{Thickness 13}
+	}
+	{Volume "box2"
+		{Thickness 88}
+	}
+	{Volume "box3"
+		{Thickness 15}
+	}
+	{volume "engine"
+		{thickness 33
+			{front 13}
+			{top 20}
+			{bottom 13}
+		}
+	}
+	{volume "turret"
+		{thickness 75}
+	}
+
+	
+	{component "shieldL1" {tags "shield"}}
+        {component "shieldR1" {tags "shield"}}
+	{component "shieldL2" {tags "shield"}}
+        {component "shieldR2" {tags "shield"}}
+	("shield" args "shieldL1" 15)
+	("shield" args "shieldL2" 15)
+	("shield" args "shieldR1" 15)
+	("shield" args "shieldR2" 15)

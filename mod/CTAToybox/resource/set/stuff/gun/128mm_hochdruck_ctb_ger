@@ -1,0 +1,32 @@
+; German cold-war advanced Heavy AT gun (128mm)
+;=========================================
+
+{from "pattern gun"			; L/55 "pak44" improved
+	{filling "bulletger_128"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "tank/1p/large/"}
+	{range 330 330} 
+	{calibre 128}
+
+	("reload time" seconds(4)) 
+
+	("velocity m/s" ap(1050) apcr(1200) apds(1550) he(950) heat(1))
+	("armor health" damage(480))
+	("armor health custom" shell(apcbche) damage(1100) velocity(1050) filler(650)) 
+	("armor health custom" shell(apds) damage(750) velocity(1550) filler(588))
+
+	("penetration_long" shell(apcbche) range(340) a(285) b(262) c(245) d(226) e(211))
+
+	("penetration_long" shell(apds) range(340) a(480) b(440) c(410) d(360) e(320))
+
+	{parameters "he"
+		{range 330 330}
+	}
+
+	("accuracy_direct" r1(0.16) range_ap(340) range_he(330) range_heat(340))
+	
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+}

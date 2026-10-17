@@ -1,0 +1,71 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+	; spare tracks 30mm
+	; schürzen 5mm
+
+
+	("shield" args "shield1" 90)
+
+	("shield" args "shieldl1" 30)
+	("shield" args "shieldr1" 30)
+
+	("tracks" repair(30) thickness(120))
+	("gun" repair(30) thickness(150))
+
+	("ammo" args "inventory")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("transmission" args "transmission")
+
+	{volume "body"			; Lower Hull
+		{thickness 240
+			{front 420}		
+			{top 120}		
+			{rear 90}
+			{bottom 90}
+		}
+	}
+	{volume "body2"			; Upper Hull
+		{thickness 240
+			{front 420}
+			{top 120}
+			{rear 90}
+		}
+	}
+	{volume "engine"		
+		{thickness 240
+			{top 120}
+		}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 360
+			{front 630}
+			{top 120}
+			{rear 180}
+		}
+	}
+	{volume "mantlet"
+		{thickness 480}
+		{HighHardness}
+	}
+	{volume "suspension00"
+		{thickness 120}
+	}
+	{volume "suspension01"
+		{thickness 120}
+	}
+	{volume "suspension02"
+		{thickness 120}
+	}
+	{volume "suspension03"
+		{thickness 120}
+	}
+
+	{component "shield1" {tags "cut_part"}}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}

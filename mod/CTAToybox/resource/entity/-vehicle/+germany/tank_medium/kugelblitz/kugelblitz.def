@@ -60,10 +60,10 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_30_auto apcr" 1280}		; 50 magazines (6 rounds each)
-			{item "bulletger_30_auto he" 1280}
-			{item "ammo mgun_ger belt" 6000}
-			{item "geballteladung_3kg" 1}
+			{item "bulletger_30_auto apcr" 6400}		; 50 magazines (6 rounds each)
+			{item "bulletger_30_auto he" 6400}
+			{item "ammo mgun_ger belt" 30000}
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -72,7 +72,7 @@
 		{place "gun"
 			{RestoreIKAfterAim}
 			{Barrels 2}
-			{weapon "30mm_mk103_2-2" filling "bulletger_30_auto apcr" 160}
+			{weapon "30mm_mk103_2-2_ctb_ger" filling "bulletger_30_auto apcr" 160}
 			("abm_dymamic_aaa"
 				zeroing(1.95)
 				dispersion(0.20)
@@ -81,7 +81,7 @@
 		}	
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{gunner "gunner3"}
 			{charger "commander"}
 			{foresight "foresight4"}
@@ -95,15 +95,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(1.25))
 		("mobility_tank"
-			speed(56) ;----------Max speed when fully accelerated on road, km/h.
+			speed(84) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(11) ;--------Max speed in reverse on road, km/h.
 			traverse(20) ;-------Track traverse, per second, in degrees.
 			weight(45.8) ;-------Weight in Tonnes.
 			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
 			track(3.3) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(860) ;----------Fuel capacity in Litres.
+			fuel(8600) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(90) ;----------Range in km, off-road.
+			range(900) ;----------Range in km, off-road.
 		)
 	}
 

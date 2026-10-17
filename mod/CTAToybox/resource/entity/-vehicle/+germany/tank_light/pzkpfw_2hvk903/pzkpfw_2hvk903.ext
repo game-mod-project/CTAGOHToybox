@@ -1,0 +1,100 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+
+	("tank_light_tier1")
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("fuel" args "fuel1")
+	("transmission" args "transmission")
+
+	{Volume "body2"
+		{thickness 50}
+	}
+	{Volume "body3"
+		{thickness 50}
+	}
+	{Volume "body"
+		{thickness 50}
+	}
+	{Volume "engine"
+		{thickness 50
+			{top 2}
+			{bottom 40}
+		}
+	}
+	{Volume "gun"
+		{Thickness 40}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{Thickness 60}
+	}
+	{Volume "shieldl1"
+		{Thickness 10}
+	}
+	{Volume "shieldl2"
+		{Thickness 10}
+	}
+	{Volume "shieldl3"
+		{Thickness 10}
+	}
+	{Volume "shieldl4"
+		{Thickness 10}
+	}
+	{Volume "shieldl5"
+		{Thickness 10}
+	}
+	{Volume "shieldl6"
+		{Thickness 10}
+	}
+	{Volume "shieldl7"
+		{Thickness 10}
+	}
+	{Volume "shieldr1"
+		{Thickness 10}
+	}
+	{Volume "shieldr2"
+		{Thickness 10}
+	}
+	{Volume "shieldr3"
+		{Thickness 10}
+	}
+	{Volume "shieldr4"
+		{Thickness 10}
+	}
+	{Volume "shieldr5"
+		{Thickness 10}
+	}
+	{Volume "shieldr6"
+		{Thickness 10}
+	}
+	{Volume "turret2"
+		{Thickness 50}
+	}
+	{Volume "turret3"
+		{Thickness 50}
+	}
+	{Volume "turret4"
+		{Thickness 50}
+	}
+	{Volume "turret5"
+		{Thickness 50}
+	}
+	{Volume "turret6"
+		{Thickness 50}
+	}
+	{Volume "turret7"
+		{Thickness 50}
+	}
+	{Volume "turret"
+		{Thickness 50}
+	}
+
+	
+("tracks" repair(30) thickness(28))
+("gun" repair(30) thickness(40))
