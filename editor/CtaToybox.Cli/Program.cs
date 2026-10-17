@@ -21,7 +21,7 @@ namespace CtaToybox.Cli
             "  ctatoybox add --project <파일> --kind add-line --file <가상 경로> --path <블록 경로, 예 /perks> [--occ N] --new \"<줄>\"   (블록의 닫는 괄호 앞에 줄 하나를 넣는다)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
             "  ctatoybox merge --project <합칠 프로젝트> --from <가져올 프로젝트>   (가져올 프로젝트의 수정을 더한다. 같은 자리에 다른 값이 있으면 합칠 프로젝트의 것을 둔다)\n" +
-            "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
+            "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--any <글자,…>] [--items ammo|other] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
             "  ctatoybox rule list|reapply|remove|enable|disable --project <파일> [--id <id>]   rule edit --project <파일> --id <id> <바꿀 옵션>   (일괄 규칙)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
             "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
@@ -40,7 +40,7 @@ namespace CtaToybox.Cli
             ["add"] = new[] { "settings", "project", "file", "path", "occ", "arg", "new", "scope", "unit", "kind" },
             ["remove"] = new[] { "settings", "project", "file", "path", "occ", "arg", "scope", "unit", "kind" },
             ["merge"] = new[] { "settings", "project", "from" },
-            ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude" },
+            ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude", "any", "items" },
             ["build"] = new[] { "settings", "project", "force" },
             ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
@@ -594,6 +594,8 @@ namespace CtaToybox.Cli
             if (opt.ContainsKey("path")) r.Paths = opt["path"].Split(',').Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
             if (opt.ContainsKey("layer")) r.Layer = opt["layer"];
             if (opt.ContainsKey("army")) r.Army = opt["army"].ToLowerInvariant();
+            if (opt.ContainsKey("any")) r.Any = opt["any"].Split(',').Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
+            if (opt.ContainsKey("items")) r.Items = opt["items"].ToLowerInvariant();
             if (opt.ContainsKey("exclude")) r.Exclude = opt["exclude"].Split(',').Select(p => p.Trim()).Where(p => p.Length > 0).ToList();
             if (opt.ContainsKey("key")) r.Key = opt["key"];
             if (opt.ContainsKey("arg")) r.Arg = opt["arg"].ToLowerInvariant() == "all" ? -1 : Number(opt, "arg");
@@ -611,7 +613,7 @@ namespace CtaToybox.Cli
             output.WriteLine("바뀜 " + p.Changes.Count + "건(유닛 " + p.Units + " / 대상 " + p.Targets + "), 수정 " + p.Edits.Count + "건, 건너뜀 " + p.Skipped.Count + ", 대상 밖 " + p.OutsideUnits);
             foreach (var c in p.Changes.Take(20)) output.WriteLine("  " + c.Unit + "  " + c.Old + " → " + c.New + "  (" + (c.Scope == "unit" ? "이 유닛만" : "전부") + ", " + c.File + ")");
             if (p.Changes.Count > 20) output.WriteLine("  … 외 " + (p.Changes.Count - 20) + "건");
-            foreach (var g in p.Skipped.GroupBy(k => k.Reason).OrderByDescending(g => g.Count())) output.WriteLine("  건너뜀 " + g.Count() + ": " + g.Key);
+            foreach (var g in p.Skipped.GroupBy(k => k.Reason).OrderByDescending(g => g.Count())) output.WriteLine("  건너뜀 " + g.Count() + ": " + g.Key + "  (예: " + string.Join(", ", g.Select(k => k.Unit).Distinct().Take(3)) + ")");
         }
 
         static int Build(Dictionary<string, string> opt, string settingsPath, TextWriter output)
