@@ -1,0 +1,3734 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms (dlg_mp)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 3.0\n"
+
+msgctxt "mp/presets/unit/early"
+msgid "초반 (1939-41)"
+msgstr ""
+
+msgctxt "mp/presets/unit/mid"
+msgid "중반 (1941-43)"
+msgstr ""
+
+msgctxt "mp/presets/unit/late"
+msgid "후반 (1943-45)"
+msgstr ""
+
+msgctxt "mp/settings/teama"
+msgid "A팀"
+msgstr ""
+
+msgctxt "mp/msg_lobby_full"
+msgid "로비가 가득 찼습니다"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.workshopid"
+msgid "워크숍 ID"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.path"
+msgid "위치"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.duration"
+msgid "길이"
+msgstr ""
+
+msgctxt "mp/msg_steam_connecting_failed"
+msgid "연결에 실패했습니다"
+msgstr ""
+
+msgctxt "mp/scene/chat/default"
+msgid "<b+c(cec7c3)>%s"
+msgstr ""
+
+msgctxt "mp/msg_connecting"
+msgid "연결 중..."
+msgstr ""
+
+msgctxt "mp/game/auto"
+msgid "자동 선택"
+msgstr ""
+
+msgctxt "mp/search_replay/title"
+msgid "<f(impact)s(28)c(255 255 255)>리플레이 검색"
+msgstr ""
+
+msgctxt "mp/msg_starting"
+msgid "멀티플레이어 시작 중..."
+msgstr ""
+
+msgctxt "mp/lobby/hint/game"
+msgid "열림/전체/참가 가능"
+msgstr ""
+
+msgctxt "mp/title_status"
+msgid "<f(pobeda)s(27)b+c(faeacb)e(shadow)x.y.>상태"
+msgstr ""
+
+msgctxt "mp/lobby/blocked/permanent"
+msgid "온라인 규칙 위반으로 인터넷 게임에서 영구 차단되었습니다."
+msgstr ""
+
+msgctxt "mp/statistics2/units/title"
+msgid "유닛"
+msgstr ""
+
+msgctxt "mp/msg_post_not_delivered"
+msgid "%1%에게 보낸 메시지가 전달되지 않았습니다"
+msgstr ""
+
+msgctxt "mp/lobby/txt_creatingserver"
+msgid "서버 인스턴스 생성 중"
+msgstr ""
+
+msgctxt "mp/lobby/txt_creatingserver2"
+msgid "서버 인스턴스 생성 중"
+msgstr ""
+
+msgctxt "mp/lobby/txt_creatingservererror"
+msgid "서버 인스턴스를 만들지 못했습니다 (오류 %1%)"
+msgstr ""
+
+msgctxt "mp/lobby/charge/none"
+msgid "제한 없음"
+msgstr ""
+
+msgctxt "mp/lobby/charge/normal"
+msgid "일반 제한"
+msgstr ""
+
+msgctxt "mp/lobby/charge/double"
+msgid "완화된 제한"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/btn_profile"
+msgid "<s(21)b>내 프로필"
+msgstr ""
+
+msgctxt "mp/game_ffa"
+msgid "자유 전투"
+msgstr ""
+
+msgctxt "mp/lobby/chat_others"
+msgid "<c(white)>사용자 [%1%]"
+msgstr ""
+
+msgctxt "mp/ds/unknown"
+msgid "-"
+msgstr ""
+
+msgctxt "mp/msg_access_denied"
+msgid "접근이 거부되었습니다"
+msgstr ""
+
+msgctxt "mp/lobby/blocked/minutes"
+msgid "랭크 신뢰도 때문에 %1%분 동안 인터넷 게임에 들어갈 수 없습니다. 진행 중인 게임에서 나가지 않도록 주의하십시오."
+msgstr ""
+
+msgctxt "mp/statistics2/result/resources"
+msgid "%1%"
+msgstr ""
+
+msgctxt "mp/ai_player_name"
+msgid "AI 플레이어"
+msgstr ""
+
+msgctxt "mp/lobby/hint/min_user_performance"
+msgid "참가에 필요한 최소 성능"
+msgstr ""
+
+msgctxt "mp/msg_restarting"
+msgid "멀티플레이어 다시 시작 중..."
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.version#invalid"
+msgid "<c(red)>%1%"
+msgstr ""
+
+msgctxt "mp/army/generic"
+msgid "기타"
+msgstr ""
+
+msgctxt "mp/army/tutorial"
+msgid "튜토리얼"
+msgstr ""
+
+msgctxt "mp/army/germany"
+msgid "독일"
+msgstr ""
+
+msgctxt "mp/army/ussr"
+msgid "소련"
+msgstr ""
+
+msgctxt "mp/army/finland"
+msgid "핀란드"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_160"
+msgid "160 CP"
+msgstr ""
+
+msgctxt "mp/msg_processmods"
+msgid "모드 처리 중..."
+msgstr ""
+
+msgctxt "mp/msg_searching"
+msgid "세션 검색 중..."
+msgstr ""
+
+msgctxt "mp/gs/social/friendlist_state"
+msgid "<s(8)y(-2)>%1%"
+msgstr ""
+
+msgctxt "mp/persona_state/looking_to_play"
+msgid "플레이할 상대를 찾는 중"
+msgstr ""
+
+msgctxt "mp/msg_connecting_failed"
+msgid "연결에 실패했습니다"
+msgstr ""
+
+msgctxt "mp/msg_session_full"
+msgid "세션이 가득 찼습니다"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.randomspawnpoints#hint"
+msgid "진영과 시작 지점이 무작위로 정해진다."
+msgstr ""
+
+msgctxt "mp/msg_starting_in"
+msgid "%1% 후 게임 시작..."
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_groundcontrol"
+msgid "지상 통제"
+msgstr ""
+
+msgctxt "mp/statistics_xp/rank"
+msgid "점수: %1%"
+msgstr ""
+
+msgctxt "mp/presets/game/standard"
+msgid "<c(20a601)>표준</c> (XP 획득)"
+msgstr ""
+
+msgctxt "mp/msg_user_not_found"
+msgid "사용자를 찾을 수 없습니다"
+msgstr ""
+
+msgctxt "mp/lobby/header/players"
+msgid "플레이어"
+msgstr ""
+
+msgctxt "mp/msg_client_blocked"
+msgid "이 호스트에서 차단되었습니다"
+msgstr ""
+
+msgctxt "mp/gs/chat/connect_fail"
+msgid "채팅 연결에 실패했습니다. 인터넷과 방화벽 설정을 확인하십시오."
+msgstr ""
+
+msgctxt "mp/msg_rank_unbalanced"
+msgid "불균형"
+msgstr ""
+
+msgctxt "mp/lobby/session/nat"
+msgid "NAT"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.useManualCharge"
+msgid "직접 조종 타이머"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.useManualCharge#hint"
+msgid "1인칭 및 3인칭 모드 사용을 제한할지 정한다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance"
+msgid "사용자 성능"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.difficulty#/easy"
+msgid "쉬움"
+msgstr ""
+
+msgctxt "mp/chat2/steamlobby"
+msgid "세션"
+msgstr ""
+
+msgctxt "mp/game/combined_arms/rules"
+msgid "제병 협동\n\n제병 협동에서는 지도에 깃발로 표시된 핵심 지점을 점령하고 지키는 것이 목표입니다. 현재 더 많은 깃발을 보유한 팀이 시간이 지날수록 점수를 얻으며, 목표 점수에 먼저 도달한 팀이 게임에서 승리합니다. 깃발은 깃발 구역의 원형 경계 안에 있는 보병(전차 승무원 제외)만 점령할 수 있습니다.\n\n\n\"CP\"\n\n지휘 점수는 게임 중 플레이어가 동시에 운용할 수 있는 최대 병력 수를 결정합니다.\n\n\n\"MP\"\n\n인력은 플레이어가 전장에 새 병력을 투입할 때 쓰는 자원입니다. 게임 전체에 배분되는 인력의 총량은 호스트가 정하며, 전투가 시작되면 이 한도에 이를 때까지 플레이어에게 인력이 꾸준히 지급됩니다. 잃은 유닛의 구매 가격은 시간이 지나며 플레이어에게 환급되지만, 이 경우에도 사용 가능한 인력의 총량은 호스트가 정한 한도를 넘지 않습니다."
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchonlyfriends"
+msgid "친구 세션만"
+msgstr ""
+
+msgctxt "mp/txt_disconnecting"
+msgid "연결 해제 중..."
+msgstr ""
+
+msgctxt "mp/msg_steam_offline"
+msgid "Steam 서버에 연결하지 못했습니다. 인터넷 설정을 확인하십시오."
+msgstr ""
+
+msgctxt "mp/presets/browser/title"
+msgid "유닛 세트 옵션"
+msgstr ""
+
+msgctxt "mp/lobby/header/map"
+msgid "지도"
+msgstr ""
+
+msgctxt "mp/presets/spec/_60"
+msgid "60 CP"
+msgstr ""
+
+msgctxt "mp/title_readystatus"
+msgid "플레이 준비 완료"
+msgstr ""
+
+msgctxt "mp/presets/spec/all_high"
+msgid "높음"
+msgstr ""
+
+msgctxt "mp/presets/game/custom"
+msgid "<c(d22b2b)>사용자 지정</c> (XP 획득 불가)"
+msgstr ""
+
+msgctxt "mp/ds/btn"
+msgid "서버 목록"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_version"
+msgid "버전"
+msgstr ""
+
+msgctxt "mp/title_inet"
+msgid "인터넷"
+msgstr ""
+
+msgctxt "mp/lobby/title_quit_game"
+msgid "게임을 종료하시겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/button/kickoff"
+msgid "강제 퇴장"
+msgstr ""
+
+msgctxt "mp/title_lan"
+msgid "LAN"
+msgstr ""
+
+msgctxt "mp/lobby/button/info"
+msgid "정보"
+msgstr ""
+
+msgctxt "mp/gs/qrdnserror"
+msgid "메인 서버에 연결할 수 없습니다."
+msgstr ""
+
+msgctxt "mp/title_replay"
+msgid "리플레이"
+msgstr ""
+
+msgctxt "mp/title_any"
+msgid "전체"
+msgstr ""
+
+msgctxt "mp/retry_btn"
+msgid "다시 시도"
+msgstr ""
+
+msgctxt "mp/chat2/cta"
+msgid "메인 로비"
+msgstr ""
+
+msgctxt "mp/presets/spec/all_normal"
+msgid "보통"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchdistance#/far"
+msgid "먼 곳"
+msgstr ""
+
+msgctxt "mp/presets/game/test"
+msgid "<c(FFA601)>테스트 모드</c> (XP 획득 불가)"
+msgstr ""
+
+msgctxt "mp/sync/title_resources"
+msgid "리소스"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_score"
+msgid "점수"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_180"
+msgid "180 CP"
+msgstr ""
+
+msgctxt "mp/ds/btn_hint"
+msgid "서버 목록"
+msgstr ""
+
+msgctxt "mp/presets/spec/competitive_normal"
+msgid "보통"
+msgstr ""
+
+msgctxt "mp/presets/unit/all"
+msgid "표준"
+msgstr ""
+
+msgctxt "mp/lobby/hint/lockon"
+msgid "세션이 닫혀 있습니다. 클릭하면 엽니다"
+msgstr ""
+
+msgctxt "mp/gs/stats/hdr_games"
+msgid "#게임#점수#게임#승리#승"
+msgstr ""
+
+msgctxt "mp/presets/browser/title_exclude"
+msgid "제외된 유닛"
+msgstr ""
+
+msgctxt "mp/presets/unit/user"
+msgid "사용자 지정 세트"
+msgstr ""
+
+msgctxt "mp/team/a"
+msgid "A팀"
+msgstr ""
+
+msgctxt "mp/trust_rating/banned"
+msgid "차단됨"
+msgstr ""
+
+msgctxt "mp/presets/spec/competitive_high"
+msgid "높음"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.c.alliance"
+msgid "C팀"
+msgstr ""
+
+msgctxt "mp/statistics/title"
+msgid "<f(impact)s(28)c(255 255 255)>게임 통계"
+msgstr ""
+
+msgctxt "mp/scene/chat/all"
+msgid "<b+c(FF8080)>%s"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_120"
+msgid "120 CP"
+msgstr ""
+
+msgctxt "mp/statistics2/detail/header/effectiveness"
+msgid "<x.y.>효율"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_30"
+msgid "30 CP"
+msgstr ""
+
+msgctxt "mp/gs/social/friend_del"
+msgid "친구에서 삭제"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_200"
+msgid "200 CP"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_250"
+msgid "250 CP"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_300"
+msgid "300 CP"
+msgstr ""
+
+msgctxt "mp/lobby/replay/visibility/public"
+msgid "공개"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_50"
+msgid "50 CP"
+msgstr ""
+
+msgctxt "mp/statistics2/statistics/header/effectiveness"
+msgid "<x.y.>효율"
+msgstr ""
+
+msgctxt "mp/gs/stats/global_dialog_title"
+msgid "<f(impact)s(28)c(255 255 255)>명예의 전당"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_60"
+msgid "60 CP"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_80"
+msgid "80 CP"
+msgstr ""
+
+msgctxt "mp/reason/mm_gone"
+msgid "플레이어 %1%이(가) 사라졌습니다"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_100"
+msgid "100 CP"
+msgstr ""
+
+msgctxt "mp/statistics_xp/value"
+msgid "임무 XP: %1%"
+msgstr ""
+
+msgctxt "mp/presets/spec/cp_140"
+msgid "140 CP"
+msgstr ""
+
+msgctxt "mp/team/coop"
+msgid "협동"
+msgstr ""
+
+msgctxt "mp/presets/browser/title_include"
+msgid "포함된 유닛"
+msgstr ""
+
+msgctxt "mp/lobby/session/server_state"
+msgid "서버:"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance#/normal"
+msgid "좋음"
+msgstr ""
+
+msgctxt "mp/presets/browser/title_available"
+msgid "사용 가능한 유닛"
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/invalid_handle"
+msgid "아이템 업데이트 핸들이 올바르지 않습니다. 작업이 이미 끝났을 수 있습니다."
+msgstr ""
+
+msgctxt "mp/gs/stats/player_not_found"
+msgid "플레이어 \"%1%\"을(를) 찾을 수 없습니다."
+msgstr ""
+
+msgctxt "mp/lobby2/button/results"
+msgid "결과"
+msgstr ""
+
+msgctxt "mp/lobby2/pnl_mode_select"
+msgid "게임 모드 선택"
+msgstr ""
+
+msgctxt "mp/lobby2/pnl_map_select"
+msgid "맵 선택"
+msgstr ""
+
+msgctxt "mp/lobby2/pnl_session_set2"
+msgid "설정"
+msgstr ""
+
+msgctxt "mp/presets/browser/title_value"
+msgid "<c(20a601)>클릭해서 둘러보기"
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.unitmode"
+msgid "전쟁 단계"
+msgstr ""
+
+msgctxt "mp/persona_state/away"
+msgid "자리 비움"
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/upload_invalid_version"
+msgid "다른 게임 버전의 리플레이는 업로드할 수 없습니다."
+msgstr ""
+
+msgctxt "mp/chat2/chat_others"
+msgid "<c(white)>사용자 [%1%]"
+msgstr ""
+
+msgctxt "mp/lobby/army_mode/default"
+msgid "기본"
+msgstr ""
+
+msgctxt "mp/lobby/button/leave_zone"
+msgid "구역 나가기"
+msgstr ""
+
+msgctxt "mp/presets/chargefactor"
+msgid "x %1%"
+msgstr ""
+
+msgctxt "mp/presets/resourcespeed"
+msgid "%1% MP"
+msgstr ""
+
+msgctxt "mp/game/cooperative"
+msgid "협동"
+msgstr ""
+
+msgctxt "mp/game/cooperative/info"
+msgid "다른 플레이어와 함께 싱글플레이어 캠페인을 돌파하라!"
+msgstr ""
+
+msgctxt "mp/gs/msg_connecting"
+msgid "연결 중..."
+msgstr ""
+
+msgctxt "mp/game/cooperative/rules"
+msgid "팀(최대 8명)을 만들어 함께 AI와 싸워라."
+msgstr ""
+
+msgctxt "mp/gs/qrbinderror"
+msgid "사용 가능한 호스트 포트를 찾을 수 없습니다."
+msgstr ""
+
+msgctxt "mp/scene/hint_cost2/command"
+msgid "%1% CP"
+msgstr ""
+
+msgctxt "mp/scene/hint_requires/barricade"
+msgid "공병 필요"
+msgstr ""
+
+msgctxt "mp/scene/hint_available"
+msgid "사용 가능: %1% / %2%"
+msgstr ""
+
+msgctxt "mp/game/armored_warfare/objective"
+msgid "깃발로 표시된 지역을 점령하고 지켜라. 깃발을 더 많이 가진 팀이 점수를 얻는다. 점령한 깃발이 많을수록 더 많은 점수를 얻는다."
+msgstr ""
+
+msgctxt "mp/unit_info/gun/range"
+msgid "사거리/관통력<x(275)>%1%m<x(325)>%2%m<x(375)>(최대)"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.lobbyMode#/public"
+msgid "공개"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.lobbyMode#/private"
+msgid "비공개"
+msgstr ""
+
+msgctxt "mp/lobby/setup/tunes.traffic#/minimum"
+msgid "최소"
+msgstr ""
+
+msgctxt "mp/gs/change_sort_name"
+msgid "사용자 이름순으로 정렬합니다."
+msgstr ""
+
+msgctxt "mp/lobby/header/version"
+msgid "%1%"
+msgstr ""
+
+msgctxt "mp/game/koth"
+msgid "언덕의 왕"
+msgstr ""
+
+msgctxt "mp/game/koth/info"
+msgid "다른 팀보다 먼저 핵심 지점을 점령하라!"
+msgstr ""
+
+msgctxt "mp/lobby/slot/hint/open"
+msgid "자리가 비어 있습니다. 더블 클릭하면 참가합니다."
+msgstr ""
+
+msgctxt "mp/lobby/blocked/performance"
+msgid "매치메이킹을 하려면 성능 막대가 최소 2개 필요합니다."
+msgstr ""
+
+msgctxt "mp/game/koth/rules"
+msgid "언덕의 왕"
+msgstr ""
+
+msgctxt "mp/lobby/txt_advanced_on"
+msgid "고급 설정을 잘못 사용하면 게임 경험에 나쁜 영향을 줄 수 있습니다.\n\n계속하시겠습니까?"
+msgstr ""
+
+msgctxt "mp/game/koth/objective"
+msgid "맵 중앙의 깃발을 장악하라! 언덕을 차지한 팀은 추가 환급을 받는다."
+msgstr ""
+
+msgctxt "mp/game/guerrilla"
+msgid "게릴라"
+msgstr ""
+
+msgctxt "mp/game/guerrilla/info"
+msgid "적진 후방에서 혼란을 일으켜라!"
+msgstr ""
+
+msgctxt "mp/game/guerrilla/objective"
+msgid "적이 포기할 때까지 웨이브를 처치하라. 이전 웨이브를 처리하면 새 웨이브가 등장한다."
+msgstr ""
+
+msgctxt "mp/reason/timeout"
+msgid "플레이어 %1%의 연결 시간이 초과되었습니다."
+msgstr ""
+
+msgctxt "mp/statistics2/detail/header/infantry_kills"
+msgid "<x.y.>보병 격파"
+msgstr ""
+
+msgctxt "mp/lobby/button/setmaster"
+msgid "호스트 지정"
+msgstr ""
+
+msgctxt "mp/team/d"
+msgid "D팀"
+msgstr ""
+
+msgctxt "mp/statistics2/statistics/title"
+msgid "통계"
+msgstr ""
+
+msgctxt "mp/statistics/result/header"
+msgid "# #플레이어#<x.>승점#<x.>보병#<x.>차량#<x.>점수#<x.>자원#"
+msgstr ""
+
+msgctxt "mp/lobby/button/enter_zone"
+msgid "구역 변경"
+msgstr ""
+
+msgctxt "mp/game/battle_zones"
+msgid "배틀존"
+msgstr ""
+
+msgctxt "mp/game/battle_zones/info"
+msgid "맵의 핵심 지점을 점령하고 지켜라!"
+msgstr ""
+
+msgctxt "mp/reason/outofsync_server_cheat"
+msgid "치트 사용으로 방장 %1%이(가) 접속 종료되었습니다."
+msgstr ""
+
+msgctxt "mp/gs/quit_confirm"
+msgid "인터넷 게임을 종료하시겠습니까?"
+msgstr ""
+
+msgctxt "mp/game/battle_zones/rules"
+msgid "배틀존\n\n맵에 표시된 전략 거점을 점령하고 지키는 것이 목표입니다. 적 병력을 섬멸하거나 대부분의 전략 거점을 장악하면 승리합니다! 깃발은 보병과 보병 전차만 점령할 수 있습니다.\n\n\n\"CP\"\n\n지휘 점수는 게임 중 플레이어가 동시에 운용할 수 있는 최대 병력 수를 결정합니다.\n\n\n\"MP\"\n\n인력은 플레이어가 전장에 새 병력을 투입할 때 쓰는 자원입니다. 게임 전체에 배분되는 인력의 총량은 호스트가 정하며, 전투가 시작되면 이 한도에 이를 때까지 플레이어에게 인력이 꾸준히 지급됩니다. 잃은 유닛의 구매 가격은 시간이 지나며 플레이어에게 환급되지만, 이 경우에도 사용 가능한 인력의 총량은 호스트가 정한 한도를 넘지 않습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance#/excellent"
+msgid "최상"
+msgstr ""
+
+msgctxt "mp/lobby/ranked_game"
+msgid "랭크 게임"
+msgstr ""
+
+msgctxt "mp/game/battle_zones/objective"
+msgid "깃발로 표시된 지역을 점령하고 지켜라. 적 병력을 섬멸하거나 대부분의 전략 거점을 장악하면 승리한다!"
+msgstr ""
+
+msgctxt "mp/game/heroes"
+msgid "영웅"
+msgstr ""
+
+msgctxt "mp/lobby/txt_advanced"
+msgid "<c(a60000)><x.>고급 설정"
+msgstr ""
+
+msgctxt "mp/game/heroes/info"
+msgid "맵의 핵심 지점을 점령하고 지켜라!"
+msgstr ""
+
+msgctxt "mp/lobby/msg_password_invalid"
+msgid "암호가 올바르지 않습니다!"
+msgstr ""
+
+msgctxt "mp/game/armored_warfare/rules"
+msgid "배틀존\n\n배틀존에서는 지도에 깃발로 표시된 핵심 지점을 점령하고 지키는 것이 목표입니다. 현재 더 많은 깃발을 보유한 팀이 시간이 지날수록 점수를 얻으며, 목표 점수에 먼저 도달한 팀이 게임에서 승리합니다. 깃발은 깃발 구역의 원형 경계 안에 있는 보병(전차 승무원 제외)만 점령할 수 있습니다.\n\n\n\"CP\"\n\n지휘 점수는 게임 중 플레이어가 동시에 운용할 수 있는 최대 병력 수를 결정합니다.\n\n\n\"MP\"\n\n인력은 플레이어가 전장에 새 병력을 투입할 때 쓰는 자원입니다. 게임 전체에 배분되는 인력의 총량은 호스트가 정하며, 전투가 시작되면 이 한도에 이를 때까지 플레이어에게 인력이 꾸준히 지급됩니다. 잃은 유닛의 구매 가격은 시간이 지나며 플레이어에게 환급되지만, 이 경우에도 사용 가능한 인력의 총량은 호스트가 정한 한도를 넘지 않습니다."
+msgstr ""
+
+msgctxt "mp/statistics/units/title"
+msgid "<s(25)y(+9)>유닛"
+msgstr ""
+
+msgctxt "mp/game/heroes/rules"
+msgid "영웅\n\n영웅전에서는 지도에 깃발로 표시된 핵심 지점을 점령하고 지키는 것이 목표입니다."
+msgstr ""
+
+msgctxt "mp/game/heroes/objective"
+msgid "깃발로 표시된 지역을 점령하고 지켜라. 깃발을 더 많이 가진 팀이 점수를 얻는다. 점령한 깃발이 많을수록 더 많은 점수를 얻는다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.customchargefactors"
+msgid "유닛 타이머 배율"
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_common"
+msgid "종합 평점"
+msgstr ""
+
+msgctxt "mp/game/armored_warfare"
+msgid "기갑전"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress_deluxe"
+msgid "디럭스 보너스"
+msgstr ""
+
+msgctxt "mp/game/armored_warfare/info"
+msgid "대규모 전차전을 치르고 연료 보급소를 점령하라!"
+msgstr ""
+
+msgctxt "mp/scene/hint_v2"
+msgid "차량"
+msgstr ""
+
+msgctxt "mp/game/combined_arms"
+msgid "제병 협동"
+msgstr ""
+
+msgctxt "mp/lobby/army_mode/player"
+msgid "플레이어"
+msgstr ""
+
+msgctxt "mp/game/combined_arms/info"
+msgid "지상 및 항공 차량으로 대규모 전투를 치러라!"
+msgstr ""
+
+msgctxt "mp/unit_info/armor"
+msgid "장갑, mm.<x(175)>전면<x(225)>측면<x(275)>후면<x(325)>상면"
+msgstr ""
+
+msgctxt "mp/lobby/button/apply"
+msgid "<f(pobeda)s(27)b>적용"
+msgstr ""
+
+msgctxt "mp/game/combined_arms/objective"
+msgid "깃발로 표시된 지역을 점령하고 지켜라. 깃발을 더 많이 가진 팀이 점수를 얻는다. 점령한 깃발이 많을수록 더 많은 점수를 얻는다."
+msgstr ""
+
+msgctxt "mp/lobby/txt_players"
+msgid "플레이어: %1%"
+msgstr ""
+
+msgctxt "mp/game/modifications"
+msgid "모드 게임"
+msgstr ""
+
+msgctxt "mp/lobby/slot/reserved_slot"
+msgid "<c(bf3030)>예약됨"
+msgstr ""
+
+msgctxt "mp/gs/stats/player_loading_error"
+msgid "플레이어 데이터를 불러오지 못했습니다."
+msgstr ""
+
+msgctxt "mp/gs/stats/armies"
+msgid "<y(+9)>군대"
+msgstr ""
+
+msgctxt "mp/reason/gone"
+msgid "플레이어 %1%이(가) 사라졌습니다"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.f.alliance"
+msgid "F팀"
+msgstr ""
+
+msgctxt "mp/statistics_xp/victory_bonus"
+msgid "승리 보너스 (+%1%%): %2%"
+msgstr ""
+
+msgctxt "mp/session_restriction/version"
+msgid "<c(faeacb)>참가할 수 없음: 게임 버전이 다릅니다."
+msgstr ""
+
+msgctxt "mp/lobby/slot/hint/reserved"
+msgid "호스트의 친구에게만 열려 있는 자리입니다."
+msgstr ""
+
+msgctxt "mp/lobby/session/mods"
+msgid "<y(+9)>모드"
+msgstr ""
+
+msgctxt "mp/statistics/player/btn_profile"
+msgid "내 프로필"
+msgstr ""
+
+msgctxt "mp/game/text/captureflag_preparetime"
+msgid "준비 시간"
+msgstr ""
+
+msgctxt "mp/game/text/frontline_preparetime"
+msgid "준비 시간"
+msgstr ""
+
+msgctxt "mp/game/text/combat_inactivity_lose_time"
+msgid "아군에 남은 유닛이 없습니다. 패배까지 남은 시간:"
+msgstr ""
+
+msgctxt "mp/lobby/replay/load_incomplete_replay"
+msgid "리플레이가 불완전하거나 손상되었습니다. 그래도 불러오시겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/button/back"
+msgid "<f(pobeda)s(27)b>뒤로"
+msgstr ""
+
+msgctxt "mp/lobby/txt_local_provider"
+msgid "로컬 호스트"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress_xp_boost"
+msgid "경험치 부스트"
+msgstr ""
+
+msgctxt "mp/game/text/enemies_remaining"
+msgid "<f(bookman_hq)s(13)c(FFFFFF)e(shadow)>남은 적 %1%명!"
+msgstr ""
+
+msgctxt "mp/sync/txt_resourcedesync"
+msgid "리소스 동기화 오류가 감지되었습니다."
+msgstr ""
+
+msgctxt "mp/game/text/koth_capturing_own"
+msgid "이제 추가 MP를 받고 있습니다!"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.veterancymode#/veterans"
+msgid "베테랑"
+msgstr ""
+
+msgctxt "mp/statistics/player/total"
+msgid "+%1% XP <c(25 25 25)>(%2% XP + %3% XP *승리 + %4% XP *친구 + %5% XP *디럭스)"
+msgstr ""
+
+msgctxt "mp/session_restriction/closed"
+msgid "참가할 수 없음: 세션이 닫혀 있습니다."
+msgstr ""
+
+msgctxt "mp/scene/hint_v3"
+msgid "전차"
+msgstr ""
+
+msgctxt "mp/game/text/koth_capturing_enemy"
+msgid "적 팀이 이제 추가 MP를 받고 있습니다!"
+msgstr ""
+
+msgctxt "mp/lobby/button/replay_game"
+msgid "리플레이"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/xp_hint"
+msgid "XP를 얻으려면 표준 설정의 PvP 대전이나 정복전을 플레이해야 하며, 전투에서 중도 이탈해서는 안 됩니다."
+msgstr ""
+
+msgctxt "mp/army/ger_early"
+msgid "독일 (전쟁 초기)"
+msgstr ""
+
+msgctxt "mp/army/ger_mid"
+msgid "독일 (전쟁 중기)"
+msgstr ""
+
+msgctxt "mp/army/ger_late"
+msgid "독일 (전쟁 후기)"
+msgstr ""
+
+msgctxt "mp/army/ger"
+msgid "독일"
+msgstr ""
+
+msgctxt "mp/alliance/ger"
+msgid "독일"
+msgstr ""
+
+msgctxt "mp/army/rus_early"
+msgid "소련 (전쟁 초기)"
+msgstr ""
+
+msgctxt "mp/army/rus_mid"
+msgid "소련 (전쟁 중기)"
+msgstr ""
+
+msgctxt "mp/army/rus_late"
+msgid "소련 (전쟁 후기)"
+msgstr ""
+
+msgctxt "mp/army/rus"
+msgid "소련"
+msgstr ""
+
+msgctxt "mp/alliance/rus"
+msgid "소련"
+msgstr ""
+
+msgctxt "mp/army/fin_early"
+msgid "핀란드 (전쟁 초기)"
+msgstr ""
+
+msgctxt "mp/army/fin_mid"
+msgid "핀란드 (전쟁 중기)"
+msgstr ""
+
+msgctxt "mp/army/fin_late"
+msgid "핀란드 (전쟁 후기)"
+msgstr ""
+
+msgctxt "mp/army/fin"
+msgid "핀란드"
+msgstr ""
+
+msgctxt "mp/alliance/fin"
+msgid "핀란드"
+msgstr ""
+
+msgctxt "mp/sync/txt_mapapply"
+msgid "%s 맵이 적용됩니다."
+msgstr ""
+
+msgctxt "mp/army/civilian"
+msgid "민간인"
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/ai_heroic"
+msgid "AI: 영웅"
+msgstr ""
+
+msgctxt "mp/army/random"
+msgid "무작위"
+msgstr ""
+
+msgctxt "mp/lobby/header/ping"
+msgid "핑"
+msgstr ""
+
+msgctxt "mp/army/spectator"
+msgid "관전자"
+msgstr ""
+
+msgctxt "mp/statistics/player/man"
+msgid "보병:"
+msgstr ""
+
+msgctxt "mp/army/dummy"
+msgid "알 수 없음"
+msgstr ""
+
+msgctxt "mp/reason/outofsync"
+msgid "플레이어 %1%이(가) '동기화 오류'로 퇴장당했습니다."
+msgstr ""
+
+msgctxt "mp/gs/join"
+msgid "세션 참가"
+msgstr ""
+
+msgctxt "mp/army/extra"
+msgid "추가"
+msgstr ""
+
+msgctxt "mp/team/b"
+msgid "B팀"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_army"
+msgid "군대"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_password"
+msgid "암호"
+msgstr ""
+
+msgctxt "mp/team/c"
+msgid "C팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/tunes.cheatkeys"
+msgid "개발자 명령 사용"
+msgstr ""
+
+msgctxt "mp/lobby/setup/game.hardcore#hint"
+msgid "더 현실적인 경험."
+msgstr ""
+
+msgctxt "mp/lobby/button/results"
+msgid "이전 게임 결과 표시"
+msgstr ""
+
+msgctxt "mp/team/e"
+msgid "E팀"
+msgstr ""
+
+msgctxt "mp/lobby/army_mode/alliance"
+msgid "추축국 대 연합국"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance#/undefined"
+msgid "최소"
+msgstr ""
+
+msgctxt "mp/team/f"
+msgid "F팀"
+msgstr ""
+
+msgctxt "mp/team/g"
+msgid "G팀"
+msgstr ""
+
+msgctxt "mp/team/h"
+msgid "H팀"
+msgstr ""
+
+msgctxt "mp/team/spectator"
+msgid "관전자"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchonlynotfull"
+msgid "빈 자리가 있는 방만"
+msgstr ""
+
+msgctxt "mp/alliance/axis"
+msgid "추축국"
+msgstr ""
+
+msgctxt "mp/alliance/allies"
+msgid "연합국"
+msgstr ""
+
+msgctxt "mp/lobby/button/filter"
+msgid "필터"
+msgstr ""
+
+msgctxt "mp/reason/game_gone"
+msgid "플레이어 %1%이(가) 사라졌습니다"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.map"
+msgid "지도"
+msgstr ""
+
+msgctxt "mp/stage/lobby"
+msgid "로비에서 대기 중"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.scorefinal#hint"
+msgid "게임에서 얼마나 빨리 승리할 수 있는지 정한다. 이 값은 게임 참가 인원수에 곱해진다."
+msgstr ""
+
+msgctxt "mp/stage/session"
+msgid "게임 시작 중"
+msgstr ""
+
+msgctxt "mp/stage/game"
+msgid "게임 플레이 중"
+msgstr ""
+
+msgctxt "mp/stage/zone"
+msgid "로비에서 대기 중"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchdistance#/default"
+msgid "중"
+msgstr ""
+
+msgctxt "mp/settings/disabled"
+msgid "사용 안 함"
+msgstr ""
+
+msgctxt "mp/reason/msg_outofsync_server_cheat"
+msgid "치트가 사용되어 모든 플레이어가 오프라인이 되었습니다."
+msgstr ""
+
+msgctxt "mp/stage/gslobby"
+msgid "메인 룸"
+msgstr ""
+
+msgctxt "mp/chat2/chat_friends"
+msgid "<c(white)>친구 [%1%]"
+msgstr ""
+
+msgctxt "mp/stage/gssession"
+msgid "게임 룸"
+msgstr ""
+
+msgctxt "mp/reason/session_gone"
+msgid "플레이어 %1%이(가) 사라졌습니다"
+msgstr ""
+
+msgctxt "mp/reason/slow"
+msgid "PC 성능 문제로 플레이어 %1%이(가) 퇴장당했습니다."
+msgstr ""
+
+msgctxt "mp/scene/hint_cost/default"
+msgid "MP: %1%"
+msgstr ""
+
+msgctxt "mp/reason/kickoff"
+msgid "호스트가 플레이어 %1%을(를) 강제 퇴장시켰습니다!"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.a.alliance"
+msgid "A팀"
+msgstr ""
+
+msgctxt "mp/reason/disconnect"
+msgid "플레이어 %1%와의 연결이 끊어졌습니다."
+msgstr ""
+
+msgctxt "mp/lobby/hint/not_ready"
+msgid "준비 안 됨"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_name"
+msgid "이름"
+msgstr ""
+
+msgctxt "mp/reason/msg_outofsync"
+msgid "동기화 오류로 게임에서 퇴장당했습니다."
+msgstr ""
+
+msgctxt "mp/reason/msg_slow"
+msgid "PC 성능이 낮아 게임에서 퇴장당했습니다."
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/resources"
+msgid "<x.y.>자원"
+msgstr ""
+
+msgctxt "mp/reason/msg_kickoff"
+msgid "서버에서 강제 퇴장당했습니다."
+msgstr ""
+
+msgctxt "mp/statistics/detail/title"
+msgid "<s(25)y(+9)>상세"
+msgstr ""
+
+msgctxt "mp/reason/msg_outofsync_client_cheat"
+msgid "치트 사용으로 연결이 끊겼습니다."
+msgstr ""
+
+msgctxt "mp/chat2/cta_spanish"
+msgid "ESPAÑOL"
+msgstr ""
+
+msgctxt "mp/reason/msg_disconnect"
+msgid "연결이 끊어졌습니다"
+msgstr ""
+
+msgctxt "mp/reason/outofsync_client_cheat"
+msgid "치트 사용으로 플레이어 %1%의 연결이 끊겼습니다."
+msgstr ""
+
+msgctxt "mp/statistics_xp/friend_bonus"
+msgid "친구 보너스 (+%1%%): %2%"
+msgstr ""
+
+msgctxt "mp/lobby/button/change_map"
+msgid "맵 변경"
+msgstr ""
+
+msgctxt "mp/session_restriction/veterancy"
+msgid "참가할 수 없음: 더 높은 베테랑 등급이 필요합니다."
+msgstr ""
+
+msgctxt "mp/session_restriction/performance"
+msgid "참가할 수 없음: 더 높은 성능 등급이 필요합니다."
+msgstr ""
+
+msgctxt "mp/button/multiplayer_find_match"
+msgid "대전 찾기"
+msgstr ""
+
+msgctxt "mp/lobby/button/invite"
+msgid "초대"
+msgstr ""
+
+msgctxt "mp/session_restriction/player_limit"
+msgid "참가할 수 없음: 인원이 가득 찬 세션입니다."
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress"
+msgid "진행도"
+msgstr ""
+
+msgctxt "mp/lobby/title_close_game"
+msgid "게임을 종료하시겠습니까?"
+msgstr ""
+
+msgctxt "mp/statistics/result/resources"
+msgid "%1%"
+msgstr ""
+
+msgctxt "mp/lobby/title_close_game_xp"
+msgid "정말 항복하시겠습니까?\n\nXP를 받지 못하고 아이템 드롭 기회도 잃습니다!\n공정한 플레이를 위해 게임에 남아 주십시오."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.gameduration#hint"
+msgid "승리까지 남은 시간."
+msgstr ""
+
+msgctxt "mp/scene/msg_quality_reducing"
+msgid "성능 향상을 위해 비디오 설정을 낮췄습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/player.name"
+msgid "플레이어 이름"
+msgstr ""
+
+msgctxt "mp/lobby/title_surrender_game"
+msgid "정말 항복하겠습니까?\n\n이번 경기에서 얻은 경험치(XP)를 모두 잃고, 패배가 기록되며, 랭크전 신뢰도가 떨어집니다.\n공정한 대전을 위해 게임을 끝까지 유지해 주십시오."
+msgstr ""
+
+msgctxt "mp/lobby/title_zone"
+msgid "구역 선택"
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.customunitset"
+msgid "유닛 세트"
+msgstr ""
+
+msgctxt "mp/lobby/title_session"
+msgid "게임"
+msgstr ""
+
+msgctxt "mp/lobby/hint/kick"
+msgid "플레이어 강퇴"
+msgstr ""
+
+msgctxt "mp/gs/chat/select_type"
+msgid "채팅방 선택"
+msgstr ""
+
+msgctxt "mp/lobby/title_selectmap"
+msgid "지도"
+msgstr ""
+
+msgctxt "mp/gs/confirm_join_inaccessible"
+msgid "서버가 응답하지 않거나 접속할 수 없습니다. 그래도 참가를 시도하겠습니까?"
+msgstr ""
+
+msgctxt "mp/gs/inaccessible_learn"
+msgid "자세히 보기"
+msgstr ""
+
+msgctxt "mp/gs/qrconnerror"
+msgid "Steam 네트워크가 아직 이 서버의 핑을 돌려주지 않았습니다. 핑 값이 나오면 참가할 수 있습니다."
+msgstr ""
+
+msgctxt "mp/statistics/units/hint"
+msgid "소모한 자원: %.0f / %.0f"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchonlyopen"
+msgid "열린 세션만"
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/score"
+msgid "<x.y.>점수"
+msgstr ""
+
+msgctxt "mp/lobby/header/host"
+msgid "호스트"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_players_total"
+msgid "플레이어 수:"
+msgstr ""
+
+msgctxt "mp/lobby/header/game"
+msgid "게임"
+msgstr ""
+
+msgctxt "mp/lobby/hdr_session"
+msgid "<c(faeacb)># # # # # #호스트 [%1%]#게임#지도#플레이어#핑#%2%#모드"
+msgstr ""
+
+msgctxt "mp/lobby/txt_lookingforsessions"
+msgid "<c(white)>게임을 찾는 중"
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.customunitset#hint"
+msgid "먼저 포함할 유닛을 고른 뒤 제외할 유닛을 고르십시오."
+msgstr ""
+
+msgctxt "mp/lobby/hdr_sessioncount"
+msgid "%1% / %2%"
+msgstr ""
+
+msgctxt "mp/lobby/txt_mm_performance_warn"
+msgid "세션 참가자 중 일부의 성능이 낮습니다."
+msgstr ""
+
+msgctxt "mp/lobby/hdr_lobby"
+msgid "# #호스트 [%1%]#사용자#게임#핑"
+msgstr ""
+
+msgctxt "mp/gs/stats/loading_error"
+msgid "페이지를 불러오지 못했습니다."
+msgstr ""
+
+msgctxt "mp/lobby/lbl_gametype"
+msgid "게임 종류:"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_map"
+msgid "지도 선택:"
+msgstr ""
+
+msgctxt "mp/statistics/history/title"
+msgid "<s(25)y(+9)>기록"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_minplayers"
+msgid "최소 플레이어 수"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_maxplayers"
+msgid "최대 플레이어 수"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_info"
+msgid "추가 정보:"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchdistance#/close"
+msgid "가장 가까운 순"
+msgstr ""
+
+msgctxt "mp/unit_info/btn_info"
+msgid "설명"
+msgstr ""
+
+msgctxt "mp/gs/chat/bad_channel_pass"
+msgid "채팅 채널의 사용자 수가 한도에 도달했습니다."
+msgstr ""
+
+msgctxt "mp/lobby/lbl_password"
+msgid "비밀번호:"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_performance"
+msgid "사용자 성능"
+msgstr ""
+
+msgctxt "mp/lobby/replay/visibility/friends"
+msgid "친구"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_passwordconfirm"
+msgid "다시 입력:"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress_total_xp"
+msgid "총 XP"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_password_enter"
+msgid "비밀번호를 입력하십시오:"
+msgstr ""
+
+msgctxt "mp/lobby/ping_ms"
+msgid "%1%ms"
+msgstr ""
+
+msgctxt "mp/chat2/cta_chinese"
+msgid "中文"
+msgstr ""
+
+msgctxt "mp/lobby/ping_s"
+msgid "%1%s"
+msgstr ""
+
+msgctxt "mp/lobby/hint/remove_player"
+msgid "팀에서 플레이어 제거"
+msgstr ""
+
+msgctxt "mp/lobby/txt_creatingsession"
+msgid "게임 생성 중..."
+msgstr ""
+
+msgctxt "mp/persona_state/in_other_game"
+msgid "다른 게임 중"
+msgstr ""
+
+msgctxt "mp/lobby/txt_creatingsession_failed"
+msgid "게임 생성에 실패했습니다..."
+msgstr ""
+
+msgctxt "mp/lobby/txt_closesession"
+msgid "현재 세션을 닫겠습니까?"
+msgstr ""
+
+msgctxt "mp/sync/txt_notfound"
+msgid "%s을(를) 찾을 수 없습니다."
+msgstr ""
+
+msgctxt "mp/lobby/txt_lookingforsessions_empty"
+msgid "<c(white)>지정한 필터에 맞는 게임이 없습니다"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_map"
+msgid "지도"
+msgstr ""
+
+msgctxt "mp/lobby/txt_lookingforservers"
+msgid "<c(white)>서버를 찾는 중"
+msgstr ""
+
+msgctxt "mp/lobby/bots"
+msgid "봇"
+msgstr ""
+
+msgctxt "mp/lobby/chat_officers"
+msgid "<c(white)>장교 [%1%]"
+msgstr ""
+
+msgctxt "mp/statistics/history/timestamp"
+msgid "<f(arial_hq)s(8)c(ffffff)>%02d:%02d"
+msgstr ""
+
+msgctxt "mp/sync/txt_resourcedesyncfor"
+msgid "자원 동기화 오류 감지 - %1%."
+msgstr ""
+
+msgctxt "mp/lobby/txt_test_mode_on"
+msgid "테스트 모드는 자원이 무제한인 샌드박스 모드입니다.\n시험 용도로만 즐기도록 만든 모드입니다.\n계속하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/chat_friends"
+msgid "<c(white)>친구 [%1%]"
+msgstr ""
+
+msgctxt "mp/lobby/button/details"
+msgid "상세"
+msgstr ""
+
+msgctxt "mp/lobby/army_mode/team"
+msgid "지정 국가"
+msgstr ""
+
+msgctxt "mp/lobby/replay/load_invalid_version_failed"
+msgid "이 리플레이는 다른 게임 버전에서 만들어져 불러올 수 없습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/player.team"
+msgid "플레이어 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/player.army"
+msgid "플레이어 군대"
+msgstr ""
+
+msgctxt "mp/sync/msg_downloading"
+msgid "파일 내려받는 중..."
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.gamemode"
+msgid "게임 설정"
+msgstr ""
+
+msgctxt "mp/scene/hint_cost/command"
+msgid "CP: %1%"
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.gamemode#hint"
+msgid "기본 게임 규칙을 바꾸는 추가 옵션."
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.unitmode#hint"
+msgid "기본 구성을 쓰거나 사용할 유닛을 직접 지정합니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.specmode"
+msgid "자원 설정"
+msgstr ""
+
+msgctxt "mp/gs/copy_text"
+msgid "텍스트 복사"
+msgstr ""
+
+msgctxt "mp/gs/copy_message"
+msgid "텍스트 복사"
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.specmode#hint"
+msgid "값이 높을수록 더 많은 유닛을 동시에 운용할 수 있습니다."
+msgstr ""
+
+msgctxt "mp/statistics2/personal/replay_save_title"
+msgid "리플레이 저장"
+msgstr ""
+
+msgctxt "mp/lobby/setup/preset.customchargefactors#hint"
+msgid "유닛이나 유닛 그룹을 다시 구매할 수 있을 때까지 걸리는 시간에 곱하는 배율."
+msgstr ""
+
+msgctxt "mp/lobby/slot/hint/ai"
+msgid "AI 플레이어용으로 예약된 슬롯입니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.fogofwar"
+msgid "전장의 안개"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.fogofwar#hint"
+msgid "발견하지 못한 적 유닛을 숨기거나 플레이어에게 모두 공개합니다.\n공개해도 유닛이 적에게 반응하려면 스스로 적을 발견해야 합니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.fogofwar#/fog_realistic"
+msgid "사실적"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.showpiercing#hint"
+msgid "목표물에 대한 장갑 관통 확률을 표시합니다."
+msgstr ""
+
+msgctxt "mp/lobby/replay/row_game"
+msgid "%1%"
+msgstr ""
+
+msgctxt "mp/statistics/player/elo"
+msgid "랭크 점수 (ELO):"
+msgstr ""
+
+msgctxt "mp/lobby2/button/cancel"
+msgid "<f(pobeda)s(27)b>취소"
+msgstr ""
+
+msgctxt "mp/lobby/hint/filter"
+msgid "필터"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.gameduration"
+msgid "게임 시간"
+msgstr ""
+
+msgctxt "mp/scene/hint_level"
+msgid "레벨: %1%"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.difficulty"
+msgid "난이도"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.difficulty#hint"
+msgid "적의 규모와 플레이어 유닛의 체력에 영향을 줍니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/tunes.traffic"
+msgid "대역폭"
+msgstr ""
+
+msgctxt "mp/scene/txt_payback_rate2"
+msgid "<f(arial_hq)c(f8cf91)p(0)e(shadow)>+%1%"
+msgstr ""
+
+msgctxt "mp/lobby/setup/tunes.traffic#/optimal"
+msgid "최적"
+msgstr ""
+
+msgctxt "mp/lobby/setup/tunes.traffic#/maximum"
+msgid "최대"
+msgstr ""
+
+msgctxt "mp/statistics/units/user"
+msgid "%1%"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.a.army"
+msgid "A팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.b.army"
+msgid "B 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.c.army"
+msgid "C팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.d.army"
+msgid "D 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/game.hardcore"
+msgid "사실성 강화"
+msgstr ""
+
+msgctxt "mp/lobby/button/select"
+msgid "선택"
+msgstr ""
+
+msgctxt "mp/scene/txt_winner"
+msgid "%1% 승리!"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.e.army"
+msgid "E 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.f.army"
+msgid "F팀"
+msgstr ""
+
+msgctxt "mp/lobby/session/map"
+msgid "지도:"
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance4"
+msgid "PC 성능 (좋음)"
+msgstr ""
+
+msgctxt "mp/gs/change_rank_type"
+msgid "통계 종류 변경"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.g.army"
+msgid "G 팀"
+msgstr ""
+
+msgctxt "mp/gs/acoount_bad_name_first_number"
+msgid "이름은 숫자로 시작할 수 없습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.h.army"
+msgid "H 팀"
+msgstr ""
+
+msgctxt "mp/lobby/hint/post_msg"
+msgid "메시지 보내기"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.b.alliance"
+msgid "B 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.d.alliance"
+msgid "D 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.e.alliance"
+msgid "E 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.g.alliance"
+msgid "G 팀"
+msgstr ""
+
+msgctxt "mp/lobby/hint/join_team"
+msgid "더블 클릭하여 팀에 참가"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/unlocked"
+msgid "잠금 해제"
+msgstr ""
+
+msgctxt "mp/lobby/setup/team.h.alliance"
+msgid "H 팀"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.fogofwar#/fog_off"
+msgid "사용 안 함"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.fogofwar#/fog_simple"
+msgid "단순"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.friendlyfire"
+msgid "아군 오사"
+msgstr ""
+
+msgctxt "mp/persona_state/in_match"
+msgid "게임 중 (플레이 중)"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.friendlyfire#hint"
+msgid "아군 유닛의 사격이 아군에게도 피해를 줍니다."
+msgstr ""
+
+msgctxt "mp/lobby/button/file_exists"
+msgid "같은 이름의 파일이 이미 있습니다."
+msgstr ""
+
+msgctxt "mp/scene/txt_waitingfor"
+msgid "<f(bookman_hq)s(13)>플레이어의 성능 저하 발생"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.resourceamount"
+msgid "총 인력"
+msgstr ""
+
+msgctxt "mp/lobby/button/replay_rename_title"
+msgid "리플레이 이름 변경"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.resourceamount#hint"
+msgid "자원의 최대치. 값이 높을수록 수입 속도도 빨라집니다."
+msgstr ""
+
+msgctxt "mp/lobby/replay/row_players"
+msgid "플레이어: %1% / %2%"
+msgstr ""
+
+msgctxt "mp/statistics/units/cost/special"
+msgid "<c(30 30 30)>%.0f DP"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.scorefinal"
+msgid "승리에 필요한 승점"
+msgstr ""
+
+msgctxt "mp/lobby/hint/setmaster"
+msgid "새 호스트 지정"
+msgstr ""
+
+msgctxt "mp/scene/msg_reinforcement_arrived"
+msgid "유닛 %1%기의 증원이 도착했습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.preparationtime"
+msgid "준비 시간 (초)"
+msgstr ""
+
+msgctxt "mp/lobby/button/start"
+msgid "시작"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.preparationtime#hint"
+msgid "게임이 시작될 때까지의 시간. 이 시간 동안 유닛을 구매할 수 있습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.difficulty#/normal"
+msgid "보통"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.difficulty#/hard"
+msgid "어려움"
+msgstr ""
+
+msgctxt "mp/unit_info/armor_angle_desc"
+msgid "<s(8)c(20 20 20)f(arial_hq)>* - 경사각은 수평면을 기준으로 한 각도입니다. 각도가 <x(0)y(12)> 작을수록 포탄이 튕겨 나갈 확률이 높습니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.difficulty#/heroic"
+msgid "하드코어"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.showpiercing"
+msgid "장갑 관통 표시"
+msgstr ""
+
+msgctxt "mp/lobby/slot/closed_slot"
+msgid "<c(bf3030)>닫힘"
+msgstr ""
+
+msgctxt "mp/gs/stats/rank"
+msgid "점수"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.showdamagereports"
+msgid "피해 정보 표시"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.showdamagereports#hint"
+msgid "아군 차량이 피격되었을 때 피해 정보를 표시합니다."
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_date"
+msgid "날짜"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.enablespectators"
+msgid "관전자 허용"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_players_selected"
+msgid "팀 구성:"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.enablespectators#hint"
+msgid "게임을 관전할 플레이어 슬롯을 추가합니다."
+msgstr ""
+
+msgctxt "mp/gs/pathcing_cancel"
+msgid "계속"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.armyselectionmode"
+msgid "군대 선택 방식"
+msgstr ""
+
+msgctxt "mp/lobby/setup/mission_options"
+msgid "임무 옵션"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.armyselectionmode#hint"
+msgid "플레이어가 진영을 고르는 방식을 정합니다."
+msgstr ""
+
+msgctxt "mp/gs/stats/select_game_type"
+msgid "게임 종류 선택"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.randomspawnpoints"
+msgid "무작위 스폰 지점"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance#/impossible"
+msgid "불가능"
+msgstr ""
+
+msgctxt "mp/lobby/hint/kickban"
+msgid "플레이어 강퇴 및 차단"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance#/low"
+msgid "중"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.minuserperformance#/fast"
+msgid "빠름"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.veterancymode"
+msgid "사용자 경험"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.veterancymode#/all"
+msgid "자유 전투"
+msgstr ""
+
+msgctxt "mp/sync/txt_reschecking"
+msgid "자원 확인 중..."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.veterancymode#/beginners"
+msgid "초보자"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.version"
+msgid "게임 버전"
+msgstr ""
+
+msgctxt "mp/gs/chat/nik_too_long"
+msgid "이름이 너무 깁니다"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.map#not_found"
+msgid "<c(red)>%s (지도를 찾을 수 없음)"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.map#crc_invalid"
+msgid "<c(red)>%s (지도 버전이 다름)"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/xp"
+msgid "%1% XP"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.date"
+msgid "날짜"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.gametype"
+msgid "게임 유형"
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.players"
+msgid "플레이어"
+msgstr ""
+
+msgctxt "mp/sync/txt_mapcompare"
+msgid "지도 %1%이(가) 설치되어 있으며, %2%이(가) 필요합니다."
+msgstr ""
+
+msgctxt "mp/lobby/setup/replay.players#count"
+msgid "%1% / %2%"
+msgstr ""
+
+msgctxt "mp/trust_rating/perm_banned"
+msgid "영구 정지"
+msgstr ""
+
+msgctxt "mp/gs/stats/undef_error"
+msgid "오류!"
+msgstr ""
+
+msgctxt "mp/lobby/button/join"
+msgid "참가"
+msgstr ""
+
+msgctxt "mp/lobby/button/new_game"
+msgid "새 게임"
+msgstr ""
+
+msgctxt "mp/lobby/button/create_session"
+msgid "생성"
+msgstr ""
+
+msgctxt "mp/lobby/chat_user_banned"
+msgid "이 채팅방에서 차단되었습니다."
+msgstr ""
+
+msgctxt "mp/lobby/button/refresh"
+msgid "새로 고침"
+msgstr ""
+
+msgctxt "mp/lobby/button/ready"
+msgid "준비"
+msgstr ""
+
+msgctxt "mp/gs/social/show_online"
+msgid "<y(+5)>온라인"
+msgstr ""
+
+msgctxt "mp/lobby/button/stop"
+msgid "STOP"
+msgstr ""
+
+msgctxt "mp/gs/social/ignore_page"
+msgid "<y(+9)>차단됨"
+msgstr ""
+
+msgctxt "mp/scene/hint_cost/special"
+msgid "DP: %1%"
+msgstr ""
+
+msgctxt "mp/lobby/button/desync"
+msgid "동기화 오류"
+msgstr ""
+
+msgctxt "mp/lobby/button/download"
+msgid "내려받기"
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/uploading"
+msgid "업로드 중 (%.0f%)"
+msgstr ""
+
+msgctxt "mp/unit_info/gun/piercing"
+msgid "%1%<x(275)>%2%mm<x(325)>%3%mm<x(375)>%5%mm<x(425)>(%4%m)"
+msgstr ""
+
+msgctxt "mp/unit_info/gun/explosive"
+msgid "%1%<x(275)>-<x(325)>-<x(375)>-<x(425)>(%2%m)"
+msgstr ""
+
+msgctxt "mp/lobby/button/result"
+msgid "결과"
+msgstr ""
+
+msgctxt "mp/lobby/blocked/seconds"
+msgid "랭크전 신뢰도 때문에 %1%초 동안 인터넷 게임에 들어갈 수 없습니다. 진행 중인 게임에서 나가지 마십시오."
+msgstr ""
+
+msgctxt "mp/lobby/button/rename"
+msgid "이름 변경"
+msgstr ""
+
+msgctxt "mp/lobby/filter/reset"
+msgid "<f(pobeda)s(27)b>초기화"
+msgstr ""
+
+msgctxt "mp/lobby/button/delete"
+msgid "DELETE"
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance"
+msgid "PC 성능"
+msgstr ""
+
+msgctxt "mp/chat/steamclan"
+msgid "커뮤니티"
+msgstr ""
+
+msgctxt "mp/lobby/button/upload"
+msgid "업로드"
+msgstr ""
+
+msgctxt "mp/gs/chat/user_banned_by_channel"
+msgid "이 채널에서 차단된 사용자입니다."
+msgstr ""
+
+msgctxt "mp/lobby/button/browse"
+msgid "찾아보기"
+msgstr ""
+
+msgctxt "mp/lobby/slot/ai_slot"
+msgid "AI 플레이어"
+msgstr ""
+
+msgctxt "mp/lobby/hint/ready"
+msgid "준비"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress_xp"
+msgid "획득한 XP"
+msgstr ""
+
+msgctxt "mp/gs/stats/common_page"
+msgid "<y(+9)>공통"
+msgstr ""
+
+msgctxt "mp/lobby/button/rules"
+msgid "정보"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_players_to_selected"
+msgid "참가 가능 플레이어:"
+msgstr ""
+
+msgctxt "mp/lobby/button/advanced"
+msgid "고급 설정"
+msgstr ""
+
+msgctxt "mp/gs/game_temporarily_unavailable"
+msgid "온라인 서비스가 점검을 위해 일시 중단되었습니다. 나중에 다시 시도하십시오."
+msgstr ""
+
+msgctxt "mp/lobby/button/replay_start"
+msgid "시작"
+msgstr ""
+
+msgctxt "mp/lobby/button/replay_delete"
+msgid "DELETE"
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/ai_easy"
+msgid "AI: 신병"
+msgstr ""
+
+msgctxt "mp/lobby/button/replay_rename"
+msgid "이름 변경"
+msgstr ""
+
+msgctxt "mp/lobby/slot/empty_slot"
+msgid "<c(7e7e7e)>비어 있음"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_passwordconfirm"
+msgid "다시 입력"
+msgstr ""
+
+msgctxt "mp/lobby/slot/reserved_slot_canjoin"
+msgid "<c(60bf68)>예약됨"
+msgstr ""
+
+msgctxt "mp/lobby2/no_enemies_warning"
+msgid "적 팀이 빈 상태로 시작하겠습니까?"
+msgstr ""
+
+msgctxt "mp/gs/stats/looking_for_player"
+msgid "플레이어 \"%1%\"을(를) 검색 중입니다. 잠시 기다려 주십시오."
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/open"
+msgid "슬롯 열기"
+msgstr ""
+
+msgctxt "mp/search_replay/search_subscribed"
+msgid "<s(25)y(+9)>구독 중"
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/closed"
+msgid "슬롯 닫기"
+msgstr ""
+
+msgctxt "mp/scene/pause"
+msgid "<f(pobeda)e(shadow)s(42)b>일시 정지"
+msgstr ""
+
+msgctxt "mp/scene/txt_waitingfor_master"
+msgid "<f(pobeda)s(21)b+c(faeacb)e(shadow)x.y.>서버 대기 중"
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/reserved"
+msgid "슬롯 예약"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_desc"
+msgid "설명"
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/ai_normal"
+msgid "AI: 보통"
+msgstr ""
+
+msgctxt "mp/unit_info/gun"
+msgid "포<x(275)>%1%"
+msgstr ""
+
+msgctxt "mp/lobby/slot/menu/ai_hard"
+msgid "AI: 베테랑"
+msgstr ""
+
+msgctxt "mp/gs/stats/first"
+msgid "처음으로"
+msgstr ""
+
+msgctxt "mp/lobby/slot/hint/closed"
+msgid "닫힌 슬롯입니다."
+msgstr ""
+
+msgctxt "mp/lobby/hint/desynced"
+msgid "동기화가 어긋났습니다."
+msgstr ""
+
+msgctxt "mp/lobby/hint/password_protected"
+msgid "비밀번호 보호"
+msgstr ""
+
+msgctxt "mp/statistics2/statistics/header/score"
+msgid "<x.y.>점수"
+msgstr ""
+
+msgctxt "mp/gs/stats/wins"
+msgid "승리"
+msgstr ""
+
+msgctxt "mp/gs/stats/prev"
+msgid "이전 페이지"
+msgstr ""
+
+msgctxt "mp/lobby/hint/refresh"
+msgid "새로 고침"
+msgstr ""
+
+msgctxt "mp/lobby/hint/show_smileys"
+msgid "이모티콘 메뉴 표시"
+msgstr ""
+
+msgctxt "mp/lobby/hint/lockoff"
+msgid "세션이 열려 있습니다. 클릭하면 닫습니다."
+msgstr ""
+
+msgctxt "mp/lobby/chat_system_prefix"
+msgid ">>>>>>"
+msgstr ""
+
+msgctxt "mp/lobby/hint/players"
+msgid "전체/참가 가능"
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance0"
+msgid "PC 성능 (알 수 없음)"
+msgstr ""
+
+msgctxt "mp/scene/chat/prefix_all"
+msgid "<c(d4d4d4)>(전체) </c>"
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance1"
+msgid "PC 성능 (매우 낮음)"
+msgstr ""
+
+msgctxt "mp/gs/social/dialog_title"
+msgid "<f(impact)s(28)c(255 255 255)>커뮤니티"
+msgstr ""
+
+msgctxt "mp/gs/stats/games"
+msgid "게임"
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance2"
+msgid "PC 성능 (낮음)"
+msgstr ""
+
+msgctxt "mp/gs/chat/undef_error"
+msgid "채팅 연결에 실패했습니다. 인터넷과 방화벽 설정을 확인하십시오."
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance3"
+msgid "PC 성능 (보통)"
+msgstr ""
+
+msgctxt "mp/lobby/hint/performance5"
+msgid "PC 성능 (매우 좋음)"
+msgstr ""
+
+msgctxt "mp/gs/xp_gain"
+msgid "XP 획득 (%1%%)"
+msgstr ""
+
+msgctxt "mp/lobby/hint/add_player"
+msgid "팀에 플레이어 추가"
+msgstr ""
+
+msgctxt "mp/lobby/hint/session_info"
+msgid "세션 상세 정보"
+msgstr ""
+
+msgctxt "mp/lobby/hint/strategy_enabled"
+msgid "직접 조작 비활성"
+msgstr ""
+
+msgctxt "mp/lobby/hint/dc"
+msgid "클래식 탑다운 직접 조작 활성"
+msgstr ""
+
+msgctxt "mp/lobby/hint/tpc"
+msgid "3인칭 비활성"
+msgstr ""
+
+msgctxt "mp/lobby/hint/search_options"
+msgid "세션 검색 옵션"
+msgstr ""
+
+msgctxt "mp/lobby/hint/unranked"
+msgid "%1%게임 플레이함"
+msgstr ""
+
+msgctxt "mp/lobby/hint/ranked"
+msgid "랭크전 %1%게임 플레이함"
+msgstr ""
+
+msgctxt "mp/lobby/hint/veterancy_mode"
+msgid "참가할 수 있는 경험 수준"
+msgstr ""
+
+msgctxt "mp/gs/chat/to_session_hint"
+msgid "메시지가 게임방에서만 보입니다."
+msgstr ""
+
+msgctxt "mp/lobby/hint/hardcore_enabled"
+msgid "사실성 강화 활성"
+msgstr ""
+
+msgctxt "mp/lobby/title_rules"
+msgid "정보"
+msgstr ""
+
+msgctxt "mp/lobby/session/game_time"
+msgid "게임 시간:"
+msgstr ""
+
+msgctxt "mp/lobby/txt_advanced_off"
+msgid "네트워크 게임 설정이 기본값으로 초기화됩니다. 계속하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/txt_provider"
+msgid "%1%.ds"
+msgstr ""
+
+msgctxt "mp/gs/msg_connecting_failed"
+msgid "연결에 실패했습니다"
+msgstr ""
+
+msgctxt "mp/lobby/session/title"
+msgid "<f(impact)s(28)c(255 255 255)>%1%"
+msgstr ""
+
+msgctxt "mp/unit_info/btn_tech"
+msgid "제원"
+msgstr ""
+
+msgctxt "mp/lobby/session/common"
+msgid "<y(+9)>게임"
+msgstr ""
+
+msgctxt "mp/lobby/session/teams"
+msgid "<y(+9)>팀"
+msgstr ""
+
+msgctxt "mp/gs/social/friend_blocked"
+msgid "(차단됨)"
+msgstr ""
+
+msgctxt "mp/scene/txt_mp_rate2"
+msgid "<f(pobeda)c(efb570)p(0)e(shadow)>+%1%"
+msgstr ""
+
+msgctxt "mp/lobby/session/players"
+msgid "플레이어:"
+msgstr ""
+
+msgctxt "mp/gs/paste_text"
+msgid "텍스트 붙여넣기"
+msgstr ""
+
+msgctxt "mp/lobby/session/game_type"
+msgid "게임 모드:"
+msgstr ""
+
+msgctxt "mp/lobby/session/password"
+msgid "암호"
+msgstr ""
+
+msgctxt "mp/gs/xp_gain_ranked"
+msgid "랭크전 + XP 획득 (%1%%)"
+msgstr ""
+
+msgctxt "mp/scene/chat/team"
+msgid "<b+c(b1db73)>%s"
+msgstr ""
+
+msgctxt "mp/sync/txt_mapdesync"
+msgid "지도 동기화 오류 감지."
+msgstr ""
+
+msgctxt "mp/gs/chat/session"
+msgid "게임 룸"
+msgstr ""
+
+msgctxt "mp/scene/hint_transfer"
+msgid "유닛을 다른 플레이어에게 넘깁니다."
+msgstr ""
+
+msgctxt "mp/ds/s_lobby_full"
+msgid "사용자가 너무 많음"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/plus_percent"
+msgid "+%1%%"
+msgstr ""
+
+msgctxt "mp/chat2/cta_german"
+msgid "DEUTSCH"
+msgstr ""
+
+msgctxt "mp/sync/lbl_requiredmods"
+msgid "필요한 모드:"
+msgstr ""
+
+msgctxt "mp/unit_info/mguns"
+msgid "기관총"
+msgstr ""
+
+msgctxt "mp/scene/hint_s2"
+msgid "지원 분대"
+msgstr ""
+
+msgctxt "mp/lobby/filter/title"
+msgid "<f(pobeda)s(27)b+c(faeacb)e(shadow)x.y.>세션 검색 옵션"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_players"
+msgid "플레이어 %1%"
+msgstr ""
+
+msgctxt "mp/lobby/filter/apply"
+msgid "<f(pobeda)s(27)b>적용"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchdistance"
+msgid "호스트까지의 거리"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchdistance#/worldwide"
+msgid "전 세계"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchonlypublic"
+msgid "비밀번호 없는 세션만"
+msgstr ""
+
+msgctxt "mp/ds/cfg_load"
+msgid "설정 불러오는 중..."
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchonlysameversion"
+msgid "같은 버전만"
+msgstr ""
+
+msgctxt "mp/lobby/filter/searchgametype"
+msgid "게임 종류"
+msgstr ""
+
+msgctxt "mp/lobby/lbl_players_mine"
+msgid "우리 팀:"
+msgstr ""
+
+msgctxt "mp/lobby/chat_private_message"
+msgid "%1% → %2%"
+msgstr ""
+
+msgctxt "mp/lobby/replay/row_version"
+msgid "버전: %1%"
+msgstr ""
+
+msgctxt "mp/lobby/chat_user_kicked"
+msgid "이 채팅방에서 강퇴되었습니다."
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_auto"
+msgid "자동"
+msgstr ""
+
+msgctxt "mp/lobby/chat_unable_to_connect"
+msgid "전역 채팅에 접속하려면 메시지를 보내십시오!"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_mods"
+msgid "모드"
+msgstr ""
+
+msgctxt "mp/lobby/replay/column_creator"
+msgid "제작자"
+msgstr ""
+
+msgctxt "mp/result/hdr"
+msgid "# # #플레이어#<x.>승점#<x.>보병#<x.>차량#<x.>점수#핑#PC"
+msgstr ""
+
+msgctxt "mp/lobby/replay/row_duration"
+msgid "시간: %1%"
+msgstr ""
+
+msgctxt "mp/lobby/replay/row_team"
+msgid "%1% 팀:"
+msgstr ""
+
+msgctxt "mp/lobby/replay/title_delete_replay"
+msgid "선택한 리플레이를 삭제하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/replay/leave_replay_session"
+msgid "리플레이 페이지에서 정말 나가겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/replay/load_invalid_version"
+msgid "이 리플레이는 다른 게임 버전의 것입니다. 그래도 불러오겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/replay/title_upload_replay"
+msgid "선택한 리플레이를 Steam 클라우드에 정말 업로드하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/replay/error_incomplete_replay"
+msgid "이 리플레이는 제대로 기록되지 않았거나 손상되었습니다."
+msgstr ""
+
+msgctxt "mp/button/multiplayer_join_game"
+msgid "게임 참가"
+msgstr ""
+
+msgctxt "mp/statistics/player/early_exit"
+msgid "<c(25 25 25)> +1 조기 이탈"
+msgstr ""
+
+msgctxt "mp/lobby/replay/visibility/private"
+msgid "비공개"
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/cloud_not_available"
+msgid "Steam 클라우드를 사용할 수 없습니다."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/upload_not_a_player"
+msgid "직접 플레이하지 않은 게임의 리플레이는 업로드할 수 없습니다."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/publishing"
+msgid "게시 중..."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/preparing_config"
+msgid "설정 데이터 처리 중..."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/preparing_content"
+msgid "콘텐츠 파일 읽고 처리하는 중..."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/uploading_content"
+msgid "Steam에 콘텐츠 변경 사항 업로드 중..."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/uploading_preview_file"
+msgid "미리보기 이미지 업로드 중..."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/committing_changes"
+msgid "모든 변경 사항 반영 중..."
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/commit_successful"
+msgid "리플레이를 업로드했습니다."
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/vehicles"
+msgid "<x.y.>차량"
+msgstr ""
+
+msgctxt "mp/lobby/replay/info/commit_error"
+msgid "사용자 생성 콘텐츠 업로드 오류 (오류 코드: %1%)"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_info"
+msgid "추가 정보"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_veterancy"
+msgid "사용자 경험"
+msgstr ""
+
+msgctxt "mp/lobby2/vac_secured"
+msgid "VAC 보호"
+msgstr ""
+
+msgctxt "mp/lobby2/lbl_lobby_type"
+msgid "로비 종류"
+msgstr ""
+
+msgctxt "mp/lobby2/maps"
+msgid "지도"
+msgstr ""
+
+msgctxt "mp/gs/stats/hdr_armies_page"
+msgid "#진영#게임#승리#승률"
+msgstr ""
+
+msgctxt "mp/lobby2/session_comment"
+msgid "<x.y.c(dddddd)>%1%"
+msgstr ""
+
+msgctxt "mp/lobby2/button/reset_settings"
+msgid "<f(pobeda)e(shadow)>초기화"
+msgstr ""
+
+msgctxt "mp/lobby2/button/create_session"
+msgid "<f(pobeda)e(shadow)>생성"
+msgstr ""
+
+msgctxt "mp/lobby2/button/ready"
+msgid "준비"
+msgstr ""
+
+msgctxt "mp/sync/txt_desyncwarning"
+msgid "자원 동기화가 어긋난 채로 플레이하면 동기화 오류가 발생할 수 있습니다."
+msgstr ""
+
+msgctxt "mp/lobby2/button/start"
+msgid "시작"
+msgstr ""
+
+msgctxt "mp/lobby2/button/kick"
+msgid "강퇴"
+msgstr ""
+
+msgctxt "mp/lobby2/button/advanced"
+msgid "<f(pobeda)e(shadow)>고급"
+msgstr ""
+
+msgctxt "mp/persona_state/offline"
+msgid "<y(+5)>오프라인"
+msgstr ""
+
+msgctxt "mp/persona_state/online"
+msgid "<y(+5)>온라인"
+msgstr ""
+
+msgctxt "mp/statistics2/statistics/header/your_top_units"
+msgid "<x-y.>나의 상위 유닛"
+msgstr ""
+
+msgctxt "mp/statistics/player/ranked_score"
+msgid "%1% <c(25 25 25)>(%2% *총합)"
+msgstr ""
+
+msgctxt "mp/persona_state/busy"
+msgid "바쁨"
+msgstr ""
+
+msgctxt "mp/persona_state/snooze"
+msgid "자리 비움"
+msgstr ""
+
+msgctxt "mp/persona_state/looking_to_trade"
+msgid "거래 희망"
+msgstr ""
+
+msgctxt "mp/persona_state/in_game"
+msgid "게임 중"
+msgstr ""
+
+msgctxt "mp/gs/ranked_game"
+msgid "랭크 게임"
+msgstr ""
+
+msgctxt "mp/persona_state/in_lobby"
+msgid "게임 중 (열린 세션)"
+msgstr ""
+
+msgctxt "mp/sync/title_autojoin"
+msgid "참가"
+msgstr ""
+
+msgctxt "mp/sync/title_download"
+msgid "내려받기"
+msgstr ""
+
+msgctxt "mp/sync/lbl_mastermods"
+msgid "호스트 모드:"
+msgstr ""
+
+msgctxt "mp/sync/lbl_masterversion"
+msgid "호스트 버전: %1%\n호스트 플랫폼: %2%"
+msgstr ""
+
+msgctxt "mp/sync/lbl_clientmods"
+msgid "설치된 모드:"
+msgstr ""
+
+msgctxt "mp/sync/txt_prepare"
+msgid "게임 참가에 필요한 게임 자원을 준비합니다."
+msgstr ""
+
+msgctxt "mp/sync/txt_download"
+msgid "%s을(를) 내려받습니다."
+msgstr ""
+
+msgctxt "mp/sync/txt_modapply"
+msgid "%s 모드를 적용합니다."
+msgstr ""
+
+msgctxt "mp/sync/txt_missingmods"
+msgid "없는 모드:"
+msgstr ""
+
+msgctxt "mp/gs/social/player_add_dialog_title"
+msgid "<f(impact)s(28)c(255 255 255)>플레이어 추가"
+msgstr ""
+
+msgctxt "mp/gs/chat/bad_channel_name"
+msgid "채팅 채널 이름이 올바르지 않습니다."
+msgstr ""
+
+msgctxt "mp/statistics/detail/units_header"
+msgid "# #유닛#<x.>보병 처치#<x.>차량 처치#<x.>점수#<x.>효율#"
+msgstr ""
+
+msgctxt "mp/sync/txt_exedesync"
+msgid "실행 파일 동기화 오류가 감지되었습니다."
+msgstr ""
+
+msgctxt "mp/sync/txt_mapnotfound"
+msgid "지도를 찾을 수 없습니다."
+msgstr ""
+
+msgctxt "mp/sync/txt_nodesyncresfound"
+msgid "동기화가 어긋난 자원이 없습니다."
+msgstr ""
+
+msgctxt "mp/sync/txt_rescheckingfailed"
+msgid "자원 확인에 실패했습니다!"
+msgstr ""
+
+msgctxt "mp/sync/msg_downloadingfailed"
+msgid "파일 내려받기에 실패했습니다!"
+msgstr ""
+
+msgctxt "mp/scene/round"
+msgid "%1% / %2% 라운드"
+msgstr ""
+
+msgctxt "mp/scene/title_transfer"
+msgid "유닛 이관"
+msgstr ""
+
+msgctxt "mp/scene/hint_cp"
+msgid "사용한 CP / 전체 CP"
+msgstr ""
+
+msgctxt "mp/scene/msg_transfered"
+msgid "유닛 %1%기를 %2%에게 넘겼습니다"
+msgstr ""
+
+msgctxt "mp/scene/txt_comingup"
+msgid "<f(bookman_hq)s(13)>서버 찾는 중"
+msgstr ""
+
+msgctxt "mp/scene/txt_draw"
+msgid "무승부"
+msgstr ""
+
+msgctxt "mp/scene/hint_cost2/default"
+msgid "%1% MP"
+msgstr ""
+
+msgctxt "mp/scene/hint_cost2/special"
+msgid "%1% DP"
+msgstr ""
+
+msgctxt "mp/gs/stats/disconnects"
+msgid "조기 이탈"
+msgstr ""
+
+msgctxt "mp/scene/hint_time"
+msgid "시간: %1%"
+msgstr ""
+
+msgctxt "mp/scene/hint_time2"
+msgid "시간: %1% (%2%)"
+msgstr ""
+
+msgctxt "mp/statistics2/result/title"
+msgid "게임 결과"
+msgstr ""
+
+msgctxt "mp/scene/hint_score"
+msgid "점수: %1%"
+msgstr ""
+
+msgctxt "mp/scene/hint_armor_thickness"
+msgid "장갑: %.1f mm"
+msgstr ""
+
+msgctxt "mp/scene/chat/say_all"
+msgid "<s(19)>모두에게"
+msgstr ""
+
+msgctxt "mp/scene/chat/say_team"
+msgid "<s(19)>팀에게"
+msgstr ""
+
+msgctxt "mp/scene/chat/prefix_team"
+msgid "<c(d4d4d4)>(팀) </c>"
+msgstr ""
+
+msgctxt "mp/scene/chat/private"
+msgid "<b+c(b070ee)>%s"
+msgstr ""
+
+msgctxt "mp/scene/txt_cp"
+msgid "<f(roboto_mono)c(588157)><e(shadow)>CP %1% / %2%"
+msgstr ""
+
+msgctxt "mp/scene/txt_mp"
+msgid "<f(roboto_mono)c(ffcb69)><e(shadow)>MP %1% / %2%"
+msgstr ""
+
+msgctxt "mp/scene/txt_mp_rate"
+msgid "<f(arial_hq)s(8)c(d8e2dc)p(0)e(shadow)>+ %1% MP"
+msgstr ""
+
+msgctxt "mp/scene/txt_payback_rate"
+msgid "<f(arial_hq)s(8)c(d8e2dc)p(0)e(shadow)>+ %1% MP"
+msgstr ""
+
+msgctxt "mp/scene/txt_sp"
+msgid "<f(roboto_mono)c(b7b7a4)><e(shadow)>DP %1% / %2% "
+msgstr ""
+
+msgctxt "mp/scene/txt_ap"
+msgid "<f(roboto_mono)c(aa998f)><e(shadow)>AP %1% / %2% "
+msgstr ""
+
+msgctxt "mp/scene/txt_level"
+msgid "<f(arial_narrow)s(16)c(e5e1df)><e(shadow)>레벨 %1%"
+msgstr ""
+
+msgctxt "mp/gs/stats/ranked_games"
+msgid "랭크전"
+msgstr ""
+
+msgctxt "mp/scene/txt_growspeed"
+msgid "<f(arial_narrow)s(16)>%1%%"
+msgstr ""
+
+msgctxt "mp/scene/hint_growspeed"
+msgid "점수 획득 속도"
+msgstr ""
+
+msgctxt "mp/scene/hint_squad1"
+msgid "보병 분대"
+msgstr ""
+
+msgctxt "mp/scene/hint_squad2"
+msgid "전문 분대"
+msgstr ""
+
+msgctxt "mp/scene/hint_s1"
+msgid "보병 분대"
+msgstr ""
+
+msgctxt "mp/scene/hint_v1"
+msgid "지원"
+msgstr ""
+
+msgctxt "mp/statistics/player/units_header"
+msgid "# #나의 상위 유닛#<x.>보병 처치#<x.>차량 처치#<x.>점수#<x.>효율#"
+msgstr ""
+
+msgctxt "mp/result/title"
+msgid "게임 결과"
+msgstr ""
+
+msgctxt "mp/gs/social/global_chat"
+msgid "전체 채팅"
+msgstr ""
+
+msgctxt "mp/statistics_xp/deluxe_bonus"
+msgid "디럭스 에디션 보너스 (+%1%%): %2%"
+msgstr ""
+
+msgctxt "mp/statistics_xp/total"
+msgid "총 XP: %1%"
+msgstr ""
+
+msgctxt "mp/statistics_xp/leave"
+msgid "경기에서 나가 XP를 잃었습니다."
+msgstr ""
+
+msgctxt "mp/statistics/player/title"
+msgid "<s(25)y(+9)>개인 통계"
+msgstr ""
+
+msgctxt "mp/statistics/player/score"
+msgid "점수:"
+msgstr ""
+
+msgctxt "mp/gs/social/btn_info"
+msgid "정보"
+msgstr ""
+
+msgctxt "mp/statistics/player/veh"
+msgid "차량:"
+msgstr ""
+
+msgctxt "mp/gs/stats/winratio"
+msgid "승률"
+msgstr ""
+
+msgctxt "mp/statistics/player/experience"
+msgid "경험치:"
+msgstr ""
+
+msgctxt "mp/statistics/player/btn_replay"
+msgid "리플레이 저장"
+msgstr ""
+
+msgctxt "mp/statistics/result/title"
+msgid "<s(25)y(+9)>게임 결과"
+msgstr ""
+
+msgctxt "mp/statistics/resources/title"
+msgid "<s(25)y(+9)>자원"
+msgstr ""
+
+msgctxt "mp/statistics/units/cost/default"
+msgid "<c(30 30 30)>%.0f MP"
+msgstr ""
+
+msgctxt "mp/search_replay/search_all"
+msgid "<s(25)y(+9)>전체"
+msgstr ""
+
+msgctxt "mp/search_replay/search_friends"
+msgid "<s(25)y(+9)>친구"
+msgstr ""
+
+msgctxt "mp/search_replay/search_published"
+msgid "<s(25)y(+9)>게시됨"
+msgstr ""
+
+msgctxt "mp/search_replay/subscribe"
+msgid "구독"
+msgstr ""
+
+msgctxt "mp/search_replay/unsubscribe"
+msgid "구독 취소"
+msgstr ""
+
+msgctxt "mp/trust_rating/okay"
+msgid "양호"
+msgstr ""
+
+msgctxt "mp/settings/teamb"
+msgid "B 팀"
+msgstr ""
+
+msgctxt "mp/chat2/cta_ukrainian"
+msgid "УКРАЇНСЬКИЙ"
+msgstr ""
+
+msgctxt "mp/gs/social/player_not_found"
+msgid "플레이어 \"%1%\"을(를) 찾을 수 없습니다"
+msgstr ""
+
+msgctxt "mp/chat2/cta_polish"
+msgid "POLSKIE"
+msgstr ""
+
+msgctxt "mp/gs/social/friends_page"
+msgid "<y(+9)>친구"
+msgstr ""
+
+msgctxt "mp/gs/stats/armies_page"
+msgid "<y(+9)>군대"
+msgstr ""
+
+msgctxt "mp/gs/game_unavailable"
+msgid "온라인 서비스를 사용할 수 없습니다."
+msgstr ""
+
+msgctxt "mp/gs/patching_dialog_title"
+msgid "게임 패치"
+msgstr ""
+
+msgctxt "mp/gs/patching_available"
+msgid "새 패치가 있습니다 (버전 %1%)."
+msgstr ""
+
+msgctxt "mp/gs/patching_mandatory"
+msgid "멀티플레이 게임에는 이 패치가 필요합니다!"
+msgstr ""
+
+msgctxt "mp/chat2/cta_russian"
+msgid "РУССКИЙ"
+msgstr ""
+
+msgctxt "mp/gs/pathcing_download"
+msgid "내려받기"
+msgstr ""
+
+msgctxt "mp/ds/dlg/title"
+msgid "<f(impact)s(28)c(255 255 255)> 사용 가능한 서버 목록"
+msgstr ""
+
+msgctxt "mp/gs/patching_check_msg"
+msgid "게임 버전 확인 중."
+msgstr ""
+
+msgctxt "mp/gs/stats/player_loading"
+msgid "플레이어 \"%1%\"의 데이터를 불러오는 중입니다. 잠시 기다려 주십시오."
+msgstr ""
+
+msgctxt "mp/gs/stats_unknow_error"
+msgid "통계 서버와 통신하는 중 알 수 없는 오류가 발생했습니다."
+msgstr ""
+
+msgctxt "mp/gs/cancel_session_question"
+msgid "현재 게임 세션을 닫겠습니까?"
+msgstr ""
+
+msgctxt "mp/gs/vac_secured"
+msgid "VAC 보호"
+msgstr ""
+
+msgctxt "mp/gs/vac_secured_hint"
+msgid "Valve 안티 치트로 보호됨"
+msgstr ""
+
+msgctxt "mp/gs/xp_gain_lobby"
+msgid "이 게임을 플레이하면 XP를 받습니다"
+msgstr ""
+
+msgctxt "mp/gs/xp_gain_hint"
+msgid "비랭크 게임을 플레이하면 %1%% XP를 받습니다"
+msgstr ""
+
+msgctxt "mp/gs/xp_gain_hint_ranked"
+msgid "랭크 게임을 플레이하면 %1%% XP와 랭크 점수를 받습니다"
+msgstr ""
+
+msgctxt "mp/gs/chat/login_fail"
+msgid "채팅 로그인에 실패했습니다. 인터넷과 방화벽 설정을 확인하십시오."
+msgstr ""
+
+msgctxt "mp/statistics2/units/cost/special"
+msgid "%.0f DP"
+msgstr ""
+
+msgctxt "mp/gs/chat/channel_invite_only"
+msgid "초대받은 사용자만 들어갈 수 있는 채팅 채널입니다."
+msgstr ""
+
+msgctxt "mp/gs/chat/bad_channel_mask"
+msgid "채팅 연결에 실패했습니다."
+msgstr ""
+
+msgctxt "mp/gs/chat/invalid_nick"
+msgid "올바르지 않은 이름"
+msgstr ""
+
+msgctxt "mp/gs/chat/main"
+msgid "일반 채팅"
+msgstr ""
+
+msgctxt "mp/gs/stats/next"
+msgid "다음 페이지"
+msgstr ""
+
+msgctxt "mp/gs/chat/txt_send_to"
+msgid "받는 사람:"
+msgstr ""
+
+msgctxt "mp/gs/chat/to_lobby"
+msgid "일반 채팅"
+msgstr ""
+
+msgctxt "mp/gs/chat/to_lobby_hint"
+msgid "메시지가 게임방과 대기실 모두에 보입니다."
+msgstr ""
+
+msgctxt "mp/gs/chat/to_session"
+msgid "게임 룸"
+msgstr ""
+
+msgctxt "mp/gs/qrwsockerror"
+msgid "Winsock 초기화 오류."
+msgstr ""
+
+msgctxt "mp/gs/qrnochallengeerror"
+msgid "메인 서버가 응답하지 않습니다. 방화벽이 UDP 패킷을 막고 있거나 서버가 꺼져 있을 수 있습니다."
+msgstr ""
+
+msgctxt "mp/gs/change_sort_number"
+msgid "총 게임 수로 정렬."
+msgstr ""
+
+msgctxt "mp/gs/change_sort_picture"
+msgid "전체 순위/ELO로 정렬."
+msgstr ""
+
+msgctxt "mp/gs/player_info"
+msgid "Steam 프로필"
+msgstr ""
+
+msgctxt "mp/gs/player_profile"
+msgid "프로필"
+msgstr ""
+
+msgctxt "mp/gs/send_message"
+msgid "메시지 보내기"
+msgstr ""
+
+msgctxt "mp/gs/invite"
+msgid "세션에 초대"
+msgstr ""
+
+msgctxt "mp/gs/invite_party"
+msgid "파티에 초대"
+msgstr ""
+
+msgctxt "mp/gs/stats/player_dialog_title"
+msgid "<f(impact)s(28)c(255 255 255)>통계 \"%1%\""
+msgstr ""
+
+msgctxt "mp/gs/stats/common"
+msgid "<y(+9)>일반"
+msgstr ""
+
+msgctxt "mp/gs/stats/hdr_common"
+msgid "#게임#점수#랭크전#승리#승률#이탈"
+msgstr ""
+
+msgctxt "mp/gs/stats/hdr_armies"
+msgid "#진영#게임#승리#승률"
+msgstr ""
+
+msgctxt "mp/gs/social/friend_add"
+msgid "친구 추가"
+msgstr ""
+
+msgctxt "mp/gs/stats/hdr_toplist"
+msgid "# #이름#점수#게임#승률, %"
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_frontline"
+msgid "프런트라인"
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_captureflag"
+msgid "승리의 날"
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_heavyload"
+msgid "귀중한 화물"
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_battle_zones"
+msgid "배틀존"
+msgstr ""
+
+msgctxt "mp/gs/stats/ri_top_modification"
+msgid "모드 게임"
+msgstr ""
+
+msgctxt "mp/gs/stats/init_msg"
+msgid "순위 시스템 초기화 중"
+msgstr ""
+
+msgctxt "mp/gs/stats/games_page"
+msgid "<y(+9)>게임"
+msgstr ""
+
+msgctxt "mp/statistics2/units/hint"
+msgid "소모한 자원: %.0f / %.0f"
+msgstr ""
+
+msgctxt "mp/gs/stats/hdr_games_page"
+msgid "#게임#점수#게임#승리#승률"
+msgstr ""
+
+msgctxt "mp/gs/stats/last"
+msgid "끝으로"
+msgstr ""
+
+msgctxt "mp/gs/social/ignore_add"
+msgid "차단"
+msgstr ""
+
+msgctxt "mp/gs/stats/il_search_hint"
+msgid "플레이어를 검색하려면 이름 전체를 입력하십시오"
+msgstr ""
+
+msgctxt "mp/gs/stats/il_search_txt"
+msgid "검색"
+msgstr ""
+
+msgctxt "mp/gs/stats/btn_search"
+msgid "찾기"
+msgstr ""
+
+msgctxt "mp/statistics2/detail/title"
+msgid "상세"
+msgstr ""
+
+msgctxt "mp/gs/stats/page"
+msgid "페이지"
+msgstr ""
+
+msgctxt "mp/gs/stats/position"
+msgid "순위"
+msgstr ""
+
+msgctxt "mp/gs/stats/page_loading"
+msgid "페이지를 불러오는 중입니다. 잠시 기다려 주십시오."
+msgstr ""
+
+msgctxt "mp/mow_config_getting_fail"
+msgid "전용 서버 설정을 받지 못했습니다"
+msgstr ""
+
+msgctxt "mp/gs/stats/player_not_in_ladder"
+msgid "이 순위표에서 플레이어 \"%1%\"을(를) 찾을 수 없습니다."
+msgstr ""
+
+msgctxt "mp/gs/rejects_transfer"
+msgid "파일 전송이 지원되지 않습니다."
+msgstr ""
+
+msgctxt "mp/gs/diff_lobby_version"
+msgid "서버 접속 프로토콜 버전이 다릅니다."
+msgstr ""
+
+msgctxt "mp/gs/social/ignore_del"
+msgid "차단 해제"
+msgstr ""
+
+msgctxt "mp/gs/social/social"
+msgid "커뮤니티"
+msgstr ""
+
+msgctxt "mp/gs/social/impossible_to_add_my_name"
+msgid "자기 자신은 추가할 수 없습니다"
+msgstr ""
+
+msgctxt "mp/gs/social/btn_add"
+msgid "추가"
+msgstr ""
+
+msgctxt "mp/gs/social/hdr_friends_page"
+msgid "#플레이어 이름#상태"
+msgstr ""
+
+msgctxt "mp/gs/social/hdr_ignore_page"
+msgid "#플레이어 이름"
+msgstr ""
+
+msgctxt "mp/unit_info/speed"
+msgid "속도<x(70)>%1%"
+msgstr ""
+
+msgctxt "mp/unit_info/crew"
+msgid "승무원<x(70)>%1%."
+msgstr ""
+
+msgctxt "mp/unit_info/armor/body"
+msgid "<x(20)>차체<x(175)>%1%<x(225)>%2%<x(275)>%3%<x(325)>%4%"
+msgstr ""
+
+msgctxt "mp/unit_info/armor/turret"
+msgid "<x(20)>포탑<x(175)>%1%<x(225)>%2%<x(275)>%3%<x(325)>%4%"
+msgstr ""
+
+msgctxt "mp/unit_info/armor_angle"
+msgid "장갑 경사각*"
+msgstr ""
+
+msgctxt "mp/unit_info/gun/recharge_time"
+msgid "장전 시간 (초)<x(175)>%1%"
+msgstr ""
+
+msgctxt "mp/unit_info/mgun"
+msgid "기관총<x(75)>%1%"
+msgstr ""
+
+msgctxt "mp/unit_info/mguns/text"
+msgid "%1%<x(175)>%2%"
+msgstr ""
+
+msgctxt "mp/ds/cfg_none"
+msgid "설정을 사용할 수 없음"
+msgstr ""
+
+msgctxt "mp/ds/cfg_load_complete"
+msgid "#이름#IP#상태#게임#핑#"
+msgstr ""
+
+msgctxt "mp/ds/dlg/btn_close"
+msgid "닫기"
+msgstr ""
+
+msgctxt "mp/ds/s_avail"
+msgid "사용 가능"
+msgstr ""
+
+msgctxt "mp/trust_rating/abysmal"
+msgid "최악"
+msgstr ""
+
+msgctxt "mp/ds/s_closed"
+msgid "빈자리 없음"
+msgstr ""
+
+msgctxt "mp/ds/s_offline"
+msgid "사용 불가"
+msgstr ""
+
+msgctxt "mp/ds/s_diff_version"
+msgid "다른 버전"
+msgstr ""
+
+msgctxt "mp/trust_rating/great"
+msgid "매우 좋음"
+msgstr ""
+
+msgctxt "mp/ds/s_deny_connect"
+msgid "접근이 거부되었습니다"
+msgstr ""
+
+msgctxt "mp/button/multiplayer_host_game"
+msgid "게임 만들기"
+msgstr ""
+
+msgctxt "mp/trust_rating/bad"
+msgid "나쁨"
+msgstr ""
+
+msgctxt "mp/chat/steamlobby"
+msgid "대기실"
+msgstr ""
+
+msgctxt "mp/statistics2/history/title"
+msgid "기록"
+msgstr ""
+
+msgctxt "mp/chat2/dms"
+msgid "배급사 대기실"
+msgstr ""
+
+msgctxt "mp/chat2/goh"
+msgid "메인 로비"
+msgstr ""
+
+msgctxt "mp/chat2/cta_tester"
+msgid "베타 테스터"
+msgstr ""
+
+msgctxt "mp/chat2/cta_french"
+msgid "FRANÇAIS"
+msgstr ""
+
+msgctxt "mp/chat2/cta_portuguese"
+msgid "PORTUGUÊS"
+msgstr ""
+
+msgctxt "mp/chat2/cta_czech"
+msgid "ČESKÝ"
+msgstr ""
+
+msgctxt "mp/chat2/cta_korean"
+msgid "한국어"
+msgstr ""
+
+msgctxt "mp/chat2/cta_thai"
+msgid "ไทย"
+msgstr ""
+
+msgctxt "mp/chat2/cta_italian"
+msgid "ITALIANO"
+msgstr ""
+
+msgctxt "mp/chat2/lanlobby"
+msgid "LAN 대기실"
+msgstr ""
+
+msgctxt "mp/chat2/party"
+msgid "파티"
+msgstr ""
+
+msgctxt "mp/chat2/chat_officers"
+msgid "<c(white)>개발자 [%1%]"
+msgstr ""
+
+msgctxt "mp/statistics2/title"
+msgid "게임 통계"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/title"
+msgid "개인"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress_victory"
+msgid "승리 보너스"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/progress_friend"
+msgid "친구 보너스"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/plus_xp"
+msgid "+%1% XP"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/btn_replay"
+msgid "<s(21)b>리플레이 저장"
+msgstr ""
+
+msgctxt "mp/statistics2/statistics/header/infantry_kills"
+msgid "<x.y.>보병 격파"
+msgstr ""
+
+msgctxt "mp/statistics2/statistics/header/vehicle_kills"
+msgid "<x.y.>차량 처치"
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/player"
+msgid "<y.>플레이어"
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/victory_points"
+msgid "<x.y.>승점"
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/infantry"
+msgid "<x.y.>보병"
+msgstr ""
+
+msgctxt "mp/statistics2/detail/header/units"
+msgid "<y.>유닛"
+msgstr ""
+
+msgctxt "mp/statistics2/detail/header/vehicle_kills"
+msgid "<x.y.>차량 처치"
+msgstr ""
+
+msgctxt "mp/statistics2/detail/header/score"
+msgid "<x.y.>점수"
+msgstr ""
+
+msgctxt "mp/statistics2/units/user"
+msgid "%1%"
+msgstr ""
+
+msgctxt "mp/statistics2/units/cost/default"
+msgid "%.0f MP"
+msgstr ""
+
+msgctxt "mp/statistics2/history/timestamp"
+msgid "<f(arial_hq)s(8)c(ffffff)>%02d:%02d"
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/lag"
+msgid "<x.>지연"
+msgstr ""
+
+msgctxt "mp/scene/txt_defeat"
+msgid "패배"
+msgstr ""
+
+msgctxt "mp/scene/txt_defeat_desc"
+msgid "우리 팀이 패배했습니다!"
+msgstr ""
+
+msgctxt "mp/scene/txt_victory"
+msgid "승리"
+msgstr ""
+
+msgctxt "mp/scene/txt_victory_desc"
+msgid "우리 팀이 승리했습니다!"
+msgstr ""
+
+msgctxt "mp/result/best_unit"
+msgid "-최고의 유닛-"
+msgstr ""
+
+msgctxt "mp/result/best_player"
+msgid "-최고의 플레이어-"
+msgstr ""
+
+msgctxt "mp/result/best_unit_hint"
+msgid "플레이어: %1%\n점수: %2%\n효율: %3%%"
+msgstr ""
+
+msgctxt "mp/result/best_player_hint"
+msgid "이름: %1%\n개인 점수: %2%"
+msgstr ""
+
+msgctxt "mp/lobby/title_finish_campaign"
+msgid "경기에서 승리했습니다. 계속하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/title_abandon_campaign"
+msgid "이 전투가 시작되기 전의 캠페인 화면으로 돌아갑니다. 계속하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/title_retreat_campaign"
+msgid "이 전투에서 패배하고 남은 병력만 데리고 후퇴합니다. 계속하겠습니까?"
+msgstr ""
+
+msgctxt "mp/lobby/title_saving_campaign"
+msgid "저장 중..."
+msgstr ""
+
+msgctxt "mp/game/campaign_capture_the_flag"
+msgid "정복전"
+msgstr ""
+
+msgctxt "mp/game/campaign_capture_the_flag/info"
+msgid "협동 작전! 아군에게 유닛을 나눠 주어 함께 점령 임무를 완수하라."
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.manualControlMode"
+msgid "직접 조작"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.manualControlMode#hint"
+msgid "플레이어가 유닛을 직접 조작하는 방식을 고릅니다."
+msgstr ""
+
+msgctxt "mp/lobby/tpc_mode"
+msgid "3인칭"
+msgstr ""
+
+msgctxt "mp/lobby/dc_mode"
+msgid "클래식 탑다운"
+msgstr ""
+
+msgctxt "mp/lobby/rts_mode"
+msgid "직접 조종 없음"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.manualControlMode#/tpc_mode"
+msgid "3인칭"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.manualControlMode#/dc_mode"
+msgid "클래식 탑다운"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.manualControlMode#/rts_mode"
+msgid "직접 조종 없음"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.manualControlMode#/any_mode"
+msgid "클래식 및 3인칭 (전환 가능)"
+msgstr ""
+
+msgctxt "mp/statistics2/result/header/best_units"
+msgid "<x.y.>최고의 유닛"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/game_resource_reward"
+msgid "획득한 자원"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/game_resource_bonus"
+msgid "지도 자원 보너스"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/game_resource_risk_factor"
+msgid "위험 부담 보너스"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/game_resource_payback"
+msgid "환급"
+msgstr ""
+
+msgctxt "mp/statistics2/personal/game_resource_total"
+msgid "총 획득량"
+msgstr ""
+
+msgctxt "mp/game/campaign_defender_name"
+msgid "방어 AI"
+msgstr ""
+
+msgctxt "mp/lobby2/pnl_session_set"
+msgid "<f(pobeda)s(27)b>전투 서열"
+msgstr ""
+
+msgctxt "mp/lobby2/sess_create_mode"
+msgid "<f(pobeda)s(27)b>모드 선택"
+msgstr ""
+
+msgctxt "mp/lobby2/sess_create_map"
+msgid "<f(pobeda)s(27)b>지도 선택"
+msgstr ""
+
+msgctxt "mp/lobby2/sess_settings"
+msgid "<f(pobeda)s(27)b>세션 설정"
+msgstr ""
+
+msgctxt "mp/game/capture_weight_format"
+msgid "<f(pobeda)s(15)b>"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.loseOnZeroPoints"
+msgid "점수가 0이 되면 패배"
+msgstr ""
+
+msgctxt "mp/army/usa"
+msgid "미국"
+msgstr ""
+
+msgctxt "mp/army/usa2"
+msgid "미국 (공수)"
+msgstr ""
+
+msgctxt "mp/alliance/usa"
+msgid "미국"
+msgstr ""
+
+msgctxt "mp/army/usa_early"
+msgid "미국 (전쟁 초기)"
+msgstr ""
+
+msgctxt "mp/army/usa_mid"
+msgid "미국 (전쟁 중기)"
+msgstr ""
+
+msgctxt "mp/army/usa_late"
+msgid "미국 (전쟁 후기)"
+msgstr ""
+
+msgctxt "mp/army/eng"
+msgid "영연방"
+msgstr ""
+
+msgctxt "mp/alliance/eng"
+msgid "영연방"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/all"
+msgid "모든 유닛"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/airborne"
+msgid "공수"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/armor"
+msgid "장갑"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/artillery"
+msgid "포대"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/combined_arms"
+msgid "제병 협동"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/heavy"
+msgid "중전차"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/infantry"
+msgid "보병"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/light"
+msgid "경전차"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/mechanized"
+msgid "차량화 보병"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/medium"
+msgid "중형 전차"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/sniper"
+msgid "저격수"
+msgstr ""
+
+msgctxt "mp/presets/browser/tags/supply"
+msgid "보급"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.assignReinforcementsToPlayer"
+msgid "구매자가 유닛 획득"
+msgstr ""
+
+msgctxt "mp/lobby/setup/settings.assignReinforcementsToPlayer#hint"
+msgid "켜면 유닛을 구매한 플레이어에게 증원이 갑니다.\n끄면 누가 유닛을 구매했든 모든 플레이어에게 증원이 고르게 나뉩니다."
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_ger"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_rus"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_fin"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_usa"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_eng"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_ger"
+msgid "배치 지점 이동"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_rus"
+msgid "배치 지점 이동"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_fin"
+msgid "배치 지점 이동"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_usa"
+msgid "배치 지점 이동"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_eng"
+msgid "배치 지점 이동"
+msgstr ""

@@ -1,0 +1,42 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/weapon/20mm_pvlvkan_m40"
+msgid "20mm Pvlvkan m/40 L/70"
+msgstr ""
+
+msgctxt "desc/weapon/40mm_itk36"
+msgid "40mm lvakan m/36 L/60"
+msgstr ""
+
+msgctxt "desc/weapon/75mm_kan02"
+msgid "75mm kan m/02 L/21"
+msgstr ""
+
+msgctxt "desc/weapon/105mm_kan44"
+msgid "105mm kan m/44 L/55"
+msgstr ""
+
+msgctxt "desc/weapon/150mm_fsthaub_m02"
+msgid "150mm fsthaub m/02 L/12"
+msgstr ""
+
+msgctxt "desc/weapon/swe_12cm_bofors"
+msgid "12cm Kanon M/24 L/50"
+msgstr ""
+
+msgctxt "desc/weapon/20mm_madsen_m38"
+msgid "20mm Maskinkanon m/38 L/60"
+msgstr ""

@@ -1,0 +1,122 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1943_07_ponyri)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/date"
+msgid "1943년 7월 7일 · 포니리, 쿠르스크주"
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/01-rus/1943_07_ponyri/mineprogress"
+msgid "지뢰 500개 중 %1%개 매설!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/name"
+msgid "성채 <c(a655af)>[DLC]</c>"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/name_big"
+msgid "성채"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/01"
+msgid "동지들, 파시스트의 하계 공세가 오늘 시작된다는 것을 확인해 주는 정보를 입수했다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/02"
+msgid "우리는 전쟁사에 유례가 없는 가장 포괄적인 방어선을 팠다. 히틀러 무리를 막아내고 베를린까지 몰아낼 준비가 됐다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/03"
+msgid "파시스트의 공격에 대비해 가능한 한 많은 지뢰를 매설하라는 명령을 받았다. 일에 착수해라, 병사들!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/04"
+msgid "독일군이 공격한다! 이미 외곽 방어선을 돌파했다. 막아낼 준비를 해라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/05"
+msgid "독일 전차가 왔다! 파시스트들이 신형 전차를 쓴다는 정보가 있다. 조심해라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/06"
+msgid "잘했다, 동지들!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/07"
+msgid "적이 새 파도를 보냈다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/08"
+msgid "파시스트들이 돌격을 지원하려고 포병을 전개하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/09"
+msgid "독일 항공기가 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/10"
+msgid "추가 증원을 받았다. 독일군을 막아내 봐라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/11"
+msgid "추가 증원을 더 받았다. 이제 독일군을 여기서 몰아내고 놈들의 공세를 멈출 때다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/narrator/12"
+msgid "훌륭하다, 동지들. 잔혹한 야수는 패배했다! 이 전투와 우리의 필연적인 승리는 수 세기 동안 기억될 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/outro_completed"
+msgid "축하한다! 명령대로 적을 막아냈다. 대단한 성과다. 자네의 반격은 쿠투조프 작전의 서막이었다. 이는 독일의 공세를 끝내고 올해 큰 승리에 대한 독일의 희망을 짓밟을 소련의 대규모 반격이다. 이제부터 이 전쟁의 주도권은 붉은 군대가 쥔다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/outro_failed"
+msgid "원하던 결과가 아니다! 독일군이 돌파해 쿠르스크 동쪽 어딘가의 팀 시를 향해 진격하고 있다. 남쪽 협공에서도 같은 일이 생기면 우리는 끝이고, 독일군이 우리를 포로로 잡을 것이다. 하지만 아직 늦지 않았을지도 모른다. 찾을 수 있는 병력을 전부 모아 다시 들어가라. 절대 포기하지 마라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/place"
+msgid "제13군 제307소총사단"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/reinf_box"
+msgid "탄약 보급"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/reinf_il2"
+msgid "IL-2 M1943 공습"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/reinf_squad"
+msgid "보병 분대"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/story"
+msgid "쿠르스크 일대 소련군을 포위하려는 협공은 사흘째에 접어들었다. 북쪽 협공은 아직 제대로 탄력을 받지 못했다. 소련군의 치열한 저항과 잘 준비된 방어 때문이다.\n\n독일군은 포니리와 올호바트카를 향해 밀어붙인다. 포니리 일대는 역사상 가장 치열한 전투의 무대가 된다. 로코솝스키 장군의 중앙 전선은 무슨 일이 있어도 버티기로 결의했다.\n\n이번 임무에서 자네는 방어를 맡는다. 대전차 호 사이에 지뢰를 영리하게 배치해 적 기갑이 돌파하지 못하게 해라. 돌파당하면 제2방어선으로 물러나라. 제13군 동지들이 반격에 합류할 준비가 될 때까지 제2방어선을 지켜라.\n\n조국을 자랑스럽게 하라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/task1"
+msgid "대전차 호 너머에 광대한 지뢰밭을 깔아라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/task2"
+msgid "무슨 일이 있어도 포니리 역을 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/task3"
+msgid "남은 독일군을 포니리에서 몰아내라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1943_07_ponyri/timer"
+msgid "포니리 역을 방어하라:"
+msgstr ""

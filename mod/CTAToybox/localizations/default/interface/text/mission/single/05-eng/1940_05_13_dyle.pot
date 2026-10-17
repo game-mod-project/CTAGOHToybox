@@ -1,0 +1,705 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1940_05_13_dyle)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/name"
+msgid "눈물과 땀"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/name_big"
+msgid "눈물과 땀"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/date"
+msgid "1940년 5월 13일 · 벨기에 코르베이크데일레 마을"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/place"
+msgid "제1보병사단, 노스스태퍼드셔 연대"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/story"
+msgid "가짜 전쟁이 전격전으로 터졌다! 독일군은 5월 10일 네덜란드와 벨기에를 침공했다. 독일이 \"팔 겔프\"라 부르는 작전이 진행 중이다.\n\n당신은 부대와 함께 딜 방어선을 증원하라는 명령을 받아 북쪽으로 이동했다.\n\n당신의 방어선 구간은 루벤에서 멀지 않은 다리다. 독일군은 브뤼셀로 가기 위해 이 다리를 반드시 쓰려 할 것이므로, 이곳은 딜 방어선의 요충지다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/outro_completed"
+msgid "영국 원정군이 어떤 상대인지 놈들에게 보여 주었다. 오늘은 전투에서 후퇴할지라도, 우리와 동맹군은 시간을 더 벌었다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/outro_failed"
+msgid "매우 유감이다. 이곳에서 전선을 지켰어야 했다. 이 잔혹한 공격을 막지 못했으므로, 독일 놈들이 벨기에와 프랑스를 향한 진격을 계속할 수 있게 되었다. 안타깝다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_allround_01"
+msgid "6인치 곡사포가 도착했다. 기회는 한 번뿐이다, 망치지 마라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_allround_02"
+msgid "독일 놈들이 우리 포를 발견했다! 곧 사격할 거다, 그 빌어먹을 곡사포 위치를 빨리 바꿔라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_allround_03"
+msgid "멋진 사격이다, 한 문 파괴. 두 문 남았다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_allround_04"
+msgid "훌륭하다, 두 문 파괴. 한 문 남았다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_allround_05"
+msgid "적 포병이 침묵했다, 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_allround_06"
+msgid "빌어먹을, 곡사포를 잃었다! 어떻게 된 건지 모르겠지만 독일군 포병을 상대할 다른 방법을 찾아야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_01"
+msgid "대공 비커스가 도착했다. 기회는 한 번뿐이다, 망치지 마라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_02"
+msgid "조종사가 우리 대공 차량을 발견했다! 빨리 위치를 바꿔라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_03"
+msgid "멋진 사격이다, 한 대 격추."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_04"
+msgid "조심해라, 또 한 대 온다! 대공 차량을 노리고 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_05"
+msgid "훌륭한 사격이지만 세 번째 비행기가 그쪽으로 접근 중이다, 처리해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_06"
+msgid "그게 마지막인 것 같다. 잘했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_defensive_07"
+msgid "맙소사, 대공 차량을 잃었다! 어떻게 된 건지 모르겠지만 루프트바페를 상대할 다른 방법을 찾아야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_irregular_01"
+msgid "포병 관측병이 도착했다. 독일 놈들한테 들키지 마라. 기회는 한 번뿐이니 제대로 해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_irregular_02"
+msgid "조심해라, 관측병이 발각됐다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_irregular_03"
+msgid "좋아, 이 대공포는 더 이상 우리를 괴롭히지 못한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_irregular_04"
+msgid "훌륭하다, 대전차포가 파괴됐다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_irregular_05"
+msgid "좋다, 포가 파괴됐다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_irregular_06"
+msgid "젠장, 관측병이 전사했다! 포진지를 파괴할 다른 방법을 찾아라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_offensive_01"
+msgid "Matilda가 도착했다. 기회는 한 번뿐이다, 망치지 마라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_offensive_02"
+msgid "판처들이 우리 전차를 발견했다, 빨리 처리해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_offensive_03"
+msgid "훌륭하다, 판처 한 대 격파. 두 번째를 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_offensive_04"
+msgid "잘했다, 전차 둘 다 파괴됐다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/doc_offensive_05"
+msgid "맙소사, 전차를 잃었다! 2파운드포가 아직 남아 있길 바란다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/heavy_wounded_died"
+msgid "그는 갔다. 살릴 수 있었는데... 저 위생병은 이제 네 것이다. 다음엔 더 잘해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/heavy_wounded_rescued"
+msgid "좋아, 살 거다. 이 녀석은 평생 네 도움을 잊지 못할 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/heavy_wounded_start"
+msgid "윌리엄스, 여기 손이 하나 더 필요하다, 빨리!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_01"
+msgid "…솔직히 행군하고 참호 파는 건 지긋지긋해. 게다가 이 더위… 맹세코, 이 친구야, 내가 임무로 갔던 케냐보다 더 심해. 거기선 그래도 동행이 더 좋았지. 사랑스러운 마틸다…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_02"
+msgid "저기 봐, 저 덜컹대는 괴물한테 그 여자 이름까지 붙였어. 그 여행 얘기는 해 준 적 없었지?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_03"
+msgid "제발 좀, 윌리엄스. 한 번만 입 좀 닫아 줄래? 네 얘기라면 우리 전부 지긋지긋해."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_04"
+msgid "진정해, 스튜. 기운 좀 북돋워 주려는 거야. 우리의 이 작은 대륙 모험치곤 너무 지쳐 보여서. 왜 그래, 응? 독일 놈들이 무섭냐?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_05"
+msgid "잘도 알아보네, 천재 나리. 빌어먹을 루프트바페 때문에 하룻밤에 한 시간도 못 자는데 넌 눈 하나 깜짝 안 하냐? 우리 다 녹초라고, 알겠냐?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_06"
+msgid "쉿, 조용히 해. Captain이 오늘 정말 예민해 보여."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_07"
+msgid "지금은 괜찮다. 다른 중대를 먼저 전방으로 보내기로 했다. 우리는 이 종대와 함께 가지 않는다. 우리 전선에 틈이 있는지 다시 확인해야 한다. 소식을 들으면 우리도 여기 오래 있지 못할지 모른다… 하지만 최악에 대비하자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_10"
+msgid "그리고 제발, 그 빌어먹을 2파운드포 좀 길 한가운데에서 치워라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_08"
+msgid "우리가 안 간다고요? 전선은 또 정지해 있을 줄 알았는데요. 지난달처럼요. 그 전 달도 그랬고요. 반년 전에도 그랬고... 아시잖습니까, Sir."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/intro_09"
+msgid "우리 운이 당분간 다한 것 같다. 밖은... 아수라장이야. 하지만 괜찮을 거다. 괜찮아질 거다. 그저... 그저 각자 할 일을 해라, 제군."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/medic_died_01"
+msgid "호킨스! 맙소사, 위생병 한 명을 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/medic_died_02"
+msgid "윌리엄스! 대체 뭐 하는 거냐?! 저 위생병은 이미 틀렸다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/medic_died_03"
+msgid "빌어먹을, 크로즈비가 쓰러졌다! 지금 당장 후퇴해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_01"
+msgid "젠장… 다 사라졌어… 한 번 공격에 끝이라니…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_02"
+msgid "집중해라, 제군. 어딘가 엄폐물을 찾은 사람이 있을 거다. 너희 같은 소규모 조를 보내는 게 위험하다는 건 안다. 하지만 루프트바페 때문에 선택의 여지가 없다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_03"
+msgid "Lieutenant 윌리엄스, 임무는 독일 놈들이 잔해를 뒤지러 올 경우를 대비해 지역을 확보하는 것이다. 지상에서 누가 유도하지 않았다면 그 비행기들이 호송대 위치를 알 리 없다. 분명 정찰병 놈들이 있을 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_04"
+msgid "Corporal 크로즈비, 의무조를 맡아라. 생존자를 수색하고 도움을 줘라. 윌리엄스, 무슨 일이 있어도 위생병들을 엄호해라. 후송 준비가 되면 보고해라, 부상자를 실어 갈 트럭을 보내겠다. 지금은 못 보낸다, 하늘이 너무 뜨겁다. 이상."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_05"
+msgid "맙소사… 냄새가 이럴 줄은 아무도 말 안 해 줬어… 저것 좀 봐… 다들… 타 버렸어… 속이 울렁거린다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_06"
+msgid "괜찮을 거다, 알겠나? 정신 차려. 독일 놈들이 돌아올 때를 대비해 엄폐물을 살펴라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_07"
+msgid "젠장! 방금… 방금 그 사람 살갗을 만졌는데…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_08"
+msgid "이봐, 진정해, 친구. 좋은 생각을 해. 여기서 나가면 그 마틸다 아가씨 얘기를 질리도록 들려줄 거 아냐."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_09"
+msgid "북쪽에서 적이 온다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_10"
+msgid "남동쪽에서 독일 놈들이 온다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_11"
+msgid "윌리엄스, 총소리가 들렸다. 무슨 일이냐? 이상."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_12"
+msgid "경무장 독일 보병이 여러 방향에서 접근 중입니다. 부상자를 발견했고, 크로즈비와 조원들이 치료 중입니다. 이상."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_13"
+msgid "알았다, 지원을 보내겠다. 이상."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_14"
+msgid "북쪽에서 적 차량이 온다, 격파해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_15"
+msgid "적기다! 전원 엎드려라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_16"
+msgid "이런… 정찰기였어… 독일군 전체가 우리가 여기 있는 걸 안다는 뜻이야. 크로즈비, 서둘러! 빨리!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_17"
+msgid "준비 끝. 윌리엄스, 보고해!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_18"
+msgid "Captain, 윌리엄스입니다. 후송 준비가 됐습니다. 지금은 하늘이 깨끗합니다, 이상."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_19"
+msgid "알았다, Lieutenant. 트럭이 가고 있다, 3분 거리다. 수고했다, 제군. 이상."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_21"
+msgid "트럭이 준비됐다! 크로즈비, 부상자를 태워라, 지금 당장!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_22"
+msgid "전원 탑승해라, 여기서 빠져나가자!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_23"
+msgid "우리는 뒤따라가겠다. 그들을 안전한 곳으로 데려가라. 건너편에서 보자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_progress_02"
+msgid "조금만 더 시간이 필요합니다. 계속 엄호해 주세요."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part01_ammo_out"
+msgid "탄약이 떨어졌다! 길가에 탄약 상자가 있었던 것 같은데, 가서 보자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_01"
+msgid "제군, 잘 들어라! 훈족 놈들이 생각보다 딜 강에 더 가깝다. 방어를 준비할 시간이 아직 조금 있다. 그 시간에 진지를 보강해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_02"
+msgid "놈들이 왔다, 우리 중앙 진지를 밀어붙인다! 위치를 사수해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_03"
+msgid "우린 이런 방어는 훈련받은 적이 없어! 왜 전선 전체를 밀지 않고 한 곳만 두들기는 거야?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_04"
+msgid "저게 바로 놈들의 그 유명한 전술이겠지. 취약한 한 방향을 강하게 한 번 밀어붙이는 거다. 방어가 허술한 곳을 조심해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_05"
+msgid "본부와 연결됐다. 증원을 보내 주겠다고 하지만 우리 손실을 메울 정도뿐이다. 자원이 매우 부족하니 그 이상은 기대하지 마라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_06"
+msgid "Sir, 전선의 최신 소식을 들으셨습니까? 어떻게 돌아가고 있습니까?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_07"
+msgid "내가 보기엔… 지금까지는 기대 이상으로 버티고 있다. 계속 그렇게 해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part02_08"
+msgid "놈들을 늦췄다, 제군! 이제 남은 적 차량을 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_01"
+msgid "독일 놈들이 우리 북쪽 측면을 장악했다! 방어선 전체가 무너지기 전에 이 진지들을 탈환하도록 마지막 예비대를 보내겠다. Lieutenant 윌리엄스, 그들의 반격을 지원해 주길 바란다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_02_allround"
+msgid "적이 중포를 끌고 왔다! 곡사포가 가동되는 동안에는 아군이 반격할 수 없다. 먼저 그것부터 처리해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_02_defensive"
+msgid "독일 놈들 비행기가 떠돌고 있다! 독일 놈들이 근접 항공 지원을 받는 동안은 공격해 봐야 의미 없다. 아군은 대공 장비가 없으니 너희가 알아서 처리해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_02_irregular"
+msgid "적이 포진지를 끌고 왔다! 대전차포와 대공포를 먼저 파괴해야 한다. 포가 가동되는 동안에는 아군이 반격할 수 없다. 먼저 그것부터 처리해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_02_offensive"
+msgid "적이 전차를 끌고 왔다! 이 전차들을 먼저 파괴해야 한다. 아군은 대전차 무기가 없으니 너희가 알아서 처리해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_03"
+msgid "우리 병사들은 독일군 진지로 전진할 준비가 됐다. 준비되면 신호를 줘라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_03_allround"
+msgid "그래도 우리에겐 비장의 카드가 하나 있다. 대포병전용으로 6인치 곡사포를 쓰게 해 주겠다. 한 문뿐이니 이 늙은 숙녀를 조심히 다뤄라. 독일 놈들은 한 발만 쏘면 바로 응사할 가능성이 높다, 그러니 Morris 수송차를 잘 활용해라. 사격할 때마다 위치를 바꿔라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_03_defensive"
+msgid "그래도 우리에겐 비장의 카드가 하나 있다. 이 빌어먹을 비행기를 떨어뜨릴 대공 전차를 쓰게 해 주겠다. 한 대뿐이니 이 녀석을 조심히 다뤄라. 조종사는 발견하면 이 차량부터 노릴 가능성이 높으니, 조심하고 가능한 한 자주 위치를 바꿔라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_03_irregular"
+msgid "그래도 우리에겐 비장의 카드가 하나 있다. 아군 포병에 정확한 좌표를 알려 줄 포병 관측병을 쓰게 해 주겠다. 놈들 발밑의 땅을 뒤흔들어 줘라. 전문가가 한 명뿐이니 독일 놈들한테 들키지 않게 해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_03_offensive"
+msgid "그래도 우리에겐 비장의 카드가 하나 있다. 판처 둘을 모두 파괴할 수 있는 Matilda II 전차를 쓰게 해 주겠다. 한 대뿐이니 이 아가씨를 조심히 다뤄라. 다만 독일 놈들과 거리를 유지해라, 놈들이 어떻게 반응할지 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_04"
+msgid "좋다, 제군, 움직여, 움직여!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_05"
+msgid "북쪽 측면을 다시 장악했다. 모두 훌륭했다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_06"
+msgid "놈들의 진격을 막은 것 같군…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/part03_07"
+msgid "그런 것 같아… 그래서, 다음은 뭐지?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/pl_swimming"
+msgid "이런, 오늘 물이 정말 따뜻하고 좋은데. 마을 아가씨들이 몇 명 같이 놀러 와 주기만 하면 딱 완벽할 텐데."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_01"
+msgid "그때는 고맙다는 말 같은 건 잘 안 했지. 어차피 우리 중 아무도 살아 나가지 못할 거라고 생각했거든."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_02"
+msgid "별말을. 백 번도 넘게 한 얘기로 귀찮게 굴어서 미안하다. 기운 좀 차리게 해 주려던 거였어."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_03"
+msgid "그래, 괜찮아, 친구."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_04"
+msgid "그래서… 케냐 얘기를 했었지, 아마?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_05"
+msgid "아, 맞다. 가기 전에 삼촌이 뭐라고 했는지 알아? 이러시더라. \"인도 같은 데야, 골프랑 사자가 있고 덜…\" 사람들이 그 곳에 대해 뭐라고 하는지 알지… 낭만적이지 않냐?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_06"
+msgid "아, 그래… 또 시작이군…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_07"
+msgid "삼촌은 농담이 아니었어. 가족 전체가 똑같은 말을 했거든. \"사자 머리 없이 돌아오지 마라, 아니면 군복 입은 관광객일 뿐이다.\" 그들한텐 사자 없으면 용기도 없는 거야. 게다가 작위도 영지도 없는 막내아들이면… 뭐, 스스로를 증명할 방법이 많지 않잖아."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_08"
+msgid "그래서… 진짜로 한 마리 잡았어?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_09"
+msgid "대충. 나한테 \"총기 운반인\"을 붙여 줬어. 나랑 비슷한 나이의 현지 청년이었지. 불쌍한 친구가 하는 일은 내 짐을 들고 다니는 거였어. 되게 이상한 기분이었지… 중세 기사 뒤에 종자가 따라오는 것 같달까. 다만 그 친구는 아이 셋을 먹여 살리려고 하는 거였지만."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_10"
+msgid "윌리엄스 경 폐하께서 우리 같은 더러운 농민들에게 그렇게 친절하신 줄은 몰랐네."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_11"
+msgid "솔직히 \"총기 운반\"은 거의 안 했어. 첫날 내 가방을 술집까지 들어다 준 게 다였고. 그 뒤로는 안내인 같았지. 우리는 대부분 폼베를 마셨어. 현지 술이야. 수수랑 바나나로 만들어. 맥주 세 잔 마시고 나면 맛있더라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_12"
+msgid "완전히 현지인이 다 됐네."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_13"
+msgid "맞아. 동포 영국인들이 하루 종일 \"현지인은 규율이 없다\", \"제대로 된 축구가 그립다\", \"진은 어디 갔어\" 하고 투덜대는 걸 듣는 것보다 훨씬 낫지. 그러면서 진토닉은 물처럼 마시고. 질렸어. 난 그저 평화가 필요했어."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_14"
+msgid "제법 제국주의자답군. 그래서… 사자를 쫓아간 적은 있고?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_15"
+msgid "당연히 없지. 좋은 술집을 두고 사바나로 나갈 만큼 멍청하지 않아. 배 타고 돌아오기 전에 어떤 상인한테서 사자 머리를 샀어. 총기 운반인한테는 두둑이 팁을 주고 끝냈지. 진짜 무슨 의미가 있어? 죽은 사람들이 책에 적어 놓은 걸 증명하겠다고 동물이나 쫓아다니는 게?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_16"
+msgid "그래… 무슨 말인지 알겠어."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_17"
+msgid "그래서… 어디까지 했더라? 아, 맞다. 어느 날 밤 그 술집에서 나랑 안내인이 폼베를 홀짝이면서 석양을 보고 있었는데… 스튜이, 그 석양을 봤어야 해. 너무 아름다워서 시라도 쓸 뻔했다니까. 곧 얘기해 줄 어떤 사람을 위해서…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_18"
+msgid "그렇게 다섯 잔인가 마셨는데, 갑자기 웬 아가씨가 모퉁이를 돌아 석양빛 속으로 걸어 들어오는 거야…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_19"
+msgid "윌리엄스 경, 셰익스피어풍 회고록을 방해해서 미안하지만, 2분 전에 지휘관 브리핑에 가야 하지 않았나? 내가 착각한 게 아니라면 거기엔 이미 다들 기다리고 있을 텐데?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_20"
+msgid "아, 젠장! 죄송합니다, Sir! 마틸다 이야기는 나중에 해 드리겠습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/preparation_21"
+msgid "그래. 꼭 해 줘."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_01"
+msgid "맙소사… 독일 놈들이 전차를 그렇게 많이 가지고 있을 줄은 몰랐어. 아무도 말 안 해 줬잖아. 이 난장판을 겪고도… 우린 그냥 떠나. 모르겠어, 전부 헛된 일이었던 것 같아."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_02"
+msgid "하지만 우리가 막았잖아, 안 그래? 다른 대대 녀석들 몇몇은 그걸 고마워할 거야."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_03"
+msgid "우린 지옥을 겪었어, 친구. 그것도 오늘 하루 만에. 독일 놈들은 도대체 왜 벨기에를 침공한 거야? 그냥 가만히 앉아만 있었어도 될 텐데… 이 모든 걸 시작하지 말고…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_04"
+msgid "글쎄, 러시아가 독일 놈들한테 연료와 산업 물자를 대 준다더군. 어쩌면 그게 윈스턴을 자극해서 독일 놈들과 협상하게 만들 테고, 우린 생각보다 일찍 집에 갈지도 몰라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_05"
+msgid "다음에 어디로 가는지 들었어?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_06"
+msgid "어딘가… 음, 기억이 안 나, 프랑스 이름은 발음도 안 돼. 어차피 중요하지도 않을 거야, 그냥 끝까지 살아남자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_07"
+msgid "마이크… 만약 못 살아남으면?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/cutscene/outro_08"
+msgid "있잖아… 케냐가 나한테 가르쳐 준 게 하나 있다면, 순간을 즐기는 법이야. 피투성이에 냄새나고 신도 버린 진창에 처박혀 있더라도 말이야. 지금은 괜찮아. 그러니까 입 닫고 이 빌어먹을 경치나 즐겨, 스튜이."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/secret_bunker_01"
+msgid "이봐, 이 고물들은 뭐야?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/secret_bunker_02"
+msgid "이 벙커들은 30년대에 지어졌다. 별로 쓸모없을 거다. 그래도 둘러보면 오래된 물건이 좀 나올지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/secret_bunker_03"
+msgid "넌 정말 특이한 놈이구나, 응? 난 의사는 아니지만 벙커 안에서 수류탄을 던지는 건 그리 똑똑한 생각이 아니야."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_left_01"
+msgid "독일군이 좌측방을 공격한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_left_02"
+msgid "좌측방에 또 공격이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_left_03"
+msgid "좌측에서 독일 놈들이 더 온다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_mid_01"
+msgid "독일군이 중앙 진지를 돌파하려 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_mid_02"
+msgid "독일군이 중앙 진지로 더 진격하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_mid_03"
+msgid "중앙 진지, 독일군이 또 공격한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_right_01"
+msgid "독일군이 우측방을 공격한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_right_02"
+msgid "조심해라, 우측에서 독일군이 온다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/attack_right_03"
+msgid "우측방에 또 공격이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/01_evac"
+msgid "생존자를 수색해 후송을 도와라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/02_medics"
+msgid "의무조를 보호하라. 위생병이 최소 1명 생존해야 한다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/03_defense"
+msgid "딜 방어선의 방어 진지를 사수하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/04_recapture"
+msgid "아군이 북쪽 진지를 탈환하도록 지원하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/05_doc_allround"
+msgid "<c(B29557)>[종합 교리]</c> 적 곡사포를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/05_doc_defensive"
+msgid "<c(B29557)>[방어 교리]</c> 적기를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/05_doc_irregular"
+msgid "<c(B29557)>[비정규 교리]</c> 포병 지원을 요청해 적 포진지를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/05_doc_offensive"
+msgid "<c(B29557)>[공격 교리]</c> 적 전차를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/opt01_heavy_wounded"
+msgid "중상을 입은 병사를 구출하라. 위생병이 부상자에게 가까이 가야 한다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/secret01_all_alive"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/secret01_all_alive_completed"
+msgid "비밀 목표: 아무도 두고 가지 않는다 - 사상자 없이 부상자를 모두 후송하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/secret02_bunker"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/tasks/secret02_bunker_completed"
+msgid "비밀 목표: 대전의 메아리 - 벨기에 벙커를 탐색해 전리품을 찾아라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/gameover_medics_dead"
+msgid "의무조를 지키지 못했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/gameover_pl_dead"
+msgid "유닛을 모두 잃었다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/gameover_defense"
+msgid "독일군이 돌파했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/hint_allround_ammo"
+msgid "6인치 곡사포의 추가 포탄은 Morris 차량에서 찾을 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/hint_ally_assault"
+msgid "아군에게 공격 개시를 명령하려면 <c(B29557)>증원 탭</c>의 해당 단추를 <c(B29557)>클릭</c>하라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/hint_wounded"
+msgid "부상자를 돕으려면 <c(B29557)>증원</c> 탭의 <c(B29557)>단추를 클릭</c>하라. 위생병은 잠시 AI가 조종한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/obj_progress_wounded"
+msgid "부상자를 %1명 더 구출할 수 있다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_wounded"
+msgid "부상자 돕기"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_wounded_desc"
+msgid "위생병은 잠시 AI가 조종한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_ally_assault"
+msgid "돌격 개시"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_ally_assault_desc"
+msgid "아군 유닛에게 적 진지 돌격을 명령한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_doc_allround"
+msgid "<c(B29557)>[종합]</c> BL 6인치 곡사포"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_doc_defensive"
+msgid "<c(B29557)>[방어]</c> Light Tank Mk. VIb"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_doc_irregular"
+msgid "<c(B29557)>[비정규]</c> 통신병"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_doc_offensive"
+msgid "<c(B29557)>[공격]</c> Matilda II"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_gren"
+msgid "소총 유탄병"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/reinf_skip_preparation"
+msgid "준비 생략"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/timer_preparation"
+msgid "방어선을 준비하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/ui/timer_truck"
+msgid "후송 트럭 도착"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라.\n사용 가능한 유닛 목록과 목표에 영향을 준다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/doctrine_allround"
+msgid "종합: BL 6인치 곡사포"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/doctrine_defensive"
+msgid "방어: Light Tank Mk. VIb"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/doctrine_irregular"
+msgid "비정규: 통신병"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/doctrine_offensive"
+msgid "공격: Matilda II"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1940_05_13_dyle/narrator/empty"
+msgid " "
+msgstr ""

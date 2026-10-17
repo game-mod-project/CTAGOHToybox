@@ -1,0 +1,498 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1943_07_petrovka)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/a_soliders_reinf"
+msgid "보병 분대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/art_strike"
+msgid "지원 사격"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/date"
+msgid "1943년 7월 9일 · 쿠르스크 남쪽 페트롭카"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/gameover_lose"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/gameover_won"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/name"
+msgid "검의 에이스"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/name_big"
+msgid "검의 에이스"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_00"
+msgid "좋다! 계속 밀어붙여라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_01"
+msgid "서둘러라! 더 빨리!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_02"
+msgid "훌륭하다, 병사! 계속 전진해라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_03"
+msgid "다음 방어선을 공격하라! 적이 방어선을 증강하기 전에 마을을 점령해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_04"
+msgid "지금 당장 마을을 공격하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_05"
+msgid "조종사가 살아남은 모양이다. 구해야 한다! 빨리 밀고 나가라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_06"
+msgid "조종사가 부상을 입었을지도 모른다. 시간을 낭비하지 말자."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_07"
+msgid "좋아, 마을은 우리 것이다. 방어를 준비하라. 주력이 도착할 때까지 마을을 지켜야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_08"
+msgid "제기랄!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_09"
+msgid "조종사를 찾아라! 마을 전체를 수색해라, 반드시 구해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_10"
+msgid "추락하는 걸 봤습니다! 최선을 다해 구하러 왔습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_11"
+msgid "가장 가까운 비행장까지 데려다 드리겠습니다. 우리 곁에 붙어 계십시오, 적이 곧 우리 공격에 대응할 겁니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_12"
+msgid "좋다. 마을로 이동해서 집을 하나씩 살피고, 적이 있으면 모조리 처치해라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_13"
+msgid "이제 전차 지원을 받을 수 없게 됐다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_14"
+msgid "Kolkrabe-5, 도로를 벗어나지 마라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_15"
+msgid "Herr Leutnant, 우리 임무는 주력이 도착해 진지를 보강할 때까지 전방의 마을을 점령하고 지키는 것입니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_16"
+msgid "들판에는 지뢰가 깔려 있다. 우리 전차는 도로에 남아 자네들 뒤에서 전진할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_17"
+msgid "지휘할 병력은 충분하다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_18"
+msgid "보병이 다이너마이트로 도로의 장애물과 방어 시설을 파괴해야 한다. 다이너마이트는 트럭에서 찾을 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_19"
+msgid "무전병이 살아 있는 한 판처에 사격 위치를 알려 줄 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_20"
+msgid "마을의 통제권을 잃었다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_21"
+msgid "우리 무전병들이 완벽하게 해냈다. 목표 파괴."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_22"
+msgid "지금 당장 마을을 점령해라. 아니면 반격을 감수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_23"
+msgid "정보부 보고에 따르면 러시아군이 마을 쪽으로 움직이기 시작했다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_24"
+msgid "마을 점령에 실패했다. 상부가 좋아하지 않을 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_25"
+msgid "아직도 못 찾았나? 서둘러라! 적이 언제 들이닥칠지 모른다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_26"
+msgid "정보부 보고에 따르면 대규모 적 병력이 집결했다. 곧 공세를 시작할 것이다! 서둘러라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_27"
+msgid "조종사를 찾아라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_28"
+msgid "스탈린그라드를 되풀이하게 두지 않겠다. 후퇴해라! 놈들이 우리 진지를 돌파하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_29"
+msgid "침착하게 진지를 지켜라. 증원군이 놈들의 진지를 돌파할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_30"
+msgid "우리는 떠나지만, 반드시 돌아온다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_31"
+msgid "전 전선에서 지뢰 때문에 막대한 기갑 전력을 잃고 있다. 이대로는 도저히 버틸 수 없다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_32"
+msgid "공병 종대가 소련 공격기의 폭격에 괴멸되어 발이 묶였습니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_33"
+msgid "알겠다. 당분간 대로를 벗어나지 마라. "
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/officer_34"
+msgid "손실이 크다. 증원을 요청할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/outro_completed"
+msgid "랄의 전기를 바탕으로 한 이 임무는 매우 운이 좋았던 조종사의 이야기다. 그의 말대로 '기운찬 판처 지휘관이 종대를 앞세워 달려와 안전한 곳까지 태워 준' 덕분에 운이 좋았다. 쿠르스크 전투 뒤에는 '쿠투조프 작전'이 이어졌고, 소련군은 남은 전쟁 내내 주도권을 쥐었다. 귄터 랄은 다행히 이 모험과 전쟁에서 모두 살아남았다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/outro_failed"
+msgid "당신의 행동 탓에 JG52는 가장 뛰어난 지휘관을 잃었다. 귄터 랄의 전사 소식이 부대에 닿으면 사기는 곤두박질치고, 지휘관이 없어 기강이 흐트러지며 손실이 늘어 제52전투비행단 제3대대는 재편을 위해 해체될 수밖에 없다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/place"
+msgid "정체불명의 기갑 종대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/rall_00"
+msgid "쏘지 마시오! 나는 Hauptmann 귄터 랄, 제52전투비행단 소속이오. 교전 뒤 근처에 비행기를 불시착시켜야 했소!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/rall_01"
+msgid "정말 감사하오! 신속한 공격이 아니었다면 포로가 되어 시베리아로 끌려갈 뻔했소!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/rall_02"
+msgid "알겠습니다, Herr Leutnant."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/rall_03"
+msgid "고맙네, 병사."
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/02-ger/1943_07_petrovka/rall_hp"
+msgid "Captain 랄의 생존 확률은 %1%퍼센트다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/reinf/officer"
+msgid "본부에 무전을 쳐서 즉시 증원 분대를 요청해라! "
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_00"
+msgid "우측면을 점령했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_01"
+msgid "중앙을 돌파했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_02"
+msgid "좌측면을 점령했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_03"
+msgid "제1방어선 전체를 돌파했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_04"
+msgid "제2방어선을 급습해 점령했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_05"
+msgid "엄폐하십시오! 터집니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_06"
+msgid "Herr Leutnant! 아군 전투기 한 대가 전방 마을에 불시착했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_07"
+msgid "Herr Leutnant, 비행기는 찾았지만 조종사는 없습니다. 어딘가에 숨었거나 붙잡힌 것 같습니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_08"
+msgid "마지막 방어선을 점령했습니다. 이제 마을까지 막을 것이 없습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_09"
+msgid "우리 무전병들이 전사했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_10"
+msgid "Captain, 저희가 태워 드리겠습니다. 지금 즉시 철수시켜 드려야 합니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_11"
+msgid "마을에 러시아 전차가 있습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_12"
+msgid "이 차는 아직 굴러갈 것 같습니다. 쓸 수 있을지도 모르겠습니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_13"
+msgid "젠장! 우리 뒤에 소련군이다! 포위당했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_14"
+msgid "증원군이 도착했습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_15"
+msgid "젠장! 이 지뢰밭을 어떻게 지나가지?"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_00"
+msgid "사격을 요청한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_01"
+msgid "직접 사격, 고폭탄, 7번 구역, 각도 30."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_02"
+msgid "직접 사격, 고폭탄, 8번 구역, 각도 60."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_03"
+msgid "직접 사격, 고폭탄, 9번 구역, 각도 90."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_04"
+msgid "직접 사격, 고폭탄, 10번 구역, 각도 120."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_05"
+msgid "직접 사격, 고폭탄, 11번 구역, 각도 40."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_06"
+msgid "직접 사격, 고폭탄, 12번 구역, 각도 65."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_07"
+msgid "직접 사격, 고폭탄, 13번 구역, 각도 95."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_08"
+msgid "직접 사격, 고폭탄, 14번 구역, 각도 130."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_09"
+msgid "직접 사격, 고폭탄, 15번 구역, 각도 350."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_10"
+msgid "직접 사격, 고폭탄, 16번 구역, 각도 10."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_11"
+msgid "직접 사격, 고폭탄, 17번 구역, 각도 45."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_12"
+msgid "직접 사격, 고폭탄, 18번 구역, 각도 75."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_13"
+msgid "직접 사격, 고폭탄, 19번 구역, 각도 340."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_14"
+msgid "직접 사격, 고폭탄, 20번 구역, 각도 10."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_15"
+msgid "직접 사격, 고폭탄, 21번 구역, 각도 60."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_16"
+msgid "직접 사격, 고폭탄, 22번 구역, 각도 80."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_17"
+msgid "불가. 너무 가깝다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_18"
+msgid "그곳에는 지원 사격을 요청할 수 없습니다. 우리 조종사가 그 지역에 있습니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_19"
+msgid "너무 멀다, 전차가 더 접근해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/soldier_radio_20"
+msgid "Herr Leutnant, 표적 지역을 송신할 준비가 됐습니다. 사격할 위치를 지정해 주십시오."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/story"
+msgid "쿠르스크 전투가 시작됐을 때 기대는 컸고, 전차 사냥꾼들은 낮게 날았다. 소련의 방어는 겹겹이 짜여 있었고 지뢰밭이 곳곳에 있었다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_00"
+msgid "아직이다, 이전 포격이 아직 끝나지 않았다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_01"
+msgid "사격 중이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_02"
+msgid "장애물 파괴. 다음 위치로 밀고 나가라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_04"
+msgid "전차 분대가 손실 없이 마을에 도착했습니다. 훌륭했습니다, Captain."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_05"
+msgid "이제 전차는 당신의 지휘를 받는다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_06"
+msgid "제기랄!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_07"
+msgid "이 빌어먹을 곳은 지뢰투성이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_08"
+msgid "전진해라, 도로를 벗어나지 마라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_09"
+msgid "놈들은 이 일대 지도를 갖고 있다. 지뢰밭이 어디 있는지 안다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_10"
+msgid "Herr Hauptmann, 우리 판처는 위치에 있습니다. 공병이 앞쪽을 소해해야 합니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_11"
+msgid "탁 트인 곳으로 전진하면 적 진지에 닿기도 전에 전차가 모조리 폭파될 위험이 있습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_12"
+msgid "요청이 거부되었다. 호송대는 지점을 향해 이동 중이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task1"
+msgid "페트로프카 마을을 점령하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task1_1"
+msgid "제1방어선을 돌파하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task1_2"
+msgid "제2방어선을 돌파하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task1_3"
+msgid "제3방어선을 돌파하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task2"
+msgid "전차가 마을로 갈 수 있도록 길을 뚫어라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task2_1"
+msgid "도로의 장애물을 파괴하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task2_1_1"
+msgid "장애물 1/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task2_1_2"
+msgid "장애물 2/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task2_1_3"
+msgid "장애물 3/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task2_1_4"
+msgid "장애물 4/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task3"
+msgid "격추된 항공기를 찾아라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task3_1"
+msgid "독일군 조종사를 찾아라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task4"
+msgid "Hauptmann 랄을 안전한 곳으로 데려가라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task5"
+msgid "점령한 진지를 방어하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task6"
+msgid "최초 위치로 후퇴하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task_opt1"
+msgid "무전병을 반드시 살려라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task_opt2"
+msgid "전차가 최소 한 대는 살아남아야 한다"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task_sec"
+msgid "비밀 목표 #1."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/task_sec1"
+msgid "차를 찾아 랄을 안전하게 데려가라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1943_07_petrovka/text1"
+msgid ""
+msgstr ""

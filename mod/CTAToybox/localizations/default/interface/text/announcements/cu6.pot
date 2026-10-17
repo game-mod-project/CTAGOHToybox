@@ -1,0 +1,21 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA - Gates of Hell (announcements)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "button/supporterpack"
+msgid "서포터 팩 구매!"
+msgstr ""
+
+msgctxt "announce_contentupdate6"
+msgid "지금까지 가장 큰 업데이트 중 하나인 콘텐츠 업데이트 6을 공개했습니다!\n\n<c(f5d167)>정복전</c> 개선, <c(f5d167)>대공</c> 수정, <c(f5d167)>최적화</c>, 새 <c(f5d167)>애니메이션</c>, 그리고 <c(f5d167)>TALVISOTA DLC</c>에 대한 방대한 콘텐츠 추가가 담겨 있습니다.\n\n게임을 계속 업데이트하고 커뮤니티와 함께 이 개선을 이루어 갈 수 있게 해 주셔서 감사합니다.\n\n 자발적으로 도와주신 분들과 서포터 팩 소유자 여러분이 한결같이 힘써 주신 덕분입니다. 이전 출시작의 업데이트가 계속되기를 바라신다면 <c(f5d167)>서포터 팩</c>을 구매해 함께해 주세요."
+msgstr ""

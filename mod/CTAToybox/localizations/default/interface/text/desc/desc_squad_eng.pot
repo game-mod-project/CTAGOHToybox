@@ -1,0 +1,1521 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Squads\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_com_early_con(eng)"
+msgid "<c(A5A095)>(3)</c> 코만도 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_early_all(eng)"
+msgid "<c(A5A095)>(1)</c> 후방 보병"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_early_con(eng)"
+msgid "<c(A5A095)>(1)</c> 후방 보병"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> 소총 분대 (초기)"
+msgstr ""
+
+msgctxt "desc/squad/squad_inf_pio_early_all(eng)"
+msgid "<c(A5A095)>(2)</c> 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_all(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 차량화 분대 (하차)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 차량화 분대 (하차)"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_early_all(eng)"
+msgid "<c(A5A095)>(2)</c> 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> 캐리어 분대 (초기)"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_all_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 근위 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_all_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 근위 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_all_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 근위 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_inf_pio_early_all(eng)"
+msgid "<c(A5A095)>(3)</c> 근위 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_carrier_early_all(eng)"
+msgid "<c(A5A095)>(3)</c> 근위 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_all_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_all_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_all_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_con(eng)"
+msgid "<c(A5A095)>(4)</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_early_def(eng)"
+msgid "<c(A5A095)>(1)</c> MP 분견대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_def_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_inf_pio_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 차량화 분대 (하차)"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> 왕립 공병대 야전 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_early_def(eng)"
+msgid "<c(A5A095)>(2)</c> 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_def_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_def_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_def_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_con(eng)"
+msgid "<c(A5A095)>(3)</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_inf_pio_early_def(eng)"
+msgid "<c(A5A095)>(3)</c> 제51 하이랜더 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_carrier_early_def(eng)"
+msgid "<c(A5A095)>(3)</c> 제51 하이랜더 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_def_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_def_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_def_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_inf_pio_early_def(eng)"
+msgid "<c(A5A095)>(4)</c> 블랙 워치 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_inf_pio_early_con(eng)"
+msgid "<c(A5A095)>(4)</c> 블랙 워치 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_early_irr(eng)"
+msgid "<c(A5A095)>(1)</c> MP 분견대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_irr_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_irr_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_early_irr_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_inf_pio_early_irr(eng)"
+msgid "<c(A5A095)>(2)</c> 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_irr(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 차량화 분대 (하차)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_scout_early_irr(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 소대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_scout_early_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 소대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_irr_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_irr_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_early_irr_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 공병 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_irr_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_irr_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_early_irr_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_inf_pio_early_irr(eng)"
+msgid "<c(A5A095)>(3)</c> 제51 하이랜더 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_carrier_early_irr(eng)"
+msgid "<c(A5A095)>(3)</c> 제51 하이랜더 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_irr_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_irr_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_irr_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_carrier_early_irr(eng)"
+msgid "<c(A5A095)>(4)</c> 블랙 워치 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_early_off(eng)"
+msgid "<c(A5A095)>(1)</c> 후방 보병"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> 차량화 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mounted_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rec_mc_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 차량화 분대 (하차)"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mot_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> 왕립 공병대 야전 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_early_off(eng)"
+msgid "<c(A5A095)>(2)</c> 차량화 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 근위 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 근위 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_rifle_early_off_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 근위 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_inf_pio_early_off(eng)"
+msgid "<c(A5A095)>(3)</c> 근위 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_carrier_early_off(eng)"
+msgid "<c(A5A095)>(3)</c> 근위 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_off_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_off_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_rifle_early_off_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 블랙 워치 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_hl_bw_inf_pio_early_off(eng)"
+msgid "<c(A5A095)>(4)</c> 블랙 워치 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_mid_all(eng)"
+msgid "<c(A5A095)>(1)</c> 여단 방어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_mid_con(eng)"
+msgid "<c(A5A095)>(1)</c> 여단 방어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_all(eng)"
+msgid "<c(A5A095)>(2)</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_mid_all(eng)"
+msgid "<c(A5A095)>(2)</c> 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_all(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_all(eng)"
+msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_pio_mid_all(eng)"
+msgid "<c(A5A095)>(3)</c> 제1 공중착륙 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_pio_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 제1 공중착륙 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_recon_mid_all(eng)"
+msgid "<c(A5A095)>(3)</c> 제1 공중착륙 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_mid_all_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제1 공중착륙 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_mid_all_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제1 공중착륙 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_support_mid_all_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 제1 공중착륙 지원 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 제1 공중착륙 지원 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_all_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_all_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_all_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mid_def(eng)"
+msgid "<c(A5A095)>(1)</c> 사단 방어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mg_mid_def(eng)"
+msgid "<c(A5A095)>(1)</c> 사단 방어 분대 (MG)"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mg_mid_con(eng)"
+msgid "<c(A5A095)>(1)</c> 사단 방어 분대 (MG)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_def(eng)"
+msgid "<c(A5A095)>(2)</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_mid_def(eng)"
+msgid "<c(A5A095)>(2)</c> 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mid_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 왕립 공병대 야전 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mid_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 왕립 공병대 야전 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> 왕립 공병대 야전 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_def(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_def(eng)"
+msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_mid_def(eng)"
+msgid "<c(A5A095)>(3)</c> 제7기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 제7기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_carrier_mid_def(eng)"
+msgid "<c(A5A095)>(3)</c> 제7기갑사단 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_mid_def_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제1 공수 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_mid_def_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제1 공수 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_mid_irr(eng)"
+msgid "<c(A5A095)>(1)</c> MP 분견대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mid_irr(eng)"
+msgid "<c(A5A095)>(2)</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_carrier_mid_irr(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_carrier_mid_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_irr(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_mid_irr(eng)"
+msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_mid_irr_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 영국 해군 코만도 해안반"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_mid_irr_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 영국 해군 코만도 해안반"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 영국 해군 코만도 해안반"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_mid_irr(eng)"
+msgid "<c(A5A095)>(3+)</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제51 하이랜더 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_51hl_carrier_mid_irr(eng)"
+msgid "<c(A5A095)>(3+)</c> 제51 하이랜더 캐리어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_mid_irr(eng)"
+msgid "<c(A5A095)>(4)</c> 제1 공수 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> 제1 공수 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_mid_irr(eng)"
+msgid "<c(A5A095)>(4)</c> 제1 공수 대전차 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> 코만도 소총 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_sas_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> SAS 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_mid_off(eng)"
+msgid "<c(A5A095)>(1)</c> 후방 보병"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> 차량화 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_mid_off_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> 차량화 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mot_mid_off(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_mid_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 영국 해병대 코만도 돌격 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_mid_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 영국 해병대 코만도 돌격 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_mid_con(eng)"
+msgid "<c(A5A095)>(3)</c> 영국 해병대 코만도 돌격 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_mid_off(eng)"
+msgid "<c(A5A095)>(4)</c> 제1 공수 경호 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_off_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_off_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_off_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_mid_con(eng)"
+msgid "<c(A5A095)>(4)</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_late_all(eng)"
+msgid "<c(A5A095)>(1)</c> 여단 방어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_late_con(eng)"
+msgid "<c(A5A095)>(1)</c> 여단 방어 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_late_all(eng)"
+msgid "<c(A5A095)>(1)</c> MP 분견대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_all_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_all_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_all_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mot_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 차량화 소총 분대 (탑승) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_assault_pio_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 공병 돌격 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mot_late_all(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_mot_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대 (탑승) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_carrier_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 캐리어 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_all_3(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_con(eng)"
+msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_pio_late_all(eng)"
+msgid "<c(A5A095)>(3)</c> 제6 공중착륙 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_recon_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 제6 공중착륙 정찰 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 제6 공중착륙 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 제6 공중착륙 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_airland_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 제6 공중착륙 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_recon_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제1 공중착륙 정찰 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 제1 공중착륙 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 제1 공중착륙 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제1 공중착륙 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_airland_support_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제1 공중착륙 지원 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_all_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제6 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_all_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제6 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_all_3(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 제6 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_rifle_late_con(eng)"
+msgid "<c(A5A095)>(4)</c> 제6 공수 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_late_all(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 정찰 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_recce_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 정찰 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_late_def(eng)"
+msgid "<c(A5A095)>(1)</c> 사단 방어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_div_defense_mg_late_def(eng)"
+msgid "<c(A5A095)>(1)</c> 사단 방어 분대 (MG)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_def_3(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 왕립 공병대 야전 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 왕립 공병대 야전 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_r_eng_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 왕립 공병대 야전 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_late_def(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_recce_assault_late_con(eng)"
+msgid "<c(A5A095)>(2)</c> 정찰 돌격 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_def_1(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>1.</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_def_2(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>2.</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_vet_rifle_late_def_3(eng)"
+msgid "<c(A5A095)>(2+)</c> <c(E56042)>3.</c> 베테랑 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_def_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 근위기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_def_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 근위기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_def_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 근위기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 근위기갑사단 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_pio_late_def(eng)"
+msgid "<c(A5A095)>(3)</c> 근위기갑사단 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 근위기갑사단 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_gds_ad_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 근위기갑사단 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 제7기갑사단 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 제7기갑사단 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_eng_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제7기갑사단 공병 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_eng_late_def_1(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 제6 공수 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_eng_late_def_2(eng)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 제6 공수 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_6th_para_eng_late_con(eng)"
+msgid "<c(A5A095)>(4)</c> 제6 공수 공병 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_late_def(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 대전차 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_late_def(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 경호 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_late_irr(can)"
+msgid "<c(A5A095)>(1)</c> 캐나다 후방 보병"
+msgstr ""
+
+msgctxt "desc/squad/squad_brig_defense_late_irr(can)"
+msgid "<c(A5A095)>(1)</c> 캐나다 여단 방어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_irr_1(can)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 캐나다 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_irr_2(can)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 캐나다 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_irr_3(can)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 캐나다 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(can)"
+msgid "<c(A5A095)>(2)</c> 캐나다 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_con(can)"
+msgid "<c(A5A095)>(2)</c> 캐나다 소총 분대 (탑승) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_con(can)"
+msgid "<c(A5A095)>(2)</c> 캐나다 차량화 소총 분대 (탑승) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_late_irr(can)"
+msgid "<c(A5A095)>(2)</c> 캐나다 차량화 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_late_con(can)"
+msgid "<c(A5A095)>(2)</c> 캐나다 캐리어 분대 (Wasp) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_late_irr_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 영국 해군 코만도 해안반"
+msgstr ""
+
+msgctxt "desc/squad/squad_rn_com_beach_late_irr_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 영국 해군 코만도 해안반"
+msgstr ""
+
+msgctxt "desc/squad/squad_sas_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> SAS 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_pio_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제7기갑사단 공병 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_irr_1(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>1.</c> 제7기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_irr_2(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>2.</c> 제7기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_irr_3(eng)"
+msgid "<c(A5A095)>(3+)</c> <c(E56042)>3.</c> 제7기갑사단 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_7th_ad_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3+)</c> 제7기갑사단 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_late_irr(can)"
+msgid "<c(A5A095)>(4)</c> 캐나다 제1 낙하산 대전차 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_at_late_con(can)"
+msgid "<c(A5A095)>(4)</c> 캐나다 제1 낙하산 대전차 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_late_irr(can)"
+msgid "<c(A5A095)>(4)</c> 캐나다 제1 낙하산 경호 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_protect_late_con(can)"
+msgid "<c(A5A095)>(4)</c> 캐나다 제1 낙하산 경호 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_irr_1(can)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 캐나다 제1 낙하산 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_irr_2(can)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 캐나다 제1 낙하산 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_irr_3(can)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 캐나다 제1 낙하산 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_con(can)"
+msgid "<c(A5A095)>(4)</c> 캐나다 제1 낙하산 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_flame_late_irr(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 공병 화염방사 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rear_echelon_late_off(eng)"
+msgid "<c(A5A095)>(1)</c> 후방 보병"
+msgstr ""
+
+msgctxt "desc/squad/squad_mp_late_off(eng)"
+msgid "<c(A5A095)>(1)</c> MP 분견대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_off_1(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 폴란드 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_off_2(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 폴란드 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_off_3(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 폴란드 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_late_con(pol)"
+msgid "<c(A5A095)>(2)</c> 폴란드 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_assault_pio_late_off(pol)"
+msgid "<c(A5A095)>(2)</c> 폴란드 공병 돌격 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pio_late_off(pol)"
+msgid "<c(A5A095)>(2)</c> 폴란드 공병 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_off_1(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 폴란드 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_off_2(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 폴란드 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_off_3(pol)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 폴란드 차량화 소총 분대 (탑승)"
+msgstr ""
+
+msgctxt "desc/squad/squad_rifle_mech_late_con(pol)"
+msgid "<c(A5A095)>(2)</c> 폴란드 차량화 소총 분대 (탑승) [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_mot_scout_carrier_late_off(pol)"
+msgid "<c(A5A095)>(2)</c> 폴란드 차량화 정찰 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_carrier_late_con(pol)"
+msgid "<c(A5A095)>(2)</c> 폴란드 캐리어 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_late_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 영국 해병대 코만도 돌격 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 영국 해병대 코만도 돌격 소분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_rm_com_assault_late_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 영국 해병대 코만도 돌격 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_1(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> 코만도 소총 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_2(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 코만도 소총 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_3(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 코만도 소총 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_off_4(eng)"
+msgid "<c(A5A095)>(3)</c> <c(E56042)>4.</c> 코만도 소총 소분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_rifle_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 코만도 소총 소분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_com_smg_s_late_con(eng)"
+msgid "<c(A5A095)>(3)</c> 코만도 Raid 분견대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_late_con(pol)"
+msgid "<c(A5A095)>(4)</c> 폴란드 제1 낙하산 공병 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_flame_late_off(pol)"
+msgid "<c(A5A095)>(4)</c> 폴란드 제1 낙하산 공병 화염방사 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_flame_late_con(pol)"
+msgid "<c(A5A095)>(4)</c> 폴란드 제1 낙하산 공병 화염방사 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_1(pol)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 폴란드 제1 낙하산 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_2(pol)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 폴란드 제1 낙하산 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_3(pol)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 폴란드 제1 낙하산 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_con(pol)"
+msgid "<c(A5A095)>(4)</c> 폴란드 제1 낙하산 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_eng_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 공병 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_1(eng)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>1.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_2(eng)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>2.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_off_3(eng)"
+msgid "<c(A5A095)>(4+)</c> <c(E56042)>3.</c> 제1 공수 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_1st_para_rifle_late_con(eng)"
+msgid "<c(A5A095)>(4+)</c> 제1 공수 소총 분대 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/20mm_oerlikon_all"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/20mm_oerlikon_irr"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/20mm_polsten_def"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/20mm_polsten_off"
+msgid "Oerlikon No.2 Universal Mount"
+msgstr ""
+
+msgctxt "desc/squad/40mm_qf40_late_def"
+msgid "QF 40mm Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/humber_recon_mk3_late_def"
+msgid "Humber Light Reconnaissance Car Mk.IIIA"
+msgstr ""
+
+msgctxt "desc/squad/humber_recon_mk3_late_irr"
+msgid "Humber Light Reconnaissance Car Mk.IIIA"
+msgstr ""
+
+msgctxt "desc/squad/humber_scout_late_def"
+msgid "Humber Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/humber_scout_late_irr"
+msgid "Humber Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/humber_mk4_late_def"
+msgid "Humber Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/humber_mk4_late_irr"
+msgid "Humber Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk2_late_def"
+msgid "AEC Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk2_late_irr"
+msgid "AEC Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk3_late_def"
+msgid "AEC Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/aec_mk3_late_irr"
+msgid "AEC Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk1_late_all"
+msgid "Staghound Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk1_late_off"
+msgid "Staghound Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk3_late_all"
+msgid "Staghound Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mk3_late_off"
+msgid "Staghound Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mkaa_late_all"
+msgid "Staghound 대공"
+msgstr ""
+
+msgctxt "desc/squad/staghound_mkaa_late_off"
+msgid "Staghound 대공"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk1_cs_all"
+msgid "Cruiser Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk1_cs_off"
+msgid "Cruiser Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2_all"
+msgid "Cruiser Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2_off"
+msgid "Cruiser Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_def"
+msgid "Cruiser Mk.IIA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_irr"
+msgid "Cruiser Mk.IIA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_cs_def"
+msgid "Cruiser Mk.IIA CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk2a_cs_irr"
+msgid "Cruiser Mk.IIA CS"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4_all"
+msgid "Cruiser Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4_off"
+msgid "Cruiser Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4a_def"
+msgid "Cruiser Mk.IVA"
+msgstr ""
+
+msgctxt "desc/squad/cruiser_mk4a_irr"
+msgid "Cruiser Mk.IVA"
+msgstr ""
+
+msgctxt "desc/squad/stuart1_irr"
+msgid "Stuart I 'Honey'"
+msgstr ""
+
+msgctxt "desc/squad/stuart1_off"
+msgid "Stuart I 'Honey'"
+msgstr ""
+
+msgctxt "desc/squad/stuart3_all"
+msgid "Stuart III"
+msgstr ""
+
+msgctxt "desc/squad/stuart3_def"
+msgid "Stuart III"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk2_all"
+msgid "Valentine Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk2_def"
+msgid "Valentine Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk3_irr"
+msgid "Valentine Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk3_off"
+msgid "Valentine Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk10_all"
+msgid "Valentine Mk.X"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk10_off"
+msgid "Valentine Mk.X"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk11_def"
+msgid "Valentine Mk.XI"
+msgstr ""
+
+msgctxt "desc/squad/valentine_mk11_irr"
+msgid "Valentine Mk.XI"
+msgstr ""
+
+msgctxt "desc/squad/cromwell4_all"
+msgid "Cromwell Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cromwell4_def"
+msgid "Cromwell Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/cromwell5_irr"
+msgid "Cromwell Mk.V"
+msgstr ""
+
+msgctxt "desc/squad/cromwell5_off"
+msgid "Cromwell Mk.V"
+msgstr ""
+
+msgctxt "desc/squad/sherman5c_all"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/squad/sherman5c_irr"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/squad/sherman5c_off"
+msgid "Sherman Vc"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_mid_all"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_mid_def"
+msgid "Churchill Mk.III"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_qf75_irr"
+msgid "Churchill Mk.III* (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_qf75_off"
+msgid "Churchill Mk.III* (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_l50_late_irr"
+msgid "Churchill Mk.III (후기)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk3_l50_late_off"
+msgid "Churchill Mk.III (후기)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_mid_irr"
+msgid "Churchill Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_mid_off"
+msgid "Churchill Mk.IV"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_qf75_all"
+msgid "Churchill Mk.IV (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_qf75_def"
+msgid "Churchill Mk.IV (75mm)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_l50_late_all"
+msgid "Churchill Mk.IV (후기)"
+msgstr ""
+
+msgctxt "desc/squad/churchill_mk4_l50_late_def"
+msgid "Churchill Mk.IV (후기)"
+msgstr ""
+
+msgctxt "desc/squad/achilles_mk2_all"
+msgid "17-pdr SP Achilles Mk.IIc"
+msgstr ""
+
+msgctxt "desc/squad/achilles_mk2_irr"
+msgid "17-pdr SP Achilles Mk.IIc"
+msgstr ""
+
+msgctxt "desc/squad/grant_def"
+msgid "Grant I"
+msgstr ""
+
+msgctxt "desc/squad/grant_irr"
+msgid "Grant I"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_irr"
+msgid "Crusader Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_off"
+msgid "Crusader Mk.I"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_cs_irr"
+msgid "Crusader Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk1_cs_off"
+msgid "Crusader Mk.I CS"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_all"
+msgid "Crusader Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_def"
+msgid "Crusader Mk.II"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_cs_all"
+msgid "Crusader Mk.II CS"
+msgstr ""
+
+msgctxt "desc/squad/crusader_mk2_cs_def"
+msgid "Crusader Mk.II CS"
+msgstr ""
+
+msgctxt "desc/squad/single_rifle(eng)"
+msgid "소총수"
+msgstr ""
+
+msgctxt "desc/squad/single_smg(eng)"
+msgid "기관단총 보병"
+msgstr ""
+
+msgctxt "desc/squad/single_mg(eng)"
+msgid "기관총 분견대"
+msgstr ""
+
+msgctxt "desc/squad/single_at(eng)"
+msgid "대전차 소총조"
+msgstr ""
+
+msgctxt "desc/squad/single_at_con(eng)"
+msgid "Boys 대전차 소총조"
+msgstr ""
+
+msgctxt "desc/squad/single_at1_con(eng)"
+msgid "PIAT 대전차 조"
+msgstr ""
+
+msgctxt "desc/squad/single_at2_con(eng)"
+msgid "PIAT 대전차 조 [1944]"
+msgstr ""
+
+msgctxt "desc/squad/single_bazooker(eng)"
+msgid "대전차 조"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade(eng)"
+msgid "그레나디어 소총수"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade_con(eng)"
+msgid "그레나디어 소총수"
+msgstr ""
+
+msgctxt "desc/squad/single_ap_miner(eng)"
+msgid "AP 지뢰병"
+msgstr ""
+
+msgctxt "desc/squad/single_at_miner(eng)"
+msgid "대전차 지뢰병"
+msgstr ""
+
+msgctxt "desc/squad/single_engineer(eng)"
+msgid "공병"
+msgstr ""
+
+msgctxt "desc/squad/single_flamer(eng)"
+msgid "화염방사병"
+msgstr ""
+
+msgctxt "desc/squad/single_tankman(eng)"
+msgid "전차 승무원"
+msgstr ""
+
+msgctxt "desc/squad/single_medic(eng)"
+msgid "위생병"
+msgstr ""
+
+msgctxt "desc/squad/single_sniper(eng)"
+msgid "저격수"
+msgstr ""
+
+msgctxt "desc/squad/single_officer(eng)"
+msgid "장교"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_con(eng)"
+msgid "소대 본부"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_carrier_con"
+msgid "정찰 소대 본부"
+msgstr ""
+
+msgctxt "desc/squad/squad_officer_m5a1_halftrack_con"
+msgid "차량화 중대 본부"
+msgstr ""
+
+msgctxt "desc/squad/conquest_blenheim_mk1_eng"
+msgid "Blenheim Mk.I 500lb 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/conquest_blenheim_mk1_eng_light"
+msgid "Blenheim Mk.I 250lb 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/conquest_blenheim_mk1_eng_recon"
+msgid "Bristol Blenheim Mk.I 정찰기"
+msgstr ""
+
+msgctxt "desc/squad/conquest_hurribomber_mk2c"
+msgid "Hurribomber IIc 500lb 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/conquest_hurribomber_mk2c_light"
+msgid "Hurribomber IIc 250lb 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/conquest_typhoon_mk1b"
+msgid "Typhoon Ib 500lb 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/conquest_conquest_typhoon_mk1b_light"
+msgid "Typhoon Ib 250lb 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/conquest_typhoon_mk1b_recon"
+msgid "Typhoon Ib 정찰기"
+msgstr ""

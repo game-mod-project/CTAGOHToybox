@@ -1,0 +1,3314 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell German MP soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/mp/ger/early/Officer"
+msgid "Leutnant [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/officer_lw"
+msgid "보급 장교 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/antitank_1"
+msgid "Panzerbüchse 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/antitank_2"
+msgid "대전차 지원 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/antitank_3"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/antitank_4"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/artilleryman"
+msgid "포병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/brand_1"
+msgid "브란덴부르거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/brand_2"
+msgid "브란덴부르거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/brand_3"
+msgid "브란덴부르거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/brand_4"
+msgid "브란덴부르거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/brand_5"
+msgid "브란덴부르거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/brand_6"
+msgid "브란덴부르거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/engineer_1"
+msgid "야전 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/engineer_2"
+msgid "야전 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_1"
+msgid "팔쉬름예거 부사관 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_2"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_3"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_4"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_mg"
+msgid "팔쉬름예거 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_mg_ammo"
+msgid "팔쉬름예거 기관총 탄약수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_mg_asst"
+msgid "팔쉬름예거 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_crew"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_rifle"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_rifle_scope"
+msgid "팔쉬름예거 저격수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_sl"
+msgid "팔쉬름예거 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_sl_asst"
+msgid "팔쉬름예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_smg"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/feldg_nco"
+msgid "분대장 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/feldg_rifle"
+msgid "소총수 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/feldg_smg"
+msgid "기관단총 보병 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/flamer"
+msgid "화염방사기 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_mg"
+msgid "그로스도이칠란트 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_mg_ammo"
+msgid "그로스도이칠란트 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_mg_asst"
+msgid "그로스도이칠란트 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_rifle"
+msgid "그로스도이칠란트 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_sl"
+msgid "그로스도이칠란트 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_sl_asst"
+msgid "그로스도이칠란트 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_1"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_2"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_3"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_mg"
+msgid "게비르크스예거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_mg_asst"
+msgid "게비르크스예거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_rifle"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_sl"
+msgid "게비르크스예거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_sl_asst"
+msgid "게비르크스예거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_smg"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/landwehr_mg"
+msgid "란데스쉬체 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/landwehr_mg_ammo"
+msgid "란데스쉬체 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/landwehr_mg_asst"
+msgid "란데스쉬체 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/landwehr_rifle"
+msgid "란데스쉬체 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/landwehr_sl"
+msgid "란데스쉬체 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/landwehr_sl_asst"
+msgid "란데스쉬체 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_1"
+msgid "루프트바페 야전 보병 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_2"
+msgid "루프트바페 야전 보병 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_3"
+msgid "루프트바페 야전 보병 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_mg"
+msgid "루프트바페 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_mg_ammo"
+msgid "루프트바페 기관총 탄약수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_mg_asst"
+msgid "루프트바페 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_rifle"
+msgid "루프트바페 소총수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_sl"
+msgid "루프트바페 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/luft_sl_asst"
+msgid "루프트바페 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_mg"
+msgid "해병 기관총 사수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_mg_ammo"
+msgid "해병 기관총 탄약수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_mg_asst"
+msgid "해병 기관총 부사수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_rifle"
+msgid "해병 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_sl"
+msgid "해병 분대장 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_sl_asst"
+msgid "해병 부분대장 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/medic"
+msgid "위생병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mg_crew"
+msgid "기관총 승무원 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mg_crew_asst"
+msgid "기관총 승무원 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mgun_1"
+msgid "기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mgun_2"
+msgid "기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mgun_2_rifle"
+msgid "기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mgun_3"
+msgid "기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/miner-ap"
+msgid "AP 지뢰 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/miner-at"
+msgid "대전차 지뢰 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/nco"
+msgid "분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/nco_asst"
+msgid "부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pilot"
+msgid "조종사 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_1"
+msgid "피오니어 부사관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_2"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_3"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_4"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_flame"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_mgun"
+msgid "피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_mgun_ammo_carrier"
+msgid "피오니어 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_mgun_asst"
+msgid "피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_rifle"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_rifle_gren"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_rifle_mine"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_sl"
+msgid "피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_sl_asst"
+msgid "피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_flame"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_mg"
+msgid "판처피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_mg_ammo_carrier"
+msgid "판처피오니어 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_mg_asst"
+msgid "판처피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_rifle"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_rifle_gren"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_rifle_mine"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_sl"
+msgid "판처피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_sl_asst"
+msgid "판처피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/recon_mg"
+msgid "아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/recon_mg_asst"
+msgid "아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/recon_rifle"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/recon_sl"
+msgid "아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/recon_sl_asst"
+msgid "아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/rifleman_1"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/rifleman_2"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/rifleman_3"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/scout_1"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/scout_2"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/signaller"
+msgid "포병 통신병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/smg_1"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/smg_2"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/smg_3"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sniper"
+msgid "저격수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sniper_elite"
+msgid "정예 저격수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sturmp_1"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sturmp_2"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sturmp_3"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/tank_commander"
+msgid "전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/tank_commander_stug"
+msgid "전차 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/tankman"
+msgid "전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/tankman_stug"
+msgid "전차병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/Officer"
+msgid "Leutnant [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/officer_lw"
+msgid "보급 장교 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/antitank_1"
+msgid "대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/antitank_2"
+msgid "대전차 지원 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/antitank_3"
+msgid "대전차 지원 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/antitank_4"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/antitank_5"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/artilleryman"
+msgid "포병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_mg"
+msgid "베글라이트그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_mg_asst"
+msgid "베글라이트그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sa"
+msgid "베글라이트그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sa_pzf"
+msgid "베글라이트그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sl"
+msgid "베글라이트그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sl_asst"
+msgid "베글라이트그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_stg"
+msgid "베글라이트그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/brand_1"
+msgid "브란덴부르거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/brand_2"
+msgid "브란덴부르거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/brand_3"
+msgid "브란덴부르거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/brand_4"
+msgid "브란덴부르거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/brand_5"
+msgid "브란덴부르거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/brand_6"
+msgid "브란덴부르거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/engineer_1"
+msgid "야전 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/engineer_2"
+msgid "야전 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_1"
+msgid "팔쉬름예거 부사관 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_2"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_3"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_4"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_fg"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_mg"
+msgid "팔쉬름예거 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_mg_asst"
+msgid "팔쉬름예거 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_mg"
+msgid "팔쉬름피오니어 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_mg_asst"
+msgid "팔쉬름피오니어 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_rifle"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_rifle_grenadier"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_sl"
+msgid "팔쉬름피오니어 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_sl_asst"
+msgid "팔쉬름피오니어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_crew"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_rifle"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_rifle_grenadier"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_rifle_scope"
+msgid "팔쉬름예거 저격수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sa"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sa_scope"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sl"
+msgid "팔쉬름예거 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sl_asst"
+msgid "팔쉬름예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sl_asst_stg"
+msgid "팔쉬름예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_stg"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/flamer"
+msgid "화염방사기 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_mg"
+msgid "퓌질리어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_mg_asst"
+msgid "퓌질리어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_rifle"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_rifle_grenadier"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_rifle_pzf"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_sa"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_sl"
+msgid "퓌질리어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_sl_asst"
+msgid "퓌질리어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_smg"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_mg"
+msgid "그로스도이칠란트 판처그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_mg_asst"
+msgid "그로스도이칠란트 판처그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_rifle"
+msgid "그로스도이칠란트 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_rifle_pzf"
+msgid "그로스도이칠란트 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_sa"
+msgid "그로스도이칠란트 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_sa_pzf"
+msgid "그로스도이칠란트 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_sl"
+msgid "그로스도이칠란트 판처그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_sl_asst"
+msgid "그로스도이칠란트 판처그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pzgren_stg"
+msgid "그로스도이칠란트 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_1"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_2"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_3"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_mg"
+msgid "게비르크스예거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_mg_asst"
+msgid "게비르크스예거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_rifle"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_sl"
+msgid "게비르크스예거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_sl_asst"
+msgid "게비르크스예거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_smg"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_smg_pzf"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_stg"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_mg"
+msgid "그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_mg_asst"
+msgid "그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_rifle"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_rifle_grenadier"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sa"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl"
+msgid "그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl_asst"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl_asst_smg"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl_asst_sniper"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_smg"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_mg"
+msgid "슈투름그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_mg_asst"
+msgid "슈투름그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_pzf"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_sa_scope"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_sl"
+msgid "슈투름그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_sl_asst"
+msgid "슈투름그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sturm_stg"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_mg"
+msgid "예거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_mg_asst"
+msgid "예거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_rifle"
+msgid "예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_rifle_pzf"
+msgid "예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sl"
+msgid "예거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sl_asst"
+msgid "예거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_smg"
+msgid "예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_smg_pzf"
+msgid "예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_mg"
+msgid "슈투름예거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_mg_asst"
+msgid "슈투름예거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_sa"
+msgid "슈투름예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_sl"
+msgid "슈투름예거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_sl_asst"
+msgid "슈투름예거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_stg"
+msgid "슈투름예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/jager_sturm_stg_pzf"
+msgid "슈투름예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/luft_1"
+msgid "루프트바페 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/luft_2"
+msgid "루프트바페 소총수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/luft_3"
+msgid "루프트바페 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_mg"
+msgid "루프트바페 퓌질리어 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_mg_asst"
+msgid "루프트바페 퓌질리어 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_rifle"
+msgid "루프트바페 퓌질리어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_sl"
+msgid "루프트바페 퓌질리어 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_sl_asst"
+msgid "루프트바페 퓌질리어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_smg"
+msgid "루프트바페 퓌질리어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/marine_rifle"
+msgid "해병 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/marine_sl"
+msgid "해병 분대장 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/marine_sl_asst"
+msgid "해병 부분대장 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/medic"
+msgid "위생병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/mg_crew"
+msgid "기관총 승무원 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/mg_crew_asst"
+msgid "기관총 승무원 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/mgun_1"
+msgid "기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/mgun_2"
+msgid "기관총 지원 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/miner-ap"
+msgid "AP 지뢰 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/miner-at"
+msgid "대전차 지뢰 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/nco"
+msgid "Feldwebel [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pilot"
+msgid "조종사 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pio_builder"
+msgid "피오니어 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pio_demo"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pio_miner_ap"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pio_miner_at"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_1"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_2"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_3"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_4"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_at"
+msgid "피오니어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_mgun"
+msgid "피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_mgun_asst"
+msgid "피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_pzf"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_rifle_grenadier"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_sa"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_sl"
+msgid "피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_sl_asst"
+msgid "피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_sl_stg"
+msgid "피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_at"
+msgid "판처그레나디어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_mg"
+msgid "판처그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_mg_asst"
+msgid "판처그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_rifle"
+msgid "판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_rifle_pzf2"
+msgid "판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_rifle_pzf"
+msgid "판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sa"
+msgid "판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sl"
+msgid "판처그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sl_asst"
+msgid "판처그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_stg"
+msgid "판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sturm_pzf"
+msgid "판처 슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sturm_sa_scope"
+msgid "판처 슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sturm_sl"
+msgid "판처 슈투름그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sturm_sl_asst"
+msgid "판처 슈투름그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pzgren_sturm_stg"
+msgid "판처 슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_mg"
+msgid "아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_mg_asst"
+msgid "아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_rifle"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_sl_asst_rifle"
+msgid "아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_sl_asst_sa"
+msgid "아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_sl_asst_stg"
+msgid "아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_sl_rifle"
+msgid "아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/recon_sl_smg"
+msgid "아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/rifleman_1"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/rifleman_2"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/rifleman_3"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/signaller"
+msgid "포병 통신병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/smg_1"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/smg_2"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/smg_3"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/smg_stg"
+msgid "루프트바페 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/sniper2"
+msgid "저격수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/sniper"
+msgid "저격수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/sturm_1"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/sturm_2"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/sturm_3"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/sturm_4"
+msgid "슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tank_commander"
+msgid "전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tank_commander_ace"
+msgid "에이스 전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tank_commander_stug"
+msgid "전차 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tank_commander_vet"
+msgid "전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tankman"
+msgid "전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tankman_ace"
+msgid "에이스 전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tankman_stug"
+msgid "전차병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tankman_vet"
+msgid "전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_1"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_2"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_3"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_4"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_at2"
+msgid "폭스그레나디어 대전차 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_at"
+msgid "폭스그레나디어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_mg"
+msgid "폭스그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_mg_asst"
+msgid "폭스그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_mg_asst_sa"
+msgid "폭스그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_rifle"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_rifle_pzf"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_rifle_grenadier2"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_rifle_grenadier"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sa"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sa_pzf"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sa_scope"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sl"
+msgid "폭스그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sl_asst"
+msgid "폭스그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sl_asst_smg"
+msgid "폭스그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_sl_smg"
+msgid "폭스그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_smg"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_smg_pzf"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_stg"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volksg_stg_pzf"
+msgid "폭스그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_1"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_2"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_3"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_4"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_mg"
+msgid "폴크스슈투름만 기관총 사수 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_pol"
+msgid "분대장 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_pzf"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_rifle"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/volkssturm_smg"
+msgid "폴크스슈투름만 [폴크스슈투름]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/Officer"
+msgid "Leutnant [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/officer_lw"
+msgid "보급 장교 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/antitank_1"
+msgid "대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/antitank_2"
+msgid "대전차 지원 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/antitank_3"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/antitank_4"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/artilleryman"
+msgid "포병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_1"
+msgid "블라우 사단 기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_2"
+msgid "블라우 사단 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_3"
+msgid "블라우 사단 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_4"
+msgid "블라우 사단 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_5"
+msgid "블라우 사단 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_6"
+msgid "블라우 사단 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/blau_sl_asst"
+msgid "블라우 사단 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/brand_1"
+msgid "브란덴부르거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/brand_2"
+msgid "브란덴부르거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/brand_3"
+msgid "브란덴부르거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/brand_4"
+msgid "브란덴부르거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/brand_5"
+msgid "브란덴부르거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/brand_6"
+msgid "브란덴부르거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/convict_1"
+msgid "죄수 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/convict_2"
+msgid "죄수 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/convict_3"
+msgid "Feldwebel [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/engineer_1"
+msgid "야전 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/engineer_2"
+msgid "야전 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_1"
+msgid "팔쉬름예거 부사관 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_2"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_3"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_4"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_mg"
+msgid "팔쉬름예거 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_mg_asst"
+msgid "팔쉬름예거 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_crew"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_rifle"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_rifle_grenadier"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_rifle_scope"
+msgid "팔쉬름예거 저격수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_sa"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_sl"
+msgid "팔쉬름예거 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_sl_asst"
+msgid "팔쉬름예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_sl_asst_fg"
+msgid "팔쉬름예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_smg"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/flamer"
+msgid "화염방사기 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_mg"
+msgid "기관총 사수 '그로스도이칠란트' [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_mg_asst"
+msgid "기관총 부사수 '그로스도이칠란트' [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_rifle"
+msgid "소총수 '그로스도이칠란트' [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_sa"
+msgid "소총수 '그로스도이칠란트' [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_sl"
+msgid "분대장 '그로스도이칠란트' [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_sl_asst"
+msgid "부분대장 '그로스도이칠란트' [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_1"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_2"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_3"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_mg"
+msgid "게비르크스예거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_mg_asst"
+msgid "게비르크스예거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_rifle"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_sl"
+msgid "게비르크스예거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_sl_asst"
+msgid "게비르크스예거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_smg"
+msgid "게비르크스예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_mg"
+msgid "그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_mg_asst"
+msgid "그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_rifle"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_rifle_grenadier"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_sa"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_sl"
+msgid "그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gren_sl_asst"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/grenadier_1"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/grenadier_2"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/grenadier_3"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/jager_mg"
+msgid "예거 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/jager_mg_asst"
+msgid "예거 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/jager_rifle"
+msgid "예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/jager_sl"
+msgid "예거 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/jager_sl_asst"
+msgid "예거 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/jager_smg"
+msgid "예거 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/luft_1"
+msgid "루프트바페 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/luft_2"
+msgid "루프트바페 소총수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/luft_3"
+msgid "루프트바페 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/luft_4"
+msgid "루프트바페 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/luft_5"
+msgid "루프트바페 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/medic"
+msgid "위생병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mg_crew"
+msgid "기관총 승무원 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mg_crew_asst"
+msgid "기관총 승무원 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mgun_1"
+msgid "기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mgun_2"
+msgid "기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mgun_2_rifle"
+msgid "기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mgun_3"
+msgid "기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/miner-ap"
+msgid "AP 지뢰 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/miner-at"
+msgid "대전차 지뢰 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/nco"
+msgid "Feldwebel [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/nco_asst"
+msgid "부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/nco_asst_sa"
+msgid "부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/osttrupp_1"
+msgid "오스틀레기오네어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/osttrupp_2"
+msgid "오스틀레기오네어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pilot"
+msgid "조종사 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_1"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_2"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_3"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_4"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_at"
+msgid "피오니어 대전차 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_mgun"
+msgid "피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_mgun_ammo_carrier"
+msgid "피오니어 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_mgun_asst"
+msgid "피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_sl"
+msgid "피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_sl_asst"
+msgid "피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_flame"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_mg"
+msgid "판처피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_mg_ammo_carrier"
+msgid "판처피오니어 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_mg_asst"
+msgid "판처피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_rifle"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_rifle_gren"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_rifle_mine"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_sl"
+msgid "판처피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_pio_sl_asst"
+msgid "판처피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_recon_mg"
+msgid "판처 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_recon_mg_asst"
+msgid "판처 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_recon_rifle"
+msgid "판처 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_recon_sl"
+msgid "판처 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_recon_sl_asst"
+msgid "판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/recon_mg"
+msgid "아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/recon_mg_asst"
+msgid "아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/recon_rifle"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/recon_sl"
+msgid "아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/recon_sl_asst"
+msgid "아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/rifleman_1"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/rifleman_2"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/rifleman_3"
+msgid "소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/scout_1"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/scout_2"
+msgid "아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/signaller"
+msgid "포병 통신병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/smg_1"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/smg_2"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/smg_3"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/smg_mkb"
+msgid "기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sniper"
+msgid "저격수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sniper_elite"
+msgid "산악 저격수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturmp_1"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturmp_2"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturmp_3"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tank_commander"
+msgid "전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tank_commander_ace"
+msgid "에이스 전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tank_commander_stug"
+msgid "전차 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tankman"
+msgid "전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tankman_ace"
+msgid "에이스 전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tankman_stug"
+msgid "전차병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_mg"
+msgid "베테랑 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_mg_asst"
+msgid "베테랑 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_nco"
+msgid "베테랑 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_nco_asst"
+msgid "베테랑 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_rifle"
+msgid "베테랑 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_sa"
+msgid "베테랑 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_mg"
+msgid "정예 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_mg_ammo"
+msgid "정예 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_mg_asst"
+msgid "정예 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_rifle"
+msgid "정예 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_sl"
+msgid "정예 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_sl_asst"
+msgid "정예 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/elite_sl_smg"
+msgid "정예 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/ersatz_rifle"
+msgid "보충 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/ersatz_sl"
+msgid "보충 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/ersatz_sl_asst"
+msgid "보충 부사수 지휘자 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_pio_mg"
+msgid "팔쉬름피오니어 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_pio_mg_ammo"
+msgid "팔쉬름피오니어 기관총 탄약수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_pio_mg_asst"
+msgid "팔쉬름피오니어 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_pio_rifle"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_pio_sl"
+msgid "팔쉬름피오니어 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_pio_sl_asst"
+msgid "팔쉬름피오니어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_recon_mg"
+msgid "팔쉬름 아우프클레러 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_recon_mg_asst"
+msgid "팔쉬름 아우프클레러 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_recon_rifle"
+msgid "팔쉬름 아우프클레러 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_recon_sl"
+msgid "팔쉬름 아우프클레러 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_recon_sl_asst"
+msgid "팔쉬름 아우프클레러 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/fallsch_rifle_marksman"
+msgid "팔쉬름예거 지정사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/feldg_mg"
+msgid "기관총 사수 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_flame"
+msgid "그로스도이칠란트 피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_mg"
+msgid "그로스도이칠란트 피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_mg_ammo"
+msgid "그로스도이칠란트 피오니어 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_mg_asst"
+msgid "그로스도이칠란트 피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_rifle"
+msgid "그로스도이칠란트 피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_rifle_gren"
+msgid "그로스도이칠란트 피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_rifle_mine"
+msgid "그로스도이칠란트 피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_sl"
+msgid "그로스도이칠란트 피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gd_pio_sl_asst"
+msgid "그로스도이칠란트 피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_pio_mg"
+msgid "게비르크스피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_pio_mg_ammo"
+msgid "게비르크스피오니어 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_pio_mg_asst"
+msgid "게비르크스피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_pio_rifle"
+msgid "게비르크스피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_pio_sl"
+msgid "게비르크스피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_pio_sl_asst"
+msgid "게비르크스피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_recon_mg"
+msgid "게비르크스 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_recon_mg_asst"
+msgid "게비르크스 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_recon_rifle"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_recon_sl"
+msgid "게비르크스 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/gebirgs_recon_sl_asst"
+msgid "게비르크스 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_stoss_mg"
+msgid "해병 슈토스트루프 기관총 사수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_stoss_mg_asst"
+msgid "해병 슈토스트루프 기관총 부사수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_stoss_rifle"
+msgid "해병 슈토스트루프 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_stoss_sl"
+msgid "해병 슈토스트루프 분대장 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/marine_stoss_sl_asst"
+msgid "해병 슈토스트루프 부분대장 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mg_26t"
+msgid "기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/mg_asst_26t"
+msgid "기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_at_rifle"
+msgid "피오니어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pioneer_builder"
+msgid "피오니어 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_builder"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pioneer_builder"
+msgid "피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_mg"
+msgid "판처쉬체 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_mg_ammo"
+msgid "판처쉬체 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_mg_asst"
+msgid "판처쉬체 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_pio_at_rifle"
+msgid "판처피오니어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_recon_mg"
+msgid "판처 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_recon_mg_asst"
+msgid "판처 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_recon_rifle"
+msgid "판처 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_recon_sl"
+msgid "판처 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_recon_sl_asst"
+msgid "판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_rifle"
+msgid "판처쉬체 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_sl"
+msgid "판처쉬체 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_sl_asst"
+msgid "판처쉬체 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/pz_sl_smg"
+msgid "판처쉬체 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sl"
+msgid "분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sl_asst"
+msgid "부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/sl_smg"
+msgid "분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_mg"
+msgid "베테랑 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_mg_ammo"
+msgid "베테랑 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_mg_asst"
+msgid "베테랑 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_rifle"
+msgid "베테랑 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_sl"
+msgid "베테랑 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_sl_asst"
+msgid "베테랑 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/early/vet_sl_smg"
+msgid "베테랑 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_mg"
+msgid "정예 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_mg_ammo"
+msgid "정예 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_mg_asst"
+msgid "정예 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_rifle"
+msgid "정예 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_sl"
+msgid "정예 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_sl_asst"
+msgid "정예 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/elite_sl_smg"
+msgid "정예 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/convict_mg"
+msgid "죄수 기관총 사수 [펠트겐다르메리]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/ersatz_rifle"
+msgid "보충 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/ersatz_sl"
+msgid "보충 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/ersatz_sl_asst"
+msgid "보충 부사수 지휘자 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_pio_mg"
+msgid "팔쉬름피오니어 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_pio_mg_asst"
+msgid "팔쉬름피오니어 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_pio_rifle"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_pio_rifle_grenadier"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_pio_sl"
+msgid "팔쉬름피오니어 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_pio_sl_asst"
+msgid "팔쉬름피오니어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_recon_mg"
+msgid "팔쉬름 아우프클레러 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_recon_mg_asst"
+msgid "팔쉬름 아우프클레러 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_recon_mg_asst_gren"
+msgid "팔쉬름 아우프클레러 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_recon_mg34"
+msgid "팔쉬름 아우프클레러 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_recon_sl"
+msgid "팔쉬름 아우프클레러 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_recon_sl_asst"
+msgid "팔쉬름 아우프클레러 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/fallsch_rifle_marksman"
+msgid "팔쉬름예거 지정사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_flame"
+msgid "그로스도이칠란트 피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_mg"
+msgid "그로스도이칠란트 피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_mg_asst"
+msgid "그로스도이칠란트 피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_rifle"
+msgid "그로스도이칠란트 피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_sa"
+msgid "그로스도이칠란트 피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_sl"
+msgid "그로스도이칠란트 피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gd_pio_sl_asst"
+msgid "그로스도이칠란트 피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_pio_mg"
+msgid "게비르크스피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_pio_mg_asst"
+msgid "게비르크스피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_pio_rifle"
+msgid "게비르크스피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_pio_sl"
+msgid "게비르크스피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_pio_sl_asst"
+msgid "게비르크스피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_recon_mg"
+msgid "게비르크스 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_recon_mg_asst"
+msgid "게비르크스 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_recon_rifle"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_recon_sl"
+msgid "게비르크스 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_recon_sl_asst"
+msgid "게비르크스 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/gebirgs_recon_smg"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mg_26t"
+msgid "기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mg_asst_26t"
+msgid "기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/mgun_42"
+msgid "기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pioneer_builder"
+msgid "피오니어 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_mg_asst"
+msgid "판처쉬체 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_mg34"
+msgid "판처쉬체 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_mg42"
+msgid "판처쉬체 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_rifle"
+msgid "판처쉬체 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_sa"
+msgid "판처쉬체 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_sl"
+msgid "판처쉬체 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_sl_asst"
+msgid "판처쉬체 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/pz_sl_asst_sa"
+msgid "판처쉬체 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/recon_mg42"
+msgid "아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/rifle_gren"
+msgid "소총 유탄병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sl"
+msgid "분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sl_asst"
+msgid "부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sl_asst_sa"
+msgid "부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_flame"
+msgid "슈투름피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_mg"
+msgid "슈투름피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_mg_asst"
+msgid "슈투름피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_rifle"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_rifle_gren"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_rifle_mine"
+msgid "슈투름피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_sl"
+msgid "슈투름피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/sturm_pio_sl_asst"
+msgid "슈투름피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tank_commander_pzjag"
+msgid "전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tank_commander_scout"
+msgid "전차 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tankman_pzjag"
+msgid "전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/tankman_scout"
+msgid "전차병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/mid/vet_mg_ammo"
+msgid "베테랑 기관총 탄약수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_1"
+msgid "블라우 군단 기관단총 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_2"
+msgid "블라우 군단 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_3"
+msgid "블라우 군단 소총수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_4"
+msgid "블라우 군단 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_5"
+msgid "블라우 군단 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_6"
+msgid "블라우 군단 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/blau_sl_asst"
+msgid "블라우 군단 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_at"
+msgid "베글라이트그레나디어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_rifle"
+msgid "베글라이트그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_rifle_pzf"
+msgid "베글라이트그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sl"
+msgid "베글라이트그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sl_asst"
+msgid "베글라이트그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sl_asst_stg"
+msgid "베글라이트그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitgren_sl_stg"
+msgid "베글라이트그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_flame"
+msgid "베글라이트피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_mg"
+msgid "베글라이트피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_mg_asst"
+msgid "베글라이트피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_rifle"
+msgid "베글라이트피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_rifle_pzf"
+msgid "베글라이트피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_sl_asst_stg"
+msgid "베글라이트피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_sl_stg"
+msgid "베글라이트피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/begleitpio_stg"
+msgid "베글라이트피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/company_com"
+msgid "중대 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/company_com_stg"
+msgid "중대 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/company_hauptfeldwebel"
+msgid "중대 Hauptfeldwebel [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/company_tl"
+msgid "중대 조장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/company_tl_stg"
+msgid "중대 조장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/ersatz_gren_rifle"
+msgid "보충 그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/ersatz_gren_rifle_pzf"
+msgid "보충 그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/ersatz_gren_rifle_pzf2"
+msgid "보충 그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/ersatz_gren_sl"
+msgid "보충 그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/ersatz_gren_sl_asst"
+msgid "보충 그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_rifle"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_rifle_pzf"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_rifle_scope"
+msgid "팔쉬름피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_sl_asst"
+msgid "팔쉬름피오니어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_pio_sl_asst_stg"
+msgid "팔쉬름피오니어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_mg"
+msgid "팔쉬름 아우프클레러 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_mg_asst"
+msgid "팔쉬름 아우프클레러 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_mg_asst_gren"
+msgid "팔쉬름 아우프클레러 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_mg34"
+msgid "팔쉬름 아우프클레러 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_sl"
+msgid "팔쉬름 아우프클레러 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_sl_asst"
+msgid "팔쉬름 아우프클레러 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_sl_asst_fg"
+msgid "팔쉬름 아우프클레러 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_recon_sl_asst_stg"
+msgid "팔쉬름 아우프클레러 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_rifle_pzf"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sa_pzf"
+msgid "팔쉬름예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fallsch_sl_asst_fg"
+msgid "팔쉬름예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_mg_asst_smg"
+msgid "퓌질리어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_sl_asst_sa_scope"
+msgid "퓌질리어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_sl_asst_scope"
+msgid "퓌질리어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_sl_asst_smg"
+msgid "퓌질리어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_smg_pzf"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_smg_pzf2"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/fusilier_stg"
+msgid "퓌질리어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_at"
+msgid "그로스도이칠란트 판처피오니어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_builder"
+msgid "그로스도이칠란트 판처피오니어 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_flame"
+msgid "그로스도이칠란트 판처피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_mg"
+msgid "그로스도이칠란트 판처피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_mg_asst"
+msgid "그로스도이칠란트 판처피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_rifle"
+msgid "그로스도이칠란트 판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_rifle_pzf"
+msgid "그로스도이칠란트 판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_sa"
+msgid "그로스도이칠란트 판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_sl"
+msgid "그로스도이칠란트 판처피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gd_pz_pio_sl_asst"
+msgid "그로스도이칠란트 판처피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_mg"
+msgid "게비르크스 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_mg_asst"
+msgid "게비르크스 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_mg34"
+msgid "게비르크스 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_rifle"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_rifle_pzf"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_rifle_pzf2"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_sl"
+msgid "게비르크스 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_sl_asst"
+msgid "게비르크스 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_sl_asst_smg"
+msgid "게비르크스 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_smg"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_smg_pzf"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gebirgs_recon_smg_pzf2"
+msgid "게비르크스 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_rifle_pzf"
+msgid "그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl_asst"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl_asst_smg"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/gren_sl_asst_sniper"
+msgid "그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/landes_rifle"
+msgid "란데스쉬체 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/landes_sl"
+msgid "란데스쉬체 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/landes_sl_asst"
+msgid "란데스쉬체 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_at"
+msgid "판처 레어 판처피오니어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_builder"
+msgid "판처 레어 판처피오니어 공병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_flame"
+msgid "판처 레어 판처피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_mg"
+msgid "판처 레어 판처피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_mg_asst"
+msgid "판처 레어 판처피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_rifle"
+msgid "판처 레어 판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_rifle_pzf"
+msgid "판처 레어 판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_sa"
+msgid "판처 레어 판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_sl"
+msgid "판처 레어 판처피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_pio_sl_asst"
+msgid "판처 레어 판처피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_mg"
+msgid "판처 레어 판처 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_mg_asst"
+msgid "판처 레어 판처 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_rifle"
+msgid "판처 레어 판처 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_rifle_pzf"
+msgid "판처 레어 판처 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_sl"
+msgid "판처 레어 판처 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_sl_asst"
+msgid "판처 레어 판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_sl_asst_sa"
+msgid "판처 레어 판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_sl_asst_stg"
+msgid "판처 레어 판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pz_recon_sl_stg"
+msgid "판처 레어 판처 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_at"
+msgid "판처 레어 판처그레나디어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_mg"
+msgid "판처 레어 판처그레나디어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_mg_asst"
+msgid "판처 레어 판처그레나디어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_rifle"
+msgid "판처 레어 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_rifle_pzf"
+msgid "판처 레어 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_rifle_pzf2"
+msgid "판처 레어 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sa"
+msgid "판처 레어 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sa_pzf"
+msgid "판처 레어 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sl"
+msgid "판처 레어 판처그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sl_asst"
+msgid "판처 레어 판처그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_stg"
+msgid "판처 레어 판처그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sturm_sl"
+msgid "판처 레어 판처 슈투름그레나디어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sturm_sl_asst"
+msgid "판처 레어 판처 슈투름그레나디어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sturm_stg"
+msgid "판처 레어 판처 슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sturm_stg_pzf"
+msgid "판처 레어 판처 슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lehr_pzgren_sturm_stg_pzf2"
+msgid "판처 레어 판처 슈투름그레나디어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_fus_sl_asst"
+msgid "루프트바페 퓌질리어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_mg"
+msgid "루프트바페 예거 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_mg_asst"
+msgid "루프트바페 예거 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_mg34"
+msgid "루프트바페 예거 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_rifle"
+msgid "루프트바페 예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_rifle_gren"
+msgid "루프트바페 예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_rifle_pzf"
+msgid "루프트바페 예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_sa"
+msgid "루프트바페 예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_sl"
+msgid "루프트바페 예거 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_sl_asst"
+msgid "루프트바페 예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_sl_asst_scope"
+msgid "루프트바페 예거 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_jag_smg"
+msgid "루프트바페 예거 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_builder"
+msgid "루프트바페 피오니어 공병 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_mg"
+msgid "루프트바페 피오니어 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_mg_asst"
+msgid "루프트바페 피오니어 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_mg34"
+msgid "루프트바페 피오니어 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_rifle"
+msgid "루프트바페 피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_rifle_pzf"
+msgid "루프트바페 피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_sa"
+msgid "루프트바페 피오니어 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_sl"
+msgid "루프트바페 피오니어 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_pio_sl_asst"
+msgid "루프트바페 피오니어 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_mg"
+msgid "루프트바페 아우프클레러 기관총 사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_mg_asst"
+msgid "루프트바페 아우프클레러 기관총 부사수 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_rifle"
+msgid "루프트바페 아우프클레러 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_rifle_gren"
+msgid "루프트바페 아우프클레러 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_rifle_pzf"
+msgid "루프트바페 아우프클레러 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_sl"
+msgid "루프트바페 아우프클레러 분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/lw_recon_sl_asst"
+msgid "루프트바페 아우프클레러 부분대장 [루프트바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/marine_mg"
+msgid "해병 기관총 사수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/marine_mg_asst"
+msgid "해병 기관총 부사수 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/marine_rifle_pzf"
+msgid "해병 [크릭스마리네]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/platoon_nco"
+msgid "소대 지휘자 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/platoon_nco_stg"
+msgid "소대 지휘자 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/platoon_officer"
+msgid "소대 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/platoon_officer_stg"
+msgid "소대 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_at"
+msgid "판처피오니어 대전차 보병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_flame"
+msgid "판처피오니어 화염방사병 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_gren"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_mg"
+msgid "판처피오니어 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_mg_asst"
+msgid "판처피오니어 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_mine"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_pzf"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_rifle"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_rifle_gren"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_sa"
+msgid "판처피오니어 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_sl"
+msgid "판처피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_sl_asst"
+msgid "판처피오니어 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_pio_sl_stg"
+msgid "판처피오니어 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_mg"
+msgid "판처 아우프클레러 기관총 사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_mg_asst"
+msgid "판처 아우프클레러 기관총 부사수 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_rifle"
+msgid "판처 아우프클레러 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_sl_asst_rifle"
+msgid "판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_sl_asst_sa"
+msgid "판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_sl_asst_stg"
+msgid "판처 아우프클레러 부분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_sl_rifle"
+msgid "판처 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/pz_recon_sl_smg"
+msgid "판처 아우프클레러 분대장 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tank_commander_pzjag"
+msgid "전차 지휘관 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tank_commander_scout"
+msgid "전차 지휘관 [헤어]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tankman_pzjag"
+msgid "전차병 [판처바페]"
+msgstr ""
+
+msgctxt "desc/human/mp/ger/late/tankman_scout"
+msgid "전차병 [헤어]"
+msgstr ""

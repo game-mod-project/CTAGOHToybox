@@ -1,0 +1,829 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Soviet Gear\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/stuff/grenade_ammo_box"
+msgid "보급 상자"
+msgstr ""
+
+msgctxt "desc/stuff/a4_hat_usn"
+msgid "A4 정비사 모자"
+msgstr ""
+
+msgctxt "desc/stuff/n3_hat_usn"
+msgid "N-3 작업모"
+msgstr ""
+
+msgctxt "desc/stuff/utility_cap_usn"
+msgid "1944 작업모"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_m1_usn_green"
+msgid "M1 열대 커버"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_m1_usn_camo"
+msgid "M1 열대 커버"
+msgstr ""
+
+msgctxt "desc/stuff/campaign_hat_usn_chad"
+msgid "1912 캠페인 모자"
+msgstr ""
+
+msgctxt "desc/stuff/campaign_hat_usn"
+msgid "1912 캠페인 모자"
+msgstr ""
+
+msgctxt "desc/stuff/m8_smoke"
+msgid "AN-M8 백색 연막"
+msgstr ""
+
+msgctxt "desc/stuff/m18_smoke"
+msgid "M18 연막 신호탄"
+msgstr ""
+
+msgctxt "desc/stuff/grenade_mk1"
+msgid "Mk I 수류탄"
+msgstr ""
+
+msgctxt "desc/stuff/grenade_mk2"
+msgid "Mk II 수류탄"
+msgstr ""
+
+msgctxt "desc/stuff/mkiiia2_offensive"
+msgid "Mk IIIA2 수류탄"
+msgstr ""
+
+msgctxt "desc/stuff/us_incendiary"
+msgid "AN-M14 소이 수류탄"
+msgstr ""
+
+msgctxt "desc/stuff/airborne_equipment"
+msgid "T-5 공수 낙하산 키트"
+msgstr ""
+
+msgctxt "desc/stuff/airborne_equipment_001"
+msgid "탄창 파우치"
+msgstr ""
+
+msgctxt "desc/stuff/ammo_us"
+msgid "탄창 조끼 & 가방"
+msgstr ""
+
+msgctxt "desc/stuff/ammo_us2"
+msgid "탄창 파우치 & 가방"
+msgstr ""
+
+msgctxt "desc/stuff/flamer_tank"
+msgid "화염방사기 연료통"
+msgstr ""
+
+msgctxt "desc/stuff/franz-ammo1"
+msgid "탄약 멜빵"
+msgstr ""
+
+msgctxt "desc/stuff/mgun_ammo"
+msgid "탄띠"
+msgstr ""
+
+msgctxt "desc/stuff/radio_usa"
+msgid "SCR-300 휴대용 무전기"
+msgstr ""
+
+msgctxt "desc/stuff/radio_usa_short"
+msgid "SCR-300 휴대용 무전기"
+msgstr ""
+
+msgctxt "desc/stuff/us_equipmento"
+msgid "장교 장비"
+msgstr ""
+
+msgctxt "desc/stuff/us_haversack"
+msgid "US 하버색"
+msgstr ""
+
+msgctxt "desc/stuff/us_haversack_shovel"
+msgid "US 하버색 + 삽"
+msgstr ""
+
+msgctxt "desc/stuff/us_marine_haversack"
+msgid "USMC 하버색 + 삽"
+msgstr ""
+
+msgctxt "desc/stuff/us_musette"
+msgid "US 머셋 백"
+msgstr ""
+
+msgctxt "desc/stuff/us_rocketbag"
+msgid "바주카 로켓 가방"
+msgstr ""
+
+msgctxt "desc/stuff/usa_tankcrew_leader"
+msgid "전차장 장비"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment2"
+msgid "USMC 장비"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment3"
+msgid "USMC 장비"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment4"
+msgid "USMC 장비"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipment5"
+msgid "USMC 장비"
+msgstr ""
+
+msgctxt "desc/stuff/usmc_equipmentm"
+msgid "의료 가방"
+msgstr ""
+
+msgctxt "desc/stuff/cigarette"
+msgid "담배"
+msgstr ""
+
+msgctxt "desc/stuff/glasses"
+msgid "둥근 안경"
+msgstr ""
+
+msgctxt "desc/stuff/sunglasses"
+msgid "에비에이터 선글라스"
+msgstr ""
+
+msgctxt "desc/stuff/pickaxe_little_david"
+msgid "대형 공병 곡괭이"
+msgstr ""
+
+msgctxt "desc/stuff/shovel_engineer_swe"
+msgid "대형 공병삽"
+msgstr ""
+
+msgctxt "desc/stuff/cap_mia"
+msgid "챙모자 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_mia"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngc"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngclocal"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap2_min"
+msgid "챙모자 [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap2_rngc_police"
+msgid "챙모자 [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_google"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_google"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngc_police"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_rngc_police_radio"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_min"
+msgid "챙모자 [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap2_rngc"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_ija"
+msgid "챙모자 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_ijn"
+msgid "챙모자 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_peta_1"
+msgid "야전모 [PETA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_cha_radio"
+msgid "야전모 [GMIN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_mia1"
+msgid "야전모 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_mia2"
+msgid "야전모 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngc"
+msgid "야전모 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngc_cavalry"
+msgid "털모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngclocal"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngclocal_elite7-9"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_rngclocal_hd"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap2_rngclocal"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap2_rngc"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap3_rngc"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc_gilly"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc_goggles"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap4_rngc_radio"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_camo"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_flap"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_flap_camo"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_camo"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_radio"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_camo"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_flap"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_google"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_nco"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_radio"
+msgid "야전모 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_para"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_para_flap"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_peta_cap_1"
+msgid "야전모 [PETA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_peta_cap_2"
+msgid "야전모 [PETA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_recruit"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_recruit_flap"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcaptest_rngc"
+msgid "야전모 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldhat1_mia"
+msgid "챙모자 [MIA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldhat4_min_sailor"
+msgid "챙모자 [수병]"
+msgstr ""
+
+msgctxt "desc/stuff/hachimaki"
+msgid "Hachimaki"
+msgstr ""
+
+msgctxt "desc/stuff/hachimaki_navy"
+msgid "Hachimaki [해군]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_mia"
+msgid "헬멧 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_mia_nlf"
+msgid "헬멧 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_rngc"
+msgid "헬멧 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet2_mia"
+msgid "헬멧 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet1_rngc"
+msgid "헬멧 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet3_mia"
+msgid "헬멧 [GMIA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet3_rngc"
+msgid "헬멧 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet4_snlf1_paratrooper"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_92"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_92_ijn"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_92_snlf"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_medic"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_flap"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_net_camo"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_net_flap"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_net_flap"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_pilot_helmet"
+msgid "일본 조종사 헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_sailor_cap"
+msgid "수병 모자"
+msgstr ""
+
+msgctxt "desc/stuff/jap_tanker_helmet"
+msgid "일본 전차 헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_flap"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_hachimaki"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_hachimaki_flap"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_flap"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_hachimaki"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_hachimaki_flap"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_flap"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_mask"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_flap"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_net"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet2_rngc"
+msgid "헬멧 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ija_net_camo"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_cover_ijn_net_camo"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_fra_m35_tank"
+msgid "전차 헬멧 [FRA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_flap"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_guard"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_hachimaki"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_hachimaki_flap"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_camo"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_hachimaki"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ija_net_hachimaki_flap"
+msgid "헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_medic"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_net"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_camo"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_ijn_flap"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_para_ija"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_para_ijn"
+msgid "헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/helmet_para_ops"
+msgid "헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment1"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment1_marine"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment2"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment3"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment4"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment5"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_equipment6"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_gas_mask"
+msgid "일본 방독면 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/japanese_radio"
+msgid "일본 무전기 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_at_backpack"
+msgid "일본 대전차 보급 상자 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_hmg_backpack"
+msgid "일본 기관총 보급 상자 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear1"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear2"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear3"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear3_b"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear3_c"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear4"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_officer_full"
+msgid "일본 부사관 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_nco"
+msgid "일본 부사관 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_nco_full"
+msgid "일본 부사관 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_katana_officer"
+msgid "일본 부사관 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_konbaku_backpack"
+msgid "일본 배낭 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_type35_sabre"
+msgid "일본 Type 35 군도 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear_giretsu"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1mgun"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1mgun_heavy1"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1rifle"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1rifle_heavy1"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1smg"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jpsnlf_gear1smg_heavy1"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/kamikaze_bomb"
+msgid "일본 가미카제 폭약 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_nco"
+msgid "하계 헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ija"
+msgid "하계 헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ija_flap"
+msgid "하계 헬멧 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ija_hachimaki"
+msgid "하계 헬멧 + Hachimaki [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ijn_hachimaki"
+msgid "하계 헬멧 + Hachimaki [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ijn_flap"
+msgid "하계 헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/sunhelmet_ijn"
+msgid "하계 헬멧 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/tokusi_vest"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/tokusi_vest_off"
+msgid "일본 장비 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/tortoise_armor"
+msgid "일본 거북 갑옷 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/translationoficap1_rngc"
+msgid "챙모자 [PNA]"
+msgstr ""
+
+msgctxt "desc/stuff/trench_armor_ija"
+msgid "일본 방탄복 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/trench_armor_ija_full"
+msgid "일본 방탄복 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/jp_gear5"
+msgid "일본 장비 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/jap_officer_cap"
+msgid "일본 장교 모자 [IJN]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap1_mengjiang"
+msgid "야전모 [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap2_mengjiang"
+msgid "야전모 [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap3_mengjiang"
+msgid "야전모 [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ijn_google"
+msgid "야전모 [IJA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_ija_google"
+msgid "야전모 [INJ]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldhat1_mia2"
+msgid "야전모 [MIA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap1_mengjiang"
+msgid "야전모 [MNA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldcap_recruit_ina"
+msgid "야전모 [INA]"
+msgstr ""
+
+msgctxt "desc/stuff/fieldturban_ina"
+msgid "터번 [INA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_fra_beret_tank"
+msgid "베레모 [FRA]"
+msgstr ""
+
+msgctxt "desc/stuff/cap_fra_beret_tank_officer"
+msgid "베레모 [FRA]"
+msgstr ""
+
+msgctxt "desc/stuff/uk_helm_brodie_ina"
+msgid "강철 헬멧 Mk. II [INA]"
+msgstr ""

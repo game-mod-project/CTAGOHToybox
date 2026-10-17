@@ -1,0 +1,270 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_12_hill400)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/04-usa/1944_12_hill400/capture400"
+msgid "400 고지를 점령하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/date"
+msgid "1944년 12월 16일 · 독일 휘르트겐 숲, 400 고지"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/hold400"
+msgid "고지를 사수하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/killmortars"
+msgid "박격포를 파괴하라!"
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/04-usa/1944_12_hill400/marker_progress"
+msgid "정밀 포격 지점 5곳 중 %1%곳 표시 완료."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/name"
+msgid "400 고지"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/name_big"
+msgid "400 고지"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/01"
+msgid "자, 여기 왔다. 아름다운 가을빛과 올해 첫눈이 축복처럼 내리는데, 빌어먹을 독일 놈들이 가득한 언덕이 앞을 막고 있군."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/02"
+msgid "400 고지를 점령할 거다, Lieutenant. 내 부하들이 독일군 방어를 시험해서 전선의 틈을 찾을 것이다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/03"
+msgid "그만해라! 저 M12들은 독일군을 박살 내려고 와 있는 거다. 좋다, 제군들. 400 고지를 정찰하고 포격 좌표를 보내라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/04"
+msgid "잘 들어라!! 해 지기 전에 저 고지를 점령하고 싶다. 가자! 증원과 포병을 쓸 수 있다. 레인저가 앞장선다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/05"
+msgid "독일 놈들이 농장 단지 옆에 Flak 포를 두고 우리 항공기를 위협한다. 저걸 제거하면 우리 조종사들이 하늘에서 불벼락을 내릴 수 있다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/06"
+msgid "잘했다, 제군들! 고지는 우리 것이다. 놈들이 싸운 걸 보면 순순히 포기할 것 같지 않다. 방어선을 구축하고 반격에 대비해라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/07"
+msgid "숲을 지날 때는 적을 잘 살펴라. 뒤에 저항 거점을 남겨 둘 수도 있다. 독일 놈들은 진지를 위장하는 법을 안다. 넓게 퍼져서 일대를 천천히 샅샅이 훑어라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/08"
+msgid "정신 차려라! 적의 반격이다! 전선을 사수해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/09"
+msgid "좋아, 독일 놈들이 아직 끝난 것 같지 않다. 담당 구역을 살펴라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/10"
+msgid "놈들이 도망친다! 퍼부어라!!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/11"
+msgid "자, 아직 숲을 벗어난 게 아니다. 이 문서들을 보면 독일군 사령부는 이 고지를 매우 높이 평가한다. 틀림없이 되찾으려 할 것이다. 참호를 파야 한다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/12"
+msgid "공병이 도착했다. 지뢰를 깔고 방어 진지를 구축해라. 이 독일 놈들이 우리가 이 빌어먹을 곳을 차지하느라 겪은 만큼 고생하게 만들고 싶다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/13"
+msgid "시간이 많지 않다. 가장 뻔한 곳에 지뢰를 깔고, 독일 놈들이 나타날 때 참호 밖에 있다가 잡히지 마라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/14"
+msgid "포탄이 온다!!!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/15"
+msgid "독일군 박격포다, 조심해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/16"
+msgid "독일군 제6공수연대가 전투에 투입됐다는 보고가 들어왔다. 놈들의 최정예다! 나머지 놈들과 함께 지옥으로 보내 줘라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/17"
+msgid "날씨가 크게 나빠졌으니 항공 지원은 잊어야겠다..."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/18"
+msgid "젠장! 놈들이 기동 야포를 끌고 왔다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/airstrike1"
+msgid "P47 접근 중이다. 아군 비행기를 조심해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/airstrike2"
+msgid "정신 차려라, 조종사들이 저 진지를 치러 오고 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/airstrike3"
+msgid "공습 진행 중이다. 천사들이 어깨 위에 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/flak1"
+msgid "Flak 포 격파! Flak 포 격파!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/flak2"
+msgid "Flak 포 무력화, 잘했다 제군들!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator/flak3"
+msgid "적 대공포 격파!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator2/01"
+msgid "보기 싫은 광경이군요... 이제 어떻게 하죠, Sir?"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator2/02"
+msgid "돌아서 갈 수도 있습니다, Sir... 세상에, 눈이 오기 시작했어요. 정말 아름다운 날이군요."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator2/03"
+msgid "자, 제군들, 이제 볕 좀 쬘 시간이다, 알겠나? 제5기갑사단이 베르크슈타인에서 우리를 필요로 한다. 오늘 여러분과 함께 나치를 몇 놈 잡아서 영광이었다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/narrator2/unable"
+msgid "목표가 사거리 밖입니다. 새 좌표를 주셔야 합니다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/outro_completed"
+msgid "훌륭했다, 제군들! 이 승리는 압도적인 열세에도 침착함을 잃지 않은 미 레인저의 끈기를 보여 준다. 이 고지는 첫눈에 난공불락처럼 보였지만 결국 점령했다. 사람들은 이 전투를 오래 기억할 것이다. 오늘 지휘관으로서 확실히 이름을 남겼다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/outro_failed"
+msgid "어쩌다 최악의 하루가 되어 버렸다. 이 고지를 점령하지 못하면 다음 전투에서 우리의 유일한 이점이 사라진다. 제2레인저에게 이런 일이 일어나선 안 된다. 다시 시도해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/place"
+msgid "제2레인저 대대"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/player/01"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/player/02"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/recon_hill"
+msgid "강습 전에 고지를 정찰하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/recon_markers"
+msgid "포병용 표지를 설치하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_105mm"
+msgid "105mm M3"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_30cal"
+msgid "M1919A4 .30 cal"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_50cal"
+msgid "M2 .50 cal"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_6pounder"
+msgid "57mm M1"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_assaultrangers"
+msgid "돌격 레인저"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_m12"
+msgid "M12 155mm 포격"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_m15"
+msgid "M15A1"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_mortar"
+msgid "81mm M1 Mortar"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_officer"
+msgid "장교"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_p47"
+msgid "P47D-22 공습"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_rangers"
+msgid "레인저"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_scott"
+msgid "M8 GMC Scott"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_sniper"
+msgid "저격수"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/reinf_supply"
+msgid "CCKW (보급)"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/story"
+msgid " 1944년 12월. 유럽에 온 지 반년이 되었다. 진격은 꾸준했고 연합군의 진격은 막을 수 없어 보인다.\n\n 오늘 너는 D데이 때처럼 고지대의 적 진지를 점령한다. 다가올 휘르트겐 숲 전투에서 우리에게 고지를 안겨 줄 중요한 언덕이다. 지도에는 베르크슈타인 부근의 400 고지로 표시되어 있다. 먼저 적 진지의 정보를 모은 뒤 이 고지를 어떻게 점령할지 정해야 한다. 지역을 장악하면 진지를 보강하고, 무선 통신을 설치하고, 있을 수 있는 반격에 대비해 방어해야 한다. 무선 연락이 닿아야만 포병 지원을 쓸 수 있다. 가능할 때마다 최대한 활용해라.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/task_aa"
+msgid "독일군 대공포를 제거해 공습을 사용할 수 있게 하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hill400/timer"
+msgid "방어 준비:"
+msgstr ""

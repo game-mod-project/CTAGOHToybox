@@ -1,0 +1,517 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1945_03_24_varsity)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/name"
+msgid "옛것의 해방"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/name_big"
+msgid "옛것의 해방"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/story"
+msgid "오늘 군사 역사상 최대 규모의 공수 작전이 벌어진다. 독일 라인강 동쪽에 공수부대 병력 약 17,000명이 투하된다.\n\n당신은 방금 베젤 앞의 적 방어선 뒤에 착륙했다. 예정된 라인강 도하를 지원하기 위해 이 지역을 확보하라는 명령을 받았다. 도하는 오늘 세 곳에서 이루어진다. 당신은 베젤 일대의 적 활동을 교란해 도하 지점에 대한 적의 공격을 막아야 한다.\n\n당신의 부대인 제6공수사단은 맨 처음 파도에 속한다. 인근 철도역을 확보하고 다음 파도가 올 길을 열어라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/date"
+msgid "1945년 3월 24일 · 독일 함민켈른 인근"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/place"
+msgid "제6공수사단"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/outro_completed"
+msgid "우리는 명예를 되찾았고, 라인강 도하 작전은 대성공이다. 이 일격을 독일 놈들이 어떻게 받아내는지 두고 보자! \n\n'최고의 순간' 캠페인을 플레이해 주셔서 감사합니다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/outro_failed"
+msgid "이런, 전혀 예상과 다르게 됐군. 적을 강 도하 지점에서 떼어 놓았어야 했는데, 실패한 탓에 그곳은 아마 피바다가 될 것이다. 재정비해서 다시 도전하라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_01"
+msgid "Captain, 살아 있습니까?!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_02"
+msgid "일어나, 샘! 놈들이 밀고 들어오고 있어!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_03"
+msgid "자리를 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_04"
+msgid "탄약이 떨어져 간다... 이 폐차장을 오래 지키진 못하겠어."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_05"
+msgid "독일 놈 전차가 온다! 젠장... 우리한테 PIAT 없지?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_06"
+msgid "우리 꼬마 Locust가 지원하러 왔다! 딱 맞춰 왔군. 계속 버텨라! 승무원, 저 전차를 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_07"
+msgid "명중이다! 덤벼라, 독일 놈들아, 너희 전부에게 줄 포탄은 얼마든지 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_08"
+msgid "좋아, 일단 안전하다. 지도에서 우리 위치를 확인해 보자..."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_wounded_01"
+msgid "군의관은 대체 뭘 하는 거야? 가서 부상병들을 도와라, 다들 한 발은 무덤에 들어가 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_wounded_02"
+msgid "제발, 수줍은 간호사처럼 굴지 마라! 부상병을 돌봐라! 오래 못 버틴다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_wounded_03"
+msgid "좋아, 이제 다시 싸우자! 글라이더 근처에 상자가 있을 거다, 탄약을 보충해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_wounded_04"
+msgid "제길, 살릴 수 있었는데!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part01_pl_armor_destroyed"
+msgid "Locust가 파괴됐다! 이제 우리만 독일 놈들과 맞서야 할 것 같다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_01"
+msgid "믿기 힘들겠지만 이번에는 조종사들이 술을 마시지 않았는지 우리를 정확히 목표 지점에 내려 줬다. 독일군 대공 진지를 파괴하고 근처 철도역을 확보해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_02"
+msgid "바로 앞에 첫 번째 대공 진지가 있다. 저걸 제거해야 글라이더가 무사히 장비를 떨어뜨려 줄 수 있다. 먼저 치우는 게 맞다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_03"
+msgid "지도가 아직 맞다면 철도역에도 대공포가 더 있을 거다. 어떻게 하는지 알지, 친구들."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_04"
+msgid "다른 중대가 우리 서쪽에 착륙했다. 우리의 작은 공세를 지원해 줄 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_05"
+msgid "저 표지판들이 좀 신경 쓰이는군. 다행히 글라이더의 보급 상자에 지뢰 탐지기가 있으니 식은 죽 먹기다. 다만 해체에는 시간이 꽤 걸린다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_06"
+msgid "사격 중지, 제발 사격 중지! 항복하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_gun_destroyed_01"
+msgid "포 하나 격파! 다음 포로 가자!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_gun_destroyed_02"
+msgid "두 포 모두 파괴했다! 곧 착륙 지점에서 증원이 올 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_pl_see_88"
+msgid "조심해, 북쪽 철도역에 88mm가 있다! 당분간 놈의 시야를 피해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_near_train"
+msgid "저것 봐라, 저 구축전차는 아직 작동할 것 같다. 그런데 어떻게 가까이 가지?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_crewed_locomotive"
+msgid "내가 기관사가 되는 게 꿈이었다고 말한 적 있나? 사실 아니었어. 이걸 좋아하면서 지루해하지 않는 사람들이 아직도 믿기지 않는다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_linked_wagon"
+msgid "이번엔 진급시켜 줘야 할 텐데..."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part02_crewed_secret"
+msgid "세상에, 이거 멀쩡하잖아! 포만 빼고. 좋은 수리 도구만 있으면 그건 어떻게든 되겠지."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_01"
+msgid "있잖아, 난 저놈들이 좀 부럽다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_02"
+msgid "무슨 뜻이야?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_03"
+msgid "저 독일 놈들 말이야. 살아서 집에 갈 확률이 우리보다 높잖아."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_04"
+msgid "이 녀석 좀 봐... 열여섯도 안 돼 보이는데. 내가 그 나이 때는 버려진 건물 창문에 새총을 쏘고 순경한테서 도망 다녔지... 이 불쌍한 녀석은 반 시간 전까지 빌어먹을 소총을 들고 뛰어다녔다니... 세상이 어떻게 되려는 거냐?.."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_05"
+msgid "네 나이 때라고? 로마 제국과 백년 전쟁 사이 어디쯤을 말하는 거야?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_06"
+msgid "그만해라, 알겠어? 사실 그렇게 늙지 않았어. 얼마 전에 서른둘이 됐다. 정확히는 오늘 아침에."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_07"
+msgid "농담이지?! 그걸 내내 숨기고 있었다고? 생일 축하한다, 나의 늙은 친구."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_08"
+msgid "고맙다, 친구."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_09"
+msgid "Captain, 방금 미 제17사단에서 연락이 왔습니다! 다리는 확보했지만 독일 놈들이 아주 세게 밀어붙이고 있답니다. 우리에게 지원을 요청하고 있습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_10"
+msgid "좋아, 제군들, 축하는 미룬다. Sergeant Shelton, 자네는 여기 남아서 무기를 든 독일 놈이 한 명도 철도역에 접근하지 못하게 해라. 우리가 없는 동안 마실 것도 찾아보고. 나는 2소대를 데리고 양키 진지로 가겠다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/pause_11"
+msgid "알겠습니다. 행운을 빕니다. 저쪽에서 만납시다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_01"
+msgid "양키들이 이설강의 다리를 점령했지만 독일 놈들이 반격하고 있다. 서둘러 GI들을 지원해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_02"
+msgid "흩어져서 측면을 살펴라! 지상군이 곧 도착할 거다. 자리를 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_03"
+msgid "철도역 놈들만큼 협조적이진 않군, 안 그래?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_04"
+msgid "뭐야... 젠장, 저놈들 어디서 나왔어?! 남쪽 측면을 봐라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_05"
+msgid "전원! 후퇴해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_ally_mgun_crew_dead"
+msgid "누가 이 중기관총 좀 맡아라, 기관총 사수가 쓰러졌다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_armor_01"
+msgid "조심해라, 동쪽에서 적 전차다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_armor_02"
+msgid "남동쪽을 봐라! 전차가 또 왔다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_armor_03"
+msgid "또 전차다! 큰길이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part03_mortar_firing"
+msgid "독일 박격포가 동쪽에서 우리를 쏘고 있다! 제발 빨리 침묵시켜라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/tankman_01"
+msgid "맙소사, 그 창고에서 뭘 찾고 있는 거야, 맥? 와서 좀 도와라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/tankman_02"
+msgid "이 구두쇠들아, 그렇게까지 욕심 부리진 않겠지, 친구들?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/tankman_03"
+msgid "그 빌어먹을 병을 너 혼자 다 비웠을 리가 없잖아!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/tankman_04"
+msgid "제발, 또 그 짓을 하고 있다면 다른 독일 놈들과 함께 썩게 내버려 둘 테다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/tankman_05"
+msgid "어이, 안녕 내 소중한 친구, 만나서 반갑다. 안타깝지만 오래는 못 있어. 그래도 아주 좋은 시간을 함께 보낼 거다, 약속하지. 그래, 간다고!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/tankman_06"
+msgid "맙소사, 내가 무슨 죄를 지었다고 이런 벌을 받는 거냐? 그 상자 치우고 와서 도와라, 제기랄!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_01"
+msgid "엔진이 안 걸린다, 고치는 걸 도와줘야겠다. 불쌍한 공수부대원들이 아직 독일 놈들 사격을 받고 있고, 우리는 최대한 빨리 그 다리에 가야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_02"
+msgid "너희들 나한테 너무 매정해, 알아? 난 최선을 다해서... 그걸 뭐라고 하더라?.. 음... 에스프리 드 코르! 그래, 에스프리 드 코르! 이 승무원들한테 정성을 쏟아서 우리 모두 즐겁게 지내려고 했다고."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_03"
+msgid "그런데 내가 너희를 위해 하는 일을 아무도 알아주지 않았어. 내 말은... 내가 세상에서 제일 잘생긴 놈은 아니라고 들었지만... 그래도... 아무도?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_04"
+msgid "이봐, 들어 봐... 네 술은 너 말고는 단 한 모금도 마신 사람이 없어."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_05"
+msgid "그렇지 않아."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_06"
+msgid "맙소사... 입 닥치고 일이나 해라, 맥!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_07"
+msgid "좋아, 제군들, 출발 준비 끝이다! 전차 승무원은 위치로! 보병은 전원 탑승! 우리 공수부대를 구하러 갈 시간이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_08"
+msgid "적 기갑 발견! 200야드, 북동쪽! 전 차량, AP 장전! 운전병은 전차 잔해 뒤에서 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_09"
+msgid "북쪽에서 표적 접근! 사수, 선회해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_10"
+msgid "북서쪽에서도 전차가 더 보인다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_11"
+msgid "대체 어디서 나오는 거냐?!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_12"
+msgid "북쪽에서 적 전차 추가, 준비해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_13"
+msgid "아마 저게 마지막이었던 것 같다. 훌륭했다, 제군들. 계속 이설 다리로 이동한다. 수리할 곳이 있으면 지금 해라. 돌아올 길은 없다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_14"
+msgid "아직 살아 있다! 도와줘야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_15"
+msgid "남서쪽에 우선 표적! Tiger 세 대다! 전원, APDS 장전!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_16"
+msgid "마지막에 누가 왔는지 봐라! 자리를 지켜라, 물러서지 않는다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_17"
+msgid "적 기갑 표적이 전부 파괴됐다! 훌륭했다, 제군들."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_18"
+msgid "놈들이 물러난다! 이럴 수가... 해냈다... 우리가 해냈다, 친구들..."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_01"
+msgid "그러니까 우리의 전쟁도 여기서 끝나는 것 같군, 친구. 내가 부탁한 비밀 물품은 찾았나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_02"
+msgid "글쎄... 유감이지만 못 찾았습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_03"
+msgid "몹시 실망이다, 플레처 경. 다음 진급은 내 시체를 넘어야 얻게 될 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_04"
+msgid "Lieutenant Leonard Hall이오, 이쪽이 나의 보잘것없는 중대요. 그쪽 부대는 정말 잘해 주었소."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_05"
+msgid "Captain Samuel Rowse는 당신 부하들에게 죽는 날까지 고마워할 겁니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_06"
+msgid "다들 풀이 죽어 보이는군. 기운 낼 방법을 알 것 같다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_07"
+msgid "맥, 이리 와라! 찾은 물건도 가져오고!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_08"
+msgid "Sir, 외람되지만... 저희는 쉬는 게 필요한 것 같습니다. 오늘 정말 힘든 하루였고..."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_09"
+msgid "이런... 우리 속마음을 읽으셨군요, Lieutenant!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_10"
+msgid "Sir, 찾은 걸 나누겠다고 말씀드렸죠. 독일 놈들이 집에서 만든 술을 소개합니다, 친구들. 맛은 기침 시럽 같지만 속은 확실히 따뜻해집니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_11"
+msgid "음... 뭐라고 하셨습니까?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_12"
+msgid "이쪽은 Private MacKenzie, 그냥 맥이라고 부릅니다. 먼 북쪽 마을 출신의 좋은 녀석이죠. 걱정 마십시오, 어차피 우리도 대부분 이 녀석 말을 못 알아듣습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_13"
+msgid "그건 문제없을 겁니다. 몇 잔 마시면 다들 스코틀랜드 말을 하게 될 테니."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_14"
+msgid "좋아, 독일 놈들 술 맛이 어떤지 보자. 건배!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_15"
+msgid "건배, 친구들!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_16"
+msgid "건배!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/cutscene/outro_17"
+msgid "원샷!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_01"
+msgid "전차 격파! 사수, 다음 표적 처리해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_02"
+msgid "좋은 명중이다, 불타고 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_03"
+msgid "표적 파괴!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_04"
+msgid "끝장났다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_05"
+msgid "기갑 하나 더 처치!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_06"
+msgid "판처 한 대 더 격파!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_07"
+msgid "좋은 명중!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_friendly_destroyed_01"
+msgid "앳킨슨의 전차가 불타고 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_friendly_destroyed_02"
+msgid "존슨! 그를 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_friendly_destroyed_03"
+msgid "맥레온의 승무원이 당했다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_at_guns"
+msgid "매복이다! 대전차포, 북쪽 170야드!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_at_inf"
+msgid "조심해, 조심해, 서쪽에서 대전차 보병이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/ui/hint_locomotive"
+msgid "기관차를 운전하는 동안 다른 화차에 접근하면 <c(B29557)>연결</c>할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/ui/hint_switch"
+msgid "보병 유닛을 선택하고 선로 전환기를 우클릭하면 <c(B29557)>선로 전환기</c>의 방향을 바꿀 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/ui/scenario_tankman_text"
+msgid "같은 시각. 이설 다리에서 2km 떨어진 곳."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/ui/scenario_tankman_text_empty"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/01_landing"
+msgid "독일군의 반격에서 살아남아라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/02_antiair"
+msgid "증원을 받으려면 착륙 지점 근처의 대공 진지를 확보하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/03_station"
+msgid "철도역을 확보해 독일군 보급선을 끊어라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/04_bridge"
+msgid "이설 다리에서 미 제17공수사단을 지원하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/05_schnapps"
+msgid "슈납스 상자를 Comet의 인벤토리에 넣어라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/06_repair"
+msgid "Comet 전차를 수리하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/07_advance"
+msgid "공수부대를 도우러 이설 다리 쪽으로 전진하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/08_comet"
+msgid "Comet 전차는 반드시 살아남아야 한다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/09_tanks"
+msgid "독일군의 매복에서 살아남아라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/10_remains"
+msgid "남은 독일군을 제거하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/opt01_heal"
+msgid "부상당한 공수부대원을 치료하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret01"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret01_completed"
+msgid "비밀 목표: 무임승차 - 철도 퍼즐을 풀고 전차를 노획하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret02"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1945_03_24_varsity/tasks/secret02_completed"
+msgid "비밀 목표: 숙취 - 얻을 수 있는 슈납스 상자를 모두 Comet의 인벤토리에 넣어라"
+msgstr ""

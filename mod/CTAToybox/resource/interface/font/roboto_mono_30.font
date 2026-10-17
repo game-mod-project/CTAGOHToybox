@@ -1,0 +1,7 @@
+{font_atlas
+    {name "roboto_mono"}
+    {size 30}
+    {height 50}
+    {style 0}
+    {binary_data "main_30.fnt"}
+}

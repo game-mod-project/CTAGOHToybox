@@ -1,0 +1,121 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1942_11-ger_mamayev_kurgan)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/name"
+msgid "마마예프 쿠르간"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/name_big"
+msgid "마마예프 쿠르간"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/story"
+msgid "마마예프 쿠르간 전투 - 스탈린그라드 전투. 마마예프 쿠르간을 쥔 쪽이 전투 전체를 좌우한다. 어떤 대가를 치르더라도 이 언덕을 차지해야 한다!\n\n목표:\n - 요새화된 언덕 꼭대기를 점령하라.\n - 반격을 막아내라."
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/place"
+msgid "스탈린그라드"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/date"
+msgid "1942년 9월"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/outro_completed"
+msgid "임무 완수! 언덕의 요새를 장악했으니 이곳에서 전투 전체를 지휘할 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/outro_failed"
+msgid "임무 실패다. 이 공격은 다시 해야 한다. 소련군이 언덕을 계속 쥐게 둘 수는 없다. 기회가 오는 대로 다시 공격하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/outro_failed_hq"
+msgid "임무 실패! - 적이 본부를 점령했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/mission_hq"
+msgid "야전 본부를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/mission_attack"
+msgid "언덕 꼭대기의 방어 시설을 점령하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/flag_capture_status"
+msgid "아군이 소련군 진지 %1%/7곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/narrator_start0"
+msgid "전장에 온 것을 환영한다, Major! 이곳이 우리 야전 본부다. 반드시 지켜야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/narrator_start1"
+msgid "카메라드, 임무는 적 방어선을 돌파하고 마마예프 쿠르간 언덕을 차지하는 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/narrator_start2"
+msgid "이 언덕을 쥔 자가 스탈린그라드 전투를 쥔다. 꼭대기를 장악해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/narrator_start3"
+msgid "목표 확보를 시작하라. 그동안 쓸 수 있도록 증원을 더 준비하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/allied_enemy_near_hq"
+msgid "카메라덴! 소련군이 우리 야전 본부에 접근했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/player_enemy_near_hq"
+msgid "지휘소를 사수해야 한다! 겁쟁이와 배신자가 설 자리는 없다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/allied_enemyarty"
+msgid "볼가 강 건너에서 소련 포격이 날아온다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1942_11-ger_mamayev_kurgan/hq_bonus"
+msgid "Major! 이제 공습을 요청할 수 있습니다."
+msgstr ""

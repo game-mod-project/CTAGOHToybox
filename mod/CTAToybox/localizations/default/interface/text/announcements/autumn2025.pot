@@ -1,0 +1,17 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA - Gates of Hell (announcements)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "announce_autumn2025"
+msgid "전장에 돌아온 것을 환영한다, 병사들이여. 업데이트 60이 도착한다!\n\n<c(f5d167)>멀티플레이</c> 메모리 사용량과 로딩 시간을 최적화했고, <c(f5d167)>애니메이션</c> 개선, 차량의 <c(f5d167)>후진</c> 제어 신기능 등을 더했다!\n\n 변함없는 성원에 감사드린다."
+msgstr ""

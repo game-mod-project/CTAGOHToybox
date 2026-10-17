@@ -1,0 +1,146 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_09_yugoslavia)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/date"
+msgid "1944년 9월 25일 · 유고슬라비아 베오그라드 지역 카르파티아 산맥"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/name"
+msgid "카르파티아의 혼란 <c(a655af)>[DLC]</c>"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/name_big"
+msgid "카르파티아의 혼란"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/01"
+msgid "흠. 지휘소가 너무 조용하군... 수비대는 어디 있지?"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/02"
+msgid "검문소를 지키던 아군에게 무슨 일이 생긴 게 틀림없다. 이 일대에는 유고슬라비아 파르티잔이 득실거린다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/03"
+msgid "먼저 게비르크스예거 부대와 접촉해 검문소가 안전한지 확인해야 한다. 조심해라, 이 지역에서는 유고슬라비아 파르티잔과 붉은 군대 선봉이 모두 활동 중이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/04"
+msgid "젠장! 파르티잔 발견! 우리가 온 걸 안다, 지옥을 보여 줘라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/05"
+msgid "한눈팔 시간이 없다. 철수 중인 부대가 많다, 힘을 합쳐 아군이 도착할 때까지 이 지역을 확보해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/06"
+msgid "잘했다, Soldaten! 검문소는 우리 것이다. 계곡 전체를 내려다보는 전략 요충지다. 어떤 대가를 치르더라도 장악해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/07"
+msgid "제군, 보급품 철수 호송대 한 대가 계곡에 도착했다. 남쪽 철수 지점까지 호위해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/08"
+msgid "목적지까지 데려가서 적의 매복으로부터 지켜라! 이 일대에서는 소련군과 유고슬라비아군이 모두 활동한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/09"
+msgid "보급 차량이 한계까지 과적이다! 이 무게로는 도로로만 안전하게 이동할 수 있다. "
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/10"
+msgid "연합군 폭격기가 기반 시설을 두들기고 있다! 다리가 박살 나고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/11"
+msgid "소련군이다! 적 소련 병력도 섞여 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/12"
+msgid "훌륭하다. 보급품은 안전한 곳으로 향하고 있다. 이제 우선순위는 후위를 지키는 것이다. 소련군이 뒤에서 압박하고 있다, 우리가 막아낼 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/13"
+msgid "기갑 종대의 마지막 잔여 병력이 방어선 안으로 들어왔다. 그 병력을 지휘해 수송대가 안전해질 때까지 소련군을 묶어 둬라! 중앙 검문소를 어떤 대가를 치르더라도 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator_gebirgs/01"
+msgid "브란덴부르거! 무사해서 다행입니다! 유고슬라비아 파르티잔이 검문소를 점령했고 지휘관도 잃었습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator_gebirgs/02"
+msgid "주의! 뭔가 들립니다... 폭격기가 머리 위에 있는 것 같습니다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator_gebirgs/03"
+msgid "지평선에 먼지입니다! 기동 부대가 남동쪽에서 들어옵니다!"
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/obj_progress"
+msgid "트럭 3대 중 %1%대가 철수 지점에 도착했다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/outro_completed"
+msgid "아슬아슬했다! 부대를 안전한 곳으로 이끌며 지휘 능력을 보여 주었다. 후퇴는 당신의 방식이 아닐지 몰라도, 적어도 훗날 다시 싸울 수 있게 됐다. 이제 어떻게든 아군 전선으로 돌아가야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/outro_failed"
+msgid "쓰라린 패배다. 많은 목숨과 귀중한 장비를 잃었다. 사단의 재편성 명령도 더는 이행할 수 없다. 소련군의 베오그라드 진군은 너무나 쉬워질 것이다! "
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/place"
+msgid "F 집단군 잔여 병력"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/story"
+msgid " 유고슬라비아의 독일군은 곤경에 처해 있다. 불가리아와 루마니아는 더 이상 동맹이 아니며, 소련의 공세가 독일군을 강하게 압박한다. 게다가 유고슬라비아 전역에서 티토의 유고슬라비아 파르티잔과도 맞서야 한다. 소련의 공세는 다뉴브강을 재빨리 건너 독일 주력을 둘로 가르며 시작된다. 사방에서 저항과 공격을 받으며 전투는 점점 어려워진다. 모든 전투는 사방의 포위망에서 필사적으로 벗어나 남쪽의 우군 지역으로 가려는 독일군 부대 주변에서 벌어진다.\n\n 이 임무에서 당신은 올트강의 다리들을 확보한다. 전진해 다리 주변 지역을 점령해라. 북쪽에서 트럭이 올 때까지 이 지역을 지켜라. 트럭을 안전한 곳으로 안내하라. 그곳은 이 구역을 벗어나는 남쪽 끝까지 이어진 도로 위에 있다. 무슨 일이 일어나든 목표는 병력 대다수를 온전히 이곳에서 빼내는 것이다.  \n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task1"
+msgid "게비르크스예거와 브란덴부르거 부대를 합류시켜라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task2"
+msgid "교차로 검문소를 확보하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task3"
+msgid "수송 호송대를 목적지까지 무사히 철수시켜라. 최소 트럭 세 대가 통과해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task4"
+msgid "붉은 군대의 공격으로부터 검문소를 방어하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task_sec1"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task_sec1_complete"
+msgid "비밀 목표 #1: 파르티잔 은신처를 찾아라."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task_sec2"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/task_sec2_complete"
+msgid "비밀 목표 #2: 지하 광산 갱도를 찾아라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1944_09_yugoslavia/timer"
+msgid "수송대가 안전해질 때까지 검문소를 지켜라:"
+msgstr ""

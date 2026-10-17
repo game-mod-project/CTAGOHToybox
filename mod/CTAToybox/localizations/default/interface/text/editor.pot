@@ -1,0 +1,429 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms (editor)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "missioneditor/zone"
+msgid "구역 [5]"
+msgstr ""
+
+msgctxt "anchormanager/evaluate"
+msgid "평가"
+msgstr ""
+
+msgctxt "anchormanager/add"
+msgid "추가"
+msgstr ""
+
+msgctxt "missioneditor/waypoint"
+msgid "경유점 [4]"
+msgstr ""
+
+msgctxt "anchormanager/radius"
+msgid "반경..."
+msgstr ""
+
+msgctxt "anchormanager/anchorradius"
+msgid "앵커의 반경을 입력하십시오"
+msgstr ""
+
+msgctxt "missioneditor/squad"
+msgid "분대 [3]"
+msgstr ""
+
+msgctxt "missioneditor/unload"
+msgid " 하차 "
+msgstr ""
+
+msgctxt "anchormanager/gridcellsize"
+msgid "앵커의 격자 칸 크기를 입력하십시오"
+msgstr ""
+
+msgctxt "landmanager/terrain"
+msgid "지형"
+msgstr ""
+
+msgctxt "landmanager/blue"
+msgid "B:"
+msgstr ""
+
+msgctxt "anchormanager/seed"
+msgid "시드..."
+msgstr ""
+
+msgctxt "anchormanager/show"
+msgid "표시"
+msgstr ""
+
+msgctxt "anchormanager/update"
+msgid "갱신"
+msgstr ""
+
+msgctxt "finddialog/actor"
+msgid "액터 uid:"
+msgstr ""
+
+msgctxt "landmanager/remove"
+msgid "제거"
+msgstr ""
+
+msgctxt "landmanager/ocean"
+msgid "바다"
+msgstr ""
+
+#, boost-format
+msgctxt "missioneditor/save_mission_exist"
+msgid "임무 '%1%'이(가) 이미 있습니다. 덮어쓰겠습니까?"
+msgstr ""
+
+msgctxt "finddialog/entity"
+msgid "엔티티 id:"
+msgstr ""
+
+#, boost-format
+msgctxt "mapeditor/save_map"
+msgid "지도 '%1%'을(를) 다음 이름으로 저장:"
+msgstr ""
+
+msgctxt "mapeditor/clip"
+msgid "클립 [3]"
+msgstr ""
+
+msgctxt "finddialog/find"
+msgid "찾기"
+msgstr ""
+
+msgctxt "mapeditor/land"
+msgid "육지 [2]"
+msgstr ""
+
+msgctxt "landmanager/fill"
+msgid "채우기"
+msgstr ""
+
+msgctxt "finddialog/title"
+msgid "찾기"
+msgstr ""
+
+msgctxt "landmanager/add"
+msgid "추가"
+msgstr ""
+
+msgctxt "finddialog/waypoint"
+msgid "경유점 uid:"
+msgstr ""
+
+msgctxt "mapeditor/mesh_group"
+msgid "메시 그룹 [5]"
+msgstr ""
+
+msgctxt "mapeditor/choose"
+msgid "지도 선택"
+msgstr ""
+
+msgctxt "landmanager/tesselation"
+msgid "테셀레이션"
+msgstr ""
+
+msgctxt "landmanager/create"
+msgid "생성"
+msgstr ""
+
+msgctxt "missioneditor/simulate_on"
+msgid " <s(8)c(00ff00)>시작 "
+msgstr ""
+
+msgctxt "landmanager/green"
+msgid "G:"
+msgstr ""
+
+msgctxt "mapeditor/mission_lost"
+msgid "임무 데이터가 사라집니다. 계속하겠습니까?"
+msgstr ""
+
+msgctxt "mapeditor/entity"
+msgid "엔티티 [1]"
+msgstr ""
+
+msgctxt "mapeditor/game"
+msgid "-게임-"
+msgstr ""
+
+msgctxt "landmanager/red"
+msgid "R:"
+msgstr ""
+
+msgctxt "missioneditor/camera"
+msgid "카메라 [7]"
+msgstr ""
+
+msgctxt "landmanager/save"
+msgid "저장"
+msgstr ""
+
+msgctxt "landmanager/sharp"
+msgid "선명"
+msgstr ""
+
+msgctxt "landmanager/soft"
+msgid "부드러움"
+msgstr ""
+
+msgctxt "mapeditor/map"
+msgid "지도 : "
+msgstr ""
+
+msgctxt "landmanager/color"
+msgid "색상"
+msgstr ""
+
+#, c-format
+msgctxt "zonemanager/zonename_already_used"
+msgid "구역 이름 '%s'은(는) 이미 사용 중입니다"
+msgstr ""
+
+msgctxt "landmanager/height"
+msgid "높이"
+msgstr ""
+
+msgctxt "mapeditor/saveas"
+msgid "다른 이름으로 저장..."
+msgstr ""
+
+msgctxt "landmanager/polygon"
+msgid "폴리곤"
+msgstr ""
+
+msgctxt "landmanager/texture"
+msgid "텍스처"
+msgstr ""
+
+#, boost-format
+msgctxt "mapeditor/save_map_exist"
+msgid "지도 '%1%'이(가) 이미 있습니다. 덮어쓰겠습니까?"
+msgstr ""
+
+msgctxt "landmanager/grass"
+msgid "풀"
+msgstr ""
+
+msgctxt "mapeditor/edifice"
+msgid "건축물 [4]"
+msgstr ""
+
+msgctxt "missioneditor/as"
+msgid "' 이름:"
+msgstr ""
+
+msgctxt "mapeditor/data_lost"
+msgid "저장하지 않은 데이터가 모두 사라집니다. 계속하겠습니까?"
+msgstr ""
+
+msgctxt "mapeditor/anchor"
+msgid "앵커"
+msgstr ""
+
+msgctxt "mapeditor/load"
+msgid "불러오기..."
+msgstr ""
+
+msgctxt "mapeditor/reload"
+msgid "다시 불러오기"
+msgstr ""
+
+msgctxt "missioneditor/game"
+msgid "-게임-"
+msgstr ""
+
+msgctxt "mapeditor/new"
+msgid "새로 만들기"
+msgstr ""
+
+msgctxt "mapeditor/checkout"
+msgid "체크아웃"
+msgstr ""
+
+msgctxt "mapeditor/undocheckout"
+msgid "체크아웃 취소"
+msgstr ""
+
+msgctxt "mapeditor/save"
+msgid "저장"
+msgstr ""
+
+msgctxt "mapeditor/untitled"
+msgid "<<untitled>"
+msgstr ""
+
+msgctxt "missioneditor/view"
+msgid "보기 [1]"
+msgstr ""
+
+msgctxt "missioneditor/actor"
+msgid "엔티티 [2]"
+msgstr ""
+
+msgctxt "missioneditor/trigger"
+msgid "트리거 [6]"
+msgstr ""
+
+msgctxt "missioneditor/cover"
+msgid "엄폐물 [8]"
+msgstr ""
+
+msgctxt "missioneditor/environment"
+msgid "환경 [9]"
+msgstr ""
+
+msgctxt "missioneditor/choose"
+msgid "임무 선택"
+msgstr ""
+
+msgctxt "missioneditor/exit"
+msgid " 종료 "
+msgstr ""
+
+msgctxt "missioneditor/load"
+msgid " 불러오기... "
+msgstr ""
+
+msgctxt "missioneditor/mission"
+msgid " 임무 : "
+msgstr ""
+
+msgctxt "missioneditor/no_script"
+msgid "스크립트 없음"
+msgstr ""
+
+msgctxt "missioneditor/path"
+msgid "경로"
+msgstr ""
+
+msgctxt "missioneditor/player"
+msgid "플레이어"
+msgstr ""
+
+msgctxt "missioneditor/reload"
+msgid " 다시 불러오기 "
+msgstr ""
+
+msgctxt "missioneditor/checkout"
+msgid "체크아웃"
+msgstr ""
+
+msgctxt "missioneditor/undocheckout"
+msgid "체크아웃 취소"
+msgstr ""
+
+msgctxt "missioneditor/save"
+msgid " 저장 "
+msgstr ""
+
+msgctxt "missioneditor/save_mission"
+msgid "임무 '"
+msgstr ""
+
+msgctxt "inventorybrowser/ammo"
+msgid "탄약"
+msgstr ""
+
+msgctxt "missioneditor/saveas"
+msgid " 다른 이름으로 저장... "
+msgstr ""
+
+msgctxt "missioneditor/script_name"
+msgid "스크립트 이름: "
+msgstr ""
+
+msgctxt "zonemanager/globalwpangle"
+msgid "각도:"
+msgstr ""
+
+msgctxt "missioneditor/simulate_off"
+msgid " <s(8)c(00ffff)>종료 "
+msgstr ""
+
+msgctxt "missioneditor/untitled"
+msgid "<<untitled>"
+msgstr ""
+
+msgctxt "missioneditor/confirm_globals_reload"
+msgid "전역 옵션이 변경되었습니다. 변경 사항을 적용하려면 지금 다시 불러오겠습니까?"
+msgstr ""
+
+msgctxt "scenecommon/finish"
+msgid "종료"
+msgstr ""
+
+msgctxt "scenecommon/simulate"
+msgid "시뮬레이션"
+msgstr ""
+
+msgctxt "tagdialog/add"
+msgid "추가"
+msgstr ""
+
+msgctxt "tagdialog/remove"
+msgid "제거"
+msgstr ""
+
+msgctxt "tagdialog/tags"
+msgid "선택 항목의 태그"
+msgstr ""
+
+msgctxt "zonemanager/add"
+msgid "추가"
+msgstr ""
+
+msgctxt "zonemanager/current"
+msgid "현재:"
+msgstr ""
+
+msgctxt "zonemanager/delete"
+msgid "DELETE"
+msgstr ""
+
+msgctxt "zonemanager/enter_zone"
+msgid "구역 이름을 입력하십시오"
+msgstr ""
+
+msgctxt "zonemanager/globalwplocation"
+msgid "직접:"
+msgstr ""
+
+msgctxt "zonemanager/globalwpname"
+msgid "이름:"
+msgstr ""
+
+msgctxt "zonemanager/newcircle"
+msgid "새 원"
+msgstr ""
+
+msgctxt "zonemanager/newpoly"
+msgid "새 다각형"
+msgstr ""
+
+msgctxt "zonemanager/points"
+msgid "점:"
+msgstr ""
+
+msgctxt "zonemanager/radius"
+msgid "반경:"
+msgstr ""
+
+msgctxt "inventorybrowser/all"
+msgid "모든 물품"
+msgstr ""
+
+msgctxt "inventorybrowser/weapon"
+msgid "무기"
+msgstr ""

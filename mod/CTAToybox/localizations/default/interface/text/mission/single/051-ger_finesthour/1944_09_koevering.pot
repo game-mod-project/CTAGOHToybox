@@ -1,0 +1,169 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_09_koevering)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/01"
+msgid "건방진 영국 놈들... 자기들이 무슨 일을 당할지 꿈에도 모르는군."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/02"
+msgid "그럴 시간 없다. 증원이 오는 중이니, 우리는 고속도로를 끊고 최대한 오래 놈들을 지연시키면 된다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/03"
+msgid "호송대 사이에 틈이 생긴 것 같다. 더 오는 차량이 안 보인다. 고속도로 건너편의 저택을 점령하자. 버티기 괜찮은 곳 같다. 지금이 기회다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/04"
+msgid "Richtig. 저택을 확보하고 놈들의 보급선을 끊었다. 곧 놈들이 돌아올 것이다. 증원도 곧 도착할 거다. Soldaten! 참호를 파고 자리를 지킬 준비를 해라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/05"
+msgid "그레나디어 부대가 증원으로 와서 고속도로 옆에 전진 초소를 설치했다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/06"
+msgid "우리 캄프그루페의 나머지가 서쪽에서 막 도착했다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/07"
+msgid "이제 꽤 강력한 포도 갖췄다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/08"
+msgid "무전 차량과 포병 관측병도 있다. 관측병을 잃으면 더는 포병 지원을 받을 수 없다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/09"
+msgid "우리 주위에 영국군과 미군 부대가 깔려 있다. 놈들은 분명 고속도로를 되찾으려 할 것이다. 남은 시간에 방어 준비를 해라. 반드시 지켜야 한다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/10"
+msgid "무전 차량을 은폐해 둬라. 파손되면 포병 지원을 받을 수 없다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/11"
+msgid "더는 막을 수 없다. 놈들에게 전차가 너무 많다! 후퇴해서 재집결해야 한다.."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/12"
+msgid "전 병력을 서쪽으로 이동시켜라. 왔던 길로 빠져나간다. 시간이 얼마 없다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/01"
+msgid "Verdammt... 저 종대는 눈이 닿는 데까지 이어져 있어... 트럭, 전차, 별게 다 있다..."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/02"
+msgid "돌아가서 보고할까? 사령부는 놈들에게 전차가 많다는 걸 알아야 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/03"
+msgid "놈들에게 증원이 있다! 동쪽에서 차량이 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/04"
+msgid "점점 어두워지고 있다... 저 멀리 뭔가 움직인다! 판처다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/05"
+msgid "탄약이 떨어져 간다! 오래 막을 수 없다! 너무 많다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/06"
+msgid "물러나라! 내가 엄호하겠다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/01"
+msgid "우리가 올 줄은 꿈에도 모르는군. 열병식이라도 하듯 행군하고 있어."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/02"
+msgid "별로 주의를 기울이지 않는 것 같다. 진입하기 전에 순찰대부터 제거해야 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/03"
+msgid "도망친다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/04"
+msgid "그레나디어들이 이미 북동쪽 측면에 개인호를 팠다. 우리는 큰길 주변에 방어를 집중해야 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/05"
+msgid "포격이 날아온다! 점점 가까워지고 있다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[reinforcements]/artillery"
+msgid "포병 사격"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[reinforcements]/skip_button"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[scenario_text]/transition_time"
+msgid "30분 뒤..."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_01"
+msgid "고속도로를 끊고 저택을 장악하라"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_02"
+msgid "전방위 방어 진지를 준비하라"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_03"
+msgid "영국군 트럭이 고속도로 북단에 도달하지 못하게 하라 (아군 병사 최소 3명이 생존해야 한다)"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_04"
+msgid "전 병력을 이끌고 서쪽으로 후퇴하라 (병사 최소 3명이 생존해야 한다)"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[tasks]/task_secondary_01"
+msgid "무전 차량을 가동 상태로 유지하라"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[timer]/timer01"
+msgid "다음 영국군 호송대까지 예상 시간"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/name"
+msgid "고속도로 차단"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/name_big"
+msgid "고속도로 차단"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/outro_completed"
+msgid "첫 타격은 성공했지만 압도적인 적 기갑부대를 막아낼 수는 없었다. 이 구역에서 철수해야 했으나 전투는 끝나지 않았다. 이제 손실을 헤아리고, 재집결해 적을 더 강하게 칠 수 있다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/outro_failed"
+msgid "실망스럽다. 연합군 선봉을 끊을 마지막 기회가 지나가 버렸고, 이제 연합군은 결국 아른험에 도달할 것이다. 가능한 한 빨리 도로를 차지할 재시도를 준비해야 한다. 실패는 용납되지 않는다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/date"
+msgid "1944년 9월 26일 · 네덜란드 노르트브라반트, 쿠버링"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/place"
+msgid "캄프그루페 융비르트"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/story"
+msgid "며칠 전 아른험의 영국 공수부대가 라인강 남쪽으로 후퇴하면서 마켓 가든 작전은 사실상 끝났다. \n\n 원래 계획에서 남은 것은 69번 고속도로(지옥의 고속도로) 주변의 돌출부뿐이며, 연합군은 총력을 다해 이를 붙들고 있다. \n\n 당신의 부대는 쿠버링 근처에 자리 잡고 69번 고속도로 공격을 준비 중인 '캄프그루페 융비르트'의 일부다. \n\n 성공하면 북쪽의 연합군은 고립된다! 고속도로를 점령하고 사수하라!"
+msgstr ""

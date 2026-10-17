@@ -1,0 +1,321 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_10_courland)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1944_10_courland/date"
+msgid "1944년 10월 8일 · 리투아니아, 메멜 남쪽"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/name"
+msgid "포위망을 닫아라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/name_big"
+msgid "포위망을 닫아라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/01"
+msgid "동지들! 오늘은 히틀러 무리에게 결산의 날이다! 영광스러운 제5근위전차군이 메멜 일대의 파시스트 방어선을 돌파하는 동안, 우리는 이 지역을 확보하고 놈들을 차단한다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/02"
+msgid "독일군이 어젯밤 우리를 공격했다. 오늘은 반격해서 이 구역에서 놈들을 몰아내라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/03"
+msgid "적이 많이 있을 것이다. 놈들은 이빨까지 무장하고 있을 테니!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/04"
+msgid "이 지역에는 최고사령부가 점령을 기대하는 핵심 거점이 몇 곳 있다. 임무를 진행하는 대로 자네 지휘 아래 추가 병력과 자원을 돌리겠다. 행운을 빈다, 동지들! 승리를 향해 전진!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/05"
+msgid "루프트바페가 나타날 수 있다. 반드시 대공포의 지원을 받으며 진격해라. 적 대지 공격기가 접근하면 전방 관측병이 알려 줄 것이다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/06"
+msgid "적 대열이 곧 남쪽에서 도착할 것이다! 맞이할 준비를 해라!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task1_complete"
+msgid "잘했다. 이제 보급과 병참 차량을 쓸 수 있다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task2_complete"
+msgid "훌륭하다. 대전차포와 다른 지원 무기를 이제 쓸 수 있다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task3_complete"
+msgid "파시스트들을 마을에서 영원히 몰아냈다! 이제 우리 중전차를 지휘할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task4_complete"
+msgid "영광스러운 붉은 군대를 막을 것은 없다. 이제 자네의 중전차도 막을 것이 없다, 동지. 현명하게 써라, 많지 않다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task5_complete"
+msgid "저 비열한 히틀러 쓰레기들은 더는 이웃 연대를 포격하지 못한다. 동지, 우리 장거리 화기 예비대의 지휘를 맡긴다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task6_complete"
+msgid "이 파시스트들은 훌륭한 무전 장비를 갖췄다. 놈들 장비를 써서 우리 슈투르모비크에 지상 공격 좌표를 중계하겠다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/task7_complete"
+msgid "적 사령부는 우리 것이다. 파시스트 점령의 끝이 가까웠다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/outro_completed"
+msgid "영광스러운 제43군이 메멜 포위를 완료했다. 공세 중 독일 제3판처군 사령부가 유린됐다. 북부집단군은 북쪽 쿠를란트에 성공적으로 갇혔다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/outro_failed"
+msgid "이 실패는 매우 큰 대가를 치르게 될 것이다. 독일군은 이제 제3판처군을 증원하거나 철수시킬 수 있다! 그러면 지금까지보다 훨씬 많은 동지를 잃게 된다. 다음 공격 때는 자네가 선두 제대에 설 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/place"
+msgid "제43군"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/100mm_bs3"
+msgid "100mm BS-3 M1944"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/120mm_pm38"
+msgid "120mm PM-38 M1938"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/122mm_m30"
+msgid "122mm M-30 M1938"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/152mm_ml20"
+msgid "152mm ML-20 M1937"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/203mm_b4"
+msgid "203mm B-4 M1931"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/25mm_72k"
+msgid "25mm 72-K M1940"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/37mm_61k"
+msgid "37mm 61-K M1939"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/45mm_m42"
+msgid "45mm M-42 M1942"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/57mm_zis2"
+msgid "57mm ZIS-2 M1941"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/76mm_m43"
+msgid "76mm OB-25 M1943"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/76mm_zis3"
+msgid "76mm ZIS-3 M1942"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/82mm_bm37"
+msgid "82mm BM-37 M1937"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/85mm_52k"
+msgid "85mm 52-K M1939"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/airstrike"
+msgid "공습"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/assaultsappers"
+msgid "돌격 공병"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/ba64"
+msgid "BA-64B"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/bm13_studebaker"
+msgid "BM-13 Katyusha"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/dshk_stan"
+msgid "DShK M1938 MG"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/gaz_aaa_eng"
+msgid "GAZ-AAA (공병)"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/gaz_aaa_supply"
+msgid "GAZ-AAA (보급)"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/hint"
+msgid "증원을 전장에 배치하라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/inf"
+msgid "보병 분대"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/is1_43"
+msgid "IS-1 M1943"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/is2_44"
+msgid "IS-2 M1944"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/medic"
+msgid "위생병"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:1_1"
+msgid "보병"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:2_1"
+msgid "지원"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:3_1"
+msgid "차량"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:4_1"
+msgid "전차"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/menu:back"
+msgid "메뉴로 돌아가기"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/sniper"
+msgid "저격수"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/su100"
+msgid "SU-100"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/su122"
+msgid "SU-122"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/su152"
+msgid "ISU-152"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/su76"
+msgid "SU-76"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/su85"
+msgid "SU-85"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/t3457_43"
+msgid "T-34/57 M1943"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/t3476_43"
+msgid "T-34/76 M1943"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/t3476_43_flame"
+msgid "OT-34 M1943"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/t3485_44"
+msgid "T-34/85 M1944"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/t60"
+msgid "T-60 M1941"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/t70m"
+msgid "T-70M M1943"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/crew"
+msgid "전차 승무원"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/zis5"
+msgid "ZIS-5 트럭"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/reinforcement/crate"
+msgid "탄약 상자"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/story"
+msgid "북부집단군이 붉은 군대의 막을 수 없는 물결에 휩쓸리고 있다. 스타프카는 메멜 시를 포위하려 한다. 남쪽에서는 제43군이 독일군을 남쪽에서 차단하려고 해안으로 돌진한다. 잔혹한 교전이 벌어지려 한다..."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task1"
+msgid "보급품을 얻기 위해 보급소를 탈환하라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task2"
+msgid "대전차 장비와 지원 무기를 얻기 위해 제1방어선을 점령하라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task3"
+msgid "중전차를 얻기 위해 다우크샤이치아이 마을을 탈환하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task4"
+msgid "아군 중전차의 길을 열기 위해 도로 검문소를 확보하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task5"
+msgid "독일 중포병 진지를 제거하고 중곡사포를 확보하라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task6"
+msgid "아군 공군과 통신하기 위해 적 통신 전초를 점령하라"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1944_10_courland/task7"
+msgid "독일군 사령부와 주변 방어 시설을 공격하라"
+msgstr ""

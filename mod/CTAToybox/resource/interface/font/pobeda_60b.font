@@ -1,0 +1,7 @@
+{font_atlas
+    {name "pobeda"}
+    {size 60}
+    {height 76}
+    {style 1}
+    {binary_data "main_30.fnt"}
+}

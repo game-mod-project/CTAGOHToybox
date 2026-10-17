@@ -1,0 +1,581 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA:GoH (mission)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/multi/1v1_crossing/name"
+msgid "건널목"
+msgstr ""
+
+msgctxt "mission/multi/1v1_farmland/name"
+msgid "농지"
+msgstr ""
+
+msgctxt "mission/multi/1v1_farmstead/name"
+msgid "농가"
+msgstr ""
+
+msgctxt "mission/multi/1v1_forssa_dam/name"
+msgid "포르사 댐 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_hiekalla/name"
+msgid "히에칼라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_jarven/name"
+msgid "야르벤 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_kalinin/name"
+msgid "칼리닌"
+msgstr ""
+
+msgctxt "mission/multi/1v1_nevel/name"
+msgid "네벨"
+msgstr ""
+
+msgctxt "mission/multi/1v1_oryol/name"
+msgid "오룔"
+msgstr ""
+
+msgctxt "mission/multi/1v1_reka/name"
+msgid "레카 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_riverbank/name"
+msgid "강둑"
+msgstr ""
+
+msgctxt "mission/multi/1v1_tormasenvaara/name"
+msgid "토르마센바라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_uran/name"
+msgid "우란"
+msgstr ""
+
+msgctxt "mission/multi/1v1_valley/name"
+msgid "계곡"
+msgstr ""
+
+msgctxt "mission/multi/1v1_volokolamsk/name"
+msgid "동상"
+msgstr ""
+
+msgctxt "mission/multi/1v1_workshop/name"
+msgid "워크숍"
+msgstr ""
+
+msgctxt "mission/multi/1v1_ladoga/name"
+msgid "라도가"
+msgstr ""
+
+msgctxt "mission/multi/2v2_balaton/name"
+msgid "봄의 각성"
+msgstr ""
+
+msgctxt "mission/multi/1v1_balzerweg/name"
+msgid "발처베크 늪"
+msgstr ""
+
+msgctxt "mission/multi/2v2_barrikady/name"
+msgid "바리카디"
+msgstr ""
+
+msgctxt "mission/multi/2v2_blizzard/name"
+msgid "눈보라"
+msgstr ""
+
+msgctxt "mission/multi/2v2_countryside/name"
+msgid "시골"
+msgstr ""
+
+msgctxt "mission/multi/2v2_courtyard/name"
+msgid "안뜰"
+msgstr ""
+
+msgctxt "mission/multi/2v2_fall/name"
+msgid "가을"
+msgstr ""
+
+msgctxt "mission/multi/2v2_gelid/name"
+msgid "혹한"
+msgstr ""
+
+msgctxt "mission/multi/2v2_hakola/name"
+msgid "하콜라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_industry/name"
+msgid "산업 지구"
+msgstr ""
+
+msgctxt "mission/multi/2v2_invanovka/name"
+msgid "이바노프카"
+msgstr ""
+
+msgctxt "mission/multi/2v2_kainuo/name"
+msgid "카이누오 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_karvola/name"
+msgid "카르볼라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_katrinovo/name"
+msgid "카트리노보"
+msgstr ""
+
+msgctxt "mission/multi/2v2_kavichy_factory/name"
+msgid "카비치 공장"
+msgstr ""
+
+msgctxt "mission/multi/2v2_mannerheim/name"
+msgid "만네르헤임 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_monastery/name"
+msgid "수도원"
+msgstr ""
+
+msgctxt "mission/multi/2v2_olshanka/name"
+msgid "올샨카"
+msgstr ""
+
+msgctxt "mission/multi/2v2_shaforovo/name"
+msgid "샤포로보"
+msgstr ""
+
+msgctxt "mission/multi/2v2_stalingrad/name"
+msgid "스탈린그라드"
+msgstr ""
+
+msgctxt "mission/multi/2v2_suburbs/name"
+msgid "교외"
+msgstr ""
+
+msgctxt "mission/multi/2v2_suishka/name"
+msgid "수이시카"
+msgstr ""
+
+msgctxt "mission/multi/2v2_tikhvin/name"
+msgid "티흐빈"
+msgstr ""
+
+msgctxt "mission/multi/2v2_vainikalan/name"
+msgid "바이니칼란 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_ziborovo/name"
+msgid "지보로보"
+msgstr ""
+
+msgctxt "mission/multi/2v2_urban_hell/name"
+msgid "도시의 지옥"
+msgstr ""
+
+msgctxt "mission/multi/3v3_barrikady/name"
+msgid "바리카디"
+msgstr ""
+
+msgctxt "mission/multi/3v3_brozha/name"
+msgid "브로자"
+msgstr ""
+
+msgctxt "mission/multi/3v3_elanskaya/name"
+msgid "옐란스카야"
+msgstr ""
+
+msgctxt "mission/multi/3v3_factory/name"
+msgid "제강소 공장"
+msgstr ""
+
+msgctxt "mission/multi/3v3_glushkovo/name"
+msgid "글루시코보"
+msgstr ""
+
+msgctxt "mission/multi/3v3_hqvistvaara/name"
+msgid "흐비스트바라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_hungary/name"
+msgid "카르파티아"
+msgstr ""
+
+msgctxt "mission/multi/3v3_king_of_the_hill/name"
+msgid "언덕의 왕"
+msgstr ""
+
+msgctxt "mission/multi/3v3_lakeside_airfield/name"
+msgid "호숫가 비행장"
+msgstr ""
+
+msgctxt "mission/multi/3v3_lakhta/name"
+msgid "라흐타 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_mikli/name"
+msgid "미클리 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_natramala/name"
+msgid "나트라말라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_posenov/name"
+msgid "포센노프"
+msgstr ""
+
+msgctxt "mission/multi/3v3_sopheke_quarry/name"
+msgid "소페케 채석장 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_steppe/name"
+msgid "스텝"
+msgstr ""
+
+msgctxt "mission/multi/3v3_trenches/name"
+msgid "지옥의 참호"
+msgstr ""
+
+msgctxt "mission/multi/3v3_wotan/name"
+msgid "보탄"
+msgstr ""
+
+msgctxt "mission/multi/3v3_radusha_airfield/name"
+msgid "라두샤 비행장"
+msgstr ""
+
+msgctxt "mission/multi/3v3_voronezh/name"
+msgid "보로네시"
+msgstr ""
+
+msgctxt "mission/multi/4v4_dubovka/name"
+msgid "두보프카"
+msgstr ""
+
+msgctxt "mission/multi/4v4_grassland/name"
+msgid "초원"
+msgstr ""
+
+msgctxt "mission/multi/4v4_hanhijarvi/name"
+msgid "한히예르비 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_hills/name"
+msgid "구릉"
+msgstr ""
+
+msgctxt "mission/multi/4v4_kirjavala/name"
+msgid "키르야발라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_krasny_bor/name"
+msgid "크라스니 보르"
+msgstr ""
+
+msgctxt "mission/multi/4v4_kylmapuro/name"
+msgid "큘마푸로 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_lysovo/name"
+msgid "리소보"
+msgstr ""
+
+msgctxt "mission/multi/4v4_niemen/name"
+msgid "니멘"
+msgstr ""
+
+msgctxt "mission/multi/4v4_rikila/name"
+msgid "리킬라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_shiryayevo/name"
+msgid "시랴예보"
+msgstr ""
+
+msgctxt "mission/multi/4v4_sikovitsy/name"
+msgid "시코비치"
+msgstr ""
+
+msgctxt "mission/multi/4v4_swamp/name"
+msgid "핀스크 습지"
+msgstr ""
+
+msgctxt "mission/multi/4v4_vahikkala/name"
+msgid "바히칼라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_vitebsk/name"
+msgid "비텝스크"
+msgstr ""
+
+msgctxt "mission/multi/4v4_olkhovatka/name"
+msgid "올호바트카"
+msgstr ""
+
+msgctxt "mission/multi/dcg_a_kalinin/name"
+msgid "칼리닌 비행장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_a_runway/name"
+msgid "활주로"
+msgstr ""
+
+msgctxt "mission/multi/dcg_d_uran/name"
+msgid "나르바"
+msgstr ""
+
+msgctxt "mission/multi/dcg_d_vyazma/name"
+msgid "뱌지마"
+msgstr ""
+
+msgctxt "mission/multi/dcg_dubovka/name"
+msgid "두보프카"
+msgstr ""
+
+msgctxt "mission/multi/dcg_f_barrikady/name"
+msgid "바리카디 공장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_f_bridges_of_lysovo/name"
+msgid "리소보"
+msgstr ""
+
+msgctxt "mission/multi/dcg_f_bykovo/name"
+msgid "브이코보 공장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_f_factory/name"
+msgid "제강소 공장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_f_lazurnyi/name"
+msgid "라주르니"
+msgstr ""
+
+msgctxt "mission/multi/dcg_glushkovo/name"
+msgid "글루시코보"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hanhijarvi/name"
+msgid "한히예르비"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hanhijarvi_winter/name"
+msgid "한히예르비 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hilltop/name"
+msgid "언덕 꼭대기"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hills/name"
+msgid "구릉"
+msgstr ""
+
+msgctxt "mission/multi/dcg_karvola/name"
+msgid "카르볼라"
+msgstr ""
+
+msgctxt "mission/multi/dcg_karvola_winter/name"
+msgid "카르볼라 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kirjavala/name"
+msgid "키르야발라"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kirjavala_winter/name"
+msgid "키르야발라 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kirkenes_airfield/name"
+msgid "키르케네스 비행장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kylmapuro/name"
+msgid "큘마푸로"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kylmapuro_winter/name"
+msgid "큘마푸로 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kymhi_airfield/name"
+msgid "큄히 비행장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_kymhi_airfield_winter/name"
+msgid "큄히 비행장 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_laisniemi/name"
+msgid "라이스니에미"
+msgstr ""
+
+msgctxt "mission/multi/dcg_laisniemi_winter/name"
+msgid "라이스니에미 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_lakhta/name"
+msgid "라흐타"
+msgstr ""
+
+msgctxt "mission/multi/dcg_lakhta_winter/name"
+msgid "라흐타 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_mannerheim/name"
+msgid "만네르헤임"
+msgstr ""
+
+msgctxt "mission/multi/dcg_mikli/name"
+msgid "미클리"
+msgstr ""
+
+msgctxt "mission/multi/dcg_mikli_winter/name"
+msgid "미클리 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_narofominsk/name"
+msgid "나로포민스크"
+msgstr ""
+
+msgctxt "mission/multi/dcg_natramala/name"
+msgid "나트라말라"
+msgstr ""
+
+msgctxt "mission/multi/dcg_natramala_winter/name"
+msgid "나트라말라 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_niemen/name"
+msgid "네만"
+msgstr ""
+
+msgctxt "mission/multi/dcg_pinsk/name"
+msgid "핀스크"
+msgstr ""
+
+msgctxt "mission/multi/dcg_puhoksen/name"
+msgid "푸혹센"
+msgstr ""
+
+msgctxt "mission/multi/dcg_puhoksen_winter/name"
+msgid "푸혹센 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_radekhiv/name"
+msgid "라데프키"
+msgstr ""
+
+msgctxt "mission/multi/dcg_raseiniai/name"
+msgid "라세이니아이"
+msgstr ""
+
+msgctxt "mission/multi/dcg_rasputitsa/name"
+msgid "라스푸티차"
+msgstr ""
+
+msgctxt "mission/multi/dcg_ruetzen/name"
+msgid "뤼첸"
+msgstr ""
+
+msgctxt "mission/multi/dcg_rzhev/name"
+msgid "르제프"
+msgstr ""
+
+msgctxt "mission/multi/dcg_shiryayevo/name"
+msgid "시랴예보"
+msgstr ""
+
+msgctxt "mission/multi/dcg_tormasenvaara/name"
+msgid "토르마센바라"
+msgstr ""
+
+msgctxt "mission/multi/dcg_vainikalan/name"
+msgid "바이니칼란"
+msgstr ""
+
+msgctxt "mission/multi/dcg_vainikalan_winter/name"
+msgid "바이니칼란 겨울"
+msgstr ""
+
+msgctxt "mission/multi/dcg_velikiyeluki/name"
+msgid "벨리키예루키"
+msgstr ""
+
+msgctxt "mission/multi/dcg_olkhovatka/name"
+msgid "올호바트카"
+msgstr ""
+
+msgctxt "mission/multi/dcg_shaforovo/name"
+msgid "샤포로보"
+msgstr ""
+
+msgctxt "mission/multi/dcg_wasteland/name"
+msgid "황무지"
+msgstr ""
+
+msgctxt "mission/multi/dcg_frozen_highlands/name"
+msgid "얼어붙은 고원"
+msgstr ""
+
+msgctxt "mission/multi/dcg_black_sea_coast/name"
+msgid "흑해 연안"
+msgstr ""
+
+msgctxt "mission/multi/dcg_radusha_airfield/name"
+msgid "라두샤 비행장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hungarian_swamps/name"
+msgid "헝가리 늪지"
+msgstr ""
+
+msgctxt "mission/multi/dcg_stalingrad_outskirts/name"
+msgid "스탈린그라드 외곽"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/1v1_barbarossa/name"
+msgid "바르바로사 작전"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/2v2_stalingrad_factory/name"
+msgid "스탈린그라드 공장"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/3v3_crimea/name"
+msgid "크림반도"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/4v4_kursk/name"
+msgid "쿠르스크"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/1v1_karjala/name"
+msgid "카리알라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/2v2_tali_ihantala/name"
+msgid "탈리이한탈라 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/3v3_volga/name"
+msgid "볼가 <c(7e5be4)>[Talvisota]"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/4v4_mannerheim/name"
+msgid "만네르헤임 선 <c(7e5be4)>[Talvisota]"
+msgstr ""

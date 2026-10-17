@@ -1,0 +1,601 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic vehicles\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Yozora\n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/entity/grille_15_l63"
+msgid "Grille 15 'Pinocchio'"
+msgstr ""
+
+msgctxt "desc/entity/grille_15"
+msgid "Grille 15 'Pinocchio' Recon"
+msgstr ""
+
+msgctxt "info/special/grille_15_l63"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-100c"
+msgid "E-100 Ausf. C"
+msgstr ""
+
+msgctxt "info/special/e-100c"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz8_woodland"
+msgid "Pz.Kpfw VIII 'Maus'"
+msgstr ""
+
+msgctxt "info/special/pz8_woodland"
+msgid "<c(c3baae)>초중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/pz8_tiger"
+msgid "Pz.Kpfw VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/pz8_winter"
+msgid "Pz.Kpfw VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/p1000"
+msgid "P1000"
+msgstr ""
+
+msgctxt "desc/entity/vk1602"
+msgid "VK1602 'Leopard' 5cm"
+msgstr ""
+
+msgctxt "info/special/vk1602"
+msgid "<c(c3baae)>고속 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk1602_30mm"
+msgid "VK1602 'Leopard' 3cm"
+msgstr ""
+
+msgctxt "info/special/vk1602_30mm"
+msgid "<c(c3baae)>고속 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk1602_1943"
+msgid "VK1602-early 'Leopard' 5cm 1943"
+msgstr ""
+
+msgctxt "info/special/vk1602_1943"
+msgid "<c(c3baae)>고속 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e100aa"
+msgid "E-100 Ausf.B 야전 개조형"
+msgstr ""
+
+msgctxt "info/special/e100aa"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e100_15"
+msgid "E-100 15cm"
+msgstr ""
+
+msgctxt "info/special/e-100_150"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-100hd"
+msgid "E-100 초중형 HD"
+msgstr ""
+
+msgctxt "info/special/e-100hd"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e79"
+msgid "E-79 'Panther III'"
+msgstr ""
+
+msgctxt "info/special/e79"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/lowe_1943"
+msgid "Pz.Kpfw VII 'Löwe' 1943"
+msgstr ""
+
+msgctxt "info/special/lowe_1943"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/lowe_1944"
+msgid "Pz.Kpfw VII 'Löwe' 1944"
+msgstr ""
+
+msgctxt "info/special/lowe_1944"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/lowehd"
+msgid "Pz.Kpfw VII 'Löwe'"
+msgstr ""
+
+msgctxt "info/special/lowehd"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/panther2"
+msgid "Pz.Kpfw V 'Panther II'"
+msgstr ""
+
+msgctxt "info/special/panther2"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk4503"
+msgid "VK4503"
+msgstr ""
+
+msgctxt "info/special/vk4503"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/coelian_i"
+msgid "Flakpanzer V 'Coelian'"
+msgstr ""
+
+msgctxt "info/special/coelian_i"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/type_5"
+msgid "시제형 Type 2605"
+msgstr ""
+
+msgctxt "info/special/type_5"
+msgid "<c(c3baae)>초중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/jpze100"
+msgid "Jagdpanzer E-100"
+msgstr ""
+
+msgctxt "info/special/jpze100"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e75_ts_3dst"
+msgid "E-75 TS"
+msgstr ""
+
+msgctxt "info/special/e75_ts_3dst"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e100_gw"
+msgid "G.W. E-100"
+msgstr ""
+
+msgctxt "info/special/e100_gw"
+msgid "<c(c3baae)>자주 중포</c>"
+msgstr ""
+
+msgctxt "desc/entity/steyr_wt"
+msgid "Steyr Waffentrager"
+msgstr ""
+
+msgctxt "info/special/steyr_wt"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/dicker_max"
+msgid "Dicker Max"
+msgstr ""
+
+msgctxt "info/special/dicker_max"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/sturer_emil"
+msgid "Sturer Emil"
+msgstr ""
+
+msgctxt "info/special/sturer_emil"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-50"
+msgid "E-50"
+msgstr ""
+
+msgctxt "info/special/e-50"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e25"
+msgid "E-25 Ausf.A"
+msgstr ""
+
+msgctxt "info/special/e25"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e25x7"
+msgid "E-25 Ausf.B"
+msgstr ""
+
+msgctxt "info/special/e25x7"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e40a"
+msgid "E-40 Ausf.A"
+msgstr ""
+
+msgctxt "info/special/e40a"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e75"
+msgid "E-75"
+msgstr ""
+
+msgctxt "info/special/e75"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e90"
+msgid "E-90"
+msgstr ""
+
+msgctxt "info/special/e90"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e90_ace"
+msgid "E-90 ACE"
+msgstr ""
+
+msgctxt "info/special/e90_ace"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e200_robztest"
+msgid "E-200"
+msgstr ""
+
+msgctxt "info/special/e200_robztest"
+msgid "<c(c3baae)>초중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e100_v1_robz"
+msgid "E-100 V-1"
+msgstr ""
+
+msgctxt "info/special/e100_v1_robz"
+msgid "<c(c3baae)>초중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e100_waffentrager_robz"
+msgid "E-100 Waffenträger"
+msgstr ""
+
+msgctxt "info/special/e100_waffentrager_robz"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk3001d"
+msgid "VK 30.01 (D)"
+msgstr ""
+
+msgctxt "info/special/vk3001d"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/vk72_robztest"
+msgid "VK 72.01 (K)"
+msgstr ""
+
+msgctxt "info/special/vk72_robztest"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/kugelblitz"
+msgid "Kugelblitz"
+msgstr ""
+
+msgctxt "info/special/kugelblitz"
+msgid "<c(c3baae)>대공 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/rhmb_wt"
+msgid "Rheinmetall Borsig WT"
+msgstr ""
+
+msgctxt "info/special/rhmb_wt"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/v1"
+msgid "Fieseler Fi 103 (V-1)"
+msgstr ""
+
+msgctxt "info/special/v1"
+msgid "<c(c3baae)>로켓</c>"
+msgstr ""
+
+msgctxt "desc/entity/v2_a4"
+msgid "Aggregat-4 (V-2)"
+msgstr ""
+
+msgctxt "info/special/v2_a4"
+msgid "<c(c3baae)>탄도 미사일</c>"
+msgstr ""
+
+msgctxt "desc/entity/e50gt"
+msgid "E-50 GT"
+msgstr ""
+
+msgctxt "info/special/e50gt"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-50_75l100"
+msgid "E-50 7.5cm L/100"
+msgstr ""
+
+msgctxt "info/special/e-50_75l100"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-50_105l68"
+msgid "E-50 10.5cm L/68"
+msgstr ""
+
+msgctxt "info/special/e-50_105l68"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-50_105l73"
+msgid "E-50 10.5cm L/73"
+msgstr ""
+
+msgctxt "info/special/e-50_105l73"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_88l71"
+msgid "E-75 8.8cm L/71"
+msgstr ""
+
+msgctxt "info/special/e-75_88l71"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_88l100"
+msgid "E-75 8.8cm L/100"
+msgstr ""
+
+msgctxt "info/special/e-75_88l100"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_105l68"
+msgid "E-75 10.5cm L/68"
+msgstr ""
+
+msgctxt "info/special/e-75_105l68"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_105l73"
+msgid "E-75 10.5cm L/73"
+msgstr ""
+
+msgctxt "info/special/e-75_105l73"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_early"
+msgid "E-75 초기형"
+msgstr ""
+
+msgctxt "info/special/e-75_early"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_sturm"
+msgid "E-75 Sturm"
+msgstr ""
+
+msgctxt "info/special/e-75_sturm"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e-75_ts"
+msgid "E-75 TS(표준형)"
+msgstr ""
+
+msgctxt "info/special/e-75_ts"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpz_e-50"
+msgid "Jagdpanzer E-50"
+msgstr ""
+
+msgctxt "info/special/jagdpz_e-50"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpz_e-50_early"
+msgid "Jagdpanzer E-50 초기형"
+msgstr ""
+
+msgctxt "info/special/jagdpz_e-50_early"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpz_e-75"
+msgid "Jagdpanzer E-75"
+msgstr ""
+
+msgctxt "info/special/jagdpz_e-75"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/jagdpz_e-75_sturm"
+msgid "Jagdpanzer E-75 Sturm"
+msgstr ""
+
+msgctxt "info/special/jagdpz_e-75_sturm"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e65"
+msgid "E-65"
+msgstr ""
+
+msgctxt "desc/entity/e77"
+msgid "E-77"
+msgstr ""
+
+msgctxt "info/special/e65"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/e90pz"
+msgid "Jagdpanzer E-90"
+msgstr ""
+
+msgctxt "info/special/e90pz"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/flakmaus"
+msgid "Flakpanzer VIII 'Maus'"
+msgstr ""
+
+msgctxt "desc/entity/gwe100"
+msgid "G.W. E-100 II"
+msgstr ""
+
+msgctxt "desc/entity/krv"
+msgid "KRV"
+msgstr ""
+
+msgctxt "desc/entity/mausking"
+msgid "Mausking"
+msgstr ""
+
+msgctxt "desc/entity/sge100"
+msgid "StuG E-100"
+msgstr ""
+
+msgctxt "desc/entity/taschenratte"
+msgid "Taschenratte"
+msgstr ""
+
+msgctxt "desc/entity/tigermaus"
+msgid "Tiger-Maus"
+msgstr ""
+
+msgctxt "desc/entity/jpze100_2"
+msgid "Jagdpanzer E-100 II"
+msgstr ""
+
+msgctxt "desc/entity/gw_tiger"
+msgid "G.W. Tiger"
+msgstr ""
+
+msgctxt "desc/entity/lownn"
+msgid "Pz.Kpfw VII 'Löwe' N"
+msgstr ""
+
+msgctxt "desc/entity/o-ho"
+msgid "O-Ho"
+msgstr ""
+
+msgctxt "desc/entity/o_ni_2"
+msgid "O-Ni"
+msgstr ""
+
+msgctxt "desc/entity/type_5_heavy"
+msgid "Type 5 Heavy (후기형)"
+msgstr ""
+
+msgctxt "desc/entity/kampfpanzer_67"
+msgid "Kampfpanzer 67"
+msgstr ""
+
+msgctxt "desc/entity/maus_desert"
+msgid "Maus (사막)"
+msgstr ""
+
+msgctxt "desc/entity/panther_2"
+msgid "Pz.Kpfw II (8.8cm KwK 43 L/71)"
+msgstr ""
+
+msgctxt "desc/entity/type91"
+msgid "Type 91"
+msgstr ""
+
+msgctxt "desc/entity/ho_ru"
+msgid "Ho-Ru"
+msgstr ""
+
+msgctxt "desc/entity/ke_to"
+msgid "Type 2 Ke-To"
+msgstr ""
+
+msgctxt "desc/entity/ki_to"
+msgid "Ki-To"
+msgstr ""
+
+msgctxt "desc/entity/chi_ni"
+msgid "Chi-Ni"
+msgstr ""
+
+msgctxt "desc/entity/zhane"
+msgid "Coccodrillo"
+msgstr ""
+
+msgctxt "desc/entity/tiger_h_west"
+msgid "Pz.Kpfw VI Tiger Ausf.H 서부 전선"
+msgstr ""
+
+msgctxt "desc/entity/tiger_h_east"
+msgid "Pz.Kpfw VI Tiger Ausf.H 동부 전선"
+msgstr ""
+
+msgctxt "desc/entity/xiniu"
+msgid "Rinoceronte"
+msgstr ""
+
+msgctxt "desc/entity/neu"
+msgid "Pz.Kpfw Neu"
+msgstr ""
+
+msgctxt "desc/entity/hori_shugo"
+msgid "Type 5 “Shu-Go”"
+msgstr ""
+
+msgctxt "desc/entity/obj268_c"
+msgid "Object 268 'St. John 's Wort' Type C"
+msgstr ""
+
+msgctxt "desc/entity/vfw"
+msgid "VFW"
+msgstr ""
+
+msgctxt "desc/entity/ke_ho"
+msgid "Type 5 Ke-Ho"
+msgstr ""

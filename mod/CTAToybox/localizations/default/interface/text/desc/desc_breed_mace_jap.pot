@@ -1,0 +1,3139 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name (desc_breeds_usa)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/human/mp/jap/late/norm_biker"
+msgid "바이크 승무원 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/engineer_heavy"
+msgid "중무장 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_scout_sl_binos"
+msgid "데이신 슈단 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_sl_binos"
+msgid "SNLF 정찰 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_sl_binos"
+msgid "SNLF 구테이타이 정찰 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_sl_scout_binos"
+msgid "CEA 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_sl_binos"
+msgid "차량 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_scout_sl_binos"
+msgid "정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_recon_sl_binos"
+msgid "고노에 시단 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_scout_sl_binos"
+msgid "정찰 분대 지휘자 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_scout_sl_binos"
+msgid "정찰 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_mgun_1"
+msgid "아사노 기병 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_mgun_2"
+msgid "아사노 기병 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_mgun_3"
+msgid "아사노 기병 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_mortar"
+msgid "아사노 기병 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_mortar_ammo"
+msgid "아사노 기병 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_mortar_asst"
+msgid "아사노 기병 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_rifleman"
+msgid "아사노 기병 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_asano_rifle_sl"
+msgid "아사노 기병 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_mgun_1"
+msgid "기병 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_mgun_2"
+msgid "기병 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_mgun_3"
+msgid "기병 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_mortar"
+msgid "기병 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_mortar_ammo"
+msgid "기병 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_mortar_asst"
+msgid "기병 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_rifleman"
+msgid "기병 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_cav_sl"
+msgid "기병 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_83mm_mortar"
+msgid "첸타오투이 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_83mm_mortar_ammo"
+msgid "첸타오투이 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_83mm_mortar_asst"
+msgid "첸타오투이 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_mgun_1"
+msgid "첸타오투이 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_mgun_2"
+msgid "첸타오투이 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_mgun_3"
+msgid "첸타오투이 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_mortar"
+msgid "첸타오투이 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_mortar_ammo"
+msgid "첸타오투이 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_mortar_asst"
+msgid "첸타오투이 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_rifleman1"
+msgid "첸타오투이 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_rifleman2"
+msgid "첸타오투이 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_rifle_sl1"
+msgid "첸타오투이 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_chien_tao_rifle_sl2"
+msgid "첸타오투이 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_mgun_1"
+msgid "간도 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_mgun_2"
+msgid "간도 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_mgun_3"
+msgid "간도 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_mortar"
+msgid "간도 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_mortar_ammo"
+msgid "간도 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_mortar_asst"
+msgid "간도 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_gando_sl"
+msgid "간도 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_grenadier_1"
+msgid "소총 유탄병 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_grenadier_2"
+msgid "소총 유탄병 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_ar"
+msgid "제국 근위대 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_cav_mortar"
+msgid "제국 근위대 기병 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_cav_mortar_ammo"
+msgid "제국 근위대 기병 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_cav_mortar_asst"
+msgid "제국 근위대 기병 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_cav_rifleman"
+msgid "제국 근위대 기병 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_cav_rifle_sl"
+msgid "제국 근위대 기병 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_mgun_1"
+msgid "제국 근위대 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_mgun_2"
+msgid "제국 근위대 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_mgun_3"
+msgid "제국 근위대 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_mortar"
+msgid "제국 근위대 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_mortar_ammo"
+msgid "제국 근위대 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_mortar_asst"
+msgid "제국 근위대 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_rifleman"
+msgid "제국 근위대 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_rifleman_toa"
+msgid "제국 근위대 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_imperial_sl"
+msgid "제국 근위대 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_local_def_rifleman"
+msgid "지역 방위 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_local_def_rifle_sl"
+msgid "지역 방위 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_mgun_1"
+msgid "기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_mgun_2"
+msgid "기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_mgun_3"
+msgid "기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_mgun_1"
+msgid "기린 철도 경비대 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_mgun_2"
+msgid "기린 철도 경비대 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_mgun_3"
+msgid "기린 철도 경비대 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_mortar"
+msgid "기린 철도 경비대 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_mortar_ammo"
+msgid "기린 철도 경비대 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_mortar_asst"
+msgid "기린 철도 경비대 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_riflegren"
+msgid "기린 철도 경비대 소총 유탄병 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_rifleman"
+msgid "기린 철도 경비대 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_railway_rifle_sl"
+msgid "기린 철도 경비대 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_rifleman"
+msgid "소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_rifle_sl"
+msgid "분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_scout_rifleman"
+msgid "정찰 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_scout_sl"
+msgid "정찰 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_mgun_1"
+msgid "뎃세키 부타이 기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_mgun_2"
+msgid "뎃세키 부타이 기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_mgun_3"
+msgid "뎃세키 부타이 기관총 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_mortar1"
+msgid "뎃세키 부타이 박격포 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_mortar_ammo"
+msgid "뎃세키 부타이 박격포 탄약수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_mortar_asst2"
+msgid "뎃세키 부타이 박격포 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_rifleman"
+msgid "뎃세키 부타이 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_rifleman2"
+msgid "뎃세키 부타이 소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_tesseki_rifle_sl"
+msgid "뎃세키 부타이 분대장 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_marine_gren"
+msgid "해병 소총 유탄병 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_marine_mgun_1"
+msgid "해병 기관총 사수 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_marine_mgun_2"
+msgid "해병 기관총 부사수 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_marine_mgun_3"
+msgid "해병 기관총 탄약수 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_marine_rifleman"
+msgid "해병 소총수 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_marine_rifle_sl"
+msgid "해병 분대장 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_police_rifleman"
+msgid "해군 경찰 순찰 경관 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_police_sl"
+msgid "해군 경찰 순찰 분대장 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/min_police_smg"
+msgid "해군 경찰 순찰 경관 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_driver"
+msgid "제5 신단 운전병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_mgun_1"
+msgid "제5 신단 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_mgun_2"
+msgid "제5 신단 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_mgun_3"
+msgid "제5 신단 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_rec_rifleman"
+msgid "제5 신단 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_rec_rifle_sl"
+msgid "제5 신단 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_rec_smg"
+msgid "제5 신단 정찰 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_rifleman"
+msgid "제5 신단 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_rifle_sl"
+msgid "제5 신단 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_smg"
+msgid "제5 신단 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_atriflegren"
+msgid "제5 신단 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_mortar"
+msgid "제5 신단 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_mortar_asst"
+msgid "제5 신단 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/5th_mortar_ammo"
+msgid "제5 신단 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_demo"
+msgid "비행장 방어 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_engineer"
+msgid "비행장 방어 야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_engineer_ap"
+msgid "비행장 방어 AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_mgun_1"
+msgid "비행장 방어 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_mgun_2"
+msgid "비행장 방어 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_mgun_3"
+msgid "비행장 방어 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_miner_bomb"
+msgid "비행장 방어 대전차 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_rifleman"
+msgid "비행장 방어 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/airfield_rifle_sl"
+msgid "비행장 방어 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_81mm_mortar"
+msgid "상륙 공병 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_81mm_mortar_ammo"
+msgid "상륙 공병 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_81mm_mortar_asst"
+msgid "상륙 공병 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_atriflegren"
+msgid "상륙 공병 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_mgun_1"
+msgid "상륙 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_mgun_2"
+msgid "상륙 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_mgun_3"
+msgid "상륙 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_mortar"
+msgid "상륙 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_mortar_ammo"
+msgid "상륙 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_mortar_asst"
+msgid "상륙 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_rifleman"
+msgid "상륙 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_smg"
+msgid "상륙 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_rifle_sl"
+msgid "상륙 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_at_ammo"
+msgid "상륙 대전차 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_at_asst"
+msgid "상륙 대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/amphibious_at_gunner"
+msgid "상륙 대전차 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_50mm_mortar"
+msgid "상륙 공병 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_50mm_mortar_ammo"
+msgid "상륙 공병 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_50mm_mortar_asst"
+msgid "상륙 공병 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_demo"
+msgid "상륙 공병 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_flamer"
+msgid "상륙 공병 화염방사병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_riflegren"
+msgid "상륙 공병 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pio_amphibious_rifle_sl"
+msgid "상륙 공병 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_demo"
+msgid "기갑 공병 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_driver"
+msgid "기갑 공병 운전병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_engineer"
+msgid "기갑 공병 야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_engineer_ap"
+msgid "기갑 공병 AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_mgun"
+msgid "기갑 공병 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_mgun_asst"
+msgid "기갑 공병 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_pio_sl"
+msgid "기갑 공병 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_driver"
+msgid "기갑 운전병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_mgun"
+msgid "기갑 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_mgun_ammo"
+msgid "기갑 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_mgun_asst"
+msgid "기갑 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_mortar"
+msgid "기갑 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_mortar_ammo"
+msgid "기갑 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_mortar_asst"
+msgid "기갑 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_rifleman"
+msgid "기갑 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/armored_sl"
+msgid "기갑 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_mgun_1"
+msgid "보에이타이 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_mgun_2"
+msgid "보에이타이 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_mgun_3"
+msgid "보에이타이 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_mortar"
+msgid "보에이타이 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_mortar_ammo"
+msgid "보에이타이 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_mortar_asst"
+msgid "보에이타이 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_rifleman"
+msgid "보에이타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/boeitai_sl"
+msgid "보에이타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_mgun_1"
+msgid "국경 경비대 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_mgun_2"
+msgid "국경 경비대 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_mgun_3"
+msgid "국경 경비대 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_mortar"
+msgid "국경 경비대 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_mortar_ammo"
+msgid "국경 경비대 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_mortar_asst"
+msgid "국경 경비대 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_rifleman"
+msgid "국경 경비대 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/border_rifle_sl"
+msgid "국경 경비대 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_demo"
+msgid "CEA 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_engineer"
+msgid "CEA 야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_engineer_ap"
+msgid "CEA AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mgun_1"
+msgid "CEA 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mgun_1_zb"
+msgid "CEA 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mgun_2"
+msgid "CEA 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mgun_2_zb"
+msgid "CEA 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mgun_3"
+msgid "CEA 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mgun_3_zb"
+msgid "CEA 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_pio_mortar"
+msgid "CEA 공병 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_pio_mortar_asst"
+msgid "CEA 공병 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mortar"
+msgid "CEA 공병 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mortar_asst"
+msgid "CEA 공병 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_mortar_ammo"
+msgid "CEA 공병 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_rifleman"
+msgid "CEA 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_scout_rifle"
+msgid "CEA 정찰병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_sl"
+msgid "CEA 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_sl_pio"
+msgid "CEA 공병 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cea_sl_scout"
+msgid "CEA 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_mgun_1"
+msgid "정예 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_mgun_2"
+msgid "정예 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_mgun_3"
+msgid "정예 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_mortar"
+msgid "정예 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_mortar_ammo"
+msgid "정예 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_mortar_asst"
+msgid "정예 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_riflegren"
+msgid "정예 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_rifleman"
+msgid "정예 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/elite_sl"
+msgid "정예 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_demo"
+msgid "기고 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_mgun_1"
+msgid "기고 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_mgun_2"
+msgid "기고 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_mgun_3"
+msgid "기고 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_mortar"
+msgid "기고 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_mortar_asst"
+msgid "기고 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_sl"
+msgid "기고 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gigo_smg"
+msgid "기고 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mgun_1"
+msgid "기레쓰 구테이타이 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mgun_2"
+msgid "기레쓰 구테이타이 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mgun_3"
+msgid "기레쓰 구테이타이 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mortar"
+msgid "기레쓰 구테이타이 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mortar_ammo"
+msgid "기레쓰 구테이타이 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mortar_asst"
+msgid "기레쓰 구테이타이 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_sl"
+msgid "기레쓰 구테이타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_smg"
+msgid "기레쓰 구테이타이 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gokyotai_mortar1"
+msgid "고쿄타이 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gokyotai_mortar_ammo"
+msgid "고쿄타이 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gokyotai_mortar_asst"
+msgid "고쿄타이 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gokyotai_rifleman"
+msgid "고쿄타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/gokyotai_rifle_sl"
+msgid "고쿄타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_marksman"
+msgid "고노에 시단 기병 지정사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_mgun_1"
+msgid "고노에 시단 기병 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_mgun_2"
+msgid "고노에 시단 기병 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_mgun_3"
+msgid "고노에 시단 기병 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_mortar"
+msgid "고노에 시단 기병 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_mortar_ammo"
+msgid "고노에 시단 기병 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_mortar_asst"
+msgid "고노에 시단 기병 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_rifle"
+msgid "고노에 시단 기병 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_sa"
+msgid "고노에 시단 기병 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_sl"
+msgid "고노에 시단 기병 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_cav_smg"
+msgid "고노에 시단 기병 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_marksman"
+msgid "고노에 시단 지정사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_mgun_1"
+msgid "고노에 시단 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_mgun_2"
+msgid "고노에 시단 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_mgun_3"
+msgid "고노에 시단 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_mortar"
+msgid "고노에 시단 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_mortar_ammo"
+msgid "고노에 시단 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_mortar_asst"
+msgid "고노에 시단 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_rifle"
+msgid "고노에 시단 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_riflegren"
+msgid "고노에 시단 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_sa"
+msgid "고노에 시단 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_sl"
+msgid "고노에 시단 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_smg"
+msgid "고노에 시단 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_pioneer_engineer"
+msgid "고노에 시단 공병 야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_pioneer_engineer_ap"
+msgid "고노에 시단 공병 AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_pioneer_demo"
+msgid "고노에 시단 공병 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_pioneer_flamer"
+msgid "고노에 시단 공병 화염방사기 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_pioneer_grenadier"
+msgid "고노에 시단 공병 그레나디어 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_recon_rifle"
+msgid "고노에 시단 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_recon_sl"
+msgid "고노에 시단 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/imperial_recon_smg"
+msgid "고노에 시단 정찰 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_demo"
+msgid "각쿠 호헤이 렌타이 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_flamer"
+msgid "각쿠 호헤이 렌타이 화염방사기 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_atriflegren"
+msgid "각쿠 호헤이 렌타이 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_mgun_1"
+msgid "각쿠 호헤이 렌타이 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_mgun_2"
+msgid "각쿠 호헤이 렌타이 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_mgun_3"
+msgid "각쿠 호헤이 렌타이 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_mortar"
+msgid "각쿠 호헤이 렌타이 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_mortar_ammo"
+msgid "각쿠 호헤이 렌타이 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_mortar_asst"
+msgid "각쿠 호헤이 렌타이 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_rifle"
+msgid "각쿠 호헤이 렌타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_sa"
+msgid "각쿠 호헤이 렌타이 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_sl"
+msgid "각쿠 호헤이 렌타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kakku_smg"
+msgid "각쿠 호헤이 렌타이 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_riflegren"
+msgid "소총 유탄병 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_mgun_1"
+msgid "기관총 사수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_mgun_2"
+msgid "기관총 부사수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_mgun_3"
+msgid "기관총 탄약수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_mortar"
+msgid "박격포 사수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_mortar_ammo"
+msgid "박격포 탄약수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_mortar_asst"
+msgid "박격포 부사수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_rifle"
+msgid "소총수 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_sl"
+msgid "분대장 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kanto_smg"
+msgid "기관단총 보병 '간토' [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kempeitai_rifle"
+msgid "겐페이타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kempeitai_sl"
+msgid "겐페이타이 장교 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kido_rifle_sl"
+msgid "기도 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kido_mgun"
+msgid "기도 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kido_mgun_ammo"
+msgid "기도 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kido_mgun_asst"
+msgid "기도 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kido_rifleman"
+msgid "기도 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/kido_smg"
+msgid "기도 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_ammo"
+msgid "기헤이 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_mg"
+msgid "기헤이 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_mg_asst"
+msgid "기헤이 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_mortar"
+msgid "기헤이 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_mortar_ammo"
+msgid "기헤이 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_mortar_asst"
+msgid "기헤이 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_rifle"
+msgid "기헤이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_sa"
+msgid "기헤이 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/cav_sl"
+msgid "기헤이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kokumin_shotgun"
+msgid "고쿠민 기유타이 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kokumin_late_rifle"
+msgid "고쿠민 기유타이 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kokumin_late_sl"
+msgid "고쿠민 기유타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kokumin_rifle"
+msgid "고쿠민 기유타이 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/Kokumin_sl"
+msgid "고쿠민 기유타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_laborer_demo"
+msgid "세쓰에이타이 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_laborer_engineer"
+msgid "세쓰에이타이 야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_laborer_rifle"
+msgid "세쓰에이타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_laborer_sl"
+msgid "분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_atriflegren"
+msgid "차량화 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_driver"
+msgid "차량화 운전병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_mgun_1"
+msgid "차량화 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_mgun_2"
+msgid "차량화 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_mgun_3"
+msgid "차량화 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_mortar"
+msgid "차량화 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_mortar_ammo"
+msgid "차량화 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_mortar_asst"
+msgid "차량화 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_rifleman"
+msgid "차량화 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/motor_rifle_sl"
+msgid "차량화 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/nikuhaku_demo"
+msgid "데이신타 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/nikuhaku_flamer"
+msgid "데이신타 화염방사병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/nikuhaku_rifle"
+msgid "데이신타 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/nikuhaku_atriflegren"
+msgid "데이신타 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/nikuhaku_sl"
+msgid "데이신타 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/nikuhaku_smg"
+msgid "데이신타 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_at_ammo"
+msgid "대전차 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_at_asst"
+msgid "대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_at_gunner"
+msgid "대전차 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_flamer"
+msgid "화염방사기 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mgun_96_1"
+msgid "기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mgun_96_2"
+msgid "기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mgun_96_3"
+msgid "기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mgun_99_1"
+msgid "기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mgun_99_2"
+msgid "기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mgun_99_3"
+msgid "기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mortar"
+msgid "박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mortar_38_ammo"
+msgid "박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mortar_38_asst"
+msgid "박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mortar_99_ammo"
+msgid "박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_mortar_99_asst"
+msgid "박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_riflegren"
+msgid "소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_rifleman"
+msgid "소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_rifleman2"
+msgid "소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_rifle_sl"
+msgid "분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/norm_rifle_sl2"
+msgid "분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_engineer"
+msgid "공병 야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_engineer_ap"
+msgid "공병 AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_mgun_1"
+msgid "공병 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_mgun_2"
+msgid "공병 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_mortar"
+msgid "공병 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_mortar_asst"
+msgid "공병 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_demo"
+msgid "공병 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_flamer"
+msgid "공병 화염방사병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_grenadier_1"
+msgid "공병 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_grenadier_2"
+msgid "공병 소총 유탄병 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pioneer_sl"
+msgid "공병 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mgun_1"
+msgid "루스 시단 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mgun_2"
+msgid "루스 시단 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mgun_3"
+msgid "루스 시단 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mortar1"
+msgid "루스 시단 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mortar2"
+msgid "루스 시단 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mortar_ammo"
+msgid "루스 시단 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_mortar_asst"
+msgid "루스 시단 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_rifleman"
+msgid "루스 시단 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rusu_rifle_sl"
+msgid "루스 시단 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_scout_rifle"
+msgid "정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_scout_sl"
+msgid "정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_scout_smg"
+msgid "정찰 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_mg"
+msgid "차량 정찰 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_mg_ammo"
+msgid "차량 정찰 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_mg_asst"
+msgid "차량 정찰 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_mortar"
+msgid "차량 정찰 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_mortar_ammo"
+msgid "차량 정찰 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_mortar_asst"
+msgid "차량 정찰 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_rifle"
+msgid "차량 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_motor_scout_sl"
+msgid "차량 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_mgun_1"
+msgid "경비 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_mgun_2"
+msgid "경비 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_mgun_3"
+msgid "경비 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_mortar"
+msgid "경비 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_mortar_ammo"
+msgid "경비 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_mortar_asst"
+msgid "경비 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_rifleman"
+msgid "경비 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/security_sl"
+msgid "경비 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/antitank_3"
+msgid "대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/antitank_4"
+msgid "대전차 소총 유탄병 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at1"
+msgid "대전차 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at2"
+msgid "대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at3"
+msgid "대전차 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at4"
+msgid "대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at5"
+msgid "대전차 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at5_ammo"
+msgid "대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at6"
+msgid "대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at7"
+msgid "대전차 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at8"
+msgid "대전차 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/engineer_1"
+msgid "야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/engineer_2"
+msgid "야전 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/flamer"
+msgid "화염방사기 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/flamer_ai"
+msgid "화염방사기 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/grenadier_1"
+msgid "소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/grenadier_2"
+msgid "소총 유탄병 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/grenadier_7"
+msgid "소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/grenadier_8"
+msgid "소총 유탄병 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_kamikaze"
+msgid "자폭병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ija_kamikaze_ai"
+msgid "자폭병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/medic"
+msgid "위생병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mgun_1"
+msgid "기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mgun_2"
+msgid "기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/miner-ap"
+msgid "AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/miner-at"
+msgid "대전차 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mortar3"
+msgid "박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mortar_asst4"
+msgid "박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/officer"
+msgid "쇼사 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/reg_mgun_1"
+msgid "기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/reg_mgun_2"
+msgid "기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/reg_mgun_3"
+msgid "기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rifleman_1"
+msgid "소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/smg_1"
+msgid "기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sniper"
+msgid "저격수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sniper2"
+msgid "저격수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/sniper_ai"
+msgid "저격수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/sniper2_ai"
+msgid "저격수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tankman"
+msgid "전차병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_commander"
+msgid "전차 지휘관 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tankman_smg"
+msgid "전차병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_commander_smg"
+msgid "전차 지휘관 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_mgun"
+msgid "특수 상륙 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_mgun_ammo"
+msgid "특수 상륙 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_mgun_asst"
+msgid "특수 상륙 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_mortar"
+msgid "특수 상륙 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_mortar_asst"
+msgid "특수 상륙 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_mortar_ammo"
+msgid "특수 상륙 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_rifleman"
+msgid "특수 상륙 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_rifle_sl"
+msgid "특수 상륙 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_amphibious_smg"
+msgid "특수 상륙 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/student_demo"
+msgid "가쿠토타이 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/student_shotgun"
+msgid "가쿠토타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/student_rifle"
+msgid "가쿠토타이 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/student_sl"
+msgid "가쿠토타이 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_atgren"
+msgid "다카사고 기유타 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_mgun_1"
+msgid "다카사고 기유타 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_mgun_2"
+msgid "다카사고 기유타 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_mgun_3"
+msgid "다카사고 기유타 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_mortar"
+msgid "다카사고 기유타 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_mortar_ammo"
+msgid "다카사고 기유타 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_mortar_asst"
+msgid "다카사고 기유타 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rifle"
+msgid "다카사고 기유타 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_sa"
+msgid "다카사고 기유타 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_sl"
+msgid "다카사고 기유타 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rec_mgun_1"
+msgid "다카사고 기유타 정찰 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rec_mgun_2"
+msgid "다카사고 기유타 정찰 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rec_mgun_3"
+msgid "다카사고 기유타 정찰 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rec_sl"
+msgid "다카사고 기유타 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rec_sl_binos"
+msgid "다카사고 기유타 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/takasago_rec_smg"
+msgid "다카사고 기유타 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_antitank_3"
+msgid "기갑 정찰 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_antitank_4"
+msgid "기갑 정찰 대전차 소총 유탄병 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_rifleman_1"
+msgid "기갑 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_smg_1"
+msgid "기갑 정찰 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_tankman_99"
+msgid "기갑 정찰 전차병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_tank_commander_99"
+msgid "기갑 정찰 전차 지휘관 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_3_antitank_3"
+msgid "기갑 정찰 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_3_antitank_4"
+msgid "기갑 정찰 소총 유탄병 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_3_rifleman_1"
+msgid "기갑 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_mounted_3_smg_1"
+msgid "기갑 정찰 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_pio_demo"
+msgid "데이신 슈단 공병 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_pio_engineer_ap"
+msgid "데이신 슈단 공병 AP 지뢰 공병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_pio_flamer"
+msgid "데이신 슈단 공병 화염방사기 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_pio_sa"
+msgid "데이신 슈단 공병 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_pio_sl"
+msgid "데이신 슈단 공병 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_mgun_1"
+msgid "데이신 슈단 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_mgun_2"
+msgid "데이신 슈단 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_rifle"
+msgid "데이신 슈단 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_sl"
+msgid "데이신 슈단 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_scout_mgun_1"
+msgid "데이신 슈단 정찰 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_scout_mgun_2"
+msgid "데이신 슈단 정찰 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_scout_rifle"
+msgid "데이신 슈단 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_scout_sl"
+msgid "데이신 슈단 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_mortar"
+msgid "데이신 슈단 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_mortar_asst"
+msgid "데이신 슈단 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_sa"
+msgid "데이신 슈단 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/teishin_shudan_smg"
+msgid "데이신 슈단 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_atriflegren"
+msgid "도쿠무 기칸 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_demo"
+msgid "도쿠무 기칸 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_mgun_1"
+msgid "도쿠무 기칸 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_mgun_2"
+msgid "도쿠무 기칸 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_mgun_3"
+msgid "도쿠무 기칸 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_sa"
+msgid "도쿠무 기칸 부분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_sl"
+msgid "도쿠무 기칸 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/toku_smg"
+msgid "도쿠무 기칸 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mgun_1"
+msgid "베테랑 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mgun_2"
+msgid "베테랑 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mgun_3"
+msgid "베테랑 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mortar"
+msgid "베테랑 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mortar_27"
+msgid "베테랑 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mortar_ammo"
+msgid "베테랑 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_mortar_asst"
+msgid "베테랑 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_rifleman"
+msgid "베테랑 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_sl"
+msgid "베테랑 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_china_smg"
+msgid "베테랑 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_mgun_1"
+msgid "베테랑 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_mgun_2"
+msgid "베테랑 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_mgun_3"
+msgid "베테랑 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_mortar"
+msgid "베테랑 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_mortar_ammo"
+msgid "베테랑 박격포 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_mortar_asst"
+msgid "베테랑 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_rifleman"
+msgid "베테랑 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_sl"
+msgid "베테랑 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_smg"
+msgid "베테랑 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_scout_rifleman"
+msgid "베테랑 정찰 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_scout_sl"
+msgid "베테랑 정찰 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/vet_south_scout_smg"
+msgid "베테랑 정찰 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_demo"
+msgid "유게키 폭파병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_mg"
+msgid "유게키 기관총 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_mg_ammo"
+msgid "유게키 기관총 탄약수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_mg_asst"
+msgid "유게키 기관총 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_mortar"
+msgid "유게키 박격포 사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_mortar_asst"
+msgid "유게키 박격포 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_rifle"
+msgid "유게키 소총수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_sl"
+msgid "유게키 분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/yugeki_smg"
+msgid "유게키 기관단총 보병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ijn_pilot"
+msgid "조종사 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/keisatsutai_rifle"
+msgid "도쿠베쓰 게이사쓰타이 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/keisatsutai_sl"
+msgid "도쿠베쓰 게이사쓰타이 장교 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/keisatsutai_smg"
+msgid "도쿠베쓰 게이사쓰타이 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/labourer_demoman"
+msgid "해군 세쓰에이타이 폭파병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/labourer_engineer"
+msgid "해군 세쓰에이타이 야전 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/labourer_rifle"
+msgid "해군 세쓰에이타이 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/labourer_sl"
+msgid "분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sailor_mortar"
+msgid "NLF 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sailor_mortar_asst"
+msgid "NLF 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sailor_mortar_ammo"
+msgid "NLF 박격포 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sailor_rifle"
+msgid "NLF 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sailor_sl"
+msgid "NLF 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sailor_smg"
+msgid "NLF 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_demo"
+msgid "제101 구레 SNLF 폭파병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_flame"
+msgid "제101 구레 SNLF 화염방사병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_mg_1"
+msgid "제101 구레 SNLF 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_mg_2"
+msgid "제101 구레 SNLF 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_mg_3"
+msgid "제101 구레 SNLF 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_mortar"
+msgid "제101 구레 SNLF 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_mortar_ammo"
+msgid "제101 구레 SNLF 박격포 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_mortar_asst"
+msgid "제101 구레 SNLF 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_riflegren"
+msgid "제101 구레 SNLF 대전차 소총 유탄병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_sl"
+msgid "제101 구레 SNLF 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_101st_smg"
+msgid "제101 구레 SNLF 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_riflegren"
+msgid "SNLF 소총 유탄병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_demo"
+msgid "SNLF 돌격 폭파병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_flame"
+msgid "SNLF 돌격 화염방사기 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_flame2"
+msgid "SNLF 돌격 화염방사기 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_mortar"
+msgid "SNLF 돌격 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_mgun_1"
+msgid "SNLF 돌격 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_mgun_2"
+msgid "SNLF 돌격 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_mgun_3"
+msgid "SNLF 돌격 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_mortar_asst"
+msgid "SNLF 돌격 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_rifle"
+msgid "SNLF 돌격 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_sl"
+msgid "SNLF 돌격 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_smg_mp34"
+msgid "SNLF 돌격 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_assault_smg_sig"
+msgid "SNLF 돌격 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_def_mg"
+msgid "SNLF 방어 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_def_mg_ammo"
+msgid "SNLF 방어 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_def_mg_asst"
+msgid "SNLF 방어 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_def_rifle"
+msgid "SNLF 방어 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_def_sl"
+msgid "SNLF 방어 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_def_smg"
+msgid "SNLF 방어 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_flame"
+msgid "SNLF 화염방사기 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_grenadier_2"
+msgid "SNLF 소총 유탄병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_grenadier_2_asst"
+msgid "SNLF 소총 유탄병 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_grenadier_3"
+msgid "SNLF 소총 유탄병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_grenadier_3_asst"
+msgid "SNLF 소총 유탄병 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_grenadier_91"
+msgid "SNLF 소총 유탄병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_grenadier_91_asst"
+msgid "SNLF 소총 유탄병 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_gren_sl"
+msgid "SNLF 근위 그레나디어 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_mg"
+msgid "SNLF 근위 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_mg_ammo"
+msgid "SNLF 근위 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_mg_asst"
+msgid "SNLF 근위 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_mortar"
+msgid "SNLF 근위 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_rifle"
+msgid "SNLF 근위 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_guard_sl"
+msgid "SNLF 근위 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo"
+msgid "SNLF 구테이타이 폭파병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo_mg"
+msgid "SNLF 구테이타이 기관총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo_mg_asst"
+msgid "SNLF 구테이타이 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo_sl"
+msgid "SNLF 구테이타이 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_engineer"
+msgid "SNLF 구테이타이 야전 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_gren_sl"
+msgid "SNLF 구테이타이 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mg"
+msgid "SNLF 구테이타이 기관총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mg_ammo"
+msgid "SNLF 구테이타이 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mg_asst"
+msgid "SNLF 구테이타이 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mortar"
+msgid "SNLF 구테이타이 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mortar_asst"
+msgid "SNLF 구테이타이 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_engineer_builder"
+msgid "SNLF 구테이타이 공병 야전 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_engineer_mines"
+msgid "SNLF 구테이타이 공병 지뢰병 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mg"
+msgid "SNLF 구테이타이 공병 기관총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mg_asst"
+msgid "SNLF 구테이타이 공병 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mortar"
+msgid "SNLF 구테이타이 공병 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mortar_asst"
+msgid "SNLF 구테이타이 공병 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_sl"
+msgid "SNLF 구테이타이 공병 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_riflegren"
+msgid "SNLF 구테이타이 소총 유탄병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_riflegren_asst"
+msgid "SNLF 구테이타이 소총 유탄병 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_rifle"
+msgid "SNLF 구테이타이 정찰 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_sl"
+msgid "SNLF 구테이타이 정찰 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_smg"
+msgid "SNLF 구테이타이 정찰 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_sl"
+msgid "SNLF 구테이타이 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_smg"
+msgid "SNLF 구테이타이 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_kuteitai_smg_sl"
+msgid "SNLF 구테이타이 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mg"
+msgid "SNLF 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mg_ammo"
+msgid "SNLF 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mg_asst"
+msgid "SNLF 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mg1"
+msgid "SNLF 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mg1_ammo"
+msgid "SNLF 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mg1_asst"
+msgid "SNLF 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mortar"
+msgid "SNLF 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mortar_ammo"
+msgid "SNLF 박격포 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mortar_asst"
+msgid "SNLF 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_mg"
+msgid "SNLF 정찰 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_mg_ammo"
+msgid "SNLF 정찰 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_mg_asst"
+msgid "SNLF 정찰 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_rifle"
+msgid "SNLF 정찰 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_sl"
+msgid "SNLF 정찰 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_recon_smg"
+msgid "SNLF 정찰 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_rifle1"
+msgid "SNLF 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_rifle2"
+msgid "SNLF 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_sl1"
+msgid "SNLF 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_smg"
+msgid "SNLF 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_smg2"
+msgid "SNLF 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_mgun_1"
+msgid "특수 독립 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_mgun_2"
+msgid "특수 독립 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_mgun_3"
+msgid "특수 독립 기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_mortar"
+msgid "특수 독립 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_mortar_ammo"
+msgid "특수 독립 박격포 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_mortar_asst"
+msgid "특수 독립 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_rifleman"
+msgid "특수 독립 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_sl"
+msgid "특수 독립 분대장 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/special_indep_smg"
+msgid "특수 독립 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_guerilla_rifle"
+msgid "게릴라 소총수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_guerilla_sl"
+msgid "게릴라 분대장 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_guerilla_smg"
+msgid "게릴라 기관단총 보병 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_mgun_1"
+msgid "기관총 사수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_mgun_2"
+msgid "기관총 부사수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_mgun_3"
+msgid "기관총 탄약수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_rifle"
+msgid "소총수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_scout_mgun_1"
+msgid "정찰 기관총 사수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_scout_mgun_2"
+msgid "정찰 기관총 부사수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_scout_rifle"
+msgid "정찰 소총수 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_scout_sl"
+msgid "정찰 분대 지휘자 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/ina_sl"
+msgid "분대장 [INA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_aux_mgun_1"
+msgid "보조 기관총 사수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_aux_mgun_2"
+msgid "보조 기관총 부사수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_aux_mgun_3"
+msgid "보조 기관총 탄약수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_aux_rifle"
+msgid "보조 소총수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_aux_sl"
+msgid "보조 분대장 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_honor_mgun_1"
+msgid "명예 기병 기관총 사수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_honor_mgun_2"
+msgid "명예 기병 기관총 부사수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_honor_mgun_3"
+msgid "명예 기병 기관총 탄약수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_honor_rifle"
+msgid "명예 기병 소총수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_honor_sl"
+msgid "명예 기병 분대장 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_honor_smg"
+msgid "명예 기병 기관단총 보병 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_mortar"
+msgid "기병 박격포 사수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_mortar_ammo"
+msgid "기병 박격포 탄약수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_mortar_asst"
+msgid "기병 박격포 부사수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_rifle"
+msgid "기병 소총수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mna_cav_sl"
+msgid "기병 분대장 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_giyu_mgun_1"
+msgid "기유군 기관총 사수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_giyu_mgun_2"
+msgid "기유군 기관총 부사수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_giyu_mgun_3"
+msgid "기유군 기관총 탄약수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_giyu_rifleman"
+msgid "기유군 소총수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_giyu_sl"
+msgid "기유군 분대장 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_hei_rifle"
+msgid "헤이호 소총수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_hei_shotgun"
+msgid "헤이호 소총수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_hei_sl"
+msgid "헤이호 분대장 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_mgun_1"
+msgid "교도 보에이 기유군 기관총 사수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_mgun_2"
+msgid "교도 보에이 기유군 기관총 부사수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_mgun_3"
+msgid "교도 보에이 기유군 기관총 탄약수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_mortar"
+msgid "교도 보에이 기유군 박격포 사수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_mortar_ammo"
+msgid "교도 보에이 기유군 박격포 탄약수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_mortar_asst"
+msgid "교도 보에이 기유군 박격포 부사수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_rifle"
+msgid "교도 보에이 기유군 소총수 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/peta_sl"
+msgid "교도 보에이 기유군 분대장 [PETA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_cav_mgun_1"
+msgid "수도 경비대 기병 기관총 사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_cav_mgun_2"
+msgid "수도 경비대 기병 기관총 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_cav_mgun_3"
+msgid "수도 경비대 기병 기관총 탄약수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_cav_rifleman"
+msgid "수도 경비대 기병 소총수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_cav_sl"
+msgid "수도 경비대 기병 분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_mgun_1"
+msgid "수도 경비대 기관총 사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_mgun_2"
+msgid "수도 경비대 기관총 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_mgun_3"
+msgid "수도 경비대 기관총 탄약수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_rifleman"
+msgid "수도 경비대 소총수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_sa"
+msgid "수도 경비대 부분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_capital_sl"
+msgid "수도 경비대 분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_guerrilla_mgun_1"
+msgid "비적 토벌 기관총 사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_guerrilla_mgun_2"
+msgid "비적 토벌 기관총 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_guerrilla_mgun_3"
+msgid "비적 토벌 기관총 탄약수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_guerrilla_rifleman"
+msgid "비적 토벌 소총수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_guerrilla_rifle_sl"
+msgid "비적 토벌 분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_cav_rifleman"
+msgid "평화 경비대 기병 소총수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_cav_sl"
+msgid "평화 경비대 기병 분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_cav_smg"
+msgid "평화 경비대 기병 기관단총 보병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_mgun_1"
+msgid "평화 경비대 기관총 사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_mgun_2"
+msgid "평화 경비대 기관총 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_mgun_3"
+msgid "평화 경비대 기관총 탄약수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_mortar"
+msgid "평화 경비대 박격포 사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_mortar_ammo"
+msgid "평화 경비대 박격포 탄약수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_mortar_asst"
+msgid "평화 경비대 박격포 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_pio_at"
+msgid "평화 경비대 공병 대전차 보병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_pio_at_asst"
+msgid "평화 경비대 공병 대전차 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_pio_demoman"
+msgid "평화 경비대 공병 폭파병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_pio_engineer"
+msgid "평화 경비대 공병 야전 공병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_pio_engineer_ap"
+msgid "평화 경비대 공병 AP 지뢰 공병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_pio_sl"
+msgid "평화 경비대 공병 분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_rifleman"
+msgid "평화 경비대 소총수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_sa"
+msgid "평화 경비대 부분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_peace_sl"
+msgid "평화 경비대 분대장 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_mgun_1"
+msgid "기관총 사수 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_mgun_2"
+msgid "기관총 부사수 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_mgun_3"
+msgid "기관총 탄약수 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_rifle"
+msgid "소총수 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_sa"
+msgid "부분대장 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_semirifle"
+msgid "소총수 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/pna_police_sl"
+msgid "분대장 '소금세' [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/antitank_3_snlf"
+msgid "대전차 소총 유탄병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/antitank_4_snlf"
+msgid "대전차 소총 유탄병 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/artilleryman"
+msgid "포병"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at1_pna"
+msgid "대전차 보병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/at2_pna"
+msgid "대전차 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/engineer_1_snlf"
+msgid "야전 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/flamer_pna"
+msgid "화염방사기 보병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/flamer_snlf"
+msgid "화염방사기 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/grenadier_1_mia"
+msgid "소총 유탄병 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/grenadier_2_mia"
+msgid "소총 유탄병 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/medic_snlf"
+msgid "위생병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mgun_1_snlf"
+msgid "SNLF 기관총 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mgun_2_snlf"
+msgid "SNLF 기관총 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mgun_3_snlf"
+msgid "기관총 탄약수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mg_crew"
+msgid "기관총 승무원 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mg_crew_asst"
+msgid "기관총 승무원 부사수 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mg_crew_asst_snlf"
+msgid "기관총 승무원 부사수 [IJM]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mg_crew_snlf"
+msgid "기관총 승무원 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mia_officer"
+msgid "쇼사 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/miner-ap_early_snlf"
+msgid "AP 지뢰 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/miner-ap_snlf"
+msgid "AP 지뢰 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/miner-at_snlf"
+msgid "대전차 지뢰 공병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mortar1_pna"
+msgid "박격포 사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/mortar2_pna"
+msgid "박격포 부사수 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/officer_rngc"
+msgid "샤오쭤 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/officer_t1"
+msgid "쇼사 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/officer_t2"
+msgid "쇼사 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/officer_t3"
+msgid "쇼사 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/officer_t4"
+msgid "쇼사 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/reg_mgun_1_mia"
+msgid "기관총 사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/reg_mgun_2_mia"
+msgid "기관총 부사수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rifleman_1_mia"
+msgid "소총수 [GMIA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/rifleman_1_snlf"
+msgid "SNLF 소총수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/signaller"
+msgid "포병 통신병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/signaller_ai"
+msgid "포병 통신병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/signaller_yamato"
+msgid "포병 통신병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/signaller_yamato_ai"
+msgid "포병 통신병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/smg_1_min"
+msgid "기관단총 보병 [GMIN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/smg_1_snlf"
+msgid "SNLF 기관단총 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sniper_mna"
+msgid "저격수 [MNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/sniper_snlf"
+msgid "저격수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_at1"
+msgid "SNLF 대전차 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_at2"
+msgid "SNLF 대전차 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_at3"
+msgid "SNLF 대전차 보병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_at4"
+msgid "SNLF 대전차 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mortar3"
+msgid "SNLF 박격포 사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/snlf_mortar_asst4"
+msgid "SNLF 박격포 부사수 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/squadleader_coq"
+msgid "분대장 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tankman_rngc"
+msgid "전차병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tankman_snlf"
+msgid "전차병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_commander_rngc"
+msgid "전차 지휘관 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/late/tank_commander_snlf"
+msgid "전차 지휘관 [IJN]"
+msgstr ""
+
+# mid
+msgctxt "desc/human/mp/jap/mid/artilleryman"
+msgid "포병"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/tankman_snlf"
+msgid "전차병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/tankman"
+msgid "전차병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/tankman_rngc"
+msgid "전차병 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/tank_commander_rngc"
+msgid "전차 지휘관 [PNA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/tank_commander_snlf"
+msgid "전차 지휘관 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/mid/tank_commander"
+msgid "전차 지휘관 [IJA]"
+msgstr ""
+
+# early
+msgctxt "desc/human/mp/jap/early/tankman_snlf"
+msgid "전차병 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/early/tankman"
+msgid "전차병 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/early/tank_commander_snlf"
+msgid "전차 지휘관 [IJN]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/early/tank_commander"
+msgid "전차 지휘관 [IJA]"
+msgstr ""
+
+msgctxt "desc/human/mp/jap/early/ijn_pilot"
+msgid "조종사 [IJN]"
+msgstr ""

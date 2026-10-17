@@ -1,0 +1,221 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_saint_lo_hills)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/date"
+msgid "1944년 6월 10~16일 · 프랑스 노르망디, 192고지"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/hq"
+msgid "본부 근처 미군에 대한 경고: %1%/3"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/lose_hq"
+msgid "적이 본부에 들어왔고 세 번의 경고에도 제거하지 못했다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/name"
+msgid "생로의 언덕"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/name_big"
+msgid "생로의 언덕"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/01"
+msgid "팔쉬름예거! 우리는 제352보병사단이 미군을 저지하도록 돕기 위해 이곳에 배치됐다! 화력은 크게 열세지만 참호는 잘 파 놨다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/02"
+msgid "기동 캄프그루페의 나머지가 도착할 때까지 이 진지를 방어한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/03"
+msgid "흩어져서 포와 박격포를 배치하고, 방어선을 강화할 장애물을 깔아라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/04"
+msgid "적은 북쪽 사면에서 올 것으로 예상된다. 지형을 우리에게 유리하게 써야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/05"
+msgid "산울타리 때문에 접근하는 적을 보기 어렵지만, 마찬가지로 적을 살상 지대로 몰아넣을 수 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/06"
+msgid "적이 북쪽 사면에 진지를 팠다. 버티면서 산울타리 모퉁이마다 적을 괴롭힐 준비를 해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/07"
+msgid "첫 적 분대들은 아마 정찰병일 것이다. 본격적인 공격에 대비해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/08"
+msgid "적 포병이 사격을 멈췄다. 관측병을 써서 우리 특정 진지를 정확히 찾아 포격하려는 것 같다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/09"
+msgid "적이 서쪽으로 공격을 강화하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/10"
+msgid "주의! 적기가 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/11"
+msgid "팔쉬름예거! 적을 저지하는 솜씨가 훌륭하지만, 이 대규모 공격을 따라가기 벅차다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/12"
+msgid "적이 숨 돌릴 틈을 주니, 계곡 반대편의 본부로 후퇴하도록 명령한다. 기동 캄프그루페가 곧 도착해 그곳 방어선을 강화할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/13"
+msgid "드디어 증원이 왔다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/14"
+msgid "적이 192고지를 차지하지 못하도록 추가 예비대와 포격 지원을 쓸 수 있게 했다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/15"
+msgid "적은 가진 모든 것을 걸고 192고지를 공격하려 할 것이다. 하지만 이번엔 지형이 우리에게 유리하다. 우리가 고지를 차지했다. 시도조차 하지 말아야 하는데, 이 미군 놈들은 지독하게 끈질기다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/16"
+msgid "조심해라! 미군이 동쪽에서 우리 측면을 돌았다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/17"
+msgid "훌륭하게 수행한 방어다, 팔쉬름예거! 미군은 너희 녹색 악마를 두려워하게 될 것이다. 이 속도면 곧 놈들을 바다로 밀어낼 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/18"
+msgid "미군이 기동 포병을 전방으로 가져왔다. 본부를 때리려 할 것이다. 안뜰 주위에 병력을 두지 말고, 지금 분견대를 보낼 여유가 있다면 포병을 제거해라."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/19"
+msgid "그 포들을 제거한 전술이 훌륭하다! 그래서 팔쉬름예거를 부르는 것이다. 일을 끝내라고!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/arty"
+msgid "적 포격이 온다! 고개를 숙여라, 팔쉬름예거!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/arty2"
+msgid "미군 포병이 또 온다! 미군은 이 산울타리를 정말 평지로 만들고 싶어 한다! 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/fail_lastwarning"
+msgid "미군이 아직 본부 외곽 안에 있다! 이게 마지막 경고다! 제거하거나 죽도록 싸워라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/fail_warning"
+msgid "주의! 미군이 본부 외곽 안에 있다! 2분 안에 제거해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/pzfaust"
+msgid "대전차 무기가 매우 부족하지만, 개인호 주변 상자에 Panzerfaust와 다른 쓸 만한 도구가 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/outro_completed"
+msgid "훌륭하다! 적에게 적응력과 임기응변의 교훈을 가르쳤다. 잘했다, 미군을 교두보에 가둬 둘 수 있을 것이다. 심프 장군이 이 소식을 들으면 아주 기뻐할 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/outro_failed"
+msgid "이 언덕을 지키지 못했고, 연합군은 이제 생로로 걸어 들어갈 수 있다! 아주 강한 적을 상대했다 해도 심프 장군은 이 소식을 별로 좋아하지 않을 것이다. 팔쉬름예거는 전투에서 지는 데 익숙하지 않다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/place"
+msgid "제3 팔쉬름예거 사단"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_arty"
+msgid "SfH 18 포격"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad"
+msgid "팔쉬름예거"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_ammo"
+msgid "탄약 상자"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_defensive"
+msgid "팔쉬름예거 정찰대"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_irregular"
+msgid "팔쉬름예거 피오니어"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_medic"
+msgid "위생병"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/skip"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/story"
+msgid " 1944년 6월 10일. "페스퉁 유럽"이 공격받고 있다. 지난 나흘간 연합군의 교두보가 확대됐고, 이제 생로 일대 언덕이 최전선이다. 생로 북쪽 방어선은 무슨 일이 있어도 지켜야 한다. 제3 팔쉬름예거 사단은 생로 앞 언덕에 진지를 구축하고 있다. 언덕은 방어에 최적이지만, 가용 인력으로 전 지역을 방어할 수는 없다. 적은 북쪽에서 접근 중이다. 최선책은 생조르주델에 참호를 파는 것이다.\n\n 적이 살상 지대로 유인되도록 방어선을 세우고, 적 보병의 측면 기동으로부터 대전차포를 지켜라. 증원이 오고 있지만, 오더라도 시간이 걸린다. 이제 불의 세례를 받을 때다.\n\n할스 운트 바인브루흐!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task1"
+msgid "생조르주델의 방어선을 강화하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task2"
+msgid "미군을 저지하고 도로 돌파를 막아라."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task3"
+msgid "본부를 방어하고 미군이 언덕을 차지하지 못하게 하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task_opt1"
+msgid "분견대를 보내 포병을 제거하라."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/timer1"
+msgid "미군의 공격에 대비하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/timer2"
+msgid "다음 미군 공격까지:"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/timer3"
+msgid "본부로 후퇴해 증원을 기다려라. 증원 도착까지 남은 시간:"
+msgstr ""

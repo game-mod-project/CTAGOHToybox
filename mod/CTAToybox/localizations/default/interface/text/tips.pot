@@ -1,0 +1,181 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms (tips)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "tip25"
+msgid "\"인터넷의 인용구는 절대 믿지 마라. 출처를 확인할 수 없으니까.\"\n\n<s(18)e(shadow)b+c(dacba2)>에이브러햄 링컨"
+msgstr ""
+
+msgctxt "tip35"
+msgid "\"적 폭격기는 루르에 닿지 못한다. 한 대라도 닿는다면 내 이름은 괴링이 아니다. 마이어라고 불러도 좋다.\"\n\n<s(18)e(shadow)b+c(5b88b0)>헤르만 마이어"
+msgstr ""
+
+msgctxt "tip12"
+msgid "\"엿 먹어라!\"\n\n<s(18)e(shadow)b+c(5b88b0)>앤서니 매콜리프"
+msgstr ""
+
+msgctxt "tip02"
+msgid "\"그래, 싸게 될 거야!\"\n\n<s(18)e(shadow)b+c(5b88b0)>Andy"
+msgstr ""
+
+msgctxt "tip03"
+msgid "\"쾅\"\n\n<s(18)e(shadow)b+c(5b88b0)>Catt"
+msgstr ""
+
+msgctxt "tip28"
+msgid "\"서브모드 버그는 제보하지 마!!!!\"\n\n<s(18)e(shadow)b+c(5b88b0)>Editu"
+msgstr ""
+
+msgctxt "tip07"
+msgid "\"내가 생일 트윙크니까 누가 죽을지는 내가 정한다\"\n\n<s(18)e(shadow)b+c(5b88b0)>Catt"
+msgstr ""
+
+msgctxt "tip48"
+msgid "\"나는 전투를 못 봤다.\"\n\n<s(18)e(shadow)b+c(dacba2)>Nemo Revera"
+msgstr ""
+
+msgctxt "tip22"
+msgid "\"그래도 내 뒤는 좀 봐 줘.\"\n\n<s(18)e(shadow)b+c(dacba2)>Tele"
+msgstr ""
+
+msgctxt "tip04"
+msgid "\"전투를 준비하면서 늘 느낀 것은, 계획은 쓸모없지만 계획 세우기는 없어서는 안 된다는 점이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip06"
+msgid "\"완전한 안전을 원하면 감옥에 가라. 거기서는 먹여 주고, 입혀 주고, 치료도 해 준다. 모자란 것은 오직... 자유뿐이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip30"
+msgid "\"희생양 찾기는 모든 사냥 중에서 가장 쉬운 사냥이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip08"
+msgid "\"사람의 머리를 후려쳐서 이끄는 것이 아니다. 그건 폭행이지 리더십이 아니다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip09"
+msgid "\"지금 모든 것을 기록으로 남겨라. 영상을 확보하고 증인을 확보하라. 역사의 어느 길목에선가 어떤 놈이 일어나 이런 일은 없었다고 말할 테니까.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip10"
+msgid "\"싸움에서 중요한 것은 개의 크기가 아니라 개 안에 든 싸움 기질의 크기다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip11"
+msgid "\"연대를 쓸 수 있다면 고지를 점령하라고 대대를 보내지 마라.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip13"
+msgid "\"비관주의가 이긴 전투는 없다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip34"
+msgid "\"방어의 문제는, 밖에서 지키려는 것을 안에서부터 무너뜨리지 않고 어디까지 갈 수 있느냐이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip14"
+msgid "\"나는 전쟁을 겪어 본 군인만이 미워할 수 있는 방식으로 전쟁을 미워한다. 그 잔혹함과 헛됨, 어리석음을 본 사람으로서.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip39"
+msgid "\"리더십이란 잘못된 모든 일의 책임을 지고, 잘된 모든 일의 공을 부하에게 돌리는 것에 지나지 않는다.\"\n\n<s(18)e(shadow)b+c(dacba2)>드와이트 D. 아이젠하워"
+msgstr ""
+
+msgctxt "tip23"
+msgid "\"독일 병사 하나하나가 러시아군 포구 아래에 있다고 느끼게 만들어야 한다.\"\n\n<s(18)e(shadow)b+c(dacba2)>바실리 추이코프"
+msgstr ""
+
+msgctxt "tip42"
+msgid "\"스탈린은 버텨서 스탈린그라드를 지키라고 명령했다. 그래서 우리는 죽기 아니면 살기임을 알았다. 물러설 수 없었다.\"\n\n<s(18)e(shadow)b+c(dacba2)>바실리 추이코프"
+msgstr ""
+
+msgctxt "tip40"
+msgid "\"우리는 적을 괴롭히고 있고, 그들이 완전히 지칠 때까지 계속 괴롭힐 것이다. 이것은 단순한 일정한 전술이 아니라, 결정적이고 완전한 승리를 향한 넓은 시야의 전략이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>세묜 티모셴코"
+msgstr ""
+
+msgctxt "tip26"
+msgid "\"큰 힘을 가진 주권 국가가 있는 한, 전쟁은 피할 수 없다.\"\n\n<s(18)e(shadow)b+c(dacba2)>알베르트 아인슈타인"
+msgstr ""
+
+msgctxt "tip44"
+msgid "\"전사했다는 이유만으로 영웅이라는 생각은 흔한 통념이다. 오히려 사람은 죽을 때 바보인 경우가 많다고 나는 생각한다.\"\n\n<s(18)e(shadow)b+c(dacba2)>조지 패튼"
+msgstr ""
+
+msgctxt "tip31"
+msgid "\"누구나 첫 전투에서는 겁이 난다. 안 난다고 하면 거짓말쟁이다. 겁쟁이도 있지만, 그들도 용감한 자들과 똑같이 싸운다. 안 그러면 자기만큼 겁먹은 자들이 싸우는 걸 지켜보다 호되게 당한다. 진짜 영웅은 겁이 나는데도 싸우는 사람이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>조지 패튼"
+msgstr ""
+
+msgctxt "tip33"
+msgid "\"총검에 죽는 사람은 적지만, 겁먹는 사람은 많다. 착검을 하면 우리 병사들은 접근하고 싶어진다. 접근하겠다는 위협만이 단호한 적을 꺾는다.\"\n\n<s(18)e(shadow)b+c(dacba2)>조지 패튼"
+msgstr ""
+
+msgctxt "tip36"
+msgid "\"전쟁을 잘 이기는 자는 좋은 평화를 만들기 어렵고, 좋은 평화를 만들 수 있는 자는 애초에 전쟁에서 이기지 못했을 것이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+msgstr ""
+
+msgctxt "tip54"
+msgid "\"\모든 위대한 것은 단순하고, 많은 것이 한 단어로 표현된다. 자유, 정의, 명예, 의무, 자비, 희망.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+msgstr ""
+
+msgctxt "tip50"
+msgid "\"오르간 연주자가 방에 있는데 원숭이와 토론하지 마라.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+msgstr ""
+
+msgctxt "tip37"
+msgid "\"유화론자란 악어가 자기를 마지막에 잡아먹기를 바라며 악어에게 먹이를 주는 자다.\"\n\n<s(18)e(shadow)b+c(dacba2)>윈스턴 처칠"
+msgstr ""
+
+msgctxt "tip55"
+msgid "\"어떤 망할 바보가 측면은 안전해야 한다고 말했다. 그 뒤로 온 세상의 개자식들이 측면을 지키고 있다. 나는 동의하지 않는다. 내 측면은 적이 걱정할 일이지 내가 걱정할 일이 아니다. 적이 내 측면이 어디인지 알아내기 전에, 나는 그 새끼의 목을 따 놓을 것이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>패튼"
+msgstr ""
+
+msgctxt "tip45"
+msgid "\"리더십이란 사람들을 공동의 목적으로 결집시키는 능력과 의지, 그리고 신뢰를 불러일으키는 인격이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>버나드 몽고메리"
+msgstr ""
+
+msgctxt "tip46"
+msgid "\"나는 전쟁을 크리켓 경기처럼 보는 사람이 아니다. 상대를 이기려고 처음엔 뭐든 내주고 나서 악수나 하는 그런 경기 말이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>더글러스 베이더"
+msgstr ""
+
+msgctxt "tip47"
+msgid "\"자네 부하들은 지치는 것과 죽는 것 중 어느 쪽이 낫겠나?\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+msgstr ""
+
+msgctxt "tip49"
+msgid "\"몇몇의 행동 때문에 사람들을 미워하지 마라. 증오와 편협함이 내 나라를 무너뜨렸고 수백만이 죽었다. 사람들이 나치 때문에 독일인을 미워하지 않고, 노예제 때문에 미국인을 미워하지 않기를 바란다. 절대 미워하지 마라. 증오는 너를 산 채로 갉아먹을 뿐이다. 열린 마음으로 언제나 사람의 좋은 면을 찾아라. 찾아낸 것에 놀랄지도 모른다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에리히 하르트만"
+msgstr ""
+
+msgctxt "tip51"
+msgid "\"선한 사람이든 악한 사람이든 약해질 수 있다. 차이는 단지, 악한 사람은 평생 선행 하나를 자랑스러워하지만, 정직한 사람은 자기 선행을 거의 의식하지 못하고 죄 하나를 몇 해씩 기억한다는 것이다...\"\n\n<s(18)e(shadow)b+c(dacba2)>바실리 그로스만"
+msgstr ""
+
+msgctxt "tip52"
+msgid "\"우리는 후퇴하는 게 아니다... 다른 방향으로 전진하는 것이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>더글러스 맥아더"
+msgstr ""
+
+msgctxt "tip43"
+msgid "\"젠장.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+msgstr ""
+
+msgctxt "tip27"
+msgid "\"어떤 계획도 적과 접촉하면 살아남지 못한다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+msgstr ""
+
+msgctxt "tip53"
+msgid "\"땀은 피를 아끼고, 피는 목숨을 아끼지만, 머리는 둘 다 아낀다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+msgstr ""
+
+msgctxt "tip56"
+msgid "\"군사적 합리성에 어긋나는 용기는 어리석음이고, 지휘관이 그것을 고집한다면 무책임이다.\"\n\n<s(18)e(shadow)b+c(dacba2)>에르빈 롬멜"
+msgstr ""

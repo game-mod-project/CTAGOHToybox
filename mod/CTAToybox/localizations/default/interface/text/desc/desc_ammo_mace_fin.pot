@@ -1,0 +1,29 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/ammo/280mm_rkh43"
+msgid "280mm 로켓 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/bulletfin_20 he"
+msgid "20 tkrv-Vj3 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/20mm_swe ap"
+msgid "20 Slpprj m/42 [<c(ff6a00)>AP</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/20mm_swe he"
+msgid "20 Sgr m/43 [<c(ff1200)>HE</c>]"
+msgstr ""

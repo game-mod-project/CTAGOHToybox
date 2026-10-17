@@ -1,0 +1,165 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1940_06_st_valery_en_caux)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/01"
+msgid "조용히... 영국군 전선 가까이 왔을 거다. 목소리가 들린다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/02"
+msgid "가능하면 조용히 처리해라. 놈들이 여기 있다면 마을이 바로 옆이라는 뜻이다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/03"
+msgid "우리의 목표는 바로 옆 마을 르 토를 확보하는 것이다. 그 뒤 교두보를 세워서 주력이 안전하게 도착하게 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/04"
+msgid "영국 구축함이 우리를 포격하고 있다! 근처 어딘가에 관측병이 있을 거다! 제거해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/05"
+msgid "주력이 도착했다. 이제 영국군 잔여 병력을 바다로 밀어낼 준비가 됐다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/06"
+msgid "적 포병 관측병이 우리의 모든 움직임을 지켜보고 있어서 전차를 노지로 내보낼 수 없다. 소규모 분대를 보내 적 전방 관측병과 무전병을 제거해야 한다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/07"
+msgid "적 구축함의 눈을 멀게 한 뒤에는 전차로 적 대공포대를 무력화하고 아군 항공기를 불러들일 수 있다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/08"
+msgid "Gute Arbeit, Soldaten! 장갑차량과 전차의 지휘권을 자네들에게 넘기겠다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/09"
+msgid "적 대공포대를 무력화했다. 이제 루프트바페가 적 구축함을 확실히 처리할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/10"
+msgid "곡사포 포대가 방금 도착했다. 이제 공습도 쓸 수 있다. 둘 다 써서 저 떠다니는 고철을 가라앉혀라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/11"
+msgid "좋은 명중이다! 구축함을 무력화했다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/12"
+msgid "Soldaten! 마지막 돌격의 시간이다! 토미들을 절벽에서 밀어내자! 사기는 낮지만 예비대에 아직 위험한 병력이 남아 있다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/13"
+msgid "구축함이 무력화되자 영국군은 탈출할 길이 없었다! 놈들의 무기를 확보해라, 또 한 번 전투에서 이겼다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/01"
+msgid "Scheiße... 오늘은 안개가 너무 짙다. 아무것도 안 보인다."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/02"
+msgid "멈춰! 앞에 토미 둘이다! Verdammt..."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/03"
+msgid "도망친다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/04"
+msgid "저 소리 뭐지?... 포 소리 같은데..."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/05"
+msgid "적 관측병을 제거했습니다, Herr Kommandant!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/06"
+msgid "적 구축함이 아군 병력을 겨냥하고 있다! 발사하기 전에 빨리 엄폐시켜라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/07"
+msgid "관측병 하나 처치! 두 명 더 남은 것 같다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/08"
+msgid "관측병 둘 처치! 하나만 남았다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/09"
+msgid "적 관측병 전원 처치!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_soldier/10"
+msgid "엥글렌더들이 항복한다! 도망칠 곳이 없다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[reinforcements]/airstrike"
+msgid "공습"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task01"
+msgid "주력이 도착하기 전에 르 토를 점령하라."
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task02"
+msgid "적 전방 관측병과 무전병을 제거해 전차의 지휘권을 확보하라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task03"
+msgid "적 대공포대를 무력화하라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task04"
+msgid "영국 구축함을 무력화하라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task05"
+msgid "생발레리앙코 외곽의 영국군 잔여 병력을 제거하라!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/name"
+msgid "하일랜더와 유령"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/name_big"
+msgid "하일랜더와 유령"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/outro_completed"
+msgid "또 하나의 포위전에서 승리했고, 제2의 됭케르크를 막았다! 자네의 지휘라면 조만간 철십자 훈장 후보에 오를 것이다. 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/outro_failed"
+msgid "제기랄, 이 포위망은 쉽게 정리했어야 했다. 뭐가 잘못됐나? 사기가 꺾인 연합군을 손쉽게 꺾을 수 있었는데, 이제 놈들이 영국으로 달아날지도 모른다!"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task_secret_01"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[tasks]/task_secret_01_completed"
+msgid "비밀 목표 #1: 영국군 장비가 숨겨진 동굴을 찾아라"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/date"
+msgid "1940년 6월 12일 · 프랑스 노르망디, 생발레리앙코"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/place"
+msgid "제7판처사단"
+msgstr ""
+
+msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/story"
+msgid "'유령 사단'이라 불리는 제7판처사단은 6월 9일 루앙을 지나 이튿날 해안으로 향했다. 해안에 도달하려 서두른 끝에 이제 포위망을 완성했고, 발레리앙코에 있는 연합군 여러 사단의 탈출로를 성공적으로 차단했다. \n\n 다시 한번 연합군 한 개 군을, 아니 그 잔존 병력을 포위하는 데 성공했다.\n\n 제2의 됭케르크를 허용해서는 안 된다. 적이 탈출하기 전에 섬멸해야 한다. 선두에 서서 즉시 전진하라!"
+msgstr ""

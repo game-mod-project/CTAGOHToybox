@@ -1,0 +1,141 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1945_04_konigsberg)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/doctrine_support"
+msgid "교리: 지원"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/date"
+msgid "1945년 4월 6일 · 동프로이센, 쾨니히스베르크"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/lose"
+msgid "모든 병력을 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/lose2"
+msgid "제때 동지들을 구원하지 못했다. 인접한 제31근위소총사단 부대가 궤멸됐다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/name"
+msgid "쾨니히스베르크 포위망 <c(a655af)>[DLC]</c>"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/name_big"
+msgid "쾨니히스베르크 포위망"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/01"
+msgid "야수의 소굴에 온 걸 환영한다, 동지들. 여기는 프로이센의 심장 쾨니히스베르크다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/02"
+msgid "자비는 없다! 제31근위소총사단을 돕기 위해 철도까지 돌파해야 한다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/03"
+msgid "파시스트들을 진지에서 몰아내고 기차역으로 가는 길을 열어라, 지휘관! 행운을 빈다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/04"
+msgid "훌륭하다. 파시스트의 저항은 붉은 물결을 막기에 너무 약하다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/05"
+msgid "잘했다, 동지들! 쾨니히스베르크 철도망은 곧 쓸모없어질 것이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/06"
+msgid "주의! 인접 연대가 철로 반대편 독일군에게 맹렬한 사격을 받고 있다. 즉시 지원해라, 당장 구원해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/07"
+msgid "동지들, 자네들을 구원하고 함께 싸워 파시스트 저항을 부수게 되어 기쁘다. 승리를 향해 전진!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/08"
+msgid "도시 깊숙이 들어갈수록 독일군은 방어를 더 강화한 것이 분명하다. 아직 성채와 도심을 점령해야 하는데, 쉽지 않을 것이다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/09"
+msgid "독일 요새에 대한 해법을 가져왔다! 스탈린의 망치가 성채를 곧장 뚫을 것이다. 놈들에게 지옥으로 가는 길을 보여 줘라, 동지들!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/10"
+msgid "파시스트 성채를 무너뜨려라! 승리를 향해!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/11"
+msgid "가자, 동지들. 적이 무너지기 직전이다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/narrator/12"
+msgid "킹 티거가 북서쪽에서 도로를 따라 올라온다!!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/outro_completed"
+msgid "아주 좋다! 옛 동프로이센의 수도, 아니 그 남은 것은 우리 것이다. 이는 분명 자네의 명성에 큰 도움이 될 것이다. 이제 붉은 군대를 막을 수 없음을 보여 줬다. 사기가 이보다 높을 수 없다, 훌륭하다. 베를린으로!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/outro_failed"
+msgid "무슨 일이 있었나? 기대한 결과와는 거리가 멀다. 보급이 부족한 적이 어떻게 아직도 자네를 이길 수 있나? 즉시 다시 시도해라. 전 전선에서 유일하게 실패한 포위전이 될 수는 없다."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/place"
+msgid "제31근위소총사단"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/story"
+msgid "1945년 1월 말, 쾨니히스베르크는 고립됐다. 독일군은 철수하지 않고 마지막까지 도시를 지킬 준비를 한다. 4월 초 소련군은 나흘간 이어지는 포격을 시작한다. 4월 6일 마침내 포격이 끝나고 공격이 시작된다. 붉은 군대가 사방에서 도시를 급습한다. 대규모 공격이 방어선을 연이어 깨뜨리며 시내까지 다다른다.\n\n이번 임무에서 자네는 병력을 이끌고 쾨니히스베르크로 들어간다. 독일군은 도시를 요새로 만들었다. 곳곳에 거점이 있다. 먼저 이를 제거한 뒤 기차역을 점령해야 한다. 그러고 나서 도심으로 진격할 수 있다. 옛 성문을 장악한 낡은 요새 "하버베르크"를 제거해야 한다. 여유가 생기는 대로 요새를 처리할 중포를 받게 된다. 쾨니히스베르크 공격에 병력을 준비시켜라.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/task1"
+msgid "철도 보급소에서 독일군을 몰아내라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/task2"
+msgid "공장 지대의 독일군을 제거하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/task3"
+msgid "제31근위소총사단이 철도 옆에 발판을 마련하도록 지원하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/task4"
+msgid "성채를 공격하라."
+msgstr ""
+
+msgctxt "mission/single/01-rus/1945_04_konigsberg/task5"
+msgid "도심으로 진격하라."
+msgstr ""

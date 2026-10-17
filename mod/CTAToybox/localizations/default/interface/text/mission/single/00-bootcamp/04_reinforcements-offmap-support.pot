@@ -1,0 +1,213 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (04_reinforcements-offmap-support)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/complete"
+msgid "네 번째 훈련(증원)을 완료한 것을 축하한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/date"
+msgid "1941년 6월 25일 · 소련 국경"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint_video"
+msgid "이 단추를 눌러 이 훈련 단계의 영상을 다시 본다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/name"
+msgid "훈련 4: 증원"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/name_big"
+msgid "증원"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/00"
+msgid "병사들! 전선에 돌아온 것을 환영한다! 오늘은 본부에 증원을 요청하는 법과 포병 통신병 같은 지원 무기를 쓰는 법 등 고급 전술을 배운다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/00a"
+msgid "먼저 '소총 분대'를 호출해라. 도착하면 참호로 들어가게 해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/00c"
+msgid "훌륭하다! 방어를 보강할 새 부대를 쓸 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint/reinf_info4"
+msgid "증원 단추 위에 커서를 올리면 추가 정보를 볼 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint/reinf_info5"
+msgid "현재 쓸 수 있는 인력 점수(MP)는 제한돼 있지만, 필요한 부대를 호출하기에는 충분하다. 상황에 따라 목표를 완수하면 추가 점수가 주어질 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/01"
+msgid "이제 MG 34, 8cm 박격포, 2cm Flak을 호출해라. 우리 본부를 지키도록 전선에 배치해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/02"
+msgid "전선 방어를 준비해라. 우리 정찰병이 적 공격이 도착하기까지 예상 시간을 알려 줬다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint/skiphelp"
+msgid "새 증원 옵션 '준비 단계 건너뛰기'가 열렸다. 현재 준비 단계를 건너뛰고 다음 단계로 넘어갈 수 있다. 다음 단계는 대개 적의 공격이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint/artyzone"
+msgid "임무를 완수하려면 지도의 활성 전장에 포격을 요청해야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/hint/airstrikezone"
+msgid "공습이 임무를 완수하려면 지도 경계 안에 목표 지역을 지정해야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/03"
+msgid "잘했다, 놈들이 도망치고 있다! 다음 목표는 포병 통신병을 호출하는 것이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/03b"
+msgid "적에게 들키지 않게 포복으로 적 전초에 접근한 다음, 신호탄 권총으로 신호탄을 쏴서 포격을 요청해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/04"
+msgid "훌륭하다! 이제 적을 섬멸하고 놈들의 본부를 점령해야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/04b"
+msgid "이제 증원으로 호출할 수 있는 부대와 자원이 늘었다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/05a"
+msgid "이제 공습과 포격을 요청할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/05b"
+msgid "공습과 포격을 모두 동원해 적을 공격하라는 명령이다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/05c"
+msgid "정보에 따르면 러시아군 본부에 중전차가 있다. 공습이 이 문제를 처리하는 데 가장 효과적이다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/reinf_arrive"
+msgid "증원이 도착했다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/narrator/ger_officer/reinf_arrive_alt"
+msgid "증원이 도착했다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/timer"
+msgid "전선 방어를 준비하라"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/skiphint"
+msgid "준비가 끝나면 준비 단계를 건너뛰어라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/defendstatus"
+msgid "적의 공격을 격퇴하라"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/outro_completed"
+msgid "임무 완수!\n\n이 임무를 계속 하려면 '계속'을, 곧바로 다음 임무로 가려면 '다음'을 눌러라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/place"
+msgid "중부집단군"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/replay_video"
+msgid "영상 다시 보기"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/story"
+msgid "지원 무기 훈련에 온 것을 환영한다, 병사.\n\n이 훈련에서는 증원의 기본을 배운다. 추가 일반 부대를 호출하는 법과 포격·공습 같은 지원 전력을 요청하는 법이 포함된다.\n\n                                      행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task0"
+msgid "소총 분대를 호출해 참호로 이동시켜라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task1"
+msgid "MG 34, 8cm 박격포, 2cm Flak을 호출하라. 본부를 지키도록 전선(녹색 윤곽)에 배치하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task2"
+msgid "준비 단계를 건너뛰어라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task3"
+msgid "포병 통신병을 호출하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task4"
+msgid "적 전초에 조심스럽게 접근해 신호탄을 쏴라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task5"
+msgid "적 본부를 점령하라"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task6"
+msgid "적 목표에 맵 외 공습을 요청하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/task7"
+msgid "적 목표에 맵 외 포격을 요청하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/outro_failed"
+msgid "패배했다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/sdkfz222"
+msgid "Sd.Kfz 222 Ausf.A"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/mg34_lafette"
+msgid "Lafette MG 34"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/80mm_sgrw34"
+msgid "8cm sGrW 34"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/20mm_flak30"
+msgid "2cm FlaK 30"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/inf"
+msgid "소총 분대"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/signaller"
+msgid "포병 통신병"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/panzer4f1"
+msgid "Pz.Kpfw IV Ausf.F1"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/airstrike2"
+msgid "Bf 110 공습"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/artystrike"
+msgid "포격"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/04_reinforcements-offmap-support/skip"
+msgid "준비 단계 건너뛰기"
+msgstr ""
