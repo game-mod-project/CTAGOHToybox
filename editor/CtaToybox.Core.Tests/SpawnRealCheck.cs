@@ -62,5 +62,18 @@ static class SpawnRealCheck
         // Spawn Menu of MACE는 멀티 389개, 원래 Spawn Menu는 388개(spike). 하나는 그 모드에만 있는 맵이라 계층에 없다
         T.True(campaign >= 91 && multi >= 388, "at least the maps Spawn Menu covered");
         T.Eq(0, differ, "map copies are the winning file plus the include lines only");
+
+        // 메뉴
+        var menuSkipped = new List<string>();
+        var menu = MenuBuilder.Build(cat, new MenuOptions(), n => stack.Find("interface/scene/unit_icon/" + n + "_00.tga") != null, b => stack.Find(SpawnCatalog.BreedFile(b)) != null, menuSkipped);
+        var menuParse = SdlCore.Parse(menu.Text);
+        var pairs = SpawnMenuTests.Pairs(menu.Text);
+        int maxId = System.Text.RegularExpressions.Regex.Matches(menu.Text, " 0x([0-9a-f]+)\\r\\n").Select(m => Convert.ToInt32(m.Groups[1].Value, 16)).DefaultIfEmpty(0).Max();
+        Console.WriteLine("spawn-menu bytes=" + menu.Text.Length + " screens=" + menu.Screens.Count + " buttons=" + menu.Screens.Sum(s => s.Buttons.Count) + " templates=" + menu.Templates + " triggers=" + menu.Triggers + " skipped=" + menuSkipped.Count + " max-id=0x" + maxId.ToString("x") + " max-buttons=" + menu.Screens.Max(s => s.Buttons.Count));
+        foreach (var g in menuSkipped.GroupBy(x => x.Substring(x.IndexOf(':') + 1).Trim()).OrderByDescending(g => g.Count()).Take(5)) Console.WriteLine("  spawn menu skipped " + g.Count() + "x: " + g.First());
+        foreach (string p in pairs.Take(5)) Console.WriteLine("  spawn menu pair: " + p);
+        T.Eq(0, menuParse.Errors.Count, "the real menu parses");
+        T.Eq(0, pairs.Count, "the real menu's buttons, events and triggers pair up");
+        T.True(maxId <= 0xFFFF, "template ids stay in the 16-bit range the missions use");
     }
 }

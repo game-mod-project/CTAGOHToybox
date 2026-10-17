@@ -40,7 +40,7 @@ static class SpawnFixture
             (InfGer, "{\"mp/ger/mid/tankman\" (\"inf_tankman\" side(ger) cost(5.0))}\n{\"mp/ger/mid/tank_commander\" (\"inf_tankman\" side(ger) cost(6.0))}\n"),
             ("set/breed/mp/ger/mid/nco.set", "{breed {x 1}}\n"), ("set/breed/mp/ger/mid/rifle.set", "{breed {x 1}}\n"),
             ("set/breed/mp/ger/mid/tankman.set", "{breed {x 1}}\n"), ("set/breed/mp/ger/mid/tank_commander.set", "{breed {x 1}}\n"),
-            ("properties/airborne.ext", "{x 1}\n"), ("set/breed/mp/ger/mid/artilleryman.set", "{breed {x 1}}\n"),
+            ("properties/airborne.ext", "{x 1}\n"), ("set/breed/mp/ger/mid/artilleryman.set", "{breed {x 1}}\n"), ("set/breed/mp/ger/mid/pilot.set", "{breed {x 1}}\n"),
             ("set/multiplayer/games/presets/global_parameters/unitlimits.inc", "{unitLimits \"officer=2;limit4=4\"}\n"),
         };
         set.RemoveAll(x => System.Array.Exists(extraSet, e => e.Name == x.Item1));   // 같은 경로는 넘긴 판으로 바꾼다
