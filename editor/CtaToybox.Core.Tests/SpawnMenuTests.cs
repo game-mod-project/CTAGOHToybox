@@ -81,7 +81,23 @@ static class SpawnMenuTests
         T.True(menu.Contains("\"ctb_start\"") && menu.Contains("{type side}") && menu.Contains("{state \"-\"}"), "start trigger and visible root");
 
         // 옵션(Task 6)
-        T.True(menu.Contains("{impregnability full}") && menu.Contains("{veterancy 8}") && menu.Contains("artillery_single_150_dummy") && menu.Contains("{\"loop\" 6") && menu.Contains("score_add"), "options are in the menu");
+        T.True(menu.Contains("{impregnability full}") && menu.Contains("{veterancy 8}") && menu.Contains("artillery_single_150_dummy") && menu.Contains("score_add"), "options are in the menu");
+        // 포격: 크기마다 5~20발, 크기마다 반경이 다른 웨이포인트에 떨어진다(사용자 요청 2026-10-18)
+        foreach (var b in MenuBuilder.Barrages)
+        {
+            T.True(b.Shots >= 5 && b.Shots <= 20, "barrage shot count in 5..20: " + b.Key);
+            string trig = menu.Substring(menu.IndexOf("{\"1.event\" {id \"ctb_e_" + b.Key + "\"}}"));
+            trig = trig.Substring(0, trig.IndexOf("{\"trigger\""));
+            T.True(trig.Contains("{\"loop\" " + b.Shots + "\r\n") && trig.Contains("{waypoint \"ctb_wp_" + b.Key + "\"}"), "barrage loops its shots on its own waypoint: " + b.Key);
+            T.True(menu.Contains("{\"ctb_wp_" + b.Key + "\" {position -9546.01 7248.6 0} {radius " + b.Radius + "}}"), "barrage waypoint has its spread radius: " + b.Key);
+            T.Eq("ctb_wp_" + b.Key, r.Screens.SelectMany(s => s.Buttons).Single(x => x.Event == "ctb_e_" + b.Key).Waypoint, "the barrage button picks its own waypoint: " + b.Key);
+        }
+        T.True(MenuBuilder.Barrages.Select(b => b.Shots).SequenceEqual(MenuBuilder.Barrages.Select(b => b.Shots).OrderBy(x => x)) && MenuBuilder.Barrages.First().Shots == 5 && MenuBuilder.Barrages.Last().Shots == 20, "small 5 to large 20");
+        // 맨 위 Spawn 단추는 여닫기
+        string root = menu.Substring(menu.IndexOf("{\"1.event\" {id \"ctb_e_root\"}}"));
+        root = root.Substring(0, root.IndexOf("{\"trigger\""));
+        T.True(root.IndexOf("{value 1}") < root.IndexOf("{name \"ctb_s*\"}") && root.Contains("\"ctb_open$\"") && root.Contains("{function \"ctb_home\"}"), "root closes an open menu and opens a closed one: " + root);
+        T.True(menu.Contains("{\"ctb_open\"}"), "open flag declared");
         T.True(menu.Contains("{amount 1}") && menu.Contains("_bleedout_"), "pick-one and wreck cleanup");
 
         // 캠페인 국가 조각과 .pot
