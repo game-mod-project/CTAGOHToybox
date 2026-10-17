@@ -19,8 +19,8 @@ static class L10nSourcesTests
         string modA = Path.Combine(game, "mods", "moda"), modB = Path.Combine(game, "mods", "modb");
         Directory.CreateDirectory(Path.Combine(modA, "resource")); Directory.CreateDirectory(Path.Combine(modB, "resource"));
         T.Zip(Path.Combine(modA, "localizations", "default.pak"), ("default/interface/text/tips.pot", Pot.Replace("Tank", "Tank A")));
-        T.Put(modB, "localizations/default/interface/text/desc/b.pot", Pot);
-        T.Put(outDir, "localizations/default/interface/text/tips.pot", Pot.Replace("Tank", "전차"));
+        T.PutUtf8(modB, "localizations/default/interface/text/desc/b.pot", Pot);
+        T.PutUtf8(outDir, "localizations/default/interface/text/tips.pot", Pot.Replace("Tank", "전차"));
         string options = Path.Combine(work, "options.set");
         File.WriteAllText(options, "{options {mods \"moda:0\" \"modb:0\" \"" + Path.GetFileName(outDir) + ":0\"}}");
         var s = new EditorSettings { GameDir = game, WorkshopDir = T.TempDir(), OptionsSetPath = options, OutputModDir = outDir, OutputModName = Path.GetFileName(outDir) };

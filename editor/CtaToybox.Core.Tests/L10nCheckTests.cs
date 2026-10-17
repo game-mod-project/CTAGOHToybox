@@ -47,7 +47,7 @@ static class L10nCheckTests
         var loaded = Glossary.Load(psv);
         T.True(loaded.Count == 2 && loaded[0].Keep && !loaded[1].Keep && loaded[1].Note == "부대", "glossary loaded");
         T.Eq(0, Glossary.Load(Path.Combine(dir, "none.psv")).Count, "missing glossary is empty");
-        T.Put(dir, "interface/text/a.po", "msgctxt \"k\"\nmsgid \"<c(F00)>x</c>\"\nmsgstr \"가\"\n\nmsgctxt \"k2\"\nmsgid \"y\"\nmsgstr \"\"\n");
+        T.PutUtf8(dir, "interface/text/a.po", "msgctxt \"k\"\nmsgid \"<c(F00)>x</c>\"\nmsgstr \"가\"\n\nmsgctxt \"k2\"\nmsgid \"y\"\nmsgstr \"\"\n");
         var cat = L10nCheck.Catalog(dir, loaded, null);
         T.True(cat.Count(i => i.IsError) == 1 && cat.Any(i => i.Kind == "untranslated" && i.Key == "k2" && i.File == "interface/text/a.po"), "catalog check");
         T.Eq(0, L10nCheck.Catalog(dir, loaded, null, "nope").Count, "file filter");

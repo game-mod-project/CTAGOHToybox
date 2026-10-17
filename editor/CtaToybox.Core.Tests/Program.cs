@@ -54,6 +54,14 @@ static class T
         File.WriteAllBytes(p, Latin1.GetBytes(text));
     }
 
+    // 현지화 .po/.pot처럼 UTF-8로 읽는 파일(Put은 게임 파일 꼴로 Latin-1)
+    public static void PutUtf8(string root, string relativePath, string text)
+    {
+        string p = Path.Combine(root, relativePath.Replace('/', Path.DirectorySeparatorChar));
+        Directory.CreateDirectory(Path.GetDirectoryName(p));
+        File.WriteAllText(p, text, new System.Text.UTF8Encoding(false));
+    }
+
     public static void Zip(string pakPath, params (string Name, string Text)[] entries)
     {
         Directory.CreateDirectory(Path.GetDirectoryName(pakPath));
@@ -135,6 +143,7 @@ static class Suites
         ("L10nCatalog", L10nCatalogTests.Run),
         ("L10nCheck", L10nCheckTests.Run),
         ("L10nFont", L10nFontTests.Run),
+        ("L10nBuild", L10nBuildTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
