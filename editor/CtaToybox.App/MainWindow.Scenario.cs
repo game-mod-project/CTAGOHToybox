@@ -16,6 +16,8 @@
 //   remove <n>                수정 목록 n번째를 지운다
 //   group <목록> <글자> open|close  summary|full|roster 목록에서 이름에 글자가 든 첫 묶음을 펼치거나 접는다
 //   scroll <목록>             그 목록을 맨 아래로 내린다
+//   filecopy [<사본 가상 경로>]  열린 값 고치기 창(아이템·무기 이름 줄)에서 그 파일의 사본을 만들고 이 줄이 사본을 쓰게 한다(팩션 강화)
+//   addline <줄>              열린 값 고치기 창에서 그 값을 감싼 블록 끝에 줄을 더한다(팩션 강화)
 //   rule <종류>|<경로 글자>|<키>|<값 자리>|<연산>|<값>  일괄 규칙 창을 채워 연다(F1). 경로 글자는 쉼표로 나누고 비울 수 있다. 값 자리 -1은 수인 값 모두
 //   rulerow <글자>            지금 탭에서 이름·키·값에 글자가 든 첫 줄로 '이 키로 일괄 규칙...'을 연다(오른쪽 단추 메뉴와 같다)
 //   rulepreview               규칙 창의 '미리 보기'를 누른다
@@ -106,6 +108,14 @@ namespace CtaToybox.App
                     case "ruleok":
                         if (ruleDialog != null && ruleDialog.PressOk()) { ruleDialog.Close(); ruleDialog = null; AfterRuleChange(); log.Add("ruleok: 넣었다"); }
                         else log.Add("ruleok: 단추가 꺼져 있거나 넣지 못했다");
+                        break;
+                    case "filecopy":
+                        if (dialog != null && dialog.PressFileCopy(arg.Length == 0 ? null : arg)) { dialog.Close(); dialog = null; RefreshUnitViews(); RefreshEdits(); log.Add("filecopy: 넣었다"); }
+                        else log.Add("filecopy: 넣지 못했다");
+                        break;
+                    case "addline":
+                        if (dialog != null && dialog.PressAddLine(arg)) { dialog.Close(); dialog = null; RefreshUnitViews(); RefreshEdits(); log.Add("addline: 넣었다"); }
+                        else log.Add("addline: 넣지 못했다");
                         break;
                     case "cancel":
                         if (ruleDialog != null) { ruleDialog.Close(); ruleDialog = null; }

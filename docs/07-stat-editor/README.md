@@ -13,7 +13,8 @@
 | 유닛이 쓰는 무기·탄약 파일을 유닛과 함께 보기 (화면의 무기·탄약 탭) | |
 | 게임 설정(컨퀘스트 자원·길이·전투 규칙·AI, 스커미시 모드, 난이도) 고치기 | 맵 목록, 연구 트리 구조, 세이브 파일 고치기 |
 | 원본 파일(바닐라와 켜 둔 모드)의 값 하나를 바꾸는 수정을 프로젝트 파일에 담기 | 매크로 본문 안의 값을 "이 유닛만" 고치기 |
-| include로 공유된 값을 "이 유닛만" 고치기 (`add --scope unit`) | 키나 블록을 더하거나 빼기 |
+| include로 공유된 값을 "이 유닛만" 고치기 (`add --scope unit`) | 키나 블록을 빼기 |
+| 블록 끝에 줄 하나 더하기, 아이템·무기 파일을 새 이름으로 사본 만들기 (`add --kind add-line`, `add --kind file-copy`, 값 고치기 창) | |
 | 프로젝트를 빌드해 `mod/CTAToybox/resource`에 써넣기 | |
 | 게임이나 모드가 갱신돼 원래 값이 달라진 수정을 알아채기 | |
 
@@ -174,6 +175,25 @@ ctatoybox rule add --project editor/projects/my-tweaks.json --name "경전차 �
 ctatoybox rule list --project editor/projects/my-tweaks.json
 ctatoybox rule edit --project editor/projects/my-tweaks.json --id <id> --mul 1.2
 ctatoybox rule reapply|enable|disable|remove --project editor/projects/my-tweaks.json --id <id>
+```
+
+### 팩션별 강화 프로젝트 (`faction-preset`)
+
+군대(ger·rus·usa·eng·fin·jap) 하나의 유닛만 강화하는 프로젝트를 만든다(설계: [../superpowers/specs/2026-10-17-faction-boost-design.md](../superpowers/specs/2026-10-17-faction-boost-design.md), 파일 정리: [../12-faction-files.md](../12-faction-files.md)). 다른 군대 유닛과 상대 AI는 지금 판 그대로다.
+
+- 베이스(`--base`, 보통 `editor/projects/월드워-차종.json`)의 수정을 그대로 가져온다. 시야는 모든 군대에 같다.
+- 유닛 강화(그 군대 유닛만): 인벤토리 개수 ×2(탄약 파일 `.ammo`로 풀리는 아이템은 ×5, 개수와 ± 편차를 같이), 재장전 시간 ×0.5, 보병 체력 ×2, 장갑 차량 ×2·경전차 ×2·중형 ×2.5·중전차 ×3·초중전차 ×5, 속도 ×1.5, 연료와 항속 ×10. 배수는 인자로 바꾼다.
+- 인벤토리·장갑·속도·연료는 일괄 규칙(군대 거르기)으로 들어가 앱의 "일괄 규칙"에서 보고 다시 적용할 수 있다. 항속(range)은 연료 규칙이 고친 mobility 호출마다 직접 고친다.
+- 재장전: 무기는 여러 군대가 이름으로 같이 부르므로, 그 군대 유닛이 부르는 무기마다 파일 사본(`<이름>_ctb_<군대>`)을 만들어 장전 시간을 고치고 그 군대 유닛의 이름 값만 사본 이름으로 바꾼다. 원형·매크로에서 오는 장전 시간은 사본에 `{rechargeTime N}` 줄을 더한다.
+- 보병 체력: perks의 `"health"` 값 2배를 그 보병 파일의 perks 블록 끝에 `{"health" "N%"}`로 더한다. 더한 줄과 사본 쪽 줄이 매크로·원형 값을 이기는지는 게임 안 확인을 하지 않아 미확인이다.
+- 초중전차는 `editor/presets/super-heavy.txt`(손으로 고친다)의 유닛 폴더다. 파생형(대공·자주포·구축전차)도 넣었다.
+- 컨퀘스트(플레이어 몫만, 모든 군대 프로젝트에 같이): 시작 자원 MP·AP 99999, SP·RP 999, 단계 I~V 한도와 예비 병력 한도 9999, 승패 보상 MP·AP `"1:99999"`, SP·RP 999. AI 몫(`Bots`)은 그대로다.
+- 스커미시: 배틀존·탄약전 프리셋의 MP 시작·끝과 CP ×50(`--skirmish`), 봇 배율(`bots_generic.inc`의 mpStart·mpFinish·cp) ÷50이라 AI의 결과 값은 그대로다. 피난은 팀 a(플레이어 수비)만 ×50. DP와 프런트라인은 그대로다.
+- 두 군대 로스터에 같이 등록된 유닛(바닐라 5대)은 건너뛰고 보고한다. `--report <파일>`은 건너뛴 것을 모두 적는다.
+
+```
+ctatoybox faction-preset --army ger --base editor/projects/월드워-차종.json --project editor/projects/강화-독일.json
+ctatoybox build --project editor/projects/강화-독일.json
 ```
 
 ### "이 유닛만"이 하는 일

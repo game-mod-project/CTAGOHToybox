@@ -42,6 +42,9 @@ static class AddLineTests
         T.True(s.AddLineEdit(null, Breed, "/perks", 0, "{\"health\" \"600%\"}") == line, "the same line returns the same edit");
         T.Throws<System.ArgumentException>(() => s.AddLineEdit(null, Breed, "/nope", 0, "{x 1}"), "a missing block is refused when adding");
         var unit = s.OpenUnit(Breed);
+        var itemValue = unit.Rows.Single(r => r.Path == "/inventory/item").Values[0];
+        T.Eq("/inventory", s.BlockOfValue(itemValue).Path, "a line next to an item goes into inventory, not inside the item row");
+        T.Eq("/perks", s.BlockInFile(Breed, "/perks").Path, "a block found by path in the unit file");
         s.AddEdit(unit, unit.Rows.Single(r => r.Path == "/cost").Values[0], "6", "shared");
         s.Project.Edits.Add(AddLine.New(Breed, Breed, "/gone", 0, "{y 1}"));
         var checks = s.CheckEdits();

@@ -66,6 +66,12 @@ namespace CtaToybox.Core
             return result;
         }
 
+        // 글자 자리 index를 감싼 가장 안쪽 블록. 없으면 null
+        public static BlockSpan BlockAround(string text, int index)
+        {
+            return Blocks(text).Where(b => b.Open < index && index < b.Close).OrderByDescending(b => b.Open).FirstOrDefault();
+        }
+
         public static BlockSpan Find(string text, string path, int occurrence)
         {
             return Blocks(text).FirstOrDefault(b => b.Occurrence == occurrence && string.Equals(b.Path, path, StringComparison.OrdinalIgnoreCase));

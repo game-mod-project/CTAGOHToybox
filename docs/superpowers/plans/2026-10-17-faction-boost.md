@@ -2,6 +2,8 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
+**상태:** 구현 끝(2026-10-17). 결과는 설계 문서 "구현 결과".
+
 **Goal:** 월드워-차종을 베이스로 군대(ger·rus·usa·eng·fin·jap)마다 강화 프로젝트를 만든다. 그 군대 유닛만 강해지고 다른 군대는 지금 판 그대로다. 컨퀘스트·스커미시의 플레이어 몫 자원도 최대로 한다.
 
 **Architecture:** 편집기 코어에 세 가지를 더한다. (1) 군대 소속 색인(`ArmyIndex`) — 로스터의 `side()`와 파일 이름으로 유닛을 군대에 묶는다. (2) 파일 사본 수정(`Kind "file-copy"`) — `SourceStack`이 사본 경로를 원본 내용으로 보이게 해서 기존의 펼치기·고치기·빌드가 그대로 돈다. (3) 줄 더하기 수정(`Kind "add-line"`) — 블록의 닫는 괄호 앞에 줄 하나를 넣는다. 그 위에 `FactionPreset`이 수정 목록을 만들고, 명령줄 `faction-preset`이 프로젝트 파일을 쓴다.

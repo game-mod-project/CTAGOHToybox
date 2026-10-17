@@ -55,6 +55,35 @@ namespace CtaToybox.Core
         string checkedFile, checkedText;
         TextKind checkedKind;
 
+        // 값이 든 파일에서 그 값을 감싼 블록(줄 더하기 창). 못 찾으면 null
+        public BlockSpan BlockOfValue(ValueView value)
+        {
+            var t = value.Trace;
+            if (t == null || t.File == null || t.Arg < 0) return null;
+            var found = Stack.Find(t.File);
+            if (found == null || LuaTable.IsLua(found.VirtualPath)) return null;
+            TextKind kind;
+            string text = BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
+            string error;
+            var rows = SourceRows.Of(found.VirtualPath, text, out error);
+            var row = rows == null ? null : rows.FirstOrDefault(r => r.Occurrence == t.Occurrence && string.Equals(r.Path, t.KeyPath, StringComparison.OrdinalIgnoreCase));
+            if (row == null || t.Arg >= row.Leaves.Count) return null;
+            // 값이 든 줄 자신의 { }(예 {item "x" 5})가 아니라 그 줄을 감싼 블록(inventory)에 넣는다
+            string own = row.Path.Substring(row.Path.LastIndexOf('/') + 1);
+            var around = AddLine.Blocks(text).Where(b => b.Open < row.Leaves[t.Arg].Index && row.Leaves[t.Arg].Index < b.Close).OrderByDescending(b => b.Open).ToList();
+            if (around.Count > 0 && around[0].Path.Substring(around[0].Path.LastIndexOf('/') + 1) == own) around.RemoveAt(0);
+            return around.FirstOrDefault();
+        }
+
+        // 파일에서 그 경로의 첫 블록(고칠 값이 없는 줄, 예: 매크로로 채운 perks). 없으면 null
+        public BlockSpan BlockInFile(string file, string blockPath)
+        {
+            var found = Stack.Find(file ?? "");
+            if (found == null || LuaTable.IsLua(found.VirtualPath)) return null;
+            TextKind kind;
+            return AddLine.Find(BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath)), blockPath, 0);
+        }
+
         // 블록 끝에 줄 하나를 더한다(팩션 강화). 같은 파일·블록·줄이 이미 있으면 그 수정을 돌려준다. 안 되면 ArgumentException
         public Edit AddLineEdit(string unit, string file, string blockPath, int occurrence, string line)
         {
