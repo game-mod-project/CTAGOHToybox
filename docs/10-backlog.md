@@ -11,7 +11,6 @@
 
 | ID | 내용 | 출처 | 메모 |
 |---|---|---|---|
-| P10 | 한글화 | 사용자 2026-10-17 | **진행**(`feat/korean-localization`, 계획 `docs/superpowers/plans/2026-10-17-korean-localization.md`). 도구(`l10n extract|check|build`)와 편집기 `원문 (한글)` 표시는 끝. 번역(Task 10~14)이 남았다 |
 | P2 | 원 요청 4번 "추가 기능 검토" | 스펙 A 12행 | **진행**(사용자 2026-10-17). 후보 12개와 권하는 순서를 `docs/11-feature-review.md`에 적었다. 1순위 F1 일괄 규칙은 2026-10-17에 끝냈다(`rule` 명령, 앱 규칙 창). 다음 후보(F2 SDL 원문 주석, F3 무기·탄약 복제)는 사용자가 고른다 |
 | P4 | 대형 모드 비교(Hotmod 1968 등 6개) | `docs/09` 77행 | **보류**(사용자 2026-10-15, 2026-10-17 다시 보류). 구독하면 모드 분석 도구로 비교 |
 | P8 | Yandex Disk의 러시아어 GEM2 문서 묶음을 받아 볼지 | H13 85행 | **받아서 확인**(사용자 2026-10-17). 주소가 기록에 없다. 옛 Best Way 위키 보존본, xgm.guru 글, 웹 검색으로 찾지 못했다. 사용자가 주소를 알려 주면 받아서 확인한다 |
@@ -133,3 +132,4 @@ E4·E14~E18은 2026-10-16~17에 끝냈다(아래 "정리하며 지운 것").
 | 외부 테스트 프레임워크(P7) | 2026-10-17 "사용": `editor/CtaToybox.Core.XunitTests`가 자체 테스트 묶음 47개를 xUnit으로 돌린다. `Run-Tests.ps1`은 `dotnet test`를 쓴다(`chore/xunit-tests`) |
 | 확인용 컨퀘스트 캠페인(P9) | 2026-10-17 "정리": "Conquest 3"은 저장 파일이 이미 없었다. 확인용 `ctatoybox check.sav`·`ctatoybox check2.sav`는 지우지 않고 `_work/ingame/campaign-archive/`로 옮겼다. 사용자 캠페인 conquest 1·2는 그대로다 |
 | 하위 프로젝트 C 스폰 모드 대체(P1, W-J) | `feat/spawn-menu`(2026-10-17): 조사 `docs/13-spawn-menu-spike.md`, 스펙·계획 `docs/superpowers/{specs,plans}/2026-10-17-spawn-menu-replacement*`. 명령줄 `spawn-menu preview|build`가 `mod/CTAToyboxSpawn`을 만든다: 스커미시 비용 0·전 유닛 로스터(새 항목 612), 맵 479개(캠페인 91·멀티 388)에 메뉴 include, 증원 창 단계 메뉴(유닛 1,238, 분대 1,146, 단추 3,630)와 옵션. 맵 사본은 git에 넣지 않는다. 게임 안 동작은 미확인(README "스폰 모드") |
+| 한글화(P10) | `feat/korean-localization`(2026-10-17): 명령줄 `l10n extract|check|build`, 번역 보관 `l10n/ko`(파일 432, 항목 27,939, 고유 원문 16,907을 묶음 60개로 AI 번역, 같은 원문은 같은 번역), 용어집 `l10n/ko/glossary.psv`, 출력 `mod/CTAToybox/localizations`와 한글 없는 글꼴 81개의 `.font`(`main_*.fnt`로). 검사 오류 0, 원문이 빈 160항목만 영어. 편집기 이름 `원문 (한글)`. 맵·미션 파일에 박힌 글 207개는 모두 디버그·트리거 이름이라 다루지 않았다. 게임 안 동작(미확인 5개)은 설계 문서 |
