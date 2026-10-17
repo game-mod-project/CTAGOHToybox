@@ -1,0 +1,160 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+
+	("tank_heavy_tier2")
+
+	
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+
+	
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 800}
+		{Quality "large_flaw"}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 800}
+		{Quality "large_flaw"}
+	}
+;========================================
+	;{Volume "compensate_armor_100l"
+	;	{thickness 100}
+	;	{component "body"}
+	;	;{able clear {bullet}}
+	;}
+	("shield" args "compensate_armor_100l" 500)
+	;{Volume "compensate_armor_100r"
+	;	{thickness 100}
+	;	{component "body"}
+	;	;{able clear {bullet}}
+	;}
+	("shield" args "compensate_armor_100r" 500)
+	{Volume "compensate_armor_b1"
+		{thickness 800};+5
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_b2"
+		{thickness 800};+5
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_b3"
+		{thickness 800};+10
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_f1"
+		{thickness 1000};+5
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_f2"
+		{thickness 1000};+10
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_l1"
+		{thickness 925}
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_l2"
+		{thickness 925}
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_l3"
+		{thickness 925}
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_r1"
+		{thickness 925}
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_r2"
+		{thickness 925}
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_r3"
+		{thickness 925}
+		{component "body"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_tb"
+		{thickness 1050};+5
+		{component "turret"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_tl"
+		{thickness 1050};+5
+		{component "turret"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+	{Volume "compensate_armor_tr"
+		{thickness 1050};+5
+		{component "turret"}
+		;{able clear {bullet}}
+		{Quality "large_flaw"}
+	}
+;========================================
+	{Volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 100}
+	}
+	{Volume "gun"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 300}
+	}
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 1300}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{Volume "mantlet1"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 1300}
+		{Quality "large_flaw"}
+	}
+	{Volume "turret1"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 1100}
+		{Quality "large_flaw"}
+	}
+
+("tracks" repair(30) thickness(250))
+("gun" repair(30) thickness(300))

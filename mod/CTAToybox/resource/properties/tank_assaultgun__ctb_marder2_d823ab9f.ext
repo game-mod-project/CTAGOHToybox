@@ -6,7 +6,7 @@
 {targetSelector "tank_medium"}
 
 ;("mantlet" repair(30))
-("gun" thickness(20) repair(30))
+("gun" thickness(40) repair(30))
 
 (define "restore_ik_time"
 	{RestoreIKTime 4}

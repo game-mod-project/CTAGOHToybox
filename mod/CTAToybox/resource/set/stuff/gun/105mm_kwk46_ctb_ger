@@ -1,0 +1,29 @@
+{from "pattern gun"   ;105mm kwk46
+
+	{filling "bulletger_105_2"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound "utility/"}
+	{range 230 230} ; 
+	{calibre 105}
+
+	("reload time" seconds(9))
+
+	("velocity m/s" ap(850) apcr(930) he(820) heat(1))
+	("armor health" damage(370))
+	("armor health custom" shell(apcbc) damage(370) velocity(930) filler(567))
+
+	; PzGr.Rot/Sprgr. L/4.4 
+	("penetration_long" shell(apcbc) range(220) a(251) b(248) c(234) d(219) e(205))
+
+	; PzGr 40
+	("penetration_long" shell(apcr) range(220) a(304) b(298) c(274) d(248) e(223))
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+
+	("accuracy_direct" r1(0.55) range_ap(220) range_he(220) range_heat(220))
+}
+
+
+

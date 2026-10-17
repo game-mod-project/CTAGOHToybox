@@ -1,0 +1,38 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_gdpz_rfl_1"}
+	{portrait "ger_gd"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier_pzfaust"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_dirt_band_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+		
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 400 25}
+
+		{item "m24_splinter grenade" 4.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 1.6 1}
+		{item "panzerfaust_100_ctb_ger weapon" 2 filled}
+
+		{item "bandage_ger" 11 1}
+		{item "shovel_ger"}
+		{item "ger_fieldcap_m43"}
+
+		{in_hands 0}
+	}
+}

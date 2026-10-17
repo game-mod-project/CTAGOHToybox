@@ -1,0 +1,43 @@
+;_________________________________________
+; German heavy long-barreled AT Gun
+;=========================================
+
+
+{from "pattern gun"			; L/100 "sdkfz182h", "Elefant", "Jagdpanther" (物理严谨平衡版)
+	{filling "bulletger_88_l71"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_220")
+	{calibre 88}
+
+	("reload time" seconds(5))
+
+	("velocity m/s" ap(1150) apcr(1380) he(750) heat(600))
+	("armor health" damage(240))
+	("armor health custom" shell(apcbche) damage(240) velocity(1150) filler(102))
+	("armor health custom" shell(apcbc) damage(280) velocity(1150) filler(102))
+	("armor health custom" shell(apcr) damage(240) velocity(1380) filler(20))
+	("88_ger_slope_multipliers")
+
+	; Pzgr.39
+	("penetration_long" shell(apcbche) range(240) a(285) b(270) c(250) d(225) e(205))
+
+	; Pzgr.40 
+	("penetration_long" shell(apcr) range(240) a(345) b(310) c(265) d(215) e(185))
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+
+	; Gr.39 Hl 
+	("penetration_long" shell(heat) range(220) a(110) b(110) c(110) d(110) e(110))
+
+	; He
+	("penetration_long" shell(he) range(220) a(19) b(19) c(17) d(16) e(14))	
+
+	{parameters "he"
+		{range 220 220}
+	}
+
+	("accuracy_direct" r1(0.40) range_ap(220) range_he(220) range_heat(220))
+}

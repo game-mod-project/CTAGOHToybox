@@ -1,0 +1,38 @@
+{breed
+	{behaviour soldier}
+	{skin "us_m41_ranger_hs2_rfl_band_at_pfc"}
+	{portrait "ger_regular"}
+	{icon "bazooka"}
+	{icon_priority 6}
+	{tags "soldier_bazooka"}
+	{nationality ger}
+	{armors
+		{head us_m1_b}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("at_rank_5")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_2")
+	}
+	{inventory
+		{item "bazooka_m1a1_ctb_ger" filling "bazooka ammo heata" 2}
+		{item "bazooka ammo heata" 17.5 2.5}
+		
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "mk2 grenade" 4.5 1}
+		{item "m15_wp grenade" 0.5 1}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,84 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; schürzen 5mm
+
+	("tank_heavy_tier1")
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 100
+			{front 150}		; Lower Nose
+			{top 40}		; Glacis
+			{bottom 40}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 100
+			{front 150}
+			{top 40}
+			{bottom 40}
+		}
+		;{able {holed}}
+	}
+	{volume "engine"
+		{thickness 100
+			{front 40}
+			{top 40}
+			{bottom 40}
+		}
+	}
+	{volume "engine2"
+		{thickness 100
+			{front 40}
+			{top 40}
+			{bottom 40}
+		}
+	}
+	{volume "turret2"
+		{thickness 113
+			{front 200}
+			{top 40}
+		}
+	}
+	{volume "turret1"
+		{thickness 200}
+	}
+	{volume "turret3"
+		{thickness 113
+			{top 40}
+		}
+	}
+	{volume "mantlet1"
+		{thickness 200}
+		{CastSteel 0.8063}
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "mantlet2"
+		{thickness 200}
+		{CastSteel 0.8063}
+		{component "gun"}
+		{tags "gun"}
+	}
+	{volume "cupola"
+		{thickness 200
+			{top 40}
+		}
+		{CastSteel 0.8063}
+	}
+

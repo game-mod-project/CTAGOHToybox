@@ -1,0 +1,49 @@
+	("tank_heavy_tier2")
+
+	("gun" repair(30) thickness(150))
+	("tracks" repair(30) thickness(150))
+
+	("ammo" args "inventory")
+	("ammo" args "ammo")
+
+	;volume, component/tag
+	("make_component" args "body1" "body")
+
+	{volume "body"			; Superstructure
+		{thickness 800
+			{front 1200}
+			{top 250}
+			{rear 500}
+			{bottom 500}		; Overhang (above tracks)
+		}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 800
+			{front 1000}
+			{top 700}
+			{bottom 700}
+		}
+	}
+	{volume "turret1"
+		{thickness 800
+		}
+	}
+	{volume "body1"
+		{thickness 800
+		}
+	}
+	{volume "mantlet"
+		{thickness 1500
+		}
+	}
+	{volume "shield"
+		{thickness 400
+		}
+	}
+	{volume "engine"
+		{thickness 500
+		}
+	}
+	{extender "shield"
+		{on}
+	}

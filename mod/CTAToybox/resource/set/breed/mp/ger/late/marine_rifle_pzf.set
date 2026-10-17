@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_km_marine_rfl_2"}
+	{portrait "ger_kriegsmarine"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_overseascap_km_var3}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_defense")
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+
+		{item "m24 grenade" 2.5 1}
+		{item "m24_smoke grenade" 1.6 1}
+		{item "m24_geballteladung grenade" 0.3 1}
+		{item "panzerfaust_30_ctb_ger weapon" 1 1 filled}
+
+		{item "bandage_ger" 5 1}
+		{item "ger_stalhelm_m39_km_band_var2"}
+
+		{in_hands 0}
+	}
+}

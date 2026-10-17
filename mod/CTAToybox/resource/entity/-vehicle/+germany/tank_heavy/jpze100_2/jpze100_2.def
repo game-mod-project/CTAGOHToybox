@@ -1,0 +1,203 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_jpze100_2_17854dfd.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "td" "heavy" "-turret" "multi_board" "vision_lev06" "shell_eject" "detect_td_heavy"}
+	{extension "jpze100_2.mdl"}
+	(include "jpze100_2.ext")
+	{collider "tank.heavy"}
+	{PatherId "elefant"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+			{bone "visor1"}
+		}
+		{visor "commander"
+			{vision "searchlight"}
+			{bone "foresight3"}
+		}
+	}
+
+	
+;==============================================
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_jtiger_driver"} {end "seat_gunner_stand"} {base "open"}}
+			{reverse {end "board_jtiger_driver" -1} {base "open -1"}}
+		}
+		{anm "gunner"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"}  {base "board" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"}  {base "board" -1}}
+		}
+		{anm "gunner4"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"}  {base "board" -1}}
+		}
+		{anm "gunner5"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"}  {base "board" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"} {base "board" -1}}
+		}
+		{anm "charger3"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"} {base "board" -1}}
+		}
+		{anm "charger4"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"} {base "board" -1}}
+		}
+		{anm "commander"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+		{anm "passenger"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "board"}}
+			{reverse {end "emit_tank_2_hold"}  {base "board" -1}}
+		}
+	}
+
+	("crew_human" place(driver)		door(emit1)  visor(visor1))
+	("crew_human" place(gunner)		door(emit5) visor(visor2))
+	("crew_human" place(gunner3)	door(emit4) visor(visor2))
+	("crew_human" place(gunner4)	door(emit5) visor(visor2))
+	("crew_human" place(gunner5)	door(emit5) visor(visor2))
+	("crew_human" place(charger)	door(emit4) visor(none))
+	("crew_human" place(charger3)	door(emit4) visor(none))
+	("crew_human" place(charger4)	door(emit5) visor(none))
+	("crew_human" place(commander)	door(emit3) visor(around))
+
+	("seat_human" place(seat1) door(emit4)  animation(passenger))
+;==============================================
+	;("gunner_visible")
+
+	{extender "inventory"
+		{Box
+			{item "bulletger_170 apcbche" 95}
+			{item "bulletger_170 apcr" 25}
+			{item "bulletger_170 he" 85}
+			{item "bulletger_170 heat" 30}
+			{item "bulletger_20_auto ap" 1000}
+			{item "bulletger_20_auto apcr" 1000}		
+			{item "bulletger_20_auto he" 1000}
+			{item "ammo mgun_ger belt" 22500}
+			{item "geballteladung_3kg" 2}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "170mm_pak46_ctb_ger" filling "ammo bulletger_170 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger charger3 charger4" minWorkers 1}
+			("abm_dymamic_td"
+				zeroing(5.0)
+				dispersion(0.25)
+			)
+		}
+		{place "gun2"
+			{type "aa"}
+			{weapon "20mm_flak38_ctb_ger" filling "bulletger_20_auto he" 20}
+			{foresight "foresight2"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun11"
+			{type "hull"}
+			{weapon "mg42_tank_ctb_ger" filled}
+			{foresight "foresight11"}
+			{gunner "gunner4"}
+			{charger "gunner4"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun12"
+			{type "hull"}
+			{weapon "mg42_tank_ctb_ger" filled}
+			{foresight "foresight12"}
+			{gunner "gunner5"}
+			{charger "gunner5"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "light"
+			{RestoreIKAfterAim}
+			{weapon "searchlight"}
+			{foresight "foresight3"}
+			{gunner "commander"}
+			{basic}
+			{ai_in_manual}
+			{rotate}
+		}
+	}
+
+	{mass 134500}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.58))
+		("mobility_tank"
+			speed(45) ;----------Max speed when fully accelerated on road, km/h. ;30
+			reverse(12) ;--------Max speed in reverse on road, km/h.
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(134.5) ;-------Weight in Tonnes.
+			power(1100) ;---------Engine Power, in hp.
+			track(7.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(8600) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1000) ;----------Range in km, off-road.
+		)
+	}
+	{bone "gun_rot"
+		{speed2 4.00}
+	}
+	{bone "gun_rot2"
+		{speed2 6.00}
+	}
+	{bone "gun2"
+		{speed2 30}
+	}
+	{bone "gun3"
+		{speed2 30}
+	}
+	{bone "aux_turret1"
+		{speed2 30}
+	}
+	{bone "mgun11"
+		{speed2 30.00}
+	}
+	{bone "mgun11_rot"
+		{speed2 45}
+	}
+	{bone "mgun12"
+		{speed2 30.00}
+	}
+	{bone "mgun12_rot"
+		{speed2 45}
+	}
+}

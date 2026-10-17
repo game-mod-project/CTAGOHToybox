@@ -1,0 +1,42 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz10_xx.mdl"}
+
+	{volume "body1"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 4}
+	}
+	{volume "body4"
+		{thickness 4}
+	}
+	{volume "body5"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body6"
+		{thickness 4}
+	}
+	{volume "engine"
+		{thickness 4}
+	}
+	{volume "part1"
+		{thickness 30}
+	}
+	{volume "part2"
+		{thickness 30}
+	}
+	{volume "part3"
+		{thickness 30}
+	}
+	{volume "part4"
+		{thickness 30}
+	}
+	("tracks" thickness(30))
+}

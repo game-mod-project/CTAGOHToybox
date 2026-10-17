@@ -1,0 +1,121 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+	("gun2" repair(15) thickness(90))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Upper front Hull
+		{thickness 225	
+			{front 270}
+			{rear 540}
+			{top 75}
+			{bottom 135}
+		}
+	}
+	{volume "body2"			
+		{thickness 225
+			{front 480}
+			{rear 120}
+			{top 75}
+			{bottom 120}
+		}
+	}
+	{volume "body3"			
+		{thickness 225
+			{front 360}
+			{rear 120}
+			{top 75}
+		}
+	}
+	{volume "engine1"		
+		{thickness 225	
+			{front 270}
+			{rear 111}
+			{top 75}
+			{bottom 135}
+		}
+	}
+	{volume "engine2"		
+		{thickness 225	
+			{front 270}
+			{rear 111}
+			{top 75}
+			{bottom 135}
+		}
+	}
+	{volume "turret1"
+		{thickness 360	
+			{front 675}
+			{rear 360}
+			{top 210}
+			{bottom 135}
+		}
+	}
+	{volume "turret2"
+		{thickness 210	
+			{rear 120}
+			{top 111}
+		}
+	}
+	{volume "turret3"
+		{thickness 210
+			{rear 150}
+			{top 111}
+			{bottom 111}
+		}
+	}
+	{volume "turret4"
+		{thickness 210
+			{rear 150}
+		}
+	}
+	{volume "turret5"
+		{thickness 210	
+			{rear 120}
+			{top 90}
+			{bottom 75}
+		}
+	}
+	{volume "gunrot1"
+		{thickness 450	
+		}
+	}
+	{volume "gunrot2"
+		{thickness 210	
+			{front 1140}
+		}
+	}
+	{volume "shieldL"
+		{thickness 60	
+		}
+	}
+	{volume "shieldR"
+		{thickness 60	
+		}
+	}
+	{volume "shieldF"
+		{thickness 30	
+		}
+	}
+	{volume "box"
+		{thickness 30	
+		}
+	}
+	{volume "mgun"
+		{thickness 30	
+		}
+	}
+
+

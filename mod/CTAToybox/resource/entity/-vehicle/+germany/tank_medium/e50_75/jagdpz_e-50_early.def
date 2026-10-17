@@ -21,12 +21,12 @@
 
 	{extender "inventory"
 		{box
-			{item "ammo bulletger_128_2 apcbche" 12}
-			{item "ammo bulletger_128_2 apds" 12}
-			{item "ammo bulletger_128_2 he" 6}
-			{item "ammo bulletger_20_auto apcr" 1050}
-			{item "ammo bulletger_20_auto he" 1050}
-			{item "ammo mgun_ger" 1850}
+			{item "ammo bulletger_128_2 apcbche" 60}
+			{item "ammo bulletger_128_2 apds" 60}
+			{item "ammo bulletger_128_2 he" 30}
+			{item "ammo bulletger_20_auto apcr" 5250}
+			{item "ammo bulletger_20_auto he" 5250}
+			{item "ammo mgun_ger" 9250}
 		}
 	}
 
@@ -34,7 +34,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "128mm_kwk46_l71" filling "ammo bulletger_128_2 apcbche" 1}
+			{weapon "128mm_kwk46_l71_ctb_ger" filling "ammo bulletger_128_2 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger charger2" minWorkers 1}
 			{foresight "foresight1"}
@@ -43,7 +43,7 @@
 		}
 		{place "mgun2"
 			{type "cupola_cannon"}
-			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{weapon "20mm_mg151_coax_ctb_ger" filling "bulletger_20_auto apcr" 200}
 			{foresight "foresight2"}
 			{gunner "commander"}
 			{charger "commander"}
@@ -52,7 +52,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg42_tank" filled}
+			{weapon "mg42_tank_ctb_ger" filled}
 			{gunner "gunner2"}
 			{charger "gunner2"}
 			{foresight "foresight4"}
@@ -65,15 +65,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(2.45))
 		("mobility_tank"
-			speed(60)
+			speed(90)
 			reverse(15.3)
 			traverse(30)
 			weight(78.0)
 			power(900)
 			track(3.5)
-			fuel(700)
+			fuel(7000)
 			type(fuel)
-			range(100)
+			range(1000)
 		)
 	}
 	{Extension "jagdpz_e-50_early.mdl"}

@@ -71,12 +71,12 @@
 	{extender "inventory"
 		{weapon "mgun" {mask "mountable"}}
 		{box
-			{item "bulletger_128 apcbche" 32} 	
-			{item "bulletger_128 he" 30}
-			{item "bulletger_20_auto ap" 300} 
-			{item "bulletger_20_auto he" 300}
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 6}
+			{item "bulletger_128 apcbche" 160} 	
+			{item "bulletger_128 he" 150}
+			{item "bulletger_20_auto ap" 1500} 
+			{item "bulletger_20_auto he" 1500}
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 12}
 		}
 	}
 
@@ -84,7 +84,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "128oto" filling "ammo bulletger_128 apcbche" 3}
+			{weapon "128oto_ctb_ger" filling "ammo bulletger_128 apcbche" 3}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic_stabilised"
@@ -94,7 +94,7 @@
 		}
 		{place "gun1"
 			{type "coaxial"}
-			{weapon "20mm_flak38" filling "ammo bulletger_20_auto ap" 20}
+			{weapon "20mm_flak38_ctb_ger" filling "ammo bulletger_20_auto ap" 20}
 			{foresight "foresight2"}
 			{gunner "commander"}
 			{charger "charger"}
@@ -103,7 +103,7 @@
 		}
 		{place "gun2"
 			{type "coaxial"}
-			{weapon "20mm_flak38" filling "ammo bulletger_20_auto ap" 20}
+			{weapon "20mm_flak38_ctb_ger" filling "ammo bulletger_20_auto ap" 20}
 			{foresight "foresight3"}
 			{gunner "commander"}
 			{charger "charger"}
@@ -116,15 +116,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(0.14))
 		("mobility_tank"
-			speed(46) ;----------Max speed when fully accelerated on road, km/h.
+			speed(69) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(5.3) ;-------Max speed in reverse on road, km/h. 3.3 + 2kmh
 			traverse(35) ;-------Track traverse, per second, in degrees.
 			weight(45.5) ;-------Weight in Tonnes.
 			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
 			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(700) ;----------Fuel capacity in Litres.
+			fuel(7000) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(100) ;---------Range in km, off-road.
+			range(1000) ;---------Range in km, off-road.
 		)
 	}
 

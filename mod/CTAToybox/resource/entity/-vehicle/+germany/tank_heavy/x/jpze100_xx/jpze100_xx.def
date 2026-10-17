@@ -1,0 +1,95 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "jpze100xx.mdl"}
+
+	{Volume "body1"
+		{thickness 600}
+	}
+	{Volume "body2"
+		{thickness 600}
+	}
+	{Volume "body3"
+		{thickness 360}
+	}
+	{Volume "body4"
+		{thickness 360}
+	}
+	{Volume "engine1"
+		{thickness 360}
+	}
+	{Volume "engine2"
+		{thickness 360}
+	}
+	{Volume "frontl"
+		{thickness 600}
+	}
+	{Volume "frontr"
+		{thickness 600}
+	}
+	{Volume "gun2"
+		{thickness 30}
+	}
+	{Volume "gun"
+		{thickness 210}
+	}
+	{Volume "gunend"
+		{thickness 210}
+	}
+	{Volume "mantlet2"
+		{thickness 210}
+	}
+	{Volume "mantlet"
+		{thickness 750}
+	}
+	{Volume "mask"
+		{thickness 750}
+	}
+	{Volume "part1"
+		{thickness 120}
+	}
+	{Volume "part2"
+		{thickness 120}
+	}
+	{Volume "part3"
+		{thickness 120}
+	}
+	{Volume "part4"
+		{thickness 120}
+	}
+	{Volume "part5"
+		{thickness 120}
+	}
+	{Volume "part6"
+		{thickness 360}
+	}
+	{Volume "part7"
+		{thickness 360}
+	}
+	{Volume "rubka"
+		{thickness 750}
+	}
+	{Volume "shieldf"
+		{thickness 900}
+	}
+	{Volume "shieldl1"
+		{thickness 180}
+	}
+	{Volume "shieldl3"
+		{thickness 180}
+	}
+	{Volume "shieldr1"
+		{thickness 180}
+	}
+	{Volume "shieldr2"
+		{thickness 180}
+	}
+	{Volume "trackleft"
+		{thickness 120}
+	}
+	{Volume "trackright"
+		{thickness 120}
+	}
+	{Volume "turret"
+		{thickness 480}
+	}
+}

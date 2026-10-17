@@ -1,0 +1,225 @@
+{game_entity
+	(include "/properties/tank__ctb_tigermaus_1ce630d9.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle_big.inc" scale(1.3))
+	{collider "tank.heavy"}
+	{props "heavy" "vision_lev05" "smoke" "nwg" "detect_tank_heavy"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	(include "tigermaus.ext")
+	{PatherId "tiger2"}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+			{bone "visor2"}
+		}
+	}
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade nbk39"}
+	}
+
+    ;==============================================
+    
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+
+	{boarder
+		{anm "charger"
+			{forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open"}}
+			{reverse {end "board_pz4_driver" -1} {base "open" -1}}
+		}
+		{anm "charger3"
+			{forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open"}}
+			{reverse {end "board_pz4_driver" -1} {base "open" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "gunner4"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open2"}}
+			{reverse {end "emit_tank_2_hold"} {base "open2" -1}}
+		}
+		{anm "gunner5"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "driver"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+		{anm "commander"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"} {base "open"}}
+			{reverse {end "emit_tank_1"} {base "open" -1}}
+		}
+
+	}
+	
+	("crew_human" place(driver)		door(emit1)  visor(visor1) animation(driver))
+	("crew_human" place(gunner)		door(emit3) visor(visor2) animation(gunner))
+	("crew_human" place(gunner3)		door(emit2) visor(visor1) animation(gunner2))
+	("crew_human" place(gunner4)		door(emit2) visor(visor3) animation(gunner3))
+	("crew_human" place(gunner5)		door(emit3) visor(visor4) animation(gunner4))
+	("crew_human" place(charger)	door(emit3) visor(none) animation(gunner))
+	("crew_human" place(charger3)	door(emit3) visor(none) animation(gunner))
+	("crew_human" place(commander)	door(emit3) visor(around) animation(gunner))
+
+	{extender "inventory"
+		{box
+			{item "bulletger_128 apcbche" 225}
+			{item "bulletger_128 apcr" 75}
+			{item "bulletger_128 he" 200}	        ; 82 rounds 128mm
+			{item "bulletger_75_l24 sm" 50} 		; 150 rounds 75mm
+			{item "bulletger_75_l24 heat" 245}
+			{item "bulletger_75_l24 he" 250}
+			{item "ammo mgun_ger belt" 32500}
+			{item "mg34_tank_2_ctb_ger" filled {user "mgun4"}}
+			{item "mg34_tank_2_ctb_ger" filled {user "mgun5"}}
+			{item "nbk39 grenade" 24}
+			{item "repair_kit" 14}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_pak80_2_ctb_ger" filling "bulletger_128 apcbche" 1}
+			{foresight "foresight1"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_gun"
+				zeroing(4.0)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon "75mm_stuk42_0-2_ctb_ger" filling "bulletger_75_l24 heat" 1}
+			{foresight "foresight2"}
+			{gunner "gunner"}
+			{charger "charger3"}
+			("abm_dymamic_gun"
+				zeroing(4.0)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+		{place "mgun3"
+			{type "coaxial"}
+			{weapon "mg34_tank_2_ctb_ger" filled}
+			{foresight "foresight4"}
+			{gunner "gunner"}
+			{charger "charger"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun6"
+			{type "aa"}
+			{weapon "mg34_tank_2_ctb_ger" filled}
+			{foresight "foresight13"}
+			{gunner "commander"}
+			{charger "commander"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun2"
+			{type "hull"}
+			{weapon "mg34_tank_2_ctb_ger" filled}
+			{foresight "foresight5"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun4"
+			{type "hull"}
+			{weapon "mg34_tank_2_ctb_ger" filled}
+			{gunner "gunner4"}
+			{charger "gunner4"}
+			{LinkBone "mgun4"}
+			("abm_mgun")
+			{rotate}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun5"
+			{type "hull"}
+			{weapon "mg34_tank_2_ctb_ger" filled}
+			{gunner "gunner5"}
+			{charger "gunner5"}
+			{LinkBone "mgun5"}
+			("abm_mgun")
+			{rotate}
+			{basic}
+			{ai_in_manual}
+		}
+	}
+	
+	{mass 160000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.20) len(0.96))
+		("mobility_tank"
+			speed(24) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(10.5) ;--------Max speed in reverse on road, km/h.
+			traverse(15) ;-------Track traverse, per second, in degrees.
+			weight(160.0) ;-------Weight in Tonnes.
+			power(1000) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(27000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(850) ;----------Range in km, off-road.
+		)
+	}
+
+	{Extension "tigermaus.mdl"}
+
+	{bone "turret"
+		("turret_heavy" power_traverse(12))
+	}
+	{bone "gun_rot"
+		{speed2 5}
+	}
+	{bone "mgun2"
+		{speed2 30}
+	}
+	{bone "mgun2_rot"
+		{speed2 30}
+	}
+	{bone "mgun3"
+		{speed2 30}
+	}
+	{bone "mgun4_rot"
+		{speed2 30}
+	}
+	{bone "mgun4_rot2"
+		{speed2 30}
+	}
+	{bone "mgun5_rot"
+		{speed2 30}
+	}
+	{bone "mgun5_rot2"
+		{speed2 30}
+	}
+	{bone "mgun6_rot"
+		{speed2 45}
+	}
+	{bone "mgun6"
+		{speed2 60}
+	}
+
+}
+
+
+
+

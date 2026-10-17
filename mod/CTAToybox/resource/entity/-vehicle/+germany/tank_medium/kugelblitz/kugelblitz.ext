@@ -1,0 +1,47 @@
+("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(38))
+
+	("ammo" args "ammo")
+	("ammo" args "inventory")
+
+	;volume, component/tag
+	("make_component" args "body1" "body")
+
+	{volume "body"			; Superstructure
+		{thickness 113
+			{front 200}
+			{top 50}
+			{rear 50}
+			{bottom 38}		
+		}
+	}
+	{volume "body1"
+		{thickness 75
+			{front 213}
+			{top 50}
+			{rear 50}
+			{bottom 50}		
+		}
+	}
+	{volume "body2"
+		{thickness 75
+			{front 213}
+			{top 50}
+			{rear 50}
+			{bottom 50}		
+		}
+	}
+	{volume "turret"
+		{thickness 50
+			{front 125}
+		}
+	}
+	{volume "turret1"
+		{thickness 75
+			{front 125}
+		}
+	}
+	{volume "shieldr5"
+		{thickness 98
+		}
+	}

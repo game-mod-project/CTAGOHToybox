@@ -1,0 +1,18 @@
+{from "pattern mgun_light"
+	{filling "ammo madsen" 80}
+	{entity "madsen"}
+	{fireSound "smallarms/s3/d1/FIN/LS26/Head/"}
+	{fireSoundclose "smallarms/s3/3p/FIN/LS26/"}
+	{reloadSound "mg34"}
+	{calibre 7.62}
+	{mass 9.4}
+
+	("fire rate" rpm(500))
+	("velocity" mps(870))
+
+	("reload_belt")
+
+	("burst_medium")
+	("spreading_low")
+	{rechargeTime 4.25}
+}

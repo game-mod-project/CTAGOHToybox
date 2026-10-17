@@ -1,0 +1,17 @@
+{from "pattern at_rifle"
+	{tag "bolt_action"}
+	{filling "ammo atrifle_ger" 4}
+	{entity "wz35"}
+	{fireSound "smallarms/s4/d1/RUS/PTR/"}
+	{fireSoundclose "smallarms/s4/3p/RUS/PTR/"}
+	{reloadSound "ptrd"}
+	{calibre 7.92}
+	{mass 10}
+
+	("reload time" seconds(2))
+	("penetration" args 33 22 15)
+	("fire rate" rpm(10))
+	("velocity" mps(1275))
+
+	{cursorReloading "gun_apcr"}
+}

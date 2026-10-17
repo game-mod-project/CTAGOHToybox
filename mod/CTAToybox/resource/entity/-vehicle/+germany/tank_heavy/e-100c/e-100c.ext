@@ -1,0 +1,70 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+	; spare tracks 30mm
+	; mud guards 4mm
+
+
+	("gun" repair(50) thickness(300))
+	("tracks" repair(50) thickness(300))
+
+	("ammo" args "inventory")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	("shield_tear" args "shieldl1" 600)	
+	("shield_tear" args "shieldl2" 600)	
+	("shield_tear" args "shieldl3" 600)	
+	
+	("shield_tear" args "shieldr1" 600)	
+	("shield_tear" args "shieldr2" 600)	
+	("shield_tear" args "shieldr3" 600)		
+
+	{volume "body"			
+		{thickness 310
+			{front 750}
+			{top 200}		
+			{rear 750}
+			{bottom 400}
+		}
+	}
+	{volume "body2"			
+		{thickness 410
+			{front 750}
+			{top 200}
+			{rear 750}
+			{bottom  400}
+		}
+	}
+	{volume "body3"			
+		{thickness 410
+			{front 750}
+			{top 200}
+			{rear 750}
+			{bottom 400}
+		}
+	}
+	{volume "engine"
+		{thickness 310
+			{front 200}
+			{rear 410}
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "turret"
+		{thickness 410
+			{front 900}
+			{top 200}
+			{rear 750}
+		}
+	}
+	{volume "mantlet"
+		{thickness 900}
+		{CastSteel 0.8063}
+	}

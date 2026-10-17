@@ -1,0 +1,38 @@
+{from "pattern gun"   ;150mm KwK44 (长管高初速物理平衡版)
+
+	{filling "bulletger_150"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm_HV/"}
+	{fireSoundClose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	{range 220 220}
+	{calibre 150}
+
+	("reload time" seconds(9))
+
+	("velocity m/s" ap(920) apcr(1180) he(800) heat(490))
+	("armor health" damage(450))
+	("armor health custom" shell(apcbche) damage(450) velocity(920) filler(660))
+	("armor health custom" shell(apcr) damage(450) velocity(1180) filler(70))
+	("85-155_slope_multipliers")
+	
+	; Pzgr.43
+	("penetration_long" shell(apcbche) range(230) a(275) b(255) c(235) d(215) e(195))
+
+	; Pzgr.44 
+	("penetration_long" shell(apcr) range(230) a(335) b(295) c(255) d(215) e(190))
+	{parameters "apcr" ; Pzgr.44
+		("large_apcr_slope_multiplier")
+	}
+
+	; Gr.44 Hl 
+	("penetration_long" shell(heat) range(230) a(280) b(280) c(280) d(280) e(280))
+
+	{parameters "he"
+		{range 230 230}
+	}
+
+	; He
+	("penetration_long" shell(he) range(230) a(61) b(61) c(61) d(61) e(61))  ;RHA
+
+	("accuracy_direct" r1(0.47) range_ap(230) range_he(230) range_heat(230))
+}

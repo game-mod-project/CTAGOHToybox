@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_44_volksg_g43_2"}
+	{portrait "ger_elite"}
+	{icon "smg"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m42_helmet_winter}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43_marksman_ctb_ger" filled}
+		{item "m24 grenade" 6}
+		{item "hafthohlladung" 2}
+		{item "rifle_ger gewehr ammo" 100}
+		{item "rifle_ger clip ammo" 500 50}
+		{item "bandage_ger" 6}
+		{in_hands 0}
+	}
+}

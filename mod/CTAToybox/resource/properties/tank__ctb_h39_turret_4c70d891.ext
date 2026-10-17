@@ -7,7 +7,7 @@
 
 ("turret" repair(45))
 ;("mantlet" repair(30))
-("gun" repair(30) thickness(20))
+("gun" repair(30) thickness(40))
 
 (define "restore_ik_time"
 	{RestoreIKTime 4}

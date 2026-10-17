@@ -1,0 +1,128 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "e79_xx.mdl"}
+
+	{Volume "angle1"
+		{thickness 540}
+	}
+	{Volume "angle"
+		{thickness 540}
+	}
+	{Volume "body1"
+		{thickness 540}
+	}
+	{Volume "body2"
+		{thickness 540}
+	}
+	{Volume "body"
+		{thickness 240}
+	}
+	{Volume "detail1"
+		{thickness 75}
+	}
+	{Volume "detail2"
+		{thickness 75}
+	}
+	{Volume "detail7"
+		{thickness 75}
+	}
+	{Volume "engine1"
+		{thickness 240}
+	}
+	{Volume "engine2"
+		{thickness 240}
+	}
+	{Volume "engine3"
+		{thickness 240}
+	}
+	{Volume "fenders"
+		{thickness 540}
+	}
+	{Volume "gun"
+		{thickness 120}
+	}
+	{Volume "mantlet"
+		{thickness 600}
+	}
+	{Volume "part3"
+		{thickness 75}
+	}
+	{Volume "part41"
+		{thickness 75}
+	}
+	{Volume "part4"
+		{thickness 75}
+	}
+	{Volume "part5"
+		{thickness 75}
+	}
+	{Volume "part6"
+		{thickness 30}
+	}
+	{Volume "shieldl1"
+		{thickness 30}
+	}
+	{Volume "shieldl2"
+		{thickness 30}
+	}
+	{Volume "shieldl3"
+		{thickness 30}
+	}
+	{Volume "shieldl4"
+		{thickness 30}
+	}
+	{Volume "shieldr1"
+		{thickness 30}
+	}
+	{Volume "shieldr2"
+		{thickness 30}
+	}
+	{Volume "shieldr3"
+		{thickness 30}
+	}
+	{Volume "shieldr4"
+		{thickness 30}
+	}
+	{Volume "shieldr5"
+		{thickness 75}
+	}
+	{Volume "tail1"
+		{thickness 240}
+	}
+	{Volume "tail2"
+		{thickness 240}
+	}
+	{Volume "tail3"
+		{thickness 240}
+	}
+	{Volume "tail4"
+		{thickness 240}
+	}
+	{Volume "trackleft"
+		{thickness 75}
+	}
+	{Volume "trackright"
+		{thickness 75}
+	}
+	{Volume "turret1"
+		{thickness 600}
+	}
+	{Volume "turret2"
+		{thickness 300}
+	}
+	{Volume "turret3"
+		{thickness 300}
+	}
+	{Volume "turret4"
+		{thickness 600}
+	}
+	{Volume "turret5"
+		{thickness 30}
+	}
+	{Volume "turret6"
+		{thickness 360}
+	}
+	{Volume "turret"
+		{thickness 600}
+	}
+}

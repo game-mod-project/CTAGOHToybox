@@ -1,0 +1,91 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "pz38h_735_xx.mdl"}
+
+	{volume "body1"			; Hull
+		{thickness 80
+			{rear 20}
+			{bottom 40}
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; 
+		{thickness 80	 
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"			; 
+		{thickness 80
+			{top 44}
+			{rear 20}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; 
+		{thickness 80
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 80
+			{front 20}
+			{top 44}
+			{bottom 40}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine2"
+		{thickness 80
+			{front 20}
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine3"
+		{thickness 80
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "armor1"
+		{thickness 40}
+	}
+	{volume "turret1"		; ring
+		{thickness 8}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; main
+		{thickness 80
+			{top 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"		; 
+		{thickness 80
+			{top 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 80}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 40}
+	}
+	{volume "barrel2"
+		{thickness 40}
+	}
+	{volume "part1"			; engine top hatch
+		{thickness 44}
+		{CastSteel 0.8063}
+	}
+	{volume "part2"			; engine top hatch 2
+		{thickness 44}
+		{CastSteel 0.8063}
+	}
+	("tracks" thickness(40))
+}

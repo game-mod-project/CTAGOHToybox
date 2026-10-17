@@ -1,0 +1,29 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_39_fj_rfl_1"}
+	{portrait "ger_fallschirmjaeger"}
+	{icon "rifle"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m38_helmet_winter}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "bandage_ger" 6}
+		{item "m24_geballteladung grenade" 2}
+		{item "rifle_ger clip ammo" 400}
+		{item "m24 grenade" 4}
+		{in_hands 0}
+	}
+}

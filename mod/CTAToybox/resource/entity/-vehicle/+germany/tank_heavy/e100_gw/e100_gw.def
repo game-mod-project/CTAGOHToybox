@@ -1,0 +1,115 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_e100_gw_0b88e7ab.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "td" "heavy" "-turret" "vision_lev06" "shield" "muzzle_170mm_210mm" "shell_eject" "detect_td_heavy"}
+	{extension "e100_gw.mdl"}
+	(include "e100_gw.ext")
+	{collider "tank.heavy"}
+	{PatherId "elefant"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+		}
+	}
+
+	("crew_6_human" place(commander)	bone(driver)	door(emit1)	animation(driver))
+
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+
+		{anm "driver" {forward  {end "seat_driver_car"}}}
+		{anm "commander" {forward  {end "cannon_small_gunner"}}}
+		{anm "gunner" {forward  {end "cannon_small_charger"}}}
+
+		{link "Emit1" "driver"    {anm "driver"} {forward putoff} {reverse puton}}
+		{link "Emit2" "commander"    {anm "commander"} {forward putoff} {reverse puton}}
+		{link "Emit2" "gunner"    {anm "gunner"} {forward putoff} {reverse puton}}
+	}
+
+	;("gunner_visible")
+	("crew_human_visible_anm" place(gunner)	bone(gunner) door(emit1) anm_left(gunner) anm_right(gunner) visor(main))
+	("crew_human_visible_anm" place(commander) bone(commander) door(emit1) anm_left(commander) anm_right(commander) visor(gunner))
+
+	{sensor
+		{visor "mgun"
+			{vision "human"}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_210 he" 145}
+			{item "geballteladung_3kg" 2}
+			;{item "ammo mgun_ger belt" 2925}		; 32 belts (150 rounds each)
+			;{item "ammo mgun_ger drum" 550}				; 12 drums (50 rounds each)
+			;{item "mg42_drum" filled {user "mgun"}}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "210mm_gw_ctb_ger" filling "ammo bulletger_210 he" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_td"
+				zeroing(5.5)
+				dispersion(0.25)
+			)
+		}
+		;{place "mgun2"
+		;	{type "hull"}
+		;	{weapon "mg42_tank" filled}
+		;	{foresight "foresight5"}
+		;	{gunner "driver"}
+		;	{charger "driver"}
+		;	{basic}
+		;	{ai_in_manual}
+		;}
+		;{place "mgun"
+		;	{type "hull"}
+		;	{gunner "charger2"}
+		;	{charger "charger2"}
+		;	{LinkBone "turret"}
+		;	{LinkAnimation "off"}
+		;	("abm_mgun")
+		;	{basic}
+		;	{ai_in_manual}
+		;}
+	}
+
+	{mass 100800} ;71700
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(2.60)) ;("tank_trace" fx("tracks_big") step(0.47) len(0.6))
+		("mobility_tank"
+			speed(27) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(12) ;--------Max speed in reverse on road, km/h.
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(100.8) ;-------Weight in Tonnes. ;71.7
+			power(900) ;---------Engine Power, in hp.
+			track(7.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(8400) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1000) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"
+		{limits 5 -5} ;-5 5
+		{speed2 3}
+	}
+	{bone "gun_rot"			;gun vertical
+		{limits 45 -5} ; -15 5
+		{speed2 3.25}
+	}
+}

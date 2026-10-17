@@ -1,0 +1,16 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "kpistm39_stick ammo" 32}
+	{entity "mp34"}
+	{fireSound "smallarms/s1/d1/GER/MP28/Head/"}
+	{fireSoundclose "smallarms/s1/3p/GER/MP28/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 4.48}
+
+	("fire rate" rpm(600))
+	("velocity" mps(410))
+	("spreading_low")
+	("burst_short")
+	{rechargeTime 3}
+}

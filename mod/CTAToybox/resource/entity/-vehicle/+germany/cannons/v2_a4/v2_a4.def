@@ -1,0 +1,228 @@
+{entity
+	(include "/properties/cannon__ctb_v2_a4_a502c267.ext")
+	(include "/properties/selection/cannon.inc" scale(0.7))
+	{props "wheeled" "vision_lev03_can" "muzzle_75mm_76mm_sides" "cannon_sandbag_standard" "trailer" "trailer_medium" "cannon" "detect_atgun"}
+	{targetclass "cannon_big"}
+	{targetSelector "cannon_big"}
+;	{able "emit_on_attack"}
+	{PatherID  "cannon.large"}
+	{Volume "Gun_rot"
+		{tags "gun"}
+		{component "gun"}
+	}
+	(define "crew_human"
+		{placer
+			{place "%place" {group "crew"} {linkbone "%place"} {turnoff {sensor} {shadow}} {openForCrush}}
+		}
+		{boarder
+			{door "%door1"}
+			{door "%door2"}
+			{link "%door1" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			{link "%door2" "%place" {anm "%place"} {forward putoff} {reverse puton}}
+			
+		}
+	)
+	(define "crew_wheeled_gun"
+	("crew_gun")
+	("crew_human" place(seat1)   bone(seat1)   door(emit1) animation(seat1))
+	("crew_human" place(seat2)   bone(seat2)   door(emit2) animation(seat2))
+	{placer
+		{place "seat1" {visor "commander"}}
+		{place "seat2" {visor "commander"}}
+	}
+	{boarder
+		{link "seat1" "driver1"}
+		{link "seat2" "driver2"}
+	}
+	)
+	(define "crew_gun"
+	("crew_2_human")
+	("crew_human" place(driver1) bone(driver1) door(emit1) animation(driver1))
+	("crew_human" place(driver2) bone(driver2) door(emit2) animation(driver2))
+	{placer
+		{place "driver1" {visor "commander"}}
+		{place "driver2" {visor "commander"}}
+	}
+	{boarder
+		{link "driver1" "gunner"}
+		{link "driver2" "commander"}
+	}
+	)
+	(define "crew_2_human"
+	("crew_inside")
+	("crew_human" place(gunner)		bone(gunner)	door(emit1) animation(gunner))
+	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
+	{placer
+		{place "gunner" {group "crew"}}
+		{place "commander" {group "crew"}}
+	}
+	)
+	(define "crew_inside"
+	{boarder
+		{anm "gunner"
+			{forward	{end "seat_driver_car"}}
+		}
+		{anm "commander"
+			{forward	{end "seat_driver_car"}}
+		}
+		{anm "passenger"
+			{forward	{end "seat_driver_car"}}
+		}
+	}
+	)
+	("crew_wheeled_gun")
+	(define "crew_human_visible"
+		{placer
+		{place "%place" {group "%group"} {linkbone "%place"} {visor "%visor"}}
+		}
+		{boarder
+			{door "%door"}
+			{link "%door" "%place" {anm "%animation"} {forward putoff} {reverse puton}}
+		}
+	)
+	{placer
+		{place "gunner" {group "crew"} {visor"gunner"}}
+		{place "commander" {visor "driver"}}
+		{place "charger" {visor "driver"}}
+		{place "charger1" {visor "driver"}}
+		{place "driver1" {visor "commander"}}
+		{place "driver2" {visor "commander"}}
+		{place "driver3" {visor "commander"}}
+		{place "driver4" {visor "commander"}}
+		{place "seat1" {visor "commander"}}
+		{place "seat2" {visor "commander"}}
+		{place "seat3" {visor "commander"}}
+		{place "seat4" {visor "commander"}}
+
+	}	
+
+    ("crew_human_visible" place(gunner)  group(crew)  bone(gunner)	door(emit0) visor(gunner) animation(gunner))
+
+	("crew_human" place(commander)	bone(commander)	door(emit2) animation(commander))
+	("crew_human" place(charger)	bone(charger)	door(emit4) animation(charger))
+	("crew_human" place(charger1)	bone(charger1)	door(emit3) animation(charger1))
+
+	("crew_human" place(seat1) 	bone(seat1)	door(emit1) animation(seat1))
+	("crew_human" place(seat2) 	bone(seat2)	door(emit2) animation(seat2))
+	("crew_human" place(seat3) 	bone(seat3)	door(emit3) animation(seat3))
+	("crew_human" place(seat4) 	bone(seat4)	door(emit4) animation(seat4))
+
+	("crew_human" place(driver1) 	bone(driver1)	door(emit1) animation(driver1))
+	("crew_human" place(driver2) 	bone(driver2)	door(emit2) animation(driver2))
+	("crew_human" place(driver3) 	bone(driver3)	door(emit3) animation(driver3))
+	("crew_human" place(driver4) 	bone(driver4)	door(emit4) animation(driver4))
+
+
+
+	{boarder
+		{anm "gunner"
+			{forward	{end "pose_m5_gunlayer" 10}}
+		}
+		{anm "commander"
+			{forward	{end "pose_pdr25_charger" 10}}
+		}
+		{anm "charger"
+			{forward	{end "pose_m5_gunlayer" 10}}
+		}
+		{anm "charger1"
+			{forward	{end "pose_pdr25_charger" 10}}
+		}
+
+		{anm "driver1"
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver2"
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver3"
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver4"
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "seat1"
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat2"
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat3"
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat4"
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+
+		{link "driver1" "gunner"}
+		{link "driver2" "commander"}
+		{link "driver3" "charger"}
+		{link "driver4" "charger1"}
+
+		{link "seat1" "driver1"}
+		{link "seat2" "driver2"}
+		{link "seat3" "driver3"}
+		{link "seat4" "driver4"}
+	}
+
+
+
+	("wheel" args "wheelright")
+	("wheel" args "wheelleft")
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	("wheel" args "wheelright03")
+	("wheel" args "wheelleft03")
+	{extender "inventory"
+		{Box
+			{size 14 8}
+			{item "ammo rocket_v2_a4" 5}
+		}
+	}
+	{Weaponry
+		{place "gun"
+			{weapon "weapon rocket_v2_a4_ctb_ger" filling "ammo rocket_v2_a4" 1} 
+			{barrels 1}
+			{foresight "foresight1"}
+			{shooter "shooter"}
+			{charger "gunner"}
+			{gunner "gunner"}
+			{basic}
+		}
+	}  	
+	{mass 10000}
+	{Extension "v2_a4.mdl"}
+	(include "/properties/selection/cannon.inc"  scale(0.7))
+
+
+
+	{extender "cannon"
+		{animation
+			{switch "close"}
+			{move "cannon_pak40_pusher_left" "cannon_pak40_pusher_right"}
+			{aim "cannon_m5_gunlayer" ""}
+			{fire  "Cannon_gunlayer_fire-alert" "cannon_pdr25_charger_fire"}
+			{reload  "" "Cannon_pdr25_charger"}
+		}
+		{move {obstacle "close"}}
+		{attack {obstacle "open"}{workers "gunner" "commander" "charger" "charger1"}}
+
+	}
+
+	{Chassis "track"
+		("tank_trace" fx("tracewheel05a") step(0.3) len(0.4) boneleft("fxtracel02") boneright("FXtraceR2"))
+		("car_trace" fx("tracewheel05a") step(0.14) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("mobility_cannon"
+			speed(0.1) ;----------------------------------Max speed.
+			weight(5425) ;--------------------------------Weight in Kilograms.
+		)
+	}
+	{sensor
+		{visor "around"
+			{vision "airborne_scout"}
+			{bone "basis"}
+		}
+	}
+}

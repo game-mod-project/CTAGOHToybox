@@ -1,0 +1,27 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "schwimmwagen_xx.mdl"}
+	{volume "armor1"
+		{thickness 12}
+		{able {holed}}
+	}
+	{volume "body1"
+		{thickness 12}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 12}
+	}
+	{volume "wheelleft1"
+		{thickness 6}
+	}
+	{volume "wheelleft2"
+		{thickness 6}
+	}
+	{volume "wheelright1"
+		{thickness 6}
+	}
+	{volume "wheelright2"
+		{thickness 6}
+	}
+}

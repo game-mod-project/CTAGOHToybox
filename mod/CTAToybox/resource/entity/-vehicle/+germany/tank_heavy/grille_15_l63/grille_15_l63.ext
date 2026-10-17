@@ -1,0 +1,40 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 25mm
+
+
+	("gun" repair(30) thickness(90))
+	("tracks" repair(30) thickness(90))
+
+	("ammo" args "crew")
+
+	{volume "body1"			
+		{thickness 90
+			{front 90}		
+			{rear 81}
+			{bottom 120}
+		}
+	}
+	{volume "body2"			
+		{thickness 90
+			{front 90}		
+			{rear 81}		
+			{top 48}
+			{bottom 120}
+		}
+	}
+	{volume "engine"		
+		{thickness 90
+			{front 30}
+			{top 48}
+			{rear 81}
+			{bottom 45}
+		}
+	}
+	{volume "turret"		
+		{thickness 120
+			{front 60}
+			{rear 60}
+		}
+	}

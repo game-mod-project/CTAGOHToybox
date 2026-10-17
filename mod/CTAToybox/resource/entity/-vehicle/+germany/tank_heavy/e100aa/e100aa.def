@@ -1,0 +1,177 @@
+{game_entity
+	(include "/properties/tank__ctb_e100aa_4be3208b.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.0)) ;1.3
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "vision_lev05" "muzzle_122mm_128mm" "muzzle_75mm_76mm_2" "shield" "fire_test" "detect_tank_heavy"}
+	{extension "e100aa.mdl"}
+	(include "e100aa.ext")
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{collider "tank.heavy"}
+	{PatherId "tiger2"}
+	
+	{sensor
+		{visor "main"
+			{vision "tank_range_220"}
+		}
+	}
+
+
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+
+	{boarder
+		{anm "commander"
+			{forward {begin "board_kv"} {end "pose_mgun_pz6"} {base "open1" 1}}
+			{reverse {end "board_t26_driver" -1} {base "open1" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open" -1}}
+		}
+		{anm "gunner4"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_tank_right"} {base "open" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_right"} {base "open1" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open1" -1}}
+		}
+		{anm "charger3"
+			{forward {begin "board_tank_right"} {base "open1" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open1" -1}}
+		}
+		{anm "driver"
+			{forward {begin "board_kv"} {base "open_driver"} {base "open_driver" 1}}
+			{reverse {end "emit_tank_1_hold"} {base "open_driver" -1}}
+		}
+	}
+
+	("crew_human" place(driver) door(emit1) visor(driver))
+	("crew_human" place(gunner) door(emit3) visor(main))
+    ("crew_human" place(gunner3)    door(emit3) visor(main))
+    ("crew_human" place(gunner4)    door(emit3) visor(main))
+	("crew_human" place(charger)    door(emit4) visor(none))
+	("crew_human" place(charger3)    door(emit4) visor(none))
+   	("crew_human" place(commander) door(emit4) visor(around))
+
+	{extender "inventory"
+		{box
+			{item "bulletger_150 apcbche" 100}
+                                                {item "bulletger_150 heat" 40}
+			{item "bulletger_150 he" 75}
+			{item "bulletger_75_l24 sm" 50} 		; 150 rounds 75mm
+			{item "bulletger_75_l24 heat" 245}
+			{item "bulletger_75_l24 he" 250}
+			{item "bulletger_20_auto ap" 2000}
+			{item "bulletger_20_auto he" 3000}
+		    {item "ammo mgun_ger belt ap2" 24000}
+			{item "geballteladung_3kg" 2}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "150mm_pakl44_ctb_ger" filling "bulletger_150 apcbche" 1}
+			{foresight "foresight1"}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon "75mm_stuk42_0_ctb_ger" filling "bulletger_75_l24 heat" 1}
+			{foresight "foresight5"}
+			{gunner "gunner3"}
+			{charger "charger3"}
+			("abm_dymamic_stabilised"
+				zeroing(4.0)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+		{place "mgun"
+			{Barrels 2}
+			{weapon "mg34_tank_x2_3_ctb_ger" filling "mgun_ger belt ap2" 550}
+			{foresight "foresight3"}
+			{shooter "shooter"}
+			{charger "commander"}
+			{gunner "commander"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+
+		{place "mgun12"
+			{type "aa"}
+			{weapon "mg42_tank_ctb_ger" filled}
+			{foresight "foresight4"}
+			{gunner "charger"}
+			{charger "charger"}
+			{basic}
+			{ai_in_manual}
+		}
+
+		{place "gun3"
+			{RestoreIKAfterAim}
+			{weapon "20mm_flak38_3_ctb_ger" filling "bulletger_20_auto he" 20}
+			{foresight "foresight2"}
+			{gunner "gunner4"}
+			{charger "gunner4"}
+			("abm_dymamic_aaa"
+				zeroing(1.2)
+				dispersion(0.15)
+			)
+			{basic}
+	    }
+	}
+
+	{mass 110000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.57)) 
+		("mobility_tank"
+			speed(33) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(5) ;--------Max speed in reverse on road, km/h. (+2 of real life speed)
+			traverse(6.2) ;-------Track traverse, per second, in degrees. ;21
+			weight(110) ;---------Weight in Tonnes.
+			power(925) ;---------Engine Power, in hp. Daimler Benz MB 517 V-12 - 1200 (also Type 213 (diesel) or Maybach HL234 Mekydro - 1200 (fuel)).
+			track(1.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(21000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(700) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"
+		{speed2 15}
+	}
+
+	{bone "gun_rot"
+		{speed2 3}
+	}
+
+	{bone "mgun_rot"
+		{speed2 40}
+	}
+
+	{bone "mgun2_rot"
+		{speed2 40}
+	}
+
+	{bone "gun3_rot2"
+		{speed2 40}
+	}
+}

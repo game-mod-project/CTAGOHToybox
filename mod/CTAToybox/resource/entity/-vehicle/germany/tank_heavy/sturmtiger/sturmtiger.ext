@@ -1,0 +1,101 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 80mm
+	; mud guards 4mm
+
+	("tank_heavy_tier1")
+
+	("shield" args "shieldl3" 12)
+	("shield" args "shieldl4" 12)
+	("shield" args "shieldl5" 12)
+	("shield" args "shieldl6" 12)
+	("shield" args "shieldr3" 12)
+	("shield" args "shieldr4" 12)
+	("shield" args "shieldr5" 12)
+	("shield" args "shieldr6" 12)
+
+	("tracks" repair(40) thickness(90))
+	("gun" repair(30) thickness(240))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+
+	{volume "body1"			; Hull
+		{thickness 180
+			{front 450}		; Lower Nose // 100mm base + 50mm plate bolted on
+			{top 180}		; Glacis
+			{bottom 75}
+		}
+	}
+	{volume "body2"			; Superstructure Bottom
+		{thickness 240
+			{front 450}
+			{bottom 75}
+		}
+	}
+	{volume "body3"			; Superstructure Top
+		{thickness 240
+			{front 450}
+			{top 120}
+		}
+	}
+	{volume "body4"			; MG port
+		{thickness 450}
+		{tags "mg_port"}
+	}
+	{volume "engine1"		; Hull
+		{thickness 180
+			{front 90}
+			{rear 240}
+			{bottom 75}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 240
+			{front 90}
+			{top 75}
+			{rear 240}
+		}
+	}
+	{volume "mantlet"		; Armor on Gun
+		{thickness 330}
+		{able {holed}}
+		{tags "armor"}
+	}
+	{volume "mantlet1"		; Left Cheek
+		{thickness 330}
+		{able {holed}}
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "mantlet2"		; Right Cheek
+		{thickness 330}
+		{able {holed}}
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "barrel"
+		{thickness 240}
+		{able {holed} {Contact 1}}
+	}
+	{volume "rocket"
+		{thickness 30}
+	}
+
+
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}

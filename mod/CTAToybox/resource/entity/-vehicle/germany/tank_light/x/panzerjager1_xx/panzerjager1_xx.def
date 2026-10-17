@@ -1,0 +1,67 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzerjager1_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 40}
+	}
+	{volume "barrel2"
+		{thickness 40}
+	}
+	{volume "barrel3"
+		{thickness 40}
+	}
+	{volume "body"			; Hull
+		{thickness 26
+			{top 16}			; Glacis
+			{rear 10}
+			{bottom 10}
+		}
+		{able {holed}}
+	}
+	{volume "body1"			; Superstructure
+		{thickness 26
+			{top 10}
+			{rear 16}
+			{bottom 10}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 26
+			{front 16}
+			{rear 16}
+			{bottom 10}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 26
+			{front 10}
+			{top 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 26
+			{front 10}
+			{top 16}
+			{bottom 10}
+		}
+	}
+	{volume "gun_shield"
+		{thickness 16}
+	}
+
+	("tracks" thickness(30))
+
+	{volume "tshield1"
+		{thickness 29}
+	}
+	{volume "tshield2"
+		{thickness 29}
+		{able {holed}}
+	}
+	{volume "tshield3"
+		{thickness 29}
+	}
+}

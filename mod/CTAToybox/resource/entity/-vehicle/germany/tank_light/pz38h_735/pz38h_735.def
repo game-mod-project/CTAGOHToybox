@@ -45,10 +45,10 @@
 
 	{extender "inventory"
 		{box
-			{item "bullet_37x149 ger apc" 49}	; 100 rounds
-			{item "bullet_37x149 ger he" 50}
-			{item "ammo mgun_ger belt" 1200}	; 9 belts (150 rounds each)
-			{item "geballteladung_3kg" 1}
+			{item "bullet_37x149 ger apc" 245}	; 100 rounds
+			{item "bullet_37x149 ger he" 250}
+			{item "ammo mgun_ger belt" 6000}	; 9 belts (150 rounds each)
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -56,7 +56,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "37mm_kwk146f" filling "bullet_37x149 ger apc" 1}
+			{weapon "37mm_kwk146f_ctb_ger" filling "bullet_37x149 ger apc" 1}
 			{gunner "gunner"}
 			{charger "gunner"}
 			("abm_dymamic_td"
@@ -66,7 +66,7 @@
 		}
 		{place "mgun2"
 			{type "coaxial"}
-			{weapon "mg31f" filled}
+			{weapon "mg31f_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "gunner"}
 			{charger "gunner"}
@@ -79,15 +79,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.42) len(0.60))
 		("mobility_tank"
-			speed(36) ;----------Max speed when fully accelerated on road, km/h.
+			speed(54) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(8) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(12.1) ;-------Weight in Tonnes.
 			power(120) ;---------Engine Power, in hp.
 			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(207) ;----------Fuel capacity in Litres.
+			fuel(2070) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(120) ;---------Range in km, off-road.
+			range(1200) ;---------Range in km, off-road.
 		)
 	}
 

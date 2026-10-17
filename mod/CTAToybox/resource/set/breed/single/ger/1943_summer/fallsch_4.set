@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_43_fj_rfl_2"}
+	{portrait "ger_fallschirmjaeger"}
+	{icon "sniper"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m34_sidecap_luftwaffe}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("sniper_vision")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_scope_ctb_ger" filled}
+		{item "bandage_ger" 6}
+		{item "pistol ammo" 400}
+		{item "luger_ctb_ger" filled}
+		{item "m24_geballteladung grenade" 2}
+		{item "rifle_ger clip ammo" 300}
+		{in_hands 0}
+	}
+}

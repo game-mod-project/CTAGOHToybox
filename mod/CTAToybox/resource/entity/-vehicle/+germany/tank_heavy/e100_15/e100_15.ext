@@ -1,0 +1,71 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+
+	("tank_heavy_tier2")
+
+
+	("tracks" repair(50) thickness(150))
+	("gun" repair(30) thickness(300))
+
+	{volume "trackleft"
+		{able {holed}}
+	}
+	{volume "trackright"
+		{able {holed}}
+	}
+
+	;("shield" args "shield_front" 50)	
+	
+	("ammo" args "inventory")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 600
+			{front 750} 	; 14.5mm base
+			{top 200}
+			{bottom 400}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body2"			; Hull
+		{thickness 600
+			{front 750} 	; 14.5mm base
+			{top 200}		; Glacis
+			{bottom 200}
+			{rear 750}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine"		; Hull
+		{thickness 600
+			{front 1000} 	; 14.5mm base
+			{top 200}		; Glacis
+			{bottom 200}
+			{rear 750}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 750
+			{front 1350} 	; 14.5mm base
+			{top 325}		; Glacis
+			{bottom 200}
+		}
+		{Quality "large_flaw"}														
+	}
+	{volume "shieldL"
+		{thickness 300}
+    }
+	{volume "shieldR"
+		{thickness 300}
+    }
+	{volume "gunshiedl"
+		{thickness 1500}
+    }
+
+
+
+	

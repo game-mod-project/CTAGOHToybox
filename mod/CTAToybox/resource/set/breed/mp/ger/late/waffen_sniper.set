@@ -1,0 +1,42 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_43_sturm_rfl_1"}
+	{portrait "ger_sniper"}
+	{icon "sniper"}
+	{icon_priority 1}
+	{tags "soldier"}
+	{nationality ger}
+	{voice ger_sniper}
+	{armors
+		{head ger_wf_helm_cover_sum_face}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		("stealth")
+		("sniper_vision")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_scope_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+
+		{item "luger_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "m24 grenade" 0.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 0.3 1}
+
+		{item "bandage_ger" 9 1}
+		{item "knife_ger"}
+		{item "ger_wf_fieldcap_camo_sum"}
+
+		{in_hands 0}
+	}
+}

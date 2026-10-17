@@ -1,0 +1,31 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/40 "KRV Autoloader"
+	{filling "bulletger_128" 3}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "tank/1p/large/"}
+	
+	{range 240 240}
+	{calibre 128}
+
+	("fire rate" rpm(24))
+	
+	("reload time" seconds(9))
+
+	("velocity m/s" ap(880) apcr(1) he(800) heat(1))
+	("armor health" damage(350))
+	("armor health custom" shell(apcbche) damage(350) velocity(880) filler(567))
+	("128_slope_multipliers")
+
+	("penetration_long" shell(apcbche) range(240) a(276) b(258) c(233) d(200) e(182))
+
+	{parameters "he"
+		{range 240 240}
+	}
+
+	("accuracy_direct" r1(0.50) range_ap(240) range_he(240) range_heat(240))
+}

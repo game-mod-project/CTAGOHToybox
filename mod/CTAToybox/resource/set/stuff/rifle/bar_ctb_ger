@@ -1,0 +1,5 @@
+{from "bar_bipod"
+	{mass 8.4}
+	{entity "bar"}
+	{rechargeTime 3}
+}

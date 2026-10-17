@@ -1,0 +1,119 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 25mm
+	; schürzen 5mm
+	; spare tracks 15mm
+	; mg shield 10mm
+
+	("tank_light_tier2")
+
+	("shield" args "shieldL1" 10)	; Schürzen
+	("shield" args "shieldL2" 10)	; Schürzen
+	("shield" args "shieldL3" 10)	; Schürzen
+	("shield" args "shieldR1" 10)	; Schürzen
+	("shield" args "shieldR2" 10)	; Schürzen
+	("shield" args "shieldR3" 10)	; Schürzen
+	("shield_track" args "shield1" 30)	; Spare Tracks
+	("shield_track" args "shield2" 30)	; Spare Tracks
+	("shield_track" args "shield3" 30)	; Spare Tracks
+	("shield_group" args "shield4" 20 "shield4")		; MG Shield
+	("shield_group" args "shield5" 20 "shield4")		; MG Shield
+
+	("tracks" repair(30) thickness(30))
+	("gun" repair(30) thickness(50))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull Nose
+		{thickness 40
+			{front 120}		; Lower Front (Standard RHA armor)
+			{top 120}		; Glacis (Standard RHA armor)
+		}
+	}
+	{volume "body2"			; Rear Hull
+		{thickness 40		; Sides (20mm Siemens-Marteneit armor) ; Source Hilary Doyle - Panzer Tracts
+			{front 120}		; Lower Front
+			{top 120}		; Glacis
+			{rear 16}
+			{bottom 20}
+		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"			; Superstructure Front
+		{thickness 40
+			{front 120}		; Glacis (Standard RHA armor)
+			{top 16}
+			{bottom 16}
+		}
+	}
+	{volume "body4"			; Superstructure
+		{thickness 40		; Sides (20mm Siemens-Marteneit armor)  ; Source Hilary Doyle - Panzer Tracts
+			{front 120}		; Glacis
+			{top 16}
+			{rear 16}
+			{bottom 16}
+		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "body5"			; Structure behind mantlet (Cast Armor)
+		{thickness 120}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"		; Hull
+		{thickness 40		; Sides/Rear (20mm Siemens-Marteneit armor)  ; Source Hilary Doyle - Panzer Tracts
+			{front 20}
+			{top 20}
+			{bottom 20}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 40		; Sides/Rear (20mm Siemens-Marteneit armor)  ; Source Hilary Doyle - Panzer Tracts
+			{front 16}
+			{top 16}
+			{bottom 16}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "mantlet1"		; (Cast Armor)
+		{thickness 120}
+		{CastSteel 0.8063}
+		{tags "gun"}
+		{component "gun"}
+	}
+	{volume "mantlet2"		; (Cast Armor)
+		{thickness 120}
+		{CastSteel 0.8063}
+		{tags "gun"}
+		{component "gun"}
+	}
+	{volume "mantlet3"		; (Cast Armor)
+		{thickness 120}
+		{CastSteel 0.8063}
+		{tags "gun"}
+		{component "gun"}
+	}
+	{volume "mantlet4"		; (Cast Armor)
+		{thickness 120}
+		{CastSteel 0.8063}
+		{tags "gun"}
+		{component "gun"}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shield1" {tags "cut_part"}}
+	{component "shield2" {tags "cut_part"}}
+	{component "shield3" {tags "cut_part"}}

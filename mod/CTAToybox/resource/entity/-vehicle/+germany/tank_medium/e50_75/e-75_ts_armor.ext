@@ -1,0 +1,103 @@
+;SDL
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(125))
+	("ammo" args "inventory")
+
+	{volume "body"
+		{thickness 400
+			{front 550}
+			{rear 300}
+			{top 125}
+		}
+	}
+	{volume "body2"
+		{thickness 300
+			{front 450}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "body2_ts"
+		{thickness 300
+			{front 450}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "turret"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret_ts"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret2"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret21"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret3"
+		{thickness 300
+			{front 550}
+			{rear 250}
+			{top 100}
+		}
+	}
+	{volume "turret4"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret5"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret6"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret7"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+	{volume "turret8"
+		{thickness 450
+			{front 700}
+			{rear 375}
+			{top 125}
+		}
+	}
+
+	{volume "mantlet"
+		{thickness 650}
+	}
+	{volume "mantlet_ts"
+		{thickness 650}
+	}

@@ -1,0 +1,48 @@
+;SDL
+	
+	;notes
+	;tracks and wheels 30mm
+	;gun 30mm
+
+	("tank_heavy_tier1")
+
+
+	("crew_2_human_extended")
+
+	("tracks" repair(30) thickness(60))
+
+	{volume "body1"			; Hull
+		{thickness 120
+			{front 180}		; Lower Nose
+			{top 240}		; Glacis
+			{rear 48}
+			{bottom 90}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 120
+			{front 240}
+			{top 48}
+			{rear 48}
+			{bottom 48}
+		}
+		{able {holed}}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+
+	("shield" args "shieldl1" 15)
+	("shield" args "shieldr1" 15)
+
+	("shield" args "shieldl2" 15)
+	("shield" args "shieldl3" 15)
+	("shield" args "shieldl4" 15)
+	("shield" args "shieldl5" 15)
+	("shield" args "shieldr2" 15)
+	("shield" args "shieldr3" 15)
+	("shield" args "shieldr4" 15)
+
+	

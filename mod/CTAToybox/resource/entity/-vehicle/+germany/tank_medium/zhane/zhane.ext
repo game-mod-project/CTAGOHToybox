@@ -1,0 +1,103 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; schürzen 5mm
+
+	("tank_heavy_tier1")
+
+	("shield" args "shieldl1" 25)
+	("shield" args "shieldl2" 25)
+	("shield" args "shieldl3" 25)
+	("shield" args "shieldl4" 25)
+	("shield" args "shieldl5" 25)
+	("shield" args "shieldl6" 25)
+	("shield" args "shieldl7" 25)
+	("shield" args "shieldr1" 25)
+	("shield" args "shieldr2" 25)
+	("shield" args "shieldr3" 25)
+	("shield" args "shieldr4" 25)
+	("shield" args "shieldr5" 25)
+	("shield" args "shieldr6" 25)
+	("shield" args "shieldr7" 25)
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 100
+			{front 275}		; Lower Nose
+			{top 88}		; Glacis
+			{rear 40}
+			{bottom 63}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 125
+			{front 225}		; Glacis
+			{top 40}
+			{rear 113}
+			{bottom 100}
+		}
+	}
+	{volume "engine"			; Hull
+		{thickness 100
+			{front 40}
+			{top 88}
+			{rear 113}
+			{bottom 40}
+		}
+	}
+	{volume "turret1"
+		{thickness 138
+			{front 275}
+			{top 88}
+			{rear 113}
+			{bottom 75}
+		}
+	}
+	{volume "turret2"
+		{thickness 325
+			{front 275} 
+		}
+	}
+	{volume "gunshield1"
+		{thickness 375}
+	}
+	{volume "gunshield2"
+		{thickness 300}
+	}
+	{volume "shieldf1"
+		{thickness 75}
+	}
+	{volume "shieldf2"
+		{thickness 25}
+	}
+
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+	{component "shieldl7" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}
+	{component "shieldr7" {tags "cut_part"}}

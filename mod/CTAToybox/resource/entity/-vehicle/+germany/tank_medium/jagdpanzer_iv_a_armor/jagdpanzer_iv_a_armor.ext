@@ -1,0 +1,155 @@
+;SDL
+
+
+	("tank_medium_tier1")
+
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 75
+		{front 200}
+		{rear 50}
+	}
+}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 200}
+	}
+}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 200}
+		{rear 50}
+	}
+}
+	{Volume "baffleBT1"
+		{Thickness 50}
+	}
+	{Volume "baffleBT2"
+		{Thickness 50}
+	}
+	{Volume "baffleBT3"
+		{Thickness 50}
+	}
+	{Volume "baffleBT4"
+		{Thickness 50}
+	}
+	{Volume "baffleBT5"
+		{Thickness 50}
+	}
+	{Volume "baffleBT6"
+		{Thickness 50}
+	}
+	{Volume "baffleBT7"
+		{Thickness 50}
+	}
+	{Volume "baffleBT8"
+		{Thickness 50}
+	}
+	{Volume "baffleBT9"
+		{Thickness 50}
+	}
+	{Volume "baffleBT10"
+		{Thickness 50}
+	}
+	{Volume "baffleBT11"
+		{Thickness 50}
+	}
+	{Volume "baffleBT12"
+		{Thickness 50}
+	}
+	{Volume "baffleBT13"
+		{Thickness 50}
+	}
+	{Volume "baffleBT14"
+		{Thickness 50}
+	}
+	{Volume "baffleBT15"
+		{Thickness 50}
+	}
+	{Volume "trackrope"
+		{Thickness 50}
+	}
+	{Volume "sturret"
+		{component "gun"}
+		{Thickness 188}
+	}
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(50))	
+
+	;("armor_spa_heavy" armor(50 40 20 22))
+	;("armor_mantlet" t(80))
+	;("armor_engine"  t(50 50 50 50))
+	
+	{Volume "mantlet"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 200}
+	}
+	
+	
+	
+	;("shield" args 10)
+	
+
+	{component "shieldl1" {tags "shield"}}
+	{component "shieldl2" {tags "shield"}}
+	{component "shieldl3" {tags "shield"}}
+	{component "shieldl4" {tags "shield"}}
+	{component "shieldl5" {tags "shield"}}
+	{component "shieldl6" {tags "shield"}}
+	{component "shieldr1" {tags "shield"}}
+	{component "shieldr2" {tags "shield"}}
+	{component "shieldr3" {tags "shield"}}
+	{component "shieldr4" {tags "shield"}}
+	{component "shieldr5" {tags "shield"}}
+	{component "shieldr6" {tags "shield"}}
+
+	{Volume "shieldl1"
+		{thickness 25}
+	}
+	{Volume "shieldl2"
+		{thickness 25}
+	}
+	{Volume "shieldl3"
+		{thickness 25}
+	}
+	{Volume "shieldl4"
+		{thickness 25}
+	}
+	{Volume "shieldl5"
+		{thickness 25}
+	}
+	{Volume "shieldl6"
+		{thickness 25}
+	}
+	{Volume "shieldr1"
+		{thickness 25}
+	}
+	{Volume "shieldr2"
+		{thickness 25}
+	}
+	{Volume "shieldr3"
+		{thickness 25}
+	}
+	{Volume "shieldr4"
+		{thickness 25}
+	}
+	{Volume "shieldr5"
+		{thickness 25}
+	}
+	{Volume "shieldr6"
+		{thickness 25}
+	}

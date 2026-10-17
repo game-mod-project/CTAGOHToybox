@@ -1,0 +1,123 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; schürzen 5mm
+
+	("tank_medium_tier2")
+
+	("shield" args "shield1" 50)
+	("shield" args "shield2" 50)
+	("shield_track" args "shield3" 50)
+	("shield_track" args "shield4" 50)
+	("shield_track" args "shield5" 50)
+	("shield_track" args "shield6" 50)
+	("shield_track" args "shield7" 50)
+	("shield_track" args "shield8" 50)
+	("shield_track" args "shield9" 50)
+	("shield_track" args "shield10" 50)
+	("shield_track" args "shield11" 50)
+	("shield_track" args "shieldt11" 50)
+	("shield_track" args "shieldt12" 50)
+	("shield_track" args "shieldt13" 50)
+
+	("shield_group" args "shieldt" 13 "shieldt")
+	("shield_group" args "shieldt1" 13 "shieldt")
+	("shield_group" args "shieldt2" 13 "shieldt")
+	("shield_group" args "shieldt3" 13 "shieldt")
+	("shield_group" args "shieldt4" 13 "shieldt")
+	("shield_group" args "shieldt5" 13 "shieldt")
+	("shield_group" args "shieldt6" 13 "shieldt")
+	("shield_group" args "shieldt7" 13 "shieldt")
+	("shield_group" args "shieldt8" 13 "shieldt")
+	("shield_group" args "shieldt9" 13 "shieldt")
+	("shield_group" args "shieldt10" 13 "shieldt")
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 75
+			{front 200}
+			{top 50}		; Glacis
+			{rear 25}
+			{bottom 25}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 75
+			{front 200}
+			{top 30}
+			{rear 25}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 75
+			{front 25}
+			{rear 50}
+			{bottom 25}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 50
+			{front 25}
+			{top 25}
+			{rear 50}
+		}
+	}
+	{volume "turret"
+		{thickness 75
+			{front 125}
+			{top 40}		; 83° Front 
+			{rear 63}		; 90° Top
+		}
+	}
+	{volume "mantlet"
+		{thickness 125}
+	}
+	{volume "mantlet1"
+		{thickness 50
+			{front 125}
+		}
+		{tags "gun"}
+		{component "gun"}
+	}
+	{volume "cupola"
+		{thickness 125
+			{top 20}
+		}
+	}
+	{volume "basket"
+		{thickness 13}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shield3" {tags "cut_part"}}
+	{component "shield4" {tags "cut_part"}}
+	{component "shield5" {tags "cut_part"}}
+	{component "shield6" {tags "cut_part"}}
+	{component "shield8" {tags "cut_part"}}
+	{component "shield9" {tags "cut_part"}}
+	{component "shield10" {tags "cut_part"}}
+	{component "shield11" {tags "cut_part"}}
+	{component "shieldt11" {tags "cut_part"}}
+	{component "shieldt12" {tags "cut_part"}}
+	{component "shieldt13" {tags "cut_part"}}

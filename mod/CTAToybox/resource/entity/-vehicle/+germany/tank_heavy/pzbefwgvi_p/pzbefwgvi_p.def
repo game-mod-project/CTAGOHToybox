@@ -1,0 +1,139 @@
+{game_entity	
+	(include "/properties/tank__ctb_pzbefwgvi_p_af489d49.ext")
+
+	(include "/properties/selection/vehicle_big.inc" scale(0.9))
+	{props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "turret_rotator" "detect_tank_heavy" "sq_armor_heavy"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{collider "tank.heavy"}
+	(include "vk_4501_p.ext")
+	
+	("crew_5_human_extended")
+	("commander_visible")
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_210"}
+		}
+	}
+
+	
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_Is-2"}{end "seat_gunner_stand"} {base "open_charger"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_Is-2"} {end "seat_gunner_stand"} {base "open_charger"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_charger"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Is-2"} {end "pose_watch_binocular"} {base "open_commander"}}
+			{reverse 	{end	"emit_tank_2_hold"} {base "open_commander" -1}}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_88_l56 apcbche" 200} 	; 80 rounds
+			{item "bulletger_88_l56 he" 150}
+			{item "bulletger_88_l56 heat" 50}
+			{item "ammo mgun_ger belt" 17500}		; 32 belts (150 rounds each)
+			{item "ammo mp40" 12500}		; 32 belts (150 rounds each)		
+			{item "geballteladung_3kg" 2}
+			{item "flare" 15}
+		}
+	}
+	
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "88mm_kwk36_ctb_ger" filling "ammo bulletger_88_l56 apcbche" 1}
+			{gunner "gunner"}
+			;{charger "charger"}
+			("abm_dymamic"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			{ai_in_manual}
+			{basic}
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight5"}
+			{gunner "gunner"}
+			{charger "charger"}
+			{basic}
+		}
+		{place "mgun"
+			{type "commander"}
+			{weapon "commander_vision"}
+			{foresight "vision_rot"}
+			{gunner "commander"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun3"
+			{type "rear"}
+			{weapon "mp40_folded_ctb_ger" filled}
+			{foresight "foresight6"}
+			{gunner "charger"}
+			{charger "charger"}
+			{basic}
+		}
+		{place "mgun4"
+			{type "rear"}
+			{weapon "mp40_folded_ctb_ger" filled}
+			{foresight "foresight7"}
+			{gunner "commander"}
+			{charger "commander"}
+			{basic}
+		}
+		{place "artillery_request"
+			{type "request_artillery"}
+			{weapon "leuchtpistole34_ctb_ger" filled}
+			{foresight "foresight3"}
+			{gunner "commander"}
+			{basic}
+		}
+	}
+
+
+	{mass 57000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.20) len(-0.5))
+		("mobility_tank"
+			speed(48) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(29) ;--------Max speed in reverse on road, km/h.
+			traverse(18) ;-------Track traverse, per second, in degrees.
+			weight(57.0) ;-------Weight in Tonnes.
+			power(530) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(9500) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1000) ;----------Range in km, off-road.
+		)
+	}
+
+	
+	{Extension "pzbefwgvi_p.mdl"}
+	{bone "gun_rot"
+		{limits -8 15}
+		{speed2 4}
+	}
+	{bone "turret"
+		{speed2 6}
+	}
+	{bone "commander_rot"
+		{speed2 180}
+	}
+}

@@ -1,0 +1,60 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+
+	("shield" args "shieldl1" 10)
+	("shield" args "shieldr1" 10)
+
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("transmission" args "transmission")
+	("tracks" repair(30) thickness(30))
+
+	{volume "body1"			; Hull
+		{thickness 38		; 15 + 4
+			{front 40}
+			{top 30}		; Glacis
+			{rear 12}
+			{bottom 12}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 38		; 15 + 4
+			{front 40}
+			{top 20}
+			{rear 12}
+			{bottom 12}
+		}
+	}
+	{volume "engine"
+		{thickness 38		; 15 + 4
+			{front 10}
+			{top 20}
+			{rear 26}
+			{bottom 12}
+		}
+	}
+	{volume "turret1"		; Main Turret 
+		{thickness 30
+			{top 20}
+		}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 40}
+	}
+	{volume "turret3"		; Turret Rear
+		{thickness 30
+			{top 20}
+			{bottom 20}
+		}
+	}
+	{volume "mantlet"
+		{thickness 40}
+	}

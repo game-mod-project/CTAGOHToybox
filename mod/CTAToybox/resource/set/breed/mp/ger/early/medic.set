@@ -1,0 +1,34 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_medic_1"}
+	{portrait "ger_medic"}
+	{icon "tech"}
+	{icon_priority 5}
+	{tags "soldier"}
+	{nationality ger}
+	{voice ger_medic}
+	{armors
+		{head ger_stalhelm_m43_medic_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+		("medic")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "luger_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "m24_smoke grenade" 4.5 1}
+
+		{item "bandage_ger" 45 5}
+		{item "tent_kit" 4}
+		{item "ger_sidecap_m39_var2_med"}
+	}
+}

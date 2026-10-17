@@ -1,0 +1,50 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+{from "pattern gun"
+    {filling "bulletger_128"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+    {reloadSound "INT/reload/reload_slow_INT"}
+
+    {calibre 128}
+    {range 240 240}
+
+    ("reload time" seconds(7))
+
+    ("velocity m/s"
+        ap(920)
+        apcr(980)
+        he(750)
+        heat(600)
+    )
+
+    ("armor health" damage(415))
+
+    ("penetration_long"
+        shell(apcbche)
+        range(240)
+        a(265) b(245) c(225) d(205) e(185)
+    )
+
+    ("penetration_long"
+        shell(apcr)
+        range(240)
+        a(315) b(285) c(255) d(225) e(195)
+    )
+
+    ("penetration_long"
+        shell(heat)
+        range(230)
+        a(170) b(170) c(170) d(170) e(170)
+    )
+
+    ("accuracy_direct"
+        r1(0.40)
+        range_ap(240)
+        range_he(240)
+        range_heat(230)
+    )
+}
+

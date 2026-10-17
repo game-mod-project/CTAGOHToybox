@@ -1,0 +1,89 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+	; spare tracks 20mm
+
+	("tank_light_tier1")
+
+
+	("tracks" repair(30) thickness(30))
+	("gun" repair(30) thickness(40))
+
+	("ammo" args "ammo")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 80
+			{rear 20}
+			{bottom 40}
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; 
+		{thickness 80	 
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"			; 
+		{thickness 80
+			{top 44}
+			{rear 20}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; 
+		{thickness 80
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 80
+			{front 20}
+			{top 44}
+			{bottom 40}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine2"
+		{thickness 80
+			{front 20}
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine3"
+		{thickness 80
+			{top 44}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "armor1"
+		{thickness 40}
+		{able {visible 0}{Obstacle 0}{contact 0}}
+	}
+	{volume "turret1"		; ring
+		{thickness 80}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; main
+		{thickness 80
+			{top 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"		; 
+		{thickness 80
+			{top 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 80}
+		{CastSteel 0.8063}
+	}

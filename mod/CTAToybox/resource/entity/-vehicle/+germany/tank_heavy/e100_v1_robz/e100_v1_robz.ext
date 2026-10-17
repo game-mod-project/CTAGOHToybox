@@ -1,0 +1,99 @@
+("gun" repair(30) thickness(125))
+	("tracks" repair(30) thickness(125))
+
+	("ammo" args "inventory")
+	("ammo" args "inventory_vol001")
+	("ammo" args "ammotank")
+
+	;volume, component/tag
+
+
+	{volume "body"
+		{thickness 450
+			{front 800}
+			{top 225}
+			{rear 550}
+			{bottom 450}
+		}
+	}
+	{volume "turret"
+		{thickness 550
+			{front 800}
+			{top 550}
+			{bottom 550}
+		}
+	}
+	{volume "turret1"
+		{thickness 450
+		}
+	}
+	{volume "mantlet"
+		{thickness 1000
+		}
+	}
+	{volume "shield"
+		{thickness 350
+		}
+	}
+	{volume "engine"
+		{thickness 450
+		}
+	}
+	{extender "shield"
+		{on}
+	}
+	{volume "trackl"
+		{thickness 75
+		}
+	}
+	{volume "trackr"
+		{thickness 75
+		}
+	}
+	{volume "trackleft"
+		{thickness 75
+		}
+	}
+	{volume "trackright"
+		{thickness 75
+		}
+	}
+	{volume "engine"
+		{thickness 350
+		}
+	}
+	{volume "wheel"
+		{thickness 75
+		}
+	}
+	{volume "wheelr"
+		{thickness 75
+		}
+	}
+	{volume "wheell"
+		{thickness 75
+		}
+	}
+	{volume "wheelright"
+		{thickness 75
+		}
+	}
+	{volume "rocket"
+		{thickness 40
+		}
+	}
+	{volume "wheelleft"
+		{thickness 75
+		}
+	}
+	{volume "shieldl1"
+		{thickness 400
+		}
+	}
+	{volume "shieldr1"
+		{thickness 400
+		}
+	}
+
+
+	("transmission" args "transmission")

@@ -1,0 +1,92 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "hummel_xx.mdl"}
+	
+	{volume "barrel1"
+		{thickness 50}
+		{able {holed}}
+	}
+	{volume "barrel2"
+		{thickness 50}
+	}
+	{volume "barrel3"
+		{thickness 50}
+	}
+	{volume "barrel4"
+		{thickness 50}
+	}
+	{volume "barrel6"
+		{thickness 50}
+	}
+	{volume "barrel7"
+		{thickness 50}
+	}
+	{volume "body1"
+		{thickness 75
+			{front 75}
+			{top 50}
+			{bottom 25}
+		}
+	}
+	{volume "body2"
+		{thickness 75
+			{front 25}
+		}
+	}
+	{volume "body3"
+		{thickness 75
+			{top 50}
+		}
+	}
+	{volume "engine1"
+		{thickness 75
+			{rear 25}
+			{front 25}
+		}
+	}
+	{volume "engine2"
+		{thickness 38
+			{top 25}
+			{rear 25}
+			{bottom 25}
+		}
+	}
+	{volume "gun_shield1"
+		{thickness 38}
+	}
+	{volume "gun_shield2"
+		{thickness 38}
+	}
+	{volume "shield1"
+		{thickness 50}
+	}
+	{volume "shield2"
+		{thickness 10}
+	}
+	{volume "shield3"
+		{thickness 10}
+	}
+	{volume "tshield1"
+		{thickness 25}
+	}
+	{volume "tshield2"
+		{thickness 25}
+	}
+	{volume "tshield3"
+		{thickness 25}
+	}
+	{volume "tshield4"
+		{thickness 25}
+	}
+	{volume "tshield5"
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "tshield6"
+		{thickness 25}
+	}
+	{volume "tshield7"
+		{thickness 25}
+	}
+	("tracks" thickness(50))
+}

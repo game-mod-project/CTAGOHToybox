@@ -1,0 +1,9 @@
+;SDL
+
+(include "car__ctb_sdkfz_251_9_e2001ddf.ext")
+{props "halftrack"}
+("tracks" repair(30) thickness(40))
+
+{extender "talk"
+	{talker "tank"}
+}

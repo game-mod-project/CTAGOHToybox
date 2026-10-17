@@ -56,13 +56,13 @@
 	{extender "inventory"
 		{weapon "mgun" {mask "mountable"}}
 		{box
-			{item "bulletger_37_auto apcbc" 400}	
-			{item "bulletger_37_auto he" 800}
-			{item "bulletger_37_auto apcr" 150}
-			{item "ammo mgun_ger belt" 4500}		; 32 belts (150 rounds each)
-			{item "mg42_drum" filled {user "mgun"}}
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 6}
+			{item "bulletger_37_auto apcbc" 2000}	
+			{item "bulletger_37_auto he" 4000}
+			{item "bulletger_37_auto apcr" 750}
+			{item "ammo mgun_ger belt" 22500}		; 32 belts (150 rounds each)
+			{item "mg42_drum_ctb_ger" filled {user "mgun"}}
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 12}
 		}
 	}
 
@@ -70,7 +70,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "37mm_flak43_x2" filling "bulletger_37_auto he" 20}
+			{weapon "37mm_flak43_x2_ctb_ger" filling "bulletger_37_auto he" 20}
 			{Barrels 2}
 			{gunner "gunner"}
 			{charger "charger"}
@@ -81,7 +81,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -105,15 +105,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(0.94))
 		("mobility_tank"
-			speed(55) ;----------Max speed when fully accelerated on road, km/h.
+			speed(83) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(5.9) ;-------Max speed in reverse on road, km/h. 3.9 + 2kmh
 			traverse(35) ;-------Track traverse, per second, in degrees.
 			weight(45.5) ;-------Weight in Tonnes.
 			power(690) ;---------Engine Power, in hp. //engine was not yet governed, was in Nov.43 (after panther D production ended)
 			track(6.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(700) ;----------Fuel capacity in Litres.
+			fuel(7000) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(100) ;---------Range in km, off-road.
+			range(1000) ;---------Range in km, off-road.
 		)
 	}
 

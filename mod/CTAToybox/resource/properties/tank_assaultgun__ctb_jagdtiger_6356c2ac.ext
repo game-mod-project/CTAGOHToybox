@@ -1,0 +1,19 @@
+;SDL
+(include "tank_unarmed__ctb_jagdtiger_6356c2ac.ext")
+
+{props "with_gun" "detect_td_medium"}
+{targetClass "tank_medium" "ap fg bullet"}
+{targetSelector "tank_medium"}
+
+;("mantlet" repair(30))
+("gun" thickness(60) repair(30))
+
+(define "restore_ik_time"
+	{RestoreIKTime 4}
+)
+
+{Weaponry
+	{place "gun"
+		{rotate}
+	}
+}

@@ -1,0 +1,36 @@
+;_________________________________________
+; Soviet Light Aerial Rocket Launcher
+;=========================================
+
+
+{from "pattern reactive"		; "IL-2"
+	{tag "gun"}
+	{filling "ammo 210mm_werfer_21" 2}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/nebel_burst/"}
+	{inventory {noView}}
+	{calibre 210}
+
+	{spreading
+		{SpreadRadius 4}
+		{SpreadXYRatio 5}
+		{SpreadYadjust 0.1}
+		{radiusFunction
+			1		0.1
+			100		0.1
+			200		0.1
+		}
+	}
+
+	{Automatic}
+	{burst
+		{min 2}
+	}
+
+
+	{range 1 300}
+	("fire rate" rpm(79.5)) ;// 8s to fire full salvo
+	("reload time" seconds(20))
+	("velocity" mps(500))
+	("aerial gravity")
+}

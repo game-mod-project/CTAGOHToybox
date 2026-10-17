@@ -1,0 +1,96 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_grille_15_l63_e6edd5a6.ext")
+	(include "/properties/shadow/tank.inc" scale(1.4))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "spg" "heavy" "vision_lev04" "muzzle_150mm_155mm_sides" "shield" "open_top" "detect_spg" "shell_eject"}
+	{extension "grille_15_l63.mdl"}
+	(include "grille_15_l63.ext")
+	{patherId "nashorn"}
+	{targetclass "tank_medium"}
+	{targetSelector "cannon_howitzer"}
+
+	{boarder
+		{anm "left"
+			{forward	{begin	"board_sherman_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_sherman_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+ 		{anm "armor"
+			{forward {begin "board_sherman_left"} {end "seat_armor"}}
+			{reverse {end	"emit_tank_2_hold"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_sherman_right"} {end "seat_armor"}}
+			{reverse {end	"emit_tank_2_hold"}}
+		}
+		{anm "gunner" 
+			{forward {begin "board_tank_right"} {end "pz-6_gunner_seat"}}
+			{reverse {end	"emit_tank_2_hold"} }
+		}
+	}
+
+	("crew_4_human")
+	("crew_human_visible_anm"	place(gunner) 	 door(emit3) door2(emit3) visor(driver) anm_left(driver) anm_right(driver))
+	("crew_human_visible_anm"	place(charger) 	 door(emit3) door2(emit3) visor(main)   anm_left(left)   anm_right(left))
+
+	{extender "shield" {on}}
+
+	{extender "inventory"
+		{weapon "mgun" {mask "mountable"}}
+		{box
+			{item "bulletger_150_l30 aphe" 50} 
+			{item "bulletger_150_l30 apcr" 50}
+			{item "bulletger_150_l30 heat" 25} 	
+			{item "bulletger_150_l30 he" 75}
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 12}
+		}
+	}
+
+	{sensor
+		{visor "around"
+			{vision "vehicle_around"}		;// better vision than a in-closed turret 
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "150mm_sfh43_ctb_ger" filling "bulletger_150_l30 he" 1}
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_dymamic"
+				zeroing(4.5)
+				dispersion(0.25)
+			)
+		}
+	}
+
+	{mass 45500}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.94))
+		("mobility_tank"
+			speed(69) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(45.5) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(7300) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1000) ;---------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -80 15}
+		{speed2 4}
+	}
+	{bone "turret"
+		{speed2 12} ;// could rotate anywhere from 4° - 20° per second with variable speed hydraulic traverse ; governed
+	}
+}

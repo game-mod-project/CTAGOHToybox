@@ -1,0 +1,51 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer3m_xx.mdl"} ;//needs full QA
+
+	{volume "body"
+		{thickness 75}
+	}
+	{volume "body1"
+		{thickness 75}
+	}
+	{volume "back"
+		{thickness 75}
+	}
+	{volume "cupola"
+		{thickness 125
+			{top 25}
+		}
+	}
+	{volume "engine"
+		{thickness 75}
+	}
+	{volume "hull"
+		{thickness 50}
+	}
+	{volume "mantlet"
+		{thickness 75}
+	}
+	{volume "turret"
+		{thickness 75}
+	}
+	{volume "part2"
+		{thickness 50}
+	}
+	{volume "part3"
+		{thickness 50}
+	}
+	{volume "part4"
+		{thickness 13}
+		{able {obstacle 0}}
+	}
+	{volume "part5"
+		{thickness 13}
+		{able {obstacle 0}}
+	}
+	{volume "trackleft"
+		{thickness 53}
+	}
+	{volume "trackright"
+		{thickness 53}
+	}
+}

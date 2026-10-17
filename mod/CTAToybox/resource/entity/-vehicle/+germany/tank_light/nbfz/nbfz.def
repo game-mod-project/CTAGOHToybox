@@ -66,28 +66,28 @@
 	}
 	{extender "inventory"
 		{box
-			{item "bulletger_75_l24 apcbche" 25} 		; 80 rounds
-			{item "bulletger_75_l24 he" 40}
-			{item "bulletger_75_l24 heat" 10}
-			{item "bulletger_75_l24 sm" 4}
-			{item "bulletger_37 aphe" 59} 		; 125 rounds
-			{item "bulletger_37 he" 60}
-			{item "bulletger_37 apcr" 5}
-			{item "ammo mgun_ger belt" 2850}		; 21 belts (150 rounds each)
-			{item "geballteladung_3kg" 1}
+			{item "bulletger_75_l24 apcbche" 125} 		; 80 rounds
+			{item "bulletger_75_l24 he" 200}
+			{item "bulletger_75_l24 heat" 50}
+			{item "bulletger_75_l24 sm" 20}
+			{item "bulletger_37 aphe" 295} 		; 125 rounds
+			{item "bulletger_37 he" 300}
+			{item "bulletger_37 apcr" 25}
+			{item "ammo mgun_ger belt" 14250}		; 21 belts (150 rounds each)
+			{item "geballteladung_3kg" 2}
 		}
 	}
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk37" filling "ammo bulletger_75_l24 apcbche" 1}
+			{weapon "75mm_kwk37_ctb_ger" filling "ammo bulletger_75_l24 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}	
 		}
 		{place "gun2"
 			{RestoreIKAfterAim}
-			{weapon "37mm_kwk36" filling "ammo bulletger_37 aphe" 1}
+			{weapon "37mm_kwk36_ctb_ger" filling "ammo bulletger_37 aphe" 1}
 			{foresight "Foresight2"}
 			{gunner "gunner"}
 			{charger "charger"}	
@@ -96,7 +96,7 @@
 
 		{place "mgun1"
 			{type "coaxial"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -107,7 +107,7 @@
 		{place "mgun2"
 			("abm_mgun")
 			{type "hull"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "commander"}
 			{charger "commander"}
@@ -117,7 +117,7 @@
 		{place "mgun3"
 			("abm_mgun")
 			{type "rear"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight6"}
 			{gunner "charger2"}
 			{charger "charger2"}
@@ -130,15 +130,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.45))
 		("mobility_tank"
-			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			speed(63) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(8) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(28) ;-------Weight in Tonnes.
 			power(265) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
 			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(470) ;----------Fuel capacity in Litres.
+			fuel(4700) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(130) ;---------Range in km, off-road.
+			range(1300) ;---------Range in km, off-road.
 		)
 	}
 

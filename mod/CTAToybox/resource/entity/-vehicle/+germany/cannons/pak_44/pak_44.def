@@ -1,0 +1,137 @@
+{game_entity
+	(include "/properties/cannon__ctb_pak_44_a41afb3c.ext")
+	
+	{extension "pak_44.mdl"}
+	(include "/properties/selection/vehicle.inc" scale(1.1))
+	{props "wheeled" "invisible"  "vision_lev04_can" "muzzle_122mm_128mm_sides" "trailer" "trailer_heavy" "detect_atgun" "sq_at_gun"};"shell_eject"
+	{PatherID "cannon.large"}
+	{targetclass "cannon_big"}
+	{targetSelector "cannon_aa"}
+
+	{sensor
+		{visor "main"
+			{vision "cannon_range_210"}
+		}
+	}
+
+	("armor_heavy_cannon")
+	("crew_wheeled_cannon_5")
+
+	("gun" repair(30) thickness(30))
+	("shield" args "shield1" 10)
+	("shield" args "shield2" 10)
+	("shield" args "shield3" 10)
+	("shield" args "shield4" 10)
+	("shield" args "shield5" 10)
+	("shield" args "shield6" 10)
+
+	("wheel" args "wheelright1")
+	("wheel" args "wheelleft1")
+	("wheel" args "wheelright2")
+	("wheel" args "wheelleft2")
+
+	{volume "shield" {able {holed}}}
+
+	{boarder
+		{anm "gunner"
+			{forward {end "AAgun_61k_gunner" 10}}
+		}
+		{anm "gunner2"
+			{forward {end "pose_dshk_aa_commander" 10}}
+		}
+		{anm "charger"
+			{forward {end "pose_flak_charger" 10}}
+		}
+		{anm "charger2"
+			{forward {end "pose_flak_gunner2" 10}}
+		}
+		{anm "commander"
+			{forward {end "pose_flak_commander" 10}}
+		}
+		{anm "driver1"	;// gunner
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver2"	;// gunner2
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "driver3"	;// charger
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver4"	;// charger2
+			{forward {end "cannon_pak40_pusher_right" 10}}
+		}
+		{anm "driver5"	;// commander
+			{forward {end "cannon_pak40_pusher_left" 10}}
+		}
+		{anm "seat1"	;// gunner
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat2"	;// gunner2
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat3"	;// charger
+			{forward {end "pose_seat_cannon_right" 10}}
+		}
+		{anm "seat4"	;// charger2
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+		{anm "seat5"	;// commander
+			{forward {end "pose_seat_cannon_left" 10}}
+		}
+	}
+
+	{extender "cannon"
+		{animation
+			{switch "close"}
+			;// "gunner" "gunner2" "charger" "charger2" "commander"
+			{move "cannon_pak40_pusher_right" "cannon_pak40_pusher_left" "cannon_pak40_pusher_right" "cannon_pak40_pusher_right" "cannon_pak40_pusher_left"}
+			{aim "AAgun_61k_charger_aim" "cannon_zis3_gunlayer" "flak_charger_aim" "flak_gunner2_aim" "flak_commander_aim"}
+			{fire "AAgun_61k_charger_fire" "" "flak_charger_fire" "flak_gunner2_fire" "flak_commander_fire"}
+			{reload "AAgun_61k_charger_reload" "" "flak_charger_reload" "flak_gunner2_reload" "flak_commander_reload"}
+		}
+		{move {workers "driver1" "driver2" "driver3" "driver4" "driver5" minWorkers 4} {obstacle "close"}}		;// move state: cannon being pushed and which positions play animations
+		{attack {workers "gunner" "gunner2" "charger" "charger2" "commander"} {obstacle "open"}}	;// fire/attack state: cannon aim, fire, and reload events
+		{trailing {workers "seat1" "seat2" "seat3" "seat4" "seat5"}}								;// trailing state: cannon is being towed {obstacle} not needed. Uses "close"
+		{rotate_ik_Limit 0}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_128_2 apc" 95}	; 40 rounds
+			{item "bulletger_128_2 he" 100}
+			{item "bulletger_128_2 apcbc" 40}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_pak44_3_ctb_ger" filling "bulletger_128_2 apc" 1}
+			{gunner "gunner gunner2" minWorkers 1}
+			{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+        }
+
+	{mass 11060}
+	{Chassis "track"
+		("car_trace" fx("tracewheel02") step(0.1) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("car_trace" fx("tracewheel02") step(0.1) wheell("wlf") wheelr("wrf") bonel("FXtraceL2") boner("FXtraceR2"))
+		("car_trace" fx("tracewheel02") step(0.1) wheell("wlf") wheelr("wrf") bonel("FXtraceL3") boner("FXtraceR3"))
+		("mobility_cannon"
+			speed(1) ;-----------------------------------Max speed.
+			weight(11060) ;---------------------------------Weight in Kilograms.
+		)
+	}
+	{bone "gun_rot"
+		{limits -2 45}
+		{speed2 2.5}
+	}
+	{bone "turret"
+		{speed2 10}
+	}
+}

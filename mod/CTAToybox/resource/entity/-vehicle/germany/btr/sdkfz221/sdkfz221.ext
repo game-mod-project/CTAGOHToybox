@@ -1,0 +1,53 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm (wheels did not deflate when piereced by bullet)
+
+	("armoredcar_tier1")
+
+	("solid_wheel" args "wheelright1")
+	("solid_wheel" args "wheelleft1")
+	("solid_wheel" args "wheelright2")
+	("solid_wheel" args "wheelleft2")
+
+	("turret" repair(45))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 18
+			{top 12}
+			{front 30}
+			{rear 12}
+		}
+	}
+	{volume "body2"			; Lower Center section
+		{thickness 18
+			{rear 12}
+			{bottom 8}
+		}
+		{tags "no_target"}
+	}
+	{volume "body3"			; Driver Port
+		{thickness 18
+			{top 12}
+			{front 30}
+		}
+		{tags "no_target"}
+	}
+	{volume "engine"
+		{thickness 18
+			{top 12}
+			{front 12}		; Nose
+			{rear 8}
+			{bottom 8}
+		}
+	}
+	{volume "turret"		; Turret 
+		{thickness 20}
+		{able {holed}}
+	}
+	{volume "hole1"
+		{tags "sticky"}
+	}

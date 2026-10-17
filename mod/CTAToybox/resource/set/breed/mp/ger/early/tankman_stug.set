@@ -1,0 +1,30 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pzwaffe_stug"}
+	{portrait "ger_tankman"}
+	{icon "tech"}
+	{icon_priority 0}
+	{tags "crew"}
+	{nationality ger}
+	{armors
+		{head ger_m34_sidecap_arty}
+	}
+	{perks
+		(include "ability.inc")
+		("tankman")
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "bandage_ger" 5 1}
+
+		{in_hands 0}
+	}
+}

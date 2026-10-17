@@ -1,0 +1,33 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+{from "pattern gun"			; L/55 "jagdtiger"
+	{filling "bulletger_170"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/reload_howitzer"}
+	("range_220")
+	{calibre 180}
+
+	("reload time" seconds(13))
+
+	("velocity m/s" ap(925) apcr(1050) he(850) heat(850))
+	("armor health" damage(480))
+	("armor health custom" shell(apcbche) damage(880) velocity(925) filler(1767))
+
+	; Pzgr.43
+	("penetration_long" shell(apcbche) range(240) a(375) b(355) c(335) d(310) e(285))
+	
+	; Gr.46 H1A
+	("penetration_long" shell(heat) range(200) a(320) b(320) c(320) d(320) e(320))
+	
+	; PzGr.47
+	("penetration_long" shell(apcr) range(240) a(485) b(440) c(395) d(340) e(285))
+
+	{parameters "he"
+		{range 240 240}
+	}
+
+	("accuracy_direct" r1(0.35) range_ap(240) range_he(240) range_heat(240))
+}

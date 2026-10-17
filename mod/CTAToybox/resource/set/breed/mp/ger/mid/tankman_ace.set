@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_pzwaffe_camo_1"}
+	{portrait "ger_tankman"}
+	{icon "tech"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_sidecap_m39_var2_pz_panzer}
+	}
+	{perks
+		(include "ability.inc")
+		("loader_skill_smg_rank_2")("tier2_standard")
+		("skilled_repair")
+		("skilled_gun")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_8")
+	}
+	{inventory
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "bandage_ger" 5 1}
+
+		{in_hands 0}
+	}
+}

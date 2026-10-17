@@ -93,10 +93,10 @@
 
 	{extender "inventory"
 		{box
-			{item "ammo mgun_ger belt" 2500}
-			{item "bulletger_75_l70 apcbche" 70}
-			{item "bulletger_75_l70 he" 35}
-			{item "bulletger_75_l70 apcr" 5}
+			{item "ammo mgun_ger belt" 12500}
+			{item "bulletger_75_l70 apcbche" 350}
+			{item "bulletger_75_l70 he" 175}
+			{item "bulletger_75_l70 apcr" 25}
 		}
 	}
 
@@ -104,7 +104,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk45l100_1" filling "ammo bulletger_75_l70 apcbche" 1}
+			{weapon "75mm_kwk45l100_1_ctb_ger" filling "ammo bulletger_75_l70 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			{foresight "foresight1"}
@@ -113,7 +113,7 @@
 		}
 		{place "mgun1"
 			{type "aa"}
-			{weapon "mg42_tank" filled}	
+			{weapon "mg42_tank_ctb_ger" filled}	
 			{foresight "foresight4"}
 			{gunner "charger"}
 			{charger "charger"}
@@ -122,7 +122,7 @@
 		}
 		{place "mgun2"
 			{type "cupola"}
-			{weapon "mg42_tank" filled}	
+			{weapon "mg42_tank_ctb_ger" filled}	
 			{foresight "foresight3"}
 			{gunner "commander"}
 			{charger "commander"} 
@@ -135,15 +135,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(1.85))
 		("mobility_tank"
-			speed(60)
+			speed(90)
 			reverse(15)
 			traverse(30)
 			weight(60.0)
 			power(700)
 			track(3.5)
-			fuel(700)
+			fuel(7000)
 			type(fuel)
-			range(100)
+			range(1000)
 		)
 	}
 	{Extension "e-50_75l100.mdl"}

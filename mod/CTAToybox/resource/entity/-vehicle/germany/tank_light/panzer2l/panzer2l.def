@@ -50,12 +50,12 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_20_auto ap" 140}	; 32 magazines (10 rounds each)
-			{item "bulletger_20_auto apcr" 10}
-			{item "bulletger_20_auto he" 160}
-			{item "ammo mgun_ger belt ap" 2100}	; 15 belts (150 rounds each)
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 2}
+			{item "bulletger_20_auto ap" 700}	; 32 magazines (10 rounds each)
+			{item "bulletger_20_auto apcr" 50}
+			{item "bulletger_20_auto he" 800}
+			{item "ammo mgun_ger belt ap" 10500}	; 15 belts (150 rounds each)
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 4}
 		}
 	}
 
@@ -63,7 +63,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "20mm_kwk38" filling "bulletger_20_auto ap" 10}
+			{weapon "20mm_kwk38_ctb_ger" filling "bulletger_20_auto ap" 10}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic_stabilised"
@@ -73,7 +73,7 @@
 		}
 		{place "mgun"
 			{type "coaxial"}
-			{weapon "mg34_tank" filling "ammo mgun_ger belt ap" 150}
+			{weapon "mg34_tank_ctb_ger" filling "ammo mgun_ger belt ap" 150}
 			{foresight "foresight3"}
 			{gunner "gunner"}
 			{charger "charger"}
@@ -86,15 +86,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm2") step(0.2) len(0.76))
 		("mobility_tank"
-			speed(60) ;----------Max speed when fully accelerated on road, km/h.
+			speed(90) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(10) ;--------Max speed in reverse on road, km/h.
 			traverse(42) ;-------Track traverse, per second, in degrees.
 			weight(11.8) ;-------Weight in Tonnes.
 			power(180) ;---------Engine Power, in hp.
 			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(235) ;----------Fuel capacity in Litres.
+			fuel(2350) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(155) ;---------Range in km, off-road.
+			range(1550) ;---------Range in km, off-road.
 		)
 	}
 

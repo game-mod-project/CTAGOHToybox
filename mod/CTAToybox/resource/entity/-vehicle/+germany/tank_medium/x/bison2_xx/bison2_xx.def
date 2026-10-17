@@ -1,0 +1,63 @@
+{game_entity
+
+	{Volume "Magazine"
+		{Thickness 38}
+	}
+	{Volume "Left2"
+		{Thickness 38}
+	}
+	{Volume "right2"
+		{Thickness 38}
+	}
+	{Volume "Left1"
+		{Thickness 25}
+	}
+	{Volume "right1"
+		{Thickness 25}
+	}
+
+	{Volume "Inventory_vol"
+		{Thickness 8}
+	}
+
+	{Volume "baffleBT1"
+		{Thickness 50}
+	}
+	{Volume "baffleBT2"
+		{Thickness 38}
+	}
+	{Volume "baffleBT3"
+		{Thickness 38}
+	}
+	{Volume "baffleBT4"
+		{Thickness 38}
+	}
+	{Volume "baffleBT5"
+		{Thickness 38}
+	}
+
+	{Volume "BodyShieldL"
+		{component "turret"}
+		{tags "turret"}
+		{Thickness 75}
+	}
+	{Volume "BodyShieldR"
+		{component "turret"}
+		{tags "turret"}
+		{Thickness 75}
+	}
+
+	{Volume "box1"
+		{Thickness 13}
+	}
+	{Volume "box2"
+		{Thickness 88}
+	}
+	{Volume "box3"
+		{Thickness 15}
+	}
+
+	(include "/properties/vehicle_xx.ext")
+	{Extension "bison2_xx.mdl"}
+
+}

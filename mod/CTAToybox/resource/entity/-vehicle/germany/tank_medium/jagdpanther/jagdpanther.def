@@ -53,12 +53,12 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_88_l71 apcbche" 29} 	; 60 rounds
-			{item "bulletger_88_l71 he" 30}
-			{item "ammo mgun_ger belt" 2400}		; 17 belts (150 rounds each)
-			{item "mg42_belt" 1}
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 6}
+			{item "bulletger_88_l71 apcbche" 145} 	; 60 rounds
+			{item "bulletger_88_l71 he" 150}
+			{item "ammo mgun_ger belt" 12000}		; 17 belts (150 rounds each)
+			{item "mg42_belt_ctb_ger" 2}
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 12}
 		}
 	}
 
@@ -66,7 +66,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "88mm_pak43_3" filling "bulletger_88_l71 apcbche" 1}
+			{weapon "88mm_pak43_3_ctb_ger" filling "bulletger_88_l71 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger commander" minWorkers 1}
 			("abm_dymamic_td"
@@ -76,7 +76,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg34_tank" filled}
+			{weapon "mg34_tank_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -91,15 +91,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(0.78))
 		("mobility_tank"
-			speed(46) ;----------Max speed when fully accelerated on road, km/h.
+			speed(69) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(6);----------Max speed in reverse on road, km/h.
 			traverse(28) ;-------Track traverse, per second, in degrees.
 			weight(45.6) ;-------Weight in Tonnes.
 			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
 			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(700) ;----------Fuel capacity in Litres.
+			fuel(7000) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(80) ;----------Range in km, off-road.
+			range(800) ;----------Range in km, off-road.
 		)
 	}
 

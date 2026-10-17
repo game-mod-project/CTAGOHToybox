@@ -1,0 +1,29 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/44 "pak" (血统纯正修复版)
+	{filling "bulletger_150"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "tank/1p/large/"}
+	
+	{range 250 250}
+	{calibre 150}
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(850) apcr(1) he(800) heat(800))
+	
+	("armor health" damage(450))
+	("armor health custom" shell(apcbche) damage(450) velocity(850) filler(660))
+	
+	("85-155_slope_multipliers")
+
+    ("penetration_long" shell(apcbche) range(250) a(295) b(270) c(245) d(220) e(185))
+	
+	("penetration_long" shell(heat) range(250) a(334) b(334) c(334) d(334) e(334))
+
+	("accuracy_direct" r1(0.48) range_ap(250) range_he(250) range_heat(250))
+}

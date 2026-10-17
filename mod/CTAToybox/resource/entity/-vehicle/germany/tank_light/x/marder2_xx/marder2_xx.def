@@ -1,0 +1,73 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "marder2_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 40}
+	}
+	{volume "barrel2"
+		{thickness 40}
+	}
+	{volume "barrel3"
+		{thickness 40}
+	}
+	{volume "body1"			; Hull
+		{thickness 29
+			{front 70}
+			{top 29}		; Glacis
+			{rear 10}
+			{bottom 10}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 29
+			{front 60}
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "body3"			; Ammo protection
+		{thickness 20}
+	}
+	{volume "engine1"		; Hull
+		{thickness 29
+			{front 10}
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "armor1"
+		{thickness 20}
+	}
+	{volume "gun_shield1"
+		{thickness 16}
+		{able {holed}}
+	}
+	{volume "gun_shield2"
+		{thickness 16}
+		{able {holed}}
+	}
+	{volume "gun_shield3"
+		{thickness 16}
+	}
+	{volume "gun_shield4"
+		{thickness 16}
+	}
+	{volume "gun_shield5"
+		{thickness 16}
+	}
+	{volume "tshield1"
+		{thickness 20}
+	}
+	{volume "tshield2"
+		{thickness 20}
+	}
+	{volume "tshield3"
+		{thickness 20}
+	}
+	{volume "tshield4"
+		{thickness 20}
+	}
+	("tracks" thickness(30))
+}

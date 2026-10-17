@@ -1,0 +1,23 @@
+{from "pattern rifle"
+	{tag "rifle_shell"}
+	{filling "ammo vg2_mag" 10}
+	{entity "vg2"}
+	{fireSound "smallarms/s3/d1/GER/K98k/"}
+	{fireSoundclose "smallarms/s3/3p/GER/K98k/"}
+	{reloadSound "g43"}
+	{calibre 7.92}
+	{mass 3.85}
+
+	("velocity" mps(660))
+	("bolt_action")
+	("k98_rate")
+
+	{parameters "clip"
+		("reload time" seconds(4))
+	}
+	
+	("penetration" args 6 4 2 1 0)
+	("armor health" damage(3))
+
+	{rechargeTime 3}
+}

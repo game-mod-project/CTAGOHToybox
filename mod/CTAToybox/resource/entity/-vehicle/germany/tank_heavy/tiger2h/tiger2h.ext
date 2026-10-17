@@ -1,0 +1,126 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+	; spare tracks 30mm
+	; schürzen 5mm
+
+	("tank_heavy_tier2")
+
+	("shield_track" args "shield1" 90)		;// 30
+	("shield_track" args "shield2" 90)		;// 30
+	("shield_track" args "shield3" 90)		;// 30
+	("shield_track" args "shield4" 90)		;// 30
+	("shield_track" args "shield5" 90)		;// 30
+	("shield_track" args "shield6" 90)		;// 30
+	("shield_track" args "shield7" 90)		;// 30
+	("shield_track" args "shield8" 90)		;// 30
+
+	("shield_tear" args "shieldL1" 15)
+	("shield_tear" args "shieldL2" 15)
+	("shield_tear" args "shieldL3" 15)
+	("shield_tear" args "shieldL4" 15)
+	("shield_tear" args "shieldL5" 15)
+	("shield_tear" args "shieldR1" 15)
+	("shield_tear" args "shieldR2" 15)
+	("shield_tear" args "shieldR3" 15)
+	("shield_tear" args "shieldR4" 15)
+	("shield_tear" args "shieldR5" 15)
+
+	("tracks" repair(40) thickness(90))
+	("gun" repair(30) thickness(90))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 240
+			{front 300}		; Lower Nose
+			{top 450}		; Glacis
+			{rear 75}
+			{bottom 75}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 240
+			{front 450}
+			{top 120}
+			{rear 75}
+			{bottom 75}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine1"		; Hull
+		{thickness 240
+			{front 75}
+			{rear 240}
+			{top 75}
+			{bottom 75}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 240
+			{front 75}
+			{top 120}
+			{rear 240}
+			{bottom 75}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 240
+			{front 555}
+			{top 120}
+			{bottom 120}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret2"		; Turret Ring
+		{thickness 240
+			{front 555}
+			{top 75}
+			{bottom 75}
+			{rear 90}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "mantlet"
+		{thickness 330
+			{front 600}
+		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 450
+			{top 120}
+			{bottom 75}
+		}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+
+	{volume "mg_port"
+		{thickness 450}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+		{component "body"}
+	}
+
+	{component "shield1" {tags "cut_part"}}
+	{component "shield2" {tags "cut_part"}}
+	{component "shield3" {tags "cut_part"}}
+	{component "shield4" {tags "cut_part"}}
+	{component "shield5" {tags "cut_part"}}
+	{component "shield6" {tags "cut_part"}}
+	{component "shield7" {tags "cut_part"}}
+	{component "shield8" {tags "cut_part"}}

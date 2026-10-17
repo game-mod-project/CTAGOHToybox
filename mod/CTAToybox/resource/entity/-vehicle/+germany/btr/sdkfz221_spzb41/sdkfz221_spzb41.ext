@@ -1,0 +1,71 @@
+;SDL
+
+	; armor notes
+	; wheels 10mm (wheels did not deflate when piereced by bullet)
+
+	("armoredcar_tier1")
+
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{Volume "body4"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{Volume "body5"
+		{tags "body"}
+		{component "body"}
+		{thickness 16}
+	}
+	{Volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 16}
+	}
+	{Volume "gun2"
+		{tags "gun"}
+		{component "gun"}
+		{thickness 40}
+	}
+	{Volume "gun"
+		{tags "gun"}
+		{component "gun"}
+	}
+	{Volume "shieldl1"
+		{thickness 10}
+	}
+	{Volume "shieldl2"
+		{thickness 10}
+	}
+	{Volume "shieldr1"
+		{thickness 10}
+	}
+	{Volume "shieldr2"
+		{thickness 10}
+	}
+	{Volume "turret"
+		{thickness 16
+			{front	16}
+		}
+	}
+
+	("tracks" repair(30) thickness(12))
+	("gun" repair(30) thickness(50))
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}

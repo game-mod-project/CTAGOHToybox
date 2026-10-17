@@ -1,0 +1,164 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("shield_tear"  args "shieldl1" 30)
+	("shield_tear"  args "shieldl2" 30)
+	("shield_tear"  args "shieldl3" 30)
+	("shield_tear"  args "shieldl4" 30)
+	("shield_tear"  args "shieldl5" 30)
+	("shield_tear"  args "shieldl6" 30)
+
+	("shield_tear" args "shieldr1" 30)
+	("shield_tear" args "shieldr2" 30)
+	("shield_tear" args "shieldr3" 30)
+	("shield_tear" args "shieldr4" 30)
+	("shield_tear" args "shieldr5" 30)
+	("shield_tear" args "shieldr6" 30)
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 240	
+			{front 690}
+			{rear 240}
+			{top 360}
+			{bottom 90}
+		}
+	}
+	{volume "body2"			
+		{thickness 300
+			{front 480}
+			{rear 150}
+			{top 120}
+			{bottom 90}
+		}
+	}
+	{volume "body3"			
+		{thickness 480
+			{front 555}
+			{rear 360}
+			{top 120}
+			{bottom 120}
+		}
+	}
+	{volume "body4"			
+		{thickness 480}
+	}
+
+	{volume "engine1"		
+		{thickness 300
+			{front 480}
+			{rear 150}
+			{top 120}
+			{bottom 90}
+		}
+	}
+	{volume "engine2"		
+		{thickness 300
+			{front 480}
+			{rear 150}
+			{top 120}
+			{bottom 90}
+		}
+	}
+
+	{volume "turret1"
+		{thickness 600		
+			{front 1020}
+			{rear 180}
+			{top 90}
+			{bottom 75}
+		}
+	}
+	{volume "turret2"
+		{thickness 360		
+			{front 1020}
+			{rear 180}
+			{top 90}
+			{bottom 75}
+		}
+	}
+	{volume "turret3"
+		{thickness 360		
+			{front 1020}
+			{rear 180}
+			{top 90}
+			{bottom 75}
+		}
+	}
+
+	{volume "gun_shield1"
+		{thickness 600		
+			{front 585}
+		}
+	}
+	{volume "gun_shield2"
+		{thickness 360		
+			{front 480}
+		}
+	}
+
+	{volume "armor1"
+		{thickness 60}
+	}
+	{volume "armor2"
+		{thickness 60}
+	}
+
+	{volume "box1"
+		{thickness 60}
+	}
+	{volume "box2"
+		{thickness 90}
+	}
+	{volume "box3"
+		{thickness 60}
+	}
+	{volume "box4"
+		{thickness 60}
+	}
+	{volume "box5"
+		{thickness 60}
+	}
+	{volume "box6"
+		{thickness 60}
+	}
+
+	{volume "transmission"
+		{thickness 90}
+	}
+
+	{volume "mgun"
+		{thickness 60}
+	}
+
+	{volume "barrel21"
+		{thickness 60}
+	}
+
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}

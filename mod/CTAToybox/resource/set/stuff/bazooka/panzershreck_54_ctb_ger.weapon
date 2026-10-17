@@ -1,0 +1,6 @@
+{from "weapon panzershreck_43"
+	{entity "panzershreck_54"}
+	{mass 11}
+	{rechargeTime 5}
+}
+

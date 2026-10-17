@@ -1,0 +1,27 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_collab_1"}
+	{portrait "ger_basic"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{nationality rus}
+	{armors
+		{head civilian_fedora_black}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_1")("tier1_standard") 
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 100}
+		{item "bandage_rus" 4}
+		{in_hands 0}
+	}
+}

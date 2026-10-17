@@ -1,0 +1,25 @@
+{weapon_bullet
+	{tag "gun"}
+	{filling "ammo rocket_v1" 1}
+	{entity "v1_rocket"}
+	{desc "V-1"}
+	{fireSoundclose "gun/gun_interior/size4"}
+	{calibre 380}
+	{fireSound "gun/38cm"}
+	{preloaded}
+	{fillingVisible "rocket00"}
+	{inventory {noView}}
+	{foresight "foresight"}
+	;{burst {min 1} {noaiming}}
+	{Automatic}    
+	{rechargeTime 450}
+	{recoveryTime 900}
+	{gravity 0.1}
+	{speed 30}
+	{range 640 660}     
+	{aimtype direct}
+
+	{spreading
+                {radiusTable {0 0} {50 1} {100 2} {150 3} {200 4} {300 5} {400 6} {500 7} {600 8} {700 9}}
+	}
+}

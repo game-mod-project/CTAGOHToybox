@@ -1,0 +1,107 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "pz756r_xx.mdl"}
+
+	{volume "body1"
+		{thickness 120
+			{front 225}
+			{top 120}
+			{right 225}
+			{left 225}
+			{rear 30}
+			{bottom 120}
+		}
+	}
+	{volume "body2"
+		{thickness 120
+			{front 225}
+			{top 120}
+			{right 225}
+			{left 225}
+			{rear 30}
+		}
+	}
+	{volume "body3"
+		{thickness 300}
+	}
+	{volume "engine1"
+		{thickness 225
+			{front 30}
+			{rear 210}
+			{bottom 90}
+		}
+	}
+	{volume "engine2"
+		{thickness 225
+			{front 30}
+			{top 90}
+			{rear 180}
+		}
+	}
+	{volume "armor1"
+		{thickness 75}
+	}
+	{volume "armor2"
+		{thickness 75}
+	}
+	{volume "armor3"
+		{thickness 75}
+	}
+	{volume "turret1"
+		{thickness 225
+			{top 120}
+			{bottom 120}
+		}
+	}
+	{volume "turret2"
+		{thickness 225
+			{bottom 120}
+		}
+	}
+	{volume "turret3"		; turret ring
+		{thickness 315}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"		; right cheek
+		{thickness 315}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"		; left cheek
+		{thickness 315}
+		{CastSteel 0.8063}
+	}
+	{volume "turret6"		; center "mantlet"
+		{thickness 150}
+		{CastSteel 0.8063}
+	}
+	{volume "turret3"		; turret ring
+		{thickness 315}
+		{CastSteel 0.8063}
+	}
+	{volume "turret4"		; right cheek
+		{thickness 315}
+		{CastSteel 0.8063}
+	}
+	{volume "turret5"		; left cheek
+		{thickness 315}
+		{CastSteel 0.8063}
+	}
+	{volume "turret6"		; center "mantlet"
+		{thickness 150}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 240
+			{top 24}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 150}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"
+		{thickness 75}
+	}
+	("tracks" thickness(60))
+}

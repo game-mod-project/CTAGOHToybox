@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_blau_arty_crew_1"}
+	{portrait "ger_blau"}
+	{icon "tech"}
+	{icon_priority 1}
+	{nationality spa}
+	{armors
+		{head ger_m40_helmet_winter}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_defense")
+		("skilled_repair")
+		("expert_gun")
+		
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 200 25}
+
+		{item "m24 grenade" 4.5 1}
+		{item "bandage_ger" 9 1}
+
+		{in_hands 0}
+	}
+}

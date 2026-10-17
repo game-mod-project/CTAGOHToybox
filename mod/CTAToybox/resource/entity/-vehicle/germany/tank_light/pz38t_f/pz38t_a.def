@@ -50,12 +50,12 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_37 aphe" 35}		; 90 rounds
-			{item "bulletger_37 he" 45}
-			{item "bulletger_37 apcr" 9}
-			{item "ammo mgun_ger belt" 2500}	; 27 belts (100 rounds each)
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 5}
+			{item "bulletger_37 aphe" 175}		; 90 rounds
+			{item "bulletger_37 he" 225}
+			{item "bulletger_37 apcr" 45}
+			{item "ammo mgun_ger belt" 12500}	; 27 belts (100 rounds each)
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 10}
 		}
 	}
 
@@ -63,7 +63,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "37mm_kwk38t" filling "bulletger_37 aphe" 1}
+			{weapon "37mm_kwk38t_ctb_ger" filling "bulletger_37 aphe" 1}
 			{gunner "gunner"}
 			{charger "commander"}
 			("abm_dymamic_poor"
@@ -73,7 +73,7 @@
 		}
 		{place "mgun2"
 			{type "coaxial"}
-			{weapon "mg37t" filled}
+			{weapon "mg37t_ctb_ger" filled}
 			{foresight "foresight5"}
 			{gunner "gunner"}
 			{charger "commander"}
@@ -82,7 +82,7 @@
 		}
 		{place "mgun1"
 			{type "hull"}
-			{weapon "mg37t" filled}
+			{weapon "mg37t_ctb_ger" filled}
 			{foresight "foresight4"}
 			{gunner "gunner3"}
 			{charger "gunner3"}
@@ -104,15 +104,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm") step(0.31) len(0.12))
 		("mobility_tank"
-			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			speed(63) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(10);---------Max speed in reverse on road, km/h.
 			traverse(35) ;-------Track traverse, per second, in degrees.
 			weight(9.4) ;--------Weight in Tonnes.
 			power(125) ;---------Engine Power, in hp.
 			track(5) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(220) ;----------Fuel capacity in Litres.
+			fuel(2200) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(100) ;---------Range in km, off-road.
+			range(1000) ;---------Range in km, off-road.
 		)
 	}
 

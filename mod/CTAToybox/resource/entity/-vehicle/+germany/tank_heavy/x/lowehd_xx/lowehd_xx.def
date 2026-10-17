@@ -1,0 +1,47 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "lowehd_xx.mdl"}
+
+	{volume "body"			
+		{thickness 360
+			{front 450}		
+			{top 120}		
+			{rear 240}
+			{bottom 120}
+		}
+	}
+	{volume "body2"			
+		{thickness 360
+			{front 450}		
+			{top 120}		
+			{rear 240}
+			{bottom 120}
+		}
+	}
+	{volume "engine"		; Hull
+		{thickness 150
+			{front 240}
+			{rear 180}
+			{top 90}
+			{bottom 120}
+		}
+	}
+	{volume "turret1"
+		{thickness 450
+			{front 480}
+			{top 120}
+			{rear 240}
+		}
+	}
+	{volume "turret2"
+		{thickness 450
+			{front 480}
+			{top 120}
+			{rear 240}
+		}
+	}
+	{volume "mantlet"
+		{thickness 750}
+		{CastSteel 0.8063}
+	}
+}

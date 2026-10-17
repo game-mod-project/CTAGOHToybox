@@ -60,14 +60,14 @@
 	{extender "inventory"
 		{weapon "mgun" {mask "mountable"}}
 		{box
-			{item "bulletger_75_l43 apcbche" 12} 	; 44 rounds
-			{item "bulletger_75_l43 he" 22}
-			{item "bulletger_75_l43 apcr" 3}
-			{item "bulletger_75_l43 heatb" 6}
-			{item "ammo mgun_ger drum" 550}			; 12 drums (50 rounds each)
-			{item "mg34_drum" filling "ammo mgun_ger drum" 50 {user "mgun"}}
-			{item "geballteladung_3kg" 1}
-			{item "nbks grenade" 5}
+			{item "bulletger_75_l43 apcbche" 60} 	; 44 rounds
+			{item "bulletger_75_l43 he" 110}
+			{item "bulletger_75_l43 apcr" 15}
+			{item "bulletger_75_l43 heatb" 30}
+			{item "ammo mgun_ger drum" 2750}			; 12 drums (50 rounds each)
+			{item "mg34_drum_ctb_ger" filling "ammo mgun_ger drum" 100 {user "mgun"}}
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 10}
 		}
 	}
 
@@ -75,7 +75,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "75mm_stuk40" filling "bulletger_75_l43 apcbche" 1}
+			{weapon "75mm_stuk40_ctb_ger" filling "bulletger_75_l43 apcbche" 1}
 			{gunner "gunner"}
 			{charger "commander"}
 			("abm_dymamic_td"
@@ -100,15 +100,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(0.6))
 		("mobility_tank"
-			speed(40) ;----------Max speed when fully accelerated on road, km/h.
+			speed(60) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(8) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(21.6) ;-------Weight in Tonnes.
 			power(265) ;---------Engine Power, in hp. //engine under normal use was rated 265hp at 2600 rpm
 			track(5) ;-----------Track performance: (0,10], 10=ideal. 
-			fuel(310) ;----------Fuel capacity in Litres.
+			fuel(3100) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(85) ;----------Range in km, off-road.
+			range(850) ;----------Range in km, off-road.
 		)
 	}
 

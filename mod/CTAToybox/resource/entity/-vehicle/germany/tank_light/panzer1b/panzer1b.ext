@@ -1,0 +1,62 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; spare tracks 15mm
+
+	("tankette_tier1")
+
+	("shield_track" args "shield1" 30)
+	("shield_track" args "shield2" 30)
+	("tracks" repair(30) thickness(30))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body"			; Hull
+		{thickness 26
+			{top 16}			; Glacis
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "body1"			; Superstructure
+		{thickness 26
+			{top 10}
+			{rear 16}
+			{bottom 10}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 26
+			{front 16}
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine1"		; Hull
+		{thickness 26
+			{front 10}
+			{top 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 26
+			{front 10}
+			{top 16}
+			{bottom 10}
+		}
+	}
+	{volume "turret"
+		{thickness 26
+			{front 28}
+			{top 16}
+			{bottom 10}
+		}
+	}
+	{volume "mantlet"
+		{thickness 30
+			{rear 10}
+		}
+	}

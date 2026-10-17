@@ -1,0 +1,36 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_gj_nco_smg"}
+	{portrait "ger_gebirgsjaeger"}
+	{icon "smg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_fieldcap_m43_gj_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_4")("tier4_standard")
+		
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_unfolded_ctb_ger" filled}
+		{item "mp40 ammo" 960}
+
+		{item "m24_splinter grenade" 4.5 1}
+		{item "m24_smoke grenade" 4.5 1}
+		{item "m24_geballteladung grenade" 1 1}
+
+		{item "bandage_ger" 11 1}
+		{item "ger_stalhelm_m39_var3"}
+
+		{in_hands 0}
+	}
+}

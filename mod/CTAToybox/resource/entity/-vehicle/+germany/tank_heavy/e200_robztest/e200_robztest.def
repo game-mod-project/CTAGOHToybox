@@ -1,0 +1,220 @@
+{game_entity
+	(include "/properties/tank__ctb_e200_robztest_1ab014f1.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle_big.inc" scale(1.8))
+	{collider "tank.heavy"}
+	{props "heavy" "vision_lev05" "detect_tank_heavy" }
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_zenite"}
+	(include "e200_robztest.ext")
+	{PatherId "tiger2"}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+			{bone "visor2"}
+		}
+	}
+
+    ;==============================================
+    
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+
+	{boarder
+		{anm "charger"
+			{forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open1"}}
+			{reverse {end "board_pz4_driver" -1} {base "open1" -1}}
+		}
+		{anm "gunner"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+		{anm "gunner6"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "gunner4"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "gunner5"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "driver"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "commander"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"} {base "open1"}}
+			{reverse {end "emit_tank_1"} {base "open1" -1}}
+		}
+		{anm "charger3"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+		{anm "charger4"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+
+	}
+	
+	("crew_human" place(driver)		door(emit1)  visor(visor1) animation(driver))
+	("crew_human" place(gunner)		door(emit3) visor(visor2) animation(gunner))
+	("crew_human" place(gunner6)		door(emit3) visor(visor3) animation(gunner6))
+	("crew_human" place(gunner3)		door(emit4) visor(visor4) animation(gunner3))
+	("crew_human" place(gunner4)		door(emit5) visor(visor5) animation(gunner4))
+	("crew_human" place(gunner5)		door(emit6) visor(visor5) animation(gunner5))
+	("crew_human" place(charger)	door(emit4) visor(none) animation(gunner))
+	("crew_human" place(commander)	door(emit3) visor(around) animation(gunner))
+	("crew_human" place(charger3)	door(emit5) visor(none) animation(gunner))
+	("crew_human" place(charger4)	door(emit6) visor(none) animation(gunner))
+	("crew_human" place(charger5)	door(emit3) visor(none) animation(gunner))
+	("crew_human" place(charger6)	door(emit4) visor(none) animation(gunner))
+
+	{extender "inventory"
+		{box
+			{item "bulletger_170 he" 300}	        ; 82 rounds 128mm
+			{item "bulletger_170 ic" 200}
+			{item "bulletger_170 apcbche" 200}
+			{item "bulletger_20_auto ap" 8000}		; 3200 rounds, 160 clips (20 rounds each)
+			{item "bulletger_20_auto he" 7600}
+			{item "bulletger_37_auto ap" 4000}		; 400 rounds, 50 mags (8 rounds each)
+			{item "bulletger_37_auto he" 4000}
+			{item "ammo mgun_ger belt" 12500}
+			{item "repair_kit" 14}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "170mm_k18_3_ctb_ger" filling "bulletger_170 he" 1}
+			{foresight "foresight1"}
+			{gunner "gunner"}
+			{charger "charger charger3" minWorkers 1}
+			("abm_dymamic_gun"
+				zeroing(4.0)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon "170mm_k18_3_ctb_ger" filling "bulletger_170 he" 1}
+			{foresight "foresight2"}
+			{gunner "gunner"}
+			{charger "charger4 charger5" minWorkers 1}
+			("abm_dymamic_gun"
+				zeroing(4.0)
+				dispersion(0.20)
+			)
+			{basic}
+		}
+		{place "aa"
+			{Barrels 4}
+			{weapon "20mm_flak38_x4_2_ctb_ger" filling "bulletger_20_auto he" 80}
+			{foresight "foresight6"}
+			{shooter "shooter"}
+			{charger "gunner3"}
+			{gunner "charger6"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "light2"
+			{Barrels 2}
+			{weapon "37mm_flak43_2_ctb_ger" filling "bulletger_37_auto he" 32}
+			{foresight "foresight5"}
+			{shooter "ostshooter"}
+			{charger "gunner5"}
+			{gunner "gunner5"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun"
+			{type "coaxial"}
+			{weapon "mg42_tank_ctb_ger" filled}
+			{foresight "foresight3"}
+			{gunner "gunner6"}
+			{charger "gunner6"}
+			{basic}
+			{ai_in_manual}
+		}
+		{place "light"
+		    {RestoreIKAfterAim}
+			{weapon "searchlight"}
+			{foresight "foresight4"}
+			{gunner "gunner4"}
+			{basic}
+			{ai_in_manual}
+			{rotate}
+		}
+	}
+	
+	{mass 630000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.20) len(1.18))
+		("mobility_tank"
+			speed(38) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(10.5) ;--------Max speed in reverse on road, km/h.
+			traverse(15) ;-------Track traverse, per second, in degrees.
+			weight(630.0) ;-------Weight in Tonnes.
+			power(1000) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(27000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(850) ;----------Range in km, off-road.
+		)
+	}
+
+	{Extension "e200_robztest.mdl"}
+
+	{bone "turret"
+		{speed2 5}
+	}
+	{bone "gun_rot"
+		{speed2 5}
+	}
+	{bone "aa"
+		{speed2 30}
+		{limits -25 70}
+	}
+	{bone "aa_rot"
+		{speed2 30}
+	}
+	{bone "mgun"
+		{speed2 30}
+		{limits -35 65}
+	}
+	{bone "mgun_rot"
+		{speed2 30}
+	}
+	{bone "light"
+		{speed2 30}
+	}
+	{bone "light_rot"
+		{speed2 30}
+	}
+	{bone "ost_rot1"
+		{speed2 30}
+	}
+	{bone "light2_rot1"
+		{speed2 30}
+	}
+
+}
+
+
+
+

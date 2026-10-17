@@ -74,12 +74,12 @@
 
 	{extender "inventory"
 		{box
-			{item "ammo mgun_ger belt" 2500}
-			{item "ammo bulletger_105_l68 apcbche" 16}
-			{item "ammo bulletger_105_l68 apcr" 16}
-			{item "ammo bulletger_105_l68 he" 10}
-			{item "ammo bulletger_20_auto apcr" 1000}
-			{item "ammo bulletger_20_auto he" 1000}
+			{item "ammo mgun_ger belt" 12500}
+			{item "ammo bulletger_105_l68 apcbche" 80}
+			{item "ammo bulletger_105_l68 apcr" 80}
+			{item "ammo bulletger_105_l68 he" 50}
+			{item "ammo bulletger_20_auto apcr" 5000}
+			{item "ammo bulletger_20_auto he" 5000}
 		}
 	}
 
@@ -87,7 +87,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "105mm_kwk46_late" filling "ammo bulletger_105_l68 apcbche" 1}
+			{weapon "105mm_kwk46_late_ctb_ger" filling "ammo bulletger_105_l68 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			{foresight "foresight1"}
@@ -96,7 +96,7 @@
 		}
 		{place "gun2"
 			{type "coaxial_cannon"}
-			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{weapon "20mm_mg151_coax_ctb_ger" filling "bulletger_20_auto apcr" 200}
 			{foresight "foresight2"}
 			{gunner "gunner"}
 			{charger "charger"}
@@ -105,7 +105,7 @@
 		}
 		{place "mgun1"
 			{type "aa"}
-			{weapon "mg42_tank" filled}
+			{weapon "mg42_tank_ctb_ger" filled}
 			("abm_mgun")
 			{foresight "foresight4"}
 			{gunner "charger"}
@@ -114,7 +114,7 @@
 		}
 		{place "mgun2"
 			{type "cupola"}
-			{weapon "mg42_tank" filled}	
+			{weapon "mg42_tank_ctb_ger" filled}	
 			{foresight "foresight3"}
 			{gunner "commander"}
 			{charger "commander"}
@@ -127,15 +127,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(2.45))
 		("mobility_tank"
-			speed(55)
+			speed(83)
 			reverse(15)
 			traverse(28)
 			weight(62.0)
 			power(1200)
 			track(3.5)
-			fuel(700)
+			fuel(7000)
 			type(fuel)
-			range(100)
+			range(1000)
 		)
 	}
 	{Extension "e-50_105l68.mdl"}

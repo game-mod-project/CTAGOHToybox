@@ -1,0 +1,31 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_39_fj_nco_smg"}
+	{portrait "ger_fallschirmjaeger"}
+	{icon "smg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m34_sidecap_luftwaffe}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_4")("tier4_standard")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_folded_ctb_ger" filled}
+		{item "bandage_ger" 6}
+		{item "pistol ammo" 400}
+		{item "luger_ctb_ger" filled}
+		{item "mp40 ammo" 1920}
+		{item "m24_geballteladung grenade" 2}
+		{item "m24 grenade" 4}
+		{in_hands 0}
+	}
+}

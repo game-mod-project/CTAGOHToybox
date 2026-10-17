@@ -1,0 +1,54 @@
+;SDL
+
+	("gun" repair(50) thickness(350))
+	("tracks" repair(50) thickness(300))
+
+	("ammo" args "inventory")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	("shield_tear" args "shieldl1" 450)
+	("shield_tear" args "shieldl2" 450)	
+	("shield_tear" args "shieldl3" 450)	
+	
+	("shield_tear" args "shieldr1" 450)	
+	("shield_tear" args "shieldr2" 450)	
+	("shield_tear" args "shieldr3" 450)		
+
+	{volume "body1"
+		{thickness 600
+			{front 800}
+			{top 400}		
+			{rear 750}
+		}
+	}
+	{volume "body"
+		{thickness 600
+			{front 750}		
+			{rear 750}
+			{bottom 400}
+		}
+	}
+	{volume "engine"
+		{thickness 400
+			{top 300}
+			{bottom 300}
+		}
+	}
+	{volume "turret"
+		{thickness 750
+			{top 325}
+			{front 1200}
+		}
+	}
+	{volume "mantlet"
+		{thickness 1200}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet1"
+		{thickness 1200}
+		{CastSteel 0.8063}
+	}

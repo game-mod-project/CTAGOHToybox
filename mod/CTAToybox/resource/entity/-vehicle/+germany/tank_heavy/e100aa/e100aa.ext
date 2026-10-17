@@ -1,0 +1,159 @@
+
+	("tank_heavy_tier2")
+
+	("shield_tear"  args "shieldl1" 350)
+	("shield_tear"  args "shieldl2" 350)
+	("shield_tear"  args "shieldl3" 350)
+	("shield_tear"  args "shieldl4" 50)
+	("shield_tear"  args "shieldl5" 50)
+	("shield_tear"  args "shieldl6" 50)
+
+	("shield_tear" args "shieldr1" 350)
+	("shield_tear" args "shieldr2" 350)
+	("shield_tear" args "shieldr3" 350)
+	("shield_tear" args "shieldr4" 50)
+	("shield_tear" args "shieldr5" 50)
+	("shield_tear" args "shieldr6" 50)
+
+	("tracks" repair(30) thickness(250))
+	("gun" repair(30) thickness(350))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"	
+		{thickness 600	
+			{front 1000}
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "body2"	
+		{thickness 600	
+			{front 750}
+			{rear 750}
+			{top 1000}
+			{bottom 200}
+		}
+	}
+
+	{volume "engine1"
+		{thickness 600	
+			{front 750}
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+	{volume "engine2"
+		{thickness 600	
+			{front 750}
+			{rear 750}
+			{top 200}
+			{bottom 200}
+		}
+	}
+
+	{volume "turret1"
+		{thickness 800		
+			{front 1450}
+			{rear 800}
+			{top 325}
+			{bottom 275}
+		}
+	}
+	{volume "turret2"
+		{thickness 750		
+			{front 1600}
+			{rear 750}
+			{top 325}
+			{bottom 275}
+		}
+	}
+	{volume "turret3"
+		{thickness 1050}
+	}
+
+	{volume "armor1"
+		{thickness 1000}
+    }
+	{volume "armor2"
+		{thickness 1000}
+    }
+	{volume "armor3"
+		{thickness 500}
+    }
+	{volume "armor4"
+		{thickness 500}
+    }
+
+	{volume "box1"
+		{thickness 200}
+    }
+	{volume "box2"
+		{thickness 750}
+    }
+	{volume "box3"
+		{thickness 750}
+    }
+	{volume "box4"
+		{thickness 50}
+    }
+	{volume "box5"
+		{thickness 150}
+    }
+
+	{volume "barrel21"
+		{thickness 200}
+    }
+	{volume "barrel31"
+		{thickness 100}
+    }
+
+	{volume "mgun_shield"
+		{thickness 100}
+    }
+
+	{volume "gun_rot1"
+		{thickness 750}
+    }
+	{volume "gun_rot2"
+		{thickness 750}
+    }
+	{volume "gun_rot3"
+		{thickness 1500}
+    }
+	{volume "gun_rot4"
+		{thickness 1050}
+    }
+
+	{volume "transmission"
+		{thickness 200}
+    }
+
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}
+
+
+
+	

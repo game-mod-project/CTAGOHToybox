@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_vet_rfl"}
+	{portrait "ger_regular"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_dirt_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+		
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_5")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+
+		{item "m24_splinter grenade" 5 1}
+		{item "m24_smoke grenade" 1 1}
+		{item "m24_geballteladung grenade" 0.5 1}
+
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+		{item "ger_sidecap_m42_var2"}
+
+		{in_hands 0}
+	}
+}

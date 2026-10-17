@@ -1,0 +1,142 @@
+
+
+	("shield_tear" args "shieldl1" 15)	; Mud Guard
+	("shield_tear" args "shieldl2" 15)	; Mud Guard
+	("shield_tear" args "shieldl3" 15)	; Mud Guard
+	("shield_tear" args "shieldl4" 15)	; Mud Guard
+	("shield_tear" args "shieldl5" 15)	; Mud Guard
+	("shield_tear" args "shieldl6" 15)	; Mud Guard
+	("shield_tear" args "shieldr1" 15)	; Mud Guard
+	("shield_tear" args "shieldr2" 15)	; Mud Guard
+	("shield_tear" args "shieldr3" 15)	; Mud Guard
+	("shield_tear" args "shieldr4" 15)	; Mud Guard
+	("shield_tear" args "shieldr5" 15)	; Mud Guard
+	("shield_tear" args "shieldr6" 15)	; Mud Guard
+	("shield_tear" args "shield1" 90)	; Mud Guard
+	("shield_tear" args "shield2" 90)	; Mud Guard
+	("shield_tear" args "shield3" 90)	; Mud Guard
+	("shield_tear" args "shield4" 90)	; Mud Guard
+	("shield_tear" args "shield5" 90)	; Mud Guard
+	("shield_tear" args "shield6" 90)	; Mud Guard
+	("shield_tear" args "shield7" 90)	; Mud Guard
+	("shield_tear" args "shield8" 90)	; Mud Guard
+	("shield_tear" args "shield9" 90)	; Mud Guard
+	("shield_tear" args "shield10" 90)	; Mud Guard
+	("shield_tear" args "shield11" 90)	; Mud Guard
+
+	("gun" repair(30) thickness(90))
+	("tracks" repair(60) thickness(90))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+
+	{Volume "body"
+		{thickness 240
+			{front 300}		; Nose
+			{top 75}		; Glacis
+			{rear 240}
+			{bottom 75}
+		}
+	}
+	{Volume "body2"
+		{thickness 180
+			{front 300}		; Nose
+			{top 180}		; Glacis
+			{rear 240}
+			{bottom 75}
+		}
+	}
+	{Volume "body3"
+		{thickness 180
+			{front 180}		; Nose
+			{top 75}		; Glacis
+			{rear 180}
+			{bottom 75}
+		}
+	}
+	{Volume "body4"
+		{thickness 270}
+	}
+	{Volume "armor_mg_port"
+		{thickness 300}
+		{able {contact} {holed}}
+	}
+	{Volume "hatch2"
+		{thickness 75}
+	}
+	{Volume "hatch"
+		{thickness 240}
+	}
+	{volume "mantlet"
+		{thickness 420}
+		{CastSteel 0.8063}
+		{component "turret"}
+		{tags "turret"}
+	}
+	{Volume "mgun_aa"
+		{thickness 15}
+	}
+	{Volume "storagebox"
+		{thickness 15}
+
+	}
+	{Volume "cupola"
+		{thickness 240
+			{front 240}
+			{top 75}
+			{bottom 30}
+		}
+	}
+	{Volume "turret2"
+		{thickness 240
+			{top 30}
+			{bottom 30}
+		}
+	}
+	{Volume "turret"
+		{thickness 240
+			{front 300}
+			{top 75}
+			{bottom 30}
+		}
+	}
+	{Volume "body_stuff05"
+		{thickness 15}
+
+	}
+	{Volume "body_stuff04"
+		{thickness 15}
+
+	}
+	{Volume "body_stuff02"
+		{thickness 15}
+
+	}
+	{volume "engine"		
+		{thickness 75
+			{front 75}
+			{top 78}
+			{bottom 75}
+		}
+	}
+	{Volume "shieldw1"
+		{thickness 30}
+	}
+	{Volume "shieldw2"
+		{thickness 30}
+	}
+	{Volume "shieldw3"
+		{thickness 30}
+	}
+	{Volume "shieldw4"
+		{thickness 30}
+	}
+	{Volume "shieldw5"
+		{thickness 30}
+	}
+	{Volume "shieldw6"
+		{thickness 30}
+	}

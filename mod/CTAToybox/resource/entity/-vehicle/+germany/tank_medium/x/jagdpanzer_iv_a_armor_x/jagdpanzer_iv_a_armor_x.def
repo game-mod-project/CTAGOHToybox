@@ -1,0 +1,27 @@
+{game_entity	
+	{Extension "jagdpanzer_iv_a_armor_x.mdl"}	{RimLight}
+	
+		{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+		{rear 50}
+	}
+}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+	}
+}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+		{rear 50}
+	}
+} 
+}

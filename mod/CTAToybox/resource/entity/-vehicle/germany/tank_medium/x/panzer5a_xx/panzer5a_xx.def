@@ -1,0 +1,88 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer5a_xx.mdl"}
+	{volume "barrel"
+		{thickness 53}
+	}
+	{volume "body1"
+		{thickness 53}
+	}
+	{volume "body2"
+		{thickness 53}
+	}
+	{volume "body3"
+		{thickness 53}
+	}
+	{volume "breach"
+		{thickness 53}
+	}
+	{volume "cupola"
+		{thickness 53}
+	}
+	{volume "detail7"
+		{thickness 53}
+	}
+	{volume "detail8"
+		{thickness 53}
+	}
+	{volume "engine1"
+		{thickness 53}
+	}
+	{volume "engine2"
+		{thickness 53}
+	}
+	{volume "mantlet2"
+		{thickness 53}
+	}
+	{volume "mantlet"
+		{thickness 53}
+	}
+	{volume "part1"
+		{thickness 53}
+	}
+	{volume "part2"
+		{thickness 53}
+	}
+	{volume "part3"
+		{thickness 53}
+	}
+	{volume "part4"
+		{thickness 53}
+	}
+	{volume "part5"
+		{thickness 53}
+	}
+	{volume "part6"
+		{thickness 53}
+	}
+	{volume "part7"
+		{thickness 53}
+	}
+	{volume "part8"
+		{thickness 53}
+	}
+	{volume "shieldl3"
+		{thickness 53}
+	}
+	{volume "shieldl4"
+		{thickness 53}
+	}
+	{volume "shieldl7"
+		{thickness 53}
+	}
+	{volume "shieldr1"
+		{thickness 53}
+	}
+	{volume "trackleft"
+		{thickness 53}
+	}
+	{volume "trackright"
+		{thickness 53}
+	}
+	{volume "turret2"
+		{thickness 53}
+	}
+	{volume "turret"
+		{thickness 53}
+	}
+}

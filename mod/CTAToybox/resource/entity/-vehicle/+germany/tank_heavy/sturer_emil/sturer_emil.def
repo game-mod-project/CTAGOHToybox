@@ -1,0 +1,115 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_sturer_emil_50f57e58.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "td" "heavy" "shell_eject" "-turret" "mantlet" "vision_lev05" "muzzle_122mm_128mm" "open_top" "ammo_open_top" "detect_td_heavy" "smoke" "nvw" "sq_at_gun"}
+        (include "sturer_emil.ext")
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_spg"}
+	{PatherId "su100y"}
+	{collider "tank.heavy"}
+	 
+        {extension "sturer_emil.mdl"}
+        
+        {extender "smokescreen"
+        {cooldown 10}
+        {itemTags "grenade nbk39"}
+        }
+ 
+	{sensor
+		{visor "main"
+			{vision "tank_main-m"}
+			{bone "visor1"}
+		}
+		{visor "around"
+			{vision "none"}
+		}
+	}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+	
+        (define "crew_human"
+        {placer    {place "%place" {group "crew"} {visor "%visor"}}}
+        {boarder {door "%door"}    {link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+    )
+
+	{boarder
+        {anm "driver"
+            {forward     {begin "board_t34_driver"} {end "seat_gunner_stand"} {base "hatch_open"}}
+            {reverse     {end "emit_t34_hold"} {base "hatch_close"}}
+        }
+        {anm "charger2"
+            {forward    {begin "board_t34_driver"} {end "pose_m12_gunner"} {base "hatch_open"}}
+            {reverse     {end "emit_tank_2_hold"} {base "hatch_close" }}
+        }
+        {anm "charger"
+            {forward    {begin "board_t34_driver"} {end "pose_m12_gunner"} {base "hatch_open"}}
+            {reverse     {end "emit_tank_2_hold"} {base "hatch_close"}}
+        }
+        {anm "gunner"
+            {forward    {begin "board_t34_driver"} {end "aagun_61k_charger"} {base "hatch_open"}}
+            {reverse     {end "emit_tank_2_hold"} {base "hatch_close"}}
+        }
+        {anm "commander"
+            {forward    {begin "board_t34_driver"} {end "aagun_72k_commander"} {base "hatch_open"}}
+            {reverse     {end "emit_tank_2_hold"} {base "hatch_close"}}
+        }
+    }
+    
+    ("crew_inside")
+    ("crew_driver"                    door(emit1) door2(emit1) door3(emit1))
+
+    ("crew_human_visible_anm"    place(commander)    door(emit1) visor(around)    anm_left(commander)    anm_right(commander))
+    ("crew_human_visible_anm"    place(gunner)        door(emit1) visor(main)        anm_left(gunner)    anm_right(gunner))
+    ("crew_human_visible_anm"    place(charger)        door(emit1) visor(around)    anm_left(charger)    anm_right(charger))
+    ("crew_human"    place(charger2)        door(emit1) visor(around)    anm_left(charger2)    anm_right(charger2))
+
+	{extender "inventory"
+		{box
+				{item "bulletger_128 apche" 50}
+				{item "bulletger_128 he" 25}
+				{item "geballteladung_3kg" 2}
+                                {item "nbk39 grenade" 10}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "128mm_k40_ctb_ger" filling "bulletger_128 apche"}
+			{gunner "gunner" minWorkers 1}
+            		{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_td"
+				zeroing(3.5)
+				dispersion(0.25)
+			)
+		}
+	}
+	
+	{mass 36500}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(-0.82))
+		("mobility_tank"
+			speed(39) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(5) ;--------Max speed in reverse on road, km/h. (+2 of real life speed)
+			traverse(23) ;-------Track traverse, per second, in degrees.
+			weight(36.5) ;---------Weight in Tonnes.
+			power(310) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.3) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(5400) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(800) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"
+		{limits -5 5}
+		{speed2 5}
+	}
+	{bone "gun_rot"
+		{speed2 3}
+		{limits -12 10}
+	}
+}

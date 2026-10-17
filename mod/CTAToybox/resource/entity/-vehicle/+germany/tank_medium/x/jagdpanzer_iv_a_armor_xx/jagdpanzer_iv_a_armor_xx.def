@@ -1,0 +1,66 @@
+{game_entity	
+	(include "/properties/vehicle_xx.ext")
+	{Extension "jagdpanzer_iv_a_armor_xx.mdl"}	
+	
+	{Volume "body1"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+		{rear 50}
+	}
+}
+	{Volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+	}
+}
+	{Volume "body3"
+		{tags "body"}
+		{component "body"}
+		{thickness 100
+		{front 125}
+		{rear 50}
+	}
+}
+
+	{Volume "shieldl1"
+		{thickness 25}
+	}
+	{Volume "shieldl2"
+		{thickness 25}
+	}
+	{Volume "shieldl3"
+		{thickness 25}
+	}
+	{Volume "shieldl4"
+		{thickness 25}
+	}
+	{Volume "shieldl5"
+		{thickness 25}
+	}
+	{Volume "shieldl6"
+		{thickness 25}
+	}
+	{Volume "shieldr1"
+		{thickness 25}
+	}
+	{Volume "shieldr2"
+		{thickness 25}
+	}
+	{Volume "shieldr3"
+		{thickness 25}
+	}
+	{Volume "shieldr4"
+		{thickness 25}
+	}
+	{Volume "shieldr5"
+		{thickness 25}
+	}
+	{Volume "shieldr6"
+		{thickness 25}
+	}
+
+}

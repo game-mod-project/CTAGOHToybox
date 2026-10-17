@@ -1,0 +1,132 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+	; spare tracks 30mm
+	; schürzen 5mm
+
+	("tank_heavy_tier2")
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("transmission" args "transmission")
+
+	{volume "body"			; Superstructure
+		{thickness 240
+			{front 450}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body1"			; Hull
+		{thickness 240
+			{front 450}		; Lower Nose		; Glacis
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "mantlet"			; Hull
+		{thickness 600}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "body1"			; Hull
+		{thickness 240
+			{front 540}
+			{rear 120}		; Lower Nose		; Glacis
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "turret"		; Main Turret
+		{thickness 240
+			{front 555}
+			{top 120}
+			{bottom 120}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine"			; Hull
+		{thickness 15}
+	}
+
+	 {component "shieldl1" {tags "cut_part"}}
+    {component "shieldl2" {tags "cut_part"}}
+    {component "shieldl3" {tags "cut_part"}}
+    {component "shieldl4" {tags "cut_part"}}
+    {component "shieldl5" {tags "cut_part"}}
+    {component "shieldl6" {tags "cut_part"}}
+    {component "shieldl7" {tags "cut_part"}}
+    {component "shieldr1" {tags "cut_part"}}
+    {component "shieldr2" {tags "cut_part"}}
+    {component "shieldr3" {tags "cut_part"}}
+    {component "shieldr4" {tags "cut_part"}}
+    {component "shieldr5" {tags "cut_part"}}
+    {component "shieldr6" {tags "cut_part"}}
+    {component "shieldr7" {tags "cut_part"}}
+
+	{Volume		"suspension00"{thickness	90}}
+	{component	"suspension00"{RepairTime	30}}
+	{Volume		"suspension01"{thickness	90}}
+	{component	"suspension01"{RepairTime	30}}
+	{Volume		"suspension02"{thickness	90}}
+	{component	"suspension02"{RepairTime	30}}
+	{Volume		"suspension03"{thickness	90}}
+	{component	"suspension03"{RepairTime	30}}
+
+	{component "suspension00" {tags "cut_part"}}
+	{component "suspension01" {tags "cut_part"}}
+	{component "suspension02" {tags "cut_part"}}
+	{component "suspension03" {tags "cut_part"}}
+	
+	{Volume "shieldl1"			
+        {thickness 30}
+    }
+    {Volume "shieldl2"
+        {thickness 30}
+    }
+    {Volume "shieldl3"
+        {thickness 30}
+    }
+    {Volume "shieldl4"
+        {thickness 30}
+    }
+    {Volume "shieldl5"
+        {thickness 30}
+    }
+    {Volume "shieldl6"
+        {thickness 30}
+    }
+    {Volume "shieldl7"
+        {thickness 30}
+    }
+    {Volume "shieldr1"
+        {thickness 30}
+    }
+    {Volume "shieldr2"
+        {thickness 30}
+    }
+    {Volume "shieldr3"
+        {thickness 30}
+    }
+    {Volume "shieldr4"
+        {thickness 30}
+    }
+    {Volume "shieldr5"
+        {thickness 30}
+    }
+    {Volume "shieldr6"
+        {thickness 30}
+    }
+    {Volume "shieldr7"
+        {thickness 30}
+    }
+	{volume "mg_port"
+		{thickness 450}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+		{component "body"}
+	}

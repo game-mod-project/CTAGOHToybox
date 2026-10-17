@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_blau_engi_smg_1"}
+	{portrait "ger_engineer"}
+	{icon "tech"}
+	{icon_priority 1}
+	{nationality spa}
+	{armors
+		{head ger_m34_sidecap_radio}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_3")("tier3_defense")
+		("engineer")
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_unfolded_ctb_ger" filled}
+		{item "mp40 ammo" 960}
+
+		{item "m24 grenade" 4.5 1}
+		{item "nbk39 grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 1 1}
+		{item "mine_detector"}
+		{item "wirecutters"}
+		{item "pickaxe"}
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,40 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_43_fj_g43_1"}
+	{portrait "ger_fallschirmjaeger"}
+	{icon "autorifle"}
+	{icon_priority 1}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_fj_43_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+		
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43_ctb_ger" filling "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger gewehr ammo" 100}
+		{item "rifle_ger clip ammo" 400 50}
+
+		{item "sturmpistole_ctb_ger" filled}
+		{item "sturm_rocket he ammo" 50}
+		{item "sturm_rocket heat ammo" 25}
+		{item "m24 grenade" 4.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "pwm_l grenade" 2.5 1}
+
+		{item "bandage_ger" 11 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}
