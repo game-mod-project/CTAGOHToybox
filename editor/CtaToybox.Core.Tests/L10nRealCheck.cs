@@ -30,5 +30,12 @@ static class L10nRealCheck
         var main12 = L10nCheck.MainGlyphs(s.GameDir, new[] { "main_12.fnt" });
         Console.WriteLine("l10n-main_12 glyphs=" + main12.Count + " hangul=" + main12.Count(c => c >= 0xAC00 && c <= 0xD7A3));
         T.True(main12.Contains(0xAC00) && main12.Contains(0xD7A3), "main_12 has hangul syllables");
+
+        var fonts = FontMap.Build(Path.Combine(s.GameDir, "resource", "interface", "interface.pak"));
+        var targets = FontMap.TargetFnts(fonts).ToList();
+        var glyphs = L10nCheck.MainGlyphs(s.GameDir, targets);
+        Console.WriteLine("l10n-fonts overrides=" + fonts.Count + " targets=" + string.Join(",", targets) + " common-hangul=" + glyphs.Count(c => c >= 0xAC00 && c <= 0xD7A3));
+        T.True(fonts.Count > 30 && !fonts.Any(f => f.FontPath.Contains("/main_")) && fonts.Any(f => f.FontPath.EndsWith("roboto_con_15.font")), "font overrides: no main, roboto_con_15 in");
+        T.Eq(11172, glyphs.Count(c => c >= 0xAC00 && c <= 0xD7A3), "every target main font has all hangul syllables");
     }
 }
