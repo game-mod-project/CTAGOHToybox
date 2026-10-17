@@ -130,6 +130,7 @@ static class Suites
         ("SpawnMenu", SpawnMenuTests.Run),
         ("SpawnGenerator", SpawnGeneratorTests.Run),
         ("SpawnCli", SpawnCliTests.Run),
+        ("L10nPo", L10nPoTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
@@ -142,16 +143,23 @@ static class Program
 {
     static int Main(string[] args)
     {
+        if (args.Length > 0 && args[0] == "real-l10n")
+        {
+            try { L10nRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real l10n threw: " + ex); }
+            Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
+            return T.Fail > 0 ? 1 : 0;
+        }
         if (args.Length > 0 && args[0] == "real-spawn")
         {
-            try { SpawnRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            try { SpawnRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); L10nRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
             catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real spawn threw: " + ex); }
             Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
             return T.Fail > 0 ? 1 : 0;
         }
         if (args.Length > 0 && args[0] == "real")
         {
-            try { RealFilesCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); SpawnRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            try { RealFilesCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); SpawnRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); L10nRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
             catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real files threw: " + ex); }
             Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
             return T.Fail > 0 ? 1 : 0;
