@@ -1,0 +1,185 @@
+# 한글화 용어집. 형식: 원문|번역|메모. '#' 줄과 빈 줄은 건너뛴다.
+# 원문과 번역이 같은 줄은 "그대로 둘 말"이다: 원문에 그 말이 있으면 번역에도 그대로 있어야 한다(l10n check의 keep-term).
+# 규칙(사용자 결정 2026-10-17, docs/superpowers/specs/2026-10-17-korean-localization-design.md "용어집"):
+#   전차·장비 이름과 계급은 원문 그대로. 부대명은 음독. 독일어·러시아어 병과명은 음독, 영어 분대 종류는 번역.
+#   진영·군대 이름은 독일어 등은 음독, 영어는 번역. 무기 이름·탄종 약어는 원문 그대로. 캠페인 인물·지명은 음독.
+# 메모: 장비, 계급, 탄종, 약어(군대 약어), 부대, 병과, 군대, 일반(일반 군사 용어, AI가 정함)
+
+# --- 탄종·약어(그대로) ---
+HE|HE|탄종
+HEAT|HEAT|탄종
+AP|AP|탄종
+APHE|APHE|탄종
+APCBC|APCBC|탄종
+APCBC-HE|APCBC-HE|탄종
+APCR|APCR|탄종
+APDS|APDS|탄종
+WP|WP|탄종
+MG|MG|약어(기관총)
+SMG|SMG|약어(기관단총)
+AT|AT|약어(대전차)
+AA|AA|약어(대공)
+SdKfz|SdKfz|장비
+Sd.Kfz.|Sd.Kfz.|장비
+USAGF|USAGF|약어(군대)
+BA|BA|약어(영국군)
+KA|KA|약어(붉은 군대)
+IJA|IJA|약어(일본 육군)
+IJN|IJN|약어(일본 해군)
+SNLF|SNLF|약어(해군 육전대)
+USMC|USMC|약어(미 해병대)
+USN|USN|약어(미 해군)
+NKVD|NKVD|약어
+VMF|VMF|약어(소련 해군)
+VVS|VVS|약어(소련 공군)
+GMIA|GMIA|약어
+PSZ|PSZ|약어(폴란드군)
+PNA|PNA|약어
+CA|CA|약어
+TA|TA|약어
+PIR|PIR|약어(낙하산 보병 연대)
+GIR|GIR|약어(글라이더 보병 연대)
+ID|ID|약어(보병 사단)
+RBN|RBN|약어
+
+# --- 계급(그대로) ---
+Gruppenführer|Gruppenführer|계급
+Unteroffizier|Unteroffizier|계급
+Feldwebel|Feldwebel|계급
+Leutnant|Leutnant|계급
+Oberleutnant|Oberleutnant|계급
+Hauptmann|Hauptmann|계급
+Major|Major|계급
+Oberst|Oberst|계급
+Gefreiter|Gefreiter|계급
+Obergefreiter|Obergefreiter|계급
+Sergeant|Sergeant|계급
+Corporal|Corporal|계급
+Lieutenant|Lieutenant|계급
+Captain|Captain|계급
+Private|Private|계급
+Kapitan|Kapitan|계급
+Leytenant|Leytenant|계급
+Serzhant|Serzhant|계급
+
+# --- 군대·진영 ---
+Wehrmacht|베어마흐트|군대(음독)
+Heer|헤어|군대(음독)
+Luftwaffe|루프트바페|군대(음독)
+Kriegsmarine|크릭스마리네|군대(음독)
+Panzerwaffe|판처바페|군대(음독)
+Waffen|바펜|군대(음독)
+Maavoimat|마아보이마트|군대(음독, 핀란드 육군)
+Rajavartiolaitos|라야바르티올라이토스|군대(음독, 핀란드 국경경비대)
+Svensk Volontär|스벤스크 볼론테르|부대(음독)
+Red Army|붉은 군대|군대
+Soviet Army|소련군|군대
+US Army|미 육군|군대
+British Army|영국 육군|군대
+Royal Navy|영국 해군|군대
+Royal Marines|영국 해병대|군대
+Imperial Japanese Army|일본 제국 육군|군대
+
+# --- 부대(음독) ---
+Grossdeutschland|그로스도이칠란트|부대
+Brandenburger|브란덴부르거|부대
+Pz-Lehr|판처 레어|부대
+Panzer Lehr|판처 레어|부대
+Desert Rats|사막의 쥐|부대(영어 별명은 번역)
+Konoe|고노에|부대(음독)
+Kuteitai|구테이타이|부대(음독)
+Shidan|시단|부대(음독)
+
+# --- 병과(독일어·러시아어·핀란드어는 음독) ---
+Panzergrenadier|판처그레나디어|병과
+Panzergrenadiere|판처그레나디어|병과
+Panzerpionier|판처피오니어|병과
+Grenadier|그레나디어|병과
+Volksgrenadier|폭스그레나디어|병과
+Fallschirmjäger|팔쉬름예거|병과
+Gebirgsjäger|게비르크스예거|병과
+Jäger|예거|병과
+Pionier|피오니어|병과
+Aufklärer|아우프클레러|병과
+Shtrafbat|시트라프바트|병과
+Desantnik|데산트니크|병과
+Jääkäri|예캐리|병과(핀란드어)
+Pioneeri|피오네에리|병과(핀란드어)
+Ratsuväki|라추배키|병과(핀란드어, 기병)
+
+# --- 영어 분대 종류·직책(번역) ---
+Squad|분대|일반
+Section|분대|일반(영국식)
+Sub-Section|소분대|일반
+Platoon|소대|일반
+Company|중대|일반
+Detachment|분견대|일반
+Team|조|일반
+Troop|소대|일반(영국식 기병·기갑)
+Battery|포대|일반
+Rifleman|소총수|일반
+Squadleader|분대장|일반
+Squad Leader|분대장|일반
+Commander|지휘관|일반
+Leader|지휘자|일반
+Officer|장교|일반
+Medic|위생병|일반
+Engineer|공병|일반
+Pioneer|공병|일반
+Sapper|공병|일반
+Sniper|저격수|일반
+Scout|정찰병|일반
+Recon|정찰|일반
+Recce|정찰|일반
+Mortar|박격포|일반
+Ammo Bearer|탄약수|일반
+Operator|사수|일반
+Asst.|부사수|일반
+Gunner|사수|일반
+Loader|장전수|일반
+Driver|운전병|일반
+Tankman|전차병|일반
+Crew|승무원|일반
+Tank Crew|전차 승무원|일반
+Artilleryman|포병|일반
+Signaller|통신병|일반
+Radio Operator|무전병|일반
+Flamer|화염방사병|일반
+Assault|돌격|일반
+Assault Squad|돌격 분대|일반
+Sniper Team|저격조|일반
+Pioneers|공병|일반
+Cavalry|기병|일반
+Airborne|공수|일반
+Paratrooper|공수병|일반
+Glider|글라이더|일반
+Commando|코만도|일반
+Ranger|레인저|일반
+Marine|해병|일반
+Guards|근위|일반
+Veteran|베테랑|일반
+Elite|정예|일반
+Partisan|파르티잔|일반
+Militia|민병|일반
+Civilian|민간인|일반
+Police|경찰|일반
+Reinforcements|증원|일반
+Reinforcement|증원|일반
+Infantry|보병|일반
+Armored|기갑|일반
+Armoured|기갑|일반
+Heavy|중|일반(중전차 등 앞말)
+Tank Destroyer|구축전차|일반
+Self-Propelled Gun|자주포|일반
+Anti-Tank|대전차|일반
+Anti-Aircraft|대공|일반
+Headquarters|본부|일반
+Doctrine|교리|일반
+Conquest|정복전|일반(게임 모드)
+Skirmish|스커미시|일반(게임 모드)
+Battle Zones|배틀존|일반(게임 모드)
+Frontlines|프런트라인|일반(게임 모드)
+Last Stand|라스트 스탠드|일반(게임 모드)
+Victory Points|승점|일반
+Manpower|인력|일반(MP)
+Command Points|지휘 점수|일반(CP)
