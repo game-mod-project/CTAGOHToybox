@@ -29,5 +29,20 @@ namespace CtaToybox.Core.Spawn
             string grid = "<GridPanel id=\"unit_types_container\" cols=\"" + cols + "\" hgap=\"2\" vgap=\"2\">" + m.Groups["body"].Value + "</GridPanel>";
             return xml.Substring(0, m.Index) + grid + xml.Substring(m.Index + m.Length);
         }
+
+        static readonly Regex PaneTag = new Regex("<StepScrollPane\\b[^>]*\\bid=\"unit_types_container\"[^>]*>", RegexOptions.Singleline | RegexOptions.CultureInvariant);
+        static readonly Regex Visible = new Regex("\\bvisibleElements=\"\\d+\"", RegexOptions.CultureInvariant);
+
+        // 세로 목록은 그대로 두고 한 번에 보이는 단추 수만 바꾼다(StepScrollPane의 visibleElements, 바닐라 7. 실행 파일에 등록된 속성 VisibleElements).
+        // 칸 종류는 바꾸지 않는다. 메뉴 한 화면은 유닛 21개와 이전·다음·뒤로·처음 단추로 25개까지다(MenuBuilder PageSize)
+        public static string SetVisible(string xml, int count, out string error)
+        {
+            error = null;
+            if (count < 1) { error = "보이는 단추 수는 1 이상"; return null; }
+            var m = PaneTag.Match(xml);
+            if (!m.Success) { error = "StepScrollPane id=\"unit_types_container\"를 찾지 못했다"; return null; }
+            string tag = Visible.IsMatch(m.Value) ? Visible.Replace(m.Value, "visibleElements=\"" + count + "\"", 1) : m.Value.Insert("<StepScrollPane".Length, " visibleElements=\"" + count + "\"");
+            return xml.Substring(0, m.Index) + tag + xml.Substring(m.Index + m.Length);
+        }
     }
 }
