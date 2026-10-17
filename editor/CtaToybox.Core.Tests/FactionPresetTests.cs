@@ -10,8 +10,8 @@ static class FactionPresetTests
     public static readonly string[] GerTanks = { "entity/-vehicle/germany/tank_light/lt/lt.def", "entity/-vehicle/germany/tank_medium/mt/mt.def", "entity/-vehicle/germany/tank_heavy/ht/ht.def", "entity/-vehicle/+germany/tank_heavy/maus/maus.def", "entity/-vehicle/germany/car/kw/kw.def" };
     public const string RusTank = "entity/-vehicle/ussr/tank_light/rt/rt.def";
 
-    const string Breed = "{breed\n {inventory\n  {item \"k98\" filled}\n  {item \"rifle_ger clip ammo\" 60 5}\n  {item \"shovel_ger\"}\n  {item \"bandage_ger\" 22.5 2.5}\n }\n}\n";
-    const string Tank = "{game_entity\n (include \"/properties/mobility.inc\")\n {chassis (\"mobility_tank\" speed(38) fuel(540) range(210))}\n {volume \"body\" {thickness 30 {front 40}}}\n {extender \"inventory\" {box {item \"bulletger_88_l56 he\" 46}}}\n}\n";
+    const string Breed = "{breed\n {perks\n  {\"health\" \"300%\"}\n }\n {inventory\n  {item \"k98\" filled}\n  {item \"mg34\" filled}\n  {item \"rifle_ger clip ammo\" 60 5}\n  {item \"shovel_ger\"}\n  {item \"bandage_ger\" 22.5 2.5}\n }\n}\n";
+    const string Tank = "{game_entity\n (include \"/properties/mobility.inc\")\n {chassis (\"mobility_tank\" speed(38) fuel(540) range(210))}\n {volume \"body\" {thickness 30 {front 40}}}\n {extender \"inventory\" {box {item \"bulletger_88_l56 he\" 46}}}\n {weaponry {place {weapon \"88mm_kwk36\"}}}\n}\n";
     const string Mobility = "(define \"mobility_tank\"\n {Locomotion {MaxSpeed %speed}}\n {FuelBag {volume %fuel} {rate (* 10 (/ %fuel %range))} {remain %fuel}}\n)\n";
 
     public static string Fixture(out string repo, out string outDir, params (string Name, string Text)[] extraSet)
@@ -25,6 +25,9 @@ static class FactionPresetTests
             ("set/multiplayer/units/conquest/inf_rus.set", "{\"mp/rus/mid/b\" (\"inf\" side(rus))}"),
             ("set/stuff/rifle/rifle_ger.clip.ammo", "{x 1}\n"), ("set/stuff/shell/bulletger_88_l56.he.ammo", "{x 1}\n"),
             ("set/stuff/melee/shovel_ger", "{x 1}\n"), ("set/stuff/med/bandage_ger", "{x 1}\n"),
+            ("set/stuff/rifle/k98", "{from \"rifle.pattern\"\n {weight 4}\n}\n"), ("set/stuff/rifle/rifle.pattern", "{weapon\n {rechargeTime 6}\n}\n"),
+            ("set/stuff/gun/88mm_kwk36", "{from \"gun.pattern\"\n {rechargeTime 8}\n}\n"), ("set/stuff/gun/gun.pattern", "{weapon\n {rechargeTime 5}\n}\n"),
+            ("set/stuff/mgun/mg34.weapon", "(define \"reload_belt\" {rechargeTime 8.5})\n{from \"mgun.pattern\"\n (\"reload_belt\")\n}\n"), ("set/stuff/mgun/mgun.pattern", "{weapon\n {rechargeTime 5}\n}\n"),
         };
         set.AddRange(extraSet);
         T.Zip(Path.Combine(game, "resource", "set.pak"), set.ToArray());
@@ -75,5 +78,25 @@ static class FactionPresetTests
             T.True(t.Contains("{item \"bulletger_88_l56 he\" 230}"), "shells ×5");
         }
         T.Eq(1, report.Edits.Count(kv => kv.Key.Contains("range") && kv.Value == 5), "range edits reported");
+
+        // Task 5: 재장전과 체력
+        FactionPreset.AddWeaponsAndHealth(project, c, new FactionOptions { Army = "ger", SuperHeavy = supers }, report);
+        var copies = project.Edits.Where(e => e.Kind == FileCopy.Kind).Select(e => e.New).OrderBy(x => x).ToArray();
+        T.Eq(new[] { "set/stuff/gun/88mm_kwk36_ctb_ger", "set/stuff/mgun/mg34_ctb_ger.weapon", "set/stuff/rifle/k98_ctb_ger" }, copies, "one copy per weapon with a reload time");
+        var build2 = new ModBuilder(s.Stack, outDir).Build(project);
+        T.Eq(0, build2.Results.Count(r => r.Status != EditStatus.Applied), "everything applies: " + string.Join("; ", build2.Results.Where(r => r.Status != EditStatus.Applied).Select(r => r.Edit.File + " " + r.Message)));
+        T.True(Out(outDir, "set/stuff/rifle/k98_ctb_ger").Contains("{rechargeTime 3}"), "inherited reload time: a line in the copy: " + Out(outDir, "set/stuff/rifle/k98_ctb_ger"));
+        T.True(Out(outDir, "set/stuff/gun/88mm_kwk36_ctb_ger").Contains("{rechargeTime 4}"), "own reload time halved: " + Out(outDir, "set/stuff/gun/88mm_kwk36_ctb_ger"));
+        T.True(Out(outDir, "set/stuff/mgun/mg34_ctb_ger.weapon").Contains("4.25"), "macro reload time halved in the copy: " + Out(outDir, "set/stuff/mgun/mg34_ctb_ger.weapon"));
+        T.True(Out(outDir, "set/stuff/rifle/k98") == null && Out(outDir, "set/stuff/gun/88mm_kwk36") == null && Out(outDir, "set/stuff/rifle/rifle.pattern") == null, "originals and patterns are not written");
+        string ger = Out(outDir, GerInf);
+        T.True(ger.Contains("{item \"k98_ctb_ger\" filled}") && ger.Contains("{item \"mg34_ctb_ger\" filled}"), "the German soldier carries the copies: " + ger);
+        T.True(ger.Contains("{\"health\" \"600%\"}"), "and has health ×2");
+        T.Eq(null, Out(outDir, RusInf), "the Soviet soldier is untouched (still k98)");
+        T.True(Out(outDir, GerTanks[0]).Contains("{weapon \"88mm_kwk36_ctb_ger\"}"), "the German tank gun points to the copy");
+        T.Eq(null, Out(outDir, RusTank), "the Soviet tank is untouched");
+        int before = project.Edits.Count;
+        FactionPreset.AddWeaponsAndHealth(project, c, new FactionOptions { Army = "ger", SuperHeavy = supers }, report);
+        T.Eq(before, project.Edits.Count, "running it again adds nothing");
     }
 }
