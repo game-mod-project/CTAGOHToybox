@@ -1,0 +1,124 @@
+;SDL
+
+;===================================
+;        INSTRUCTIONS    
+;===================================
+
+; In this file onee configures the humans which are spawned in vehicles or squads
+; The humans have a CP and cost associated with them which collectively add up for the final squad value
+; Check ../settings_inf.set for the global defines for CP, capture weight (CW), score, etc.
+
+;===================================
+;        PRICING CHART	       
+;===================================
+
+; // Standard prices below are for tier2 infantry
+
+;k98 			= 8
+;mp40/mp38 		= 10
+;g41 			= 13
+;g43 			= 13
+;mkb42(h)		= 20
+;stg44			= 20
+;fg42 			= 22
+;mg34 drum 		= 40
+;mg34 belt 		= 45
+;mg42 drum 		= 40
+;mg42 belt 		= 45
+;rifle grenade	= +20
+;marksman 		= +2
+;any % pzfaust 	= +2
+;any pzfaust 	= +5
+;any flamer		= 60
+;engineer		= 50
+;miner 			= 40
+
+; // price modifiers (If not tier2)
+;tier 0 		= -3, MG -10
+;tier 1 		= -1, MG -10
+;tier 1 vet 	= 0, MG 0
+;tier 2 vet		= +2, MG +5
+;tier 3 		= +5, MG +10
+;tier 3 vet 	= +8, MG +15
+;tier 4 		= +10, MG +20
+;tier 4 vet 	= +13, MG +25
+
+
+;===================================
+;        BREED DECLARATIONS       
+;===================================
+
+{"mp/ger/late/volkssturm_pol"				("inf_tier1" side(ger) period(late) cost(0))}
+{"mp/ger/late/volkssturm_rifle"				("inf_tier1" side(ger) period(late) cost(0))} 
+{"mp/ger/late/volkssturm_pzf"				("inf_tier1" side(ger) period(late) cost(0))}
+{"mp/ger/late/volkssturm_smg"				("inf_tier1" side(ger) period(late) cost(0))} 
+{"mp/ger/late/volkssturm_mg"				("inf_tier1" side(ger) period(late) cost(0))} 
+
+{"mp/ger/late/fallsch_pio_sa_grenadier_2"		("inf_tier4" side(ger) period(late) cost(0))} ; k98 + rifle grenade
+{"mp/ger/late/fallsch_pio_sa_2"				("inf_tier4" side(ger) period(late) cost(0))} ; k98 + pzfaust 60
+{"mp/ger/late/fallsch_pio_sl_2"				("inf_tier4" side(ger) period(late) cost(0))} ; mp40
+{"mp/ger/late/fallsch_pio_sl_asst_2"			("inf_tier4" side(ger) period(late) cost(0))} ; mp40 + pzfaust 60
+{"mp/ger/late/fallsch_pio_builder"			("inf_tier4" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/fallsch_pio_demolition"			("inf_tier4" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/fallsch_pio_at_miner"			("inf_tier4" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/fallsch_pio_ap_miner"			("inf_tier4" side(ger) period(late) cost(0))} ; k98
+
+{"mp/ger/late/fallsch_rifle_grenadier_2"		("inf_tier4" side(ger) period(late) cost(0))} ; g43 + rifle grenade
+{"mp/ger/late/fallsch_sa_grenadier_2"		    ("inf_tier4" side(ger) period(late) cost(0))} ; k98 + rifle grenade
+{"mp/ger/late/fallsch_sl_3"				("inf_tier4" side(ger) period(late) cost(0))} ; mp40
+{"mp/ger/late/fallsch_sl_2"				("inf_tier4" side(ger) period(late) cost(0))} ; mp40
+{"mp/ger/late/fallsch_sl_asst_3"			("inf_tier4" side(ger) period(late) cost(0))} ; mp40 + pzfaust 100
+{"mp/ger/late/fallsch_sl_asst_2"			("inf_tier4" side(ger) period(late) cost(0))} ; mp40 + pzfaust 100
+{"mp/ger/late/fallsch_smg_3"				("inf_tier4" side(ger) period(late) cost(0))} ; g43
+{"mp/ger/late/fallsch_smg_2"				("inf_tier4" side(ger) period(late) cost(0))} ; g43
+
+{"mp/ger/late/fallsch_recon_sl_2"			("inf_tier4" side(ger) period(late) cost(0))} ; mp40
+{"mp/ger/late/fallsch_recon_pzf_2"			("inf_tier4" side(ger) period(late) cost(0))} ; fg42 + pzfaust 100
+
+{"mp/ger/late/recon_grb39_2"				("inf_tier2" side(ger) period(late) cost(0))} ; mg42 drum
+{"mp/ger/late/recon_grb39_asst_2"			("inf_tier2" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/recon_sl_asst_3"				("inf_tier2" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/recon_mg_2"				("inf_tier2" side(ger) period(late) cost(0))} ; mg42 drum
+{"mp/ger/late/recon_mg_asst_2"				("inf_tier2" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/recon_sl_2"				("inf_tier2" side(ger) period(late) cost(0))} ; mp40
+{"mp/ger/late/recon_sl_asst_2"				("inf_tier2" side(ger) period(late) cost(0))} ; stg44
+
+{"mp/ger/late/pzgren_sturm_stg_2"				("inf_tier2" side(ger) period(late) cost(0))} ; stg44
+{"mp/ger/late/pzgren_sturm_sl_2"				("inf_tier2" side(ger) period(late) cost(0))} ; stg44
+{"mp/ger/late/pzgren_sturm_sl_asst_2"				("inf_tier2" side(ger) period(late) cost(0))} ; stg44 + % pzfaust 30
+{"mp/ger/late/pzgren_sturm_pzf_2"				("inf_tier2" side(ger) period(late) cost(0))} ; stg44 + pzfaust 30
+{"mp/ger/late/pzgren_sturm_aa_2"				("inf_tier2" side(ger) period(late) cost(0))} ; pzschreck
+{"mp/ger/late/pzgren_sturm_aa_asst_2"				("inf_tier2" side(ger) period(late) cost(0))} ; pzschreck
+
+{"mp/ger/late/nco_asst_2"						("inf_tier2" side(ger) period(late) cost(0))} ; stg44
+{"mp/ger/late/nco_2"							("inf_tier2" side(ger) period(late) cost(0))} ; stg44
+
+{"mp/ger/late/landes_mg_asst_2"					("inf_tier1" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/landes_mg_2"					("inf_tier1" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/landes_sl_2"					("inf_tier1" side(ger) period(late) cost(0))} ; mp40
+{"mp/ger/late/landes_sl_asst_2"					("inf_tier1" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/landes_sl_asst_3"					("inf_tier1" side(ger) period(late) cost(0))} ; k98
+{"mp/ger/late/landes_rifle_2"					("inf_tier1" side(ger) period(late) cost(0))} ; k98
+
+{"mp/ger/late/antitank_10"					("inf_tier2" side(ger) period(late) cost(0))} ; rifle grenade inf
+{"mp/ger/late/antitank_11"					("inf_tier2" side(ger) period(late) cost(0))} ; k98
+
+{"mp/ger/late/antitank_6"					("inf_tier2" side(ger) period(late) cost(0))} ; rifle grenade inf
+{"mp/ger/late/antitank_7"					("inf_tier2" side(ger) period(late) cost(0))} ; k98
+
+{"mp/ger/late/antitank_8"					("inf_tier2" side(ger) period(late) cost(0))} ; rifle grenade inf
+{"mp/ger/late/antitank_9"					("inf_tier2" side(ger) period(late) cost(0))} ; k98
+
+{"mp/ger/late/feldg_mg_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mg34 drum
+{"mp/ger/late/feldg_mg_asst_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mg34 drum
+{"mp/ger/late/feldg_smg_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mp28
+{"mp/ger/late/feldg_nco_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mp38
+{"mp/ger/late/feldg_rifle_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mp28
+
+{"mp/ger/late/feldg_lw_smg_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mp28
+{"mp/ger/late/feldg_lw_nco_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mp38
+{"mp/ger/late/feldg_lw_rifle_2"					("inf_tier2" side(ger) period(late) cost(0))} ; mp28
+
+{"mp/ger/late/recon_rifle_2"					    ("inf_tier2_lite" side(ger) period(late) cost(0))} ; k98
+
+

@@ -1,0 +1,1 @@
+{unitLimits "officer=999;sniper=999;squad_1=999;squad_4=999;signaller=999;signaller_heavy=999;limit1=999;limit1a=999;limit1b=999;limit2=999;limit2a=999;limit3=999;limit3a=999;limit4=999;limit5=999;limit10=999;artillery=999;heavyaa=999;limitf1=999;limitf1a=999;limitf1b=999"}
