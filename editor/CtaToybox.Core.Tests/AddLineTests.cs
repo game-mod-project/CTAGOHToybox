@@ -55,3 +55,20 @@ static class AddLineTests
         T.Eq("{\"health\" \"600%\"}", reopened.Edits.Single(e => e.Kind == AddLine.Kind).New, "the project keeps the line");
     }
 }
+
+// 합치기: 같은 원본 블록에서 이름이 다른 복제, 같은 블록에 다른 줄은 각각 더한다(E18 월드워-차종의 필드 복제 셋)
+static class MergeKindsTests
+{
+    public static void Run()
+    {
+        var other = new EditProject();
+        foreach (string n in new[] { "\"a\"", "\"b\"", "\"c\"" })
+            other.Edits.Add(new Edit { Kind = BlockCopy.Kind, File = "set/vision/vision_fields.inc", Path = "/\"*\"", Occurrence = 32, Arg = 0, Old = "\"x\"", New = n, Scope = "shared" });
+        other.Edits.Add(AddLine.New(null, "f.set", "/perks", 0, "{a 1}"));
+        other.Edits.Add(AddLine.New(null, "f.set", "/perks", 0, "{b 1}"));
+        var project = new EditProject();
+        var report = project.MergeFrom(other);
+        T.Eq(5, report.Added, "every copy and line is added");
+        T.Eq(5, project.MergeFrom(other).Same, "and merging again finds them all the same");
+    }
+}

@@ -120,6 +120,7 @@ static class Suites
         ("ArmyIndex", ArmyIndexTests.Run),
         ("FileCopy", FileCopyTests.Run),
         ("AddLine", AddLineTests.Run),
+        ("MergeKinds", MergeKindsTests.Run),
         ("FactionPreset", FactionPresetTests.Run),
         ("FactionPresetCli", FactionPresetCliTests.Run),
         ("SettingStrings", SettingStringsTests.Run),

@@ -89,8 +89,8 @@ namespace CtaToybox.Core
 
         static bool SameSlot(Edit a, Edit b)
         {
-            // 줄 더하기·파일 사본은 같은 자리에 여럿을 둘 수 있다. 넣는 줄·사본 경로가 같아야 같은 수정이다
-            if ((a.Kind == AddLine.Kind || a.Kind == FileCopy.Kind) && a.New != b.New) return false;
+            // 줄 더하기·파일 사본·블록 복제는 같은 자리에 여럿을 둘 수 있다. 넣는 줄·사본 경로·새 이름이 같아야 같은 수정이다
+            if ((a.Kind == AddLine.Kind || a.Kind == FileCopy.Kind || a.Kind == BlockCopy.Kind) && a.New != b.New) return false;
             return a.Scope == b.Scope && a.Kind == b.Kind && a.Occurrence == b.Occurrence && a.Arg == b.Arg
                 && string.Equals(SourceStack.ToVirtual(a.File ?? ""), SourceStack.ToVirtual(b.File ?? ""), System.StringComparison.OrdinalIgnoreCase)
                 && string.Equals(a.Path, b.Path, System.StringComparison.OrdinalIgnoreCase)
