@@ -132,6 +132,7 @@ static class Suites
         ("SpawnCli", SpawnCliTests.Run),
         ("L10nPo", L10nPoTests.Run),
         ("L10nSources", L10nSourcesTests.Run),
+        ("L10nCatalog", L10nCatalogTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
