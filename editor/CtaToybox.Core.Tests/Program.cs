@@ -123,6 +123,7 @@ static class Suites
         ("MergeKinds", MergeKindsTests.Run),
         ("FactionPreset", FactionPresetTests.Run),
         ("FactionPresetCli", FactionPresetCliTests.Run),
+        ("SpawnWriter", SpawnWriterTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
