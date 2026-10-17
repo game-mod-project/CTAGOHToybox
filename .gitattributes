@@ -4,3 +4,6 @@ mod/CTAToybox/.ctatoybox-build.json -text
 mod/CTAToyboxSpawn/resource/** -text
 mod/CTAToyboxSpawn/localizations/** -text
 mod/CTAToyboxSpawn/.ctatoybox-spawn.json -text
+l10n/** -text
+mod/CTAToybox/localizations/** -text
+mod/CTAToybox/.ctatoybox-l10n.json -text
