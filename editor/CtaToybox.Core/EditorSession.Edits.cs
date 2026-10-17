@@ -55,6 +55,27 @@ namespace CtaToybox.Core
         string checkedFile, checkedText;
         TextKind checkedKind;
 
+        // 블록 끝에 줄 하나를 더한다(팩션 강화). 같은 파일·블록·줄이 이미 있으면 그 수정을 돌려준다. 안 되면 ArgumentException
+        public Edit AddLineEdit(string unit, string file, string blockPath, int occurrence, string line)
+        {
+            NeedProject();
+            string bad = AddLine.CheckLine(line);
+            if (bad != null) throw new ArgumentException(bad);
+            var found = Stack.Find(file);
+            if (found == null) throw new ArgumentException("원본에 이 파일이 없다: " + file);
+            if (LuaTable.IsLua(found.VirtualPath)) throw new ArgumentException("Lua 파일에는 줄을 더하지 않는다");
+            TextKind kind;
+            string text = BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
+            if (AddLine.Find(text, blockPath, occurrence) == null) throw new ArgumentException("원본에 이 블록이 없다: " + blockPath);
+            if (!TextCodec.CanEncode(line, kind)) throw new ArgumentException("넣을 줄에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다");
+            var same = Project.Edits.FirstOrDefault(x => x.Kind == AddLine.Kind && SourceStack.ToVirtual(x.File ?? "") == found.VirtualPath && string.Equals(x.Path, blockPath, StringComparison.OrdinalIgnoreCase) && x.Occurrence == occurrence && x.New == line);
+            if (same != null) return same;
+            var edit = AddLine.New(unit, found.VirtualPath, blockPath, occurrence, line);
+            Project.Edits.Add(edit);
+            SaveOr(() => Project.Edits.Remove(edit));
+            return edit;
+        }
+
         // 파일 사본을 더한다(팩션 강화). target이 null이면 FileCopy.NameFor(source, suffix). 안 되면 ArgumentException
         public Edit AddFileCopy(string unit, string source, string target)
         {
@@ -239,6 +260,15 @@ namespace CtaToybox.Core
             {
                 string bad = FileCopy.CheckTarget(Stack, e.File, e.New);
                 return new EditCheck { Edit = e, Status = bad == null ? EditStatus.Applied : Stack.FindReal(file) == null ? EditStatus.TargetMissing : EditStatus.Invalid, Message = bad };
+            }
+            // 줄 더하기(팩션 강화): 줄이 맞고 블록이 원본에 있으면 적용된다
+            if (e.Kind == AddLine.Kind)
+            {
+                string bad = AddLine.CheckLine(e.New);
+                if (bad != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Message = bad };
+                if (source.Text == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
+                if (AddLine.Find(source.Text, e.Path, e.Occurrence) == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 블록이 없다: " + e.Path };
+                return new EditCheck { Edit = e, Status = EditStatus.Applied, RowText = e.New };
             }
             // 블록 복제(E18): 빌드와 같이 원본에 넣어 본 결과가 그 수정의 점검 결과다
             if (e.Kind == BlockCopy.Kind)
