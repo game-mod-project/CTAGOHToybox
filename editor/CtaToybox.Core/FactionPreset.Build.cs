@@ -31,6 +31,7 @@ namespace CtaToybox.Core
             AddUnitStats(project, c, o, report);
             AddWeaponsAndHealth(project, c, o, report);
             AddConquest(project, c, conquest ?? new ConquestValues(), report);
+            AddSkirmish(project, c, (conquest ?? new ConquestValues()).Skirmish, report);
             return project;
         }
     }

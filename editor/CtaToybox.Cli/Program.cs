@@ -24,7 +24,7 @@ namespace CtaToybox.Cli
             "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
             "  ctatoybox rule list|reapply|remove|enable|disable --project <파일> [--id <id>]   rule edit --project <파일> --id <id> <바꿀 옵션>   (일괄 규칙)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
-            "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
+            "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
@@ -42,7 +42,7 @@ namespace CtaToybox.Cli
             ["merge"] = new[] { "settings", "project", "from" },
             ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude" },
             ["build"] = new[] { "settings", "project", "force" },
-            ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel" },
+            ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
 
@@ -201,7 +201,7 @@ namespace CtaToybox.Cli
                 var c = new FactionContext { Stack = session.Stack, Index = session.Index, Tracer = new UnitTracer(session.Stack), Armies = session.Armies, Items = session.Items };
                 var missing = o.SuperHeavy.Where(p => !session.Index.Units.Any(u => u.Path.StartsWith(p, StringComparison.Ordinal))).ToList();
                 var report = new FactionReport();
-                var project = FactionPreset.Build(c, baseProject, o, new ConquestValues(), report);
+                var project = FactionPreset.Build(c, baseProject, o, new ConquestValues { Skirmish = Positive(opt, "skirmish", 50) }, report);
                 project.Save(projectPath);
                 output.WriteLine("군대 " + army + ": 유닛 " + report.Units + "(보병 " + report.Infantry + ", 차량 " + report.Vehicles + "), 수정 " + project.Edits.Count + "건, 규칙 " + (project.Rules == null ? 0 : project.Rules.Count) + "개: " + projectPath);
                 foreach (var kv in report.Edits) output.WriteLine("  " + kv.Key + ": " + kv.Value);
@@ -210,6 +210,7 @@ namespace CtaToybox.Cli
                 output.WriteLine("건너뜀 " + report.Skipped.Count + "건" + (report.Skipped.Count > 20 ? " (앞 20)" : ""));
                 foreach (string s in report.Skipped.Take(20)) output.WriteLine("  " + s);
                 foreach (string n in report.Notes) output.WriteLine("  " + n);
+                if (opt.ContainsKey("report")) File.WriteAllLines(opt["report"], report.Edits.Select(kv => "수정 " + kv.Key + ": " + kv.Value).Concat(report.Shared.Select(x => "공유 " + x)).Concat(report.Skipped.Select(x => "건너뜀 " + x)).Concat(report.Notes));
                 return 0;
             }
         }

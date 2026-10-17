@@ -19,7 +19,11 @@ static class FactionPresetCliTests
     public static void Run()
     {
         string repo, outDir, o;
-        string settings = FactionPresetTests.Fixture(out repo, out outDir, ("set/dynamic_campaign/resources_standard.set", Resources));
+        string settings = FactionPresetTests.Fixture(out repo, out outDir, ("set/dynamic_campaign/resources_standard.set", Resources),
+            ("set/multiplayer/games/presets/preset_late.inc", "(define \"standard_all\"\n {common (include \"global_parameters/budget.inc\" s(%start) f(%finish) d(%doctrine))}\n)\n{presets\n {\"s:late\"\n  (\"standard_all\" start(200) finish(4500) doctrine(200) cp(0:100,900:150,1800:200))\n }\n}\n"),
+            ("set/multiplayer/games/presets/laststand_late.inc", "{presets\n {\"l:late\"\n  (\"standard_all\" start_a(500) finish_a(1800) start_b(500) finish_b(4500) doctrine(200) cp_a(0:80,900:100) cp_b(0:120,900:160))\n }\n}\n"),
+            ("set/multiplayer/games/presets/frontlines_late.inc", "{presets\n {\"f:late\"\n  (\"standard_all\" start_a(4500) start_b(2800))\n }\n}\n"),
+            ("set/multiplayer/games/presets/global_parameters/bots_generic.inc", "{easy\n {balancingFactorBonus\n  {cp 0.80}\n  {mpStart 1.10}\n  {mpFinish 0.8}\n  {payback 0.8}\n }\n}\n"));
         using (var s = EditorSession.Open(settings, repo, null))
         {
             var project = new EditProject();
@@ -33,6 +37,19 @@ static class FactionPresetCliTests
             T.True(text.Contains("{WinGain \"1:99999\"}") && text.Contains("{LoseGain \"1:99999\"}") && text.Contains("{WinGain 999}") && text.Contains("{LoseGain 999}"), "win and lose gains");
             T.True(text.Contains("{StartMP 1.00 min 99999 attackerMultiplier 1.00}"), "bots are untouched");
             T.True(report.Skipped.Count(x => x.Contains("파일이 없다")) == 3, "the three missing difficulty files are reported");
+
+            var sk = new EditProject();
+            FactionPreset.AddSkirmish(sk, FactionPresetTests.Context(s), 50, report);
+            var b2 = new ModBuilder(s.Stack, outDir).Build(sk);
+            T.Eq(0, b2.Results.Count(r => r.Status != EditStatus.Applied), "skirmish edits apply: " + string.Join("; ", b2.Results.Where(r => r.Status != EditStatus.Applied).Select(r => r.Message)));
+            string preset = FactionPresetTests.Out(outDir, "set/multiplayer/games/presets/preset_late.inc");
+            T.True(preset.Contains("start(10000) finish(225000) doctrine(200) cp(0:5000,900:7500,1800:10000)"), "player MP and CP ×50, doctrine stays, macro body untouched: " + preset);
+            T.True(preset.Contains("s(%start)"), "the macro body keeps %start");
+            string last = FactionPresetTests.Out(outDir, "set/multiplayer/games/presets/laststand_late.inc");
+            T.True(last.Contains("start_a(25000) finish_a(90000) start_b(500) finish_b(4500) doctrine(200) cp_a(0:4000,900:5000) cp_b(0:120,900:160)"), "last stand: team a only: " + last);
+            T.Eq(null, FactionPresetTests.Out(outDir, "set/multiplayer/games/presets/frontlines_late.inc"), "frontlines untouched");
+            string bots = FactionPresetTests.Out(outDir, "set/multiplayer/games/presets/global_parameters/bots_generic.inc");
+            T.True(bots.Contains("{cp 0.016}") && bots.Contains("{mpStart 0.022}") && bots.Contains("{mpFinish 0.016}") && bots.Contains("{payback 0.8}"), "bot factors ÷50, payback stays: " + bots);
         }
 
         string super = Path.Combine(repo, "super.txt");

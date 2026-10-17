@@ -16,6 +16,7 @@ namespace CtaToybox.Core
         public string GlobalMax { get; set; } = "9999";    // GlobalMaxCP
         public string MainGain { get; set; } = "1:99999";  // MP·AP WinGain·LoseGain(판 수 : 얻는 양)
         public string SmallGain { get; set; } = "999";     // SP·RP WinGain·LoseGain
+        public double Skirmish { get; set; } = 50;         // 스커미시 플레이어 MP 시작·끝·CP 배수 K. 봇 배율은 ÷K(사용자 결정 2026-10-17). 1이면 바꾸지 않는다
     }
 
     public static partial class FactionPreset
@@ -66,6 +67,55 @@ namespace CtaToybox.Core
                 if (made == before) report.Skipped.Add(file + ": 고칠 자원 줄을 찾지 못했다");
             }
             report.Edits["컨퀘스트 자원(플레이어)"] = made;
+        }
+
+        // 스커미시(사용자 결정 2026-10-17): 배틀존·탄약전 프리셋 호출의 start·finish·cp를 ×K, 봇 배율(bots_generic.inc의 mpStart·mpFinish·cp)을 ÷K.
+        // 봇 배율 파일 하나를 모든 프리셋이 같이 쓰므로, 고정 최대값 대신 배수로 해야 모든 프리셋에서 봇의 결과 값이 바닐라와 같다.
+        // 피난(laststand)은 팀 a("PLAYER DEFENDER TEAM")의 start_a·finish_a·cp_a만 ×K. 프런트라인과 DP(doctrine)는 그대로 둔다
+        public const string BotsFile = "set/multiplayer/games/presets/global_parameters/bots_generic.inc";
+        static readonly Regex BotRow = new Regex("^/[^/]+/balancingfactorbonus/(mpstart|mpfinish|cp)$");
+        static readonly Regex CpPair = new Regex(@"(\d+(?:\.\d+)?):(\d+(?:\.\d+)?)");
+
+        public static void AddSkirmish(EditProject project, FactionContext c, double k, FactionReport report)
+        {
+            if (k == 1) return;
+            int made = 0;
+            var presets = c.Stack.Paths.Where(p => p.StartsWith("set/multiplayer/games/presets/", StringComparison.Ordinal) && !p.Contains("/global_parameters/")).OrderBy(p => p, StringComparer.Ordinal).ToList();
+            foreach (string file in presets)
+            {
+                string leaf = file.Substring(file.LastIndexOf('/') + 1);
+                string[] names = leaf.StartsWith("preset_") && leaf.EndsWith(".inc") ? new[] { "start", "finish", "cp" }
+                    : leaf.StartsWith("laststand_") && leaf.EndsWith(".inc") ? new[] { "start_a", "finish_a", "cp_a" } : null;
+                if (names == null) continue;
+                made += Scale(project, c, file, (row, i) => row.LeafNames != null && i < row.LeafNames.Count && names.Contains(row.LeafNames[i]), k, report);
+            }
+            int bots = Scale(project, c, BotsFile, (row, i) => i == 0 && BotRow.IsMatch(row.Path.ToLowerInvariant()), 1 / k, report);
+            if (bots == 0) report.Skipped.Add(BotsFile + ": 봇 배율을 찾지 못했다. 스커미시 AI가 바닐라와 달라진다");
+            report.Edits["스커미시 플레이어 ×" + Num(k)] = made;
+            report.Edits["스커미시 봇 배율 ÷" + Num(k)] = bots;
+        }
+
+        static int Scale(EditProject project, FactionContext c, string file, Func<KeyRow, int, bool> pick, double factor, FactionReport report)
+        {
+            string text = c.Stack.ReadText(file);
+            if (text == null) return 0;
+            string error;
+            var rows = SourceRows.Of(file, text, out error);
+            if (rows == null) { report.Skipped.Add(file + ": 읽지 못했다: " + error); return 0; }
+            int made = 0;
+            foreach (var row in rows)
+                for (int i = 0; i < row.Leaves.Count; i++)
+                {
+                    if (!pick(row, i)) continue;
+                    string old = row.Leaves[i].Text, next;
+                    if (SdlCore.IsNumber(old)) { string err; next = BulkRules.Compute("mul", old, Num(factor), out err); if (next == null) continue; }
+                    else if (CpPair.IsMatch(old)) next = CpPair.Replace(old, m => m.Groups[1].Value + ":" + BulkRules.Compute("mul", m.Groups[2].Value, Num(factor), out string e2));
+                    else continue;   // 매크로 정의 안의 %start 같은 자리
+                    if (next == old || project.Edits.Any(e => e.File == file && e.Path == row.Path && e.Occurrence == row.Occurrence && e.Arg == i)) continue;
+                    project.Edits.Add(new Edit { Unit = file, File = file, Path = row.Path, Occurrence = row.Occurrence, Arg = i, Old = old, New = next, Scope = "shared" });
+                    made++;
+                }
+            return made;
         }
     }
 }
