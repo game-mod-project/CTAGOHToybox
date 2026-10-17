@@ -1,0 +1,35 @@
+# 초중전차 목록(팩션 강화, 장갑 ×5). 한 줄에 유닛 폴더 하나(가상 경로). # 뒤는 주석. 손으로 고친다
+# 파일에 초중전차 표시가 없어 이름으로 골랐다(2026-10-17). 대공·자주포·구축전차·바펜트레거 파생형도 넣는다(사용자 결정 2026-10-17)
+# MACE Wunderwaffe Ultimate Fusion (3732639687)
+entity/-vehicle/+germany/tank_heavy/mausking/
+entity/-vehicle/+germany/tank_heavy/maus_desert/
+entity/-vehicle/+germany/tank_heavy/tigermaus/
+entity/-vehicle/+germany/tank_heavy/flakmaus/
+entity/-vehicle/+germany/tank_heavy/taschenratte/
+entity/-vehicle/+germany/tank_heavy/e-100c/
+entity/-vehicle/+germany/tank_heavy/e-100hd/
+entity/-vehicle/+germany/tank_heavy/e100_15/
+entity/-vehicle/+germany/tank_heavy/e100aa/
+entity/-vehicle/+germany/tank_heavy/e100_gw/
+entity/-vehicle/+germany/tank_heavy/e100_v1_robz/
+entity/-vehicle/+germany/tank_heavy/e100_waffentrager_robz/
+entity/-vehicle/+germany/tank_heavy/gwe100/
+entity/-vehicle/+germany/tank_heavy/sge100/
+entity/-vehicle/+germany/tank_heavy/jpze100/
+entity/-vehicle/+germany/tank_heavy/jpze100_2/
+entity/-vehicle/+germany/tank_heavy/e200_robztest/
+entity/-vehicle/+germany/tank_heavy/vk72_robztest/
+entity/-vehicle/+ussr/tank_heavy/object279/
+entity/-vehicle/+ussr/tank_heavy/kv5/
+entity/-vehicle/+ussr/tank_heavy/kv-4_dukhov_turret/
+entity/-vehicle/+ussr/tank_heavy/kv-4_strukov_turret/
+entity/-vehicle/eng/tank_heavy/tog2/
+entity/-vehicle/eng/tank_heavy/tortez/
+entity/-vehicle/eng/tank_heavy/fv215b_183/
+# MACE (2905667604)
+entity/-vehicle/+germany/tank_heavy/pzkpfw_8_maus/
+entity/-vehicle/+usa/tank_heavy/us_t95/
+entity/-vehicle/+japan/tank_heavy/o_i/
+entity/-vehicle/+ussr/tank_heavy/kv4b/
+entity/-vehicle/fra/heavy/char_2c/
+entity/-vehicle/fra/heavy/char_2c_bis/

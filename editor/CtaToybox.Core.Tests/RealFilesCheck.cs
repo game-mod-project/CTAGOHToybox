@@ -224,6 +224,72 @@ static class RealFilesCheck
         }
         finally { Directory.Delete(ruleOut, true); }
 
+        // 팩션 강화: 독일 프로젝트(월드워-차종 베이스)를 실제 판에서 만들어 임시 폴더에 빌드하고, 다른 군대 유닛의 펼친 값이 그대로인지 본다
+        var armies = ArmyIndex.Build(stack, index.Units);
+        var fc = new FactionContext { Stack = stack, Index = index, Tracer = new UnitTracer(stack), Armies = armies, Items = ItemLinks.Build(stack.Paths) };
+        string basePath = Path.Combine(T.RepoRoot(), "editor", "projects", "월드워-차종.json");
+        var boostReport = new FactionReport();
+        var boost = FactionPreset.Build(fc, EditProject.Load(basePath), new FactionOptions { Army = "ger", SuperHeavy = FactionPreset.LoadSuperHeavy(Path.Combine(T.RepoRoot(), "editor", "presets", "super-heavy.txt")) }, new ConquestValues(), boostReport);
+        string boostOut = Path.Combine(Path.GetTempPath(), "ctatoybox-boost-" + Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(boostOut);
+        try
+        {
+            var boostBuild = new ModBuilder(stack, boostOut).Build(boost);
+            var boostBad = boostBuild.Results.Where(r => r.Status != EditStatus.Applied).ToList();
+            // 빌드 출력을 맨 뒤 계층으로 붙인 판에서 다른 군대 유닛을 다시 펼친다. 비교 기준은 베이스(월드워-차종)만 빌드한 판이다(시야는 모든 군대에 바뀐다)
+            stack.SetCopies(null);
+            string baseOut = Path.Combine(Path.GetTempPath(), "ctatoybox-boostbase-" + Guid.NewGuid().ToString("N"));
+            Directory.CreateDirectory(baseOut);
+            new ModBuilder(stack, baseOut).Build(EditProject.Load(basePath));
+            stack.SetCopies(null);
+            using var after = new SourceStack(plan.Layers.Concat(new[] { new SourceLayer("boost", Path.Combine(boostOut, "resource")) }));
+            after.Scan();
+            using var before = new SourceStack(plan.Layers.Concat(new[] { new SourceLayer("base", Path.Combine(baseOut, "resource")) }));
+            before.Scan();
+            var afterTracer = new UnitTracer(after);
+            var beforeTracer = new UnitTracer(before);
+            var copiedNames = new HashSet<string>(boost.Edits.Where(e => e.Kind == FileCopy.Kind).Select(e => e.File.Substring(e.File.LastIndexOf('/') + 1).Split('.')[0]), StringComparer.OrdinalIgnoreCase);
+            var sample = new List<string>();
+            foreach (string army in ArmyIndex.Armies.Where(a => a != "ger"))
+            {
+                var m = armies.Members(army);
+                sample.AddRange(m.Where(p => p.StartsWith("set/breed/")).Take(20));
+                sample.AddRange(m.Where(p => p.StartsWith("entity/-vehicle/")).Take(20));
+                // 독일 사본의 원래 무기를 이름으로 부르는 다른 군대 유닛
+                sample.AddRange(m.Where(p => p.StartsWith("set/breed/")).Where(p => { string t = stack.ReadText(p) ?? ""; return copiedNames.Any(n => t.IndexOf("\"" + n, StringComparison.OrdinalIgnoreCase) >= 0); }).Take(30));
+            }
+            sample.AddRange(armies.Shared.Select(x => x.Substring(0, x.IndexOf(':'))));
+            sample = sample.Distinct().ToList();
+            int changed = 0;
+            var changedExamples = new List<string>();
+            foreach (string u in sample)
+            {
+                var b = beforeTracer.Trace(u); var a2 = afterTracer.Trace(u);
+                if (b == null || a2 == null) continue;
+                string Flat(UnitTraceResult r) => string.Join("\n", r.Rows.Select(x => x.Path + "=" + string.Join(" ", x.Values.Select(v => v.Text))));
+                string fb = Flat(b), fa = Flat(a2);
+                if (fb != fa)
+                {
+                    changed++;
+                    var lb = fb.Split('\n'); var la = fa.Split('\n');
+                    string diff = lb.Except(la).FirstOrDefault() + " / " + la.Except(lb).FirstOrDefault();
+                    if (changedExamples.Count < 10) changedExamples.Add(u + ": " + diff);
+                }
+            }
+            Console.WriteLine("faction-units=" + boostReport.Units + " faction-edits=" + boost.Edits.Count + " faction-copies=" + boost.Edits.Count(e => e.Kind == FileCopy.Kind) + " faction-lines=" + boost.Edits.Count(e => e.Kind == AddLine.Kind) +
+                              " faction-skipped=" + boostReport.Skipped.Count + " faction-shared=" + boostReport.Shared.Count + " faction-not-applied=" + boostBad.Count + " faction-file-errors=" + boostBuild.FileErrors.Count +
+                              " faction-written=" + boostBuild.WrittenFiles.Count + " faction-other-army-sample=" + sample.Count + " faction-other-army-changed=" + changed);
+            foreach (var r in boostBad.Take(10)) Console.WriteLine("  faction: " + r.Status + " " + r.Edit.File + " " + r.Edit.Path + " " + r.Message);
+            foreach (string e in boostBuild.FileErrors.Take(10)) Console.WriteLine("  faction file: " + e);
+            foreach (string e in changedExamples) Console.WriteLine("  faction other army changed: " + e);
+            T.True(boostReport.Units > 1000, "the German army has its units (faction boost)");
+            T.Eq(0, boostBad.Count, "every faction edit applies");
+            T.Eq(0, boostBuild.FileErrors.Count, "and every file is written (faction boost)");
+            T.Eq(0, changed, "other armies' units are unchanged (faction boost)");
+            T.True(EditProject.Load(basePath).Edits.All(be => boost.Edits.Any(e => e.Kind == be.Kind && e.File == be.File && e.Path == be.Path && e.Occurrence == be.Occurrence && e.Arg == be.Arg && e.New == be.New)), "every base (월드워-차종) edit is in the faction project");
+        }
+        finally { Directory.Delete(boostOut, true); stack.SetCopies(null); foreach (string d in Directory.GetDirectories(Path.GetTempPath(), "ctatoybox-boostbase-*")) Directory.Delete(d, true); }
+
         const string k98 = "set/stuff/rifle/k98", riflePattern = "set/stuff/rifle/rifle.pattern";
         var k98Trace = tracer.Trace(k98);
         Console.WriteLine("from-units=" + fromUnits + " from-problems=" + fromProblems + " inherited-values=" + inherited + " from-wrong-slot=" + fromWrongSlot +

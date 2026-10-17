@@ -113,8 +113,25 @@ namespace CtaToybox.Core
                     report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = swap });
                     enabled.Remove(e);
                 }
-                var shared = enabled.Where(e => e.Scope != "unit").ToList();
+                // 파일 사본(팩션 강화): 만들 수 있는 사본만 원본 위에 등록한다. 그래야 사본을 가리키는 수정이 사본 본문을 읽고, 빠진 사본은 "파일이 없다"로 막힌다
                 var items = new Dictionary<string, WorkItem>(StringComparer.Ordinal);
+                var goodCopies = new List<Edit>();
+                stack.SetCopies(null);
+                foreach (var e in enabled.Where(x => x.Kind == FileCopy.Kind).ToList())
+                {
+                    string bad = FileCopy.CheckTarget(stack, e.File, e.New) ?? (goodCopies.Any(c => SourceStack.ToVirtual(c.New) == SourceStack.ToVirtual(e.New)) ? "같은 사본이 이미 있다: " + e.New : null);
+                    enabled.Remove(e);
+                    if (bad != null) { report.Results.Add(new EditResult { Edit = e, Status = stack.FindReal(e.File ?? "") == null ? EditStatus.TargetMissing : EditStatus.Invalid, Message = bad }); continue; }
+                    goodCopies.Add(e);
+                }
+                stack.SetCopies(goodCopies.Select(e => new KeyValuePair<string, string>(e.New, e.File)));
+                foreach (var e in goodCopies)
+                {
+                    var item = ItemFor(items, SourceStack.ToVirtual(e.New), stack.Find(e.New));
+                    item.Always = true;
+                    item.Edits.Add(e);
+                }
+                var shared = enabled.Where(e => e.Scope != "unit").ToList();
                 foreach (var group in shared.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
                 {
                     var source = stack.Find(group.Key);
@@ -362,8 +379,14 @@ namespace CtaToybox.Core
                 results.AddRange(copyResults);
                 copiedCount = copyResults.Count(r => r.Status == EditStatus.Applied);
             }
+            // 파일 사본은 이 파일을 쓰는 것 자체다(item.Always)
+            foreach (var e in item.Edits.Where(x => x.Kind == FileCopy.Kind))
+            {
+                results.Add(new EditResult { Edit = e, Status = EditStatus.Applied });
+                copiedCount++;
+            }
             var usable = new List<Edit>();
-            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind))
+            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind && x.Kind != FileCopy.Kind && x.Kind != AddLine.Kind))
             {
                 string ruleWarning;
                 string ruleError = e.New == null ? null : ValueRules.CheckNewValue(item.Source.VirtualPath, e.Old, e.New, out ruleWarning);
@@ -391,6 +414,21 @@ namespace CtaToybox.Core
             int count = reported.Count(r => r.Status == EditStatus.Applied) + copiedCount;
             var appended = item.Appends.Count == 0 ? new List<Edit>() : Append(ref patched, item, kind, results);
             count += appended.Count;
+            // 줄 더하기(팩션 강화)는 값 고치기를 다 한 본문에 넣는다. 넣은 줄이 같은 경로의 다른 줄 순번을 밀지 않게
+            var lineEdits = item.Edits.Where(e => e.Kind == AddLine.Kind).ToList();
+            if (lineEdits.Count > 0)
+            {
+                var lineResults = new List<EditResult>();
+                if (LuaTable.IsLua(item.Source.VirtualPath)) lineResults.AddRange(lineEdits.Select(e => new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "Lua 파일에는 줄을 더하지 않는다" }));
+                else
+                {
+                    foreach (var e in lineEdits.Where(e => !TextCodec.CanEncode(e.New ?? "", kind)))
+                        lineResults.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "넣을 줄에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + e.New });
+                    patched = AddLine.Apply(patched, lineEdits.Where(e => TextCodec.CanEncode(e.New ?? "", kind)), lineResults);
+                }
+                results.AddRange(lineResults);
+                count += lineResults.Count(r => r.Status == EditStatus.Applied);
+            }
             if (count == 0 && item.Raw.Count == 0 && !item.Always) return null;
 
             string relative = "resource/" + item.Output;

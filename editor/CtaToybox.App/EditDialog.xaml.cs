@@ -102,6 +102,8 @@ namespace CtaToybox.App
                 ValuesPanel.Children.Add(line);
             }
 
+            AddFilePanels();
+
             // 범위: 같이 쓰는 값이 하나라도 있으면 묻는다. 영향받는 유닛은 가장 많이 같이 쓰는 값의 파일 기준이다
             if (widest == null)
             {
@@ -145,6 +147,93 @@ namespace CtaToybox.App
             line.Children.Add(copyBox);
             panel.Children.Add(line);
             ValuesPanel.Children.Add(panel);
+        }
+
+        TextBox fileCopyBox, lineBox;
+        string copySource;
+        BlockSpan lineBlock;
+        string lineFile;
+
+        // 팩션 강화: 아이템·무기 이름 줄이면 그 파일의 사본(이 줄이 사본을 쓰게), 고칠 수 있는 값이 든 블록이면 그 블록 끝에 줄 더하기
+        void AddFilePanels()
+        {
+            string seg = row.Path.Substring(row.Path.LastIndexOf('/') + 1);
+            var first = row.Values.Count > 0 ? row.Values[0] : null;
+            if (first != null && first.Editable && (seg == "item" || seg == "weapon") && first.Trace.Text.StartsWith("\""))
+            {
+                var link = session.Items.Find(first.Trace.Text.Trim('"'));
+                if (link.Files.Count > 0 && link.Rule != ItemLinks.RuleCandidates)
+                {
+                    copySource = link.Files[0];
+                    fileCopyBox = new TextBox { Text = FileCopy.NameFor(copySource, "my") };
+                    ValuesPanel.Children.Add(Panel("이 아이템 파일의 사본",
+                        "아이템 " + Text.Value(first.Trace.Text) + "의 파일(" + copySource + ")을 같은 폴더의 새 이름으로 복사하고, 이 줄이 사본을 쓰게 한다. 다른 유닛은 원래 파일을 그대로 쓴다. 사본의 값은 그 파일을 열어 고친다",
+                        fileCopyBox, "사본 만들기", () => { if (PressFileCopy()) DialogResult = true; }));
+                }
+            }
+            var editable = row.Values.FirstOrDefault(v => v.Editable && v.Trace.File != null);
+            lineBlock = editable == null ? null : session.BlockOfValue(editable);
+            lineFile = editable == null ? null : editable.Trace.File;
+            if (lineBlock == null)
+            {
+                // 고칠 값이 없는 줄(매크로로 채운 perks 등): 유닛 파일에서 그 줄의 부모 경로 블록. 따옴표 이름 자리("*")는 떼고 찾는다
+                string parent = row.Path.EndsWith("/\"*\"") ? row.Path.Substring(0, row.Path.Length - 4) : row.Path.Substring(0, Math.Max(0, row.Path.LastIndexOf('/')));
+                lineBlock = parent.Length == 0 ? null : session.BlockInFile(unit.Unit, parent);
+                lineFile = unit.Unit;
+            }
+            if (lineBlock != null)
+            {
+                lineBox = new TextBox();
+                ValuesPanel.Children.Add(Panel("이 블록에 줄 더하기 (" + KeyLabel.Readable(lineBlock.Path) + ")",
+                    "괄호로 감싼 줄 하나를 " + lineFile + "의 이 블록 끝에 넣는다(예: {\"health\" \"600%\"}). 앞에 같은 키가 있으면 게임이 어느 쪽을 쓰는지는 미확인이다",
+                    lineBox, "줄 더하기", () => { if (PressAddLine()) DialogResult = true; }));
+            }
+        }
+
+        static StackPanel Panel(string title, string help, TextBox box, string buttonText, Action click)
+        {
+            var panel = new StackPanel { Margin = new Thickness(0, 10, 0, 0) };
+            panel.Children.Add(new TextBlock { Text = title, FontWeight = FontWeights.Bold, TextWrapping = TextWrapping.Wrap });
+            panel.Children.Add(new TextBlock { Foreground = Brushes.DimGray, FontSize = 12, TextWrapping = TextWrapping.Wrap, Text = help });
+            var line = new DockPanel { Margin = new Thickness(0, 4, 0, 0) };
+            var button = new Button { Content = buttonText, Padding = new Thickness(10, 2, 10, 2), Margin = new Thickness(8, 0, 0, 0) };
+            DockPanel.SetDock(button, Dock.Right);
+            button.Click += (s, e) => click();
+            line.Children.Add(button);
+            line.Children.Add(box);
+            panel.Children.Add(line);
+            return panel;
+        }
+
+        // 시나리오(filecopy)와 단추가 같이 쓴다: 사본을 넣고, 이 줄의 이름을 사본 이름(첫 낱말만 바뀐 이름)으로 바꾼다
+        public bool PressFileCopy(string target = null)
+        {
+            if (fileCopyBox == null) return false;
+            if (target != null) fileCopyBox.Text = target;
+            string copy = SourceStack.ToVirtual(fileCopyBox.Text.Trim());
+            string oldName = row.Values[0].Trace.Text.Trim('"');
+            string firstOld = copySource.Substring(copySource.LastIndexOf('/') + 1).Split('.')[0], firstNew = copy.Substring(copy.LastIndexOf('/') + 1).Split('.')[0];
+            var words = oldName.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            int at = words.FindIndex(w => string.Equals(w, firstOld, StringComparison.OrdinalIgnoreCase));
+            if (at < 0) { MessageText.Text = "이름 " + oldName + "에 파일 이름 낱말 " + firstOld + "이 없어 사본 이름으로 바꿀 수 없다"; return false; }
+            words[at] = firstNew;
+            string newName = string.Join(" ", words);
+            return Run(() =>
+            {
+                var added = session.AddFileCopy(unit.Unit, copySource, copy);
+                var found = session.Items.Find(newName);
+                if (found.Files.Count != 1 || found.Files[0] != copy) { session.RemoveEdit(added); throw new ArgumentException(newName + "이 사본 하나로 풀리지 않는다"); }
+                try { session.AddEdit(unit, row.Values[0], "\"" + newName + "\"", Scope); }
+                catch { session.RemoveEdit(added); throw; }
+            });
+        }
+
+        // 시나리오(addline)와 단추가 같이 쓴다
+        public bool PressAddLine(string line = null)
+        {
+            if (lineBox == null) return false;
+            if (line != null) lineBox.Text = line;
+            return Run(() => session.AddLineEdit(unit.Unit, lineFile, lineBlock.Path, lineBlock.Occurrence, lineBox.Text.Trim()));
         }
 
         // 시나리오(copyblock)와 단추가 같이 쓴다

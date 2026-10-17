@@ -55,6 +55,71 @@ namespace CtaToybox.Core
         string checkedFile, checkedText;
         TextKind checkedKind;
 
+        // 값이 든 파일에서 그 값을 감싼 블록(줄 더하기 창). 못 찾으면 null
+        public BlockSpan BlockOfValue(ValueView value)
+        {
+            var t = value.Trace;
+            if (t == null || t.File == null || t.Arg < 0) return null;
+            var found = Stack.Find(t.File);
+            if (found == null || LuaTable.IsLua(found.VirtualPath)) return null;
+            TextKind kind;
+            string text = BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
+            string error;
+            var rows = SourceRows.Of(found.VirtualPath, text, out error);
+            var row = rows == null ? null : rows.FirstOrDefault(r => r.Occurrence == t.Occurrence && string.Equals(r.Path, t.KeyPath, StringComparison.OrdinalIgnoreCase));
+            if (row == null || t.Arg >= row.Leaves.Count) return null;
+            // 값이 든 줄 자신의 { }(예 {item "x" 5})가 아니라 그 줄을 감싼 블록(inventory)에 넣는다
+            string own = row.Path.Substring(row.Path.LastIndexOf('/') + 1);
+            var around = AddLine.Blocks(text).Where(b => b.Open < row.Leaves[t.Arg].Index && row.Leaves[t.Arg].Index < b.Close).OrderByDescending(b => b.Open).ToList();
+            if (around.Count > 0 && around[0].Path.Substring(around[0].Path.LastIndexOf('/') + 1) == own) around.RemoveAt(0);
+            return around.FirstOrDefault();
+        }
+
+        // 파일에서 그 경로의 첫 블록(고칠 값이 없는 줄, 예: 매크로로 채운 perks). 없으면 null
+        public BlockSpan BlockInFile(string file, string blockPath)
+        {
+            var found = Stack.Find(file ?? "");
+            if (found == null || LuaTable.IsLua(found.VirtualPath)) return null;
+            TextKind kind;
+            return AddLine.Find(BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath)), blockPath, 0);
+        }
+
+        // 블록 끝에 줄 하나를 더한다(팩션 강화). 같은 파일·블록·줄이 이미 있으면 그 수정을 돌려준다. 안 되면 ArgumentException
+        public Edit AddLineEdit(string unit, string file, string blockPath, int occurrence, string line)
+        {
+            NeedProject();
+            string bad = AddLine.CheckLine(line);
+            if (bad != null) throw new ArgumentException(bad);
+            var found = Stack.Find(file);
+            if (found == null) throw new ArgumentException("원본에 이 파일이 없다: " + file);
+            if (LuaTable.IsLua(found.VirtualPath)) throw new ArgumentException("Lua 파일에는 줄을 더하지 않는다");
+            TextKind kind;
+            string text = BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
+            if (AddLine.Find(text, blockPath, occurrence) == null) throw new ArgumentException("원본에 이 블록이 없다: " + blockPath);
+            if (!TextCodec.CanEncode(line, kind)) throw new ArgumentException("넣을 줄에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다");
+            var same = Project.Edits.FirstOrDefault(x => x.Kind == AddLine.Kind && SourceStack.ToVirtual(x.File ?? "") == found.VirtualPath && string.Equals(x.Path, blockPath, StringComparison.OrdinalIgnoreCase) && x.Occurrence == occurrence && x.New == line);
+            if (same != null) return same;
+            var edit = AddLine.New(unit, found.VirtualPath, blockPath, occurrence, line);
+            Project.Edits.Add(edit);
+            SaveOr(() => Project.Edits.Remove(edit));
+            return edit;
+        }
+
+        // 파일 사본을 더한다(팩션 강화). target이 null이면 FileCopy.NameFor(source, suffix). 안 되면 ArgumentException
+        public Edit AddFileCopy(string unit, string source, string target)
+        {
+            NeedProject();
+            string bad = FileCopy.CheckTarget(Stack, source, target);
+            if (bad != null) throw new ArgumentException(bad);
+            if (Project.Edits.Any(x => x.Kind == FileCopy.Kind && SourceStack.ToVirtual(x.New ?? "") == SourceStack.ToVirtual(target)))
+                throw new ArgumentException("같은 사본이 이미 있다: " + target);
+            var edit = FileCopy.New(unit, source, target);
+            Project.Edits.Add(edit);
+            SaveOr(() => Project.Edits.Remove(edit));
+            RefreshOverlay();
+            return edit;
+        }
+
         // 게임 설정 파일의 따옴표 이름 블록을 새 이름으로 복제한다(E18). nameValue는 블록 이름 줄의 값(UnitTracer.BlockNameNote). 안 되면 ArgumentException
         public Edit AddBlockCopy(UnitView unit, ValueView nameValue, string newName)
         {
@@ -219,6 +284,21 @@ namespace CtaToybox.Core
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
             var source = SourceOf(file, parsed);
+            // 파일 사본(팩션 강화): 원본이 있고 사본 경로가 비어 있으면 적용된다
+            if (e.Kind == FileCopy.Kind)
+            {
+                string bad = FileCopy.CheckTarget(Stack, e.File, e.New);
+                return new EditCheck { Edit = e, Status = bad == null ? EditStatus.Applied : Stack.FindReal(file) == null ? EditStatus.TargetMissing : EditStatus.Invalid, Message = bad };
+            }
+            // 줄 더하기(팩션 강화): 줄이 맞고 블록이 원본에 있으면 적용된다
+            if (e.Kind == AddLine.Kind)
+            {
+                string bad = AddLine.CheckLine(e.New);
+                if (bad != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Message = bad };
+                if (source.Text == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
+                if (AddLine.Find(source.Text, e.Path, e.Occurrence) == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 블록이 없다: " + e.Path };
+                return new EditCheck { Edit = e, Status = EditStatus.Applied, RowText = e.New };
+            }
             // 블록 복제(E18): 빌드와 같이 원본에 넣어 본 결과가 그 수정의 점검 결과다
             if (e.Kind == BlockCopy.Kind)
             {

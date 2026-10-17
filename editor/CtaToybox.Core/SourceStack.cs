@@ -34,7 +34,18 @@ namespace CtaToybox.Core
         public SourceStack(IEnumerable<SourceLayer> layersInLoadOrder) { layers = layersInLoadOrder.ToList(); }
 
         public IReadOnlyList<SourceLayer> Layers { get { return layers; } }
-        public IEnumerable<string> Paths { get { return index.Keys; } }
+        public IEnumerable<string> Paths { get { return copies.Count == 0 ? index.Keys : index.Keys.Concat(copies.Keys.Where(k => !index.ContainsKey(k))); } }
+
+        // 프로젝트의 파일 사본(FileCopy): 사본 경로 → 원본 경로. 사본 경로에 실제 파일이 없으면 Find가 원본을 사본 경로로 돌려준다
+        readonly Dictionary<string, string> copies = new Dictionary<string, string>(StringComparer.Ordinal);
+
+        public void SetCopies(IEnumerable<KeyValuePair<string, string>> targetToSource)
+        {
+            copies.Clear();
+            foreach (var kv in targetToSource ?? Enumerable.Empty<KeyValuePair<string, string>>()) copies[ToVirtual(kv.Key)] = ToVirtual(kv.Value);
+        }
+
+        public bool IsCopy(string virtualPath) { string v = ToVirtual(virtualPath); return copies.ContainsKey(v) && !index.ContainsKey(v); }
 
         public static string ToVirtual(string path)
         {
@@ -90,7 +101,25 @@ namespace CtaToybox.Core
         public IReadOnlyList<SourceFile> Versions(string virtualPath)
         {
             List<SourceFile> list;
-            return index.TryGetValue(ToVirtual(virtualPath), out list) ? list : None;
+            string v = ToVirtual(virtualPath);
+            if (index.TryGetValue(v, out list)) return list;
+            var copy = CopyOf(v);
+            return copy == null ? None : new[] { copy };
+        }
+
+        // 사본을 빼고 실제 계층에 있는 파일만
+        public SourceFile FindReal(string virtualPath)
+        {
+            List<SourceFile> list;
+            return index.TryGetValue(ToVirtual(virtualPath), out list) && list.Count > 0 ? list[list.Count - 1] : null;
+        }
+
+        SourceFile CopyOf(string target)
+        {
+            string source;
+            if (!copies.TryGetValue(target, out source)) return null;
+            var real = FindReal(source);
+            return real == null ? null : new SourceFile { VirtualPath = target, Layer = real.Layer, Container = real.Container, Entry = real.Entry };
         }
 
         public SourceFile Find(string virtualPath)
