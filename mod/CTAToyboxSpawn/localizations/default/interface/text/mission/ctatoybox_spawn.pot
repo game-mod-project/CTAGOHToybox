@@ -1,65 +1,65 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: CTAToybox Spawn\n"
-"Language: en\n"
+"Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 msgctxt "mission/ctatoybox_spawn/air_l"
-msgid "Air strike (large)"
+msgid "항공 폭격(대)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/air_m"
-msgid "Air strike (medium)"
+msgid "항공 폭격(중)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/air_s"
-msgid "Air strike (small)"
+msgid "항공 폭격(소)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/aircraft"
-msgid "Aircraft"
+msgid "항공기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/arty_l"
-msgid "Artillery (large)"
+msgid "포격(대)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/arty_m"
-msgid "Artillery (medium)"
+msgid "포격(중)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/arty_s"
-msgid "Artillery (small)"
+msgid "포격(소)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/back"
-msgid "Back"
+msgid "뒤로"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/cat_heavy"
-msgid "Heavy tanks"
+msgid "중전차"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/cat_light"
-msgid "Light tanks"
+msgid "경전차"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/cat_medium"
-msgid "Medium tanks"
+msgid "중형 전차"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/cat_td"
-msgid "Tank destroyers / SPG"
+msgid "구축전차 / 자주포"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/del_air"
-msgid "Delete all spawned aircraft"
+msgid "소환한 항공기 모두 지우기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/del_one"
-msgid "Delete unit (pick)"
+msgid "유닛 지우기(골라서)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/family_a"
@@ -999,293 +999,293 @@ msgid "zut"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/god_off"
-msgid "God mode off"
+msgid "무적 끄기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/god_on"
-msgid "God mode on"
+msgid "무적 켜기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/guns"
-msgid "Guns"
+msgid "포"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/home"
-msgid "Home"
+msgid "처음으로"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/infantry"
-msgid "Infantry"
+msgid "보병"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/maxvet_off"
-msgid "Spawn at max veterancy off"
+msgid "최고 베테랑으로 소환 끄기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/maxvet_on"
-msgid "Spawn at max veterancy on"
+msgid "최고 베테랑으로 소환 켜기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_eng"
-msgid "Britain"
+msgid "영국"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_fin"
-msgid "Finland"
+msgid "핀란드"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_ger"
-msgid "Germany"
+msgid "독일"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_is_eng"
-msgid "Nation: Britain"
+msgid "국가: 영국"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_is_fin"
-msgid "Nation: Finland"
+msgid "국가: 핀란드"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_is_ger"
-msgid "Nation: Germany"
+msgid "국가: 독일"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_is_jap"
-msgid "Nation: Japan"
+msgid "국가: 일본"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_is_rus"
-msgid "Nation: Soviet Union"
+msgid "국가: 소련"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_is_usa"
-msgid "Nation: United States"
+msgid "국가: 미국"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_jap"
-msgid "Japan"
+msgid "일본"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_rus"
-msgid "Soviet Union"
+msgid "소련"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_usa"
-msgid "United States"
+msgid "미국"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/next"
-msgid "Next"
+msgid "다음"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_0"
-msgid "Auto assign"
+msgid "자동 배정"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_1"
-msgid "Player 0"
+msgid "플레이어 0"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_10"
-msgid "Player 9"
+msgid "플레이어 9"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_2"
-msgid "Player 1"
+msgid "플레이어 1"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_3"
-msgid "Player 2"
+msgid "플레이어 2"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_4"
-msgid "Player 3"
+msgid "플레이어 3"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_5"
-msgid "Player 4"
+msgid "플레이어 4"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_6"
-msgid "Player 5"
+msgid "플레이어 5"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_7"
-msgid "Player 6"
+msgid "플레이어 6"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_8"
-msgid "Player 7"
+msgid "플레이어 7"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_9"
-msgid "Player 8"
+msgid "플레이어 8"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_ally"
-msgid "Ally AI"
+msgid "아군 AI"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_enemy"
-msgid "Enemy AI"
+msgid "적 AI"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_0"
-msgid "Owner: Auto assign"
+msgid "소속: 자동 배정"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_1"
-msgid "Owner: Player 0"
+msgid "소속: 플레이어 0"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_10"
-msgid "Owner: Player 9"
+msgid "소속: 플레이어 9"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_2"
-msgid "Owner: Player 1"
+msgid "소속: 플레이어 1"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_3"
-msgid "Owner: Player 2"
+msgid "소속: 플레이어 2"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_4"
-msgid "Owner: Player 3"
+msgid "소속: 플레이어 3"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_5"
-msgid "Owner: Player 4"
+msgid "소속: 플레이어 4"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_6"
-msgid "Owner: Player 5"
+msgid "소속: 플레이어 5"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_7"
-msgid "Owner: Player 6"
+msgid "소속: 플레이어 6"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_8"
-msgid "Owner: Player 7"
+msgid "소속: 플레이어 7"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_9"
-msgid "Owner: Player 8"
+msgid "소속: 플레이어 8"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_ally"
-msgid "Owner: Ally AI"
+msgid "소속: 아군 AI"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_enemy"
-msgid "Owner: Enemy AI"
+msgid "소속: 적 AI"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_is_me"
-msgid "Owner: Me"
+msgid "소속: 나"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_me"
-msgid "Me"
+msgid "나"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_1"
-msgid "Player 0 (you)"
+msgid "플레이어 0 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_10"
-msgid "Player 9 (you)"
+msgid "플레이어 9 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_2"
-msgid "Player 1 (you)"
+msgid "플레이어 1 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_3"
-msgid "Player 2 (you)"
+msgid "플레이어 2 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_4"
-msgid "Player 3 (you)"
+msgid "플레이어 3 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_5"
-msgid "Player 4 (you)"
+msgid "플레이어 4 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_6"
-msgid "Player 5 (you)"
+msgid "플레이어 5 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_7"
-msgid "Player 6 (you)"
+msgid "플레이어 6 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_8"
-msgid "Player 7 (you)"
+msgid "플레이어 7 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_you_9"
-msgid "Player 8 (you)"
+msgid "플레이어 8 (나)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/period_early"
-msgid "Early"
+msgid "초기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/period_late"
-msgid "Late"
+msgid "후기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/period_mid"
-msgid "Mid"
+msgid "중기"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/points"
-msgid "Reinforcement points +1000"
+msgid "증원 점수 +1000"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/prev"
-msgid "Previous"
+msgid "이전"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/single"
-msgid "Single soldiers"
+msgid "병사 한 명씩"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/spawn"
-msgid "Spawn"
+msgid "소환"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/squads"
-msgid "Squads"
+msgid "분대"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/support"
-msgid "Support"
+msgid "지원"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/tanks"
-msgid "Tanks"
+msgid "전차"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/tools"
-msgid "Tools"
+msgid "도구"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/vehicles"
-msgid "Vehicles"
+msgid "차량"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/vet_all"
-msgid "Max veterancy (all mine)"
+msgid "최고 베테랑(내 병사 전부)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/vet_one"
-msgid "Max veterancy (my soldiers around point)"
+msgid "최고 베테랑(지점 주변 내 병사)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/wrecks"
-msgid "Clear wrecks"
+msgid "잔해 치우기"
 msgstr ""
