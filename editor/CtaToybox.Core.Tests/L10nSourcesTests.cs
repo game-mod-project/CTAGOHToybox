@@ -41,5 +41,21 @@ static class L10nSourcesTests
         T.Eq(new[] { "vanilla" }, tips.Shadowed.ToArray(), "shadowed layers listed");
         T.Eq("modb", got.Single(x => x.Path.EndsWith("b.pot")).Layer, "loose files read");
         T.Eq(0, warnings.Count, "no warnings");
+
+        // 스폰 모드는 게임이 읽는 한국어 .pot 대신 영어 원문(.ctatoybox-spawn-text.pot)을 원문으로 쓴다(S2)
+        string spawn = Path.Combine(s.GameDir, "mods", "spawnmod");
+        Directory.CreateDirectory(Path.Combine(spawn, "resource"));
+        string spawnPot = "msgid \"\"\nmsgstr \"\"\n\nmsgctxt \"mission/ctatoybox_spawn/tanks\"\nmsgid \"Tanks\"\nmsgstr \"\"\n";
+        T.PutUtf8(spawn, "localizations/default/interface/text/mission/ctatoybox_spawn.pot", spawnPot.Replace("\"Tanks\"", "\"전차\""));
+        string options = s.OptionsSetPath;
+        File.WriteAllText(options, "{options {mods \"moda:0\" \"modb:0\" \"" + Path.GetFileName(outDir) + ":0\" \"spawnmod:0\"}}");
+        s.SpawnModDir = spawn;
+        plan = GameProfile.PlanLayers(s, GameProfile.ReadModEntries(File.ReadAllText(options)));
+        var withSpawn = L10nSources.Collect(s, plan, null).Single(x => x.Path == "interface/text/mission/ctatoybox_spawn.pot");
+        T.True(withSpawn.Text.Contains("전차"), "an old spawn mod without the source file is read as before");
+        T.PutUtf8(spawn, CtaToybox.Core.Spawn.SpawnGenerator.SourcePotPath, spawnPot);
+        withSpawn = L10nSources.Collect(s, plan, null).Single(x => x.Path == "interface/text/mission/ctatoybox_spawn.pot");
+        T.True(withSpawn.Text.Contains("msgid \"Tanks\"") && !withSpawn.Text.Contains("전차"), "the spawn mod's English source wins over its Korean pot");
+        T.Eq("spawnmod", withSpawn.Layer, "from the spawn layer");
     }
 }

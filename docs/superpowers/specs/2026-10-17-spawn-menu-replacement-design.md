@@ -204,3 +204,4 @@
 | 등급 최대(찍은 자리) = 가까운 내 병사 12명 | 미션 선택자에 반경 거르기가 없다 | |
 | 출력 모드 사본 ext(`tank__ctb_…ext`)를 원래 이름으로 보고 종류를 정한다 | 팩션 강화 뒤 출력 계층 차량 581개가 기타 탈것으로 잡혀 Fusion 전차 66종 등이 빠졌다 | 유닛 색인 형식 10 |
 | 모드 순서 MACE → Fusion(2026-10-18 사용자 지시로 AI가 options.set을 바꿈) | Fusion이 먼저면 MACE의 옛 `properties/armor.ext`·`unit_research_*.set`·컨퀘스트 로스터가 Fusion 판을 덮는다(`tank_heavy_tier3` 정의 없음 → `tog2` 충돌, 컨퀘스트 연구 목록에서 Fusion 유닛 빠짐) | 유닛 1,422, Fusion 차량 213종 모두 메뉴에 |
+| 메뉴 글자 한국어(백로그 S2) | 사용자 지적: 메뉴가 영어 | 번역 `l10n/ko/interface/text/mission/ctatoybox_spawn.po`(321항목, 차량 계열 이름 234개는 원문). 게임이 읽는 `.pot`은 한국어, 영어 원문은 `.ctatoybox-spawn-text.pot`(l10n extract의 원문). `--english`로 되돌림 |

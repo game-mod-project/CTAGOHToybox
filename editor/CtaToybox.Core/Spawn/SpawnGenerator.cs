@@ -1,5 +1,6 @@
 // 스폰 모드의 파일 목록을 만든다: 맵 사본, 메뉴(menu.mi, templates_<국가>.mi, nation_<국가>.mi), 메뉴 글자(.pot), 화면 파일.
-// 스커미시 로스터와 단추 그림은 --no-roster면 내지 않는다
+// 스커미시 로스터와 단추 그림은 --no-roster면 내지 않는다.
+// 메뉴 글자는 영어 원문(SourcePotPath, 게임은 읽지 않는다)과 게임이 읽는 .pot(PotPath)을 함께 낸다. Translation이 있으면 .pot의 msgid를 번역으로 바꾼다(l10n build와 같은 규칙)
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,12 +12,14 @@ namespace CtaToybox.Core.Spawn
     {
         public RosterOptions Roster { get; set; } = new RosterOptions();
         public MenuOptions Menu { get; set; } = new MenuOptions();
+        public L10n.PoFile Translation { get; set; }   // l10n/ko의 메뉴 글자 번역. null이면 영어 그대로
     }
 
     public sealed class SpawnReport
     {
         public int CampaignMaps, MultiMaps, Units, Squads, NewRosterEntries, Buttons, Screens, Templates;
         public int CampaignTemplateArmies;   // 캠페인 맵마다 넣은 견본 국가 수의 합
+        public int TextTranslated, TextEnglish;   // 메뉴 글자 가운데 번역한 것과 영어로 둔 것
         public List<string> Skipped { get; } = new List<string>();
         public List<string> Notes { get; } = new List<string>();
         public int Maps { get { return CampaignMaps + MultiMaps; } }
@@ -26,6 +29,9 @@ namespace CtaToybox.Core.Spawn
     {
         public const string MenuDir = "resource/map/ctatoybox_spawn/";
         public const string PotPath = "localizations/default/interface/text/mission/ctatoybox_spawn.pot";
+        public const string L10nPath = "interface/text/mission/ctatoybox_spawn.pot";   // 한글화 층의 경로(L10nSources, l10n/ko)
+        // 메뉴 글자 영어 원문. localizations 밖이라 게임은 읽지 않고, l10n extract가 스폰 모드의 원문으로 읽는다(.pot이 한국어가 되어도 원문이 남게)
+        public const string SourcePotPath = ".ctatoybox-spawn-text.pot";
 
         public static List<SpawnFile> Generate(SourceStack stack, UnitIndex index, ArmyIndex armies, SpawnCategories categories, SpawnOptions o, SpawnReport report)
         {
@@ -55,7 +61,14 @@ namespace CtaToybox.Core.Spawn
             // 맵이 부르는 국가 조각이 다 있게: 캠페인 폴더의 국가가 메뉴 국가 목록에 없으면 독일 값으로 둔다
             foreach (string army in new[] { "rus", "ger", "fin", "usa", "eng", "jap" }.Where(a => !list.Contains(a)))
                 files.Add(new SpawnFile { Path = MenuDir + "nation_" + army + ".mi", Bytes = Encoding.UTF8.GetBytes(MenuBuilder.NationFile(army, list)) });
-            files.Add(new SpawnFile { Path = PotPath, Bytes = Encoding.UTF8.GetBytes(MenuBuilder.Pot(menu)) });
+            string pot = MenuBuilder.Pot(menu);
+            files.Add(new SpawnFile { Path = SourcePotPath, Bytes = Encoding.UTF8.GetBytes(pot) });
+            string shown = pot;
+            if (o.Translation != null) shown = L10n.L10nBuilder.Translate(L10n.PoFile.Parse(pot), o.Translation, ref report.TextTranslated, ref report.TextEnglish).Replace("\r\n", "\n");
+            else report.TextEnglish = menu.Strings.Count;
+            files.Add(new SpawnFile { Path = PotPath, Bytes = Encoding.UTF8.GetBytes(shown) });
+            if (o.Translation != null && report.TextEnglish > 0)
+                report.Notes.Add("메뉴 글자 " + report.TextEnglish + "개는 영어로 둔다(번역이 비었거나 원문이 바뀌었다). l10n extract 다음 l10n/ko/interface/text/mission/ctatoybox_spawn.po를 채우고 다시 만든다");
 
             var view = stack.Find(SceneViewPatch.Path);
             if (view == null) report.Skipped.Add(SceneViewPatch.Path + ": 계층에 없다");

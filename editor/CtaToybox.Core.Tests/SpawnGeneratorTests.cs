@@ -36,6 +36,19 @@ static class SpawnGeneratorTests
             "resource/" + SpawnFixture.Campaign, "resource/" + SpawnFixture.Conquest, "resource/interface/layout/views/scene/scenegameview.xml" })
             T.True(paths.Contains(p), "generated: " + p);
         T.Eq(paths.Count, paths.Distinct().Count(), "each path once");
+        // 메뉴 글자: 영어 원문과 게임이 읽는 .pot. 번역이 없으면 둘이 같다(S2, 2026-10-18)
+        string SpawnText(List<SpawnFile> fs, string p) { return Encoding.UTF8.GetString(fs.Single(f => f.Path == p).Bytes); }
+        T.Eq(SpawnText(files, SpawnGenerator.SourcePotPath), SpawnText(files, SpawnGenerator.PotPath), "without a translation the menu words stay English");
+        T.True(report.TextEnglish > 0 && report.TextTranslated == 0, "all English counted");
+        var tr = CtaToybox.Core.L10n.PoFile.Parse("msgid \"\"\nmsgstr \"\"\n\nmsgctxt \"mission/ctatoybox_spawn/tanks\"\nmsgid \"Tanks\"\nmsgstr \"전차\"\n\nmsgctxt \"mission/ctatoybox_spawn/back\"\nmsgid \"Old back\"\nmsgstr \"뒤로\"\n");
+        var kr = new SpawnReport();
+        var korean = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { Translation = tr }, kr);
+        string shown = SpawnText(korean, SpawnGenerator.PotPath), source = SpawnText(korean, SpawnGenerator.SourcePotPath);
+        T.True(shown.Contains("msgctxt \"mission/ctatoybox_spawn/tanks\"\nmsgid \"전차\"") && shown.Contains("Language: ko"), "translated msgid in the game's pot: " + shown.Substring(0, 300));
+        T.True(shown.Contains("msgctxt \"mission/ctatoybox_spawn/back\"\nmsgid \"Back\""), "a translation of a changed source stays English");
+        T.True(source.Contains("msgid \"Tanks\"") && !source.Contains("전차"), "the source keeps English");
+        T.True(kr.TextTranslated == 1 && kr.TextEnglish == report.TextEnglish - 1 && kr.Notes.Any(n => n.Contains("영어로 둔다")), "counts and a note");
+        T.True(!shown.Contains("\r"), "LF like l10n build");
         T.True(report.Maps == 2 && report.Units > 0 && report.Squads == 1 && report.NewRosterEntries == 0 && report.Buttons > 10, "report counts");
         // 구매 창 로스터는 기본으로 바꾸고(비용 0 등) 차량은 더하지 않는다(2026-10-18 사용자 결정)
         T.True(paths.Contains("resource/" + SpawnFixture.UnitsGer), "roster rewritten by default");
