@@ -15,6 +15,9 @@ namespace CtaToybox.Core.Spawn
         public L10n.PoFile Translation { get; set; }   // l10n/ko의 메뉴 글자 번역. null이면 영어 그대로
         // 국가별 모드로 나눈다(2026-10-18 사용자 요청): 멀티 맵 견본은 국가 모드(NationFiles)에, 바탕 모드에는 빈 조각. false면 예전처럼 한 모드에 모두
         public bool NationMods { get; set; } = true;
+        // 캠페인 맵 견본을 바탕 모드(campaign_templates_<국가>.mi)에 둔다. 기본 false: 캠페인 맵도 국가 모드 파일을 읽어
+        // "맵에 나오는 국가 ∩ 켠 국가 모드"만 로딩한다(2026-10-19 사용자 결정). true면 캠페인은 국가 모드와 상관없이 맵에 나오는 국가 모두
+        public bool CampaignInBase { get; set; }
         public Func<string, string> UnitName { get; set; }   // 유닛 정의 경로 → 게임 속 이름(영어). 계열 묶음 단추 글자. null이면 폴더 앞말
     }
 
@@ -69,7 +72,7 @@ namespace CtaToybox.Core.Spawn
             }
 
             var list = MenuBuilder.Armies(cat);
-            files.AddRange(MapPatch.Build(stack, report.Skipped, list, o.Menu.AllNations, o.NationMods, out report.CampaignMaps, out report.MultiMaps, out report.CampaignTemplateArmies));
+            files.AddRange(MapPatch.Build(stack, report.Skipped, list, o.Menu.AllNations, o.NationMods && o.CampaignInBase, out report.CampaignMaps, out report.MultiMaps, out report.CampaignTemplateArmies));
 
             const string iconDir = "interface/scene/unit_icon/";
             var icons = stack.Paths.Where(p => p.StartsWith(iconDir, StringComparison.Ordinal) && p.EndsWith("_00.tga", StringComparison.Ordinal) && p.IndexOf('/', iconDir.Length) < 0)
@@ -84,7 +87,7 @@ namespace CtaToybox.Core.Spawn
                 byte[] real = Encoding.UTF8.GetBytes(kv.Value);
                 if (!o.NationMods) { files.Add(new SpawnFile { Path = NationTemplatePath(kv.Key), Bytes = real }); continue; }
                 files.Add(new SpawnFile { Path = NationTemplatePath(kv.Key), Bytes = Encoding.UTF8.GetBytes(EmptyTemplate(kv.Key)) });
-                files.Add(new SpawnFile { Path = MenuDir + MapPatch.CampaignTemplateFile(kv.Key), Bytes = real });
+                if (o.CampaignInBase) files.Add(new SpawnFile { Path = MenuDir + MapPatch.CampaignTemplateFile(kv.Key), Bytes = real });
                 nationFiles[kv.Key] = new List<SpawnFile> { new SpawnFile { Path = NationTemplatePath(kv.Key), Bytes = real } };
             }
             files.Add(new SpawnFile { Path = MenuDir + MapPatch.ConquestFile, Bytes = Encoding.UTF8.GetBytes(MenuBuilder.ConquestFile()) });
