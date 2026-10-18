@@ -13,6 +13,10 @@ static class UnitFilterTests
         T.Eq(new[] { "tank", "cannon", "car", "vehicle-other", "breed", "stuff", "settings" }, UnitKind.Editor, "editor kinds");
         T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/armor.ext", "properties/tank.ext", "properties/vehicle.ext" }), "a tank reads tank.ext");
         T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/tank_assaultgun.ext" }), "an assault gun is a tank");
+        // 출력 모드의 유닛별 사본(IncludeChain 이름)은 원본 이름으로 본다(2026-10-18: 팩션 강화 뒤 전차 581개가 기타 탈것으로 잡혔다)
+        T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { "properties/tank__ctb_a20_cb4dc242.ext", "properties/tank_crew.ext" }), "a per-unit copy of tank.ext is still a tank");
+        T.Eq("tank", UnitKind.EditorKindOf("vehicle", new[] { IncludeChain.CopyName("properties/tank.ext", "entity/-vehicle/+ussr/tank_light/a20/a20.def") }), "the copy name IncludeChain makes keeps the kind");
+        T.Eq("vehicle-other", UnitKind.EditorKindOf("vehicle", new[] { "properties/airborne__ctb_x_12345678.ext" }), "a copy of another ext keeps its own kind");
         T.Eq("cannon", UnitKind.EditorKindOf("vehicle", new[] { "properties/cannon_crew.ext", "properties/cannon.ext", "properties/tank_crew.ext" }), "cannon rules come before tank rules");
         T.Eq("car", UnitKind.EditorKindOf("vehicle", new[] { "properties/halftrack.ext" }), "a halftrack is a car");
         T.Eq("vehicle-other", UnitKind.EditorKindOf("vehicle", new[] { "properties/airborne.ext" }), "an aircraft is another vehicle");
