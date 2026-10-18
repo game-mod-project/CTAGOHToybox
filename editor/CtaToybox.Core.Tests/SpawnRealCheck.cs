@@ -49,14 +49,14 @@ static class SpawnRealCheck
         int campaign, multi;
         var menuArmies = MenuBuilder.Armies(cat);
         int campaignArmies;
-        var maps = MapPatch.Build(stack, mapSkipped, menuArmies, false, out campaign, out multi, out campaignArmies);
+        var maps = MapPatch.Build(stack, mapSkipped, menuArmies, false, true, out campaign, out multi, out campaignArmies);
         int differ = 0;
         foreach (var f in maps)
         {
             string v = f.Path.Substring("resource/".Length);
             string orig = System.Text.Encoding.Latin1.GetString(stack.Read(stack.Find(v)));
             string back = System.Text.Encoding.Latin1.GetString(f.Bytes);
-            foreach (string line in new[] { MapPatch.MenuInclude, MapPatch.NationInclude(MapPatch.NationOf(v) ?? "x") }.Concat(menuArmies.Select(MapPatch.TemplateInclude)))
+            foreach (string line in new[] { MapPatch.MenuInclude, MapPatch.ConquestInclude, MapPatch.NationInclude(MapPatch.NationOf(v) ?? "x") }.Concat(menuArmies.Select(MapPatch.TemplateInclude)).Concat(menuArmies.Select(a => MapPatch.TemplateInclude(a, true))))
                 foreach (string nl in new[] { "\r\n", "\n" }) back = back.Replace("\t" + line + nl, "");
             if (back != orig && back.Replace("\n", "") != orig.Replace("\n", "")) { differ++; if (differ <= 3) Console.WriteLine("  spawn map differs: " + v); }
         }
@@ -68,11 +68,14 @@ static class SpawnRealCheck
 
         // 메뉴
         var menuSkipped = new List<string>();
-        var menu = MenuBuilder.Build(cat, new MenuOptions(), n => stack.Find("interface/scene/unit_icon/" + n + "_00.tga") != null, b => stack.Find(SpawnCatalog.BreedFile(b)) != null, menuSkipped);
+        var menu = MenuBuilder.Build(cat, new MenuOptions(), n => stack.Find("interface/scene/unit_icon/" + n + "_00.tga") != null, b => stack.Find(SpawnCatalog.BreedFile(b)) != null, menuSkipped,
+            stack.Paths.Where(x => x.StartsWith("interface/scene/unit_icon/") && x.EndsWith("_00.tga")).Select(x => x.Substring(26, x.Length - 33)));
         var menuParse = SdlCore.Parse(menu.Text);
         var pairs = SpawnMenuTests.Pairs(menu.Text);
         T.True(campaignArmies < campaign * menuArmies.Count, "campaign maps get fewer template nations than all");
         foreach (var kv in menu.TemplateFiles) T.Eq(0, SdlCore.Parse(kv.Value).Errors.Count, "the real template file parses: " + kv.Key);
+        var images = menu.Screens.SelectMany(sc => sc.Buttons).Select(b => b.Image).ToList();
+        Console.WriteLine("spawn-icons distinct=" + images.Distinct().Count() + " back=" + images.Count(i => i == "back") + " button_N=" + images.Count(i => i.StartsWith("button_")) + " squad-buttons-with-squad-icon=" + menu.Screens.SelectMany(sc => sc.Buttons).Count(b => b.Text.StartsWith("desc/squad/") && !b.Image.StartsWith("button_")) + "/" + menu.Screens.SelectMany(sc => sc.Buttons).Count(b => b.Text.StartsWith("desc/squad/")));
         Console.WriteLine("spawn-templates " + string.Join(" ", menu.TemplateFiles.Select(kv => kv.Key + "=" + System.Text.RegularExpressions.Regex.Matches(kv.Value, "\\{Human ").Count)));
         int maxId = System.Text.RegularExpressions.Regex.Matches(string.Concat(menu.TemplateFiles.Values), " 0x([0-9a-f]+)\\r\\n").Select(m => Convert.ToInt32(m.Groups[1].Value, 16)).DefaultIfEmpty(0).Max();
         Console.WriteLine("spawn-menu bytes=" + menu.Text.Length + " screens=" + menu.Screens.Count + " buttons=" + menu.Screens.Sum(s => s.Buttons.Count) + " templates=" + menu.Templates + " triggers=" + menu.Triggers + " skipped=" + menuSkipped.Count + " max-id=0x" + maxId.ToString("x") + " max-buttons=" + menu.Screens.Max(s => s.Buttons.Count));

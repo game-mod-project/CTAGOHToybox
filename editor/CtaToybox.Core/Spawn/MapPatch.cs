@@ -12,9 +12,16 @@ namespace CtaToybox.Core.Spawn
     public static class MapPatch
     {
         public const string MenuInclude = "(include \"/map/ctatoybox_spawn/menu.mi\")";
+        // 컨퀘스트 맵(dcg_vars.inc를 include)에만 넣는 내 번호 추정 조각(MenuBuilder.ConquestFile)
+        public const string ConquestFile = "conquest_me.mi";
+        public const string ConquestInclude = "(include \"/map/ctatoybox_spawn/" + ConquestFile + "\")";
         public static string NationInclude(string nation) { return "(include \"/map/ctatoybox_spawn/nation_" + nation + ".mi\")"; }
+        // 멀티 맵이 읽는 견본 파일. 국가 모드로 나누면 바탕 모드에는 빈 조각, 국가 모드에 진짜 견본이 있다(2026-10-18 국가별 모드 설계)
         public static string TemplateFile(string army) { return "templates_" + army + ".mi"; }
-        public static string TemplateInclude(string army) { return "(include \"/map/ctatoybox_spawn/" + TemplateFile(army) + "\")"; }
+        // 캠페인 맵이 읽는 견본 파일. 나눌 때도 바탕 모드에 진짜 견본으로 있다(캠페인은 국가 모드와 상관없다)
+        public static string CampaignTemplateFile(string army) { return "campaign_templates_" + army + ".mi"; }
+        public static string TemplateInclude(string army) { return TemplateInclude(army, false); }
+        public static string TemplateInclude(string army, bool campaign) { return "(include \"/map/ctatoybox_spawn/" + (campaign ? CampaignTemplateFile(army) : TemplateFile(army)) + "\")"; }
         static readonly Regex MapArmy = new Regex("\"mp/([a-z]+)/", RegexOptions.CultureInvariant);
 
         // 캠페인 맵에 나오는 국가: 맵 글의 병종 경로 "mp/<국가>/…"와 캠페인 폴더의 국가. 견본 국가 목록(armies)에 있는 것만, 그 순서로
@@ -50,7 +57,10 @@ namespace CtaToybox.Core.Spawn
         public static byte[] Patch(byte[] original, string nation, out string error) { return Patch(original, nation, null, out error); }
 
         // 넣는 줄: nation_<국가>.mi(캠페인), templates_<국가>.mi(견본 국가마다), menu.mi 순서
-        public static byte[] Patch(byte[] original, string nation, IEnumerable<string> templateArmies, out string error)
+        public static byte[] Patch(byte[] original, string nation, IEnumerable<string> templateArmies, out string error) { return Patch(original, nation, templateArmies, false, out error); }
+
+        // campaignTemplates: 견본 줄을 campaign_templates_<국가>.mi로 넣는다
+        public static byte[] Patch(byte[] original, string nation, IEnumerable<string> templateArmies, bool campaignTemplates, out string error)
         {
             error = null;
             string text = Latin1.GetString(original);
@@ -65,7 +75,8 @@ namespace CtaToybox.Core.Spawn
             string nl = text.Contains("\r\n") ? "\r\n" : "\n";
             var lines = new List<string>();
             if (nation != null) lines.Add(NationInclude(nation));
-            if (templateArmies != null) lines.AddRange(templateArmies.Select(TemplateInclude));
+            if (templateArmies != null) lines.AddRange(templateArmies.Select(a => TemplateInclude(a, campaignTemplates)));
+            if (text.IndexOf("dcg_vars.inc", StringComparison.OrdinalIgnoreCase) >= 0) lines.Add(ConquestInclude);
             lines.Add(MenuInclude);
             int lineStart = text.LastIndexOf('\n', close - 1) + 1;
             bool onlySpace = text.Substring(lineStart, close - lineStart).All(ch => ch == ' ' || ch == '\t');
@@ -99,6 +110,12 @@ namespace CtaToybox.Core.Spawn
         // 캠페인 맵은 allNations가 아니면 그 맵에 나오는 국가만(못 찾으면 모두). campaignArmies는 캠페인 맵마다 넣은 국가 수의 합
         public static List<SpawnFile> Build(SourceStack stack, List<string> skipped, IList<string> armies, bool allNations, out int campaign, out int multi, out int campaignArmies)
         {
+            return Build(stack, skipped, armies, allNations, false, out campaign, out multi, out campaignArmies);
+        }
+
+        // campaignFiles: 캠페인 맵은 campaign_templates_<국가>.mi를 읽는다(국가 모드로 나눌 때)
+        public static List<SpawnFile> Build(SourceStack stack, List<string> skipped, IList<string> armies, bool allNations, bool campaignFiles, out int campaign, out int multi, out int campaignArmies)
+        {
             var files = new List<SpawnFile>();
             campaign = 0; multi = 0; campaignArmies = 0;
             foreach (string path in stack.Paths.Where(IsMap).OrderBy(p => p, StringComparer.Ordinal))
@@ -114,7 +131,7 @@ namespace CtaToybox.Core.Spawn
                     if (inMap.Count > 0) use = inMap;
                 }
                 string error;
-                var bytes = Patch(original, nation, use, out error);
+                var bytes = Patch(original, nation, use, single && campaignFiles, out error);
                 if (bytes == null) { skipped.Add(path + " (" + src.Layer + "): " + error); continue; }
                 files.Add(new SpawnFile { Path = "resource/" + path, Bytes = bytes, Source = src.Layer });
                 if (single) { campaign++; campaignArmies += use?.Count ?? 0; } else multi++;

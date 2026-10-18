@@ -49,6 +49,20 @@ static class SpawnGeneratorTests
         T.True(source.Contains("msgid \"Tanks\"") && !source.Contains("전차"), "the source keeps English");
         T.True(kr.TextTranslated == 1 && kr.TextEnglish == report.TextEnglish - 1 && kr.Notes.Any(n => n.Contains("영어로 둔다")), "counts and a note");
         T.True(!shown.Contains("\r"), "LF like l10n build");
+
+        // 국가별 모드(2026-10-18): 바탕 모드의 멀티 견본은 빈 조각, 진짜 견본은 국가 모드와 캠페인 파일에
+        Dictionary<string, List<SpawnFile>> nations;
+        var split = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions(), new SpawnReport(), out nations);
+        string coreGer = SpawnText(split, SpawnGenerator.NationTemplatePath("ger"));
+        T.True(!coreGer.Contains("{Human ") && coreGer.StartsWith(";{mission"), "the base mod's multiplayer template file is an empty fragment");
+        T.True(SpawnText(split, "resource/map/ctatoybox_spawn/campaign_templates_ger.mi").Contains("{Human "), "campaign templates stay real in the base mod");
+        T.True(nations.ContainsKey("ger") && nations["ger"].Count == 1 && nations["ger"][0].Path == SpawnGenerator.NationTemplatePath("ger") && Encoding.UTF8.GetString(nations["ger"][0].Bytes).Contains("{Human "), "the nation mod holds the real file at the same path");
+        string splitCampaign = SpawnText(split, "resource/" + SpawnFixture.Campaign);
+        T.True(splitCampaign.Contains("campaign_templates_ger.mi") && !splitCampaign.Contains("\"/map/ctatoybox_spawn/templates_ger.mi\""), "campaign maps read the campaign templates");
+        T.True(SpawnText(split, "resource/" + SpawnFixture.Conquest).Contains("\"/map/ctatoybox_spawn/templates_ger.mi\""), "multiplayer maps read the nation-mod path");
+        T.True(split.Any(f => f.Path == "resource/map/ctatoybox_spawn/conquest_me.mi"), "conquest guess file written");
+        var single = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { NationMods = false }, new SpawnReport(), out nations);
+        T.True(nations.Count == 0 && SpawnText(single, SpawnGenerator.NationTemplatePath("ger")).Contains("{Human ") && !single.Any(f => f.Path.Contains("campaign_templates_")), "--single-mod keeps everything in one mod");
         T.True(report.Maps == 2 && report.Units > 0 && report.Squads == 1 && report.NewRosterEntries == 0 && report.Buttons > 10, "report counts");
         // 구매 창 로스터는 기본으로 바꾸고(비용 0 등) 차량은 더하지 않는다(2026-10-18 사용자 결정)
         T.True(paths.Contains("resource/" + SpawnFixture.UnitsGer), "roster rewritten by default");

@@ -15,6 +15,8 @@ static class SpawnMapTests
         T.Eq(Encoding.UTF8.GetString(once), Encoding.UTF8.GetString(MapPatch.Patch(once, null, out err)), "an include already there is not added twice");
         T.Eq("{mission\n\t{b 2}\n\t(include \"/map/ctatoybox_spawn/menu.mi\")\n}\n", Encoding.UTF8.GetString(MapPatch.Patch(Encoding.UTF8.GetBytes("{mission\n\t{b 2}\n}\n"), null, out err)), "LF kept");
         T.Eq("{mission {b 2}\n\t(include \"/map/ctatoybox_spawn/menu.mi\")\n}", Encoding.UTF8.GetString(MapPatch.Patch(Encoding.UTF8.GetBytes("{mission {b 2}}"), null, out err)), "a close on a code line gets its own lines");
+        // 컨퀘스트 맵(dcg_vars.inc를 읽는 맵)에는 내 번호 추정 조각을 메뉴 앞에(2026-10-18)
+        T.Eq("{mission\n\t(include \"../dcg_vars.inc\")\n\t(include \"/map/ctatoybox_spawn/conquest_me.mi\")\n\t(include \"/map/ctatoybox_spawn/menu.mi\")\n}\n", Encoding.UTF8.GetString(MapPatch.Patch(Encoding.UTF8.GetBytes("{mission\n\t(include \"../dcg_vars.inc\")\n}\n"), null, out err)), "conquest maps get the guess file");
         byte[] latin = { (byte)'{', (byte)'m', (byte)'i', (byte)'s', (byte)'s', (byte)'i', (byte)'o', (byte)'n', (byte)' ', (byte)'"', 0xC4, 0xFC, (byte)'"', (byte)'\n', (byte)'}', (byte)'\n' };
         var patched = MapPatch.Patch(latin, null, out err);
         T.True(patched[10] == 0xC4 && patched[11] == 0xFC, "bytes other than the added line stay the same");

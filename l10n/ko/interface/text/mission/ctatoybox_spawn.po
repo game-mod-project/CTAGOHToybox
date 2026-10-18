@@ -64,942 +64,6 @@ msgctxt "mission/ctatoybox_spawn/del_one"
 msgid "Delete unit (pick)"
 msgstr "유닛 지우기(골라서)"
 
-msgctxt "mission/ctatoybox_spawn/family_a"
-msgid "a"
-msgstr "a"
-
-msgctxt "mission/ctatoybox_spawn/family_aec"
-msgid "aec"
-msgstr "aec"
-
-msgctxt "mission/ctatoybox_spawn/family_aht"
-msgid "aht"
-msgstr "aht"
-
-msgctxt "mission/ctatoybox_spawn/family_amd"
-msgid "amd"
-msgstr "amd"
-
-msgctxt "mission/ctatoybox_spawn/family_ammo"
-msgid "ammo"
-msgstr "ammo"
-
-msgctxt "mission/ctatoybox_spawn/family_amx"
-msgid "amx"
-msgstr "amx"
-
-msgctxt "mission/ctatoybox_spawn/family_amxm"
-msgid "amxm"
-msgstr "amxm"
-
-msgctxt "mission/ctatoybox_spawn/family_ap"
-msgid "ap"
-msgstr "ap"
-
-msgctxt "mission/ctatoybox_spawn/family_ares"
-msgid "ares"
-msgstr "ares"
-
-msgctxt "mission/ctatoybox_spawn/family_arl"
-msgid "arl"
-msgstr "arl"
-
-msgctxt "mission/ctatoybox_spawn/family_b"
-msgid "b"
-msgstr "b"
-
-msgctxt "mission/ctatoybox_spawn/family_ba"
-msgid "ba"
-msgstr "ba"
-
-msgctxt "mission/ctatoybox_spawn/family_bat"
-msgid "bat"
-msgstr "bat"
-
-msgctxt "mission/ctatoybox_spawn/family_bdr"
-msgid "bdr"
-msgstr "bdr"
-
-msgctxt "mission/ctatoybox_spawn/family_bedford"
-msgid "bedford"
-msgstr "bedford"
-
-msgctxt "mission/ctatoybox_spawn/family_bergepanther"
-msgid "bergepanther"
-msgstr "bergepanther"
-
-msgctxt "mission/ctatoybox_spawn/family_bf"
-msgid "bf"
-msgstr "bf"
-
-msgctxt "mission/ctatoybox_spawn/family_bishop"
-msgid "bishop"
-msgstr "bishop"
-
-msgctxt "mission/ctatoybox_spawn/family_bison"
-msgid "bison"
-msgstr "bison"
-
-msgctxt "mission/ctatoybox_spawn/family_bj"
-msgid "bj"
-msgstr "bj"
-
-msgctxt "mission/ctatoybox_spawn/family_black"
-msgid "black"
-msgstr "black"
-
-msgctxt "mission/ctatoybox_spawn/family_blackrock"
-msgid "blackrock"
-msgstr "blackrock"
-
-msgctxt "mission/ctatoybox_spawn/family_blenheim"
-msgid "blenheim"
-msgstr "blenheim"
-
-msgctxt "mission/ctatoybox_spawn/family_blitz"
-msgid "blitz"
-msgstr "blitz"
-
-msgctxt "mission/ctatoybox_spawn/family_bm"
-msgid "bm"
-msgstr "bm"
-
-msgctxt "mission/ctatoybox_spawn/family_bmw"
-msgid "bmw"
-msgstr "bmw"
-
-msgctxt "mission/ctatoybox_spawn/family_bren"
-msgid "bren"
-msgstr "bren"
-
-msgctxt "mission/ctatoybox_spawn/family_broneschitok"
-msgid "broneschitok"
-msgstr "broneschitok"
-
-msgctxt "mission/ctatoybox_spawn/family_bt"
-msgid "bt"
-msgstr "bt"
-
-msgctxt "mission/ctatoybox_spawn/family_bz"
-msgid "bz"
-msgstr "bz"
-
-msgctxt "mission/ctatoybox_spawn/family_bzt"
-msgid "bzt"
-msgstr "bzt"
-
-msgctxt "mission/ctatoybox_spawn/family_c"
-msgid "c"
-msgstr "c"
-
-msgctxt "mission/ctatoybox_spawn/family_cal"
-msgid "cal"
-msgstr "cal"
-
-msgctxt "mission/ctatoybox_spawn/family_cckw"
-msgid "cckw"
-msgstr "cckw"
-
-msgctxt "mission/ctatoybox_spawn/family_centrx"
-msgid "centrx"
-msgstr "centrx"
-
-msgctxt "mission/ctatoybox_spawn/family_centurion"
-msgid "centurion"
-msgstr "centurion"
-
-msgctxt "mission/ctatoybox_spawn/family_challenger"
-msgid "challenger"
-msgstr "challenger"
-
-msgctxt "mission/ctatoybox_spawn/family_chi"
-msgid "chi"
-msgstr "chi"
-
-msgctxt "mission/ctatoybox_spawn/family_chieftain"
-msgid "chieftain"
-msgstr "chieftain"
-
-msgctxt "mission/ctatoybox_spawn/family_churchill"
-msgid "churchill"
-msgstr "churchill"
-
-msgctxt "mission/ctatoybox_spawn/family_citroen"
-msgid "citroen"
-msgstr "citroen"
-
-msgctxt "mission/ctatoybox_spawn/family_cm"
-msgid "cm"
-msgstr "cm"
-
-msgctxt "mission/ctatoybox_spawn/family_coelian"
-msgid "coelian"
-msgstr "coelian"
-
-msgctxt "mission/ctatoybox_spawn/family_comet"
-msgid "comet"
-msgstr "comet"
-
-msgctxt "mission/ctatoybox_spawn/family_conqueror"
-msgid "conqueror"
-msgstr "conqueror"
-
-msgctxt "mission/ctatoybox_spawn/family_cromwell"
-msgid "cromwell"
-msgstr "cromwell"
-
-msgctxt "mission/ctatoybox_spawn/family_cruiser"
-msgid "cruiser"
-msgstr "cruiser"
-
-msgctxt "mission/ctatoybox_spawn/family_crusader"
-msgid "crusader"
-msgstr "crusader"
-
-msgctxt "mission/ctatoybox_spawn/family_ct"
-msgid "ct"
-msgstr "ct"
-
-msgctxt "mission/ctatoybox_spawn/family_d"
-msgid "d"
-msgstr "d"
-
-msgctxt "mission/ctatoybox_spawn/family_daf"
-msgid "daf"
-msgstr "daf"
-
-msgctxt "mission/ctatoybox_spawn/family_daimler"
-msgid "daimler"
-msgstr "daimler"
-
-msgctxt "mission/ctatoybox_spawn/family_dicker"
-msgid "dicker"
-msgstr "dicker"
-
-msgctxt "mission/ctatoybox_spawn/family_ds"
-msgid "ds"
-msgstr "ds"
-
-msgctxt "mission/ctatoybox_spawn/family_dshk"
-msgid "dshk"
-msgstr "dshk"
-
-msgctxt "mission/ctatoybox_spawn/family_e"
-msgid "e"
-msgstr "e"
-
-msgctxt "mission/ctatoybox_spawn/family_elc"
-msgid "elc"
-msgstr "elc"
-
-msgctxt "mission/ctatoybox_spawn/family_elefant"
-msgid "elefant"
-msgstr "elefant"
-
-msgctxt "mission/ctatoybox_spawn/family_executor"
-msgid "executor"
-msgstr "executor"
-
-msgctxt "mission/ctatoybox_spawn/family_ezart"
-msgid "ezart"
-msgstr "ezart"
-
-msgctxt "mission/ctatoybox_spawn/family_f"
-msgid "f"
-msgstr "f"
-
-msgctxt "mission/ctatoybox_spawn/family_fai"
-msgid "fai"
-msgstr "fai"
-
-msgctxt "mission/ctatoybox_spawn/family_fauteur"
-msgid "fauteur"
-msgstr "fauteur"
-
-msgctxt "mission/ctatoybox_spawn/family_ferdinand"
-msgid "ferdinand"
-msgstr "ferdinand"
-
-msgctxt "mission/ctatoybox_spawn/family_fi"
-msgid "fi"
-msgstr "fi"
-
-msgctxt "mission/ctatoybox_spawn/family_flakmaus"
-msgid "flakmaus"
-msgstr "flakmaus"
-
-msgctxt "mission/ctatoybox_spawn/family_flakpanzer"
-msgid "flakpanzer"
-msgstr "flakpanzer"
-
-msgctxt "mission/ctatoybox_spawn/family_flammpanzer"
-msgid "flammpanzer"
-msgstr "flammpanzer"
-
-msgctxt "mission/ctatoybox_spawn/family_foch"
-msgid "foch"
-msgstr "foch"
-
-msgctxt "mission/ctatoybox_spawn/family_ford"
-msgid "ford"
-msgstr "ford"
-
-msgctxt "mission/ctatoybox_spawn/family_ft"
-msgid "ft"
-msgstr "ft"
-
-msgctxt "mission/ctatoybox_spawn/family_fv"
-msgid "fv"
-msgstr "fv"
-
-msgctxt "mission/ctatoybox_spawn/family_gaz"
-msgid "gaz"
-msgstr "gaz"
-
-msgctxt "mission/ctatoybox_spawn/family_geschutzwagen"
-msgid "geschutzwagen"
-msgstr "geschutzwagen"
-
-msgctxt "mission/ctatoybox_spawn/family_gmc"
-msgid "gmc"
-msgstr "gmc"
-
-msgctxt "mission/ctatoybox_spawn/family_gorilla"
-msgid "gorilla"
-msgstr "gorilla"
-
-msgctxt "mission/ctatoybox_spawn/family_grant"
-msgid "grant"
-msgstr "grant"
-
-msgctxt "mission/ctatoybox_spawn/family_grille"
-msgid "grille"
-msgstr "grille"
-
-msgctxt "mission/ctatoybox_spawn/family_gw"
-msgid "gw"
-msgstr "gw"
-
-msgctxt "mission/ctatoybox_spawn/family_gwe"
-msgid "gwe"
-msgstr "gwe"
-
-msgctxt "mission/ctatoybox_spawn/family_h"
-msgid "h"
-msgstr "h"
-
-msgctxt "mission/ctatoybox_spawn/family_ha"
-msgid "ha"
-msgstr "ha"
-
-msgctxt "mission/ctatoybox_spawn/family_heavy"
-msgid "heavy"
-msgstr "heavy"
-
-msgctxt "mission/ctatoybox_spawn/family_hetzer"
-msgid "hetzer"
-msgstr "hetzer"
-
-msgctxt "mission/ctatoybox_spawn/family_ho"
-msgid "ho"
-msgstr "ho"
-
-msgctxt "mission/ctatoybox_spawn/family_humber"
-msgid "humber"
-msgstr "humber"
-
-msgctxt "mission/ctatoybox_spawn/family_hummel"
-msgid "hummel"
-msgstr "hummel"
-
-msgctxt "mission/ctatoybox_spawn/family_hurribomber"
-msgid "hurribomber"
-msgstr "hurribomber"
-
-msgctxt "mission/ctatoybox_spawn/family_i"
-msgid "i"
-msgstr "i"
-
-msgctxt "mission/ctatoybox_spawn/family_il"
-msgid "il"
-msgstr "il"
-
-msgctxt "mission/ctatoybox_spawn/family_inf"
-msgid "inf"
-msgstr "inf"
-
-msgctxt "mission/ctatoybox_spawn/family_infantry"
-msgid "infantry"
-msgstr "infantry"
-
-msgctxt "mission/ctatoybox_spawn/family_is"
-msgid "is"
-msgstr "is"
-
-msgctxt "mission/ctatoybox_spawn/family_itk"
-msgid "itk"
-msgstr "itk"
-
-msgctxt "mission/ctatoybox_spawn/family_jagdpanther"
-msgid "jagdpanther"
-msgstr "jagdpanther"
-
-msgctxt "mission/ctatoybox_spawn/family_jagdpanzer"
-msgid "jagdpanzer"
-msgstr "jagdpanzer"
-
-msgctxt "mission/ctatoybox_spawn/family_jagdtiger"
-msgid "jagdtiger"
-msgstr "jagdtiger"
-
-msgctxt "mission/ctatoybox_spawn/family_jpze"
-msgid "jpze"
-msgstr "jpze"
-
-msgctxt "mission/ctatoybox_spawn/family_jumbo"
-msgid "jumbo"
-msgstr "jumbo"
-
-msgctxt "mission/ctatoybox_spawn/family_ka"
-msgid "ka"
-msgstr "ka"
-
-msgctxt "mission/ctatoybox_spawn/family_kampfpanzer"
-msgid "kampfpanzer"
-msgstr "kampfpanzer"
-
-msgctxt "mission/ctatoybox_spawn/family_ke"
-msgid "ke"
-msgstr "ke"
-
-msgctxt "mission/ctatoybox_spawn/family_kettenkrad"
-msgid "kettenkrad"
-msgstr "kettenkrad"
-
-msgctxt "mission/ctatoybox_spawn/family_kfz"
-msgid "kfz"
-msgstr "kfz"
-
-msgctxt "mission/ctatoybox_spawn/family_kht"
-msgid "kht"
-msgstr "kht"
-
-msgctxt "mission/ctatoybox_spawn/family_ki"
-msgid "ki"
-msgstr "ki"
-
-msgctxt "mission/ctatoybox_spawn/family_kikka"
-msgid "kikka"
-msgstr "kikka"
-
-msgctxt "mission/ctatoybox_spawn/family_krv"
-msgid "krv"
-msgstr "krv"
-
-msgctxt "mission/ctatoybox_spawn/family_ksp"
-msgid "ksp"
-msgstr "ksp"
-
-msgctxt "mission/ctatoybox_spawn/family_kubelwagen"
-msgid "kubelwagen"
-msgstr "kubelwagen"
-
-msgctxt "mission/ctatoybox_spawn/family_kugelblitz"
-msgid "kugelblitz"
-msgstr "kugelblitz"
-
-msgctxt "mission/ctatoybox_spawn/family_kv"
-msgid "kv"
-msgstr "kv"
-
-msgctxt "mission/ctatoybox_spawn/family_l"
-msgid "l"
-msgstr "l"
-
-msgctxt "mission/ctatoybox_spawn/family_latil"
-msgid "latil"
-msgstr "latil"
-
-msgctxt "mission/ctatoybox_spawn/family_light"
-msgid "light"
-msgstr "light"
-
-msgctxt "mission/ctatoybox_spawn/family_little"
-msgid "little"
-msgstr "little"
-
-msgctxt "mission/ctatoybox_spawn/family_lorraine"
-msgid "lorraine"
-msgstr "lorraine"
-
-msgctxt "mission/ctatoybox_spawn/family_lowe"
-msgid "lowe"
-msgstr "lowe"
-
-msgctxt "mission/ctatoybox_spawn/family_lowehd"
-msgid "lowehd"
-msgstr "lowehd"
-
-msgctxt "mission/ctatoybox_spawn/family_lownn"
-msgid "lownn"
-msgstr "lownn"
-
-msgctxt "mission/ctatoybox_spawn/family_lvt"
-msgid "lvt"
-msgstr "lvt"
-
-msgctxt "mission/ctatoybox_spawn/family_lvtdgb"
-msgid "lvtdgb"
-msgstr "lvtdgb"
-
-msgctxt "mission/ctatoybox_spawn/family_m"
-msgid "m"
-msgstr "m"
-
-msgctxt "mission/ctatoybox_spawn/family_marder"
-msgid "marder"
-msgstr "marder"
-
-msgctxt "mission/ctatoybox_spawn/family_matilda"
-msgid "matilda"
-msgstr "matilda"
-
-msgctxt "mission/ctatoybox_spawn/family_maus"
-msgid "maus"
-msgstr "maus"
-
-msgctxt "mission/ctatoybox_spawn/family_mausking"
-msgid "mausking"
-msgstr "mausking"
-
-msgctxt "mission/ctatoybox_spawn/family_maxim"
-msgid "maxim"
-msgstr "maxim"
-
-msgctxt "mission/ctatoybox_spawn/family_me"
-msgid "me"
-msgstr "me"
-
-msgctxt "mission/ctatoybox_spawn/family_mg"
-msgid "mg"
-msgstr "mg"
-
-msgctxt "mission/ctatoybox_spawn/family_mgun"
-msgid "mgun"
-msgstr "mgun"
-
-msgctxt "mission/ctatoybox_spawn/family_mm"
-msgid "mm"
-msgstr "mm"
-
-msgctxt "mission/ctatoybox_spawn/family_mmg"
-msgid "mmg"
-msgstr "mmg"
-
-msgctxt "mission/ctatoybox_spawn/family_morris"
-msgid "morris"
-msgstr "morris"
-
-msgctxt "mission/ctatoybox_spawn/family_mortar"
-msgid "mortar"
-msgstr "mortar"
-
-msgctxt "mission/ctatoybox_spawn/family_na"
-msgid "na"
-msgstr "na"
-
-msgctxt "mission/ctatoybox_spawn/family_nashorn"
-msgid "nashorn"
-msgstr "nashorn"
-
-msgctxt "mission/ctatoybox_spawn/family_nbfz"
-msgid "nbfz"
-msgstr "nbfz"
-
-msgctxt "mission/ctatoybox_spawn/family_neu"
-msgid "neu"
-msgstr "neu"
-
-msgctxt "mission/ctatoybox_spawn/family_nkl"
-msgid "nkl"
-msgstr "nkl"
-
-msgctxt "mission/ctatoybox_spawn/family_northover"
-msgid "northover"
-msgstr "northover"
-
-msgctxt "mission/ctatoybox_spawn/family_obj"
-msgid "obj"
-msgstr "obj"
-
-msgctxt "mission/ctatoybox_spawn/family_object"
-msgid "object"
-msgstr "object"
-
-msgctxt "mission/ctatoybox_spawn/family_opel"
-msgid "opel"
-msgstr "opel"
-
-msgctxt "mission/ctatoybox_spawn/family_ostwind"
-msgid "ostwind"
-msgstr "ostwind"
-
-msgctxt "mission/ctatoybox_spawn/family_overvalwagen"
-msgid "overvalwagen"
-msgstr "overvalwagen"
-
-msgctxt "mission/ctatoybox_spawn/family_p"
-msgid "p"
-msgstr "p"
-
-msgctxt "mission/ctatoybox_spawn/family_pak"
-msgid "pak"
-msgstr "pak"
-
-msgctxt "mission/ctatoybox_spawn/family_panther"
-msgid "panther"
-msgstr "panther"
-
-msgctxt "mission/ctatoybox_spawn/family_panzer"
-msgid "panzer"
-msgstr "panzer"
-
-msgctxt "mission/ctatoybox_spawn/family_panzerb"
-msgid "panzerb"
-msgstr "panzerb"
-
-msgctxt "mission/ctatoybox_spawn/family_panzerjager"
-msgid "panzerjager"
-msgstr "panzerjager"
-
-msgctxt "mission/ctatoybox_spawn/family_panzernest"
-msgid "panzernest"
-msgstr "panzernest"
-
-msgctxt "mission/ctatoybox_spawn/family_panzerwerfer"
-msgid "panzerwerfer"
-msgstr "panzerwerfer"
-
-msgctxt "mission/ctatoybox_spawn/family_pbil"
-msgid "pbil"
-msgstr "pbil"
-
-msgctxt "mission/ctatoybox_spawn/family_pgz"
-msgid "pgz"
-msgstr "pgz"
-
-msgctxt "mission/ctatoybox_spawn/family_po"
-msgid "po"
-msgstr "po"
-
-msgctxt "mission/ctatoybox_spawn/family_ptz"
-msgid "ptz"
-msgstr "ptz"
-
-msgctxt "mission/ctatoybox_spawn/family_pz"
-msgid "pz"
-msgstr "pz"
-
-msgctxt "mission/ctatoybox_spawn/family_pzbefwgvi"
-msgid "pzbefwgvi"
-msgstr "pzbefwgvi"
-
-msgctxt "mission/ctatoybox_spawn/family_pzkpfw"
-msgid "pzkpfw"
-msgstr "pzkpfw"
-
-msgctxt "mission/ctatoybox_spawn/family_pzspwg"
-msgid "pzspwg"
-msgstr "pzspwg"
-
-msgctxt "mission/ctatoybox_spawn/family_ram"
-msgid "ram"
-msgstr "ram"
-
-msgctxt "mission/ctatoybox_spawn/family_rbt"
-msgid "rbt"
-msgstr "rbt"
-
-msgctxt "mission/ctatoybox_spawn/family_rhmb"
-msgid "rhmb"
-msgstr "rhmb"
-
-msgctxt "mission/ctatoybox_spawn/family_schwimmwagen"
-msgid "schwimmwagen"
-msgstr "schwimmwagen"
-
-msgctxt "mission/ctatoybox_spawn/family_sdah"
-msgid "sdah"
-msgstr "sdah"
-
-msgctxt "mission/ctatoybox_spawn/family_sdkfz"
-msgid "sdkfz"
-msgstr "sdkfz"
-
-msgctxt "mission/ctatoybox_spawn/family_se"
-msgid "se"
-msgstr "se"
-
-msgctxt "mission/ctatoybox_spawn/family_sexton"
-msgid "sexton"
-msgstr "sexton"
-
-msgctxt "mission/ctatoybox_spawn/family_sfac"
-msgid "sfac"
-msgstr "sfac"
-
-msgctxt "mission/ctatoybox_spawn/family_sg"
-msgid "sg"
-msgstr "sg"
-
-msgctxt "mission/ctatoybox_spawn/family_sge"
-msgid "sge"
-msgstr "sge"
-
-msgctxt "mission/ctatoybox_spawn/family_sherman"
-msgid "sherman"
-msgstr "sherman"
-
-msgctxt "mission/ctatoybox_spawn/family_shi"
-msgid "shi"
-msgstr "shi"
-
-msgctxt "mission/ctatoybox_spawn/family_sig"
-msgid "sig"
-msgstr "sig"
-
-msgctxt "mission/ctatoybox_spawn/family_skink"
-msgid "skink"
-msgstr "skink"
-
-msgctxt "mission/ctatoybox_spawn/family_smk"
-msgid "smk"
-msgstr "smk"
-
-msgctxt "mission/ctatoybox_spawn/family_so"
-msgid "so"
-msgstr "so"
-
-msgctxt "mission/ctatoybox_spawn/family_solothurn"
-msgid "solothurn"
-msgstr "solothurn"
-
-msgctxt "mission/ctatoybox_spawn/family_somua"
-msgid "somua"
-msgstr "somua"
-
-msgctxt "mission/ctatoybox_spawn/family_sp"
-msgid "sp"
-msgstr "sp"
-
-msgctxt "mission/ctatoybox_spawn/family_ss"
-msgid "ss"
-msgstr "ss"
-
-msgctxt "mission/ctatoybox_spawn/family_staghound"
-msgid "staghound"
-msgstr "staghound"
-
-msgctxt "mission/ctatoybox_spawn/family_stalinetz"
-msgid "stalinetz"
-msgstr "stalinetz"
-
-msgctxt "mission/ctatoybox_spawn/family_stationary"
-msgid "stationary"
-msgstr "stationary"
-
-msgctxt "mission/ctatoybox_spawn/family_strumpanzer"
-msgid "strumpanzer"
-msgstr "strumpanzer"
-
-msgctxt "mission/ctatoybox_spawn/family_stuart"
-msgid "stuart"
-msgstr "stuart"
-
-msgctxt "mission/ctatoybox_spawn/family_stug"
-msgid "stug"
-msgstr "stug"
-
-msgctxt "mission/ctatoybox_spawn/family_stuh"
-msgid "stuh"
-msgstr "stuh"
-
-msgctxt "mission/ctatoybox_spawn/family_sturmpanzer"
-msgid "sturmpanzer"
-msgstr "sturmpanzer"
-
-msgctxt "mission/ctatoybox_spawn/family_sturmtiger"
-msgid "sturmtiger"
-msgstr "sturmtiger"
-
-msgctxt "mission/ctatoybox_spawn/family_su"
-msgid "su"
-msgstr "su"
-
-msgctxt "mission/ctatoybox_spawn/family_super"
-msgid "super"
-msgstr "super"
-
-msgctxt "mission/ctatoybox_spawn/family_t"
-msgid "t"
-msgstr "t"
-
-msgctxt "mission/ctatoybox_spawn/family_ta"
-msgid "ta"
-msgstr "ta"
-
-msgctxt "mission/ctatoybox_spawn/family_taschenratte"
-msgid "taschenratte"
-msgstr "taschenratte"
-
-msgctxt "mission/ctatoybox_spawn/family_te"
-msgid "te"
-msgstr "te"
-
-msgctxt "mission/ctatoybox_spawn/family_tet"
-msgid "tet"
-msgstr "tet"
-
-msgctxt "mission/ctatoybox_spawn/family_tetrarch"
-msgid "tetrarch"
-msgstr "tetrarch"
-
-msgctxt "mission/ctatoybox_spawn/family_tiger"
-msgid "tiger"
-msgstr "tiger"
-
-msgctxt "mission/ctatoybox_spawn/family_tigermaus"
-msgid "tigermaus"
-msgstr "tigermaus"
-
-msgctxt "mission/ctatoybox_spawn/family_tiz"
-msgid "tiz"
-msgstr "tiz"
-
-msgctxt "mission/ctatoybox_spawn/family_to"
-msgid "to"
-msgstr "to"
-
-msgctxt "mission/ctatoybox_spawn/family_tog"
-msgid "tog"
-msgstr "tog"
-
-msgctxt "mission/ctatoybox_spawn/family_tortez"
-msgid "tortez"
-msgstr "tortez"
-
-msgctxt "mission/ctatoybox_spawn/family_tp"
-msgid "tp"
-msgstr "tp"
-
-msgctxt "mission/ctatoybox_spawn/family_tri"
-msgid "tri"
-msgstr "tri"
-
-msgctxt "mission/ctatoybox_spawn/family_type"
-msgid "type"
-msgstr "type"
-
-msgctxt "mission/ctatoybox_spawn/family_typhoon"
-msgid "typhoon"
-msgstr "typhoon"
-
-msgctxt "mission/ctatoybox_spawn/family_unic"
-msgid "unic"
-msgstr "unic"
-
-msgctxt "mission/ctatoybox_spawn/family_universal"
-msgid "universal"
-msgstr "universal"
-
-msgctxt "mission/ctatoybox_spawn/family_us"
-msgid "us"
-msgstr "us"
-
-msgctxt "mission/ctatoybox_spawn/family_usa"
-msgid "usa"
-msgstr "usa"
-
-msgctxt "mission/ctatoybox_spawn/family_v"
-msgid "v"
-msgstr "v"
-
-msgctxt "mission/ctatoybox_spawn/family_valentine"
-msgid "valentine"
-msgstr "valentine"
-
-msgctxt "mission/ctatoybox_spawn/family_vfw"
-msgid "vfw"
-msgstr "vfw"
-
-msgctxt "mission/ctatoybox_spawn/family_vickers"
-msgid "vickers"
-msgstr "vickers"
-
-msgctxt "mission/ctatoybox_spawn/family_vk"
-msgid "vk"
-msgstr "vk"
-
-msgctxt "mission/ctatoybox_spawn/family_volvo"
-msgid "volvo"
-msgstr "volvo"
-
-msgctxt "mission/ctatoybox_spawn/family_vz"
-msgid "vz"
-msgstr "vz"
-
-msgctxt "mission/ctatoybox_spawn/family_waffletractor"
-msgid "waffletractor"
-msgstr "waffletractor"
-
-msgctxt "mission/ctatoybox_spawn/family_wanze"
-msgid "wanze"
-msgstr "wanze"
-
-msgctxt "mission/ctatoybox_spawn/family_wasp"
-msgid "wasp"
-msgstr "wasp"
-
-msgctxt "mission/ctatoybox_spawn/family_wc"
-msgid "wc"
-msgstr "wc"
-
-msgctxt "mission/ctatoybox_spawn/family_wespe"
-msgid "wespe"
-msgstr "wespe"
-
-msgctxt "mission/ctatoybox_spawn/family_willys"
-msgid "willys"
-msgstr "willys"
-
-msgctxt "mission/ctatoybox_spawn/family_wirbelwind"
-msgid "wirbelwind"
-msgstr "wirbelwind"
-
-msgctxt "mission/ctatoybox_spawn/family_xiniu"
-msgid "xiniu"
-msgstr "xiniu"
-
-msgctxt "mission/ctatoybox_spawn/family_yag"
-msgid "yag"
-msgstr "yag"
-
-msgctxt "mission/ctatoybox_spawn/family_yak"
-msgid "yak"
-msgstr "yak"
-
-msgctxt "mission/ctatoybox_spawn/family_zhane"
-msgid "zhane"
-msgstr "zhane"
-
-msgctxt "mission/ctatoybox_spawn/family_zis"
-msgid "zis"
-msgstr "zis"
-
-msgctxt "mission/ctatoybox_spawn/family_zut"
-msgid "zut"
-msgstr "zut"
-
 msgctxt "mission/ctatoybox_spawn/god_off"
 msgid "God mode off"
 msgstr "무적 끄기"
@@ -1007,6 +71,1290 @@ msgstr "무적 끄기"
 msgctxt "mission/ctatoybox_spawn/god_on"
 msgid "God mode on"
 msgstr "무적 켜기"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_guns_ammo"
+msgid "British Ammo Trailer"
+msgstr "British Ammo Trailer"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_guns_heavy"
+msgid "Vickers Mk.I"
+msgstr "Vickers Mk.I"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_guns_inf"
+msgid "British Ammo Crate"
+msgstr "British Ammo Crate"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_guns_mm"
+msgid "BL 7.2-inch Howitzer Mk.VI (+47)"
+msgstr "BL 7.2-inch Howitzer Mk.VI (+47)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_guns_northover"
+msgid "Northover Projector (+1)"
+msgstr "Northover Projector (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_guns_vickers"
+msgid "Vickers Mk.I"
+msgstr "Vickers Mk.I"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_amx"
+msgid "AMX 67"
+msgstr "AMX 67"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_amxm"
+msgid "AMX M4"
+msgstr "AMX M4"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_arl"
+msgid "ARL-44 (+1)"
+msgstr "ARL-44 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_black"
+msgid "Black Prince"
+msgstr "Black Prince"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_centrx"
+msgid "Centurion Action X"
+msgstr "Centurion Action X"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_centurion"
+msgid "Centurion Mk.3 (+2)"
+msgstr "Centurion Mk.3 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_chieftain"
+msgid "Chieftain Mk.5"
+msgstr "Chieftain Mk.5"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_churchill"
+msgid "Churchill Mk.VIII (+14)"
+msgstr "Churchill Mk.VIII (+14)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_conqueror"
+msgid "Conqueror (+2)"
+msgstr "Conqueror (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_fv"
+msgid "FV215b (183mm) (+5)"
+msgstr "FV215b (183mm) (+5)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_super"
+msgid "Super Conqueror"
+msgstr "Super Conqueror"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_t"
+msgid "T14 (57mm)"
+msgstr "T14 (57mm)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_tog"
+msgid "TOG II*"
+msgstr "TOG II*"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_heavy_tanks_tortez"
+msgid "Tortoise"
+msgstr "Tortoise"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_cruiser"
+msgid "Cruiser Mk.IIA CS (+8)"
+msgstr "Cruiser Mk.IIA CS (+8)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_light"
+msgid "Light Mk.VIII 'Harry Hopkins'"
+msgstr "Light Mk.VIII 'Harry Hopkins'"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_m"
+msgid "M22 Locust 'Little John' (+1)"
+msgstr "M22 Locust 'Little John' (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_matilda"
+msgid "Matilda I (.5-inch) (+1)"
+msgstr "Matilda I (.5-inch) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_stuart"
+msgid "Stuart V (+3)"
+msgstr "Stuart V (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_tetrarch"
+msgid "Light Mk.VII Tetrarch 'Little John' (+1)"
+msgstr "Light Mk.VII Tetrarch 'Little John' (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_light_tanks_vickers"
+msgid "Light Mk.VIb (+1)"
+msgstr "Light Mk.VIb (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_amx"
+msgid "AMX AuF1 (+18)"
+msgstr "AMX AuF1 (+18)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_bat"
+msgid "Bat.-Châtillon 25 t"
+msgstr "Bat.-Châtillon 25 t"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_bdr"
+msgid "BDR G1 B (SA44) (+3)"
+msgstr "BDR G1 B (SA44) (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_bishop"
+msgid "Valentine 25-pdr Mk.I 'Bishop'"
+msgstr "Valentine 25-pdr Mk.I 'Bishop'"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_challenger"
+msgid "Challenger"
+msgstr "Challenger"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_churchill"
+msgid "Churchill Mk.IV NA 75"
+msgstr "Churchill Mk.IV NA 75"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_comet"
+msgid "Comet I (+1)"
+msgstr "Comet I (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_cromwell"
+msgid "Cromwell Mk.VIII CS (+5)"
+msgstr "Cromwell Mk.VIII CS (+5)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_crusader"
+msgid "Crusader Mk.III (+6)"
+msgstr "Crusader Mk.III (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_elc"
+msgid "AMX ELC"
+msgstr "AMX ELC"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_fauteur"
+msgid "Fauteur"
+msgstr "Fauteur"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_foch"
+msgid "AMX 50 Foch (155)"
+msgstr "AMX 50 Foch (155)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_grant"
+msgid "Grant I"
+msgstr "Grant I"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_lorraine"
+msgid "Lorraine 40 t"
+msgstr "Lorraine 40 t"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_m"
+msgid "M4A1 Revalorisé (+1)"
+msgstr "M4A1 Revalorisé (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_matilda"
+msgid "Matilda II Mk.IV CS (+3)"
+msgstr "Matilda II Mk.IV CS (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_ram"
+msgid "Ram Mk.II (+2)"
+msgstr "Ram Mk.II (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_sexton"
+msgid "25-pdr SP Tracked Mk.II 'Sexton'"
+msgstr "25-pdr SP Tracked Mk.II 'Sexton'"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_sfac"
+msgid "SFAC 105"
+msgstr "SFAC 105"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_sherman"
+msgid "Sherman Ic (Hybrid) 'Tulip' (+27)"
+msgstr "Sherman Ic (Hybrid) 'Tulip' (+27)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_somua"
+msgid "Somua SM"
+msgstr "Somua SM"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_t"
+msgid "T14 (57mm)"
+msgstr "T14 (57mm)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_medium_tanks_valentine"
+msgid "Valentine Mk.IX (+6)"
+msgstr "Valentine Mk.IX (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_aec"
+msgid "AEC Mk.II (+2)"
+msgstr "AEC Mk.II (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_amd"
+msgid "AMD.35 (SA35)"
+msgstr "AMD.35 (SA35)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_bedford"
+msgid "Bedford QLD (Supply) (+9)"
+msgstr "Bedford QLD (Supply) (+9)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_blenheim"
+msgid "Bristol Blenheim Mk.I (+1)"
+msgstr "Bristol Blenheim Mk.I (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_bren"
+msgid "Bren No.2 (+1)"
+msgstr "Bren No.2 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_daimler"
+msgid "Daimler Mk.II 'Littlejohn' (+7)"
+msgstr "Daimler Mk.II 'Littlejohn' (+7)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_executor"
+msgid "Executor"
+msgstr "Executor"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_humber"
+msgid "Humber Mk.IV (+5)"
+msgstr "Humber Mk.IV (+5)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_hurribomber"
+msgid "Hawker Hurribomber IIc"
+msgstr "Hawker Hurribomber IIc"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_lvt"
+msgid "LVT-4"
+msgstr "LVT-4"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_m"
+msgid "M5A1 Halftrack (+4)"
+msgstr "M5A1 Halftrack (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_mmg"
+msgid "Machine Gun Carrier Mk.II (+1)"
+msgstr "Machine Gun Carrier Mk.II (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_morris"
+msgid "Morris C9/B (+2)"
+msgstr "Morris C9/B (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_mortar"
+msgid "2-inch Mortar Carrier Mk.I (Boys) (+2)"
+msgstr "2-inch Mortar Carrier Mk.I (Boys) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_ram"
+msgid "Ram Mk.II Kangaroo (+1)"
+msgstr "Ram Mk.II Kangaroo (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_staghound"
+msgid "Staghound Mk.II CS (+3)"
+msgstr "Staghound Mk.II CS (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_stuart"
+msgid "Stuart V Recce"
+msgstr "Stuart V Recce"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_typhoon"
+msgid "Hawker Typhoon Ib (+1)"
+msgstr "Hawker Typhoon Ib (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_universal"
+msgid "Universal Mk.II (Boys) (+6)"
+msgstr "Universal Mk.II (Boys) (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_wasp"
+msgid "Wasp Mk.IIc"
+msgstr "Wasp Mk.IIc"
+
+msgctxt "mission/ctatoybox_spawn/group_eng_vehicles_willys"
+msgid "Willys MB (MG) (+2)"
+msgstr "Willys MB (MG) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_ds"
+msgid "DS-39/VKT Stand"
+msgstr "DS-39/VKT Stand"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_inf"
+msgid "Finnish Ammo Crate"
+msgstr "Finnish Ammo Crate"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_itk"
+msgid "20 Itk/38 (+1)"
+msgstr "20 Itk/38 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_maxim"
+msgid "Maxim M/32-33 (+3)"
+msgstr "Maxim M/32-33 (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_mg"
+msgid "Maxim MG 08"
+msgstr "Maxim MG 08"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_mm"
+msgid "280 Rkh/43 (+59)"
+msgstr "280 Rkh/43 (+59)"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_guns_panzernest"
+msgid "Panzernest"
+msgstr "Panzernest"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_ba"
+msgid "BAF C (+4)"
+msgstr "BAF C (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_blenheim"
+msgid "Blenheim Mk.1"
+msgstr "Blenheim Mk.1"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_ford"
+msgid "Ford V3000S (Supply) (+8)"
+msgstr "Ford V3000S (Supply) (+8)"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_l"
+msgid "Landsverk 182"
+msgstr "Landsverk 182"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_latil"
+msgid "Latil M2 TL6"
+msgstr "Latil M2 TL6"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_lvtdgb"
+msgid "Lvtdgb m/40"
+msgstr "Lvtdgb m/40"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_m"
+msgid "M42 Truppenfahrrad"
+msgstr "M42 Truppenfahrrad"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_pbil"
+msgid "Pbil m/40"
+msgstr "Pbil m/40"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_t"
+msgid "T-20"
+msgstr "T-20"
+
+msgctxt "mission/ctatoybox_spawn/group_fin_vehicles_volvo"
+msgid "Volvo LV 127D (20 ItK/40) (+1)"
+msgstr "Volvo LV 127D (20 ItK/40) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_ammo"
+msgid "Sd.Ah.51 (Supply)"
+msgstr "Sd.Ah.51 (Supply)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_inf"
+msgid "German Ammo Crate"
+msgstr "German Ammo Crate"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_infantry"
+msgid "Infantry Cart If.8 (Supply)"
+msgstr "Infantry Cart If.8 (Supply)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_mg"
+msgid "Lafette MG 42 (+7)"
+msgstr "Lafette MG 42 (+7)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_mgun"
+msgid "MG42 Mount"
+msgstr "MG42 Mount"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_mm"
+msgid "60cm Gerät Nr. III (+47)"
+msgstr "60cm Gerät Nr. III (+47)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_pak"
+msgid "12.8 cm PaK 44"
+msgstr "12.8 cm PaK 44"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_panzernest"
+msgid "Panzernest"
+msgstr "Panzernest"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_sdah"
+msgid "Sd.Ah. 57/1 (Supply)"
+msgstr "Sd.Ah. 57/1 (Supply)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_solothurn"
+msgid "Solothurn S-18/100"
+msgstr "Solothurn S-18/100"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_guns_v"
+msgid "Aggregat-4 (V-2) (+1)"
+msgstr "Aggregat-4 (V-2) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_e"
+msgid "G.W. E-100 (+18)"
+msgstr "G.W. E-100 (+18)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_flakmaus"
+msgid "Flakpanzer VIII 'Maus'"
+msgstr "Flakpanzer VIII 'Maus'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_flammpanzer"
+msgid "Pz.Kpfw. B2 Flamm"
+msgstr "Pz.Kpfw. B2 Flamm"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_grille"
+msgid "Grille 15 'Pinocchio'"
+msgstr "Grille 15 'Pinocchio'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_gw"
+msgid "G.W. Tiger"
+msgstr "G.W. Tiger"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_gwe"
+msgid "G.W. E-100 II"
+msgstr "G.W. E-100 II"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_jpze"
+msgid "Jagdpanzer E-100 (+1)"
+msgstr "Jagdpanzer E-100 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_kampfpanzer"
+msgid "Kampfpanzer 67"
+msgstr "Kampfpanzer 67"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_krv"
+msgid "KRV"
+msgstr "KRV"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_kv"
+msgid "Pz.Kpfw 754(r) 'KW-II'"
+msgstr "Pz.Kpfw 754(r) 'KW-II'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_lowe"
+msgid "Pz.Kpfw VII 'Löwe' 1944 (+1)"
+msgstr "Pz.Kpfw VII 'Löwe' 1944 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_lowehd"
+msgid "Pz.Kpfw VII 'Löwe'"
+msgstr "Pz.Kpfw VII 'Löwe'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_lownn"
+msgid "Pz.Kpfw VII 'Löwe' N"
+msgstr "Pz.Kpfw VII 'Löwe' N"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_maus"
+msgid "Maus (Desert)"
+msgstr "Maus (Desert)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_mausking"
+msgid "Mausking"
+msgstr "Mausking"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_neu"
+msgid "Pz.Kpfw Neu"
+msgstr "Pz.Kpfw Neu"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_obj"
+msgid "Object 268 'St. John 's Wort' Type C"
+msgstr "Object 268 'St. John 's Wort' Type C"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_panzerb"
+msgid "Pz.Kpfw B2 740(f)"
+msgstr "Pz.Kpfw B2 740(f)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_pz"
+msgid "Pz.Kpfw 756(r) 'KW-IB KwK 40 L/43' (+1)"
+msgstr "Pz.Kpfw 756(r) 'KW-IB KwK 40 L/43' (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_pzbefwgvi"
+msgid "Pz.Bfw VI P"
+msgstr "Pz.Bfw VI P"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_pzkpfw"
+msgid "Pz.Kpfw Tiger II Ausf.B (Sla. 16) (+1)"
+msgstr "Pz.Kpfw Tiger II Ausf.B (Sla. 16) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_rhmb"
+msgid "Rheinmetall Borsig WT"
+msgstr "Rheinmetall Borsig WT"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_sge"
+msgid "StuG E-100"
+msgstr "StuG E-100"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_taschenratte"
+msgid "Taschenratte"
+msgstr "Taschenratte"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_tiger"
+msgid "Pz.Kpfw Tiger II Ausf.B (+6)"
+msgstr "Pz.Kpfw Tiger II Ausf.B (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_tigermaus"
+msgid "Tiger-Maus"
+msgstr "Tiger-Maus"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_vk"
+msgid "VK4503 (+2)"
+msgstr "VK4503 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_heavy_tanks_xiniu"
+msgid "Rinoceronte"
+msgstr "Rinoceronte"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_bison"
+msgid "Sturmpanzer I"
+msgstr "Sturmpanzer I"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_flakpanzer"
+msgid "Flakpanzer I"
+msgstr "Flakpanzer I"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_geschutzwagen"
+msgid "Geschuetzwagen 39H(f) (7.5cm)"
+msgstr "Geschuetzwagen 39H(f) (7.5cm)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_grille"
+msgid "Grille Ausf.K (15cm) (+1)"
+msgstr "Grille Ausf.K (15cm) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_h"
+msgid "H39 Turret"
+msgstr "H39 Turret"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_nbfz"
+msgid "Pz.Kpfw Nb.Fz"
+msgstr "Pz.Kpfw Nb.Fz"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_panzer"
+msgid "Pz.Kpfw II Ausf.L (+6)"
+msgstr "Pz.Kpfw II Ausf.L (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_panzerjager"
+msgid "Panzerjäger I"
+msgstr "Panzerjäger I"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_pz"
+msgid "Pz.Kpfw. II Ausf. J (+6)"
+msgstr "Pz.Kpfw. II Ausf. J (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_pzkpfw"
+msgid "Pz.Sfl.Ic"
+msgstr "Pz.Sfl.Ic"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_vfw"
+msgid "VFW"
+msgstr "VFW"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_vk"
+msgid "VK1602-early 'Leopard' 5cm 1943 (+2)"
+msgstr "VK1602-early 'Leopard' 5cm 1943 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_light_tanks_wespe"
+msgid "Wespe"
+msgstr "Wespe"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_bison"
+msgid "Sturmpanzer II"
+msgstr "Sturmpanzer II"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_coelian"
+msgid "FlakPz.V Mammut (+1)"
+msgstr "FlakPz.V Mammut (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_dicker"
+msgid "Dicker Max"
+msgstr "Dicker Max"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_e"
+msgid "E-50 10.5cm L/73 (+13)"
+msgstr "E-50 10.5cm L/73 (+13)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_ezart"
+msgid "Ersatz M10"
+msgstr "Ersatz M10"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_grille"
+msgid "Grille 15 'Pinocchio' Recon"
+msgstr "Grille 15 'Pinocchio' Recon"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_hummel"
+msgid "Hummel"
+msgstr "Hummel"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_kugelblitz"
+msgid "Kugelblitz"
+msgstr "Kugelblitz"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_ostwind"
+msgid "FlakPz.IV Ostwind"
+msgstr "FlakPz.IV Ostwind"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_panther"
+msgid "Pz.Kpfw Ausf. F (8.8cm KwK 43 L/71) (+4)"
+msgstr "Pz.Kpfw Ausf. F (8.8cm KwK 43 L/71) (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_panzer"
+msgid "Pz.Kpfw Panther Ausf.G (+21)"
+msgstr "Pz.Kpfw Panther Ausf.G (+21)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_sdkfz"
+msgid "Sd.Kfz 303b (+1)"
+msgstr "Sd.Kfz 303b (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_sherman"
+msgid "Pz.Kpfw M4A4 748(e) 'Firefly'"
+msgstr "Pz.Kpfw M4A4 748(e) 'Firefly'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_sig"
+msgid "StuIG 33"
+msgstr "StuIG 33"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_strumpanzer"
+msgid "Sturmpanther (15cm)"
+msgstr "Sturmpanther (15cm)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_stuh"
+msgid "StuH 42 Ausf.G"
+msgstr "StuH 42 Ausf.G"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_vk"
+msgid "VK 30.01 (D) (+1)"
+msgstr "VK 30.01 (D) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_waffletractor"
+msgid "Krupp-Steyr Waffenträger"
+msgstr "Krupp-Steyr Waffenträger"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_wirbelwind"
+msgid "FlakPz.IV Wirbelwind"
+msgstr "FlakPz.IV Wirbelwind"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_medium_tanks_zhane"
+msgid "Coccodrillo"
+msgstr "Coccodrillo"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_e"
+msgid "Jagdpanzer E-50 (+4)"
+msgstr "Jagdpanzer E-50 (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_elefant"
+msgid "Panzerjäger Tiger (P) 'Elefant'"
+msgstr "Panzerjäger Tiger (P) 'Elefant'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_ferdinand"
+msgid "Panzerjäger Tiger (P) 'Ferdinand'"
+msgstr "Panzerjäger Tiger (P) 'Ferdinand'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_hetzer"
+msgid "Jagdpanzer 38"
+msgstr "Jagdpanzer 38"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_jagdpanther"
+msgid "Jagdpanther"
+msgstr "Jagdpanther"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_jagdpanzer"
+msgid "Jagdpanzer IV (+3)"
+msgstr "Jagdpanzer IV (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_jagdtiger"
+msgid "Panzerjäger Tiger Ausf.B 'Jagdtiger'"
+msgstr "Panzerjäger Tiger Ausf.B 'Jagdtiger'"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_marder"
+msgid "Marder II (+1)"
+msgstr "Marder II (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_nashorn"
+msgid "Nashorn"
+msgstr "Nashorn"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_stug"
+msgid "StuG III Ausf.G (Early) (+4)"
+msgstr "StuG III Ausf.G (Early) (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_sturmpanzer"
+msgid "Sturmpanzer IV"
+msgstr "Sturmpanzer IV"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_tank_destroyers___spg_sturmtiger"
+msgid "Sturmmörser"
+msgstr "Sturmmörser"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_bergepanther"
+msgid "Bergepanther"
+msgstr "Bergepanther"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_bf"
+msgid "Bf 110 E-2 (+1)"
+msgstr "Bf 110 E-2 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_blitz"
+msgid "Opel Blitz (2cm) (+5)"
+msgstr "Opel Blitz (2cm) (+5)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_bmw"
+msgid "BMW R71 (MG34)"
+msgstr "BMW R71 (MG34)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_citroen"
+msgid "Citroën 7 (WH)"
+msgstr "Citroën 7 (WH)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_daf"
+msgid "Pz.BfW. DAF 201(h) (+1)"
+msgstr "Pz.BfW. DAF 201(h) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_fi"
+msgid "Fi-156"
+msgstr "Fi-156"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_kettenkrad"
+msgid "Sd.Kfz 2 (Engineer) (+1)"
+msgstr "Sd.Kfz 2 (Engineer) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_kfz"
+msgid "Kfz.14 Command (+3)"
+msgstr "Kfz.14 Command (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_kubelwagen"
+msgid "VW82 Kübelwagen (MG34) (+2)"
+msgstr "VW82 Kübelwagen (MG34) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_me"
+msgid "Me 262A-1a/U4 (+2)"
+msgstr "Me 262A-1a/U4 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_opel"
+msgid "Opel Maultier"
+msgstr "Opel Maultier"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_p"
+msgid "Pz.SpW. P204(f) (+1)"
+msgstr "Pz.SpW. P204(f) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_panzerwerfer"
+msgid "Panzerwerfer 42"
+msgstr "Panzerwerfer 42"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_pbil"
+msgid "Pz.SpW. M39(d)"
+msgstr "Pz.SpW. M39(d)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_pzspwg"
+msgid "Pz.SpW. P204(f) KwK"
+msgstr "Pz.SpW. P204(f) KwK"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_schwimmwagen"
+msgid "VW166 Schwimmwagen"
+msgstr "VW166 Schwimmwagen"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_sdkfz"
+msgid "Sd.Kfz 251/1 Ausf. D (Wurfrahmen 40) (+32)"
+msgstr "Sd.Kfz 251/1 Ausf. D (Wurfrahmen 40) (+32)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_unic"
+msgid "Unic U304(f)"
+msgstr "Unic U304(f)"
+
+msgctxt "mission/ctatoybox_spawn/group_ger_vehicles_wanze"
+msgid "Borgward IV Panzerjäger Wanze (+2)"
+msgstr "Borgward IV Panzerjäger Wanze (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_guns_cm"
+msgid "Type 89 15cm (+2)"
+msgstr "Type 89 15cm (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_guns_inf"
+msgid "Japanese Ammo Crate"
+msgstr "Japanese Ammo Crate"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_guns_mm"
+msgid "105mm Experimental AT Gun (+38)"
+msgstr "105mm Experimental AT Gun (+38)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_guns_stationary"
+msgid "Type 92 HMG (+4)"
+msgstr "Type 92 HMG (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_guns_type"
+msgid "Type 21 Rocket Booster (+8)"
+msgstr "Type 21 Rocket Booster (+8)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ft"
+msgid "Ko-Gata Sensha (MG) (+1)"
+msgstr "Ko-Gata Sensha (MG) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ha"
+msgid "Type 95 Ha-Go (Late) (+4)"
+msgstr "Type 95 Ha-Go (Late) (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ho"
+msgid "Type 4 Ho-To (+1)"
+msgstr "Type 4 Ho-To (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ka"
+msgid "Type 2 Ka-Mi (+3)"
+msgstr "Type 2 Ka-Mi (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ke"
+msgid "Type 5 Ke-Ho (+3)"
+msgstr "Type 5 Ke-Ho (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ki"
+msgid "Ki-To"
+msgstr "Ki-To"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_m"
+msgid "M3 Stuart (Early)"
+msgstr "M3 Stuart (Early)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_so"
+msgid "Type 98 So-Ki"
+msgstr "Type 98 So-Ki"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_ta"
+msgid "Type 98 Ta-Se"
+msgstr "Type 98 Ta-Se"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_te"
+msgid "Type 97 Te-Ke MG (Prototype) (+2)"
+msgstr "Type 97 Te-Ke MG (Prototype) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_light_tanks_type"
+msgid "Type 94 TK MG (early) (+1)"
+msgstr "Type 94 TK MG (early) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_chi"
+msgid "Type 5 Chi-Ri II (+21)"
+msgstr "Type 5 Chi-Ri II (+21)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_ho"
+msgid "Type 1 Ho-Ni-II (+4)"
+msgstr "Type 1 Ho-Ni-II (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_i"
+msgid "Type 89 I-Go (Late) (+3)"
+msgstr "Type 89 I-Go (Late) (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_ka"
+msgid "Type 3 Ka-Ho (+2)"
+msgstr "Type 3 Ka-Ho (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_se"
+msgid "Type 97 Se-Ri"
+msgstr "Type 97 Se-Ri"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_shi"
+msgid "Type 97 Shi-Ki"
+msgstr "Type 97 Shi-Ki"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_ss"
+msgid "Soukou Sagyou Ki"
+msgstr "Soukou Sagyou Ki"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_medium_tanks_to"
+msgid "Type 5 To-Ku (+1)"
+msgstr "Type 5 To-Ku (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_a"
+msgid "A6M3"
+msgstr "A6M3"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_b"
+msgid "B5N2 (+1)"
+msgstr "B5N2 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_chi"
+msgid "Type 4 Chi-So"
+msgstr "Type 4 Chi-So"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_ha"
+msgid "Type 4 Ha-To"
+msgstr "Type 4 Ha-To"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_ho"
+msgid "Type 1 Ho-Ha"
+msgstr "Type 1 Ho-Ha"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_ki"
+msgid "Mitsubishi Ki-57 'Topsy' (+1)"
+msgstr "Mitsubishi Ki-57 'Topsy' (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_kikka"
+msgid "Nakajima Kikka"
+msgstr "Nakajima Kikka"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_m"
+msgid "M2 Halftrack"
+msgstr "M2 Halftrack"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_mm"
+msgid "Type 94 (150mm Mortar)"
+msgstr "Type 94 (150mm Mortar)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_na"
+msgid "Type 5 Na-To"
+msgstr "Type 5 Na-To"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_overvalwagen"
+msgid "Overvalwagen (Luchtverdediging Versie) (+2)"
+msgstr "Overvalwagen (Luchtverdediging Versie) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_so"
+msgid "Type 98 So-Da (Ammo) (+1)"
+msgstr "Type 98 So-Da (Ammo) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_jap_vehicles_type"
+msgid "Type 94 TK (late) (+16)"
+msgstr "Type 94 TK (late) (+16)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_ap"
+msgid "2-AP-3 (Supply)"
+msgstr "2-AP-3 (Supply)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_broneschitok"
+msgid "Gun Shield (Ski) (+2)"
+msgstr "Gun Shield (Ski) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_d"
+msgid "152mm D1 M1943 (+1)"
+msgstr "152mm D1 M1943 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_ds"
+msgid "DS-39 Stand"
+msgstr "DS-39 Stand"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_dshk"
+msgid "DShK M1938 Stand (+2)"
+msgstr "DShK M1938 Stand (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_inf"
+msgid "Soviet Ammo Crate"
+msgstr "Soviet Ammo Crate"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_m"
+msgid "Ampulomet M1941"
+msgstr "Ampulomet M1941"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_maxim"
+msgid "Maxim M1910/30 (+3)"
+msgstr "Maxim M1910/30 (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_mm"
+msgid "280mm Br-5 M1939 (+35)"
+msgstr "280mm Br-5 M1939 (+35)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_guns_sg"
+msgid "SG-43 Stand"
+msgstr "SG-43 Stand"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_bj"
+msgid "Object 268 'St. John 's Wort'"
+msgstr "Object 268 'St. John 's Wort'"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_bz"
+msgid "BZ-79 (+2)"
+msgstr "BZ-79 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_bzt"
+msgid "BZT-70S"
+msgstr "BZT-70S"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_churchill"
+msgid "Churchill Mk.III"
+msgstr "Churchill Mk.III"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_ct"
+msgid "CT-2"
+msgstr "CT-2"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_is"
+msgid "IS-5 (+13)"
+msgstr "IS-5 (+13)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_kv"
+msgid "KV-5 (+21)"
+msgstr "KV-5 (+21)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_matilda"
+msgid "MK-II"
+msgstr "MK-II"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_obj"
+msgid "Object 260 (+7)"
+msgstr "Object 260 (+7)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_object"
+msgid "Object 279 (+4)"
+msgstr "Object 279 (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_ptz"
+msgid "PTZ-78"
+msgstr "PTZ-78"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_smk"
+msgid "SMK (+1)"
+msgstr "SMK (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_sp"
+msgid "114 SP2"
+msgstr "114 SP2"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_su"
+msgid "SU-100Y (+2)"
+msgstr "SU-100Y (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_t"
+msgid "T-VI-100 (+6)"
+msgstr "T-VI-100 (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_heavy_tanks_tet"
+msgid "Tet-100"
+msgstr "Tet-100"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_a"
+msgid "A-20"
+msgstr "A-20"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_bt"
+msgid "BT-7A (+4)"
+msgstr "BT-7A (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_kht"
+msgid "KhT-130 (Flame) (+1)"
+msgstr "KhT-130 (Flame) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_m"
+msgid "M3A1 Stuart (+1)"
+msgstr "M3A1 Stuart (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_rbt"
+msgid "RBT-5"
+msgstr "RBT-5"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_su"
+msgid "SU-26 (+2)"
+msgstr "SU-26 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_t"
+msgid "BM-8-24 (T-60) (+13)"
+msgstr "BM-8-24 (T-60) (+13)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_vz"
+msgid "Vz. 71 (+1)"
+msgstr "Vz. 71 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_light_tanks_zut"
+msgid "ZUT-37"
+msgstr "ZUT-37"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_m"
+msgid "M4A2(76)W (Late) (+5)"
+msgstr "M4A2(76)W (Late) (+5)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_obj"
+msgid "Object 907"
+msgstr "Object 907"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_pgz"
+msgid "PGZ70"
+msgstr "PGZ70"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_su"
+msgid "SU-100 (+3)"
+msgstr "SU-100 (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_t"
+msgid "T-54-1949 (+30)"
+msgstr "T-54-1949 (+30)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_valentine"
+msgid "Valentine Mk.IX (+2)"
+msgstr "Valentine Mk.IX (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_ba"
+msgid "BA-20 Command (+4)"
+msgstr "BA-20 Command (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_bm"
+msgid "BM-31-12 Andryusha (+1)"
+msgstr "BM-31-12 Andryusha (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_fai"
+msgid "FAI-M"
+msgstr "FAI-M"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_gaz"
+msgid "GAZ-AAA 72-K (+7)"
+msgstr "GAZ-AAA 72-K (+7)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_il"
+msgid "IL-2 M1942"
+msgstr "IL-2 M1942"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_ksp"
+msgid "KSP-76"
+msgstr "KSP-76"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_m"
+msgid "M3A1E1 Scout Car (MG) (+2)"
+msgstr "M3A1E1 Scout Car (MG) (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_mmg"
+msgid "Carrier Medium MG"
+msgstr "Carrier Medium MG"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_nkl"
+msgid "NKL-26"
+msgstr "NKL-26"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_po"
+msgid "U-2"
+msgstr "U-2"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_stalinetz"
+msgid "Stalinets-60"
+msgstr "Stalinets-60"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_t"
+msgid "T-70 VT-42 (+2)"
+msgstr "T-70 VT-42 (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_universal"
+msgid "Universal Carrier"
+msgstr "Universal Carrier"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_yag"
+msgid "YaG-10 29-K"
+msgstr "YaG-10 29-K"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_yak"
+msgid "Yak-1-69"
+msgstr "Yak-1-69"
+
+msgctxt "mission/ctatoybox_spawn/group_rus_vehicles_zis"
+msgid "BM-13-16 (ZiS-6) (+4)"
+msgstr "BM-13-16 (ZiS-6) (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_ammo"
+msgid "Cargo Trailer 1/4-Ton (Supply)"
+msgstr "Cargo Trailer 1/4-Ton (Supply)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_cal"
+msgid "M55 Quadmount"
+msgstr "M55 Quadmount"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_inf"
+msgid "American Ammo Crate (+1)"
+msgstr "American Ammo Crate (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_little"
+msgid "36-Inch Little David"
+msgstr "36-Inch Little David"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_m"
+msgid "Browning M2HB (+4)"
+msgstr "Browning M2HB (+4)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_mm"
+msgid "8-inch Howitzer M1 (+36)"
+msgstr "8-inch Howitzer M1 (+36)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_t"
+msgid "105mm Gun T8"
+msgstr "105mm Gun T8"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_tri"
+msgid "Polsten Triple Gun"
+msgstr "Polsten Triple Gun"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_guns_usa"
+msgid "Stretcher"
+msgstr "Stretcher"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_aht"
+msgid "AHT-7"
+msgstr "AHT-7"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_blackrock"
+msgid "Blackrock"
+msgstr "Blackrock"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_gorilla"
+msgid "Gorilla"
+msgstr "Gorilla"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_m"
+msgid "M-V-Y '120mm Gun T124' (+8)"
+msgstr "M-V-Y '120mm Gun T124' (+8)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_t"
+msgid "T110E5 (+12)"
+msgstr "T110E5 (+12)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_tp"
+msgid "60TP AA 'Lewandowskiego' (+1)"
+msgstr "60TP AA 'Lewandowskiego' (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_heavy_tanks_us"
+msgid "T32E1 (+6)"
+msgstr "T32E1 (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_medium_tanks_ares"
+msgid "Ares 90C"
+msgstr "Ares 90C"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_medium_tanks_jumbo"
+msgid "M4/T26 “Jumbo”"
+msgstr "M4/T26 “Jumbo”"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_medium_tanks_m"
+msgid "105mm HMC M7B1 (+38)"
+msgstr "105mm HMC M7B1 (+38)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_medium_tanks_skink"
+msgid "Skink"
+msgstr "Skink"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_medium_tanks_t"
+msgid "T1E3 M4A1 (Late) (+1)"
+msgstr "T1E3 M4A1 (Late) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_medium_tanks_us"
+msgid "90mm GMC M36B2 (+5)"
+msgstr "90mm GMC M36B2 (+5)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_ammo"
+msgid "Cargo Trailer 1/4-Ton (Supply)"
+msgstr "Cargo Trailer 1/4-Ton (Supply)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_c"
+msgid "Douglas C-47 Skytrain"
+msgstr "Douglas C-47 Skytrain"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_cckw"
+msgid "GMC CCKW (HMG) (+6)"
+msgstr "GMC CCKW (HMG) (+6)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_f"
+msgid "P-80B Shooting Star (+1)"
+msgstr "P-80B Shooting Star (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_gmc"
+msgid "GMC CCKW-352 T27 ‘Xylophone’ (HMG) (+1)"
+msgstr "GMC CCKW-352 T27 ‘Xylophone’ (HMG) (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_lvt"
+msgid "LVT-4"
+msgstr "LVT-4"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_m"
+msgid "81mm Mortar Carrier M21 (+24)"
+msgstr "81mm Mortar Carrier M21 (+24)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_p"
+msgid "Republic P-47D-22 Razorback (+2)"
+msgstr "Republic P-47D-22 Razorback (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_t"
+msgid "105mm HMC T19 (+1)"
+msgstr "105mm HMC T19 (+1)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_tiz"
+msgid "Harley-Davidson WLA"
+msgstr "Harley-Davidson WLA"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_us"
+msgid "T55E1 (+3)"
+msgstr "T55E1 (+3)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_wc"
+msgid "WC-51 T27 'Xylophone' (+2)"
+msgstr "WC-51 T27 'Xylophone' (+2)"
+
+msgctxt "mission/ctatoybox_spawn/group_usa_vehicles_willys"
+msgid "Willys MB (Rocket Launcher) 'Field mod' (+10)"
+msgstr "Willys MB (Rocket Launcher) 'Field mod' (+10)"
 
 msgctxt "mission/ctatoybox_spawn/guns"
 msgid "Guns"
@@ -1079,6 +1427,10 @@ msgstr "미국"
 msgctxt "mission/ctatoybox_spawn/next"
 msgid "Next"
 msgstr "다음"
+
+msgctxt "mission/ctatoybox_spawn/no_nation"
+msgid "No nation spawn mod is enabled"
+msgstr "국가 스폰 모드가 켜져 있지 않다"
 
 msgctxt "mission/ctatoybox_spawn/owner_0"
 msgid "Auto assign"

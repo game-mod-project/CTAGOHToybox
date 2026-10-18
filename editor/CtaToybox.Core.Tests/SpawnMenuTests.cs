@@ -38,10 +38,11 @@ static class SpawnMenuTests
         var skipped = new List<string>();
         var r = MenuBuilder.Build(cat, new MenuOptions(), null, b => o.Stack.Find(SpawnCatalog.BreedFile(b)) != null, skipped);
 
-        var unitTexts = r.Screens.Where(s => s.Army == "ger").SelectMany(s => s.Buttons).Where(b => b.Event.StartsWith("ctb_e_u") || b.Event.StartsWith("ctb_e_a")).Select(b => b.Text).ToList();
+        var unitTexts = r.Screens.Where(s => s.Army == "ger").SelectMany(s => s.Buttons).Where(b => b.Event.StartsWith("ctb_e_u") || Regex.IsMatch(b.Event, "^ctb_e_a[0-9]")).Select(b => b.Text).ToList();
         var ger = cat.Units.Where(u => u.Army == "ger").Select(u => "desc/entity/" + u.Name).ToList();
         T.Eq(ger.OrderBy(x => x).ToArray(), unitTexts.OrderBy(x => x).ToArray(), "menu_pages_cover_all: every German unit once: missing " + string.Join(",", ger.Except(unitTexts)) + " skipped " + string.Join("; ", skipped));
-        T.True(r.Screens.All(s => s.Buttons.Count <= 21 + 4), "page size plus navigation: " + r.Screens.Max(s => s.Buttons.Count));
+        T.True(r.Screens.Where(s => s.Title != "Owner").All(s => s.Buttons.Count <= 21 + 4), "page size plus navigation: " + r.Screens.Where(s => s.Title != "Owner").Max(s => s.Buttons.Count));
+        T.True(r.Screens.Where(s => s.Title == "Owner").All(s => s.Buttons.Count == MenuBuilder.OwnerChoices.Length + 10 + 2), "owner screen: choices, (you) variants, Back, Home");
         T.True(r.Screens.Any(s => s.Title == "Medium tanks") && r.Screens.Any(s => s.Title.StartsWith("Medium tanks / pz")), "an over-full list gets a family screen");
         T.True(r.Screens.Where(s => s.Army != null && s.Title != "Home").All(s => s.Buttons.Any(b => b.Event == "ctb_e_home")), "every screen has Home");
         T.True(r.Screens.Where(s => s.Army != null && s.Title != "Home").All(s => s.Buttons.Count(b => b.Event.StartsWith("ctb_e_s")) >= 1), "every screen has Back");
@@ -90,7 +91,7 @@ static class SpawnMenuTests
             trig = trig.Substring(0, trig.IndexOf("{\"trigger\""));
             T.True(trig.Contains("{\"loop\" " + b.Shots + "\r\n") && trig.Contains("{waypoint \"ctb_wp_" + b.Key + "\"}"), "barrage loops its shots on its own waypoint: " + b.Key);
             T.True(menu.Contains("{\"ctb_wp_" + b.Key + "\" {position -9546.01 7248.6 0} {radius " + b.Radius + "}}"), "barrage waypoint has its spread radius: " + b.Key);
-            T.Eq("ctb_wp_" + b.Key, r.Screens.SelectMany(s => s.Buttons).Single(x => x.Event == "ctb_e_" + b.Key).Waypoint, "the barrage button picks its own waypoint: " + b.Key);
+            T.Eq("ctb_wp_" + b.Key, r.Screens.SelectMany(s => s.Buttons).First(x => x.Event == "ctb_e_" + b.Key).Waypoint, "the barrage button picks its own waypoint: " + b.Key);
         }
         T.True(MenuBuilder.Barrages.Select(b => b.Shots).SequenceEqual(MenuBuilder.Barrages.Select(b => b.Shots).OrderBy(x => x)) && MenuBuilder.Barrages.First().Shots == 5 && MenuBuilder.Barrages.Last().Shots == 20, "small 5 to large 20");
         // 맨 위 Spawn 단추는 여닫기
@@ -102,7 +103,7 @@ static class SpawnMenuTests
         // 처음엔 Spawn만, 소속 기본은 나(설계 "첫 화면"·"국가와 소속", 사용자 지적 2026-10-18)
         string start = menu.Substring(menu.IndexOf("{\"ctb_start\""));
         start = start.Substring(0, start.IndexOf("{\"ctb_find_me\""));
-        var ownerScreen = r.Screens.Single(s => s.Title == "Owner");
+        var ownerScreen = r.Screens.Single(s => s.Title == "Owner" && s.Army == "ger");
         T.True(!start.Contains("{name \"ctb_s" + ownerScreen.Id + "_*\"}") && start.Contains("{name \"ctb_s*\"}") && start.Contains("{name \"ctb_root\"}"), "start shows only the Spawn button: " + start);
         T.True(Regex.IsMatch(start, "\"ctb_owner\\$\"\\} \\{op \"=\"\\} \\{value " + MenuBuilder.MeOwner + "\\}"), "start owner is me");
         T.True(menu.Contains("{\"ctb_find_me\"") && menu.Contains("{state user_control}") && menu.Contains("{type entities}"), "my number is looked up in the match");
@@ -139,5 +140,30 @@ static class SpawnMenuTests
         string pot = MenuBuilder.Pot(r);
         T.True(pot.Contains("msgctxt \"mission/ctatoybox_spawn/tanks\"\nmsgid \"Tanks\""), "menu words in the pot");
         T.True(Regex.Matches(menu, "\\{text \"mission/ctatoybox_spawn/([^\"]+)\"\\}").Select(m => "mission/ctatoybox_spawn/" + m.Groups[1].Value).All(r.Strings.ContainsKey), "every menu text key is in the pot");
+
+        // 함께 켜기(2026-10-18): 견본 존재를 견본 태그로 직접 보고, 시작 국가를 견본 있는 국가로, 없으면 안내 화면
+        string check = menu.Substring(menu.IndexOf("{\"ctb_check\""));
+        check = check.Substring(0, check.IndexOf("{\"ctb_owner\""));
+        foreach (string army in r.TemplateFiles.Where(kv => kv.Value.Contains("{Human ") || kv.Value.Contains("{Entity ")).Select(kv => kv.Key))
+            T.True(check.Contains("\"ctb_has_" + army + "$\"") && Regex.IsMatch(check, "\\{tag \"ctb_[ha][0-9]+\"\\}"), "presence checked by a template tag: " + army);
+        T.True(start.Contains("{function \"ctb_check\"}") && start.Contains("\"ctb_has_ger$\""), "start picks a nation that has templates");
+        var none = r.Screens.Single(s => s.Title == "No nation");
+        T.True(homeFn.Contains("{name \"ctb_s" + none.Id + "_*\"}"), "no nation: the hint screen");
+        T.True(menu.Contains("{ignore_captured_by_user 0}") && menu.Contains("{\"ctb_mine\""), "my number: vanilla selector flag and the guess fallback");
+        T.True(r.Screens.Count(s => s.Title == "Support") == MenuBuilder.Armies(cat).Count && r.Screens.Count(s => s.Title == "Tools") == MenuBuilder.Armies(cat).Count, "support and tools per nation");
+        T.Eq(0, Pairs(menu).Count, "still pairs up");
+        T.Eq(0, SdlCore.Parse(MenuBuilder.ConquestFile()).Errors.Count, "conquest guess file parses");
+        T.True(MenuBuilder.ConquestFile().Contains("\"id_1st_player$\"") && MenuBuilder.ConquestFile().Contains("\"ctb_guess$\""), "conquest guess reads id_1st_player");
+
+        // 아이콘(2026-10-18): 묶음 단추는 대표 유닛(아이콘 있음, cost 가장 큼), 분대는 낱말이 겹치는 분대 그림, 계열 글자는 대표 이름 + (+N)
+        var icons = new HashSet<string>(cat.Units.Where(u => u.Army == "ger" && u.Category == "medium").Select(u => u.Name).Take(3)) { "squad_sq_heavy(ger)", "button_1_ger", "single_officer(ger)" };
+        var ri = MenuBuilder.Build(cat, new MenuOptions(), icons.Contains, b => o.Stack.Find(SpawnCatalog.BreedFile(b)) != null, new List<string>(), icons, def => "Name " + def.Substring(def.LastIndexOf('/') + 1));
+        var medium = ri.Screens.Single(s => s.Army == "ger" && s.Title == "Tanks").Buttons.Single(b => b.Text.EndsWith("/cat_medium"));
+        T.True(icons.Contains(medium.Image) && medium.Image != "button_5_ger", "category button shows a representative unit icon: " + medium.Image);
+        var sqButton = ri.Screens.SelectMany(s => s.Buttons).First(b => b.Text == "desc/squad/sq_a(ger)");
+        T.Eq("squad_sq_heavy(ger)", sqButton.Image, "squad icon by shared name words");
+        var groupTexts = ri.Screens.Where(s => s.Title == "Medium tanks").SelectMany(s => s.Buttons).Select(b => ri.Strings.TryGetValue(b.Text, out var t) ? t : "").Where(t => t.StartsWith("Name ")).ToList();
+        T.True(groupTexts.Any(t => Regex.IsMatch(t, "^Name \\S+\\.def \\(\\+[0-9]+\\)$")), "family button text is the representative name and the rest count: " + string.Join(",", groupTexts.Take(3)));
+        T.True(ri.Screens.Where(s => s.Army == "ger" && s.Title == "Home").SelectMany(s => s.Buttons).Any(b => b.Image == "single_officer(ger)"), "owner label uses the officer icon");
     }
 }

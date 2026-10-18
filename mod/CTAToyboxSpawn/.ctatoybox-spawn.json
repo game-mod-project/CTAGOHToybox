@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-18T07:59:24Z",
+  "builtAt": "2026-10-18T21:18:16Z",
   "files": [
     {
       "path": ".ctatoybox-spawn-text.pot"
@@ -300,6 +300,27 @@
     },
     {
       "path": "resource/interface/scene/unit_icon/button_9_usa_03.tga"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/campaign_templates_eng.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/campaign_templates_fin.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/campaign_templates_ger.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/campaign_templates_jap.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/campaign_templates_rus.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/campaign_templates_usa.mi"
+    },
+    {
+      "path": "resource/map/ctatoybox_spawn/conquest_me.mi"
     },
     {
       "path": "resource/map/ctatoybox_spawn/menu.mi"
