@@ -45,7 +45,7 @@ namespace CtaToybox.Core.Spawn
 
         // 게임 mods 아래의 모드 폴더는 저장소 폴더를 가리키는 정션일 수 있다(mods\ctatoyboxspawn → mod\CTAToyboxSpawn).
         // 정션을 풀지 않으면 스폰 모드 자신의 지난 생성물을 원본으로 읽는다(2026-10-17: 로스터 146개가 지워졌다)
-        static string Full(string path)
+        public static string Full(string path)
         {
             string full = Path.GetFullPath(path).TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
             // 위로 올라가며 처음 만나는 정션을 그 대상으로 바꾼다(mods\ctatoyboxspawn\resource → mod\CTAToyboxSpawn\resource)

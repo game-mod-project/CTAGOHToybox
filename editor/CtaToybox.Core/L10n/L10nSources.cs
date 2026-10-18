@@ -1,6 +1,6 @@
 // 현지화 층을 읽어 경로마다 원문을 정한다(스펙 "넣는 자리"). 순서: 바닐라 localizations/default.pak → options.set의 모드 순서마다
 // <모드>/localizations/default.pak, 이어서 <모드>/localizations/default/**/*.pot(같은 모드 안에서는 낱개가 이긴다). 뒤가 이긴다.
-// 출력 모드는 GameProfile이 층에서 이미 뺀다(한국어가 원문 자리에 섞이지 않게). 마운트 순서는 game.log 64·164행(2026-10-17 확인)
+// 출력 모드는 GameProfile이 층에서 이미 뺀다(한국어가 원문 자리에 섞이지 않게). 스폰 모드는 한국어 .pot 대신 영어 원문(SpawnGenerator.SourcePotPath)만 읽는다. 마운트 순서는 game.log 64·164행(2026-10-17 확인)
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -47,9 +47,16 @@ namespace CtaToybox.Core.L10n
                 }
             }
             Pak(System.IO.Path.Combine(settings.GameDir, "localizations", "default.pak"), "vanilla");
+            string spawnRoot = string.IsNullOrEmpty(settings.OutputModDir) && string.IsNullOrEmpty(settings.SpawnModDir) ? null : Spawn.SpawnSources.Full(Spawn.SpawnSources.SpawnModDirOf(settings));
             foreach (var layer in plan.Layers.Where(l => l.Name != "vanilla"))
             {
                 string root = System.IO.Path.GetDirectoryName(System.IO.Path.GetFullPath(layer.ResourceDir));
+                string spawnText = System.IO.Path.Combine(root, Spawn.SpawnGenerator.SourcePotPath);
+                if (spawnRoot != null && File.Exists(spawnText) && string.Equals(Spawn.SpawnSources.Full(root), spawnRoot, StringComparison.OrdinalIgnoreCase))
+                {
+                    Put(Spawn.SpawnGenerator.L10nPath, layer.Name, File.ReadAllText(spawnText, Encoding.UTF8));
+                    continue;
+                }
                 Pak(System.IO.Path.Combine(root, "localizations", "default.pak"), layer.Name);
                 string dir = System.IO.Path.Combine(root, "localizations", "default");
                 if (!Directory.Exists(dir)) continue;
