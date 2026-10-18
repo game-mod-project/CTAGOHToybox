@@ -587,7 +587,7 @@ msgstr "'강철 헬멧' Ssh-39"
 
 msgctxt "desc/stuff/sov_helm_para"
 msgid "Desantnik helmet"
-msgstr "데산트니크 헬멧"
+msgstr "전차 탑승병 헬멧"
 
 msgctxt "desc/stuff/sov_cap_peaked_cav_var1"
 msgid "RKKA Visor Cap - Officer [Cavalry]"

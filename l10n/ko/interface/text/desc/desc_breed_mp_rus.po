@@ -28,7 +28,7 @@ msgstr "소총 유탄병 [KA]"
 
 msgctxt "desc/human/mp/rus/early/antitank_4"
 msgid "Rifle AT grenadier [KA]"
-msgstr "소총 대전차 그레나디어 [KA]"
+msgstr "소총 대전차 척탄병 [KA]"
 
 msgctxt "desc/human/mp/rus/early/antitank_5"
 msgid "Rifle AT Ammo Bearer [KA]"
@@ -56,19 +56,19 @@ msgstr "징집병 소총수 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_1"
 msgid "Cossack [KA]"
-msgstr "코사크 [KA]"
+msgstr "카자크 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_2"
 msgid "Cossack [KA]"
-msgstr "코사크 [KA]"
+msgstr "카자크 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_3"
 msgid "Cossack [KA]"
-msgstr "코사크 [KA]"
+msgstr "카자크 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_nco"
 msgid "Cossack Squad Leader [KA]"
-msgstr "코사크 분대장 [KA]"
+msgstr "카자크 분대장 [KA]"
 
 msgctxt "desc/human/mp/rus/early/engineer_1"
 msgid "Field Engineer [KA]"
@@ -216,35 +216,35 @@ msgstr "수감된 신병 [NKVD]"
 
 msgctxt "desc/human/mp/rus/early/para_1"
 msgid "Desantnik Squadleader [VVS]"
-msgstr "데산트니크 분대장 [VVS]"
+msgstr "전차 탑승병 분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_2"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_3"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_4"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_5"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_mg"
 msgid "Desantnik MG Operator [VVS]"
-msgstr "데산트니크 기관총 사수 [VVS]"
+msgstr "전차 탑승병 기관총 사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_mg_asst"
 msgid "Desantnik MG Asst. [VVS]"
-msgstr "데산트니크 기관총 부사수 [VVS]"
+msgstr "전차 탑승병 기관총 부사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_nco"
 msgid "Desantnik Squadleader [VVS]"
-msgstr "데산트니크 분대장 [VVS]"
+msgstr "전차 탑승병 분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/partisan_1"
 msgid "Partisan [KA]"
@@ -776,7 +776,7 @@ msgstr "소총 유탄병 [KA]"
 
 msgctxt "desc/human/mp/rus/mid/antitank_4"
 msgid "Rifle AT grenadier [KA]"
-msgstr "소총 대전차 그레나디어 [KA]"
+msgstr "소총 대전차 척탄병 [KA]"
 
 msgctxt "desc/human/mp/rus/mid/antitank_ptrs"
 msgid "AT. Inf. [KA]"
@@ -1008,35 +1008,35 @@ msgstr "수감된 신병 [NKVD]"
 
 msgctxt "desc/human/mp/rus/mid/para_1"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_2"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_3"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_4"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_5"
 msgid "Desantnik [VVS]"
-msgstr "데산트니크 [VVS]"
+msgstr "전차 탑승병 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_mg"
 msgid "Desantnik MG Operator [VVS]"
-msgstr "데산트니크 기관총 사수 [VVS]"
+msgstr "전차 탑승병 기관총 사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_mg_asst"
 msgid "Desantnik MG Asst. [VVS]"
-msgstr "데산트니크 기관총 부사수 [VVS]"
+msgstr "전차 탑승병 기관총 부사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/para_nco"
 msgid "Desantnik Squadleader [VVS]"
-msgstr "데산트니크 분대장 [VVS]"
+msgstr "전차 탑승병 분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/partisan_1"
 msgid "Partisan [KA]"
@@ -1204,23 +1204,23 @@ msgstr "기병 기관단총병 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_mg"
 msgid "Cossack MG Operator [KA]"
-msgstr "코사크 기관총 사수 [KA]"
+msgstr "카자크 기관총 사수 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_mg_asst"
 msgid "Cossack MG Asst. [KA]"
-msgstr "코사크 기관총 부사수 [KA]"
+msgstr "카자크 기관총 부사수 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_recon_nco"
 msgid "Cossack Recon Squadleader [KA]"
-msgstr "코사크 정찰 분대장 [KA]"
+msgstr "카자크 정찰 분대장 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_recon_rifle"
 msgid "Cossack Recon Rifleman [KA]"
-msgstr "코사크 정찰 소총수 [KA]"
+msgstr "카자크 정찰 소총수 [KA]"
 
 msgctxt "desc/human/mp/rus/early/cossack_recon_sa"
 msgid "Cossack Recon Rifleman [KA]"
-msgstr "코사크 정찰 소총수 [KA]"
+msgstr "카자크 정찰 소총수 [KA]"
 
 msgctxt "desc/human/mp/rus/early/mountain_recon_mg"
 msgid "Mountain Recon MG Operator [KA]"
@@ -1252,7 +1252,7 @@ msgstr "산악 공병 [KA]"
 
 msgctxt "desc/human/mp/rus/early/para_flamer"
 msgid "Desantnik Flamer inf. [VVS]"
-msgstr "데산트니크 화염방사병 [VVS]"
+msgstr "전차 탑승병 화염방사병 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_glider_flamer"
 msgid "Glider Flamer inf. [VVS]"
@@ -1300,23 +1300,23 @@ msgstr "글라이더 소총수 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_nco_asst"
 msgid "Desantnik Asst. Leader [VVS]"
-msgstr "데산트니크 부분대장 [VVS]"
+msgstr "전차 탑승병 부분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_recon_nco"
 msgid "Desantnik Recon Squadleader [VVS]"
-msgstr "데산트니크 정찰 분대장 [VVS]"
+msgstr "전차 탑승병 정찰 분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_recon_rifle"
 msgid "Desantnik Recon Rifleman [VVS]"
-msgstr "데산트니크 정찰 소총수 [VVS]"
+msgstr "전차 탑승병 정찰 소총수 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_recon_sa"
 msgid "Desantnik Recon Rifleman [VVS]"
-msgstr "데산트니크 정찰 소총수 [VVS]"
+msgstr "전차 탑승병 정찰 소총수 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/para_recon_smg"
 msgid "Desantnik Recon SMG inf. [VVS]"
-msgstr "데산트니크 정찰 기관단총병 [VVS]"
+msgstr "전차 탑승병 정찰 기관단총병 [VVS]"
 
 msgctxt "desc/human/mp/rus/early/recon_mg"
 msgid "Recon MG Operator [KA]"
@@ -1372,43 +1372,43 @@ msgstr "정예 근위 기관단총병 [KA]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_mg"
 msgid "Guards Desantnik MG Operator [VVS]"
-msgstr "근위 데산트니크 기관총 사수 [VVS]"
+msgstr "근위 전차 탑승병 기관총 사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_mg_asst"
 msgid "Guards Desantnik MG Asst. [VVS]"
-msgstr "근위 데산트니크 기관총 부사수 [VVS]"
+msgstr "근위 전차 탑승병 기관총 부사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_mg_asst_dt"
 msgid "Guards Desantnik MG Asst. [VVS]"
-msgstr "근위 데산트니크 기관총 부사수 [VVS]"
+msgstr "근위 전차 탑승병 기관총 부사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_mg_dt"
 msgid "Guards Desantnik MG Operator [VVS]"
-msgstr "근위 데산트니크 기관총 사수 [VVS]"
+msgstr "근위 전차 탑승병 기관총 사수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_nco"
 msgid "Guards Desantnik Squadleader [VVS]"
-msgstr "근위 데산트니크 분대장 [VVS]"
+msgstr "근위 전차 탑승병 분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_nco_asst_sa"
 msgid "Guards Desantnik Asst. Leader [VVS]"
-msgstr "근위 데산트니크 부분대장 [VVS]"
+msgstr "근위 전차 탑승병 부분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_nco_asst_smg"
 msgid "Guards Desantnik Asst. Leader [VVS]"
-msgstr "근위 데산트니크 부분대장 [VVS]"
+msgstr "근위 전차 탑승병 부분대장 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_rifle"
 msgid "Guards Desantnik Rifleman [VVS]"
-msgstr "근위 데산트니크 소총수 [VVS]"
+msgstr "근위 전차 탑승병 소총수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_sa"
 msgid "Guards Desantnik Rifleman [VVS]"
-msgstr "근위 데산트니크 소총수 [VVS]"
+msgstr "근위 전차 탑승병 소총수 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/guard_para_smg"
 msgid "Guards Desantnik SMG inf. [VVS]"
-msgstr "근위 데산트니크 기관단총병 [VVS]"
+msgstr "근위 전차 탑승병 기관단총병 [VVS]"
 
 msgctxt "desc/human/mp/rus/mid/marine_reg_crew"
 msgid "Marine [VMF]"

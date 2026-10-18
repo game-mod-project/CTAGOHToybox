@@ -61,7 +61,7 @@ msgid "이 지역에는 최고사령부가 점령을 기대하는 핵심 거점�
 msgstr ""
 
 msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/05"
-msgid "루프트바페가 나타날 수 있다. 반드시 대공포의 지원을 받으며 진격해라. 적 대지 공격기가 접근하면 전방 관측병이 알려 줄 것이다."
+msgid "공군이 나타날 수 있다. 반드시 대공포의 지원을 받으며 진격해라. 적 대지 공격기가 접근하면 전방 관측병이 알려 줄 것이다."
 msgstr ""
 
 msgctxt "mission/single/01-rus/1944_10_courland/narrator/officer/06"
@@ -97,11 +97,11 @@ msgid "적 사령부는 우리 것이다. 파시스트 점령의 끝이 가까�
 msgstr ""
 
 msgctxt "mission/single/01-rus/1944_10_courland/outro_completed"
-msgid "영광스러운 제43군이 메멜 포위를 완료했다. 공세 중 독일 제3판처군 사령부가 유린됐다. 북부집단군은 북쪽 쿠를란트에 성공적으로 갇혔다."
+msgid "영광스러운 제43군이 메멜 포위를 완료했다. 공세 중 독일 제3기갑군 사령부가 유린됐다. 북부집단군은 북쪽 쿠를란트에 성공적으로 갇혔다."
 msgstr ""
 
 msgctxt "mission/single/01-rus/1944_10_courland/outro_failed"
-msgid "이 실패는 매우 큰 대가를 치르게 될 것이다. 독일군은 이제 제3판처군을 증원하거나 철수시킬 수 있다! 그러면 지금까지보다 훨씬 많은 동지를 잃게 된다. 다음 공격 때는 자네가 선두 제대에 설 것이다!"
+msgid "이 실패는 매우 큰 대가를 치르게 될 것이다. 독일군은 이제 제3기갑군을 증원하거나 철수시킬 수 있다! 그러면 지금까지보다 훨씬 많은 동지를 잃게 된다. 다음 공격 때는 자네가 선두 제대에 설 것이다!"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1944_10_courland/place"

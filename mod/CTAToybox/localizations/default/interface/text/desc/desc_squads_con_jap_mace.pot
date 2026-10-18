@@ -204,11 +204,11 @@ msgid "<c(A5A095)>(1)</c> CEA 척탄 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rusu_late_con(jap)"
-msgid "<c(A5A095)>(1)</c> 루스 시단 소총 분대"
+msgid "<c(A5A095)>(1)</c> 루스 사단 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rusu_gren_late_con(jap)"
-msgid "<c(A5A095)>(1)</c> 루스 시단 척탄 분대"
+msgid "<c(A5A095)>(1)</c> 루스 사단 척탄 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_gokyotai_con(jap)"
@@ -280,7 +280,7 @@ msgid "<c(A5A095)>(2)</c> 경비 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_assault_con(jap)"
-msgid "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgid "<c(A5A095)>(2)</c> 척탄병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_garrison_pioneer_con(jap)"
@@ -412,7 +412,7 @@ msgid "<c(A5A095)>(2)</c> 저급 척탄 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_gren_late_con(jap)"
-msgid "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgid "<c(A5A095)>(2)</c> 척탄병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_motor_rifle_late_con"
@@ -768,35 +768,35 @@ msgid "<c(A5A095)>(4)</c> 기고 부대 코만도 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_giretsu_kuteitai_late_con(jap)"
-msgid "<c(A5A095)>(4+)</c> 기레쓰 구테이타이 소총 분대"
+msgid "<c(A5A095)>(4+)</c> 기레쓰 공정대 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_rifle_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 소총 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_gren_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 척탄 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 척탄 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_scout_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_pioneer_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 공병 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 공병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_cav_rifle_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 기병 소총 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 기병 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_cav_lmg_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 기병 소총 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 기병 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_imperial_guard_cav_gren_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> 고노에 시단 기병 척탄 분대"
+msgid "<c(A5A095)>(4)</c> 근위사단 기병 척탄 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_teishin_scout_late_con(jap)"
@@ -836,27 +836,27 @@ msgid "<c(A5A095)>(4)</c> PNA 염세 경찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_snlf_kuteitai_rifle_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> SNLF 구테이타이 소총 분대"
+msgid "<c(A5A095)>(4)</c> SNLF 공정대 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_snlf_kuteitai_smg_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> SNLF 구테이타이 소총 분대"
+msgid "<c(A5A095)>(4)</c> SNLF 공정대 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_snlf_kuteitai_grenadier_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> SNLF 구테이타이 척탄 분대"
+msgid "<c(A5A095)>(4)</c> SNLF 공정대 척탄 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_snlf_kuteitai_demolition_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> SNLF 구테이타이 폭파 분대"
+msgid "<c(A5A095)>(4)</c> SNLF 공정대 폭파 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_snlf_kuteitai_scout_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> SNLF 구테이타이 정찰 분대"
+msgid "<c(A5A095)>(4)</c> SNLF 공정대 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_snlf_kuteitai_pioneer_late_con(jap)"
-msgid "<c(A5A095)>(4)</c> SNLF 구테이타이 공병 분대"
+msgid "<c(A5A095)>(4)</c> SNLF 공정대 공병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_gando_special_force_con(jap)"

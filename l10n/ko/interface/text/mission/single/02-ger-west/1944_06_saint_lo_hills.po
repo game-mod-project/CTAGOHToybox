@@ -55,7 +55,7 @@ msgstr "생로의 언덕"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/01"
 msgid "Fallschirmjäger! We are deployed here to assist the 352nd Infantry Division in holding the Americans back! We are severely outgunned, but well entrenched."
-msgstr "팔쉬름예거! 우리는 제352보병사단이 미군을 저지하도록 돕기 위해 이곳에 배치됐다! 화력은 크게 열세지만 참호는 잘 파 놨다."
+msgstr "강하엽병! 우리는 제352보병사단이 미군을 저지하도록 돕기 위해 이곳에 배치됐다! 화력은 크게 열세지만 참호는 잘 파 놨다."
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/02"
 msgid "We will defend this position until the rest of our motorised Kampfgruppe arrives."
@@ -95,7 +95,7 @@ msgstr "주의! 적기가 접근 중이다!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/11"
 msgid "Fallschirmjäger! You are doing an excellent job in containing the enemy, but we are struggling to keep up with this massive assault! "
-msgstr "팔쉬름예거! 적을 저지하는 솜씨가 훌륭하지만, 이 대규모 공격을 따라가기 벅차다!"
+msgstr "강하엽병! 적을 저지하는 솜씨가 훌륭하지만, 이 대규모 공격을 따라가기 벅차다!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/12"
 msgid "Now that the enemy is giving us some breathing space, I'm ordering you to fall back to our HQ on the other side of the valley. The motorised Kampfgruppe should arrive soon to strengthen our lines there."
@@ -119,7 +119,7 @@ msgstr "조심해라! 미군이 동쪽에서 우리 측면을 돌았다!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/17"
 msgid "A brilliantly executed defense, Fallschirmjäger! The Americans will learn to fear you, Green Devils. At this pace, we will soon push them back into the sea!"
-msgstr "훌륭하게 수행한 방어다, 팔쉬름예거! 미군은 너희 녹색 악마를 두려워하게 될 것이다. 이 속도면 곧 놈들을 바다로 밀어낼 것이다!"
+msgstr "훌륭하게 수행한 방어다, 강하엽병! 미군은 너희 녹색 악마를 두려워하게 될 것이다. 이 속도면 곧 놈들을 바다로 밀어낼 것이다!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/18"
 msgid "The Americans have brought their mobile artillery forward. They will likely try to hit the HQ. Avoid placing your troops around the courtyard, and take the artillery out if you can afford to send a detachment right now."
@@ -127,11 +127,11 @@ msgstr "미군이 기동 포병을 전방으로 가져왔다. 본부를 때리�
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/19"
 msgid "A fine display of tactical mastery, taking those artillery pieces out! This is why they call on the Fallschirmjäger; to get the job done!"
-msgstr "그 포들을 제거한 전술이 훌륭하다! 그래서 팔쉬름예거를 부르는 것이다. 일을 끝내라고!"
+msgstr "그 포들을 제거한 전술이 훌륭하다! 그래서 강하엽병을 부르는 것이다. 일을 끝내라고!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/arty"
 msgid "Enemy artillery inbound! Keep your heads down, Fallschirmjäger!"
-msgstr "적 포격이 온다! 고개를 숙여라, 팔쉬름예거!"
+msgstr "적 포격이 온다! 고개를 숙여라, 강하엽병!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/narrator/arty2"
 msgid "Here comes the American artillery again! The Americans really want to flatten these hedgerows! Take cover!"
@@ -155,11 +155,11 @@ msgstr "훌륭하다! 적에게 적응력과 임기응변의 교훈을 가르쳤
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/outro_failed"
 msgid "We have failed to hold these hills, and the allies can now walk right into St. Lo! Even though you were facing a very strong enemy, General Schimpf will probably not like the news very much. The Fallschirmjäger are not used to losing battles!"
-msgstr "이 언덕을 지키지 못했고, 연합군은 이제 생로로 걸어 들어갈 수 있다! 아주 강한 적을 상대했다 해도 심프 장군은 이 소식을 별로 좋아하지 않을 것이다. 팔쉬름예거는 전투에서 지는 데 익숙하지 않다!"
+msgstr "이 언덕을 지키지 못했고, 연합군은 이제 생로로 걸어 들어갈 수 있다! 아주 강한 적을 상대했다 해도 심프 장군은 이 소식을 별로 좋아하지 않을 것이다. 강하엽병은 전투에서 지는 데 익숙하지 않다!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/place"
 msgid "3rd Fallschirmjäger Division "
-msgstr "제3 팔쉬름예거 사단"
+msgstr "제3 강하엽병 사단"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_arty"
 msgid "SfH 18 Artillery Barrage"
@@ -167,7 +167,7 @@ msgstr "SfH 18 포격"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad"
 msgid "Fallschirmjäger"
-msgstr "팔쉬름예거"
+msgstr "강하엽병"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_ammo"
 msgid "Ammo crate"
@@ -175,11 +175,11 @@ msgstr "탄약 상자"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_defensive"
 msgid "Fallschirmjäger Recon"
-msgstr "팔쉬름예거 정찰대"
+msgstr "강하엽병 정찰대"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_irregular"
 msgid "Fallschirmjäger Pioniere"
-msgstr "팔쉬름예거 피오니어"
+msgstr "강하엽병 공병"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/reinf_squad_medic"
 msgid "Medic"
@@ -191,7 +191,7 @@ msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/story"
 msgid " June 10th, 1944. “Festung Europa” is under attack. The allied foothold has expanded in the past 4 days, and now the hills around St. Lô are in the front line. The line north of St. Lô must be held at all costs. Your 3rd Fallschirmjäger Division is setting up positions on the hills in front of St. Lô. The hills are perfect for defense; however, we can’t defend the entire region with the available manpower. The enemy is approaching from the north. Our best bet is to dig in at St. Georges d’Elle.\n\n Set up your line making sure the enemy is being funneled into your killing zones and make sure you defend your AT guns against flanking moves by enemy infantry. Reinforcements are on the way, but they will take some time to get here - if they get here at all. Now, it’s time for your baptism of fire.\n\nHals- und Beinbruch!"
-msgstr " 1944년 6월 10일. "페스퉁 유럽"이 공격받고 있다. 지난 나흘간 연합군의 교두보가 확대됐고, 이제 생로 일대 언덕이 최전선이다. 생로 북쪽 방어선은 무슨 일이 있어도 지켜야 한다. 제3 팔쉬름예거 사단은 생로 앞 언덕에 진지를 구축하고 있다. 언덕은 방어에 최적이지만, 가용 인력으로 전 지역을 방어할 수는 없다. 적은 북쪽에서 접근 중이다. 최선책은 생조르주델에 참호를 파는 것이다.\n\n 적이 살상 지대로 유인되도록 방어선을 세우고, 적 보병의 측면 기동으로부터 대전차포를 지켜라. 증원이 오고 있지만, 오더라도 시간이 걸린다. 이제 불의 세례를 받을 때다.\n\n할스 운트 바인브루흐!"
+msgstr " 1944년 6월 10일. "페스퉁 유럽"이 공격받고 있다. 지난 나흘간 연합군의 교두보가 확대됐고, 이제 생로 일대 언덕이 최전선이다. 생로 북쪽 방어선은 무슨 일이 있어도 지켜야 한다. 제3 강하엽병 사단은 생로 앞 언덕에 진지를 구축하고 있다. 언덕은 방어에 최적이지만, 가용 인력으로 전 지역을 방어할 수는 없다. 적은 북쪽에서 접근 중이다. 최선책은 생조르주델에 참호를 파는 것이다.\n\n 적이 살상 지대로 유인되도록 방어선을 세우고, 적 보병의 측면 기동으로부터 대전차포를 지켜라. 증원이 오고 있지만, 오더라도 시간이 걸린다. 이제 불의 세례를 받을 때다.\n\n할스 운트 바인브루흐!"
 
 msgctxt "mission/single/02-ger-west/1944_06_saint_lo_hills/task1"
 msgid "Fortify the defensive line at St-Georges d’Elle."

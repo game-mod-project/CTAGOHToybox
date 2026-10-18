@@ -127,7 +127,7 @@ msgstr "글쎄, 폰 발덴부르크 장군의 계획대로 되지 않았다. 그
 
 msgctxt "mission/single/02-ger-west/1944_12_samree/place"
 msgid "116th Panzer Division"
-msgstr "제116 판처 사단"
+msgstr "제116 기갑 사단"
 
 msgctxt "mission/single/02-ger-west/1944_12_samree/reinf_arty"
 msgid "Artillery strike"
@@ -135,7 +135,7 @@ msgstr "포격"
 
 msgctxt "mission/single/02-ger-west/1944_12_samree/story"
 msgid " December 20th, 1944. Just four days ago, the Germans have sprung a big surprise by mounting a massive offensive in the Ardennes. In a sudden lunge toward the town of Antwerp, German armored columns push west, covered by bad weather. For a few days, the offensive moves with relative ease. But then, the 116th Panzer Division reaches Samrée.\n\n In this mission, you will lead the spearhead of the 116th Panzer Division. The disposition of enemy units is unknown. Our scouts report that the road ahead is blocked; so it seems the Americans know that Samrée is important to us. You have orders to eliminate the roadblock with limited resources. Remember; if you want to get our offensive going again, you will have to take control of Samrée quickly.\n\nGood luck!"
-msgstr "1944년 12월 20일. 불과 나흘 전 독일군은 아르덴에서 대규모 공세를 개시해 큰 기습을 감행했다. 안트베르펜 시를 향한 갑작스러운 돌진에서 독일 기갑 종대는 악천후의 엄호 속에 서쪽으로 밀고 나아간다. 며칠간 공세는 비교적 수월하게 진행된다. 그러나 곧 제116 판처 사단이 삼레에 도달한다.\n\n이번 임무에서 그대는 제116 판처 사단의 선봉을 이끈다. 적 부대의 배치는 알려지지 않았다. 정찰병들의 보고에 따르면 전방 도로가 막혀 있다. 미군도 삼레가 우리에게 중요하다는 것을 아는 모양이다. 제한된 자원으로 저지선을 제거하라. 기억하라. 공세를 다시 굴리려면 삼레를 신속히 장악해야 한다.\n\n행운을 빈다!"
+msgstr "1944년 12월 20일. 불과 나흘 전 독일군은 아르덴에서 대규모 공세를 개시해 큰 기습을 감행했다. 안트베르펜 시를 향한 갑작스러운 돌진에서 독일 기갑 종대는 악천후의 엄호 속에 서쪽으로 밀고 나아간다. 며칠간 공세는 비교적 수월하게 진행된다. 그러나 곧 제116 기갑 사단이 삼레에 도달한다.\n\n이번 임무에서 그대는 제116 기갑 사단의 선봉을 이끈다. 적 부대의 배치는 알려지지 않았다. 정찰병들의 보고에 따르면 전방 도로가 막혀 있다. 미군도 삼레가 우리에게 중요하다는 것을 아는 모양이다. 제한된 자원으로 저지선을 제거하라. 기억하라. 공세를 다시 굴리려면 삼레를 신속히 장악해야 한다.\n\n행운을 빈다!"
 
 msgctxt "mission/single/02-ger-west/1944_12_samree/task1"
 msgid "Eliminate the Americans at the crossroads for the main column to arrive."

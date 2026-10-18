@@ -341,7 +341,7 @@ msgid "소총 분대"
 msgstr ""
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/inf_t2"
-msgid "예거 분대"
+msgid "엽병 분대"
 msgstr ""
 
 msgctxt "mission/single/03-fin/1939_12_kollaa/reinforcements/mortar"

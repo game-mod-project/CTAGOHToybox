@@ -29,7 +29,7 @@ msgid "Richtig. 저택을 확보하고 놈들의 보급선을 끊었다. 곧 놈
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/05"
-msgid "그레나디어 부대가 증원으로 와서 고속도로 옆에 전진 초소를 설치했다."
+msgid "척탄병 부대가 증원으로 와서 고속도로 옆에 전진 초소를 설치했다."
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/06"
@@ -73,7 +73,7 @@ msgid "놈들에게 증원이 있다! 동쪽에서 차량이 접근 중이다!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/04"
-msgid "점점 어두워지고 있다... 저 멀리 뭔가 움직인다! 판처다!"
+msgid "점점 어두워지고 있다... 저 멀리 뭔가 움직인다! 전차다!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/05"
@@ -97,7 +97,7 @@ msgid "도망친다!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/04"
-msgid "그레나디어들이 이미 북동쪽 측면에 개인호를 팠다. 우리는 큰길 주변에 방어를 집중해야 한다."
+msgid "척탄병들이 이미 북동쪽 측면에 개인호를 팠다. 우리는 큰길 주변에 방어를 집중해야 한다."
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/05"

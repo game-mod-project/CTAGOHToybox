@@ -129,7 +129,7 @@ msgid "놈들이... 멈췄나?"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/06"
-msgid "아닙니다! 어리석게 굴지 마십시오, 동지. 우리 대공포 포대 접근로에 지뢰를 묻으십시오. 놈들이 노리는 게 그겁니다. 루프트바페와 우리 사이에 아무것도 없으면, 폰 만슈타인은 부하들에게 공중 학살을 구경시킬 겁니다!"
+msgid "아닙니다! 어리석게 굴지 마십시오, 동지. 우리 대공포 포대 접근로에 지뢰를 묻으십시오. 놈들이 노리는 게 그겁니다. 공군과 우리 사이에 아무것도 없으면, 폰 만슈타인은 부하들에게 공중 학살을 구경시킬 겁니다!"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/08"
@@ -165,7 +165,7 @@ msgid "... 예, 동지!"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/17"
-msgid "판처다!"
+msgid "전차다!"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/18"
@@ -205,7 +205,7 @@ msgid "젠장! 생각한 대로다... 이쪽으로 오고 있다!"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_officer/02"
-msgid "그리셴코, 빌어먹을 지뢰 매설 트럭은 어디 있나? 이런 데서 빈둥대며 판처 연대를 막으라는 건가?"
+msgid "그리셴코, 빌어먹을 지뢰 매설 트럭은 어디 있나? 이런 데서 빈둥대며 기갑 연대를 막으라는 건가?"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_officer/03"

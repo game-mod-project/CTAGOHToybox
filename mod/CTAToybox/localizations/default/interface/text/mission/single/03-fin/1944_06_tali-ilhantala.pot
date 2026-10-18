@@ -85,7 +85,7 @@ msgid "VKT 선이 돌파당했다! 소련 기갑 선봉이 이마트라-라펜�
 msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/place"
-msgid "제48예거 연대 및 핀란드 기갑사단"
+msgid "제48엽병 연대 및 핀란드 기갑사단"
 msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/203"
@@ -105,7 +105,7 @@ msgid "중장 공병"
 msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/inf"
-msgid "예거 분대"
+msgid "엽병 분대"
 msgstr ""
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/isu152"

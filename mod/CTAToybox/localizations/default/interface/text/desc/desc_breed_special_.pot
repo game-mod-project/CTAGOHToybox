@@ -14,11 +14,11 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 
 msgctxt "desc/human/narrator/ger-116pzofficer"
-msgid "제116 판처 사단 지휘관"
+msgid "제116 기갑 사단 지휘관"
 msgstr ""
 
 msgctxt "desc/human/narrator/ger-fallschirmjaeger"
-msgid "제3 팔쉬름예거 사단 지휘관"
+msgid "제3 강하엽병 사단 지휘관"
 msgstr ""
 
 msgctxt "desc/human/narrator/usa-2ndrangers"

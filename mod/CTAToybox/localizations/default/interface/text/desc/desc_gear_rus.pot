@@ -65,7 +65,7 @@ msgid "RPG M/43 대전차 수류탄"
 msgstr ""
 
 msgctxt "desc/stuff/rus_cossack_hat"
-msgid "코사크 모자"
+msgid "카자크 모자"
 msgstr ""
 
 msgctxt "desc/stuff/satchel_charge"

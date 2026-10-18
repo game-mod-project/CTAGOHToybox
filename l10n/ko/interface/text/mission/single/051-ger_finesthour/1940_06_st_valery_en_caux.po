@@ -47,7 +47,7 @@ msgstr "Gute Arbeit, Soldaten! 장갑차량과 전차의 지휘권을 자네들�
 
 msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/09"
 msgid "Enemy AA battery neutralized. The Luftwaffe is now ready to deal with the enemy destroyer once and for all."
-msgstr "적 대공포대를 무력화했다. 이제 루프트바페가 적 구축함을 확실히 처리할 수 있다."
+msgstr "적 대공포대를 무력화했다. 이제 공군이 적 구축함을 확실히 처리할 수 있다."
 
 msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/[narrators]/ger_narrator_officer/10"
 msgid "Our howitzer battery has just arrived. You also have access to airstrikes now. Use both of them to sink that floating piece of junk!"
@@ -159,8 +159,8 @@ msgstr "1940년 6월 12일 · 프랑스 노르망디, 생발레리앙코"
 
 msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/place"
 msgid "7th Panzer Division"
-msgstr "제7판처사단"
+msgstr "제7기갑사단"
 
 msgctxt "mission/single/051-ger_finesthour/1940_06_st_valery_en_caux/story"
 msgid "The 7th Panzer, a.k.a. The “Ghost Division” passes Rouen on the 9th of June and makes for the coast the next day. Rushing to reach the coast, it has now closed the encirclement, successfully blocking the way out for several Allied divisions that are currently positioned in Valéry-en-Caux. \n\n Once more, we have successfully encircled an allied army - or what’s left of it.\n\n We can’t allow a second Dunkirk; you have to destroy the enemy before he has a chance to escape. Take the lead and advance immediately!"
-msgstr "'유령 사단'이라 불리는 제7판처사단은 6월 9일 루앙을 지나 이튿날 해안으로 향했다. 해안에 도달하려 서두른 끝에 이제 포위망을 완성했고, 발레리앙코에 있는 연합군 여러 사단의 탈출로를 성공적으로 차단했다. \n\n 다시 한번 연합군 한 개 군을, 아니 그 잔존 병력을 포위하는 데 성공했다.\n\n 제2의 됭케르크를 허용해서는 안 된다. 적이 탈출하기 전에 섬멸해야 한다. 선두에 서서 즉시 전진하라!"
+msgstr "'유령 사단'이라 불리는 제7기갑사단은 6월 9일 루앙을 지나 이튿날 해안으로 향했다. 해안에 도달하려 서두른 끝에 이제 포위망을 완성했고, 발레리앙코에 있는 연합군 여러 사단의 탈출로를 성공적으로 차단했다. \n\n 다시 한번 연합군 한 개 군을, 아니 그 잔존 병력을 포위하는 데 성공했다.\n\n 제2의 됭케르크를 허용해서는 안 된다. 적이 탈출하기 전에 섬멸해야 한다. 선두에 서서 즉시 전진하라!"

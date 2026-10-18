@@ -1,8 +1,9 @@
 # 한글화 용어집. 형식: 원문|번역|메모. '#' 줄과 빈 줄은 건너뛴다.
 # 원문과 번역이 같은 줄은 "그대로 둘 말"이다: 원문에 그 말이 있으면 번역에도 그대로 있어야 한다(l10n check의 keep-term).
-# 규칙(사용자 결정 2026-10-17, docs/superpowers/specs/2026-10-17-korean-localization-design.md "용어집"):
-#   전차·장비 이름과 계급은 원문 그대로. 부대명은 음독. 독일어·러시아어 병과명은 음독, 영어 분대 종류는 번역.
-#   진영·군대 이름은 독일어 등은 음독, 영어는 번역. 무기 이름·탄종 약어는 원문 그대로. 캠페인 인물·지명은 음독.
+# 규칙(사용자 결정 2026-10-17, 2026-10-19 바꿈. docs/superpowers/specs/2026-10-17-korean-localization-design.md "용어집"):
+#   전차·장비 이름과 계급은 원문 그대로. 무기 이름·탄종 약어는 원문 그대로. 캠페인 인물·지명은 음독.
+#   군대·진영·병과 이름과 부대 종류는 언어와 상관없이 뜻으로 번역한다(2026-10-19: Heer → 헤어가 아니라 육군).
+#   부대 고유명 그로스도이칠란트·브란덴부르거만 음독으로 둔다.
 # 메모: 장비, 계급, 탄종, 약어(군대 약어), 부대, 병과, 군대, 일반(일반 군사 용어, AI가 정함)
 
 # --- 탄종·약어(그대로) ---
@@ -59,15 +60,16 @@ Leytenant|Leytenant|계급
 Serzhant|Serzhant|계급
 
 # --- 군대·진영 ---
-Wehrmacht|베어마흐트|군대(음독)
-Heer|헤어|군대(음독)
-Luftwaffe|루프트바페|군대(음독)
-Kriegsmarine|크릭스마리네|군대(음독)
-Panzerwaffe|판처바페|군대(음독)
-Waffen|바펜|군대(음독)
-Maavoimat|마아보이마트|군대(음독, 핀란드 육군)
-Rajavartiolaitos|라야바르티올라이토스|군대(음독, 핀란드 국경경비대)
-Svensk Volontär|스벤스크 볼론테르|부대(음독)
+Wehrmacht|국방군|군대
+Heer|육군|군대
+Luftwaffe|공군|군대
+Luftwaffen|공군|군대(합성어 앞말, Luftwaffen-Feld)
+Kriegsmarine|해군|군대
+Panzerwaffe|기갑병과|군대
+Waffen|무장친위대|군대(Waffen-SS. Waffenträger는 장비 이름이라 바펜트레거)
+Maavoimat|육군|군대(핀란드 육군)
+Rajavartiolaitos|국경경비대|군대(핀란드)
+Svensk Volontär|스웨덴 의용대|부대
 Red Army|붉은 군대|군대
 Soviet Army|소련군|군대
 US Army|미 육군|군대
@@ -76,32 +78,51 @@ Royal Navy|영국 해군|군대
 Royal Marines|영국 해병대|군대
 Imperial Japanese Army|일본 제국 육군|군대
 
-# --- 부대(음독) ---
-Grossdeutschland|그로스도이칠란트|부대
-Brandenburger|브란덴부르거|부대
-Pz-Lehr|판처 레어|부대
-Panzer Lehr|판처 레어|부대
+# --- 부대(고유명 둘만 음독, 나머지는 번역) ---
+Grossdeutschland|그로스도이칠란트|부대(음독)
+Brandenburger|브란덴부르거|부대(음독)
+Pz-Lehr|기갑교도|부대
+Panzer Lehr|기갑교도|부대
+Panzer-Lehr|기갑교도|부대
 Desert Rats|사막의 쥐|부대(영어 별명은 번역)
-Konoe|고노에|부대(음독)
-Kuteitai|구테이타이|부대(음독)
-Shidan|시단|부대(음독)
+Konoe Shidan|근위사단|부대
+Konoe|근위|부대
+Kuteitai|공정대|부대
+Shidan|사단|부대
+Kaukopartiojoukot|장거리정찰대|부대(핀란드어)
+Strafbatallion|징벌대대|부대
+Landwehr|향토방위대|부대
+Panzerbrigade|기갑여단|부대
+Panzerarmee|기갑군|부대
+schwere Panzer-Abteilung|중전차대대|부대
+schwere Panzerjäger-Abteilung|중대전차대대|부대
 
-# --- 병과(독일어·러시아어·핀란드어는 음독) ---
-Panzergrenadier|판처그레나디어|병과
-Panzergrenadiere|판처그레나디어|병과
-Panzerpionier|판처피오니어|병과
-Grenadier|그레나디어|병과
-Volksgrenadier|폭스그레나디어|병과
-Fallschirmjäger|팔쉬름예거|병과
-Gebirgsjäger|게비르크스예거|병과
-Jäger|예거|병과
-Pionier|피오니어|병과
-Aufklärer|아우프클레러|병과
-Shtrafbat|시트라프바트|병과
-Desantnik|데산트니크|병과
-Jääkäri|예캐리|병과(핀란드어)
-Pioneeri|피오네에리|병과(핀란드어)
-Ratsuväki|라추배키|병과(핀란드어, 기병)
+# --- 병과(언어와 상관없이 번역, 2026-10-19) ---
+Panzergrenadier|기갑척탄병|병과
+Panzergrenadiere|기갑척탄병|병과
+Panzerpionier|기갑공병|병과
+Sturmpionier|돌격공병|병과
+Sturmgrenadier|돌격척탄병|병과
+Grenadier|척탄병|병과
+Volksgrenadier|국민척탄병|병과
+Volkssturm|국민돌격대|병과
+Fallschirmjäger|강하엽병|병과
+Gebirgsjäger|산악엽병|병과
+Jäger|엽병|병과
+Pionier|공병|병과
+Aufklärer|정찰병|병과
+Panzertruppen|기갑병|병과
+Panzerschütze|전차병|병과
+Begleit|호위|병과(앞말)
+Shtrafbat|징벌대대|병과
+Desantnik|전차 탑승병|병과(전차에 타고 가는 보병)
+Desant|탑승 보병|병과
+Cossack|카자크|병과(표준 표기)
+Jääkäri|엽병|병과(핀란드어)
+Rajajääkäri|국경엽병|병과(핀란드어)
+Panssari|기갑|병과(핀란드어 앞말)
+Pioneeri|공병|병과(핀란드어)
+Ratsuväki|기병|병과(핀란드어)
 
 # --- 영어 분대 종류·직책(번역) ---
 Squad|분대|일반

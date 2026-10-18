@@ -99,7 +99,7 @@ msgstr "동무, 임무는 이 지역 적 방어선을 공격하고 강을 건너
 
 msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/narrator_start2"
 msgid "Germans are planning to reinforce their lines with heavy panzers. Make sure you capture these vital positions!"
-msgstr "독일군은 중전차 판처로 전선을 보강할 계획이다. 이 중요한 진지들을 반드시 점령하라!"
+msgstr "독일군은 중전차 전차로 전선을 보강할 계획이다. 이 중요한 진지들을 반드시 점령하라!"
 
 msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/narrator_start3"
 msgid "Begin securing the objectives, while we bring forward some reinforcements for you to deploy!"

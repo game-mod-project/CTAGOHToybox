@@ -26,7 +26,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_summer/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_summer/assault-sap_1"
@@ -218,7 +218,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/artilleryman"
@@ -330,19 +330,19 @@ msgid "Leytenant [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/para_1"
-msgid "데산트니크 - 부사관 [VVS]"
+msgid "전차 탑승병 - 부사관 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/para_2"
-msgid "데산트니크 [VVS]"
+msgid "전차 탑승병 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/para_3"
-msgid "데산트니크 [VVS]"
+msgid "전차 탑승병 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/para_4"
-msgid "데산트니크 [VVS]"
+msgid "전차 탑승병 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1941_win/partisan_1"
@@ -430,7 +430,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1942_autumn/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1942_autumn/assault-sap_1"
@@ -614,7 +614,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1942_summer/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1942_summer/assault-sap_1"
@@ -802,7 +802,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1942_win/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1942_win/assault-sapper_1"
@@ -1002,7 +1002,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/commisar"
@@ -1090,19 +1090,19 @@ msgid "Leytenant [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/para_1"
-msgid "데산트니크 - 부사관 [VVS]"
+msgid "전차 탑승병 - 부사관 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/para_2"
-msgid "데산트니크 [VVS]"
+msgid "전차 탑승병 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/para_3"
-msgid "데산트니크 [VVS]"
+msgid "전차 탑승병 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/para_4"
-msgid "데산트니크 [VVS]"
+msgid "전차 탑승병 [VVS]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_summer/partisan_1"
@@ -1186,7 +1186,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_win/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1943_win/assault-sap_1"
@@ -1370,7 +1370,7 @@ msgid "소총 유탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1944_summer/antitank_4"
-msgid "소총 대전차 그레나디어 [KA]"
+msgid "소총 대전차 척탄병 [KA]"
 msgstr ""
 
 msgctxt "desc/human/single/rus/1944_summer/assault-sap_1"

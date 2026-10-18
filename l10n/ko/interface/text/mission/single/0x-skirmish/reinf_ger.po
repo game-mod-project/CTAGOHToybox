@@ -63,11 +63,11 @@ msgstr "보병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/volkssturm_heavy"
 msgid "Volkssturm unit"
-msgstr "폴크스슈투름 부대"
+msgstr "국민돌격대 부대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/volksgrenadier"
 msgid "Volksgrenadiers"
-msgstr "폭스그레나디어"
+msgstr "국민척탄병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/crew"
 msgid "Tank crew"
@@ -99,7 +99,7 @@ msgstr "블라우 사단"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/fallsjager"
 msgid "Fallschirmjaegers"
-msgstr "팔쉬름예거"
+msgstr "강하엽병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/brandenb"
 msgid "Brandenburger"
@@ -107,11 +107,11 @@ msgstr "브란덴부르거"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pioneer"
 msgid "Pionier squad"
-msgstr "피오니어 분대"
+msgstr "공병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/gebirgsjag"
 msgid "Gebirgsjager"
-msgstr "게비르크스예거"
+msgstr "산악엽병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/crate"
 msgid "Ammo crate"
@@ -127,7 +127,7 @@ msgstr "Opel Blitz(연료)"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/panzerpio"
 msgid "Motorized-Pionier"
-msgstr "차량화 피오니어"
+msgstr "차량화 공병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/ketteneng"
 msgid "Engineering team"
@@ -279,19 +279,19 @@ msgstr "Sturmpanzer I"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/jagersq"
 msgid "Jager squad"
-msgstr "예거 분대"
+msgstr "엽병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/panzeraufksq"
 msgid "Panzeraufklarers"
-msgstr "판처 아우프클레러"
+msgstr "기갑 정찰병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/grenadieresq"
 msgid "Grenadier squad"
-msgstr "그레나디어 분대"
+msgstr "척탄병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/lwfieldinf"
 msgid "Luftwaffe troops"
-msgstr "루프트바페 병력"
+msgstr "공군 병력"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz221"
 msgid "Sd.Kfz 221"
@@ -319,19 +319,19 @@ msgstr "포병 통신병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/grenadierinf"
 msgid "Grenadier squad"
-msgstr "그레나디어 분대"
+msgstr "척탄병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/panzergren_ar"
 msgid "Panzergrenadiers"
-msgstr "판처그레나디어"
+msgstr "기갑척탄병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pioteam_ht"
 msgid "Pionier team"
-msgstr "피오니어 조"
+msgstr "공병 조"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pioneer_pzsq"
 msgid "Panzerpioniers"
-msgstr "판처피오니어"
+msgstr "기갑공병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz250a_11"
 msgid "Sd.Kfz 250/11 (sPzB 41)"

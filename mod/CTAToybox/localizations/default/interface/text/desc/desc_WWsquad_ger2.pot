@@ -37,7 +37,7 @@ msgid "<c(c3baae)>중형 기갑 선봉</c>"
 msgstr ""
 
 msgctxt "desc/squad/jagd_kampfgruppe"
-msgid "슈베레 판처예거 아프타일룽 (Jagdtiger + StuG III)"
+msgid "중대전차대대 (Jagdtiger + StuG III)"
 msgstr ""
 
 msgctxt "info/special/jagd_kampfgruppe"
@@ -77,7 +77,7 @@ msgid "<c(c3baae)>중형 기갑 집단</c>"
 msgstr ""
 
 msgctxt "desc/squad/kampfgruppe_sturm"
-msgid "슈투름게슈츠 포대 (StuH 42 + StuG III)"
+msgid "돌격포 포대 (StuH 42 + StuG III)"
 msgstr ""
 
 msgctxt "info/special/kampfgruppe_sturm"
@@ -85,7 +85,7 @@ msgid "<c(c3baae)>돌격포 포대</c>"
 msgstr ""
 
 msgctxt "desc/squad/kampfgruppe_schwere"
-msgid "슈베레 판처 아프타일룽 (Tiger I + Pz.IV H)"
+msgid "중전차대대 (Tiger I + Pz.IV H)"
 msgstr ""
 
 msgctxt "info/special/kampfgruppe_schwere"
@@ -141,7 +141,7 @@ msgid "<c(c3baae)>정예 기계화 보병</c>"
 msgstr ""
 
 msgctxt "desc/squad/kampfgruppe_lehr_spearhead"
-msgid "판처 레어 선봉"
+msgid "기갑교도 선봉"
 msgstr ""
 
 msgctxt "info/special/kampfgruppe_lehr_spearhead"
@@ -149,7 +149,7 @@ msgid "<c(c3baae)>중형 기계화 선봉</c>"
 msgstr ""
 
 msgctxt "desc/squad/kampfgruppe_sturm_rider"
-msgid "돌격포 탑승 집단 (StuG III + 팔쉬름예거)"
+msgid "돌격포 탑승 집단 (StuG III + 강하엽병)"
 msgstr ""
 
 msgctxt "info/special/kampfgruppe_sturm_rider"
@@ -165,7 +165,7 @@ msgid "<c(c3baae)>차량화 정찰</c>"
 msgstr ""
 
 msgctxt "desc/squad/kampfgruppe_volks_sperrverband"
-msgid "폭스그레나디어 저지 부대"
+msgid "국민척탄병 저지 부대"
 msgstr ""
 
 msgctxt "info/special/kampfgruppe_volks_sperrverband"
@@ -197,7 +197,7 @@ msgid "<c(c3baae)>중형 기갑과 보병</c>"
 msgstr ""
 
 msgctxt "desc/squad/ger_kg_e75_nachtjager"
-msgid "E-75 '나흐트예거' 호위"
+msgid "E-75 '야간엽병' 호위"
 msgstr ""
 
 msgctxt "info/special/ger_kg_e75_nachtjager"
@@ -229,7 +229,7 @@ msgid "<c(c3baae)>중형 기동 정찰</c>"
 msgstr ""
 
 msgctxt "desc/squad/ger_kg_mausking_lehr"
-msgid "마우스킹 판처 레어 선봉"
+msgid "마우스킹 기갑교도 선봉"
 msgstr ""
 
 msgctxt "info/special/ger_kg_mausking_lehr"

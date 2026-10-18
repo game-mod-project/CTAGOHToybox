@@ -96,7 +96,7 @@ msgstr "판터를 제거하다니 잘했다. 자네의 전술 능력은 확실�
 
 msgctxt "mission/single/04-usa/1944_08_mortain/narrator/09"
 msgid "Watch out for these Panzergrenadiers. They've got plenty of AT weapons and move around quite fast with those pesky Hanomags."
-msgstr "저 판처그레나디어들을 조심해라. 대전차 무기를 잔뜩 갖고 있고, 성가신 하노마크를 타고 꽤 빠르게 움직인다."
+msgstr "저 기갑척탄병들을 조심해라. 대전차 무기를 잔뜩 갖고 있고, 성가신 하노마크를 타고 꽤 빠르게 움직인다."
 
 msgctxt "mission/single/04-usa/1944_08_mortain/narrator/10"
 msgid "They're retreating! "

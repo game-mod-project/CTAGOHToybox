@@ -53,11 +53,11 @@ msgid "임무에 쓸 교리를 선택하라:"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_pzrgt902"
-msgid "제902 판처그레나디어 연대의 진지를 돌파하라"
+msgid "제902 기갑척탄병 연대의 진지를 돌파하라"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_rgt984"
-msgid " 제984 그레나디어 연대의 진지를 돌파하라"
+msgid " 제984 척탄병 연대의 진지를 돌파하라"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/name"
@@ -93,7 +93,7 @@ msgid "우리는 버텨 냈지만 이웃 소대가 크게 당했다. 독일군�
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/06"
-msgid "판처 레어 사단 소속 독일군을 붙잡았다. 이 근처에 있을 가능성이 높다는 뜻이다. 포로들 말로는 제275보병사단이 곳곳에 방어선을 쳤다고 한다. 극도로 조심해서 진격해야 한다."
+msgid "기갑교도 사단 소속 독일군을 붙잡았다. 이 근처에 있을 가능성이 높다는 뜻이다. 포로들 말로는 제275보병사단이 곳곳에 방어선을 쳤다고 한다. 극도로 조심해서 진격해야 한다."
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/07"
@@ -137,7 +137,7 @@ msgid "전선을 재구축하고 독일군 전차를 파괴하라"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/story"
-msgid " 1944년 7월. 6월 D데이 상륙 이후 아군의 진격은 다소 느리지만 꾸준했다. 교두보는 조금씩 넓어지고 깊어졌고, 독일군의 위기도 그만큼 깊어졌다. 브래들리 장군이 이끄는 진격의 주 목표는 생로 일대를 점령하는 것이다. 그러려면 먼저 생로로 가는 길을 뚫어야 한다.\n\n 오늘 너는 부대를 이끌고 산울타리 속으로 들어간다. 관측기가 근처에서 적의 움직임을 보고했다. 판처 레어 사단일 수도 있다! 반격을 시도할지도 모르니 경보를 울리고 각오를 다져라. 주력이 도착할 때까지 버티고, 다음 명령을 기다려라.\n\n행운을 빈다!"
+msgid " 1944년 7월. 6월 D데이 상륙 이후 아군의 진격은 다소 느리지만 꾸준했다. 교두보는 조금씩 넓어지고 깊어졌고, 독일군의 위기도 그만큼 깊어졌다. 브래들리 장군이 이끄는 진격의 주 목표는 생로 일대를 점령하는 것이다. 그러려면 먼저 생로로 가는 길을 뚫어야 한다.\n\n 오늘 너는 부대를 이끌고 산울타리 속으로 들어간다. 관측기가 근처에서 적의 움직임을 보고했다. 기갑교도 사단일 수도 있다! 반격을 시도할지도 모르니 경보를 울리고 각오를 다져라. 주력이 도착할 때까지 버티고, 다음 명령을 기다려라.\n\n행운을 빈다!"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/task1"
@@ -177,11 +177,11 @@ msgid "<c(B29557)>강습 명령:</c> 제275 수색대대 진지"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_pzrgt902"
-msgid "<c(B29557)>강습 명령:</c> 제902 판처그레나디어 연대 진지"
+msgid "<c(B29557)>강습 명령:</c> 제902 기갑척탄병 연대 진지"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_rgt984"
-msgid "<c(B29557)>강습 명령:</c> 제984 그레나디어 연대 진지"
+msgid "<c(B29557)>강습 명령:</c> 제984 척탄병 연대 진지"
 msgstr ""
 
 msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/support_air"

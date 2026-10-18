@@ -15,31 +15,31 @@ msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzglehr_sq"
 msgid "Pz-Lehr Pz.Grenadier squad"
-msgstr "판처 레어 판처그레나디어 분대"
+msgstr "기갑교도 기갑척탄병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_sq"
 msgid "Pz-Lehr Pz.Aufklarer squad"
-msgstr "판처 레어 판처 아우프클레러 분대"
+msgstr "기갑교도 기갑 정찰병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_ht"
 msgid "Pz-Lehr Armored Pz.Aufklarer"
-msgstr "판처 레어 장갑 판처 아우프클레러"
+msgstr "기갑교도 장갑 기갑 정찰병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_sq"
 msgid "Pz-Lehr Pz.Sturmgrenadier squad"
-msgstr "판처 레어 판처슈투름그레나디어 분대"
+msgstr "기갑교도 기갑돌격척탄병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_ht"
 msgid "Pz-Lehr Armored Pz.Sturmgrenadier"
-msgstr "판처 레어 장갑 판처 슈투름그레나디어"
+msgstr "기갑교도 장갑 기갑 돌격척탄병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_sq"
 msgid "Pz-Lehr Pz.Pionier squad"
-msgstr "판처 레어 판처피오니어 분대"
+msgstr "기갑교도 기갑공병 분대"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_ht"
 msgid "Pz-Lehr Armored Pz.Pionier"
-msgstr "판처 레어 장갑 판처피오니어"
+msgstr "기갑교도 장갑 기갑공병"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_1"
 msgid "Sd.Kfz 234/1 (2cm)"

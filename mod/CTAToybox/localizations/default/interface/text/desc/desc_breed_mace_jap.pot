@@ -29,7 +29,7 @@ msgid "SNLF 정찰 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_sl_binos"
-msgid "SNLF 구테이타이 정찰 분대장 [IJN]"
+msgid "SNLF 공정대 정찰 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/cea_sl_scout_binos"
@@ -45,7 +45,7 @@ msgid "정찰 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_recon_sl_binos"
-msgid "고노에 시단 정찰 분대장 [IJA]"
+msgid "근위사단 정찰 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/ina_scout_sl_binos"
@@ -869,35 +869,35 @@ msgid "기고 기관단총 보병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mgun_1"
-msgid "기레쓰 구테이타이 기관총 사수 [IJA]"
+msgid "기레쓰 공정대 기관총 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mgun_2"
-msgid "기레쓰 구테이타이 기관총 부사수 [IJA]"
+msgid "기레쓰 공정대 기관총 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mgun_3"
-msgid "기레쓰 구테이타이 기관총 탄약수 [IJA]"
+msgid "기레쓰 공정대 기관총 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mortar"
-msgid "기레쓰 구테이타이 박격포 사수 [IJA]"
+msgid "기레쓰 공정대 박격포 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mortar_ammo"
-msgid "기레쓰 구테이타이 박격포 탄약수 [IJA]"
+msgid "기레쓰 공정대 박격포 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_mortar_asst"
-msgid "기레쓰 구테이타이 박격포 부사수 [IJA]"
+msgid "기레쓰 공정대 박격포 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_sl"
-msgid "기레쓰 구테이타이 분대장 [IJA]"
+msgid "기레쓰 공정대 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/giretsu_kuteitai_smg"
-msgid "기레쓰 구테이타이 기관단총 보병 [IJA]"
+msgid "기레쓰 공정대 기관단총 보병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/gokyotai_mortar1"
@@ -921,127 +921,127 @@ msgid "고쿄타이 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_marksman"
-msgid "고노에 시단 기병 지정사수 [IJA]"
+msgid "근위사단 기병 지정사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_mgun_1"
-msgid "고노에 시단 기병 기관총 사수 [IJA]"
+msgid "근위사단 기병 기관총 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_mgun_2"
-msgid "고노에 시단 기병 기관총 부사수 [IJA]"
+msgid "근위사단 기병 기관총 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_mgun_3"
-msgid "고노에 시단 기병 기관총 탄약수 [IJA]"
+msgid "근위사단 기병 기관총 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_mortar"
-msgid "고노에 시단 기병 박격포 사수 [IJA]"
+msgid "근위사단 기병 박격포 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_mortar_ammo"
-msgid "고노에 시단 기병 박격포 탄약수 [IJA]"
+msgid "근위사단 기병 박격포 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_mortar_asst"
-msgid "고노에 시단 기병 박격포 부사수 [IJA]"
+msgid "근위사단 기병 박격포 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_rifle"
-msgid "고노에 시단 기병 소총수 [IJA]"
+msgid "근위사단 기병 소총수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_sa"
-msgid "고노에 시단 기병 부분대장 [IJA]"
+msgid "근위사단 기병 부분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_sl"
-msgid "고노에 시단 기병 분대장 [IJA]"
+msgid "근위사단 기병 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_cav_smg"
-msgid "고노에 시단 기병 기관단총 보병 [IJA]"
+msgid "근위사단 기병 기관단총 보병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_marksman"
-msgid "고노에 시단 지정사수 [IJA]"
+msgid "근위사단 지정사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_mgun_1"
-msgid "고노에 시단 기관총 사수 [IJA]"
+msgid "근위사단 기관총 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_mgun_2"
-msgid "고노에 시단 기관총 부사수 [IJA]"
+msgid "근위사단 기관총 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_mgun_3"
-msgid "고노에 시단 기관총 탄약수 [IJA]"
+msgid "근위사단 기관총 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_mortar"
-msgid "고노에 시단 박격포 사수 [IJA]"
+msgid "근위사단 박격포 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_mortar_ammo"
-msgid "고노에 시단 박격포 탄약수 [IJA]"
+msgid "근위사단 박격포 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_mortar_asst"
-msgid "고노에 시단 박격포 부사수 [IJA]"
+msgid "근위사단 박격포 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_rifle"
-msgid "고노에 시단 소총수 [IJA]"
+msgid "근위사단 소총수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_riflegren"
-msgid "고노에 시단 소총 유탄병 [IJA]"
+msgid "근위사단 소총 유탄병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_sa"
-msgid "고노에 시단 부분대장 [IJA]"
+msgid "근위사단 부분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_sl"
-msgid "고노에 시단 분대장 [IJA]"
+msgid "근위사단 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_smg"
-msgid "고노에 시단 기관단총 보병 [IJA]"
+msgid "근위사단 기관단총 보병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_pioneer_engineer"
-msgid "고노에 시단 공병 야전 공병 [IJA]"
+msgid "근위사단 공병 야전 공병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_pioneer_engineer_ap"
-msgid "고노에 시단 공병 AP 지뢰 공병 [IJA]"
+msgid "근위사단 공병 AP 지뢰 공병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_pioneer_demo"
-msgid "고노에 시단 공병 폭파병 [IJA]"
+msgid "근위사단 공병 폭파병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_pioneer_flamer"
-msgid "고노에 시단 공병 화염방사기 보병 [IJA]"
+msgid "근위사단 공병 화염방사기 보병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_pioneer_grenadier"
-msgid "고노에 시단 공병 그레나디어 [IJA]"
+msgid "근위사단 공병 척탄병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_recon_rifle"
-msgid "고노에 시단 정찰 소총수 [IJA]"
+msgid "근위사단 정찰 소총수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_recon_sl"
-msgid "고노에 시단 정찰 분대장 [IJA]"
+msgid "근위사단 정찰 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/imperial_recon_smg"
-msgid "고노에 시단 정찰 기관단총 보병 [IJA]"
+msgid "근위사단 정찰 기관단총 보병 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/kakku_demo"
@@ -1429,39 +1429,39 @@ msgid "공병 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mgun_1"
-msgid "루스 시단 기관총 사수 [IJA]"
+msgid "루스 사단 기관총 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mgun_2"
-msgid "루스 시단 기관총 부사수 [IJA]"
+msgid "루스 사단 기관총 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mgun_3"
-msgid "루스 시단 기관총 탄약수 [IJA]"
+msgid "루스 사단 기관총 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mortar1"
-msgid "루스 시단 박격포 사수 [IJA]"
+msgid "루스 사단 박격포 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mortar2"
-msgid "루스 시단 박격포 사수 [IJA]"
+msgid "루스 사단 박격포 사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mortar_ammo"
-msgid "루스 시단 박격포 탄약수 [IJA]"
+msgid "루스 사단 박격포 탄약수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_mortar_asst"
-msgid "루스 시단 박격포 부사수 [IJA]"
+msgid "루스 사단 박격포 부사수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_rifleman"
-msgid "루스 시단 소총수 [IJA]"
+msgid "루스 사단 소총수 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/rusu_rifle_sl"
-msgid "루스 시단 분대장 [IJA]"
+msgid "루스 사단 분대장 [IJA]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/ija_scout_rifle"
@@ -2293,7 +2293,7 @@ msgid "SNLF 소총 유탄병 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_guard_gren_sl"
-msgid "SNLF 근위 그레나디어 분대장 [IJN]"
+msgid "SNLF 근위 척탄병 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_guard_mg"
@@ -2321,107 +2321,107 @@ msgid "SNLF 근위 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo"
-msgid "SNLF 구테이타이 폭파병 [IJN]"
+msgid "SNLF 공정대 폭파병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo_mg"
-msgid "SNLF 구테이타이 기관총 보병 [IJN]"
+msgid "SNLF 공정대 기관총 보병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo_mg_asst"
-msgid "SNLF 구테이타이 기관총 부사수 [IJN]"
+msgid "SNLF 공정대 기관총 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_demo_sl"
-msgid "SNLF 구테이타이 분대장 [IJN]"
+msgid "SNLF 공정대 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_engineer"
-msgid "SNLF 구테이타이 야전 공병 [IJN]"
+msgid "SNLF 공정대 야전 공병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_gren_sl"
-msgid "SNLF 구테이타이 분대장 [IJN]"
+msgid "SNLF 공정대 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mg"
-msgid "SNLF 구테이타이 기관총 보병 [IJN]"
+msgid "SNLF 공정대 기관총 보병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mg_ammo"
-msgid "SNLF 구테이타이 기관총 탄약수 [IJN]"
+msgid "SNLF 공정대 기관총 탄약수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mg_asst"
-msgid "SNLF 구테이타이 기관총 부사수 [IJN]"
+msgid "SNLF 공정대 기관총 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mortar"
-msgid "SNLF 구테이타이 박격포 사수 [IJN]"
+msgid "SNLF 공정대 박격포 사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_mortar_asst"
-msgid "SNLF 구테이타이 박격포 부사수 [IJN]"
+msgid "SNLF 공정대 박격포 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_engineer_builder"
-msgid "SNLF 구테이타이 공병 야전 공병 [IJN]"
+msgid "SNLF 공정대 공병 야전 공병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_engineer_mines"
-msgid "SNLF 구테이타이 공병 지뢰병 공병 [IJN]"
+msgid "SNLF 공정대 공병 지뢰병 공병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mg"
-msgid "SNLF 구테이타이 공병 기관총 보병 [IJN]"
+msgid "SNLF 공정대 공병 기관총 보병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mg_asst"
-msgid "SNLF 구테이타이 공병 기관총 부사수 [IJN]"
+msgid "SNLF 공정대 공병 기관총 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mortar"
-msgid "SNLF 구테이타이 공병 박격포 사수 [IJN]"
+msgid "SNLF 공정대 공병 박격포 사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_mortar_asst"
-msgid "SNLF 구테이타이 공병 박격포 부사수 [IJN]"
+msgid "SNLF 공정대 공병 박격포 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_pioneer_sl"
-msgid "SNLF 구테이타이 공병 분대장 [IJN]"
+msgid "SNLF 공정대 공병 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_riflegren"
-msgid "SNLF 구테이타이 소총 유탄병 [IJN]"
+msgid "SNLF 공정대 소총 유탄병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_riflegren_asst"
-msgid "SNLF 구테이타이 소총 유탄병 부사수 [IJN]"
+msgid "SNLF 공정대 소총 유탄병 부사수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_rifle"
-msgid "SNLF 구테이타이 정찰 소총수 [IJN]"
+msgid "SNLF 공정대 정찰 소총수 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_sl"
-msgid "SNLF 구테이타이 정찰 분대장 [IJN]"
+msgid "SNLF 공정대 정찰 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_scout_smg"
-msgid "SNLF 구테이타이 정찰 기관단총 보병 [IJN]"
+msgid "SNLF 공정대 정찰 기관단총 보병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_sl"
-msgid "SNLF 구테이타이 분대장 [IJN]"
+msgid "SNLF 공정대 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_smg"
-msgid "SNLF 구테이타이 기관단총 보병 [IJN]"
+msgid "SNLF 공정대 기관단총 보병 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_kuteitai_smg_sl"
-msgid "SNLF 구테이타이 분대장 [IJN]"
+msgid "SNLF 공정대 분대장 [IJN]"
 msgstr ""
 
 msgctxt "desc/human/mp/jap/late/snlf_mg"

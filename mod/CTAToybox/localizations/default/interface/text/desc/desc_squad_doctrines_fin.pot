@@ -318,7 +318,7 @@ msgid "<c(B29557)>( I )</c> 우수 보급"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_motorised_jaegers_early"
-msgid "<c(B29557)>( II )</c> 차량화 예거"
+msgid "<c(B29557)>( II )</c> 차량화 엽병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_ot130_early"
@@ -338,7 +338,7 @@ msgid "<c(B29557)>( I )</c> Panzerkrab 거점"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_pz4j_fin"
-msgid "<c(B29557)>( II )</c> PZ IV J 예거 포함"
+msgid "<c(B29557)>( II )</c> PZ IV J 엽병 포함"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_pz38h_w40"
@@ -410,7 +410,7 @@ msgid "<c(B29557)>( I )</c> T-26 E"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_t28_38_fin"
-msgid "<c(B29557)>( II )</c> T-28 M1938 예거 포함"
+msgid "<c(B29557)>( II )</c> T-28 M1938 엽병 포함"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_t50_fin"

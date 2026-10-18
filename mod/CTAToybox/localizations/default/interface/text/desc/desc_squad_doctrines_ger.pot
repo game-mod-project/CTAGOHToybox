@@ -70,7 +70,7 @@ msgid "<c(B29557)>( II )</c> 7.5cm PaK 97/38"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_80mm_sgrw34_rapid"
-msgid "<c(B29557)>( I )</c> 폭스그레나디어 8cm sGrW 34"
+msgid "<c(B29557)>( I )</c> 국민척탄병 8cm sGrW 34"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_80mm_sgrw34_rapid_early"
@@ -278,7 +278,7 @@ msgid "<c(B29557)>( III )</c> Jagdtiger"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_kettenkrad"
-msgid "<c(B29557)>( I )</c> Kettenkrad + 피오니어"
+msgid "<c(B29557)>( I )</c> Kettenkrad + 공병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_kettenkrad_eng"
@@ -286,7 +286,7 @@ msgid "<c(B29557)>( I )</c>  Sd.Kfz 2 (공병)"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_kettenkrad_eng_early"
-msgid "<c(B29557)>( I )</c> 피오니어 조"
+msgid "<c(B29557)>( I )</c> 공병 조"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_kfz14"
@@ -298,7 +298,7 @@ msgid "<c(B29557)>( I )</c> 파괴공작 부대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_kubelwagen_volks"
-msgid "<c(B29557)>( I )</c> 폭스그레나디어 정찰병"
+msgid "<c(B29557)>( I )</c> 국민척탄병 정찰병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_marder2"
@@ -522,15 +522,15 @@ msgid "<c(B29557)>( II )</c> 브란덴부르거 코만도"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_fallsch_early(ger)"
-msgid "<c(B29557)>( II )</c> 팔쉬름예거"
+msgid "<c(B29557)>( II )</c> 강하엽병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_fallsch_mid(ger)"
-msgid "<c(B29557)>( II )</c> 팔쉬름예거 분대"
+msgid "<c(B29557)>( II )</c> 강하엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_fallschirmjager_late(ger)"
-msgid "<c(B29557)>( II )</c> 팔쉬름예거 분대"
+msgid "<c(B29557)>( II )</c> 강하엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_fuesilliertrupp(ger)"
@@ -542,15 +542,15 @@ msgid "<c(B29557)>( I )</c> 방어 수비대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_garrison(ger)"
-msgid "<c(B29557)>( I )</c> 크릭스마리네 수비대"
+msgid "<c(B29557)>( I )</c> 해군 수비대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_gebirgsjaeger_early(ger)"
-msgid "<c(B29557)>( I )</c> 게비르크스예거"
+msgid "<c(B29557)>( I )</c> 산악엽병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_gebirgsjaeger_mid(ger)"
-msgid "<c(B29557)>( II )</c> 게비르크스예거"
+msgid "<c(B29557)>( II )</c> 산악엽병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_ger_signaller_early(ger)"
@@ -570,7 +570,7 @@ msgid "<c(B29557)>( II )</c> 포병 통신병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_grenadier(ger)"
-msgid "<c(B29557)>( I )</c> 그레나디어"
+msgid "<c(B29557)>( I )</c> 척탄병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_grossdeutschland(ger)"
@@ -578,19 +578,19 @@ msgid "<c(B29557)>( I )</c> 그로스도이칠란트 분대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_heavyvolkssturm(ger)"
-msgid "<c(B29557)>( II )</c> 대규모 폴크스슈투름 대전차 부대"
+msgid "<c(B29557)>( II )</c> 대규모 국민돌격대 대전차 부대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_luftwaffe_early(ger)"
-msgid "<c(B29557)>( I )</c> 루프트바페 야전 부대"
+msgid "<c(B29557)>( I )</c> 공군 야전 부대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_luftwaffe_mid(ger)"
-msgid "<c(B29557)>( II )</c> 루프트바페 야전 부대"
+msgid "<c(B29557)>( II )</c> 공군 야전 부대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_lw(ger)"
-msgid "<c(B29557)>( I )</c> 루프트바페 야전 부대"
+msgid "<c(B29557)>( I )</c> 공군 야전 부대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_osttruppen(ger)"
@@ -598,23 +598,23 @@ msgid "<c(B29557)>( I )</c>  오스트트루펜"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_panzergrenadiere"
-msgid "<c(B29557)>( II )</c> 판처그레나디어 분대 (기갑)"
+msgid "<c(B29557)>( II )</c> 기갑척탄병 분대 (기갑)"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_panzernahkampftrupp(ger)"
-msgid "<c(B29557)>( I )</c> 판처나캄프트루프"
+msgid "<c(B29557)>( I )</c> 근접 대전차조"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_panzerpioniere"
-msgid "<c(B29557)>( II )</c> 판처피오니어"
+msgid "<c(B29557)>( II )</c> 기갑공병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_pioteam(ger)"
-msgid "<c(B29557)>( I )</c> 피오니어 조"
+msgid "<c(B29557)>( I )</c> 공병 조"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_pz_recon"
-msgid "<c(B29557)>( I )</c> 판처아우프클레러 분대 (기갑)"
+msgid "<c(B29557)>( I )</c> 기갑정찰병 분대 (기갑)"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_regular_motorised"
@@ -626,15 +626,15 @@ msgid "<c(B29557)>( I )</c> 도시 저격수"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_stosstrupp"
-msgid "<c(B29557)>( II )</c> 판처피오니어 분대 (기갑)"
+msgid "<c(B29557)>( II )</c> 기갑공병 분대 (기갑)"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_sturmgrenadiere"
-msgid "<c(B29557)>( II )</c> 슈투름그레나디어 분대 (기갑)"
+msgid "<c(B29557)>( II )</c> 돌격척탄병 분대 (기갑)"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_sturmpionier"
-msgid "<c(B29557)>( I )</c> 슈투름피오니어"
+msgid "<c(B29557)>( I )</c> 돌격공병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_vetsniper(ger)"
@@ -642,23 +642,23 @@ msgid "<c(B29557)>( I )</c> 산악 저격수"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_volksgrenadier(ger)"
-msgid "<c(B29557)>( I )</c> 폭스그레나디어 분대"
+msgid "<c(B29557)>( I )</c> 국민척탄병 분대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_volksgrenadiere(ger)"
-msgid "<c(B29557)>( II )</c> 폭스그레나디어"
+msgid "<c(B29557)>( II )</c> 국민척탄병"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_volksgrenadieredetach(ger)"
-msgid "<c(B29557)>( I )</c> 폭스그레나디어 지원 분견대"
+msgid "<c(B29557)>( I )</c> 국민척탄병 지원 분견대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_volksgrenadierheavy(ger)"
-msgid "<c(B29557)>( II )</c> 폭스그레나디어 중장 돌격 분대"
+msgid "<c(B29557)>( II )</c> 국민척탄병 중장 돌격 분대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_volksgrenadiersturm(ger)"
-msgid "<c(B29557)>( I )</c> 폭스그레나디어 돌격 분대"
+msgid "<c(B29557)>( I )</c> 국민척탄병 돌격 분대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_stug3b"
@@ -678,7 +678,7 @@ msgid "<c(B29557)>( III )</c> Stuka Zu Fuss"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_sturmartillerie_unit"
-msgid "<c(B29557)>( II )</c> 슈투름아틸러리 부대 (베글라이트그레나디어)"
+msgid "<c(B29557)>( II )</c> 돌격아틸러리 부대 (호위척탄병)"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_sturmpanzer4_late"

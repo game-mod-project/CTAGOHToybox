@@ -83,7 +83,7 @@ msgstr "볼셰비키 기갑에 맞설 가장 파괴적인 무기인 8.8cm 대공
 
 msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/04"
 msgid "These men are our artillery signalers. Their flares will mark the way for Hoepner's 4th Army artillery. Use them sparingly. The Luftwaffe squadron ZG26 will support your ground forces. Good luck, Herr Leutnant!"
-msgstr "이들은 우리 포병 신호병이다. 이들의 조명탄이 회프너의 제4 군 포병에게 길을 알려 줄 것이다. 아껴서 써라. 루프트바페 ZG26 비행대가 지상군을 지원할 것이다. 행운을 빈다, Herr Leutnant!"
+msgstr "이들은 우리 포병 신호병이다. 이들의 조명탄이 회프너의 제4 군 포병에게 길을 알려 줄 것이다. 아껴서 써라. 공군 ZG26 비행대가 지상군을 지원할 것이다. 행운을 빈다, Herr Leutnant!"
 
 msgctxt "mission/single/02-ger/1942_01_vyazma/narrator/officer/05"
 msgid "Find some cover! The enemy is about to start a fireworks display!"
@@ -227,7 +227,7 @@ msgstr "젠장! 소련군이 사령부 가까이에 있다! 참모진을 지켜�
 
 msgctxt "mission/single/02-ger/1942_01_vyazma/outro_completed"
 msgid "The solid stand of the 9th Army along with the heroic contribution of the Luftwaffe caused Konev's forces to fail in their encirclement of Army Group Centre. The counterattack of the Soviets stagnated in February. The new frontline layout led to the Rzhev meat grinder and other battles where, despite terrible losses, the Soviet sacrifice had secured the capital. Hitler then turned south towards the Caucasus and Stalingrad, meaning that Moscow would be securely in Soviet hands and no future attempts to capture it would take place. Operation Typhoon had failed."
-msgstr "제9 군의 굳건한 방어와 루프트바페의 영웅적 기여 덕에 코네프의 부대는 중부집단군 포위에 실패했다. 소련군의 반격은 2월에 정체되었다. 새로운 전선 배치는 르제프 고기분쇄기와 다른 전투들로 이어졌고, 끔찍한 손실에도 소련의 희생은 수도를 지켜 냈다. 이후 히틀러는 남쪽 캅카스와 스탈린그라드로 눈을 돌렸고, 이는 모스크바가 소련 수중에 굳건히 남고 이를 점령하려는 시도가 더는 없으리라는 뜻이었다. 태풍 작전은 실패했다."
+msgstr "제9 군의 굳건한 방어와 공군의 영웅적 기여 덕에 코네프의 부대는 중부집단군 포위에 실패했다. 소련군의 반격은 2월에 정체되었다. 새로운 전선 배치는 르제프 고기분쇄기와 다른 전투들로 이어졌고, 끔찍한 손실에도 소련의 희생은 수도를 지켜 냈다. 이후 히틀러는 남쪽 캅카스와 스탈린그라드로 눈을 돌렸고, 이는 모스크바가 소련 수중에 굳건히 남고 이를 점령하려는 시도가 더는 없으리라는 뜻이었다. 태풍 작전은 실패했다."
 
 msgctxt "mission/single/02-ger/1942_01_vyazma/outro_failed"
 msgid "Losing this battle means the main body of Army Group Centre will quickly be surrounded and, their supplies dwindling, a catastrophic loss of men and vehicles seems at hand. Not only that; we have lost control over the Dnieper crossings once again. This is even worse than going back to square one."
@@ -255,7 +255,7 @@ msgstr "Bf-110 기총 소사"
 
 msgctxt "mission/single/02-ger/1942_01_vyazma/story"
 msgid "With Operation Typhoon brought to a standstill, Stavka counterattacks, forcing the Wehrmacht into a defensive stance and pushing them back to positions previously captured in October."
-msgstr "태풍 작전이 정체되자 스타프카가 반격에 나서 베어마흐트를 방어 태세로 몰아넣고 10월에 점령했던 진지까지 밀어냈다."
+msgstr "태풍 작전이 정체되자 스타프카가 반격에 나서 국방군을 방어 태세로 몰아넣고 10월에 점령했던 진지까지 밀어냈다."
 
 msgctxt "mission/single/02-ger/1942_01_vyazma/task1"
 msgid "Protect the headquarters at all costs! Keep the staff safe."

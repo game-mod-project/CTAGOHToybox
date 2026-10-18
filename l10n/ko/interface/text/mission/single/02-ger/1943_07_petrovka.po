@@ -119,7 +119,7 @@ msgstr "보병이 다이너마이트로 도로의 장애물과 방어 시설을 
 
 msgctxt "mission/single/02-ger/1943_07_petrovka/officer_19"
 msgid "As long as you keep your radio operator alive, we can signal the Panzers where to fire."
-msgstr "무전병이 살아 있는 한 판처에 사격 위치를 알려 줄 수 있다."
+msgstr "무전병이 살아 있는 한 전차에 사격 위치를 알려 줄 수 있다."
 
 msgctxt "mission/single/02-ger/1943_07_petrovka/officer_20"
 msgid "You have lost control of the village."
@@ -183,7 +183,7 @@ msgstr "손실이 크다. 증원을 요청할 수 있다."
 
 msgctxt "mission/single/02-ger/1943_07_petrovka/outro_completed"
 msgid "This mission, based on Rall’s biography, is the story of a very lucky pilot. In his own words, he was ‘lucky an energetic Panzer commander rushed a column forward and offered a ride to safety’. The battle of Kursk was followed by ‘Operation Kutuzov’, during which the Soviet Army took the initiative for the remainder of the war. Günther Rall was fortunate enough to survive this adventure and the war as well."
-msgstr "랄의 전기를 바탕으로 한 이 임무는 매우 운이 좋았던 조종사의 이야기다. 그의 말대로 '기운찬 판처 지휘관이 종대를 앞세워 달려와 안전한 곳까지 태워 준' 덕분에 운이 좋았다. 쿠르스크 전투 뒤에는 '쿠투조프 작전'이 이어졌고, 소련군은 남은 전쟁 내내 주도권을 쥐었다. 귄터 랄은 다행히 이 모험과 전쟁에서 모두 살아남았다."
+msgstr "랄의 전기를 바탕으로 한 이 임무는 매우 운이 좋았던 조종사의 이야기다. 그의 말대로 '기운찬 전차 지휘관이 종대를 앞세워 달려와 안전한 곳까지 태워 준' 덕분에 운이 좋았다. 쿠르스크 전투 뒤에는 '쿠투조프 작전'이 이어졌고, 소련군은 남은 전쟁 내내 주도권을 쥐었다. 귄터 랄은 다행히 이 모험과 전쟁에서 모두 살아남았다."
 
 msgctxt "mission/single/02-ger/1943_07_petrovka/outro_failed"
 msgid "As a result of your actions, JG52 has just lost its most talented commander. When the news of the death of Günther Rall reaches his unit, their morale will slump and in absence of leadership, the standards will slip and losses will mount, making reorganization necessary to dissolve the 3rd group of the 52nd fighter squadron."
@@ -408,7 +408,7 @@ msgstr "놈들은 이 일대 지도를 갖고 있다. 지뢰밭이 어디 있는
 
 msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_10"
 msgid "Herr Hauptmann, our Panzers are in position. Your sappers will need to sweep ahead."
-msgstr "Herr Hauptmann, 우리 판처는 위치에 있습니다. 공병이 앞쪽을 소해해야 합니다."
+msgstr "Herr Hauptmann, 우리 전차는 위치에 있습니다. 공병이 앞쪽을 소해해야 합니다."
 
 msgctxt "mission/single/02-ger/1943_07_petrovka/t_officer_11"
 msgid "Advancing in the open, we risk all our tanks getting blown up before we even arrive at the enemy lines!"

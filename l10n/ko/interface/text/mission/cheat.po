@@ -171,7 +171,7 @@ msgstr "AI 조종: <c(ff0000)>꺼짐</c>"
 
 msgctxt "mission/ger/cheat/掷弹兵班【武装党卫军】"
 msgid "Panzergrenadier Squad[Waffen-SS]"
-msgstr "판처그레나디어 분대[Waffen-SS]"
+msgstr "기갑척탄병 분대[Waffen-SS]"
 
 msgctxt "mission/ger/cheat/装甲侦察班【武装党卫军】"
 msgid "Armored Recon Squad[Waffen-SS]"
@@ -179,7 +179,7 @@ msgstr "장갑 정찰 분대[Waffen-SS]"
 
 msgctxt "mission/ger/cheat/装甲掷弹兵班【武装党卫军】"
 msgid "Veteran Panzergrenadier Squad[Waffen-SS]"
-msgstr "베테랑 판처그레나디어 분대[Waffen-SS]"
+msgstr "베테랑 기갑척탄병 분대[Waffen-SS]"
 
 msgctxt "mission/cheat/冲锋枪手stg44"
 msgid "SMG soldier(STG44)"
@@ -227,7 +227,7 @@ msgstr "프랑스 보병 분대"
 
 msgctxt "mission/cheat/ger/国防军武器箱"
 msgid "<c(47E7ED)>Wehrmacht Weapon Crate</c>"
-msgstr "<c(47E7ED)>베어마흐트 무기 상자</c>"
+msgstr "<c(47E7ED)>국방군 무기 상자</c>"
 
 msgctxt "mission/cheat/usa/美国武器箱"
 msgid "<c(47E7ED)>American Weapon Crate</c>"

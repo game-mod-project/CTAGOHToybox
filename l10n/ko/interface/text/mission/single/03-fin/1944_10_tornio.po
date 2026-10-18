@@ -31,7 +31,7 @@ msgstr "너무 먼 다리"
 
 msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/01"
 msgid "Jaegers! Today we have a mission for you of great importance! The fate of the country is in your hands!"
-msgstr "예거들! 오늘 제군에게 매우 중요한 임무가 주어졌다! 나라의 운명이 제군의 손에 달렸다!"
+msgstr "엽병들! 오늘 제군에게 매우 중요한 임무가 주어졌다! 나라의 운명이 제군의 손에 달렸다!"
 
 msgctxt "mission/single/03-fin/1944_10_tornio/narrator/officer/02"
 msgid "The bridge in front of us is of great value to the Germans. They want it because it gives access to the shortest route to Norway."
@@ -71,7 +71,7 @@ msgstr "이것은 소련과 한 약속을 지킬 기회였다. 소련이 우리�
 
 msgctxt "mission/single/03-fin/1944_10_tornio/place"
 msgid "11th Jaeger Regiment"
-msgstr "제11예거 연대"
+msgstr "제11엽병 연대"
 
 msgctxt "mission/single/03-fin/1944_10_tornio/skip"
 msgid "Skip preparation Phase"

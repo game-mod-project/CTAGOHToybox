@@ -131,7 +131,7 @@ msgstr "놈들이... 멈췄나?"
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/06"
 msgid "No! Don't be foolish comrade - mine the approaches to our anti-aircraft batteries. That is what they're after. If nothing stands between the Luftwaffe and us, Von Manstein will have their troops spectate an aerial massacre!"
-msgstr "아닙니다! 어리석게 굴지 마십시오, 동지. 우리 대공포 포대 접근로에 지뢰를 묻으십시오. 놈들이 노리는 게 그겁니다. 루프트바페와 우리 사이에 아무것도 없으면, 폰 만슈타인은 부하들에게 공중 학살을 구경시킬 겁니다!"
+msgstr "아닙니다! 어리석게 굴지 마십시오, 동지. 우리 대공포 포대 접근로에 지뢰를 묻으십시오. 놈들이 노리는 게 그겁니다. 공군과 우리 사이에 아무것도 없으면, 폰 만슈타인은 부하들에게 공중 학살을 구경시킬 겁니다!"
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/08"
 msgid "They're coming! Dig trenches! Prepare to defend!"
@@ -167,7 +167,7 @@ msgstr "... 예, 동지!"
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/17"
 msgid "Panzers!"
-msgstr "판처다!"
+msgstr "전차다!"
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_narrator/18"
 msgid "Comrade Commissar, the northern flank has been breached. They blew up the communication lines, sorry if the bad news could not be delivered earlier..."
@@ -207,7 +207,7 @@ msgstr "젠장! 생각한 대로다... 이쪽으로 오고 있다!"
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_officer/02"
 msgid "Grishenko, where is the bloody mining truck? Are we going to stop a panzer regiment scratching our asses out here?"
-msgstr "그리셴코, 빌어먹을 지뢰 매설 트럭은 어디 있나? 이런 데서 빈둥대며 판처 연대를 막으라는 건가?"
+msgstr "그리셴코, 빌어먹을 지뢰 매설 트럭은 어디 있나? 이런 데서 빈둥대며 기갑 연대를 막으라는 건가?"
 
 msgctxt "mission/single/01-rus/1942_12_winterstorm/narration/rus_officer/03"
 msgid "Comrades! Listen carefully, we do not have much time......."

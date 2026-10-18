@@ -226,11 +226,11 @@ msgid "표적을 쏴라, 병사들! 가능한 한 오래 조준을 안정시켜�
 msgstr ""
 
 msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/targets2"
-msgid "베어마흐트는 어떤 보병에게나 최고의 무기를 제공한다. 탁자에는 여러 자동 무기와 정밀 무기가 있다. 어떤 것은 근거리전에, 어떤 것은 원거리 교전에 유리하다. 선호하는 무장으로 다음 표적을 상대해라!"
+msgid "국방군은 어떤 보병에게나 최고의 무기를 제공한다. 탁자에는 여러 자동 무기와 정밀 무기가 있다. 어떤 것은 근거리전에, 어떤 것은 원거리 교전에 유리하다. 선호하는 무장으로 다음 표적을 상대해라!"
 msgstr ""
 
 msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive"
-msgid "우리 군의 최신 설계를 보라! 판처 III다. 이런 장갑이라면 아무도 우리를 막을 수 없다. 이 전차에 올라 시험 주행을 해 봐도 좋다."
+msgid "우리 군의 최신 설계를 보라! Panzer III다. 이런 장갑이라면 아무도 우리를 막을 수 없다. 이 전차에 올라 시험 주행을 해 봐도 좋다."
 msgstr ""
 
 msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive2"

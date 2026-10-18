@@ -151,7 +151,7 @@ msgstr "다리를 폭파하라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/story"
 msgid "  The Germans have launched a massive surprise attack in the Ardennes. On their right flank, the route to Brussels leads past Elsenborn Ridge, which dominates the area. The 277th Volksgrenadier Division is sent to take the ridge and the villages around it. Meanwhile, Kampfgruppe Peiper continues west in the Amblève valley.\n\n  The 82nd Airborne Division is one of a few US units available to block the German advance. The situation is desperate. If the Germans cross here, they will acquire all the fuel they need from the local fuel depot.\n\n  That’s why you have been brought here. Secure the bridge and ensure that the Germans cannot use it.\n\n Good luck!"
-msgstr "  독일군이 아르덴에서 대규모 기습 공격을 개시했다. 그들의 우측방에서 브뤼셀로 가는 길은 일대를 내려다보는 엘젠보른 능선을 지난다. 제277 폭스그레나디어 사단이 능선과 주변 마을을 점령하러 파견되었다. 한편 캄프그루페 파이퍼는 앙블레브 계곡을 따라 계속 서진한다.\n\n  제82공수사단은 독일군 진격을 막을 수 있는 몇 안 되는 미군 부대 중 하나다. 상황은 절박하다. 독일군이 여기를 건너면 인근 연료 집적소에서 필요한 연료를 모두 얻게 된다.\n\n  그래서 당신이 이곳에 투입되었다. 다리를 확보하고 독일군이 쓰지 못하게 하라.\n\n 행운을 빈다!"
+msgstr "  독일군이 아르덴에서 대규모 기습 공격을 개시했다. 그들의 우측방에서 브뤼셀로 가는 길은 일대를 내려다보는 엘젠보른 능선을 지난다. 제277 국민척탄병 사단이 능선과 주변 마을을 점령하러 파견되었다. 한편 캄프그루페 파이퍼는 앙블레브 계곡을 따라 계속 서진한다.\n\n  제82공수사단은 독일군 진격을 막을 수 있는 몇 안 되는 미군 부대 중 하나다. 상황은 절박하다. 독일군이 여기를 건너면 인근 연료 집적소에서 필요한 연료를 모두 얻게 된다.\n\n  그래서 당신이 이곳에 투입되었다. 다리를 확보하고 독일군이 쓰지 못하게 하라.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task01"
 msgid "Destroy the enemy convoy!"
