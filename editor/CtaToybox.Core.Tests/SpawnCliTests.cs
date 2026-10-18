@@ -28,14 +28,11 @@ static class SpawnCliTests
         T.True(File.Exists(Path.Combine(spawn, "resource", "map", "ctatoybox_spawn", "menu.mi")), "menu written");
         T.True(File.Exists(Path.Combine(spawn, "localizations", "default", "interface", "text", "mission", "ctatoybox_spawn.pot")), "menu words written");
         w = new StringWriter();
-        T.True(!Directory.Exists(Path.Combine(spawn, "resource", "set")), "no roster files by default");
+        T.True(File.Exists(Path.Combine(spawn, "resource", SpawnFixture.UnitsGer.Replace('/', Path.DirectorySeparatorChar))), "rosters written by default");
         T.True(File.Exists(Path.Combine(spawn, "resource", "map", "ctatoybox_spawn", "templates_ger.mi")), "template file written");
         w = new StringWriter();
-        T.Eq(0, CliApp.Run(new[] { "spawn-menu", "build", "--settings", settings, "--roster", "--basic-buttons" }, w), "rebuild with the roster: " + w);
-        T.True(File.Exists(Path.Combine(spawn, "resource", SpawnFixture.UnitsGer.Replace('/', Path.DirectorySeparatorChar))), "--roster writes rosters");
-        w = new StringWriter();
-        T.Eq(0, CliApp.Run(new[] { "spawn-menu", "build", "--settings", settings }, w), "rebuild without the roster: " + w);
-        T.True(w.ToString().Contains("지웠다 ") && !File.Exists(Path.Combine(spawn, "resource", SpawnFixture.UnitsGer.Replace('/', Path.DirectorySeparatorChar))), "rebuild removes the roster files: " + w);
+        T.Eq(0, CliApp.Run(new[] { "spawn-menu", "build", "--settings", settings, "--no-roster" }, w), "rebuild without the roster: " + w);
+        T.True(w.ToString().Contains("지웠다 ") && !File.Exists(Path.Combine(spawn, "resource", SpawnFixture.UnitsGer.Replace('/', Path.DirectorySeparatorChar))), "--no-roster removes the roster files: " + w);
         w = new StringWriter();
         T.Eq(2, CliApp.Run(new[] { "spawn-menu", "nope", "--settings", settings }, w), "unknown sub-command is a usage error");
         T.Eq(2, CliApp.Run(new[] { "spawn-menu", "preview", "--bogus", "1" }, new StringWriter()), "unknown option is a usage error");

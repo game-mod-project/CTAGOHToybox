@@ -1,5 +1,5 @@
 {
-  "builtAt": "2026-10-18T00:06:49Z",
+  "builtAt": "2026-10-18T00:19:09Z",
   "files": [
     {
       "path": "localizations/default/interface/text/mission/ctatoybox_spawn.pot"
@@ -9,6 +9,294 @@
     },
     {
       "path": "resource/interface/layout/views/scene/scenegameview.xml"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_6_usa_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_7_usa_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_8_usa_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_eng_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_fin_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_ger_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_jap_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_rus_03.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_00.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_01.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_02.tga"
+    },
+    {
+      "path": "resource/interface/scene/unit_icon/button_9_usa_03.tga"
     },
     {
       "path": "resource/map/ctatoybox_spawn/menu.mi"
@@ -1485,6 +1773,156 @@
     },
     {
       "path": "resource/map/single/06-bonus/1945_04_yugoslavia/0.mi"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/budget.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/budget_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_attacker.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_attacker_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_defender.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/budget_defender_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/unitlimits_attacker.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/frontlines/unitlimits_defender.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_attacker.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_attacker_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_defender.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/last_stand/budget_defender_custom.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/games/presets/global_parameters/unitlimits.inc"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/inf_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/early/units_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_eng_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_fin_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_ger_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_jap_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_rus_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/inf_usa_mace_mp.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_jap.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/late/units_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/inf_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_eng.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_fin.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_ger.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_rus.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/mid/units_usa.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/settings_inf.set"
+    },
+    {
+      "path": "resource/set/multiplayer/units/settings_inf_mace_mp.set"
     }
   ]
 }

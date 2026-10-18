@@ -1,0 +1,62 @@
+;SDL
+
+;===================================
+;        INSTRUCTIONS    
+;===================================
+
+; In this file onee configures the humans which are spawned in vehicles or squads
+; The humans have a CP and cost associated with them which collectively add up for the final squad value
+; Check ../settings_inf.set for the global defines for CP, capture weight (CW), score, etc.
+
+;===================================
+;        PRICING CHART	       
+;===================================
+
+; // Standard prices below are for tier2 infantry
+
+;pistol 		= 5
+;p14 			= 8
+;enfield no1 	= 9
+;enfield no4 	= 9
+;sten	 		= 10
+;patchett	 	= 10
+;thompson 20	= 9
+;thompson 30	= 10
+;bren			= 25
+;lewis			= 35
+;vgo			= 40
+;rifle grenade 	= +10 or 5 if squad
+;piat 			= +40
+;mortar 		= +50
+;any % pzfaust 	= +0
+;any pzfaust 	= +0
+;any flamer		= 55
+;engineer		= 50 or 25 if squad
+;miner 			= 40 or 25 if squad
+
+; // price modifiers (If not tier2)
+;tier 0 		= -3, MG -10
+;tier 1 		= -1, MG -10
+;tier 1 vet 	= 0, MG 0
+;tier 2 vet		= +2, MG +5
+;tier 3 		= +5, MG +10
+;tier 3 vet 	= +8, MG +15
+;tier 4 		= +10, MG +20
+;tier 4 vet 	= +12, MG +25
+
+
+;===================================
+;        BREED DECLARATIONS       
+;===================================
+
+; // Specials
+{"mp/fra/late/tank_commander_fra_eng"					("inf_tankman" side(fra) period(late) cost(0))}
+{"mp/fra/late/tankman_fra_eng"							("inf_tankman" side(fra) period(late) cost(0))}
+
+{"mp/aus/late/tank_commander"					("inf_tankman" side(aus) period(late) cost(0))}
+{"mp/aus/late/tankman"							("inf_tankman" side(aus) period(late) cost(0))}
+
+{"mp/nzl/late/tank_commander"					("inf_tankman" side(nzl) period(late) cost(0))}
+{"mp/nzl/late/tankman"							("inf_tankman" side(nzl) period(late) cost(0))}
+
+{"mp/eng/late/coy_com_smoke"							("inf_officer" side(eng) cost(0))}
