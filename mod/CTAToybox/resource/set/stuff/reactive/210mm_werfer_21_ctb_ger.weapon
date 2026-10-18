@@ -22,15 +22,16 @@
 		}
 	}
 
-	{Automatic}
 	{burst
 		{min 2}
+		{noaiming}
 	}
 
-
-	{range 1 300}
-	("fire rate" rpm(79.5)) ;// 8s to fire full salvo
+	{minRange 50}
+	{aimRange 300}
+	{maxRange 300} ;//7,85km
+	("fire rate" rpm(37.5)) ;// 8s to fire full salvo
 	("reload time" seconds(20))
-	("velocity" mps(500))
+	("velocity" mps(1020))
 	("aerial gravity")
 }

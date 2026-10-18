@@ -464,6 +464,36 @@
 	("doctrine_t5" cool(0) d(late_jap_support) cost(0))
 }
 
+;===================================
+;       WW EXPANSION DOCTRINES
+;===================================
+
+; -- All-Round Doctrine --
+{"doctrine_o-ho"
+	("squad_vehicle2_doctrine" side(jap) period(late) vehicle(o-ho) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_jap_allround) cost(0))
+}
+
+; -- Defensive Doctrine --
+{"doctrine_type_5"
+	("squad_vehicle2_doctrine" side(jap) period(late) vehicle(type_5) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_jap_defensive) cost(0))
+}
+{"doctrine_type_5_heavy"
+	("squad_vehicle2_doctrine" side(jap) period(late) vehicle(type_5_heavy) crew1(tankman:11) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_jap_defensive) cost(0))
+}
+
+; -- Offensive Doctrine --
+{"doctrine_o_ni_2"
+	("squad_vehicle2_doctrine" side(jap) period(late) vehicle(o_ni_2) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_jap_offensive) cost(0))
+}
+{"doctrine_hori_shugo"
+	("squad_vehicle2_doctrine" side(jap) period(late) vehicle(hori_shugo) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_jap_offensive) cost(0))
+}
+
 ;_________________________________________________
 ;|             inf1                               |
 ;|________________________________________________|
@@ -1595,6 +1625,51 @@
 {"o_i_150"
 	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(jap) crew1(tankman:10) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0)
 	cost(0)) ;// +20 for crew
+}
+;-- ============ WW EXPANSION UNITS ============
+{"o_ni_2"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(jap) crew1(tankman:6) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"o-ho"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(jap) crew1(tankman:7) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"type_5"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(jap) crew1(tankman:6) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"type_5_heavy"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(jap) crew1(tankman:11) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0)
+    cost(0))
+}
+{"ke_to"
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(jap) crew1(tankman:1) crew2(tank_commander:1) g(light4) b(light) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"ke_ho"
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(jap) crew1(tankman:3) crew2(tank_commander:1) g(light5) b(light) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"ki_to"
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(jap) crew1(tankman:3) crew2(tank_commander:1) g(light6) b(light) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"chi_ni"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(jap) crew1(tankman:3) crew2(tank_commander:1) g(medium0) b(medium) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"type91"
+	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(jap) crew1(tankman:3) crew2(tank_commander:1) g(heavy1) b(heavy) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"ho_ru"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(jap) crew1(tankman:2) crew2(tank_commander:1) g(spg1) b(light) cw(0) cp(0)
+	cost(0)) ;// +20 for crew
+}
+{"hori_shugo"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(jap) crew1(tankman:6) crew2(tank_commander:1) g(spg5) b(heavy) cw(0) cp(0)
+	cost(0)) ;// +45 for crew
 }
 
 ;SPG

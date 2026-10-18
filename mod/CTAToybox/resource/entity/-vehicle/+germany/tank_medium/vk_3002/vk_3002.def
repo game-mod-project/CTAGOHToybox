@@ -2,12 +2,16 @@
 	(include "/properties/tank__ctb_vk_3002_73b89cc0.ext")
 	
 	(include "/properties/selection/vehicle.inc" scale(1.2))
-	{props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy" "sq_armor_heavy"}
+	{props "medium" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nwg" "detect_tank_heavy"}
 	{extension "vk_3002.mdl"}
 	(include "panzer5d.ext")
 	{PatherId "panzer5"}
 	{targetclass "tank_heavy"}
 	{targetSelector "tank_heavy"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
 
 	{sensor
 		{visor "main"

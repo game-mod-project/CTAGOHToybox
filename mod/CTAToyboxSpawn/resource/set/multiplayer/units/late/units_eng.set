@@ -345,6 +345,170 @@
 	("doctrine_t4" cool(0) d(late_eng_offensive) cost(0))
 }
 
+;===================================
+;       WW EXPANSION DOCTRINES
+;===================================
+
+; -- All-Round Doctrine --
+{"doctrine_centurion"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(centurion) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_fv215b"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(fv215b) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_amxm4"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amxm4) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_centurion_mk10"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(centurion_mk10) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_centurion3"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(centurion3) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_amx105"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx105) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_m4a1_revalorise"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(m4a1_revalorise) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_lorraine40t_sd"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(lorraine40t_sd) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_amx_50b"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx_50b) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+{"doctrine_centrx"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(centrx) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_allround) cost(0))
+}
+
+; -- Defensive Doctrine --
+{"doctrine_conqueror"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(conqueror) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_tortez"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(tortez) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_super_conquer"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(super_conquer) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_conqueror_mk2"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(conqueror_mk2) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_fv4005_stage_2"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(fv4005_stage_2) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_amx_mle48"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx_mle48) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_amx_m4_1949"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx_m4_1949) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_amx_50_t090"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx_50_t090) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_amx_50_foch"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx_50_foch) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_fauteur"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(fauteur) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+{"doctrine_black_prince"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(black_prince) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_defensive) cost(0))
+}
+
+; -- Irregular Doctrine --
+{"doctrine_fv215b_183"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(fv215b_183) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+{"doctrine_amx67"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx67) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+{"doctrine_amx13_90"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx13_90) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+{"doctrine_amx13_90_harpon"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx13_90_harpon) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+{"doctrine_amx13_105"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx13_105) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+{"doctrine_bat25t"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(bat25t) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+{"doctrine_sfac105"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(sfac105) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_irregular) cost(0))
+}
+
+; -- Offensive Doctrine --
+{"doctrine_caernarvon"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(caernarvon) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_fv215"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(fv215) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_fv4025"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(fv4025) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_fv4004_conway"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(fv4004_conway) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_executor"
+	("squad_vehicle_doctrine" side(eng) period(late) vehicle(executor) crew(tankman:4))
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_chieftain5"
+	("squad_vehicle2_doctrine" side(eng) period(late) vehicle(chieftain5) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_amx50_100"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx50_100) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_somua_sm"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(somua_sm) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_amx_auf1"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(amx_auf1) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+{"doctrine_foch155"
+	("squad_vehicle2_doctrine" side(fra) period(late) vehicle(foch155) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1)){tags "eng"}
+	("doctrine_t5" cool(0) d(late_eng_offensive) cost(0))
+}
+
 ;_________________________________________________
 ;|             inf1                               |
 ;|________________________________________________|
@@ -1369,7 +1533,186 @@
 	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(eng) crew1(tankman:4) crew2(tank_commander:1) g(heavy3) b(heavy) cw(0) cp(0)
 	cost(0))
 }
-
+;-- ============ WW EXPANSION UNITS ============
+{"centurion"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"conqueror"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"caernarvon"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"tortez"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:6) crew2(tank_commander:1) g(spg1) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"tog2"
+	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(eng) crew1(tankman:5) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"fv215"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"fv215b"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"fv215b_183"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:5) crew2(tank_commander:1) g(spg1) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"fv4025"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:5) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"super_conquer"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"amxm4"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"amx67"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"executor"
+	("vehicle2" period(late) cd(0) ci(0) g(wheel8) side(eng) t(doctrineonly vehicle) crew1(tankman:3) crew2(tank_commander:1) b(vehicles) cw(0) cp(0)
+	cost(0))
+}
+{"centurion_mk10"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"conqueror_mk2"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:5) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) 
+	cost(0))
+}
+{"centurion3"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) cost(0))
+}
+{"chieftain5"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) cost(0))
+}
+{"fv4004_conway"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:3) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) cost(0))
+}
+{"fv4005_stage_2"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:4) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) cost(0))
+}
+{"black_prince"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:4) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"centrx"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:4) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+; // ======================
+; //   FRENCH CUSTOM TANKS
+; // ======================
+{"amx13_genie" 
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(eng) crew1(tankman_fra_eng:1) crew2(tank_commander_fra_eng:1) g(light3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_maxson" 
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx12t" 
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"elc_amx" 
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(eng) crew1(tankman_fra_eng:1) crew2(tank_commander_fra_eng:1) g(light2) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_75" 
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light4) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_75_harpon" 
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light4) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx40_0" 
+	("vehicle2" period(early) cd(0) ci(0) t(medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium1) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx40_ww2" 
+	("vehicle2" period(early) cd(0) ci(0) t(medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium1) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"m4a1_fl10" 
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium4) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"bdr_g1b_1934" 
+	("vehicle2" period(early) cd(0) ci(0) t(heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy1) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"bdr_g1b_sa32" 
+	("vehicle2" period(early) cd(0) ci(0) t(heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy1) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"bdr_g1b_dca30" 
+	("vehicle2" period(early) cd(0) ci(0) t(heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy1) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"bdr_g1b_sa44" 
+	("vehicle2" period(mid) cd(0) ci(0) t(heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy2) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx105" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_90" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_90_harpon" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_105" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly light) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(light5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"m4a1_revalorise" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx_mle48" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1) g(heavy2) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx_m4_1949" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1) g(heavy3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"lorraine40t_sd" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx50_100" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx_50_t090" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"somua_sm" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1) g(heavy3) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"bat25t" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(medium5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx_50_foch" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy4) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx_50b" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy4) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx_auf1" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy4) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"foch155" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:3) crew2(tank_commander_fra_eng:1) g(heavy5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"fauteur" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman_fra_eng:2) crew2(tank_commander_fra_eng:1) g(medium5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"sfac105" 
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(eng) crew1(tankman_fra_eng:4) crew2(tank_commander_fra_eng:1) g(light5) b(medium) cw(0) cp(0) cost(0)) 
+}
+{"amx13_dca" 
+	("vehicle" period(late) cd(0) ci(0) t(light) side(eng) crew(tankman_fra_eng:3) g(light5) b(medium) cw(0) cp(0) cost(0)) 
+}
 
 ;// Doctrine Units
 {"churchill_mk3_qf75"

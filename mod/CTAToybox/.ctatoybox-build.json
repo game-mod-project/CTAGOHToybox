@@ -1,6 +1,6 @@
 {
   "project": "강화-독일",
-  "builtAt": "2026-10-17T03:27:00Z",
+  "builtAt": "2026-10-18T05:34:11Z",
   "files": [
     {
       "path": "resource/set/stuff/bazooka/20mm_fliegerfaust_ctb_ger.weapon",
@@ -44,7 +44,7 @@
     },
     {
       "path": "resource/set/stuff/bazooka/panzershreck_54_x6_ctb_ger.weapon",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -69,7 +69,7 @@
     },
     {
       "path": "resource/set/stuff/bombing/bomb_dropper_ger_500x2_ctb_ger",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -734,8 +734,8 @@
     },
     {
       "path": "resource/set/stuff/gun/88mm_kwk43_ctb_ger",
-      "layer": "mod_2905667604",
-      "edits": 2
+      "layer": "mod_3732639687",
+      "edits": 1
     },
     {
       "path": "resource/set/stuff/gun/88mm_kwk43_2_ctb_ger",
@@ -809,7 +809,7 @@
     },
     {
       "path": "resource/set/stuff/mgun/lewis_gun_ger_ctb_ger",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -824,7 +824,7 @@
     },
     {
       "path": "resource/set/stuff/mgun/madsen_belt_ctb_ger",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -1009,7 +1009,7 @@
     },
     {
       "path": "resource/set/stuff/reactive/210mm_werfer_21_ctb_ger.weapon",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -1029,7 +1029,7 @@
     },
     {
       "path": "resource/set/stuff/reactive/55mm_r4m_ctb_ger.weapon",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -7784,7 +7784,7 @@
     },
     {
       "path": "resource/entity/-vehicle/+germany/tank_medium/vk_3002/vk_3002.def",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 11
     },
     {
@@ -9694,7 +9694,7 @@
     },
     {
       "path": "resource/entity/-vehicle/+germany/tank_medium/vk_3002/panzer5d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 28
     },
     {
@@ -10301,11 +10301,6 @@
       "path": "resource/entity/-vehicle/+germany/tank_heavy/x/lowehd_xx/lowehd_xx.def",
       "layer": "mod_3732639687",
       "edits": 24
-    },
-    {
-      "path": "resource/entity/-vehicle/+germany/tank_heavy/x/pzkpfw_6_ausf_b_tiger_sla16_xx/pzkpfw_6_ausf_b_tiger_sla16_xx.def",
-      "layer": "mod_2905667604",
-      "edits": 37
     },
     {
       "path": "resource/entity/-vehicle/+germany/tank_heavy/x/vk4503_xx/vk4503_xx.def",
@@ -12419,7 +12414,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_flakpanzer1a_2f1b8aad.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12429,7 +12424,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_marder_1fcm_36_30d99b24.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12439,7 +12434,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_nbfz_bfdaaca2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12449,7 +12444,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz2j_66a1a930.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12459,7 +12454,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz38tna_b_5983581b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12469,7 +12464,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pzkpfw_2hvk903_733a66f3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12479,7 +12474,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vfw_5785259e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12489,7 +12484,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk1602_4c080bd1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12499,7 +12494,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk1602_1943_be878272.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12509,7 +12504,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk1602_30mm_db5104fe.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12519,7 +12514,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bison2_24bf2eb2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12529,7 +12524,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_coelian_i_4a132d6f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12539,7 +12534,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_coelian_ii_5dce9b67.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12549,7 +12544,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_dicker_max_e67bb981.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12559,7 +12554,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_50_3ee3dd93.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12569,7 +12564,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e25_34af6407.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12579,7 +12574,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e25x7_fc296853.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12589,7 +12584,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e40a_9fa76ffa.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12599,7 +12594,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_50_105l68_02992df3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12609,7 +12604,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_50_105l73_fa63db4f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12619,7 +12614,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_50_75l100_5b7e27d2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12629,7 +12624,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_105l68_915816e7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12639,7 +12634,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_105l73_33545f02.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12649,7 +12644,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_88l100_532e840c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12659,7 +12654,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_88l71_f225ca4d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12669,7 +12664,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_early_65e3ab41.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12679,7 +12674,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_sturm_4233f180.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12689,7 +12684,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_75_ts_7ab9e2e3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12699,7 +12694,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpz_e_50_cf71a693.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12709,7 +12704,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpz_e_50_early_0b351384.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12719,7 +12714,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpz_e_75_c19b41c7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12729,7 +12724,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpz_e_75_sturm_6d6e8b4c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12739,7 +12734,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e50gt_b4cae598.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12749,7 +12744,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ezart_ab964ad8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12759,7 +12754,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_grille_15_6607f9f4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12769,7 +12764,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpanzer_iv_a_1810b2f2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12779,7 +12774,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpanzer_iv_a_armor_b8633ab9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12789,7 +12784,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_kugelblitz_78a33eea.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12799,7 +12794,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panther_2_67b97597.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12809,7 +12804,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panther_f_965c9e3e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12819,7 +12814,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panther_ii_8d84eb6b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12829,7 +12824,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panther_ii_88_fb0f0367.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12839,7 +12834,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panther_ii_turm_3f23ea24.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12849,7 +12844,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5c_ger_86d418eb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12859,7 +12854,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_strumpanzer5g_12d2f6f1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12869,7 +12864,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk3001d_d71454d0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12879,7 +12874,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk_3002_73b89cc0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12889,7 +12884,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_waffletractor_6654ce7f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12899,7 +12894,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_zhane_22ae142f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -12909,7 +12904,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ft17_jap_c791b66e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12919,7 +12914,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ft17_mg_jap_efff1bf0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12929,7 +12924,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ha_go_9a45e69b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12939,7 +12934,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ha_go_flamm_cdceb4ff.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12949,7 +12944,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ha_go_ijn_2c46f18d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12959,7 +12954,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ha_go_late_28e8a5a6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12969,7 +12964,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ha_go_late_ijn_f373cc63.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12979,7 +12974,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_ru_cdae9b7d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12989,7 +12984,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_to_97293e8a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -12999,7 +12994,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_mi_6ef48aa0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13009,7 +13004,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_mi_mid_9ffdde79.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13019,7 +13014,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_mi_pontoon_7ecb089b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13029,7 +13024,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_mi_pontoon_mid_42dfd4c1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13039,7 +13034,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ke_ho_60b9f0c1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13049,7 +13044,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ke_ni_92721a6f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13059,7 +13054,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ke_nu_b25cc9d2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13069,7 +13064,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ke_to_dab46d9a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13079,7 +13074,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ki_to_376b5dd4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13089,7 +13084,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3_stuart_jap_4d7ca5b8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13099,7 +13094,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_so_ki_49e56bc6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13109,7 +13104,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ta_se_5da04017.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13119,7 +13114,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_te_ke_a86ba0cb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13129,7 +13124,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_te_ke_mg_30fb5e0b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13139,7 +13134,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_te_ke_mg_prototype_59f07175.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13149,7 +13144,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_type_92_hac_early_3443dea2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13159,7 +13154,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_type_92_hac_late_9c2d554d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13169,7 +13164,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_type_94_tk_late_9931c6bb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13179,7 +13174,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_type_94_tk_mg_early_54f18fbf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13189,7 +13184,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_type_94_tk_mg_late_20f0c1fe.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13199,7 +13194,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_ijn_d9554135.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13209,7 +13204,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_late_2f44f03f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13219,7 +13214,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_late_bamboo_2a5aa7a8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13229,7 +13224,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_late_ijn_c98b2f8a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13239,7 +13234,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_a824d2b0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13249,7 +13244,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_bamboo_a0b16eec.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13259,7 +13254,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_kai_df9bfe4c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13269,7 +13264,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_kai_bamboo_7832b99b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13279,7 +13274,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_kai_ijn_9051034c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13289,7 +13284,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_kai_late_fe082271.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13299,7 +13294,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_kai_late_bamboo_714b507b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13309,7 +13304,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_kai_late_ijn_f7d3139a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13319,7 +13314,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_lg_ab006dc9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13329,7 +13324,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ha_sg_c3c92a6d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13339,7 +13334,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_he_b5f83629.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13349,7 +13344,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ni_f43b6e9f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13359,7 +13354,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_nu_69ff9414.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13369,7 +13364,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_nu2_65580026.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13379,7 +13374,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_nu_kai_75c0e040.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13389,7 +13384,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_ri_2_4d47a805.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13399,7 +13394,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_to_545b8efc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13409,7 +13404,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_chi_yu_8a7a9834.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13419,7 +13414,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_i_0ddadac4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13429,7 +13424,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_ni_i_e0022dc3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13439,7 +13434,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_ni_ii_214fdd55.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13449,7 +13444,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_ni_iii_cbecc2bf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13459,7 +13454,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ho_ro_165be4b3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13469,7 +13464,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_i_go_d6e10d69.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13479,7 +13474,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_i_go_ijn_3339f73e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13489,7 +13484,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_i_go_late_9e6a3d8e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13499,7 +13494,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_i_go_late_ijn_36240bc7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13509,7 +13504,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_chi_pontoons_3172cfae.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13519,7 +13514,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_chi_without_81c44b5a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13529,7 +13524,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ka_ho_06dce51c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13539,7 +13534,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_se_ri_3a212e31.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13549,7 +13544,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_shi_ki_798e5d80.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13559,7 +13554,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ss_ki_e5e4bede.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13569,7 +13564,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_to_ku_a2fa590f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13579,7 +13574,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_to_ku_pontoons_b179e520.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13589,7 +13584,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m18_hellcat_105mm_5c08e0c2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13599,7 +13594,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m5_stuart_04bb6f46.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13609,7 +13604,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m5_stuart_auto_b63bf558.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13619,7 +13614,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t18_hmc_3d3750cd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13629,7 +13624,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t49_fe2baa8f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13639,7 +13634,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t77_spaa_00f3dc14.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13649,7 +13644,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t7_combat_car_c8dbd2bd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13659,7 +13654,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_lvta1_dcf2f8de.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13669,7 +13664,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_lvta4_7196d182.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13679,7 +13674,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_lvtm24_dfbdee8e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13689,7 +13684,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m18_90_d7b6244b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13699,7 +13694,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m18_blackcat_7a53fb0a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13709,7 +13704,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m19_ccb7d07c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13719,7 +13714,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m2a2_45779e39.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13729,7 +13724,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m8a1_630da601.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13739,7 +13734,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ares90c_2e70a588.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13749,7 +13744,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jumbo90_7f81dba9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13759,7 +13754,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m2_medium_7f686bea.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13769,7 +13764,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m2a1_medium_7781af6b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13779,7 +13774,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m2e1_medium_flamm_4bd36a5e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13789,7 +13784,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4_90_e753ec1c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13799,7 +13794,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_m17_cdc8ab1e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13809,7 +13804,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_t40_e4e66391.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13819,7 +13814,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_firefly_1d445ac3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13829,7 +13824,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_skink_172e503d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13844,7 +13839,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m36b2_e79aeeb6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13854,7 +13849,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m3_recovery_e4c53019.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13864,7 +13859,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m4_improved_6866d70b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13874,7 +13869,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m4a3e8_fury_58b3155e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13884,7 +13879,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m4a3e8_thundervii_17a9a4ea.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13894,7 +13889,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m4a3r3_zippo_13332243.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13904,7 +13899,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_a20_cb4dc242.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13914,7 +13909,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_rbt_5_49be3453.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13924,7 +13919,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su14_2_54fc315c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13934,7 +13929,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t50e_a60b25e6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13944,7 +13939,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t70_45_e6da166d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13954,7 +13949,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t_26e_702680ee.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13964,7 +13959,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vz68_ab5631e4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13974,7 +13969,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vz71_414c0291.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13984,7 +13979,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_zsu_37_add99a39.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -13994,7 +13989,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_zut_37_d4c842c8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14004,7 +13999,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_obj907_c5c08cbc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14014,7 +14009,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pgz70_6ad19ad4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14024,7 +14019,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28_40_5ca22fef.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14034,7 +14029,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28_85_74f2d625.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14044,7 +14039,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t29_058bf105.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14054,7 +14049,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_41_stz_c35ddd00.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14064,7 +14059,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t34_100_e79c305d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14074,7 +14069,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t34_44supply_3cce2531.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14084,7 +14079,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t34_zsu37_2_13358afe.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14094,7 +14089,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t44_df7035bd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14104,7 +14099,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t44a_20bd3336.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14114,7 +14109,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t44_122_f4652691.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14124,7 +14119,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t44_2_9013010e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14134,7 +14129,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t54_47_8b69e04e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14144,7 +14139,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t_54_49_c72fb743.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14154,7 +14149,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t_v_0cf3f957.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14164,7 +14159,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t_v_85_a60cf076.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14174,7 +14169,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk1_57e7b4b2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14184,7 +14179,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk1_cs_00aef0a4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14194,7 +14189,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk2_d03523fa.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14204,7 +14199,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk2a_27d4a354.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14214,7 +14209,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk2a_cs_d65683bc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14224,7 +14219,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk3_a49795ed.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14234,7 +14229,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk3_late_91131e61.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14244,7 +14239,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk4_1bcec6c2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14254,7 +14249,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cruiser_mk4a_a351cfd4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14264,7 +14259,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_light_tank_mk8_9ca76e21.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14274,7 +14269,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_lvt4_eng_833b1013.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14284,7 +14279,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m22_locust_2f771973.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14294,7 +14289,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m22_locust_littlejohn_5ed1fd02.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14304,7 +14299,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_matilda1_f415b654.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14314,7 +14309,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_matilda1_50_6aa7ffad.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14324,7 +14319,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stuart1_a48fe91b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14334,7 +14329,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stuart3_d9841a1f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14344,7 +14339,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stuart5_98f99239.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14354,7 +14349,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stuart5_recce_666b241f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14364,7 +14359,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stuart6_e9cd56a2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14374,7 +14369,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tetrarch_mk7_9d208dd4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14384,7 +14379,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tetrarch_mk7_littlejohn_27c4f629.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14394,7 +14389,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vickers_aa_mk1_52db0fa0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14404,7 +14399,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vickers_mk6_812dea31.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14414,7 +14409,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_achilles_mk2_b21c3aa4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14424,7 +14419,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_archer_d407abe6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14434,7 +14429,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bishop_44fd0d57.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14444,7 +14439,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_challenger_a30_5054e4e8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14454,7 +14449,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_comet1_a34_c208d7f1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14464,7 +14459,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cromwell4_70fad48a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14474,7 +14469,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cromwell4_tulip_6df482c0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14484,7 +14479,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cromwell5_43e2ee7f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14494,7 +14489,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cromwell6_92142076.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14504,7 +14499,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cromwell7_701b35eb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14514,7 +14509,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_cromwell8_4b5e585e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14524,7 +14519,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_aa_mk1_44394969.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14534,7 +14529,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_aa_mk2_c08ffb82.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14544,7 +14539,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_mk1_cfb48857.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14554,7 +14549,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_mk1_cs_d296013b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14564,7 +14559,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_mk2_eeb0cb0b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14574,7 +14569,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_mk2_cs_f8d46315.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14584,7 +14579,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_crusader_mk3_19358dfb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14594,7 +14589,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_grant_9af41dd4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14604,7 +14599,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_matilda2_mk1_5283f44d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14614,7 +14609,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_matilda2_mk3_8362717a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14624,7 +14619,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_matilda2_mk4_cs_641d4ef1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14634,7 +14629,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ram_kangaroo_92134601.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14644,7 +14639,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ram_kangaroo_mk2_9fa7d48c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14654,7 +14649,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sexton_mk2_5488b7d2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14664,7 +14659,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1_752157c5.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14674,7 +14669,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1_armor_eecc7079.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14684,7 +14679,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1b_c98c65e7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14694,7 +14689,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1c_132932e0.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14704,7 +14699,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1c_armor_24228646.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14714,7 +14709,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1c_hybrid_87ac7ab4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14724,7 +14719,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman1c_tulip_hybrid_dc339c7c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14734,7 +14729,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman2_dd_30f1c21f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14744,7 +14739,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman2_dv_b593618e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14754,7 +14749,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman2_late_34d0db61.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14764,7 +14759,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman2a_8153c61e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14774,7 +14769,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_dv_e397d2f6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14784,7 +14779,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_dv_armor_52f438a7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14794,7 +14789,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_early_08eef87f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14804,7 +14799,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_early_armor_11525edb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14814,7 +14809,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_late_f4918b30.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14824,7 +14819,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_mid_65fbb3c6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14834,7 +14829,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman3_mid_armor_ccc9f079.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14844,7 +14839,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_crab_333ff81d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14854,7 +14849,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_croc_c8d72a71.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14864,7 +14859,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_dv_b5fa546f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14874,7 +14869,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_dv_armor_f5402a94.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14884,7 +14879,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_late_97af4280.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14894,7 +14889,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_late_tulip_30e47dd9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14904,7 +14899,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_mid_79a90965.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14914,7 +14909,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5_mid_armor_a3a426d9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14924,7 +14919,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sherman5c_b5342b4b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14934,7 +14929,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk1_5a8bbebd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14944,7 +14939,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk10_61fe7677.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14954,7 +14949,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk11_8428ae91.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14964,7 +14959,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk2_d31bdb29.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14974,7 +14969,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk3_9ee8b13c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14984,7 +14979,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk3cs_828e02a8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -14994,7 +14989,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine_mk9_be7a5468.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15004,7 +14999,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_wolverine_mk1_09949291.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15014,7 +15009,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt42_bba63b78.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15029,7 +15024,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt5_fin_0be9119e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15044,7 +15039,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt5_fin_mid_543b3e0f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15054,7 +15049,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ft17_fin_cb80dae3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15064,7 +15059,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ft17_mg_fin_c457a813.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15074,7 +15069,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_kht130_fin_a2eb020c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15084,7 +15079,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_l62_4f7ce55f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15099,7 +15094,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26_33_fin_ae26be4c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15114,7 +15109,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26_33_fin_mid_d3b72a57.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15124,7 +15119,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26c_b55c0cef.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15139,7 +15134,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26e_a5727a84.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15154,7 +15149,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26e_mid_3f21007f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15164,7 +15159,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t37a_fin_2295a797.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15174,7 +15169,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t50_fin_c0750fa8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15184,7 +15179,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vickers_6t_altb_beae9877.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15194,7 +15189,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4j_fin_c66b54e3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15204,7 +15199,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3g_fin_3ec3c011.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15214,7 +15209,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3g_fin_early_bd2cebd4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15224,7 +15219,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28_38_fin_7e446ddf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15239,7 +15234,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28e_fin_c30899db.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15254,7 +15249,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28e_fin_late_89b0f98e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15269,7 +15264,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_41_fin_75e14127.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15284,7 +15279,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_41_fin_late_c12a0f31.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15294,7 +15289,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3485_44_fin_b319ccc6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15304,7 +15299,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bison_a7ca3035.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15314,7 +15309,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_geschutzwagen_39h_9ebf3baf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15324,7 +15319,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_grille_k_9db6ae5e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15334,7 +15329,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_grille_m_640e459f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15344,7 +15339,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_h39_turret_4c70d891.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15354,7 +15349,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_hetzer_18e500f2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15364,7 +15359,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_marder2_d823ab9f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15374,7 +15369,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_marder3m_957e8aeb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15384,7 +15379,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer1b_86520316.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15394,7 +15389,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer1f_1a37feff.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15404,7 +15399,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer2c_eaa7bb3e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15414,7 +15409,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer2f_f9f6ec6d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15424,7 +15419,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer2l_f2f58453.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15434,7 +15429,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer731r_e2094898.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15444,7 +15439,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer742r_288fb044.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15454,7 +15449,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzerjager1_8f62984b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15464,7 +15459,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz35t_de59be00.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15474,7 +15469,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz38h_735_d2b5a506.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15484,7 +15479,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz38h_w40_10e398cc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15494,7 +15489,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz38t_a_6242d645.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15504,7 +15499,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz38t_f_bd954e0e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15514,7 +15509,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz38t_g_aa6efe96.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15524,7 +15519,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_wespe_3cb84caa.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15534,7 +15529,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_hummel_843b9d3d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15544,7 +15539,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpanther_5303623d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15554,7 +15549,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpanzer4_l48_adc89171.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15564,7 +15559,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdpanzer4_l48_early_5f542e61.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15574,7 +15569,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_nashorn_dcc28a60.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15584,7 +15579,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ostwind_6702757d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15594,7 +15589,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer35s_949b605d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15604,7 +15599,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3_flamm_3d8afd52.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15614,7 +15609,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3e_fe9cd0c1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15624,7 +15619,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3f_ec199a6e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15634,7 +15629,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3h_b6504bdd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15644,7 +15639,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3j_5bb4e7e2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15654,7 +15649,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3j1_ed8d01a3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15664,7 +15659,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3l_0ace5886.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15674,7 +15669,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3m_1a435225.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15684,7 +15679,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer3n_38397f20.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15694,7 +15689,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4_70_v_f0d0344e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15704,7 +15699,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4b_eca2bec6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15714,7 +15709,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4d_ae3c1815.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15724,7 +15719,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4f1_623483f1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15734,7 +15729,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4f2_420a8c12.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15744,7 +15739,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4g_c5211987.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15754,7 +15749,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4h_74b1983f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15764,7 +15759,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer4j_52cde4d9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15774,7 +15769,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer5a_25e0b19d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15784,7 +15779,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer5a_armor_f287ba3b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15794,7 +15789,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer5d_2deb6e90.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15804,7 +15799,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzer5g_a91915c4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15814,7 +15809,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sig33b_ddfb9c1e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15824,7 +15819,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3a_cf135758.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15834,7 +15829,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3b_bcf6521c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15844,7 +15839,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3f_a5c89e25.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15854,7 +15849,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3g_50d12386.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15864,7 +15859,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stug3g_late_cad0d2b4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15874,7 +15869,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_stuh42_08b18565.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15884,7 +15879,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sturmpanzer4_0cc1cfbd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15894,7 +15889,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_wirbelwind_dedd8728.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 6
     },
     {
@@ -15904,7 +15899,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_lvt4_f5fea247.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15914,7 +15909,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m18_hellcat_a9876be9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15924,7 +15919,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m18_hellcat_late_1693f70d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15934,7 +15929,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m24_chaffee_87d8750b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15944,7 +15939,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3_stuart_early_6e33ba86.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15954,7 +15949,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3_stuart_late_ed160058.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15964,7 +15959,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3a1_stuart_1297fdbc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15974,7 +15969,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m5a1_stuart_5316c68d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15984,7 +15979,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m5a1_stuart_late_026426c8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -15994,7 +15989,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m8_hmc_7442c621.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16009,7 +16004,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m10_gmc_f3816be4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16024,7 +16019,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m10_gmc_early_436ed67c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16039,7 +16034,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m10_gmc_late_ebd503d8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16054,7 +16049,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_us_m10a1_b15758b1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16069,7 +16064,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m12_gmc_81643435.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16084,7 +16079,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m12_gmc_sm_b8033dac.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16099,7 +16094,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m36_gmc_5b7e27d6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16114,7 +16109,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m36_gmc_late_09f63221.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16129,7 +16124,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m36_gmc_t33_77a3f379.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16144,7 +16139,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m36b1_gmc_6fbb62b1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16159,7 +16154,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m36b1_gmc_late_cce36e0d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16174,7 +16169,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m36b1_gmc_t33_d3592f49.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16184,7 +16179,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3_lee_424b71e9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16194,7 +16189,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4_105_60b6a7bf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16204,7 +16199,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4_75_early_5711ab14.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16214,7 +16209,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4_75_early_armor_b456c42f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16224,7 +16219,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4_75_late_33f9a6c7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16234,7 +16229,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_75_dd_befca61e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16244,7 +16239,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_75_early_9ccdc680.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16254,7 +16249,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_75_late_18722216.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16264,7 +16259,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_75_mid_0a43af05.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16274,7 +16269,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_75_mid_armor_831a88c7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16284,7 +16279,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_76w_e48ceb14.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16294,7 +16289,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a1_76w_mid_cc0572e4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16304,7 +16299,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_105_5280d89e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16314,7 +16309,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_105_hvss_6702ec97.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16324,7 +16319,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_75_early_a4ed35eb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16334,7 +16329,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_75_late_8298b694.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16344,7 +16339,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_75w_d10f953c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16354,7 +16349,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_75w_e4_5_38b69241.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16364,7 +16359,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_75w_early_e25b93b2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16374,7 +16369,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_76w_a07a6c65.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16384,7 +16379,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_76w_field1_70666363.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16394,7 +16389,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_76w_field2_d8e85f96.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16404,7 +16399,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_76w_field3_84cdd306.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16414,7 +16409,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_76w_hvss_99d64d9a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16424,7 +16419,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3_calliope_f4f2b8a4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16434,7 +16429,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3e2_75_d487027c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16444,7 +16439,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3e2_76_1ce9e72a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16459,7 +16454,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m7_hmc_6b8ca28f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16474,7 +16469,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m7_hmc_sm_69d29cd5.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16484,7 +16479,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m7b1_hmc_0cd02a3b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16494,7 +16489,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t1e3_m4a1_75_8eec6b28.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16504,7 +16499,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt2_5555d020.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16514,7 +16509,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt2_da2_f526729a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16524,7 +16519,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt5_43ac2387.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16534,7 +16529,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt7_da38670e.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16544,7 +16539,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bt7a_56d51378.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16554,7 +16549,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_kht130_bbb143e9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16564,7 +16559,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_kht26_81225cbc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16574,7 +16569,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3_stuart_late_rus_dae48c5f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16584,7 +16579,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3a1_stuart_rus_f6edadb8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16594,7 +16589,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su26_4ca01e58.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16604,7 +16599,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su76_3a9cd498.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16614,7 +16609,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26_31_49d08ec9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16624,7 +16619,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26_33_dac5be87.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16634,7 +16629,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26_38_83605f0d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16644,12 +16639,12 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t26_39_e4be046b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t27_2a95ece7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16659,7 +16654,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t30_1e21304d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16669,7 +16664,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t37a_f24517fa.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16679,7 +16674,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t40_1b85b5c6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16689,7 +16684,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t50_355eb3e9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16699,7 +16694,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t60_39adf068.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16709,7 +16704,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t60_bm8_24_670010c2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16719,7 +16714,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t70_e96c3432.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16729,7 +16724,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t70m_068ee0b6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16739,7 +16734,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_zis30_8b11090d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16749,7 +16744,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m3_lee_rus_826c0d02.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16759,7 +16754,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a2_75_early_rus_09159d23.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16769,7 +16764,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a2_75_late_rus_52f1a64d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16779,7 +16774,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a2_76w_early_rus_5a49fbaa.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16789,7 +16784,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a2_76w_late_rus_12c4afab.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16799,7 +16794,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_m4a3e4_rus_59934683.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16809,7 +16804,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su100_bf5ec1fc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16819,7 +16814,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su122_fa8a24c3.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16829,7 +16824,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su85_ac5224ad.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16839,7 +16834,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_su85m_e3de7c8c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16849,7 +16844,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28_960e3ae8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16859,7 +16854,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28_38_d4bc4768.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16869,7 +16864,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t28e_820d3bec.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16879,7 +16874,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3457_41_a89fafec.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16889,7 +16884,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3457_43_1e818e2a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16899,7 +16894,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_40_4de6a92a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16909,7 +16904,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_41_cde5afbd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16919,7 +16914,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_41e_9f966df1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16929,7 +16924,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_42_79adb9b5.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16939,7 +16934,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_43_af5c19ea.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16949,7 +16944,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3476_43_flame_0aa29bd2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16959,7 +16954,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3485_44_0eb16c04.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16969,7 +16964,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3485_44_flame_151c732c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16979,7 +16974,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3485_44a_2180a40b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16989,7 +16984,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3485_44a_flame_3ebfc894.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -16999,7 +16994,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_t3485_44b_9e025cd7.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -17009,7 +17004,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine2_fc8f6ca9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -17019,7 +17014,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine7_8b088fcf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -17029,7 +17024,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_valentine9_d9ef5d2b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 1
     },
     {
@@ -17389,7 +17384,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_wanze_b8b094eb.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17399,12 +17394,12 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_wanze_ammo_45d6d7b9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_wanze_demo_radio_a2ef2063.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17414,7 +17409,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_bergepanther_577948fe.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17424,7 +17419,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_100c_3b7bdabf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17434,7 +17429,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_100hd_ee97228d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17444,7 +17439,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e100_15_98acc910.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17454,7 +17449,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e100_gw_0b88e7ab.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17464,7 +17459,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e100_v1_robz_d8e8920a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17474,7 +17469,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e100_waffentrager_robz_7cb3655b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17484,7 +17479,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e100aa_4be3208b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17494,7 +17489,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e200_robztest_1ab014f1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17504,7 +17499,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e40a_2a31c9b8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17514,7 +17509,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e65_9833a231.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17524,7 +17519,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e75_f1d08a47.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17534,7 +17529,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e75_ts_3dst_703722c8.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17544,7 +17539,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e77_5d1a39ea.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17554,7 +17549,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e79_71f5a27b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17564,7 +17559,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e90_1fc75472.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17574,7 +17569,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e90_ace_ef4d3b1b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17584,7 +17579,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e90pz_358f306f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17594,7 +17589,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_100a_8adb397b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17604,7 +17599,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_e_100b_e5424a18.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17614,7 +17609,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_elefant_213d2780.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17624,7 +17619,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_flakmaus_86d557f9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17634,7 +17629,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_grille_15_l63_e6edd5a6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17644,7 +17639,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_gw_tiger_0600afff.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17654,7 +17649,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_gwe100_9512b274.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17664,7 +17659,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jpze100_9ca8276b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17674,7 +17669,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jpze100_2_17854dfd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17684,7 +17679,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_kampfpanzer_67_0078e3e9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17694,7 +17689,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_krv_9f976ebc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17704,7 +17699,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_kv2_754r_b59de86c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17714,7 +17709,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_lowe_1943_a5c8f8b4.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17724,7 +17719,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_lowe_1944_c09bc506.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17734,7 +17729,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_lowehd_822e2e85.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17744,7 +17739,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_lownn_77667ff1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17754,7 +17749,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_maus_desert_3892ee60.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17764,7 +17759,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_mausking_04b99f0c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17774,7 +17769,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_neu_7328096f.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17784,7 +17779,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_obj268_c_760f2ebf.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17794,7 +17789,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz6bh_105mm_ff756824.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17804,7 +17799,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pzbefwgvi_p_af489d49.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17814,7 +17809,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pzkpfw_6_ausf_b_tiger_sla16_57621148.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17824,7 +17819,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pzkpfw_8_maus_3a724ab1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17834,7 +17829,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_rhmb_wt_48a1e9bd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17844,7 +17839,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sge100_4eabec76.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17854,7 +17849,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sturer_emil_50f57e58.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17864,7 +17859,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_taschenratte_476eb845.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17874,7 +17869,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger_h_east_c7fe21a2.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17884,7 +17879,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger_h_west_ac248164.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17894,7 +17889,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tigermaus_1ce630d9.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17904,7 +17899,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk4503_13489e2c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17914,7 +17909,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk72_robztest_ed557c9c.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17924,7 +17919,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_vk_4501_p_1a20fb85.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17934,22 +17929,22 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_xiniu_12b5d5c6.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_600mm_thor_d0762e1d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sdkfz302_1d60ac22.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sdkfz303b_bd41d5e5.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 2
     },
     {
@@ -17959,7 +17954,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_ferdinand_c9fd7c0a.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17969,7 +17964,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_flammpanzer_b2_7b3a791d.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17979,7 +17974,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_jagdtiger_6356c2ac.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17989,7 +17984,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_panzerb2_5746216b.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -17999,7 +17994,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_pz756r_887009c1.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18009,7 +18004,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_sturmtiger_4ebbcef5.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18019,7 +18014,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger1e_de32d1bd.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18029,7 +18024,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger1h_8e035f78.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18039,7 +18034,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger1hunt_02183dfc.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18049,7 +18044,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger2h_e531f942.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18059,7 +18054,7 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_tiger2p_0d4c7f89.ext",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 5
     },
     {
@@ -18544,7 +18539,7 @@
     },
     {
       "path": "resource/set/stuff/gun/88mm_kwk43",
-      "layer": "mod_2905667604",
+      "layer": "mod_3732639687",
       "edits": 0
     },
     {

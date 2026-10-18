@@ -557,6 +557,250 @@
 	{tags "limitf1"}
 }
 
+;===================================
+;       WW EXPANSION DOCTRINES
+;===================================
+
+; -- All-Round Doctrine --
+{"doctrine_e50gt"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e50gt) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround) cost(0))
+}
+{"doctrine_e-50_75l100"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-50_75l100) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround) cost(0))
+}
+{"doctrine_e-50"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-50) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround) cost(0))
+}
+{"doctrine_jagdpz_e-50_early"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdpz_e-50_early) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround) cost(0))
+}
+{"doctrine_panther_2"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(panther_2) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround) cost(0))
+}
+{"doctrine_xiniu"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(xiniu) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround) cost(0))
+}
+
+; -- All-Round 2 (Liberation DLC) Doctrine --
+{"doctrine_jagdpz_e-75_sturm"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdpz_e-75_sturm) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_allround2) cost(0))
+}
+{"doctrine_vk4503"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(vk4503) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround2) cost(0))
+}
+{"doctrine_e40a"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e40a) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_allround2) cost(0))
+}
+{"doctrine_e65"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e65) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_allround2) cost(0))
+}
+
+; -- Offensive Doctrine --
+{"doctrine_e-75_sturm"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-75_sturm) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_lownn"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(lownn) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_e77"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e77) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_e79"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e79) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_e90pz"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e90pz) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_e90"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e90) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_e90_ace"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e90_ace) crew1(tankman_ace:4) crew2(tank_commander_ace:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_krv"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(krv) crew1(tankman:2) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_kampfpanzer_67"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(kampfpanzer_67) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_neu"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(neu) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+{"doctrine_zhane"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(zhane) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_offensive) cost(0))
+}
+
+; -- Defensive Doctrine --
+{"doctrine_jagdpz_e-50"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdpz_e-50) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_vk72_robztest"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(vk72_robztest) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_lowe_1943"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(lowe_1943) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_lowe_1944"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(lowe_1944) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_lowehd"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(lowehd) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e-75_early"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-75_early) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e-75_88l71"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-75_88l71) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e75"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e75) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e-75_ts"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-75_ts) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e75_ts_3dst"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e75_ts_3dst) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e-75_88l100"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-75_88l100) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_jagdpz_e-75"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jagdpz_e-75) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e100aa"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e100aa) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e-100c"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-100c) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e100_15"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e100_15) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_e-100hd"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e-100hd) crew1(tankman:4) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_jpze100"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jpze100) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_jpze100_2"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(jpze100_2) crew1(tankman:8) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_tigermaus"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(tigermaus) crew1(tankman:7) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+{"doctrine_grille_15"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(grille_15) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_defensive) cost(0))
+}
+
+; -- Irregular Doctrine --
+{"doctrine_rhmb_wt"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(rhmb_wt) crew1(tankman:2) crew2(tank_commander:1))
+	("doctrine_t4" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_e100_waffentrager_robz"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e100_waffentrager_robz) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_e200_robztest"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e200_robztest) crew1(tankman:11) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_v1"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(v1) crew1(artilleryman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_v2_a4"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(v2_a4) crew1(artilleryman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_e100_v1_robz"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e100_v1_robz) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_mausking"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(mausking) crew1(tankman:8) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_taschenratte"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(taschenratte) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_sge100"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(sge100) crew1(tankman_pzjag:6) crew2(tank_commander_pzjag:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+{"doctrine_maus_desert"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(maus_desert) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_irregular) cost(0))
+}
+
+; -- Support Doctrine --
+{"doctrine_grille_15_l63"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(grille_15_l63) crew1(tankman:3) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_support) cost(0))
+}
+{"doctrine_gw_tiger"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(gw_tiger) crew1(tankman:6) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_support) cost(0))
+}
+{"doctrine_e100_gw"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(e100_gw) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_support) cost(0))
+}
+{"doctrine_flakmaus"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(flakmaus) crew1(tankman:8) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_support) cost(0))
+}
+{"doctrine_gwe100"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(gwe100) crew1(tankman_stug:5) crew2(tank_commander_stug:1))
+	("doctrine_t5" cool(0) d(late_ger_support) cost(0))
+}
+{"doctrine_obj268_c"
+	("squad_vehicle2_doctrine" side(ger) period(late) vehicle(obj268_c) crew1(tankman:5) crew2(tank_commander:1))
+	("doctrine_t5" cool(0) d(late_ger_support) cost(0))
+}
+
 ;_________________________________________________
 ;|             inf1                               |
 ;|________________________________________________|
@@ -1266,6 +1510,245 @@
 	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy8) b(heavy) cw(0) cp(0)
 	cost(0)) ;// +35 for crew
 	{doctrine late_ger_offensive}
+}
+; ============ WW EXPANSION MULTIPLAYER UNITS ============
+; ----- 轻型 / 特殊车辆 (常规栏位) -----
+{"vk1602_1943"
+    ("vehicle2" period(late) cd(0) ci(0) t(light) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(light) b(light) cw(0) cp(0) cost(0))
+}
+{"vk1602"
+    ("vehicle2" period(late) cd(0) ci(0) t(light) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(light) b(light) cw(0) cp(0) cost(0))
+}
+{"vk1602_30mm"
+    ("vehicle2" period(late) cd(0) ci(0) t(light) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(light) b(light) cw(0) cp(0) cost(0))
+}
+
+; ----- 中型坦克 / 坦克歼击车 (常规栏位) -----
+{"vk3001d"
+    ("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"panther_2"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e25"
+    ("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e25x7"
+    ("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"kugelblitz"
+    ("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e40a"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- E-50 衍生扩展线 (学说栏位) -----
+{"e50gt"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-50_75l100"
+    ("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-50"
+    ("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-50_105l68"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-50_105l73"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"e65"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(medium) b(heavy) cw(0) cp(0) cost(0))
+}
+{"jagdpz_e-50_early"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(spg) b(td) cw(0) cp(0) cost(0))
+}
+{"jagdpz_e-50"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(spg) b(td) cw(0) cp(0) cost(0))
+}
+
+; ----- 武器运载车 / 狮式 / 早期重型研发线 (学说栏位) -----
+{"rhmb_wt"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:2) crew2(tank_commander:1) g(spg) b(heavy) cw(0) cp(0) cost(0))
+}
+{"vk4503"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"vk72_robztest"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"lowe_1943"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"lowe_1944"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"lowehd"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"lownn"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"grille_15_l63"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(spg) b(heavy) cw(0) cp(0) cost(0))
+}
+{"gw_tiger"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:6) crew2(tank_commander:1) g(spg) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- E-75 衍生扩展线 (学说栏位) -----
+{"e-75_early"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-75_88l71"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(medium) cw(0) cp(0) cost(0))
+}
+{"e75"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e-75_ts"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(medium) cw(0) cp(0) cost(0))
+}
+{"e75_ts_3dst"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e-75_88l100"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-75_105l68"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-75_105l73"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(medium) cw(0) cp(0) cost(0))
+}
+{"e-75_sturm"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(td) cw(0) cp(0) cost(0))
+}
+{"jagdpz_e-75"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:6) crew2(tank_commander:1) g(spg) b(td) cw(0) cp(0) cost(0))
+}
+{"jagdpz_e-75_sturm"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:6) crew2(tank_commander:1) g(spg) b(td) cw(0) cp(0) cost(0))
+}
+{"e77"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- E-90 衍生扩展线 (学说栏位) -----
+{"e79"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e90pz"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e90"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e90_ace"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman_ace:4) crew2(tank_commander_ace:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- E-100 超重型终极防线 (学说栏位) -----
+{"e100aa"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:6) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e-100c"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e100_15"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e-100hd"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"jpze100"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"jpze100_2"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:8) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e100_waffentrager_robz"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e100_gw"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"e200_robztest"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:11) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"vfw"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(ger) crew1(tankman_pzjag:7) crew2(tank_commander_pzjag:1) g(spg5) b(light) cw(0) cp(0)
+	cost(0))
+}
+
+; ----- 末日武器 (导弹与特种车辆) (学说栏位) -----
+{"v1"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(artilleryman:3) crew2(tank_commander:1) g(spg) b(medium) cw(0) cp(0) cost(0))
+}
+{"v2_a4"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(artilleryman:3) crew2(tank_commander:1) g(spg) b(medium) cw(0) cp(0) cost(0))
+}
+{"e100_v1_robz"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; --- 附加超重型/概念坦克扩展线 (学说栏位) ---
+{"tigermaus"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:7) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"flakmaus"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:8) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"mausking"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:8) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"taschenratte"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"sge100"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman_pzjag:6) crew2(tank_commander_pzjag:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"gwe100"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman_stug:5) crew2(tank_commander_stug:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"krv"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:2) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"kampfpanzer_67"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"maus_desert"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"tiger_h_east"
+	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy6) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"tiger_h_west"
+	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(ger) crew1(tankman:4) crew2(tank_commander:1) g(heavy6) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"neu"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(heavy8) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"xiniu"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(heavy8) b(heavy) cw(0) cp(0)
+	cost(0))
+}
+{"zhane"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(medium) b(medium) cw(0) cp(0)
+	cost(0))
+}
+{"grille_15"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly medium) side(ger) crew1(tankman:3) crew2(tank_commander:1) g(spg) b(medium) cw(0) cp(0)
+	cost(0))
+}
+{"obj268_c"
+    ("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(ger) crew1(tankman:5) crew2(tank_commander:1) g(spg) b(heavy) cw(0) cp(0) 
+	cost(0))
 }
 
 ;// Doctrine Units
