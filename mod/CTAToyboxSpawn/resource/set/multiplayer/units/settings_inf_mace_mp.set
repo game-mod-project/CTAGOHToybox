@@ -1,0 +1,20 @@
+;SDL
+;// CP + Scores + CW
+
+;////////////////// INSTRUCTIONS //////////////////
+; In this file one configures the humans which are spawned in vehicles or squads
+; The humans have a CP and cost associated with them which collectively add up for the final squad value
+; Check ../settings.set for syntax instructions!!
+;//////////////////////////////////////////////////
+
+;===================================
+;        MAIN CLASSES       
+;===================================
+
+(define "inf_officer"
+	("inf_settings_general" cost(%cost))
+	{tags "%period %side infantry man officer"}
+	{cp 0}
+	{cw 20}
+	{score (* %cost 0.2)}
+)

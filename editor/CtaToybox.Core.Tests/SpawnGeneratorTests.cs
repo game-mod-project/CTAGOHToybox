@@ -37,8 +37,10 @@ static class SpawnGeneratorTests
             T.True(paths.Contains(p), "generated: " + p);
         T.Eq(paths.Count, paths.Distinct().Count(), "each path once");
         T.True(report.Maps == 2 && report.Units > 0 && report.Squads == 1 && report.NewRosterEntries == 0 && report.Buttons > 10, "report counts");
-        // 구매 창 로스터는 기본으로 바꾸지 않는다(2026-10-18 사용자 결정)
-        T.True(!paths.Any(p => p.StartsWith("resource/set/multiplayer/") || p.Contains("/unit_icon/")), "no roster files by default: " + string.Join(",", paths.Where(p => p.StartsWith("resource/set/"))));
+        // 구매 창 로스터는 기본으로 바꾸고(비용 0 등) 차량은 더하지 않는다(2026-10-18 사용자 결정)
+        T.True(paths.Contains("resource/" + SpawnFixture.UnitsGer), "roster rewritten by default");
+        var noRoster = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { Roster = new RosterOptions { Enabled = false } }, new SpawnReport());
+        T.True(!noRoster.Any(f => f.Path.StartsWith("resource/set/multiplayer/") || f.Path.Contains("/unit_icon/")), "--no-roster writes no roster files");
         string campaign = Encoding.UTF8.GetString(files.Single(f => f.Path == "resource/" + SpawnFixture.Campaign).Bytes);
         T.True(campaign.Contains("nation_ger.mi") && campaign.Contains("templates_ger.mi") && campaign.Contains("menu.mi"), "the campaign map includes its nation file, its templates and the menu");
         T.True(campaign.IndexOf("templates_ger.mi") < campaign.IndexOf("menu.mi"), "templates before the menu");

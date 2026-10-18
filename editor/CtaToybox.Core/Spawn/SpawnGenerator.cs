@@ -1,5 +1,5 @@
 // 스폰 모드의 파일 목록을 만든다: 맵 사본, 메뉴(menu.mi, templates_<국가>.mi, nation_<국가>.mi), 메뉴 글자(.pot), 화면 파일.
-// 스커미시 로스터와 단추 그림은 --roster로 켰을 때만
+// 스커미시 로스터와 단추 그림은 --no-roster면 내지 않는다
 using System;
 using System.Collections.Generic;
 using System.Linq;
