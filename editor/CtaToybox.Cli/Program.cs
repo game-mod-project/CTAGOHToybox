@@ -27,7 +27,7 @@ namespace CtaToybox.Cli
             "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "  ctatoybox l10n extract|check|build [--dir <번역 보관, 기본 l10n/ko>] [--file <글자>] [--force]   (한글화: 보관 갱신, 검사, 출력 모드에 .pot·글꼴 쓰기)\n" +
-            "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--all-nations] [--visible <세로 목록에 보이는 단추 수, 기본 10, 0=바닐라 7>] [--grid <열, 꺼진 판>] [--no-roster | [--roster-add] [--keep-cost] [--basic-buttons]] [--english]   (Spawn Menu를 대체하는 스폰 모드를 만든다. 스커미시 구매 창도 바꾼다(비용 0·횟수 999·종류 단추). --no-roster는 구매 창을 그대로 둔다. 메뉴 글자는 l10n/ko 번역으로 쓰고, --english는 영어로 둔다. preview는 쓰지 않고 수만 보인다)\n" +
+            "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--all-nations] [--visible <세로 목록에 보이는 단추 수, 기본 10, 0=바닐라 7>] [--grid <열, 꺼진 판>] [--no-roster | [--roster-add] [--keep-cost] [--basic-buttons]] [--english] [--single-mod | --nations <ger,rus,…>]   (Spawn Menu를 대체하는 스폰 모드를 만든다. 멀티 맵 견본은 국가 모드 <폴더>_<국가>(CTAToybox Spawn - <국가>)에 따로 쓴다(--nations로 고름, --single-mod는 예전처럼 한 모드에). 스커미시 구매 창도 바꾼다(비용 0·횟수 999·종류 단추). --no-roster는 구매 창을 그대로 둔다. 메뉴 글자는 l10n/ko 번역으로 쓰고, --english는 영어로 둔다. preview는 쓰지 않고 수만 보인다)\n" +
             "공통: --settings <파일> (기본 editor/settings.json)\n" +
             "종류: tank, cannon, car, vehicle-other, breed, stuff, settings(게임 설정), 또는 vehicle(차량 전부). units는 앱 목록과 같이 수가 있는 파일만 보인다(게임 설정은 수가 없어도 보인다)";
 
@@ -46,7 +46,7 @@ namespace CtaToybox.Cli
             ["build"] = new[] { "settings", "project", "force" },
             ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
             ["l10n"] = new[] { "settings", "dir", "file", "force" },
-            ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons", "list", "grid", "visible", "roster", "no-roster", "roster-add", "all-nations", "english" },
+            ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons", "list", "grid", "visible", "roster", "no-roster", "roster-add", "all-nations", "english", "single-mod", "nations" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
         };
 
@@ -314,13 +314,23 @@ namespace CtaToybox.Cli
                 o.Menu.AllNations = opt.ContainsKey("all-nations");
                 o.Menu.GridCols = opt.ContainsKey("list") ? 0 : Whole(opt, "grid", 0);
                 o.Menu.VisibleButtons = Whole(opt, "visible", 10);
+                o.NationMods = !opt.ContainsKey("single-mod");
+                var unitNames = DisplayNames.FromGame(settings, plan);
+                o.UnitName = def => unitNames.OfUnit(def);
                 if (!opt.ContainsKey("english"))
                 {
                     string po = Core.L10n.L10nCatalog.PoPath(Path.Combine(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetFullPath(settingsPath))), "l10n", "ko"), Core.Spawn.SpawnGenerator.L10nPath);
                     if (File.Exists(po)) o.Translation = Core.L10n.PoFile.Parse(File.ReadAllText(po, System.Text.Encoding.UTF8));
                     else output.WriteLine("  메뉴 글자 번역이 없어 영어로 둔다: " + po + " (스폰 모드를 만든 뒤 l10n extract로 생긴다)");
                 }
-                var files = Core.Spawn.SpawnGenerator.Generate(stack, index, armies, categories, o, report);
+                Dictionary<string, List<Core.Spawn.SpawnFile>> nationFiles;
+                var files = Core.Spawn.SpawnGenerator.Generate(stack, index, armies, categories, o, report, out nationFiles);
+                if (opt.ContainsKey("nations"))
+                {
+                    var want = new HashSet<string>(opt["nations"].Split(',').Select(n => n.Trim().ToLowerInvariant()).Where(n => n.Length > 0), StringComparer.Ordinal);
+                    foreach (string n in want.Where(n => !nationFiles.ContainsKey(n))) output.WriteLine("  국가 모드를 만들 국가가 아니다(메뉴 국가: " + string.Join(",", nationFiles.Keys) + "): " + n);
+                    nationFiles = nationFiles.Where(kv => want.Contains(kv.Key)).ToDictionary(kv => kv.Key, kv => kv.Value, StringComparer.Ordinal);
+                }
                 foreach (string w in warnings) output.WriteLine("  " + w);
                 output.WriteLine("맵 " + report.Maps + "(캠페인 " + report.CampaignMaps + ", 멀티 " + report.MultiMaps + "), 유닛 " + report.Units + ", 분대 " + report.Squads + ", 새 로스터 항목 " + report.NewRosterEntries + ", 단추 " + report.Buttons + ", 화면 " + report.Screens + ", 견본 " + report.Templates + (report.CampaignMaps > 0 ? "(캠페인 맵마다 평균 " + (report.CampaignTemplateArmies / (double)report.CampaignMaps).ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) + "개 국가)" : "") + ", 메뉴 글자 번역 " + report.TextTranslated + "·영어 " + report.TextEnglish + ", 파일 " + files.Count + ", 건너뜀 " + report.Skipped.Count);
                 foreach (string s in report.Skipped.Take(20)) output.WriteLine("  건너뜀 " + s);
@@ -337,8 +347,30 @@ namespace CtaToybox.Cli
                 var written = Core.Spawn.SpawnWriter.Write(outDir, files, settings.OutputModDir);
                 output.WriteLine("썼다 " + written.Written.Count + ", 그대로 " + written.Unchanged.Count + ", 지웠다 " + written.Removed.Count + ", 오류 " + written.Errors.Count + ": " + outDir);
                 foreach (string e in written.Errors.Take(20)) output.WriteLine("  오류 " + e);
-                return written.Errors.Count > 0 ? 1 : 0;
+                int errors = written.Errors.Count;
+                // 국가 모드: <폴더>_<국가>. 바탕 모드 뒤에 로드되어 빈 견본 조각을 이긴다(2026-10-18 국가별 모드 설계)
+                foreach (var kv in nationFiles.OrderBy(k => k.Key, StringComparer.Ordinal))
+                {
+                    string dir = NationModDir(outDir, kv.Key);
+                    Directory.CreateDirectory(dir);
+                    string nInfo = Path.Combine(dir, "mod.info");
+                    if (!File.Exists(nInfo))
+                        File.WriteAllText(nInfo, "{mod\n\t{name \"CTAToybox Spawn - " + NationName(kv.Key) + "\"}\n\t{tags \"Mod\"}\n\t{desc \"CTAToybox spawn menu templates for " + NationName(kv.Key) + " in multiplayer maps. Needs CTAToybox Spawn and loads after it. Generated by the CTAToybox editor.\"}\n\t{minGameVersion \"any\"}\n\t{maxGameVersion \"any\"}\n}\n");
+                    var nw = Core.Spawn.SpawnWriter.Write(dir, kv.Value, settings.OutputModDir);
+                    output.WriteLine("국가 모드 " + kv.Key + ": 썼다 " + nw.Written.Count + ", 그대로 " + nw.Unchanged.Count + ", 지웠다 " + nw.Removed.Count + ", 오류 " + nw.Errors.Count + ": " + dir);
+                    foreach (string e in nw.Errors.Take(20)) output.WriteLine("  오류 " + e);
+                    errors += nw.Errors.Count;
+                }
+                if (nationFiles.Count > 0) output.WriteLine("  게임에 연결: 국가 모드 폴더마다 게임 mods 폴더에 정션을 만들고, 모드 목록에서 CTAToybox Spawn 뒤에 켠다(여러 개 함께 켜도 된다)");
+                return errors > 0 ? 1 : 0;
             }
+        }
+
+        public static string NationModDir(string spawnModDir, string army) { return Path.Combine(Path.GetDirectoryName(spawnModDir.TrimEnd(Path.DirectorySeparatorChar)), Path.GetFileName(spawnModDir.TrimEnd(Path.DirectorySeparatorChar)) + "_" + army); }
+
+        static string NationName(string army)
+        {
+            switch (army) { case "ger": return "Germany"; case "rus": return "Soviet Union"; case "usa": return "United States"; case "eng": return "Britain"; case "fin": return "Finland"; case "jap": return "Japan"; default: return army; }
         }
 
         static int Whole(Dictionary<string, string> opt, string name, int fallback)

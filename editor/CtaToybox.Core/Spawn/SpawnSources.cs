@@ -24,7 +24,11 @@ namespace CtaToybox.Core.Spawn
             var result = new List<SourceLayer>();
             foreach (var layer in plan.Layers)
             {
-                if (ExcludedLayers.Contains(layer.Name, StringComparer.OrdinalIgnoreCase) || string.Equals(Full(layer.ResourceDir), spawnRes, StringComparison.OrdinalIgnoreCase))
+                // 국가 모드(<스폰 모드 폴더>_<국가>, 2026-10-18)도 스폰 모드의 생성물이라 뺀다
+                string full = Full(layer.ResourceDir);
+                bool nationMod = full.EndsWith(Path.DirectorySeparatorChar + "resource", StringComparison.OrdinalIgnoreCase)
+                    && Path.GetDirectoryName(full).StartsWith(Path.GetDirectoryName(spawnRes) + "_", StringComparison.OrdinalIgnoreCase);
+                if (ExcludedLayers.Contains(layer.Name, StringComparer.OrdinalIgnoreCase) || string.Equals(full, spawnRes, StringComparison.OrdinalIgnoreCase) || nationMod)
                 {
                     warnings?.Add("스폰 생성에서 뺀 계층: " + layer.Name);
                     continue;

@@ -13,6 +13,9 @@ namespace CtaToybox.Core.Spawn
         public RosterOptions Roster { get; set; } = new RosterOptions();
         public MenuOptions Menu { get; set; } = new MenuOptions();
         public L10n.PoFile Translation { get; set; }   // l10n/ko의 메뉴 글자 번역. null이면 영어 그대로
+        // 국가별 모드로 나눈다(2026-10-18 사용자 요청): 멀티 맵 견본은 국가 모드(NationFiles)에, 바탕 모드에는 빈 조각. false면 예전처럼 한 모드에 모두
+        public bool NationMods { get; set; } = true;
+        public Func<string, string> UnitName { get; set; }   // 유닛 정의 경로 → 게임 속 이름(영어). 계열 묶음 단추 글자. null이면 폴더 앞말
     }
 
     public sealed class SpawnReport
@@ -35,7 +38,24 @@ namespace CtaToybox.Core.Spawn
 
         public static List<SpawnFile> Generate(SourceStack stack, UnitIndex index, ArmyIndex armies, SpawnCategories categories, SpawnOptions o, SpawnReport report)
         {
+            Dictionary<string, List<SpawnFile>> nationFiles;
+            return Generate(stack, index, armies, categories, o, report, out nationFiles);
+        }
+
+        // 국가 모드 안의 견본 파일 경로(바탕 모드의 빈 조각과 같은 경로라 뒤에 로드되면 이긴다)
+        public static string NationTemplatePath(string army) { return MenuDir + MapPatch.TemplateFile(army); }
+
+        // 빈 견본 조각: 국가 모드가 꺼져 있으면 멀티 맵이 이것을 읽는다
+        public static string EmptyTemplate(string army)
+        {
+            return ";{mission\r\n; CTAToybox Spawn: " + army + " 견본 자리(빈 조각). 국가 모드 CTAToybox Spawn - " + army + "를 켜면 그 모드의 같은 경로 파일이 이긴다\r\n";
+        }
+
+        // nationFiles: 국가 → 국가 모드에 쓸 파일(NationMods일 때만, 아니면 비었다)
+        public static List<SpawnFile> Generate(SourceStack stack, UnitIndex index, ArmyIndex armies, SpawnCategories categories, SpawnOptions o, SpawnReport report, out Dictionary<string, List<SpawnFile>> nationFiles)
+        {
             o = o ?? new SpawnOptions();
+            nationFiles = new Dictionary<string, List<SpawnFile>>(StringComparer.Ordinal);
             var files = new List<SpawnFile>();
             var cat = SpawnCatalog.Build(stack, index, armies, categories, report.Skipped);
             report.Units = cat.Units.Count;
@@ -49,14 +69,25 @@ namespace CtaToybox.Core.Spawn
             }
 
             var list = MenuBuilder.Armies(cat);
-            files.AddRange(MapPatch.Build(stack, report.Skipped, list, o.Menu.AllNations, out report.CampaignMaps, out report.MultiMaps, out report.CampaignTemplateArmies));
+            files.AddRange(MapPatch.Build(stack, report.Skipped, list, o.Menu.AllNations, o.NationMods, out report.CampaignMaps, out report.MultiMaps, out report.CampaignTemplateArmies));
 
-            var menu = MenuBuilder.Build(cat, o.Menu, n => stack.Find("interface/scene/unit_icon/" + n + "_00.tga") != null, b => stack.Find(SpawnCatalog.BreedFile(b)) != null, report.Skipped);
+            const string iconDir = "interface/scene/unit_icon/";
+            var icons = stack.Paths.Where(p => p.StartsWith(iconDir, StringComparison.Ordinal) && p.EndsWith("_00.tga", StringComparison.Ordinal) && p.IndexOf('/', iconDir.Length) < 0)
+                .Select(p => p.Substring(iconDir.Length, p.Length - iconDir.Length - "_00.tga".Length)).ToList();
+            var menu = MenuBuilder.Build(cat, o.Menu, n => stack.Find(iconDir + n + "_00.tga") != null, b => stack.Find(SpawnCatalog.BreedFile(b)) != null, report.Skipped, icons, o.UnitName);
             report.Buttons = menu.Screens.Sum(s => s.Buttons.Count) + 1;
             report.Screens = menu.Screens.Count;
             report.Templates = menu.Templates;
             files.Add(new SpawnFile { Path = MenuDir + "menu.mi", Bytes = Encoding.UTF8.GetBytes(menu.Text) });
-            foreach (var kv in menu.TemplateFiles) files.Add(new SpawnFile { Path = MenuDir + MapPatch.TemplateFile(kv.Key), Bytes = Encoding.UTF8.GetBytes(kv.Value) });
+            foreach (var kv in menu.TemplateFiles)
+            {
+                byte[] real = Encoding.UTF8.GetBytes(kv.Value);
+                if (!o.NationMods) { files.Add(new SpawnFile { Path = NationTemplatePath(kv.Key), Bytes = real }); continue; }
+                files.Add(new SpawnFile { Path = NationTemplatePath(kv.Key), Bytes = Encoding.UTF8.GetBytes(EmptyTemplate(kv.Key)) });
+                files.Add(new SpawnFile { Path = MenuDir + MapPatch.CampaignTemplateFile(kv.Key), Bytes = real });
+                nationFiles[kv.Key] = new List<SpawnFile> { new SpawnFile { Path = NationTemplatePath(kv.Key), Bytes = real } };
+            }
+            files.Add(new SpawnFile { Path = MenuDir + MapPatch.ConquestFile, Bytes = Encoding.UTF8.GetBytes(MenuBuilder.ConquestFile()) });
             foreach (string army in list) files.Add(new SpawnFile { Path = MenuDir + "nation_" + army + ".mi", Bytes = Encoding.UTF8.GetBytes(MenuBuilder.NationFile(army, list)) });
             // 맵이 부르는 국가 조각이 다 있게: 캠페인 폴더의 국가가 메뉴 국가 목록에 없으면 독일 값으로 둔다
             foreach (string army in new[] { "rus", "ger", "fin", "usa", "eng", "jap" }.Where(a => !list.Contains(a)))
