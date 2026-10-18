@@ -31,15 +31,15 @@ msgstr "3kg 폭파 장약 'Geballte Ladung'"
 
 msgctxt "desc/stuff/ger_crusher_cap"
 msgid "Heer Officer 'Knautschmütze' 34 [Infanterie]"
-msgstr "헤어 장교 'Knautschmütze' 34 [인판테리]"
+msgstr "육군 장교 'Knautschmütze' 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_crusher_cap_arty"
 msgid "Heer Officer 'Knautschmütze' 34 [Artillerie]"
-msgstr "헤어 장교 'Knautschmütze' 34 [아틸레리]"
+msgstr "육군 장교 'Knautschmütze' 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_crusher_cap_tank"
 msgid "Heer Officer 'Knautschmütze' 34 [Panzertruppen]"
-msgstr "헤어 장교 'Knautschmütze' 34 [판처트루펜]"
+msgstr "육군 장교 'Knautschmütze' 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_fieldcap_camo"
 msgid "Einheitsfeldmütze 43 - Splittertarn"
@@ -47,7 +47,7 @@ msgstr "Einheitsfeldmütze 43 - Splittertarn"
 
 msgctxt "desc/stuff/ger_km_officer_cap"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_m28_beret"
 msgid "Schutzmütze 34"
@@ -55,51 +55,51 @@ msgstr "Schutzmütze 34"
 
 msgctxt "desc/stuff/ger_Officer_cap_goggles"
 msgid "Heer Schirmmütze 34 - Officer [Infanterie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [인판테리]"
+msgstr "육군 Schirmmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_Officer_cap_luftwaffe"
 msgid "Luftwaffe Schirmmütze 34 - Officer [Fliegertruppen]"
-msgstr "루프트바페 Schirmmütze 34 - 장교 [플리거트루펜]"
+msgstr "공군 Schirmmütze 34 - 장교 [플리거트루펜]"
 
 msgctxt "desc/stuff/ger_m34_sidecap"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_m34_sidecap_arty"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_m34_sidecap_goggles"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_m34_sidecap_km"
 msgid "Kriegsmarine Feldmütze 35"
-msgstr "크릭스마리네 Feldmütze 35"
+msgstr "해군 Feldmütze 35"
 
 msgctxt "desc/stuff/ger_m34_sidecap_luftwaffe"
 msgid "Luftwaffe Fliegermütze 34"
-msgstr "루프트바페 Fliegermütze 34"
+msgstr "공군 Fliegermütze 34"
 
 msgctxt "desc/stuff/ger_m34_sidecap_nco"
 msgid "Heer Feldmütze 34 - Officer [Infanterie]"
-msgstr "헤어 Feldmütze 34 - 장교 [인판테리]"
+msgstr "육군 Feldmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_m34_sidecap_pz_scout"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_m34_sidecap_pz_scout_off"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_m34_sidecap_radio"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_m34_sidecap_tank"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_luftschutz_helmet"
 msgid "Luftschütz 38"
@@ -143,7 +143,7 @@ msgstr "Stahlhelm 38 - 위생병"
 
 msgctxt "desc/stuff/ger_m38_helmet_net"
 msgid "Stahlhelm M38 Fallschirmjäger helmet"
-msgstr "Stahlhelm M38 팔쉬름예거 헬멧"
+msgstr "Stahlhelm M38 강하엽병 헬멧"
 
 msgctxt "desc/stuff/ger_m38_helmet_net_desert"
 msgid "Stahlhelm 38"
@@ -163,7 +163,7 @@ msgstr "Luftschütz 38"
 
 msgctxt "desc/stuff/ger_m40_helmet"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_m40_helmet_camo1"
 msgid "Stahlhelm 35"
@@ -195,11 +195,11 @@ msgstr "Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_m40_helmet_early"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_m40_helmet_mid"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_m40_helmet_blau"
 msgid "Blue Legion Stahlhelm 35"
@@ -239,7 +239,7 @@ msgstr "Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_m40_helmet_luftwaffe"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_m40_helmet_medic"
 msgid "Stahlhelm 35 - Medic"
@@ -303,23 +303,23 @@ msgstr "Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_m43_cap_camo"
 msgid "Heer Einheitsfeldmütze 43 - Splittertarn"
-msgstr "헤어 Einheitsfeldmütze 43 - Splittertarn"
+msgstr "육군 Einheitsfeldmütze 43 - Splittertarn"
 
 msgctxt "desc/stuff/ger_m43_cap_gebirgs"
 msgid "Heer Bergmütze"
-msgstr "헤어 Bergmütze"
+msgstr "육군 Bergmütze"
 
 msgctxt "desc/stuff/ger_m43_cap_luftwaffe"
 msgid "Luftwaffe Einheitsfeldmütze 43"
-msgstr "루프트바페 Einheitsfeldmütze 43"
+msgstr "공군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_m43_cap_tank"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_marine_cap"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_mask_sniper"
 msgid "Face Mask - Splittertarn"
@@ -327,19 +327,19 @@ msgstr "안면 마스크 - Splittertarn"
 
 msgctxt "desc/stuff/ger_officer_cap"
 msgid "Heer Schirmmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [인판테리]"
+msgstr "육군 Schirmmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_officer_cap_goggles"
 msgid "Heer Schirmmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [인판테리]"
+msgstr "육군 Schirmmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_officer_cap_goggles"
 msgid "Luftwaffe Schirmmütze 35 - Officer [Fliegertruppen]"
-msgstr "루프트바페 Schirmmütze 35 - 장교 [플리거트루펜]"
+msgstr "공군 Schirmmütze 35 - 장교 [플리거트루펜]"
 
 msgctxt "desc/stuff/ger_officer_cap_tank"
 msgid "Heer Schirmmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Schirmmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Schirmmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_poa_cap"
 msgid "Field cap"
@@ -347,15 +347,15 @@ msgstr "야전모"
 
 msgctxt "desc/stuff/ger_poa_fieldcap"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_poa_sidecap"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_poa_cap_officer"
 msgid "Heer Schirmmütze 34 - Officer [Infanterie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [인판테리]"
+msgstr "육군 Schirmmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_poa_helmet"
 msgid "Stahlhelm 35"
@@ -375,747 +375,747 @@ msgstr "Feldmütze M43"
 
 msgctxt "desc/stuff/ger_overseascap_km_var1"
 msgid "Kriegsmarine Feldmütze 35"
-msgstr "크릭스마리네 Feldmütze 35"
+msgstr "해군 Feldmütze 35"
 
 msgctxt "desc/stuff/ger_overseascap_km_var2"
 msgid "Kriegsmarine Feldmütze 35"
-msgstr "크릭스마리네 Feldmütze 35"
+msgstr "해군 Feldmütze 35"
 
 msgctxt "desc/stuff/ger_overseascap_km_var3"
 msgid "Kriegsmarine Feldmütze 35"
-msgstr "크릭스마리네 Feldmütze 35"
+msgstr "해군 Feldmütze 35"
 
 msgctxt "desc/stuff/ger_off_cap_km_var1"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_off_cap_km_var2"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_off_cap_km_var3"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_off_cap_km_var1_white"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_off_cap_km_var2_white"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_off_cap_km_var3_white"
 msgid "Kriegsmarine Matrosenmütze"
-msgstr "크릭스마리네 Matrosenmütze"
+msgstr "해군 Matrosenmütze"
 
 msgctxt "desc/stuff/ger_off_cap_luft_fielddiv"
 msgid "Luftwaffe Schirmmütze 35 - Officer [Luftwaffen-Feld]"
-msgstr "루프트바페 Schirmmütze 35 - 장교 [루프트바펜 야전]"
+msgstr "공군 Schirmmütze 35 - 장교 [공군 야전]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_fielddiv_em_1"
 msgid "Luftwaffe Schirmmütze 35 [Luftwaffen-Feld]"
-msgstr "루프트바페 Schirmmütze 35 [루프트바펜 야전]"
+msgstr "공군 Schirmmütze 35 [공군 야전]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_fielddiv_em_2"
 msgid "Luftwaffe Schirmmütze 35 [Luftwaffen-Feld]"
-msgstr "루프트바페 Schirmmütze 35 [루프트바펜 야전]"
+msgstr "공군 Schirmmütze 35 [공군 야전]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_flak"
 msgid "Luftwaffe Schirmmütze 35 - Officer [Flak-Truppen]"
-msgstr "루프트바페 Schirmmütze 35 - 장교 [Flak트루펜]"
+msgstr "공군 Schirmmütze 35 - 장교 [Flak트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_flak_em_1"
 msgid "Luftwaffe Schirmmütze 35 [Flak-Truppen]"
-msgstr "루프트바페 Schirmmütze 35 [Flak트루펜]"
+msgstr "공군 Schirmmütze 35 [Flak트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_flak_em_2"
 msgid "Luftwaffe Schirmmütze 35 [Flak-Truppen]"
-msgstr "루프트바페 Schirmmütze 35 [Flak트루펜]"
+msgstr "공군 Schirmmütze 35 [Flak트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_flying"
 msgid "Luftwaffe Schirmmütze 35 - Officer [Fliegertruppen]"
-msgstr "루프트바페 Schirmmütze 35 - 장교 [플리거트루펜]"
+msgstr "공군 Schirmmütze 35 - 장교 [플리거트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_flying_em_1"
 msgid "Luftwaffe Schirmmütze 35 [Fliegertruppen]"
-msgstr "루프트바페 Schirmmütze 35 [플리거트루펜]"
+msgstr "공군 Schirmmütze 35 [플리거트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_flying_em_2"
 msgid "Luftwaffe Schirmmütze 35 [Fliegertruppen]"
-msgstr "루프트바페 Schirmmütze 35 [플리거트루펜]"
+msgstr "공군 Schirmmütze 35 [플리거트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_hg"
 msgid "Luftwaffe Schirmmütze 35 - Officer [Hermann Göring]"
-msgstr "루프트바페 Schirmmütze 35 - 장교 [헤르만 괴링]"
+msgstr "공군 Schirmmütze 35 - 장교 [헤르만 괴링]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_hg_em_1"
 msgid "Luftwaffe Schirmmütze 35 [Hermann Göring]"
-msgstr "루프트바페 Schirmmütze 35 [헤르만 괴링]"
+msgstr "공군 Schirmmütze 35 [헤르만 괴링]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_hg_em_2"
 msgid "Luftwaffe Schirmmütze 35 [Hermann Göring]"
-msgstr "루프트바페 Schirmmütze 35 [헤르만 괴링]"
+msgstr "공군 Schirmmütze 35 [헤르만 괴링]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_pio"
 msgid "Luftwaffe Schirmmütze 35 - Officer [Luftwaffen-Pioniere]"
-msgstr "루프트바페 Schirmmütze 35 - 장교 [루프트바펜 피오니어]"
+msgstr "공군 Schirmmütze 35 - 장교 [공군 공병]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_pio_em_1"
 msgid "Luftwaffe Schirmmütze 35 [Luftwaffen-Pioniere]"
-msgstr "루프트바페 Schirmmütze 35 [루프트바펜 피오니어]"
+msgstr "공군 Schirmmütze 35 [공군 공병]"
 
 msgctxt "desc/stuff/ger_off_cap_luft_pio_em_2"
 msgid "Luftwaffe Schirmmütze 35 [Luftwaffen-Pioniere]"
-msgstr "루프트바페 Schirmmütze 35 [루프트바펜 피오니어]"
+msgstr "공군 Schirmmütze 35 [공군 공병]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_luft_fielddiv"
 msgid "Luftwaffe Officer 'Knautschmütze' 35 [Luftwaffen-Feld]"
-msgstr "루프트바페 장교 'Knautschmütze' 35 [루프트바펜 야전]"
+msgstr "공군 장교 'Knautschmütze' 35 [공군 야전]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_luft_flak"
 msgid "Luftwaffe Officer 'Knautschmütze' 35 [Flak-Truppen]"
-msgstr "루프트바페 장교 'Knautschmütze' 35 [Flak트루펜]"
+msgstr "공군 장교 'Knautschmütze' 35 [Flak트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_luft_flying"
 msgid "Luftwaffe Officer 'Knautschmütze' 35 [Fliegertruppen]"
-msgstr "루프트바페 장교 'Knautschmütze' 35 [플리거트루펜]"
+msgstr "공군 장교 'Knautschmütze' 35 [플리거트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_luft_hg"
 msgid "Luftwaffe Officer 'Knautschmütze' 35 [Hermann Göring]"
-msgstr "루프트바페 장교 'Knautschmütze' 35 [헤르만 괴링]"
+msgstr "공군 장교 'Knautschmütze' 35 [헤르만 괴링]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_luft_pio"
 msgid "Luftwaffe Officer 'Knautschmütze' 35 [Luftwaffen-Pioniere]"
-msgstr "루프트바페 장교 'Knautschmütze' 35 [루프트바펜 피오니어]"
+msgstr "공군 장교 'Knautschmütze' 35 [공군 공병]"
 
 msgctxt "desc/stuff/ger_overseascap_luft_var1"
 msgid "Luftwaffe Fliegermütze 34"
-msgstr "루프트바페 Fliegermütze 34"
+msgstr "공군 Fliegermütze 34"
 
 msgctxt "desc/stuff/ger_overseascap_luft_var2"
 msgid "Luftwaffe Fliegermütze 34"
-msgstr "루프트바페 Fliegermütze 34"
+msgstr "공군 Fliegermütze 34"
 
 msgctxt "desc/stuff/ger_overseascap_luft_var3"
 msgid "Luftwaffe Fliegermütze 34"
-msgstr "루프트바페 Fliegermütze 34"
+msgstr "공군 Fliegermütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_admin"
 msgid "Heer Feldmütze 34 [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_admin_off"
 msgid "Heer Feldmütze 34 - Officer [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 - 장교 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 - 장교 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_arty"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_arty_off"
 msgid "Heer Feldmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Feldmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_cav"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_cav_off"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_feldg"
 msgid "Heer Feldmütze 34 [Feldgendarmerie]"
-msgstr "헤어 Feldmütze 34 [펠트겐다르메리]"
+msgstr "육군 Feldmütze 34 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_feldg_off"
 msgid "Heer Feldmütze 34 - Officer [Feldgendarmerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [펠트겐다르메리]"
+msgstr "육군 Feldmütze 34 - 장교 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_inf"
 msgid "Heer Feldmütze 34 [Infantrie]"
-msgstr "헤어 Feldmütze 34 [인판테리]"
+msgstr "육군 Feldmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_inf_off"
 msgid "Heer Feldmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Feldmütze 34 - 장교 [인판테리]"
+msgstr "육군 Feldmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_jag"
 msgid "Heer Feldmütze 34 [Jäger]"
-msgstr "헤어 Feldmütze 34 [예거]"
+msgstr "육군 Feldmütze 34 [엽병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_jag_off"
 msgid "Heer Feldmütze 34 - Officer [Jäger]"
-msgstr "헤어 Feldmütze 34 - 장교 [예거]"
+msgstr "육군 Feldmütze 34 - 장교 [엽병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_log"
 msgid "Heer Feldmütze 34 [Fahrtruppen]"
-msgstr "헤어 Feldmütze 34 [파르트루펜]"
+msgstr "육군 Feldmütze 34 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_log_off"
 msgid "Heer Feldmütze 34 - Officer [Fahrtruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [파르트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_med"
 msgid "Heer Feldmütze 34 [Sanitätstruppen]"
-msgstr "헤어 Feldmütze 34 [자니태츠트루펜]"
+msgstr "육군 Feldmütze 34 [자니태츠트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_med_off"
 msgid "Heer Feldmütze 34 - Officer [Sanitätstruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [자니태츠트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [자니태츠트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_mot"
 msgid "Heer Feldmütze 34 [Kradschützen]"
-msgstr "헤어 Feldmütze 34 [크라트슈첸]"
+msgstr "육군 Feldmütze 34 [크라트슈첸]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_mot_off"
 msgid "Heer Feldmütze 34 - Officer [Kradschützen]"
-msgstr "헤어 Feldmütze 34 - 장교 [크라트슈첸]"
+msgstr "육군 Feldmütze 34 - 장교 [크라트슈첸]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pio"
 msgid "Heer Feldmütze 34 [Pioniere]"
-msgstr "헤어 Feldmütze 34 [피오니어]"
+msgstr "육군 Feldmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pio_off"
 msgid "Heer Feldmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Feldmütze 34 - 장교 [피오니어]"
+msgstr "육군 Feldmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pz"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pz_off"
 msgid "Heer Feldmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pzgren"
 msgid "Heer Feldmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pzgren_off"
 msgid "Heer Feldmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_signal"
 msgid "Heer Feldmütze 34 [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_signal_off"
 msgid "Heer Feldmütze 34 - Officer [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var1"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var1_off"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var1"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var1_off"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_arty_panzer"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_arty_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Feldmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_cav_panzer"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_cav_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pz_panzer"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pz_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pzgren_panzer"
 msgid "Heer Feldmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pzgren_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pzpio_panzer"
 msgid "Heer Feldmütze 34 [Pioniere]"
-msgstr "헤어 Feldmütze 34 [피오니어]"
+msgstr "육군 Feldmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_pzpio_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Feldmütze 34 - 장교 [피오니어]"
+msgstr "육군 Feldmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_signal_panzer"
 msgid "Heer Feldmütze 34 [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_signal_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var1_panzer"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var1_off_panzer"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var1_panzer"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var1_off_panzer"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_admin"
 msgid "Heer Feldmütze 34 [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_admin_off"
 msgid "Heer Feldmütze 34 - Officer [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 - 장교 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 - 장교 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_arty"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_arty_off"
 msgid "Heer Feldmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Feldmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_cav"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_cav_off"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_feldg"
 msgid "Heer Feldmütze 34 [Feldgendarmerie]"
-msgstr "헤어 Feldmütze 34 [펠트겐다르메리]"
+msgstr "육군 Feldmütze 34 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_feldg_off"
 msgid "Heer Feldmütze 34 - Officer [Feldgendarmerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [펠트겐다르메리]"
+msgstr "육군 Feldmütze 34 - 장교 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_inf"
 msgid "Heer Feldmütze 34 [Infantrie]"
-msgstr "헤어 Feldmütze 34 [인판테리]"
+msgstr "육군 Feldmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_inf_off"
 msgid "Heer Feldmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Feldmütze 34 - 장교 [인판테리]"
+msgstr "육군 Feldmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_jag"
 msgid "Heer Feldmütze 34 [Jäger]"
-msgstr "헤어 Feldmütze 34 [예거]"
+msgstr "육군 Feldmütze 34 [엽병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_jag_off"
 msgid "Heer Feldmütze 34 - Officer [Jäger]"
-msgstr "헤어 Feldmütze 34 - 장교 [예거]"
+msgstr "육군 Feldmütze 34 - 장교 [엽병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_log"
 msgid "Heer Feldmütze 34 [Fahrtruppen]"
-msgstr "헤어 Feldmütze 34 [파르트루펜]"
+msgstr "육군 Feldmütze 34 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_log_off"
 msgid "Heer Feldmütze 34 - Officer [Fahrtruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [파르트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_med"
 msgid "Heer Feldmütze 34 [Sanitätstruppen]"
-msgstr "헤어 Feldmütze 34 [자니태츠트루펜]"
+msgstr "육군 Feldmütze 34 [자니태츠트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_med_off"
 msgid "Heer Feldmütze 34 - Officer [Sanitätstruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [자니태츠트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [자니태츠트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_mot"
 msgid "Heer Feldmütze 34 [Kradschützen]"
-msgstr "헤어 Feldmütze 34 [크라트슈첸]"
+msgstr "육군 Feldmütze 34 [크라트슈첸]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_mot_off"
 msgid "Heer Feldmütze 34 - Officer [Kradschützen]"
-msgstr "헤어 Feldmütze 34 - 장교 [크라트슈첸]"
+msgstr "육군 Feldmütze 34 - 장교 [크라트슈첸]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pio"
 msgid "Heer Feldmütze 34 [Pioniere]"
-msgstr "헤어 Feldmütze 34 [피오니어]"
+msgstr "육군 Feldmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pio_off"
 msgid "Heer Feldmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Feldmütze 34 - 장교 [피오니어]"
+msgstr "육군 Feldmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pz"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pz_off"
 msgid "Heer Feldmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pzgren"
 msgid "Heer Feldmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pzgren_off"
 msgid "Heer Feldmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_signal"
 msgid "Heer Feldmütze 34 [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_signal_off"
 msgid "Heer Feldmütze 34 - Officer [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var2"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var2_off"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var2"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var2_off"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_arty_panzer"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_arty_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Feldmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_cav_panzer"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_cav_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pz_panzer"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pz_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pzgren_panzer"
 msgid "Heer Feldmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pzgren_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pzpio_panzer"
 msgid "Heer Feldmütze 34 [Pioniere]"
-msgstr "헤어 Feldmütze 34 [피오니어]"
+msgstr "육군 Feldmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_pzpio_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Feldmütze 34 - 장교 [피오니어]"
+msgstr "육군 Feldmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_signal_panzer"
 msgid "Heer Feldmütze 34 [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var2_signal_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var2_panzer"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var2_off_panzer"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var2_panzer"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var2_off_panzer"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_admin"
 msgid "Heer Feldmütze 34 [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_admin_off"
 msgid "Heer Feldmütze 34 - Officer [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 - 장교 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 - 장교 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_arty"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_arty_off"
 msgid "Heer Feldmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Feldmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_cav"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_cav_off"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_feldg"
 msgid "Heer Feldmütze 34 [Feldgendarmerie]"
-msgstr "헤어 Feldmütze 34 [펠트겐다르메리]"
+msgstr "육군 Feldmütze 34 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_feldg_off"
 msgid "Heer Feldmütze 34 - Officer [Feldgendarmerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [펠트겐다르메리]"
+msgstr "육군 Feldmütze 34 - 장교 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_inf"
 msgid "Heer Feldmütze 34 [Infantrie]"
-msgstr "헤어 Feldmütze 34 [인판테리]"
+msgstr "육군 Feldmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_inf_off"
 msgid "Heer Feldmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Feldmütze 34 - 장교 [인판테리]"
+msgstr "육군 Feldmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_jag"
 msgid "Heer Feldmütze 34 [Jäger]"
-msgstr "헤어 Feldmütze 34 [예거]"
+msgstr "육군 Feldmütze 34 [엽병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_jag_off"
 msgid "Heer Feldmütze 34 - Officer [Jäger]"
-msgstr "헤어 Feldmütze 34 - 장교 [예거]"
+msgstr "육군 Feldmütze 34 - 장교 [엽병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_log"
 msgid "Heer Feldmütze 34 [Fahrtruppen]"
-msgstr "헤어 Feldmütze 34 [파르트루펜]"
+msgstr "육군 Feldmütze 34 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_log_off"
 msgid "Heer Feldmütze 34 - Officer [Fahrtruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [파르트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_med"
 msgid "Heer Feldmütze 34 [Sanitätstruppen]"
-msgstr "헤어 Feldmütze 34 [자니태츠트루펜]"
+msgstr "육군 Feldmütze 34 [자니태츠트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_med_off"
 msgid "Heer Feldmütze 34 - Officer [Sanitätstruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [자니태츠트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [자니태츠트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_mot"
 msgid "Heer Feldmütze 34 [Kradschützen]"
-msgstr "헤어 Feldmütze 34 [크라트슈첸]"
+msgstr "육군 Feldmütze 34 [크라트슈첸]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_mot_off"
 msgid "Heer Feldmütze 34 - Officer [Kradschützen]"
-msgstr "헤어 Feldmütze 34 - 장교 [크라트슈첸]"
+msgstr "육군 Feldmütze 34 - 장교 [크라트슈첸]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pio"
 msgid "Heer Feldmütze 34 [Pioniere]"
-msgstr "헤어 Feldmütze 34 [피오니어]"
+msgstr "육군 Feldmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pio_off"
 msgid "Heer Feldmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Feldmütze 34 - 장교 [피오니어]"
+msgstr "육군 Feldmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pz"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pz_off"
 msgid "Heer Feldmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pzgren"
 msgid "Heer Feldmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pzgren_off"
 msgid "Heer Feldmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_signal"
 msgid "Heer Feldmütze 34 [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_signal_off"
 msgid "Heer Feldmütze 34 - Officer [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var3"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var3_off"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var3"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var3_off"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_arty_panzer"
 msgid "Heer Feldmütze 34 [Artillerie]"
-msgstr "헤어 Feldmütze 34 [아틸레리]"
+msgstr "육군 Feldmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_arty_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Feldmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_cav_panzer"
 msgid "Heer Feldmütze 34 [Kavallerie]"
-msgstr "헤어 Feldmütze 34 [카발레리]"
+msgstr "육군 Feldmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_cav_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Feldmütze 34 - 장교 [카발레리]"
+msgstr "육군 Feldmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pz_panzer"
 msgid "Heer Feldmütze 34 [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 [판처트루펜]"
+msgstr "육군 Feldmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pz_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pzgren_panzer"
 msgid "Heer Feldmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pzgren_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Feldmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Feldmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pzpio_panzer"
 msgid "Heer Feldmütze 34 [Pioniere]"
-msgstr "헤어 Feldmütze 34 [피오니어]"
+msgstr "육군 Feldmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_pzpio_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Feldmütze 34 - 장교 [피오니어]"
+msgstr "육군 Feldmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_signal_panzer"
 msgid "Heer Feldmütze 34 [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var3_signal_off_panzer"
 msgid "Heer Feldmütze 34 - Officer [Nachrichtentruppen]"
-msgstr "헤어 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
+msgstr "육군 Feldmütze 34 - 장교 [나흐리히텐트루펜]"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var3_panzer"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m41_var3_off_panzer"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var3_panzer"
 msgid "Heer Feldmütze 34"
-msgstr "헤어 Feldmütze 34"
+msgstr "육군 Feldmütze 34"
 
 msgctxt "desc/stuff/ger_sidecap_m42_var3_off_panzer"
 msgid "Heer Feldmütze 34 - Officer"
-msgstr "헤어 Feldmütze 34 - 장교"
+msgstr "육군 Feldmütze 34 - 장교"
 
 msgctxt "desc/stuff/ger_fieldcap_camp"
 msgid "Heer Einheitsfeldmütze 43 - Splittertarn"
-msgstr "헤어 Einheitsfeldmütze 43 - Splittertarn"
+msgstr "육군 Einheitsfeldmütze 43 - Splittertarn"
 
 msgctxt "desc/stuff/ger_fieldcap_camp_liberm"
 msgid "Heer Einheitsfeldmütze 43 - Leibermuster"
-msgstr "헤어 Einheitsfeldmütze 43 - Leibermuster"
+msgstr "육군 Einheitsfeldmütze 43 - Leibermuster"
 
 msgctxt "desc/stuff/ger_fieldcap_m43"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gj"
 msgid "Heer Bergmütze"
-msgstr "헤어 Bergmütze"
+msgstr "육군 Bergmütze"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gj_gog_a_up"
 msgid "Heer Bergmütze - Goggles"
-msgstr "헤어 Bergmütze - 고글"
+msgstr "육군 Bergmütze - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gj_var1"
 msgid "Heer Bergmütze"
-msgstr "헤어 Bergmütze"
+msgstr "육군 Bergmütze"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gj_var2"
 msgid "Heer Bergmütze"
-msgstr "헤어 Bergmütze"
+msgstr "육군 Bergmütze"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gj_var3"
 msgid "Heer Bergmütze"
-msgstr "헤어 Bergmütze"
+msgstr "육군 Bergmütze"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gog_a_down"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gog_a_up"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gog_b_down"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_gog_b_up"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_off"
 msgid "Heer Einheitsfeldmütze 43 - Officer"
-msgstr "헤어 Einheitsfeldmütze 43 - 장교"
+msgstr "육군 Einheitsfeldmütze 43 - 장교"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_var1"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_var2"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_var3"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_camo_liberm"
 msgid "Einheitsfeldmütze 43 - Leibermuster"
@@ -1123,223 +1123,223 @@ msgstr "Einheitsfeldmütze 43 - Leibermuster"
 
 msgctxt "desc/stuff/ger_fieldcap_luft_camo"
 msgid "Luftwaffe Einheitsfeldmütze 43 - Splittertarn"
-msgstr "루프트바페 Einheitsfeldmütze 43 - Splittertarn"
+msgstr "공군 Einheitsfeldmütze 43 - Splittertarn"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_luft"
 msgid "Luftwaffe Einheitsfeldmütze 43"
-msgstr "루프트바페 Einheitsfeldmütze 43"
+msgstr "공군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_luft_off"
 msgid "Luftwaffe Einheitsfeldmütze 43 - Officer"
-msgstr "루프트바페 Einheitsfeldmütze 43 - 장교"
+msgstr "공군 Einheitsfeldmütze 43 - 장교"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_luft_var1"
 msgid "Luftwaffe Einheitsfeldmütze 43"
-msgstr "루프트바페 Einheitsfeldmütze 43"
+msgstr "공군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_luft_var2"
 msgid "Luftwaffe Einheitsfeldmütze 43"
-msgstr "루프트바페 Einheitsfeldmütze 43"
+msgstr "공군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_luft_var3"
 msgid "Luftwaffe Einheitsfeldmütze 43"
-msgstr "루프트바페 Einheitsfeldmütze 43"
+msgstr "공군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_gog_a_down"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_gog_a_up"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_gog_b_down"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_gog_b_up"
 msgid "Heer Einheitsfeldmütze 43 - Goggles"
-msgstr "헤어 Einheitsfeldmütze 43 - 고글"
+msgstr "육군 Einheitsfeldmütze 43 - 고글"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_off"
 msgid "Heer Einheitsfeldmütze 43 - Officer"
-msgstr "헤어 Einheitsfeldmütze 43 - 장교"
+msgstr "육군 Einheitsfeldmütze 43 - 장교"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_var1"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_var2"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_fieldcap_m43_panzer_var3"
 msgid "Heer Einheitsfeldmütze 43"
-msgstr "헤어 Einheitsfeldmütze 43"
+msgstr "육군 Einheitsfeldmütze 43"
 
 msgctxt "desc/stuff/ger_sidecap_m39_var1_admin"
 msgid "Heer Feldmütze 34 [Heeresverwaltung]"
-msgstr "헤어 Feldmütze 34 [헤레스페르발퉁]"
+msgstr "육군 Feldmütze 34 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_off_cap_admin"
 msgid "Heer Schirmmütze 34 - Officer [Heeresverwaltung]"
-msgstr "헤어 Schirmmütze 34 - 장교 [헤레스페르발퉁]"
+msgstr "육군 Schirmmütze 34 - 장교 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_off_cap_admin_em_1"
 msgid "Heer Schirmmütze 34 [Heeresverwaltung]"
-msgstr "헤어 Schirmmütze 34 [헤레스페르발퉁]"
+msgstr "육군 Schirmmütze 34 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_off_cap_admin_em_2"
 msgid "Heer Schirmmütze 34 [Heeresverwaltung]"
-msgstr "헤어 Schirmmütze 34 [헤레스페르발퉁]"
+msgstr "육군 Schirmmütze 34 [헤레스페르발퉁]"
 
 msgctxt "desc/stuff/ger_off_cap_arty"
 msgid "Heer Schirmmütze 34 - Officer [Artillerie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [아틸레리]"
+msgstr "육군 Schirmmütze 34 - 장교 [아틸레리]"
 
 msgctxt "desc/stuff/ger_off_cap_arty_em_1"
 msgid "Heer Schirmmütze 34 [Artillerie]"
-msgstr "헤어 Schirmmütze 34 [아틸레리]"
+msgstr "육군 Schirmmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_off_cap_arty_em_2"
 msgid "Heer Schirmmütze 34 [Artillerie]"
-msgstr "헤어 Schirmmütze 34 [아틸레리]"
+msgstr "육군 Schirmmütze 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_off_cap_cav"
 msgid "Heer Schirmmütze 34 - Officer [Kavallerie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [카발레리]"
+msgstr "육군 Schirmmütze 34 - 장교 [카발레리]"
 
 msgctxt "desc/stuff/ger_off_cap_cav_em_1"
 msgid "Heer Schirmmütze 34 [Kavallerie]"
-msgstr "헤어 Schirmmütze 34 [카발레리]"
+msgstr "육군 Schirmmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_off_cap_cav_em_2"
 msgid "Heer Schirmmütze 34 [Kavallerie]"
-msgstr "헤어 Schirmmütze 34 [카발레리]"
+msgstr "육군 Schirmmütze 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_off_cap_feldg"
 msgid "Heer Schirmmütze 34 - Officer [Feldgendarmerie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [펠트겐다르메리]"
+msgstr "육군 Schirmmütze 34 - 장교 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_off_cap_feldg_em_1"
 msgid "Heer Schirmmütze 34 [Feldgendarmerie]"
-msgstr "헤어 Schirmmütze 34 [펠트겐다르메리]"
+msgstr "육군 Schirmmütze 34 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_off_cap_feldg_em_2"
 msgid "Heer Schirmmütze 34 [Feldgendarmerie]"
-msgstr "헤어 Schirmmütze 34 [펠트겐다르메리]"
+msgstr "육군 Schirmmütze 34 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_off_cap_inf"
 msgid "Heer Schirmmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [인판테리]"
+msgstr "육군 Schirmmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_inf_em_1"
 msgid "Heer Schirmmütze 34 [Infantrie]"
-msgstr "헤어 Schirmmütze 34 [인판테리]"
+msgstr "육군 Schirmmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_inf_em_2"
 msgid "Heer Schirmmütze 34 [Infantrie]"
-msgstr "헤어 Schirmmütze 34 [인판테리]"
+msgstr "육군 Schirmmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_inf"
 msgid "Heer Schirmmütze 34 - Officer [Infantrie]"
-msgstr "헤어 Schirmmütze 34 - 장교 [인판테리]"
+msgstr "육군 Schirmmütze 34 - 장교 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_inf_em_1"
 msgid "Heer Schirmmütze 34 [Infantrie]"
-msgstr "헤어 Schirmmütze 34 [인판테리]"
+msgstr "육군 Schirmmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_inf_em_2"
 msgid "Heer Schirmmütze 34 [Infantrie]"
-msgstr "헤어 Schirmmütze 34 [인판테리]"
+msgstr "육군 Schirmmütze 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_log"
 msgid "Heer Schirmmütze 34 - Officer [Fahrtruppen]"
-msgstr "헤어 Schirmmütze 34 - 장교 [파르트루펜]"
+msgstr "육군 Schirmmütze 34 - 장교 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_log_em_1"
 msgid "Heer Schirmmütze 34 [Fahrtruppen]"
-msgstr "헤어 Schirmmütze 34 [파르트루펜]"
+msgstr "육군 Schirmmütze 34 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_log_em_2"
 msgid "Heer Schirmmütze 34 [Fahrtruppen]"
-msgstr "헤어 Schirmmütze 34 [파르트루펜]"
+msgstr "육군 Schirmmütze 34 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_pio"
 msgid "Heer Schirmmütze 34 - Officer [Pioniere]"
-msgstr "헤어 Schirmmütze 34 - 장교 [피오니어]"
+msgstr "육군 Schirmmütze 34 - 장교 [공병]"
 
 msgctxt "desc/stuff/ger_off_cap_pio_em_1"
 msgid "Heer Schirmmütze 34 [Pioniere]"
-msgstr "헤어 Schirmmütze 34 [피오니어]"
+msgstr "육군 Schirmmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_off_cap_pio_em_2"
 msgid "Heer Schirmmütze 34 [Pioniere]"
-msgstr "헤어 Schirmmütze 34 [피오니어]"
+msgstr "육군 Schirmmütze 34 [공병]"
 
 msgctxt "desc/stuff/ger_off_cap_pz"
 msgid "Heer Schirmmütze 34 - Officer [Panzertruppen]"
-msgstr "헤어 Schirmmütze 34 - 장교 [판처트루펜]"
+msgstr "육군 Schirmmütze 34 - 장교 [기갑병]"
 
 msgctxt "desc/stuff/ger_off_cap_pz_em_1"
 msgid "Heer Schirmmütze 34 [Panzertruppen]"
-msgstr "헤어 Schirmmütze 34 [판처트루펜]"
+msgstr "육군 Schirmmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_off_cap_pz_em_2"
 msgid "Heer Schirmmütze 34 [Panzertruppen]"
-msgstr "헤어 Schirmmütze 34 [판처트루펜]"
+msgstr "육군 Schirmmütze 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_off_cap_pzgren"
 msgid "Heer Schirmmütze 34 - Officer [Panzergrenadiere]"
-msgstr "헤어 Schirmmütze 34 - 장교 [판처그레나디어]"
+msgstr "육군 Schirmmütze 34 - 장교 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_off_cap_pzgren_em_1"
 msgid "Heer Schirmmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Schirmmütze 34 [판처그레나디어]"
+msgstr "육군 Schirmmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_off_cap_pzgren_em_2"
 msgid "Heer Schirmmütze 34 [Panzergrenadiere]"
-msgstr "헤어 Schirmmütze 34 [판처그레나디어]"
+msgstr "육군 Schirmmütze 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_arty"
 msgid "Heer Officer 'Knautschmütze' 34 [Artillerie]"
-msgstr "헤어 장교 'Knautschmütze' 34 [아틸레리]"
+msgstr "육군 장교 'Knautschmütze' 34 [아틸레리]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_cav"
 msgid "Heer Officer 'Knautschmütze' 34 [Kavallerie]"
-msgstr "헤어 장교 'Knautschmütze' 34 [카발레리]"
+msgstr "육군 장교 'Knautschmütze' 34 [카발레리]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_feldg"
 msgid "Heer Officer 'Knautschmütze' 34 [Feldgendarmerie]"
-msgstr "헤어 장교 'Knautschmütze' 34 [펠트겐다르메리]"
+msgstr "육군 장교 'Knautschmütze' 34 [펠트겐다르메리]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_inf"
 msgid "Heer Officer 'Knautschmütze' 34 [Infanterie]"
-msgstr "헤어 장교 'Knautschmütze' 34 [인판테리]"
+msgstr "육군 장교 'Knautschmütze' 34 [인판테리]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_log"
 msgid "Heer Officer 'Knautschmütze' 34 [Fahrtruppen]"
-msgstr "헤어 장교 'Knautschmütze' 34 [파르트루펜]"
+msgstr "육군 장교 'Knautschmütze' 34 [파르트루펜]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_pio"
 msgid "Heer Officer 'Knautschmütze' 34 [Pioniere]"
-msgstr "헤어 장교 'Knautschmütze' 34 [피오니어]"
+msgstr "육군 장교 'Knautschmütze' 34 [공병]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_pz"
 msgid "Heer Officer 'Knautschmütze' 34 [Panzertruppen]"
-msgstr "헤어 장교 'Knautschmütze' 34 [판처트루펜]"
+msgstr "육군 장교 'Knautschmütze' 34 [기갑병]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_pzgren"
 msgid "Heer Officer 'Knautschmütze' 34 [Panzergrenadiere]"
-msgstr "헤어 장교 'Knautschmütze' 34 [판처그레나디어]"
+msgstr "육군 장교 'Knautschmütze' 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_off_cap_crusher_pzgren"
 msgid "Heer Officer 'Knautschmütze' 34 [Panzergrenadiere]"
-msgstr "헤어 장교 'Knautschmütze' 34 [판처그레나디어]"
+msgstr "육군 장교 'Knautschmütze' 34 [기갑척탄병]"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_camo1_band_var1"
 msgid "Stahlhelm 35"
@@ -1475,19 +1475,19 @@ msgstr "Stahlhelm 35 - 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_cover_band"
 msgid "Heer Stahlhelm 35 - Cover"
-msgstr "헤어 Stahlhelm 35 - 커버"
+msgstr "육군 Stahlhelm 35 - 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_cover"
 msgid "Heer Stahlhelm 35 - Cover"
-msgstr "헤어 Stahlhelm 35 - 커버"
+msgstr "육군 Stahlhelm 35 - 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_cover_sumpf"
 msgid "Heer Stahlhelm 35 - Cover"
-msgstr "헤어 Stahlhelm 35 - 커버"
+msgstr "육군 Stahlhelm 35 - 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_cover_sumpf_band"
 msgid "Heer Stahlhelm 35 - Cover"
-msgstr "헤어 Stahlhelm 35 - 커버"
+msgstr "육군 Stahlhelm 35 - 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_dirt_band_var1"
 msgid "Stahlhelm 35"
@@ -1519,59 +1519,59 @@ msgstr "Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_band_var1"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_band_var2"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_cover"
 msgid "Luftwaffe Stahlhelm 35 - Splittertarn Cover"
-msgstr "루프트바페 Stahlhelm 35 - Splittertarn 커버"
+msgstr "공군 Stahlhelm 35 - Splittertarn 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_cover_band"
 msgid "Luftwaffe Stahlhelm 35 - Splittertarn Cover"
-msgstr "루프트바페 Stahlhelm 35 - Splittertarn 커버"
+msgstr "공군 Stahlhelm 35 - Splittertarn 커버"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_gog_a_down"
 msgid "Luftwaffe Stahlhelm 35 - Goggles"
-msgstr "루프트바페 Stahlhelm 35 - 고글"
+msgstr "공군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_gog_a_up"
 msgid "Luftwaffe Stahlhelm 35 - Goggles"
-msgstr "루프트바페 Stahlhelm 35 - 고글"
+msgstr "공군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_gog_b_down"
 msgid "Luftwaffe Stahlhelm 35 - Goggles"
-msgstr "루프트바페 Stahlhelm 35 - 고글"
+msgstr "공군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_gog_b_up"
 msgid "Luftwaffe Stahlhelm 35 - Goggles"
-msgstr "루프트바페 Stahlhelm 35 - 고글"
+msgstr "공군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_strap"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_strap_holder"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_var1"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_var2"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_var3"
 msgid "Luftwaffe Stahlhelm 35"
-msgstr "루프트바페 Stahlhelm 35"
+msgstr "공군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_wire"
 msgid "Luftwaffe Stahlhelm 35 - Wire"
-msgstr "루프트바페 Stahlhelm 35 - 와이어"
+msgstr "공군 Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_stalhelm_lw_camo1_band_var1"
 msgid "Stahlhelm 35"
@@ -1823,11 +1823,11 @@ msgstr "Stahlhelm 38 - 위생병"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_band_var1"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_band_var2"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_cloth"
 msgid "Stahlhelm 35 - Cloth"
@@ -1835,55 +1835,55 @@ msgstr "Stahlhelm 35 - 천"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_gog_a_down"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_gog_a_up"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_gog_b_down"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_gog_b_up"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_strap"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_strap_holder"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_var1"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_var2"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_var3"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_var4"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_wire"
 msgid "Heer Stahlhelm 35 - Wire"
-msgstr "헤어 Stahlhelm 35 - 와이어"
+msgstr "육군 Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_band_var1"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_band_var2"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_cloth"
 msgid "Stahlhelm 35 - Cloth"
@@ -1891,55 +1891,55 @@ msgstr "Stahlhelm 35 - 천"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_gog_a_down"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_gog_a_up"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_gog_b_down"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_gog_b_up"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_strap"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_strap_holder"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_var1"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_var2"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_var3"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_var4"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_g_wire"
 msgid "Heer Stahlhelm 35 - Wire"
-msgstr "헤어 Stahlhelm 35 - 와이어"
+msgstr "육군 Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_band_var1"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_band_var2"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_cloth"
 msgid "Stahlhelm 35 - Cloth"
@@ -1947,47 +1947,47 @@ msgstr "Stahlhelm 35 - 천"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_gog_a_down"
 msgid "Kriegsmarine Stahlhelm 35 - Goggles"
-msgstr "크릭스마리네 Stahlhelm 35 - 고글"
+msgstr "해군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_gog_a_up"
 msgid "Kriegsmarine Stahlhelm 35 - Goggles"
-msgstr "크릭스마리네 Stahlhelm 35 - 고글"
+msgstr "해군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_gog_b_down"
 msgid "Kriegsmarine Stahlhelm 35 - Goggles"
-msgstr "크릭스마리네 Stahlhelm 35 - 고글"
+msgstr "해군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_gog_b_up"
 msgid "Kriegsmarine Stahlhelm 35 - Goggles"
-msgstr "크릭스마리네 Stahlhelm 35 - 고글"
+msgstr "해군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_strap"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_strap_holder"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_var1"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_var2"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_var3"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_var4"
 msgid "Kriegsmarine Stahlhelm 35"
-msgstr "크릭스마리네 Stahlhelm 35"
+msgstr "해군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_km_wire"
 msgid "Kriegsmarine Stahlhelm 35 - Wire"
-msgstr "크릭스마리네 Stahlhelm 35 - 와이어"
+msgstr "해군 Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_stalhelm_m39_blau_band_var1"
 msgid "Blue Legion Stahlhelm 35"
@@ -2023,15 +2023,15 @@ msgstr "Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_band_var2"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_gog_a_down"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_gog_a_up"
 msgid "Heer Stahlhelm 35 - Goggles"
-msgstr "헤어 Stahlhelm 35 - 고글"
+msgstr "육군 Stahlhelm 35 - 고글"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_gog_b_down"
 msgid "Stahlhelm 35 - Goggles"
@@ -2047,11 +2047,11 @@ msgstr "Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_var1"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_var2"
 msgid "Heer Stahlhelm 35"
-msgstr "헤어 Stahlhelm 35"
+msgstr "육군 Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_var3"
 msgid "Stahlhelm 35"
@@ -2059,7 +2059,7 @@ msgstr "Stahlhelm 35"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_wire"
 msgid "Heer Stahlhelm 35 - Wire"
-msgstr "헤어 Stahlhelm 35 - 와이어"
+msgstr "육군 Stahlhelm 35 - 와이어"
 
 msgctxt "desc/stuff/ger_stalhelm_m43_medic_var1"
 msgid "Stahlhelm 35 - Medic"

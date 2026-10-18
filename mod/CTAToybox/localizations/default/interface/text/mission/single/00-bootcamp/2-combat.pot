@@ -217,5 +217,5 @@ msgid "잘했다, 병사. 첫 전투에서 살아남았군. 자네를 믿어도 
 msgstr ""
 
 msgctxt "mission/single/00-bootcamp/2-combat/outro_failed"
-msgid "명령을 따르고 빨리 해내라. 슈트라프바탈리온에 끌려가고 싶지는 않을 것이다!"
+msgid "명령을 따르고 빨리 해내라. 징벌대대에 끌려가고 싶지는 않을 것이다!"
 msgstr ""

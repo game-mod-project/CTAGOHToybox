@@ -71,7 +71,7 @@ msgstr "또한 파손된 차량과 버려진 장비를 모두 회수해 미군�
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/narrator/05"
 msgid "Members of the Volkssturm! We are what's left of of the 116th Panzer Division. The Americans are closing in! We have learnt how to fight them after the Normandy landings. Join us and you might survive the next enemy onslaught."
-msgstr "국민돌격대원들! 우리는 제116 판처 사단의 잔존 병력이다. 미군이 조여 오고 있다! 우리는 노르망디 상륙 이후 그들과 싸우는 법을 익혔다. 우리와 함께하면 다음 적의 공세에서 살아남을 수도 있다."
+msgstr "국민돌격대원들! 우리는 제116 기갑 사단의 잔존 병력이다. 미군이 조여 오고 있다! 우리는 노르망디 상륙 이후 그들과 싸우는 법을 익혔다. 우리와 함께하면 다음 적의 공세에서 살아남을 수도 있다."
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/narrator/06"
 msgid "Pick 10 Volkssturm soldiers. They will be under your command. I will lead the others."
@@ -119,7 +119,7 @@ msgstr "Herr Leutnant, 그대와 부하들은 나와 미군 적수 모두의 존
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/narrator/offer1"
 msgid "I command this element of the 116th Panzer Division. What do you want?"
-msgstr "내가 제116 판처 사단의 이 부대를 지휘한다. 원하는 게 무엇이오?"
+msgstr "내가 제116 기갑 사단의 이 부대를 지휘한다. 원하는 게 무엇이오?"
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/narrator/offer2"
 msgid "You want us to surrender, then? Avoiding bloodshed after you obliterated this town?"
@@ -203,7 +203,7 @@ msgstr "이 실패는 결과를 낳을 것이다. 우선 더는 포위를 막을
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/place"
 msgid "116th Panzer Division"
-msgstr "제116 판처 사단"
+msgstr "제116 기갑 사단"
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/skip"
 msgid "Skip preparation phase"
@@ -211,7 +211,7 @@ msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/story"
 msgid " It is now April 1945. A few weeks ago, the Ludendorff bridge at Remagen was captured intact. The Allies also crossed the Rhine at Wesel and Nierstein. As a result, army group B has become encircled completely; the stage for the battle of the Ruhr pocket has been set.\n\n You and the 116th Panzer division have been directed to the area south of Iserlohn. Your first problem is the wide area over which your troops have been dispersed in the past few days; they’re literally everywhere, which makes it impossible for them to act as a unit.\n\n You should group all available troops and see whether you can find any supplies and equipment that was abandoned during yesterday’s fighting, before you can even think about any coordinated actions. Use your experience to make the most of this difficult situation. Do not despair, wonder weapons will soon tip the balance of the war in our favor.\n\nGood luck!"
-msgstr "이제 1945년 4월이다. 몇 주 전 레마겐의 루덴도르프 다리가 온전한 상태로 점령되었다. 연합군은 베젤과 니어슈타인에서도 라인강을 건넜다. 그 결과 B집단군은 완전히 포위되었고, 루르 포위망 전투의 무대가 마련되었다.\n\n그대와 제116 판처 사단은 이저론 남쪽 지역으로 향하라는 명령을 받았다. 첫 문제는 지난 며칠간 부대가 넓은 지역에 흩어졌다는 점이다. 말 그대로 사방에 있어서 한 부대로 행동하는 것이 불가능하다.\n\n조율된 행동을 생각하기에 앞서 가용 병력을 모두 모으고, 어제의 전투에서 버려진 보급품과 장비가 있는지 찾아라. 이 어려운 상황을 최대한 활용하도록 경험을 발휘해라. 절망하지 마라, 경이로운 무기가 곧 전세를 우리에게 유리하게 기울일 것이다.\n\n행운을 빈다!"
+msgstr "이제 1945년 4월이다. 몇 주 전 레마겐의 루덴도르프 다리가 온전한 상태로 점령되었다. 연합군은 베젤과 니어슈타인에서도 라인강을 건넜다. 그 결과 B집단군은 완전히 포위되었고, 루르 포위망 전투의 무대가 마련되었다.\n\n그대와 제116 기갑 사단은 이저론 남쪽 지역으로 향하라는 명령을 받았다. 첫 문제는 지난 며칠간 부대가 넓은 지역에 흩어졌다는 점이다. 말 그대로 사방에 있어서 한 부대로 행동하는 것이 불가능하다.\n\n조율된 행동을 생각하기에 앞서 가용 병력을 모두 모으고, 어제의 전투에서 버려진 보급품과 장비가 있는지 찾아라. 이 어려운 상황을 최대한 활용하도록 경험을 발휘해라. 절망하지 마라, 경이로운 무기가 곧 전세를 우리에게 유리하게 기울일 것이다.\n\n행운을 빈다!"
 
 msgctxt "mission/single/02-ger-west/1945_04_ruhr_pocket/surrender"
 msgid "Surrender"

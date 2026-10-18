@@ -49,15 +49,15 @@ msgid "메르카텔 바로 바깥에 설치된 88mm포를 지휘해라. 적 기�
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/09"
-msgid "Gute Arbeit, Männer. 토미들이 도망가고 있다! 루프트바페가 하늘에 있는 한 한동안 돌아오지 못할 것이다!"
+msgid "Gute Arbeit, Männer. 토미들이 도망가고 있다! 공군이 하늘에 있는 한 한동안 돌아오지 못할 것이다!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/01"
-msgid "Herr Leutnant! 전방 판처 아우프클레러가 앞 마을 주변에 참호를 판 토미들을 발견했습니다. 명령은 무엇입니까?"
+msgid "Herr Leutnant! 전방 기갑 정찰병이 앞 마을 주변에 참호를 판 토미들을 발견했습니다. 명령은 무엇입니까?"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/02"
-msgid "판처 경보! 북서쪽에서 전차가 온다!"
+msgid "전차 경보! 북서쪽에서 전차가 온다!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/03"
@@ -129,9 +129,9 @@ msgid "1940년 5월 21일 · 프랑스 파드칼레, 아라스"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/place"
-msgid "제7판처사단"
+msgid "제7기갑사단"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/story"
-msgid "불과 11일 전, 독일군이 네덜란드, 벨기에, 룩셈부르크로 빠르게 진격하면서 유럽은 '앉은뱅이 전쟁'에서 '전격전'으로 넘어갔다.\n\n모두의 허를 찌른 독일군은 며칠 뒤 스당에서 뫼즈강을 신속히 건너 서쪽으로 밀어붙인다.\n\n기습의 이점을 살려 제7판처사단은 8일 연속으로 이동 중이다. 지금 당신은 아라스 남쪽의 아니에 접근하고 있다.\n\n우리 앞길을 막는 영국군 거점이 방금 발견됐다.\n\n선두에 서서 신속히 소탕하라. 그래야 기세를 유지해 해협 해안까지 계속 진격할 수 있다."
+msgid "불과 11일 전, 독일군이 네덜란드, 벨기에, 룩셈부르크로 빠르게 진격하면서 유럽은 '앉은뱅이 전쟁'에서 '전격전'으로 넘어갔다.\n\n모두의 허를 찌른 독일군은 며칠 뒤 스당에서 뫼즈강을 신속히 건너 서쪽으로 밀어붙인다.\n\n기습의 이점을 살려 제7기갑사단은 8일 연속으로 이동 중이다. 지금 당신은 아라스 남쪽의 아니에 접근하고 있다.\n\n우리 앞길을 막는 영국군 거점이 방금 발견됐다.\n\n선두에 서서 신속히 소탕하라. 그래야 기세를 유지해 해협 해안까지 계속 진격할 수 있다."
 msgstr ""

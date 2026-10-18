@@ -118,7 +118,7 @@ msgid "문서를 얻었다! 어디 보자..."
 msgstr ""
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/06"
-msgid "판처가 뒤에 붙어서 다른 길로 피해야 했는데 무전기가 고장 났다... 상황이 어떤가?"
+msgid "전차가 뒤에 붙어서 다른 길로 피해야 했는데 무전기가 고장 났다... 상황이 어떤가?"
 msgstr ""
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/07"

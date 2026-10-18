@@ -39,7 +39,7 @@ msgstr "<c(c3baae)>중형 기갑 선봉</c>"
 
 msgctxt "desc/squad/jagd_kampfgruppe"
 msgid "Schwere Panzerjäger-Abteilung (Jagdtiger + StuG III)"
-msgstr "슈베레 판처예거 아프타일룽 (Jagdtiger + StuG III)"
+msgstr "중대전차대대 (Jagdtiger + StuG III)"
 
 msgctxt "info/special/jagd_kampfgruppe"
 msgid "<c(c3baae)>Heavy Tank Destroyer Group</c>"
@@ -79,7 +79,7 @@ msgstr "<c(c3baae)>중형 기갑 집단</c>"
 
 msgctxt "desc/squad/kampfgruppe_sturm"
 msgid "Sturmgeschütz-Batterie (StuH 42 + StuG III)"
-msgstr "슈투름게슈츠 포대 (StuH 42 + StuG III)"
+msgstr "돌격포 포대 (StuH 42 + StuG III)"
 
 msgctxt "info/special/kampfgruppe_sturm"
 msgid "<c(c3baae)>Assault Gun Battery</c>"
@@ -87,7 +87,7 @@ msgstr "<c(c3baae)>돌격포 포대</c>"
 
 msgctxt "desc/squad/kampfgruppe_schwere"
 msgid "Schwere Panzer-Abteilung (Tiger I + Pz.IV H)"
-msgstr "슈베레 판처 아프타일룽 (Tiger I + Pz.IV H)"
+msgstr "중전차대대 (Tiger I + Pz.IV H)"
 
 msgctxt "info/special/kampfgruppe_schwere"
 msgid "<c(c3baae)>Heavy Armor Group</c>"
@@ -143,7 +143,7 @@ msgstr "<c(c3baae)>정예 기계화 보병</c>"
 
 msgctxt "desc/squad/kampfgruppe_lehr_spearhead"
 msgid "Panzer Lehr Spearhead"
-msgstr "판처 레어 선봉"
+msgstr "기갑교도 선봉"
 
 msgctxt "info/special/kampfgruppe_lehr_spearhead"
 msgid "<c(c3baae)>Heavy Mechanized Spearhead</c>"
@@ -151,7 +151,7 @@ msgstr "<c(c3baae)>중형 기계화 선봉</c>"
 
 msgctxt "desc/squad/kampfgruppe_sturm_rider"
 msgid "Assault Gun Rider Group (StuG III + Fallschirmjäger)"
-msgstr "돌격포 탑승 집단 (StuG III + 팔쉬름예거)"
+msgstr "돌격포 탑승 집단 (StuG III + 강하엽병)"
 
 msgctxt "info/special/kampfgruppe_sturm_rider"
 msgid "<c(c3baae)>Assault Gun with Riders</c>"
@@ -167,7 +167,7 @@ msgstr "<c(c3baae)>차량화 정찰</c>"
 
 msgctxt "desc/squad/kampfgruppe_volks_sperrverband"
 msgid "Volksgrenadier Blocking Force"
-msgstr "폭스그레나디어 저지 부대"
+msgstr "국민척탄병 저지 부대"
 
 msgctxt "info/special/kampfgruppe_volks_sperrverband"
 msgid "<c(c3baae)>Static Defense Force</c>"
@@ -199,7 +199,7 @@ msgstr "<c(c3baae)>중형 기갑과 보병</c>"
 
 msgctxt "desc/squad/ger_kg_e75_nachtjager"
 msgid "E-75 'Nachtjäger' Escort"
-msgstr "E-75 '나흐트예거' 호위"
+msgstr "E-75 '야간엽병' 호위"
 
 msgctxt "info/special/ger_kg_e75_nachtjager"
 msgid "<c(c3baae)>Heavy AA Escort</c>"
@@ -231,7 +231,7 @@ msgstr "<c(c3baae)>중형 기동 정찰</c>"
 
 msgctxt "desc/squad/ger_kg_mausking_lehr"
 msgid "Mausking Panzer-Lehr Spearhead"
-msgstr "마우스킹 판처 레어 선봉"
+msgstr "마우스킹 기갑교도 선봉"
 
 msgctxt "info/special/ger_kg_mausking_lehr"
 msgid "<c(c3baae)>Super Heavy Mechanized</c>"

@@ -75,7 +75,7 @@ msgstr "포병 통신병 [KA]"
 
 msgctxt "desc/squad/squad_cossacks_con(rus)"
 msgid "Cossacks Squad"
-msgstr "코사크 분대"
+msgstr "카자크 분대"
 
 msgctxt "desc/squad/squad_marines_late_con(rus)"
 msgid "Marine Squad (VMF)"

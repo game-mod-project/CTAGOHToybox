@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 
 msgctxt "desc/human/single/ger/1941_summer/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/Recruit1"
@@ -26,379 +26,379 @@ msgid "신병"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/antitank_1"
-msgid "Panzerbüchse 보병 [헤어]"
+msgid "Panzerbüchse 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/brand_1"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/brand_2"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/brand_3"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/fallsch_1"
-msgid "팔쉬름예거 부사관 [루프트바페]"
+msgid "강하엽병 부사관 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/fallsch_2"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/fallsch_3"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/fallsch_4"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/gebirgs_1"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/gebirgs_2"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/gebirgs_3"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/luft_1"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/luft_2"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/luft_3"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_summer/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/antitank_1"
-msgid "Panzerbüchse 보병 [헤어]"
+msgid "Panzerbüchse 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/artilleryman"
-msgid "포병 [헤어]"
+msgid "포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/brand_1"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/brand_2"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/brand_3"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/fallsch_1"
-msgid "팔쉬름예거 부사관 [루프트바페]"
+msgid "강하엽병 부사관 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/fallsch_2"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/fallsch_3"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/fallsch_4"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/gebirgs_1"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/gebirgs_2"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/gebirgs_3"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/luft_1"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/luft_2"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/luft_3"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/signaller"
-msgid "포병 통신병 [헤어]"
+msgid "포병 통신병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1941_win/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/antitank_1"
-msgid "Panzerbüchse 보병 [헤어]"
+msgid "Panzerbüchse 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/artilleryman"
-msgid "포병 [헤어]"
+msgid "포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/brand_1"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/brand_2"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/brand_3"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/collaborator_1"
@@ -410,977 +410,977 @@ msgid "부역자"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/fallsch_1"
-msgid "팔쉬름예거 부사관 [루프트바페]"
+msgid "강하엽병 부사관 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/fallsch_2"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/fallsch_3"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/fallsch_4"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/gebirgs_1"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/gebirgs_2"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/gebirgs_3"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/luft_1"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/luft_2"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/luft_3"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_autumn/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/antitank_1"
-msgid "Panzerbüchse 보병 [헤어]"
+msgid "Panzerbüchse 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/brand_1"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/brand_2"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/brand_3"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/fallsch_1"
-msgid "팔쉬름예거 부사관 [루프트바페]"
+msgid "강하엽병 부사관 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/fallsch_2"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/fallsch_3"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/fallsch_4"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/gebirgs_1"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/gebirgs_2"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/gebirgs_3"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/luft_1"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/luft_2"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/luft_3"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/pilot"
-msgid "조종사 [루프트바페]"
+msgid "조종사 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_summer/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/antitank_1"
-msgid "Panzerbüchse 보병 [헤어]"
+msgid "Panzerbüchse 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_1"
-msgid "블라우 사단 기관단총 보병 [헤어]"
+msgid "블라우 사단 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_2"
-msgid "블라우 사단 소총수 [헤어]"
+msgid "블라우 사단 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_3"
-msgid "블라우 사단 소총수 [헤어]"
+msgid "블라우 사단 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_4"
-msgid "블라우 사단 기관총 사수 [헤어]"
+msgid "블라우 사단 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_5"
-msgid "블라우 사단 Feldwebel [헤어]"
+msgid "블라우 사단 Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_6"
-msgid "블라우 사단 기관총 부사수 [헤어]"
+msgid "블라우 사단 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_antitank_1"
-msgid "블라우 사단 대전차병 [헤어]"
+msgid "블라우 사단 대전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_antitank_2"
-msgid "블라우 사단 대전차 지원병 [헤어]"
+msgid "블라우 사단 대전차 지원병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_artilleryman"
-msgid "블라우 사단 포병 [헤어]"
+msgid "블라우 사단 포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_engineer"
-msgid "블라우 사단 야전 공병 [헤어]"
+msgid "블라우 사단 야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_medic"
-msgid "블라우 사단 위생병 [헤어]"
+msgid "블라우 사단 위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_miner_ap"
-msgid "블라우 사단 AP 지뢰병 [헤어]"
+msgid "블라우 사단 AP 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/blau_miner_at"
-msgid "블라우 사단 대전차 지뢰병 [헤어]"
+msgid "블라우 사단 대전차 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/brand_1"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/brand_2"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/brand_3"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/fallsch_1"
-msgid "팔쉬름예거 부사관 [루프트바페]"
+msgid "강하엽병 부사관 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/fallsch_2"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/fallsch_3"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/fallsch_4"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/gebirgs_1"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/gebirgs_2"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/gebirgs_3"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/luft_1"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/luft_2"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/luft_3"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1942_win/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/antitank_1"
-msgid "Panzerbüchse 보병 [헤어]"
+msgid "Panzerbüchse 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/brand_1"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/brand_2"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/brand_3"
-msgid "브란덴부르거 [헤어]"
+msgid "브란덴부르거 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/fallsch_1"
-msgid "팔쉬름예거 부사관 [루프트바페]"
+msgid "강하엽병 부사관 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/fallsch_2"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/fallsch_3"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/fallsch_4"
-msgid "팔쉬름예거 [루프트바페]"
+msgid "강하엽병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/gebirgs_1"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/gebirgs_2"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/gebirgs_3"
-msgid "게비르크스예거 [헤어]"
+msgid "산악엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/luft_1"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/luft_2"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/luft_3"
-msgid "루프트바페 야전 보병 [루프트바페]"
+msgid "공군 야전 보병 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/rall"
-msgid "Hauptmann 귄터 랄 [루프트바페]"
+msgid "Hauptmann 귄터 랄 [공군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_summer/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/antitank_1"
-msgid "대전차 보병 [헤어]"
+msgid "대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/mgun_1"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/mgun_2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/sturm_1"
-msgid "판처그레나디어 [헤어]"
+msgid "기갑척탄병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/sturm_2"
-msgid "판처그레나디어 [헤어]"
+msgid "기갑척탄병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/sturm_3"
-msgid "판처그레나디어 [헤어]"
+msgid "기갑척탄병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/tank_commander"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/tank_commander_stug"
-msgid "Leutnant [헤어]"
+msgid "Leutnant [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1943_win/tankman_stug"
-msgid "전차병 [헤어]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/Officer"
-msgid "Leutnant  [헤어]"
+msgid "Leutnant  [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/antitank_1"
-msgid "대전차 보병 [헤어]"
+msgid "대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/antitank_2"
-msgid "대전차 지원 보병 [헤어]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/artilleryman"
-msgid "포병 [헤어]"
+msgid "포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/engineer_1"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/engineer_2"
-msgid "야전 공병 [헤어]"
+msgid "야전 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/flamer"
-msgid "화염방사기 보병 [헤어]"
+msgid "화염방사기 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/logistics"
-msgid "보급 담당 [헤어]"
+msgid "보급 담당 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/logistics_manager"
-msgid "수송 장교 [헤어]"
+msgid "수송 장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/medic"
-msgid "위생병 [헤어]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/mgun2"
-msgid "기관총 지원 [헤어]"
+msgid "기관총 지원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/mgun"
-msgid "기관총 사수 [헤어]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/miner-ap"
-msgid "AP 지뢰 공병 [헤어]"
+msgid "AP 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/miner-at"
-msgid "대전차 지뢰 공병 [헤어]"
+msgid "대전차 지뢰 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/nco"
-msgid "Feldwebel [헤어]"
+msgid "Feldwebel [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/oberst"
-msgid "Oberst [헤어]"
+msgid "Oberst [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/pioneer_1"
-msgid "피오니어 부사관 [헤어]"
+msgid "공병 부사관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/pioneer_2"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/pioneer_3"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/pioneer_4"
-msgid "피오니어 [헤어]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/rifleman_1"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/rifleman_2"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/rifleman_3"
-msgid "소총수 [헤어]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/sapper"
-msgid "지뢰 제거 공병 [헤어]"
+msgid "지뢰 제거 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/smg_1"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/smg_2"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/smg_3"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/smg_mkb"
-msgid "기관단총 보병 [헤어]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/sniper"
-msgid "저격수 [헤어]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/tankman_com"
-msgid "Leutnant [판처바페]"
+msgid "Leutnant [기갑병과]"
 msgstr ""
 
 msgctxt "desc/human/single/ger/1944_summer/tankman"
-msgid "전차병 [판처바페]"
+msgid "전차병 [기갑병과]"
 msgstr ""

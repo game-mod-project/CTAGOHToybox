@@ -51,15 +51,15 @@ msgstr "메르카텔 바로 바깥에 설치된 88mm포를 지휘해라. 적 기
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_officer]/09"
 msgid "Gute arbeit, männer. The Tommies are running away! They won't come back anytime soon while the Luftwaffe is in the sky!"
-msgstr "Gute Arbeit, Männer. 토미들이 도망가고 있다! 루프트바페가 하늘에 있는 한 한동안 돌아오지 못할 것이다!"
+msgstr "Gute Arbeit, Männer. 토미들이 도망가고 있다! 공군이 하늘에 있는 한 한동안 돌아오지 못할 것이다!"
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/01"
 msgid "Herr leutnant! Our forward Aufklärer spotted some Tommies dug in around the town ahead of us. What are your orders?"
-msgstr "Herr Leutnant! 전방 판처 아우프클레러가 앞 마을 주변에 참호를 판 토미들을 발견했습니다. 명령은 무엇입니까?"
+msgstr "Herr Leutnant! 전방 기갑 정찰병이 앞 마을 주변에 참호를 판 토미들을 발견했습니다. 명령은 무엇입니까?"
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/02"
 msgid "Panzer Alarm! Tanks coming from the North-West!"
-msgstr "판처 경보! 북서쪽에서 전차가 온다!"
+msgstr "전차 경보! 북서쪽에서 전차가 온다!"
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/[narrators]/[narrator_soldier]/03"
 msgid "Their armor is too thick! We're doing nothing to them! Aim at the tracks and immobilise them!"
@@ -131,8 +131,8 @@ msgstr "1940년 5월 21일 · 프랑스 파드칼레, 아라스"
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/place"
 msgid "7th Panzer Division"
-msgstr "제7판처사단"
+msgstr "제7기갑사단"
 
 msgctxt "mission/single/051-ger_finesthour/1940_05_arras/story"
 msgid "Just 11 days ago, Europe went from ‘Sitzkrieg’ to ‘Blitzkrieg’ with the rapid advance of German troops into the Netherlands, Belgium, and Luxembourg.\n\n Taking everyone by surprise, the Germans quickly cross the Meuse River at Sedan just days later and push West. \n\nExploiting the element of surprise, the 7th Panzer Division has been on the move for 8 days straight. Right now, you are approaching Agny, south of Arras. \n\n We have just found a British strongpoint that is blocking our way. \n\n Take the lead and clear that up quickly, so we can maintain momentum and drive forward to the Channel Coast."
-msgstr "불과 11일 전, 독일군이 네덜란드, 벨기에, 룩셈부르크로 빠르게 진격하면서 유럽은 '앉은뱅이 전쟁'에서 '전격전'으로 넘어갔다.\n\n모두의 허를 찌른 독일군은 며칠 뒤 스당에서 뫼즈강을 신속히 건너 서쪽으로 밀어붙인다.\n\n기습의 이점을 살려 제7판처사단은 8일 연속으로 이동 중이다. 지금 당신은 아라스 남쪽의 아니에 접근하고 있다.\n\n우리 앞길을 막는 영국군 거점이 방금 발견됐다.\n\n선두에 서서 신속히 소탕하라. 그래야 기세를 유지해 해협 해안까지 계속 진격할 수 있다."
+msgstr "불과 11일 전, 독일군이 네덜란드, 벨기에, 룩셈부르크로 빠르게 진격하면서 유럽은 '앉은뱅이 전쟁'에서 '전격전'으로 넘어갔다.\n\n모두의 허를 찌른 독일군은 며칠 뒤 스당에서 뫼즈강을 신속히 건너 서쪽으로 밀어붙인다.\n\n기습의 이점을 살려 제7기갑사단은 8일 연속으로 이동 중이다. 지금 당신은 아라스 남쪽의 아니에 접근하고 있다.\n\n우리 앞길을 막는 영국군 거점이 방금 발견됐다.\n\n선두에 서서 신속히 소탕하라. 그래야 기세를 유지해 해협 해안까지 계속 진격할 수 있다."

@@ -29,7 +29,7 @@ msgid "포격이다! 엄폐해라!"
 msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator_soldier01"
-msgid "판처다! 북쪽에서 독일 기갑이 온다!"
+msgid "전차다! 북쪽에서 독일 기갑이 온다!"
 msgstr ""
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator03"

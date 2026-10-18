@@ -71,11 +71,11 @@ msgstr "기관총 분견대"
 
 msgctxt "desc/squad/single_riflegrenade(ger)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_scout(ger)"
 msgid "Aufklärer"
-msgstr "아우프클레러"
+msgstr "정찰병"
 
 msgctxt "desc/squad/single_sniper(ger)"
 msgid "Sniper"
@@ -123,19 +123,19 @@ msgstr "브란덴부르거"
 
 msgctxt "desc/squad/squad_fallschirmjaeger(ger)"
 msgid "Fallschirmjäger"
-msgstr "팔쉬름예거"
+msgstr "강하엽병"
 
 msgctxt "desc/squad/squad_fallschirmjaeger_con(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmjäger squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_fallschirmjaeger_late(ger)"
 msgid "Fallschirmjäger"
-msgstr "팔쉬름예거"
+msgstr "강하엽병"
 
 msgctxt "desc/squad/squad_fallschirmjaeger_motor_con"
 msgid "<c(A5A095)>(4)</c> Motorized Fallschirmjäger squad"
-msgstr "<c(A5A095)>(4)</c> 차량화 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> 차량화 강하엽병 분대"
 
 msgctxt "desc/squad/squad_feldgendarmerie(ger)"
 msgid "<c(A5A095)>(2)</c> Feldgendarmerie squad"
@@ -159,27 +159,27 @@ msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 차량화 소총 분대"
 
 msgctxt "desc/squad/squad_gebirgsjaeger(ger)"
 msgid "Gebirgsjäger"
-msgstr "게비르크스예거"
+msgstr "산악엽병"
 
 msgctxt "desc/squad/squad_gebirgsjaeger_con(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_gebirgsjaeger_early(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_gebirgsjaeger_late(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_grenadiere(ger)"
 msgid "Grenadiere"
-msgstr "그레나디어"
+msgstr "척탄병"
 
 msgctxt "desc/squad/squad_grenadiere_late(ger)"
 msgid "<c(A5A095)>(2)</c> Grenadier squad"
-msgstr "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 척탄병 분대"
 
 msgctxt "desc/squad/squad_heavy(ger)"
 msgid "Regular Inf."
@@ -187,11 +187,11 @@ msgstr "일반 보병"
 
 msgctxt "desc/squad/squad_jaeger_con(ger)"
 msgid "<c(A5A095)>(3)</c> Jäger squad"
-msgstr "<c(A5A095)>(3)</c> 예거 분대"
+msgstr "<c(A5A095)>(3)</c> 엽병 분대"
 
 msgctxt "desc/squad/squad_jager_late(ger)"
 msgid "<c(A5A095)>(3)</c> Jäger squad"
-msgstr "<c(A5A095)>(3)</c> 예거 분대"
+msgstr "<c(A5A095)>(3)</c> 엽병 분대"
 
 msgctxt "desc/squad/squad_landwehr_early(ger)"
 msgid "<c(A5A095)>(1)</c> Landesschützen rifle squad"
@@ -207,7 +207,7 @@ msgstr "LW. 야전부대"
 
 msgctxt "desc/squad/squad_luftwaffe_con(ger)"
 msgid "<c(A5A095)>(1)</c> Luftwaffe Rifle squad"
-msgstr "<c(A5A095)>(1)</c> 루프트바페 소총 분대"
+msgstr "<c(A5A095)>(1)</c> 공군 소총 분대"
 
 msgctxt "desc/squad/squad_luftwaffe_early(ger)"
 msgid "LW. field unit"
@@ -247,63 +247,63 @@ msgstr "<c(A5A095)>(1)</c> 오스트트루펜 분대"
 
 msgctxt "desc/squad/squad_pionier(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pionier_con(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pionier_early(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pionier_late(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_con"
 msgid "<c(A5A095)>(2)</c> Armored Pz-Pionier squad"
-msgstr "<c(A5A095)>(2)</c> 기갑 판처피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑 기갑공병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_302_con(ger)"
 msgid "Pz-Pionier team (Goliath)"
-msgstr "판처피오니어 조 (골리앗)"
+msgstr "기갑공병 조 (골리앗)"
 
 msgctxt "desc/squad/squad_pz_pio_303b_con(ger)"
 msgid "Pz-Pionier team (Goliath)"
-msgstr "판처피오니어 조 (골리앗)"
+msgstr "기갑공병 조 (골리앗)"
 
 msgctxt "desc/squad/squad_pzgrenadiere_gd_late(ger)"
 msgid "<c(A5A095)>(4)</c> Großdeutschland Panzergrenadier squad"
-msgstr "<c(A5A095)>(4)</c> 그로스도이칠란트 판처그레나디어 분대"
+msgstr "<c(A5A095)>(4)</c> 그로스도이칠란트 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pzgrenadiere_late(ger)"
 msgid "<c(A5A095)>(2)</c> Panzergrenadier squad"
-msgstr "<c(A5A095)>(2)</c> 판처그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_recon(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_recon_armor_con"
 msgid "<c(A5A095)>(2)</c> Armored Aufklärer squad"
-msgstr "<c(A5A095)>(2)</c> 기갑 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑 정찰병 분대"
 
 msgctxt "desc/squad/squad_recon_con(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_recon_early(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_recon_late(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_recon_motor_con"
 msgid "<c(A5A095)>(2)</c> Motorized Aufklärer squad"
-msgstr "<c(A5A095)>(2)</c> 차량화 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 차량화 정찰병 분대"
 
 msgctxt "desc/squad/squad_regular(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle squad"
@@ -363,23 +363,23 @@ msgstr "슈토스트루프"
 
 msgctxt "desc/squad/squad_strafbatallion(ger)"
 msgid "<c(A5A095)>(1)</c> Strafbatallion squad"
-msgstr "<c(A5A095)>(1)</c> 슈트라프바탈리온 분대"
+msgstr "<c(A5A095)>(1)</c> 징벌대대 분대"
 
 msgctxt "desc/squad/squad_strafbatallion_con(ger)"
 msgid "<c(A5A095)>(1)</c> Strafbatallion squad"
-msgstr "<c(A5A095)>(1)</c> 슈트라프바탈리온 분대"
+msgstr "<c(A5A095)>(1)</c> 징벌대대 분대"
 
 msgctxt "desc/squad/squad_sturm(ger)"
 msgid "Sturmgrenadiere"
-msgstr "슈투름그레나디어"
+msgstr "돌격척탄병"
 
 msgctxt "desc/squad/squad_sturmpionier(ger)"
 msgid "Sturmpioniere"
-msgstr "슈투름피오니어"
+msgstr "돌격공병"
 
 msgctxt "desc/squad/squad_volkssturm(ger)"
 msgid "Volkssturm"
-msgstr "폴크스슈투름"
+msgstr "국민돌격대"
 
 msgctxt "desc/squad/single_rifle(ger)"
 msgid "Rifleman"
@@ -399,7 +399,7 @@ msgstr "<c(A5A095)>(1)</c> 에어자츠 소총 분대"
 
 msgctxt "desc/squad/squad_recon_early_all(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_rifle_early_all(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
@@ -423,23 +423,23 @@ msgstr "<c(A5A095)>(3+)</c> 정예 소총 분대"
 
 msgctxt "desc/squad/squad_gebirgs_pio_early_all(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgspionier Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> 산악공병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_recon_early_all(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> 산악정찰병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_early_all(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_landwehr_early_def(ger)"
 msgid "<c(A5A095)>(1)</c> Landwehr Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> 란트베어 소총 분대"
+msgstr "<c(A5A095)>(1)</c> 향토방위대 소총 분대"
 
 msgctxt "desc/squad/squad_recon_early_def(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_feldg_early_def_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Feldgendarmerie Squad"
@@ -455,15 +455,15 @@ msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 펠트겐다르메리 분대"
 
 msgctxt "desc/squad/squad_pio_early_def_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pio_early_def_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pio_early_def_3(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_at_rifle_early_def(ger)"
 msgid "<c(A5A095)>(2)</c> AT-Rifle Squad"
@@ -475,7 +475,7 @@ msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 소총 분대"
 
 msgctxt "desc/squad/squad_gebirgs_early_def(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_rifle_early_irr(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz Rifle Squad"
@@ -483,7 +483,7 @@ msgstr "<c(A5A095)>(1)</c> 에어자츠 소총 분대"
 
 msgctxt "desc/squad/squad_luft_rifle_early_irr(ger)"
 msgid "<c(A5A095)>(2)</c> Luftwaffe Rifle Squad"
-msgstr "<c(A5A095)>(2)</c> 루프트바페 소총 분대"
+msgstr "<c(A5A095)>(2)</c> 공군 소총 분대"
 
 msgctxt "desc/squad/squad_rifle_early_irr(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
@@ -499,39 +499,39 @@ msgstr "<c(A5A095)>(3)</c> 마리네 슈토스트루프 분대"
 
 msgctxt "desc/squad/squad_fallschirm_recon_early_irr(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> 강하정찰병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_pio_early_irr(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmpionier Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> 강하공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_early_irr(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_pz_recon_early_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzeraufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 판처아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑정찰병 분대"
 
 msgctxt "desc/squad/squad_pz_rifle_early_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzerschütze Squad"
-msgstr "<c(A5A095)>(2)</c> 판처쉬첸 분대"
+msgstr "<c(A5A095)>(2)</c> 전차병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_early_off_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Panzerpionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 판처피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기갑공병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_early_off_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Panzerpionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 판처피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기갑공병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_early_off_3(ger)"
 msgid "<c(A5A095)>(2)</c> Panzerpionier Squad"
-msgstr "<c(A5A095)>(2)</c> 판처피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑공병 분대"
 
 msgctxt "desc/squad/squad_gd_pio_early_off(ger)"
 msgid "<c(A5A095)>(3+)</c> Großdeutschland Pionier Squad"
-msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 피오니어 분대"
+msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 공병 분대"
 
 msgctxt "desc/squad/squad_gd_early_off(ger)"
 msgid "<c(A5A095)>(3+)</c> Großdeutschland Rifle Squad"
@@ -539,7 +539,7 @@ msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 소총 분대"
 
 msgctxt "desc/squad/squad_gebirgs_early_off(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_rifle_early_sup(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz Rifle Squad"
@@ -547,7 +547,7 @@ msgstr "<c(A5A095)>(1)</c> 에어자츠 소총 분대"
 
 msgctxt "desc/squad/squad_km_rifle_early_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Kriegsmarine Rifle Squad"
-msgstr "<c(A5A095)>(2)</c> 크릭스마리네 소총 분대"
+msgstr "<c(A5A095)>(2)</c> 해군 소총 분대"
 
 msgctxt "desc/squad/squad_at_rifle_early_sup(ger)"
 msgid "<c(A5A095)>(2)</c> AT-Rifle Squad"
@@ -563,15 +563,15 @@ msgstr "<c(A5A095)>(3)</c> 마리네 슈토스트루프 분대"
 
 msgctxt "desc/squad/squad_gebirgs_recon_early_sup(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> 산악정찰병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_pio_early_sup(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgspionier Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> 산악공병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_early_sup(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_rifle_mid_all(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz Rifle Squad"
@@ -579,7 +579,7 @@ msgstr "<c(A5A095)>(1)</c> 에어자츠 소총 분대"
 
 msgctxt "desc/squad/squad_recon_mid_all(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_all(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
@@ -607,11 +607,11 @@ msgstr "<c(A5A095)>(3+)</c> 정예 소총 분대"
 
 msgctxt "desc/squad/squad_gebirgs_recon_mid_all(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> 산악정찰병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_mid_all(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_ost_rifle_mid_def(ger)"
 msgid "<c(A5A095)>(1)</c> Osttruppen Rifle Squad"
@@ -619,7 +619,7 @@ msgstr "<c(A5A095)>(1)</c> 오스트트루펜 소총 분대"
 
 msgctxt "desc/squad/squad_recon_mid_def(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_def(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
@@ -627,19 +627,19 @@ msgstr "<c(A5A095)>(2)</c> 소총 분대"
 
 msgctxt "desc/squad/squad_pio_mid_def_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pio_mid_def_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 공병 분대"
 
 msgctxt "desc/squad/squad_pio_mid_def_3(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_sturm_pio_mid_def(ger)"
 msgid "<c(A5A095)>(3)</c> Sturmpionier Squad"
-msgstr "<c(A5A095)>(3)</c> 슈투름피오니어 분대"
+msgstr "<c(A5A095)>(3)</c> 돌격공병 분대"
 
 msgctxt "desc/squad/squad_blau_mid_def(ger)"
 msgid "<c(A5A095)>(4)</c> Blau Div. Rifle Squad"
@@ -655,19 +655,19 @@ msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 소총 분대"
 
 msgctxt "desc/squad/squad_straf_mid_irr_1(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>1.</c> Strafbataillon Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 슈트라프바탈리온 소총 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 징벌대대 소총 분대"
 
 msgctxt "desc/squad/squad_straf_mid_irr_2(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> Strafbataillon Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 슈트라프바탈리온 소총 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 징벌대대 소총 분대"
 
 msgctxt "desc/squad/squad_straf_mid_irr_3(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>3.</c> Strafbataillon Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>3.</c> 슈트라프바탈리온 소총 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>3.</c> 징벌대대 소총 분대"
 
 msgctxt "desc/squad/squad_recon_mid_irr(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_irr(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
@@ -675,19 +675,19 @@ msgstr "<c(A5A095)>(2)</c> 소총 분대"
 
 msgctxt "desc/squad/squad_sturm_pio_mid_irr(ger)"
 msgid "<c(A5A095)>(3)</c> Sturmpionier Squad"
-msgstr "<c(A5A095)>(3)</c> 슈투름피오니어 분대"
+msgstr "<c(A5A095)>(3)</c> 돌격공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_recon_mid_irr(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> 강하정찰병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_pio_mid_irr(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmpionier Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> 강하공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_mid_irr(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_rifle_mid_off(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz Rifle Squad"
@@ -695,23 +695,23 @@ msgstr "<c(A5A095)>(1)</c> 에어자츠 소총 분대"
 
 msgctxt "desc/squad/squad_pz_recon_mid_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzeraufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 판처아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑정찰병 분대"
 
 msgctxt "desc/squad/squad_pz_rifle_mid_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzerschütze Squad"
-msgstr "<c(A5A095)>(2)</c> 판처쉬첸 분대"
+msgstr "<c(A5A095)>(2)</c> 전차병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_mid_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzerpionier Squad"
-msgstr "<c(A5A095)>(2)</c> 판처피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑공병 분대"
 
 msgctxt "desc/squad/squad_pz_rifle_vet_mid_off(ger)"
 msgid "<c(A5A095)>(2+)</c> Veteran Panzerschütze Squad"
-msgstr "<c(A5A095)>(2+)</c> 베테랑 판처쉬첸 분대"
+msgstr "<c(A5A095)>(2+)</c> 베테랑 전차병 분대"
 
 msgctxt "desc/squad/squad_gd_pio_mid_off(ger)"
 msgid "<c(A5A095)>(3+)</c> Großdeutschland Pionier Squad"
-msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 피오니어 분대"
+msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 공병 분대"
 
 msgctxt "desc/squad/squad_gd_mid_off(ger)"
 msgid "<c(A5A095)>(3+)</c> Großdeutschland Rifle Squad"
@@ -719,7 +719,7 @@ msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 소총 분대"
 
 msgctxt "desc/squad/squad_fallschirm_mid_off(ger)"
 msgid "<c(A5A095)>(4)</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_rifle_mid_sup(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz Rifle Squad"
@@ -727,7 +727,7 @@ msgstr "<c(A5A095)>(1)</c> 에어자츠 소총 분대"
 
 msgctxt "desc/squad/squad_recon_mid_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_rifle_mid_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Rifle Squad"
@@ -739,43 +739,43 @@ msgstr "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
 
 msgctxt "desc/squad/squad_gebirgs_pio_mid_sup(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgspionier Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> 산악공병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_mid_sup(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_gren_late_all(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz-Grenadier Squad"
-msgstr "<c(A5A095)>(1)</c> 에어자츠 그레나디어 분대"
+msgstr "<c(A5A095)>(1)</c> 에어자츠 척탄병 분대"
 
 msgctxt "desc/squad/squad_volksg_late_all(ger)"
 msgid "<c(A5A095)>(2)</c> Volksgrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 폭스그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 국민척탄병 분대"
 
 msgctxt "desc/squad/squad_volksg_sturm_late_all_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Volksg. Sturm Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 폭스그레나디어 슈투름 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 국민척탄병 돌격 분대"
 
 msgctxt "desc/squad/squad_volksg_sturm_late_all_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Volksg. Sturm Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 폭스그레나디어 슈투름 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 국민척탄병 돌격 분대"
 
 msgctxt "desc/squad/squad_volksg_sturm_late_all_3(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Volksg. Sturm Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 폭스그레나디어 슈투름 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 국민척탄병 돌격 분대"
 
 msgctxt "desc/squad/squad_volksg_h_sturm_late_all_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Volksg. Heavy Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 폭스그레나디어 중무장 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 국민척탄병 중무장 분대"
 
 msgctxt "desc/squad/squad_volksg_h_sturm_late_all_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Volksg. Heavy Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 폭스그레나디어 중무장 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 국민척탄병 중무장 분대"
 
 msgctxt "desc/squad/squad_volksg_h_sturm_late_all_3(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Volksg. Heavy Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 폭스그레나디어 중무장 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 국민척탄병 중무장 분대"
 
 msgctxt "desc/squad/squad_fus_smg_late_all_1(ger)"
 msgid "<c(A5A095)>(3)</c> <c(E56042)>1.</c> Füsilier SMG Squad"
@@ -791,71 +791,71 @@ msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 퓌질리어 기관단총 분대"
 
 msgctxt "desc/squad/squad_jager_late_all(ger)"
 msgid "<c(A5A095)>(3)</c> Jäger Squad"
-msgstr "<c(A5A095)>(3)</c> 예거 분대"
+msgstr "<c(A5A095)>(3)</c> 엽병 분대"
 
 msgctxt "desc/squad/squad_jager_late_irr(ger)"
 msgid "<c(A5A095)>(3)</c> Jäger Squad"
-msgstr "<c(A5A095)>(3)</c> 예거 분대"
+msgstr "<c(A5A095)>(3)</c> 엽병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_recon_late_all_1(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Gebirgsaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 게비르크스아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 산악정찰병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_recon_late_all_2(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Gebirgsaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 게비르크스아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 산악정찰병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_recon_late_all_3(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Gebirgsaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 게비르크스아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 산악정찰병 분대"
 
 msgctxt "desc/squad/squad_gebirgs_late_all(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_volkssturm_late_def_1(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>1.</c> Volkssturm Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 폴크스슈투름 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 국민돌격대 분대"
 
 msgctxt "desc/squad/squad_volkssturm_late_def_2(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> Volkssturm Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 폴크스슈투름 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 국민돌격대 분대"
 
 msgctxt "desc/squad/squad_volkssturm_late_def_3(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>3.</c> Volkssturm Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>3.</c> 폴크스슈투름 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>3.</c> 국민돌격대 분대"
 
 msgctxt "desc/squad/squad_km_late_def_1(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>1.</c> Kriegsmarine Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 크릭스마리네 소총 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 해군 소총 분대"
 
 msgctxt "desc/squad/squad_km_late_def_2(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> Kriegsmarine Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 크릭스마리네 소총 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 해군 소총 분대"
 
 msgctxt "desc/squad/squad_km_late_def_3(ger)"
 msgid "<c(A5A095)>(1)</c> <c(E56042)>3.</c> Kriegsmarine Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> <c(E56042)>3.</c> 크릭스마리네 소총 분대"
+msgstr "<c(A5A095)>(1)</c> <c(E56042)>3.</c> 해군 소총 분대"
 
 msgctxt "desc/squad/squad_gren_late_def(ger)"
 msgid "<c(A5A095)>(2)</c> Grenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 척탄병 분대"
 
 msgctxt "desc/squad/squad_pzgren_late_def_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> Panzergrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 판처그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pzgren_late_def_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> Panzergrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 판처그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pzgren_late_def_3(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> Panzergrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 판처그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pio_late_def(ger)"
 msgid "<c(A5A095)>(2)</c> Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 공병 분대"
 
 msgctxt "desc/squad/squad_fusilier_late_def_1(ger)"
 msgid "<c(A5A095)>(3)</c> Füsilier Squad"
@@ -871,7 +871,7 @@ msgstr "<c(A5A095)>(3)</c> <c(E56042)>3.</c> 퓌질리어 분대"
 
 msgctxt "desc/squad/squad_gebirgs_late_def(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_lw_fusilier_late_irr(ger)"
 msgid "<c(A5A095)>(1)</c> LW. Füsilier Squad"
@@ -879,103 +879,103 @@ msgstr "<c(A5A095)>(1)</c> LW. 퓌질리어 분대"
 
 msgctxt "desc/squad/squad_lw_recon_late_irr(ger)"
 msgid "<c(A5A095)>(2)</c> LW. Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> LW. 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> LW. 정찰병 분대"
 
 msgctxt "desc/squad/squad_lw_jager_late_irr_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> LW. Jäger Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> LW. 예거 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> LW. 엽병 분대"
 
 msgctxt "desc/squad/squad_lw_jager_late_irr_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> LW. Jäger Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> LW. 예거 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> LW. 엽병 분대"
 
 msgctxt "desc/squad/squad_lw_jager_late_irr_3(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>3.</c> LW. Jäger Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> LW. 예거 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>3.</c> LW. 엽병 분대"
 
 msgctxt "desc/squad/squad_lw_pio_late_irr_1(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> LW. Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> LW. 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>1.</c> LW. 공병 분대"
 
 msgctxt "desc/squad/squad_lw_pio_late_irr_2(ger)"
 msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> LW. Pionier Squad"
-msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> LW. 피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> LW. 공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_recon_late_irr_1(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Fallschirmaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 팔쉬름아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 강하정찰병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_recon_late_irr_2(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Fallschirmaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 팔쉬름아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 강하정찰병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_recon_late_irr_3(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Fallschirmaufklärer Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 팔쉬름아우프클레러 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 강하정찰병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_pio_late_irr_1(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Fallschirmpionier Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 팔쉬름피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 강하공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_pio_late_irr_2(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Fallschirmpionier Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 팔쉬름피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 강하공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_pio_late_irr_3(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Fallschirmpionier Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 팔쉬름피오니어 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 강하공병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_late_irr_1(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_late_irr_2(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_late_irr_3(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>3.</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>3.</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_pz_recon_late_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzeraufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 판처아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑정찰병 분대"
 
 msgctxt "desc/squad/squad_pzgren_late_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzergrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 판처그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pz_sturmgren_late_off(ger)"
 msgid "<c(A5A095)>(2)</c> Pz.Sturmgrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 판처슈투름그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑돌격척탄병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_late_off(ger)"
 msgid "<c(A5A095)>(2)</c> Panzerpionier Squad"
-msgstr "<c(A5A095)>(2)</c> 판처피오니어 분대"
+msgstr "<c(A5A095)>(2)</c> 기갑공병 분대"
 
 msgctxt "desc/squad/squad_begleitgren_late_off(ger)"
 msgid "<c(A5A095)>(3)</c> Begleitgrenadier Squad"
-msgstr "<c(A5A095)>(3)</c> 베글라이트그레나디어 분대"
+msgstr "<c(A5A095)>(3)</c> 호위척탄병 분대"
 
 msgctxt "desc/squad/squad_sturmjager_late_off(ger)"
 msgid "<c(A5A095)>(3)</c> Sturmjäger Squad"
-msgstr "<c(A5A095)>(3)</c> 슈투름예거 분대"
+msgstr "<c(A5A095)>(3)</c> 돌격엽병 분대"
 
 msgctxt "desc/squad/squad_pz_pio_gd_late_off(ger)"
 msgid "<c(A5A095)>(3+)</c> Großdeutschland Pz.Pionier Squad"
-msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 판처피오니어 분대"
+msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 기갑공병 분대"
 
 msgctxt "desc/squad/squad_pzgren_gd_late_off(ger)"
 msgid "<c(A5A095)>(3+)</c> Großdeutschland Pz.Gren Squad"
-msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 판처그렌 분대"
+msgstr "<c(A5A095)>(3+)</c> 그로스도이칠란트 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_late_off_1(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_fallschirm_late_off_2(ger)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> Fallschirmjäger Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 팔쉬름예거 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 강하엽병 분대"
 
 msgctxt "desc/squad/squad_landes_late_sup(ger)"
 msgid "<c(A5A095)>(1)</c> Landesschütze Rifle Squad"
@@ -983,60 +983,60 @@ msgstr "<c(A5A095)>(1)</c> 란데스쉬체 소총 분대"
 
 msgctxt "desc/squad/squad_recon_late_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Aufklärer Squad"
-msgstr "<c(A5A095)>(2)</c> 아우프클레러 분대"
+msgstr "<c(A5A095)>(2)</c> 정찰병 분대"
 
 msgctxt "desc/squad/squad_gren_late_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Grenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 척탄병 분대"
 
 msgctxt "desc/squad/squad_sturmgren_late_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Sturmgrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 슈투름그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 돌격척탄병 분대"
 
 msgctxt "desc/squad/squad_h_sturmgren_late_sup(ger)"
 msgid "<c(A5A095)>(2)</c> Heavy Sturmgrenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 중무장 슈투름그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 중무장 돌격척탄병 분대"
 
 msgctxt "desc/squad/squad_begleit_pio_late_sup(ger)"
 msgid "<c(A5A095)>(3)</c> Begleitpionier Squad"
-msgstr "<c(A5A095)>(3)</c> 베글라이트피오니어 분대"
+msgstr "<c(A5A095)>(3)</c> 호위공병 분대"
 
 msgctxt "desc/squad/squad_begleit_sturm_late_sup(ger)"
 msgid "<c(A5A095)>(3)</c> Begleitgrenadier Sturm Squad"
-msgstr "<c(A5A095)>(3)</c> 베글라이트그레나디어 슈투름 분대"
+msgstr "<c(A5A095)>(3)</c> 호위척탄병 돌격 분대"
 
 msgctxt "desc/squad/squad_gebirgs_late_sup(ger)"
 msgid "<c(A5A095)>(4)</c> Gebirgsjäger Squad"
-msgstr "<c(A5A095)>(4)</c> 게비르크스예거 분대"
+msgstr "<c(A5A095)>(4)</c> 산악엽병 분대"
 
 msgctxt "desc/squad/squad_ersatz_gren_late_all2(ger)"
 msgid "<c(A5A095)>(1)</c> Ersatz-Grenadier Squad"
-msgstr "<c(A5A095)>(1)</c> 에어자츠 그레나디어 분대"
+msgstr "<c(A5A095)>(1)</c> 에어자츠 척탄병 분대"
 
 msgctxt "desc/squad/squad_gren_late_all2(ger)"
 msgid "<c(A5A095)>(2)</c> Grenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 척탄병 분대"
 
 msgctxt "desc/squad/squad_pzlehr_recon_late_all2(ger)"
 msgid "<c(A5A095)>(3+)</c> Pz-Lehr Pz.Aufklärer Squad"
-msgstr "<c(A5A095)>(3+)</c> 판처 레어 판처아우프클레러 분대"
+msgstr "<c(A5A095)>(3+)</c> 기갑교도 기갑정찰병 분대"
 
 msgctxt "desc/squad/squad_pzlehr_pio_late_all2(ger)"
 msgid "<c(A5A095)>(3+)</c> Pz-Lehr Pz.Pionier Squad"
-msgstr "<c(A5A095)>(3+)</c> 판처 레어 판처피오니어 분대"
+msgstr "<c(A5A095)>(3+)</c> 기갑교도 기갑공병 분대"
 
 msgctxt "desc/squad/squad_pzlehr_pzgren_late_all2(ger)"
 msgid "<c(A5A095)>(3+)</c> Pz-Lehr Pz.Gren Squad"
-msgstr "<c(A5A095)>(3+)</c> 판처 레어 판처그렌 분대"
+msgstr "<c(A5A095)>(3+)</c> 기갑교도 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pzlehr_pzgren_late_mech_all2(ger)"
 msgid "<c(A5A095)>(3+)</c> Pz-Lehr Armored Pz.Gren Squad"
-msgstr "<c(A5A095)>(3+)</c> 판처 레어 기갑 판처그렌 분대"
+msgstr "<c(A5A095)>(3+)</c> 기갑교도 기갑 기갑척탄병 분대"
 
 msgctxt "desc/squad/squad_pzlehr_pz_sturmgren_late_all2(ger)"
 msgid "<c(A5A095)>(3+)</c> Pz-Lehr Pz.Sturmgrenadier Squad"
-msgstr "<c(A5A095)>(3+)</c> 판처 레어 판처슈투름그레나디어 분대"
+msgstr "<c(A5A095)>(3+)</c> 기갑교도 기갑돌격척탄병 분대"
 
 msgctxt "desc/squad/squad_pzlehr_pz_sturmgren_late_mech_all2(ger)"
 msgid "<c(A5A095)>(3+)</c> Pz-Lehr Armored Pz.Sturmgrenadier Squad"
-msgstr "<c(A5A095)>(3+)</c> 판처 레어 기갑 판처슈투름그레나디어 분대"
+msgstr "<c(A5A095)>(3+)</c> 기갑교도 기갑 기갑돌격척탄병 분대"

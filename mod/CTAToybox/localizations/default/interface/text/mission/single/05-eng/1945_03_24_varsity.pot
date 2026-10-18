@@ -413,7 +413,7 @@ msgid "기갑 하나 더 처치!"
 msgstr ""
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_06"
-msgid "판처 한 대 더 격파!"
+msgid "전차 한 대 더 격파!"
 msgstr ""
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_07"

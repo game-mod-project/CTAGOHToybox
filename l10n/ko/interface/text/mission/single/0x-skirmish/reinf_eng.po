@@ -79,7 +79,7 @@ msgstr "제51 공병 건설대"
 
 msgctxt "mission/single/0x-skirmish/menu_eng/comgren"
 msgid "Commando grenadier"
-msgstr "코만도 그레나디어"
+msgstr "코만도 척탄병"
 
 msgctxt "mission/single/0x-skirmish/menu_eng/signaller"
 msgid "Battery signaller"

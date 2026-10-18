@@ -16,276 +16,276 @@ msgstr ""
 
 msgctxt "desc/human/mp/ger/late/lw_flak_crew"
 msgid "Flak crew [Luftwaffe]"
-msgstr "Flak 승무원 [루프트바페]"
+msgstr "Flak 승무원 [공군]"
 
 msgctxt "desc/human/mp/ger/late/lw_flak_nco"
 msgid "Flak crew Squadleader [Luftwaffe]"
-msgstr "Flak 승무원 분대장 [루프트바페]"
+msgstr "Flak 승무원 분대장 [공군]"
 
 msgctxt "desc/human/mp/ger/late/lw_flak_rifle"
 msgid "Flak crew [Luftwaffe]"
-msgstr "Flak 승무원 [루프트바페]"
+msgstr "Flak 승무원 [공군]"
 
 msgctxt "desc/human/mp/ger/late/waffen_arty"
 msgid "Artilleryman [Waffen --]"
-msgstr "포병 [바펜 --]"
+msgstr "포병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_mg"
 msgid "Grenadier MG Operator [Waffen --]"
-msgstr "그레나디어 기관총 사수 [바펜 --]"
+msgstr "척탄병 기관총 사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_mg_asst"
 msgid "Grenadier MG Asst. [Waffen --]"
-msgstr "그레나디어 기관총 부사수 [바펜 --]"
+msgstr "척탄병 기관총 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_rifle"
 msgid "Grenadier [Waffen --]"
-msgstr "그레나디어 [바펜 --]"
+msgstr "척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_rifle_gren"
 msgid "Grenadier [Waffen --]"
-msgstr "그레나디어 [바펜 --]"
+msgstr "척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_rifle_pzf"
 msgid "Grenadier [Waffen --]"
-msgstr "그레나디어 [바펜 --]"
+msgstr "척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_sa"
 msgid "Grenadier [Waffen --]"
-msgstr "그레나디어 [바펜 --]"
+msgstr "척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_sl"
 msgid "Grenadier Gruppenführer [Waffen --]"
-msgstr "그레나디어 Gruppenführer [바펜 --]"
+msgstr "척탄병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_sl_asst"
 msgid "Grenadier Asst. [Waffen --]"
-msgstr "그레나디어 부사수 [바펜 --]"
+msgstr "척탄병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_sl_asst_sa_scope"
 msgid "Grenadier Asst. (Sniper) [Waffen --]"
-msgstr "그레나디어 부사수 (저격수) [바펜 --]"
+msgstr "척탄병 부사수 (저격수) [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_sl_asst_smg"
 msgid "Grenadier Asst. [Waffen --]"
-msgstr "그레나디어 부사수 [바펜 --]"
+msgstr "척탄병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_smg"
 msgid "Grenadier [Waffen --]"
-msgstr "그레나디어 [바펜 --]"
+msgstr "척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_gren_stg"
 msgid "Grenadier [Waffen --]"
-msgstr "그레나디어 [바펜 --]"
+msgstr "척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_medic"
 msgid "Medic [Waffen --]"
-msgstr "위생병 [바펜 --]"
+msgstr "위생병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_mg_crew"
 msgid "MG Crew [Waffen --]"
-msgstr "기관총 승무원 [바펜 --]"
+msgstr "기관총 승무원 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_mg_crew_asst"
 msgid "MG crew Asst. [Waffen --]"
-msgstr "기관총 승무원 부사수 [바펜 --]"
+msgstr "기관총 승무원 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_nco_plt"
 msgid "Oberscharführer [Waffen --]"
-msgstr "Oberscharführer [바펜 --]"
+msgstr "Oberscharführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_officer_bat"
 msgid "Sturmbannführer [Waffen --]"
-msgstr "Sturmbannführer [바펜 --]"
+msgstr "Sturmbannführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_officer_coy"
 msgid "Hauptsturmführer [Waffen --]"
-msgstr "Hauptsturmführer [바펜 --]"
+msgstr "Hauptsturmführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_officer_plt"
 msgid "Untersturmführer [Waffen --]"
-msgstr "Untersturmführer [바펜 --]"
+msgstr "Untersturmführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_flame"
 msgid "Panzerpionier Flamer [Waffen --]"
-msgstr "판처피오니어 화염방사병 [바펜 --]"
+msgstr "기갑공병 화염방사병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_mg"
 msgid "Panzerpionier MG Operator [Waffen --]"
-msgstr "판처피오니어 기관총 사수 [바펜 --]"
+msgstr "기갑공병 기관총 사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_mg_asst"
 msgid "Panzerpionier MG Asst. [Waffen --]"
-msgstr "판처피오니어 기관총 부사수 [바펜 --]"
+msgstr "기갑공병 기관총 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_mine"
 msgid "Panzerpionier Miner [Waffen --]"
-msgstr "판처피오니어 지뢰병 [바펜 --]"
+msgstr "기갑공병 지뢰병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_rifle"
 msgid "Panzerpionier [Waffen --]"
-msgstr "판처피오니어 [바펜 --]"
+msgstr "기갑공병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_rifle_pzf"
 msgid "Panzerpionier [Waffen --]"
-msgstr "판처피오니어 [바펜 --]"
+msgstr "기갑공병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_sa"
 msgid "Panzerpionier [Waffen --]"
-msgstr "판처피오니어 [바펜 --]"
+msgstr "기갑공병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_sl"
 msgid "Panzerpionier Gruppenführer [Waffen --]"
-msgstr "판처피오니어 Gruppenführer [바펜 --]"
+msgstr "기갑공병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_pio_sl_asst"
 msgid "Panzerpionier Asst. [Waffen --]"
-msgstr "판처피오니어 부사수 [바펜 --]"
+msgstr "기갑공병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_mg"
 msgid "Panzer Aufklärer MG Operator [Waffen --]"
-msgstr "판처 아우프클레러 기관총 사수 [바펜 --]"
+msgstr "기갑 정찰병 기관총 사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_mg_asst"
 msgid "Panzer Aufklärer MG Asst. [Waffen --]"
-msgstr "판처 아우프클레러 기관총 부사수 [바펜 --]"
+msgstr "기갑 정찰병 기관총 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_rifle"
 msgid "Panzer Aufklärer [Waffen --]"
-msgstr "판처 아우프클레러 [바펜 --]"
+msgstr "기갑 정찰병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_sa"
 msgid "Panzer Aufklärer [Waffen --]"
-msgstr "판처 아우프클레러 [바펜 --]"
+msgstr "기갑 정찰병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_sl"
 msgid "Panzer Aufklärer Gruppenführer [Waffen --]"
-msgstr "판처 아우프클레러 Gruppenführer [바펜 --]"
+msgstr "기갑 정찰병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_sl_asst_rifle"
 msgid "Panzer Aufklärer Asst. [Waffen --]"
-msgstr "판처 아우프클레러 부사수 [바펜 --]"
+msgstr "기갑 정찰병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_sl_asst_sa"
 msgid "Panzer Aufklärer Asst. [Waffen --]"
-msgstr "판처 아우프클레러 부사수 [바펜 --]"
+msgstr "기갑 정찰병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pz_recon_sl_asst_stg"
 msgid "Panzer Aufklärer Asst. [Waffen --]"
-msgstr "판처 아우프클레러 부사수 [바펜 --]"
+msgstr "기갑 정찰병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_at"
 msgid "Panzergrenadier AT Inf. [Waffen --]"
-msgstr "판처그레나디어 대전차 보병 [바펜 --]"
+msgstr "기갑척탄병 대전차 보병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_mg"
 msgid "Panzergrenadier MG Operator [Waffen --]"
-msgstr "판처그레나디어 기관총 사수 [바펜 --]"
+msgstr "기갑척탄병 기관총 사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_mg_asst"
 msgid "Panzergrenadier MG Asst. [Waffen --]"
-msgstr "판처그레나디어 기관총 부사수 [바펜 --]"
+msgstr "기갑척탄병 기관총 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_rifle"
 msgid "Panzergrenadier [Waffen --]"
-msgstr "판처그레나디어 [바펜 --]"
+msgstr "기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_rifle_pzf"
 msgid "Panzergrenadier [Waffen --]"
-msgstr "판처그레나디어 [바펜 --]"
+msgstr "기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_sa"
 msgid "Panzergrenadier [Waffen --]"
-msgstr "판처그레나디어 [바펜 --]"
+msgstr "기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_sa_pzf"
 msgid "Panzergrenadier [Waffen --]"
-msgstr "판처그레나디어 [바펜 --]"
+msgstr "기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_sl"
 msgid "Panzergrenadier Gruppenführer [Waffen --]"
-msgstr "판처그레나디어 Gruppenführer [바펜 --]"
+msgstr "기갑척탄병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_sl_stg"
 msgid "Panzergrenadier Gruppenführer [Waffen --]"
-msgstr "판처그레나디어 Gruppenführer [바펜 --]"
+msgstr "기갑척탄병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_sl_asst"
 msgid "Panzergrenadier Asst. [Waffen --]"
-msgstr "판처그레나디어 부사수 [바펜 --]"
+msgstr "기갑척탄병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_sl_asst_stg"
 msgid "Panzergrenadier Asst. [Waffen --]"
-msgstr "판처그레나디어 부사수 [바펜 --]"
+msgstr "기갑척탄병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_pzgren_stg"
 msgid "Panzergrenadier [Waffen --]"
-msgstr "판처그레나디어 [바펜 --]"
+msgstr "기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_sniper"
 msgid "Sniper [Waffen --]"
-msgstr "저격수 [바펜 --]"
+msgstr "저격수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_tank_commander"
 msgid "Tank commander [Waffen --]"
-msgstr "전차 지휘관 [바펜 --]"
+msgstr "전차 지휘관 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_tank_commander_aufklar"
 msgid "Tank commander [Waffen --]"
-msgstr "전차 지휘관 [바펜 --]"
+msgstr "전차 지휘관 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_tank_commander_stug"
 msgid "Tank commander [Waffen --]"
-msgstr "전차 지휘관 [바펜 --]"
+msgstr "전차 지휘관 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_tankman"
 msgid "Tankman [Waffen --]"
-msgstr "전차병 [바펜 --]"
+msgstr "전차병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_tankman_aufklar"
 msgid "Tankman [Waffen --]"
-msgstr "전차병 [바펜 --]"
+msgstr "전차병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_tankman_stug"
 msgid "Tankman [Waffen --]"
-msgstr "전차병 [바펜 --]"
+msgstr "전차병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_mg"
 msgid "Veteran Panzergrenadier MG Operator [Waffen --]"
-msgstr "베테랑 판처그레나디어 기관총 사수 [바펜 --]"
+msgstr "베테랑 기갑척탄병 기관총 사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_mg_asst"
 msgid "Veteran Panzergrenadier MG Asst. [Waffen --]"
-msgstr "베테랑 판처그레나디어 기관총 부사수 [바펜 --]"
+msgstr "베테랑 기갑척탄병 기관총 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_rifle"
 msgid "Veteran Panzergrenadier [Waffen --]"
-msgstr "베테랑 판처그레나디어 [바펜 --]"
+msgstr "베테랑 기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_rifle_pzf"
 msgid "Veteran Panzergrenadier [Waffen --]"
-msgstr "베테랑 판처그레나디어 [바펜 --]"
+msgstr "베테랑 기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_sa"
 msgid "Veteran Panzergrenadier [Waffen --]"
-msgstr "베테랑 판처그레나디어 [바펜 --]"
+msgstr "베테랑 기갑척탄병 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_sl"
 msgid "Veteran Panzergrenadier Gruppenführer [Waffen --]"
-msgstr "베테랑 판처그레나디어 Gruppenführer [바펜 --]"
+msgstr "베테랑 기갑척탄병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_sl_stg"
 msgid "Veteran Panzergrenadier Gruppenführer [Waffen --]"
-msgstr "베테랑 판처그레나디어 Gruppenführer [바펜 --]"
+msgstr "베테랑 기갑척탄병 Gruppenführer [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_sl_asst"
 msgid "Veteran Panzergrenadier Asst. [Waffen --]"
-msgstr "베테랑 판처그레나디어 부사수 [바펜 --]"
+msgstr "베테랑 기갑척탄병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_sl_asst_stg"
 msgid "Veteran Panzergrenadier Asst. [Waffen --]"
-msgstr "베테랑 판처그레나디어 부사수 [바펜 --]"
+msgstr "베테랑 기갑척탄병 부사수 [무장친위대 --]"
 
 msgctxt "desc/human/mp/ger/late/waffen_vet_pzgren_stg"
 msgid "Veteran Panzergrenadier [Waffen --]"
-msgstr "베테랑 판처그레나디어 [바펜 --]"
+msgstr "베테랑 기갑척탄병 [무장친위대 --]"

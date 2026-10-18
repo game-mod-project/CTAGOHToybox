@@ -83,7 +83,7 @@ msgstr "임무 실패!"
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/outro_failed_hq"
 msgid "The soviets managed to launch a successful counterattack that pushed the Wehrmacht further back than the starting positions of Operation Typhoon. In spite of all efforts, the Germans were unable to enter the Soviet capital. After learning the harsh lessons of the Soviet winter, German high command shifted focus to the next summer offensive."
-msgstr "소련군은 반격에 성공해 베어마흐트를 타이푼 작전의 출발선보다 더 뒤로 밀어냈다. 온갖 노력에도 독일군은 소련 수도에 진입하지 못했다. 소련의 혹독한 겨울을 뼈저리게 배운 독일군 최고사령부는 다음 해 여름 공세로 눈을 돌렸다."
+msgstr "소련군은 반격에 성공해 국방군을 타이푼 작전의 출발선보다 더 뒤로 밀어냈다. 온갖 노력에도 독일군은 소련 수도에 진입하지 못했다. 소련의 혹독한 겨울을 뼈저리게 배운 독일군 최고사령부는 다음 해 여름 공세로 눈을 돌렸다."
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/story"
 msgid "OPERATION TYPHOON - Krasnaya Polyana\n\nBriefing: The ultimate goal of Army Group Centre is at stake. The Soviet capital, right in our sights! We underestimated the enemy's strength. The only way to reach a decisive victory will be a full-blown frontal assault. Today we risk everything! To arms, Kameraden!\n\nGoals:\n - Advance into Moscow.\n - Demoralization of the Soviet people.\n - Destruction of the Red Army's capability for command and control."
@@ -95,7 +95,7 @@ msgstr "전선에 온 것을 환영한다, Major! 이곳이 우리 야전 본부
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start1"
 msgid "Attention Soldaten! The Bolsheviks have tightened the grip with which they hold their precious capital city. Today we will demonstrate that the mighty Wehrmacht cannot be stopped. They may have the numbers, but nothing outclasses our combat effectiveness and combat experience. Soldiers of the Reich - forward, to victory!"
-msgstr "주목, 졸다텐! 볼셰비키는 소중한 수도를 더 단단히 움켜쥐고 있다. 오늘 우리는 강대한 베어마흐트를 막을 수 없음을 보여 줄 것이다. 놈들은 수에서 앞설지 몰라도 우리의 전투력과 전투 경험을 능가하는 것은 없다. 제국의 병사들이여, 전진하라, 승리를 향해!"
+msgstr "주목, 졸다텐! 볼셰비키는 소중한 수도를 더 단단히 움켜쥐고 있다. 오늘 우리는 강대한 국방군을 막을 수 없음을 보여 줄 것이다. 놈들은 수에서 앞설지 몰라도 우리의 전투력과 전투 경험을 능가하는 것은 없다. 제국의 병사들이여, 전진하라, 승리를 향해!"
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start2"
 msgid "The Red Army is bringing in reserves from Siberia and will mount massive counterattacks. Be ready for anything!"

@@ -585,7 +585,7 @@ msgid "'강철 헬멧' Ssh-39"
 msgstr ""
 
 msgctxt "desc/stuff/sov_helm_para"
-msgid "데산트니크 헬멧"
+msgid "전차 탑승병 헬멧"
 msgstr ""
 
 msgctxt "desc/stuff/sov_cap_peaked_cav_var1"

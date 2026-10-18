@@ -71,28 +71,28 @@ msgstr "<c(A5A095)>(3+)</c> 정예 소총 분대 [후기]"
 
 msgctxt "desc/squad/squad_jag_scout_late_con(fin)"
 msgid "<c(A5A095)>(4)</c> Jäger Scout Section"
-msgstr "<c(A5A095)>(4)</c> 예거 정찰 분대"
+msgstr "<c(A5A095)>(4)</c> 엽병 정찰 분대"
 
 msgctxt "desc/squad/squad_jag_late_con(fin)"
 msgid "<c(A5A095)>(4)</c> Jäger Squad [Late]"
-msgstr "<c(A5A095)>(4)</c> 예거 분대 [후기]"
+msgstr "<c(A5A095)>(4)</c> 엽병 분대 [후기]"
 
 msgctxt "desc/squad/squad_jag_at_late_con(fin)"
 msgid "<c(A5A095)>(4)</c> Jäger AT Squad [Late]"
-msgstr "<c(A5A095)>(4)</c> 예거 대전차 분대 [후기]"
+msgstr "<c(A5A095)>(4)</c> 엽병 대전차 분대 [후기]"
 
 msgctxt "desc/squad/squad_border_jag_late_con(fin)"
 msgid "<c(A5A095)>(4)</c> Border Jäger Squad [Late]"
-msgstr "<c(A5A095)>(4)</c> 국경 예거 분대 [후기]"
+msgstr "<c(A5A095)>(4)</c> 국경 엽병 분대 [후기]"
 
 msgctxt "desc/squad/squad_border_jag_at_late_con(fin)"
 msgid "<c(A5A095)>(4)</c> Border Jäger AT Squad [Late]"
-msgstr "<c(A5A095)>(4)</c> 국경 예거 대전차 분대 [후기]"
+msgstr "<c(A5A095)>(4)</c> 국경 엽병 대전차 분대 [후기]"
 
 msgctxt "desc/squad/squad_vet_jag_mid_con(fin)"
 msgid "<c(A5A095)>(4+)</c> Veteran Jäger Squad"
-msgstr "<c(A5A095)>(4+)</c> 베테랑 예거 분대"
+msgstr "<c(A5A095)>(4+)</c> 베테랑 엽병 분대"
 
 msgctxt "desc/squad/squad_vet_jag_late_con(fin)"
 msgid "<c(A5A095)>(4+)</c> Veteran Jäger Squad [Late]"
-msgstr "<c(A5A095)>(4+)</c> 베테랑 예거 분대 [후기]"
+msgstr "<c(A5A095)>(4+)</c> 베테랑 엽병 분대 [후기]"

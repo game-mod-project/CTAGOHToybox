@@ -67,7 +67,7 @@ msgstr "RPG M/43 대전차 수류탄"
 
 msgctxt "desc/stuff/rus_cossack_hat"
 msgid "Cossack cap"
-msgstr "코사크 모자"
+msgstr "카자크 모자"
 
 msgctxt "desc/stuff/satchel_charge"
 msgid "Satchel Charge"

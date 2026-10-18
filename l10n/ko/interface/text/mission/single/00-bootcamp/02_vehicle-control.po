@@ -79,7 +79,7 @@ msgstr "잘했다! 장갑차량으로 싸우는 기본 기술을 모두 익혔�
 
 msgctxt "mission/single/00-bootcamp/02_vehicle-control/narrator/scene/01"
 msgid "Behold, the Panzer IV Ausf. F1. This is the best our Wehrmacht has to offer. A multi-role tank, capable of supporting our infantry and dealing with enemy armor."
-msgstr "보라, Panzer IV Ausf. F1이다. 우리 베어마흐트가 내놓을 수 있는 최고의 물건이다. 보병을 지원하고 적 장갑을 상대할 수 있는 다목적 전차다."
+msgstr "보라, Panzer IV Ausf. F1이다. 우리 국방군이 내놓을 수 있는 최고의 물건이다. 보병을 지원하고 적 장갑을 상대할 수 있는 다목적 전차다."
 
 msgctxt "mission/single/00-bootcamp/02_vehicle-control/narrator/scene/02"
 msgid "Now, move the tank to position behind the sandbags."

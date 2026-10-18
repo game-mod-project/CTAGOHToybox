@@ -31,7 +31,7 @@ msgstr "Richtig. 저택을 확보하고 놈들의 보급선을 끊었다. 곧 �
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/05"
 msgid "We have been reinforced by some Grenadiere, they have set up a forward post by the highway."
-msgstr "그레나디어 부대가 증원으로 와서 고속도로 옆에 전진 초소를 설치했다."
+msgstr "척탄병 부대가 증원으로 와서 고속도로 옆에 전진 초소를 설치했다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_officer/06"
 msgid "More of our Kampfgruppe has just arrived from the West."
@@ -75,7 +75,7 @@ msgstr "놈들에게 증원이 있다! 동쪽에서 차량이 접근 중이다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/04"
 msgid "It's getting darker... Something's moving in the distance! Panzer!"
-msgstr "점점 어두워지고 있다... 저 멀리 뭔가 움직인다! 판처다!"
+msgstr "점점 어두워지고 있다... 저 멀리 뭔가 움직인다! 전차다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier1/05"
 msgid "We are running out of ammo! We cannot hold them for too long! There's too many of them!"
@@ -99,7 +99,7 @@ msgstr "도망친다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/04"
 msgid "The Grenadiers have already dug their foxholes on the North-East flank. We should focus our defences around the main road."
-msgstr "그레나디어들이 이미 북동쪽 측면에 개인호를 팠다. 우리는 큰길 주변에 방어를 집중해야 한다."
+msgstr "척탄병들이 이미 북동쪽 측면에 개인호를 팠다. 우리는 큰길 주변에 방어를 집중해야 한다."
 
 msgctxt "mission/single/051-ger_finesthour/1944_09_koevering/[narrators]/ger_soldier2/05"
 msgid "Incoming artillery! It's getting closer!"

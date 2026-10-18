@@ -81,7 +81,7 @@ msgid "임무 실패!"
 msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/outro_failed_hq"
-msgid "소련군은 반격에 성공해 베어마흐트를 타이푼 작전의 출발선보다 더 뒤로 밀어냈다. 온갖 노력에도 독일군은 소련 수도에 진입하지 못했다. 소련의 혹독한 겨울을 뼈저리게 배운 독일군 최고사령부는 다음 해 여름 공세로 눈을 돌렸다."
+msgid "소련군은 반격에 성공해 국방군을 타이푼 작전의 출발선보다 더 뒤로 밀어냈다. 온갖 노력에도 독일군은 소련 수도에 진입하지 못했다. 소련의 혹독한 겨울을 뼈저리게 배운 독일군 최고사령부는 다음 해 여름 공세로 눈을 돌렸다."
 msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/story"
@@ -93,7 +93,7 @@ msgid "전선에 온 것을 환영한다, Major! 이곳이 우리 야전 본부�
 msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start1"
-msgid "주목, 졸다텐! 볼셰비키는 소중한 수도를 더 단단히 움켜쥐고 있다. 오늘 우리는 강대한 베어마흐트를 막을 수 없음을 보여 줄 것이다. 놈들은 수에서 앞설지 몰라도 우리의 전투력과 전투 경험을 능가하는 것은 없다. 제국의 병사들이여, 전진하라, 승리를 향해!"
+msgid "주목, 졸다텐! 볼셰비키는 소중한 수도를 더 단단히 움켜쥐고 있다. 오늘 우리는 강대한 국방군을 막을 수 없음을 보여 줄 것이다. 놈들은 수에서 앞설지 몰라도 우리의 전투력과 전투 경험을 능가하는 것은 없다. 제국의 병사들이여, 전진하라, 승리를 향해!"
 msgstr ""
 
 msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start2"

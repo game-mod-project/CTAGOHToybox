@@ -120,7 +120,7 @@ msgstr "문서를 얻었다! 어디 보자..."
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/06"
 msgid "A Panzer got on our tail and we had to evade it using a different route, but our radio was broken... what's the status?"
-msgstr "판처가 뒤에 붙어서 다른 길로 피해야 했는데 무전기가 고장 났다... 상황이 어떤가?"
+msgstr "전차가 뒤에 붙어서 다른 길로 피해야 했는데 무전기가 고장 났다... 상황이 어떤가?"
 
 msgctxt "mission/single/01-rus/1941_12_tikhvin/speech/narrator_officer/07"
 msgid "Abort? No! We must take action now while they are resting. First, we must find out where their depots and supplies are, and destroy them."

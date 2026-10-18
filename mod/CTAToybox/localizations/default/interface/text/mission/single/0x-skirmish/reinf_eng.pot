@@ -77,7 +77,7 @@ msgid "제51 공병 건설대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_eng/comgren"
-msgid "코만도 그레나디어"
+msgid "코만도 척탄병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_eng/signaller"

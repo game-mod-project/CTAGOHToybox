@@ -323,7 +323,7 @@ msgstr "<c(E56042)>2.</c> 대전차 분견대"
 
 msgctxt "desc/squad/single_riflegrenade_all(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mortar_all(jap)"
 msgid "Mortar Team"
@@ -387,7 +387,7 @@ msgstr "<c(E56042)>2.</c> 대전차 분견대"
 
 msgctxt "desc/squad/single_riflegrenade_off(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mortar_off(jap)"
 msgid "Mortar Team"
@@ -451,7 +451,7 @@ msgstr "<c(E56042)>2.</c> 대전차 분견대"
 
 msgctxt "desc/squad/single_riflegrenade_def(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mortar_def(jap)"
 msgid "Mortar Team"
@@ -515,7 +515,7 @@ msgstr "<c(E56042)>2.</c> 대전차 분견대"
 
 msgctxt "desc/squad/single_riflegrenade_snlf(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mortar_snlf(jap)"
 msgid "Mortar Team"
@@ -595,7 +595,7 @@ msgstr "<c(E56042)>2.</c> 대전차 분견대"
 
 msgctxt "desc/squad/single_riflegrenade_sup(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mortar_sup(jap)"
 msgid "Mortar Team"
@@ -647,7 +647,7 @@ msgstr "기관총 분견대"
 
 msgctxt "desc/squad/single_mid_riflegrenade_all(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mid_mortar_all(jap)"
 msgid "Mortar Team"
@@ -699,7 +699,7 @@ msgstr "기관총 분견대"
 
 msgctxt "desc/squad/single_mid_riflegrenade_snlf(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_mid_mortar_snlf(jap)"
 msgid "Mortar Team"
@@ -755,7 +755,7 @@ msgstr "대전차 분견대"
 
 msgctxt "desc/squad/single_early_riflegrenade_all(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_early_mortar_all(jap)"
 msgid "Mortar Team"
@@ -811,7 +811,7 @@ msgstr "대전차 분견대"
 
 msgctxt "desc/squad/single_early_riflegrenade_snlf(jap)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_early_mortar_snlf(jap)"
 msgid "Mortar Team"
@@ -995,11 +995,11 @@ msgstr "<c(A5A095)>(1)</c> CEA 척탄 분대"
 
 msgctxt "desc/squad/squad_rusu_late_off(jap)"
 msgid "<c(A5A095)>(1)</c> Rusu Shidan Rifle Squad"
-msgstr "<c(A5A095)>(1)</c> 루스 시단 소총 분대"
+msgstr "<c(A5A095)>(1)</c> 루스 사단 소총 분대"
 
 msgctxt "desc/squad/squad_rusu_gren_late_off(jap)"
 msgid "<c(A5A095)>(1)</c> Rusu Shidan Grenadier Squad"
-msgstr "<c(A5A095)>(1)</c> 루스 시단 척탄 분대"
+msgstr "<c(A5A095)>(1)</c> 루스 사단 척탄 분대"
 
 msgctxt "desc/squad/squad_gokyotai_late_off(jap)"
 msgid "<c(A5A095)>(1)</c> Gokyotai Rifle Squad"
@@ -1147,11 +1147,11 @@ msgstr "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 소총 분대"
 
 msgctxt "desc/squad/squad_gren_late_def(jap)"
 msgid "<c(A5A095)>(2)</c> Grenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 척탄병 분대"
 
 msgctxt "desc/squad/squad_gren_late_off(jap)"
 msgid "<c(A5A095)>(2)</c> Grenadier Squad"
-msgstr "<c(A5A095)>(2)</c> 그레나디어 분대"
+msgstr "<c(A5A095)>(2)</c> 척탄병 분대"
 
 msgctxt "desc/squad/squad_motor_rifle_late_off(jap)"
 msgid "<c(A5A095)>(2)</c> Motorized Rifle Squad"
@@ -1391,35 +1391,35 @@ msgstr "<c(A5A095)>(4)</c> 기고 부대 코만도 분대"
 
 msgctxt "desc/squad/squad_giretsu_kuteitai_late_off(jap)"
 msgid "<c(A5A095)>(4)</c> Giretsu Kuteitai Rifle Squad"
-msgstr "<c(A5A095)>(4)</c> 기레쓰 구테이타이 소총 분대"
+msgstr "<c(A5A095)>(4)</c> 기레쓰 공정대 소총 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_rifle_late_def(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Rifle Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 소총 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 소총 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_gren_late_def(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Grenadier Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 척탄 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 척탄 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_scout_late_def(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Scout Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 정찰 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 정찰 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_pioneer_late_def(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Pioneer Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 공병 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 공병 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_cav_rifle_late_off(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Cavalry Rifle Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 기병 소총 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 기병 소총 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_cav_lmg_late_off(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Cavalry Rifle Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 기병 소총 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 기병 소총 분대"
 
 msgctxt "desc/squad/squad_imperial_guard_cav_gren_late_off(jap)"
 msgid "<c(A5A095)>(4)</c> Konoe Shidan Cavalry Grenadier Squad"
-msgstr "<c(A5A095)>(4)</c> 고노에 시단 기병 척탄 분대"
+msgstr "<c(A5A095)>(4)</c> 근위사단 기병 척탄 분대"
 
 msgctxt "desc/squad/squad_teishin_scout_late_all(jap)"
 msgid "<c(A5A095)>(4)</c> Teishin Shudan Scout Squad"
@@ -1459,27 +1459,27 @@ msgstr "<c(A5A095)>(4)</c> PNA 염세 경찰 분대"
 
 msgctxt "desc/squad/squad_snlf_kuteitai_rifle_late_irr(jap)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> SNLF Kuteitai Rifle Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> SNLF 구테이타이 소총 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>1.</c> SNLF 공정대 소총 분대"
 
 msgctxt "desc/squad/squad_snlf_kuteitai_smg_late_irr(jap)"
 msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> SNLF Kuteitai Rifle Squad"
-msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> SNLF 구테이타이 소총 분대"
+msgstr "<c(A5A095)>(4)</c> <c(E56042)>2.</c> SNLF 공정대 소총 분대"
 
 msgctxt "desc/squad/squad_snlf_kuteitai_grenadier_late_irr(jap)"
 msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Grenadier Squad"
-msgstr "<c(A5A095)>(4)</c> SNLF 구테이타이 척탄 분대"
+msgstr "<c(A5A095)>(4)</c> SNLF 공정대 척탄 분대"
 
 msgctxt "desc/squad/squad_snlf_kuteitai_demolition_late_irr(jap)"
 msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Demolition Squad"
-msgstr "<c(A5A095)>(4)</c> SNLF 구테이타이 폭파 분대"
+msgstr "<c(A5A095)>(4)</c> SNLF 공정대 폭파 분대"
 
 msgctxt "desc/squad/squad_snlf_kuteitai_scout_late_irr(jap)"
 msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Scout Squad"
-msgstr "<c(A5A095)>(4)</c> SNLF 구테이타이 정찰 분대"
+msgstr "<c(A5A095)>(4)</c> SNLF 공정대 정찰 분대"
 
 msgctxt "desc/squad/squad_snlf_kuteitai_pioneer_late_irr(jap)"
 msgid "<c(A5A095)>(4)</c> SNLF Kuteitai Pioneer Squad"
-msgstr "<c(A5A095)>(4)</c> SNLF 구테이타이 공병 분대"
+msgstr "<c(A5A095)>(4)</c> SNLF 공정대 공병 분대"
 
 msgctxt "desc/squad/squad_snlf_101st_rifle_late_irr(jap)"
 msgid "<c(A5A095)>(4+)</c> 101st Kure SNLF Rifle Squad"

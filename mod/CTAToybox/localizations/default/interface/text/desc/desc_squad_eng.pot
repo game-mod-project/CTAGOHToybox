@@ -1437,11 +1437,11 @@ msgid "대전차 조"
 msgstr ""
 
 msgctxt "desc/squad/single_riflegrenade(eng)"
-msgid "그레나디어 소총수"
+msgid "척탄병 소총수"
 msgstr ""
 
 msgctxt "desc/squad/single_riflegrenade_con(eng)"
-msgid "그레나디어 소총수"
+msgid "척탄병 소총수"
 msgstr ""
 
 msgctxt "desc/squad/single_ap_miner(eng)"

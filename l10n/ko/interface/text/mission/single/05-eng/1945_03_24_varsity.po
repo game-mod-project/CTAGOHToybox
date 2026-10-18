@@ -415,7 +415,7 @@ msgstr "기갑 하나 더 처치!"
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_06"
 msgid "One more Panzer down!"
-msgstr "판처 한 대 더 격파!"
+msgstr "전차 한 대 더 격파!"
 
 msgctxt "mission/single/05-eng/1945_03_24_varsity/narrator/part04_enemy_destroyed_07"
 msgid "Good hit!"

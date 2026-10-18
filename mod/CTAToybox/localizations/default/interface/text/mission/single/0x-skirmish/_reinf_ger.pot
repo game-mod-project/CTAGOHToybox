@@ -13,31 +13,31 @@ msgstr ""
 "Language-Team: \n"
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzglehr_sq"
-msgid "판처 레어 판처그레나디어 분대"
+msgid "기갑교도 기갑척탄병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_sq"
-msgid "판처 레어 판처 아우프클레러 분대"
+msgid "기갑교도 기갑 정찰병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_ht"
-msgid "판처 레어 장갑 판처 아우프클레러"
+msgid "기갑교도 장갑 기갑 정찰병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_sq"
-msgid "판처 레어 판처슈투름그레나디어 분대"
+msgid "기갑교도 기갑돌격척탄병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_ht"
-msgid "판처 레어 장갑 판처 슈투름그레나디어"
+msgid "기갑교도 장갑 기갑 돌격척탄병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_sq"
-msgid "판처 레어 판처피오니어 분대"
+msgid "기갑교도 기갑공병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_ht"
-msgid "판처 레어 장갑 판처피오니어"
+msgid "기갑교도 장갑 기갑공병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_1"

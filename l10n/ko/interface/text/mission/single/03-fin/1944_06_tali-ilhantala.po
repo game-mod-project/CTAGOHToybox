@@ -87,7 +87,7 @@ msgstr "VKT 선이 돌파당했다! 소련 기갑 선봉이 이마트라-라펜�
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/place"
 msgid "48th Jaeger Regiment & Finnish Armored Division"
-msgstr "제48예거 연대 및 핀란드 기갑사단"
+msgstr "제48엽병 연대 및 핀란드 기갑사단"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/203"
 msgid "203 H/17"
@@ -107,7 +107,7 @@ msgstr "중장 공병"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/inf"
 msgid "Jaeger Squad"
-msgstr "예거 분대"
+msgstr "엽병 분대"
 
 msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/isu152"
 msgid "JSU 152"

@@ -35,7 +35,7 @@ msgstr "검문소를 지키던 아군에게 무슨 일이 생긴 게 틀림없�
 
 msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/03"
 msgid "We first need to establish contact with the Gebirgsjäger unit and make sure the checkpoint is safe. Be cautious, both the Yugoslav partisans and the forward elements of the Red Army are active in the area."
-msgstr "먼저 게비르크스예거 부대와 접촉해 검문소가 안전한지 확인해야 한다. 조심해라, 이 지역에서는 유고슬라비아 파르티잔과 붉은 군대 선봉이 모두 활동 중이다."
+msgstr "먼저 산악엽병 부대와 접촉해 검문소가 안전한지 확인해야 한다. 조심해라, 이 지역에서는 유고슬라비아 파르티잔과 붉은 군대 선봉이 모두 활동 중이다."
 
 msgctxt "mission/single/02-ger/1944_09_yugoslavia/narrator/04"
 msgid "Damn it! Partisans spotted! They know we're here, give them hell!"
@@ -112,7 +112,7 @@ msgstr " 유고슬라비아의 독일군은 곤경에 처해 있다. 불가리�
 
 msgctxt "mission/single/02-ger/1944_09_yugoslavia/task1"
 msgid "Rendez-vouz the Gebirgsjäger and Brandenburger units"
-msgstr "게비르크스예거와 브란덴부르거 부대를 합류시켜라"
+msgstr "산악엽병과 브란덴부르거 부대를 합류시켜라"
 
 msgctxt "mission/single/02-ger/1944_09_yugoslavia/task2"
 msgid "Secure the crossroads checkpoint"

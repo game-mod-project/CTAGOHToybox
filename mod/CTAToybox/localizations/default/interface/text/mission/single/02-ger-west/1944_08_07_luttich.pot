@@ -53,7 +53,7 @@ msgid "눈앞에 르메닐토브 마을이 있다. 뤼티히 작전을 성공시
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/02"
-msgid "마을은 가볍게만 방어되고 있다. 우리 판처아우프클레러를 자네 지휘 아래 둔다! 교차로를 점령하면 우리 판처가 들어간다."
+msgid "마을은 가볍게만 방어되고 있다. 우리 기갑정찰병을 자네 지휘 아래 둔다! 교차로를 점령하면 우리 전차가 들어간다."
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/03"
@@ -69,7 +69,7 @@ msgid "잘했다, 졸다텐! 이제 르메닐토브를 지킬 수비대를 보�
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/06"
-msgid "잔더 캄프그루페의 판처그레나디어가 북쪽 셰랑세르루셀 접근로에서 저항에 부딪혔다. 자네가 지원해야 한다."
+msgid "잔더 캄프그루페의 기갑척탄병이 북쪽 셰랑세르루셀 접근로에서 저항에 부딪혔다. 자네가 지원해야 한다."
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/07"
@@ -117,7 +117,7 @@ msgid "참으로 유감이다. 지금쯤 아브랑슈로 가고 있어야 했는
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/place"
-msgid "제116 판처 사단"
+msgid "제116 기갑 사단"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/skip"
@@ -125,7 +125,7 @@ msgid "준비 단계 건너뛰기"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/story"
-msgid "1944년 8월. 미군이 생로를 돌파한 뒤 아브랑슈가 미군 손에 넘어갔다. 독일 최고사령부는 연합군의 진격을 끊기를 바라며 아브랑슈 방향으로 반격을 명령한다. 뤼티히 작전이라 불리는 이 반격은 모르탱 일대의 연합군 측면을 파고드는 것이 목표다.\n\n그대는 제116 판처 사단의 전차 지휘관이며, 대대는 이번 임무에서 샤케 전투단에 배속되었다. 진격하여 르메닐토브를 점령하라. 마을을 점령하고 일대를 확보하라. 적 배치에 관한 정보는 거의 없으므로 전술적 통찰과 임기응변으로 목표를 달성해야 한다. 즉시 출발해 판처그레나디어와 접촉하고 추가 지시를 기다려라.\n\n행운을 빈다!"
+msgid "1944년 8월. 미군이 생로를 돌파한 뒤 아브랑슈가 미군 손에 넘어갔다. 독일 최고사령부는 연합군의 진격을 끊기를 바라며 아브랑슈 방향으로 반격을 명령한다. 뤼티히 작전이라 불리는 이 반격은 모르탱 일대의 연합군 측면을 파고드는 것이 목표다.\n\n그대는 제116 기갑 사단의 전차 지휘관이며, 대대는 이번 임무에서 샤케 전투단에 배속되었다. 진격하여 르메닐토브를 점령하라. 마을을 점령하고 일대를 확보하라. 적 배치에 관한 정보는 거의 없으므로 전술적 통찰과 임기응변으로 목표를 달성해야 한다. 즉시 출발해 기갑척탄병과 접촉하고 추가 지시를 기다려라.\n\n행운을 빈다!"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task1"
@@ -133,7 +133,7 @@ msgid "르메닐토브의 핵심 교차로를 점령하라"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2"
-msgid "북쪽으로 공격해 제116 판처 사단 찬더 전투단을 지원하라"
+msgid "북쪽으로 공격해 제116 기갑 사단 찬더 전투단을 지원하라"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2_1"

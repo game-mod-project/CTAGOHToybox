@@ -329,11 +329,11 @@ msgid "후퇴하고 있다! 공격을 격퇴했다!"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/place"
-msgid "제1 게비르크스예거 사단"
+msgid "제1 산악엽병 사단"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/story"
-msgid "'청색 작전' 공세 중 산악인 호텔 '열한 명의 대피소'가 게비르크스예거의 피난처가 된다. 이 피난처를 탈환하려는 시도가 예상된다."
+msgid "'청색 작전' 공세 중 산악인 호텔 '열한 명의 대피소'가 산악엽병의 피난처가 된다. 이 피난처를 탈환하려는 시도가 예상된다."
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_09_elbrus/tasks/opt_task_01"

@@ -49,7 +49,7 @@ msgid "놈들이 온다!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/03"
-msgid "Verdammt! 이쪽으로 오는 건 뭐야?! 수륙양용 판처인가?!"
+msgid "Verdammt! 이쪽으로 오는 건 뭐야?! 수륙양용 전차인가?!"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/04"

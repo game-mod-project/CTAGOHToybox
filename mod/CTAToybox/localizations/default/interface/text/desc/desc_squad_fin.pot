@@ -134,15 +134,15 @@ msgid "<c(A5A095)>(3)</c> 국경 경비대 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_late(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_mid(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_mid_con(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_cav_early(fin)"
@@ -174,27 +174,27 @@ msgid "중장 공병"
 msgstr ""
 
 msgctxt "desc/squad/squad_jaeger_early(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jaeger_lmg_early(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 경기관총 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 경기관총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_antitank_late(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 대전차 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 대전차 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_late(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mid(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mid_con(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_marksmen(fin)"
@@ -306,11 +306,11 @@ msgid "<c(A5A095)>(3)</c> 기병 경기관총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_early_all(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mg_early_all(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 경기관총 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 경기관총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rifle_early_def(fin)"
@@ -330,11 +330,11 @@ msgid "<c(A5A095)>(3)</c> 국경수비대 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_early_def(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mg_early_def(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 경기관총 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 경기관총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_pio_early(fin)"
@@ -362,15 +362,15 @@ msgid "<c(A5A095)>(3)</c> 기병 경기관총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_scout_irr(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_scout_mid(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_scout_late(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rifle_early_off(fin)"
@@ -386,11 +386,11 @@ msgid "<c(A5A095)>(2+)</c> 명사수 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_early_off(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mg_early_off(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 경기관총 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 경기관총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rifle_mid_all(fin)"
@@ -402,7 +402,7 @@ msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_mid_all(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rifle_mid_def(fin)"
@@ -462,7 +462,7 @@ msgid "<c(A5A095)>(2+)</c> 명사수 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mid_len(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rifle_late_all(fin)"
@@ -482,11 +482,11 @@ msgid "<c(A5A095)>(2+)</c> 베테랑 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_late_all(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_at_late_all(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 대전차 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 대전차 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_rifle_late_def(fin)"
@@ -542,19 +542,19 @@ msgid "<c(A5A095)>(2+)</c> 명사수 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_late_len(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_antitank_late_len(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 대전차 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 대전차 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_mid_vet(fin)"
-msgid "<c(A5A095)>(4+)</c> 베테랑 예거 분대"
+msgid "<c(A5A095)>(4+)</c> 베테랑 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_late_vet(fin)"
-msgid "<c(A5A095)>(4+)</c> 베테랑 예거 분대"
+msgid "<c(A5A095)>(4+)</c> 베테랑 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/maxim_m32_33_early"
@@ -670,7 +670,7 @@ msgid "<c(A5A095)>(3)</c> <c(E56042)>2.</c> 돌격 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_scout_off(fin)"
-msgid "<c(A5A095)>(4)</c> 예거 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 엽병 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_reserves_mid_all(fin)"
@@ -710,7 +710,7 @@ msgid "<c(A5A095)>(3)</c> 본부 장거리 공병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_mid_def(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_recon_mid_def(fin)"
@@ -722,7 +722,7 @@ msgid "<c(A5A095)>(4)</c> 본부 장거리 순찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_jag_mid_def(fin)"
-msgid "<c(A5A095)>(4+)</c> 본부 장거리 예거 분대"
+msgid "<c(A5A095)>(4+)</c> 본부 장거리 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_penal_mid_irr(fin)"
@@ -750,7 +750,7 @@ msgid "<c(A5A095)>(3+)</c> 스웨덴 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_strike_mid_len(fin)"
-msgid "<c(A5A095)>(4+)</c> 예거 타격 분대"
+msgid "<c(A5A095)>(4+)</c> 엽병 타격 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_fortress_rifle_late_def(fin)"
@@ -782,11 +782,11 @@ msgid "<c(A5A095)>(3+)</c> 정예 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_arm_jag_late_all(fin)"
-msgid "<c(A5A095)>(4)</c> 기갑사단 예거 분대"
+msgid "<c(A5A095)>(4)</c> 기갑사단 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_arm_jag_late_mot_all(fin)"
-msgid "<c(A5A095)>(4)</c> 차량화 기갑사단 예거 분대"
+msgid "<c(A5A095)>(4)</c> 차량화 기갑사단 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_pio_late_def(fin)"
@@ -794,11 +794,11 @@ msgid "<c(A5A095)>(3)</c> 본부 장거리 공병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_late_def(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_border_jag_at_late_def(fin)"
-msgid "<c(A5A095)>(4)</c> 국경 예거 대전차 분대"
+msgid "<c(A5A095)>(4)</c> 국경 엽병 대전차 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_recon_late_def(fin)"
@@ -810,7 +810,7 @@ msgid "<c(A5A095)>(4)</c> 본부 장거리 순찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_jag_late_def(fin)"
-msgid "<c(A5A095)>(4+)</c> 본부 장거리 예거 분대"
+msgid "<c(A5A095)>(4+)</c> 본부 장거리 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_penal_late_irr(fin)"
@@ -838,7 +838,7 @@ msgid "<c(A5A095)>(3+)</c> 스웨덴 소총 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_strike_late_len(fin)"
-msgid "<c(A5A095)>(4+)</c> 예거 타격 분대"
+msgid "<c(A5A095)>(4+)</c> 엽병 타격 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_military_police_early_con(fin)"
@@ -890,7 +890,7 @@ msgid "<c(A5A095)>(3+)</c> 스웨덴 소총 분대 [후기]"
 msgstr ""
 
 msgctxt "desc/squad/squad_arm_jag_late_mot_con(fin)"
-msgid "<c(A5A095)>(4)</c> 차량화 기갑사단 예거 분대 [후기]"
+msgid "<c(A5A095)>(4)</c> 차량화 기갑사단 엽병 분대 [후기]"
 msgstr ""
 
 msgctxt "desc/squad/squad_hrr_cav_mid_con(fin)"
@@ -918,11 +918,11 @@ msgid "<c(A5A095)>(4)</c> 본부 장거리 정찰 분대 [후기]"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_strike_mid_con(fin)"
-msgid "<c(A5A095)>(4+)</c> 예거 타격 분대"
+msgid "<c(A5A095)>(4+)</c> 엽병 타격 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_jag_strike_late_con(fin)"
-msgid "<c(A5A095)>(4+)</c> 예거 타격 분대 [후기]"
+msgid "<c(A5A095)>(4+)</c> 엽병 타격 분대 [후기]"
 msgstr ""
 
 msgctxt "desc/squad/squad_urr_cav_mid_con(fin)"
@@ -934,9 +934,9 @@ msgid "<c(A5A095)>(4+)</c> 우시마 기병 소총 분대 [후기]"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_jag_mid_con(fin)"
-msgid "<c(A5A095)>(4+)</c> 본부 장거리 예거 분대"
+msgid "<c(A5A095)>(4+)</c> 본부 장거리 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_hq_lr_jag_late_con(fin)"
-msgid "<c(A5A095)>(4+)</c> 본부 장거리 예거 분대 [후기]"
+msgid "<c(A5A095)>(4+)</c> 본부 장거리 엽병 분대 [후기]"
 msgstr ""

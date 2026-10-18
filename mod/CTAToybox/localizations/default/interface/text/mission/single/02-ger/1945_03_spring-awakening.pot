@@ -85,7 +85,7 @@ msgid "T-34 한 대가 습지에 빠져 있다. 수리할 수 있을 것이다!"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1945_03_spring-awakening/outro_completed"
-msgid "잘했다! 이 공세에서 이룰 수 있는 것을 거의 모두 이루었다. 실제로는 초기 진격이 성공했음에도 공격 병력이 너무 약해 더 밀고 나가지 못했고 전략 목표는 달성되지 못했다. 이것이 베어마흐트의 동부 전선 마지막 본격 공세였다."
+msgid "잘했다! 이 공세에서 이룰 수 있는 것을 거의 모두 이루었다. 실제로는 초기 진격이 성공했음에도 공격 병력이 너무 약해 더 밀고 나가지 못했고 전략 목표는 달성되지 못했다. 이것이 국방군의 동부 전선 마지막 본격 공세였다."
 msgstr ""
 
 msgctxt "mission/single/02-ger/1945_03_spring-awakening/outro_failed"
@@ -101,7 +101,7 @@ msgid "전차병"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1945_03_spring-awakening/reinf_squad"
-msgid "판처그레나디어"
+msgid "기갑척탄병"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1945_03_spring-awakening/story"
