@@ -98,6 +98,38 @@ static class SpawnMenuTests
         root = root.Substring(0, root.IndexOf("{\"trigger\""));
         T.True(root.IndexOf("{value 1}") < root.IndexOf("{name \"ctb_s*\"}") && root.Contains("\"ctb_open$\"") && root.Contains("{function \"ctb_home\"}"), "root closes an open menu and opens a closed one: " + root);
         T.True(menu.Contains("{\"ctb_open\"}"), "open flag declared");
+
+        // 처음엔 Spawn만, 소속 기본은 나(설계 "첫 화면"·"국가와 소속", 사용자 지적 2026-10-18)
+        string start = menu.Substring(menu.IndexOf("{\"ctb_start\""));
+        start = start.Substring(0, start.IndexOf("{\"ctb_find_me\""));
+        var ownerScreen = r.Screens.Single(s => s.Title == "Owner");
+        T.True(!start.Contains("{name \"ctb_s" + ownerScreen.Id + "_*\"}") && start.Contains("{name \"ctb_s*\"}") && start.Contains("{name \"ctb_root\"}"), "start shows only the Spawn button: " + start);
+        T.True(Regex.IsMatch(start, "\"ctb_owner\\$\"\\} \\{op \"=\"\\} \\{value " + MenuBuilder.MeOwner + "\\}"), "start owner is me");
+        T.True(menu.Contains("{\"ctb_find_me\"") && menu.Contains("{state user_control}") && menu.Contains("{type entities}"), "my number is looked up in the match");
+        // 소속 화면: 나·아군 AI·적 AI
+        var ownerTexts = ownerScreen.Buttons.Select(b => r.Strings.TryGetValue(b.Text, out var t) ? t : b.Text).ToList();
+        T.True(ownerTexts.Take(3).SequenceEqual(new[] { "Me", "Ally AI", "Enemy AI" }), "owner screen starts with me, ally AI, enemy AI: " + string.Join(",", ownerTexts));
+        T.True(ownerTexts.Contains("Player 2 (you)"), "my number is marked");
+        T.True(menu.Contains("{relation ally}") && menu.Contains("{relation enemy}"), "ally and enemy AI found by relation to me");
+        // 첫 화면에 지금 국가·소속
+        var gerHome = r.Screens.First(s => s.Army == "ger" && s.Title == "Home");
+        var homeTexts = gerHome.Buttons.Select(b => r.Strings.TryGetValue(b.Text, out var t) ? t : b.Text).ToList();
+        T.True(homeTexts.Contains("Nation: Germany") && MenuBuilder.OwnerChoices.All(c => homeTexts.Contains("Owner: " + c.Label)), "home shows the nation and an owner label per choice: " + string.Join(",", homeTexts.Take(6)));
+        string homeFn = menu.Substring(menu.IndexOf("{\"ctb_home\""));
+        homeFn = homeFn.Substring(0, homeFn.IndexOf("{\"ctb_owner\""));
+        var meLabel = gerHome.Buttons[homeTexts.IndexOf("Owner: Me")].Name;
+        T.True(homeFn.Contains("{name \"" + meLabel + "\"}") && homeFn.Contains("\"ctb_owner$\"} {op \"==\"} {value " + MenuBuilder.MeOwner + "}"), "home shows only the current owner label");
+        // 등급 최대(찍은 자리): 가까운 내 병사
+        T.True(menu.Contains("{amount " + MenuBuilder.VetAround + "}"), "veterancy around the point takes my nearest soldiers");
+        // 항공 폭격
+        if (cat.Units.Any(u => u.Category == "air"))
+            foreach (var a in MenuBuilder.AirStrikes)
+            {
+                string at = menu.Substring(menu.IndexOf("{\"1.event\" {id \"ctb_e_" + a.Key + "\"}}"));
+                at = at.Substring(0, at.IndexOf("{\"trigger\""));
+                T.True(at.Contains("{\"loop\" " + a.Planes + "\r\n") && at.Contains("{\"air_attack\"") && at.Contains("{waypoint_to_attack \"" + MenuBuilder.AirTarget + "\"}"), "air strike clones planes and attacks the point: " + a.Key);
+            }
+        else T.True(false, "fixture has an aircraft for the air strike test");
         T.True(menu.Contains("{amount 1}") && menu.Contains("_bleedout_"), "pick-one and wreck cleanup");
 
         // 캠페인 국가 조각과 .pot

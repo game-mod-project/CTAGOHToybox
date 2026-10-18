@@ -59,6 +59,14 @@ namespace CtaToybox.Core.Spawn
         public const string Root = "ctb_root", HideAll = "ctb_s*", Place = "ctb_place", Target = "ctb_target", WaitInf = "ctb_wait_inf", WaitVeh = "ctb_wait_veh";
         public const string PotKey = "mission/ctatoybox_spawn/";
         public const string Open = "ctb_open";   // 메뉴가 열려 있으면 1
+        public const string Me = "ctb_me";       // 내 플레이어 번호 + 1. 0이면 아직 못 찾음
+        public const int MeOwner = 11, AllyOwner = 12, EnemyOwner = 13;   // ctb_owner 값: 나, 아군 AI, 적 AI
+        public const string Found = "ctb_found";
+        public const int VetAround = 12;   // 등급 최대(찍은 자리): 가까운 내 병사 수. 분대 하나와 전차 승무원 둘쯤
+        // 소속 값과 글자: 첫 화면의 "Owner: …" 표시와 소속 화면이 같이 쓴다
+        public static readonly (int Value, string Key, string Label)[] OwnerChoices =
+            new[] { (MeOwner, "me", "Me"), (AllyOwner, "ally", "Ally AI"), (EnemyOwner, "enemy", "Enemy AI"), (0, "0", "Auto assign") }
+            .Concat(Enumerable.Range(1, 10).Select(k => (k, k.ToString(), "Player " + (k - 1)))).ToArray();
         public static readonly string[] NavEvents = { "ctb_e_root", "ctb_e_home" };
         static readonly string[] ArmyOrder = { "ger", "rus", "usa", "eng", "fin", "jap" };
         static readonly Dictionary<string, string> ArmyText = new Dictionary<string, string> { ["ger"] = "Germany", ["rus"] = "Soviet Union", ["usa"] = "United States", ["eng"] = "Britain", ["fin"] = "Finland", ["jap"] = "Japan" };
@@ -72,6 +80,7 @@ namespace CtaToybox.Core.Spawn
         readonly List<MNode> triggers = new List<MNode>();
         readonly List<string> events = new List<string>();
         readonly Dictionary<string, int> homes = new Dictionary<string, int>(StringComparer.Ordinal);
+        readonly Dictionary<string, List<(int Value, string Name)>> ownerLabels = new Dictionary<string, List<(int, string)>>(StringComparer.Ordinal);
         readonly List<string> skipped;
         int nextScreen = 1;
         int nextUnit = 1;
@@ -161,22 +170,51 @@ namespace CtaToybox.Core.Spawn
             events.Add(nationEv);
             triggers.Add(MNode.EventTrigger(nationEv, hides.ToArray()));
 
-            foreach (string army in armies) MakeArmy(army, result.Screens.Single(s => s.Id == homes[army]), nationScreen, ownerScreen, supportScreen, toolsScreen);
-            // 소속 화면: Auto(autoassign)와 Player 0~9(바로 고름). 값 0 = autoassign, k = player k-1(cheat.mi "set player"와 같은 값)
-            for (int k = 0; k <= 10; k++)
+            // 소속 화면: 나·아군 AI·적 AI(설계 "소속 바꾸기"), Auto, Player 0~9. 값은 OwnerChoices.
+            // 내 번호(ctb_me = 번호+1)는 판 안에서 찾는다(FindMe). 찾으면 내 번호 단추가 "Player N (you)"로 바뀐다(사용자 지적 2026-10-18: 내가 몇 번인지 모른다)
+            var ownerShow = new List<object>();
+            ownerShow.AddRange(FindMe());
+            ownerShow.Add(MNode.Hide(HideAll));
+            ownerShow.Add(MNode.Show("ctb_s" + ownerScreen.Id + "_*"));
+            void Owner(int k, string key, string label)
             {
                 string ev = "ctb_e_own_" + k;
-                Add(ownerScreen, Str("owner_" + k, k == 0 ? "Auto assign" : "Player " + (k - 1)), "back", ev);
-                events.Add(ev);
-                triggers.Add(MNode.EventTrigger(ev, MNode.SetVar("ctb_owner", k), MNode.Call("ctb_home")));
+                Add(ownerScreen, Str(key, label), "back", ev);
+                if (!events.Contains(ev))
+                {
+                    events.Add(ev);
+                    triggers.Add(MNode.EventTrigger(ev, MNode.SetVar("ctb_owner", k), MNode.Call("ctb_home")));
+                }
             }
+            foreach (var c in OwnerChoices.Where(c => c.Value == 0 || c.Value > 10)) Owner(c.Value, "owner_" + c.Key, c.Label);
+            for (int k = 1; k <= 10; k++)
+            {
+                Owner(k, "owner_" + k, "Player " + (k - 1));
+                string plain = ownerScreen.Buttons[ownerScreen.Buttons.Count - 1].Name;
+                Owner(k, "owner_you_" + k, "Player " + (k - 1) + " (you)");
+                string you = ownerScreen.Buttons[ownerScreen.Buttons.Count - 1].Name;
+                ownerShow.Add(MNode.Hide(you));
+                ownerShow.Add(MNode.IfVar(Me, "==", k, MNode.Hide(plain), MNode.Show(you)));
+            }
+            ownerShow.Add(MNode.SetVar(Open, 1));
+            string ownerEv = "ctb_e_s" + ownerScreen.Id;
+            events.Add(ownerEv);
+            triggers.Add(MNode.EventTrigger(ownerEv, ownerShow.ToArray()));
+
+            foreach (string army in armies) MakeArmy(army, result.Screens.Single(s => s.Id == homes[army]), nationScreen, ownerScreen, supportScreen, toolsScreen);
             foreach (var shared in new[] { nationScreen, ownerScreen, supportScreen, toolsScreen }) AddNav(shared, null);
             MakeSupport(supportScreen);
             MakeTools(toolsScreen);
 
             // 처음 화면으로: 지금 국가의 처음 화면
             var home = new MNode(MNode.Q("ctb_home"), MNode.Hide(HideAll));
-            foreach (string army in armies) home.Add(MNode.IfVar("ctb_nation", "==", armies.IndexOf(army) + 1, MNode.Show("ctb_s" + homes[army] + "_*")));
+            foreach (string army in armies)
+            {
+                var show = new List<object> { MNode.Show("ctb_s" + homes[army] + "_*") };
+                foreach (var v in ownerLabels[army]) show.Add(MNode.Hide(v.Name));
+                foreach (var v in ownerLabels[army]) show.Add(MNode.IfVar("ctb_owner", "==", v.Value, MNode.Show(v.Name)));
+                home.Add(MNode.IfVar("ctb_nation", "==", armies.IndexOf(army) + 1, show.ToArray()));
+            }
             home.Add(MNode.SetVar(Open, 1));
             events.Add("ctb_e_root"); events.Add("ctb_e_home");
             // 맨 위 Spawn 단추는 여닫기다(사용자 지적 2026-10-18: 메뉴가 완전히 접히지 않는다). 열려 있으면(1) 모두 숨기고 2를 거쳐 0으로, 닫혀 있으면(0) 처음 화면
@@ -196,8 +234,11 @@ namespace CtaToybox.Core.Spawn
 
         void MakeArmy(string army, MenuScreen home, MenuScreen nation, MenuScreen owner, MenuScreen support, MenuScreen tools)
         {
-            Add(home, Str("nation", "Nation"), Icon("button_1_" + army, "button_1_ger"), ShowEvent(nation));
-            Add(home, Str("owner", "Owner"), Icon("doctrine(" + army + ")", "back"), ShowEvent(owner));
+            // 첫 화면에 지금 국가와 지금 소속을 보인다(설계 "첫 화면": 국가: <지금 국가> · 소속: <지금 소속>). 소속은 값마다 단추를 두고 ctb_home이 맞는 하나만 보인다
+            Add(home, Str("nation_is_" + army, "Nation: " + (ArmyText.TryGetValue(army, out var an) ? an : army)), Icon("button_1_" + army, "button_1_ger"), ShowEvent(nation));
+            var variants = new List<(int Value, string Name)>();
+            foreach (var c in OwnerChoices) variants.Add((c.Value, Add(home, Str("owner_is_" + c.Key, "Owner: " + c.Label), Icon("doctrine(" + army + ")", "back"), ShowEvent(owner)).Name));
+            ownerLabels[army] = variants;
             var units = cat.Units.Where(u => u.Army == army).ToList();
             var squads = cat.Squads.Where(s => s.Army == army).ToList();
 
@@ -391,6 +432,8 @@ namespace CtaToybox.Core.Spawn
                 .Append("\t\t{Player 0}\r\n\t}\r\n");
             to.Links.Append("\t{Link 0x").Append(man.ToString("x")).Append(" {0x").Append(ent.ToString("x")).Append(" \"driver\"}}\r\n");
             to.Tags.Append("\t{Tags ").Append(MNode.Q(tag)).Append(" \"hidden\" ").Append(MNode.Q(army)).Append(" \"ctb_air\" 0x").Append(ent.ToString("x")).Append("}\r\n");
+            if (!firstPlane.ContainsKey(army)) firstPlane[army] = tag;
+            if (!firstStrike.ContainsKey(army) && u.Name.IndexOf("strike", StringComparison.OrdinalIgnoreCase) >= 0) firstStrike[army] = tag;
             var actions = new List<object>
             {
                 new MNode(MNode.Q("waypoint"), new MNode("who", new MNode("type", "actor"), new MNode("actors", new MNode("tag", MNode.Q(tag)))), new MNode("action", new MNode("type", "start"), new MNode("waypoint", MNode.Q(Place)), "{clone}", new MNode("approach", "teleport"))),
@@ -408,6 +451,11 @@ namespace CtaToybox.Core.Spawn
             ("arty_s", "Artillery (small)", 5, 20), ("arty_m", "Artillery (medium)", 12, 40), ("arty_l", "Artillery (large)", 20, 70),
         };
 
+        public static readonly (string Key, string Label, int Planes)[] AirStrikes = { ("air_s", "Air strike (small)", 1), ("air_m", "Air strike (medium)", 2), ("air_l", "Air strike (large)", 4) };
+        public const string AirTarget = "ctb_wp_air";
+        // 국가 → 첫 항공기 견본 태그, 이름에 strike가 든 첫 항공기 견본 태그
+        readonly Dictionary<string, string> firstPlane = new Dictionary<string, string>(StringComparer.Ordinal), firstStrike = new Dictionary<string, string>(StringComparer.Ordinal);
+
         void MakeSupport(MenuScreen s)
         {
             foreach (var (key, label, shots, _) in Barrages)
@@ -417,6 +465,30 @@ namespace CtaToybox.Core.Spawn
                 events.Add(ev);
                 triggers.Add(MNode.EventTrigger(ev, new MNode(MNode.Q("loop") + " " + shots, new MNode(MNode.Q("spawn"), new MNode("entity", MNode.Q("artillery_single_150_dummy")), new MNode("waypoint", MNode.Q(wp))), new MNode(MNode.Q("delay"), new MNode("time", "0.4")))));
             }
+            // 항공 폭격 소·중·대(설계 "옵션" 폭격: 항공·곡사포·자주포, 소·중·대): 지금 국가의 공격기 견본을 찍은 자리로 복제하고 내 소속으로 한 뒤
+            // "air_attack" {waypoint_to_attack}으로 그 자리를 치게 한다(바닐라 00-bootcamp/04_reinforcements-offmap-support "air_attack" 꼴, 바닐라·모드 맵 116회).
+            // 공격기는 국가의 항공기 가운데 이름에 strike가 든 첫 것, 없으면 첫 항공기. 게임 안 동작은 미확인
+            var airStrike = firstPlane.ToDictionary(kv => kv.Key, kv => firstStrike.TryGetValue(kv.Key, out var st) ? st : kv.Value, StringComparer.Ordinal);
+            if (airStrike.Count > 0)
+                foreach (var (key, label, planes) in AirStrikes)
+                {
+                    string ev = "ctb_e_" + key;
+                    var acts = new List<object>();
+                    var armies = Armies(cat);
+                    foreach (var kv in airStrike)
+                        acts.Add(MNode.IfVar("ctb_nation", "==", armies.IndexOf(kv.Key) + 1, new MNode(MNode.Q("loop") + " " + planes,
+                            new MNode(MNode.Q("waypoint"), new MNode("who", new MNode("type", "actor"), new MNode("actors", new MNode("tag", MNode.Q(kv.Value)))), new MNode("action", new MNode("type", "start"), new MNode("waypoint", MNode.Q(AirTarget)), "{clone}", new MNode("approach", "teleport"))),
+                            new MNode(MNode.Q("delay"), new MNode("time", "0.3")))));
+                    acts.Add(new MNode(MNode.Q("entity_state"), new MNode("selector", new MNode("source", "advanced"), new MNode("group", new MNode("select", MNode.Tag("ctb_air")), new MNode("exclude", MNode.Tag("hidden"), MNode.Tag("un"), MNode.Tag("ctb_air_new"), MNode.Tag("ctb_strike")))), new MNode("tag_add", "ctb_strike")));
+                    acts.AddRange(FindMe());
+                    acts.Add(MNode.IfVar(Me, "==", 0, SetPlayer("ctb_strike", 0)));
+                    for (int m = 0; m <= 9; m++) acts.Add(MNode.IfVar(Me, "==", m + 1, SetPlayer("ctb_strike", m)));
+                    acts.Add(new MNode(MNode.Q("air_attack"), Tagged("ctb_strike"), new MNode("drop", MNode.Q("orders sensor senseless")), new MNode("enemies", new MNode("ignore_captured_by_user", "0")), new MNode("waypoint_to_attack", MNode.Q(AirTarget)), new MNode("attack_altitude", "30")));
+                    acts.Add(Done("ctb_strike"));
+                    Add(s, Str(key, label), "artystrike", ev, AirTarget, "crosshair");
+                    events.Add(ev);
+                    triggers.Add(MNode.EventTrigger(ev, acts.ToArray()));
+                }
             string pe = "ctb_e_points";
             Add(s, Str("points", "Reinforcement points +1000"), "artystrike", pe);
             events.Add(pe);
@@ -439,7 +511,10 @@ namespace CtaToybox.Core.Spawn
             Tool("god_on", "God mode on", "back", new[] { MNode.SetVar("ctb_god", 1) });
             Tool("god_off", "God mode off", "back", new[] { MNode.SetVar("ctb_god", 0), new MNode(MNode.Q("entity_state"), Mine(), new MNode("impregnability", "disabled")) });
             Tool("vet_all", "Max veterancy (all mine)", "back", new[] { new MNode(MNode.Q("actor_state"), Mine(), new MNode("human", new MNode("veterancy", "8"))) });
-            Tool("vet_one", "Max veterancy (pick unit)", "back", new[] { new MNode(MNode.Q("actor_state"), new MNode("selector", new MNode("source", "advanced"), new MNode("group", Live()), new MNode("amount", "1"), new MNode("sort", new MNode("type", "waypoint"), new MNode("wpid", MNode.Q(Target)))), new MNode("human", new MNode("veterancy", "8"))) }, Target, "pointer_blue");
+            // 찍은 자리 둘레의 내 병사(탄 승무원 포함): 미션 선택자에 반경 거르기가 없어(바닐라 include 종류 15가지에 없음) 찍은 자리에서 가까운 내 병사 VetAround명으로 한다
+            Tool("vet_one", "Max veterancy (my soldiers around point)", "back", new[] { new MNode(MNode.Q("actor_state"), new MNode("selector", new MNode("source", "advanced"),
+                new MNode("group", new MNode("include", new MNode("state", new MNode("state", "user_control")), new MNode("prop", new MNode("prop", "human"))), new MNode("exclude", MNode.Tag("hidden"), new MNode("state", new MNode("state", "dead")))),
+                new MNode("amount", VetAround.ToString()), new MNode("sort", new MNode("type", "waypoint"), new MNode("wpid", MNode.Q(Target)))), new MNode("human", new MNode("veterancy", "8"))) }, Target, "pointer_blue");
             Tool("maxvet_on", "Spawn at max veterancy on", "back", new[] { MNode.SetVar("ctb_maxvet", 1) });
             Tool("maxvet_off", "Spawn at max veterancy off", "back", new[] { MNode.SetVar("ctb_maxvet", 0) });
             Tool("del_one", "Delete unit (pick)", "back", new[] { new MNode(MNode.Q("delete"), new MNode("selector", new MNode("source", "advanced"), new MNode("group", new MNode("include", new MNode("prop", new MNode("prop", "human"))), Live()), new MNode("group", new MNode("include", new MNode("prop", new MNode("prop", "vehicle"))), Live()), new MNode("amount", "1"), new MNode("sort", new MNode("type", "waypoint"), new MNode("wpid", MNode.Q(Target))))) }, Target, "pointer");
@@ -453,13 +528,61 @@ namespace CtaToybox.Core.Spawn
         static MNode InZoneHumans() { return new MNode("selector", new MNode("source", "advanced"), new MNode("group", new MNode("select", Zone("infantryzone")), new MNode("include", new MNode("prop", new MNode("prop", "human"))), new MNode("exclude", MNode.Tag("hidden"), new MNode("state", new MNode("state", "dead"))))); }
         static MNode Tagged(string tag) { return new MNode("selector", new MNode("source", "advanced"), new MNode("group", new MNode("select", MNode.Tag(tag)), new MNode("exclude", MNode.Tag("hidden"), MNode.Tag("un")))); }
 
+        // 소속 정하기. 새로 만든 유닛에 ctb_own 태그를 잠시 붙여 한 번에 정한다.
+        // 나(11): 판 안에서 찾은 내 번호. 내 번호는 "player k의 유닛 가운데 user_control 상태인 것이 있다"로 찾는다
+        //   (고급 선택자 {include {player {player "k"}}}와 {state {state user_control}}, 바닐라 미션 1,882·여러 회. "if" {condition {type entities}}는 바닐라 3,288회).
+        //   못 찾으면 player 0(바닐라 캠페인의 사용자 번호, {player "0"} 2,774회).
+        // 아군 AI(12)·적 AI(13): 내 번호 m에 대해 {relation {relation ally|enemy} {player "m"}}인 유닛이 있는 첫 번호 j(j ≠ m, 바닐라 732회). 못 찾으면 autoassign.
+        // 사용자 지적(2026-10-18): Player 0~9로는 내가 몇 번인지 모른다. 설계도 "내 소속은 Auto Assign이나 고정 번호로 정하지 않는다"였다
+        static MNode SetPlayer(string tag, int player) { return new MNode(MNode.Q("player"), Tagged(tag), new MNode("operation", "set"), new MNode("player", MNode.Q(player.ToString()))); }
+
+        static MNode IfAny(MNode group, params object[] actions)
+        {
+            return new MNode(MNode.Q("if"), new MNode("condition", new MNode("type", "entities"), new MNode("selector", new MNode("source", "advanced"), group))).Add(actions);
+        }
+
+        static MNode PlayerUnits(int k, MNode filter)
+        {
+            var include = new MNode("include", new MNode("player", new MNode("player", MNode.Q(k.ToString()))));
+            if (filter != null) include.Add(filter);
+            return new MNode("group", include, new MNode("exclude", MNode.Tag("hidden"), new MNode("state", new MNode("state", "dead"))));
+        }
+
+        // 내 번호를 ctb_me에 적는다(이미 알면 그대로)
+        static IEnumerable<object> FindMe()
+        {
+            for (int k = 0; k <= 9; k++)
+                yield return MNode.IfVar(Me, "==", 0, IfAny(PlayerUnits(k, new MNode("state", new MNode("state", "user_control"))), MNode.SetVar(Me, k + 1)));
+        }
+
+        static IEnumerable<object> Relative(string tag, string relation)
+        {
+            for (int m = 0; m <= 9; m++)
+            {
+                var block = new List<object> { MNode.SetVar(Found, 0) };
+                for (int j = 0; j <= 9; j++)
+                    if (j != m) block.Add(MNode.IfVar(Found, "==", 0, IfAny(PlayerUnits(j, new MNode("relation", new MNode("relation", relation), new MNode("player", MNode.Q(m.ToString())))), SetPlayer(tag, j), MNode.SetVar(Found, 1))));
+                block.Add(MNode.IfVar(Found, "==", 0, new MNode(MNode.Q("autoassign"), Tagged(tag))));
+                yield return MNode.IfVar(Me, "==", m + 1, block.ToArray());
+            }
+            yield return MNode.IfVar(Me, "==", 0, new MNode(MNode.Q("autoassign"), Tagged(tag)));
+        }
+
         static MNode OwnerFunction(string[] tags)
         {
+            const string own = "ctb_own";
             var f = new MNode(MNode.Q("ctb_owner"));
-            f.Add(MNode.IfVar("ctb_owner", "==", 0, tags.Select(t => (object)new MNode(MNode.Q("autoassign"), Tagged(t))).ToArray()));
-            for (int k = 1; k <= 10; k++)
-                f.Add(MNode.IfVar("ctb_owner", "==", k, tags.Select(t => (object)new MNode(MNode.Q("player"), Tagged(t), new MNode("operation", "set"), new MNode("player", MNode.Q((k - 1).ToString())))).ToArray()));
-            foreach (string t in tags) f.Add(new MNode(MNode.Q("actor_state"), Tagged(t), new MNode("control", "user")));
+            foreach (string t in tags) f.Add(new MNode(MNode.Q("entity_state"), Tagged(t), new MNode("tag_add", own)));
+            f.Add(FindMe().ToArray());
+            f.Add(MNode.IfVar("ctb_owner", "==", 0, new MNode(MNode.Q("autoassign"), Tagged(own))));
+            for (int k = 1; k <= 10; k++) f.Add(MNode.IfVar("ctb_owner", "==", k, SetPlayer(own, k - 1)));
+            var me = new List<object> { MNode.IfVar(Me, "==", 0, SetPlayer(own, 0)) };
+            for (int m = 0; m <= 9; m++) me.Add(MNode.IfVar(Me, "==", m + 1, SetPlayer(own, m)));
+            f.Add(MNode.IfVar("ctb_owner", "==", MeOwner, me.ToArray()));
+            f.Add(MNode.IfVar("ctb_owner", "==", AllyOwner, Relative(own, "ally").ToArray()));
+            f.Add(MNode.IfVar("ctb_owner", "==", EnemyOwner, Relative(own, "enemy").ToArray()));
+            f.Add(new MNode(MNode.Q("actor_state"), Tagged(own), new MNode("control", "user")));
+            f.Add(new MNode(MNode.Q("entity_state"), Tagged(own), new MNode("tag_remove", own)));
             return f;
         }
 
@@ -505,10 +628,16 @@ namespace CtaToybox.Core.Spawn
             start.Add(MNode.IfVar("ctb_campaign", "==", 0, sw, MNode.SetVar("ctb_nation", 0)));
             // ctb_nation_side를 ctb_nation으로 옮긴다(캠페인은 nation_<국가>.mi가 이미 정했다)
             foreach (string army in armies) start.Add(MNode.IfVar("ctb_campaign", "==", 0, MNode.IfVar("ctb_nation_side", "==", armies.IndexOf(army) + 1, MNode.SetVar("ctb_nation", armies.IndexOf(army) + 1))));
-            start.Add(MNode.IfVar("ctb_campaign", "==", 1, MNode.SetVar("ctb_owner", 1)));
+            // 소속 기본값은 나(설계: 처음에 자동으로 정한다). 처음엔 맨 위 Spawn 단추만 보인다(설계 "첫 화면", 사용자 지적 2026-10-18: 처음부터 다 펼쳐져 있다)
+            start.Add(MNode.SetVar("ctb_owner", MeOwner));
+            start.Add(MNode.Hide(HideAll));
+            start.Add(MNode.SetVar(Open, 0));
             start.Add(MNode.Show(Root));
-            start.Add(MNode.IfVar("ctb_campaign", "==", 0, MNode.Hide(HideAll), MNode.Show("ctb_s" + result.Screens.Single(s => s.Title == "Owner").Id + "_*"), MNode.SetVar(Open, 1)));
             yield return new MNode(MNode.Q("ctb_start"), "{condition }", start);
+            // 내 번호를 판 안에서 찾을 때까지 3초마다 본다(스커미시는 처음에 내 유닛이 없을 수 있다)
+            var find = new MNode("actions", new MNode(MNode.Q("delay"), new MNode("time", "3")));
+            find.Add(FindMe().ToArray());
+            yield return new MNode(MNode.Q("ctb_find_me"), "{autoreset}", new MNode("condition", new MNode("terms", new MNode(MNode.Q("1.cmp_i"), new MNode("var", MNode.Q(Me + "$")), new MNode("op", MNode.Q("==")), new MNode("value", "0")))), find);
             yield return new MNode(MNode.Q("ctb_keep_menu"), "{autoreset}", new MNode("condition", new MNode("terms", new MNode(MNode.Q("1.cmp_i"), new MNode("var", MNode.Q("ctb_never$")), new MNode("op", MNode.Q("==")), new MNode("value", "0")))),
                 new MNode("actions", new MNode(MNode.Q("delay"), new MNode("time", "30")), MNode.Show(Root)));
             yield return new MNode(MNode.Q("ctb_god_loop"), "{autoreset}", new MNode("condition", new MNode("terms", new MNode(MNode.Q("1.cmp_i"), new MNode("var", MNode.Q("ctb_god$")), new MNode("op", MNode.Q("==")), new MNode("value", "1")))),
@@ -520,7 +649,7 @@ namespace CtaToybox.Core.Spawn
             var reinf = new MNode("reinforcements");
             reinf.Add(Button(new MenuButton { Name = Root, Text = Str("spawn", "Spawn"), Image = "button_1_ger", Event = "ctb_e_root" }, true));
             foreach (var s in result.Screens) foreach (var b in s.Buttons) reinf.Add(Button(b, false));
-            var vars = new MNode("vars", new[] { "ctb_nation", "ctb_nation_side", "ctb_campaign", "ctb_owner", "ctb_god", "ctb_maxvet", "ctb_never", Open }.Concat(armies.Select(HasVar)).Select(v => (object)new MNode(MNode.Q(v))).ToArray());
+            var vars = new MNode("vars", new[] { "ctb_nation", "ctb_nation_side", "ctb_campaign", "ctb_owner", "ctb_god", "ctb_maxvet", "ctb_never", Open, Me, Found }.Concat(armies.Select(HasVar)).Select(v => (object)new MNode(MNode.Q(v))).ToArray());
             var funcs = new MNode("functions").Add(Functions(home).ToArray());
             var trig = new MNode("triggers").Add(Loops(armies).ToArray()).Add(triggers.ToArray());
             var zones = new[] { ("infantryzone", 77777), ("tankzone", 88888) }.Select(z => new MNode("zone " + MNode.Q("poly"), new MNode("position", z.Item2 + " " + z.Item2 + " 0"), new MNode("Name", MNode.Q(z.Item1)),
@@ -529,7 +658,8 @@ namespace CtaToybox.Core.Spawn
                 new MNode(MNode.Q(WaitInf), new MNode("position", "77777 77777 0"), new MNode("radius", "1")),
                 new MNode(MNode.Q(WaitVeh), new MNode("position", "88888 88888 0"), new MNode("radius", "1")),
                 new MNode(MNode.Q(Place), new MNode("position", "-9553.58 7012.8 0"), new MNode("radius", "1")),
-                new MNode(MNode.Q(Target), new MNode("position", "-9546.01 7248.6 0"), new MNode("radius", "1")));
+                new MNode(MNode.Q(Target), new MNode("position", "-9546.01 7248.6 0"), new MNode("radius", "1")),
+                new MNode(MNode.Q(AirTarget), new MNode("position", "-9546.01 7248.6 0"), new MNode("radius", "1")));
             foreach (var b in Barrages) waypoints.Add(new MNode(MNode.Q("ctb_wp_" + b.Key), new MNode("position", "-9546.01 7248.6 0"), new MNode("radius", b.Radius.ToString())));
             var helpers = new MNode("Helpers").Add(events.Select(e => (object)new MNode("event", MNode.Q(e))).ToArray()).Add(zones).Add(reinf, vars, funcs, trig, waypoints);
             result.Templates = humanTemplates.Count;

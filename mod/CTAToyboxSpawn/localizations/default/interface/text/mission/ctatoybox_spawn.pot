@@ -6,6 +6,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgctxt "mission/ctatoybox_spawn/air_l"
+msgid "Air strike (large)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/air_m"
+msgid "Air strike (medium)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/air_s"
+msgid "Air strike (small)"
+msgstr ""
+
 msgctxt "mission/ctatoybox_spawn/aircraft"
 msgid "Aircraft"
 msgstr ""
@@ -750,10 +762,6 @@ msgctxt "mission/ctatoybox_spawn/maxvet_on"
 msgid "Spawn at max veterancy on"
 msgstr ""
 
-msgctxt "mission/ctatoybox_spawn/nation"
-msgid "Nation"
-msgstr ""
-
 msgctxt "mission/ctatoybox_spawn/nation_eng"
 msgid "Britain"
 msgstr ""
@@ -764,6 +772,30 @@ msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_ger"
 msgid "Germany"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/nation_is_eng"
+msgid "Nation: Britain"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/nation_is_fin"
+msgid "Nation: Finland"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/nation_is_ger"
+msgid "Nation: Germany"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/nation_is_jap"
+msgid "Nation: Japan"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/nation_is_rus"
+msgid "Nation: Soviet Union"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/nation_is_usa"
+msgid "Nation: United States"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/nation_jap"
@@ -780,10 +812,6 @@ msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/next"
 msgid "Next"
-msgstr ""
-
-msgctxt "mission/ctatoybox_spawn/owner"
-msgid "Owner"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_0"
@@ -828,6 +856,114 @@ msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/owner_9"
 msgid "Player 8"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_ally"
+msgid "Ally AI"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_enemy"
+msgid "Enemy AI"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_0"
+msgid "Owner: Auto assign"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_1"
+msgid "Owner: Player 0"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_10"
+msgid "Owner: Player 9"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_2"
+msgid "Owner: Player 1"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_3"
+msgid "Owner: Player 2"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_4"
+msgid "Owner: Player 3"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_5"
+msgid "Owner: Player 4"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_6"
+msgid "Owner: Player 5"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_7"
+msgid "Owner: Player 6"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_8"
+msgid "Owner: Player 7"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_9"
+msgid "Owner: Player 8"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_ally"
+msgid "Owner: Ally AI"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_enemy"
+msgid "Owner: Enemy AI"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_is_me"
+msgid "Owner: Me"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_me"
+msgid "Me"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_1"
+msgid "Player 0 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_10"
+msgid "Player 9 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_2"
+msgid "Player 1 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_3"
+msgid "Player 2 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_4"
+msgid "Player 3 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_5"
+msgid "Player 4 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_6"
+msgid "Player 5 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_7"
+msgid "Player 6 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_8"
+msgid "Player 7 (you)"
+msgstr ""
+
+msgctxt "mission/ctatoybox_spawn/owner_you_9"
+msgid "Player 8 (you)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/period_early"
@@ -883,7 +1019,7 @@ msgid "Max veterancy (all mine)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/vet_one"
-msgid "Max veterancy (pick unit)"
+msgid "Max veterancy (my soldiers around point)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/wrecks"
