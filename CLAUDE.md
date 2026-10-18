@@ -7,7 +7,8 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 - `main`은 보호 브랜치다. 직접 커밋·푸시하지 않는다.
 - `develop`에서 `feat/*`, `fix/*`, `chore/*`, `docs/*` 브랜치를 분기하고 `develop`으로 병합한다.
 - `main`에는 릴리스 시점에 `develop` → `main`으로만 들어간다.
-- 원격 저장소가 생기기 전까지 PR은 로컬 `git merge --no-ff`로 대신한다.
+- 원격 저장소: https://github.com/game-mod-project/CTAGOHToybox (2026-10-19부터). 작업 브랜치를 푸시해 `develop`으로 PR하고(`gh pr create --base develop`), 릴리스는 `develop` → `main` PR. CI가 없으니 머지 전에 `tools/tests/Run-Tests.ps1`을 통과시킨다. 머지는 merge commit.
+- 2026-10-19 이전 기록은 로컬 `git merge --no-ff`로 합쳤다.
 
 ## 폴더
 
@@ -20,6 +21,7 @@ Call to Arms - Gates of Hell: Ostfront 모드 개발용 레퍼런스 저장소.
 | `mod/CTAToybox/` | 모드 본체. 게임의 `mods\CTAToybox`가 이 폴더를 가리키는 정션이다 |
 | `l10n/` | 한글화 번역 보관(`l10n/ko/*.po`, 용어집). 손으로 고친다 |
 | `mod/CTAToyboxSpawn/` | 스폰 모드(`spawn-menu build` 생성물). 맵 사본은 git에 넣지 않는다 |
+| `mod/CTAToyboxSpawn_<국가>/` | 국가 스폰 모드 6개(`spawn-menu build` 생성물, 멀티 맵 견본). 바탕 스폰 모드 뒤에 켠다 |
 | `_work/` | 게임에서 추출한 원본. 커밋하지 않는다 |
 
 ## 명령
