@@ -2,7 +2,7 @@
 
 흩어져 있던 미룬 일, 미확인, 결정 대기를 한곳에 모았다. 이 문서는 손으로 고친다.
 
-- **모은 곳**: 핸드오프(`docs/superpowers/handoff-2026-10-13·14·15·16·17.md`), 스펙 3개와 플랜의 "범위·알려진 한계", `docs/07-stat-editor/ingame-check.md`, `docs/02·03·04·08·09`, `data/mods/*/notes.md`, 하위 프로젝트 B 최종 검토.
+- **모은 곳**: 핸드오프(`docs/superpowers/handoff-2026-10-13·14·15·16·17·18.md`), 스펙 3개와 플랜의 "범위·알려진 한계", `docs/07-stat-editor/ingame-check.md`, `docs/02·03·04·08·09`, `data/mods/*/notes.md`, 하위 프로젝트 B 최종 검토.
 - **확인한 방법**: 2026-10-15에 코드와 CLI로 지금도 남아 있는지 다시 봤다. 이미 풀린 것은 맨 아래 "정리하며 지운 것"에 근거와 함께 적었다.
 - **고치는 규칙**: 일을 끝내면 그 줄을 지우고 커밋 메시지에 ID를 적는다. 새로 미루는 일은 같은 꼴로 더한다.
 - **크기**: S = 파일 한두 개, 테스트로 끝남. M = 여러 파일이나 화면 확인까지. L = 설계(스펙)부터 필요.
@@ -14,6 +14,8 @@
 | P2 | 원 요청 4번 "추가 기능 검토" | 스펙 A 12행 | **진행**(사용자 2026-10-17). 후보 12개와 권하는 순서를 `docs/11-feature-review.md`에 적었다. 1순위 F1 일괄 규칙은 2026-10-17에 끝냈다(`rule` 명령, 앱 규칙 창). 다음 후보(F2 SDL 원문 주석, F3 무기·탄약 복제)는 사용자가 고른다 |
 | P4 | 대형 모드 비교(Hotmod 1968 등 6개) | `docs/09` 77행 | **보류**(사용자 2026-10-15, 2026-10-17 다시 보류). 구독하면 모드 분석 도구로 비교 |
 | P8 | Yandex Disk의 러시아어 GEM2 문서 묶음을 받아 볼지 | H13 85행 | **받아서 확인**(사용자 2026-10-17). 주소가 기록에 없다. 옛 Best Way 위키 보존본, xgm.guru 글, 웹 검색으로 찾지 못했다. 사용자가 주소를 알려 주면 받아서 확인한다 |
+| S1 | 스폰 모드 멀티 맵의 견본 로딩(약 100초)을 줄일지 | 2026-10-17 21:59 game.log, 사용자 질문 2026-10-18 | 견본 사람 2,965명 중 분대·낱개용 2,792(바닐라 1,577·모드 1,215), 승무원만 105(모드 34). 승무원 견본을 빼도 1~3.5%라 효과 없음(사용자에게 보고). 남은 선택지: ① 멀티에서 메뉴 보병을 빼고 구매 창에 맡김(다른 국가·AI 소속 보병 소환이 없어짐) ② 국가·시기마다 역할 대표 분대만(Spawn Menu는 약 94분대·견본 755). 둘 다 기능이 줄어 사용자가 고른다 |
+| S2 | 스폰 메뉴 글자 한글화 | 사용자 지적 2026-10-18(메뉴가 영어) | 메뉴 글자는 `localizations/default/interface/text/mission/ctatoybox_spawn.pot`(영어, 254항목 안팎). `l10n` 원문 계층에 스폰 모드가 들어가 `mod/CTAToybox/localizations/…/ctatoybox_spawn.pot` 영어 사본이 생긴다(스폰 모드 판이 뒤라 게임에는 영향 없음). 번역하려면 `l10n/ko`에 넣거나, 생성기가 한글 .pot을 같이 내게 한다 |
 
 ## 2. 게임 안 확인
 
@@ -131,5 +133,5 @@ E4·E14~E18은 2026-10-16~17에 끝냈다(아래 "정리하며 지운 것").
 | 빌드 생성물을 git에 넣을지(P6) | 2026-10-17 "추가": `mod/CTAToybox/resource`와 `.ctatoybox-build.json`을 추적한다. `.gitattributes`로 바이트를 그대로 둔다(`chore/track-build-output`) |
 | 외부 테스트 프레임워크(P7) | 2026-10-17 "사용": `editor/CtaToybox.Core.XunitTests`가 자체 테스트 묶음 47개를 xUnit으로 돌린다. `Run-Tests.ps1`은 `dotnet test`를 쓴다(`chore/xunit-tests`) |
 | 확인용 컨퀘스트 캠페인(P9) | 2026-10-17 "정리": "Conquest 3"은 저장 파일이 이미 없었다. 확인용 `ctatoybox check.sav`·`ctatoybox check2.sav`는 지우지 않고 `_work/ingame/campaign-archive/`로 옮겼다. 사용자 캠페인 conquest 1·2는 그대로다 |
-| 하위 프로젝트 C 스폰 모드 대체(P1, W-J) | `feat/spawn-menu`(2026-10-17): 조사 `docs/13-spawn-menu-spike.md`, 스펙·계획 `docs/superpowers/{specs,plans}/2026-10-17-spawn-menu-replacement*`. 명령줄 `spawn-menu preview|build`가 `mod/CTAToyboxSpawn`을 만든다: 스커미시 비용 0·전 유닛 로스터(새 항목 612), 맵 479개(캠페인 91·멀티 388)에 메뉴 include, 증원 창 단계 메뉴(유닛 1,238, 분대 1,146, 단추 3,630)와 옵션. 맵 사본은 git에 넣지 않는다. 게임 안 동작은 미확인(README "스폰 모드") |
+| 하위 프로젝트 C 스폰 모드 대체(P1, W-J) | `feat/spawn-menu`(2026-10-17): 조사 `docs/13-spawn-menu-spike.md`, 스펙·계획 `docs/superpowers/{specs,plans}/2026-10-17-spawn-menu-replacement*`. 명령줄 `spawn-menu preview|build`가 `mod/CTAToyboxSpawn`을 만든다. 2026-10-18에 사용자 확인으로 고친 것(차량 더하기 기본 끔, 견본 국가별, 세로 10칸, 접기, 소속 나·아군·적, 포격·항공 폭격, Fusion 전차 판정, 모드 순서)은 설계 문서 맨 아래 "구현 뒤 바뀐 것". 지금 유닛 1,422, 분대 1,146, 맵 479개. 맵 사본은 git에 넣지 않는다 |
 | 한글화(P10) | `feat/korean-localization`(2026-10-17): 명령줄 `l10n extract|check|build`, 번역 보관 `l10n/ko`(파일 432, 항목 27,939, 고유 원문 16,907을 묶음 60개로 AI 번역, 같은 원문은 같은 번역), 용어집 `l10n/ko/glossary.psv`, 출력 `mod/CTAToybox/localizations`와 한글 없는 글꼴 81개의 `.font`(`main_*.fnt`로). 검사 오류 0, 원문이 빈 160항목만 영어. 편집기 이름 `원문 (한글)`. 맵·미션 파일에 박힌 글 207개는 모두 디버그·트리거 이름이라 다루지 않았다. 게임 안 동작(미확인 5개)은 설계 문서 |
