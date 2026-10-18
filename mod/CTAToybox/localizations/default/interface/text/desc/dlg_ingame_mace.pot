@@ -1,0 +1,194 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms - Gates of Hell: Ostfront (dlg_ingame)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "actionbar/littledavid"
+msgid "36인치 리틀 데이비드 설치"
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon1"
+msgid "Type 99 연막통 설치"
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon1/usage"
+msgid "이 단추를 누른 뒤 지도에서 끌어 연막탄을 놓을 위치를 정한다."
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon2"
+msgid "10kg 연막통 설치"
+msgstr ""
+
+msgctxt "actionbar/deploy_weapon2/usage"
+msgid "이 단추를 누른 뒤 지도에서 끌어 연막탄을 놓을 위치를 정한다."
+msgstr ""
+
+msgctxt "actionbar/littledavid/usage"
+msgid "이 단추를 누른 뒤 지도에서 끌어 해안포 진지를 지을 위치를 정한다. 공병으로 콘크리트 받침을 다시 눌러 강화한다. <c(F44336)>포는 회전하지 않는다</c>"
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_normal"
+msgid "AP/HE로 전환"
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_normal/usage"
+msgid "이 단추를 눌러 사격 방식을 전환한다: AP/HE만 사격."
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_heat"
+msgid "HEAT로 전환"
+msgstr ""
+
+msgctxt "actionbar/ammo_switch_heat/usage"
+msgid "이 단추를 눌러 사격 방식을 전환한다: HEAT만 발사."
+msgstr ""
+
+msgctxt "actionbar/smine_decoy"
+msgid "S-Mine 연막"
+msgstr ""
+
+msgctxt "actionbar/toggle_back_mg"
+msgid "측면/후방 기관총 켜기/끄기"
+msgstr ""
+
+msgctxt "actionbar/toggle_back_mg/usage"
+msgid "이 단추를 눌러 측면/후방 기관총을 켜거나 끈다."
+msgstr ""
+
+msgctxt "main_menu2/dynamic_campaign/region_hint_Ostfront_Talvisota_West"
+msgid "동부전선 지도 + 겨울전쟁 지도 + 서유럽 - (모든 지도)"
+msgstr ""
+
+msgctxt "actionbar/jap_type21_buildable"
+msgid "로켓 포좌 설치"
+msgstr ""
+
+msgctxt "actionbar/jap_type21_buildable/usage"
+msgid "이 단추를 누른 뒤 지도에서 끌어 야포의 위치를 정한다. 고정식이라 움직일 수 없고 최소·최대 사거리가 있다는 점을 기억하라."
+msgstr ""
+
+msgctxt "actionbar/swe_gun_buildable/action"
+msgid "로켓 포좌 설치"
+msgstr ""
+
+msgctxt "actionbar/jap_type21_buildable"
+msgid "야포 포좌 설치"
+msgstr ""
+
+msgctxt "actionbar/swe_gun_buildable/usage"
+msgid "이 단추를 누른 뒤 지도에서 끌어 야포의 위치를 정한다. 고정식이라 움직일 수 없다는 점을 기억하라."
+msgstr ""
+
+msgctxt "actionbar/swe_gun_buildable/action"
+msgid "야포 포좌 설치"
+msgstr ""
+
+msgctxt "mp/presets/unit/mace"
+msgid "샌드박스 MACE (제작 중)"
+msgstr ""
+
+msgctxt "mp/army/mace_test"
+msgid "[MACE] 시험 (제작 중)"
+msgstr ""
+
+msgctxt "mp/army/test"
+msgid "[MACE] 시험 (제작 중)"
+msgstr ""
+
+msgctxt "mp/alliance/jap"
+msgid "일본"
+msgstr ""
+
+msgctxt "mp/army/jap"
+msgid "일본"
+msgstr ""
+
+msgctxt "mp/army/+france"
+msgid "[MACE] 프랑스"
+msgstr ""
+
+msgctxt "mp/army/+finland"
+msgid "[MACE] 핀란드"
+msgstr ""
+
+msgctxt "mp/army/+germany"
+msgid "[MACE] 독일"
+msgstr ""
+
+msgctxt "mp/army/jap_late"
+msgid "[MACE] 일본 (후기)"
+msgstr ""
+
+msgctxt "mp/army/+japan"
+msgid "[MACE] 일본"
+msgstr ""
+
+msgctxt "mp/army/+swe"
+msgid "[MACE] 스웨덴"
+msgstr ""
+
+msgctxt "mp/army/+usa"
+msgid "[MACE] 미국"
+msgstr ""
+
+msgctxt "mp/army/+ussr"
+msgid "[MACE] 소련"
+msgstr ""
+
+msgctxt "mp/army/fra"
+msgid "[MACE] 프랑스"
+msgstr ""
+
+msgctxt "mp/army/fra_early"
+msgid "[MACE] 프랑스 (초기)"
+msgstr ""
+
+msgctxt "mp/army/fra_mid"
+msgid "[MACE] 프랑스 (중기)"
+msgstr ""
+
+msgctxt "mp/army/small_arms_test"
+msgid "[MACE] 총기 시험 (제작 중)"
+msgstr ""
+
+msgctxt "actionbar/recovery"
+msgid "근처 차량 수리"
+msgstr ""
+
+msgctxt "actionbar/recovery/usage"
+msgid "이 단추를 눌러 수리 도구를 쓰고 제한된 반경 안에서 수리를 시작한다. <c(F44336)>주의! 구난차량과 수리받는 차량 모두 40초 동안 움직일 수 없다. 이 동작은 취소할 수 없다.</c>"
+msgstr ""
+
+msgctxt "actionbar/deploy_gas"
+msgid "머스터드 가스 살포"
+msgstr ""
+
+msgctxt "actionbar/deploy_gas/usage"
+msgid "이 단추를 눌러 트레일러에서 주변 지역으로 <c(18AB31)>머스터드 가스</c>를 살포한다."
+msgstr ""
+
+msgctxt "actionbar/detonate_wanze_charge"
+msgid "장약 기폭!"
+msgstr ""
+
+msgctxt "actionbar/detonate_wanze_charge/usage"
+msgid "이 단추를 눌러 Wanze 장약을 기폭한다. 직접 조종(DC)해서 사격 키를 눌러도 된다."
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/skip_preparation_jap"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mp/scene/unit_spawn/move_spawn_jap"
+msgid "배치 지점 이동"
+msgstr ""

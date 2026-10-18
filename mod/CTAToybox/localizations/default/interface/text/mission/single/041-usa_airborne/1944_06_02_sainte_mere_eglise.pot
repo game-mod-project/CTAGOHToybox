@@ -1,0 +1,249 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_02_sainte_mere_eglise)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/allied/thunder"
+msgid "Thunder!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/case1_failed"
+msgid "길을 잃고 지휘관을 찾지 못했다. 포로로 잡혔다 - 임무 실패!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/date"
+msgid "1944년 6월 6일 · 프랑스 노르망디, 생메르에글리즈"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/debugseen"
+msgid "%1%회 목격됨"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/hint/lastwarning"
+msgid "서둘러라! 포로가 되지 않으려면 마을 남서쪽(붉은 구역)에서 벗어나라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/hint/recruitpara"
+msgid "착지하는 공수부대원을 모으려면 가까이 다가가라. 자동으로 네 팀에 배정된다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/hint/recruitpara2"
+msgid "또는 아군 유닛을 모으려는 대상 가까이로 유닛을 이동시키고 아군 위에 커서를 올리면 붙잡기 아이콘이 나타난다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/hint/01avoid"
+msgid "지도를 확인하고 번갈아 나타나는 표지를 따라 목표에 도달하라. 가능하면 독일군 순찰대를 피하라. 무엇보다 포로가 되지 않도록 마을 남서쪽(붉은 구역)에는 접근하지 마라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/hint/avoidaa"
+msgid "지휘관과 합류하기 전에는 독일군 대공포에서 떨어져라! 표시된 대로 교회 북쪽 일대를 수색하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_killaaguns0"
+msgid "대공포를 파괴하라! <c(e74236)>0/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_killaaguns1"
+msgid "대공포를 파괴하라! <c(e74236)>1/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_killaaguns2"
+msgid "대공포를 파괴하라! <c(e74236)>2/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_killaaguns3"
+msgid "대공포를 파괴하라! <c(e74236)>3/4 파괴"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_killaaguns4"
+msgid "대공포를 파괴하라! <c(4fe736)>4 파괴"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_recruit"
+msgid "공수부대원 열 명을 부대에 합류시켜라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_rescue_men"
+msgid "포로가 된 공수부대원들을 구출하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/mission_sniper"
+msgid "독일 저격수를 사살하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/name"
+msgid "불길 속으로 떨어지다"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/name_big"
+msgid "불길 속으로 떨어지다"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/02a"
+msgid "만나서 반갑다! 어쩌면 해낼 수 있겠다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/03"
+msgid "더 많은 병력을 모으는 동안 마을 북쪽 구역에 발판을 확보해야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/04"
+msgid "독일 놈들이 아군 몇 명을 끌고 가는 것을 봤다. 구해 내자!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/05"
+msgid "아군 몇몇이 아직 이 마을에 착지하고 있다. 눈에 띄는 공수대원은 모두 합류시키는 게 좋겠다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/06"
+msgid "저 독일 대공포가 아직 근처 낙하 지점을 위협하고 있다. 더 피해를 주기 전에 제거해야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/07"
+msgid "저건 독일군 본부 같다! 무전기가 있는지 확인하고 파괴하자."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/08"
+msgid "아! 독일군 차량 집결지를 찾았다. 박살 낼 수 있을 것 같다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/convoy01"
+msgid "마을은 이제 완전히 우리가 장악했지만, 독일 놈들은 반드시 반격해 올 것이다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/convoy02"
+msgid "적 반격 부대가 곧 지도에 표시된 여러 방향에서 집결할 것이다. 전개하기 전에 매복해서 적 병력을 전부 섬멸해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/narrator/secret"
+msgid "오, 이게 뭐지? 박격포와 함께 보급 투하물이 여기까지 날아와 떨어진 모양이다! 이거 쓸 만하군!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/outro_completed"
+msgid "훌륭하다, 생메르에글리즈를 점령하고 반격에서 지켜 냈다! 둑길을 장악한 덕에 제4보병사단은 적 반격의 위협 없이 유타 해변을 강습할 수 있다. 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/outro_failed"
+msgid "생메르에글리즈를 점령하지 못했다! 이제 독일군이 증원을 보내 해변의 아군에게 반격할 길이 열렸다. 침공의 결과가 심각하게 위태롭다! 다시 시도해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/place"
+msgid "제82공수사단 '올 아메리칸'"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/01"
+msgid "젠장, 장비를 다 잃었다! 칼 한 자루만 남았다. 제대로 된 무기를 빨리 구해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/01_bis"
+msgid "독일 놈이 아직 나를 못 본 것 같다. 소총을 가져가도 개의치 않겠지..."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/02"
+msgid "어이, 제군들! 찾아서 다행이다! 자, 소총을 들고 출발한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/all_aadestroyed"
+msgid "좋다! Flak 포가 전부 조용해졌다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/convoy"
+msgid "독일 놈들이 왔다! 뜨겁게 환영해 주자. 끝까지 간다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/firstgundestroyed"
+msgid "첫 번째 Flak 파괴!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/flash"
+msgid "Flash!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/gundestroyed"
+msgid "독일 대공포 또 하나 지웠다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/gundestroyed2"
+msgid "대공포 하나 더 날려 버렸다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/officerfind"
+msgid "같은 '스틱' 사람들이 교회 북서쪽에 낙하하는 것을 봤다. 거기로 가서 찾아야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/reinf_at"
+msgid "드디어 증원이다! 도움이 정말 필요했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/sniper"
+msgid "젠장! 저격을 받고 있다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/sniper_alt"
+msgid "저격을 받고 있다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/sniper_killed"
+msgid "독일 저격수 제거!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/player/stayonobj"
+msgid "이런! 이 길로 계속 가면 독일 놈들을 훨씬 많이 만나겠다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/recruit_status"
+msgid "공수부대원 %1%/10명을 모았다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/story"
+msgid "  1944년 6월 6일. 제82공수사단이 프랑스로 향하고 있다. D데이 새벽에 노르망디 상공에서 강하한다!\n\n  제505대대에는 단순하지만 야심 찬 목표가 있다. 생메르에글리즈 마을을 빠르게 점령하는 것이다. 낙하 지점은 마을 바로 북서쪽이므로, 집결한 뒤 남동쪽으로 이동한다는 계획이다.\n\n  오전 2시 직전, 제505대대는 편대가 있어야 할 고도보다 훨씬 높이 날고 있다는 사실도 모른 채 밤하늘로 뛰어내린다.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task0"
+msgid "무기를 찾아라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task1"
+msgid "독일군 보초를 피해 지휘관을 찾아라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task2"
+msgid "마을 북쪽에 발판을 확보하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task3_radio"
+msgid "아군 병사를 데려가 독일군 무전소를 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task3_trucks"
+msgid "독일군 차량 집결지를 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task4"
+msgid "반격을 매복 공격으로 격퇴하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task_sec"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/task_sec_completed"
+msgid "비밀 목표 - 잃어버린 보급품 투하물을 찾아라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/timerconvoy"
+msgid "독일군 반격 도착까지:"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise/timerconvoywarn"
+msgid "<c(ff4200)>독일군 반격 도착까지:"
+msgstr ""

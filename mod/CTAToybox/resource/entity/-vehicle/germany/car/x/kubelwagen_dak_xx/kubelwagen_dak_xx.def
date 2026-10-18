@@ -1,0 +1,25 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kubelwagen_dak_xx.mdl"}
+	{volume "body1"
+		{thickness 4}
+	}
+	{volume "body2"
+		{thickness 4}
+	}
+	{volume "body3"
+		{thickness 4}
+	}
+	{volume "part2"
+		{thickness 4}
+	}
+	{volume "part3"
+		{thickness 4}
+	}
+	{volume "part4"
+		{thickness 4}
+	}
+	{volume "part5"
+		{thickness 4}
+	}
+}

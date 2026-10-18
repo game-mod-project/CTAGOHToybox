@@ -1,0 +1,66 @@
+(include "\set\blast.inc")
+
+(define "velocity"			;// muzzle velocity in meters per second
+	{speed (* 0.35 %mps)}
+)
+
+(define "fire rate"			;// rate of fire in rounds per minute 
+	{recoveryTime (/ 60 %rpm)}
+)
+
+(define "reload time"		;// reload time for magazine or shell
+	{rechargeTime %seconds}
+)
+
+(define "default gravity"	;// default gravity setting
+	{gravity 2}
+)
+
+(define "aerial gravity"	;// default gravity setting
+	{gravity 1}
+)
+
+(define "rocket_artillery"
+	{fillingVisible "rocket"}
+	{inventory {noView}}
+	{gravity 4}
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{100 10}
+			{200 20}
+			{299.99 50}
+			{300 100}
+			{320 200}
+		}
+	}
+
+	{range 300 300}
+	("fire rate" rpm(60))
+	("reload time" seconds(120))
+)
+
+(define "armor health"
+	{minimumDamageModifier (* 1.0 %damage)}
+)
+
+;//MACE M8 HEAT
+
+(define "heat_large_blast"					;// 105-149mm cannon HEAT shells
+	{damage blastwave
+		{energy (* %0 1.4)}
+		{area 0.4 0.5}
+		{ground_interaction_radius 0.5}
+	}
+	{damage add blastwave
+		{energy (* %0 0.7)}
+		{area (* %0 0.5) (* %0 0.75)}
+		{ground_interaction_radius 0}		;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+	{damage add blastwave
+		{energy 1.2}
+		{area (* 0.5 (+ %0 5)) (* 0.9 (+ %0 5))}
+		{ground_interaction_radius 0}		;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+)

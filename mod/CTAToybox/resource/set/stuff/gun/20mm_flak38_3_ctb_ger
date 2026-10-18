@@ -1,0 +1,40 @@
+;_________________________________________
+; German light AA gun
+;=========================================
+
+
+{from "pattern gun"			; "flak38"
+	{filling "bulletger_20_auto" 20}
+	{fireSound "cannon/s1/d1/Shared/Autocannon_20to30mm/"}
+	{fireSoundclose "cannon/s1/3p/Shared/Autocannon_20to30mm/"}
+	{reloadSound "tank/reload_small"}
+	("range_autocannon_12-20")
+	{cursor "ironsights/aa"}
+	{calibre 20}
+
+	("fire rate" rpm(420))
+	("reload time" seconds(0.25))
+
+	("velocity m/s" ap(900) apcr(1050) he(860) heat(1))
+	("armor health" damage(30))
+
+	{burst
+		{short 10 0.75}			;// short burst shots on long distance, rand (+-)shots
+		{long 20 1}				;// long burst shots on short distance, rand (+-)shots
+		{rangeKoef 0.85}		;// rangeKoef * aimRange = max long burst distance
+	}
+
+	; Pzgr.39
+	("penetration_short" shell(ap) range(200) a(65) b(53) c(43) d(35) e(21))
+
+	; Pzgr.40
+	("penetration_short" shell(apcr) range(200) a(83) b(46) c(28) d(13) e(6))
+
+
+	("accuracy_direct_auto" r1(0.8) range_ap(200) range_he(200) range_heat(200))
+
+	{parameters "he"										; Sprgr.
+		(mod "mp" {unlimitedRangeTPC 1})	;// unrestricts range in TPC/FPC for shooting at aircraft
+		{FalloffStrength 0}
+	}
+}

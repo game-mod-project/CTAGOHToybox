@@ -1,0 +1,64 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer4b_xx.mdl"}
+	("tracks" thickness(50))
+	{volume "barrel" {thickness 63}}
+
+;// Components
+	{volume "body1"		;// Hull
+		{thickness 50
+			{front 75}
+			{left 36.25}
+			{right 50} 	;// Top nose and bottom nose
+			{rear 25}
+			{top 28}
+			{bottom 20}
+		}
+	}
+	{volume "body2"		;// superstructure
+		{thickness 50
+			{front 75}
+			{left 36.25}
+			{rear 25}
+			{top 28}
+			{bottom 20}
+		}
+	}
+	{volume "turret1" {thickness 36.25 {front 75} {top 25} {bottom 20}}} 	;// Entire Turret
+	{volume "turret2" {thickness 36.25 {top 25} {bottom 20}}} 			;// Hatch + rear part of turret, RD (rounded)
+	{volume "turret3" {thickness 75} {able {holed}}} 									;// Frontal part of the turret, RD
+	{volume "mantlet"
+		{thickness 75}
+	}
+	{volume "engine1" 	;// Bottom part of the engine, superstructure
+		{thickness 36.25
+			{front 25}
+			{right 25} 	;// Bottom nose, rear
+			{top 25}
+			{bottom 20}
+		}
+	}
+	{volume "engine2" 	;// Above superstructure
+		{thickness 25
+			{rear 36.25}
+			{bottom 20}
+		}
+	}
+
+;// Non-Components
+	{volume "armor1" {thickness 13}} 	;// Muffler
+	{volume "cupola" {thickness 75}}
+	{volume "shield1" {thickness 50}}
+	{volume "shieldl1" {thickness 10}}
+	{volume "shieldl2" {thickness 10}}
+	{volume "shieldr1" {thickness 10}}
+	{volume "shieldr2" {thickness 10}}
+
+;// Parts
+	{volume "part5" {thickness 25}} 	;// Driver Hatch
+	{volume "part6" {thickness 25}} 	;// Driver Hatch
+	{volume "part7" {thickness 25}} 	;// Commander Hatch
+	{volume "part8" {thickness 25}}		;// Commander Hatch
+	{volume "part9" {thickness 25}}		;// Engine Hatch
+	{volume "part10" {thickness 25}}	;// Engine Hatch
+}

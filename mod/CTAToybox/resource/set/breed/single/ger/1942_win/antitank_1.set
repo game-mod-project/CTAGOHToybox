@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_at"}
+	{portrait "ger_regular"}
+	{icon "at"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_m42_helmet_winter_cover}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard") 
+		("at_rank_3")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "pzb_39_ctb_ger" filled}
+		{item "m24 grenade" 2}
+		{item "bandage_ger" 6}
+		{item "m24_geballteladung grenade" 2}
+		{item "atrifle_ger ammo" 150}
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 350}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,209 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_12_02_elsenborn)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/date"
+msgid "1944년 12월 21일 · 벨기에 아르덴, 엘젠보른 능선."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/name"
+msgid "진홍 능선"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/name_big"
+msgid "진홍 능선"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator01"
+msgid "다리가 그리 멀지 않을 텐데... 아, 이제 보인다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator02"
+msgid "잠깐, 다리 옆에 움직임이 보인다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator03"
+msgid "독일 놈들 차량이 접근한다! 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator04"
+msgid "바로 앞에 올 때까지 사격하지 마라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator05"
+msgid "글쎄, 별로 저항하지도 않았지만 이제 놈들도 우리가 여기 있는 걸 알겠군..."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator07"
+msgid "이동하자, 우리 연료 집적소를 되찾는다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator09"
+msgid "보라! 저 헛간에 포로를 가둬 놨다! 아군을 구해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator08"
+msgid "연료 집적소를 확보했다! 쓸 만한 중화기나 장비가 있는지 주변을 살펴라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator_soldier01"
+msgid "구해 줘서 고맙다! 저 독일 놈들이 난데없이 튀어나왔다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator10"
+msgid "별말을. 무기를 챙겨서 합류해라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator25"
+msgid "흠... 이 포는 탄약이 필요하군."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator11"
+msgid "북쪽 건물들 옆 무전탑 보이나? 저기 있으면 안 되는 건데. 가서 살펴보자."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator12"
+msgid "탑은 우리 것이다!... 무전기에서 독일 놈들 교신이 들린다. 독일어 할 줄 아는 사람?"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator_soldier05"
+msgid "독일어를 조금 합니다, 소령님! 무슨 말을 하는지 들어 보겠습니다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator_soldier06"
+msgid "그게, 제가 제대로 알아들었다면 독일군 기갑 종대가 거의 다 와서 강 도하 지점에 있답니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator14"
+msgid "제군! 낭비할 시간이 없다! 즉시 다리에 방어를 구축해야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator16"
+msgid "우리 위치를 지키지 못할 때를 대비해 다리 밑에 폭약을 설치해라. 최후 수단으로 다리를 파괴해야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator_soldier02"
+msgid "폭약은 제가 맡겠습니다! 시간만 주십시오!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator19"
+msgid "독일군 정찰 차량이 접근한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator_soldier03"
+msgid "폭약 설치 완료! 하나 더 남았습니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator_soldier04"
+msgid "폭약을 모두 설치했습니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator17"
+msgid "젠장! 놈들이 그를 죽였다! 이제 최후 수단으로 다리를 파괴할 수도 없다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator18"
+msgid "좋다! 다리 파괴는 최후 수단이다. 가능하면 도하 지점을 열어 둬야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator20"
+msgid "무슨 대가를 치르더라도 다리를 사수해라, 제군! 독일 기갑을 한 대도 건너가게 둘 수 없다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator24"
+msgid "구축전차 몇 대가 도하 지점 방어를 도우러 왔다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator22"
+msgid "독일 기갑이 더 접근한다! 막지 못하면 지금이 다리를 폭파할 때다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/narrator23"
+msgid "포기하는 모양이다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/outro_completed"
+msgid "축하한다! 독일군은 돌파하지 못했다! 필요한 귀중한 연료를 얻지 못했고, 이제 서쪽으로 갈 다른 다리를 찾는 수밖에 없다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/outro_failed"
+msgid "캄프그루페 파이퍼는 이제 뫼즈 강까지 열린 길을 얻었다. 노획한 연료를 모두 쓰면 안트베르펜까지 닿을지도 모른다. 다시 도전하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/place"
+msgid "제82공수사단 '올 아메리칸'"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/reinf_blow_up_bridge"
+msgid "다리를 폭파하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/story"
+msgid "  독일군이 아르덴에서 대규모 기습 공격을 개시했다. 그들의 우측방에서 브뤼셀로 가는 길은 일대를 내려다보는 엘젠보른 능선을 지난다. 제277 폭스그레나디어 사단이 능선과 주변 마을을 점령하러 파견되었다. 한편 캄프그루페 파이퍼는 앙블레브 계곡을 따라 계속 서진한다.\n\n  제82공수사단은 독일군 진격을 막을 수 있는 몇 안 되는 미군 부대 중 하나다. 상황은 절박하다. 독일군이 여기를 건너면 인근 연료 집적소에서 필요한 연료를 모두 얻게 된다.\n\n  그래서 당신이 이곳에 투입되었다. 다리를 확보하고 독일군이 쓰지 못하게 하라.\n\n 행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task01"
+msgid "적 호송대를 파괴하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task02"
+msgid "연료 집적소를 확보하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task03"
+msgid "포로를 구출하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task04"
+msgid "무전탑을 조사하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task05"
+msgid "무전을 들어라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task06"
+msgid "다리를 확보하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task07"
+msgid "다리 밑에 폭약을 설치하는 병사를 보호하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task08"
+msgid "다리를 사수하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task_secret01"
+msgid "(비밀 목표) 연료 트럭을 모두 온전히 확보하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task_secret01_uncomp"
+msgid "(비밀 목표 #1)"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task_secret02"
+msgid "(비밀 목표) 다리를 폭파하지 않고 적 공격을 격퇴하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/task_secret02_uncomp"
+msgid "(비밀 목표 #2)"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/timer_explosives"
+msgid "다리 밑에 폭약을 설치하는 병사를 보호하라:"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_02_elsenborn/timer_go_to_bridge"
+msgid "다리를 확보하라!"
+msgstr ""

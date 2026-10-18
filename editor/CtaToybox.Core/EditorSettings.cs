@@ -12,6 +12,8 @@ namespace CtaToybox.Core
         public string OptionsSetPath { get; set; }   // 프로필의 options.set. 읽기만 한다
         public string OutputModDir { get; set; }     // mod.info가 있는 폴더 (이 저장소의 mod\CTAToybox)
         public string OutputModName { get; set; }    // 게임의 mods 아래 폴더 이름
+        [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
+        public string SpawnModDir { get; set; }      // 스폰 모드 폴더. 비면 OutputModDir 옆의 CTAToyboxSpawn
 
         static readonly JsonSerializerOptions Json = new JsonSerializerOptions
         {

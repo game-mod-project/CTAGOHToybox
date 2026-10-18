@@ -1,0 +1,65 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 10mm
+	
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+	("tracks" repair(30) thickness(20))
+
+	{volume "body1"			; Hull
+		{thickness 20
+			{top 8}			; Glacis
+			{rear 8}
+			{bottom 8}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 20
+			{top 8}
+			{rear 8}
+			{bottom 8}
+		}
+	}
+	{volume "body3"			; Round Front SuperStructure
+		{thickness 20
+			{top 8}
+			{rear 8}
+		}
+	}
+	{volume "body4"			; Round Front SuperStructure Top
+		{thickness 20
+			{top 8}
+			{bottom 8}
+		}
+	}
+	{volume "body7"			; 
+		{thickness 8}
+	}
+	{volume "engine1"		; Hull and Superstruture 
+		{thickness 20
+			{front 8}
+			{top 8}
+			{rear 12}
+			{bottom 8}
+		}
+	}
+	{volume "engine2"		; Engine Top Box
+		{thickness 12
+			{top 8}
+			{bottom 8}
+		}
+	}
+	{volume "turret1"		; Turret
+		{thickness 16
+			{top 8}
+			{bottom 8}
+		}
+	}
+	{volume "turret2"		; Turret Front
+		{thickness 16
+			{top 8}
+			{bottom 8}
+		}
+	}

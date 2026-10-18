@@ -1,0 +1,166 @@
+# source: vanilla interface/text/mission/single/02-ger-west/1944_08_19_falaise_escape.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_08_19_falaise_escape)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/date"
+msgid "August 19th, 1944 · Magny, Normandy, France"
+msgstr "1944년 8월 19일 · 프랑스 노르망디 마니"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/name"
+msgid "Escaping the Pocket"
+msgstr "포위망 탈출"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/name_big"
+msgid "Escaping the Pocket"
+msgstr "포위망 탈출"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/01"
+msgid "Fallschirmjäger! We need to cross the river if we want to escape the Allied encirclement. The river current makes it impossible to swim with all our equipment attached."
+msgstr "팔쉬름예거! 연합군 포위망에서 빠져나가려면 강을 건너야 한다. 강물 흐름 때문에 장비를 다 지니고는 헤엄칠 수 없다."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/02"
+msgid "We have spread out into small squads to try to get through the Allied lines. This sector has Americans at every corner, so watch out!"
+msgstr "연합군 전선을 뚫기 위해 소규모 분대로 흩어졌다. 이 구역은 모퉁이마다 미군이 있으니 조심해라!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/03"
+msgid "Your first objective is to approach the bridge at Magny. We will see if it's possible to cross the river at this point."
+msgstr "첫 목표는 마니의 다리에 접근하는 것이다. 이 지점에서 강을 건널 수 있는지 확인하자."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/04"
+msgid "It is up to you to either sneak through or blast your way through. But we are at a severe disadvantage. So pick your fights very carefully."
+msgstr "몰래 빠져나갈지 돌파할지는 그대에게 달렸다. 하지만 우리는 심각하게 불리하다. 싸울 상대를 아주 신중하게 골라라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/05"
+msgid "The shrubbery, the rain and the darkness make it very difficult to spot the enemy. Move carefully and assume that wherever there may be lights, there will be Americans."
+msgstr "덤불과 비, 어둠 때문에 적을 발견하기 매우 어렵다. 조심해서 움직이고, 불빛이 있는 곳에는 미군이 있다고 가정해라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/06"
+msgid "This bridge is no good. It's barricaded and swarming with Americans. We also risk them blowing it up if we get into a firefight. We need to find another way!"
+msgstr "이 다리는 쓸모없다. 바리케이드가 쳐져 있고 미군이 득실거린다. 교전이 벌어지면 다리를 폭파할 위험도 있다. 다른 길을 찾아야 한다!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/07"
+msgid "I hear gunshots! Kameraden, there is another squad being pinned down. Go and assist them!"
+msgstr "총소리가 들린다! 동지들, 다른 분대가 제압당하고 있다. 가서 도와줘라!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/08"
+msgid "Fallschirmjäger! It's good to see you. We bring bad news from Magny. The bridge is a no-go. Have you found another way out?"
+msgstr "팔쉬름예거! 만나서 반갑습니다. 마니에서 나쁜 소식을 가져왔습니다. 다리는 안 됩니다. 다른 탈출로를 찾으셨습니까?"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/09"
+msgid "And what is all that artillery gunfire?"
+msgstr "그런데 저 포격 소리는 다 뭐지?"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/10"
+msgid "... Hmm...  Some of us here speak french and english. I wonder if we could convince the canadians to fire at their own allied positions by the river ford..."
+msgstr "...음... 여기 몇 명은 프랑스어와 영어를 합니다. 캐나다군을 설득해서 강 여울 옆의 자기편 진지를 포격하게 만들 수 있을지도 모르겠군..."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/11"
+msgid "Excellent, we have a plan of attack! Go to that manor and get hold of an American Radio back pack."
+msgstr "좋아, 공격 계획이 섰다! 저 저택으로 가서 미군 무전기 배낭을 손에 넣어라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/12"
+msgid "Excellent work. And there's all the maps laying around, too! Now, we shall transmit the river ford coordinates."
+msgstr "훌륭하다. 게다가 지도가 사방에 널려 있군! 이제 여울 좌표를 송신하자."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/13"
+msgid "The artillery should have done its work. Fallschirmjäger! Cross the river by the ford!"
+msgstr "포격이 제 역할을 했을 것이다. 팔쉬름예거! 여울로 강을 건너라!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/14"
+msgid "Good job Fallschirmjäger! The last job for today is to fight your way to the extraction point, let's go!"
+msgstr "잘했다, 팔쉬름예거! 오늘의 마지막 임무는 탈출 지점까지 싸우며 나아가는 것이다. 가자!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/15"
+msgid "Everybody, cross over to the north-east side of the river! The Allied forces are arriving in large numbers to our previous positions!"
+msgstr "전원 강 북동쪽으로 건너라! 연합군이 대규모로 우리가 있던 자리에 도착하고 있다!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/wounded"
+msgid "I also see you have wounded soldiers! We will try to get you some medical supplies!"
+msgstr "부상병도 보이는군! 의료품을 구해 오도록 해 보겠다!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator2/01"
+msgid "Jawohl Herr Hauptmann! We located a ford in the river, but the Americans spotted us and ruhed a whole damn armored column in to cover it."
+msgstr "알겠습니다, Herr Hauptmann! 강에서 여울을 찾았는데, 미군이 우리를 발견하고 빌어먹을 기갑 종대 전체를 급파해 그곳을 엄호하고 있습니다."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator2/02"
+msgid "The Canadians and Americans want to prove whose artillery is more accurate. They've been firing at multiple coordinates all evening."
+msgstr "캐나다군과 미군이 누구 포가 더 정확한지 겨루고 있습니다. 저녁 내내 여러 좌표에 포를 쏘고 있습니다."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator2/03"
+msgid "We could definitely try, Herr Hauptmann! I believe the enemy is directing the artillery from a radio station inside the nearby manor. "
+msgstr "해 볼 만합니다, Herr Hauptmann! 적이 근처 저택 안의 무전소에서 포격을 유도하고 있는 것 같습니다."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/outro_completed"
+msgid "Good work! This result would be called a victory if it wasn’t for the fact we are retreating. But since you succeeded, we have a fighting chance to keep the allies from breaking out in the direction of Paris. Well done!"
+msgstr "잘했다! 우리가 후퇴 중이라는 사실만 아니었다면 승리라 불렀을 결과다. 하지만 그대가 성공한 덕에 연합군이 파리 방향으로 돌파하는 것을 막을 가능성이 생겼다. 수고했다!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/outro_failed"
+msgid "This is very bad news. We should have gotten out of this situation in order to regroup, but largely due to this failed breakout we’re suddenly a lot more likely to be taken prisoner, and that includes you! "
+msgstr "매우 나쁜 소식이다. 재정비하려면 이 상황에서 벗어났어야 했지만, 돌파 실패 때문에 우리가 포로로 잡힐 가능성이 갑자기 훨씬 높아졌다. 그대도 포함해서 말이다!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/place"
+msgid "3rd Fallschirmjäger Division "
+msgstr "제3 팔쉬름예거 사단"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/skip"
+msgid "Skip preparation phase"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/story"
+msgid " August 1944. The German counterattack at Mortain has failed to achieve its goals, and the allies are breaking out of the bridgehead. The threat of encirclement is real; but even now, Hitler demands new counter attacks in the direction of Avranches. A few days later he finally approves a retreat east. But around Falaise the remnants of no less than 14 divisions, including yours, are being pushed back into a pocket, and the few roads east from Falaise are constantly under attack by allied aircraft and artillery. High command has ordered a breakout by night.\n\n In this mission, the plan for you and the 3rd Fallschirmjäger Division is to break out of the encirclement in small groups. You will command one group, and you are to infiltrate and push through the allied lines, while creating some big distractions to get their attention. Your first assignment is to find a way for the division to cross the river Dives. Once you have found a suitable place to cross, report to 3rd FJ division command, after which further instructions will be issued.\n\nGood luck!"
+msgstr "1944년 8월. 모르탱의 독일군 반격은 목표를 이루지 못했고, 연합군은 교두보를 돌파하고 있다. 포위의 위협이 현실로 다가왔지만, 지금도 히틀러는 아브랑슈 방향의 새 반격을 요구한다. 며칠 뒤 그는 마침내 동쪽으로의 후퇴를 승인한다. 그러나 팔레즈 일대에서는 그대의 사단을 포함해 무려 14개 사단의 잔존 병력이 포위망 안으로 밀려 들어가고 있으며, 팔레즈에서 동쪽으로 뻗은 몇 안 되는 도로는 연합군 항공기와 포격에 계속 노출되어 있다. 최고사령부는 야간 돌파를 명령했다.\n\n이번 임무에서 그대와 제3 팔쉬름예거 사단은 소규모 집단으로 포위를 돌파한다. 그대는 한 집단을 지휘하며, 연합군 전선에 침투해 뚫고 나가면서 큰 교란 작전으로 적의 시선을 끌어야 한다. 첫 임무는 사단이 디브 강을 건널 길을 찾는 것이다. 건널 만한 곳을 찾으면 제3 FJ 사단 사령부에 보고하라. 이후 추가 지시가 내려질 것이다.\n\n행운을 빈다!"
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/task1"
+msgid "Approach the Magny bridge to perform reconnaissance."
+msgstr "마니 다리에 접근해 정찰하라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/task2"
+msgid "Rescue the friendly squad."
+msgstr "아군 분대를 구출하라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/task3"
+msgid "Acquire an American portable radio to give false artillery coordinates in order to eliminate the US forces at the ford."
+msgstr "미군 휴대용 무전기를 입수해 가짜 포격 좌표를 보내 여울의 미군을 제거하라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/task4"
+msgid "Cross the river by the fording area."
+msgstr "여울 지대로 강을 건너라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/task5"
+msgid "Escape the falaise pocket by fighting your way to the extraction point."
+msgstr "탈출 지점까지 싸우며 나아가 팔레즈 포위망을 탈출하라."
+
+msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/taskopt1"
+msgid "Bring medical supplies to the wounded soldiers."
+msgstr "부상병들에게 의료품을 가져다주어라."

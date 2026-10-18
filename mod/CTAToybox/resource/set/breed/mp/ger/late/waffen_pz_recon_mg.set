@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_43_sturm_mg_1"}
+	{portrait "ger_scout"}
+	{icon "mg"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_wf_helm_cover_sum}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_2")("tier2_recon")
+		
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg42_drum_ctb_ger" filling "mgun_ger drum ammo" 100}
+		{item "mgun_ger drum ammo" 1500}
+
+		;{item "p38" filled}
+		;{item "pistol ammo" 16}
+
+		{item "m24 grenade" 0.5 1}
+		{item "m24_smoke grenade" 1 1}
+
+		{item "bandage_ger" 7 1}
+
+		{in_hands 0}
+	}
+}

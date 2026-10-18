@@ -1,0 +1,165 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_08_07_luttich)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/date"
+msgid "1944년 8월 7~8일 · 프랑스 노르망디, 모르탱"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/lose_panthers"
+msgid "판터 전차를 한 대 이상 가동 상태로 유지하지 못했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/name"
+msgid "뤼티히 작전"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/name_big"
+msgid "뤼티히 작전"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/01"
+msgid "눈앞에 르메닐토브 마을이 있다. 뤼티히 작전을 성공시키려면 이곳의 중요한 교차로를 장악해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/02"
+msgid "마을은 가볍게만 방어되고 있다. 우리 판처아우프클레러를 자네 지휘 아래 둔다! 교차로를 점령하면 우리 판처가 들어간다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/03"
+msgid "미군은 쉽게 처리할 수 있겠지만 병력이 많지 않다. 신중하게 진격하고 불필요한 위험을 감수하지 마라."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/04"
+msgid "아, 미군이 우리에게 뭘 남겨 놨는지 봐라! 아름다운 반궤도차다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/05"
+msgid "잘했다, 졸다텐! 이제 르메닐토브를 지킬 수비대를 보내겠다. 하지만 자네들은 아쉽게도 쉴 시간이 많지 않다. 몇 시간 뒤 다시 임무가 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/06"
+msgid "잔더 캄프그루페의 판처그레나디어가 북쪽 셰랑세르루셀 접근로에서 저항에 부딪혔다. 자네가 지원해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/07"
+msgid "아군 기갑 일부를 자네 지휘 아래 둔다. 적을 최대 사거리에서 묶어 둬라. 그러면 적의 57mm 대전차포에 면역이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/08"
+msgid "셰랑세르루셀 방향에서 적 반격이다! 저 미군들을 처리해라, Herr Leutnant!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/081"
+msgid "잘했다, Herr Leutnant. 노력에도 우리는 셰랑세르루셀에 닿지 못했다. 미군 방어는 무너지지 않았고, 끊임없는 반격이 우리 공세의 추진력을 멈춰 세우고 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/09"
+msgid "..... 주의! 미군이 후방에서 르메닐토브를 위협하고 있다! 이 진지를 잃을 수 없다! 즉시 돌아서라고 명령한다! 마을로 돌아와 수비대를 보강해라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/10"
+msgid "또 나쁜 소식이 있다. 인접 부대의 공격이 실패했고, 생존자들이 교전하며 후퇴해 이곳으로 돌아왔다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/11"
+msgid "Panther는 보급과 수리가 필요하다. 게다가 더는 잃을 수 없다. 잘 돌보고, 서둘러라. 이 일이 끝날 때까지 최소 한 대는 움직이게 해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/12"
+msgid "어쨌든 모두가 외면하는 문제로 돌아가자. 우리는 포위됐다! 새 목표는 이 교차로를 방어하고 동틀 녘 미군의 공격을 막아내는 것이다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/13"
+msgid "마지막 증원이 도착했습니다, Herr Leutnant. 방어를 보강할 공병과 대공 트럭입니다. 내일 미군이 공습해 올 테니 대공 화기가 있으면 반갑겠죠."
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/sniper"
+msgid "주의! 저 곡물 저장탑 위에 적 저격수가 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/outro_completed"
+msgid "훌륭하다! 총사령부가 그대의 지휘에 기뻐할 것이다. 어쩌면 노르망디 전투에서 이길 수도 있겠군. 그러면 아마 동부 전선으로 돌아가 소련군을 무찌르겠지. 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/outro_failed"
+msgid "참으로 유감이다. 지금쯤 아브랑슈로 가고 있어야 했는데 그렇지 못하다. 총사령부에 어떻게 설명할 셈인가? 재정비해서 다시 도전해라, 이번엔 좀 더 힘차게!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/place"
+msgid "제116 판처 사단"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/skip"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/story"
+msgid "1944년 8월. 미군이 생로를 돌파한 뒤 아브랑슈가 미군 손에 넘어갔다. 독일 최고사령부는 연합군의 진격을 끊기를 바라며 아브랑슈 방향으로 반격을 명령한다. 뤼티히 작전이라 불리는 이 반격은 모르탱 일대의 연합군 측면을 파고드는 것이 목표다.\n\n그대는 제116 판처 사단의 전차 지휘관이며, 대대는 이번 임무에서 샤케 전투단에 배속되었다. 진격하여 르메닐토브를 점령하라. 마을을 점령하고 일대를 확보하라. 적 배치에 관한 정보는 거의 없으므로 전술적 통찰과 임기응변으로 목표를 달성해야 한다. 즉시 출발해 판처그레나디어와 접촉하고 추가 지시를 기다려라.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task1"
+msgid "르메닐토브의 핵심 교차로를 점령하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2"
+msgid "북쪽으로 공격해 제116 판처 사단 찬더 전투단을 지원하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2_1"
+msgid "북동쪽 검문소를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2_2"
+msgid "북서쪽 검문소를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task3"
+msgid "교차로로 돌아가 수비대를 구출하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task4"
+msgid "르메닐토브를 목숨을 걸고 지켜라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task_panthers"
+msgid "Panther를 최소 한 대는 가동 상태로 유지하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/timer"
+msgid "교차로 방어를 준비하라!"
+msgstr ""
+
+msgctxt "mission/single/02-ger-west/1944_08_07_luttich/timer2"
+msgid "미군의 공격으로부터 마을을 지켜라!"
+msgstr ""

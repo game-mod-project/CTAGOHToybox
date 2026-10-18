@@ -1,0 +1,35 @@
+{from "pattern mg_131"
+	{inventory {size 8 2}}
+	{filling "hmgun_ger" 150}
+	{entity "mg131_bipod"}
+	{fireSound "smallarms/s3/d1/GER/MG13/Head/"}
+	{fireSoundclose "smallarms/s3/3p/GER/MG13/"}
+	{reloadSound "mg34"}
+	{calibre 13}
+	{mass 20.5}
+
+	("fire rate" rpm(900))
+	("velocity" mps(750))
+
+	("reload_belt")
+
+	("reload time" seconds(8))
+
+	("penetration" args 17 14 10 2 0)
+
+	{projectileDamageTable {20 17} {100 14} {165 10} {215 5} {250 3}} ;// B-30 AP
+
+	{parameters "api"
+		("penetration" args 17 14 10 2 0)
+		("armor health" damage(35))
+		("human health" damage(250))
+		{projectileDamageTable {20 17} {100 14} {165 10} {215 5} {250 3}} ;// B-32 API
+	}
+
+	{traceFreq 4}
+
+	("burst_long")
+	("spreading_mounted")
+	{rechargeTime 4.25}
+	{rechargeTime 3}
+}

@@ -54,6 +54,14 @@ static class T
         File.WriteAllBytes(p, Latin1.GetBytes(text));
     }
 
+    // 현지화 .po/.pot처럼 UTF-8로 읽는 파일(Put은 게임 파일 꼴로 Latin-1)
+    public static void PutUtf8(string root, string relativePath, string text)
+    {
+        string p = Path.Combine(root, relativePath.Replace('/', Path.DirectorySeparatorChar));
+        Directory.CreateDirectory(Path.GetDirectoryName(p));
+        File.WriteAllText(p, text, new System.Text.UTF8Encoding(false));
+    }
+
     public static void Zip(string pakPath, params (string Name, string Text)[] entries)
     {
         Directory.CreateDirectory(Path.GetDirectoryName(pakPath));
@@ -117,6 +125,28 @@ static class Suites
         ("BulkRules", BulkRulesTests.Run),
         ("BulkRulesSession", BulkRulesSessionTests.Run),
         ("BulkRulesCli", BulkRulesCliTests.Run),
+        ("ArmyIndex", ArmyIndexTests.Run),
+        ("FileCopy", FileCopyTests.Run),
+        ("AddLine", AddLineTests.Run),
+        ("MergeKinds", MergeKindsTests.Run),
+        ("FactionPreset", FactionPresetTests.Run),
+        ("FactionPresetCli", FactionPresetCliTests.Run),
+        ("SpawnWriter", SpawnWriterTests.Run),
+        ("SpawnCatalog", SpawnCatalogTests.Run),
+        ("SpawnRoster", SpawnRosterTests.Run),
+        ("SpawnMap", SpawnMapTests.Run),
+        ("SpawnMenu", SpawnMenuTests.Run),
+        ("SpawnGenerator", SpawnGeneratorTests.Run),
+        ("SpawnCli", SpawnCliTests.Run),
+        ("SpawnGrid", SpawnGridTests.Run),
+        ("L10nPo", L10nPoTests.Run),
+        ("L10nSources", L10nSourcesTests.Run),
+        ("L10nCatalog", L10nCatalogTests.Run),
+        ("L10nCheck", L10nCheckTests.Run),
+        ("L10nFont", L10nFontTests.Run),
+        ("L10nBuild", L10nBuildTests.Run),
+        ("L10nCli", L10nCliTests.Run),
+        ("L10nNames", L10nNamesTests.Run),
         ("SettingStrings", SettingStringsTests.Run),
         ("LuaTable", LuaTableTests.Run),
         ("LuaPatcher", LuaPatcherTests.Run),
@@ -129,9 +159,23 @@ static class Program
 {
     static int Main(string[] args)
     {
+        if (args.Length > 0 && args[0] == "real-l10n")
+        {
+            try { L10nRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real l10n threw: " + ex); }
+            Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
+            return T.Fail > 0 ? 1 : 0;
+        }
+        if (args.Length > 0 && args[0] == "real-spawn")
+        {
+            try { SpawnRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); L10nRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real spawn threw: " + ex); }
+            Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
+            return T.Fail > 0 ? 1 : 0;
+        }
         if (args.Length > 0 && args[0] == "real")
         {
-            try { RealFilesCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
+            try { RealFilesCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); SpawnRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); L10nRealCheck.Run(args.Length > 1 ? args[1] : System.IO.Path.Combine("editor", "settings.json")); }
             catch (Exception ex) { T.Fail++; Console.WriteLine("FAIL real files threw: " + ex); }
             Console.WriteLine("passed=" + T.Pass + " failed=" + T.Fail);
             return T.Fail > 0 ? 1 : 0;

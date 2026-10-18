@@ -33,10 +33,20 @@ namespace CtaToybox.Core
             if (kind != "vehicle") return null;
             var ext = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             foreach (string f in includes ?? Enumerable.Empty<string>())
-                if (f.StartsWith("properties/", StringComparison.OrdinalIgnoreCase) && f.IndexOf('/', "properties/".Length) < 0) ext.Add(f.Substring("properties/".Length));
+                if (f.StartsWith("properties/", StringComparison.OrdinalIgnoreCase) && f.IndexOf('/', "properties/".Length) < 0) ext.Add(OriginalName(f.Substring("properties/".Length)));
             foreach (var rule in VehicleRules)
                 if (rule.Ext.Any(ext.Contains)) return rule.Kind;
             return "vehicle-other";
+        }
+
+        // 출력 모드가 유닛마다 만든 사본(IncludeChain: <원본 이름>__ctb_<유닛>_<해시><확장자>)은 원본 이름으로 본다.
+        // 2026-10-18: 팩션 강화가 tank.ext를 tank__ctb_a20_cb4dc242.ext로 바꿔 출력 계층 차량 581개가 vehicle-other로 잡혀 스폰 메뉴에서 빠졌다
+        static string OriginalName(string file)
+        {
+            int at = file.IndexOf("__ctb_", StringComparison.OrdinalIgnoreCase);
+            if (at <= 0) return file;
+            int dot = file.LastIndexOf('.');
+            return file.Substring(0, at) + (dot > at ? file.Substring(dot) : "");
         }
 
         // 화면에 보이는 이름

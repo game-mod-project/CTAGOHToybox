@@ -1,0 +1,322 @@
+# source: vanilla interface/text/mission/single/041-usa_airborne/1944_06_01_pathfinders.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_01_pathfinders)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/date"
+msgid "June 6th, 1944 · Normandy, France"
+msgstr "1944년 6월 6일 · 프랑스 노르망디"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/ger_reinf"
+msgid "Get ready for the arrival of German reinforcements!"
+msgstr "독일군 증원 도착에 대비하라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/name"
+msgid "The Pathfinders"
+msgstr "패스파인더"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/name_big"
+msgid "The Pathfinders"
+msgstr "패스파인더"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/fra_civilian/01"
+msgid "Come on. We're at war, after all. At least you're still alive!"
+msgstr "왜 이래요. 어쨌든 전쟁 중이잖아요. 적어도 살아 있잖아요!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/fra_civilian/02"
+msgid "Hey, my American friends! Sorry for the harsh welcome. Life here has become tough for all of us under German occupation, but most of us are glad you are finally here. However, I fear my friend intends to inform the Germans of your position."
+msgstr "이봐요, 미국 친구들! 거칠게 맞이해서 미안합니다. 독일 점령 아래 우리 모두 살기 힘들었지만, 대부분은 당신들이 마침내 와서 기쁩니다. 다만 내 친구가 독일군에게 당신들 위치를 알리려는 것 같아 걱정입니다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/fra_civilian/03"
+msgid "Hey, hey! Americans!"
+msgstr "이봐요, 이봐요! 미국인들!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/fra_civilian/04"
+msgid "Let us help you! We can't offer anything right now, but know the Germans have left a supply trailer hidden somewhere in the orchards behind us. You may want to check it out. Good luck!"
+msgstr "도와 드리겠습니다! 지금 내줄 건 없지만, 독일군이 우리 뒤쪽 과수원 어딘가에 보급 트레일러를 숨겨 뒀다는 건 알려 드립니다. 가서 확인해 보세요. 행운을 빕니다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/fra_farmer/01"
+msgid "God damn it! These self-proclaimed liberators may be worse than the Germans; that horse was all I had left!"
+msgstr "젠장! 스스로 해방자라는 놈들이 독일군보다 못할 수 있겠군. 저 말이 내게 남은 전부였는데!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/fra_farmer/02"
+msgid "I might as well be dead now! You, you godforsaken Americans, had to start a fight here of all places. Now, my only breadwinner is dead! Get lost! You'll pay for this!"
+msgstr "이제 죽은 거나 마찬가지야! 이 천벌 받을 미국 놈들아, 하필 여기서 싸움을 벌여야 했나. 이제 우리 집 생계줄이 죽었어! 꺼져! 대가를 치르게 될 거다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/ger_officer/01"
+msgid "ALARM!!"
+msgstr "경보!!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/01"
+msgid "Thunder!"
+msgstr "Thunder!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/02"
+msgid "Get your ass over here before Jerry sees you!"
+msgstr "독일 놈이 보기 전에 빨리 이리 와라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/03"
+msgid "Enemy patrol approaching from down the road. Wait until they get close, and let’em have it!"
+msgstr "적 순찰대가 길 아래에서 접근 중이다. 가까이 올 때까지 기다렸다가 맛을 보여 줘라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/04"
+msgid "Alright, I think I know which road this is. On me, troopers, let's take a look at the map!"
+msgstr "좋아, 이 길이 어디인지 알 것 같다. 나를 따라 모여라, 제군들. 지도를 보자!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/05"
+msgid "Soldiers, let's move East and group up with any paratroopers we find. Remember the code words!"
+msgstr "병사들, 동쪽으로 이동해 눈에 띄는 공수부대원과 합류한다. 암호를 기억해라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/06"
+msgid "Alright, men, rally on me! Let's move out and see if we can find anyone else!"
+msgstr "좋아, 제군들, 내 쪽으로 집결해라! 이동해서 다른 사람이 있는지 찾아보자!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/07"
+msgid "Soldiers, you're with me now. Let's go!"
+msgstr "병사들, 이제 나와 함께한다. 가자!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/08"
+msgid "Flash!"
+msgstr "Flash!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/09"
+msgid "Germans approaching from the north!"
+msgstr "북쪽에서 독일군이 접근한다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/10"
+msgid "Listen up! We've gathered as many men as we can. Let's have a look at the situation and go over our objectives!"
+msgstr "잘 들어라! 모을 수 있는 인원은 다 모았다. 상황을 살펴보고 목표를 확인하자!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/11"
+msgid "More Germans are approaching from the south!"
+msgstr "남쪽에서 독일군이 더 접근한다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/12"
+msgid "That must be a German officer driving away! Stop him before he can escape and gather reinforcements!"
+msgstr "저건 독일 장교가 도망가는 것이 틀림없다! 증원을 모으러 가기 전에 막아라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/13"
+msgid "Damn it! That Kraut officer managed to get away! Hopefully, he doesn't come back with some friends!"
+msgstr "젠장! 저 독일 장교가 빠져나갔다! 친구들을 데리고 돌아오지 않길 바란다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/14"
+msgid "Good! That Kraut officer won't be going anywhere. Serves him right!"
+msgstr "좋다! 저 독일 장교는 이제 어디도 못 간다. 쌤통이다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/15"
+msgid "Listen up! We have to set up those beacons ASAP. It could sink the whole operation if they're not ready in time!"
+msgstr "잘 들어라! 저 비콘을 최대한 빨리 설치해야 한다. 제때 준비하지 못하면 작전 전체가 무너질 수 있다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/16"
+msgid "Let's get close to the coordinates and install the beacons."
+msgstr "좌표 가까이 가서 비콘을 설치하자."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/17"
+msgid "Well, you're alright now. Grab your gear and form up on me!"
+msgstr "자, 이제 괜찮다. 장비를 챙기고 내 쪽으로 대형을 갖춰라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/18"
+msgid "Excellent work men! Hopefully, the rest of the guys will arrive more organized than we did."
+msgstr "훌륭하다, 제군들! 나머지 병력은 우리보다 더 질서 있게 도착하길 바란다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/19"
+msgid "Way to go, troopers! Those Flak guns won't be bothering anyone else."
+msgstr "잘했다, 공수대원들! 저 Flak 포는 이제 누구도 괴롭히지 못한다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/20"
+msgid "German vehicles on the move! That Kraut officer came back with his friends! Wipe them all out!"
+msgstr "독일군 차량이 움직인다! 그 독일 장교가 친구들을 데리고 돌아왔다! 전부 쓸어버려라!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/21"
+msgid "A good start to the invasion, boys! But we've still got a long day ahead of us. Let's hope our luck holds..."
+msgstr "침공의 좋은 출발이다, 제군들! 하지만 아직 긴 하루가 남았다. 운이 계속되길 바라자..."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/22"
+msgid "Shit! A large German force is approaching! Did that Frenchman collaborate with the Germans?"
+msgstr "젠장! 대규모 독일군이 접근한다! 저 프랑스인이 독일군과 내통한 건가?"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/23"
+msgid "The main roads will likely have traffic on them. Let's avoid them and any more German patrols."
+msgstr "큰길에는 아마 통행이 있을 것이다. 큰길과 다른 독일군 순찰대를 피하자."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/24"
+msgid "Good morning, Lieutenant! Welcome to Normandy! I hope your jump was better than ours!"
+msgstr "좋은 아침이다, Lieutenant! 노르망디에 온 것을 환영한다! 너희 강하는 우리보다 나았기를 바란다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/25"
+msgid "No, Lieutenant. You're the first we've seen. We've been too busy slugging it out with the Krauts. Haven't had a moment to catch our breath."
+msgstr "아니다, Lieutenant. 자네가 처음 본 사람이다. 독일 놈들과 치고받느라 숨 돌릴 틈도 없었다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/26"
+msgid "Good Luck Lieutenant! What's that guy's problem?"
+msgstr "행운을 빈다, Lieutenant! 저 친구는 뭐가 문제지?"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/officer/27"
+msgid "I see... Remind me not to get in his way."
+msgstr "그렇군... 저 사람 길을 막지 않도록 기억해 둬라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/01"
+msgid "Flash!"
+msgstr "Flash!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/02"
+msgid "Boy, am I glad to see you, Sir!"
+msgstr "와, 뵙게 돼서 정말 기쁩니다, Sir!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/03"
+msgid "Whoa! Jerry didn't know what hit him!"
+msgstr "와! 독일 놈은 뭐에 맞았는지도 몰랐겠네요!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/04"
+msgid "Flash!"
+msgstr "Flash!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/05"
+msgid "Look, Sir! A German staff car is trying to get away!"
+msgstr "보십시오, Sir! 독일 참모 차량이 도망치려 합니다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/06"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/07"
+msgid "Enemy flak gun is no more!"
+msgstr "적 Flak 포가 사라졌습니다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/08"
+msgid "Flak position silenced!"
+msgstr "Flak 진지 침묵시켰습니다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier/09"
+msgid "Enemy column destroyed, Sir!"
+msgstr "적 종대 격파했습니다, Sir!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier2/01"
+msgid "Thunder!"
+msgstr "Thunder!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier2/02"
+msgid "Sir! Yes, Sir!"
+msgstr "Sir! 알겠습니다, Sir!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier2/03"
+msgid "Beacon deployed, Sir!"
+msgstr "비콘 설치했습니다, Sir!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier3/01"
+msgid "Thunder!"
+msgstr "Thunder!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier3/02"
+msgid "Thank god you're here, Sir! We're a little lost."
+msgstr "와 주셔서 다행입니다, Sir! 조금 길을 잃었습니다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier4/01"
+msgid "Thunder!"
+msgstr "Thunder!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier4/02"
+msgid "Yes Sir! On you, Sir!"
+msgstr "알겠습니다, Sir! 따르겠습니다, Sir!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier_prisoner/01"
+msgid "Sir! Thanks for saving us! We landed right on top of their positions. We didn't stand a chance."
+msgstr "Sir! 구해 주셔서 감사합니다! 놈들 진지 바로 위에 착지했습니다. 도저히 버틸 수 없었습니다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/soldier_prisoner/02"
+msgid "Yes Sir! Our weapons are here on the table."
+msgstr "알겠습니다, Sir! 우리 무기는 여기 탁자 위에 있습니다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/winters/01"
+msgid "Lieutenant Winters, Easy Company, 2nd Battalion. Have you come across anyone else from our Company?"
+msgstr "Lieutenant 윈터스, 제2대대 이지 중대. 우리 중대 사람을 본 적 있나?"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/winters/02"
+msgid "Well, we have our objective to secure and little time to do it."
+msgstr "우리는 확보해야 할 목표가 있고 시간이 별로 없다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/winters/03"
+msgid "That's \"Wild Bill\". He just found out his brother bought it in Italy, and now he’s got it in for the Krauts."
+msgstr "저 친구는 '와일드 빌'이다. 이탈리아에서 형이 죽었다는 소식을 방금 들었고, 그래서 독일 놈들에게 이를 갈고 있다."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/narrator/winters/04"
+msgid "Let's go! We're moving out!"
+msgstr "가자! 출발한다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/obj_progress"
+msgid "%1% out of 3 beacons deployed."
+msgstr "비콘 3개 중 %1%개 설치."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/outro_completed"
+msgid "Excellent work! You have shown the enemy what you’re capable of. Thanks to our radio beacons, the next wave of aircraft could locate the drop zones and bring in the second wave. Great job!"
+msgstr "훌륭하다! 적에게 너희의 실력을 보여 줬다. 우리 무선 비콘 덕분에 다음 항공기 편대가 낙하 지점을 찾아 2차 투하를 할 수 있다. 잘했다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/outro_failed"
+msgid "You failed to complete the primary objective! Our troops won’t locate their drop zones because the beacons were not deployed. The drops will be scattered all over Normandy, and the Germans will maintain control over the area. You must try again!"
+msgstr "주 목표를 완수하지 못했다! 비콘이 설치되지 않아 우리 부대가 낙하 지점을 찾지 못할 것이다. 낙하는 노르망디 전역에 흩어질 것이고 독일군이 이 지역의 통제권을 유지한다. 다시 시도해야 한다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/place"
+msgid "Pathfinders, 501st PIR, 101st \"Screaming Eagles\""
+msgstr "패스파인더, 제501 PIR, 제101공수사단 '스크리밍 이글스'"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/scenario1"
+msgid "Normandy, around the hamlet of Le Holdy, West of Ste-Marie-du-Mont."
+msgstr "노르망디, 생마리뒤몽 서쪽 르 올디 마을 부근."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/scenario2"
+msgid "Drop Zone \"Charlie\""
+msgstr "낙하 지점 '찰리'"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/story"
+msgid "  On the evening of June 5th, 1944, a massive formation of C-47 aircraft lifts off from RAF North Witham for Normandy. They will drop large numbers of paratroopers behind the D-Day invasion beaches.\n\n  Thirty minutes ahead of them, the pathfinders of the 101st US airborne division are already on their way! They are the first American troops to land in German-occupied France. Several waves of para-drops and troop-carrying gliders will bring in the airborne assault troops.\n\n  Less than one hour into D-Day, the Screaming Eagles’ 501st Parachute Infantry Regiment jumps into action, with orders to place three small radio beacons to guide the other aircraft in.\n\nGood luck!"
+msgstr "  1944년 6월 5일 저녁, 대규모 C-47 편대가 영국 공군 노스위텀에서 노르망디를 향해 이륙한다. D데이 상륙 해변 뒤쪽에 대규모 공수부대를 투하할 것이다.\n\n  편대보다 30분 앞서, 미 제101공수사단의 패스파인더들이 이미 길을 떠났다. 이들은 독일 점령하 프랑스에 가장 먼저 착륙하는 미군이다. 몇 차례의 낙하산 강하와 병력 수송 글라이더가 공수 강습 부대를 실어 올 것이다.\n\n  D데이 개시 한 시간도 지나기 전에 '스크리밍 이글스'의 제501낙하산보병연대가 행동에 나선다. 다른 항공기를 유도할 소형 무선 비콘 세 개를 설치하라는 명령이다.\n\n행운을 빈다!"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task0"
+msgid "Eliminate the German truck patrol."
+msgstr "독일군 트럭 순찰대를 섬멸하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task1"
+msgid "Make contact with other paratroopers"
+msgstr "다른 공수부대원들과 접촉하라"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task2"
+msgid "Deploy the radio beacons in the designated locations."
+msgstr "지정된 위치에 무선 비콘을 설치하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task3"
+msgid "Kill the German officer attempting to escape, preventing the arrival of enemy reinforcements."
+msgstr "도주하려는 독일 장교를 사살해 적 증원의 도착을 막아라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task4"
+msgid "Assault the farm and rescue the captured paratroopers."
+msgstr "농가를 강습해 포로가 된 공수부대원들을 구출하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task5"
+msgid "Take out the AA battery."
+msgstr "대공포대를 제거하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task6"
+msgid "Eliminate the German reinforcements."
+msgstr "독일군 증원을 섬멸하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task_sec1"
+msgid "Secret Objective #1"
+msgstr "비밀 목표 1"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/task_sec1_comp"
+msgid "(Secret Objective) Kill the collaborator before he raises the alarm and brings German reinforcements."
+msgstr "(비밀 목표) 경보를 울리고 독일군 증원을 불러오기 전에 협력자를 사살하라."
+
+msgctxt "mission/single/041-usa_airborne/1944_06_01_pathfinders/timestamp"
+msgid "A few hours later..."
+msgstr "몇 시간 뒤..."

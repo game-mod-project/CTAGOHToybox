@@ -1,0 +1,81 @@
+;SDL
+
+	; armor notes
+	; tracks 10mm
+	; gun 20mm
+
+	("armoredcar_tier2")
+
+	("wheel" args "wheelright1" 10)
+	("wheel" args "wheelleft1" 10)
+	("wheel" args "wheelright2" 10)
+	("wheel" args "wheelleft2" 10)
+
+	("shield" args "shield_window1" 16)
+	("shield" args "shield_window2" 16)
+	("shield" args "fenders_front" 10)
+	("shield" args "fenders_back" 10)
+
+	("glass" args "glass1")
+	("glass" args "glass2")
+
+	("turret" repair(45))
+	("gun" repair(30) thickness(40))
+
+	("fuel" args "fuel")
+	("ammo" args "ammo")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 40
+			{top 30}
+			{bottom 30}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 40}
+	}
+	{volume "engine"
+		{thickness 10}
+	}
+	{volume "turret1"
+		{thickness 40
+			{top 30}
+		}
+	}
+	{volume "turret2"
+		{thickness 30
+			{top 10}
+		}
+	}
+	{volume "transmission"
+		{thickness 40}
+	}
+	{volume "mgun_hole"
+		{thickness 20}
+	}
+	{volume "cupola1"
+		{thickness 20}
+	}
+	{volume "cupola1"
+		{thickness 20}
+	}
+	{volume "cupola2"
+		{thickness 20}
+	}
+	{volume "cupola3"
+		{thickness 20}
+	}
+	{volume "cupola3"
+		{thickness 20}
+	}
+	{volume "cupola4"
+		{thickness 20}
+	}
+	{volume "cupola5"
+		{thickness 20}
+	}
+	{volume "cupola_hatch"
+		{thickness 20}
+	}

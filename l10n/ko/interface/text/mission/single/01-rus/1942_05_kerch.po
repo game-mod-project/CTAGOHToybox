@@ -1,0 +1,544 @@
+# source: vanilla interface/text/mission/single/01-rus/1942_05_kerch.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1942_05_kerch)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/date"
+msgid "May 12th, 1942 · Kerch peninsula, Crimea"
+msgstr "1942년 5월 12일 · 크림, 케르치 반도"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/name"
+msgid "Operation Bustard Hunt"
+msgstr "느시 사냥 작전"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/name_big"
+msgid "Operation Bustard Hunt"
+msgstr "느시 사냥 작전"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_01"
+msgid "What is that in front of us?"
+msgstr "앞에 저게 뭐지?"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_02"
+msgid "It's an enemy tank!"
+msgstr "적 전차다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_03"
+msgid "Dismount, everybody out!"
+msgstr "전원 하차, 내려라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_05"
+msgid "Men! Take out that tank!"
+msgstr "제군들! 저 전차를 처치해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_06"
+msgid "Flank the enemy at once, otherwise, our comrades will be obliterated."
+msgstr "당장 적을 측면에서 공격해라. 안 그러면 아군이 몰살당한다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_06_1"
+msgid "Enemy aircraft! Take cover!"
+msgstr "적기다! 엄폐해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_07"
+msgid "We will mourn them later. Keep going, otherwise, we will be dead too!"
+msgstr "애도는 나중에 하자. 계속 가라, 안 그러면 우리도 죽는다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_08"
+msgid "Comrades, you are now under my command."
+msgstr "동지들, 지금부터 내 지휘를 받는다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_09"
+msgid "We must protect our trucks along the length of the entire road!"
+msgstr "도로 전 구간에서 우리 트럭을 지켜야 한다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_10"
+msgid "Prepare defensive positions, dig trenches and foxholes, and mine the approaches to the road! You can find ammunition and mines in the trucks."
+msgstr "방어 진지를 준비하고, 참호와 개인호를 파고, 도로 접근로에 지뢰를 묻어라! 탄약과 지뢰는 트럭에서 찾을 수 있다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_11"
+msgid "We were attacked by enemy recon units."
+msgstr "적 정찰대의 공격을 받았다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_12"
+msgid "The Germans broke through to the road, regain the initiative and drive them out!"
+msgstr "독일군이 도로까지 돌파했다. 주도권을 되찾고 몰아내라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_13"
+msgid "Secure the positions near the road! Drive the Germans away!"
+msgstr "도로 근처 진지를 확보해라! 독일군을 쫓아내라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_14"
+msgid "We need to send scouts up ahead. Ivanov, move forward and report German movement."
+msgstr "전방에 정찰병을 보내야 한다. 이바노프, 앞으로 나가서 독일군의 움직임을 보고해라."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_15"
+msgid "They are coming back in full strength. Hold positions!"
+msgstr "놈들이 전력으로 돌아오고 있다. 진지를 사수해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_16"
+msgid "We must use this time to strengthen the defenses."
+msgstr "이 시간을 방어 강화에 써야 한다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_17"
+msgid "Hold the right flank!"
+msgstr "우측면을 지켜라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_18"
+msgid "Hold the left flank!"
+msgstr "좌측면을 지켜라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_19"
+msgid "Hold the center! We can't lose it!"
+msgstr "중앙을 지켜라! 뺏기면 안 된다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_20"
+msgid "We are losing too many transports! Do something!"
+msgstr "수송차를 너무 많이 잃고 있다! 어떻게든 해 봐라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_21"
+msgid "You failed at protecting the convoy, you will be held accountable!"
+msgstr "호송대를 지키지 못했다. 책임을 져야 할 것이다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_22"
+msgid "We are still losing trucks! Do something!"
+msgstr "아직도 트럭을 잃고 있다! 어떻게든 해 봐라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_23"
+msgid "They destroyed our trucks! Take back the road!"
+msgstr "놈들이 우리 트럭을 파괴했다! 도로를 되찾아라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_24"
+msgid "We must warn the remaining convoy so they can take another route."
+msgstr "남은 호송대에 경고해서 다른 길로 가게 해야 한다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_25"
+msgid "Excellent! Retreat to the prepared line of defense."
+msgstr "훌륭하다! 준비된 방어선으로 후퇴해라."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_26"
+msgid "We have lost the anti-aircraft gun, we can't shoot down any aircraft!"
+msgstr "대공포를 잃었다. 항공기를 격추할 수 없다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_27"
+msgid "We have lost a few trucks, but you completed the task!"
+msgstr "트럭 몇 대는 잃었지만 임무는 완수했다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part1_28"
+msgid "To retreat, move your soldiers onto the road and you will leave this sector. Any soldier that remains fighting in the open will sacrifice himself here, covering your retreat. "
+msgstr "후퇴하려면 병사들을 도로 위로 이동시켜라. 그러면 이 구역을 벗어난다. 개활지에 남아 싸우는 병사는 여기서 희생해 너희의 후퇴를 엄호하게 된다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_01"
+msgid "We have almost reached our position."
+msgstr "진지에 거의 다 왔다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_02"
+msgid "What the hell?! The Fascists have already reached the first line of defense. Stand your ground! Move into position and hold the line!"
+msgstr "이게 무슨 일이야?! 파시스트들이 벌써 제1방어선까지 왔다. 버텨라! 위치로 이동해서 방어선을 지켜라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_03"
+msgid "The Germans are moving from the west towards the trucks! Protect the vehicles to the last man!"
+msgstr "독일군이 서쪽에서 트럭 쪽으로 이동 중이다! 마지막 한 사람까지 차량을 지켜라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_04"
+msgid "We regained control of the defense line!"
+msgstr "방어선을 되찾았다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_07"
+msgid "The truck driver is down! Now the truck is a sitting duck!"
+msgstr "트럭 운전병이 쓰러졌다! 이제 트럭은 가만히 서 있는 표적이다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_08"
+msgid "They destroyed the truck, damn it! Do something about it!"
+msgstr "젠장, 트럭이 파괴됐다! 어떻게든 해 봐라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_09"
+msgid "We've managed to do our best holding this defensive perimeter, but we must now pull back to the second line of defense!"
+msgstr "이 방어 구역을 최선을 다해 지켜 왔지만, 이제 제2방어선으로 물러나야 한다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_10"
+msgid "Hold the line at all costs!"
+msgstr "무슨 일이 있어도 방어선을 지켜라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_11"
+msgid "We're losing ground too fast, damn it! We're pulling back to the second line of defense!"
+msgstr "너무 빨리 밀리고 있다, 젠장! 제2방어선으로 물러난다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_12"
+msgid "The Germans are coming from the northwest!"
+msgstr "독일군이 북서쪽에서 오고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_13"
+msgid "The Fascists are coming from the beach!"
+msgstr "파시스트들이 해변에서 오고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_14"
+msgid "The enemy is advancing along the center, aim your guns towards the road!"
+msgstr "적이 중앙으로 진격 중이다. 도로 쪽으로 포를 겨눠라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_15"
+msgid "The enemy has captured our first line!"
+msgstr "적이 우리 제1선을 점령했다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer01/part2_16"
+msgid "Requesting naval artillery support!"
+msgstr "함포 지원을 요청한다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_01"
+msgid "What happened here?"
+msgstr "여기서 무슨 일이 있었지?"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_02"
+msgid "I will grant you reinforcements. Don't waste them, and don't allow the enemy to destroy any of our convoys."
+msgstr "증원을 주겠다. 낭비하지 말고, 적이 우리 호송대를 하나도 파괴하지 못하게 해라."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_03"
+msgid "I will go to HQ with Belousov to report German movements. Belousov, get into the second truck!"
+msgstr "벨로우소프와 함께 본부로 가서 독일군의 움직임을 보고하겠다. 벨로우소프, 두 번째 트럭에 타라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_04"
+msgid "I will go to HQ to report on the situation. "
+msgstr "본부로 가서 상황을 보고하겠다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_04_1"
+msgid "Good luck comrades."
+msgstr "행운을 빈다, 동지들."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_05"
+msgid "HQ allocated reinforcements to cover the column! Use the anti-aircraft gun to destroy the enemy fighter aircraft."
+msgstr "본부가 대열을 엄호할 증원을 배정했다! 대공포로 적 전투기를 격추해라."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part1_06"
+msgid "We are preparing the main defensive position. As soon as the column is safe, pull back!"
+msgstr "주 방어 진지를 준비 중이다. 대열이 안전해지는 대로 후퇴해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_01"
+msgid "It is nice to see you alive and well, comrade. We have a critical situation. The Germans broke through the defenses in the nearby sector and are dashing towards our position. Our right flank was completely obliterated."
+msgstr "무사한 모습을 보니 반갑군, 동지. 상황이 심각하다. 독일군이 인접 구역의 방어를 뚫고 우리 진지로 돌진하고 있다. 우리 우측면은 완전히 궤멸됐다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_02"
+msgid "Take command of several of my soldiers. I also transfer my medics to your command. Try to treat the wounded and stabilize the frontline!"
+msgstr "내 병사 몇을 맡아 지휘해라. 내 위생병들도 자네 지휘 아래로 넘기겠다. 부상자를 치료하고 전선을 안정시켜 봐라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_03"
+msgid "On the south, German planes bombed the last convoy. Two cars loaded with wounded soldiers were left stranded. You must protect the vehicles from enemy attacks at any rate! Use the landscape as cover, and don't let the enemy kill our wounded!"
+msgstr "남쪽에서 독일 항공기가 마지막 호송대를 폭격했다. 부상병을 태운 차 두 대가 발이 묶였다. 무슨 수를 써서든 적의 공격에서 그 차량을 지켜라! 지형을 엄폐물로 쓰고, 부상병들이 죽지 않게 해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_04_lost"
+msgid "They destroyed our line of defense! You were unable to cope with the task at hand. Traitor!"
+msgstr "방어선이 무너졌다! 자네는 임무를 감당하지 못했다. 배신자!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_05"
+msgid "Great job, you regained control of the defense line. There is no time to waste. The main German forces can be here at any moment. Distribute the troops along the defense line. Try to make the surviving guns and tanks operational, the Germans will press us without mercy."
+msgstr "잘했다, 방어선을 되찾았군. 지체할 시간이 없다. 독일군 주력이 언제든 올 수 있다. 병력을 방어선을 따라 배치해라. 살아남은 포와 전차를 가동 가능하게 만들어 봐라. 독일군은 가차 없이 우리를 압박할 것이다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_06"
+msgid "HQ reports it will take a considerable amount of time to evacuate. We need to delay the enemy for as long as possible and then retreat away from the sector. You will be informed of the progress of the evacuation."
+msgstr "본부 보고로는 철수에 상당한 시간이 걸린다고 한다. 최대한 오래 적을 지연시킨 뒤 이 구역에서 후퇴해야 한다. 철수 진행 상황은 계속 알려 주겠다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_07"
+msgid "They're hitting us hard! Take some of the reserve troops and plug in the gaps along the defensive line!"
+msgstr "놈들이 세게 때리고 있다! 예비 병력 일부를 데려가 방어선의 틈을 메워라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_09"
+msgid "They're heading to the evacuation point across the beach! Don't let them get through!"
+msgstr "놈들이 해변을 가로질러 철수 지점으로 향하고 있다! 통과시키지 마라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_10_line2_lost"
+msgid "You lost the second line of defense, now the Germans have nothing stopping them from reaching our ships!"
+msgstr "제2방어선을 잃었다. 이제 독일군이 우리 함선에 닿는 걸 막을 것이 아무것도 없다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_11"
+msgid "The Black Sea fleet light cruiser 'Voroshilov' is nearby, they are ready to provide us fire support. Try to fire on large enemy troop concentrations, at this range the accuracy of the barrage will be low."
+msgstr "흑해 함대의 경순양함 '보로실로프'가 근처에 있고, 화력 지원 준비가 돼 있다. 적 대병력 집결지를 포격해 봐라. 이 거리에서는 포격 정확도가 낮을 것이다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_12"
+msgid "Our aircraft have reported enemy artillery movement into our sector. They will likely deploy them in the whereabouts to shoot at our naval vessels. I'll report the situation to headquarters!"
+msgstr "아군 항공기가 적 포병이 우리 구역으로 이동하는 것을 보고했다. 아마 근처에 배치해서 우리 함선을 쏘려는 것이다. 본부에 상황을 보고하겠다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_13"
+msgid "Enemy artillery has begun to fire at our ships! We must stop them! Our comrades' blood is in your hands!"
+msgstr "적 포병이 우리 함선에 사격을 시작했다! 막아야 한다! 동지들의 피가 자네 손에 달렸다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_13_1"
+msgid "The Germans have broken through! You have failed to protect the evacuation point."
+msgstr "독일군이 돌파했다! 철수 지점을 지키지 못했다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/officer03/part2_14"
+msgid "HQ is now granting you our last reserves to break through the Germans and destroy the enemy artillery!"
+msgstr "본부가 마지막 예비대를 내준다. 독일군을 돌파해서 적 포병을 파괴해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_01"
+msgid "The enemy plane has been hit! We're putting our air force to shame with our endless retreat!"
+msgstr "적기에 명중했다! 끝없이 후퇴만 하니 우리 공군 낯이 서질 않는다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_02"
+msgid "I'm engaged!!"
+msgstr "교전 중이다!!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_03"
+msgid "Tank moving to the right flank!"
+msgstr "전차가 우측면으로 이동 중!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_04"
+msgid "Tank moving to the left flank!"
+msgstr "전차가 좌측면으로 이동 중!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_05"
+msgid "German squad on the right flank!"
+msgstr "독일 분대가 우측면에 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_05_1"
+msgid "We're fighting out in the open. Enemy aircraft will shred us to pieces."
+msgstr "개활지에서 싸우고 있다. 적기가 우릴 갈기갈기 찢을 거다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_06"
+msgid "Comrade commander, we have lost Voloshin's squad!"
+msgstr "동지 지휘관, 볼로신 분대를 잃었습니다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_07"
+msgid "The enemy is retreating!"
+msgstr "적이 후퇴한다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_08"
+msgid "The enemy has been destroyed."
+msgstr "적을 격멸했다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_09"
+msgid "The convoy is on its way!"
+msgstr "호송대가 오고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_10"
+msgid "The next convoy is here!"
+msgstr "다음 호송대가 도착했다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_11"
+msgid "Another convoy is on its way!"
+msgstr "또 다른 호송대가 오고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_12"
+msgid "Incoming Germans!"
+msgstr "독일군이 몰려온다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_13"
+msgid "Another wave of Germans!"
+msgstr "독일군의 또 다른 파도다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_14"
+msgid "They stopped pressing!"
+msgstr "놈들이 압박을 멈췄다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_15"
+msgid "We are under attack from that Messerschmitt! Shoot it down!"
+msgstr "저 메서슈미트가 우리를 공격한다! 격추해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_16"
+msgid "Plane inbound from the seaside!"
+msgstr "해안 쪽에서 비행기가 날아온다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_17"
+msgid "Enemy airplane incoming from the west!"
+msgstr "서쪽에서 적기가 접근 중!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_18"
+msgid "Enemy fighter coming from the east!"
+msgstr "동쪽에서 적 전투기가 온다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_19"
+msgid "Got 'em!"
+msgstr "맞혔다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_21"
+msgid "Out of range... I hope he will not strafe our convoys..."
+msgstr "사거리 밖이다... 호송대를 기총소사하지 않았으면 좋겠군..."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_22"
+msgid "They are doubling their efforts!"
+msgstr "놈들이 공세를 두 배로 높이고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_23"
+msgid "Artillery strike! Take cover!"
+msgstr "포격이다! 엄폐해라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_24"
+msgid "The Fascists are coming at us once more!"
+msgstr "파시스트들이 또 덤벼든다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part1_26"
+msgid "We haven't lost any trucks! Great!"
+msgstr "트럭을 하나도 잃지 않았다! 좋았어!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_01"
+msgid "We fixed the first truck. It's heading out."
+msgstr "첫 번째 트럭을 고쳤다. 출발한다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_02"
+msgid "The second truck is also leaving!"
+msgstr "두 번째 트럭도 떠난다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_03"
+msgid "The truck has left this area!"
+msgstr "트럭이 이 지역을 떠났다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_04"
+msgid "The trucks have left this area!"
+msgstr "트럭들이 이 지역을 떠났다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_05"
+msgid "Artillery shelling, take cover! Lie down in your trenches! "
+msgstr "포격이다, 엄폐해라! 참호에 엎드려라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_06"
+msgid "They're coming!"
+msgstr "놈들이 온다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_07_beach"
+msgid "The enemy is coming in from the coastline!"
+msgstr "적이 해안선에서 들어오고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_08"
+msgid "The last ship sailed away from the coast. A job well done, comrade!"
+msgstr "마지막 배가 해안을 떠났습니다. 훌륭히 해냈습니다, 동지!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_09"
+msgid "Enemy artillery took up positions on the shore! It will take time to adjust their guns to fire. Something needs to be done immediately, commander."
+msgstr "적 포병이 해안에 진지를 잡았습니다! 포를 조정해 사격하려면 시간이 걸립니다. 지금 당장 뭔가 해야 합니다, 지휘관님."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_10"
+msgid "Their artillery missed by a hundred meters! They are zeroing in fast!"
+msgstr "적 포탄이 100미터 빗나갔다! 빠르게 조준을 맞추고 있다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_11"
+msgid "The enemy has missed our ship by a mere couple of meters!"
+msgstr "적이 우리 배를 겨우 몇 미터 차이로 빗맞혔다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_12"
+msgid "They sank our ship!"
+msgstr "우리 배가 침몰했다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/narrator/soldier/part2_13"
+msgid "We destroyed the enemy battery! Our ships are safe!"
+msgstr "적 포대를 파괴했다! 우리 배는 안전하다!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/opt_task_01"
+msgid "Mine the approaches to the road"
+msgstr "도로 접근로에 지뢰를 매설하라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/opt_task_01_1"
+msgid "Dig trenches and foxholes to defend the road"
+msgstr "도로를 방어할 참호와 개인호를 파라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/opt_task_02"
+msgid "Shoot down the German plane!"
+msgstr "독일 항공기를 격추하라!"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/outro_completed"
+msgid "Eventually, the Red Army evacuated what was left of the 44th Army by sea. A rearguard was left behind to cover the evacuation, which took place on the east beaches. Some 116,000 soldiers escaped. Later that summer, Sevastopol fell; but the Red Army would return in 1944 to take it all back."
+msgstr "결국 붉은 군대는 제44군의 잔여 병력을 바다로 철수시켰다. 철수가 이루어진 동쪽 해변에서는 후위대가 남아 엄호했다. 약 11만 6천 명이 탈출했다. 그해 여름 세바스토폴은 함락됐지만, 붉은 군대는 1944년에 돌아와 모든 것을 되찾게 된다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/outro_failed"
+msgid "Because you did not do enough to delay the Germans, they are now driving toward the east beaches! The evacuation will turn into a bloodbath. After that, the Germans will be able to cross into the Taman Peninsula almost unopposed. Their attack plan for next year can now be altered to include an army group marching on Maikop from just 300 km to the west."
+msgstr "독일군을 충분히 지연시키지 못한 탓에 놈들이 동쪽 해변으로 몰려오고 있다! 철수는 피바다가 될 것이다. 그 뒤 독일군은 거의 저항 없이 타만 반도로 건널 수 있다. 내년 공세 계획에 서쪽으로 불과 300km 거리에서 마이코프로 진군하는 집단군이 추가될 수도 있다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/part1_retreat_button"
+msgid "Retreat"
+msgstr "후퇴"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/part1_retreat_button_hint"
+msgid "Order soldiers to retreat to allied positions"
+msgstr "병사들에게 아군 진지로 후퇴하라고 명령한다"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/part2_naval_art"
+msgid "Naval artillery"
+msgstr "함포"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/part2_naval_art_hint"
+msgid "Shelling of naval artillery"
+msgstr "함포 사격"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/place"
+msgid "44th Army"
+msgstr "제44군"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/sec_task_01"
+msgid "Not a single truck should be destroyed"
+msgstr "트럭이 한 대도 파괴되면 안 된다"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/start"
+msgid "May 5th, 1942. Kerch peninsula"
+msgstr "1942년 5월 5일. 케르치 반도"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/story"
+msgid "What the Germans call Operation Bustard Hunt is now underway. The Red Army tries to stop them, having built defensive lines stretching from coast to coast across the peninsula."
+msgstr "독일군이 느시 사냥 작전이라 부르는 공세가 진행 중이다. 붉은 군대는 반도를 해안에서 해안까지 가로지르는 방어선을 구축해 저지하려 한다."
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_01"
+msgid "Destroy the enemy tank and infantry"
+msgstr "적 전차와 보병을 파괴하라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_02"
+msgid "Dig in and prepare the defensive line"
+msgstr "참호를 파고 방어선을 준비하라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_03"
+msgid "Protect the retreating convoy from the enemy"
+msgstr "후퇴하는 호송대를 적으로부터 지켜라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_03_1"
+msgid "Send a soldier to warn the convoy"
+msgstr "병사 한 명을 보내 호송대에 경고하라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_04"
+msgid "Go to the frontline and take command"
+msgstr "전선으로 가서 지휘를 맡아라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_05"
+msgid "Get to the positions and find out about the situation"
+msgstr "진지로 가서 상황을 파악하라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_06"
+msgid "Take back control of the position and protect the trucks with the wounded"
+msgstr "진지를 되찾고 부상병을 실은 트럭을 지켜라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_07"
+msgid "Hold the first line of defense"
+msgstr "제1방어선을 지켜라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_08"
+msgid "Hold the second line of defense"
+msgstr "제2방어선을 지켜라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_09"
+msgid "Defend the Soviet Evacuation from the Peninsula"
+msgstr "반도에서의 소련군 철수를 방어하라"
+
+#, boost-format
+msgctxt "mission/single/01-rus/1942_05_kerch/task_09_loaded"
+msgid "%1%% loaded to ships"
+msgstr "배에 %1%% 승선"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/task_10"
+msgid "Attack and destroy the enemy artillery battery"
+msgstr "적 포병 포대를 공격해 파괴하라"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/timer"
+msgid "Time to warn the convoy:"
+msgstr "호송대에 경고할 시간:"
+
+msgctxt "mission/single/01-rus/1942_05_kerch/timer_convoy"
+msgid "Next convoy in:"
+msgstr "다음 호송대까지:"
+
+#, boost-format
+msgctxt "mission/single/01-rus/1942_05_kerch/trucks_lost_1"
+msgid "You lost %1% of 5 trucks"
+msgstr "트럭 5대 중 %1%대를 잃었다"

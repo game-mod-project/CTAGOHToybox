@@ -1,0 +1,72 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 30mm
+	; spare tracks 15mm
+
+	("tank_light_tier1")
+
+	("shield_track" args "shield1" 30)
+	("shield" args "gun_shield" 16)
+	("shield_group" args "shieldt" 16 "shieldt")
+	("shield_group" args "shieldt1" 16 "shieldt")
+	("shield_group" args "shieldt2" 16 "shieldt")
+	("shield_group" args "shieldt3" 16 "shieldt")
+	("shield_group" args "shieldt4" 16 "shieldt")
+	
+	("tracks" repair(30) thickness(30))
+	("gun" repair(30) thickness(60))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 26
+			{top 16}			; Glacis
+			{rear 10}
+			{bottom 10}
+		}
+	}
+	{volume "engine"
+		{thickness 26
+			{front 10}
+			{top 16}
+			{bottom 10}
+		}
+	}
+	{volume "turret"
+		{thickness 16}
+	}
+	{volume "gun_shield"
+		{able {holed}}
+	}
+	{volume "shieldt"		; Superstructure
+		{tags "gun_shield"}
+	}
+	{volume "shieldt1"		; Superstructure
+		{tags "gun_shield"}
+	}
+	{volume "shieldt2"		; Superstructure
+		{tags "gun_shield"}
+		{able {holed}}
+	}
+	{volume "shieldt3"		; Superstructure
+		{tags "gun_shield"}
+		{able {holed}}
+	}
+	{volume "shieldt4"		; Superstructure
+		{tags "gun_shield"}
+		{able {holed}}
+	}
+	{volume "shieldt5"		; Superstructure
+		{thickness 16}
+		{tags "body"}
+		{component "body"}
+	}
+	{volume "wheell"		; Cannon Wheel
+		{thickness 20}
+	}
+	{volume "wheelr"		; Cannon Wheel
+		{thickness 20}
+	}

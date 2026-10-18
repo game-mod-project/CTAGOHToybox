@@ -1,0 +1,201 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1941_10_glushkovo)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/date"
+msgid "1941년 10월 20일 - 뱌지마 북쪽 글루시코보"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/name"
+msgid "큰 상"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/name_big"
+msgid "큰 상"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/clearbridge"
+msgid "훌륭하다! 다리 접근로가 정리된 것 같다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/clearelevation"
+msgid "훌륭하다, 병사들. 날씨가 개면 이 고지대 진지는 더는 위협이 되지 않을 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/clearford"
+msgid "아주 좋다. 도하 지점에서 적대 병력이 소탕된 듯하다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/clearglushkovo"
+msgid "훌륭한 전술을 보여 주었다, 병사들. 마을이 무력화되었다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/glushkovo"
+msgid "Herr Leutnant, 정찰병들이 글루시코보 마을로 향하는 전차의 움직임을 보고하고 있습니다. 안타깝게도 이 날씨에는 루프트바페가 도울 수 없습니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/part2"
+msgid "병사들! 아직 끝나지 않았다! 적이 여전히 맞은편 강둑을 쥐고 있다. 돌파하여 모든 전략 지점을 장악해야 한다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/part2_2"
+msgid "Herr Leutnant, 글루시코보 마을은 중무장 방어가 예상된다고 들었습니다. 소련군은 뱌지마와 브랸스크 사이의 병력이 포위되지 않도록 전선을 지키고 있습니다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/reinf2"
+msgid "예비대와 개량 장비를 쓸 수 있습니다, Herr Leutnant."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/reinfshow"
+msgid "증원을 쓸 수 있다! 잘 활용해라. 우리 예비대는 한정되어 있다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/start"
+msgid "병사들! 뱌지마 공격을 위해 길을 뚫으라는 명령을 받았다. 하지만 전방의 마을이 드네프르 도하를 막고 있으며 방어가 단단하다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/start2"
+msgid "드네프르 도하 지점을 장악하고 이 구역에서 적을 몰아내야 한다! 그대들 모두에게 최선 외에는 기대하지 않는다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/tank_counter"
+msgid "소련 기갑 예비대가 동쪽에서 오고 있다!"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/soldier/nebelwerfer"
+msgid "아군 사상자 발견! 저 불쌍한 친구들은 정말 최악의 자리에서 최후를 맞았군..."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/outro_completed"
+msgid "글루시코보 이후 뱌지마 공격은 성공했고 독일군은 모스크바로 진군했다. 그러나 혹한과 소련군의 대규모 반격 때문에 러시아 수도 공격은 더는 불가능했다. 불과 몇 달 뒤 같은 곳을 두고 다시 싸우게 되리라고는 꿈에도 몰랐다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/outro_failed"
+msgid "드네프르를 건너지 못하면 뱌지마를 점령하지 못하며 중부집단군의 사상자도 훨씬 늘어난다. 이 임무 결과는 뱌지마 공격의 북쪽 절반이 빠졌다는 뜻이며, 포위 완성이 4주 늦어지고 가장 중요한 때에 독일군 공세가 멈추게 된다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/place"
+msgid "중부집단군 제3 판처 집단."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/crew"
+msgid "판처바페 승무원"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/hint"
+msgid "증원을 전장에 배치하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/infantry_truck"
+msgid "차량화 보병 분대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/mg34"
+msgid "MG-34 삼각대"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/mortar"
+msgid "SGrW. 34 박격포"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/pak38"
+msgid "PaK 38 대전차포"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/panzer1"
+msgid "Panzer I Ausf. B"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/panzer2"
+msgid "Panzer II Ausf. F"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/panzer3"
+msgid "Panzer III Ausf. J"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/panzer35t"
+msgid "Panzer 35(t)"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/panzer4f1"
+msgid "Panzer IV Ausf. F1"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/panzerjager"
+msgid "Panzerjäger 1"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/pioniere"
+msgid "슈투름피오니어"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/scouts"
+msgid "정찰병과 저격수"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/fueltruck"
+msgid "연료 트럭"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/supply"
+msgid "보급 트럭"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:1_1"
+msgid "보병"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:2_1"
+msgid "진지"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:3_1"
+msgid "기갑 차량"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/menu:back"
+msgid "메뉴로 돌아가기"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/skip"
+msgid "누군가 컷신을 건너뛰었다"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/story"
+msgid "'태풍 작전'이 막 3주째에 접어들었다. 악천후로 더뎌진 모스크바 최후의 돌격은 뱌지마에 대한 양익 포위 공격으로 시작된다. 이 임무는 드네프르를 건너려는 북쪽 포위 부대에 관한 것이다."
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/task1"
+msgid "드네프르 강의 다리를 소탕하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/task1_2"
+msgid "드네프르 도하 지점을 소탕하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/task2"
+msgid "소련군 고지대 진지를 소탕하라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/task3"
+msgid "글루시코보에서 적을 몰아내라"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/tasks1"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/02-ger/1941_10_glushkovo/tasks1_revealed"
+msgid "비밀 목표 #1: Nebelwerfer를 회수하라"
+msgstr ""

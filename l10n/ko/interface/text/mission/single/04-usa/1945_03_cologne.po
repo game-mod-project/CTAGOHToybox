@@ -1,0 +1,151 @@
+# source: vanilla interface/text/mission/single/04-usa/1945_03_cologne.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1945_03_cologne)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/date"
+msgid "March 6th, 1945 · Köln, Germany"
+msgstr "1945년 3월 6일 · 독일 쾰른"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/lose"
+msgid "You lost all your troops!"
+msgstr "모든 병력을 잃었다!"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/name"
+msgid "Lair of the Beast"
+msgstr "야수의 소굴"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/name_big"
+msgid "Lair of the Beast"
+msgstr "야수의 소굴"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/01"
+msgid "Holy smokes, that thing is god damn enormous! It's a shame the rest of the city is blown to shit!"
+msgstr "세상에, 저거 정말 엄청나게 크군! 도시의 나머지가 박살 난 게 아깝다!"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/02"
+msgid "Alright, Lt. Shaw, take it easy peaking over that corner."
+msgstr "좋아, Lt. Shaw, 저 모퉁이 너머를 볼 때는 조심해라."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/03"
+msgid "God damn it, blown to smithereens! The Germans have panzerfausts and AT guns on every damn turn!"
+msgstr "젠장, 산산조각이 났다! 독일군이 모퉁이마다 판처파우스트와 대전차포를 갖고 있다!"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/04"
+msgid "Alright Gentlemen, we're not risking our Pershing just yet. Go in there and get me that square cleared out, now!"
+msgstr "좋아, 제군들. 아직은 퍼싱을 위험에 빠뜨리지 않는다. 들어가서 저 광장을 당장 소탕해라!"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/05"
+msgid "These god damn streets are riddled with Anti-tank hedgehogs. We need engineers with satchel charges."
+msgstr "이 빌어먹을 거리마다 대전차 철조망 장애물이 널려 있다. 폭약 가방을 든 공병이 필요하다."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/06"
+msgid "It looks like the 104th Infantry Division is stuck nearby. They have engineers, for sure, but they also have some Krauts pinning them down. Soldiers, get your asses there and help our boys out."
+msgstr "제104보병사단이 근처에서 발이 묶인 모양이다. 공병은 분명 있겠지만 독일 놈들이 그들을 붙잡고 있다. 제군들, 서둘러 가서 아군을 도와라."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/08"
+msgid "Alright gentlemen. We have explosives now, but we also have further problems. There's enemy snipers overlooking the streets. We cannot advance toward the cathedral until the snipers are taken out."
+msgstr "좋아, 제군들. 이제 폭약은 있지만 또 다른 문제가 있다. 거리를 내려다보는 적 저격수들이 있다. 저격수를 제거하기 전에는 대성당 쪽으로 진격할 수 없다."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/09"
+msgid "There's a god damn 88 nest at the crossroads. That's the last foreseeable threat remaining for our Pershing. Take it out and I'll let you sweep the floor with the Pershing."
+msgstr "교차로에 빌어먹을 88 진지가 있다. 퍼싱에게 남은 마지막 예상 위협이다. 제거하면 퍼싱으로 쓸어버리게 해 주겠다."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/10"
+msgid "Allright boys! Let's go visit those spires, shall we? I order you to take the cathedral district. And remember - don't you even think about losing my Pershing. Got it?"
+msgstr "좋아, 제군들! 저 첨탑들을 구경하러 가자. 대성당 지구를 점령할 것을 명령한다. 그리고 기억해라. 내 퍼싱을 잃을 생각은 하지도 마라. 알겠나?"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/11"
+msgid "German counterattack around the cathedral! Watch out!"
+msgstr "대성당 주변에서 독일군이 반격한다! 조심해라!"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/12"
+msgid "What a display of tactical excellence, Soldiers. I will make sure each and every one of you get recommended for promotions. Now take a step back and contemplate the might of humankind's architecture. They may be bloody Krauts, but they sure know how to build."
+msgstr "대단한 전술 솜씨였다, 제군들. 한 명도 빠짐없이 진급 추천을 올리겠다. 이제 한 걸음 물러서서 인류 건축의 위대함을 감상해라. 빌어먹을 독일 놈들이지만 지을 줄은 아는군."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/panther"
+msgid "Panther! There's a Panther on that intersection! Well, this time we did come prepared. Let's see how the Pershing fares against it. I'll make sure the combat photographers film it for posterity."
+msgstr "판터다! 교차로에 판터가 있다! 좋아, 이번에는 준비를 해 왔다. 퍼싱이 얼마나 버티는지 보자. 종군 사진병이 후세를 위해 촬영하게 하겠다."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/panzerfaust"
+msgid "Watch out for those Panzerfausts. They will shred through our heaviest armour, and they seem to be giving them away like candy. There's old men and children fighting like fanatics, and they know this city well."
+msgstr "판처파우스트를 조심해라. 가장 두꺼운 장갑도 찢어 버리는 데다 사탕처럼 뿌려 대는 모양이다. 노인과 아이들이 광신도처럼 싸우고, 놈들은 이 도시를 잘 안다."
+
+msgctxt "mission/single/04-usa/1945_03_cologne/narrator/pershing"
+msgid "Well done Sir. Take command of the M26 Pershing, but we have instructions from HQ not to lose this asset. Take good care of our little beast."
+msgstr "잘했습니다, Sir. M26 퍼싱의 지휘를 맡으십시오. 다만 본부에서 이 자산을 잃지 말라는 지시가 있었습니다. 우리 작은 야수를 잘 돌봐 주십시오."
+
+#, boost-format
+msgctxt "mission/single/04-usa/1945_03_cologne/obj_progress"
+msgid "%1% out of 10 snipers eliminated"
+msgstr "저격수 10명 중 %1%명 제거"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/outro_completed"
+msgid "Great job, General Rose will be very pleased! Now, let’s get the press guys up here and show them the results of this fight; we seem to have plenty of cameramen here. If they managed to get some footage of the action, this fight might become symbolic for the Battle of Cologne someday. Who knows?"
+msgstr "훌륭하다, 로즈 장군이 매우 기뻐하실 것이다! 이제 기자들을 불러 이 전투의 결과를 보여 주자. 카메라맨이 많이 와 있는 것 같다. 전투 장면을 찍었다면 이 싸움은 언젠가 쾰른 전투의 상징이 될 수도 있다. 누가 알겠나?"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/outro_failed"
+msgid "What happened? Now that we have the Pershing tank available, we should be able to win a battle like this. We desperately need to take all of Cologne this side of the river, but if we can’t get past a few enemies, that’s going to be very hard. For the next attempt, maybe you can change tactics?"
+msgstr "무슨 일이었나? 퍼싱 전차까지 있으니 이런 전투는 이길 수 있어야 했다. 우리는 강 이쪽의 쾰른 전체를 반드시 점령해야 하는데, 적 몇 명도 뚫지 못하면 매우 어렵다. 다음 시도에서는 전술을 바꿔 보는 게 어떻겠나?"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/place"
+msgid "3rd Armored Division 'Spearhead'"
+msgstr "제3기갑사단 '스피어헤드'"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/story"
+msgid "March 1945.\n\n After the bitter fighting in the Ardennes and the Hürtgen forest, the allied drive to the Rhine seems unstoppable. They advance on a wide front with relative ease.\n\n In early March, your 3rd armored division reaches the outskirts of Cologne. Moving along its streets with your tanks, you will need to be very careful not to break your tracks or get stuck in the piles of rubble. Today, you are tasked to fight your way into the city, and to advance all the way to the Rhine River. Keep your tanks safe by clearing the houses on both sides of the roads. Watch out for snipers while you advance to the central station near the cathedral and the bridges. You’ll likely run into enemy tanks as well.\n\n If the need arises, we can send some of our brand new heavy tanks forward. For now, get ready to move.\n\nGood luck!"
+msgstr "1945년 3월.\n\n 아르덴과 휘르트겐 숲에서의 쓰라린 전투 끝에 라인 강으로 향하는 연합군의 진격은 막을 수 없어 보인다. 넓은 전선에서 비교적 쉽게 진격하고 있다.\n\n 3월 초 제3기갑사단은 쾰른 외곽에 도달한다. 전차를 몰고 시가지를 지날 때는 궤도가 끊어지거나 잔해 더미에 걸리지 않도록 매우 조심해야 한다. 오늘 너의 임무는 도시 안으로 싸워 들어가 라인 강까지 진격하는 것이다. 도로 양편의 건물을 소탕해 전차를 안전하게 지켜라. 대성당과 다리 근처 중앙역으로 나아가는 동안 저격수를 조심해라. 적 전차와도 마주칠 가능성이 높다.\n\n 필요하다면 최신 중전차를 전방에 보낼 수 있다. 지금은 이동할 준비를 해라.\n\n행운을 빈다!"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/task1"
+msgid "Clear the junction"
+msgstr "교차로를 소탕하라"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/task2"
+msgid "Rendezvous with the 104th ID engineers"
+msgstr "제104 ID 공병과 합류하라"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/task3"
+msgid "Clear out the snipers"
+msgstr "저격수를 소탕하라"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/task4"
+msgid "Take out the 88 in order to get access to the Pershing"
+msgstr "퍼싱을 쓸 수 있도록 88을 제거하라"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/task5"
+msgid "Capture the cathedral"
+msgstr "대성당을 점령하라"
+
+msgctxt "mission/single/04-usa/1945_03_cologne/task6"
+msgid "Keep the M26 Pershing operational"
+msgstr "M26 퍼싱을 가동 상태로 유지하라"

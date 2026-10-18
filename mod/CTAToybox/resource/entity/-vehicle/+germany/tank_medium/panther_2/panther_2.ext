@@ -1,0 +1,187 @@
+
+	("shield_tear" args "shieldl1" 10)	; Mud Guard
+	("shield_tear" args "shieldl2" 10)	; Mud Guard
+	("shield_tear" args "shieldl3" 10)	; Mud Guard
+	("shield_tear" args "shieldl4" 10)	; Mud Guard
+	("shield_tear" args "shieldl5" 10)	; Mud Guard
+	("shield_tear" args "shieldl6" 10)	; Mud Guard
+	("shield_tear" args "shieldl7" 10)	; Mud Guard
+	("shield_tear" args "shieldl8" 10)	; Mud Guard
+	("shield_tear" args "shieldl9" 10)	; Mud Guard
+	("shield_tear" args "shieldl10" 10)	; Mud Guard
+	("shield_tear" args "shieldr1" 10)	; Mud Guard
+	("shield_tear" args "shieldr2" 10)	; Mud Guard
+	("shield_tear" args "shieldr3" 10)	; Mud Guard
+	("shield_tear" args "shieldr4" 10)	; Mud Guard
+	("shield_tear" args "shieldr5" 10)	; Mud Guard
+	("shield_tear" args "shieldr6" 10)	; Mud Guard
+	("shield_tear" args "shieldr7" 10)	; Mud Guard
+	("shield_tear" args "shieldr8" 10)	; Mud Guard
+	("shield_tear" args "shieldr9" 10)	; Mud Guard
+	("shield_tear" args "shieldr10" 10)	; Mud Guard
+	("shield_tear" args "shield1" 63)	; Mud Guard
+	("shield_tear" args "shield2" 63)	; Mud Guard
+	("shield_tear" args "shield3" 63)	; Mud Guard
+	("shield_tear" args "shield4" 63)	; Mud Guard
+	("shield_tear" args "shield5" 63)	; Mud Guard
+	("shield_tear" args "shield6" 63)	; Mud Guard
+	("shield_tear" args "shield7" 63)	; Mud Guard
+	("shield_tear" args "shield8" 63)	; Mud Guard
+	("shield_tear" args "shield9" 63)	; Mud Guard
+	("shield_tear" args "shield10" 63)	; Mud Guard
+	("shield_tear" args "shield11" 63)	; Mud Guard
+	("shield_tear" args "shield12" 63)	; Mud Guard
+
+	("gun" repair(30) thickness(75))
+	("tracks" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("ammo" args "ammo6")
+	("ammo" args "ammo7")
+	("ammo" args "ammo8")
+	("ammo" args "ammo9")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("fuel" args "fuel5")
+	("fuel" args "fuel6")
+	("fuel" args "fuel7")
+	("transmission" args "transmission")
+
+	{Volume "shieldw1"
+		{thickness 10
+		}
+	}
+	{Volume "enginestuff01"
+		{thickness 10
+		}
+	}
+	{Volume "enginestuff02"
+		{thickness 10
+		}
+	}
+	{Volume "enginestuff03"
+		{thickness 10
+		}
+	}
+	{Volume "enginestuff04"
+		{thickness 10
+		}
+	}
+	{Volume "bodystuffs04"
+		{thickness 10
+		}
+	}
+	{Volume "infravision1"
+		{thickness 10
+		}
+	}
+	{Volume "infravision1stuff"
+		{thickness 10
+		}
+	}
+	{Volume "infravision2"
+		{thickness 10
+		}
+	}
+	{Volume "infravision2stuff"
+		{thickness 10
+		}
+	}
+	{Volume "body1"
+		{thickness 150
+			{front 250}		
+			{top 75}		
+			{rear 100}
+			{bottom 38}
+		}
+	}
+	{Volume "body2"
+		{thickness 150
+			{front 150}		
+			{top 75}		
+			{rear 100}
+			{bottom 63}
+		}
+	}
+	{Volume "body3"
+		{thickness 275}
+		{able {contact} {holed}}
+	}
+	{Volume "body4"
+		{thickness 225}
+	}
+	{Volume "armor_mg_port"
+		{thickness 275
+		}
+	}
+	{Volume "body"
+		{thickness 175
+			{front 325}		
+			{top 88}		
+			{rear 125}
+			{bottom 75}
+		}
+		{able {contact} {holed}}
+	}
+	{Volume "cupola"
+		{thickness 250
+		}
+	}
+	{Volume "mgun_aa"
+		{thickness 13
+		}
+	}
+	{Volume "gun_rot"
+		{thickness 488
+		}
+	}
+	{Volume "hatch1"
+		{thickness 75
+		}
+	}
+	{Volume "mantlet"
+		{thickness 450
+			{front 2500}
+		}
+	}
+	{Volume "turret1"
+		{thickness 150
+			{front 300}		; Nose
+			{top 75}		; Glacis
+			{rear 150}
+			{bottom 63}
+		}
+	}
+	{Volume "turret2"
+		{thickness 150
+		}
+	}
+	{Volume "turret3"
+		{thickness 150
+		}
+	}
+	{Volume "turret4"
+		{thickness 150
+		}
+	}
+	{Volume "turret"
+		{thickness 150
+			{front 300}		; Nose
+			{top 75}		; Glacis
+			{rear 150}
+			{bottom 63}
+		}
+	}
+	{volume "engine"		
+		{thickness 63
+			{front 63}
+			{top 65}
+			{bottom 63}
+		}
+	}

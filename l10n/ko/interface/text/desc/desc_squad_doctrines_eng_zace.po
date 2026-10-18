@@ -1,0 +1,91 @@
+# source: mod_2905667604 interface/text/desc/desc_squad_doctrines_eng_zace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Doctrine Squads\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+# tier 1
+msgctxt "desc/squad/doctrine_humber_command"
+msgid "<c(B29557)>( I )</c> Humber Scout Mk.II Command"
+msgstr "<c(B29557)>( I )</c> Humber Scout Mk.II 지휘형"
+
+msgctxt "desc/squad/doctrine_t18e2"
+msgid "<c(B29557)>( I )</c> Boarhound"
+msgstr "<c(B29557)>( I )</c> Boarhound"
+
+msgctxt "desc/squad/doctrine_amd35_sa35"
+msgid "<c(B29557)>( I )</c> AMD.35 (SA35)"
+msgstr "<c(B29557)>( I )</c> AMD.35 (SA35)"
+
+# tier 2
+msgctxt "desc/squad/doctrine_churchill_mk5"
+msgid "<c(B29557)>( II )</c> Churchill Mk.V CS"
+msgstr "<c(B29557)>( II )</c> Churchill Mk.V CS"
+
+msgctxt "desc/squad/doctrine_cromwell4_late_tulip"
+msgid "<c(B29557)>( II )</c> Cromwell IV 'Tulip'"
+msgstr "<c(B29557)>( II )</c> Cromwell IV 'Tulip'"
+
+msgctxt "desc/squad/doctrine_t_14_uk"
+msgid "<c(B29557)>( II )</c> T14 Assault Tank"
+msgstr "<c(B29557)>( II )</c> T14 돌격전차"
+
+msgctxt "desc/squad/doctrine_squad_sas_late(eng)"
+msgid "<c(B29557)>( II )</c> SAS Section"
+msgstr "<c(B29557)>( II )</c> SAS 분대"
+
+# tier 3
+msgctxt "desc/squad/doctrine_sexton_mk2"
+msgid "<c(B29557)>( III )</c> 25-pdr SP Sexton Mk.II"
+msgstr "<c(B29557)>( III )</c> 25-pdr SP Sexton Mk.II"
+
+msgctxt "desc/squad/doctrine_achilles_mk2"
+msgid "<c(B29557)>( III )</c> 17-pdr SP Achilles Mk.IIc"
+msgstr "<c(B29557)>( III )</c> 17-pdr SP Achilles Mk.IIc"
+
+msgctxt "desc/squad/doctrine_challenger_a30"
+msgid "<c(B29557)>( III )</c> Challenger"
+msgstr "<c(B29557)>( III )</c> Challenger"
+
+msgctxt "desc/squad/doctrine_arl_44_acl1"
+msgid "<c(B29557)>( III )</c> ARL-44 (ACL-1)"
+msgstr "<c(B29557)>( III )</c> ARL-44 (ACL-1)"
+
+# tier 4
+msgctxt "desc/squad/doctrine_arl_44"
+msgid "<c(B29557)>( IV )</c> ARL-44"
+msgstr "<c(B29557)>( IV )</c> ARL-44"
+
+msgctxt "desc/squad/doctrine_183mm_bl_7_2_late"
+msgid "<c(B29557)>( IV )</c> BL 7.2-inch Howitzer Mk.VI"
+msgstr "<c(B29557)>( IV )</c> BL 7.2-inch Howitzer Mk.VI"
+
+msgctxt "desc/squad/doctrine_140mm_bl_5_5_late"
+msgid "<c(B29557)>( IV )</c> BL 5.5-inch Mk.III Gun"
+msgstr "<c(B29557)>( IV )</c> BL 5.5-inch Mk.III Gun"
+
+msgctxt "desc/squad/doctrine_183mm_bl_7_2_mk6_late"
+msgid "<c(B29557)>( IV )</c> BL 7.2-inch Howitzer Mk.VI"
+msgstr "<c(B29557)>( IV )</c> BL 7.2-inch Howitzer Mk.VI"
+
+msgctxt "desc/squad/doctrine_76mm_land_mattress"
+msgid "<c(B29557)>( IV )</c> Land Mattress"
+msgstr "<c(B29557)>( IV )</c> Land Mattress"
+
+msgctxt "desc/squad/doctrine_114mm_bl_4_5_late"
+msgid "<c(B29557)>( IV )</c> BL 4.5-inch Mk.II Gun"
+msgstr "<c(B29557)>( IV )</c> BL 4.5-inch Mk.II Gun"
+
+# tier 5
+msgctxt "desc/squad/doctrine_155mm_m1a1_longtom_eng_late"
+msgid "<c(B29557)>( V )</c> 155mm Gun M1A1 'Long Tom'"
+msgstr "<c(B29557)>( V )</c> 155mm Gun M1A1 'Long Tom'"

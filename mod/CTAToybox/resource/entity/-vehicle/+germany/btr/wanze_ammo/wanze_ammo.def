@@ -1,0 +1,61 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_wanze_ammo_45d6d7b9.ext")
+	(include "/properties/selection/vehicle_small.inc" scale(1.1))
+	(include "/properties/resupply.inc")
+	{props "light" "smoke" "nwg" "vision_lev02" "c_supply" "blast_large" "ammo_map"}
+	{extension "wanze_ammo.mdl"}
+	(include "wanze.ext")
+	{PatherId "panzer3"}
+	{targetclass "tank_light"}
+	{targetSelector "tank_light"}
+
+	("supply_ammo" supply(500))
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_tank_left"} {end "seat_m45_gunner"}}
+			{reverse 	{end	"emit_tank_1_hold"}}
+		}
+
+	}
+
+	("crew_human_visible_anm2" place(driver) door(emit1) door2(emit2) anm_left(driver) anm_right(driver))
+
+	{extender "inventory"
+		{box
+			{item "geballteladung_3kg" 2}
+			{item "nbks grenade" 12}
+		}
+	}
+
+	{extender "smokescreen"
+		{cooldown 20}
+		{itemTags "grenade nbks"}
+	}
+
+	{Weaponry
+		{place "mgun"
+			{type "commander"}
+			{weapon "binocular"}
+			{gunner "commander"}
+			{basic}
+		}
+	}
+
+	{mass 3650}
+	{Chassis
+		("tank_trace" fx("tracks_sm2") step(0.15) len(0.17))
+		("mobility_tank"
+			speed(57) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(8) ;---------Max speed in reverse on road, km/h.
+			traverse(30) ;-------Track traverse, per second, in degrees.
+			weight(3.65) ;--------Weight in Tonnes.
+			power(36) ;---------Engine Power, in hp.
+			track(4) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(1400) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1450) ;---------Range in km, off-road.
+		)
+	}
+}
+

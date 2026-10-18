@@ -13,7 +13,8 @@
 | 유닛이 쓰는 무기·탄약 파일을 유닛과 함께 보기 (화면의 무기·탄약 탭) | |
 | 게임 설정(컨퀘스트 자원·길이·전투 규칙·AI, 스커미시 모드, 난이도) 고치기 | 맵 목록, 연구 트리 구조, 세이브 파일 고치기 |
 | 원본 파일(바닐라와 켜 둔 모드)의 값 하나를 바꾸는 수정을 프로젝트 파일에 담기 | 매크로 본문 안의 값을 "이 유닛만" 고치기 |
-| include로 공유된 값을 "이 유닛만" 고치기 (`add --scope unit`) | 키나 블록을 더하거나 빼기 |
+| include로 공유된 값을 "이 유닛만" 고치기 (`add --scope unit`) | 키나 블록을 빼기 |
+| 블록 끝에 줄 하나 더하기, 아이템·무기 파일을 새 이름으로 사본 만들기 (`add --kind add-line`, `add --kind file-copy`, 값 고치기 창) | |
 | 프로젝트를 빌드해 `mod/CTAToybox/resource`에 써넣기 | |
 | 게임이나 모드가 갱신돼 원래 값이 달라진 수정을 알아채기 | |
 
@@ -176,6 +177,66 @@ ctatoybox rule edit --project editor/projects/my-tweaks.json --id <id> --mul 1.2
 ctatoybox rule reapply|enable|disable|remove --project editor/projects/my-tweaks.json --id <id>
 ```
 
+### 팩션별 강화 프로젝트 (`faction-preset`)
+
+군대(ger·rus·usa·eng·fin·jap) 하나의 유닛만 강화하는 프로젝트를 만든다(설계: [../superpowers/specs/2026-10-17-faction-boost-design.md](../superpowers/specs/2026-10-17-faction-boost-design.md), 파일 정리: [../12-faction-files.md](../12-faction-files.md)). 다른 군대 유닛과 상대 AI는 지금 판 그대로다.
+
+- 베이스(`--base`, 보통 `editor/projects/월드워-차종.json`)의 수정을 그대로 가져온다. 시야는 모든 군대에 같다.
+- 유닛 강화(그 군대 유닛만): 인벤토리 개수 ×2(탄약 파일 `.ammo`로 풀리는 아이템은 ×5, 개수와 ± 편차를 같이), 재장전 시간 ×0.5, 보병 체력 ×2, 장갑 차량 ×2·경전차 ×2·중형 ×2.5·중전차 ×3·초중전차 ×5, 속도 ×1.5, 연료와 항속 ×10. 배수는 인자로 바꾼다.
+- 인벤토리·장갑·속도·연료는 일괄 규칙(군대 거르기)으로 들어가 앱의 "일괄 규칙"에서 보고 다시 적용할 수 있다. 항속(range)은 연료 규칙이 고친 mobility 호출마다 직접 고친다.
+- 재장전: 무기는 여러 군대가 이름으로 같이 부르므로, 그 군대 유닛이 부르는 무기마다 파일 사본(`<이름>_ctb_<군대>`)을 만들어 장전 시간을 고치고 그 군대 유닛의 이름 값만 사본 이름으로 바꾼다. 원형·매크로에서 오는 장전 시간은 사본에 `{rechargeTime N}` 줄을 더한다.
+- 보병 체력: perks의 `"health"` 값 2배를 그 보병 파일의 perks 블록 끝에 `{"health" "N%"}`로 더한다. 더한 줄과 사본 쪽 줄이 매크로·원형 값을 이기는지는 게임 안 확인을 하지 않아 미확인이다.
+- 초중전차는 `editor/presets/super-heavy.txt`(손으로 고친다)의 유닛 폴더다. 파생형(대공·자주포·구축전차)도 넣었다.
+- 컨퀘스트(플레이어 몫만, 모든 군대 프로젝트에 같이): 시작 자원 MP·AP 99999, SP·RP 999, 단계 I~V 한도와 예비 병력 한도 9999, 승패 보상 MP·AP `"1:99999"`, SP·RP 999. AI 몫(`Bots`)은 그대로다.
+- 스커미시: 배틀존·탄약전 프리셋의 MP 시작·끝과 CP ×50(`--skirmish`), 봇 배율(`bots_generic.inc`의 mpStart·mpFinish·cp) ÷50이라 AI의 결과 값은 그대로다. 피난은 팀 a(플레이어 수비)만 ×50. DP와 프런트라인은 그대로다.
+- 두 군대 로스터에 같이 등록된 유닛(바닐라 5대)은 건너뛰고 보고한다. `--report <파일>`은 건너뛴 것을 모두 적는다.
+
+```
+ctatoybox faction-preset --army ger --base editor/projects/월드워-차종.json --project editor/projects/강화-독일.json
+ctatoybox build --project editor/projects/강화-독일.json
+```
+
+### 스폰 모드 (`spawn-menu`)
+
+Spawn Menu of MACE를 대체하는 모드 `mod/CTAToyboxSpawn`(이름 `CTAToybox Spawn`)을 만든다(설계: [../superpowers/specs/2026-10-17-spawn-menu-replacement-design.md](../superpowers/specs/2026-10-17-spawn-menu-replacement-design.md), 조사: [../13-spawn-menu-spike.md](../13-spawn-menu-spike.md)). 스탯 출력 모드와 다른 폴더이고 같은 경로를 쓰지 않는다(겹치면 쓰지 않고 오류).
+
+- 입력: 지금 계층에서 Spawn Menu 두 모드(3617250510, 3295913567)와 스폰 모드 자신을 뺀 것, 그리고 스탯 출력 모드. 그래서 맵은 Auto Medic·MACE가 고친 판이 이긴다.
+- 스커미시 구매 창: 기본으로 바꾼다(2026-10-18 사용자 결정: 스커미시는 구매 창의 가로 격자로 내 국가 로스터 유닛을 사고, 로스터에 없는 차량·다른 국가·다른 소속·옵션은 증원 창 메뉴. `--no-roster`면 그대로 둔다). 시기 로스터(`set/multiplayer/units/<시기>/{units,inf}_<국가>*.set`)의 cd·ci·cp·cost·cw·cool을 0으로, 병종 틀(`settings_inf*.set`)의 CP를 0으로, `unitlimits*.inc`의 한도를 999로 하고, 단추는 `budget*.inc`의 `{buttons}`를 `inf1 inf2 empl vehicles light medium heavy td air`로 바꾸고 tanks 그림(`button_5_<국가>`)을 6~9번으로 복사한다(`--basic-buttons`면 단추 그대로, `--keep-cost`면 비용 그대로). `--roster-add`는 여기에 로스터에 없던 전차·포·차량을 국가·시기마다 새 항목으로 더한다(승무원은 국가 기본 → 같은 파일에서 가장 많이 쓰는 구성). 게임은 판을 열 때 그 판 국가·시기의 로스터 차량을 모두 미리 읽어서(`eScenePreload`), 더한 차량만큼 로딩이 길어진다(2026-10-17 21:59 game.log: 210초 넘게, 미리 읽은 차량 43종 중 38종이 더한 차량). 컨퀘스트 로스터는 그대로다.
+- 맵: 캠페인 `map/single/**/0.mi`와 멀티 `map/multi/**/*.mi`마다 이긴 판 + `{mission}` 닫는 괄호 앞 include 줄(캠페인은 `nation_<국가>.mi`, 견본 `templates_<국가>.mi`, `menu.mi` 순서, 멀티는 견본과 `menu.mi`).
+- 견본(`templates_<국가>.mi`): 메뉴가 복제하는 숨긴 사람·비행기를 국가마다 따로 둔다. 멀티 맵은 판의 국가를 맵을 만들 때 알 수 없어서 모두 넣고, 캠페인 맵은 그 맵 글에 나오는 병종 국가(`"mp/<국가>/…"`)와 캠페인 국가만 넣는다(2026-10-18 실측 평균 1.9개 국가, 못 찾으면 모두). 견본 파일은 `ctb_has_<국가>`를 1로 켜고, 국가 화면은 견본이 없는 국가 단추를 숨긴다. `--all-nations`면 캠페인 맵에도 모두 넣는다. 판을 열 때 견본 2,965명을 만드는 데 약 100초 걸렸다(같은 로그, 판에 없는 일본 장비까지 읽음).
+- 메뉴(`resource/map/ctatoybox_spawn/menu.mi`): 증원 창 단추로 만든 단계 메뉴. 맨 위 `Spawn`(다시 누르면 메뉴를 모두 접는다) → 국가(바로 고름)·소속(나·아군 AI·적 AI·Auto·Player 0~9 바로 고름. 기본은 나. 내 번호는 판 안에서 "user_control 상태인 유닛이 있는 번호"로 찾고 소속 화면에 "(you)"로 표시, 아군·적 AI는 내 번호에 대한 relation ally·enemy로 찾는다)·보병(분대·낱개, 시기별)·포·차량·전차(경·중형·중·구축)·항공기·지원(포격 소·중·대: 찍은 지점 둘레 반경 20·40·70 웨이포인트에 5·12·20발, 0.4초 간격. 반경 단위는 미확인)·도구(무적, 등급 최대, 생성 시 최고 등급, 찍은 유닛 삭제, 비행기 삭제, 잔해 정리). 한 화면 21개를 넘으면 계열 묶음 화면과 Next/Prev. 분대는 로스터 구성 그대로 숨긴 견본을 복제한다. 처음엔 `Spawn` 단추만 보이고, 첫 화면에 `Nation: <지금 국가>`·`Owner: <지금 소속>`을 보인다. 등급 최대(찍은 자리)는 찍은 자리에서 가까운 내 병사 12명. 항공 폭격 소·중·대는 지금 국가의 공격기 1·2·4대가 찍은 자리를 친다(`air_attack`, 게임 안 동작 미확인). 글자는 `localizations/default/interface/text/mission/ctatoybox_spawn.pot`(한국어)이고, 영어 원문은 모드 폴더 맨 위 `.ctatoybox-spawn-text.pot`(게임은 읽지 않는다)에 따로 쓴다.
+- 메뉴 글자 한글화(2026-10-18 S2): 번역은 `l10n/ko/interface/text/mission/ctatoybox_spawn.po`. `l10n extract`는 스폰 모드의 한국어 `.pot` 대신 영어 원문 파일을 원문으로 읽는다. 메뉴 글자를 바꾸거나 더하면 `spawn-menu build` → `l10n extract` → `.po` 채우기 → `l10n check` → `spawn-menu build` 순서로 한다. 비었거나 원문이 바뀐 항목은 영어로 둔다(명령 줄의 "메뉴 글자 번역 N·영어 M"). `--english`면 메뉴 글자를 모두 영어로 둔다. 차량 계열 묶음 이름(`family_*`, 폴더 이름 앞말)은 용어집의 장비 이름 규칙대로 원문 그대로다. 한글 글꼴은 출력 모드 `CTAToybox`의 `.font`가 준다.
+- 국가 모드(2026-10-18, 설계 [../superpowers/specs/2026-10-18-spawn-menu-nation-mods-design.md](../superpowers/specs/2026-10-18-spawn-menu-nation-mods-design.md)): 멀티 맵의 견본은 국가 모드 `mod/CTAToyboxSpawn_<국가>`(이름 `CTAToybox Spawn - <국가>`)에 `templates_<국가>.mi` 한 파일로 따로 쓰고, 바탕 모드의 같은 경로에는 빈 조각을 둔다. 켠 국가의 견본만 읽어 멀티·컨퀘스트 로딩이 그만큼 줄어든다. 여러 국가 모드를 함께 켜도 되고, 국가 화면과 시작 국가는 견본이 실제로 있는 국가만 쓴다(하나도 없으면 안내 단추). 캠페인 맵은 바탕 모드의 `campaign_templates_<국가>.mi`를 읽어 국가 모드와 상관없다. `--nations ger,usa`는 고른 국가 모드만 쓰고, `--single-mod`는 예전처럼 한 모드에 모두 넣는다.
+- 단추 그림(2026-10-18): 묶음 단추는 그 안에서 아이콘이 있고 로스터 `cost()`가 가장 큰 유닛의 그림, 아이콘 없는 유닛은 같은 계열 대표의 그림, 분대는 이름 그림이 없으면 낱말이 가장 많이 겹치는 같은 국가 분대 그림. 지원·도구·소속 화면은 국가마다 있고 기능별 그림을 쓴다. 계열 묶음 글자는 대표 유닛 이름 + ` (+나머지 수)`.
+- 내 번호(2026-10-18): 쓸 번호는 판 안에서 찾은 번호(user_control 유닛), 못 찾았으면 컨퀘스트 맵에서 바닐라 Lua의 `id_1st_player`(`conquest_me.mi`), 둘 다 없으면 player 0. 컨퀘스트가 아닌 멀티·스커미시는 첫 유닛 전에는 번호를 알 수 없다.
+- 화면: `SceneGameView.xml`의 세 패널(멀티·싱글·컨퀘스트) 모두에 증원 창을 조건 없이 둔다. 증원 창 단추는 바닐라 세로 목록 그대로이고, `GameUnitReinforcementView.xml`의 `visibleElements`(한 번에 보이는 단추 수)만 7에서 10으로 바꾼다(`--visible N`, 0이면 바닐라). 단추 그림 72px + 간격 2라 10칸과 스크롤 단추가 772px다. 25는 1080 화면을 넘어 아래 단추를 누를 수 없었다(2026-10-18 사용자). 게임이 이 칸에 읽는 속성은 `UpButtonResource`·`DownButtonResource`·`Gap`·`ButtonHeight`·`VisibleElements`뿐이라(실행 파일 문자열, 2026-10-18) 방향은 바꿀 수 없다. `--grid N`은 `GameUnitReinforcementView.xml`의 `StepScrollPane id="unit_types_container"`를 `GridPanel`로 바꾸는데, 2026-10-18 이 판으로 캠페인을 열자 판 화면을 만들다 `EXCEPTION_ACCESS_VIOLATION`(`ld:create` `scenegameview.xml`)으로 꺼졌다. 가로로 펼치는 다른 방법은 아직 없다.
+- 다시 만들 때는 지난 생성물(`.ctatoybox-spawn.json`)만 지우고 바꾼다. 게임 패치·모드 갱신·스탯 출력 모드 재빌드 뒤에는 다시 만든다.
+- git: 맵 사본(약 210MB)은 넣지 않는다(`.gitignore`). 메뉴·견본·글자·화면·로스터·단추 그림은 넣는다. 지난 생성물을 지우면 빈 폴더도 지운다.
+- 게임에 연결: 게임 `mods` 폴더에 정션을 만들고(`New-Item -ItemType Junction -Path "<게임>\mods\CTAToyboxSpawn" -Target "E:\CTAToybox\mod\CTAToyboxSpawn"`), 모드 목록에서 모든 모드 뒤에 켜고 Spawn Menu of MACE는 끈다. 국가 모드(`CTAToyboxSpawn_<국가>`)도 같은 방법으로 정션을 만들어 CTAToybox Spawn 뒤에 켠다. 순서는 MACE → MACE Wunderwaffe Ultimate Fusion → Auto Medic → CTAToybox → CTAToybox Spawn → 국가 모드들이어야 한다(Fusion이 MACE보다 앞이면 MACE의 옛 `properties/armor.ext`·`unit_research_*.set`·컨퀘스트 로스터가 Fusion 판을 덮어 Fusion 정의가 풀리지 않고 컨퀘스트 연구 목록에서 Fusion 유닛이 빠진다. 2026-10-18 파일 대조).
+- 미확인(게임 안에서만 알 수 있다): 견본 파일의 트리거가 `ctb_has_<국가>`를 켜는지(따로 include한 `{Helpers}`가 합쳐지는지. 안 되면 `--all-nations`), 새 종류 단추를 게임이 받는지(실행 파일이 단추 그림 이름을 `button_%1%_%2%`(순서_국가)로 만든다. 안 되면 `--basic-buttons`), 봇도 비용 0 로스터로 사는지(사람만 0으로 하는 방법은 못 찾음), 증원 창이 멀티·컨퀘스트에서 보이는지와 사라지는 문제가 고쳐지는지, `{type side}`가 멀티에서 국가를 주는지, 봇이 비용 0 로스터를 쓰는지, 견본 id(0xC100~)가 맵의 id와 부딪히는지(Spawn Menu도 같은 범위를 쓴다).
+
+```
+ctatoybox spawn-menu preview
+ctatoybox spawn-menu build [--all-nations] [--visible <수>] [--grid <열>] [--no-roster | [--roster-add] [--keep-cost] [--basic-buttons]] [--english] [--single-mod | --nations <국가,…>]
+```
+
+### 한글화 (`l10n`)
+
+게임과 켜 둔 모드의 현지화 `.pot`을 한국어로 바꿔 출력 모드 `CTAToybox`에 넣는다(설계: [../superpowers/specs/2026-10-17-korean-localization-design.md](../superpowers/specs/2026-10-17-korean-localization-design.md), 계획: [../superpowers/plans/2026-10-17-korean-localization.md](../superpowers/plans/2026-10-17-korean-localization.md)).
+
+1. 갱신 `l10n extract`: 바닐라와 켜 둔 모드(로드 순서상 가장 뒤의 파일이 원문)에서 `l10n/ko/<원래 경로>.po`를 만들거나 고친다. 원문이 바뀐 항목은 `#, fuzzy`와 `#| msgid`(예전 원문)를 남기고, 사라진 키는 지우고, 새 키는 비워 둔다. 머리에 원문 층과 게임 버전(`call_to_arms.exe` 제품 버전)을 적는다.
+2. 번역: `.po`의 `msgstr`를 채운다. 용어집은 `l10n/ko/glossary.psv`(`원문|번역|메모`, 원문과 번역이 같으면 "그대로 둘 말").
+3. 검사 `l10n check [--file <글자>]`: 태그 `<…>`, `%` 자리표시(순서까지), `\n` 수, `{…}`, 그대로 둘 말, 글꼴에 없는 글자. 오류가 있으면 종료 1. 미번역·fuzzy는 수만 센다.
+4. 빌드 `l10n build`: 검사 오류가 있거나 게임이 실행 중이면(`--force` 없이) 멈춘다. `mod/CTAToybox/localizations/default/<경로>.pot`(msgid가 한국어, 비었거나 fuzzy면 영어)과 한글 없는 글꼴 81개의 `.font`(`resource/interface/font/`, `binary_data`만 가장 가까운 `main_<크기>.fnt`)를 쓴다. 자기 목록 `.ctatoybox-l10n.json`의 지난 생성물만 지우고, 편집기 빌드 목록에 있는 경로와 목록 밖의 있는 파일은 덮지 않는다.
+
+편집기의 유닛 이름은 `원문 (한글)`으로 보인다(번역이 있고 fuzzy가 아닐 때). 검색은 둘 다에 걸린다. 미확인 다섯 가지는 설계 문서 "미확인"에 있다.
+
+```
+ctatoybox l10n extract
+ctatoybox l10n check
+ctatoybox l10n build
+```
+
 ### "이 유닛만"이 하는 일
 
 공유 파일은 건드리지 않는다. 유닛에서 그 파일까지의 include 사슬을 유닛 전용 사본으로 만들고, 유닛 파일과 사본 안의 include 경로를 사본으로 고쳐 쓴다.
@@ -206,6 +267,7 @@ ctatoybox rule reapply|enable|disable|remove --project editor/projects/my-tweaks
 
 - 쓰는 곳은 `mod/CTAToybox/resource` 아래와 `mod/CTAToybox/.ctatoybox-build.json`뿐이다.
 - "이 유닛만" 수정은 원본에 없는 이름의 사본 파일도 만든다. 사본도 `.ctatoybox-build.json`에 적히고 다음 빌드에서 지워진다.
+- 쓴 파일과 같은 폴더의 `.presets`(이긴 판)와, 쓴 아이템 파일이 `{from}`으로 물려받는 원형 사슬(이긴 판)을 바이트 그대로 같이 쓴다. 출력 모드에 있는 파일이 다른 모드 폴더에만 있는 정의·원형을 찾지 못해 게임이 꺼졌기 때문이다(2026-10-17 `define not found`, `pattern not found`). 내용이 같아 다른 파일이 읽는 값은 바뀌지 않는다.
 - 지우는 것은 이전 빌드가 `.ctatoybox-build.json`에 적어 둔 파일뿐이다. 손으로 넣은 파일은 그대로 둔다.
 - `.ctatoybox-build.json`이 깨져 읽히지 않으면 빌드는 아무것도 쓰거나 지우지 않고 멈춘다(그대로 빌드하면 이전 생성물의 기록을 잃는다). 출력 폴더의 `resource` 아래에서 이전 생성물을 확인해 지우고 목록 파일도 지운 뒤 다시 빌드한다.
 - 수정을 모두 끄고 빌드하면 생성물이 모두 사라진다.

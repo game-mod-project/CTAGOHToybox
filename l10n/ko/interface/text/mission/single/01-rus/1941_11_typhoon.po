@@ -1,0 +1,151 @@
+# source: vanilla interface/text/mission/single/01-rus/1941_11_typhoon.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1941_11_typhoon)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/arty_strike"
+msgid "Artillery support"
+msgstr "포병 지원"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/arty_strike_hint"
+msgid "Click on the area to bombard."
+msgstr "포격할 지역을 클릭하라."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/date"
+msgid "November 16th, 1941 · Volokolamsk, near Moscow."
+msgstr "1941년 11월 16일 · 모스크바 인근 볼로콜람스크."
+
+#, boost-format
+msgctxt "mission/single/01-rus/1941_11_typhoon/dummyguns"
+msgid "%1% out of 5 dummy guns built. You need to take 2 cords of wood to each of the emplacement locations. Dummy guns will attract enemy artillery fire."
+msgstr "더미 포 5문 중 %1%문 완성. 더미 포를 세울 자리마다 장작 2단을 가져가야 한다. 더미 포는 적 포병 사격을 끈다."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/name"
+msgid "Absolute zero"
+msgstr "절대영도"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/name_big"
+msgid "Absolute zero"
+msgstr "절대영도"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/assistant/01"
+msgid "Select the artillery barrage and click on the designated firing area. Obtain points by kills."
+msgstr "포격을 선택하고 지정된 사격 지역을 클릭하라. 적을 쓰러뜨리면 점수를 얻는다."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/assistant/02"
+msgid "Enemy artillery is about to fire on the crosshair location."
+msgstr "적 포병이 십자선 위치에 곧 사격한다."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/01"
+msgid "Comrades, welcome, great timing. We're seriously down on manpower here. Wait... Is this all of you?!!"
+msgstr "동지들, 잘 왔다. 때맞춰 왔군. 여기는 병력이 심각하게 모자라다. 잠깐... 이게 전부인가?!!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/02"
+msgid "Well... we're up shit creek without a paddle! We know the fascists want to smash through here to get to Moscow. We must do everything we can to stop them!"
+msgstr "이런... 완전히 막다른 길에 몰렸군! 파시스트 놈들이 모스크바로 가려고 여기를 뚫으려 한다는 걸 안다. 막기 위해 할 수 있는 건 다 해야 한다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/03"
+msgid "They're attacking! Get our artillery ready to kill them! Hold the line!!"
+msgstr "놈들이 공격한다! 포병을 준비해 쓸어버려라! 전선을 지켜라!!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/04a"
+msgid "I think that plane was a spotter! Enemy artillery will attempt to destroy our AT guns!"
+msgstr "저 비행기는 관측기였던 것 같다! 적 포병이 우리 대전차포를 부수려 들 것이다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/04b"
+msgid "That plane is scouting for our AT guns! Enemy artillery will shoot at whatever he observed!"
+msgstr "저 비행기가 우리 대전차포를 정찰하고 있다! 적 포병이 관측한 곳은 뭐든 쏠 것이다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/05"
+msgid "The High Command has mobilized our reserves, including a new prototype tank. Comrade, no German vehicle will survive a shot from this monster. Send the Fascist vermin back to hell where they belong!"
+msgstr "최고사령부가 예비대를 동원했고, 신형 시제 전차도 있다. 동지, 이 괴물의 포탄을 맞고 살아남을 독일 차량은 없다. 파시스트 해충들을 있어야 할 지옥으로 돌려보내라!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/06"
+msgid "The Fascists have entered the village! Take them out immediately, or we will be done for!"
+msgstr "파시스트들이 마을에 들어왔다! 당장 쓸어내지 않으면 우리는 끝장이다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/officer/fail"
+msgid "You had been ordered to not let the Germans inside the village! There is no room for cowards and traitors in our Red Army!"
+msgstr "독일군을 마을 안에 들이지 말라고 명령했다! 우리 붉은 군대에 겁쟁이와 배신자가 설 자리는 없다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/01"
+msgid "Fetch these coordinates! Give them hell!"
+msgstr "이 좌표를 받아라! 지옥을 보여 줘라!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/01b"
+msgid "Fire on these coordinates! I want to hear them scream!"
+msgstr "이 좌표에 사격하라! 놈들의 비명을 듣고 싶다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/01c"
+msgid "Open fire! Give them hell!"
+msgstr "사격 개시! 지옥을 보여 줘라!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/02"
+msgid "Artillery reloaded! Awaiting targets!"
+msgstr "포병 재장전 완료! 목표를 기다린다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/player/03"
+msgid "We should lay mines. We must man the AT guns. Let's go!"
+msgstr "지뢰를 묻자. 대전차포에 사수를 붙여야 한다. 가자!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/scout/01"
+msgid "The Germans use spotters to find targets for their artillery and their planes. We've collected some timber to build dummy guns. If you care for your men - you better distract their artillery! "
+msgstr "독일군은 관측병으로 포병과 비행기의 목표를 찾는다. 우리가 더미 포를 만들 목재를 모아 놨다. 부하들이 아깝다면 놈들의 포병을 딴 데로 돌려놓는 게 좋을 것이다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/scout/02"
+msgid "Artillery ready! Awaiting coordinates!"
+msgstr "포병 준비 완료! 좌표를 기다린다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/narrator/scout/03"
+msgid "Artillery is down! We'll have to do without the big guns!"
+msgstr "포병이 당했다! 대포 없이 버텨야 한다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/outro_completed"
+msgid "Operation Typhoon started with great prospects for the Germans, but soon the tenacious Soviet resistance made it harder and harder for the Germans to make further gains. The harsh winter conditions, the constant attrition of combat and the stubbornness of the Soviet defenses slowed the relentless Blitzkrieg to a standstill. With fresh reserves from the east, the Stavka would order a counterattack. The road to Berlin was to begin. The outcome of the Great Patriotic War was now inevitable.\n\n For the successful defense of the station of Dubosekovo, a number of monuments were built in honor of Panfilov’s 28 men who were collectively declared heroes of the Soviet Union. In reality, the story turned out to be fabricated. There were many more men in the fight, and the losses for the 8th\n Guards Rifle Division were much greater. Comrade General Panfilov died two days later, on November 18th."
+msgstr "타이푼 작전은 독일군에게 큰 기대 속에 시작되었으나, 곧 끈질긴 소련군의 저항에 막혀 독일군은 더 나아가기가 갈수록 어려워졌다. 혹독한 겨울 날씨, 끊임없는 전투 소모, 소련군 방어선의 완강함이 쉼 없던 전격전을 멈춰 세웠다. 동쪽에서 온 신규 예비대와 함께 스타프카는 반격을 명령한다. 베를린으로 가는 길이 시작될 참이었다. 대조국전쟁의 결과는 이제 피할 수 없게 되었다.\n\n 두보세코보 역 방어의 성공을 기려 여러 기념비가 세워졌고, 판필로프의 28인은 집단으로 소련 영웅 칭호를 받았다. 하지만 실상 이 이야기는 꾸며낸 것으로 드러났다. 전투에는 훨씬 많은 병사가 있었고, 제8\n 근위소총사단의 손실은 훨씬 컸다. 판필로프 장군 동지는 이틀 뒤인 11월 18일에 전사했다."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/outro_failed"
+msgid "Because you were unable to stop the attack, the Germans march on unopposed and will most likely surround Moscow very soon. Our reinforcements from the east will not make it in time to hold Moscow. This will be a huge blow to morale!"
+msgstr "공격을 막지 못한 탓에 독일군은 저지 없이 진군하고, 곧 모스크바를 포위할 공산이 크다. 동쪽의 우리 증원군은 모스크바를 지키기에 제때 닿지 못할 것이다. 사기에 큰 타격이 될 것이다!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/place"
+msgid "1075th Rifle regiment"
+msgstr "제1075소총연대"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/scenario"
+msgid "Volokolamsk road. Less than 100 km away from Moscow."
+msgstr "볼로콜람스크 도로. 모스크바에서 100km도 채 안 된다."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/skip"
+msgid "Skip preparation stage"
+msgstr "준비 단계 건너뛰기"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/story"
+msgid "The German forces launch an attack on Volokolamsk during “Operation Typhoon”, in order to circumvent the northern part of the Moscow defense line."
+msgstr "독일군이 "타이푼 작전" 중 모스크바 방어선 북쪽을 우회하려고 볼로콜람스크를 공격한다."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/task1"
+msgid "Do not let the enemy reach Dubosekovo!"
+msgstr "적이 두보세코보에 닿지 못하게 하라!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/task_guns"
+msgid "Build dummy guns to bait the enemy artillery fire."
+msgstr "적 포병 사격을 유인할 더미 포를 만들어라."
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/timer"
+msgid "Prepare positions!"
+msgstr "진지를 준비하라!"
+
+msgctxt "mission/single/01-rus/1941_11_typhoon/timer_village"
+msgid "The Germans have entered the village! Clear it out and don't let them enter again!"
+msgstr "독일군이 마을에 들어왔다! 소탕하고 다시 들어오지 못하게 하라!"

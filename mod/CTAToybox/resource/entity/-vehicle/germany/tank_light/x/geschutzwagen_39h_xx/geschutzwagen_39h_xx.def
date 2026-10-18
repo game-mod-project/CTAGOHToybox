@@ -1,0 +1,70 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "geschutzwagen_39h_xx.mdl"}
+	("tracks" thickness(30))
+	{volume "barrel1" {thickness 30}}
+	{volume "barrel2" {thickness 30}}
+	{volume "barrel3" {thickness 30}}
+
+	{volume "body1" ;// Lower Front Hull
+		{thickness 80
+			{top 24}
+			{bottom 40}
+		}
+	}
+	{volume "body2" {thickness 68}} ;// Left Frontal Wheel Cover
+	{volume "body3" {thickness 68}} ;// Right Frontal Wheel Cover
+	{volume "body4"  ;// Upper Front Hull
+		{thickness 80
+			{top 44}
+			{bottom 40}
+		}
+	}
+	{volume "body5" ;// Superstructure
+		{thickness 80
+			{top 44}
+			{bottom 40}
+		}
+	}
+	{volume "body6" ;// Upper Plate, directly frontal plate in front of driver
+			{thickness 80
+				{top 44}
+				{bottom 40}
+			}
+		}
+	{volume "body7" ;// Left Superstructure Plane
+		{thickness 80
+			{top 44}
+			{bottom 40}
+		}
+	}
+	{volume "body8" ;// Right Superstructure Plane
+		{thickness 80
+			{top 44}
+			{bottom 40}
+		}
+	}
+	{volume "engine1" {thickness 80 {top 44} {bottom 40}} {able {holed}}} ;// Intenrally behind shields
+	{volume "engine2" {thickness 80 {top 44} {bottom 40}} {able {holed}}}
+
+	;// xx Stuff
+	{volume "tshield1"  {thickness 20}}
+	{volume "tshield2" {thickness 20}}
+	{volume "tshield3" {thickness 20}}
+	{volume "tshield4" {thickness 40}}
+	{volume "tshield5" {thickness 40}}
+	{volume "tshield6" {thickness 40}}
+	{volume "tshield7" {thickness 40}}
+	{volume "tshield8" {thickness 40}}
+	{volume "tshield9" {thickness 40}}
+	{volume "tshield10" {thickness 40} }
+	{volume "tshield11" {thickness 40}}
+	{volume "shield1" {thickness 40} {able {holed}}}
+	{volume "shield2" {thickness 40}}
+	{volume "gun_shield1" {thickness 40}}
+	{volume "gun_shield2" {thickness 40}}
+	{volume "gun_shield3" {thickness 40} {able {holed}}}
+
+	;// Parts
+	{volume "part4" {thickness 68}} ;// Door
+}

@@ -1,0 +1,39 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/66 "E-100c" (物理重平衡版)
+	{filling "bulletger_128"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{reloadSound "utility/"}
+	("range_220")
+	{calibre 128}
+
+	("reload time" seconds(8))
+
+	("velocity m/s" ap(960) apcr(1230) apfsds(1250) he(750) heat(750))
+	("armor health" damage(340))
+	("armor health custom" shell(apcbche) damage(340) velocity(960) filler(567))
+	("armor health custom" shell(apfsds) damage(540) velocity(1250) filler(0))
+	("128_slope_multipliers")
+
+	("penetration_long" shell(apcbche) range(240) a(290) b(275) c(255) d(235) e(215))
+
+	("penetration_long" shell(apcr) range(240) a(345) b(315) c(285) d(240) e(210))
+
+	("penetration_long" shell(apfsds) range(260) a(320) b(310) c(300) d(285) e(270))
+	
+	{parameters "apfsds"
+		{range 245 245}
+	}
+
+	("penetration_long" shell(heat) range(230) a(215) b(215) c(215) d(215) e(215))
+
+	{parameters "he"
+		{range 240 240}
+	}
+
+	("accuracy_direct" r1(0.55) range_ap(240) range_he(240) range_heat(230) range_apfsds(260))
+}

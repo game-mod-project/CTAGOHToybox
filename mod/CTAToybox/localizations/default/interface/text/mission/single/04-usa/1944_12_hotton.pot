@@ -1,0 +1,186 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_12_hotton)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/04-usa/1944_12_hotton/date"
+msgid "1944년 12월 21-25일 · 벨기에 아르덴, 마르쿠레"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/fail_bridge"
+msgid "독일 기갑이 다리를 건넜다. 그것을 막으라는 엄명을 받았었다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/fail_stretchers"
+msgid "부상병이 실린 들것을 너무 많이 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/name"
+msgid "크리스마스 소동"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/name_big"
+msgid "크리스마스 소동"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/01"
+msgid "젠장! 날씨가 빌어먹게 끔찍하다! 전투 중에도 예비대일 때도 우리만 당하는 것 같군..."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/02"
+msgid "진정해라, 병사. 여기에 독일 놈들이? 그게 어떻게 가능하지?"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/03"
+msgid "준비해라, 전원! 위치를 잡고 이 검문소를 사수해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/04"
+msgid "적 전차다! 젠장! 대응할 건 바주카뿐이다. 최선을 다해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/05"
+msgid "판터다! 빌어먹을 판터!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/06"
+msgid "거기 너! 대체 뭘 하고 있나?"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/07"
+msgid "네 전차는 고장 났다. 왜 수리하지 않나? 우리가 확실히 쓸 수 있을 텐데?"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/08"
+msgid "쓸모없는 술주정뱅이 놈들! 내 부하들이 처리하겠다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/09"
+msgid "탁 트인 곳에서는 독일군을 막을 수 없다! 본부로 후퇴해라! 바주카로 근접전에서 저 판터들을 잡는다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/10"
+msgid "부상자도 후송해야 한다. 들것을 강 건너편으로 옮겨라. 그곳에서 독일군을 저지할 것이다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/11"
+msgid "독일군을 막아 내긴 했지만 놈들이 마을을 휩쓸었고 우리는 수적으로 맞설 수 없다. 유일한 기회는 후퇴해서 전 병력을 다리 방어에 집중하는 것이다. 해내라, 제군들!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/12"
+msgid "독일군 기갑을 찢어 놓을 슬러거가 준비돼 있다. 놈들에게 지옥을 보여 줘라, 제군들! 우리 90mm가 어떻게 달리는지 보여 줘라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/13"
+msgid "독일 놈들은 멈춰 서는 순간 우리 바주카와 수류탄 앞의 표적이 된다는 걸 안다. 그래서 멈추지 않고 우리를 압도해 전선을 곧장 돌파할 계획이다. 그렇게 두지 마라. 독일 전차는 단 한 대도 이 다리를 건너선 안 된다. 알겠나?"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/14"
+msgid "잘했다, 제군들. 이제 독일군이 수세에 몰렸다. 보란 듯이 해냈군!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/15"
+msgid "좋아, 제군. 예비대를 동원했다. 이 증원으로 호턴을 독일군에게서 되찾아라. 본부의 문서와 보급품은 독일 놈들에게 넘기기에는 너무 귀중하다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/16"
+msgid "독일 놈들이 중포를 끌고 왔다! 계획에 차질이 생기겠군! 일제 사격과 사격 사이 재장전 틈에 전진해라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator/scout/01"
+msgid "독일군이다! 독일군이다! 빌어먹을 독일 놈들이 반궤도차와 기갑을 끌고 온다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator2/01"
+msgid "우린 치즈 먹고 맥주 마시고 있었어요."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/narrator2/02"
+msgid "아, 이런. 우리는 타기만 하지, 어떻게 돌아가는 건지는 몰라요..."
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/04-usa/1944_12_hotton/obj3_progress"
+msgid "최소 들것 10개 중 %1%개를 강 건너편으로 후송했다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/outro_completed"
+msgid "훌륭했다! 이 승리는 압도적인 열세에도 굴하지 않은 자네의 용기와 끈기의 증거다. 오늘 상관들에게 분명 좋은 인상을 남겼다. 이 승리를 즉시 로즈 장군의 본부에 보고하겠다. 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/outro_failed"
+msgid "로즈 장군이 좋아하지 않을 것이다. 할 수 있는 일은 하나뿐이다. 이번에는 다른 방법으로 다시 시도하라. 이런 일이 일어나게 둘 수 없다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/place"
+msgid "제3기갑사단 '스피어헤드'"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/story"
+msgid " 1944년 12월. D데이 이후 6개월간 진격해 온 너와 모두가 며칠 전 큰 충격을 받았다. 지독한 겨울 날씨 속에서 독일군이 아르덴 지역에서 대규모 반격을 시작한 것이다! 놈들은 안트베르펜을 점령하라는 명령을 받고 벨기에로 밀고 들어오고 있다. 우리 지휘관들은 독일 전투단을 정찰하고 요격하도록 남서쪽으로 이어지는 여러 도로에 기동부대를 보냈다. 그 기동부대들의 위치도, 독일군의 위치도 정보가 없다.\n\n 이 임무에서 너는 전방 본부 가까운 큰길 검문소를 책임진다. 우리 본부와 야전 병원이 마을에 설치되어 있다. 저지선 주변에 방어선을 구축해 마을 진입을 막아라. 부하들에게 참호를 파게 하고 다음 명령을 기다려라.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task1"
+msgid "검문소를 방어하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task2"
+msgid "검문소를 방어하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task3"
+msgid "본부를 방어하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task4"
+msgid "야전 병원의 부상자를 후송하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task5"
+msgid "다리를 방어하고 독일군을 통과시키지 마라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task6"
+msgid "마을을 탈환하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task_sec1"
+msgid "비밀 목표"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/task_sec1c"
+msgid "비밀 목표: 고립된 전차를 수리하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_12_hotton/timer"
+msgid "본부 방어 시간:"
+msgstr ""

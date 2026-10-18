@@ -1,0 +1,389 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/ammo/madsen_dutch_mag"
+msgid "6,5mm x 53R"
+msgstr ""
+
+msgctxt "desc/ammo/mauser_7mm_smg a"
+msgid "7.63x25mm 스틱 탄창 (50)"
+msgstr ""
+
+msgctxt "desc/ammo/mauser_7mm_smg b"
+msgid "7.63x25mm 스틱 탄창 (32)"
+msgstr ""
+
+msgctxt "desc/ammo/pebble_ammo"
+msgid "일반 쇠막대"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_ger_88 clip"
+msgid "M/88"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_ger chi"
+msgid "7.92×57mm Mauser"
+msgstr ""
+
+msgctxt "desc/ammo/mannlicher_1985_8mm_ammo clip"
+msgid "8×50mmR Mannlicher"
+msgstr ""
+
+msgctxt "desc/ammo/13mm_atrifle_jap"
+msgid "13.2mm TuF"
+msgstr ""
+
+msgctxt "desc/ammo/13mm_atrifle_swe"
+msgid "13.2mm TuF"
+msgstr ""
+
+msgctxt "desc/ammo/bullet_30_auto aphe"
+msgid "30×90mmRB [<c(ff6a00)>APHE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/pansarskott_m46_rocket"
+msgid "Pansarskott M/46 Warhead"
+msgstr ""
+
+msgctxt "desc/ammo/fn_model_d_magazine"
+msgid "7.92x57mm Mauser 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/9mm_pistol_type26"
+msgid "Type 26 9×22mmR 탄"
+msgstr ""
+
+msgctxt "desc/ammo/sturm_rocket illum"
+msgid "다중 별 신호탄 [<c(c9a6ff)>조명</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/sturm_rocket he"
+msgid "Wurfgranate Patrone 326 [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/sturm_rocket heat"
+msgid "Panzerwurfkörper 42 [<c(c9a6ff)>HEAT</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_dutch"
+msgid "7.92x54Rmm M.18"
+msgstr ""
+
+msgctxt "desc/ammo/kpistm39_stick"
+msgid "9×19mm Luger Parabellum 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/bazooka_M20 heat"
+msgid "Bazooka T80 [<c(c9a6ff)>HEAT</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/bazooka_M20 wp"
+msgid "Bazooka T127E2 [<c(FFFFFF)>WP</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/johnson_lmg_mag"
+msgid ".30 Johnson LMG 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_johnson clip"
+msgid ".30 Springfield 탄"
+msgstr ""
+
+msgctxt "desc/ammo/m50_reising_30_mag"
+msgid ".45 ACP M50 탄창 (30발)"
+msgstr ""
+
+msgctxt "desc/ammo/m50_reising_mag"
+msgid ".45 ACP M50 탄창 (20발)"
+msgstr ""
+
+msgctxt "desc/ammo/rpg1_pg70"
+msgid "PG-70 [<c(c9a6ff)>HEAT</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/lewis"
+msgid ".303 British"
+msgstr ""
+
+msgctxt "desc/weapon/m21bar_mag"
+msgid "6.5x55 박스 탄창"
+msgstr ""
+
+msgctxt "desc/stuff/rpd_magazine"
+msgid "7.62x39mm 드럼 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/as44_magazine"
+msgid "7.62x41mm 탄창"
+msgstr ""
+
+msgctxt "desc/stuff/hmgun_ger"
+msgid "13mm Panzergranatpatrone L'spur/Gl'spur El. ohne Zerleger"
+msgstr ""
+
+msgctxt "desc/ammo/al_43_ammo"
+msgid "7.62×35mm Lahti 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/berretta_m38a_magazine"
+msgid "9x19mm M1938 스틱 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/6552_ammo clip"
+msgid "6.5×52mm Carcano 클립"
+msgstr ""
+
+msgctxt "desc/ammo/type38_ammo clip"
+msgid "6.5×50mm Arisaka 클립"
+msgstr ""
+
+msgctxt "desc/ammo/20mm_fliegerfaust_ammo"
+msgid "20mm Fliegerfaust 포탄"
+msgstr ""
+
+msgctxt "desc/ammo/fnab_43_magazine"
+msgid "9×19mm Parabellum 스틱 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_ger zpatrone"
+msgid "8x63mm patron m/32 클립"
+msgstr ""
+
+msgctxt "desc/ammo/grb_39_bullet he"
+msgid "7.92x94mm Patronen [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/grb_39_bullet heat"
+msgid "7.92x94mm Patronen [<c(c9a6ff)>HEAT</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/m21bar_mag"
+msgid "6.5x55mm 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/ppk_42_magazine"
+msgid "7.62x25mm Tokarev 스틱 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/ppt27_magazine"
+msgid "7.62×38mmR Nagant 스틱 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rmn_50_ammo he"
+msgid "50mm 박격포 포탄"
+msgstr ""
+
+msgctxt "desc/ammo/sig_mkps_magazine mkps"
+msgid "7.65x21mm Luger 스틱 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/sig_mkps_magazine mkms"
+msgid "7.65x21mm Luger 스틱 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rpd_magazine"
+msgid "7.62x39mm RPD 드럼 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/ruby_mag"
+msgid "7,65×17mm Browning 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type38_ammo lmg"
+msgid "6.5×50mm Arisaka LMG 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/mp_18_magazine"
+msgid "9mm MP18 박스 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type38_ammo small"
+msgid "6.5×50mm Type Hei Automatic 탄창 (20)"
+msgstr ""
+
+msgctxt "desc/ammo/type38_ammo magazine"
+msgid "6.5×50mm Type Hei Automatic 탄창 (30)"
+msgstr ""
+
+msgctxt "desc/ammo/type_96_lmg_magazine"
+msgid "6.5×50mm Type 96 LMG 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type_99_lmg_magazine"
+msgid "7.7×58mm Type 99 LMG 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type99_ammo clip"
+msgid "7.7×58mm Arisaka 클립"
+msgstr ""
+
+msgctxt "desc/ammo/type_94_magazine late"
+msgid "8×22mm Type 94 탄창 (후기)"
+msgstr ""
+
+msgctxt "desc/ammo/type_94_magazine"
+msgid "8×22mm Type 94 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type_14_magazine late"
+msgid "8×22mm Type 14 탄창 (후기)"
+msgstr ""
+
+msgctxt "desc/ammo/type_14_magazine"
+msgid "8×22mm Type 14 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_ger zh29magazine"
+msgid "7.92×57mm Zh 29 탄창 (20)"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_ger zh29magazinesmall"
+msgid "7.92×57mm Zh 29 탄창 (10)"
+msgstr ""
+
+msgctxt "desc/ammo/mannlicher clip"
+msgid "8×50mm R Mannlicher 클립"
+msgstr ""
+
+msgctxt "desc/ammo/sig_1920_type_magazine"
+msgid "7.63×25mm Sig M1920 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type_100_magazine"
+msgid "8×22mm Nambu 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/c_96_magazine a"
+msgid "7.63x25mm Mauser C96 탄창 (10)"
+msgstr ""
+
+msgctxt "desc/ammo/c_96_magazine b"
+msgid "7.63x25mm Mauser C96 탄창 (20)"
+msgstr ""
+
+msgctxt "desc/ammo/c_96_magazine c"
+msgid "7.63x25mm Mauser C96 탄창 (30)"
+msgstr ""
+
+msgctxt "desc/ammo/c_96_magazine d"
+msgid "7.63x25mm Mauser C96 탄창 (40)"
+msgstr ""
+
+msgctxt "desc/ammo/c_96_pistol_clip"
+msgid "7.63x25mm Mauser C96 클립"
+msgstr ""
+
+msgctxt "desc/ammo/c_96_pistol_chi_clip"
+msgid ".45 ACP C96 클립"
+msgstr ""
+
+msgctxt "desc/ammo/tokyo_arsenal_model_1927_drum"
+msgid "8×22mm Tokyo Arsenal 드럼 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type_1_smg_magazine"
+msgid "8×22mm Type 1 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type_2a_smg_magazine"
+msgid "8×22mm Type 2A 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type22_ammo clip"
+msgid "8×53mm Murata 탄"
+msgstr ""
+
+msgctxt "desc/ammo/type13_ammo clip"
+msgid "11×60mm Murata 탄"
+msgstr ""
+
+msgctxt "desc/ammo/type93_magazine ap"
+msgid "13.2×99mm Type 93 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/zb_26_lmg_magazine"
+msgid "7.92×57mm ZB vz.26 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/type38_ammo late"
+msgid "6.5×50mm Type Hei 탄창 (후기)"
+msgstr ""
+
+msgctxt "desc/ammo/carl_gustaf_m_45_magazine"
+msgid "9mm Carl Gustaf M45/B 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/beretta_m38_42_magazine"
+msgid "9mm Beretta M38/42 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/beretta_m38a_magazine"
+msgid "9mm Beretta M38A 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/tz_45_magazine"
+msgid "9mm TZ-45 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/at44_magazine"
+msgid "7.62x41mm AT44 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/hotchkiss_m1922_magazine"
+msgid "7.92x57mm Hotchkiss Mle 1922 클립"
+msgstr ""
+
+msgctxt "desc/ammo/vg2_mag"
+msgid "7.92x33mm VG2 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/hotchkiss_m1922_magazine"
+msgid "7.92x57mm Hotchkiss Mle 1922 클립"
+msgstr ""
+
+msgctxt "desc/ammo/type_92_hmg_magazine"
+msgid "7.7×58mm Type 92 HMG 클립"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_jap"
+msgid "7.7×58mm Arisaka 탄약 상자"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_jap_aa"
+msgid "7.7×53mmR 탄창 상자"
+msgstr ""
+
+msgctxt "desc/ammo/mgun_ger belt vkt"
+msgid "7.62×54mmR Box"
+msgstr ""
+
+msgctxt "desc/ammo/atrifle_jap"
+msgid "13.2mm 대전차 탄"
+msgstr ""
+
+msgctxt "desc/ammo/hmgun_ger_mg131"
+msgid "MG 131 탄창 상자 [<c(ff6a00)>APHE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/hmgun_rus2 ap"
+msgid "14.5mm 중기관총 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_swe mag"
+msgid "6.5×55mm patron m/94 탄창"
+msgstr ""
+
+msgctxt "desc/ammo/rifle_swe clip"
+msgid "6.5×55mm patron m/94"
+msgstr ""

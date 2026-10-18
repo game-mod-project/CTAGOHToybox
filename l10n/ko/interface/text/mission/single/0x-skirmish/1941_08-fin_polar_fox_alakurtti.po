@@ -1,0 +1,118 @@
+# source: vanilla interface/text/mission/single/0x-skirmish/1941_08-fin_polar_fox_alakurtti.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1941_08-fin_polar_fox_alakurtti)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/mission_buys_stay_flag"
+msgid "Reinforcement Menu:"
+msgstr "증원 메뉴:"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/buys_on_after_flag"
+msgid "Units unlock permanently"
+msgstr "유닛이 영구 해금된다"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/name"
+msgid "Arctic Fox"
+msgstr "북극여우"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/name_big"
+msgid "Arctic Fox"
+msgstr "북극여우"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/story"
+msgid " Arctic front, the push for Murmansk. We have covered a lot of ground with our flanking attack. But the village ahead seems heavily defended. You need to attack immediately!\n\nGoals:\n - Destroy Soviet armor.\n - Take Alakurtti."
+msgstr " 북극 전선, 무르만스크 진격. 측면 공격으로 상당한 거리를 전진했다. 하지만 앞쪽 마을은 방어가 단단해 보인다. 즉시 공격해야 한다!\n\n목표:\n - 소련 기갑 전력을 격파하라.\n - 알라쿠르티를 점령하라."
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/place"
+msgid "Alakurtti, Murmansk region"
+msgstr "알라쿠르티, 무르만스크 지역"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/date"
+msgid "July, 1941"
+msgstr "1941년 7월"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/outro_completed"
+msgid "Mission accomplished!"
+msgstr "임무 완수!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/outro_failed"
+msgid "Mission failed!"
+msgstr "임무 실패!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/outro_failed_hq"
+msgid "Mission failed! - your HQ was taken!"
+msgstr "임무 실패! - 본부를 빼앗겼다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/mission_hq"
+msgid "You have to hold your field HQ!"
+msgstr "야전 본부를 지켜야 한다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/mission_attack"
+msgid "Attack the village of Alakurtti!"
+msgstr "알라쿠르티 마을을 공격하라!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/flag_capture_status"
+msgid "Your soldiers secured %1%/7 Soviet positions!"
+msgstr "아군이 소련군 진지 %1%/7곳을 확보했다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/narrator_start0"
+msgid "Welcome to the Murmansk regional HQ, Major! It has to remain in our control at all times!"
+msgstr "무르만스크 지역 본부에 온 것을 환영한다, Major! 이곳은 항상 우리 손에 있어야 한다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/narrator_start1"
+msgid "Comrade, you are tasked with performing a decisive push toward Murmansk! Take the village of Alakurtti!"
+msgstr "동무, 임무는 무르만스크로 결정적인 진격을 하는 것이다! 알라쿠르티 마을을 점령하라!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/narrator_start2"
+msgid "The Soviets may reinforce their lines with heavy armor. Make sure you move before they get here!"
+msgstr "소련군이 중전차로 전선을 보강할지도 모른다. 놈들이 도착하기 전에 움직여라!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/narrator_start3"
+msgid "Begin securing the objectives, while we bring forward some reinforcements for you to deploy!"
+msgstr "목표 확보를 시작해라. 그동안 투입할 증원을 전방으로 보내겠다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/allied_enemy_near_hq"
+msgid "Asetoverit! Soviets are close to our Field HQ!"
+msgstr "아세토베리트! 소련군이 야전 본부 가까이 왔다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/player_enemy_near_hq"
+msgid "We must hold the command post! There can be no talk of retreat here!"
+msgstr "지휘소를 사수해야 한다! 이곳에서 후퇴라는 말은 있을 수 없다!"
+
+msgctxt "mission/single/03-fin_skirmish/1941_08-fin_polar_fox_alakurtti/hq_bonus"
+msgid "Major! Now you can request an airstrike."
+msgstr "Major! 이제 공습을 요청할 수 있습니다."

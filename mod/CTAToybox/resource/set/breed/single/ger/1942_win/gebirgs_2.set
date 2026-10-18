@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_gj_recon_rfl_1"}
+	{portrait "ger_gebirgsjaeger"}
+	{icon "rifle"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m43_cap_gebirgs}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard") 
+		
+		{"stealth"}
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "bandage_ger" 10}
+		{item "m24_geballteladung grenade" 2}
+		{item "rifle_ger clip ammo" 400}
+		{item "m24 grenade" 4}
+		{item "s mine" 4}
+		{in_hands 0}
+	}
+}

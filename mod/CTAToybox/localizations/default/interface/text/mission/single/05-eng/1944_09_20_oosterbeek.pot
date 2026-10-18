@@ -1,0 +1,553 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_09_20_oosterbeek)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/name"
+msgid "끝까지"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/name_big"
+msgid "끝까지"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/outro_completed"
+msgid "이 작전에서 잘못될 수 있는 모든 것이 끔찍하게 잘못됐다. 방금 또다시 막대한 사상자를 냈지만 자네는 그곳에서 빠져나와 훗날을 기약할 수 있게 됐다. 마켓 가든은 용기가 부족해서가 아니라 무지한 지휘관들 때문에 실패했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/outro_failed"
+msgid "끔찍하다, 우리는 호되게 당했다. 마켓 가든 작전은 실패했고 이제 철수마저 실패했다. 자네는 포로가 되었다. 어쩌면 다리 하나가 너무 멀었던 것인지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/date"
+msgid "1944년 9월 22일 · 네덜란드 오스테르베이크"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/place"
+msgid "제1공수사단"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/story"
+msgid "3일 연속 전투를 치르는 동안 아른험과 그 주변의 영국 공수부대 상황은 점점 나빠지고 있다.\n\n보급 작전이 실패한 뒤로는 상황이 시시각각 악화되고 있다.\n\n다리를 장악하는 것은 불가능해졌다. 제30군단은 아직 네이메헌 남쪽에서 그곳 다리를 확보하려고 싸우는 중이다. 곧 돌파할 것 같지 않다.\n\n다리 서쪽에서 싸우던 부대는 아른험에서 오스테르베이크 마을로 후퇴해야 한다. 자네도 포함이다. 낙오병을 만나면 데려가고, 독일군 손에 넘어가지 않도록 해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/gameover_pl_dead"
+msgid "유닛을 모두 잃었다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/gameover_defense"
+msgid "독일군이 돌파했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/gameover_timer"
+msgid "철수 팀이 자네를 두고 떠났다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_01"
+msgid "젠장, 탄이 떨어졌다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_02"
+msgid "나도 마찬가지야, 친구…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_03"
+msgid "콜레르니 슈바비… 저 꼴 좀 봐, 뻔뻔하지 않냐? 벌써 우리 코앞까지 기어오다니."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_04"
+msgid "살아 있군, 맞지? 다행이다. 그런데 유령 같은 꼴이군. 그리고… 보줴 시비엥티, 벌써 묻힌 놈처럼 냄새가 나는군."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_05"
+msgid "좋은 소식 하나, 그리고 아주 엿 같은 소식 하나가 있다. 좋은 소식은 이 지옥에서 나가는 마지막 열차를 탔다는 거다. 나와 내 분대, 이제 둘뿐이지만, 자네들 같은 불쌍한 놈들을 끌어내려고 찾고 있었다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_06"
+msgid "나쁜 소식은 주변을 잠깐만 둘러봐도 알 거다… 이 스쿠르비엘레들에게 둘러싸여 있다. 무기를 더 찾아서 슈바비를 왔던 곳으로 토막 내 돌려보내든가, 머리를 써서 순찰을 빠져나가든가 해야 한다. 다행히 오늘 밤은 어둡다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/intro_07"
+msgid "그래서… 어떻게 할래? 총을 더 찾아서 놈들을 조국으로 돌려보낼까, 아니면 밤의 유령처럼 영리하게 갈까?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part01_01_stealth"
+msgid "멈춰! 남동쪽에서 적 차량이 온다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part01_01_combat"
+msgid "조심해! 남동쪽에서 적 차량이 온다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/perimeter_01"
+msgid "슈바비가 영국군 전초를 공격하고 있다! 아군을 도와야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/perimeter_02"
+msgid "상황이 더 나빠졌다. 영국군이 장악한 마지막 전초가 여기서 300미터 거리였던 걸로 기억한다. 쥐새끼들이 압박을 더하며 물러나지 않는다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_01"
+msgid "맙소사! 코발치크, 또 살아 돌아왔군! 만나서 정말 반갑다, 친구! 어떻게 매번 죽음을 피하는지 정말 궁금하다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_02"
+msgid "사실 특별한 비결은 없다. 저 만족을 모르는 놈에게 "오늘은 아니다"라고 말할 뿐이다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_03"
+msgid "자네들이 아직 이 진지를 지키고 있어서 다행이다. Major가 자네들을 지원하라고 우릴 보냈다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_04"
+msgid "그래서 자네들이 우리 증원군이라고?.. 그게 다야?.. 콜레라, 그게 농담이라면 Major가 유머 감각을 잃어 가는군."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_09"
+msgid "동쪽에서 빌어먹을 전차가 온다! 우리 PIAT 사수가 맞았다. 제군, 그의 발사기를 집어 전차를 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_10"
+msgid "오 콜레라… 화염방사 전차다! 당장 죽여라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_11"
+msgid "잘 맞췄다, 제군! 제 무기 맛을 보게 해 줘라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part02_12"
+msgid "이제 다 처리한 것 같다… 적어도 지금은. 실례하겠네, 제군. Major가 내가 너무 오래 자리를 비웠다고 완전히 이성을 잃기 전에 사라지는 게 좋겠다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_01"
+msgid "귀환했다고 Major 어쿼트에게 보고해야 한다. 호텔의 본부에 있을 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_02"
+msgid "자네들이 무슨 짓을 했는지 알기나 하나?! 지휘관이 이 난장판을 보면 우리 목을 칠 거다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_03"
+msgid "그래도 주변을 둘러볼 만하다. 도움이 필요한 병사들이 있을지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_01"
+msgid "자네들 뭔가 다투고 있다고 들었는데?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_02"
+msgid "저 멍청이들이 한 짓 좀 봐라! 건물을 날려 버렸는데 잔해가 하필 우리 17파운더 바퀴에 떨어졌다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_03"
+msgid "Major가 파괴하라고 했다. 우리는 파괴했다, 탁?! 우리는 "비켜라"라고 소리쳤다. 너희는 멍청한 소처럼 서서 바람에게 말했다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_04"
+msgid "둘 다 진정해라. 서로 화낼 때가 아니다. 바퀴를 교체하면 안 되나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_05_2"
+msgid "글쎄… 기술적으로 한 가지 방법은 있다… 기동훈련 때 취한 캐나다 놈들이 17파운더 바퀴를 노획한 오펠 블리츠 바퀴로 바꿔 보는 걸 봤다. 내기 같은 거였다. 우스꽝스러웠고, 바퀴는 견인 2분 만에 산산조각 났다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_09"
+msgid "해낼 수 있을 것 같나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_10"
+msgid "취한 캐나다 놈들도 했는데 우리라고 못 하겠나? 노획한 트럭 중 하나에서 바퀴만 빼 오면 나머지는 우리가 알아서 하겠다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_11"
+msgid "도브제, 슈바비 트럭을 찾아보자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_12"
+msgid "말도 안 돼… 정말 찾았군! 이봐, 좀 도와주겠나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_qf17_13"
+msgid "맙소사, 해냈다! 바퀴는 날아갔지만 누가 신경 쓰나? 어차피 이 포의 마지막 정거장이다. 철수할 때 끌고 가지도 않는다. 정말 큰 도움을 줬다, 친구."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_01"
+msgid "좋은 트럭이군."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_02"
+msgid "훔칠 생각은 꿈도 꾸지 마라. 네 부류를 안다, 폴란드놈. 뭘 원하나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_03"
+msgid "진정해라, 전체가 필요한 건 아니다. 그냥… 일부만. 정확히는 바퀴가 필요하다. 떼어 줄 수 있나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_04"
+msgid "대체 바퀴가 왜 필요한 거냐? …에이, 됐다. 할 수는 있다. 하지만 아주 특별한 거래라면 응하겠다. 며칠 전 아른험으로 밀고 가다가 파편에 맞았다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_05"
+msgid "폐가 터진 줄 알았다. 위생병이 주사기를 꽂았는데 통증이 그냥… 사라졌다. 이제 움직일 때마다 비명을 지르지 않게 해 주는 건 그것뿐이다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_07"
+msgid "모르핀이 부족하지만 어디서 구할 수 있는지 알 것 같다. 여기서 멀지 않은 곳에 제리의 보급 은닉처가 있다. 입구 근처의 고장 난 탄약 트레일러 안이다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_09"
+msgid "그걸 끌어내게 지프 한 대를 빌려줄 수 있나?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_mechanic_10"
+msgid "절대 안 된다. 그 트레일러는 언제든 터질 수 있고, Major가 수송 수단을 위험에 빠뜨리지 말라고 했다. 우리도 여기서 빠져나가야 한다. 하지만 거기서 쓸 만한 걸 찾으면 가져와라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_near_truck"
+msgid "내가 찾던 트럭이다. 정비병에게 말을 걸어 보자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_near_trailer"
+msgid "이 트레일러에는 아직 탄약이 실려 있다. 조심해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_trailer_tow_hint"
+msgid "저기 빨간 트랙터로 트레일러를 견인할 수 있을지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_board_tractor_no_fuel"
+msgid "콜레라… 탱크가 비었다. 휘발유를 찾아 채워야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_tractor_refuelled"
+msgid "지금은 연료가 충분할 거다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_board_tractor_with_fuel"
+msgid "이제 말이 통하겠군. 이건 경량 진지를 견인할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_board_trailer"
+msgid "꼼짝도 안 한다. 바퀴가 망가졌다. 이걸 견인해 치울 수 있을지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_trailer_moving"
+msgid "시비에트니, 이제 슈바비의 보물에 닿을 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_has_wheel"
+msgid "좋아, 이제 이 바퀴를 포병들에게 가져다줄 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_side_completed"
+msgid "이게 다인 것 같다. 이제 Major에게 보고하러 가자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part03_civ_01"
+msgid "진쿠예… 아… 베단크트… 먹을 것이 아주 좋아요. 그리고 여기 주변이 얼마나 아름다운지 정말 마음에 들어요. 제 고향도 전쟁 전에는 폭격당한 지금의 당신네 마을만큼 좋아 보이지 않았어요."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/report_01"
+msgid "쉬어라, Lieutenant. 무사히 돌아와 반갑다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/report_02"
+msgid "자네가 없는 동안 비극적인 소식을 받았다. 아른험의 Lieutenant Colonel 프로스트 수비대가 항복했다. 그 도시에서 누가 우리에게 도달하길 기다릴 수는 없을 것 같다. 그들의 운명을 피하기 위해 오늘 밤 우리 병력을 철수시키기로 결정했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/report_03"
+msgid "불필요한 이목을 끌지 않도록 어둠을 틈타 이동한다. 자네는 정찰 임무를 맡아야 한다, Lieutenant. 보트를 가진 폴란드군이 강가에서 기다리고 있을 것이다. 그들을 만나 철수를 시작하라는 신호를 보내라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/report_04"
+msgid "우리가 마켓 가든이라 부르는 이 어리석은 작전을 끝내고 부상당하고 굶주린 병사들을 구할 것이다. 그동안에…"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/report_05"
+msgid "박격포다! 엎드려!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_01"
+msgid "그 박격포는 옆 구역에서 날아온다. 젠장, 우리를 정확히 조준하고 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_02"
+msgid "이 호텔이 잔해가 되기 전에 입을 막아야 한다. 신속히 움직여라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_03"
+msgid "Lieutenant 코발치크, 소속 없는 자네 동포 몇 명이 있다. 이제 자네 부하다. 잘 써라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_04"
+msgid "좋아. 문제 하나가 사라졌다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_05"
+msgid "조심해라, 동쪽에서 밀고 들어온다. Lieutenant, 자네가 그 측면을 맡아야 한다. 근처에 예비대가 있지만 지원 없이는 버티지 못한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_06"
+msgid "전면전으로 가기로 했나, 응? 위치를 지켜라, 제군!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_07"
+msgid "오, 쿠르바… 북쪽에서 티거가 온다, 처리해라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_07_qf17"
+msgid "17파운더를 도와줬으니 이제 우리 차례다. 명령만 내리시오, Lieutenant."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_08"
+msgid "티거가 또 한 대? 야 피에르돌렝… 슈바비 놈들, 장난하나."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part04_09"
+msgid "해냈다, 제군, 놈들이 물러난다. 오늘의 마지막 공격이길 바란다. 좀 쉬어라. Major가 오늘 밤 철수한다고 했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/scout_01"
+msgid "...걔가 너한테 그렇게 했을 리가 없다! 대체 자기가 뭐라고 생각하는 거냐?"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/scout_02"
+msgid "뭐… 여자란… 같이 살 수도 없고, 안 살 수도 없지."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/scout_03"
+msgid "휴식 끝이다, 제군. 결승선으로 이동해야 한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_01"
+msgid "폴란드 친구들이 아직 해안에서 우리가 오기를 기다리며 우리를 데리고 나가려 한다. 오늘 저녁 그들과 연락이 끊겼으니, 우리가 아직 살아 있다는 걸 모를 수도 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_02"
+msgid "그들이 우리를 오래 기다리지는 않을 것이다. 슈바비가 우리에게 하듯 그들도 똑같이 압박하고 있다. 최대한 빨리 우리가 아직 여기 있다고 알려야 한다. 지금 아니면 기회가 없다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_03"
+msgid "슈바비가 마을에 있다! 놈들을 전부 죽이느라 시간 낭비하지 마라, 서둘러야 한다! 우리의 최우선 목표는 반대편 사람들에게 우리가 아직 살아 있음을 알리는 것이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_04"
+msgid "중위님?.. 아무도 없습니다… 빌어먹을 철수 팀이 없습니다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_05"
+msgid "코 도 지아블라?.."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_06"
+msgid "Lieutenant, 마침내 철수 팀과 연락이 닿았다. 아직 버티고 있지만 압박을 받아 동쪽으로 물러나야 했다. 근처 마을에 독일 차량이 득실거린다. 빨리 움직이지 않으면 작전 전체가 위태로워질 것이다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_07"
+msgid "철수 팀은 오래 버티지 못한다. 그 차량들을 가능한 한 빨리 제거해야 한다. 그것이 자네의 최우선 임무다, Lieutenant 코발치크."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_08"
+msgid "마을에는 보병도 득실거린다. 소대 하나를 자네 쪽으로 보내겠다. 적의 시선을 끌어 줄 것이다. 그 빌어먹을 차량들을 제거하는 데 집중해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_09"
+msgid "더 줄 수 있으면 좋겠지만 이들이 전투 가능한 마지막 병력이다. 무엇을 위해 싸우는지 기억해라. 자네 뒤에는 며칠째 잠도 못 자고 굶주린 수십 명의 부상병이 있다. 자네가 그들의 마지막 기회다, Lieutenant. 자네를 믿는다. 실망시키지 마라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_10"
+msgid "차량을 모두 파괴했다! 이제 여기서 꺼지자!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_captured_broken_vehicle"
+msgid "바퀴도 변속기도 없는데 이게 어떻게 아직 굴러가나? 슈바비는 전차 대신 민간 차량이나 그만큼 만들었어야 했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_vehicle_destroyed_01"
+msgid "좋아, 차량 하나 격파."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_vehicle_destroyed_02"
+msgid "두 대 격파했지만 더 빨리 처리해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_vehicle_destroyed_03"
+msgid "네 대 중 세 대! 하나 남았다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part05_pl_swim"
+msgid "어디로 가는 거냐?! 우리는 할 일이 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/outro_01"
+msgid "마지막 택시다. 모두 승선해라! 누구 하나 남기지 않았길 바란다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/outro_02"
+msgid "젠장, 여기서 빼내 줘! 놈들이 이미 기다리고 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/cutscene/outro_03"
+msgid "이봐, 기다려라, 이 자식들아!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part01_extraction_reached_one_man"
+msgid "거의 다 왔다. 하지만 아군을 두고 가서는 안 된다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/part01_extraction_reached"
+msgid "좋아, 통과했다. 여기서 빠져나가자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/stealth_light_hint"
+msgid "마을 절반이 불타고 있다. 그런 곳은 피하고 그림자처럼 순찰대 사이를 빠져나가자."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/stealth_take_body"
+msgid "시체를 그냥 두면 안 된다, 다른 슈바비가 발견한다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/stealth_stabbed"
+msgid "깔끔한 쓰리포인트 슛이군."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/stealth_saw_body"
+msgid "이 스쿠르비엘이 시체를 봤다! 당장 죽여라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/stealth_pl_spotted"
+msgid "콜레라, 놈들이 우릴 봤다. 사격 개시!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/narrator/stealth_all_enemies_dead"
+msgid "마지막 놈이었던 것 같다. 계속 가자, 워파키."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_take_body"
+msgid "시체를 옮기려면\n\n제어판의 <c(B29557)>아이템 옵션</c>에서 <c(B29557)>들기</c> 동작을 클릭하라. \n\n시체를 내려놓으려면 유닛의 아무 무기나 선택하라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_stealth_evac"
+msgid "은밀 접근을 택하면 병사 1명만 영국군 방어선에 도달하면 된다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_knifes"
+msgid "<c(B29557)>투척용 단검</c>으로 적을 소리 없이 제거하라. \n\n<c(B29557)>직접 조종</c> 중에는 더 효과적으로 던질 수 있다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_side_quest"
+msgid "본부에 보고하면 선택 활동은 더 이상 할 수 없다. \n\n본부에 보고하려면 증원 탭의 해당 단추를 클릭하라. 이 단추는 호텔 건물 근처에 있을 때 나타난다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_refuel_01"
+msgid "트랙터에 주유할 <c(B29557)>연료통</c>을 찾아라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_refuel_02"
+msgid "<c(B29557)>통을 채우려면</c> 캐릭터의 손에 들게 한다. \n\n인벤토리에서 아이템을 더블클릭하면 된다. \n\n통을 손에 든 채로 <c(B29557)>아무 차량 위에 마우스를 올리면</c> \n\n통 아이콘이 나타난다. 우클릭하면 통을 채운다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_refuel_03"
+msgid "<c(B29557)>통으로 트랙터에 주유하려면</c> \n\n캐릭터가 휘발유가 가득 찬 통을 든 채 트랙터 위에 마우스를 올린다. 깔때기 아이콘이 나타난다. \n\n마우스 오른쪽 단추를 클릭하면 캐릭터가 휘발유를 옮겨 붓는다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/hint_part01_choice"
+msgid "이번 임무 단계는 <c(B29557)>은밀</c> 접근이나 <c(B29557)>전투</c> 접근 중 하나를 고를 수 있다.\n\n<c(B29557)>증원 탭</c>에서 선택지 중 하나를 클릭하라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/timer_evac"
+msgid "철수 팀 출발"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/reinf_report"
+msgid "보고"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/reinf_stealth"
+msgid "은신"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/reinf_combat"
+msgid "전투"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/obj_progress_autocannons"
+msgid "차량 4대 중 %1%대 파괴"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/ui/obj_progress_part01_choice"
+msgid "<c(B29557)>증원 탭</c>에서 접근 방식을 선택하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/01_extraction"
+msgid "영국군 방어선으로 돌아가는 길을 찾아라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/02_perimeter"
+msgid "영국군이 방어선을 지키도록 도와라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/03_report"
+msgid "하르텐슈타인 호텔의 사단 본부에 보고하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/04_mortar"
+msgid "본부를 포격하는 중박격포를 파괴하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/05_defense"
+msgid "동쪽 방어선의 아군을 지원하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/06_evac"
+msgid "철수 부대가 떠나기 전에 합류하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/07_autocannons"
+msgid "독일 차량이 철수를 방해하지 못하게 하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/opt01_qf17"
+msgid "QF-17: 1. 오펠 블리츠 예비 바퀴를 찾아라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/opt02_wheel"
+msgid "QF-17: 2. 정비병을 설득해 오펠 블리츠 바퀴를 얻어라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/opt03_morphine"
+msgid "QF-17: 3. 정비병에게 줄 모르핀을 독일군 보급품 은닉처에서 구하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/opt05_trailer"
+msgid "QF-17: 4. 독일군 탄약 트레일러를 터뜨리지 않고 견인할 방법을 찾아라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/opt06_tractor"
+msgid "QF-17: 5. 트랙터에 연료를 채워라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret01"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret01_completed"
+msgid "비밀 목표: 죽음보다 조용한 그림자 - 발각되지 않고, 한 명도 죽이지 않은 채 영국군 진지에 도달하라"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret02"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_09_20_oosterbeek/tasks/secret02_completed"
+msgid "비밀 목표: 인맥 쌓기 - 선택 부수 활동을 모두 완료하라"
+msgstr ""

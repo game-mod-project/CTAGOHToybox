@@ -59,7 +59,9 @@ static class InheritedUnitScopeTests
         T.Eq(2, report.Count(EditStatus.Applied), "both apply");
         string gunOut = Path.Combine(outDir, "resource", "set", "stuff", "e14", "gun");
         T.True(File.Exists(gunOut), "the unit file is written");
-        T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "e14", "bullet.pattern")), "the pattern is not written");
+        // 원형은 출력 모드에 바이트 그대로 같이 쓴다(2026-10-17 "pattern not found"). 원형의 값은 바뀌지 않는다
+        string patternOut = Path.Combine(outDir, "resource", "set", "stuff", "e14", "bullet.pattern");
+        T.True(File.Exists(patternOut) && File.ReadAllText(patternOut) == session.Stack.ReadText(Bullet), "the pattern goes along unchanged");
         T.True(!File.Exists(Path.Combine(outDir, "resource", "set", "stuff", "e14", "gun2")), "the other heir is not touched");
         string text = File.ReadAllText(gunOut);
         var parsed = SdlCore.Parse(text);

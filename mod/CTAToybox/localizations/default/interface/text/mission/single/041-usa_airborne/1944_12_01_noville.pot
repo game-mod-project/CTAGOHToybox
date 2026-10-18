@@ -1,0 +1,150 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_12_01_noville)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/date"
+msgid "1944년 12월 20일 - 벨기에 아르덴, \n노빌."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/name"
+msgid "노빌에서 포위당하다"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/name_big"
+msgid "노빌에서 포위당하다"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator01"
+msgid "좋다, 공수대원들! 제10기갑사단이 아직 마을에서 싸우고 있는 것 같다! 우리가 들어가야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator02"
+msgid "저격수다! 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator03"
+msgid "데소브리 Major를 도와 노빌에서 독일군을 몰아내야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator_desobry01"
+msgid "딱 맞춰 왔군! 독일군이 우리 전선을 뚫고 본부를 위협했다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator_desobry02"
+msgid "놈들을 밀어냈으니 방어선을 재건할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator_desobry03"
+msgid "공격으로 장비 대부분이 손상됐다. 고칠 수 있는 건 모두 수리해야 한다. 탄약도 부족하다. 찾을 수 있는 보급품은 닥치는 대로 모아라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator04"
+msgid "Major 말씀 들었지. 일하러 가자! 독일 놈들이 다시 공격하기 전에 방어선을 재건해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator05"
+msgid "이 전차와 포를 빨리 가동시켜야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator06"
+msgid "상자에서 지뢰를 꺼내 우리 전선 앞에 매설해라. 적 전차는 움직이지 못할 때 처치하기가 쉽다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator07"
+msgid "근처에 연료 트럭과 탄약 트럭이 있다. 이걸로 장비를 보급하자."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator_desobry06"
+msgid "적 포격이다! 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator08"
+msgid "준비해라! 놈들이 온다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator09"
+msgid "저 독일 놈들 로켓 발사기를 처치해야 한다. 안 그러면 우리가 박살 난다!"
+msgstr ""
+
+#removed
+#msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator10"
+#msgid "Let them burn!"
+#msgstr ""
+#removed
+#msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator11"
+#msgid "There's too many of them! We can't hold the town for much longer!"
+#msgstr ""
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator12"
+msgid "아군 구축전차가 접근한다. 딱 맞춰 왔군!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator13"
+msgid "측면을 돌파당했다! 독일군이 남동쪽에서 공격한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator14"
+msgid "도망친다! 잘했다!"
+msgstr ""
+
+#removed
+#msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator_desobry04"
+#msgid "Good work! Our firepower has greatly increased thanks to those repaired tanks and guns!"
+#msgid "Good work! "
+#msgstr ""
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/narrator_desobry05"
+msgid "지뢰밭이 접근하는 독일 기갑의 속도를 늦춰 줄 것이다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/outro_completed"
+msgid " 잘했다! 제101사단의 나머지가 방어를 구축하고 독일군 공격에 대비할 만큼 시간을 벌었다. 바스토뉴를 지키느냐 잃느냐는 당신의 활약에 달렸을지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/outro_failed"
+msgid "이제 바스토뉴의 동료들은 준비도 못 한 채 독일군 전체와 맞서야 한다. 시간을 조금만 더 벌어 주었다면! 바스토뉴는 함락되고 독일군은 뫼즈 강까지 열린 길을 얻는다. 다시 도전하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/place"
+msgid "제101공수사단 \"비명을 지르는 독수리\""
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/story"
+msgid "  불과 사흘 전, 독일군의 기습 공세가 아르덴에서 연합군 전선을 돌파했다. 초기에는 빠르게 진격했다. 목표는 안트베르펜 점령이다. 독일 제5군은 디낭과 나뮈르에서 뫼즈 강을 건너라는 명령을 받았으며, 이를 건너지 못하면 안트베르펜 진격은 아예 불가능하다.\n\n  그 다리들에 가려면 바스토뉴를 점령해야 한다. 제2 판처 사단은 노빌을 통과해 북쪽에서 바스토뉴 수비대의 측면을 우회할 작정이다.\n\n 그러나 노빌에는 제10기갑사단의 소규모 병력이 길을 막고 있다. 제506 PIR 1대대가 이들을 증원하러 전진한다.\n\n 행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task01"
+msgid "노빌의 독일군을 소탕하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task02"
+msgid "노빌 방어를 준비하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task03"
+msgid "손상된 차량을 수리하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task04"
+msgid "공격이 시작되기 전에 방어선 앞에 지뢰를 매설하라 (최소 50개)."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task05"
+msgid "무슨 대가를 치르더라도 노빌을 사수하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task06"
+msgid "적 로켓 포병을 파괴하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/timer"
+msgid "다음 적 공격까지 남은 시간:"
+msgstr ""

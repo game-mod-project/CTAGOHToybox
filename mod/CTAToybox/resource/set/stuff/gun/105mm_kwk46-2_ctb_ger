@@ -1,0 +1,31 @@
+{from "pattern gun"   ;105mm kwk46 (调整为 L/63 倍径规格)
+
+{filling "bulletger_105_2"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
+	{fireSoundclose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	{range 220 220} 
+	{calibre 105}
+
+	("reload time" seconds(9))
+
+	("velocity m/s" ap(970) apcr(1100) he(900) heat(1))
+	("armor health" damage(370))
+	("armor health custom" shell(apcbche) damage(370) velocity(970) filler(143))
+	("armor health custom" shell(apcr) damage(370) velocity(1100) filler(35))
+	("105_slope_multipliers")
+
+	; PzGr.Rot/Sprgr. L/4.4
+	("penetration_long" shell(apcbche) range(220) a(260) b(240) c(225) d(205) e(185))
+
+	; PzGr 40
+	("penetration_long" shell(apcr) range(220) a(325) b(295) c(260) d(225) e(190))
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+
+	;He
+	("penetration_long" shell(he) range(220) a(25) b(25) c(23) d(21) e(20))  ;RHA
+
+	("accuracy_direct" r1(0.55) range_ap(220) range_he(220) range_heat(220))
+}

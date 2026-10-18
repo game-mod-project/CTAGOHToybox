@@ -1,0 +1,141 @@
+{game_entity
+	(include "/properties/tank__ctb_pz6bh_105mm_ff756824.ext")
+	
+	(include "/properties/selection/vehicle_big.inc" scale(1.0))
+	{props "heavy" "vision_lev05" "muzzle_85mm_93mm_sides" "shell_eject" "shield" "smoke" "nvw" "sq_armor_super_heavy"}
+	(include "pz6bh_105mm.ext")
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{collider "tank.heavy"}
+	{PatherId "tiger2"}	
+
+	{texmod "camo"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{extender "shield"
+		{on}
+	}
+
+	("crew_5_human")
+
+	("commander_visible")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver"}}
+			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end "emit_tank_2_hold"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end "emit_tank_1"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{extender "smokescreen"
+		{cooldown 5}
+		{itemTags "grenade nbk39"}
+	}
+
+	{extender "inventory"
+		{box
+			{item "ammo bulletger_105_2 apcbc" 95}
+			{item "ammo bulletger_105_2 he" 145}
+			{item "ammo bulletger_105_2 apcr" 25}
+			{item "mg34_drum_ctb_ger" filled {user "mgun"}}
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 12}
+			{item "ammo mgun_ger belt" 22500}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{gunner "gunner"}
+			{charger "charger"}
+			{weapon "105mm_kwk46_ctb_ger" filling "ammo bulletger_105_2 apcbc" 1}	
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "mgun"
+			{type "aa"}
+			{gunner "commander"}
+			{charger "commander"}
+			{LinkBone "mgun_rot"}
+			{LinkAnimation "off"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{ai_in_manual}
+			{basic}
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{gunner "gunner"}
+			{charger "charger"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+		}
+	}
+
+	{mass 72300}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.60))
+		("mobility_tank"
+			speed(60) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(11) ;--------Max speed in reverse on road, km/h. (+2 of real life speed)
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(72.3) ;-------Weight in Tonnes.
+			power(700) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.3) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(8600) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(1000) ;----------Range in km, off-road.
+		)
+	}
+
+	{Extension "pz6bh_105mm.mdl"}
+
+	{bone "turret"
+		("turret_heavy" power_traverse(23.7))
+	}
+	{bone "gun_rot"
+		{speed2 3}
+	}
+
+}
+
+
+

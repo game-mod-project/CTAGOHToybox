@@ -1,0 +1,57 @@
+(include "\set\small_firearms_accuracy.inc")
+(include "\set\blast.inc")
+
+(define "armor health"
+	{minimumDamageModifier (* 1.0 %damage)}
+)
+
+(define "velocity"				;// muzzle velocity in meters per second
+	{speed (* 0.75 %mps)}
+)
+(define "penetration"			;// penetration table. penetration reduced after intended fire range to prevent explotation of Direct control
+	{projectileDamageTable {71 %0} {76 0}}
+)
+(define "standard_slope"
+	{overmatchSlope
+		{0 1}
+		{90 1}
+	}
+)
+(define "pointed_slope"
+	{overmatchSlope
+		{0 1}
+		{50 1}
+		{60 2}
+		{90 99}
+	}
+)
+;###########################Custom###########################
+
+;//Copied from anti tank rifle's .presets file for Pvg m/42
+(define "penetration_ap"
+			;// irl scale  0m	  100m	  300m
+	{projectileDamageTable {0 %0} {40 %1} {110 %2} {140 0}}
+)
+(define "ap_blast"							;// standard cannon AP shells
+	{damage blastwave
+		{energy 1.2}
+		{area (* %0 1.5) (* %0 3)}
+		{ground_interaction_radius 0} 		;// value is multiplied by 2nd value of area to deterimine is blast is close enough to ground to trigger terrain fx
+	}
+)
+
+; // Damage logic for AP-type shells with HE filler. Implemented a cubic equation to interpolate. Avoid touching the numbers (very sensitive!).
+(define "armor health custom" ;
+	{parameters "%shell"
+		{minimumDamageModifier (- (+ 29 (+ %damage (+ (* 0.35 %filler ) (* 0.0000000075 (* %filler (* %filler %filler))))))  (* 0.00009 (* %filler %filler)))} ; //Filler defined in grams of TNT
+	}
+)
+
+(define "penetration_short"
+	{parameters "%shell" ;// for units with higher range than 100 and lower than 155, polynomial curve to simulate closer range engagements
+		{projectileDamageTable {10 (+ %a (+ 1.3 (/ (- %a %b) 4.4)))} {30 %a} {100 %b} {%range (+ (* (/ (- 155 %range) (- 155 100)) (- %b %c)) %c)} {(+ %range 15) 0} }
+		{range %range %range}
+	}
+)
+
+;###########################End of Custom###########################

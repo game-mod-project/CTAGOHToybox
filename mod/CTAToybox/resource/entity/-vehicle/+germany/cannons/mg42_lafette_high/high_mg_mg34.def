@@ -1,0 +1,9 @@
+{
+	(include "lafette__ctb_high_mg_mg34_526c6bf0.inc")
+
+	{extender "inventory"
+		{box
+			{item "mg34_belt_ctb_ger" filled {user "mgun"}}
+		}
+	}
+}

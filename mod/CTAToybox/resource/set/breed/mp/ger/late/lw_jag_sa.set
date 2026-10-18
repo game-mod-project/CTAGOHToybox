@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_luft_44_fielddiv_g43"}
+	{portrait "ger_luftwaffe"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_lw_camo1_band_var1}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43_ctb_ger" filling "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger gewehr ammo" 100}
+		{item "rifle_ger clip ammo" 300 50}
+
+		{item "m24 grenade" 3 1}
+		{item "m24_smoke grenade" 1.8 1}
+		{item "m24_geballteladung grenade" 1 1}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+		{item "ger_fieldcap_m43_var1"}
+
+		{in_hands 0}
+	}
+}

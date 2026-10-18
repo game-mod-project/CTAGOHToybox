@@ -1,0 +1,94 @@
+{game_entity
+	(include "/properties/armoredcar__ctb_pzspwg_204_1e4782ea.ext")
+	(include "/properties/shadow/tank.inc" scale(1.0))
+	(include "/properties/selection/vehicle.inc" scale(1.0))
+	{props "td" "tank" "-turret" "mantlet" "wheeled" "with_gun" "vision_lev02" "muzzle_75mm_76mm" "shell_eject" "open_top" "detect_td_medium" "sq_at_gun"}
+	{Extension "pzspwg_204.mdl"}
+	(include "pzspwg_204.ext")
+	{targetclass "armoredcar"}
+	;{targetSelector "armoredcar"}
+
+	{extender "shield"
+		{on}
+	}
+
+{boarder
+	{anm "left"
+		{forward {begin "board_sd222_driver"} {end "seat_driver_car"} {base "open_right" 1}}
+		{reverse {end "emit_sd222_driver"}{base "open_right" -1}}
+	}
+	{anm "right"
+		{forward {begin "board_sd222_driver"} {end "seat_driver_car"} {base "open_left" 1}}
+		{reverse {end "emit_sd222_driver"}{base "open_left" -1}}
+	}
+}
+
+(define "crew_human"
+	{placer
+		{place "%place" {LinkBone "%bone"} {group "crew"} {visor "%visor"} {turnoff {sensor}{targetable}}}
+	}
+	{boarder
+		{door "emit1"}
+		{door "emit2"}
+		{link "emit1" "%place" {anm "left"} {forward putoff} {reverse puton}}
+		{link "emit2" "%place" {anm "right"} {forward putoff} {reverse puton}}
+	}
+)
+
+("crew_human" place(driver) bone() visor(driver))
+("crew_human" place(gunner) bone(gunner) visor(around))
+("crew_human" place(commander) bone() visor(visor1))
+("crew_human" place(charger2) bone(charger2) visor(around))
+
+
+
+
+	{extender "inventory"
+		{box
+			{item "bulletger_50_l42 apche" 60}
+			{item "bulletger_50_l42 he" 50}
+			{item "bulletger_50_l42 apcr" 20}
+			{item "geballteladung_3kg" 2}
+		}
+	}
+
+
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "50mm_kwk38_ctb_ger" filling "bulletger_50_l42 apche" 1}
+			{gunner "gunner"}
+			{charger "charger2"}
+			("abm_dymamic_td"
+				zeroing(2.5)
+				dispersion(0.25)
+			)
+		}
+	}
+
+	{mass 8200}
+	{Chassis "wheel"
+		("tank_trace_ex" fx("tracks_sm2") step(0.2) len(-0.80) boneleft("FXtraceL3") boneright("FXtraceR3"))
+		("car_trace" fx("tracewheel02") step(0.09) wheell("wlf") wheelr("wrf") bonel("FXtraceL1") boner("FXtraceR1"))
+		("mobility_car"
+			speed(108) ;----------------------------------Max speed.
+			speedatmaxturn(28) ;-------------------------Max speed at max turn.
+			reverse(72) ;--------------------------------Max speed in Reverse.
+			weight(8.2) ;--------------------------------Weight in Tonnes.
+			power(105) ;---------------------------------Horse Power.
+			fuel(1400) ;----------------------------------Fuel capacity in Litres.
+			type(fuel) ;---------------------------------Fuel type.
+			range(3000) ;---------------------------------Range in Kilometers.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -12 14}
+		{speed2 8}
+	}
+	{bone "turret"
+		{speed2 11}
+	}
+}

@@ -95,6 +95,10 @@ namespace CtaToybox.Core
         public DisplayNames Names { get; private set; }
         public ItemLinks Items { get; private set; }
         public RosterLinks Roster { get; private set; }
+        // 유닛의 군대(팩션 강화). 처음 쓸 때 만든다
+        public ArmyIndex Armies { get { return armies ?? (armies = ArmyIndex.Build(Stack, Index.Units)); } }
+        ArmyIndex armies;
+        readonly Dictionary<string, List<KeyRow>> describeRows = new Dictionary<string, List<KeyRow>>(StringComparer.Ordinal);
         public EditProject Project { get; private set; }
         public string ProjectPath { get; private set; }
 
@@ -124,6 +128,7 @@ namespace CtaToybox.Core
             if (rebuilt) say("유닛 색인을 새로 만들었다: " + s.Index.Units.Count + "개");
             say("게임 현지화에서 이름을 읽는 중");
             s.Names = DisplayNames.FromGame(s.Settings, s.Plan);
+            if (repoRoot != null) s.Names.AddTranslations(Path.Combine(repoRoot, "l10n", "ko"));   // 한글 이름(원문 (한글))
             s.Plan.Warnings.AddRange(s.Names.Warnings);
             // 게임 설정 파일 이름표는 명령줄과 같이 설정 파일 옆의 settings/files.psv에서 읽는다
             s.settingFiles = SettingFiles.LoadNames(Path.Combine(Path.GetDirectoryName(Path.GetFullPath(settingsPath)), "settings", "files.psv"));
@@ -348,10 +353,16 @@ namespace CtaToybox.Core
         public EditDescription Describe(Edit e)
         {
             string file = SourceStack.ToVirtual(e.File ?? "");
-            string text = Stack.ReadText(file);
-            if (text == null) return null;
-            string error;
-            var rows = SourceRows.Of(file, text, out error);
+            if (e.Kind == FileCopy.Kind || e.Kind == AddLine.Kind) return null;
+            // 수정 목록이 수만 건이면(팩션 강화) 파일마다 한 번만 읽는다. 덧씌우기가 바뀌면 비운다
+            List<KeyRow> rows;
+            if (!describeRows.TryGetValue(file, out rows))
+            {
+                string text = Stack.ReadText(file);
+                string error;
+                rows = text == null ? null : SourceRows.Of(file, text, out error);
+                describeRows[file] = rows;
+            }
             if (rows == null) return null;
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
             if (e.Kind == BlockCopy.Kind)
@@ -593,8 +604,13 @@ namespace CtaToybox.Core
                 var mine = copies.Where(c => string.Equals(SourceStack.ToVirtual(c.File ?? ""), file, StringComparison.Ordinal)).ToList();
                 return mine.Count == 0 ? text : BlockCopy.ApplyAll(text, mine);
             });
+            // 파일 사본(팩션 강화): 사본 경로가 원본 내용으로 보이고, 아이템 이름으로도 풀린다
+            var filePairs = FileCopy.Pairs(project);
+            Stack.SetCopies(filePairs.Where(kv => Stack.FindReal(kv.Key) == null));
+            Items = ItemLinks.Build(Stack.Paths);
             tracer = new UnitTracer(Stack);
             checkedFile = null;
+            describeRows.Clear();
         }
 
         void RefreshOverlay() { RefreshOverlay(Project); }

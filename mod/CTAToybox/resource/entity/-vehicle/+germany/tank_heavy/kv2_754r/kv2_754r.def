@@ -1,0 +1,152 @@
+{game_entity
+	(include "/properties/tank__ctb_kv2_754r_b59de86c.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.5))
+	{props "heavy" "vision_lev06" "shell_eject" "muzzle_150mm_155mm" "diesel" "detect_spg" "sq_he_large"}
+	(include "kv2_754r.ext")
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_spg"}
+	{PatherId "kv2"}
+	{collider "tank.heavy"}
+
+
+	
+
+	{extension "attach.ext"}
+
+
+	{sensor
+		{visor "back"
+			{vision "tank_rear-mg"}
+			{bone "foresight6"}
+		}
+	}
+
+	("crew_6_human_extended")
+
+
+	{boarder
+		{anm "driver"
+			{forward	{begin	"board_kv2_driver"} {end "seat_gunner_stand"} {base "open1"}}
+			{reverse 	{end	"emit_tank_2_hold"}{base "open" -1}}
+		}
+		{anm "left"
+			{forward	{begin	"board_Kv-85"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_Kv-85"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_HighArmor"} 	{end "seat_armor"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_HighArmor"} {end "seat_armor"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+	("crew_human" place(charger2) door(emit1) door2(emit2) visor(back))
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit5)  animation(armor))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+	("seat_human" place(seat5) bone(seat05) door(emit7)  animation(armor))
+	("seat_human" place(seat6) bone(seat06) door(emit8)  animation(armor1))
+	("seat_human" place(seat7) bone(seat07) door(emit9)  animation(armor))
+	("seat_human" place(seat8) bone(seat08) door(emit10)  animation(armor1))
+	("seat_human" place(seat9) bone(seat09) door(emit11)  animation(armor))
+	
+
+	("gunner_visible")
+
+	{sensor
+		{visor "back"
+			{vision "tank_rear-mg"}
+			{bone "foresight4"}
+		}
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletrus_152 he" 175}			; 36 rounds
+			{item "ammo mgun_rus dt" 15435}			; 49 drums
+			{item "satchel_charge_rus" 2}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "152mm_m10t_ctb_ger" filling "bulletrus_152 he" 1}
+			("abm_dymamic_poor"
+				zeroing(4.5)
+				dispersion(0.20)
+			)
+		}
+		;{place "mgun"
+		;	{type "aa"}
+			;{gunner "commander2"}
+			;{charger "commander2"}
+			;{LinkBone "mgun_rot"}
+			;{LinkAnimation "off"}
+			;("abm_mgun")
+			;{basic}
+			;{ai_in_manual}
+		;}
+		{place "mgun1"
+			{type "hull"}
+			{weapon "dt_ctb_ger" filling "ammo mgun_rus dt" 63}
+			{foresight "foresight4"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "dt_ctb_ger" filling "ammo mgun_rus dt" 63}
+			{foresight "foresight5"}
+			("abm_mgun")
+			{basic}
+		}
+		{place "mgun3"
+			{type "rear"}
+			{weapon "dt_ctb_ger" filling "ammo mgun_rus dt" 63}
+			{foresight "foresight6"}
+			{gunner "charger2"}
+			{charger "charger2"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+
+	}
+	{mass 52000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.81))
+		("mobility_tank"
+			speed(39) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6) ;---------Max speed in reverse on road, km/h.
+			traverse(20) ;-------Track traverse, per second, in degrees.
+			weight(52.0) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp.
+			track(2.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(6000) ;----------Fuel capacity in Litres.
+			type(diesel) ;-------Fuel type. (diesel OR fuel)
+			range(1300) ;---------Range in km, off-road.
+		)
+	}
+	
+	{Extension "KV2_754r.mdl"}
+
+	{bone "gun_rot"
+		{limits -24 5}
+		{speed2 3}
+	}
+	{bone "turret"
+		("turret_heavy" power_traverse(0))
+	}
+}

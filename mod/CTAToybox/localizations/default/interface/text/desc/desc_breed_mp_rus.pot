@@ -1,0 +1,2102 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Soviet MP soldiers\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/mp/rus/early/antitank_1"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/antitank_2"
+msgid "대전차 지원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/antitank_3"
+msgid "소총 유탄병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/antitank_4"
+msgid "소총 대전차 그레나디어 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/antitank_5"
+msgid "소총 대전차 탄약수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/artilleryman"
+msgid "포병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/commisar2"
+msgid "정치위원 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/commisar"
+msgid "정치위원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/conscript_nco"
+msgid "징집병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/conscript_rifle"
+msgid "징집병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_1"
+msgid "코사크 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_2"
+msgid "코사크 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_3"
+msgid "코사크 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_nco"
+msgid "코사크 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/engineer_1"
+msgid "야전 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/engineer_2"
+msgid "야전 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/flamer"
+msgid "화염방사기 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/guard_1"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/guard_2"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/guard_3"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/guard_4"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/guard_5"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/marine_1"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/marine_2"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/marine_3"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/marine_4"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/medic"
+msgid "위생병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mg_crew"
+msgid "기관총 승무원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mg_crew_asst"
+msgid "기관총 승무원 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mgun_1"
+msgid "기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mgun_2"
+msgid "기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/militia_1"
+msgid "국경 민병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/militia_2"
+msgid "국경 민병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/militia_3"
+msgid "국경 민병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/miner-ap"
+msgid "AP 지뢰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/miner-at"
+msgid "대전차 지뢰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_1"
+msgid "산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_2"
+msgid "산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_3"
+msgid "산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_mg"
+msgid "산악 병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_mg_asst"
+msgid "산악 병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_nco"
+msgid "산악 병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_senior"
+msgid "상급 산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nco"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nco_rifle"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nco_sa"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nkvd_1"
+msgid "정치 장교 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nkvd_2"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nkvd_3"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/nkvd_4"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_1"
+msgid "데산트니크 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_2"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_3"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_4"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_5"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_mg"
+msgid "데산트니크 기관총 사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_mg_asst"
+msgid "데산트니크 기관총 부사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_nco"
+msgid "데산트니크 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/partisan_1"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/partisan_2"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/partisan_3"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/partisan_4"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/pilot"
+msgid "조종사 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/recon_nco"
+msgid "정찰 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/recon_rifle"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/rifle-avs"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/rifle-svt"
+msgid "베테랑 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/rifleman_1"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/rifleman_2"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/rifleman_3"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/rifleman_sniper"
+msgid "지정사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/senior_sa"
+msgid "상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/signaller"
+msgid "포병 통신병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/smg_1"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/smg_2"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/smg_3"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/sniper"
+msgid "저격수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/spetsnaz_1"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/spetsnaz_2"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/spetsnaz_3"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/tank_commander"
+msgid "Leytenant [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/tankman"
+msgid "전차병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_1"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_2"
+msgid "대전차 지원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_3"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_4"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_5"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_6"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_asst2"
+msgid "대전차 지원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_asst"
+msgid "대전차 지원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/antitank_ptrs"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/artilleryman"
+msgid "포병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_1"
+msgid "돌격 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_2"
+msgid "돌격 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_3"
+msgid "돌격 공병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_4"
+msgid "돌격 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_at"
+msgid "돌격 공병 대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_atr"
+msgid "돌격 공병 대전차 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_sl"
+msgid "돌격 공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_sl_asst"
+msgid "돌격 공병 부분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/assault-sap_sl_asst_mg"
+msgid "돌격 공병 부분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/commisar2"
+msgid "정치위원 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/commisar"
+msgid "정치위원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/conscript_nco"
+msgid "징집병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/conscript_rifle"
+msgid "징집병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/engineer_1"
+msgid "야전 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/engineer_2"
+msgid "야전 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/flamer"
+msgid "화염방사기 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guard_1"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guard_2"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guard_3"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guard_4"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guard_5"
+msgid "근위 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_mg"
+msgid "근위 해병 기관총 사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_mg_asst"
+msgid "근위 해병 기관총 부사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_nco"
+msgid "근위 해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_rifle"
+msgid "근위 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_sa"
+msgid "근위 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_sa_pzf"
+msgid "근위 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_senior"
+msgid "근위 상급 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_marine_smg"
+msgid "근위 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_mgun_1"
+msgid "근위 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_mgun_2"
+msgid "근위 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_mgun_3"
+msgid "근위 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_nco"
+msgid "근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_rifleman_1"
+msgid "근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_rifleman_2"
+msgid "근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_rifleman_3"
+msgid "근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_senior_smg"
+msgid "근위 상급 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_smg_1"
+msgid "근위 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_smg_2"
+msgid "근위 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_smg_3"
+msgid "근위 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_1"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_2"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_3"
+msgid "해병 기관총 사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_4"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_5"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_mg_asst"
+msgid "해병 기관총 부사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_nco"
+msgid "해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_senior"
+msgid "상급 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/medic"
+msgid "위생병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mg_crew"
+msgid "기관총 승무원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mg_crew_asst"
+msgid "기관총 승무원 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mgun_1"
+msgid "기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mgun_2"
+msgid "기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mgun_3"
+msgid "기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/miner-ap"
+msgid "AP 지뢰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/miner-at"
+msgid "대전차 지뢰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nco"
+msgid "Serzhant [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nkvd_1"
+msgid "정치 장교 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nkvd_2"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nkvd_3"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nkvd_4"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_1"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_2"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_3"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_4"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_5"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_6"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/pilot"
+msgid "조종사 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/recon_nco"
+msgid "정찰 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/recon_rifle"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/recon_sa"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/recon_smg2"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/recon_smg"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/rifle-svt"
+msgid "베테랑 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/rifleman_1"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/rifleman_2"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/rifleman_3"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_builder"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_miner_ap"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_miner_at"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/senior_smg"
+msgid "상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/signaller"
+msgid "포병 통신병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/smg_1"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/smg_2"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/smg_3"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sniper"
+msgid "저격수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/spetsnaz_1"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/spetsnaz_2"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/spetsnaz_3"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/spetsnaz_4"
+msgid "특수부대 정찰 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/spetsnaz_5"
+msgid "특수부대 정찰 대전차병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/tank_commander"
+msgid "전차장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/tankman"
+msgid "전차병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/tank_commander_ace"
+msgid "에이스 전차장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/tankman_ace"
+msgid "에이스 전차병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/antitank_1"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/antitank_2"
+msgid "대전차 지원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/antitank_3"
+msgid "소총 유탄병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/antitank_4"
+msgid "소총 대전차 그레나디어 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/antitank_ptrs"
+msgid "대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/artilleryman"
+msgid "포병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_1"
+msgid "돌격 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_2"
+msgid "돌격 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_3"
+msgid "돌격 공병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_4"
+msgid "돌격 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_at"
+msgid "돌격 공병 대전차 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_atr"
+msgid "돌격 공병 대전차 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_sl"
+msgid "돌격 공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_sl_asst"
+msgid "돌격 공병 부분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/assault-sap_sl_asst_mg"
+msgid "돌격 공병 부분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/commisar2"
+msgid "정치위원 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/commisar"
+msgid "정치위원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/conscript_nco"
+msgid "징집병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/conscript_rifle"
+msgid "징집병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/engineer_1"
+msgid "야전 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/engineer_2"
+msgid "야전 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/flamer"
+msgid "화염방사기 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_1"
+msgid "근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_2"
+msgid "근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_3"
+msgid "근위 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_4"
+msgid "근위 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_5"
+msgid "근위 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_nco"
+msgid "근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_senior"
+msgid "근위 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_1"
+msgid "BSF 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_2"
+msgid "BSF 해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_3"
+msgid "BSF 해병 기관총 사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_3"
+msgid "BSF 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_4"
+msgid "BSF 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_5"
+msgid "BSF 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_mg_asst"
+msgid "BSF 해병 기관총 부사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_senior"
+msgid "상급 BSF 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/medic"
+msgid "위생병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mg_crew"
+msgid "기관총 승무원 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mg_crew_asst"
+msgid "기관총 승무원 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mgun_1"
+msgid "기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mgun_2"
+msgid "기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/militia_1"
+msgid "국경 민병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/militia_2"
+msgid "국경 민병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/militia_3"
+msgid "국경 민병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/miner-ap"
+msgid "AP 지뢰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/miner-at"
+msgid "대전차 지뢰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_1"
+msgid "산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_2"
+msgid "산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_3"
+msgid "산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_mg"
+msgid "산악 병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_mg_asst"
+msgid "산악 병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_nco"
+msgid "산악 병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_senior"
+msgid "상급 산악 병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nco"
+msgid "Serzhant [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nco_42"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nco_rifle"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_1"
+msgid "정치 장교 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_2"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_3"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_4"
+msgid "수감된 신병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_1"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_2"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_3"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_4"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_5"
+msgid "데산트니크 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_mg"
+msgid "데산트니크 기관총 사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_mg_asst"
+msgid "데산트니크 기관총 부사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/para_nco"
+msgid "데산트니크 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/partisan_1"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/partisan_2"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/partisan_3"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/partisan_4"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/partisan_5"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/pilot"
+msgid "조종사 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/recon_nco"
+msgid "정찰 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/recon_rifle"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/recon_smg"
+msgid "정찰병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/rifle-svt"
+msgid "베테랑 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/rifleman_1"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/rifleman_2"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/rifleman_3"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/senior_sa"
+msgid "상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/signaller"
+msgid "포병 통신병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/smg_1"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/smg_2"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/smg_3"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/sniper"
+msgid "저격수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/spetsnaz_1"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/spetsnaz_2"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/spetsnaz_3"
+msgid "정찰 특수작전 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/tank_commander"
+msgid "전차장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/tankman"
+msgid "전차병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_mg"
+msgid "기병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_mg_asst"
+msgid "기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_nco"
+msgid "기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_nco_rifle"
+msgid "기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_nco_sa"
+msgid "기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_rifle"
+msgid "기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sa"
+msgid "기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_mg"
+msgid "기병 공병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_mg_asst"
+msgid "기병 공병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_nco"
+msgid "기병 공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_recon_mg"
+msgid "기병 정찰 공병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_recon_mg_asst"
+msgid "기병 정찰 공병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_recon_nco_sa"
+msgid "기병 정찰 공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_recon_rifle"
+msgid "기병 정찰 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_sap_rifle"
+msgid "기병 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_senior_sa"
+msgid "기병 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cav_smg"
+msgid "기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_mg"
+msgid "코사크 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_mg_asst"
+msgid "코사크 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_recon_nco"
+msgid "코사크 정찰 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_recon_rifle"
+msgid "코사크 정찰 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/cossack_recon_sa"
+msgid "코사크 정찰 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_recon_mg"
+msgid "산악 정찰 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_recon_mg_asst"
+msgid "산악 정찰 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_recon_nco"
+msgid "산악 정찰 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_recon_rifle"
+msgid "산악 정찰 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_sapper_builder"
+msgid "산악 공병 건설병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_sapper_nco"
+msgid "산악 공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/mountain_sapper_rifle"
+msgid "산악 공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_flamer"
+msgid "데산트니크 화염방사병 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_flamer"
+msgid "글라이더 화염방사병 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_mg"
+msgid "글라이더 기관총 사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_mg_asst"
+msgid "글라이더 기관총 부사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_nco"
+msgid "글라이더 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_nco_asst"
+msgid "글라이더 부분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_recon_nco"
+msgid "글라이더 정찰 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_recon_rifle"
+msgid "글라이더 정찰 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_recon_sa"
+msgid "글라이더 정찰 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_recon_smg"
+msgid "글라이더 정찰 기관단총병 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_rifle"
+msgid "글라이더 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_glider_sa"
+msgid "글라이더 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_nco_asst"
+msgid "데산트니크 부분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_recon_nco"
+msgid "데산트니크 정찰 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_recon_rifle"
+msgid "데산트니크 정찰 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_recon_sa"
+msgid "데산트니크 정찰 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/para_recon_smg"
+msgid "데산트니크 정찰 기관단총병 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/recon_mg"
+msgid "정찰 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/recon_mg_asst"
+msgid "정찰 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/sapper_builder"
+msgid "공병 건설병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/sapper_nco"
+msgid "공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/early/sapper_rifle"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/conscript_smg"
+msgid "징집병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_mg"
+msgid "정예 근위 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_mg_asst"
+msgid "정예 근위 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_nco"
+msgid "정예 근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_rifle"
+msgid "정예 근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_sa"
+msgid "정예 근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_senior_sa"
+msgid "정예 근위 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/elite_guard_smg_drum"
+msgid "정예 근위 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_mg"
+msgid "근위 데산트니크 기관총 사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_mg_asst"
+msgid "근위 데산트니크 기관총 부사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_mg_asst_dt"
+msgid "근위 데산트니크 기관총 부사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_mg_dt"
+msgid "근위 데산트니크 기관총 사수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_nco"
+msgid "근위 데산트니크 분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_nco_asst_sa"
+msgid "근위 데산트니크 부분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_nco_asst_smg"
+msgid "근위 데산트니크 부분대장 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_rifle"
+msgid "근위 데산트니크 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_sa"
+msgid "근위 데산트니크 소총수 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/guard_para_smg"
+msgid "근위 데산트니크 기관단총병 [VVS]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_crew"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_medic"
+msgid "해병 위생병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_smg"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_mg"
+msgid "해병 기관총 사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_mg_asst"
+msgid "해병 기관총 부사수 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_nco"
+msgid "해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_rifle"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_sa"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_senior"
+msgid "상급 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_reg_smg_m1928"
+msgid "해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/marine_smg_m1928"
+msgid "BSF 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mg_asst_dt"
+msgid "기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mg_dt"
+msgid "기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_mg"
+msgid "산악 기병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_mg_asst"
+msgid "산악 기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_nco"
+msgid "산악 기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_rifle"
+msgid "산악 기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_sa"
+msgid "산악 기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_senior"
+msgid "산악 기병 상급병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/mountain_cav_smg"
+msgid "산악 기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_at_asst"
+msgid "대전차 지원 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_at_rifle"
+msgid "대전차병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mg"
+msgid "기관총 사수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mg_asst"
+msgid "기관총 부사수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_mg"
+msgid "산악 기병 기관총 사수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_mg_asst"
+msgid "산악 기병 기관총 부사수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_nco"
+msgid "산악 기병 분대장 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_rifle"
+msgid "산악 기병 소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_sa"
+msgid "산악 기병 소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_senior"
+msgid "산악 기병 상급병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_cav_smg"
+msgid "산악 기병 기관단총병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_mg"
+msgid "산악 기관총 사수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_mg_asst"
+msgid "산악 기관총 부사수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_nco"
+msgid "산악 분대장 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_rifle"
+msgid "산악 소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_sa"
+msgid "산악 소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_senior"
+msgid "산악 상급병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_mountain_smg_stick"
+msgid "산악 기관단총병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_nco_rifle"
+msgid "분대장 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_nco_smg"
+msgid "분대장 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_recon_nco"
+msgid "정찰 분대장 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_recon_rifle"
+msgid "정찰병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_recon_smg"
+msgid "정찰병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_rifle"
+msgid "소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_sa"
+msgid "소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_sapper_builder"
+msgid "공병 건설병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_sapper_nco_rifle"
+msgid "공병 분대장 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_sapper_rifle"
+msgid "공병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_senior_rifle"
+msgid "상급 소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_senior_sa"
+msgid "상급 소총수 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_senior_smg_stick"
+msgid "상급 기관단총병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_smg_drum"
+msgid "기관단총병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/nkvd_smg_stick"
+msgid "기관단총병 [NKVD]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/penal_rifle"
+msgid "징벌 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/penal_smg"
+msgid "징벌 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/recon_mg"
+msgid "정찰 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/recon_mg_asst"
+msgid "정찰 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/rifle"
+msgid "소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/sapper_builder"
+msgid "공병 건설병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/sapper_mine_ap"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/sapper_mine_at"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/sapper_nco_rifle"
+msgid "공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/sapper_rifle"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/senior_rifle"
+msgid "상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/senior_smg"
+msgid "상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/smg_drum"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/smg_m1928"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/mid/tank_commander_m1928"
+msgid "전차장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_mg"
+msgid "기병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_mg_asst"
+msgid "기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_mg_asst_smg"
+msgid "기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_nco"
+msgid "기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_nco_pps43"
+msgid "기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_nco_stick"
+msgid "기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_rifle"
+msgid "기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_sa"
+msgid "기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_senior_rifle"
+msgid "기병 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_senior_sa"
+msgid "기병 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_senior_smg"
+msgid "기병 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_senior_smg_pps43"
+msgid "기병 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_senior_smg_stick"
+msgid "기병 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_smg_drum"
+msgid "기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_smg_pps43"
+msgid "기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/cav_smg_stick"
+msgid "기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_mg"
+msgid "정예 근위 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_mg_asst"
+msgid "정예 근위 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_mg_asst_smg"
+msgid "정예 근위 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_nco"
+msgid "정예 근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_nco_pps43"
+msgid "정예 근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_nco_stick"
+msgid "정예 근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_rifle"
+msgid "정예 근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_sa"
+msgid "정예 근위 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_senior_rifle"
+msgid "정예 근위 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_senior_sa"
+msgid "정예 근위 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_senior_smg"
+msgid "정예 근위 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_senior_smg_pps43"
+msgid "정예 근위 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_senior_smg_stick"
+msgid "정예 근위 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_smg_drum"
+msgid "정예 근위 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_smg_pps43"
+msgid "정예 근위 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/elite_guards_smg_stick"
+msgid "정예 근위 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_mg"
+msgid "근위 기병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_mg_asst"
+msgid "근위 기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_mg_asst_smg"
+msgid "근위 기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_nco"
+msgid "근위 기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_nco_pps43"
+msgid "근위 기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_nco_stick"
+msgid "근위 기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_rifle"
+msgid "근위 기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_sa"
+msgid "근위 기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_senior_rifle"
+msgid "근위 기병 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_senior_sa"
+msgid "근위 기병 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_senior_smg"
+msgid "근위 기병 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_senior_smg_pps43"
+msgid "근위 기병 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_senior_smg_stick"
+msgid "근위 기병 상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_smg_drum"
+msgid "근위 기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_smg_pps43"
+msgid "근위 기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_cav_smg_stick"
+msgid "근위 기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_nco"
+msgid "근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_nco_pps43"
+msgid "근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_nco_stick"
+msgid "근위 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_senior_rifle"
+msgid "근위 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_senior_sa"
+msgid "근위 상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_senior_smg"
+msgid "근위 상급 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_senior_smg_pps43"
+msgid "근위 상급 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_senior_smg_stick"
+msgid "근위 상급 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/guards_smg_stick"
+msgid "근위 기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_nco"
+msgid "해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_nco_pps43"
+msgid "해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_nco_stick"
+msgid "해병 분대장 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_senior"
+msgid "상급 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_senior_pps43"
+msgid "상급 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/marine_senior_stick"
+msgid "상급 해병 [VMF]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_mg"
+msgid "산악 기병 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_mg_asst"
+msgid "산악 기병 기관총 부사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_nco"
+msgid "산악 기병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_rifle"
+msgid "산악 기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_sa"
+msgid "산악 기병 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_senior"
+msgid "산악 기병 상급병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/mountain_cav_smg"
+msgid "산악 기병 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nco"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nco_pps43"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/nco_stick"
+msgid "분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_dp"
+msgid "파르티잔 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_drum"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/partisan_stick"
+msgid "파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_flamer"
+msgid "공병 화염방사병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_nco"
+msgid "공병 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_rifle"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_senior"
+msgid "공병 상급병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_smg_pps43"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/sapper_smg_stick"
+msgid "공병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/senior_rifle"
+msgid "상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/senior_sa"
+msgid "상급 소총수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/senior_smg"
+msgid "상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/senior_smg_pps43"
+msgid "상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/senior_smg_stick"
+msgid "상급 기관단총병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/smg_stick"
+msgid "기관단총 보병 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/tank_commander_m1928"
+msgid "전차장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_nco"
+msgid "베테랑 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_nco_pps43"
+msgid "베테랑 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_nco_stick"
+msgid "베테랑 분대장 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_dp"
+msgid "베테랑 파르티잔 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_drum"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_drum_pzf"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_k98"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_mg34"
+msgid "베테랑 파르티잔 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_mg42"
+msgid "베테랑 파르티잔 기관총 사수 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_mosin"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_mosin_pzf"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_mp40"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_mp40_pzf"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_pps43"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_stick"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""
+
+msgctxt "desc/human/mp/rus/late/vet_partisan_svt40"
+msgid "베테랑 파르티잔 [KA]"
+msgstr ""

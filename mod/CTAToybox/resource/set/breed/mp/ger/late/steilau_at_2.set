@@ -1,0 +1,42 @@
+{breed
+	{behaviour soldier}
+	{skin "us_m41_ranger_hs2_bar_band_bag2_pfc"}
+	{portrait "ger_regular"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head us_m38_tank_m1_gog2}
+	}
+	{armors
+		{head us_m1_u}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_standard")
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+
+		{item "bazooka ammo heata" 17.5 2.5}
+
+		{item "mk2 grenade" 6.5 1}
+		{item "m15_wp grenade" 2.5 1}
+		{item "anm8_smoke grenade" 2.5 1}
+		{item "m7 grenade" 2.5 1}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+		{item "ger_m40_helmet_mid"}
+
+		{in_hands 0}
+	}
+}

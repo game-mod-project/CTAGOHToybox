@@ -85,6 +85,16 @@ namespace CtaToybox.Core
             return new ItemLink { Name = lower, Rule = oneFolder ? RuleFirstByName : RuleCandidates, Files = candidates };
         }
 
+        // 아이템 이름이 탄약 파일(.ammo)로 풀리는지(팩션 강화). 이름순 맨 앞 규칙이면 그 파일, 후보가 여럿이면 모두 .ammo여야 한다.
+        // 차량 포탄은 이름에 "ammo"가 없어(bulletger_88_l56 he) 글자로 고르지 않고 파일로 본다
+        public bool IsAmmo(string name)
+        {
+            var link = Find(name ?? "");
+            if (link.Files.Count == 0) return false;
+            if (link.Rule == RuleFirstByName) return link.Files[0].EndsWith(".ammo", StringComparison.Ordinal);
+            return link.Files.All(f => f.EndsWith(".ammo", StringComparison.Ordinal));
+        }
+
         // 펼친 노드에서 아이템 이름을 모은다: item·weapon 행의 첫 문자열과 filling 뒤의 문자열
         public static List<string> ReferencedNames(IEnumerable<object> expandedNodes)
         {

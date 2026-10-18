@@ -1,0 +1,88 @@
+;SDL
+	
+
+	
+	("tracks" repair(30) thickness(40))
+	("gun" repair(30) thickness(40))
+
+	("ammo" args "inventory")
+	("transmission" args "transmission")
+
+	{volume "body1"
+		{thickness 60
+			{front 160}
+			{top 40}		
+			{rear 80}
+			{bottom 40}
+		}
+	}
+	{volume "body"
+		{thickness 60
+			{front 120}
+			{top 40}
+			{rear 80}
+			{bottom 40}
+		}
+	}
+	{volume "engine"
+		{thickness 40
+			{front 50}
+			{top 40}
+			{rear 60}
+			{bottom 40}
+		}
+	}
+	{volume "engine1"
+		{thickness 40
+			{front 50}
+			{top 40}
+			{rear 60}
+			{bottom 40}
+		}
+	}
+	{volume "engine2"
+		{thickness 40
+			{front 50}
+			{top 40}
+			{rear 60}
+			{bottom 40}
+		}
+	}
+	{volume "f1"
+		{thickness 60}
+	}
+	{volume "f2"
+		{thickness 60}
+	}
+	{volume "mantlet"
+		{thickness 160}
+	}
+	{volume "mantlet1"
+		{thickness 160}
+	}
+	{volume "mantlet3"
+		{thickness 160}
+	}
+	{volume "shieldl1"
+		{thickness 40}
+	}
+	{volume "trackleft"
+		{thickness 40}
+	}
+	{volume "trackright"
+		{thickness 40}
+	}
+	{volume "turret"
+		{thickness 100
+			{front 160}
+			{top 60}
+			{rear 70}
+			{bottom 120}
+		}
+	}
+	{volume "wingl"
+		{thickness 20}
+	}
+	{volume "wingr"
+		{thickness 20}
+	}

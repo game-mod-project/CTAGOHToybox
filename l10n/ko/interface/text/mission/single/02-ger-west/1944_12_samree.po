@@ -1,0 +1,162 @@
+# source: vanilla interface/text/mission/single/02-ger-west/1944_12_samree.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_12_samree)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/date"
+msgid "December 20th, 1944 · Samree, Ardennes, Belgium"
+msgstr "1944년 12월 20일 · 벨기에 아르덴 삼레"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/name"
+msgid "Wacht Am Rhein"
+msgstr "라인강의 파수"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/name_big"
+msgid "Wacht Am Rhein"
+msgstr "라인강의 파수"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/01"
+msgid "Welcome to the Ardennes, Soldaten! We aim to strike a devastating blow to the Allies, but in running around to find an intact bridge we have almost run out of fuel."
+msgstr "아르덴에 온 것을 환영한다, 병사들! 우리는 연합군에게 치명타를 입히려 하지만, 멀쩡한 다리를 찾아 돌아다니느라 연료가 거의 바닥났다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/02"
+msgid "Today you are tasked with seizing the depot at Samrée. From there, we will secure the neighboring town of Dochamps."
+msgstr "오늘 그대의 임무는 삼레의 보급소를 장악하는 것이다. 거기서부터 인근 도시 도샹을 확보한다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/03"
+msgid "Your first objective is to secure the crossroads up ahead, so our armored column can be deployed. After that, lead our forces into Samrée!"
+msgstr "첫 목표는 전방의 교차로를 확보해 우리 기갑 종대를 전개할 수 있게 하는 것이다. 그다음 우리 부대를 이끌고 삼레로 진격해라!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/04"
+msgid "Well done, now our armor is here to lead the way. The Americans have some serious firepower, so advance cautiously."
+msgstr "잘했다, 이제 우리 기갑이 선두에 설 수 있다. 미군은 상당한 화력을 갖췄으니 신중하게 전진해라."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/05"
+msgid "The Americans have an artillery battery nearby which has been bothering us all day. There must be a radio station at Samrée transmitting our coordinates to the artillery. Silence that radioman if you want the bombardment to stop!"
+msgstr "근처에 하루 종일 우리를 괴롭혀 온 미군 포대가 있다. 삼레에 우리 좌표를 포병에게 알려 주는 무전소가 있는 게 분명하다. 포격을 멈추고 싶다면 그 무전병을 침묵시켜라!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/06"
+msgid "Enemy artillery is bombarding us! Move your troops out of there!"
+msgstr "적 포병이 우리를 포격하고 있다! 병력을 거기서 빼라!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/07"
+msgid "Very good, the American radio operator is no more. The enemy artillery has been silenced."
+msgstr "좋다, 미군 무전병은 사라졌다. 적 포병은 침묵했다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/08"
+msgid "As you make your way to Samrée, make sure to protect the fuel supplies if you find any. We need it!"
+msgstr "삼레로 가는 길에 연료 보급품이 보이면 반드시 지켜라. 우리에게 필요하다!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/09"
+msgid "Excellent job Soldaten! Samrée is ours."
+msgstr "훌륭하다, 병사들! 삼레는 우리 것이다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/10"
+msgid "Next we are tasked with heading north and driving the Americans out of Dochamps. We should expect enemy counterattacks from that direction, take a defensive stance for the time being!"
+msgstr "다음 임무는 북쪽으로 진격해 도샹에서 미군을 몰아내는 것이다. 그쪽에서 적의 반격이 예상되니 당분간 방어 태세를 취해라!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/11"
+msgid "We can get further reinforcements, but our columns are pinned down by the American artillery. You must eliminate the artillery battery on the hill, the one that gave us a hard time earlier."
+msgstr "추가 증원을 받을 수 있지만, 우리 종대가 미군 포격에 묶여 있다. 앞서 우리를 괴롭힌 언덕 위의 포대를 제거해야 한다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/12"
+msgid "I would advise you to first fend off any enemy counterattacks, and then storm the hill. Do that and receive reinforcements to attack Dochamps with additional troops."
+msgstr "먼저 적의 반격을 막아내고 그다음 언덕을 급습하기를 권한다. 그렇게 하면 도샹을 공격할 추가 병력을 증원으로 받는다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/13"
+msgid "Excellent work Soldaten! The M7 Priests on the hill are all silenced. Our reinforcements are getting themselves sorted and should be here any minute now."
+msgstr "훌륭하다, 병사들! 언덕 위의 M7 Priest는 모두 침묵했다. 증원 부대가 정비를 마치고 곧 도착할 것이다."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/14"
+msgid "Excellent work Soldaten! Dochamps is ours, and this is a key step in our winter offensive. I can assure you, Iron crosses will be requested for today's accomplishments!"
+msgstr "훌륭하다, 병사들! 도샹은 우리 것이며, 이는 우리 겨울 공세의 핵심 단계다. 장담하건대 오늘의 공으로 철십자 훈장이 상신될 것이다!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/15"
+msgid "Our reinforcements are here! Now that the American counter-battery threat is eliminated, you get access to long range artillery!"
+msgstr "증원 부대가 도착했다! 미군의 대포병 위협이 사라졌으니 이제 장거리 포병을 쓸 수 있다!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/90mm"
+msgid "The enemy has very nasty 90mm AA guns which are a threat even to our heaviest of Panzers. Advance cautiously, and watch out for large circular fortifications that could house such guns. We cannot afford to lose armor today!"
+msgstr "적에게는 우리 가장 무거운 Panzer에게도 위협이 되는 아주 고약한 90mm 대공포가 있다. 신중하게 전진하고, 그런 포를 수용할 만한 큰 원형 방어 시설을 조심해라. 오늘은 기갑을 잃어선 안 된다!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/reinf1"
+msgid "Enemy counterattack approaching Samrée!"
+msgstr "적의 반격이 삼레로 접근 중이다!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/narrator/reinf2"
+msgid "A large enemy column is approaching from Dochamps towards Samrée! Get ready to hold them back!"
+msgstr "대규모 적 종대가 도샹에서 삼레로 접근하고 있다! 저지할 준비를 해라!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/outro_completed"
+msgid "The road to Antwerp is open! No matter what happens after this, your achievement will not be forgotten. General von Waldenburg is very happy with your work! The allies will not be able to stop us now that we have an abundance of fuel. Good work, commander!"
+msgstr "안트베르펜으로 가는 길이 열렸다! 이후 무슨 일이 생기든 그대의 업적은 잊히지 않을 것이다. 폰 발덴부르크 장군이 그대의 활약에 매우 기뻐하신다! 연료가 넉넉한 지금 연합군도 우리를 막지 못할 것이다. 수고했다, 지휘관!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/outro_failed"
+msgid "Well, that didn’t work out as General von Waldenburg planned - and that’s an understatement, to say the least. We’re stuck here, with little chance of achieving any of the goals that were set for your unit. You will have to try again, using different tactics!\n"
+msgstr "글쎄, 폰 발덴부르크 장군의 계획대로 되지 않았다. 그것도 아주 완곡하게 말해서 그렇다. 우리는 여기 발이 묶였고, 그대의 부대에 주어진 목표 중 무엇이라도 달성할 가망은 거의 없다. 다른 전술로 다시 도전해야 한다!\n"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/place"
+msgid "116th Panzer Division"
+msgstr "제116 판처 사단"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/reinf_arty"
+msgid "Artillery strike"
+msgstr "포격"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/story"
+msgid " December 20th, 1944. Just four days ago, the Germans have sprung a big surprise by mounting a massive offensive in the Ardennes. In a sudden lunge toward the town of Antwerp, German armored columns push west, covered by bad weather. For a few days, the offensive moves with relative ease. But then, the 116th Panzer Division reaches Samrée.\n\n In this mission, you will lead the spearhead of the 116th Panzer Division. The disposition of enemy units is unknown. Our scouts report that the road ahead is blocked; so it seems the Americans know that Samrée is important to us. You have orders to eliminate the roadblock with limited resources. Remember; if you want to get our offensive going again, you will have to take control of Samrée quickly.\n\nGood luck!"
+msgstr "1944년 12월 20일. 불과 나흘 전 독일군은 아르덴에서 대규모 공세를 개시해 큰 기습을 감행했다. 안트베르펜 시를 향한 갑작스러운 돌진에서 독일 기갑 종대는 악천후의 엄호 속에 서쪽으로 밀고 나아간다. 며칠간 공세는 비교적 수월하게 진행된다. 그러나 곧 제116 판처 사단이 삼레에 도달한다.\n\n이번 임무에서 그대는 제116 판처 사단의 선봉을 이끈다. 적 부대의 배치는 알려지지 않았다. 정찰병들의 보고에 따르면 전방 도로가 막혀 있다. 미군도 삼레가 우리에게 중요하다는 것을 아는 모양이다. 제한된 자원으로 저지선을 제거하라. 기억하라. 공세를 다시 굴리려면 삼레를 신속히 장악해야 한다.\n\n행운을 빈다!"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/task1"
+msgid "Eliminate the Americans at the crossroads for the main column to arrive."
+msgstr "주력 종대가 도착할 수 있도록 교차로의 미군을 제거하라."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/task2"
+msgid "Seize the town of Samrée and resupply fuel"
+msgstr "삼레 마을을 점령하고 연료를 보급받아라"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/task3"
+msgid "Take out the enemy artillery battery at the hill and acquire further reinforcements"
+msgstr "언덕의 적 포대를 파괴하고 추가 증원을 받아라"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/task4"
+msgid "Drive the enemy off the town of Dochamps."
+msgstr "도샹 마을에서 적을 몰아내라."
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/timer1"
+msgid "Time until American counterattack at Samrée:"
+msgstr "삼레의 미군 반격까지 남은 시간:"
+
+msgctxt "mission/single/02-ger-west/1944_12_samree/timer2"
+msgid "Time until next counterattack:"
+msgstr "다음 반격까지 남은 시간:"

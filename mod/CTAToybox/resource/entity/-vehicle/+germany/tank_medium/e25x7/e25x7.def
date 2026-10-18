@@ -35,13 +35,13 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_75_l70 apcbche" 38} 	; 82 rounds
-			{item "bulletger_75_l70 he" 40}
-			{item "bulletger_75_l70 apcr" 3}
-			{item "ammo bulletx7 atgm" 12}
-			{item "geballteladung_3kg" 1}
-			{item "nbk39 grenade" 6}
-			{item "ammo hmgun_ger" 4000}
+			{item "bulletger_75_l70 apcbche" 190} 	; 82 rounds
+			{item "bulletger_75_l70 he" 200}
+			{item "bulletger_75_l70 apcr" 15}
+			{item "ammo bulletx7 atgm" 60}
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 12}
+			{item "ammo hmgun_ger" 20000}
 		}
 	}
 
@@ -50,7 +50,7 @@
 		{place "gun"
 			{rotate}
 			{RestoreIKAfterAim}
-			{weapon "75mm_kwk42" filling "bulletger_75_l70 apcbche" 1}
+			{weapon "75mm_kwk42_ctb_ger" filling "bulletger_75_l70 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic_td"
@@ -63,7 +63,7 @@
 		}
 		{place "gun2"
 			{RestoreIKAfterAim}
-			{weapon 	"150mm_x7" filling "ammo bulletx7 atgm" 1}
+			{weapon 	"150mm_x7_ctb_ger" filling "ammo bulletx7 atgm" 1}
 			{foresight 	"foresight2"}
 			("abm_dymamic_stabilised"
 				zeroing(1.1)
@@ -74,7 +74,7 @@
 		}
 		{place "mgun"
 			{type "aa"}
-			{weapon "mg131_mount" filled}
+			{weapon "mg131_mount_ctb_ger" filled}
 			{gunner "commander"}
 			{charger "commander"}
 			{foresight 	"foresight3"}
@@ -90,15 +90,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(0.94))
 		("mobility_tank"
-			speed(55) ;----------Max speed when fully accelerated on road, km/h.
+			speed(83) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(13) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(30.5) ;-------Weight in Tonnes.
 			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
 			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(700) ;----------Fuel capacity in Litres.
+			fuel(7000) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(130) ;---------Range in km, off-road.
+			range(1300) ;---------Range in km, off-road.
 		)
 	}
 

@@ -17,6 +17,24 @@ namespace CtaToybox.Core
 
         public void AddPathName(string virtualPath, string name) { byPath[virtualPath] = name; }
 
+        // 한글화 번역(l10n/ko/*.po). 키 → 한국어. 이름은 "원문 (한글)"로 보인다(한글화 설계 "편집기 표시")
+        readonly Dictionary<string, string> korean = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+
+        public void AddTranslations(string catalogDir)
+        {
+            foreach (var (_, po) in L10n.L10nCatalog.All(catalogDir))
+                foreach (var e in po.Entries)
+                    if (e.Context != null && e.Str.Length > 0 && !e.Fuzzy) korean[e.Context] = Clean(e.Str.Replace("\\\"", "\""));
+        }
+
+        bool Name(string key, out string name)
+        {
+            if (!byContext.TryGetValue(key, out name)) return false;
+            string ko;
+            if (korean.TryGetValue(key, out ko) && ko.Length > 0 && ko != name) name = name + " (" + ko + ")";
+            return true;
+        }
+
         public static DisplayNames Load(string csvPath)
         {
             var names = new DisplayNames();
@@ -109,13 +127,13 @@ namespace CtaToybox.Core
             {
                 int dot = leaf.LastIndexOf('.');
                 string stem = dot <= 0 ? leaf : leaf.Substring(0, dot);
-                if (byContext.TryGetValue("desc/entity/" + stem, out name)) return name;
+                if (Name("desc/entity/" + stem, out name)) return name;
                 string bas = System.Text.RegularExpressions.Regex.Replace(stem, "(_x+)+$", "");
-                if (bas != stem && byContext.TryGetValue("desc/entity/" + bas, out name)) return name + " (" + stem + ")";
+                if (bas != stem && Name("desc/entity/" + bas, out name)) return name + " (" + stem + ")";
                 return null;
             }
             if (unitPath.StartsWith("set/breed/", StringComparison.Ordinal) && unitPath.EndsWith(".set", StringComparison.Ordinal))
-                return byContext.TryGetValue("desc/human/" + unitPath.Substring(10, unitPath.Length - 14), out name) ? name : null;
+                return Name("desc/human/" + unitPath.Substring(10, unitPath.Length - 14), out name) ? name : null;
             if (unitPath.StartsWith("set/stuff/", StringComparison.Ordinal) && !unitPath.StartsWith("set/stuff/_settings/", StringComparison.Ordinal))
             {
                 string[] words = leaf.Split('.');
@@ -130,7 +148,7 @@ namespace CtaToybox.Core
                 if (words.Length > 1) keys.Add(string.Join(" ", words, 0, words.Length - 1));
                 foreach (string k in keys)
                     foreach (string ns in order)
-                        if (byContext.TryGetValue(ns + k, out name)) return name;
+                        if (Name(ns + k, out name)) return name;
             }
             return null;
         }

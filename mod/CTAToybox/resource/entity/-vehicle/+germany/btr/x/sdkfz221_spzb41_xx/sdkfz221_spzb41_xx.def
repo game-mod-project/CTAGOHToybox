@@ -1,0 +1,47 @@
+{game_entity
+	{Extension "sdkfz221_spzb41_xx.mdl"}
+		(include "/properties/vehicle_xx.ext")	
+	{volume "body"
+		{thickness 20
+		{front 20}
+	}
+}
+	{volume "body1"
+		{thickness 20
+		{front 20}
+	}
+}
+	{volume "body2"
+		{thickness 20
+		{front 20}
+	}
+}
+	{volume "turret"
+		{thickness 20
+		{front 20}
+	}
+}
+	{volume "turret1"
+		{thickness 20
+		{front 20}
+	}
+}
+	{volume "turret2"
+		{thickness 20
+		{front 20}
+	}
+}
+	{volume "gun"
+		{thickness 20}
+	}
+	{volume "mantlet"
+		{thickness 20}
+	}
+	{volume "trackleft"
+		{thickness 20}
+	}
+	{volume "trackright"
+		{thickness 20}
+	}
+}	
+

@@ -1,0 +1,48 @@
+{game_entity
+	{Extension "e-100c_xx.mdl"}
+	(include "/properties/vehicle_xx.ext")
+
+	{volume "body"			
+		{thickness 186
+			{front 600}		
+			{top 120}		
+			{rear 450}
+			{bottom 240}
+		}
+	}
+	{volume "body2"			
+		{thickness 246
+			{front 600}
+			{top 120}
+			{rear 450}
+			{bottom  240}
+		}
+	}
+	{volume "body3"			
+		{thickness 246
+			{front 600}
+			{top 120}
+			{rear 450}
+			{bottom 240}
+		}
+	}
+	{volume "engine"		; Hull
+		{thickness 186
+			{front 75}
+			{rear 246}
+			{top 75}
+			{bottom 75}
+		}
+	}
+	{volume "turret"
+		{thickness 246
+			{front 390}
+			{top 120}
+			{rear 450}
+		}
+	}
+	{volume "mantlet"
+		{thickness 300}
+		{CastSteel 0.8063}
+	}
+}

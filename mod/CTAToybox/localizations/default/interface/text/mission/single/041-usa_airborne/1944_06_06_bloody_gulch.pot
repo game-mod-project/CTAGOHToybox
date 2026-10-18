@@ -1,0 +1,177 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_06_bloody_gulch)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/airstrike"
+msgid "포격"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/date"
+msgid "1944년 6월 13일 · 프랑스 노르망디, 카랑탕 부근."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/name"
+msgid "블러디 걸치 전투"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/name_big"
+msgid "블러디 걸치 전투"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator01"
+msgid "이지 중대! 정찰병 보고에 따르면 적 부대가 이쪽으로 오고 있고 곧 도착한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator03"
+msgid "이 산울타리를 따라 방어 위치를 잡아라. 필요하면 보강해라. 지뢰로 적의 접근로를 막아라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator04"
+msgid "버텨라, 그리고 놈들이 오게 두어라. 굳건히 버텨라, 제군!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator05"
+msgid "적이 정찰조를 전선 뒤에서 가두었다. 놈들이 저 구내에 틀어박혔다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator06"
+msgid "제3분대! 독일군 전선을 돌파해서 정찰조와 합류하고, 적 공격이 오기 전에 후퇴해라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator07"
+msgid "일어나, 블라이드! 일어서라, 병사! 총을 쏴, 블라이드!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator08"
+msgid "놈들이 온다! 준비해라, 제군!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator09"
+msgid "적 반궤도차다! 처치해라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator10"
+msgid "놈들이 박격포를 끌고 온다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator11"
+msgid "멀리서 전차 궤도 소리가 들린다! 적 기갑이 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator12"
+msgid "독일 기갑을 제압해야 한다. 바주카 조, 측면으로 돌아가 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator13"
+msgid "전차 격파!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator14"
+msgid "적 공격을 격퇴했다! 기갑이 생겼으니 이제 공세로 전환할 때다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator15"
+msgid "쉴 틈 없다, 놈들을 밀어붙이자!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator16"
+msgid "독일군이 방어선을 뚫었다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator18"
+msgid "잘했다! 저 독일군 박격포는 끝장났다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/narrator_soldier01"
+msgid "제때 와 줬군요. 정말 죽는 줄 알았습니다! 본부로 돌아가는 걸 도와주면 제 무전기로 추가 지원을 요청할 수 있습니다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/outro_completed"
+msgid "이지 중대는 제2기갑사단의 지원을 받아 독일군 공격을 성공적으로 격퇴했다. 독일 공격군이 패주하자 연합군은 서쪽으로 진격해 코탕탱 반도의 독일군을 독일 점령 프랑스와 차단할 수 있었다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/outro_failed"
+msgid "이지 중대는 카랑탕 서쪽 진지를 지키다 독일군에 의해 전멸했다. 이제 카랑탕을 향한 독일군 진격을 막을 것은 아무것도 없다. 다시 도전하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/lose_winters"
+msgid "위터스 Lieutenant가 전사했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/place"
+msgid "제101공수사단 \"비명을 지르는 독수리\""
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/preparation"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/preparation_hint"
+msgid "이 단추를 누르면 준비 카운트다운을 건너뛰고 임무의 다음 단계로 넘어간다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/skip_prep"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/story"
+msgid "  제101사단은 노르망디 강하 이후 일주일 넘게 쉬지 않고 싸웠다. 어제 카랑탕을 소탕했으니, 이 승리를 발판 삼아 전진할 때다.\n\n  이지 중대는 가장 오른쪽 측면을 맡는다. 본부는 진격 축을 따라 정찰대를 앞서 보냈다. 이들의 보고에 따라 행동을 정한다. 제506 낙하산 보병 연대에 보고해 추가 명령을 받고, 피비린내 나는 전투가 될 수 있는 싸움에 대비하라.\n\n 행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task1"
+msgid "산울타리를 따라 방어선을 구축하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task2"
+msgid "정찰조를 구출하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task3"
+msgid "정찰조의 무전병을 구출하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task4"
+msgid "추가 지원을 받도록 무전병을 본부까지 호위하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task5"
+msgid "위치를 지키고 본부를 방어하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task6"
+msgid "측면으로 돌아 적 StuG를 제압하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task7"
+msgid "전장에 남은 적 병력을 소탕하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_winters"
+msgid "위터스 Lieutenant를 살려라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_heal_winters"
+msgid "위터스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_secret"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/task_secret_comp"
+msgid "(비밀 목표 #1): 블라이드를 격려하라"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_06_bloody_gulch/timer1"
+msgid "적 공격까지 남은 시간:"
+msgstr ""

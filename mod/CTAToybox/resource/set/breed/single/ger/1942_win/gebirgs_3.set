@@ -1,0 +1,32 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_gj_mg_1"}
+	{portrait "ger_gebirgsjaeger"}
+	{icon "mg"}
+	{icon_priority 1}
+	{nationality ger}
+	{armors
+		{head ger_m43_cap_gebirgs}
+	}
+	{perks
+		(include "ability.inc")
+		("mg_skill_rank_4")("tier4_standard") 
+		
+		{"stealth"}
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mg34_doubledrum_ctb_ger" filling "mgun_ger doubledrum ammo" 150}
+		{item "bandage_ger" 10}
+		{item "m24_geballteladung grenade" 2}
+		{item "mgun_ger doubledrum ammo" 2500}
+		{item "m24 grenade" 4}
+		{item "shovel_ger"}
+		{in_hands 0}
+	}
+}

@@ -1,0 +1,133 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_09_01_nijmegen)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/date"
+msgid "1944년 9월 20일 · 네덜란드 네이메헌."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/name"
+msgid "발 강 다리"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/name_big"
+msgid "발 강 다리"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/place"
+msgid "제82공수사단 '올 아메리칸'"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/story"
+msgid "  제1연합군 공수군과 제30군단의 과감한 합동 공격인 마켓 가든 작전이 오늘 시작된다. 연합군 공수부대는 주요 목표에 투하되어 여러 다리를 확보하고 지상군이 올 때까지 지켜야 한다.\n\n  이를 위해 도로교 아홉 개를 확보해야 제30군단이 아른험까지 달릴 수 있다. 당신은 제82 \"올 아메리칸\" 공수사단과 함께 네이메헌 부근에 투하되었다. 강하 후 목표는 도로교를 확보하는 것이다.\n\n  북쪽으로 이동하며 시가지를 돌파해야 한다. 당신과 도로교 사이에는 아직 독일군이 진지를 지키고 있다. 다음 행동에 앞서 그들을 소탕해야 한다.\n\n 행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/outro_completed"
+msgid "훌륭하다! 어려운 임무였지만 믿기 힘든 불리함을 극복했다. 도하는 치명적이었지만 네이메헌 다리는 확보되었고, 해낸 것은 제82사단이다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/outro_failed"
+msgid "여기서 실패는 용납할 수 없다! 저 다리는 반드시 확보해야 하는 유일한 목표이며 우회로는 없다. 다시 투입한다. 이번에는 어떤 대가를 치르더라도 점령해야 한다. 아니면 작전 전체가 실패한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator01"
+msgid "좋다, 제군! 목표는 바로 앞이다, 발 강 다리!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator03"
+msgid "이 지역의 독일군 거점을 제거해야 한다. 성 스테판 교회, 중앙 교차로, 부두를 확보해라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator04"
+msgid "폭격 후에도 독일군 저항이 예상보다 강하다. 다리에 접근할 다른 방향을 찾아야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator05"
+msgid "병력 절반은 강을 건너 반대편에서 다리를 확보한다. 나머지 절반은 여기 남아 교회의 거점을 방어한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator06"
+msgid "건넜다! 지역을 소탕하고 강둑을 확보하자!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator07"
+msgid "잘했다! 이제 다리 북쪽을 점령해 독일군을 차단할 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator08"
+msgid "저 88들이 우리와 다리 사이에 있다! 처치하자!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator10"
+msgid "다리 북단을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator11"
+msgid "영국 전차가 도착했다! 이들 도움으로 시가지를 돌파할 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator12"
+msgid "다리를 장악하려면 먼저 팔크호프 공원을 확보해야 한다. 전진해라, 제군!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator_soldier01"
+msgid "무전병입니다! 무엇을 하면 됩니까?"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator13"
+msgid "공원의 독일군 거점에 공습이 필요하다. 공원이 보이는 곳까지 접근해서 무전으로 요청해라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/narrator_soldier02"
+msgid "좌표를 받았습니다. 공습이 오고 있습니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task01"
+msgid "독일군 거점을 제거하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task01a"
+msgid "교회를 지켜라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task02"
+msgid "보트로 강을 건너라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task02a"
+msgid "강둑을 확보하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task03"
+msgid "다리 북단을 확보하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task04"
+msgid "Flak 88을 파괴하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task05"
+msgid "폐허가 된 시가지를 돌파하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task06"
+msgid "팔크호프 공원을 소탕하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task07"
+msgid "무전병을 지정된 장소 중 한 곳으로 이동시켜 공습을 요청하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_09_01_nijmegen/task08"
+msgid "발 강 다리를 확보하라!"
+msgstr ""

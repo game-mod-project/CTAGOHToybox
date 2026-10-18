@@ -1,0 +1,200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/squad_officer_250_3_con_mace"
+msgid "Sd.Kfz 250/3 (지휘)"
+msgstr ""
+
+msgctxt "desc/squad/squad_volksg_sturm_late_all_3_mace(ger)"
+msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 폭스그레나디어 슈투름 분대 [헤어]"
+msgstr ""
+
+msgctxt "desc/squad/squad_steilau_con(ger)"
+msgid "<c(A5A095)>(4)</c> 아인하이트 슈틸라우 야크트코만도 분대 [헤어]"
+msgstr ""
+
+msgctxt "desc/squad/single_signaller(ger)"
+msgid "포병 통신병 [헤어]"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade_con(ger)"
+msgid "그레나디어 소총수"
+msgstr ""
+
+msgctxt "desc/squad/single_riflegrenade(ger)"
+msgid "<c(E56042)>1.</c> 그레나디어 소총수"
+msgstr ""
+
+msgctxt "desc/squad/single_at_grb39(ger)"
+msgid "<c(E56042)>2.</c> 그레나디어 대전차 분견대"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_late_off_1(ger)"
+msgid "<c(A5A095)>(1)</c> <c(E56042)>1.</c> 란데스쉬첸 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_late_off_2(ger)"
+msgid "<c(A5A095)>(1)</c> <c(E56042)>2.</c> 란데스쉬첸 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_grenadier_late_off(ger)"
+msgid "<c(A5A095)>(2)</c> 그레나디어 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_atrifle_late_def(ger)"
+msgid "<c(A5A095)>(2)</c> 대전차 소총 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_lw_feldg_late_irr(ger)"
+msgid "<c(A5A095)>(2)</c> LW. 펠트겐다르메리 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_late_all2_1(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 펠트겐다르메리 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_late_all2_2(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 펠트겐다르메리 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_auf_recon_late_def(ger)"
+msgid "<c(A5A095)>(2)</c> 아우프클레러 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pz_auf_recon_at_late_sup(ger)"
+msgid "<c(A5A095)>(2)</c> 판처아우프클레러 (대전차) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_endsieg_sturmgren_late_def(ger)"
+msgid "<c(A5A095)>(3)</c> 엔트지크 슈투름그레나디어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pz_hg_late_sup(ger)"
+msgid "<c(A5A095)>(3+)</c> 팔쉬름-판처그레나디어 HG 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pio_hg_late_sup(ger)"
+msgid "<c(A5A095)>(3+)</c> 팔쉬름-판처피오니어 HG 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_late_off_1(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 팔쉬름예거 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_late_off_2(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 팔쉬름예거 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_recon_late_off_1(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>1.</c> 팔쉬름아우프클레러 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_recon_late_off_2(ger)"
+msgid "<c(A5A095)>(4)</c> <c(E56042)>2.</c> 팔쉬름아우프클레러 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pz_recon_early_off_1(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>1.</c> 판처아우프클레러 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_pz_recon_early_off_2(ger)"
+msgid "<c(A5A095)>(2)</c> <c(E56042)>2.</c> 판처아우프클레러 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_con(ger)"
+msgid "<c(A5A095)>(1)</c> 란데스쉬첸 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_landes_heavy_con(ger)"
+msgid "<c(A5A095)>(1)</c> 란데스쉬첸 중무장 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_con(ger)"
+msgid "<c(A5A095)>(2)</c> 펠트겐다르메리 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_feldg_heavy_con(ger)"
+msgid "<c(A5A095)>(2)</c> 펠트겐다르메리 중무장 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_lw_feldg_con(ger)"
+msgid "<c(A5A095)>(2)</c> LW. 펠트겐다르메리 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_endsieg_sturmgren_con(ger)"
+msgid "<c(A5A095)>(3)</c> 엔트지크 슈투름그레나디어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pz_hg_con(ger)"
+msgid "<c(A5A095)>(3+)</c> 팔쉬름-판처그레나디어 HG 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_pio_hg_con(ger)"
+msgid "<c(A5A095)>(3+)</c> 팔쉬름-판처피오니어 HG 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_con(ger)"
+msgid "<c(A5A095)>(4)</c> 팔쉬름예거 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_fallschirm_sud_heavy_con(ger)"
+msgid "<c(A5A095)>(4)</c> 팔쉬름예거 중무장 (남부) 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_km_late_con(ger)"
+msgid "크릭스마리네 소총 분대"
+msgstr ""
+
+msgctxt "desc/squad/single_grb39(ger)"
+msgid "대전차 소총 분견대 (GRB-39)"
+msgstr ""
+
+msgctxt "desc/squad/single_wz35(ger)"
+msgid "대전차 소총 분견대 'Wz. 35 PzB 770(p)'"
+msgstr ""
+
+msgctxt "desc/squad/single_sturmpistole(ger)"
+msgid "그레나디어 분견대 (Sturmpistole)"
+msgstr ""
+
+msgctxt "desc/squad/single_mg131(ger)"
+msgid "중기관총 분견대 (MG 131)"
+msgstr ""
+
+msgctxt "desc/squad/single_fliegerfaust(ger)"
+msgid "대공 발사기 분견대 (Fliegerfaust B)"
+msgstr ""
+
+msgctxt "desc/squad/squad_pzlehr_pz_sturmgren(ger)"
+msgid "판처 레어 판처슈투름그레나디어 분대"
+msgstr ""
+
+msgctxt "desc/squad/squad_ersatztrupp_con(ger)"
+msgid "<c(A5A095)>(4)</c> 제150 판처브리가데"
+msgstr ""
+
+msgctxt "desc/squad/conquest_me_262_50mm"
+msgid "Me 262A-1a/U4 50mm"
+msgstr ""
+
+msgctxt "desc/squad/me_262_50mm"
+msgid "Me 262A-1a/U4 50mm"
+msgstr ""
+
+msgctxt "desc/squad/conquest_me_262_500x2"
+msgid "Me 262 A-1a Schwalbe 500kg 폭탄"
+msgstr ""
+
+msgctxt "desc/squad/me_262_500x2"
+msgid "Me 262 A-1a Schwalbe 500kg 폭탄"
+msgstr ""

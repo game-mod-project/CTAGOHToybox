@@ -1,0 +1,52 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzerwerfer42_xx.mdl"}
+
+	{volume "wheelleft1"
+		{thickness 4}
+	}
+	{volume "wheelright1"
+		{thickness 4}
+	}
+	{volume "barrel1"
+		{thickness 20}
+	}
+	{volume "body1"
+		{thickness 16
+			{top 12}
+			{bottom 12}
+		}
+		{able {holed}}
+	}
+	{volume "body2"
+		{thickness 16
+			{top 12}
+		}
+	}
+	{volume "body3"
+		{thickness 24}
+	}
+	{volume "body4"
+		{thickness 24}
+	}
+	{volume "engine1"
+		{thickness 16}
+	}
+	{volume "part2"
+		{thickness 16}
+	}
+	{volume "part3"
+		{thickness 16}
+	}
+	{volume "part4"
+		{thickness 12}
+	}
+	{volume "turret1"
+		{thickness 20}
+	}
+	{volume "turret2"
+		{thickness 20}
+		{able {holed}}
+	}
+	("tracks" thickness(30))
+}

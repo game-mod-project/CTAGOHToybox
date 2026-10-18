@@ -1,0 +1,394 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name (desc_vehicles_rus)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/entity/kv-220"
+msgid "KV-220"
+msgstr ""
+
+msgctxt "desc/entity/kv5"
+msgid "KV-5"
+msgstr ""
+
+msgctxt "info/special/kv5"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is2u"
+msgid "IS-2U(110) v.1"
+msgstr ""
+
+msgctxt "info/special/is2u"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is2u_1"
+msgid "IS-2U(110) v.2"
+msgstr ""
+
+msgctxt "info/special/is2u_1"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is3_0"
+msgid "IS-3 122mm"
+msgstr ""
+
+msgctxt "info/special/is3_0"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is3_1"
+msgid "IS-3 100mm"
+msgstr ""
+
+msgctxt "info/special/is3_1"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is5"
+msgid "IS-5"
+msgstr ""
+
+msgctxt "info/special/is5"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is6"
+msgid "IS-6"
+msgstr ""
+
+msgctxt "info/special/is6"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/obj260"
+msgid "Object 260"
+msgstr ""
+
+msgctxt "info/special/obj260"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is7"
+msgid "IS-7"
+msgstr ""
+
+msgctxt "info/special/is7"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/0bj_268"
+msgid "Object 268 'St. John 's Wort'"
+msgstr ""
+
+msgctxt "info/special/0bj_268"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/isu130"
+msgid "ISU-130"
+msgstr ""
+
+msgctxt "info/special/isu130"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/t44"
+msgid "T-44"
+msgstr ""
+
+msgctxt "info/special/t44"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/t44_2"
+msgid "T-44 100mm LB-1"
+msgstr ""
+
+msgctxt "info/special/t44_2"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/rbt5"
+msgid "RBT-5"
+msgstr ""
+
+msgctxt "info/special/rbt5"
+msgid "<c(c3baae)>고속 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv122"
+msgid "KV-122"
+msgstr ""
+
+msgctxt "info/special/kv122"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/object248"
+msgid "Object-248"
+msgstr ""
+
+msgctxt "info/special/object248"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is4"
+msgid "IS-4"
+msgstr ""
+
+msgctxt "info/special/is4"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/is4m"
+msgid "IS-4M"
+msgstr ""
+
+msgctxt "info/special/is4m"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/kv-3"
+msgid "KV-3"
+msgstr ""
+
+msgctxt "desc/entity/kv-4_dukhov_turret"
+msgid "KV-4 'Dukhov Turret' v.1"
+msgstr ""
+
+msgctxt "desc/entity/kv-4_strukov_turret"
+msgid "KV-4 'Strukov Turret' v.2"
+msgstr ""
+
+msgctxt "desc/entity/kv2_zis6"
+msgid "KV2-ZIS6"
+msgstr ""
+
+msgctxt "desc/entity/kv-6"
+msgid "KV-6"
+msgstr ""
+
+msgctxt "desc/entity/object279"
+msgid "Object 279"
+msgstr ""
+
+msgctxt "desc/entity/object263"
+msgid "Object 263"
+msgstr ""
+
+msgctxt "desc/entity/object263a"
+msgid "Object 263 Type A"
+msgstr ""
+
+msgctxt "desc/entity/obj261"
+msgid "Object 261"
+msgstr ""
+
+msgctxt "desc/entity/zsu37gos"
+msgid "ZSU-37"
+msgstr ""
+
+msgctxt "desc/entity/t_v"
+msgid "T-V [Panther]"
+msgstr ""
+
+msgctxt "desc/entity/t44_122"
+msgid "T-44-122"
+msgstr ""
+
+msgctxt "desc/entity/t54_47"
+msgid "T-54-1947"
+msgstr ""
+
+msgctxt "desc/entity/bz-75_tank"
+msgid "BZ-75 v.1"
+msgstr ""
+
+msgctxt "desc/entity/bz-75_tank1"
+msgid "BZ-75 v.2"
+msgstr ""
+
+msgctxt "info/special/kv-3"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/kv-4_dukhov_turret"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/kv-4_strukov_turret"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/kv2_zis6"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/kv-6"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/object279"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/object263"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "info/special/object263a"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "info/special/zsu37gos"
+msgid "<c(c3baae)>대공 전차</c>"
+msgstr ""
+
+msgctxt "info/special/t34_zsu37_2"
+msgid "<c(c3baae)>대공 전차</c>"
+msgstr ""
+
+msgctxt "info/special/t_v"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "info/special/t44_122"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "info/special/t54_47"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "info/special/bz-75_tank"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "info/special/bz-75_tank1"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/114sp2"
+msgid "114 SP2"
+msgstr ""
+
+msgctxt "desc/entity/bz79"
+msgid "BZ-79"
+msgstr ""
+
+msgctxt "desc/entity/bzt70s"
+msgid "BZT-70S"
+msgstr ""
+
+msgctxt "desc/entity/ptz78"
+msgid "PTZ-78"
+msgstr ""
+
+msgctxt "desc/entity/obj907"
+msgid "Object 907"
+msgstr ""
+
+msgctxt "desc/entity/pgz70"
+msgid "PGZ70"
+msgstr ""
+
+msgctxt "desc/entity/object_490"
+msgid "Object 490"
+msgstr ""
+
+msgctxt "desc/entity/t34_zsu37_2"
+msgid "ZSU-37-2"
+msgstr ""
+
+msgctxt "desc/entity/is-4s"
+msgid "IS-4S"
+msgstr ""
+
+msgctxt "desc/entity/obj906"
+msgid "Object 906"
+msgstr ""
+
+msgctxt "desc/entity/ct2"
+msgid "CT-2"
+msgstr ""
+
+msgctxt "desc/entity/vz71"
+msgid "Vz. 71"
+msgstr ""
+
+msgctxt "desc/entity/vz68"
+msgid "Vz. 68"
+msgstr ""
+
+msgctxt "desc/entity/t-54_49"
+msgid "T-54-1949"
+msgstr ""
+
+msgctxt "desc/entity/kv8s"
+msgid "KV-8S"
+msgstr ""
+
+msgctxt "desc/entity/kv7_u13"
+msgid "KV-7 U-13"
+msgstr ""
+
+msgctxt "desc/entity/t10"
+msgid "T-10M"
+msgstr ""
+
+msgctxt "desc/entity/t10_d25t"
+msgid "IS-8"
+msgstr ""
+
+msgctxt "desc/entity/a20"
+msgid "A-20"
+msgstr ""
+
+msgctxt "desc/entity/a20"
+msgid "A-20"
+msgstr ""
+
+msgctxt "desc/entity/obj_780"
+msgid "Object 780"
+msgstr ""
+
+msgctxt "desc/entity/tet100"
+msgid "Tet-100"
+msgstr ""
+
+msgctxt "desc/entity/obj_268"
+msgid "Object 268 'St. John 's Wort' (25mm 72-K 대공포 장착)"
+msgstr ""
+
+msgctxt "desc/entity/kv1_122"
+msgid "KV-1(122mm 곡사포)"
+msgstr ""
+
+msgctxt "desc/entity/t34_44supply"
+msgid "T-34-85 (1944) 보급 전차"
+msgstr ""
+
+msgctxt "desc/entity/obj705"
+msgid "Object 705"
+msgstr ""
+
+msgctxt "desc/entity/obj705a"
+msgid "Object 705A"
+msgstr ""
+
+msgctxt "desc/entity/obj704"
+msgid "Object 704"
+msgstr ""

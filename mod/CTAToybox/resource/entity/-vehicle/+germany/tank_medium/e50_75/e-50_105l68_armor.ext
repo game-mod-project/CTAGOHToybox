@@ -1,0 +1,76 @@
+;SDL
+
+	("tracks" repair(30) thickness(75))
+	("gun" repair(30) thickness(125))
+
+	; Components
+	{component "body" {tags "body"}}
+	{component "turret" {tags "turret"}}
+	{component "engine" {tags "engine"}}
+
+	; Hull
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 300
+			{front 375}
+			{rear 200}
+			{top 150}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 200
+			{front 300}
+			{rear 150}
+			{top 75}
+		}
+	}
+
+	; Turret
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 250
+			{front 625}
+			{rear 250}
+			{top 100}
+		}
+	}
+	{volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 500}
+	}
+
+	; Guns
+	{volume "gun" {component "gun"} {tags "gun"} {thickness 125}}
+	{volume "gun2" {component "gun"} {tags "gun"} {thickness 50}}
+
+	; Ekrans / Shields (Damaging these won't kill the tank, but they protect the hull)
+	{volume "ekran_body" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_body2" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_body3" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_body4" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_turret1" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_turret2" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_turret3" {component "shield"} {tags "shield"} {thickness 63}}
+	{volume "ekran_turret4" {component "shield"} {tags "shield"} {thickness 125}}
+	{volume "ekran_turret5" {component "shield"} {tags "shield"} {thickness 375}}
+	{volume "ekran_mantlet" {component "shield"} {tags "shield"} {thickness 250}}
+
+	; Engine
+	{volume "engine"
+		{tags "engine"}
+		{component "engine"}
+		{thickness 125}
+	}
+
+	; Wheels and Tracks
+	{volume "trackright" {component "trackright"} {tags "track"}}
+	{volume "trackleft" {component "trackleft"} {tags "track"}}
+	{volume "wheelr1" {component "wheels"} {tags "wheels"}}
+	{volume "wheelr2" {component "wheels"} {tags "wheels"}}
+	{volume "wheell1" {component "wheels"} {tags "wheels"}}
+	{volume "wheell2" {component "wheels"} {tags "wheels"}}

@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_45_volkssturm_pol"}
+	{portrait "ger_volkssturm"}
+	{icon "smg"}
+	{icon_priority 2}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_sidecap_m39_var3_feldg}
+	}
+	{perks
+		(include "ability.inc")
+		("skill_rank_0")("tier1_defense")
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp38_unfolded_ctb_ger" filled}
+		{item "mp40 ammo" 960}
+
+		{item "luger_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "m24 grenade" 2.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 0.5 1}
+
+		{item "bandage_ger" 5 1}
+
+		{in_hands 0}
+	}
+}

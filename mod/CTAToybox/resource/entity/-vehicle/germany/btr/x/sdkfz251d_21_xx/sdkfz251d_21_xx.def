@@ -1,0 +1,80 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz251d_21_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 16}
+	}
+	{volume "barrel2"
+		{thickness 16}
+	}
+	{volume "barrel3"
+		{thickness 16}
+	}
+
+	{volume "body1"		; Lower Hull
+		{thickness 16}
+	}
+	{volume "body2"		; Upper Hull
+		{thickness 16
+			{front 29}
+		}
+		{able {holed}}
+	}
+
+	{volume "engine1"	; Lower
+		{thickness 16
+			{front 29}
+		}
+	}
+	{volume "engine2"	; Upper
+		{thickness 16
+			{front 29}
+			{top 20}
+		}
+	}
+
+	{Volume "shield1"
+		{thickness 30}
+	}
+
+	{volume "doorl"
+		{thickness 16}
+	}
+	{volume "doorr"
+		{thickness 16}
+	}
+
+	{volume "armor1"		; side tool boxes
+		{thickness 16}
+	}
+	{volume "armor2"		; side tool boxes
+		{thickness 16}
+	}
+
+	{volume "gun_shield1"
+		{thickness 16}
+	}
+	{volume "gun_shield2"
+		{thickness 16}
+	}
+	{volume "gun_shield3"
+		{thickness 16}
+	}
+	{volume "gun_shield4"
+		{thickness 16}
+	}
+	{volume "gun_shield"
+		{thickness 16}
+		{able {holed}}
+	}
+
+	{volume "wheelleft1"
+		{thickness 16}
+	}
+	{volume "wheelright1"
+		{thickness 16}
+	}
+
+	("tracks" thickness(30))
+}

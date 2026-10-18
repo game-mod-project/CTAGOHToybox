@@ -1,0 +1,89 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; 30mm plates were add to the hull, superstructure front.
+
+	("tank_heavy_tier1")
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	("shield_track" args "detail1" 50)
+	("shield_track" args "detail2" 50)
+	("shield_track" args "detail3" 50)
+	("shield_track" args "detail4" 50)
+	("shield_track" args "detail5" 50)
+	("shield_track" args "detail6" 50)
+
+	{volume "body1"			; Superstructure
+		{thickness 125
+			{front 205}		; 50mm base + 30mm plate
+			{top 50}		
+			{rear 25}
+		}
+		{able {holed}}
+	}
+	{volume "body2"			; Hull
+		{thickness 100
+			{front 205}		; 50mm base + 30mm plate
+			{top 205}
+			{rear 25}
+			{bottom 63}
+		}
+	}
+	{volume "engine1"
+		{thickness 125
+			{top 40}
+			{rear 100}
+		}
+	}
+	{volume "engine2"
+		{thickness 100
+			{rear 100}
+			{bottom 63}
+		}
+	}
+	{volume "turret"
+		{thickness 113
+			{front 250}
+			{top 75}
+		}
+		{able {holed}}
+	}
+	{volume "mantlet1"
+		{thickness 275}
+		{CastSteel 0.8063}
+		{component "turret"}
+		{tags "turret"}
+	}
+
+	{volume "mantlet2"
+		{thickness 250}
+		{tags "gun"}
+		{component "gun"}
+		{CastSteel 0.8063}
+	}
+	
+	{volume "body3"			; Hull MG
+		{thickness 200}
+		{tags "mg_port"}
+	}
+
+	{component "detail1" {tags "cut_part"}}
+	{component "detail2" {tags "cut_part"}}
+	{component "detail3" {tags "cut_part"}}
+	{component "detail4" {tags "cut_part"}}
+	{component "detail5" {tags "cut_part"}}
+	{component "detail6" {tags "cut_part"}}

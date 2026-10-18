@@ -1,0 +1,46 @@
+;SDL
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(125))
+	("ammo" args "inventory")
+
+	{volume "body"
+		{tags "body"}
+		{component "body"}
+		{thickness 300
+			{front 375}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "body2"
+		{tags "body"}
+		{component "body"}
+		{thickness 200
+			{front 300}
+			{rear 150}
+			{top 63}
+		}
+	}
+	{volume "turret"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 250
+			{front 625}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "turret2"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 200
+			{front 625}
+			{rear 200}
+			{top 100}
+		}
+	}
+	{volume "mantlet"
+		{tags "turret"}
+		{component "turret"}
+		{thickness 500}
+	}

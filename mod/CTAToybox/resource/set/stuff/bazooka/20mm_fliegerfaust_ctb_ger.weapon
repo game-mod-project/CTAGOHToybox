@@ -1,0 +1,23 @@
+;_________________________________________
+; GER AAA Rocket 
+;=========================================
+
+{from "pattern rpg_weapon"
+	{tag "aarocket"}
+	{filling "ammo 20mm_fliegerfaust_ammo" 9}
+	{entity "fliegerfaust"}
+	{fireSound "reactive/d1/Shared/Rocket_Launcher/"}
+	{reloadsound "bazooka"}
+	{calibre 20}
+	{mass 8.8}
+
+	{burst
+		{min 3}
+	}
+
+	{gravity 3.5} ;//same as other direct-fire "cannon" type weapons
+	{range 70 70}
+	("velocity" mps(350))
+	("reload time" seconds(3))
+	("fire rate" rpm(399)) ;// one rocket every 0.5s in "ripple fire". 30s to fire full salvo
+}

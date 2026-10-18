@@ -1,0 +1,1540 @@
+{
+  "files": [
+    {
+      "path": "localizations/default/interface/text/announcements/announcement.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/autumn2025.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/cu6.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/finesthour.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/finesthour_release.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/pvp.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/update70.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/announcements/ww2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_WWsquad_eng2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_WWsquad_ger2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_WWsquad_jap2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_WWsquad_rus2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_WWsquad_usa2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_eng2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_fra_.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_generic.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_generic_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_ger2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_bri.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_gen.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_jap.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_sov.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_swe.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_mace_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_rus2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_ammo_usa2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_airborne_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_civilian.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mace_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mace_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mace_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mace_jap.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mace_sov.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mace_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_can.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_ned.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_pol.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_uk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_mp_usa_.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_single_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_single_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_special.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_special_.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_special_airborne.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_special_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_breed_special_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_doctrine_vehicles.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_fauna.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_generic.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_generic_.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_rus2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_gear_usa_new.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_mace_ai_air_variants.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_misc_fh.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_eng_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_fin_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_ger_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_jap_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_rus_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_doctrines_usa_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_fin_dcg_late.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_ger_dcg_late.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_mp_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_rus_dcg_late.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squad_usa_dcg_late.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squads_con_jap_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squads_fin_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squads_ger_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squads_jap_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squads_sov_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_squads_usa_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_generic.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_ger2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_ger_fh.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_rus2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_vehicles_usa2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_generic.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_ger2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_ger_fh.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_bri.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_jap.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_swe.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_mace_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_rus2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/desc_weapon_usa2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/dlg_ingame_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/dlg_mace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/desc/dlg_names_ina.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_2.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_colors.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_credits.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_frontend.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_frontend_fh.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_frontend_liberation.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_frontend_zace.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_ingame.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_ingame_addition.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_mp.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_mp_domination.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_mp_frontlines.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_mp_laststand.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/dlg_workshop_tags.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/doctrines.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/doctrines_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/doctrines_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/editor.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/info.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/ctatoybox_spawn.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/1v1_barbarossa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/1v1_cobra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/1v1_karjala.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/1v1_reichswald_aut.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/2v2_bastogne.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/2v2_blitzkrieg.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/2v2_stalingrad_factory.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/2v2_tali_ihantala.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/3v3_crimea.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/3v3_hells_highway.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/3v3_normandy.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/3v3_volga.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/4v4_goodwood.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/4v4_kursk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/4v4_mannerheim.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/0_frontlines/4v4_siegfried.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_balzerweg.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_crossing.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_fall_gelb_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_farmland.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_farmstead.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_forssa_dam.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_hiekalla.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_holzbach.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_isigny_ruins.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_jarven.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_kalinin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_ladoga.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_losheim_gap.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_nevel.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_oosterbeek_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_oryol.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_ouren_valley.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_radar_hill.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_reka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_riverbank.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_solingen_factory_aut.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_tormasenvaara.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_uran.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_valley.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_volokolamsk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_weteringsteeg.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/1v1_workshop.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_blizzard.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_bubingen.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_countryside.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_courtyard.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_dunkirk_dunes_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_fall.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_gelid.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_glubinka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_grave_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_hakola.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_heelsum_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_hunting.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_hutor.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_industry.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_invanovka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_kainuo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_karvola.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_katrinovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_kavichy_factory.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_mannerheim.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_marvie_ridge.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_monastery.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_mortain.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_olshanka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_rouncy.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_sainte_marie_du_mont.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_shaforovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_st_vith.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_stalingard.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_suburbs.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_suishka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_tikhvin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_urban_hell.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_vainikalan.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_wesel_aut.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/2v2_ziborovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_barrikady.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_brozha.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_canals_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_elanskaya.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_factory.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_general_winter.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_glushkovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_hamminkeln_aut.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_hqvistvaara.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_hungary.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_hurtgenwald.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_king_of_the_hill.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_lakeside_airfield.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_lakhta.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_lalobbe.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_mikli.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_mont_cassel.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_mortain_station.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_natramala.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_posenov.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_radusha_airfield.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_ranes.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_samree.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_sopheke_quarry.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_steppe.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_trenches.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_voronezh.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_wotan.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_zeeland_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/3v3_ziborovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_arras_countryside_sum.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_dubovka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_eindhoven.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_fields.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_grassland.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_hanhijarvi.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_hill_331.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_hills.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_houdremont.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_kirjavala.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_krasny_bor.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_kylmapuro.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_lysovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_martinville_ridge.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_niemen.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_olkhovatka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_purple_heart_lane.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_remagen_aut.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_rikila.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_schoppen.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_shiryayevo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_sikovitsy.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_swamp.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_vahikkala.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_vitebsk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_vlissingen_breach.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/4v4_winter_walk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/errors_helper.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/multi/zace_common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/01_inf-control.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/02_vehicle-control.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/03_artillery-reinforcements.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/04_reinforcements-offmap-support.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/1-training.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/2-combat.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/00-bootcamp/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1941_11_typhoon.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1941_12_tikhvin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1942_05_kerch.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1942_09_pavlovs_house.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1942_10_obsich.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1942_12_winterstorm.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1943_07_ponyri.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1943_11_kiev.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1944_10_courland.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/1945_04_konigsberg.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/01-rus_skirmish/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/1944_06_saint_lo_hills.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/1944_08_07_luttich.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/1944_08_19_falaise_escape.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/1944_12_samree.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/1945_01_thirimont.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/1945_04_ruhr_pocket.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger-west/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1941_10_glushkovo.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1942_01_vyazma.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1942_06_sevastopol.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1942_09_elbrus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1943_02_krasny_bor.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1943_07_petrovka.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1943_11_wotan.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1944_03_narva.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1944_09_yugoslavia.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/1945_03_spring-awakening.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/02-ger_skirmish/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1939_12_kollaa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1939_12_summa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1940_01_raate_road.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1941_08_ino_station.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1941_08_porlampi.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1944_06_tali-ilhantala.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/1944_10_tornio.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/03-fin_skirmish/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_06_pointe_du_hoc.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_07_hedgerow_hell.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_07_skirmish_operation_cobra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_08_mortain.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_08_skirmish_falaise_pocket.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_10_skirmish_hurtgen_forest.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_12_hill400.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_12_hotton.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1944_12_skirmish_bulge.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/1945_03_cologne.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/04-usa/reinf_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_06_01_pathfinders.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_06_02_sainte_mere_eglise.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_06_03_brecourt_manor.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_06_04_la-fiere_bridge.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_06_05_carentan.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_06_06_bloody_gulch.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_09_01_nijmegen.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_09_02_veghel.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_12_01_noville.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_12_02_elsenborn.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1944_12_03_bastogne.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/1945_04_30_elbe.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/041-usa_airborne/reinf_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1940_05_13_dyle.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1940_05_20_arras_skirmish.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1940_06_03_dunkirk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1944_06_05_pegasus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1944_07_13_villers-bocage_skirmish.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1944_07_18_caen_goodwood.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1944_09_17_arnhem.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1944_09_20_marketgarden_skirmish.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1944_09_20_oosterbeek.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/1945_03_24_varsity.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/05-eng/common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/1940_05_arras.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/1940_06_st_valery_en_caux.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/1944_06_swordbeach.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/1944_09_koevering.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/1944_10_woensdrecht.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/051-ger_finesthour/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/06-bonus/1941_12_feodosia.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/06-bonus/1944_03_trap.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/06-bonus/1945_04_yugoslavia.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/06-bonus/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1940_02-fin_honkaniemi.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1941_07-fin_petrozavodsk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1941_07-rus_smolensk.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1941_08-fin_polar_fox_alakurtti.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1941_11-ger_moscow.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1942_10-rus_stalingrad_volga.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1942_11-ger_mamayev_kurgan.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1943_02-ger_kharkov.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1944_07-fin_ilomantsi.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1944_07-rus_op_bagration.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1945-04-ger_berlin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/1945_04-rus_seelow_heights.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/_common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/_reinf_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/campaign.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/reinf_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/reinf_fin.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/reinf_ger.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/0x-skirmish/reinf_rus.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/common.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/errors_helper.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission/single/test_scenario.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission_finesthour.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission_jubilee.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/mission_liberation.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_chi.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_eng.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_finland.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_fra.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_ind.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_jap.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_kor.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_mon.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_pol.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_swe.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/names/dlg_names_usa.pot"
+    },
+    {
+      "path": "localizations/default/interface/text/tips.pot"
+    },
+    {
+      "path": "resource/interface/font/anka_10.font"
+    },
+    {
+      "path": "resource/interface/font/anka_12.font"
+    },
+    {
+      "path": "resource/interface/font/anka_14.font"
+    },
+    {
+      "path": "resource/interface/font/anka_15.font"
+    },
+    {
+      "path": "resource/interface/font/anka_18.font"
+    },
+    {
+      "path": "resource/interface/font/anka_21.font"
+    },
+    {
+      "path": "resource/interface/font/anka_8.font"
+    },
+    {
+      "path": "resource/interface/font/arial_hq_10.font"
+    },
+    {
+      "path": "resource/interface/font/arial_hq_10b.font"
+    },
+    {
+      "path": "resource/interface/font/arial_hq_8.font"
+    },
+    {
+      "path": "resource/interface/font/arial_hq_8b.font"
+    },
+    {
+      "path": "resource/interface/font/arial_hq_9.font"
+    },
+    {
+      "path": "resource/interface/font/arial_hq_9b.font"
+    },
+    {
+      "path": "resource/interface/font/arial_narrow_15.font"
+    },
+    {
+      "path": "resource/interface/font/arial_narrow_18.font"
+    },
+    {
+      "path": "resource/interface/font/bookman_12.font"
+    },
+    {
+      "path": "resource/interface/font/bookman_hq_12b.font"
+    },
+    {
+      "path": "resource/interface/font/bookman_hq_13b.font"
+    },
+    {
+      "path": "resource/interface/font/bookman_hq_shadow_12b.font"
+    },
+    {
+      "path": "resource/interface/font/impact_21.font"
+    },
+    {
+      "path": "resource/interface/font/impact_27.font"
+    },
+    {
+      "path": "resource/interface/font/impact_28.font"
+    },
+    {
+      "path": "resource/interface/font/impact_30.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_12.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_12b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_13.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_13b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_15.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_15b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_18.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_18b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_21.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_21b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_27.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_27b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_28.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_28b.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_30.font"
+    },
+    {
+      "path": "resource/interface/font/myriadpro_30b.font"
+    },
+    {
+      "path": "resource/interface/font/open_sans_21.font"
+    },
+    {
+      "path": "resource/interface/font/open_sans_30.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_10.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_12.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_15.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_21.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_30.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_8.font"
+    },
+    {
+      "path": "resource/interface/font/oswald_9.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_21.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_21b.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_27.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_27b.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_30.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_30b.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_42.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_42b.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_60.font"
+    },
+    {
+      "path": "resource/interface/font/pobeda_60b.font"
+    },
+    {
+      "path": "resource/interface/font/pt_sans_12.font"
+    },
+    {
+      "path": "resource/interface/font/pt_sans_8.font"
+    },
+    {
+      "path": "resource/interface/font/pt_sans_9.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_15.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_15b.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_18.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_18b.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_21.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_8.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_8b.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_9.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_con_9b.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_10.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_12.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_15.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_18.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_21.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_27.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_28.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_30.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_60.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_8.font"
+    },
+    {
+      "path": "resource/interface/font/roboto_mono_9.font"
+    }
+  ]
+}

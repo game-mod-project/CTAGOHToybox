@@ -1,0 +1,31 @@
+{from "pattern gun"
+	{filling "bulletx7 atgm" 1}
+	{fillingVisible "rocket"}
+	{fireSound	"gun/tow/"}
+	{reloadSound "tankgun_r02"}
+	("range_220")
+	{calibre 180}
+
+
+	{gravity 0}
+
+	("reload time" seconds(6))
+
+	("velocity m/s" ap(85) apcr(85) he(85) heat(85))
+	("armor health" damage(380))
+
+	; Pzgr.43
+	("penetration_medium" shell(heat) range(250) a(250) b(250) c(250) d(250) e(250))
+	
+	{parameters "atgm"
+		{range 250 250}
+	}
+
+	{parameters "atgm"
+		{range 240 240}
+	}
+
+
+	("accuracy_direct" r1(0.55) range_ap(250) range_he(240) range_heat(240))
+}
+

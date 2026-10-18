@@ -1,0 +1,7 @@
+{from "pattern pistol"
+	{filling "flare" 1}
+	{entity "leuchtpistole34"}
+
+	("flare_pistol")
+	{rechargeTime 60}
+}

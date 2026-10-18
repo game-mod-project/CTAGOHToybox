@@ -1,0 +1,113 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_elefant_213d2780.ext")
+	(include "/properties/shadow/tank.inc" scale(1.2))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{props "td" "heavy" "-turret" "vision_lev05" "muzzle_85mm_93mm_sides" "detect_td_heavy" "sq_armor_super_heavy"}
+	{extension "elefant.mdl"}
+	(include "elefant.ext")
+	{collider "tank.heavy"}
+	{PatherId "elefant"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+			{bone "visor1"}
+		}
+		{visor "around"
+			{bone "none"}
+		}
+	}
+
+	("crew_6_human_extended")
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_pz4_driver"} {end "seat_gunner_stand"} {base "open_driver" -1}}
+			{reverse {end "board_pz4_driver" -1} {base "open_driver" -1}}
+		}
+		{anm "left"
+			{forward {begin "board_Kv-85"} {end "seat_gunner_stand"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward {begin "board_Is-2"} {end "seat_m7_com"}}
+			{reverse {end "emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_2"}}
+			{reverse {end "emit_body"}}
+		}
+	}
+
+	("seat_human" place(seat1) bone(seat01) door(emit5)  animation(armor))
+	("seat_human" place(seat2) bone(seat02) door(emit3)  animation(armor1))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor1))
+
+	{extender "inventory"
+		{box
+			{item "bulletger_88_l71 apcbche" 145}	;50 rounds
+			{item "bulletger_88_l71 he" 100}
+			{item "geballteladung_3kg" 2}
+			{item "ammo mgun_ger belt" 12000}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "88mm_kwk43_ctb_ger" filling "bulletger_88_l71 apcbche" 1}
+			{gunner "gunner gunner2 gunner3" minWorkers 1}
+			{charger "charger charger2" minWorkers 1}
+			("abm_dymamic_td"
+				zeroing(3.0)
+				dispersion(0.25)
+			)
+		}
+	{place "mgun1"
+			{type "hull"} 
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight4"} 
+			{gunner "gunner"}
+			{charger "charger"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 65000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.20) len(0.5))
+		("mobility_tank"
+			speed(32) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(21) ;--------Max speed in reverse on road, km/h.
+			traverse(12) ;-------Track traverse, per second, in degrees.
+			weight(65.0) ;-------Weight in Tonnes.
+			power(330) ;---------Engine Power, in hp.
+			track(3.5) ;---------Track performance: 
+			fuel(9500) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(450) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -5 14}
+		{speed2 4}
+	}
+	{bone "turret"
+		{limits -14 14}
+		{speed2 4.5}
+	}
+}

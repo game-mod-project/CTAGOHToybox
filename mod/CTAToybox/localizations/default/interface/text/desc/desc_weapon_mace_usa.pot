@@ -1,0 +1,186 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/weapon/114mm_t99_calliope"
+msgid "4.5-Inch Rocket Launcher T99 (44x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/poa_h5_flame_thrower"
+msgid "POA-CWS-H5 Flamethrower"
+msgstr ""
+
+msgctxt "desc/weapon/garand_mortar_launcher"
+msgid "M1 Garand Mortar Rifle Grenade"
+msgstr ""
+
+msgctxt "desc/weapon/155mm_t25"
+msgid "155mm T25 Mortar"
+msgstr ""
+
+msgctxt "desc/weapon/poa_h1_flame_thrower"
+msgid "POA-CWS-H1 Flamethrower"
+msgstr ""
+
+msgctxt "desc/weapon/155mm_t36"
+msgid "155mm Mortar T36 L/6"
+msgstr ""
+
+msgctxt "desc/weapon/182mm_t88"
+msgid "7.2-Inch Rocket Launcher T88 (15x182mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/240mm_m1"
+msgid "240mm Howitzer M1 L/35"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_t66"
+msgid "4.5-Inch Rocket Launcher T66 (24x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_t45_mk10"
+msgid "4.5-Inch Rocket Launcher T45 (24x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_t45_mk3"
+msgid "4.5-Inch Rocket Launcher T45 (24x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/105mm_t12"
+msgid "105mm Howitzer T12 L/22.5"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_m12a1"
+msgid "4.5-Inch Rocket Launcher M12A1"
+msgstr ""
+
+msgctxt "desc/weapon/182mm_t91_whizbang"
+msgid "7.2-Inch Rocket Launcher T91"
+msgstr ""
+
+msgctxt "desc/weapon/273mm_t59_x18"
+msgid "10.75-Inch Rocket Launcher T59 (18x273mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/browning_m2_x6"
+msgid "M2 Browning .50 cal x6"
+msgstr ""
+
+msgctxt "desc/weapon/browning_m3_x6"
+msgid "AN/M3 Browning .50 cal x6"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_m8_xylophone_wc51"
+msgid "Rocket Launcher T27 (8x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/bazooka_m1a1_x2"
+msgid "M1A1 'Bazooka' x2"
+msgstr ""
+
+msgctxt "desc/weapon/127mm_hvar_12"
+msgid "12x 5-inch HVAR"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_usa_100x3"
+msgid "3x AN-M57 250lb GP Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_usa_250x1"
+msgid "1x GP 500lb Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_usa_mk78x4"
+msgid "4x Mk 78 750lb Fire Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_usa_450x2"
+msgid "2x AN-M65 1000lb GP Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/bomb_dropper_usa_500x2"
+msgid "2x AN-M65 1000lb GP Bomb"
+msgstr ""
+
+msgctxt "desc/weapon/20mm_tri-polsten"
+msgid "20mm Polsten gun L/72"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_m8_fieldmod"
+msgid "Field Mod Rocket Launcher (12x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_m8_xylophone"
+msgid "Rocket Launcher T27 x2 (16x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/90mm_t54_tank"
+msgid "90mm Gun T54 L/73"
+msgstr ""
+
+msgctxt "desc/weapon/little_david_gun"
+msgid "914mm Mortar L/7"
+msgstr ""
+
+msgctxt "desc/weapon/40mm_m19"
+msgid "Bofors 40mm Gun M1 x2 L/60"
+msgstr ""
+
+msgctxt "desc/weapon/105mm_t5e1_tank"
+msgid "105mm Gun T5E1 L/65"
+msgstr ""
+
+msgctxt "desc/weapon/105mm_t5e2_tank"
+msgid "105mm Gun T5E2 L/65"
+msgstr ""
+
+msgctxt "desc/weapon/105mm_T8_at"
+msgid "105mm AT Gun T8 L/65"
+msgstr ""
+
+msgctxt "desc/weapon/90mm_t15e2"
+msgid "90mm Gun T15E2 L/73"
+msgstr ""
+
+msgctxt "desc/weapon/155mm_t7"
+msgid "155mm Gun T7 L/41"
+msgstr ""
+
+msgctxt "desc/weapon/120mm_t53"
+msgid "120mm Gun T53 L/60"
+msgstr ""
+
+msgctxt "desc/weapon/120mm_m256a1"
+msgid "120mm M256A1 L/44"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_m17_whizbang"
+msgid "Field Mod Rocket Launcher '4.5-Inch M10' (54x114mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/182mm_t40_whizbang"
+msgid "Rocket Launcher M17 (20x182mm Rockets)"
+msgstr ""
+
+msgctxt "desc/weapon/203mm_m1_l50"
+msgid "8-inch Gun M1 L/50"
+msgstr ""
+
+msgctxt "desc/weapon/37mm_t16"
+msgid "37mm Autocannon T16 L/53.5"
+msgstr ""
+
+msgctxt "desc/weapon/114mm_m10_xylophone"
+msgid "Rocket Launcher M10 x2 (16x114mm Rockets)"
+msgstr ""

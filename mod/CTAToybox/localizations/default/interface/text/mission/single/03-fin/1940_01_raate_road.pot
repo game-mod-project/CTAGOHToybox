@@ -1,0 +1,109 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1940_01_raate_road)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/date"
+msgid "1940년 1월 4일 · 핀란드 코티란타 라아테 도로"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/men"
+msgid "병사를 모두 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/name"
+msgid "라아테 도로"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/name_big"
+msgid "라아테 도로"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/01"
+msgid "병사들, 적은 근처 도로에 갇혀 있다. 하지만 우리가 포위한 줄은 전혀 모른다. 오늘 임무는 적 진지를 분쇄하고 최대한 많은 장비를 노획하는 것이다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/02"
+msgid "적은 얼어붙고 굶주렸고 사기가 꺾였다. 적 야영지를 고립시키면 항복할 가능성이 높다. 우리는 수적으로 크게 열세지만 게릴라전으로 기습과 정밀 타격에 집중해 적 진지를 무너뜨릴 수 있다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/03"
+msgid "추가로 최고 사령부는 최대한 많은 적 자산을 노획하길 요청한다. 모든 것을 날려 버리지 말고, 노획한 적 차량을 지정된 철수 지점으로 가져와라."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/03b"
+msgid "눈보라 때문에 적을 발견하기가 극도로 어렵다. 신중하게 접근해 적 모닥불을 찾아라. 그것이 적 위치를 알려 줄 것이다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/04"
+msgid "잘했다, 병사들!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/05"
+msgid "훌륭하다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/06"
+msgid "아주 좋다, 우리 군이 이 자산을 잘 쓸 것이다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/07"
+msgid "이 장비는 분명 쓸모가 있을 것이다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/08"
+msgid "훌륭하다. 소련의 전쟁 기계가 침략자들을 향하게 될 것이다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/09"
+msgid "잘했다, 병사들, 조국이 오늘 너희의 활약을 자랑스러워한다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/10"
+msgid "이 소련군들이 항복하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/narrator/officer/11"
+msgid "또 다른 적 진지가 무기를 내려놓았다. 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/outro_completed"
+msgid "잘했다! 이 승리로 이제 한숨 돌릴 수 있다. 오울루는 이제 소련군의 손이 닿지 않는다. 사령부에서 온 사람이 있는데 이 참상을 사진으로 찍을 것이다. 선전 전단에 쓰려고 요청했다. 소련 병사들이 다시 쳐들어오면 그들도 \"하얀 죽음\"을 맞게 될 것이라고 알리는 전단이다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/outro_failed"
+msgid "신속한 돌파 탓에 소련군의 공세가 오울루에 닿고 전선이 둘로 갈라져 아군 병력 배치가 크게 위태로워지며, 아마 만네르헤임 장군이 마지막 예비대를 투입해야 할 것이다. 며칠 안에 상황이 절망적으로 변할 것 같고 항복해야 할지도 모른다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/place"
+msgid "제9보병연대"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/story"
+msgid " 수오무살미에서 핀란드군이 승리한 뒤 붉은 군대는 동쪽에서 소총 사단을 투입해 수오무살미를 지나 오울루 방향으로 서진 공격을 재개한다. 그러나 제44소총사단은 라아테 도로에 갇힌다. 초기 접촉 뒤 핀란드군의 연속 측면 공격이 시작되고, 이로써 소련 제44소총사단은 라아테 도로 위에서 무려 7개의 포위망으로 쪼개진다. 핀란드군은 집단을 하나씩 공격한다.\n\n 이 임무에서 당신은 \"모티\" 전술로 하우킬라 포위망 공격을 맡는다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/task1"
+msgid "러시아 수비대를 제거하라"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/task2"
+msgid "적 바퀴 차량 5대를 노획해 철수 지점으로 가져가라"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/task3"
+msgid "적 전차 5대를 노획해 철수 지점으로 가져가라"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1940_01_raate_road/task4"
+msgid "적 포 5문을 노획해 철수 지점으로 가져가라"
+msgstr ""

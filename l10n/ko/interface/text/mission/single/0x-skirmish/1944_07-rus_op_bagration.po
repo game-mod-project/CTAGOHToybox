@@ -1,0 +1,118 @@
+# source: vanilla interface/text/mission/single/0x-skirmish/1944_07-rus_op_bagration.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_07-rus_op_bagration)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/mission_buys_stay_flag"
+msgid "Reinforcement Menu:"
+msgstr "증원 메뉴:"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/buys_on_after_flag"
+msgid "Units unlock permanently"
+msgstr "유닛이 영구 해금된다"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/name"
+msgid "Operation Bagration"
+msgstr "바그라티온 작전"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/name_big"
+msgid "Operation Bagration"
+msgstr "바그라티온 작전"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/story"
+msgid "Belorussian Front, Minsk offensive. After several delays our forces are finally on the move. We will overwhelm the nazis, now that the numbers are stacked in our favor.\n\nGoals:\n - Liberation of Minsk.\n - Destruction of the german Fourth Army."
+msgstr " 벨라루스 전선, 민스크 공세. 여러 차례 지연 끝에 아군이 마침내 움직인다. 이제 수적 우위가 우리 쪽에 있으니 나치를 압도하자.\n\n목표:\n - 민스크를 해방하라.\n - 독일 제4군을 격멸하라."
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/place"
+msgid "Berezina line"
+msgstr "베레지나 선"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/date"
+msgid "4 July, 1944"
+msgstr "1944년 7월 4일"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/outro_completed"
+msgid "Mission accomplished!"
+msgstr "임무 완수!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/outro_failed"
+msgid "Mission failure!"
+msgstr "임무 실패!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/outro_failed_hq"
+msgid "Mission failed! - Enemy captured your HQ!"
+msgstr "임무 실패! - 적이 본부를 점령했다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/mission_hq"
+msgid "You must hold your field HQ!"
+msgstr "야전 본부를 사수해야 한다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/mission_attack"
+msgid "Capture the river east of Minsk!"
+msgstr "민스크 동쪽 강을 점령하라!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/flag_capture_status"
+msgid "Your soldiers secured %1%/7 German positions!"
+msgstr "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/narrator_start0"
+msgid "Welcome to Belarus, Major! This is our field HQ. It has to remain in our control at all times!"
+msgstr "벨라루스에 온 것을 환영한다, Major! 이곳이 우리 야전 본부다. 항상 우리 손에 있어야 한다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/narrator_start1"
+msgid "Comrade, you are tasked with the assault of the enemy defenses in this region and crossing the river. We must capture the German defenses east of Minsk!"
+msgstr "동무, 임무는 이 지역 적 방어선을 공격하고 강을 건너는 것이다. 민스크 동쪽의 독일군 방어선을 점령해야 한다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/narrator_start2"
+msgid "Germans are planning to reinforce their lines with heavy panzers. Make sure you capture these vital positions!"
+msgstr "독일군은 중전차 판처로 전선을 보강할 계획이다. 이 중요한 진지들을 반드시 점령하라!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/narrator_start3"
+msgid "Begin securing the objectives, while we bring forward some reinforcements for you to deploy!"
+msgstr "목표 확보를 시작해라. 그동안 투입할 증원을 전방으로 보내겠다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/allied_enemy_near_hq"
+msgid "Comrades! Germans are close to our Field HQ!"
+msgstr "동무들! 독일군이 우리 야전 본부에 접근했다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/player_enemy_near_hq"
+msgid "We must hold the command post! There can be no talk of retreat here!"
+msgstr "지휘소를 사수해야 한다! 이곳에서 후퇴라는 말은 있을 수 없다!"
+
+msgctxt "mission/single/01-rus_skirmish/1944_07-rus_op_bagration/hq_bonus"
+msgid "Major! Now you can request an airstrike."
+msgstr "Major! 이제 공습을 요청할 수 있습니다."

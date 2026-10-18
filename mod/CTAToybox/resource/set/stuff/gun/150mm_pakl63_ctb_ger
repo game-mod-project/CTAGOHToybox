@@ -1,0 +1,23 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun (L/63 concept)
+;=========================================
+
+{from "pattern gun"			
+	{filling "bulletger_150"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "tank/1p/large/"}
+	{range 380 380}
+	{calibre 150}
+
+	("reload time" seconds(10))
+
+	("velocity m/s" ap(950) apcr(1120) he(800) heat(850))
+	("armor health" damage(640))
+	("armor health custom" shell(apcbche) damage(740) velocity(950) filler(567))
+
+	; Adjusted APCBCHE to realistic physics (~950m/s), slightly smoothed drop-off
+	("penetration_long" shell(apcbche) range(380) a(385) b(370) c(345) d(315) e(285))
+
+	("accuracy_direct" r1(0.48) range_ap(380) range_he(360) range_heat(380))
+}

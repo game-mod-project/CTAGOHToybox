@@ -1,0 +1,330 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1-training)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "mission/single/00-bootcamp/1-training/date"
+msgid "1939년 8월 20일"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/fail_barrel"
+msgid "연료 구역에서 폭발물을 터뜨리지 마라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/fail_die"
+msgid "병사가 사망했다! 용납할 수 없다!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/fail_grenades"
+msgid "사격장 구역에서 수류탄이 터져서는 안 된다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/mission_fail"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/mission_win"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/name"
+msgid "군 훈련소"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/name_big"
+msgid "군 훈련소"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/fuel"
+msgid "차량에 연료를 넣는 방법은 두 가지다. 급유 트럭을 차량 가까이 몰아 자동으로 넣거나, 연료통으로 직접 넣는다. 연료통을 쓰려면 병사의 소지품에 연료통을 넣고, 든 상태로 연료 트럭이나 큰 드럼통 같은 연료원을 클릭해 빈 통을 채운다. 통이 가득 차면 빈 차량에 연료를 \"붓는\" 것이 가능하다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/grabweapon"
+msgid "병사를 선택하고 마우스 클릭으로 움직여라. 상자를 클릭해 살펴보면 상자와 병사의 소지품 사이에 물품을 옮길 수 있다. 여러 상자에서 헬멧, 소총, 탄약을 챙겨라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/grenade"
+msgid "수류탄을 던져 엄폐물 뒤의 목표를 제거할 수 있다. 수류탄을 가장 효과적으로 쓰려면 직접 조종 모드에서 '끓일' 수 있다(병사 한 명을 선택하고 인터페이스 왼쪽 아래의 직접 조종 단추를 누르거나 기본 단축키 'E'를 누른다). 직접 조종은 WASD 이동과 마우스 조준·사격으로 한 유닛을 세밀하게 조작하게 해 준다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/highlight"
+msgid "인터페이스 오른쪽 아래의 '아이템 강조' 단추(정육면체 모양 단추)를 클릭하거나 기본 단축키 'C'를 누르고 있으면, 탁자 위의 무기처럼 부대가 주울 수 있는 물건이 강조된다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/objectives"
+msgid "인터페이스 오른쪽 아래의 단추나 기본 단축키 'O'로 언제든 임무 목표 메뉴를 열 수 있다. 각 임무 목표를 클릭하면 지도에서 그 위치를 보여 준다. 보조 임무 목표는 임무 완수에 꼭 필요하지 않다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/pak"
+msgid "직접 조종 모드에서 목표를 수동으로 쏴야 한다. 선택한 유닛으로 직접 조종에 들어가려면 기본 단축키 \"E\"를 누른다. \"T\"를 누르면 \"클래식\" 모드와 \"3인칭\" 모드가 전환된다. 목표를 오래 조준할수록 사격이 더 정확해진다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/reinf"
+msgid "이제 병사 세 명을 더 지휘한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/repair"
+msgid "전장에서 차량의 여러 부위(궤도, 엔진, 포, 포탑, 차체 등)가 손상될 수 있다. 이 부위를 고치려면 수리 도구가 필요하다. 대부분의 차량 소지품에서 찾을 수 있다. 수리 도구는 일회용이다. 부서진 부위가 여러 곳이면 부위마다 수리 도구가 필요하다. 차량에서 수리 도구를 꺼내 병사의 소지품에 넣고, 병사를 선택한 상태에서 인터페이스 오른쪽 아래의 수리 단추(렌치 아이콘)를 누른다. 마지막으로 차량을 클릭하면 병사가 수리하도록 명령한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/sandbag"
+msgid "모래주머니 뒤 엄폐물로 가서 사격을 준비해라. 병사를 선택하고 커서를 모래주머니 가까이 가져가라. 엄폐물 뒤 병사의 위치가 실루엣으로 미리 보인다. 엄폐물을 최대한 활용해 병사의 생존성과 명중률을 높여라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/spec"
+msgid "과제를 마치기 전에는 은신처 구역을 벗어나지 마라. 은신처를 벗어나면 새 표적이 나타나지 않는다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/tripod"
+msgid "삼각대에 여러 무기를 설치할 수 있다. 먼저 상자에서 MG-34 기관총을 꺼내 삼각대의 소지품에 넣어라. \"X\"를 누르면 차량의 소지품을 살펴볼 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/hints/tripod2"
+msgid "이제 기관총을 거치해야 한다. 삼각대에 승무원을 배치하고, 삼각대를 선택해 기본 단축키 'I'로 삼각대의 소지품을 열어라. 소지품의 기관총을 더블클릭하면 거치된다. 이제 사격장의 모든 표적을 쏴라. 거치한 무기는 더 정확하고 반동이 적다는 것을 알게 될 것이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/end"
+msgid "행운을 빈다, 병사들. 조국을 자랑스럽게 하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/fuel"
+msgid "저기가 주유소다. 우리 차량은 계속 달리려면 연료가 필요하다. 급유 절차에 익숙해져야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/fuellimit"
+msgid "그 트럭은 주유소 부지 안에 있어야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/grenades"
+msgid "잘했다, 병사들. 이제 수류탄 구역으로 가라. 수류탄으로 연료 드럼통 몇 개를 폭파해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/k98"
+msgid "Karabiner 98-K는 표준 보병 무기다. 정밀한 볼트액션 소총으로, 중거리와 장거리에서 적과 교전하기에 이상적이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/mgrange"
+msgid "여기는 MG와 박격포 사격장이다. 보병 지원 무기는 필수이니 사용 훈련을 해야 한다. 이 무기를 옮기려면 최소 두 명의 사수가 배치돼야 하고, 전략적 위치에 놓으면 매우 효과적이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/pak1"
+msgid "여기는 포 사격장이다. 여러 종류의 탄으로 적 장갑 목표와 교전하는 법을 보여 주겠다. 병사들을 3.7cm PaK 대전차포에 배치해 탄도 교육을 시작해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/pak2"
+msgid "3.7cm PaK 경대전차포는 여러 종류의 탄을 쏜다. 장갑 목표를 관통해 파괴하려면 철갑탄(AP)과 APCR탄을 써라. 눈앞의 두꺼운 장갑판을 뚫으려면 APCR을 써라. 경사 장갑에는 APCR이 관통하지 못하고 튕겨 나가므로, 이 경우에는 AP탄이 더 효과적이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/pak3"
+msgid "목재 같은 연약한 목표에는 고폭탄(HE)이 가장 좋다. 이 탄은 명중하면 폭발해 비장갑 목표에 큰 피해를 준다. 관통해 버려 피해가 작은 AP탄과 다르다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/pak4"
+msgid "고속 APCR탄은 가벼워서 근거리에서는 AP탄보다 관통력이 좋지만, 원거리에서는 운동 에너지를 빠르게 잃는다. 먼 목표와 교전할 때는 AP탄이 낫다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/part2"
+msgid "이제 기본 무기 훈련을 마쳤다. 시설을 둘러보며 쿰머스도르프가 제공하는 모든 시험장을 돌아봐도 좋다. 여러 시험장에서 최신 군 장비를 볼 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/part2_1"
+msgid "배치될 준비가 됐다고 생각하면 분산 구역에서 트럭에 올라라. 각자의 연대로 실려 가게 된다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/shootingrange"
+msgid "이제 무기를 익히고 조준 실력을 시험할 차례다. 서쪽 사격장으로 가라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/shootingrange2"
+msgid "표적을 쏠 준비를 해라! 모래주머니 뒤에서 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec01"
+msgid "특수부대 병사를 위한 강화 훈련소에 온 것을 환영한다. 눈앞에 있는 것은 여러 유형의 전투를 위한 종합 장애물 코스로, 실전과 가장 가까운 조건에서 무기에 익숙해지도록 도와줄 것이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec02"
+msgid "코스에 도전할 준비가 되면 입구로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec03"
+msgid "첫 단계는 기관총을 쓰는 것이 좋다. 우세한 적을 상대하는 중거리~장거리용으로 가장 효과적인 무기다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec04"
+msgid "울타리를 넘을 준비가 되면 장애물 코스 타이머가 시작된다. 지정된 지점에 자리 잡고 솟아오르는 표적을 모두 맞혀라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec05"
+msgid "잘했다! 나쁘지 않군. 이제 다음 단계로 넘어가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec06"
+msgid "좁은 공간 전투에는 기관단총이 가장 알맞다. 또 수류탄으로 방을 빠르고 안전하게 소탕해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec07"
+msgid "모든 표적을 맞혀 이 단계를 완료하라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec08"
+msgid "훌륭하다. 계속 이동해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec09"
+msgid "기억해라, 중대전차 수류탄으로 길을 막은 장애물을 폭파할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec10"
+msgid "직접 조종 모드에서는 수류탄을 정확하게 던질 수 있다. 좁은 창문이나 틈새도 문제가 되지 않는다. 이 두 방어 시설 안으로 수류탄을 던져 드럼통을 파괴해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec11"
+msgid "매우 유능한 병사로군, 제국이 바로 필요로 하는 인재다. 마지막 단계로 가자."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec12"
+msgid "오토바이에 올라라. 포를 연결하고 최종 지점으로 이동해라. 전략 모드에서는 \"Shift\"를 누른 채 마우스 왼쪽 단추로 명령을 내리면 유닛의 경로를 지정할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec13"
+msgid "대단하군. 다가올 전투에서 독일은 너희를 믿을 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/spec14"
+msgid "요즘은 순 아마추어를 뽑는군. 너는 독일의 수치다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/start1"
+msgid "병사들! 쿰머스도르프 훈련소에 온 것을 환영한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/start1_01"
+msgid "우리는 너희 모두에게 최고만을 기대한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/start2"
+msgid "전쟁이 코앞이다! 여기서 조국을 지키기 위한 기초 전투 훈련을 받게 된다. 먼저 헬멧, 무기, 탄약을 챙겨라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/tanklimit"
+msgid "그 전차는 시험 주행장 안에 있어야 한다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/targets1"
+msgid "표적을 쏴라, 병사들! 가능한 한 오래 조준을 안정시켜야 가장 정확하게 맞힐 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/targets2"
+msgid "베어마흐트는 어떤 보병에게나 최고의 무기를 제공한다. 탁자에는 여러 자동 무기와 정밀 무기가 있다. 어떤 것은 근거리전에, 어떤 것은 원거리 교전에 유리하다. 선호하는 무장으로 다음 표적을 상대해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive"
+msgid "우리 군의 최신 설계를 보라! 판처 III다. 이런 장갑이라면 아무도 우리를 막을 수 없다. 이 전차에 올라 시험 주행을 해 봐도 좋다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive2"
+msgid "눈앞에 장애물 코스가 있다. 강조된 지점으로 이동해 가능한 한 빨리 표적을 파괴해라!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive3"
+msgid "전차를 효과적으로 조종하려면 \"E\" 키로 직접 조종 모드로 전환해라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive4"
+msgid "알맞은 무기 종류를 고르는 것을 잊지 마라. 보병은 기관총으로 파괴해라. 직접 조종 모드에서는 1-4 키로 특정 무기로 빠르게 바꾸거나 마우스 오른쪽 단추로 모든 무기를 순환할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive_complete"
+msgid "잘했다! 이 전차가 전투에서 네 애마가 되겠군."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/officer/testdrive_fail"
+msgid "실망이다. 전차병들한테 까불지 않는 게 좋을 거다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/tankman/ask"
+msgid "젠장! 아아악! .... 어이, 너! 좀 도와줄 수 있나? 손을 다쳤는데 오늘 저녁 훈련을 위해 이 전차를 굴러가게 해야 하거든. 가능하면 수리 도구를 가져와서 고쳐 줘!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/narrator/tankman/complete"
+msgid "고맙다, 병사. 쓸 만한 기술이 있군!"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/outro_completed"
+msgid "이로부터 불과 2주 뒤 제2차 세계 대전이 시작됐다. 지옥의 문이 열렸다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/outro_failed"
+msgid "전쟁에 나갈 준비를 확실히 해라. 제대로 된 기술 없이는 살아남지 못한다! 계속해라, 배우게 될 것이다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/place"
+msgid "군사 훈련 시설, 쿰머스도르프, 브란덴부르크"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/story"
+msgid "이 임무에서 게임 플레이의 기본을 배울 수 있다."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/task1"
+msgid "병사에게 헬멧, 소총, 탄약(소총탄 최소 20발)을 지급하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/task2"
+msgid "사격장의 모든 표적을 제거하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/task2_1"
+msgid "수류탄으로 모든 드럼통을 폭파하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/task3"
+msgid "차량에 올라 군 훈련소 훈련을 마쳐라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt1"
+msgid "차량 시험 주행을 위해 장갑 차량 시험장으로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt2"
+msgid "정비병 훈련을 위해 수리 작업장으로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt3"
+msgid "장갑 전투 훈련을 위해 대전차포 사격장으로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt4"
+msgid "급유 훈련을 위해 보급소로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt5"
+msgid "MG 및 박격포 사격장 훈련에 참가하라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt6"
+msgid "특수부대 고급 훈련 코스로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/taskopt7"
+msgid "공병 코스로 가라."
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/timer"
+msgid "장애물 코스 통과 시간:"
+msgstr ""
+
+msgctxt "mission/single/00-bootcamp/1-training/timer_spec"
+msgid "특수 훈련 코스 완료 시간:"
+msgstr ""

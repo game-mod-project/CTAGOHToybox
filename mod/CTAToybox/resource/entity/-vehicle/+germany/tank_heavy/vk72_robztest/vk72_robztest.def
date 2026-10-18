@@ -1,0 +1,106 @@
+{game_entity
+	(include "/properties/tank__ctb_vk72_robztest_ed557c9c.ext")
+	(include "/properties/shadow/tank.inc" scale(1.3))
+	(include "/properties/selection/vehicle.inc" scale(1.2))
+	{collider "tank.heavy"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{props "heavy" "vision_lev05" "muzzle_122mm_128mm" "shield" "smoke" "nvw" "detect_tank_heavy"}
+	{Extension "vk72_robztest.mdl"}
+	(include "vk72_robztest.ext")
+
+	{extender "enumerator"}
+
+	("crew_4_human")
+
+	{placer
+		{place "driver"		{visor "driver"}}
+		{place "gunner"		{visor "main"}}
+		{place "commander"	{visor "mgun"}{sealable}}
+	}
+
+	{extender "smokescreen"
+		{cooldown 120}
+	}
+
+	{extender "vision_mode"
+		{timer_object
+			{tag		"thermal"}
+			{active_time	   120}
+			{recharge_rate	  1.0}
+			{type	     "recharge"}
+	    }
+	}
+
+	{extender "inventory"
+		{box
+			{item "bulletger_150_l11 he" 75}
+			{item "bulletger_150_l11 he2" 25}
+			{item "bulletger_150_l11 heat" 55}
+			{item "bulletger_150_l11 apcbche" 100}
+			{item "bulletger_20_auto ap" 700}	; 32 magazines (10 rounds each)
+			{item "bulletger_20_auto apcr" 150}
+			{item "bulletger_20_auto he" 1000}
+			{item "ammo mgun_ger belt" 30000}
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 12}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon 	"150mm_kwkl38_ctb_ger" filling "bulletger_150_l11 heat" 1}
+			("abm_dymamic_stabilised"
+				zeroing(2.9)
+				dispersion(0.13)
+			)
+		}
+		{place "gun2"
+			{RestoreIKAfterAim}
+			{weapon 	"20mm_flak38_ctb_ger" filled}
+			{foresight "foresight2"}
+			("abm_dymamic_stabilised"
+				zeroing(2.0)
+				dispersion(0.20)
+			)
+            		{basic}
+			{ai_in_manual}
+		}
+		{place "mgun"
+			{RestoreIKAfterAim}
+			{weapon "mg42_tank_ctb_ger" filled}
+			{gunner		"commander"}
+			{charger		"commander"}
+			{LinkBone		"mgun_rot"}
+			("abm_mgun")
+            		{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 72000}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(1.25))
+		("mobility_tank"
+			speed(87) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(11) ;--------Max speed in reverse on road, km/h.
+			traverse(15) ;-------Track traverse, per second, in degrees.
+			weight(80.8) ;-------Weight in Tonnes.
+			power(850) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.3) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(8600) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(900) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "turret"			;gun horizontal
+		{speed 0.0062}
+	}
+	{bone "gun_rot"			;gun vertical
+		{speed 0.0015}
+	}
+	{texmod ""}
+}

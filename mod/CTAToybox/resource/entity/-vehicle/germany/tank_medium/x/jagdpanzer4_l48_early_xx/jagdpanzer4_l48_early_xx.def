@@ -1,0 +1,77 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "jagdpanzer4_l48_early_xx.mdl"}
+
+	{volume "body1"			; Hull front
+		{thickness	75
+			{front 150}		; front upper plate
+			{top 50}		
+			{rear 125}		; front lower plate
+			{bottom 50}
+		}
+	}
+	{volume "body2"			; middle part
+		{thickness 75
+			{front 150}
+			{bottom 50}
+		}
+	}
+	{volume "body3"			; middle part Top
+		{thickness 100
+			{front 150}
+			{rear 75}
+			{top 50}
+			{bottom 50}
+		}
+	}
+	{volume "body4"			; gun tower
+		{thickness 188}
+	}
+	{volume "body5"			; around gun tower 20+60
+		{thickness 200}
+		{able {holed}}
+	}
+	{volume "engine1"		; lower
+		{thickness 75
+			{front 25}
+			{rear 55}
+			{bottom 50}
+		}
+	}
+	{volume "engine2"		; upper
+		{thickness 75
+			{front 25}
+			{top 50}
+			{rear 55}
+		}
+	}
+	{volume "mantlet"
+		{thickness 188}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel1"
+		{thickness 63}
+	}
+	{volume "shieldl1"
+		{thickness 13}
+	}
+	{volume "shieldl2"
+		{thickness 13}
+	}
+	{volume "shieldl3"
+		{thickness 13}
+	}
+	{volume "shieldr1"
+		{thickness 13}
+	}
+	{volume "shieldr2"
+		{thickness 13}
+	}
+	{volume "shieldr3"
+		{thickness 13}
+	}
+	{volume "part3"
+		{thickness 25}
+	}
+	("tracks" thickness(50))
+}

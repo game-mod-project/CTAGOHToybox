@@ -1,0 +1,37 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_43_co_1_leutnant"}
+	{portrait "ger_officer"}
+	{icon "smg"}
+	{icon_priority 5}
+	{tags "soldier"}
+	{nationality ger}
+	{voice ger_officer}
+	{armors
+		{head ger_sidecap_m39_var2_inf_off}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_3")("tier3_standard")
+		("binocular_vision")
+	
+	{"health" "600%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "binocular"}
+	
+		{item "mp40_folded_ctb_ger" filled}
+		{item "mp40 ammo" 1120}
+
+		{item "luger_ctb_ger" filled}
+		{item "pistol ammo" 160 40}
+
+		{item "bandage_ger" 7 1}
+
+		{in_hands 0}
+	}
+}

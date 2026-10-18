@@ -1,0 +1,122 @@
+# source: vanilla interface/text/mission/single/0x-skirmish/1941_11-ger_moscow.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1941_11-ger_moscow)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/mission_buys_stay_flag"
+msgid "Reinforcement Menu:"
+msgstr "증원 메뉴:"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/buys_on_after_flag"
+msgid "Units unlock permanently"
+msgstr "유닛이 영구 해금된다"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/name"
+msgid "Battle of Moscow"
+msgstr "모스크바 전투"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/name_big"
+msgid "Battle of Moscow"
+msgstr "모스크바 전투"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/place"
+msgid "Moscow outskirts"
+msgstr "모스크바 외곽"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/date"
+msgid "November 27, 1941"
+msgstr "1941년 11월 27일"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/mission_hq"
+msgid "You must hold your field HQ!"
+msgstr "야전 본부를 사수해야 한다!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/mission_attack"
+msgid "Open the road to the soviet capital!"
+msgstr "소련 수도로 가는 길을 열어라!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/flag_capture_status"
+msgid "Your soldiers secured %1%/7 Soviet positions!"
+msgstr "아군이 소련군 진지 %1%/7곳을 확보했다!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/outro_completed"
+msgid "Mission accomplished!"
+msgstr "임무 완수!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/outro_failed"
+msgid "Mission failed!"
+msgstr "임무 실패!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/outro_failed_hq"
+msgid "The soviets managed to launch a successful counterattack that pushed the Wehrmacht further back than the starting positions of Operation Typhoon. In spite of all efforts, the Germans were unable to enter the Soviet capital. After learning the harsh lessons of the Soviet winter, German high command shifted focus to the next summer offensive."
+msgstr "소련군은 반격에 성공해 베어마흐트를 타이푼 작전의 출발선보다 더 뒤로 밀어냈다. 온갖 노력에도 독일군은 소련 수도에 진입하지 못했다. 소련의 혹독한 겨울을 뼈저리게 배운 독일군 최고사령부는 다음 해 여름 공세로 눈을 돌렸다."
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/story"
+msgid "OPERATION TYPHOON - Krasnaya Polyana\n\nBriefing: The ultimate goal of Army Group Centre is at stake. The Soviet capital, right in our sights! We underestimated the enemy's strength. The only way to reach a decisive victory will be a full-blown frontal assault. Today we risk everything! To arms, Kameraden!\n\nGoals:\n - Advance into Moscow.\n - Demoralization of the Soviet people.\n - Destruction of the Red Army's capability for command and control."
+msgstr "타이푼 작전 - 크라스나야 폴랴나\n\n브리핑: 중앙집단군의 궁극적 목표가 걸려 있다. 소련 수도가 바로 눈앞이다! 우리는 적의 전력을 얕보았다. 결정적 승리를 거둘 길은 전면 공격뿐이다. 오늘 모든 것을 건다! 무기를 들어라, 카메라덴!\n\n목표:\n - 모스크바로 진격하라.\n - 소련 국민의 사기를 꺾어라.\n - 붉은 군대의 지휘 통제 능력을 파괴하라."
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start0"
+msgid "Welcome to the front line, Major! This is our field HQ, it must remain in our control!"
+msgstr "전선에 온 것을 환영한다, Major! 이곳이 우리 야전 본부다. 반드시 지켜야 한다!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start1"
+msgid "Attention Soldaten! The Bolsheviks have tightened the grip with which they hold their precious capital city. Today we will demonstrate that the mighty Wehrmacht cannot be stopped. They may have the numbers, but nothing outclasses our combat effectiveness and combat experience. Soldiers of the Reich - forward, to victory!"
+msgstr "주목, 졸다텐! 볼셰비키는 소중한 수도를 더 단단히 움켜쥐고 있다. 오늘 우리는 강대한 베어마흐트를 막을 수 없음을 보여 줄 것이다. 놈들은 수에서 앞설지 몰라도 우리의 전투력과 전투 경험을 능가하는 것은 없다. 제국의 병사들이여, 전진하라, 승리를 향해!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start2"
+msgid "The Red Army is bringing in reserves from Siberia and will mount massive counterattacks. Be ready for anything!"
+msgstr "붉은 군대가 시베리아에서 예비대를 끌어와 대규모 반격에 나설 것이다. 무슨 일이든 대비하라!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/narrator_start3"
+msgid "Begin securing the objectives, meanwhile more reinforcements are being prepared for deployment!"
+msgstr "목표 확보를 시작하라. 그동안 투입할 증원을 더 준비하고 있다!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/allied_enemy_near_hq"
+msgid "Soldaten! Soviets are close to our Field HQ!"
+msgstr "졸다텐! 소련군이 우리 야전 본부에 접근했다!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/player_enemy_near_hq"
+msgid "We must hold the command post! We cannot afford to abandon it!"
+msgstr "지휘소를 사수해야 한다! 버리는 일은 있을 수 없다!"
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/hq_bonus"
+msgid "Major! Now you can request an airstrikes."
+msgstr "Major! 이제 공습을 요청할 수 있다."
+
+msgctxt "mission/single/02-ger_skirmish/1941_11-ger_moscow/allied_enemypara"
+msgid "Watch the skies, Soviet paratroopers!"
+msgstr "하늘을 조심해라, 소련 공수부대다!"

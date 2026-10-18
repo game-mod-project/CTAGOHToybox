@@ -1,0 +1,32 @@
+{breed
+	{hero}
+	{behaviour soldier}
+	{skin "ger_luft_43_flying_co_leutnant"}
+	{portrait "ger_pilot"}
+	{icon "tech"}
+	{icon_priority 0}
+	{nationality ger}
+	{armors
+		{head ger_officer_cap_tank}
+	}
+	{perks
+		(include "ability.inc")
+		("smg_skill_rank_2")("tier2_standard")
+		("skilled_repair")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "mp40_folded_ctb_ger" filled}
+		{item "luger_ctb_ger" filled}
+		{item "pistol ammo" 140}
+		{item "mp40 ammo" 320}
+		{item "m24 grenade" 2}
+		{item "bandage_ger" 2}
+		{in_hands 0}
+	}
+}

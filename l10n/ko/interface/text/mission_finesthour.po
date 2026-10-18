@@ -1,0 +1,194 @@
+# source: vanilla interface/text/mission_finesthour.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA:GoH (mission)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/multi/1v1_fall_gelb_sum/name"
+msgid "Fall Gelb <c(7e5be4)>[Finest Hour]"
+msgstr "팔 겔프 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/1v1_oosterbeek_sum/name"
+msgid "Oosterbeek <c(7e5be4)>[Finest Hour]"
+msgstr "오스테르베이크 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/1v1_solingen_factory_aut/name"
+msgid "Solingen Factory <c(7e5be4)>[Finest Hour]"
+msgstr "졸링겐 공장 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/1v1_weteringsteeg/name"
+msgid "Weteringsteeg <c(7e5be4)>[Finest Hour]"
+msgstr "베테링스테그 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/2v2_dunkirk_dunes_sum/name"
+msgid "Dunkirk Dunes <c(7e5be4)>[Finest Hour]"
+msgstr "됭케르크 사구 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/2v2_grave_sum/name"
+msgid "Grave <c(7e5be4)>[Finest Hour]"
+msgstr "흐라버 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/2v2_heelsum_sum/name"
+msgid "Heelsum <c(7e5be4)>[Finest Hour]"
+msgstr "헬숨 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/2v2_wesel_aut/name"
+msgid "Wesel <c(7e5be4)>[Finest Hour]"
+msgstr "베젤 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/3v3_canals_sum/name"
+msgid "Canals <c(7e5be4)>[Finest Hour]"
+msgstr "운하 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/3v3_hamminkeln_aut/name"
+msgid "Hamminkeln <c(7e5be4)>[Finest Hour]"
+msgstr "함민켈른 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/3v3_mont_cassel/name"
+msgid "Mont Cassel <c(7e5be4)>[Finest Hour]"
+msgstr "몽카셀 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/3v3_zeeland_sum/name"
+msgid "Zeeland <c(7e5be4)>[Finest Hour]"
+msgstr "제일란트 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/4v4_arras_countryside_sum/name"
+msgid "Arras Countryside <c(7e5be4)>[Finest Hour]"
+msgstr "아라스 시골 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/4v4_eindhoven/name"
+msgid "Eindhoven <c(7e5be4)>[Finest Hour]"
+msgstr "에인트호번 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/4v4_remagen_aut/name"
+msgid "Remagen <c(7e5be4)>[Finest Hour]"
+msgstr "레마겐 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/4v4_vlissingen_breach/name"
+msgid "Vlissingen Breach <c(7e5be4)>[Finest Hour]"
+msgstr "플리싱언 돌파구 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/dcg_anctoville_sum/name"
+msgid "Anctoville"
+msgstr "앙크토빌"
+
+msgctxt "mission/multi/dcg_bergen_radar/name"
+msgid "Bergen Radar"
+msgstr "베르겐 레이더"
+
+msgctxt "mission/multi/dcg_bretteville_sur_odon/name"
+msgid "Bretteville-sur-Odon"
+msgstr "브르트빌쉬르오동"
+
+msgctxt "mission/multi/dcg_broukerque_sum/name"
+msgid "Broukerque"
+msgstr "브루케르크"
+
+msgctxt "mission/multi/dcg_caen_sum/name"
+msgid "Caen"
+msgstr "캉"
+
+msgctxt "mission/multi/dcg_canals_sum/name"
+msgid "Canals"
+msgstr "운하"
+
+msgctxt "mission/multi/dcg_carpiquet_sum/name"
+msgid "Carpiquet"
+msgstr "카르피케"
+
+msgctxt "mission/multi/dcg_dunkirk_sum/name"
+msgid "Dunkirk"
+msgstr "됭케르크"
+
+msgctxt "mission/multi/dcg_dyle_sum/name"
+msgid "Dyle"
+msgstr "딜"
+
+msgctxt "mission/multi/dcg_elden_landings/name"
+msgid "Elden Landings"
+msgstr "엘덴 상륙"
+
+msgctxt "mission/multi/dcg_flanders_fields_sum/name"
+msgid "Flanders Fields"
+msgstr "플랑드르 들판"
+
+msgctxt "mission/multi/dcg_hamburg_aut/name"
+msgid "Hamburg"
+msgstr "함부르크"
+
+msgctxt "mission/multi/dcg_hazebrouck/name"
+msgid "Hazebrouck"
+msgstr "아즈브룩"
+
+msgctxt "mission/multi/dcg_middenhof/name"
+msgid "Middenhof"
+msgstr "미덴호프"
+
+msgctxt "mission/multi/dcg_nord_battery/name"
+msgid "Nord Battery"
+msgstr "노르 포대"
+
+msgctxt "mission/multi/dcg_oberhundem_aut/name"
+msgid "Oberhundem"
+msgstr "오버훈뎀"
+
+msgctxt "mission/multi/dcg_oostkapelle/name"
+msgid "Oostkapelle"
+msgstr "오스트카펠러"
+
+msgctxt "mission/multi/dcg_rethem_station_aut/name"
+msgid "Rethem Station"
+msgstr "레텀 역"
+
+msgctxt "mission/multi/dcg_ruhr_factory_aut/name"
+msgid "Ruhr Factory"
+msgstr "루르 공장"
+
+msgctxt "mission/multi/dcg_siegfried_aut/name"
+msgid "Siegfried"
+msgstr "지크프리트"
+
+msgctxt "mission/multi/dcg_valkenburg_airfield/name"
+msgid "Valkenburg Airfield"
+msgstr "팔켄뷔르흐 비행장"
+
+msgctxt "mission/multi/dcg_villers_bocage_sum/name"
+msgid "Villers Bocage"
+msgstr "빌레르보카주"
+
+msgctxt "mission/multi/dcg_vlissingen_breach_aut/name"
+msgid "Vlissingen Breach"
+msgstr "플리싱언 돌파구"
+
+msgctxt "mission/multi/dcg_westkapelle_aut/name"
+msgid "Westkapelle"
+msgstr "베스트카펠러"
+
+msgctxt "mission/multi/dcg_zeeland_sum/name"
+msgid "Zeeland"
+msgstr "제일란트"
+
+msgctxt "mission/multi/0_frontlines/1v1_reichswald_aut/name"
+msgid "Reichswald <c(7e5be4)>[Finest Hour]"
+msgstr "라이히스발트 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/0_frontlines/2v2_blitzkrieg/name"
+msgid "Blitzkrieg <c(7e5be4)>[Finest Hour]"
+msgstr "전격전 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/0_frontlines/3v3_hells_highway/name"
+msgid "Hell's Highway <c(7e5be4)>[Finest Hour]"
+msgstr "지옥의 도로 <c(7e5be4)>[Finest Hour]"
+
+msgctxt "mission/multi/0_frontlines/4v4_goodwood/name"
+msgid "Goodwood <c(7e5be4)>[Finest Hour]"
+msgstr "굿우드 <c(7e5be4)>[Finest Hour]"

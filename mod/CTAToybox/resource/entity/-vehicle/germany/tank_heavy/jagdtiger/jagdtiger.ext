@@ -1,0 +1,121 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 35mm
+	; spare tracks 30mm
+	; schürzen 5mm
+
+	("tank_heavy_tier2")
+
+	("shield_track" args "shield1" 90)		;// 30
+	("shield_track" args "shield2" 90)		;// 30
+	("shield_track" args "shield3" 90)		;// 30
+	("shield_track" args "shield4" 90)		;// 30
+	("shield_track" args "shield5" 90)		;// 30
+	("shield_track" args "shield6" 90)		;// 30
+	("shield_track" args "shield7" 90)		;// 30
+	("shield_track" args "shield8" 90)		;// 30
+	("shield_track" args "shield9" 90)		;// 30
+	("shield_track" args "shield10" 90)		;// 30
+	("shield_track" args "shield11" 90)		;// 30
+	("shield_track" args "shield12" 90)		;// 30
+
+	("shield_tear" args "shieldL1" 15)
+	("shield_tear" args "shieldL2" 15)
+	("shield_tear" args "shieldL3" 15)
+	("shield_tear" args "shieldL4" 15)
+	("shield_tear" args "shieldL5" 15)
+	("shield_tear" args "shieldR1" 15)
+	("shield_tear" args "shieldR2" 15)
+	("shield_tear" args "shieldR3" 15)
+	("shield_tear" args "shieldR4" 15)
+	("shield_tear" args "shieldR5" 15)
+
+	("tracks" repair(40) thickness(90))
+	("gun" repair(30) thickness(105))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 240
+			{front 300}		; Lower Nose
+			{top 450}		; Glacis
+			{rear 75}
+			{bottom 120}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 240
+			{front 450}
+			{top 150}
+			{rear 75}
+			{bottom 75}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body3"			; turretthings
+		{thickness 240
+			{front 750}
+			{top 120}
+			{rear 240}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "body4"
+		{thickness 750}
+		{Quality "large_flaw"}
+	}
+	{volume "engine1"		; Hull
+		{thickness 240
+			{front 75}
+			{rear 240}
+			{bottom 75}
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 240
+			{front 75}
+			{top 120}
+			{rear 240}
+			{bottom 75}		; Overhang (above tracks)
+		}
+		{Quality "large_flaw"}
+	}
+	{volume "barrel1"
+		{thickness 600}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "barrel2"
+		{thickness 600}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+	}
+	{volume "mg_port"
+		{thickness 450}
+		{Quality "large_flaw"}
+		{CastSteel 0.8063}
+		{tags "body"}
+		{component "body"}
+	}
+
+	{component "shield1" {tags "cut_part"}}
+	{component "shield2" {tags "cut_part"}}
+	{component "shield3" {tags "cut_part"}}
+	{component "shield4" {tags "cut_part"}}
+	{component "shield5" {tags "cut_part"}}
+	{component "shield6" {tags "cut_part"}}
+	{component "shield7" {tags "cut_part"}}
+	{component "shield8" {tags "cut_part"}}
+	{component "shield9" {tags "cut_part"}}
+	{component "shield10" {tags "cut_part"}}
+	{component "shield11" {tags "cut_part"}}
+	{component "shield12" {tags "cut_part"}}

@@ -1,0 +1,56 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "kfz70_xx.mdl"}
+	{volume "wheelleft1"
+		{thickness 4}
+	}
+	{volume "wheelleft2"
+		{thickness 4}
+	}
+	{volume "wheelleft3"
+		{thickness 4}
+	}
+	{volume "wheelright1"
+		{thickness 4}
+	}
+	{volume "wheelright2"
+		{thickness 4}
+	}
+	{volume "wheelright3"
+		{thickness 4}
+	}
+	{volume "body1"
+		{thickness 4}
+	}
+	{volume "body2"
+		{able {holed}}
+		{thickness 4}
+	}
+	{volume "bodyback1"
+		{able {holed}}
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback2"
+		{able {holed}}
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "engine1"
+		{thickness 3}
+	}
+	{volume "part1"
+		{thickness 4}
+	}
+	{volume "part2"
+		{thickness 4}
+	}
+	{volume "part3"
+		{thickness 4}
+	}
+	{volume "part4"
+		{thickness 4}
+	}
+}

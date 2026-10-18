@@ -1,0 +1,57 @@
+;{mission
+; CTAToybox Spawn: 컨퀘스트 내 번호 추정. editor/CtaToybox.Core/Spawn/MenuBuilder.cs가 만든 파일이다
+	{Helpers
+		{triggers
+			{"ctb_guess_me"
+				{autoreset}
+				{condition
+					{terms
+						{"1.cmp_i" {var "ctb_me$"} {op "=="} {value 0}}
+					}
+				}
+				{actions
+					{"delay" {time 3}}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 0}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 1}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 1}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 2}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 2}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 3}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 3}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 4}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 4}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 5}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 5}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 6}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 6}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 7}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 7}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 8}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 8}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 9}}
+					}
+					{"if"
+						{condition {type cmp_i} {var "id_1st_player$"} {op "=="} {value 9}}
+						{"set_i" {var "ctb_guess$"} {op "="} {value 10}}
+					}
+				}
+			}
+		}
+	}

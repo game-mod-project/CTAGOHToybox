@@ -1,0 +1,69 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "opel_maultier_xx.mdl"}
+
+	{volume "body"
+		{thickness 4}
+	}
+	{volume "cabin"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "bodyback1"
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback2"
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback3"
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "bodyback4"
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "wheelright1"
+		{thickness 4}
+	}
+	{volume "engine"
+		{thickness 4}
+	}
+	{volume "part1"		;// Front Left Wheel
+		{thickness 4}
+	}
+	{volume "part2"		;// Left Door
+		{thickness 4}
+		{able {obstacle 0}}
+	}
+	{volume "part3"		;// Left Engine Cover
+		{thickness 4}
+	}
+	{volume "part3a"	;// Left Engine Cover
+		{thickness 4}
+	}
+	{volume "part4"		;// Back Door
+		{thickness 4}
+		{material "wood"}
+		{tags "wood"}
+	}
+	{volume "part5"		;// Right Door
+		{thickness 4}
+		{able {obstacle 0}}
+	}
+	{volume "part6"		;// Right Track Wheel
+		{thickness 40}
+	}
+	{volume "part7"		;// Right Track Wheel
+		{thickness 40}
+	}
+	{volume "part8"		;// Left Track Wheel
+		{thickness 40}
+	}
+}

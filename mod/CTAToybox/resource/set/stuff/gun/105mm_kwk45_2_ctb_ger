@@ -1,0 +1,37 @@
+;_________________________________________
+; German heavy long-barreled AT Gun
+;=========================================
+
+
+{from "pattern gun"			; L/68 "Tiger 2 105mm", E-79
+	{filling "bulletger_105_l70"}
+	{fireSound 	        "cannon/s4/d1/Shared/Cannon_105to130mm_LV/"}
+	{fireSoundclose 	"cannon/s4/3p/Shared/Cannon_105to130mm_LV/"}
+	{reloadSound 		"INT/reload/reload_slow_INT"}
+	{range 250 250}
+	{calibre 105}
+
+	("reload time" seconds(5))
+
+	("velocity m/s" ap(1080) apcr(1210) he(750) heat(600))
+	("armor health" damage(340))
+	("armor health custom" shell(apcbche) damage(340) velocity(920) filler(265))
+
+	; Pzgr.41
+	("penetration_long" shell(apcbche) range(250) a(272) b(259) c(244) d(230) e(236)) ;+40 from 8.8cm KwK
+
+	; Pzgr.40
+	("penetration_long" shell(apcr) range(250) a(344) b(322) c(297) d(274) e(253)) ;+40 from 8.8cm KwK
+	{parameters "apcr" ; Pzgr.40
+		("large_apcr_slope_multiplier")
+	}
+
+	; Gr.41 Hl
+	("penetration_long" shell(heat) range(250) a(110) b(110) c(110) d(110) e(110)) ;+40 from 8.8cm KwK
+
+	{parameters "he"
+		{range 250 250}
+	}
+
+	("accuracy_direct" r1(0.47) range_ap(250) range_he(250) range_heat(250)) ;38
+}

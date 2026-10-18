@@ -1,0 +1,114 @@
+# source: vanilla interface/text/mission/single/03-fin/1941_08_porlampi.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1941_08_porlampi)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/date"
+msgid "31st August, 1941 · Porlampi, Karelian isthmus "
+msgstr "1941년 8월 31일 · 카렐리야 지협 포를람피"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/men"
+msgid "You lost all your men!"
+msgstr "병사를 모두 잃었다!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/name"
+msgid "Through the Fire"
+msgstr "불길을 뚫고"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/name_big"
+msgid "Through the Fire"
+msgstr "불길을 뚫고"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/timer"
+msgid "Time until convoy arrival:"
+msgstr "호송대 도착까지 남은 시간:"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/story"
+msgid " August 1941. The Finnish IV corps marches on Viipuri, while the 8th division crosses the bay and lands south of the town. Very soon, the 8th will try to encircle the Soviet 43rd rifle division at Porlampi. The Soviets offer fierce resistance, trying to break out and regroup.\n\n In this mission, you will have to prove that you know the right “motti” tactics to bring about a swift victory."
+msgstr " 1941년 8월. 핀란드 제4군단이 비푸리로 진군하는 동안 제8사단은 만을 건너 도시 남쪽에 상륙한다. 곧 제8사단은 포를람피에서 소련 제43소총사단을 포위하려 한다. 소련군은 돌파해 재편성하려고 격렬히 저항한다.\n\n 이 임무에서 당신은 신속한 승리를 이끌 올바른 \"모티\" 전술을 알고 있음을 증명해야 한다."
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/outro_completed"
+msgid "Well done! You have completely out- manoeuvred and out- witted the entire Soviet 43rd rifle division, and the enemy is retreating in disorder. We have captured an unbelievable amount of enemy equipment and stocks: 300 artillery pieces and nearly 20.000 shells, over 50 tanks, hundreds of vehicles, and much, much more. Soviet resistance has broken down completely on this front; the road to Leningrad is now open!"
+msgstr "잘했다! 소련 제43소총사단 전체를 완전히 기동으로 앞서고 허를 찔렀으며 적은 혼란 속에 퇴각하고 있다. 믿기 어려울 만큼 많은 적 장비와 물자를 노획했다. 포 300문과 포탄 거의 2만 발, 전차 50대 이상, 차량 수백 대, 그 밖에도 아주 많다. 이 전선에서 소련의 저항은 완전히 무너졌다. 레닌그라드로 가는 길이 열렸다!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/outro_failed"
+msgid "The enemy broke out! This means he will fall back to his next defensive line with all of his heavy equipment, and have another go at us. We are supposed to be within artillery range of Leningrad next week, but we might be unable to achieve that. Next time we will have to do better than we did today."
+msgstr "적이 돌파했다! 중장비를 모두 가지고 다음 방어선으로 물러나 우리를 다시 노릴 것이다. 다음 주에는 레닌그라드 포병 사거리 안에 들어가야 하지만 그러지 못할 수도 있다. 다음에는 오늘보다 더 잘해야 한다."
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/01"
+msgid "Stay put, soldiers! Do not make any unnecessary movements... The enemy column is approaching, get ready to surprise them!"
+msgstr "가만히 있어라, 병사들! 불필요한 움직임은 하지 마라... 적 종대가 접근 중이다, 기습할 준비를 해라!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/02"
+msgid "Let them come into the village before you open fire... You'll be able to grenade them from the houses"
+msgstr "마을에 들어올 때까지 기다렸다가 사격해라... 집 안에서 수류탄을 던질 수 있다."
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/03"
+msgid "Don't let any vehicle get through!!!"
+msgstr "차량은 한 대도 통과시키지 마라!!!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/04"
+msgid "Good job, boys! "
+msgstr "잘했다, 제군! "
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/05"
+msgid "Soldiers, support our neighboring detachment to the south-west and intercept the next enemy column!"
+msgstr "병사들, 남서쪽의 이웃 분견대를 지원하고 다음 적 종대를 요격해라!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/06"
+msgid "Check that out, it's an artillery convoy! It would be a shame if those big howitzers ended up in the wrong hands, huh? Try to keep them operational."
+msgstr "저걸 봐라, 포병 호송대다! 저 대형 곡사포가 엉뚱한 놈들 손에 들어가면 아깝겠지? 작동 가능한 상태로 유지해 봐라."
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/07"
+msgid "Well done. Let's try to re-purpose these artillery pieces right here. They seem to be out of ammo! You can find extra ammunition at the first column you ambushed."
+msgstr "좋다. 이 포를 바로 여기서 용도 변경해 보자. 탄약이 떨어진 모양이다! 처음 매복한 종대에서 여분의 탄약을 찾을 수 있다."
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/08"
+msgid "Right then. With these tools at our disposal, the enemy is most certainly doomed. I want you to encircle the enemy from all directions and squeeze the pocket!"
+msgstr "좋다. 이 수단이 있으니 적은 확실히 끝이다. 사방에서 적을 포위해 포위망을 조여라!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/09"
+msgid "I am granting you command of the neighboring infantry company to complete the encirclement of the enemy. In addition, our air force has a couple of bombers standing by. They are now at your disposal. "
+msgstr "이웃 보병 중대의 지휘를 맡겨 적 포위를 완성하게 한다. 또한 공군에 폭격기 몇 대가 대기 중이다. 이제 자네 재량으로 쓸 수 있다. "
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/10"
+msgid "Yes! Eliminate the soviet vermin! I want to see them burn!"
+msgstr "그렇다! 소련 해충들을 제거해라! 불타는 꼴을 보고 싶다!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/officer/11"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/narrator/soldier/01"
+msgid "Sir! I can hear another column approaching in the distance, toward the south-west!"
+msgstr "각하! 멀리서 또 다른 종대가 접근하는 소리가 들립니다, 남서쪽입니다!"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/place"
+msgid "8th Infantry Division"
+msgstr "제8보병사단"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/task1"
+msgid "Ambush the enemy supply convoy"
+msgstr "적 보급 수송대를 매복 공격하라"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/task2"
+msgid "Intercept and silence the retreating artillery column."
+msgstr "후퇴하는 포병 종대를 차단해 침묵시켜라."
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/task3"
+msgid "Capture and re-supply the enemy artillery"
+msgstr "적 포병을 점령하고 재보급하라"
+
+msgctxt "mission/single/03-fin/1941_08_porlampi/task4"
+msgid "Eliminate the enemy forces in the area"
+msgstr "지역 내 적 병력을 섬멸하라"

@@ -1,0 +1,62 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "wirbelwind_xx.mdl"}
+	{volume "body1"			; Hull
+		{thickness 75
+			{front 200}		; 50mm base + 30mm plate
+			{top 50}		; Glacis
+			{rear 25}
+			{bottom 25}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 75
+			{front 200}		; 50mm base + 30mm plate
+			{top 30}
+			{rear 25}
+		}
+	}
+	{volume "engine1"
+		{thickness 75
+			{front 25}
+			{rear 50}
+			{bottom 25}
+		}
+	}
+	{volume "engine2"
+		{thickness 75
+			{front 25}
+			{top 25}
+			{rear 50}
+		}
+	}
+	{volume "turret1"	;main
+		{thickness 40}
+		{able {holed}}
+	}
+	{volume "turret2"	;ring
+		{thickness 40}
+	}
+	{volume "barrel1"
+		{thickness 38}
+	}
+	{volume "barrel2"
+		{thickness 38}
+	}
+	{volume "barrel3"
+		{thickness 38}
+	}
+	{volume "barrel4"
+		{thickness 38}
+	}
+	{volume "barrel5"
+		{thickness 38}
+	}
+	{volume "shield1"
+		{thickness 50}
+	}
+	{volume "shield3"
+		{thickness 50}
+	}
+	("tracks" thickness(50))
+}

@@ -1,0 +1,279 @@
+# source: vanilla interface/text/mission/single/06-bonus/1945_04_yugoslavia.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1945_04_yugoslavia)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/airstrike"
+msgid "IL-2 Airstrike"
+msgstr "IL-2 공습"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/date"
+msgid "March 13th, 1945 · Outskirts of Sarajevo, Yugoslavia"
+msgstr "1945년 3월 13일 · 유고슬라비아 사라예보 외곽"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/music"
+msgid "Play music (loudspeaker)"
+msgstr "음악 재생 (확성기)"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/music_hint"
+msgid "The loudspeaker on the Sherman can be used to raise the morale of our troops by playing music."
+msgstr "Sherman의 확성기로 음악을 틀어 아군 사기를 높일 수 있다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/name"
+msgid "Yugoslavian Heroes"
+msgstr "유고슬라비아의 영웅들"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/name_big"
+msgid "Yugoslavian Heroes"
+msgstr "유고슬라비아의 영웅들"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/00"
+msgid "Well, the weather turned out nice today. Everyone is out and about, not a single fascist or villager has noticed us coming."
+msgstr "이야, 오늘은 날씨가 좋군. 다들 밖에 나와 있는데 파시스트도 마을 사람도 우리가 오는 걸 눈치채지 못했어."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/01"
+msgid "The trucks are all going to the center of town. Too many fascists."
+msgstr "트럭이 전부 시내 중심으로 간다. 파시스트가 너무 많아."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/02"
+msgid "You have a death wish. The Germans are retreating. We want them gone, but don't have to kill them; they will run away soon enough. What are you playing?"
+msgstr "죽고 싶은 모양이군. 독일군은 퇴각 중이다. 놈들이 사라지길 바랄 뿐 굳이 죽일 필요는 없다. 곧 알아서 도망갈 거다. 지금 뭐 하는 거야?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/03"
+msgid "Tiger! A bloody Tiger! "
+msgstr "Tiger다! 빌어먹을 Tiger!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/04"
+msgid "Tigers are on the menu today! "
+msgstr "오늘 메뉴는 Tiger다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/05"
+msgid "So, comrade tank commander, what secret weapon do you have to catch the Tigers from behind, huh? Maybe we can all be blown to pieces as bait while you get your shit together?"
+msgstr "그래서 전차장 동지, Tiger 뒤를 잡을 비밀 병기가 뭔가, 응? 네가 준비하는 동안 우리가 미끼로 산산조각 나도 된다는 건가?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/06"
+msgid "Is that solid gold? And they've hoarded truckloads of that in town? How are we going to get it out?"
+msgstr "이게 순금이야? 이런 걸 트럭째로 마을에 쌓아 놨다고? 어떻게 빼내지?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/07"
+msgid "That is... a lot of gold!"
+msgstr "이건... 엄청난 금이군!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/08"
+msgid "The trucks have arrived, we will begin loading them. The warehouse needs protecting until we're all done."
+msgstr "트럭이 도착했다. 적재를 시작하겠다. 다 끝날 때까지 창고를 지켜야 한다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/09"
+msgid "Fascists incoming! Comrades, defend the trucks!"
+msgstr "파시스트가 온다! 동지들, 트럭을 지켜라!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/fighter/10"
+msgid "Well comrades, I have the distinct sensation that the war ends here and now for me. I hope not to see you again too soon, but it was an honor to liberate the motherland with you all these years."
+msgstr "동지들, 내게는 전쟁이 지금 여기서 끝난다는 확실한 느낌이 드네. 너무 일찍 다시 만나지 않길 바라지만, 그 오랜 세월 여러분과 함께 조국을 해방한 것은 영광이었소."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/01"
+msgid "Yup, but the Germans are all over the place. Trucks are going in but not coming out. Something about this stinks! We need to find out what the fascists are hoarding here."
+msgstr "그래, 그런데 독일 놈들이 사방에 깔렸다. 트럭은 들어가는데 나오지 않아. 뭔가 구린내가 난다! 파시스트들이 여기 뭘 쌓아 두는지 알아내야 한다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/02"
+msgid "Hmm. It looks like one of those trucks broke down up ahead. I say we take a look at their cargo."
+msgstr "흠. 앞에서 트럭 한 대가 고장 난 것 같군. 화물을 한번 보자."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/03"
+msgid "My friend, this goes beyond liberating our country from the fascist yoke. The Germans are taking valuables with them. This particular convoy seems heavily protected."
+msgstr "친구, 이건 조국을 파시스트의 멍에에서 해방하는 일을 넘어선다. 독일 놈들이 귀중품을 가져가고 있어. 이 호송대는 유독 경비가 삼엄해 보인다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/04"
+msgid "Heads up, dead north! "
+msgstr "조심해, 정북이다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/05"
+msgid "Don't panic. The Tigers are vulnerable in close quarters. We'll outflank them and attack them from behind. Whatever they are safeguarding in this town must be very valuable if tigers are strolling around."
+msgstr "당황하지 마라. Tiger는 근접전에 약하다. 우회해서 뒤를 치자. 이 마을에서 지키는 게 무엇이든 Tiger가 어슬렁거릴 정도면 대단히 값진 것일 거다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/06"
+msgid "Well, well. Now that's something worth guarding with Tigers."
+msgstr "이런, 이런. Tiger로 지킬 만한 물건이군."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/07"
+msgid "Comrade, do you know anyone who can help us extract these valuables?"
+msgstr "동지, 이 귀중품을 빼내는 걸 도와줄 사람을 아는가?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/08"
+msgid "I checked the documents in the vehicle and they were heading towards the farmers' warehouse in the center of town. It makes sense; it's a large building. That is where we will find our treasure. Let's move out!"
+msgstr "차량 안의 서류를 확인했는데 마을 중심의 농부 창고로 가던 길이었다. 말이 된다, 큰 건물이니까. 우리 보물은 거기 있을 거다. 출발하자!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/09"
+msgid "Yeah, well, this gold is useless unless we can get it out of here. The Germans clearly want to take it with them, so we need to act swiftly. Secure the village! Comrade tank commander, call your friends up."
+msgstr "그래, 이 금은 여기서 빼내지 못하면 쓸모없다. 독일 놈들은 분명 가져가려 할 테니 신속히 움직여야 한다. 마을을 확보해라! 전차장 동지, 친구들을 불러라."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/10"
+msgid "Comrades, I need a thorough search. I don't want a single fascist left in this village compromising our operation. We need those trucks coming in safe and sound."
+msgstr "동지들, 철저히 수색해라. 이 마을에 작전을 위태롭게 할 파시스트가 한 놈도 남아선 안 된다. 트럭이 안전하게 들어와야 한다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/11"
+msgid "Damn it! We failed to clear the town!"
+msgstr "젠장! 마을 소탕에 실패했다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/12"
+msgid "Comrades, set up a defensive perimeter around the warehouse! The gold will take time to load, and the Germans will want it back!"
+msgstr "동지들, 창고 주위에 방어선을 쳐라! 금을 싣는 데 시간이 걸리고 독일 놈들은 되찾으려 할 거다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/13"
+msgid "No! We've lost too many transport trucks!"
+msgstr "안 돼! 수송 트럭을 너무 많이 잃었다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/14"
+msgid "Spread out and take ambush positions!"
+msgstr "흩어져서 매복 위치를 잡아라!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/15"
+msgid "We don't have supplies. I wonder whether we should look out for German supply convoys. At least one of them will be bound to be retreating westward."
+msgstr "보급품이 없다. 독일군 보급 호송대를 노려야 하지 않을까. 하나쯤은 틀림없이 서쪽으로 퇴각 중일 거다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/16"
+msgid "Comrade tank commander. The uniforms and the weaponry, I do understand. But is there a particular reason to take a Tiger tank with you too?"
+msgstr "전차장 동지. 군복과 무기는 이해한다. 그런데 Tiger 전차까지 가져온 특별한 이유라도 있나?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/leader/17"
+msgid "The fuel system is junk. It smells of fuel a mile away. The transmission is falling to pieces. You have no spare parts and huge German markings to attract friendly fire!"
+msgstr "연료 계통은 쓰레기야. 1마일 밖에서도 연료 냄새가 나. 변속기는 부서지고 있고. 예비 부품도 없고 아군 사격을 부를 커다란 독일 표식까지 달려 있잖아!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/01"
+msgid "Now then. Tell me, comrades, what's on the menu today? How can the glorious Red Army be of assistance?"
+msgstr "자, 말해 봐요, 동지들. 오늘 메뉴가 뭐요? 영광스러운 붉은 군대가 어떻게 도우면 되겠소?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/02"
+msgid "Oh man... nobody said anything about them Tigers!"
+msgstr "아이고... Tiger 얘기는 아무도 안 했잖아!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/03"
+msgid "Always with the pessimistic attitude, Iosif... I'll tell you what we do. We have a loudspeaker, and when we go into battle, we like to play music very loud... it kind of calms us down."
+msgstr "늘 비관적이구먼, 이오시프... 이렇게 하세. 우리에겐 확성기가 있고, 전투에 나갈 때 음악을 아주 크게 틀어. 마음이 좀 가라앉거든."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/04"
+msgid "Alright, let's find out what those Fascists have got. My guys here in the back are ready."
+msgstr "좋아, 파시스트 놈들이 뭘 가졌는지 보자. 후방의 내 부하들은 준비됐다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/05"
+msgid "Comrade Partisan, Always with the pessimistic attitude. Can't you enjoy the fact you just became rich? Why don't you let me organise a pickup?"
+msgstr "빨치산 동지, 늘 비관적이구려. 방금 부자가 됐다는 사실을 즐길 순 없소? 내가 수송을 조직해 주면 어떻겠소?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/06"
+msgid "Sure thing. Let's find out where the Fascists keep the gold, clear the area, and I'm sure I could persuade some comrades to come along with transports. The war has been very tough on all of us. The thought of returning to the Urals emptyhanded seems rather sad, you know?"
+msgstr "물론이지. 파시스트들이 금을 어디 두는지 찾아서 지역을 소탕하면, 수송대를 끌고 올 동지들을 설득할 수 있을 거요. 전쟁은 우리 모두에게 너무 가혹했소. 빈손으로 우랄에 돌아간다고 생각하면 꽤 서글프지 않소?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/07"
+msgid "Yes, Comrade..."
+msgstr "예, 동지..."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/08"
+msgid "(on radio) Gav-gav, gav-gav!!"
+msgstr "(무전) 거브-거브, 거브-거브!!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/09"
+msgid "(on radio) No, I'm not trying to be funny. Listen, I need a favour. How soon can you come here with, say... 10 empty trucks?"
+msgstr "(무전) 아니, 농담이 아니야. 들어 봐, 부탁이 있다. 빈 트럭 10대쯤 가지고 여기 오려면 얼마나 걸리지?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/10"
+msgid "(on radio) Listen, I need you here round about now, I'm about to cut you into a very good deal, if you don't want it, then you're out, I can find 10 trucks almost anywhere."
+msgstr "(무전) 들어 봐, 지금쯤 여기 와야 한다. 아주 좋은 거래에 끼워 줄 참인데, 싫다면 빠져라. 트럭 10대는 어디서든 구할 수 있다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/11"
+msgid "Yeah, just as I thought. Alright, comrades, listen up! 6 minutes for our trucks to come from the southeast, secure the town!"
+msgstr "그래, 예상대로군. 좋아, 동지들, 들어라! 우리 트럭이 남동쪽에서 오기까지 6분이다, 마을을 확보해라!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/12"
+msgid "Alright, comrades, I have gotten us some air support over my portable radio. It seems our air force guys have nothing better to do than accept tasking from a low-life tank driver."
+msgstr "좋아, 동지들, 휴대 무전기로 항공 지원을 확보했다. 우리 공군 친구들이 한낱 전차병의 요청이나 받아 줄 만큼 한가한 모양이다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/13"
+msgid "Alright, here goes nothing, let's see what our planes can do!"
+msgstr "좋아, 밑져야 본전이다. 우리 비행기가 뭘 하는지 보자!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/14"
+msgid "Calling in an airstrike!"
+msgstr "공습을 요청한다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/15"
+msgid "Calling in an IL-2. One thousand seven hundred horsepowers of goodness and some big bombs strapped under it."
+msgstr "IL-2를 부른다. 1,700마력의 위력에 큰 폭탄까지 매달고 온다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/16"
+msgid "Hm. Definitely an anti-social type."
+msgstr "흠. 확실히 비사교적인 부류군."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/17"
+msgid "It is a beautiful tank."
+msgstr "아름다운 전차다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/narrator/tanker/18"
+msgid "Why is everyone so damn negative around here? Can't we just take a moment to delight ourselves with the prize we have collected?"
+msgstr "여기는 왜 다들 이렇게 부정적이야? 우리가 거둔 전리품을 잠깐 즐기면 안 되나?"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/outro_completed"
+msgid "Great job! Who would ever have thought you’d emerge a millionaire? This victory is proof that you should never let them negative waves win."
+msgstr "훌륭하다! 자네가 백만장자가 될 줄 누가 알았겠나? 이 승리는 부정적인 기운이 이기게 두어선 안 된다는 증거다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/outro_failed"
+msgid "What happened? Did you not watch the 1970 movie Kelly’s Heroes? Watch it, and try again."
+msgstr "무슨 일이 있었나? 1970년 영화 '켈리의 영웅들'을 보지 않았나? 보고 다시 해 봐라."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/place"
+msgid "Elements of the Yugoslav People's Liberation Army"
+msgstr "유고슬라비아 인민해방군 예하 부대"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/story"
+msgid "It’s 1945, and the Germans are retreating from Yugoslavia. \nHaving lost the easier withdrawal route through Serbia, they secure the more difficult passage through Kosovo, Sandzak, and Bosnia. They even score a series of temporary successes against the People's Liberation Army. \nIn early March, the Germans move troops from southern Bosnia to support an unsuccessful counter-offensive in Hungary, enabling the People’s Liberation Army to attack the weakened German positions.  \nToday, you are looking for Germans while driving through the beautiful Yugoslavian landscape. \nWhatever you do or find, just make sure you avoid them negative waves, and you’ll be fine.\n\nGood luck!"
+msgstr "1945년, 독일군이 유고슬라비아에서 퇴각하고 있다. \n더 쉬운 세르비아 경유 철수로를 잃은 그들은 코소보, 산자크, 보스니아를 지나는 더 험한 길을 확보한다. 인민해방군을 상대로 일시적인 성공을 연이어 거두기도 한다. \n3월 초 독일군은 헝가리의 실패한 반격을 지원하려 보스니아 남부에서 병력을 이동시켰고, 이 틈에 인민해방군은 약해진 독일군 진지를 공격할 수 있게 되었다. \n오늘 당신은 아름다운 유고슬라비아 풍경을 가로지르며 독일군을 찾고 있다. \n무엇을 하고 무엇을 찾든, 부정적인 기운만 피하면 괜찮을 것이다.\n\n행운을 빈다!"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task1"
+msgid "Inspect the broken-down vehicle to find what the Germans are transporting."
+msgstr "고장 난 차량을 조사해 독일군이 무엇을 수송하는지 알아내라."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task2"
+msgid "Secure the warehouse containing the gold."
+msgstr "금이 든 창고를 확보하라."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task3"
+msgid "Clear the village of Germans so the transports can safely come in to collect the gold."
+msgstr "수송대가 금을 안전하게 싣고 갈 수 있도록 마을의 독일군을 소탕하라."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task4"
+msgid "Protect the trucks from German counter-attacks while the gold is being loaded. At least 5 trucks must survive."
+msgstr "금을 싣는 동안 독일군의 반격으로부터 트럭을 지켜라. 트럭이 최소 5대 생존해야 한다."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task_opt_sherman"
+msgid "Keep the Sherman operational."
+msgstr "Sherman을 가동 상태로 유지하라."
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task_secret"
+msgid "Secret objective #1"
+msgstr "비밀 목표 1"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/task_secret_completed"
+msgid "Secret objective #1: Intercept and capture the supply truck"
+msgstr "비밀 목표 #1: 보급 트럭을 가로채 노획하라"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/timer1"
+msgid "The transport column will arrive in:"
+msgstr "수송 종대 도착까지:"
+
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/timer2"
+msgid "Time remaining to load the gold:"
+msgstr "금을 싣는 데 남은 시간:"
+
+#, boost-format
+msgctxt "mission/single/06-bonus/1945_04_yugoslavia/trucks"
+msgid "%1% transport trucks operational. "
+msgstr "수송 트럭 %1%대 가동 중."

@@ -113,8 +113,25 @@ namespace CtaToybox.Core
                     report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = swap });
                     enabled.Remove(e);
                 }
-                var shared = enabled.Where(e => e.Scope != "unit").ToList();
+                // 파일 사본(팩션 강화): 만들 수 있는 사본만 원본 위에 등록한다. 그래야 사본을 가리키는 수정이 사본 본문을 읽고, 빠진 사본은 "파일이 없다"로 막힌다
                 var items = new Dictionary<string, WorkItem>(StringComparer.Ordinal);
+                var goodCopies = new List<Edit>();
+                stack.SetCopies(null);
+                foreach (var e in enabled.Where(x => x.Kind == FileCopy.Kind).ToList())
+                {
+                    string bad = FileCopy.CheckTarget(stack, e.File, e.New) ?? (goodCopies.Any(c => SourceStack.ToVirtual(c.New) == SourceStack.ToVirtual(e.New)) ? "같은 사본이 이미 있다: " + e.New : null);
+                    enabled.Remove(e);
+                    if (bad != null) { report.Results.Add(new EditResult { Edit = e, Status = stack.FindReal(e.File ?? "") == null ? EditStatus.TargetMissing : EditStatus.Invalid, Message = bad }); continue; }
+                    goodCopies.Add(e);
+                }
+                stack.SetCopies(goodCopies.Select(e => new KeyValuePair<string, string>(e.New, e.File)));
+                foreach (var e in goodCopies)
+                {
+                    var item = ItemFor(items, SourceStack.ToVirtual(e.New), stack.Find(e.New));
+                    item.Always = true;
+                    item.Edits.Add(e);
+                }
+                var shared = enabled.Where(e => e.Scope != "unit").ToList();
                 foreach (var group in shared.GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
                 {
                     var source = stack.Find(group.Key);
@@ -175,6 +192,47 @@ namespace CtaToybox.Core
                     report.Results.AddRange(results);
                 }
                 foreach (var plan in plans) manifest.Files.AddRange(plan.Produced);
+
+                // 1-3a. 쓴 아이템 파일이 {from}으로 물려받는 파일(원형 사슬)을 이긴 판 그대로 같이 쓴다(2026-10-17 게임이 꺼졌다: 출력 모드의 사본
+                // set/stuff/gun/20mm_flak38_x4_2_ctb_ger의 {from "20mm_flak38_2"}가 "pattern not found". 원형은 MACE Wunderwaffe 폴더에만 있었다)
+                var writtenPaths = new HashSet<string>(manifest.Files.Select(f => f.Path.Substring("resource/".Length)), StringComparer.OrdinalIgnoreCase);
+                foreach (string written in writtenPaths.Where(p => p.StartsWith("set/stuff/", StringComparison.Ordinal)).OrderBy(p => p, StringComparer.Ordinal).ToList())
+                {
+                    var traced = (tracer ?? (tracer = new UnitTracer(stack))).Trace(written);
+                    if (traced == null) continue;
+                    foreach (var level in traced.From)
+                    {
+                        string parent = SourceStack.ToVirtual(level.File ?? "");
+                        if (parent.Length == 0 || writtenPaths.Contains(parent)) continue;
+                        var parentSource = stack.FindReal(parent);
+                        if (parentSource == null) continue;
+                        var produced = new List<BuildManifestFile>();
+                        string error;
+                        try { error = StageItem(new WorkItem { Output = parent, Source = parentSource, Always = true }, stage, previous, new List<EditResult>(), produced); }
+                        catch (Exception ex) { error = ex.Message; }
+                        if (error != null) report.FileErrors.Add(parent + ": " + error);
+                        else { manifest.Files.AddRange(produced); writtenPaths.Add(parent); }
+                    }
+                }
+
+                // 1-3. 쓴 파일의 폴더에 .presets가 있으면 이긴 판을 그대로 같이 쓴다(2026-10-17 게임이 꺼졌다: 출력 모드의 사본
+                // set/stuff/bazooka/raketenwerfer43_ctb_ger가 MACE pak의 bazooka/.presets에만 있는 "penetration_short"를 "define not found").
+                // 같은 내용이라 다른 파일이 읽는 정의는 그대로다
+                var presetDirs = manifest.Files.Select(f => f.Path.Substring("resource/".Length)).Where(p => p.Contains('/'))
+                    .Select(p => p.Substring(0, p.LastIndexOf('/'))).Distinct(StringComparer.OrdinalIgnoreCase).OrderBy(d => d, StringComparer.Ordinal).ToList();
+                foreach (string dir in presetDirs)
+                {
+                    string presetPath = dir + "/.presets";
+                    if (manifest.Files.Any(f => string.Equals(f.Path, "resource/" + presetPath, StringComparison.OrdinalIgnoreCase))) continue;
+                    var presetSource = stack.FindReal(presetPath);
+                    if (presetSource == null) continue;
+                    var produced = new List<BuildManifestFile>();
+                    string error;
+                    try { error = StageItem(new WorkItem { Output = presetPath, Source = presetSource, Always = true }, stage, previous, new List<EditResult>(), produced); }
+                    catch (Exception ex) { error = ex.Message; }
+                    if (error != null) report.FileErrors.Add(presetPath + ": " + error);
+                    else manifest.Files.AddRange(produced);
+                }
 
                 // 2. 이전 생성물과 이번 생성물을 모두 적은 목록 파일을 먼저 쓴다
                 var fresh = new HashSet<string>(manifest.Files.Select(x => x.Path), StringComparer.OrdinalIgnoreCase);
@@ -362,8 +420,14 @@ namespace CtaToybox.Core
                 results.AddRange(copyResults);
                 copiedCount = copyResults.Count(r => r.Status == EditStatus.Applied);
             }
+            // 파일 사본은 이 파일을 쓰는 것 자체다(item.Always)
+            foreach (var e in item.Edits.Where(x => x.Kind == FileCopy.Kind))
+            {
+                results.Add(new EditResult { Edit = e, Status = EditStatus.Applied });
+                copiedCount++;
+            }
             var usable = new List<Edit>();
-            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind))
+            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind && x.Kind != FileCopy.Kind && x.Kind != AddLine.Kind))
             {
                 string ruleWarning;
                 string ruleError = e.New == null ? null : ValueRules.CheckNewValue(item.Source.VirtualPath, e.Old, e.New, out ruleWarning);
@@ -391,6 +455,21 @@ namespace CtaToybox.Core
             int count = reported.Count(r => r.Status == EditStatus.Applied) + copiedCount;
             var appended = item.Appends.Count == 0 ? new List<Edit>() : Append(ref patched, item, kind, results);
             count += appended.Count;
+            // 줄 더하기(팩션 강화)는 값 고치기를 다 한 본문에 넣는다. 넣은 줄이 같은 경로의 다른 줄 순번을 밀지 않게
+            var lineEdits = item.Edits.Where(e => e.Kind == AddLine.Kind).ToList();
+            if (lineEdits.Count > 0)
+            {
+                var lineResults = new List<EditResult>();
+                if (LuaTable.IsLua(item.Source.VirtualPath)) lineResults.AddRange(lineEdits.Select(e => new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "Lua 파일에는 줄을 더하지 않는다" }));
+                else
+                {
+                    foreach (var e in lineEdits.Where(e => !TextCodec.CanEncode(e.New ?? "", kind)))
+                        lineResults.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = "넣을 줄에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다: " + e.New });
+                    patched = AddLine.Apply(patched, lineEdits.Where(e => TextCodec.CanEncode(e.New ?? "", kind)), lineResults);
+                }
+                results.AddRange(lineResults);
+                count += lineResults.Count(r => r.Status == EditStatus.Applied);
+            }
             if (count == 0 && item.Raw.Count == 0 && !item.Always) return null;
 
             string relative = "resource/" + item.Output;

@@ -1,0 +1,169 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_tali-ilhantala)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/date"
+msgid "1944년 6월 26일 · 핀란드 탈리일란탈라, 포르티노이코 교차로"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/men"
+msgid "병사를 모두 잃었다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/name"
+msgid "북방의 도박"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/name_big"
+msgid "북방의 도박"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/01"
+msgid "카렐리야에 돌아온 것을 환영한다, 제군들. 소련군이 곧 대규모 공세를 시작한다. 우리는 놈들을 그 자리에서 막아 세워야 한다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/02"
+msgid "우리의 주 임무는 북쪽 교차로를 지키는 것이다. 이 도로들은 우리 군 병참의 생명줄이다. 무슨 일이 있어도 사수해라!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/03"
+msgid "적은 남쪽에서 올 것으로 예상된다. 하지만 이 지형에서는 진격이 느리니, 그동안 진지를 보강할 시간이 있다. 시간을 현명하게 써라!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/04"
+msgid "소련군에게서 개조해 온 철도포를 포병 지원용으로 쓸 수 있다. 공군도 지원 가능하지만, 날씨가 나아져야 출격할 수 있다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/05"
+msgid "적이 접근 중이다! 방어 태세를 갖춰라! 카렐리야의 싸움이 어떤 것인지 보여 줘라!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/06a"
+msgid "또 다른 적 부대가 너희 진지로 접근하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/06b"
+msgid "적이 또 한 차례 공격을 개시했다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/06c"
+msgid "소련군이 다시 몰려온다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/06d"
+msgid "주의! 적의 다음 부대가 접근 중이다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/07"
+msgid "잘했다, 제군들! 적을 충분히 묶어 둔 덕에 우리 기갑 증원이 도착했다. 자랑스럽게 소개한다. 기갑사단이다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/08"
+msgid "기갑 차량 분견대를 맡아 적을 전장에서 몰아내라. 출발선까지의 완전한 후퇴가 아니면 받아들이지 않겠다. 전진, 승리를 향하여!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/narrator/officer/fail"
+msgid "적이 교차로에 도달했다! 즉시 섬멸해라. 명령을 이행하지 못하고 있다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/outro_completed"
+msgid "대승이다! 자네의 전술 능력은 의심할 여지가 없고, 우리는 다시 한 번 적에게 큰 타격을 입혔다. 우리가 포위당하는 대신 적을 포위했다. 게다가 VKT 선은 여전히 온전하니 우리는 내일도 싸울 수 있다. 진급에 필요한 서류를 올리겠다. 훌륭했다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/outro_failed"
+msgid "VKT 선이 돌파당했다! 소련 기갑 선봉이 이마트라-라펜란타-수우패알라 선을 향해 질주하고, 두 번째 공격 부대는 후방의 다른 VKT 선 진지를 마음대로 공격해 여단에 여단을 포위하며 돌파구를 연달아 연다. 만네르헤임 원수에게는 항복 말고 길이 없다."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/place"
+msgid "제48예거 연대 및 핀란드 기갑사단"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/203"
+msgid "203 H/17"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/blenheim"
+msgid "Blenheim Mk.1"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/bt42"
+msgid "BT-42"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/eng"
+msgid "중장 공병"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/inf"
+msgid "예거 분대"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/isu152"
+msgid "JSU 152"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/kv1"
+msgid "KV-1A (후기)"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/mortar"
+msgid "81 Krh/36"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/pak9738"
+msgid "75 PstK/97-38"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/resupply"
+msgid "재보급 트럭"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/stug"
+msgid "Stu 40 G"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/t34"
+msgid "T-34/84"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/t50"
+msgid "T-50"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/reinf/tm1"
+msgid "180mm TM-1 포격"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/skip"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/story"
+msgid " 1944년 6월 26일. 한 시간에 걸친 소련군의 포격과 대지 공격기 편대의 공습이 끝나자, 소련군의 대규모 공세가 탈리 마을에서 쏟아져 나온다. 레이티모예르비 호수 서쪽 어딘가, 쿠오칼란부오렛 산마루를 파고 만든 방어 진지 앞에서 소련군의 공격이 멈춰 선다. 이곳은 JR48 보병 연대가 지키고 있다.\n\n 소련 전차가 거세게 밀고 들어오면서 핀란드군은 포위될 위험에 처해 위기가 닥친다. 방어군의 생존이 걸려 있다. 그뿐 아니다. 이 공격이 성공하면 VKT 선에 틈이 벌어져 더 많은 부대가 위태로워진다! 반격이 준비되었고, 기갑사단이 오후에 도착하도록 전진 중이다.\n\n 이 임무에서 너는 고지 방어를 지휘한다. 아군 전차가 도착할 때까지 소련 기갑을 막아 내야 한다. 마을의 방어선을 지키지 못하면 교차로의 두 번째 방어선을 써라. 지형을 이용해라. 저 전차들을 멈춰 세워야 한다!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/task1"
+msgid "적의 공격에 대비하라!"
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/task2"
+msgid "기갑사단이 도착할 때까지 교차로를 무슨 수를 써서라도 사수하라."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/task3"
+msgid "기갑 증원과 함께 반격해 적을 전장에서 몰아내라."
+msgstr ""
+
+msgctxt "mission/single/03-fin/1944_06_tali-ilhantala/timer"
+msgid "적 도착까지 남은 시간:"
+msgstr ""

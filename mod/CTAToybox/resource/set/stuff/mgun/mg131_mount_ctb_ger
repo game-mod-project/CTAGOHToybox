@@ -1,0 +1,22 @@
+{from "pattern mgun"
+	{tag "gun aa"}
+	{inventory {size 7 3}}
+	{filling "hmgun_ger" 200}
+	{fireSound "smallarms/s3/d1/GER/MG13/Head/"}
+	{fireSoundclose "smallarms/s3/3p/GER/MG13/"}
+	{reloadSound "blank"}
+	{calibre 12.7}
+	{mass 34}
+
+	("fire rate" rpm(900))
+	("velocity" mps(730))
+
+	("reload_belt")
+
+	{projectileDamageTable {12.5 25} {62.5 16} {125 10} {187.5 5} {250 3}}
+
+	("burst_medium")
+	("spreading_medium")
+	{traceFreq 4}
+	{rechargeTime 4.25}
+}

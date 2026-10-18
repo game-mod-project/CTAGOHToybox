@@ -1,0 +1,115 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 20mm
+	; wood logs 15mm
+
+	("tank_medium_tier1")
+
+	("shield" args "shield1" 10)
+	("shield" args "shield2" 10)
+	("shield" args "shield3" 10)
+	("shield" args "shield4" 10)
+	("shield_track" args "detail8" 50)
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(50))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull front
+		{thickness	75
+			{front 125}
+			{top 63}		; Glacis
+			{rear 25}
+			{bottom 38}
+		}
+	}
+	{volume "body2"			; middle_lower
+		{thickness 75
+			{top 25}
+			{bottom 38}
+			{rear 25}
+		}
+	}
+	{volume "body3"			; Superstructure upper 
+		{thickness 75
+			{front 125}
+			{top 25}
+		}
+	}
+	{volume "body4"			; Superstructure Front, Left
+		{thickness 75
+			{front 125}
+			{top 63}
+		}
+	}
+	{volume "body5"			; Superstructure Front, Left, Top
+		{thickness 75
+			{top 25}
+		}
+	}
+	{volume "body6"			; Superstructure Front, Right
+		{thickness 75
+			{front 125}
+			{top 25}
+		}
+	}
+	{volume "body7"			; left box
+		{thickness 75}
+	}
+	{volume "body8"			; left slope
+		{thickness 75
+			{bottom 25}
+		}
+	}
+	{volume "body9"			; right slope
+		{thickness 75
+		{bottom 25}
+		}
+	}
+	{volume "engine1"		; main
+		{thickness 75
+			{front 25}
+			{top 40}
+			{rear 75}
+			{bottom 38}
+		}
+	}
+	{volume "engine2"			; right cooler box
+		{thickness 75
+			{left 88}
+		}
+	}
+	{volume "engine3"			; left cooler box
+		{thickness 75
+			{left 88}
+		}
+	}
+	{volume "engine4"			; rear cooler box
+		{thickness 75}
+	}
+	{volume "mantlet"
+		{thickness 125}
+		{tags "armor"}
+	}
+	{volume "barrel1"
+		{thickness 125}
+		{tags "gun"}
+		{component "gun"}
+	}
+	{volume "armor1"
+		{thickness 75}
+	}
+	{volume "armor2"
+		{thickness 75}
+	}
+
+	{component "shield1" {tags "cut_part"}}
+	{component "shield2" {tags "cut_part"}}
+	{component "shield3" {tags "cut_part"}}
+	{component "shield4" {tags "cut_part"}}

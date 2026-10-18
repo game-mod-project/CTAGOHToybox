@@ -1,0 +1,32 @@
+;_________________________________________
+; US whizbang Rocket Artillery
+;=========================================
+
+
+{from "pattern reactive"		; "M4 Whizbang"
+	{filling "ammo 114mm_m12a1" 1}
+	{fillingVisible "rocket"}
+	{fireSound "reactive/katy_burst/"}
+	{calibre 114}
+	("rocket_artillery")
+
+	{spreading
+		{radiusTable
+			{0 0}
+			{50 1}
+			{150 2.5}
+			{179.99 5} ;// max range, 3.7km
+			{180 100}
+			{220 200}
+		}
+	}
+
+	{gravity 1}
+
+	{minRange 1}
+	{range 180 180} ;//3.7km
+	("velocity" mps(270))
+	("reload time" seconds(6))
+	("fire rate" rpm(120)) ;// one rocket every 0.5s in "ripple fire". 30s to fire full salvo
+	{rechargeTime 60}
+}

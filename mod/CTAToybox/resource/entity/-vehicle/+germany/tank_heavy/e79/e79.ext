@@ -1,0 +1,155 @@
+;SDL
+
+
+	("shield" args "shieldl1" 30)
+	("shield" args "shieldl2" 30)
+	("shield" args "shieldl3" 30)
+	("shield" args "shieldl4" 30)
+
+	("shield" args "shieldl5" 150)
+	("shield" args "shieldl6" 150)
+
+	("shield" args "shieldr1" 30)
+	("shield" args "shieldr2" 30)
+	("shield" args "shieldr3" 30)
+	("shield" args "shieldr4" 30)
+
+	("shield" args "shieldr5" 150)
+	("shield" args "shieldr6" 150)
+
+	("tracks" repair(30) thickness(150))
+	("gun" repair(30) thickness(150))
+
+	("ammo" args "inventory")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body"			
+		{thickness 240
+			{front 540}		
+			{top 150}		
+			{rear 240}
+			{bottom 150}
+		}
+	}
+	{volume "body1"			
+		{thickness 240
+			{front 540}		
+			{bottom 450}
+		}
+	}
+	{volume "engine"			
+		{thickness 105}
+	}
+	{volume "engine1"		
+		{thickness 240}
+	}
+	{volume "engine2"		
+		{thickness 240}
+		{CastSteel 0.8063}
+	}
+	{volume "engine3"		
+		{thickness 150
+			{front 165}
+			{top 105}
+			{rear 165}
+			{bottom 135}
+		}
+	}
+	{volume "engine5"		
+		{thickness 150
+			{front 165}
+			{top 105}
+			{rear 165}
+			{bottom 135}
+		}
+	}
+	{volume "turret"
+		{thickness 240
+			{front 600}
+			{top 105}
+		}
+	}
+	{volume "turret1"
+		{thickness 240
+			{front 600}
+			{top 105}
+		}
+	}
+	{volume "turret2"
+		{thickness 240
+			{top 105}
+			{rear 120}
+		}
+	}
+	{volume "turret4"
+		{thickness 300
+			{front 600}  
+		}
+	}
+	{volume "turret5"
+		{thickness 240
+			{front 600}  
+			{top 105}
+		}
+	}
+	{volume "mantlet"
+		{thickness 660
+			{front 840}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"            ; Hull MG
+		{thickness 540}
+		{CastSteel 0.8063}
+		{component "body1"}
+	}
+
+	;("armor_heavy" turret(200 100 80 40) body(180 80 80 40)) ;
+	;("armor_mantlet" t(200))
+	;("armor_engine"  t(80 80 40 40))
+
+	{Volume "angle1"
+		{thickness 540}
+	}
+	{Volume "angle"
+		{thickness 540}
+	}
+	{Volume "fenders"
+		{thickness 540}
+	}
+	{Volume "tail1"
+		{thickness 240}
+	}
+	{Volume "tail2"
+		{thickness 240}
+	}
+	{Volume "tail3"
+		{thickness 240}
+	}
+	{Volume "tail4"
+		{thickness 240}
+	}
+	{Volume "turtail1"
+		{thickness 300}
+	}
+	{Volume "turtail2"
+		{thickness 300}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}

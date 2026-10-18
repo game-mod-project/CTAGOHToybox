@@ -1,0 +1,54 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 30mm
+	; gun 30mm
+	; spare tracks 30mm
+	; schürzen 5mm
+
+
+	("shield_track" args "shieldl1" 90)
+	("shield_track" args "shieldl2" 90)
+	("shield_track" args "shieldl3" 90)
+	("shield_track" args "shieldl4" 90)
+	("shield_track" args "shieldl5" 90)
+	("shield_track" args "shieldl6" 90)
+	("shield_track" args "shieldl7" 90)
+	("shield_track" args "shieldr1" 90)
+	("shield_track" args "shieldr2" 90)
+	("shield_track" args "shieldr3" 90)
+	("shield_track" args "shieldr4" 90)
+	("shield_track" args "shieldr5" 90)
+	("shield_track" args "shieldr6" 90)
+	("shield_track" args "shieldr7" 90)
+
+	("tracks" repair(30) thickness(90))
+	("gun" repair(30) thickness(90))
+
+	("ammo" args "inventory")
+
+	{volume "body1"
+		{thickness 360
+			{front 480}
+			{top 120}
+			{rear 360}
+			{bottom 120}
+		}
+	}
+	{volume "body2"
+		{thickness 360
+			{front 480}
+			{top 120}
+			{rear 360}
+			{bottom 120}
+		}
+	}
+	{volume "engine"
+		{thickness 120}
+	}
+	{volume "turret"
+		{thickness 480
+			{front 840}
+			{top 120}
+		}
+	}

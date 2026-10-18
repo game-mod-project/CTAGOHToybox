@@ -1,0 +1,32 @@
+;_________________________________________
+; German 50mm Air to Ground cannon
+;=========================================
+
+
+{from "pattern gun"			; "Me 262"
+	{filling "bulletger_50_l42 apche" 31}
+	{fireSound "cannon/s2/d1/Shared/Cannon_50to57mm_HV/"}
+	{fireSoundclose "cannon/s1/1p/Shared/Cannon/"}
+	{reloadSound "interior/large/auto_reload_interior"}
+	("range_aircraft_gun")
+	{cursor "ironsights/aa"}
+	{range 300 300}
+	{calibre 50}
+
+	("fire rate" rpm(150))
+	("reload time" seconds(60))
+
+	("armor health" damage(45))
+	("57_slope_multipliers")
+ 	("velocity" mps(550))		
+		
+	("armor health" damage(180))
+ 
+	("penetration_long" shell(apche) range(300) a(106) b(83) c(65) d(50) e(39))
+
+	("accuracy_direct_auto" r1(0.001) range_ap(300) range_he(300) range_heat(300))
+
+	{spreading
+		{BurstAccuracy 500}
+	}
+}

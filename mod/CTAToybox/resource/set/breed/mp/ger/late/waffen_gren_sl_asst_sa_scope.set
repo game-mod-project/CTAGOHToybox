@@ -1,0 +1,39 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_waff_43_sturm_g43"}
+	{portrait "ger_grenadier"}
+	{icon "autorifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m43_camo3_band_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_standard")
+		("sniper_vision")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "g43_scope_ctb_ger" filling "rifle_ger gewehr ammo" 20}
+		{item "rifle_ger gewehr ammo" 100}
+		{item "rifle_ger clip ammo" 300 50}
+
+		{item "m24 grenade" 4.5 1}
+		{item "m24_smoke grenade" 4.5 1}
+		{item "m24_geballteladung grenade" 2}
+		{item "panzerfaust_30_ctb_ger weapon" 1 1 filled}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+		{item "ger_fieldcap_camo"}
+
+		{in_hands 0}
+	}
+}

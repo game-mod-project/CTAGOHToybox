@@ -1,0 +1,68 @@
+;SDL
+;Tanks of comparable role - IS-3
+
+	("tank_heavy_tier2")
+
+	("gun" repair(30) thickness(150))
+	("tracks" repair(30) thickness(150))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	("shield_tear" args "shieldl1" 75)	
+	("shield_tear" args "shieldl2" 75)	
+	("shield_tear" args "shieldl3" 75)	
+	("shield_tear" args "shieldl4" 75)	
+
+	("shield_tear" args "shieldr1" 75)	
+	("shield_tear" args "shieldr2" 75)	
+	("shield_tear" args "shieldr3" 75)		
+	("shield_tear" args "shieldr4" 75)		
+
+	{volume "body1"			
+		{thickness 300
+			{front 420}		
+			{top 120}		
+			{rear 240}
+			{bottom 120}
+		}
+	}
+	{volume "body2"			
+		{thickness 300
+			{front 420}		
+			{top 120}		
+			{rear 240}
+			{bottom 120}
+		}
+	}
+	{volume "engine"		; Hull
+		{thickness 120
+			{front 240}
+			{rear 180}
+			{top 90}
+			{bottom 120}
+		}
+	}
+	{volume "turret"
+		{thickness 300
+			{front 420}
+			{top 120}
+			{rear 240}
+		}
+	}
+	{volume "mantlet"
+		{thickness 720}
+		{CastSteel 0.8063}
+	}
+
+	;("armor_heavy" turret(140 100 80 40) body(120 100 80 40))
+	;;("armor_heavy" turret(1 4 8 10) body(1 4 8 10))
+	;("armor_mantlet" t(140))
+	;("armor_engine"  t(40)) 
+

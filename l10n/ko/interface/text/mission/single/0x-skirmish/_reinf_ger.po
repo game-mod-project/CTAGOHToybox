@@ -1,0 +1,134 @@
+# source: vanilla interface/text/mission/single/0x-skirmish/_reinf_ger.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (menu_ger)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzglehr_sq"
+msgid "Pz-Lehr Pz.Grenadier squad"
+msgstr "판처 레어 판처그레나디어 분대"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_sq"
+msgid "Pz-Lehr Pz.Aufklarer squad"
+msgstr "판처 레어 판처 아우프클레러 분대"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzlehraufk_ht"
+msgid "Pz-Lehr Armored Pz.Aufklarer"
+msgstr "판처 레어 장갑 판처 아우프클레러"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_sq"
+msgid "Pz-Lehr Pz.Sturmgrenadier squad"
+msgstr "판처 레어 판처슈투름그레나디어 분대"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzlehstgr_ht"
+msgid "Pz-Lehr Armored Pz.Sturmgrenadier"
+msgstr "판처 레어 장갑 판처 슈투름그레나디어"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_sq"
+msgid "Pz-Lehr Pz.Pionier squad"
+msgstr "판처 레어 판처피오니어 분대"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/pzlehpio_ht"
+msgid "Pz-Lehr Armored Pz.Pionier"
+msgstr "판처 레어 장갑 판처피오니어"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_1"
+msgid "Sd.Kfz 234/1 (2cm)"
+msgstr "Sd.Kfz 234/1 (2cm)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_3"
+msgid "Sd.Kfz 234/3 (7.5cm)"
+msgstr "Sd.Kfz 234/3 (7.5cm)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz250a_9"
+msgid "Sd.Kfz 250/9 (2cm)"
+msgstr "Sd.Kfz 250/9 (2cm)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_16"
+msgid "Sd.Kfz 251/16 Ausf. D (14mm Flamm)"
+msgstr "Sd.Kfz 251/16 Ausf. D (14mm Flamm)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/artymen"
+msgid "Artillerymen"
+msgstr "포병"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_22"
+msgid "Sd.Kfz 251/22 Ausf.D (7.5cm PaK 40)"
+msgstr "Sd.Kfz 251/22 Ausf.D (7.5cm PaK 40)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/105mm_lefh18_40"
+msgid "10.5cm LeFH 18/40"
+msgstr "10.5cm LeFH 18/40"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz7_1"
+msgid "Sd.Kfz 7/1 (2cm)"
+msgstr "Sd.Kfz 7/1 (2cm)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz234_4"
+msgid "Sd.Kfz 234/4 (7.5cm PaK 40)"
+msgstr "Sd.Kfz 234/4 (7.5cm PaK 40)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz7_2"
+msgid "Sd.Kfz 7/2 (3.7cm FlaK)"
+msgstr "Sd.Kfz 7/2 (3.7cm FlaK)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_21"
+msgid "Sd.Kfz 251/21 Ausf.D (15mm Drilling)"
+msgstr "Sd.Kfz 251/21 Ausf.D (15mm Drilling)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/mg42_lafette"
+msgid "Lafette MG 42"
+msgstr "Lafette MG 42"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/hintartybonus"
+msgid "Artillery strike of the selected area"
+msgstr "선택한 지역에 포병 사격"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/artystrike_heavy"
+msgid "Heavy Artillery Barrage"
+msgstr "대형 포병 포격"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/artystrike_heavy"
+msgid "Heavy artillery barrage"
+msgstr "대형 포병 포격"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/artystrike"
+msgid "Artillery barrage"
+msgstr "포격"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz251d_1_stuka"
+msgid "Sd.Kfz 251/1 Ausf.D (Wurfrahmen 40)"
+msgstr "Sd.Kfz 251/1 Ausf.D (Wurfrahmen 40)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/hummel"
+msgid "Hummel"
+msgstr "Hummel"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/wespe"
+msgid "Wespe"
+msgstr "Wespe"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/grille_k"
+msgid "Grille Ausf.K (15cm)"
+msgstr "Grille Ausf.K (15cm)"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/wirbelwind"
+msgid "FlakPz.IV Wirbelwind"
+msgstr "FlakPz.IV Wirbelwind"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/ostwind"
+msgid "FlakPz.IV Ostwind"
+msgstr "FlakPz.IV Ostwind"
+
+msgctxt "mission/single/0x-skirmish/menu_ger/jagdpanzer4_l48"
+msgid "Jagdpanzer IV"
+msgstr "Jagdpanzer IV"

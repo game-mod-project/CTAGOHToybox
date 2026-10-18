@@ -1,0 +1,9 @@
+{from "weapon panzershreck_54"
+	{filling "ammo panzershreck" 6}
+	{inventory {noView}}
+	{rechargeTime 8}
+	{recoveryTime 1}
+	{mass 35}
+	{fillingVisible "rocket"}
+}
+

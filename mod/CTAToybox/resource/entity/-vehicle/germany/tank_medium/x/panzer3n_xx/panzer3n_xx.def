@@ -1,0 +1,63 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "panzer3n_xx.mdl"}
+
+	{volume "armor_hull"
+		{thickness 50}
+		{able {holed}}
+		{tags "armor"}
+	}
+	{volume "barrel"
+		{thickness 63}
+	}
+	{volume "basket"
+		{thickness 13}
+	}
+	{volume "body1"			; Hull
+		{thickness	75
+			{front 125}
+			{top 63}		; Glacis
+			{rear 25}
+			{bottom 40}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 75
+			{front 125}
+			{top 40}
+			{rear 25}
+		}
+	}
+	{volume "engine"
+		{thickness 75
+			{front 25}
+			{top 40}
+			{rear 125}
+			{bottom 40}
+		}
+	}
+	{volume "turret1"
+		{thickness 75
+			{front 125}
+			{top 25}
+		}
+	}
+	{volume "turret2"
+		{thickness 125}
+	}
+	{volume "mantlet1"
+		{thickness 75
+			{front 125}
+		}
+	}
+	{volume "cupola"
+		{thickness 125
+			{top 25}
+		}
+	}
+	{Volume "turret"
+		{thickness 53}
+	}
+
+	("tracks" thickness(50))
+}

@@ -1,0 +1,25 @@
+;_________________________________________
+; German late-war long-barreled Heavy AT gun
+;=========================================
+
+
+{from "pattern gun"			; "Sturer Emil"
+	{filling "bulletger_128"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_105to130mm/"}
+	{fireSoundclose "cannon/s4/3p/Shared/Cannon_105to130mm/"}
+	{reloadSound "tank/1p/large/"}
+	{range 230 230}
+	{calibre 128}
+
+	("reload time" seconds(11))
+
+	("velocity m/s" ap(880) apcr(1) he(750) heat(1))
+	("armor health" damage(380))
+	("armor health custom" shell(apcbche) damage(375) velocity(880) filler(786))
+
+	; Pzgr.
+	("penetration_long" shell(apche) range(230) a(248) b(234) c(220) d(207) e(195) f(181))
+
+
+	("accuracy_direct" r1(0.55) range_ap(230) range_he(230) range_heat(230))
+}

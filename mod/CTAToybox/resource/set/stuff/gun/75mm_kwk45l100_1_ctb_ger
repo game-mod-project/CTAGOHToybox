@@ -1,0 +1,36 @@
+;_________________________________________
+; Long barreled German medium AT gun
+;=========================================
+
+
+{from "pattern gun"			; L/100 "E-50" (物理重平衡版)
+	{filling "bulletger_75_l70"}
+	{fireSound "cannon/s3/d1/Shared/Cannon_75to76mm_HV/"}
+	{fireSoundclose "cannon/s2/1p/Shared/"}
+	{reloadSound "tank/1p/medium_long/"}
+	("range_220")
+	{calibre 75}
+
+	("reload time" seconds(2.25))
+
+	("velocity m/s" ap(1050) apcr(1280) he(945) heat(1))
+	("armor health" damage(200))
+	("armor health custom" shell(apcbche) damage(200) velocity(1050) filler(28.9))
+	("armor health custom" shell(apcr) damage(200) velocity(1280) filler(12))
+	("75_ger_slope_multipliers")
+
+	; Pzgr.39/42 
+	("penetration_long" shell(apcbche) range(220) a(220) b(205) c(185) d(165) e(145))
+
+	; Pzgr.40/42 
+	("penetration_long" shell(apcr) range(220) a(285) b(250) c(205) d(160) e(120))
+
+	{parameters "he"
+		{range 220 220}
+	}
+
+	; He
+	("penetration_long" shell(he) range(220) a(13) b(12) c(11) d(11) e(11))
+
+	("accuracy_direct" r1(0.40) range_ap(220) range_he(220) range_heat(220))
+}

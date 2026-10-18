@@ -1,0 +1,335 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_pointe_du_hoc)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#, boost-format
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/arty_progress"
+msgid "곡사포 6문 중 %1%문 파괴."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/date"
+msgid "1944년 6월 6일 · 노르망디, 푸앵트 뒤 오크"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/defend"
+msgid "독일군 반격 도착까지:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/maybe_hq_hold"
+msgid "본부로 후퇴해 방어선을 강화하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/maybe_supplies"
+msgid "가능한 한 많은 보급 상자를 회수하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/mission_101"
+msgid "서쪽 해안에 고립된 제101공수사단 병사 두 명을 구출하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/mission_artillery"
+msgid "포를 찾아 무력화하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/mission_battery"
+msgid "독일군 수비대를 소탕하고 포대를 점령하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/mission_beach"
+msgid "절벽을 올라라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/mission_defense"
+msgid "오마하 해변의 구원군이 도착할 때까지 버텨라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/mission_prep_defense"
+msgid "밤을 대비해 방어선을 구축하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/name"
+msgid "가장 긴 하루"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/name_big"
+msgid "가장 긴 하루"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/00"
+msgid "프랑스에 온 것을 환영한다, Lieutenant! 오버로드 작전의 성패는 자네에게 달렸다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/01"
+msgid "가자, 레인저들! 해변에 발판을 확보해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/02"
+msgid "절벽 곳곳에 사다리가 있다. 그걸로 꼭대기에 올라 저 요새를 공격해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/03"
+msgid "USS 새털리에 신호를 보내 함포 사격으로 독일군을 포격하게 할 수도 있다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/04"
+msgid "젠장! 위에 독일군 20mm 포가 아직 멀쩡하다! 우리가 당하기 전에 어떻게든 해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/05"
+msgid "이제 경박격포 몇 문이 있다. 참호에 틀어박힌 독일군을 처리하는 데 써라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/06"
+msgid "이게 뭐야? 이 벙커들에 독일 놈들이 가짜 포를 놓아뒀군. 진짜 포는 다른 곳으로 옮긴 모양이다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/07"
+msgid "Lieutenant, 그 포들은 멀리 못 갔을 거다. 멀리 갔다면 정보부가 알아챘을 테니. 순찰대를 이끌고 저택으로 가서 포를 찾아라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/08"
+msgid "독일군이 언제든 반격해 올 것이다. 놈들을 막으려면 저지선을 쳐야 한다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/09"
+msgid "첫 번째 적 공격은 성공적으로 격퇴했다. 하지만 밤까지 이곳을 지킬 준비를 해야 한다. 방어 시설을 구축해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/10"
+msgid "놈들이 자기 박격포와 진지를 들여오고 있다. 조심해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/11"
+msgid "좋아, 기병대가 온다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/12"
+msgid "레인저가 앞장선다! 유럽 해방이 여기서 시작된다! 자랑스럽다, 제군들!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/naval"
+msgid "Colonel, 이제 USS 새털리의 제한적인 함포 지원을 요청할 수 있습니다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/nogunshere"
+msgid "수비대 쪽으로 진격해 더 내륙 깊숙이 수색해야 한다. 포를 찾아 파괴해라. 행운을 빈다, Lieutenant!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/narrator/p47"
+msgid "항공 지원이 오고 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/naval_arty"
+msgid "함포"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/naval_arty_hint"
+msgid "USS 새털리에 함포 지원을 요청하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/outro_completed"
+msgid "훌륭하게 해냈다!\n\n제29보병사단 구원군과 제743전차대대가 자리를 잡았으니, 이제 상처를 치료받고 마침내 쉴 수 있다. 자네의 노력으로 많은 미국인의 목숨을 구했다. 이 거대한 작전의 결정적 순간 중 하나로 틀림없이 기억될 것이다. 유럽 해방이 시작되었다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/outro_failed"
+msgid "실패했다!\n\n오마하와 유타 해변의 사상자를 막겠다는 우리 희망에 큰 타격이다. 독일군은 곧 155mm 포탄으로 해변을 두들기기 시작할 것이다. 다시 시도하는 수밖에 없다. 실패는 선택지가 아니다. 저 포대를 반드시 제거해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/place"
+msgid "제2레인저 대대"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/player/firstgundestroyed"
+msgid "첫 번째 포 파괴!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/player/gundestroyed"
+msgid "또 하나 못 쓰게 됐다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/player/gundestroyed_alt"
+msgid "독일군 포 하나 또 지웠다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/player/nogunshere"
+msgid "포대는 소탕했지만 포는 나무로 만든 가짜였다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/situation2"
+msgid "D데이, 21:30"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/situation3"
+msgid "교두보에 남은 독일군을 소탕하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/skip"
+msgid "준비 단계 건너뛰기"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/story"
+msgid " '오버로드 작전'이 시작되었다! 역사상 가장 큰 함대가 영국 해협을 건너 프랑스로 향하고 있다. 치밀한 계획과 정찰 끝에, 연합군이 해변을 강습하기 직전 '대서양 방벽'의 특정 부분을 제거하는 것이 필수적임이 밝혀졌다. 그중 하나가 푸앵트 뒤 오크의 독일 포대다. 푸앵트 뒤 오크를 기어올라 포대를 침묵시키는 것은 제2레인저 대대의 몫이다.\n\n 이 임무에서 너는 작은 해변에 상륙해 정상까지 싸우며 올라간다. 정상에 오르면 수비대를 몰아내고 포대를 찾아야 한다. 필요하면 USS 새털리와 미 공군의 지원을 받는다. 유럽 해방은 여기서 시작된다.\n\n행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/timer"
+msgid "예상되는 독일군 반격:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/timer2"
+msgid "저택 주변 방어 준비:"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/timer3"
+msgid "저택을 사수하라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/00"
+msgid "베이커 중대가 절벽 위 기관총에 너무 가까이 상륙한 모양이다. 기관총을 파괴해 저들이 공격을 시작할 수 있게 해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/01"
+msgid "잘했다, 제군들! 기관총이 제거됐다. 이제 베이커 중대가 공격에 들어간다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/02"
+msgid "저 Flak 포는 이제 우리를 괴롭히지 못한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/03"
+msgid "놈들이 물러나고 있다! 절벽은 이제 우리 것이다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/04"
+msgid "베이커 중대가 저쪽에서 두들겨 맞고 있다! 도움이 없으면 오래 못 버틴다. 저 독일군 박격포와 대공포를 제거해야 한다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/05"
+msgid "B 중대가 갈려 나가고 있다! 측면에서 지원해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/06"
+msgid "포가 전부 파괴됐다! 훌륭하다, 제군들!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/07"
+msgid "잘했다. 이 독일군 포는 분명 쓸모가 있을 거다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/08"
+msgid "독일군이 언제든 반격해 올 것이다. 참호를 파고 쓸 수 있는 건 뭐든 써서 전선을 지켜라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/09"
+msgid "서둘러, 해변에서 벗어나라! 가!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/10"
+msgid "저 독일군 기관총의 좋은 표적이다! 절벽에서 떨어져라! 움직여, 움직여!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/11"
+msgid "저 박격포가 우리를 도륙하기 전에 제거해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/12"
+msgid "여기서는 더 버틸 수 없다. 전원 참호선으로 후퇴해라! 챙길 수 있는 걸 챙기고 물러나라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/13"
+msgid "젠장, 놈들 차량이 너무 많다. 탁 트인 곳에서는 막을 수 없다! 후방 참호로 후퇴해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/14"
+msgid "독일 놈들이 우리 전선을 밀고 있다! 버텨라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/15"
+msgid "이봐, 영웅 나리. 우리한테도 공을 좀 남겨 둬."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/16"
+msgid "적이 뭘 들고 올지 모른다. 어떤 상황에도 대비해라. 모든 좁은 길목을 내려다보는 곳에 방어 진지를 구축해라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/17"
+msgid "독일군 전차가 더 있다! 바주카 로켓이 많지 않으니 한 발 한 발 헛되이 쏘지 마라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/18"
+msgid "독일군 박격포다! 엄폐해, 포탄이 온다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/19"
+msgid "독일 놈들이 기동 Flak 포를 끌고 온 모양이다! 전원 엄폐해라!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/20"
+msgid "버텨라, 제군들! 이 땅을 놈들에게 넘겨줄 수 없다! 증원이 오고 있다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/21"
+msgid "이게 끝이다, 더 물러날 곳이 없다. 여기가 우리의 마지막 저항선이다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/22"
+msgid "이제야 나타났군. 기병대가 드디어 왔어. 잘했다, 제군들. 한 명 한 명 모두가 자랑스럽다. 레인저가 앞장선다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/23"
+msgid "준비가 되면 도그 중대가 공격을 시작한다. 신호만 줘라."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/24"
+msgid "Lieutenant, 저기를 봐라! 공수부대원 몇 명이 발이 묶여 있는 것 같다. 낙하 지점에서 한참 떨어져 있다. 저 친구들을 도와야 한다!"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/gameover_defense_failed"
+msgid "적이 방어 진지를 점령했다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/gameover_units_dead"
+msgid "모든 유닛을 잃었다."
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/mission_fallback_beach"
+msgid "해변의 진지로 후퇴하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/mission_fallback_last_stand"
+msgid "가장 먼 참호선으로 후퇴하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/mission_mguns"
+msgid "절벽의 기관총 사수를 제거하라"
+msgstr ""
+
+#, boost-format
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/objective_progress_02_mguns"
+msgid "절벽에 남은 기관총 사수: %1%"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/opt01_101st"
+msgid "고립된 제101공수사단 병사 두 명을 구출하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/reinf_ally_assault"
+msgid "아군 부대에 공격을 명령하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/secret01_secret01_completed"
+msgid "비밀 목표 - 고장 난 대공포를 수리하라"
+msgstr ""
+
+msgctxt "mission/single/04-usa/1944_06_pointe_du_hoc/v2/secret01_secret01_shown"
+msgid "비밀 목표 1"
+msgstr ""

@@ -43,8 +43,8 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_150_l11 he" 14}
-			{item "geballteladung_3kg" 1}
+			{item "bulletger_150_l11 he" 70}
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -52,7 +52,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "150mm_sig33_2" filling "bulletger_150_l11 he" 1}
+			{weapon "150mm_sig33_2_ctb_ger" filling "bulletger_150_l11 he" 1}
 			{gunner "gunner"}
 			{charger "charger"}
 			("abm_dymamic"
@@ -66,15 +66,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_sm2") step(0.2) len(0.55))
 		("mobility_tank"
-			speed(47) ;----------Max speed when fully accelerated on road, km/h.
+			speed(71) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(8) ;---------Max speed in reverse on road, km/h.
 			traverse(30) ;-------Track traverse, per second, in degrees.
 			weight(11.5) ;-------Weight in Tonnes.
 			power(150) ;---------Engine Power, in hp.
 			track(4.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(218) ;----------Fuel capacity in Litres.
+			fuel(2180) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(140) ;---------Range in km, off-road.
+			range(1400) ;---------Range in km, off-road.
 		)
 	}
 

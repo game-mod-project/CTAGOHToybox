@@ -1,0 +1,189 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_06_03_brecourt_manor)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/date"
+msgid "1944년 6월 6일 · 프랑스 노르망디, 브레쿠르 저택."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/ending"
+msgid "브레쿠르 저택 공격의 성공은 유타 해변의 아군이 비교적 쉽게 상륙하는 데 일부 기여했다. 이 공격은 우세한 적을 상대하는 법을 가르치는 군사 훈련의 대표적인 연구 사례가 되었다. 제506 낙하산 보병 연대를 지휘한 로버트 싱크 대령은 딕 위터스를 명예 훈장 후보로 추천했다. 그러나 사단당 명예 훈장은 한 명뿐이라는 방침 때문에 수훈 십자장으로 낮춰졌다. 그럼에도 위터스와 스파이어스 Lieutenant는 훗날 브레쿠르 저택과 이어진 전투에서의 활약으로 세계적인 명성을 얻는다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/name"
+msgid "버텨라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/name_big"
+msgid "버텨라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator01"
+msgid "이지 중대, 잘 들어라! 유타 해변의 아군이 저 독일 놈들 포격에 두들겨 맞고 있다. 무기와 탄약만 빼고 전부 내려놔라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator02"
+msgid "우리의 주 목표는 적 곡사포 포대를 파괴하는 것이다. TNT나 가방형 폭약을 써라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator03"
+msgid "곡사포를 처리하고 나면 근처 저택의 독일군을 소탕해야 한다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator04"
+msgid ".30구경 기관총으로 엄호 사격 진지를 구축하고 측면에서 적 포대를 돌격한다. 바짝 붙어서 빠르고 강하게 친다."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator05"
+msgid "동쪽의 트인 들판은 피해라. 들키면 끝이다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator06"
+msgid "잘했다! 포를 파괴했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator07"
+msgid "들판 건너편의 MG42를 제거해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator08"
+msgid "좋아! 저 MG42는 더 이상 위협이 아니다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator09"
+msgid "이제 저택을 점령한다! 가자!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator10"
+msgid "저택은 우리 것이다! 잘했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator11"
+msgid "포 앞의 트인 들판에는 들어가지 마라! 해변 사격을 멈추고 우리를 쏘기 시작할 거다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator12"
+msgid "동쪽에서 적 보병이다! 저쪽에 .30구경 하나 끌고 와서 쏟아부어라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator13"
+msgid "이봐, 스파이어스 Lieutenant. 오늘 도그 중대가 도와줘서 고맙소."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator14"
+msgid "그래, 알았소. 여기 있소."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_gun1"
+msgid "하나 끝, 셋 남았다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_gun2"
+msgid "또 하나 파괴했다! 다음 포로 간다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_gun3"
+msgid "한 문 남았다! 가자!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_secret"
+msgid "아무것도 안 보이는군... 이 나무에 올라가면 더 잘 보일지도 모르겠다..."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs1"
+msgid "D중대다! 도움이 필요할 것 같아서 왔다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs2"
+msgid "이제 질렸나 보군!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs3"
+msgid "... 이봐, 담배 좀 있나?"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_speirs4"
+msgid "..."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_tank"
+msgid "이봐! 여기 좀 도와줘! 이 장애물을 날려 줘야 우리가 지나갈 수 있다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/narrator_tank2"
+msgid "고맙다! 꼼짝없이 당할 뻔했다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/outro_failed"
+msgid "주 목표를 완수하지 못했다! 적 포병을 침묵시키지 못해 유타 해변의 아군이 큰 피해를 입었다. 다시 도전하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/outro_completed"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/place"
+msgid "제101공수사단 \"비명을 지르는 독수리\""
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/situation1"
+msgid "브레쿠르 저택 - 08:35시"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/situation2"
+msgid "제506 낙하산 보병 연대 2대대 E(\"이지\") 중대"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/story"
+msgid "  1944년 6월 6일. '빅 점프'를 한 지 7시간쯤 지났다.\n\n  당신은 밤새 주 목표를 향해 이동하며 도중에 이지 중대 동료들과 다시 모였다. 동이 트자 생트마리뒤몽과 유타 해변 사이의 작은 마을 르 그랑 슈맹에 도착한다.\n\n  유타 해변 둑길 확보라는 주 임무는 아직 끝나지 않았다. 오늘 아침 중대 본부 분대는 행방불명이다. 따라서 당신의 명령은 대대 본부의 위터스 Lieutenant에게 보고하는 것이다.\n\n 행운을 빈다!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task1"
+msgid "적 곡사포를 파괴하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task2"
+msgid "적 기관총을 제압하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task3"
+msgid "저택을 점령하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task4"
+msgid "저지선을 파괴하라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_secret"
+msgid "(비밀 목표) 나무에 올라가라"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_secret_noncomp"
+msgid "(비밀 목표)"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_speirs"
+msgid "스파이어스 Lieutenant를 살려라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_winters"
+msgid "위터스 Lieutenant를 살려라."
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_heal_speirs"
+msgid "스파이어스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
+msgstr ""
+
+msgctxt "mission/single/041-usa_airborne/1944_06_03_brecourt_manor/task_heal_winters"
+msgid "위터스 Lieutenant가 과다 출혈로 죽기 전에 치료하라!"
+msgstr ""

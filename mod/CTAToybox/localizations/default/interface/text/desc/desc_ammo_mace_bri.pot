@@ -1,0 +1,37 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/ammo/bulleteng_75 ap"
+msgid "75mm M72 탄 [<c(ff6a00)>AP</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_75 apcbc"
+msgid "75mm M61 탄 [<c(ff6a00)>APCBC</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_75 he"
+msgid "75mm M48 포탄 [<c(ff1200)>HE</c>] <c(65696d)>L/55</c>"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_63 he"
+msgid "No.36M Mk.I 수류탄 '밀스 수류탄' [<c(ff1200)>HE</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_63 heat"
+msgid "소총 유탄 No.68/AT [<c(c9a6ff)>HEAT</c>]"
+msgstr ""
+
+msgctxt "desc/ammo/bulleteng_63 ic"
+msgid "No.76 특수 소이 수류탄 [<c(c9a6ff)>IC</c>]"
+msgstr ""

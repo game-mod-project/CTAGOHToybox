@@ -1,0 +1,38 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_blau_mg_asst"}
+	{portrait "ger_blau"}
+	{icon "rifle"}
+	{icon_priority 1}
+	{tags "soldier"}
+	{nationality spa}
+	{armors
+		{head ger_stalhelm_m39_blau_band_var2}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_4")("tier4_defense")
+		
+	
+	{"health" "750%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "k98_ctb_ger" filled}
+		{item "rifle_ger clip ammo" 300 25}
+		{item "mgun_ger belt ammo" 3000}
+
+		{item "m24 grenade" 2.5 1}
+		{item "m24_smoke grenade" 2.5 1}
+		{item "m24_geballteladung grenade" 1 1}
+
+		{item "bandage_ger" 9 1}
+		{item "shovel_ger"}
+		{item "ger_sidecap_m39_var2_inf"}
+
+		{in_hands 0}
+	}
+}

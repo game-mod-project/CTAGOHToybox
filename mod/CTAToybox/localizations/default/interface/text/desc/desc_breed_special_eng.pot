@@ -1,0 +1,106 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Finest Hour narrators\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.3\n"
+
+msgctxt "desc/human/narrator/eng-arnhem-frost"
+msgid "Lt. Col. 존 프로스트"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-arnhem-digby"
+msgid "Maj. 딕비 태섬워터"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-pegasus-howard"
+msgid "Maj. 존 하워드"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-pegasus-lovat"
+msgid "Brigadier 사이먼 프레이저, 러벳 경"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-pegasus-wood"
+msgid "Lt. 데이비드 우드"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-dyle-crosby"
+msgid "Cpl. 스튜어트 크로스비"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-dyle-carter"
+msgid "Cpt. 로버트 카터"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-dyle-williams"
+msgid "Lt. 마이크 윌리엄스"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-dunkirk-ingram"
+msgid "Maj. 올리 잉그럼"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-dunkirk-shaw"
+msgid "Lt. 켄 쇼"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-dunkirk-greenwood"
+msgid "Sgt. 글렌 그린우드"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-varsity-para-officer"
+msgid "Cpt. 새뮤얼 라우스"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-varsity-para-soldier"
+msgid "Sgt. 플레처 셸턴"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-varsity-tank-officer"
+msgid "Lt. 레너드 홀"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-varsity-tank-soldier"
+msgid "Pvt. 이윈 매켄지"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-goodwood-officer"
+msgid "Cpt. 코널 맥설리번"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-goodwood-soldier"
+msgid "Sgt. 에이든 오하라"
+msgstr ""
+
+msgctxt "desc/human/narrator/fra-civilian3"
+msgid "프랑스 농부"
+msgstr ""
+
+msgctxt "desc/human/narrator/ned-resistance"
+msgid "네덜란드 저항군 지도자"
+msgstr ""
+
+msgctxt "desc/human/narrator/pol-oosterbek-officer"
+msgid "Lt. 얀 코발치크"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-oosterbek-urquhart"
+msgid "Maj. Gen 엘리엇 어커트"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-officer"
+msgid "중대장"
+msgstr ""
+
+msgctxt "desc/human/narrator/eng-tank_commander"
+msgid "근위 기갑사단 전차장"
+msgstr ""

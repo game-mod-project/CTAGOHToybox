@@ -1,0 +1,39 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "bmw_r71_xx.mdl"}
+	{volume "body1"
+		{thickness 4}
+	}
+	{volume "body2"
+		{thickness 4}
+	}
+	{volume "body3"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 4}
+	}
+	{volume "body5"
+		{thickness 4}
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 4}
+	}
+	{volume "engine2"
+		{thickness 4}
+	}
+	{volume "fuel"
+		{thickness 4}
+	}
+	{volume "wheelleft1"
+		{thickness 1}
+	}
+	{volume "wheelleft2"
+		{thickness 1}
+	}
+	{volume "wheelright2"
+		{thickness 1}
+	}
+}

@@ -77,10 +77,10 @@
 
 	{extender "inventory"
 		{Box
-			{item "bulletger_88_l56 apcbche" 15}
-			{item "bulletger_88_l56 apcr" 3}
-			{item "bulletger_88_l56 he" 10}
-			{item "geballteladung_3kg" 1}
+			{item "bulletger_88_l56 apcbche" 75}
+			{item "bulletger_88_l56 apcr" 15}
+			{item "bulletger_88_l56 he" 50}
+			{item "geballteladung_3kg" 2}
 		}
 	}
 
@@ -88,7 +88,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "88mm_flak41" filling "ammo bulletger_88_l56 apcbche" 1}
+			{weapon "88mm_flak41_ctb_ger" filling "ammo bulletger_88_l56 apcbche" 1}
 			{gunner "gunner gunner3 gunner4" minWorkers 2}
 			{charger "charger charger3 charger4" minWorkers 2}
 			("abm_dymamic_td"
@@ -103,15 +103,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(0.50))
 		("mobility_tank"
-			speed(70) ;----------Max speed when fully accelerated on road, km/h. ;30
+			speed(105) ;----------Max speed when fully accelerated on road, km/h. ;30
 			reverse(12) ;--------Max speed in reverse on road, km/h.
 			traverse(20) ;-------Track traverse, per second, in degrees.
 			weight(21.5) ;-------Weight in Tonnes.
 			power(640) ;---------Engine Power, in hp.
 			track(7.0) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(860) ;----------Fuel capacity in Litres.
+			fuel(8600) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(110) ;----------Range in km, off-road.
+			range(1100) ;----------Range in km, off-road.
 		)
 	}
 	{bone "gun_rot2"

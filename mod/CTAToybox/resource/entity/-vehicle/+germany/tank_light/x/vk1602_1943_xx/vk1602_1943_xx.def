@@ -1,0 +1,71 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "vk1602_xx.mdl"}
+
+	{Volume "body1"
+		{thickness 100}
+	}
+	{Volume "body"
+		{thickness 100}
+	}
+	{Volume "engine2"
+		{thickness 60}
+	}
+	{Volume "f1"
+		{thickness 60}
+	}
+	{Volume "f2"
+		{thickness 60}
+	}
+	{Volume "gun"
+		{thickness 20}
+	}
+	{Volume "mantlet1"
+		{thickness 100}
+	}
+	{Volume "mantlet3"
+		{thickness 100}
+	}
+	{Volume "mantlet"
+		{thickness 100}
+	}
+	{Volume "part1"
+		{thickness 32}
+	}
+	{Volume "part2"
+		{thickness 32}
+	}
+	{Volume "part3"
+		{thickness 40}
+	}
+	{Volume "part4"
+		{thickness 32}
+	}
+	{Volume "part5"
+		{thickness 20}
+	}
+	{Volume "part6"
+		{thickness 40}
+	}
+	{Volume "shieldl1"
+		{thickness 40}
+	}
+	{Volume "trackleft"
+		{thickness 40}
+	}
+	{Volume "trackright"
+		{thickness 40}
+	}
+	{Volume "turret1"
+		{thickness 160}
+	}
+	{Volume "turret2"
+		{thickness 160}
+	}
+	{Volume "turret"
+		{thickness 160}
+	}
+	{Volume "wingr"
+		{thickness 20}
+	}
+}

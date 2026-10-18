@@ -1,0 +1,45 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Call to Arms - Gates of Hell: Ostfront (names for finland)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "names/mon/first"
+msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
+msgstr ""
+
+msgctxt "names/mon/last"
+msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
+msgstr ""
+
+msgctxt "names/mon_medic/first"
+msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
+msgstr ""
+
+msgctxt "names/mon_medic/last"
+msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
+msgstr ""
+
+msgctxt "names/mon_officer/first"
+msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
+msgstr ""
+
+msgctxt "names/mon_officer/last"
+msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
+msgstr ""
+
+msgctxt "names/mon_sniper/first"
+msgid "Altan\nArban\nBatbayar\nBat-Erdene\nBatmönkh\nBatsaikhan\nBatu\nBayar\nBilegt\nChimed\nDavaadorj\nDorj\nEnkhbat\nErdene\nGanbaatar\nGanzorig\nJargal\nKhasar\nLkhagva\nMönkh\nNarangerel\nOchir\nSanjin\nSaruul\nSükhbaatar\nTömör\nTsogt\nTsolmon\nTungalag\nUlzii\nUuganbayar\nYanjmaa\nYesügei\n"
+msgstr ""
+
+msgctxt "names/mon_sniper/last"
+msgid "Borjigin\nBaatar\nSükh\nErdenebaatar\nGanbold\nBatjargal\nDavaajav\nAltangerel\nTömörbaatar\nKhatanbaatar\nMönkhbat\nTsogtbaatar\nEnkhbayar\nChoibalsan\nNatsagdorj\n"
+msgstr ""

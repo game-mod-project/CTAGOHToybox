@@ -1,0 +1,69 @@
+;// Defines
+	("tank_medium_tier1")
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+
+	("shield" args "shieldl1" 10)
+	("shield" args "shieldl2" 10)
+	("shield" args "shieldr1" 10)
+	("shield" args "shieldr2" 10)
+	("shield_track" args "shield1" 50)
+
+;// Components
+	{volume "body1"		;// Hull
+		{thickness 50
+			{front 75}
+			{left 36.25}
+			{right 50} 	;// Top nose and bottom nose
+			{rear 25}
+			{top 28}
+			{bottom 20}
+		}
+	}
+	{volume "body2"		;// superstructure
+		{thickness 50
+			{front 75}
+			{left 36.25}
+			{rear 25}
+			{top 28}
+			{bottom 20}
+		}
+	}
+	{volume "turret1" {thickness 36.25 {front 75} {top 25} {bottom 20}}} 	;// Entire Turret
+	{volume "turret2" {thickness 36.25 {top 25} {bottom 20}}} 			;// Hatch + rear part of turret, RD (rounded)
+	{volume "turret3" {thickness 75} {able {holed}}} 					;// Frontal part of the turret, RD
+	{volume "mantlet"
+		{thickness 75}
+		{tags "turret"}
+		{component "turret"}
+	}
+	{volume "engine1" 	;// Bottom part of the engine, superstructure
+		{thickness 36.25
+			{front 25}
+			{right 25} 	;// Bottom nose, rear
+			{top 25}
+			{bottom 20}
+		}
+	}
+	{volume "engine2" 	;// Above superstructure
+		{thickness 25
+			{rear 36.25}
+			{bottom 20}
+		}
+	}
+
+;// Non-Components
+	{volume "armor1" {thickness 13}} 	;// Muffler
+	{volume "cupola" {thickness 75}}
+	{component "shield1" {tags "cut_part"}}
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}

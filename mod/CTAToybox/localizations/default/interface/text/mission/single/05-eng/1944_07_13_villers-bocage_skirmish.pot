@@ -1,0 +1,157 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell (1944_07_13_villers-bocage_skirmish)\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/doctrine_allround"
+msgid "교리: 전방위"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/doctrine_defensive"
+msgid "교리: 방어"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/doctrine_irregular"
+msgid "교리: 비정규"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/doctrine_offensive"
+msgid "교리: 공세"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/mission_option_select1"
+msgid "임무에 쓸 교리를 선택하라:"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/mission_buys_stay_flag"
+msgid "증원 메뉴:"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/buys_on_after_flag"
+msgid "유닛이 영구 해금된다"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/name"
+msgid "빌레르보카주 전투 [스커미시]"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/name_big"
+msgid "빌레르보카주 전투"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/story"
+msgid "노르망디에 상륙한 지 일주일이 지났다.\n\n캉 시는 만만찮은 상대임이 드러났다. 독일군이 북쪽에 참호를 파고 지금까지의 모든 공격을 막아 냈다.\n\n그런데 빌레르보카주 마을 근처에서 갑자기 기회가 생겼다.\n\n이 기회를 잡아 서쪽에서 빌레르보카주를 공격해야 한다. 마주치는 방어선은 모두 돌파하라.\n\n속도가 관건이다. 독일군이 전열을 가다듬기 전에 빌레르보카주를 점령해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/place"
+msgid "제7기갑사단, 제30군단"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/date"
+msgid "1944년 6월 13일 · 프랑스 노르망디 빌레르보카주 외곽"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/outro_start"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/outro_completed"
+msgid "훌륭하다, 제군들! 자네들의 맹렬한 공격 덕분에 캉 안팎의 독일군 진지가 위태로워졌다. 이 틈을 아주 잘 활용했다. 자네들의 명성이 크게 오를 것이다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/outro_failed"
+msgid ""
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/outro_failed_hq"
+msgid "이건 재앙에 가깝다. 승리를 확보하지 못했다. 돌아가서 다시 공세를 시작해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/mission_hq"
+msgid "야전 본부를 사수해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/mission_ace"
+msgid "비트만의 티거 전차를 격파해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/mission_attack"
+msgid "적 진지에 구멍을 내고 북쪽으로 진격하라!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/flag_capture_status"
+msgid "아군이 독일군 진지 7곳 중 %1%곳을 확보했다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/narrator_start0"
+msgid "전선에 돌아온 것을 환영한다, Lieutenant! 여기가 우리 야전 본부다. 반드시 우리가 장악하고 있어야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/narrator_start1"
+msgid "퍼치 작전이 한창이다. 독일군 전선을 돌파하려면 신속한 공격이 필요하다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/narrator_start2"
+msgid "빠르고 과감하게 움직여라. 그리고 병력을 너무 잃지 않도록 해라! 지형을 이용해라."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/narrator_start3"
+msgid "공격이 진행될수록 더 많은 증원이 가능해진다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/wittman_1"
+msgid "...가능한 목표! 전진..."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/allied_enemy_ace_near"
+msgid "젠장! 티거 전차다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/player_enemy_ace_near"
+msgid "맙소사, 엄폐하고 측면을 노려라. 놈을 격파해야 한다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/allied_enemy_near_hq"
+msgid "제군! 독일군이 야전 본부 가까이에 있다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/allied_enemy_plane"
+msgid "적 항공기다!!!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/allied_enemy_plane2"
+msgid "독일 항공기 접근 중!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/player_enemy_near_hq"
+msgid "지휘소를 지켜야 한다! 항복할 여지는 없다!"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/hq_bonus"
+msgid "Major! 이제 공습을 요청할 수 있습니다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/tasks/secret01"
+msgid "비밀 목표 1"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/tasks/secret01_completed"
+msgid "비밀 목표 #1: 요리 완료! - 탄약 유폭으로 독일 전차를 제거했다."
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/tasks/secret02"
+msgid "비밀 목표 2"
+msgstr ""
+
+msgctxt "mission/single/05-eng/1944_07_13_villers-bocage_skirmish/tasks/secret02_completed"
+msgid "비밀 목표 #2: 차량 탈취! - 독일 경차량을 빼앗았다."
+msgstr ""

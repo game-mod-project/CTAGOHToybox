@@ -1,0 +1,33 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_45_volkssturm_mg_coat"}
+	{portrait "ger_volkssturm"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head civilian_fedora_orange}
+	}
+	{perks
+		(include "ability.inc")
+		("skill_rank_0")("tier1_defense")
+	
+	{"health" "300%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "lewis_gun_ctb_ger" filled}
+		{item "lewis_mag ammo" 940}
+
+		{item "m24 grenade" 2.5 1}
+
+		{item "bandage_ger" 5 1}
+		{item "shovel_ger"}
+
+		{in_hands 0}
+	}
+}

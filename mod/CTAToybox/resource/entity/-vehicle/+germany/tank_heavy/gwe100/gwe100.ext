@@ -1,0 +1,87 @@
+;SDL
+
+	("tank_heavy_tier2")
+
+	("shield_tear" args "shieldL1" 25)
+	("shield_tear" args "shieldL2" 25)
+	("shield_tear" args "shieldL3" 25)
+	("shield_tear" args "shieldL4" 25)
+	("shield_tear" args "shieldL5" 25)
+	("shield_tear" args "shieldR1" 25)
+	("shield_tear" args "shieldR2" 25)
+	("shield_tear" args "shieldR3" 25)
+	("shield_tear" args "shieldR4" 25)
+	("shield_tear" args "shieldR5" 25)
+
+	("gun" repair(30) thickness(450))
+	("tracks" repair(30) thickness(300))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+
+	{volume "body1"			
+		{thickness 400
+		}
+	}
+	
+	{volume "body2"			
+		{thickness 400
+		}
+	}
+	
+	{volume "body3"		
+		{thickness 200
+		}
+	}
+
+	{volume "body4"		
+		{thickness 400
+		}
+	}
+
+	{volume "body5"		
+		{thickness 400
+		}
+	}
+
+	{volume "armorL"			
+		{thickness 300
+		}
+	}
+
+	{volume "armorR"			
+		{thickness 300
+		}
+	}
+
+	{volume "armorfront"			
+		{thickness 350
+		}
+	}
+
+	{volume "armorleft"			
+		{thickness 200
+		}
+	}
+
+	{volume "armorright"			
+		{thickness 200
+		}
+	}
+
+	{volume "doorL"			
+		{thickness 200
+		}
+	}
+
+	{volume "doorR"			
+		{thickness 200
+		}
+	}

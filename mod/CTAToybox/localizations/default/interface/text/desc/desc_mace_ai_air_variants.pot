@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ko\n"
+
+msgctxt "desc/entity/mace_strike_a6m3_60kg"
+msgid "A6M3"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_a6m3_rockets_ai"
+msgid "A6M3"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_kikka2"
+msgid "Nakajima Kikka"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_kikka2_800kg"
+msgid "Nakajima Kikka"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_b5n2_250kg"
+msgid "B5N2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_b5n2_60x6kg"
+msgid "B5N2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_b5n2_800kg"
+msgid "B5N2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_p47_d22_m8"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_p47_d22_hvar"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_p47_d22_250lb"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_f80a_450x2"
+msgid "P-80B Shooting Star"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_f80a_rockets_127x12"
+msgid "P-80B Shooting Star"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_f80a_mk78x4"
+msgid "P-80B Shooting Star"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_bf109_g6_250kg"
+msgid "Bf 109 G-6"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_bf110_e2_1000kg"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_bf110_e2_flam_500kg"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_bf109_g6_rocket"
+msgid "Bf 109 G-6"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_bf110_e2_rocket"
+msgid "Bf 110 E-2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_me_262_500x2"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_me_262_rockets_210x2"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_me_262_rockets_250x2_ai"
+msgid "Me 262 A-1a Schwalbe"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_me_262_50mm"
+msgid "Me 262A-1a/U4"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_il2_mod42_ai"
+msgid "IL-2 M1942"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_yak1_ser69_50kg"
+msgid "Yak-1-69"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_po2_rocket"
+msgid "U-2"
+msgstr ""
+
+msgctxt "desc/entity/mace_strike_po2_flame"
+msgid "U-2"
+msgstr ""

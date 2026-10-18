@@ -1,0 +1,341 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic and Russian ammo\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "desc/squad/single_tankman_ace_eng"
+msgid "에이스 전차 승무원"
+msgstr ""
+
+msgctxt "info/special/single_tankman_ace_eng"
+msgid "<c(c3baae)>정예 승무원</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_firefly_ace"
+msgid "파이어플라이 에이스 임무부대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_firefly_ace"
+msgid "<c(c3baae)>베테랑 중형 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_desert_rats"
+msgid "제7기갑사단 '사막의 쥐'"
+msgstr ""
+
+msgctxt "info/special/eng_kg_desert_rats"
+msgid "<c(c3baae)>순항 전차 소대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_matilda_inf"
+msgid "마틸다 보병 지원단"
+msgstr ""
+
+msgctxt "info/special/eng_kg_matilda_inf"
+msgid "<c(c3baae)>중형 보병 지원</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_valentine"
+msgid "발렌타인 돌격 소대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_valentine"
+msgid "<c(c3baae)>보병 전차 소대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_churchill_croc"
+msgid "처칠 크로커다일 돌격"
+msgstr ""
+
+msgctxt "info/special/eng_kg_churchill_croc"
+msgid "<c(c3baae)>중형 화염 돌격</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_guards_armoured"
+msgid "근위 기갑 선봉"
+msgstr ""
+
+msgctxt "info/special/eng_kg_guards_armoured"
+msgid "<c(c3baae)>정예 기갑 선봉</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_irish_guards"
+msgid "아일랜드 근위 합동 병과"
+msgstr ""
+
+msgctxt "info/special/eng_kg_irish_guards"
+msgid "<c(c3baae)>근위 기계화</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_market_garden"
+msgid "마켓 가든 작전 글라이더"
+msgstr ""
+
+msgctxt "info/special/eng_kg_market_garden"
+msgid "<c(c3baae)>공수 경기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_commando_raid"
+msgid "왕립 코만도 야간 습격"
+msgstr ""
+
+msgctxt "info/special/eng_kg_commando_raid"
+msgid "<c(c3baae)>특수부대 습격</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_achilles_troop"
+msgid "아킬레스 전차 사냥 소대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_achilles_troop"
+msgid "<c(c3baae)>구축전차 소대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_sexton_battery"
+msgid "섹스턴 자주포 포대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_sexton_battery"
+msgid "<c(c3baae)>자주포</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_comet_platoon"
+msgid "코멧 돌격 소대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_comet_platoon"
+msgid "<c(c3baae)>고급 순항 전차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_cromwell_recon"
+msgid "크롬웰 장갑 정찰"
+msgstr ""
+
+msgctxt "info/special/eng_kg_cromwell_recon"
+msgid "<c(c3baae)>고속 정찰 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_kangaroo_assault"
+msgid "캐나다군 캥거루 돌격"
+msgstr ""
+
+msgctxt "info/special/eng_kg_kangaroo_assault"
+msgid "<c(c3baae)>기계화 중보병</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_hobarts_funnies"
+msgid "호바트의 괴짜들 특수 기갑"
+msgstr ""
+
+msgctxt "info/special/eng_kg_hobarts_funnies"
+msgid "<c(c3baae)>특수 공병 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_polish_1st_ad"
+msgid "폴란드 제1기갑사단"
+msgstr ""
+
+msgctxt "info/special/eng_kg_polish_1st_ad"
+msgid "<c(c3baae)>연합군 기계화 부대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_challenger_troop"
+msgid "챌린저 A30 대전차 소대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_challenger_troop"
+msgid "<c(c3baae)>중형 대전차 순항 전차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_archer_ambush"
+msgid "아처 매복 진지"
+msgstr ""
+
+msgctxt "info/special/eng_kg_archer_ambush"
+msgid "<c(c3baae)>후방 향 매복 구축전차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_sherman_tulip"
+msgid "셔먼 튤립 로켓 일제사격"
+msgstr ""
+
+msgctxt "info/special/eng_kg_sherman_tulip"
+msgid "<c(c3baae)>로켓 무장 중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_grant_desert"
+msgid "엘알라메인 그랜트 부대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_grant_desert"
+msgid "<c(c3baae)>사막 중형 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_churchill_qf75"
+msgid "처칠 QF 75mm 전열"
+msgstr ""
+
+msgctxt "info/special/eng_kg_churchill_qf75"
+msgid "<c(c3baae)>중형 보병 기갑 전열</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_wasp_flame"
+msgid "와스프 화염 소탕 분대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_wasp_flame"
+msgid "<c(c3baae)>경형 화염 운반차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_staghound_patrol"
+msgid "스태그하운드 장거리 정찰대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_staghound_patrol"
+msgid "<c(c3baae)>중장갑차 정찰대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_kg_aec_heavy_ac"
+msgid "AEC 중기병 소대"
+msgstr ""
+
+msgctxt "info/special/eng_kg_aec_heavy_ac"
+msgid "<c(c3baae)>중장갑 기병</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_tortoise_assault"
+msgid "시제: 토터스 막을 수 없는 벽"
+msgstr ""
+
+msgctxt "info/special/eng_exp_tortoise_assault"
+msgid "<c(c3baae)>초중형 돌격</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_conqueror_troop"
+msgid "시제: 컨커러 중전차 소대"
+msgstr ""
+
+msgctxt "info/special/eng_exp_conqueror_troop"
+msgid "<c(c3baae)>냉전 중형 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_death_star"
+msgid "시제: FV215b 183 '데스 스타'"
+msgstr ""
+
+msgctxt "info/special/eng_exp_death_star"
+msgid "<c(c3baae)>초중형 구축전차 포대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_super_conqueror"
+msgid "시제: 슈퍼 컨커러 선봉"
+msgstr ""
+
+msgctxt "info/special/eng_exp_super_conqueror"
+msgid "<c(c3baae)>궁극의 중형 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_chieftain_vanguard"
+msgid "시제: 치프틴 냉전 선봉"
+msgstr ""
+
+msgctxt "info/special/eng_exp_chieftain_vanguard"
+msgid "<c(c3baae)>고급 주력 전차 소대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_fv4025_troop"
+msgid "시제: FV4025 실험 소대"
+msgstr ""
+
+msgctxt "info/special/eng_exp_fv4025_troop"
+msgid "<c(c3baae)>실험형 중형 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_arl44_heavy"
+msgid "시제: 프랑스 ARL 44 부활"
+msgstr ""
+
+msgctxt "info/special/eng_exp_arl44_heavy"
+msgid "<c(c3baae)>프랑스 중형 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_char2c_behemoth"
+msgid "시제: Char 2C 베헤모스 진형"
+msgstr ""
+
+msgctxt "info/special/eng_exp_char2c_behemoth"
+msgid "<c(c3baae)>초중형 육상 순양함</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_amx_coalition"
+msgid "시제: 영불 AMX 연합"
+msgstr ""
+
+msgctxt "info/special/eng_exp_amx_coalition"
+msgid "<c(c3baae)>요동 포탑 부대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_nato_task_force"
+msgid "시제: 나토 초기 임무부대"
+msgstr ""
+
+msgctxt "info/special/eng_exp_nato_task_force"
+msgid "<c(c3baae)>냉전 합동 임무부대</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_fv215b_line"
+msgid "시제: FV215b 방어선"
+msgstr ""
+
+msgctxt "info/special/eng_exp_fv215b_line"
+msgid "<c(c3baae)>중형 방어 기갑</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_executor_squadron"
+msgid "시제: 익스큐터 정예 장갑차"
+msgstr ""
+
+msgctxt "info/special/eng_exp_executor_squadron"
+msgid "<c(c3baae)>초중장갑차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_caernarvon_troop"
+msgid "시제: 카나번 돌격 소대"
+msgstr ""
+
+msgctxt "info/special/eng_exp_caernarvon_troop"
+msgid "<c(c3baae)>중형 돌격 선봉</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_arl44_acl1"
+msgid "시제: ARL 44 ACL1 초기 저항"
+msgstr ""
+
+msgctxt "info/special/eng_exp_arl44_acl1"
+msgid "<c(c3baae)>초기 프랑스 중전차</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_centurion3_push"
+msgid "시제: 센츄리온 Mk3 해머"
+msgstr ""
+
+msgctxt "info/special/eng_exp_centurion3_push"
+msgid "<c(c3baae)>고급 주력 전차 돌파</c>"
+msgstr ""
+
+msgctxt "desc/squad/eng_exp_tog2_breakthrough"
+msgid "시제: TOG II 육상함 돌격"
+msgstr ""
+
+msgctxt "info/special/eng_exp_tog2_breakthrough"
+msgid "<c(c3baae)>육상함 돌파</c>"
+msgstr ""

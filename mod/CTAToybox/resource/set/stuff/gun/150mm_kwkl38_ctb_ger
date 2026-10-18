@@ -1,0 +1,30 @@
+;_________________________________________
+; German heavy infantry support gun
+;=========================================
+
+
+{from "pattern gun"			; L/12 sturmpanzer4
+	{filling "bulletger_150_l11"}
+	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm_HV/"}
+	{fireSoundClose "cannon/s3/1p/Shared/"}
+	{reloadSound "tank/1p/large/"}
+	("heavy_artillery")
+	("range_220")
+	{calibre 150}
+
+	("reload time" seconds(9))
+
+	("velocity m/s" ap(722) apcr(1020) he(621) heat(684))
+	("armor health" damage(450))
+
+	("penetration_medium" shell(heat) range(210) a(350) b(350) c(350) d(350) e(350))
+
+	; Pzgr.43
+	("penetration_long" shell(apcbche) range(240) a(287) b(283) c(267) d(252) e(248))
+
+	{parameters "he"
+		{range 240 240}
+	}
+
+	("accuracy_direct" r1(0.48) range_ap(230) range_he(220) range_heat(210))
+}

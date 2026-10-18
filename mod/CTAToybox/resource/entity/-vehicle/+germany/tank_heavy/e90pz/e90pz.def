@@ -1,0 +1,160 @@
+{game_entity
+	(include "/properties/tank_assaultgun__ctb_e90pz_358f306f.ext")
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "td" "heavy" "-turret" "vision_lev04" "muzzle_85mm_93mm_sides" "shield" "smoke" "nvw" "detect_td_heavy"}
+	{extension "e90pz.mdl"}
+	(include "e90pz.ext")
+	{PatherId "panzer5"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+
+	{extender "enumerator"
+		{digit_folder "ger"}
+	}
+
+	{sensor
+		{visor "main"
+			{vision "tank_range_220"}
+			{bone "visor1"}
+		}
+		{visor "around"
+			{bone "visor"}
+		}
+	}
+
+;==============================================
+	(define "crew_human_visible"
+		{placer	{place "%place" {group "crew"} {linkbone "%place"} {visor "%visor"} {turnoff {sensor} {shadow} {targetable}}}  	}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+	
+	(define "crew_human"
+		{placer	{place "%place" {group "crew"} {visor "%visor"}}}
+		{boarder {door "%door"}	{link "%door" "%place" {anm "%place"} {forward putoff} {reverse puton}}}
+	)
+
+	{boarder
+		{anm "driver"
+			{forward {begin "board_jtiger_driver"} {end "seat_gunner_stand"} {base "open"}}
+			{reverse {end "board_jtiger_driver" -1} {base "open -1"}}
+		}
+		{anm "gunner"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"}  {base "open1" -1}}
+		}
+		{anm "charger"
+			{forward {begin "board_tank_right"} {end "pose_mgun_pz6"} {base "open"}}
+			{reverse {end "emit_tank_2_hold"} {base "open" -1}}
+		}
+		{anm "gunner3"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"}  {base "open1" -1}}
+		}
+		{anm "gunner4"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"}  {base "open1" -1}}
+		}
+		{anm "commander"
+			{forward {begin "board_Kv"} {end "pose_mgun_pz6"} {base "open1"}}
+			{reverse {end "emit_tank_2_hold"} {base "open1" -1}}
+		}
+		{anm "armor"
+			{forward {begin "board_HighArmor"} {end "pose_seat_armor_1"}}
+			{reverse {end "emit_tank_1"}}
+		}
+	}
+
+	("crew_human" place(driver)		door(emit1)  visor(visor1))
+	("crew_human" place(gunner)		door(emit2) visor(visor2))
+	("crew_human" place(charger)	door(emit1) visor(none))
+	("crew_human" place(gunner3)		door(emit2) visor(visor2))
+	("crew_human" place(gunner4)		door(emit2) visor(visor3))
+	("crew_human" place(commander)		door(emit1) visor(around))
+
+	("seat_human" place(seat1) bone(seat1) door(emit11)  animation(armor))
+;==============================================
+
+	{extender "inventory"
+		{box
+			{item "bulletger_150 apcbche" 100} 	; 60 rounds
+			{item "bulletger_150 he" 100}
+			{item "bulletger_150 heat" 50}
+			{item "ammo mgun_ger belt" 17000}		; 17 belts (150 rounds each)
+			{item "geballteladung_3kg" 2}
+		}
+	}
+
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "150mm_pakl44_ctb_ger" filling "bulletger_150 apcbche" 1}
+			{gunner "gunner"}
+			{charger "charger commander" minWorkers 1}
+			("abm_dymamic_td"
+				zeroing(2.5)
+				dispersion(0.25)
+			)
+			{basic}
+		}
+		("restore_ik_time")
+		{place "mgun"
+			{type "hull"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight3"}
+			{gunner "gunner3"}
+			{charger "gunner3"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+		("restore_ik_time")
+		{place "mgun_rear"
+			{type "rear"}
+			{weapon "mg34_tank_ctb_ger" filled}
+			{foresight "foresight4"}
+			{gunner "gunner4"}
+			{charger "gunner4"}
+			("abm_mgun")
+			{basic}
+			{ai_in_manual}
+		}
+	}
+
+	{mass 45600}
+	{Chassis
+		("tank_trace" fx("tracks_big") step(0.47) len(0.71))
+		("mobility_tank"
+			speed(42) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(6);----------Max speed in reverse on road, km/h.
+			traverse(28) ;-------Track traverse, per second, in degrees.
+			weight(45.6) ;-------Weight in Tonnes.
+			power(600) ;---------Engine Power, in hp. //engine was governed to 2500 max rpm which reduced it from 700HP to 600HP
+			track(3.5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(7000) ;----------Fuel capacity in Litres.
+			type(fuel) ;---------Fuel type. (diesel OR fuel)
+			range(800) ;----------Range in km, off-road.
+		)
+	}
+
+	{bone "gun_rot"
+		{limits -15 15}
+		{speed2 5}
+	}	
+	{bone "gun_rot2"
+		{limits -8 14}
+		{speed2 5}
+	}
+	{bone "mgun"
+		{speed2 30}
+	}
+	{bone "mgturret"
+		{speed2 30}
+	}
+	{bone "mgun_rear"
+		{speed2 25}
+	}
+	{bone "mgun_rear_rot"
+		{speed2 25}
+	}
+}

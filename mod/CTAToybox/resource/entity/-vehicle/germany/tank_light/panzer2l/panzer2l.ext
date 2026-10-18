@@ -1,0 +1,56 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 15mm
+	; front hull shield 20mm
+
+	("tank_light_tier2")
+
+	("shield" args "shield1" 40)
+
+	("tracks" repair(30) thickness(30))
+	("gun" repair(30) thickness(30))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 40
+			{front 60}
+			{top 40}		; Glacis
+			{rear 11}
+			{bottom 11}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 40
+			{front 60}
+			{top 20}
+			{bottom 11}
+		}
+	}
+	{volume "engine"
+		{thickness 40
+			{front 11}
+			{top 20}
+			{bottom 11}
+		}
+	}
+	{volume "turret1"
+		{thickness 40
+			{front 60}
+			{top 20}
+			{bottom 11}
+		}
+	}
+	{volume "turret2"
+		{thickness 60}
+	}
+	{volume "mantlet"
+		{thickness 60}
+	}

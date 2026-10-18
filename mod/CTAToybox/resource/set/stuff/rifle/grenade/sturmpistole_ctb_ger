@@ -1,0 +1,32 @@
+{from "pattern sturmpistole"
+	{tag "at_rifle" "ap"}
+	{entity "sturmpistole"}
+	{filling "ammo sturm_rocket" 1}
+	{fillingVisible "grenade"}
+	{fireSound "smallarms/s3/d1/GER/K98k/Schiessbecher/"}
+	{fireSoundclose "smallarms/s3/3p/GER/K98k/Schiessbecher/"}
+	{reloadSound "kar98"}
+	{calibre 60}
+	{mass 8.2}
+
+	{parameters "he" ;og_7v
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_he"}
+		("armor health" damage(300))
+		{range 70 70}
+	}
+	{parameters "heat"
+		{cursor "ironsights/grenade"}
+		{cursorReloading "gun_heat"}
+		("penetration" args 80)
+		("armor health" damage(150))
+		{range 60 60}
+	}
+	{parameters "illum"
+        	{tag "flare_gun"}
+        	{range 250 250}
+        	{gravity 0.08}
+        	{speed 10}
+    	}
+	{rechargeTime 5}
+}

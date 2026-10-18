@@ -1,0 +1,116 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; side shields 25mm
+
+	("tank_medium_tier1")
+
+	("shield_track" args "detail1" 50)
+	("shield_track" args "detail2" 50)
+	("shield_track" args "detail3" 50)
+	
+	("shield" args "shieldl1" 63)
+	("shield" args "shieldl2" 63)
+	("shield" args "shieldl3" 63)
+	("shield" args "shieldl4" 63)
+	("shield" args "shieldl5" 63)
+	("shield" args "shieldl6" 63)
+	("shield" args "shieldl7" 63)
+	("shield" args "shieldl8" 63)
+
+	("shield" args "shieldr1" 63)
+	("shield" args "shieldr2" 63)
+	("shield" args "shieldr3" 63)
+	("shield" args "shieldr4" 63)
+	("shield" args "shieldr5" 63)
+	("shield" args "shieldr6" 63)
+	("shield" args "shieldr7" 63)
+	("shield" args "shieldr8" 63)
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 100
+			{rear 25}
+			{bottom 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body2"			; Middle Superstructure
+		{thickness 100
+			{front 88}		; Glacis
+			{rear 25}
+			{bottom 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body3"			; Top Superstructure
+		{thickness 100
+			{front 118}
+			{top 63}
+			{rear 25}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "body4"			; Front Left Superstructure
+		{thickness 100
+			{front 118}
+			{top 63}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine1"
+		{thickness 100
+			{front 25}
+			{rear 63}
+			{bottom 50}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "engine2"
+		{thickness 100
+			{front 25}
+			{top 63}
+			{rear 63}
+			{bottom 63}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret1"		; Main Turret
+		{thickness 113
+			{front 140}
+			{top 75}
+		}
+		{CastSteel 0.8063}
+	}
+	{volume "turret2"		; Square Back side
+		{thickness 113}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet"
+		{thickness 113}
+		{CastSteel 0.8063}
+	}
+	{volume "mantlet2"
+		{thickness 113}
+		{CastSteel 0.8063}
+	}
+	{volume "cupola"
+		{thickness 100
+			{top 75}
+		}
+		{CastSteel 0.8063}
+	}
+
+	{component "detail1" {tags "cut_part"}}
+	{component "detail2" {tags "cut_part"}}
+	{component "detail3" {tags "cut_part"}}

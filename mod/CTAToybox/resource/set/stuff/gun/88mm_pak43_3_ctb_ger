@@ -1,0 +1,8 @@
+;_________________________________________
+; German heavy AT Gun
+;=========================================
+
+{from "88mm_pak43"			; L/71 "pak43/3"
+	("reload time" seconds(4.25))
+	("accuracy_direct" r1(0.40) range_ap(220) range_he(220) range_heat(220))
+}

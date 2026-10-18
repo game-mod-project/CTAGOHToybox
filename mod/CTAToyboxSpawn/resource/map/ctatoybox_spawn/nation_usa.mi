@@ -1,0 +1,12 @@
+;{mission
+	{Helpers
+		{triggers
+			{"ctb_campaign_nation"
+				{condition }
+				{actions
+					{"set_i" {var "ctb_campaign$"} {op "="} {value 1}}
+					{"set_i" {var "ctb_nation$"} {op "="} {value 3}}
+				}
+			}
+		}
+	}

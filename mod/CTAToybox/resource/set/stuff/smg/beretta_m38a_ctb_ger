@@ -1,0 +1,17 @@
+{from "pattern smg"
+	{tag "pistol_shell"}
+	{filling "ammo beretta_m38a_magazine" 20}
+	{entity "beretta_m38a"}
+	{fireSound "smallarms/s1/d1/GER/MP28/Head/"}
+	{fireSoundclose "smallarms/s1/3p/GER/MP28/"}
+	{reloadSound "mp40"}
+	{calibre 9}
+	{mass 4.2}
+
+	("fire rate" rpm(600))
+	("velocity" mps(420))
+	("spreading_low")
+	("burst_short")
+	("stick_reload")
+	{rechargeTime 1.625}
+}

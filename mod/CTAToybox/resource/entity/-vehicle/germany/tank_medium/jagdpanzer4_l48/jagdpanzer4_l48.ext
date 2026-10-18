@@ -1,0 +1,104 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; schürzen 5mm
+
+	("tank_medium_tier2")
+
+	("shield" args "shield" 13)
+	("shield_track" args "shield1" 50)
+	("shield" args "shieldl1" 13)
+	("shield" args "shieldl2" 13)
+	("shield" args "shieldl3" 13)
+	("shield" args "shieldl4" 13)
+	("shield" args "shieldl5" 13)
+	("shield" args "shieldl6" 13)
+	("shield" args "shieldl7" 13)
+	("shield" args "shieldr1" 13)
+	("shield" args "shieldr2" 13)
+	("shield" args "shieldr3" 13)
+	("shield" args "shieldr4" 13)
+	("shield" args "shieldr5" 13)
+	("shield" args "shieldr6" 13)
+	("shield" args "shieldr7" 13)
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("ammo" args "ammo5")
+	("ammo" args "ammo6")
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull front
+		{thickness	75
+			{front 200}		; front upper plate
+			{top 50}		
+			{rear 125}		; front lower plate
+			{bottom 50}
+		}
+	}
+	{volume "body2"			; middle part
+		{thickness 75
+			{front 200}
+			{bottom 50}
+		}
+	}
+	{volume "body3"			; middle part Top
+		{thickness 100
+			{front 200}
+			{rear 75}
+			{top 50}
+			{bottom 50}
+		}
+	}
+	{volume "body4"			; gun tower
+		{thickness 188}
+	}
+	{volume "body5"			; around gun tower
+		{thickness 250}		; 20mm+80mm 
+		{able {holed}}
+	}
+	{volume "engine1"		; lower part
+		{thickness 75
+			{front 25}
+			{rear 55}
+			{bottom 50}
+		}
+	}
+	{volume "engine2"		; upper part
+		{thickness 75
+			{front 25}
+			{top 50}
+			{rear 55}
+		}
+	}
+	{volume "mantlet"
+		{thickness 188}
+		{CastSteel 0.8063}
+		{tags "armor"}
+	}
+	{volume "detail11"		; spare wheel
+		{thickness 50}
+	}
+	{volume "detail12"		; spare wheel
+		{thickness 50}
+	}
+
+	{component "shieldl1" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+
+	{component "shieldr1" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+

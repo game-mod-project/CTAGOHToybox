@@ -51,18 +51,18 @@
 
 	{extender "inventory"
 		{box
-			{item "bulletger_30_auto apcr" 480}		; 12 belts of 80 rounds
-			{item "bulletger_30_auto he" 480}
-			{item "ammo mgun_ger belt" 2400}	; 16 belts (150 rounds each)
-			{item "geballteladung_3kg" 1}
-			{item "nbk39 grenade" 2}
+			{item "bulletger_30_auto apcr" 2400}		; 12 belts of 80 rounds
+			{item "bulletger_30_auto he" 2400}
+			{item "ammo mgun_ger belt" 12000}	; 16 belts (150 rounds each)
+			{item "geballteladung_3kg" 2}
+			{item "nbk39 grenade" 4}
 		}
 	}
 
 	{Weaponry
 		("restore_ik_time")
 		{place "gun"
-			{weapon "30mm_mk103" filling "bulletger_30_auto apcr" 80}
+			{weapon "30mm_mk103_ctb_ger" filling "bulletger_30_auto apcr" 80}
 			{gunner "gunner"}
 			{charger "commander"}
 			("abm_dymamic_autocannon"
@@ -72,7 +72,7 @@
 		}
 		{place "mgun"
 			{type "coaxial"}
-			{weapon "mg42_tank" filled}
+			{weapon "mg42_tank_ctb_ger" filled}
 			{foresight "foresight3"}
 			{gunner "gunner"}
 			{charger "charger"}
@@ -85,15 +85,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_mid") step(0.52) len(1.05))
 		("mobility_tank"
-			speed(60) ;----------Max speed when fully accelerated on road, km/h.
+			speed(90) ;----------Max speed when fully accelerated on road, km/h.
 			reverse(12) ;--------Max speed in reverse on road, km/h.
 			traverse(46) ;-------Track traverse, per second, in degrees.
 			weight(19) ;-------Weight in Tonnes.
 			power(550) ;---------Engine Power, in hp.
 			track(5) ;---------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
-			fuel(520) ;----------Fuel capacity in Litres.
+			fuel(5200) ;----------Fuel capacity in Litres.
 			type(fuel) ;---------Fuel type. (diesel OR fuel)
-			range(150) ;---------Range in km, off-road.
+			range(1500) ;---------Range in km, off-road.
 		)
 	}
 

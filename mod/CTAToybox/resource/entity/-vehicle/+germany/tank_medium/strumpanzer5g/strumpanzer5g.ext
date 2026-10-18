@@ -1,0 +1,120 @@
+;SDL
+	
+	; armor notes
+	; tracks and wheels 20mm
+	; gun 25mm
+	; spare tracks 20mm
+	; schürzen 5mm
+
+	("tank_heavy_tier1")
+
+	("shield_track" args "detail5" 50)
+	("shield_track" args "detail6" 50)
+	("shield_track" args "detail7" 50)
+
+	("shield" args "fenderl" 13)
+	("shield" args "shieldl2" 13)
+	("shield" args "shieldl3" 13)
+	("shield" args "shieldl4" 13)
+	("shield" args "shieldl5" 13)
+	("shield" args "shieldl6" 13)
+	("shield" args "fenderr" 13)
+	("shield" args "shieldr2" 13)
+	("shield" args "shieldr3" 13)
+	("shield" args "shieldr4" 13)
+	("shield" args "shieldr5" 13)
+	("shield" args "shieldr6" 13)
+
+	("tracks" repair(30) thickness(50))
+	("gun" repair(30) thickness(63))
+
+	("ammo" args "ammo1")
+	("ammo" args "ammo2")
+	("ammo" args "ammo3")
+	("ammo" args "ammo4")
+	("fuel" args "fuel1")
+	("fuel" args "fuel2")
+	("fuel" args "fuel3")
+	("fuel" args "fuel4")
+	("transmission" args "transmission")
+
+	{volume "body1"			; Hull
+		{thickness 100
+			{front 130}		; Lower Nose
+			{top 205}		; Glacis
+			{rear 40}
+			{bottom 63}
+		}
+	}
+	{volume "body2"			; Superstructure
+		{thickness 125
+			{front 205}		; Glacis
+			{top 40}
+			{rear 40}
+			{bottom 100}
+		}
+	}
+	{volume "body3"			; Hull MG
+		{thickness 200}
+		{tags "mg_port"}
+	}
+	{volume "engine1"			; Hull
+		{thickness 100
+			{front 40}
+			{top 40}
+			{bottom 40}
+		}
+	}
+	{volume "engine2"		; Superstructure
+		{thickness 125
+			{front 40}
+			{top 40}
+			{rear 100}
+			{bottom 100}
+		}
+	}
+	{volume "turret"
+		{thickness 113
+			{front 250}
+			{top 75}
+		}
+	}
+	{volume "turret2"
+		{thickness 113
+			{front 275}  ; Behind mantlet hole
+			{top 75}
+		}
+	}
+	{volume "mantlet"
+		{thickness 275}
+		{CastSteel 0.8063}
+		{component "turret"}
+		{tags "turret"}
+	}
+	{volume "mantlet2"
+		{thickness 250}
+		{CastSteel 0.8063}
+		{component "gun"}
+		{tags "gun"}
+	}
+	{volume "cupola"
+		{thickness 200
+			{top 40}
+		}
+	}
+
+	{component "fenderl" {tags "cut_part"}}
+	{component "shieldl2" {tags "cut_part"}}
+	{component "shieldl3" {tags "cut_part"}}
+	{component "shieldl4" {tags "cut_part"}}
+	{component "shieldl5" {tags "cut_part"}}
+	{component "shieldl6" {tags "cut_part"}}
+	{component "fenderr" {tags "cut_part"}}
+	{component "shieldr2" {tags "cut_part"}}
+	{component "shieldr3" {tags "cut_part"}}
+	{component "shieldr4" {tags "cut_part"}}
+	{component "shieldr5" {tags "cut_part"}}
+	{component "shieldr6" {tags "cut_part"}}
+	{component "detail5" {tags "cut_part"}}
+	{component "detail6" {tags "cut_part"}}
+	{component "detail7" {tags "cut_part"}}

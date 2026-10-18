@@ -1,0 +1,99 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "nashorn_xx.mdl"}
+
+	{volume "barrel1"
+		{thickness 75}
+		{able {holed}}
+	}
+	{volume "barrel4"
+		{thickness 75}
+	}
+	{volume "barrel6"
+		{thickness 75}
+	}
+	{volume "barrel7"
+		{thickness 75}
+	}
+	{volume "gun_shield1"
+		{thickness 25}
+	}
+	{volume "gun_shield2"
+		{thickness 25}
+	}
+	{volume "gun_shield3"
+		{thickness 25}
+	}
+	{volume "shield1"
+		{thickness 25}
+	}
+	{volume "shield2"
+		{thickness 25}
+	}
+	{volume "shield3"
+		{thickness 25}
+	}
+	{volume "tshield1"
+		{thickness 25}
+	}
+	{volume "tshield2"
+		{thickness 25}
+	}
+	{volume "tshield3"
+		{thickness 25}
+	}
+	{volume "tshield4"
+		{thickness 25}
+	}
+	{volume "tshield5"
+		{thickness 25}
+		{able {holed}}
+	}
+	{volume "tshield6"
+		{thickness 25}
+	}
+	{volume "tshield7"
+		{thickness 25}
+	}
+	{volume "body1"
+		{thickness 50
+			{front 75}
+			{top 38}
+			{bottom 38}
+		}
+	}
+	{volume "body2"
+		{thickness 50
+			{front 25}
+			{bottom 38}
+		}
+	}
+	{volume "body3"
+		{thickness 50
+			{front 38}
+			{top 38}
+		}
+	}
+	{volume "body4"
+		{thickness 38
+			{front 75}
+		}
+	}
+	{volume "barrel1"
+		{able {holed}}
+	}
+	{volume "engine1"
+		{thickness 50
+			{rear 25}
+			{front 25}
+			{bottom 38}
+		}
+	}
+	{volume "engine2"
+		{thickness 38
+			{top 25}
+			{rear 25}
+		}
+	}
+	("tracks" thickness(50))
+}

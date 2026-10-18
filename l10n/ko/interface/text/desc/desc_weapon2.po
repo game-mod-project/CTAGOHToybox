@@ -1,0 +1,111 @@
+# source: mod_3732639687 interface/text/desc/desc_weapon2.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/weapon/besa"
+msgid "Besa Machine Gun"
+msgstr "Besa Machine Gun"
+
+msgctxt "desc/weapon/besax2"
+msgid "Twin Besa Machine Guns"
+msgstr "Twin Besa Machine Guns"
+
+msgctxt "desc/weapon/browning_m2"
+msgid "Browning M2"
+msgstr "Browning M2"
+
+msgctxt "desc/weapon/browning_m2_x6"
+msgid "6x Browning M2"
+msgstr "6x Browning M2"
+
+msgctxt "desc/weapon/browning_m3_x6"
+msgid "6x Browning M3"
+msgstr "6x Browning M3"
+
+msgctxt "desc/weapon/browning_m19a4"
+msgid "Browning M1919A4"
+msgstr "Browning M1919A4"
+
+msgctxt "desc/weapon/browning_m19a4_left"
+msgid "Browning M1919A4 (Left)"
+msgstr "Browning M1919A4 (Left)"
+
+msgctxt "desc/weapon/browning_m19a4_right"
+msgid "Browning M1919A4 (Right)"
+msgstr "Browning M1919A4 (Right)"
+
+msgctxt "desc/weapon/browning_m19a4_tank"
+msgid "Browning M1919A4 (Tank)"
+msgstr "Browning M1919A4 (Tank)"
+
+msgctxt "desc/weapon/browning_x2"
+msgid "Twin Browning"
+msgstr "Twin Browning"
+
+msgctxt "desc/weapon/browning_x4"
+msgid "Quad Browning"
+msgstr "Quad Browning"
+
+msgctxt "desc/weapon/dshk"
+msgid "DShK"
+msgstr "DShK"
+
+msgctxt "desc/weapon/dshk_100"
+msgid "DShK (100 rounds)"
+msgstr "DShK (100 rounds)"
+
+msgctxt "desc/weapon/dt"
+msgid "DT Machine Gun"
+msgstr "DT Machine Gun"
+
+msgctxt "desc/weapon/dt_x2"
+msgid "Twin DT Machine Guns"
+msgstr "Twin DT Machine Guns"
+
+msgctxt "desc/weapon/hmgun_aa_dshk"
+msgid "DShK AA Heavy Machine Gun"
+msgstr "DShK AA Heavy Machine Gun"
+
+msgctxt "desc/weapon/hmgun_aa_dshkm"
+msgid "DShKM AA Heavy Machine Gun"
+msgstr "DShKM AA Heavy Machine Gun"
+
+msgctxt "desc/weapon/hmgun_aa_m2hb"
+msgid "M2HB AA Heavy Machine Gun"
+msgstr "M2HB AA Heavy Machine Gun"
+
+msgctxt "desc/weapon/lewis_gun_ger"
+msgid "Lewis Gun (Captured)"
+msgstr "Lewis Gun (Captured)"
+
+msgctxt "desc/weapon/madsen_belt"
+msgid "Madsen (Belt-fed)"
+msgstr "Madsen (Belt-fed)"
+
+msgctxt "desc/weapon/mg131"
+msgid "MG 131"
+msgstr "MG 131"
+
+msgctxt "desc/weapon/mg131_mount"
+msgid "MG 131 (Mounted)"
+msgstr "MG 131 (Mounted)"
+
+msgctxt "desc/weapon/sgmt"
+msgid "SGMT Machine Gun"
+msgstr "SGMT Machine Gun"
+
+msgctxt "desc/weapon/Type_77_hmgun"
+msgid "Type 77 Heavy Machine Gun"
+msgstr "Type 77 Heavy Machine Gun"

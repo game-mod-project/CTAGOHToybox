@@ -1,0 +1,83 @@
+;SDL
+
+	; armor notes
+	; tracks and wheels 15mm
+	; gun 20mm
+
+	("tank_light_tier1")
+
+	("tracks" repair(30) thickness(30))
+
+	("fuel" args "fuel")
+	("transmission" args "transmission")
+	("ammo" args "ammo1")
+
+	("shield" args "shield1" 10)
+	("shield" args "shield2" 10)
+	("shield" args "shield3" 10)
+	("shield" args "shield4" 10)
+	("shield" args "shield5" 10)
+	("shield" args "shield6" 10)
+	("shield" args "shield7" 10)
+	("shield" args "shield8" 10)
+	("shield" args "shield9" 10)
+	("shield" args "shield10" 10)
+	("shield" args "shield11" 10)
+
+	{volume "mine"
+		{thickness 30}
+		{component "mine"}
+                {tag "mine"}
+        }
+
+	{volume "mine" {able {holed}}}
+	{volume "body1" {able {holed}}}
+
+	{volume "body1"			; Hull
+		{thickness 20		; Glacis
+			{front 40}		; Lower Hull
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "body2"			; Driver
+		{thickness 20		; Glacis
+			{front 40}		; Lower Hull
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "body3"			; Driver
+		{thickness 20		; Glacis
+			{front 40}		; Lower Hull
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "engine1"
+		{thickness 20		; Glacis
+			{front 40}		; Lower Hull
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "engine2"		; Internal
+		{thickness 20		; Glacis
+			{front 40}		; Lower Hull
+			{top 20}
+			{bottom 10}
+		}
+	}
+	{volume "engine3"		; Internal
+		{thickness 20}
+	}
+
+	{volume "detail1"
+		{thickness 30}
+		{HighHardness}
+	}
+	{volume "detail2"
+		{thickness 30}
+		{HighHardness}
+	}
+

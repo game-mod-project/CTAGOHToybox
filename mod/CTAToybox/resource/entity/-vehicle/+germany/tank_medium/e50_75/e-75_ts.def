@@ -89,12 +89,12 @@
 
 	{extender "inventory"
 		{box
-			{item "ammo bulletger_128_2 apds" 10}
-			{item "ammo bulletger_128_2 he" 20}
-			{item "ammo bulletger_128_2 apcbche" 15}
-			{item "ammo bulletger_20_auto apcr" 1050}
-			{item "ammo bulletger_20_auto he" 1050}
-			{item "ammo mgun_ger" 1850}
+			{item "ammo bulletger_128_2 apds" 50}
+			{item "ammo bulletger_128_2 he" 100}
+			{item "ammo bulletger_128_2 apcbche" 75}
+			{item "ammo bulletger_20_auto apcr" 5250}
+			{item "ammo bulletger_20_auto he" 5250}
+			{item "ammo mgun_ger" 9250}
 		}
 	}
 
@@ -102,7 +102,7 @@
 		("restore_ik_time")
 		{place "gun"
 			{RestoreIKAfterAim}
-			{weapon "128mm_kwk44_2" filling "ammo bulletger_128_2 apcbche" 1}
+			{weapon "128mm_kwk44_2_ctb_ger" filling "ammo bulletger_128_2 apcbche" 1}
 			{gunner "gunner"}
 			{charger "charger charger2" minWorkers 1}
 			{foresight "foresight1"}
@@ -110,7 +110,7 @@
 		}
 		{place "mgun1"
 			{type "coaxial_cannon"}
-			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{weapon "20mm_mg151_coax_ctb_ger" filling "bulletger_20_auto apcr" 200}
 			{foresight "foresight3a"}
 			{gunner "gunner"}
 			{charger "charger2"}
@@ -119,7 +119,7 @@
 		}
 		{place "mgun2"
 			{type "cupola_cannon"}
-			{weapon "20mm_mg151_coax" filling "bulletger_20_auto apcr" 200}
+			{weapon "20mm_mg151_coax_ctb_ger" filling "bulletger_20_auto apcr" 200}
 			{foresight "foresight2"}
 			{gunner "commander"}
 			{charger "commander"}
@@ -128,7 +128,7 @@
 		}
 		{place "mgun"
 			{type "coaxial"}
-			{weapon "mg42_tank" filled}
+			{weapon "mg42_tank_ctb_ger" filled}
 			{foresight "foresight3"}
 			{gunner "gunner"}
 			{charger "gunner"}
@@ -141,15 +141,15 @@
 	{Chassis
 		("tank_trace" fx("tracks_big") step(0.47) len(2.45))
 		("mobility_tank"
-			speed(40)
+			speed(60)
 			reverse(15)
 			traverse(30)
 			weight(91.6)
 			power(1200)
 			track(3.3)
-			fuel(860)
+			fuel(8600)
 			type(fuel)
-			range(90)
+			range(900)
 		)
 	}
 	{Extension "e-75_ts.mdl"}

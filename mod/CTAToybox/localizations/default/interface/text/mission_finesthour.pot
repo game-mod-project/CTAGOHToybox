@@ -1,0 +1,193 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CtA:GoH (mission)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/multi/1v1_fall_gelb_sum/name"
+msgid "팔 겔프 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_oosterbeek_sum/name"
+msgid "오스테르베이크 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_solingen_factory_aut/name"
+msgid "졸링겐 공장 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/1v1_weteringsteeg/name"
+msgid "베테링스테그 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_dunkirk_dunes_sum/name"
+msgid "됭케르크 사구 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_grave_sum/name"
+msgid "흐라버 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_heelsum_sum/name"
+msgid "헬숨 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/2v2_wesel_aut/name"
+msgid "베젤 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_canals_sum/name"
+msgid "운하 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_hamminkeln_aut/name"
+msgid "함민켈른 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_mont_cassel/name"
+msgid "몽카셀 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/3v3_zeeland_sum/name"
+msgid "제일란트 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_arras_countryside_sum/name"
+msgid "아라스 시골 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_eindhoven/name"
+msgid "에인트호번 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_remagen_aut/name"
+msgid "레마겐 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/4v4_vlissingen_breach/name"
+msgid "플리싱언 돌파구 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/dcg_anctoville_sum/name"
+msgid "앙크토빌"
+msgstr ""
+
+msgctxt "mission/multi/dcg_bergen_radar/name"
+msgid "베르겐 레이더"
+msgstr ""
+
+msgctxt "mission/multi/dcg_bretteville_sur_odon/name"
+msgid "브르트빌쉬르오동"
+msgstr ""
+
+msgctxt "mission/multi/dcg_broukerque_sum/name"
+msgid "브루케르크"
+msgstr ""
+
+msgctxt "mission/multi/dcg_caen_sum/name"
+msgid "캉"
+msgstr ""
+
+msgctxt "mission/multi/dcg_canals_sum/name"
+msgid "운하"
+msgstr ""
+
+msgctxt "mission/multi/dcg_carpiquet_sum/name"
+msgid "카르피케"
+msgstr ""
+
+msgctxt "mission/multi/dcg_dunkirk_sum/name"
+msgid "됭케르크"
+msgstr ""
+
+msgctxt "mission/multi/dcg_dyle_sum/name"
+msgid "딜"
+msgstr ""
+
+msgctxt "mission/multi/dcg_elden_landings/name"
+msgid "엘덴 상륙"
+msgstr ""
+
+msgctxt "mission/multi/dcg_flanders_fields_sum/name"
+msgid "플랑드르 들판"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hamburg_aut/name"
+msgid "함부르크"
+msgstr ""
+
+msgctxt "mission/multi/dcg_hazebrouck/name"
+msgid "아즈브룩"
+msgstr ""
+
+msgctxt "mission/multi/dcg_middenhof/name"
+msgid "미덴호프"
+msgstr ""
+
+msgctxt "mission/multi/dcg_nord_battery/name"
+msgid "노르 포대"
+msgstr ""
+
+msgctxt "mission/multi/dcg_oberhundem_aut/name"
+msgid "오버훈뎀"
+msgstr ""
+
+msgctxt "mission/multi/dcg_oostkapelle/name"
+msgid "오스트카펠러"
+msgstr ""
+
+msgctxt "mission/multi/dcg_rethem_station_aut/name"
+msgid "레텀 역"
+msgstr ""
+
+msgctxt "mission/multi/dcg_ruhr_factory_aut/name"
+msgid "루르 공장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_siegfried_aut/name"
+msgid "지크프리트"
+msgstr ""
+
+msgctxt "mission/multi/dcg_valkenburg_airfield/name"
+msgid "팔켄뷔르흐 비행장"
+msgstr ""
+
+msgctxt "mission/multi/dcg_villers_bocage_sum/name"
+msgid "빌레르보카주"
+msgstr ""
+
+msgctxt "mission/multi/dcg_vlissingen_breach_aut/name"
+msgid "플리싱언 돌파구"
+msgstr ""
+
+msgctxt "mission/multi/dcg_westkapelle_aut/name"
+msgid "베스트카펠러"
+msgstr ""
+
+msgctxt "mission/multi/dcg_zeeland_sum/name"
+msgid "제일란트"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/1v1_reichswald_aut/name"
+msgid "라이히스발트 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/2v2_blitzkrieg/name"
+msgid "전격전 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/3v3_hells_highway/name"
+msgid "지옥의 도로 <c(7e5be4)>[Finest Hour]"
+msgstr ""
+
+msgctxt "mission/multi/0_frontlines/4v4_goodwood/name"
+msgid "굿우드 <c(7e5be4)>[Finest Hour]"
+msgstr ""

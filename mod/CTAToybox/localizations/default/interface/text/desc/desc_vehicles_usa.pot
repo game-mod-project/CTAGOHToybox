@@ -1,0 +1,1201 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Product Name (desc_vehicles_usa)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "info/special/c47_d"
+msgid "<c(c3baae)>수송기</c>"
+msgstr ""
+
+msgctxt "desc/entity/c47_d"
+msgid "Douglas C-47 Skytrain"
+msgstr ""
+
+msgctxt "desc/entity/t1e3_m4a1_75"
+msgid "T1E3 M4A1 (후기)"
+msgstr ""
+
+msgctxt "info/special/t1e3_m4a1_75"
+msgid "<c(c3baae)>지뢰 제거차</c>"
+msgstr ""
+
+msgctxt "desc/entity/ammo_trailer_usa"
+msgid "화물 트레일러 1/4톤 (보급)"
+msgstr ""
+
+msgctxt "info/special/ammo_trailer_usa"
+msgid "<c(c3baae)>탄약 트레일러</c>"
+msgstr ""
+
+msgctxt "info/special/p47_d22_recon"
+msgid "<c(c3baae)>다목적 전투기</c>"
+msgstr ""
+
+msgctxt "desc/entity/p47_d22_recon"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_scout"
+msgid "M3A1 Scout Car"
+msgstr ""
+
+msgctxt "info/special/m3a1_scout"
+msgid "<c(c3baae)>장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/citroen_7_civ"
+msgid "Citroën 7"
+msgstr ""
+
+msgctxt "info/special/citroen_7_civ"
+msgid "<c(c3baae)>승용차</c>"
+msgstr ""
+
+msgctxt "desc/entity/renault_agr_civ"
+msgid "Renault AGR"
+msgstr ""
+
+msgctxt "info/special/renault_agr_civ"
+msgid "<c(c3baae)>트럭</c>"
+msgstr ""
+
+msgctxt "desc/entity/conquest_blank"
+msgid " "
+msgstr ""
+
+msgctxt "info/special/c47"
+msgid "<c(c3baae)>수송기</c>"
+msgstr ""
+
+msgctxt "desc/entity/c47"
+msgid "Douglas C-47 Skytrain"
+msgstr ""
+
+msgctxt "info/special/p47_d22"
+msgid "<c(c3baae)>다목적 전투기</c>"
+msgstr ""
+
+msgctxt "desc/entity/p47_d22"
+msgid "Republic P-47D-22 Razorback"
+msgstr ""
+
+msgctxt "info/special/usa_stretcher"
+msgid "<c(c3baae)> </c>"
+msgstr ""
+
+msgctxt "desc/entity/usa_stretcher"
+msgid "들것"
+msgstr ""
+
+msgctxt "desc/entity/m1917_30cal"
+msgid "Browning M1917A1"
+msgstr ""
+
+msgctxt "info/special/m1917_30cal"
+msgid "<c(c3baae)>중기관총</c>"
+msgstr ""
+
+msgctxt "desc/entity/heavy_mg_m1917_30cal"
+msgid "Browning M1917A1"
+msgstr ""
+
+msgctxt "info/special/heavy_mg_m1917_30cal"
+msgid "<c(c3baae)>중기관총</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2_30cal_tripod"
+msgid "Browning M1919A4"
+msgstr ""
+
+msgctxt "info/special/m2_30cal_tripod"
+msgid "<c(c3baae)>중기관총</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2_50cal_tripod"
+msgid "Browning M2HB"
+msgstr ""
+
+msgctxt "info/special/m2_50cal_tripod"
+msgid "<c(c3baae)>대형 기관총</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_m3"
+msgid "37mm Gun M3"
+msgstr ""
+
+msgctxt "info/special/37mm_m3"
+msgid "<c(c3baae)>경대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/37mm_m3a1"
+msgid "37mm Gun M3A1"
+msgstr ""
+
+msgctxt "info/special/37mm_m3a1"
+msgid "<c(c3baae)>경대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/40mm_m1"
+msgid "40mm Automatic Gun M1"
+msgstr ""
+
+msgctxt "info/special/40mm_m1"
+msgid "<c(c3baae)>대공포</c>"
+msgstr ""
+
+msgctxt "desc/entity/50cal_quad_m45"
+msgid "M55 4연장 기관총"
+msgstr ""
+
+msgctxt "info/special/50cal_quad_m45"
+msgid "<c(c3baae)>대공포</c>"
+msgstr ""
+
+msgctxt "desc/entity/50mm_rocket_projector"
+msgid "2-inch Rocket Projector"
+msgstr ""
+
+msgctxt "info/special/50mm_rocket_projector"
+msgid ""
+msgstr ""
+
+msgctxt "desc/entity/57mm_m1"
+msgid "57mm Gun M1"
+msgstr ""
+
+msgctxt "info/special/57mm_m1"
+msgid "<c(c3baae)>중형 대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/57mm_m1_early"
+msgid "57mm Gun M1 (초기)"
+msgstr ""
+
+msgctxt "info/special/57mm_m1_early"
+msgid "<c(c3baae)>중형 대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/57mm_m1_late"
+msgid "57mm Gun M1 (후기)"
+msgstr ""
+
+msgctxt "info/special/57mm_m1_late"
+msgid "<c(c3baae)>중형 대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/60mm_m2"
+msgid "60mm Mortar M2"
+msgstr ""
+
+msgctxt "info/special/60mm_m2"
+msgid "<c(c3baae)>경박격포</c>"
+msgstr ""
+
+msgctxt "desc/entity/60mm_m2_late"
+msgid "60mm Mortar M2 (후기)"
+msgstr ""
+
+msgctxt "info/special/60mm_m2_late"
+msgid "<c(c3baae)>경박격포</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_m1897"
+msgid "75mm M1897A4"
+msgstr ""
+
+msgctxt "info/special/75mm_m1897"
+msgid "<c(c3baae)>경야포</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_m1a1"
+msgid "75mm M1A1 (M8 Carriage)"
+msgstr ""
+
+msgctxt "info/special/75mm_m1a1"
+msgid "<c(c3baae)>경량 분해식 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/75mm_m3a3"
+msgid "75mm M1A1 (M3A3 Carriage)"
+msgstr ""
+
+msgctxt "info/special/75mm_m3a3"
+msgid "<c(c3baae)>경야전 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/76mm_m5_m1"
+msgid "3-inch Gun M5 (M1 Carriage)"
+msgstr ""
+
+msgctxt "info/special/76mm_m5_m1"
+msgid "<c(c3baae)>중형 대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/76mm_m5_m6"
+msgid "3-inch Gun M5 (M6 Carriage)"
+msgstr ""
+
+msgctxt "info/special/76mm_m5_m6"
+msgid "<c(c3baae)>중형 대전차포</c>"
+msgstr ""
+
+msgctxt "desc/entity/81mm_m1"
+msgid "81mm Mortar M1"
+msgstr ""
+
+msgctxt "info/special/81mm_m1"
+msgid "<c(c3baae)>중형 박격포</c>"
+msgstr ""
+
+msgctxt "desc/entity/81mm_m1_sm"
+msgid "81mm Mortar M1"
+msgstr ""
+
+msgctxt "info/special/81mm_m1_sm"
+msgid "<c(c3baae)>중형 박격포</c>"
+msgstr ""
+
+msgctxt "desc/entity/81mm_m1_mortar_barrage"
+msgid "중형 박격포 포격"
+msgstr ""
+
+msgctxt "desc/squad/81mm_m1_mortar_barrage"
+msgid "81mm Mortar M1"
+msgstr ""
+
+msgctxt "desc/entity/90mm_m1a1"
+msgid "90mm Gun M1A1"
+msgstr ""
+
+msgctxt "info/special/90mm_m1a1"
+msgid "<c(c3baae)>대형 대공포</c>"
+msgstr ""
+
+msgctxt "desc/entity/90mm_m2"
+msgid "90mm Gun M2"
+msgstr ""
+
+msgctxt "info/special/90mm_m2"
+msgid "<c(c3baae)>대형 대공포</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_m2a1"
+msgid "105mm Howitzer M2A1"
+msgstr ""
+
+msgctxt "info/special/105mm_m2a1"
+msgid "<c(c3baae)>중형 야전 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_m2a1_sm"
+msgid "105mm Howitzer M2A1"
+msgstr ""
+
+msgctxt "info/special/105mm_m2a1_sm"
+msgid "<c(c3baae)>중형 야전 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/105mm_m2a1_smoke_barrage"
+msgid "중형 연막 포격"
+msgstr ""
+
+msgctxt "desc/squad/105mm_m2a1_smoke_barrage"
+msgid "105mm Howitzer M2A1"
+msgstr ""
+
+msgctxt "desc/entity/105mm_m2a1_artillery_barrage"
+msgid "중형 포병 포격"
+msgstr ""
+
+msgctxt "desc/squad/105mm_m2a1_artillery_barrage"
+msgid "105mm Howitzer M2A1"
+msgstr ""
+
+msgctxt "desc/entity/105mm_m3"
+msgid "105mm Howitzer M3"
+msgstr ""
+
+msgctxt "info/special/105mm_m3"
+msgid "<c(c3baae)>중형 야전 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/107mm_m2"
+msgid "4.2-inch Mortar M2"
+msgstr ""
+
+msgctxt "info/special/107mm_m2"
+msgid "<c(c3baae)>대형 박격포</c>"
+msgstr ""
+
+msgctxt "desc/entity/107mm_m2_sm"
+msgid "4.2-inch Mortar M2"
+msgstr ""
+
+msgctxt "info/special/107mm_m2_sm"
+msgid "<c(c3baae)>박격포</c>"
+msgstr ""
+
+msgctxt "desc/entity/107mm_m2_mortar_barrage"
+msgid "대형 박격포 포격"
+msgstr ""
+
+msgctxt "desc/squad/107mm_m2_mortar_barrage"
+msgid "4.2-inch Mortar M2"
+msgstr ""
+
+msgctxt "desc/entity/114mm_m1"
+msgid "4.5-inch Gun M1"
+msgstr ""
+
+msgctxt "info/special/114mm_m1"
+msgid "<c(c3baae)>중형 야포</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_gpf_us"
+msgid "155mm GPF M1918M1"
+msgstr ""
+
+msgctxt "info/special/155mm_gpf_us"
+msgid "<c(c3baae)>대형 야포</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_m1"
+msgid "155mm Howitzer M1"
+msgstr ""
+
+msgctxt "info/special/155mm_m1"
+msgid "<c(c3baae)>대형 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_m1_artillery_barrage"
+msgid "대형 포병 포격"
+msgstr ""
+
+msgctxt "desc/squad/155mm_m1_artillery_barrage"
+msgid "155mm Howitzer M1"
+msgstr ""
+
+msgctxt "desc/entity/155mm_m1_sm"
+msgid "155mm Howitzer M1"
+msgstr ""
+
+msgctxt "info/special/155mm_m1_sm"
+msgid "<c(c3baae)>중형 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_schneider_us"
+msgid "155mm Howitzer M1917"
+msgstr ""
+
+msgctxt "info/special/155mm_schneider_us"
+msgid "<c(c3baae)>대형 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_m1a1_longtom"
+msgid "155mm Gun M1A1 'Long Tom'"
+msgstr ""
+
+msgctxt "info/special/155mm_m1a1_longtom"
+msgid "<c(c3baae)>대형 야포</c>"
+msgstr ""
+
+msgctxt "desc/entity/155mm_m1a1_longtom_sm"
+msgid "155mm Gun M1A1 'Long Tom'"
+msgstr ""
+
+msgctxt "info/special/155mm_m1a1_longtom_sm"
+msgid "<c(c3baae)>대형 야포</c>"
+msgstr ""
+
+msgctxt "desc/entity/203mm_m1"
+msgid "8-inch Howitzer M1"
+msgstr ""
+
+msgctxt "info/special/203mm_m1"
+msgid "<c(c3baae)>대형 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw"
+msgid "GMC CCKW-353 (수송)"
+msgstr ""
+
+msgctxt "info/special/cckw"
+msgid "<c(c3baae)>수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw_redball"
+msgid "GMC CCKW (중기관총)"
+msgstr ""
+
+msgctxt "info/special/cckw_redball"
+msgid "<c(c3baae)>탄약 트럭</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw_art_ammo"
+msgid "GMC CCKW-353 (보급)"
+msgstr ""
+
+msgctxt "info/special/cckw_art_ammo"
+msgid "<c(c3baae)>탄약 트럭</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw_engineer"
+msgid "GMC CCKW-352 (공병)"
+msgstr ""
+
+msgctxt "info/special/cckw_engineer"
+msgid "<c(c3baae)>공병 트럭</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw_engineer_late"
+msgid "GMC CCKW-352 (중기관총) (공병)"
+msgstr ""
+
+msgctxt "info/special/cckw_engineer_late"
+msgid "<c(c3baae)>공병 트럭</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw_fuel"
+msgid "GMC CCKW (연료)"
+msgstr ""
+
+msgctxt "info/special/cckw_fuel"
+msgid "<c(c3baae)>연료 트럭</c>"
+msgstr ""
+
+msgctxt "desc/entity/cckw_inf"
+msgid "GMC CCKW-353 (수송)"
+msgstr ""
+
+msgctxt "info/special/cckw_inf"
+msgid "<c(c3baae)>수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/inf_crate_usa"
+msgid "미군 탄약 상자"
+msgstr ""
+
+msgctxt "info/special/inf_crate_usa"
+msgid "<c(c3baae)>보급품</c>"
+msgstr ""
+
+msgctxt "desc/entity/ford_gpa"
+msgid "Ford GPA"
+msgstr ""
+
+msgctxt "info/special/ford_gpa"
+msgid "<c(c3baae)>수륙양용 수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/wc51"
+msgid "WC-51"
+msgstr ""
+
+msgctxt "info/special/wc51"
+msgid "<c(c3baae)>수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/wc52_50cal"
+msgid "WC-52 (기관총)"
+msgstr ""
+
+msgctxt "info/special/wc52_50cal"
+msgid "<c(c3baae)>무장 수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb"
+msgid "Willys MB"
+msgstr ""
+
+msgctxt "info/special/willys_mb"
+msgid "<c(c3baae)>수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_30cal"
+msgid "Willys MB (MG)"
+msgstr ""
+
+msgctxt "info/special/willys_mb_30cal"
+msgid "<c(c3baae)>무장 수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/willys_mb_50cal"
+msgid "Willys MB (중기관총)"
+msgstr ""
+
+msgctxt "info/special/willys_mb_50cal"
+msgid "<c(c3baae)>무장 수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m6_gmc"
+msgid "37mm GMC M6"
+msgstr ""
+
+msgctxt "info/special/m6_gmc"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m8_greyhound"
+msgid "M8 Greyhound"
+msgstr ""
+
+msgctxt "info/special/m8_greyhound"
+msgid "<c(c3baae)>장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m8_greyhound_early"
+msgid "M8 Greyhound (초기)"
+msgstr ""
+
+msgctxt "info/special/m8_greyhound_early"
+msgid "<c(c3baae)>장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2_halftrack"
+msgid "M2 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m2_halftrack"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2_halftrack_at"
+msgid "M2 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m2_halftrack_at"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m2a1_halftrack"
+msgid "M2A1 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m2a1_halftrack"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_halftrack"
+msgid "M3 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m3_halftrack"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_halftrack_inf"
+msgid "M3 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m3_halftrack_inf"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_halftrack_inf_late"
+msgid "M3 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m3_halftrack_inf_late"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_stuart_early"
+msgid "M3 Stuart (초기)"
+msgstr ""
+
+msgctxt "info/special/m3_stuart_early"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_gmc"
+msgid "75mm GMC M3"
+msgstr ""
+
+msgctxt "info/special/m3_gmc"
+msgid "<c(c3baae)>자주포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_gmc"
+msgid "75mm GMC M3A1"
+msgstr ""
+
+msgctxt "info/special/m3a1_gmc"
+msgid "<c(c3baae)>자주포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_stuart_late"
+msgid "M3 Stuart (후기)"
+msgstr ""
+
+msgctxt "info/special/m3_stuart_late"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3_lee"
+msgid "M3 Lee"
+msgstr ""
+
+msgctxt "info/special/m3_lee"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_stuart"
+msgid "M3A1 Stuart"
+msgstr ""
+
+msgctxt "info/special/m3a1_stuart"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_commander"
+msgid "M3A1 Scout Car (지휘)"
+msgstr ""
+
+msgctxt "info/special/m3a1_commander"
+msgid "<c(c3baae)>장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_transport"
+msgid "M3A1 Scout Car (수송)"
+msgstr ""
+
+msgctxt "info/special/m3a1_transport"
+msgid "<c(c3baae)>장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_halftrack"
+msgid "M3A1 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m3a1_halftrack"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_halftrack_inf"
+msgid "M3A1 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m3a1_halftrack_inf"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a1_halftrack_inf_late"
+msgid "M3A1 Halftrack"
+msgstr ""
+
+msgctxt "info/special/m3a1_halftrack_inf_late"
+msgid "<c(c3baae)>반궤도차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m3a3_stuart"
+msgid "M3A3 Stuart"
+msgstr ""
+
+msgctxt "info/special/m3a3_stuart"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4_75_early"
+msgid "M4 (초기)"
+msgstr ""
+
+msgctxt "info/special/m4_75_early"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4_75_early_armor"
+msgid "M4 (초기) (장갑)"
+msgstr ""
+
+msgctxt "info/special/m4_75_early_armor"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4_75_late"
+msgid "M4 (후기)"
+msgstr ""
+
+msgctxt "info/special/m4_75_late"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4_105"
+msgid "M4(105)"
+msgstr ""
+
+msgctxt "info/special/m4_105"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4_mortar_carrier"
+msgid "81mm Mortar Carrier M4"
+msgstr ""
+
+msgctxt "info/special/m4_mortar_carrier"
+msgid "<c(c3baae)>박격포 운반차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_75_early"
+msgid "M4A1 (Early DV)"
+msgstr ""
+
+msgctxt "info/special/m4a1_75_early"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_75_mid"
+msgid "M4A1 (중기)"
+msgstr ""
+
+msgctxt "info/special/m4a1_75_mid"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_75_mid_armor"
+msgid "M4A1 (중기) (장갑)"
+msgstr ""
+
+msgctxt "info/special/m4a1_75_mid_armor"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_75_late"
+msgid "M4A1 (후기)"
+msgstr ""
+
+msgctxt "info/special/m4a1_75_late"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_75_dd"
+msgid "M4A1 (DD)"
+msgstr ""
+
+msgctxt "info/special/m4a1_75_dd"
+msgid "<c(c3baae)>수륙양용 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_76w"
+msgid "M4A1(76)W (초기)"
+msgstr ""
+
+msgctxt "info/special/m4a1_76w"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_76w_mid"
+msgid "M4A1(76)W"
+msgstr ""
+
+msgctxt "info/special/m4a1_76w_mid"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a1_mortar_carrier"
+msgid "81mm Mortar Carrier M4A1"
+msgstr ""
+
+msgctxt "info/special/m4a1_mortar_carrier"
+msgid "<c(c3baae)>박격포 운반차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_75_early"
+msgid "M4A3 (초기)"
+msgstr ""
+
+msgctxt "info/special/m4a3_75_early"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_75_late"
+msgid "M4A3 (후기)"
+msgstr ""
+
+msgctxt "info/special/m4a3_75_late"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_75w_early"
+msgid "M4A3(75)W (초기)"
+msgstr ""
+
+msgctxt "info/special/m4a3_75w_early"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_75w"
+msgid "M4A3(75)W (후기)"
+msgstr ""
+
+msgctxt "info/special/m4a3_75w"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_75w_e4_5"
+msgid "M4A3(75)W 'E4-5' (화염)"
+msgstr ""
+
+msgctxt "info/special/m4a3_75w_e4_5"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_76w"
+msgid "M4A3(76)W"
+msgstr ""
+
+msgctxt "info/special/m4a3_76w"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_76w_hvss"
+msgid "M4A3(76)W HVSS"
+msgstr ""
+
+msgctxt "info/special/m4a3_76w_hvss"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_76w_field1"
+msgid "M4A3(76)W HVSS '야전 개조'"
+msgstr ""
+
+msgctxt "info/special/m4a3_76w_field1"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_76w_field2"
+msgid "M4A3(76)W HVSS '야전 개조'"
+msgstr ""
+
+msgctxt "info/special/m4a3_76w_field2"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_76w_field3"
+msgid "M4A3(76)W HVSS '야전 개조'"
+msgstr ""
+
+msgctxt "info/special/m4a3_76w_field3"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_105"
+msgid "M4A3(105)"
+msgstr ""
+
+msgctxt "info/special/m4a3_105"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_105_hvss"
+msgid "M4A3(105) HVSS"
+msgstr ""
+
+msgctxt "info/special/m4a3_105_hvss"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3_calliope"
+msgid "M4A3(75)W 'T34 Calliope'"
+msgstr ""
+
+msgctxt "info/special/m4a3_calliope"
+msgid "<c(c3baae)>중형 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3e2_75"
+msgid "M4A3E2(75)W"
+msgstr ""
+
+msgctxt "info/special/m4a3e2_75"
+msgid "<c(c3baae)>돌격 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m4a3e2_76"
+msgid "M4A3E2(76)W"
+msgstr ""
+
+msgctxt "info/special/m4a3e2_76"
+msgid "<c(c3baae)>돌격 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m5_stuart"
+msgid "M5 Stuart"
+msgstr ""
+
+msgctxt "info/special/m5_stuart"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m5a1_stuart"
+msgid "M5A1 Stuart"
+msgstr ""
+
+msgctxt "info/special/m5a1_stuart"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m5a1_stuart_late"
+msgid "M5A1 Stuart (후기)"
+msgstr ""
+
+msgctxt "info/special/m5a1_stuart_late"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m5_hst"
+msgid "M5 High-Speed Tractor (중기관총)"
+msgstr ""
+
+msgctxt "info/special/m5_hst"
+msgid "<c(c3baae)>수송차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m7_hmc"
+msgid "105mm HMC M7"
+msgstr ""
+
+msgctxt "info/special/m7_hmc"
+msgid "<c(c3baae)>자주 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m7_hmc_sm"
+msgid "105mm HMC M7"
+msgstr ""
+
+msgctxt "info/special/m7_hmc_sm"
+msgid "<c(c3baae)>자주 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m7b1_hmc"
+msgid "105mm HMC M7B1"
+msgstr ""
+
+msgctxt "info/special/m7b1_hmc"
+msgid "<c(c3baae)>자주 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m8"
+msgid "M8"
+msgstr ""
+
+msgctxt "info/special/m8"
+msgid "<c(c3baae)>경장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m8_early"
+msgid "M8 (초기)"
+msgstr ""
+
+msgctxt "info/special/m8_early"
+msgid "<c(c3baae)>경장갑차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m8_hmc"
+msgid "75mm HMC M8"
+msgstr ""
+
+msgctxt "info/special/m8_hmc"
+msgid "<c(c3baae)>자주 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m10_gmc"
+msgid "3-inch GMC M10"
+msgstr ""
+
+msgctxt "info/special/m10_gmc"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m10_gmc_early"
+msgid "3-inch GMC M10"
+msgstr ""
+
+msgctxt "info/special/m10_gmc_early"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m10_gmc_late"
+msgid "3-inch GMC M10 (후기)"
+msgstr ""
+
+msgctxt "info/special/m10_gmc_late"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m12_gmc"
+msgid "155mm GMC M12"
+msgstr ""
+
+msgctxt "info/special/m12_gmc"
+msgid "<c(c3baae)>자주포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m12_gmc_sm"
+msgid "155mm GMC M12"
+msgstr ""
+
+msgctxt "info/special/m12_gmc_sm"
+msgid "<c(c3baae)>자주포</c>"
+msgstr ""
+
+msgctxt "desc/entity/m13_mgmc"
+msgid "MGMC M13"
+msgstr ""
+
+msgctxt "info/special/m13_mgmc"
+msgid "<c(c3baae)>경대공 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m15a1_cgmc"
+msgid "CGMC M15A1"
+msgstr ""
+
+msgctxt "info/special/m15a1_cgmc"
+msgid "<c(c3baae)>경대공 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m16_mgmc"
+msgid "MGMC M16"
+msgstr ""
+
+msgctxt "info/special/m16_mgmc"
+msgid "<c(c3baae)>경대공 전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m18_hellcat"
+msgid "76mm GMC M18 'Hellcat'"
+msgstr ""
+
+msgctxt "info/special/m18_hellcat"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m18_hellcat_late"
+msgid "76mm GMC M18 'Hellcat' (후기)"
+msgstr ""
+
+msgctxt "info/special/m18_hellcat_late"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m20"
+msgid "M20"
+msgstr ""
+
+msgctxt "info/special/m20"
+msgid "<c(c3baae)>장갑 다목적차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m21_mortar_carrier"
+msgid "81mm Mortar Carrier M21"
+msgstr ""
+
+msgctxt "info/special/m21_mortar_carrier"
+msgid "<c(c3baae)>박격포 운반차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m24_chaffee"
+msgid "M24 Chaffee"
+msgstr ""
+
+msgctxt "info/special/m24_chaffee"
+msgid "<c(c3baae)>경전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m26_pershing"
+msgid "M26 Pershing"
+msgstr ""
+
+msgctxt "info/special/m26_pershing"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m36_gmc"
+msgid "90mm GMC M36"
+msgstr ""
+
+msgctxt "info/special/m36_gmc"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m36_gmc_late"
+msgid "90mm GMC M36"
+msgstr ""
+
+msgctxt "info/special/m36_gmc_late"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m36_gmc_t33"
+msgid "90mm GMC M36"
+msgstr ""
+
+msgctxt "info/special/m36_gmc_t33"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m36b1_gmc"
+msgid "90mm GMC M36B1"
+msgstr ""
+
+msgctxt "info/special/m36b1_gmc"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m36b1_gmc_late"
+msgid "90mm GMC M36B1"
+msgstr ""
+
+msgctxt "info/special/m36b1_gmc_late"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/m36b1_gmc_t33"
+msgid "90mm GMC M36B1"
+msgstr ""
+
+msgctxt "info/special/m36b1_gmc_t33"
+msgid "<c(c3baae)>구축전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/t19_hmc"
+msgid "105mm HMC T19"
+msgstr ""
+
+msgctxt "info/special/t19_hmc"
+msgid "<c(c3baae)>자주 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/t26e4"
+msgid "T26E4 'Super Pershing'"
+msgstr ""
+
+msgctxt "info/special/t26e4"
+msgid "<c(c3baae)>중전차</c>"
+msgstr ""
+
+msgctxt "desc/entity/t30_hmc"
+msgid "75mm HMC T30"
+msgstr ""
+
+msgctxt "info/special/t30_hmc"
+msgid "<c(c3baae)>자주 곡사포</c>"
+msgstr ""
+
+msgctxt "desc/entity/lvt4"
+msgid "LVT-4"
+msgstr ""
+
+msgctxt "info/special/lvt4"
+msgid "<c(c3baae)>수륙양용 수송차</c>"
+msgstr ""

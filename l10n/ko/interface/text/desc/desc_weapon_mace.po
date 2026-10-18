@@ -1,0 +1,1007 @@
+# source: mod_2905667604 interface/text/desc/desc_weapon_mace.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Generic weaponry\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 2.4.2\n"
+
+msgctxt "desc/stuff/shovel_engineer_jap"
+msgid "Heavy Shovel"
+msgstr "무거운 삽"
+
+msgctxt "desc/stuff/cheese2"
+msgid "Some Delicious Cheddar"
+msgstr "맛있는 체다 치즈"
+
+msgctxt "desc/stuff/cheese"
+msgid "Some Delicious Cheese"
+msgstr "맛있는 치즈"
+
+msgctxt "desc/weapon/mannlicher_1985_8mm"
+msgid "Mannlicher M1895 Rifle"
+msgstr "Mannlicher M1895 Rifle"
+
+msgctxt "desc/weapon/madsen_dutch"
+msgid "Karabijnmitrailleur M.25 Madsen"
+msgstr "Karabijnmitrailleur M.25 Madsen"
+
+msgctxt "desc/weapon/national_defence_rifle"
+msgid "National Defence Rifle"
+msgstr "National Defence Rifle"
+
+msgctxt "desc/weapon/mauser_t18_jap"
+msgid "Mauser T18"
+msgstr "Mauser T18"
+
+msgctxt "desc/weapon/1918_bar"
+msgid "M1918 BAR"
+msgstr "M1918 BAR"
+
+msgctxt "desc/weapon/1918a1_bar"
+msgid "M1918A1 BAR"
+msgstr "M1918A1 BAR"
+
+msgctxt "desc/weapon/thompson_m1928_20_jap"
+msgid "Shanxi Thompson M1928 (Stick 20)"
+msgstr "Shanxi Thompson M1928 (Stick 20)"
+
+msgctxt "desc/weapon/thompson_m1928a1_30_jap"
+msgid "Shanxi Thompson M1928A1 (Stick 30)"
+msgstr "Shanxi Thompson M1928A1 (Stick 30)"
+
+msgctxt "desc/weapon/mg34_tank_coaxial"
+msgid "MG 34 Panzerlauf"
+msgstr "MG 34 Panzerlauf"
+
+msgctxt "desc/weapon/mg34_tank_rear"
+msgid "MG 34 Panzerlauf"
+msgstr "MG 34 Panzerlauf"
+
+msgctxt "desc/weapon/mg34_tank_front"
+msgid "MG 34 Panzerlauf"
+msgstr "MG 34 Panzerlauf"
+
+msgctxt "desc/weapon/kpvt_aa"
+msgid "14.5mm KPVT"
+msgstr "14.5mm KPVT"
+
+msgctxt "desc/weapon/type_92_aa"
+msgid "Type 92 7.7mm Machine Gun"
+msgstr "Type 92 7.7mm Machine Gun"
+
+msgctxt "desc/weapon/fn_model_d"
+msgid "FN Model D"
+msgstr "FN Model D"
+
+msgctxt "desc/weapon/type_97_plane"
+msgid "7.7mm Type 97 Machine Gun"
+msgstr "7.7mm Type 97 Machine Gun"
+
+msgctxt "desc/weapon/mg131_bipod"
+msgid "MG 131 Tripod"
+msgstr "MG 131 Tripod"
+
+msgctxt "desc/weapon/mg131"
+msgid "MG 131"
+msgstr "MG 131"
+
+msgctxt "desc/weapon/rpg1"
+msgid "RPG-1"
+msgstr "RPG-1"
+
+msgctxt "desc/weapon/winchester_1895"
+msgid "Winchester Model 1895"
+msgstr "Winchester Model 1895"
+
+msgctxt "desc/weapon/lewis_gun_ger"
+msgid "MG 137(h)"
+msgstr "MG 137(h)"
+
+msgctxt "desc/weapon/lewis_gun_us"
+msgid "M1917 Lewis"
+msgstr "M1917 Lewis"
+
+msgctxt "desc/weapon/rp_46"
+msgid "RP-46"
+msgstr "RP-46"
+
+msgctxt "desc/weapon/rp_46_x2"
+msgid "RP-46 x2"
+msgstr "RP-46 x2"
+
+msgctxt "desc/weapon/rpd"
+msgid "RPD"
+msgstr "RPD"
+
+msgctxt "desc/weapon/as44"
+msgid "AS-44"
+msgstr "AS-44"
+
+msgctxt "desc/weapon/browning_m19a4_nomag"
+msgid "30. Cal Browing M19A4"
+msgstr "30. Cal Browing M19A4"
+
+msgctxt "desc/weapon/winchester_m1912"
+msgid "Winchester Model 1912 Shotgun"
+msgstr "Winchester Model 1912 Shotgun"
+
+msgctxt "desc/weapon/winchester_m1912_bayonet"
+msgid "Winchester Model 1912 Shotgun"
+msgstr "Winchester Model 1912 Shotgun"
+
+msgctxt "desc/weapon/pansarskott_m46"
+msgid "Pansarskott M/46"
+msgstr "Pansarskott M/46"
+
+msgctxt "desc/weapon/al_43"
+msgid "AL-43"
+msgstr "AL-43"
+
+msgctxt "desc/weapon/beretta_m38a"
+msgid "Beretta M38A"
+msgstr "Beretta M38A"
+
+msgctxt "desc/weapon/carcano"
+msgid "Carcano Modello 38"
+msgstr "Carcano Modello 38"
+
+msgctxt "desc/weapon/fnab_43"
+msgid "FNAB-43"
+msgstr "FNAB-43"
+
+msgctxt "desc/weapon/grb_39"
+msgid "Granatbüchse 39"
+msgstr "Granatbüchse 39"
+
+msgctxt "desc/weapon/ppsh41_9mm_drum"
+msgid "PPSH-41 (9mm)"
+msgstr "PPSH-41 (9mm)"
+
+msgctxt "desc/weapon/sig_mkmo"
+msgid "SIG MKMO"
+msgstr "SIG MKMO"
+
+msgctxt "desc/weapon/sig_mkms"
+msgid "SIG MKMS"
+msgstr "SIG MKMS"
+
+msgctxt "desc/weapon/sig_mkps"
+msgid "SIG MKPO"
+msgstr "SIG MKPO"
+
+msgctxt "desc/weapon/sturmpistole"
+msgid "Sturmpistole"
+msgstr "Sturmpistole"
+
+msgctxt "desc/weapon/wz35"
+msgid "Wz. 35 PzB 770(p)"
+msgstr "Wz. 35 PzB 770(p)"
+
+msgctxt "desc/weapon/20mm_fliegerfaust"
+msgid "Fliegerfaust B"
+msgstr "Fliegerfaust B"
+
+msgctxt "desc/weapon/ruby"
+msgid "Ruby"
+msgstr "Ruby"
+
+msgctxt "desc/weapon/mac31_mace"
+msgid "MAC Modèle 1931"
+msgstr "MAC Modèle 1931"
+
+msgctxt "desc/weapon/type99_early"
+msgid "Type 99 Short Rifle"
+msgstr "Type 99 Short Rifle"
+
+msgctxt "desc/weapon/type99_mid"
+msgid "Type 99 Short Rifle"
+msgstr "Type 99 Short Rifle"
+
+msgctxt "desc/weapon/type99_late_ijn"
+msgid "Special Navy Type 99 Rifle"
+msgstr "Special Navy Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_late"
+msgid "Substitute Type 99 Rifle"
+msgstr "Substitute Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_late_jinsen"
+msgid "Substitute Type 99 Rifle"
+msgstr "Substitute Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_long"
+msgid "Type 99 Rifle"
+msgstr "Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_long_ija"
+msgid "Type 99 Rifle"
+msgstr "Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_long_ijn"
+msgid "Type 99 Rifle"
+msgstr "Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_long_jap"
+msgid "Type 99 Rifle"
+msgstr "Type 99 Rifle"
+
+msgctxt "desc/weapon/type38"
+msgid "Type 38 Infantry Rifle"
+msgstr "Type 38 Infantry Rifle"
+
+msgctxt "desc/weapon/type38_carbine"
+msgid "Type 38 Carbine"
+msgstr "Type 38 Carbine"
+
+msgctxt "desc/weapon/type38_short"
+msgid "Type 38 Short"
+msgstr "Type 38 Short"
+
+msgctxt "desc/weapon/type_44"
+msgid "Type 44 Carbine"
+msgstr "Type 44 Carbine"
+
+msgctxt "desc/weapon/type99_long_scope"
+msgid "Type 99 Rifle"
+msgstr "Type 99 Rifle"
+
+msgctxt "desc/weapon/type99_early_scope"
+msgid "Type 99 Short Sniper Rifle "
+msgstr "Type 99 Short Sniper Rifle "
+
+msgctxt "desc/weapon/type99_mid_scope"
+msgid "Type 99 Short Sniper Rifle "
+msgstr "Type 99 Short Sniper Rifle "
+
+msgctxt "desc/weapon/vz_24"
+msgid "Vz. 24"
+msgstr "Vz. 24"
+
+msgctxt "desc/weapon/type_tsing_tao"
+msgid "Tsing Tao Type 16"
+msgstr "Tsing Tao Type 16"
+
+msgctxt "desc/weapon/type_97_inf"
+msgid "Type 97 Tank Machine Gun"
+msgstr "Type 97 Tank Machine Gun"
+
+msgctxt "desc/weapon/type97_scope"
+msgid "Type 97 Sniper Rifle"
+msgstr "Type 97 Sniper Rifle"
+
+msgctxt "desc/weapon/type1_carcano"
+msgid "Type I Infantry Rifle"
+msgstr "Type I Infantry Rifle"
+
+msgctxt "desc/weapon/type4_rifle"
+msgid "Type 4 Rifle"
+msgstr "Type 4 Rifle"
+
+msgctxt "desc/weapon/type100_rifle"
+msgid "Type 100 Rifle"
+msgstr "Type 100 Rifle"
+
+msgctxt "desc/weapon/type100_rifle_unfold"
+msgid "Type 100 Rifle"
+msgstr "Type 100 Rifle"
+
+msgctxt "desc/weapon/type_hei_automatic"
+msgid "Ultra-Light Machine Gun"
+msgstr "Ultra-Light Machine Gun"
+
+msgctxt "desc/weapon/type_hei_automatic_20"
+msgid "Ultra-Light Machine Gun"
+msgstr "Ultra-Light Machine Gun"
+
+msgctxt "desc/weapon/type_hei_rifle_late"
+msgid "Type Hei Rifle"
+msgstr "Type Hei Rifle"
+
+msgctxt "desc/weapon/zh_29_rifle"
+msgid "ZH-29"
+msgstr "ZH-29"
+
+msgctxt "desc/weapon/zh_29_rifle_10"
+msgid "ZH-29"
+msgstr "ZH-29"
+
+msgctxt "desc/weapon/type_89_lmg"
+msgid "Type 89 Machine Gun"
+msgstr "Type 89 Machine Gun"
+
+msgctxt "desc/weapon/type_27_mortar"
+msgid "Type 27 Grenade Discharger"
+msgstr "Type 27 Grenade Discharger"
+
+msgctxt "desc/weapon/type_89_mortar"
+msgid "Type 89 Grenade Discharger"
+msgstr "Type 89 Grenade Discharger"
+
+msgctxt "desc/weapon/type38_grenade_launcher"
+msgid "Type 100 Grenade Launcher"
+msgstr "Type 100 Grenade Launcher"
+
+msgctxt "desc/weapon/type99_early_grenade_launcher"
+msgid "Type 2 Grenade Launcher"
+msgstr "Type 2 Grenade Launcher"
+
+msgctxt "desc/weapon/type99_mid_grenade_launcher"
+msgid "Type 2 Grenade Launcher"
+msgstr "Type 2 Grenade Launcher"
+
+msgctxt "desc/weapon/type_100_smg_late"
+msgid "Type 100 Kai SMG"
+msgstr "Type 100 Kai SMG"
+
+msgctxt "desc/weapon/type_100_smg_early"
+msgid "Type 100 SMG"
+msgstr "Type 100 SMG"
+
+msgctxt "desc/weapon/type_100_smg_early_bipod"
+msgid "Type 100 SMG"
+msgstr "Type 100 SMG"
+
+msgctxt "desc/weapon/type_100_paratrooper_smg_unfold"
+msgid "Type 100 SMG Special"
+msgstr "Type 100 SMG Special"
+
+msgctxt "desc/weapon/type_100_paratrooper_smg"
+msgid "Type 100 SMG Special"
+msgstr "Type 100 SMG Special"
+
+msgctxt "desc/weapon/type_2_smg_1934"
+msgid "Type 2 SMG"
+msgstr "Type 2 SMG"
+
+msgctxt "desc/weapon/type_1_smg_late"
+msgid "Type 1 SMG"
+msgstr "Type 1 SMG"
+
+msgctxt "desc/weapon/tokyo_arsenal_model_1927"
+msgid "Tokyo Arsenal SMG 1927"
+msgstr "Tokyo Arsenal SMG 1927"
+
+msgctxt "desc/weapon/mp_18"
+msgid "MP 18"
+msgstr "MP 18"
+
+msgctxt "desc/weapon/beretta_m38_42"
+msgid "Beretta 38/42"
+msgstr "Beretta 38/42"
+
+msgctxt "desc/weapon/hamada_type_1"
+msgid "Type 1 Pistol"
+msgstr "Type 1 Pistol"
+
+msgctxt "desc/weapon/hamada_type_2"
+msgid "Type 2 Pistol"
+msgstr "Type 2 Pistol"
+
+msgctxt "desc/weapon/type_14"
+msgid "Type 14 Pistol"
+msgstr "Type 14 Pistol"
+
+msgctxt "desc/weapon/type_94"
+msgid "Type 94 Pistol"
+msgstr "Type 94 Pistol"
+
+msgctxt "desc/weapon/type_99_lmg_paratrooper_unfold"
+msgid "Type 99 Paratrooper LMG"
+msgstr "Type 99 Paratrooper LMG"
+
+msgctxt "desc/weapon/type_99_lmg_paratrooper"
+msgid "Type 99 Paratrooper LMG"
+msgstr "Type 99 Paratrooper LMG"
+
+msgctxt "desc/weapon/type_99_lmg"
+msgid "Type 99 LMG"
+msgstr "Type 99 LMG"
+
+msgctxt "desc/weapon/type_97"
+msgid "Type 97 Tank Machine Gun"
+msgstr "Type 97 Tank Machine Gun"
+
+msgctxt "desc/weapon/type_97_x2"
+msgid "Double Type 97 Tank Machine Gun"
+msgstr "Double Type 97 Tank Machine Gun"
+
+msgctxt "desc/weapon/vickers_dutch"
+msgid "Vickers M.18"
+msgstr "Vickers M.18"
+
+msgctxt "desc/weapon/madsen_belt"
+msgid "Madsen M/40"
+msgstr "Madsen M/40"
+
+msgctxt "desc/weapon/brownning_m2_watercooled"
+msgid "Watercooled M2 Browning"
+msgstr "Watercooled M2 Browning"
+
+msgctxt "desc/weapon/type_91"
+msgid "Type 91 Tank Machine Gun"
+msgstr "Type 91 Tank Machine Gun"
+
+msgctxt "desc/weapon/type_96_lmg"
+msgid "Type 96 LMG"
+msgstr "Type 96 LMG"
+
+msgctxt "desc/weapon/type_92_hmg"
+msgid "Type 92 HMG"
+msgstr "Type 92 HMG"
+
+msgctxt "desc/weapon/type_17_smg"
+msgid "Dagu Type 17"
+msgstr "Dagu Type 17"
+
+msgctxt "desc/weapon/type_17_lmg"
+msgid "Liao Type 17 LMG"
+msgstr "Liao Type 17 LMG"
+
+msgctxt "desc/weapon/type_11_lmg"
+msgid "Type 11 LMG"
+msgstr "Type 11 LMG"
+
+msgctxt "desc/weapon/type97_aa_mgun"
+msgid "Type 97 HMG"
+msgstr "Type 97 HMG"
+
+msgctxt "desc/weapon/type93_fixed"
+msgid "Type 93 HMG"
+msgstr "Type 93 HMG"
+
+msgctxt "desc/weapon/ni_5_lunge_mine"
+msgid "Lunge Mine"
+msgstr "Lunge Mine"
+
+msgctxt "desc/weapon/ni_5_lunge_mine_ai"
+msgid "Lunge Mine"
+msgstr "Lunge Mine"
+
+msgctxt "desc/weapon/mg100_doubledrum"
+msgid "Type 100 MG"
+msgstr "Type 100 MG"
+
+msgctxt "desc/weapon/type4_70mm"
+msgid "Type 4 Rocket Launcher (70mm)"
+msgstr "Type 4 Rocket Launcher (70mm)"
+
+msgctxt "desc/weapon/type4_90mm"
+msgid "Type 4 Rocket Launcher (90mm)"
+msgstr "Type 4 Rocket Launcher (90mm)"
+
+msgctxt "desc/weapon/type_5_recoiless"
+msgid "Type 5 Recoilless Rifle"
+msgstr "Type 5 Recoilless Rifle"
+
+msgctxt "desc/stuff/type94_smoke"
+msgid "Type 94 Smoke Grenade"
+msgstr "Type 94 Smoke Grenade"
+
+msgctxt "desc/stuff/type24"
+msgid "Type 24 Grenade"
+msgstr "Type 24 Grenade"
+
+msgctxt "desc/stuff/type91_wp"
+msgid "Type 11 Smoke Grenade"
+msgstr "Type 11 연막 수류탄"
+
+msgctxt "desc/stuff/type99at"
+msgid "Type 99 Mine"
+msgstr "Type 99 Mine"
+
+msgctxt "desc/stuff/type99at_x2"
+msgid "Type 99 Mine x2"
+msgstr "Type 99 Mine x2"
+
+msgctxt "desc/stuff/type_3_mine"
+msgid "Type 3 Mine"
+msgstr "Type 3 Mine"
+
+msgctxt "desc/stuff/type_93_mine"
+msgid "Type 93 Mine"
+msgstr "Type 93 Mine"
+
+msgctxt "desc/stuff/type_3_bomb_mine"
+msgid "Type 3 Bomb"
+msgstr "Type 3 Bomb"
+
+msgctxt "desc/stuff/molotov_jap"
+msgid "Kaenbin"
+msgstr "Kaenbin"
+
+msgctxt "desc/stuff/type3at"
+msgid "Type 3 Anti Tank Grenade"
+msgstr "Type 3 Anti Tank Grenade"
+
+msgctxt "desc/stuff/type10"
+msgid "Type 10 Grenade"
+msgstr "Type 10 Grenade"
+
+msgctxt "desc/stuff/type91"
+msgid "Type 91 Grenade (Modified)"
+msgstr "Type 91 Grenade (개량)"
+
+msgctxt "desc/stuff/type97"
+msgid "Type 97 Grenade"
+msgstr "Type 97 Grenade"
+
+msgctxt "desc/stuff/type99"
+msgid "Type 99 Grenade"
+msgstr "Type 99 Grenade"
+
+msgctxt "desc/stuff/type99_smoke_candle_grenade"
+msgid "Type 99 Smoke Candle"
+msgstr "Type 99 Smoke Candle"
+
+msgctxt "desc/stuff/type99_smoke_candle_grenade_tank"
+msgid "Type 99 Smoke Candle"
+msgstr "Type 99 Smoke Candle"
+
+msgctxt "desc/stuff/10kg_naval_smoke_candle_grenade"
+msgid "10kg Naval Smoke Candle"
+msgstr "10kg Naval Smoke Candle"
+
+msgctxt "desc/stuff/type4"
+msgid "Type 4 Grenade"
+msgstr "Type 4 Grenade"
+
+msgctxt "desc/stuff/type98"
+msgid "Type 98 Grenade"
+msgstr "Type 98 Grenade"
+
+msgctxt "desc/stuff/incediary_stick_grenade"
+msgid "Incendiary Stick Grenade"
+msgstr "소이 막대 수류탄"
+
+msgctxt "desc/stuff/anm8_smoke_paradrop_M22"
+msgid "AN-M8 HC Grenade (Tank Paradrop)"
+msgstr "AN-M8 HC Grenade (전차 공중투하)"
+
+msgctxt "desc/weapon/mp34"
+msgid "MP 34"
+msgstr "MP 34"
+
+msgctxt "desc/weapon/mp34_jap"
+msgid "Type Su"
+msgstr "Type Su"
+
+msgctxt "desc/weapon/type_100_flamethrower"
+msgid "Type 100 Flamethrower"
+msgstr "Type 100 Flamethrower"
+
+msgctxt "desc/weapon/type_93_flamethrower"
+msgid "Type 93 Flamethrower"
+msgstr "Type 93 Flamethrower"
+
+msgctxt "desc/weapon/an_m2_stinger"
+msgid "M2 Stinger"
+msgstr "M2 Stinger"
+
+msgctxt "desc/weapon/hotchkiss_m1922"
+msgid "Hotchkiss M1922"
+msgstr "Hotchkiss M1922"
+
+msgctxt "desc/weapon/mannlicher_m1895"
+msgid "Geweer M. 95 (Japanese Conversion)"
+msgstr "Geweer M. 95 (Japanese Conversion)"
+
+msgctxt "desc/weapon/mannlicher_m1895_6mm"
+msgid "Geweer M. 95"
+msgstr "Geweer M. 95"
+
+msgctxt "desc/weapon/type22_murata"
+msgid "Type 22 Rifle"
+msgstr "Type 22 Rifle"
+
+msgctxt "desc/weapon/type13_murata"
+msgid "Type 13 Rifle"
+msgstr "Type 13 Rifle"
+
+msgctxt "desc/weapon/type18_murata"
+msgid "Type 18 Rifle"
+msgstr "Type 18 Rifle"
+
+msgctxt "desc/weapon/tz_45"
+msgid "TZ-45"
+msgstr "TZ-45"
+
+msgctxt "desc/weapon/at44"
+msgid "AT-44"
+msgstr "AT-44"
+
+msgctxt "desc/weapon/type_1_lmg"
+msgid "Type 1 LMG"
+msgstr "Type 1 LMG"
+
+msgctxt "desc/weapon/vg1_5"
+msgid "Volkssturmgewehr 45"
+msgstr "Volkssturmgewehr 45"
+
+msgctxt "desc/weapon/vg2"
+msgid "VG. 2"
+msgstr "VG. 2"
+
+msgctxt "desc/weapon/stg45m"
+msgid "StG 45(M)"
+msgstr "StG 45(M)"
+
+msgctxt "desc/weapon/type_mo"
+msgid "Type Mo"
+msgstr "Type Mo"
+
+msgctxt "desc/weapon/krag_jorgensen"
+msgid "Krag Jørgensen"
+msgstr "Krag Jørgensen"
+
+msgctxt "desc/weapon/mg45_tank"
+msgid "MG 45 Panzerlauf"
+msgstr "MG 45 Panzerlauf"
+
+msgctxt "desc/weapon/type_4_mgun"
+msgid "Type 4 Tank Machine Gun"
+msgstr "Type 4 Tank Machine Gun"
+
+msgctxt "desc/weapon/kaho_flamethrower_R"
+msgid "Shisei Electro-Ignited Flame Discharger"
+msgstr "Shisei Electro-Ignited Flame Discharger"
+
+msgctxt "desc/weapon/kaho_flamethrower_L"
+msgid "Shisei Electro-Ignited Flame Discharger"
+msgstr "Shisei Electro-Ignited Flame Discharger"
+
+msgctxt "desc/weapon/type_24"
+msgid "Type 24 Chiang Kai Shek Rifle"
+msgstr "Type 24 Chiang Kai Shek Rifle"
+
+msgctxt "desc/weapon/type_30"
+msgid "Type 30 Rifle"
+msgstr "Type 30 Rifle"
+
+msgctxt "desc/weapon/hanyang_rifle"
+msgid "Hanyang 88 Rifle"
+msgstr "Hanyang 88 Rifle"
+
+msgctxt "desc/weapon/hanyang_carbine"
+msgid "Hanyang 88 Carbine"
+msgstr "Hanyang 88 Carbine"
+
+msgctxt "desc/weapon/type_30_carbine"
+msgid "Type 30 Rifle"
+msgstr "Type 30 Rifle"
+
+msgctxt "desc/weapon/type_13_liao"
+msgid "Type 13 Liao"
+msgstr "Type 13 Liao"
+
+msgctxt "desc/weapon/mauser_c96_carbine_10"
+msgid "C96 Carbine"
+msgstr "C96 Carbine"
+
+msgctxt "desc/weapon/mauser_c96_carbine_20"
+msgid "C96 Carbine (20 Round Magazine)"
+msgstr "C96 Carbine (20 Round Magazine)"
+
+msgctxt "desc/weapon/mauser_c96_carbine_30"
+msgid "C96 Carbine (30 Round Magazine)"
+msgstr "C96 Carbine (30 Round Magazine)"
+
+msgctxt "desc/weapon/mauser_c96_carbine_40"
+msgid "C96 Carbine (40 Round Magazine)"
+msgstr "C96 Carbine (40 Round Magazine)"
+
+msgctxt "desc/weapon/type_14_pistol"
+msgid "Type 14 Pistol"
+msgstr "Type 14 Pistol"
+
+msgctxt "desc/weapon/type_14_late"
+msgid "Type 14 Pistol"
+msgstr "Type 14 Pistol"
+
+msgctxt "desc/weapon/type_26_revolver"
+msgid "Type 26 Revolver"
+msgstr "Type 26 Revolver"
+
+msgctxt "desc/weapon/type_94_late"
+msgid "Type 94 Pistol"
+msgstr "Type 94 Pistol"
+
+msgctxt "desc/weapon/zb30"
+msgid "ZB vz. 30"
+msgstr "ZB vz. 30"
+
+msgctxt "desc/weapon/zb26"
+msgid "Type Chi"
+msgstr "Type Chi"
+
+msgctxt "desc/weapon/type_2_tera"
+msgid "Type 2 Rifle"
+msgstr "Type 2 Rifle"
+
+msgctxt "desc/weapon/type_2_mukden_smg"
+msgid "Type II Mukden"
+msgstr "Type II Mukden"
+
+msgctxt "desc/weapon/flaregun_jap"
+msgid "Type 90 Flaregun"
+msgstr "Type 90 Flaregun"
+
+msgctxt "desc/weapon/type_10_mortar"
+msgid "Type 10 Grenade Discharger"
+msgstr "Type 10 Grenade Discharger"
+
+msgctxt "desc/weapon/type38_silencer"
+msgid "Type 38 Infantry Rifle (Silenced)"
+msgstr "Type 38 Infantry Rifle (소음)"
+
+msgctxt "desc/weapon/type38_carbine_silencer"
+msgid "Type 38 Carbine (Silenced)"
+msgstr "Type 38 Carbine (소음)"
+
+msgctxt "desc/weapon/type99_long_silencer"
+msgid "Type 99 Rifle (Silenced)"
+msgstr "Type 99 Rifle (소음)"
+
+msgctxt "desc/weapon/type99_mid_silencer"
+msgid "Type 99 Short Rifle (Silenced)"
+msgstr "Type 99 Short Rifle (소음)"
+
+msgctxt "desc/weapon/type97_scope_silencer"
+msgid "Type 97 Sniper Rifle (Silenced)"
+msgstr "Type 97 Sniper Rifle (소음)"
+
+msgctxt "desc/weapon/type_98_lmg"
+msgid "Type 98 LMG"
+msgstr "Type 98 LMG"
+
+msgctxt "desc/weapon/sig_1920_type"
+msgid "Type Be"
+msgstr "Type Be"
+
+msgctxt "desc/weapon/sig_1920_type_ger"
+msgid "SIG M1920"
+msgstr "SIG M1920"
+
+msgctxt "desc/weapon/type99_bouganville_launcher"
+msgid "Type 99 Bouganville Improvised Grenade Launcher"
+msgstr "Type 99 Bouganville Improvised Grenade Launcher"
+
+msgctxt "desc/weapon/type38_early_grenade_91_launcher"
+msgid "Type 91 Grenade Launcher"
+msgstr "Type 91 Grenade Launcher"
+
+msgctxt "desc/weapon/type99_early_grenade_3_launcher"
+msgid "Type 3 Grenade Launcher"
+msgstr "Type 3 Grenade Launcher"
+
+msgctxt "desc/weapon/mauser_c96_chi_nostock"
+msgid "Shanxi Type 17"
+msgstr "Shanxi Type 17"
+
+msgctxt "desc/weapon/mauser_c96_nostock"
+msgid "C96 Pistol"
+msgstr "C96 Pistol"
+
+msgctxt "desc/weapon/mauser_c96_stock"
+msgid "C96 Pistol"
+msgstr "C96 Pistol"
+
+msgctxt "desc/weapon/mauser_c96_m1932_nostock"
+msgid "Mauser M1932 Schnellfeuer"
+msgstr "Mauser M1932 Schnellfeuer"
+
+msgctxt "desc/weapon/mauser_c96_m1932_stock"
+msgid "Mauser M1932 Schnellfeuer"
+msgstr "Mauser M1932 Schnellfeuer"
+
+msgctxt "desc/weapon/browning_m2_watercooled"
+msgid "Watercooled Browing .50 cal M2"
+msgstr "Watercooled Browing .50 cal M2"
+
+msgctxt "desc/weapon/ss_ki_flamethrower"
+msgid "SS-KI Flamethrower"
+msgstr "SS-KI Flamethrower"
+
+msgctxt "desc/weapon/type_100_flamethrower_tank"
+msgid "Type 100 Flamethrower"
+msgstr "Type 100 Flamethrower"
+
+msgctxt "desc/weapon/m21bar"
+msgid "Kulsprutegevär m/21"
+msgstr "Kulsprutegevär m/21"
+
+msgctxt "desc/weapon/ag_m42"
+msgid "Automatgevär m/42"
+msgstr "Automatgevär m/42"
+
+msgctxt "desc/weapon/carl_gustaf_m_45"
+msgid "Kulsprutepistol m/45"
+msgstr "Kulsprutepistol m/45"
+
+msgctxt "desc/weapon/ksp_m36"
+msgid "Kulspruta m/36"
+msgstr "Kulspruta m/36"
+
+msgctxt "desc/weapon/mauser_m96"
+msgid "Gevär m/96"
+msgstr "Gevär m/96"
+
+msgctxt "desc/weapon/mauser_m38"
+msgid "Gevär m/38"
+msgstr "Gevär m/38"
+
+msgctxt "desc/weapon/gev_m40"
+msgid "Gevär m/40"
+msgstr "Gevär m/40"
+
+msgctxt "desc/weapon/gev_m40_scope"
+msgid "Gevär m/40 (Scope)"
+msgstr "Gevär m/40 (조준경)"
+
+msgctxt "desc/weapon/mauser_m94"
+msgid "Karbin m/94"
+msgstr "Karbin m/94"
+
+msgctxt "desc/weapon/ss_ki_flamethrower_r1"
+msgid "Soukou Sagyou Ki Flamethrower"
+msgstr "Soukou Sagyou Ki Flamethrower"
+
+msgctxt "desc/weapon/ss_ki_flamethrower_r2"
+msgid "Soukou Sagyou Ki Flamethrower"
+msgstr "Soukou Sagyou Ki Flamethrower"
+
+msgctxt "desc/weapon/ss_ki_flamethrower_l1"
+msgid "Soukou Sagyou Ki Flamethrower"
+msgstr "Soukou Sagyou Ki Flamethrower"
+
+msgctxt "desc/weapon/ss_ki_flamethrower_l2"
+msgid "Soukou Sagyou Ki Flamethrower"
+msgstr "Soukou Sagyou Ki Flamethrower"
+
+msgctxt "desc/weapon/mg42_vkt"
+msgid "MG42 VKT"
+msgstr "MG42 VKT"
+
+msgctxt "desc/weapon/wanze_charge_weapon_activate"
+msgid "Explosive Charge"
+msgstr "폭약"
+
+msgctxt "desc/weapon/type/wanze_charge_ammo_activate"
+msgid "450KG Explosive Charge [<c(ff1200)>HE</c>]"
+msgstr "450KG 폭파 장약 [<c(ff1200)>HE</c>]"
+
+msgctxt "desc/weapon/wanze_charge_weapon_radio"
+msgid "Explosive Charge"
+msgstr "폭약"
+
+msgctxt "desc/weapon/type/wanze_charge_ammo_radio"
+msgid "450KG Explosive Charge [<c(ff1200)>HE</c>]"
+msgstr "450KG 폭파 장약 [<c(ff1200)>HE</c>]"
+
+msgctxt "desc/weapon/vickers_mki"
+msgid "Vickers M-18"
+msgstr "Vickers M-18"
+
+msgctxt "desc/stuff/s_mine"
+msgid "S-mine (Tank Ammo)"
+msgstr "S-mine (전차 탄약)"
+
+msgctxt "desc/stuff/anm8_smoke_supplies"
+msgid "AN-M8 HC Grenade (Supplies)"
+msgstr "AN-M8 HC Grenade (보급)"
+
+msgctxt "desc/stuff/type99_smoke_candle_grenade_supplies"
+msgid "Type 99 Smoke Candle (Supplies)"
+msgstr "Type 99 Smoke Candle (보급)"
+
+msgctxt "desc/stuff/anm8_smoke_supplies_david"
+msgid "AN-M8 HC Grenade (David Supplies)"
+msgstr "AN-M8 HC Grenade (데이비드 보급)"
+
+msgctxt "desc/stuff/anm8_smoke_supplies_eng"
+msgid "AN-M8 HC Grenade (Supplies)"
+msgstr "AN-M8 HC Grenade (보급)"
+
+msgctxt "desc/stuff/m24_smoke_supplies_fin"
+msgid "M24 Nb. (Supplies)"
+msgstr "M24 Nb. (보급품)"
+
+msgctxt "desc/weapon/svt40_drum"
+msgid "SVT-40 (Drum)"
+msgstr "SVT-40 (Drum)"
+
+msgctxt "desc/weapon/m50_reising"
+msgid "M50 Reising"
+msgstr "M50 Reising"
+
+msgctxt "desc/weapon/m50_reising_30"
+msgid "M50 Reising (30 Round Magazine)"
+msgstr "M50 Reising (30 Round Magazine)"
+
+msgctxt "desc/weapon/johnson_rifle"
+msgid "M1941 Johnson Rifle"
+msgstr "M1941 Johnson Rifle"
+
+msgctxt "desc/weapon/johnson_m1941_lmg"
+msgid "M1941 Johnson LMG"
+msgstr "M1941 Johnson LMG"
+
+msgctxt "desc/weapon/at_rifle_jap_mag_b"
+msgid "Type 95 Anti-Tank Rifle (10 Round Magazine)"
+msgstr "Type 95 Anti-Tank Rifle (10 Round Magazine)"
+
+msgctxt "desc/weapon/at_rifle_jap_mag_s"
+msgid "Type 95 Anti-Tank Rifle"
+msgstr "Type 95 Anti-Tank Rifle"
+
+msgctxt "desc/weapon/panzershreck_54_x6"
+msgid "Panzerschrecks RPZB 54 x6"
+msgstr "Panzerschrecks RPZB 54 x6"
+
+msgctxt "desc/weapon/flame_thrower_b1"
+msgid "B1 Flammenwerfer"
+msgstr "B1 Flammenwerfer"
+
+msgctxt "desc/weapon/flame_thrower_crocodile"
+msgid "Churchill Crocodile Flamethrower"
+msgstr "Churchill Crocodile Flamethrower"
+
+msgctxt "desc/weapon/flame_thrower_zippo"
+msgid "Turret Flamethrower"
+msgstr "포탑 화염방사기"
+
+msgctxt "desc/weapon/type/request_artillery"
+msgid "Signal Pistol"
+msgstr "신호 권총"
+
+msgctxt "desc/weapon/mg31f_mace"
+msgid "MG 31(f)"
+msgstr "MG 31(f)"
+
+msgctxt "desc/weapon/browning_x2"
+msgid "Browing .50 cal M2HB x2"
+msgstr "Browing .50 cal M2HB x2"
+
+msgctxt "desc/weapon/browning_x4"
+msgid "Browing .50 cal M2HB x4"
+msgstr "Browing .50 cal M2HB x4"
+
+msgctxt "desc/weapon/bazooka_m20_new"
+msgid "T74 Anti-tank Launcher"
+msgstr "T74 Anti-tank Launcher"
+
+msgctxt "desc/weapon/m2a2_flame_thrower"
+msgid "E2 Tank Flamethrower"
+msgstr "E2 Tank Flamethrower"
+
+msgctxt "desc/stuff/rg14"
+msgid "RG-14 Grenade"
+msgstr "RG-14 Grenade"
+
+msgctxt "desc/stuff/rg14_30"
+msgid "RG-14/30 Grenade"
+msgstr "RG-14/30 Grenade"
+
+msgctxt "desc/stuff/gongxian"
+msgid "Gongxian Stick Grenade"
+msgstr "Gongxian Stick Grenade"
+
+msgctxt "desc/stuff/gongxianat"
+msgid "Gongxian AT Stick Grenade"
+msgstr "Gongxian AT Stick Grenade"
+
+msgctxt "desc/weapon/tao_rocket_launcher"
+msgid "TOA Iron Works Disposable Launcher"
+msgstr "TOA Iron Works Disposable Launcher"
+
+msgctxt "desc/weapon/type4_70mm_ai_kung"
+msgid "7cm Ai-kung Iron Works Launcher"
+msgstr "7cm Ai-kung Iron Works Launcher"

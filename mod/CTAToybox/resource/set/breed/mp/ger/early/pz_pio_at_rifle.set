@@ -1,0 +1,39 @@
+{breed
+	{behaviour soldier}
+	{skin "ger_heer_39_pz_pio_at"}
+	{portrait "ger_sturmpionier"}
+	{icon "rifle"}
+	{icon_priority 0}
+	{tags "soldier"}
+	{nationality ger}
+	{armors
+		{head ger_stalhelm_m39_gog_a_up}
+	}
+	{perks
+		(include "ability.inc")
+		("rifle_skill_rank_2")("tier2_defense")
+		("at_rank_3")
+	
+	{"health" "400%"}
+}
+	{veterancy
+		(include "ability.inc")
+		("veterancy_lvl_0")
+	}
+	{inventory
+		{item "pzb_39_ctb_ger" filled}
+		{item "atrifle_ger ammo" 150 25}
+
+		{item "p38_ctb_ger" filled}
+		{item "pistol ammo" 120 40}
+
+		{item "m24_splinter grenade" 4.5 1}
+		{item "nbk39 grenade" 2.5 1}
+
+		{item "bandage_ger" 7 1}
+		{item "shovel_ger"}
+		{item "ger_sidecap_m39_var2_pzpio_panzer"}
+
+		{in_hands 0}
+	}
+}

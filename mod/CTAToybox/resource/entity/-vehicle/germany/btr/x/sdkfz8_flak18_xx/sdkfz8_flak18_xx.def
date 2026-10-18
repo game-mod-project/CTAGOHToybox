@@ -1,0 +1,82 @@
+{game_entity
+	(include "/properties/vehicle_xx.ext")
+	{extension "sdkfz8_flak18_xx.mdl"}
+	{volume "body1"
+		{thickness 29}
+	}
+	{volume "body2"
+		{thickness 29
+			{top 16}
+		}
+		{able {holed}}
+	}
+	{volume "body3"
+		{thickness 29
+			{top 16}
+		}
+		{able {holed}}
+	}
+	{volume "body4"
+		{thickness 29
+			{top 16}
+		}
+		{tags "no_target"}
+	}
+	{volume "body5"
+		{thickness 29}
+		{tags "no_target"}
+	}
+	{volume "body6"
+		{thickness 29}
+		{tags "no_target"}
+	}
+	{volume "body7"
+		{thickness 29}
+	}
+	{volume "engine1"
+		{thickness 10}
+		{able {holed}}
+	}
+	{Volume "turret1"
+		{thickness 29}
+	}
+	{Volume "turret2"
+		{thickness 29}
+		{able {holed}}
+	}
+	{volume "barrel1"
+		{thickness 29}
+	}
+	{volume "barrel2"
+		{thickness 29}
+	}
+	{volume "barrel3"
+		{thickness 29}
+	}
+	{volume "barrel4"
+		{thickness 29}
+	}
+	{volume "part5"
+		{thickness 29}
+	}
+	{volume "shield1"
+		{thickness 20}
+	}
+	{volume "shield2"
+		{thickness 12}
+	}
+	{volume "shield3"
+		{thickness 12}
+	}
+	{volume "shield4"
+		{thickness 12}
+	}
+	{volume "wheelleft1"
+		{thickness 4}
+	}
+	{volume "wheelright1"
+		{thickness 4}
+	}
+	
+	("tracks" thickness(40))
+}

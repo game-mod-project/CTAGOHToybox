@@ -1,0 +1,194 @@
+# source: vanilla interface/text/mission/single/04-usa/1944_07_hedgerow_hell.pot
+# game-version: 1.0.6.7-aaa36ed4d
+msgid ""
+msgstr ""
+"Project-Id-Version: Gates of Hell Editor (Dev) (1944_07_hedgerow_hell)\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/date"
+msgid "July 11th, 1944 · Les Hauts-Vents, West of Pont-Hebert, Normandy"
+msgstr "1944년 7월 11일 · 노르망디, 퐁에베르 서쪽 레 오방"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/doctrine_allround"
+msgid "Doctrine: All-Round"
+msgstr "교리: 전방위"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/doctrine_defensive"
+msgid "Doctrine: Defensive"
+msgstr "교리: 방어"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/doctrine_irregular"
+msgid "Doctrine: Irregular"
+msgstr "교리: 비정규"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/doctrine_offensive"
+msgid "Doctrine: Offensive"
+msgstr "교리: 공세"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/hold_hq"
+msgid "Hold your HQ"
+msgstr "본부를 사수하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_911"
+msgid "Capture Hill 91-1"
+msgstr "91-1 고지를 점령하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_912"
+msgid "Capture Hill 91-2"
+msgstr "91-2 고지를 점령하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_fusbat275"
+msgid "Break the positions of Fus Bat 275"
+msgstr "제275 수색대대의 진지를 돌파하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_option_select1"
+msgid "Select your Doctrine for the mission:"
+msgstr "임무에 쓸 교리를 선택하라:"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_pzrgt902"
+msgid "Break the positions of Pz Gren Rgt 902"
+msgstr "제902 판처그레나디어 연대의 진지를 돌파하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/mission_rgt984"
+msgid " Break the positions of Gren Rgt 984"
+msgstr " 제984 그레나디어 연대의 진지를 돌파하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/name"
+msgid "Hedgerow Hell"
+msgstr "산울타리 지옥"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/name_big"
+msgid "Hedgerow Hell "
+msgstr "산울타리 지옥"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/00"
+msgid "Welcome to Normandy, 3rd Armored. The situation ain't pretty."
+msgstr "노르망디에 온 것을 환영한다, 제3기갑. 상황이 좋지 않다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/01"
+msgid "Our advance across the river Vire was rather slow but now we're approaching Hauts Vents. Fighting among the hedgerows is extremely difficult."
+msgstr "비르 강을 건너는 우리 진격은 꽤 더뎠지만 이제 오방에 다가가고 있다. 산울타리 사이의 전투는 극도로 어렵다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/02"
+msgid "Our reconnaissance team has established this command post just off the main road towards Pont- Hébert. We are waiting for reinforcements."
+msgstr "우리 정찰대가 퐁에베르로 가는 큰길 바로 옆에 이 지휘소를 세웠다. 증원을 기다리고 있다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/03"
+msgid "The first Sherman has arrived, let’s hope the rest makes it here quick."
+msgstr "첫 번째 셔먼이 도착했다. 나머지도 빨리 오길 바라자."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/04"
+msgid "That was close but I hear tank engines in the distance. Prepare to defend our HQ at all costs, the Germans are trying to take us by surprise!"
+msgstr "위험했지만 멀리서 전차 엔진 소리가 들린다. 무슨 일이 있어도 본부를 지킬 준비를 해라. 독일군이 우리를 기습하려 한다!"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/05"
+msgid "We held our own, but the neighboring platoon got hit hard. They need our help to push back the Germans. If the Krauts overrun them, they will push into our rear, that cannot happen."
+msgstr "우리는 버텨 냈지만 이웃 소대가 크게 당했다. 독일군을 밀어내려면 우리 도움이 필요하다. 독일 놈들이 저들을 뚫으면 우리 후방으로 밀고 들어온다. 그런 일이 있어서는 안 된다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/06"
+msgid "We have captured Germans from the Panzer Lehr Division, which means they are probably in the area. The prisoners also told us that the 275. Infantry Division has set up defenses everywhere, you have to advance extremely carefully."
+msgstr "판처 레어 사단 소속 독일군을 붙잡았다. 이 근처에 있을 가능성이 높다는 뜻이다. 포로들 말로는 제275보병사단이 곳곳에 방어선을 쳤다고 한다. 극도로 조심해서 진격해야 한다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/07"
+msgid "Our scouts also have reported an 88 battery set up along the ridge overlooking the roads, we need to take it out if we want to push towards Hauts Vents."
+msgstr "정찰병들은 도로를 내려다보는 능선에 88 포대가 설치되어 있다고도 보고했다. 오방으로 밀고 나가려면 저것부터 제거해야 한다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/08"
+msgid "All in all, we've extracted from the prisoners the positions of all the main German forces in the area. I order you to take them all out. "
+msgstr "종합하면, 포로들에게서 이 지역 독일군 주력의 위치를 전부 알아냈다. 전부 제거할 것을 명령한다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/narrator/09"
+msgid "Reinforcements have arrived. This is all that we can commit to this attack right now. Make the best out of it, Lieutenant!"
+msgstr "증원이 도착했다. 지금 이 공격에 투입할 수 있는 전부다. 최선을 다해라, Lieutenant!"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/outro_completed"
+msgid "Congratulations! You stand victorious after a hard-fought battle. The attack on St.Lo and Operation Cobra are next. This battle has proven once again that we are an unstoppable force, and the Liberation of Europe is only a matter of time. Keep it up!"
+msgstr "축하한다! 힘든 전투 끝에 승리를 거머쥐었다. 다음은 생로 공격과 코브라 작전이다. 이번 전투는 우리가 막을 수 없는 힘임을 다시 한 번 증명했고, 유럽 해방은 시간문제다. 계속 그렇게 해라!"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/outro_failed"
+msgid "These hedgerows really are hell on earth right now. Apparently, we need different tactics or a bit more luck. We can’t be fazed though, and we need to repeat the attack or Operation Cobra has failed before it has even begun. General Watson’s orders were very clear!"
+msgstr "이 산울타리는 지금 정말 지옥이다. 다른 전술이나 약간의 운이 더 필요한 모양이다. 그렇다고 흔들려서는 안 된다. 공격을 되풀이하지 않으면 코브라 작전은 시작도 하기 전에 실패한다. 왓슨 장군의 명령은 매우 분명했다!"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/place"
+msgid "3rd Armored Division “Spearhead”"
+msgstr "제3기갑사단 '스피어헤드'"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/player/01"
+msgid "The first Shermans have arrived, let’s hope the rest makes it here quick."
+msgstr "첫 번째 셔먼들이 도착했다. 나머지도 빨리 오길 바라자."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/player/02"
+msgid "I hear tank engines in the distance. Prepare to defend our headquarters at all costs, the Germans are trying to take us by surprise!"
+msgstr "멀리서 전차 엔진 소리가 들린다. 무슨 일이 있어도 본부를 지킬 준비를 해라. 독일군이 우리를 기습하려 한다!"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/player/03"
+msgid "We held our own, but the neighboring platoon got hit hard. They need our help to push back the German tanks that took the crossroads to the west of our position. As long as they hold it they can push into our rear, don't let that happen."
+msgstr "우리는 버텨 냈지만 이웃 소대가 크게 당했다. 우리 진지 서쪽 교차로를 차지한 독일 전차를 밀어내려면 저들에게 우리 도움이 필요하다. 놈들이 그곳을 쥐고 있는 한 우리 후방으로 밀고 들어올 수 있다. 그런 일이 있어서는 안 된다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/push_line"
+msgid "Re- establish the line & destroy the German tanks"
+msgstr "전선을 재구축하고 독일군 전차를 파괴하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/story"
+msgid " July 1944. Since the D-Day landings in June, your advance has been steady, if a bit slow; but gradually, the bridgehead widens and deepens, as does the crisis for the Germans. The main objective of general Bradley’s advance is to take the area around St. Lô. To get there, the road to St. Lô must be cleared first.\n\n You will be leading your troops into the hedgerows today. A spotter plane has reported enemy movement nearby. This might be the Panzer Lehr division! They might be trying to counterattack, better sound the alarm and brace yourself. Stand your ground until our main force arrives, and stand by for further orders.\n\nGood luck!"
+msgstr " 1944년 7월. 6월 D데이 상륙 이후 아군의 진격은 다소 느리지만 꾸준했다. 교두보는 조금씩 넓어지고 깊어졌고, 독일군의 위기도 그만큼 깊어졌다. 브래들리 장군이 이끄는 진격의 주 목표는 생로 일대를 점령하는 것이다. 그러려면 먼저 생로로 가는 길을 뚫어야 한다.\n\n 오늘 너는 부대를 이끌고 산울타리 속으로 들어간다. 관측기가 근처에서 적의 움직임을 보고했다. 판처 레어 사단일 수도 있다! 반격을 시도할지도 모르니 경보를 울리고 각오를 다져라. 주력이 도착할 때까지 버티고, 다음 명령을 기다려라.\n\n행운을 빈다!"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/task1"
+msgid "Take positions among the hedgerows around the HQ."
+msgstr "본부 주변 산울타리에 진지를 잡아라."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/task2"
+msgid "Hold off the German column and await reinforcements"
+msgstr "독일군 종대를 저지하고 증원을 기다려라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/task3"
+msgid "Re- establish the line & destroy the German push"
+msgstr "전선을 재구축하고 독일군의 공세를 격파하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/timer"
+msgid "Set up positions around HQ:"
+msgstr "본부 주변 진지 구축:"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/hint_allied_ai"
+msgid "In this mission, you will be assisted by allied infantry of 3rd Armored Division. On the reinforcements tab you can give an order to assault one of the available enemy positions."
+msgstr "이 임무에서는 제3기갑사단 아군 보병의 지원을 받는다. 증원 탭에서 공격 가능한 적 진지 중 하나를 강습하라고 명령할 수 있다."
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/mission_opt_aa"
+msgid "Neutralize German air defense to unlock air support"
+msgstr "독일군 대공 방어를 무력화해 항공 지원을 해제하라"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_911"
+msgid "<c(B29557)>Assault order:</c> Hill 91-1"
+msgstr "<c(B29557)>강습 명령:</c> 91-1 고지"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_912"
+msgid "<c(B29557)>Assault order:</c> Hill 91-2"
+msgstr "<c(B29557)>강습 명령:</c> 91-2 고지"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_fusbat275"
+msgid "<c(B29557)>Assault order:</c> Fus Bat 275 Pos."
+msgstr "<c(B29557)>강습 명령:</c> 제275 수색대대 진지"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_pzrgt902"
+msgid "<c(B29557)>Assault order:</c> Pz Gren Rgt 902 Pos."
+msgstr "<c(B29557)>강습 명령:</c> 제902 판처그레나디어 연대 진지"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/order_rgt984"
+msgid "<c(B29557)>Assault order:</c> Gren Rgt 984 Pos."
+msgstr "<c(B29557)>강습 명령:</c> 제984 그레나디어 연대 진지"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/support_air"
+msgid "Call-in air support"
+msgstr "항공 지원 요청"
+
+msgctxt "mission/single/04-usa/1944_07_hedgerow_hell/v2/reinf/support_barrage"
+msgid "Call-in artillery barrage 155mm"
+msgstr "155mm 포병 탄막 요청"
