@@ -3609,15 +3609,15 @@
 	{Tags "hidden" "rus" "ctb_h1012" 0xc51b}
 	{Tags "hidden" "rus" "ctb_h1013" 0xc51c}
 	{Tags "hidden" "rus" "ctb_h1014" 0xc51d}
-	{Tags "ctb_a854" "hidden" "rus" "ctb_air" 0xc51e}
-	{Tags "ctb_a855" "hidden" "rus" "ctb_air" 0xc520}
-	{Tags "ctb_a856" "hidden" "rus" "ctb_air" 0xc522}
-	{Tags "ctb_a857" "hidden" "rus" "ctb_air" 0xc524}
-	{Tags "ctb_a858" "hidden" "rus" "ctb_air" 0xc526}
-	{Tags "ctb_a859" "hidden" "rus" "ctb_air" 0xc528}
-	{Tags "ctb_a860" "hidden" "rus" "ctb_air" 0xc52a}
-	{Tags "ctb_a861" "hidden" "rus" "ctb_air" 0xc52c}
-	{Tags "ctb_a862" "hidden" "rus" "ctb_air" 0xc52e}
+	{Tags "ctb_a974" "hidden" "rus" "ctb_air" 0xc51e}
+	{Tags "ctb_a975" "hidden" "rus" "ctb_air" 0xc520}
+	{Tags "ctb_a976" "hidden" "rus" "ctb_air" 0xc522}
+	{Tags "ctb_a977" "hidden" "rus" "ctb_air" 0xc524}
+	{Tags "ctb_a978" "hidden" "rus" "ctb_air" 0xc526}
+	{Tags "ctb_a979" "hidden" "rus" "ctb_air" 0xc528}
+	{Tags "ctb_a980" "hidden" "rus" "ctb_air" 0xc52a}
+	{Tags "ctb_a981" "hidden" "rus" "ctb_air" 0xc52c}
+	{Tags "ctb_a982" "hidden" "rus" "ctb_air" 0xc52e}
 	{Helpers
 		{triggers
 			{"ctb_has_rus"

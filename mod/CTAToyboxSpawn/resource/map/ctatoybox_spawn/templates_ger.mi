@@ -5033,14 +5033,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_me_262_500x2" 0xc375
-		{Position -8980 8300}
+		{Position -8180 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc376
-		{Position -8976 8300}
+		{Position -8176 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5048,14 +5048,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_me_262_50mm" 0xc377
-		{Position -8940 8300}
+		{Position -8140 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc378
-		{Position -8936 8300}
+		{Position -8136 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5063,14 +5063,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_me_262_rockets_210x2" 0xc379
-		{Position -8900 8300}
+		{Position -8100 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc37a
-		{Position -8896 8300}
+		{Position -8096 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5078,14 +5078,14 @@
 		{Player 0}
 	}
 	{Entity "me_262_rockets_210x2" 0xc37b
-		{Position -8860 8300}
+		{Position -8060 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc37c
-		{Position -8856 8300}
+		{Position -8056 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5093,14 +5093,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_me_262_rockets_250x2_ai" 0xc37d
-		{Position -8820 8300}
+		{Position -8020 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc37e
-		{Position -8816 8300}
+		{Position -8016 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5108,14 +5108,14 @@
 		{Player 0}
 	}
 	{Entity "me_262_rockets_250x2_ai" 0xc37f
-		{Position -8780 8300}
+		{Position -7980 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc380
-		{Position -8776 8300}
+		{Position -7976 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5123,14 +5123,14 @@
 		{Player 0}
 	}
 	{Entity "bf109_e4b" 0xc381
-		{Position -8740 8300}
+		{Position -7940 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc382
-		{Position -8736 8300}
+		{Position -7936 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5138,14 +5138,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf109_e4b" 0xc383
-		{Position -8700 8300}
+		{Position -9500 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc384
-		{Position -8696 8300}
+		{Position -9496 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5153,14 +5153,14 @@
 		{Player 0}
 	}
 	{Entity "bf109_g6" 0xc385
-		{Position -8660 8300}
+		{Position -9460 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc386
-		{Position -8656 8300}
+		{Position -9456 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5168,14 +5168,14 @@
 		{Player 0}
 	}
 	{Entity "bf109_g6_250kg" 0xc387
-		{Position -8620 8300}
+		{Position -9420 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc388
-		{Position -8616 8300}
+		{Position -9416 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5183,14 +5183,14 @@
 		{Player 0}
 	}
 	{Entity "bf109_g6_rocket" 0xc389
-		{Position -8580 8300}
+		{Position -9380 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc38a
-		{Position -8576 8300}
+		{Position -9376 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5198,14 +5198,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf109_g6_250kg" 0xc38b
-		{Position -8540 8300}
+		{Position -9340 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc38c
-		{Position -8536 8300}
+		{Position -9336 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5213,14 +5213,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf109_g6_rocket" 0xc38d
-		{Position -8500 8300}
+		{Position -9300 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc38e
-		{Position -8496 8300}
+		{Position -9296 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5228,14 +5228,14 @@
 		{Player 0}
 	}
 	{Entity "bf110_e2_1000kg" 0xc38f
-		{Position -8460 8300}
+		{Position -9260 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc390
-		{Position -8456 8300}
+		{Position -9256 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5243,14 +5243,14 @@
 		{Player 0}
 	}
 	{Entity "bf110_e2_flam_500kg" 0xc391
-		{Position -8420 8300}
+		{Position -9220 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc392
-		{Position -8416 8300}
+		{Position -9216 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5258,14 +5258,14 @@
 		{Player 0}
 	}
 	{Entity "bf110_e2_rocket" 0xc393
-		{Position -8380 8300}
+		{Position -9180 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc394
-		{Position -8376 8300}
+		{Position -9176 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5273,14 +5273,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf110_e2" 0xc395
-		{Position -8340 8300}
+		{Position -9140 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc396
-		{Position -8336 8300}
+		{Position -9136 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5288,14 +5288,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf110_e2_1000kg" 0xc397
-		{Position -8300 8300}
+		{Position -9100 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc398
-		{Position -8296 8300}
+		{Position -9096 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5303,14 +5303,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf110_e2_flam_500kg" 0xc399
-		{Position -8260 8300}
+		{Position -9060 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc39a
-		{Position -8256 8300}
+		{Position -9056 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5318,14 +5318,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_bf110_e2_rocket" 0xc39b
-		{Position -8220 8300}
+		{Position -9020 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/ger/late/pilot" 0xc39c
-		{Position -8216 8300}
+		{Position -9016 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -5981,26 +5981,26 @@
 	{Tags "hidden" "ger" "ctb_h627" 0xc372}
 	{Tags "hidden" "ger" "ctb_h628" 0xc373}
 	{Tags "hidden" "ger" "ctb_h629" 0xc374}
-	{Tags "ctb_a413" "hidden" "ger" "ctb_air" 0xc375}
-	{Tags "ctb_a414" "hidden" "ger" "ctb_air" 0xc377}
-	{Tags "ctb_a415" "hidden" "ger" "ctb_air" 0xc379}
-	{Tags "ctb_a416" "hidden" "ger" "ctb_air" 0xc37b}
-	{Tags "ctb_a417" "hidden" "ger" "ctb_air" 0xc37d}
-	{Tags "ctb_a418" "hidden" "ger" "ctb_air" 0xc37f}
-	{Tags "ctb_a419" "hidden" "ger" "ctb_air" 0xc381}
-	{Tags "ctb_a420" "hidden" "ger" "ctb_air" 0xc383}
-	{Tags "ctb_a421" "hidden" "ger" "ctb_air" 0xc385}
-	{Tags "ctb_a422" "hidden" "ger" "ctb_air" 0xc387}
-	{Tags "ctb_a423" "hidden" "ger" "ctb_air" 0xc389}
-	{Tags "ctb_a424" "hidden" "ger" "ctb_air" 0xc38b}
-	{Tags "ctb_a425" "hidden" "ger" "ctb_air" 0xc38d}
-	{Tags "ctb_a426" "hidden" "ger" "ctb_air" 0xc38f}
-	{Tags "ctb_a427" "hidden" "ger" "ctb_air" 0xc391}
-	{Tags "ctb_a428" "hidden" "ger" "ctb_air" 0xc393}
-	{Tags "ctb_a429" "hidden" "ger" "ctb_air" 0xc395}
-	{Tags "ctb_a430" "hidden" "ger" "ctb_air" 0xc397}
-	{Tags "ctb_a431" "hidden" "ger" "ctb_air" 0xc399}
-	{Tags "ctb_a432" "hidden" "ger" "ctb_air" 0xc39b}
+	{Tags "ctb_a513" "hidden" "ger" "ctb_air" 0xc375}
+	{Tags "ctb_a514" "hidden" "ger" "ctb_air" 0xc377}
+	{Tags "ctb_a515" "hidden" "ger" "ctb_air" 0xc379}
+	{Tags "ctb_a516" "hidden" "ger" "ctb_air" 0xc37b}
+	{Tags "ctb_a517" "hidden" "ger" "ctb_air" 0xc37d}
+	{Tags "ctb_a518" "hidden" "ger" "ctb_air" 0xc37f}
+	{Tags "ctb_a519" "hidden" "ger" "ctb_air" 0xc381}
+	{Tags "ctb_a520" "hidden" "ger" "ctb_air" 0xc383}
+	{Tags "ctb_a521" "hidden" "ger" "ctb_air" 0xc385}
+	{Tags "ctb_a522" "hidden" "ger" "ctb_air" 0xc387}
+	{Tags "ctb_a523" "hidden" "ger" "ctb_air" 0xc389}
+	{Tags "ctb_a524" "hidden" "ger" "ctb_air" 0xc38b}
+	{Tags "ctb_a525" "hidden" "ger" "ctb_air" 0xc38d}
+	{Tags "ctb_a526" "hidden" "ger" "ctb_air" 0xc38f}
+	{Tags "ctb_a527" "hidden" "ger" "ctb_air" 0xc391}
+	{Tags "ctb_a528" "hidden" "ger" "ctb_air" 0xc393}
+	{Tags "ctb_a529" "hidden" "ger" "ctb_air" 0xc395}
+	{Tags "ctb_a530" "hidden" "ger" "ctb_air" 0xc397}
+	{Tags "ctb_a531" "hidden" "ger" "ctb_air" 0xc399}
+	{Tags "ctb_a532" "hidden" "ger" "ctb_air" 0xc39b}
 	{Helpers
 		{triggers
 			{"ctb_has_ger"

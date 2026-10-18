@@ -523,6 +523,84 @@
 	("doctrine_t5" cool(0) d(late_usa_support) cost(0))
 }
 
+;===================================
+;       WW EXPANSION DOCTRINES
+;===================================
+
+; -- All-Round Doctrine --
+{"doctrine_m-v-y_tank"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(m-v-y_tank) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_allround) cost(0))
+}
+{"doctrine_60tp_l"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(60tp_l) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_allround) cost(0))
+}
+{"doctrine_t26e5"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t26e5) crew1(tankman_m3:5) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_allround) cost(0))
+}
+{"doctrine_t32"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t32) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_allround) cost(0))
+}
+
+; -- Defensive Doctrine --
+{"doctrine_m103"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(m103) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_defensive) cost(0))
+}
+{"doctrine_t110e3"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t110e3) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_defensive) cost(0))
+}
+{"doctrine_m-v-y_tank1"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(m-v-y_tank1) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_defensive) cost(0))
+}
+{"doctrine_60tp_l_aa"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(60tp_l_aa) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_defensive) cost(0))
+}
+
+; -- Offensive Doctrine --
+{"doctrine_t110e5"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t110e5) crew1(tankman_m3:3) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_offensive) cost(0))
+}
+{"doctrine_blackrock"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(blackrock) crew1(tankman_m3:3) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_offensive) cost(0))
+}
+{"doctrine_gorilla"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(gorilla) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_offensive) cost(0))
+}
+
+; -- Irregular Doctrine --
+{"doctrine_t57_tank"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t57_tank) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_irregular) cost(0))
+}
+{"doctrine_t58"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t58) crew1(tankman_m3:3) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_irregular) cost(0))
+}
+{"doctrine_T110E4"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(T110E4) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_irregular) cost(0))
+}
+
+; -- Support Doctrine --
+{"doctrine_aht7"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(aht7) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_support) cost(0))
+}
+{"doctrine_t803"
+	("squad_vehicle2_doctrine" side(usa) period(late) vehicle(t803) crew1(tankman_m3:4) crew2(tank_com_m3:1))
+	("doctrine_t5" cool(0) d(late_usa_support) cost(0))
+}
+
 ;_________________________________________________
 ;|             inf1                               |
 ;|________________________________________________|
@@ -1197,6 +1275,83 @@
 	("vehicle2" period(late) cd(0) ci(0) g(heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy4) b(heavy) cw(0) cp(0)
 	cost(0))
 	{doctrine late_usa_defensive}
+}
+;//--- WW EXPANSION: USA ---
+; ----- 轻型/特种载具及基础中坦 (常规栏位) -----
+{"t49"
+	("vehicle2" period(late) cd(0) ci(0) t(light) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(light) b(light) cw(0) cp(0) cost(0))
+}
+{"ares90c"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(usa) crew1(tankman_m3:3) crew2(tank_com_m3:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+{"skink"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(medium) b(medium) cw(0) cp(0) cost(0))
+}
+
+; ----- 高级中型坦克 (学说栏位) -----
+{"m46"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(medium) b(heavy) cw(0) cp(0) cost(0))
+}
+{"m46_1"
+	("vehicle2" period(late) cd(0) ci(0) t(medium) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(medium) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- 重型坦克及歼击车扩展线 (学说栏位) -----
+{"m103"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:5) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"t26e5"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"aht7"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"t110e3"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(spg) b(heavy) cw(0) cp(0) cost(0))
+}
+{"t110e5"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:3) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- 摇摆炮塔及连发重型扩展线 (学说栏位) -----
+{"t57_tank"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"t58"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:3) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"m-v-y_tank"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"m-v-y_tank1"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+
+; ----- 终极防线及虚构大杀器 (学说栏位) -----
+{"t803"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"blackrock"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:3) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"60tp_l"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:3) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"60tp_l_aa"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:5) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
+}
+{"gorilla"
+	("vehicle2" period(late) cd(0) ci(0) t(doctrineonly heavy) side(eng) crew1(tankman:4) crew2(tank_commander:1) g(tank3) b(heavy) cw(0) cp(0) cost(0))
+}
+{"t32"
+	("vehicle2" period(late) cd(0) ci(0) g(doctrineonly heavy) side(usa) crew1(tankman:4) crew2(tank_commander:1) g(heavy3) b(heavy) cw(0) cp(0) cost(0))
+}
+{"Jumbo90"
+	("vehicle2" period(late) cd(0) ci(0) t(heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy1) b(medium) cw(0) cp(0)
+	cost(0))
+}
+{"T110E4"
+	("vehicle3" period(late) cd(0) ci(0) t(doctrineonly heavy) side(usa) crew1(tankman_m3:4) crew2(tank_com_m3:1) g(heavy) b(heavy) cw(0) cp(0) cost(0))
 }
 
 ;// Doctrine Units

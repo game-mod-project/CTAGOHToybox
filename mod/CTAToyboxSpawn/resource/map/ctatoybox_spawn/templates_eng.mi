@@ -3993,14 +3993,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_blenheim_mk1_eng" 0xc914
-		{Position -8740 8300}
+		{Position -8300 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/eng/late/pilot" 0xc915
-		{Position -8736 8300}
+		{Position -8296 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4008,14 +4008,14 @@
 		{Player 0}
 	}
 	{Entity "c47_d_eng" 0xc916
-		{Position -8700 8300}
+		{Position -8260 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/eng/late/pilot" 0xc917
-		{Position -8696 8300}
+		{Position -8256 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4023,14 +4023,14 @@
 		{Player 0}
 	}
 	{Entity "horsa_mk1" 0xc918
-		{Position -8660 8300}
+		{Position -8220 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/eng/late/pilot" 0xc919
-		{Position -8656 8300}
+		{Position -8216 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4038,14 +4038,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_hurribomber_mk2c" 0xc91a
-		{Position -8620 8300}
+		{Position -8180 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/eng/late/pilot" 0xc91b
-		{Position -8616 8300}
+		{Position -8176 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4053,14 +4053,14 @@
 		{Player 0}
 	}
 	{Entity "hurricane_mk1a" 0xc91c
-		{Position -8580 8300}
+		{Position -8140 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/eng/late/pilot" 0xc91d
-		{Position -8576 8300}
+		{Position -8136 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4068,14 +4068,14 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_typhoon_mk1b" 0xc91e
-		{Position -8540 8300}
+		{Position -8100 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
 	{Human "mp/eng/late/pilot" 0xc91f
-		{Position -8536 8300}
+		{Position -8096 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4587,12 +4587,12 @@
 	{Tags "hidden" "eng" "ctb_h1986" 0xc911}
 	{Tags "hidden" "eng" "ctb_h1987" 0xc912}
 	{Tags "hidden" "eng" "ctb_h1988" 0xc913}
-	{Tags "ctb_a1739" "hidden" "eng" "ctb_air" 0xc914}
-	{Tags "ctb_a1740" "hidden" "eng" "ctb_air" 0xc916}
-	{Tags "ctb_a1741" "hidden" "eng" "ctb_air" 0xc918}
-	{Tags "ctb_a1742" "hidden" "eng" "ctb_air" 0xc91a}
-	{Tags "ctb_a1743" "hidden" "eng" "ctb_air" 0xc91c}
-	{Tags "ctb_a1744" "hidden" "eng" "ctb_air" 0xc91e}
+	{Tags "ctb_a1910" "hidden" "eng" "ctb_air" 0xc914}
+	{Tags "ctb_a1911" "hidden" "eng" "ctb_air" 0xc916}
+	{Tags "ctb_a1912" "hidden" "eng" "ctb_air" 0xc918}
+	{Tags "ctb_a1913" "hidden" "eng" "ctb_air" 0xc91a}
+	{Tags "ctb_a1914" "hidden" "eng" "ctb_air" 0xc91c}
+	{Tags "ctb_a1915" "hidden" "eng" "ctb_air" 0xc91e}
 	{Helpers
 		{triggers
 			{"ctb_has_eng"

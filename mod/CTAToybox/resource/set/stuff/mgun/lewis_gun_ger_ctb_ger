@@ -3,8 +3,8 @@
 	{inventory {size 6 2}}
 	{filling "ammo lewis_mag" 97}
 	{entity "lewis_gun"}
-	{fireSound 	"smallarms/s3/d1/ENG/Lewis_Gun/Head/"}
-	{fireSoundclose "smallarms/s3/3p/ENG/Lewis_Gun/"}
+	{fireSound "smallarms/s3/d1/RUS/DP27/Head/"}
+	{fireSoundclose "smallarms/s3/3p/RUS/DP27/"}
 	{reloadSound "dt"}
 	{calibre 7.62}
 	{mass 7.2}
