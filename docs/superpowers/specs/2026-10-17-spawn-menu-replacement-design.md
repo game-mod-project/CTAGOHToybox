@@ -72,7 +72,7 @@
 - **소환할 유닛 고르기**(AI 판단): 유닛 색인의 종류 `tank`·`cannon`·`car`(색인이 이미 파괴 모델·잔해·더미를 `vehicle-other`로 따로 둔다)와 로스터에 이름이 나오는 정의만 넣는다. 항공기는 로스터·Spawn Menu 목록에 이름이 나오는 정의만 넣는다. 나머지 `vehicle-other`는 넣지 않는다.
 - **종류 나누기**(AI 판단, 앞에 있는 규칙이 이긴다): ① 그 정의가 로스터에 있으면 `b()` 값(`tanks`·`vehicles`·`empl` 등) ② 전차는 정의 폴더 이름의 `tank_light`·`tank_medium`·`tank_heavy`(바닐라·MACE 꼴) ③ 구축·자주포는 폴더·이름에 `td`·`stug`·`jagd`·`gmc`·`spg`·`sau`·`su_` 등이 있으면 ④ 그래도 모르면 `기타`. 규칙은 `editor/spawn/categories.psv` 같은 손으로 고치는 파일에 두어 사용자가 고칠 수 있게 한다.
 
-## 스커미시: 구매 창 로스터 (사용자 결정)
+## 스커미시: 구매 창 로스터 (사용자 결정. 2026-10-19부터 기본으로 끄고 `--roster`로만 켠다)
 
 근거: 구매 창은 로스터 `set/multiplayer/units/<시기>/units_<국가>.set`으로 채워진다. 유닛마다 `b()`(종류 단추), `{cost}`, `cd()`·`ci()`(첫 대기·재구매 대기), `cp()`를 적는다(`set/multiplayer/units/settings.set` 1–44행). MACE는 `b(tanks)` 367줄, Wunderwaffe는 550줄을 이미 로스터에 넣는다.
 

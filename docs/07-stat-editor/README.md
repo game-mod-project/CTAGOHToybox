@@ -213,7 +213,7 @@ Spawn Menu of MACE를 대체하는 모드 `mod/CTAToyboxSpawn`(이름 `CTAToybox
 - 다시 만들 때는 지난 생성물(`.ctatoybox-spawn.json`)만 지우고 바꾼다. 게임 패치·모드 갱신·스탯 출력 모드 재빌드 뒤에는 다시 만든다.
 - git: 맵 사본(약 210MB)은 넣지 않는다(`.gitignore`). 메뉴·견본·글자·화면·로스터·단추 그림은 넣는다. 지난 생성물을 지우면 빈 폴더도 지운다.
 - 게임에 연결: 게임 `mods` 폴더에 정션을 만들고(`New-Item -ItemType Junction -Path "<게임>\mods\CTAToyboxSpawn" -Target "E:\CTAToybox\mod\CTAToyboxSpawn"`), 모드 목록에서 모든 모드 뒤에 켜고 Spawn Menu of MACE는 끈다. 국가 모드(`CTAToyboxSpawn_<국가>`)도 같은 방법으로 정션을 만들어 CTAToybox Spawn 뒤에 켠다. 순서는 MACE → MACE Wunderwaffe Ultimate Fusion → Auto Medic → CTAToybox → CTAToybox Spawn → 국가 모드들이어야 한다(Fusion이 MACE보다 앞이면 MACE의 옛 `properties/armor.ext`·`unit_research_*.set`·컨퀘스트 로스터가 Fusion 판을 덮어 Fusion 정의가 풀리지 않고 컨퀘스트 연구 목록에서 Fusion 유닛이 빠진다. 2026-10-18 파일 대조).
-- 미확인(게임 안에서만 알 수 있다): 견본 파일의 트리거가 `ctb_has_<국가>`를 켜는지(따로 include한 `{Helpers}`가 합쳐지는지. 안 되면 `--all-nations`), 새 종류 단추를 게임이 받는지(실행 파일이 단추 그림 이름을 `button_%1%_%2%`(순서_국가)로 만든다. 안 되면 `--basic-buttons`), 봇도 비용 0 로스터로 사는지(사람만 0으로 하는 방법은 못 찾음), 증원 창이 멀티·컨퀘스트에서 보이는지와 사라지는 문제가 고쳐지는지, `{type side}`가 멀티에서 국가를 주는지, 봇이 비용 0 로스터를 쓰는지, 견본 id(0xC100~)가 맵의 id와 부딪히는지(Spawn Menu도 같은 범위를 쓴다).
+- 미확인(게임 안에서만 알 수 있다): 견본 파일의 트리거가 `ctb_has_<국가>`를 켜는지(따로 include한 `{Helpers}`가 합쳐지는지. 안 되면 `--all-nations`), `--roster`일 때: 새 종류 단추를 게임이 받는지(실행 파일이 단추 그림 이름을 `button_%1%_%2%`(순서_국가)로 만든다. 안 되면 `--basic-buttons`), 봇도 비용 0 로스터로 사는지(사람만 0으로 하는 방법은 못 찾음), 증원 창이 멀티·컨퀘스트에서 보이는지와 사라지는 문제가 고쳐지는지, `{type side}`가 멀티에서 국가를 주는지, 봇이 비용 0 로스터를 쓰는지, 견본 id(0xC100~)가 맵의 id와 부딪히는지(Spawn Menu도 같은 범위를 쓴다).
 
 ```
 ctatoybox spawn-menu preview
