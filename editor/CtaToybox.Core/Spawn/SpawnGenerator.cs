@@ -1,5 +1,5 @@
 // 스폰 모드의 파일 목록을 만든다: 맵 사본, 메뉴(menu.mi, templates_<국가>.mi, nation_<국가>.mi), 메뉴 글자(.pot), 화면 파일.
-// 스커미시 로스터와 단추 그림은 --no-roster면 내지 않는다.
+// 스커미시 로스터와 단추 그림은 --roster일 때만.
 // 메뉴 글자는 영어 원문(SourcePotPath, 게임은 읽지 않는다)과 게임이 읽는 .pot(PotPath)을 함께 낸다. Translation이 있으면 .pot의 msgid를 번역으로 바꾼다(l10n build와 같은 규칙)
 using System;
 using System.Collections.Generic;
