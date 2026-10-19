@@ -55,10 +55,13 @@ static class SpawnGeneratorTests
         var split = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions(), new SpawnReport(), out nations);
         string coreGer = SpawnText(split, SpawnGenerator.NationTemplatePath("ger"));
         T.True(!coreGer.Contains("{Human ") && coreGer.StartsWith(";{mission"), "the base mod's multiplayer template file is an empty fragment");
-        T.True(SpawnText(split, "resource/map/ctatoybox_spawn/campaign_templates_ger.mi").Contains("{Human "), "campaign templates stay real in the base mod");
+        T.True(!split.Any(f => f.Path.Contains("campaign_templates_")), "no campaign template copies in the base mod by default");
         T.True(nations.ContainsKey("ger") && nations["ger"].Count == 1 && nations["ger"][0].Path == SpawnGenerator.NationTemplatePath("ger") && Encoding.UTF8.GetString(nations["ger"][0].Bytes).Contains("{Human "), "the nation mod holds the real file at the same path");
+        // 캠페인 맵도 국가 모드 경로를 읽는다: 맵에 나오는 국가 ∩ 켠 국가 모드(2026-10-19 사용자 결정)
         string splitCampaign = SpawnText(split, "resource/" + SpawnFixture.Campaign);
-        T.True(splitCampaign.Contains("campaign_templates_ger.mi") && !splitCampaign.Contains("\"/map/ctatoybox_spawn/templates_ger.mi\""), "campaign maps read the campaign templates");
+        T.True(splitCampaign.Contains("\"/map/ctatoybox_spawn/templates_ger.mi\"") && !splitCampaign.Contains("campaign_templates_"), "campaign maps read the nation-mod path");
+        var inBase = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { CampaignInBase = true }, new SpawnReport(), out nations);
+        T.True(SpawnText(inBase, "resource/map/ctatoybox_spawn/campaign_templates_ger.mi").Contains("{Human ") && SpawnText(inBase, "resource/" + SpawnFixture.Campaign).Contains("campaign_templates_ger.mi"), "--campaign-in-base keeps real campaign templates in the base mod");
         T.True(SpawnText(split, "resource/" + SpawnFixture.Conquest).Contains("\"/map/ctatoybox_spawn/templates_ger.mi\""), "multiplayer maps read the nation-mod path");
         T.True(split.Any(f => f.Path == "resource/map/ctatoybox_spawn/conquest_me.mi"), "conquest guess file written");
         var single = SpawnGenerator.Generate(o.Stack, o.Index, o.Armies, SpawnCategories.Parse(SpawnFixture.Categories, null), new SpawnOptions { NationMods = false }, new SpawnReport(), out nations);

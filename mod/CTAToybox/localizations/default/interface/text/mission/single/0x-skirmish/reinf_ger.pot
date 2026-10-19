@@ -61,11 +61,11 @@ msgid "보병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/volkssturm_heavy"
-msgid "폴크스슈투름 부대"
+msgid "국민돌격대 부대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/volksgrenadier"
-msgid "폭스그레나디어"
+msgid "국민척탄병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/crew"
@@ -97,7 +97,7 @@ msgid "블라우 사단"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/fallsjager"
-msgid "팔쉬름예거"
+msgid "강하엽병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/brandenb"
@@ -105,11 +105,11 @@ msgid "브란덴부르거"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pioneer"
-msgid "피오니어 분대"
+msgid "공병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/gebirgsjag"
-msgid "게비르크스예거"
+msgid "산악엽병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/crate"
@@ -125,7 +125,7 @@ msgid "Opel Blitz(연료)"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/panzerpio"
-msgid "차량화 피오니어"
+msgid "차량화 공병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/ketteneng"
@@ -277,19 +277,19 @@ msgid "Sturmpanzer I"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/jagersq"
-msgid "예거 분대"
+msgid "엽병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/panzeraufksq"
-msgid "판처 아우프클레러"
+msgid "기갑 정찰병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/grenadieresq"
-msgid "그레나디어 분대"
+msgid "척탄병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/lwfieldinf"
-msgid "루프트바페 병력"
+msgid "공군 병력"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz221"
@@ -317,19 +317,19 @@ msgid "포병 통신병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/grenadierinf"
-msgid "그레나디어 분대"
+msgid "척탄병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/panzergren_ar"
-msgid "판처그레나디어"
+msgid "기갑척탄병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pioteam_ht"
-msgid "피오니어 조"
+msgid "공병 조"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/pioneer_pzsq"
-msgid "판처피오니어"
+msgid "기갑공병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_ger/sdkfz250a_11"

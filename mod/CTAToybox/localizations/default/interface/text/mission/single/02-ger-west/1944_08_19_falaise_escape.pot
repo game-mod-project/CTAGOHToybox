@@ -45,7 +45,7 @@ msgid "포위망 탈출"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/01"
-msgid "팔쉬름예거! 연합군 포위망에서 빠져나가려면 강을 건너야 한다. 강물 흐름 때문에 장비를 다 지니고는 헤엄칠 수 없다."
+msgid "강하엽병! 연합군 포위망에서 빠져나가려면 강을 건너야 한다. 강물 흐름 때문에 장비를 다 지니고는 헤엄칠 수 없다."
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/02"
@@ -73,7 +73,7 @@ msgid "총소리가 들린다! 동지들, 다른 분대가 제압당하고 있�
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/08"
-msgid "팔쉬름예거! 만나서 반갑습니다. 마니에서 나쁜 소식을 가져왔습니다. 다리는 안 됩니다. 다른 탈출로를 찾으셨습니까?"
+msgid "강하엽병! 만나서 반갑습니다. 마니에서 나쁜 소식을 가져왔습니다. 다리는 안 됩니다. 다른 탈출로를 찾으셨습니까?"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/09"
@@ -93,11 +93,11 @@ msgid "훌륭하다. 게다가 지도가 사방에 널려 있군! 이제 여울 
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/13"
-msgid "포격이 제 역할을 했을 것이다. 팔쉬름예거! 여울로 강을 건너라!"
+msgid "포격이 제 역할을 했을 것이다. 강하엽병! 여울로 강을 건너라!"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/14"
-msgid "잘했다, 팔쉬름예거! 오늘의 마지막 임무는 탈출 지점까지 싸우며 나아가는 것이다. 가자!"
+msgid "잘했다, 강하엽병! 오늘의 마지막 임무는 탈출 지점까지 싸우며 나아가는 것이다. 가자!"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/narrator/15"
@@ -129,7 +129,7 @@ msgid "매우 나쁜 소식이다. 재정비하려면 이 상황에서 벗어났
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/place"
-msgid "제3 팔쉬름예거 사단"
+msgid "제3 강하엽병 사단"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/skip"
@@ -137,7 +137,7 @@ msgid "준비 단계 건너뛰기"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/story"
-msgid "1944년 8월. 모르탱의 독일군 반격은 목표를 이루지 못했고, 연합군은 교두보를 돌파하고 있다. 포위의 위협이 현실로 다가왔지만, 지금도 히틀러는 아브랑슈 방향의 새 반격을 요구한다. 며칠 뒤 그는 마침내 동쪽으로의 후퇴를 승인한다. 그러나 팔레즈 일대에서는 그대의 사단을 포함해 무려 14개 사단의 잔존 병력이 포위망 안으로 밀려 들어가고 있으며, 팔레즈에서 동쪽으로 뻗은 몇 안 되는 도로는 연합군 항공기와 포격에 계속 노출되어 있다. 최고사령부는 야간 돌파를 명령했다.\n\n이번 임무에서 그대와 제3 팔쉬름예거 사단은 소규모 집단으로 포위를 돌파한다. 그대는 한 집단을 지휘하며, 연합군 전선에 침투해 뚫고 나가면서 큰 교란 작전으로 적의 시선을 끌어야 한다. 첫 임무는 사단이 디브 강을 건널 길을 찾는 것이다. 건널 만한 곳을 찾으면 제3 FJ 사단 사령부에 보고하라. 이후 추가 지시가 내려질 것이다.\n\n행운을 빈다!"
+msgid "1944년 8월. 모르탱의 독일군 반격은 목표를 이루지 못했고, 연합군은 교두보를 돌파하고 있다. 포위의 위협이 현실로 다가왔지만, 지금도 히틀러는 아브랑슈 방향의 새 반격을 요구한다. 며칠 뒤 그는 마침내 동쪽으로의 후퇴를 승인한다. 그러나 팔레즈 일대에서는 그대의 사단을 포함해 무려 14개 사단의 잔존 병력이 포위망 안으로 밀려 들어가고 있으며, 팔레즈에서 동쪽으로 뻗은 몇 안 되는 도로는 연합군 항공기와 포격에 계속 노출되어 있다. 최고사령부는 야간 돌파를 명령했다.\n\n이번 임무에서 그대와 제3 강하엽병 사단은 소규모 집단으로 포위를 돌파한다. 그대는 한 집단을 지휘하며, 연합군 전선에 침투해 뚫고 나가면서 큰 교란 작전으로 적의 시선을 끌어야 한다. 첫 임무는 사단이 디브 강을 건널 길을 찾는 것이다. 건널 만한 곳을 찾으면 제3 FJ 사단 사령부에 보고하라. 이후 추가 지시가 내려질 것이다.\n\n행운을 빈다!"
 msgstr ""
 
 msgctxt "mission/single/02-ger-west/1944_08_19_falaise_escape/task1"

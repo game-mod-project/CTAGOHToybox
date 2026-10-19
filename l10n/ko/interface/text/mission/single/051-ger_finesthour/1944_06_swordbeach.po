@@ -51,7 +51,7 @@ msgstr "놈들이 온다!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/03"
 msgid "Verdammt! What is that coming our way?! They have amphibious Panzers?!"
-msgstr "Verdammt! 이쪽으로 오는 건 뭐야?! 수륙양용 판처인가?!"
+msgstr "Verdammt! 이쪽으로 오는 건 뭐야?! 수륙양용 전차인가?!"
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_swordbeach/[narrators]/ger_soldier/04"
 msgid "Herr Kommandant! They are everywhere! And they've got even more tanks!"

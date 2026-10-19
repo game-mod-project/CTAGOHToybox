@@ -84,7 +84,7 @@ msgstr "Hauptmann"
 
 msgctxt "desc/human/narrator/ger-gebirgsjaeger"
 msgid "Gebirgsjäger"
-msgstr "게비르크스예거"
+msgstr "산악엽병"
 
 msgctxt "desc/human/narrator/ger-player"
 msgid "Player"

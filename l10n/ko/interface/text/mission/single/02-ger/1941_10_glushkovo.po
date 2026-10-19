@@ -43,7 +43,7 @@ msgstr "훌륭한 전술을 보여 주었다, 병사들. 마을이 무력화되�
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/glushkovo"
 msgid "Herr Leutnant, scouts are reporting tank movement towards the village of Glushkovo. Unfortunately, in this weather, the Luftwaffe cannot help you."
-msgstr "Herr Leutnant, 정찰병들이 글루시코보 마을로 향하는 전차의 움직임을 보고하고 있습니다. 안타깝게도 이 날씨에는 루프트바페가 도울 수 없습니다."
+msgstr "Herr Leutnant, 정찰병들이 글루시코보 마을로 향하는 전차의 움직임을 보고하고 있습니다. 안타깝게도 이 날씨에는 공군이 도울 수 없습니다."
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/narrator/officer/part2"
 msgid "Soldiers! We are not done yet! The enemy still holds the other river bank. It’s imperative we break through and seize all the strategic positions."
@@ -87,11 +87,11 @@ msgstr "드네프르를 건너지 못하면 뱌지마를 점령하지 못하며 
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/place"
 msgid "3rd Panzer Group, Army Group Centre."
-msgstr "중부집단군 제3 판처 집단."
+msgstr "중부집단군 제3 기갑집단."
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/crew"
 msgid "Panzerwaffe crew"
-msgstr "판처바페 승무원"
+msgstr "기갑병과 승무원"
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/hint"
 msgid "Deploy your reinforcements on the battlefield"
@@ -139,7 +139,7 @@ msgstr "Panzerjäger 1"
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/pioniere"
 msgid "Sturmpioniere"
-msgstr "슈투름피오니어"
+msgstr "돌격공병"
 
 msgctxt "mission/single/02-ger/1941_10_glushkovo/reinforcement/scouts"
 msgid "Scout and Sniper"

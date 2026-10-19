@@ -193,7 +193,7 @@ msgid "계획한 대로 되지 않았다. 재집결해서 다시 들어가 다�
 msgstr ""
 
 msgctxt "mission/single/06-bonus/1944_03_trap/place"
-msgid "제4판처군 예하 부대"
+msgid "제4기갑군 예하 부대"
 msgstr ""
 
 msgctxt "mission/single/06-bonus/1944_03_trap/tasks/01_pow"

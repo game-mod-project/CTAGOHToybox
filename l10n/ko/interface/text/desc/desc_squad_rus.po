@@ -88,7 +88,7 @@ msgstr "기관총 분견대"
 
 msgctxt "desc/squad/single_riflegrenade(rus)"
 msgid "Gren. Riflemen"
-msgstr "그레나디어 소총수"
+msgstr "척탄병 소총수"
 
 msgctxt "desc/squad/single_sniper(rus)"
 msgid "Sniper"
@@ -432,11 +432,11 @@ msgstr "<c(A5A095)>(4)</c> 공수병 분대"
 
 msgctxt "desc/squad/squad_cossack_recon_early_sup(rus)"
 msgid "<c(A5A095)>(2)</c> Cossack Recon Squad"
-msgstr "<c(A5A095)>(2)</c> 코사크 정찰 분대"
+msgstr "<c(A5A095)>(2)</c> 카자크 정찰 분대"
 
 msgctxt "desc/squad/squad_cossack_early_sup(rus)"
 msgid "<c(A5A095)>(2)</c> Cossack Rifle Squad"
-msgstr "<c(A5A095)>(2)</c> 코사크 소총 분대"
+msgstr "<c(A5A095)>(2)</c> 카자크 소총 분대"
 
 msgctxt "desc/squad/squad_mountain_early_sup(rus)"
 msgid "<c(A5A095)>(3)</c> Mountain Rifle Squad"

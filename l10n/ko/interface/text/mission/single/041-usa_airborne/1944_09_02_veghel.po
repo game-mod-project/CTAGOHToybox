@@ -31,7 +31,7 @@ msgstr "포격이다! 엄폐해라!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator_soldier01"
 msgid "Panzers! I see German armor coming from the north!"
-msgstr "판처다! 북쪽에서 독일 기갑이 온다!"
+msgstr "전차다! 북쪽에서 독일 기갑이 온다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_09_02_veghel/narrator03"
 msgid "Get to defensive positions! We have to protect our supply trucks!"

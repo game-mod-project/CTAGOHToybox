@@ -49,11 +49,11 @@ msgid "역류"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/story"
-msgid "독일군은 지금까지 연합군을 바다로 몰아내지 못했다. \n\n 캉 바로 서쪽에서 영국군이 전진했다. 캉을 협공으로 우회하려는 듯하다. 이들은 어제 틸리쉬르쇨 동쪽의 생피에르를 이미 점령했고, 틸리 북동쪽의 103고지도 장악했다.\n\n 당신과 판처 레어 사단은 틸리쉬르쇨 마을을 향해 반격한다. 현재 영국군이 점령한 이곳을 연합군이 캉을 포위하지 못하도록 해 지기 전에 되찾아야 한다."
+msgid "독일군은 지금까지 연합군을 바다로 몰아내지 못했다. \n\n 캉 바로 서쪽에서 영국군이 전진했다. 캉을 협공으로 우회하려는 듯하다. 이들은 어제 틸리쉬르쇨 동쪽의 생피에르를 이미 점령했고, 틸리 북동쪽의 103고지도 장악했다.\n\n 당신과 기갑교도 사단은 틸리쉬르쇨 마을을 향해 반격한다. 현재 영국군이 점령한 이곳을 연합군이 캉을 포위하지 못하도록 해 지기 전에 되찾아야 한다."
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/place"
-msgid "판처 레어 사단, 기갑군단"
+msgid "기갑교도 사단, 기갑군단"
 msgstr ""
 
 msgctxt "mission/single/051-ger_finesthour/1944_06_tilly_sur_seulles/date"

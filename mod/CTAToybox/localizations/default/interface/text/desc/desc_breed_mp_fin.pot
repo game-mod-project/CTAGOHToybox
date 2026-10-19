@@ -14,307 +14,307 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 
 msgctxt "desc/human/mp/fin/early/antitank_asst"
-msgid "대전차 지원 보병 [마아보이마트]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/antitank_rifle"
-msgid "대전차 소총 보병 [마아보이마트]"
+msgid "대전차 소총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/artilleryman"
-msgid "포병 [마아보이마트]"
+msgid "포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_mg"
-msgid "라야바르티야 기관총 사수 [라야바르티올라이토스]"
+msgid "라야바르티야 기관총 사수 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_mg_asst"
-msgid "라야바르티야 기관총 부사수 [라야바르티올라이토스]"
+msgid "라야바르티야 기관총 부사수 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_rifle"
-msgid "라야바르티야 [라야바르티올라이토스]"
+msgid "라야바르티야 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_sa"
-msgid "라야바르티야 [라야바르티올라이토스]"
+msgid "라야바르티야 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_sl"
-msgid "라야바르티야 분대장 [라야바르티올라이토스]"
+msgid "라야바르티야 분대장 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_smg"
-msgid "라야바르티야 [라야바르티올라이토스]"
+msgid "라야바르티야 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/border_guard_smg_stick"
-msgid "라야바르티야 [라야바르티올라이토스]"
+msgid "라야바르티야 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_mg"
-msgid "라추배키 기관총 사수 [마아보이마트]"
+msgid "기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_mg_asst"
-msgid "라추배키 기관총 부사수 [마아보이마트]"
+msgid "기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_rifle"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_sa"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_sl"
-msgid "라추배키 분대장 [마아보이마트]"
+msgid "기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_smg"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/cav_smg_stick"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/chauchat"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/civil_guard_mg"
-msgid "민방위대 기관총 사수 [마아보이마트]"
+msgid "민방위대 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/civil_guard_rifle"
-msgid "민방위대 소총수 [마아보이마트]"
+msgid "민방위대 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/civil_guard_rifle_helm"
-msgid "민방위대 소총수 [마아보이마트]"
+msgid "민방위대 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/civil_guard_sl"
-msgid "민방위대 분대장 [마아보이마트]"
+msgid "민방위대 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_builder"
-msgid "피오네에리 공병 [마아보이마트]"
+msgid "공병 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_heavy"
-msgid "피오네에리 중무장 공병 [마아보이마트]"
+msgid "공병 중무장 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_mine_ap"
-msgid "피오네에리 AP 지뢰병 [마아보이마트]"
+msgid "공병 AP 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_mine_at"
-msgid "피오네에리 대전차 지뢰병 [마아보이마트]"
+msgid "공병 대전차 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_mine_d"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_rifle"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/engineer_sl"
-msgid "피오네에리 분대장 [마아보이마트]"
+msgid "공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_mg"
-msgid "예캐리 기관총 사수 [마아보이마트]"
+msgid "엽병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_mg_asst"
-msgid "예캐리 기관총 부사수 [마아보이마트]"
+msgid "엽병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_rifle"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_sa"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_sl"
-msgid "예캐리 분대장 [마아보이마트]"
+msgid "엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_smg"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_smg_stick"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/marksman"
-msgid "지정사수 [마아보이마트]"
+msgid "지정사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/marksman_sa"
-msgid "지정사수 [마아보이마트]"
+msgid "지정사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/medic"
-msgid "위생병 [마아보이마트]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mg"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mg_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mg_crew"
-msgid "기관총 승무원 [마아보이마트]"
+msgid "기관총 승무원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mg_crew_asst"
-msgid "기관총 승무원 부사수 [마아보이마트]"
+msgid "기관총 승무원 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mg_madsen"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/officer"
-msgid "장교 [마아보이마트]"
+msgid "장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/officer_drum"
-msgid "장교 [마아보이마트]"
+msgid "장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/rifleman"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/rifleman_avs"
-msgid "자동소총수 [마아보이마트]"
+msgid "자동소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/rifleman_cap"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/rifleman_sa"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/scout"
-msgid "정찰병 [마아보이마트]"
+msgid "정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/scout_sl"
-msgid "정찰 분대장 [마아보이마트]"
+msgid "정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/signaller"
-msgid "포병 통신병 [마아보이마트]"
+msgid "포병 통신병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_mg"
-msgid "시시 기관총 사수 [마아보이마트]"
+msgid "시시 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_mg_asst"
-msgid "시시 기관총 부사수 [마아보이마트]"
+msgid "시시 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_rifle"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_sa"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_sl"
-msgid "시시 분대장 [마아보이마트]"
+msgid "시시 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_smg_m20"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sissi_smg_stick"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/smg_drum"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/smg_m20"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/smg_stick"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/sniper"
-msgid "저격수 [마아보이마트]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/squadleader"
-msgid "분대장 [마아보이마트]"
+msgid "분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/summer_mg"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/summer_mg_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/summer_rifle"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/summer_rifle_cap"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/summer_smg_drum"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/summer_smg_stick"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/tank_commander"
-msgid "전차 지휘관 [마아보이마트]"
+msgid "전차 지휘관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/tankman"
-msgid "전차병 [마아보이마트]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/tank_commander_vet"
-msgid "베테랑 전차 지휘관 [마아보이마트]"
+msgid "베테랑 전차 지휘관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/tankman_vet"
-msgid "베테랑 전차병 [마아보이마트]"
+msgid "베테랑 전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/white_death"
-msgid "정예 저격수 [마아보이마트]"
+msgid "정예 저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/pilot"
@@ -322,383 +322,383 @@ msgid "조종사 [일마보이마트]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_asst"
-msgid "대전차 지원 보병 [마아보이마트]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_faust"
-msgid "대전차 보병 [마아보이마트]"
+msgid "대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_ptrd"
-msgid "대전차 보병 [마아보이마트]"
+msgid "대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_ptrd_asst"
-msgid "대전차 지원 보병 [마아보이마트]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_pzs"
-msgid "대전차 보병 [마아보이마트]"
+msgid "대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_pzs_ammo"
-msgid "대전차 지원 보병 [마아보이마트]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/antitank_rifle"
-msgid "대전차 보병 [마아보이마트]"
+msgid "대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/artilleryman"
-msgid "포병 [마아보이마트]"
+msgid "포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_ap_mine"
-msgid "라야예캐리 AP 지뢰병 [라야바르티올라이토스]"
+msgid "국경엽병 AP 지뢰병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_at_mine"
-msgid "라야예캐리 대전차 지뢰병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 지뢰병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_builder"
-msgid "라야예캐리 공병 [라야바르티올라이토스]"
+msgid "국경엽병 공병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_mg"
-msgid "라야예캐리 기관총 사수 [라야바르티올라이토스]"
+msgid "국경엽병 기관총 사수 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_mg_asst"
-msgid "라야예캐리 기관총 부사수 [라야바르티올라이토스]"
+msgid "국경엽병 기관총 부사수 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_rifle"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_rifle_pzfaust"
-msgid "라야예캐리 대전차 보병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 보병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_sa"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_sl"
-msgid "라야예캐리 분대장 [라야바르티올라이토스]"
+msgid "국경엽병 분대장 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_smg"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_smg_stick"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_mg"
-msgid "라추배키 기관총 사수 [마아보이마트]"
+msgid "기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_mg_asst"
-msgid "라추배키 기관총 부사수 [마아보이마트]"
+msgid "기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_rifle"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_sa"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_sl"
-msgid "라추배키 분대장 [마아보이마트]"
+msgid "기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_smg"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_smg_stick"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_builder"
-msgid "피오네에리 공병 [마아보이마트]"
+msgid "공병 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_flamer"
-msgid "피오네에리 화염방사병 [마아보이마트]"
+msgid "공병 화염방사병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_heavy"
-msgid "피오네에리 중무장 공병 [마아보이마트]"
+msgid "공병 중무장 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_mine_ap"
-msgid "피오네에리 AP 지뢰병 [마아보이마트]"
+msgid "공병 AP 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_mine_at"
-msgid "피오네에리 대전차 지뢰병 [마아보이마트]"
+msgid "공병 대전차 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_mine_d"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_rifle"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/engineer_sl"
-msgid "피오네에리 분대장 [마아보이마트]"
+msgid "공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_crew"
-msgid "예캐리 승무원 [마아보이마트]"
+msgid "엽병 승무원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_crew_asst"
-msgid "예캐리 승무원 부사수 [마아보이마트]"
+msgid "엽병 승무원 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_engineer_flamer"
-msgid "예캐리 공병 화염방사병 [마아보이마트]"
+msgid "엽병 공병 화염방사병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_engineer_sl"
-msgid "예캐리 공병 분대장 [마아보이마트]"
+msgid "엽병 공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_mg"
-msgid "예캐리 기관총 사수 [마아보이마트]"
+msgid "엽병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_mg_asst"
-msgid "예캐리 기관총 부사수 [마아보이마트]"
+msgid "엽병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_pzfaust"
-msgid "예캐리 대전차 보병 [마아보이마트]"
+msgid "엽병 대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_pzs"
-msgid "예캐리 대전차 보병 [마아보이마트]"
+msgid "엽병 대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_pzs_asst"
-msgid "예캐리 대전차 지원 보병 [마아보이마트]"
+msgid "엽병 대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_rifle"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_sa"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_sl"
-msgid "예캐리 분대장 [마아보이마트]"
+msgid "엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_sl_smg"
-msgid "예캐리 분대장 [마아보이마트]"
+msgid "엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_smg"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_smg_pzfaust"
-msgid "예캐리 대전차 보병 [마아보이마트]"
+msgid "엽병 대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_smg_stick"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/marksman"
-msgid "지정사수 [마아보이마트]"
+msgid "지정사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/marksman_sa"
-msgid "지정사수 [마아보이마트]"
+msgid "지정사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/medic"
-msgid "위생병 [마아보이마트]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_crew"
-msgid "기관총 승무원 [마아보이마트]"
+msgid "기관총 승무원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_crew_asst"
-msgid "기관총 승무원 부사수 [마아보이마트]"
+msgid "기관총 승무원 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_dp"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_dp_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/officer"
-msgid "장교 [마아보이마트]"
+msgid "장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_mg"
-msgid "예비 기관총 사수 [마아보이마트]"
+msgid "예비 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_mg_asst"
-msgid "예비 기관총 부사수 [마아보이마트]"
+msgid "예비 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_rifle"
-msgid "예비 소총수 [마아보이마트]"
+msgid "예비 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_rifle_helm"
-msgid "예비 소총수 [마아보이마트]"
+msgid "예비 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_sl"
-msgid "예비 분대장 [마아보이마트]"
+msgid "예비 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_smg_helm"
-msgid "예비 기관단총 보병 [마아보이마트]"
+msgid "예비 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/rifleman"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/rifleman_cap"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/rifleman_sa"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/scout"
-msgid "정찰병 [마아보이마트]"
+msgid "정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/scout_sl"
-msgid "정찰 분대장 [마아보이마트]"
+msgid "정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/signaller"
-msgid "포병 통신병 [마아보이마트]"
+msgid "포병 통신병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sissi_mg"
-msgid "시시 기관총 사수 [마아보이마트]"
+msgid "시시 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sissi_mg_asst"
-msgid "시시 기관총 부사수 [마아보이마트]"
+msgid "시시 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sissi_rifle"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sissi_sa"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sissi_sl"
-msgid "시시 분대장 [마아보이마트]"
+msgid "시시 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sissi_smg_stick"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/smg_drum"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/smg_pps"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/smg_ppsh"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/smg_stick"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/sniper"
-msgid "저격수 [마아보이마트]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/squadleader"
-msgid "분대장 [마아보이마트]"
+msgid "분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/summer_mg"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/summer_mg_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/summer_rifle"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/summer_rifle_cap"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/summer_smg_drum"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/summer_smg_stick"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/tank_commander"
-msgid "전차 지휘관 [마아보이마트]"
+msgid "전차 지휘관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/tankman"
-msgid "전차병 [마아보이마트]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/tank_commander_vet"
-msgid "베테랑 전차 지휘관 [마아보이마트]"
+msgid "베테랑 전차 지휘관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/tankman_vet"
-msgid "베테랑 전차병 [마아보이마트]"
+msgid "베테랑 전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/white_death"
-msgid "정예 저격수 [마아보이마트]"
+msgid "정예 저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/pilot"
@@ -706,319 +706,319 @@ msgid "조종사 [일마보이마트]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/antitank_asst"
-msgid "대전차 지원 보병 [마아보이마트]"
+msgid "대전차 지원 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/antitank_rifle"
-msgid "대전차 소총 보병 [마아보이마트]"
+msgid "대전차 소총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/artilleryman"
-msgid "포병 [마아보이마트]"
+msgid "포병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_ap_mine"
-msgid "라야예캐리 AP 지뢰병 [라야바르티올라이토스]"
+msgid "국경엽병 AP 지뢰병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_at_mine"
-msgid "라야예캐리 대전차 지뢰병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 지뢰병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_builder"
-msgid "라야예캐리 공병 [라야바르티올라이토스]"
+msgid "국경엽병 공병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_mg"
-msgid "라야예캐리 기관총 사수 [라야바르티올라이토스]"
+msgid "국경엽병 기관총 사수 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_mg_asst"
-msgid "라야예캐리 기관총 부사수 [라야바르티올라이토스]"
+msgid "국경엽병 기관총 부사수 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_rifle"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_sa"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_sl"
-msgid "라야예캐리 분대장 [라야바르티올라이토스]"
+msgid "국경엽병 분대장 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_smg"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/border_jag_smg_stick"
-msgid "라야예캐리 [라야바르티올라이토스]"
+msgid "국경엽병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_mg"
-msgid "라추배키 기관총 사수 [마아보이마트]"
+msgid "기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_mg_asst"
-msgid "라추배키 기관총 부사수 [마아보이마트]"
+msgid "기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_rifle"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_sa"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_sl"
-msgid "라추배키 분대장 [마아보이마트]"
+msgid "기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_smg"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/cav_smg_stick"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/chauchat"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_builder"
-msgid "피오네에리 공병 [마아보이마트]"
+msgid "공병 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_flamer"
-msgid "피오네에리 화염방사병 [마아보이마트]"
+msgid "공병 화염방사병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_heavy"
-msgid "피오네에리 중무장 공병 [마아보이마트]"
+msgid "공병 중무장 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_mine_ap"
-msgid "피오네에리 AP 지뢰병 [마아보이마트]"
+msgid "공병 AP 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_mine_at"
-msgid "피오네에리 대전차 지뢰병 [마아보이마트]"
+msgid "공병 대전차 지뢰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_mine_d"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_rifle"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/engineer_sl"
-msgid "피오네에리 분대장 [마아보이마트]"
+msgid "공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_mg"
-msgid "예캐리 기관총 사수 [마아보이마트]"
+msgid "엽병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_mg_asst"
-msgid "예캐리 기관총 부사수 [마아보이마트]"
+msgid "엽병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_rifle"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_sa"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_sl"
-msgid "예캐리 분대장 [마아보이마트]"
+msgid "엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_smg"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_smg_stick"
-msgid "예캐리 [마아보이마트]"
+msgid "엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/marksman"
-msgid "지정사수 [마아보이마트]"
+msgid "지정사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/marksman_sa"
-msgid "지정사수 [마아보이마트]"
+msgid "지정사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/medic"
-msgid "위생병 [마아보이마트]"
+msgid "위생병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_crew"
-msgid "기관총 승무원 [마아보이마트]"
+msgid "기관총 승무원 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_crew_asst"
-msgid "기관총 승무원 부사수 [마아보이마트]"
+msgid "기관총 승무원 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_dp"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_dp_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/officer"
-msgid "장교 [마아보이마트]"
+msgid "장교 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/reservist_mg"
-msgid "예비 기관총 사수 [마아보이마트]"
+msgid "예비 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/reservist_rifle"
-msgid "예비 소총수 [마아보이마트]"
+msgid "예비 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/reservist_rifle_helm"
-msgid "예비 소총수 [마아보이마트]"
+msgid "예비 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/reservist_sl"
-msgid "예비 분대장 [마아보이마트]"
+msgid "예비 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/rifleman"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/rifleman_avs"
-msgid "자동소총수 [마아보이마트]"
+msgid "자동소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/rifleman_cap"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/rifleman_sa"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/scout"
-msgid "정찰병 [마아보이마트]"
+msgid "정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/scout_sl"
-msgid "정찰 분대장 [마아보이마트]"
+msgid "정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/signaller"
-msgid "포병 통신병 [마아보이마트]"
+msgid "포병 통신병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sissi_mg"
-msgid "시시 기관총 사수 [마아보이마트]"
+msgid "시시 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sissi_mg_asst"
-msgid "시시 기관총 부사수 [마아보이마트]"
+msgid "시시 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sissi_rifle"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sissi_sa"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sissi_sl"
-msgid "시시 분대장 [마아보이마트]"
+msgid "시시 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sissi_smg_stick"
-msgid "시시 [마아보이마트]"
+msgid "시시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/smg_drum"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/smg_m20"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/smg_stick"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/sniper"
-msgid "저격수 [마아보이마트]"
+msgid "저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/squadleader"
-msgid "분대장 [마아보이마트]"
+msgid "분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/summer_mg"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/summer_mg_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/summer_rifle"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/summer_rifle_cap"
-msgid "소총수 [마아보이마트]"
+msgid "소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/summer_smg_drum"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/summer_smg_stick"
-msgid "기관단총 보병 [마아보이마트]"
+msgid "기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/tank_commander"
-msgid "전차 지휘관 [마아보이마트]"
+msgid "전차 지휘관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/tankman"
-msgid "전차병 [마아보이마트]"
+msgid "전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/tank_commander_vet"
-msgid "베테랑 전차 지휘관 [마아보이마트]"
+msgid "베테랑 전차 지휘관 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/tankman_vet"
-msgid "베테랑 전차병 [마아보이마트]"
+msgid "베테랑 전차병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/white_death"
-msgid "정예 저격수 [마아보이마트]"
+msgid "정예 저격수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/pilot"
@@ -1026,1189 +1026,1189 @@ msgid "조종사 [일마보이마트]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_scout_rifle"
-msgid "예캐리 정찰병 [마아보이마트]"
+msgid "엽병 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_scout_sa"
-msgid "예캐리 정찰병 [마아보이마트]"
+msgid "엽병 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/jag_scout_sl"
-msgid "예캐리 정찰 분대장 [마아보이마트]"
+msgid "엽병 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/vet_mg"
-msgid "베테랑 기관총 사수 [마아보이마트]"
+msgid "베테랑 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/vet_mg_asst"
-msgid "베테랑 기관총 부사수 [마아보이마트]"
+msgid "베테랑 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/vet_squadleader"
-msgid "베테랑 분대장 [마아보이마트]"
+msgid "베테랑 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/pio_builder"
-msgid "피오네에리 공병 [마아보이마트]"
+msgid "공병 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/pio_mg"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/pio_rifle"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/pio_sa"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/pio_sl"
-msgid "피오네에리 분대장 [마아보이마트]"
+msgid "공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_scout_rifle"
-msgid "예캐리 정찰병 [마아보이마트]"
+msgid "엽병 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_scout_sa"
-msgid "예캐리 정찰병 [마아보이마트]"
+msgid "엽병 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/jag_scout_sl"
-msgid "예캐리 정찰 분대장 [마아보이마트]"
+msgid "엽병 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_mg_dp"
-msgid "정예 기관총 사수 [마아보이마트]"
+msgid "정예 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_mg_dp_asst"
-msgid "정예 기관총 부사수 [마아보이마트]"
+msgid "정예 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_rifleman"
-msgid "정예 소총수 [마아보이마트]"
+msgid "정예 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_rifleman_sa"
-msgid "정예 자동소총수 [마아보이마트]"
+msgid "정예 자동소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_smg_drum"
-msgid "정예 기관단총 보병 [마아보이마트]"
+msgid "정예 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_smg_stick"
-msgid "정예 기관단총 보병 [마아보이마트]"
+msgid "정예 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/elite_squadleader"
-msgid "정예 분대장 [마아보이마트]"
+msgid "정예 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_dt"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mg_dt_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_mg"
-msgid "베테랑 라추배키 기관총 사수 [마아보이마트]"
+msgid "베테랑 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_mg_asst"
-msgid "베테랑 라추배키 기관총 부사수 [마아보이마트]"
+msgid "베테랑 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_rifle"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_sa"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_sl"
-msgid "베테랑 라추배키 분대장 [마아보이마트]"
+msgid "베테랑 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_smg"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_cav_smg_stick"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_mg_dp"
-msgid "베테랑 기관총 사수 [마아보이마트]"
+msgid "베테랑 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_mg_dp_asst"
-msgid "베테랑 기관총 부사수 [마아보이마트]"
+msgid "베테랑 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_rifleman"
-msgid "베테랑 소총수 [마아보이마트]"
+msgid "베테랑 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_rifleman_sa"
-msgid "베테랑 소총수 [마아보이마트]"
+msgid "베테랑 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_scout"
-msgid "베테랑 정찰병 [마아보이마트]"
+msgid "베테랑 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_scout_sl"
-msgid "베테랑 정찰 분대장 [마아보이마트]"
+msgid "베테랑 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_smg_drum"
-msgid "베테랑 기관단총 보병 [마아보이마트]"
+msgid "베테랑 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_smg_stick"
-msgid "베테랑 기관단총 보병 [마아보이마트]"
+msgid "베테랑 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_squadleader"
-msgid "베테랑 분대장 [마아보이마트]"
+msgid "베테랑 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/pio_builder"
-msgid "피오네에리 공병 [마아보이마트]"
+msgid "공병 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/pio_mg"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/pio_rifle"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/pio_sa"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/pio_sl"
-msgid "피오네에리 분대장 [마아보이마트]"
+msgid "공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_mg"
-msgid "베테랑 예캐리 기관총 사수 [마아보이마트]"
+msgid "베테랑 엽병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_mg_asst"
-msgid "베테랑 예캐리 기관총 부사수 [마아보이마트]"
+msgid "베테랑 엽병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_rifle"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_sa"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_sl"
-msgid "베테랑 예캐리 분대장 [마아보이마트]"
+msgid "베테랑 엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_smg"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_scout_rifle"
-msgid "예캐리 정찰병 [마아보이마트]"
+msgid "엽병 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_scout_sa"
-msgid "예캐리 정찰병 [마아보이마트]"
+msgid "엽병 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/jag_scout_sl"
-msgid "예캐리 정찰 분대장 [마아보이마트]"
+msgid "엽병 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_ptrd"
-msgid "라야예캐리 대전차 소총 보병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 소총 보병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_ptrd_asst"
-msgid "라야예캐리 대전차 지원 보병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 지원 보병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_pzs"
-msgid "라야예캐리 대전차 보병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 보병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_pzs_ammo"
-msgid "라야예캐리 대전차 지원 보병 [라야바르티올라이토스]"
+msgid "국경엽병 대전차 지원 보병 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/border_jag_sl_smg"
-msgid "라야예캐리 분대장 [라야바르티올라이토스]"
+msgid "국경엽병 분대장 [국경경비대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_mg"
-msgid "라추배키 기관총 사수 [마아보이마트]"
+msgid "기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_mg_asst"
-msgid "라추배키 기관총 부사수 [마아보이마트]"
+msgid "기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_rifle"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_sa"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_sl"
-msgid "라추배키 분대장 [마아보이마트]"
+msgid "기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_smg"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/cav_smg_stick"
-msgid "라추배키 [마아보이마트]"
+msgid "기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_mg"
-msgid "정예 기관총 사수 [마아보이마트]"
+msgid "정예 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_mg_asst"
-msgid "정예 기관총 부사수 [마아보이마트]"
+msgid "정예 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_mg_dp"
-msgid "정예 기관총 사수 [마아보이마트]"
+msgid "정예 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_mg_dp_asst"
-msgid "정예 기관총 부사수 [마아보이마트]"
+msgid "정예 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_rifle"
-msgid "정예 소총수 [마아보이마트]"
+msgid "정예 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_rifle_sa"
-msgid "정예 자동소총수 [마아보이마트]"
+msgid "정예 자동소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_smg_drum"
-msgid "정예 기관단총 보병 [마아보이마트]"
+msgid "정예 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_smg_pps"
-msgid "정예 기관단총 보병 [마아보이마트]"
+msgid "정예 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_smg_ppsh"
-msgid "정예 기관단총 보병 [마아보이마트]"
+msgid "정예 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_smg_stick"
-msgid "정예 기관단총 보병 [마아보이마트]"
+msgid "정예 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/elite_squadleader"
-msgid "정예 분대장 [마아보이마트]"
+msgid "정예 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_dt"
-msgid "기관총 사수 [마아보이마트]"
+msgid "기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mg_dt_asst"
-msgid "기관총 부사수 [마아보이마트]"
+msgid "기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/pio_builder"
-msgid "피오네에리 공병 [마아보이마트]"
+msgid "공병 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/pio_mg"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/pio_rifle"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/pio_sa"
-msgid "피오네에리 [마아보이마트]"
+msgid "공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/pio_sl"
-msgid "피오네에리 분대장 [마아보이마트]"
+msgid "공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_mg"
-msgid "베테랑 라추배키 기관총 사수 [마아보이마트]"
+msgid "베테랑 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_mg_asst"
-msgid "베테랑 라추배키 기관총 부사수 [마아보이마트]"
+msgid "베테랑 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_rifle"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_sa"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_sl"
-msgid "베테랑 라추배키 분대장 [마아보이마트]"
+msgid "베테랑 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_smg"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_cav_smg_stick"
-msgid "베테랑 라추배키 [마아보이마트]"
+msgid "베테랑 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_mg"
-msgid "베테랑 기관총 사수 [마아보이마트]"
+msgid "베테랑 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_mg_asst"
-msgid "베테랑 기관총 부사수 [마아보이마트]"
+msgid "베테랑 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_mg_dp"
-msgid "베테랑 기관총 사수 [마아보이마트]"
+msgid "베테랑 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_mg_dp_asst"
-msgid "베테랑 기관총 부사수 [마아보이마트]"
+msgid "베테랑 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_rifle"
-msgid "베테랑 소총수 [마아보이마트]"
+msgid "베테랑 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_rifle_sa"
-msgid "베테랑 소총수 [마아보이마트]"
+msgid "베테랑 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_scout"
-msgid "베테랑 정찰병 [마아보이마트]"
+msgid "베테랑 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_scout_sl"
-msgid "베테랑 정찰 분대장 [마아보이마트]"
+msgid "베테랑 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_smg_drum"
-msgid "베테랑 기관단총 보병 [마아보이마트]"
+msgid "베테랑 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_smg_pps"
-msgid "베테랑 기관단총 보병 [마아보이마트]"
+msgid "베테랑 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_smg_ppsh"
-msgid "베테랑 기관단총 보병 [마아보이마트]"
+msgid "베테랑 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_smg_stick"
-msgid "베테랑 기관단총 보병 [마아보이마트]"
+msgid "베테랑 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_squadleader"
-msgid "베테랑 분대장 [마아보이마트]"
+msgid "베테랑 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_mg"
-msgid "베테랑 예캐리 기관총 사수 [마아보이마트]"
+msgid "베테랑 엽병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_mg_asst"
-msgid "베테랑 예캐리 기관총 부사수 [마아보이마트]"
+msgid "베테랑 엽병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_rifle"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_sa"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_sl"
-msgid "베테랑 예캐리 분대장 [마아보이마트]"
+msgid "베테랑 엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_smg"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/assault_rifle"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/assault_sa"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/assault_sa_avt"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/assault_smg_drum"
-msgid "이스쿠류흐메 기관단총 보병 [마아보이마트]"
+msgid "이스쿠류흐메 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/assault_smg_m20"
-msgid "이스쿠류흐메 기관단총 보병 [마아보이마트]"
+msgid "이스쿠류흐메 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/assault_squadleader"
-msgid "이스쿠류흐메 분대장 [마아보이마트]"
+msgid "이스쿠류흐메 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/fortress_rifle"
-msgid "요새 소총수 [마아보이마트]"
+msgid "요새 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/fortress_rifle_mosin"
-msgid "요새 소총수 [마아보이마트]"
+msgid "요새 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/fortress_sl"
-msgid "요새 분대장 [마아보이마트]"
+msgid "요새 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_mg"
-msgid "해메엔 라추배키 기관총 사수 [마아보이마트]"
+msgid "해메엔 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_mg_asst"
-msgid "해메엔 라추배키 기관총 부사수 [마아보이마트]"
+msgid "해메엔 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_rifle"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_sa"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_sl"
-msgid "해메엔 라추배키 분대장 [마아보이마트]"
+msgid "해메엔 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_smg"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/hrr_cav_smg_stick"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_mg"
-msgid "케비트 오사스토 기관총 사수 [마아보이마트]"
+msgid "케비트 오사스토 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_mg_asst"
-msgid "케비트 오사스토 기관총 부사수 [마아보이마트]"
+msgid "케비트 오사스토 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_rifle"
-msgid "케비트 오사스토 소총수 [마아보이마트]"
+msgid "케비트 오사스토 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_sa_avs"
-msgid "케비트 오사스토 소총수 [마아보이마트]"
+msgid "케비트 오사스토 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_sa_svt"
-msgid "케비트 오사스토 소총수 [마아보이마트]"
+msgid "케비트 오사스토 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_sl"
-msgid "케비트 오사스토 분대장 [마아보이마트]"
+msgid "케비트 오사스토 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/light_scout_smg"
-msgid "케비트 오사스토 기관단총 보병 [마아보이마트]"
+msgid "케비트 오사스토 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mp_off"
-msgid "소타폴리이시 분대장 [마아보이마트]"
+msgid "소타폴리이시 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mp_off_asst"
-msgid "소타폴리이시 부분대장 [마아보이마트]"
+msgid "소타폴리이시 부분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/mp_rifle"
-msgid "소타폴리이시 [마아보이마트]"
+msgid "소타폴리이시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_jag_mg"
-msgid "예가르 기관총 사수 [스벤스크 볼론테르]"
+msgid "예가르 기관총 사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_jag_mg_asst"
-msgid "예가르 기관총 부사수 [스벤스크 볼론테르]"
+msgid "예가르 기관총 부사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_jag_rifle"
-msgid "예가르 [스벤스크 볼론테르]"
+msgid "예가르 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_jag_sl"
-msgid "예가르 분대장 [스벤스크 볼론테르]"
+msgid "예가르 분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_jag_sl_asst"
-msgid "예가르 부분대장 [스벤스크 볼론테르]"
+msgid "예가르 부분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_jag_smg"
-msgid "예가르 [스벤스크 볼론테르]"
+msgid "예가르 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_mg"
-msgid "기관총 사수 [스벤스크 볼론테르]"
+msgid "기관총 사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_mg_asst"
-msgid "기관총 부사수 [스벤스크 볼론테르]"
+msgid "기관총 부사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_recon_rifle"
-msgid "정찰병 [스벤스크 볼론테르]"
+msgid "정찰병 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_recon_sl"
-msgid "정찰 분대장 [스벤스크 볼론테르]"
+msgid "정찰 분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_rifle"
-msgid "소총수 [스벤스크 볼론테르]"
+msgid "소총수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_sl"
-msgid "분대장 [스벤스크 볼론테르]"
+msgid "분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_sl_asst"
-msgid "부분대장 [스벤스크 볼론테르]"
+msgid "부분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/swe_smg"
-msgid "기관단총 보병 [스벤스크 볼론테르]"
+msgid "기관단총 보병 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_mg"
-msgid "우우덴마안 라추배키 기관총 사수 [마아보이마트]"
+msgid "우우덴마안 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_mg_asst"
-msgid "우우덴마안 라추배키 기관총 부사수 [마아보이마트]"
+msgid "우우덴마안 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_rifle"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_sa"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_sl"
-msgid "우우덴마안 라추배키 분대장 [마아보이마트]"
+msgid "우우덴마안 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_smg"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/early/urr_cav_smg_stick"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_mg"
-msgid "이스쿠류흐메 기관총 사수 [마아보이마트]"
+msgid "이스쿠류흐메 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_mg_asst"
-msgid "이스쿠류흐메 기관총 부사수 [마아보이마트]"
+msgid "이스쿠류흐메 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_rifle"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_sa"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_smg_drum"
-msgid "이스쿠류흐메 기관단총 보병 [마아보이마트]"
+msgid "이스쿠류흐메 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_smg_stick"
-msgid "이스쿠류흐메 기관단총 보병 [마아보이마트]"
+msgid "이스쿠류흐메 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/assault_squadleader"
-msgid "이스쿠류흐메 분대장 [마아보이마트]"
+msgid "이스쿠류흐메 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/fortress_mg"
-msgid "요새 기관총 사수 [마아보이마트]"
+msgid "요새 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/fortress_mg_asst"
-msgid "요새 기관총 부사수 [마아보이마트]"
+msgid "요새 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/fortress_rifle"
-msgid "요새 소총수 [마아보이마트]"
+msgid "요새 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/fortress_rifle_mosin"
-msgid "요새 소총수 [마아보이마트]"
+msgid "요새 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/fortress_sl"
-msgid "요새 분대장 [마아보이마트]"
+msgid "요새 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_jag_rifle"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_jag_sa"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_jag_sl"
-msgid "카우코파르티오주코트 예캐리 분대장 [마아보이마트]"
+msgid "장거리정찰대 엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_jag_smg"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_pio_rifle"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_pio_rifle_demo"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_pio_sa"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_pio_sl"
-msgid "카우코파르티오주코트 피오네에리 분대장 [마아보이마트]"
+msgid "장거리정찰대 공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_pio_smg"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_recon_rifle"
-msgid "카우코파르티오주코트 정찰병 [마아보이마트]"
+msgid "장거리정찰대 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_recon_sa"
-msgid "카우코파르티오주코트 정찰병 [마아보이마트]"
+msgid "장거리정찰대 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_recon_sl"
-msgid "카우코파르티오주코트 정찰 분대장 [마아보이마트]"
+msgid "장거리정찰대 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_sl"
-msgid "카우코파르티오주코트 분대장 [마아보이마트]"
+msgid "장거리정찰대 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_smg_drum"
-msgid "카우코파르티오주코트 기관단총 보병 [마아보이마트]"
+msgid "장거리정찰대 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hq_lr_smg_stick"
-msgid "카우코파르티오주코트 기관단총 보병 [마아보이마트]"
+msgid "장거리정찰대 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hrr_cav_mg"
-msgid "해메엔 라추배키 기관총 사수 [마아보이마트]"
+msgid "해메엔 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hrr_cav_mg_asst"
-msgid "해메엔 라추배키 기관총 부사수 [마아보이마트]"
+msgid "해메엔 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hrr_cav_rifle"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hrr_cav_sa"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hrr_cav_sl"
-msgid "해메엔 라추배키 분대장 [마아보이마트]"
+msgid "해메엔 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/hrr_cav_smg"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/light_scout_rifle"
-msgid "케비트 오사스토 소총수 [마아보이마트]"
+msgid "케비트 오사스토 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/light_scout_sa_avt"
-msgid "케비트 오사스토 소총수 [마아보이마트]"
+msgid "케비트 오사스토 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/light_scout_sa_svt"
-msgid "케비트 오사스토 소총수 [마아보이마트]"
+msgid "케비트 오사스토 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/light_scout_sl"
-msgid "케비트 오사스토 분대장 [마아보이마트]"
+msgid "케비트 오사스토 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/light_scout_smg"
-msgid "케비트 오사스토 기관단총 보병 [마아보이마트]"
+msgid "케비트 오사스토 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mp_off"
-msgid "소타폴리이시 분대장 [마아보이마트]"
+msgid "소타폴리이시 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/mp_rifle"
-msgid "소타폴리이시 [마아보이마트]"
+msgid "소타폴리이시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/penal_mg"
-msgid "징벌 기관총 사수 [마아보이마트]"
+msgid "징벌 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/penal_mg_asst"
-msgid "징벌 기관총 부사수 [마아보이마트]"
+msgid "징벌 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/penal_rifle"
-msgid "징벌 소총수 [마아보이마트]"
+msgid "징벌 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/penal_sa"
-msgid "징벌 소총수 [마아보이마트]"
+msgid "징벌 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/penal_sl"
-msgid "징벌 분대장 [마아보이마트]"
+msgid "징벌 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/swe_mg"
-msgid "기관총 사수 [스벤스크 볼론테르]"
+msgid "기관총 사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/swe_mg_asst"
-msgid "기관총 부사수 [스벤스크 볼론테르]"
+msgid "기관총 부사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/swe_rifle"
-msgid "소총수 [스벤스크 볼론테르]"
+msgid "소총수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/swe_sl"
-msgid "분대장 [스벤스크 볼론테르]"
+msgid "분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/swe_sl_asst"
-msgid "부분대장 [스벤스크 볼론테르]"
+msgid "부분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/swe_smg"
-msgid "기관단총 보병 [스벤스크 볼론테르]"
+msgid "기관단총 보병 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/urr_cav_mg"
-msgid "우우덴마안 라추배키 기관총 사수 [마아보이마트]"
+msgid "우우덴마안 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/urr_cav_mg_asst"
-msgid "우우덴마안 라추배키 기관총 부사수 [마아보이마트]"
+msgid "우우덴마안 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/urr_cav_rifle"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/urr_cav_sa"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/urr_cav_sl"
-msgid "우우덴마안 라추배키 분대장 [마아보이마트]"
+msgid "우우덴마안 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/urr_cav_smg"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_strike_rifle"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_strike_rifle_demo"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_strike_sa"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_strike_sl"
-msgid "베테랑 예캐리 분대장 [마아보이마트]"
+msgid "베테랑 엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/mid/vet_jag_strike_smg"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_avt"
-msgid "판사리예캐리 [마아보이마트]"
+msgid "기갑엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_mg"
-msgid "판사리예캐리 기관총 사수 [마아보이마트]"
+msgid "기갑엽병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_mg_asst"
-msgid "판사리예캐리 기관총 부사수 [마아보이마트]"
+msgid "기갑엽병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_pzs"
-msgid "판사리예캐리 대전차 보병 [마아보이마트]"
+msgid "기갑엽병 대전차 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_pzs_asst"
-msgid "판사리예캐리 대전차 부사수 [마아보이마트]"
+msgid "기갑엽병 대전차 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_rifle"
-msgid "판사리예캐리 [마아보이마트]"
+msgid "기갑엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_sa"
-msgid "판사리예캐리 [마아보이마트]"
+msgid "기갑엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_sl"
-msgid "판사리예캐리 분대장 [마아보이마트]"
+msgid "기갑엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_jag_smg"
-msgid "판사리예캐리 [마아보이마트]"
+msgid "기갑엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_pio_flamer"
-msgid "판사리피오네에리 화염방사병 [마아보이마트]"
+msgid "기갑공병 화염방사병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_pio_rifle"
-msgid "판사리피오네에리 [마아보이마트]"
+msgid "기갑공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_pio_rifle_pzf"
-msgid "판사리피오네에리 [마아보이마트]"
+msgid "기갑공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_pio_sa"
-msgid "판사리피오네에리 [마아보이마트]"
+msgid "기갑공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_pio_sl"
-msgid "판사리피오네에리 분대장 [마아보이마트]"
+msgid "기갑공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/arm_pio_smg"
-msgid "판사리피오네에리 [마아보이마트]"
+msgid "기갑공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/assault_mg"
-msgid "이스쿠류흐메 기관총 사수 [마아보이마트]"
+msgid "이스쿠류흐메 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/assault_mg_asst"
-msgid "이스쿠류흐메 기관총 부사수 [마아보이마트]"
+msgid "이스쿠류흐메 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/assault_rifle"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/assault_sa"
-msgid "이스쿠류흐메 소총수 [마아보이마트]"
+msgid "이스쿠류흐메 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/assault_smg_drum"
-msgid "이스쿠류흐메 기관단총 보병 [마아보이마트]"
+msgid "이스쿠류흐메 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/assault_squadleader"
-msgid "이스쿠류흐메 분대장 [마아보이마트]"
+msgid "이스쿠류흐메 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/fortress_mg"
-msgid "요새 기관총 사수 [마아보이마트]"
+msgid "요새 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/fortress_mg_asst"
-msgid "요새 기관총 부사수 [마아보이마트]"
+msgid "요새 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/fortress_rifle"
-msgid "요새 소총수 [마아보이마트]"
+msgid "요새 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/fortress_rifle_mosin"
-msgid "요새 소총수 [마아보이마트]"
+msgid "요새 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/fortress_sl"
-msgid "요새 분대장 [마아보이마트]"
+msgid "요새 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/fortress_smg"
-msgid "요새 기관단총 보병 [마아보이마트]"
+msgid "요새 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_jag_avt"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_jag_rifle"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_jag_sa"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_jag_sl"
-msgid "카우코파르티오주코트 예캐리 분대장 [마아보이마트]"
+msgid "장거리정찰대 엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_jag_smg"
-msgid "카우코파르티오주코트 예캐리 [마아보이마트]"
+msgid "장거리정찰대 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_pio_rifle"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_pio_rifle_demo"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_pio_sa"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_pio_sl"
-msgid "카우코파르티오주코트 피오네에리 분대장 [마아보이마트]"
+msgid "장거리정찰대 공병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_pio_smg"
-msgid "카우코파르티오주코트 피오네에리 [마아보이마트]"
+msgid "장거리정찰대 공병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_recon_rifle"
-msgid "카우코파르티오주코트 정찰병 [마아보이마트]"
+msgid "장거리정찰대 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_recon_sa"
-msgid "카우코파르티오주코트 정찰병 [마아보이마트]"
+msgid "장거리정찰대 정찰병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_recon_sl"
-msgid "카우코파르티오주코트 정찰 분대장 [마아보이마트]"
+msgid "장거리정찰대 정찰 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_sl"
-msgid "카우코파르티오주코트 분대장 [마아보이마트]"
+msgid "장거리정찰대 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_smg_drum"
-msgid "카우코파르티오주코트 기관단총 보병 [마아보이마트]"
+msgid "장거리정찰대 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hq_lr_smg_stick"
-msgid "카우코파르티오주코트 기관단총 보병 [마아보이마트]"
+msgid "장거리정찰대 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_mg"
-msgid "해메엔 라추배키 기관총 사수 [마아보이마트]"
+msgid "해메엔 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_mg_asst"
-msgid "해메엔 라추배키 기관총 부사수 [마아보이마트]"
+msgid "해메엔 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_rifle"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_rifle_pzf"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_sa"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_sl"
-msgid "해메엔 라추배키 분대장 [마아보이마트]"
+msgid "해메엔 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/hrr_cav_smg"
-msgid "해메엔 라추배키 [마아보이마트]"
+msgid "해메엔 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mp_off"
-msgid "소타폴리이시 분대장 [마아보이마트]"
+msgid "소타폴리이시 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/mp_rifle"
-msgid "소타폴리이시 [마아보이마트]"
+msgid "소타폴리이시 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/penal_mg"
-msgid "징벌 기관총 사수 [마아보이마트]"
+msgid "징벌 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/penal_mg_asst"
-msgid "징벌 기관총 부사수 [마아보이마트]"
+msgid "징벌 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/penal_rifle"
-msgid "징벌 소총수 [마아보이마트]"
+msgid "징벌 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/penal_sa"
-msgid "징벌 소총수 [마아보이마트]"
+msgid "징벌 소총수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/penal_sl"
-msgid "징벌 분대장 [마아보이마트]"
+msgid "징벌 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/penal_smg"
-msgid "징벌 기관단총 보병 [마아보이마트]"
+msgid "징벌 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_mg_asst_m21"
-msgid "예비 기관총 부사수 [마아보이마트]"
+msgid "예비 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_mg_m21"
-msgid "예비 기관총 사수 [마아보이마트]"
+msgid "예비 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_sl_m20"
-msgid "예비 분대장 [마아보이마트]"
+msgid "예비 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/reservist_smg_m20"
-msgid "예비 기관단총 보병 [마아보이마트]"
+msgid "예비 기관단총 보병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_mg"
-msgid "기관총 사수 [스벤스크 볼론테르]"
+msgid "기관총 사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_mg_asst"
-msgid "기관총 부사수 [스벤스크 볼론테르]"
+msgid "기관총 부사수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_rifle"
-msgid "소총수 [스벤스크 볼론테르]"
+msgid "소총수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_rifle_pzf"
-msgid "소총수 [스벤스크 볼론테르]"
+msgid "소총수 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_sl"
-msgid "분대장 [스벤스크 볼론테르]"
+msgid "분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_sl_asst"
-msgid "부분대장 [스벤스크 볼론테르]"
+msgid "부분대장 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/swe_smg"
-msgid "기관단총 보병 [스벤스크 볼론테르]"
+msgid "기관단총 보병 [스웨덴 의용대]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_mg"
-msgid "우우덴마안 라추배키 기관총 사수 [마아보이마트]"
+msgid "우우덴마안 기병 기관총 사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_mg_asst"
-msgid "우우덴마안 라추배키 기관총 부사수 [마아보이마트]"
+msgid "우우덴마안 기병 기관총 부사수 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_rifle"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_rifle_pzf"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_sa"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_sl"
-msgid "우우덴마안 라추배키 분대장 [마아보이마트]"
+msgid "우우덴마안 기병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/urr_cav_smg"
-msgid "우우덴마안 라추배키 [마아보이마트]"
+msgid "우우덴마안 기병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_strike_sl"
-msgid "베테랑 예캐리 분대장 [마아보이마트]"
+msgid "베테랑 엽병 분대장 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_strike_smg"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""
 
 msgctxt "desc/human/mp/fin/late/vet_jag_strike_smg_demo"
-msgid "베테랑 예캐리 [마아보이마트]"
+msgid "베테랑 엽병 [육군]"
 msgstr ""

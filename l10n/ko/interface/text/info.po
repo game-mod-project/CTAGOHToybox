@@ -159,7 +159,7 @@ msgstr "경보병은 제2차 세계 대전 중 소련이 서둘러 병력을 모
 
 msgctxt "info/squad/mp_squad_volkssturm(ger)"
 msgid "The Volkssturm were civilians armed with small amounts of ammunition and cheap weaponry, including the infamous Panzerfaust AT shaped charge rockets, with the purpose of being the last line of defense of the Fatherland. They composed a weak but nonetheless relevant defense, inflicting damage upon the advancing troops in Germany at the end of the war. The command of these groups fell in the hands of the SS and Nazi political figureheards, significantly reducing it's potential as an efficient fighting force.<c(DB465A)> They are a good last resort unit for desperate measures, but do not expect miracles from these troops.</c>"
-msgstr "폴크스슈투름은 소량의 탄약과 값싼 무기, 악명 높은 Panzerfaust 대전차 성형작약 로켓을 지급받은 민간인들로, 조국의 마지막 방어선 역할을 맡았다. 약했지만 전쟁 말기 독일로 진격하는 적에게 의미 있는 피해를 입혔다. 지휘권은 SS와 나치 정치 인사들이 쥐고 있어 효율적인 전투 병력으로서의 잠재력이 크게 떨어졌다.<c(DB465A)> 절박한 상황에서 쓸 마지막 수단으로는 좋지만, 이 병력에게 기적을 기대하지는 마라.</c>"
+msgstr "국민돌격대는 소량의 탄약과 값싼 무기, 악명 높은 Panzerfaust 대전차 성형작약 로켓을 지급받은 민간인들로, 조국의 마지막 방어선 역할을 맡았다. 약했지만 전쟁 말기 독일로 진격하는 적에게 의미 있는 피해를 입혔다. 지휘권은 SS와 나치 정치 인사들이 쥐고 있어 효율적인 전투 병력으로서의 잠재력이 크게 떨어졌다.<c(DB465A)> 절박한 상황에서 쓸 마지막 수단으로는 좋지만, 이 병력에게 기적을 기대하지는 마라.</c>"
 
 msgctxt "info/vickers_mgun"
 msgid "The Vickers medium machine gun appeared in 1912 in Great Britain as a modification of the famous Maxim gun and was used by the British Army until the 1960s. The machine gun offered an excellent rate of fire at long range but its heavy weight made transportation difficult."
@@ -171,7 +171,7 @@ msgstr "기관총 분견대"
 
 msgctxt "info/squad/mp_squad_pioneer(ger)"
 msgid "The Pioniere squads are the top of the Wehrmacht infantry spearhead, and they were greately respected and admired by the High Command. <c(DB465A)>They carry flamethrowers, grenades and other demolition equipment. Their specialty: Dealing with the enemy frontline fortifications face to face. Provided they can reach the enemy strongholds through the open ground, mayhem shall spread as the demolitions begin."
-msgstr "피오니어 분대는 베어마흐트 보병 돌격의 선봉으로, 최고사령부의 큰 존경과 찬사를 받았다. <c(DB465A)>화염방사기와 수류탄, 그 밖의 폭파 장비를 들고 다닌다. 전문 분야는 적 전선의 방어 시설을 정면에서 상대하는 것이다. 개활지를 지나 적 거점에 다다르기만 하면 폭파가 시작되면서 대혼란이 번질 것이다."
+msgstr "공병 분대는 국방군 보병 돌격의 선봉으로, 최고사령부의 큰 존경과 찬사를 받았다. <c(DB465A)>화염방사기와 수류탄, 그 밖의 폭파 장비를 들고 다닌다. 전문 분야는 적 전선의 방어 시설을 정면에서 상대하는 것이다. 개활지를 지나 적 거점에 다다르기만 하면 폭파가 시작되면서 대혼란이 번질 것이다."
 
 msgctxt "info/squad/mp_squad_basic(ger)"
 msgid "Light Inf."
@@ -199,11 +199,11 @@ msgstr "전장에 노련한 장교가 있으면 어떤 전투의 흐름도 바�
 
 msgctxt "info/squad/mp_squad_luftwaffe(ger)"
 msgid "The Luftwaffe field units were deployed to give frontline support to the Wehrmacht as well as protecting the airfields on the combat zone from land raids. <c(DB465A)>They are not the most resilient of soldiers and they are not trained like other elites, but they are staggeringly deadly with their choice of equipment: AT weaponry against enemy vehicles and aircraft-based MG15's, which provide second-to-none accurate suppression. A great unit for defensive means.</c>"
-msgstr "루프트바페 야전 부대는 베어마흐트의 전선을 지원하고 전투 지역의 비행장을 지상 습격으로부터 지키려고 투입되었다. <c(DB465A)>가장 강인한 병사들은 아니고 다른 정예처럼 훈련받지도 않았지만, 장비 면에서는 놀랄 만큼 치명적이다. 적 차량과 항공기에 맞설 대전차 무기, 그리고 항공기용에서 가져온 MG15 기관총으로 더없이 정확한 제압 사격을 한다. 방어용으로 훌륭한 부대다.</c>"
+msgstr "공군 야전 부대는 국방군의 전선을 지원하고 전투 지역의 비행장을 지상 습격으로부터 지키려고 투입되었다. <c(DB465A)>가장 강인한 병사들은 아니고 다른 정예처럼 훈련받지도 않았지만, 장비 면에서는 놀랄 만큼 치명적이다. 적 차량과 항공기에 맞설 대전차 무기, 그리고 항공기용에서 가져온 MG15 기관총으로 더없이 정확한 제압 사격을 한다. 방어용으로 훌륭한 부대다.</c>"
 
 msgctxt "info/squad/mp_squad_sturm_p(ger)"
 msgid "Sturmpioniere are motorised Pioneers under the command of the Panzerwaffe (Tank corps). <c(DB465A)>They come on board a Hanomag.</c>"
-msgstr "슈투름피오니어는 판처바페(기갑 병과) 지휘 아래 있는 차량화 피오니어다. <c(DB465A)>Hanomag에 탑승해 이동한다.</c>"
+msgstr "돌격공병은 기갑병과(기갑 병과) 지휘 아래 있는 차량화 공병다. <c(DB465A)>Hanomag에 탑승해 이동한다.</c>"
 
 msgctxt "info/squad/at_miners(ger)"
 msgid "Anti-tank minefields are primarily meant for securing troop deployment sites and are mainly placed before the occupied position, occasionally on the flanks. A group of four mine-laying specialists is armed with MP-40 submachine guns and capable of quickly deploying the obstacle line, thereby securing disputable or strategically important sectors."
@@ -219,11 +219,11 @@ msgstr "브란덴부르거 특공대는 외국어, 전투, 폭파 임무에 훈�
 
 msgctxt "info/squad/mp_squad_fallschirmjaeger(ger)"
 msgid "The Fallschirmjger (paratroopers) were considered the best german combat-trained unit and during the war they single-handedly undertook operations such as the assault of fort Eban-Emael, the capture of Crete and the defense of Monte-Cassino. After the capture of Crete, Hitler ordered no more large scale paradropping operations in risk of loosing too many of his elite.<c(DB465A)> They are solid all-round, and their squads incorporate from MG gunners to snipers. Towards the end of the war they became even more lethal with FG-42 automatic rifles and Panzerfausts.</c>"
-msgstr "팔쉬름예거(공수부대)는 독일군에서 전투 훈련이 가장 잘된 부대로 평가받았으며, 전쟁 중 에방에말 요새 강습, 크레타 점령, 몬테카시노 방어 같은 작전을 도맡아 수행했다. 크레타를 점령한 뒤 히틀러는 정예를 너무 많이 잃을 것을 우려해 대규모 공수 작전을 더는 하지 말라고 명령했다.<c(DB465A)> 만능에 가까운 견실한 부대로, 분대에 기관총 사수부터 저격수까지 편성되어 있다. 전쟁 말기에는 FG-42 자동 소총과 Panzerfaust를 갖춰 더욱 치명적이 되었다.</c>"
+msgstr "강하엽병(공수부대)는 독일군에서 전투 훈련이 가장 잘된 부대로 평가받았으며, 전쟁 중 에방에말 요새 강습, 크레타 점령, 몬테카시노 방어 같은 작전을 도맡아 수행했다. 크레타를 점령한 뒤 히틀러는 정예를 너무 많이 잃을 것을 우려해 대규모 공수 작전을 더는 하지 말라고 명령했다.<c(DB465A)> 만능에 가까운 견실한 부대로, 분대에 기관총 사수부터 저격수까지 편성되어 있다. 전쟁 말기에는 FG-42 자동 소총과 Panzerfaust를 갖춰 더욱 치명적이 되었다.</c>"
 
 msgctxt "info/squad/mp_squad_gebirgsjaeger(ger)"
 msgid "The German Gebirgsjger were mountain troops prepared to face the enemy on the most troublesome terrain and perilous circumstances. Their unrivaled strong point is that they train to be able to travel long distances without rest. Wherever they are sent to, they will arrive quickly and ready for combat wielding their Edelweiss emblem.<c(DB465A)> They are equipped with lighter rifles and their main man carries an MG34 with a double drum configuration, able to unload double the ammunition in every reload.</c>"
-msgstr "독일의 게비르크스예거는 가장 험난한 지형과 위험한 상황에서 적과 맞설 수 있도록 준비된 산악 부대였다. 휴식 없이 먼 거리를 이동하도록 훈련받은 것이 비할 데 없는 강점이다. 어디로 보내든 에델바이스 휘장을 단 채 신속하게 도착해 전투 태세를 갖춘다.<c(DB465A)> 더 가벼운 소총을 갖췄고, 주력 병사는 이중 탄통을 단 MG34를 들어 재장전할 때마다 두 배의 탄약을 쏟아붓는다.</c>"
+msgstr "독일의 산악엽병은 가장 험난한 지형과 위험한 상황에서 적과 맞설 수 있도록 준비된 산악 부대였다. 휴식 없이 먼 거리를 이동하도록 훈련받은 것이 비할 데 없는 강점이다. 어디로 보내든 에델바이스 휘장을 단 채 신속하게 도착해 전투 태세를 갖춘다.<c(DB465A)> 더 가벼운 소총을 갖췄고, 주력 병사는 이중 탄통을 단 MG34를 들어 재장전할 때마다 두 배의 탄약을 쏟아붓는다.</c>"
 
 msgctxt "info/squad/at_miners(rus)"
 msgid "Anti-tank minefields are primarily meant for securing troop deployment zones from enemy vehicles and tanks and are mainly used in front of occupied positions or to guard one's flanks. A group of four mine laying specialists is armed with PPSh submachine guns and is capable of quickly laying minefields, thereby securing disputed or strategically important sectors."
@@ -231,11 +231,11 @@ msgstr "대전차 지뢰밭은 주로 아군 병력 배치 구역을 적 차량�
 
 msgctxt "info/entity/machinegewehr_34_no_bipod_belt"
 msgid "The MG-34 entered service with the Wehrmacht in 1934 and was used in hand, mounted, anti-aircraft and tank variants. An MG mounted on a tripod was able to fire at both ground and airborne targets. While it surpassed its Western counterparts in terms of rate of fire, continuous fire caused the machine gun's barrel to overheat quickly."
-msgstr "MG-34는 1934년 베어마흐트에 배치되어 휴대용, 거치형, 대공용, 전차용으로 쓰였다. 삼각대에 올린 기관총은 지상 목표와 공중 목표를 모두 사격할 수 있었다. 발사 속도는 서방의 경쟁 기종을 능가했지만, 연속 사격을 하면 총열이 금세 과열되었다."
+msgstr "MG-34는 1934년 국방군에 배치되어 휴대용, 거치형, 대공용, 전차용으로 쓰였다. 삼각대에 올린 기관총은 지상 목표와 공중 목표를 모두 사격할 수 있었다. 발사 속도는 서방의 경쟁 기종을 능가했지만, 연속 사격을 하면 총열이 금세 과열되었다."
 
 msgctxt "info/squad/mp_squad_ss_grenadiers(ger)"
 msgid "The SS grenadiers formed a reliable bulk of the german forces on the late years of the war and they were prepared to receive any orders. The fresh SS troops of 1944-45 were lightly trained but their impact on combat came down to having received the best armament the german industry was rushing, including STG-44 assault rifles and Panzerfaust anti-tank weapons. <c(DB465A)>They form a compact squad which is versatile in combat, able to attack, hold positions with sustained fire, and destroy enemy tanks.</c>"
-msgstr "SS 그레나디어는 전쟁 말기 독일군의 믿을 만한 주력이었고 어떤 명령이든 받을 준비가 되어 있었다. 1944~45년의 신병 SS 부대는 훈련이 부족했지만, 독일 산업이 서둘러 만든 최고의 무장, 곧 STG-44 돌격 소총과 Panzerfaust 대전차 무기를 받아 전투에 미치는 영향이 컸다. <c(DB465A)>공격하고, 지속 사격으로 진지를 지키고, 적 전차를 파괴할 수 있는 다재다능한 소규모 분대다.</c>"
+msgstr "SS 척탄병은 전쟁 말기 독일군의 믿을 만한 주력이었고 어떤 명령이든 받을 준비가 되어 있었다. 1944~45년의 신병 SS 부대는 훈련이 부족했지만, 독일 산업이 서둘러 만든 최고의 무장, 곧 STG-44 돌격 소총과 Panzerfaust 대전차 무기를 받아 전투에 미치는 영향이 컸다. <c(DB465A)>공격하고, 지속 사격으로 진지를 지키고, 적 전차를 파괴할 수 있는 다재다능한 소규모 분대다.</c>"
 
 msgctxt "info/squad/mp_single_tankman(rus)"
 msgid "Tank Crew"
@@ -295,7 +295,7 @@ msgstr "SMERSH 병사"
 
 msgctxt "info/pz6bh"
 msgid "Entered service with the Wehrmacht in 1944. Its turret-mounted 88mm long-barrelled gun was capable of destroying any enemy tank from a long distance. In combination with its excellent armor, this made the King Tiger the most powerful tank of WWII. The Pz VI ausf.B is almost invulnerable to enemy guns, but its 70t weight has negative impact on its mobility."
-msgstr "1944년 베어마흐트에 배치되었다. 포탑에 장착된 88mm 장포신 포는 먼 거리에서도 어떤 적 전차든 파괴할 수 있었다. 뛰어난 장갑과 결합된 이 포 덕에 King Tiger는 제2차 세계 대전에서 가장 강력한 전차가 되었다. Pz VI Ausf.B는 적의 포에 거의 뚫리지 않지만, 70톤의 무게 탓에 기동성이 떨어진다."
+msgstr "1944년 국방군에 배치되었다. 포탑에 장착된 88mm 장포신 포는 먼 거리에서도 어떤 적 전차든 파괴할 수 있었다. 뛰어난 장갑과 결합된 이 포 덕에 King Tiger는 제2차 세계 대전에서 가장 강력한 전차가 되었다. Pz VI Ausf.B는 적의 포에 거의 뚫리지 않지만, 70톤의 무게 탓에 기동성이 떨어진다."
 
 msgctxt "info/squad/bazookers(rus)"
 msgid "The portable rocket launcher Bazooka was developed by US designers to fight enemy equipment. Some of them were delivered to the Soviet Union under the Lend-Lease program. Although the damage capacity of a high-explosion grenade is not reduced over distance, rocket launchers are most efficient at close and medium range. It is very difficult to hit a target when firing a bazooka at long range. An infantryman carrying a rocket launcher is extremely vulnerable which is why a combat unit includes a submachine gunner to cover him."
@@ -311,7 +311,7 @@ msgstr "파르티잔은 집에서 가져온 무기나 적이나 전사한 동료
 
 msgctxt "info/squad/at_rifle(ger)"
 msgid "This German anti-tank rifle was put into service with the Wehrmacht in 1939 and was the main infantry combat tool against light armored equipment before Panzerfausts were introduced. Its 14.5g bullet with tungsten core could pierce a 20mm armored plate when shot at medium range. This enabled the Panzerbushe 39 to establish en excellent reputation at the beginning of World War 2. However, with the advent of Matildas and T-34 the effectiveness of the rifle dropped significantly because at best it could only knock the tracks from these tanks or damage their guns. An anti-armor crew consists of two people."
-msgstr "이 독일제 대전차 소총은 1939년 베어마흐트에 배치되었고, Panzerfaust가 도입되기 전까지 경장갑 장비를 상대하는 보병의 주요 수단이었다. 텅스텐 심이 든 14.5g 탄환은 중거리에서 20mm 장갑판을 뚫을 수 있었다. 덕분에 Panzerbushe 39는 제2차 세계 대전 초기에 훌륭한 평판을 얻었다. 그러나 Matilda와 T-34가 등장하면서 소총의 효과는 크게 떨어졌고, 이 전차들의 궤도를 끊거나 포를 손상시키는 것이 고작이었다. 대전차 소총 팀은 두 명으로 구성된다."
+msgstr "이 독일제 대전차 소총은 1939년 국방군에 배치되었고, Panzerfaust가 도입되기 전까지 경장갑 장비를 상대하는 보병의 주요 수단이었다. 텅스텐 심이 든 14.5g 탄환은 중거리에서 20mm 장갑판을 뚫을 수 있었다. 덕분에 Panzerbushe 39는 제2차 세계 대전 초기에 훌륭한 평판을 얻었다. 그러나 Matilda와 T-34가 등장하면서 소총의 효과는 크게 떨어졌고, 이 전차들의 궤도를 끊거나 포를 손상시키는 것이 고작이었다. 대전차 소총 팀은 두 명으로 구성된다."
 
 msgctxt "info/squad/at_miners(eng)"
 msgid "Anti-tank minefields are primarily meant for securing troop deployment sites and are mainly placed in front of established positions and occasionally on the flanks. A group of four mine-laying specialists, armed with M3A1 submachine guns, is capable of quickly deploying the obstacle line, thereby securing unoccupied or strategically important sectors."
@@ -355,7 +355,7 @@ msgstr "이 경량 사륜구동 차량의 생산은 1940년에 시작되었다. 
 
 msgctxt "info/entity/hummel"
 msgid "The Hummel self-propelled heavy 150mm howitzer entered service with the Wehrmacht in May 1943 and was designed to demolish enemy fortifications and provide support to assault groups. Its low ordnance capacity along with thin, open-top armor made it unsuitable for close combat. In spite of this, the \"Bumblebee\" was a fearsome weapon, capable of dealing tremendous damage to the enemy."
-msgstr "Hummel 자주 중곡사포(150mm)는 1943년 5월 베어마흐트에 배치되었으며, 적 방어 시설을 파괴하고 돌격 부대를 지원하도록 설계되었다. 탄약 적재량이 적고 장갑이 얇은 개방형 차체라 근접전에는 맞지 않았다. 그럼에도 「호박벌」은 적에게 엄청난 피해를 줄 수 있는 무서운 무기였다."
+msgstr "Hummel 자주 중곡사포(150mm)는 1943년 5월 국방군에 배치되었으며, 적 방어 시설을 파괴하고 돌격 부대를 지원하도록 설계되었다. 탄약 적재량이 적고 장갑이 얇은 개방형 차체라 근접전에는 맞지 않았다. 그럼에도 「호박벌」은 적에게 엄청난 피해를 줄 수 있는 무서운 무기였다."
 
 msgctxt "info/squad/bazookers(ger)"
 msgid "The portable anti-tank Panzerschreck was an expensive but powerful weapon, vastly superior to the American Bazooka in terms of its piercing performance. The damage capacity of a high-explosion grenade is not reduced over distance but rocket launchers are still most efficient at close and medium range. It is very difficult to hit a target when firing such a weapon at long range. An infantry man carrying a rocket launcher is extremely vulnerable which is why a combat unit includes an escort submachine gunner."
@@ -535,7 +535,7 @@ msgstr "영국군 돌격대는 체력이 뛰어난 젊은 병사들로 구성되
 
 msgctxt "info/squad/stormtroopers(ger)"
 msgid "The elite units of the Wehrmacht are well trained and equipped. A squad of six heavy infantrymen is ideal for storming enemy positions and capturing strategic points. The squad’s arsenal includes MP-44 submachine guns, Panzerfaust grenade launchers, smoke, anti-personnel and high-explosive anti-tank grenades. Most effective at close and medium combat range where a metal breastplate will protect a heavy infantryman from rifle bullets."
-msgstr "베어마흐트의 정예 부대로, 훈련 수준과 장비가 뛰어나다. 중보병 여섯 명으로 이루어진 분대는 적 진지를 돌파하고 전략 거점을 점령하는 데 이상적이다. 분대의 무장에는 MP-44 기관단총, Panzerfaust 대전차 발사기, 연막탄, 대인 수류탄, 고폭 대전차 수류탄이 있다. 금속 흉갑이 소총탄을 막아 주므로 근거리와 중거리 전투에서 가장 효과적이다."
+msgstr "국방군의 정예 부대로, 훈련 수준과 장비가 뛰어나다. 중보병 여섯 명으로 이루어진 분대는 적 진지를 돌파하고 전략 거점을 점령하는 데 이상적이다. 분대의 무장에는 MP-44 기관단총, Panzerfaust 대전차 발사기, 연막탄, 대인 수류탄, 고폭 대전차 수류탄이 있다. 금속 흉갑이 소총탄을 막아 주므로 근거리와 중거리 전투에서 가장 효과적이다."
 
 msgctxt "info/squad/stormtroopers(rus)"
 msgid "Assault engineer brigades were introduced in May 1943 by order of the Headquarters of the Supreme High Command for the purpose of breaking through fortified enemy defensive lines and fighting in urban environments. A squad of six such soldiers is most suitable for storming enemy defensive lines and capturing strategic points. The squad is armed with Sudaev submachine guns, high-explosion anti-tank RPG43 grenades, petrol bombs, dynamite and smoke and anti-personnel grenades. Most effective at close and medium combat range where a metal breastplate will protect a heavy infantryman from rifle bullets."
@@ -551,7 +551,7 @@ msgstr "전차의 효율은 무엇보다 승무원의 단결과, 어떤 상황�
 
 msgctxt "info/squad/volksgrenadiers(ger)"
 msgid "The Geman volksgrenadiers, cheap and voluntery units like these, were only given a gun, a helmet and a uniform and often sent straight towards the frontline."
-msgstr "이런 독일 폭스그레나디어는 값싼 지원병 부대로, 총과 철모, 군복만 지급받은 채 곧장 전선으로 보내지는 일이 많았다."
+msgstr "이런 독일 국민척탄병은 값싼 지원병 부대로, 총과 철모, 군복만 지급받은 채 곧장 전선으로 보내지는 일이 많았다."
 
 msgctxt "info/entity/m4a2"
 msgid "Shermans entered mass production in 1942. Despite being the strongest US tank at the time it could not compete with German tanks - its high profile and weak armor along with the poor performance of its main gun contributed to the overall vulnerability of the tank. Nevertheless, thanks to the relatively low costs of production, the Sherman functioned as the main battle tank of the Allies."
@@ -631,7 +631,7 @@ msgstr "이 경야포는 1930년부터 미군에서 운용되었다. 글라이�
 
 msgctxt "info/entity/bf109g"
 msgid "The 109 was the basic fighter in the German Luftwaffe, used in many places and is known for its agility and firepower."
-msgstr "Bf 109는 독일 루프트바페의 기본 전투기로, 여러 전선에서 쓰였으며 민첩성과 화력으로 유명하다."
+msgstr "Bf 109는 독일 공군의 기본 전투기로, 여러 전선에서 쓰였으며 민첩성과 화력으로 유명하다."
 
 msgctxt "info/entity/bishop"
 msgid "A self-propelled howitzer mounted on the Valentine tank hull. Its main purpose was to provide the 25-pounder howitzer with a mobile platform. The hurried design process led to some flaws - the fixed turret turned out to be very tall, which in combination with the vehicle's low speed made it an ideal target. Despite this, the Bishop was successfully used as an infantry support weapon and siege gun."
@@ -699,7 +699,7 @@ msgstr "1941년 영국 Dodge는 영국군이 주문한 전륜구동 화기 운�
 
 msgctxt "info/entity/elefant"
 msgid "The Elefant tank destroyer entered service with the Wehrmacht in the spring of 1943. Its cabin-mounted 88mm gun was considered to be the deadliest weapon of its times and allowed the vehicle to destroy most enemy tanks from beyond their range of effective fire. Its armor - sometimes as thick as 200mm - made the Elefant impervious to frontal attacks, but due to the heavy weight it achieved low speeds and had limited cross-country capability."
-msgstr "Elefant 구축전차는 1943년 봄 베어마흐트에 배치되었다. 전투실에 장착한 88mm 포는 당대 가장 치명적인 무기로 여겨졌고, 대부분의 적 전차를 그 유효 사거리 밖에서 파괴할 수 있었다. 장갑은 두꺼운 곳이 200mm에 이르러 정면 공격에는 끄떡없었지만, 무게 탓에 속도가 느렸고 험지 주행 능력도 제한적이었다."
+msgstr "Elefant 구축전차는 1943년 봄 국방군에 배치되었다. 전투실에 장착한 88mm 포는 당대 가장 치명적인 무기로 여겨졌고, 대부분의 적 전차를 그 유효 사거리 밖에서 파괴할 수 있었다. 장갑은 두꺼운 곳이 200mm에 이르러 정면 공격에는 끄떡없었지만, 무게 탓에 속도가 느렸고 험지 주행 능력도 제한적이었다."
 
 msgctxt "info/entity/flak18"
 msgid "The '88mm cannon is known for its revolutionary shell caliber that pierced the toughest armor like a tin can. Used in all over Europe during the World War 2, most famous places are Normandy (Op. Overlord) and all over Holland (Op. MarketGarden)."
@@ -707,7 +707,7 @@ msgstr "88mm 포는 가장 단단한 장갑도 양철처럼 뚫는 혁신적인 
 
 msgctxt "info/entity/flak38_wheeled"
 msgid "Mounted on a wheeled carriage, the Flak 38 gun was a further development of the Flak-30 AA gun: lighter, but boasting higher rate of fire. It was used by Wehrmacht, Luftwaffe and SS troops for anti-aircraft defence. It could, however, be easily employed against infantry and lightly-armored vehicles."
-msgstr "Flak 38 포는 바퀴 달린 포가에 장착된 Flak-30 대공포의 발전형으로, 더 가볍고 발사 속도는 더 높았다. 베어마흐트, 루프트바페, SS 부대가 대공 방어에 사용했다. 그러나 보병과 경장갑 차량에도 쉽게 사용할 수 있었다."
+msgstr "Flak 38 포는 바퀴 달린 포가에 장착된 Flak-30 대공포의 발전형으로, 더 가볍고 발사 속도는 더 높았다. 국방군, 공군, SS 부대가 대공 방어에 사용했다. 그러나 보병과 경장갑 차량에도 쉽게 사용할 수 있었다."
 
 msgctxt "info/entity/gaz67b"
 msgid "Serial production of GAZ-67 started in October 1943. Being notably heavier than its American counterparts, this Soviet 4WD car was not actually inferior to them in terms of mobility while its high cross-country ability, reliability and simplicity quickly brought the Ivan-Wyllis popularity among the soldiers and officers of the Red Army. This vehicle was widely used for transporting medium-ranking command staff and headquarters staff as well as for reconnaissance, communications and towing light artillery. On some modifications a vertical bar with a machine gun mount was installed."
@@ -771,7 +771,7 @@ msgstr "미국이 생산한 이 박격포의 설계는 프랑스 기술자 Edgar
 
 msgctxt "info/entity/jagdtiger"
 msgid "In the summer of 1944, the Wehrmacht received their heaviest tank destroyer ever - the Jagdtiger. Built on the King Tiger chassis, it had the drawback of being exceptionally heavy, which resulted in low mobility. However, as regarding armor and firepower, this vehicle was unmatched - its 128mm long-barrelled gun was able to destroy any adversary with ease, and the armor thickness reached as much as 250mm."
-msgstr "1944년 여름 베어마흐트는 역대 가장 무거운 구축전차 Jagdtiger를 받았다. King Tiger 차대에 만들어져 극도로 무거운 것이 약점이었고 그 때문에 기동성이 낮았다. 하지만 장갑과 화력만큼은 견줄 상대가 없었다. 128mm 장포신 포는 어떤 상대든 쉽게 파괴했고, 장갑 두께는 250mm에 이르렀다."
+msgstr "1944년 여름 국방군은 역대 가장 무거운 구축전차 Jagdtiger를 받았다. King Tiger 차대에 만들어져 극도로 무거운 것이 약점이었고 그 때문에 기동성이 낮았다. 하지만 장갑과 화력만큼은 견줄 상대가 없었다. 128mm 장포신 포는 어떤 상대든 쉽게 파괴했고, 장갑 두께는 250mm에 이르렀다."
 
 msgctxt "info/entity/m3_ally"
 msgid "This armored half-track was manufactured in the USA to transport infantry and artillery. Its spacious body had an open design and as well as a compartment for 8 infantrymen it had a special mount with a heavy machine gun mounted on it. The M3 proved to be a fast and reliable vehicle very suitable for use in the harsh conditions of the war."
@@ -879,7 +879,7 @@ msgstr "다연장 로켓 발사기 Calliope를 이동식으로 만들기 위해 
 
 msgctxt "info/mg34_lafette"
 msgid "The MG-34 entered service with the Wehrmacht in 1934 and was used in hand, mounted, anti-aircraft and tank variants. An MG mounted on a tripod was able to fire at both ground and airborne targets. While it surpassed its Western counterparts in terms of rate of fire, continuous fire caused the machine gun's barrel to overheat quickly."
-msgstr "MG-34는 1934년 베어마흐트에 배치되어 휴대용, 거치형, 대공용, 전차용으로 쓰였다. 삼각대에 올린 기관총은 지상 목표와 공중 목표를 모두 사격할 수 있었다. 발사 속도는 서방의 경쟁 기종을 능가했지만, 연속 사격을 하면 총열이 금세 과열되었다."
+msgstr "MG-34는 1934년 국방군에 배치되어 휴대용, 거치형, 대공용, 전차용으로 쓰였다. 삼각대에 올린 기관총은 지상 목표와 공중 목표를 모두 사격할 수 있었다. 발사 속도는 서방의 경쟁 기종을 능가했지만, 연속 사격을 하면 총열이 금세 과열되었다."
 
 msgctxt "info/entity/m4a3e2"
 msgid "This special assault variant of the M4 medium tank was designed for breaking through fortified enemy defences. It entered service with the US Army in May 1944 where it got its nickname Jumbo. The thick armor of its turret and front hull made it almost invulnerable to enemy guns. However, at the same time, its increased weight had a negative impact on the speed and cross-country ability of the machine. Its 75mm gun could effectively hit firing posts, personnel and light and medium equipment, however it proved useless against German heavy tanks"
@@ -887,7 +887,7 @@ msgstr "이 M4 중형 전차의 특수 돌격형은 요새화된 적 방어선�
 
 msgctxt "info/sfh18"
 msgid "In production since 1918, the SFH-18 heavy field howitzer was used by Wehrmacht troops during WWII against enemy artillery and personnel, as well as fortifications and trench lines. It fired 43kg HE rounds, capable of dealing devastating damage at very long distances, yet the gun's heavy weight impaired its mobility."
-msgstr "1918년부터 생산된 SFH-18 중야전 곡사포는 제2차 세계 대전 중 베어마흐트 부대가 적 포병, 병력, 요새, 참호선을 상대로 사용했다. 43kg HE탄을 쏘았고 아주 먼 거리에서도 막대한 피해를 입힐 수 있었지만, 무거운 무게가 기동성을 해쳤다."
+msgstr "1918년부터 생산된 SFH-18 중야전 곡사포는 제2차 세계 대전 중 국방군 부대가 적 포병, 병력, 요새, 참호선을 상대로 사용했다. 43kg HE탄을 쏘았고 아주 먼 거리에서도 막대한 피해를 입힐 수 있었지만, 무거운 무게가 기동성을 해쳤다."
 
 msgctxt "info/entity/m4a3vc"
 msgid "Refitted with the British 17-pounder gun the Sherman VC entered production in 1944 and was widely used by the Allies during the last months of the war. The high velocity of the new long-barreled anti-tank gun allowed it to penetrate armor as thick as 100mm. The tank's own armor was also enhanced. The Firefly performed well on the battlefield and a mounted large-calibre AA machine gun only further increased its efficiency."
@@ -923,7 +923,7 @@ msgstr "M5 전차 차대에 만든 경자주포로 1942년부터 생산되었다
 
 msgctxt "info/pz4g"
 msgid "The first version of the Pz.IV assault tank turned out to be ineffective against Soviet T34s and KVs. However, by the spring of 1942, the Wehrmacht started receiving new versions of PzKpfw IV tanks with upgraded armament and long-barrelled anti-tank Kwk40 guns, capable of defeating almost any opponent. In addition, the tank had good manoeuvrability, which - along with the strong armor and powerful gun - turned it into a fearsome combat vehicle."
-msgstr "Pz.IV 돌격 전차의 첫 버전은 소련의 T34와 KV에 효과가 없었다. 그러나 1942년 봄, 베어마흐트는 무장을 개량하고 거의 모든 상대를 격파할 수 있는 장포신 대전차포 Kwk40을 단 새 PzKpfw IV 전차를 받기 시작했다. 게다가 기동성이 좋아, 튼튼한 장갑과 강력한 포와 더불어 무시무시한 전투 차량이 되었다."
+msgstr "Pz.IV 돌격 전차의 첫 버전은 소련의 T34와 KV에 효과가 없었다. 그러나 1942년 봄, 국방군은 무장을 개량하고 거의 모든 상대를 격파할 수 있는 장포신 대전차포 Kwk40을 단 새 PzKpfw IV 전차를 받기 시작했다. 게다가 기동성이 좋아, 튼튼한 장갑과 강력한 포와 더불어 무시무시한 전투 차량이 되었다."
 
 msgctxt "info/entity/m8grayhound"
 msgid "The Greyhound entered service with the US Army in early 1943 and became the most widespread armored car of WWII. The entirely welded hull was constructed from sloped steel plates, but the thin armor provided protection only against small firearms. The 37mm gun did not pose much of a threat to serious opponents, however thanks to its light weight and all-wheeled drive the vehicle boasted excellent speed and handling, which resulted in its high popularity with the troops."
@@ -935,7 +935,7 @@ msgstr "러시아 Maxim을 잘 모름/위키백과 찾아보기 귀찮음."
 
 msgctxt "info/mg34_stan"
 msgid "The MG-34 entered service with the Wehrmacht in 1934 and was used in hand, mounted, anti-aircraft and tank variants. An MG mounted on a tripod was able to fire at both ground and airborne targets. While it surpassed its Western counterparts in terms of rate of fire, continuous fire caused the machine gun's barrel to overheat quickly."
-msgstr "MG-34는 1934년 베어마흐트에 배치되어 휴대용, 거치형, 대공용, 전차용으로 쓰였다. 삼각대에 올린 기관총은 지상 목표와 공중 목표를 모두 사격할 수 있었다. 발사 속도는 서방의 경쟁 기종을 능가했지만, 연속 사격을 하면 총열이 금세 과열되었다."
+msgstr "MG-34는 1934년 국방군에 배치되어 휴대용, 거치형, 대공용, 전차용으로 쓰였다. 삼각대에 올린 기관총은 지상 목표와 공중 목표를 모두 사격할 수 있었다. 발사 속도는 서방의 경쟁 기종을 능가했지만, 연속 사격을 하면 총열이 금세 과열되었다."
 
 msgctxt "info/mk2a"
 msgid "Allied forces began to field Matildas in 1940. The concept behind this British infantry tank was a strengthened armor at the cost of speed and firepower. Indeed, the German 37mm AT-guns were unable to penetrate the Matilda's armor, but weak armament and low mobility of these tanks made them poor performers in tank duels, mainly relegating them to infantry support role."
@@ -967,7 +967,7 @@ msgstr "Nashorn 구축전차의 양산은 1943년 2월에 시작되어 종전까
 
 msgctxt "info/nebelwerfer42"
 msgid "This rocket artillery launcher came into being in June 1944 and, thanks to its successful design, was soon widely used among Wehrmacht troops, displacing other models of similar German guns. A framework with guide rails for 300mm rockets was mounted on a wheeled carriage and the rockets, which detonated after launching, produced a tremendous destructive force, damaging fortifications and causing heavy losses to enemy infantry and equipment."
-msgstr "이 로켓 포병 발사기는 1944년 6월 등장했고 성공적인 설계 덕분에 곧 베어마흐트 부대에서 널리 쓰이며 비슷한 다른 독일 포들을 밀어냈다. 300mm 로켓용 유도 레일 골조가 바퀴 달린 포가에 설치되었고, 발사 후 폭발하는 로켓은 엄청난 파괴력을 내어 요새를 부수고 적 보병과 장비에 큰 손실을 입혔다."
+msgstr "이 로켓 포병 발사기는 1944년 6월 등장했고 성공적인 설계 덕분에 곧 국방군 부대에서 널리 쓰이며 비슷한 다른 독일 포들을 밀어냈다. 300mm 로켓용 유도 레일 골조가 바퀴 달린 포가에 설치되었고, 발사 후 폭발하는 로켓은 엄청난 파괴력을 내어 요새를 부수고 적 보병과 장비에 큰 손실을 입혔다."
 
 msgctxt "info/oerlikon"
 msgid "This 20mm flak autocannon was developed in Sweden and became the most widely used anti-aircraft gun of WWII. The ease of use and high rate of fire contributed to its popularity - in 1939 it was fielded by the British Armed Forces, and in 1941 by the US Navy. Oerlikons were used against both aerial and ground targets and were effective against infantry and lightly-armored vehicles."
@@ -979,7 +979,7 @@ msgstr "머스탱을 모르는 사람은 없다."
 
 msgctxt "info/pak35"
 msgid "The PaK 35 artillery gun was used to engage enemy vehicles, destroy weapon emplacements and eliminate non-sheltered personnel. A semi-automatic sliding-wedge breechblock provided the gun with high rate of fire, while armor-piercing rounds easily defeated the lightly-armored vehicles of the time at medium ranges. During early stages of WWII, the gun was issued to Wehrmacht infantry divisions as the main anti-tank weapon, however, as tank armor thickened, it became ineffective."
-msgstr "PaK 35 포는 적 차량 공격, 화기 진지 파괴, 노출된 병력 제거에 쓰였다. 반자동 쐐기식 포미 덕분에 발사 속도가 높았고, 철갑탄은 당시의 경장갑 차량을 중거리에서 쉽게 격파했다. 제2차 세계 대전 초기에 이 포는 베어마흐트 보병 사단에 주력 대전차 무기로 지급되었으나, 전차 장갑이 두꺼워지면서 효과가 없어졌다."
+msgstr "PaK 35 포는 적 차량 공격, 화기 진지 파괴, 노출된 병력 제거에 쓰였다. 반자동 쐐기식 포미 덕분에 발사 속도가 높았고, 철갑탄은 당시의 경장갑 차량을 중거리에서 쉽게 격파했다. 제2차 세계 대전 초기에 이 포는 국방군 보병 사단에 주력 대전차 무기로 지급되었으나, 전차 장갑이 두꺼워지면서 효과가 없어졌다."
 
 msgctxt "info/sturmpz1"
 msgid "The self-propelled Bison Sturmpanzer I entered service with the German Army in 1940. It was basically a heavy 150mm sIG-33 gun mounted atop the base of a Pz.I was. The artillery gun was mainly used to destroy fortifications and heavily-defended areas. Its armor plates partially protected the crew from shrapnels and bullets, but were unable to provide them cover from artillery fire."
@@ -1003,7 +1003,7 @@ msgstr "1943년 7월부터 대량 생산된 Pz.I 경전차는 6기통 마이바�
 
 msgctxt "info/pz2l"
 msgid "The production of Wehrmacht's last light tank began in 1942. The Lynx, with its 20mm autogun and light armor, did not pose a serious threat to enemy tanks, yet its six-gear transmission allowed it to reach high speeds. Thanks to this advantage, it was ideally suited for recon missions, which earned it appropriate respect."
-msgstr "베어마흐트의 마지막 경전차는 1942년에 생산을 시작했다. Lynx는 20mm 자동포와 얇은 장갑 때문에 적 전차에 큰 위협은 못 됐지만, 6단 변속기 덕에 빠른 속도를 낼 수 있었다. 이 장점 덕에 정찰 임무에 알맞아 그에 걸맞은 평가를 받았다."
+msgstr "국방군의 마지막 경전차는 1942년에 생산을 시작했다. Lynx는 20mm 자동포와 얇은 장갑 때문에 적 전차에 큰 위협은 못 됐지만, 6단 변속기 덕에 빠른 속도를 낼 수 있었다. 이 장점 덕에 정찰 임무에 알맞아 그에 걸맞은 평가를 받았다."
 
 msgctxt "info/pz3m"
 msgid "In order to clear minefields, German engineers have developed a special mine roller. When mounted upon the chassis of a Pz.Kpfw.III tank, it allowed the vehicle to drive through minefields unharmed. The resulting corridors were then used by infantry and ordinary tanks. It was armed with only a machine-gun."
@@ -1023,11 +1023,11 @@ msgstr "이 장포신 17파운드포는 오랫동안 같은 급에서 최고로 
 
 msgctxt "info/qf2"
 msgid "The British 2-pounder developed in 1936 was considered one of the best guns in its class. During the early years of the war, the QF2 was successfully used to fight enemy APCs, light and medium tanks. The arrival of more heavily-protected Panzers quickly reduced its efficiency however."
-msgstr "1936년에 개발된 영국의 2파운드포는 같은 급에서 가장 뛰어난 포 가운데 하나로 평가받았다. 전쟁 초기에는 QF2가 적 장갑차와 경전차, 중형 전차를 상대로 성공적으로 쓰였다. 그러나 방어력이 더 높은 판처가 등장하면서 효율이 급격히 떨어졌다."
+msgstr "1936년에 개발된 영국의 2파운드포는 같은 급에서 가장 뛰어난 포 가운데 하나로 평가받았다. 전쟁 초기에는 QF2가 적 장갑차와 경전차, 중형 전차를 상대로 성공적으로 쓰였다. 그러나 방어력이 더 높은 전차가 등장하면서 효율이 급격히 떨어졌다."
 
 msgctxt "info/r12"
 msgid "One of the most successful models of German motorcycles entered mass production in 1934. Fast and armed with an MG-34 machine-gun (mounted on a sidecar), the R-12 became very popular among Wehrmacht motorized troops."
-msgstr "독일 오토바이 중 가장 성공한 모델 하나가 1934년에 대량 생산에 들어갔다. 빠르고 MG-34 기관총(사이드카에 설치)으로 무장한 R-12는 베어마흐트 기계화 부대에서 큰 인기를 얻었다."
+msgstr "독일 오토바이 중 가장 성공한 모델 하나가 1934년에 대량 생산에 들어갔다. 빠르고 MG-34 기관총(사이드카에 설치)으로 무장한 R-12는 국방군 기계화 부대에서 큰 인기를 얻었다."
 
 msgctxt "info/sdkfz222"
 msgid "Production of these 4 x 4 light armored vehicles started in 1936. Thanks to its good ride performance this vehicle became very popular among German troops and was widely used in the initial battles of World War Two. An automatic gun installed on its small rotating turret, coupled with a 20mm machine gun, effectively struck at enemy personnel and light armored equipment. However, the insufficient protection of the SdKfz 222 was the reason it was downgraded to reconnaissance and support equipment."
@@ -1035,11 +1035,11 @@ msgstr "이 4 x 4 경장갑차는 1936년에 생산을 시작했다. 주행 성�
 
 msgctxt "info/sdkfz251_1"
 msgid "The SdKfz 251 half-track armored vehicle entered service with the Wehrmacht in the summer of 1939. It was widely used as a means of troop transport along the Soviet-German front, but because of its open top, the crew wasn't sufficiently protected. Apart from seats, the infantry compartment contained mounts for several machine guns. The Hanomag engine allowed this 9-tonne vehicle to achieve high speeds, while sloping armor plates provided some protection to the transported infantry."
-msgstr "SdKfz 251 반궤도 장갑차는 1939년 여름 베어마흐트에 배치됐다. 독소 전선에서 병력 수송 수단으로 널리 쓰였지만 지붕이 열려 있어 승무원이 충분히 보호받지 못했다. 병력실에는 좌석 외에 기관총 여러 정을 거치할 수 있는 장치가 있었다. 하노마크 엔진 덕에 9톤짜리 이 차량이 빠른 속도를 낼 수 있었고, 경사 장갑판이 탑승 보병을 어느 정도 지켜 주었다."
+msgstr "SdKfz 251 반궤도 장갑차는 1939년 여름 국방군에 배치됐다. 독소 전선에서 병력 수송 수단으로 널리 쓰였지만 지붕이 열려 있어 승무원이 충분히 보호받지 못했다. 병력실에는 좌석 외에 기관총 여러 정을 거치할 수 있는 장치가 있었다. 하노마크 엔진 덕에 9톤짜리 이 차량이 빠른 속도를 낼 수 있었고, 경사 장갑판이 탑승 보병을 어느 정도 지켜 주었다."
 
 msgctxt "info/sdkfz4"
 msgid "Smoke trails behind a Nebelwerfer's rocket volley exposed its position and made it very vulnerable to counter-attacks, so it was decided to mount this weapon on a mobile platform. The first versions of the Sdkzf.4 with a mounted rocket launcher entered service with the Wehrmacht in early 1944. Bullet-proof armor and fair manoeuvrability increased the vehicle's overall resilience while a volley of ten 150mm rockets was capable of inflicting devastating damage on the enemy."
-msgstr "네벨베르퍼의 로켓 일제 사격 때 생기는 연기 꼬리가 위치를 드러내 반격에 매우 취약했기 때문에, 이 무기를 이동식 플랫폼에 싣기로 했다. 로켓 발사기를 얹은 Sdkzf.4의 첫 형식은 1944년 초 베어마흐트에 배치됐다. 방탄 장갑과 괜찮은 기동성으로 차량의 전반적인 생존력이 올랐고, 150mm 로켓 열 발의 일제 사격은 적에게 엄청난 피해를 줄 수 있었다."
+msgstr "네벨베르퍼의 로켓 일제 사격 때 생기는 연기 꼬리가 위치를 드러내 반격에 매우 취약했기 때문에, 이 무기를 이동식 플랫폼에 싣기로 했다. 로켓 발사기를 얹은 Sdkzf.4의 첫 형식은 1944년 초 국방군에 배치됐다. 방탄 장갑과 괜찮은 기동성으로 차량의 전반적인 생존력이 올랐고, 150mm 로켓 열 발의 일제 사격은 적에게 엄청난 피해를 줄 수 있었다."
 
 msgctxt "info/sdkfz7_1"
 msgid "Serial production of these rather basic but effective mobile anti-aircraft systems began in 1940.  The machine presented a standard German half-track armored vehicle with a combined 4-barrelled Flakvierling 38 anti-aircraft gun mounted on the body. This 20mm automatic gun could fire up to 1,800 shots per minute, successfully hitting low-flying enemy aircraft, infantry or light armored equipment. At the same time poor cockpit protection and the resulting vulnerability of the gun crew lead to heavy losses in open combat."

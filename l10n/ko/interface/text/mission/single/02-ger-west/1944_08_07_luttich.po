@@ -55,7 +55,7 @@ msgstr "눈앞에 르메닐토브 마을이 있다. 뤼티히 작전을 성공�
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/02"
 msgid "The town is only lightly defended. I place our Panzeraufklärer under your command! When you have captured the crossroads, our Panzers will roll in."
-msgstr "마을은 가볍게만 방어되고 있다. 우리 판처아우프클레러를 자네 지휘 아래 둔다! 교차로를 점령하면 우리 판처가 들어간다."
+msgstr "마을은 가볍게만 방어되고 있다. 우리 기갑정찰병을 자네 지휘 아래 둔다! 교차로를 점령하면 우리 전차가 들어간다."
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/03"
 msgid "You should be able to make quick work of the Americans, but you don't have a lot of manpower. Advance cautiously and don't take unnecessary risks."
@@ -71,7 +71,7 @@ msgstr "잘했다, 졸다텐! 이제 르메닐토브를 지킬 수비대를 보�
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/06"
 msgid "The Panzergrenadiere from Kampfgruppe Zander have met resistance on the approaches to Chérencé le Roussel in the north. I need you to assist them."
-msgstr "잔더 캄프그루페의 판처그레나디어가 북쪽 셰랑세르루셀 접근로에서 저항에 부딪혔다. 자네가 지원해야 한다."
+msgstr "잔더 캄프그루페의 기갑척탄병이 북쪽 셰랑세르루셀 접근로에서 저항에 부딪혔다. 자네가 지원해야 한다."
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/narrator/07"
 msgid "I place some of our armor under your command. Keep the enemy pinned at maximum range, where you will be impervious to their 57mm AT guns. "
@@ -119,7 +119,7 @@ msgstr "참으로 유감이다. 지금쯤 아브랑슈로 가고 있어야 했�
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/place"
 msgid "116th Panzer Division"
-msgstr "제116 판처 사단"
+msgstr "제116 기갑 사단"
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/skip"
 msgid "Skip preparation phase"
@@ -127,7 +127,7 @@ msgstr "준비 단계 건너뛰기"
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/story"
 msgid " August, 1944. After the American breakthrough at St. Lô, Avranches has now fallen into American hands. German high command orders a counterattack in the direction of Avranches, hoping to cut off the allied advance. This counterattack, known as Operation Lüttich, aims to cut into the allied flank around Mortain.\n\n You’re a Panzer commander from 116th Panzer Division, and your battalion is attached to Kampfgruppe Schake for this mission. You have orders to advance and take Le- Mesnil- Tôve. Take the village and secure the area. There is little or no information on enemy disposition, so it’s up to your tactical insight and improvisation skill to achieve your goals. Move out immediately, establish contact with the Panzergrenadiers, and wait for further instructions.\n\nGood luck!"
-msgstr "1944년 8월. 미군이 생로를 돌파한 뒤 아브랑슈가 미군 손에 넘어갔다. 독일 최고사령부는 연합군의 진격을 끊기를 바라며 아브랑슈 방향으로 반격을 명령한다. 뤼티히 작전이라 불리는 이 반격은 모르탱 일대의 연합군 측면을 파고드는 것이 목표다.\n\n그대는 제116 판처 사단의 전차 지휘관이며, 대대는 이번 임무에서 샤케 전투단에 배속되었다. 진격하여 르메닐토브를 점령하라. 마을을 점령하고 일대를 확보하라. 적 배치에 관한 정보는 거의 없으므로 전술적 통찰과 임기응변으로 목표를 달성해야 한다. 즉시 출발해 판처그레나디어와 접촉하고 추가 지시를 기다려라.\n\n행운을 빈다!"
+msgstr "1944년 8월. 미군이 생로를 돌파한 뒤 아브랑슈가 미군 손에 넘어갔다. 독일 최고사령부는 연합군의 진격을 끊기를 바라며 아브랑슈 방향으로 반격을 명령한다. 뤼티히 작전이라 불리는 이 반격은 모르탱 일대의 연합군 측면을 파고드는 것이 목표다.\n\n그대는 제116 기갑 사단의 전차 지휘관이며, 대대는 이번 임무에서 샤케 전투단에 배속되었다. 진격하여 르메닐토브를 점령하라. 마을을 점령하고 일대를 확보하라. 적 배치에 관한 정보는 거의 없으므로 전술적 통찰과 임기응변으로 목표를 달성해야 한다. 즉시 출발해 기갑척탄병과 접촉하고 추가 지시를 기다려라.\n\n행운을 빈다!"
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task1"
 msgid "Capture the vital crossroads at Le-Mesnil-Tôve "
@@ -135,7 +135,7 @@ msgstr "르메닐토브의 핵심 교차로를 점령하라"
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2"
 msgid "Attack to the north to support Kampfgruppe Zander from 116.PZD"
-msgstr "북쪽으로 공격해 제116 판처 사단 찬더 전투단을 지원하라"
+msgstr "북쪽으로 공격해 제116 기갑 사단 찬더 전투단을 지원하라"
 
 msgctxt "mission/single/02-ger-west/1944_08_07_luttich/task2_1"
 msgid "Eliminate checkpoint to the northeast"

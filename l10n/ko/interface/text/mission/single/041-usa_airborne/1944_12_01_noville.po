@@ -120,7 +120,7 @@ msgstr "제101공수사단 \"비명을 지르는 독수리\""
 
 msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/story"
 msgid "  Just three days ago, a German surprise offensive smashed through the allied lines in the Ardennes. Initially, they advance rapidly. They aim to take Antwerp. The German 5th army has orders to cross the Meuse River at Dinant and Namur, without which a push to Antwerp is simply out of the question.\n\n  To get to those bridges, they will need to take Bastogne. The 2nd Panzer Division intends to pass through Noville to outflank the Bastogne defenders from the north.\n\n However, in Noville, a small force from the 10th armored division blocks their way. The first battalion of the 506th PIR moves forward to reinforce them.\n\n Good luck!"
-msgstr "  불과 사흘 전, 독일군의 기습 공세가 아르덴에서 연합군 전선을 돌파했다. 초기에는 빠르게 진격했다. 목표는 안트베르펜 점령이다. 독일 제5군은 디낭과 나뮈르에서 뫼즈 강을 건너라는 명령을 받았으며, 이를 건너지 못하면 안트베르펜 진격은 아예 불가능하다.\n\n  그 다리들에 가려면 바스토뉴를 점령해야 한다. 제2 판처 사단은 노빌을 통과해 북쪽에서 바스토뉴 수비대의 측면을 우회할 작정이다.\n\n 그러나 노빌에는 제10기갑사단의 소규모 병력이 길을 막고 있다. 제506 PIR 1대대가 이들을 증원하러 전진한다.\n\n 행운을 빈다!"
+msgstr "  불과 사흘 전, 독일군의 기습 공세가 아르덴에서 연합군 전선을 돌파했다. 초기에는 빠르게 진격했다. 목표는 안트베르펜 점령이다. 독일 제5군은 디낭과 나뮈르에서 뫼즈 강을 건너라는 명령을 받았으며, 이를 건너지 못하면 안트베르펜 진격은 아예 불가능하다.\n\n  그 다리들에 가려면 바스토뉴를 점령해야 한다. 제2 기갑 사단은 노빌을 통과해 북쪽에서 바스토뉴 수비대의 측면을 우회할 작정이다.\n\n 그러나 노빌에는 제10기갑사단의 소규모 병력이 길을 막고 있다. 제506 PIR 1대대가 이들을 증원하러 전진한다.\n\n 행운을 빈다!"
 
 msgctxt "mission/single/041-usa_airborne/1944_12_01_noville/task01"
 msgid "Clear Noville of the Germans!"

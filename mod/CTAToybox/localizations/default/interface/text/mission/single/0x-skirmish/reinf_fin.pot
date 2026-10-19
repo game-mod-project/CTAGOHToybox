@@ -89,11 +89,11 @@ msgid "국경경비대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/gebirgsjag"
-msgid "게비르크스예거"
+msgid "산악엽병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_border_jag"
-msgid "국경 예거 분대"
+msgid "국경 엽병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_engineer"
@@ -105,7 +105,7 @@ msgid "예비역 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/squad_jaeger"
-msgid "예거 분대"
+msgid "엽병 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/ger_squad"
@@ -113,11 +113,11 @@ msgid "독일 보병"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/jaeger_lmg"
-msgid "예거 경기관총 분대"
+msgid "엽병 경기관총 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/jaeger_ger_sq"
-msgid "예거 독일 분대"
+msgid "엽병 독일 분대"
 msgstr ""
 
 msgctxt "mission/single/0x-skirmish/menu_fin/37mm_pak36"

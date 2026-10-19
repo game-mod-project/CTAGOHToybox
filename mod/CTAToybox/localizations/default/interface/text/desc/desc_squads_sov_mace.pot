@@ -72,7 +72,7 @@ msgid "포병 통신병 [KA]"
 msgstr ""
 
 msgctxt "desc/squad/squad_cossacks_con(rus)"
-msgid "코사크 분대"
+msgid "카자크 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_marines_late_con(rus)"

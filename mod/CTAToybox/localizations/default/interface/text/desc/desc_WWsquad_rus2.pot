@@ -157,7 +157,7 @@ msgid "<c(c3baae)>로켓포 기갑</c>"
 msgstr ""
 
 msgctxt "desc/squad/rus_kg_tank_desant_t34"
-msgid "T-34 전차 데산트단"
+msgid "T-34 전차 탑승 보병단"
 msgstr ""
 
 msgctxt "info/special/rus_kg_tank_desant_t34"
@@ -165,7 +165,7 @@ msgid "<c(c3baae)>전차와 보병 돌격</c>"
 msgstr ""
 
 msgctxt "desc/squad/rus_kg_guards_tank_desant"
-msgid "근위 중전차 데산트"
+msgid "근위 중전차 탑승 보병"
 msgstr ""
 
 msgctxt "info/special/rus_kg_guards_tank_desant"
@@ -325,7 +325,7 @@ msgid "<c(c3baae)>중형 돌격과 화염</c>"
 msgstr ""
 
 msgctxt "desc/squad/rus_kg_t44_desant"
-msgid "T-44 실험 데산트"
+msgid "T-44 실험 탑승 보병"
 msgstr ""
 
 msgctxt "info/special/rus_kg_t44_desant"

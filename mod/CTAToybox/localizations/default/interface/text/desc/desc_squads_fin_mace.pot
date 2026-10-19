@@ -28,11 +28,11 @@ msgid "<c(A5A095)>(+1)</c> 비상 예비 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_special_jag_recon_late_len(fin)"
-msgid "<c(A5A095)>(4)</c> 특수 예거 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 특수 엽병 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_special_jag_late_len(fin)"
-msgid "<c(A5A095)>(4)</c> 특수 예거 분대"
+msgid "<c(A5A095)>(4)</c> 특수 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_emergency_reserves_coq(fin)"
@@ -40,11 +40,11 @@ msgid "<c(A5A095)>(+1)</c> 비상 예비 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_special_jag_recon_coq(fin)"
-msgid "<c(A5A095)>(4)</c> 특수 예거 정찰 분대"
+msgid "<c(A5A095)>(4)</c> 특수 엽병 정찰 분대"
 msgstr ""
 
 msgctxt "desc/squad/squad_special_jag_coq(fin)"
-msgid "<c(A5A095)>(4)</c> 특수 예거 분대"
+msgid "<c(A5A095)>(4)</c> 특수 엽병 분대"
 msgstr ""
 
 msgctxt "desc/squad/single_bazooker2(fin)"
@@ -96,5 +96,5 @@ msgid "<c(A5A095)>(1)</c> 숙련 핀란드 마을 분대"
 msgstr ""
 
 msgctxt "desc/squad/single_signaller(fin)"
-msgid "포병 통신병 [마아보이마트]"
+msgid "포병 통신병 [육군]"
 msgstr ""

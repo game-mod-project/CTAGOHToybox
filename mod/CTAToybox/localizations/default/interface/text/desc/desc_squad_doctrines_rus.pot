@@ -430,7 +430,7 @@ msgid "<c(B29557)>( I )</c> 국경 순찰대"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_cossacks(rus)"
-msgid "<c(B29557)>( I )</c> 코사크"
+msgid "<c(B29557)>( I )</c> 카자크"
 msgstr ""
 
 msgctxt "desc/squad/doctrine_squad_faustniki(rus)"

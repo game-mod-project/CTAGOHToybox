@@ -25,7 +25,7 @@ msgid "전방위, 제213 보병 연대"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_challenge"
-msgid "도전! 슈투름피오니어가 아니면 죽음을!"
+msgid "도전! 돌격공병이 아니면 죽음을!"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/doctrine_offensive"
@@ -69,7 +69,7 @@ msgid "이차 지뢰밭과 대전차 진지를 조심해라. 우리 진격에 �
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/07"
-msgid "Thor 공성 박격포를 그대의 지휘 아래 둔다. 소련군에게 베어마흐트 최중량 포병의 멍에 아래 놓인다는 게 무슨 뜻인지 보여 줘라! 운용을 유지하려면 보급 차량 한 분견대가 통째로 필요하다!"
+msgid "Thor 공성 박격포를 그대의 지휘 아래 둔다. 소련군에게 국방군 최중량 포병의 멍에 아래 놓인다는 게 무슨 뜻인지 보여 줘라! 운용을 유지하려면 보급 차량 한 분견대가 통째로 필요하다!"
 msgstr ""
 
 msgctxt "mission/single/02-ger/1942_06_sevastopol/narrator/officer/08"
