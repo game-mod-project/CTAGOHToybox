@@ -1,7 +1,7 @@
 // 스커미시 구매 창 로스터(스펙 "스커미시: 구매 창 로스터").
 // 1. 이긴 판 set/multiplayer/units/<시기>/{units,inf}_<국가>.set의 cd·ci·cp·cost·cw·cool 인자와 {cost N}·{cp N}을 0으로(값 토큰만 바꾼다).
 //    차량 비용에는 승무원 단가가 squad_cost_factor로 더해지므로 inf_<국가>.set의 병종 cost도 0이어야 0이 된다(2026-10-17 조사).
-// 기본으로 켠다(RosterOptions.Enabled, spawn-menu build --no-roster로 끈다). 차량 더하기(2)는 기본으로 끈다.
+// 기본으로 끈다(RosterOptions.Enabled, spawn-menu build --roster로 켠다). 차량 더하기(2)는 --roster-add.
 // 2. (AddVehicles, --roster-add) 그 국가 로스터에 없는 전차·포·차량을 국가의 시기 파일마다 새 항목("vehicle2" 매크로)으로 더한다.
 // 3. 횟수 제한 {unitLimits "officer=2;..."}의 수를 모두 999로.
 // 4. 종류 단추: 구매 창 단추는 budget*.inc의 {buttons "inf1 inf2 empl vehicles tanks"} 순서로 나오고, 그림은 순서 번호 꼴
@@ -18,8 +18,8 @@ namespace CtaToybox.Core.Spawn
 {
     public sealed class RosterOptions
     {
-        // 구매 창 로스터를 바꾼다(비용 0·횟수 999·종류 단추). 기본으로 켠다(2026-10-18 사용자 결정: 스커미시는 구매 창 가로 격자로 내 국가 로스터 유닛, 나머지는 증원 창 메뉴). --no-roster로 끈다
-        public bool Enabled { get; set; } = true;
+        // 구매 창 로스터를 바꾼다(비용 0·횟수 999·종류 단추). 기본으로 끈다(2026-10-19 사용자 결정: 구매 창은 원래대로. 그 전 10-18에는 켰다). --roster로 켠다
+        public bool Enabled { get; set; }
         // 로스터에 없던 차량을 더하는가. 게임이 판을 열 때 그 판 국가·시기의 로스터 차량을 모두 미리 읽어서
         // 더한 차량만큼 로딩이 길어진다(2026-10-17 21:59 game.log: eScenePreload 210초 넘게, 미리 읽은 차량 43종 중 38종이 더한 차량)
         public bool AddVehicles { get; set; }
