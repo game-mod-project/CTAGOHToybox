@@ -102,6 +102,7 @@ static class Suites
         ("ProjectMerge", ProjectMergeTests.Run),
         ("MacroSwap", MacroSwapTests.Run),
         ("BlockCopy", BlockCopyTests.Run),
+        ("DefineCopy", DefineCopyTests.Run),
         ("BlockCopyBuild", BlockCopyBuildTests.Run),
         ("BlockCopySession", BlockCopySessionTests.Run),
         ("ReviewFix", ReviewFixTests.Run),
