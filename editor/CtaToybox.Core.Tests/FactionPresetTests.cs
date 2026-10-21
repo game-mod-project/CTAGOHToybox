@@ -16,6 +16,12 @@ static class FactionPresetTests
 
     public static string Fixture(out string repo, out string outDir, params (string Name, string Text)[] extraSet)
     {
+        return FixtureWith(out repo, out outDir, extraSet, new (string, string)[0], new (string, string)[0]);
+    }
+
+    // set은 set.pak에, vehicles는 resource/entity/extra.pak에(항목 이름은 가상 경로에서 entity/를 뗀 것), properties는 properties.pak에 더한다
+    public static string FixtureWith(out string repo, out string outDir, (string Name, string Text)[] extraSet, (string Name, string Text)[] vehicles, (string Name, string Text)[] properties)
+    {
         string game = T.TempDir(), workshop = T.TempDir(), work = T.TempDir();
         repo = T.TempDir(); outDir = T.TempDir();
         var set = new List<(string, string)>
@@ -32,7 +38,9 @@ static class FactionPresetTests
         set.AddRange(extraSet);
         T.Zip(Path.Combine(game, "resource", "set.pak"), set.ToArray());
         T.Zip(Path.Combine(game, "resource", "entity", "-vehicle.pak"), GerTanks.Concat(new[] { RusTank }).Select(p => (p.Substring("entity/".Length), Tank)).ToArray());
-        T.Zip(Path.Combine(game, "resource", "properties.pak"), ("properties/mobility.inc", Mobility));
+        T.Zip(Path.Combine(game, "resource", "properties.pak"), new[] { ("properties/mobility.inc", Mobility) }.Concat(properties ?? new (string, string)[0]).ToArray());
+        if (vehicles != null && vehicles.Length > 0)
+            T.Zip(Path.Combine(game, "resource", "entity", "extra.pak"), vehicles.Select(v => (v.Name.Substring("entity/".Length), v.Text)).ToArray());
         Directory.CreateDirectory(Path.Combine(repo, "data", "annotations"));
         string options = Path.Combine(work, "options.set");
         File.WriteAllText(options, "{options {mods \"" + Path.GetFileName(outDir) + ":0\"}}");

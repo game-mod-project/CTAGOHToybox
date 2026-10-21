@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace CtaToybox.Core
 {
@@ -61,20 +62,27 @@ namespace CtaToybox.Core
             c.Stack.SetCopies(FileCopy.Pairs(project));
             var tracer = new UnitTracer(c.Stack);
 
-            // 3. 사본의 장전 시간: 사본 자신의 줄이면 값, 아니면 줄 더하기
+            // 3. 사본의 장전 시간: 사본 자신의 줄이면 값, 아니면 줄 더하기. 클립식 포는 소수까지 남기고 발 사이 간격도 줄인다
+            double gapFactor = o.ClipGap > 0 ? o.ClipGap : o.Reload;
+            int gapEdits = 0;
             foreach (var kv in copies)
             {
                 string copy = kv.Value;
                 var traced = tracer.Trace(copy);
                 string text = c.Stack.ReadText(copy);
                 var blocks = AddLine.Blocks(text);
+                int filling;
+                string gapText;
+                bool clip = IsClip(copy, traced, o.ClipMinGap, out filling, out gapText);
+                var change = clip ? new ClipChange { Weapon = copy, Filling = filling, GapOld = gapText } : null;
                 foreach (var row in traced.Rows.Where(r => r.Path.EndsWith("/rechargetime", StringComparison.Ordinal) && r.FromState != FromLevel.Overridden))
                 {
                     var v = row.Values.Count > 0 ? row.Values[0] : null;
                     if (v == null) continue;
                     string error;
-                    string next = BulkRules.Compute("mul", v.Text, Num(o.Reload), out error);
+                    string next = Scale(v.Text, o.Reload, clip, out error);
                     if (next == null) { report.Skipped.Add(copy + ": 장전 시간 " + error); continue; }
+                    if (change != null) { change.ReloadOld = v.Text; change.ReloadNew = next; }
                     if (v.Arg >= 0 && SourceStack.ToVirtual(v.File ?? "") == copy)
                     {
                         if (!project.Edits.Any(e => e.File == copy && e.Path == v.KeyPath && e.Occurrence == v.Occurrence && e.Arg == v.Arg))
@@ -89,7 +97,11 @@ namespace CtaToybox.Core
                     if (!project.Edits.Any(e => e.Kind == AddLine.Kind && e.File == copy && e.Path == block.Path && e.Occurrence == block.Occurrence && e.New == line))
                     { project.Edits.Add(AddLine.New(copy, copy, block.Path, block.Occurrence, line)); lines++; }
                 }
+                if (change == null) continue;
+                gapEdits += AddGap(project, copy, traced, text, blocks, gapFactor, change, report);
+                if (!report.Clips.Any(x => x.Weapon == copy)) report.Clips.Add(change);
             }
+            report.Edits[o.Army + " 클립식 발 사이 ×" + Num(gapFactor)] = gapEdits;
 
             // 4. 이 군대 유닛의 이름 값을 사본 이름으로
             var links = ItemLinks.Build(c.Stack.Paths);
@@ -143,6 +155,80 @@ namespace CtaToybox.Core
             report.Edits[o.Army + " 재장전 줄 더하기"] = lines;
             report.Edits[o.Army + " 무기 이름 → 사본"] = renames;
             report.Edits[o.Army + " 보병 체력 ×" + Num(o.Health)] = health;
+        }
+
+        static readonly Regex FillingPath = new Regex("^/[^/]+/filling$", RegexOptions.CultureInvariant);
+        static readonly Regex GapPath = new Regex("^/[^/]+/recoverytime$", RegexOptions.CultureInvariant);
+        static readonly Regex FireRatePath = new Regex("^/[^/]+/\\(\"fire rate\"\\)$", RegexOptions.CultureInvariant);
+
+        // 곱한 값. keepDecimals면 소수 셋째 자리까지(클립식 포의 비율을 지킨다), 아니면 일괄 규칙과 같이 정수였던 값은 정수로
+        static string Scale(string oldText, double factor, bool keepDecimals, out string error)
+        {
+            if (!keepDecimals) return BulkRules.Compute("mul", oldText, Num(factor), out error);
+            error = null;
+            double v;
+            if (!double.TryParse(oldText, NumberStyles.Float, CultureInfo.InvariantCulture, out v)) { error = "수가 아니다: " + oldText; return null; }
+            return Math.Round(v * factor, 3).ToString("0.###", CultureInfo.InvariantCulture);
+        }
+
+        // 클립식 포인가: set/stuff/gun 사본이고, 펼친 탄창 발수가 2 이상이며, 펼친 발 사이(마지막 줄)가 minGap초 이상
+        static bool IsClip(string copy, UnitTraceResult traced, double minGap, out int filling, out string gapText)
+        {
+            filling = 1; gapText = null;
+            if (traced == null || !copy.StartsWith("set/stuff/gun/", StringComparison.Ordinal)) return false;
+            foreach (var r in traced.Rows.Where(r => FillingPath.IsMatch(r.Path) && r.FromState != FromLevel.Overridden && r.Values.Count > 1))
+            {
+                double n;
+                if (double.TryParse(r.Values[1].Text, NumberStyles.Float, CultureInfo.InvariantCulture, out n) && n > filling) filling = (int)n;
+            }
+            var last = traced.Rows.LastOrDefault(r => GapPath.IsMatch(r.Path) && r.FromState != FromLevel.Overridden && r.Values.Count > 0);
+            double gap;
+            if (last == null || !double.TryParse(last.Values[0].Text, NumberStyles.Float, CultureInfo.InvariantCulture, out gap)) return false;
+            gapText = last.Values[0].Text;
+            return filling >= 2 && gap >= minGap;
+        }
+
+        // 클립식 포의 발 사이 간격 × factor. 사본 자신의 줄이면 줄마다 값, "fire rate" 호출이 사본에 있으면 rpm ÷ factor, 아니면 사본에 줄을 더한다
+        static int AddGap(EditProject project, string copy, UnitTraceResult traced, string text, IReadOnlyList<BlockSpan> blocks, double factor, ClipChange change, FactionReport report)
+        {
+            int made = 0;
+            string error;
+            var rows = traced.Rows.Where(r => GapPath.IsMatch(r.Path) && r.FromState != FromLevel.Overridden && r.Values.Count > 0).ToList();
+            foreach (var v in rows.Select(r => r.Values[0]).Where(v => !v.Synthetic && v.Arg >= 0 && SourceStack.ToVirtual(v.File ?? "") == copy))
+            {
+                string next = Scale(v.Text, factor, true, out error);
+                if (next == null) { report.Skipped.Add(copy + ": 발 사이 " + error); continue; }
+                change.GapNew = next;
+                if (project.Edits.Any(e => e.File == copy && e.Path == v.KeyPath && e.Occurrence == v.Occurrence && e.Arg == v.Arg)) continue;
+                project.Edits.Add(new Edit { Unit = copy, File = copy, Path = v.KeyPath, Occurrence = v.Occurrence, Arg = v.Arg, Old = v.Text, New = next, Scope = "shared", NamedPath = v.NamedPath, NamedOccurrence = v.NamedOccurrence });
+                made++;
+            }
+            var last = rows.Last().Values[0];
+            if (!last.Synthetic && last.Arg >= 0 && SourceStack.ToVirtual(last.File ?? "") == copy) return made;
+            string gapNew = Scale(last.Text, factor, true, out error);
+            if (gapNew == null) { report.Skipped.Add(copy + ": 발 사이 " + error); return made; }
+            change.GapNew = gapNew;
+            if (last.Synthetic)
+            {
+                string readError;
+                var call = (SourceRows.Of(copy, text, out readError) ?? new List<KeyRow>()).LastOrDefault(r => FireRatePath.IsMatch(r.Path));
+                int at = call == null || call.LeafNames == null ? -1 : call.LeafNames.IndexOf("rpm");
+                if (at >= 0 && at < call.Leaves.Count)
+                {
+                    string rpm = Scale(call.Leaves[at].Text, 1 / factor, true, out error);
+                    if (rpm == null) { report.Skipped.Add(copy + ": rpm " + error); return made; }
+                    if (!project.Edits.Any(e => e.File == copy && string.Equals(e.Path, call.Path, StringComparison.OrdinalIgnoreCase) && e.Occurrence == call.Occurrence && e.Arg == at))
+                    { project.Edits.Add(new Edit { Unit = copy, File = copy, Path = call.Path, Occurrence = call.Occurrence, Arg = at, Old = call.Leaves[at].Text, New = rpm, Scope = "shared" }); made++; }
+                    return made;
+                }
+            }
+            // 원형이나 다른 파일에서 오는 값: 사본의 첫 블록에 줄을 더한다
+            var block = blocks.FirstOrDefault();
+            if (block == null) { report.Skipped.Add(copy + ": 발 사이 줄을 넣을 블록이 사본에 없다"); return made; }
+            string line = "{recoveryTime " + gapNew + "}";
+            if (!project.Edits.Any(e => e.Kind == AddLine.Kind && e.File == copy && e.Path == block.Path && e.Occurrence == block.Occurrence && e.New == line))
+            { project.Edits.Add(AddLine.New(copy, copy, block.Path, block.Occurrence, line)); made++; }
+            return made;
         }
 
         // F1 'auto'와 같은 범위: 그 파일을 쓰는 유닛이 모두 이 군대면 '전부', 아니면 '이 유닛만'(막히면 건너뛴다)

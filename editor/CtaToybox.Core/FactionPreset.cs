@@ -25,6 +25,20 @@ namespace CtaToybox.Core
         public double Speed { get; set; } = 1.5;
         public double Fuel { get; set; } = 10;
         public List<string> SuperHeavy { get; set; } = new List<string>();   // 초중전차 유닛 폴더(가상 경로 앞부분). editor/presets/super-heavy.txt
+        // 클립식 포(set/stuff/gun, 탄창 2발 이상, 발 사이 ClipMinGap초 이상)는 발 사이 간격도 줄인다. ClipGap이 0이면 Reload와 같은 배수
+        public double ClipMinGap { get; set; } = 1;
+        public double ClipGap { get; set; } = 0;
+    }
+
+    // 클립식 포 하나의 원래·강화 값(초. 발 사이는 "fire rate"면 60/rpm)
+    public sealed class ClipChange
+    {
+        public string Weapon;
+        public int Filling;
+        public string GapOld;
+        public string GapNew;
+        public string ReloadOld;
+        public string ReloadNew;
     }
 
     public sealed class FactionReport
@@ -36,6 +50,7 @@ namespace CtaToybox.Core
         public List<string> Skipped { get; } = new List<string>();   // "유닛: 이유"
         public List<string> Shared { get; } = new List<string>();
         public List<string> Notes { get; } = new List<string>();
+        public List<ClipChange> Clips { get; } = new List<ClipChange>();
     }
 
     // 프리셋이 쓰는 색인들. 세션 없이(명령줄·실제 검사) 만든다
