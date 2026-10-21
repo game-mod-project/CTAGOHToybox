@@ -28,9 +28,11 @@ namespace CtaToybox.Core
         // 클립식 포(set/stuff/gun, 탄창 2발 이상, 발 사이 ClipMinGap초 이상)는 발 사이 간격도 줄인다. ClipGap이 0이면 Reload와 같은 배수
         public double ClipMinGap { get; set; } = 1;
         public double ClipGap { get; set; } = 0;
-        // 보급: 그 군대 보급 유닛이 부르는 보급 매크로의 복제본에서 반경 배수와 총량(0이면 무제한, 파일 주석)
+        // 보급: 그 군대 보급 유닛이 부르는 보급 매크로의 복제본에서 반경 배수, 총량, 다 차는 데 걸리는 초(재생 주기 = SupplyRefill / 총량).
+        // 총량 0은 파일 주석상 무제한이지만 게임에서는 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 50000은 게임 파일에 쓰인 가장 큰 값이다
         public double SupplyRadius { get; set; } = 3;
-        public string SupplyLimit { get; set; } = "0";
+        public string SupplyLimit { get; set; } = "50000";
+        public double SupplyRefill { get; set; } = 10;
     }
 
     // 보급 매크로 하나의 복제와 그 복제본을 쓰게 바꾼 유닛
@@ -42,6 +44,8 @@ namespace CtaToybox.Core
         public string RadiusNew;
         public string LimitOld;
         public string LimitNew;
+        public string RegenOld;
+        public string RegenNew;
         public List<string> Units = new List<string>();
     }
 

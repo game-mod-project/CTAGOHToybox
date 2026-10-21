@@ -72,6 +72,8 @@ static class FactionPresetCliTests
         T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super, "--force", "--doc", doc), "--force");
         T.Eq(count, EditProject.Load(projectPath).Edits.Count, "the same command makes the same project");
         T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super, "--force", "--supply-limit", "-1", "--doc", doc), "a negative supply limit is a usage error");
+        T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super, "--force", "--supply-limit", "0", "--doc", doc), "limit 0 is refused: supply stops working (user check 2026-10-21)");
+        T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super, "--force", "--supply-refill", "0", "--doc", doc), "--supply-refill must be above zero");
         T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super, "--force", "--supply-limit", "many", "--doc", doc), "a supply limit must be a whole number");
         T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super, "--force", "--doc", doc, "--clip-min-gap", "2", "--clip-gap", "0.4", "--supply-radius", "2", "--supply-limit", "9000"), "the new options parse: " + o);
         T.True(File.ReadAllText(doc).Contains("보급 반경 ×2") && File.ReadAllText(doc).Contains("보급 총량 9000") && File.ReadAllText(doc).Contains("발 사이 2초 이상"), "and reach the doc");

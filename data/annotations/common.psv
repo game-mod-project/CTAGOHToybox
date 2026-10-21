@@ -472,10 +472,10 @@
 
 # 보급 구역
 **/extender[supply_zone]|block|추정|주변 유닛에게 보급하는 기능 (추정: 하위 키)|S
-**/extender[supply_zone]/limit|block|확인|보급할 수 있는 총량. 0이면 무제한|C
+**/extender[supply_zone]/limit|block|확인|보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000|C
 **/extender[supply_zone]/radius|block|확인|보급 반경, 미터|C
 **/extender[supply_zone]/resupplyperiod|block|확인|보급 주기, 초|C
-**/extender[supply_zone]/regenerationperiod|block|확인|보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다|C
+**/extender[supply_zone]/regenerationperiod|block|확인|보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인|C
 **/extender[supply_zone]/resupply/item|block|추정|보급해 주는 품목 한 줄. 대상 무기나 아이템, 종류, 수량 (추정: 값 "flame_thrower" "ammo" 50)|S
 **/extender[mine]|block|추정|지뢰 기능 (추정: 이름)|S
 **/extender[mine]/time|block|확인|매설에 더해지는 시간. 실제 매설 시간은 보병의 매설 애니메이션 길이에 이 값을 더한 것|C

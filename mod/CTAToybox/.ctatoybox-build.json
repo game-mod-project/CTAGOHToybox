@@ -1,6 +1,6 @@
 {
   "project": "강화-독일",
-  "builtAt": "2026-10-21T03:32:15Z",
+  "builtAt": "2026-10-21T03:55:11Z",
   "files": [
     {
       "path": "resource/set/stuff/bazooka/20mm_fliegerfaust_ctb_ger.weapon",
@@ -10595,7 +10595,7 @@
     {
       "path": "resource/properties/resupply.inc",
       "layer": "mod_3732639687",
-      "edits": 18
+      "edits": 27
     },
     {
       "path": "resource/entity/-vehicle/generic/special/inf_crate_ger/inf_crate_ger.def",

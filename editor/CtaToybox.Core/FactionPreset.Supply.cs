@@ -1,8 +1,10 @@
 // 팩션 강화: 보급(docs/superpowers/specs/2026-10-21-faction-boost-clip-supply-design.md).
 // 보급 값(반경·총량)은 모든 군대가 같이 쓰는 properties/resupply.inc의 매크로 본문에 있다. 원래 매크로는 그대로 두고,
-// 그 군대 보급 유닛이 부르는 매크로마다 이름 + _ctb_<군대> 복제본을 만들어 값을 바꾸고, 그 유닛의 호출 이름만 복제본으로 바꾼다
+// 그 군대 보급 유닛이 부르는 매크로마다 이름 + _ctb_<군대> 복제본을 만들어 값을 바꾸고, 그 유닛의 호출 이름만 복제본으로 바꾼다.
+// 복제본: 반경 × SupplyRadius, 총량 SupplyLimit(0은 쓰지 않는다: 게임에서 보급이 동작하지 않았다, 사용자 게임 확인 2026-10-21), 재생 주기 SupplyRefill / 총량
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text.RegularExpressions;
 
@@ -59,7 +61,8 @@ namespace CtaToybox.Core
             c.Stack.Overlay = TextCopies.Overlay(project);
             string readError;
             var supplyRows = SourceRows.Of(SupplyFile, c.Stack.ReadText(SupplyFile), out readError) ?? new List<KeyRow>();
-            int radii = 0, limits = 0;
+            int radii = 0, limits = 0, regens = 0;
+            string regen = RegenPeriod(o);
             var changes = new Dictionary<string, SupplyChange>(StringComparer.OrdinalIgnoreCase);
             foreach (string m in used)
             {
@@ -79,6 +82,13 @@ namespace CtaToybox.Core
                     string old = row.Leaves[0].Text;
                     if (change.LimitOld == null) { change.LimitOld = old; change.LimitNew = o.SupplyLimit; }
                     if (AddValue(project, SupplyFile, row, old, o.SupplyLimit)) limits++;
+                }
+                // 재생 주기: 총량이 SupplyRefill초에 다 차게. 컨퀘스트에서 재생을 끄는 조건 줄(mod "gameclass:campaign_capture_the_flag")도 같은 값으로
+                foreach (var row in supplyRows.Where(r => string.Equals(r.Path, prefix + "regenerationperiod", StringComparison.OrdinalIgnoreCase) && r.Leaves.Count > 0))
+                {
+                    string old = row.Leaves[0].Text;
+                    if (change.RegenOld == null) { change.RegenOld = old; change.RegenNew = regen; }
+                    if (AddValue(project, SupplyFile, row, old, regen)) regens++;
                 }
             }
 
@@ -104,8 +114,18 @@ namespace CtaToybox.Core
             report.Edits[o.Army + " 보급 매크로 복제"] = copies;
             report.Edits[o.Army + " 보급 반경 ×" + Num(o.SupplyRadius)] = radii;
             report.Edits[o.Army + " 보급 총량 → " + o.SupplyLimit] = limits;
+            report.Edits[RegenItem(o)] = regens;
             report.Edits[o.Army + " 보급 호출 → 복제본"] = swaps;
         }
+
+        // 재생 주기(초): 1씩 차므로 총량이 SupplyRefill초에 다 차려면 SupplyRefill / 총량
+        public static string RegenPeriod(FactionOptions o)
+        {
+            double limit = double.Parse(o.SupplyLimit, NumberStyles.Float, CultureInfo.InvariantCulture);
+            return (o.SupplyRefill / limit).ToString("0.##########", CultureInfo.InvariantCulture);
+        }
+
+        static string RegenItem(FactionOptions o) { return o.Army + " 보급 재생 주기 → " + RegenPeriod(o) + "초(" + Num(o.SupplyRefill) + "초에 가득)"; }
 
         // 보급 범위(extender "supply_zone")를 가진 매크로 이름들(경로의 소문자 이름)
         static List<string> SupplyMacros(string text)

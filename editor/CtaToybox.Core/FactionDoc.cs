@@ -15,7 +15,6 @@ namespace CtaToybox.Core
 
         static string Cell(string s) { return (s ?? "").Replace("|", "\\|").Replace("\r", " ").Replace("\n", " "); }
 
-        public static string LimitText(string limit) { return limit == "0" ? "0(무제한)" : limit; }
 
         static readonly Regex Folded = new Regex("^(.*) \\((\\d+)\\)$", RegexOptions.CultureInvariant);
 
@@ -44,7 +43,8 @@ namespace CtaToybox.Core
               .Append(", 보병 체력 ×").Append(N(o.Health)).Append(", 장갑 차량 ×").Append(N(o.ArmorCar)).Append("·경전차 ×").Append(N(o.ArmorLight))
               .Append("·중형전차 ×").Append(N(o.ArmorMedium)).Append("·중전차 ×").Append(N(o.ArmorHeavy)).Append("·초중전차 ×").Append(N(o.ArmorSuper))
               .Append(", 속도 ×").Append(N(o.Speed)).Append(", 연료·항속 ×").Append(N(o.Fuel))
-              .Append(", 보급 반경 ×").Append(N(o.SupplyRadius)).Append(", 보급 총량 ").Append(LimitText(o.SupplyLimit)).Append('\n');
+              .Append(", 보급 반경 ×").Append(N(o.SupplyRadius)).Append(", 보급 총량 ").Append(o.SupplyLimit)
+              .Append(", 보급 재생 ").Append(N(o.SupplyRefill)).Append("초에 가득(재생 주기 ").Append(FactionPreset.RegenPeriod(o)).Append("초)\n");
             sb.Append("- 클립식 기준: 탄창 2발 이상, 발 사이 ").Append(N(o.ClipMinGap)).Append("초 이상인 `set/stuff/gun` 무기 사본. 발 사이 ×").Append(N(gapFactor)).Append(", 소수 셋째 자리까지\n");
             sb.Append("- 수정 ").Append(project.Edits.Count).Append("건, 일괄 규칙 ").Append(project.Rules == null ? 0 : project.Rules.Count).Append("개\n\n");
 
@@ -70,9 +70,10 @@ namespace CtaToybox.Core
             if (report.Supplies.Count == 0) sb.Append("없음.\n");
             else
             {
-                sb.Append("| 매크로 | 복제본 | 반경(m) | 총량 | 바꾼 유닛 |\n|---|---|---|---|---|\n");
+                sb.Append("| 매크로 | 복제본 | 반경(m) | 총량 | 재생 주기(초) | 바꾼 유닛 |\n|---|---|---|---|---|---|\n");
                 foreach (var s in report.Supplies.OrderBy(x => x.Macro, StringComparer.Ordinal))
                     sb.Append("| `").Append(s.Macro).Append("` | `").Append(s.Copy).Append("` | ").Append(s.RadiusOld).Append(" → ").Append(s.RadiusNew).Append(" | ").Append(s.LimitOld).Append(" → ").Append(s.LimitNew)
+                      .Append(" | ").Append(s.RegenOld == null ? "없음" : s.RegenOld + " → " + s.RegenNew)
                       .Append(" | ").Append(string.Join(", ", s.Units.Select(u => "`" + u + "`"))).Append(" |\n");
             }
 
@@ -94,7 +95,9 @@ namespace CtaToybox.Core
             sb.Append("\n## 한계와 미확인\n\n");
             sb.Append("- 백로그 E19: 장전 시간이 원형의 탄종별 `{parameters …}` 블록 안에 있는 무기, 매크로 본문에서 무기 이름을 부르는 차량은 강화가 빠진다.\n");
             sb.Append("- 백로그 E20: 모든 군대가 같이 쓰는 매크로 본문 안의 장갑(`sandbags` 등)은 바꾸지 않았다.\n");
-            sb.Append("- 보급 `limit 0`이 무제한이라는 것은 파일 주석으로만 안다. 반경을 키우면 보급 범위 그림이 같이 커지는지는 미확인이다. 컨퀘스트의 보급 차량 AP 비용(로스터의 `supply_ap`)은 그대로다.\n");
+            sb.Append("- 보급 `limit 0`은 파일 주석상 무제한이지만 게임에서는 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 그래서 총량은 게임 파일에 쓰인 가장 큰 값(50000) 안에서 정한다. 엔진이 받는 최대치는 미확인이다.\n");
+            sb.Append("- 재생 주기 ").Append(FactionPreset.RegenPeriod(o)).Append("초처럼 1초보다 짧은 소수 값은 게임 파일에 쓰인 적이 없다(쓰인 값은 0·2·5·10). 게임이 이 값대로 채우는지는 미확인이다. 받지 못해도 총량은 그대로다.\n");
+            sb.Append("- 반경을 키우면 보급 범위 그림이 같이 커지는지는 미확인이다. 컨퀘스트의 보급 차량 AP 비용(로스터의 `supply_ap`)은 그대로다.\n");
             sb.Append("- 보급 매크로 복제본은 `limit`을 직접 적으므로 호출에 남은 총량 인자(`supply(500)`, `liters(2500)`)는 쓰이지 않는다. 쓰이지 않는 인자를 게임이 문제없이 넘기는지는 미확인이다.\n");
             sb.Append("- 강화한 무기 사본·보급 차량을 적이 노획하면 그 적도 빠른 재장전·넓은 무제한 보급을 쓴다(받아들임).\n");
             sb.Append("- 사본에 더한 `rechargeTime`·`recoveryTime` 줄과 보병 perks에 더한 `health` 줄이 원형·매크로 값을 이기는지 게임 안에서 확인하지 않았다.\n");

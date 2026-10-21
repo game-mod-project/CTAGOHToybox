@@ -1255,9 +1255,9 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/actor/extender[shield]/on` | block | []x6 | 6 | 6 | 예: | 미확인(자동) |  |  | event created by animation ¦ overwrites and stops dust fx on ground from firing main gun |
 | `/actor/extender[supply_zone]` | block | [str]x5 | 5 | 5 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/actor/extender[supply_zone]/(mod)` | mod | [str]x5 | 5 | 5 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/actor/extender[supply_zone]/limit` | block | [num]x5 | 5 | 5 | 250 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/actor/extender[supply_zone]/limit` | block | [num]x5 | 5 | 5 | 250 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/actor/extender[supply_zone]/radius` | block | [num]x5 | 5 | 5 | 10 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/actor/extender[supply_zone]/regenerationperiod` | block | [num]x10 | 5 | 10 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/actor/extender[supply_zone]/regenerationperiod` | block | [num]x10 | 5 | 10 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/actor/extender[supply_zone]/resupply` | block | []x5 | 5 | 5 | 예: | 미확인(자동) |  |  |  |
 | `/actor/extender[supply_zone]/resupply/(mod)` | mod | [atom str]x10 [str]x5 | 5 | 15 | not "mp" ¦ "mp" | 미확인(자동) |  |  |  |
 | `/actor/extender[supply_zone]/resupply/item` | block | [str str str num]x1440 [str str num]x485 [str str str str num]x425 [str num]x55 | 5 | 2405 | 예: "flame_thrower" "ammo" 50 | 추정 | 보급해 주는 품목 한 줄. 대상 무기나 아이템, 종류, 수량 (추정: 값 "flame_thrower" "ammo" 50) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |
@@ -1684,12 +1684,12 @@ include와 매크로를 펼친 뒤 유닛 안에서의 위치다. 펼치는 규�
 | `/game_entity/extender[supply_zone]/fuel` | block | []x6 | 6 | 6 | 예: | 확인 | 연료 종류. "fuel"은 휘발유, "diesel"은 경유 | 게임 파일 주석 | Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel. ¦ Fuel type. |
 | `/game_entity/extender[supply_zone]/fuel/amount` | block | [num]x6 | 6 | 6 | 1 | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/fuel/value` | block | [num]x6 | 6 | 6 | 1 | 미확인(자동) |  |  |  |
-| `/game_entity/extender[supply_zone]/limit` | block | [num]x31 | 31 | 31 | 200 ~ 2840 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/game_entity/extender[supply_zone]/limit` | block | [num]x31 | 31 | 31 | 200 ~ 2840 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/game_entity/extender[supply_zone]/mechanicresources` | block | []x9 | 9 | 9 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/mechanicresources/amount` | block | [num]x9 | 9 | 9 | 10 | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/mechanicresources/value` | block | [num]x9 | 9 | 9 | 10 | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/radius` | block | [num]x31 | 31 | 31 | 10 ~ 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/game_entity/extender[supply_zone]/regenerationperiod` | block | [num]x47 | 31 | 47 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/game_entity/extender[supply_zone]/regenerationperiod` | block | [num]x47 | 31 | 47 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/game_entity/extender[supply_zone]/resupply` | block | []x31 | 31 | 31 | 예: | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/resupply/(mod)` | mod | [atom str]x32 [str]x16 | 16 | 48 | not "mp" ¦ "mp" | 미확인(자동) |  |  |  |
 | `/game_entity/extender[supply_zone]/resupply/item` | block | [str str str num]x4608 [str str num]x1729 [str str str str num]x1360 [str num]x318 | 31 | 8015 | 예: "flame_thrower" "ammo" 50 | 추정 | 보급해 주는 품목 한 줄. 대상 무기나 아이템, 종류, 수량 (추정: 값 "flame_thrower" "ammo" 50) | 파일 구조와 값에서 추론 | 600 rounds ¦ 50 rounds |

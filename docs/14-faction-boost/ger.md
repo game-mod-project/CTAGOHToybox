@@ -4,9 +4,9 @@
 - 베이스: 월드워-차종
 - 군대: ger(유닛 2118: 보병 1192, 차량 926)
 - 원본 계층: vanilla → mod_2905667604 → mod_3732639687 → mod_2829744930 → ctatoyboxspawn → ctatoyboxspawn_ger → ctatoyboxspawn_rus → ctatoyboxspawn_usa
-- 배수: 인벤토리 ×2, 탄약 ×5, 재장전 ×0.5, 보병 체력 ×2, 장갑 차량 ×2·경전차 ×2·중형전차 ×2.5·중전차 ×3·초중전차 ×5, 속도 ×1.5, 연료·항속 ×10, 보급 반경 ×3, 보급 총량 0(무제한)
+- 배수: 인벤토리 ×2, 탄약 ×5, 재장전 ×0.5, 보병 체력 ×2, 장갑 차량 ×2·경전차 ×2·중형전차 ×2.5·중전차 ×3·초중전차 ×5, 속도 ×1.5, 연료·항속 ×10, 보급 반경 ×3, 보급 총량 50000, 보급 재생 10초에 가득(재생 주기 0.0002초)
 - 클립식 기준: 탄창 2발 이상, 발 사이 1초 이상인 `set/stuff/gun` 무기 사본. 발 사이 ×0.5, 소수 셋째 자리까지
-- 수정 28951건, 일괄 규칙 11개
+- 수정 28960건, 일괄 규칙 11개
 
 ## 항목별 수정
 
@@ -33,7 +33,8 @@
 | ger 보병 체력 ×2 | 1192 |
 | ger 보급 매크로 복제 | 6 |
 | ger 보급 반경 ×3 | 6 |
-| ger 보급 총량 → 0 | 6 |
+| ger 보급 총량 → 50000 | 6 |
+| ger 보급 재생 주기 → 0.0002초(10초에 가득) | 9 |
 | ger 보급 호출 → 복제본 | 12 |
 | 컨퀘스트 자원(플레이어) | 72 |
 | 스커미시 플레이어 ×50 | 144 |
@@ -71,14 +72,14 @@
 
 그 군대 보급 유닛이 부르는 `properties/resupply.inc` 매크로를 복제해 값을 바꾸고, 그 유닛의 호출 이름만 복제본으로 바꾼다. 원래 매크로와 보급 건물(깃발 탄약점, 탄약 진지 등)은 그대로다.
 
-| 매크로 | 복제본 | 반경(m) | 총량 | 바꾼 유닛 |
-|---|---|---|---|---|
-| `supply_ammo` | `supply_ammo_ctb_ger` | 10 → 30 | %supply → 0 | `entity/-vehicle/+germany/btr/wanze_ammo/wanze_ammo.def`, `entity/-vehicle/generic/special/inf_crate_ger/inf_crate_ger.def`, `entity/-vehicle/germany/trailer/ammo_trailer/ammo_trailer.def`, `entity/-vehicle/germany/trailer/infantry_cart_if8/infantry_cart_if8.def`, `entity/-vehicle/germany/trailer/sdah_57_1/sdah_57_1.def` |
-| `supply_engineer` | `supply_engineer_ctb_ger` | 15 → 45 | 5000 → 0 | `entity/-vehicle/+germany/tank_heavy/bergepanther/bergepanther.def`, `entity/-vehicle/germany/car/blitz3_6_engineering/blitz3_6_engineering.def` |
-| `supply_engineer_light` | `supply_engineer_light_ctb_ger` | 15 → 45 | 2000 → 0 | `entity/-vehicle/germany/car/kettenkrad_eng/kettenkrad_eng.def` |
-| `supply_fuel` | `supply_fuel_ctb_ger` | 15 → 45 | %liters → 0 | `entity/-vehicle/germany/car/blitz3_6_fuel/blitz3_6_fuel.def` |
-| `truck_ammo_heavy` | `truck_ammo_heavy_ctb_ger` | 20 → 60 | 3000 → 0 | `entity/-vehicle/germany/car/blitz3_6_art_ammo/blitz3_6_art_ammo.def`, `entity/-vehicle/germany/car/opel_maultier/opel_maultier.def` |
-| `truck_ammo_heavy_2x` | `truck_ammo_heavy_2x_ctb_ger` | 25 → 75 | 8000 → 0 | `entity/-vehicle/germany/btr/sdkfz6_cargo/sdkfz6_ammo.def` |
+| 매크로 | 복제본 | 반경(m) | 총량 | 재생 주기(초) | 바꾼 유닛 |
+|---|---|---|---|---|---|
+| `supply_ammo` | `supply_ammo_ctb_ger` | 10 → 30 | %supply → 50000 | 10 → 0.0002 | `entity/-vehicle/+germany/btr/wanze_ammo/wanze_ammo.def`, `entity/-vehicle/generic/special/inf_crate_ger/inf_crate_ger.def`, `entity/-vehicle/germany/trailer/ammo_trailer/ammo_trailer.def`, `entity/-vehicle/germany/trailer/infantry_cart_if8/infantry_cart_if8.def`, `entity/-vehicle/germany/trailer/sdah_57_1/sdah_57_1.def` |
+| `supply_engineer` | `supply_engineer_ctb_ger` | 15 → 45 | 5000 → 50000 | 0 → 0.0002 | `entity/-vehicle/+germany/tank_heavy/bergepanther/bergepanther.def`, `entity/-vehicle/germany/car/blitz3_6_engineering/blitz3_6_engineering.def` |
+| `supply_engineer_light` | `supply_engineer_light_ctb_ger` | 15 → 45 | 2000 → 50000 | 0 → 0.0002 | `entity/-vehicle/germany/car/kettenkrad_eng/kettenkrad_eng.def` |
+| `supply_fuel` | `supply_fuel_ctb_ger` | 15 → 45 | %liters → 50000 | 0 → 0.0002 | `entity/-vehicle/germany/car/blitz3_6_fuel/blitz3_6_fuel.def` |
+| `truck_ammo_heavy` | `truck_ammo_heavy_ctb_ger` | 20 → 60 | 3000 → 50000 | 5 → 0.0002 | `entity/-vehicle/germany/car/blitz3_6_art_ammo/blitz3_6_art_ammo.def`, `entity/-vehicle/germany/car/opel_maultier/opel_maultier.def` |
+| `truck_ammo_heavy_2x` | `truck_ammo_heavy_2x_ctb_ger` | 25 → 75 | 8000 → 50000 | 5 → 0.0002 | `entity/-vehicle/germany/btr/sdkfz6_cargo/sdkfz6_ammo.def` |
 
 ## 건너뛴 것
 
@@ -121,7 +122,9 @@
 
 - 백로그 E19: 장전 시간이 원형의 탄종별 `{parameters …}` 블록 안에 있는 무기, 매크로 본문에서 무기 이름을 부르는 차량은 강화가 빠진다.
 - 백로그 E20: 모든 군대가 같이 쓰는 매크로 본문 안의 장갑(`sandbags` 등)은 바꾸지 않았다.
-- 보급 `limit 0`이 무제한이라는 것은 파일 주석으로만 안다. 반경을 키우면 보급 범위 그림이 같이 커지는지는 미확인이다. 컨퀘스트의 보급 차량 AP 비용(로스터의 `supply_ap`)은 그대로다.
+- 보급 `limit 0`은 파일 주석상 무제한이지만 게임에서는 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 그래서 총량은 게임 파일에 쓰인 가장 큰 값(50000) 안에서 정한다. 엔진이 받는 최대치는 미확인이다.
+- 재생 주기 0.0002초처럼 1초보다 짧은 소수 값은 게임 파일에 쓰인 적이 없다(쓰인 값은 0·2·5·10). 게임이 이 값대로 채우는지는 미확인이다. 받지 못해도 총량은 그대로다.
+- 반경을 키우면 보급 범위 그림이 같이 커지는지는 미확인이다. 컨퀘스트의 보급 차량 AP 비용(로스터의 `supply_ap`)은 그대로다.
 - 보급 매크로 복제본은 `limit`을 직접 적으므로 호출에 남은 총량 인자(`supply(500)`, `liters(2500)`)는 쓰이지 않는다. 쓰이지 않는 인자를 게임이 문제없이 넘기는지는 미확인이다.
 - 강화한 무기 사본·보급 차량을 적이 노획하면 그 적도 빠른 재장전·넓은 무제한 보급을 쓴다(받아들임).
 - 사본에 더한 `rechargeTime`·`recoveryTime` 줄과 보병 perks에 더한 `health` 줄이 원형·매크로 값을 이기는지 게임 안에서 확인하지 않았다.

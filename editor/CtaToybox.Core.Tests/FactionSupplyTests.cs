@@ -1,10 +1,12 @@
 using System.Linq;
 using CtaToybox.Core;
 
-// 팩션 강화: 그 군대 보급 유닛이 부르는 보급 매크로를 복제해 반경 ×3, 총량 0(무제한)으로 바꾸고 호출 이름만 복제본으로(2026-10-21 설계)
+// 팩션 강화: 그 군대 보급 유닛이 부르는 보급 매크로를 복제해 반경 ×3, 총량 50000, 10초에 다 차는 재생 주기로 바꾸고 호출 이름만 복제본으로(2026-10-21 설계).
+// 총량 0은 파일 주석상 무제한이지만 게임에서는 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 그래서 0은 쓰지 않는다
 static class FactionSupplyTests
 {
-    const string Resupply = "(define \"truck_ammo\"\n {extender \"supply_zone\" {radius 20} {limit 3000}}\n)\n(define \"crate\"\n {extender \"supply_zone\" {radius 10} {limit %supply}}\n)\n"
+    const string Resupply = "(define \"truck_ammo\"\n {extender \"supply_zone\" {radius 20} {regenerationPeriod 5} {limit 3000} (mod \"gameclass:campaign_capture_the_flag\" {regenerationPeriod 0})}\n)\n"
+        + "(define \"crate\"\n {extender \"supply_zone\" {radius 10} {regenerationPeriod 10} {limit %supply}}\n)\n"
         + "(define \"flag_heavy\"\n {extender \"supply_zone\" {radius 15} {limit 50000}}\n)\n(define \"items\" {x 1})\n";
     const string Truck = "entity/-vehicle/germany/car/truck/truck.def", Cart = "entity/-vehicle/germany/trailer/cart/cart.def";
     const string Eng = "entity/-vehicle/germany/car/eng/eng.def", EngInc = "entity/-vehicle/germany/car/eng/eng.inc";
@@ -32,7 +34,9 @@ static class FactionSupplyTests
         T.Eq(0, build.Results.Count(r => r.Status != EditStatus.Applied), "everything applies: " + string.Join("; ", build.Results.Where(r => r.Status != EditStatus.Applied).Select(r => r.Edit.File + " " + r.Message)));
         string inc = FactionPresetTests.Out(outDir, FactionPreset.SupplyFile) ?? "";
         T.True(inc.StartsWith(Resupply), "the originals and the building macro stay as they were: " + inc);
-        T.True(inc.Contains("(define \"truck_ammo_ctb_ger\"\n {extender \"supply_zone\" {radius 60} {limit 0}}") && inc.Contains("(define \"crate_ctb_ger\"\n {extender \"supply_zone\" {radius 30} {limit 0}}"), "the copies: radius ×3, limit 0 (also over %supply): " + inc);
+        T.True(inc.Contains("(define \"truck_ammo_ctb_ger\"\n {extender \"supply_zone\" {radius 60} {regenerationPeriod 0.0002} {limit 50000} (mod \"gameclass:campaign_capture_the_flag\" {regenerationPeriod 0.0002})}")
+            && inc.Contains("(define \"crate_ctb_ger\"\n {extender \"supply_zone\" {radius 30} {regenerationPeriod 0.0002} {limit 50000}}"), "the copies: radius ×3, limit 50000 (also over %supply), full again in 10 s (also in conquest): " + inc);
+        T.True(!inc.Contains("{limit 0}"), "never limit 0 (supply stops working, user check 2026-10-21)");
         T.True(!inc.Contains("flag_heavy_ctb_ger"), "the building macro is not copied");
         T.True((FactionPresetTests.Out(outDir, Truck) ?? "").Contains("(\"truck_ammo_ctb_ger\")"), "the German truck calls the copy");
         T.True((FactionPresetTests.Out(outDir, Cart) ?? "").Contains("(\"crate_ctb_ger\" supply(500))"), "the cart keeps its argument");
@@ -42,10 +46,15 @@ static class FactionSupplyTests
         T.Eq(null, FactionPresetTests.Out(outDir, EngInc), "a call inside an include is not renamed");
         T.True(report.Skipped.Any(x => x.StartsWith(Eng) && x.Contains("유닛 파일 밖")), "and is reported: " + string.Join("; ", report.Skipped));
         var truck = report.Supplies.Single(x => x.Macro == "truck_ammo");
-        T.True(truck.Copy == "truck_ammo_ctb_ger" && truck.RadiusOld == "20" && truck.RadiusNew == "60" && truck.LimitOld == "3000" && truck.LimitNew == "0" && truck.Units.SequenceEqual(new[] { Truck }), "the report row: " + truck.Copy + " " + truck.RadiusOld + "→" + truck.RadiusNew + " " + truck.LimitOld + "→" + truck.LimitNew + " " + string.Join(",", truck.Units));
+        T.True(truck.Copy == "truck_ammo_ctb_ger" && truck.RadiusOld == "20" && truck.RadiusNew == "60" && truck.LimitOld == "3000" && truck.LimitNew == "50000" && truck.RegenOld == "5" && truck.RegenNew == "0.0002" && truck.Units.SequenceEqual(new[] { Truck }),
+            "the report row: " + truck.Copy + " " + truck.RadiusOld + "→" + truck.RadiusNew + " " + truck.LimitOld + "→" + truck.LimitNew + " " + truck.RegenOld + "→" + truck.RegenNew + " " + string.Join(",", truck.Units));
         var crate = report.Supplies.Single(x => x.Macro == "crate");
-        T.True(crate.LimitOld == "%supply" && crate.LimitNew == "0" && crate.Units.SequenceEqual(new[] { Cart }), "the crate row");
-        T.True(report.Edits["ger 보급 매크로 복제"] == 2 && report.Edits["ger 보급 반경 ×3"] == 2 && report.Edits["ger 보급 총량 → 0"] == 2 && report.Edits["ger 보급 호출 → 복제본"] == 2, "report counts: " + string.Join(", ", report.Edits.Select(kv => kv.Key + "=" + kv.Value)));
+        T.True(crate.LimitOld == "%supply" && crate.LimitNew == "50000" && crate.RegenOld == "10" && crate.Units.SequenceEqual(new[] { Cart }), "the crate row");
+        T.True(report.Edits["ger 보급 매크로 복제"] == 2 && report.Edits["ger 보급 반경 ×3"] == 2 && report.Edits["ger 보급 총량 → 50000"] == 2 && report.Edits["ger 보급 재생 주기 → 0.0002초(10초에 가득)"] == 3 && report.Edits["ger 보급 호출 → 복제본"] == 2,
+            "report counts: " + string.Join(", ", report.Edits.Select(kv => kv.Key + "=" + kv.Value)));
+        var p3 = new EditProject { Name = "g3" };
+        FactionPreset.AddSupply(p3, c, new FactionOptions { Army = "ger", SupplyLimit = "2000", SupplyRefill = 4 }, new FactionReport());
+        T.True(p3.Edits.Any(e => e.New == "2000") && p3.Edits.Any(e => e.New == "0.002"), "--supply-limit and --supply-refill set the numbers (4 s / 2000)");
 
         int before = project.Edits.Count, rows = report.Supplies.Count;
         FactionPreset.AddSupply(project, c, new FactionOptions { Army = "ger" }, report);

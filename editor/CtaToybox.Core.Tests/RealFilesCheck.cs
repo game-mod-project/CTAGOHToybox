@@ -319,7 +319,10 @@ static class RealFilesCheck
             {
                 var rows = afterTracer.Trace(u).Rows;
                 T.True(rows.Any(r => r.Path.EndsWith("/extender[supply_zone]/radius")) && rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/radius")).All(r => r.Values[0].Text == sc.RadiusNew), "radius of " + u + " is " + sc.RadiusNew);
-                T.True(rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/limit")).All(r => r.Values[0].Text == "0"), "limit of " + u + " is 0");
+                var limits = rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/limit")).ToList();
+                T.True(limits.Count > 0 && limits.All(r => r.Values[0].Text == sc.LimitNew), "limit of " + u + " is " + sc.LimitNew + " (never 0: supply stops working, user check 2026-10-21)");
+                var regens = rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/regenerationperiod")).ToList();
+                T.True(regens.All(r => r.Values[0].Text == sc.RegenNew), "regeneration of " + u + " is " + sc.RegenNew);
             }
             T.True(boostReport.Supplies.SelectMany(x => x.Units).Count() >= 10, "the German supply units are found (11~12 on 2026-10-21)");
             T.True(stack.Overlay == null, "FactionPreset.Build and the builds leave the stack overlay as it was");
