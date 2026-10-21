@@ -17,6 +17,8 @@ static class FactionDocTests
         report.Skipped.Add("entity/a.def: 이 키가 없다");
         report.Skipped.Add("entity/b.def: 이 키가 없다");
         report.Skipped.Add("entity/c.def: 다른 군대도 이 유닛 파일을 쓴다");
+        report.Skipped.Add("ger 차량 탄약 ×5: 이 키가 없다 (633)");   // 일괄 규칙은 이유마다 모은 수를 괄호에 적는다(FactionPreset.AddRule)
+        report.Skipped.Add("ger 장갑 차량 ×2: 이 키가 없다 (74)");
         report.Shared.Add("entity/-vehicle/germany/btr/sdkfz10_4/sdkfz10_4.def: ger, fin");
 
         string md = FactionDoc.Markdown(project, new FactionOptions { Army = "ger" }, report, new[] { "vanilla", "mod_2905667604", "mod_3732639687" }, "월드워-차종", "2026-10-21");
@@ -28,9 +30,13 @@ static class FactionDocTests
         T.True(md.Contains("| ger 속도 ×1.5 | vehicle | `**/locomotion/maxspeed` | ×1.5 |"), "the bulk rules as a table");
         T.True(md.Contains("## 클립식 포") && md.Contains("| `set/stuff/gun/128oto_ctb_ger` | 3 | 20 → 10 | 18 → 9 |"), "clip table");
         T.True(md.Contains("## 보급") && md.Contains("| `truck_ammo_heavy` | `truck_ammo_heavy_ctb_ger` | 20 → 60 | 3000 → 0 | `entity/-vehicle/germany/car/opel_maultier/opel_maultier.def` |"), "supply table");
-        T.True(md.Contains("## 건너뛴 것") && md.Contains("| 이 키가 없다 | 2 |") && md.Contains("| 다른 군대도 이 유닛 파일을 쓴다 | 1 |"), "skips grouped by reason");
+        T.True(md.Contains("## 건너뛴 것") && md.Contains("모두 710건"), "the total counts what the rules folded into (N): " + md);
+        T.True(md.Contains("| ger 차량 탄약 ×5: 이 키가 없다 | 633 |") && md.Contains("| ger 장갑 차량 ×2: 이 키가 없다 | 74 |"), "a rule's skip keeps its rule and its count");
+        T.True(md.Contains("| 이 키가 없다 | 2 | `entity/a.def` |") && md.Contains("| 다른 군대도 이 유닛 파일을 쓴다 | 1 | `entity/c.def` |"), "unit skips are grouped by reason with an example");
+        T.True(md.IndexOf("| ger 차량 탄약 ×5") < md.IndexOf("| ger 장갑 차량 ×2") && md.IndexOf("| ger 장갑 차량 ×2") < md.IndexOf("| 이 키가 없다 | 2"), "most first");
         T.True(md.Contains("## 두 군대가 같이 쓰는 유닛") && md.Contains("sdkfz10_4"), "shared units");
         T.True(md.Contains("## 한계와 미확인") && md.Contains("E19") && md.Contains("E20") && md.Contains("limit 0"), "limits");
+        T.True(md.Contains("보급 범위 그림이 같이 커지는지는 미확인이다") && md.Contains("노획") && md.Contains("supply(500)"), "the unknowns read as unknowns, capture and unused call arguments are listed");
         T.True(md.TrimEnd().EndsWith("이 문서는 `faction-preset`이 만든다. 손으로 고치지 않는다."), "generated note");
         string other = FactionDoc.Markdown(project, new FactionOptions { Army = "ger", SupplyLimit = "5000", ClipMinGap = 2.5 }, report, new[] { "vanilla" }, null, "2026-10-21");
         T.True(other.Contains("보급 총량 5000") && !other.Contains("5000(무제한)") && other.Contains("발 사이 2.5초 이상") && other.Contains("- 베이스: 없음"), "other options are written as they are");

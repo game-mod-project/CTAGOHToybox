@@ -326,11 +326,14 @@ namespace CtaToybox.Core
             {
                 var copied = source.CopyResults.FirstOrDefault(r => r.Edit == e);
                 if (copied == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
+                // 빌드가 그 파일을 쓸 수 없으면 복제도 들어가지 않는다(손으로 넣은 출력 파일)
+                string clash = copied.Status == EditStatus.Applied ? conflict(file) : null;
+                if (clash != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = e.Old, RowText = e.Old, Message = clash };
                 return new EditCheck { Edit = e, Status = copied.Status, Current = e.Old, RowText = e.Old, Message = copied.Message };
             }
             // 복제 블록 안의 값, 값을 복제 이름으로 바꾸는 수정: 그 복제가 적용되지 않으면 막는다
             string dependency = TextCopies.Dependency(e, Project == null ? new List<Edit>() : Project.Edits);
-            if (dependency != null && !ActiveCopies(parsed).Contains(dependency))
+            if (dependency != null && !ActiveCopies(parsed, conflict).Contains(dependency))
                 return new EditCheck { Edit = e, Status = EditStatus.Invalid, Message = TextCopies.MissingNote(dependency, Project.Edits) };
             var rows = source.Rows;
             if (rows == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
@@ -401,13 +404,16 @@ namespace CtaToybox.Core
             return Project.Edits.Where(x => TextCopies.IsCopy(x.Kind) && x.Enabled && string.Equals(SourceStack.ToVirtual(x.File ?? ""), file, StringComparison.Ordinal)).ToList();
         }
 
-        // 원본에 적용되는 블록 복제의 새 이름(따옴표 없이)
-        HashSet<string> ActiveCopies(Dictionary<string, SourceCheck> parsed)
+        // 원본에 적용되고 빌드가 그 파일을 쓸 수 있는 복제의 새 이름(따옴표 없이)
+        HashSet<string> ActiveCopies(Dictionary<string, SourceCheck> parsed, Func<string, string> conflict)
         {
             var names = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             if (Project == null) return names;
             foreach (string file in Project.Edits.Where(x => TextCopies.IsCopy(x.Kind) && x.Enabled).Select(x => SourceStack.ToVirtual(x.File ?? "")).Distinct())
+            {
+                if (conflict(file) != null) continue;
                 foreach (var r in SourceOf(file, parsed).CopyResults.Where(r => r.Status == EditStatus.Applied)) names.Add(r.Edit.New.Trim('"'));
+            }
             return names;
         }
 
