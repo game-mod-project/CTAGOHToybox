@@ -134,6 +134,7 @@ static class Suites
         ("FactionPreset", FactionPresetTests.Run),
         ("FactionClip", FactionClipTests.Run),
         ("FactionSupply", FactionSupplyTests.Run),
+        ("FactionDoc", FactionDocTests.Run),
         ("FactionPresetCli", FactionPresetCliTests.Run),
         ("SpawnWriter", SpawnWriterTests.Run),
         ("SpawnCatalog", SpawnCatalogTests.Run),

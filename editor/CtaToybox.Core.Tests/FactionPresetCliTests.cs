@@ -59,15 +59,22 @@ static class FactionPresetCliTests
         var baseProject = new EditProject { Name = "base" };
         baseProject.Edits.Add(new Edit { Unit = "set/dynamic_campaign/resources_standard.set", File = "set/dynamic_campaign/resources_standard.set", Path = "/standard/bots/startmp", Arg = 0, Old = "1.00", New = "1.50", Scope = "shared" });
         baseProject.Save(basePath);
-        T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super), "faction-preset: " + o);
+        string doc = Path.Combine(repo, "docs", "boost-ger.md");
+        T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super, "--doc", doc), "faction-preset: " + o);
         T.True(o.Contains("군대 ger") && o.Contains("무기 사본: 3"), "the report counts: " + o);
+        T.True(File.Exists(doc) && File.ReadAllText(doc).StartsWith("# 강화-독일 수정 내용"), "faction-preset writes the doc (and its folder)");
+        T.True(o.Contains(doc), "and says where");
         var saved = EditProject.Load(projectPath);
         T.True(saved.Edits.Any(e => e.New == "1.50"), "the base edits come along");
         T.True(saved.Rules.Count == 11 && saved.Edits.Any(e => e.Kind == FileCopy.Kind) && saved.Edits.Any(e => e.Kind == AddLine.Kind), "rules, copies and lines are saved");
         int count = saved.Edits.Count;
         T.Eq(1, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super), "an existing project needs --force");
-        T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super, "--force"), "--force");
+        T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super, "--force", "--doc", doc), "--force");
         T.Eq(count, EditProject.Load(projectPath).Edits.Count, "the same command makes the same project");
+        T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super, "--force", "--supply-limit", "-1", "--doc", doc), "a negative supply limit is a usage error");
+        T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--project", projectPath, "--super", super, "--force", "--supply-limit", "many", "--doc", doc), "a supply limit must be a whole number");
+        T.Eq(0, Cli(out o, "faction-preset", "--settings", settings, "--army", "ger", "--base", basePath, "--project", projectPath, "--super", super, "--force", "--doc", doc, "--clip-min-gap", "2", "--clip-gap", "0.4", "--supply-radius", "2", "--supply-limit", "9000"), "the new options parse: " + o);
+        T.True(File.ReadAllText(doc).Contains("보급 반경 ×2") && File.ReadAllText(doc).Contains("보급 총량 9000") && File.ReadAllText(doc).Contains("발 사이 2초 이상"), "and reach the doc");
         T.Eq(2, Cli(out o, "faction-preset", "--settings", settings, "--army", "xyz", "--project", projectPath), "an unknown army is a usage error");
     }
 }

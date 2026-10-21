@@ -25,7 +25,7 @@ namespace CtaToybox.Cli
             "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--any <글자,…>] [--items ammo|other] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
             "  ctatoybox rule list|reapply|remove|enable|disable --project <파일> [--id <id>]   rule edit --project <파일> --id <id> <바꿀 옵션>   (일괄 규칙)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
-            "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
+            "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--clip-min-gap 1] [--clip-gap <기본 --reload>] [--supply-radius 3] [--supply-limit 0] [--report <건너뜀 전체를 쓸 파일>] [--doc <수정 내용 문서, 기본 docs/14-faction-boost/<군대>.md>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트와 그 수정 내용 문서를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "  ctatoybox l10n extract|check|build [--dir <번역 보관, 기본 l10n/ko>] [--file <글자>] [--force]   (한글화: 보관 갱신, 검사, 출력 모드에 .pot·글꼴 쓰기)\n" +
             "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--all-nations] [--visible <세로 목록에 보이는 단추 수, 기본 10, 0=바닐라 7>] [--grid <열, 꺼진 판>] [--roster [--roster-add] [--keep-cost] [--basic-buttons]] [--english] [--single-mod | --nations <ger,rus,…> [--campaign-in-base]]   (Spawn Menu를 대체하는 스폰 모드를 만든다. 멀티 맵 견본은 국가 모드 <폴더>_<국가>(CTAToybox Spawn - <국가>)에 따로 쓴다(--nations로 고름, --single-mod는 예전처럼 한 모드에). 캠페인 맵도 그 맵에 나오는 국가 가운데 켠 국가 모드의 견본만 읽는다(--campaign-in-base는 캠페인 견본을 바탕 모드에 둔다). 스커미시 구매 창은 그대로 둔다. --roster면 구매 창도 바꾼다(비용 0·횟수 999·종류 단추). 메뉴 글자는 l10n/ko 번역으로 쓰고, --english는 영어로 둔다. preview는 쓰지 않고 수만 보인다)\n" +
@@ -45,7 +45,7 @@ namespace CtaToybox.Cli
             ["merge"] = new[] { "settings", "project", "from" },
             ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude", "any", "items" },
             ["build"] = new[] { "settings", "project", "force" },
-            ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
+            ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report", "clip-min-gap", "clip-gap", "supply-radius", "supply-limit", "doc" },
             ["l10n"] = new[] { "settings", "dir", "file", "force" },
             ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons", "list", "grid", "visible", "roster", "no-roster", "roster-add", "all-nations", "english", "single-mod", "nations", "campaign-in-base" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
@@ -194,6 +194,14 @@ namespace CtaToybox.Cli
             o.Inventory = Positive(opt, "inventory", o.Inventory); o.Ammo = Positive(opt, "ammo", o.Ammo); o.Reload = Positive(opt, "reload", o.Reload); o.Health = Positive(opt, "health", o.Health);
             o.ArmorCar = Positive(opt, "armor-car", o.ArmorCar); o.ArmorLight = Positive(opt, "armor-light", o.ArmorLight); o.ArmorMedium = Positive(opt, "armor-medium", o.ArmorMedium);
             o.ArmorHeavy = Positive(opt, "armor-heavy", o.ArmorHeavy); o.ArmorSuper = Positive(opt, "armor-super", o.ArmorSuper); o.Speed = Positive(opt, "speed", o.Speed); o.Fuel = Positive(opt, "fuel", o.Fuel);
+            o.ClipMinGap = Positive(opt, "clip-min-gap", o.ClipMinGap); o.ClipGap = Positive(opt, "clip-gap", o.ClipGap); o.SupplyRadius = Positive(opt, "supply-radius", o.SupplyRadius);
+            if (opt.ContainsKey("supply-limit"))
+            {
+                int limit;
+                if (!int.TryParse(opt["supply-limit"], System.Globalization.NumberStyles.None, System.Globalization.CultureInfo.InvariantCulture, out limit)) throw new UsageException("--supply-limit는 0 이상의 정수다(0이면 무제한)");
+                o.SupplyLimit = limit.ToString(System.Globalization.CultureInfo.InvariantCulture);
+            }
+            string docPath = opt.ContainsKey("doc") ? opt["doc"] : Path.Combine("docs", "14-faction-boost", army + ".md");
             string superPath = opt.ContainsKey("super") ? opt["super"] : Path.Combine("editor", "presets", "super-heavy.txt");
             if (!File.Exists(superPath)) { output.WriteLine("초중전차 목록이 없다: " + superPath); return 1; }
             o.SuperHeavy = FactionPreset.LoadSuperHeavy(superPath);
@@ -210,6 +218,10 @@ namespace CtaToybox.Cli
                 var report = new FactionReport();
                 var project = FactionPreset.Build(c, baseProject, o, new ConquestValues { Skirmish = Positive(opt, "skirmish", 50) }, report);
                 project.Save(projectPath);
+                string docDir = Path.GetDirectoryName(Path.GetFullPath(docPath));
+                Directory.CreateDirectory(docDir);
+                File.WriteAllText(docPath, FactionDoc.Markdown(project, o, report, session.Stack.Layers.Select(l => l.Name).ToList(),
+                    opt.ContainsKey("base") ? Path.GetFileNameWithoutExtension(opt["base"]) : null, DateTime.Now.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture)), new System.Text.UTF8Encoding(false));
                 output.WriteLine("군대 " + army + ": 유닛 " + report.Units + "(보병 " + report.Infantry + ", 차량 " + report.Vehicles + "), 수정 " + project.Edits.Count + "건, 규칙 " + (project.Rules == null ? 0 : project.Rules.Count) + "개: " + projectPath);
                 foreach (var kv in report.Edits) output.WriteLine("  " + kv.Key + ": " + kv.Value);
                 if (missing.Count > 0) output.WriteLine("초중전차 목록에서 지금 판에 없는 폴더 " + missing.Count + ": " + string.Join(", ", missing.Take(10)));
@@ -218,6 +230,7 @@ namespace CtaToybox.Cli
                 foreach (string s in report.Skipped.Take(20)) output.WriteLine("  " + s);
                 foreach (string n in report.Notes) output.WriteLine("  " + n);
                 if (opt.ContainsKey("report")) File.WriteAllLines(opt["report"], report.Edits.Select(kv => "수정 " + kv.Key + ": " + kv.Value).Concat(report.Shared.Select(x => "공유 " + x)).Concat(report.Skipped.Select(x => "건너뜀 " + x)).Concat(report.Notes));
+                output.WriteLine("수정 내용 문서: " + docPath);
                 return 0;
             }
         }
