@@ -392,3 +392,15 @@ msgstr ""
 msgctxt "desc/entity/obj704"
 msgid "Object 704"
 msgstr ""
+
+msgctxt "desc/entity/obj430u"
+msgid "Object 430U"
+msgstr ""
+
+msgctxt "desc/entity/obj430u_1965"
+msgid "Object 430U (1965)"
+msgstr ""
+
+msgctxt "desc/entity/obj450"
+msgid "Object 450"
+msgstr ""

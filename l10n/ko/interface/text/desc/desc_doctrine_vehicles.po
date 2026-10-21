@@ -936,3 +936,15 @@ msgstr "Centurion Action X"
 msgctxt "desc/entity/doctrine_black_prince"
 msgid "Black Prince"
 msgstr "Black Prince"
+
+msgctxt "desc/entity/doctrine_obj430u"
+msgid "Object 430U"
+msgstr "Object 430U"
+
+msgctxt "desc/entity/doctrine_obj430u_1965"
+msgid "Object 430U (1965)"
+msgstr "Object 430U (1965)"
+
+msgctxt "desc/entity/doctrine_obj450"
+msgid "Object 450"
+msgstr "Object 450"

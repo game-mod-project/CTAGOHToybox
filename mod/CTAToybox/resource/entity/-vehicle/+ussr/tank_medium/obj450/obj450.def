@@ -1,0 +1,143 @@
+{game_entity
+	(include "/properties/tank__ctb_obj450_ba3c4002.ext")
+	(include "/properties/shadow/tank.inc"  scale(1.2))
+	(include "/properties/selection/vehicle.inc"  scale(1.2))
+	{props "heavy" "turret_rotator" "diesel" "vision_lev05" "muzzle_122mm_128mm_sides" "muzzle_20mm_25mm_auto_duble" "detect_tank_heavy" "sight_1g42" "smoke" "ess" "muzzle_mgun_x2" "sq_armor_super_heavy"}
+	{targetclass "tank_heavy"}
+	{targetSelector "tank_heavy"}
+	{collider "tank.heavy"}
+	(include "obj450.ext") 
+	{extender "shield"
+			{on}
+	}
+	{extender "enumerator"
+		{digit_folder "ru1"}
+	}
+	{extender "smokescreen"
+		{cooldown 4}
+		{itemTags "grenade nbks"}
+	}
+	{sensor
+		{visor "main"
+			{vision "tank_range_250"}
+		        {bone "foresight1"}
+		}
+                {visor "around"
+		        {vision "ctb_tank_medium"}
+		        {bone "visor1"}
+		}
+	}
+	{extender "vision_mode"
+		{timer_object
+			{tag			"night"}
+			{active_time	60}
+			{recharge_rate	0.5}
+			{type			"recharge"}
+		}
+	}
+        {boarder
+		{anm "left"
+			{forward	{begin	"board_tank_right"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "right"
+			{forward	{begin	"board_tank_left"} {end "seat_gunner_stand"}}
+			{reverse 	{end	"emit_tank_2_hold"}}
+		}
+		{anm "armor"
+			{forward	{begin	"board_highArmor"} 	{end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_tank_2"}}
+		}
+		{anm "armor1"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_2"}}
+			{reverse 	{end	"emit_body"}}
+		}
+		{anm "armor2"
+			{forward	{begin	"board_lowArmor"} {end "pose_seat_armor_1"}}
+			{reverse 	{end	"emit_body"}}
+		}
+	}
+	("crew_human" place(driver) door1(emit1) door2(emit2) visor(driver))
+	("crew_human" place(gunner) door1(emit1) door2(emit2) visor(main))
+	("crew_human" place(commander) door1(emit1) door2(emit2) visor(main))
+
+	("seat_human" place(seat1) bone(seat01) door(emit3)  animation(armor1))
+	("seat_human" place(seat2) bone(seat02) door(emit4)  animation(armor))
+	("seat_human" place(seat3) bone(seat03) door(emit6)  animation(armor2))
+	("seat_human" place(seat4) bone(seat04) door(emit6)  animation(armor1))
+
+	{extender "inventory"
+		{box
+                                                {item "bulletrus_100 apds" 15}
+			{item "bulletrus_100 heat" 15}
+			{item "bulletrus_100 aphebc" 10}
+			{item "bulletrus_100 he" 20}
+			
+			{item "ammo mgun_ger belt ap2" 4000}
+			{item "ammo bulletrus_37_auto ap" 750}
+                                                {item "ammo bulletrus_37_auto he" 750}
+			{item "nbks grenade" 5}
+		}
+	}
+	{Weaponry
+		("restore_ik_time")
+		{place "gun"
+			{RestoreIKAfterAim}
+			{weapon "100mm_AT" filling "ammo bulletrus_100 he" 1}
+                                                {gunner "gunner"}	
+			{charger "commander"}	
+			("abm_dymamic_stabilised"
+				zeroing(3.0)
+				dispersion(0.20)
+			)
+		}
+		{place "gun1"
+			{weapon "37mm_61k" filled}
+			{foresight "foresight1a"}
+			{gunner "commander"}
+			{charger "commander"}
+			("abm_dymamic_stabilised"
+				zeroing(2.5)
+				dispersion(0.20)
+			)
+                                                {basic}
+	 		{ai_in_manual}
+		}
+		{place "mgun2"
+			{type "coaxial"}
+			{weapon "Maxsim_ace_dual" filling "mgun_ger belt ap2" 2000}
+			{foresight "foresight"}
+			{Barrels 2}
+			("abm_mgun")
+                                                {gunner "gunner"}
+			{charger "gunner"}
+                                                {basic}	
+			{ai_in_manual}
+		}
+		
+	}
+	{mass 54400}
+	{Chassis
+		("tank_trace" fx("tracks_mid") step(0.52) len(1.75))
+		("mobility_tank"
+			speed(65) ;----------Max speed when fully accelerated on road, km/h.
+			reverse(38) ;---------Max speed in reverse on road, km/h.
+			traverse(35) ;-------Track traverse, per second, in degrees.
+			weight(36) ;-------Weight in Tonnes.
+			power(700) ;---------Engine Power, in hp.
+			track(8) ;-----------Track performance: (0,10], 10=ideal. Sluggish tanks and vehicles with narrow and non-gripping tracks have a lower performance.
+			fuel(1000) ;----------Fuel capacity in Litres.
+			type(diesel) ;---------Fuel type. (diesel OR fuel)
+			range(500) ;---------Range in km, off-road.
+		)
+	}
+	{Extension "obj450.mdl"}
+	{bone "gun_rot1"
+		{limits -15 5}
+		{speed2 6}
+	}
+	{bone "turret1"
+		{limits -90 90}
+		{speed2 6}
+	}
+}

@@ -1,6 +1,6 @@
 {
   "project": "강화-독일",
-  "builtAt": "2026-10-18T05:34:11Z",
+  "builtAt": "2026-10-21T01:10:10Z",
   "files": [
     {
       "path": "resource/set/stuff/bazooka/20mm_fliegerfaust_ctb_ger.weapon",
@@ -260,7 +260,7 @@
     {
       "path": "resource/set/stuff/gun/150mm_kwkl38_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 2
+      "edits": 3
     },
     {
       "path": "resource/set/stuff/gun/150mm_l11_ctb_ger",
@@ -735,7 +735,7 @@
     {
       "path": "resource/set/stuff/gun/88mm_kwk43_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 1
+      "edits": 2
     },
     {
       "path": "resource/set/stuff/gun/88mm_kwk43_2_ctb_ger",
@@ -11208,6 +11208,21 @@
       "edits": 0
     },
     {
+      "path": "resource/entity/-vehicle/+ussr/tank_medium/obj430u/obj430u.def",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/entity/-vehicle/+ussr/tank_medium/obj430u/obj430u_1965.def",
+      "layer": "mod_3732639687",
+      "edits": 0
+    },
+    {
+      "path": "resource/entity/-vehicle/+ussr/tank_medium/obj450/obj450.def",
+      "layer": "mod_3732639687",
+      "edits": 1
+    },
+    {
       "path": "resource/entity/-vehicle/+ussr/tank_medium/obj907/obj907.def",
       "layer": "mod_3732639687",
       "edits": 0
@@ -13989,6 +14004,36 @@
     },
     {
       "path": "resource/properties/tank_unarmed__ctb_zut_37_d4c842c8.ext",
+      "layer": "mod_3732639687",
+      "edits": 1
+    },
+    {
+      "path": "resource/properties/tank__ctb_obj430u_aa5d3289.ext",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/properties/tank_unarmed__ctb_obj430u_aa5d3289.ext",
+      "layer": "mod_3732639687",
+      "edits": 1
+    },
+    {
+      "path": "resource/properties/tank__ctb_obj430u_1965_c8522db5.ext",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/properties/tank_unarmed__ctb_obj430u_1965_c8522db5.ext",
+      "layer": "mod_3732639687",
+      "edits": 1
+    },
+    {
+      "path": "resource/properties/tank__ctb_obj450_ba3c4002.ext",
+      "layer": "vanilla",
+      "edits": 0
+    },
+    {
+      "path": "resource/properties/tank_unarmed__ctb_obj450_ba3c4002.ext",
       "layer": "mod_3732639687",
       "edits": 1
     },

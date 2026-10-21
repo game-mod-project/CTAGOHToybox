@@ -2922,6 +2922,50 @@
       "enabled": true
     },
     {
+      "unit": "entity/-vehicle/+ussr/tank_medium/obj430u/obj430u.def",
+      "file": "properties/tank_unarmed.ext",
+      "path": "/sensor/visor/vision",
+      "occurrence": 2,
+      "arg": 0,
+      "old": "\"tank_around\"",
+      "new": "\"ctb_tank_medium\"",
+      "scope": "unit",
+      "enabled": true
+    },
+    {
+      "unit": "entity/-vehicle/+ussr/tank_medium/obj430u/obj430u_1965.def",
+      "file": "properties/tank_unarmed.ext",
+      "path": "/sensor/visor/vision",
+      "occurrence": 2,
+      "arg": 0,
+      "old": "\"tank_around\"",
+      "new": "\"ctb_tank_medium\"",
+      "scope": "unit",
+      "enabled": true
+    },
+    {
+      "unit": "entity/-vehicle/+ussr/tank_medium/obj450/obj450.def",
+      "file": "properties/tank_unarmed.ext",
+      "path": "/sensor/visor/vision",
+      "occurrence": 2,
+      "arg": 0,
+      "old": "\"tank_around\"",
+      "new": "\"ctb_tank_medium\"",
+      "scope": "unit",
+      "enabled": true
+    },
+    {
+      "unit": "entity/-vehicle/+ussr/tank_medium/obj450/obj450.def",
+      "file": "entity/-vehicle/+ussr/tank_medium/obj450/obj450.def",
+      "path": "/game_entity/sensor/visor/vision",
+      "occurrence": 1,
+      "arg": 0,
+      "old": "\"tank_around\"",
+      "new": "\"ctb_tank_medium\"",
+      "scope": "unit",
+      "enabled": true
+    },
+    {
       "unit": "entity/-vehicle/+ussr/tank_medium/obj907/obj907.def",
       "file": "properties/tank_unarmed.ext",
       "path": "/sensor/visor/vision",

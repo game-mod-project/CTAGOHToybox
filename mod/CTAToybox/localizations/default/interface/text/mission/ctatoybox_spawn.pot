@@ -1131,7 +1131,7 @@ msgid "M4A2(76)W (Late) (+5)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_obj"
-msgid "Object 907"
+msgid "Object 450 (+3)"
 msgstr ""
 
 msgctxt "mission/ctatoybox_spawn/group_rus_medium_tanks_pgz"
