@@ -1,28 +1,28 @@
 {
   "Id": "3732639687",
-  "Files": 70834,
+  "Files": 71221,
   "FilesByStatus": {
     "collision": 2481,
     "empty": 11,
-    "excluded-binary": 39475,
+    "excluded-binary": 39810,
     "excluded-scope": 10067,
-    "reference-only": 383,
-    "text": 18417
+    "reference-only": 388,
+    "text": 18464
   },
   "FilesByRelation": {
     "in-mod-collision": 2481,
-    "new": 61679,
+    "new": 62066,
     "override-changed": 6564,
     "override-identical": 53,
     "override-unhashed": 57
   },
   "TextByRelationAndTop": {
-    "new entity/-vehicle": 9682,
+    "new entity/-vehicle": 9732,
     "override-changed entity/-vehicle": 5358,
     "new entity/inventory": 1263,
     "override-changed entity/humanskin": 1126,
     "new entity/humanskin": 763,
-    "new set/stuff": 452,
+    "new set/stuff": 454,
     "override-identical set/stuff": 49,
     "override-changed set/stuff": 43,
     "override-changed set/dynamic_campaign": 15,
@@ -48,21 +48,21 @@
     "item-entity new": 341,
     "pattern new": 14,
     "stuff changed": 43,
-    "stuff new": 438,
-    "vehicle new": 528
+    "stuff new": 440,
+    "vehicle new": 537
   },
   "NewVehicleDefsByNation": {
     "eng": 161,
     "+germany": 158,
-    "+ussr": 126,
+    "+ussr": 135,
     "+usa": 57,
     "+japan": 26
   },
   "NewBreedsByFolder": {},
-  "KeysNotInVanilla": 1630,
+  "KeysNotInVanilla": 1631,
   "KeysNotInVanillaByForm": {
     "block": 1278,
-    "macro": 231,
+    "macro": 232,
     "define": 103,
     "mod": 13,
     "include": 3,
@@ -76,11 +76,11 @@
   },
   "DistinctNewBlockNames": 38,
   "RoundTripFailed": [],
-  "UnresolvedFiles": 41,
+  "UnresolvedFiles": 44,
   "UnresolvedTop": {
+    "param:%door": 14,
     "param:%door2": 14,
-    "param:%door": 13,
-    "param:%group": 10,
+    "param:%group": 12,
     "param:%0": 2,
     "param:%door3": 2,
     "param:%visor": 2,
@@ -95,5 +95,5 @@
     "entity/+inventory": 66,
     "entity/fx": 1
   },
-  "QuotedNamesNotInVanilla": 3295
+  "QuotedNamesNotInVanilla": 3310
 }
