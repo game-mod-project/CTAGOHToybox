@@ -10,7 +10,7 @@
 	{targetclass "tank_medium"}
 	{targetSelector "tank_medium"}
 
-	("supply_engineer")
+	("supply_engineer_ctb_ger")
 	
 
 	(define "crew_human"

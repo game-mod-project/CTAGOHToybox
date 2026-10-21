@@ -12,7 +12,7 @@
 	{calibre 88}
 	
 
-	("fire rate" rpm(60))
+	("fire rate" rpm(120))
 	("reload time" seconds(5))
 
 	("velocity m/s" ap(1000) apcr(1130) he(750) heat(600))

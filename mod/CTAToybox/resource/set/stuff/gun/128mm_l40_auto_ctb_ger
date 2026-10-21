@@ -12,7 +12,7 @@
 	{range 240 240}
 	{calibre 128}
 
-	("fire rate" rpm(24))
+	("fire rate" rpm(48))
 	
 	("reload time" seconds(9))
 

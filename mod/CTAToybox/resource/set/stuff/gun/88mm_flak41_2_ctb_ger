@@ -11,8 +11,8 @@
 	{range 260 260}
 	{calibre 88}
 
-	("fire rate" rpm(24))
-	("reload time" seconds(13))
+	("fire rate" rpm(48))
+	("reload time" seconds(12.5))
 
 	("velocity m/s" ap(1000) apcr(1130) he(1000) heat(600)) 
 	("armor health" damage(240))

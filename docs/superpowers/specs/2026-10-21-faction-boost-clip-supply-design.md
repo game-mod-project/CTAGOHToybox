@@ -163,3 +163,14 @@
 - 명령 인자 이름과 기본값(클립 기준 간격, 발 사이 배수를 재장전 배수와 따로 둘지, 반경 배수, 총량 값, 문서 경로).
 - 생성 문서의 세부 꼴과 표 순서.
 - 앱 화면에서 새 수정 종류를 만드는 단추를 넣을지.
+
+## 구현 결과 (2026-10-21)
+
+- 계획: `docs/superpowers/plans/2026-10-21-faction-boost-clip-supply.md`. 코어 `DefineCopy.cs`(새 수정 종류 `define-copy`), `TextCopies.cs`(블록 복제·매크로 복제를 한곳에서: 빌드·점검·덧씌우기), `FactionPreset.Weapons.cs`(클립식), `FactionPreset.Supply.cs`(보급), `FactionDoc.cs`(수정 내용 문서). 명령줄 `add --kind define-copy`, 인자 있는 `add --kind macro-name`, `faction-preset --clip-min-gap --clip-gap --supply-radius --supply-limit --doc`. 앱 수정 목록에 "매크로 복제".
+- 빌드(`ModBuilder.Build`)가 프로젝트의 복제를 덧씌운 채 이름 바꾸기를 점검하고 끝나면 덧씌우기를 되돌린다. 그래서 세션 없이(명령줄) 빌드해도 복제본을 찾는다. 복제가 적용되지 않으면 그 복제본에 기대는 수정(복제본 안의 값, 호출 이름 바꾸기)을 점검과 빌드가 막는다.
+- 강화-독일(실제 판): 수정 28,951건(전에는 28,911), 적용 28,951, 원본이 바뀜 0.
+  - 클립식 포 5개, 발 사이 수정 6건(`128mm_kwk44_auto`는 줄 둘: 1.5 → 0.75, 5.00 → 2.5, 탄창 장전 35 → 17.5. 나머지 넷은 rpm 2배: `128oto` 3 → 6 등).
+  - 보급 매크로 복제 6개(`truck_ammo_heavy`, `truck_ammo_heavy_2x`, `supply_ammo`, `supply_engineer`, `supply_engineer_light`, `supply_fuel`), 반경 ×3과 총량 0 각 6건, 호출 이름 바꾸기 12건(독일 보급 유닛 12개: 탄약차·공병차·연료차·트레일러·보급 상자·Wanze·베르게판터 등).
+  - 실제 파일 검사(`-- real`): 다른 군대 표본 333개(다른 군대 보급 유닛 36개, 보급 건물 6종 포함)의 펼친 값이 바뀌지 않았다. 기관총·기관포 사본의 발 사이는 그대로다.
+- 수정 내용 문서: `docs/14-faction-boost/ger.md`(생성물).
+- 남은 미확인은 위 "위험과 미확인" 그대로다(게임 안 확인 없음).
