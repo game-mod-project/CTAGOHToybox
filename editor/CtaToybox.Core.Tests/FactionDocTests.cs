@@ -27,6 +27,7 @@ static class FactionDocTests
         T.True(md.Contains("- 원본 계층: vanilla → mod_2905667604 → mod_3732639687"), "layers in load order");
         T.True(md.Contains("재장전 ×0.5") && md.Contains("보급 반경 ×3") && md.Contains("보급 총량 50000") && md.Contains("10초에 가득") && md.Contains("클립식 기준: 탄창 2발 이상, 발 사이 1초 이상"), "the options: " + md);
         T.True(!md.Contains("무제한)"), "no longer calls a number unlimited");
+        T.True(!md.Contains("무제한 보급"), "the boosted supply is large (50000), not unlimited: " + md);
         T.True(md.Contains("## 항목별 수정") && md.Contains("| ger 보급 반경 ×3 | 2 |") && md.Contains("| ger 속도 ×1.5 | 7 |"), "item counts as a table");
         T.True(md.Contains("| ger 속도 ×1.5 | vehicle | `**/locomotion/maxspeed` | ×1.5 |"), "the bulk rules as a table");
         T.True(md.Contains("## 클립식 포") && md.Contains("| `set/stuff/gun/128oto_ctb_ger` | 3 | 20 → 10 | 18 → 9 |"), "clip table");

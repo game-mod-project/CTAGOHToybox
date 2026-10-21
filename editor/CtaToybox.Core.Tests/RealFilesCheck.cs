@@ -314,7 +314,7 @@ static class RealFilesCheck
                 T.Eq(Math.Round(double.Parse(clip.GapOld, CultureInfo.InvariantCulture) * 0.5, 3), gap, "the built gap of " + clip.Weapon + " is half");
             }
             T.True(boost.Edits.Where(e => (e.Path ?? "").EndsWith("/recoverytime") || (e.Path ?? "").EndsWith("(\"fire rate\")") || (e.New ?? "").StartsWith("{recoveryTime")).All(e => boostReport.Clips.Any(x => x.Weapon == e.File)), "no other weapon's gap changes (machine guns, autocannons)");
-            // 보급: 독일 보급 유닛은 반경 ×3, 총량 0
+            // 보급: 독일 보급 유닛은 반경 ×3, 총량 50000, 재생 주기 0.0002초
             foreach (var sc in boostReport.Supplies) foreach (string u in sc.Units)
             {
                 var rows = afterTracer.Trace(u).Rows;
