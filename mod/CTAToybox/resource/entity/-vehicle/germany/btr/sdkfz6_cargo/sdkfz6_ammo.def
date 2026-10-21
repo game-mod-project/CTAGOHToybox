@@ -30,7 +30,7 @@
 	{volume "bodyback6" {material "wood"}{tags "wood"}{thickness 4}}
 	{volume "detail9" {thickness 1}}
 
-	("truck_ammo_heavy_2x")
+	("truck_ammo_heavy_2x_ctb_ger")
 
 	{extender "inventory"
 		{Box

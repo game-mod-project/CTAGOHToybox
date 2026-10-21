@@ -1,5 +1,6 @@
-// 인자 없는 매크로 호출의 이름 바꾸기(E4, docs/superpowers/specs/2026-10-16-e4-macro-swap-design.md).
-// 바꿀 수 있는 이름은 그 유닛을 펼칠 때 보이는 정의 가운데 지금 매크로와 같은 파일에 정의된 것이다(tier면 health.inc의 tier1~5).
+// 매크로 호출의 이름 바꾸기(E4, docs/superpowers/specs/2026-10-16-e4-macro-swap-design.md). 화면은 인자 없는 호출만 고르게 하고,
+// 팩션 강화·명령줄은 인자 있는 호출도 이름만 바꾼다(인자는 그대로, 2026-10-21 보급 매크로 복제).
+// 바꿀 수 있는 이름은 그 유닛을 펼칠 때 보이는 정의 가운데 지금 매크로와 같은 파일에 정의된 것이다(tier면 health.inc의 tier1~5, 매크로 복제본 포함).
 // 보이지 않는 이름을 쓰면 게임이 시작할 때 "define not found"로 꺼진다(2026-10-16 G15 게임 확인). 그래서 목록 밖의 이름은 막는다
 using System;
 using System.Collections.Generic;

@@ -25,7 +25,7 @@
 	{volume "bodyback2" {able {holed}} {tags "fuel"}}
 	{volume "transmission" {able {NoWoundDecal 0}}}
 
-	("supply_fuel" liters(2500))
+	("supply_fuel_ctb_ger" liters(2500))
 
 	("crew_2_human")
 

@@ -1,6 +1,6 @@
 {
   "project": "강화-독일",
-  "builtAt": "2026-10-21T01:10:10Z",
+  "builtAt": "2026-10-21T03:55:11Z",
   "files": [
     {
       "path": "resource/set/stuff/bazooka/20mm_fliegerfaust_ctb_ger.weapon",
@@ -200,7 +200,7 @@
     {
       "path": "resource/set/stuff/gun/128mm_kwk44_auto_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 2
+      "edits": 4
     },
     {
       "path": "resource/set/stuff/gun/128mm_kwk46_ctb_ger",
@@ -220,7 +220,7 @@
     {
       "path": "resource/set/stuff/gun/128mm_l40_auto_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 2
+      "edits": 3
     },
     {
       "path": "resource/set/stuff/gun/128mm_pak44_3_ctb_ger",
@@ -240,7 +240,7 @@
     {
       "path": "resource/set/stuff/gun/128oto_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 2
+      "edits": 3
     },
     {
       "path": "resource/set/stuff/gun/13mm_mg131_ctb_ger",
@@ -720,7 +720,7 @@
     {
       "path": "resource/set/stuff/gun/88mm_flak41_2_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 2
+      "edits": 3
     },
     {
       "path": "resource/set/stuff/gun/88mm_kwk36_ctb_ger",
@@ -745,7 +745,7 @@
     {
       "path": "resource/set/stuff/gun/88mm_kwk43_d_ctb_ger",
       "layer": "mod_3732639687",
-      "edits": 2
+      "edits": 3
     },
     {
       "path": "resource/set/stuff/gun/88mm_kwk43_l71_ctb_ger",
@@ -8655,17 +8655,17 @@
     {
       "path": "resource/entity/-vehicle/+germany/btr/wanze_ammo/wanze_ammo.def",
       "layer": "mod_2905667604",
-      "edits": 5
+      "edits": 6
     },
     {
       "path": "resource/entity/-vehicle/+germany/tank_heavy/bergepanther/bergepanther.def",
       "layer": "mod_2905667604",
-      "edits": 11
+      "edits": 12
     },
     {
       "path": "resource/entity/-vehicle/germany/btr/sdkfz6_cargo/sdkfz6_ammo.def",
       "layer": "vanilla",
-      "edits": 8
+      "edits": 9
     },
     {
       "path": "resource/entity/-vehicle/germany/btr/sdkfz6_cargo/sdkfz6_cargo.def",
@@ -8695,12 +8695,12 @@
     {
       "path": "resource/entity/-vehicle/germany/car/blitz3_6_art_ammo/blitz3_6_art_ammo.def",
       "layer": "vanilla",
-      "edits": 4
+      "edits": 5
     },
     {
       "path": "resource/entity/-vehicle/germany/car/blitz3_6_engineering/blitz3_6_engineering.def",
       "layer": "vanilla",
-      "edits": 11
+      "edits": 12
     },
     {
       "path": "resource/entity/-vehicle/+germany/btr/daf_39/daf_39.ext",
@@ -9110,7 +9110,7 @@
     {
       "path": "resource/entity/-vehicle/germany/car/kettenkrad_eng/kettenkrad_eng.def",
       "layer": "vanilla",
-      "edits": 6
+      "edits": 7
     },
     {
       "path": "resource/entity/-vehicle/germany/car/kubelwagen/kubelwagen.def",
@@ -9120,7 +9120,7 @@
     {
       "path": "resource/entity/-vehicle/germany/car/opel_maultier/opel_maultier.def",
       "layer": "vanilla",
-      "edits": 4
+      "edits": 5
     },
     {
       "path": "resource/entity/-vehicle/germany/car/schwimmwagen/schwimmwagen.def",
@@ -10530,7 +10530,7 @@
     {
       "path": "resource/entity/-vehicle/germany/car/blitz3_6_fuel/blitz3_6_fuel.def",
       "layer": "vanilla",
-      "edits": 3
+      "edits": 4
     },
     {
       "path": "resource/entity/-vehicle/germany/car/kfz70/kfz70.def",
@@ -10590,6 +10590,31 @@
     {
       "path": "resource/entity/-vehicle/+germany/cannons/mg42_lafette_high/high_mg_mg42.def",
       "layer": "mod_2905667604",
+      "edits": 1
+    },
+    {
+      "path": "resource/properties/resupply.inc",
+      "layer": "mod_3732639687",
+      "edits": 27
+    },
+    {
+      "path": "resource/entity/-vehicle/generic/special/inf_crate_ger/inf_crate_ger.def",
+      "layer": "vanilla",
+      "edits": 1
+    },
+    {
+      "path": "resource/entity/-vehicle/germany/trailer/ammo_trailer/ammo_trailer.def",
+      "layer": "vanilla",
+      "edits": 1
+    },
+    {
+      "path": "resource/entity/-vehicle/germany/trailer/infantry_cart_if8/infantry_cart_if8.def",
+      "layer": "vanilla",
+      "edits": 1
+    },
+    {
+      "path": "resource/entity/-vehicle/germany/trailer/sdah_57_1/sdah_57_1.def",
+      "layer": "vanilla",
       "edits": 1
     },
     {
@@ -12405,21 +12430,6 @@
     {
       "path": "resource/entity/-vehicle/germany/special/150mm_sw34/150mm_sw34_ger.def",
       "layer": "mod_2829744930",
-      "edits": 0
-    },
-    {
-      "path": "resource/entity/-vehicle/germany/trailer/ammo_trailer/ammo_trailer.def",
-      "layer": "vanilla",
-      "edits": 0
-    },
-    {
-      "path": "resource/entity/-vehicle/germany/trailer/infantry_cart_if8/infantry_cart_if8.def",
-      "layer": "vanilla",
-      "edits": 0
-    },
-    {
-      "path": "resource/entity/-vehicle/germany/trailer/sdah_57_1/sdah_57_1.def",
-      "layer": "vanilla",
       "edits": 0
     },
     {

@@ -19,7 +19,7 @@
 	{volume "body1" {able {holed}}}
 	{volume "body2" {able {holed}}}
 
-	("supply_engineer_light")
+	("supply_engineer_light_ctb_ger")
 
 	("crew_human_2_v" place(driver) bone(driver) door(emit1) door2(emit2))
 	("crew_human_v" place(seat1) bone(seat1) door(emit3) animation(passenger1) group(passenger))

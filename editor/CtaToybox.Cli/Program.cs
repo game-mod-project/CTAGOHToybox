@@ -16,7 +16,8 @@ namespace CtaToybox.Cli
             "  ctatoybox units [--find <글자>] [--kind <종류>] [--layer <계층>] [--limit N] [--names <csv>] [--army ger|rus|usa|eng|fin|jap]\n" +
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
-            "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 인자 없는 매크로 호출의 이름을 같은 파일에 정의된 다른 이름으로)\n" +
+            "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 매크로 호출의 이름을 같은 파일에 정의된 다른 이름(매크로 복제본 포함)으로. 인자는 그대로)\n" +
+            "  ctatoybox add --project <파일> --kind define-copy --file <가상 경로> --path '/(define \"<이름>\")' --new '\"<새 이름>\"'   (매크로 정의를 새 이름으로 복제해 파일 끝에 붙인다. 안의 값은 /(define \"<새 이름>\")/… 경로로 고친다)\n" +
             "  ctatoybox add --project <파일> --kind file-copy --file <원본 가상 경로> --new <사본 가상 경로>   (같은 폴더에 새 이름의 사본. 유닛이 쓰게 하려면 이름 값을 사본 이름으로 바꾼다)\n" +
             "  ctatoybox add --project <파일> --kind add-line --file <가상 경로> --path <블록 경로, 예 /perks> [--occ N] --new \"<줄>\"   (블록의 닫는 괄호 앞에 줄 하나를 넣는다)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
@@ -24,7 +25,7 @@ namespace CtaToybox.Cli
             "  ctatoybox rule preview|add --kind <종류> [--army ger|rus|usa|eng|fin|jap] [--path <글자,…>] [--exclude <글자,…>] [--any <글자,…>] [--items ammo|other] [--layer <계층>] --key <펼친 키> [--arg N|all] --set|--mul|--add <값> [--scope auto|shared|unit] [--project <파일>] [--name <이름>]\n" +
             "  ctatoybox rule list|reapply|remove|enable|disable --project <파일> [--id <id>]   rule edit --project <파일> --id <id> <바꿀 옵션>   (일괄 규칙)\n" +
             "  ctatoybox build --project <파일> [--force]   (게임이 실행 중이면 --force 없이는 빌드하지 않는다)\n" +
-            "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--report <건너뜀 전체를 쓸 파일>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트를 만든다)\n" +
+            "  ctatoybox faction-preset --army ger|rus|usa|eng|fin|jap --project <파일> [--base <베이스 프로젝트>] [--force] [--super <초중전차 목록, 기본 editor/presets/super-heavy.txt>] [--inventory 2] [--ammo 5] [--reload 0.5] [--health 2] [--armor-car 2] [--armor-light 2] [--armor-medium 2.5] [--armor-heavy 3] [--armor-super 5] [--speed 1.5] [--fuel 10] [--skirmish 50] [--clip-min-gap 1] [--clip-gap <기본 --reload>] [--supply-radius 3] [--supply-limit 50000] [--supply-refill 10] [--report <건너뜀 전체를 쓸 파일>] [--doc <수정 내용 문서, 기본 docs/14-faction-boost/<군대>.md>]   (그 군대 유닛만 강화하고 컨퀘스트 플레이어 자원을 최대로 하는 프로젝트와 그 수정 내용 문서를 만든다)\n" +
             "  ctatoybox vision-preset --variant wot|wt --project <파일> [--scale <수, 기본 4>] [--force] [--classes [--heavy-uncover N] [--medium-r X] [--medium-uncover N] [--light-r X] [--light-uncover N] [--vehicle-r X] [--vehicle-uncover N]]   (월드워 시야 프로젝트를 만든다. --classes는 wot에 차종별 시야·탐지를 더한다(E18). 있는 파일은 --force로만 덮어쓴다)\n" +
             "  ctatoybox l10n extract|check|build [--dir <번역 보관, 기본 l10n/ko>] [--file <글자>] [--force]   (한글화: 보관 갱신, 검사, 출력 모드에 .pot·글꼴 쓰기)\n" +
             "  ctatoybox spawn-menu preview|build [--out <폴더, 기본 mod/CTAToyboxSpawn>] [--force] [--all-nations] [--visible <세로 목록에 보이는 단추 수, 기본 10, 0=바닐라 7>] [--grid <열, 꺼진 판>] [--roster [--roster-add] [--keep-cost] [--basic-buttons]] [--english] [--single-mod | --nations <ger,rus,…> [--campaign-in-base]]   (Spawn Menu를 대체하는 스폰 모드를 만든다. 멀티 맵 견본은 국가 모드 <폴더>_<국가>(CTAToybox Spawn - <국가>)에 따로 쓴다(--nations로 고름, --single-mod는 예전처럼 한 모드에). 캠페인 맵도 그 맵에 나오는 국가 가운데 켠 국가 모드의 견본만 읽는다(--campaign-in-base는 캠페인 견본을 바탕 모드에 둔다). 스커미시 구매 창은 그대로 둔다. --roster면 구매 창도 바꾼다(비용 0·횟수 999·종류 단추). 메뉴 글자는 l10n/ko 번역으로 쓰고, --english는 영어로 둔다. preview는 쓰지 않고 수만 보인다)\n" +
@@ -44,7 +45,7 @@ namespace CtaToybox.Cli
             ["merge"] = new[] { "settings", "project", "from" },
             ["rule"] = new[] { "settings", "project", "kind", "path", "layer", "key", "arg", "set", "mul", "add", "scope", "name", "id", "army", "exclude", "any", "items" },
             ["build"] = new[] { "settings", "project", "force" },
-            ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report" },
+            ["faction-preset"] = new[] { "settings", "army", "base", "project", "force", "super", "inventory", "ammo", "reload", "health", "armor-car", "armor-light", "armor-medium", "armor-heavy", "armor-super", "speed", "fuel", "skirmish", "report", "clip-min-gap", "clip-gap", "supply-radius", "supply-limit", "supply-refill", "doc" },
             ["l10n"] = new[] { "settings", "dir", "file", "force" },
             ["spawn-menu"] = new[] { "settings", "out", "force", "keep-cost", "basic-buttons", "list", "grid", "visible", "roster", "no-roster", "roster-add", "all-nations", "english", "single-mod", "nations", "campaign-in-base" },
             ["vision-preset"] = new[] { "settings", "variant", "project", "scale", "force", "classes", "heavy-uncover", "medium-r", "medium-uncover", "light-r", "light-uncover", "vehicle-r", "vehicle-uncover" },
@@ -193,6 +194,16 @@ namespace CtaToybox.Cli
             o.Inventory = Positive(opt, "inventory", o.Inventory); o.Ammo = Positive(opt, "ammo", o.Ammo); o.Reload = Positive(opt, "reload", o.Reload); o.Health = Positive(opt, "health", o.Health);
             o.ArmorCar = Positive(opt, "armor-car", o.ArmorCar); o.ArmorLight = Positive(opt, "armor-light", o.ArmorLight); o.ArmorMedium = Positive(opt, "armor-medium", o.ArmorMedium);
             o.ArmorHeavy = Positive(opt, "armor-heavy", o.ArmorHeavy); o.ArmorSuper = Positive(opt, "armor-super", o.ArmorSuper); o.Speed = Positive(opt, "speed", o.Speed); o.Fuel = Positive(opt, "fuel", o.Fuel);
+            o.ClipMinGap = Positive(opt, "clip-min-gap", o.ClipMinGap); o.ClipGap = Positive(opt, "clip-gap", o.ClipGap); o.SupplyRadius = Positive(opt, "supply-radius", o.SupplyRadius);
+            if (opt.ContainsKey("supply-limit"))
+            {
+                int limit;
+                if (!int.TryParse(opt["supply-limit"], System.Globalization.NumberStyles.None, System.Globalization.CultureInfo.InvariantCulture, out limit) || limit < 1)
+                    throw new UsageException("--supply-limit는 1 이상의 정수다(0은 파일 주석상 무제한이지만 게임에서 보급이 동작하지 않았다, 2026-10-21)");
+                o.SupplyLimit = limit.ToString(System.Globalization.CultureInfo.InvariantCulture);
+            }
+            o.SupplyRefill = Positive(opt, "supply-refill", o.SupplyRefill);
+            string docPath = opt.ContainsKey("doc") ? opt["doc"] : Path.Combine("docs", "14-faction-boost", army + ".md");
             string superPath = opt.ContainsKey("super") ? opt["super"] : Path.Combine("editor", "presets", "super-heavy.txt");
             if (!File.Exists(superPath)) { output.WriteLine("초중전차 목록이 없다: " + superPath); return 1; }
             o.SuperHeavy = FactionPreset.LoadSuperHeavy(superPath);
@@ -209,6 +220,10 @@ namespace CtaToybox.Cli
                 var report = new FactionReport();
                 var project = FactionPreset.Build(c, baseProject, o, new ConquestValues { Skirmish = Positive(opt, "skirmish", 50) }, report);
                 project.Save(projectPath);
+                string docDir = Path.GetDirectoryName(Path.GetFullPath(docPath));
+                Directory.CreateDirectory(docDir);
+                File.WriteAllText(docPath, FactionDoc.Markdown(project, o, report, session.Stack.Layers.Select(l => l.Name).ToList(),
+                    opt.ContainsKey("base") ? Path.GetFileNameWithoutExtension(opt["base"]) : null, DateTime.Now.ToString("yyyy-MM-dd", System.Globalization.CultureInfo.InvariantCulture)), new System.Text.UTF8Encoding(false));
                 output.WriteLine("군대 " + army + ": 유닛 " + report.Units + "(보병 " + report.Infantry + ", 차량 " + report.Vehicles + "), 수정 " + project.Edits.Count + "건, 규칙 " + (project.Rules == null ? 0 : project.Rules.Count) + "개: " + projectPath);
                 foreach (var kv in report.Edits) output.WriteLine("  " + kv.Key + ": " + kv.Value);
                 if (missing.Count > 0) output.WriteLine("초중전차 목록에서 지금 판에 없는 폴더 " + missing.Count + ": " + string.Join(", ", missing.Take(10)));
@@ -217,6 +232,7 @@ namespace CtaToybox.Cli
                 foreach (string s in report.Skipped.Take(20)) output.WriteLine("  " + s);
                 foreach (string n in report.Notes) output.WriteLine("  " + n);
                 if (opt.ContainsKey("report")) File.WriteAllLines(opt["report"], report.Edits.Select(kv => "수정 " + kv.Key + ": " + kv.Value).Concat(report.Shared.Select(x => "공유 " + x)).Concat(report.Skipped.Select(x => "건너뜀 " + x)).Concat(report.Notes));
+                output.WriteLine("수정 내용 문서: " + docPath);
                 return 0;
             }
         }
@@ -564,17 +580,34 @@ namespace CtaToybox.Cli
             }
         }
 
+        // 매크로 정의 복제: add --kind define-copy --file <파일> --path '/(define "이름")' --new '"새 이름"'
+        static int AddDefineCopyCli(Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string projectPath = Need(opt, "project"), file = Need(opt, "file"), path = Need(opt, "path"), newName = Need(opt, "new");
+            var m = System.Text.RegularExpressions.Regex.Match(path, "^/\\(define \"([^\"]+)\"\\)$", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            if (!m.Success) throw new UsageException("--path는 /(define \"이름\") 꼴이다: " + path);
+            using (var session = EditorSession.Open(settingsPath, Directory.GetCurrentDirectory(), null))
+            {
+                session.OpenProject(projectPath);
+                try { session.AddDefineCopy(opt.ContainsKey("unit") ? opt["unit"] : null, file, m.Groups[1].Value, newName); }
+                catch (ArgumentException ex) { output.WriteLine(ex.Message); return 1; }
+                output.WriteLine("매크로를 복제했다: " + SourceStack.ToVirtual(file) + " " + m.Groups[1].Value + " → " + newName.Trim('"'));
+                return 0;
+            }
+        }
+
         static int Add(Dictionary<string, string> opt, string settingsPath, TextWriter output)
         {
             if (opt.ContainsKey("kind") && opt["kind"] == FileCopy.Kind) return AddFileCopy(opt, settingsPath, output);
             if (opt.ContainsKey("kind") && opt["kind"] == AddLine.Kind) return AddLineCli(opt, settingsPath, output);
+            if (opt.ContainsKey("kind") && opt["kind"] == DefineCopy.Kind) return AddDefineCopyCli(opt, settingsPath, output);
             string projectPath = Need(opt, "project"), fileArg = Need(opt, "file"), keyPath = Need(opt, "path"), newValue = Need(opt, "new");
             int occ = Number(opt, "occ"), arg = Number(opt, "arg");
             string scope = opt.ContainsKey("scope") ? opt["scope"].ToLowerInvariant() : "shared";
             if (scope != "shared" && scope != "unit") throw new UsageException("--scope는 shared 또는 unit이다");
             if (scope == "unit" && !opt.ContainsKey("unit")) throw new UsageException("--scope unit에는 --unit이 필요하다");
             string editKind = opt.ContainsKey("kind") ? opt["kind"] : null;
-            if (editKind != null && editKind != MacroSwap.Kind && editKind != BlockCopy.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + " 또는 " + BlockCopy.Kind + "이다");
+            if (editKind != null && editKind != MacroSwap.Kind && editKind != BlockCopy.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + ", " + BlockCopy.Kind + ", " + DefineCopy.Kind + ", " + FileCopy.Kind + ", " + AddLine.Kind + " 가운데 하나다");
             EditorSettings settings; LayerPlan plan;
             using (var stack = Open(settingsPath, output, out settings, out plan))
             {
@@ -584,17 +617,17 @@ namespace CtaToybox.Cli
                 if (scope == "unit" && (SettingFiles.InArea(file.VirtualPath) || UnitKind.OfEditor(SourceStack.ToVirtual(opt["unit"])) == SettingFiles.Kind))
                 { output.WriteLine(SettingFiles.UnitScopeNote); return 1; }
                 var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
-                // 이 프로젝트의 켜진 블록 복제를 넣은 본문에서 자리를 찾는다(빌드와 같은 본문, E18)
-                var fileCopies = project.Edits.Where(e => e.Kind == BlockCopy.Kind && e.Enabled && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)).ToList();
+                // 이 프로젝트의 켜진 블록 복제·매크로 복제를 넣은 본문에서 자리를 찾는다(빌드와 같은 본문, E18)
+                var fileCopies = project.Edits.Where(e => TextCopies.IsCopy(e.Kind) && e.Enabled && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)).ToList();
                 string readError;
                 string original = TextCodec.Decode(stack.Read(file), out TextKind kind);
-                string text = BlockCopy.ApplyAll(original, fileCopies);
+                string text = TextCopies.ApplyAll(original, fileCopies);
                 var rows = SourceRows.Of(file.VirtualPath, text, out readError);
                 if (rows == null) { output.WriteLine("읽히지 않는 파일은 고칠 수 없다: " + readError); return 1; }
                 var found = rows.FirstOrDefault(r => r.Occurrence == occ && string.Equals(r.Path, keyPath, StringComparison.OrdinalIgnoreCase));
-                // --kind macro-name은 인자 없는 호출 줄의 이름 토큰을 고친다(E4)
+                // --kind macro-name은 호출 줄의 이름 토큰을 고친다(E4. 인자가 있어도 이름만, 인자는 그대로)
                 // --kind block-copy는 따옴표 이름 블록의 이름 줄을 고른다(E18)
-                var node = editKind == MacroSwap.Kind ? (found != null && found.Leaves.Count == 0 && arg == 0 ? found.Head : null)
+                var node = editKind == MacroSwap.Kind ? (found != null && found.Head != null && MacroSwap.NameOf(found.RawPath) != null && arg == 0 ? found.Head : null)
                     : editKind == BlockCopy.Kind ? (found != null && found.Path.EndsWith("/\"*\"", StringComparison.Ordinal) && arg == 0 && found.Leaves.Count > 0 ? found.Leaves[0] : null)
                     : found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
@@ -606,7 +639,11 @@ namespace CtaToybox.Cli
                                ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Kind = editKind });
                 string unitForSwap = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
                 if (error == null && editKind == MacroSwap.Kind)
+                {
+                    // 이 프로젝트의 매크로 복제본도 고를 수 있게 복제를 넣은 본문으로 펼친다
+                    stack.Overlay = TextCopies.Overlay(project);
                     error = MacroSwap.Check(new UnitTracer(stack).Trace(unitForSwap), new Edit { Old = node.Text, New = newValue, Kind = editKind });
+                }
                 if (error != null) { output.WriteLine(error); return 1; }
                 if (warning != null) output.WriteLine("경고: " + warning);
                 string unit = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);

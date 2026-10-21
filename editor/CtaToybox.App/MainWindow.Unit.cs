@@ -128,7 +128,7 @@ namespace CtaToybox.App
         string CopyKey()
         {
             if (session == null || session.Project == null) return "";
-            return string.Join("|", session.Project.Edits.Where(e => e.Kind == BlockCopy.Kind && e.Enabled).Select(e => e.File + " " + e.NamedPath + " " + e.New));
+            return string.Join("|", session.Project.Edits.Where(e => TextCopies.IsCopy(e.Kind) && e.Enabled).Select(e => e.File + " " + (e.NamedPath ?? e.Path) + " " + e.New));
         }
 
         public void RefreshUnitViews()

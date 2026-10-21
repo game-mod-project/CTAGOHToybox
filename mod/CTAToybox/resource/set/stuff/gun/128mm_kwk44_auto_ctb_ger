@@ -8,12 +8,12 @@
 	{fireSound "cannon/s4/d1/Shared/Cannon_85to100mm/"}
 	{fireSoundclose "cannon/s4/3p/Shared/Cannon_85to100mm/"}
 	{reloadSound "utility/"}
-	{recoveryTime 1.5}
+	{recoveryTime 0.75}
 	("range_220")
 	{calibre 128}
 
-	{recoveryTime 5.00}
-	{rechargeTime 18}
+	{recoveryTime 2.5}
+	{rechargeTime 17.5}
 
 	("velocity m/s" ap(920) apcr(1230) he(750) heat(750))
 	("armor health" damage(340))

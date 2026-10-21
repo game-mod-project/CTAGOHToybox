@@ -9,7 +9,7 @@
 	{targetclass "tank_light"}
 	{targetSelector "tank_light"}
 
-	("supply_ammo" supply(500))
+	("supply_ammo_ctb_ger" supply(500))
 
 	{boarder
 		{anm "driver"

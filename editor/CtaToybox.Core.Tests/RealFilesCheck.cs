@@ -2,7 +2,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Globalization;
 using System.Linq;
+using System.Text.RegularExpressions;
 using CtaToybox.Core;
 
 static class RealFilesCheck
@@ -259,6 +261,17 @@ static class RealFilesCheck
                 sample.AddRange(m.Where(p => p.StartsWith("set/breed/")).Where(p => { string t = stack.ReadText(p) ?? ""; return copiedNames.Any(n => t.IndexOf("\"" + n, StringComparison.OrdinalIgnoreCase) >= 0); }).Take(30));
             }
             sample.AddRange(armies.Shared.Select(x => x.Substring(0, x.IndexOf(':'))));
+            // 보급: 다른 군대의 보급 유닛과 보급 건물 6종(군대 소속 없음)은 그대로여야 한다(2026-10-21 설계)
+            string[] supplyBuildings =
+            {
+                "entity/service/-multiplayer/flag_point/flagpoint_ammo/flagpoint_ammo.def", "entity/service/-multiplayer/ammo_point/ammo/ammo2.def", "entity/service/-multiplayer/ammo_point/ammo/ammo3.def",
+                "entity/construction/_military/boxes/crates_set02_resupply/crates_set02_resupply.def", "entity/construction/_military/environment/barrels/barrels_covered1/barrels_covered1_supply.def",
+                "entity/construction/_military/medic_rally/medic_rally.def",
+            };
+            var supplyCall = new Regex("\\(\"(supply_|truck_ammo|crate_ammo)", RegexOptions.IgnoreCase);
+            var otherSupply = ArmyIndex.Armies.Where(a => a != "ger").SelectMany(a => armies.Members(a)).Where(p => p.StartsWith("entity/-vehicle/", StringComparison.Ordinal) && supplyCall.IsMatch(stack.ReadText(p) ?? "")).Distinct().ToList();
+            sample.AddRange(supplyBuildings);
+            sample.AddRange(otherSupply);
             sample = sample.Distinct().ToList();
             int changed = 0;
             var changedExamples = new List<string>();
@@ -278,7 +291,9 @@ static class RealFilesCheck
             }
             Console.WriteLine("faction-units=" + boostReport.Units + " faction-edits=" + boost.Edits.Count + " faction-copies=" + boost.Edits.Count(e => e.Kind == FileCopy.Kind) + " faction-lines=" + boost.Edits.Count(e => e.Kind == AddLine.Kind) +
                               " faction-skipped=" + boostReport.Skipped.Count + " faction-shared=" + boostReport.Shared.Count + " faction-not-applied=" + boostBad.Count + " faction-file-errors=" + boostBuild.FileErrors.Count +
-                              " faction-written=" + boostBuild.WrittenFiles.Count + " faction-other-army-sample=" + sample.Count + " faction-other-army-changed=" + changed);
+                              " faction-written=" + boostBuild.WrittenFiles.Count + " faction-other-army-sample=" + sample.Count + " faction-other-army-changed=" + changed +
+                              " faction-clips=" + boostReport.Clips.Count + " faction-supply-copies=" + boostReport.Supplies.Count + " faction-supply-units=" + boostReport.Supplies.SelectMany(x => x.Units).Count() +
+                              " faction-other-supply-units=" + otherSupply.Count);
             foreach (var r in boostBad.Take(10)) Console.WriteLine("  faction: " + r.Status + " " + r.Edit.File + " " + r.Edit.Path + " " + r.Message);
             foreach (string e in boostBuild.FileErrors.Take(10)) Console.WriteLine("  faction file: " + e);
             foreach (string e in changedExamples) Console.WriteLine("  faction other army changed: " + e);
@@ -286,6 +301,31 @@ static class RealFilesCheck
             T.Eq(0, boostBad.Count, "every faction edit applies");
             T.Eq(0, boostBuild.FileErrors.Count, "and every file is written (faction boost)");
             T.Eq(0, changed, "other armies' units are unchanged (faction boost)");
+            T.True(supplyBuildings.All(b => beforeTracer.Trace(b) != null && afterTracer.Trace(b) != null), "the six supply buildings are traced, so the comparison covers them");
+            T.True(otherSupply.Count > 10, "other armies' supply units are in the sample: " + otherSupply.Count);
+            // 클립식: 지금 판의 다섯 개
+            var clipNames = boostReport.Clips.Select(x => x.Weapon).OrderBy(x => x, StringComparer.Ordinal).ToArray();
+            T.Eq(new[] { "set/stuff/gun/128mm_kwk44_auto_ctb_ger", "set/stuff/gun/128mm_l40_auto_ctb_ger", "set/stuff/gun/128oto_ctb_ger", "set/stuff/gun/88mm_flak41_2_ctb_ger", "set/stuff/gun/88mm_kwk43_d_ctb_ger" }, clipNames, "the five German clip guns (2026-10-21)");
+            var gapRow = new Regex("^/[^/]+/recoverytime$");
+            foreach (var clip in boostReport.Clips)
+            {
+                var clipTrace = afterTracer.Trace(clip.Weapon);
+                double gap = double.Parse(clipTrace.Rows.Last(r => gapRow.IsMatch(r.Path) && r.FromState != FromLevel.Overridden).Values[0].Text, CultureInfo.InvariantCulture);
+                T.Eq(Math.Round(double.Parse(clip.GapOld, CultureInfo.InvariantCulture) * 0.5, 3), gap, "the built gap of " + clip.Weapon + " is half");
+            }
+            T.True(boost.Edits.Where(e => (e.Path ?? "").EndsWith("/recoverytime") || (e.Path ?? "").EndsWith("(\"fire rate\")") || (e.New ?? "").StartsWith("{recoveryTime")).All(e => boostReport.Clips.Any(x => x.Weapon == e.File)), "no other weapon's gap changes (machine guns, autocannons)");
+            // 보급: 독일 보급 유닛은 반경 ×3, 총량 50000, 재생 주기 0.0002초
+            foreach (var sc in boostReport.Supplies) foreach (string u in sc.Units)
+            {
+                var rows = afterTracer.Trace(u).Rows;
+                T.True(rows.Any(r => r.Path.EndsWith("/extender[supply_zone]/radius")) && rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/radius")).All(r => r.Values[0].Text == sc.RadiusNew), "radius of " + u + " is " + sc.RadiusNew);
+                var limits = rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/limit")).ToList();
+                T.True(limits.Count > 0 && limits.All(r => r.Values[0].Text == sc.LimitNew), "limit of " + u + " is " + sc.LimitNew + " (never 0: supply stops working, user check 2026-10-21)");
+                var regens = rows.Where(r => r.Path.EndsWith("/extender[supply_zone]/regenerationperiod")).ToList();
+                T.True(regens.All(r => r.Values[0].Text == sc.RegenNew), "regeneration of " + u + " is " + sc.RegenNew);
+            }
+            T.True(boostReport.Supplies.SelectMany(x => x.Units).Count() >= 10, "the German supply units are found (11~12 on 2026-10-21)");
+            T.True(stack.Overlay == null, "FactionPreset.Build and the builds leave the stack overlay as it was");
             T.True(EditProject.Load(basePath).Edits.All(be => boost.Edits.Any(e => e.Kind == be.Kind && e.File == be.File && e.Path == be.Path && e.Occurrence == be.Occurrence && e.Arg == be.Arg && e.New == be.New)), "every base (월드워-차종) edit is in the faction project");
         }
         finally { Directory.Delete(boostOut, true); stack.SetCopies(null); foreach (string d in Directory.GetDirectories(Path.GetTempPath(), "ctatoybox-boostbase-*")) Directory.Delete(d, true); }

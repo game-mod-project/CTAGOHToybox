@@ -3786,9 +3786,9 @@
 | `/(define "crate_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 100 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 100 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "crate_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "crate_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "crate_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4022,9 +4022,9 @@
 | `/(define "flag_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "flag_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "flag_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -4048,9 +4048,9 @@
 | `/(define "flag_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "flag_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "flag_ammo")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "flag_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 250 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "flag_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 250 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "flag_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 15 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "flag_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "flag_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "flag_ammo")/extender[supply_zone]/resupply/("items_light_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5237,9 +5237,9 @@
 | `/(define "supply_ammo_fixed")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 6 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "supply_ammo_fixed")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_ammo_fixed")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo_fixed")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5263,9 +5263,9 @@
 | `/(define "supply_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "supply_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_ammo")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "supply_ammo")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_ammo")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %supply | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 10 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "supply_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_ammo")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5288,12 +5288,12 @@
 | `/(define "supply_engineer_light")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "supply_engineer_light")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
-| `/(define "supply_engineer_light")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 200 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_engineer_light")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 200 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_engineer_light")/extender[supply_zone]/mechanicresources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/mechanicresources/amount` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/mechanicresources/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "supply_engineer_light")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_engineer_light")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_engineer_light")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/resupply/("items_engineer")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer_light")/extender[supply_zone]/resupply/("items_explosives")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5305,12 +5305,12 @@
 | `/(define "supply_engineer")/decalview/sprite/visibility` | block | [num]x1 | 1 | 1 | 0.25 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "supply_engineer")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
-| `/(define "supply_engineer")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_engineer")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_engineer")/extender[supply_zone]/mechanicresources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/mechanicresources/amount` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/mechanicresources/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "supply_engineer")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_engineer")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_engineer")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/resupply/("items_engineer")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_engineer")/extender[supply_zone]/resupply/("items_explosives")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5325,9 +5325,9 @@
 | `/(define "supply_fuel")/extender[supply_zone]/fuel` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  | Type of fuel used. "fuel" = petrol/gasoline. "diesel" = diesel. ¦ Fuel type. |
 | `/(define "supply_fuel")/extender[supply_zone]/fuel/amount` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
 | `/(define "supply_fuel")/extender[supply_zone]/fuel/value` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
-| `/(define "supply_fuel")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %liters | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_fuel")/extender[supply_zone]/limit` | block | [param]x1 | 1 | 1 | %liters | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_fuel")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "supply_fuel")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_fuel")/extender[supply_zone]/regenerationperiod` | block | [num]x1 | 1 | 1 | 0 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_fuel")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_fuel")/extender[supply_zone]/resupply/item` | block | [str str num]x1 | 1 | 1 | "flame_thrower" "ammo" 50 | 추정 | 보급해 주는 품목 한 줄. 대상 무기나 아이템, 종류, 수량 (추정: 값 "flame_thrower" "ammo" 50) | 파일 구조와 값에서 추론 | Finnish shell just has to have rus entity name for gun compatibility ¦ 6 rockets costs 360 per salvo |
 | `/(define "supply_fuel")/extender[supply_zone]/resupply/item/value` | block | [num]x1 | 1 | 1 | 1 | 미확인(자동) |  |  |  |
@@ -5340,9 +5340,9 @@
 | `/(define "supply_medic")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "supply_medic")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "supply_medic")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "supply_medic")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 50 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "supply_medic")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 50 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "supply_medic")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 5 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "supply_medic")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 2 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "supply_medic")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 2 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "supply_medic")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_medic")/extender[supply_zone]/resupply/("items_medic")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "supply_medic")/extender[supply_zone]/resupplyperiod` | block | [num]x1 | 1 | 1 | 1 | 확인 | 보급 주기, 초 | 게임 파일 주석 | resupply period in seconds |
@@ -5514,9 +5514,9 @@
 | `/(define "truck_ammo_heavy_2x")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 2000 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 2000 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy_2x")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5539,9 +5539,9 @@
 | `/(define "truck_ammo_heavy")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 1000 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 1000 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "truck_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "truck_ammo_heavy")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 5 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo_heavy")/extender[supply_zone]/resupply/("items_heavy_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
@@ -5564,12 +5564,12 @@
 | `/(define "truck_ammo")/decalview/visible` | block | [num]x1 | 1 | 1 | 0 | 추정 | 처음에 보이는지 여부. 0이면 숨김 (추정: 이름과 값) | 파일 구조와 값에서 추론 | once spotted, the distance the unit will remain spotted until Line Of Sight is broken. ¦ once human is spotted, the distance the human will remain spotted until Line Of Sight is broken. When placed outside of a specific stance block, it becomes a master value for all stances. |
 | `/(define "truck_ammo")/extender[supply_zone]` | block | [str]x1 | 1 | 1 | "supply_zone" | 추정 | 주변 유닛에게 보급하는 기능 (추정: 하위 키) | 파일 구조와 값에서 추론 |  |
 | `/(define "truck_ammo")/extender[supply_zone]/(mod)` | mod | [str]x1 | 1 | 1 | "gameclass:campaign_capture_the_flag" | 미확인(자동) |  |  |  |
-| `/(define "truck_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 0이면 무제한 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
+| `/(define "truck_ammo")/extender[supply_zone]/limit` | block | [num]x1 | 1 | 1 | 500 | 확인 | 보급할 수 있는 총량. 파일 주석은 "0이면 무제한"이지만 0으로 하면 보급이 동작하지 않았다(사용자 게임 확인 2026-10-21). 게임·모드 파일에 쓰인 값은 25~50000 | 게임 파일 주석 | max number of resupplies (0 = unlimited) ¦ Max CP |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources/amount` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/mechanicresources/value` | block | [num]x1 | 1 | 1 | 10 | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/radius` | block | [num]x1 | 1 | 1 | 12 | 확인 | 보급 반경, 미터 | 게임 파일 주석 | resupply radius in meter |
-| `/(define "truck_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
+| `/(define "truck_ammo")/extender[supply_zone]/regenerationperiod` | block | [num]x2 | 1 | 2 | 0 ~ 10 | 확인 | 보급량 재생 주기, 초. 이 시간마다 1씩 찬다. 0이면 재생하지 않는다. 게임·모드 파일에 쓰인 값은 0·2·5·10이고 1초보다 짧은 소수 값은 미확인 | 게임 파일 주석 | regeneration period in seconds, +1 supply every x seconds (0 = no regeneration) |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply` | block | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_eng")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |
 | `/(define "truck_ammo")/extender[supply_zone]/resupply/("items_light_fin")` | macro | []x1 | 1 | 1 | 예: | 미확인(자동) |  |  |  |

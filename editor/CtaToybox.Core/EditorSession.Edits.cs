@@ -42,7 +42,7 @@ namespace CtaToybox.Core
             {
                 var source = Stack.Find(t.File);
                 // 빌드가 볼 본문: 원본에 켜진 블록 복제를 넣은 것(E18)
-                checkedText = source == null ? null : BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(source), out checkedKind), CopiesOf(t.File));
+                checkedText = source == null ? null : TextCopies.ApplyAll(TextCodec.Decode(Stack.Read(source), out checkedKind), CopiesOf(t.File));
                 checkedFile = t.File;
             }
             if (checkedText == null) return null;
@@ -63,7 +63,7 @@ namespace CtaToybox.Core
             var found = Stack.Find(t.File);
             if (found == null || LuaTable.IsLua(found.VirtualPath)) return null;
             TextKind kind;
-            string text = BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
+            string text = TextCopies.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
             string error;
             var rows = SourceRows.Of(found.VirtualPath, text, out error);
             var row = rows == null ? null : rows.FirstOrDefault(r => r.Occurrence == t.Occurrence && string.Equals(r.Path, t.KeyPath, StringComparison.OrdinalIgnoreCase));
@@ -81,7 +81,7 @@ namespace CtaToybox.Core
             var found = Stack.Find(file ?? "");
             if (found == null || LuaTable.IsLua(found.VirtualPath)) return null;
             TextKind kind;
-            return AddLine.Find(BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath)), blockPath, 0);
+            return AddLine.Find(TextCopies.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath)), blockPath, 0);
         }
 
         // 블록 끝에 줄 하나를 더한다(팩션 강화). 같은 파일·블록·줄이 이미 있으면 그 수정을 돌려준다. 안 되면 ArgumentException
@@ -94,7 +94,7 @@ namespace CtaToybox.Core
             if (found == null) throw new ArgumentException("원본에 이 파일이 없다: " + file);
             if (LuaTable.IsLua(found.VirtualPath)) throw new ArgumentException("Lua 파일에는 줄을 더하지 않는다");
             TextKind kind;
-            string text = BlockCopy.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
+            string text = TextCopies.ApplyAll(TextCodec.Decode(Stack.Read(found), out kind), CopiesOf(found.VirtualPath));
             if (AddLine.Find(text, blockPath, occurrence) == null) throw new ArgumentException("원본에 이 블록이 없다: " + blockPath);
             if (!TextCodec.CanEncode(line, kind)) throw new ArgumentException("넣을 줄에 이 파일의 인코딩(" + kind + ")으로 쓸 수 없는 글자가 있다");
             var same = Project.Edits.FirstOrDefault(x => x.Kind == AddLine.Kind && SourceStack.ToVirtual(x.File ?? "") == found.VirtualPath && string.Equals(x.Path, blockPath, StringComparison.OrdinalIgnoreCase) && x.Occurrence == occurrence && x.New == line);
@@ -120,6 +120,28 @@ namespace CtaToybox.Core
             return edit;
         }
 
+        // 파일 맨 위의 매크로 정의를 새 이름으로 복제한다(파일 끝에 붙는다). newName은 따옴표로 감싼 이름. 안 되면 ArgumentException
+        public Edit AddDefineCopy(string unit, string file, string name, string newName)
+        {
+            NeedProject();
+            string bad = DefineCopy.CheckName(newName);
+            if (bad != null) throw new ArgumentException(bad);
+            var found = Stack.Find(file);
+            if (found == null) throw new ArgumentException("원본에 이 파일이 없다: " + file);
+            if (LuaTable.IsLua(found.VirtualPath)) throw new ArgumentException("Lua 파일에는 매크로 정의가 없다");
+            var edit = DefineCopy.New(unit ?? found.VirtualPath, found.VirtualPath, name, newName.Trim('"'));
+            TextKind kind;
+            string original = TextCodec.Decode(Stack.Read(found), out kind);
+            var results = new List<EditResult>();
+            TextCopies.Apply(original, CopiesOf(found.VirtualPath).Concat(new[] { edit }), results);
+            var mine = results.Last();
+            if (mine.Status != EditStatus.Applied) throw new ArgumentException(mine.Message ?? "복제할 수 없다");
+            Project.Edits.Add(edit);
+            SaveOr(() => Project.Edits.Remove(edit));
+            RefreshOverlay();
+            return edit;
+        }
+
         // 게임 설정 파일의 따옴표 이름 블록을 새 이름으로 복제한다(E18). nameValue는 블록 이름 줄의 값(UnitTracer.BlockNameNote). 안 되면 ArgumentException
         public Edit AddBlockCopy(UnitView unit, ValueView nameValue, string newName)
         {
@@ -132,7 +154,7 @@ namespace CtaToybox.Core
             if (source == null) throw new ArgumentException("원본에 이 파일이 없다: " + t.File);
             TextKind kind;
             string original = TextCodec.Decode(Stack.Read(source), out kind);
-            var parsed = SdlCore.Parse(BlockCopy.ApplyAll(original, CopiesOf(t.File)));
+            var parsed = SdlCore.Parse(TextCopies.ApplyAll(original, CopiesOf(t.File)));
             var row = new KeyIndex(parsed.Root).Row(t.KeyPath, t.Occurrence);
             if (row == null) throw new ArgumentException("원본에 이 블록이 없다");
             var edit = new Edit { Kind = BlockCopy.Kind, Unit = unit.Unit, File = t.File, Path = t.KeyPath, Occurrence = t.Occurrence, Arg = 0, NamedPath = row.RawPath, NamedOccurrence = row.RawOccurrence, Old = t.Text, New = newName, Scope = "shared" };
@@ -300,16 +322,19 @@ namespace CtaToybox.Core
                 return new EditCheck { Edit = e, Status = EditStatus.Applied, RowText = e.New };
             }
             // 블록 복제(E18): 빌드와 같이 원본에 넣어 본 결과가 그 수정의 점검 결과다
-            if (e.Kind == BlockCopy.Kind)
+            if (TextCopies.IsCopy(e.Kind))
             {
                 var copied = source.CopyResults.FirstOrDefault(r => r.Edit == e);
                 if (copied == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
+                // 빌드가 그 파일을 쓸 수 없으면 복제도 들어가지 않는다(손으로 넣은 출력 파일)
+                string clash = copied.Status == EditStatus.Applied ? conflict(file) : null;
+                if (clash != null) return new EditCheck { Edit = e, Status = EditStatus.Invalid, Current = e.Old, RowText = e.Old, Message = clash };
                 return new EditCheck { Edit = e, Status = copied.Status, Current = e.Old, RowText = e.Old, Message = copied.Message };
             }
             // 복제 블록 안의 값, 값을 복제 이름으로 바꾸는 수정: 그 복제가 적용되지 않으면 막는다
-            string dependency = BlockCopy.Dependency(e, Project == null ? new List<Edit>() : Project.Edits);
-            if (dependency != null && !ActiveCopies(parsed).Contains(dependency))
-                return new EditCheck { Edit = e, Status = EditStatus.Invalid, Message = BlockCopy.MissingNote(dependency) };
+            string dependency = TextCopies.Dependency(e, Project == null ? new List<Edit>() : Project.Edits);
+            if (dependency != null && !ActiveCopies(parsed, conflict).Contains(dependency))
+                return new EditCheck { Edit = e, Status = EditStatus.Invalid, Message = TextCopies.MissingNote(dependency, Project.Edits) };
             var rows = source.Rows;
             if (rows == null) return new EditCheck { Edit = e, Status = EditStatus.TargetMissing, Message = "원본에 이 파일이 없거나 읽히지 않는다: " + file };
             var row = rows.FirstOrDefault(r => r.Occurrence == e.Occurrence && string.Equals(r.Path, e.Path, StringComparison.OrdinalIgnoreCase));
@@ -365,7 +390,7 @@ namespace CtaToybox.Core
             if (found != null)
             {
                 string error;
-                source.Text = BlockCopy.Apply(TextCodec.Decode(Stack.Read(found), out source.Kind), CopiesOf(file), source.CopyResults);
+                source.Text = TextCopies.Apply(TextCodec.Decode(Stack.Read(found), out source.Kind), CopiesOf(file), source.CopyResults);
                 source.Rows = SourceRows.Of(file, source.Text, out error);
             }
             parsed[file] = source;
@@ -376,16 +401,19 @@ namespace CtaToybox.Core
         List<Edit> CopiesOf(string file)
         {
             if (Project == null) return new List<Edit>();
-            return Project.Edits.Where(x => x.Kind == BlockCopy.Kind && x.Enabled && string.Equals(SourceStack.ToVirtual(x.File ?? ""), file, StringComparison.Ordinal)).ToList();
+            return Project.Edits.Where(x => TextCopies.IsCopy(x.Kind) && x.Enabled && string.Equals(SourceStack.ToVirtual(x.File ?? ""), file, StringComparison.Ordinal)).ToList();
         }
 
-        // 원본에 적용되는 블록 복제의 새 이름(따옴표 없이)
-        HashSet<string> ActiveCopies(Dictionary<string, SourceCheck> parsed)
+        // 원본에 적용되고 빌드가 그 파일을 쓸 수 있는 복제의 새 이름(따옴표 없이)
+        HashSet<string> ActiveCopies(Dictionary<string, SourceCheck> parsed, Func<string, string> conflict)
         {
             var names = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
             if (Project == null) return names;
-            foreach (string file in Project.Edits.Where(x => x.Kind == BlockCopy.Kind && x.Enabled).Select(x => SourceStack.ToVirtual(x.File ?? "")).Distinct())
+            foreach (string file in Project.Edits.Where(x => TextCopies.IsCopy(x.Kind) && x.Enabled).Select(x => SourceStack.ToVirtual(x.File ?? "")).Distinct())
+            {
+                if (conflict(file) != null) continue;
                 foreach (var r in SourceOf(file, parsed).CopyResults.Where(r => r.Status == EditStatus.Applied)) names.Add(r.Edit.New.Trim('"'));
+            }
             return names;
         }
 
