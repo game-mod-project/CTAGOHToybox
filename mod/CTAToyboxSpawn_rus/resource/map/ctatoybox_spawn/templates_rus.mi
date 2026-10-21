@@ -3081,58 +3081,13 @@
 		{Player 0}
 	}
 	{Entity "il2_mod42_ai" 0xc51e
-		{Position -8940 8300}
-		{DisableObstacles}
-		{Player 0}
-		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
-		{ChassisManager {Current "airborne"}}
-	}
-	{Human "mp/rus/late/pilot" 0xc51f
-		{Position -8936 8300}
-		{Volume "ram"
-			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
-			{disabled}
-		}
-		{Player 0}
-	}
-	{Entity "mace_strike_il2_mod42" 0xc520
-		{Position -8900 8300}
-		{DisableObstacles}
-		{Player 0}
-		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
-		{ChassisManager {Current "airborne"}}
-	}
-	{Human "mp/rus/late/pilot" 0xc521
-		{Position -8896 8300}
-		{Volume "ram"
-			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
-			{disabled}
-		}
-		{Player 0}
-	}
-	{Entity "mace_strike_il2_mod42_ai" 0xc522
-		{Position -8860 8300}
-		{DisableObstacles}
-		{Player 0}
-		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
-		{ChassisManager {Current "airborne"}}
-	}
-	{Human "mp/rus/late/pilot" 0xc523
-		{Position -8856 8300}
-		{Volume "ram"
-			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
-			{disabled}
-		}
-		{Player 0}
-	}
-	{Entity "mace_strike_po2_flame" 0xc524
 		{Position -8820 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/rus/late/pilot" 0xc525
+	{Human "mp/rus/late/pilot" 0xc51f
 		{Position -8816 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3140,14 +3095,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "mace_strike_po2_rocket" 0xc526
+	{Entity "mace_strike_il2_mod42" 0xc520
 		{Position -8780 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/rus/late/pilot" 0xc527
+	{Human "mp/rus/late/pilot" 0xc521
 		{Position -8776 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3155,14 +3110,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "po2_flame" 0xc528
+	{Entity "mace_strike_il2_mod42_ai" 0xc522
 		{Position -8740 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/rus/late/pilot" 0xc529
+	{Human "mp/rus/late/pilot" 0xc523
 		{Position -8736 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3170,14 +3125,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "po2_rocket" 0xc52a
+	{Entity "mace_strike_po2_flame" 0xc524
 		{Position -8700 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/rus/late/pilot" 0xc52b
+	{Human "mp/rus/late/pilot" 0xc525
 		{Position -8696 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3185,14 +3140,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "mace_strike_yak1_ser69_50kg" 0xc52c
+	{Entity "mace_strike_po2_rocket" 0xc526
 		{Position -8660 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/rus/late/pilot" 0xc52d
+	{Human "mp/rus/late/pilot" 0xc527
 		{Position -8656 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3200,15 +3155,60 @@
 		}
 		{Player 0}
 	}
-	{Entity "yak1_ser69_50kg" 0xc52e
+	{Entity "po2_flame" 0xc528
 		{Position -8620 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/rus/late/pilot" 0xc52f
+	{Human "mp/rus/late/pilot" 0xc529
 		{Position -8616 8300}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+	}
+	{Entity "po2_rocket" 0xc52a
+		{Position -8580 8300}
+		{DisableObstacles}
+		{Player 0}
+		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
+		{ChassisManager {Current "airborne"}}
+	}
+	{Human "mp/rus/late/pilot" 0xc52b
+		{Position -8576 8300}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+	}
+	{Entity "mace_strike_yak1_ser69_50kg" 0xc52c
+		{Position -8540 8300}
+		{DisableObstacles}
+		{Player 0}
+		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
+		{ChassisManager {Current "airborne"}}
+	}
+	{Human "mp/rus/late/pilot" 0xc52d
+		{Position -8536 8300}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+	}
+	{Entity "yak1_ser69_50kg" 0xc52e
+		{Position -8500 8300}
+		{DisableObstacles}
+		{Player 0}
+		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
+		{ChassisManager {Current "airborne"}}
+	}
+	{Human "mp/rus/late/pilot" 0xc52f
+		{Position -8496 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -3609,15 +3609,15 @@
 	{Tags "hidden" "rus" "ctb_h1012" 0xc51b}
 	{Tags "hidden" "rus" "ctb_h1013" 0xc51c}
 	{Tags "hidden" "rus" "ctb_h1014" 0xc51d}
-	{Tags "ctb_a974" "hidden" "rus" "ctb_air" 0xc51e}
-	{Tags "ctb_a975" "hidden" "rus" "ctb_air" 0xc520}
-	{Tags "ctb_a976" "hidden" "rus" "ctb_air" 0xc522}
-	{Tags "ctb_a977" "hidden" "rus" "ctb_air" 0xc524}
-	{Tags "ctb_a978" "hidden" "rus" "ctb_air" 0xc526}
-	{Tags "ctb_a979" "hidden" "rus" "ctb_air" 0xc528}
-	{Tags "ctb_a980" "hidden" "rus" "ctb_air" 0xc52a}
-	{Tags "ctb_a981" "hidden" "rus" "ctb_air" 0xc52c}
-	{Tags "ctb_a982" "hidden" "rus" "ctb_air" 0xc52e}
+	{Tags "ctb_a977" "hidden" "rus" "ctb_air" 0xc51e}
+	{Tags "ctb_a978" "hidden" "rus" "ctb_air" 0xc520}
+	{Tags "ctb_a979" "hidden" "rus" "ctb_air" 0xc522}
+	{Tags "ctb_a980" "hidden" "rus" "ctb_air" 0xc524}
+	{Tags "ctb_a981" "hidden" "rus" "ctb_air" 0xc526}
+	{Tags "ctb_a982" "hidden" "rus" "ctb_air" 0xc528}
+	{Tags "ctb_a983" "hidden" "rus" "ctb_air" 0xc52a}
+	{Tags "ctb_a984" "hidden" "rus" "ctb_air" 0xc52c}
+	{Tags "ctb_a985" "hidden" "rus" "ctb_air" 0xc52e}
 	{Helpers
 		{triggers
 			{"ctb_has_rus"

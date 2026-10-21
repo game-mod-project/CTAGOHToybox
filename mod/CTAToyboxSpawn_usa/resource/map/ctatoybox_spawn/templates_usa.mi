@@ -3801,58 +3801,13 @@
 		{Player 0}
 	}
 	{Entity "mace_strike_f80a_450x2" 0xc70b
-		{Position -8780 8300}
-		{DisableObstacles}
-		{Player 0}
-		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
-		{ChassisManager {Current "airborne"}}
-	}
-	{Human "mp/usa/late/pilot" 0xc70c
-		{Position -8776 8300}
-		{Volume "ram"
-			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
-			{disabled}
-		}
-		{Player 0}
-	}
-	{Entity "mace_strike_f80a_mk78x4" 0xc70d
-		{Position -8740 8300}
-		{DisableObstacles}
-		{Player 0}
-		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
-		{ChassisManager {Current "airborne"}}
-	}
-	{Human "mp/usa/late/pilot" 0xc70e
-		{Position -8736 8300}
-		{Volume "ram"
-			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
-			{disabled}
-		}
-		{Player 0}
-	}
-	{Entity "f80a_rockets_127x12" 0xc70f
-		{Position -8700 8300}
-		{DisableObstacles}
-		{Player 0}
-		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
-		{ChassisManager {Current "airborne"}}
-	}
-	{Human "mp/usa/late/pilot" 0xc710
-		{Position -8696 8300}
-		{Volume "ram"
-			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
-			{disabled}
-		}
-		{Player 0}
-	}
-	{Entity "mace_strike_f80a_rockets_127x12" 0xc711
 		{Position -8660 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc712
+	{Human "mp/usa/late/pilot" 0xc70c
 		{Position -8656 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3860,14 +3815,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "mace_strike_p47_d22" 0xc713
+	{Entity "mace_strike_f80a_mk78x4" 0xc70d
 		{Position -8620 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc714
+	{Human "mp/usa/late/pilot" 0xc70e
 		{Position -8616 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3875,14 +3830,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "mace_strike_p47_d22_250lb" 0xc715
+	{Entity "f80a_rockets_127x12" 0xc70f
 		{Position -8580 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc716
+	{Human "mp/usa/late/pilot" 0xc710
 		{Position -8576 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3890,14 +3845,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "mace_strike_p47_d22_hvar" 0xc717
+	{Entity "mace_strike_f80a_rockets_127x12" 0xc711
 		{Position -8540 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc718
+	{Human "mp/usa/late/pilot" 0xc712
 		{Position -8536 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3905,14 +3860,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "mace_strike_p47_d22_m8" 0xc719
+	{Entity "mace_strike_p47_d22" 0xc713
 		{Position -8500 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc71a
+	{Human "mp/usa/late/pilot" 0xc714
 		{Position -8496 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3920,14 +3875,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "p47_d22_250lb" 0xc71b
+	{Entity "mace_strike_p47_d22_250lb" 0xc715
 		{Position -8460 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc71c
+	{Human "mp/usa/late/pilot" 0xc716
 		{Position -8456 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3935,14 +3890,14 @@
 		}
 		{Player 0}
 	}
-	{Entity "p47_d22_hvar" 0xc71d
+	{Entity "mace_strike_p47_d22_hvar" 0xc717
 		{Position -8420 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc71e
+	{Human "mp/usa/late/pilot" 0xc718
 		{Position -8416 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
@@ -3950,15 +3905,60 @@
 		}
 		{Player 0}
 	}
-	{Entity "p47_d22_m8" 0xc71f
+	{Entity "mace_strike_p47_d22_m8" 0xc719
 		{Position -8380 8300}
 		{DisableObstacles}
 		{Player 0}
 		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
 		{ChassisManager {Current "airborne"}}
 	}
-	{Human "mp/usa/late/pilot" 0xc720
+	{Human "mp/usa/late/pilot" 0xc71a
 		{Position -8376 8300}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+	}
+	{Entity "p47_d22_250lb" 0xc71b
+		{Position -8340 8300}
+		{DisableObstacles}
+		{Player 0}
+		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
+		{ChassisManager {Current "airborne"}}
+	}
+	{Human "mp/usa/late/pilot" 0xc71c
+		{Position -8336 8300}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+	}
+	{Entity "p47_d22_hvar" 0xc71d
+		{Position -8300 8300}
+		{DisableObstacles}
+		{Player 0}
+		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
+		{ChassisManager {Current "airborne"}}
+	}
+	{Human "mp/usa/late/pilot" 0xc71e
+		{Position -8296 8300}
+		{Volume "ram"
+			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
+			{disabled}
+		}
+		{Player 0}
+	}
+	{Entity "p47_d22_m8" 0xc71f
+		{Position -8260 8300}
+		{DisableObstacles}
+		{Player 0}
+		{Chassis "airborne" {AirborneMode 1} {Altitude 40}}
+		{ChassisManager {Current "airborne"}}
+	}
+	{Human "mp/usa/late/pilot" 0xc720
+		{Position -8256 8300}
 		{Volume "ram"
 			{able {visible 0}{bullet 0}{throwing 0}{obstacle 0}{contact 0}{contact_ground 0}{blast 0}{select 0}{touch 0}{blockcamera 0}}
 			{disabled}
@@ -4451,17 +4451,17 @@
 	{Tags "hidden" "usa" "ctb_h1487" 0xc708}
 	{Tags "hidden" "usa" "ctb_h1488" 0xc709}
 	{Tags "hidden" "usa" "ctb_h1489" 0xc70a}
-	{Tags "ctb_a1378" "hidden" "usa" "ctb_air" 0xc70b}
-	{Tags "ctb_a1379" "hidden" "usa" "ctb_air" 0xc70d}
-	{Tags "ctb_a1380" "hidden" "usa" "ctb_air" 0xc70f}
-	{Tags "ctb_a1381" "hidden" "usa" "ctb_air" 0xc711}
-	{Tags "ctb_a1382" "hidden" "usa" "ctb_air" 0xc713}
-	{Tags "ctb_a1383" "hidden" "usa" "ctb_air" 0xc715}
-	{Tags "ctb_a1384" "hidden" "usa" "ctb_air" 0xc717}
-	{Tags "ctb_a1385" "hidden" "usa" "ctb_air" 0xc719}
-	{Tags "ctb_a1386" "hidden" "usa" "ctb_air" 0xc71b}
-	{Tags "ctb_a1387" "hidden" "usa" "ctb_air" 0xc71d}
-	{Tags "ctb_a1388" "hidden" "usa" "ctb_air" 0xc71f}
+	{Tags "ctb_a1381" "hidden" "usa" "ctb_air" 0xc70b}
+	{Tags "ctb_a1382" "hidden" "usa" "ctb_air" 0xc70d}
+	{Tags "ctb_a1383" "hidden" "usa" "ctb_air" 0xc70f}
+	{Tags "ctb_a1384" "hidden" "usa" "ctb_air" 0xc711}
+	{Tags "ctb_a1385" "hidden" "usa" "ctb_air" 0xc713}
+	{Tags "ctb_a1386" "hidden" "usa" "ctb_air" 0xc715}
+	{Tags "ctb_a1387" "hidden" "usa" "ctb_air" 0xc717}
+	{Tags "ctb_a1388" "hidden" "usa" "ctb_air" 0xc719}
+	{Tags "ctb_a1389" "hidden" "usa" "ctb_air" 0xc71b}
+	{Tags "ctb_a1390" "hidden" "usa" "ctb_air" 0xc71d}
+	{Tags "ctb_a1391" "hidden" "usa" "ctb_air" 0xc71f}
 	{Helpers
 		{triggers
 			{"ctb_has_usa"

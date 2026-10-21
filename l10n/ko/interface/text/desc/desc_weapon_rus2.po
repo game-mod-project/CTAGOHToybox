@@ -332,3 +332,11 @@ msgstr "122mm U-11 L/22"
 msgctxt "desc/weapon/152mm_m51"
 msgid "152mm M-51"
 msgstr "152mm M-51"
+
+msgctxt "desc/weapon/122mm_m62_t3"
+msgid "122mm M-62-T3"
+msgstr "122mm M-62-T3"
+
+msgctxt "desc/weapon/100mm_AT"
+msgid "100mm D-54TS"
+msgstr "100mm D-54TS"

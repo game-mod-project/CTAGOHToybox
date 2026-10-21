@@ -27,4 +27,14 @@
 	}
 
 	("accuracy_direct" r1(0.48) range_ap(230) range_he(220) range_heat(210))
+	
+	{parameters "he2"
+		("reload time" seconds(9))
+		{speed 150}
+		{gravity 3}
+		("range_220")
+		{spreading
+			{radiusTable {0 0} {50 5} {100 10} {150 15} {155 50}}
+		}
+	}
 }

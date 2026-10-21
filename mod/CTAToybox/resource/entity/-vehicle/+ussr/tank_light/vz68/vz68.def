@@ -80,7 +80,7 @@
 		}
 		{place "mgun"
 			{type "coaxial"}
-			{weapon "kpvt" filled}
+			{weapon "kpvt_2" filled}
 			{foresight "foresight3"}
 			{gunner "gunner"}
 			{charger "gunner"}

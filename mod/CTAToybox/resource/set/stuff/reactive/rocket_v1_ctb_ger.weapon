@@ -12,8 +12,8 @@
 	{foresight "foresight"}
 	;{burst {min 1} {noaiming}}
 	{Automatic}    
-	{rechargeTime 450}
-	{recoveryTime 900}
+	{rechargeTime 375}
+	{recoveryTime 750}
 	{gravity 0.1}
 	{speed 30}
 	{range 640 660}     

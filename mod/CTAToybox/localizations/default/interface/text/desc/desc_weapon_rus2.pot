@@ -331,3 +331,11 @@ msgstr ""
 msgctxt "desc/weapon/152mm_m51"
 msgid "152mm M-51"
 msgstr ""
+
+msgctxt "desc/weapon/122mm_m62_t3"
+msgid "122mm M-62-T3"
+msgstr ""
+
+msgctxt "desc/weapon/100mm_AT"
+msgid "100mm D-54TS"
+msgstr ""
