@@ -28,6 +28,21 @@ namespace CtaToybox.Core
         // 클립식 포(set/stuff/gun, 탄창 2발 이상, 발 사이 ClipMinGap초 이상)는 발 사이 간격도 줄인다. ClipGap이 0이면 Reload와 같은 배수
         public double ClipMinGap { get; set; } = 1;
         public double ClipGap { get; set; } = 0;
+        // 보급: 그 군대 보급 유닛이 부르는 보급 매크로의 복제본에서 반경 배수와 총량(0이면 무제한, 파일 주석)
+        public double SupplyRadius { get; set; } = 3;
+        public string SupplyLimit { get; set; } = "0";
+    }
+
+    // 보급 매크로 하나의 복제와 그 복제본을 쓰게 바꾼 유닛
+    public sealed class SupplyChange
+    {
+        public string Macro;
+        public string Copy;
+        public string RadiusOld;
+        public string RadiusNew;
+        public string LimitOld;
+        public string LimitNew;
+        public List<string> Units = new List<string>();
     }
 
     // 클립식 포 하나의 원래·강화 값(초. 발 사이는 "fire rate"면 60/rpm)
@@ -51,6 +66,7 @@ namespace CtaToybox.Core
         public List<string> Shared { get; } = new List<string>();
         public List<string> Notes { get; } = new List<string>();
         public List<ClipChange> Clips { get; } = new List<ClipChange>();
+        public List<SupplyChange> Supplies { get; } = new List<SupplyChange>();
     }
 
     // 프리셋이 쓰는 색인들. 세션 없이(명령줄·실제 검사) 만든다

@@ -16,23 +16,30 @@ namespace CtaToybox.Core
         {
             if (!ArmyIndex.IsArmy(o.Army)) throw new ArgumentException("군대는 " + string.Join(", ", ArmyIndex.Armies) + " 가운데 하나다: " + o.Army);
             var project = new EditProject { Name = "강화-" + ArmyNames[o.Army] };
-            if (baseProject != null)
+            // 보급 단계가 매크로 복제를 덧씌운다. 끝나면 스택을 원래대로 둔다(같은 스택으로 다른 검사를 이어 한다)
+            var oldOverlay = c.Stack.Overlay;
+            try
             {
-                var merged = project.MergeFrom(baseProject);
-                report.Edits["베이스 수정"] = merged.Added;
-                if (baseProject.Rules != null && baseProject.Rules.Count > 0) report.Notes.Add("베이스의 일괄 규칙 " + baseProject.Rules.Count + "개는 가져오지 않았다(규칙이 만든 수정도)");
+                if (baseProject != null)
+                {
+                    var merged = project.MergeFrom(baseProject);
+                    report.Edits["베이스 수정"] = merged.Added;
+                    if (baseProject.Rules != null && baseProject.Rules.Count > 0) report.Notes.Add("베이스의 일괄 규칙 " + baseProject.Rules.Count + "개는 가져오지 않았다(규칙이 만든 수정도)");
+                }
+                c.Stack.SetCopies(FileCopy.Pairs(project));
+                var members = c.Armies.Members(o.Army);
+                report.Units = members.Count;
+                report.Infantry = members.Count(m => m.StartsWith("set/breed/", StringComparison.Ordinal));
+                report.Vehicles = members.Count(m => m.StartsWith("entity/-vehicle/", StringComparison.Ordinal));
+                report.Shared.AddRange(c.Armies.Shared);
+                AddUnitStats(project, c, o, report);
+                AddWeaponsAndHealth(project, c, o, report);
+                AddSupply(project, c, o, report);
+                AddConquest(project, c, conquest ?? new ConquestValues(), report);
+                AddSkirmish(project, c, (conquest ?? new ConquestValues()).Skirmish, report);
+                return project;
             }
-            c.Stack.SetCopies(FileCopy.Pairs(project));
-            var members = c.Armies.Members(o.Army);
-            report.Units = members.Count;
-            report.Infantry = members.Count(m => m.StartsWith("set/breed/", StringComparison.Ordinal));
-            report.Vehicles = members.Count(m => m.StartsWith("entity/-vehicle/", StringComparison.Ordinal));
-            report.Shared.AddRange(c.Armies.Shared);
-            AddUnitStats(project, c, o, report);
-            AddWeaponsAndHealth(project, c, o, report);
-            AddConquest(project, c, conquest ?? new ConquestValues(), report);
-            AddSkirmish(project, c, (conquest ?? new ConquestValues()).Skirmish, report);
-            return project;
+            finally { c.Stack.Overlay = oldOverlay; }
         }
     }
 }

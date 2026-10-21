@@ -133,6 +133,7 @@ static class Suites
         ("MergeKinds", MergeKindsTests.Run),
         ("FactionPreset", FactionPresetTests.Run),
         ("FactionClip", FactionClipTests.Run),
+        ("FactionSupply", FactionSupplyTests.Run),
         ("FactionPresetCli", FactionPresetCliTests.Run),
         ("SpawnWriter", SpawnWriterTests.Run),
         ("SpawnCatalog", SpawnCatalogTests.Run),
