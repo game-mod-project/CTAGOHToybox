@@ -25,7 +25,8 @@ namespace CtaToybox.Core
         public string NamedPath { get; set; }
         [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingDefault)]
         public int NamedOccurrence { get; set; }
-        // 무엇을 고치는지. 값이면 null(지금까지의 프로젝트 파일 그대로), 인자 없는 매크로 호출의 이름이면 MacroSwap.Kind(E4), 따옴표 이름 블록 복제면 BlockCopy.Kind(E18)
+        // 무엇을 고치는지. 값이면 null(지금까지의 프로젝트 파일 그대로), 매크로 호출의 이름이면 MacroSwap.Kind(E4), 따옴표 이름 블록 복제면 BlockCopy.Kind(E18),
+        // 매크로 정의 복제면 DefineCopy.Kind, 파일 사본·줄 더하기면 FileCopy.Kind·AddLine.Kind(팩션 강화)
         [System.Text.Json.Serialization.JsonIgnore(Condition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull)]
         public string Kind { get; set; }
         // 일괄 규칙(F1)이 만든 수정이면 그 규칙의 id. 사람이 만든 수정은 null이다(파일에 쓰지 않는다)
@@ -90,7 +91,7 @@ namespace CtaToybox.Core
         static bool SameSlot(Edit a, Edit b)
         {
             // 줄 더하기·파일 사본·블록 복제는 같은 자리에 여럿을 둘 수 있다. 넣는 줄·사본 경로·새 이름이 같아야 같은 수정이다
-            if ((a.Kind == AddLine.Kind || a.Kind == FileCopy.Kind || a.Kind == BlockCopy.Kind) && a.New != b.New) return false;
+            if ((a.Kind == AddLine.Kind || a.Kind == FileCopy.Kind || TextCopies.IsCopy(a.Kind)) && a.New != b.New) return false;
             return a.Scope == b.Scope && a.Kind == b.Kind && a.Occurrence == b.Occurrence && a.Arg == b.Arg
                 && string.Equals(SourceStack.ToVirtual(a.File ?? ""), SourceStack.ToVirtual(b.File ?? ""), System.StringComparison.OrdinalIgnoreCase)
                 && string.Equals(a.Path, b.Path, System.StringComparison.OrdinalIgnoreCase)

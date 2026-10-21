@@ -103,6 +103,7 @@ static class Suites
         ("MacroSwap", MacroSwapTests.Run),
         ("BlockCopy", BlockCopyTests.Run),
         ("DefineCopy", DefineCopyTests.Run),
+        ("DefineCopyBuild", DefineCopyBuildTests.Run),
         ("BlockCopyBuild", BlockCopyBuildTests.Run),
         ("BlockCopySession", BlockCopySessionTests.Run),
         ("ReviewFix", ReviewFixTests.Run),

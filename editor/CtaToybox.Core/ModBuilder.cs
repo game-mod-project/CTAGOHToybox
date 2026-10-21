@@ -83,26 +83,29 @@ namespace CtaToybox.Core
             var manifest = new BuildManifest { Project = project.Name, BuiltAt = DateTime.UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ") };
             var previous = ReadPrevious(report);
             if (previous == null) return report;
+            // 추적기(이름 바꾸기 점검, 원형 사슬)가 복제를 넣은 본문을 읽게 한다. 세션 없이(명령줄) 빌드해도 같다. 끝나면 되돌린다
+            var oldOverlay = stack.Overlay;
+            stack.Overlay = TextCopies.Overlay(project);
             try
             {
                 // 1. 임시 폴더에 고친 파일을 만든다
                 var enabled = project.Edits.Where(e => e.Enabled).ToList();
-                // 블록 복제(E18): 원본에 넣어 보아 적용되는 새 이름을 모으고, 그 이름에 기대는 수정 가운데 복제가 없는 것은 막는다
+                // 블록 복제(E18)·매크로 복제: 원본에 넣어 보아 적용되는 새 이름을 모으고, 그 이름에 기대는 수정 가운데 복제가 없는 것은 막는다
                 var copyNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
-                foreach (var g in enabled.Where(e => e.Kind == BlockCopy.Kind).GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
+                foreach (var g in enabled.Where(e => TextCopies.IsCopy(e.Kind)).GroupBy(e => SourceStack.ToVirtual(e.File ?? "")))
                 {
                     var src = stack.Find(g.Key);
                     if (src == null) continue;
                     TextKind copyKind;
                     var copyResults = new List<EditResult>();
-                    BlockCopy.Apply(TextCodec.Decode(stack.Read(src), out copyKind), g, copyResults);
+                    TextCopies.Apply(TextCodec.Decode(stack.Read(src), out copyKind), g, copyResults);
                     foreach (var r in copyResults.Where(r => r.Status == EditStatus.Applied)) copyNames.Add(r.Edit.New.Trim('"'));
                 }
                 foreach (var e in enabled.ToList())
                 {
-                    string dependency = BlockCopy.Dependency(e, project.Edits);
+                    string dependency = TextCopies.Dependency(e, project.Edits);
                     if (dependency == null || copyNames.Contains(dependency)) continue;
-                    report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = BlockCopy.MissingNote(dependency) });
+                    report.Results.Add(new EditResult { Edit = e, Status = EditStatus.Invalid, Message = TextCopies.MissingNote(dependency, project.Edits) });
                     enabled.Remove(e);
                 }
                 // 매크로 호출 이름 바꾸기(E4): 새 이름이 그 유닛을 펼칠 때 같은 파일에 정의된 이름이어야 한다. 아니면 게임이 시작할 때 꺼진다
@@ -275,6 +278,7 @@ namespace CtaToybox.Core
             }
             finally
             {
+                stack.Overlay = oldOverlay;
                 if (Directory.Exists(stage)) Directory.Delete(stage, true);
             }
             return report;
@@ -410,13 +414,13 @@ namespace CtaToybox.Core
             if (!original.AsSpan().SequenceEqual(TextCodec.Encode(text, kind)))
                 return "원본을 읽고 다시 쓰면 바이트가 달라진다(인코딩이 깨진 파일). 고치지 않는다";
 
-            // 블록 복제(E18)를 먼저 넣고, 나머지 수정은 그 본문에 적용한다(복제는 같은 부모의 마지막 형제 뒤라 다른 자리의 순번이 그대로다)
-            var copyEdits = item.Edits.Where(e => e.Kind == BlockCopy.Kind).ToList();
+            // 블록 복제(E18)·매크로 복제를 먼저 넣고, 나머지 수정은 그 본문에 적용한다(복제는 같은 부모의 마지막 형제 뒤나 파일 끝이라 다른 자리의 순번이 그대로다)
+            var copyEdits = item.Edits.Where(e => TextCopies.IsCopy(e.Kind)).ToList();
             int copiedCount = 0;
             if (copyEdits.Count > 0)
             {
                 var copyResults = new List<EditResult>();
-                text = BlockCopy.Apply(text, copyEdits, copyResults);
+                text = TextCopies.Apply(text, copyEdits, copyResults);
                 results.AddRange(copyResults);
                 copiedCount = copyResults.Count(r => r.Status == EditStatus.Applied);
             }
@@ -427,7 +431,7 @@ namespace CtaToybox.Core
                 copiedCount++;
             }
             var usable = new List<Edit>();
-            foreach (var e in item.Edits.Where(x => x.Kind != BlockCopy.Kind && x.Kind != FileCopy.Kind && x.Kind != AddLine.Kind))
+            foreach (var e in item.Edits.Where(x => !TextCopies.IsCopy(x.Kind) && x.Kind != FileCopy.Kind && x.Kind != AddLine.Kind))
             {
                 string ruleWarning;
                 string ruleError = e.New == null ? null : ValueRules.CheckNewValue(item.Source.VirtualPath, e.Old, e.New, out ruleWarning);

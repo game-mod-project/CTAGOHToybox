@@ -102,6 +102,7 @@ namespace CtaToybox.App
         public static string EditTitle(EditorSession.EditDescription d, Edit e)
         {
             if (e.Kind == BlockCopy.Kind) return "블록 복제: " + Value(e.Old) + " → " + Value(e.New);
+            if (e.Kind == DefineCopy.Kind) return "매크로 복제: " + Value(e.Old) + " → " + Value(e.New);
             if (e.Kind == FileCopy.Kind) return "파일 사본: " + e.File.Substring(e.File.LastIndexOf('/') + 1) + " → " + e.New.Substring(e.New.LastIndexOf('/') + 1);
             if (e.Kind == AddLine.Kind) return "줄 더하기 (" + KeyLabel.Readable(e.Path) + "): " + e.New;
             string change = Value(e.Old) + " → " + Value(e.New);

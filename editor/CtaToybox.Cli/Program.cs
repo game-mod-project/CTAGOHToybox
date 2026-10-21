@@ -16,7 +16,8 @@ namespace CtaToybox.Cli
             "  ctatoybox units [--find <글자>] [--kind <종류>] [--layer <계층>] [--limit N] [--names <csv>] [--army ger|rus|usa|eng|fin|jap]\n" +
             "  ctatoybox trace <유닛 가상 경로> [--filter <글자>]\n" +
             "  ctatoybox show <가상 경로> [--filter <글자>]\n" +
-            "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 인자 없는 매크로 호출의 이름을 같은 파일에 정의된 다른 이름으로)\n" +
+            "  ctatoybox add --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] --new <값> [--scope shared|unit] [--unit <유닛 가상 경로>] [--kind macro-name]   (macro-name: 매크로 호출의 이름을 같은 파일에 정의된 다른 이름(매크로 복제본 포함)으로. 인자는 그대로)\n" +
+            "  ctatoybox add --project <파일> --kind define-copy --file <가상 경로> --path '/(define \"<이름>\")' --new '\"<새 이름>\"'   (매크로 정의를 새 이름으로 복제해 파일 끝에 붙인다. 안의 값은 /(define \"<새 이름>\")/… 경로로 고친다)\n" +
             "  ctatoybox add --project <파일> --kind file-copy --file <원본 가상 경로> --new <사본 가상 경로>   (같은 폴더에 새 이름의 사본. 유닛이 쓰게 하려면 이름 값을 사본 이름으로 바꾼다)\n" +
             "  ctatoybox add --project <파일> --kind add-line --file <가상 경로> --path <블록 경로, 예 /perks> [--occ N] --new \"<줄>\"   (블록의 닫는 괄호 앞에 줄 하나를 넣는다)\n" +
             "  ctatoybox remove --project <파일> --file <가상 경로> --path <키 경로> [--occ N] [--arg N] [--scope shared|unit] [--unit <유닛 가상 경로>]\n" +
@@ -564,17 +565,34 @@ namespace CtaToybox.Cli
             }
         }
 
+        // 매크로 정의 복제: add --kind define-copy --file <파일> --path '/(define "이름")' --new '"새 이름"'
+        static int AddDefineCopyCli(Dictionary<string, string> opt, string settingsPath, TextWriter output)
+        {
+            string projectPath = Need(opt, "project"), file = Need(opt, "file"), path = Need(opt, "path"), newName = Need(opt, "new");
+            var m = System.Text.RegularExpressions.Regex.Match(path, "^/\\(define \"([^\"]+)\"\\)$", System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+            if (!m.Success) throw new UsageException("--path는 /(define \"이름\") 꼴이다: " + path);
+            using (var session = EditorSession.Open(settingsPath, Directory.GetCurrentDirectory(), null))
+            {
+                session.OpenProject(projectPath);
+                try { session.AddDefineCopy(opt.ContainsKey("unit") ? opt["unit"] : null, file, m.Groups[1].Value, newName); }
+                catch (ArgumentException ex) { output.WriteLine(ex.Message); return 1; }
+                output.WriteLine("매크로를 복제했다: " + SourceStack.ToVirtual(file) + " " + m.Groups[1].Value + " → " + newName.Trim('"'));
+                return 0;
+            }
+        }
+
         static int Add(Dictionary<string, string> opt, string settingsPath, TextWriter output)
         {
             if (opt.ContainsKey("kind") && opt["kind"] == FileCopy.Kind) return AddFileCopy(opt, settingsPath, output);
             if (opt.ContainsKey("kind") && opt["kind"] == AddLine.Kind) return AddLineCli(opt, settingsPath, output);
+            if (opt.ContainsKey("kind") && opt["kind"] == DefineCopy.Kind) return AddDefineCopyCli(opt, settingsPath, output);
             string projectPath = Need(opt, "project"), fileArg = Need(opt, "file"), keyPath = Need(opt, "path"), newValue = Need(opt, "new");
             int occ = Number(opt, "occ"), arg = Number(opt, "arg");
             string scope = opt.ContainsKey("scope") ? opt["scope"].ToLowerInvariant() : "shared";
             if (scope != "shared" && scope != "unit") throw new UsageException("--scope는 shared 또는 unit이다");
             if (scope == "unit" && !opt.ContainsKey("unit")) throw new UsageException("--scope unit에는 --unit이 필요하다");
             string editKind = opt.ContainsKey("kind") ? opt["kind"] : null;
-            if (editKind != null && editKind != MacroSwap.Kind && editKind != BlockCopy.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + " 또는 " + BlockCopy.Kind + "이다");
+            if (editKind != null && editKind != MacroSwap.Kind && editKind != BlockCopy.Kind) throw new UsageException("--kind는 " + MacroSwap.Kind + ", " + BlockCopy.Kind + ", " + DefineCopy.Kind + ", " + FileCopy.Kind + ", " + AddLine.Kind + " 가운데 하나다");
             EditorSettings settings; LayerPlan plan;
             using (var stack = Open(settingsPath, output, out settings, out plan))
             {
@@ -584,17 +602,17 @@ namespace CtaToybox.Cli
                 if (scope == "unit" && (SettingFiles.InArea(file.VirtualPath) || UnitKind.OfEditor(SourceStack.ToVirtual(opt["unit"])) == SettingFiles.Kind))
                 { output.WriteLine(SettingFiles.UnitScopeNote); return 1; }
                 var project = File.Exists(projectPath) ? EditProject.Load(projectPath) : new EditProject { Name = Path.GetFileNameWithoutExtension(projectPath) };
-                // 이 프로젝트의 켜진 블록 복제를 넣은 본문에서 자리를 찾는다(빌드와 같은 본문, E18)
-                var fileCopies = project.Edits.Where(e => e.Kind == BlockCopy.Kind && e.Enabled && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)).ToList();
+                // 이 프로젝트의 켜진 블록 복제·매크로 복제를 넣은 본문에서 자리를 찾는다(빌드와 같은 본문, E18)
+                var fileCopies = project.Edits.Where(e => TextCopies.IsCopy(e.Kind) && e.Enabled && string.Equals(SourceStack.ToVirtual(e.File ?? ""), file.VirtualPath, StringComparison.Ordinal)).ToList();
                 string readError;
                 string original = TextCodec.Decode(stack.Read(file), out TextKind kind);
-                string text = BlockCopy.ApplyAll(original, fileCopies);
+                string text = TextCopies.ApplyAll(original, fileCopies);
                 var rows = SourceRows.Of(file.VirtualPath, text, out readError);
                 if (rows == null) { output.WriteLine("읽히지 않는 파일은 고칠 수 없다: " + readError); return 1; }
                 var found = rows.FirstOrDefault(r => r.Occurrence == occ && string.Equals(r.Path, keyPath, StringComparison.OrdinalIgnoreCase));
-                // --kind macro-name은 인자 없는 호출 줄의 이름 토큰을 고친다(E4)
+                // --kind macro-name은 호출 줄의 이름 토큰을 고친다(E4. 인자가 있어도 이름만, 인자는 그대로)
                 // --kind block-copy는 따옴표 이름 블록의 이름 줄을 고른다(E18)
-                var node = editKind == MacroSwap.Kind ? (found != null && found.Leaves.Count == 0 && arg == 0 ? found.Head : null)
+                var node = editKind == MacroSwap.Kind ? (found != null && found.Head != null && MacroSwap.NameOf(found.RawPath) != null && arg == 0 ? found.Head : null)
                     : editKind == BlockCopy.Kind ? (found != null && found.Path.EndsWith("/\"*\"", StringComparison.Ordinal) && arg == 0 && found.Leaves.Count > 0 ? found.Leaves[0] : null)
                     : found != null && arg < found.Leaves.Count ? found.Leaves[arg] : null;
                 if (node == null) { output.WriteLine("이 자리가 없다: " + keyPath + " [" + occ + "] 값 " + arg + ". show로 확인한다."); return 1; }
@@ -606,7 +624,11 @@ namespace CtaToybox.Cli
                                ?? ValueRules.CheckApplies(file.VirtualPath, text, new Edit { File = file.VirtualPath, Path = keyPath, Occurrence = occ, Arg = arg, Old = node.Text, New = newValue, Kind = editKind });
                 string unitForSwap = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
                 if (error == null && editKind == MacroSwap.Kind)
+                {
+                    // 이 프로젝트의 매크로 복제본도 고를 수 있게 복제를 넣은 본문으로 펼친다
+                    stack.Overlay = TextCopies.Overlay(project);
                     error = MacroSwap.Check(new UnitTracer(stack).Trace(unitForSwap), new Edit { Old = node.Text, New = newValue, Kind = editKind });
+                }
                 if (error != null) { output.WriteLine(error); return 1; }
                 if (warning != null) output.WriteLine("경고: " + warning);
                 string unit = SourceStack.ToVirtual(opt.ContainsKey("unit") ? opt["unit"] : fileArg);
